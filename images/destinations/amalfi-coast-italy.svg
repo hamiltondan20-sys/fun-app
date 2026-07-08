@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Amalfi Coast cliffs and sea">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e89053"/>
+      <stop offset="45%" stop-color="#5a7ca5"/>
+      <stop offset="100%" stop-color="#56b4b5"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.2)"/>
+      <stop offset="100%" stop-color="rgba(7,35,56,0.22)"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <circle cx="944" cy="140" r="82" fill="rgba(255,243,210,0.22)"/>
+  <path d="M0 418C124 380 196 318 280 238C372 152 460 120 558 132C642 142 706 212 734 288C758 352 826 422 926 454C1040 490 1136 474 1200 454V800H0Z" fill="rgba(33,68,83,0.42)"/>
+  <path d="M0 548C192 518 322 476 462 430C580 392 718 394 864 446C1000 494 1098 564 1200 596V800H0Z" fill="url(#sea)"/>
+  <g fill="rgba(255,255,255,0.86)">
+    <rect x="256" y="338" width="64" height="64" rx="8"/>
+    <rect x="324" y="306" width="74" height="96" rx="8"/>
+    <rect x="406" y="282" width="84" height="120" rx="8"/>
+    <rect x="504" y="248" width="88" height="154" rx="8"/>
+    <rect x="610" y="276" width="74" height="126" rx="8"/>
+    <rect x="694" y="326" width="66" height="76" rx="8"/>
+  </g>
+</svg>

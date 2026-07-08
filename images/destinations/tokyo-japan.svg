@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Tokyo skyline with tower">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6a5f88"/>
+      <stop offset="56%" stop-color="#36537a"/>
+      <stop offset="100%" stop-color="#274360"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <circle cx="944" cy="148" r="82" fill="rgba(255,255,255,0.12)"/>
+  <rect x="0" y="634" width="1200" height="166" fill="rgba(255,255,255,0.10)"/>
+  <g transform="translate(600 204)">
+    <path d="M0 0L34 104H-34Z" fill="rgba(236,240,241,0.8)"/>
+    <path d="M0 86L106 420H72L28 304H-28L-72 420H-106Z" fill="rgba(236,240,241,0.76)"/>
+    <rect x="-18" y="144" width="36" height="230" fill="rgba(236,240,241,0.84)"/>
+    <rect x="-74" y="196" width="148" height="16" rx="8" fill="rgba(255,98,98,0.92)"/>
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="New York skyline">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5079a6"/>
+      <stop offset="58%" stop-color="#2f4e73"/>
+      <stop offset="100%" stop-color="#1d3147"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <circle cx="952" cy="142" r="86" fill="rgba(255,255,255,0.12)"/>
+  <rect x="0" y="640" width="1200" height="160" fill="rgba(255,255,255,0.10)"/>
+  <g transform="translate(160 230)" fill="rgba(236,240,241,0.78)">
+    <rect x="0" y="146" width="78" height="244"/>
+    <rect x="92" y="56" width="92" height="334"/>
+    <rect x="202" y="0" width="110" height="390"/>
+    <rect x="334" y="92" width="76" height="298"/>
+    <rect x="430" y="144" width="68" height="246"/>
+    <rect x="514" y="184" width="56" height="206"/>
+    <rect x="250" y="-36" width="14" height="54"/>
+  </g>
+</svg>

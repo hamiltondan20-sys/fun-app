@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Seoul skyline with N Seoul Tower">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5b4f7a"/>
+      <stop offset="58%" stop-color="#244b78"/>
+      <stop offset="100%" stop-color="#79b0a8"/>
+    </linearGradient>
+    <linearGradient id="city" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.82)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.58)"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="930" cy="154" r="86" fill="rgba(255,255,255,0.16)"/>
+  <path d="M0 684C142 628 288 612 424 626C558 640 676 696 812 692C958 688 1050 620 1200 592V800H0Z" fill="rgba(255,255,255,0.12)"/>
+  <path d="M0 728C126 688 248 654 378 660C520 668 644 736 796 724C946 712 1054 626 1200 624V800H0Z" fill="rgba(255,255,255,0.18)"/>
+  <g fill="url(#city)">
+    <rect x="110" y="404" width="84" height="222" rx="4"/>
+    <rect x="214" y="342" width="70" height="284" rx="4"/>
+    <rect x="308" y="388" width="108" height="238" rx="4"/>
+    <rect x="444" y="320" width="94" height="306" rx="4"/>
+    <rect x="880" y="374" width="90" height="252" rx="4"/>
+    <rect x="994" y="336" width="78" height="290" rx="4"/>
+  </g>
+  <g transform="translate(620 168)">
+    <path d="M-14 0H14L26 68H-26Z" fill="rgba(255,255,255,0.86)"/>
+    <rect x="-26" y="62" width="52" height="28" rx="14" fill="rgba(255,255,255,0.88)"/>
+    <path d="M-5 88H5L22 454H-22Z" fill="rgba(255,255,255,0.78)"/>
+    <path d="M-94 462H94L124 618H-124Z" fill="rgba(255,255,255,0.68)"/>
+    <rect x="-150" y="478" width="300" height="16" rx="8" fill="rgba(255,255,255,0.42)"/>
+  </g>
+</svg>
