@@ -8,6 +8,8 @@ const {
   slugifyCountry,
   getDestinationMatches,
   getCityName,
+  getTripLength,
+  buildTravelerText,
   setDestinationSuggestionIndex,
   applyDestinationSuggestionSelection,
   updateDestinationAutofill,
@@ -21,6 +23,11 @@ const {
   updateStateFromTripLogistics,
   updateJournalPreview,
   cloneData,
+  hydrateTripProfile,
+  persistTripProfile,
+  hydrateSavedDraftStatus,
+  persistTripDraft,
+  restoreSavedDraft,
   saveAlternateVersion,
   clearAlternateVersionFeedback,
   pauseAlternateVersionFeedbackDismiss,
@@ -39,6 +46,9 @@ const {
   swapDayItem,
   removeDayItem,
   undoDayItem,
+  adjustDayQuality,
+  updateBookingItemStatus,
+  updateBookingItemNote,
   moveTimelineStep,
   reorderTimelineStep,
   toggleDayExpanded,
@@ -62,6 +72,29 @@ const {
     let editorialStickyObserver = null;
     const GUIDE_MEMORY_KEY = "hb-guide-memory-v1";
     let lastGuideHandoffAt = 0;
+    let bookingNoteSaveTimer = null;
+
+    function escapeUiHtml(value) {
+      return String(value ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+    }
+
+    function queueBookingNoteSave(noteControl) {
+      if (!noteControl) return;
+      window.clearTimeout(bookingNoteSaveTimer);
+      const bookingId = noteControl.dataset.bookingId || "";
+      const noteValue = noteControl.value;
+      bookingNoteSaveTimer = window.setTimeout(() => {
+        updateBookingItemNote(bookingId, noteValue, {
+          feedback: "Booking note saved",
+          render: false
+        });
+      }, 450);
+    }
 
 function updatePrimaryCta() {
       const guidePanels = new Set(["city-guides-panel", "country-guides-panel", "editorial-guide-panel", "editorial-country-panel"]);
@@ -73,30 +106,123 @@ function updatePrimaryCta() {
         return;
       }
       if (hbState.activePanelId === "build-panel") {
-        hbRefs.generateBtn.textContent = "Start Planning";
+        hbRefs.generateBtn.textContent = "Next: Preferences";
         return;
       }
       if (hbState.activePanelId === "details-panel") {
-        hbRefs.generateBtn.textContent = "Build My Trip";
+        hbRefs.generateBtn.textContent = "Review Blueprint";
         return;
       }
       if (hbState.activePanelId === "blueprint-panel") {
-        hbRefs.generateBtn.textContent = "Looks Right, Keep Going";
+        hbRefs.generateBtn.textContent = "Build My Trip";
         return;
       }
       if (hbState.activePanelId === "thinking-panel") {
-        hbRefs.generateBtn.textContent = "Show My Trip";
+        hbRefs.generateBtn.textContent = "Open My Trip";
         return;
       }
       if (hbState.activePanelId === "trip-panel") {
-        hbRefs.generateBtn.textContent = hbState.likedTrip ? "Open Saved Trip" : "Save This Trip";
+        hbRefs.generateBtn.textContent = "Save Draft";
         return;
       }
       if (hbState.activePanelId === "saved-panel") {
-        hbRefs.generateBtn.textContent = hbState.likedTrip ? "Open Saved Version" : "Build a Trip";
+        hbRefs.generateBtn.textContent = hbState.savedDraft ? "Restore Draft" : "Start a Trip";
         return;
       }
       hbRefs.generateBtn.textContent = "Generate Your Trip";
+    }
+
+    function updateFlowStatus() {
+      if (!hbRefs.flowStatusCurrent || !hbRefs.flowStatusFocus || !hbRefs.flowStatusCopy || !hbRefs.flowStatusNext) return;
+      const city = getCityName();
+      const savedCount = hbState.alternateTrips?.length || 0;
+      const flowMap = {
+        "explore-panel": {
+          current: "Explore ideas",
+          focus: "Find a destination or trip style that feels right.",
+          copy: "Browse guides, compare places, or preview a sample trip before filling anything out.",
+          next: "Start building"
+        },
+        "city-guides-panel": {
+          current: "City guides",
+          focus: "Pick a city with enough context to feel confident.",
+          copy: "Search by place, country, or vibe, then use a guide as your trip starting point.",
+          next: "Use a city"
+        },
+        "country-guides-panel": {
+          current: "Country guides",
+          focus: "Start broader when the exact city is still open.",
+          copy: "Compare regions and strongest starting cities before choosing a base.",
+          next: "Choose a base"
+        },
+        "editorial-guide-panel": {
+          current: "City guide",
+          focus: "Use this city as the foundation for a real itinerary.",
+          copy: "Carry the guide context into Build so the planner starts from what interested you.",
+          next: "Build from guide"
+        },
+        "editorial-country-panel": {
+          current: "Country guide",
+          focus: "Narrow the country into a practical trip direction.",
+          copy: "Use the strongest city suggestion as the first base, then adjust dates and pace.",
+          next: "Pick trip basics"
+        },
+        "build-panel": {
+          current: "Trip basics",
+          focus: `Set the practical frame for ${city}.`,
+          copy: "Destination, dates, travelers, budget, flights, and pets tell the planner what is realistic.",
+          next: "Choose preferences"
+        },
+        "details-panel": {
+          current: "Preferences",
+          focus: "Choose the signals that should change the trip most.",
+          copy: "Style, pace, must-haves, and hard rules keep the draft personal without overloading the form.",
+          next: "Review blueprint"
+        },
+        "blueprint-panel": {
+          current: "Blueprint",
+          focus: "Check the plan ingredients before the itinerary is built.",
+          copy: "Edit any card that feels off. When it looks right, generate the day-by-day draft.",
+          next: "Build the trip"
+        },
+        "thinking-panel": {
+          current: "Building",
+          focus: "Turning your choices into a first usable draft.",
+          copy: "The next screen opens with the overview first, then the day-by-day details.",
+          next: "Open your trip"
+        },
+        "trip-panel": {
+          current: "Your trip",
+          focus: "Review, adjust, and save the itinerary.",
+          copy: "Use the map, edit days, save arrangements, and keep a draft when the trip feels useful.",
+          next: "Save or compare"
+        },
+        "saved-panel": {
+          current: "Saved",
+          focus: "Keep your draft, profile, and favorite arrangements together.",
+          copy: savedCount
+            ? `${savedCount} saved arrangement${savedCount === 1 ? "" : "s"} available to view or compare.`
+            : "Save a draft or arrangement once there is a version worth keeping.",
+          next: hbState.savedDraft ? "Restore draft" : "Build a trip"
+        },
+        "faq-panel": {
+          current: "Help",
+          focus: "Answer the planning questions that come up mid-flow.",
+          copy: "Jump back into Build when you are ready to keep planning.",
+          next: "Return to Build"
+        },
+        "contact-panel": {
+          current: "Contact",
+          focus: "Find the right support path.",
+          copy: "Use this for trip help, product feedback, account questions, or partnerships.",
+          next: "Return to planning"
+        }
+      };
+      const status = flowMap[hbState.activePanelId] || flowMap["build-panel"];
+      hbRefs.flowStatusCurrent.textContent = status.current;
+      hbRefs.flowStatusFocus.textContent = status.focus;
+      hbRefs.flowStatusCopy.textContent = status.copy;
+      hbRefs.flowStatusNext.textContent = status.next;
     }
 
     function updateEditorialStickyBars() {
@@ -212,6 +338,7 @@ function updatePrimaryCta() {
           summary: "",
           preview: "",
           suggestedBase: "",
+          signals: null,
           ...(payload.guidePlanContext || {})
         };
         hbState.guideCompare = {
@@ -249,7 +376,8 @@ function updatePrimaryCta() {
         sourceLocation: "",
         summary: "",
         preview: "",
-        suggestedBase: ""
+        suggestedBase: "",
+        signals: null
       };
       renderGuidePlanningContext();
       saveGuideBrowseMemory();
@@ -324,7 +452,7 @@ function updatePrimaryCta() {
         }
       }, 32);
       window.requestAnimationFrame(() => {
-        document.getElementById("build-guide-context")?.scrollIntoView({ block: "start", behavior: "smooth" });
+        document.getElementById("build-core-section")?.scrollIntoView({ block: "start", behavior: "smooth" });
       });
     }
 
@@ -409,7 +537,10 @@ function updatePrimaryCta() {
     function updateBudgetHelper() {
       const helper = document.getElementById("budget-helper");
       if (!helper) return;
-      helper.textContent = hbData.budgetGuidance[hbState.appState.budget] || hbData.budgetGuidance.Moderate;
+      const baseGuidance = hbData.budgetGuidance[hbState.appState.budget] || hbData.budgetGuidance.Moderate;
+      helper.textContent = hbState.appState.budgetFlexible
+        ? `${baseGuidance} We will treat this as a guide, not a hard cap.`
+        : baseGuidance;
     }
 
     function updateFlightUI() {
@@ -418,6 +549,264 @@ function updatePrimaryCta() {
       if (!helpFields || !existingFields) return;
       helpFields.classList.toggle("hidden", hbState.appState.flightMode !== "need-help");
       existingFields.classList.toggle("hidden", hbState.appState.flightMode !== "have-flights");
+    }
+
+    function updateBuildFormHelpers() {
+      const lengthSummary = hbRefs.formBindings.tripLengthSummary;
+      const travelerSummary = hbRefs.formBindings.travelerSummary;
+      const dateButton = hbRefs.formBindings.dateFlexibility;
+      const budgetButton = hbRefs.formBindings.budgetFlexibility;
+
+      if (lengthSummary) {
+        const start = new Date(hbState.appState.startDate);
+        const end = new Date(hbState.appState.endDate);
+        const rawNights = Math.round((end - start) / 86400000);
+        if (!hbState.appState.startDate || !hbState.appState.endDate || !Number.isFinite(rawNights)) {
+          lengthSummary.textContent = "Pick dates to see trip length.";
+        } else if (rawNights < 0) {
+          lengthSummary.textContent = "End date should come after the start date.";
+        } else {
+          const days = getTripLength();
+          const nights = Math.max(0, days - 1);
+          const base = `${days} day${days === 1 ? "" : "s"} / ${nights} night${nights === 1 ? "" : "s"}`;
+          lengthSummary.textContent = hbState.appState.datesFlexible ? `${base}, with flexible dates` : base;
+        }
+      }
+
+      if (travelerSummary) {
+        travelerSummary.textContent = buildTravelerText();
+      }
+
+      if (dateButton) {
+        dateButton.classList.toggle("is-active", Boolean(hbState.appState.datesFlexible));
+        dateButton.textContent = hbState.appState.datesFlexible ? "Dates marked flexible" : "Dates are flexible";
+      }
+
+      if (budgetButton) {
+        budgetButton.classList.toggle("is-active", Boolean(hbState.appState.budgetFlexible));
+        budgetButton.textContent = hbState.appState.budgetFlexible ? "Budget marked flexible" : "Budget has some wiggle room";
+      }
+
+      updateBuildProgressPanel();
+    }
+
+    function updateBuildProgressPanel() {
+      const grid = document.getElementById("build-progress-grid");
+      const chip = document.getElementById("build-readiness-chip");
+      const statusTitle = document.getElementById("build-save-status-title");
+      const statusCopy = document.getElementById("build-save-status-copy");
+      if (!grid) return;
+
+      const destination = hbState.appState.destination || "Choose a destination";
+      const hasDates = Boolean(hbState.appState.startDate && hbState.appState.endDate);
+      const tripFrameReady = Boolean(destination && hasDates && hbState.appState.adults >= 1);
+      const flightModeLabels = {
+        "need-help": "Flight help",
+        "have-flights": hbState.appState.flightAirline || "Flights added",
+        "not-needed": "No flights needed"
+      };
+      const accountLabel = hbState.appState.accountMethod && hbState.appState.accountMethod !== "guest"
+        ? `Connected with ${hbUtils.titleCase(hbState.appState.accountMethod)}`
+        : "Local profile";
+      const savedDraft = hbState.savedDraft;
+      const savedValue = savedDraft ? "Draft saved" : accountLabel;
+      const savedCopy = savedDraft
+        ? `${savedDraft.title || "Trip draft"} can be restored from Saved.`
+        : "You can save the trip after the first draft is generated.";
+      const readiness = tripFrameReady ? "Basics ready" : "Needs basics";
+
+      if (chip) {
+        chip.textContent = readiness;
+        chip.className = `rounded-full px-3 py-1 text-xs font-semibold ${tripFrameReady ? "bg-teal-soft text-tertiary" : "bg-warm text-primary"}`;
+      }
+
+      if (statusTitle) {
+        statusTitle.textContent = savedDraft ? "Draft saved on this browser" : "Start without pressure";
+      }
+
+      if (statusCopy) {
+        statusCopy.textContent = savedDraft
+          ? `${savedDraft.title} was saved ${savedDraft.savedAt}. Restore it from Saved or keep building a new version.`
+          : "Build the first draft now. When the plan starts to feel worth keeping, saved trips, edits, and restore points will stay organized.";
+      }
+
+      const items = [
+        {
+          label: "Trip frame",
+          value: tripFrameReady ? destination : "Add destination and dates",
+          copy: tripFrameReady
+            ? `${hbRefs.formBindings.tripLengthSummary?.textContent || "Dates set"} for ${buildTravelerText().toLowerCase()}.`
+            : "The planner needs where, when, and who before preferences matter."
+        },
+        {
+          label: "Logistics",
+          value: flightModeLabels[hbState.appState.flightMode] || "Travel details",
+          copy: hbState.appState.pets !== "No pets"
+            ? `${hbState.appState.pets}; stay ideas should account for that.`
+            : "Flights and pets are optional, and can be changed later."
+        },
+        {
+          label: "Saved data",
+          value: savedValue,
+          copy: savedCopy
+        }
+      ];
+
+      grid.innerHTML = items.map((item) => `
+        <div class="build-progress-item">
+          <p class="build-progress-label">${escapeUiHtml(item.label)}</p>
+          <p class="build-progress-value">${escapeUiHtml(item.value)}</p>
+          <p class="build-progress-copy">${escapeUiHtml(item.copy)}</p>
+        </div>
+      `).join("");
+
+      renderBuildMissingInfo();
+    }
+
+    function getUiPlanningReadiness() {
+      const start = new Date(hbState.appState.startDate);
+      const end = new Date(hbState.appState.endDate);
+      const hasValidDates = Boolean(hbState.appState.startDate && hbState.appState.endDate)
+        && !Number.isNaN(start.getTime())
+        && !Number.isNaN(end.getTime())
+        && end >= start;
+      const adults = Number(hbState.appState.adults || 0);
+      const destination = String(hbState.appState.destination || hbRefs.formBindings.destination?.value || "").trim();
+      const hasStay = Boolean(hbState.appState.hotelName || hbState.appState.hotelArea);
+      const flightReady = hbState.appState.flightMode !== "have-flights"
+        || Boolean(hbState.appState.arrivalFlight || hbState.appState.departureFlight || hbState.appState.flightNumber || hbState.appState.flightAirline);
+      const required = [
+        {
+          id: "destination",
+          title: "Destination",
+          ready: Boolean(destination),
+          level: "required",
+          panel: "build-panel",
+          target: "destination-input",
+          fixLabel: "Add destination",
+          readyCopy: destination ? `${destination} is set.` : "",
+          missingCopy: "Add the city or place you want to visit."
+        },
+        {
+          id: "dates",
+          title: "Dates",
+          ready: hasValidDates,
+          level: "required",
+          panel: "build-panel",
+          target: hasValidDates || hbState.appState.startDate ? "end-date-input" : "start-date-input",
+          fixLabel: "Fix dates",
+          readyCopy: hasValidDates ? `${hbRefs.formBindings.tripLengthSummary?.textContent || "Dates set"}.` : "",
+          missingCopy: "Add a valid start and end date so the planner knows how many days to build."
+        },
+        {
+          id: "travelers",
+          title: "Travelers",
+          ready: adults >= 1,
+          level: "required",
+          panel: "build-panel",
+          target: "adults-input",
+          fixLabel: "Add travelers",
+          readyCopy: adults >= 1 ? buildTravelerText() : "",
+          missingCopy: "Add at least one adult traveler."
+        }
+      ];
+      const optional = [
+        {
+          id: "rules",
+          title: "Hard rules",
+          ready: Boolean(String(hbState.appState.nonNegotiables || "").trim()),
+          level: "optional",
+          panel: "details-panel",
+          target: "non-negotiables-input",
+          fixLabel: "Add rules",
+          readyCopy: hbState.appState.nonNegotiables || "",
+          missingCopy: "Add dietary, accessibility, timing, or avoid-list rules if the planner must respect them."
+        },
+        {
+          id: "logistics",
+          title: "Logistics",
+          ready: hasStay && flightReady,
+          level: "optional",
+          panel: "build-panel",
+          target: "build-logistics-section",
+          fixLabel: "Add logistics",
+          readyCopy: hasStay && flightReady ? "Stay and travel timing are enough for a realistic first and last day." : "",
+          missingCopy: "Hotel area, hotel name, or known flight timing can make the itinerary more realistic."
+        }
+      ];
+      const blockers = required.filter((item) => !item.ready);
+      const suggestions = optional.filter((item) => !item.ready);
+      const all = [...required, ...optional];
+      return {
+        generationReady: blockers.length === 0,
+        blockers,
+        suggestions,
+        required,
+        optional,
+        all,
+        readyCount: all.filter((item) => item.ready).length,
+        totalCount: all.length
+      };
+    }
+
+    function getSharedPlanningReadiness() {
+      return typeof hbUtils.getPlanningReadiness === "function"
+        ? hbUtils.getPlanningReadiness()
+        : getUiPlanningReadiness();
+    }
+
+    function renderBuildMissingInfo() {
+      const wrap = document.getElementById("build-missing-info");
+      if (!wrap) return;
+      const readiness = getSharedPlanningReadiness();
+      const promptItems = readiness.blockers.length
+        ? readiness.blockers
+        : readiness.suggestions.slice(0, 3);
+      const visibleItems = promptItems.length
+        ? promptItems
+        : readiness.all.filter((item) => item.ready).slice(0, 3);
+
+      wrap.classList.toggle("is-ready", readiness.generationReady);
+      wrap.innerHTML = `
+        <div class="planning-prompt-head">
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-[0.14em] ${readiness.generationReady ? "text-tertiary" : "text-primary"}">${readiness.generationReady ? "Good starting point" : "Missing basics"}</p>
+            <h4 class="mt-1 font-display text-lg font-bold text-ink">${readiness.generationReady ? "You can move to preferences" : "Add these before preferences"}</h4>
+            <p class="mt-2 max-w-[44rem] text-sm leading-6 text-muted">${readiness.generationReady ? "The trip frame is ready. These prompts are optional ways to make the generated plan more realistic." : "The planner needs a destination, valid dates, and at least one adult before it can build a useful itinerary."}</p>
+          </div>
+          <span class="planning-prompt-status ${readiness.generationReady ? "is-ready" : ""}">${readiness.readyCount} of ${readiness.totalCount} ready</span>
+        </div>
+        <div class="planning-prompt-grid">
+          ${visibleItems.map((item) => `
+            <div class="planning-prompt-card ${item.level === "required" && !item.ready ? "is-blocking" : ""}">
+              <p class="planning-prompt-label">
+                <span class="material-symbols-outlined" aria-hidden="true">${item.ready ? "check_circle" : (item.level === "required" ? "error" : "tips_and_updates")}</span>
+                <span>${item.ready ? "Ready" : (item.level === "required" ? "Required" : "Helpful")}</span>
+              </p>
+              <p class="planning-prompt-title">${escapeUiHtml(item.title)}</p>
+              <p class="planning-prompt-copy">${escapeUiHtml(item.ready ? item.readyCopy : item.missingCopy)}</p>
+              ${!item.ready && item.panel && item.target ? `
+                <button class="planning-prompt-button ${item.level === "required" ? "bg-primary text-white" : "bg-surface-soft text-secondary ring-1 ring-line"}" data-action="fix-missing-info" data-target-panel="${escapeUiHtml(item.panel)}" data-focus-target="${escapeUiHtml(item.target)}" type="button">
+                  ${escapeUiHtml(item.fixLabel)}
+                </button>
+              ` : ""}
+            </div>
+          `).join("")}
+        </div>
+      `;
+    }
+
+    function focusMissingInfo(panelId, targetId) {
+      if (!panelId || !targetId) return;
+      clearThinkingTimers();
+      updateStateFromInputs();
+      if (panelId === "city-guides-panel") {
+        setActivePanel("city-guides-panel");
+        return;
+      }
+      setActivePanel(panelId, { updateHash: false, focusTargetId: targetId });
+      const nextHash = getRouteForPanel(panelId);
+      window.history.replaceState(null, "", `#${nextHash}`);
     }
 
 
@@ -437,6 +826,10 @@ function updatePrimaryCta() {
         applyGuideBuildIntent();
         hbUtils.renderDestinationHero("build");
         renderGuidePlanningContext();
+        updateBuildFormHelpers();
+      }
+      if (targetId === "details-panel") {
+        updatePreferenceHelpers();
       }
       if (targetId === "explore-panel") {
         renderExploreMap();
@@ -455,6 +848,7 @@ function updatePrimaryCta() {
       }
       if (targetId === "blueprint-panel") {
         renderBlueprint();
+        wireBlueprintEditButtons();
       }
       if (targetId === "thinking-panel") {
         renderThinking();
@@ -520,6 +914,186 @@ function updatePrimaryCta() {
       setActivePanel("city-guides-panel");
     }
 
+    const paceHelperCopy = {
+      Easygoing: "Easygoing keeps mornings lighter, protects breaks, and avoids stacking too much into one day.",
+      Balanced: "Balanced keeps the trip full without making every day feel packed.",
+      Packed: "Packed fits in more sights and movement, with less downtime between stops."
+    };
+
+    function summarizePreferenceText(value, emptyText) {
+      const cleaned = String(value || "").trim();
+      if (!cleaned) return emptyText;
+      return cleaned.length > 86 ? `${cleaned.slice(0, 83).trim()}...` : cleaned;
+    }
+
+    function cleanPreferencePart(value) {
+      return String(value || "")
+        .replace(/\s+/g, " ")
+        .replace(/^[,\s]+|[.;,\s]+$/g, "")
+        .replace(/^and\s+/i, "")
+        .trim();
+    }
+
+    function getPreferenceCompareKey(value) {
+      return cleanPreferencePart(value).toLowerCase().replace(/^(a|an|the)\s+/i, "");
+    }
+
+    function renderGuidePreferenceSuggestions() {
+      const wrap = document.getElementById("guide-preference-suggestions");
+      if (!wrap) return;
+      const context = hbState.guidePlanContext || {};
+      const signals = context.signals || {};
+      const styles = Array.isArray(signals.styles) ? signals.styles.filter(Boolean) : [];
+      const hasSignals = Boolean(context.sourceType && (styles.length || signals.pace || signals.mustHaves || signals.planningNote));
+
+      if (!hasSignals) {
+        wrap.classList.add("hidden");
+        wrap.innerHTML = "";
+        return;
+      }
+
+      const sourceLabel = context.sourceType === "country"
+        ? `${context.sourceName} guide`
+        : `${context.sourceName} city guide`;
+      const feedback = hbState.guidePreferenceFeedback || "";
+      wrap.classList.remove("hidden");
+      wrap.innerHTML = `
+        <div class="guide-preference-suggestions-head">
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Guide suggestions</p>
+            <h4 class="mt-1 font-display text-lg font-bold text-ink">Use ${escapeUiHtml(sourceLabel)} as a shortcut</h4>
+            <p class="mt-2 text-sm leading-6 text-muted">These are optional signals from the destination guide. Apply what fits, then adjust anything that feels too broad.</p>
+          </div>
+          ${feedback ? `<span class="guide-preference-feedback">${escapeUiHtml(feedback)}</span>` : ""}
+        </div>
+        <div class="guide-preference-suggestions-grid">
+          <div class="guide-preference-card">
+            <p class="guide-preference-label">Trip direction</p>
+            <p class="guide-preference-value">${escapeUiHtml(styles.join(" + ") || "Use the guide's strongest trip style")}</p>
+            <p class="guide-preference-copy">${escapeUiHtml(signals.pace ? `${signals.pace} pace works best with this guide.` : "Keep the guide's strongest travel style visible in the itinerary.")}</p>
+            <button class="guide-preference-action" data-action="apply-guide-signals" type="button">Apply style and pace</button>
+          </div>
+          <div class="guide-preference-card">
+            <p class="guide-preference-label">Must-have anchors</p>
+            <p class="guide-preference-value">${escapeUiHtml(signals.mustHaves || context.suggestedBase || "Add a strong guide-backed anchor")}</p>
+            <p class="guide-preference-copy">Add the guide's most useful anchors to your must-haves so the final draft keeps them visible.</p>
+            <button class="guide-preference-action" data-action="apply-guide-must-haves" type="button">Add to must-haves</button>
+          </div>
+          <div class="guide-preference-card">
+            <p class="guide-preference-label">Planning logic</p>
+            <p class="guide-preference-value">${escapeUiHtml(signals.planningNote || context.preview || "Keep the route practical")}</p>
+            <p class="guide-preference-copy">This stays as guide context for the algorithm instead of becoming one of your hard rules.</p>
+          </div>
+        </div>
+      `;
+    }
+
+    function syncPreferenceChoiceButtons() {
+      const styles = hbState.appState.styles || [];
+      document.querySelectorAll("[data-group='styles']").forEach((button) => {
+        button.classList.toggle("is-active", styles.includes(button.dataset.value));
+      });
+      document.querySelectorAll(".choice-button").forEach((button) => {
+        const group = button.dataset.group;
+        if (!group || group === "styles") return;
+        button.classList.toggle("is-active", hbState.appState[group] === button.dataset.value);
+      });
+      updatePreferenceHelpers();
+    }
+
+    function applyGuidePreferenceSignals() {
+      const signals = hbState.guidePlanContext?.signals || {};
+      const signalStyles = Array.isArray(signals.styles) ? signals.styles.filter(Boolean) : [];
+      if (signalStyles.length) {
+        const mergedStyles = [...signalStyles, ...(hbState.appState.styles || [])].filter((item, index, list) => (
+          item && list.indexOf(item) === index
+        ));
+        hbState.appState.styles = mergedStyles.slice(0, 3);
+      }
+      if (signals.pace) hbState.appState.pace = signals.pace;
+      if (signalStyles.includes("Foodie")) hbState.appState.foodImportance = "Food is a focus";
+      hbState.guidePreferenceFeedback = "Applied";
+      syncPreferenceChoiceButtons();
+      window.setTimeout(() => {
+        hbState.guidePreferenceFeedback = "";
+        renderGuidePreferenceSuggestions();
+      }, 1600);
+    }
+
+    function applyGuideMustHaves() {
+      const signals = hbState.guidePlanContext?.signals || {};
+      const items = Array.isArray(signals.mustHaveItems) && signals.mustHaveItems.length
+        ? signals.mustHaveItems
+        : [signals.mustHaves || hbState.guidePlanContext?.suggestedBase || ""];
+      appendPreferenceText("must-haves-input", items);
+      hbState.guidePreferenceFeedback = "Added";
+      renderGuidePreferenceSuggestions();
+      window.setTimeout(() => {
+        hbState.guidePreferenceFeedback = "";
+        renderGuidePreferenceSuggestions();
+      }, 1600);
+    }
+
+    function updatePreferenceHelpers() {
+      const selectedStyles = hbState.appState.styles || [];
+      const styleSummary = document.getElementById("preference-style-summary");
+      const paceSummary = document.getElementById("preference-pace-summary");
+      const mustSummary = document.getElementById("preference-must-summary");
+      const ruleSummary = document.getElementById("preference-rule-summary");
+      const styleCountHelper = document.getElementById("style-count-helper");
+      const paceHelper = document.getElementById("pace-helper");
+      const modeMini = document.getElementById("preference-mode-mini");
+
+      if (styleSummary) {
+        styleSummary.textContent = selectedStyles.length ? selectedStyles.join(" + ") : "Pick up to 3 trip styles.";
+      }
+      if (paceSummary) {
+        paceSummary.textContent = `${hbState.appState.pace || "Balanced"} pace`;
+      }
+      if (mustSummary) {
+        mustSummary.textContent = summarizePreferenceText(hbState.appState.mustHaves, "No must-haves yet.");
+      }
+      if (ruleSummary) {
+        ruleSummary.textContent = summarizePreferenceText(hbState.appState.nonNegotiables, "No hard rules yet.");
+      }
+      if (styleCountHelper) {
+        const remaining = Math.max(0, 3 - selectedStyles.length);
+        styleCountHelper.textContent = remaining
+          ? `${selectedStyles.length} of 3 selected. Add ${remaining} more if it helps.`
+          : "3 of 3 selected. Remove one to choose a different style.";
+      }
+      if (paceHelper) {
+        paceHelper.textContent = paceHelperCopy[hbState.appState.pace] || paceHelperCopy.Balanced;
+      }
+      if (modeMini) {
+        modeMini.textContent = hbState.appState.mode === "detailed" ? "Detailed mode" : "Simple mode";
+      }
+      renderGuidePreferenceSuggestions();
+    }
+
+    function appendPreferenceText(targetId, text) {
+      const target = document.getElementById(targetId || "");
+      const incomingParts = (Array.isArray(text) ? text : String(text || "").split(","))
+        .map(cleanPreferencePart)
+        .filter(Boolean);
+      if (!target || !incomingParts.length) return;
+      const existingParts = target.value
+        .split(",")
+        .map(cleanPreferencePart)
+        .filter(Boolean);
+      const existingKeys = new Set(existingParts.map(getPreferenceCompareKey));
+      incomingParts.forEach((part) => {
+        const key = getPreferenceCompareKey(part);
+        if (!key || existingKeys.has(key)) return;
+        existingParts.push(part);
+        existingKeys.add(key);
+      });
+      target.value = existingParts.join(", ");
+      target.focus();
+      updateStateFromInputs();
+      updatePreferenceHelpers();
+    }
+
     function updateModeUI() {
       const isSimple = hbState.appState.mode === "simple";
       const modeExplainerTitle = document.getElementById("mode-explainer-title");
@@ -527,12 +1101,12 @@ function updatePrimaryCta() {
       hbRefs.detailedFields.classList.toggle("hidden", isSimple);
       hbRefs.modeBadge.textContent = isSimple ? "Simple mode" : "Detailed mode";
       if (modeExplainerTitle) {
-        modeExplainerTitle.textContent = isSimple ? "Simple keeps this quick." : "Detailed gives you more control.";
+        modeExplainerTitle.textContent = isSimple ? "Simple asks only what matters most." : "Detailed adds more specific trip choices.";
       }
       if (modeExplainerCopy) {
         modeExplainerCopy.textContent = isSimple
-          ? "You’ll stick to the core trip-shaping details and let the app do more of the work from there."
-          : "You’ll unlock extra trip controls like trip feel, food importance, desired memory, and spontaneity.";
+          ? "Answer the core choices and let the planner fill in the rest."
+          : "Use these when restaurants, free time, top sights, or hidden gems should noticeably change the plan.";
       }
       hbRefs.simpleModeBtn.classList.toggle("bg-white", isSimple);
       hbRefs.simpleModeBtn.classList.toggle("text-secondary", isSimple);
@@ -542,10 +1116,11 @@ function updatePrimaryCta() {
       hbRefs.detailedModeBtn.classList.toggle("text-secondary", !isSimple);
       hbRefs.detailedModeBtn.classList.toggle("shadow-sm", !isSimple);
       hbRefs.detailedModeBtn.classList.toggle("text-muted", isSimple);
+      updatePreferenceHelpers();
     }
 
     function setActivePanel(targetId, options = {}) {
-      const { updateHash = true } = options;
+      const { updateHash = true, focusTargetId = "" } = options;
       rememberGuidePanelScroll();
       hbState.activePanelId = targetId;
       document.body.dataset.surface = targetId;
@@ -573,10 +1148,15 @@ function updatePrimaryCta() {
       renderPanelContent(targetId);
 
       updatePrimaryCta();
+      updateFlowStatus();
       updateEditorialStickyBars();
       syncEditorialStickyObserver();
       saveGuideBrowseMemory();
-      restoreGuidePanelScroll(targetId);
+      if (focusTargetId) {
+        focusEditableTripDetail(focusTargetId);
+      } else {
+        restoreGuidePanelScroll(targetId);
+      }
       if (updateHash) {
         const nextHash = getRouteForPanel(targetId);
         if (window.location.hash !== `#${nextHash}`) {
@@ -615,8 +1195,24 @@ function updatePrimaryCta() {
 
     function generateTripFlow() {
       updateStateFromInputs();
+      const readiness = getSharedPlanningReadiness();
+      if (readiness.blockers.length) {
+        setActivePanel("build-panel", { focusTargetId: readiness.blockers[0].target });
+        return;
+      }
       if (getCountryOnlySelection()) {
         setActivePanel("build-panel");
+        return;
+      }
+      renderBlueprint();
+      setActivePanel("blueprint-panel");
+    }
+
+    function continueToThinking() {
+      updateStateFromInputs();
+      const readiness = getSharedPlanningReadiness();
+      if (readiness.blockers.length) {
+        setActivePanel("build-panel", { focusTargetId: readiness.blockers[0].target });
         return;
       }
       hbState.currentTrip = buildGeneratedTrip();
@@ -627,16 +1223,60 @@ function updatePrimaryCta() {
         name: ""
       };
       hbState.compareVersionId = "";
-      renderBlueprint();
       renderThinking();
       renderTrip();
-      setActivePanel("blueprint-panel");
-    }
-
-    function continueToThinking() {
-      renderThinking();
+      persistTripDraft({ feedback: "Draft saved automatically" });
       setActivePanel("thinking-panel");
       startThinkingSequence();
+    }
+
+    function focusEditableTripDetail(targetId) {
+      const applyFocus = () => {
+        const target = document.getElementById(targetId);
+        if (!target) return;
+        const highlightTarget = target.closest("[data-edit-section], label, .rounded-2xl, .rounded-[24px]") || target;
+        const rect = target.getBoundingClientRect();
+        const nextY = Math.max(0, window.scrollY + rect.top - Math.min(180, window.innerHeight * 0.28));
+        window.scrollTo(0, nextY);
+        document.documentElement.scrollTop = nextY;
+        document.body.scrollTop = nextY;
+        if (typeof target.focus === "function") {
+          try {
+            target.focus({ preventScroll: true });
+          } catch (error) {
+            target.focus();
+          }
+        }
+        highlightTarget.classList.remove("edit-focus-pulse");
+        window.requestAnimationFrame(() => {
+          highlightTarget.classList.add("edit-focus-pulse");
+          window.setTimeout(() => highlightTarget.classList.remove("edit-focus-pulse"), 1300);
+        });
+      };
+
+      window.setTimeout(applyFocus, 120);
+      window.setTimeout(applyFocus, 300);
+    }
+
+    function editBlueprintItem(panelId, targetId) {
+      if (!panelId || !targetId) return;
+      clearThinkingTimers();
+      updateStateFromInputs();
+      setActivePanel(panelId, { updateHash: false, focusTargetId: targetId });
+      const nextHash = getRouteForPanel(panelId);
+      window.history.replaceState(null, "", `#${nextHash}`);
+    }
+
+    function wireBlueprintEditButtons(scope = document) {
+      scope.querySelectorAll("[data-action='edit-blueprint-item']").forEach((button) => {
+        if (button.dataset.hbBound === "1") return;
+        button.dataset.hbBound = "1";
+        button.addEventListener("click", (event) => {
+          event.preventDefault();
+          event.stopPropagation();
+          editBlueprintItem(button.dataset.targetPanel, button.dataset.focusTarget);
+        });
+      });
     }
 
     hbRefs.tabs.forEach((tab) => {
@@ -677,6 +1317,22 @@ function updatePrimaryCta() {
       });
     });
 
+    document.addEventListener("click", (event) => {
+      const missingInfoTrigger = event.target.closest("[data-action='fix-missing-info']");
+      if (missingInfoTrigger) {
+        event.preventDefault();
+        event.stopPropagation();
+        focusMissingInfo(missingInfoTrigger.dataset.targetPanel, missingInfoTrigger.dataset.focusTarget);
+        return;
+      }
+
+      const trigger = event.target.closest("[data-action='edit-blueprint-item']");
+      if (!trigger) return;
+      event.preventDefault();
+      event.stopPropagation();
+      editBlueprintItem(trigger.dataset.targetPanel, trigger.dataset.focusTarget);
+    });
+
     document.querySelectorAll("[data-group='styles']").forEach((button) => {
       button.addEventListener("click", () => {
         const value = button.dataset.value;
@@ -687,7 +1343,11 @@ function updatePrimaryCta() {
         } else if (hbState.appState.styles.length < 3) {
           hbState.appState.styles.push(value);
           button.classList.add("is-active");
+        } else {
+          const helper = document.getElementById("style-count-helper");
+          if (helper) helper.textContent = "Choose up to 3. Remove one to add another style.";
         }
+        updatePreferenceHelpers();
       });
     });
 
@@ -705,6 +1365,7 @@ function updatePrimaryCta() {
         if (group === "foodImportance") hbState.appState.foodImportance = value;
         if (group === "memory") hbState.appState.memory = value;
         if (group === "spontaneity") hbState.appState.spontaneity = value;
+        updatePreferenceHelpers();
       });
     });
 
@@ -726,8 +1387,24 @@ function updatePrimaryCta() {
       }
 
       if (hbState.activePanelId === "build-panel") {
+        const destinationBeforeUpdate = hbRefs.formBindings.destination?.value.trim() || "";
         updateStateFromInputs();
-        openAccountModal();
+        if (!destinationBeforeUpdate) {
+          hbState.appState.destination = "";
+          if (hbRefs.formBindings.destination) {
+            hbRefs.formBindings.destination.value = "";
+          }
+          renderBuildMissingInfo();
+          focusEditableTripDetail("destination-input");
+          return;
+        }
+        const readiness = getSharedPlanningReadiness();
+        if (readiness.blockers.length) {
+          renderBuildMissingInfo();
+          focusMissingInfo(readiness.blockers[0].panel, readiness.blockers[0].target);
+          return;
+        }
+        setActivePanel("details-panel");
         return;
       }
 
@@ -749,16 +1426,8 @@ function updatePrimaryCta() {
       }
 
       if (hbState.activePanelId === "saved-panel") {
-        if (hbState.likedTrip) {
-          hbState.currentTrip = cloneData(hbState.likedTrip);
-          hbState.liveDraftTrip = cloneData(hbState.currentTrip);
-          hbState.activeTripSource = {
-            type: "live",
-            versionId: "",
-            name: ""
-          };
-          hbState.compareVersionId = "";
-          renderTrip();
+        if (hbState.savedDraft) {
+          restoreSavedDraft();
           setActivePanel("trip-panel");
           return;
         }
@@ -767,12 +1436,9 @@ function updatePrimaryCta() {
       }
 
       if (hbState.activePanelId === "trip-panel") {
-        if (hbState.currentTrip && !hbState.likedTrip) {
-          hbState.likedTrip = cloneData(hbState.currentTrip);
-          renderTrip();
-          renderSavedPanel();
-        }
-        setActivePanel(hbState.likedTrip ? "saved-panel" : "build-panel");
+        persistTripDraft({ feedback: "Draft saved" });
+        renderTrip();
+        renderSavedPanel();
         return;
       }
 
@@ -813,6 +1479,46 @@ function updatePrimaryCta() {
         hbState.tripFactsExpanded = !hbState.tripFactsExpanded;
         renderTrip();
       }
+      if (action === "save-current-draft") {
+        persistTripDraft({ feedback: "Draft saved" });
+        renderTrip();
+        renderSavedPanel();
+      }
+      if (action === "restore-saved-draft") {
+        restoreSavedDraft();
+        setActivePanel("trip-panel");
+      }
+      if (action === "fix-missing-info") {
+        focusMissingInfo(trigger.dataset.targetPanel, trigger.dataset.focusTarget);
+      }
+      if (action === "jump-trip-anchor") {
+        const section = trigger.dataset.section || "";
+        const targetId = trigger.dataset.targetId || "";
+        if (section) {
+          hbState.tripSectionVisibility = hbState.tripSectionVisibility || {};
+          hbState.tripSectionVisibility[section] = true;
+          const panel = document.querySelector(`[data-trip-section="${section}"]`);
+          const toggle = panel?.querySelector("[data-action='toggle-trip-section']");
+          panel?.classList.add("is-expanded");
+          panel?.classList.remove("is-collapsed");
+          panel?.querySelectorAll("[data-trip-section-body]").forEach((body) => {
+            body.hidden = false;
+          });
+          if (toggle) {
+            toggle.setAttribute("aria-expanded", "true");
+            toggle.innerHTML = `
+              <span>Hide</span>
+              <span class="material-symbols-outlined" aria-hidden="true">remove</span>
+            `;
+          }
+        }
+        window.setTimeout(() => {
+          const target = targetId ? document.getElementById(targetId) : null;
+          if (!target) return;
+          const top = target.getBoundingClientRect().top + window.scrollY - 12;
+          window.scrollTo({ top: Math.max(top, 0), behavior: "auto" });
+        }, 80);
+      }
       if (action === "toggle-trip-section") {
         const section = trigger.dataset.section || "";
         if (section) {
@@ -826,6 +1532,7 @@ function updatePrimaryCta() {
       }
       if (action === "expand-all-days") setAllDayExpansion(true);
       if (action === "collapse-all-days") setAllDayExpansion(false);
+      if (action === "adjust-day-quality") adjustDayQuality(dayId, trigger.dataset.feedback);
       if (action === "swap-item") swapDayItem(dayId);
       if (action === "remove-item") removeDayItem(dayId);
       if (action === "undo-item") undoDayItem(dayId);
@@ -920,6 +1627,32 @@ function updatePrimaryCta() {
       const related = event.relatedTarget;
       if (related instanceof Node && feedback.contains(related)) return;
       resumeAlternateVersionFeedbackDismiss();
+    });
+
+    hbRefs.tripPanel.addEventListener("change", (event) => {
+      const statusControl = event.target.closest("[data-action='update-booking-status']");
+      if (statusControl) {
+        updateBookingItemStatus(statusControl.dataset.bookingId || "", statusControl.value);
+        return;
+      }
+
+      const noteControl = event.target.closest("[data-action='update-booking-note']");
+      if (!noteControl) return;
+      window.clearTimeout(bookingNoteSaveTimer);
+      updateBookingItemNote(noteControl.dataset.bookingId || "", noteControl.value);
+    });
+
+    hbRefs.tripPanel.addEventListener("input", (event) => {
+      const noteControl = event.target.closest("[data-action='update-booking-note']");
+      if (!noteControl) return;
+      queueBookingNoteSave(noteControl);
+    });
+
+    hbRefs.tripPanel.addEventListener("focusout", (event) => {
+      const noteControl = event.target.closest("[data-action='update-booking-note']");
+      if (!noteControl) return;
+      window.clearTimeout(bookingNoteSaveTimer);
+      updateBookingItemNote(noteControl.dataset.bookingId || "", noteControl.value);
     });
 
     hbRefs.tripPanel.addEventListener("focusin", (event) => {
@@ -1090,6 +1823,20 @@ function updatePrimaryCta() {
         renderTrip();
         setActivePanel("trip-panel");
       }
+
+      if (trigger.dataset.action === "append-preference-text") {
+        appendPreferenceText(trigger.dataset.target, trigger.dataset.text);
+      }
+
+      if (trigger.dataset.action === "apply-guide-signals") {
+        event.preventDefault();
+        applyGuidePreferenceSignals();
+      }
+
+      if (trigger.dataset.action === "apply-guide-must-haves") {
+        event.preventDefault();
+        applyGuideMustHaves();
+      }
     });
 
     document.getElementById("trip-form").addEventListener("click", (event) => {
@@ -1113,6 +1860,19 @@ function updatePrimaryCta() {
     document.getElementById("build-panel").addEventListener("click", (event) => {
       const trigger = event.target.closest("[data-action]");
       if (!trigger) return;
+
+      if (trigger.dataset.action === "toggle-date-flexibility") {
+        hbState.appState.datesFlexible = !hbState.appState.datesFlexible;
+        updateStateFromInputs();
+        updateBuildFormHelpers();
+      }
+
+      if (trigger.dataset.action === "toggle-budget-flexibility") {
+        hbState.appState.budgetFlexible = !hbState.appState.budgetFlexible;
+        updateStateFromInputs();
+        updateBudgetHelper();
+        updateBuildFormHelpers();
+      }
 
       if (trigger.dataset.action === "clear-guide-context") {
         clearGuidePlanningContext();
@@ -1147,6 +1907,11 @@ function updatePrimaryCta() {
       hbState.appState.mode = "detailed";
       updateModeUI();
       setActivePanel("details-panel");
+    });
+
+    document.getElementById("build-save-account-btn")?.addEventListener("click", () => {
+      updateStateFromInputs();
+      openAccountModal();
     });
 
     hbRefs.headerMenuBtn.addEventListener("click", () => {
@@ -1671,15 +2436,19 @@ function updatePrimaryCta() {
     hbRefs.formBindings.departureFlight.addEventListener("change", updateStateFromInputs);
     hbRefs.formBindings.budget.addEventListener("change", updateStateFromInputs);
     hbRefs.formBindings.mustHaves.addEventListener("input", updateStateFromInputs);
+    hbRefs.formBindings.nonNegotiables?.addEventListener("input", updateStateFromInputs);
 
     window.addEventListener("hashchange", applyHashRoute);
     window.addEventListener("scroll", scheduleEditorialStickyBarsUpdate, { passive: true });
     window.addEventListener("resize", scheduleEditorialStickyBarsUpdate, { passive: true });
 
     restoreGuideBrowseMemory();
+    hydrateTripProfile();
+    hydrateSavedDraftStatus();
     updateModeUI();
     updateBudgetHelper();
     updateFlightUI();
+    updateBuildFormHelpers();
     updateDestinationHelper();
     updatePrimaryCta();
     updateEditorialStickyBars();
@@ -1698,6 +2467,8 @@ function updatePrimaryCta() {
       toggleMenuDrawer,
       updateBudgetHelper,
       updateFlightUI,
+      updateBuildFormHelpers,
+      updatePreferenceHelpers,
       getRouteForPanel,
       applyHashRoute,
       updateModeUI,

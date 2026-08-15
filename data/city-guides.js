@@ -606,6 +606,75 @@ window.HB_DATA.cityGuideDetailData = {
       }
     };
 
+window.HB_DATA.cityPlanningToolkitData = {
+      "Paris, France": [
+        { label: "When it works best", value: "Spring, early summer, and fall", copy: "Paris can work year-round, but milder months make walking, outdoor meals, and neighborhood days easier to enjoy." },
+        { label: "Where to stay", value: "Le Marais, Saint-Germain, or near the Seine", copy: "A central, walkable base helps first-timers keep the big sights close without crossing the city too often." },
+        { label: "Getting around", value: "Metro plus focused walking", copy: "The strongest days usually use transit for the bigger moves, then stay on foot once the itinerary reaches a good neighborhood cluster." },
+        { label: "Book early", value: "Major museums, tower time, standout dinners", copy: "Reserve the moments that shape the trip, then leave enough open time around them for cafes, bakeries, and wandering." }
+      ],
+      "Rome, Italy": [
+        { label: "When it works best", value: "Spring and fall", copy: "Rome is easier when temperatures are milder and long outdoor sightseeing days do not feel like endurance tests." },
+        { label: "Where to stay", value: "Centro Storico, Monti, or Trastevere", copy: "Pick a base that matches the trip: central icons, ancient-Rome access, or evenings with stronger neighborhood character." },
+        { label: "Getting around", value: "Walkable clusters with taxi help", copy: "The map can be deceptive, so the plan should group ruins, piazzas, and dinner areas with fewer cross-city jumps." },
+        { label: "Book early", value: "Colosseum, Vatican, and signature meals", copy: "The headline sights and the meals people remember most are the pieces most worth protecting before arrival." }
+      ],
+      "Tokyo, Japan": [
+        { label: "When it works best", value: "Spring, fall, and clear winter days", copy: "Tokyo rewards walking and district hopping, so comfortable weather helps the city feel energetic instead of tiring." },
+        { label: "Where to stay", value: "Shinjuku, Ginza, Shibuya, or Tokyo Station", copy: "The best base depends on whether the trip leans nightlife, shopping, food, or easy rail access." },
+        { label: "Getting around", value: "Rail-first, district-by-district", copy: "Tokyo is easiest when each day has a clear area identity and transit connects the larger jumps." },
+        { label: "Book early", value: "Restaurants, viewpoints, and special museums", copy: "High-demand experiences can shape the whole day, so it helps to anchor them before filling in nearby stops." }
+      ],
+      "New York, United States": [
+        { label: "When it works best", value: "Spring, fall, and festive winter", copy: "New York has a different personality by season, but walking-heavy trips feel best when the weather supports being outside." },
+        { label: "Where to stay", value: "Midtown, Chelsea, SoHo, or Brooklyn", copy: "Choose the base around the version of New York the traveler wants: convenience, food, shopping, nightlife, or a slower local feel." },
+        { label: "Getting around", value: "Subway plus neighborhood walking", copy: "The trip feels smoother when days stay uptown, downtown, or Brooklyn-focused instead of bouncing across the city." },
+        { label: "Book early", value: "Shows, skyline views, and hard-to-get dinners", copy: "New York rewards spontaneity, but the big-ticket moments are easier to trust when they are planned ahead." }
+      ],
+      "London, United Kingdom": [
+        { label: "When it works best", value: "Late spring through early fall", copy: "London can work in any season, but longer days make parks, markets, and neighborhood wandering more rewarding." },
+        { label: "Where to stay", value: "South Bank, Bloomsbury, Soho, or Kensington", copy: "The right base depends on whether the trip is museum-led, theater-led, family-focused, or built for easy sightseeing." },
+        { label: "Getting around", value: "Tube, bus, and walking pockets", copy: "London is large, so the itinerary should pair transit moves with compact walking areas once the day lands." },
+        { label: "Book early", value: "Theater, tea, and special exhibits", copy: "The best reserved moments give the trip shape while leaving room for pubs, parks, and markets around them." }
+      ],
+      "Barcelona, Spain": [
+        { label: "When it works best", value: "Spring, early summer, and fall", copy: "Barcelona feels strongest when the weather supports both architecture days and beach-city downtime." },
+        { label: "Where to stay", value: "Eixample, Gothic Quarter, or El Born", copy: "A good base keeps Gaudi sights, old-city walking, and evening meals from feeling too spread out." },
+        { label: "Getting around", value: "Metro plus short neighborhood walks", copy: "The trip works best when one major sight anchors the day and nearby streets carry the rest." },
+        { label: "Book early", value: "Sagrada Familia, Park Guell, and dinner", copy: "Timed-entry sights are easier to enjoy when the day is built around them instead of squeezed in late." }
+      ],
+      "Lisbon, Portugal": [
+        { label: "When it works best", value: "Spring and fall", copy: "Lisbon is most comfortable when hills, viewpoints, and outdoor meals feel pleasant rather than hot or rushed." },
+        { label: "Where to stay", value: "Baixa, Chiado, Alfama, or Principe Real", copy: "The base should match the desired pace: central convenience, older atmosphere, or calmer dining-and-cafe energy." },
+        { label: "Getting around", value: "Walking, rideshares, and selective transit", copy: "The hills matter, so the plan should avoid pretending every scenic route is an easy stroll." },
+        { label: "Book early", value: "Fado, special dinners, and day trips", copy: "The most memorable extras work best when they are placed on days with enough breathing room." }
+      ],
+      "Bangkok, Thailand": [
+        { label: "When it works best", value: "Cooler dry-season months", copy: "Bangkok is more enjoyable when heat, traffic, and temple timing are treated as real planning factors." },
+        { label: "Where to stay", value: "Sukhumvit, Riverside, Siam, or Old City", copy: "The base changes the trip dramatically: nightlife, river views, shopping access, or easier temple mornings." },
+        { label: "Getting around", value: "Skytrain, river boats, and grouped areas", copy: "A smooth Bangkok plan avoids zigzagging and uses the river or rail when they make the day easier." },
+        { label: "Book early", value: "Food tours, rooftop meals, and guided temple days", copy: "A few planned anchors help the city feel exciting without letting traffic decide the whole trip." }
+      ],
+      "Mexico City, Mexico": [
+        { label: "When it works best", value: "Dry-season city days", copy: "Mexico City rewards long neighborhood days, so clear weather helps markets, museums, and walks connect naturally." },
+        { label: "Where to stay", value: "Roma Norte, Condesa, Polanco, or Centro", copy: "Choose the base around food, parks, museums, nightlife, or first-time convenience." },
+        { label: "Getting around", value: "Neighborhood clusters with rideshares", copy: "The city is large enough that each day should have a clear district plan rather than a scattered checklist." },
+        { label: "Book early", value: "Top restaurants, Frida Kahlo Museum, and day trips", copy: "The most popular pieces can anchor the itinerary, especially when the trip includes Teotihuacan or a major food plan." }
+      ],
+      "Cancun, Mexico": [
+        { label: "When it works best", value: "Dry-season beach weather", copy: "Cancun is easiest when the plan respects beach time first and adds excursions selectively." },
+        { label: "Where to stay", value: "Hotel Zone, Playa Mujeres, or downtown", copy: "The stay choice changes the trip: resort convenience, quieter beach time, or a more local base." },
+        { label: "Getting around", value: "Transfer-first, excursion-aware", copy: "A good Cancun plan separates resort days from outing days so travel time does not keep interrupting the vacation." },
+        { label: "Book early", value: "Excursions, dinner slots, and airport transfers", copy: "The trip feels smoother when logistics are set before the relaxation starts." }
+      ],
+      "Amsterdam, Netherlands": [
+        { label: "When it works best", value: "Spring, summer, and early fall", copy: "Amsterdam is strongest when canal walks, cafes, museums, and bikes can all be part of the same easy day." },
+        { label: "Where to stay", value: "Canal Belt, Jordaan, Museum Quarter, or De Pijp", copy: "A good base keeps the trip scenic and walkable while matching the desired museum, food, or neighborhood feel." },
+        { label: "Getting around", value: "Walk, tram, and careful bike use", copy: "The city is compact, but slower pacing helps travelers enjoy the setting instead of rushing through it." },
+        { label: "Book early", value: "Anne Frank House, major museums, and special dinners", copy: "The most constrained visits should anchor the day, with canals and cafes filling the natural space around them." }
+      ]
+    };
+
 window.HB_DATA.cityEditorialPageData = {
       "Paris, France": {
         dek: "For travelers who want the classic Paris moments, but still want the trip to feel elegant, walkable, and personal instead of overly scheduled.",

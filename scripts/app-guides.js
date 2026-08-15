@@ -99,6 +99,238 @@ function renderDestinationHero(targetPrefix) {
       ];
     }
 
+    function getPlanningToolkitIcon(label) {
+      if (/when/i.test(label)) return "event_available";
+      if (/stay/i.test(label)) return "hotel";
+      if (/getting|around/i.test(label)) return "route";
+      if (/book/i.test(label)) return "bookmark_check";
+      return "travel_explore";
+    }
+
+    function getCityPlanningToolkit(city, guide) {
+      const customToolkit = hbData.cityPlanningToolkitData?.[city];
+      if (customToolkit?.length) return customToolkit;
+      const cityName = guide.title;
+      const bestFor = buildCityGuideLead(guide.summary).replace(/^The city is known for /, "").replace(/\.$/, "");
+      const highlights = guide.highlights.slice(0, 2).join(" and ");
+      return [
+        {
+          label: "When it works best",
+          value: "Match the season to the trip style",
+          copy: `${cityName} is easiest to plan when weather, crowds, and the traveler's preferred pace are treated as part of the itinerary.`
+        },
+        {
+          label: "Where to stay",
+          value: "Base near the strongest trip area",
+          copy: `Pick a stay that supports this trip style: ${bestFor}. Avoid choosing only by lowest price or a generic central label.`
+        },
+        {
+          label: "Getting around",
+          value: "Group the day by area",
+          copy: guide.tip
+        },
+        {
+          label: "Book early",
+          value: highlights || "The moments that matter most",
+          copy: "Protect the attractions, meals, or experiences that would change the trip if they were missed."
+        }
+      ];
+    }
+
+    function joinGuideItems(items, fallback) {
+      const list = Array.isArray(items) ? items.filter(Boolean) : [];
+      if (!list.length) return fallback;
+      if (list.length === 1) return list[0];
+      return `${list.slice(0, -1).join(", ")} and ${list[list.length - 1]}`;
+    }
+
+    function getGuideSignalText(...parts) {
+      return parts
+        .flatMap((part) => Array.isArray(part) ? part : [part])
+        .filter(Boolean)
+        .join(" ")
+        .toLowerCase();
+    }
+
+    function addGuideStyleSignal(styles, value) {
+      if (!value || styles.includes(value) || styles.length >= 3) return;
+      styles.push(value);
+    }
+
+    function inferGuideStyles(guide, details = {}) {
+      const styles = [];
+      const text = getGuideSignalText(
+        guide?.summary,
+        guide?.tip,
+        guide?.highlights,
+        details.bestAttractions,
+        details.bestRestaurants,
+        details.bestDinner,
+        details.bestUnique,
+        details.bestFirstTimers
+      );
+
+      if (/food|restaurant|dinner|lunch|market|bakery|coffee|meal|street food|tapas/.test(text)) {
+        addGuideStyleSignal(styles, "Foodie");
+      }
+      if (/history|museum|landmark|palace|temple|imperial|ancient|church|cathedral|cultural/.test(text)) {
+        addGuideStyleSignal(styles, "Historical");
+      }
+      if (/beach|relax|slow|scenic|park|garden|river|canal|seine|sunset|resort|romantic/.test(text)) {
+        addGuideStyleSignal(styles, "Relaxing");
+      }
+      if (/adventure|nightlife|high-energy|viewpoint|hike|excursion|district|exploring|movement/.test(text)) {
+        addGuideStyleSignal(styles, "Adventurous");
+      }
+      if (/unique|hidden|local|neighborhood|market|wandering|covered passages|design|bookshop/.test(text)) {
+        addGuideStyleSignal(styles, "Unique");
+      }
+
+      if (!styles.length) {
+        addGuideStyleSignal(styles, "Relaxing");
+        addGuideStyleSignal(styles, "Foodie");
+      }
+
+      return styles;
+    }
+
+    function inferGuidePace(guide) {
+      const text = getGuideSignalText(guide?.summary, guide?.tip);
+      if (/beach|resort|relax|slow|fewer|lighter|room|calm|separate/.test(text)) return "Easygoing";
+      if (/nightlife|high-energy|structured|big landmarks|major cultural sights|efficient|packed/.test(text)) return "Packed";
+      return "Balanced";
+    }
+
+    function buildCityGuideSignals(guide) {
+      const details = hbData.cityGuideDetailData[guide.city] || {};
+      const firstTimerPicks = (details.bestFirstTimers || details.bestAttractions || guide.highlights || []).slice(0, 2);
+      const foodPick = (details.bestDinner || details.bestRestaurants || details.bestLunch || [])[0];
+      const mustHaveItems = [...firstTimerPicks, foodPick].filter(Boolean).slice(0, 3);
+      const mustHaves = joinGuideItems(mustHaveItems, guide.highlights?.[0] || guide.title);
+
+      return {
+        styles: inferGuideStyles(guide, details),
+        pace: inferGuidePace(guide),
+        mustHaves,
+        mustHaveItems,
+        planningNote: guide.tip || `Keep the ${guide.title} plan grouped by area so the days feel easier to follow.`
+      };
+    }
+
+    function buildCountryGuideSignals(country, guide) {
+      const cities = getCitiesForCountry(country);
+      const firstCity = cities[0]?.title || country;
+      const textGuide = {
+        summary: `${guide.summary} ${(guide.cards || []).map((card) => card[1]).join(" ")}`,
+        tip: guide.cards?.[2]?.[1] || guide.summary
+      };
+
+      return {
+        styles: inferGuideStyles(textGuide),
+        pace: inferGuidePace(textGuide),
+        mustHaves: firstCity,
+        mustHaveItems: [firstCity],
+        planningNote: guide.cards?.[2]?.[1] || "Use the country guide to choose the first city, then keep the route practical."
+      };
+    }
+
+    function getDestinationDepthIcon(label) {
+      if (/trip length/i.test(label)) return "calendar_month";
+      if (/base/i.test(label)) return "hotel";
+      if (/priority/i.test(label)) return "star";
+      if (/food/i.test(label)) return "restaurant";
+      if (/budget/i.test(label)) return "payments";
+      if (/watch/i.test(label)) return "visibility";
+      return "travel_explore";
+    }
+
+    function inferDestinationTripLength(guide, details) {
+      const editorialLength = getEditorialSummaryCards(guide.city, guide)
+        .find(([label]) => /ideal trip length/i.test(label))?.[1];
+      if (editorialLength) return editorialLength;
+
+      const attractionCount = [
+        ...(details.bestAttractions || []),
+        ...(details.bestUnique || []),
+        ...(details.bestFirstTimers || [])
+      ].filter(Boolean).length;
+
+      if (attractionCount >= 9) return "4 to 5 days gives the trip enough space for classics, meals, and one slower neighborhood day.";
+      return "3 to 4 days is usually enough for a strong first version without overfilling the schedule.";
+    }
+
+    function buildDestinationDepthCards(city, guide, details) {
+      const toolkit = getCityPlanningToolkit(city, guide);
+      const highlights = guide.highlights || [];
+      const bestRestaurants = joinGuideItems((details.bestDinner || details.bestRestaurants || []).slice(0, 2), "one stronger dinner");
+      const budgetPicks = joinGuideItems((details.bestBudget || details.bestUnique || []).slice(0, 2), "walkable free time and casual food");
+      const firstTimerPicks = joinGuideItems((details.bestFirstTimers || details.bestAttractions || highlights).slice(0, 2), highlights[0] || guide.title);
+      const uniquePicks = joinGuideItems((details.bestUnique || details.bestSolo || []).slice(0, 2), highlights[1] || "one local-feeling stop");
+      const stayToolkit = toolkit.find((item) => /stay/i.test(item.label));
+      const routeToolkit = toolkit.find((item) => /getting|around/i.test(item.label));
+      const bookToolkit = toolkit.find((item) => /book/i.test(item.label));
+
+      return [
+        {
+          label: "Trip length",
+          value: "Give the city enough room",
+          copy: inferDestinationTripLength(guide, details),
+          chips: [guide.title, "First draft", "Pacing"]
+        },
+        {
+          label: "Best base",
+          value: stayToolkit?.value || "Stay near the strongest trip area",
+          copy: stayToolkit?.copy || `A good base should support ${buildCityGuideLead(guide.summary).replace(/^The city is known for /, "").replace(/\.$/, "")}, not just look central on a map.`,
+          chips: highlights.slice(0, 3)
+        },
+        {
+          label: "Priority picks",
+          value: firstTimerPicks,
+          copy: `For a first trip, these should usually be protected before adding extra stops: ${firstTimerPicks}.`,
+          chips: (details.bestAttractions || highlights).slice(0, 3)
+        },
+        {
+          label: "Food strategy",
+          value: bestRestaurants,
+          copy: `Use food as a planning anchor. A meal like ${bestRestaurants} can make the day feel more specific and easier to remember.`,
+          chips: (details.bestDinner || details.bestRestaurants || []).slice(0, 3)
+        },
+        {
+          label: "Budget angle",
+          value: budgetPicks,
+          copy: `A lower-cost version should lean into ${budgetPicks}, then save paid upgrades for the experience that matters most.`,
+          chips: (details.bestBudget || []).slice(0, 3)
+        },
+        {
+          label: "Watch-outs",
+          value: routeToolkit?.value || bookToolkit?.value || "Do not overbuild the day",
+          copy: routeToolkit?.copy || bookToolkit?.copy || guide.tip,
+          chips: [hbState.appState.pace || "Balanced", "Route logic", "Booking pressure"]
+        }
+      ];
+    }
+
+    function buildDestinationFitRows(city, guide, details) {
+      const couples = joinGuideItems((details.bestCouples || []).slice(0, 2), "a scenic evening and one strong meal");
+      const family = joinGuideItems((details.bestKids || []).slice(0, 2), "one easier family-friendly anchor");
+      const adventurous = joinGuideItems((details.bestUnique || details.bestSolo || []).slice(0, 2), "a more local or unusual stop");
+
+      return [
+        {
+          label: "Choose this city if",
+          value: buildCityGuideLead(guide.summary).replace(/^The city is known for /, "").replace(/\.$/, "")
+        },
+        {
+          label: "For couples or families",
+          value: hbState.appState.children > 0 ? family : couples
+        },
+        {
+          label: "For more depth",
+          value: adventurous
+        }
+      ];
+    }
+
     function getEditorialGallery(city, guide) {
       const editorial = getCityEditorialPage(city);
       if (editorial?.gallery?.length) {
@@ -184,7 +416,7 @@ function renderDestinationHero(targetPrefix) {
           <div class="flex items-start justify-between gap-3">
             <div>
               <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Popular places to start</p>
-              <h4 class="mt-1 font-display text-xl font-bold text-ink">A few cities users usually open first</h4>
+              <h4 class="mt-1 font-display text-xl font-bold text-ink">A few cities to open first</h4>
               <p class="mt-2 text-sm leading-6 text-muted">If someone is just browsing, these are strong editorial pages to start with before narrowing down the trip.</p>
             </div>
             <span class="rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">Editor's picks</span>
@@ -576,7 +808,8 @@ function renderDestinationHero(targetPrefix) {
         sourceLocation: "",
         summary: "",
         preview: "",
-        suggestedBase: ""
+        suggestedBase: "",
+        signals: null
       };
       if (!context?.sourceType) {
         wrap.classList.add("hidden");
@@ -600,7 +833,7 @@ function renderDestinationHero(targetPrefix) {
       copy.textContent = context.sourceType === "city"
         ? `We’ve prefilled this around ${context.sourceName}. Expect a first draft built around what the city is genuinely known for, with ${context.suggestedBase} giving the trip a clear place to begin.`
         : `We’ve set ${context.sourceName} as the broader direction. ${context.suggestedBase} is a strong first city to narrow into, so the trip starts specific without losing the bigger country view.`;
-      const chips = context.sourceType === "city"
+      const baseChips = context.sourceType === "city"
         ? [
             `Starting city: ${context.sourceName}`,
             `Early focus: ${context.suggestedBase}`,
@@ -611,6 +844,14 @@ function renderDestinationHero(targetPrefix) {
             `Best first city: ${context.suggestedBase}`,
             "Country-led draft"
           ];
+      const signalChips = context.signals
+        ? [
+            context.signals.styles?.length ? `Suggested styles: ${context.signals.styles.join(" + ")}` : "",
+            context.signals.pace ? `${context.signals.pace} pace` : "",
+            context.signals.mustHaves ? `Anchor: ${context.signals.mustHaves}` : ""
+          ].filter(Boolean)
+        : [];
+      const chips = [...baseChips, ...signalChips].slice(0, 6);
       if (thumb && visual.image) {
         thumb.src = visual.image;
         thumb.classList.remove("hidden");
@@ -637,7 +878,8 @@ function renderDestinationHero(targetPrefix) {
         sourceLocation: city,
         summary: guide.summary,
         preview: `${preview.label}: ${preview.copy}`,
-        suggestedBase: guide.highlights[0] || guide.title
+        suggestedBase: guide.highlights[0] || guide.title,
+        signals: buildCityGuideSignals(guide)
       };
       hbState.guideActionState.city = `Planning ${guide.title}`;
       hbState.appState.destination = city;
@@ -655,7 +897,8 @@ function renderDestinationHero(targetPrefix) {
         sourceLocation: country,
         summary: guide.summary,
         preview: `${preview.label}: ${preview.copy}`,
-        suggestedBase: getCitiesForCountry(country)[0]?.title || country
+        suggestedBase: getCitiesForCountry(country)[0]?.title || country,
+        signals: buildCountryGuideSignals(country, guide)
       };
       hbState.guideActionState.country = `Using ${country}`;
       hbState.appState.destination = country;
@@ -1085,7 +1328,7 @@ function renderDestinationHero(targetPrefix) {
             <div>
               <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Good places to start broad</p>
               <h4 class="mt-1 font-display text-xl font-bold text-ink">Countries worth opening before you pick a city</h4>
-              <p class="mt-2 text-sm leading-6 text-muted">These country pages are useful when users know the country but still need help deciding where inside it to base the trip.</p>
+              <p class="mt-2 text-sm leading-6 text-muted">These country pages are useful when you know the country but still need help deciding where inside it to base the trip.</p>
             </div>
             <span class="rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">Broad trip planning</span>
           </div>
@@ -1454,7 +1697,7 @@ function renderDestinationHero(targetPrefix) {
       summary.textContent = editorial?.dek || guide.summary;
       intro.innerHTML = (editorial?.intro || [
         `${country} tends to feel strongest when travelers understand the rhythm before they choose the exact city. That is usually the difference between a trip that feels aligned and one that feels like a list of disconnected stops.`,
-        `This page gives a broader editorial read on ${country}: what kind of trip it supports best, what tends to stand out across the destination, and which cities are the strongest starting points once users are ready to narrow down.`
+        `This page gives a broader editorial read on ${country}: what kind of trip it supports best, what tends to stand out across the destination, and which cities are the strongest starting points once you are ready to narrow down.`
       ]).map((paragraph) => `<p>${paragraph}</p>`).join("");
       summaryCards.innerHTML = guide.cards.map(([label, copy]) => `
         <div class="rounded-[20px] border border-line bg-white px-4 py-4">
@@ -1554,13 +1797,16 @@ function renderDestinationHero(targetPrefix) {
       const intro = document.getElementById("city-guide-editorial-intro");
       const trustCopy = document.getElementById("city-guide-trust-copy");
       const summaryCards = document.getElementById("city-guide-summary-cards");
+      const planningToolkit = document.getElementById("city-guide-planning-toolkit");
+      const depthGrid = document.getElementById("city-guide-depth-grid");
+      const fitStrip = document.getElementById("city-guide-fit-strip");
       const highlightChips = document.getElementById("city-guide-highlight-chips");
       const planningTip = document.getElementById("city-guide-planning-tip");
       const heroImage = document.getElementById("city-guide-hero-image");
       const toc = document.getElementById("city-guide-toc");
       const relatedGrid = document.getElementById("city-guide-related-grid");
       const stickyActions = document.getElementById("city-guide-sticky-actions");
-      if (!guide || !details || !title || !summary || !grid || !useBtn || !breadcrumbs || !gallery || !intro || !trustCopy || !summaryCards || !highlightChips || !planningTip || !heroImage || !toc || !relatedGrid || !stickyActions) return;
+      if (!guide || !details || !title || !summary || !grid || !useBtn || !breadcrumbs || !gallery || !intro || !trustCopy || !summaryCards || !planningToolkit || !depthGrid || !fitStrip || !highlightChips || !planningTip || !heroImage || !toc || !relatedGrid || !stickyActions) return;
 
       hbState.selectedGuideCity = city;
       const hero = getGuideHero(city);
@@ -1598,6 +1844,44 @@ function renderDestinationHero(targetPrefix) {
           <p class="mt-2 text-sm leading-6 text-ink">${copy}</p>
         </div>
       `).join("");
+      planningToolkit.innerHTML = getCityPlanningToolkit(city, guide).map((item) => `
+        <article class="rounded-[20px] border border-line bg-surface-soft px-4 py-4">
+          <div class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-secondary" aria-hidden="true">${getPlanningToolkitIcon(item.label)}</span>
+            <div class="min-w-0">
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">${item.label}</p>
+              <h5 class="mt-2 font-display text-base font-bold leading-tight text-ink">${item.value}</h5>
+              <p class="mt-2 text-sm leading-6 text-muted">${item.copy}</p>
+            </div>
+          </div>
+        </article>
+      `).join("");
+      depthGrid.innerHTML = buildDestinationDepthCards(city, guide, details).map((item) => `
+        <article class="destination-depth-card">
+          <div class="destination-depth-card-head">
+            <span class="destination-depth-icon material-symbols-outlined" aria-hidden="true">${getDestinationDepthIcon(item.label)}</span>
+            <div class="min-w-0">
+              <p class="destination-depth-label">${item.label}</p>
+              <h5 class="destination-depth-value">${item.value}</h5>
+            </div>
+          </div>
+          <p class="destination-depth-copy">${item.copy}</p>
+          <div class="destination-depth-chip-row">
+            ${(item.chips || []).filter(Boolean).slice(0, 3).map((chip) => `<span class="destination-depth-chip">${chip}</span>`).join("")}
+          </div>
+        </article>
+      `).join("");
+      fitStrip.innerHTML = `
+        <p class="text-xs font-semibold uppercase tracking-[0.16em] text-white/60">Trip fit shortcuts</p>
+        <div class="destination-fit-grid">
+          ${buildDestinationFitRows(city, guide, details).map((item) => `
+            <div class="destination-fit-card">
+              <p class="destination-fit-label">${item.label}</p>
+              <p class="destination-fit-value">${item.value}</p>
+            </div>
+          `).join("")}
+        </div>
+      `;
       trustCopy.textContent = getEditorialTrustCopy(city, guide);
       highlightChips.innerHTML = guide.highlights.map((item) => `
         <span class="rounded-full bg-surface-soft px-3 py-2 text-sm font-medium text-ink ring-1 ring-line">${item}</span>
@@ -1655,7 +1939,11 @@ function renderDestinationHero(targetPrefix) {
         <button class="rounded-2xl bg-white px-3 py-3 text-left text-sm font-semibold text-secondary ring-1 ring-line transition hover:border-secondary/40 hover:text-primary" data-action="scroll-guide-section" data-section-id="${makeSectionId(label)}" type="button">
           ${getSectionNavLabel(label)}
         </button>
-      `).join("");
+      `).join("") + `
+        <button class="rounded-2xl bg-white px-3 py-3 text-left text-sm font-semibold text-secondary ring-1 ring-line transition hover:border-secondary/40 hover:text-primary" data-action="scroll-guide-section" data-section-id="city-guide-destination-depth" type="button">
+          Planning depth
+        </button>
+      `;
 
       grid.innerHTML = categoryMap.map(([label, items]) => `
         <section id="${makeSectionId(label)}" class="rounded-[24px] border border-line bg-white px-4 py-4">

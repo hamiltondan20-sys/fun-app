@@ -7,6 +7,7 @@ window.HB_APP = window.HB_APP || {};
       destination: "Paris, France",
       startDate: "2026-09-14",
       endDate: "2026-09-20",
+      datesFlexible: false,
       adults: 2,
       children: 0,
       pets: "No pets",
@@ -22,13 +23,15 @@ window.HB_APP = window.HB_APP || {};
       hotelCheckIn: "",
       hotelCheckOut: "",
       budget: "Moderate",
+      budgetFlexible: false,
       styles: ["Relaxing", "Foodie"],
       pace: "Balanced",
       mustHaves: "One memorable dinner, the Eiffel Tower, and a slower final day.",
-      depth: "Classics",
-      foodImportance: "Meaningful part",
-      memory: "Iconic first-time moment",
-      spontaneity: "Balanced",
+      nonNegotiables: "",
+      depth: "Top sights",
+      foodImportance: "Good local spots",
+      memory: "First-time highlights",
+      spontaneity: "Some free time",
       journalEntry: "",
       journalMood: "Memorable"
     },
@@ -38,6 +41,17 @@ window.HB_APP = window.HB_APP || {};
     currentTrip: null,
     liveDraftTrip: null,
     likedTrip: null,
+    savedDraft: null,
+    draftSaveFeedback: "",
+    tripProfile: {
+      displayName: "",
+      email: "",
+      homeAirport: ""
+    },
+    profileSaveFeedback: "",
+    bookingItems: {},
+    bookingSaveFeedback: "",
+    localAccountFeedback: "",
     alternateTrips: [],
     alternateVersionFeedback: {
       id: "",
@@ -103,6 +117,7 @@ window.HB_APP = window.HB_APP || {};
       logistics: false,
       flights: false,
       stay: false,
+      booking: false,
       journal: false
     },
     cityGuideSuggestionIndex: -1,
@@ -116,6 +131,7 @@ window.HB_APP = window.HB_APP || {};
     countryEditorialPageData: window.HB_DATA.countryEditorialPageData,
     cityGuideData: window.HB_DATA.cityGuideData,
     cityGuideDetailData: window.HB_DATA.cityGuideDetailData,
+    cityPlanningToolkitData: window.HB_DATA.cityPlanningToolkitData,
     cityEditorialPageData: window.HB_DATA.cityEditorialPageData,
     destinationHeroData: window.HB_DATA.destinationHeroData,
     destinationMapData: window.HB_DATA.destinationMapData,
@@ -162,9 +178,9 @@ window.HB_APP = window.HB_APP || {};
       "Keeping the good parts strong and the logistics lighter."
     ],
     budgetGuidance: {
-      Budget: "Best for simpler stays, practical meals, and strong value choices. The trip can still feel memorable without chasing expensive upgrades.",
-      Moderate: "A balanced middle ground with solid hotel options, a few nicer meals or experiences, and room for one standout moment if it fits.",
-      Premium: "More comfort, stronger location choices, and greater flexibility for signature meals or upgraded experiences, while still avoiding wasteful overspending."
+      Budget: "Keeps the plan value-focused with simpler stays, practical meals, and free or lower-cost highlights.",
+      Moderate: "Balances comfort and value with solid hotel options, a few nicer meals, and room for one standout moment.",
+      Premium: "Prioritizes comfort, location, and upgraded experiences while still keeping the days practical."
     },
     countrySuggestions: window.HB_DATA.countrySuggestions,
     destinationAliases: window.HB_DATA.destinationAliases
@@ -196,10 +212,17 @@ window.HB_APP = window.HB_APP || {};
     closeAccountModalBtn: document.getElementById("close-account-modal"),
     skipAccountBtn: document.getElementById("skip-account-btn"),
     manualAdjustBtn: document.getElementById("manual-adjust-btn"),
+    flowStatusCurrent: document.getElementById("flow-status-current"),
+    flowStatusFocus: document.getElementById("flow-status-focus"),
+    flowStatusCopy: document.getElementById("flow-status-copy"),
+    flowStatusNext: document.getElementById("flow-status-next"),
     formBindings: {
       destination: document.getElementById("destination-input"),
       startDate: document.getElementById("start-date-input"),
       endDate: document.getElementById("end-date-input"),
+      dateFlexibility: document.getElementById("date-flexibility-toggle"),
+      tripLengthSummary: document.getElementById("trip-length-summary"),
+      travelerSummary: document.getElementById("traveler-summary"),
       adults: document.getElementById("adults-input"),
       children: document.getElementById("children-input"),
       pets: document.getElementById("pets-input"),
@@ -219,7 +242,9 @@ window.HB_APP = window.HB_APP || {};
       journalMood: document.getElementById("journal-mood-input"),
       journalEntry: document.getElementById("journal-entry-input"),
       budget: document.getElementById("budget-input"),
-      mustHaves: document.getElementById("must-haves-input")
+      budgetFlexibility: document.getElementById("budget-flexibility-toggle"),
+      mustHaves: document.getElementById("must-haves-input"),
+      nonNegotiables: document.getElementById("non-negotiables-input")
     }
   };
 

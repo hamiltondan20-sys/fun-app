@@ -4,61 +4,26 @@
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>Horizon Bound | Build Your Trip</title>
-  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
   <link
-    href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Instrument+Sans:wght@400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
   />
   <link
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
     rel="stylesheet"
   />
-<script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            surface: "#f5f7fb",
-            "surface-soft": "#eef3f8",
-            "surface-card": "#ffffff",
-            "surface-deep": "#15202f",
-            primary: "#ff5a3d",
-            "primary-bright": "#ff7b57",
-            secondary: "#2f5bff",
-            tertiary: "#0f8a7b",
-            ink: "#121a24",
-            muted: "#5f6c7a",
-            line: "#d5dfea",
-            warm: "#fff1e9",
-            "warm-line": "#ffd4c3",
-            "blue-soft": "#edf3ff",
-            "teal-soft": "#e9fbf5"
-          },
-          fontFamily: {
-            display: ["Sora", "sans-serif"],
-            body: ["Instrument Sans", "sans-serif"]
-          },
-          boxShadow: {
-            float: "0 18px 48px rgba(37, 98, 145, 0.14)",
-            card: "0 10px 28px rgba(16, 32, 51, 0.08)"
-          }
-        }
-      }
-    };
-
-  </script>
+  <link href="./assets/app.css?v=20260815a" rel="stylesheet" />
   <style>
     body {
       min-height: 100dvh;
-      font-family: "Instrument Sans", sans-serif;
+      font-family: "Inter", sans-serif;
       background:
-        radial-gradient(circle at 12% 0%, rgba(255, 90, 61, 0.18), transparent 24%),
-        radial-gradient(circle at 88% 14%, rgba(47, 91, 255, 0.16), transparent 26%),
-        radial-gradient(circle at 52% 100%, rgba(15, 138, 123, 0.08), transparent 30%),
-        linear-gradient(180deg, #f8fafc 0%, #f1f5fb 38%, #eef3f9 100%);
-      color: #121a24;
+        linear-gradient(180deg, #f8fafc 0%, #f2f6fb 44%, #eef3f7 100%);
+      color: #111827;
       position: relative;
       overflow-x: hidden;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
     }
 
     body::before,
@@ -73,21 +38,11 @@
     }
 
     body::before {
-      top: 4.5rem;
-      left: -5rem;
-      width: 16rem;
-      height: 16rem;
-      border-radius: 999px;
-      background: radial-gradient(circle, rgba(255, 186, 145, 0.42) 0%, rgba(255, 186, 145, 0) 72%);
+      display: none;
     }
 
     body::after {
-      right: -4rem;
-      bottom: 9rem;
-      width: 18rem;
-      height: 18rem;
-      border-radius: 999px;
-      background: radial-gradient(circle, rgba(118, 186, 214, 0.28) 0%, rgba(118, 186, 214, 0) 72%);
+      display: none;
     }
 
     .glass {
@@ -99,9 +54,7 @@
 
     .hero-panel {
       background-image:
-        radial-gradient(circle at top left, rgba(255, 255, 255, 0.18), transparent 34%),
-        radial-gradient(circle at 82% 18%, rgba(255, 229, 211, 0.18), transparent 20%),
-        linear-gradient(138deg, rgba(255, 90, 61, 0.98) 0%, rgba(198, 68, 91, 0.94) 34%, rgba(53, 83, 204, 0.95) 72%, rgba(16, 138, 123, 0.92) 100%);
+        linear-gradient(135deg, #123a6f 0%, #2458c8 54%, #0b776d 100%);
     }
 
     main > section,
@@ -172,8 +125,40 @@
       display: block;
     }
 
+    @media (min-width: 768px) {
+      .app-shell {
+        max-width: min(100%, 92rem);
+      }
+
+      .app-shell > header,
+      .app-shell > main {
+        padding-left: clamp(2rem, 3.2vw, 4.5rem);
+        padding-right: clamp(2rem, 3.2vw, 4.5rem);
+      }
+
+      .app-bottom-bar {
+        padding-left: clamp(2rem, 3.2vw, 4.5rem);
+        padding-right: clamp(2rem, 3.2vw, 4.5rem);
+      }
+
+      main > section:not(.page-panel),
+      .page-panel > div,
+      #trip-card {
+        padding: clamp(1.65rem, 2.15vw, 2.6rem) !important;
+      }
+
+      .saved-panel-card,
+      .trip-itinerary-panel,
+      .trip-versions-panel,
+      .trip-guide-panel,
+      .trip-collapsible-panel,
+      .trip-day-shell {
+        padding: clamp(1.2rem, 1.8vw, 1.55rem) !important;
+      }
+    }
+
     .nav-tab.is-active {
-      color: #2f5bff;
+      color: #2458c8;
     }
 
     .app-bottom-bar.is-guide-mode .app-bottom-actions {
@@ -182,6 +167,7 @@
 
     .app-bottom-bar {
       padding-bottom: max(1.25rem, env(safe-area-inset-bottom));
+      z-index: 30;
     }
 
     .app-bottom-actions {
@@ -256,34 +242,171 @@
 
     .stage-tab.is-active {
       background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
-      color: #264dff;
+      color: #2458c8;
       box-shadow: 0 10px 20px rgba(47, 91, 255, 0.14);
     }
 
+    .flow-status-strip {
+      display: grid;
+      grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.35fr) minmax(0, 1fr);
+      gap: 0.75rem;
+      border-radius: 22px;
+      border: 1px solid rgba(203, 215, 227, 0.86);
+      background: linear-gradient(180deg, rgba(247, 251, 255, 0.96) 0%, rgba(255, 255, 255, 0.98) 100%);
+      padding: 0.75rem;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.86);
+    }
+
+    .flow-status-item {
+      min-width: 0;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.84);
+      padding: 0.78rem 0.85rem;
+      box-shadow: inset 0 0 0 1px rgba(16, 32, 51, 0.05);
+    }
+
+    .flow-status-label {
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #6b7783;
+    }
+
+    .flow-status-value {
+      margin-top: 0.28rem;
+      font-size: 0.9rem;
+      font-weight: 800;
+      line-height: 1.28;
+      color: #111827;
+    }
+
+    .flow-status-copy {
+      margin-top: 0.3rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+      line-height: 1.45;
+      color: #4f5f6f;
+    }
+
+    .homepage-hero {
+      padding-right: 1.25rem;
+    }
+
+    .homepage-hero-grid {
+      display: grid;
+      gap: 1.1rem;
+    }
+
+    .homepage-hero-title {
+      max-width: 42rem;
+      font-size: clamp(2.15rem, 4.3vw, 4.35rem);
+      line-height: 0.98;
+    }
+
+    .homepage-hero-copy {
+      max-width: 40rem;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .homepage-hero .mb-3 {
+      max-width: 34rem;
+    }
+
+    .homepage-hero .homepage-hero-grid > div > p.mb-3 {
+      display: none;
+    }
+
+    .homepage-hero-kicker {
+      max-width: 34rem;
+      color: rgba(255, 255, 255, 0.84);
+    }
+
+    .homepage-hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .homepage-hero-actions > * {
+      display: inline-flex;
+      min-height: 2.9rem;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+      border-radius: 999px;
+      padding: 0.7rem 1rem;
+      font-size: 0.9rem;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .homepage-proof-grid,
+    .homepage-method-grid,
+    .explore-planning-grid {
+      display: grid;
+      gap: 0.8rem;
+    }
+
+    .homepage-proof-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      max-width: 44rem;
+    }
+
+    .homepage-proof-card,
+    .homepage-signal-card {
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .homepage-insight-panel {
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      background: rgba(255, 255, 255, 0.12);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+    }
+
+    .homepage-method-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .homepage-method-card,
+    .explore-planning-card {
+      min-width: 0;
+      border: 1px solid #cbd7e3;
+      background: #ffffff;
+    }
+
+    @media (min-width: 1024px) {
+      .homepage-hero-grid {
+        grid-template-columns: minmax(0, 1.28fr) minmax(20rem, 0.72fr);
+        align-items: stretch;
+      }
+    }
+
     .trip-heading {
-      font-family: "Sora", sans-serif;
+      font-family: "Inter", sans-serif;
       font-weight: 800;
       letter-spacing: -0.02em;
     }
 
     .trip-body {
-      font-family: "Instrument Sans", sans-serif;
+      font-family: "Inter", sans-serif;
       font-size: 0.95rem;
       line-height: 1.62;
       color: #5d6a78;
     }
 
     .timeline-time {
-      font-family: "Sora", sans-serif;
+      font-family: "Inter", sans-serif;
       font-size: 0.74rem;
       font-weight: 800;
       letter-spacing: 0.09em;
       text-transform: uppercase;
-      color: #ff5a3d;
+      color: #b94725;
     }
 
     .timeline-title {
-      font-family: "Instrument Sans", sans-serif;
+      font-family: "Inter", sans-serif;
       font-size: 1.04rem;
       font-weight: 800;
       line-height: 1.28;
@@ -291,7 +414,7 @@
     }
 
     .timeline-copy {
-      font-family: "Instrument Sans", sans-serif;
+      font-family: "Inter", sans-serif;
       font-size: 0.93rem;
       line-height: 1.64;
       color: #5e6b79;
@@ -348,7 +471,7 @@
       width: 12px;
       height: 12px;
       border-radius: 999px;
-      background: #2f5bff;
+      background: #2458c8;
       box-shadow:
         0 0 0 5px #edf3f7,
         0 6px 12px rgba(47, 91, 255, 0.18);
@@ -389,7 +512,7 @@
     }
 
     .timeline-focus-chip.is-active {
-      background: #2f5bff;
+      background: #2458c8;
       color: #ffffff;
       box-shadow: 0 8px 18px rgba(47, 91, 255, 0.18);
     }
@@ -472,6 +595,7 @@
     .timeline-step-order-toggle {
       display: inline-flex;
       align-items: center;
+      min-height: 2.55rem;
       border-radius: 999px;
       border: 1px solid rgba(205, 218, 229, 0.96);
       background: rgba(255, 255, 255, 0.96);
@@ -480,6 +604,10 @@
     }
 
     .timeline-step-order-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 2.55rem;
       border: 0;
       background: transparent;
       color: #256291;
@@ -487,6 +615,7 @@
       font-size: 0.75rem;
       font-weight: 700;
       line-height: 1.2;
+      min-width: 4.25rem;
       white-space: nowrap;
       transition:
         background-color 140ms ease,
@@ -582,6 +711,763 @@
       flex: 0 0 auto;
     }
 
+    .trip-draft-status {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      border-radius: 20px;
+      border: 1px solid rgba(203, 215, 227, 0.96);
+      background: #f7fbff;
+      padding: 0.85rem;
+    }
+
+    .trip-draft-status-copy {
+      min-width: 0;
+      flex: 1 1 14rem;
+    }
+
+    .trip-draft-status-label {
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #2458c8;
+    }
+
+    .trip-draft-status-title {
+      margin-top: 0.25rem;
+      font-size: 0.94rem;
+      font-weight: 800;
+      line-height: 1.35;
+      color: #111827;
+    }
+
+    .trip-draft-status-meta {
+      margin-top: 0.2rem;
+      font-size: 0.82rem;
+      line-height: 1.45;
+      color: #4f5f6f;
+    }
+
+    .trip-draft-status-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 0.5rem;
+    }
+
+    .trip-draft-status-actions > button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 2.75rem;
+      min-width: 8.7rem;
+      line-height: 1.2;
+    }
+
+    .trip-change-summary {
+      border-radius: 22px;
+      border: 1px solid rgba(127, 190, 187, 0.34);
+      background: linear-gradient(180deg, #f8fffd 0%, #eef8f6 100%);
+      padding: 0.95rem;
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.92),
+        0 14px 26px rgba(16, 76, 83, 0.05);
+    }
+
+    .trip-change-summary.is-empty {
+      border-color: rgba(203, 215, 227, 0.96);
+      background: #f8fbff;
+      box-shadow: none;
+    }
+
+    .trip-change-summary-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.85rem;
+    }
+
+    .trip-change-summary-label {
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #0f766e;
+    }
+
+    .trip-change-summary-title {
+      margin-top: 0.22rem;
+      font-size: 1rem;
+      font-weight: 850;
+      line-height: 1.28;
+      color: #102f35;
+    }
+
+    .trip-change-summary-copy {
+      margin-top: 0.28rem;
+      max-width: 56ch;
+      font-size: 0.86rem;
+      line-height: 1.55;
+      color: #40606a;
+    }
+
+    .trip-change-summary-chip {
+      flex: 0 0 auto;
+      border-radius: 999px;
+      background: #ffffff;
+      padding: 0.38rem 0.68rem;
+      font-size: 0.74rem;
+      font-weight: 800;
+      color: #0f766e;
+      box-shadow: inset 0 0 0 1px rgba(127, 190, 187, 0.42);
+    }
+
+    .trip-change-summary-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.65rem;
+      margin-top: 0.8rem;
+    }
+
+    .trip-change-card {
+      display: flex;
+      min-width: 0;
+      gap: 0.65rem;
+      border-radius: 16px;
+      border: 1px solid rgba(127, 190, 187, 0.28);
+      background: rgba(255, 255, 255, 0.78);
+      padding: 0.75rem;
+    }
+
+    .trip-change-card-icon {
+      flex: 0 0 auto;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.1rem;
+      height: 2.1rem;
+      border-radius: 999px;
+      background: #e5f6f2;
+      color: #0f766e;
+      font-size: 1.1rem;
+    }
+
+    .trip-change-card-label {
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #59727a;
+    }
+
+    .trip-change-card-title {
+      margin-top: 0.18rem;
+      font-size: 0.9rem;
+      font-weight: 850;
+      line-height: 1.28;
+      color: #102f35;
+    }
+
+    .trip-change-card-copy {
+      margin-top: 0.2rem;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      font-size: 0.8rem;
+      line-height: 1.45;
+      color: #4c6570;
+    }
+
+    .trip-change-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 0.5rem;
+      margin-top: 0.85rem;
+    }
+
+    .trip-change-actions > button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 2.75rem;
+      min-width: 9.8rem;
+    }
+
+    .trip-next-actions {
+      border-radius: 24px;
+      border: 1px solid rgba(203, 215, 227, 0.96);
+      background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
+      padding: 1rem;
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.92),
+        0 16px 30px rgba(20, 39, 57, 0.05);
+    }
+
+    .trip-next-actions-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.85rem;
+    }
+
+    .trip-next-actions-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.75rem;
+      margin-top: 0.9rem;
+    }
+
+    .trip-next-action-card {
+      display: flex;
+      min-width: 0;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.9rem;
+      border-radius: 18px;
+      border: 1px solid rgba(203, 215, 227, 0.92);
+      background: #ffffff;
+      padding: 0.95rem;
+      box-shadow: 0 10px 20px rgba(20, 39, 57, 0.04);
+    }
+
+    .trip-next-action-card.is-attention {
+      border-color: rgba(239, 197, 178, 0.96);
+      background: #fff8f4;
+    }
+
+    .trip-next-action-head {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.65rem;
+    }
+
+    .trip-next-action-icon {
+      display: inline-flex;
+      width: 2.25rem;
+      height: 2.25rem;
+      flex: 0 0 auto;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      background: #edf3ff;
+      color: #2458c8;
+      box-shadow: inset 0 0 0 1px rgba(157, 176, 255, 0.42);
+    }
+
+    .trip-next-action-card.is-attention .trip-next-action-icon {
+      background: #fff1e9;
+      color: #b94725;
+      box-shadow: inset 0 0 0 1px rgba(239, 197, 178, 0.86);
+    }
+
+    .trip-next-action-label {
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #6b7783;
+    }
+
+    .trip-next-action-title {
+      margin-top: 0.3rem;
+      font-size: 1rem;
+      font-weight: 800;
+      line-height: 1.35;
+      color: #111827;
+    }
+
+    .trip-next-action-copy {
+      margin-top: 0.45rem;
+      font-size: 0.86rem;
+      font-weight: 500;
+      line-height: 1.55;
+      color: #4f5f6f;
+    }
+
+    .trip-next-action-button {
+      display: inline-flex;
+      min-height: 2.65rem;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 0.65rem 0.95rem;
+      font-size: 0.86rem;
+      font-weight: 800;
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    .trip-readiness-panel {
+      border-radius: 22px;
+      border: 1px solid rgba(203, 215, 227, 0.9);
+      background: #ffffff;
+      padding: 0.95rem;
+      box-shadow: 0 12px 24px rgba(20, 39, 57, 0.04);
+    }
+
+    .trip-readiness-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.85rem;
+    }
+
+    .trip-readiness-score {
+      display: inline-flex;
+      min-height: 2.25rem;
+      flex: 0 0 auto;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      background: #e9fbf5;
+      padding: 0.45rem 0.8rem;
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: #0b776d;
+      box-shadow: inset 0 0 0 1px rgba(11, 119, 109, 0.12);
+    }
+
+    .trip-readiness-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(10.5rem, 1fr));
+      gap: 0.65rem;
+      margin-top: 0.85rem;
+    }
+
+    .trip-readiness-item {
+      min-width: 0;
+      border-radius: 16px;
+      border: 1px solid rgba(203, 215, 227, 0.9);
+      background: #f7fbff;
+      padding: 0.78rem;
+    }
+
+    .trip-readiness-item.is-attention {
+      border-color: rgba(239, 197, 178, 0.92);
+      background: #fff8f4;
+    }
+
+    .trip-readiness-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #2458c8;
+    }
+
+    .trip-readiness-item.is-attention .trip-readiness-status {
+      color: #b94725;
+    }
+
+    .trip-readiness-status .material-symbols-outlined {
+      font-size: 1rem;
+    }
+
+    .trip-readiness-title {
+      margin-top: 0.35rem;
+      font-size: 0.9rem;
+      font-weight: 800;
+      line-height: 1.35;
+      color: #111827;
+    }
+
+    .trip-readiness-copy {
+      margin-top: 0.25rem;
+      font-size: 0.78rem;
+      font-weight: 500;
+      line-height: 1.45;
+      color: #4f5f6f;
+    }
+
+    .trip-handoff-panel {
+      border-radius: 22px;
+      border: 1px solid rgba(11, 119, 109, 0.2);
+      background: linear-gradient(180deg, #ffffff 0%, #f5fffc 100%);
+      padding: 0.95rem;
+      box-shadow: 0 12px 24px rgba(20, 39, 57, 0.04);
+    }
+
+    .trip-handoff-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.85rem;
+    }
+
+    .trip-handoff-score {
+      display: inline-flex;
+      min-height: 2.25rem;
+      flex: 0 0 auto;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      background: #effaf6;
+      padding: 0.45rem 0.8rem;
+      color: #0b776d;
+      font-size: 0.78rem;
+      font-weight: 800;
+      box-shadow: inset 0 0 0 1px rgba(11, 119, 109, 0.14);
+    }
+
+    .trip-handoff-list {
+      display: grid;
+      gap: 0.65rem;
+      margin-top: 0.85rem;
+    }
+
+    .trip-handoff-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.8rem;
+      border-radius: 17px;
+      border: 1px solid rgba(203, 215, 227, 0.92);
+      background: rgba(255, 255, 255, 0.86);
+      padding: 0.78rem;
+    }
+
+    .trip-handoff-item.is-attention {
+      border-color: rgba(239, 197, 178, 0.94);
+      background: #fff8f4;
+    }
+
+    .trip-handoff-item-main {
+      display: flex;
+      min-width: 0;
+      align-items: flex-start;
+      gap: 0.65rem;
+    }
+
+    .trip-handoff-icon {
+      display: inline-flex;
+      width: 2.2rem;
+      height: 2.2rem;
+      flex: 0 0 auto;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      background: #edf3ff;
+      color: #2458c8;
+      font-size: 1.05rem;
+      box-shadow: inset 0 0 0 1px rgba(36, 88, 200, 0.12);
+    }
+
+    .trip-handoff-item.is-attention .trip-handoff-icon {
+      background: #fff1e9;
+      color: #b94725;
+      box-shadow: inset 0 0 0 1px rgba(239, 197, 178, 0.86);
+    }
+
+    .trip-handoff-status {
+      color: #0b776d;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .trip-handoff-item.is-attention .trip-handoff-status {
+      color: #b94725;
+    }
+
+    .trip-handoff-title {
+      margin-top: 0.25rem;
+      color: #111827;
+      font-size: 0.95rem;
+      font-weight: 850;
+      line-height: 1.3;
+    }
+
+    .trip-handoff-copy {
+      margin-top: 0.22rem;
+      color: #4f5f6f;
+      font-size: 0.8rem;
+      font-weight: 600;
+      line-height: 1.45;
+    }
+
+    .trip-handoff-button {
+      display: inline-flex;
+      min-height: 2.55rem;
+      min-width: 8.8rem;
+      flex: 0 0 auto;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 0.6rem 0.9rem;
+      font-size: 0.82rem;
+      font-weight: 800;
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    .booking-hub {
+      background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+    }
+
+    .booking-hub-head {
+      gap: 1rem;
+    }
+
+    .booking-hub-feedback {
+      margin-top: 0.45rem;
+      color: #0b776d;
+      font-size: 0.84rem;
+      font-weight: 800;
+      line-height: 1.4;
+    }
+
+    .booking-hub-summary {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.65rem;
+      margin-top: 1rem;
+    }
+
+    .booking-hub-summary > div {
+      border-radius: 17px;
+      border: 1px solid rgba(203, 215, 227, 0.86);
+      background: #f7fbff;
+      padding: 0.8rem 0.9rem;
+    }
+
+    .booking-hub-summary-label {
+      color: #647282;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .booking-hub-summary-value {
+      margin-top: 0.28rem;
+      color: #111827;
+      font-size: 0.98rem;
+      font-weight: 850;
+      line-height: 1.3;
+    }
+
+    .booking-hub-list {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 0.85rem;
+    }
+
+    .booking-hub-item {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.7fr);
+      gap: 0.85rem;
+      border-radius: 18px;
+      border: 1px solid rgba(203, 215, 227, 0.92);
+      background: #ffffff;
+      padding: 0.85rem;
+      box-shadow: 0 10px 20px rgba(20, 39, 57, 0.035);
+    }
+
+    .booking-hub-item.is-searching {
+      border-color: rgba(36, 88, 200, 0.22);
+      background: #f7fbff;
+    }
+
+    .booking-hub-item.is-booked {
+      border-color: rgba(11, 119, 109, 0.24);
+      background: #f5fffc;
+    }
+
+    .booking-hub-item.is-skipped {
+      background: #f7f9fc;
+      opacity: 0.86;
+    }
+
+    .booking-hub-item-main {
+      display: flex;
+      min-width: 0;
+      align-items: flex-start;
+      gap: 0.7rem;
+    }
+
+    .booking-hub-icon {
+      display: inline-flex;
+      width: 2.25rem;
+      height: 2.25rem;
+      flex: 0 0 auto;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      background: #edf3ff;
+      color: #2458c8;
+      font-size: 1.08rem;
+      box-shadow: inset 0 0 0 1px rgba(36, 88, 200, 0.12);
+    }
+
+    .booking-hub-item.is-booked .booking-hub-icon {
+      background: #effaf6;
+      color: #0b776d;
+    }
+
+    .booking-hub-copy {
+      min-width: 0;
+    }
+
+    .booking-hub-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.45rem;
+    }
+
+    .booking-hub-label {
+      color: #647282;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .booking-hub-status {
+      border-radius: 999px;
+      background: #eef3f7;
+      padding: 0.25rem 0.55rem;
+      color: #4f5f6f;
+      font-size: 0.68rem;
+      font-weight: 800;
+    }
+
+    .booking-hub-item.is-searching .booking-hub-status {
+      background: #edf3ff;
+      color: #2458c8;
+    }
+
+    .booking-hub-item.is-booked .booking-hub-status {
+      background: #effaf6;
+      color: #0b776d;
+    }
+
+    .booking-hub-title {
+      margin-top: 0.28rem;
+      color: #111827;
+      font-size: 1rem;
+      font-weight: 850;
+      line-height: 1.3;
+    }
+
+    .booking-hub-detail {
+      margin-top: 0.25rem;
+      color: #4f5f6f;
+      font-size: 0.82rem;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    .booking-hub-controls {
+      display: grid;
+      min-width: 0;
+      gap: 0.55rem;
+      align-content: start;
+    }
+
+    .booking-hub-link {
+      display: inline-flex;
+      min-height: 2.55rem;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      background: #2458c8;
+      padding: 0.6rem 0.9rem;
+      color: #ffffff;
+      font-size: 0.82rem;
+      font-weight: 850;
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    .booking-hub-select-label,
+    .booking-hub-note-label {
+      display: grid;
+      gap: 0.28rem;
+      color: #647282;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .booking-hub-select,
+    .booking-hub-note {
+      min-height: 2.55rem;
+      width: 100%;
+      border-radius: 14px;
+      border: 1px solid #cbd7e3;
+      background: #ffffff;
+      padding: 0.58rem 0.75rem;
+      color: #111827;
+      font-size: 0.86rem;
+      font-weight: 700;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    .trip-day-overview {
+      border-radius: 22px;
+      border: 1px solid rgba(203, 215, 227, 0.96);
+      background: #ffffff;
+      padding: 0.95rem;
+    }
+
+    .trip-day-overview-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    .trip-day-overview-list {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.65rem;
+      margin-top: 0.85rem;
+    }
+
+    .trip-day-overview-item {
+      min-width: 0;
+      border-radius: 16px;
+      background: #eef3f7;
+      padding: 0.78rem;
+      box-shadow: inset 0 0 0 1px rgba(203, 215, 227, 0.88);
+    }
+
+    .trip-day-overview-day {
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #2458c8;
+    }
+
+    .trip-day-overview-title {
+      margin-top: 0.28rem;
+      font-size: 0.9rem;
+      font-weight: 800;
+      line-height: 1.28;
+      color: #111827;
+    }
+
+    .trip-day-overview-meta {
+      margin-top: 0.25rem;
+      font-size: 0.78rem;
+      line-height: 1.4;
+      color: #4f5f6f;
+    }
+
     .trip-signature-head {
       display: flex;
       align-items: flex-start;
@@ -616,6 +1502,26 @@
       flex-wrap: wrap;
       gap: 0.5rem;
       justify-content: flex-end;
+    }
+
+    .trip-itinerary-head-actions > *,
+    .trip-itinerary-controls > *,
+    .trip-collapsible-actions > *,
+    .save-version-feedback-actions .version-action,
+    .version-card-actions .version-action,
+    .compare-shell-actions .version-action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 2.75rem;
+      line-height: 1.2;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .trip-itinerary-head-actions > button,
+    .trip-itinerary-controls > button {
+      min-width: 9.25rem;
     }
 
     .trip-versions-head,
@@ -671,6 +1577,404 @@
       color: #536070;
     }
 
+    .saved-account-overview {
+      margin-top: 1.1rem;
+      border-radius: 24px;
+      border: 1px solid rgba(205, 218, 229, 0.9);
+      background: linear-gradient(135deg, rgba(24, 39, 56, 0.98) 0%, rgba(37, 61, 82, 0.99) 100%);
+      padding: 1rem;
+      color: #ffffff;
+      box-shadow: 0 18px 34px rgba(19, 42, 66, 0.14);
+    }
+
+    .saved-account-overview-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .saved-account-overview-title {
+      font-size: 1.1rem;
+      font-weight: 800;
+      line-height: 1.25;
+      color: #ffffff;
+    }
+
+    .saved-account-overview-copy {
+      margin-top: 0.45rem;
+      font-size: 0.88rem;
+      font-weight: 500;
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.78);
+    }
+
+    .saved-account-status-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.7rem;
+      margin-top: 1rem;
+    }
+
+    .saved-account-status-card {
+      min-width: 0;
+      border-radius: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      background: rgba(255, 255, 255, 0.08);
+      padding: 0.85rem 0.9rem;
+    }
+
+    .saved-account-status-label {
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.64);
+    }
+
+    .saved-account-status-value {
+      margin-top: 0.35rem;
+      font-size: 0.94rem;
+      font-weight: 800;
+      line-height: 1.35;
+      color: #ffffff;
+    }
+
+    .saved-account-status-copy {
+      margin-top: 0.35rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+      line-height: 1.45;
+      color: rgba(255, 255, 255, 0.72);
+    }
+
+    .saved-account-overview-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      margin-top: 1rem;
+    }
+
+    .saved-account-overview-actions button {
+      min-height: 2.65rem;
+      min-width: 9rem;
+    }
+
+    .saved-dashboard-continue {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-top: 1rem;
+      border-radius: 24px;
+      border: 1px solid rgba(36, 88, 200, 0.14);
+      background: linear-gradient(180deg, #ffffff 0%, #f5f9ff 100%);
+      padding: 1rem;
+      box-shadow: 0 16px 30px rgba(20, 39, 57, 0.06);
+    }
+
+    .saved-dashboard-continue-copy {
+      min-width: 0;
+      flex: 1 1 auto;
+    }
+
+    .saved-dashboard-kicker {
+      color: #2458c8;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .saved-dashboard-title {
+      margin-top: 0.3rem;
+      color: #111827;
+      font-size: 1.22rem;
+      font-weight: 850;
+      line-height: 1.24;
+    }
+
+    .saved-dashboard-copy {
+      max-width: 62ch;
+      margin-top: 0.42rem;
+      color: #4f5f6f;
+      font-size: 0.9rem;
+      line-height: 1.58;
+    }
+
+    .saved-dashboard-actions {
+      display: flex;
+      flex: 0 0 auto;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 0.55rem;
+    }
+
+    .saved-dashboard-actions button {
+      display: inline-flex;
+      min-height: 2.75rem;
+      min-width: 10rem;
+      align-items: center;
+      justify-content: center;
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    .saved-dashboard-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(19rem, 0.75fr);
+      gap: 1rem;
+      align-items: start;
+    }
+
+    .saved-dashboard-main,
+    .saved-dashboard-side {
+      min-width: 0;
+    }
+
+    .saved-panel-card--active {
+      border-color: rgba(36, 88, 200, 0.16);
+      background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+      box-shadow: 0 16px 30px rgba(20, 39, 57, 0.05);
+    }
+
+    .saved-panel-card--history {
+      background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+    }
+
+    .saved-history-list {
+      display: grid;
+      gap: 0.7rem;
+      margin-top: 1rem;
+    }
+
+    .saved-history-item {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 0.65rem;
+      border-radius: 18px;
+      border: 1px solid rgba(203, 215, 227, 0.84);
+      background: rgba(255, 255, 255, 0.86);
+      padding: 0.82rem;
+      position: relative;
+    }
+
+    .saved-history-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.15rem;
+      height: 2.15rem;
+      border-radius: 999px;
+      background: #edf3ff;
+      color: #2458c8;
+      font-size: 1.08rem;
+    }
+
+    .saved-history-copy {
+      min-width: 0;
+    }
+
+    .saved-history-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.45rem;
+    }
+
+    .saved-history-label {
+      color: #647282;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .saved-history-status {
+      border-radius: 999px;
+      background: #effaf6;
+      padding: 0.25rem 0.55rem;
+      color: #0b776d;
+      font-size: 0.68rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .saved-history-title {
+      margin-top: 0.26rem;
+      color: #111827;
+      font-size: 0.94rem;
+      font-weight: 850;
+      line-height: 1.32;
+    }
+
+    .saved-history-detail {
+      margin-top: 0.22rem;
+      color: #536070;
+      font-size: 0.8rem;
+      font-weight: 600;
+      line-height: 1.45;
+    }
+
+    .beta-test-panel {
+      margin-top: 1rem;
+      border-radius: 24px;
+      border: 1px solid rgba(36, 88, 200, 0.14);
+      background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
+      padding: 1rem;
+      box-shadow: 0 16px 30px rgba(20, 39, 57, 0.05);
+    }
+
+    .beta-test-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.85rem;
+    }
+
+    .beta-test-kicker {
+      color: #2458c8;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .beta-test-title {
+      margin-top: 0.28rem;
+      color: #111827;
+      font-size: 1.12rem;
+      font-weight: 850;
+      line-height: 1.28;
+    }
+
+    .beta-test-copy {
+      max-width: 68ch;
+      margin-top: 0.42rem;
+      color: #4f5f6f;
+      font-size: 0.9rem;
+      line-height: 1.58;
+    }
+
+    .beta-test-score {
+      flex: 0 0 auto;
+      border-radius: 999px;
+      background: #edf3ff;
+      padding: 0.42rem 0.72rem;
+      color: #2458c8;
+      font-size: 0.75rem;
+      font-weight: 850;
+      white-space: nowrap;
+      box-shadow: inset 0 0 0 1px rgba(36, 88, 200, 0.08);
+    }
+
+    .beta-test-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+
+    .beta-test-card {
+      display: flex;
+      min-width: 0;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.9rem;
+      border-radius: 18px;
+      border: 1px solid rgba(203, 215, 227, 0.86);
+      background: #ffffff;
+      padding: 0.9rem;
+    }
+
+    .beta-test-card.is-ready {
+      border-color: rgba(11, 119, 109, 0.2);
+      background: #f8fffd;
+    }
+
+    .beta-test-card.is-next {
+      border-color: rgba(239, 197, 178, 0.92);
+      background: #fff8f4;
+    }
+
+    .beta-test-status {
+      display: inline-flex;
+      width: fit-content;
+      align-items: center;
+      gap: 0.32rem;
+      border-radius: 999px;
+      background: #f2f6fb;
+      padding: 0.28rem 0.55rem;
+      color: #5c6978;
+      font-size: 0.7rem;
+      font-weight: 850;
+    }
+
+    .beta-test-card.is-ready .beta-test-status {
+      background: #e9fbf5;
+      color: #0b776d;
+    }
+
+    .beta-test-card.is-next .beta-test-status {
+      background: #fff1e9;
+      color: #b94725;
+    }
+
+    .beta-test-card-title {
+      margin-top: 0.7rem;
+      color: #111827;
+      font-size: 0.96rem;
+      font-weight: 850;
+      line-height: 1.3;
+    }
+
+    .beta-test-card-copy {
+      margin-top: 0.28rem;
+      color: #536070;
+      font-size: 0.82rem;
+      font-weight: 600;
+      line-height: 1.48;
+    }
+
+    .beta-test-action {
+      display: inline-flex;
+      min-height: 2.6rem;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      background: #eef3f7;
+      padding: 0.65rem 0.9rem;
+      color: #2458c8;
+      font-size: 0.82rem;
+      font-weight: 800;
+      line-height: 1.2;
+      text-align: center;
+      box-shadow: inset 0 0 0 1px rgba(203, 215, 227, 0.88);
+    }
+
+    .beta-test-footer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      margin-top: 1rem;
+      border-radius: 18px;
+      background: #f7fbff;
+      padding: 0.85rem;
+      box-shadow: inset 0 0 0 1px rgba(203, 215, 227, 0.78);
+    }
+
+    .beta-test-footer-copy {
+      min-width: 0;
+      flex: 1 1 18rem;
+      color: #4f5f6f;
+      font-size: 0.84rem;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
     .saved-panel-note {
       margin-top: 0.95rem;
       border-radius: 16px;
@@ -700,7 +2004,7 @@
       font-weight: 800;
       letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: #ff5a3d;
+      color: #b94725;
     }
 
     .trip-day-title {
@@ -740,7 +2044,7 @@
     .trip-day-stat-value {
       font-size: 0.8rem;
       font-weight: 700;
-      color: #2f5bff;
+      color: #2458c8;
       white-space: nowrap;
     }
 
@@ -775,13 +2079,13 @@
 
     .trip-day-chip--pace.is-cool {
       background: #e7eeff;
-      color: #2f5bff;
+      color: #2458c8;
       border-color: rgba(157, 176, 255, 0.9);
     }
 
     .trip-day-chip--pace.is-warm {
       background: #fff0ea;
-      color: #ff5a3d;
+      color: #b94725;
       border-color: rgba(255, 190, 172, 0.9);
     }
 
@@ -791,7 +2095,7 @@
       padding-right: 1.45rem;
       font-size: 1.05rem;
       font-weight: 800;
-      color: #2f5bff;
+      color: #2458c8;
       box-shadow: 0 12px 22px rgba(19, 42, 66, 0.06);
     }
 
@@ -811,6 +2115,71 @@
     .trip-day-fact-card--highlight {
       background: linear-gradient(180deg, rgba(255, 247, 240, 0.98) 0%, rgba(255, 255, 255, 0.99) 100%);
       border-color: rgba(255, 90, 61, 0.12);
+    }
+
+    .trip-day-confidence {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.7rem;
+      border-radius: 18px;
+      background: #edf3ff;
+      padding: 0.8rem 0.95rem;
+      box-shadow: inset 0 0 0 1px rgba(157, 176, 255, 0.38);
+    }
+
+    .trip-day-confidence-label {
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #2458c8;
+    }
+
+    .trip-day-confidence-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      justify-content: flex-end;
+    }
+
+    .trip-day-confidence-list span {
+      display: inline-flex;
+      align-items: center;
+      min-height: 1.9rem;
+      border-radius: 999px;
+      background: #ffffff;
+      padding: 0.38rem 0.7rem;
+      font-size: 0.76rem;
+      font-weight: 800;
+      color: #2458c8;
+      box-shadow: inset 0 0 0 1px rgba(203, 215, 227, 0.86);
+    }
+
+    .trip-day-edit-hint {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.7rem;
+      border-radius: 18px;
+      border: 1px solid rgba(203, 215, 227, 0.92);
+      background: rgba(255, 255, 255, 0.86);
+      padding: 0.85rem 0.95rem;
+      color: #4f5f6f;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.82);
+    }
+
+    .trip-day-edit-hint .material-symbols-outlined {
+      flex: 0 0 auto;
+      color: #2458c8;
+      font-size: 1.15rem;
+    }
+
+    .trip-day-edit-hint p {
+      min-width: 0;
+      font-size: 0.86rem;
+      font-weight: 600;
+      line-height: 1.5;
     }
 
     .trip-day-section {
@@ -901,8 +2270,345 @@
       background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(246, 250, 255, 0.98) 100%);
     }
 
+    .trip-day-protected-strip {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.85rem;
+      border-radius: 20px;
+      border: 1px solid rgba(11, 119, 109, 0.2);
+      background: #effaf6;
+      padding: 0.95rem;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.76);
+    }
+
+    .trip-day-protected-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: #0b776d;
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .trip-day-protected-label .material-symbols-outlined {
+      font-size: 1rem;
+    }
+
+    .trip-day-protected-copy {
+      max-width: 44rem;
+      margin-top: 0.35rem;
+      color: #214136;
+      font-size: 0.86rem;
+      font-weight: 600;
+      line-height: 1.52;
+    }
+
+    .trip-day-protected-chips,
+    .timeline-anchor-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+    }
+
+    .trip-day-protected-chips {
+      flex: 0 1 18rem;
+      justify-content: flex-end;
+    }
+
+    .trip-day-protected-chips span,
+    .timeline-anchor-badges span {
+      display: inline-flex;
+      min-height: 2.1rem;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      border: 1px solid rgba(11, 119, 109, 0.18);
+      background: #ffffff;
+      color: #0b776d;
+      font-size: 0.78rem;
+      font-weight: 800;
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    .trip-day-protected-chips span {
+      padding: 0.45rem 0.7rem;
+    }
+
+    .timeline-anchor-badges {
+      margin-top: 0.65rem;
+    }
+
+    .timeline-anchor-badges span {
+      gap: 0.3rem;
+      padding: 0.38rem 0.65rem;
+    }
+
+    .timeline-anchor-badges .material-symbols-outlined {
+      font-size: 0.95rem;
+    }
+
+    .trip-day-anchor-logic {
+      border-radius: 20px;
+      border: 1px solid rgba(36, 88, 200, 0.16);
+      background: linear-gradient(180deg, #ffffff 0%, #f6faff 100%);
+      padding: 0.95rem;
+      box-shadow: 0 10px 22px rgba(20, 39, 57, 0.04);
+    }
+
+    .trip-day-anchor-logic-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    .trip-day-anchor-logic-label {
+      color: #2458c8;
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .trip-day-anchor-logic-copy {
+      max-width: 44rem;
+      margin-top: 0.3rem;
+      color: #485a69;
+      font-size: 0.84rem;
+      font-weight: 600;
+      line-height: 1.45;
+    }
+
+    .trip-day-anchor-count {
+      flex: 0 0 auto;
+      border-radius: 999px;
+      background: #edf3ff;
+      padding: 0.42rem 0.7rem;
+      color: #2458c8;
+      font-size: 0.74rem;
+      font-weight: 800;
+      box-shadow: inset 0 0 0 1px rgba(36, 88, 200, 0.12);
+    }
+
+    .trip-day-anchor-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.65rem;
+      margin-top: 0.85rem;
+    }
+
+    .trip-day-anchor-card {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 0.65rem;
+      border-radius: 17px;
+      border: 1px solid rgba(203, 215, 227, 0.86);
+      background: rgba(255, 255, 255, 0.86);
+      padding: 0.8rem;
+    }
+
+    .trip-day-anchor-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.15rem;
+      height: 2.15rem;
+      border-radius: 999px;
+      background: #effaf6;
+      color: #0b776d;
+      font-size: 1.05rem;
+    }
+
+    .trip-day-anchor-kicker {
+      color: #647282;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      line-height: 1.3;
+      text-transform: uppercase;
+    }
+
+    .trip-day-anchor-title {
+      margin-top: 0.18rem;
+      color: #111827;
+      font-size: 0.92rem;
+      font-weight: 850;
+      line-height: 1.28;
+    }
+
+    .trip-day-anchor-reason {
+      margin-top: 0.25rem;
+      color: #4f5f6f;
+      font-size: 0.8rem;
+      font-weight: 600;
+      line-height: 1.45;
+    }
+
+    .trip-day-quality {
+      border-radius: 20px;
+      border: 1px solid rgba(203, 215, 227, 0.92);
+      background: #ffffff;
+      padding: 0.9rem;
+      box-shadow: 0 10px 22px rgba(20, 39, 57, 0.04);
+    }
+
+    .trip-day-quality-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.8rem;
+    }
+
+    .trip-day-quality-label {
+      color: #2458c8;
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .trip-day-quality-copy {
+      margin-top: 0.3rem;
+      color: #536070;
+      font-size: 0.84rem;
+      font-weight: 600;
+      line-height: 1.45;
+    }
+
+    .trip-day-quality-actions {
+      display: flex;
+      flex: 1 1 22rem;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 0.45rem;
+    }
+
+    .trip-day-quality-button {
+      display: inline-flex;
+      min-height: 2.5rem;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      border-radius: 999px;
+      border: 1px solid #cbd7e3;
+      background: #f7fbff;
+      padding: 0.55rem 0.8rem;
+      color: #2458c8;
+      font-size: 0.82rem;
+      font-weight: 800;
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    .trip-day-quality-button .material-symbols-outlined {
+      font-size: 1rem;
+    }
+
+    .trip-day-quality-button.is-active {
+      border-color: #1f3447;
+      background: #1f3447;
+      color: #ffffff;
+      box-shadow: 0 10px 20px rgba(31, 52, 71, 0.16);
+    }
+
+    .trip-day-adjustment-note {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 0.65rem;
+      margin-top: 0.8rem;
+      border-radius: 16px;
+      border: 1px solid rgba(11, 119, 109, 0.18);
+      background: #effaf6;
+      padding: 0.78rem;
+    }
+
+    .trip-day-adjustment-note > .material-symbols-outlined {
+      display: inline-flex;
+      width: 1.9rem;
+      height: 1.9rem;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      background: #ffffff;
+      color: #0b776d;
+      font-size: 1rem;
+      box-shadow: inset 0 0 0 1px rgba(11, 119, 109, 0.16);
+    }
+
+    .trip-day-adjustment-title {
+      color: #214136;
+      font-size: 0.9rem;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+
+    .trip-day-adjustment-copy {
+      margin-top: 0.25rem;
+      color: #355f52;
+      font-size: 0.82rem;
+      font-weight: 600;
+      line-height: 1.48;
+    }
+
+    .trip-day-planner-notes {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.75rem;
+    }
+
+    .trip-day-note-card {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 0.7rem;
+      align-items: flex-start;
+      min-width: 0;
+      border-radius: 18px;
+      border: 1px solid rgba(205, 218, 229, 0.86);
+      background: rgba(255, 255, 255, 0.96);
+      padding: 0.9rem 0.95rem;
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.9),
+        0 10px 22px rgba(20, 39, 57, 0.04);
+    }
+
+    .trip-day-note-card .material-symbols-outlined {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 999px;
+      background: #edf3ff;
+      color: #2458c8;
+      font-size: 1.05rem;
+      box-shadow: inset 0 0 0 1px rgba(157, 176, 255, 0.4);
+    }
+
+    .trip-day-note-label {
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #2458c8;
+    }
+
+    .trip-day-note-copy {
+      margin-top: 0.35rem;
+      font-size: 0.84rem;
+      font-weight: 600;
+      line-height: 1.5;
+      color: #536373;
+    }
+
     .trip-day-overview-copy {
-      font-family: "Instrument Sans", sans-serif;
+      font-family: "Inter", sans-serif;
       font-size: 0.91rem;
       line-height: 1.56;
       color: #5e6d7b;
@@ -980,7 +2686,7 @@
     .trip-day-preview-time {
       font-size: 0.72rem;
       font-weight: 800;
-      color: #ff5a3d;
+      color: #b94725;
       white-space: nowrap;
     }
 
@@ -1003,7 +2709,7 @@
       padding: 0.58rem 0.9rem;
       font-size: 0.8rem;
       font-weight: 800;
-      color: #2f5bff;
+      color: #2458c8;
       background: rgba(231, 238, 255, 0.9);
     }
 
@@ -1033,8 +2739,12 @@
       color: rgba(255, 255, 255, 0.92);
     }
 
+    .trip-day-section--actions .trip-day-section-label {
+      color: rgba(255, 255, 255, 0.98);
+    }
+
     .trip-day-section--actions .trip-day-actions-copy p.text-sm {
-      color: rgba(232, 241, 249, 0.82);
+      color: rgba(238, 246, 253, 0.9) !important;
       max-width: 34ch;
     }
 
@@ -1043,9 +2753,15 @@
       flex-wrap: wrap;
       gap: 0.5rem;
       justify-content: flex-end;
+      align-items: center;
     }
 
     .trip-day-map-button--footer {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 2.8rem;
+      min-width: 9.5rem;
       background: rgba(255, 255, 255, 0.96);
       color: #1f5785;
       box-shadow: 0 10px 20px rgba(6, 15, 25, 0.14);
@@ -1054,6 +2770,7 @@
     .trip-day-edit-toggle {
       display: inline-flex;
       align-items: center;
+      min-height: 2.8rem;
       border-radius: 999px;
       border: 1px solid rgba(200, 214, 228, 0.34);
       background: rgba(255, 255, 255, 0.96);
@@ -1062,13 +2779,19 @@
     }
 
     .trip-day-edit-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1 1 0;
+      min-height: 2.8rem;
       border: 0;
       background: transparent;
       color: #256291;
-      padding: 0.62rem 0.95rem;
+      padding: 0.55rem 1rem;
       font-size: 0.83rem;
       font-weight: 700;
       line-height: 1.2;
+      min-width: 7.4rem;
       white-space: nowrap;
       transition:
         background-color 140ms ease,
@@ -1087,11 +2810,7 @@
     }
 
     .trip-day-edit-button.is-muted {
-      color: #6c7985;
-    }
-
-    .trip-day-edit-button.is-muted {
-      color: #6b7681;
+      color: #5e6872;
     }
 
     .trip-day-actions-buttons .trip-day-map-button,
@@ -1385,7 +3104,7 @@
     .trip-versions-head-copy > p.text-xs,
     .trip-versions-panel .trip-collapsible-head > div:first-child > p.text-xs {
       letter-spacing: 0.18em;
-      color: #ff5a3d;
+      color: #b94725;
     }
 
     .trip-guide-head-copy > p.text-sm,
@@ -2208,6 +3927,141 @@
       line-height: 1.35;
     }
 
+    .destination-depth-panel {
+      border-radius: 24px;
+      border: 1px solid rgba(205, 218, 229, 0.9);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.99) 0%, rgba(247, 251, 255, 0.98) 100%);
+      padding: 1rem;
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.9),
+        0 14px 28px rgba(20, 39, 57, 0.05);
+    }
+
+    .destination-depth-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .destination-depth-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.85rem;
+    }
+
+    .destination-depth-card {
+      min-width: 0;
+      border-radius: 20px;
+      border: 1px solid rgba(205, 218, 229, 0.86);
+      background: #ffffff;
+      padding: 0.95rem;
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.86),
+        0 10px 20px rgba(20, 39, 57, 0.04);
+    }
+
+    .destination-depth-card-head {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.65rem;
+    }
+
+    .destination-depth-icon {
+      display: inline-flex;
+      width: 2.2rem;
+      height: 2.2rem;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 auto;
+      border-radius: 999px;
+      background: #edf3ff;
+      color: #2458c8;
+      box-shadow: inset 0 0 0 1px rgba(157, 176, 255, 0.4);
+    }
+
+    .destination-depth-label {
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #6b7783;
+    }
+
+    .destination-depth-value {
+      margin-top: 0.3rem;
+      font-size: 1rem;
+      font-weight: 800;
+      line-height: 1.35;
+      color: #172433;
+    }
+
+    .destination-depth-copy {
+      margin-top: 0.55rem;
+      font-size: 0.88rem;
+      font-weight: 500;
+      line-height: 1.58;
+      color: #536373;
+    }
+
+    .destination-depth-chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+    }
+
+    .destination-depth-chip {
+      display: inline-flex;
+      align-items: center;
+      min-height: 2rem;
+      border-radius: 999px;
+      background: #f2f7fb;
+      padding: 0.45rem 0.7rem;
+      font-size: 0.76rem;
+      font-weight: 800;
+      color: #2458c8;
+      box-shadow: inset 0 0 0 1px rgba(203, 215, 227, 0.86);
+    }
+
+    .destination-fit-strip {
+      margin-top: 0.9rem;
+      border-radius: 20px;
+      background: #1f3447;
+      padding: 0.95rem;
+      color: #ffffff;
+    }
+
+    .destination-fit-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.7rem;
+      margin-top: 0.75rem;
+    }
+
+    .destination-fit-card {
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      background: rgba(255, 255, 255, 0.08);
+      padding: 0.8rem;
+    }
+
+    .destination-fit-label {
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.64);
+    }
+
+    .destination-fit-value {
+      margin-top: 0.35rem;
+      font-size: 0.88rem;
+      font-weight: 800;
+      line-height: 1.4;
+      color: #ffffff;
+    }
+
     input:focus-visible + .keyboard-field-hint {
       opacity: 1;
       transform: translateY(0);
@@ -2259,7 +4113,7 @@
     }
 
     .trip-day-meta {
-      font-family: "Instrument Sans", sans-serif;
+      font-family: "Inter", sans-serif;
       font-size: 0.88rem;
       line-height: 1.48;
       color: #64707d;
@@ -2272,10 +4126,155 @@
       box-shadow: 0 10px 24px rgba(39, 78, 112, 0.16);
     }
 
+    .choice-button,
+    .chip-button,
+    .account-option {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 2.75rem;
+      line-height: 1.25;
+      text-align: center;
+    }
+
+    .account-option {
+      justify-content: flex-start;
+      text-align: left;
+    }
+
     .chip-button.is-active {
       background: #1f3447;
       color: #ffffff;
       border-color: #1f3447;
+    }
+
+    .preference-snapshot {
+      border: 1px solid rgba(203, 215, 227, 0.96);
+      background: rgba(255, 255, 255, 0.86);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    }
+
+    .preference-snapshot-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.75rem;
+    }
+
+    .preference-snapshot-item {
+      min-height: 5.25rem;
+      border: 1px solid #d8e1ea;
+      background: #f8fbff;
+      padding: 0.85rem;
+    }
+
+    .preference-helper-note {
+      color: #4f5f6f;
+      font-size: 0.86rem;
+      line-height: 1.55;
+    }
+
+    .preference-suggestion-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+    }
+
+    .preference-suggestion-chip {
+      display: inline-flex;
+      min-height: 2.5rem;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      border: 1px solid #cbd7e3;
+      background: #ffffff;
+      padding: 0.55rem 0.85rem;
+      color: #2458c8;
+      font-size: 0.82rem;
+      font-weight: 700;
+      line-height: 1.25;
+      text-align: center;
+    }
+
+    .guide-preference-suggestions {
+      border: 1px solid #cbd7e3;
+      background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+      box-shadow: 0 14px 32px rgba(15, 23, 42, 0.07);
+    }
+
+    .guide-preference-suggestions-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .guide-preference-feedback {
+      display: inline-flex;
+      min-height: 2rem;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      background: #e4f4ef;
+      padding: 0.35rem 0.8rem;
+      color: #17604d;
+      font-size: 0.78rem;
+      font-weight: 800;
+    }
+
+    .guide-preference-suggestions-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+
+    .guide-preference-card {
+      display: flex;
+      min-height: 11rem;
+      flex-direction: column;
+      border: 1px solid #d8e1ea;
+      border-radius: 20px;
+      background: #ffffff;
+      padding: 1rem;
+    }
+
+    .guide-preference-label {
+      color: #5d6978;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .guide-preference-value {
+      margin-top: 0.55rem;
+      color: #152636;
+      font-size: 0.95rem;
+      font-weight: 800;
+      line-height: 1.45;
+    }
+
+    .guide-preference-copy {
+      margin-top: 0.45rem;
+      color: #536070;
+      font-size: 0.86rem;
+      line-height: 1.55;
+    }
+
+    .guide-preference-action {
+      display: inline-flex;
+      min-height: 2.75rem;
+      align-items: center;
+      justify-content: center;
+      margin-top: auto;
+      border-radius: 999px;
+      background: #1f3447;
+      padding: 0.65rem 1rem;
+      color: #ffffff;
+      font-size: 0.86rem;
+      font-weight: 800;
+      line-height: 1.2;
+      text-align: center;
     }
 
     .thinking-dots span {
@@ -2807,7 +4806,7 @@
     .hero-title {
       margin-top: 0.35rem;
       max-width: 18rem;
-      font-family: "Sora", sans-serif;
+      font-family: "Inter", sans-serif;
       font-size: 1.8rem;
       font-weight: 800;
       line-height: 1.04;
@@ -2942,6 +4941,211 @@
       gap: 1rem;
     }
 
+    .build-panel-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .build-panel-copy {
+      max-width: 37rem;
+    }
+
+    .build-action-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 2.5rem;
+      gap: 0.45rem;
+      flex: 0 0 auto;
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    .build-draft-strip {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      border-radius: 22px;
+      border: 1px solid rgba(205, 218, 229, 0.96);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(245, 250, 255, 0.96) 100%);
+      padding: 0.95rem;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.88);
+    }
+
+    .build-draft-copy {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      min-width: 0;
+    }
+
+    .build-draft-icon {
+      display: inline-flex;
+      width: 2.35rem;
+      height: 2.35rem;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 auto;
+      border-radius: 999px;
+      background: #e9fbf5;
+      color: #0f8a7b;
+    }
+
+    .build-progress-panel {
+      border-radius: 24px;
+      border: 1px solid rgba(203, 215, 227, 0.92);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(247, 251, 255, 0.98) 100%);
+      padding: 1rem;
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.9),
+        0 12px 24px rgba(20, 39, 57, 0.05);
+    }
+
+    .build-progress-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .build-progress-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.75rem;
+    }
+
+    .build-progress-item {
+      min-width: 0;
+      border-radius: 18px;
+      border: 1px solid rgba(205, 218, 229, 0.84);
+      background: #ffffff;
+      padding: 0.9rem;
+    }
+
+    .build-progress-label {
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #6b7783;
+    }
+
+    .build-progress-value {
+      margin-top: 0.35rem;
+      font-size: 0.92rem;
+      font-weight: 800;
+      line-height: 1.35;
+      color: #172433;
+    }
+
+    .build-progress-copy {
+      margin-top: 0.35rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      line-height: 1.5;
+      color: #5d6b78;
+    }
+
+    .build-inline-summary {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.8rem;
+      border-radius: 20px;
+      border: 1px solid rgba(203, 215, 227, 0.9);
+      background: linear-gradient(180deg, rgba(245, 250, 255, 0.98) 0%, rgba(255, 255, 255, 0.98) 100%);
+      padding: 0.85rem 0.95rem;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.86);
+    }
+
+    .build-inline-summary-copy {
+      min-width: 0;
+      flex: 1 1 13rem;
+    }
+
+    .build-inline-label {
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #6b7783;
+    }
+
+    .build-inline-value {
+      margin-top: 0.22rem;
+      font-size: 0.9rem;
+      font-weight: 800;
+      line-height: 1.38;
+      color: #111827;
+    }
+
+    .build-quick-toggle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 2.45rem;
+      border-radius: 999px;
+      border: 1px solid #cbd7e3;
+      background: #ffffff;
+      padding: 0.55rem 0.9rem;
+      font-size: 0.82rem;
+      font-weight: 800;
+      line-height: 1.2;
+      color: #2458c8;
+      white-space: nowrap;
+      box-shadow: 0 8px 18px rgba(20, 39, 57, 0.05);
+      transition: background-color 140ms ease, border-color 140ms ease, color 140ms ease, box-shadow 140ms ease;
+    }
+
+    .build-quick-toggle.is-active {
+      border-color: rgba(11, 119, 109, 0.2);
+      background: #e9fbf5;
+      color: #0b776d;
+      box-shadow: 0 8px 18px rgba(11, 119, 109, 0.1);
+    }
+
+    .build-quick-toggle:hover,
+    .build-quick-toggle:focus-visible {
+      border-color: rgba(36, 88, 200, 0.35);
+      background: #f5faff;
+      outline: none;
+    }
+
+    .build-section-title {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .build-algorithm-card {
+      border-radius: 24px;
+      border: 1px solid rgba(205, 218, 229, 0.96);
+      background:
+        radial-gradient(circle at top right, rgba(233, 251, 245, 0.74), transparent 28%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.99) 0%, rgba(248, 251, 255, 0.98) 100%);
+      padding: 1rem;
+      box-shadow: 0 12px 26px rgba(20, 39, 57, 0.06);
+    }
+
+    .build-algorithm-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.75rem;
+    }
+
+    .build-algorithm-item {
+      min-width: 0;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.86);
+      padding: 0.85rem;
+      box-shadow: inset 0 0 0 1px rgba(16, 32, 51, 0.06);
+    }
+
     .build-guide-context-card {
       border-radius: 24px;
       border: 1px solid rgba(37, 98, 145, 0.1);
@@ -2973,6 +5177,332 @@
 
     .build-trip-grid {
       gap: 0.85rem;
+    }
+
+    .build-missing-info,
+    .blueprint-final-review {
+      border-radius: 24px;
+      border: 1px solid rgba(203, 215, 227, 0.92);
+      background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
+      padding: 1rem;
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.92),
+        0 14px 28px rgba(17, 24, 39, 0.05);
+    }
+
+    .build-missing-info.is-ready,
+    .blueprint-final-review.is-ready {
+      border-color: rgba(11, 119, 109, 0.2);
+      background: linear-gradient(180deg, #ffffff 0%, #f4fffb 100%);
+    }
+
+    .planning-prompt-head,
+    .blueprint-final-review-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.85rem;
+    }
+
+    .planning-prompt-status {
+      display: inline-flex;
+      min-height: 2rem;
+      flex: 0 0 auto;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      background: #fff4ed;
+      padding: 0.4rem 0.75rem;
+      font-size: 0.74rem;
+      font-weight: 800;
+      color: #b94725;
+      box-shadow: inset 0 0 0 1px rgba(239, 197, 178, 0.82);
+    }
+
+    .planning-prompt-status.is-ready {
+      background: #e9fbf5;
+      color: #0b776d;
+      box-shadow: inset 0 0 0 1px rgba(11, 119, 109, 0.12);
+    }
+
+    .planning-prompt-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.7rem;
+      margin-top: 0.9rem;
+    }
+
+    .planning-prompt-card {
+      min-width: 0;
+      border-radius: 18px;
+      border: 1px solid rgba(203, 215, 227, 0.9);
+      background: #ffffff;
+      padding: 0.85rem;
+    }
+
+    .planning-prompt-card.is-blocking {
+      border-color: rgba(239, 197, 178, 0.95);
+      background: #fff8f4;
+    }
+
+    .planning-prompt-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #2458c8;
+    }
+
+    .planning-prompt-card.is-blocking .planning-prompt-label {
+      color: #b94725;
+    }
+
+    .planning-prompt-label .material-symbols-outlined {
+      font-size: 1rem;
+    }
+
+    .planning-prompt-title {
+      margin-top: 0.35rem;
+      font-size: 0.95rem;
+      font-weight: 800;
+      line-height: 1.35;
+      color: #111827;
+    }
+
+    .planning-prompt-copy {
+      margin-top: 0.25rem;
+      font-size: 0.8rem;
+      font-weight: 500;
+      line-height: 1.48;
+      color: #4f5f6f;
+    }
+
+    .planning-prompt-button {
+      display: inline-flex;
+      min-height: 2.35rem;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      margin-top: 0.7rem;
+      padding: 0.55rem 0.8rem;
+      font-size: 0.78rem;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .blueprint-review-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.85rem;
+    }
+
+    .blueprint-review-card {
+      position: relative;
+      display: flex;
+      width: 100%;
+      min-width: 0;
+      gap: 0.85rem;
+      border-radius: 22px;
+      border: 1px solid rgba(203, 215, 227, 0.96);
+      background: #ffffff;
+      padding: 1rem;
+      text-align: left;
+      box-shadow: 0 10px 24px rgba(17, 24, 39, 0.05);
+    }
+
+    .blueprint-review-card:hover {
+      border-color: rgba(36, 88, 200, 0.34);
+      box-shadow: 0 14px 30px rgba(17, 24, 39, 0.08);
+    }
+
+    .blueprint-review-card.is-wide {
+      grid-column: 1 / -1;
+    }
+
+    .blueprint-review-icon {
+      display: inline-flex;
+      width: 2.35rem;
+      height: 2.35rem;
+      flex: 0 0 auto;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      background: #edf3ff;
+      color: #2458c8;
+    }
+
+    .blueprint-review-card.is-alert .blueprint-review-icon {
+      background: #fff4ed;
+      color: #b94725;
+    }
+
+    .blueprint-review-copy {
+      min-width: 0;
+      flex: 1;
+    }
+
+    .blueprint-review-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    .blueprint-edit-button {
+      display: inline-flex;
+      min-height: 2rem;
+      flex: 0 0 auto;
+      align-items: center;
+      gap: 0.25rem;
+      border-radius: 999px;
+      background: #eef3f7;
+      padding: 0.35rem 0.65rem;
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: #2458c8;
+      box-shadow: inset 0 0 0 1px rgba(203, 215, 227, 0.96);
+    }
+
+    .blueprint-edit-button:hover {
+      background: #edf3ff;
+    }
+
+    .blueprint-review-label {
+      font-size: 0.74rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #4f5f6f;
+    }
+
+    .edit-focus-pulse {
+      animation: edit-focus-pulse 1200ms ease-out 1;
+      box-shadow:
+        0 0 0 4px rgba(36, 88, 200, 0.16),
+        0 12px 28px rgba(17, 24, 39, 0.08);
+    }
+
+    .blueprint-review-value {
+      margin-top: 0.35rem;
+      font-size: 1rem;
+      font-weight: 800;
+      line-height: 1.35;
+      color: #111827;
+    }
+
+    .blueprint-review-detail {
+      margin-top: 0.35rem;
+      font-size: 0.88rem;
+      line-height: 1.55;
+      color: #4f5f6f;
+    }
+
+    .skip-link {
+      position: fixed;
+      left: 1rem;
+      top: 1rem;
+      z-index: 80;
+      transform: translateY(-180%);
+      border-radius: 999px;
+      background: #111827;
+      color: #ffffff;
+      padding: 0.75rem 1rem;
+      font-size: 0.9rem;
+      font-weight: 700;
+      box-shadow: 0 12px 28px rgba(17, 24, 39, 0.22);
+      transition: transform 160ms ease;
+    }
+
+    .skip-link:focus-visible {
+      transform: translateY(0);
+      outline: 3px solid #f6c453;
+      outline-offset: 3px;
+    }
+
+    button,
+    a,
+    input,
+    select,
+    textarea {
+      font: inherit;
+    }
+
+    button,
+    a,
+    select,
+    input,
+    textarea,
+    [tabindex]:not([tabindex="-1"]) {
+      scroll-margin: 7rem;
+    }
+
+    button:focus-visible,
+    a:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible,
+    [tabindex]:not([tabindex="-1"]):focus-visible {
+      outline: 3px solid #123a6f;
+      outline-offset: 3px;
+      box-shadow: 0 0 0 5px rgba(36, 88, 200, 0.18);
+    }
+
+    input,
+    select,
+    textarea {
+      color: #111827;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #6b7785;
+      opacity: 1;
+    }
+
+    .rounded-full,
+    .rounded-2xl,
+    .rounded-\[22px\],
+    .rounded-\[24px\] {
+      border-color: rgba(203, 215, 227, 0.96);
+    }
+
+    .text-primary {
+      color: #b94725 !important;
+    }
+
+    .text-secondary {
+      color: #2458c8 !important;
+    }
+
+    .text-muted {
+      color: #4f5f6f !important;
+    }
+
+    .bg-secondary {
+      background-color: #2458c8 !important;
+    }
+
+    .bg-primary {
+      background-color: #b94725 !important;
+    }
+
+    .bg-surface-soft {
+      background-color: #eef3f7 !important;
+    }
+
+    .bg-blue-soft {
+      background-color: #edf3ff !important;
+    }
+
+    .bg-warm {
+      background-color: #fff4ed !important;
+    }
+
+    .ring-line {
+      --tw-ring-color: #cbd7e3 !important;
     }
 
     .editorial-hero-media {
@@ -3011,6 +5541,11 @@
     }
 
     @media (min-width: 641px) and (max-width: 1023px) {
+      .homepage-method-grid,
+      .explore-planning-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
       .trip-top-edit {
         width: auto;
         display: inline-flex;
@@ -3054,6 +5589,51 @@
     }
 
     @media (max-width: 640px) {
+      .homepage-hero-title {
+        font-size: 2.25rem;
+      }
+
+      .homepage-method-grid,
+      .explore-planning-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .homepage-proof-grid {
+        grid-template-columns: 1fr;
+        gap: 0.65rem;
+      }
+
+      .homepage-proof-card,
+      .homepage-signal-card,
+      .homepage-proof-grid > * {
+        min-height: auto;
+      }
+
+      .homepage-insight-panel {
+        display: none;
+      }
+
+      .homepage-hero-actions > * {
+        width: 100%;
+      }
+
+      .preference-snapshot-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .guide-preference-suggestions-head,
+      .guide-preference-suggestions-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .guide-preference-suggestions-head {
+        display: grid;
+      }
+
+      .preference-suggestion-chip {
+        flex: 1 1 calc(50% - 0.55rem);
+      }
+
       .trip-top-card {
         padding: 1rem;
       }
@@ -3120,6 +5700,93 @@
         padding-right: 0.95rem;
       }
 
+      .trip-draft-status,
+      .trip-change-summary-head,
+      .trip-next-actions-head,
+      .trip-day-overview-head {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .trip-change-summary-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .trip-change-summary {
+        padding-left: 0.9rem;
+        padding-right: 0.9rem;
+      }
+
+      .trip-next-actions-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .trip-readiness-head {
+        flex-direction: column;
+      }
+
+      .trip-handoff-head {
+        flex-direction: column;
+      }
+
+      .trip-handoff-item {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .trip-handoff-button {
+        width: 100%;
+      }
+
+      .booking-hub-summary {
+        grid-template-columns: 1fr;
+      }
+
+      .booking-hub-item {
+        grid-template-columns: 1fr;
+      }
+
+      .booking-hub-link {
+        width: 100%;
+      }
+
+      .trip-readiness-list {
+        grid-template-columns: 1fr;
+      }
+
+      .trip-readiness-panel,
+      .trip-handoff-panel,
+      .booking-hub {
+        padding-left: 0.9rem;
+        padding-right: 0.9rem;
+      }
+
+      .trip-next-actions {
+        padding-left: 0.9rem;
+        padding-right: 0.9rem;
+      }
+
+      .trip-draft-status-actions {
+        width: 100%;
+        flex-direction: column;
+      }
+
+      .trip-change-actions {
+        width: 100%;
+        flex-direction: column;
+      }
+
+      .trip-draft-status-actions > *,
+      .trip-change-actions > * {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .trip-day-overview-list {
+        grid-template-columns: 1fr;
+      }
+
       .trip-signature-head {
         gap: 0.7rem;
       }
@@ -3158,6 +5825,96 @@
       .saved-panel-summary-grid {
         grid-template-columns: 1fr;
         gap: 0.65rem;
+      }
+
+      .saved-account-overview-head {
+        flex-direction: column;
+      }
+
+      .saved-account-status-grid {
+        grid-template-columns: 1fr;
+        gap: 0.65rem;
+      }
+
+      .saved-account-overview-actions {
+        flex-direction: column;
+      }
+
+      .saved-account-overview-actions button {
+        width: 100%;
+      }
+
+      .saved-dashboard-continue,
+      .saved-dashboard-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .saved-dashboard-continue {
+        padding-left: 0.9rem;
+        padding-right: 0.9rem;
+      }
+
+      .saved-dashboard-actions button {
+        width: 100%;
+      }
+
+      .saved-dashboard-layout {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+      }
+
+      .beta-test-head,
+      .beta-test-footer {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .beta-test-grid {
+        grid-template-columns: 1fr;
+        gap: 0.65rem;
+      }
+
+      .beta-test-score,
+      .beta-test-action,
+      .beta-test-footer a {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .saved-history-item {
+        padding-left: 0.85rem;
+        padding-right: 0.85rem;
+      }
+
+      .destination-depth-head {
+        flex-direction: column;
+      }
+
+      .destination-depth-grid,
+      .destination-fit-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .destination-depth-panel,
+      .destination-depth-card,
+      .destination-fit-strip {
+        padding-left: 0.9rem;
+        padding-right: 0.9rem;
+      }
+
+      .planning-prompt-head,
+      .blueprint-final-review-head {
+        flex-direction: column;
+      }
+
+      .planning-prompt-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .planning-prompt-button {
+        width: 100%;
       }
 
       .saved-panel-summary-card {
@@ -3226,46 +5983,57 @@
       }
 
       .app-bottom-bar {
-        padding-left: 0.85rem;
-        padding-right: 0.85rem;
-        padding-bottom: max(0.7rem, env(safe-area-inset-bottom));
+        padding-left: 0.65rem;
+        padding-right: 0.65rem;
+        padding-bottom: max(0.55rem, env(safe-area-inset-bottom));
       }
 
       .app-bottom-bar .glass {
-        border-radius: 26px;
-        padding-left: 0.85rem;
-        padding-right: 0.85rem;
-        padding-top: 0.7rem;
-        padding-bottom: 0.7rem;
+        border-radius: 24px;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+        padding-top: 0.55rem;
+        padding-bottom: 0.55rem;
       }
 
       .app-bottom-actions {
-        gap: 0.75rem;
+        gap: 0.55rem;
         margin-bottom: 0.05rem;
       }
 
       #view-cycle-btn {
-        width: 2.9rem;
-        height: 2.9rem;
+        width: 2.65rem;
+        height: 2.65rem;
       }
 
       .app-bottom-primary-btn {
-        min-height: 3.15rem;
-        padding-top: 0.85rem;
-        padding-bottom: 0.85rem;
-        font-size: 0.98rem;
+        min-height: 2.9rem;
+        padding-top: 0.72rem;
+        padding-bottom: 0.72rem;
+        font-size: 0.94rem;
       }
 
       .app-bottom-bar nav {
-        margin-top: 0.65rem;
+        margin-top: 0.48rem;
       }
 
       .app-bottom-bar .nav-tab {
         gap: 0.15rem;
+        min-width: 0;
+        max-width: 4.15rem;
+        font-size: 0.68rem;
+        line-height: 1.08;
       }
 
       .app-bottom-bar .nav-tab .material-symbols-outlined {
-        font-size: 1.3rem;
+        font-size: 1.22rem;
+      }
+
+      .app-bottom-bar .nav-tab span:not(.material-symbols-outlined) {
+        max-width: 3.6rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       }
 
       .trip-day-card {
@@ -3290,6 +6058,13 @@
         text-align: center;
       }
 
+      .trip-day-edit-button {
+        min-width: 0;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        font-size: 0.78rem;
+      }
+
       .trip-day-facts {
         grid-template-columns: 1fr;
         gap: 0.65rem;
@@ -3310,6 +6085,75 @@
       .trip-day-summary-grid {
         grid-template-columns: 1fr;
         gap: 0.65rem;
+      }
+
+      .trip-day-protected-strip {
+        display: grid;
+        gap: 0.75rem;
+      }
+
+      .trip-day-protected-chips {
+        width: 100%;
+        flex-basis: auto;
+        justify-content: flex-start;
+      }
+
+      .trip-day-protected-chips span,
+      .timeline-anchor-badges span {
+        max-width: 100%;
+      }
+
+      .trip-day-anchor-logic {
+        padding-left: 0.85rem;
+        padding-right: 0.85rem;
+      }
+
+      .trip-day-anchor-logic-head {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .trip-day-anchor-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .trip-day-anchor-card {
+        padding-left: 0.85rem;
+        padding-right: 0.85rem;
+      }
+
+      .trip-day-quality {
+        padding-left: 0.85rem;
+        padding-right: 0.85rem;
+      }
+
+      .trip-day-quality-actions {
+        width: 100%;
+        flex-basis: auto;
+        justify-content: flex-start;
+      }
+
+      .trip-day-quality-button {
+        flex: 1 1 calc(50% - 0.45rem);
+      }
+
+      .trip-day-planner-notes {
+        grid-template-columns: 1fr;
+        gap: 0.65rem;
+      }
+
+      .trip-day-note-card {
+        padding-left: 0.85rem;
+        padding-right: 0.85rem;
+      }
+
+      .trip-day-confidence {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .trip-day-confidence-list {
+        justify-content: flex-start;
       }
 
       .trip-logistics-grid {
@@ -3517,6 +6361,50 @@
         gap: 0.85rem;
       }
 
+      .stage-tab-strip-inner {
+        gap: 0.35rem;
+        padding: 0.25rem;
+      }
+
+      .stage-tab {
+        min-height: 2.42rem;
+        padding-left: 0.85rem;
+        padding-right: 0.85rem;
+      }
+
+      .build-panel-head,
+      .build-draft-strip,
+      .build-progress-head,
+      .build-section-title,
+      .flow-status-strip {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .flow-status-strip {
+        display: flex;
+        gap: 0.6rem;
+      }
+
+      .flow-status-item {
+        padding: 0.75rem 0.8rem;
+      }
+
+      .build-action-button,
+      .build-draft-strip button,
+      .build-quick-toggle {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .build-inline-summary {
+        align-items: stretch;
+      }
+
+      .build-progress-grid {
+        grid-template-columns: 1fr;
+      }
+
       .build-guide-context-actions {
         width: 100%;
       }
@@ -3532,6 +6420,20 @@
 
       .build-trip-grid {
         gap: 0.7rem;
+      }
+
+      .build-algorithm-grid {
+        grid-template-columns: 1fr;
+        gap: 0.65rem;
+      }
+
+      .blueprint-review-grid {
+        grid-template-columns: 1fr;
+        gap: 0.7rem;
+      }
+
+      .blueprint-review-card {
+        padding: 0.9rem;
       }
 
       .save-version-shell {
@@ -3605,14 +6507,31 @@
       }
     }
 
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
     @keyframes pulse-dot {
       0%, 80%, 100% { transform: translateY(0); opacity: 0.3; }
       40% { transform: translateY(-4px); opacity: 1; }
     }
+
+    @keyframes edit-focus-pulse {
+      0% { box-shadow: 0 0 0 0 rgba(36, 88, 200, 0.34), 0 12px 28px rgba(17, 24, 39, 0.08); }
+      100% { box-shadow: 0 0 0 14px rgba(36, 88, 200, 0), 0 12px 28px rgba(17, 24, 39, 0.08); }
+    }
   </style>
 </head>
 <body class="text-ink">
-  <div class="mx-auto flex min-h-screen w-full max-w-md flex-col pb-32 lg:max-w-6xl">
+  <a class="skip-link" href="#main-content">Skip to trip planner</a>
+  <div class="app-shell mx-auto flex min-h-screen w-full max-w-[92rem] flex-col pb-32">
     <header class="px-5 pt-6">
       <div class="glass flex items-center justify-between rounded-[28px] border border-white/70 px-4 py-3 shadow-card">
         <button id="header-menu-btn" class="flex h-11 w-11 items-center justify-center rounded-full bg-white/70 text-secondary" type="button">
@@ -3639,19 +6558,32 @@
       </div>
     </header>
 
-    <main class="flex-1 px-5 pb-[28rem] pt-5 sm:pb-80">
-      <section class="hero-panel relative overflow-hidden rounded-[32px] px-5 pb-6 pr-24 pt-10 text-white shadow-float">
-        <div class="absolute right-4 top-4 rounded-full bg-white/20 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em]">
-          Guided
+    <main id="main-content" class="flex-1 px-5 pb-[28rem] pt-5 sm:pb-80">
+      <section class="hero-panel homepage-hero relative overflow-hidden rounded-[32px] px-5 py-6 text-white shadow-float">
+        <div class="homepage-hero-grid">
+          <div>
+        <div class="inline-flex rounded-full bg-white/18 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-white">
+          Guided vacation planning
         </div>
+        <p class="homepage-hero-kicker mt-4 text-sm font-semibold leading-6">Start with the trip basics. The planner turns your destination, dates, travelers, logistics, and preferences into a real itinerary draft.</p>
         <p class="mb-3 max-w-[15rem] text-sm leading-6 text-white/84">Tell us the trip you want. We’ll help shape the rest.</p>
-        <h2 class="max-w-[14rem] font-display text-[2rem] font-extrabold leading-[1.05]">
-          Travel planning that feels a lot less overwhelming.
+        <h2 class="homepage-hero-title font-display font-extrabold">
+          Build a vacation plan around how you actually travel.
         </h2>
-        <p class="mt-3 max-w-[16rem] text-sm leading-6 text-white/88">
-          A trip built around your pace, priorities, and plans.
+        <p class="homepage-hero-copy mt-4 text-base leading-7">
+          Horizon Bound helps general vacation planners move from a rough idea to a usable trip blueprint, then into a day-by-day plan with room to edit, save, and come back later.
         </p>
-        <div class="mt-5 grid grid-cols-3 gap-3">
+        <div class="homepage-hero-actions mt-5">
+          <button class="bg-white text-secondary shadow-card" data-action="open-build" type="button">
+            <span class="material-symbols-outlined text-base" aria-hidden="true">auto_awesome</span>
+            Build my trip
+          </button>
+          <button class="bg-white/12 text-white ring-1 ring-white/24" data-action="open-city-guides-home" type="button">
+            <span class="material-symbols-outlined text-base" aria-hidden="true">travel_explore</span>
+            Browse guides
+          </button>
+        </div>
+        <div class="homepage-proof-grid mt-5">
           <div class="rounded-2xl bg-white/16 px-3 py-3">
             <p class="text-[11px] uppercase tracking-[0.18em] text-white/70">Clear</p>
             <p class="mt-1 text-sm font-semibold">Easy to start</p>
@@ -3664,6 +6596,25 @@
             <p class="text-[11px] uppercase tracking-[0.18em] text-white/70">Flexible</p>
             <p class="mt-1 text-sm font-semibold">Adjust anytime</p>
           </div>
+        </div>
+          </div>
+          <aside class="homepage-insight-panel rounded-[26px] px-4 py-4">
+            <p class="text-xs font-semibold uppercase tracking-[0.16em] text-white/72">What the planner weighs</p>
+            <div class="mt-4 grid gap-3">
+              <div class="homepage-signal-card rounded-2xl px-4 py-3">
+                <p class="text-sm font-bold text-white">Destination context</p>
+                <p class="mt-1 text-sm leading-6 text-white/76">Top sights, neighborhoods, food, timing, and practical travel patterns.</p>
+              </div>
+              <div class="homepage-signal-card rounded-2xl px-4 py-3">
+                <p class="text-sm font-bold text-white">Real logistics</p>
+                <p class="mt-1 text-sm leading-6 text-white/76">Dates, travelers, budget, flights, pets, lodging, and day length.</p>
+              </div>
+              <div class="homepage-signal-card rounded-2xl px-4 py-3">
+                <p class="text-sm font-bold text-white">Your travel style</p>
+                <p class="mt-1 text-sm leading-6 text-white/76">Pace, vibe, must-haves, and non-negotiables steer the final shape.</p>
+              </div>
+            </div>
+          </aside>
         </div>
       </section>
 
@@ -3690,6 +6641,21 @@
             Saved
           </button>
             </div>
+          </div>
+        </div>
+        <div id="flow-status-strip" class="flow-status-strip mt-4" aria-live="polite">
+          <div class="flow-status-item">
+            <p class="flow-status-label">You are here</p>
+            <p id="flow-status-current" class="flow-status-value">Trip basics</p>
+          </div>
+          <div class="flow-status-item">
+            <p class="flow-status-label">Focus</p>
+            <p id="flow-status-focus" class="flow-status-value">Add the details every trip needs first.</p>
+            <p id="flow-status-copy" class="flow-status-copy">Start with destination, dates, travelers, budget, flights, and pets.</p>
+          </div>
+          <div class="flow-status-item">
+            <p class="flow-status-label">Next</p>
+            <p id="flow-status-next" class="flow-status-value">Choose preferences</p>
           </div>
         </div>
       </section>
@@ -3720,8 +6686,41 @@
             </div>
             <div class="rounded-[22px] border border-line bg-white px-4 py-4">
               <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Preview the outcome</p>
-              <h4 class="mt-2 font-display text-lg font-bold">See what the app can build</h4>
+              <h4 class="mt-2 font-display text-lg font-bold">See what a draft can look like</h4>
               <p class="mt-2 text-sm leading-6 text-muted">Open a sample trip draft to understand how inspiration turns into an actual itinerary.</p>
+            </div>
+          </div>
+
+          <div class="mt-5 rounded-[24px] border border-line bg-white px-4 py-4">
+            <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">How to use Explore</p>
+                <h4 class="mt-1 font-display text-xl font-bold">Pick the starting point that matches how decided you are</h4>
+                <p class="mt-2 max-w-[48rem] text-sm leading-6 text-muted">Some travelers already know the city. Others only know the mood, season, budget, or kind of vacation they want. Explore gives each path a useful next step.</p>
+              </div>
+              <span class="self-start rounded-full bg-teal-soft px-3 py-1 text-xs font-semibold text-tertiary">Decision support</span>
+            </div>
+            <div class="explore-planning-grid mt-4">
+              <div class="explore-planning-card rounded-[20px] px-4 py-4">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">I know the city</p>
+                <p class="mt-2 font-display text-lg font-bold text-ink">Open a city guide</p>
+                <p class="mt-2 text-sm leading-6 text-muted">Use attractions, food, neighborhoods, timing, and planning toolkit notes to understand what should anchor the trip.</p>
+              </div>
+              <div class="explore-planning-card rounded-[20px] px-4 py-4">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">I know the country</p>
+                <p class="mt-2 font-display text-lg font-bold text-ink">Compare possible bases</p>
+                <p class="mt-2 text-sm leading-6 text-muted">Start broader, compare city styles, then carry the best destination into Build when the direction feels clear.</p>
+              </div>
+              <div class="explore-planning-card rounded-[20px] px-4 py-4">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">I know the vibe</p>
+                <p class="mt-2 font-display text-lg font-bold text-ink">Browse by travel style</p>
+                <p class="mt-2 text-sm leading-6 text-muted">Look for places that match relaxing, adventurous, food-focused, family-friendly, romantic, or first-time highlight trips.</p>
+              </div>
+              <div class="explore-planning-card rounded-[20px] px-4 py-4">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">I am ready now</p>
+                <p class="mt-2 font-display text-lg font-bold text-ink">Go straight to Build</p>
+                <p class="mt-2 text-sm leading-6 text-muted">Enter destination, dates, travelers, logistics, and preferences so the algorithm can produce a usable first draft.</p>
+              </div>
             </div>
           </div>
 
@@ -3742,7 +6741,7 @@
                 <div>
                   <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Explore map</p>
                   <h4 class="mt-1 font-display text-lg font-bold">Preview the area before you plan</h4>
-                  <p class="mt-2 text-sm leading-6 text-muted">This helps users see the general part of the city or destination a sample trip would revolve around.</p>
+                  <p class="mt-2 text-sm leading-6 text-muted">Use this to see the general part of the city or destination a sample trip would revolve around.</p>
                 </div>
                 <span class="rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">Interactive</span>
               </div>
@@ -3767,12 +6766,12 @@
             <div class="rounded-[22px] border border-line bg-white px-4 py-4">
               <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Best use of this page</p>
               <p class="mt-2 font-display text-lg font-bold">Learn before you commit</p>
-              <p class="mt-2 text-sm leading-6 text-muted">Explore works best when the user wants confidence, inspiration, and a clearer sense of what their vacation could become.</p>
+              <p class="mt-2 text-sm leading-6 text-muted">Explore works best when you want confidence, inspiration, and a clearer sense of what your vacation could become.</p>
             </div>
             <div class="rounded-[22px] border border-line bg-white px-4 py-4">
               <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">When to leave Explore</p>
               <p class="mt-2 font-display text-lg font-bold">Start building once a place clicks</p>
-              <p class="mt-2 text-sm leading-6 text-muted">As soon as a destination feels right, switch into Build so the app can shape a trip around real dates, pace, and budget.</p>
+              <p class="mt-2 text-sm leading-6 text-muted">As soon as a destination feels right, switch into Build and shape the trip around real dates, pace, and budget.</p>
             </div>
           </div>
 
@@ -3785,7 +6784,7 @@
             <button class="rounded-[22px] bg-surface-soft px-4 py-4 text-left ring-1 ring-line" data-action="open-trip-preview" type="button">
               <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">See the destination</p>
               <p class="mt-2 font-display text-lg font-bold text-ink">Preview Your Trip</p>
-              <p class="mt-2 text-sm leading-6 text-muted">Open a sample trip draft right away if you want to browse what the app can create first.</p>
+              <p class="mt-2 text-sm leading-6 text-muted">Open a sample trip draft right away if you want to browse the outcome first.</p>
             </button>
           </div>
         </div>
@@ -3798,7 +6797,7 @@
               <p class="text-xs font-semibold uppercase tracking-[0.24em] text-primary">Editorial destination pages</p>
               <h3 class="mt-1 font-display text-2xl font-bold">Browse popular places before you plan</h3>
               <p class="mt-2 text-sm leading-6 text-muted">
-                This is the destination library. It gives users a richer, more editorial way to understand what each city is best for before they start building a trip.
+                This destination library gives you a richer way to understand what each city is best for before you start building a trip.
               </p>
             </div>
             <span class="rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">Top cities</span>
@@ -3855,7 +6854,7 @@
               <p class="text-xs font-semibold uppercase tracking-[0.24em] text-primary">Editorial country pages</p>
               <h3 class="mt-1 font-display text-2xl font-bold">Browse countries before choosing a city</h3>
               <p class="mt-2 text-sm leading-6 text-muted">
-                These pages explain how a country tends to travel, what stands out, and which cities are strongest starting points before users commit to one destination.
+                These pages explain how a country tends to travel, what stands out, and which cities are strongest starting points before you commit to one destination.
               </p>
             </div>
             <span class="rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">20 countries</span>
@@ -3892,7 +6891,7 @@
             <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
               <div>
                 <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Already know the city?</p>
-                <p class="mt-2 text-sm leading-6 text-muted">Go straight to City Guides when users are ready for a specific place and want a more concrete editorial read.</p>
+                <p class="mt-2 text-sm leading-6 text-muted">Go straight to City Guides when you are ready for a specific place and want a more concrete read.</p>
               </div>
               <button class="rounded-full bg-surface-soft px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="open-city-guides-home" type="button">
                 Browse City Guides
@@ -3914,7 +6913,7 @@
             <div>
               <p class="text-xs font-semibold uppercase tracking-[0.24em] text-primary">Editorial destination page</p>
               <h3 class="mt-1 font-display text-2xl font-bold">A full article-style guide for each city</h3>
-              <p class="mt-2 text-sm leading-6 text-muted">Each destination now lives on its own page, so users can focus on one city at a time without the guide library getting crowded.</p>
+              <p class="mt-2 text-sm leading-6 text-muted">Each destination has its own page, so you can focus on one city at a time without the guide library getting crowded.</p>
             </div>
             <div class="flex flex-wrap gap-2">
               <button class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="open-city-guides-home" type="button">Back to City Guides</button>
@@ -3941,6 +6940,28 @@
                 <div id="city-guide-gallery" class="mb-5 grid gap-3 sm:grid-cols-3"></div>
                 <div id="city-guide-editorial-intro" class="max-w-[48rem] space-y-4 text-[1rem] leading-8 text-ink sm:text-[1.03rem]"></div>
                 <div id="city-guide-summary-cards" class="mt-5 grid gap-3 sm:grid-cols-3"></div>
+                <div class="mt-5 rounded-[24px] border border-line bg-white px-4 py-4 shadow-card">
+                  <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+                    <div>
+                      <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Planning toolkit</p>
+                      <h4 class="mt-1 font-display text-xl font-bold text-ink">Useful before you build the trip</h4>
+                    </div>
+                    <span class="self-start rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">Destination context</span>
+                  </div>
+                  <div id="city-guide-planning-toolkit" class="mt-4 grid gap-3 sm:grid-cols-2 xl:grid-cols-4"></div>
+                </div>
+                <div id="city-guide-destination-depth" class="destination-depth-panel mt-5">
+                  <div class="destination-depth-head">
+                    <div>
+                      <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Destination depth</p>
+                      <h4 class="mt-1 font-display text-xl font-bold text-ink">How to make this city work for your trip</h4>
+                      <p class="mt-2 max-w-[46rem] text-sm leading-6 text-muted">Use these notes to decide how much time to give the city, where to base yourself, and which tradeoffs matter before the itinerary is built.</p>
+                    </div>
+                    <span class="self-start rounded-full bg-teal-soft px-3 py-1 text-xs font-semibold text-tertiary">Planning insight</span>
+                  </div>
+                  <div id="city-guide-depth-grid" class="destination-depth-grid mt-4"></div>
+                  <div id="city-guide-fit-strip" class="destination-fit-strip"></div>
+                </div>
                 <div class="mt-5 rounded-[22px] bg-warm px-4 py-4 ring-1 ring-warm-line">
                   <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Why this guide helps</p>
                   <p id="city-guide-trust-copy" class="mt-2 max-w-[46rem] text-sm leading-7 text-ink"></p>
@@ -3969,7 +6990,7 @@
                   <div>
                     <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Related destinations</p>
                     <h5 class="mt-1 font-display text-xl font-bold">Keep browsing similar places</h5>
-                    <p class="mt-2 text-sm leading-6 text-muted">These are good next reads if users want a different city with a similar trip feel.</p>
+                    <p class="mt-2 text-sm leading-6 text-muted">These are good next reads if you want a different city with a similar trip feel.</p>
                   </div>
                 </div>
                 <div id="city-guide-related-grid" class="mt-5 grid gap-3"></div>
@@ -4044,27 +7065,229 @@
 
       <section class="page-panel is-active mt-6" id="build-panel">
         <div class="rounded-[28px] border border-line bg-surface-card p-5 shadow-card">
-          <div class="flex items-start justify-between gap-3">
-            <div>
-            <h3 class="font-display text-3xl font-bold">Plan a new trip</h3>
-            <p class="mt-2 text-sm leading-6 text-muted">
-              Start with the basics.
-            </p>
+          <div class="build-panel-head">
+            <div class="build-panel-copy">
+              <p class="text-xs font-semibold uppercase tracking-[0.24em] text-primary">Step 1 of 4</p>
+              <h3 class="mt-1 font-display text-3xl font-bold">Build your trip</h3>
+              <p class="mt-2 text-sm leading-6 text-muted">
+                Add the facts every good itinerary needs first: where, when, who is going, and the travel details that shape the day.
+              </p>
             </div>
-            <button id="manual-adjust-btn" class="rounded-full bg-surface-soft px-3 py-2 text-xs font-semibold text-secondary ring-1 ring-line" type="button">
-              Manually adjust
+            <button id="manual-adjust-btn" class="build-action-button rounded-full bg-surface-soft px-3 py-2 text-xs font-semibold text-secondary ring-1 ring-line" type="button">
+              <span class="material-symbols-outlined text-base" aria-hidden="true">tune</span>
+              More controls
             </button>
           </div>
 
-          <div class="build-top-stack mt-5">
-            <div class="destination-hero">
-              <img id="build-hero-image" alt="Destination preview" src="" />
-              <div class="destination-hero-copy">
-                <p class="hero-kicker">Destination preview</p>
-                <h4 id="build-hero-title" class="hero-title"></h4>
-                <p id="build-hero-copy" class="hero-summary"></p>
+          <form id="trip-form" class="build-trip-form space-y-5">
+            <div id="build-core-section" class="build-section-title" data-edit-section tabindex="-1">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Trip facts</p>
+                <h4 class="mt-1 font-display text-xl font-bold">Where, when, and who</h4>
+              </div>
+              <span class="rounded-full bg-teal-soft px-3 py-1 text-xs font-semibold text-tertiary">Required</span>
+            </div>
+            <div class="build-trip-grid grid grid-cols-2">
+              <label class="col-span-2 rounded-2xl border border-line bg-surface px-4 py-3">
+                <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Destination</span>
+                <input id="destination-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" type="text" value="Paris, France" />
+                <p class="keyboard-field-hint keyboard-field-hint--compact">Use arrow keys to browse suggestions, Enter to choose, and Esc to close.</p>
+                <div id="destination-autofill" class="mt-3 hidden overflow-hidden rounded-[18px] border border-line bg-white">
+                  <div id="destination-autofill-list" class="divide-y divide-line"></div>
+                </div>
+                <div id="destination-helper" class="mt-3 hidden rounded-[18px] bg-blue-soft px-3 py-3 text-sm text-secondary">
+                  <p id="destination-helper-copy" class="leading-6"></p>
+                  <div id="destination-suggestions" class="mt-3 flex flex-wrap gap-2"></div>
+                </div>
+              </label>
+              <label class="rounded-2xl border border-line bg-surface px-4 py-3">
+                <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Start date</span>
+                <input id="start-date-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" type="date" value="2026-09-14" />
+              </label>
+              <label class="rounded-2xl border border-line bg-surface px-4 py-3">
+                <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">End date</span>
+                <input id="end-date-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" type="date" value="2026-09-20" />
+              </label>
+              <div class="build-inline-summary col-span-2">
+                <div class="build-inline-summary-copy">
+                  <p class="build-inline-label">Trip length</p>
+                  <p id="trip-length-summary" class="build-inline-value">7 days / 6 nights</p>
+                </div>
+                <button id="date-flexibility-toggle" class="build-quick-toggle" data-action="toggle-date-flexibility" type="button">
+                  Dates are flexible
+                </button>
+              </div>
+              <label class="rounded-2xl border border-line bg-surface px-4 py-3">
+                <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Adults 18+</span>
+                <input id="adults-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" type="number" min="1" value="2" />
+              </label>
+              <label class="rounded-2xl border border-line bg-surface px-4 py-3">
+                <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Children</span>
+                <input id="children-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" type="number" min="0" value="0" />
+              </label>
+              <div class="build-inline-summary col-span-2">
+                <div class="build-inline-summary-copy">
+                  <p class="build-inline-label">Travel party</p>
+                  <p id="traveler-summary" class="build-inline-value">2 adults, no children</p>
+                </div>
+                <span class="rounded-full bg-blue-soft px-3 py-2 text-xs font-semibold text-secondary">Used for pacing</span>
+              </div>
+              <label class="col-span-2 rounded-2xl border border-line bg-surface px-4 py-3">
+                <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Budget range</span>
+                <select id="budget-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0">
+                  <option>Budget</option>
+                  <option selected>Moderate</option>
+                  <option>Premium</option>
+                </select>
+                <p id="budget-helper" class="mt-3 text-sm leading-6 text-muted">
+                  Used to keep hotels, meals, and paid experiences in a realistic range.
+                </p>
+                <button id="budget-flexibility-toggle" class="build-quick-toggle mt-3" data-action="toggle-budget-flexibility" type="button">
+                  Budget has some wiggle room
+                </button>
+              </label>
+            </div>
+
+            <div id="build-logistics-section" class="build-section-title" data-edit-section tabindex="-1">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Logistics</p>
+                <h4 class="mt-1 font-display text-xl font-bold">Optional details you can skip</h4>
+                <p class="mt-2 max-w-[38rem] text-sm leading-6 text-muted">Flights and pets help the planner make better suggestions, but the defaults are fine if you do not know yet.</p>
+              </div>
+              <span class="rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">Skip if unknown</span>
+            </div>
+
+            <div class="build-trip-grid grid grid-cols-2">
+              <label class="col-span-2 rounded-2xl border border-line bg-surface px-4 py-3">
+                <div class="flex items-center justify-between gap-3">
+                  <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Any pets coming?</span>
+                  <span class="text-xs text-muted">Useful for stays</span>
+                </div>
+                <select id="pets-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0">
+                  <option selected>No pets</option>
+                  <option>Yes, bringing pets</option>
+                </select>
+              </label>
+
+              <div class="col-span-2 rounded-[24px] border border-line bg-surface px-4 py-4">
+                <div class="flex items-center justify-between gap-3">
+                  <div>
+                    <h4 class="font-display text-lg font-bold">Flights</h4>
+                    <p class="mt-1 text-sm text-muted">Tell us what you know now. You can change this later.</p>
+                  </div>
+                  <span class="rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">Travel details</span>
+                </div>
+
+                <label class="mt-4 block rounded-2xl border border-line bg-white px-4 py-3">
+                  <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Flight status</span>
+                  <select id="flight-mode-select" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0">
+                    <option value="need-help" selected>I need help finding flights</option>
+                    <option value="have-flights">I already have flights</option>
+                    <option value="not-needed">No flights needed</option>
+                  </select>
+                </label>
+
+                <div id="flight-help-fields" class="mt-3 space-y-3">
+                  <label class="block rounded-2xl border border-line bg-white px-4 py-3">
+                    <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Flight priority</span>
+                    <select id="flight-preference-select" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0">
+                      <option>Convenience first</option>
+                      <option selected>Balanced value</option>
+                      <option>Lowest reasonable price</option>
+                    </select>
+                  </label>
+                  <p class="text-sm leading-6 text-muted">Get flight ideas and booking links when you are ready.</p>
+                </div>
+
+                <div id="existing-flight-fields" class="mt-3 hidden grid grid-cols-2 gap-3">
+                  <label class="col-span-2 rounded-2xl border border-line bg-white px-4 py-3">
+                    <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Airline</span>
+                    <input id="flight-airline-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" type="text" value="" placeholder="Delta, United, Air France..." />
+                  </label>
+                  <label class="col-span-2 rounded-2xl border border-line bg-white px-4 py-3">
+                    <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Flight number</span>
+                    <input id="flight-number-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" type="text" value="" placeholder="DL 446 or AF 010" />
+                  </label>
+                  <label class="rounded-2xl border border-line bg-white px-4 py-3">
+                    <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Arrival time</span>
+                    <input id="arrival-flight-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" type="datetime-local" />
+                  </label>
+                  <label class="rounded-2xl border border-line bg-white px-4 py-3">
+                    <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Departure time</span>
+                    <input id="departure-flight-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" type="datetime-local" />
+                  </label>
+                </div>
               </div>
             </div>
+
+            <div class="build-algorithm-card">
+              <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+                <div>
+                  <p class="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Why this matters</p>
+                  <h4 class="mt-1 font-display text-lg font-bold">These details set the itinerary frame</h4>
+                </div>
+                <span class="rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">Automation ready</span>
+              </div>
+              <div class="build-algorithm-grid mt-4">
+                <div class="build-algorithm-item">
+                  <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Route shape</p>
+                  <p class="mt-2 text-sm leading-6 text-muted">Dates and travelers set the number of days, pacing, and practical group fit.</p>
+                </div>
+                <div class="build-algorithm-item">
+                  <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Spending fit</p>
+                  <p class="mt-2 text-sm leading-6 text-muted">Budget keeps hotels, meals, and paid experiences realistic from the start.</p>
+                </div>
+                <div class="build-algorithm-item">
+                  <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Personal polish</p>
+                  <p class="mt-2 text-sm leading-6 text-muted">Next, preferences tell the planner what kind of trip to build.</p>
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <div class="build-top-stack mt-5">
+            <div class="build-draft-strip">
+              <div class="build-draft-copy">
+                <span class="build-draft-icon material-symbols-outlined" aria-hidden="true">cloud_done</span>
+                <div>
+                  <p id="build-save-status-title" class="text-sm font-semibold text-ink">Start without pressure</p>
+                  <p id="build-save-status-copy" class="mt-1 text-sm leading-6 text-muted">Build the first draft now. When the plan starts to feel worth keeping, an account can save trips, edits, and restore points.</p>
+                </div>
+              </div>
+              <button id="build-save-account-btn" class="build-action-button rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" type="button">
+                <span class="material-symbols-outlined text-base" aria-hidden="true">person_add</span>
+                Save options
+              </button>
+            </div>
+
+            <div class="build-progress-panel">
+              <div class="build-progress-head">
+                <div>
+                  <p class="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Planning progress</p>
+                  <h4 class="mt-1 font-display text-lg font-bold">Ready for the next step</h4>
+                </div>
+                <span id="build-readiness-chip" class="rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">Basics ready</span>
+              </div>
+              <div id="build-progress-grid" class="build-progress-grid mt-4">
+                <div class="build-progress-item">
+                  <p class="build-progress-label">Trip frame</p>
+                  <p class="build-progress-value">Paris, France</p>
+                  <p class="build-progress-copy">Dates, travelers, and budget set the shape.</p>
+                </div>
+                <div class="build-progress-item">
+                  <p class="build-progress-label">Logistics</p>
+                  <p class="build-progress-value">Flight help</p>
+                  <p class="build-progress-copy">Optional details can be added now or later.</p>
+                </div>
+                <div class="build-progress-item">
+                  <p class="build-progress-label">Saved data</p>
+                  <p class="build-progress-value">Local profile</p>
+                  <p class="build-progress-copy">Drafts can be saved once the trip exists.</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="build-missing-info" class="build-missing-info"></div>
 
             <div id="build-guide-context" class="build-guide-context-card hidden px-4 py-4 sm:px-5">
               <div class="build-guide-context-body sm:flex-row sm:items-start sm:justify-between">
@@ -4088,51 +7311,16 @@
                 </div>
               </div>
             </div>
-          </div>
 
-          <form id="trip-form" class="build-trip-form space-y-5">
-            <div class="build-trip-grid grid grid-cols-2">
-              <label class="col-span-2 rounded-2xl border border-line bg-surface px-4 py-3">
-                <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Destination</span>
-                <input id="destination-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" type="text" value="Paris, France" />
-                <p class="keyboard-field-hint keyboard-field-hint--compact">Use arrow keys to browse suggestions, Enter to choose, and Esc to close.</p>
-                <div id="destination-autofill" class="mt-3 hidden overflow-hidden rounded-[18px] border border-line bg-white">
-                  <div id="destination-autofill-list" class="divide-y divide-line"></div>
-                </div>
-                <div id="destination-helper" class="mt-3 hidden rounded-[18px] bg-blue-soft px-3 py-3 text-sm text-secondary">
-                  <p id="destination-helper-copy" class="leading-6"></p>
-                  <div id="destination-suggestions" class="mt-3 flex flex-wrap gap-2"></div>
-                </div>
-              </label>
-              <label class="rounded-2xl border border-line bg-surface px-4 py-3">
-                <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Start date</span>
-                <input id="start-date-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" type="date" value="2026-09-14" />
-              </label>
-              <label class="rounded-2xl border border-line bg-surface px-4 py-3">
-                <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">End date</span>
-                <input id="end-date-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" type="date" value="2026-09-20" />
-              </label>
-              <label class="rounded-2xl border border-line bg-surface px-4 py-3">
-                <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Adults 18+</span>
-                <input id="adults-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" type="number" min="1" value="2" />
-              </label>
-              <label class="rounded-2xl border border-line bg-surface px-4 py-3">
-                <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Children</span>
-                <input id="children-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" type="number" min="0" value="0" />
-              </label>
-              <label class="rounded-2xl border border-line bg-surface px-4 py-3">
-                <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Budget tier</span>
-                <select id="budget-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0">
-                  <option>Budget</option>
-                  <option selected>Moderate</option>
-                  <option>Premium</option>
-                </select>
-                <p id="budget-helper" class="mt-3 text-sm leading-6 text-muted">
-                  Solid hotel options, a few nicer meals, and room for one standout moment.
-                </p>
-              </label>
+            <div class="destination-hero">
+              <img id="build-hero-image" alt="Destination preview" src="" />
+              <div class="destination-hero-copy">
+                <p class="hero-kicker">Destination preview</p>
+                <h4 id="build-hero-title" class="hero-title"></h4>
+                <p id="build-hero-copy" class="hero-summary"></p>
+              </div>
             </div>
-          </form>
+          </div>
         </div>
       </section>
 
@@ -4179,7 +7367,7 @@
               <div>
                 <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Privacy</p>
                 <p class="mt-2 font-display text-lg font-bold">Your planning preferences stay in service of your trip</p>
-                <p class="mt-2 text-sm leading-6 text-muted">We use your trip profile to shape recommendations, saved versions, and future planning help. Users can still explore before deciding to create an account.</p>
+                <p class="mt-2 text-sm leading-6 text-muted">Your trip profile helps shape recommendations, saved versions, and future planning. You can still explore before deciding to create an account.</p>
               </div>
               <button id="account-panel-skip-button" class="rounded-full bg-surface-soft px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" type="button">
                 Continue for now
@@ -4193,9 +7381,10 @@
         <div class="rounded-[28px] border border-line bg-surface-card p-5 shadow-card">
           <div class="flex items-start justify-between gap-3">
             <div>
-              <h3 class="font-display text-2xl font-bold">Trip details</h3>
+              <p class="text-xs font-semibold uppercase tracking-[0.24em] text-primary">Step 2 of 4</p>
+              <h3 class="mt-1 font-display text-2xl font-bold">Preferences</h3>
               <p class="mt-2 text-sm leading-6 text-muted">
-                Add the details that shape the itinerary.
+                Now choose the signals that change the trip most: style, pace, must-haves, and hard rules.
               </p>
             </div>
             <span id="mode-badge" class="rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">Simple mode</span>
@@ -4207,40 +7396,25 @@
           </div>
 
           <div class="mt-4 rounded-[22px] border border-line bg-surface-soft px-4 py-4">
-            <p id="mode-explainer-title" class="font-display text-lg font-bold">Simple keeps this quick.</p>
-            <p id="mode-explainer-copy" class="mt-2 text-sm leading-6 text-muted">Stick to the core questions and let the app do more from there.</p>
+            <p id="mode-explainer-title" class="font-display text-lg font-bold">Simple asks only what matters most.</p>
+            <p id="mode-explainer-copy" class="mt-2 text-sm leading-6 text-muted">Answer the core choices and let the planner fill in the rest.</p>
           </div>
 
           <div class="mt-4 grid gap-3 sm:grid-cols-2">
             <div class="rounded-[22px] border border-line bg-white px-4 py-4">
-              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Core questions first</p>
-              <h4 class="mt-2 font-display text-lg font-bold">What we always need</h4>
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Core signals</p>
+              <h4 class="mt-2 font-display text-lg font-bold">Four choices shape the draft</h4>
               <div class="mt-3 flex flex-wrap gap-2">
-                <span class="rounded-full bg-surface-soft px-3 py-2 text-xs font-semibold text-secondary ring-1 ring-line">Destination</span>
-                <span class="rounded-full bg-surface-soft px-3 py-2 text-xs font-semibold text-secondary ring-1 ring-line">Dates</span>
-                <span class="rounded-full bg-surface-soft px-3 py-2 text-xs font-semibold text-secondary ring-1 ring-line">Adults + children</span>
-                <span class="rounded-full bg-surface-soft px-3 py-2 text-xs font-semibold text-secondary ring-1 ring-line">Budget tier</span>
                 <span class="rounded-full bg-surface-soft px-3 py-2 text-xs font-semibold text-secondary ring-1 ring-line">Style</span>
                 <span class="rounded-full bg-surface-soft px-3 py-2 text-xs font-semibold text-secondary ring-1 ring-line">Pace</span>
+                <span class="rounded-full bg-surface-soft px-3 py-2 text-xs font-semibold text-secondary ring-1 ring-line">Must-haves</span>
+                <span class="rounded-full bg-surface-soft px-3 py-2 text-xs font-semibold text-secondary ring-1 ring-line">Non-negotiables</span>
               </div>
             </div>
             <div class="rounded-[22px] border border-line bg-white px-4 py-4">
-              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">How the app uses this</p>
-              <h4 class="mt-2 font-display text-lg font-bold">Fewer questions when possible</h4>
-              <p class="mt-2 text-sm leading-6 text-muted">Simple mode is designed to generate quickly. Detailed mode only opens up when users want more control over memory, food, spontaneity, and spending priorities.</p>
-            </div>
-          </div>
-
-          <div class="mt-4 rounded-[22px] border border-line bg-white px-4 py-4">
-            <div class="flex items-start justify-between gap-3">
-              <div>
-                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Guides</p>
-                <p class="mt-1 text-sm leading-6 text-muted">Find guides in `Explore` and `Your Trip`.</p>
-              </div>
-              <div class="flex flex-col gap-2">
-                <button class="rounded-full bg-surface-soft px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="open-explore-guides" type="button">Open Explore</button>
-                <button class="rounded-full bg-surface-soft px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="open-trip-guides" type="button">Open Your Trip</button>
-              </div>
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">More control</p>
+              <h4 class="mt-2 font-display text-lg font-bold">Detailed mode stays available</h4>
+              <p class="mt-2 text-sm leading-6 text-muted">Use it when restaurants, free time, top sights, or hidden gems should strongly shape the plan.</p>
             </div>
           </div>
 
@@ -4248,80 +7422,49 @@
             <div class="flex items-start gap-3">
               <span class="material-symbols-outlined text-primary">rule</span>
               <div>
-                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Preferences and non-negotiables</p>
-                <p class="mt-2 text-sm leading-6 text-muted">Users may want both. Preferences guide the shape of the trip. Non-negotiables are the things the trip must respect, like accessibility needs, hard budget limits, or firm avoid preferences.</p>
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Preference vs. rule</p>
+                <p class="mt-2 text-sm leading-6 text-muted">Preferences guide the shape of the trip. Non-negotiables are rules the plan must respect, like accessibility needs, dietary limits, firm budgets, or avoid lists.</p>
               </div>
             </div>
           </div>
 
-          <div class="mt-5 space-y-5">
-            <label class="block rounded-2xl border border-line bg-surface px-4 py-3">
-              <div class="flex items-center justify-between gap-3">
-                <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Any pets coming?</span>
-                <span class="text-xs text-muted">Helpful for lodging filters</span>
+          <div id="preference-snapshot" class="preference-snapshot mt-4 rounded-[24px] px-4 py-4" aria-live="polite">
+            <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Planner snapshot</p>
+                <h4 class="mt-1 font-display text-lg font-bold">What we are shaping the trip around</h4>
               </div>
-              <select id="pets-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0">
-                <option selected>No pets</option>
-                <option>Yes, bringing pets</option>
-              </select>
-            </label>
-
-            <div class="rounded-[24px] border border-line bg-surface px-4 py-4">
-              <div class="flex items-center justify-between gap-3">
-                <div>
-                  <h4 class="font-display text-lg font-bold">Flights</h4>
-                  <p class="mt-1 text-sm text-muted">Add flights or get help finding them.</p>
-                </div>
-                <span class="rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">Travel details</span>
+              <span id="preference-mode-mini" class="self-start rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">Simple mode</span>
+            </div>
+            <div class="preference-snapshot-grid mt-3">
+              <div class="preference-snapshot-item rounded-[18px]">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Trip style</p>
+                <p id="preference-style-summary" class="mt-2 text-sm font-semibold leading-6 text-ink">Relaxing + Foodie</p>
               </div>
-
-              <label class="mt-4 block rounded-2xl border border-line bg-white px-4 py-3">
-                <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Flight status</span>
-                <select id="flight-mode-select" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0">
-                  <option value="need-help" selected>I need help finding flights</option>
-                  <option value="have-flights">I already have flights</option>
-                  <option value="not-needed">No flights needed</option>
-                </select>
-              </label>
-
-              <div id="flight-help-fields" class="mt-3 space-y-3">
-                <label class="block rounded-2xl border border-line bg-white px-4 py-3">
-                  <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Flight priority</span>
-                  <select id="flight-preference-select" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0">
-                    <option>Convenience first</option>
-                    <option selected>Balanced value</option>
-                    <option>Lowest reasonable price</option>
-                  </select>
-                </label>
-                <p class="text-sm leading-6 text-muted">We can recommend options and link out to book.</p>
+              <div class="preference-snapshot-item rounded-[18px]">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Daily pace</p>
+                <p id="preference-pace-summary" class="mt-2 text-sm font-semibold leading-6 text-ink">Balanced pace</p>
               </div>
-
-              <div id="existing-flight-fields" class="mt-3 hidden grid grid-cols-2 gap-3">
-                <label class="col-span-2 rounded-2xl border border-line bg-white px-4 py-3">
-                  <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Airline</span>
-                  <input id="flight-airline-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" type="text" value="" placeholder="Delta, United, Air France..." />
-                </label>
-                <label class="col-span-2 rounded-2xl border border-line bg-white px-4 py-3">
-                  <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Flight number</span>
-                  <input id="flight-number-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" type="text" value="" placeholder="DL 446 or AF 010" />
-                </label>
-                <label class="rounded-2xl border border-line bg-white px-4 py-3">
-                  <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Arrival time</span>
-                  <input id="arrival-flight-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" type="datetime-local" />
-                </label>
-                <label class="rounded-2xl border border-line bg-white px-4 py-3">
-                  <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Departure time</span>
-                  <input id="departure-flight-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" type="datetime-local" />
-                </label>
+              <div class="preference-snapshot-item rounded-[18px]">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Must-haves</p>
+                <p id="preference-must-summary" class="mt-2 text-sm font-semibold leading-6 text-ink">One memorable dinner, the Eiffel Tower, and a slower final day.</p>
+              </div>
+              <div class="preference-snapshot-item rounded-[18px]">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Hard rules</p>
+                <p id="preference-rule-summary" class="mt-2 text-sm font-semibold leading-6 text-ink">No hard rules yet.</p>
               </div>
             </div>
+          </div>
 
-            <div>
+          <div id="guide-preference-suggestions" class="guide-preference-suggestions hidden mt-4 rounded-[24px] px-4 py-4" aria-live="polite"></div>
+
+          <div class="mt-5 space-y-5">
+            <div id="preference-style-section" data-edit-section tabindex="-1">
               <div class="flex items-center justify-between">
-                <h4 class="font-display text-lg font-bold">Vacation style</h4>
+                <h4 class="font-display text-lg font-bold">Trip style</h4>
                 <span class="text-xs font-semibold uppercase tracking-[0.18em] text-muted">Choose up to 3</span>
               </div>
-              <p class="mt-2 text-sm text-muted">Style and pace shape the trip most.</p>
+              <p class="mt-2 text-sm text-muted">Pick the feel you want the itinerary to protect.</p>
               <div class="mt-3 flex flex-wrap gap-2">
                 <button class="chip-button rounded-full border border-line bg-white px-4 py-2 text-sm font-semibold text-ink is-active" data-group="styles" data-value="Relaxing" type="button">Relaxing</button>
                 <button class="chip-button rounded-full border border-line bg-white px-4 py-2 text-sm font-semibold text-ink" data-group="styles" data-value="Historical" type="button">Historical</button>
@@ -4329,11 +7472,12 @@
                 <button class="chip-button rounded-full border border-line bg-white px-4 py-2 text-sm font-semibold text-ink" data-group="styles" data-value="Adventurous" type="button">Adventurous</button>
                 <button class="chip-button rounded-full border border-line bg-white px-4 py-2 text-sm font-semibold text-ink" data-group="styles" data-value="Unique" type="button">Unique</button>
               </div>
+              <p id="style-count-helper" class="preference-helper-note mt-2">2 of 3 selected.</p>
             </div>
 
-            <div>
+            <div id="preference-pace-section" data-edit-section tabindex="-1">
               <div class="flex items-center justify-between">
-                <h4 class="font-display text-lg font-bold">Pace</h4>
+                <h4 class="font-display text-lg font-bold">Daily pace</h4>
                 <span class="text-xs font-semibold uppercase tracking-[0.18em] text-muted">Core question</span>
               </div>
               <div class="mt-3 grid grid-cols-3 gap-2">
@@ -4341,55 +7485,92 @@
                 <button class="choice-button is-active rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="pace" data-value="Balanced" type="button">Balanced</button>
                 <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="pace" data-value="Packed" type="button">Packed</button>
               </div>
+              <p id="pace-helper" class="preference-helper-note mt-3">Balanced keeps the trip full without making every day feel packed.</p>
             </div>
 
-            <div>
+            <div id="must-haves-section" data-edit-section tabindex="-1">
               <div class="flex items-center justify-between">
-                <h4 class="font-display text-lg font-bold">Must haves</h4>
+                <h4 class="font-display text-lg font-bold">Must-haves</h4>
                 <span class="rounded-full bg-teal-soft px-3 py-1 text-xs font-semibold text-tertiary">Optional</span>
               </div>
+              <p class="mt-2 text-sm leading-6 text-muted">Add moments the planner should try hard to include.</p>
               <textarea id="must-haves-input" class="mt-3 min-h-[92px] w-full rounded-2xl border border-line bg-surface px-4 py-3 text-sm text-ink focus:border-secondary focus:ring-secondary" placeholder="Examples: Eiffel Tower, one memorable dinner, slower final day, bakery stop near hotel.">One memorable dinner, the Eiffel Tower, and a slower final day.</textarea>
+              <div class="preference-suggestion-row mt-3" aria-label="Must-have ideas">
+                <button class="preference-suggestion-chip" data-action="append-preference-text" data-target="must-haves-input" data-text="one memorable dinner" type="button">Memorable dinner</button>
+                <button class="preference-suggestion-chip" data-action="append-preference-text" data-target="must-haves-input" data-text="a slower final day" type="button">Slower final day</button>
+                <button class="preference-suggestion-chip" data-action="append-preference-text" data-target="must-haves-input" data-text="time at the beach" type="button">Beach time</button>
+                <button class="preference-suggestion-chip" data-action="append-preference-text" data-target="must-haves-input" data-text="a great viewpoint" type="button">Great viewpoint</button>
+                <button class="preference-suggestion-chip" data-action="append-preference-text" data-target="must-haves-input" data-text="a food market" type="button">Food market</button>
+              </div>
+            </div>
+
+            <div id="non-negotiables-section" data-edit-section tabindex="-1">
+              <div class="flex items-center justify-between">
+                <h4 class="font-display text-lg font-bold">Non-negotiables</h4>
+                <span class="rounded-full bg-warm px-3 py-1 text-xs font-semibold text-primary ring-1 ring-warm-line">Hard rules</span>
+              </div>
+              <p class="mt-2 text-sm leading-6 text-muted">Add rules the planner should not break.</p>
+              <textarea id="non-negotiables-input" class="mt-3 min-h-[92px] w-full rounded-2xl border border-line bg-surface px-4 py-3 text-sm text-ink focus:border-secondary focus:ring-secondary" placeholder="Examples: wheelchair access, no shellfish, avoid red-eye flights, hard daily budget, no long walks."></textarea>
+              <div class="preference-suggestion-row mt-3" aria-label="Non-negotiable ideas">
+                <button class="preference-suggestion-chip" data-action="append-preference-text" data-target="non-negotiables-input" data-text="no long walks" type="button">No long walks</button>
+                <button class="preference-suggestion-chip" data-action="append-preference-text" data-target="non-negotiables-input" data-text="wheelchair access" type="button">Wheelchair access</button>
+                <button class="preference-suggestion-chip" data-action="append-preference-text" data-target="non-negotiables-input" data-text="no shellfish" type="button">No shellfish</button>
+                <button class="preference-suggestion-chip" data-action="append-preference-text" data-target="non-negotiables-input" data-text="avoid red-eye flights" type="button">Avoid red-eye flights</button>
+                <button class="preference-suggestion-chip" data-action="append-preference-text" data-target="non-negotiables-input" data-text="hard daily budget" type="button">Hard daily budget</button>
+              </div>
             </div>
 
             <div id="detailed-fields" class="hidden space-y-5 rounded-[24px] border border-line bg-surface-soft px-4 py-4">
               <div class="rounded-[20px] bg-white px-4 py-4 ring-1 ring-line">
-                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-secondary">Detailed mode extras</p>
-                <p class="mt-2 text-sm leading-6 text-muted">Fine-tune the feel, food, memory, and spontaneity.</p>
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-secondary">More specific choices</p>
+                <p class="mt-2 text-sm leading-6 text-muted">Use these only when they should noticeably change the trip.</p>
               </div>
               <div>
-                <h4 class="font-display text-lg font-bold">Trip feel</h4>
+                <h4 class="font-display text-lg font-bold">What should we prioritize?</h4>
                 <div class="mt-3 grid grid-cols-3 gap-2">
-                  <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink is-active" data-group="depth" data-value="Classics" type="button">Classics</button>
-                  <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="depth" data-value="Balanced" type="button">Balanced</button>
-                  <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="depth" data-value="Deeper cut" type="button">Deeper cut</button>
+                  <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink is-active" data-group="depth" data-value="Top sights" type="button">Top sights</button>
+                  <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="depth" data-value="Mix of both" type="button">Mix of both</button>
+                  <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="depth" data-value="Hidden gems" type="button">Hidden gems</button>
                 </div>
               </div>
 
               <div>
-                <h4 class="font-display text-lg font-bold">Food importance</h4>
+                <h4 class="font-display text-lg font-bold">Food plans</h4>
                 <div class="mt-3 grid grid-cols-3 gap-2">
-                  <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="foodImportance" data-value="Supporting detail" type="button">Support</button>
-                  <button class="choice-button is-active rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="foodImportance" data-value="Meaningful part" type="button">Meaningful</button>
-                  <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="foodImportance" data-value="Major highlight" type="button">Highlight</button>
+                  <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="foodImportance" data-value="Keep it easy" type="button">Keep it easy</button>
+                  <button class="choice-button is-active rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="foodImportance" data-value="Good local spots" type="button">Good local spots</button>
+                  <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="foodImportance" data-value="Food is a focus" type="button">Food is a focus</button>
                 </div>
               </div>
 
               <div>
-                <h4 class="font-display text-lg font-bold">Desired memory</h4>
+                <h4 class="font-display text-lg font-bold">Trip vibe</h4>
+                <p class="mt-2 text-sm leading-6 text-muted">Choose the overall feel someone would search for when planning this trip.</p>
                 <div class="mt-3 grid grid-cols-2 gap-2">
-                  <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="memory" data-value="Family memory" type="button">Family</button>
-                  <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="memory" data-value="Romantic memory" type="button">Romance</button>
-                  <button class="choice-button is-active rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="memory" data-value="Iconic first-time moment" type="button">Iconic</button>
-                  <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="memory" data-value="Food memory" type="button">Food</button>
+                  <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="memory" data-value="Family-friendly" type="button">Family-friendly</button>
+                  <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="memory" data-value="Romantic" type="button">Romantic</button>
+                  <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="memory" data-value="Relaxing" type="button">Relaxing</button>
+                  <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="memory" data-value="Adventurous" type="button">Adventurous</button>
+                  <button class="choice-button is-active rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="memory" data-value="First-time highlights" type="button">First-time highlights</button>
+                  <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="memory" data-value="Food-focused" type="button">Food-focused</button>
                 </div>
               </div>
 
               <div>
-                <h4 class="font-display text-lg font-bold">Spontaneity</h4>
+                <h4 class="font-display text-lg font-bold">Free time</h4>
                 <div class="mt-3 grid grid-cols-3 gap-2">
-                  <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="spontaneity" data-value="Mostly planned" type="button">Planned</button>
-                  <button class="choice-button is-active rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="spontaneity" data-value="Balanced" type="button">Balanced</button>
-                  <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="spontaneity" data-value="Go-with-the-flow" type="button">Flow</button>
+                  <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="spontaneity" data-value="Plan most things" type="button">Plan most things</button>
+                  <button class="choice-button is-active rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="spontaneity" data-value="Some free time" type="button">Some free time</button>
+                  <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="spontaneity" data-value="Go with the flow" type="button">Go with the flow</button>
+                </div>
+              </div>
+
+              <div class="rounded-[20px] bg-white px-4 py-4 ring-1 ring-line">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-secondary">Examples</p>
+                <div class="mt-3 grid gap-3 sm:grid-cols-3">
+                  <p class="text-sm leading-6 text-muted"><span class="font-semibold text-ink">Relaxing</span> keeps mornings lighter and leaves room for slower meals.</p>
+                  <p class="text-sm leading-6 text-muted"><span class="font-semibold text-ink">Adventurous</span> adds more movement, viewpoints, markets, or day-trip energy.</p>
+                  <p class="text-sm leading-6 text-muted"><span class="font-semibold text-ink">Food-focused</span> protects better restaurant timing instead of treating meals as filler.</p>
                 </div>
               </div>
             </div>
@@ -4398,9 +7579,9 @@
               <div class="flex items-start gap-3">
                 <span class="material-symbols-outlined text-primary">auto_awesome</span>
                 <div>
-                  <h4 class="font-display text-lg font-bold">Feeling indecisive?</h4>
+                  <h4 class="font-display text-lg font-bold">Not sure yet?</h4>
                   <p class="mt-1 text-sm leading-6 text-muted">
-                    Tell us the big pieces and we’ll simplify the rest.
+                    Keep the defaults. You can review the blueprint and edit anything that feels off.
                   </p>
                 </div>
               </div>
@@ -4411,8 +7592,8 @@
         <div class="mt-6 rounded-[28px] border border-line bg-white p-5 shadow-card">
           <div class="flex items-start justify-between gap-3">
             <div>
-              <p class="text-xs font-semibold uppercase tracking-[0.24em] text-primary">Sample itinerary</p>
-              <h3 class="mt-1 font-display text-xl font-bold">Relaxed first-time Paris visit</h3>
+              <p class="text-xs font-semibold uppercase tracking-[0.24em] text-primary">Example output</p>
+              <h3 class="mt-1 font-display text-xl font-bold">What these choices can produce</h3>
               <p class="mt-2 text-sm text-muted">Example only.</p>
             </div>
             <span class="rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">Preview</span>
@@ -4430,7 +7611,7 @@
             </div>
           </div>
           <p class="mt-4 text-sm leading-6 text-muted">
-            Trip's Summary: easy first day, area-based planning, and room for the bigger Paris moments to still feel special.
+            This is the goal: a trip that protects the big moments without making every day feel overloaded.
           </p>
         </div>
       </section>
@@ -4439,31 +7620,13 @@
         <div class="rounded-[28px] border border-line bg-surface-card p-5 shadow-card">
           <div class="flex items-start justify-between gap-3">
             <div>
-              <p class="text-xs font-semibold uppercase tracking-[0.24em] text-primary">Before we build</p>
-              <h3 class="mt-1 font-display text-2xl font-bold">Your trip blueprint</h3>
+              <p class="text-xs font-semibold uppercase tracking-[0.24em] text-primary">Step 3 of 4</p>
+              <h3 class="mt-1 font-display text-2xl font-bold">Review your trip blueprint</h3>
               <p class="mt-2 text-sm leading-6 text-muted">
-                Just the biggest trip-shaping choices.
+                Confirm the details the planner will use before it builds your day-by-day itinerary.
               </p>
             </div>
-            <span class="rounded-full bg-warm px-3 py-1 text-xs font-semibold text-primary">Final check</span>
-          </div>
-
-          <div class="mt-5 grid gap-3 sm:grid-cols-3">
-            <div class="rounded-[22px] border border-line bg-white px-4 py-4">
-              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Trip shape</p>
-              <p class="mt-2 font-display text-lg font-bold">The core direction</p>
-              <p class="mt-2 text-sm leading-6 text-muted">This is where the trip gets its tone, pace, and strongest travel signals before the actual draft is built.</p>
-            </div>
-            <div class="rounded-[22px] border border-line bg-white px-4 py-4">
-              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Still adjustable</p>
-              <p class="mt-2 font-display text-lg font-bold">Not locked forever</p>
-              <p class="mt-2 text-sm leading-6 text-muted">Users can still change stops, reorder days, compare saved arrangements, and edit logistics afterward.</p>
-            </div>
-            <div class="rounded-[22px] border border-line bg-white px-4 py-4">
-              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">What matters most</p>
-              <p class="mt-2 font-display text-lg font-bold">Personal fit over noise</p>
-              <p class="mt-2 text-sm leading-6 text-muted">The goal is not to cram everything in. It is to build a version of the trip that feels right to live.</p>
-            </div>
+            <span class="rounded-full bg-warm px-3 py-1 text-xs font-semibold text-primary">Review</span>
           </div>
 
           <div class="mt-5 rounded-[24px] bg-surface-soft px-4 py-4">
@@ -4471,7 +7634,9 @@
             <p id="blueprint-reasoning" class="mt-2 text-sm leading-6 text-muted"></p>
           </div>
 
-          <div id="blueprint-grid" class="mt-5 grid grid-cols-2 gap-3"></div>
+          <div id="blueprint-final-review" class="blueprint-final-review mt-5"></div>
+
+          <div id="blueprint-grid" class="blueprint-review-grid mt-5"></div>
 
           <div class="mt-5 rounded-[24px] border border-line bg-white px-4 py-4">
             <div class="flex items-start justify-between gap-3">
@@ -4485,24 +7650,13 @@
             <div id="blueprint-top-places" class="mt-4 grid gap-3"></div>
           </div>
 
-          <div class="mt-5 grid gap-3">
-            <div class="rounded-[22px] bg-blue-soft px-4 py-4">
-              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-secondary">Preferences</p>
-              <p id="blueprint-preferences" class="mt-2 text-sm leading-6 text-ink"></p>
-            </div>
-            <div class="rounded-[22px] bg-warm px-4 py-4">
-              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Non-negotiables</p>
-              <p id="blueprint-rules" class="mt-2 text-sm leading-6 text-ink"></p>
-            </div>
-          </div>
-
           <div class="mt-5 rounded-[24px] border border-line bg-white px-4 py-4">
             <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
               <div>
                 <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Ready for the draft?</p>
-                <p class="mt-2 text-sm leading-6 text-muted">This is the handoff point. Once this looks right, the app can turn it into a day-by-day trip with timing, places, and map context.</p>
+                <p class="mt-2 text-sm leading-6 text-muted">This is the handoff point. Use the bottom button to build the day-by-day draft once the review looks right.</p>
               </div>
-              <button class="rounded-full bg-surface-soft px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-menu-action="my-trip" type="button">Open Your Trip</button>
+              <button class="rounded-full bg-surface-soft px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="edit-blueprint-item" data-target-panel="details-panel" data-focus-target="preference-style-section" type="button">Adjust preferences</button>
             </div>
           </div>
         </div>
@@ -4525,11 +7679,11 @@
           <div class="mt-6 grid gap-3 sm:grid-cols-3">
             <div class="rounded-[20px] border border-white/12 bg-white/8 px-4 py-4">
               <p class="text-xs font-semibold uppercase tracking-[0.14em] text-[#9fd7ff]">Reading the inputs</p>
-              <p class="mt-2 text-sm leading-6 text-white/78">We are weighing destination, dates, pace, budget, and the memory this trip should leave behind.</p>
+              <p class="mt-2 text-sm leading-6 text-white/78">We are weighing your destination, dates, pace, budget, and the memory this trip should leave behind.</p>
             </div>
             <div class="rounded-[20px] border border-white/12 bg-white/8 px-4 py-4">
               <p class="text-xs font-semibold uppercase tracking-[0.14em] text-[#9fd7ff]">Shaping the flow</p>
-              <p class="mt-2 text-sm leading-6 text-white/78">The app is balancing practical timing with standout moments so the trip feels smooth, not overloaded.</p>
+              <p class="mt-2 text-sm leading-6 text-white/78">We are balancing practical timing with standout moments so the trip feels smooth, not overloaded.</p>
             </div>
             <div class="rounded-[20px] border border-white/12 bg-white/8 px-4 py-4">
               <p class="text-xs font-semibold uppercase tracking-[0.14em] text-[#9fd7ff]">Keeping it usable</p>
@@ -4574,6 +7728,8 @@
               <p id="trip-reasoning" class="mt-2 text-sm text-muted"></p>
               <div id="trip-guide-source" class="mt-3 hidden flex flex-wrap gap-2"></div>
               <div id="trip-view-source" class="mt-3 hidden"></div>
+              <div id="trip-draft-status" class="mt-3"></div>
+              <div id="trip-change-summary" class="mt-3"></div>
             </div>
             <button class="trip-top-edit rounded-full bg-surface-soft p-3 text-secondary">
               <span class="material-symbols-outlined">edit</span>
@@ -4588,6 +7744,12 @@
               <span class="material-symbols-outlined" aria-hidden="true">add</span>
             </button>
           </div>
+
+          <div id="trip-next-actions" class="trip-next-actions mt-4"></div>
+          <div id="trip-readiness-panel" class="trip-readiness-panel mt-4"></div>
+          <div id="trip-handoff-panel" class="trip-handoff-panel mt-4"></div>
+
+          <div id="trip-day-overview" class="trip-day-overview mt-4"></div>
 
           <div class="destination-hero is-compact mt-5">
             <img id="trip-hero-image" alt="Trip destination hero" src="" />
@@ -4660,6 +7822,7 @@
             </div>
             <div data-trip-section-body>
               <div id="trip-guide-grid" class="mt-4 grid gap-3"></div>
+              <div id="trip-guide-depth" class="destination-depth-panel mt-4"></div>
             </div>
           </div>
 
@@ -4687,7 +7850,7 @@
             </div>
           </div>
 
-          <div class="trip-versions-panel trip-collapsible-panel mt-4 rounded-[24px] border border-line bg-white px-4 py-4 shadow-card" data-trip-section="versions">
+          <div id="trip-versions-panel" class="trip-versions-panel trip-collapsible-panel mt-4 rounded-[24px] border border-line bg-white px-4 py-4 shadow-card" data-trip-section="versions">
             <div class="trip-versions-head trip-collapsible-head">
               <div class="trip-versions-head-copy">
                 <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Alternate versions</p>
@@ -4726,7 +7889,7 @@
 
           <div id="trip-days" class="mt-4 space-y-4"></div>
 
-          <div class="trip-collapsible-panel mt-6 rounded-[24px] border border-line bg-surface-soft px-4 py-4" data-trip-section="logistics">
+          <div id="trip-logistics-section" class="trip-collapsible-panel mt-6 rounded-[24px] border border-line bg-surface-soft px-4 py-4" data-trip-section="logistics">
             <div class="trip-support-head trip-collapsible-head">
               <div class="trip-support-head-copy">
                 <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Trip details</p>
@@ -4780,7 +7943,7 @@
             </div>
           </div>
 
-          <div class="trip-support-card trip-collapsible-panel mt-6" data-trip-section="flights">
+          <div id="trip-flights-section" class="trip-support-card trip-collapsible-panel mt-6" data-trip-section="flights">
             <div class="trip-support-card-shell">
               <span class="trip-support-icon material-symbols-outlined">flight</span>
               <div class="trip-support-body">
@@ -4809,7 +7972,7 @@
             </div>
           </div>
 
-          <div class="trip-support-card trip-collapsible-panel mt-6" data-trip-section="stay">
+          <div id="trip-stay-section" class="trip-support-card trip-collapsible-panel mt-6" data-trip-section="stay">
             <div class="trip-support-card-shell">
               <span class="trip-support-icon material-symbols-outlined">bed</span>
               <div class="trip-support-body">
@@ -4841,6 +8004,8 @@
               </div>
             </div>
           </div>
+
+          <div id="trip-booking-hub" class="booking-hub trip-collapsible-panel mt-6 rounded-[24px] border border-line bg-white px-4 py-4 shadow-card" data-trip-section="booking"></div>
 
           <div class="trip-collapsible-panel mt-6 rounded-[24px] border border-line bg-white px-4 py-4 shadow-card" data-trip-section="journal">
             <div class="trip-support-head trip-collapsible-head">
@@ -4900,7 +8065,7 @@
               <p class="text-xs font-semibold uppercase tracking-[0.24em] text-primary">Saved trips</p>
               <h3 class="mt-1 font-display text-2xl font-bold">Come back to what worked</h3>
               <p class="mt-2 text-sm leading-6 text-muted">
-                Saved trips should feel calm and useful. This is where users keep restore points, revisit liked versions, and leave light feedback after travel.
+                Saved trips should feel calm and useful. Keep restore points, revisit liked versions, and leave light feedback after travel.
               </p>
             </div>
             <span class="rounded-full bg-teal-soft px-3 py-1 text-xs font-semibold text-tertiary">Future memory</span>
@@ -4939,7 +8104,7 @@
             <div>
               <p class="text-xs font-semibold uppercase tracking-[0.24em] text-primary">FAQ</p>
               <h3 class="mt-1 font-display text-2xl font-bold">Common questions</h3>
-              <p class="mt-2 text-sm leading-6 text-muted">A quick place to understand how the app plans, what it asks for, and how much control users still keep.</p>
+              <p class="mt-2 text-sm leading-6 text-muted">A quick place to understand how planning works, what you will be asked for, and how much control you keep.</p>
             </div>
             <span class="rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">Help</span>
           </div>
@@ -4948,7 +8113,7 @@
             <div class="rounded-[22px] border border-line bg-white px-4 py-4">
               <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Planning</p>
               <p class="mt-2 font-display text-lg font-bold">Build first, adjust anytime</p>
-              <p class="mt-2 text-sm leading-6 text-muted">The app builds the first draft quickly, then users can still swap, remove, reorder, and save alternate arrangements.</p>
+              <p class="mt-2 text-sm leading-6 text-muted">The first draft builds quickly, then you can still swap, remove, reorder, and save alternate arrangements.</p>
             </div>
             <div class="rounded-[22px] border border-line bg-white px-4 py-4">
               <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Control</p>
@@ -4977,15 +8142,19 @@
             </div>
             <div class="rounded-[22px] border border-line bg-white px-4 py-4">
               <p class="font-semibold text-ink">Will the app ever push too hard against what I want?</p>
-              <p class="mt-2 text-sm leading-6 text-muted">No. The app can gently point out trade-offs or suggest a better-fit alternative, but the final choice still belongs to the user.</p>
+              <p class="mt-2 text-sm leading-6 text-muted">No. The planner can gently point out trade-offs or suggest a better-fit alternative, but the final choice still belongs to you.</p>
             </div>
             <div class="rounded-[22px] border border-line bg-white px-4 py-4">
               <p class="font-semibold text-ink">Where do the guides live?</p>
-              <p class="mt-2 text-sm leading-6 text-muted">City and country inspiration live in Explore. Trip-specific guide context appears again inside Your Trip when it helps users understand the plan.</p>
+              <p class="mt-2 text-sm leading-6 text-muted">City and country inspiration live in Explore. Trip-specific guide context appears again inside Your Trip when it helps explain the plan.</p>
             </div>
             <div class="rounded-[22px] border border-line bg-white px-4 py-4">
               <p class="font-semibold text-ink">Do I need to book through the app?</p>
-              <p class="mt-2 text-sm leading-6 text-muted">No. In version 1, the app can recommend flights and where to stay, then link users out to book when they are ready.</p>
+              <p class="mt-2 text-sm leading-6 text-muted">No. The planner can recommend flights and where to stay, then link out to book when you are ready.</p>
+            </div>
+            <div class="rounded-[22px] border border-line bg-white px-4 py-4">
+              <p class="font-semibold text-ink">Where is my beta trip data saved?</p>
+              <p class="mt-2 text-sm leading-6 text-muted">During beta, saved trips, profile fields, booking notes, and backups stay local to this browser. There is no online account sync yet, so export a backup before switching devices or clearing browser data.</p>
             </div>
           </div>
 
@@ -5003,7 +8172,7 @@
             <div>
               <p class="text-xs font-semibold uppercase tracking-[0.24em] text-primary">Contact</p>
               <h3 class="mt-1 font-display text-2xl font-bold">Get in touch</h3>
-              <p class="mt-2 text-sm leading-6 text-muted">A clearer support page for trip help, product feedback, partnerships, and anything else a user needs before or after planning.</p>
+              <p class="mt-2 text-sm leading-6 text-muted">Get trip help, share feedback, or find the right place for partnership questions.</p>
             </div>
             <span class="rounded-full bg-teal-soft px-3 py-1 text-xs font-semibold text-tertiary">Support</span>
           </div>
@@ -5030,8 +8199,8 @@
             <div class="flex items-start justify-between gap-3">
               <div>
                 <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Best path</p>
-                <h4 class="mt-2 font-display text-lg font-bold">Know where to send the user</h4>
-                <p class="mt-2 text-sm leading-6 text-muted">Trip help should feel quick and practical. Feedback should feel welcome. Partnership messages should feel separate from support so users are never unsure where to go.</p>
+                <h4 class="mt-2 font-display text-lg font-bold">Choose the right path</h4>
+                <p class="mt-2 text-sm leading-6 text-muted">Trip help should feel quick and practical. Feedback should feel welcome. Partnership messages stay separate so you are never unsure where to go.</p>
               </div>
               <span class="rounded-full bg-surface-soft px-3 py-1 text-xs font-semibold text-secondary ring-1 ring-line">Routing</span>
             </div>
@@ -5070,23 +8239,23 @@
             </button>
           </div>
         <nav class="mt-3 flex items-center justify-around text-xs font-semibold text-muted">
-          <button class="nav-tab flex flex-col items-center gap-1 text-muted" data-target="explore-panel" type="button">
+          <button class="nav-tab flex flex-col items-center gap-1 text-muted" data-target="explore-panel" type="button" aria-label="Open Explore">
             <span class="material-symbols-outlined">explore</span>
             Explore
           </button>
-          <button class="nav-tab flex flex-col items-center gap-1 text-primary" data-target="build-panel" type="button">
+          <button class="nav-tab flex flex-col items-center gap-1 text-primary" data-target="build-panel" type="button" aria-label="Open Build">
             <span class="material-symbols-outlined">home</span>
             Build
           </button>
-          <button class="nav-tab flex flex-col items-center gap-1 text-muted" data-target="blueprint-panel" type="button">
+          <button class="nav-tab flex flex-col items-center gap-1 text-muted" data-target="blueprint-panel" type="button" aria-label="Open Blueprint">
             <span class="material-symbols-outlined">route</span>
             Blueprint
           </button>
-          <button class="nav-tab flex flex-col items-center gap-1 text-muted" data-target="trip-panel" type="button">
+          <button class="nav-tab flex flex-col items-center gap-1 text-muted" data-target="trip-panel" type="button" aria-label="Open Your Trip">
             <span class="material-symbols-outlined">calendar_month</span>
             Your Trip
           </button>
-          <button class="nav-tab flex flex-col items-center gap-1 text-muted" data-target="saved-panel" type="button">
+          <button class="nav-tab flex flex-col items-center gap-1 text-muted" data-target="saved-panel" type="button" aria-label="Open Saved">
             <span class="material-symbols-outlined">person</span>
             Saved
           </button>
@@ -5125,12 +8294,12 @@
 
     <script src="./data/destinations.js?v=20260707l"></script>
     <script src="./data/country-guides.js?v=20260629j"></script>
-    <script src="./data/city-guides.js?v=20260707l"></script>
+    <script src="./data/city-guides.js?v=20260802a"></script>
     <script src="./data/trip-content.js?v=20260707l"></script>
-    <script src="./scripts/app-bootstrap.js?v=20260707l"></script>
+  <script src="./scripts/app-bootstrap.js?v=20260815b"></script>
     <script src="./scripts/app-foundation.js?v=20260707l"></script>
-    <script src="./scripts/app-guides.js?v=20260707l"></script>
-    <script src="./scripts/app-trip.js?v=20260707l"></script>
-    <script src="./scripts/app-ui.js?v=20260707l"></script>
+    <script src="./scripts/app-guides.js?v=20260804b"></script>
+  <script src="./scripts/app-trip.js?v=20260815b"></script>
+  <script src="./scripts/app-ui.js?v=20260815b"></script>
 </body>
 </html>
