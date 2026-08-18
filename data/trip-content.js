@@ -132,6 +132,7 @@ window.HB_DATA.destinationFacts = {
       Kolkata: "Kolkata usually feels strongest when food, street texture, and one cultural or colonial stretch shape the day together.",
       Ahmedabad: "Ahmedabad often works best when old-city detail and one design or heritage stop share the day without too much movement.",
       Maldives: "The Maldives is best enjoyed when the trip stays simple and gives the resort, water, and downtime room to be the point.",
+      Bermuda: "Bermuda works best when beach time, ferry-friendly bases, and short family outings get their own space instead of being packed together.",
       Barcelona: "Barcelona usually feels better when you avoid racing between districts and let one part of the city unfold at a time.",
       Madrid: "Madrid usually shines when museums, plazas, and longer meals are allowed to carry the day without too many extra stops.",
       Seville: "Seville usually feels best when the day respects the heat, leaves room for courtyards and slower meals, and avoids overstacking sights.",
@@ -326,6 +327,7 @@ window.HB_TRIP_HELPERS.getAreaSet = function(city) {
         Kolkata: ["Park Street", "Kumartuli", "South Kolkata"],
         Ahmedabad: ["Old City", "Sabarmati Riverfront", "Navrangpura"],
         Maldives: ["Resort island", "Water villa area", "House reef zone"],
+        Bermuda: ["Hamilton & Front Street", "South Shore beaches", "St. George's & the East End"],
         Barcelona: ["Gothic Quarter", "Eixample", "Barceloneta"],
         Madrid: ["Sol", "Malasana", "Retiro"],
         Athens: ["Plaka", "Koukaki", "Monastiraki"],
@@ -449,6 +451,13 @@ window.HB_TRIP_HELPERS.getDayHighlights = function(city, areas) {
           "Signature dinner experience",
           `Final slow morning in ${areas[1]}`
         ],
+        Bermuda: [
+          "Hamilton waterfront + easy first dinner",
+          "South Shore beach time",
+          "Horseshoe Bay + family snorkeling",
+          "St. George's and a seafood dinner",
+          "Slow final morning near the water"
+        ],
         London: [
           "Covent Garden + Seven Dials",
           "Big Ben + Buckingham Palace",
@@ -512,6 +521,13 @@ window.HB_TRIP_HELPERS.getDayNotes = function(city, areas) {
           "Leave some breathing room before the evening plan starts.",
           "Use the final day to slow down instead of squeezing too much in."
         ],
+        Bermuda: [
+          "Keep the first day close to Hamilton so the family can settle in without a long transfer.",
+          "Protect a real beach window and leave time for shade, snacks, and an easy return.",
+          "Go to Horseshoe Bay or a snorkeling stop earlier, then keep lunch and the afternoon nearby.",
+          "A lighter afternoon makes the seafood dinner and evening walk easier for everyone.",
+          "Keep the final full day simple enough for one last swim, packing, and a calm departure."
+        ],
         London: [
           "Keep the first day central and walkable so London starts smoothly.",
           "This day works best when the landmarks stay in one connected stretch.",
@@ -532,6 +548,44 @@ window.HB_TRIP_HELPERS.getDayNotes = function(city, areas) {
 
 window.HB_TRIP_HELPERS.getTimelineTemplates = function(city, areas) {
       const map = {
+        Bermuda: [
+          [
+            { time: "3:00 PM", title: "Settle in near Hamilton", copy: "Keep arrival simple with a short waterfront walk, a snack stop, and an easy first dinner close to the base." },
+            { time: "5:00 PM", title: "Front Street waterfront", copy: "Use the first evening to get oriented without asking the family to cross the island." },
+            { time: "7:00 PM", title: "Family-friendly seafood dinner", copy: "Start with a relaxed table close to the stay so the first night feels easy after travel." }
+          ],
+          [
+            { time: "9:30 AM", title: "South Shore beach window", copy: "Give the family the best beach hours before heat and energy make the day harder." },
+            { time: "12:30 PM", title: "Lunch near the beach", copy: "Keep lunch close enough that shade, snacks, and a quick reset stay available." },
+            { time: "3:30 PM", title: "Easy return or pool time", copy: "Leave the afternoon open for a return to the stay, a quieter swim, or a weather change." }
+          ],
+          [
+            { time: "9:00 AM", title: "Horseshoe Bay or family snorkeling", copy: "Start earlier for the easiest beach conditions, then keep the rest of the day close to the same shore." },
+            { time: "12:30 PM", title: "Casual lunch nearby", copy: "Use a simple meal and a real break before deciding whether the family wants more water time." },
+            { time: "4:00 PM", title: "Short scenic stop", copy: "Choose one nearby viewpoint or beach continuation rather than adding a long island crossing." }
+          ],
+          [
+            { time: "10:00 AM", title: "St. George's family morning", copy: "Explore the historic east end at an easy pace, keeping the route compact and flexible." },
+            { time: "1:00 PM", title: "Lunch with a harbor view", copy: "Make the meal part of the day instead of treating it as a gap between stops." },
+            { time: "4:30 PM", title: "Reset before dinner", copy: "Return to the stay or keep the afternoon light so everyone has energy for the evening." },
+            { time: "7:00 PM", title: "Memorable seafood dinner", copy: "Protect the family dinner as the main evening moment and keep the route home simple." }
+          ],
+          [
+            { time: "10:00 AM", title: "Slow morning by the water", copy: "Choose one last favorite beach or waterfront stretch without making the final full day feel rushed." },
+            { time: "1:00 PM", title: "Easy final lunch", copy: "Stay close to the last beach window or ferry connection so the family can adjust easily." },
+            { time: "4:00 PM", title: "Pack and reset", copy: "Leave enough time for packing, checkout details, and a calm final evening." }
+          ],
+          [
+            { time: "10:00 AM", title: "Weather-flex beach morning", copy: "Use the best available weather for one repeat favorite or a slower beach stop." },
+            { time: "1:00 PM", title: "Family choice lunch", copy: "Let the family choose the meal or area they want to repeat rather than adding another major outing." },
+            { time: "4:00 PM", title: "Open afternoon", copy: "Keep the rest of the day flexible for swimming, resting, or a nearby backup plan." }
+          ],
+          [
+            { time: "9:30 AM", title: "Last beach window", copy: "Take one final unrushed swim or waterfront walk before packing and departure logistics take over." },
+            { time: "12:30 PM", title: "Easy closing meal", copy: "Keep lunch close to the stay or airport route so the last day stays practical." },
+            { time: "3:00 PM", title: "Pack and head home", copy: "Protect the departure window and avoid adding a last-minute cross-island plan." }
+          ]
+        ],
         Paris: [
           [
             { time: "3:00 PM", title: "Check in and get settled", copy: `Take your time getting comfortable near ${areas[0]} before heading back out.` },
@@ -659,6 +713,14 @@ function getGuideDetailForTripCity(city) {
       const dayFiveStop = getIndexedValue(lighterStops, 3, getIndexedValue(attractions, 3, `${areas[4] || areas[1] || areas[0]} walk`));
       const dayFiveLunch = getIndexedValue(lunches, 1, openingLunch);
       const dayFiveClose = getIndexedValue(detail.bestCoffee, 0, getIndexedValue(detail.bestCocktails, 2, `${areas[4] || areas[1] || areas[0]} final pause`));
+      const formatMealTitle = (label, type) => {
+        const cleaned = String(label || "").replace(/^(a|an)\s+/i, "").trim();
+        if (!cleaned) return `${type} nearby`;
+        if (new RegExp(`\\b${type}\\b`, "i").test(cleaned)) {
+          return `${cleaned.charAt(0).toUpperCase()}${cleaned.slice(1)}`;
+        }
+        return `${type} at ${cleaned}`;
+      };
 
       return [
         {
@@ -668,14 +730,14 @@ function getGuideDetailForTripCity(city) {
           timeShape: "Clear first day with one area doing the work",
           weather: `Keep the opening rooted in ${areas[0]} so the trip feels underway without overcomplicating the first stretch.`,
           itemTitle: `${openingAttraction} + neighborhood dinner`,
-          itemBody: `Use breakfast, one signature daytime stop, a nearby lunch, and a real dinner reservation to make the first day feel complete from the start.`,
+          itemBody: `Start with ${openingBreakfast}, make ${openingAttraction} the daytime anchor, pause for ${openingLunch}, and finish with ${openingDinner}. The route stays grounded in ${areas[0]} so the first day feels complete without becoming a transfer day.`,
           fit: `It gives day one exact places to move between, so the trip immediately feels like a real itinerary instead of an outline.`,
           timeline: [
-            { time: "9:00 AM", title: `Breakfast at ${openingBreakfast}`, copy: `Start somewhere concrete so the day begins with an actual destination, not just spare time.` },
+            { time: "9:00 AM", title: formatMealTitle(openingBreakfast, "Breakfast"), copy: `Start somewhere concrete so the day begins with an actual destination, not just spare time.` },
             { time: "10:30 AM", title: openingAttraction, copy: `Use the morning for one place that instantly makes ${city} feel real and worth being in.` },
-            { time: "1:00 PM", title: `Lunch at ${openingLunch}`, copy: `Keep lunch purposeful and nearby so the day stays coherent instead of dissolving into transit.` },
+            { time: "1:00 PM", title: formatMealTitle(openingLunch, "Lunch"), copy: `Keep lunch purposeful and nearby so the day stays coherent instead of dissolving into transit.` },
             { time: "4:00 PM", title: dayTwoFollowThrough, copy: `Let one nearby walk, market, or neighborhood stop carry the afternoon without starting a second major route.` },
-            { time: "7:00 PM", title: `Dinner at ${openingDinner}`, copy: `Finish with a real first-night table so the opening day lands as a memory, not just a check-in day.` }
+            { time: "7:00 PM", title: formatMealTitle(openingDinner, "Dinner"), copy: `Finish with a real first-night table so the opening day lands as a memory, not just a check-in day.` }
           ]
         },
         {
@@ -685,11 +747,11 @@ function getGuideDetailForTripCity(city) {
           timeShape: "Headline stop + practical follow-through",
           weather: `One named anchor plus one nearby follow-through usually feels stronger here than stacking too many districts.`,
           itemTitle: `${dayTwoAttraction} + area-based follow-through`,
-          itemBody: `Build this day around one standout place, a proper lunch, and one worthwhile continuation close enough to keep the rhythm intact.`,
+          itemBody: `Build around ${dayTwoAttraction}, stop for ${dayTwoLunch}, and use ${dayTwoFollowThrough} as the nearby continuation. It gives the day a clear shape without asking you to cross ${city} for every stop.`,
           fit: `It makes the day feel complete and usable, with exact places instead of generic sightseeing filler.`,
           timeline: [
             { time: "9:30 AM", title: dayTwoAttraction, copy: `Lead with one of the day's clearest reasons to be in ${city} while energy is still high.` },
-            { time: "12:30 PM", title: `Lunch at ${dayTwoLunch}`, copy: `Use lunch as part of the agenda, not just a blank placeholder between attractions.` },
+            { time: "12:30 PM", title: formatMealTitle(dayTwoLunch, "Lunch"), copy: `Use lunch as part of the agenda, not just a blank placeholder between attractions.` },
             { time: "3:00 PM", title: dayTwoFollowThrough, copy: `Stay with the neighborhood or theme long enough that the day feels shaped rather than chopped apart.` },
             { time: "7:00 PM", title: dayTwoEvening, copy: `Let the evening close with a real bar, dinner, or local experience that still feels tied to the day's route.` }
           ]
@@ -701,13 +763,13 @@ function getGuideDetailForTripCity(city) {
           timeShape: "Main sight day with a calmer finish",
           weather: `Starting earlier and staying nearby helps the biggest stop feel better instead of just busier.`,
           itemTitle: `${dayThreeAttraction} + slower close`,
-          itemBody: `Protect the major sight, keep lunch nearby, and then let the rest of the day taper into a more relaxed neighborhood finish.`,
+          itemBody: `Give ${dayThreeAttraction} the clearest window, keep lunch at ${dayThreeLunch} nearby, and let ${dayThreeFollowThrough} carry the afternoon into a calmer finish.`,
           fit: `The trip gets a true marquee day here, but one that still reads like a believable agenda.`,
           timeline: [
             { time: "9:00 AM", title: dayThreeAttraction, copy: `Give the main sight the best part of the day so it feels like the real center of gravity.` },
-            { time: "12:30 PM", title: `Lunch at ${dayThreeLunch}`, copy: `Stay close enough that lunch helps the experience breathe instead of breaking it apart.` },
+            { time: "12:30 PM", title: formatMealTitle(dayThreeLunch, "Lunch"), copy: `Stay close enough that lunch helps the experience breathe instead of breaking it apart.` },
             { time: "3:30 PM", title: dayThreeFollowThrough, copy: `Use one secondary stop or neighborhood continuation to round the day out without widening the route too much.` },
-            { time: "7:00 PM", title: `Dinner at ${dayThreeDinner}`, copy: `Let the evening reward the bigger day with a table that still feels destination-worthy.` }
+            { time: "7:00 PM", title: formatMealTitle(dayThreeDinner, "Dinner"), copy: `Let the evening reward the bigger day with a table that still feels destination-worthy.` }
           ]
         },
         {
@@ -717,12 +779,12 @@ function getGuideDetailForTripCity(city) {
           timeShape: "Measured daytime flow + stronger night",
           weather: `Keeping the first half lighter gives the later reservation or event more impact without making the day feel empty.`,
           itemTitle: `${dayFourAnchor} + standout evening`,
-          itemBody: `Start with a named morning stop, fit in lunch with purpose, and build toward the dinner, cocktail bar, or evening experience that should feel like a trip memory.`,
+          itemBody: `Begin at ${dayFourOpening}, use ${dayFourAnchor} and ${dayFourLunch} to give the day a real middle, then build toward ${dayFourEvent} after the scenic or atmospheric lead-in at ${dayFourLate}.`,
           fit: `It closes the loop between daytime and nighttime, so the whole day reads like a planned sequence and not just an evening booking.`,
           timeline: [
             { time: "9:30 AM", title: `Breakfast or coffee at ${dayFourOpening}`, copy: `Begin with a real place so the day gets moving cleanly instead of drifting.` },
             { time: "11:00 AM", title: dayFourAnchor, copy: `Use the late morning for one worthwhile stop that gives the day a visible backbone.` },
-            { time: "1:30 PM", title: `Lunch at ${dayFourLunch}`, copy: `Keep the midday break concrete and nearby so the evening can stay the special part without the rest feeling vague.` },
+            { time: "1:30 PM", title: formatMealTitle(dayFourLunch, "Lunch"), copy: `Keep the midday break concrete and nearby so the evening can stay the special part without the rest feeling vague.` },
             { time: "4:30 PM", title: dayFourLate, copy: `Use the later stretch for a romantic, scenic, or locally atmospheric lead-in rather than a filler gap.` },
             { time: "7:30 PM", title: `Evening reservation at ${dayFourEvent}`, copy: `This is the moment the day has been building toward, whether it lands as dinner, drinks, or a destination-style night out.` }
           ]
@@ -734,12 +796,12 @@ function getGuideDetailForTripCity(city) {
           timeShape: "Soft landing with real stops",
           weather: `A gentler final day works better when it still has one or two places that feel intentionally chosen.`,
           itemTitle: `${dayFiveStop} + calmer finish`,
-          itemBody: `Use the final day for a bakery or coffee start, one more worthwhile stop, lunch with character, and an easy closing pause before packing or departure takes over.`,
+          itemBody: `Start at ${dayFiveBreakfast}, make ${dayFiveStop} the last named stop, pause for ${dayFiveLunch}, and close with ${dayFiveClose} before packing or departure takes over.`,
           fit: `It keeps the ending useful and memorable without pretending the final day should behave like a full flagship itinerary.`,
           timeline: [
             { time: "9:30 AM", title: `Start at ${dayFiveBreakfast}`, copy: `Open with one last place that still feels local and worth remembering.` },
             { time: "11:30 AM", title: dayFiveStop, copy: `Give the day one more exact attraction, market, district, or viewpoint instead of leaving the close shapeless.` },
-            { time: "1:30 PM", title: `Lunch at ${dayFiveLunch}`, copy: `Make lunch part of the plan so the last stretch still feels designed.` },
+            { time: "1:30 PM", title: formatMealTitle(dayFiveLunch, "Lunch"), copy: `Make lunch part of the plan so the last stretch still feels designed.` },
             { time: "4:00 PM", title: dayFiveClose, copy: `Finish with a final coffee, drink, or neighborhood pause that lets the trip taper off gracefully.` }
           ]
         }
@@ -3791,7 +3853,7 @@ window.HB_TRIP_HELPERS.getConcreteTripTemplates = function(city, areas) {
               { time: "11:30 AM", title: "Scenic continuation near the falls", copy: "Keep the late morning close to the main site rather than widening the route." },
               { time: "1:30 PM", title: "Long lunch at Cassia Restaurant", copy: "Use lunch to reset after the main outing rather than forcing straight into another adventure." },
               { time: "5:00 PM", title: "Zambezi-side pause", copy: "Let the later hours settle into a quieter scenic mood." },
-              { time: "7:30 PM", title: "Dinner at The Eatery Dinner Cruise", copy: "Finish with one strong evening that still feels softer than the falls itself." }
+              { time: "7:30 PM", title: "The Eatery Dinner Cruise", copy: "Finish with one strong evening that still feels softer than the falls itself." }
             ]
           },
           {

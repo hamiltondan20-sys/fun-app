@@ -156,6 +156,20 @@ function getBlueprintTopPlaces() {
       return value.toLocaleDateString("en-US", { month: "short", day: "numeric" });
     }
 
+    function parseLocalDate(input) {
+      const dateOnlyMatch = String(input || "").match(/^(\d{4})-(\d{2})-(\d{2})$/);
+      return dateOnlyMatch
+        ? new Date(Number(dateOnlyMatch[1]), Number(dateOnlyMatch[2]) - 1, Number(dateOnlyMatch[3]))
+        : new Date(input);
+    }
+
+    function addLocalDays(input, days) {
+      const date = parseLocalDate(input);
+      if (Number.isNaN(date.getTime())) return date;
+      date.setDate(date.getDate() + days);
+      return date;
+    }
+
     function escapeHtml(value) {
       return String(value ?? "")
         .replace(/&/g, "&amp;")
@@ -1194,8 +1208,10 @@ function getBlueprintTopPlaces() {
         {
           id: "memory",
           label: "What matters most",
-          value: hbState.appState.memory,
-          detail: `${hbState.appState.spontaneity} - one of the strongest planning signals`
+          value: hbState.appState.mustHaves?.trim() ? "Your must-haves" : hbState.appState.memory,
+          detail: hbState.appState.mustHaves?.trim()
+            ? hbState.appState.mustHaves.trim()
+            : `${hbState.appState.spontaneity} - one of the strongest planning signals`
         }
       ];
     }
@@ -3575,14 +3591,47 @@ function getBlueprintTopPlaces() {
           itemTitle: `Low-pressure final stretch`,
           itemBody: vibeContent.finalItemBody,
           fit: vibeContent.finalFit
+        },
+        {
+          title: `Open day near ${areas[0]}`,
+          rationale: `This extra day leaves room for weather, a favorite repeat stop, or a slower local experience without forcing another checklist day.`,
+          highlight: `Flexible time near ${areas[0]}`,
+          timeShape: "Open and weather-flexible",
+          weather: `Keep this day adjustable so the trip can follow the best weather, energy, or local recommendation.`,
+          itemTitle: `Flexible time + one favorite return`,
+          itemBody: `Use the day for the beach, a repeat favorite, or a slower local experience that did not fit earlier. Keep one easy backup nearby instead of filling every hour.`,
+          fit: `It gives the trip breathing room and lets the family choose what feels best once they know the destination.`,
+          timeline: null
+        },
+        {
+          title: `Final beach and pack day in ${areas[1]}`,
+          rationale: `The last full day keeps one worthwhile experience visible while protecting enough time for packing, checkout, and a calm departure.`,
+          highlight: `Final beach window in ${areas[1]}`,
+          timeShape: "Last favorite moment + easy close",
+          weather: `Keep the final beach window simple and leave enough time for packing, weather changes, and the trip home.`,
+          itemTitle: `Last beach window + easy close`,
+          itemBody: `Take one last unrushed beach or waterfront stretch, have an easy meal nearby, and leave the rest of the day open for packing and a calm finish.`,
+          fit: `It protects the final memory without creating a stressful last push.`,
+          timeline: null
         }
       ];
 
-      const count = Math.min(Math.max(days, 3), 5);
-      const selectedTemplates = concreteTemplates
+      const count = Math.max(days, 3);
+      const templatePool = concreteTemplates
         ? [...concreteTemplates, ...dayTemplates.slice(concreteTemplates.length)]
         : dayTemplates;
-      return selectedTemplates.slice(0, count).map((sourceDay, index) => {
+      const selectedTemplates = Array.from({ length: count }, (_, index) => templatePool[index] || {
+        title: `Flexible day in ${areas[index % areas.length]}`,
+        rationale: `Keep this day centered on one area and let the trip respond to energy, weather, and the experiences that still feel worth adding.`,
+        highlight: dayHighlights[index % dayHighlights.length] || `Local time in ${areas[index % areas.length]}`,
+        timeShape: "Flexible and easy to adjust",
+        weather: "Keep the day open enough to follow local advice and make changes without breaking the trip.",
+        itemTitle: `Local time in ${areas[index % areas.length]}`,
+        itemBody: `Build around one worthwhile stop, a good meal, and enough open time to enjoy the area without turning the day into a checklist.`,
+        fit: `It keeps a longer trip from becoming repetitive or overpacked.`,
+        timeline: null
+      });
+      return selectedTemplates.map((sourceDay, index) => {
         const area = areas[Math.min(index, areas.length - 1)];
         const baseDay = index === 0 ? normalizeFirstDayTemplate(sourceDay, area) : { ...sourceDay };
         const day = applyVibeContentToDay(baseDay, index, count - 1, vibeContent);
@@ -3594,7 +3643,7 @@ function getBlueprintTopPlaces() {
         const generatedDay = {
           id: `day-${index + 1}`,
           dayLabel: `Day ${index + 1}`,
-          date: formatDate(new Date(new Date(hbState.appState.startDate).getTime() + index * 86400000)),
+          date: formatDate(addLocalDays(hbState.appState.startDate, index)),
           area,
           pace: index === 0 && hbState.appState.pace === "Packed" ? "Balanced" : hbState.appState.pace,
           item: {
@@ -5694,11 +5743,10 @@ function getBlueprintTopPlaces() {
 
     function normalizeTripDays() {
       if (!hbState.currentTrip?.days?.length) return;
-      const start = new Date(hbState.appState.startDate);
       hbState.currentTrip.days.forEach((day, index) => {
         day.dayLabel = `Day ${index + 1}`;
-        if (!Number.isNaN(start.getTime())) {
-          const date = new Date(start.getTime() + index * 86400000);
+        const date = addLocalDays(hbState.appState.startDate, index);
+        if (!Number.isNaN(date.getTime())) {
           day.date = formatDate(date);
         }
       });

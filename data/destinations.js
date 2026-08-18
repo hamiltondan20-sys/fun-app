@@ -2287,6 +2287,15 @@ window.HB_DATA.destinationMapData = {
           "Ras El Maa": [35.1719, -5.2602]
         }
       },
+      Bermuda: {
+        center: [32.3078, -64.7505],
+        zoom: 11,
+        areas: {
+          "Hamilton & Front Street": [32.2948, -64.7814],
+          "South Shore beaches": [32.2564, -64.8154],
+          "St. George's & the East End": [32.3811, -64.6787]
+        }
+      },
       Essaouira: {
         center: [31.5085, -9.7595],
         zoom: 12,
@@ -2338,6 +2347,7 @@ window.HB_DATA.countrySuggestions = {
       Australia: ["Canberra, Australia", "Sydney, Australia", "Melbourne, Australia", "Cairns, Australia", "Uluru, Australia", "Brisbane, Australia", "Adelaide, Australia", "Perth, Australia", "Hobart, Australia", "Gold Coast, Australia", "Byron Bay, Australia", "Noosa, Australia"],
       "New Zealand": ["Auckland, New Zealand", "Queenstown, New Zealand", "Wellington, New Zealand", "Christchurch, New Zealand", "Rotorua, New Zealand", "Wanaka, New Zealand", "Milford Sound, New Zealand"],
       Fiji: ["Suva, Fiji", "Nadi, Fiji", "Denarau Island, Fiji", "Coral Coast, Fiji"],
+      Bermuda: ["Bermuda, Bermuda", "Hamilton, Bermuda"],
       Finland: ["Helsinki, Finland", "Oulu, Finland", "Rovaniemi, Finland", "Turku, Finland"],
       Philippines: ["Manila, Philippines", "Cebu, Philippines", "Palawan, Philippines", "Boracay, Philippines", "Davao, Philippines", "Bohol, Philippines", "El Nido, Philippines", "Siargao, Philippines"],
       Uzbekistan: ["Tashkent, Uzbekistan", "Samarkand, Uzbekistan", "Khiva, Uzbekistan", "Bukhara, Uzbekistan"],

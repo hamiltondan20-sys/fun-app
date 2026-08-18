@@ -72,6 +72,13 @@ window.HB_DATA.cityGuideData = [
         tip: "Cancun is usually better when resort time and outing days stay separate."
       },
       {
+        city: "Bermuda, Bermuda",
+        title: "Bermuda",
+        summary: "Best for clear-water beaches, easy island days, ferry-friendly exploring, and family trips with room to slow down.",
+        highlights: ["Horseshoe Bay", "Hamilton waterfront", "St. George's"],
+        tip: "Bermuda feels better when beach windows, short outings, and ferry or taxi time are planned with breathing room."
+      },
+      {
         city: "Beijing, China",
         title: "Beijing",
         summary: "Best for imperial history, major cultural sights, and structured sightseeing days.",
@@ -348,6 +355,23 @@ window.HB_DATA.cityGuideDetailData = {
         bestCocktails: ["Rooftop at the Hotel Zone", "Nomads terrace bars", "Beach club cocktail hour"],
         bestBakeries: ["Panya Bakery", "Pan y Mermelada", "La Pasteleteria"],
         bestCoffee: ["Cafe Antoinette", "Bendito Cafe", "Aroma Cafe"]
+      },
+      "Bermuda, Bermuda": {
+        bestAttractions: ["Horseshoe Bay", "Hamilton waterfront", "St. George's"],
+        bestRestaurants: ["Family-friendly seafood dinner", "Waterfront lunch in Hamilton", "Casual fish sandwich stop"],
+        bestBudget: ["Public beach time", "Ferry ride and waterfront wandering", "Picnic or casual lunch by the water"],
+        bestLuxury: ["Private boat or snorkel charter", "Waterfront resort afternoon", "Chef-led seafood dinner"],
+        bestCouples: ["Sunset on the South Shore", "Hamilton waterfront dinner", "St. George's evening walk"],
+        bestKids: ["Horseshoe Bay beach day", "Easy snorkeling or glass-bottom boat outing", "Fort St. Catherine and St. George's"],
+        bestSolo: ["Hamilton coffee and waterfront walk", "Ferry to a quieter shore", "Beach morning with a flexible afternoon"],
+        bestFirstTimers: ["Horseshoe Bay", "Hamilton and Front Street", "St. George's and the East End"],
+        bestUnique: ["Railway Trail section", "Crystal Cave visit", "Ferry ride across the Great Sound"],
+        bestBreakfast: ["Waterfront cafe breakfast", "Hotel breakfast before the beach", "Hamilton bakery stop"],
+        bestLunch: ["Casual fish sandwich lunch", "Waterfront lunch in Hamilton", "Beach picnic or easy cafe meal"],
+        bestDinner: ["Family-friendly seafood dinner", "Hamilton waterfront dinner", "Sunset meal near the South Shore"],
+        bestCocktails: ["Front Street sunset drinks", "Waterfront mocktail stop", "South Shore sunset hour"],
+        bestBakeries: ["Hamilton pastry stop", "Front Street coffee and pastry", "Easy breakfast near the ferry"],
+        bestCoffee: ["Hamilton coffee stop", "Waterfront cafe", "St. George's morning coffee"]
       },
       "Beijing, China": {
         bestAttractions: ["Forbidden City", "Temple of Heaven", "Great Wall access"],
@@ -666,6 +690,12 @@ window.HB_DATA.cityPlanningToolkitData = {
         { label: "Where to stay", value: "Hotel Zone, Playa Mujeres, or downtown", copy: "The stay choice changes the trip: resort convenience, quieter beach time, or a more local base." },
         { label: "Getting around", value: "Transfer-first, excursion-aware", copy: "A good Cancun plan separates resort days from outing days so travel time does not keep interrupting the vacation." },
         { label: "Book early", value: "Excursions, dinner slots, and airport transfers", copy: "The trip feels smoother when logistics are set before the relaxation starts." }
+      ],
+      "Bermuda, Bermuda": [
+        { label: "When it works best", value: "Late spring through early fall", copy: "Bermuda is at its easiest when beach weather supports outdoor time and the family can keep a weather backup in reserve." },
+        { label: "Where to stay", value: "Hamilton, the South Shore, or St. George's", copy: "Hamilton helps with ferries and meals, the South Shore keeps beach time close, and St. George's offers a quieter historic base." },
+        { label: "Getting around", value: "Ferries, taxis, and short grouped outings", copy: "The island is compact but not instant. Group beach time, ferry crossings, and meal stops so the family is not spending the vacation in transit." },
+        { label: "Book early", value: "Airport transfers, boat outings, and seafood dinners", copy: "Protect the few reservations that shape the week, then leave the beach and weather-dependent days flexible." }
       ],
       "Amsterdam, Netherlands": [
         { label: "When it works best", value: "Spring, summer, and early fall", copy: "Amsterdam is strongest when canal walks, cafes, museums, and bikes can all be part of the same easy day." },
@@ -1977,6 +2007,36 @@ window.HB_DATA.cityEditorialPageData = {
             image: "https://images.unsplash.com/photo-1580579026987-a06c0f0ea1ea?auto=format&fit=crop&w=1200&q=80",
             title: "Cafe-and-museum rhythm",
             copy: "Amsterdam often becomes more memorable when cafes, museum time, and easy walking all fit together naturally."
+          }
+        ]
+      },
+      "Bermuda, Bermuda": {
+        dek: "For families and vacationers who want clear-water beaches, easy island exploring, and enough breathing room for the weather and energy to shape the week.",
+        intro: [
+          "Bermuda is easiest to enjoy when the trip does not treat every beach, town, and outing as something that must fit into the same day. The island rewards a simple rhythm: one good beach window, one short outing, and meals that are easy to reach.",
+          "For families, the best plan protects shade, snacks, bathrooms, and a clean way back to the stay. Hamilton and the ferry network make exploring practical, while the South Shore and St. George's give the week different moods without demanding a long road trip."
+        ],
+        trust: "This guide helps travelers build a Bermuda week around realistic island timing, beach conditions, and the family moments worth protecting before the schedule fills up.",
+        summaryCards: [
+          ["Best for", "Family beach trips, relaxed couples vacations, snorkeling, seafood, and travelers who want a warm-weather week without constant driving."],
+          ["Ideal trip length", "6 to 7 nights gives a family enough time for beach days, one or two outings, and weather-flex space without repeating the same plan."],
+          ["How to plan it", "Keep beach windows and ferry-friendly routes separate, then leave at least one flexible day for weather, energy, or a favorite repeat stop."]
+        ],
+        gallery: [
+          {
+            image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+            title: "Beach-first days",
+            copy: "The strongest Bermuda days give the water enough time to be the point instead of squeezing it between unrelated stops."
+          },
+          {
+            image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=80",
+            title: "Easy water time",
+            copy: "Snorkeling and boat outings work best when the rest of the day stays nearby, flexible, and easy to shorten."
+          },
+          {
+            image: "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=1200&q=80",
+            title: "Town and waterfront rhythm",
+            copy: "Hamilton and St. George's add food, history, and local texture without turning a beach vacation into a city checklist."
           }
         ]
       }
