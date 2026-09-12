@@ -2369,8 +2369,7 @@ window.HB_DATA.countrySuggestions = {
       Israel: ["Jerusalem, Israel", "Tel Aviv, Israel"],
       Qatar: ["Doha, Qatar"],
       "Saudi Arabia": ["Riyadh, Saudi Arabia", "Jeddah, Saudi Arabia", "AlUla, Saudi Arabia"],
-      Oman: ["Muscat, Oman"],
-      Antarctica: ["Antarctic Peninsula, Antarctica", "South Shetland Islands, Antarctica", "McMurdo Sound, Antarctica"]
+      Oman: ["Muscat, Oman"]
     };
 
 window.HB_DATA.destinationAliases = {

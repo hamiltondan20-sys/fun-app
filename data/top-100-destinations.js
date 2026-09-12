@@ -95,11 +95,6 @@
     { rank: 93, city: "Tasmania, Australia", country: "Australia", title: "Tasmania", summary: "Best for wild coastlines, food, hiking, and a compact island road trip with a strong local identity.", highlights: ["Freycinet", "Cradle Mountain", "Hobart waterfront"], areas: ["Hobart", "Freycinet", "Cradle Mountain"], tip: "Tasmania needs regional choices and weather buffers; do not make the island a single rushed loop.", food: "a farm-to-table lunch or Hobart dinner", experience: "a short hike to a coastal viewpoint" },
     { rank: 94, city: "New Zealand, New Zealand", country: "New Zealand", title: "New Zealand", summary: "Best for mountains, lakes, fjords, road trips, and travelers who want scenery to be part of every transfer.", highlights: ["Milford Sound", "Queenstown", "Rotorua"], areas: ["Queenstown", "Auckland", "South Island route"], tip: "Choose one island for a shorter trip and protect scenic drive time instead of trying to connect everything.", food: "a local winery or waterfront dinner", experience: "a mountain or fjord excursion" },
     { rank: 95, city: "Hawaii, United States", country: "United States", title: "Hawaii", summary: "Best for beach time, volcanoes, snorkeling, and island trips that can be relaxing without becoming generic.", highlights: ["Waikiki", "Haleakala", "Na Pali Coast"], areas: ["Oahu", "Maui", "Big Island"], tip: "Pick one or two islands and protect both beach recovery and one nature-led day.", food: "a poke lunch or local plate dinner", experience: "a sunset beach or volcano view" },
-    { rank: 96, city: "Tahiti, French Polynesia", country: "French Polynesia", title: "Tahiti", summary: "Best for lagoons, mountain backdrops, slow resort days, and a tropical trip that can add Moorea or Bora Bora.", highlights: ["Papeete market", "Tahiti lagoon", "Moorea day trip"], areas: ["Papeete", "West coast", "Moorea gateway"], tip: "Keep the first and last days simple around flights, and let the lagoon time be the center rather than an add-on.", food: "a Polynesian seafood dinner", experience: "a lagoon snorkel or island boat day" },
-    { rank: 97, city: "North Pole, Arctic", country: "Arctic", title: "North Pole", summary: "Best for expedition travel, polar landscapes, and a dream trip where the journey and conditions are the destination.", highlights: ["Arctic ice", "Polar wildlife", "Expedition vessel"], areas: ["Arctic gateway", "Pack ice route", "Expedition ship"], tip: "This is not a conventional vacation: use a specialist operator and expect weather, ice, and timing to control the plan.", food: "meals aboard the expedition vessel", experience: "a quiet moment on the polar ice" },
-    { rank: 98, city: "South Pole, Antarctica", country: "Antarctica", title: "South Pole", summary: "Best for extreme expedition travel, science history, and travelers who want a rare, highly structured polar experience.", highlights: ["South Pole marker", "Amundsen-Scott area", "Antarctic interior"], areas: ["Antarctic gateway", "Polar camp", "South Pole route"], tip: "Expect limited access, specialized logistics, and a plan where safety and weather take priority over sightseeing volume.", food: "expedition camp meals", experience: "a clear polar horizon" },
-    { rank: 99, city: "Antarctic Coast, Antarctica", country: "Antarctica", title: "Antarctic Coast", summary: "Best for glaciers, penguins, expedition ships, and a once-in-a-lifetime nature trip with built-in flexibility.", highlights: ["Antarctic Peninsula", "Penguin colonies", "Iceberg channels"], areas: ["Ushuaia gateway", "Antarctic Peninsula", "Scenic channels"], tip: "Choose an expedition with enough landing days and accept that weather may rewrite the route in the best possible way.", food: "meals aboard the expedition ship", experience: "a landing among ice and penguins" },
-    { rank: 100, city: "Outer Space, Beyond Earth", country: "Beyond Earth", title: "Outer Space", summary: "Best for future-facing adventure, orbital views, and the ultimate dream destination in the app's inspiration layer.", highlights: ["Orbital view", "Spaceflight training", "Earth from above"], areas: ["Training base", "Launch corridor", "Orbital experience"], tip: "Keep this as an inspiration destination rather than a bookable itinerary until access, safety, and scheduling become real.", food: "a pre-launch celebration meal", experience: "seeing Earth from above" }
   ];
 
   const data = window.HB_DATA = window.HB_DATA || {};
@@ -141,7 +136,7 @@
 
   const makeToolkit = (seed) => [
     { label: "When it works best", value: seed.when || "Choose the clearest, most comfortable season", copy: `${seed.title} is easier to enjoy when weather, daylight, and the trip's main outdoor moments are planned together.` },
-    { label: "Where to stay", value: seed.areas.slice(0, 2).join(" or "), copy: `Use ${seed.areas[0]} as the first base when possible, then add ${seed.areas[1]} only if the extra move adds something meaningful.` },
+    { label: "Where to stay", value: seed.areas.slice(0, 2).join(" or "), copy: `Use ${seed.areas[0]} as the first base when possible, then add ${seed.areas[1]} only if the extra move is worth the time.` },
     { label: "Getting around", value: seed.transport || "Group the day by area", copy: seed.tip },
     { label: "Book early", value: seed.highlights.slice(0, 2).join(" and "), copy: `Protect ${seed.highlights[0]}, then leave space around it for the meals, weather changes, and slower moments that make ${seed.title} feel like a trip.` }
   ];
@@ -201,7 +196,13 @@
     if (!existingCities.has(seed.city)) data.cityGuideData.push(guideFor(seed));
     if (!existingDetails[seed.city]) existingDetails[seed.city] = makeDetail(seed);
     if (!existingToolkits[seed.city]) existingToolkits[seed.city] = makeToolkit(seed);
-    if (!existingFacts[name]) existingFacts[name] = `${seed.title} works best when ${seed.tip.charAt(0).toLowerCase()}${seed.tip.slice(1)}`;
+    if (!existingFacts[name]) {
+      const tipText = String(seed.tip || "").trim();
+      const tipStartsWithTitle = tipText.toLowerCase().startsWith(`${seed.title.toLowerCase()} `);
+      existingFacts[name] = tipStartsWithTitle
+        ? tipText
+        : `${seed.title} works best when ${tipText.charAt(0).toLowerCase()}${tipText.slice(1)}`;
+    }
     if (!existingSuggestions[seed.country]) existingSuggestions[seed.country] = [];
     if (!existingSuggestions[seed.country].includes(seed.city)) existingSuggestions[seed.country].push(seed.city);
     existingAliases[compact(seed.title)] = seed.city;

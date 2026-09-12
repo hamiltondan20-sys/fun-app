@@ -18,6 +18,7 @@ const {
   renderCountryGuidesLanding,
   renderCountryGuideDetail,
   renderCityGuideDetail,
+  getCityGuideCategoryRoute,
   buildFlightCard,
   buildStayCard,
   updateStateFromTripLogistics,
@@ -73,6 +74,8 @@ const {
     const GUIDE_MEMORY_KEY = "hb-guide-memory-v1";
     let lastGuideHandoffAt = 0;
     let bookingNoteSaveTimer = null;
+    let bottomBarResizeObserver = null;
+    let accountModalPreviousFocus = null;
 
     function escapeUiHtml(value) {
       return String(value ?? "")
@@ -97,7 +100,7 @@ const {
     }
 
 function updatePrimaryCta() {
-      const guidePanels = new Set(["city-guides-panel", "country-guides-panel", "editorial-guide-panel", "editorial-country-panel"]);
+      const guidePanels = new Set(["city-discovery-panel", "city-guides-panel", "country-guides-panel", "editorial-guide-panel", "editorial-country-panel"]);
       const isGuideMode = guidePanels.has(hbState.activePanelId);
       hbRefs.bottomBar?.classList.toggle("is-guide-mode", isGuideMode);
       hbRefs.generateBtn.disabled = false;
@@ -105,12 +108,16 @@ function updatePrimaryCta() {
         hbRefs.generateBtn.textContent = "Start Building";
         return;
       }
+      if (hbState.activePanelId === "city-discovery-panel") {
+        hbRefs.generateBtn.textContent = "Choose a city";
+        return;
+      }
       if (hbState.activePanelId === "build-panel") {
         hbRefs.generateBtn.textContent = "Next: Preferences";
         return;
       }
       if (hbState.activePanelId === "details-panel") {
-        hbRefs.generateBtn.textContent = "Review Blueprint";
+        hbRefs.generateBtn.textContent = "Review My Trip";
         return;
       }
       if (hbState.activePanelId === "blueprint-panel") {
@@ -139,81 +146,87 @@ function updatePrimaryCta() {
       const flowMap = {
         "explore-panel": {
           current: "Explore ideas",
-          focus: "Find a destination or trip style that feels right.",
-          copy: "Browse guides, compare places, or preview a sample trip before filling anything out.",
+          focus: "Find a place or a kind of trip that feels right.",
+          copy: "Browse guides, compare places, or preview a trip before you enter any details.",
           next: "Start building"
+        },
+        "city-discovery-panel": {
+          current: "Choose a destination",
+          focus: "Choose a country and compare cities that fit your trip.",
+          copy: "Start with a country, compare three city ideas, and choose the one that feels right.",
+          next: "Choose a city"
         },
         "city-guides-panel": {
           current: "City guides",
-          focus: "Pick a city with enough context to feel confident.",
-          copy: "Search by place, country, or vibe, then use a guide as your trip starting point.",
+          focus: "Choose a city with enough context to plan confidently.",
+          copy: "Search by city, country, or vibe, then use a guide to start planning.",
           next: "Use a city"
         },
         "country-guides-panel": {
           current: "Country guides",
-          focus: "Start broader when the exact city is still open.",
-          copy: "Compare regions and strongest starting cities before choosing a base.",
+          focus: "Start with the country when you are still choosing a city.",
+          copy: "Compare regions and leading cities before choosing where to stay.",
           next: "Choose a base"
         },
         "editorial-guide-panel": {
           current: "City guide",
-          focus: "Use this city as the foundation for a real itinerary.",
-          copy: "Carry the guide context into Build so the planner starts from what interested you.",
-          next: "Build from guide"
+          focus: "Use this city as the starting point for your itinerary.",
+          copy: "Take the ideas you like into Build so the plan starts with something specific.",
+          next: "Plan from this guide"
         },
         "editorial-country-panel": {
           current: "Country guide",
-          focus: "Narrow the country into a practical trip direction.",
-          copy: "Use the strongest city suggestion as the first base, then adjust dates and pace.",
+          focus: "Turn the country into a trip that feels right for you.",
+          copy: "Start with a city that fits, then adjust the dates, pace, and budget.",
           next: "Pick trip basics"
         },
         "build-panel": {
           current: "Trip basics",
-          focus: `Set the practical frame for ${city}.`,
-          copy: "Destination, dates, travelers, budget, flights, and pets tell the planner what is realistic.",
+          focus: `Start with the basics for ${city}.`,
+          copy: "Add your dates, travelers, and a few details that help us make the plan realistic.",
           next: "Choose preferences"
         },
         "details-panel": {
           current: "Preferences",
-          focus: "Choose the signals that should change the trip most.",
-          copy: "Style, pace, must-haves, and hard rules keep the draft personal without overloading the form.",
-          next: "Review blueprint"
+          focus: "Choose what should shape the trip most.",
+          copy: "Tell us what you want more of, how full the days should feel, and anything to avoid.",
+          next: "Review my trip"
         },
         "blueprint-panel": {
-          current: "Blueprint",
-          focus: "Check the plan ingredients before the itinerary is built.",
-          copy: "Edit any card that feels off. When it looks right, generate the day-by-day draft.",
-          next: "Build the trip"
+          current: "Trip review",
+          focus: "Check your trip details before the day-by-day plan is built.",
+          copy: "Change anything that feels off, then build the trip when it looks right.",
+          next: "Build my trip"
         },
         "thinking-panel": {
           current: "Building",
-          focus: "Turning your choices into a first usable draft.",
+          focus: "Putting your choices into a first draft.",
           copy: "The next screen opens with the overview first, then the day-by-day details.",
           next: "Open your trip"
         },
         "trip-panel": {
           current: "Your trip",
           focus: "Review, adjust, and save the itinerary.",
-          copy: "Use the map, edit days, save arrangements, and keep a draft when the trip feels useful.",
+          copy: "Use the map, edit days, save versions, and keep a draft when the trip feels useful.",
           next: "Save or compare"
         },
         "saved-panel": {
           current: "Saved",
-          focus: "Keep your draft, profile, and favorite arrangements together.",
+          focus: "Keep your draft, profile, and favorite versions together.",
           copy: savedCount
-            ? `${savedCount} saved arrangement${savedCount === 1 ? "" : "s"} available to view or compare.`
-            : "Save a draft or arrangement once there is a version worth keeping.",
+            ? `${savedCount} saved trip version${savedCount === 1 ? "" : "s"} available to view or compare.`
+            : "Save a draft or version once there is a trip worth keeping.",
           next: hbState.savedDraft ? "Restore draft" : "Build a trip"
         },
         "faq-panel": {
           current: "Help",
-          focus: "Answer the planning questions that come up mid-flow.",
+          focus: "Get answers to common planning questions.",
           copy: "Jump back into Build when you are ready to keep planning.",
           next: "Return to Build"
         },
         "contact-panel": {
           current: "Contact",
-          focus: "Find the right support path.",
+          focus: "Find the right way to reach us.",
           copy: "Use this for trip help, product feedback, account questions, or partnerships.",
           next: "Return to planning"
         }
@@ -232,6 +245,17 @@ function updatePrimaryCta() {
         if (!node) return;
         node.classList.toggle("is-compact", shouldCompact);
       });
+    }
+
+    function syncBottomContentPadding() {
+      const bar = hbRefs.bottomBar;
+      if (!bar) return;
+      const height = Math.ceil(bar.getBoundingClientRect().height);
+      document.documentElement.style.setProperty("--hb-bottom-pad", `${height + 24}px`);
+      if (!bottomBarResizeObserver && typeof window.ResizeObserver === "function") {
+        bottomBarResizeObserver = new window.ResizeObserver(syncBottomContentPadding);
+        bottomBarResizeObserver.observe(bar);
+      }
     }
 
     function scheduleEditorialStickyBarsUpdate() {
@@ -301,7 +325,10 @@ function updatePrimaryCta() {
       try {
         const payload = {
           selectedGuideCity: hbState.selectedGuideCity,
+          selectedGuideCategory: hbState.selectedGuideCategory,
           selectedGuideCountry: hbState.selectedGuideCountry,
+          cityDiscoveryCountry: hbState.cityDiscoveryCountry,
+          cityDiscoveryMood: hbState.cityDiscoveryMood,
           cityGuideSearchQuery: hbState.cityGuideSearchQuery,
           cityGuideRegionFilter: hbState.cityGuideRegionFilter,
           countryGuideSearchQuery: hbState.countryGuideSearchQuery,
@@ -310,7 +337,8 @@ function updatePrimaryCta() {
           guidePlanContext: hbState.guidePlanContext,
           guideCompare: hbState.guideCompare,
           guideHubCompare: hbState.guideHubCompare,
-          guideBuildIntent: hbState.guideBuildIntent
+          guideBuildIntent: hbState.guideBuildIntent,
+          guideAddedItems: hbState.guideAddedItems
         };
         window.localStorage.setItem(GUIDE_MEMORY_KEY, JSON.stringify(payload));
       } catch (error) {
@@ -325,7 +353,10 @@ function updatePrimaryCta() {
         const payload = JSON.parse(raw);
         if (!payload || typeof payload !== "object") return;
         hbState.selectedGuideCity = payload.selectedGuideCity || hbState.selectedGuideCity;
+        hbState.selectedGuideCategory = payload.selectedGuideCategory || "";
         hbState.selectedGuideCountry = payload.selectedGuideCountry || hbState.selectedGuideCountry;
+        hbState.cityDiscoveryCountry = payload.cityDiscoveryCountry || "";
+        hbState.cityDiscoveryMood = payload.cityDiscoveryMood || "";
         hbState.cityGuideSearchQuery = payload.cityGuideSearchQuery || "";
         hbState.cityGuideRegionFilter = payload.cityGuideRegionFilter || "all";
         hbState.countryGuideSearchQuery = payload.countryGuideSearchQuery || "";
@@ -359,6 +390,7 @@ function updatePrimaryCta() {
           destination: "",
           ...(payload.guideBuildIntent || {})
         };
+        hbState.guideAddedItems = Array.isArray(payload.guideAddedItems) ? payload.guideAddedItems : [];
       } catch (error) {
         // Ignore storage failures in prototypes.
       }
@@ -522,11 +554,53 @@ function updatePrimaryCta() {
     }
 
     function openAccountModal() {
+      const profile = hbState.tripProfile || {};
+      const fields = {
+        "local-account-name-input": profile.displayName || "",
+        "local-account-email-input": profile.email || "",
+        "local-account-airport-input": profile.homeAirport || ""
+      };
+      Object.entries(fields).forEach(([id, value]) => {
+        const input = document.getElementById(id);
+        if (input) input.value = value;
+      });
+      accountModalPreviousFocus = document.activeElement;
       hbRefs.accountModal.classList.add("is-open");
+      window.requestAnimationFrame(() => {
+        document.getElementById("local-account-name-input")?.focus({ preventScroll: true });
+      });
     }
 
     function closeAccountModal() {
+      const wasOpen = hbRefs.accountModal.classList.contains("is-open");
       hbRefs.accountModal.classList.remove("is-open");
+      if (wasOpen && accountModalPreviousFocus && typeof accountModalPreviousFocus.focus === "function") {
+        accountModalPreviousFocus.focus({ preventScroll: true });
+      }
+      accountModalPreviousFocus = null;
+    }
+
+    function handleAccountModalKeydown(event) {
+      if (!hbRefs.accountModal.classList.contains("is-open")) return;
+      if (event.key === "Escape") {
+        event.preventDefault();
+        closeAccountModal();
+        return;
+      }
+      if (event.key !== "Tab") return;
+
+      const focusable = [...hbRefs.accountModal.querySelectorAll("button, input, select, textarea, a[href], [tabindex]:not([tabindex='-1'])")]
+        .filter((element) => !element.disabled && element.getClientRects().length);
+      if (!focusable.length) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
     }
 
     function toggleMenuDrawer(forceOpen = null) {
@@ -605,9 +679,9 @@ function updatePrimaryCta() {
         "have-flights": hbState.appState.flightAirline || "Flights added",
         "not-needed": "No flights needed"
       };
-      const accountLabel = hbState.appState.accountMethod && hbState.appState.accountMethod !== "guest"
-        ? `Connected with ${hbUtils.titleCase(hbState.appState.accountMethod)}`
-        : "Local profile";
+      const accountLabel = hbState.appState.accountMethod === "local"
+        ? "Saved on this browser"
+        : "Guest mode";
       const savedDraft = hbState.savedDraft;
       const savedValue = savedDraft ? "Draft saved" : accountLabel;
       const savedCopy = savedDraft
@@ -627,16 +701,16 @@ function updatePrimaryCta() {
       if (statusCopy) {
         statusCopy.textContent = savedDraft
           ? `${savedDraft.title} was saved ${savedDraft.savedAt}. Restore it from Saved or keep building a new version.`
-          : "Build the first draft now. When the plan starts to feel worth keeping, saved trips, edits, and restore points will stay organized.";
+            : "Build the first draft now. When it feels worth keeping, you can save the trip, edits, and different versions together.";
       }
 
       const items = [
         {
-          label: "Trip frame",
+          label: "Trip basics",
           value: tripFrameReady ? destination : "Add destination and dates",
           copy: tripFrameReady
             ? `${hbRefs.formBindings.tripLengthSummary?.textContent || "Dates set"} for ${buildTravelerText().toLowerCase()}.`
-            : "The planner needs where, when, and who before preferences matter."
+            : "We need a destination, dates, and at least one traveler before preferences can shape the trip."
         },
         {
           label: "Logistics",
@@ -696,7 +770,7 @@ function updatePrimaryCta() {
           target: hasValidDates || hbState.appState.startDate ? "end-date-input" : "start-date-input",
           fixLabel: "Fix dates",
           readyCopy: hasValidDates ? `${hbRefs.formBindings.tripLengthSummary?.textContent || "Dates set"}.` : "",
-          missingCopy: "Add a valid start and end date so the planner knows how many days to build."
+          missingCopy: "Add a start and end date so we know how many days to plan."
         },
         {
           id: "travelers",
@@ -713,14 +787,14 @@ function updatePrimaryCta() {
       const optional = [
         {
           id: "rules",
-          title: "Hard rules",
+          title: "Things to avoid",
           ready: Boolean(String(hbState.appState.nonNegotiables || "").trim()),
           level: "optional",
           panel: "details-panel",
           target: "non-negotiables-input",
-          fixLabel: "Add rules",
+          fixLabel: "Add things to avoid",
           readyCopy: hbState.appState.nonNegotiables || "",
-          missingCopy: "Add dietary, accessibility, timing, or avoid-list rules if the planner must respect them."
+          missingCopy: "Add dietary, accessibility, timing, or places-to-avoid details if you need the trip to work around them."
         },
         {
           id: "logistics",
@@ -731,7 +805,7 @@ function updatePrimaryCta() {
           target: "build-logistics-section",
           fixLabel: "Add logistics",
           readyCopy: hasStay && flightReady ? "Stay and travel timing are enough for a realistic first and last day." : "",
-          missingCopy: "Hotel area, hotel name, or known flight timing can make the itinerary more realistic."
+          missingCopy: "A hotel area, hotel name, or known flight timing can make the first and last days more realistic."
         }
       ];
       const blockers = required.filter((item) => !item.ready);
@@ -772,7 +846,7 @@ function updatePrimaryCta() {
           <div>
             <p class="text-xs font-semibold uppercase tracking-[0.14em] ${readiness.generationReady ? "text-tertiary" : "text-primary"}">${readiness.generationReady ? "Good starting point" : "Missing basics"}</p>
             <h4 class="mt-1 font-display text-lg font-bold text-ink">${readiness.generationReady ? "You can move to preferences" : "Add these before preferences"}</h4>
-            <p class="mt-2 max-w-[44rem] text-sm leading-6 text-muted">${readiness.generationReady ? "The trip frame is ready. These prompts are optional ways to make the generated plan more realistic." : "The planner needs a destination, valid dates, and at least one adult before it can build a useful itinerary."}</p>
+            <p class="mt-2 max-w-[44rem] text-sm leading-6 text-muted">${readiness.generationReady ? "The basics are set. These optional details can make the first draft feel more like your trip." : "Add a destination, valid dates, and at least one adult before we can build a useful itinerary."}</p>
           </div>
           <span class="planning-prompt-status ${readiness.generationReady ? "is-ready" : ""}">${readiness.readyCount} of ${readiness.totalCount} ready</span>
         </div>
@@ -812,12 +886,125 @@ function updatePrimaryCta() {
 
     function getRouteForPanel(targetId) {
       if (targetId === "editorial-guide-panel") {
-        return `city-guides/${slugifyCity(hbState.selectedGuideCity)}`;
+        const cityRoute = `city-guides/${slugifyCity(hbState.selectedGuideCity)}`;
+        return hbState.selectedGuideCategory ? `${cityRoute}/${hbState.selectedGuideCategory}` : cityRoute;
       }
       if (targetId === "editorial-country-panel") {
         return `country-guides/${slugifyCountry(hbState.selectedGuideCountry)}`;
       }
       return hbData.panelRouteMap[targetId] || "build";
+    }
+
+    const publicSiteUrl = "https://hamiltondan20-sys.github.io/fun-app/plan/";
+    const cityCategoryMeta = {
+      "things-to-do": "Things to Do",
+      attractions: "Attractions",
+      themes: "Themes",
+      "food-guide": "Food Guide",
+      neighborhoods: "Neighborhoods",
+      "sample-itineraries": "Sample Itineraries"
+    };
+    const routeMeta = {
+      "": {
+        title: "Horizon Bound | Build Your Trip",
+        description: "Build a vacation around the places, pace, food, and experiences you care about."
+      },
+      explore: {
+        title: "Explore Vacation Ideas | Horizon Bound",
+        description: "Find destination ideas, sample trips, and travel inspiration before you start planning."
+      },
+      "find-a-destination": {
+        title: "Find a Destination | Horizon Bound",
+        description: "Choose a country and compare cities that fit the kind of vacation you want."
+      },
+      "city-guides": {
+        title: "City Guides | Horizon Bound",
+        description: "Explore practical city guides with things to do, food ideas, neighborhoods, and sample trip inspiration."
+      },
+      "country-guides": {
+        title: "Country Guides | Horizon Bound",
+        description: "Compare countries and find the cities that best match the vacation you have in mind."
+      },
+      faq: {
+        title: "Travel Planning Questions | Horizon Bound",
+        description: "Find answers about building, saving, adjusting, and using a Horizon Bound vacation plan."
+      },
+      contact: {
+        title: "Contact Horizon Bound | Horizon Bound",
+        description: "Send feedback, report an issue, or share an idea for improving Horizon Bound."
+      },
+      build: {
+        title: "Build Your Trip | Horizon Bound",
+        description: "Start with your destination, dates, travelers, budget, and practical trip details."
+      }
+    };
+
+    function trimMetaDescription(value) {
+      const cleaned = String(value || "").replace(/\s+/g, " ").trim();
+      if (cleaned.length <= 158) return cleaned;
+      return `${cleaned.slice(0, 155).replace(/[\s,.!?;:]+$/, "")}...`;
+    }
+
+    function routeToPublicUrl(route = "") {
+      if (!route) return publicSiteUrl;
+      const encodedRoute = route.split("/").map((part) => encodeURIComponent(part)).join("/");
+      return `${publicSiteUrl}?route=${encodedRoute}`;
+    }
+
+    function updateRouteMetadata(route = "") {
+      const safeRoute = String(route || "").replace(/^#/, "");
+      let metadata = routeMeta[safeRoute] || routeMeta.build;
+
+      if (safeRoute.startsWith("city-guides/")) {
+        const routeParts = safeRoute.replace("city-guides/", "").split("/");
+        const city = findCityBySlug(routeParts[0]);
+        const category = cityCategoryMeta[routeParts[1] || ""];
+        if (city) {
+          const guide = hbData.cityGuideData.find((item) => item.city === city);
+          const cityTitle = guide?.title || city.split(",")[0];
+          const citySummary = guide?.summary || `Plan a trip to ${cityTitle} with practical ideas for what to see, eat, and do.`;
+          metadata = category
+            ? {
+                title: `${category} in ${cityTitle} | Horizon Bound`,
+                description: `Explore ${category.toLowerCase()} in ${cityTitle}, with practical ideas to help shape a trip that fits your time and travel style.`
+              }
+            : {
+                title: `${cityTitle} City Guide | Horizon Bound`,
+                description: `${citySummary} Explore things to do, food ideas, neighborhoods, and sample trip inspiration.`
+              };
+        }
+      }
+
+      if (safeRoute.startsWith("country-guides/")) {
+        const country = findCountryBySlug(safeRoute.replace("country-guides/", ""));
+        const guide = country ? hbData.countryGuideData[country] : null;
+        if (country) {
+          metadata = {
+            title: `${country} Travel Guide | Horizon Bound`,
+            description: `${guide?.summary || `Explore ${country} with city ideas, practical planning guidance, and inspiration for your next trip.`} Compare cities and find the right place to start.`
+          };
+        }
+      }
+
+      const description = trimMetaDescription(metadata.description);
+      document.title = metadata.title;
+      document.querySelector("#page-meta-description")?.setAttribute("content", description);
+      document.querySelector("#page-og-title")?.setAttribute("content", metadata.title);
+      document.querySelector("#page-og-description")?.setAttribute("content", description);
+      document.querySelector("#canonical-url")?.setAttribute("href", routeToPublicUrl(safeRoute));
+    }
+
+    function applyPlannerDestinationDeepLink() {
+      const requested = new URLSearchParams(window.location.search).get("destination")?.trim();
+      const destinationInput = hbRefs.formBindings.destination;
+      if (!requested || !destinationInput) return;
+
+      const verdict = window.HB_COVERAGE?.resolveDestination?.(requested);
+      const canonical = verdict?.canonical || hbUtils.resolveCanonicalDestination(requested);
+      if (!canonical) return;
+
+      destinationInput.value = canonical;
+      hbState.appState.destination = canonical;
     }
 
     function renderPanelContent(targetId) {
@@ -833,6 +1020,9 @@ function updatePrimaryCta() {
       }
       if (targetId === "explore-panel") {
         renderExploreMap();
+      }
+      if (targetId === "city-discovery-panel") {
+        renderCityDiscovery();
       }
       if (targetId === "city-guides-panel") {
         renderCityGuidesLanding();
@@ -867,23 +1057,31 @@ function updatePrimaryCta() {
 
     function applyHashRoute() {
       const rawHash = window.location.hash.replace(/^#/, "");
-      if (!rawHash) {
+      const queryRoute = new URLSearchParams(window.location.search).get("route") || "";
+      const rawRoute = rawHash || queryRoute;
+      if (!rawRoute) {
         setActivePanel("build-panel", { updateHash: false });
         return;
       }
 
-      if (rawHash.startsWith("city-guides/")) {
-        const slug = rawHash.replace("city-guides/", "");
+      if (rawRoute.startsWith("city-guides/")) {
+        const routeParts = rawRoute.replace("city-guides/", "").split("/");
+        const slug = routeParts[0];
+        const category = routeParts[1] || "";
         const city = findCityBySlug(slug);
         if (city) {
           hbState.selectedGuideCity = city;
+          hbState.selectedGuideCategory = category;
           setActivePanel("editorial-guide-panel", { updateHash: false });
+          if (category) {
+            window.setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 60);
+          }
           return;
         }
       }
 
-      if (rawHash.startsWith("country-guides/")) {
-        const slug = rawHash.replace("country-guides/", "");
+      if (rawRoute.startsWith("country-guides/")) {
+        const slug = rawRoute.replace("country-guides/", "");
         const country = findCountryBySlug(slug);
         if (country) {
           hbState.selectedGuideCountry = country;
@@ -892,13 +1090,148 @@ function updatePrimaryCta() {
         }
       }
 
-      const matchedPanel = Object.entries(hbData.panelRouteMap).find(([, route]) => route === rawHash)?.[0];
+      if (rawRoute === "find-a-destination") {
+        openCityDiscovery();
+        return;
+      }
+
+      const matchedPanel = Object.entries(hbData.panelRouteMap).find(([, route]) => route === rawRoute)?.[0];
       if (matchedPanel) {
         setActivePanel(matchedPanel, { updateHash: false });
         return;
       }
 
       setActivePanel("build-panel", { updateHash: false });
+    }
+
+    const cityDiscoveryMoods = ["Relaxing", "Adventurous", "Food-focused", "Culture", "Beach", "Romantic"];
+    const cityDiscoveryLocalImages = {
+      "Paris, France": "./images/destinations/paris-france.svg",
+      "Rome, Italy": "./images/destinations/rome-italy.svg",
+      "Tokyo, Japan": "./images/destinations/tokyo-japan.svg",
+      "London, United Kingdom": "./images/destinations/london-united-kingdom.svg",
+      "New York, United States": "./images/destinations/new-york-united-states.svg",
+      "Las Vegas, United States": "./images/destinations/las-vegas-united-states.svg",
+      "Orlando, United States": "./images/destinations/orlando-united-states.svg",
+      "Seoul, South Korea": "./images/destinations/seoul-south-korea.svg",
+      "Tanzania": "./images/destinations/tanzania.svg"
+    };
+
+    function getCityDiscoveryOptions(country) {
+      const candidates = hbData.countrySuggestions?.[country] || [];
+      const mood = String(hbState.cityDiscoveryMood || hbState.appState.styles?.[0] || "").toLowerCase();
+      const keywords = {
+        relaxing: ["relax", "slow", "scenic", "beach", "coast", "calm", "easygoing"],
+        adventurous: ["adventure", "outdoor", "island", "coast", "mountain", "wild", "active"],
+        "food-focused": ["food", "dinner", "restaurant", "street", "market", "meal", "wine"],
+        culture: ["history", "museum", "culture", "heritage", "temple", "landmark", "art"],
+        beach: ["beach", "coast", "water", "island", "resort", "ocean", "scenic"],
+        romantic: ["romantic", "couples", "sunset", "scenic", "dinner", "slow"]
+      }[mood] || [];
+
+      return candidates.map((city, index) => {
+        const guide = hbData.cityGuideData.find((item) => item.city === city);
+        const haystack = `${guide?.summary || ""} ${(guide?.highlights || []).join(" ")}`.toLowerCase();
+        const moodScore = keywords.reduce((score, keyword) => score + (haystack.includes(keyword) ? 3 : 0), 0);
+        const hero = hbUtils.getGuideHero(city);
+        return {
+          city,
+          guide,
+          hero,
+          rankSeed: index,
+          score: moodScore + Math.max(0, 10 - index)
+        };
+      }).sort((a, b) => b.score - a.score || a.rankSeed - b.rankSeed).slice(0, 3);
+    }
+
+    function renderCityDiscovery() {
+      const countrySelect = document.getElementById("city-discovery-country");
+      const countryShortcuts = document.getElementById("city-discovery-shortcuts");
+      const moodRow = document.getElementById("city-discovery-moods");
+      const results = document.getElementById("city-discovery-results");
+      if (!countrySelect || !countryShortcuts || !moodRow || !results) return;
+
+      const countries = Object.keys(hbData.countrySuggestions || {}).sort((a, b) => a.localeCompare(b));
+      countrySelect.innerHTML = [
+        `<option value="">Choose a country</option>`,
+        ...countries.map((country) => `<option value="${escapeUiHtml(country)}">${escapeUiHtml(country)}</option>`)
+      ].join("");
+      countrySelect.value = hbState.cityDiscoveryCountry || "";
+
+      const shortcutCountries = ["France", "Italy", "Japan", "Portugal", "Mexico", "United States"].filter((country) => countries.includes(country));
+      countryShortcuts.innerHTML = shortcutCountries.map((country) => `
+        <button class="city-discovery-shortcut ${country === hbState.cityDiscoveryCountry ? "is-active" : ""}" data-action="select-discovery-country" data-country="${escapeUiHtml(country)}" type="button">${escapeUiHtml(country)}</button>
+      `).join("");
+
+      moodRow.innerHTML = cityDiscoveryMoods.map((mood) => `
+        <button class="city-discovery-mood ${mood === hbState.cityDiscoveryMood ? "is-active" : ""}" data-action="set-discovery-mood" data-mood="${escapeUiHtml(mood)}" type="button">${escapeUiHtml(mood)}</button>
+      `).join("");
+
+      if (!hbState.cityDiscoveryCountry) {
+        results.innerHTML = `
+          <div class="city-discovery-empty">
+            <span class="material-symbols-outlined" aria-hidden="true">travel_explore</span>
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-[0.16em] text-primary">Start with a country</p>
+              <h4 class="mt-1 font-display text-xl font-bold text-ink">We will show you three cities to consider.</h4>
+              <p class="mt-2 text-sm leading-6 text-muted">Choose the place first. Then use your mood to steer the recommendations.</p>
+            </div>
+          </div>
+        `;
+        return;
+      }
+
+      const options = getCityDiscoveryOptions(hbState.cityDiscoveryCountry);
+      const moodCopy = hbState.cityDiscoveryMood
+        ? `Best matches for a ${hbState.cityDiscoveryMood.toLowerCase()} trip.`
+        : "Best matches based on the trip style you have already chosen.";
+      results.innerHTML = `
+        <div class="city-discovery-results-head">
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-[0.16em] text-primary">${escapeUiHtml(hbState.cityDiscoveryCountry)}</p>
+            <h4 class="mt-1 font-display text-2xl font-bold text-ink">Three cities worth considering</h4>
+            <p class="mt-2 text-sm leading-6 text-muted">${escapeUiHtml(moodCopy)} Pick one to carry into your trip plan.</p>
+          </div>
+          <span class="rounded-full bg-teal-soft px-3 py-2 text-xs font-semibold text-tertiary">Best match</span>
+        </div>
+        <div class="city-discovery-card-grid mt-4">
+          ${options.map((option, index) => {
+            const cityName = option.city.split(",")[0];
+            const fallbackImage = hbUtils.buildDestinationFallbackArt(cityName, "#2b5f8a");
+            const image = cityDiscoveryLocalImages[option.city] || option.hero.image;
+            const summary = option.guide?.summary || `A strong ${hbState.cityDiscoveryCountry} starting point with room to shape the trip around your interests.`;
+            const highlights = option.guide?.highlights || ["Local highlights", "Food and neighborhoods", "Room to explore"];
+            const fitLabel = index === 0 ? "Best match for your trip" : "Worth considering";
+            return `
+              <article class="city-discovery-card ${index === 0 ? "is-best-match" : ""}">
+                <div class="city-discovery-card-image">
+                  <img src="${escapeUiHtml(image)}" data-fallback-src="${escapeUiHtml(fallbackImage)}" alt="${escapeUiHtml(cityName)} destination" />
+                  <div class="city-discovery-card-image-scrim"></div>
+                  <div class="city-discovery-card-image-copy">
+                    <p class="text-[11px] font-semibold uppercase tracking-[0.16em] text-white/80">${escapeUiHtml(fitLabel)}</p>
+                    <h5 class="mt-1 font-display text-2xl font-extrabold text-white">${escapeUiHtml(cityName)}</h5>
+                  </div>
+                </div>
+                <div class="city-discovery-card-body">
+                  <p class="text-sm leading-6 text-ink">${escapeUiHtml(summary)}</p>
+                  <div class="city-discovery-highlight-row">
+                    ${highlights.slice(0, 3).map((highlight) => `<span>${escapeUiHtml(highlight)}</span>`).join("")}
+                  </div>
+                  <button class="mt-4 inline-flex min-h-[2.75rem] w-full items-center justify-center gap-2 rounded-full bg-primary px-4 py-3 text-sm font-bold text-white" data-action="choose-discovery-city" data-city="${escapeUiHtml(option.city)}" type="button">
+                    Choose ${escapeUiHtml(cityName)}
+                    <span class="material-symbols-outlined text-base" aria-hidden="true">arrow_forward</span>
+                  </button>
+                </div>
+              </article>
+            `;
+          }).join("")}
+        </div>
+      `;
+    }
+
+    function openCityDiscovery() {
+      renderCityDiscovery();
+      setActivePanel("city-discovery-panel");
     }
 
     function openCountryCitiesLibrary(country) {
@@ -962,7 +1295,7 @@ function updatePrimaryCta() {
           <div>
             <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Guide suggestions</p>
             <h4 class="mt-1 font-display text-lg font-bold text-ink">Use ${escapeUiHtml(sourceLabel)} as a shortcut</h4>
-            <p class="mt-2 text-sm leading-6 text-muted">These are optional signals from the destination guide. Apply what fits, then adjust anything that feels too broad.</p>
+            <p class="mt-2 text-sm leading-6 text-muted">These are optional ideas from the destination guide. Pick what fits, then change anything that feels too broad.</p>
           </div>
           ${feedback ? `<span class="guide-preference-feedback">${escapeUiHtml(feedback)}</span>` : ""}
         </div>
@@ -970,19 +1303,19 @@ function updatePrimaryCta() {
           <div class="guide-preference-card">
             <p class="guide-preference-label">Trip direction</p>
             <p class="guide-preference-value">${escapeUiHtml(styles.join(" + ") || "Use the guide's strongest trip style")}</p>
-            <p class="guide-preference-copy">${escapeUiHtml(signals.pace ? `${signals.pace} pace works best with this guide.` : "Keep the guide's strongest travel style visible in the itinerary.")}</p>
-            <button class="guide-preference-action" data-action="apply-guide-signals" type="button">Apply style and pace</button>
+            <p class="guide-preference-copy">${escapeUiHtml(signals.pace ? `${signals.pace} pace works well here.` : "This guide pairs well with the way you want to travel.")}</p>
+            <button class="guide-preference-action" data-action="apply-guide-signals" type="button">Use this style and pace</button>
           </div>
           <div class="guide-preference-card">
-            <p class="guide-preference-label">Must-have anchors</p>
-            <p class="guide-preference-value">${escapeUiHtml(signals.mustHaves || context.suggestedBase || "Add a strong guide-backed anchor")}</p>
-            <p class="guide-preference-copy">Add the guide's most useful anchors to your must-haves so the final draft keeps them visible.</p>
+            <p class="guide-preference-label">Must-have moments</p>
+            <p class="guide-preference-value">${escapeUiHtml(signals.mustHaves || context.suggestedBase || "Add a guide must-have")}</p>
+            <p class="guide-preference-copy">Add these ideas to your must-haves so they stay part of the trip.</p>
             <button class="guide-preference-action" data-action="apply-guide-must-haves" type="button">Add to must-haves</button>
           </div>
           <div class="guide-preference-card">
-            <p class="guide-preference-label">Planning logic</p>
+            <p class="guide-preference-label">Why this guide helps</p>
             <p class="guide-preference-value">${escapeUiHtml(signals.planningNote || context.preview || "Keep the route practical")}</p>
-            <p class="guide-preference-copy">This stays as guide context for the algorithm instead of becoming one of your hard rules.</p>
+            <p class="guide-preference-copy">The guide can inform the plan without becoming a rule you have to follow.</p>
           </div>
         </div>
       `;
@@ -1054,7 +1387,7 @@ function updatePrimaryCta() {
         mustSummary.textContent = summarizePreferenceText(hbState.appState.mustHaves, "No must-haves yet.");
       }
       if (ruleSummary) {
-        ruleSummary.textContent = summarizePreferenceText(hbState.appState.nonNegotiables, "No hard rules yet.");
+        ruleSummary.textContent = summarizePreferenceText(hbState.appState.nonNegotiables, "Nothing to avoid yet.");
       }
       if (styleCountHelper) {
         const remaining = Math.max(0, 3 - selectedStyles.length);
@@ -1094,6 +1427,25 @@ function updatePrimaryCta() {
       updatePreferenceHelpers();
     }
 
+    function markGuideItemsAdded(city, text) {
+      const incomingItems = (Array.isArray(text) ? text : String(text || "").split(","))
+        .map(cleanPreferencePart)
+        .filter(Boolean);
+      if (!city || !incomingItems.length) return;
+
+      const existingItems = Array.isArray(hbState.guideAddedItems) ? hbState.guideAddedItems : [];
+      const knownKeys = new Set(existingItems.map((entry) => `${entry.city || ""}::${String(entry.item || "").toLowerCase()}`));
+      const nextItems = [...existingItems];
+      incomingItems.forEach((item) => {
+        const key = `${city}::${item.toLowerCase()}`;
+        if (knownKeys.has(key)) return;
+        nextItems.push({ city, item });
+        knownKeys.add(key);
+      });
+      hbState.guideAddedItems = nextItems.slice(-24);
+      saveGuideBrowseMemory();
+    }
+
     function updateModeUI() {
       const isSimple = hbState.appState.mode === "simple";
       const modeExplainerTitle = document.getElementById("mode-explainer-title");
@@ -1101,11 +1453,11 @@ function updatePrimaryCta() {
       hbRefs.detailedFields.classList.toggle("hidden", isSimple);
       hbRefs.modeBadge.textContent = isSimple ? "Simple mode" : "Detailed mode";
       if (modeExplainerTitle) {
-        modeExplainerTitle.textContent = isSimple ? "Simple asks only what matters most." : "Detailed adds more specific trip choices.";
+        modeExplainerTitle.textContent = isSimple ? "Simple mode covers the essentials." : "Detailed mode gives you more control.";
       }
       if (modeExplainerCopy) {
         modeExplainerCopy.textContent = isSimple
-          ? "Answer the core choices and let the planner fill in the rest."
+          ? "Answer the core choices and let us fill in the rest."
           : "Use these when restaurants, free time, top sights, or hidden gems should noticeably change the plan.";
       }
       hbRefs.simpleModeBtn.classList.toggle("bg-white", isSimple);
@@ -1143,9 +1495,22 @@ function updatePrimaryCta() {
         tab.classList.toggle("is-active", active);
         tab.classList.toggle("text-primary", active);
         tab.classList.toggle("text-muted", !active);
+        if (active) tab.setAttribute("aria-current", "page");
+        else tab.removeAttribute("aria-current");
+      });
+
+      hbRefs.tabs.forEach((tab) => {
+        if (tab.dataset.target === targetId) tab.setAttribute("aria-current", "step");
+        else tab.removeAttribute("aria-current");
       });
 
       renderPanelContent(targetId);
+
+      if (!['editorial-guide-panel', 'editorial-country-panel'].includes(targetId)) {
+        document.title = 'Horizon Bound | Build Your Trip';
+      }
+
+      updateRouteMetadata(getRouteForPanel(targetId));
 
       updatePrimaryCta();
       updateFlowStatus();
@@ -1190,7 +1555,7 @@ function updatePrimaryCta() {
         clearThinkingTimers();
         renderTrip();
         setActivePanel("trip-panel");
-      }, 3200);
+      }, 900);
     }
 
     function generateTripFlow() {
@@ -1799,6 +2164,10 @@ function updatePrimaryCta() {
         setActivePanel("build-panel");
       }
 
+      if (action === "open-city-discovery") {
+        openCityDiscovery();
+      }
+
       if (action === "open-trip-preview") {
         updateStateFromInputs();
         renderTrip();
@@ -1852,8 +2221,28 @@ function updatePrimaryCta() {
       handleGuideActionTrigger(trigger, event);
     }, true);
 
+    document.addEventListener("error", (event) => {
+      const image = event.target;
+      if (!(image instanceof HTMLImageElement)) return;
+      const fallback = image.dataset.fallbackSrc;
+      if (!fallback || image.dataset.fallbackApplied === "1") return;
+      image.dataset.fallbackApplied = "1";
+      image.src = fallback;
+    }, true);
+
     document.addEventListener("click", (event) => {
       const trigger = event.target.closest("[data-action]");
+      if (trigger?.dataset.action === "open-saved") {
+        event.preventDefault();
+        renderSavedPanel();
+        setActivePanel("saved-panel");
+        return;
+      }
+      if (trigger?.dataset.action === "open-city-discovery") {
+        event.preventDefault();
+        openCityDiscovery();
+        return;
+      }
       handleGuideActionTrigger(trigger, event);
     }, true);
 
@@ -1881,9 +2270,13 @@ function updatePrimaryCta() {
 
     document.querySelectorAll(".account-option").forEach((button) => {
       button.addEventListener("click", () => {
-        hbState.appState.accountMethod = button.dataset.provider;
+        if (button.dataset.provider !== "local") return;
+        updateStateFromInputs();
+        hbState.appState.accountMethod = "local";
+        persistTripProfile({ feedback: "Saved on this browser" });
+        persistTripDraft({ feedback: "Trip inputs saved on this browser" });
         closeAccountModal();
-        setActivePanel("details-panel");
+        setActivePanel("saved-panel");
       });
     });
 
@@ -1902,6 +2295,8 @@ function updatePrimaryCta() {
         closeAccountModal();
       }
     });
+
+    hbRefs.accountModal.addEventListener("keydown", handleAccountModalKeydown);
 
     hbRefs.manualAdjustBtn.addEventListener("click", () => {
       hbState.appState.mode = "detailed";
@@ -1925,6 +2320,9 @@ function updatePrimaryCta() {
       const action = trigger.dataset.menuAction;
       if (action === "plan-trip") {
         setActivePanel("build-panel");
+      }
+      if (action === "city-discovery") {
+        openCityDiscovery();
       }
       if (action === "my-trip") {
         renderTrip();
@@ -2027,6 +2425,37 @@ function updatePrimaryCta() {
       }
     });
 
+    document.getElementById("city-discovery-panel")?.addEventListener("click", (event) => {
+      const trigger = event.target.closest("[data-action]");
+      if (!trigger) return;
+      const { action, country, mood, city } = trigger.dataset;
+
+      if (action === "select-discovery-country" && country) {
+        hbState.cityDiscoveryCountry = country;
+        renderCityDiscovery();
+        return;
+      }
+
+      if (action === "set-discovery-mood" && mood) {
+        hbState.cityDiscoveryMood = mood;
+        renderCityDiscovery();
+        return;
+      }
+
+      if (action === "choose-discovery-city" && city) {
+        handoffGuideToBuild({ city });
+      }
+
+      if (action === "open-build") {
+        setActivePanel("build-panel");
+      }
+    });
+
+    document.getElementById("city-discovery-country")?.addEventListener("change", (event) => {
+      hbState.cityDiscoveryCountry = event.target.value;
+      renderCityDiscovery();
+    });
+
     document.getElementById("city-guides-panel").addEventListener("click", (event) => {
       const trigger = event.target.closest("[data-action]");
       if (!trigger) return;
@@ -2045,6 +2474,7 @@ function updatePrimaryCta() {
 
       if (action === "open-city-guide" && city) {
         hbState.selectedGuideCity = city;
+        hbState.selectedGuideCategory = "";
         hbState.guideActionState.city = `Opened ${city.split(",")[0]}`;
         renderCityGuideDetail(city);
         setActivePanel("editorial-guide-panel");
@@ -2087,6 +2517,7 @@ function updatePrimaryCta() {
       }
 
       if (action === "open-country-guides-home") {
+        hbState.selectedGuideCategory = "";
         renderCountryGuidesLanding();
         setActivePanel("country-guides-panel");
         return;
@@ -2191,9 +2622,10 @@ function updatePrimaryCta() {
       const trigger = event.target.closest("[data-action]");
       if (!trigger) return;
 
-      const { action, city, country, sectionId } = trigger.dataset;
+      const { action, city, country, sectionId, item, category } = trigger.dataset;
 
       if (action === "open-city-guides-home") {
+        hbState.selectedGuideCategory = "";
         renderCityGuidesLanding();
         setActivePanel("city-guides-panel");
         return;
@@ -2201,6 +2633,7 @@ function updatePrimaryCta() {
 
       if (action === "open-city-guide" && city) {
         hbState.selectedGuideCity = city;
+        hbState.selectedGuideCategory = "";
         hbState.guideActionState.city = `Opened ${city.split(",")[0]}`;
         renderCityGuideDetail(city);
         setActivePanel("editorial-guide-panel");
@@ -2246,6 +2679,49 @@ function updatePrimaryCta() {
       if (action === "scroll-guide-section" && sectionId) {
         document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth", block: "start" });
       }
+
+      if (action === "open-city-guide-category" && city && category) {
+        event.preventDefault();
+        hbState.selectedGuideCity = city;
+        hbState.selectedGuideCategory = category;
+        hbState.guideActionState.city = `Opened ${city.split(",")[0]}`;
+        const route = getCityGuideCategoryRoute(city, category);
+        if (window.location.hash !== `#${route}`) {
+          window.location.hash = route;
+        } else {
+          renderCityGuideDetail(city);
+          setActivePanel("editorial-guide-panel", { updateHash: false });
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+        return;
+      }
+
+      if (action === "add-guide-item" && city && item) {
+        applyGuidePlanningContextFromCity(city);
+        appendPreferenceText("must-haves-input", item);
+        markGuideItemsAdded(city, item);
+        trigger.textContent = "Added to my trip";
+        trigger.disabled = true;
+        trigger.setAttribute("aria-pressed", "true");
+        const confirmation = document.getElementById("city-guide-add-confirmation");
+        if (confirmation) {
+          confirmation.classList.remove("hidden");
+          confirmation.innerHTML = `
+            <div class="flex flex-col gap-3 rounded-[20px] border border-teal-line bg-teal-soft px-4 py-4 sm:flex-row sm:items-center sm:justify-between">
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined mt-0.5 text-tertiary" aria-hidden="true">check_circle</span>
+                <div>
+                  <p class="font-semibold text-ink">Added to your trip</p>
+                  <p class="mt-1 text-sm leading-6 text-muted">${escapeUiHtml(item)} is now in your must-haves. We will use it when we shape the days.</p>
+                </div>
+              </div>
+              <a class="guide-action-button shrink-0 rounded-full bg-secondary px-4 py-2 text-center text-sm font-semibold text-white" data-action="use-city-guide" data-city="${escapeUiHtml(city)}" href="#build">Review in Build</a>
+            </div>
+          `;
+        }
+        renderGuidePlanningContext();
+        return;
+      }
     });
 
     document.getElementById("editorial-country-panel").addEventListener("click", (event) => {
@@ -2267,6 +2743,7 @@ function updatePrimaryCta() {
 
       if (action === "open-city-guide" && city) {
         hbState.selectedGuideCity = city;
+        hbState.selectedGuideCategory = "";
         hbState.guideActionState.city = `Opened ${city.split(",")[0]}`;
         renderCityGuideDetail(city);
         setActivePanel("editorial-guide-panel");
@@ -2275,6 +2752,7 @@ function updatePrimaryCta() {
 
       if (action === "open-city-guide-compare" && city && trigger.dataset.compareCity) {
         hbState.selectedGuideCity = city;
+        hbState.selectedGuideCategory = "";
         hbState.guideCompare = {
           type: "city",
           current: city,
@@ -2441,8 +2919,10 @@ function updatePrimaryCta() {
     window.addEventListener("hashchange", applyHashRoute);
     window.addEventListener("scroll", scheduleEditorialStickyBarsUpdate, { passive: true });
     window.addEventListener("resize", scheduleEditorialStickyBarsUpdate, { passive: true });
+    window.addEventListener("resize", syncBottomContentPadding, { passive: true });
 
     restoreGuideBrowseMemory();
+    applyPlannerDestinationDeepLink();
     hydrateTripProfile();
     hydrateSavedDraftStatus();
     updateModeUI();
@@ -2451,6 +2931,7 @@ function updatePrimaryCta() {
     updateBuildFormHelpers();
     updateDestinationHelper();
     updatePrimaryCta();
+    syncBottomContentPadding();
     updateEditorialStickyBars();
     syncEditorialStickyObserver();
     renderPanelContent("build-panel");

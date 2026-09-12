@@ -1,0 +1,2072 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <base href="../" />
+  <meta name="robots" content="index, follow" />
+<meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta id="page-meta-description" name="description" content="Build a vacation around the places, pace, food, and experiences you care about." />
+  <meta id="page-og-title" property="og:title" content="Horizon Bound | Build Your Trip" />
+  <meta id="page-og-description" property="og:description" content="Build a vacation around the places, pace, food, and experiences you care about." />
+  <meta property="og:type" content="website" />
+  <link id="canonical-url" rel="canonical" href="https://hamiltondan20-sys.github.io/fun-app/plan/" />
+  <title>Horizon Bound | Build Your Trip</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet"
+  />
+  <link href="./assets/app.css?v=20260830e" rel="stylesheet" />
+  <link href="./assets/app-inline.css?v=20260912b" rel="stylesheet" />
+</head>
+<body class="text-ink">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="app-shell mx-auto flex min-h-screen w-full max-w-[40rem] flex-col pb-32">
+    <header class="px-5 pt-6">
+      <div class="glass flex items-center justify-between rounded-[28px] border border-white/70 px-4 py-3 shadow-card">
+        <button id="header-menu-btn" class="flex h-11 w-11 items-center justify-center rounded-full bg-white/70 text-secondary" aria-label="Open menu" title="Open menu" type="button">
+          <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+        </button>
+        <div class="text-center">
+          <p class="text-[11px] font-semibold uppercase tracking-[0.32em] text-primary">Horizon Bound</p>
+          <h1 class="font-display text-lg font-bold text-ink">Build Your Trip</h1>
+        </div>
+        <button id="header-saved-btn" class="flex h-11 w-11 items-center justify-center rounded-full bg-white/70 text-secondary" data-action="open-saved" aria-label="Open saved trips" title="Open saved trips" type="button">
+          <span class="material-symbols-outlined" aria-hidden="true">favorite</span>
+        </button>
+      </div>
+
+      <div id="menu-drawer" class="menu-drawer mt-3 rounded-[28px] border border-line bg-white p-4 shadow-card">
+        <div class="grid gap-2">
+          <button class="rounded-2xl bg-surface-soft px-4 py-3 text-left text-sm font-semibold text-ink ring-1 ring-line" data-menu-action="plan-trip" type="button">Plan My Trip</button>
+          <button class="rounded-2xl bg-surface-soft px-4 py-3 text-left text-sm font-semibold text-ink ring-1 ring-line" data-menu-action="city-discovery" type="button">Help Me Choose a Place</button>
+          <button class="rounded-2xl bg-surface-soft px-4 py-3 text-left text-sm font-semibold text-ink ring-1 ring-line" data-menu-action="my-trip" type="button">My Trip</button>
+          <button class="rounded-2xl bg-surface-soft px-4 py-3 text-left text-sm font-semibold text-ink ring-1 ring-line" data-menu-action="city-guides" type="button">City Guides</button>
+          <button class="rounded-2xl bg-surface-soft px-4 py-3 text-left text-sm font-semibold text-ink ring-1 ring-line" data-menu-action="country-guides" type="button">Country Guides</button>
+          <button class="rounded-2xl bg-surface-soft px-4 py-3 text-left text-sm font-semibold text-ink ring-1 ring-line" data-menu-action="faq" type="button">FAQ</button>
+          <button class="rounded-2xl bg-surface-soft px-4 py-3 text-left text-sm font-semibold text-ink ring-1 ring-line" data-menu-action="contact" type="button">Contact</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="flex-1 px-5 pt-5">
+      <section class="hero-panel homepage-hero relative overflow-hidden rounded-[32px] px-5 py-6 text-white shadow-float">
+        <div class="homepage-hero-grid">
+          <div>
+        <div class="inline-flex rounded-full bg-white/18 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-white">
+          Plan a trip you will be excited about
+        </div>
+        <p class="homepage-hero-kicker mt-4 text-sm font-semibold leading-6">Tell us where you are going and what you enjoy. We will shape the days around you.</p>
+        <h2 class="homepage-hero-title font-display font-extrabold">
+          Build a trip you will actually enjoy.
+        </h2>
+        <p class="homepage-hero-copy mt-4 text-base leading-7">
+          Start with the basics, then get a day-by-day plan built around your pace, budget, and the moments you do not want to miss.
+        </p>
+        <div class="homepage-hero-actions mt-5">
+          <button class="bg-white text-secondary shadow-card" data-action="open-build" type="button">
+            <span class="material-symbols-outlined text-base" aria-hidden="true">auto_awesome</span>
+            Build my trip
+          </button>
+          <button class="bg-white/12 text-white ring-1 ring-white/24" data-action="open-city-discovery" type="button">
+            <span class="material-symbols-outlined text-base" aria-hidden="true">travel_explore</span>
+            Help me choose a place
+          </button>
+        </div>
+        <div class="homepage-proof-grid mt-5">
+          <div class="rounded-2xl bg-white/16 px-3 py-3">
+            <p class="text-[11px] uppercase tracking-[0.18em] text-white/70">Simple</p>
+            <p class="mt-1 text-sm font-semibold">Start with the basics</p>
+          </div>
+          <div class="rounded-2xl bg-white/16 px-3 py-3">
+            <p class="text-[11px] uppercase tracking-[0.18em] text-white/70">Personal</p>
+            <p class="mt-1 text-sm font-semibold">Fits your pace</p>
+          </div>
+          <div class="rounded-2xl bg-white/16 px-3 py-3">
+            <p class="text-[11px] uppercase tracking-[0.18em] text-white/70">Flexible</p>
+            <p class="mt-1 text-sm font-semibold">Change it anytime</p>
+          </div>
+        </div>
+          </div>
+          <aside class="homepage-insight-panel rounded-[26px] px-4 py-4">
+            <div class="homepage-image-frame">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Amalfi%20Coast.JPG?width=1600" alt="The Amalfi Coast with bright water and hillside views" loading="eager" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='./images/destinations/amalfi-coast-italy.svg';" />
+              <a class="homepage-image-credit" href="https://commons.wikimedia.org/wiki/File:Amalfi_Coast.JPG" target="_blank" rel="noreferrer">Photo: Jimlonj, Wikimedia Commons</a>
+              <div class="homepage-image-copy">
+                <p class="text-[11px] font-semibold uppercase tracking-[0.18em] text-white/80">Picture the trip</p>
+                <p class="mt-1 font-display text-xl font-extrabold text-white">Start with a place you can see yourself in.</p>
+              </div>
+            </div>
+            <div class="homepage-insight-heading mt-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.16em] text-white/72">What goes into your plan</p>
+              <p class="mt-1 text-sm leading-6 text-white/80">The details that make a plan feel like yours.</p>
+            </div>
+            <div class="homepage-signal-stack mt-4">
+              <div class="homepage-signal-card rounded-2xl px-4 py-3">
+                <p class="text-sm font-bold text-white">The place</p>
+                <p class="mt-1 text-sm leading-6 text-white/76">Sights, neighborhoods, food, and the local rhythm.</p>
+              </div>
+              <div class="homepage-signal-card rounded-2xl px-4 py-3">
+                <p class="text-sm font-bold text-white">The practical stuff</p>
+                <p class="mt-1 text-sm leading-6 text-white/76">Dates, travelers, budget, flights, pets, and where you will stay.</p>
+              </div>
+              <div class="homepage-signal-card rounded-2xl px-4 py-3">
+                <p class="text-sm font-bold text-white">Your kind of trip</p>
+                <p class="mt-1 text-sm leading-6 text-white/76">Pace, vibe, must-haves, and things you want to avoid.</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="homepage-trip-notes mt-5" aria-label="Trip planning ideas">
+        <div class="homepage-trip-notes-lead">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Trip planning notes</p>
+          <h3 class="mt-2 font-display text-2xl font-bold">Start with the moments you want to remember.</h3>
+          <p class="mt-2 text-sm leading-6 text-muted">The rest of the plan should make those moments easier to enjoy.</p>
+        </div>
+        <div class="homepage-trip-notes-list">
+          <div class="homepage-trip-note">
+            <span class="material-symbols-outlined" aria-hidden="true">photo_camera</span>
+            <div>
+              <p class="font-semibold text-ink">See the big thing</p>
+              <p class="mt-1 text-sm leading-6 text-muted">A landmark, beach, trail, or neighborhood worth seeing.</p>
+            </div>
+          </div>
+          <div class="homepage-trip-note">
+            <span class="material-symbols-outlined" aria-hidden="true">restaurant</span>
+            <div>
+              <p class="font-semibold text-ink">Eat somewhere good</p>
+              <p class="mt-1 text-sm leading-6 text-muted">One meal you will talk about later.</p>
+            </div>
+          </div>
+          <div class="homepage-trip-note">
+            <span class="material-symbols-outlined" aria-hidden="true">directions_walk</span>
+            <div>
+              <p class="font-semibold text-ink">Leave room to wander</p>
+              <p class="mt-1 text-sm leading-6 text-muted">Time between plans keeps the day from feeling rushed.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="flow-navigation mt-6 rounded-[28px] border border-line bg-surface-card p-4 shadow-card">
+        <div class="overflow-x-auto">
+          <div class="stage-tab-strip">
+            <div class="stage-tab-strip-inner">
+          <button class="stage-tab rounded-full px-4 py-2 text-sm font-semibold text-muted" data-target="explore-panel">
+            Explore
+          </button>
+          <button class="stage-tab rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary shadow-sm" data-target="build-panel">
+            Build
+          </button>
+          <button class="stage-tab rounded-full px-4 py-2 text-sm font-semibold text-muted" data-target="details-panel">
+            Details
+          </button>
+          <button class="stage-tab rounded-full px-4 py-2 text-sm font-semibold text-muted" data-target="blueprint-panel">
+            Review
+          </button>
+          <button class="stage-tab rounded-full px-4 py-2 text-sm font-semibold text-muted" data-target="trip-panel">
+            Your Trip
+          </button>
+          <button class="stage-tab rounded-full px-4 py-2 text-sm font-semibold text-muted" data-target="saved-panel">
+            Saved
+          </button>
+            </div>
+          </div>
+        </div>
+        <div id="flow-status-strip" class="flow-status-strip mt-4" aria-live="polite">
+          <div class="flow-status-item">
+            <p class="flow-status-label">Now</p>
+            <p id="flow-status-current" class="flow-status-value">Trip basics</p>
+          </div>
+          <div class="flow-status-item">
+            <p class="flow-status-label">What to do</p>
+            <p id="flow-status-focus" class="flow-status-value">Start with the trip basics.</p>
+            <p id="flow-status-copy" class="flow-status-copy">Tell us where you are going, when, and who is coming.</p>
+          </div>
+          <div class="flow-status-item">
+            <p class="flow-status-label">Next</p>
+            <p id="flow-status-next" class="flow-status-value">Choose preferences</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-panel mt-6" id="explore-panel" aria-labelledby="explore-panel-title">
+        <div class="rounded-[28px] border border-line bg-surface-card p-5 shadow-card">
+          <div class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-[0.24em] text-primary">Explore first</p>
+              <h3 id="explore-panel-title" class="mt-1 font-display text-2xl font-bold">Still deciding?</h3>
+              <p class="mt-2 text-sm leading-6 text-muted">
+                Get ideas before you fill in the details.
+              </p>
+            </div>
+            <span class="rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">Get inspired</span>
+          </div>
+
+          <div class="mt-5 grid gap-3 sm:grid-cols-3">
+            <div class="rounded-[22px] border border-line bg-white px-4 py-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Find your vibe</p>
+              <h4 class="mt-2 font-display text-lg font-bold">Start with a feeling</h4>
+              <p class="mt-2 text-sm leading-6 text-muted">See what different trips feel like before you worry about the details.</p>
+            </div>
+            <div class="rounded-[22px] border border-line bg-white px-4 py-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Compare places</p>
+              <h4 class="mt-2 font-display text-lg font-bold">City or country first</h4>
+              <p class="mt-2 text-sm leading-6 text-muted">Explore a few places until one feels right.</p>
+            </div>
+            <div class="rounded-[22px] border border-line bg-white px-4 py-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">See an example</p>
+              <h4 class="mt-2 font-display text-lg font-bold">Preview a real trip</h4>
+              <p class="mt-2 text-sm leading-6 text-muted">See how an idea can turn into a day-by-day plan.</p>
+            </div>
+          </div>
+
+          <div class="mt-5 rounded-[24px] border border-line bg-white px-4 py-4">
+            <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Start wherever you are</p>
+                <h4 class="mt-1 font-display text-xl font-bold">Know what you want? Start there.</h4>
+                <p class="mt-2 max-w-[48rem] text-sm leading-6 text-muted">Have a city in mind, or just a mood? Either way, you can get moving.</p>
+              </div>
+              <span class="self-start rounded-full bg-teal-soft px-3 py-1 text-xs font-semibold text-tertiary">Your starting point</span>
+            </div>
+            <div class="explore-planning-grid mt-4">
+              <div class="explore-planning-card rounded-[20px] px-4 py-4">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">I know the city</p>
+                <p class="mt-2 font-display text-lg font-bold text-ink">Open a city guide</p>
+                <p class="mt-2 text-sm leading-6 text-muted">See the sights, neighborhoods, food, and local tips worth building around.</p>
+              </div>
+              <div class="explore-planning-card rounded-[20px] px-4 py-4">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">I know the country</p>
+                <p class="mt-2 font-display text-lg font-bold text-ink">Compare possible bases</p>
+                <p class="mt-2 text-sm leading-6 text-muted">Compare a few cities, then take your favorite into Build.</p>
+              </div>
+              <div class="explore-planning-card rounded-[20px] px-4 py-4">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">I know the feeling</p>
+                <p class="mt-2 font-display text-lg font-bold text-ink">Find a trip that fits</p>
+                <p class="mt-2 text-sm leading-6 text-muted">Start with relaxing, adventurous, food-focused, family, or romantic ideas.</p>
+              </div>
+              <div class="explore-planning-card rounded-[20px] px-4 py-4">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">I am ready</p>
+                <p class="mt-2 font-display text-lg font-bold text-ink">Build my trip</p>
+                <p class="mt-2 text-sm leading-6 text-muted">Add your destination, dates, travelers, and preferences.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5 rounded-[24px] bg-surface-soft px-4 py-4">
+            <div class="flex items-start justify-between gap-3">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Example mood</p>
+                <h4 class="mt-2 font-display text-lg font-bold">Paris without the rush</h4>
+                <p class="mt-2 text-sm leading-6 text-muted">Big sights, a great dinner, and time to wander.</p>
+              </div>
+              <span class="rounded-full bg-white px-3 py-1 text-xs font-semibold text-secondary ring-1 ring-line">Inspiration</span>
+            </div>
+          </div>
+
+          <div class="map-shell mt-5">
+            <div class="border-b border-line px-4 py-4">
+              <div class="flex items-start justify-between gap-3">
+                <div>
+                  <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Explore map</p>
+                  <h4 class="mt-1 font-display text-lg font-bold">See the area</h4>
+                  <p class="mt-2 text-sm leading-6 text-muted">Get a feel for where your trip could happen.</p>
+                </div>
+                <span class="rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">Interactive</span>
+              </div>
+              <div id="explore-map-chips" class="mt-4 flex flex-wrap gap-2"></div>
+            </div>
+            <iframe id="explore-map-frame" class="map-frame" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Explore map"></iframe>
+          </div>
+
+          <div class="mt-5 rounded-[24px] border border-line bg-white px-4 py-4">
+            <div class="flex items-start justify-between gap-3">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Trip ideas for this place</p>
+                <h4 id="explore-guide-title" class="mt-1 font-display text-lg font-bold"></h4>
+                <p id="explore-guide-summary" class="mt-2 text-sm leading-6 text-muted"></p>
+              </div>
+              <span class="rounded-full bg-warm px-3 py-1 text-xs font-semibold text-primary">Good to know</span>
+            </div>
+            <div id="explore-guide-grid" class="mt-4 grid gap-3"></div>
+          </div>
+
+          <div class="mt-5 grid gap-3 sm:grid-cols-2">
+            <div class="rounded-[22px] border border-line bg-white px-4 py-4">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">When a place clicks</p>
+                <p class="mt-2 font-display text-lg font-bold">Start building</p>
+                <p class="mt-2 text-sm leading-6 text-muted">Add your dates and preferences to make the idea yours.</p>
+            </div>
+            <div class="rounded-[22px] border border-line bg-white px-4 py-4">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Want more ideas?</p>
+                <p class="mt-2 font-display text-lg font-bold">Compare another place</p>
+                <p class="mt-2 text-sm leading-6 text-muted">Keep exploring until you find the right fit.</p>
+            </div>
+          </div>
+
+          <div class="mt-5 grid gap-3 sm:grid-cols-2">
+            <button class="rounded-[22px] bg-surface-soft px-4 py-4 text-left ring-1 ring-line" data-action="open-build" type="button">
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Ready to start</p>
+              <p class="mt-2 font-display text-lg font-bold text-ink">Build my trip</p>
+              <p class="mt-2 text-sm leading-6 text-muted">Make a plan for your dates, pace, and budget.</p>
+            </button>
+            <button class="rounded-[22px] bg-surface-soft px-4 py-4 text-left ring-1 ring-line" data-action="open-trip-preview" type="button">
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">See the destination</p>
+              <p class="mt-2 font-display text-lg font-bold text-ink">See a sample trip</p>
+              <p class="mt-2 text-sm leading-6 text-muted">See how an idea can turn into a day-by-day plan.</p>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-panel city-discovery-surface mt-6" id="city-discovery-panel" aria-labelledby="city-discovery-panel-title">
+        <div class="city-discovery-shell rounded-[28px] border border-line bg-surface-card p-5 shadow-card">
+          <div class="city-discovery-intro">
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-[0.24em] text-primary">Not sure where to go?</p>
+              <h3 id="city-discovery-panel-title" class="mt-1 font-display text-3xl font-bold">Choose a country. We will show you three cities to consider.</h3>
+              <p class="mt-3 max-w-[46rem] text-base leading-7 text-muted">Start broad, choose the feeling you want, and compare three cities before you plan the details.</p>
+            </div>
+            <span class="rounded-full bg-teal-soft px-3 py-2 text-xs font-semibold text-tertiary">Three ideas to compare</span>
+          </div>
+
+          <div class="city-discovery-controls mt-6">
+            <label class="city-discovery-country-field">
+              <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Where are you thinking?</span>
+              <select id="city-discovery-country" class="mt-2 w-full rounded-2xl border border-line bg-white px-4 py-3 text-base font-semibold text-ink focus:border-secondary focus:ring-secondary">
+                <option value="">Choose a country</option>
+              </select>
+            </label>
+            <div class="city-discovery-shortcut-wrap">
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Popular city guides</p>
+              <div id="city-discovery-shortcuts" class="mt-3 flex flex-wrap gap-2"></div>
+            </div>
+          </div>
+
+          <div class="city-discovery-mood-panel mt-5">
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">What sounds good?</p>
+              <p class="mt-1 text-sm leading-6 text-muted">This helps us find better matches. You can change the plan later.</p>
+            </div>
+            <div id="city-discovery-moods" class="mt-3 flex flex-wrap gap-2"></div>
+          </div>
+
+          <div id="city-discovery-results" class="mt-6" aria-live="polite"></div>
+
+          <div class="mt-6 flex flex-col gap-3 border-t border-line pt-5 sm:flex-row sm:items-center sm:justify-between">
+            <p class="text-sm leading-6 text-muted">Already know where you are going?</p>
+            <button class="inline-flex min-h-[2.75rem] items-center justify-center gap-2 rounded-full bg-surface-soft px-4 py-3 text-sm font-bold text-secondary ring-1 ring-line" data-action="open-build" type="button">
+              Build my trip instead
+              <span class="material-symbols-outlined text-base" aria-hidden="true">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-panel guide-library-surface mt-6" id="city-guides-panel" aria-labelledby="city-guides-panel-title">
+        <div class="rounded-[28px] border border-line bg-surface-card p-5 shadow-card">
+          <div class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-[0.24em] text-primary">City guides</p>
+              <h3 id="city-guides-panel-title" class="mt-1 font-display text-2xl font-bold">Browse popular places before you start planning</h3>
+              <p class="mt-2 text-sm leading-6 text-muted">
+                Get a feel for each city before you start building a trip.
+              </p>
+            </div>
+            <span class="rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">Top cities</span>
+          </div>
+
+          <div class="mt-5 flex flex-wrap gap-2">
+            <button class="rounded-full bg-secondary px-4 py-2 text-sm font-semibold text-white" type="button">City Guides</button>
+            <button class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="open-country-guides-home" type="button">Country Guides</button>
+          </div>
+
+          <div class="mt-5 grid gap-3 sm:grid-cols-[1.6fr_1fr]">
+            <label class="relative rounded-2xl border border-line bg-white px-4 py-3">
+              <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Search cities</span>
+              <input id="city-guides-search" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" type="text" placeholder="Search by city, country, or vibe" />
+              <p class="keyboard-field-hint keyboard-field-hint--compact">Use arrow keys to move through matches, Enter to open one, and Esc to close.</p>
+              <div id="city-guides-search-suggestions" class="absolute left-3 right-3 top-[calc(100%-0.4rem)] z-20 hidden rounded-[22px] border border-line bg-white p-2 shadow-card"></div>
+            </label>
+            <label class="rounded-2xl border border-line bg-white px-4 py-3">
+              <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Filter by region</span>
+              <select id="city-guides-continent" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0">
+                <option value="all">All regions</option>
+                <option>Europe</option>
+                <option>Asia</option>
+                <option>North America</option>
+                <option>Middle East</option>
+                <option>Africa</option>
+                <option>South America</option>
+                <option>Oceania</option>
+                <option>Other</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="mt-5 rounded-[22px] border border-line bg-white px-4 py-4">
+            <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Need a broader start?</p>
+                <p class="mt-2 text-sm leading-6 text-muted">If a country feels right but the exact city still feels open, switch to Country Guides first and narrow down from there.</p>
+              </div>
+              <button class="rounded-full bg-surface-soft px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="open-country-guides-home" type="button">
+                Browse Country Guides
+              </button>
+            </div>
+          </div>
+
+          <div id="city-guides-featured" class="mt-5 grid gap-3"></div>
+          <div id="city-guides-results-meta" class="mt-5 flex flex-wrap items-start justify-between gap-3 text-sm text-muted"></div>
+          <div id="city-guides-compare-slot" class="mt-5 hidden rounded-[24px] border border-line bg-white px-4 py-4 shadow-card"></div>
+          <div id="city-guides-grid" class="mt-5 grid gap-3"></div>
+        </div>
+      </section>
+
+      <section class="page-panel mt-6" id="country-guides-panel">
+        <div class="rounded-[28px] border border-line bg-surface-card p-5 shadow-card">
+          <div class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-[0.24em] text-primary">Country guides</p>
+              <h3 class="mt-1 font-display text-2xl font-bold">Browse country guides before you choose a city</h3>
+              <p class="mt-2 text-sm leading-6 text-muted">
+                Start with the country, then compare cities that could make a good base.
+              </p>
+            </div>
+            <span id="country-guide-count" class="rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">Travel guides</span>
+          </div>
+
+          <div class="mt-5 flex flex-wrap gap-2">
+            <button class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="open-city-guides-home" type="button">City Guides</button>
+            <button class="rounded-full bg-secondary px-4 py-2 text-sm font-semibold text-white" type="button">Country Guides</button>
+          </div>
+
+          <div class="mt-5 grid gap-3 sm:grid-cols-[1.6fr_1fr]">
+            <label class="relative rounded-2xl border border-line bg-white px-4 py-3">
+              <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Search countries</span>
+              <input id="country-guides-search" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" type="text" placeholder="Search by country or trip style" />
+              <p class="keyboard-field-hint keyboard-field-hint--compact">Use arrow keys to move through matches, Enter to open one, and Esc to close.</p>
+              <div id="country-guides-search-suggestions" class="absolute left-3 right-3 top-[calc(100%-0.4rem)] z-20 hidden rounded-[22px] border border-line bg-white p-2 shadow-card"></div>
+            </label>
+            <label class="rounded-2xl border border-line bg-white px-4 py-3">
+              <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Filter by region</span>
+              <select id="country-guides-continent" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0">
+                <option value="all">All regions</option>
+                <option>Europe</option>
+                <option>Asia</option>
+                <option>North America</option>
+                <option>Middle East</option>
+                <option>Africa</option>
+                <option>South America</option>
+                <option>Oceania</option>
+                <option>Other</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="mt-5 rounded-[22px] border border-line bg-white px-4 py-4">
+            <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Already know the city?</p>
+                <p class="mt-2 text-sm leading-6 text-muted">Go straight to City Guides when you are ready for a specific place and want a more concrete read.</p>
+              </div>
+              <button class="rounded-full bg-surface-soft px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="open-city-guides-home" type="button">
+                Browse City Guides
+              </button>
+            </div>
+          </div>
+
+          <div id="country-guides-featured" class="mt-5 grid gap-3"></div>
+          <div id="country-guides-results-meta" class="mt-5 flex flex-wrap items-start justify-between gap-3 text-sm text-muted"></div>
+          <div id="country-guides-compare-slot" class="mt-5 hidden rounded-[24px] border border-line bg-white px-4 py-4 shadow-card"></div>
+          <div id="country-guides-grid" class="mt-5 grid gap-3"></div>
+        </div>
+      </section>
+
+      <section class="page-panel mt-6" id="editorial-guide-panel">
+        <div class="rounded-[28px] border border-line bg-surface-card p-5 shadow-card">
+          <div id="city-guide-parent-chrome">
+            <div id="city-guide-breadcrumbs" class="mb-4 flex flex-wrap items-center gap-2 text-sm text-muted"></div>
+            <div class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-[0.24em] text-primary">City guide</p>
+              <h3 class="mt-1 font-display text-2xl font-bold">See what is worth doing in this city</h3>
+              <p class="mt-2 text-sm leading-6 text-muted">Start with what you want to see, eat, or experience, then turn the ideas you like into a trip.</p>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <button class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="open-city-guides-home" type="button">Back to City Guides</button>
+              <a id="city-guide-use-btn" class="rounded-full bg-surface-soft px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" href="#build">Plan this city</a>
+            </div>
+            </div>
+          </div>
+
+          <div id="city-guide-add-confirmation" class="mt-4 hidden" role="status" aria-live="polite"></div>
+
+          <div id="city-guide-full-view" class="mt-5 overflow-hidden rounded-[26px] border border-line bg-surface-card">
+            <div class="editorial-hero-media">
+              <img id="city-guide-hero-image" class="h-full w-full object-cover" width="1200" height="800" alt="" loading="lazy" decoding="async" />
+              <div class="hero-overlay-scrim"></div>
+              <div class="editorial-hero-copy">
+                <p class="hero-kicker">City guide</p>
+                <h4 id="city-guide-detail-title" class="hero-title"></h4>
+                <p id="city-guide-detail-summary" class="hero-summary"></p>
+              </div>
+            </div>
+
+            <div class="px-5 py-5">
+              <p id="city-guide-photo-credit" class="mb-4 hidden text-xs leading-5 text-muted"></p>
+              <div id="city-guide-sticky-sentinel" class="h-px w-full"></div>
+              <div id="city-guide-sticky-actions" class="editorial-sticky-bar mb-5 rounded-[22px] px-4 py-4"></div>
+              <div id="city-guide-compare-slot" class="mb-5 hidden rounded-[22px] border border-line bg-white px-4 py-4 shadow-card"></div>
+              <div class="min-w-0">
+                <section class="city-guide-top-picks mt-5 overflow-hidden rounded-[26px] border border-line bg-surface-soft px-4 py-4" aria-labelledby="city-guide-top-picks-title">
+                  <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+                    <div>
+                      <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Start here</p>
+                      <h4 id="city-guide-top-picks-title" class="mt-1 font-display text-2xl font-bold text-ink">Top picks for a first visit</h4>
+                      <p class="mt-2 max-w-[46rem] text-sm leading-6 text-muted">These are the places most travelers want to see first. Add one to your trip, then build the rest of the day around it.</p>
+                    </div>
+                    <span class="self-start rounded-full bg-white px-3 py-1 text-xs font-semibold text-secondary ring-1 ring-line">Good first stops</span>
+                  </div>
+                  <div id="city-guide-top-picks-grid" class="mt-4 grid gap-3 sm:grid-cols-2 xl:grid-cols-5"></div>
+                </section>
+                <div id="city-guide-gallery" class="mb-5 grid gap-3 sm:grid-cols-3"></div>
+                <div id="city-guide-editorial-intro" class="max-w-[48rem] space-y-4 text-[1rem] leading-8 text-ink sm:text-[1.03rem]"></div>
+                <div id="city-guide-summary-cards" class="mt-5 grid gap-3 sm:grid-cols-3"></div>
+                <div id="city-guide-category-hub" class="city-guide-category-hub mt-5">
+                  <div class="city-guide-category-head">
+                    <div class="flex items-start gap-3">
+                      <span class="guide-section-icon material-symbols-outlined" aria-hidden="true">travel_explore</span>
+                      <div>
+                      <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Choose what sounds good</p>
+                      <h4 id="city-guide-category-title" class="mt-1 font-display text-xl font-bold text-ink">Choose a starting point</h4>
+                      <p id="city-guide-category-copy" class="mt-2 max-w-[46rem] text-sm leading-6 text-muted">Jump into the part of the destination you want to explore first.</p>
+                      </div>
+                    </div>
+                    <span class="self-start rounded-full bg-white px-3 py-1 text-xs font-semibold text-secondary ring-1 ring-line">Browse ideas</span>
+                  </div>
+                  <div id="city-guide-category-grid" class="city-guide-category-grid mt-4"></div>
+                </div>
+                <div class="city-guide-planning-toolkit-section mt-5 rounded-[24px] border border-line bg-white px-4 py-4 shadow-card">
+                  <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+                    <div class="flex items-start gap-3">
+                      <span class="guide-section-icon material-symbols-outlined" aria-hidden="true">tips_and_updates</span>
+                      <div>
+                    <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Before you plan each day</p>
+                      <h4 class="mt-1 font-display text-xl font-bold text-ink">A few things worth knowing</h4>
+                      </div>
+                    </div>
+                    <span class="self-start rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">Good to know</span>
+                  </div>
+                  <div id="city-guide-planning-toolkit" class="mt-4 grid gap-3 sm:grid-cols-2 xl:grid-cols-4"></div>
+                </div>
+                <div id="city-guide-destination-depth" class="destination-depth-panel mt-5">
+                  <div class="destination-depth-head">
+                    <div class="flex items-start gap-3">
+                      <span class="guide-section-icon material-symbols-outlined" aria-hidden="true">map</span>
+                      <div>
+                      <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Make the city work for you</p>
+                      <h4 class="mt-1 font-display text-xl font-bold text-ink">How to make the most of this place</h4>
+                      <p class="mt-2 max-w-[46rem] text-sm leading-6 text-muted">Use these notes to decide how much time to spend here, where to stay, and which tradeoffs matter before the itinerary is built.</p>
+                      </div>
+                    </div>
+                    <span class="self-start rounded-full bg-teal-soft px-3 py-1 text-xs font-semibold text-tertiary">Trip insight</span>
+                  </div>
+                  <div id="city-guide-depth-grid" class="destination-depth-grid mt-4"></div>
+                  <div id="city-guide-fit-strip" class="destination-fit-strip"></div>
+                </div>
+                <div class="city-guide-trust-section mt-5 rounded-[22px] bg-warm px-4 py-4 ring-1 ring-warm-line">
+                  <p class="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-primary"><span class="material-symbols-outlined text-base" aria-hidden="true">auto_awesome</span>A better starting point</p>
+                  <p id="city-guide-trust-copy" class="mt-2 max-w-[46rem] text-sm leading-7 text-ink"></p>
+                </div>
+                <div id="city-guide-starter-note" class="mt-4 hidden" role="note"></div>
+                <div id="city-guide-travel-alert" class="mt-4 hidden" role="note"></div>
+              </div>
+
+              <div class="city-guide-quick-tools mt-5 grid gap-4 lg:grid-cols-3">
+                <div class="rounded-[22px] border border-line bg-white px-4 py-4">
+                  <p class="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-muted"><span class="material-symbols-outlined text-base" aria-hidden="true">star</span>Start with these</p>
+                  <div id="city-guide-highlight-chips" class="mt-3 flex flex-wrap gap-2"></div>
+                </div>
+                <div class="rounded-[22px] bg-surface-soft px-4 py-4">
+                  <p class="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-muted"><span class="material-symbols-outlined text-base" aria-hidden="true">list_alt</span>Jump to</p>
+                  <div id="city-guide-toc" class="mt-3 grid gap-2"></div>
+                </div>
+                <div class="rounded-[22px] bg-surface-soft px-4 py-4">
+                  <p class="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-muted"><span class="material-symbols-outlined text-base" aria-hidden="true">lightbulb</span>Quick tip</p>
+                  <p id="city-guide-planning-tip" class="mt-2 text-sm leading-6 text-ink"></p>
+                </div>
+              </div>
+
+              <div id="city-guide-detail-grid" class="mt-6 space-y-5"></div>
+
+              <section class="city-guide-faq-section mt-6 rounded-[24px] border border-line bg-surface-soft px-4 py-4" aria-labelledby="city-guide-faq-title">
+                <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+                  <div class="flex items-start gap-3">
+                    <span class="guide-section-icon material-symbols-outlined" aria-hidden="true">help</span>
+                    <div>
+                    <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Before you go</p>
+                    <h4 id="city-guide-faq-title" class="mt-1 font-display text-xl font-bold text-ink">Questions travelers usually have</h4>
+                    <p class="mt-2 max-w-[46rem] text-sm leading-6 text-muted">Quick answers to help you decide what belongs in the trip.</p>
+                    </div>
+                  </div>
+                  <span class="self-start rounded-full bg-white px-3 py-1 text-xs font-semibold text-secondary ring-1 ring-line">Travel basics</span>
+                </div>
+                <div id="city-guide-faq" class="mt-4 grid gap-3"></div>
+              </section>
+
+              <div class="city-guide-related-section mt-6 rounded-[24px] border border-line bg-white px-4 py-4">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3">
+                    <span class="guide-section-icon material-symbols-outlined" aria-hidden="true">near_me</span>
+                    <div>
+                    <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">More places to explore</p>
+                    <h5 class="mt-1 font-display text-xl font-bold">See what else fits</h5>
+                    <p class="mt-2 text-sm leading-6 text-muted">Try another city with a similar feel, or compare a different way to spend your trip.</p>
+                    </div>
+                  </div>
+                </div>
+                <div id="city-guide-related-grid" class="mt-5 grid gap-3"></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="city-guide-category-view" class="city-guide-category-view hidden mt-5">
+            <div class="city-guide-category-view-hero">
+              <img id="city-guide-category-view-image" class="city-guide-category-view-image" width="1200" height="800" alt="" loading="lazy" decoding="async" />
+              <div class="city-guide-category-view-scrim"></div>
+              <div class="city-guide-category-view-hero-copy">
+                <div id="city-guide-category-view-breadcrumbs" class="mb-4 flex flex-wrap items-center gap-2 text-sm text-white/80"></div>
+                <p id="city-guide-category-view-kicker" class="hero-kicker">City guide</p>
+                <h4 id="city-guide-category-view-title" class="hero-title"></h4>
+                <p id="city-guide-category-view-summary" class="hero-summary"></p>
+              </div>
+            </div>
+
+            <div class="city-guide-category-view-body">
+              <div class="city-guide-category-view-actions">
+                <button class="guide-action-button rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="open-city-guide" data-city="" type="button">
+                  Back to city guide
+                </button>
+                <a id="city-guide-category-view-use-btn" class="guide-action-button rounded-full bg-secondary px-4 py-2 text-sm font-semibold text-white" data-action="use-city-guide" data-city="" href="#build">
+                  Plan this city
+                </a>
+              </div>
+
+              <div class="city-guide-category-view-intro">
+                <div>
+                  <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">A useful place to start</p>
+                  <h5 id="city-guide-category-view-intro-title" class="mt-1 font-display text-xl font-bold text-ink"></h5>
+                  <p id="city-guide-category-view-intro-copy" class="mt-2 max-w-[48rem] text-sm leading-7 text-muted"></p>
+                </div>
+                <span id="city-guide-category-view-count" class="self-start rounded-full bg-blue-soft px-3 py-2 text-xs font-semibold text-secondary"></span>
+              </div>
+
+              <div id="city-guide-category-view-grid" class="city-guide-category-view-grid"></div>
+
+              <div class="city-guide-category-view-bottom">
+                <section class="city-guide-category-view-fit" aria-labelledby="city-guide-category-view-fit-title">
+                  <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Why this fits the city</p>
+                  <h5 id="city-guide-category-view-fit-title" class="mt-1 font-display text-xl font-bold text-ink"></h5>
+                  <p id="city-guide-category-view-fit-copy" class="mt-2 text-sm leading-7 text-muted"></p>
+                </section>
+                <section class="city-guide-category-view-faq" aria-labelledby="city-guide-category-view-faq-title">
+                  <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Before you go</p>
+                  <h5 id="city-guide-category-view-faq-title" class="mt-1 font-display text-xl font-bold text-ink">A few practical answers</h5>
+                  <div id="city-guide-category-view-faq-list" class="mt-3 grid gap-2"></div>
+                </section>
+              </div>
+
+              <nav class="city-guide-category-view-nav" aria-label="More city guide sections">
+                <div>
+                  <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Keep exploring</p>
+                  <h5 class="mt-1 font-display text-xl font-bold text-ink">More from this city guide</h5>
+                </div>
+                <div id="city-guide-category-view-nav-list" class="city-guide-category-view-nav-list"></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-panel mt-6" id="editorial-country-panel">
+        <div class="rounded-[28px] border border-line bg-surface-card p-5 shadow-card">
+          <div id="country-guide-breadcrumbs" class="mb-4 flex flex-wrap items-center gap-2 text-sm text-muted"></div>
+          <div id="country-guide-parent-chrome" class="flex items-start justify-between gap-3">
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-[0.24em] text-primary">Country guide</p>
+              <h3 class="mt-1 font-display text-2xl font-bold">Get a feel for the country before choosing a city</h3>
+              <p class="mt-2 text-sm leading-6 text-muted">See what this country is best for, then narrow it down to the city that fits your trip.</p>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <button class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="open-country-guides-home" type="button">Back to Country Guides</button>
+              <button id="country-guide-open-cities-btn" class="rounded-full bg-surface-soft px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" type="button">Browse cities</button>
+            </div>
+          </div>
+
+          <div class="mt-5 overflow-hidden rounded-[26px] border border-line bg-surface-card">
+            <div class="editorial-hero-media">
+              <img id="country-guide-hero-image" class="h-full w-full object-cover" width="1200" height="800" alt="" loading="lazy" decoding="async" />
+              <div class="hero-overlay-scrim"></div>
+              <div class="editorial-hero-copy">
+                <p class="hero-kicker">Country guide</p>
+                <h4 id="country-guide-detail-title" class="hero-title"></h4>
+                <p id="country-guide-detail-summary" class="hero-summary"></p>
+              </div>
+            </div>
+
+            <div class="px-5 py-5">
+              <div id="country-guide-sticky-sentinel" class="h-px w-full"></div>
+              <div id="country-guide-sticky-actions" class="editorial-sticky-bar mb-5 rounded-[22px] px-4 py-4"></div>
+              <div id="country-guide-compare-slot" class="mb-5 hidden rounded-[22px] border border-line bg-white px-4 py-4 shadow-card"></div>
+              <div id="country-guide-editorial-intro" class="max-w-[48rem] space-y-4 text-[1rem] leading-8 text-ink sm:text-[1.03rem]"></div>
+              <div id="country-guide-summary-cards" class="mt-5 grid gap-3 sm:grid-cols-3"></div>
+              <div id="country-guide-starter-note" class="mt-4 hidden" role="note"></div>
+              <div id="country-guide-travel-alert" class="mt-4 hidden" role="note"></div>
+
+              <div class="mt-5 grid gap-4 lg:grid-cols-3">
+                <div class="rounded-[22px] border border-line bg-white px-4 py-4">
+                  <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Best cities to start with</p>
+                  <div id="country-guide-city-chips" class="mt-3 flex flex-wrap gap-2"></div>
+                </div>
+                <div class="rounded-[22px] bg-surface-soft px-4 py-4">
+                  <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">What this country does best</p>
+                  <p id="country-guide-strengths" class="mt-2 text-sm leading-6 text-ink"></p>
+                </div>
+                <div class="rounded-[22px] bg-surface-soft px-4 py-4">
+                  <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Planning tip</p>
+                  <p id="country-guide-planning-tip" class="mt-2 text-sm leading-6 text-ink"></p>
+                </div>
+              </div>
+
+              <div class="mt-6 rounded-[24px] border border-line bg-white px-4 py-4">
+                <div class="flex items-start justify-between gap-3">
+                  <div>
+                    <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Where to start</p>
+                    <h5 class="mt-1 font-display text-xl font-bold">Cities to start with</h5>
+                    <p class="mt-2 text-sm leading-6 text-muted">Open a city guide when you are ready to move from the country view to a specific trip.</p>
+                  </div>
+                </div>
+                <div id="country-guide-city-grid" class="mt-5 grid gap-3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-panel planner-surface is-active mt-6" id="build-panel" aria-labelledby="build-panel-title">
+        <div class="rounded-[28px] border border-line bg-surface-card p-5 shadow-card">
+          <div class="build-panel-head">
+            <div class="build-panel-copy">
+              <p class="text-xs font-semibold uppercase tracking-[0.24em] text-primary">Step 1 of 4</p>
+              <h3 id="build-panel-title" class="mt-1 font-display text-3xl font-bold">Build your trip</h3>
+              <p class="mt-2 text-sm leading-6 text-muted">
+                Add the basics first: where you are going, when, who is coming, and the details that shape the day.
+              </p>
+            </div>
+            <button id="manual-adjust-btn" class="build-action-button rounded-full bg-surface-soft px-3 py-2 text-xs font-semibold text-secondary ring-1 ring-line" type="button">
+              <span class="material-symbols-outlined text-base" aria-hidden="true">tune</span>
+              More options
+            </button>
+          </div>
+
+          <form id="trip-form" class="build-trip-form space-y-5">
+            <div id="build-core-section" class="build-section-title" data-edit-section tabindex="-1">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Trip details</p>
+                <h4 class="mt-1 font-display text-xl font-bold">Where, when, and who</h4>
+              </div>
+              <span class="rounded-full bg-teal-soft px-3 py-1 text-xs font-semibold text-tertiary">Required</span>
+            </div>
+            <div class="build-trip-grid grid grid-cols-2">
+              <label class="col-span-2 rounded-2xl border border-line bg-surface px-4 py-3">
+                <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Destination</span>
+                <input id="destination-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" type="text" value="Paris, France" />
+                <button class="destination-discovery-link mt-3" data-action="open-city-discovery" type="button">
+                  <span class="material-symbols-outlined text-base" aria-hidden="true">travel_explore</span>
+                  Not sure where to go? Choose a country
+                </button>
+                <p class="keyboard-field-hint keyboard-field-hint--compact">Use arrow keys to browse suggestions, Enter to choose, and Esc to close.</p>
+                <div id="destination-autofill" class="mt-3 hidden overflow-hidden rounded-[18px] border border-line bg-white">
+                  <div id="destination-autofill-list" class="divide-y divide-line"></div>
+                </div>
+                <div id="destination-helper" class="mt-3 hidden rounded-[18px] bg-blue-soft px-3 py-3 text-sm text-secondary">
+                  <p id="destination-helper-copy" class="leading-6"></p>
+                  <div id="destination-suggestions" class="mt-3 flex flex-wrap gap-2"></div>
+                </div>
+                <div id="destination-travel-alert" class="mt-3 hidden" role="note"></div>
+              </label>
+              <label class="rounded-2xl border border-line bg-surface px-4 py-3">
+                <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Start date</span>
+                <input id="start-date-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" type="date" value="2026-09-14" />
+              </label>
+              <label class="rounded-2xl border border-line bg-surface px-4 py-3">
+                <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">End date</span>
+                <input id="end-date-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" type="date" value="2026-09-20" />
+              </label>
+              <div class="build-inline-summary col-span-2">
+                <div class="build-inline-summary-copy">
+                  <p class="build-inline-label">Trip length</p>
+                  <p id="trip-length-summary" class="build-inline-value">7 days / 6 nights</p>
+                </div>
+                <button id="date-flexibility-toggle" class="build-quick-toggle" data-action="toggle-date-flexibility" type="button">
+                  Dates are flexible
+                </button>
+              </div>
+              <label class="rounded-2xl border border-line bg-surface px-4 py-3">
+                <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Adults 18+</span>
+                <input id="adults-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" type="number" min="1" value="2" />
+              </label>
+              <label class="rounded-2xl border border-line bg-surface px-4 py-3">
+                <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Children</span>
+                <input id="children-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" type="number" min="0" value="0" />
+              </label>
+              <div class="build-inline-summary col-span-2">
+                <div class="build-inline-summary-copy">
+                  <p class="build-inline-label">Travel party</p>
+                  <p id="traveler-summary" class="build-inline-value">2 adults, no children</p>
+                </div>
+                <span class="rounded-full bg-blue-soft px-3 py-2 text-xs font-semibold text-secondary">Helps set the pace</span>
+              </div>
+              <label class="col-span-2 rounded-2xl border border-line bg-surface px-4 py-3">
+                <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Budget range</span>
+                <select id="budget-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0">
+                  <option>Budget</option>
+                  <option selected>Moderate</option>
+                  <option>Premium</option>
+                </select>
+                <p id="budget-helper" class="mt-3 text-sm leading-6 text-muted">
+                  Used to keep hotels, meals, and paid experiences in a realistic range.
+                </p>
+                <button id="budget-flexibility-toggle" class="build-quick-toggle mt-3" data-action="toggle-budget-flexibility" type="button">
+                  Budget has some wiggle room
+                </button>
+              </label>
+            </div>
+
+            <div id="build-logistics-section" class="build-section-title" data-edit-section tabindex="-1">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Logistics</p>
+                <h4 class="mt-1 font-display text-xl font-bold">A few details you can skip</h4>
+                <p class="mt-2 max-w-[38rem] text-sm leading-6 text-muted">Flights and pets help us make better suggestions, but you can leave them blank for now.</p>
+              </div>
+              <span class="rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">Skip if unknown</span>
+            </div>
+
+            <div class="build-trip-grid grid grid-cols-2">
+              <label class="col-span-2 rounded-2xl border border-line bg-surface px-4 py-3">
+                <div class="flex items-center justify-between gap-3">
+                  <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Any pets coming?</span>
+                  <span class="text-xs text-muted">Useful for stays</span>
+                </div>
+                <select id="pets-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0">
+                  <option selected>No pets</option>
+                  <option>Yes, bringing pets</option>
+                </select>
+              </label>
+
+              <div class="col-span-2 rounded-[24px] border border-line bg-surface px-4 py-4">
+                <div class="flex items-center justify-between gap-3">
+                  <div>
+                    <h4 class="font-display text-lg font-bold">Flights</h4>
+                    <p class="mt-1 text-sm text-muted">Tell us what you know now. You can change this later.</p>
+                  </div>
+                  <span class="rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">Travel details</span>
+                </div>
+
+                <label class="mt-4 block rounded-2xl border border-line bg-white px-4 py-3">
+                  <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Flight status</span>
+                  <select id="flight-mode-select" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0">
+                    <option value="need-help" selected>I need help finding flights</option>
+                    <option value="have-flights">I already have flights</option>
+                    <option value="not-needed">No flights needed</option>
+                  </select>
+                </label>
+
+                <div id="flight-help-fields" class="mt-3 space-y-3">
+                  <label class="block rounded-2xl border border-line bg-white px-4 py-3">
+                    <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Flight priority</span>
+                    <select id="flight-preference-select" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0">
+                      <option>Convenience first</option>
+                      <option selected>Balanced value</option>
+                      <option>Lowest reasonable price</option>
+                    </select>
+                  </label>
+                  <p class="text-sm leading-6 text-muted">Get flight ideas and booking links when you are ready.</p>
+                </div>
+
+                <div id="existing-flight-fields" class="mt-3 hidden grid grid-cols-2 gap-3">
+                  <label class="col-span-2 rounded-2xl border border-line bg-white px-4 py-3">
+                    <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Airline</span>
+                    <input id="flight-airline-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" type="text" value="" placeholder="Delta, United, Air France..." />
+                  </label>
+                  <label class="col-span-2 rounded-2xl border border-line bg-white px-4 py-3">
+                    <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Flight number</span>
+                    <input id="flight-number-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" type="text" value="" placeholder="DL 446 or AF 010" />
+                  </label>
+                  <label class="rounded-2xl border border-line bg-white px-4 py-3">
+                    <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Arrival time</span>
+                    <input id="arrival-flight-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" type="datetime-local" />
+                  </label>
+                  <label class="rounded-2xl border border-line bg-white px-4 py-3">
+                    <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Departure time</span>
+                    <input id="departure-flight-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" type="datetime-local" />
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="build-algorithm-card">
+              <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+                <div>
+                  <p class="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Why this helps</p>
+                  <h4 class="mt-1 font-display text-lg font-bold">These details shape your trip</h4>
+                </div>
+                <span class="rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">Ready to plan</span>
+              </div>
+              <div class="build-algorithm-grid mt-4">
+                <div class="build-algorithm-item">
+                  <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">When and who</p>
+                  <p class="mt-2 text-sm leading-6 text-muted">Dates and travelers set the number of days, pacing, and practical group fit.</p>
+                </div>
+                <div class="build-algorithm-item">
+                  <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">What fits your budget</p>
+                  <p class="mt-2 text-sm leading-6 text-muted">Budget keeps hotels, meals, and paid experiences realistic from the start.</p>
+                </div>
+                <div class="build-algorithm-item">
+                  <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">What makes it yours</p>
+                  <p class="mt-2 text-sm leading-6 text-muted">Next, tell us what kind of trip you want.</p>
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <div class="build-top-stack mt-5">
+            <div class="build-draft-strip">
+              <div class="build-draft-copy">
+                <span class="build-draft-icon material-symbols-outlined" aria-hidden="true">cloud_done</span>
+                <div>
+                  <p id="build-save-status-title" class="text-sm font-semibold text-ink">Start without pressure</p>
+                  <p id="build-save-status-copy" class="mt-1 text-sm leading-6 text-muted">Build the first draft now. When the plan starts to feel worth keeping, an account can save trips, edits, and versions.</p>
+                </div>
+              </div>
+              <button id="build-save-account-btn" class="build-action-button rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" type="button">
+                <span class="material-symbols-outlined text-base" aria-hidden="true">person_add</span>
+                Save options
+              </button>
+            </div>
+
+            <div class="build-progress-panel">
+              <div class="build-progress-head">
+                <div>
+                  <p class="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Planning progress</p>
+                  <h4 class="mt-1 font-display text-lg font-bold">Ready for the next step</h4>
+                </div>
+                <span id="build-readiness-chip" class="rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">Basics ready</span>
+              </div>
+              <div id="build-progress-grid" class="build-progress-grid mt-4">
+                <div class="build-progress-item">
+                  <p class="build-progress-label">Trip basics</p>
+                  <p class="build-progress-value">Paris, France</p>
+                  <p class="build-progress-copy">Dates, travelers, and budget set the shape.</p>
+                </div>
+                <div class="build-progress-item">
+                  <p class="build-progress-label">Logistics</p>
+                  <p class="build-progress-value">Flight help</p>
+                  <p class="build-progress-copy">Optional details can be added now or later.</p>
+                </div>
+                <div class="build-progress-item">
+                  <p class="build-progress-label">Saved data</p>
+                  <p class="build-progress-value">Local profile</p>
+                  <p class="build-progress-copy">Drafts can be saved once the trip exists.</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="build-missing-info" class="build-missing-info"></div>
+
+            <div id="build-guide-context" class="build-guide-context-card hidden px-4 py-4 sm:px-5">
+              <div class="build-guide-context-body sm:flex-row sm:items-start sm:justify-between">
+                <div class="flex min-w-0 items-start gap-3">
+                <img id="build-guide-context-thumb" class="hidden h-16 w-16 shrink-0 rounded-[18px] object-cover sm:block" width="64" height="64" alt="" loading="lazy" decoding="async" />
+                  <div class="build-guide-context-copy">
+                    <p id="build-guide-context-kicker" class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">From the destination guide</p>
+                    <h4 id="build-guide-context-title" class="mt-1 font-display text-lg font-bold text-ink"></h4>
+                    <p id="build-guide-context-copy" class="mt-2 text-sm leading-6 text-muted"></p>
+                    <p id="build-guide-context-next" class="mt-1 text-sm font-medium leading-6 text-secondary"></p>
+                    <div id="build-guide-context-points" class="mt-3 flex flex-wrap gap-2"></div>
+                  </div>
+                </div>
+                <div class="build-guide-context-actions">
+                  <button id="open-guide-context-btn" class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="open-guide-context-source" type="button">
+                    Reopen guide
+                  </button>
+                  <button id="clear-guide-context-btn" class="rounded-full bg-surface-soft px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="clear-guide-context" type="button">
+                    Clear
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="planning-note-banner">
+              <img id="build-support-image" width="1200" height="800" loading="lazy" decoding="async" alt="" />
+              <div class="planning-note-copy">
+                <p id="build-planning-note-kicker" class="text-xs font-semibold uppercase tracking-[0.16em] text-primary">A planning tip</p>
+                <h4 id="build-planning-note-title" class="mt-1 font-display text-xl font-bold">Start with the moments that matter.</h4>
+                <p id="build-planning-note-copy" class="mt-2 text-sm leading-6 text-muted">Your preferences help us give the highlights room without packing every minute.</p>
+                <div id="build-planning-note-points" class="planning-note-points mt-3"></div>
+              </div>
+            </div>
+
+            <div class="destination-hero">
+              <img id="build-hero-image" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async" alt="" />
+              <div class="destination-hero-copy">
+                <p class="hero-kicker">Destination preview</p>
+                <h4 id="build-hero-title" class="hero-title"></h4>
+                <p id="build-hero-copy" class="hero-summary"></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="page-panel mt-6" id="account-panel">
+        <div class="rounded-[28px] border border-line bg-surface-card p-5 shadow-card">
+          <div class="blueprint-panel-head flex items-start justify-between gap-3">
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-[0.24em] text-primary">Beta local account</p>
+              <h3 class="mt-1 font-display text-2xl font-bold">Save your trip on this browser</h3>
+              <p class="mt-2 text-sm leading-6 text-muted">
+                Keep your trip inputs, saved versions, notes, and profile details together without creating an online account.
+              </p>
+            </div>
+            <span class="rounded-full bg-teal-soft px-3 py-1 text-xs font-semibold text-tertiary">Free and optional</span>
+          </div>
+
+          <div class="mt-5 grid gap-3 sm:grid-cols-3">
+            <div class="rounded-[22px] border border-line bg-white px-4 py-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Save progress</p>
+              <p class="mt-2 font-display text-lg font-bold">Keep your trip in one place</p>
+              <p class="mt-2 text-sm leading-6 text-muted">Come back to your destination, pace, saved versions, and notes without starting over.</p>
+            </div>
+            <div class="rounded-[22px] border border-line bg-white px-4 py-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Keep it safe</p>
+              <p class="mt-2 font-display text-lg font-bold">Export a backup anytime</p>
+              <p class="mt-2 text-sm leading-6 text-muted">Download a copy before clearing browser data or moving to another device.</p>
+            </div>
+            <div class="rounded-[22px] border border-line bg-white px-4 py-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Make future trips more personal</p>
+              <p class="mt-2 font-display text-lg font-bold">Improve future trips</p>
+              <p class="mt-2 text-sm leading-6 text-muted">Past trips, favorite moments, and quick feedback can help make future recommendations more personal.</p>
+            </div>
+          </div>
+
+          <div class="mt-6 rounded-[22px] border border-line bg-white px-4 py-4">
+            <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Optional profile</p>
+            <p class="mt-2 text-sm leading-6 text-muted">Add just enough detail to recognize this planning space later. You can skip every field.</p>
+          </div>
+
+          <div class="mt-5 rounded-[22px] border border-line bg-white px-4 py-4">
+            <div class="flex items-start justify-between gap-3">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Privacy</p>
+                <p class="mt-2 font-display text-lg font-bold">Your preferences stay with your trip</p>
+                <p class="mt-2 text-sm leading-6 text-muted">Your profile helps shape recommendations and saved versions. You can still explore before deciding to create an account.</p>
+              </div>
+              <button id="account-panel-skip-button" class="rounded-full bg-surface-soft px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" type="button">
+                Continue for now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-panel mt-6" id="details-panel">
+        <div class="rounded-[28px] border border-line bg-surface-card p-5 shadow-card">
+          <div class="flex items-start justify-between gap-3">
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-[0.24em] text-primary">Step 2 of 4</p>
+              <h3 class="mt-1 font-display text-2xl font-bold">Preferences</h3>
+              <p class="mt-2 text-sm leading-6 text-muted">
+                Now choose what you want more of, how you want the days to feel, and anything the plan needs to respect.
+              </p>
+            </div>
+            <span id="mode-badge" class="rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">Simple mode</span>
+          </div>
+
+          <div class="mt-5 flex gap-2 rounded-full bg-surface-soft p-1">
+            <button id="simple-mode-btn" class="mode-toggle flex-1 rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary shadow-sm">Simple</button>
+            <button id="detailed-mode-btn" class="mode-toggle flex-1 rounded-full px-4 py-2 text-sm font-semibold text-muted">Detailed</button>
+          </div>
+
+          <div class="mt-4 rounded-[22px] border border-line bg-surface-soft px-4 py-4">
+            <p id="mode-explainer-title" class="font-display text-lg font-bold">Simple mode covers the essentials.</p>
+            <p id="mode-explainer-copy" class="mt-2 text-sm leading-6 text-muted">Answer the core choices and let us fill in the rest.</p>
+          </div>
+
+          <div class="mt-4 grid gap-3 sm:grid-cols-2">
+            <div class="rounded-[22px] border border-line bg-white px-4 py-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">The choices that matter most</p>
+              <h4 class="mt-2 font-display text-lg font-bold">Four choices shape your plan</h4>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <span class="rounded-full bg-surface-soft px-3 py-2 text-xs font-semibold text-secondary ring-1 ring-line">Style</span>
+                <span class="rounded-full bg-surface-soft px-3 py-2 text-xs font-semibold text-secondary ring-1 ring-line">Pace</span>
+                <span class="rounded-full bg-surface-soft px-3 py-2 text-xs font-semibold text-secondary ring-1 ring-line">Must-haves</span>
+                <span class="rounded-full bg-surface-soft px-3 py-2 text-xs font-semibold text-secondary ring-1 ring-line">Non-negotiables</span>
+              </div>
+            </div>
+            <div class="rounded-[22px] border border-line bg-white px-4 py-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">More control</p>
+              <h4 class="mt-2 font-display text-lg font-bold">Detailed mode stays available</h4>
+              <p class="mt-2 text-sm leading-6 text-muted">Use it when restaurants, free time, top sights, or hidden gems should strongly shape the plan.</p>
+            </div>
+          </div>
+
+          <div class="mt-4 rounded-[22px] border border-line bg-warm px-4 py-4 ring-1 ring-warm-line">
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary">rule</span>
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Preferences and must-avoids</p>
+                <p class="mt-2 text-sm leading-6 text-muted">Preferences guide the shape of the trip. Non-negotiables are rules the plan must respect, like accessibility needs, dietary limits, firm budgets, or avoid lists.</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="preference-snapshot" class="preference-snapshot mt-4 rounded-[24px] px-4 py-4" aria-live="polite">
+            <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Your trip at a glance</p>
+                <h4 class="mt-1 font-display text-lg font-bold">What we are planning around</h4>
+              </div>
+              <span id="preference-mode-mini" class="self-start rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">Simple mode</span>
+            </div>
+            <div class="preference-snapshot-grid mt-3">
+              <div class="preference-snapshot-item rounded-[18px]">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Trip style</p>
+                <p id="preference-style-summary" class="mt-2 text-sm font-semibold leading-6 text-ink">Relaxing + Foodie</p>
+              </div>
+              <div class="preference-snapshot-item rounded-[18px]">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Daily pace</p>
+                <p id="preference-pace-summary" class="mt-2 text-sm font-semibold leading-6 text-ink">Balanced pace</p>
+              </div>
+              <div class="preference-snapshot-item rounded-[18px]">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Must-haves</p>
+                <p id="preference-must-summary" class="mt-2 text-sm font-semibold leading-6 text-ink">One memorable dinner, the Eiffel Tower, and a slower final day.</p>
+              </div>
+              <div class="preference-snapshot-item rounded-[18px]">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Things to avoid</p>
+                <p id="preference-rule-summary" class="mt-2 text-sm font-semibold leading-6 text-ink">Nothing to avoid yet.</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="guide-preference-suggestions" class="guide-preference-suggestions hidden mt-4 rounded-[24px] px-4 py-4" aria-live="polite"></div>
+
+          <div class="mt-5 space-y-5">
+            <div id="preference-style-section" data-edit-section tabindex="-1">
+              <div class="flex items-center justify-between">
+                <h4 class="font-display text-lg font-bold">Trip style</h4>
+                <span class="text-xs font-semibold uppercase tracking-[0.18em] text-muted">Choose up to 3</span>
+              </div>
+              <p class="mt-2 text-sm text-muted">Pick the kind of trip you want us to build.</p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <button class="chip-button rounded-full border border-line bg-white px-4 py-2 text-sm font-semibold text-ink is-active" data-group="styles" data-value="Relaxing" type="button">Relaxing</button>
+                <button class="chip-button rounded-full border border-line bg-white px-4 py-2 text-sm font-semibold text-ink" data-group="styles" data-value="Historical" type="button">Historical</button>
+                <button class="chip-button rounded-full border border-line bg-white px-4 py-2 text-sm font-semibold text-ink is-active" data-group="styles" data-value="Foodie" type="button">Foodie</button>
+                <button class="chip-button rounded-full border border-line bg-white px-4 py-2 text-sm font-semibold text-ink" data-group="styles" data-value="Adventurous" type="button">Adventurous</button>
+                <button class="chip-button rounded-full border border-line bg-white px-4 py-2 text-sm font-semibold text-ink" data-group="styles" data-value="Unique" type="button">Unique</button>
+              </div>
+              <p id="style-count-helper" class="preference-helper-note mt-2">2 of 3 selected.</p>
+            </div>
+
+            <div id="preference-pace-section" data-edit-section tabindex="-1">
+              <div class="flex items-center justify-between">
+                <h4 class="font-display text-lg font-bold">Daily pace</h4>
+                <span class="text-xs font-semibold uppercase tracking-[0.18em] text-muted">Core question</span>
+              </div>
+              <div class="mt-3 grid grid-cols-3 gap-2">
+                <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="pace" data-value="Easygoing" type="button">Easygoing</button>
+                <button class="choice-button is-active rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="pace" data-value="Balanced" type="button">Balanced</button>
+                <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="pace" data-value="Packed" type="button">Packed</button>
+              </div>
+              <p id="pace-helper" class="preference-helper-note mt-3">Balanced keeps the trip full without making every day feel packed.</p>
+            </div>
+
+            <div id="must-haves-section" data-edit-section tabindex="-1">
+              <div class="flex items-center justify-between">
+                <h4 class="font-display text-lg font-bold">Must-haves</h4>
+                <span class="rounded-full bg-teal-soft px-3 py-1 text-xs font-semibold text-tertiary">Optional</span>
+              </div>
+              <p class="mt-2 text-sm leading-6 text-muted">Add moments you really want the trip to include.</p>
+              <textarea id="must-haves-input" class="mt-3 min-h-[92px] w-full rounded-2xl border border-line bg-surface px-4 py-3 text-sm text-ink focus:border-secondary focus:ring-secondary" placeholder="Examples: Eiffel Tower, one memorable dinner, slower final day, bakery stop near hotel.">One memorable dinner, the Eiffel Tower, and a slower final day.</textarea>
+              <div class="preference-suggestion-row mt-3" aria-label="Must-have ideas">
+                <button class="preference-suggestion-chip" data-action="append-preference-text" data-target="must-haves-input" data-text="one memorable dinner" type="button">Memorable dinner</button>
+                <button class="preference-suggestion-chip" data-action="append-preference-text" data-target="must-haves-input" data-text="a slower final day" type="button">Slower final day</button>
+                <button class="preference-suggestion-chip" data-action="append-preference-text" data-target="must-haves-input" data-text="time at the beach" type="button">Beach time</button>
+                <button class="preference-suggestion-chip" data-action="append-preference-text" data-target="must-haves-input" data-text="a great viewpoint" type="button">Great viewpoint</button>
+                <button class="preference-suggestion-chip" data-action="append-preference-text" data-target="must-haves-input" data-text="a food market" type="button">Food market</button>
+              </div>
+            </div>
+
+            <div id="non-negotiables-section" data-edit-section tabindex="-1">
+              <div class="flex items-center justify-between">
+                <h4 class="font-display text-lg font-bold">Non-negotiables</h4>
+                <span class="rounded-full bg-warm px-3 py-1 text-xs font-semibold text-primary ring-1 ring-warm-line">Things to avoid</span>
+              </div>
+              <p class="mt-2 text-sm leading-6 text-muted">Add anything the plan needs to work around.</p>
+              <textarea id="non-negotiables-input" class="mt-3 min-h-[92px] w-full rounded-2xl border border-line bg-surface px-4 py-3 text-sm text-ink focus:border-secondary focus:ring-secondary" placeholder="Examples: wheelchair access, no shellfish, avoid red-eye flights, hard daily budget, no long walks."></textarea>
+              <div class="preference-suggestion-row mt-3" aria-label="Non-negotiable ideas">
+                <button class="preference-suggestion-chip" data-action="append-preference-text" data-target="non-negotiables-input" data-text="no long walks" type="button">No long walks</button>
+                <button class="preference-suggestion-chip" data-action="append-preference-text" data-target="non-negotiables-input" data-text="wheelchair access" type="button">Wheelchair access</button>
+                <button class="preference-suggestion-chip" data-action="append-preference-text" data-target="non-negotiables-input" data-text="no shellfish" type="button">No shellfish</button>
+                <button class="preference-suggestion-chip" data-action="append-preference-text" data-target="non-negotiables-input" data-text="avoid red-eye flights" type="button">Avoid red-eye flights</button>
+                <button class="preference-suggestion-chip" data-action="append-preference-text" data-target="non-negotiables-input" data-text="hard daily budget" type="button">Hard daily budget</button>
+              </div>
+            </div>
+
+            <div id="detailed-fields" class="hidden space-y-5 rounded-[24px] border border-line bg-surface-soft px-4 py-4">
+              <div class="rounded-[20px] bg-white px-4 py-4 ring-1 ring-line">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-secondary">More specific choices</p>
+                <p class="mt-2 text-sm leading-6 text-muted">Use these only when they should noticeably change the trip.</p>
+              </div>
+              <div>
+                <h4 class="font-display text-lg font-bold">What should we prioritize?</h4>
+                <div class="mt-3 grid grid-cols-3 gap-2">
+                  <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink is-active" data-group="depth" data-value="Top sights" type="button">Top sights</button>
+                  <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="depth" data-value="Mix of both" type="button">Mix of both</button>
+                  <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="depth" data-value="Hidden gems" type="button">Hidden gems</button>
+                </div>
+              </div>
+
+              <div>
+                <h4 class="font-display text-lg font-bold">Food plans</h4>
+                <div class="mt-3 grid grid-cols-3 gap-2">
+                  <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="foodImportance" data-value="Keep it easy" type="button">Keep it easy</button>
+                  <button class="choice-button is-active rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="foodImportance" data-value="Good local spots" type="button">Good local spots</button>
+                  <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="foodImportance" data-value="Food is a focus" type="button">Food is a focus</button>
+                </div>
+              </div>
+
+              <div>
+                <h4 class="font-display text-lg font-bold">Trip vibe</h4>
+                <p class="mt-2 text-sm leading-6 text-muted">Choose the overall feel you want for this trip.</p>
+                <div class="mt-3 grid grid-cols-2 gap-2">
+                  <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="memory" data-value="Family-friendly" type="button">Family-friendly</button>
+                  <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="memory" data-value="Romantic" type="button">Romantic</button>
+                  <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="memory" data-value="Relaxing" type="button">Relaxing</button>
+                  <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="memory" data-value="Adventurous" type="button">Adventurous</button>
+                  <button class="choice-button is-active rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="memory" data-value="First-time highlights" type="button">First-time highlights</button>
+                  <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="memory" data-value="Food-focused" type="button">Food-focused</button>
+                </div>
+              </div>
+
+              <div>
+                <h4 class="font-display text-lg font-bold">Free time</h4>
+                <div class="mt-3 grid grid-cols-3 gap-2">
+                  <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="spontaneity" data-value="Plan most things" type="button">Plan most things</button>
+                  <button class="choice-button is-active rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="spontaneity" data-value="Some free time" type="button">Some free time</button>
+                  <button class="choice-button rounded-2xl border border-line bg-white px-3 py-3 text-sm font-semibold text-ink" data-group="spontaneity" data-value="Go with the flow" type="button">Go with the flow</button>
+                </div>
+              </div>
+
+              <div class="rounded-[20px] bg-white px-4 py-4 ring-1 ring-line">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-secondary">Examples</p>
+                <div class="mt-3 grid gap-3 sm:grid-cols-3">
+                  <p class="text-sm leading-6 text-muted"><span class="font-semibold text-ink">Relaxing</span> keeps mornings lighter and leaves room for slower meals.</p>
+                  <p class="text-sm leading-6 text-muted"><span class="font-semibold text-ink">Adventurous</span> adds more movement, viewpoints, markets, or day-trip energy.</p>
+                  <p class="text-sm leading-6 text-muted"><span class="font-semibold text-ink">Food-focused</span> protects better restaurant timing instead of treating meals as filler.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="rounded-[24px] bg-warm px-4 py-4 ring-1 ring-warm-line">
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary">auto_awesome</span>
+                <div>
+                  <h4 class="font-display text-lg font-bold">Not sure yet?</h4>
+                  <p class="mt-1 text-sm leading-6 text-muted">
+                    Keep the defaults. You can review your trip and edit anything that feels off.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 rounded-[28px] border border-line bg-white p-5 shadow-card">
+          <div class="flex items-start justify-between gap-3">
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-[0.24em] text-primary">Example output</p>
+              <h3 class="mt-1 font-display text-xl font-bold">A taste of your trip</h3>
+              <p class="mt-2 text-sm text-muted">A quick example of how your choices can shape the days.</p>
+            </div>
+            <span class="rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">Preview</span>
+          </div>
+          <div class="mt-4 grid gap-3">
+            <div class="rounded-2xl bg-surface-soft px-4 py-4">
+              <p class="text-sm font-semibold text-primary">Day 1</p>
+              <p class="mt-1 font-display text-lg font-bold">Easy first day in Le Marais</p>
+              <p class="mt-2 text-sm text-muted">Bakery stop, river walk, and one easy dinner close to the hotel.</p>
+            </div>
+            <div class="rounded-2xl bg-surface-soft px-4 py-4">
+              <p class="text-sm font-semibold text-primary">Day 3</p>
+              <p class="mt-1 font-display text-lg font-bold">Eiffel Tower day with time to enjoy it</p>
+              <p class="mt-2 text-sm text-muted">Eiffel Tower area, a long lunch, and an evening with a good view of the city.</p>
+            </div>
+          </div>
+          <p class="mt-4 text-sm leading-6 text-muted">
+            This is the goal: a trip that protects the big moments without making every day feel overloaded.
+          </p>
+        </div>
+      </section>
+
+      <section class="page-panel mt-6" id="blueprint-panel">
+        <div class="rounded-[28px] border border-line bg-surface-card p-5 shadow-card">
+          <div class="flex items-start justify-between gap-3">
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-[0.24em] text-primary">Step 3 of 4</p>
+              <h3 class="mt-1 font-display text-2xl font-bold">Review your trip</h3>
+              <p class="mt-2 text-sm leading-6 text-muted">
+                Check these details before we build your day-by-day itinerary.
+              </p>
+            </div>
+            <span class="rounded-full bg-warm px-3 py-1 text-xs font-semibold text-primary">Review</span>
+          </div>
+
+          <div class="blueprint-summary-block mt-5 rounded-[24px] bg-surface-soft px-4 py-4">
+            <p id="blueprint-summary" class="font-display text-lg font-bold"></p>
+            <p id="blueprint-reasoning" class="mt-2 text-sm leading-6 text-muted"></p>
+          </div>
+
+          <div class="blueprint-story-band mt-5">
+            <img id="blueprint-support-image" width="1200" height="800" loading="lazy" decoding="async" alt="" />
+            <div>
+              <p id="blueprint-story-kicker" class="text-xs font-semibold uppercase tracking-[0.16em] text-primary">Picture the trip</p>
+              <h4 id="blueprint-story-title" class="mt-1 font-display text-xl font-bold">A good itinerary gives the big moments room to land.</h4>
+              <p id="blueprint-story-copy" class="mt-2 text-sm leading-6 text-muted">Here is the short version before we get into each day.</p>
+            </div>
+            <div id="blueprint-story-quote" class="blueprint-story-quote">Thoughtful over packed</div>
+          </div>
+
+          <div id="blueprint-match-summary" class="match-summary-strip mt-5"></div>
+
+          <div id="blueprint-final-review" class="blueprint-final-review mt-5"></div>
+
+          <div id="blueprint-grid" class="blueprint-review-grid mt-5"></div>
+
+          <div class="blueprint-top-places mt-5 rounded-[24px] border border-line bg-white px-4 py-4">
+            <div class="flex items-start justify-between gap-3">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Places we may build around</p>
+                <h4 class="mt-1 font-display text-lg font-bold">A preview of your trip's likely highlights</h4>
+                <p class="mt-2 text-sm leading-6 text-muted">A quick look at the places that may shape your days.</p>
+              </div>
+              <span class="rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">Preview</span>
+            </div>
+            <div id="blueprint-top-places" class="mt-4 grid gap-3"></div>
+          </div>
+
+          <div class="blueprint-handoff mt-5 rounded-[24px] border border-line bg-white px-4 py-4">
+            <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Ready for the draft?</p>
+                <p class="mt-2 text-sm leading-6 text-muted">Does everything look right? Use the bottom button to build the day-by-day plan.</p>
+              </div>
+              <button class="rounded-full bg-surface-soft px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="edit-blueprint-item" data-target-panel="details-panel" data-focus-target="preference-style-section" type="button">Adjust preferences</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-panel mt-6" id="thinking-panel">
+        <div class="rounded-[28px] border border-line bg-surface-deep p-6 text-white shadow-float">
+          <p class="text-xs font-semibold uppercase tracking-[0.26em] text-[#9fd7ff]">We have what we need</p>
+          <h3 class="mt-2 max-w-[14rem] font-display text-3xl font-bold leading-tight">We will take it from here.</h3>
+          <p class="mt-3 max-w-[17rem] text-sm leading-6 text-white/80">
+            <span id="thinking-headline" aria-live="polite">Putting your vacation together.</span>
+          </p>
+
+          <div class="thinking-dots mt-5 flex gap-2">
+            <span class="h-3 w-3 rounded-full bg-white/80"></span>
+            <span class="h-3 w-3 rounded-full bg-white/80"></span>
+            <span class="h-3 w-3 rounded-full bg-white/80"></span>
+          </div>
+
+          <div class="mt-6 grid gap-3 sm:grid-cols-3">
+            <div class="rounded-[20px] border border-white/12 bg-white/8 px-4 py-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-[#9fd7ff]">Using your details</p>
+              <p class="mt-2 text-sm leading-6 text-white/78">We use your destination, dates, pace, budget, and the moments you want to remember.</p>
+            </div>
+            <div class="rounded-[20px] border border-white/12 bg-white/8 px-4 py-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-[#9fd7ff]">Shaping the days</p>
+              <p class="mt-2 text-sm leading-6 text-white/78">We balance practical timing with standout moments so the trip feels smooth, not overloaded.</p>
+            </div>
+            <div class="rounded-[20px] border border-white/12 bg-white/8 px-4 py-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-[#9fd7ff]">Keeping it practical</p>
+              <p class="mt-2 text-sm leading-6 text-white/78">We account for neighborhoods, reservations, and travel time so the draft is easier to trust.</p>
+            </div>
+          </div>
+
+          <div class="mt-6 space-y-3">
+            <div class="rounded-[22px] bg-white/8 px-4 py-4">
+              <p class="font-display text-lg font-bold">What we are planning around</p>
+              <p id="thinking-optimization" class="mt-1 text-sm text-white/78"></p>
+            </div>
+            <div class="rounded-[22px] bg-white/8 px-4 py-4">
+              <p class="font-display text-lg font-bold">Why it should work</p>
+              <p id="thinking-support" class="mt-1 text-sm text-white/78"></p>
+            </div>
+            <div class="rounded-[22px] bg-white/8 px-4 py-4">
+              <p class="font-display text-lg font-bold">A note about this place</p>
+              <p id="thinking-fact" class="mt-1 text-sm text-white/78"></p>
+            </div>
+          </div>
+
+          <div class="mt-6 rounded-[22px] border border-white/12 bg-white/6 px-4 py-4">
+            <div class="flex items-start justify-between gap-3">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-[#9fd7ff]">Up next</p>
+                <p class="mt-2 text-sm leading-6 text-white/78">The reveal will open with a calm trip-level summary first, then expand into the day-by-day plan so it feels exciting without being overwhelming.</p>
+              </div>
+              <span class="rounded-full bg-white/10 px-3 py-1 text-xs font-semibold text-white/90">Almost there</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-panel itinerary-surface mt-6" id="trip-panel" aria-labelledby="trip-title">
+        <div id="trip-card" class="trip-top-card rounded-[30px] border border-line bg-white p-5 shadow-float">
+          <p class="text-xs font-semibold uppercase tracking-[0.24em] text-primary">Your Trip</p>
+          <div class="trip-top-header mt-2">
+            <div class="trip-top-copy">
+              <h3 id="trip-title" class="font-display text-[1.9rem] font-extrabold leading-tight"></h3>
+              <p id="trip-summary" class="mt-2 text-sm leading-6 text-muted"></p>
+              <p id="trip-reasoning" class="mt-2 text-sm text-muted"></p>
+              <div id="trip-travel-alert" class="mt-3 hidden" role="note"></div>
+              <div id="trip-guide-source" class="mt-3 hidden flex flex-wrap gap-2"></div>
+              <div id="trip-view-source" class="mt-3 hidden"></div>
+              <div id="trip-draft-status" class="mt-3"></div>
+              <div id="trip-change-summary" class="mt-3"></div>
+            </div>
+            <button class="trip-top-edit rounded-full bg-surface-soft p-3 text-secondary" data-action="open-manual-adjust" aria-label="Edit trip details" title="Edit trip details" type="button">
+              <span class="material-symbols-outlined" aria-hidden="true">edit</span>
+            </button>
+          </div>
+
+          <div id="trip-quick-facts" class="mt-4 grid gap-3 sm:grid-cols-2 xl:grid-cols-3"></div>
+          <div id="trip-quick-facts-more" class="mt-3 grid gap-3 sm:grid-cols-2 xl:grid-cols-3" hidden></div>
+          <div class="mt-3 flex justify-start">
+            <button id="trip-quick-facts-toggle" class="trip-section-toggle" data-action="toggle-trip-facts" aria-expanded="false" type="button" hidden>
+              <span>More trip details</span>
+              <span class="material-symbols-outlined" aria-hidden="true">add</span>
+            </button>
+          </div>
+
+          <div id="trip-next-actions" class="trip-next-actions mt-4"></div>
+          <div id="trip-readiness-panel" class="trip-readiness-panel mt-4"></div>
+          <div id="trip-handoff-panel" class="trip-handoff-panel mt-4"></div>
+
+          <div id="trip-day-overview" class="trip-day-overview mt-4"></div>
+
+          <div class="destination-hero is-compact mt-5">
+            <img id="trip-hero-image" width="1200" height="800" loading="lazy" decoding="async" alt="" />
+            <div class="destination-hero-copy">
+              <p id="trip-hero-kicker" class="hero-kicker">Destination preview</p>
+              <h4 id="trip-hero-title" class="hero-title"></h4>
+              <p id="trip-hero-copy" class="hero-summary"></p>
+            </div>
+          </div>
+
+          <div class="trip-signature-card mt-5 rounded-[24px] bg-warm px-4 py-4 ring-1 ring-warm-line">
+            <div class="trip-signature-head">
+              <div class="trip-signature-copy">
+                <p class="text-xs font-semibold uppercase tracking-[0.16em] text-primary">One moment to look forward to</p>
+                <h4 id="signature-title" class="mt-1 font-display text-lg font-bold"></h4>
+                <p id="signature-reason" class="mt-2 text-sm leading-6 text-muted"></p>
+              </div>
+              <span class="rounded-full bg-white px-3 py-1 text-xs font-semibold text-primary">Memorable</span>
+            </div>
+          </div>
+
+          <div class="trip-perspective-band mt-5">
+            <div>
+              <p id="trip-perspective-kicker" class="text-xs font-semibold uppercase tracking-[0.16em] text-primary">A note for your trip</p>
+              <h4 id="trip-perspective-title" class="mt-1 font-display text-xl font-bold">One great day beats three rushed ones.</h4>
+            </div>
+            <div id="trip-perspective-points" class="trip-perspective-points">
+              <span><span class="material-symbols-outlined" aria-hidden="true">star</span> Keep the main event</span>
+              <span><span class="material-symbols-outlined" aria-hidden="true">schedule</span> Leave time between stops</span>
+              <span><span class="material-symbols-outlined" aria-hidden="true">favorite</span> Make it feel like yours</span>
+            </div>
+          </div>
+
+          <div id="trip-match-summary" class="match-summary-strip mt-5"></div>
+
+          <div id="trip-map-shell" class="trip-map-shell map-shell mt-6">
+            <div class="border-b border-line px-4 py-4">
+              <div class="trip-map-head">
+                <div class="trip-map-head-copy">
+                  <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Trip map</p>
+                  <h4 class="mt-1 font-display text-lg font-bold">See where each day is centered</h4>
+                  <p class="mt-2 text-sm leading-6 text-muted">See each day at a glance.</p>
+                </div>
+                <div class="flex flex-wrap items-center justify-end gap-2">
+                  <span id="trip-map-status" class="trip-map-status"><span class="trip-map-status-dot" aria-hidden="true"></span><span id="trip-map-status-text">Day focus</span></span>
+                  <span class="rounded-full bg-teal-soft px-3 py-1 text-xs font-semibold text-tertiary">Interactive</span>
+                </div>
+              </div>
+              <div id="trip-map-focus-label" class="mt-3 rounded-[18px] bg-surface-soft px-3 py-3 text-sm leading-6 text-secondary">
+                The map follows the day or stop you select.
+              </div>
+              <div id="trip-map-days" class="mt-4 flex flex-wrap gap-2"></div>
+            </div>
+            <div id="trip-map-route-strip" class="trip-map-route-strip">
+              <div class="trip-map-route-icon" aria-hidden="true">
+                <span class="trip-map-route-pin"></span>
+                <span class="trip-map-route-line"></span>
+              </div>
+              <div class="trip-map-route-text">
+                <p class="trip-map-route-kicker">Selected area</p>
+                <p id="trip-map-route-title" class="trip-map-route-title">Selected day area</p>
+                <p id="trip-map-route-copy" class="trip-map-route-copy">The selected day and its main area will stay visually linked here.</p>
+                <div id="trip-map-route-meta" class="trip-map-route-meta"></div>
+              </div>
+              <div id="trip-map-route-actions" class="trip-map-route-actions"></div>
+            </div>
+            <iframe id="trip-map-frame" class="map-frame" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Trip map"></iframe>
+          </div>
+
+          <div class="trip-guide-panel trip-collapsible-panel mt-6 rounded-[24px] border border-line bg-surface-soft px-4 py-4" data-trip-section="guide">
+            <div class="trip-guide-head trip-collapsible-head">
+              <div class="trip-guide-head-copy">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Before you go</p>
+                <h4 id="trip-guide-title" class="mt-1 font-display text-lg font-bold"></h4>
+                <p id="trip-guide-summary" class="trip-collapsible-summary mt-1 text-sm leading-6 text-muted"></p>
+              </div>
+              <div class="trip-collapsible-actions">
+                <span class="rounded-full bg-white px-3 py-1 text-xs font-semibold text-secondary ring-1 ring-line">Guide</span>
+                <button class="trip-section-toggle" data-action="toggle-trip-section" data-section="guide" aria-expanded="true" type="button">
+                  <span>Hide</span>
+                  <span class="material-symbols-outlined" aria-hidden="true">remove</span>
+                </button>
+              </div>
+            </div>
+            <div data-trip-section-body>
+              <div id="trip-guide-grid" class="mt-4 grid gap-3"></div>
+              <div id="trip-guide-depth" class="destination-depth-panel mt-4"></div>
+            </div>
+          </div>
+
+          <div class="trip-itinerary-panel mt-6 rounded-[24px] border border-line bg-surface-card px-4 py-4">
+            <div class="trip-itinerary-head">
+              <div class="trip-itinerary-head-copy">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Day-by-day itinerary</p>
+                <h4 class="mt-1 font-display text-xl font-bold">Your trip, day by day</h4>
+                <p class="mt-2 text-sm leading-6 text-muted">A lighter first read, with details still there when you want them.</p>
+              </div>
+              <div class="trip-itinerary-head-actions">
+                <span class="rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">First draft</span>
+                <button class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="open-manual-adjust" type="button">
+                  Manually adjust
+                </button>
+              </div>
+            </div>
+            <div class="trip-itinerary-controls mt-4">
+              <button class="rounded-full bg-surface-soft px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="expand-all-days" type="button">
+                Expand all days
+              </button>
+              <button class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="collapse-all-days" type="button">
+                Collapse all days
+              </button>
+            </div>
+          </div>
+
+          <div id="trip-versions-panel" class="trip-versions-panel trip-collapsible-panel mt-4 rounded-[24px] border border-line bg-white px-4 py-4 shadow-card" data-trip-section="versions">
+            <div class="trip-versions-head trip-collapsible-head">
+              <div class="trip-versions-head-copy">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Alternate versions</p>
+                <h4 class="mt-1 font-display text-xl font-bold">Save different trip versions</h4>
+                <p id="alternate-version-helper" class="trip-collapsible-summary mt-2 text-sm leading-6 text-muted">Save one clean option to compare later.</p>
+              </div>
+              <div class="trip-collapsible-actions">
+                <span class="rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">Saved versions</span>
+                <button class="trip-section-toggle" data-action="toggle-trip-section" data-section="versions" aria-expanded="false" type="button">
+                  <span>Show</span>
+                  <span class="material-symbols-outlined" aria-hidden="true">add</span>
+                </button>
+              </div>
+            </div>
+            <div class="save-version-shell mt-4" data-trip-section-body hidden>
+              <div class="save-version-row sm:flex-row sm:items-end">
+                <div class="save-version-input-shell">
+                  <p class="save-version-input-label">Version name</p>
+                  <input id="alternate-version-name-input" class="w-full rounded-2xl border border-line bg-surface px-4 py-3 text-sm font-medium text-ink focus:border-secondary focus:ring-secondary" placeholder="Example: More relaxed version" type="text" />
+                </div>
+                <button id="alternate-version-save-button" class="rounded-full bg-surface-soft px-4 py-3 text-sm font-semibold text-secondary ring-1 ring-line sm:self-start" data-action="save-alternate-version" type="button">
+                  Save this version
+                </button>
+              </div>
+              <div id="unsaved-arrangement-cue" class="mt-3 hidden"></div>
+              <div class="mt-3">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Quick name ideas</p>
+                <div id="alternate-version-suggestions" class="mt-2 flex flex-wrap gap-2"></div>
+              </div>
+              <div id="alternate-version-feedback" class="mt-3 hidden"></div>
+              <p class="mt-3 text-xs leading-6 text-muted">Your current draft will stay as it is.</p>
+            </div>
+            <div id="alternate-compare-slot" class="mt-4 hidden" data-trip-section-body hidden></div>
+            <div id="alternate-versions-list" class="mt-4 space-y-3" data-trip-section-body hidden></div>
+          </div>
+
+          <div id="trip-days" class="mt-4 space-y-4"></div>
+
+          <div id="trip-logistics-section" class="trip-collapsible-panel mt-6 rounded-[24px] border border-line bg-surface-soft px-4 py-4" data-trip-section="logistics">
+            <div class="trip-support-head trip-collapsible-head">
+              <div class="trip-support-head-copy">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Trip details</p>
+                <h4 class="mt-1 font-display text-lg font-bold">Add your hotel and travel timing</h4>
+                <p class="trip-collapsible-summary mt-2 text-sm leading-6 text-muted">Add details you already know.</p>
+              </div>
+              <div class="trip-collapsible-actions">
+                <span class="rounded-full bg-white px-3 py-1 text-xs font-semibold text-secondary ring-1 ring-line">Optional</span>
+                <button class="trip-section-toggle" data-action="toggle-trip-section" data-section="logistics" aria-expanded="false" type="button">
+                  <span>Show</span>
+                  <span class="material-symbols-outlined" aria-hidden="true">add</span>
+                </button>
+              </div>
+            </div>
+            <div data-trip-section-body hidden>
+            <div class="trip-logistics-grid mt-4">
+              <label class="trip-logistics-field is-wide">
+                <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Hotel name</span>
+                <input id="trip-hotel-name-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" placeholder="Hotel, resort, or stay name" type="text" />
+              </label>
+              <label class="trip-logistics-field is-wide">
+                <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Hotel area</span>
+                <input id="trip-hotel-area-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" placeholder="Neighborhood or part of the city" type="text" />
+              </label>
+              <label class="trip-logistics-field">
+                <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Check-in</span>
+                <input id="trip-hotel-checkin-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" type="datetime-local" />
+              </label>
+              <label class="trip-logistics-field">
+                <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Check-out</span>
+                <input id="trip-hotel-checkout-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" type="datetime-local" />
+              </label>
+            </div>
+
+            <div id="trip-flight-logistics" class="trip-logistics-grid mt-4">
+              <label class="trip-logistics-field">
+                <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Arrival flight time</span>
+                <input id="trip-arrival-flight-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" type="datetime-local" />
+              </label>
+              <label class="trip-logistics-field">
+                <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Departure flight time</span>
+                <input id="trip-departure-flight-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0" type="datetime-local" />
+              </label>
+            </div>
+
+            <div class="trip-support-actions mt-4 justify-end">
+              <button class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="save-trip-logistics" type="button">
+                Save trip details
+              </button>
+            </div>
+            </div>
+          </div>
+
+          <div id="trip-flights-section" class="trip-support-card trip-collapsible-panel mt-6" data-trip-section="flights">
+            <div class="trip-support-card-shell">
+              <span class="trip-support-icon material-symbols-outlined">flight</span>
+              <div class="trip-support-body">
+                <div class="trip-collapsible-head">
+                  <div>
+                    <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Flights</p>
+                    <h4 id="flight-title" class="mt-1 font-display text-lg font-bold"></h4>
+                    <p id="flight-copy" class="trip-collapsible-summary mt-2 text-sm leading-6 text-muted"></p>
+                  </div>
+                  <div class="trip-collapsible-actions">
+                    <span class="rounded-full bg-white px-3 py-1 text-xs font-semibold text-secondary ring-1 ring-line">Flight help</span>
+                    <button class="trip-section-toggle" data-action="toggle-trip-section" data-section="flights" aria-expanded="false" type="button">
+                      <span>Show</span>
+                      <span class="material-symbols-outlined" aria-hidden="true">add</span>
+                    </button>
+                  </div>
+                </div>
+                <div data-trip-section-body hidden>
+                <div id="flight-meta" class="trip-support-meta-grid"></div>
+                <div id="flight-chips" class="mt-3 flex flex-wrap gap-2"></div>
+                <div class="trip-support-actions">
+                  <a id="flight-google-link" class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" href="#" rel="noopener noreferrer" target="_blank">Open in Google Flights</a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="trip-stay-section" class="trip-support-card trip-collapsible-panel mt-6" data-trip-section="stay">
+            <div class="trip-support-card-shell">
+              <span class="trip-support-icon material-symbols-outlined">bed</span>
+              <div class="trip-support-body">
+                <div class="trip-collapsible-head">
+                  <div>
+                    <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Where to stay</p>
+                    <h4 id="stay-title" class="mt-1 font-display text-lg font-bold"></h4>
+                    <p id="stay-copy" class="trip-collapsible-summary mt-2 text-sm leading-6 text-muted"></p>
+                  </div>
+                  <div class="trip-collapsible-actions">
+                    <span class="rounded-full bg-white px-3 py-1 text-xs font-semibold text-secondary ring-1 ring-line">Stay details</span>
+                    <button class="trip-section-toggle" data-action="toggle-trip-section" data-section="stay" aria-expanded="false" type="button">
+                      <span>Show</span>
+                      <span class="material-symbols-outlined" aria-hidden="true">add</span>
+                    </button>
+                  </div>
+                </div>
+                <div data-trip-section-body hidden>
+                <div id="stay-meta" class="trip-support-meta-grid"></div>
+                <div id="stay-tradeoffs" class="mt-3 flex flex-wrap gap-2"></div>
+                <div id="stay-recommendations" class="mt-4 grid gap-3"></div>
+                <div class="mt-4 overflow-hidden rounded-2xl border border-line bg-white">
+                  <iframe id="stay-google-frame" class="h-44 w-full border-0 bg-surface-soft" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google hotel map"></iframe>
+                </div>
+                <div class="trip-support-actions">
+                  <a id="stay-google-link" class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" href="#" rel="noopener noreferrer" target="_blank">Open in Google Hotels</a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="trip-booking-hub" class="booking-hub trip-collapsible-panel mt-6 rounded-[24px] border border-line bg-white px-4 py-4 shadow-card" data-trip-section="booking"></div>
+
+          <div class="trip-collapsible-panel mt-6 rounded-[24px] border border-line bg-white px-4 py-4 shadow-card" data-trip-section="journal">
+            <div class="trip-support-head trip-collapsible-head">
+              <div class="trip-support-head-copy">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Travel journal</p>
+                <h4 class="mt-1 font-display text-lg font-bold">Log the moments that mattered</h4>
+                <p class="trip-collapsible-summary mt-2 text-sm leading-6 text-muted">This is completely optional. Use it to note what you loved or what you want to remember later.</p>
+              </div>
+              <div class="trip-collapsible-actions">
+                <span class="rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">Optional</span>
+                <button class="trip-section-toggle" data-action="toggle-trip-section" data-section="journal" aria-expanded="false" type="button">
+                  <span>Show</span>
+                  <span class="material-symbols-outlined" aria-hidden="true">add</span>
+                </button>
+              </div>
+            </div>
+            <div data-trip-section-body hidden>
+            <div class="trip-logistics-grid mt-4">
+              <label class="trip-logistics-field is-wide">
+                <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">How did today feel?</span>
+                <select id="journal-mood-input" class="mt-2 w-full border-0 bg-transparent p-0 text-base font-medium focus:ring-0">
+                  <option>Memorable</option>
+                  <option>Relaxing</option>
+                  <option>Fun</option>
+                  <option>Unexpected</option>
+                  <option>Worth repeating</option>
+                </select>
+              </label>
+              <label class="trip-logistics-field is-wide">
+                <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Your note</span>
+                <textarea id="journal-entry-input" class="mt-2 min-h-[110px] w-full border-0 bg-transparent p-0 text-sm leading-6 text-ink focus:ring-0" placeholder="Examples: Best meal of the trip so far. Loved this neighborhood at sunset. Would skip the line-heavy stop next time."></textarea>
+              </label>
+            </div>
+
+            <div class="trip-journal-footer">
+              <div class="trip-journal-preview-card">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Saved note</p>
+                <p id="journal-preview" class="mt-2 text-sm leading-6 text-muted">Nothing saved yet. Add a quick note whenever you want to remember part of the trip.</p>
+                <div class="trip-journal-helper">
+                  <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Best use</p>
+                  <p class="mt-2 text-sm leading-6 text-muted">Keep this light. One good memory, one surprise, or one thing you would repeat later is enough.</p>
+                </div>
+              </div>
+              <button class="rounded-full bg-surface-soft px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="save-journal-entry" type="button">
+                Save note
+              </button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-panel mt-6" id="saved-panel">
+        <div class="rounded-[28px] border border-line bg-surface-card p-5 shadow-card">
+          <div class="flex items-start justify-between gap-3">
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-[0.24em] text-primary">Saved trips</p>
+              <h3 class="mt-1 font-display text-2xl font-bold">Come back to what worked</h3>
+              <p class="mt-2 text-sm leading-6 text-muted">
+                Keep your trips, revisit the versions you liked, and add a quick note after you travel.
+              </p>
+            </div>
+            <span class="rounded-full bg-teal-soft px-3 py-1 text-xs font-semibold text-tertiary">Keep for later</span>
+          </div>
+
+          <div class="mt-5 space-y-3">
+            <div class="rounded-[24px] border border-line bg-white px-4 py-4">
+              <div class="flex items-start justify-between gap-3">
+                <div>
+                  <p class="text-sm font-semibold text-primary">Upcoming</p>
+                  <h4 class="mt-1 font-display text-lg font-bold">A Relaxed Paris Trip</h4>
+                  <p class="mt-2 text-sm text-muted">Saved version with one signature dinner, a slower final day, and a balanced pace.</p>
+                </div>
+                <span class="rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">Active</span>
+              </div>
+            </div>
+            <div class="rounded-[24px] border border-line bg-white px-4 py-4">
+              <div class="flex items-start justify-between gap-3">
+                <div>
+                  <p class="text-sm font-semibold text-primary">After the trip</p>
+                  <h4 class="mt-1 font-display text-lg font-bold">Quick reflection</h4>
+                  <p class="mt-2 text-sm text-muted">What felt most like you? What would you change next time? Keep a quick note for your next trip.</p>
+                </div>
+                <button class="rounded-full bg-surface-soft px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" type="button">
+                  Leave notes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-panel mt-6" id="faq-panel">
+        <div class="rounded-[28px] border border-line bg-surface-card p-5 shadow-card">
+          <div class="flex items-start justify-between gap-3">
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-[0.24em] text-primary">FAQ</p>
+              <h3 class="mt-1 font-display text-2xl font-bold">Common questions</h3>
+              <p class="mt-2 text-sm leading-6 text-muted">A quick place to understand how planning works, what you will be asked for, and how much control you keep.</p>
+            </div>
+            <span class="rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">Help</span>
+          </div>
+
+          <div class="mt-5 grid gap-3 sm:grid-cols-3">
+            <div class="rounded-[22px] border border-line bg-white px-4 py-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Planning</p>
+              <p class="mt-2 font-display text-lg font-bold">Build first, adjust anytime</p>
+              <p class="mt-2 text-sm leading-6 text-muted">The first draft builds quickly, then you can still swap, remove, reorder, and save alternate versions.</p>
+            </div>
+            <div class="rounded-[22px] border border-line bg-white px-4 py-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Control</p>
+              <p class="mt-2 font-display text-lg font-bold">Simple or detailed</p>
+              <p class="mt-2 text-sm leading-6 text-muted">Simple mode keeps the questions light. Detailed mode gives you more control over food, free time, sightseeing, and spending.</p>
+            </div>
+            <div class="rounded-[22px] border border-line bg-white px-4 py-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Personalization</p>
+              <p class="mt-2 font-display text-lg font-bold">Builds on what you like</p>
+              <p class="mt-2 text-sm leading-6 text-muted">Saved versions, favorite moments, and post-trip notes help future recommendations feel more personal.</p>
+            </div>
+          </div>
+
+          <div class="mt-5 space-y-3">
+            <div class="rounded-[22px] border border-line bg-white px-4 py-4">
+              <p class="font-semibold text-ink">What does Horizon Bound actually do?</p>
+              <p class="mt-2 text-sm leading-6 text-muted">It turns a destination, dates, budget, and preferences into a vacation draft that feels personal, memorable, and easy to enjoy.</p>
+            </div>
+            <div class="rounded-[22px] border border-line bg-white px-4 py-4">
+              <p class="font-semibold text-ink">Can I still change the itinerary?</p>
+              <p class="mt-2 text-sm leading-6 text-muted">Yes. You can swap ideas, remove stops, update logistics, compare versions, and save the plan you like best.</p>
+            </div>
+            <div class="rounded-[22px] border border-line bg-white px-4 py-4">
+              <p class="font-semibold text-ink">What is the difference between preferences and non-negotiables?</p>
+              <p class="mt-2 text-sm leading-6 text-muted">Preferences shape the trip. Non-negotiables are the things the trip must respect, like accessibility needs, hard budget limits, or must-do events.</p>
+            </div>
+            <div class="rounded-[22px] border border-line bg-white px-4 py-4">
+              <p class="font-semibold text-ink">Will the app ever push too hard against what I want?</p>
+              <p class="mt-2 text-sm leading-6 text-muted">No. We may point out a trade-off or suggest a better fit, but the final choice is always yours.</p>
+            </div>
+            <div class="rounded-[22px] border border-line bg-white px-4 py-4">
+              <p class="font-semibold text-ink">Where do the guides live?</p>
+              <p class="mt-2 text-sm leading-6 text-muted">City and country inspiration live in Explore. Trip-specific guide context appears again inside Your Trip when it helps explain the plan.</p>
+            </div>
+            <div class="rounded-[22px] border border-line bg-white px-4 py-4">
+              <p class="font-semibold text-ink">Do I need to book through the app?</p>
+              <p class="mt-2 text-sm leading-6 text-muted">No. We can suggest flights and places to stay, then send you to the right booking site when you are ready.</p>
+            </div>
+            <div class="rounded-[22px] border border-line bg-white px-4 py-4">
+              <p class="font-semibold text-ink">Where is my beta trip data saved?</p>
+              <p class="mt-2 text-sm leading-6 text-muted">During beta, saved trips, profile fields, booking notes, and backups stay local to this browser. There is no online account sync yet, so export a backup before switching devices or clearing browser data.</p>
+            </div>
+          </div>
+
+          <div class="mt-5 flex flex-wrap gap-2">
+            <button class="rounded-full bg-surface-soft px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-menu-action="city-guides" type="button">Open City Guides</button>
+            <button class="rounded-full bg-surface-soft px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-menu-action="country-guides" type="button">Open Country Guides</button>
+            <button class="rounded-full bg-surface-soft px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-menu-action="contact" type="button">Contact us</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-panel mt-6" id="contact-panel">
+        <div class="rounded-[28px] border border-line bg-surface-card p-5 shadow-card">
+          <div class="flex items-start justify-between gap-3">
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-[0.24em] text-primary">Contact</p>
+              <h3 class="mt-1 font-display text-2xl font-bold">Get in touch</h3>
+              <p class="mt-2 text-sm leading-6 text-muted">Get trip help, share feedback, or find the right place for partnership questions.</p>
+            </div>
+            <span class="rounded-full bg-teal-soft px-3 py-1 text-xs font-semibold text-tertiary">Help and feedback</span>
+          </div>
+
+          <div class="mt-5 grid gap-3 sm:grid-cols-3">
+            <div class="rounded-[22px] border border-line bg-white px-4 py-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Email</p>
+              <p class="mt-2 font-display text-lg font-bold">hamiltondan20@gmail.com</p>
+              <p class="mt-2 text-sm leading-6 text-muted">Email us about trip planning, account issues, saved trips, or a general question.</p>
+            </div>
+            <div class="rounded-[22px] border border-line bg-white px-4 py-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Feedback</p>
+              <p class="mt-2 font-display text-lg font-bold">Product feedback</p>
+              <p class="mt-2 text-sm leading-6 text-muted">We are building this to make travel planning easier. Your feedback helps us improve the product and future itineraries.</p>
+            </div>
+            <div class="rounded-[22px] border border-line bg-white px-4 py-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Partnerships</p>
+              <p class="mt-2 font-display text-lg font-bold">Travel and content partners</p>
+              <p class="mt-2 text-sm leading-6 text-muted">Use this route for lodging, travel, or destination partnerships and product collaborations.</p>
+            </div>
+          </div>
+
+          <div class="mt-5 rounded-[24px] border border-line bg-white px-4 py-4">
+            <div class="flex items-start justify-between gap-3">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Best path</p>
+                <h4 class="mt-2 font-display text-lg font-bold">Choose the right path</h4>
+                <p class="mt-2 text-sm leading-6 text-muted">Trip questions should be quick to solve, feedback should be easy to share, and partnership messages should go to the right place.</p>
+              </div>
+              <span class="rounded-full bg-surface-soft px-3 py-1 text-xs font-semibold text-secondary ring-1 ring-line">Routing</span>
+            </div>
+          </div>
+
+          <div class="mt-5 grid gap-3 sm:grid-cols-2">
+            <div class="rounded-[22px] border border-line bg-white px-4 py-4">
+              <p class="font-semibold text-ink">Need help with a trip?</p>
+              <p class="mt-2 text-sm leading-6 text-muted">Email us about itinerary questions, edits, booking guidance, account issues, or a saved trip.</p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <a class="rounded-full bg-surface-soft px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" href="mailto:hamiltondan20@gmail.com">Email us</a>
+                <button class="rounded-full bg-surface-soft px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-menu-action="faq" type="button">Open FAQ</button>
+              </div>
+            </div>
+            <div class="rounded-[22px] border border-line bg-white px-4 py-4">
+              <p class="font-semibold text-ink">Want to share feedback?</p>
+              <p class="mt-2 text-sm leading-6 text-muted">We especially want to hear what felt helpful, confusing, too generic, or worth improving in the planning flow.</p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <a class="rounded-full bg-surface-soft px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" href="mailto:hamiltondan20@gmail.com?subject=Horizon%20Bound%20Feedback">Send feedback</a>
+                <button class="rounded-full bg-surface-soft px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-menu-action="city-guides" type="button">Browse guides</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="app-bottom-bar" class="app-bottom-bar fixed inset-x-0 bottom-0 mx-auto w-full max-w-[40rem] px-5">
+      <div class="glass rounded-[30px] border border-white/70 px-4 py-3 shadow-float">
+          <div id="app-bottom-actions" class="app-bottom-actions flex items-center gap-3">
+              <button id="view-cycle-btn" class="flex h-12 w-12 items-center justify-center rounded-full bg-surface-soft text-secondary" aria-label="Cycle through planning steps" title="Cycle through planning steps" type="button">
+            <span class="material-symbols-outlined" aria-hidden="true">swap_horiz</span>
+          </button>
+            <button id="generate-btn" class="app-bottom-primary-btn flex-1 rounded-full bg-gradient-to-r from-primary-bright to-primary px-5 py-4 font-display text-base font-bold text-white shadow-card">
+              Generate Your Trip
+            </button>
+          </div>
+        <nav class="mt-3 flex items-center justify-around text-xs font-semibold text-muted">
+          <button class="nav-tab flex flex-col items-center gap-1 text-muted" data-target="explore-panel" type="button" aria-label="Open Explore">
+            <span class="material-symbols-outlined" aria-hidden="true">explore</span>
+            Explore
+          </button>
+          <button class="nav-tab flex flex-col items-center gap-1 text-primary" data-target="build-panel" type="button" aria-label="Open Build">
+            <span class="material-symbols-outlined" aria-hidden="true">home</span>
+            Build
+          </button>
+          <button class="nav-tab flex flex-col items-center gap-1 text-muted" data-target="blueprint-panel" type="button" aria-label="Open Trip Review">
+            <span class="material-symbols-outlined" aria-hidden="true">route</span>
+            Review
+          </button>
+          <button class="nav-tab flex flex-col items-center gap-1 text-muted" data-target="trip-panel" type="button" aria-label="Open Your Trip">
+            <span class="material-symbols-outlined" aria-hidden="true">calendar_month</span>
+            Your Trip
+          </button>
+          <button class="nav-tab flex flex-col items-center gap-1 text-muted" data-target="saved-panel" type="button" aria-label="Open Saved">
+            <span class="material-symbols-outlined" aria-hidden="true">person</span>
+            Saved
+          </button>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div id="account-modal" class="modal-shell fixed inset-0 z-50 items-end justify-center bg-surface-deep/45 px-5 pb-6 pt-10" role="dialog" aria-modal="true" aria-labelledby="account-modal-title" aria-describedby="account-modal-description">
+    <div class="w-full max-w-md rounded-[28px] border border-white/70 bg-white p-5 shadow-float sm:max-w-lg">
+      <div class="flex items-start justify-between gap-3">
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-[0.24em] text-primary">Beta local account</p>
+          <h3 id="account-modal-title" class="mt-1 font-display text-2xl font-bold">Save your trip here</h3>
+          <p id="account-modal-description" class="mt-2 text-sm leading-6 text-muted">
+            Your trip inputs and profile details will stay on this browser. Export a backup before switching devices.
+          </p>
+        </div>
+        <button id="close-account-modal" class="flex h-11 w-11 items-center justify-center rounded-full bg-surface-soft text-secondary" aria-label="Close account details" title="Close account details" type="button">
+          <span class="material-symbols-outlined" aria-hidden="true">close</span>
+        </button>
+      </div>
+
+      <div class="mt-6 grid gap-3 sm:grid-cols-3">
+        <label class="block">
+          <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Name</span>
+          <input id="local-account-name-input" class="mt-2 w-full rounded-2xl border border-line bg-surface px-4 py-3 text-sm font-medium text-ink focus:border-secondary focus:ring-secondary" placeholder="Optional" type="text" />
+        </label>
+        <label class="block">
+          <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Email</span>
+          <input id="local-account-email-input" class="mt-2 w-full rounded-2xl border border-line bg-surface px-4 py-3 text-sm font-medium text-ink focus:border-secondary focus:ring-secondary" placeholder="Optional" type="email" />
+        </label>
+        <label class="block">
+          <span class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Home airport</span>
+          <input id="local-account-airport-input" class="mt-2 w-full rounded-2xl border border-line bg-surface px-4 py-3 text-sm font-medium text-ink focus:border-secondary focus:ring-secondary" placeholder="DEN, JFK, LAX" type="text" />
+        </label>
+      </div>
+
+      <div class="mt-5 rounded-[22px] bg-blue-soft px-4 py-3 text-sm leading-6 text-secondary">
+        This is a local beta profile, not a synced online account. Your email is only included in an exported backup if you add it.
+      </div>
+
+      <div class="mt-5 grid gap-3 sm:grid-cols-2">
+        <button id="save-local-account-btn" class="account-option w-full rounded-2xl bg-secondary px-4 py-4 text-left font-semibold text-white shadow-sm" data-provider="local" type="button">Save on this browser</button>
+        <button id="skip-account-btn" class="account-option w-full rounded-2xl bg-surface-soft px-4 py-4 text-left font-semibold text-secondary ring-1 ring-line" type="button">Continue without saving</button>
+      </div>
+    </div>
+  </div>
+
+  <aside id="analytics-consent" class="hidden fixed inset-x-4 bottom-4 z-40 mx-auto max-w-xl rounded-[22px] border border-line bg-white p-4 shadow-float" aria-label="Analytics choices">
+    <p class="text-sm font-semibold text-ink">Help us improve trip planning?</p>
+    <p class="mt-1 text-sm leading-6 text-muted">Optional usage data helps us see which parts of the trip plan need work. Your trip details are not included in these analytics events.</p>
+    <div class="mt-3 flex flex-wrap gap-2">
+      <button id="analytics-decline" class="rounded-full bg-surface-soft px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" type="button">Not now</button>
+      <button id="analytics-accept" class="rounded-full bg-secondary px-4 py-2 text-sm font-semibold text-white" type="button">Allow analytics</button>
+    </div>
+  </aside>
+
+    <script>
+      window.HB_ANALYTICS_ID = "";
+    </script>
+    <script defer src="./data/destinations.js?v=20260912a"></script>
+    <script defer src="./data/country-guides.js?v=20260629j"></script>
+    <script defer src="./data/city-guides.js?v=20260830b"></script>
+    <script defer src="./data/trip-content.js?v=20260912b"></script>
+    <script defer src="./data/top-100-destinations.js?v=20260912a"></script>
+    <script defer src="./data/destination-expansion.js?v=20260912a"></script>
+    <script defer src="./data/destination-coverage.js?v=20260912b"></script>
+    <script defer src="./scripts/app-analytics.js?v=20260823a"></script>
+    <script defer src="./scripts/app-bootstrap.js?v=20260912b"></script>
+    <script defer src="./scripts/app-foundation.js?v=20260830c"></script>
+    <script defer src="./scripts/app-guides.js?v=20260912d"></script>
+  <script defer src="./scripts/app-trip.js?v=20260912b"></script>
+  <script defer src="./scripts/app-ui.js?v=20260912e"></script>
+</body>
+</html>

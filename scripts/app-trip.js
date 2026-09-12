@@ -12,10 +12,10 @@ function getGuideSourceReasoning() {
       if (!context.sourceType) return "";
 
       if (context.sourceType === "city") {
-        return `Started from the ${context.sourceName} guide, with ${context.suggestedBase} protected early.`;
+        return `You started with the ${context.sourceName} guide, so ${context.suggestedBase} stays near the start of the trip.`;
       }
 
-      return `Started from the ${context.sourceName} country guide, using ${context.suggestedBase} as the likely starting point.`;
+      return `You started with the ${context.sourceName} country guide, with ${context.suggestedBase} as the likely base.`;
     }
 
 function getBlueprintTopPlaces() {
@@ -78,18 +78,18 @@ function getBlueprintTopPlaces() {
       if (hbState.appState.flightMode === "need-help") {
         return {
           title: "Flight booking help",
-          copy: `We’ll look for ${hbState.appState.flightPreference.toLowerCase()} flight options and keep the trip quality in mind, not just the lowest price.`,
+          copy: `We will look for ${hbState.appState.flightPreference.toLowerCase()} flight options and balance price with a trip that still feels comfortable.`,
           chips: ["Need help finding flights", hbState.appState.flightPreference, hbState.appState.budget],
           meta: [
             {
               label: "Current setup",
-              value: "We’re still choosing flights",
+              value: "We are still choosing flights",
               copy: `Priority: ${hbState.appState.flightPreference}.`
             },
             {
-              label: "Why it matters",
-              value: "Trip quality stays protected",
-              copy: "We use common sense so cheaper options do not create long layovers or throw off the overall trip."
+              label: "Why this helps",
+              value: "A better balance than the lowest fare",
+              copy: "Lower fares should not mean long layovers or a harder trip overall."
             }
           ]
         };
@@ -109,7 +109,7 @@ function getBlueprintTopPlaces() {
               copy: `${arrival} arrival • ${departure} departure`
             },
             {
-              label: "Why it matters",
+              label: "Why this helps",
               value: "Arrival and departure days can stay realistic",
               copy: "The trip can keep your first and last day lighter when travel timing already shapes those windows."
             }
@@ -118,19 +118,19 @@ function getBlueprintTopPlaces() {
       }
 
       return {
-        title: "No flights added",
-        copy: "This trip is not using flight planning right now, so the itinerary will stay focused on the destination itself.",
+        title: "No flights added yet",
+        copy: "Flights are not part of this plan yet, so the itinerary will stay focused on the destination.",
         chips: ["No flights needed", hbState.appState.pace, hbState.appState.budget],
         meta: [
           {
             label: "Current setup",
-            value: "No flight planning in this draft",
-            copy: "This trip can stay destination-first for now."
+            value: "Flights are not part of this plan yet",
+            copy: "For now, we can keep the focus on the destination."
           },
           {
-            label: "Why it matters",
-            value: "Less clutter while you plan",
-            copy: "You can still build the days now and add travel details later if they become relevant."
+            label: "Why this helps",
+            value: "Keep the plan focused",
+            copy: "You can build the days now and add travel details later if you need them."
           }
         ]
       };
@@ -179,6 +179,54 @@ function getBlueprintTopPlaces() {
         .replace(/'/g, "&#39;");
     }
 
+    function humanizeTripCopy(value) {
+      return String(value ?? "")
+        .replace(/\bnearby follow-through\b/gi, "nearby stop")
+        .replace(/\bfollow-through stop\b/gi, "nearby stop")
+        .replace(/\bfollow-through\b/gi, "nearby stop")
+        .replace(/\bfollow through\b/gi, "nearby stop")
+        .replace(/\bcontinuation\b/gi, "nearby stop")
+        .replace(/\banchor the day\b/gi, "center the day")
+        .replace(/\ban anchored\b/gi, "a centered")
+        .replace(/\banchors\b/gi, "main stops")
+        .replace(/\ban anchor\b/gi, "a main focus")
+        .replace(/\bthe anchor\b/gi, "the main focus")
+        .replace(/\banchor\b/gi, "main focus")
+        .replace(/\bprotected first day\b/gi, "first day kept clear")
+        .replace(/\bprotected downtime\b/gi, "downtime kept open")
+        .replace(/\bprotected energy\b/gi, "energy kept in reserve")
+        .replace(/\bprotected day\b/gi, "day set aside")
+        .replace(/\bprotected\b/gi, "kept clear")
+        .replace(/\bprotect\b/gi, "keep")
+        .replace(/\bmeaningful\b/gi, "worthwhile")
+        .replace(/\bplanner\b/gi, "trip plan")
+        .replace(/\bsignals\b/gi, "details");
+    }
+
+    function escapeTripText(value) {
+      return escapeHtml(humanizeTripCopy(value));
+    }
+
+    function renderTripTravelAlert() {
+      const alert = document.getElementById("trip-travel-alert");
+      if (!alert) return;
+      const destination = resolveCanonicalDestination(hbState.appState.destination || "").trim();
+      const country = destination.includes(",") ? destination.split(",").slice(-1)[0].trim() : destination;
+      if (!country || !hbData.travelGuidelineCountries?.includes(country)) {
+        alert.classList.add("hidden");
+        alert.innerHTML = "";
+        return;
+      }
+
+      alert.classList.remove("hidden");
+      alert.innerHTML = `
+        <div class="flex flex-col gap-3 rounded-[18px] bg-warm px-3 py-3 ring-1 ring-warm-line sm:flex-row sm:items-center sm:justify-between">
+          <p class="flex items-start gap-2 text-sm leading-6 text-ink"><span class="material-symbols-outlined mt-0.5 text-primary" aria-hidden="true">warning</span><span>Safety, entry rules, and access can change. Check official guidance before you book or travel.</span></p>
+          <a class="inline-flex min-h-10 shrink-0 items-center justify-center rounded-full bg-primary px-4 py-2 text-center text-sm font-semibold text-white transition hover:brightness-95" href="${hbData.travelGuidelinesUrl}" target="_blank" rel="noreferrer noopener">Check the Most Recent Travel Guidelines</a>
+        </div>
+      `;
+    }
+
     function getDestinationGuideDetails() {
       const detailMap = hbData.cityGuideDetailData || {};
       const destination = hbState.appState.destination;
@@ -198,6 +246,171 @@ function getBlueprintTopPlaces() {
         || item.city?.startsWith(`${city},`)
         || item.title === city
       )) || null;
+    }
+
+    function getDestinationStoryData() {
+      const city = getCityName();
+      const guide = getDestinationGuideEntry();
+      const details = getDestinationGuideDetails();
+      const context = hbState.guidePlanContext || {};
+      const uniqueItems = (...groups) => [...new Set(groups.flatMap((group) => Array.isArray(group) ? group : []).filter(Boolean))];
+      const preferenceText = [
+        formatTripStyles(),
+        hbState.appState.memory,
+        hbState.appState.budget,
+        hbState.appState.children > 0 ? "family" : "",
+        hbState.appState.mustHaves
+      ].join(" ").toLowerCase();
+      const foodItems = uniqueItems(
+        details?.bestDinner,
+        details?.bestRestaurants,
+        details?.bestLunch
+      );
+      const preferenceAttractions = preferenceText.includes("family") || preferenceText.includes("kids")
+        ? details?.bestKids
+        : preferenceText.includes("romantic") || preferenceText.includes("couples")
+          ? details?.bestCouples
+          : preferenceText.includes("solo")
+            ? details?.bestSolo
+            : preferenceText.includes("luxury") || hbState.appState.budget === "Premium"
+              ? details?.bestLuxury
+              : preferenceText.includes("budget") || hbState.appState.budget === "Budget"
+                ? details?.bestBudget
+              : preferenceText.includes("adventurous") || preferenceText.includes("unique")
+                  ? details?.bestUnique
+                  : preferenceText.includes("food")
+                    ? foodItems
+                  : details?.bestFirstTimers;
+      const attractions = uniqueItems(
+        preferenceAttractions,
+        details?.bestFirstTimers,
+        details?.bestAttractions,
+        guide?.highlights
+      );
+      const food = foodItems;
+      const anchor = attractions[0] || `the highlights of ${city}`;
+      const addOn = attractions[1] || food[0] || `a neighborhood worth wandering`;
+      const breathingArea = getAreaSet(city)[0] || "a nearby neighborhood";
+      const breathingRoom = `time to wander through ${breathingArea}`;
+      const style = String(formatTripStyles() || "personal").replace(/\s*\+\s*/g, " and ").toLowerCase();
+      const pace = String(hbState.appState.pace || "Balanced").toLowerCase();
+      const styleArticle = /^[aeiou]/i.test(style) ? "an" : "a";
+      const sourceName = context.sourceType && context.sourceName
+        ? `${context.sourceName} guide`
+        : guide?.title
+          ? `${guide.title} guide`
+          : `${city} destination guide`;
+      const guideMustHave = context.signals?.mustHaves
+        ? ` The guide also points you toward ${context.signals.mustHaves}.`
+        : "";
+
+      return {
+        city,
+        anchor,
+        addOn,
+        breathingRoom,
+        style,
+        pace,
+        sourceName,
+        buildKicker: `Best match for your ${style} trip`,
+        buildTitle: `Start with ${anchor}.`,
+        buildCopy: `Start with ${anchor}. If you want to add one more thing, try ${addOn} without packing too much into the day.`,
+        buildPoints: [`Best match: ${anchor}`, `Worth adding: ${addOn}`, `${titleCase(pace)} pace`],
+        blueprintKicker: `Best match for your trip`,
+        blueprintTitle: `Start with ${anchor}. If you want to add one more thing, try ${addOn}.`,
+        blueprintCopy: `We are putting ${anchor} first and keeping the rest of the day open for ${breathingRoom}, so it does not feel rushed.${guideMustHave}`,
+        blueprintQuote: `From the ${sourceName}`,
+        tripKicker: `Best match for your trip`,
+        tripTitle: `${anchor}, then ${addOn} if you are up for it.`,
+        tripPoints: [
+          { icon: "star", text: `Best match: ${anchor}` },
+          { icon: "add_location_alt", text: `Worth adding: ${addOn}` },
+          { icon: "schedule", text: "Leave time to wander" }
+        ]
+      };
+    }
+
+    function renderDestinationStoryBands() {
+      const story = getDestinationStoryData();
+      const textMap = {
+        "build-planning-note-kicker": story.buildKicker,
+        "build-planning-note-title": story.buildTitle,
+        "build-planning-note-copy": story.buildCopy,
+        "blueprint-story-kicker": story.blueprintKicker,
+        "blueprint-story-title": story.blueprintTitle,
+        "blueprint-story-copy": story.blueprintCopy,
+        "blueprint-story-quote": story.blueprintQuote,
+        "trip-perspective-kicker": story.tripKicker,
+        "trip-perspective-title": story.tripTitle
+      };
+
+      Object.entries(textMap).forEach(([id, value]) => {
+        const element = document.getElementById(id);
+        if (element) element.textContent = humanizeTripCopy(value);
+      });
+
+      const buildPoints = document.getElementById("build-planning-note-points");
+      if (buildPoints) {
+        buildPoints.innerHTML = story.buildPoints.map((item) => `<span>${escapeTripText(item)}</span>`).join("");
+      }
+
+      const tripPoints = document.getElementById("trip-perspective-points");
+      if (tripPoints) {
+        tripPoints.innerHTML = story.tripPoints.map((item) => `
+          <span><span class="material-symbols-outlined" aria-hidden="true">${escapeHtml(item.icon)}</span>${escapeTripText(item.text)}</span>
+        `).join("");
+      }
+
+      const mustHaveLead = String(hbState.appState.mustHaves || "")
+        .split(/[,.]/)[0]
+        .trim();
+      const normalizedMustHaveLead = mustHaveLead
+        .replace(/^The\b/, "the")
+        .replace(/^A\b/, "a")
+        .replace(/^An\b/, "an");
+      const fitLead = normalizedMustHaveLead && (/^(?:the|a|an)\s+/i.test(normalizedMustHaveLead)
+        || /^(?:[A-Z][a-z]+\s+){1,}[A-Z][a-z]+$/.test(normalizedMustHaveLead))
+        ? normalizedMustHaveLead
+        : normalizedMustHaveLead.charAt(0).toLowerCase() + normalizedMustHaveLead.slice(1);
+      const fitCopy = mustHaveLead
+        ? `You get ${fitLead}, with a ${story.pace} pace that keeps the day enjoyable.`
+        : `It suits your ${story.style} style and ${story.pace} pace, with time to enjoy the day.`;
+      const styleArticle = /^[aeiou]/i.test(story.style) ? "an" : "a";
+      const styleDisplay = formatTripStyles();
+      const sourceTag = hbState.guidePlanContext?.sourceType || getDestinationGuideEntry() || getDestinationGuideDetails()
+        ? "From the guide"
+        : "Personalized";
+      const summaryMarkup = `
+        <div class="match-summary-head">
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-[0.16em] text-primary">A few good ideas to start with</p>
+            <h4 class="mt-1 font-display text-xl font-bold">Your best starting points</h4>
+          </div>
+          <span class="rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">${escapeHtml(sourceTag)}</span>
+        </div>
+        <div class="match-summary-grid">
+          <article class="match-summary-card is-primary">
+            <p class="match-summary-card-label">Best match for your trip</p>
+            <p class="match-summary-card-value">${escapeHtml(story.anchor)}</p>
+            <p class="match-summary-card-copy">A great fit for ${escapeHtml(styleArticle)} ${escapeHtml(story.style)} trip to ${escapeHtml(story.city)}.</p>
+          </article>
+          <article class="match-summary-card">
+            <p class="match-summary-card-label">Worth adding</p>
+            <p class="match-summary-card-value">${escapeHtml(story.addOn)}</p>
+            <p class="match-summary-card-copy">A good follow-up if you want to do a little more.</p>
+          </article>
+          <article class="match-summary-card">
+            <p class="match-summary-card-label">Why this fits you</p>
+            <p class="match-summary-card-value">${escapeHtml(styleDisplay)} + ${escapeHtml(titleCase(story.pace))}</p>
+            <p class="match-summary-card-copy">${escapeHtml(fitCopy)}</p>
+          </article>
+        </div>
+      `;
+
+      ["blueprint-match-summary", "trip-match-summary"].forEach((id) => {
+        const summary = document.getElementById(id);
+        if (summary) summary.innerHTML = summaryMarkup;
+      });
     }
 
     function joinGuideItems(items, fallback) {
@@ -224,7 +437,7 @@ function getBlueprintTopPlaces() {
         {
           label: "Where to stay",
           value: "Base near the strongest trip area",
-          copy: `Pick a stay that supports the trip rhythm around ${city}, not only the lowest price or a generic central label.`
+          copy: `Choose a place to stay that fits the way you want to spend your days in ${city}, not just the lowest price or a generic central label.`
         },
         {
           label: "Getting around",
@@ -259,28 +472,28 @@ function getBlueprintTopPlaces() {
           icon: "menu_book",
           label: "Guide source",
           value: `From the ${guideSource}`,
-          copy: `The itinerary is using destination guide signals first, then filtering them through your dates, pace, budget, and must-haves.`,
-          chips: ["Guide-backed", hbState.appState.pace, formatTripStyles()]
+          copy: `The itinerary starts with guide recommendations, then adjusts them to your dates, pace, budget, and must-haves.`,
+          chips: ["Guide picks", hbState.appState.pace, formatTripStyles()]
         },
         {
           icon: "route",
-          label: "Route logic",
+          label: "How the route fits",
           value: dayAreas,
           copy: routeToolkit?.copy || guide?.tip || `The trip keeps each day centered around one strong part of ${getCityName()} so the route feels easier to follow.`,
           chips: ["Area-based days", "Less backtracking", hbState.appState.spontaneity]
         },
         {
           icon: "star",
-          label: "Protected priorities",
+          label: "Top priorities",
           value: protectedPicks,
-          copy: `These guide-backed picks influence what stays visible before lower-priority extras are added.`,
+          copy: `These guide recommendations stay visible before we add lower-priority extras.`,
           chips: (details?.bestAttractions || guideHighlights).slice(0, 3)
         },
         {
           icon: "restaurant",
-          label: "Food and booking",
+          label: "Food and reservations",
           value: foodPicks,
-          copy: bookToolkit?.copy || `Food is treated as part of the trip shape, so meals like ${foodPicks} can anchor days instead of filling gaps.`,
+          copy: bookToolkit?.copy || `Meals help shape the day, so ${foodPicks} can anchor the plan instead of filling a gap.`,
           chips: (details?.bestDinner || details?.bestRestaurants || []).slice(0, 3)
         }
       ];
@@ -468,9 +681,9 @@ function getBlueprintTopPlaces() {
 
     function getAnchorTypeLabel(type) {
       const labels = {
-        food: "Food anchor",
-        sight: "Sight anchor",
-        rest: "Pace anchor",
+          food: "Food pick",
+          sight: "Sight pick",
+          rest: "Pace pick",
         unique: "Local texture",
         easy: "Easy win",
         atmosphere: "Trip vibe",
@@ -512,22 +725,22 @@ function getBlueprintTopPlaces() {
       }
 
       if (anchor.type === "food") {
-        return `Protected from ${source} as the meal anchor, then the surrounding stops stay close enough for the food plan to feel realistic.`;
+        return `Kept from ${source} as the main meal, then the surrounding stops stay close enough for the food plan to feel realistic.`;
       }
 
       if (anchor.type === "sight") {
-        return `Protected from ${source} as the main sight, then the rest of ${day.area} is built around it instead of competing with it.`;
+        return `Kept from ${source} as the main sight, then the rest of ${day.area} is built around it instead of competing with it.`;
       }
 
       if (anchor.type === "rest" || index === totalDays - 1) {
-        return `Protected as a pacing rule, so this day leaves room to slow down instead of filling every open hour.`;
+        return `Kept as a pacing priority, so this day leaves room to slow down instead of filling every open hour.`;
       }
 
       if (anchor.type === "unique" || anchor.type === "atmosphere") {
-        return `Protected as the character of the day, helping ${day.area} feel intentional rather than interchangeable.`;
+        return `Kept as part of the day's character, helping ${day.area} feel intentional rather than interchangeable.`;
       }
 
-      return `Protected from ${source}, then used as the reason this day stays focused around ${day.area}.`;
+      return `Kept from ${source}, then used as the reason this day stays focused around ${day.area}.`;
     }
 
     function renderDayGuideMustHaveCards(day, index, totalDays) {
@@ -536,8 +749,8 @@ function getBlueprintTopPlaces() {
       const guideCount = anchors.filter((anchor) => anchor.source === "guide").length;
       const heading = guideCount ? "Guide-applied must-haves" : "Must-haves inside this day";
       const copy = guideCount
-        ? `These came from the destination guide plus your preferences, then the planner placed them inside ${day.dayLabel}.`
-        : `These came from your must-haves, then the planner used them to keep ${day.dayLabel} focused.`;
+        ? `These came from the destination guide and your preferences, and they are included in ${day.dayLabel}.`
+        : `These came from your must-haves, and they keep ${day.dayLabel} focused.`;
 
       return `
         <div class="trip-day-anchor-logic mt-3">
@@ -546,7 +759,7 @@ function getBlueprintTopPlaces() {
               <p class="trip-day-anchor-logic-label">${escapeHtml(heading)}</p>
               <p class="trip-day-anchor-logic-copy">${escapeHtml(copy)}</p>
             </div>
-            <span class="trip-day-anchor-count">${anchors.length} protected</span>
+            <span class="trip-day-anchor-count">${anchors.length} included</span>
           </div>
           <div class="trip-day-anchor-grid">
             ${anchors.map((anchor) => `
@@ -569,7 +782,7 @@ function getBlueprintTopPlaces() {
       if (!anchors.length) return "";
       const guideBacked = anchors.some((anchor) => anchor.source === "guide");
       const source = guideBacked ? `From ${buildDestinationGuideSourceName()}` : "From your must-haves";
-      const label = guideBacked ? "Guide-applied must-haves" : "Protected from your must-haves";
+      const label = guideBacked ? "Guide-applied must-haves" : "From your must-haves";
 
       return `
         <div class="trip-day-protected-strip mt-3">
@@ -578,7 +791,7 @@ function getBlueprintTopPlaces() {
               <span class="material-symbols-outlined" aria-hidden="true">push_pin</span>
               ${escapeHtml(label)}
             </p>
-            <p class="trip-day-protected-copy">${escapeHtml(source)}. This day keeps ${escapeHtml(joinGuideItems(anchors.map((anchor) => anchor.label), "your priority moments"))} visible in the actual plan, not just as background preferences.</p>
+            <p class="trip-day-protected-copy">${escapeHtml(source)}. This day keeps ${escapeHtml(joinGuideItems(anchors.map((anchor) => anchor.label), "your priority moments"))} in the plan itself, not just in the preferences.</p>
           </div>
           <div class="trip-day-protected-chips">
             ${anchors.map((anchor) => `
@@ -628,7 +841,7 @@ function getBlueprintTopPlaces() {
           ${stepAnchors.map((anchor) => `
             <span>
               <span class="material-symbols-outlined" aria-hidden="true">push_pin</span>
-              ${anchor.source === "guide" ? "Guide must-have" : "Protected"}: ${escapeHtml(anchor.label)}
+              ${anchor.source === "guide" ? "Guide pick" : "Must-have"}: ${escapeHtml(anchor.label)}
             </span>
           `).join("")}
         </div>
@@ -637,7 +850,7 @@ function getBlueprintTopPlaces() {
 
     function getProtectedAnchorSummary(day, index = 0, totalDays = hbState.currentTrip?.days?.length || 1) {
       const anchors = getDayProtectedAnchors(day, index, totalDays);
-      return joinGuideItems(anchors.map((anchor) => anchor.label), "the protected must-haves");
+      return joinGuideItems(anchors.map((anchor) => anchor.label), "your must-haves");
     }
 
     function renderDayQualityControls(day, index, totalDays) {
@@ -654,7 +867,7 @@ function getBlueprintTopPlaces() {
           <div class="trip-day-quality-head">
             <div>
               <p class="trip-day-quality-label">Quick feedback</p>
-              <p class="trip-day-quality-copy">Adjust the day while keeping protected must-haves visible.</p>
+              <p class="trip-day-quality-copy">Adjust the day while keeping your must-haves in view.</p>
             </div>
             <div class="trip-day-quality-actions" role="group" aria-label="Adjust ${escapeHtml(day.dayLabel)}">
               ${choices.map(([value, icon, label]) => `
@@ -699,10 +912,10 @@ function getBlueprintTopPlaces() {
       }
 
       if (hbState.appState.memory === "Adventurous" || hbState.appState.styles.includes("Adventurous")) {
-        return `This is a good discovery day: one clear anchor, then enough nearby texture to make ${day.area} feel explored.`;
+        return `This is a good discovery day: one clear highlight, then enough nearby texture to make ${day.area} feel explored.`;
       }
 
-      return `The day has one clear anchor and nearby follow-through, so it feels planned without turning into a checklist.`;
+      return `The day has one clear highlight and nearby follow-through, so it feels planned without turning into a checklist.`;
     }
 
     function buildDayBookingNote(day, index, totalDays) {
@@ -719,7 +932,7 @@ function getBlueprintTopPlaces() {
       const looksTicketed = /museum|tower|palace|garden|bridge|view|cruise|show|tour|temple|colosseum|forum|acropolis|sagrada|louvre|vatican|gallery/.test(dayText);
 
       if (foodFocused || looksMealLed) {
-        return `Reserve ${restaurant} if it matters to you, then keep the meal window protected before adding extra stops.`;
+        return `Reserve ${restaurant} if you want to, then leave enough time for the meal before adding extra stops.`;
       }
 
       if (looksTicketed) {
@@ -731,7 +944,7 @@ function getBlueprintTopPlaces() {
       }
 
       if (index === totalDays - 1) {
-        return `Protect checkout or packing time first, then keep only one final food, view, or neighborhood stop that feels worth it.`;
+        return `Leave checkout or packing time alone first, then keep only one final food, view, or neighborhood stop that feels worth it.`;
       }
 
       return `If anything needs a booking, make it ${day.highlight}; keep the rest of the day easy to adjust.`;
@@ -776,16 +989,16 @@ function getBlueprintTopPlaces() {
         const labels = joinGuideItems(protectedAnchors.map((anchor) => anchor.label), "your priority moments");
         return {
           icon: "push_pin",
-          label: guideBacked ? "Guide-backed must-have" : "Must-have fit",
-          copy: `Keeps ${labels} visible in this day, then builds the nearby stops around it.`
+          label: guideBacked ? "Guide-applied must-have" : "Must-have fit",
+          copy: `Keeps ${labels} in view for this day, then builds nearby stops around them.`
         };
       }
 
       if (nonNegotiables) {
         return {
           icon: "rule",
-          label: "Hard rules",
-          copy: `Keep edits aligned with: ${nonNegotiables}`
+          label: "Things to avoid",
+          copy: `When you make changes, keep these in mind: ${nonNegotiables}`
         };
       }
 
@@ -793,7 +1006,7 @@ function getBlueprintTopPlaces() {
         return {
           icon: "push_pin",
           label: "Must-have check",
-          copy: `Before saving, make sure this still supports: ${mustHaves}`
+          copy: `Before you save, make sure this still includes: ${mustHaves}`
         };
       }
 
@@ -817,7 +1030,7 @@ function getBlueprintTopPlaces() {
 
       return {
         icon: "menu_book",
-        label: "Guide logic",
+          label: "From the city guide",
         copy: mealLed
           ? `From the ${guideSource}: ${guideMeal} is treated as a real anchor, so the rest of the day stays close enough for the meal to matter.`
           : `From the ${guideSource}: ${guidePlace} helps explain why this day is centered in ${day.area} instead of jumping between unrelated stops.`
@@ -906,7 +1119,7 @@ function getBlueprintTopPlaces() {
           titleDescriptor: "Family Beach",
           summary: "Beach time, kid-friendly pacing, simple meals, and realistic resets are treated as core parts of the trip.",
           reasoning: "Family beach trips need fewer heroic transfers, more shade and snack windows, and backup options when energy changes.",
-          lensValue: "Beach time and family logistics are protected",
+          lensValue: "Beach time and family logistics stay in the plan",
           signatureTitle: `${city} easy beach day`,
           signatureReason: "Chosen because this trip needs the beach to feel simple, fun, and manageable for the whole group.",
           dayLabel: "Family fit",
@@ -916,14 +1129,14 @@ function getBlueprintTopPlaces() {
 
       if (romantic && luxury) {
         return {
-          key: "luxury-honeymoon",
-          titleDescriptor: "Luxury Honeymoon",
+          key: "luxury-romantic",
+          titleDescriptor: "Luxury",
           summary: "The plan protects privacy, slower mornings, standout meals, and polished evenings instead of overfilling the schedule.",
-          reasoning: "A luxury honeymoon should feel intentional and special, with reservations and scenic moments carrying more weight than checklist coverage.",
-          lensValue: "Romantic moments and premium pacing are shaping the trip",
+          reasoning: "A luxury trip with a romantic mood should feel intentional and special, with reservations and scenic moments doing more for the trip than a packed checklist.",
+          lensValue: "Romantic moments and a polished pace are shaping the trip",
           signatureTitle: `${city} private-feeling evening`,
           signatureReason: "Chosen because the trip should have one polished evening that feels worth dressing up for and planning around.",
-          dayLabel: "Honeymoon fit",
+          dayLabel: "Premium fit",
           dayNote: "Protect the romantic or premium anchor first, then keep the surrounding plans close enough that the day feels smooth."
         };
       }
@@ -934,7 +1147,7 @@ function getBlueprintTopPlaces() {
           titleDescriptor: "Romantic",
           summary: "The itinerary leaves room for atmosphere, slower meals, scenic walks, and one evening that feels intentionally special.",
           reasoning: "Romantic trips work best when the plan creates space for mood instead of treating every day like a sightseeing checklist.",
-          lensValue: "Atmosphere, meals, and scenic timing are protected",
+          lensValue: "Atmosphere, meals, and scenic timing stay in the plan",
           signatureTitle: `${city} sunset-to-dinner evening`,
           signatureReason: "Chosen because the trip needs one emotional high point that feels natural rather than staged.",
           dayLabel: "Romantic fit",
@@ -946,10 +1159,10 @@ function getBlueprintTopPlaces() {
         return {
           key: "family",
           titleDescriptor: "Family-Friendly",
-          summary: "The plan keeps kid-friendly anchors visible while protecting downtime, simpler transitions, and realistic meal timing.",
-          reasoning: "Family trips need a plan that can bend without falling apart, so each day has a clear anchor and a practical escape valve.",
+          summary: "The plan keeps kid-friendly moments visible while leaving room for downtime, simpler transitions, and realistic meal timing.",
+          reasoning: "Family trips need a plan that can bend without falling apart, so each day has a clear highlight and an easy fallback.",
           lensValue: "The trip is built to stay enjoyable for the whole group",
-          signatureTitle: `${city} family anchor day`,
+          signatureTitle: `${city} family highlight day`,
           signatureReason: "Chosen because it gives the group one clear memory without asking every traveler to keep adult sightseeing pace all day.",
           dayLabel: "Family fit",
           dayNote: "Keep one easy reset nearby, and avoid making this day depend on too many perfect transitions."
@@ -975,9 +1188,9 @@ function getBlueprintTopPlaces() {
           key: "road-trip",
           titleDescriptor: "Road Trip",
           summary: "The itinerary treats drive time, parking, scenic stops, and lighter arrival windows as part of the trip design.",
-          reasoning: "Road trips feel better when the route has fewer brittle handoffs and each day has a clear reason to stop.",
-          lensValue: "Drive time and route logic are shaping the itinerary",
-          signatureTitle: `${city} route-friendly anchor day`,
+          reasoning: "Road trips feel better when the route has fewer complicated transitions and each day has a clear reason to stop.",
+          lensValue: "Drive time and the route are shaping the itinerary",
+          signatureTitle: `${city} route-friendly highlight day`,
           signatureReason: "Chosen because this trip needs a strong stop that works with the route, not against it.",
           dayLabel: "Route fit",
           dayNote: "Keep parking, drive time, and one scenic or food stop in mind before adding another timed commitment."
@@ -1002,13 +1215,13 @@ function getBlueprintTopPlaces() {
         return {
           key: "luxury",
           titleDescriptor: "Luxury",
-          summary: "The trip uses fewer but better anchors, with reservations, private-feeling time, and polished evenings carrying the experience.",
+          summary: "The trip uses fewer but better moments, with reservations, private-feeling time, and polished evenings carrying the experience.",
           reasoning: "Luxury trips should not just be busier or pricier; they should feel smoother, more deliberate, and easier to enjoy.",
-          lensValue: "Premium anchors and polished pacing are shaping the trip",
+          lensValue: "Premium moments and a polished pace are shaping the trip",
           signatureTitle: `${city} premium evening plan`,
           signatureReason: "Chosen because this is the moment where a better reservation, view, or private-feeling experience is worth protecting.",
           dayLabel: "Premium fit",
-          dayNote: "Book the strongest anchor early, then avoid overloading the day so the premium moment still feels worth it."
+          dayNote: "Book the strongest experience early, then avoid overloading the day so the premium moment still feels worth it."
         };
       }
 
@@ -1018,7 +1231,7 @@ function getBlueprintTopPlaces() {
           titleDescriptor: "Solo",
           summary: "The plan keeps navigation simple, gives flexible meal options, and avoids days that depend on a group rhythm.",
           reasoning: "Solo trips work best when the itinerary feels confident but not overcommitted, with easy pivots between planned and open time.",
-          lensValue: "Solo-friendly flow and flexible choices are protected",
+          lensValue: "Solo-friendly flow and flexible choices stay in the plan",
           signatureTitle: `${city} solo discovery day`,
           signatureReason: "Chosen because it gives the trip a clear personal highlight while keeping the day easy to change on the fly.",
           dayLabel: "Solo fit",
@@ -1032,7 +1245,7 @@ function getBlueprintTopPlaces() {
           titleDescriptor: "Beach",
           summary: "The itinerary protects beach time, shade, slower meals, and weather-flexible backup options.",
           reasoning: "Beach trips should not become overbuilt city itineraries; the plan needs room for water, weather, and easy resets.",
-          lensValue: "Beach time and weather flexibility are protected",
+          lensValue: "Beach time and weather flexibility stay in the plan",
           signatureTitle: `${city} beach-and-sunset day`,
           signatureReason: "Chosen because the trip needs one day where the coast or water is clearly the point.",
           dayLabel: "Beach fit",
@@ -1050,7 +1263,7 @@ function getBlueprintTopPlaces() {
           signatureTitle: `${city} active discovery day`,
           signatureReason: "Chosen because this is where the itinerary should feel more curious and alive.",
           dayLabel: "Adventure fit",
-          dayNote: "Use the bigger outing as the anchor, then add one nearby discovery instead of scattering the route."
+          dayNote: "Use the bigger outing as the main plan, then add one nearby discovery instead of scattering the route."
         };
       }
 
@@ -1058,13 +1271,13 @@ function getBlueprintTopPlaces() {
         return {
           key: "food",
           titleDescriptor: "Food-Focused",
-          summary: "Meals, markets, reservations, and neighborhood food areas are treated as real trip anchors.",
+          summary: "Meals, markets, reservations, and neighborhood food areas are treated as real parts of the trip.",
           reasoning: "Food-focused trips fall flat when meals are placeholders, so the itinerary gives restaurants and markets room to matter.",
           lensValue: "Food and neighborhoods are shaping the best parts",
           signatureTitle: `${city} standout food day`,
-          signatureReason: "Chosen because the meal or market should carry the memory weight instead of being squeezed between sights.",
+          signatureReason: "Chosen because this meal or market should be one of the moments you remember, not something squeezed between sights.",
           dayLabel: "Food fit",
-          dayNote: "Choose the meal first, then keep the surrounding stops close enough that the food anchor still feels like the point."
+          dayNote: "Choose the meal first, then keep the surrounding stops close enough that it still feels like the point of the day."
         };
       }
 
@@ -1078,7 +1291,7 @@ function getBlueprintTopPlaces() {
           signatureTitle: `${city} slow afternoon`,
           signatureReason: "Chosen because this trip should feel calmer, with one easy anchor that leaves room to enjoy the place.",
           dayLabel: "Relaxed fit",
-          dayNote: "Protect the pause as part of the plan, not as empty time after everything else."
+          dayNote: "Keep the pause in the plan, rather than treating it as empty time after everything else."
         };
       }
 
@@ -1086,10 +1299,10 @@ function getBlueprintTopPlaces() {
         key: "balanced",
         titleDescriptor: hbState.appState.styles[0] || "Balanced",
         summary: "The plan balances the biggest reasons to go with enough room for meals, neighborhoods, and realistic pacing.",
-        reasoning: "A good general trip needs clear anchors, light routing logic, and enough flexibility that the plan still works in real life.",
-        lensValue: "The big sights stay protected without overloading the days",
+        reasoning: "A good general trip needs a few clear priorities, simple routing, and enough flexibility to work in real life.",
+        lensValue: "The big sights stay in the plan without overloading the days",
         signatureTitle: `${city} signature essential`,
-        signatureReason: "Chosen because it matches your strongest trip signals and gives the trip one moment that clearly stands out.",
+        signatureReason: "This stands out because it matches what you care about and gives the trip one moment that feels special.",
         dayLabel: "Trip fit",
         dayNote: "Keep the main anchor visible, then use nearby food, walks, or pauses to make the day feel complete."
       };
@@ -1117,7 +1330,7 @@ function getBlueprintTopPlaces() {
 
     function buildTripReasoning() {
       const guideReasoning = getGuideSourceReasoning();
-      const baseReasoning = `Neighborhood-led, easy to follow, and shaped around your strongest signals.`;
+      const baseReasoning = `Easy to follow and shaped around the things you care about.`;
       const qualityReasoning = getTripQualityProfile().reasoning;
       return guideReasoning ? `${guideReasoning} ${baseReasoning} ${qualityReasoning}` : `${baseReasoning} ${qualityReasoning}`;
     }
@@ -1137,7 +1350,7 @@ function getBlueprintTopPlaces() {
       if (hbState.appState.memory === "Family-friendly" || hbState.appState.memory === "Family memory") return "The plan is staying easy to enjoy together";
       if (hbState.appState.memory === "Relaxing") return "The plan is keeping the days calmer and easier to enjoy";
       if (hbState.appState.memory === "Adventurous") return "The trip is leaning active, curious, and more exploratory";
-      return "The big sights stay protected without overloading the days";
+      return "The big sights stay in the plan without overloading the days";
     }
 
     function buildTripLensDetail() {
@@ -1164,10 +1377,10 @@ function getBlueprintTopPlaces() {
       return [
         {
           id: "lens",
-          label: "Trip lens",
+          label: "Trip style",
           value: buildTripLensValue(),
           detail: buildTripLensDetail(),
-          badge: hbState.guidePlanContext?.sourceType ? "Guide-led" : (guideEntry ? "Guide-backed" : "Personalized"),
+          badge: hbState.guidePlanContext?.sourceType ? "From the guide" : (guideEntry ? "Guide picks" : "Personalized"),
           featured: true,
           metaChips: Array.from(new Set([
             hbState.appState.memory,
@@ -1189,13 +1402,13 @@ function getBlueprintTopPlaces() {
         },
         {
           id: "budget",
-          label: "Spending shape",
+          label: "Budget",
           value: hbState.appState.budget,
           detail: `${hbState.appState.pace} pace • ${styleText} style`
         },
         {
           id: "travel",
-          label: "Travel setup",
+          label: "Travel plans",
           value: flightValue,
           detail: flightDetail
         },
@@ -1211,7 +1424,7 @@ function getBlueprintTopPlaces() {
           value: hbState.appState.mustHaves?.trim() ? "Your must-haves" : hbState.appState.memory,
           detail: hbState.appState.mustHaves?.trim()
             ? hbState.appState.mustHaves.trim()
-            : `${hbState.appState.spontaneity} - one of the strongest planning signals`
+            : `${hbState.appState.spontaneity} - one of the main planning choices`
         }
       ];
     }
@@ -1252,7 +1465,7 @@ function getBlueprintTopPlaces() {
           target: hasValidDates || hbState.appState.startDate ? "end-date-input" : "start-date-input",
           fixLabel: "Fix dates",
           readyCopy: hasValidDates ? `${formatDate(hbState.appState.startDate)} to ${formatDate(hbState.appState.endDate)}.` : "",
-          missingCopy: "Add a valid start and end date so the planner knows how many days to build."
+          missingCopy: "Add a start and end date so we know how many days to plan."
         },
         {
           id: "travelers",
@@ -1291,14 +1504,14 @@ function getBlueprintTopPlaces() {
         },
         {
           id: "rules",
-          title: "Hard rules",
+          title: "Things to avoid",
           ready: Boolean(String(hbState.appState.nonNegotiables || "").trim()),
           level: "optional",
           panel: "details-panel",
           target: "non-negotiables-input",
-          fixLabel: "Add rules",
+          fixLabel: "Add things to avoid",
           readyCopy: hbState.appState.nonNegotiables ? trimPlanningText(hbState.appState.nonNegotiables, 88) : "",
-          missingCopy: "Add dietary, accessibility, timing, or avoid-list rules if the planner must respect them."
+          missingCopy: "Add dietary, accessibility, timing, or places-to-avoid details if the plan needs to work around them."
         },
         {
           id: "logistics",
@@ -1319,8 +1532,8 @@ function getBlueprintTopPlaces() {
           panel: "city-guides-panel",
           target: "",
           fixLabel: "Browse guides",
-          readyCopy: hasGuideData ? `City guide context is shaping ${getCityName()}.` : "",
-          missingCopy: "A matching city guide can add richer destination logic, but this is not required."
+          readyCopy: hasGuideData ? `The ${getCityName()} guide is helping shape this trip.` : "",
+          missingCopy: "Without a matching guide, the plan will use general place and neighborhood ideas instead of local recommendations."
         }
       ];
       const blockers = required.filter((item) => !item.ready);
@@ -1356,11 +1569,11 @@ function getBlueprintTopPlaces() {
       wrap.innerHTML = `
         <div class="destination-depth-head">
           <div>
-            <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Destination logic</p>
-            <h5 class="mt-1 font-display text-xl font-bold text-ink">Why this itinerary looks this way</h5>
-            <p class="mt-2 max-w-[46rem] text-sm leading-6 text-muted">These are the guide-backed signals being used inside the generated trip, not just a separate article view.</p>
+            <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">From the city guide</p>
+            <h5 class="mt-1 font-display text-xl font-bold text-ink">Why these ideas made the plan</h5>
+            <p class="mt-2 max-w-[46rem] text-sm leading-6 text-muted">The guide helped shape the routes, meals, and places worth making time for.</p>
           </div>
-          <span class="self-start rounded-full bg-teal-soft px-3 py-1 text-xs font-semibold text-tertiary">Inline guide data</span>
+          <span class="self-start rounded-full bg-teal-soft px-3 py-1 text-xs font-semibold text-tertiary">Guide picks</span>
         </div>
         <div class="destination-depth-grid mt-4">
           ${cards.map((item) => `
@@ -1369,12 +1582,12 @@ function getBlueprintTopPlaces() {
                 <span class="destination-depth-icon material-symbols-outlined" aria-hidden="true">${escapeHtml(item.icon)}</span>
                 <div class="min-w-0">
                   <p class="destination-depth-label">${escapeHtml(item.label)}</p>
-                  <h6 class="destination-depth-value">${escapeHtml(item.value)}</h6>
+                  <h6 class="destination-depth-value">${escapeTripText(item.value)}</h6>
                 </div>
               </div>
-              <p class="destination-depth-copy">${escapeHtml(item.copy)}</p>
+              <p class="destination-depth-copy">${escapeTripText(item.copy)}</p>
               <div class="destination-depth-chip-row">
-                ${(item.chips || []).filter(Boolean).slice(0, 3).map((chip) => `<span class="destination-depth-chip">${escapeHtml(chip)}</span>`).join("")}
+                ${(item.chips || []).filter(Boolean).slice(0, 3).map((chip) => `<span class="destination-depth-chip">${escapeTripText(chip)}</span>`).join("")}
               </div>
             </article>
           `).join("")}
@@ -1383,13 +1596,15 @@ function getBlueprintTopPlaces() {
     }
 
     function buildBlueprintSummary(city) {
-      const styles = hbState.appState.styles.join(" + ") || "Balanced";
-      return `${styles} days in ${city} for ${buildTravelerText()}, with ${formatPacePhrase().replace("pace", "rhythm")} and ${formatFoodPriority()}.`;
+      const styles = hbState.appState.styles.length > 1
+        ? `${hbState.appState.styles[0].toLowerCase()} and ${hbState.appState.styles[1].toLowerCase()}`
+        : (hbState.appState.styles[0] || "balanced").toLowerCase();
+      return `A ${styles} trip to ${city} for ${buildTravelerText()}, with ${formatPacePhrase()} and ${formatFoodPriority()}.`;
     }
 
     function buildBlueprintReasoning() {
       const guideReasoning = getGuideSourceReasoning();
-      const baseReasoning = `We’re leaning ${shortDestinationMode()}, keeping the trip easy to enjoy, and using your must-haves to shape the plan instead of trying to fill every hour.`;
+      const baseReasoning = `This plan starts with ${shortDestinationMode()}, keeps the days easy to enjoy, and keeps the must-haves you called out in view without filling every hour.`;
       return guideReasoning ? `${guideReasoning} ${baseReasoning}` : baseReasoning;
     }
 
@@ -1432,7 +1647,7 @@ function getBlueprintTopPlaces() {
 
       return {
         title: `${city} signature essential`,
-        reason: "Chosen because it matches your strongest trip signals, supports a first-time or essentials-first feeling, and gives the trip one moment that clearly stands out."
+        reason: "This stands out because it matches what you care about and gives the trip one moment that feels special."
       };
     }
 
@@ -1783,8 +1998,8 @@ function getBlueprintTopPlaces() {
                 : "Your actual stay can now help shape the daily routing."
             },
             {
-              label: "Why it matters",
-              value: "Lodging sets the rhythm",
+              label: "Why this helps",
+            value: "Where you stay sets the rhythm",
               copy: "Once the base is known, it is easier to keep mornings, returns, and heavier sightseeing days more practical."
             }
           ]
@@ -1800,10 +2015,10 @@ function getBlueprintTopPlaces() {
           {
             label: "Current setup",
             value: "Still choosing where to stay",
-            copy: "These recommendations give you a few strong starting areas instead of an overwhelming hotel list."
+            copy: "These recommendations give you a few good areas to start with instead of an overwhelming hotel list."
           },
           {
-            label: "Why it matters",
+            label: "Why this helps",
             value: "Location shapes the whole trip",
             copy: "A better base can reduce extra transit, make evenings easier, and improve how much the trip actually feels enjoyable."
           }
@@ -1953,16 +2168,22 @@ function getBlueprintTopPlaces() {
         homeAirport: stored.homeAirport || ""
       };
       if (stored.accountMethod) {
-        hbState.appState.accountMethod = stored.accountMethod;
+        hbState.appState.accountMethod = stored.accountMethod === "guest" ? "guest" : "local";
       }
     }
 
     function updateTripProfileFromInputs() {
+      const getProfileInputValue = (savedId, modalId) => {
+        const savedInput = document.getElementById(savedId);
+        const modalInput = document.getElementById(modalId);
+        const input = [savedInput, modalInput].find((field) => field && getComputedStyle(field).display !== "none") || savedInput || modalInput;
+        return input?.value.trim() || "";
+      };
       hbState.tripProfile = {
         ...hbState.tripProfile,
-        displayName: document.getElementById("trip-profile-name-input")?.value.trim() || "",
-        email: document.getElementById("trip-profile-email-input")?.value.trim() || "",
-        homeAirport: document.getElementById("trip-profile-airport-input")?.value.trim() || ""
+        displayName: getProfileInputValue("trip-profile-name-input", "local-account-name-input"),
+        email: getProfileInputValue("trip-profile-email-input", "local-account-email-input"),
+        homeAirport: getProfileInputValue("trip-profile-airport-input", "local-account-airport-input")
       };
     }
 
@@ -2261,7 +2482,7 @@ function getBlueprintTopPlaces() {
     function getChangeFeedbackLabel(feedback) {
       const labels = {
         "too-full": "Made lighter",
-        "too-light": "Added depth",
+        "too-light": "Added another idea",
         "wrong-area": "Area adjusted",
         "keep-this": "Marked keeper"
       };
@@ -2297,7 +2518,7 @@ function getBlueprintTopPlaces() {
       const changes = getTripChangeItems(hbState.currentTrip);
       const hasTrip = Boolean(hbState.currentTrip);
       const emptyCopy = hasTrip
-        ? "Use quick feedback on any day and the planner will track what changed before you save."
+        ? "Give feedback on any day and we will keep track of the changes before you save."
         : "Build a trip first, then day feedback will appear here.";
 
       if (!changes.length) {
@@ -2403,12 +2624,12 @@ function getBlueprintTopPlaces() {
         {
           icon: hasGuideData ? "menu_book" : "route",
           tone: "ready",
-          label: hasGuideData ? "Guide logic" : "Trip flow",
+          label: hasGuideData ? "From the city guide" : "Trip flow",
           title: hasGuideData ? "See why this plan works" : "Review the day flow",
           copy: hasGuideData
-            ? `Use the inline city-guide logic to see why routes, meals, and must-see stops were chosen.`
+            ? `See how the city guide shaped the routes, meals, and must-see stops.`
             : `Start with the day-by-day flow, then open any day that feels too full or too light.`,
-          cta: hasGuideData ? "View guide logic" : "Review days",
+          cta: hasGuideData ? "See guide picks" : "Review days",
           action: "jump-trip-anchor",
           targetId: firstGuideTarget,
           section: hasGuideData ? "guide" : ""
@@ -2432,7 +2653,7 @@ function getBlueprintTopPlaces() {
           label: saved ? "Draft saved" : "Keep progress",
           title: saved ? "Manage saved versions" : "Save this draft",
           copy: saved
-            ? `Your working trip is saved. Use versions when you want to compare a calmer, cheaper, or more packed arrangement.`
+            ? `Your working trip is saved. Use versions when you want to compare a calmer, cheaper, or more packed plan.`
             : `Save once the trip feels useful, then you can come back without starting over.`,
           cta: saved ? "Open versions" : "Save draft",
           action: saved ? "jump-trip-anchor" : "save-current-draft",
@@ -2494,18 +2715,18 @@ function getBlueprintTopPlaces() {
             : "Add destination, dates, and travelers before trusting the plan."
         },
         {
-          title: "Preference signal",
+          title: "Your preferences",
           ready: Boolean(preferences?.ready),
           copy: preferences?.ready
             ? `${preferences.readyCopy} ${hbState.appState.memory} is the main trip vibe.`
-            : preferences?.missingCopy || "Pick style, pace, and trip vibe so the algorithm has a clear direction."
+            : preferences?.missingCopy || "Pick a style, pace, and trip vibe so the draft has a clear direction."
         },
         {
-          title: "Destination logic",
+          title: "City guide",
           ready: Boolean(guide?.ready),
           copy: guide?.ready
-            ? "Guide data is shaping the route, priorities, and booking notes."
-            : guide?.missingCopy || "No city guide match yet, so the itinerary is using general planning logic."
+            ? "Your city guide is shaping the route, priorities, and booking notes."
+            : guide?.missingCopy || "No city guide is connected yet, so the draft is using general destination guidance."
         },
         {
           title: "Booking details",
@@ -2534,8 +2755,8 @@ function getBlueprintTopPlaces() {
         <div class="trip-readiness-head">
           <div>
             <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Trip readiness</p>
-            <h4 class="mt-1 font-display text-lg font-bold text-ink">What is solid before you book</h4>
-            <p class="mt-2 max-w-[44rem] text-sm leading-6 text-muted">A quick check of the planning signals that make this itinerary easier to trust.</p>
+            <h4 class="mt-1 font-display text-lg font-bold text-ink">What is ready before you book</h4>
+            <p class="mt-2 max-w-[44rem] text-sm leading-6 text-muted">A quick check of the details that make this itinerary easier to trust.</p>
           </div>
           <span class="trip-readiness-score">${readyCount} of ${items.length} ready</span>
         </div>
@@ -2581,18 +2802,18 @@ function getBlueprintTopPlaces() {
           sightAnchors.map((anchor) => anchor.label),
           (hbState.currentTrip?.days || []).map((day) => day.highlight).filter(Boolean)
         ).slice(0, 2),
-        "your protected stops"
+        "your main stops"
       );
 
       return [
         {
           icon: "restaurant",
-          status: foodAnchors.length ? "Ready to reserve" : "Review",
+          status: foodAnchors.length ? "Ready to book" : "Review",
           ready: Boolean(foodAnchors.length),
-          title: "Meal anchors",
+          title: "Meals to book",
           copy: foodAnchors.length
-            ? `Prioritize ${joinGuideItems(foodAnchors.map((anchor) => anchor.label).slice(0, 2), "the meal that matters most")} before adding lower-priority food stops.`
-            : "Review the daily plan for any meals that should become real reservations.",
+            ? `Prioritize ${joinGuideItems(foodAnchors.map((anchor) => anchor.label).slice(0, 2), "the meal that matters most")} before adding extra food stops.`
+            : "Review the daily plan for any meals you want to book ahead.",
           cta: "Review days",
           action: "jump-trip-anchor",
           targetId: "trip-days",
@@ -2613,11 +2834,11 @@ function getBlueprintTopPlaces() {
         },
         {
           icon: "bed",
-          status: hasStay ? "Base added" : "Needs stay",
+          status: hasStay ? "Stay added" : "Add a stay",
           ready: hasStay,
           title: "Stay fit",
           copy: hasStay
-            ? `Your stay detail is in the plan, so routes can stay grounded around ${hbState.appState.hotelArea || hbState.appState.hotelName}.`
+            ? `Your stay is in the plan, so routes can start and end near ${hbState.appState.hotelArea || hbState.appState.hotelName}.`
             : "Add a hotel name or area before treating the first and last day as final.",
           cta: hasStay ? "Review stay" : "Add stay",
           action: "jump-trip-anchor",
@@ -2626,12 +2847,12 @@ function getBlueprintTopPlaces() {
         },
         {
           icon: "flight",
-          status: flightReady ? "Travel timing ok" : "Needs timing",
+          status: flightReady ? "Travel timing set" : "Add timing",
           ready: flightReady,
           title: "Flights and arrival windows",
           copy: flightReady
             ? (hbState.appState.flightMode === "not-needed"
-                ? "This plan is destination-first because flights are not needed for this draft."
+                ? "Flights are not needed for this plan, so we can keep the focus on the destination."
                 : "Arrival and departure timing are enough to keep travel days believable.")
             : "Add flight number, airline, arrival, or departure timing before booking tight first-day plans.",
           cta: flightReady ? "Review flights" : "Add flights",
@@ -2641,9 +2862,9 @@ function getBlueprintTopPlaces() {
         },
         {
           icon: hbState.savedDraft ? "bookmark_added" : "bookmark",
-          status: hbState.savedDraft ? "Saved" : "Unsaved",
+          status: hbState.savedDraft ? "Saved" : "Not saved",
           ready: Boolean(hbState.savedDraft),
-          title: "Save the working version",
+          title: "Save this version",
           copy: hbState.savedDraft
             ? `Saved as ${hbState.savedDraft.title}. Save a named version when edits start branching.`
             : "Save the draft before making bigger changes, so the useful version does not get lost.",
@@ -2777,7 +2998,7 @@ function getBlueprintTopPlaces() {
       } else if (/walk|stroll|view|park|beach|river|overlook/.test(text)) {
         signals.push("Good walking day");
       } else {
-        signals.push("Flexible anchor");
+        signals.push("Flexible plans");
       }
 
       return Array.from(new Set(signals)).slice(0, 3);
@@ -2795,7 +3016,7 @@ function getBlueprintTopPlaces() {
 
     function getActiveTripLabel() {
       return hbState.activeTripSource?.type === "saved"
-        ? hbState.activeTripSource.name || "Saved arrangement"
+        ? hbState.activeTripSource.name || "Saved trip version"
         : "Live draft";
     }
 
@@ -3178,10 +3399,10 @@ function getBlueprintTopPlaces() {
           type: "hotel",
           icon: "bed",
           label: "Hotel",
-          title: hbState.appState.hotelName || `Search stays near ${hotelArea}`,
+          title: hbState.appState.hotelName || `Search hotels near ${hotelArea}`,
           copy: hbState.appState.hotelName
             ? `${hbState.appState.hotelName}${hbState.appState.hotelArea ? ` in ${hbState.appState.hotelArea}` : ""}. Save confirmation notes here once booked.`
-            : `Use the recommended stay area to search free hotel results for ${destination}.`,
+            : `Use the recommended area to compare hotels and places to stay for ${destination}.`,
           priority: "Book first",
           href: buildGoogleHotelsUrl(city, hotelArea),
           cta: "Open Google Hotels"
@@ -3195,7 +3416,7 @@ function getBlueprintTopPlaces() {
           icon: "restaurant",
           label: "Meal",
           title: anchor.label,
-          copy: `Search reservations or official restaurant pages before this protected meal gets squeezed by other plans.`,
+          copy: `Search reservations or official restaurant pages before this meal gets squeezed by other plans.`,
           priority: index === 0 ? "Book first" : "Can wait",
           href: buildGoogleSearchUrl(`${anchor.label} ${destination} reservation`),
           cta: "Search reservations"
@@ -3260,7 +3481,7 @@ function getBlueprintTopPlaces() {
           <div>
             <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Free booking hub</p>
             <h4 class="mt-1 font-display text-lg font-bold text-ink">Book with free links, track progress here</h4>
-            <p class="trip-collapsible-summary mt-2 text-sm leading-6 text-muted">No paid API access needed. Open public search links, then save booking status and confirmation notes with this trip.</p>
+            <p class="trip-collapsible-summary mt-2 text-sm leading-6 text-muted">Search flights, stays, meals, and tickets through public links, then save the booking status and notes here.</p>
             ${feedback}
           </div>
           <div class="trip-collapsible-actions">
@@ -3483,7 +3704,7 @@ function getBlueprintTopPlaces() {
         ? "Start this trip with the specific traveler needs visible."
         : index === totalDays - 1
           ? "Keep the close practical so the trip ends cleanly."
-          : "Use this day to make the trip feel tailored, not templated.";
+        : "Use this day to make the trip feel like yours.";
       const labelPattern = new RegExp(profile.dayLabel.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i");
 
       next.item.label = profile.dayLabel;
@@ -3496,10 +3717,10 @@ function getBlueprintTopPlaces() {
       }
 
       if (profile.key === "budget" && index === 1) {
-        next.item.body = `${next.item.body} Choose the free or low-cost version first, then spend only where the stop meaningfully improves the day.`;
+        next.item.body = `${next.item.body} Choose the free or low-cost version first, then spend where it will make the day better.`;
       }
 
-      if ((profile.key === "luxury" || profile.key === "luxury-honeymoon") && (index === 3 || index === totalDays - 1)) {
+      if ((profile.key === "luxury" || profile.key === "luxury-romantic") && (index === 3 || index === totalDays - 1)) {
         next.item.body = `${next.item.body} Keep the afternoon cleaner around the premium reservation or private-feeling moment so it does not feel rushed.`;
       }
 
@@ -3531,6 +3752,70 @@ function getBlueprintTopPlaces() {
       return next;
     }
 
+    function getFlexibleDayCopy(city, areas) {
+      const profile = getTripQualityProfile(city);
+      const open = {
+        title: `Open day near ${areas[0]}`,
+        rationale: `This extra day leaves room for weather, a favorite repeat stop, or a slower local experience without forcing another checklist day.`,
+        highlight: `Flexible time near ${areas[0]}`,
+        timeShape: "Open and weather-flexible",
+        weather: "Keep this day adjustable so the trip can follow the best weather, energy, or local recommendation.",
+        itemTitle: "Flexible time + one favorite return",
+        itemBody: "Use the day for a repeat favorite, a slower local experience, or a stop you discover along the way. Keep one easy backup nearby instead of filling every hour.",
+        fit: "It gives the trip breathing room and leaves space for a favorite return or a local suggestion."
+      };
+      const final = {
+        title: `Final day near ${areas[1]}`,
+        rationale: "The last full day keeps one worthwhile experience visible while protecting enough time for packing, checkout, and a calm departure.",
+        highlight: `Final favorite in ${areas[1]}`,
+        timeShape: "Last favorite moment + easy close",
+        weather: "Keep the final day simple and leave enough time for packing, weather changes, and the trip home.",
+        itemTitle: "Last favorite + easy close",
+        itemBody: "Choose one final favorite, have an easy meal nearby, and leave the rest of the day open for packing and a calm finish.",
+        fit: "It protects the final memory without creating a stressful last push."
+      };
+
+      if (profile.key === "family" || profile.key === "family-beach") {
+        open.fit = "It gives the group breathing room and lets everyone choose what feels best once they know the destination.";
+        final.highlight = `Final family favorite in ${areas[1]}`;
+        final.itemTitle = "Final family favorite + easy close";
+        final.itemBody = "Choose one last family favorite, keep the meal nearby, and leave enough time for packing and a calm finish.";
+        final.fit = "It gives the group one more good memory without making the last day hard to manage.";
+      } else if (profile.key === "pet-friendly") {
+        open.fit = "It gives the day room for a park break, a shorter loop, or a flexible return to the stay.";
+        final.highlight = `Final park walk near ${areas[1]}`;
+        final.itemTitle = "Final park walk + easy close";
+        final.itemBody = "Take one last nearby walk, keep the meal and stay route simple, and leave enough time for packing.";
+        final.fit = "It gives the trip a comfortable close without making the final outing hard on the pet or the traveler.";
+      } else if (profile.key === "solo") {
+        open.fit = "It gives you breathing room and lets you follow the neighborhood, meal, or stop that feels best in the moment.";
+        final.highlight = `One favorite return in ${areas[1]}`;
+        final.itemTitle = "Favorite return + easy close";
+        final.itemBody = "Return to one favorite neighborhood or meal, then keep the rest of the day simple for packing and the trip home.";
+        final.fit = "It lets you end on a place you actually enjoyed instead of forcing in one more major sight.";
+      } else if (profile.key === "romantic" || profile.key === "luxury-romantic") {
+        open.fit = "It gives the day room to follow the mood, repeat a favorite, or leave space for an unplanned evening.";
+        final.highlight = `Last slow morning in ${areas[1]}`;
+        final.itemTitle = "Last slow morning + easy close";
+        final.itemBody = "Leave time for one final slow morning, an easy meal, and a calm finish before packing takes over.";
+        final.fit = "It lets the trip end with atmosphere instead of turning the last day into a checklist.";
+      } else if (profile.key === "budget") {
+        open.fit = "It keeps a free or low-cost option open so the trip can flex without adding filler.";
+        final.highlight = `Free final stop in ${areas[1]}`;
+        final.itemTitle = "Free final stop + easy close";
+        final.itemBody = "Choose one free viewpoint, park, market, or neighborhood walk, then keep the meal and departure route simple.";
+        final.fit = "It keeps the final day useful and memorable without adding a last-minute expense.";
+      } else if (profile.key === "luxury") {
+        open.fit = "It leaves room for a slower start, a favorite return, or one premium detail worth protecting.";
+        final.highlight = `Last polished moment in ${areas[1]}`;
+        final.itemTitle = "Last polished moment + easy close";
+        final.itemBody = "Keep one final reservation, view, or well-placed meal, then leave enough time for packing and a smooth departure.";
+        final.fit = "It keeps the ending polished without making the last day feel overproduced.";
+      }
+
+      return { open, final };
+    }
+
     function buildDayData() {
       const city = getCityName();
       const days = getTripLength();
@@ -3540,6 +3825,7 @@ function getBlueprintTopPlaces() {
       const timelineTemplates = getTimelineTemplates(city, areas);
       const concreteTemplates = getConcreteTripTemplates(city, areas);
       const vibeContent = getVibeContent(city, areas);
+      const flexibleDayCopy = getFlexibleDayCopy(city, areas);
 
       const dayTemplates = [
         {
@@ -3593,25 +3879,11 @@ function getBlueprintTopPlaces() {
           fit: vibeContent.finalFit
         },
         {
-          title: `Open day near ${areas[0]}`,
-          rationale: `This extra day leaves room for weather, a favorite repeat stop, or a slower local experience without forcing another checklist day.`,
-          highlight: `Flexible time near ${areas[0]}`,
-          timeShape: "Open and weather-flexible",
-          weather: `Keep this day adjustable so the trip can follow the best weather, energy, or local recommendation.`,
-          itemTitle: `Flexible time + one favorite return`,
-          itemBody: `Use the day for the beach, a repeat favorite, or a slower local experience that did not fit earlier. Keep one easy backup nearby instead of filling every hour.`,
-          fit: `It gives the trip breathing room and lets the family choose what feels best once they know the destination.`,
+          ...flexibleDayCopy.open,
           timeline: null
         },
         {
-          title: `Final beach and pack day in ${areas[1]}`,
-          rationale: `The last full day keeps one worthwhile experience visible while protecting enough time for packing, checkout, and a calm departure.`,
-          highlight: `Final beach window in ${areas[1]}`,
-          timeShape: "Last favorite moment + easy close",
-          weather: `Keep the final beach window simple and leave enough time for packing, weather changes, and the trip home.`,
-          itemTitle: `Last beach window + easy close`,
-          itemBody: `Take one last unrushed beach or waterfront stretch, have an easy meal nearby, and leave the rest of the day open for packing and a calm finish.`,
-          fit: `It protects the final memory without creating a stressful last push.`,
+          ...flexibleDayCopy.final,
           timeline: null
         }
       ];
@@ -3691,6 +3963,7 @@ function getBlueprintTopPlaces() {
     }
 
     function updateStateFromInputs() {
+      const previousDestination = hbState.appState.destination;
       const rawDestination = hbRefs.formBindings.destination.value.trim();
       hbState.appState.destination = rawDestination ? resolveCanonicalDestination(rawDestination) : "";
       hbRefs.formBindings.destination.value = hbState.appState.destination;
@@ -3720,10 +3993,16 @@ function getBlueprintTopPlaces() {
       hbUtils.updateDestinationHelper();
       syncTripLogisticsInputs();
       hbUtils.renderDestinationHero("build");
+      if (previousDestination !== hbState.appState.destination) {
+        document.dispatchEvent(new CustomEvent("hb:destination-changed", {
+          detail: { destination: hbState.appState.destination }
+        }));
+      }
     }
 
     function renderBlueprint() {
       const city = getCityName();
+      hbUtils.renderDestinationHero?.("blueprint");
       document.getElementById("blueprint-summary").textContent = buildBlueprintSummary(city);
       document.getElementById("blueprint-reasoning").textContent = buildBlueprintReasoning();
       const readiness = getPlanningReadiness();
@@ -3734,9 +4013,9 @@ function getBlueprintTopPlaces() {
         finalReview.innerHTML = `
           <div class="blueprint-final-review-head">
             <div>
-              <p class="text-xs font-semibold uppercase tracking-[0.14em] ${readiness.generationReady ? "text-tertiary" : "text-primary"}">${readiness.generationReady ? "Ready to generate" : "Needs a quick fix"}</p>
-              <h4 class="mt-1 font-display text-lg font-bold text-ink">${readiness.generationReady ? "The planner has enough to build your trip" : "Add the basics before generating"}</h4>
-              <p class="mt-2 max-w-[44rem] text-sm leading-6 text-muted">${readiness.generationReady ? "You can still refine the optional prompts below, but the core trip frame is ready for a day-by-day itinerary." : "The itinerary needs a valid destination, dates, and travelers before the automated draft will be useful."}</p>
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] ${readiness.generationReady ? "text-tertiary" : "text-primary"}">${readiness.generationReady ? "Ready to build" : "One quick fix needed"}</p>
+              <h4 class="mt-1 font-display text-lg font-bold text-ink">${readiness.generationReady ? "Your trip details are ready" : "Add the basics before building"}</h4>
+              <p class="mt-2 max-w-[44rem] text-sm leading-6 text-muted">${readiness.generationReady ? "You can still adjust the optional details below, but there is enough here to build a useful day-by-day plan." : "Add a valid destination, dates, and travelers before the first draft can be useful."}</p>
             </div>
             <span class="planning-prompt-status ${readiness.generationReady ? "is-ready" : ""}">${readiness.readyCount} of ${readiness.totalCount} ready</span>
           </div>
@@ -3766,17 +4045,17 @@ function getBlueprintTopPlaces() {
       const adultsText = `${hbState.appState.adults} adult${hbState.appState.adults === 1 ? "" : "s"}`;
       const childrenText = `${hbState.appState.children} ${hbState.appState.children === 1 ? "child" : "children"}`;
       const petSummary = hbState.appState.pets !== "No pets" ? hbState.appState.pets : "No pets coming";
-      const mustHaves = hbState.appState.mustHaves || "No must-haves added yet.";
-      const nonNegotiables = hbState.appState.nonNegotiables || "No hard rules added yet.";
+      const mustHaves = hbState.appState.mustHaves || "Nothing specific yet.";
+      const nonNegotiables = hbState.appState.nonNegotiables || "Nothing to avoid yet.";
       const guideDetail = hbState.guidePlanContext?.sourceType
-        ? `Started from ${hbState.guidePlanContext.sourceName}.`
+        ? `Based on the ${hbState.guidePlanContext.sourceName} guide.`
         : `Planning for ${city}.`;
       const guideSignals = hbState.guidePlanContext?.signals || {};
       const guideStyleDetail = Array.isArray(guideSignals.styles) && guideSignals.styles.length
-        ? ` Guide suggests ${guideSignals.styles.join(" + ")} with a ${guideSignals.pace || hbState.appState.pace} pace.`
+        ? ` This guide leans ${guideSignals.styles.join(" and ").toLowerCase()} with a ${String(guideSignals.pace || hbState.appState.pace).toLowerCase()} pace.`
         : "";
       const guideMustHaveDetail = guideSignals.mustHaves
-        ? ` Guide anchor available: ${guideSignals.mustHaves}.`
+        ? ` The guide also suggests ${guideSignals.mustHaves}.`
         : "";
       const reviewItems = [
         {
@@ -3793,7 +4072,7 @@ function getBlueprintTopPlaces() {
           value: dateRange,
           detail: hbState.appState.datesFlexible
             ? `${tripLength} day${tripLength === 1 ? "" : "s"} planned, with dates treated as adjustable.`
-            : `${tripLength} day${tripLength === 1 ? "" : "s"} planned from arrival through wrap-up.`,
+            : `${tripLength} day${tripLength === 1 ? "" : "s"} from arrival to departure.`,
           editPanel: "build-panel",
           editTarget: "start-date-input"
         },
@@ -3817,7 +4096,7 @@ function getBlueprintTopPlaces() {
           icon: "tune",
           label: "Preferences",
           value: `${formatTripStyles()} - ${hbState.appState.pace} pace`,
-          detail: `${shortDestinationMode()} - ${formatFoodPriority()} - ${hbState.appState.spontaneity} - ${hbState.appState.memory}.${guideStyleDetail}`,
+          detail: `The plan leans toward ${shortDestinationMode()}, ${formatFoodPriority()}, ${String(hbState.appState.spontaneity).toLowerCase()}, and ${String(hbState.appState.memory).toLowerCase()}.${guideStyleDetail}`,
           editPanel: "details-panel",
           editTarget: "preference-style-section"
         },
@@ -3826,8 +4105,8 @@ function getBlueprintTopPlaces() {
           label: "Must-haves",
           value: mustHaves,
           detail: hbState.appState.mustHaves
-            ? "These are priority moments the planner should try to protect."
-            : `The planner will rely on your broader preferences.${guideMustHaveDetail}`,
+            ? "These are the moments you most want the trip to include."
+            : `We will use your broader preferences.${guideMustHaveDetail}`,
           editPanel: "details-panel",
           editTarget: "must-haves-input"
         },
@@ -3836,8 +4115,8 @@ function getBlueprintTopPlaces() {
           label: "Non-negotiables",
           value: nonNegotiables,
           detail: hbState.appState.nonNegotiables
-            ? "These are hard rules the planner must respect."
-            : "Add hard rules anytime if accessibility, budget, diet, safety, or timing needs become important.",
+            ? "These are things the plan needs to respect."
+            : "Add anything the plan needs to work around, such as accessibility, diet, budget, safety, or timing.",
           alert: true,
           editPanel: "details-panel",
           editTarget: "non-negotiables-input"
@@ -3873,7 +4152,7 @@ function getBlueprintTopPlaces() {
 
       const blueprintSummary = document.getElementById("blueprint-summary");
       if (blueprintSummary && hbState.guidePlanContext?.sourceType) {
-        blueprintSummary.textContent = `${blueprintSummary.textContent} Started from ${hbState.guidePlanContext.sourceName}.`;
+        blueprintSummary.textContent = `${blueprintSummary.textContent} Based on the ${hbState.guidePlanContext.sourceName} guide.`;
       }
     }
 
@@ -3883,7 +4162,7 @@ function getBlueprintTopPlaces() {
       document.getElementById("thinking-optimization").textContent =
         `Keeping your days local, your ${styleLead} moments clear, and your ${hbState.appState.memory.toLowerCase()} goal visible.`;
       document.getElementById("thinking-support").textContent =
-        `We’re shaping the trip around your ${hbState.appState.pace.toLowerCase()} pace, your ${hbState.appState.budget.toLowerCase()} budget tier, and the must-haves you said actually matter.`;
+        `We are shaping the trip around your ${hbState.appState.pace.toLowerCase()} pace, your ${hbState.appState.budget.toLowerCase()} budget, and the must-haves you said actually matter.`;
       document.getElementById("thinking-fact").textContent =
         hbData.destinationFacts[city] || `${city} tends to feel best when you let a neighborhood breathe instead of trying to cover every corner in one day.`;
     }
@@ -3894,18 +4173,18 @@ function getBlueprintTopPlaces() {
       const activeTripLabel = getActiveTripLabel();
       const savedDraft = hbState.savedDraft;
       const profile = hbState.tripProfile || {};
-      const profileName = profile.displayName || "Vacation planner";
-      const accountLabel = hbState.appState.accountMethod && hbState.appState.accountMethod !== "guest"
-        ? `Connected with ${titleCase(hbState.appState.accountMethod)}`
-        : "Local profile";
+      const profileName = profile.displayName || "Traveler";
+      const accountLabel = hbState.appState.accountMethod === "local"
+        ? "Saved on this browser"
+        : "Guest mode";
       const savedTripTitle = hbState.likedTrip?.title || hbState.currentTrip?.title || buildTripTitle(getCityName());
       const savedTripCopy = hbState.likedTrip
-        ? "This is the version you marked as a viable restore point. You can come back to it if later edits start drifting too far."
-        : "Once you like a version, it can live here as a calm restore point instead of getting lost in later edits.";
+        ? "This is the version you liked. Come back to it if later edits start moving too far away."
+        : "Save a version you like so you can return to it if later edits take a different direction.";
       const currentTripChanges = getTripChangeItems(hbState.currentTrip);
       const currentTripChangeSummary = getTripChangeSummary(hbState.currentTrip, "No day feedback yet.");
       const activeTripCopy = hbState.currentTrip
-        ? `${hbState.currentTrip.summary} ${hbState.activeTripSource?.type === "saved" ? `You are currently viewing the saved arrangement "${hbState.activeTripSource.name}".` : "This is the current working version of the trip."}`
+        ? `${hbState.currentTrip.summary} ${hbState.activeTripSource?.type === "saved" ? `You are currently viewing the saved trip version "${hbState.activeTripSource.name}".` : "This is the current draft of the trip."}`
         : "Start with Explore or Build, then your active trip will show up here automatically.";
       const activeTripSummaryCards = hbState.currentTrip
         ? [
@@ -3913,14 +4192,14 @@ function getBlueprintTopPlaces() {
               label: "Current view",
               value: activeTripLabel,
               copy: hbState.activeTripSource?.type === "saved"
-                ? "You are currently inside a saved arrangement rather than the live working draft."
+                ? "You are currently viewing a saved trip version rather than the live draft."
                 : "This is the version still being shaped most recently."
             },
             {
               label: "Trip shape",
               value: hbState.currentTrip.days?.[0]?.area || getCityName(),
               copy: hbState.currentTrip.days?.length
-                ? `${hbState.currentTrip.days.length} day${hbState.currentTrip.days.length === 1 ? "" : "s"} currently mapped in this arrangement.`
+                ? `${hbState.currentTrip.days.length} day${hbState.currentTrip.days.length === 1 ? "" : "s"} currently mapped in this trip version.`
                 : "A trip will appear here once planning starts."
             },
             {
@@ -3954,8 +4233,8 @@ function getBlueprintTopPlaces() {
               label: "Saved shape",
               value: hbState.likedTrip.days?.[0]?.area || getCityName(),
               copy: hbState.likedTrip.days?.length
-                ? `${hbState.likedTrip.days.length} day${hbState.likedTrip.days.length === 1 ? "" : "s"} preserved as your restore point.`
-                : "This restore point is ready whenever you want it back."
+                ? `${hbState.likedTrip.days.length} day${hbState.likedTrip.days.length === 1 ? "" : "s"} saved in the version you liked.`
+                : "This version is ready whenever you want it back."
             },
             {
               label: "Best use",
@@ -3966,7 +4245,7 @@ function getBlueprintTopPlaces() {
         : [
             {
               label: "Saved shape",
-              value: "No restore point yet",
+              value: "No saved version yet",
               copy: "Once you mark a version you like, it will live here as your fallback."
             },
             {
@@ -3992,7 +4271,7 @@ function getBlueprintTopPlaces() {
             {
               label: "Best use",
               value: "Pick up where you left off",
-              copy: "This restores the working draft, trip inputs, liked version, and saved arrangements on this browser."
+              copy: "This restores the draft, trip details, liked version, and saved trip versions on this browser."
             }
           ]
         : [
@@ -4009,21 +4288,21 @@ function getBlueprintTopPlaces() {
             {
               label: "Best use",
               value: "Come back later",
-              copy: "This is the first step toward real account-backed trip history."
+              copy: "This gives you a local starting point for trip history while the beta stays free."
             }
           ];
       const tripProfileCards = [
         {
           label: "Account status",
           value: accountLabel,
-          copy: hbState.appState.accountMethod && hbState.appState.accountMethod !== "guest"
-            ? "This profile is ready to connect saved trips to a real account."
-            : "Saved locally for now, with fields shaped for a future account."
+          copy: hbState.appState.accountMethod === "local"
+            ? "Trip details and profile fields are saved on this browser."
+            : "You are browsing without saving a local profile yet."
         },
         {
           label: "Saved data",
           value: `${savedDraft ? "1 draft" : "No draft"} - ${hbState.alternateTrips.length} version${hbState.alternateTrips.length === 1 ? "" : "s"}`,
-          copy: "Drafts, arrangements, notes, and profile details are organized now so account saving can feel natural later."
+          copy: "Drafts, trip versions, notes, and profile details are organized now so account saving can feel natural later."
         }
       ];
       const profileHasData = Boolean(profile.displayName || profile.email || profile.homeAirport);
@@ -4031,7 +4310,7 @@ function getBlueprintTopPlaces() {
         {
           label: "Profile",
           value: profileHasData ? "Profile started" : "Add profile",
-          copy: profileHasData ? "Basic traveler details are ready for future account syncing." : "Add a name, email, or home airport when you want saves tied to you."
+          copy: profileHasData ? "Basic traveler details are ready for this local planning space." : "Add a name, email, or home airport when you want to recognize this profile."
         },
         {
           label: "Draft",
@@ -4041,7 +4320,7 @@ function getBlueprintTopPlaces() {
         {
           label: "Versions",
           value: `${hbState.alternateTrips.length} saved`,
-          copy: hbState.alternateTrips.length ? "Named arrangements are ready to view or compare." : "Try swaps or reorders, then save the versions you may want back."
+          copy: hbState.alternateTrips.length ? "Named trip versions are ready to view or compare." : "Try swaps or reorders, then save the versions you may want back."
         }
       ];
       const accountNextAction = savedDraft
@@ -4146,7 +4425,7 @@ function getBlueprintTopPlaces() {
           <div class="beta-test-head">
             <div>
               <p class="beta-test-kicker">Beta readiness</p>
-              <h4 class="beta-test-title">Run the flow like a real vacation planner</h4>
+              <h4 class="beta-test-title">Test the flow like a real traveler</h4>
               <p class="beta-test-copy">Use this checklist before sharing the app with testers. It focuses on the practical path: build, generate, refine, save, booking handoff, and local backup.</p>
             </div>
             <span class="beta-test-score">${betaReadyCount} of ${betaChecklistItems.length} ready</span>
@@ -4168,7 +4447,7 @@ function getBlueprintTopPlaces() {
           </div>
           <div class="beta-test-footer">
             <p class="beta-test-footer-copy">Ask testers where they felt unsure, what sounded generic, and whether save/restore/export felt clear enough to trust.</p>
-            <a class="beta-test-action" href="mailto:support@horizonbound.co?subject=Horizon%20Bound%20Beta%20Feedback&body=What%20I%20tested%3A%0AWhat%20felt%20smooth%3A%0AWhat%20felt%20confusing%3A%0AWhat%20I%20would%20change%3A">Send beta feedback</a>
+            <a class="beta-test-action" href="mailto:hamiltondan20@gmail.com?subject=Horizon%20Bound%20Beta%20Feedback&body=What%20I%20tested%3A%0AWhat%20felt%20smooth%3A%0AWhat%20felt%20confusing%3A%0AWhat%20I%20would%20change%3A">Send beta feedback</a>
           </div>
         </div>
       `;
@@ -4232,7 +4511,7 @@ function getBlueprintTopPlaces() {
               icon: "person",
               label: "Profile",
               title: profileName,
-              copy: `${profile.homeAirport ? `Home airport ${profile.homeAirport}. ` : ""}Profile details are ready for future account syncing.`,
+              copy: `${profile.homeAirport ? `Home airport ${profile.homeAirport}. ` : ""}Profile details are saved locally for this browser.`,
               status: "Started"
             }
           : {
@@ -4268,7 +4547,7 @@ function getBlueprintTopPlaces() {
               </div>
               <div class="saved-panel-note">
                 <p class="saved-panel-summary-label">Why keep this</p>
-                <p class="saved-panel-summary-copy">This note becomes part of the memory trail for future trips, so the planner can remember what actually stood out instead of only what was practical.</p>
+                <p class="saved-panel-summary-copy">This note gives future trips a little more context, so we can remember what actually stood out instead of only what was practical.</p>
               </div>
             </div>
           `
@@ -4281,7 +4560,7 @@ function getBlueprintTopPlaces() {
               <h4 class="mt-1 font-display text-lg font-bold">What this account remembers</h4>
               <p class="mt-2 text-sm text-muted">A short planning trail makes saves feel intentional instead of scattered.</p>
             </div>
-            <span class="rounded-full bg-teal-soft px-3 py-1 text-xs font-semibold text-tertiary">${savedTimelineItems.length} signals</span>
+            <span class="rounded-full bg-teal-soft px-3 py-1 text-xs font-semibold text-tertiary">${savedTimelineItems.length} notes</span>
           </div>
           <div class="saved-history-list">
             ${savedTimelineItems.map((item) => `
@@ -4306,7 +4585,7 @@ function getBlueprintTopPlaces() {
               <div class="saved-panel-card-head">
                 <div class="saved-panel-card-copy">
                   <p class="text-sm font-semibold text-primary">Alternate versions</p>
-                  <h4 class="mt-1 font-display text-lg font-bold">Saved itinerary arrangements</h4>
+                  <h4 class="mt-1 font-display text-lg font-bold">Saved itinerary versions</h4>
                   <p class="mt-2 text-sm text-muted">These are named versions of the trip you saved after making manual edits.</p>
                 </div>
                 <span class="rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">${hbState.alternateTrips.length} saved</span>
@@ -4318,17 +4597,17 @@ function getBlueprintTopPlaces() {
                       <div>
                         <div class="flex flex-wrap items-center gap-2">
                           <p class="font-display text-lg font-bold">${version.name}</p>
-                          ${hbState.compareVersionId === version.id ? `<span class="version-status-chip is-compare">Compare active</span>` : `<span class="version-status-chip is-soft">Saved arrangement</span>`}
+                          ${hbState.compareVersionId === version.id ? `<span class="version-status-chip is-compare">Compare active</span>` : `<span class="version-status-chip is-soft">Saved trip version</span>`}
                         </div>
                         <p class="version-card-meta mt-1">Saved ${version.savedAt}</p>
-                        <p class="mt-2 text-sm leading-6 text-muted">${getTripArrangementSummary(version.trip)}</p>
+                        <p class="mt-2 text-sm leading-6 text-muted">${escapeTripText(getTripArrangementSummary(version.trip))}</p>
                         <p class="mt-2 text-sm leading-6 text-muted"><span class="font-semibold text-ink">Changes:</span> ${escapeHtml(version.changeSummary || getTripChangeSummary(version.trip, "No day feedback saved with this version."))}</p>
-                        <p class="version-card-action-help">View opens this saved arrangement in the editor. Compare keeps the live draft visible and shows the differences side by side.</p>
+                        <p class="version-card-action-help">View opens this saved trip version in the editor. Compare keeps the live draft visible and shows the differences side by side.</p>
                       </div>
                       <div class="version-card-actions-shell">
                         <p class="version-card-actions-label">${hbState.compareVersionId === version.id ? "Compare active" : "Choose an action"}</p>
                         <div class="version-card-actions">
-                          <button class="version-action is-neutral rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="open-saved-panel-version" data-version-id="${version.id}" type="button">View arrangement</button>
+                          <button class="version-action is-neutral rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="open-saved-panel-version" data-version-id="${version.id}" type="button">View version</button>
                           <button class="version-action is-compare rounded-full px-4 py-2 text-sm font-semibold ring-1 ${hbState.compareVersionId === version.id ? "is-active bg-surface-soft text-secondary ring-line" : "bg-surface-soft text-secondary ring-line"}" data-action="compare-saved-panel-version" data-version-id="${version.id}" type="button">${hbState.compareVersionId === version.id ? "Compare active" : "Compare with live draft"}</button>
                         </div>
                       </div>
@@ -4343,7 +4622,7 @@ function getBlueprintTopPlaces() {
               <div class="saved-panel-card-head">
                 <div class="saved-panel-card-copy">
                   <p class="text-sm font-semibold text-primary">Alternate versions</p>
-                  <h4 class="mt-1 font-display text-lg font-bold">No saved arrangements yet</h4>
+                  <h4 class="mt-1 font-display text-lg font-bold">No saved trip versions yet</h4>
                   <p class="mt-2 text-sm text-muted">Try a lighter day, swap an area, or adjust the order, then save the version you may want back.</p>
                 </div>
                 <span class="rounded-full bg-surface-soft px-3 py-1 text-xs font-semibold text-secondary ring-1 ring-line">Ready</span>
@@ -4396,10 +4675,10 @@ function getBlueprintTopPlaces() {
               <p class="text-xs font-semibold uppercase tracking-[0.24em] text-primary">Saved trips</p>
               <h3 class="mt-1 font-display text-2xl font-bold">Come back to what worked</h3>
               <p class="mt-2 text-sm leading-6 text-muted">
-                Saved trips should feel calm and useful. Keep restore points, revisit liked versions, and leave light feedback after travel.
+                Keep your trip versions together. Revisit the ones you liked, and leave a quick note after you travel.
               </p>
             </div>
-            <span class="rounded-full bg-teal-soft px-3 py-1 text-xs font-semibold text-tertiary">Future memory</span>
+            <span class="rounded-full bg-teal-soft px-3 py-1 text-xs font-semibold text-tertiary">For later</span>
           </div>
 
           <div class="saved-account-overview">
@@ -4408,7 +4687,7 @@ function getBlueprintTopPlaces() {
                 <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/60">Account-ready workspace</p>
                 <h4 class="saved-account-overview-title mt-1">Keep planning without starting over</h4>
                 <p class="saved-account-overview-copy">
-                  This area is shaped like the future account home: profile details, active draft, saved arrangements, and light trip notes all stay together on this browser.
+                  This is a preview of your future account home: profile details, active draft, saved trip versions, and quick trip notes all stay together on this browser.
                 </p>
               </div>
               <span class="rounded-full bg-white/12 px-3 py-1 text-xs font-semibold text-white ring-1 ring-white/15">${escapeHtml(accountLabel)}</span>
@@ -4553,7 +4832,7 @@ function getBlueprintTopPlaces() {
               <div class="saved-panel-card rounded-[24px] border border-line bg-white px-4 py-4">
               <div class="saved-panel-card-head">
                 <div class="saved-panel-card-copy">
-                  <p class="text-sm font-semibold text-primary">Restore point</p>
+                  <p class="text-sm font-semibold text-primary">Version you liked</p>
                   <h4 class="mt-1 font-display text-lg font-bold">${savedTripTitle}</h4>
                   <p class="mt-2 text-sm text-muted">${savedTripCopy}</p>
                 </div>
@@ -4753,9 +5032,10 @@ function getBlueprintTopPlaces() {
         hbState.liveDraftTrip = cloneData(hbState.currentTrip);
       }
 
-      document.getElementById("trip-title").textContent = hbState.currentTrip.title;
-      document.getElementById("trip-summary").textContent = hbState.currentTrip.summary;
-      document.getElementById("trip-reasoning").textContent = hbState.currentTrip.reasoning;
+      document.getElementById("trip-title").textContent = humanizeTripCopy(hbState.currentTrip.title);
+      document.getElementById("trip-summary").textContent = humanizeTripCopy(hbState.currentTrip.summary);
+      document.getElementById("trip-reasoning").textContent = humanizeTripCopy(hbState.currentTrip.reasoning);
+      renderTripTravelAlert();
       const tripQuickFacts = document.getElementById("trip-quick-facts");
       const tripQuickFactsMore = document.getElementById("trip-quick-facts-more");
       const tripQuickFactsToggle = document.getElementById("trip-quick-facts-toggle");
@@ -4769,15 +5049,15 @@ function getBlueprintTopPlaces() {
           <div class="${item.featured ? "sm:col-span-2 xl:col-span-3 rounded-[22px] border border-warm-line bg-warm px-4 py-4 shadow-card" : "rounded-[18px] border border-line bg-surface-soft px-4 py-4"}">
             <div class="flex items-start justify-between gap-3">
               <div>
-                <p class="text-xs font-semibold uppercase tracking-[0.14em] ${item.featured ? "text-primary" : "text-muted"}">${item.label}</p>
-                <p class="mt-2 font-display ${item.featured ? "text-[1.35rem]" : "text-lg"} font-bold leading-tight text-ink">${item.value}</p>
-                <p class="trip-quick-fact-detail mt-2 text-sm leading-6 text-muted">${item.detail}</p>
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] ${item.featured ? "text-primary" : "text-muted"}">${escapeTripText(item.label)}</p>
+                <p class="mt-2 font-display ${item.featured ? "text-[1.35rem]" : "text-lg"} font-bold leading-tight text-ink">${escapeTripText(item.value)}</p>
+                <p class="trip-quick-fact-detail mt-2 text-sm leading-6 text-muted">${escapeTripText(item.detail)}</p>
               </div>
-              ${item.badge ? `<span class="rounded-full bg-white px-3 py-1 text-xs font-semibold text-secondary ring-1 ring-line">${item.badge}</span>` : ""}
+              ${item.badge ? `<span class="rounded-full bg-white px-3 py-1 text-xs font-semibold text-secondary ring-1 ring-line">${escapeTripText(item.badge)}</span>` : ""}
             </div>
             ${item.metaChips?.length ? `
               <div class="mt-3 flex flex-wrap gap-2">
-                ${item.metaChips.map((chip) => `<span class="rounded-full bg-white px-3 py-2 text-xs font-semibold text-secondary ring-1 ring-line">${chip}</span>`).join("")}
+                ${item.metaChips.map((chip) => `<span class="rounded-full bg-white px-3 py-2 text-xs font-semibold text-secondary ring-1 ring-line">${escapeTripText(chip)}</span>`).join("")}
               </div>
             ` : ""}
           </div>
@@ -4813,14 +5093,14 @@ function getBlueprintTopPlaces() {
             ? [`Started from ${context.sourceName}`, `Lead area: ${context.suggestedBase}`]
             : [`Started from ${context.sourceName}`, `Likely starting city: ${context.suggestedBase}`];
           tripGuideSource.innerHTML = chips.map((item) => `
-            <span class="rounded-full bg-surface-soft px-3 py-2 text-sm font-medium text-ink ring-1 ring-line">${item}</span>
+            <span class="rounded-full bg-surface-soft px-3 py-2 text-sm font-medium text-ink ring-1 ring-line">${escapeTripText(item)}</span>
           `).join("");
           tripGuideSource.classList.remove("hidden");
         } else if (getDestinationGuideEntry()) {
           const guide = getDestinationGuideEntry();
           const chips = [`Using ${guide.title} city guide`, `Guide priorities: ${guide.highlights.slice(0, 2).join(" + ")}`];
           tripGuideSource.innerHTML = chips.map((item) => `
-            <span class="rounded-full bg-surface-soft px-3 py-2 text-sm font-medium text-ink ring-1 ring-line">${escapeHtml(item)}</span>
+            <span class="rounded-full bg-surface-soft px-3 py-2 text-sm font-medium text-ink ring-1 ring-line">${escapeTripText(item)}</span>
           `).join("");
           tripGuideSource.classList.remove("hidden");
         } else {
@@ -4836,46 +5116,46 @@ function getBlueprintTopPlaces() {
       renderTripDayOverview();
       hbUtils.renderDestinationHero("trip");
       if (tripHeroKicker) {
-        tripHeroKicker.textContent = hbState.guidePlanContext?.sourceType ? "Guide-led destination" : "Destination preview";
+        tripHeroKicker.textContent = hbState.guidePlanContext?.sourceType ? "From the destination guide" : "Destination preview";
       }
-      document.getElementById("signature-title").textContent = hbState.currentTrip.signature.title;
-      document.getElementById("signature-reason").textContent = hbState.currentTrip.signature.reason;
+      document.getElementById("signature-title").textContent = humanizeTripCopy(hbState.currentTrip.signature.title);
+      document.getElementById("signature-reason").textContent = humanizeTripCopy(hbState.currentTrip.signature.reason);
       hbState.currentTrip.flightCard = buildFlightCard();
       hbState.currentTrip.stayCard = buildStayCard(getCityName());
-      document.getElementById("flight-title").textContent = hbState.currentTrip.flightCard.title;
-      document.getElementById("flight-copy").textContent = hbState.currentTrip.flightCard.copy;
-      document.getElementById("stay-title").textContent = hbState.currentTrip.stayCard.title;
-      document.getElementById("stay-copy").textContent = hbState.currentTrip.stayCard.copy;
+      document.getElementById("flight-title").textContent = humanizeTripCopy(hbState.currentTrip.flightCard.title);
+      document.getElementById("flight-copy").textContent = humanizeTripCopy(hbState.currentTrip.flightCard.copy);
+      document.getElementById("stay-title").textContent = humanizeTripCopy(hbState.currentTrip.stayCard.title);
+      document.getElementById("stay-copy").textContent = humanizeTripCopy(hbState.currentTrip.stayCard.copy);
       const flightMeta = document.getElementById("flight-meta");
       if (flightMeta) {
         flightMeta.innerHTML = (hbState.currentTrip.flightCard.meta || []).map((item) => `
           <div class="trip-support-meta-card">
-            <p class="trip-support-meta-label">${item.label}</p>
-            <p class="trip-support-meta-value">${item.value}</p>
-            <p class="trip-support-meta-copy">${item.copy}</p>
+            <p class="trip-support-meta-label">${escapeTripText(item.label)}</p>
+            <p class="trip-support-meta-value">${escapeTripText(item.value)}</p>
+            <p class="trip-support-meta-copy">${escapeTripText(item.copy)}</p>
           </div>
         `).join("");
       }
       const flightChips = document.getElementById("flight-chips");
       if (flightChips) {
         flightChips.innerHTML = (hbState.currentTrip.flightCard.chips || []).map((chip) => `
-          <span class="rounded-full bg-white px-3 py-2 text-xs font-semibold text-secondary ring-1 ring-line">${chip}</span>
+          <span class="rounded-full bg-white px-3 py-2 text-xs font-semibold text-secondary ring-1 ring-line">${escapeTripText(chip)}</span>
         `).join("");
       }
       const stayMeta = document.getElementById("stay-meta");
       if (stayMeta) {
         stayMeta.innerHTML = (hbState.currentTrip.stayCard.meta || []).map((item) => `
           <div class="trip-support-meta-card">
-            <p class="trip-support-meta-label">${item.label}</p>
-            <p class="trip-support-meta-value">${item.value}</p>
-            <p class="trip-support-meta-copy">${item.copy}</p>
+            <p class="trip-support-meta-label">${escapeTripText(item.label)}</p>
+            <p class="trip-support-meta-value">${escapeTripText(item.value)}</p>
+            <p class="trip-support-meta-copy">${escapeTripText(item.copy)}</p>
           </div>
         `).join("");
       }
       const stayTradeoffs = document.getElementById("stay-tradeoffs");
       if (stayTradeoffs) {
         stayTradeoffs.innerHTML = (hbState.currentTrip.stayCard.tradeoffs || []).map((chip) => `
-          <span class="rounded-full bg-white px-3 py-2 text-xs font-semibold text-secondary ring-1 ring-line">${chip}</span>
+          <span class="rounded-full bg-white px-3 py-2 text-xs font-semibold text-secondary ring-1 ring-line">${escapeTripText(chip)}</span>
         `).join("");
       }
       const stayRecommendations = document.getElementById("stay-recommendations");
@@ -4884,9 +5164,9 @@ function getBlueprintTopPlaces() {
           <div class="rounded-[18px] border border-line bg-white px-4 py-4">
             <div class="flex items-start justify-between gap-3">
               <div>
-                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">${item.label}</p>
-                <p class="mt-2 font-display text-lg font-bold text-ink">${item.area}</p>
-                <p class="mt-2 text-sm leading-6 text-muted">${item.copy}</p>
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">${escapeTripText(item.label)}</p>
+                <p class="mt-2 font-display text-lg font-bold text-ink">${escapeTripText(item.area)}</p>
+                <p class="mt-2 text-sm leading-6 text-muted">${escapeTripText(item.copy)}</p>
               </div>
               <span class="rounded-full bg-surface-soft px-3 py-1 text-xs font-semibold text-secondary">Stay fit</span>
             </div>
@@ -4981,12 +5261,12 @@ function getBlueprintTopPlaces() {
             <div class="version-card is-restore">
               <div class="flex items-start justify-between gap-3">
                 <div>
-                  <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Viewing saved arrangement</p>
+                  <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Viewing saved trip version</p>
                   <div class="mt-2 flex flex-wrap items-center gap-2">
                     <p class="font-display text-lg font-bold">${hbState.activeTripSource.name || "Saved version"}</p>
-                    <span class="version-status-chip is-viewing">Viewing saved arrangement</span>
+                    <span class="version-status-chip is-viewing">Viewing saved trip version</span>
                   </div>
-                  <p class="mt-2 text-sm leading-6 text-muted">You are looking at a saved arrangement right now. Return to the live draft anytime, or compare this against it before deciding what to keep.</p>
+                  <p class="mt-2 text-sm leading-6 text-muted">You are looking at a saved trip version right now. Return to the live draft anytime, or compare it with this version before deciding what to keep.</p>
                 </div>
                 <div class="flex flex-wrap gap-2">
                   <button class="version-action is-viewing rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="restore-live-draft" type="button">Return to live draft</button>
@@ -5004,7 +5284,7 @@ function getBlueprintTopPlaces() {
       if (alternateVersionHelper) {
         alternateVersionHelper.textContent = hbState.alternateTrips.length
           ? "Save a new version whenever your edits start heading in a different direction you may want to revisit."
-          : "If this arrangement feels worth keeping, save it with a clear name so you can compare it to the live draft later.";
+          : "If this version feels worth keeping, give it a clear name so you can compare it with the live draft later.";
       }
 
       if (alternateVersionSuggestions) {
@@ -5023,10 +5303,10 @@ function getBlueprintTopPlaces() {
             <div class="save-version-feedback">
               <p class="save-version-feedback-title">Saved as "${feedback.name}"</p>
               <p class="save-version-feedback-copy">This version was saved ${feedback.savedAt}. You can view it now or compare it with the live draft below.</p>
-              ${feedback.fromUnsavedEdits ? `<p class="save-version-feedback-copy">Saved from unsaved edits, so this reordered version is now safely kept as its own arrangement.</p>` : ""}
+              ${feedback.fromUnsavedEdits ? `<p class="save-version-feedback-copy">Saved from recent edits, so this reordered version is now kept on its own.</p>` : ""}
               <div class="save-version-feedback-actions">
                 <button class="version-action is-neutral rounded-full bg-surface-soft px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="open-just-saved-version" data-version-id="${feedback.id}" type="button">
-                  View saved arrangement
+                  View saved version
                 </button>
                 <button class="version-action is-compare rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="compare-just-saved-version" data-version-id="${feedback.id}" type="button">
                   Compare now
@@ -5063,8 +5343,8 @@ function getBlueprintTopPlaces() {
           unsavedArrangementCue.classList.remove("hidden");
           unsavedArrangementCue.innerHTML = `
             <div class="unsaved-arrangement-cue">
-              <p class="unsaved-arrangement-title">Unsaved arrangement edits</p>
-              <p class="unsaved-arrangement-copy">${hbState.unsavedArrangement.message || "You changed the itinerary order. Save this arrangement if you may want to compare it later."}</p>
+              <p class="unsaved-arrangement-title">Unsaved trip edits</p>
+              <p class="unsaved-arrangement-copy">${hbState.unsavedArrangement.message || "You changed the itinerary order. Save this version if you may want to compare it later."}</p>
             </div>
           `;
         } else {
@@ -5077,7 +5357,7 @@ function getBlueprintTopPlaces() {
         if (compareSubject) {
           alternateCompareSlot.classList.remove("hidden");
           const currentSourceLabel = getActiveTripLabel();
-          const currentSourceChip = hbState.activeTripSource?.type === "saved" ? "Viewing saved arrangement" : "Live draft";
+          const currentSourceChip = hbState.activeTripSource?.type === "saved" ? "Viewing saved trip version" : "Live draft";
           const compareContextLine = `Current: ${currentSourceLabel} • Compared: ${compareSubject.name}`;
           const movedCount = dayMovementDiff.filter((item) => item.moved).length;
           const stayedCount = dayMovementDiff.length - movedCount;
@@ -5086,9 +5366,9 @@ function getBlueprintTopPlaces() {
               <div class="compare-shell-header">
                 <div>
                   <p class="compare-shell-kicker">Version comparison</p>
-                  <h5 class="compare-shell-title">Compare arrangements</h5>
+                  <h5 class="compare-shell-title">Compare trip versions</h5>
                   <p class="compare-shell-context">${compareContextLine}</p>
-                  <p class="compare-shell-intro">Look at both arrangements side by side, then decide whether the live draft still feels best or whether the saved version is the better shape for this trip.</p>
+                  <p class="compare-shell-intro">Look at both versions side by side, then decide whether the live draft still feels best or whether the saved version fits this trip better.</p>
                 </div>
                 <div class="compare-shell-actions">
                   ${hbState.activeTripSource?.type === "saved" ? `<button class="version-action is-viewing rounded-full bg-surface-soft px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="restore-live-draft" type="button">Return to live draft</button>` : ""}
@@ -5099,17 +5379,17 @@ function getBlueprintTopPlaces() {
                 <div class="compare-shell-section-head">
                   <div>
                     <p class="compare-shell-section-kicker">Sides</p>
-                    <p class="compare-shell-section-copy">Start here if you want a quick read on which arrangement you are editing and which one you are using for comparison.</p>
+                    <p class="compare-shell-section-copy">Start here for a quick read on which version you are editing and which one you are using for comparison.</p>
                   </div>
                 </div>
                 <div class="compare-shell-summary sm:grid-cols-2">
                   <div class="compare-shell-summary-card">
-                    <p class="compare-shell-summary-label">Current arrangement</p>
+                    <p class="compare-shell-summary-label">Current trip version</p>
                     <p class="compare-shell-summary-value">${currentSourceLabel}</p>
                     <p class="compare-shell-summary-copy">This is the version you are actively looking at right now.</p>
                   </div>
                   <div class="compare-shell-summary-card">
-                    <p class="compare-shell-summary-label">Compared arrangement</p>
+                    <p class="compare-shell-summary-label">Version to compare</p>
                     <p class="compare-shell-summary-value">${compareSubject.name}</p>
                     <p class="compare-shell-summary-copy">Use this side as the reference point before you decide which direction feels better.</p>
                   </div>
@@ -5119,26 +5399,26 @@ function getBlueprintTopPlaces() {
                 <div class="compare-shell-section-head">
                   <div>
                     <p class="compare-shell-section-kicker">Trip summaries</p>
-                    <p class="compare-shell-section-copy">These summaries give you the high-level feel of each arrangement before you get into day-by-day changes.</p>
+                    <p class="compare-shell-section-copy">These summaries give you the overall feel of each version before you get into day-by-day changes.</p>
                   </div>
                 </div>
                 <div class="grid gap-3 sm:grid-cols-2">
                 <div class="compare-column version-card is-current">
-                  <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Current arrangement</p>
+                  <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Current trip version</p>
                   <div class="mt-2 flex flex-wrap items-center gap-2">
                     <p class="font-display text-lg font-bold">${hbState.currentTrip.title}</p>
                     <span class="version-status-chip ${hbState.activeTripSource?.type === "saved" ? "is-viewing" : "is-active"}">${currentSourceChip}</span>
                   </div>
-                  <p class="mt-2 text-sm leading-6 text-muted">${getTripArrangementSummary(hbState.currentTrip)}</p>
+                  <p class="mt-2 text-sm leading-6 text-muted">${escapeTripText(getTripArrangementSummary(hbState.currentTrip))}</p>
                   <p class="mt-2 text-sm leading-6 text-muted"><span class="font-semibold text-ink">Changes:</span> ${escapeHtml(getTripChangeSummary(hbState.currentTrip, "No day feedback yet."))}</p>
                 </div>
                 <div class="compare-column version-card is-compare-active">
-                  <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Compared arrangement</p>
+                  <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Version to compare</p>
                   <div class="mt-2 flex flex-wrap items-center gap-2">
                     <p class="font-display text-lg font-bold">${compareSubject.trip.title}</p>
                     <span class="version-status-chip ${compareSubject.sourceType === "live" ? "is-active" : "is-soft"}">${compareSubject.sourceType === "live" ? "Live draft" : "Saved version"}</span>
                   </div>
-                  <p class="mt-2 text-sm leading-6 text-muted">${getTripArrangementSummary(compareSubject.trip)}</p>
+                  <p class="mt-2 text-sm leading-6 text-muted">${escapeTripText(getTripArrangementSummary(compareSubject.trip))}</p>
                   <p class="mt-2 text-sm leading-6 text-muted"><span class="font-semibold text-ink">Changes:</span> ${escapeHtml(getTripChangeSummary(compareSubject.trip, "No day feedback saved with this version."))}</p>
                 </div>
               </div>
@@ -5173,7 +5453,7 @@ function getBlueprintTopPlaces() {
                       </div>
                       <div class="mt-3 grid gap-2 sm:grid-cols-2">
                         <div class="movement-card-slot">
-                          <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Current arrangement</p>
+                          <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Current trip version</p>
                           <p class="mt-2 text-sm font-semibold text-ink">Position ${item.currentIndex + 1}</p>
                           <p class="mt-1 text-sm leading-6 text-muted">${item.currentLabel} • ${item.currentArea}</p>
                         </div>
@@ -5207,18 +5487,18 @@ function getBlueprintTopPlaces() {
                         ? `<span class="version-status-chip is-viewing">Viewing now</span>`
                         : hbState.compareVersionId === version.id
                           ? `<span class="version-status-chip is-compare">Compare active</span>`
-                          : `<span class="version-status-chip is-soft">Saved arrangement</span>`}
+                          : `<span class="version-status-chip is-soft">Saved trip version</span>`}
                     </div>
                     <p class="version-card-meta mt-1">Saved ${version.savedAt}</p>
                     <p class="mt-3 text-xs font-semibold uppercase tracking-[0.14em] text-muted">Arrangement summary</p>
-                    <p class="mt-2 text-sm leading-6 text-muted">${getTripArrangementSummary(version.trip)}</p>
+                    <p class="mt-2 text-sm leading-6 text-muted">${escapeTripText(getTripArrangementSummary(version.trip))}</p>
                     <p class="mt-2 text-sm leading-6 text-muted"><span class="font-semibold text-ink">Changes:</span> ${escapeHtml(version.changeSummary || getTripChangeSummary(version.trip, "No day feedback saved with this version."))}</p>
-                    <p class="version-card-action-help">${hbState.activeTripSource?.type === "saved" && hbState.activeTripSource.versionId === version.id ? "You are inside this saved arrangement right now. Return to the live draft to keep shaping the working version, or compare it before deciding what to keep." : "View moves the editor into this saved arrangement. Compare keeps your current side visible and shows both arrangements together."}</p>
+                    <p class="version-card-action-help">${hbState.activeTripSource?.type === "saved" && hbState.activeTripSource.versionId === version.id ? "You are viewing this saved trip version right now. Return to the live draft to keep shaping the plan, or compare it before deciding what to keep." : "View opens this saved trip version. Compare keeps your current side visible and shows the differences."}</p>
                   </div>
                   <div class="version-card-actions-shell">
                     <p class="version-card-actions-label">${hbState.activeTripSource?.type === "saved" && hbState.activeTripSource.versionId === version.id ? "Viewing now" : hbState.compareVersionId === version.id ? "Compare active" : "Choose an action"}</p>
                     <div class="version-card-actions">
-                      <button class="version-action ${hbState.activeTripSource?.type === "saved" && hbState.activeTripSource.versionId === version.id ? "is-viewing" : "is-neutral"} rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="${hbState.activeTripSource?.type === "saved" && hbState.activeTripSource.versionId === version.id ? "restore-live-draft" : "open-trip-panel-version"}" data-version-id="${version.id}" type="button">${hbState.activeTripSource?.type === "saved" && hbState.activeTripSource.versionId === version.id ? "Return to live draft" : "View arrangement"}</button>
+                      <button class="version-action ${hbState.activeTripSource?.type === "saved" && hbState.activeTripSource.versionId === version.id ? "is-viewing" : "is-neutral"} rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="${hbState.activeTripSource?.type === "saved" && hbState.activeTripSource.versionId === version.id ? "restore-live-draft" : "open-trip-panel-version"}" data-version-id="${version.id}" type="button">${hbState.activeTripSource?.type === "saved" && hbState.activeTripSource.versionId === version.id ? "Return to live draft" : "View version"}</button>
                       <button class="version-action is-compare rounded-full px-4 py-2 text-sm font-semibold ring-1 ${hbState.compareVersionId === version.id ? "is-active bg-surface-soft text-secondary ring-line" : "bg-surface-soft text-secondary ring-line"}" data-action="compare-trip-panel-version" data-version-id="${version.id}" type="button">${hbState.compareVersionId === version.id ? "Compare active" : hbState.activeTripSource?.type === "saved" && hbState.activeTripSource.versionId === version.id ? "Compare with live draft" : "Compare with current trip"}</button>
                     </div>
                   </div>
@@ -5227,7 +5507,7 @@ function getBlueprintTopPlaces() {
             `).join("")
           : `
             <div class="alternate-empty-state">
-              <p class="alternate-empty-title">No saved arrangements yet</p>
+              <p class="alternate-empty-title">No saved trip versions yet</p>
               <p class="alternate-empty-copy">Save a named version here first, then each card below will let you either <span class="font-semibold text-ink">view it</span> or <span class="font-semibold text-ink">compare it</span> against the live draft.</p>
             </div>
           `;
@@ -5307,7 +5587,7 @@ function getBlueprintTopPlaces() {
           <div class="trip-day-header">
             <div class="trip-day-header-copy">
               <p class="trip-day-kicker">${day.dayLabel} • ${day.date}</p>
-              <h4 class="trip-day-title mt-1 font-display text-xl font-bold">${day.title}</h4>
+              <h4 class="trip-day-title mt-1 font-display text-xl font-bold">${escapeTripText(day.title)}</h4>
               <div class="trip-day-stats mt-3">
                 <div class="trip-day-stat-pill">
                   <span class="trip-day-stat-label">Starts</span>
@@ -5324,7 +5604,7 @@ function getBlueprintTopPlaces() {
               </div>
               <div class="trip-day-why-strip mt-3">
                 <p class="trip-day-section-label">Why this day makes sense</p>
-                <p class="trip-day-meta mt-2">${day.rationale}</p>
+                <p class="trip-day-meta mt-2">${escapeTripText(day.rationale)}</p>
               </div>
             </div>
             <div class="trip-day-header-actions">
@@ -5340,16 +5620,16 @@ function getBlueprintTopPlaces() {
           <div class="trip-day-facts mt-4 grid grid-cols-2 gap-3 text-sm lg:grid-cols-2">
             <div class="trip-day-fact-card trip-day-fact-card--area rounded-2xl bg-surface-soft px-3 py-3">
               <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Area</p>
-              <p class="mt-2 font-medium">${day.area}</p>
+              <p class="mt-2 font-medium">${escapeTripText(day.area)}</p>
             </div>
             <div class="trip-day-fact-card trip-day-fact-card--highlight rounded-2xl bg-surface-soft px-3 py-3">
               <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Main highlight</p>
-              <p class="mt-2 font-medium">${day.highlight}</p>
+              <p class="mt-2 font-medium">${escapeTripText(day.highlight)}</p>
             </div>
           </div>
 
           <div class="trip-day-confidence mt-3">
-            <p class="trip-day-confidence-label">Planning confidence</p>
+            <p class="trip-day-confidence-label">At a glance</p>
             <div class="trip-day-confidence-list">
               ${buildDayConfidenceSignals(day).map((signal) => `
                 <span>${escapeHtml(signal)}</span>
@@ -5359,7 +5639,7 @@ function getBlueprintTopPlaces() {
 
           <div class="trip-day-edit-hint mt-3">
             <span class="material-symbols-outlined" aria-hidden="true">edit_calendar</span>
-            <p>Fine-tune gently: move the day, try a nearby alternative, lighten the plan, or adjust stop timing after opening the schedule.</p>
+            <p>Make it yours: move the day, try a nearby alternative, lighten the plan, or adjust stop timing after opening the schedule.</p>
           </div>
 
           <div class="trip-day-section trip-day-section--summary mt-4">
@@ -5379,19 +5659,19 @@ function getBlueprintTopPlaces() {
                 <div>
                   <p class="trip-day-section-label">Day snapshot</p>
                   <div class="flex flex-wrap items-center gap-2">
-                    <p class="trip-heading trip-day-plan-title mt-2 text-xl text-ink">${day.item.title}</p>
-                    <span class="rounded-full ${index === 1 ? "bg-teal-soft text-tertiary" : "bg-blue-soft text-secondary"} px-3 py-1 text-xs font-semibold">${day.item.label}</span>
+                    <p class="trip-heading trip-day-plan-title mt-2 text-xl text-ink">${escapeTripText(day.item.title)}</p>
+                    <span class="rounded-full ${index === 1 ? "bg-teal-soft text-tertiary" : "bg-blue-soft text-secondary"} px-3 py-1 text-xs font-semibold">${escapeTripText(day.item.label)}</span>
                   </div>
                 </div>
               </div>
               <div class="trip-day-summary-grid mt-3">
                 <div class="trip-day-summary-card trip-day-summary-card--plan">
                   <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Plan</p>
-                  <p class="trip-day-overview-copy mt-2">${day.item.body}</p>
+                  <p class="trip-day-overview-copy mt-2">${escapeTripText(day.item.body)}</p>
                 </div>
                 <div class="trip-day-summary-card trip-day-summary-card--fit">
                   <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Why it fits</p>
-                  <p class="trip-day-overview-copy mt-2">${day.item.fit}</p>
+                  <p class="trip-day-overview-copy mt-2">${escapeTripText(day.item.fit)}</p>
                 </div>
               </div>
               ${renderDayProtectedAnchorStrip(day, index, hbState.currentTrip.days.length)}
@@ -5403,7 +5683,7 @@ function getBlueprintTopPlaces() {
                     <span class="material-symbols-outlined" aria-hidden="true">${note.icon}</span>
                     <div>
                       <p class="trip-day-note-label">${escapeHtml(note.label)}</p>
-                      <p class="trip-day-note-copy">${escapeHtml(note.copy)}</p>
+                      <p class="trip-day-note-copy">${escapeTripText(note.copy)}</p>
                     </div>
                   </div>
                 `).join("")}
@@ -5411,7 +5691,7 @@ function getBlueprintTopPlaces() {
               <div class="trip-day-meta-row mt-3">
                 <div class="trip-day-meta-pill trip-day-meta-pill--note">
                   <span class="trip-day-meta-pill-label">Good to know</span>
-                  <span class="trip-day-meta-pill-value">${day.weather}</span>
+                  <span class="trip-day-meta-pill-value">${escapeTripText(day.weather)}</span>
                 </div>
               </div>
               ${!day.expanded ? `
@@ -5419,7 +5699,7 @@ function getBlueprintTopPlaces() {
                   ${day.item.timeline.slice(0, 2).map((step) => `
                     <div class="trip-day-preview-item">
                       <span class="trip-day-preview-time">${step.time}</span>
-                      <span class="trip-day-preview-title">${step.title}</span>
+                      <span class="trip-day-preview-title">${escapeTripText(step.title)}</span>
                     </div>
                   `).join("")}
                   ${day.item.timeline.length > 2 ? `
@@ -5434,13 +5714,13 @@ function getBlueprintTopPlaces() {
                   <div class="trip-day-schedule-head">
                     <div>
                       <p class="trip-day-section-label">Schedule</p>
-                      <p class="trip-day-schedule-copy mt-1 text-sm leading-6 text-muted">A clear flow for the day, with timing cues you can still adjust.</p>
+                      <p class="trip-day-schedule-copy mt-1 text-sm leading-6 text-muted">Here is the day's flow, with timing you can still adjust.</p>
                     </div>
                     <span class="rounded-full bg-white px-3 py-1 text-xs font-semibold text-secondary ring-1 ring-line">Editable</span>
                   </div>
                   <div class="mt-4 space-y-4">
                     ${day.item.timeline.map((step, stepIndex) => `
-                      <div class="timeline-step grid grid-cols-1 gap-3 rounded-[18px] px-2 py-2 transition sm:grid-cols-[118px_1fr] lg:grid-cols-[128px_1fr] sm:gap-4 ${hbState.currentTripMapQuery === day.id && hbState.currentTripMapStepIndex === stepIndex ? "is-map-focused bg-white ring-1 ring-secondary/35" : "hover:bg-white/70"}" data-day-id="${day.id}" data-step-index="${stepIndex}" draggable="true" tabindex="0" role="button" aria-label="Focus ${step.title} on the trip map">
+                      <div class="timeline-step grid grid-cols-1 gap-3 rounded-[18px] px-2 py-2 transition sm:grid-cols-[118px_1fr] lg:grid-cols-[128px_1fr] sm:gap-4 ${hbState.currentTripMapQuery === day.id && hbState.currentTripMapStepIndex === stepIndex ? "is-map-focused bg-white ring-1 ring-secondary/35" : "hover:bg-white/70"}" data-day-id="${day.id}" data-step-index="${stepIndex}" draggable="true" tabindex="0" role="button" aria-label="Focus ${escapeHtml(step.title)} on the trip map">
                         <div class="timeline-step-rail">
                           <div class="timeline-time-chip">
                             <div class="timeline-time">${step.time}</div>
@@ -5453,8 +5733,8 @@ function getBlueprintTopPlaces() {
                         <div class="timeline-step-shell">
                           <div class="trip-day-step-head">
                             <div class="timeline-step-copy-block">
-                              <p class="timeline-title">${step.title}</p>
-                              <p class="timeline-copy timeline-step-copy mt-2">${step.copy}</p>
+                              <p class="timeline-title">${escapeTripText(step.title)}</p>
+                              <p class="timeline-copy timeline-step-copy mt-2">${escapeTripText(step.copy)}</p>
                               ${renderTimelineAnchorBadges(step, day, index, hbState.currentTrip.days.length, stepIndex)}
                               ${hbState.currentTripMapQuery === day.id && hbState.currentTripMapStepIndex === stepIndex ? `<span class="timeline-focus-chip is-active">On the map</span>` : ""}
                             </div>
@@ -5506,6 +5786,9 @@ function getBlueprintTopPlaces() {
 
       renderTripMap();
       renderSavedPanel();
+      document.dispatchEvent(new CustomEvent("hb:trip-rendered", {
+        detail: { destination: hbState.appState.destination }
+      }));
     }
 
     function findDay(dayId) {
@@ -5559,7 +5842,7 @@ function getBlueprintTopPlaces() {
       const step = {
         time: "4:30 PM",
         title: `Flexible follow-through in ${day.area}`,
-        copy: `Add one nearby stop, cafe, view, or short walk that supports ${day.highlight || day.area} without moving the day away from its protected anchors.`
+        copy: `Add one nearby stop, cafe, view, or short walk that fits ${day.highlight || day.area} without pulling the day away from its main plans.`
       };
       const insertAt = Math.max(1, timeline.length - 1);
       timeline.splice(insertAt, 0, step);
@@ -5576,7 +5859,7 @@ function getBlueprintTopPlaces() {
         label: day.item.label
       };
       day.item.title = next.title;
-      day.item.body = `${next.body} The protected moments stay in the plan, but the day is treated as easier to reshape around nearby stops.`;
+      day.item.body = `${next.body} The main moments stay in the plan, but the day is easier to reshape around nearby stops.`;
       day.item.fit = `${next.fit} This is a better review version if the original area or flow felt off.`;
       day.item.label = "Area adjusted";
       day.item.alternatives[day.item.alternativeIndex % day.item.alternatives.length] = currentSnapshot;
@@ -5597,13 +5880,13 @@ function getBlueprintTopPlaces() {
         setDayQualityAdjustment(
           day,
           feedback,
-          removed ? "Made this day lighter" : "Kept the protected plan intact",
+          removed ? "Made this day lighter" : "Kept the main plan intact",
           removed
-            ? `Removed ${removed.title}, but kept ${protectedSummary} protected so the day has more breathing room.`
+            ? `Removed ${removed.title}, but kept ${protectedSummary} in the plan so the day has more breathing room.`
             : `This day is already tight around ${protectedSummary}, so no lower-priority stop was removed.`,
           "remove_circle"
         );
-        message = `You made ${day.dayLabel} lighter while keeping protected must-haves visible.`;
+        message = `You made ${day.dayLabel} lighter while keeping your must-haves in view.`;
       }
 
       if (feedback === "too-light") {
@@ -5613,11 +5896,11 @@ function getBlueprintTopPlaces() {
           feedback,
           added ? "Added one flexible stop" : "Kept this day flexible",
           added
-            ? `Added ${added.title} as optional follow-through while keeping ${protectedSummary} as the main reason for the day.`
-            : `This day already has enough stops, so ${protectedSummary} stays protected without adding filler.`,
+            ? `Added ${added.title} as an optional extra while keeping ${protectedSummary} as the main reason for the day.`
+            : `This day already has enough stops, so ${protectedSummary} stays in the plan without adding filler.`,
           "add_circle"
         );
-        message = `You added more depth to ${day.dayLabel} without crowding the protected moments.`;
+        message = `You added more variety to ${day.dayLabel} without crowding the main moments.`;
       }
 
       if (feedback === "wrong-area") {
@@ -5627,11 +5910,11 @@ function getBlueprintTopPlaces() {
           feedback,
           adjusted ? "Reframed the day" : "Marked area for review",
           adjusted
-            ? `Switched the day framing and kept ${protectedSummary} as the anchor, so the itinerary can be reshaped without losing what matters.`
+            ? `Switched the day framing and kept ${protectedSummary} as the main focus, so the itinerary can change without losing what matters.`
             : `Keep ${protectedSummary}, then review the map and nearby stops before saving this day.`,
           "near_me"
         );
-        message = `You asked to rethink ${day.dayLabel}'s area while keeping must-haves protected.`;
+        message = `You asked to rethink ${day.dayLabel}'s area while keeping your must-haves in view.`;
       }
 
       if (feedback === "keep-this") {
@@ -5639,7 +5922,7 @@ function getBlueprintTopPlaces() {
           day,
           feedback,
           "Marked as a keeper",
-          `This day is marked to keep because ${protectedSummary} fits the route and should not be softened without a reason.`,
+          `This day is marked to keep because ${protectedSummary} fits the route and should not be changed without a reason.`,
           "check_circle"
         );
         message = `You marked ${day.dayLabel} as a keeper.`;
@@ -5647,7 +5930,7 @@ function getBlueprintTopPlaces() {
 
       if (!message) return;
       day.expanded = true;
-      markUnsavedArrangement(`${message} Save this arrangement if this version feels better.`);
+      markUnsavedArrangement(`${message} Save this version if it feels better.`);
       renderTrip();
     }
 
@@ -5667,7 +5950,7 @@ function getBlueprintTopPlaces() {
       day.item.label = next.label;
       day.item.alternatives[day.item.alternativeIndex % day.item.alternatives.length] = currentSnapshot;
       day.item.alternativeIndex += 1;
-      markUnsavedArrangement(`You tried an alternate plan for ${day.dayLabel}. Save this arrangement if it feels better.`);
+      markUnsavedArrangement(`You tried an alternate plan for ${day.dayLabel}. Save this version if it feels better.`);
       renderTrip();
     }
 
@@ -5675,7 +5958,7 @@ function getBlueprintTopPlaces() {
       const day = findDay(dayId);
       if (!day) return;
       day.item.removed = true;
-      markUnsavedArrangement(`You made ${day.dayLabel} lighter. Save this arrangement if the easier version feels right.`);
+      markUnsavedArrangement(`You made ${day.dayLabel} lighter. Save this version if the easier option feels right.`);
       renderTrip();
     }
 
@@ -5683,7 +5966,7 @@ function getBlueprintTopPlaces() {
       const day = findDay(dayId);
       if (!day) return;
       day.item.removed = false;
-      markUnsavedArrangement(`You restored the original plan for ${day.dayLabel}. Save this arrangement if this version feels right.`);
+      markUnsavedArrangement(`You restored the original plan for ${day.dayLabel}. Save this version if it feels right.`);
       renderTrip();
     }
 
@@ -5722,7 +6005,7 @@ function getBlueprintTopPlaces() {
         hbState.currentTripMapStepIndex = toIndex;
       }
 
-      markUnsavedArrangement(`You reordered a timeline step in ${day.dayLabel}. Save this arrangement if this version feels better.`);
+      markUnsavedArrangement(`You reordered a stop in ${day.dayLabel}. Save this version if it feels better.`);
       renderTrip();
     }
 
@@ -5763,13 +6046,14 @@ function getBlueprintTopPlaces() {
       normalizeTripDays();
       hbState.currentTripMapQuery = day.id;
       hbState.currentTripMapStepIndex = null;
-      markUnsavedArrangement(`You moved ${day.dayLabel} to a new place in the trip. Save this arrangement if you want to keep this version handy.`);
+      markUnsavedArrangement(`You moved ${day.dayLabel} to a new place in the trip. Save this version if you want to keep it handy.`);
       renderTrip();
     }
 
 Object.assign(hbUtils, {
   buildFlightCard,
   buildStayCard,
+  renderDestinationStoryBands,
   updateStateFromInputs,
   updateStateFromTripLogistics,
   updateJournalPreview,

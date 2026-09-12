@@ -7,24 +7,24 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        surface: "#f7f9fc",
-        "surface-soft": "#eef3f7",
-        "surface-card": "#ffffff",
-        "surface-deep": "#111827",
-        primary: "#b94725",
-        "primary-bright": "#bf4f2f",
-        secondary: "#2458c8",
-        tertiary: "#0b776d",
-        ink: "#111827",
-        muted: "#4f5f6f",
-        line: "#cbd7e3",
-        warm: "#fff4ed",
-        "warm-line": "#efc5b2",
-        "blue-soft": "#edf3ff",
-        "teal-soft": "#e9fbf5"
+        surface: "#fffdf9",
+        "surface-soft": "#f2eee7",
+        "surface-card": "#fffdf9",
+        "surface-deep": "#193f43",
+        primary: "#b95138",
+        "primary-bright": "#c76145",
+        secondary: "#176765",
+        tertiary: "#3f725e",
+        ink: "#1d2930",
+        muted: "#5c686d",
+        line: "#ddd7cf",
+        warm: "#fff0e8",
+        "warm-line": "#e8b7a5",
+        "blue-soft": "#e8f2ef",
+        "teal-soft": "#e8f2e9"
       },
       fontFamily: {
-        display: ["Inter", "sans-serif"],
+        display: ["Space Grotesk", "Inter", "sans-serif"],
         body: ["Inter", "sans-serif"]
       },
       boxShadow: {

@@ -4,7 +4,7 @@ Horizon Bound is a beta vacation-planning app that helps travelers build a trip 
 
 ## Open Locally
 
-Open `code.html` in a browser, or serve the folder with any static file server and visit the root URL. The root `index.html` forwards to the app.
+For a quick local check, open `code.html` directly. The interactive planner lives at `/plan/`, and the old `code.html` address remains as a small redirect for existing bookmarks. The generated root `index.html` is the public home page for the GitHub Pages project path.
 
 ## Deploy Free With GitHub Pages
 

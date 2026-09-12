@@ -257,7 +257,7 @@ window.HB_DATA.destinationFacts = {
       Samarkand: "Samarkand often works strongest when the big historic squares get real breathing room and the rest of the day stays secondary.",
       Khiva: "Khiva usually works best when you let the walled old city become the whole day instead of trying to force more beyond it.",
       Bukhara: "Bukhara usually feels strongest when the day stays compact, atmospheric, and anchored by one courtyard or plaza after another.",
-      Bern: "Bern usually shines when you keep the day centered on the old town, river views, and one or two meaningful stops.",
+      Bern: "Bern usually shines when you keep the day centered on the old town, river views, and one or two local stops.",
       Moscow: "Moscow often works best when you group major sights thoughtfully, because distance and scale can make the day feel bigger than expected.",
       Sydney: "Sydney feels better when you group harbor time, beach time, and neighborhood exploring instead of bouncing between them all in one day.",
       Melbourne: "Melbourne often lands best when coffee, neighborhoods, and one clearer cultural or waterfront stretch define the day instead of nonstop movement.",
@@ -279,7 +279,6 @@ window.HB_DATA.destinationFacts = {
       Dubai: "Dubai often feels smoother when each day has one clear focus, since travel between areas can take longer than it first seems.",
       Reykjavik: "Reykjavik works well with one main outing per day and enough flexibility for weather and daylight shifts.",
       Honolulu: "Honolulu feels best when you balance iconic beach time with one or two well-chosen outings instead of treating every day like a checklist.",
-      "Antarctic Peninsula": "Antarctica is best approached with flexibility, since weather and landing conditions can shape the rhythm of each day."
     };
 
 window.HB_TRIP_HELPERS.getAreaSet = function(city) {
@@ -415,9 +414,10 @@ window.HB_TRIP_HELPERS.getAreaSet = function(city) {
         Suva: ["City center", "Harbourfront", "Colo-i-Suva side"],
         Roseau: ["Town center", "Botanic Gardens side", "West coast base"],
         Nadi: ["Denarau", "Wailoaloa", "Coral Coast"],
-        "Antarctic Peninsula": ["Expedition vessel", "Landing site", "Scenic channel"]
       };
-      return map[city] || ["City center", "Old town", "Riverside"];
+      if (map[city]) return map[city];
+      const name = String(city || "your destination").split(",")[0].trim() || "your destination";
+      return [`Your main base in ${name}`, "A nearby area", "A flexible day-trip area"];
     }
 
 
@@ -8297,57 +8297,6 @@ window.HB_TRIP_HELPERS.getConcreteTripTemplates = function(city, areas) {
             ]
           }
         ],
-        "Antarctic Peninsula": [
-          {
-            title: "Expedition rhythm begins",
-            rationale: "Antarctica works best when the first day accepts expedition reality and treats the ship, briefing, and first scenic passages as the actual experience.",
-            highlight: "Expedition-ship start",
-            timeShape: "Transit and anticipation day",
-            weather: "Let the first day stay flexible because weather and crossing conditions shape everything here.",
-            itemTitle: "Embarkation + first scenic passage",
-            itemBody: "Use embarkation, orientation, and the first broader scenic stretch as the whole chapter instead of trying to force a more normal land-based agenda.",
-            fit: "It matches the reality of Antarctica and still gives the day a meaningful shape.",
-            timeline: [
-              { time: "3:00 PM", title: "Embark in Ushuaia and settle into the vessel", copy: "Treat the ship as part of the destination, not just a transfer tool." },
-              { time: "5:00 PM", title: "Expedition briefing before the Beagle Channel departure", copy: "This practical step matters here because it shapes how the trip will actually unfold." },
-              { time: "7:30 PM", title: "Dinner during the Beagle Channel passage", copy: "Let the first evening be about anticipation and the scale of the setting." }
-            ]
-          },
-          {
-            title: "Landing day",
-            rationale: "A signature Antarctica day should leave real room for the best landing or zodiac chapter rather than pretending the plan can be rigid.",
-            highlight: "Landing site or zodiac cruise",
-            timeShape: "Weather-led expedition day",
-            weather: "Stay flexible because this is the destination where conditions matter most and can change everything.",
-            itemTitle: "Main landing or zodiac chapter",
-            itemBody: "Build around the expedition team’s best landing or cruise window, then let the rest of the day stay adaptable and observation-led.",
-            fit: "It gives Antarctica its real payoff in a way that respects how the place actually works.",
-            timeline: [
-              { time: "7:30 AM", title: "Morning conditions update over the PA", copy: "The day starts with flexibility because conditions determine what becomes possible." },
-              { time: "10:00 AM", title: "Landing at Neko Harbor or Paradise Bay zodiac outing", copy: "Use the clearest weather window for the main chapter of the day." },
-              { time: "1:00 PM", title: "Warm lunch back on board after the landing", copy: "Return to the ship and let the outing settle in before the next move." },
-              { time: "3:30 PM", title: "Lemaire Channel pass or whale-watch continuation", copy: "Use the afternoon for one more weather-friendly continuation rather than forcing a rigid second agenda." },
-              { time: "7:30 PM", title: "Recap dinner and expedition notes in the lounge", copy: "Finish by letting the day’s observations become part of the memory." }
-            ]
-          },
-          {
-            title: "Scenic close",
-            rationale: "A final Antarctica day should stay broad, reflective, and weather-aware, with enough room to enjoy the landscape without forcing one more big move.",
-            highlight: "Channel and ice-view close",
-            timeShape: "Reflective scenic final day",
-            weather: "Let the final day stay flexible and observation-led rather than trying to top the main landing day.",
-            itemTitle: "Scenic passage + final reflections",
-            itemBody: "Use one more broad scenic passage, wildlife watch, and quieter close instead of forcing another major landing if conditions do not support it.",
-            fit: "It rounds out Antarctica with the kind of realism and grandeur the destination deserves.",
-            timeline: [
-              { time: "8:30 AM", title: "Slow scenic start through the Gerlache Strait", copy: "Begin with observation and patience rather than another rigid plan." },
-              { time: "11:30 AM", title: "Penguin colony watch or ice-channel continuation", copy: "Let the landscape and expedition conditions define the middle of the day." },
-              { time: "1:00 PM", title: "Lunch on board during the scenic passage", copy: "Keep the ship rhythm central because it is part of the place." },
-              { time: "4:00 PM", title: "Final deck watch or naturalist lecture", copy: "Use one quieter chapter to let the trip settle in." },
-              { time: "7:30 PM", title: "Final expedition dinner in the dining room", copy: "Finish with reflection rather than trying to force one more oversized payoff." }
-            ]
-          }
-        ]
       };
 
       return map[city.replace(/\s+/g, "")] || map[city] || buildGuideDrivenConcreteTemplates(city, areas);

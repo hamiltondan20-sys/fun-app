@@ -5,6 +5,26 @@ function normalizeLookupValue(value) {
       return value.toLowerCase().replace(/[^a-z0-9]/g, "");
     }
 
+    function updateDestinationTravelAlert() {
+      const alert = document.getElementById("destination-travel-alert");
+      if (!alert) return;
+      const destination = resolveCanonicalDestination(hbState.appState.destination || hbRefs.formBindings.destination?.value || "").trim();
+      const country = destination.includes(",") ? destination.split(",").slice(-1)[0].trim() : destination;
+      if (!country || !hbData.travelGuidelineCountries?.includes(country)) {
+        alert.classList.add("hidden");
+        alert.innerHTML = "";
+        return;
+      }
+
+      alert.classList.remove("hidden");
+      alert.innerHTML = `
+        <div class="flex flex-col gap-3 rounded-[18px] bg-warm px-3 py-3 ring-1 ring-warm-line sm:flex-row sm:items-center sm:justify-between">
+          <p class="flex items-start gap-2 text-sm leading-6 text-ink"><span class="material-symbols-outlined mt-0.5 text-primary" aria-hidden="true">warning</span><span>Safety, entry rules, and access can change. Check official guidance before you book or travel.</span></p>
+          <a class="inline-flex min-h-10 shrink-0 items-center justify-center rounded-full bg-primary px-4 py-2 text-center text-sm font-semibold text-white transition hover:brightness-95" href="${hbData.travelGuidelinesUrl}" target="_blank" rel="noreferrer noopener">Check the Most Recent Travel Guidelines</a>
+        </div>
+      `;
+    }
+
     function resolveCanonicalDestination(value) {
       const trimmed = value.trim();
       if (!trimmed) return trimmed;
@@ -97,6 +117,7 @@ function normalizeLookupValue(value) {
       const suggestionWrap = document.getElementById("destination-suggestions");
       if (!helper || !helperCopy || !suggestionWrap) return;
 
+      updateDestinationTravelAlert();
       const country = getCountryOnlySelection();
       if (!country) {
         helper.classList.add("hidden");
@@ -137,7 +158,7 @@ function normalizeLookupValue(value) {
       return Number.isFinite(days) && days > 0 ? days : 5;
     }
 
-    function getDestinationArtPreset(subject = "", accent = "#b94712") {
+    function getDestinationArtPreset(subject = "", accent = "#b94712", visualTheme = "") {
       const normalized = String(subject).toLowerCase();
       const base = {
         skyTop: accent,
@@ -442,12 +463,97 @@ function normalizeLookupValue(value) {
         };
       }
 
+      if (visualTheme === "water") {
+        return {
+          ...base,
+          skyTop: "#3f8198",
+          skyBottom: "#25546f",
+          motif: `
+            <circle cx="944" cy="154" r="84" fill="rgba(255,255,255,0.14)"/>
+            <path d="M0 604C156 568 300 580 430 614C562 648 698 704 840 686C978 668 1098 606 1200 596V800H0Z" fill="rgba(255,255,255,0.2)"/>
+            <path d="M0 704C174 668 326 674 460 706C598 738 724 764 900 728C1038 700 1126 664 1200 660V800H0Z" fill="rgba(12,23,36,0.22)"/>
+            <path d="M534 552L610 552L578 514Z" fill="rgba(255,255,255,0.72)"/>
+            <path d="M578 514V582" stroke="rgba(255,255,255,0.72)" stroke-width="8"/>
+          `
+        };
+      }
+
+      if (visualTheme === "nature") {
+        return {
+          ...base,
+          skyTop: "#688978",
+          skyBottom: "#315c68",
+          motif: `
+            <circle cx="944" cy="154" r="84" fill="rgba(255,255,255,0.14)"/>
+            <path d="M0 720L214 456L364 620L556 334L768 620L956 428L1200 700V800H0Z" fill="rgba(12,23,36,0.3)"/>
+            <path d="M0 752C164 716 324 706 480 728C648 752 788 772 950 736C1068 710 1148 694 1200 698V800H0Z" fill="rgba(255,255,255,0.18)"/>
+            <path d="M556 334L586 392H526Z" fill="rgba(255,255,255,0.76)"/>
+          `
+        };
+      }
+
+      if (visualTheme === "food") {
+        return {
+          ...base,
+          skyTop: "#a8644a",
+          skyBottom: "#365b73",
+          motif: `
+            <circle cx="944" cy="154" r="84" fill="rgba(255,255,255,0.14)"/>
+            <path d="M0 664C148 622 286 618 420 644C580 674 692 716 846 704C998 692 1096 644 1200 630V800H0Z" fill="rgba(255,255,255,0.17)"/>
+            <g transform="translate(404 464)">
+              <ellipse cx="196" cy="142" rx="188" ry="38" fill="rgba(12,23,36,0.28)"/>
+              <ellipse cx="196" cy="112" rx="154" ry="34" fill="rgba(255,255,255,0.76)"/>
+              <path d="M56 42H338C322 92 284 116 196 116C110 116 72 92 56 42Z" fill="rgba(255,255,255,0.68)"/>
+              <rect x="182" y="-36" width="28" height="78" rx="14" fill="rgba(255,255,255,0.64)"/>
+            </g>
+          `
+        };
+      }
+
+      if (visualTheme === "landmark") {
+        return {
+          ...base,
+          skyTop: "#8a664f",
+          skyBottom: "#3b5873",
+          motif: `
+            <circle cx="944" cy="154" r="84" fill="rgba(255,255,255,0.14)"/>
+            <g transform="translate(596 220)" fill="rgba(255,255,255,0.74)">
+              <path d="M0 0L108 70H-108Z"/>
+              <rect x="-92" y="66" width="184" height="22" rx="8"/>
+              <rect x="-72" y="88" width="144" height="234"/>
+              <rect x="-112" y="322" width="224" height="22" rx="8"/>
+              <rect x="-38" y="138" width="28" height="96" fill="rgba(12,23,36,0.24)"/>
+              <rect x="10" y="138" width="28" height="96" fill="rgba(12,23,36,0.24)"/>
+            </g>
+          `
+        };
+      }
+
+      if (visualTheme === "neighborhood") {
+        return {
+          ...base,
+          skyTop: "#6b7888",
+          skyBottom: "#3a5b72",
+          motif: `
+            <circle cx="944" cy="154" r="84" fill="rgba(255,255,255,0.14)"/>
+            <rect x="0" y="624" width="1200" height="176" fill="rgba(255,255,255,0.14)"/>
+            <g transform="translate(178 270)" fill="rgba(255,255,255,0.72)">
+              <rect x="0" y="126" width="112" height="258"/>
+              <rect x="138" y="62" width="142" height="322"/>
+              <rect x="306" y="168" width="104" height="216"/>
+              <rect x="438" y="18" width="164" height="366"/>
+              <rect x="632" y="112" width="124" height="272"/>
+            </g>
+          `
+        };
+      }
+
       return base;
     }
 
-    function buildDestinationFallbackArt(subject, accent = "#b94712") {
+    function buildDestinationFallbackArt(subject, accent = "#b94712", visualTheme = "") {
       const label = encodeURIComponent(subject || "Destination");
-      const preset = getDestinationArtPreset(subject, accent);
+      const preset = getDestinationArtPreset(subject, accent, visualTheme);
       const svg = `
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="${label}">
           <defs>
@@ -540,9 +646,9 @@ function normalizeLookupValue(value) {
       `;
     }
 
-    function buildEditorialCardArt(subject, title = "", copy = "", accent = "#2b5f8a", index = 0) {
+    function buildEditorialCardArt(subject, title = "", copy = "", accent = "#2b5f8a", index = 0, visualTheme = "") {
       const label = encodeURIComponent(`${subject || "Destination"} ${title}`.trim());
-      const preset = getDestinationArtPreset(subject, accent);
+      const preset = getDestinationArtPreset(subject, accent, visualTheme);
       const theme = getEditorialThemeDescriptor(title, copy);
       const overlay = getEditorialThemeOverlay(theme, index);
       const subtitle = encodeURIComponent(title || subject || "Editorial view");
@@ -569,8 +675,8 @@ function normalizeLookupValue(value) {
       return /loremflickr\.com/i.test(String(imageValue || ""));
     }
 
-    function resolvePrototypeImage(primaryImage, subject, accent = "#b94712") {
-      const fallback = buildDestinationFallbackArt(subject, accent);
+    function resolvePrototypeImage(primaryImage, subject, accent = "#b94712", visualTheme = "") {
+      const fallback = buildDestinationFallbackArt(subject, accent, visualTheme);
       if (!primaryImage) return fallback;
       const imageValue = String(primaryImage);
       if (imageValue.startsWith("./images/") || imageValue.startsWith("images/") || imageValue.startsWith("data:image/")) {
@@ -655,7 +761,7 @@ function normalizeLookupValue(value) {
         return {
           ...exact,
           overlay: hbData.heroOverlayByLocation?.[hbState.appState.destination] || "balanced",
-          image: resolvePrototypeImage(exact.image, exact.title || getCityName(), "#b94712")
+          image: resolvePrototypeImage(exact.image, exact.title || getCityName(), "#b94712", exact.visualTheme)
         };
       }
 
@@ -683,7 +789,7 @@ function normalizeLookupValue(value) {
         return {
           ...stored,
           overlay: hbData.heroOverlayByLocation?.[city] || "balanced",
-          image: resolvePrototypeImage(stored.image, city.split(",")[0], "#2b5f8a")
+          image: resolvePrototypeImage(stored.image, city.split(",")[0], "#2b5f8a", stored.visualTheme)
         };
       }
       return {

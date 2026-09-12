@@ -204,7 +204,7 @@ window.HB_DATA.cityGuideDetailData = {
         bestCoffee: ["Terres de Cafe", "KB Coffee Roasters", "Coutume Cafe"]
       },
       "Rome, Italy": {
-        bestAttractions: ["Colosseum", "Roman Forum", "Trastevere"],
+        bestAttractions: ["Colosseum", "Roman Forum", "Pantheon", "Trevi Fountain", "Vatican Museums", "St. Peter's Basilica", "Spanish Steps"],
         bestRestaurants: ["Roscioli", "Armando al Pantheon", "Da Enzo al 29"],
         bestBudget: ["Pantheon and piazza walks", "Trevi Fountain at night", "Street pizza and supplì"],
         bestLuxury: ["Dinner at La Pergola", "Private Vatican tour", "Luxury spa afternoon"],
