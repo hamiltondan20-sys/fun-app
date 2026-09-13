@@ -233,6 +233,18 @@ body.hb-content {
   font-size: 0.92rem;
 }
 
+.hb-city-list li .hb-index-name {
+  color: var(--hb-ink);
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.hb-city-list li .hb-index-status {
+  color: var(--hb-coral);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
 .hb-tip {
   margin-top: 2.2rem;
   border-left: 4px solid var(--hb-teal);

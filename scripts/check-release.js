@@ -164,14 +164,12 @@ cityGuides.forEach((guide) => {
   const title = String(guide.title || "").trim().toLowerCase();
   if (fact.toLowerCase().startsWith(`${title} works best when ${title}`)) failures.push(`Malformed destination fact: ${key}`);
   if (/\b(citys|doesnt|dont|cant|wont|isnt)\b/i.test(fact)) failures.push(`Awkward destination fact wording: ${key}`);
-  if (!locationSet.has(staticRoute(route))) failures.push(`Missing city sitemap URL: ${route}`);
-  checkGeneratedPage(route);
+  if (locationSet.has(staticRoute(route))) checkGeneratedPage(route);
 });
 
 Object.keys(countryGuides).forEach((country) => {
   const route = `/countries/${slugify(country)}/`;
-  if (!locationSet.has(staticRoute(route))) failures.push(`Missing country sitemap URL: ${route}`);
-  checkGeneratedPage(route);
+  if (locationSet.has(staticRoute(route))) checkGeneratedPage(route);
 });
 
 ["/", "/destinations/", "/countries/", "/faq/", "/contact/"].forEach((route) => {
@@ -187,8 +185,19 @@ const generatedCityDirs = fs.existsSync(path.join(root, "destinations"))
 const generatedCountryDirs = fs.existsSync(path.join(root, "countries"))
   ? fs.readdirSync(path.join(root, "countries"), { withFileTypes: true }).filter((entry) => entry.isDirectory()).length
   : 0;
-if (generatedCityDirs !== cityGuides.length) failures.push(`Generated city page count mismatch: ${generatedCityDirs} vs ${cityGuides.length}`);
-if (generatedCountryDirs !== Object.keys(countryGuides).length) failures.push(`Generated country page count mismatch: ${generatedCountryDirs} vs ${Object.keys(countryGuides).length}`);
+const citySitemapDirs = locations.filter((location) => location.startsWith(`${sitemapBase}/destinations/`) && location !== `${sitemapBase}/destinations/`).length;
+const countrySitemapDirs = locations.filter((location) => location.startsWith(`${sitemapBase}/countries/`) && location !== `${sitemapBase}/countries/`).length;
+if (generatedCityDirs !== citySitemapDirs) failures.push(`Generated city page count mismatch: ${generatedCityDirs} vs ${citySitemapDirs} sitemap pages`);
+if (generatedCountryDirs !== countrySitemapDirs) failures.push(`Generated country page count mismatch: ${generatedCountryDirs} vs ${countrySitemapDirs} sitemap pages`);
+
+const destinationSlugs = new Set(locations
+  .filter((location) => location.startsWith(`${sitemapBase}/destinations/`) && location !== `${sitemapBase}/destinations/`)
+  .map((location) => location.split("/").filter(Boolean).at(-1)));
+const countrySlugs = new Set(locations
+  .filter((location) => location.startsWith(`${sitemapBase}/countries/`) && location !== `${sitemapBase}/countries/`)
+  .map((location) => location.split("/").filter(Boolean).at(-1)));
+const duplicateSlugs = [...destinationSlugs].filter((slug) => countrySlugs.has(slug));
+if (duplicateSlugs.length) failures.push(`Sitemap contains duplicate destination and country slugs: ${duplicateSlugs.join(", ")}`);
 
 if (failures.length) {
   console.error(`Release check failed with ${failures.length} issue${failures.length === 1 ? "" : "s"}:`);
@@ -196,5 +205,5 @@ if (failures.length) {
   if (failures.length > 80) console.error(`- ${failures.length - 80} more issues omitted`);
   process.exitCode = 1;
 } else {
-  console.log(`Release check passed: ${cityGuides.length} city guides, ${Object.keys(countryGuides).length} country guides, ${locations.length} unique sitemap URLs.`);
+  console.log(`Release check passed: ${generatedCityDirs} city guides, ${generatedCountryDirs} country guides, ${locations.length} unique sitemap URLs.`);
 }

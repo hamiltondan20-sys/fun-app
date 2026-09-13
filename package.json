@@ -5,10 +5,10 @@
   "scripts": {
     "build:css": "tailwindcss -i ./src/input.css -o ./assets/app.css --minify",
     "watch:css": "tailwindcss -i ./src/input.css -o ./assets/app.css --watch",
-    "generate:pages": "node scripts/generate-pages.mjs --base=/fun-app --origin=https://hamiltondan20-sys.github.io --out=.",
+    "generate:pages": "node scripts/generate-pages.mjs --base=/fun-app --origin=https://hamiltondan20-sys.github.io --out=. --min-words=350",
     "extract:css": "node scripts/extract-inline-css.mjs",
-    "sitemap": "node scripts/generate-pages.mjs --base=/fun-app --origin=https://hamiltondan20-sys.github.io --out=.",
-    "check:release": "node scripts/generate-pages.mjs --base=/fun-app --origin=https://hamiltondan20-sys.github.io --out=. && node scripts/check-release.js"
+    "sitemap": "node scripts/generate-pages.mjs --base=/fun-app --origin=https://hamiltondan20-sys.github.io --out=. --min-words=350",
+    "check:release": "node scripts/generate-pages.mjs --base=/fun-app --origin=https://hamiltondan20-sys.github.io --out=. --min-words=350 && node scripts/check-release.js"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.10",
