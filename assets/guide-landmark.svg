@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+  <title>Landmark guide illustration</title>
+  <desc>A bold landmark silhouette against a warm evening sky.</desc>
+  <rect width="1200" height="600" fill="#f9dfbd"/>
+  <circle cx="958" cy="142" r="76" fill="#b95138"/>
+  <path d="M0 420h1200v180H0Z" fill="#176765"/>
+  <path d="M280 420 418 178h360l142 242Z" fill="#1d2930"/>
+  <path d="M440 420 489 248h218l53 172Z" fill="#f7c978"/>
+  <path d="M518 420V300h160v120Z" fill="#b95138"/>
+  <path d="M0 474c170-30 303-18 447 11 172 35 359 37 527-1 90-20 164-21 226-8v124H0Z" fill="#3f725e"/>
+</svg>

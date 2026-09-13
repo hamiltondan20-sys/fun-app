@@ -1,0 +1,17 @@
+{
+  "name": "Horizon Bound",
+  "short_name": "Horizon Bound",
+  "start_url": "/fun-app/plan/",
+  "scope": "/fun-app/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#176765",
+  "icons": [
+    {
+      "src": "/fun-app/assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

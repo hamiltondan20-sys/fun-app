@@ -14,6 +14,10 @@
   box-sizing: border-box;
 }
 
+.hidden {
+  display: none !important;
+}
+
 html {
   background: #ffffff;
 }
@@ -252,6 +256,54 @@ body.hb-content {
   padding: 1rem 1.2rem;
 }
 
+.hb-faq {
+  max-width: 72rem;
+  margin: 2.5rem 0 3rem;
+}
+
+.hb-faq h2 {
+  margin: 0 0 0.9rem;
+}
+
+.hb-faq-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.hb-faq details {
+  border: 1px solid var(--hb-line);
+  border-radius: 14px;
+  background: #ffffff;
+  padding: 1rem 1.1rem;
+}
+
+.hb-faq details[open] {
+  border-color: var(--hb-ocean);
+  box-shadow: 0 8px 22px rgba(25, 63, 67, 0.07);
+}
+
+.hb-faq summary {
+  cursor: pointer;
+  color: var(--hb-ink);
+  font-weight: 800;
+}
+
+.hb-faq summary::marker {
+  color: var(--hb-coral);
+}
+
+.hb-faq details p {
+  margin: 0.75rem 0 0;
+  color: var(--hb-muted);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.hb-faq details strong {
+  color: var(--hb-ink);
+}
+
 .hb-tip h2 {
   margin: 0 0 0.3rem;
   color: var(--hb-teal);
@@ -340,6 +392,66 @@ body.hb-content {
   background: var(--hb-warm);
 }
 
+.hb-convert .hb-cta-lg + .hb-cta-lg {
+  margin-left: 0.5rem;
+}
+
+.hb-analytics-consent {
+  position: fixed;
+  right: var(--hb-gutter);
+  bottom: 1rem;
+  left: var(--hb-gutter);
+  z-index: 20;
+  max-width: 34rem;
+  margin: 0 auto;
+  border: 1px solid var(--hb-line);
+  border-radius: 18px;
+  background: #ffffff;
+  padding: 1rem 1.15rem;
+  box-shadow: 0 16px 34px rgba(25, 63, 67, 0.16);
+}
+
+.hb-analytics-consent p {
+  margin: 0;
+  color: var(--hb-muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.hb-analytics-consent p + p {
+  margin-top: 0.3rem;
+}
+
+.hb-analytics-consent strong {
+  color: var(--hb-ink);
+}
+
+.hb-analytics-consent div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+.hb-analytics-consent button {
+  min-height: 2.4rem;
+  border: 1px solid var(--hb-line);
+  border-radius: 999px;
+  background: var(--hb-soft);
+  padding: 0.5rem 0.85rem;
+  color: var(--hb-ink);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.hb-analytics-consent button:last-child {
+  border-color: var(--hb-ocean);
+  background: var(--hb-ocean);
+  color: #ffffff;
+}
+
 .hb-site-footer {
   margin-top: 4rem;
   border-top: 1px solid var(--hb-line);
@@ -368,7 +480,8 @@ body.hb-content {
   }
 
   .hb-section ul,
-  .hb-cards {
+  .hb-cards,
+  .hb-faq-list {
     grid-template-columns: 1fr;
   }
 
@@ -628,6 +741,34 @@ body.hb-content {
   padding: 0.22rem 0;
   font-size: 0.95rem;
   line-height: 1.45;
+}
+
+.hb-place {
+  color: var(--hb-ink);
+  text-decoration: underline;
+  text-decoration-color: var(--hb-line);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.hb-place:hover,
+.hb-place:focus-visible {
+  color: var(--hb-coral);
+  text-decoration-color: currentColor;
+}
+
+.hb-place-icon {
+  display: inline-block;
+  margin-left: 0.25em;
+  color: var(--hb-muted);
+  font-size: 0.75em;
+  line-height: 1;
+  vertical-align: 0.15em;
+}
+
+.hb-place:hover .hb-place-icon,
+.hb-place:focus-visible .hb-place-icon {
+  color: var(--hb-coral);
 }
 
 .hb-related {

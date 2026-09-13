@@ -6,22 +6,224 @@ window.HB_DATA = window.HB_DATA || {};
   const cityName = (value) => String(value || "").split(",")[0].trim();
   const asList = (value) => Array.isArray(value) ? value.filter(Boolean).map((item) => String(item).trim()) : [];
   const uniqueList = (...lists) => [...new Set(lists.flatMap(asList))].filter(Boolean);
+  const comparable = (value) => String(value || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, "");
+  const countryAliases = {
+    turkiye: "Turkey",
+    republicofturkey: "Turkey",
+    czechrepublic: "Czechia",
+    unitedstatesofamerica: "United States",
+    usa: "United States",
+    us: "United States",
+    uae: "United Arab Emirates",
+    republicofkorea: "South Korea",
+    southkorea: "South Korea",
+    russianfederation: "Russia",
+    vietname: "Vietnam",
+    vietnamesocialistrepublic: "Vietnam",
+    burma: "Myanmar",
+    holland: "Netherlands",
+    england: "United Kingdom"
+  };
+  const normalizeCountryName = (value) => {
+    const raw = String(value || "").trim();
+    return countryAliases[comparable(raw)] || raw;
+  };
+  const normalizeCountryKey = (value) => comparable(normalizeCountryName(value));
+  const normalizeCityLabel = (value) => {
+    const raw = String(value || "").trim();
+    if (!raw || !raw.includes(",")) return raw;
+    const parts = raw.split(",").map((part) => part.trim()).filter(Boolean);
+    if (parts.length < 2) return raw;
+    const name = parts.slice(0, -1).join(", ");
+    const countries = parts.at(-1)
+      .split(/\s+and\s+|\s*&\s*/i)
+      .map(normalizeCountryName)
+      .filter(Boolean);
+    return countries.length ? `${name}, ${[...new Set(countries)].join(" and ")}` : raw;
+  };
+  const mergeValues = (primary, secondary) => {
+    if (primary === undefined || primary === null || primary === "") return secondary;
+    if (secondary === undefined || secondary === null || secondary === "") return primary;
+    if (Array.isArray(primary) && Array.isArray(secondary)) {
+      const merged = [];
+      const seen = new Set();
+      [...primary, ...secondary].forEach((item) => {
+        const key = Array.isArray(item)
+          ? comparable(item[0])
+          : item && typeof item === "object"
+            ? JSON.stringify(item)
+            : String(item);
+        if (!seen.has(key)) {
+          seen.add(key);
+          merged.push(item);
+        }
+      });
+      return merged;
+    }
+    if (primary && secondary && typeof primary === "object" && typeof secondary === "object") {
+      const merged = { ...primary };
+      Object.entries(secondary).forEach(([key, value]) => {
+        merged[key] = mergeValues(merged[key], value);
+      });
+      return merged;
+    }
+    return primary;
+  };
+  const mergeKeyedData = (source, keyNormalizer, valueNormalizer = (value) => value) => {
+    const merged = {};
+    Object.entries(source || {}).forEach(([key, value]) => {
+      const canonicalKey = keyNormalizer(key);
+      const normalizedValue = valueNormalizer(value, key, canonicalKey);
+      merged[canonicalKey] = mergeValues(merged[canonicalKey], normalizedValue);
+    });
+    return merged;
+  };
+  const normalizeCityRecord = (record) => {
+    const rawLabel = String(record?.city || record?.title || "").trim();
+    const label = normalizeCityLabel(rawLabel);
+    const country = normalizeCountryName(record?.country || label.split(",").at(-1));
+    return { ...record, city: label, country };
+  };
+  const normalizeLocationKey = (value) => {
+    const raw = String(value || "").trim();
+    if (raw.includes(",")) return normalizeCityLabel(raw);
+    const canonicalCountry = normalizeCountryName(raw);
+    const countryMatch = Object.keys(data.countryGuideData || {})
+      .find((country) => normalizeCountryKey(country) === normalizeCountryKey(canonicalCountry));
+    return countryMatch || raw;
+  };
+
+  const cityLabelsByName = new Map();
+
+  function rebuildDestinationAliases() {
+    const candidates = new Map();
+    const addCandidate = (alias, city) => {
+      const aliasKey = compact(alias);
+      const canonicalCity = normalizeCityLabel(city);
+      if (!aliasKey || !canonicalCity) return;
+      if (!candidates.has(aliasKey)) candidates.set(aliasKey, new Set());
+      candidates.get(aliasKey).add(canonicalCity);
+    };
+
+    Object.entries(data.destinationAliases || {}).forEach(([alias, value]) => addCandidate(alias, value));
+    (data.cityGuideData || []).forEach((record) => {
+      addCandidate(record.city, record.city);
+    });
+    Object.values(data.countrySuggestions || {}).flat().forEach((city) => {
+      addCandidate(city, city);
+    });
+
+    const aliases = {};
+    candidates.forEach((cities, alias) => {
+      if (cityLabelsByName.get(alias)?.size > 1) return;
+      if (cities.size === 1) aliases[alias] = [...cities][0];
+    });
+    cityLabelsByName.forEach((labels, nameKey) => {
+      if (labels.size !== 1) return;
+      const city = [...labels][0];
+      aliases[nameKey] = city;
+    });
+    data.destinationAliases = aliases;
+  }
+
+  function normalizeLoadedDestinationData() {
+    const rawCountryLabels = new Set([
+      ...Object.keys(data.countryGuideData || {}),
+      ...Object.keys(data.countryGuideCoverage || {}),
+      ...Object.keys(data.countryEditorialPageData || {}),
+      ...Object.keys(data.countrySuggestions || {})
+    ]);
+    data.countryAliases = { ...countryAliases };
+    data.normalizeCountryName = normalizeCountryName;
+    data.normalizeCityLabel = normalizeCityLabel;
+    data.countryGuideData = mergeKeyedData(data.countryGuideData, normalizeCountryName);
+    data.countryGuideCoverage = mergeKeyedData(data.countryGuideCoverage, normalizeCountryName);
+    data.countryEditorialPageData = mergeKeyedData(data.countryEditorialPageData, normalizeCountryName);
+
+    const normalizedSuggestions = {};
+    Object.entries(data.countrySuggestions || {}).forEach(([country, cities]) => {
+      const canonicalCountry = normalizeCountryName(country);
+      normalizedSuggestions[canonicalCountry] = uniqueList(
+        normalizedSuggestions[canonicalCountry],
+        asList(cities).map(normalizeCityLabel)
+      );
+    });
+    data.countrySuggestions = normalizedSuggestions;
+
+    const cityByKey = new Map();
+    (data.cityGuideData || []).forEach((record) => {
+      const normalized = normalizeCityRecord(record);
+      const existing = cityByKey.get(normalized.city);
+      cityByKey.set(normalized.city, existing
+        ? { ...mergeValues(existing, normalized), city: normalized.city, country: existing.country || normalized.country }
+        : normalized);
+    });
+    data.cityGuideData = [...cityByKey.values()];
+    const normalizeCityValue = (value) => {
+      if (!value || typeof value !== "object" || Array.isArray(value)) return value;
+      const normalized = { ...value };
+      if (normalized.country) normalized.country = normalizeCountryName(normalized.country);
+      if (normalized.title) normalized.title = normalizeCountryName(normalized.title);
+      return normalized;
+    };
+    data.cityGuideDetailData = mergeKeyedData(data.cityGuideDetailData, normalizeCityLabel);
+    data.cityEditorialPageData = mergeKeyedData(data.cityEditorialPageData, normalizeCityLabel, normalizeCityValue);
+    data.cityPlanningToolkitData = mergeKeyedData(data.cityPlanningToolkitData, normalizeCityLabel, normalizeCityValue);
+    data.destinationHeroData = mergeKeyedData(data.destinationHeroData, normalizeLocationKey, normalizeCityValue);
+    data.destinationCoverage = mergeKeyedData(data.destinationCoverage, normalizeCityLabel, normalizeCityValue);
+    data.heroOverlayByLocation = mergeKeyedData(data.heroOverlayByLocation, normalizeLocationKey);
+
+    const allCityLabels = [
+      ...data.cityGuideData.map((record) => record.city),
+      ...Object.values(data.countrySuggestions || {}).flat()
+    ];
+    cityLabelsByName.clear();
+    allCityLabels.forEach((label) => {
+      const key = comparable(cityName(label));
+      if (!cityLabelsByName.has(key)) cityLabelsByName.set(key, new Set());
+      cityLabelsByName.get(key).add(label);
+    });
+    const normalizedFacts = {};
+    Object.entries(data.destinationFacts || {}).forEach(([key, value]) => {
+      const canonicalKey = key.includes(",") ? normalizeCityLabel(key) : key;
+      if (canonicalKey.includes(",") || cityLabelsByName.get(comparable(key))?.size === 1) {
+        normalizedFacts[canonicalKey] = mergeValues(normalizedFacts[canonicalKey], value);
+      }
+    });
+    data.cityGuideData.forEach((record) => {
+      if (record.tip) normalizedFacts[record.city] = record.tip;
+    });
+    data.destinationFacts = normalizedFacts;
+    rebuildDestinationAliases();
+    data.countryNormalizationReport = {
+      labels: [...rawCountryLabels],
+      canonicalCountries: Object.keys(data.countryGuideData),
+      duplicateCountryKeys: [...new Set([...rawCountryLabels].map(normalizeCountryKey))]
+        .filter((key) => [...rawCountryLabels].filter((label) => normalizeCountryKey(label) === key).length > 1)
+    };
+  }
   const isPlaceholderCopy = (value) => {
     const text = String(value || "").trim().toLowerCase();
     return !text || text === "a visual starting point" || text.startsWith("a visual starting point for");
   };
   const getCountryGuide = (country) => {
     const guides = data.countryGuideData || {};
-    if (guides[country]) return guides[country];
-    if (country === "Turkey") return guides.Turkey || guides["Türkiye"] || {};
-    if (country === "Türkiye") return guides["Türkiye"] || guides.Turkey || {};
-    return {};
+    return guides[normalizeCountryName(country)] || {};
   };
   const getAreas = (city, name, guide, visualTheme = "neighborhood") => {
     const getAreaSet = window.HB_TRIP_HELPERS?.getAreaSet;
-    const helperAreas = getAreaSet ? uniqueList(getAreaSet(name), getAreaSet(city)) : [];
+    const isPlaceholderArea = (area) => /^(your main base in|a nearby area|a flexible day-trip area)\b/i.test(String(area).trim());
     const mapAreas = Object.keys(data.destinationMapData?.[name]?.areas || {});
-    const guideAreas = asList(guide?.areas);
+    const guideAreas = asList(guide?.areas)
+      .filter((area) => !isPlaceholderArea(area));
+    const namedHelperAreas = getAreaSet ? uniqueList(getAreaSet(name)) : [];
+    const helperAreas = getAreaSet ? uniqueList(namedHelperAreas, getAreaSet(city)) : [];
+    const hasSpecificAreas = [...guideAreas, ...mapAreas, ...namedHelperAreas]
+      .some((area) => !isPlaceholderArea(area));
     const fallbackAreaSets = {
       water: ["Waterfront or shoreline", "Old town or harbor", "Local market district"],
       nature: ["Main base", "Scenic area", "Local village or trailhead"],
@@ -32,6 +234,7 @@ window.HB_DATA = window.HB_DATA || {};
     const fallbackAreas = fallbackAreaSets[visualTheme] || fallbackAreaSets.neighborhood;
     const genericNatureAreas = /^(city center|historic area|waterfront or market district|old town|riverside)$/i;
     const preferredAreas = [...guideAreas, ...mapAreas, ...helperAreas]
+      .filter((area) => !hasSpecificAreas || !isPlaceholderArea(area))
       .filter((area) => visualTheme !== "nature" || !genericNatureAreas.test(area));
     return uniqueList(preferredAreas, fallbackAreas).slice(0, 4);
   };
@@ -62,13 +265,13 @@ window.HB_DATA = window.HB_DATA || {};
     if (/history|historic|heritage|old|palace|temple|museum|architecture|cathedral|roman|mughal|silk road|craft|medina|walls|castle|fort/.test(value)) return "landmark";
     return "neighborhood";
   };
-  const buildExpandedContent = ({ city, country, name, guide, hero }) => {
+  const buildExpandedContent = ({ city, country, name, guide, hero, existingFact = "" }) => {
     const countryGuide = getCountryGuide(country);
     const countryBestFor = String(countryGuide.cards?.[0]?.[1] || "local highlights and practical exploring").replace(/\.$/, "").toLowerCase();
     const countryTiming = String(countryGuide.cards?.[2]?.[1] || "Build the route around the season, local opening times, and the activities that matter most to you").replace(/\.$/, "");
     const heroCopy = isPlaceholderCopy(hero?.copy) ? "" : String(hero.copy).trim();
-    const existingFact = String(data.destinationFacts?.[name] || data.destinationFacts?.[city] || "").trim();
-    const contextText = `${heroCopy} ${existingFact}`.toLowerCase();
+    const normalizedFact = String(existingFact || "").trim();
+    const contextText = `${heroCopy} ${normalizedFact}`.toLowerCase();
     const visualTheme = getVisualTheme(contextText.trim() || countryBestFor);
     const areas = getAreas(city, name, guide, visualTheme);
     const areaOne = areas[0] || "City center";
@@ -112,8 +315,8 @@ window.HB_DATA = window.HB_DATA || {};
       asList(guide?.highlights),
       fallbackActivities[visualTheme] || fallbackActivities.neighborhood
     ).slice(0, 6);
-    const reasonToGo = heroCopy || existingFact || `${name} is a strong fit for ${countryBestFor}, with ${areaOne}, ${areaTwo}, and ${areaThree} giving the trip a clear starting shape.`;
-    const planningTip = existingFact || `${name} works best when the trip stays focused around ${areaOne} and ${areaTwo}, with enough room for the local food and experiences that make ${name} feel different from a checklist stop.`;
+    const reasonToGo = heroCopy || normalizedFact || `${name} is a strong fit for ${countryBestFor}, with ${areaOne}, ${areaTwo}, and ${areaThree} giving the trip a clear starting shape.`;
+    const planningTip = normalizedFact || `${name} works best when the trip stays focused around ${areaOne} and ${areaTwo}, with enough room for the local food and experiences that make ${name} feel different from a checklist stop.`;
     const foodThemes = {
       water: [`Fresh seafood or local catch near ${areaOne}`, `A waterfront market in ${areaTwo}`, `A relaxed meal near the shore`, `A local specialty from ${country}`, `An easy lunch between ${attractionItems[0]} and ${attractionItems[1]}`, `A sunset dinner with a view`],
       nature: [`A regional meal near ${areaOne}`, `A lodge, village, or trailhead dinner`, `A local specialty from ${country}`, `A simple lunch between outdoor stops`, `A warm drink after a day outside`, `A meal with a view of the landscape`],
@@ -195,6 +398,17 @@ window.HB_DATA = window.HB_DATA || {};
   data.destinationHeroData = data.destinationHeroData || {};
   data.destinationAliases = data.destinationAliases || {};
 
+  normalizeLoadedDestinationData();
+
+  const existingFactFor = (city, name, guide) => {
+    const direct = String(data.destinationFacts?.[city] || "").trim();
+    if (direct) return direct;
+    const guideTip = String(guide?.tip || "").trim();
+    if (guideTip) return guideTip;
+    const uniqueCity = cityLabelsByName.get(comparable(name));
+    return uniqueCity?.size === 1 ? String(data.destinationFacts?.[name] || "").trim() : "";
+  };
+
   const allSuggestions = Object.entries(data.countrySuggestions || {}).flatMap(([country, cities]) => cities.map((city) => ({ country, city })));
 
   allSuggestions.forEach(({ country, city }) => {
@@ -212,13 +426,13 @@ window.HB_DATA = window.HB_DATA || {};
       return;
     }
 
-    const expanded = buildExpandedContent({ city, country, name, guide: existingGuide, hero: data.destinationHeroData[city] });
+    const existingFact = existingFactFor(city, name, existingGuide);
+    const expanded = buildExpandedContent({ city, country, name, guide: existingGuide, hero: data.destinationHeroData[city], existingFact });
     if (existingGuide) Object.assign(existingGuide, expanded.guide);
     else data.cityGuideData.push(expanded.guide);
     data.cityGuideDetailData[city] = expanded.detail;
     data.cityPlanningToolkitData[city] = expanded.toolkit;
-    data.destinationFacts[name] = data.destinationFacts[name] || expanded.reasonToGo;
-    data.destinationAliases[compact(name)] = city;
+    data.destinationFacts[city] = data.destinationFacts[city] || expanded.reasonToGo;
     data.destinationAliases[compact(city)] = city;
     data.destinationHeroData[city] = {
       ...data.destinationHeroData[city],
@@ -229,12 +443,19 @@ window.HB_DATA = window.HB_DATA || {};
     data.destinationCoverage[city] = { status: "expanded", contentTier: "generated", country, title: name, needsEditorialReview: true };
   });
 
+  rebuildDestinationAliases();
+
   const knownCityKeys = () => new Set((data.cityGuideData || []).map((item) => item.city));
   const resolveDestination = (value) => {
     const input = String(value || "").trim();
     if (!input) return { input, canonical: "", covered: false, kind: "unknown", suggestions: [] };
     const aliases = data.destinationAliases || {};
-    const canonical = aliases[compact(input)] || input;
+    const inputKey = compact(input);
+    const canonical = aliases[inputKey] || normalizeCountryName(input);
+    const ambiguousCities = cityLabelsByName.get(inputKey);
+    if (!aliases[inputKey] && ambiguousCities?.size > 1) {
+      return { input, canonical: input, covered: false, kind: "ambiguous", suggestions: [...ambiguousCities].slice(0, 6) };
+    }
     const cities = knownCityKeys();
     if (cities.has(canonical)) return { input, canonical, covered: true, kind: "city", suggestions: [] };
     if (data.countrySuggestions?.[canonical] || data.countryGuideData?.[canonical]) {
@@ -260,11 +481,18 @@ window.HB_DATA = window.HB_DATA || {};
     banner.setAttribute("role", "status");
     const title = document.createElement("p");
     title.className = "hb-coverage-title";
-    title.textContent = `No guide data for ${verdict.canonical || "that destination"} yet`;
+    const ambiguous = verdict.kind === "ambiguous";
+    title.textContent = ambiguous
+      ? `Choose a country for ${verdict.canonical || "that destination"}`
+      : `No guide data for ${verdict.canonical || "that destination"} yet`;
     const copy = document.createElement("p");
     copy.className = "hb-coverage-copy";
-    const nearest = verdict.suggestions.length ? ` Closest guides we have: ${verdict.suggestions.slice(0, 3).join(", ")}.` : "";
-    copy.textContent = `We can still build the dates, pacing, and shape of the trip, but places and neighborhood ideas will be general until local guide content is available.${nearest}`;
+    if (ambiguous) {
+      copy.textContent = `There is more than one place with that name. Choose a city and country so we can use the right local ideas in your plan: ${verdict.suggestions.join(", ")}.`;
+    } else {
+      const nearest = verdict.suggestions.length ? ` Closest guides we have: ${verdict.suggestions.slice(0, 3).join(", ")}.` : "";
+      copy.textContent = `We can still build the dates, pacing, and shape of the trip, but places and neighborhood ideas will be general until local guide content is available.${nearest}`;
+    }
     banner.append(title, copy);
     mount.prepend(banner);
   }
@@ -272,7 +500,9 @@ window.HB_DATA = window.HB_DATA || {};
   window.HB_COVERAGE = {
     resolveDestination,
     isCovered: (value) => resolveDestination(value).covered,
-    renderCoverageBanner
+    renderCoverageBanner,
+    normalizeCountryName,
+    normalizeCityLabel
   };
 
   if (typeof document !== "undefined") {

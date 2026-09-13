@@ -746,10 +746,23 @@ function updatePrimaryCta() {
         && end >= start;
       const adults = Number(hbState.appState.adults || 0);
       const destination = String(hbState.appState.destination || hbRefs.formBindings.destination?.value || "").trim();
+      const destinationVerdict = window.HB_COVERAGE?.resolveDestination?.(destination);
+      const destinationIsAmbiguous = destinationVerdict?.kind === "ambiguous";
       const hasStay = Boolean(hbState.appState.hotelName || hbState.appState.hotelArea);
       const flightReady = hbState.appState.flightMode !== "have-flights"
         || Boolean(hbState.appState.arrivalFlight || hbState.appState.departureFlight || hbState.appState.flightNumber || hbState.appState.flightAirline);
       const required = [
+        {
+          id: "destination-choice",
+          title: "Specific destination",
+          ready: !destinationIsAmbiguous,
+          level: "required",
+          panel: "build-panel",
+          target: "destination-input",
+          fixLabel: "Choose a city",
+          readyCopy: "The place is specific enough to plan.",
+          missingCopy: `We found more than one place named ${destination}. Choose the city and country you mean.`
+        },
         {
           id: "destination",
           title: "Destination",
@@ -906,35 +919,35 @@ function updatePrimaryCta() {
     };
     const routeMeta = {
       "": {
-        title: "Horizon Bound | Build Your Trip",
+        title: "The Fullest Life | Build Your Trip",
         description: "Build a vacation around the places, pace, food, and experiences you care about."
       },
       explore: {
-        title: "Explore Vacation Ideas | Horizon Bound",
+        title: "Explore Vacation Ideas | The Fullest Life",
         description: "Find destination ideas, sample trips, and travel inspiration before you start planning."
       },
       "find-a-destination": {
-        title: "Find a Destination | Horizon Bound",
+        title: "Find a Destination | The Fullest Life",
         description: "Choose a country and compare cities that fit the kind of vacation you want."
       },
       "city-guides": {
-        title: "City Guides | Horizon Bound",
+        title: "City Guides | The Fullest Life",
         description: "Explore practical city guides with things to do, food ideas, neighborhoods, and sample trip inspiration."
       },
       "country-guides": {
-        title: "Country Guides | Horizon Bound",
+        title: "Country Guides | The Fullest Life",
         description: "Compare countries and find the cities that best match the vacation you have in mind."
       },
       faq: {
-        title: "Travel Planning Questions | Horizon Bound",
-        description: "Find answers about building, saving, adjusting, and using a Horizon Bound vacation plan."
+        title: "Travel Planning Questions | The Fullest Life",
+        description: "Find answers about building, saving, adjusting, and using a The Fullest Life Travel vacation plan."
       },
       contact: {
-        title: "Contact Horizon Bound | Horizon Bound",
-        description: "Send feedback, report an issue, or share an idea for improving Horizon Bound."
+        title: "Contact | The Fullest Life",
+        description: "Send feedback, report an issue, or share an idea for improving The Fullest Life Travel."
       },
       build: {
-        title: "Build Your Trip | Horizon Bound",
+        title: "Build Your Trip | The Fullest Life",
         description: "Start with your destination, dates, travelers, budget, and practical trip details."
       }
     };
@@ -965,11 +978,11 @@ function updatePrimaryCta() {
           const citySummary = guide?.summary || `Plan a trip to ${cityTitle} with practical ideas for what to see, eat, and do.`;
           metadata = category
             ? {
-                title: `${category} in ${cityTitle} | Horizon Bound`,
+                title: `${category} in ${cityTitle} | The Fullest Life`,
                 description: `Explore ${category.toLowerCase()} in ${cityTitle}, with practical ideas to help shape a trip that fits your time and travel style.`
               }
             : {
-                title: `${cityTitle} City Guide | Horizon Bound`,
+                title: `${cityTitle} City Guide | The Fullest Life`,
                 description: `${citySummary} Explore things to do, food ideas, neighborhoods, and sample trip inspiration.`
               };
         }
@@ -980,7 +993,7 @@ function updatePrimaryCta() {
         const guide = country ? hbData.countryGuideData[country] : null;
         if (country) {
           metadata = {
-            title: `${country} Travel Guide | Horizon Bound`,
+            title: `${country} Travel Guide | The Fullest Life`,
             description: `${guide?.summary || `Explore ${country} with city ideas, practical planning guidance, and inspiration for your next trip.`} Compare cities and find the right place to start.`
           };
         }
@@ -1000,11 +1013,16 @@ function updatePrimaryCta() {
       if (!requested || !destinationInput) return;
 
       const verdict = window.HB_COVERAGE?.resolveDestination?.(requested);
+      if (verdict?.kind === "unknown") {
+        window.HB_COVERAGE?.renderCoverageBanner?.(verdict, "#build-panel > div");
+        return;
+      }
       const canonical = verdict?.canonical || hbUtils.resolveCanonicalDestination(requested);
       if (!canonical) return;
 
       destinationInput.value = canonical;
       hbState.appState.destination = canonical;
+      if (verdict) window.HB_COVERAGE?.renderCoverageBanner?.(verdict, "#build-panel > div");
     }
 
     function renderPanelContent(targetId) {
@@ -1507,7 +1525,7 @@ function updatePrimaryCta() {
       renderPanelContent(targetId);
 
       if (!['editorial-guide-panel', 'editorial-country-panel'].includes(targetId)) {
-        document.title = 'Horizon Bound | Build Your Trip';
+        document.title = 'The Fullest Life | Build Your Trip';
       }
 
       updateRouteMetadata(getRouteForPanel(targetId));

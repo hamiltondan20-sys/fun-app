@@ -191,7 +191,7 @@ async function hydrateCityGuidePhoto(city, guide) {
 }
 
 function normalizeLookupValue(value) {
-      return String(value || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+      return String(value || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]/g, "");
     }
 
     const resolveCanonicalDestination = hbUtils.resolveCanonicalDestination;
@@ -1038,7 +1038,7 @@ function renderDestinationHero(targetPrefix) {
         "Bangkok, Thailand",
         "Barcelona, Spain",
         "Lisbon, Portugal",
-        "Istanbul, Türkiye",
+        "Istanbul, Turkey",
         "Sydney, Australia"
       ].map((city) => hbData.cityGuideData.find((item) => item.city === city)).filter(Boolean);
 
@@ -2380,7 +2380,7 @@ function renderDestinationHero(targetPrefix) {
       applyHeroOverlay(image.closest(".editorial-hero-media"), country, hero.overlay || "balanced");
       title.textContent = editorial?.hero?.title ? `${editorial.hero.title} travel guide` : `${country} travel guide`;
       summary.textContent = humanizeGuideCopy(editorial?.dek || guide.summary);
-      document.title = `${country} Travel Guide | Horizon Bound`;
+      document.title = `${country} Travel Guide | The Fullest Life`;
       intro.innerHTML = (editorial?.intro || [
         `${country} is easier to choose when you get a feel for the country before settling on one city. That can be the difference between a trip that flows and one that feels like a list of disconnected stops.`,
         `This page gives a broader look at ${country}: what it is best known for, what stands out across the country, and which cities make the best starting points when you are ready to narrow it down.`
@@ -2524,8 +2524,8 @@ function renderDestinationHero(targetPrefix) {
         ? getSectionIntro(city, activeCategoryLabel)
         : getEditorialDek(city, guide);
       document.title = activeCategoryLabel
-        ? `${activeCategoryLabel} in ${guide.title} | Horizon Bound`
-        : `${guide.title} City Guide | Horizon Bound`;
+        ? `${activeCategoryLabel} in ${guide.title} | The Fullest Life`
+        : `${guide.title} City Guide | The Fullest Life`;
       heroImage.src = hero.image;
       heroImage.alt = `${guide.title} destination hero`;
       applyHeroOverlay(heroImage.closest(".editorial-hero-media"), city, hero.overlay || "balanced");

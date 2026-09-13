@@ -15,6 +15,7 @@ import path from "node:path";
 import vm from "node:vm";
 import { execSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
+import { classifyItem, linkItem } from "./place-links.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const arg = (name, fallback) => {
@@ -27,6 +28,10 @@ const OUT = path.resolve(arg("out", ROOT));
 const ORIGIN = String(arg("origin", "https://hamiltondan20-sys.github.io")).replace(/\/$/, "");
 const TIER1_ONLY = hasFlag("tier1-only");
 const DRY_RUN = hasFlag("dry-run");
+const requestedMaxPlaceholder = Number(arg("max-placeholder", "0.2"));
+const MAX_PLACEHOLDER = Number.isFinite(requestedMaxPlaceholder)
+  ? Math.min(Math.max(requestedMaxPlaceholder, 0), 1)
+  : 0.2;
 const requestedMinWords = Number(arg("min-words", "350"));
 const MIN_WORDS = Number.isFinite(requestedMinWords) && requestedMinWords > 0
   ? Math.floor(requestedMinWords)
@@ -53,6 +58,9 @@ for (const relative of dataFiles) {
 
 const DATA = globalThis.window.HB_DATA || {};
 const HELPERS = globalThis.window.HB_TRIP_HELPERS || {};
+const normalizeCountryName = typeof DATA.normalizeCountryName === "function"
+  ? DATA.normalizeCountryName
+  : (value) => String(value || "").trim();
 const CLUSTERS = [
   {
     id: "see",
@@ -151,10 +159,9 @@ const slugify = (value) => String(value || "")
 const cityName = (record) => String(record.title || record.city || "").split(",")[0].trim();
 const cityCountries = (record) => String(record.city || "")
   .split(",")
-  .slice(1)
-  .join(",")
+  .at(-1)
   .split(/\s+and\s+|\s*&\s*/i)
-  .map((value) => value.trim())
+  .map((value) => normalizeCountryName(value.trim()))
   .filter(Boolean);
 
 const esc = (value) => String(value ?? "")
@@ -173,6 +180,44 @@ const clamp = (value, limit = 155) => {
 const url = (route) => `${BASE}${route}`;
 const absolute = (route) => `${ORIGIN}${BASE}${route}`;
 const jsonld = (value) => `<script type="application/ld+json">${JSON.stringify(value).replace(/</g, "\\u003c")}</script>`;
+const FALLBACK_HERO = {
+  city: absolute("/assets/guide-city.svg"),
+  region: absolute("/assets/guide-region.svg"),
+  landmark: absolute("/assets/guide-landmark.svg")
+};
+const FALLBACK_OG_IMAGE = {
+  city: absolute("/assets/guide-city.png"),
+  region: absolute("/assets/guide-region.png"),
+  landmark: absolute("/assets/guide-landmark.png")
+};
+const DEFAULT_OG_IMAGE = absolute("/assets/guide-country.png");
+
+/**
+ * Toolkit values that are grammatically fine but answer nothing. They contain
+ * no template variables, so classifyItem() does not catch them. An FAQ entry
+ * whose answer is filler is worse than no FAQ entry, so drop the Q&A and keep
+ * whatever else the page has.
+ *
+ * Add to this list when a new generic string shows up; do not replace these
+ * answers with invented facts.
+ */
+const NON_ANSWER_VALUES = [
+  "Choose the clearest, most comfortable season",
+  "Group the day by area",
+  "Walkable neighborhood clusters with planned day-trip transfers",
+  "Match the season to your main plans"
+];
+
+const isNonAnswer = (entry) =>
+  NON_ANSWER_VALUES.some((phrase) => String(entry.value || "").includes(phrase));
+
+function toolkitQuestion(cityName, label) {
+  if (label === "When it works best") return `When is the best time to visit ${cityName}?`;
+  if (label === "Where to stay") return `Where should I stay in ${cityName}?`;
+  if (label === "Getting around") return `How do I get around ${cityName}?`;
+  if (label === "Book early") return `What should I book in advance for ${cityName}?`;
+  return `${label} for ${cityName}`;
+}
 
 const cityOverrides = {
   "Egyptian Pyramids and Valley of the Kings, Egypt": "egyptian-pyramids",
@@ -185,8 +230,69 @@ const cityOverrides = {
   "Antarctic Peninsula": "antarctic-peninsula"
 };
 
-const rawCities = Array.isArray(DATA.cityGuideData) ? DATA.cityGuideData : [];
-const usedSlugs = new Set();
+const MANUAL_MERGES = new Map([
+  ["Guilin and Li River, China", "Guilin, China"]
+]);
+
+const mergeSourceValues = (left, right) => {
+  if (left == null) return right;
+  if (right == null) return left;
+  if (Array.isArray(left) && Array.isArray(right)) return [...new Set([...left, ...right])];
+  if (typeof left === "object" && typeof right === "object") {
+    const merged = { ...left };
+    for (const [key, value] of Object.entries(right)) {
+      merged[key] = key in merged ? mergeSourceValues(merged[key], value) : value;
+    }
+    return merged;
+  }
+  return left;
+};
+
+const recordScore = (record) => {
+  const detail = DATA.cityGuideDetailData?.[record.city] || {};
+  const itemCount = Object.values(detail)
+    .filter(Array.isArray)
+    .reduce((total, items) => total + items.length, 0);
+  return itemCount
+    + (record.summary ? 20 : 0)
+    + (Array.isArray(record.highlights) ? record.highlights.length * 2 : 0)
+    + (DATA.cityEditorialPageData?.[record.city] ? 100 : 0);
+};
+
+function foldDuplicateRecords(records) {
+  const byKey = new Map();
+  for (const record of records) {
+    const original = String(record.city || record.title || "");
+    const key = MANUAL_MERGES.get(original) || original;
+    const existing = byKey.get(key);
+    if (!existing) {
+      byKey.set(key, { ...record, city: key, __sources: [original] });
+      continue;
+    }
+    const winner = recordScore(record) > recordScore(existing) ? record : existing;
+    byKey.set(key, {
+      ...winner,
+      city: key,
+      highlights: mergeSourceValues(existing.highlights, record.highlights) || [],
+      areas: mergeSourceValues(existing.areas, record.areas) || [],
+      __sources: [...existing.__sources, original]
+    });
+    console.log(`  merged duplicate city record: ${original} -> ${key}`);
+  }
+  return [...byKey.values()];
+}
+
+function pickBySource(map, record) {
+  let merged = null;
+  for (const source of record.__sources || [record.city]) {
+    const value = map?.[source];
+    if (value != null) merged = mergeSourceValues(merged, value);
+  }
+  return merged || map?.[record.city] || null;
+}
+
+const rawCities = foldDuplicateRecords(Array.isArray(DATA.cityGuideData) ? DATA.cityGuideData : []);
+const usedSlugs = new Map();
 const cities = rawCities.map((record) => {
   const key = String(record.city || record.title || "");
   const name = cityName(record);
@@ -194,12 +300,17 @@ const cities = rawCities.map((record) => {
   const baseSlug = cityOverrides[key] || slugify(name);
   let slug = baseSlug || "destination";
   if (usedSlugs.has(slug)) {
-    slug = `${baseSlug}-${slugify(countries[0] || "travel")}`;
+    const qualifiedSlug = slugify(`${name} ${countries.join(" ")}`) || `${baseSlug}-travel`;
+    if (usedSlugs.has(qualifiedSlug)) {
+      throw new Error(`Destination route collision for "${key}". The route "${qualifiedSlug}" is already assigned to "${usedSlugs.get(qualifiedSlug)}".`);
+    }
+    slug = qualifiedSlug;
   }
-  let suffix = 2;
-  while (usedSlugs.has(slug)) slug = `${baseSlug}-${suffix++}`;
-  usedSlugs.add(slug);
-  const detail = DATA.cityGuideDetailData?.[key] || {};
+  if (usedSlugs.has(slug)) {
+    throw new Error(`Destination route collision for "${key}". The route "${slug}" is already assigned to "${usedSlugs.get(slug)}".`);
+  }
+  usedSlugs.set(slug, key);
+  const detail = pickBySource(DATA.cityGuideDetailData, record) || {};
   const clusters = CLUSTERS.map((cluster) => ({
     id: cluster.id,
     heading: cluster.heading(name),
@@ -213,8 +324,15 @@ const cities = rawCities.map((record) => {
       }))
       .filter((block) => block.items.length)
   })).filter((cluster) => cluster.blocks.length);
-  const editorial = DATA.cityEditorialPageData?.[key] || null;
-  const hero = DATA.destinationHeroData?.[key] || null;
+  const editorial = pickBySource(DATA.cityEditorialPageData, record);
+  const hero = pickBySource(DATA.destinationHeroData, record);
+  const planningToolkit = pickBySource(DATA.cityPlanningToolkitData, record);
+  const cleanPlanningToolkit = Array.isArray(planningToolkit)
+    ? planningToolkit
+        .filter((entry) => entry && entry.label && entry.value && entry.copy)
+        .filter((entry) => ![entry.value, entry.copy].some((value) => classifyItem(value).kind === "placeholder"))
+        .filter((entry) => !isNonAnswer(entry))
+    : [];
   return {
     key,
     name,
@@ -228,6 +346,7 @@ const cities = rawCities.map((record) => {
     highlights: Array.isArray(record.highlights) ? record.highlights.filter(Boolean).map(String) : [],
     editorial,
     hero,
+    planningToolkit: cleanPlanningToolkit,
     clusters,
     day: sampleDay(name)
   };
@@ -246,28 +365,34 @@ const countries = Object.entries(DATA.countryGuideData || {})
 const pages = [];
 let publishedCitySlugs = new Set();
 
-function pageHead({ title, description, canonical, image, schema = [], noindex = false }) {
+function pageHead({ title, description, canonical, image = "", socialImage = "", schema = [], noindex = false }) {
+  const previewImage = socialImage || image || DEFAULT_OG_IMAGE;
   return `<meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#176765" />
   <title>${esc(title)}</title>
   <meta name="description" content="${esc(description)}" />
   <link rel="canonical" href="${esc(canonical)}" />
   <meta name="robots" content="${noindex ? "noindex, follow" : "index, follow, max-image-preview:large"}" />
   <meta property="og:type" content="article" />
-  <meta property="og:site_name" content="Horizon Bound" />
+  <meta property="og:site_name" content="The Fullest Life Travel" />
   <meta property="og:title" content="${esc(title)}" />
   <meta property="og:description" content="${esc(description)}" />
   <meta property="og:url" content="${esc(canonical)}" />
-  ${image ? `<meta property="og:image" content="${esc(image)}" />` : ""}
-  <meta name="twitter:card" content="${image ? "summary_large_image" : "summary"}" />
+  <meta property="og:image" content="${esc(previewImage)}" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="${esc(title)}" />
   <meta name="twitter:description" content="${esc(description)}" />
-  ${image ? `<meta name="twitter:image" content="${esc(image)}" />` : ""}
+  <meta name="twitter:image" content="${esc(previewImage)}" />
+  <link rel="icon" href="${url("/assets/favicon.svg")}" type="image/svg+xml" />
+  <link rel="manifest" href="${url("/manifest.webmanifest")}" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" />
   <link rel="stylesheet" href="${url("/assets/app.css")}" />
   <link rel="stylesheet" href="${url("/assets/content.css")}" />
+  <script defer src="${url("/scripts/site-config.js")}?v=20260913a"></script>
+  <script defer src="${url("/scripts/app-analytics.js")}?v=20260913b"></script>
   ${schema.map(jsonld).join("\n  ")}`;
 }
 
@@ -296,7 +421,7 @@ function shell({ headHtml, breadcrumbs, body }) {
 <body class="hb-content">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="hb-site-header">
-    <a class="hb-brand" href="${url("/")}">Horizon Bound</a>
+    <a class="hb-brand" href="${url("/")}">The Fullest Life Travel</a>
     <nav aria-label="Primary">
       <a href="${url("/destinations/")}">Destinations</a>
       <a href="${url("/countries/")}">Countries</a>
@@ -307,8 +432,16 @@ function shell({ headHtml, breadcrumbs, body }) {
   <main id="main">
 ${body}
   </main>
+  <aside id="analytics-consent" class="hb-analytics-consent hidden" aria-label="Analytics choices">
+    <p><strong>Help us improve trip planning?</strong></p>
+    <p>Optional usage data helps us see which parts of the site need work. Your trip details are not included.</p>
+    <div>
+      <button id="analytics-decline" type="button">Not now</button>
+      <button id="analytics-accept" type="button">Allow analytics</button>
+    </div>
+  </aside>
   <footer class="hb-site-footer">
-    <p>Horizon Bound | <a href="${url("/faq/")}">FAQ</a> | <a href="${url("/contact/")}">Contact</a></p>
+    <p>The Fullest Life Travel | <a href="${url("/faq/")}">FAQ</a> | <a href="${url("/contact/")}">Contact</a></p>
   </footer>
 </body>
 </html>
@@ -318,7 +451,12 @@ ${body}
 function cityPage(city) {
   const route = `/destinations/${city.slug}/`;
   const description = clamp(city.editorial?.dek || city.summary || `A practical travel guide to ${city.name}.`);
-  const image = city.hero?.image || "";
+  const hasRealImage = Boolean(city.hero?.image);
+  const image = city.hero?.image || FALLBACK_HERO[city.kind] || FALLBACK_HERO.city;
+  const socialImage = hasRealImage ? image : (FALLBACK_OG_IMAGE[city.kind] || FALLBACK_OG_IMAGE.city);
+  const planningToolkit = Array.isArray(city.planningToolkit)
+    ? city.planningToolkit.filter((entry) => entry && entry.label && entry.value && entry.copy).slice(0, 4)
+    : [];
   const schema = [
     breadcrumbSchema([
       { name: "Home", path: "/" },
@@ -357,6 +495,20 @@ function cityPage(city) {
       }))
       }))
   ];
+  if (planningToolkit.length) {
+    schema.push({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: planningToolkit.map((entry) => ({
+        "@type": "Question",
+        name: toolkitQuestion(city.name, entry.label),
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `${entry.value}. ${entry.copy}`
+        }
+      }))
+    });
+  }
 
   const facts = [];
   if (city.editorial?.summaryCards?.length) {
@@ -373,6 +525,7 @@ ${facts.map(([label, copy]) => `        <div><dt>${esc(label)}</dt><dd>${esc(cop
 
   const navTargets = [
     city.day ? ["day", "A first day"] : null,
+    planningToolkit.length ? ["planning", "Before you book"] : null,
     city.clusters.some((cluster) => cluster.id === "see") ? ["see", "What to see"] : null,
     city.clusters.some((cluster) => cluster.id === "eat") ? ["eat", "Food and drinks"] : null,
     city.clusters.some((cluster) => cluster.id === "who") ? ["who", "Choose your style"] : null,
@@ -383,6 +536,19 @@ ${facts.map(([label, copy]) => `        <div><dt>${esc(label)}</dt><dd>${esc(cop
         <span>On this page</span>
         <ul>${navTargets.map(([id, label]) => `<li><a href="#${id}">${esc(label)}</a></li>`).join("")}</ul>
       </nav>`
+    : "";
+
+  const planningBlock = planningToolkit.length
+    ? `      <section class="hb-faq hb-planning" id="planning">
+        <h2>Before you book</h2>
+        <p class="hb-section-lead">A few practical details can make the whole trip feel easier.</p>
+        <div class="hb-faq-list">
+${planningToolkit.map((entry) => `          <details>
+            <summary>${esc(toolkitQuestion(city.name, entry.label))}</summary>
+            <p><strong>${esc(entry.value)}</strong> ${esc(entry.copy)}</p>
+          </details>`).join("\n")}
+        </div>
+      </section>`
     : "";
 
   const dayBlock = city.day
@@ -408,7 +574,7 @@ ${city.day.map((slot) => `          <li>
         <div class="hb-cluster-body">
 ${cluster.blocks.map((block) => `          <div class="hb-block">
             <h3>${esc(block.label)}</h3>
-            <ul>${block.items.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>
+            <ul>${block.items.map((item) => `<li>${linkItem(item, city.key)}</li>`).join("")}</ul>
           </div>`).join("\n")}
         </div>
       </section>`).join("\n");
@@ -418,7 +584,11 @@ ${cluster.blocks.map((block) => `          <div class="hb-block">
     .flatMap((country) => countries.find((item) => item.name === country)?.cities || [])
     .filter((item) => item.slug !== city.slug && (!publishedCitySlugs.size || publishedCitySlugs.has(item.slug)))
     .slice(0, 6);
-  const heroAlt = city.hero?.copy ? `${city.name}: ${city.hero.copy}` : `${city.name} destination photo`;
+  const heroAlt = city.hero?.copy
+    ? `${city.name}: ${city.hero.copy}`
+    : city.hero?.image
+      ? `${city.name} destination photo`
+      : `${city.name} travel guide illustration`;
   const body = `    <article>
       <header class="hb-lede">
         <p class="hb-eyebrow">${esc(city.country || KIND_LABEL[city.kind] || "Travel guide")}</p>
@@ -428,6 +598,7 @@ ${cluster.blocks.map((block) => `          <div class="hb-block">
       ${image ? `<img class="hb-hero" src="${esc(image)}" alt="${esc(heroAlt)}" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async" />` : ""}
 ${quickFacts}
 ${jumpNav}
+${planningBlock}
 ${intro}
 ${dayBlock}
 ${clusterMarkup}
@@ -448,7 +619,7 @@ ${related.map((item) => `          <li><a href="${url(`/destinations/${item.slug
   return {
     route,
     html: shell({
-      headHtml: pageHead({ title: `${city.name} ${KIND_LABEL[city.kind] || "Travel Guide"}${city.country && city.country !== city.name ? `, ${city.country}` : ""} | Horizon Bound`, description, canonical: absolute(route), image, schema }),
+      headHtml: pageHead({ title: `${city.name} ${KIND_LABEL[city.kind] || "Travel Guide"}${city.country && city.country !== city.name ? `, ${city.country}` : ""} | The Fullest Life`, description, canonical: absolute(route), image, socialImage, schema }),
       breadcrumbs: [
         { name: "Home", path: "/" },
         { name: "Destinations", path: "/destinations/" },
@@ -463,7 +634,9 @@ function countryPage(country) {
   const route = `/countries/${country.slug}/`;
   const description = clamp(country.editorial?.dek || country.guide.summary || `A practical travel guide to ${country.name}.`);
   const rawHero = country.editorial?.hero;
-  const image = typeof rawHero === "string" ? rawHero : (rawHero?.image || "");
+  const realImage = typeof rawHero === "string" ? rawHero : (rawHero?.image || "");
+  const image = realImage || absolute("/assets/guide-country.svg");
+  const socialImage = realImage || absolute("/assets/guide-country.png");
   const schema = [
     breadcrumbSchema([
       { name: "Home", path: "/" },
@@ -505,7 +678,7 @@ ${cityList}
   return {
     route,
     html: shell({
-      headHtml: pageHead({ title: `${country.name} Travel Guide | Horizon Bound`, description, canonical: absolute(route), image, schema }),
+      headHtml: pageHead({ title: `${country.name} Travel Guide | The Fullest Life`, description, canonical: absolute(route), image, socialImage, schema }),
       breadcrumbs: [
         { name: "Home", path: "/" },
         { name: "Countries", path: "/countries/" },
@@ -529,7 +702,8 @@ function indexPage({ route, heading, title, description, groups, introLabel }) {
             ? `<a href="${url(item.path)}">${esc(item.name)}</a>`
             : `<span class="hb-index-name">${esc(item.name)}</span>`;
           const status = item.status ? `<span class="hb-index-status">${esc(item.status)}</span>` : "";
-          const blurb = item.blurb ? `<span>${esc(clamp(item.blurb, 120))}</span>` : "";
+          const safeBlurb = item.blurb && classifyItem(item.blurb).kind !== "placeholder" ? item.blurb : "";
+          const blurb = safeBlurb ? `<span>${esc(clamp(safeBlurb, 120))}</span>` : "";
           return `<li>${name}${status}${blurb}</li>`;
         }).join("")}</ul>
       </section>`).join("");
@@ -551,13 +725,13 @@ ${groupMarkup}
 
 function homePage(featured) {
   const route = "/";
-  const title = "Plan a trip that feels like yours | Horizon Bound";
+  const title = "Plan a trip that feels like yours | The Fullest Life";
   const description = `Build a day-by-day vacation around your dates, pace, priorities, and the places you want to see. Explore ${featured.length} destination guides.`;
   const schema = [
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      name: "Horizon Bound",
+      name: "The Fullest Life Travel",
       url: absolute(route),
       potentialAction: {
         "@type": "SearchAction",
@@ -655,10 +829,10 @@ function plannerRedirectStub() {
     "  <meta name=\"robots\" content=\"noindex, follow\" />",
     `  <meta http-equiv=\"refresh\" content=\"0; url=${target}\" />`,
     `  <link rel=\"canonical\" href=\"${absolute("/plan/")}\" />`,
-    "  <title>Horizon Bound</title>",
+    "  <title>The Fullest Life Travel</title>",
     "</head>",
     "<body>",
-    `  <p><a href=\"${target}#build\">Continue to Horizon Bound</a></p>`,
+    `  <p><a href=\"${target}#build\">Continue to The Fullest Life Travel</a></p>`,
     "  <script>",
     "    const target = new URL(" + JSON.stringify(target) + ", window.location.href);",
     "    target.search = window.location.search;",
@@ -719,12 +893,26 @@ function renderedWordCount(html) {
   return text ? text.split(/\s+/).length : 0;
 }
 
+function placeholderShare(city) {
+  const items = [
+    ...city.clusters.flatMap((cluster) => cluster.blocks.flatMap((block) => block.items)),
+    ...city.planningToolkit.flatMap((entry) => [entry.value, entry.copy])
+  ];
+  if (!items.length) return { share: 0, count: 0, total: 0 };
+  const count = items.filter((item) => classifyItem(item).kind === "placeholder").length;
+  return { share: count / items.length, count, total: items.length };
+}
+
 function reviewCityPage(city) {
   const page = cityPage(city);
   const categoryCount = city.clusters.reduce((total, cluster) => total + cluster.blocks.length, 0);
   const reasons = [];
   if (!city.summary.trim() && !city.editorial?.dek?.trim()) reasons.push("missing its own summary or editorial dek");
   if (categoryCount < 3) reasons.push(`has only ${categoryCount} populated detail categories`);
+  const placeholders = placeholderShare(city);
+  if (placeholders.share > MAX_PLACEHOLDER) {
+    reasons.push(`${placeholders.count} of ${placeholders.total} content items are unfilled placeholders (${Math.round(placeholders.share * 100)}%)`);
+  }
   const words = renderedWordCount(page.html);
   if (words <= MIN_WORDS) reasons.push(`renders ${words} words, below the ${MIN_WORDS}-word minimum`);
   return { city, page, words, reasons, eligible: reasons.length === 0 };
@@ -737,7 +925,7 @@ function reviewCountryPage(country) {
     : 0;
   const reasons = [];
   if (!country.guide?.summary?.trim() && !country.editorial?.dek?.trim()) reasons.push("missing its own summary or editorial dek");
-  if (cards < 2 || country.cities.length < 3) reasons.push(`has ${cards} real cards and ${country.cities.length} linked cities`);
+  if (cards < 2 || country.cities.length < 2) reasons.push(`has ${cards} real cards and ${country.cities.length} linked cities`);
   const words = renderedWordCount(page.html);
   if (words <= MIN_WORDS) reasons.push(`renders ${words} words, below the ${MIN_WORDS}-word minimum`);
   return { country, page, words, reasons, eligible: reasons.length === 0 };
@@ -765,21 +953,22 @@ const heldBackCountrySlugs = new Set(countryReviews.filter((review) => !review.e
 
 function removeNonPublishedPages() {
   if (DRY_RUN) return;
-  const roots = [
-    [path.resolve(OUT, "destinations"), new Set(heldBackCitySlugs), "destinations"],
-    [path.resolve(OUT, "countries"), new Set([...heldBackCountrySlugs, ...excludedCountrySlugs]), "countries"]
-  ];
-  for (const [root, slugs, label] of roots) {
+  const keep = {
+    destinations: new Set(publishedCities.map((city) => city.slug)),
+    countries: new Set(publishedCountries.map((country) => country.slug))
+  };
+  for (const [label, keepSlugs] of Object.entries(keep)) {
+    const root = path.resolve(OUT, label);
     let removed = 0;
-    for (const slug of slugs) {
-      const directory = path.resolve(root, slug);
+    if (!fs.existsSync(root)) continue;
+    for (const entry of fs.readdirSync(root, { withFileTypes: true })) {
+      if (!entry.isDirectory() || keepSlugs.has(entry.name)) continue;
+      const directory = path.resolve(root, entry.name);
       if (!directory.startsWith(`${root}${path.sep}`)) continue;
-      if (fs.existsSync(directory)) {
-        fs.rmSync(directory, { recursive: true, force: true });
-        removed += 1;
-      }
+      fs.rmSync(directory, { recursive: true, force: true });
+      removed += 1;
     }
-    if (removed) console.log(`  ${label}/ removed ${removed} non-published pages`);
+    if (removed) console.log(`  ${label}/ removed ${removed} pages no longer published`);
   }
 }
 
@@ -802,7 +991,7 @@ cityCandidates.forEach((city) => {
 pages.push(indexPage({
   route: "/destinations/",
   heading: "Destinations",
-  title: "Destination Guides | Horizon Bound",
+  title: "Destination Guides | The Fullest Life",
   description: `Practical guides for ${publishedCities.length} places, with more destinations listed as the catalogue grows.`,
   introLabel: "Browse places",
   groups: [...cityGroups.entries()].sort((a, b) => a[0].localeCompare(b[0])).map(([heading, items]) => ({ heading, items: items.sort((a, b) => a.name.localeCompare(b.name)) }))
@@ -811,7 +1000,7 @@ pages.push(indexPage({
 pages.push(indexPage({
   route: "/countries/",
   heading: "Countries",
-  title: "Country Travel Guides | Horizon Bound",
+  title: "Country Travel Guides | The Fullest Life",
   description: `Country guides for ${publishedCountries.length} places, with cities worth considering as a base.`,
   introLabel: "Start broad",
   groups: [{
@@ -831,17 +1020,17 @@ pages.push(indexPage({
 pages.push(homePage([...publishedCities].sort((a, b) => (a.tier - b.tier) || a.name.localeCompare(b.name))));
 
 const faqSections = [
-  { heading: "How does the planner work?", copy: "Start with your destination, dates, travelers, and trip style. Horizon Bound then turns those choices into a practical day-by-day starting point." },
+  { heading: "How does the planner work?", copy: "Start with your destination, dates, travelers, and trip style. We then turn those choices into a practical day-by-day starting point." },
   { heading: "Can I change the plan?", copy: "Yes. Review the draft, adjust the details that matter, and generate a new version when the first pass does not feel right." },
   { heading: "Are prices and availability live?", copy: "The planner does not promise live availability. Check the linked airline, hotel, or booking source before you commit." },
-  { heading: "Where does the guide information come from?", copy: "Guides are built from Horizon Bound's own destination research and updated as the catalogue grows." }
+  { heading: "Where does the guide information come from?", copy: "Guides are built from our own destination research and updated as the catalogue grows." }
 ];
 
 pages.push(infoPage({
   route: "/faq/",
   heading: "Frequently asked questions",
-  title: "FAQ | Horizon Bound",
-  description: "Answers about Horizon Bound trip planning, saved drafts, guide content, and travel information.",
+  title: "FAQ | The Fullest Life",
+  description: "Answers about The Fullest Life Travel trip planning, saved drafts, guide content, and travel information.",
   label: "Questions",
   sections: faqSections,
   schema: [{
@@ -857,9 +1046,9 @@ pages.push(infoPage({
 
 pages.push(infoPage({
   route: "/contact/",
-  heading: "Contact Horizon Bound",
-  title: "Contact | Horizon Bound",
-  description: "Send feedback or report an issue with a Horizon Bound guide or trip plan.",
+  heading: "Contact The Fullest Life Travel",
+  title: "Contact | The Fullest Life",
+  description: "Send feedback or report an issue with a The Fullest Life Travel guide or trip plan.",
   label: "Get in touch",
   sections: [
     { heading: "Tell us what needs work", copy: "Email hamiltondan20@gmail.com with the destination, page, and detail that felt confusing, outdated, or too generic." },
@@ -868,7 +1057,6 @@ pages.push(infoPage({
 }));
 
 const sitemapRoutes = ["/", ...pages.map((page) => page.route), "/plan/"];
-const robots = `User-agent: *\nAllow: /\nDisallow: ${url("/saved/")}\nDisallow: ${url("/account/")}\n\nSitemap: ${absolute("/sitemap.xml")}\n`;
 
 function routeFile(route) {
   return route === "/"
@@ -928,7 +1116,6 @@ if (!DRY_RUN) {
   removeNonPublishedPages();
   relocatePlannerApp();
   fs.writeFileSync(path.join(OUT, "sitemap.xml"), buildSitemap(), "utf8");
-  fs.writeFileSync(path.join(OUT, "robots.txt"), robots, "utf8");
 }
 
 const heldBackReviews = [...cityReviews, ...countryReviews].filter((review) => !review.eligible);

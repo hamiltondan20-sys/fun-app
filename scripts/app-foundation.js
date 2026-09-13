@@ -2,7 +2,7 @@
 const { state: hbState, data: hbData, refs: hbRefs, utils: hbUtils } = window.HB_APP;
 
 function normalizeLookupValue(value) {
-      return value.toLowerCase().replace(/[^a-z0-9]/g, "");
+      return String(value || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]/g, "");
     }
 
     function updateDestinationTravelAlert() {
@@ -30,7 +30,7 @@ function normalizeLookupValue(value) {
       if (!trimmed) return trimmed;
       const normalized = normalizeLookupValue(trimmed);
       if (hbData.destinationAliases[normalized]) return hbData.destinationAliases[normalized];
-      return trimmed;
+      return hbData.normalizeCountryName?.(trimmed) || trimmed;
     }
 
     function getCountryOnlySelection() {
@@ -148,7 +148,7 @@ function normalizeLookupValue(value) {
     function getCountryName() {
       const parts = hbState.appState.destination.split(",");
       if (parts.length < 2) return parts[0]?.trim() || "Your destination";
-      return parts[parts.length - 1].trim();
+      return hbData.normalizeCountryName?.(parts[parts.length - 1].trim()) || parts[parts.length - 1].trim();
     }
 
     function getTripLength() {
@@ -713,9 +713,10 @@ function normalizeLookupValue(value) {
     }
 
     function getCountryGuide() {
-      return hbData.countryGuideData[getCountryName()] || {
-        title: `${getCountryName()} at a glance`,
-        summary: `${getCountryName()} usually feels better when the trip stays realistic about timing, keeps each day centered in one area, and leaves room for local discoveries.`,
+      const country = hbData.normalizeCountryName?.(getCountryName()) || getCountryName();
+      return hbData.countryGuideData[country] || {
+        title: `${country} at a glance`,
+        summary: `${country} usually feels better when the trip stays realistic about timing, keeps each day centered in one area, and leaves room for local discoveries.`,
         cards: [
           ["Best for", "A balanced trip with a few clear highlights and enough time to enjoy the place instead of racing through it."],
           ["What stands out", "The trip will feel strongest when the bigger sights and the local atmosphere both get room in the plan."],
@@ -828,24 +829,28 @@ function normalizeLookupValue(value) {
     }
 
     function getCountryCitySuffix(country) {
-      const aliases = {
-        Turkey: "Türkiye"
-      };
-      return aliases[country] || country;
+      return hbData.normalizeCountryName?.(country) || country;
     }
 
     function getGuideCountryForCity(city) {
+      const record = hbData.cityGuideData.find((item) => item.city === city);
+      if (record?.country) return hbData.normalizeCountryName?.(record.country) || record.country;
       const raw = city.split(",").slice(-1)[0].trim();
-      return raw === "Türkiye" ? "Turkey" : raw;
+      return hbData.normalizeCountryName?.(raw.split(/\s+and\s+|\s*&\s*/i)[0]) || raw;
     }
 
     function getCountryRegion(country) {
-      return hbData.countryRegionMap[country] || "Other";
+      const canonical = hbData.normalizeCountryName?.(country) || country;
+      return hbData.countryRegionMap[canonical] || hbData.countryRegionMap[country] || "Other";
     }
 
     function getCitiesForCountry(country) {
-      const suffix = getCountryCitySuffix(country);
-      return hbData.cityGuideData.filter((item) => item.city.endsWith(suffix)).slice(0, 6);
+      const canonical = getCountryCitySuffix(country);
+      return hbData.cityGuideData.filter((item) => {
+        const itemCountry = getGuideCountryForCity(item.city);
+        const countryList = item.city.split(",").slice(1).join(",").split(/\s+and\s+|\s*&\s*/i).map((value) => value.trim());
+        return itemCountry === canonical || countryList.some((value) => (hbData.normalizeCountryName?.(value) || value) === canonical);
+      }).slice(0, 6);
     }
 
     function getCountryHero(country) {

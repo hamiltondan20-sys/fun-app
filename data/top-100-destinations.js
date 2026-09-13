@@ -196,17 +196,16 @@
     if (!existingCities.has(seed.city)) data.cityGuideData.push(guideFor(seed));
     if (!existingDetails[seed.city]) existingDetails[seed.city] = makeDetail(seed);
     if (!existingToolkits[seed.city]) existingToolkits[seed.city] = makeToolkit(seed);
-    if (!existingFacts[name]) {
+    if (!existingFacts[seed.city]) {
       const tipText = String(seed.tip || "").trim();
       const tipStartsWithTitle = tipText.toLowerCase().startsWith(`${seed.title.toLowerCase()} `);
-      existingFacts[name] = tipStartsWithTitle
+      existingFacts[seed.city] = tipStartsWithTitle
         ? tipText
         : `${seed.title} works best when ${tipText.charAt(0).toLowerCase()}${tipText.slice(1)}`;
     }
     if (!existingSuggestions[seed.country]) existingSuggestions[seed.country] = [];
     if (!existingSuggestions[seed.country].includes(seed.city)) existingSuggestions[seed.country].push(seed.city);
-    existingAliases[compact(seed.title)] = seed.city;
-    existingAliases[compact(name)] = seed.city;
+    existingAliases[compact(seed.city)] = seed.city;
   });
 
   const baseGetAreaSet = window.HB_TRIP_HELPERS.getAreaSet;

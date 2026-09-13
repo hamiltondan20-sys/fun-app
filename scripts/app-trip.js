@@ -230,6 +230,8 @@ function getBlueprintTopPlaces() {
     function getDestinationGuideDetails() {
       const detailMap = hbData.cityGuideDetailData || {};
       const destination = hbState.appState.destination;
+      const verdict = window.HB_COVERAGE?.resolveDestination?.(destination);
+      if (verdict?.kind === "ambiguous") return null;
       if (detailMap[destination]) return detailMap[destination];
 
       const city = getCityName();
@@ -240,6 +242,8 @@ function getBlueprintTopPlaces() {
     function getDestinationGuideEntry() {
       const destination = hbState.appState.destination;
       const city = getCityName();
+      const verdict = window.HB_COVERAGE?.resolveDestination?.(destination);
+      if (verdict?.kind === "ambiguous") return null;
       return (hbData.cityGuideData || []).find((item) => (
         item.city === destination
         || item.city === city
@@ -1438,13 +1442,26 @@ function getBlueprintTopPlaces() {
         && end >= start;
       const adults = Number(hbState.appState.adults || 0);
       const destination = String(hbState.appState.destination || "").trim();
+      const destinationVerdict = window.HB_COVERAGE?.resolveDestination?.(destination);
+      const destinationIsAmbiguous = destinationVerdict?.kind === "ambiguous";
       const hasGuideData = Boolean(getDestinationGuideEntry() || getDestinationGuideDetails());
       const hasStay = Boolean(hbState.appState.hotelName || hbState.appState.hotelArea);
       const flightReady = hbState.appState.flightMode !== "have-flights"
         || Boolean(hbState.appState.arrivalFlight || hbState.appState.departureFlight || hbState.appState.flightNumber || hbState.appState.flightAirline);
       const stylesReady = Boolean(hbState.appState.styles?.length);
-      const basicsReady = Boolean(destination) && hasValidDates && adults >= 1;
+      const basicsReady = Boolean(destination) && !destinationIsAmbiguous && hasValidDates && adults >= 1;
       const required = [
+        {
+          id: "destination-choice",
+          title: "Specific destination",
+          ready: !destinationIsAmbiguous,
+          level: "required",
+          panel: "build-panel",
+          target: "destination-input",
+          fixLabel: "Choose a city",
+          readyCopy: "The place is specific enough to plan.",
+          missingCopy: `We found more than one place named ${destination}. Choose the city and country you mean.`
+        },
         {
           id: "destination",
           title: "Destination",
@@ -2311,7 +2328,7 @@ function getBlueprintTopPlaces() {
       hydrateBookingItems();
 
       return {
-        product: "Horizon Bound",
+        product: "The Fullest Life Travel",
         type: "local-account-backup",
         version: LOCAL_ACCOUNT_BACKUP_VERSION,
         exportedAt: new Date().toISOString(),
@@ -2390,7 +2407,7 @@ function getBlueprintTopPlaces() {
         throw new Error("Backup file is empty or unreadable.");
       }
       if (payload.type && payload.type !== "local-account-backup") {
-        throw new Error("This does not look like a Horizon Bound backup.");
+        throw new Error("This does not look like a The Fullest Life Travel backup.");
       }
 
       const draftPayload = payload.storage?.draft || {
@@ -4158,13 +4175,14 @@ function getBlueprintTopPlaces() {
 
     function renderThinking() {
       const city = getCityName();
+      const canonicalCity = hbData.normalizeCityLabel?.(hbState.appState.destination) || hbState.appState.destination;
       const styleLead = (hbState.appState.styles[0] || "relaxed").toLowerCase();
       document.getElementById("thinking-optimization").textContent =
         `Keeping your days local, your ${styleLead} moments clear, and your ${hbState.appState.memory.toLowerCase()} goal visible.`;
       document.getElementById("thinking-support").textContent =
         `We are shaping the trip around your ${hbState.appState.pace.toLowerCase()} pace, your ${hbState.appState.budget.toLowerCase()} budget, and the must-haves you said actually matter.`;
       document.getElementById("thinking-fact").textContent =
-        hbData.destinationFacts[city] || `${city} tends to feel best when you let a neighborhood breathe instead of trying to cover every corner in one day.`;
+        hbData.destinationFacts[canonicalCity] || hbData.destinationFacts[city] || `${city} tends to feel best when you let a neighborhood breathe instead of trying to cover every corner in one day.`;
     }
 
     function renderSavedPanel() {

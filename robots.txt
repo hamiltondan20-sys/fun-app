@@ -1,6 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /fun-app/saved/
-Disallow: /fun-app/account/
-
-Sitemap: https://hamiltondan20-sys.github.io/fun-app/sitemap.xml

@@ -24,6 +24,28 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Regenerate pages and validate
+        run: |
+          node scripts/create-fallback-images.mjs
+          node scripts/generate-pages.mjs --base=/fun-app --origin=https://hamiltondan20-sys.github.io --out=. --min-words=350
+          node scripts/check-release.js
+
+      - name: Fail if the committed build is stale
+        shell: bash
+        run: |
+          if [ -n "$(git status --porcelain -- destinations countries sitemap.xml index.html faq contact plan assets/guide-city.png assets/guide-region.png assets/guide-landmark.png assets/guide-country.png)" ]; then
+            echo "::error::Generated pages differ from what is committed. Run the release check locally and commit the result."
+            git status --porcelain -- destinations countries sitemap.xml index.html faq contact plan assets/guide-city.png assets/guide-region.png assets/guide-landmark.png assets/guide-country.png
+            exit 1
+          fi
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

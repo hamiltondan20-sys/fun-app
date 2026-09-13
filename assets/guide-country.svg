@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+  <title>Country guide illustration</title>
+  <desc>Abstract coastlines, sun, and a calm sea for a country travel guide.</desc>
+  <rect width="1200" height="600" fill="#fff4e7"/>
+  <circle cx="940" cy="134" r="84" fill="#f7c978"/>
+  <path d="M0 308c147 40 224-32 353 5 151 43 211 6 335 20 156 17 217-55 512-7v274H0Z" fill="#3f8790"/>
+  <path d="M0 402c178-36 310-32 461 2 153 35 272 31 430-6 113-26 207-26 309-5v207H0Z" fill="#176765"/>
+  <path d="M0 462c120-24 214-10 316 16 158 40 306 41 463 2 158-39 286-41 421-14v134H0Z" fill="#b95138" opacity=".78"/>
+  <path d="M164 304c28-90 75-125 136-141 69-18 114 21 158 42 63 29 126 29 175 78-122 26-294 36-469 21Z" fill="#3f725e"/>
+</svg>

@@ -287,7 +287,7 @@ window.HB_DATA = window.HB_DATA || {};
     ];
     const tipText = String(item.tip || "").trim();
     const tipStartsWithTitle = tipText.toLowerCase().startsWith(`${item.title.toLowerCase()} `);
-    data.destinationFacts[item.title] = tipStartsWithTitle
+    data.destinationFacts[item.city] = tipStartsWithTitle
       ? tipText
       : `${item.title} works best when ${tipText.charAt(0).toLowerCase()}${tipText.slice(1)}`;
     data.destinationHeroData[item.city] = {
@@ -295,7 +295,6 @@ window.HB_DATA = window.HB_DATA || {};
       title: item.title,
       copy: item.summary
     };
-    data.destinationAliases[compact(item.title)] = item.city;
     data.destinationAliases[compact(item.city)] = item.city;
     data.countrySuggestions[item.country] = data.countrySuggestions[item.country] || [];
     if (!data.countrySuggestions[item.country].includes(item.city)) data.countrySuggestions[item.country].push(item.city);

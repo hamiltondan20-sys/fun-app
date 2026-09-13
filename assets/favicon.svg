@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>Horizon Bound</title>
+  <rect width="64" height="64" rx="16" fill="#176765"/>
+  <circle cx="46" cy="18" r="9" fill="#f7c978"/>
+  <path d="M7 43c9-7 16-7 25-1 8 5 14 5 25-2v17H7Z" fill="#b95138"/>
+  <path d="M7 39c10-6 17-5 25 0 8 5 15 5 25-2v8c-10 7-17 7-25 2-8-5-15-5-25 2Z" fill="#f7f8f5" opacity=".92"/>
+</svg>

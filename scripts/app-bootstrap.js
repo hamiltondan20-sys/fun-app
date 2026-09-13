@@ -248,7 +248,6 @@ window.HB_APP = window.HB_APP || {};
       Tanzania: "Africa",
       Thailand: "Asia",
       Turkey: "Middle East",
-      Türkiye: "Middle East",
       "United Arab Emirates": "Middle East",
       "United Kingdom": "Europe",
       "United States": "North America",

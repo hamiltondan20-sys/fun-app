@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+  <title>Region guide illustration</title>
+  <desc>Layered mountains, a river, and a wide open sky.</desc>
+  <rect width="1200" height="600" fill="#e2f1ee"/>
+  <circle cx="930" cy="132" r="82" fill="#f7c978"/>
+  <path d="m0 424 225-222 175 164 168-242 212 290 150-194 270 204v176H0Z" fill="#3f725e"/>
+  <path d="m0 469 218-142 146 92 208-158 225 174 165-124 238 142v147H0Z" fill="#176765"/>
+  <path d="M487 600c28-80 88-138 144-188 60 48 91 91 114 188Z" fill="#82c2c1"/>
+  <path d="M0 535c212-24 393-18 600 10 213 28 388 16 600-32v87H0Z" fill="#b95138" opacity=".8"/>
+</svg>
