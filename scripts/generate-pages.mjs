@@ -36,6 +36,10 @@ const requestedMinWords = Number(arg("min-words", "350"));
 const MIN_WORDS = Number.isFinite(requestedMinWords) && requestedMinWords > 0
   ? Math.floor(requestedMinWords)
   : 350;
+const requestedMinCountryWords = Number(arg("min-country-words", "250"));
+const MIN_COUNTRY_WORDS = Number.isFinite(requestedMinCountryWords) && requestedMinCountryWords > 0
+  ? Math.floor(requestedMinCountryWords)
+  : 250;
 
 const dataFiles = [
   "data/destinations.js",
@@ -658,7 +662,7 @@ function countryPage(country) {
   const cityList = country.cities.length ? `
       <section class="hb-section">
         <h2>Where to go in ${esc(country.name)}</h2>
-        <ul class="hb-city-list">${country.cities.map((city) => `<li><a href="${url(`/destinations/${city.slug}/`)}">${esc(city.name)}</a><span>${esc(clamp(city.summary, 120))}</span></li>`).join("")}</ul>
+        <ul class="hb-city-list">${country.cities.map((city) => `<li><a href="${url(`/destinations/${city.slug}/`)}">${esc(city.name)}</a><span>${esc(clamp(city.summary, 110))}</span></li>`).join("")}</ul>
       </section>` : "";
   const body = `    <article>
       <p class="hb-eyebrow">Country guide</p>
@@ -927,7 +931,7 @@ function reviewCountryPage(country) {
   if (!country.guide?.summary?.trim() && !country.editorial?.dek?.trim()) reasons.push("missing its own summary or editorial dek");
   if (cards < 2 || country.cities.length < 2) reasons.push(`has ${cards} real cards and ${country.cities.length} linked cities`);
   const words = renderedWordCount(page.html);
-  if (words <= MIN_WORDS) reasons.push(`renders ${words} words, below the ${MIN_WORDS}-word minimum`);
+  if (words <= MIN_COUNTRY_WORDS) reasons.push(`renders ${words} words, below the ${MIN_COUNTRY_WORDS}-word country minimum`);
   return { country, page, words, reasons, eligible: reasons.length === 0 };
 }
 
@@ -1122,5 +1126,5 @@ const heldBackReviews = [...cityReviews, ...countryReviews].filter((review) => !
 const holdReasons = new Map();
 heldBackReviews.flatMap((review) => review.reasons).forEach((reason) => holdReasons.set(reason, (holdReasons.get(reason) || 0) + 1));
 console.log(`${DRY_RUN ? "Would write" : "Wrote"} ${pages.length} pages and ${new Set(sitemapRoutes).size} sitemap URLs.`);
-console.log(`Held back ${heldBackReviews.length} pages below the ${MIN_WORDS}-word content gate.`);
+console.log(`Held back ${heldBackReviews.length} pages by content gates (cities: ${MIN_WORDS} words, countries: ${MIN_COUNTRY_WORDS} words).`);
 for (const [reason, count] of holdReasons) console.log(`  ${count} ${reason}`);
