@@ -654,7 +654,21 @@ function countryPage(country) {
       description,
       url: absolute(route),
       ...(image ? { image } : {})
-    }
+    },
+    ...(country.cities.length
+      ? [{
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          name: `Destinations in ${country.name}`,
+          numberOfItems: country.cities.length,
+          itemListElement: country.cities.map((city, index) => ({
+            "@type": "ListItem",
+            position: index + 1,
+            name: city.name,
+            url: absolute(`/destinations/${city.slug}/`)
+          }))
+        }]
+      : [])
   ];
   const intro = (country.editorial?.intro || []).map((paragraph) => `<p>${esc(paragraph)}</p>`).join("\n");
   const cards = (country.guide.cards || []).map(([label, copy]) => `
