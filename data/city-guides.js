@@ -182,6 +182,13 @@ window.HB_DATA.cityGuideData = [
         summary: "Best for riverside scenery, wine, slower city wandering, and shorter European trips with strong atmosphere.",
         highlights: ["Ribeira", "Luis I Bridge", "Port wine cellars"],
         tip: "Porto usually works best when the trip leaves room for steep walking, river views, and longer meal pauses."
+      },
+      {
+        city: "Austin, United States",
+        title: "Austin",
+        summary: "Best for live music, food, outdoor time, and city days that feel better when one neighborhood sets the pace.",
+        highlights: ["Texas State Capitol", "South Congress Avenue", "Lady Bird Lake"],
+        tip: "Austin usually feels easier when music, food, and outdoor plans are grouped by area instead of treating the whole city like one stop."
       }
     ];
 
@@ -627,6 +634,23 @@ window.HB_DATA.cityGuideDetailData = {
         bestCocktails: ["The Royal Cocktail Club", "Base Porto", "17º Restaurant & Bar"],
         bestBakeries: ["Manteigaria Porto", "Nata Lisboa Porto", "Padaria Ribeiro"],
         bestCoffee: ["Combi Coffee", "7g Roaster", "C'alma Coffee Room"]
+      },
+      "Austin, United States": {
+        bestAttractions: ["Texas State Capitol", "Blanton Museum of Art", "LBJ Presidential Library"],
+        bestRestaurants: ["Emmer & Rye", "June's", "Hopdoddy Burger Bar"],
+        bestBudget: ["Lady Bird Lake hike-and-bike trail", "Zilker Park", "South Congress Avenue"],
+        bestCouples: ["Congress Avenue Bridge at sunset", "South Congress Avenue evening", "Lady Bird Lake"],
+        bestKids: ["Thinkery", "Austin Zoo", "Zilker Park"],
+        bestSolo: ["Red River Cultural District", "East Sixth Street", "South Congress Avenue"],
+        bestFirstTimers: ["Texas State Capitol", "South Congress Avenue", "Lady Bird Lake"],
+        bestUnique: ["Congress Avenue Bridge", "Red River Cultural District", "Mount Bonnell"],
+        bestLuxury: ["Emmer & Rye", "Aba", "Uchi"],
+        bestBreakfast: ["Jo's Coffee", "Mañana", "Bouldin Creek Cafe"],
+        bestLunch: ["Bakery Lorraine", "Sour Duck Market", "Komé"],
+        bestDinner: ["Emmer & Rye", "June's", "Hopdoddy Burger Bar"],
+        bestCocktails: ["Roosevelt Room", "Midnight Cowboy", "Whisler's"],
+        bestBakeries: ["Bakery Lorraine", "Easy Tiger Bake Shop & Beer Garden", "Tiny Pies"],
+        bestCoffee: ["Jo's Coffee", "Cuvée Coffee", "Mozart's Coffee Roasters"]
       }
     };
 
@@ -702,6 +726,12 @@ window.HB_DATA.cityPlanningToolkitData = {
         { label: "Where to stay", value: "Canal Belt, Jordaan, Museum Quarter, or De Pijp", copy: "A good base keeps the trip scenic and walkable while matching the desired museum, food, or neighborhood feel." },
         { label: "Getting around", value: "Walk, tram, and careful bike use", copy: "The city is compact, but slower pacing helps travelers enjoy the setting instead of rushing through it." },
         { label: "Book early", value: "Anne Frank House, major museums, and special dinners", copy: "The most constrained visits should anchor the day, with canals and cafes filling the natural space around them." }
+      ],
+      "Austin, United States": [
+        { label: "When it works best", value: "Spring and fall for outdoor-heavy days", copy: "Austin is easier to enjoy when the plan leaves room for parks, lakefront paths, and neighborhood wandering without overloading the schedule." },
+        { label: "Where to stay", value: "Downtown, South Congress, or near Lady Bird Lake", copy: "A central base keeps the first few days practical and makes it easier to combine food, music, and outdoor time." },
+        { label: "Getting around", value: "Group the day by neighborhood", copy: "Austin feels more manageable when one part of the city sets the pace and the plan avoids unnecessary cross-city moves." },
+        { label: "Book early", value: "Standout meals and the live music you care about most", copy: "Protect the one or two moments that matter most, then leave the rest of the day flexible enough for food stops and weather changes." }
       ]
     };
 
@@ -2009,6 +2039,26 @@ window.HB_DATA.cityEditorialPageData = {
             copy: "Amsterdam often becomes more memorable when cafes, museum time, and easy walking all fit together naturally."
           }
         ]
+      },
+      "Austin, United States": {
+        dek: "For travelers who want live music, food, and outdoor time, with a plan that feels lively without becoming a cross-city checklist.",
+        intro: [
+          "Austin is easiest to enjoy when the trip gives each part of the city a chance to set the mood. One day can lean toward the Texas State Capitol and museums, another can stay close to South Congress Avenue, and another can leave room for Lady Bird Lake and Zilker Park.",
+          "The city is known for music, but the best Austin trip is not only a list of venues. It is the combination of a good neighborhood walk, a meal worth planning around, and enough open time to follow the energy of the day."
+        ],
+        trust: "This guide starts with named places from Austin's official visitor resources, then organizes them around the kinds of days travelers actually build: first-time sightseeing, outdoor time, food, music, and slower neighborhood exploring.",
+        summaryCards: [
+          ["Best for", "Live music, food-focused city breaks, outdoor time, couples, families, and travelers who like a lively trip with room to improvise."],
+          ["Ideal trip length", "3 to 4 days gives first-time visitors room for the main sights, one outdoor day, and a few meals or music stops that feel chosen rather than incidental."],
+          ["How to plan it", "Keep each day local where possible. Austin is more enjoyable when the plan protects time for one neighborhood mood instead of treating every attraction as equally urgent."]
+        ],
+        sectionIntros: {
+          "Best Attractions": "Austin's strongest first look combines the Texas State Capitol and museum time with the city settings that make the trip feel like Austin rather than any large American city.",
+          "Best for a Budget": "Some of Austin's most useful trip anchors are public spaces. A lakefront walk, park time, and neighborhood wandering can carry a full afternoon without adding another ticket.",
+          "Best things to do with kids": "Family days work best when a hands-on stop is paired with space to move. Thinkery, Austin Zoo, and Zilker Park give the day different kinds of energy.",
+          "Best breakfast spots": "Breakfast in Austin can stay simple. A good coffee stop is often enough to start a day before the plan moves toward the Capitol, the lake, or South Congress Avenue.",
+          "Best dinner spots": "Dinner should feel like part of the Austin plan, not just a place to refuel. Choose the mood first, then decide whether the evening should be polished, casual, or close to music."
+        }
       },
       "Bermuda, Bermuda": {
         dek: "For families and vacationers who want clear-water beaches, easy island exploring, and enough breathing room for the weather and energy to shape the week.",

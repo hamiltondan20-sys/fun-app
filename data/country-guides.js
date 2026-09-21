@@ -70,7 +70,10 @@ window.HB_DATA.countryGuideData = {
         cards: [
           ["Best for", "History, markets, food, cultural depth, and memorable city views."],
           ["What stands out", "Layered history, rich street life, and strong contrasts between major cities and coastal areas."],
-          ["Good to remember", "Popular areas can get crowded fast, so timing and area-based planning matter."]
+          ["Good to remember", "Popular areas can get crowded fast, so timing and area-based planning matter."],
+          ["When to go", "Spring and fall can be comfortable for city walking, while coastal trips follow a different seasonal rhythm."],
+          ["Moving between cities", "Treat Istanbul, the Aegean, the Mediterranean, and inland stops as separate parts of the route; long transfers can take more energy than expected."],
+          ["Book ahead", "Reserve major intercity travel and popular stays early when the route depends on fixed dates."]
         ]
       },
       Germany: {
@@ -97,7 +100,82 @@ window.HB_DATA.countryGuideData = {
         cards: [
           ["Best for", "Coastal city breaks, food, viewpoints, neighborhood wandering, and relaxed rhythm."],
           ["What stands out", "Strong neighborhood identity, good food, and days that feel best when kept local."],
-          ["Good to remember", "Hills, walking, and slower meals can make realistic pacing more important than it first looks."]
+          ["Good to remember", "Hills, walking, and slower meals can make realistic pacing more important than it first looks."],
+          ["When to go", "Spring and fall can be comfortable for walking and city time, while summer brings stronger demand in popular coastal areas."],
+          ["Moving between cities", "Lisbon and Porto make different bases, so add smaller stops only when the travel time fits the pace you want."],
+          ["Book ahead", "Reserve popular stays and time-sensitive experiences before the trip, especially for weekends and peak summer dates."]
+        ]
+      },
+      Egypt: {
+        title: "Egypt at a glance",
+        summary: "Egypt rewards a focused plan that makes room for its major historical sites while respecting heat, distance, and slower travel days.",
+        cards: [
+          ["Best for", "Ancient history, archaeological sites, river travel, and warm-weather downtime."],
+          ["What stands out", "The trip can shift quickly between dense city energy, ancient sites, and quieter stretches along the Nile or coast."],
+          ["Good to remember", "Heat, site timing, transfers, and current travel guidance should shape the plan from the beginning."],
+          ["When to go", "Cooler months are often easier for long outdoor sightseeing, while heat should shape start times and recovery breaks."],
+          ["Moving between cities", "Cairo, Luxor, and Red Sea bases create different trip rhythms, so avoid treating them as quick day trips when transfers are long."],
+          ["Book ahead", "Check transport, guides, site access, and current travel guidance before fixing a tightly timed route."]
+        ]
+      },
+      Russia: {
+        title: "Russia at a glance",
+        summary: "Russia is too large to plan as one simple trip. It usually works better when travelers choose one city or region, then give that place enough time to feel distinct.",
+        cards: [
+          ["Best for", "History, architecture, museums, food, and city trips built around a clear regional focus."],
+          ["What stands out", "The scale is part of the experience, from major urban centers to long distances between places."],
+          ["Good to remember", "Entry rules, seasonal conditions, and travel logistics can change, so check the most recent travel guidance before booking."],
+          ["When to go", "Weather and daylight can change the shape of a trip, so choose the season around the regions and activities that matter most."],
+          ["Moving between cities", "Build around one region or a small set of connected cities; long distances can make a multi-stop route feel more like transit than a vacation."],
+          ["Plan length", "For a first trip, fewer bases with extra nights usually gives a clearer sense of place than trying to cover the country."]
+        ]
+      },
+      Indonesia: {
+        title: "Indonesia at a glance",
+        summary: "Indonesia usually works best when travelers choose a clear island or city focus instead of trying to cover too much ground in one trip.",
+        cards: [
+          ["Best for", "Beaches, food, cultural travel, nature, and trips that mix a lively base with slower days."],
+          ["What stands out", "Different islands and regions can feel very different, so the choice of base shapes the whole trip."],
+          ["Good to remember", "Transfers, weather, and travel time between islands can take more planning than the map suggests."],
+          ["When to go", "Weather varies by region, so check the conditions for the islands you are actually visiting instead of relying on one countrywide forecast."],
+          ["Moving between islands", "Island transfers can involve flights, ferries, or road connections, so leave buffer around every change of base."],
+          ["Plan length", "A first trip usually works better with one main island or region plus one carefully chosen extension."]
+        ]
+      },
+      Chile: {
+        title: "Chile at a glance",
+        summary: "Chile is easier to plan when travelers choose a clear region or pair a city with one realistic nature-focused extension.",
+        cards: [
+          ["Best for", "Scenery, outdoor travel, food, and city trips with a strong nature component."],
+          ["What stands out", "The country stretches across very different landscapes, so distance and regional weather matter."],
+          ["Good to remember", "Do not treat the country as one compact destination. Build around the region you most want to experience."],
+          ["When to go", "Season matters because the country spans very different climates; match the timing to the region rather than planning around Chile as a whole."],
+          ["Moving between cities", "Long distances can make flights or full travel days part of the itinerary, so keep the route regional."],
+          ["Plan length", "For a first trip, one city plus one nearby region can be more satisfying than a route that crosses the country."]
+        ]
+      },
+      Argentina: {
+        title: "Argentina at a glance",
+        summary: "Argentina is easier to plan when travelers choose a clear region, then allow enough time for city life, food, or landscape to set the pace.",
+        cards: [
+          ["Best for", "City breaks, food, wine regions, mountain scenery, and longer trips that benefit from a regional focus."],
+          ["What stands out", "Distances between major experiences can be large, so the route often matters as much as the destination list."],
+          ["Good to remember", "Do not plan Buenos Aires, Mendoza, Patagonia, and the north as if they were quick add-ons to one another."],
+          ["When to go", "Season matters by region, especially when the trip includes mountains, southern landscapes, or outdoor days."],
+          ["Moving between cities", "Treat internal travel as part of the itinerary; long distances can call for flights, overnight routes, or a full transfer day."],
+          ["Book ahead", "Reserve major transport and popular stays early when the route depends on fixed dates."]
+        ]
+      },
+      Jordan: {
+        title: "Jordan at a glance",
+        summary: "Jordan works best as a focused history and landscape trip, with enough space for the places between the headline stops.",
+        cards: [
+          ["Best for", "Ancient history, desert landscapes, road trips, and trips built around a few memorable anchors."],
+          ["What stands out", "Petra, Wadi Rum, and the Dead Sea give the country a clear mix of history, landscape, and slower downtime."],
+          ["Good to remember", "Heat, driving distances, site timing, and current travel guidance should all be part of the planning conversation."],
+          ["When to go", "Milder seasons can make long outdoor sightseeing easier, while summer heat should shape start times and activity length."],
+          ["Moving between cities", "Amman, Petra, Wadi Rum, and the Dead Sea fit different rhythms, so leave room for road time between them."],
+          ["Plan length", "A first trip usually feels better with a few anchor stops and enough time around each rather than a one-night rush."]
         ]
       },
       Greece: {
