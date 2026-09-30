@@ -36,6 +36,42 @@ const GENERIC_HEAD = new RegExp(
   ")\\b", "i"
 );
 
+// These terms come from recurring category templates in cityGuideDetailData.
+// They describe a type of stop rather than naming a place that can be checked.
+const GENERIC_CATEGORY_TERMS = [
+  "area", "base", "breakfast", "lunch", "dinner", "coffee", "cafe", "bakery",
+  "market", "food", "museum", "palace", "temple", "heritage site", "site",
+  "walk", "meal", "experience", "recommendation", "side", "stop", "outing",
+  "day", "table", "view", "morning", "evening", "afternoon", "night",
+  "neighborhood", "neighbourhood", "district", "center", "centre", "old town",
+  "old city", "city center", "city centre", "sights", "activity", "attraction",
+  "restaurant", "bar", "drinks", "garden", "gallery", "park", "trail",
+  "landscape", "waterfront", "shore", "island", "beach", "boat", "village",
+  "class", "tasting", "transfer", "stay", "route", "pastry", "food hall",
+  "viewpoint", "ride", "tour", "specialty"
+];
+
+const genericCategoryAlternatives = new RegExp(
+  `(?:^|\\b)(?:${GENERIC_CATEGORY_TERMS.map((term) => term.replace(/ /g, "\\s+")).join("|")})(?:\\b|$)`,
+  "i"
+);
+
+const genericArticleTemplate = new RegExp(
+  `^(?:a|an)\\s+(?:[a-z][a-z'-]*\\s+){0,5}(?:${GENERIC_CATEGORY_TERMS.map((term) => term.replace(/ /g, "\\s+")).join("|")})(?:\\b|$)`,
+  "i"
+);
+
+const genericCategoryLead = /^(?:[a-z][a-z'-]*\s+){0,3}(?:breakfast|lunch|dinner|coffee|cafe|bakery|market|meal|bar|drinks|restaurant|food|walk|view|outing|stop|pastry)\s+(?:near|in|around|from|before|between|through|close to|after)\b/i;
+
+function isGenericCategoryTemplate(value) {
+  const raw = String(value || "").trim();
+  const lower = raw.toLowerCase();
+  if (genericArticleTemplate.test(lower) || genericCategoryLead.test(lower)) return true;
+
+  const alternatives = lower.split(/\s+or\s+/);
+  return alternatives.length === 2 && alternatives.every((part) => genericCategoryAlternatives.test(part));
+}
+
 const NAME_CONNECTIVES = new Set([
   "de", "del", "della", "di", "du", "des", "da", "das", "dos",
   "la", "le", "les", "el", "lo", "il", "al", "am", "an",
@@ -70,6 +106,10 @@ export function classifyItem(item) {
 
   if (PLACEHOLDER_MARKERS.some((marker) => raw.toLowerCase().includes(marker.toLowerCase()))) {
     return { kind: "placeholder", reason: "unfilled template variable" };
+  }
+
+  if (isGenericCategoryTemplate(raw)) {
+    return { kind: "placeholder", reason: "generic category template" };
   }
 
   if (/\bor\b/i.test(raw)) return { kind: "descriptor", reason: "multiple candidates" };
