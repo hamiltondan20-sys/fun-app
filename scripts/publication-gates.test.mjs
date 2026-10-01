@@ -133,3 +133,12 @@ test("source-checked city details have dated evidence for every recommendation",
     assert.deepEqual([...publishedNames].sort(), Object.keys(entry.placeSources).sort(), `${city}: unused or missing source records`);
   }
 });
+
+test("verification inventory stays current without changing generated pages", () => {
+  const before = generatedSnapshot();
+  const output = execFileSync(process.execPath, ["scripts/report-city-verification.mjs", "--check"], {
+    cwd: root, encoding: "utf8", maxBuffer: 10 * 1024 * 1024
+  });
+  assert.match(output, /Verification inventory is current: \d+ destinations/);
+  assert.equal(generatedSnapshot(), before);
+});

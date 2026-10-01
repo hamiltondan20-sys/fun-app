@@ -31,9 +31,10 @@ Source verification remains a separate requirement in the sourcing checklist.
 
 ## Work order
 
-Start with the one-name group, then two, then three. The zero-gap group already
-meets eight and appears separately for quality review. Within each group,
-the remaining entries are alphabetical after completing Cusco.
+Use [the demand-led next-20 list](city-sourcing-priorities.md) for work order.
+The groups below are arithmetic coverage buckets, not sourcing priorities.
+The zero-gap group already meets eight and appears separately for quality review.
+Within each group, the entries remain alphabetical for lookup after completing Cusco.
 All deficits below assume the three-category requirement already passes.
 
 Completed this pass: **Cusco, Peru**, with all 15 detail fields reviewed and

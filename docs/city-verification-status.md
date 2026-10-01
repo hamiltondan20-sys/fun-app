@@ -1,6 +1,36 @@
 # City Verification Status
 
-Updated: 2026-09-30. This is an editorial record, not a publication gate.
+Updated: 2026-10-01. This is an editorial record, not a publication gate.
+
+## Current Inventory
+
+The [complete inventory](city-verification-inventory.md) assigns every canonical
+destination a status: `source-verified`, `classifier-passed`, or `held-back`.
+There are 484 canonical destinations from 485 detail records. The existing
+Guilin merge accounts for the difference; no destination was deleted in this pass.
+
+- 1 source-verified in the complete dated evidence format: Cusco.
+- 188 published classifier-passed guides, including Austin's retained prior review.
+- 295 held-back destinations.
+
+Two cities have a source-review history, but they are not identically documented.
+Austin has 32 legacy source references; three current activity labels do not
+exactly match those source keys, and per-place operating evidence is not yet
+migrated. This is a documentation gap, not evidence that those activities are
+false. Do not refresh its verification date or mark it fully documented without
+reviewing that mapping and evidence. Cusco has 18 distinct current recommendations
+with dated, scoped evidence. Counts of classifier matches remain separate.
+
+Refresh the inventory after a content or ledger change:
+
+```bash
+node scripts/report-city-verification.mjs
+node scripts/report-city-verification.mjs --check
+```
+
+The reporter reads the generator's dry-run audit. It does not regenerate pages,
+change thresholds, or automatically verify websites. A declared `source-checked`
+city with missing evidence makes the report fail rather than retaining its label.
 
 ## What the counts mean
 
@@ -55,12 +85,19 @@ still needed to judge whether a source supports the name and category.
 
 ## Next Work
 
-Continue the 5-9 band in `docs/content-repair-queue.md`. Complete the missing
-recommendations and their provenance, not just the arithmetic gap to eight.
+Use the demand-led order in [the next 20 cities](city-sourcing-priorities.md).
+The older repair queue remains a coverage inventory, not an alphabetical work
+order. Complete the missing recommendations and their provenance, not just the arithmetic gap to eight.
 Report cities completed. Keep the operating gate at five; any proposed gate
 change requires a page-count impact report and explicit approval first.
 
 ## Launch and Weekly Checks
+
+Commits through `0fdc9ba` were pushed on 2026-10-01. The
+[deployment succeeded](https://github.com/hamiltondan20-sys/fun-app/actions/runs/36923649325).
+Public Cusco returned HTTP 200 with Cicciolina Cafe and the corrected address-based
+map link. Live totals remain 189 destination guides, 19 country hubs, 214 sitemap
+URLs, and 214 `lastmod` values. No thresholds changed.
 
 The domain-root robots file was checked on 2026-09-30: HTTP 200 with the correct
 declaration for `https://hamiltondan20-sys.github.io/fun-app/sitemap.xml`.
