@@ -146,11 +146,11 @@ const esc = (value) =>
 export const mapUrl = (query, cityKey) =>
   `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${query} ${cityKey}`)}`;
 
-export function linkItem(item, cityKey) {
+export function linkItem(item, cityKey, sourceCheckedQuery) {
   const classified = classifyItem(item);
   if (classified.kind !== "named") return esc(item);
   return (
-    `<a class="hb-place" href="${esc(mapUrl(classified.query, cityKey))}" ` +
+    `<a class="hb-place" href="${esc(mapUrl(sourceCheckedQuery || classified.query, cityKey))}" ` +
     `target="_blank" rel="noopener nofollow" ` +
     `aria-label="${esc(item)}: view on map (opens in a new tab)">` +
     `${esc(item)}<span class="hb-place-icon" aria-hidden="true">&#8599;</span></a>`

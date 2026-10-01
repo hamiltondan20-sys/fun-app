@@ -3,22 +3,24 @@
 Audit date: 2026-09-30. Generated from the same dry-run reviews used by
 `scripts/generate-pages.mjs`, after duplicate destinations are merged.
 
-## Publication ratchet
+## Operating Gate and Impact Previews
 
 | Minimum named entries | Destination guides | Country hubs | Sitemap URLs |
 | --- | ---: | ---: | ---: |
 | 5 | 189 | 19 | 214 |
-| 8 | 65 | 5 | 76 |
-| 15 | 26 | 2 | 34 |
+| 8 (preview only) | 66 | 5 | 77 |
+| 15 (preview only) | 27 | 2 | 35 |
 
 Keep the 350-word destination gate and 250-word country gate. Named entries
-must occur in at least three detail categories. The default is 5; the planned
-next steps are 8 and then 15 after enough guides have been sourced.
+must occur in at least three detail categories. Keep the operating minimum at
+5. There is no scheduled increase. Revisit only when sourced content materially
+changes the distribution, report the page-count impact, and wait for explicit
+user approval before changing any gate. The previews above do not authorize it.
 
 ## Counting method
 
 The merged generator inventory contains 484 destinations. Its 5-9 band
-contains 149 guides, of which 148 pass all current publication gates.
+contains 148 guides, of which 147 pass all current publication gates.
 The supplied estimate of 121 guides does not match this checkout's classifier.
 
 `named` means an entry recognized by `classifyItem`, not an independently
@@ -31,13 +33,14 @@ Source verification remains a separate requirement in the sourcing checklist.
 
 Start with the one-name group, then two, then three. The zero-gap group already
 meets eight and appears separately for quality review. Within each group,
-Cusco is first where applicable; the remaining entries are alphabetical.
+the remaining entries are alphabetical after completing Cusco.
 All deficits below assume the three-category requirement already passes.
 
-Cusco has 7 named entries across 3 categories and needs 1 additional sourced
-entry to reach eight. Its food lists still need a broader sourcing pass:
-breakfast, lunch, dinner, restaurants, drinks, bakeries, and coffee. Adding one
-place satisfies the next numeric step but does not finish that work.
+Completed this pass: **Cusco, Peru**, with all 15 detail fields reviewed and
+18 distinct locations recorded in the source ledger. It has left this band.
+Its classifier counts 47 named entries because recommendations repeat across
+relevant categories. That is not 47 verified places. See
+`docs/city-verification-status.md` for scope, operating evidence, and limitations.
 
 London, Rome, Tokyo, Mexico City, Amsterdam, Toronto, Sydney, and San Francisco
 are not queued for activity-description rewrites. Keep their useful activity
@@ -50,7 +53,8 @@ suggestions and verify venue names separately.
 3. Check the venue's own current site, plus the official tourism board when available.
 4. Record its exact name, source URL, verification date, city, and open/closed status.
 5. Leave unsourced fields empty. Do not invent names or pad the lists with repeats.
-6. Run the audit at 5 and 8 and confirm that the intended guide's count improved.
+6. Run the audit at the operating gate of 5, check source coverage, and report
+   cities completed. Any higher-threshold audit is an impact preview only.
 
 Minimum additions are arithmetic gaps in the current named-entry metric.
 They are not a claim that all existing names have been verified.
@@ -59,7 +63,6 @@ They are not a claim that all existing names have been verified.
 
 | Destination | Named entries | Named categories | Additions to 8 | Publication at 5 |
 | --- | ---: | ---: | ---: | --- |
-| Cusco, Peru (`cusco`) | 7 | 3 | 1 | Eligible |
 | Abu Dhabi, United Arab Emirates (`abu-dhabi`) | 7 | 3 | 1 | Eligible |
 | Agra, India (`agra`) | 7 | 3 | 1 | Eligible |
 | Alaska, United States (`alaska`) | 7 | 3 | 1 | Eligible |
@@ -223,4 +226,3 @@ They are not a claim that all existing names have been verified.
 | Vancouver, Canada (`vancouver`) | 8 | 4 | 0 | Eligible |
 | Venice, Italy (`venice`) | 8 | 4 | 0 | Eligible |
 | Yellowstone National Park, United States (`yellowstone`) | 8 | 4 | 0 | Eligible |
-

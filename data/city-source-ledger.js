@@ -5,9 +5,153 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Cusco, Peru": {
+    checkedOn: "2026-09-30",
+    status: "source-checked",
+    reviewScope: "cityGuideDetailData",
+    verificationMethod: "official-web-review",
+    limitations: "Website review, not an in-person visit or telephone confirmation. Operating evidence means the official site currently advertises visits, service, or reservations. Confirm hours before traveling. Separate pages from one operator are not independent corroboration.",
+    sourceUrls: [
+      "https://www.peru.travel/experiences/city-tour-in-cusco-s-historic-center",
+      "https://repositorio.promperu.gob.pe/bitstreams/657de928-74b6-44fc-86b7-466f08949896/download",
+      "https://cosituc.gob.pe/preguntas-frecuentes/"
+    ],
+    excludedCandidates: [
+      { name: "Chicha Cusco", reason: "Official Cusco page timed out during review. Not added on the strength of directory mentions alone; no closure claimed." },
+      { name: "La Valeriana", reason: "Official website could not be loaded. Third-party listings were insufficient to confirm the current branch; no closure claimed." }
+    ],
+    placeSources: {
+      "Sacsayhuaman": {
+        url: "https://cosituc.gob.pe/sacsayhuaman/",
+        sourceType: "official ticket operator",
+        secondSourceUrl: "https://www.peru.travel/experiences/city-tour-in-cusco-s-historic-center",
+        checkedOn: "2026-09-30",
+        operatingEvidence: "COSITUC lists the archaeological site and its visitor-ticket circuit; PROMPERU includes it in the Cusco itinerary."
+      },
+      "Qorikancha": {
+        url: "https://www.peru.travel/experiences/city-tour-in-cusco-s-historic-center",
+        sourceType: "official tourism board",
+        checkedOn: "2026-09-30",
+        operatingEvidence: "PROMPERU describes visiting the Inca temple and Santo Domingo complex. This is not the separate Museo de Sitio Qorikancha ticket listing."
+      },
+      "Cusco Cathedral": {
+        url: "https://www.peru.travel/experiences/city-tour-in-cusco-s-historic-center",
+        sourceType: "official tourism board",
+        checkedOn: "2026-09-30",
+        operatingEvidence: "PROMPERU includes the cathedral in its walk from Plaza de Armas; admission hours were not independently confirmed."
+      },
+      "Plaza de Armas": {
+        url: "https://www.peru.travel/experiences/city-tour-in-cusco-s-historic-center",
+        sourceType: "official tourism board",
+        checkedOn: "2026-09-30",
+        operatingEvidence: "Public square identified as the starting point of the Cusco city walk; not a business with opening hours."
+      },
+      "San Blas": {
+        url: "https://www.peru.travel/experiences/city-tour-in-cusco-s-historic-center",
+        sourceType: "official tourism board",
+        checkedOn: "2026-09-30",
+        operatingEvidence: "Named Cusco neighborhood on the tourism board's uphill walking route; not a venue or business."
+      },
+      "Twelve-Angled Stone": {
+        url: "https://www.peru.travel/experiences/city-tour-in-cusco-s-historic-center",
+        sourceType: "official tourism board",
+        checkedOn: "2026-09-30",
+        operatingEvidence: "The tourism board identifies the 12-angled stone on the walk toward San Blas. Public landmark, not a business."
+      },
+      "Centro de Textiles Tradicionales del Cusco": {
+        url: "https://www.textilescusco.org/index.php/contact",
+        sourceType: "operator's own site",
+        checkedOn: "2026-09-30",
+        operatingEvidence: "Operator lists the Cusco location at Avenida El Sol 603, museum and shop hours, weaving demonstrations, and free museum entry. Chinchero is a different location and is not used here."
+      },
+      "ChocoMuseo Cusco": {
+        url: "https://chocomuseo.com/en/peru/cusco/",
+        sourceType: "business's own site",
+        secondSourceUrl: "https://chocomuseo.com/product/cusco-museo/",
+        checkedOn: "2026-09-30",
+        operatingEvidence: "Cusco-specific section lists the Plaza Regocijo museum, opening hours, free museum entry, and bookable workshops. Ignored the unrelated demo-address text later in the page footer."
+      },
+      "Cicciolina": {
+        url: "https://www.cicciolinacuzco.com/es/restaurant.html",
+        sourceType: "business's own site",
+        secondSourceUrl: "https://www.peru.travel/stories/4-luxury-experiences-to-enjoy-in-cusco",
+        checkedOn: "2026-09-30",
+        operatingEvidence: "Official page lists Cusco address, lunch and dinner hours, menu, and reservations. Use the current official Calle Palacio address rather than the older tourism PDF address."
+      },
+      "Cicciolina Cafe": {
+        url: "https://www.cicciolinacuzco.com/es/cafe.html",
+        sourceType: "business's own site",
+        secondSourceUrl: "https://www.cicciolinacuzco.com/docs/Carta_cafe-2025_ESP.pdf",
+        checkedOn: "2026-09-30",
+        operatingEvidence: "Cafe page lists Calle Ruinas 465 and service hours. The linked menu supports breakfast, coffee, house-made bread, and croissants. A cafe with baking, not a separate wholesale bakery."
+      },
+      "Pachapapa": {
+        url: "https://www.cuscorestaurants.com/pachapapa/",
+        sourceType: "business's own site",
+        secondSourceUrl: "https://repositorio.promperu.gob.pe/bitstreams/657de928-74b6-44fc-86b7-466f08949896/download#page=36",
+        additionalSourceUrls: ["https://pachapapa.cuscorestaurants.com/p/es.html"],
+        checkedOn: "2026-09-30",
+        operatingEvidence: "Operator lists San Blas 120, service hours and reservations. Its restaurant page includes Peruvian cocktails. PROMPERU independently lists the restaurant in Cusco."
+      },
+      "MAP Cafe": {
+        url: "https://www.cuscorestaurants.com/map-cafe/",
+        sourceType: "business's own site",
+        secondSourceUrl: "https://repositorio.promperu.gob.pe/bitstreams/657de928-74b6-44fc-86b7-466f08949896/download#page=36",
+        additionalSourceUrls: ["https://mapcafe.cuscorestaurants.com/"],
+        checkedOn: "2026-09-30",
+        operatingEvidence: "Operator lists lunch and dinner service, reservations, and the location inside Museo de Arte Precolombino at Nazarenas 231. PROMPERU corroborates the name and location."
+      },
+      "LIMO": {
+        url: "https://www.cuscorestaurants.com/limo/",
+        sourceType: "business's own site",
+        secondSourceUrl: "https://repositorio.promperu.gob.pe/bitstreams/657de928-74b6-44fc-86b7-466f08949896/download#page=36",
+        additionalSourceUrls: ["https://limo.cuscorestaurants.com/p/es.html"],
+        checkedOn: "2026-09-30",
+        operatingEvidence: "Operator lists Portal de Carnes 236, lunch and dinner hours, reservations, and pisco-bar service. PROMPERU independently lists Limo in Cusco."
+      },
+      "Green Point": {
+        url: "https://greenpointcusco.com/home.html",
+        sourceType: "business's own site",
+        secondSourceUrl: "https://menu.greenpointcusco.com/es/desayunos",
+        checkedOn: "2026-09-30",
+        operatingEvidence: "Own site lists Carmen Bajo 235, Cusco, service hours and reservations; its menu lists breakfast and coffee. Opening times differ within the site, so no exact opening time is published in the guide."
+      },
+      "Qosqo Maki (Tullumayo)": {
+        url: "https://marketingqosqomaki.wixsite.com/panaderia-qosqo-maki",
+        sourceType: "business's own site",
+        secondSourceUrl: "https://qosqomaki.org/contactos/",
+        additionalSourceUrls: ["https://linktr.ee/qosqomaki.cusco"],
+        checkedOn: "2026-09-30",
+        operatingEvidence: "Bakery's linked official site lists Tullumayo 465 and service hours. Parent association confirms the bakery address and delivery contact. Official profile identifies coffee and pastries."
+      },
+      "Qosqo Maki (Santa Rosa)": {
+        url: "https://marketingqosqomaki.wixsite.com/panaderia-qosqo-maki",
+        sourceType: "business's own site",
+        secondSourceUrl: "https://qosqomaki.org/contactos/",
+        checkedOn: "2026-09-30",
+        operatingEvidence: "Official site lists the Santa Rosa branch at Pasaje Anibal Valencia 200 and service hours. Parent association separately lists the Santa Rosa bakery. Same brand as Tullumayo, different physical branch."
+      },
+      "Museo del Pisco Cusco": {
+        url: "https://english.museodelpisco.org/locations/",
+        sourceType: "business's own site",
+        secondSourceUrl: "https://repositorio.promperu.gob.pe/bitstreams/657de928-74b6-44fc-86b7-466f08949896/download#page=57",
+        checkedOn: "2026-09-30",
+        operatingEvidence: "Own site lists the Cusco bar at Santa Catalina Ancha 398, contact, menu and reservations. PROMPERU corroborates the Cusco address. It is a bar recommendation, not a children's museum."
+      },
+      "Oqre": {
+        url: "https://www.belmond.com/en/hotels/south-america/peru/monasterio-cusco/restaurants-and-bars",
+        sourceType: "operator's own site",
+        secondSourceUrl: "https://www.belmond.com/en/hotels/south-america/peru/monasterio-cusco/restaurants-and-bars/modal/oqre",
+        checkedOn: "2026-09-30",
+        operatingEvidence: "Monasterio's official dining page lists Oqre with its current menu and Cusco hotel address. No older Deli Monasterio listing was substituted."
+      }
+    }
+  },
   "Austin, United States": {
     checkedOn: "2026-09-19",
-    status: "ready-for-content-draft",
+    status: "prior-source-review",
+    reviewScope: "cityGuideDetailData",
+    limitations: "Previously reviewed source list. Not rechecked during the September 30 Cusco pass; per-place operating evidence still needs migration to the new ledger format.",
     sourceUrls: [
       "https://www.austintexas.org/",
       "https://www.austintexas.org/explore/",

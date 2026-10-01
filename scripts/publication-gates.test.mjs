@@ -5,7 +5,8 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import test from "node:test";
-import { classifyItem } from "./place-links.mjs";
+import vm from "node:vm";
+import { classifyItem, linkItem } from "./place-links.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const args = [
@@ -79,5 +80,56 @@ test("activity suggestions remain distinct from template placeholders", () => {
   }
   for (const value of ["A major museum, palace, temple, or heritage site", "Marrakech historic center or old town", "A local market or craft district", "A signature dinner from Morocco"]) {
     assert.equal(classifyItem(value).kind, "placeholder", value);
+  }
+});
+
+test("source-checked map queries distinguish similarly named venues without changing classification", () => {
+  const cafe = linkItem("Cicciolina Cafe", "Cusco, Peru", "Cicciolina Cafe Calle Ruinas 465");
+  assert.match(cafe, /query=Cicciolina%20Cafe%20Calle%20Ruinas%20465%20Cusco%2C%20Peru/);
+  assert.match(cafe, />Cicciolina Cafe<span/);
+  const mapCafe = linkItem("MAP Cafe", "Cusco, Peru", "MAP Cafe Plazoleta Nazarenas 231");
+  assert.match(mapCafe, /query=MAP%20Cafe%20Plazoleta%20Nazarenas%20231%20Cusco%2C%20Peru/);
+  assert.equal(linkItem("A local market or craft district", "Cusco, Peru", "Not verified"), "A local market or craft district");
+});
+
+test("source-checked city details have dated evidence for every recommendation", () => {
+  const context = vm.createContext({ window: {} });
+  for (const file of [
+    "data/destinations.js", "data/country-guides.js", "data/city-guides.js",
+    "data/trip-content.js", "data/top-100-destinations.js",
+    "data/destination-expansion.js", "data/destination-coverage.js",
+    "data/city-source-ledger.js"
+  ]) {
+    vm.runInContext(fs.readFileSync(path.join(root, file), "utf8"), context, { filename: file });
+  }
+  const data = context.window.HB_DATA;
+  const reviewed = Object.entries(data.citySourceLedger)
+    .filter(([, entry]) => entry.status === "source-checked");
+  assert.ok(reviewed.some(([city]) => city === "Cusco, Peru"));
+  const categories = Object.keys(data.cityGuideDetailData["Austin, United States"]).sort();
+  for (const [city, entry] of reviewed) {
+    assert.equal(entry.reviewScope, "cityGuideDetailData");
+    assert.equal(entry.verificationMethod, "official-web-review");
+    assert.ok(entry.limitations);
+    const details = data.cityGuideDetailData[city];
+    assert.deepEqual(Object.keys(details).sort(), categories, `${city}: missing detail field`);
+    const publishedNames = new Set();
+    for (const [field, items] of Object.entries(details)) {
+      assert.ok(Array.isArray(items), `${city}: ${field} is not an array`);
+      assert.equal(new Set(items).size, items.length, `${city}: duplicate in ${field}`);
+      for (const name of items) {
+        publishedNames.add(name);
+        assert.notEqual(classifyItem(name).kind, "placeholder", `${city}: ${name}`);
+        const source = entry.placeSources[name];
+        assert.ok(source, `${city}: no source for ${name}`);
+        assert.match(source.checkedOn, /^\d{4}-\d{2}-\d{2}$/);
+        assert.ok(source.sourceType && source.operatingEvidence, `${city}: incomplete evidence for ${name}`);
+        for (const url of [source.url, source.secondSourceUrl, ...(source.additionalSourceUrls || [])].filter(Boolean)) {
+          assert.equal(new URL(url).protocol, "https:", `${city}: invalid source URL for ${name}`);
+        }
+        assert.ok(source.url, `${city}: missing primary URL for ${name}`);
+      }
+    }
+    assert.deepEqual([...publishedNames].sort(), Object.keys(entry.placeSources).sort(), `${city}: unused or missing source records`);
   }
 });

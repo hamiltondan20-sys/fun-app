@@ -1,6 +1,6 @@
 # City Guide Sourcing Checklist
 
-Use this checklist before adding or publishing a city in `data/city-guides.js`.
+Use this checklist before adding or publishing a city in the destination data.
 The goal is a useful, auditable guide built from current places, not a full page
 filled with plausible-sounding filler.
 
@@ -45,15 +45,28 @@ The ledger entry should contain the same basic facts for every place:
 
 ```js
 "Real place name": {
-  sourceUrl: "https://example.com/current-location-page",
+  url: "https://example.com/current-location-page",
   sourceType: "business's own site",
   checkedOn: "YYYY-MM-DD",
-  secondSourceUrl: "https://official-tourism-site.example/places"
+  secondSourceUrl: "https://official-tourism-site.example/places",
+  operatingEvidence: "What the current official page shows about location and service."
 }
 ```
 
 `secondSourceUrl` is encouraged when available. Do not add a source URL that
 was not actually checked.
+
+At city level, use `status: "source-checked"` only after checking every listed
+detail recommendation. Include `reviewScope: "cityGuideDetailData"`, the review
+date, `verificationMethod: "official-web-review"`, and limitations. A currently
+accessible page with hours or bookings is operating evidence, not a guarantee
+that a business will be open on the traveler's date. Say when confirmation is
+limited to a tourism-board listing. Two pages from one operator are not two
+independent sources. Keep unresolved candidates out of the published lists.
+
+The publication tests check ledger coverage for source-checked cities. They do
+not verify the websites themselves. See `docs/city-verification-status.md` for
+the distinction between a research lead, an earlier review, and a current pass.
 
 ## 4. Fill the fields carefully
 
@@ -76,10 +89,10 @@ was not actually checked.
 - Search for duplicate names, wrong-country matches, and outdated closures.
 - Run the placeholder audit and confirm generic phrases have not been added.
 - Keep `--min-words=350` for destinations and the 250-word country gate.
-- The current publication minimum is `--min-named=5`, with named entries in
-  at least three detail categories. Raise it to 8, then 15 as sourcing improves.
-  Compare dry-run reports before each increase; do not reduce it to publish a
-  thin guide.
+- The operating publication minimum is `--min-named=5`, with named entries in
+  at least three detail categories. Do not raise it on a schedule. Revisit only
+  after sourcing materially changes the distribution, report the resulting page
+  counts first, and wait for the user's approval before changing any gate.
 - The named-entry count is a classifier result, not proof of source verification.
   An entry repeated in different categories counts in each category. Verify
   distinct places in the source ledger and do not add duplicates to meet a gate.
@@ -99,7 +112,7 @@ node scripts/generate-pages.mjs --base=/fun-app --origin=https://hamiltondan20-s
 node scripts/check-release.js
 ```
 
-Preview the next threshold without rewriting pages or the sitemap:
+An optional impact preview does not authorize a threshold change:
 
 ```text
 node scripts/generate-pages.mjs --base=/fun-app --origin=https://hamiltondan20-sys.github.io --out=. --min-words=350 --min-named=8 --dry-run --audit-json

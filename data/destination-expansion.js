@@ -299,4 +299,54 @@ window.HB_DATA = window.HB_DATA || {};
     data.countrySuggestions[item.country] = data.countrySuggestions[item.country] || [];
     if (!data.countrySuggestions[item.country].includes(item.city)) data.countrySuggestions[item.country].push(item.city);
   });
+  // Source-reviewed lists replace generated detail data, including its filler.
+  // Evidence and review scope are recorded in data/city-source-ledger.js.
+  data.cityGuideDetailData["Cusco, Peru"] = {
+    bestAttractions: ["Sacsayhuaman", "Qorikancha", "Cusco Cathedral", "Plaza de Armas", "Centro de Textiles Tradicionales del Cusco", "ChocoMuseo Cusco"],
+    bestRestaurants: ["Cicciolina", "Pachapapa", "MAP Cafe", "LIMO", "Green Point", "Oqre"],
+    bestBudget: ["Plaza de Armas", "ChocoMuseo Cusco", "Centro de Textiles Tradicionales del Cusco"],
+    bestLuxury: ["MAP Cafe", "Oqre", "Cicciolina"],
+    bestCouples: ["MAP Cafe", "Cicciolina", "LIMO"],
+    bestKids: ["ChocoMuseo Cusco", "Centro de Textiles Tradicionales del Cusco", "Plaza de Armas"],
+    bestSolo: ["San Blas", "Cicciolina Cafe", "Centro de Textiles Tradicionales del Cusco"],
+    bestFirstTimers: ["Plaza de Armas", "Qorikancha", "Sacsayhuaman", "Cusco Cathedral"],
+    bestUnique: ["Twelve-Angled Stone", "San Blas", "Centro de Textiles Tradicionales del Cusco"],
+    bestBreakfast: ["Cicciolina Cafe", "Green Point", "Qosqo Maki (Tullumayo)"],
+    bestLunch: ["Pachapapa", "Green Point", "LIMO"],
+    bestDinner: ["Cicciolina", "MAP Cafe", "Oqre"],
+    bestCocktails: ["Museo del Pisco Cusco", "LIMO", "Pachapapa"],
+    bestBakeries: ["Qosqo Maki (Tullumayo)", "Cicciolina Cafe", "Qosqo Maki (Santa Rosa)"],
+    bestCoffee: ["Cicciolina Cafe", "Green Point", "Qosqo Maki (Tullumayo)"]
+  };
+  data.cityPlaceQueries = data.cityPlaceQueries || {};
+  data.cityPlaceQueries["Cusco, Peru"] = {
+    "Cicciolina Cafe": "Cicciolina Cafe Calle Ruinas 465",
+    "MAP Cafe": "MAP Cafe Plazoleta Nazarenas 231"
+  };
+  const cusco = data.cityGuideData.find((guide) => guide.city === "Cusco, Peru");
+  cusco.summary = "Inca sites, textile museums, and places to eat around Cusco's historic center and San Blas.";
+  cusco.highlights = ["Sacsayhuaman", "Qorikancha", "Cusco Cathedral", "San Blas"];
+  cusco.tip = "Start with a short walk around Plaza de Armas. San Blas is uphill, so leave time for stops rather than treating every walk as a quick transfer.";
+  data.destinationFacts["Cusco, Peru"] = cusco.tip;
+  data.destinationHeroData["Cusco, Peru"].copy = cusco.summary;
+  data.cityPlanningToolkitData["Cusco, Peru"] = [
+    { label: "Where to stay", value: "Compare the streets around Plaza de Armas with San Blas", copy: "Both put you near places in this guide. Check the route to your accommodation: San Blas is uphill, which matters when you are arriving with luggage or planning several walks a day." },
+    { label: "Getting around", value: "Keep the historic center and Sacsayhuaman on separate outings", copy: "Plaza de Armas, the cathedral, and Qorikancha can be part of a city-center day. Sacsayhuaman is above the city; plan the journey there rather than adding it as one more stop between meals." },
+    { label: "Book early", value: "Reserve the meals and workshops you care about", copy: "MAP Cafe and Cicciolina offer table reservations. ChocoMuseo lists bookable workshops as well as its free museum visit. Check availability with each venue before fixing the rest of the day." },
+    { label: "Tickets", value: "Check which sites your Cusco tourist ticket covers", copy: "COSITUC lists integral and partial tickets. Sacsayhuaman is part of a ticket circuit; compare the included sites with your plan. A ticket covers entry, not a guide or transport." }
+  ];
+  data.cityEditorialPageData["Cusco, Peru"] = {
+    dek: "Plan time for Inca stonework, a walk through San Blas, and meals worth choosing before you arrive.",
+    intro: [
+      "Start at Plaza de Armas and decide how much you want to fit into the day. The cathedral faces the square; Qorikancha gives you another look at the city's Inca and colonial history. San Blas is an uphill walk, with the Twelve-Angled Stone along the way. Save Sacsayhuaman for a separate outing if you would rather keep the first day short.",
+      "You do not need a restaurant reservation for every meal. Cicciolina Cafe, Green Point, and Qosqo Maki on Tullumayo give you named options for breakfast or a coffee break. For a longer meal, compare Pachapapa in San Blas, LIMO overlooking Plaza de Armas, and MAP Cafe in the courtyard of the Museo de Arte Precolombino.",
+      "With children, consider the free museum visit at ChocoMuseo or the textile displays at the Centro de Textiles Tradicionales del Cusco. Workshops are a separate booking. The bakery list includes two Qosqo Maki branches: Tullumayo for a central stop and Santa Rosa when you are already in that part of the city. There is no need to visit both."
+    ],
+    summaryCards: [
+      ["Start here", "Plaza de Armas, Cusco Cathedral, and Qorikancha."],
+      ["Leave room for", "San Blas, textile displays, and a meal you have chosen in advance."],
+      ["Before you go", "Check venue hours, reservations, and the sites included in your tourist ticket."]
+    ],
+    trust: "The named recommendations in this guide were checked against tourism-board, venue, or operator websites on September 30, 2026. Listings and opening arrangements can change; confirm with the venue before visiting."
+  };
 })();

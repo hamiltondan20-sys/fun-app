@@ -34,9 +34,9 @@ const requestedMaxPlaceholder = Number(arg("max-placeholder", "0.2"));
 const MAX_PLACEHOLDER = Number.isFinite(requestedMaxPlaceholder)
   ? Math.min(Math.max(requestedMaxPlaceholder, 0), 1)
   : 0.2;
-// Content ratchet: start at 5 named entries, then raise --min-named to 8 and
-// eventually 15 as source-checked places are added. Audit the impact before
-// each increase; 15 is the destination, not a one-step publication purge.
+// Operating gate: keep 5 until sourcing changes the distribution materially.
+// Possible future levels (8 or 15) are not scheduled increases. Report the
+// resulting page counts and obtain user approval before changing any gate.
 const requestedMinNamed = Number(arg("min-named", "5"));
 if (!Number.isInteger(requestedMinNamed) || requestedMinNamed < 5) {
   throw new Error("--min-named must be an integer of at least 5.");
@@ -589,7 +589,7 @@ ${city.day.map((slot) => `          <li>
         <div class="hb-cluster-body">
 ${cluster.blocks.map((block) => `          <div class="hb-block">
             <h3>${esc(block.label)}</h3>
-            <ul>${block.items.map((item) => `<li>${linkItem(item, city.key)}</li>`).join("")}</ul>
+            <ul>${block.items.map((item) => `<li>${linkItem(item, city.key, DATA.cityPlaceQueries?.[city.key]?.[item])}</li>`).join("")}</ul>
           </div>`).join("\n")}
         </div>
       </section>`).join("\n");
@@ -774,7 +774,7 @@ function homePage(featured) {
     ["Tell us what sounds good", "Choose your pace, trip style, food interests, and the things you do not want to miss."],
     ["Make it yours", "Review the first draft, swap anything that feels off, and save a version when it feels right."]
   ];
-  const destinationCards = featured.slice(0, 12).map((city) => {
+  const destinationCards = featured.filter((city) => typeof city.hero === "string" ? city.hero : city.hero?.image).slice(0, 12).map((city) => {
     const image = typeof city.hero === "string" ? city.hero : city.hero?.image;
     return `<article class="hb-feature-card">
           ${image ? `<img src="${esc(image)}" alt="${esc(`${city.name} travel highlights`)}" width="720" height="420" loading="lazy" decoding="async" />` : ""}
