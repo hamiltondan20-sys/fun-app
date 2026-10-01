@@ -36,40 +36,36 @@ const GENERIC_HEAD = new RegExp(
   ")\\b", "i"
 );
 
-// These terms come from recurring category templates in cityGuideDetailData.
-// They describe a type of stop rather than naming a place that can be checked.
-const GENERIC_CATEGORY_TERMS = [
-  "area", "base", "breakfast", "lunch", "dinner", "coffee", "cafe", "bakery",
-  "market", "food", "museum", "palace", "temple", "heritage site", "site",
-  "walk", "meal", "experience", "recommendation", "side", "stop", "outing",
-  "day", "table", "view", "morning", "evening", "afternoon", "night",
-  "neighborhood", "neighbourhood", "district", "center", "centre", "old town",
-  "old city", "city center", "city centre", "sights", "activity", "attraction",
-  "restaurant", "bar", "drinks", "garden", "gallery", "park", "trail",
-  "landscape", "waterfront", "shore", "island", "beach", "boat", "village",
-  "class", "tasting", "transfer", "stay", "route", "pastry", "food hall",
-  "viewpoint", "ride", "tour", "specialty"
-];
-
-const genericCategoryAlternatives = new RegExp(
-  `(?:^|\\b)(?:${GENERIC_CATEGORY_TERMS.map((term) => term.replace(/ /g, "\\s+")).join("|")})(?:\\b|$)`,
+// These are recurring category templates in cityGuideDetailData. They describe
+// an unnamed type of stop. Activity suggestions with a named neighborhood stay
+// descriptors so they can contribute useful context without becoming map links.
+const GENERIC_CATEGORY_TEMPLATE = new RegExp(
+  "^(?:" +
+    [
+      "a major museum, palace, temple, or heritage site",
+      "a local market or craft district",
+      "a food-first neighborhood walk",
+      "a signature dinner from [A-Z][\\w'’.-]*(?:\\s+[A-Z][\\w'’.-]*)*",
+      "a market breakfast in [A-Z][\\w'’.-]*(?:\\s+[A-Z][\\w'’.-]*)*",
+      "a local dinner in (?:Historic Center|Old Town|City Center|Medina)",
+      "a slow cafe in [A-Z][\\w'’.-]*(?:\\s+[A-Z][\\w'’.-]*)*",
+      "a [a-z]+ market lunch"
+    ].join("|") +
+  ")$",
   "i"
 );
 
-const genericArticleTemplate = new RegExp(
-  `^(?:a|an)\\s+(?:[a-z][a-z'-]*\\s+){0,5}(?:${GENERIC_CATEGORY_TERMS.map((term) => term.replace(/ /g, "\\s+")).join("|")})(?:\\b|$)`,
-  "i"
-);
-
-const genericCategoryLead = /^(?:[a-z][a-z'-]*\s+){0,3}(?:breakfast|lunch|dinner|coffee|cafe|bakery|market|meal|bar|drinks|restaurant|food|walk|view|outing|stop|pastry)\s+(?:near|in|around|from|before|between|through|close to|after)\b/i;
+const GENERIC_CATEGORY_ALTERNATIVE = /^(?:[a-z]+\s+)?(?:market|food hall|bakery|craft district|historic center|old town|city center|neighborhood walk)$/i;
+const GENERIC_AREA_COFFEE = /^coffee near (?:Medina|Gueliz|Historic Center|Old Town|City Center|City Centre)$/i;
+const GENERIC_CENTER_ALTERNATIVE = /^[A-Z][\w'’.-]*(?:\s+[A-Z][\w'’.-]*)*\s+historic center or old town$/i;
+const ARTICLE_ACTIVITY_PHRASE = /^(?:a|an)\s+.+\s+(?:at|in|near|from|around|through|between|before|after|close to|for)\s+/i;
 
 function isGenericCategoryTemplate(value) {
   const raw = String(value || "").trim();
-  const lower = raw.toLowerCase();
-  if (genericArticleTemplate.test(lower) || genericCategoryLead.test(lower)) return true;
+  if (GENERIC_CATEGORY_TEMPLATE.test(raw) || GENERIC_AREA_COFFEE.test(raw) || GENERIC_CENTER_ALTERNATIVE.test(raw)) return true;
 
-  const alternatives = lower.split(/\s+or\s+/);
-  return alternatives.length === 2 && alternatives.every((part) => genericCategoryAlternatives.test(part));
+  const alternatives = raw.split(/\s+or\s+/);
+  return alternatives.length === 2 && alternatives.every((part) => GENERIC_CATEGORY_ALTERNATIVE.test(part.trim()));
 }
 
 const NAME_CONNECTIVES = new Set([
@@ -110,6 +106,10 @@ export function classifyItem(item) {
 
   if (isGenericCategoryTemplate(raw)) {
     return { kind: "placeholder", reason: "generic category template" };
+  }
+
+  if (ARTICLE_ACTIVITY_PHRASE.test(raw)) {
+    return { kind: "descriptor", reason: "article-led activity phrase" };
   }
 
   if (/\bor\b/i.test(raw)) return { kind: "descriptor", reason: "multiple candidates" };

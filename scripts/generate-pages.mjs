@@ -32,6 +32,10 @@ const requestedMaxPlaceholder = Number(arg("max-placeholder", "0.2"));
 const MAX_PLACEHOLDER = Number.isFinite(requestedMaxPlaceholder)
   ? Math.min(Math.max(requestedMaxPlaceholder, 0), 1)
   : 0.2;
+// Keep partial guides available for repair. The page-level quarantine only
+// removes pages with no named place at all; word and category gates still apply.
+const MIN_NAMED_PLACES = 1;
+const MIN_NAMED_CATEGORIES = 1;
 const requestedMinWords = Number(arg("min-words", "350"));
 const MIN_WORDS = Number.isFinite(requestedMinWords) && requestedMinWords > 0
   ? Math.floor(requestedMinWords)
@@ -911,14 +915,17 @@ function renderedWordCount(html) {
   return text ? text.split(/\s+/).length : 0;
 }
 
-function placeholderShare(city) {
+function namedPlaceCoverage(city) {
   const items = [
     ...city.clusters.flatMap((cluster) => cluster.blocks.flatMap((block) => block.items)),
     ...city.planningToolkit.flatMap((entry) => [entry.value, entry.copy])
   ];
-  if (!items.length) return { share: 0, count: 0, total: 0 };
-  const count = items.filter((item) => classifyItem(item).kind === "placeholder").length;
-  return { share: count / items.length, count, total: items.length };
+  const named = items.filter((item) => classifyItem(item).kind === "named").length;
+  const categories = city.clusters
+    .flatMap((cluster) => cluster.blocks)
+    .filter((block) => block.items.some((item) => classifyItem(item).kind === "named"))
+    .length;
+  return { named, categories };
 }
 
 function reviewCityPage(city) {
@@ -927,9 +934,9 @@ function reviewCityPage(city) {
   const reasons = [];
   if (!city.summary.trim() && !city.editorial?.dek?.trim()) reasons.push("missing its own summary or editorial dek");
   if (categoryCount < 3) reasons.push(`has only ${categoryCount} populated detail categories`);
-  const placeholders = placeholderShare(city);
-  if (placeholders.share > MAX_PLACEHOLDER) {
-    reasons.push(`${placeholders.count} of ${placeholders.total} content items are unfilled placeholders (${Math.round(placeholders.share * 100)}%)`);
+  const coverage = namedPlaceCoverage(city);
+  if (coverage.named < MIN_NAMED_PLACES || coverage.categories < MIN_NAMED_CATEGORIES) {
+    reasons.push(`has ${coverage.named} named places across ${coverage.categories} categories; needs at least ${MIN_NAMED_PLACES} named places across ${MIN_NAMED_CATEGORIES} categories`);
   }
   const words = renderedWordCount(page.html);
   if (words <= MIN_WORDS) reasons.push(`renders ${words} words, below the ${MIN_WORDS}-word minimum`);
