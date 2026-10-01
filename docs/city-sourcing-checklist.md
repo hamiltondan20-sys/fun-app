@@ -75,8 +75,17 @@ was not actually checked.
 - Check every ledger URL opens and still refers to the same place.
 - Search for duplicate names, wrong-country matches, and outdated closures.
 - Run the placeholder audit and confirm generic phrases have not been added.
-- Keep the destination at the existing `--min-words=350` and
-  `--max-placeholder` gates. Do not lower them to force publication.
+- Keep `--min-words=350` for destinations and the 250-word country gate.
+- The current publication minimum is `--min-named=5`, with named entries in
+  at least three detail categories. Raise it to 8, then 15 as sourcing improves.
+  Compare dry-run reports before each increase; do not reduce it to publish a
+  thin guide.
+- The named-entry count is a classifier result, not proof of source verification.
+  An entry repeated in different categories counts in each category. Verify
+  distinct places in the source ledger and do not add duplicates to meet a gate.
+- Activity descriptors can remain useful text. They do not count as names, but
+  they are not automatically placeholders. The former per-item placeholder
+  ratio is no longer the publication rule.
 - Confirm the city page has one clear country, one canonical route, and no
   route collision with another city.
 
@@ -89,6 +98,16 @@ node scripts/create-fallback-images.mjs
 node scripts/generate-pages.mjs --base=/fun-app --origin=https://hamiltondan20-sys.github.io --out=. --min-words=350
 node scripts/check-release.js
 ```
+
+Preview the next threshold without rewriting pages or the sitemap:
+
+```text
+node scripts/generate-pages.mjs --base=/fun-app --origin=https://hamiltondan20-sys.github.io --out=. --min-words=350 --min-named=8 --dry-run --audit-json
+node --test scripts/publication-gates.test.mjs
+```
+
+Use `docs/content-repair-queue.md` to prioritize the current 5-9 band. Rebuild
+the queue from this audit when content changes so its counts match the generator.
 
 Before committing, inspect the generated city page and verify that:
 

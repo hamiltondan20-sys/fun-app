@@ -28,14 +28,21 @@ const OUT = path.resolve(arg("out", ROOT));
 const ORIGIN = String(arg("origin", "https://hamiltondan20-sys.github.io")).replace(/\/$/, "");
 const TIER1_ONLY = hasFlag("tier1-only");
 const DRY_RUN = hasFlag("dry-run");
+const AUDIT_JSON = hasFlag("audit-json");
+if (AUDIT_JSON && !DRY_RUN) throw new Error("--audit-json requires --dry-run; audits must not rewrite pages.");
 const requestedMaxPlaceholder = Number(arg("max-placeholder", "0.2"));
 const MAX_PLACEHOLDER = Number.isFinite(requestedMaxPlaceholder)
   ? Math.min(Math.max(requestedMaxPlaceholder, 0), 1)
   : 0.2;
-// Keep partial guides available for repair. The page-level quarantine only
-// removes pages with no named place at all; word and category gates still apply.
-const MIN_NAMED_PLACES = 1;
-const MIN_NAMED_CATEGORIES = 1;
+// Content ratchet: start at 5 named entries, then raise --min-named to 8 and
+// eventually 15 as source-checked places are added. Audit the impact before
+// each increase; 15 is the destination, not a one-step publication purge.
+const requestedMinNamed = Number(arg("min-named", "5"));
+if (!Number.isInteger(requestedMinNamed) || requestedMinNamed < 5) {
+  throw new Error("--min-named must be an integer of at least 5.");
+}
+const MIN_NAMED_PLACES = requestedMinNamed;
+const MIN_NAMED_CATEGORIES = 3;
 const requestedMinWords = Number(arg("min-words", "350"));
 const MIN_WORDS = Number.isFinite(requestedMinWords) && requestedMinWords > 0
   ? Math.floor(requestedMinWords)
@@ -285,7 +292,7 @@ function foldDuplicateRecords(records) {
       areas: mergeSourceValues(existing.areas, record.areas) || [],
       __sources: [...existing.__sources, original]
     });
-    console.log(`  merged duplicate city record: ${original} -> ${key}`);
+    if (!AUDIT_JSON) console.log(`  merged duplicate city record: ${original} -> ${key}`);
   }
   return [...byKey.values()];
 }
@@ -916,16 +923,16 @@ function renderedWordCount(html) {
 }
 
 function namedPlaceCoverage(city) {
-  const items = [
-    ...city.clusters.flatMap((cluster) => cluster.blocks.flatMap((block) => block.items)),
-    ...city.planningToolkit.flatMap((entry) => [entry.value, entry.copy])
-  ];
-  const named = items.filter((item) => classifyItem(item).kind === "named").length;
-  const categories = city.clusters
-    .flatMap((cluster) => cluster.blocks)
-    .filter((block) => block.items.some((item) => classifyItem(item).kind === "named"))
-    .length;
-  return { named, categories };
+  // Toolkit values (such as seasons) are not place recommendations. Count only
+  // detail entries, using the same classifier as the page's place links.
+  const fields = city.clusters.flatMap((cluster) => cluster.blocks).map((block) => {
+    const counts = { named: 0, descriptor: 0, placeholder: 0 };
+    for (const item of block.items) counts[classifyItem(item).kind]++;
+    return { field: block.field, ...counts };
+  });
+  const named = fields.reduce((total, field) => total + field.named, 0);
+  const categories = fields.filter((field) => field.named > 0).length;
+  return { named, categories, fields };
 }
 
 function reviewCityPage(city) {
@@ -940,7 +947,7 @@ function reviewCityPage(city) {
   }
   const words = renderedWordCount(page.html);
   if (words <= MIN_WORDS) reasons.push(`renders ${words} words, below the ${MIN_WORDS}-word minimum`);
-  return { city, page, words, reasons, eligible: reasons.length === 0 };
+  return { city, page, words, coverage, reasons, eligible: reasons.length === 0 };
 }
 
 function reviewCountryPage(country) {
@@ -1146,6 +1153,20 @@ if (!DRY_RUN) {
 const heldBackReviews = [...cityReviews, ...countryReviews].filter((review) => !review.eligible);
 const holdReasons = new Map();
 heldBackReviews.flatMap((review) => review.reasons).forEach((reason) => holdReasons.set(reason, (holdReasons.get(reason) || 0) + 1));
-console.log(`${DRY_RUN ? "Would write" : "Wrote"} ${pages.length} pages and ${new Set(sitemapRoutes).size} sitemap URLs.`);
-console.log(`Held back ${heldBackReviews.length} pages by content gates (cities: ${MIN_WORDS} words, countries: ${MIN_COUNTRY_WORDS} words).`);
-for (const [reason, count] of holdReasons) console.log(`  ${count} ${reason}`);
+if (AUDIT_JSON) {
+  console.log(JSON.stringify({
+    minNamed: MIN_NAMED_PLACES,
+    minNamedCategories: MIN_NAMED_CATEGORIES,
+    cityCount: publishedCities.length,
+    countryCount: publishedCountries.length,
+    sitemapCount: new Set(sitemapRoutes).size,
+    cities: cityReviews.map(({ city, words, coverage, reasons, eligible }) => ({
+      city: city.key, slug: city.slug, words, ...coverage, eligible, reasons
+    }))
+  }));
+} else {
+  console.log(`${DRY_RUN ? "Would write" : "Wrote"} ${pages.length} pages and ${new Set(sitemapRoutes).size} sitemap URLs.`);
+  console.log(`Published ${publishedCities.length} destination guides and ${publishedCountries.length} country hubs (minimum ${MIN_NAMED_PLACES} named entries across ${MIN_NAMED_CATEGORIES} categories).`);
+  console.log(`Held back ${heldBackReviews.length} pages by content gates (cities: ${MIN_WORDS} words, countries: ${MIN_COUNTRY_WORDS} words).`);
+  for (const [reason, count] of holdReasons) console.log(`  ${count} ${reason}`);
+}
