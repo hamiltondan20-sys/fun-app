@@ -148,9 +148,13 @@ export const mapUrl = (query, cityKey) =>
 
 export function linkItem(item, cityKey, sourceCheckedQuery) {
   const classified = classifyItem(item);
-  if (classified.kind !== "named") return esc(item);
+  const checkedQuery = String(sourceCheckedQuery || "").trim();
+  // Reviewed branch addresses can link names the capitalization heuristic misses.
+  // This does not change classification or allow template placeholders to link.
+  if (!String(item || "").trim() || classified.kind === "placeholder"
+    || (classified.kind !== "named" && !checkedQuery)) return esc(item);
   return (
-    `<a class="hb-place" href="${esc(mapUrl(sourceCheckedQuery || classified.query, cityKey))}" ` +
+    `<a class="hb-place" href="${esc(mapUrl(checkedQuery || classified.query, cityKey))}" ` +
     `target="_blank" rel="noopener nofollow" ` +
     `aria-label="${esc(item)}: view on map (opens in a new tab)">` +
     `${esc(item)}<span class="hb-place-icon" aria-hidden="true">&#8599;</span></a>`

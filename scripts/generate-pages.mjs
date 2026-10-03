@@ -227,6 +227,8 @@ const isNonAnswer = (entry) =>
   NON_ANSWER_VALUES.some((phrase) => String(entry.value || "").includes(phrase));
 
 function toolkitQuestion(cityName, label) {
+  if (label === "Start here") return `What should I do first in ${cityName}?`;
+  if (label === "Eating out") return `Where can I eat in ${cityName}?`;
   if (label === "When it works best") return `When is the best time to visit ${cityName}?`;
   if (label === "Where to stay") return `Where should I stay in ${cityName}?`;
   if (label === "Getting around") return `How do I get around ${cityName}?`;

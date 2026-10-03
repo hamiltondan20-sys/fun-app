@@ -5,6 +5,195 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Boston, United States": {
+    checkedOn: "2026-10-02",
+    status: "source-checked",
+    reviewScope: "cityGuideDetailData",
+    verificationMethod: "official-web-review",
+    limitations: "Website review, not an in-person visit or telephone confirmation. Operating evidence means the official site currently advertises visits, service, or reservations, not guaranteed availability on a future date. Public parks and trails are places, not businesses. Category suitability is editorial judgment. Same-operator pages and ordering services are not independent corroboration.",
+    sourceUrls: [
+      "https://www.meetboston.com/things-to-do/",
+      "https://www.meetboston.com/culinary/",
+      "https://www.meetboston.com/blog/post/first-visit-to-boston/",
+      "https://www.meetboston.com/blog/post/guys-weekend/",
+      "https://www.meetboston.com/blog/post/top-speakeasies-in-boston/"
+    ],
+    excludedCandidates: [
+      { name: "Tatte Bakery & Cafe (Charles Street)", url: "https://tattebakery.com/locations/ma/boston/70-charles-street/", checkedOn: "2026-10-02", reason: "Official branch page says closed for renovation. Used the separately checked Back Bay location, not a generic Tatte map search." },
+      { name: "Thinking Cup", reason: "Own website returned an error during review. Not added without current operator evidence; no closure claimed." }
+    ],
+    placeSources: {
+      "Freedom Trail": {
+        url: "https://www.thefreedomtrail.org/",
+        sourceType: "official trail operator",
+        secondSourceUrl: "https://www.meetboston.com/blog/post/first-visit-to-boston/",
+        checkedOn: "2026-10-02",
+        operatingEvidence: "Foundation advertises guided walks and identifies the route's historic sites. Walking the route does not include admission to every interior."
+      },
+      "Boston Common": {
+        url: "https://www.boston.gov/parks/boston-common",
+        sourceType: "official public site",
+        checkedOn: "2026-10-02",
+        operatingEvidence: "City Parks Department identifies the downtown public park and visitor facilities. The recommendation is a park visit, not a promise that every seasonal activity is operating."
+      },
+      "Boston Public Garden": {
+        url: "https://www.boston.gov/parks/public-garden",
+        sourceType: "official public site",
+        checkedOn: "2026-10-02",
+        operatingEvidence: "City Parks Department maintains a visitor page for the public garden. The guide recommends walking there, not a seasonal boat ride."
+      },
+      "Fenway Park": {
+        url: "https://www.mlb.com/redsox/ballpark/tours",
+        sourceType: "operator's own site",
+        secondSourceUrl: "https://www.meetboston.com/blog/post/first-visit-to-boston/",
+        checkedOn: "2026-10-02",
+        operatingEvidence: "Official stadium tours and booking listed."
+      },
+      "Museum of Fine Arts, Boston": {
+        url: "https://www.mfa.org/visit",
+        sourceType: "operator's own site",
+        checkedOn: "2026-10-02",
+        operatingEvidence: "Museum publishes visitor hours, admission and advance-ticket options. Its closure days must be checked before planning a visit."
+      },
+      "Isabella Stewart Gardner Museum": {
+        url: "https://www.gardnermuseum.org/visit",
+        sourceType: "operator's own site",
+        checkedOn: "2026-10-02",
+        operatingEvidence: "Official page lists 25 Evans Way, visitor hours and timed admission; advance tickets are recommended."
+      },
+      "New England Aquarium": {
+        url: "https://www.neaq.org/visit/",
+        sourceType: "operator's own site",
+        checkedOn: "2026-10-02",
+        operatingEvidence: "Visitor page lists 1 Central Wharf, current hours and ticket sales. It recommends advance booking, especially for busy dates."
+      },
+      "Boston Children's Museum": {
+        url: "https://bostonchildrensmuseum.org/visit/",
+        sourceType: "operator's own site",
+        checkedOn: "2026-10-02",
+        operatingEvidence: "Museum lists 308 Congress Street, current opening days, advance tickets and exhibits for children and families. Ignored its older summer-event travel advice."
+      },
+      "Boston Public Library (Central Library)": {
+        url: "https://www.bpl.org/locations/central/",
+        sourceType: "official public site",
+        checkedOn: "2026-10-02",
+        operatingEvidence: "Library lists public visitor hours at 700 Boylston Street and art, architecture and tour information. The map gallery has a temporary closure notice; it is not recommended as a separate attraction."
+      },
+      "Brattle Book Shop": {
+        url: "https://www.brattlebookshop.com/",
+        sourceType: "business's own site",
+        checkedOn: "2026-10-02",
+        operatingEvidence: "Bookshop lists 9 West Street, current browsing hours, used and rare books and its outdoor sale area."
+      },
+      "Boston Public Market": {
+        url: "https://bostonpublicmarket.org/",
+        sourceType: "operator's own site",
+        checkedOn: "2026-10-02",
+        operatingEvidence: "Market lists daily opening at 100 Hanover Street, food vendors and prepared meals. Individual vendor hours vary. The airport market is a different location."
+      },
+      "Boston Tea Party Ships & Museum": {
+        url: "https://www.bostonteapartyship.com/",
+        sourceType: "operator's own site",
+        checkedOn: "2026-10-02",
+        operatingEvidence: "Operator lists tours and ticket sales at 306 Congress Street, with historical interpreters and interactive exhibits."
+      },
+      "Row 34 (Seaport)": {
+        url: "https://www.row34.com/location/row34-seaport/",
+        sourceType: "business's own site",
+        secondSourceUrl: "https://www.meetboston.com/blog/post/guys-weekend/",
+        checkedOn: "2026-10-02",
+        operatingEvidence: "Branch page lists 383 Congress Street in Fort Point, lunch and dinner menus, hours and reservations. Seaport label distinguishes it from the Kenmore and Cambridge restaurants."
+      },
+      "Myers + Chang": {
+        url: "https://www.myersandchang.com/",
+        sourceType: "business's own site",
+        checkedOn: "2026-10-02",
+        operatingEvidence: "Official site lists 1145 Washington Street, dinner service, menus and reservations. Midday service is only on selected days, so this guide recommends it for dinner."
+      },
+      "Contessa (Boston)": {
+        url: "https://contessaristorante.com/boston",
+        sourceType: "business's own site",
+        checkedOn: "2026-10-02",
+        operatingEvidence: "Boston-specific page lists 3 Newbury Street at the Newbury hotel, breakfast and dinner menus and reservations. Not the Miami restaurant of the same name."
+      },
+      "Grill 23 & Bar": {
+        url: "https://www.grill23.com/",
+        sourceType: "business's own site",
+        secondSourceUrl: "https://www.meetboston.com/blog/post/guys-weekend/",
+        additionalSourceUrls: ["https://www.grill23.com/menus"],
+        checkedOn: "2026-10-02",
+        operatingEvidence: "Restaurant lists 161 Berkeley Street, evening hours, steak and seafood menus and table reservations."
+      },
+      "o ya": {
+        url: "https://www.o-ya.restaurant/location/o-ya-boston/",
+        sourceType: "business's own site",
+        additionalSourceUrls: ["https://www.o-ya.restaurant/team-member/reservations/"],
+        checkedOn: "2026-10-02",
+        operatingEvidence: "Boston location page lists 9 East Street and dinner service. Its reservation page describes prepaid omakase bookings; the guide does not promise a la carte dining or cocktail-bar service."
+      },
+      "Neptune Oyster": {
+        url: "https://www.neptuneoyster.com/",
+        sourceType: "business's own site",
+        secondSourceUrl: "https://www.meetboston.com/blog/post/guys-weekend/",
+        checkedOn: "2026-10-02",
+        operatingEvidence: "Official page lists 63 Salem Street, seafood menu and daily service. Its explicit policy says no reservations, walk-ins only; used that policy rather than the contradictory search title."
+      },
+      "Flour Bakery + Cafe (Clarendon Street)": {
+        url: "https://www.flourbakery.com/",
+        sourceType: "business's own site",
+        additionalSourceUrls: ["https://order.toasttab.com/online/flourclarendon", "https://www.flourbakery.com/menus"],
+        checkedOn: "2026-10-02",
+        operatingEvidence: "Official site identifies the Clarendon Street bakery. Its operator ordering page lists 131 Clarendon Street, opening hours, breakfast, pastry and coffee menus. Toast is the operator's ordering service, not an independent second review."
+      },
+      "Tatte Bakery & Cafe (Back Bay)": {
+        url: "https://tattebakery.com/locations/ma/boston/399-boylston-st/",
+        sourceType: "business's own site",
+        checkedOn: "2026-10-02",
+        operatingEvidence: "Branch page lists 399 Boylston Street, daily hours, ordering, pastries, brunch, lunch and coffee. This is not the temporarily closed Charles Street branch."
+      },
+      "Bova's Bakery": {
+        url: "https://bovabakeryboston.net/",
+        sourceType: "business's own site",
+        additionalSourceUrls: ["https://bovabakeryboston.net/faqs/"],
+        checkedOn: "2026-10-02",
+        operatingEvidence: "Bakery advertises bread and pastries at 134 Salem Street. Its FAQ confirms takeout-only service; the guide does not describe it as a sit-down cafe."
+      },
+      "George Howell Coffee (Godfrey Hotel)": {
+        url: "https://georgehowellcoffee.com/pages/the-godfrey-hotel",
+        sourceType: "business's own site",
+        checkedOn: "2026-10-02",
+        operatingEvidence: "Operator lists the Godfrey Hotel cafe at 505 Washington Street, hours, coffee and ordering. Pastries from suppliers do not make it a separately verified bakery."
+      },
+      "Gracenote Coffee (Lincoln Street)": {
+        url: "https://gracenotecoffee.com/pages/locations",
+        sourceType: "business's own site",
+        checkedOn: "2026-10-02",
+        operatingEvidence: "Operator lists current cafe hours at 108 Lincoln Street. High Street Place is a different branch and is not the map target here."
+      },
+      "Offsuit": {
+        url: "https://www.offsuitboston.com/",
+        sourceType: "business's own site",
+        secondSourceUrl: "https://www.meetboston.com/blog/post/top-speakeasies-in-boston/",
+        checkedOn: "2026-10-02",
+        operatingEvidence: "Operator lists 5 Utica Street, cocktail service, current hours, reservations and walk-ins. Tourism board independently identifies the bar and address."
+      },
+      "Wig Shop Lounge": {
+        url: "https://www.wigshopboston.com/",
+        sourceType: "business's own site",
+        secondSourceUrl: "https://www.meetboston.com/blog/post/top-speakeasies-in-boston/",
+        additionalSourceUrls: ["https://www.wigshopboston.com/location/the-wig-shop-lounge/"],
+        checkedOn: "2026-10-02",
+        operatingEvidence: "Official pages list 27 Temple Place, evening service, cocktail menus, selected reservation hours and a 21-plus entry policy."
+      },
+      "Yvonne's": {
+        url: "https://www.yvonnesboston.com/location/yvonnes-boston/",
+        sourceType: "business's own site",
+        secondSourceUrl: "https://www.meetboston.com/blog/post/top-speakeasies-in-boston/",
+        checkedOn: "2026-10-02",
+        operatingEvidence: "Restaurant lists 2 Winter Place and nightly service. Reservations are for supper, not cocktails alone; the guide does not imply a bar-table reservation."
+      }
+    }
+  },
   "Cusco, Peru": {
     checkedOn: "2026-09-30",
     status: "source-checked",

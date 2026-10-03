@@ -301,6 +301,63 @@ window.HB_DATA = window.HB_DATA || {};
   });
   // Source-reviewed lists replace generated detail data, including its filler.
   // Evidence and review scope are recorded in data/city-source-ledger.js.
+  data.cityGuideDetailData["Boston, United States"] = {
+    bestAttractions: ["Freedom Trail", "Boston Common", "Boston Public Garden", "Fenway Park", "Museum of Fine Arts, Boston", "Isabella Stewart Gardner Museum", "New England Aquarium", "Boston Tea Party Ships & Museum"],
+    bestRestaurants: ["Row 34 (Seaport)", "Myers + Chang", "Contessa (Boston)", "Grill 23 & Bar", "o ya"],
+    bestBudget: ["Boston Common", "Boston Public Garden", "Boston Public Library (Central Library)"],
+    bestLuxury: ["o ya", "Contessa (Boston)", "Grill 23 & Bar"],
+    bestCouples: ["Isabella Stewart Gardner Museum", "Boston Public Garden", "Contessa (Boston)"],
+    bestKids: ["New England Aquarium", "Boston Children's Museum", "Boston Tea Party Ships & Museum"],
+    bestSolo: ["Brattle Book Shop", "Museum of Fine Arts, Boston", "Boston Public Library (Central Library)"],
+    bestFirstTimers: ["Freedom Trail", "Boston Common", "Boston Public Garden", "Fenway Park"],
+    bestUnique: ["Brattle Book Shop", "Boston Public Market", "Isabella Stewart Gardner Museum"],
+    bestBreakfast: ["Flour Bakery + Cafe (Clarendon Street)", "Tatte Bakery & Cafe (Back Bay)", "Contessa (Boston)"],
+    bestLunch: ["Neptune Oyster", "Row 34 (Seaport)", "Boston Public Market"],
+    bestDinner: ["Myers + Chang", "Grill 23 & Bar", "o ya", "Contessa (Boston)"],
+    bestCocktails: ["Offsuit", "Wig Shop Lounge", "Yvonne's"],
+    bestBakeries: ["Flour Bakery + Cafe (Clarendon Street)", "Tatte Bakery & Cafe (Back Bay)", "Bova's Bakery"],
+    bestCoffee: ["George Howell Coffee (Godfrey Hotel)", "Gracenote Coffee (Lincoln Street)", "Tatte Bakery & Cafe (Back Bay)"]
+  };
+  data.cityPlaceQueries = data.cityPlaceQueries || {};
+  data.cityPlaceQueries["Boston, United States"] = {
+    "Boston Public Library (Central Library)": "Boston Public Library 700 Boylston Street",
+    "Boston Public Market": "Boston Public Market 100 Hanover Street",
+    "Row 34 (Seaport)": "Row 34 383 Congress Street",
+    "Contessa (Boston)": "Contessa 3 Newbury Street",
+    "Grill 23 & Bar": "Grill 23 and Bar 161 Berkeley Street",
+    "Flour Bakery + Cafe (Clarendon Street)": "Flour Bakery 131 Clarendon Street",
+    "Tatte Bakery & Cafe (Back Bay)": "Tatte Bakery 399 Boylston Street",
+    "George Howell Coffee (Godfrey Hotel)": "George Howell Coffee 505 Washington Street",
+    "Gracenote Coffee (Lincoln Street)": "Gracenote Coffee 108 Lincoln Street",
+    "o ya": "o ya 9 East Street"
+  };
+  const boston = data.cityGuideData.find((guide) => guide.city === "Boston, United States");
+  boston.summary = "Walk the Freedom Trail, choose a museum or a Fenway visit, and find seafood, bakeries, and coffee stops by neighborhood.";
+  boston.highlights = ["Freedom Trail", "Boston Public Garden", "Fenway Park", "Museum of Fine Arts, Boston"];
+  boston.tip = "Keep downtown walks together, then give the Fenway museums or the waterfront their own outing. You do not need to cross the city between every stop.";
+  data.destinationFacts["Boston, United States"] = boston.tip;
+  data.destinationHeroData["Boston, United States"].copy = boston.summary;
+  data.cityPlanningToolkitData["Boston, United States"] = [
+    { label: "Start here", value: "Choose one main outing for the day", copy: "Begin a history-focused day at Boston Common and follow the part of the Freedom Trail that interests you. Save time for indoor visits rather than trying to enter every site along the route." },
+    { label: "Where to stay", value: "Compare Back Bay with downtown", copy: "Back Bay puts the Public Library and the Boylston Street cafes in the same part of town. Downtown suits the Common, Brattle Book Shop, and the start of the Freedom Trail. Pick one base; moving hotels between these areas is unnecessary for a short visit." },
+    { label: "Book early", value: "Reserve your museum visit and any special dinner", copy: "The Gardner Museum recommends advance timed tickets, and the Aquarium advises booking before you arrive. o ya uses prepaid tasting-menu reservations. Check the cancellation terms and current menus before committing." },
+    { label: "Eating out", value: "Not every restaurant takes reservations", copy: "Neptune Oyster is walk-in only, so keep that lunch flexible. Row 34's Seaport branch takes reservations. For coffee downtown, choose George Howell at the Godfrey Hotel or Gracenote on Lincoln Street; the map links identify those branches." }
+  ];
+  data.cityEditorialPageData["Boston, United States"] = {
+    dek: "History walks, art museums, seafood lunches, and coffee stops you can work into a few days in Boston.",
+    intro: [
+      "Start with Boston Common and decide how much of the Freedom Trail you want to walk. You can follow a section on your own or book a guided tour with the Freedom Trail Foundation. The Public Garden gives you an easy change of pace nearby. You do not have to finish the whole trail for the day to feel worthwhile.",
+      "Give the Museum of Fine Arts or the Isabella Stewart Gardner Museum time of its own. Choose the collection that interests you instead of squeezing both between other bookings. If Fenway Park is on your list, check the official tour calendar before setting the day. These outings work better without a rushed return to the waterfront for lunch.",
+      "For seafood, compare Neptune Oyster in the North End with Row 34 on Congress Street. Neptune is walk-in only; Row 34 takes reservations. Myers + Chang offers another dinner option in the South End. For a special meal, look at o ya's tasting menu, Grill 23 & Bar, or Contessa in the Newbury hotel. Check menus and booking terms yourself before reserving.",
+      "Breakfast can be as simple as Flour on Clarendon Street or Tatte's Back Bay cafe on Boylston Street. Bova's Bakery is a takeout pastry stop in the North End. Browse Brattle Book Shop or the vendors at Boston Public Market when you want a shorter outing. With children, choose the Aquarium, Children's Museum, or Tea Party Ships & Museum rather than booking all three in one day. Offsuit, Wig Shop Lounge, and Yvonne's are evening options for adults; check each venue's entry and reservation policy."
+    ],
+    summaryCards: [
+      ["First morning", "Boston Common, a section of the Freedom Trail, and a stop in the Public Garden."],
+      ["Pick your afternoon", "Art museums, Fenway Park, or a family visit on the waterfront."],
+      ["Plan one meal", "A seafood lunch, a South End dinner, or a tasting menu booked ahead."]
+    ],
+    trust: "The named recommendations in this guide were checked against official venue, operator, and tourism websites on October 2, 2026. This was a website review, not a visit. Confirm hours, menus, and reservations before traveling."
+  };
   data.cityGuideDetailData["Cusco, Peru"] = {
     bestAttractions: ["Sacsayhuaman", "Qorikancha", "Cusco Cathedral", "Plaza de Armas", "Centro de Textiles Tradicionales del Cusco", "ChocoMuseo Cusco"],
     bestRestaurants: ["Cicciolina", "Pachapapa", "MAP Cafe", "LIMO", "Green Point", "Oqre"],

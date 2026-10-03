@@ -90,6 +90,13 @@ test("source-checked map queries distinguish similarly named venues without chan
   const mapCafe = linkItem("MAP Cafe", "Cusco, Peru", "MAP Cafe Plazoleta Nazarenas 231");
   assert.match(mapCafe, /query=MAP%20Cafe%20Plazoleta%20Nazarenas%20231%20Cusco%2C%20Peru/);
   assert.equal(linkItem("A local market or craft district", "Cusco, Peru", "Not verified"), "A local market or craft district");
+  assert.equal(classifyItem("Row 34 (Seaport)").kind, "descriptor");
+  assert.match(linkItem("Row 34 (Seaport)", "Boston, United States", "Row 34 383 Congress Street"), /query=Row%2034%20383%20Congress%20Street%20Boston%2C%20United%20States/);
+  assert.equal(classifyItem("o ya").kind, "descriptor");
+  assert.match(linkItem("o ya", "Boston, United States", "o ya 9 East Street"), /query=o%20ya%209%20East%20Street%20Boston/);
+  assert.equal(linkItem("Coffee near Pantheon", "Rome, Italy"), "Coffee near Pantheon");
+  assert.equal(linkItem("Coffee near Pantheon", "Rome, Italy", "  "), "Coffee near Pantheon");
+  assert.equal(linkItem("", "Boston, United States", "Somewhere"), "");
 });
 
 test("source-checked city details have dated evidence for every recommendation", () => {
@@ -106,6 +113,7 @@ test("source-checked city details have dated evidence for every recommendation",
   const reviewed = Object.entries(data.citySourceLedger)
     .filter(([, entry]) => entry.status === "source-checked");
   assert.ok(reviewed.some(([city]) => city === "Cusco, Peru"));
+  assert.ok(reviewed.some(([city]) => city === "Boston, United States"));
   const categories = Object.keys(data.cityGuideDetailData["Austin, United States"]).sort();
   for (const [city, entry] of reviewed) {
     assert.equal(entry.reviewScope, "cityGuideDetailData");
@@ -131,7 +139,19 @@ test("source-checked city details have dated evidence for every recommendation",
       }
     }
     assert.deepEqual([...publishedNames].sort(), Object.keys(entry.placeSources).sort(), `${city}: unused or missing source records`);
+    for (const [name, query] of Object.entries(data.cityPlaceQueries?.[city] || {})) {
+      assert.ok(publishedNames.has(name), `${city}: unused map override for ${name}`);
+      assert.ok(query.trim(), `${city}: empty map override for ${name}`);
+      assert.match(linkItem(name, city, query), /<a class="hb-place"/, `${city}: reviewed map target is not linked for ${name}`);
+    }
   }
+  const boston = data.cityGuideDetailData["Boston, United States"];
+  for (const name of new Set(Object.values(boston).flat())) {
+    assert.match(linkItem(name, "Boston, United States", data.cityPlaceQueries["Boston, United States"][name]), /<a class="hb-place"/, `Boston: ${name} should have a map link`);
+  }
+  assert.ok(boston.bestLunch.includes("Neptune Oyster"));
+  assert.ok(!boston.bestRestaurants.includes("Neptune Oyster"), "Walk-in-only venue is not a Worth booking recommendation");
+  assert.ok(!Object.values(boston).flat().some((name) => name.includes("Tatte") && name.includes("Charles")), "Renovating branch must not be recommended");
 });
 
 test("verification inventory stays current without changing generated pages", () => {

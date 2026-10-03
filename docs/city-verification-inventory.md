@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 1.
-- Classifier-passed (published, not fully documented in that format): 188.
+- Source-verified (complete dated evidence format): 2.
+- Classifier-passed (published, not fully documented in that format): 187.
 - Held back: 295.
 - Published destinations: 189; country hubs: 19; sitemap URLs: 214.
 
@@ -92,7 +92,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Boracay, Philippines | boracay | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Bordeaux, France | bordeaux | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
 | Borobudur, Indonesia | borobudur | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
-| Boston, United States | boston | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Boston, United States | boston | source-verified | source-checked | 26 | 41 | 15 | 15 | None |
 | Braga, Portugal | braga | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Brasilia, Brazil | brasilia | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Brighton, United Kingdom | brighton | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |

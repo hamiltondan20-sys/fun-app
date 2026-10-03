@@ -1,6 +1,6 @@
 # City Verification Status
 
-Updated: 2026-10-01. This is an editorial record, not a publication gate.
+Updated: 2026-10-02. This is an editorial record, not a publication gate.
 
 ## Current Inventory
 
@@ -9,17 +9,17 @@ destination a status: `source-verified`, `classifier-passed`, or `held-back`.
 There are 484 canonical destinations from 485 detail records. The existing
 Guilin merge accounts for the difference; no destination was deleted in this pass.
 
-- 1 source-verified in the complete dated evidence format: Cusco.
-- 188 published classifier-passed guides, including Austin's retained prior review.
+- 2 source-verified in the complete dated evidence format: Boston and Cusco.
+- 187 published classifier-passed guides, including Austin's retained prior review.
 - 295 held-back destinations.
 
-Two cities have a source-review history, but they are not identically documented.
+Three cities have a source-review history, but they are not identically documented.
 Austin has 32 legacy source references; three current activity labels do not
 exactly match those source keys, and per-place operating evidence is not yet
 migrated. This is a documentation gap, not evidence that those activities are
 false. Do not refresh its verification date or mark it fully documented without
 reviewing that mapping and evidence. Cusco has 18 distinct current recommendations
-with dated, scoped evidence. Counts of classifier matches remain separate.
+with dated, scoped evidence; Boston has 26. Counts of classifier matches remain separate.
 
 Refresh the inventory after a content or ledger change:
 
@@ -49,7 +49,31 @@ Use `data/city-source-ledger.js` for provenance rather than adding a bare boolea
 
 ## Completed This Pass
 
-**Cusco, Peru: one city completed.** All 15 detail fields now use recommendations
+**Boston, United States: completed October 2.** All 15 detail fields now have
+source records for their recommendations, covering 26 distinct places. Started
+with Meet Boston, then checked the venue or public operator's own pages and
+recorded the service, visit or reservation evidence. This is not a claim of 26
+restaurants: parks, museums, a trail, a bookshop and a market are also included.
+
+The Charles Street Tatte is excluded because its official page reports a
+renovation closure. The Back Bay branch at 399 Boylston Street was separately
+checked. Thinking Cup was not included after an error loading its own site;
+that is not a closure claim. Neptune Oyster stays in lunch, not the
+reservation-oriented restaurant list. Branch-specific map queries distinguish
+Row 34, Flour, Tatte, George Howell and Gracenote locations. Those explicit
+reviewed addresses can link names such as `o ya` and `Row 34` without altering
+the classifier or any publication gate. No claims of phone or in-person checks.
+
+Local verification: full image-generation, page-generation and release-check
+chain passed; six publication/provenance regression tests passed. The build has
+189 destination guides, 19 country hubs, 214 sitemap URLs and 214 `lastmod`
+elements. A link audit across 217 HTML files checked 4,267 internal anchor
+targets with zero broken; 1,757 JSON-LD blocks parsed. Browser checks at 390px
+and 1440px found no horizontal overflow or script errors. Screenshots were
+checked with local CSS and images; externally hosted fonts were blocked in this
+offline preview. The existing fallback city image was deliberately left alone.
+
+**Cusco, Peru: completed September 30.** All 15 detail fields now use recommendations
 with source records. There are 18 distinct named locations, including two
 separate branches of Qosqo Maki. Repeated recommendations across meal or traveler
 categories are not additional verified venues. The list includes landmarks and

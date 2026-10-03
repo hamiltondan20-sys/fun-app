@@ -3,6 +3,11 @@
 Prepared: 2026-10-01. Editorial planning only; no destination content or publication
 threshold changed. Option B remains in place: keep all 15 data fields.
 
+Progress, 2026-10-02: **Boston completed**, with 26 distinct recommendations
+documented across all 15 fields. Edinburgh is next. The estimates and counts
+below are the original planning snapshot, not live verification totals; use
+[the verification inventory](city-verification-inventory.md) for current counts.
+
 ## Demand Estimates, Not Keyword-Tool Results
 
 The numbers below are **low-confidence editorial estimates**, not measurements
@@ -16,7 +21,7 @@ rather than a seasonal peak. These are rough planning bands, not statistical
 confidence intervals or a forecast of traffic this site will receive. Actual
 volume may fall outside them. Adjacent ranks are especially uncertain.
 
-This is a priority list **within the 147 already-published destinations in the
+This was prepared as a priority list **within the 147 already-published destinations in the
 5-9 classifier band**, limited to city or town guides. It is not a claim that
 these are the world's 20 most-searched cities. High-demand guides outside that
 band, such as London and Paris, still need source review. Held-back cities such
@@ -47,9 +52,10 @@ These explain measurement, not the estimates below.
 Queries are exactly `things to do in {city}`, `best restaurants in {city}`, and
 `{city} itinerary`, with the city name shown in the table. `k` means 1,000 searches.
 
-Every candidate has **0 source-verified recommendations recorded in the current
-ledger**. This does not mean its existing attractions are fictitious. It means
-we do not yet have the dated evidence to count them as verified.
+At the October 1 planning snapshot, every candidate had **0 source-verified
+recommendations recorded in the ledger**. Boston has since been completed.
+Zero does not mean existing attractions are fictitious; it means dated evidence
+has not yet been recorded for those recommendations.
 
 `Named` is the existing classifier-entry total, including repeats. `Categories`
 shows nonempty fields / fields with at least one classifier-named entry. Nonempty
