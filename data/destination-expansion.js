@@ -358,6 +358,78 @@ window.HB_DATA = window.HB_DATA || {};
     ],
     trust: "The named recommendations in this guide were checked against official venue, operator, and tourism websites on October 2, 2026. This was a website review, not a visit. Confirm hours, menus, and reservations before traveling."
   };
+  // Source review and branch evidence: data/city-source-ledger.js, 2026-10-03.
+  data.cityGuideDetailData["Edinburgh, United Kingdom"] = {
+    bestAttractions: ["Edinburgh Castle", "Royal Mile", "National Museum of Scotland", "Scottish National Gallery", "Palace of Holyroodhouse", "Arthur's Seat"],
+    bestRestaurants: ["The Kitchin", "Restaurant Martin Wishart", "Timberyard", "The Scran & Scallie", "Howies Waterloo"],
+    bestBudget: ["National Museum of Scotland", "Scottish National Gallery", "Royal Botanic Garden Edinburgh"],
+    bestLuxury: ["The Kitchin", "Restaurant Martin Wishart", "Timberyard"],
+    bestCouples: ["Dean Village walk", "Royal Botanic Garden Edinburgh", "Timberyard"],
+    bestKids: ["National Museum of Scotland", "Camera Obscura & World of Illusions", "Dynamic Earth"],
+    bestSolo: ["Scottish Poetry Library", "Scottish National Gallery", "Fortitude Coffee (Hamilton Place)"],
+    bestFirstTimers: ["Edinburgh Castle", "Royal Mile", "National Museum of Scotland", "Palace of Holyroodhouse"],
+    bestUnique: ["Scottish Poetry Library", "Dean Village walk", "Arthur's Seat"],
+    bestBreakfast: ["Dishoom Edinburgh", "Soderberg Pavilion", "Twelve Triangles (Brunswick Street)"],
+    bestLunch: ["Howies Waterloo", "Dishoom Edinburgh", "Soderberg Pavilion"],
+    bestDinner: ["The Kitchin", "Restaurant Martin Wishart", "Timberyard", "The Scran & Scallie"],
+    bestCocktails: ["Bramble", "The Devil's Advocate", "Copper Blossom"],
+    bestBakeries: ["Lannan Bakery", "Twelve Triangles (Brunswick Street)", "Soderberg Pavilion"],
+    bestCoffee: ["The Milkman (7 Cockburn Street)", "Fortitude Coffee (Hamilton Place)", "Soderberg Pavilion"]
+  };
+  data.cityPlaceQueries["Edinburgh, United Kingdom"] = {
+    "Edinburgh Castle": "Edinburgh Castle Castlehill",
+    "Royal Mile": "Royal Mile Edinburgh",
+    "National Museum of Scotland": "National Museum of Scotland Chambers Street",
+    "Scottish National Gallery": "Scottish National Gallery The Mound",
+    "Palace of Holyroodhouse": "Palace of Holyroodhouse",
+    "Arthur's Seat": "Arthur's Seat Holyrood Park",
+    "Dean Village walk": "Dean Village Dean Path",
+    "Royal Botanic Garden Edinburgh": "Royal Botanic Garden Edinburgh West Gate Arboretum Place",
+    "Camera Obscura & World of Illusions": "Camera Obscura World of Illusions 549 Castlehill",
+    "Dynamic Earth": "Dynamic Earth Holyrood Road",
+    "Scottish Poetry Library": "Scottish Poetry Library 5 Crichton's Close",
+    "The Kitchin": "The Kitchin 78 Commercial Quay Leith",
+    "Restaurant Martin Wishart": "Restaurant Martin Wishart 54 The Shore Leith",
+    "Timberyard": "Timberyard 10 Lady Lawson Street",
+    "The Scran & Scallie": "The Scran and Scallie 1 Comely Bank Road",
+    "Howies Waterloo": "Howies 29 Waterloo Place",
+    "Dishoom Edinburgh": "Dishoom 3a St Andrew Square",
+    "Soderberg Pavilion": "Soderberg Pavilion 1 Lister Square",
+    "Twelve Triangles (Brunswick Street)": "Twelve Triangles 90 Brunswick Street",
+    "Lannan Bakery": "Lannan Bakery 29-35 Hamilton Place",
+    "The Milkman (7 Cockburn Street)": "The Milkman 7 Cockburn Street",
+    "Fortitude Coffee (Hamilton Place)": "Fortitude Coffee 66 Hamilton Place",
+    "Bramble": "Bramble Bar 16a Queen Street",
+    "The Devil's Advocate": "The Devil's Advocate 9 Advocate's Close",
+    "Copper Blossom": "Copper Blossom 107 George Street"
+  };
+  const edinburgh = data.cityGuideData.find((guide) => guide.city === "Edinburgh, United Kingdom");
+  edinburgh.summary = "Edinburgh Castle, the Royal Mile, free museums, and neighborhood restaurants, bakeries, and cafes.";
+  edinburgh.highlights = ["Edinburgh Castle", "Royal Mile", "National Museum of Scotland", "Arthur's Seat"];
+  edinburgh.tip = "Keep the Royal Mile sights together, then give Stockbridge or Leith a separate outing. Save Arthur's Seat for suitable weather and daylight, with shoes that grip.";
+  data.destinationFacts["Edinburgh, United Kingdom"] = edinburgh.tip;
+  data.destinationHeroData["Edinburgh, United Kingdom"].copy = edinburgh.summary;
+  data.cityPlanningToolkitData["Edinburgh, United Kingdom"] = [
+    { label: "Start here", value: "Choose a castle visit or a Royal Mile walk", copy: "The Royal Mile connects Edinburgh Castle with the Palace of Holyroodhouse. Start with the part you most want to see instead of booking every interior on the same day. The National Museum of Scotland is another option when you want time indoors." },
+    { label: "Getting around", value: "Group stops by neighborhood", copy: "Pair Dean Village with Stockbridge's cafes and bakeries. The Kitchin and Restaurant Martin Wishart are in Leith, so allow for the journey if you book dinner there. Arthur's Seat is a hill walk, not a quick city-center transfer; check the park's route notices and weather before setting out." },
+    { label: "Book early", value: "Reserve the castle and any special dinner", copy: "Edinburgh Castle advises advance tickets. Camera Obscura sells timed entry, and the palace has a dated booking calendar. Compare The Kitchin, Restaurant Martin Wishart, and Timberyard for a longer meal, checking current menus and terms before reserving." },
+    { label: "Eating out", value: "Match the stop to the meal", copy: "Dishoom serves breakfast as well as lunch and dinner, but small evening groups usually walk in. Twelve Triangles on Brunswick Street is takeaway only. Choose Soderberg Pavilion for a sit-down brunch, Howies Waterloo for lunch, or Fortitude on Hamilton Place for coffee in Stockbridge." }
+  ];
+  data.cityEditorialPageData["Edinburgh, United Kingdom"] = {
+    dek: "Castle visits, free museums, neighborhood walks, and places to eat without crossing Edinburgh between every stop.",
+    intro: [
+      "Give the Royal Mile time rather than treating it as a checklist. Edinburgh Castle sits at one end and the Palace of Holyroodhouse at the other; you can walk part of the route without visiting both on the same day. The Scottish Poetry Library, off Canongate, offers a quieter stop for readers. Check its limited weekday visiting hours before making a detour.",
+      "For a lower-cost day, start with the National Museum of Scotland or the Scottish National Gallery at the Mound. General admission is free, although some exhibitions cost extra. The Royal Botanic Garden's outdoor grounds are also free to enter. Check its current glasshouse access separately. For Arthur's Seat, wear shoes with grip and check the forecast and park notices; steep and slippery ground needs more care than a pavement walk.",
+      "Keep Stockbridge's food stops on the same outing as Dean Village. Lannan Bakery and Fortitude Coffee are on Hamilton Place, while The Scran & Scallie is on Comely Bank Road. Around the center, choose The Milkman at 7 Cockburn Street for coffee, Soderberg Pavilion in Quartermile for brunch, or Howies Waterloo for lunch. Twelve Triangles on Brunswick Street is a takeaway bakery, not a sit-down breakfast booking.",
+      "A dinner at The Kitchin or Restaurant Martin Wishart means heading to Leith; Timberyard is on Lady Lawson Street. Choose one special meal and let the rest stay flexible. Bramble is walk-in only, while The Devil's Advocate and Copper Blossom offer table bookings. With children, compare Dynamic Earth, Camera Obscura, and the National Museum rather than fitting all three into one day. Camera Obscura has stairs between floors and admits assistance dogs, not pet dogs. The Devil's Advocate also has stairs, so check access before booking."
+    ],
+    summaryCards: [
+      ["First visit", "Edinburgh Castle, part of the Royal Mile, and time for a museum."],
+      ["A slower outing", "Dean Village, Stockbridge, and a bakery or coffee stop."],
+      ["Before booking", "Check entry slots, restaurant policies, and access. Keep hill walks weather-dependent."]
+    ],
+    trust: "The named recommendations in this guide were checked against official venue, public-operator, and tourism websites on October 3, 2026. This was a website review, not a visit. Confirm current hours, access, and booking arrangements before traveling."
+  };
   data.cityGuideDetailData["Cusco, Peru"] = {
     bestAttractions: ["Sacsayhuaman", "Qorikancha", "Cusco Cathedral", "Plaza de Armas", "Centro de Textiles Tradicionales del Cusco", "ChocoMuseo Cusco"],
     bestRestaurants: ["Cicciolina", "Pachapapa", "MAP Cafe", "LIMO", "Green Point", "Oqre"],

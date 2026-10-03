@@ -1,6 +1,6 @@
 # Content Repair Queue
 
-Audit date: 2026-10-02. Generated from the same dry-run reviews used by
+Audit date: 2026-10-03. Generated from the same dry-run reviews used by
 `scripts/generate-pages.mjs`, after duplicate destinations are merged.
 
 ## Operating Gate and Impact Previews
@@ -9,7 +9,7 @@ Audit date: 2026-10-02. Generated from the same dry-run reviews used by
 | --- | ---: | ---: | ---: |
 | 5 | 189 | 19 | 214 |
 | 8 (preview only) | 67 | 5 | 78 |
-| 15 (preview only) | 28 | 2 | 36 |
+| 15 (preview only) | 29 | 2 | 37 |
 
 Keep the 350-word destination gate and 250-word country gate. Named entries
 must occur in at least three detail categories. Keep the operating minimum at
@@ -20,7 +20,7 @@ user approval before changing any gate. The previews above do not authorize it.
 ## Counting method
 
 The merged generator inventory contains 484 destinations. Its 5-9 band
-contains 147 guides, of which 146 pass all current publication gates.
+contains 146 guides, of which 145 pass all current publication gates.
 The supplied estimate of 121 guides does not match this checkout's classifier.
 
 `named` means an entry recognized by `classifyItem`, not an independently
@@ -34,14 +34,15 @@ Source verification remains a separate requirement in the sourcing checklist.
 Use [the demand-led next-20 list](city-sourcing-priorities.md) for work order.
 The groups below are arithmetic coverage buckets, not sourcing priorities.
 The zero-gap group already meets eight and appears separately for quality review.
-Within each group, the entries remain alphabetical for lookup after completing Cusco and Boston.
+Within each group, entries remain alphabetical for lookup after the completed reviews.
 All deficits below assume the three-category requirement already passes.
 
 Completed: **Cusco, Peru**, with 18 distinct source-recorded locations, and
-**Boston, United States**, with 26. Both have all 15 detail fields reviewed and
-have left this band. The classifier counts 47 named entries for Cusco and 41 for
-Boston because recommendations repeat and some real names miss its heuristic.
-Neither total is a count of independently verified places. See
+**Boston, United States**, with 26, and **Edinburgh, United Kingdom**, with 25.
+All have all 15 detail fields reviewed and have left this band. The classifier
+counts 47 named entries for Cusco, 41 for Boston and 48 for Edinburgh because
+recommendations repeat and some real names miss its heuristic. These totals
+are not counts of independently verified places. See
 `docs/city-verification-status.md` for scope, operating evidence, and limitations.
 
 London, Rome, Tokyo, Mexico City, Amsterdam, Toronto, Sydney, and San Francisco
@@ -207,7 +208,6 @@ They are not a claim that all existing names have been verified.
 | Casablanca, Morocco (`casablanca`) | 8 | 6 | 0 | Eligible |
 | Delhi, India (`delhi`) | 9 | 5 | 0 | Eligible |
 | Easter Island, Chile (`easter-island`) | 8 | 4 | 0 | Eligible |
-| Edinburgh, United Kingdom (`edinburgh`) | 9 | 5 | 0 | Eligible |
 | Isfahan, Iran (`isfahan`) | 8 | 4 | 0 | Eligible |
 | Jakarta, Indonesia (`jakarta`) | 9 | 5 | 0 | Eligible |
 | Jerusalem, Israel (`jerusalem`) | 8 | 4 | 0 | Eligible |

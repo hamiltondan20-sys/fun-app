@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 2.
-- Classifier-passed (published, not fully documented in that format): 187.
+- Source-verified (complete dated evidence format): 3.
+- Classifier-passed (published, not fully documented in that format): 186.
 - Held back: 295.
 - Published destinations: 189; country hubs: 19; sitemap URLs: 214.
 
@@ -169,7 +169,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Durban, South Africa | durban | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Easter Island, Chile | easter-island | classifier-passed | not-reviewed | 0 | 8 | 15 | 4 | None |
 | Ecuadorian Andes, Ecuador | ecuadorian-andes | classifier-passed | not-reviewed | 0 | 5 | 15 | 3 | None |
-| Edinburgh, United Kingdom | edinburgh | classifier-passed | not-reviewed | 0 | 9 | 15 | 5 | None |
+| Edinburgh, United Kingdom | edinburgh | source-verified | source-checked | 25 | 48 | 15 | 15 | None |
 | Edmonton, Canada | edmonton | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Egyptian Pyramids and Valley of the Kings, Egypt | egyptian-pyramids | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
 | El Nido, Philippines | el-nido | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |

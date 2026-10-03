@@ -3,8 +3,9 @@
 Prepared: 2026-10-01. Editorial planning only; no destination content or publication
 threshold changed. Option B remains in place: keep all 15 data fields.
 
-Progress, 2026-10-02: **Boston completed**, with 26 distinct recommendations
-documented across all 15 fields. Edinburgh is next. The estimates and counts
+Progress, 2026-10-03: **Boston completed** with 26 distinct recommendations;
+**Edinburgh source review completed** with 25, across all 15 fields. Dublin is
+next. The estimates and counts
 below are the original planning snapshot, not live verification totals; use
 [the verification inventory](city-verification-inventory.md) for current counts.
 
@@ -53,7 +54,7 @@ Queries are exactly `things to do in {city}`, `best restaurants in {city}`, and
 `{city} itinerary`, with the city name shown in the table. `k` means 1,000 searches.
 
 At the October 1 planning snapshot, every candidate had **0 source-verified
-recommendations recorded in the ledger**. Boston has since been completed.
+recommendations recorded in the ledger**. Boston and Edinburgh have since been reviewed.
 Zero does not mean existing attractions are fictitious; it means dated evidence
 has not yet been recorded for those recommendations.
 

@@ -114,6 +114,7 @@ test("source-checked city details have dated evidence for every recommendation",
     .filter(([, entry]) => entry.status === "source-checked");
   assert.ok(reviewed.some(([city]) => city === "Cusco, Peru"));
   assert.ok(reviewed.some(([city]) => city === "Boston, United States"));
+  assert.ok(reviewed.some(([city]) => city === "Edinburgh, United Kingdom"));
   const categories = Object.keys(data.cityGuideDetailData["Austin, United States"]).sort();
   for (const [city, entry] of reviewed) {
     assert.equal(entry.reviewScope, "cityGuideDetailData");
@@ -152,6 +153,15 @@ test("source-checked city details have dated evidence for every recommendation",
   assert.ok(boston.bestLunch.includes("Neptune Oyster"));
   assert.ok(!boston.bestRestaurants.includes("Neptune Oyster"), "Walk-in-only venue is not a Worth booking recommendation");
   assert.ok(!Object.values(boston).flat().some((name) => name.includes("Tatte") && name.includes("Charles")), "Renovating branch must not be recommended");
+  const edinburgh = data.cityGuideDetailData["Edinburgh, United Kingdom"];
+  assert.equal(new Set(Object.values(edinburgh).flat()).size, 25);
+  assert.ok(edinburgh.bestCouples.includes("Dean Village walk"), "Keep the source-backed activity descriptor");
+  assert.equal(classifyItem("Dean Village walk").kind, "descriptor");
+  assert.ok(!edinburgh.bestRestaurants.includes("Dishoom Edinburgh"), "Do not promise unrestricted evening reservations");
+  assert.ok(!Object.values(edinburgh).flat().includes("Lowdown Coffee"), "Unusable operator source must not be presented as verified");
+  for (const name of new Set(Object.values(edinburgh).flat())) {
+    assert.match(linkItem(name, "Edinburgh, United Kingdom", data.cityPlaceQueries["Edinburgh, United Kingdom"][name]), /<a class="hb-place"/, `Edinburgh: ${name} should have a reviewed map link`);
+  }
 });
 
 test("verification inventory stays current without changing generated pages", () => {

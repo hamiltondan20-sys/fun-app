@@ -5,6 +5,201 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Edinburgh, United Kingdom": {
+    checkedOn: "2026-10-03",
+    status: "source-checked",
+    reviewScope: "cityGuideDetailData",
+    verificationMethod: "official-web-review",
+    limitations: "Official website review, not a visit or telephone confirmation. Operating evidence means a venue advertises service, visits, or bookings, not guaranteed future availability. Public streets, gardens and hill walks are not businesses. Category suitability and suggested grouping are editorial judgment. Secondary sources were recorded where checked; same-operator pages are not independent corroboration. Older event dates on otherwise current sites were not reused.",
+    sourceUrls: [
+      "https://edinburgh.org/things-to-do/top-attractions/",
+      "https://edinburgh.org/food-and-drink/fine-dining/",
+      "https://edinburgh.org/food-and-drink/bakeries-and-delicatessens/",
+      "https://edinburgh.org/food-and-drink/cafes-and-coffee-shops/",
+      "https://edinburgh.org/food-and-drink/bars-and-pubs-in-edinburgh/",
+      "https://edinburgh.org/neighbourhoods/the-royal-mile/",
+      "https://edinburgh.org/inspire/edinburgh-city-guides/romantic/"
+    ],
+    excludedCandidates: [
+      { name: "Lowdown Coffee", url: "https://www.lowdown.coffee/", checkedOn: "2026-10-03", reason: "The domain linked by the tourism board returned unrelated gambling content. Not used as operator evidence; no claim that the cafe has closed. Fortitude's Hamilton Place branch was separately checked." },
+      { name: "Panda & Sons", url: "https://www.pandaandsons.com/", checkedOn: "2026-10-03", reason: "Own site returned no readable operating information in this review. Tourism listing alone was not used to claim an operator check. No closure claimed." }
+    ],
+    placeSources: {
+      "Edinburgh Castle": {
+        url: "https://www.edinburghcastle.scot/plan-your-visit/",
+        sourceType: "official public operator",
+        secondSourceUrl: "https://edinburgh.org/things-to-do/top-attractions/",
+        checkedOn: "2026-10-03",
+        operatingEvidence: "Visitor page advertises admission, opening information and advance tickets, warning that entry can sell out. Tourism board locates the castle at the top of the Royal Mile."
+      },
+      "Royal Mile": {
+        url: "https://edinburgh.org/neighbourhoods/the-royal-mile/",
+        sourceType: "official tourism board",
+        checkedOn: "2026-10-03",
+        operatingEvidence: "Official neighborhood page identifies the public street route between the castle and Palace of Holyroodhouse. Walking recommendation, not admission to every building or endorsement of older transport advice on the page."
+      },
+      "National Museum of Scotland": {
+        url: "https://www.nms.ac.uk/national-museum-of-scotland",
+        sourceType: "operator's own site",
+        secondSourceUrl: "https://edinburgh.org/things-to-do/top-attractions/",
+        checkedOn: "2026-10-03",
+        operatingEvidence: "Museum lists Chambers Street, daily visitor hours, family resources and free entry with charges for some special exhibitions. Current 2026-2027 programming also listed."
+      },
+      "Scottish National Gallery": {
+        url: "https://www.nationalgalleries.org/visit/scottish-national-gallery",
+        sourceType: "operator's own site",
+        secondSourceUrl: "https://edinburgh.org/things-to-do/top-attractions/",
+        checkedOn: "2026-10-03",
+        operatingEvidence: "National Galleries' National venue at the Mound lists daily hours, free general admission and some charged exhibitions. Common Scottish National Gallery name retained; not the Modern or Portrait venue."
+      },
+      "Palace of Holyroodhouse": {
+        url: "https://www.rct.uk/visit/palace-of-holyroodhouse",
+        sourceType: "operator's own site",
+        secondSourceUrl: "https://edinburgh.org/things-to-do/top-attractions/",
+        checkedOn: "2026-10-03",
+        operatingEvidence: "Royal Collection Trust sells dated 2026 admission and tours, describes visitor rooms and access restrictions. Guide tells readers to check their date, not assume daily opening."
+      },
+      "Arthur's Seat": {
+        url: "https://www.historicenvironment.scot/visit/all/holyrood-park/",
+        sourceType: "official public operator",
+        additionalSourceUrls: ["https://www.historicenvironment.scot/visit/all/holyrood-park/plan-your-visit/"],
+        checkedOn: "2026-10-03",
+        operatingEvidence: "Historic Environment Scotland identifies Arthur's Seat within Holyrood Park and publishes visitor access, free entry, route closures and warnings about drops and slippery surfaces. No sunrise hike or closed Radical Road route recommended."
+      },
+      "Dean Village walk": {
+        url: "https://edinburgh.org/inspire/edinburgh-city-guides/romantic/",
+        sourceType: "official tourism board",
+        additionalSourceUrls: ["https://edinburgh.org/blog/discover-the-water-of-leith-walkway/"],
+        checkedOn: "2026-10-03",
+        operatingEvidence: "Tourism board identifies Dean Path and the village on the Water of Leith, with walking context toward Stockbridge. Public neighborhood walk, not an invented tour operator or a guarantee that every riverside path is accessible."
+      },
+      "Royal Botanic Garden Edinburgh": {
+        url: "https://www.rbge.org.uk/visit/royal-botanic-garden-edinburgh/",
+        sourceType: "operator's own site",
+        secondSourceUrl: "https://edinburgh.org/things-to-do/top-attractions/",
+        checkedOn: "2026-10-03",
+        operatingEvidence: "Official page lists free garden entry, seasonal hours and the West Gate on Arboretum Place. Palm Houses reopening is listed for October 2 while other Glasshouses remain closed. Guide recommends the outdoor grounds and asks readers to check glasshouse access separately."
+      },
+      "Camera Obscura & World of Illusions": {
+        url: "https://www.camera-obscura.co.uk/",
+        sourceType: "operator's own site",
+        secondSourceUrl: "https://edinburgh.org/things-to-do/top-attractions/",
+        checkedOn: "2026-10-03",
+        operatingEvidence: "Operator lists 549 Castlehill, timed tickets and family exhibits. Own FAQ says floors are stair-only and only guide/assistance dogs enter. Used that policy over the contradictory tourism-board dog-friendly claim."
+      },
+      "Dynamic Earth": {
+        url: "https://dynamicearth.org.uk/",
+        sourceType: "operator's own site",
+        additionalSourceUrls: ["https://dynamicearth.org.uk/plan-your-visit/getting-here/"],
+        secondSourceUrl: "https://edinburgh.org/things-to-do/top-attractions/",
+        checkedOn: "2026-10-03",
+        operatingEvidence: "Science center advertises interactive exhibits, planetarium and tickets with current October programming. Directions page locates it on Holyrood Road near the palace. No fixed show time promised."
+      },
+      "Scottish Poetry Library": {
+        url: "https://www.scottishpoetrylibrary.org.uk/visit/",
+        sourceType: "operator's own site",
+        checkedOn: "2026-10-03",
+        operatingEvidence: "Library lists public visits Monday to Thursday, 10am-3pm, at 5 Crichton's Close off Canongate, with free work and study spaces. Limited hours are noted rather than promising a weekend visit."
+      },
+      "The Kitchin": {
+        url: "https://thekitchin.com/",
+        sourceType: "business's own site",
+        secondSourceUrl: "https://edinburgh.org/food-and-drink/fine-dining/",
+        checkedOn: "2026-10-03",
+        operatingEvidence: "Official restaurant site lists 78 Commercial Quay in Leith, menus and table reservations. Tourism board corroborates the Leith location."
+      },
+      "Restaurant Martin Wishart": {
+        url: "https://restaurantmartinwishart.co.uk/enquiries/",
+        sourceType: "business's own site",
+        secondSourceUrl: "https://edinburgh.org/food-and-drink/fine-dining/",
+        additionalSourceUrls: ["https://restaurantmartinwishart.co.uk/privacy-policy/"],
+        checkedOn: "2026-10-03",
+        operatingEvidence: "Own enquiries page advertises regular lunch/dinner service, tasting menus and telephone/email contact; own address is 54 The Shore. Older 2025 holiday exceptions were ignored. Booking page had no readable widget, so no specific availability is claimed."
+      },
+      "Timberyard": {
+        url: "https://www.timberyard.co/",
+        sourceType: "business's own site",
+        secondSourceUrl: "https://edinburgh.org/food-and-drink/fine-dining/",
+        checkedOn: "2026-10-03",
+        operatingEvidence: "Own site lists 10 Lady Lawson Street, current menus, reservation link and booking times. Older event text and inconsistent footer hours were not copied. Used for a planned meal, not as a walk-in family cafe."
+      },
+      "The Scran & Scallie": {
+        url: "https://scranandscallie.com/",
+        sourceType: "business's own site",
+        additionalSourceUrls: ["https://scranandscallie.com/menus/"],
+        checkedOn: "2026-10-03",
+        operatingEvidence: "Own site identifies the Stockbridge gastropub at 1 Comely Bank Road, seasonal menus and table reservations. Menu page includes children's dining."
+      },
+      "Howies Waterloo": {
+        url: "https://www.howies.uk.com/venues/howies-waterloo-place/",
+        sourceType: "business's own site",
+        additionalSourceUrls: ["https://www.howies.uk.com/book/"],
+        checkedOn: "2026-10-03",
+        operatingEvidence: "Branch page lists 29 Waterloo Place, lunch and dinner daily, menus and reservations. Kept separate from Howies Victoria and Scotts Kitchen. No fixed menu price copied."
+      },
+      "Dishoom Edinburgh": {
+        url: "https://www.dishoom.com/edinburgh/",
+        sourceType: "business's own site",
+        checkedOn: "2026-10-03",
+        operatingEvidence: "Edinburgh branch lists 3a St Andrew Square, breakfast, lunch and dinner, daily hours and reservation policy. After 6pm, bookings are for groups of six or more; smaller groups walk in. Not included in the unconditional Worth booking list."
+      },
+      "Soderberg Pavilion": {
+        url: "https://www.soderberg.uk/pavilion",
+        sourceType: "business's own site",
+        additionalSourceUrls: ["https://www.soderberg.uk/the-bakery-1"],
+        checkedOn: "2026-10-03",
+        operatingEvidence: "Branch page lists 1 Lister Square, brunch daily from 9am, evening service and drinks. Bakery page confirms Edinburgh production above the Pavilion and bakes served at all locations. ASCII spelling maps to Soderberg's Edinburgh Pavilion, not a London branch."
+      },
+      "Twelve Triangles (Brunswick Street)": {
+        url: "https://twelvetriangles.co.uk/visit-us",
+        sourceType: "business's own site",
+        secondSourceUrl: "https://edinburgh.org/food-and-drink/bakeries-and-delicatessens/",
+        checkedOn: "2026-10-03",
+        operatingEvidence: "Own branch list gives 90 Brunswick Street, daily 7am-2pm and takeaway only. Tourism board corroborates bread and pastry service. Breakfast means a takeaway bakery stop, not a sit-down meal."
+      },
+      "Lannan Bakery": {
+        url: "https://www.lannanbakery.com/",
+        sourceType: "business's own site",
+        secondSourceUrl: "https://edinburgh.org/food-and-drink/bakeries-and-delicatessens/",
+        checkedOn: "2026-10-03",
+        operatingEvidence: "Own site lists bakery and pantry at 29-35 Hamilton Place, with Tuesday-Sunday hours and menu link. Tourism board corroborates the location and pastry offering."
+      },
+      "The Milkman (7 Cockburn Street)": {
+        url: "https://themilkman.coffee/",
+        sourceType: "business's own site",
+        secondSourceUrl: "https://edinburgh.org/food-and-drink/cafes-and-coffee-shops/",
+        checkedOn: "2026-10-03",
+        operatingEvidence: "Own site publishes daily hours and two Cockburn Street locations, numbers 7 and 52. This recommendation and its map select number 7, not an ambiguous chain-wide search."
+      },
+      "Fortitude Coffee (Hamilton Place)": {
+        url: "https://www.fortitudecoffee.com/contact",
+        sourceType: "business's own site",
+        secondSourceUrl: "https://edinburgh.org/food-and-drink/cafes-and-coffee-shops/",
+        checkedOn: "2026-10-03",
+        operatingEvidence: "Official visit page lists 66 Hamilton Place with weekday and weekend hours. Kept distinct from its Abbey Mount branch; tourism board corroborates the Stockbridge location."
+      },
+      "Bramble": {
+        url: "https://www.bramblebar.co.uk/",
+        sourceType: "business's own site",
+        checkedOn: "2026-10-03",
+        operatingEvidence: "Own bar site lists 16a Queen Street, daily evening hours, drinks menu and walk-ins-only policy. Not presented as a reservable table."
+      },
+      "The Devil's Advocate": {
+        url: "https://www.devilsadvocateedinburgh.co.uk/",
+        sourceType: "business's own site",
+        secondSourceUrl: "https://edinburgh.org/food-and-drink/bars-and-pubs-in-edinburgh/",
+        checkedOn: "2026-10-03",
+        operatingEvidence: "Own site lists 9 Advocate's Close, daily service, cocktail menus and table booking. Explicitly warns that access includes stairs; included that limitation in the guide."
+      },
+      "Copper Blossom": {
+        url: "https://copperblossom.com/",
+        sourceType: "business's own site",
+        secondSourceUrl: "https://edinburgh.org/food-and-drink/bars-and-pubs-in-edinburgh/",
+        checkedOn: "2026-10-03",
+        operatingEvidence: "Own site lists basement 107 George Street, cocktail menu, table bookings and current food/drink service. Tourism board corroborates address and cocktail-bar identity."
+      }
+    }
+  },
   "Boston, United States": {
     checkedOn: "2026-10-02",
     status: "source-checked",

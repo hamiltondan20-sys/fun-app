@@ -1,6 +1,6 @@
 # City Verification Status
 
-Updated: 2026-10-02. This is an editorial record, not a publication gate.
+Updated: 2026-10-03. This is an editorial record, not a publication gate.
 
 ## Current Inventory
 
@@ -9,17 +9,17 @@ destination a status: `source-verified`, `classifier-passed`, or `held-back`.
 There are 484 canonical destinations from 485 detail records. The existing
 Guilin merge accounts for the difference; no destination was deleted in this pass.
 
-- 2 source-verified in the complete dated evidence format: Boston and Cusco.
-- 187 published classifier-passed guides, including Austin's retained prior review.
+- 3 source-verified in the complete dated evidence format: Boston, Cusco and Edinburgh.
+- 186 published classifier-passed guides, including Austin's retained prior review.
 - 295 held-back destinations.
 
-Three cities have a source-review history, but they are not identically documented.
+Four cities have a source-review history, but they are not identically documented.
 Austin has 32 legacy source references; three current activity labels do not
 exactly match those source keys, and per-place operating evidence is not yet
 migrated. This is a documentation gap, not evidence that those activities are
 false. Do not refresh its verification date or mark it fully documented without
 reviewing that mapping and evidence. Cusco has 18 distinct current recommendations
-with dated, scoped evidence; Boston has 26. Counts of classifier matches remain separate.
+with dated, scoped evidence; Boston has 26 and Edinburgh has 25. Classifier matches remain separate.
 
 Refresh the inventory after a content or ledger change:
 
@@ -48,6 +48,32 @@ Use `data/city-source-ledger.js` for provenance rather than adding a bare boolea
 | No ledger entry | Source review is pending, regardless of classifier count. |
 
 ## Completed This Pass
+
+**Edinburgh, United Kingdom: source review completed October 3.** All 15 fields
+have evidence for 25 distinct places, including attractions, public spaces,
+restaurants, bakeries and bars. Started with Forever Edinburgh, then checked
+operator sites and branch addresses. Preserved the useful Dean Village walk.
+The review is scoped to these recommendations and recorded planning claims,
+not a blanket certification of every Edinburgh-related sentence in the app.
+
+Excluded Lowdown Coffee because the tourism-linked domain returned unrelated
+content, and Panda & Sons because no readable own-site operating information
+was available. Neither exclusion is a closure claim. Camera Obscura's own
+assistance-dogs-only policy overrides the tourism board's older pet-friendly
+description. The guide distinguishes takeaway-only Twelve Triangles, walk-in
+Bramble and Dishoom's evening group-booking restrictions. Garden and museum
+admission notes distinguish free general entry from separately ticketed areas.
+See [the research record](content-research/edinburgh.md) and the source ledger
+for exact URLs, dates and limitations.
+
+Local publication checks passed: full image-generation, page-generation and
+release-check chain, six regression tests, 4,267 internal anchor targets with
+zero broken, and 1,757 parsed JSON-LD blocks across 217 HTML files. Counts remain
+189 destination guides, 19 country hubs and 214 sitemap URLs with 214 lastmods.
+Browser checks at 390px and 1440px found one H1, 52 recommendation map links,
+loaded local imagery, no overflow and no script errors. Screenshots were
+reviewed using local styles and fallback fonts; external fonts were blocked.
+The existing fallback illustration and all publication gates were left alone.
 
 **Boston, United States: completed October 2.** All 15 detail fields now have
 source records for their recommendations, covering 26 distinct places. Started
