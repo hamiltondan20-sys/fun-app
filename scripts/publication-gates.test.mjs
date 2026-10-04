@@ -115,6 +115,7 @@ test("source-checked city details have dated evidence for every recommendation",
   assert.ok(reviewed.some(([city]) => city === "Cusco, Peru"));
   assert.ok(reviewed.some(([city]) => city === "Boston, United States"));
   assert.ok(reviewed.some(([city]) => city === "Edinburgh, United Kingdom"));
+  assert.ok(reviewed.some(([city]) => city === "Dublin, Ireland"));
   const categories = Object.keys(data.cityGuideDetailData["Austin, United States"]).sort();
   for (const [city, entry] of reviewed) {
     assert.equal(entry.reviewScope, "cityGuideDetailData");
@@ -161,6 +162,15 @@ test("source-checked city details have dated evidence for every recommendation",
   assert.ok(!Object.values(edinburgh).flat().includes("Lowdown Coffee"), "Unusable operator source must not be presented as verified");
   for (const name of new Set(Object.values(edinburgh).flat())) {
     assert.match(linkItem(name, "Edinburgh, United Kingdom", data.cityPlaceQueries["Edinburgh, United Kingdom"][name]), /<a class="hb-place"/, `Edinburgh: ${name} should have a reviewed map link`);
+  }
+  const dublin = data.cityGuideDetailData["Dublin, Ireland"];
+  assert.equal(new Set(Object.values(dublin).flat()).size, 22);
+  assert.ok(dublin.bestKids.includes("St Stephen's Green walk"));
+  assert.ok(!dublin.bestDinner.includes("Brother Hubbard North (Capel Street)"), "Temporarily closed dinner service must not be recommended");
+  assert.ok(!dublin.bestLunch.includes("Pickle"), "Later opening does not support a lunch recommendation");
+  assert.ok(!Object.values(dublin).flat().includes("Bread 41"), "Unreadable own-site evidence is not a completed operator check");
+  for (const name of new Set(Object.values(dublin).flat())) {
+    assert.match(linkItem(name, "Dublin, Ireland", data.cityPlaceQueries["Dublin, Ireland"][name]), /<a class="hb-place"/, `Dublin: ${name} should have a reviewed map link`);
   }
 });
 

@@ -1,6 +1,6 @@
 # City Verification Status
 
-Updated: 2026-10-03. This is an editorial record, not a publication gate.
+Updated: 2026-10-04. This is an editorial record, not a publication gate.
 
 ## Current Inventory
 
@@ -9,17 +9,18 @@ destination a status: `source-verified`, `classifier-passed`, or `held-back`.
 There are 484 canonical destinations from 485 detail records. The existing
 Guilin merge accounts for the difference; no destination was deleted in this pass.
 
-- 3 source-verified in the complete dated evidence format: Boston, Cusco and Edinburgh.
-- 186 published classifier-passed guides, including Austin's retained prior review.
+- 4 source-verified in the complete dated evidence format: Boston, Cusco, Edinburgh and Dublin.
+- 185 published classifier-passed guides, including Austin's retained prior review.
 - 295 held-back destinations.
 
-Four cities have a source-review history, but they are not identically documented.
+Five cities have a source-review history, but they are not identically documented.
 Austin has 32 legacy source references; three current activity labels do not
 exactly match those source keys, and per-place operating evidence is not yet
 migrated. This is a documentation gap, not evidence that those activities are
 false. Do not refresh its verification date or mark it fully documented without
 reviewing that mapping and evidence. Cusco has 18 distinct current recommendations
-with dated, scoped evidence; Boston has 26 and Edinburgh has 25. Classifier matches remain separate.
+with dated, scoped evidence; Boston has 26, Edinburgh has 25 and Dublin has 22.
+Classifier matches remain separate.
 
 Refresh the inventory after a content or ledger change:
 
@@ -48,6 +49,31 @@ Use `data/city-source-ledger.js` for provenance rather than adding a bare boolea
 | No ledger entry | Source review is pending, regardless of classifier count. |
 
 ## Completed This Pass
+
+**Dublin, Ireland: source review completed October 4.** All 15 detail fields
+have evidence for 22 distinct recommendations, including the separate Winding
+Stair shop and restaurant. Started with Visit Dublin, then checked operator
+visitor, location, menu and reservation pages. The park walk remains an activity,
+not an invented venue. Map targets distinguish cafe and bakery branches.
+
+Practical copy separates Trinity ticket options, free general admission from
+paid extras, and daytime cafes from dinner venues. Brother Hubbard North is
+not a dinner recommendation while its own site reports that service temporarily
+closed. Pickle's listed service does not support a lunch recommendation. The
+guide flags Chapter One's dietary limitations and Pickle's access restriction.
+Source-fetch failures are recorded as evidence gaps, never closure reports.
+See [the research record](content-research/dublin.md) for the exact source list.
+
+The complete build and release-check chain and all six regression tests passed.
+An audit parsed 1,757 JSON-LD blocks and checked 4,267 internal anchor targets
+across 217 HTML files, with zero invalid blocks or broken targets. There are
+still 189 destination guides, 19 country hubs, and 214 sitemap URLs with 214
+lastmods. Dublin's page has 51 recommendation links, representing 22 distinct
+recommendations. Browser checks at 390px and 1440px found one H1, no overflow,
+loaded local imagery, working FAQ controls and no script errors. Screenshots
+were reviewed with local styles and fallback fonts; external fonts were blocked.
+The first offline-preview attempt blocked an absolute local-asset URL; after
+correcting the preview routing, the existing image loaded without a site change.
 
 **Edinburgh, United Kingdom: source review completed October 3.** All 15 fields
 have evidence for 25 distinct places, including attractions, public spaces,

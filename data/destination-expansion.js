@@ -430,6 +430,75 @@ window.HB_DATA = window.HB_DATA || {};
     ],
     trust: "The named recommendations in this guide were checked against official venue, public-operator, and tourism websites on October 3, 2026. This was a website review, not a visit. Confirm current hours, access, and booking arrangements before traveling."
   };
+  // Source review and branch evidence: data/city-source-ledger.js, 2026-10-04.
+  data.cityGuideDetailData["Dublin, Ireland"] = {
+    bestAttractions: ["Book of Kells Experience", "Guinness Storehouse", "National Gallery of Ireland", "EPIC The Irish Emigration Museum", "MoLI - Museum of Literature Ireland"],
+    bestRestaurants: ["The Winding Stair", "Pickle", "Chapter One by Mickael Viljanen", "Glovers Alley", "D'Olier Street Restaurant"],
+    bestBudget: ["St Stephen's Green walk", "National Gallery of Ireland", "National Botanic Gardens (Glasnevin)"],
+    bestLuxury: ["Chapter One by Mickael Viljanen", "Glovers Alley", "D'Olier Street Restaurant"],
+    bestCouples: ["St Stephen's Green walk", "The Winding Stair", "Vintage Cocktail Club"],
+    bestKids: ["EPIC The Irish Emigration Museum", "National Gallery of Ireland", "St Stephen's Green walk"],
+    bestSolo: ["MoLI - Museum of Literature Ireland", "The Winding Stair Bookshop", "Cloud Picker Cafe (Pearse Street)"],
+    bestFirstTimers: ["Book of Kells Experience", "Guinness Storehouse", "National Gallery of Ireland"],
+    bestUnique: ["MoLI - Museum of Literature Ireland", "The Winding Stair Bookshop", "National Botanic Gardens (Glasnevin)"],
+    bestBreakfast: ["Brother Hubbard North (Capel Street)", "Two Pups (Francis Street)", "3fe (Grand Canal Street)"],
+    bestLunch: ["The Winding Stair", "Brother Hubbard North (Capel Street)", "3fe (Grand Canal Street)"],
+    bestDinner: ["Pickle", "The Winding Stair", "Chapter One by Mickael Viljanen", "Glovers Alley", "D'Olier Street Restaurant"],
+    bestCocktails: ["BAR 1661", "Vintage Cocktail Club", "Peruke & Periwig"],
+    bestBakeries: ["Bretzel Bakery (Portobello)", "Il Valentino (Grand Canal Dock)", "Two Pups (Francis Street)"],
+    bestCoffee: ["3fe (Grand Canal Street)", "Cloud Picker Cafe (Pearse Street)", "Brother Hubbard North (Capel Street)"]
+  };
+  data.cityPlaceQueries["Dublin, Ireland"] = {
+    "Book of Kells Experience": "Book of Kells Experience Trinity College College Green",
+    "Guinness Storehouse": "Guinness Storehouse St James's Gate",
+    "National Gallery of Ireland": "National Gallery of Ireland Merrion Square West",
+    "EPIC The Irish Emigration Museum": "EPIC The Irish Emigration Museum CHQ Custom House Quay",
+    "MoLI - Museum of Literature Ireland": "MoLI Museum of Literature Ireland 86 St Stephen's Green",
+    "St Stephen's Green walk": "St Stephen's Green Dublin",
+    "National Botanic Gardens (Glasnevin)": "National Botanic Gardens Glasnevin Dublin",
+    "The Winding Stair Bookshop": "The Winding Stair Bookshop 40 Lower Ormond Quay",
+    "The Winding Stair": "The Winding Stair Restaurant 40 Lower Ormond Quay",
+    "Pickle": "Pickle Restaurant Camden Street Dublin",
+    "Chapter One by Mickael Viljanen": "Chapter One Restaurant 18-19 Parnell Square North",
+    "Glovers Alley": "Glovers Alley Restaurant 128 St Stephen's Green",
+    "D'Olier Street Restaurant": "D'Olier Street Restaurant D'Olier Chambers Dublin",
+    "Brother Hubbard North (Capel Street)": "Brother Hubbard North 153 Capel Street",
+    "Two Pups (Francis Street)": "Two Pups 74 Francis Street",
+    "3fe (Grand Canal Street)": "3fe 32-34 Grand Canal Street Lower",
+    "Bretzel Bakery (Portobello)": "Bretzel Bakery Lennox Street Portobello",
+    "Il Valentino (Grand Canal Dock)": "Il Valentino 5 Gallery Quay Grand Canal Dock",
+    "Cloud Picker Cafe (Pearse Street)": "Cloud Picker Cafe 42 Pearse Street",
+    "BAR 1661": "BAR 1661 1-5 Green Street",
+    "Vintage Cocktail Club": "Vintage Cocktail Club 15 Crown Alley",
+    "Peruke & Periwig": "Peruke and Periwig 31 Dawson Street"
+  };
+  const dublin = data.cityGuideData.find((guide) => guide.city === "Dublin, Ireland");
+  dublin.summary = "Dublin's museums, bookshops, free gardens, and places for brunch, coffee, and a special dinner.";
+  dublin.highlights = ["Book of Kells Experience", "Guinness Storehouse", "National Gallery of Ireland", "EPIC The Irish Emigration Museum"];
+  dublin.tip = "Choose one timed visit, then keep nearby stops flexible. Check which Book of Kells ticket you want, and leave a separate outing for the gardens in Glasnevin.";
+  data.destinationFacts["Dublin, Ireland"] = dublin.tip;
+  data.destinationHeroData["Dublin, Ireland"].copy = dublin.summary;
+  data.cityPlanningToolkitData["Dublin, Ireland"] = [
+    { label: "Start here", value: "Choose a museum, then leave time to wander", copy: "Pair Trinity with the National Gallery or St Stephen's Green instead of booking every attraction on day one. EPIC is at Custom House Quay; the Guinness Storehouse is at St James's Gate. Pick the visit that interests you most, then plan the rest around it." },
+    { label: "Getting around", value: "Keep nearby stops together", copy: "Use the TFI journey planner for buses, trains, and Luas trams. The National Botanic Gardens are in Glasnevin, outside the compact city-center sightseeing area. Check the journey before adding them between two timed bookings." },
+    { label: "Book early", value: "Check ticket choices and dinner availability", copy: "The full Book of Kells Experience includes the Old Library and a separate digital exhibition; Old Library-only tickets differ. Reserve a time before visiting. Compare current menus at Chapter One, Glovers Alley, or D'Olier Street before choosing a special dinner, and discuss dietary requirements directly." },
+    { label: "Eating out", value: "Keep brunch and dinner plans separate", copy: "Brother Hubbard North on Capel Street and 3fe on Grand Canal Street serve breakfast and lunch. Brother Hubbard North currently lists dinner as temporarily closed. The Winding Stair serves lunch Wednesday to Sunday; Pickle opens later in the day. Check the service you want before reserving." }
+  ];
+  data.cityEditorialPageData["Dublin, Ireland"] = {
+    dek: "Start with the sights you want to see, then make room for bookshops, a garden walk, and a meal worth sitting down for.",
+    intro: [
+      "A first Dublin trip does not need a packed schedule. Choose the Book of Kells Experience for the manuscript and library, EPIC for stories of Irish emigration, or the Guinness Storehouse for its visitor exhibition. The Storehouse visit is not the same as a working-brewery tour. At Trinity, most Long Room books have been removed for redevelopment, so check what is on display rather than expecting every shelf to be full.",
+      "You can spend less without filling the day with compromises. The National Gallery's permanent collection is free, with separate charges for some exhibitions. St Stephen's Green has paths and a playground; check the park's closing time. The National Botanic Gardens in Glasnevin also offer free garden entry, but allow for the journey out of the center and check glasshouse access separately. For a literary stop, visit MoLI on St Stephen's Green or browse The Winding Stair Bookshop on Lower Ormond Quay.",
+      "Choose a food stop near the part of Dublin you are visiting. Brother Hubbard North is on Capel Street, Two Pups is on Francis Street, and 3fe's Grand Canal Street cafe serves daytime meals as well as coffee. Two Pups makes its pastries through its own Bold Boy Bakery. Try Bretzel Bakery in Portobello or Il Valentino at Grand Canal Dock for a bakery stop. Cloud Picker's Pearse Street cafe lists Monday-to-Saturday opening, so check before planning a Sunday coffee there.",
+      "For dinner, compare The Winding Stair's Irish menu with Pickle's North Indian cooking, or set aside a longer meal for Chapter One, Glovers Alley, or D'Olier Street. Chapter One says it cannot accommodate plant-based, dairy-free, or egg-free diets; contact the restaurant before booking if that affects your party. Pickle says its space is not wheelchair accessible. For cocktails, choose BAR 1661 on Green Street, Vintage Cocktail Club in Temple Bar, or Peruke & Periwig on Dawson Street. Confirm access and current opening details directly rather than assuming every venue suits every traveler."
+    ],
+    summaryCards: [
+      ["First visit", "One timed attraction, a free gallery visit, and room for a walk."],
+      ["A quieter afternoon", "MoLI, The Winding Stair Bookshop, or the gardens in Glasnevin."],
+      ["Before booking", "Check ticket inclusions, meal service, dietary needs, and access."]
+    ],
+    trust: "The named recommendations in this guide were checked against official venue, public-operator, and tourism websites on October 4, 2026. This was a website review, not a visit. Confirm current hours, access, and booking arrangements before traveling."
+  };
   data.cityGuideDetailData["Cusco, Peru"] = {
     bestAttractions: ["Sacsayhuaman", "Qorikancha", "Cusco Cathedral", "Plaza de Armas", "Centro de Textiles Tradicionales del Cusco", "ChocoMuseo Cusco"],
     bestRestaurants: ["Cicciolina", "Pachapapa", "MAP Cafe", "LIMO", "Green Point", "Oqre"],

@@ -1,6 +1,6 @@
 # Content Repair Queue
 
-Audit date: 2026-10-03. Generated from the same dry-run reviews used by
+Audit date: 2026-10-04. Generated from the same dry-run reviews used by
 `scripts/generate-pages.mjs`, after duplicate destinations are merged.
 
 ## Operating Gate and Impact Previews
@@ -8,8 +8,8 @@ Audit date: 2026-10-03. Generated from the same dry-run reviews used by
 | Minimum named entries | Destination guides | Country hubs | Sitemap URLs |
 | --- | ---: | ---: | ---: |
 | 5 | 189 | 19 | 214 |
-| 8 (preview only) | 67 | 5 | 78 |
-| 15 (preview only) | 29 | 2 | 37 |
+| 8 (preview only) | 68 | 5 | 79 |
+| 15 (preview only) | 30 | 2 | 38 |
 
 Keep the 350-word destination gate and 250-word country gate. Named entries
 must occur in at least three detail categories. Keep the operating minimum at
@@ -20,7 +20,7 @@ user approval before changing any gate. The previews above do not authorize it.
 ## Counting method
 
 The merged generator inventory contains 484 destinations. Its 5-9 band
-contains 146 guides, of which 145 pass all current publication gates.
+contains 145 guides, of which 144 pass all current publication gates.
 The supplied estimate of 121 guides does not match this checkout's classifier.
 
 `named` means an entry recognized by `classifyItem`, not an independently
@@ -38,9 +38,10 @@ Within each group, entries remain alphabetical for lookup after the completed re
 All deficits below assume the three-category requirement already passes.
 
 Completed: **Cusco, Peru**, with 18 distinct source-recorded locations, and
-**Boston, United States**, with 26, and **Edinburgh, United Kingdom**, with 25.
+**Boston, United States**, with 26, **Edinburgh, United Kingdom**, with 25,
+and **Dublin, Ireland**, with 22.
 All have all 15 detail fields reviewed and have left this band. The classifier
-counts 47 named entries for Cusco, 41 for Boston and 48 for Edinburgh because
+counts 47 named entries for Cusco, 41 for Boston, 48 for Edinburgh and 39 for Dublin because
 recommendations repeat and some real names miss its heuristic. These totals
 are not counts of independently verified places. See
 `docs/city-verification-status.md` for scope, operating evidence, and limitations.
@@ -181,7 +182,6 @@ They are not a claim that all existing names have been verified.
 | Chefchaouen, Morocco (`chefchaouen`) | 5 | 3 | 3 | Eligible |
 | Chengdu, China (`chengdu`) | 5 | 3 | 3 | Eligible |
 | Da Nang, Vietnam (`da-nang`) | 5 | 3 | 3 | Eligible |
-| Dublin, Ireland (`dublin`) | 5 | 3 | 3 | Eligible |
 | Ecuadorian Andes, Ecuador (`ecuadorian-andes`) | 5 | 3 | 3 | Eligible |
 | Fes, Morocco (`fes`) | 5 | 3 | 3 | Eligible |
 | Funchal, Portugal (`funchal`) | 5 | 3 | 3 | Eligible |

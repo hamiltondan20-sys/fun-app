@@ -11,8 +11,8 @@ Earth. The starting inventory is 484 canonical destination records, including
 Use the generated verification inventory for current counts, not this snapshot.
 
 1. Finish the demand-led published-city queue in `city-sourcing-priorities.md`.
-   Boston is complete. Edinburgh's source review is complete; Dublin is next,
-   then Singapore. Check the latest deployment checkpoint before moving on.
+   Boston and Edinburgh are complete. Dublin's source review is complete;
+   Singapore is next. Check the latest deployment checkpoint before moving on.
 2. Reconcile Austin's earlier review with the current per-place evidence format.
 3. Review remaining published destinations by demand, user usefulness and
    existing evidence gaps. Do not treat classifier matches as verification.
@@ -80,9 +80,15 @@ specific documented evidence blockers; do not keep rewriting completed guides.
 - Boston: completed and deployed 2026-10-02, 26 distinct source-recorded places.
 - Cusco: completed and deployed, 18 distinct source-recorded places.
 - Austin: earlier source review retained; evidence-format reconciliation pending.
-- Edinburgh: completed 2026-10-03, 25 distinct recommendations; local build,
-  regression, link and mobile/desktop checks passed. Before starting Dublin,
-  confirm the latest `main` deployment and the public Edinburgh page's
-  October 3, 2026 review note. If publication is interrupted, finish it first.
+- Edinburgh: completed and deployed 2026-10-03, 25 distinct recommendations.
+  Local build, regression, link and mobile/desktop checks passed. Commit
+  `26aa810` deployed successfully in Actions run `37155997591`; the public page
+  returned HTTP 200 with the October 3 review note and corrected venue links.
+- Dublin: source review completed 2026-10-04, 22 distinct recommendations across
+  all 15 fields. Resumed after the natural usage reset; no credits purchased or
+  reset credits redeemed. Full build, six regression tests, internal links,
+  JSON-LD and mobile/desktop checks passed. See `content-research/dublin.md`.
+  Before starting Singapore, confirm the latest `main` deployment and Dublin's
+  public October 4 review note. If publication was interrupted, finish it first.
 - Remaining work order and current coverage: see `city-sourcing-priorities.md`
   and `city-verification-inventory.md`.

@@ -5,6 +5,185 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Dublin, Ireland": {
+    checkedOn: "2026-10-04",
+    status: "source-checked",
+    reviewScope: "cityGuideDetailData",
+    verificationMethod: "official-web-review",
+    limitations: "Official website review, not a visit or telephone confirmation. Operating evidence means current advertised visits, service or reservations, not guaranteed availability. Public gardens are not businesses. Category suitability and suggested grouping are editorial judgments. Tourism pages were read October 3-4; operator checks were completed October 4. Independent second sources are recorded where checked; additional own-site pages are not independent corroboration. Exact prices and opening times are not promised.",
+    sourceUrls: [
+      "https://www.visitdublin.com/",
+      "https://www.visitdublin.com/plan/getting-around",
+      "https://www.visitdublin.com/guides/michelin-star-restaurants",
+      "https://www.visitdublin.com/guides/best-bakeries-dublin",
+      "https://www.visitdublin.com/guides/best-dublin-coffee"
+    ],
+    excludedCandidates: [
+      { name: "Bread 41", url: "https://bread41.ie/", checkedOn: "2026-10-04", reason: "Own-site requests did not return readable operating details. Tourism coverage alone was not treated as an operator check. No closure claimed." },
+      { name: "Restaurant Patrick Guilbaud", url: "https://restaurantpatrickguilbaud.ie/", checkedOn: "2026-10-04", reason: "Own-site requests were blocked. Not included without a readable current operator check; no closure claimed." },
+      { name: "Chester Beatty", url: "https://chesterbeatty.ie/", checkedOn: "2026-10-04", reason: "Own visitor pages could not be read in this review. Not included on the strength of a plausible description; no closure claimed." }
+    ],
+    placeSources: {
+      "Book of Kells Experience": {
+        url: "https://www.visittrinity.ie/book-of-kells-experience/",
+        sourceType: "operator's own site",
+        secondSourceUrl: "https://www.visitdublin.com/the-book-of-kells-experience",
+        checkedOn: "2026-10-04",
+        operatingEvidence: "Trinity's current page sells timed entry at College Green. Full experience includes the Old Library and Red Pavilion exhibition; library-only tickets differ. FAQ notes most Long Room books are removed except the first four bays. It describes assisted lift access and no luggage storage. Clean current page used over older referral-page prices and hours."
+      },
+      "Guinness Storehouse": {
+        url: "https://www.guinness-storehouse.com/en/visit",
+        sourceType: "operator's own site",
+        secondSourceUrl: "https://www.visitdublin.com/guinness-storehouse",
+        checkedOn: "2026-10-04",
+        operatingEvidence: "Operator advertises bookable visitor experiences at St James's Gate, Dublin 8, including a self-guided exhibition and Gravity Bar. Ordinary Storehouse admission is distinguished from separate brewery experiences. Not placed in the children's list or described as a working-brewery tour."
+      },
+      "National Gallery of Ireland": {
+        url: "https://www.nationalgallery.ie/visit-us/visitor-guide",
+        sourceType: "official public operator",
+        additionalSourceUrls: ["https://www.nationalgallery.ie/visit-us", "https://www.nationalgallery.ie/visit-us/opening-hours"],
+        secondSourceUrl: "https://www.visitdublin.com/national-gallery-of-ireland",
+        checkedOn: "2026-10-04",
+        operatingEvidence: "Gallery lists public visiting hours and entrances at Merrion Square West and Clare Street. Permanent collection entry is free; some exhibitions charge. Individual general visits need no booking, unlike groups. Family art resources and access information are provided. No promise that every room or work is on view."
+      },
+      "EPIC The Irish Emigration Museum": {
+        url: "https://epicchq.com/visit/epic-location-custom-house-quay/",
+        sourceType: "operator's own site",
+        secondSourceUrl: "https://www.visitdublin.com/epic-the-irish-emigration-museum",
+        checkedOn: "2026-10-04",
+        operatingEvidence: "Own visitor page gives daily opening, ticket options and CHQ, Custom House Quay, Dublin 1, D01 R9Y0. Tourism board corroborates the address and interactive, family-oriented exhibition. No fixed ticket price copied."
+      },
+      "MoLI - Museum of Literature Ireland": {
+        url: "https://moli.ie/visit/",
+        sourceType: "operator's own site",
+        secondSourceUrl: "https://www.visitdublin.com/moli-museum-of-literature-ireland",
+        checkedOn: "2026-10-04",
+        operatingEvidence: "Museum advertises visits, tickets, literary exhibits and public hours at 86 St Stephen's Green, Dublin 2. Tourism board corroborates its literary collections and location. Holiday exceptions are listed by the operator; guide does not promise every-day opening."
+      },
+      "St Stephen's Green walk": {
+        url: "https://heritageireland.ie/places-to-visit/st-stephens-green/",
+        sourceType: "official public operator",
+        checkedOn: "2026-10-04",
+        operatingEvidence: "OPW identifies the public park at the top of Grafton Street, free admission, paths, playground and seasonal closing times. Daytime park walk, not an invented tour business. Dog restrictions apply around the playground and water; no blanket pet-access claim."
+      },
+      "National Botanic Gardens (Glasnevin)": {
+        url: "https://heritageireland.ie/visit/places-to-visit/national-botanic-garden/",
+        sourceType: "official public operator",
+        checkedOn: "2026-10-04",
+        operatingEvidence: "OPW visitor page identifies Glasnevin, Dublin 9, D09 VY63, free garden admission, paid guided tours and seasonal visiting hours. Glasshouses are described but access is not guaranteed. Guide distinguishes the gardens from the compact city center; assistance-dog-only policy is not generalized to pet access."
+      },
+      "The Winding Stair Bookshop": {
+        url: "https://www.winding-stair.com/bookshop.html",
+        sourceType: "business's own site",
+        secondSourceUrl: "https://www.visitdublin.com/winding-stair-bookshop-and-restaurant",
+        checkedOn: "2026-10-04",
+        operatingEvidence: "Own bookshop page lists public opening hours, contact details and 40 Lower Ormond Quay, Dublin 1. Tourism board identifies the ground-floor independent shop separately from the upstairs restaurant. Browsing suggestion, not a claim that an undated past author event is upcoming."
+      },
+      "The Winding Stair": {
+        url: "https://www.winding-stair.com/",
+        sourceType: "business's own site",
+        secondSourceUrl: "https://www.visitdublin.com/winding-stair-bookshop-and-restaurant",
+        checkedOn: "2026-10-04",
+        operatingEvidence: "Restaurant advertises current Irish menus and table reservations at 40 Lower Ormond Quay. Lunch is Wednesday to Sunday; dinner is listed all week. Separate from the ground-floor bookshop. No unsupported accessibility claim for the upstairs dining room."
+      },
+      "Pickle": {
+        url: "https://picklerestaurant.com/",
+        sourceType: "business's own site",
+        checkedOn: "2026-10-04",
+        operatingEvidence: "Own site advertises North Indian cooking, menus and reservations on Camden Street. Listed service starts at 5pm weekdays and 3pm weekends, so it is not a lunch recommendation. Site explicitly says no wheelchair access and currently no takeaway. Booking restrictions differ for same-day requests."
+      },
+      "Chapter One by Mickael Viljanen": {
+        url: "https://chapteronerestaurant.com/reserve-a-table/",
+        sourceType: "business's own site",
+        additionalSourceUrls: ["https://chapteronerestaurant.com/"],
+        secondSourceUrl: "https://www.visitdublin.com/guides/michelin-star-restaurants",
+        checkedOn: "2026-10-04",
+        operatingEvidence: "Own pages list 18-19 Parnell Square North, menus and upcoming reservation availability. Reservation terms require advance dietary discussion and state plant-based, dairy-free and egg-free diets cannot be accommodated. Recommended as a planned special meal, not a universal dietary fit."
+      },
+      "Glovers Alley": {
+        url: "https://www.gloversalley.com/",
+        sourceType: "business's own site",
+        secondSourceUrl: "https://www.visitdublin.com/guides/michelin-star-restaurants",
+        checkedOn: "2026-10-04",
+        operatingEvidence: "Own site lists 128 St Stephen's Green, lunch and dinner menus, tasting options, hours and online booking. Own current chef differs from the tourism article's older attribution; guide avoids repeating either chef or award claims."
+      },
+      "D'Olier Street Restaurant": {
+        url: "https://www.dolierstreetrestaurant.com/",
+        sourceType: "business's own site",
+        secondSourceUrl: "https://www.visitdublin.com/guides/michelin-star-restaurants",
+        checkedOn: "2026-10-04",
+        operatingEvidence: "Own site advertises a seasonal tasting menu, drinks pairings and active reservations at D'Olier Chambers, Dublin, D02 H589. Longer special-dinner suggestion, without copying a fixed menu, price or award claim."
+      },
+      "Brother Hubbard North (Capel Street)": {
+        url: "https://brotherhubbard.ie/locations/",
+        sourceType: "business's own site",
+        additionalSourceUrls: ["https://brotherhubbard.ie/"],
+        secondSourceUrl: "https://www.visitdublin.com/guides/best-dublin-coffee",
+        checkedOn: "2026-10-04",
+        operatingEvidence: "Location page identifies North at 153 Capel Street, with breakfast, brunch and lunch service, bookings and walk-ins. Explicit temporary dinner closure takes precedence over the broader overview mentioning dinner. Not included in dinner recommendations."
+      },
+      "Two Pups (Francis Street)": {
+        url: "https://www.twopupscoffee.com/",
+        sourceType: "business's own site",
+        secondSourceUrl: "https://www.visitdublin.com/guides/best-bakeries-dublin",
+        additionalSourceUrls: ["https://www.visitdublin.com/guides/best-dublin-coffee"],
+        checkedOn: "2026-10-04",
+        operatingEvidence: "Own page lists a seven-day daytime cafe at 74 Francis Street, Dublin 8, with ordering and its in-house Bold Boy Bakery pastries. Tourism cafe guide describes brunch. Francis Street is distinct from the Fairview cafe and the evening Notions business at the same address."
+      },
+      "3fe (Grand Canal Street)": {
+        url: "https://3fe.com/pages/locations/grand-canal-street",
+        sourceType: "business's own site",
+        additionalSourceUrls: ["https://3fe.com/pages/locations"],
+        secondSourceUrl: "https://www.visitdublin.com/guides/best-dublin-coffee",
+        checkedOn: "2026-10-04",
+        operatingEvidence: "Own branch page lists 32-34 Grand Canal Street Lower, Dublin 2, public hours, booking and collection links, coffee, breakfast, lunch and brunch. Branch-specific record, not interchangeable with every 3fe location."
+      },
+      "Bretzel Bakery (Portobello)": {
+        url: "https://www.bretzel.ie/",
+        sourceType: "business's own site",
+        additionalSourceUrls: ["https://www.bretzel.ie/contact"],
+        secondSourceUrl: "https://www.visitdublin.com/guides/best-bakeries-dublin",
+        checkedOn: "2026-10-04",
+        operatingEvidence: "Own site actively invites visitors to the Portobello shop and supplies shop contact and map links, alongside bakery production. Tourism board places the shop on Lennox Street and describes bread, pastries and sandwiches. Exact shop hours were not visible in the fetched own-site text, so none are published."
+      },
+      "Il Valentino (Grand Canal Dock)": {
+        url: "https://www.ilvalentino.ie/",
+        sourceType: "business's own site",
+        secondSourceUrl: "https://www.visitdublin.com/guides/best-bakeries-dublin",
+        checkedOn: "2026-10-04",
+        operatingEvidence: "Own current menu and contact page identifies 5 Gallery Quay, Grand Canal Dock, Dublin 2, D02 N265, with coffee, bread, pastries and food. Distinct from its Mespil Road location. No exact opening time or tourism-only additional branch repeated."
+      },
+      "Cloud Picker Cafe (Pearse Street)": {
+        url: "https://cloudpickercoffee.ie/pages/find-us",
+        sourceType: "business's own site",
+        additionalSourceUrls: ["https://cloudpickercoffee.ie/blogs/news/shortlisted-best-cafe-in-dublin"],
+        secondSourceUrl: "https://www.visitdublin.com/guides/best-dublin-coffee",
+        checkedOn: "2026-10-04",
+        operatingEvidence: "Current Find Us page lists the Projector Room at 42 Pearse Street, Dublin, D02 KA44, with Monday-to-Saturday hours and contact. April 2026 own-site post corroborates the cafe. Not confused with airport counters or the Crumlin roastery; no Sunday visit promised."
+      },
+      "BAR 1661": {
+        url: "https://bar1661.ie/",
+        sourceType: "business's own site",
+        secondSourceUrl: "https://www.visitdublin.com/bar-1661",
+        checkedOn: "2026-10-04",
+        operatingEvidence: "Own site lists menus and booking at 1-5 Green Street, Dublin 7; tourism board corroborates the venue. Friday opening times conflict within the own page, so exact hours are not published and visitors are told to confirm."
+      },
+      "Vintage Cocktail Club": {
+        url: "https://vintagecocktailclub.com/",
+        sourceType: "business's own site",
+        secondSourceUrl: "https://www.visitdublin.com/vintage-cocktail-club",
+        checkedOn: "2026-10-04",
+        operatingEvidence: "Own site offers menus, operating hours and table bookings in Temple Bar. Tourism board corroborates 15 Crown Alley, Dublin 2, D02 E229. Not described as a children's venue or assumed step-free."
+      },
+      "Peruke & Periwig": {
+        url: "https://www.peruke.ie/",
+        sourceType: "business's own site",
+        secondSourceUrl: "https://www.visitdublin.com/peruke-periwig",
+        checkedOn: "2026-10-04",
+        operatingEvidence: "Own site lists cocktail menus, reservations, opening information and 31 Dawson Street, Dublin 2, D02 DR58. It distinguishes the ground-floor bar from upper-floor lounges. Guide makes no blanket step-free-access claim."
+      }
+    }
+  },
   "Edinburgh, United Kingdom": {
     checkedOn: "2026-10-03",
     status: "source-checked",

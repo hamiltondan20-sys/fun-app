@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 3.
-- Classifier-passed (published, not fully documented in that format): 186.
+- Source-verified (complete dated evidence format): 4.
+- Classifier-passed (published, not fully documented in that format): 185.
 - Held back: 295.
 - Published destinations: 189; country hubs: 19; sitemap URLs: 214.
 
@@ -164,7 +164,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Doha, Qatar | doha | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Dresden, Germany | dresden | held-back | not-reviewed | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Dubai, United Arab Emirates | dubai | classifier-passed | not-reviewed | 0 | 24 | 15 | 12 | None |
-| Dublin, Ireland | dublin | classifier-passed | not-reviewed | 0 | 5 | 15 | 3 | None |
+| Dublin, Ireland | dublin | source-verified | source-checked | 22 | 39 | 15 | 15 | None |
 | Dubrovnik, Croatia | dubrovnik | held-back | not-reviewed | 0 | 4 | 15 | 2 | has 4 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Durban, South Africa | durban | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Easter Island, Chile | easter-island | classifier-passed | not-reviewed | 0 | 8 | 15 | 4 | None |
