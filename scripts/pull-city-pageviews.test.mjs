@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { fullMonths, validateMonths, matchesCity } from "./pull-city-pageviews.mjs";
+import { fullMonths, validateMonths, matchesCity, compareRanks } from "./pull-city-pageviews.mjs";
 
 test("pageviews use the last twelve full months across year boundaries", () => {
   const period = fullMonths(new Date("2026-10-06T00:00:00Z"));
@@ -8,6 +8,18 @@ test("pageviews use the last twelve full months across year boundaries", () => {
   assert.equal(period.end, "2026093000");
   assert.equal(period.months.length, 12);
   assert.equal(fullMonths(new Date("2026-01-01T00:00:00Z")).start, "2025010100");
+});
+
+test("comparison flags more than five rank places and leaves absent data unranked", () => {
+  const wikipedia = Array.from({ length: 8 }, (_, i) => ({ city: String(i), total: 8 - i, status: "matched" }));
+  const voyage = wikipedia.map((r) => ({ ...r, total: 9 - r.total }));
+  const result = compareRanks(wikipedia, voyage);
+  assert.equal(result[0].city, "7");
+  assert.equal(result[0].difference, -7);
+  assert.equal(result[0].divergent, true);
+  const absent = compareRanks(wikipedia, [{ city: "0", status: "absent" }])[0];
+  assert.equal(absent.difference, null);
+  assert.equal(absent.wikivoyageRank, undefined);
 });
 
 test("namesakes and disambiguation pages cannot pass the city identity check", () => {

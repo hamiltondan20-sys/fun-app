@@ -1,0 +1,3081 @@
+{
+  "project": "en.wikivoyage",
+  "pulledAt": "2026-10-06T02:24:03.127Z",
+  "period": {
+    "start": "2025100100",
+    "end": "2026093000",
+    "months": [
+      "202510",
+      "202511",
+      "202512",
+      "202601",
+      "202602",
+      "202603",
+      "202604",
+      "202605",
+      "202606",
+      "202607",
+      "202608",
+      "202609"
+    ]
+  },
+  "rows": [
+    {
+      "city": "Singapore",
+      "country": "Singapore",
+      "requestedTitle": "Singapore",
+      "pulledAt": "2026-10-06T02:24:03.127Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 8,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "32831": {
+              "pageid": 32831,
+              "ns": 0,
+              "title": "Singapore",
+              "pageprops": {
+                "geocrumb-is-in": "33447",
+                "page_image_free": "Skylines_of_the_Central_Business_District,_Singapore_at_dusk.jpg",
+                "wikibase-badge-Q17437796": "",
+                "wikibase_item": "Q334"
+              },
+              "extract": "Singapore (Chinese: 新加坡 Xīnjiāpō; Malay: Singapura; Tamil: சிங்கப்பூர் Chingappur) is a city-state in Southeast Asia. Modern Singapore was founded as a British trading colony in 1819, and since independence, it has become one of the world's most prosperous countries and boasts one of the world's busiest ports. Singaporean food is legendary, with bustling hawker centres and 24-hour coffee shops offering affordable food from all parts of Asia. Combining the skyscrapers and shopping malls of an affluent modern city with a medley of different Asian cultures and a tropical climate, good shopping and a vibrant nightlife scene, this Garden City makes a great stopover or springboard into the region.\nThe country has a partly deserved reputation for its sterile predictability. Nevertheless, the \"Switzerland of Asia\" is for many a welcome respite from the chaos, dirt and poverty of much of the rest of Southeast Asia. If you scratch below the squeaky clean surface and get away from the tourist trail you'll soon find more than meets the eye in one of the few remaining city-states in the world.",
+              "coordinates": [
+                {
+                  "lat": 1.29,
+                  "lon": 103.82,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikivoyage.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Singapore",
+      "title": "Singapore",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikivoyage/all-access/user/Singapore/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikivoyage",
+          "article": "Singapore",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 4703
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Singapore",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 5291
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Singapore",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 5013
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Singapore",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 10163
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Singapore",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 5407
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Singapore",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 6999
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Singapore",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 4244
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Singapore",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 4196
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Singapore",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 8353
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Singapore",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 11535
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Singapore",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 14215
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Singapore",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 19126
+        }
+      ],
+      "total": 99245,
+      "average": 8270.42,
+      "status": "matched"
+    },
+    {
+      "city": "Hong Kong",
+      "country": "China",
+      "requestedTitle": "Hong Kong",
+      "pulledAt": "2026-10-06T02:24:03.127Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 5,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "14902": {
+              "pageid": 14902,
+              "ns": 0,
+              "title": "Hong Kong",
+              "pageprops": {
+                "geocrumb-is-in": "10298",
+                "page_image_free": "City_Boundary_1903_-_Old_Peak_Road.jpg",
+                "wikibase-badge-Q17437798": "",
+                "wikibase_item": "Q8646"
+              },
+              "extract": "Hong Kong (香港 Hēunggóng in Cantonese) is a city with multiple personalities. The population is mainly Chinese, but British influence is still quite visible. It has absorbed people and cultural influences from places as diverse as Vietnam and Vancouver and proudly proclaims itself to be Asia's World City.\nHong Kong is a global financial hub, and has been a major destination for tourists and business people from around the world for at least a century. Today it is also a major tourism destination for mainland China's increasingly affluent population.\nHong Kong is much more than a harbour city with crowded streets: this territory with its cloudy mountains and rocky islands also offers rural landscapes with breathtaking views. Much of the countryside is classified as Country Park and, although 7.4 million people (2021) are never far away, it is possible to find pockets of wilderness that will reward the more intrepid traveller.\nHong Kong has a subtropical climate with at least one season to match your comfort zone. Boasting one of the world's best airports, it is the ideal first stop for those on their way deeper into China and further Asia.",
+              "coordinates": [
+                {
+                  "lat": 22.27,
+                  "lon": 114.17,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikivoyage.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Hong+Kong",
+      "title": "Hong Kong",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikivoyage/all-access/user/Hong_Kong/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikivoyage",
+          "article": "Hong_Kong",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 4590
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Hong_Kong",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 6661
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Hong_Kong",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 4335
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Hong_Kong",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 10032
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Hong_Kong",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 3459
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Hong_Kong",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 3648
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Hong_Kong",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 3660
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Hong_Kong",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 3462
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Hong_Kong",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 7314
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Hong_Kong",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 8548
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Hong_Kong",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 8929
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Hong_Kong",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 18216
+        }
+      ],
+      "total": 82854,
+      "average": 6904.5,
+      "status": "matched"
+    },
+    {
+      "city": "Berlin",
+      "country": "Germany",
+      "requestedTitle": "Berlin",
+      "pulledAt": "2026-10-06T02:24:03.127Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 7,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "3512": {
+              "pageid": 3512,
+              "ns": 0,
+              "title": "Berlin",
+              "pageprops": {
+                "geocrumb-is-in": "12645",
+                "kartographer_frames": "2",
+                "kartographer_links": "129",
+                "page_image_free": "Siegessaeule_Aussicht_10-13_img4_Tiergarten.jpg",
+                "wikibase-badge-Q17559452": "",
+                "wikibase_item": "Q64"
+              },
+              "extract": "Berlin is Germany's capital and largest city. Within the city limits, Berlin in 2022 had a population of 3.7 million.\n\nBerlin is coming into its own again as a cosmopolitan capital of one of Europe's wealthiest nations. \"Arm aber sexy\" (poor but sexy), as a former mayor would have it, Berlin attracts young people, students, and a creative bohème like few other cities in the world. With architectural heritage from Prussian monarchism, Nazism, East German communism and Potsdamer Platz, filled with 1990s- and 2000s-style glass palaces after having been a \"blank canvas\" due to the wall, Berlin's architecture is as varied as its neighbourhoods and its people. And due to its long history as a cosmopolitan capital, it has attracted immigrants from all over the world for more than 300 years now, who continue to leave their own marks on the city.\nBerlin is home to world-renowned universities, orchestras, museums, and entertainment venues. It hosts many sporting events. Its Zoological Garden is the most visited zoo in Europe and one of the most popular worldwide. The city is well known for its festivals, nightlife, contemporary arts, and a very high quality of living.",
+              "coordinates": [
+                {
+                  "lat": 52.51794,
+                  "lon": 13.38873,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikivoyage.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Berlin",
+      "title": "Berlin",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikivoyage/all-access/user/Berlin/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikivoyage",
+          "article": "Berlin",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2610
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Berlin",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 3830
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Berlin",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2360
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Berlin",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 6655
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Berlin",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 3769
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Berlin",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 3244
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Berlin",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2459
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Berlin",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2592
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Berlin",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 5093
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Berlin",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 13302
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Berlin",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 13259
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Berlin",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 13018
+        }
+      ],
+      "total": 72191,
+      "average": 6015.92,
+      "status": "matched"
+    },
+    {
+      "city": "Venice",
+      "country": "Italy",
+      "requestedTitle": "Venice",
+      "pulledAt": "2026-10-06T02:24:03.127Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 8,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "37824": {
+              "pageid": 37824,
+              "ns": 0,
+              "title": "Venice",
+              "pageprops": {
+                "geocrumb-is-in": "37828",
+                "kartographer_frames": "3",
+                "kartographer_links": "25",
+                "page_image_free": "Lion_of_Venice,_Piazzetta_San_Marco.jpg",
+                "wikibase-badge-Q17437798": "",
+                "wikibase_item": "Q641"
+              },
+              "extract": "Venice (Italian: Venezia; Venetian: Venexia) is a sanctuary on a lagoon that is virtually the same as it was 600 years ago, which adds to the fascinating character. Venice has decayed since its heyday and suffers from overtourism, but the romantic charm remains. It is also known as the birthplace of composers Tomaso Albinoni and Antonio Vivaldi, and of the poets and opera librettists Apostolo Zeno and Carlo Goldoni. Venice and its lagoon are a UNESCO World Heritage site. It used to be an independent republic, and remains one of Italy's most important cities, with a quarter million inhabitants. Venice is also known as the home of the world's first international film festival, founded in 1932.",
+              "coordinates": [
+                {
+                  "lat": 45.4386111,
+                  "lon": 12.3266667,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikivoyage.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Venice",
+      "title": "Venice",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikivoyage/all-access/user/Venice/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikivoyage",
+          "article": "Venice",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2190
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Venice",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2232
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Venice",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2359
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Venice",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 5301
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Venice",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2343
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Venice",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2166
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Venice",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1438
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Venice",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2017
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Venice",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 6641
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Venice",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 16052
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Venice",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 10437
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Venice",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 8924
+        }
+      ],
+      "total": 62100,
+      "average": 5175,
+      "status": "matched"
+    },
+    {
+      "city": "Montreal",
+      "country": "Canada",
+      "requestedTitle": "Montreal",
+      "pulledAt": "2026-10-06T02:24:03.127Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 7,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "22870": {
+              "pageid": 22870,
+              "ns": 0,
+              "title": "Montreal",
+              "pageprops": {
+                "geocrumb-is-in": "33771",
+                "page_image_free": "Old_Port_of_Montreal_(French-_Vieux-Port_de_Montréal).jpg",
+                "wikibase-badge-Q17559452": "",
+                "wikibase_item": "Q340"
+              },
+              "extract": "Montreal (French: Montréal) is the largest city in the Canadian province of Quebec. While Quebec City is the political capital, Montreal is the cultural and economic centre, and the main entry point to the province. With 1.8 million residents in the city (2021), and 4 million in the urban area, Montreal is Canada's second largest city and the largest francophone city in the Americas. That said, the city has a proud tradition of bilingualism, with a large and long-established Anglophone minority, and most Francophones being conversant in English. Old Montreal has a heritage of colonial times. Though a large city, Montreal gives opportunities for outdoor life, and for watching the legendary Montréal Canadiens ice hockey team.",
+              "coordinates": [
+                {
+                  "lat": 45.5,
+                  "lon": -73.6,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikivoyage.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Montreal",
+      "title": "Montreal",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikivoyage/all-access/user/Montreal/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikivoyage",
+          "article": "Montreal",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1901
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Montreal",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2725
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Montreal",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1447
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Montreal",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 4175
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Montreal",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2042
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Montreal",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1257
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Montreal",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1693
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Montreal",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1875
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Montreal",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 4809
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Montreal",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 15691
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Montreal",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 10977
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Montreal",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 8257
+        }
+      ],
+      "total": 56849,
+      "average": 4737.42,
+      "status": "matched"
+    },
+    {
+      "city": "Prague",
+      "country": "Czechia",
+      "requestedTitle": "Prague",
+      "pulledAt": "2026-10-06T02:24:03.127Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 7,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "28358": {
+              "pageid": 28358,
+              "ns": 0,
+              "title": "Prague",
+              "pageprops": {
+                "geocrumb-is-in": "6445",
+                "kartographer_frames": "1",
+                "kartographer_links": "24",
+                "page_image_free": "Prague_districts_en_wv.jpg",
+                "wikibase-badge-Q17559452": "",
+                "wikibase_item": "Q1085"
+              },
+              "extract": "Prague (Czech: Praha) is the capital and largest city of the Czech Republic. The city's historic buildings and narrow, winding streets are testament to its centuries-old role as capital of the historic region of Bohemia. Prague lies on the banks of the beautiful, meandering Vltava River that reflects the city's golden spires and 9th century castle that dominates the skyline.\nThis historic atmosphere is combined with a certain quirkiness that embraces the entire city. From the Museum of Czech Cubism to the technicolour Jubilee Synagogue; the castle to the river, Prague is a Bohemian capital in every sense.",
+              "coordinates": [
+                {
+                  "lat": 50.0664,
+                  "lon": 14.473,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikivoyage.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Prague",
+      "title": "Prague",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikivoyage/all-access/user/Prague/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikivoyage",
+          "article": "Prague",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2740
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Prague",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2579
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Prague",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1792
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Prague",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 4657
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Prague",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2412
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Prague",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2913
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Prague",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2044
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Prague",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1973
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Prague",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 3656
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Prague",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 11470
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Prague",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 11592
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Prague",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 8167
+        }
+      ],
+      "total": 55995,
+      "average": 4666.25,
+      "status": "matched"
+    },
+    {
+      "city": "Vienna",
+      "country": "Austria",
+      "requestedTitle": "Vienna",
+      "pulledAt": "2026-10-06T02:24:03.127Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 7,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "37971": {
+              "pageid": 37971,
+              "ns": 0,
+              "title": "Vienna",
+              "pageprops": {
+                "geocrumb-is-in": "2010",
+                "kartographer_frames": "1",
+                "kartographer_links": "18",
+                "page_image_free": "0101-0102_-_Wien_-_Naitonalbibliothek.jpg",
+                "wikibase-badge-Q17437798": "",
+                "wikibase_item": "Q1741"
+              },
+              "extract": "Vienna (German: Wien; Austro-Bavarian: Wean) is the capital of Austria and by far its most populous city, with an urban population of 2 million and a metropolitan population of 2.9 million (2023). It is the country's artistic, cultural, economic and political centre. It is known for its high living standards, relaxed yet elegant lifestyle and rich musical life.\nVienna, renowned as the former seat of the Habsburg court and its diverse empires, stands not only as a grand metropolis but also as a historical center that has perpetually thrived with a substantial population. This city's distinction lies in its privileged stature, fostering an environment that has nurtured numerous eminent artists, notably Beethoven, Haydn, Liszt, Mozart, Schubert, and Johann Strauss II, among others. It was long the largest German-speaking city in the world before being surpassed by Berlin. The large historic city centre of Vienna filled with monuments to its imperial past is inscribed on the UNESCO World Heritage List.",
+              "coordinates": [
+                {
+                  "lat": 48.208,
+                  "lon": 16.373,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikivoyage.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Vienna",
+      "title": "Vienna",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikivoyage/all-access/user/Vienna/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikivoyage",
+          "article": "Vienna",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2302
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Vienna",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2374
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Vienna",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1934
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Vienna",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 4450
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Vienna",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2341
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Vienna",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2009
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Vienna",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1426
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Vienna",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1694
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Vienna",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 3290
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Vienna",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 10173
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Vienna",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 11814
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Vienna",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 11226
+        }
+      ],
+      "total": 55033,
+      "average": 4586.08,
+      "status": "matched"
+    },
+    {
+      "city": "Munich",
+      "country": "Germany",
+      "requestedTitle": "Munich",
+      "pulledAt": "2026-10-06T02:24:03.127Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 7,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "23467": {
+              "pageid": 23467,
+              "ns": 0,
+              "title": "Munich",
+              "pageprops": {
+                "geocrumb-is-in": "37302",
+                "page_image_free": "Munich_-_Details_in_the_front_of_the_Neues_Rathaus_-_7432.jpg",
+                "wikibase-badge-Q17437798": "",
+                "wikibase_item": "Q1726"
+              },
+              "extract": "Munich (German: München, Bavarian: Minga) is the capital of the federal state of Bavaria in the south of Germany. Within the city limits, Munich in 2024 has a population of just under 1.6 million, the third most populous city in Germany. Greater Munich including its suburbs has a population of 3 million. The Munich metropolitan region, which encompasses cities such as Augsburg and Ingolstadt, has a population of 6.2 million.\nStanding on the river Isar in Southern Bavaria, it is famous for its beautiful architecture, fine culture, history and the annual Oktoberfest beer festival. Munich has a thriving cultural scene and striking architecture. It was heavily damaged by Allied bombing during World War II, but many of its historic buildings were rebuilt, including its largest church, the Frauenkirche, and the City Hall. Other big draws are its sports events, zoo and trade exhibitions.\nMunich is a global centre of engineering, science, innovation, and research, exemplified by its two research universities, a multitude of scientific institutions, and world-class technology and science museums like the Deutsches Museum and BMW Museum. It is a major centre of art, finance, publishing, culture and media, education and business. Its economy is also based on high-tech, automobiles, the service sector and creative industries, as well as IT and biotech. It enjoys a very high standard and quality of life. Munich is one of the most prosperous and fastest growing cities in Germany.",
+              "coordinates": [
+                {
+                  "lat": 48.1333,
+                  "lon": 11.5833,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikivoyage.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Munich",
+      "title": "Munich",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikivoyage/all-access/user/Munich/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikivoyage",
+          "article": "Munich",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1490
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Munich",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1877
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Munich",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2968
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Munich",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 5425
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Munich",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1947
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Munich",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2981
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Munich",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1438
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Munich",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1874
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Munich",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 4599
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Munich",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 7340
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Munich",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 8990
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Munich",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 8286
+        }
+      ],
+      "total": 49215,
+      "average": 4101.25,
+      "status": "matched"
+    },
+    {
+      "city": "Hanoi",
+      "country": "Vietnam",
+      "requestedTitle": "Hanoi",
+      "pulledAt": "2026-10-06T02:24:03.127Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 7,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "14044": {
+              "pageid": 14044,
+              "ns": 0,
+              "title": "Hanoi",
+              "pageprops": {
+                "geocrumb-is-in": "25120",
+                "page_image_free": "Hanoi_Opera_House,_24_December_2016.jpg",
+                "wikibase-badge-Q17437798": "",
+                "wikibase_item": "Q1858"
+              },
+              "extract": "Hanoi (Vietnamese: Hà Nội), the capital of Vietnam and its second-largest city, is a fascinating blend of East and West, with Chinese influence from centuries of dominance, and French je ne sais quoi from its colonial past. It was largely unspoiled by the modern architecture of the 1970s and 80s, and is now undergoing a rapid transformation that makes it a rising star in Southeast Asia.\n\n",
+              "coordinates": [
+                {
+                  "lat": 21.0333,
+                  "lon": 105.85,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikivoyage.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Hanoi",
+      "title": "Hanoi",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikivoyage/all-access/user/Hanoi/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikivoyage",
+          "article": "Hanoi",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2102
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Hanoi",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2258
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Hanoi",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2495
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Hanoi",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 4756
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Hanoi",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2490
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Hanoi",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2099
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Hanoi",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1677
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Hanoi",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1498
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Hanoi",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 3571
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Hanoi",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 3434
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Hanoi",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 6011
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Hanoi",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 10794
+        }
+      ],
+      "total": 43185,
+      "average": 3598.75,
+      "status": "matched"
+    },
+    {
+      "city": "Vancouver",
+      "country": "Canada",
+      "requestedTitle": "Vancouver",
+      "pulledAt": "2026-10-06T02:24:03.127Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 8,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "37641": {
+              "pageid": 37641,
+              "ns": 0,
+              "title": "Vancouver",
+              "pageprops": {
+                "geocrumb-is-in": "20394",
+                "page_image_free": "Lions_Gate_Bridge_from_seawall_path.jpg",
+                "wikibase-badge-Q17437798": "",
+                "wikibase_item": "Q24639"
+              },
+              "extract": "Vancouver occupies an enviable spot in the world.  Blessed with miles of coastline, lush vegetation and crowned by the North Shore Mountains, it's hard to be there and not stop at some point and be amazed by what you see.\nBut scratch beneath that setting and you find a cosmopolitan city of many faces. It is a mix of old and new, a stopping place for immigrants that have infused the city's neighbourhoods, festivals and food. On one hand, Greater Vancouver is the third largest metropolitan area in Canada, the second biggest destination for visitors to the country and the economic hub of British Columbia. A modern city of glass towers with a variety of festivals, cultures and attractions, it has also been host to world events like the 1986 World Exposition and the 2010 Winter Olympics. To others, it's Vansterdam, the laid-back socially progressive city with the laissez-faire attitude to marijuana.  \nWith its Asian heritage and relative proximity to China and Japan, some see it as the gateway to Asia; often called Hongcouver due to the large number of immigrants and political refugees from Hong Kong living in the area. And with all that nature minutes from your door, Vancouver is a haven for outdoor enthusiasts.  It's one of those rare places you could ski in the mountains, hit one of the many sandy beaches and play a round of golf all in the same day. Vancouver is one of the most culturally diverse and cosmopolitan cities in the world, with just under half its residents born outside Canada. \nAll of this makes it easy to be a local. Walk the Seawall. Spend a day in one of the parks. Indulge in food and treats from around the world at a neighbourhood restaurant. Or just grab a spot at the beach or on a patio and watch it all go by – Vancouver is, after all, one of the most beautiful spots in the world.\n\n",
+              "coordinates": [
+                {
+                  "lat": 49.2618,
+                  "lon": -123.1136,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikivoyage.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Vancouver",
+      "title": "Vancouver",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikivoyage/all-access/user/Vancouver/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikivoyage",
+          "article": "Vancouver",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1591
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Vancouver",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1929
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Vancouver",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2123
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Vancouver",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 4598
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Vancouver",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1544
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Vancouver",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2339
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Vancouver",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1580
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Vancouver",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1682
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Vancouver",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 3714
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Vancouver",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 3934
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Vancouver",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 7343
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Vancouver",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 10265
+        }
+      ],
+      "total": 42642,
+      "average": 3553.5,
+      "status": "matched"
+    },
+    {
+      "city": "Rio de Janeiro",
+      "country": "Brazil",
+      "requestedTitle": "Rio de Janeiro",
+      "pulledAt": "2026-10-06T02:24:03.127Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 7,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "29724": {
+              "pageid": 29724,
+              "ns": 0,
+              "title": "Rio de Janeiro",
+              "pageprops": {
+                "geocrumb-is-in": "122336",
+                "page_image_free": "Sugar_loaf_from_Cristo_Redentor_2010.JPG",
+                "wikibase-badge-Q17559452": "",
+                "wikibase_item": "Q8678"
+              },
+              "extract": "Rio de Janeiro is the second largest city in Brazil, on the South Atlantic coast. Rio is famous for its breathtaking landscape, its laid-back beach culture and its annual carnival. The \"Carioca Landscapes between the Mountain and the Sea\" has been inscribed on the UNESCO World Heritage list.\nThe harbour of Rio de Janeiro is comprised of a unique entry from the ocean that makes it appear as the mouth of a river. Additionally, the harbor is surrounded by spectacular geographic features including Sugarloaf mountain at 395 meters (1,296 feet), Corcovado Peak at 704 meters (2,310 feet), and the hills of Tijuca at 1,021 meters (3,350 feet). These features work together to collectively make the harbor one of the Seven Natural Wonders of the World.\nRio de Janeiro hosted many of the 2014 FIFA World Cup games, including the final. It also hosted the 2016 Summer Olympics and Paralympics, becoming the first South American city to host the Summer Olympics.",
+              "coordinates": [
+                {
+                  "lat": -22.9094,
+                  "lon": -43.455,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikivoyage.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Rio+de+Janeiro",
+      "title": "Rio de Janeiro",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikivoyage/all-access/user/Rio_de_Janeiro/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikivoyage",
+          "article": "Rio_de_Janeiro",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1915
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Rio_de_Janeiro",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2719
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Rio_de_Janeiro",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1532
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Rio_de_Janeiro",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2974
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Rio_de_Janeiro",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1712
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Rio_de_Janeiro",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1892
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Rio_de_Janeiro",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1306
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Rio_de_Janeiro",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1239
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Rio_de_Janeiro",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2421
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Rio_de_Janeiro",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 8715
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Rio_de_Janeiro",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 8356
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Rio_de_Janeiro",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 6529
+        }
+      ],
+      "total": 41310,
+      "average": 3442.5,
+      "status": "matched"
+    },
+    {
+      "city": "Melbourne",
+      "country": "Australia",
+      "requestedTitle": "Melbourne",
+      "pulledAt": "2026-10-06T02:24:03.127Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 7,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "21920": {
+              "pageid": 21920,
+              "ns": 0,
+              "title": "Melbourne",
+              "pageprops": {
+                "geocrumb-is-in": "37951",
+                "kartographer_frames": "1",
+                "kartographer_links": "13",
+                "page_image_free": "Wikivoyage_Melbourne_district_map.png",
+                "wikibase-badge-Q17559452": "",
+                "wikibase_item": "Q3141"
+              },
+              "extract": "Melbourne (Naarm in the Woiworrung language) is Australia's cultural capital and second biggest city, with Victorian-era architecture, extensive shopping, museums, galleries, theatres, and large parks and gardens. Many of its 5.2 million residents are both multicultural and sports-mad. The capital of the south-eastern state of Victoria, and located at the head of Port Phillip Bay, Melbourne is a magnet for migrants from all over the world, and consistently ranks as one of the world's most livable cities.\nVisitors come to attend major sporting events, and to use it as a base for exploring nearby places such as Grampians National Park, the Great Ocean Road, and Phillip Island and its penguin parade. Many UK visitors come for tours of filming locations of the soap opera Neighbours. Somebody living in Melbourne is a Melburnian, and they pronounce the city's name as \"MEL-b'n\".\n\n",
+              "coordinates": [
+                {
+                  "lat": -37.813611,
+                  "lon": 144.963056,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikivoyage.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Melbourne",
+      "title": "Melbourne",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikivoyage/all-access/user/Melbourne/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikivoyage",
+          "article": "Melbourne",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1782
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Melbourne",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2014
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Melbourne",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2765
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Melbourne",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 4497
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Melbourne",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2091
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Melbourne",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2929
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Melbourne",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1267
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Melbourne",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1432
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Melbourne",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 4109
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Melbourne",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 4003
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Melbourne",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 4509
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Melbourne",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 9464
+        }
+      ],
+      "total": 40862,
+      "average": 3405.17,
+      "status": "matched"
+    },
+    {
+      "city": "Cape Town",
+      "country": "South Africa",
+      "requestedTitle": "Cape Town",
+      "pulledAt": "2026-10-06T02:24:03.127Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 8,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "5909": {
+              "pageid": 5909,
+              "ns": 0,
+              "title": "Cape Town",
+              "pageprops": {
+                "geocrumb-is-in": "5901",
+                "page_image_free": "South_Africa-Cape_Town-Table_Mountain03.jpg",
+                "wikibase-badge-Q17437798": "",
+                "wikibase_item": "Q5465"
+              },
+              "extract": "Cape Town (Afrikaans: Kaapstad, Xhosa: iKapa) is the second most populous city in South Africa. The capital of Western Cape Province, it is also the legislative capital of the nation. Cape Town is on South Africa's southwestern coast close to the Cape of Good Hope, and is the southernmost city on the African continent. It is the gateway to the globally renowned Cape Winelands which includes the towns of Franschhoek, Stellenbosch and Paarl.",
+              "coordinates": [
+                {
+                  "lat": -33.933,
+                  "lon": 18.467,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikivoyage.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Cape+Town",
+      "title": "Cape Town",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikivoyage/all-access/user/Cape_Town/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikivoyage",
+          "article": "Cape_Town",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1597
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Cape_Town",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2056
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Cape_Town",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2241
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Cape_Town",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 5264
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Cape_Town",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2783
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Cape_Town",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2809
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Cape_Town",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1405
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Cape_Town",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1841
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Cape_Town",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2535
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Cape_Town",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2133
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Cape_Town",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2808
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Cape_Town",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 8423
+        }
+      ],
+      "total": 35895,
+      "average": 2991.25,
+      "status": "matched"
+    },
+    {
+      "city": "Cairo",
+      "country": "Egypt",
+      "requestedTitle": "Cairo",
+      "pulledAt": "2026-10-06T02:24:03.127Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 7,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "5518": {
+              "pageid": 5518,
+              "ns": 0,
+              "title": "Cairo",
+              "pageprops": {
+                "geocrumb-is-in": "20388",
+                "page_image_free": "Map-cairo-wikivoyage.svg",
+                "wikibase-badge-Q17559452": "",
+                "wikibase_item": "Q85"
+              },
+              "extract": "Cairo (pronounced KY-roh; Arabic: القاهرة al-Qāhirah) is the capital of Egypt (until the New Administrative Capital is completed) and, with a total population of Greater Cairo metropolitan area in excess of 16 million people, one of the largest cities in both Africa and the Middle East (the regions which it conveniently straddles). It is also the 19th largest city in the world, and among the world's most densely populated cities.\nOn the Nile river, Cairo is famous for its own history, preserved in the fabulous medieval Islamic city and Coptic sites in Old Cairo — with historic Cairo inscribed on the UNESCO World Heritage list. The Egyptian Museum in the city centre is a must see, with its countless Ancient Egyptian artefacts, as is shopping at the Khan al-Khalili bazaar. No trip to Cairo would be complete without a visit to the Giza Pyramids and to the nearby Saqqara Pyramid Complex, where visitors will see Egypt's first step pyramid built by the architect Imhotep for the third dynasty pharaoh Djoser.\nThough firmly attached to the past, Cairo is also home to a vibrant modern society. The Midan Tahrir area situated in downtown Cairo, built in the 19th century under the rule of Khedive Ismail, has strived to be a \"Paris on the Nile\". There also are a number of more modern suburbs including Ma'adi and Heliopolis, while Zamalek is a quiet area on Gezira Island, with upmarket shopping. Cairo is best in the autumn or spring, when the weather isn't so hot. A felucca ride on the Nile is a good way to escape from the busy city, as is a visit to Al-Azhar Park.",
+              "coordinates": [
+                {
+                  "lat": 30.053,
+                  "lon": 31.246,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikivoyage.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Cairo",
+      "title": "Cairo",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikivoyage/all-access/user/Cairo/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikivoyage",
+          "article": "Cairo",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1799
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Cairo",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1642
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Cairo",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1664
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Cairo",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 3137
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Cairo",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1186
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Cairo",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1392
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Cairo",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1684
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Cairo",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1663
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Cairo",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 3193
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Cairo",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 3430
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Cairo",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 3337
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Cairo",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 7264
+        }
+      ],
+      "total": 31391,
+      "average": 2615.92,
+      "status": "matched"
+    },
+    {
+      "city": "Nice",
+      "country": "France",
+      "requestedTitle": "Nice",
+      "pulledAt": "2026-10-06T02:24:03.127Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 7,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "24558": {
+              "pageid": 24558,
+              "ns": 0,
+              "title": "Nice",
+              "pageprops": {
+                "geocrumb-is-in": "794",
+                "kartographer_frames": "1",
+                "kartographer_links": "77",
+                "page_image_free": "NicePromenadeAnglais.jpg",
+                "wikibase-badge-Q17559452": "",
+                "wikibase_item": "Q33959"
+              },
+              "extract": "Nice (pronounced like the English word \"niece\") is a large city in France on the French Riviera. It's a popular destination for vacationers young and old, with something to offer nearly everyone. It is well known for the beautiful view on the Promenade des Anglais, its famous waterfront, and is an ethnically diverse port city. In 2021 the waterfront and a considerable part of the city were listed on the UNESCO World Heritage List.\n\n",
+              "coordinates": [
+                {
+                  "lat": 43.7034,
+                  "lon": 7.2663,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikivoyage.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Nice",
+      "title": "Nice",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikivoyage/all-access/user/Nice/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikivoyage",
+          "article": "Nice",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1251
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Nice",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1154
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Nice",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 736
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Nice",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1833
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Nice",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1241
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Nice",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1053
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Nice",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 886
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Nice",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 785
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Nice",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1524
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Nice",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 7268
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Nice",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 6584
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Nice",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 4400
+        }
+      ],
+      "total": 28715,
+      "average": 2392.92,
+      "status": "matched"
+    },
+    {
+      "city": "Kyoto",
+      "country": "Japan",
+      "requestedTitle": "Kyoto",
+      "pulledAt": "2026-10-06T02:24:03.127Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 7,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "18579": {
+              "pageid": 18579,
+              "ns": 0,
+              "title": "Kyoto",
+              "pageprops": {
+                "geocrumb-is-in": "18580",
+                "kartographer_frames": "1",
+                "kartographer_links": "6",
+                "page_image_free": "Kiyomizu_Temple_in_Kyoto.jpg",
+                "wikibase-badge-Q17437798": "",
+                "wikibase_item": "Q34600"
+              },
+              "extract": "Kyōto (京都) was the capital of Japan for over a millennium, and carries a reputation as the nation's most beautiful city and its cultural capital - even the national government's Agency for Cultural Affairs moved there in 2023.  However, visitors may be surprised by how much work they will have to do to see Kyoto's beautiful side. Most first impressions of the city will be of the urban sprawl of central Kyoto, around the ultra-modern glass-and-steel train station, which is itself an example of a city steeped in tradition colliding with the modern world.\nNonetheless, the persistent visitor will soon discover Kyoto's hidden beauty in the temples and parks which ring the city center, and find that the city has much more to offer than immediately meets the eye.\nThe city has a multi-lingual Official Travel Guide site.",
+              "coordinates": [
+                {
+                  "lat": 35.011667,
+                  "lon": 135.768333,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikivoyage.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Kyoto",
+      "title": "Kyoto",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikivoyage/all-access/user/Kyoto/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikivoyage",
+          "article": "Kyoto",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1768
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Kyoto",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1670
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Kyoto",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1547
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Kyoto",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2747
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Kyoto",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1573
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Kyoto",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1865
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Kyoto",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1056
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Kyoto",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1398
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Kyoto",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1866
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Kyoto",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2153
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Kyoto",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2415
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Kyoto",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 6444
+        }
+      ],
+      "total": 26502,
+      "average": 2208.5,
+      "status": "matched"
+    },
+    {
+      "city": "Reykjavik",
+      "country": "Iceland",
+      "requestedTitle": "Reykjavík",
+      "pulledAt": "2026-10-06T02:24:03.127Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 7,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "29548": {
+              "pageid": 29548,
+              "ns": 0,
+              "title": "Reykjavík",
+              "pageprops": {
+                "geocrumb-is-in": "33779",
+                "kartographer_frames": "1",
+                "kartographer_links": "109",
+                "page_image_free": "Tjörnin_lake,_Reykjavík-3.jpg",
+                "wikibase-badge-Q17437798": "",
+                "wikibase_item": "Q1764"
+              },
+              "extract": "Reykjavík is the capital of and largest city in Iceland and with an urban area population of around 233,000 (2019), it is the home to two-thirds of Iceland's population. It is the centre of culture and life of the Icelandic people, and is one of the focal points of tourism in Iceland. The city is spread out, and has sprawling suburbs. The city centre, however, is a very small area characterised by eclectic and colourful houses, with good shopping, dining and drinking. Reykjavik has the distinction of being the world's northernmost capital city of a UN member state, though its winters are surprisingly mild for a city of its latitude.",
+              "coordinates": [
+                {
+                  "lat": 64.14019,
+                  "lon": -21.90794,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikivoyage.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Reykjav%C3%ADk",
+      "title": "Reykjavík",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikivoyage/all-access/user/Reykjav%C3%ADk/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikivoyage",
+          "article": "Reykjavík",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 618
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Reykjavík",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 765
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Reykjavík",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1514
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Reykjavík",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2082
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Reykjavík",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1231
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Reykjavík",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1699
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Reykjavík",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 891
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Reykjavík",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1129
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Reykjavík",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1823
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Reykjavík",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2544
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Reykjavík",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2265
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Reykjavík",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 6492
+        }
+      ],
+      "total": 23053,
+      "average": 1921.08,
+      "status": "matched"
+    },
+    {
+      "city": "Banff",
+      "country": "Canada",
+      "requestedTitle": "Banff",
+      "pulledAt": "2026-10-06T02:24:03.127Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 7,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "2592": {
+              "pageid": 2592,
+              "ns": 0,
+              "title": "Banff",
+              "pageprops": {
+                "geocrumb-is-in": "2593",
+                "page_image_free": "Banff_from_Sulphur_mountain_(313208769).jpg",
+                "wikibase-badge-Q17437798": "",
+                "wikibase_item": "Q58337"
+              },
+              "extract": "For the Scottish town that Banff was named after, see Banff (Scotland)\n\nThe town of Banff in Banff National Park, in the Canadian Rockies, is the larger of the two populated areas in Banff National Park, about an hour and a half drive west of Calgary and four hours south of Jasper. Banff is part of the Canadian Rocky Mountain Parks UNESCO World Heritage Site. Like many mountain towns, Banff has a very different character in winter and summer. There is a decent selection of bars and restaurants but predictably a few too many souvenir shops and boutiques. European travellers will especially welcome the sidewalks that facilitate exploration of the town on foot.\n\n",
+              "coordinates": [
+                {
+                  "lat": 51.178056,
+                  "lon": -115.571944,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikivoyage.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Banff",
+      "title": "Banff",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikivoyage/all-access/user/Banff/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikivoyage",
+          "article": "Banff",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1171
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Banff",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 702
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Banff",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 570
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Banff",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1336
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Banff",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1010
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Banff",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1136
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Banff",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 523
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Banff",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 391
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Banff",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1817
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Banff",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 5521
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Banff",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2988
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Banff",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2553
+        }
+      ],
+      "total": 19718,
+      "average": 1643.17,
+      "status": "matched"
+    },
+    {
+      "city": "Queenstown",
+      "country": "New Zealand",
+      "requestedTitle": "Queenstown (New Zealand)",
+      "pulledAt": "2026-10-06T02:24:03.127Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 7,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "28960": {
+              "pageid": 28960,
+              "ns": 0,
+              "title": "Queenstown (New Zealand)",
+              "pageprops": {
+                "geocrumb-is-in": "28962",
+                "page_image_free": "Queenstown_-_Remarkables_1.jpg",
+                "wikibase-badge-Q17559452": "",
+                "wikibase_item": "Q613602"
+              },
+              "extract": "Queenstown (Māori: Tāhuna) is a world renowned resort town in the South Island of New Zealand. The town sits on the edge of Lake Wakatipu and is surrounded by the Southern Alps.\n\n",
+              "coordinates": [
+                {
+                  "lat": -45.031111,
+                  "lon": 168.6625,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikivoyage.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Queenstown+%28New+Zealand%29",
+      "title": "Queenstown (New Zealand)",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikivoyage/all-access/user/Queenstown_(New_Zealand)/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikivoyage",
+          "article": "Queenstown_(New_Zealand)",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 487
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Queenstown_(New_Zealand)",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 732
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Queenstown_(New_Zealand)",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 770
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Queenstown_(New_Zealand)",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1037
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Queenstown_(New_Zealand)",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 461
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Queenstown_(New_Zealand)",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 989
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Queenstown_(New_Zealand)",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 334
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Queenstown_(New_Zealand)",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 429
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Queenstown_(New_Zealand)",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 728
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Queenstown_(New_Zealand)",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1599
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Queenstown_(New_Zealand)",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 3760
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Queenstown_(New_Zealand)",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 3064
+        }
+      ],
+      "total": 14390,
+      "average": 1199.17,
+      "status": "matched"
+    },
+    {
+      "city": "Honolulu",
+      "country": "United States",
+      "requestedTitle": "Honolulu",
+      "pulledAt": "2026-10-06T02:24:03.127Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 7,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "14930": {
+              "pageid": 14930,
+              "ns": 0,
+              "title": "Honolulu",
+              "pageprops": {
+                "geocrumb-is-in": "25541",
+                "kartographer_links": "1",
+                "page_image_free": "Waikiki_beach,_Honolulu.jpg",
+                "wikibase-badge-Q17559452": "",
+                "wikibase_item": "Q18094"
+              },
+              "extract": "The capital of Hawaii and its primary point of entry, Honolulu is by far the state's largest city, with 980,000 people—two-thirds of the state's population—residing within the metro area as of 2018. Situated on the southern shore of the island of Oahu, Honolulu serves as the center of government and commerce for the state, the home of the largest airport in the Hawaiian Islands, and the site of the state's best-known tourist destination: Waikiki Beach.\nGiven the city's size and its prominence as a traveler destination, this is definitely not the place to go for a \"get-away-from-it-all\" Hawaiian vacation. Honolulu is as fast-paced and dynamic as any large city, with all the associated problems such as heavy traffic, crime, and homelessness. But Honolulu still has the charm of the islands' laid-back atmosphere and culture, with some of Hawaii's best museums, the historic sites of Pearl Harbor and former palaces of Hawaiian royalty, splendid beaches, and striking natural scenery, all set amidst a dynamic mix of cultures which hail from all corners of the Pacific Ocean.",
+              "coordinates": [
+                {
+                  "lat": 21.30694,
+                  "lon": -157.85833,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikivoyage.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Honolulu",
+      "title": "Honolulu",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikivoyage/all-access/user/Honolulu/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikivoyage",
+          "article": "Honolulu",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 796
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Honolulu",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 726
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Honolulu",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 496
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Honolulu",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1215
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Honolulu",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 545
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Honolulu",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 590
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Honolulu",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 416
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Honolulu",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 465
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Honolulu",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 745
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Honolulu",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1071
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Honolulu",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 1493
+        },
+        {
+          "project": "en.wikivoyage",
+          "article": "Honolulu",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 2894
+        }
+      ],
+      "total": 11452,
+      "average": 954.33,
+      "status": "matched"
+    }
+  ]
+}
