@@ -1,11 +1,12 @@
 # City Verification Status
 
-Updated: 2026-10-05. This is an editorial record, not a publication gate.
+Updated: 2026-10-06. This is an editorial record, not a publication gate.
 
 The [user-approved Wikivoyage-led queue](city-sourcing-priorities-2026-10-05.md)
-distinguishes classifier matches from sourced recommendations. No new city was
-verified in this planning pass. Saved Singapore research remains unfinished,
-and automated content work remains paused. The legal-page release has 217
+distinguishes classifier matches from sourced recommendations. Singapore's
+13 recommendations now have dated operator evidence and pass the staged
+short-list release validation. Deployment confirmation is pending.
+Automated content work remains paused. The legal-page release has 217
 sitemap URLs; it did not change the 189 published destination guides.
 
 ## Current Inventory
@@ -15,11 +16,11 @@ destination a status: `source-verified`, `classifier-passed`, or `held-back`.
 There are 484 canonical destinations from 485 detail records. The existing
 Guilin merge accounts for the difference; no destination was deleted in this pass.
 
-- 4 source-verified in the complete dated evidence format: Boston, Cusco, Edinburgh and Dublin.
-- 185 published classifier-passed guides, including Austin's retained prior review.
+- 5 source-covered in the local evidence inventory: Boston, Cusco, Edinburgh, Dublin and the Singapore draft.
+- 184 classifier-passed guides in the local build, including Austin's retained prior review.
 - 295 held-back destinations.
 
-Five cities have a source-review history, but they are not identically documented.
+Six cities have a source-review history, but they are not identically documented.
 Austin has 32 legacy source references; three current activity labels do not
 exactly match those source keys, and per-place operating evidence is not yet
 migrated. This is a documentation gap, not evidence that those activities are
@@ -40,6 +41,13 @@ change thresholds, or automatically verify websites. A declared `source-checked`
 city with missing evidence makes the report fail rather than retaining its label.
 
 ## What the counts mean
+
+The five reviewed ledger records explicitly set `renderVerifiedOnly: true`.
+The static generator renders only entries with dated HTTPS source records,
+source type and operating evidence for those cities. Unreviewed cities keep
+their existing rendering. Filtering never removes underlying data or ledger
+records. Reviewed categories may contain one or two entries; empty rendered
+categories are omitted. Publication thresholds are unchanged.
 
 `classifyItem` recognizes name-like text. It cannot establish that a business
 exists, is in the right country, or is open. Repeated entries across categories

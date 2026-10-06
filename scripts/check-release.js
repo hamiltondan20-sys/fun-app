@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const vm = require("vm");
+const { renderedEntries } = require("./guide-evidence.cjs");
 
 globalThis.window = globalThis;
 
@@ -12,7 +13,8 @@ const dataFiles = [
   "data/trip-content.js",
   "data/top-100-destinations.js",
   "data/destination-expansion.js",
-  "data/destination-coverage.js"
+  "data/destination-coverage.js",
+  "data/city-source-ledger.js"
 ];
 const requiredFiles = [
   "code.html",
@@ -238,7 +240,15 @@ cityGuides.forEach((guide) => {
   if (!detailData[key]) failures.push(`Missing city detail data: ${key}`);
   if (detailData[key]) {
     detailCategories.forEach((category) => {
-      if (!Array.isArray(detailData[key][category]) || detailData[key][category].length < 3) {
+      const items = detailData[key][category];
+      const ledger = data.citySourceLedger?.[key];
+      if (ledger?.renderVerifiedOnly === true) {
+        if (!Array.isArray(items)) failures.push(`Missing ${category} array: ${key}`);
+        try { renderedEntries(items, ledger); }
+        catch (error) { failures.push(`${key}: ${error.message}`); }
+        // Empty categories stay in the data and are omitted; one sourced entry
+        // is enough to render. Publication thresholds remain the generator's job.
+      } else if (!Array.isArray(items) || items.length < 3) {
         failures.push(`Incomplete ${category} content: ${key}`);
       }
     });

@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 4.
-- Classifier-passed (published, not fully documented in that format): 185.
+- Source-verified (complete dated evidence format): 5.
+- Classifier-passed (published, not fully documented in that format): 184.
 - Held back: 295.
 - Published destinations: 189; country hubs: 19; sitemap URLs: 217.
 
@@ -436,7 +436,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Shenzhen, China | shenzhen | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Siargao, Philippines | siargao | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Sicily, Italy | sicily | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
-| Singapore, Singapore | singapore | classifier-passed | not-reviewed | 0 | 8 | 15 | 4 | None |
+| Singapore, Singapore | singapore | source-verified | source-checked | 13 | 33 | 15 | 15 | None |
 | Sintra, Portugal | sintra | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Sitges, Spain | sitges | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Solovetsky Islands, Russia | solovetsky-islands | held-back | not-reviewed | 0 | 3 | 15 | 3 | has 3 named places across 3 categories; needs at least 5 named places across 3 categories |

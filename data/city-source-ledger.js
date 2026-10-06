@@ -5,7 +5,38 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Singapore, Singapore": {
+    renderVerifiedOnly: true,
+    checkedOn: "2026-10-06",
+    status: "source-checked",
+    reviewScope: "cityGuideDetailData",
+    verificationMethod: "official-web-review",
+    limitations: "Website review, not a visit or telephone confirmation. Current advertised visits, menus and reservations are operating evidence, not guaranteed availability. Suitability and grouping are editorial judgments. Thirteen distinct recommendations cover all 15 fields; repeated category appearances are not additional verified places. Independent corroboration was read for National Gallery and National Kitchen; remaining records rely on their own operator. Exact hours and prices are not promised. ATLAS has inconsistent hours within its page, so confirm reservations directly.",
+    sourceUrls: ["https://www.visitsingapore.com/", "https://www.visitsingapore.com/neighbourhood/featured-neighbourhood/civic-district/national-gallery-singapore/"],
+    excludedCandidates: [
+      { name: "Flower Dome", url: "https://www.gardensbythebay.com.sg/en/plan-your-visit/opening-hours.html", checkedOn: "2026-10-06", reason: "Maintenance closure on the check date. Outdoor gardens are a separately scoped recommendation; no claim the whole park is closed." },
+      { name: "Haw Par Villa", url: "https://www.hawparvilla.sg/", checkedOn: "2026-10-06", reason: "Earlier checkpoint found partial closure. Not included as an unrestricted park visit; no claim of permanent closure." },
+      { name: "Song Fa Bak Kut Teh", url: "https://songfa.com.sg/pages/outlets", checkedOn: "2026-10-06", reason: "Readable outlet page did not expose branch details. Omitted without guessing an address or claiming closure." },
+      { name: "Ya Kun Kaya Toast", url: "https://yakun.com/find-us/local/singapore", checkedOn: "2026-10-06", reason: "Operator page could not be read. Omitted without guessing branch or operating status." }
+    ],
+    placeSources: {
+      "Gardens by the Bay outdoor gardens": { url: "https://www.gardensbythebay.com.sg/en/plan-your-visit/opening-hours.html", sourceType: "operator's own site", checkedOn: "2026-10-06", operatingEvidence: "Operator lists outdoor gardens at 18 Marina Gardens Drive with current daily access. Scope excludes ticketed conservatories and elevated attractions. Flower Dome has a maintenance closure on the check date; bridge works divert pedestrians. Check current notices before visiting." },
+      "Singapore Botanic Gardens": { url: "https://sbg.nparks.gov.sg/visit/general-info/", sourceType: "official public operator", checkedOn: "2026-10-06", operatingEvidence: "NParks lists daily garden access, free general admission and separate National Orchid Garden charges. Tanglin entrance is served by Napier MRT; Bukit Timah entrance by Botanic Gardens MRT. Visitor maps and access arrangements are published. Not a claim every garden attraction is open." },
+      "Jacob Ballas Children's Garden": { url: "https://sbg.nparks.gov.sg/visit/general-info/", sourceType: "official public operator", checkedOn: "2026-10-06", operatingEvidence: "NParks lists current visiting hours and a normally Monday closure, with public-holiday exceptions. Children up to 14 must be accompanied by adults. This is the named children's garden within Singapore Botanic Gardens, not a generic playground recommendation." },
+      "National Gallery Singapore": { url: "https://www.nationalgallery.sg/sg/en/visit/visitor-information.html", sourceType: "operator's own site", secondSourceUrl: "https://www.visitsingapore.com/neighbourhood/featured-neighbourhood/civic-district/national-gallery-singapore/", checkedOn: "2026-10-06", operatingEvidence: "Current visitor page gives 1 St Andrew's Road, advertised daily opening, tickets and accessible entrances. UOB Southeast Asia Gallery is closed until late 2027; other displays remain open. October road and entrance restrictions are described, not a whole-museum closure. Tourism board corroborates the City Hall and former Supreme Court location." },
+      "ArtScience Museum": { url: "https://www.marinabaysands.com/museum.html", sourceType: "operator's own site", additionalSourceUrls: ["https://www.marinabaysands.com/museum/plan-your-visit.html"], checkedOn: "2026-10-06", operatingEvidence: "Marina Bay Sands advertises current exhibitions, tickets and daily visits. Visitor page places museum at 6 Bayfront Avenue and provides Bayfront MRT walking routes. Entry to the building and paid exhibitions differ; no promise one ticket covers all exhibits." },
+      "Singapore Zoo": { url: "https://www.mandai.com/en/singapore-zoo.html", sourceType: "operator's own site", additionalSourceUrls: ["https://www.mandai.com/en/plan-your-visit/getting-to-and-around.html"], checkedOn: "2026-10-06", operatingEvidence: "Mandai advertises daily zoo opening, current ticket purchase, attraction map and visitor information. Its transport page provides routes to Mandai Wildlife Reserve. Recommendation is specifically Singapore Zoo, not every separately ticketed Mandai attraction." },
+      "Candlenut": { url: "https://www.comoepicurean.com/restaurants/candlenut/", sourceType: "operator's own site", checkedOn: "2026-10-06", operatingEvidence: "Operator lists 17A Dempsey Road, Singapore, current lunch and dinner menus, advertised daily service and a reservation link. Peranakan cooking is described by the restaurant. Dietary needs and availability require direct confirmation." },
+      "National Kitchen by Violet Oon": { url: "https://violetoon.com/national-kitchen-by-violet-oon-national-gallery-singapore/", sourceType: "operator's own site", secondSourceUrl: "https://www.visitsingapore.com/neighbourhood/featured-neighbourhood/civic-district/national-gallery-singapore/", checkedOn: "2026-10-06", operatingEvidence: "Own page lists 1 St Andrew's Road #02-01, City Hall wing, Coleman Street access, lunch/dinner menus and booking links. High tea is Friday to Sunday rather than daily. Tourism board corroborates the named restaurant within the Gallery." },
+      "JUMBO Seafood (Riverside Point)": { url: "https://www.jumboseafood.com.sg/en/riverside-point", sourceType: "operator's own site", checkedOn: "2026-10-06", operatingEvidence: "Exact branch page lists 30 Merchant Road #01-01/02 Riverside Point, Singapore 058282, daily service and links to current menus and reservations. Other JUMBO branches are not substituted for this address." },
+      "Plain Vanilla (Tiong Bahru)": { url: "https://plainvanilla.com.sg/pages/stores", sourceType: "operator's own site", checkedOn: "2026-10-06", operatingEvidence: "Tiong Bahru section lists 1D Yong Siak Street, Singapore 168641, current daily service, brunch, baked goods and coffee. Hot-food service ends before cafe closing; stores do not take reservations. Holland Village's later reopening is a different branch and not recommended." },
+      "Tiong Bahru Bakery (Eng Hoon Street)": { url: "https://tiongbahrubakery.com/pages/locations", sourceType: "operator's own site", additionalSourceUrls: ["https://tiongbahrubakery.com/"], checkedOn: "2026-10-06", operatingEvidence: "Own location list advertises the Tiong Bahru branch at 56 Eng Hoon Street #01-70, Singapore 160056, with current weekday/weekend hours. Own homepage describes pastries and coffee with current pickup ordering. Not confused with nearby Crumb & Go or non-Singapore branches." },
+      "ATLAS": { url: "https://www.atlasbar.sg/", sourceType: "operator's own site", checkedOn: "2026-10-06", operatingEvidence: "Own page gives Parkview Square, 600 North Bridge Road, Singapore 188778, active dining/drink links and reservations, with evening dress rules. Top and footer hours differ; no fixed schedule is published in our guide. Verify the chosen date directly." },
+      "Jigger & Pony": { url: "https://www.jiggerandpony.com/", sourceType: "operator's own site", checkedOn: "2026-10-06", operatingEvidence: "Own page lists Amara Singapore, 165 Tanjong Pagar Road, current cocktail and food menus, evening opening and a table reservation link. Entry is strictly for guests above 18. Not placed in the children's or breakfast fields." }
+    }
+  },
   "Dublin, Ireland": {
+    renderVerifiedOnly: true,
     checkedOn: "2026-10-04",
     status: "source-checked",
     reviewScope: "cityGuideDetailData",
@@ -185,6 +216,7 @@ window.HB_DATA.citySourceLedger = {
     }
   },
   "Edinburgh, United Kingdom": {
+    renderVerifiedOnly: true,
     checkedOn: "2026-10-03",
     status: "source-checked",
     reviewScope: "cityGuideDetailData",
@@ -380,6 +412,7 @@ window.HB_DATA.citySourceLedger = {
     }
   },
   "Boston, United States": {
+    renderVerifiedOnly: true,
     checkedOn: "2026-10-02",
     status: "source-checked",
     reviewScope: "cityGuideDetailData",
@@ -569,6 +602,7 @@ window.HB_DATA.citySourceLedger = {
     }
   },
   "Cusco, Peru": {
+    renderVerifiedOnly: true,
     checkedOn: "2026-09-30",
     status: "source-checked",
     reviewScope: "cityGuideDetailData",

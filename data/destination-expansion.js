@@ -547,4 +547,63 @@ window.HB_DATA = window.HB_DATA || {};
     ],
     trust: "The named recommendations in this guide were checked against tourism-board, venue, or operator websites on September 30, 2026. Listings and opening arrangements can change; confirm with the venue before visiting."
   };
+  data.cityGuideDetailData["Singapore, Singapore"] = {
+    bestAttractions: ["Gardens by the Bay outdoor gardens", "Singapore Botanic Gardens", "National Gallery Singapore", "ArtScience Museum", "Singapore Zoo"],
+    bestRestaurants: ["Candlenut", "National Kitchen by Violet Oon", "JUMBO Seafood (Riverside Point)"],
+    bestBudget: ["Singapore Botanic Gardens"],
+    bestLuxury: ["Candlenut", "ATLAS"],
+    bestCouples: ["Gardens by the Bay outdoor gardens", "Candlenut", "ATLAS"],
+    bestKids: ["Jacob Ballas Children's Garden", "Singapore Zoo", "ArtScience Museum"],
+    bestSolo: ["Singapore Botanic Gardens", "National Gallery Singapore", "Plain Vanilla (Tiong Bahru)"],
+    bestFirstTimers: ["Gardens by the Bay outdoor gardens", "National Gallery Singapore", "Singapore Botanic Gardens"],
+    bestUnique: ["ArtScience Museum", "National Kitchen by Violet Oon"],
+    bestBreakfast: ["Plain Vanilla (Tiong Bahru)", "Tiong Bahru Bakery (Eng Hoon Street)"],
+    bestLunch: ["National Kitchen by Violet Oon", "JUMBO Seafood (Riverside Point)", "Plain Vanilla (Tiong Bahru)"],
+    bestDinner: ["Candlenut", "National Kitchen by Violet Oon", "JUMBO Seafood (Riverside Point)"],
+    bestCocktails: ["ATLAS", "Jigger & Pony"],
+    bestBakeries: ["Tiong Bahru Bakery (Eng Hoon Street)", "Plain Vanilla (Tiong Bahru)"],
+    bestCoffee: ["Plain Vanilla (Tiong Bahru)", "Tiong Bahru Bakery (Eng Hoon Street)"]
+  };
+  data.cityPlaceQueries["Singapore, Singapore"] = {
+    "Gardens by the Bay outdoor gardens": "Gardens by the Bay 18 Marina Gardens Drive Singapore",
+    "Singapore Botanic Gardens": "Singapore Botanic Gardens Tanglin Gate Singapore",
+    "National Gallery Singapore": "National Gallery Singapore 1 St Andrews Road",
+    "ArtScience Museum": "ArtScience Museum 6 Bayfront Avenue Singapore",
+    "Singapore Zoo": "Singapore Zoo Mandai Singapore",
+    "Jacob Ballas Children's Garden": "Jacob Ballas Children's Garden Singapore Botanic Gardens",
+    "Candlenut": "Candlenut 17A Dempsey Road Singapore",
+    "National Kitchen by Violet Oon": "National Kitchen by Violet Oon 1 St Andrews Road 02-01 Singapore",
+    "JUMBO Seafood (Riverside Point)": "JUMBO Seafood 30 Merchant Road Riverside Point Singapore",
+    "Plain Vanilla (Tiong Bahru)": "Plain Vanilla 1D Yong Siak Street Singapore",
+    "Tiong Bahru Bakery (Eng Hoon Street)": "Tiong Bahru Bakery 56 Eng Hoon Street Singapore",
+    "ATLAS": "ATLAS Parkview Square 600 North Bridge Road Singapore",
+    "Jigger & Pony": "Jigger and Pony Amara Singapore 165 Tanjong Pagar Road"
+  };
+  const singapore = data.cityGuideData.find((guide) => guide.city === "Singapore, Singapore");
+  singapore.summary = "Garden walks, museums, and places for brunch, Peranakan cooking, seafood, and cocktails in Singapore.";
+  singapore.highlights = ["Gardens by the Bay outdoor gardens", "National Gallery Singapore", "Singapore Botanic Gardens", "ArtScience Museum"];
+  singapore.tip = "Choose a garden or museum first, then plan a meal nearby. Keep the zoo as a separate outing and check attraction closures before buying tickets.";
+  data.destinationFacts["Singapore, Singapore"] = singapore.tip;
+  data.destinationHeroData["Singapore, Singapore"].copy = singapore.summary;
+  data.cityPlanningToolkitData["Singapore, Singapore"] = [
+    { label: "Start here", value: "Choose one area for the day", copy: "Combine the National Gallery with lunch at National Kitchen, or visit ArtScience Museum and the outdoor gardens at Gardens by the Bay. Leave time between bookings instead of treating each stop as a quick transfer." },
+    { label: "Garden visits", value: "Check the attraction, not just the park", copy: "Singapore Botanic Gardens has free general entry, but the National Orchid Garden charges separately. Gardens by the Bay lists maintenance closures for its ticketed attractions. An open outdoor garden does not mean every conservatory is open." },
+    { label: "With children", value: "Check age rules and allow for the journey", copy: "Jacob Ballas Children's Garden is for children up to 14 accompanied by an adult and normally closes on Mondays. Singapore Zoo is at Mandai; plan the journey separately from a Marina Bay day. ArtScience Museum has different exhibitions and ticket choices." },
+    { label: "Eating out", value: "Check the exact branch and service", copy: "Plain Vanilla's Tiong Bahru cafe serves daytime brunch and does not take reservations. Candlenut and National Kitchen offer lunch and dinner reservations. Jigger & Pony admits guests over 18; check ATLAS's evening dress code and current reservation hours." }
+  ];
+  data.cityEditorialPageData["Singapore, Singapore"] = {
+    dek: "Make time for a garden walk, an exhibition you want to see, and a meal you have chosen before you arrive.",
+    intro: [
+      "Start with the part of Singapore you most want to explore. At Marina Bay, choose an ArtScience Museum exhibition and leave room for the outdoor gardens at Gardens by the Bay. Museum exhibitions have separate ticket arrangements, and the gardens publish maintenance dates for individual attractions. Check those before paying rather than assuming a combined day means everything will be open.",
+      "For a quieter outing, Singapore Botanic Gardens has free general entry and several entrances. Choose the entrance that suits your route; Napier and Botanic Gardens MRT stations serve different ends. The National Orchid Garden is a separate paid visit. With children, check Jacob Ballas Children's Garden's age rules and Monday closure. Singapore Zoo is another option for a family outing, but it is at Mandai rather than in the Marina Bay sightseeing area.",
+      "National Gallery Singapore gives you an indoor stop in the Civic District. Check the current exhibitions and ticket inclusions: the UOB Southeast Asia Gallery is temporarily closed, although other galleries remain open. National Kitchen by Violet Oon is in the City Hall wing and offers lunch and dinner. Its high tea has a different service schedule, so reserve the meal you actually want.",
+      "In Tiong Bahru, choose Plain Vanilla on Yong Siak Street for brunch or stop at Tiong Bahru Bakery on Eng Hoon Street for a pastry and coffee. These are two separate businesses, not two names for the same cafe. For a longer meal, compare Candlenut's Peranakan menu at Dempsey with JUMBO Seafood's Riverside Point branch. Check dietary needs and availability directly. ATLAS at Parkview Square and Jigger & Pony at Amara Singapore offer cocktail reservations; neither is a substitute for a family restaurant."
+    ],
+    summaryCards: [
+      ["First visit", "Choose Marina Bay, the Civic District, or a garden outing rather than booking all three back to back."],
+      ["A slower morning", "Brunch or a bakery stop in Tiong Bahru, then leave the next booking flexible."],
+      ["Before booking", "Check exhibition tickets, maintenance closures, exact branches, and age or dress rules."]
+    ],
+    trust: "All 13 distinct recommendations in this guide were checked against official operator websites on October 6, 2026, starting with Visit Singapore. This was a website review, not a visit or telephone confirmation. Advertised opening and reservation details do not guarantee availability; confirm before traveling."
+  };
 })();

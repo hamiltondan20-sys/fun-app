@@ -16,6 +16,7 @@ import vm from "node:vm";
 import { execSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { classifyItem, linkItem } from "./place-links.mjs";
+import evidence from "./guide-evidence.cjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const arg = (name, fallback) => {
@@ -59,7 +60,8 @@ const dataFiles = [
   "data/trip-content.js",
   "data/top-100-destinations.js",
   "data/destination-expansion.js",
-  "data/destination-coverage.js"
+  "data/destination-coverage.js",
+  "data/city-source-ledger.js"
 ];
 
 globalThis.window = globalThis.window || {};
@@ -328,6 +330,7 @@ const cities = rawCities.map((record) => {
   }
   usedSlugs.set(slug, key);
   const detail = pickBySource(DATA.cityGuideDetailData, record) || {};
+  const ledger = pickBySource(DATA.citySourceLedger, record);
   const clusters = CLUSTERS.map((cluster) => ({
     id: cluster.id,
     heading: cluster.heading(name),
@@ -337,7 +340,7 @@ const cities = rawCities.map((record) => {
       .map(([field, label]) => ({
         field,
         label,
-        items: Array.isArray(detail[field]) ? detail[field].filter(Boolean).map(String) : []
+        items: evidence.renderedEntries(detail[field], ledger)
       }))
       .filter((block) => block.items.length)
   })).filter((cluster) => cluster.blocks.length);
