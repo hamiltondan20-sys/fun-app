@@ -17,6 +17,9 @@ const dataFiles = [
 const requiredFiles = [
   "code.html",
   "plan/index.html",
+  "privacy/index.html",
+  "terms/index.html",
+  "about/index.html",
   "assets/app.css",
   "assets/app-inline.css",
   "assets/content.css",

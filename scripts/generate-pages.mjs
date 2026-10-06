@@ -409,7 +409,7 @@ function pageHead({ title, description, canonical, image = "", socialImage = "",
   <link rel="stylesheet" href="${url("/assets/app.css")}" />
   <link rel="stylesheet" href="${url("/assets/content.css")}" />
   <script defer src="${url("/scripts/site-config.js")}?v=20260913a"></script>
-  <script defer src="${url("/scripts/app-analytics.js")}?v=20260913b"></script>
+  <script defer src="${url("/scripts/app-analytics.js")}?v=20261005privacy"></script>
   ${schema.map(jsonld).join("\n  ")}`;
 }
 
@@ -452,13 +452,14 @@ ${body}
   <aside id="analytics-consent" class="hb-analytics-consent hidden" aria-label="Analytics choices">
     <p><strong>Help us improve trip planning?</strong></p>
     <p>Optional usage data helps us see which parts of the site need work. Your trip details are not included.</p>
+    <p><a href="${url("/privacy/")}">Read our privacy policy</a></p>
     <div>
       <button id="analytics-decline" type="button">Not now</button>
       <button id="analytics-accept" type="button">Allow analytics</button>
     </div>
   </aside>
   <footer class="hb-site-footer">
-    <p>The Fullest Life Travel | <a href="${url("/faq/")}">FAQ</a> | <a href="${url("/contact/")}">Contact</a></p>
+    <p>The Fullest Life Travel | <a href="${url("/about/")}">About</a> | <a href="${url("/faq/")}">FAQ</a> | <a href="${url("/contact/")}">Contact</a> | <a href="${url("/privacy/")}">Privacy</a> | <a href="${url("/terms/")}">Terms</a></p>
   </footer>
 </body>
 </html>
@@ -824,11 +825,11 @@ function homePage(featured) {
 }
 
 function infoPage({ route, heading, title, description, label, sections, schema = [] }) {
-  const body = `    <article>
+  const body = `    <article class="hb-info-page">
       <p class="hb-eyebrow">${esc(label)}</p>
       <h1>${esc(heading)}</h1>
       <p class="hb-dek">${esc(description)}</p>
-${sections.map((section) => `      <section class="hb-section"><h2>${esc(section.heading)}</h2><p>${esc(section.copy)}</p></section>`).join("\n")}
+${sections.map((section) => `      <section class="hb-section"><h2>${esc(section.heading)}</h2><p>${esc(section.copy)}</p>${section.links ? `<p>${section.links.map((link) => `<a href="${esc(link.href)}">${esc(link.label)}</a>`).join(" | ")}</p>` : ""}${section.analyticsChoice ? '<p><button type="button" data-analytics-withdraw>Turn off analytics</button> <span data-analytics-status role="status" aria-live="polite"></span></p>' : ""}</section>`).join("\n")}
     </article>`;
   return {
     route,
@@ -1087,6 +1088,56 @@ pages.push(infoPage({
   sections: [
     { heading: "Tell us what needs work", copy: "Email hamiltondan20@gmail.com with the destination, page, and detail that felt confusing, outdated, or too generic." },
     { heading: "Before you travel", copy: "For current entry rules, safety information, accessibility, and opening times, use official sources linked from the planner and destination pages." }
+  ]
+}));
+
+pages.push(infoPage({
+  route: "/privacy/",
+  heading: "Privacy policy",
+  title: "Privacy | The Fullest Life",
+  description: "What stays in your browser, when third parties receive data, and how to manage your privacy choices.",
+  label: "Updated October 5, 2026",
+  sections: [
+    { heading: "Who to contact", copy: "The Fullest Life Travel is an independently run travel-planning site based in Colorado, United States. For privacy questions or requests, email hamiltondan20@gmail.com. Please do not send passport details, payment information or other sensitive documents.", links: [{ label: "Email the site owner", href: "mailto:hamiltondan20@gmail.com" }] },
+    { heading: "Your saved plans stay in this browser", copy: "The planner has no online account service or backend for saved trips. Its application code does not upload your saved profile, drafts or booking notes to us. A local profile is not a registered account, and entering an email address there does not send an email or subscribe you to marketing. Other people using the same browser profile may be able to see your saved information." },
+    { heading: "What the planner stores", copy: "Browser localStorage keeps your profile (display name, optional email, home airport, local/guest choice and save time) under hb-trip-profile-v1. hb-trip-draft-v1 stores trip inputs, preferences, generated plans, saved alternatives, profile details, booking items and save times. hb-trip-booking-v1 stores the destination, booking progress, your notes and save time; it does not make a reservation or process a payment. hb-guide-memory-v1 remembers guide searches, filters, comparisons, selected activities and browsing position. These records remain until replaced, removed or cleared by your browser; there is no automatic expiry." },
+    { heading: "Optional Google Analytics", copy: "If analytics is configured and you choose Allow analytics, Google Analytics receives page visits and usage events, along with browser/device and network information needed to process those requests. Pages and URLs can reveal which destination you are viewing; do not put personal or sensitive information in a URL. We do not intentionally send saved profile fields, drafts or booking notes as analytics events. Google may use analytics cookies and process information outside your country. Analytics is not currently configured in this site's configuration file, so the tag does not load. Your choice is stored under hb.analytics.consent as granted or denied.", links: [{ label: "Google privacy policy", href: "https://policies.google.com/privacy" }] },
+    { heading: "Change your analytics choice", copy: "You can turn off analytics below without deleting your trip. This saves a denied choice, disables future analytics events and reloads this page so the tag no longer loads. It does not erase information already sent to Google. To remove existing analytics cookies as well, clear this site's cookies in your browser. Clearing all site data also removes the saved consent choice; you may be asked again if analytics is enabled.", analyticsChoice: true },
+    { heading: "Clear or move your saved data", copy: "Export a backup from the planner's Saved screen before clearing anything you want to keep. Use your browser's site-data settings to delete storage for hamiltondan20-sys.github.io, then reload the planner. This removes local profiles, drafts, booking notes and guide memory; it may also clear other projects on this same GitHub Pages domain. Downloaded backups are separate files and must be deleted separately. We cannot recover or remotely delete information that exists only in your browser." },
+    { heading: "Hosting, photos, fonts and external links", copy: "GitHub Pages hosts the site and receives normal website requests, including network information. Google Fonts supplies fonts. Wikimedia Commons may receive requests for images and destination-photo searches containing a city and country, but not your saved profile or booking notes. External photo hosts receive image requests where used. Google Maps links open Google's service when followed and may include a place, address or trip map query. These requests are separate from optional analytics and are governed by the providers' policies. Booking and other external sites receive information when you visit them.", links: [{ label: "GitHub privacy statement", href: "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" }, { label: "Wikimedia privacy policy", href: "https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" }, { label: "Google privacy policy", href: "https://policies.google.com/privacy" }] },
+    { heading: "If you email us", copy: "Choosing to email us sends your address, message and any attachments through your email provider and our Gmail inbox. We use the message to respond and investigate the issue you report. This is different from entering an optional email in your local profile. Contact us to request deletion of correspondence; we will explain any information we must retain rather than promise a deletion deadline we cannot confirm." },
+    { heading: "Your privacy rights", copy: "Depending on your location and which laws apply, you may have rights to access, correct or delete personal information, restrict or object to processing, request a portable copy, withdraw consent, or complain to a privacy regulator. Email us with your request. We can help with information we hold, but cannot access local-only trip records or promise to delete a provider's independent records. This policy does not claim that every regional law applies or that publishing a policy alone establishes compliance." }
+  ]
+}));
+
+pages.push(infoPage({
+  route: "/terms/",
+  heading: "Terms of use",
+  title: "Terms | The Fullest Life",
+  description: "Use the guides and planner as starting points, and check current details before booking or traveling.",
+  label: "Updated October 5, 2026",
+  sections: [
+    { heading: "Recommendations, not guarantees", copy: "Our guides are editorial suggestions, not guarantees about quality, suitability, safety or access. Businesses close, menus change and opening hours move. Confirm the details that matter with the attraction, business or official authority before you go." },
+    { heading: "Check before you book", copy: "The planner does not promise live availability. Itineraries are starting points, not professional travel, medical, legal or immigration advice. Check prices, reservations, transport, accessibility, entry rules and current travel guidance yourself. We do not sell bookings, take payments or act as your travel agent." },
+    { heading: "Third-party services", copy: "External links help you research places and arrange your own trip. A link is not an endorsement or a promise about a third party's service. Their terms, privacy policies, prices and cancellation rules apply when you use them." },
+    { heading: "Keep a copy of your plans", copy: "Saved trip data is browser-local, not an online account or cloud backup. Export plans you want to keep. Clearing browser storage, changing devices or losing access to a browser may remove your saved work." },
+    { heading: "Accuracy and responsibility", copy: "We provide the site as available, without a warranty that every detail is accurate, complete or current. Use your judgment when deciding whether a recommendation suits your trip. Nothing here excludes rights or responsibilities that cannot legally be excluded. Report an error to hamiltondan20@gmail.com so we can review it." },
+    { heading: "Privacy and questions", copy: "Read our privacy policy for browser storage and third-party data flows. Contact the site owner with questions about these terms.", links: [{ label: "Privacy policy", href: url("/privacy/") }, { label: "Contact", href: url("/contact/") }] }
+  ]
+}));
+
+pages.push(infoPage({
+  route: "/about/",
+  heading: "About The Fullest Life Travel",
+  title: "About | The Fullest Life",
+  description: "A practical travel-planning project, with clear limits on what has been checked and what still needs review.",
+  label: "Get to know us",
+  sections: [
+    { heading: "Make room for the trip you want", copy: "The Fullest Life Travel is an independently run project based in Colorado. We help you find things to do and turn your choices into a day-by-day starting point. You choose what sounds good, adjust the pace and check the details before booking. Questions and corrections go directly to hamiltondan20@gmail.com." },
+    { heading: "How source reviews work", copy: "Our source-review process starts with the destination's official tourism board. We then check attractions and businesses against their own current websites, including the exact branch, access information and operating evidence. Where available, we add independent corroboration. Dated provenance records keep the place name, checked URLs and evidence together. A website review is not a personal visit or a guarantee that a venue will be open on your travel date." },
+    { heading: "What has and has not been verified", copy: "Source reviews are still in progress. Not every published guide has completed this process. Boston, Cusco, Edinburgh and Dublin currently have complete recorded reviews of their detail recommendations. Other published guides have passed automated content checks, which are not proof that every place is current or independently verified. Austin's earlier review is being reconciled with the current evidence format. We keep this distinction visible rather than call the whole catalogue verified." },
+    { heading: "Why some destinations are missing", copy: "We hold pages back when their content does not meet the publication checks, including pages filled with generic suggestions instead of enough named places. We do not publish every city simply to increase the catalogue. Those checks help identify gaps, but names that match an automated pattern still need source review. If reliable evidence is missing, our review process leaves the recommendation out rather than inventing a place." },
+    { heading: "Help us make it better", copy: "Tell us the page, place name and detail that needs a second look. A current official link is especially helpful. We do not yet publish traveler reviews or promise live prices and availability.", links: [{ label: "Send a correction", href: "mailto:hamiltondan20@gmail.com" }, { label: "Frequently asked questions", href: url("/faq/") }] }
   ]
 }));
 

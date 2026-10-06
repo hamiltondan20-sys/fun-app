@@ -32,7 +32,7 @@ function generatedSnapshot() {
       hash.update(fs.readFileSync(absolute));
     }
   }
-  for (const relative of ["destinations", "countries", "sitemap.xml", "index.html", "faq", "contact", "plan", "code.html", "404.html"]) visit(relative);
+  for (const relative of ["destinations", "countries", "sitemap.xml", "index.html", "faq", "contact", "privacy", "terms", "about", "plan", "code.html", "404.html"]) visit(relative);
   return hash.digest("hex");
 }
 
@@ -45,7 +45,7 @@ test("publication ratchet respects thresholds without writing generated output",
   for (const report of reports) {
     const published = report.cities.filter((city) => city.eligible);
     assert.equal(published.length, report.cityCount);
-    assert.equal(report.sitemapCount, report.cityCount + report.countryCount + 6);
+    assert.equal(report.sitemapCount, report.cityCount + report.countryCount + 9);
     for (const city of published) {
       assert.ok(city.named >= report.minNamed, `${city.slug} is below the named minimum`);
       assert.ok(city.categories >= 3, `${city.slug} has fewer than three categories with names`);

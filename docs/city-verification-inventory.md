@@ -9,7 +9,7 @@ Publication eligibility comes from the generator's read-only audit with its unch
 - Source-verified (complete dated evidence format): 4.
 - Classifier-passed (published, not fully documented in that format): 185.
 - Held back: 295.
-- Published destinations: 189; country hubs: 19; sitemap URLs: 214.
+- Published destinations: 189; country hubs: 19; sitemap URLs: 217.
 
 Austin's prior source review is retained in the Review column. Its classifier-passed label here means the newer evidence format is incomplete, not that its earlier research was disproved.
 The Evidence column counts distinct current recommendations with an HTTPS source, date, source type, and operating/context evidence. Zero means no qualifying records, not zero real places in the city.

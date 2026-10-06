@@ -465,6 +465,28 @@ body.hb-content {
   margin: 0;
 }
 
+.hb-info-page .hb-section p {
+  max-width: 76ch;
+}
+
+.hb-info-page .hb-section a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.hb-info-page [data-analytics-withdraw] {
+  min-height: 44px;
+  margin-top: 12px;
+  padding: 10px 16px;
+  border: 1px solid var(--hb-ocean);
+  border-radius: 6px;
+  background: var(--hb-ocean);
+  color: #ffffff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 :focus-visible {
   outline: 3px solid rgba(23, 103, 101, 0.55);
   outline-offset: 3px;

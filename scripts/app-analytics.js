@@ -20,6 +20,11 @@
     },
     deny() {
       writeConsent("denied");
+      this.enabled = false;
+      if (measurementId) window[`ga-disable-${measurementId}`] = true;
+      if (typeof window.gtag === "function") {
+        window.gtag("consent", "update", { analytics_storage: "denied" });
+      }
       hideBanner();
     },
     event(name, params = {}) {
@@ -29,6 +34,7 @@
 
   function load() {
     if (!measurementId || window.HB_ANALYTICS.enabled) return;
+    window[`ga-disable-${measurementId}`] = false;
     window.dataLayer = window.dataLayer || [];
     window.gtag = function () { window.dataLayer.push(arguments); };
     window.gtag("js", new Date());
@@ -44,6 +50,16 @@
   document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("analytics-accept")?.addEventListener("click", () => window.HB_ANALYTICS.grant());
     document.getElementById("analytics-decline")?.addEventListener("click", () => window.HB_ANALYTICS.deny());
+    document.querySelectorAll("[data-analytics-withdraw]").forEach((button) => {
+      button.addEventListener("click", () => {
+        window.HB_ANALYTICS.deny();
+        if (readConsent() === "denied") window.location.reload();
+        else {
+          const status = document.querySelector("[data-analytics-status]");
+          if (status) status.textContent = "Analytics is off for this page. Your browser blocked saving the choice; clear site data in browser settings before reopening the site.";
+        }
+      });
+    });
     document.addEventListener("click", (event) => {
       const target = event.target.closest("[data-analytics-event]");
       if (!target) return;
