@@ -196,3 +196,13 @@ performed to manufacture third entries.
 Local visual inspection was blocked by browser policy for file URLs. Public
 browser inspection and deployment confirmation remain pending. No workaround
 was attempted. Automation remains paused; no Hanoi research started.
+
+### Deployment confirmed
+
+Content commit bfe49a7 and sitemap synchronization 09a37be were pushed to main.
+Actions run 37534775297 succeeded. The public Singapore page displays the new
+13-recommendation review note and all 15 category blocks. Public mobile check
+at 390x844 showed the short food lists without horizontal overflow; the hero
+image loaded. Desktop presentation was inspected at the normal viewport.
+The generated-file status check was clean before push. No thresholds changed,
+no unreviewed guide sections were removed, and no second city was sourced.

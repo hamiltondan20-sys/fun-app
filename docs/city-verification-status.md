@@ -5,7 +5,8 @@ Updated: 2026-10-06. This is an editorial record, not a publication gate.
 The [user-approved Wikivoyage-led queue](city-sourcing-priorities-2026-10-05.md)
 distinguishes classifier matches from sourced recommendations. Singapore's
 13 recommendations now have dated operator evidence and pass the staged
-short-list release validation. Deployment confirmation is pending.
+short-list release validation. Deployed in Actions run 37534775297; the public
+page and mobile/desktop layouts were checked after deployment.
 Automated content work remains paused. The legal-page release has 217
 sitemap URLs; it did not change the 189 published destination guides.
 
