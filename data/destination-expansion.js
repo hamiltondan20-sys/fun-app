@@ -606,4 +606,143 @@ window.HB_DATA = window.HB_DATA || {};
     ],
     trust: "All 13 distinct recommendations in this guide were checked against official operator websites on October 6, 2026, starting with Visit Singapore. This was a website review, not a visit or telephone confirmation. Advertised opening and reservation details do not guarantee availability; confirm before traveling."
   };
+  data.cityGuideDetailData["Hanoi, Vietnam"] = {
+    bestAttractions: ["Temple of Literature", "Hanoi Museum"],
+    bestFirstTimers: ["Temple of Literature", "Cafe Giang (Nguyen Huu Huan)"],
+    bestUnique: ["KOTO Van Mieu", "Cafe Giang (Nguyen Huu Huan)"],
+    bestBreakfast: ["Lifted Coffee & Brunch (Hang Ga)", "Red Bean Ma May"],
+    bestLunch: ["KOTO Van Mieu", "Lifted Coffee & Brunch (Hang Ga)"],
+    bestDinner: ["Red Bean Ma May", "Le Beaulieu"],
+    bestRestaurants: ["Red Bean Ma May", "Le Beaulieu"],
+    bestCoffee: ["Cafe Giang (Nguyen Huu Huan)", "Lifted Coffee & Brunch (Hang Ga)"],
+    bestBakeries: [], bestCocktails: ["angelina"],
+    bestCouples: ["Le Beaulieu", "angelina"],
+    bestKids: ["Hanoi Museum"], bestSolo: ["Temple of Literature", "Cafe Giang (Nguyen Huu Huan)"],
+    bestBudget: [], bestLuxury: ["Le Beaulieu"]
+  };
+  data.cityGuideDetailData["Berlin, Germany"] = {
+    bestAttractions: ["Neues Museum", "Berlin Wall Memorial", "Charlottenburg Palace (Old Palace)"],
+    bestFirstTimers: ["Neues Museum", "Berlin Wall Memorial", "East Side Gallery"],
+    bestUnique: ["DDR Museum", "Tempelhofer Feld"],
+    bestBreakfast: ["House of Small Wonder (Auguststrasse)", "Zeit fuer Brot (Alte Schoenhauser Strasse)"],
+    bestLunch: ["Markthalle Neun", "THE BARN (Mitte)"],
+    bestDinner: ["Restaurant Tim Raue", "Nobelhart & Schmutzig"],
+    bestRestaurants: ["Restaurant Tim Raue", "Nobelhart & Schmutzig"],
+    bestCoffee: ["THE BARN (Mitte)"], bestBakeries: ["Zeit fuer Brot (Alte Schoenhauser Strasse)"],
+    bestCocktails: ["Green Door Bar"],
+    bestCouples: ["Charlottenburg Palace (Old Palace)", "Green Door Bar"],
+    bestKids: ["Museum fuer Naturkunde Berlin", "Zoo Berlin", "Deutsches Technikmuseum"],
+    bestSolo: ["DDR Museum", "Berlin Wall Memorial", "THE BARN (Mitte)"],
+    bestBudget: ["Tempelhofer Feld", "East Side Gallery"],
+    bestLuxury: ["Restaurant Tim Raue", "Nobelhart & Schmutzig"]
+  };
+  data.cityGuideDetailData["Vienna, Austria"] = {
+    bestAttractions: ["Schoenbrunn Palace", "Upper Belvedere", "St. Stephen's Cathedral"],
+    bestFirstTimers: ["Schoenbrunn Palace", "St. Stephen's Cathedral", "Demel (Kohlmarkt)"],
+    bestUnique: ["Mozarthaus Vienna", "KunstHausWien"],
+    bestBreakfast: ["Joseph Brot (Fuehrichgasse)", "MOTTO am Fluss"],
+    bestLunch: ["Figlmueller (Wollzeile)", "MOTTO am Fluss"],
+    bestDinner: ["Meissl & Schadn (Vienna)", "MOTTO am Fluss"],
+    bestRestaurants: ["Figlmueller (Wollzeile)", "Meissl & Schadn (Vienna)"],
+    bestCoffee: ["Demel (Kohlmarkt)", "Joseph Brot (Fuehrichgasse)"],
+    bestBakeries: ["Demel (Kohlmarkt)", "Joseph Brot (Fuehrichgasse)"],
+    bestCocktails: [], bestCouples: ["Vienna State Opera", "Upper Belvedere"],
+    bestKids: ["Schoenbrunn Zoo", "Natural History Museum Vienna"],
+    bestSolo: ["ALBERTINA (Albertinaplatz)", "Leopold Museum", "Mozarthaus Vienna"],
+    bestBudget: [], bestLuxury: ["Vienna State Opera"]
+  };
+  data.cityGuideDetailData["Munich, Germany"] = {
+    bestAttractions: ["Munich Residence", "Alte Pinakothek", "BMW Museum"],
+    bestFirstTimers: ["Munich Residence", "Hofbraeuhaus Muenchen"],
+    bestUnique: ["BMW Welt", "Munich Documentation Centre for the History of National Socialism"],
+    bestBreakfast: ["Dallmayr Cafe Bistro", "Rischart (Cafe am Marienplatz)"],
+    bestLunch: ["Hofbraeuhaus Muenchen", "Dallmayr Cafe Bistro"],
+    bestDinner: ["Augustiner Klosterwirt", "Restaurant Tantris"],
+    bestRestaurants: ["Augustiner Klosterwirt", "Restaurant Tantris"],
+    bestCoffee: ["Man versus Machine (Glockenbach)", "Dallmayr Cafe Bistro"],
+    bestBakeries: ["Rischart (Cafe am Marienplatz)"], bestCocktails: ["Schumann's Bar (Hofgarten)"],
+    bestCouples: ["Restaurant Tantris", "Schumann's Bar (Hofgarten)"],
+    bestKids: ["Deutsches Museum (Museumsinsel)", "Hellabrunn Zoo"],
+    bestSolo: ["Lenbachhaus", "Alte Pinakothek", "Man versus Machine (Glockenbach)"],
+    bestBudget: ["Munich Documentation Centre for the History of National Socialism", "BMW Welt"],
+    bestLuxury: ["Restaurant Tantris"]
+  };
+  const reviewedBatch = {
+    "Hanoi, Vietnam": {
+      summary: "Museum visits, egg coffee, brunch and Vietnamese meals, with exact branches to help you plan Hanoi.",
+      highlights: ["Temple of Literature", "Hanoi Museum", "Cafe Giang (Nguyen Huu Huan)"],
+      tip: "Choose one museum and a meal first. Check the exact restaurant branch before setting your route.",
+      intro: [
+        "Start with the visit you care about most. The Temple of Literature publishes its visitor entrance on Quoc Tu Giam and asks visitors to respect the worship spaces. Hanoi Museum is on Pham Hung Street, rather than a quick extra stop between Old Quarter meals. Give it its own outing if you want time with the displays instead of squeezing it into a lunch break.",
+        "For breakfast, Lifted Coffee & Brunch on Hang Ga offers all-day brunch and coffee. Red Bean Ma May is another named option, with different breakfast and lunch service times. For egg coffee, use Cafe Giang's Nguyen Huu Huan branch. The business lists other locations too, so check the full address rather than choosing the first map result with the right name.",
+        "KOTO Van Mieu advertises Vietnamese dishes and table reservations at 35 Van Mieu. Its current operator address differs from older listings. For a longer evening meal, compare Red Bean Ma May with Le Beaulieu at the Metropole. The hotel's angelina lounge is a separate drinks stop, not another restaurant recommendation under a different name. Confirm the service you want and any dietary requirements before booking. The bakery and budget lists are left empty while their candidates remain unresolved."
+      ],
+      toolkit: [
+        { label: "Start here", value: "Choose a museum, then a meal", copy: "The Temple of Literature and Hanoi Museum are separate outings. Do not assume both fit comfortably between breakfast and lunch." },
+        { label: "Find the branch", value: "Use the full current address", copy: "Cafe Giang has several locations. KOTO's operator currently gives 35 Van Mieu; older listings can give a different address." },
+        { label: "Dining", value: "Book the service you want", copy: "Le Beaulieu lists lunch, dinner and Sunday brunch separately. Red Bean Ma May has different breakfast and later dining hours." },
+        { label: "Before visiting", value: "Confirm access and opening", copy: "Museum visitor information and restaurant reservations can change. Check directly rather than relying on a fixed schedule in a guide." }
+      ]
+    },
+    "Berlin, Germany": {
+      summary: "Wall history, museums, outdoor space and exact-branch food stops for a Berlin trip you can plan around.",
+      highlights: ["Neues Museum", "Berlin Wall Memorial", "East Side Gallery"],
+      tip: "Keep the Wall Memorial, Museum Island and Kreuzberg food stops as separate parts of your plan rather than a checklist to finish in one morning.",
+      intro: [
+        "Choose the history or museum visit you most want to spend time with. Neues Museum publishes its entrance through James Simon Galerie, while the Berlin Wall Memorial follows the historical site on Bernauer Strasse. East Side Gallery is a different Wall location. Seeing both can be worthwhile, but they are not two entrances to the same attraction.",
+        "For breakfast, House of Small Wonder now serves brunch at Auguststrasse 11-13. Its former Johannisstrasse location remains closed, and the operator warns that selecting the business name in a ride app can send visitors there. THE BARN's Mitte branch is on Auguststrasse 58. Zeit fuer Brot on Alte Schoenhauser Strasse gives you another specific bakery stop, rather than an unspecified cafe nearby.",
+        "Markthalle Neun publishes a market calendar as well as hall opening times. Check which stands and events suit your day; an open hall does not mean every food stall is serving. Restaurant Tim Raue and Nobelhart & Schmutzig offer dinner reservations. Green Door Bar is an evening drinks option, not a family meal. With children, compare the Natural History Museum, Zoo Berlin and Deutsches Technikmuseum. The technology museum lists galleries that are currently inaccessible, so check the displays you want before buying tickets. Tempelhofer Feld has free access, seasonal gates and notices about work in parts of the park."
+      ],
+      toolkit: [
+        { label: "Breakfast", value: "Auguststrasse, not the old address", copy: "House of Small Wonder's current directions specify Auguststrasse 11-13. Enter the full address when arranging transport." },
+        { label: "Markets", value: "Check the event and the stall", copy: "Markthalle Neun has different hall, market and Thursday evening service schedules." },
+        { label: "Museums", value: "Check entrances and closed rooms", copy: "Neues Museum uses the James Simon Galerie entrance. Deutsches Technikmuseum lists partial exhibition closures." },
+        { label: "Outdoor time", value: "Leave time for Tempelhofer Feld", copy: "The operator lists seasonal gate hours and several entrances. Check current development notices and park rules." }
+      ]
+    },
+    "Vienna, Austria": {
+      summary: "Palace visits, art, pastry stops and an opera evening, with current branches and visitor arrangements in Vienna.",
+      highlights: ["Schoenbrunn Palace", "Upper Belvedere", "St. Stephen's Cathedral"],
+      tip: "Choose a palace or museum for the day and leave time for a cafe. Book the performance you want rather than assuming opera tickets will be available.",
+      intro: [
+        "Start with the interior you most want to see. Schoenbrunn Palace and Upper Belvedere publish their own ticket arrangements; the palace, gardens and zoo are not one automatically included visit. Upper Belvedere is on Prinz Eugen Strasse, while other Belvedere sites use different addresses. St. Stephen's Cathedral has visiting times that differ from worship access and can change for services.",
+        "For art, compare ALBERTINA at Albertinaplatz with Leopold Museum in MuseumsQuartier or KunstHausWien on Untere Weissgerberstrasse. You do not need all three in one day. Mozarthaus Vienna gives you a separate museum visit on Domgasse. Check current exhibitions and the language of any tour before booking, especially if you are planning a family event rather than general admission.",
+        "Joseph Brot's Fuehrichgasse bistro offers an early start; Demel on Kohlmarkt opens later and does not take reservations. Cafe Central's Palais Ferstel branch is closed for renovation, so it is not included as an open cafe. At MOTTO am Fluss, daytime cafe service and evening restaurant service differ. For a meal, compare Figlmueller's Wollzeile branch with Meissl & Schadn in Vienna, not its Salzburg restaurant. An evening at Vienna State Opera needs its own ticket and performance choice. The drinks and budget lists remain empty where the source review has not established an appropriate recommendation."
+      ],
+      toolkit: [
+        { label: "Tickets", value: "Choose the exact venue", copy: "Upper Belvedere, ALBERTINA branches and Schoenbrunn's attractions have separate addresses or admission arrangements." },
+        { label: "Coffee", value: "Check the cafe before going", copy: "Cafe Central is closed for renovation. Demel does not take reservations; Joseph Brot's kitchen closes before its bistro." },
+        { label: "With children", value: "Allow a separate zoo outing", copy: "Schoenbrunn Zoo publishes seasonal closing times. Museum family events can have specific dates and language requirements." },
+        { label: "Evening", value: "Reserve the performance or meal", copy: "Check Vienna State Opera's programme and restaurant service times before setting the rest of the day." }
+      ]
+    },
+    "Munich, Germany": {
+      summary: "Art, palace rooms, science museums and Bavarian dining, with specific Munich branches and current access notes.",
+      highlights: ["Munich Residence", "Alte Pinakothek", "Deutsches Museum (Museumsinsel)"],
+      tip: "Choose one museum visit and a meal first. Check partial closures and the journey to the zoo before adding another outing.",
+      intro: [
+        "Choose the collection you want to spend time with. Munich Residence has separate arrangements for its museum, treasury and theatre. Alte Pinakothek publishes an entrance through Theresienstrasse, while Lenbachhaus is on Luisenstrasse. Lenbachhaus's Kunstbau gallery is closed during 2026, so an open main museum is not a promise that every exhibition space is available.",
+        "BMW Welt and BMW Museum are distinct visits: the Welt building has free entry, while the museum is ticketed. Check the operator's date-specific restrictions before setting your route. With children, compare Deutsches Museum's Museumsinsel site with Hellabrunn Zoo. The zoo warns about replacement transport and construction restrictions. Munich Documentation Centre offers free admission to serious historical material; it is not a substitute for a children's science activity.",
+        "Dallmayr Cafe Bistro offers breakfast and lunch on Dienerstrasse, but closes on Sundays and public holidays. Rischart's Cafe am Marienplatz has its own breakfast, meal and cake service. For coffee, use Man versus Machine's Glockenbach branch on Muellerstrasse. Hofbraeuhaus and Augustiner Klosterwirt are named options for Bavarian meals, with their own room and reservation arrangements. For a longer booked meal, check Restaurant Tantris rather than confusing it with Tantris DNA. Schumann's Bar at Hofgarten is a separate evening option and lists Saturday as closed."
+      ],
+      toolkit: [
+        { label: "Museums", value: "Check the building as well as the name", copy: "BMW Welt and BMW Museum have different admission. Lenbachhaus's Kunstbau is closed during 2026." },
+        { label: "Breakfast", value: "Keep a Sunday alternative", copy: "Dallmayr Cafe Bistro closes Sundays and public holidays. Check the exact Rischart branch for your chosen day." },
+        { label: "Zoo journey", value: "Check current transport notices", copy: "Hellabrunn reports replacement service on part of the U3 route and construction restrictions inside the zoo." },
+        { label: "Dinner", value: "Reserve the right restaurant", copy: "Restaurant Tantris and Tantris DNA are distinct. Hofbraeuhaus booking rules depend on the room you choose." }
+      ]
+    }
+  };
+  for (const [city, review] of Object.entries(reviewedBatch)) {
+    const guide = data.cityGuideData.find((item) => item.city === city);
+    Object.assign(guide, { summary: review.summary, highlights: review.highlights, tip: review.tip });
+    data.destinationFacts[city] = review.tip;
+    data.destinationHeroData[city].copy = review.summary;
+    data.cityPlanningToolkitData[city] = review.toolkit;
+    data.cityEditorialPageData[city] = {
+      dek: review.summary, intro: review.intro,
+      summaryCards: [["Start here", review.highlights.join(", ") + "."], ["Plan your day", review.tip], ["Before visiting", "Confirm the exact branch, current access and reservations directly."]],
+      trust: "The named detail recommendations were reviewed against official operator websites on October 6, 2026. This was a website review, not a visit or telephone confirmation. Current opening and booking information does not guarantee availability."
+    };
+  }
 })();

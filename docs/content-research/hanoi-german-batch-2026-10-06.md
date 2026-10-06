@@ -176,7 +176,22 @@ Unresolved new leads:
 - Five Elephant: guessed cafes path did not return a readable page. Follow
   the operator's actual navigation rather than treating this as closure.
 
-## Remaining completion checklist
+## Completion checkpoint, October 6
+
+The retained recommendations are now mapped in `data/city-source-ledger.js`,
+including `sourcedFor` and `locationSourceUrl`. Berlin's House of Small Wonder
+uses the current Auguststrasse branch, not the closed Johannisstrasse address.
+Cafe Central remains excluded. Unresolved leads above remain research only;
+they are not published recommendations or claims of closure. The museum and
+business reads completed after the earlier checkpoint are recorded in the
+ledger, including Leopold Museum's getting-here page. Independent corroboration
+is not claimed merely because two pages belong to one operator.
+
+The four guides pass generation and release validation without threshold
+changes. See [the completed batch review](../hanoi-german-batch-review-2026-10-06.md)
+for final counts and the proposed, unimplemented consolidation.
+
+## Publication checklist
 
 1. Finish pending operator reads and independent corroboration where available.
 2. Record exact recommendation name, branch, checked URLs, date, operating

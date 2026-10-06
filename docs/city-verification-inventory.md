@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 5.
-- Classifier-passed (published, not fully documented in that format): 184.
+- Source-verified (complete dated evidence format): 9.
+- Classifier-passed (published, not fully documented in that format): 180.
 - Held back: 295.
 - Published destinations: 189; country hubs: 19; sitemap URLs: 217.
 
@@ -80,7 +80,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Belfast, United Kingdom | belfast | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Bengaluru, India | bengaluru | held-back | not-reviewed | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Bergen, Norway | bergen | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Berlin, Germany | berlin | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Berlin, Germany | berlin | source-verified | source-checked | 16 | 28 | 15 | 14 | None |
 | Bermuda, Bermuda | bermuda | classifier-passed | not-reviewed | 0 | 7 | 15 | 5 | None |
 | Bern, Switzerland | bern | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Bilbao, Spain | bilbao | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
@@ -212,7 +212,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Hamburg, Germany | hamburg | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
 | Hamilton, Bermuda | hamilton | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Hangzhou, China | hangzhou | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
-| Hanoi, Vietnam | hanoi | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Hanoi, Vietnam | hanoi | source-verified | source-checked | 8 | 18 | 13 | 12 | None |
 | Harare, Zimbabwe | harare | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Havana, Cuba | havana | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Hawaii, United States | hawaii | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
@@ -320,7 +320,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Mount Fuji, Japan | mount-fuji | classifier-passed | not-reviewed | 0 | 8 | 15 | 4 | None |
 | Mount Kailash, China | mount-kailash | classifier-passed | not-reviewed | 0 | 5 | 15 | 3 | None |
 | Mumbai, India | mumbai | classifier-passed | not-reviewed | 0 | 9 | 15 | 5 | None |
-| Munich, Germany | munich | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Munich, Germany | munich | source-verified | source-checked | 15 | 25 | 15 | 15 | None |
 | Muscat, Oman | muscat | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Mykonos, Greece | mykonos | classifier-passed | not-reviewed | 0 | 5 | 15 | 3 | None |
 | Nadi, Fiji | nadi | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
@@ -489,7 +489,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Versailles, France | versailles | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Victoria, Canada | victoria | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Victoria Falls, Zimbabwe | victoria-falls | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
-| Vienna, Austria | vienna | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Vienna, Austria | vienna | source-verified | source-checked | 15 | 28 | 13 | 13 | None |
 | Vik, Iceland | vik | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Vitoria-Gasteiz, Spain | vitoria-gasteiz | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Volcanoes National Park, Rwanda | volcanoes-national-park | held-back | not-reviewed | 0 | 4 | 15 | 4 | has 4 named places across 4 categories; needs at least 5 named places across 3 categories |

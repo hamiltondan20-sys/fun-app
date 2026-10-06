@@ -17,11 +17,11 @@ destination a status: `source-verified`, `classifier-passed`, or `held-back`.
 There are 484 canonical destinations from 485 detail records. The existing
 Guilin merge accounts for the difference; no destination was deleted in this pass.
 
-- 5 source-covered in the local evidence inventory: Boston, Cusco, Edinburgh, Dublin and the Singapore draft.
-- 184 classifier-passed guides in the local build, including Austin's retained prior review.
+- 9 source-covered in the local evidence inventory: Boston, Cusco, Edinburgh, Dublin, Singapore, Hanoi, Berlin, Vienna and Munich.
+- 180 classifier-passed guides in the local build, including Austin's retained prior review.
 - 295 held-back destinations.
 
-Six cities have a source-review history, but they are not identically documented.
+Ten cities have a source-review history, but they are not identically documented.
 Austin has 32 legacy source references; three current activity labels do not
 exactly match those source keys, and per-place operating evidence is not yet
 migrated. This is a documentation gap, not evidence that those activities are
@@ -43,7 +43,7 @@ city with missing evidence makes the report fail rather than retaining its label
 
 ## What the counts mean
 
-The five reviewed ledger records explicitly set `renderVerifiedOnly: true`.
+The nine reviewed ledger records explicitly set `renderVerifiedOnly: true`.
 The static generator renders only entries with dated HTTPS source records,
 source type and operating evidence for those cities. Unreviewed cities keep
 their existing rendering. Filtering never removes underlying data or ledger
@@ -64,6 +64,17 @@ Use `data/city-source-ledger.js` for provenance rather than adding a bare boolea
 | No ledger entry | Source review is pending, regardless of classifier count. |
 
 ## Completed This Pass
+
+**Hanoi, Berlin, Vienna and Munich: source review completed October 6.**
+The batch contains 54 distinct recommendations: 8, 16, 15 and 15 respectively.
+Every retained recommendation has dated operator evidence, an exact checked
+location-page URL and its original `sourcedFor` category. Website evidence is
+not a phone or in-person confirmation, nor a guarantee of daily availability.
+Hanoi bakery/budget and Vienna cocktail/budget fields remain empty rather than
+being filled to meet a count. The other 180 guides retain their existing data
+and rendering. See [the batch review](hanoi-german-batch-review-2026-10-06.md)
+for counts, source-category mapping, limitations and the unimplemented layout
+proposal. Deployment status is recorded there separately from source review.
 
 **Dublin, Ireland: source review completed October 4.** All 15 detail fields
 have evidence for 22 distinct recommendations, including the separate Winding

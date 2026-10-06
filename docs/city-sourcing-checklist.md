@@ -30,7 +30,13 @@ For each attraction, restaurant, cafe, bar, bakery, museum, park, or other
 business:
 
 - Open the business's own current website where one exists.
-- Confirm the place name, city, and a current location or contact page.
+- Open the directions, contact, or location page whenever the address matters.
+  Confirm the exact branch and full current address, not just a name match on
+  the homepage. Read relocation notices and compare booking and map-link
+  locations. Record the exact page checked, not only the website domain.
+  House of Small Wonder's directions page, for example, identifies the open
+  Auguststrasse branch and warns that ride-app name searches can lead to its
+  closed Johannisstrasse location. A real business can have a stale address.
 - Confirm that the business appears open or actively operating. If the site
   reports a temporary or permanent closure, do not publish the name.
 - Record the exact name, source URL, source type, and verification date.
@@ -48,6 +54,8 @@ The ledger entry should contain the same basic facts for every place:
   url: "https://example.com/current-location-page",
   sourceType: "business's own site",
   checkedOn: "YYYY-MM-DD",
+  locationSourceUrl: "https://example.com/directions-page-actually-read",
+  sourcedFor: "bestLunch",
   secondSourceUrl: "https://official-tourism-site.example/places",
   operatingEvidence: "What the current official page shows about location and service."
 }
@@ -55,6 +63,10 @@ The ledger entry should contain the same basic facts for every place:
 
 `secondSourceUrl` is encouraged when available. Do not add a source URL that
 was not actually checked.
+`locationSourceUrl` records the exact directions/contact/branch page read. It
+may equal `url` when that page also provides operating evidence. `sourcedFor`
+records the original research category, not all eventual category placements.
+Do not infer original sourcing intent retrospectively for older records.
 
 At city level, use `status: "source-checked"` only after checking every listed
 detail recommendation. Include `reviewScope: "cityGuideDetailData"`, the review
