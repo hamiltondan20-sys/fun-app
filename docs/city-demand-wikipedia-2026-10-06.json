@@ -1,0 +1,3047 @@
+{
+  "pulledAt": "2026-10-06T02:19:14.891Z",
+  "period": {
+    "start": "2025100100",
+    "end": "2026093000",
+    "months": [
+      "202510",
+      "202511",
+      "202512",
+      "202601",
+      "202602",
+      "202603",
+      "202604",
+      "202605",
+      "202606",
+      "202607",
+      "202608",
+      "202609"
+    ]
+  },
+  "rows": [
+    {
+      "city": "Singapore",
+      "country": "Singapore",
+      "requestedTitle": "Singapore",
+      "pulledAt": "2026-10-06T02:19:14.891Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 8,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "27318": {
+              "pageid": 27318,
+              "ns": 0,
+              "title": "Singapore",
+              "pageprops": {
+                "page_image_free": "Flag_of_Singapore.svg",
+                "wikibase-badge-Q17437798": "",
+                "wikibase-shortdesc": "Island country in Southeast Asia",
+                "wikibase_item": "Q334"
+              },
+              "extract": "Singapore, officially the Republic of Singapore, is an island country in Southeast Asia. Its territory comprises a main island, over 60 satellite islands and islets, and one outlying islet. The country is about one degree of latitude (137 kilometres or 85 miles) north of the equator, off the southern tip of the Malay Peninsula, bordering the Strait of Malacca to the west, the Singapore Strait to the south along with the Riau Islands in Indonesia, the South China Sea to the east and the Straits of Johor along with the State of Johor in Malaysia to the north.\nIn its early history, Singapore was a maritime emporium known as Temasek; subsequently, it was a major constituent of several successive thalassocratic empires. Its contemporary era began in 1819, when Stamford Raffles established Singapore as an entrepôt trading post of the British Empire. In 1867, Singapore came under direct British control as part of the Straits Settlements. During World War II, Singapore was occupied by Japan in 1942 and returned to Britain as a Crown colony following Japan's surrender in 1945. Singapore gained self-governance in 1959 and in 1963 became part of the new federation of Malaysia, alongside Malaya, North Borneo and Sarawak. Ideological differences led to Singapore's expulsion from the federation two years later; it became an independent sovereign country in 1965. After early years of turbulence and despite lacking natural resources and a hinterland, the nation rapidly developed to become one of the Four Asian Tigers.\nAs a highly developed country, Singapore has the highest PPP-adjusted GDP per capita in the world and is the only country in Asia with a AAA sovereign credit rating from all major rating agencies. Identified as a tax haven, it is a major aviation, financial and maritime shipping hub and has consistently been ranked as one of the most expensive cities for expatriates and foreign workers. Singapore ranks highly in key social indicators: education, healthcare, housing, peacefulness, passport strength, personal safety and infrastructure, with a high home-ownership rate. Singaporeans enjoy one of the longest life expectancies, fastest Internet connection speeds, lowest infant mortality rates and lowest levels of corruption in the world. Singapore is organised into five regions, 55 planning areas and hundreds of subzones. It has the second highest population density of any country, although there are numerous green and recreational spaces as a result of urban planning. With a multicultural population and in recognition of the cultural identities of the country's major ethnic groups, Singapore has four official languages: English, Malay, Mandarin and Tamil. English is the common language, with exclusive use in numerous public services. Multi-racialism is enshrined in the constitution and continues to shape national policies.\nSingapore is a parliamentary republic and its legal system is based on common law. While it is constitutionally a multi-party democracy where free elections are regularly held, it functions as a de facto one-party state, with the People's Action Party (PAP) maintaining continuous political dominance since 1959. The PAP's longstanding control has resulted in limited political pluralism and a highly centralised governance structure over national institutions. One of the five founding members of ASEAN, Singapore is also the headquarters of the Asia-Pacific Economic Cooperation Secretariat, the Pacific Economic Cooperation Council Secretariat and is the host city of many international conferences and events. Singapore is also a member of the United Nations, the World Trade Organization, the East Asia Summit, the Non-Aligned Movement and the Commonwealth of Nations.",
+              "coordinates": [
+                {
+                  "lat": 1.28333333,
+                  "lon": 103.83333333,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Singapore",
+      "title": "Singapore",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Singapore/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikipedia",
+          "article": "Singapore",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 423864
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Singapore",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 367105
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Singapore",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 353064
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Singapore",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 359852
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Singapore",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 317318
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Singapore",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 346725
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Singapore",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 320107
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Singapore",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 332510
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Singapore",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 299657
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Singapore",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 324864
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Singapore",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 332928
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Singapore",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 311074
+        }
+      ],
+      "total": 4089068,
+      "average": 340755.67,
+      "status": "matched"
+    },
+    {
+      "city": "Hong Kong",
+      "country": "China",
+      "requestedTitle": "Hong Kong",
+      "pulledAt": "2026-10-06T02:19:14.891Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 5,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "13404": {
+              "pageid": 13404,
+              "ns": 0,
+              "title": "Hong Kong",
+              "pageprops": {
+                "page_image_free": "Flag_of_Hong_Kong.svg",
+                "toc": "",
+                "wikibase-badge-Q17437798": "",
+                "wikibase-shortdesc": "Special administrative region of China",
+                "wikibase_item": "Q8646"
+              },
+              "extract": "Hong Kong is a special administrative region of China. Situated on China's southern coast just south of Shenzhen, it consists of Hong Kong Island, Kowloon, and the New Territories. With 7.5 million residents in a 1,114-square-kilometre (430 sq mi) territory, Hong Kong is the fourth-most densely populated region in the world.\nHong Kong was established as a colony of the British Empire after the Qing dynasty ceded Hong Kong Island in 1841–1842 as a result of losing the First Opium War. The colony expanded to the Kowloon Peninsula in 1860 and was further extended when the United Kingdom obtained a 99-year lease of the New Territories in 1898. Hong Kong was occupied by Japan from 1941 to 1945 during World War II. The territory was handed over from the United Kingdom to China in 1997. Hong Kong maintains separate governing and economic systems from those of mainland China under the principle of one country, two systems.\nOriginally an area of farming and fishing villages, Hong Kong is now one of the world's most significant financial centres. Hong Kong is the world's third-ranked global financial centre behind New York City and London, the ninth-largest exporter, and the eighth-largest importer in the world. Its currency, the Hong Kong dollar, is the ninth-most traded currency globally. Home to the third-highest number of billionaires of any city in the world, Hong Kong has the second largest number of ultra high-net-worth individuals. The city has one of the highest per capita incomes, although severe income inequality still exists among the population.\nHong Kong has the most skyscrapers of any city in the world. Housing is consistently in high demand, making the city of Hong Kong the most expensive residential property market in the world and one of the most expensive cities in the world. It is also one of the most visited cities in the world.\nHong Kong is a highly developed territory and has a Human Development Index (HDI) of 0.955, ranking eighth in the world, and is currently the only place in Asia to be in the top ten. Hong Kong is categorized as an Alpha+ city by the Globalization and World Cities Research Network. The city has the highest life expectancy in the world, and has a public transport usage exceeding 90 percent.",
+              "coordinates": [
+                {
+                  "lat": 22.3,
+                  "lon": 114.2,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Hong+Kong",
+      "title": "Hong Kong",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hong_Kong/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikipedia",
+          "article": "Hong_Kong",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 269372
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Hong_Kong",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 336073
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Hong_Kong",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 271631
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Hong_Kong",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 264789
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Hong_Kong",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 243275
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Hong_Kong",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 241293
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Hong_Kong",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 228311
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Hong_Kong",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 250886
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Hong_Kong",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 215101
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Hong_Kong",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 216128
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Hong_Kong",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 226707
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Hong_Kong",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 236750
+        }
+      ],
+      "total": 3000316,
+      "average": 250026.33,
+      "status": "matched"
+    },
+    {
+      "city": "Berlin",
+      "country": "Germany",
+      "requestedTitle": "Berlin",
+      "pulledAt": "2026-10-06T02:19:14.891Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 7,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "3354": {
+              "pageid": 3354,
+              "ns": 0,
+              "title": "Berlin",
+              "pageprops": {
+                "page_image_free": "Museumsinsel_Berlin_Juli_2021_1_(cropped)_b.jpg",
+                "wikibase-shortdesc": "Capital and largest city of Germany",
+                "wikibase_item": "Q64"
+              },
+              "extract": "Berlin is the capital and largest city of Germany. With 3.7 million inhabitants, it has the highest population within its city limits of any city in the European Union (EU). The metropolis is also one of the states of Germany, being the third-smallest state in the country by area. Berlin is surrounded by the state of Brandenburg, bordering Brandenburg's capital Potsdam to the southwest. The urban area of Berlin has a population of 4.5 million, making it the second most populous in Germany after the Ruhr. The Berlin-Brandenburg capital region has around 6.2 million inhabitants and is Germany's second-largest metropolitan region after the Rhine-Ruhr region, as well as the fifth-biggest metropolitan region by GDP in the EU. Berlin is a global city of culture, politics, media and science.\nBerlin was built along the banks of the Spree river, which flows into the Havel in the western borough of Spandau. First documented in the 13th century and at the crossing of two important historic trade routes, Berlin was designated the capital of the Margraviate of Brandenburg (1417–1701), Kingdom of Prussia (1701–1918), German Empire (1871–1918), Weimar Republic (1919–1933), and Nazi Germany (1933–1945). Berlin served as a scientific, artistic, and philosophical hub during the Age of Enlightenment, Neoclassicism, and the German revolutions of 1848–1849. During the Gründerzeit, an industrialization-induced economic boom triggered a rapid population increase in Berlin. Berlin in the 1920s was the third-largest city in the world by population.\nAfter World War II and following Berlin's occupation, the city was split into West Berlin and East Berlin, divided by the Berlin Wall. East Berlin was declared the capital of East Germany, while Bonn became the West German capital. Following German reunification in 1990, Berlin once again became the capital of all of Germany. Due to its geographic location and history, Berlin has been called \"the heart of Europe\". Its economy is based on high tech and the service sector, encompassing a diverse range of creative industries, startup companies, research facilities, and media corporations. Berlin serves as a continental hub for air and rail traffic and has a complex public transportation network. Tourism in Berlin makes the city a popular global destination.\nBerlin is home to several universities, such as the Humboldt University of Berlin, Technische Universität Berlin, the Berlin University of the Arts and the Free University of Berlin. The Berlin Zoological Garden is the most visited zoo in Europe. Babelsberg Studio is the world's first large-scale movie studio complex, and there are many films set in Berlin. Berlin is home to three UNESCO World Heritage Sites: Museum Island, the Palaces and Parks of Potsdam and Berlin, and the Berlin Modernism Housing Estates. Other landmarks include the Brandenburg Gate, the Reichstag building, Potsdamer Platz, the Memorial to the Murdered Jews of Europe, and the Berlin Wall Memorial. Berlin has numerous museums, galleries, and libraries. The city includes lakes in the western and southeastern boroughs, the largest of which is Müggelsee. About 1/3 of the city's area is composed of forests, parks and gardens, rivers, canals, and lakes.",
+              "coordinates": [
+                {
+                  "lat": 52.52,
+                  "lon": 13.405,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Berlin",
+      "title": "Berlin",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Berlin/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikipedia",
+          "article": "Berlin",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 149043
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Berlin",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 141093
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Berlin",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 126940
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Berlin",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 145308
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Berlin",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 136570
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Berlin",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 150316
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Berlin",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 119723
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Berlin",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 144244
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Berlin",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 123570
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Berlin",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 139953
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Berlin",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 128259
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Berlin",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 167797
+        }
+      ],
+      "total": 1672816,
+      "average": 139401.33,
+      "status": "matched"
+    },
+    {
+      "city": "Prague",
+      "country": "Czechia",
+      "requestedTitle": "Prague",
+      "pulledAt": "2026-10-06T02:19:14.891Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 7,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "23844": {
+              "pageid": 23844,
+              "ns": 0,
+              "title": "Prague",
+              "pageprops": {
+                "page_image_free": "Prague_(6365119737).jpg",
+                "wikibase-shortdesc": "Capital and largest city of the Czech Republic",
+                "wikibase_item": "Q1085"
+              },
+              "extract": "Prague ( PRAHG  ; Czech: Praha [ˈpraɦa] ) is the capital and largest city of the Czech Republic and the historical capital of Bohemia. Located on the Vltava River, the city has a population of about 1.4 million, making it the twelfth-largest city in the European Union. Its metropolitan area is home to approximately 2.3 million people.\nPrague is a historical city with Romanesque, Gothic, Renaissance, and Baroque architecture. It was the capital of the Kingdom of Bohemia and residence of several Holy Roman Emperors, most notably Charles IV (r. 1346–1378) and Rudolf II (r. 1575–1611). It was an important city to the Habsburg monarchy and Austria-Hungary. The city played major roles in the Bohemian and Protestant Reformations, the Thirty Years' War, and in 20th-century history as the capital of Czechoslovakia between the World Wars and the post-war Communist era.\nPrague is home to a number of cultural attractions including Prague Castle, Charles Bridge, Old Town Square with the Prague astronomical clock, the Jewish Quarter, Petřín hill, and Vyšehrad. Since 1992, the historic centre of Prague has been included in the UNESCO list of World Heritage Sites. The city has more than ten major museums, along with numerous theatres, galleries, cinemas, and other historical exhibits. An extensive modern public transportation system connects the city. It is home to a wide range of public and private schools, including Charles University, the oldest university in Central Europe.\nPrague is classified as a \"Beta+\" global city according to GaWC studies. Its rich history makes it a popular tourist destination, and as of 2017, the city receives more than 8.5 million international visitors annually. In 2017, Prague was listed as the fifth most visited European city after London, Paris, Rome, and Istanbul.",
+              "coordinates": [
+                {
+                  "lat": 50.0875,
+                  "lon": 14.42138889,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Prague",
+      "title": "Prague",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Prague/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikipedia",
+          "article": "Prague",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 125218
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Prague",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 106152
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Prague",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 102622
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Prague",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 110442
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Prague",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 92831
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Prague",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 99063
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Prague",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 96848
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Prague",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 97668
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Prague",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 103012
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Prague",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 99680
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Prague",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 88810
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Prague",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 97448
+        }
+      ],
+      "total": 1219794,
+      "average": 101649.5,
+      "status": "matched"
+    },
+    {
+      "city": "Vancouver",
+      "country": "Canada",
+      "requestedTitle": "Vancouver",
+      "pulledAt": "2026-10-06T02:19:14.891Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 8,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "32706": {
+              "pageid": 32706,
+              "ns": 0,
+              "title": "Vancouver",
+              "pageprops": {
+                "page_image_free": "Skyline_of_Vancouver,_Canada.jpg",
+                "wikibase-shortdesc": "City in British Columbia, Canada",
+                "wikibase_item": "Q24639"
+              },
+              "extract": "Vancouver is a major city in Western Canada, located in the Lower Mainland region of British Columbia. As the most populous city in the province, the 2021 Canadian census recorded 662,248 people in the city, up from 631,486 in 2016. The Greater Vancouver area had a population of 2.6 million in 2021, making it the third-largest metropolitan area in Canada after Toronto and Montreal. The region, together with the Fraser Valley, makes up the Lower Mainland, which has a total population of over 3 million. Vancouver has the highest population density in Canada, with over 5,700 inhabitants per square kilometre (15,000/sq mi), and the fourth highest in North America (after New York City, San Francisco, and Mexico City).\nVancouver is one of the most ethnically and linguistically diverse cities in Canada: 49.3 percent of its residents are not native English speakers, 47.8 percent are native speakers of neither English nor French, and 54.5 percent of residents belong to visible minority groups. It has been consistently ranked one of the most liveable cities in Canada and in the world. In terms of housing affordability, Vancouver is also one of the most expensive cities in Canada and in the world. Vancouverism is the city's urban planning design philosophy.\nIndigenous settlement of Vancouver began more than 10,000 years ago and included the Squamish, Musqueam, and Tsleil-Waututh (Burrard) peoples. The beginnings of the modern city, which was originally named Gastown, grew around the site of a makeshift tavern on the western edges of Hastings Mill that was built on July 1, 1867, and owned by proprietor Gassy Jack. The Gastown steam clock marks the original site. Gastown then formally registered as a townsite named Granville, Burrard Inlet. The city was renamed \"Vancouver\" in 1886 through a deal with the Canadian Pacific Railway. The Canadian Pacific transcontinental railway was extended to the city by 1887. The city's large natural seaport on the Pacific Ocean became a vital link in the trade between Asia-Pacific, East Asia, Europe, and Eastern Canada.\nVancouver has hosted many international conferences and events, including the 1954 Commonwealth Games, UN Habitat I, Expo 86, APEC Canada 1997, the World Police and Fire Games in 1989 and 2009, matches and the finals of the 2015 FIFA Women's World Cup, several matches of the 2026 FIFA World Cup, and the 2010 Winter Olympics and Paralympics which were held in Vancouver and Whistler, a resort community 125 km (78 mi) north of the city. In 1969, Greenpeace was founded in Vancouver. The city became the permanent home of TED conferences in 2014.\nAs of 2016, the Port of Vancouver is the fourth-largest port by tonnage in the Americas, the busiest and largest port in Canada, and the most diversified port in North America. While forestry remains its largest industry, Vancouver is well known as an urban centre surrounded by nature, making tourism its second-largest industry. Major film production studios in Vancouver and nearby Burnaby have turned Greater Vancouver and nearby areas into one of the largest film production centres in North America, earning it the nickname \"Hollywood North\".",
+              "coordinates": [
+                {
+                  "lat": 49.26083333,
+                  "lon": -123.11388889,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Vancouver",
+      "title": "Vancouver",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Vancouver/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikipedia",
+          "article": "Vancouver",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 102521
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Vancouver",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 94031
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Vancouver",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 99443
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Vancouver",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 102954
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Vancouver",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 94292
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Vancouver",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 94790
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Vancouver",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 94052
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Vancouver",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 101041
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Vancouver",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 134076
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Vancouver",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 113377
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Vancouver",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 95987
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Vancouver",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 86317
+        }
+      ],
+      "total": 1212881,
+      "average": 101073.42,
+      "status": "matched"
+    },
+    {
+      "city": "Montreal",
+      "country": "Canada",
+      "requestedTitle": "Montreal",
+      "pulledAt": "2026-10-06T02:19:14.891Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 7,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "7954681": {
+              "pageid": 7954681,
+              "ns": 0,
+              "title": "Montreal",
+              "pageprops": {
+                "page_image_free": "Montreal,_Quebec_skyline.jpg",
+                "wikibase-shortdesc": "Largest city in Quebec, Canada",
+                "wikibase_item": "Q340"
+              },
+              "extract": "Montreal (French: Montréal) is the largest city in the province of Quebec, the second-largest in Canada, and the eighth-largest in North America. Founded in 1642 as Ville-Marie, or \"City of Mary\", it now takes its name from Mount Royal, the triple-peaked mountain around which the early settlement was built. The city is centred on the Island of Montreal and a few, much smaller, peripheral islands, the largest of which is Île Bizard. It lies 196 kilometres (122 mi) east of the national capital, Ottawa, and 258 kilometres (160 mi) southwest of the provincial capital, Quebec City.\nAs of the 2021 Canadian census, the city had a population of 1,762,949 and a metropolitan population of 4,291,732, making it the second-largest metropolitan area in Canada after Toronto. French is the city's official language. In 2021, 85.7% of the population of the city of Montreal considered themselves fluent in French while 90.2% could speak it in the metropolitan area. Montreal is one of the most bilingual cities in Quebec and Canada, with 58.5% of the population able to speak both French and English. Montreal is the largest primarily French speaking city in the Americas.\nHistorically the commercial capital of Canada, Montreal was surpassed in population and economic strength by Toronto in the 1970s. It remains an important centre of art, culture, literature, film and television, music, commerce, aerospace, transport, finance, pharmaceuticals, technology, design, education, tourism, food, fashion, video game development, and world affairs. Montreal is the location of the headquarters of the International Civil Aviation Organization, and was named a UNESCO City of Design in 2006. In 2018, Montreal was ranked as a global city.\nMontreal has hosted numerous important international events, including the 1967 International and Universal Exposition, and is the only Canadian city to have hosted the Summer Olympics, having done so in 1976. The city hosts the Canadian Grand Prix of Formula One; the Montreal International Jazz Festival, the largest jazz festival in the world; the Just for Laughs festival, the largest comedy festival in the world; and Les Francos de Montréal, the largest French-language music festival in the world. In sports, it is home to multiple professional teams, most notably the Canadiens of the National Hockey League, who have won the Stanley Cup a record 24 times.",
+              "coordinates": [
+                {
+                  "lat": 45.50888889,
+                  "lon": -73.55416667,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Montreal",
+      "title": "Montreal",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Montreal/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikipedia",
+          "article": "Montreal",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 112638
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Montreal",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 100165
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Montreal",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 94825
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Montreal",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 98721
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Montreal",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 87737
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Montreal",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 88854
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Montreal",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 89728
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Montreal",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 116217
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Montreal",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 99909
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Montreal",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 96229
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Montreal",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 97096
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Montreal",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 96944
+        }
+      ],
+      "total": 1179063,
+      "average": 98255.25,
+      "status": "matched"
+    },
+    {
+      "city": "Vienna",
+      "country": "Austria",
+      "requestedTitle": "Vienna",
+      "pulledAt": "2026-10-06T02:19:14.891Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 7,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "55866": {
+              "pageid": 55866,
+              "ns": 0,
+              "title": "Vienna",
+              "pageprops": {
+                "page_image_free": "Schoenbrunn_philharmoniker_2012.jpg",
+                "wikibase-shortdesc": "Capital and largest city of Austria",
+                "wikibase_item": "Q1741"
+              },
+              "extract": "Vienna (  vee-EN-ə; German: Wien [viːn] ; Austro-Bavarian: Wean [veɐ̯n]) is the capital, most populous city, and one of the nine states of Austria. It is Austria's primate city, with just over two million inhabitants. Its larger metropolitan area has a population of nearly 2.9 million, representing nearly one-third of the country's population. Vienna is the cultural, economic, and political centre of the country, the fifth-largest city by population in the European Union, and the most populous of the cities on the river Danube.\nThe city lies on the eastern edge of the Vienna Woods (Wienerwald), the northeasternmost foothills of the Alps, that separate Vienna from the more western parts of Austria, at the transition to the Pannonian Basin. It sits on the Danube, and is traversed by the highly regulated Wienfluss (Vienna River). Vienna is completely surrounded by Lower Austria, and lies around 50 km (31 mi) west of Slovakia and its capital Bratislava, 50 km (31 mi) northwest of Hungary, and 60 km (37 mi) south of Moravia (Czech Republic).\nThe Romans founded a castrum at Vienna, which they called Vindobona, in the 1st century, when the region belonged to the province of Pannonia. It was elevated to a municipium with Roman city rights in 212. This was followed by a time in the sphere of influence of the Lombards and later the Pannonian Avars, when Slavs formed the majority of the region's population. From the 8th century on, the region was settled by the Baiuvarii. In 1155, Vienna became the seat of the Babenbergs, who ruled Austria from 976 to 1246. In 1221, Vienna was granted city rights. During the 16th century, the Habsburgs, who had succeeded the Babenbergs, established Vienna as the seat of the emperors of the Holy Roman Empire, a position it held until the empire's dissolution in 1806, with only a brief interruption. With the formation of the Austrian Empire in 1804, Vienna became the capital of it and all its successor states.\nThroughout the modern era, Vienna has been among the largest German-speaking cities in the world. It was the largest in the 18th and 19th centuries, peaking at two million inhabitants before it was overtaken by Berlin at the beginning of the 20th century. Vienna is host to many major international organizations, including the United Nations, OPEC and the Organization for Security and Co-operation in Europe. In 2001, the city centre was designated a UNESCO World Heritage Site. It was listed as endangered from July 2017 to July 2026.\nVienna is renowned for its rich musical heritage, having been home to many celebrated classical composers, including Ludwig van Beethoven, Johannes Brahms, Anton Bruckner, Joseph Haydn, Gustav Mahler, Wolfgang Amadeus Mozart, Arnold Schoenberg, Franz Schubert, Johann Strauss I, and Johann Strauss II. It played a pivotal role as a leading European music centre, from the age of Viennese Classicism through the early part of the 20th century. The city was home to the world's first psychoanalyst, Sigmund Freud. The historic centre of Vienna is rich in architectural ensembles, including Baroque palaces and gardens, and the late-19th-century Ringstrasse, which is lined with grand buildings, monuments and parks.",
+              "coordinates": [
+                {
+                  "lat": 48.2083,
+                  "lon": 16.3725,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Vienna",
+      "title": "Vienna",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Vienna/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikipedia",
+          "article": "Vienna",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 105335
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Vienna",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 101224
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Vienna",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 101003
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Vienna",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 95527
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Vienna",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 81532
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Vienna",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 137799
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Vienna",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 89063
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Vienna",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 102982
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Vienna",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 88551
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Vienna",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 88657
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Vienna",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 86186
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Vienna",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 87583
+        }
+      ],
+      "total": 1165442,
+      "average": 97120.17,
+      "status": "matched"
+    },
+    {
+      "city": "Melbourne",
+      "country": "Australia",
+      "requestedTitle": "Melbourne",
+      "pulledAt": "2026-10-06T02:19:14.891Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 7,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "17306237": {
+              "pageid": 17306237,
+              "ns": 0,
+              "title": "Melbourne",
+              "pageprops": {
+                "page_image_free": "Melbourne_skyline_sor.jpg",
+                "wikibase-shortdesc": "Capital city of Victoria, Australia",
+                "wikibase_item": "Q3141"
+              },
+              "extract": "Melbourne ( MEL-bərn, locally [ˈmæɫbən] )  is the capital and most populous city of the Australian state of Victoria and the second-most populous city in Australia. The city's name generally refers to a 9,993-square-kilometre (3,858 sq mi) area, comprising an urban agglomeration of 30 local government areas. The name is also used specifically to refer to the local government area, also named the City of Melbourne, whose administrative area is centred on the Melbourne central business district and some immediate surrounds.\nThe city occupies much of the northern and eastern coastlines of Port Phillip Bay. As of June 2025, the population of the city was 5.435 million, or 19% of the population of Australia. It is the southernmost city in the world with a population exceeding one million. Its inhabitants are known as \"Melburnians\".\nThe area of Melbourne has been home to Aboriginal Victorians for over 40,000 years. Of the five peoples of the Kulin nation, the traditional custodians of the land encompassing Melbourne are the Boonwurrung, Woiwurrung and the Wurundjeri peoples. In 1803, a short-lived British penal settlement was established at Port Phillip, then part of the Colony of New South Wales. Melbourne was founded in 1835 with the arrival of free settlers from Van Diemen's Land (modern-day Tasmania). It was incorporated as a Crown settlement in 1837 and named after the then Prime Minister of the United Kingdom, William Lamb, 2nd Viscount Melbourne. Declared a city by Queen Victoria in 1847, it became the capital of the newly separated Colony of Victoria in 1851. During the 1850s Victorian gold rush, the city entered a lengthy boom period that, by the late 1880s, had transformed it into one of the largest and wealthiest metropolises in both Australia and the world. After the federation of Australia in 1901, Melbourne served as the interim seat of government of the new nation until Canberra became the permanent capital in 1927.\nToday, Melbourne is culturally diverse. It is a leading financial centre in the Asia-Pacific region, ranking 28th globally in the 2024 Global Financial Centres Index. The city's eclectic architecture blends Victorian-era structures, such as the World Heritage–listed Royal Exhibition Building, with a large skyline. Landmarks include the Melbourne Cricket Ground and the National Gallery of Victoria. Noted for its cultural heritage, the city gave rise to Australian rules football, Australian impressionism and Australian cinema, and is known for its street art, live music and theatre scenes. It hosts major annual sporting events, such as the Australian Grand Prix and the Australian Open Grand Slam, and also hosted the 1956 Summer Olympics. Melbourne ranked as the world's most liveable city on The Economist's measure for much of the 2010s. It was also voted the world's best city by Time Out in 2026.\nMelbourne Airport is the second-busiest airport in Australia and the Port of Melbourne is the nation's busiest seaport. Its main metropolitan rail terminus is Flinders Street station and its main regional rail and road coach terminus is Southern Cross station. It also has Australia's most extensive freeway network and the largest urban tram network in the world.",
+              "coordinates": [
+                {
+                  "lat": -37.81416667,
+                  "lon": 144.96305556,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Melbourne",
+      "title": "Melbourne",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Melbourne/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikipedia",
+          "article": "Melbourne",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 93075
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Melbourne",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 103372
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Melbourne",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 98766
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Melbourne",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 105527
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Melbourne",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 86676
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Melbourne",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 93894
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Melbourne",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 84184
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Melbourne",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 85842
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Melbourne",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 83588
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Melbourne",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 95541
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Melbourne",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 92197
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Melbourne",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 101874
+        }
+      ],
+      "total": 1124536,
+      "average": 93711.33,
+      "status": "matched"
+    },
+    {
+      "city": "Venice",
+      "country": "Italy",
+      "requestedTitle": "Venice",
+      "pulledAt": "2026-10-06T02:19:14.891Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 8,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "32616": {
+              "pageid": 32616,
+              "ns": 0,
+              "title": "Venice",
+              "pageprops": {
+                "page_image_free": "Venezia_aerial_view.jpg",
+                "wikibase-shortdesc": "City in Veneto, Italy",
+                "wikibase_item": "Q641"
+              },
+              "extract": "Venice is a coastal city in northeastern Italy and the capital of the region of Veneto, as well as the Metropolitan City of Venice. It is built on a group of 126 islands that are separated by expanses of open water and by canals; portions of the city are linked by 472 bridges. \nThe islands are in the shallow Venetian Lagoon, an enclosed bay lying between the mouths of the Po and the Piave rivers (more exactly between the Brenta and the Sile). As of 2026, the city proper (municipality of Venice) has a population of 249,385, nearly 50,000 of whom live in the historical island city of Venice (centro storico), while most of the population resides on the mainland (terraferma), and about 25,000 live on other islands in the lagoon (estuario).\nTogether with the cities of Padua and Treviso, Venice is included in the Padua-Treviso-Venice Metropolitan Area (PATREVE), which is considered a statistical metropolitan area, with a total population of 2.6 million.\nThe name is derived from the ancient Veneti people who inhabited the region by the 10th century BC. The city was the capital of the Republic of Venice for almost a millennium, from 810 to 1797. It was a major financial and maritime power during the Middle Ages and Renaissance, and a staging area for the Crusades and the Battle of Lepanto, as well as an important centre of commerce—especially silk, grain, and spice, and of art from the 13th century to the end of the 17th century. The then-city-state is considered to have been the first real international financial centre, emerging in the 9th century and reaching its greatest prominence in the 14th century. This made Venice a wealthy city throughout most of its history. \nFor centuries, Venice possessed numerous territories along the Adriatic Sea and within the Italian peninsula, leaving a significant impact on the architecture and culture that can still be seen today. The Venetian Arsenal is considered by several historians to be the first factory in history and was the base of Venice's naval power. The sovereignty of Venice came to an end in 1797, at the hands of Napoleon. Subsequently, in 1866, the city became part of the Kingdom of Italy.\nVenice has been known as \"La Dominante\" (\"The Dominant\" or \"The Ruler\"), \"La Serenissima\" (\"The Most Serene\"), \"Queen of the Adriatic\", \"City of Water\", \"City of Masks\", \"City of Bridges\", \"The Floating City\", and \"City of Canals.\" The lagoon and the city within the lagoon were inscribed as a UNESCO World Heritage Site in 1987, covering an area of 70,176.4 hectares (173,410 acres). Venice is known for several important artistic movements – especially during the Italian Renaissance – and has played an important role in the history of instrumental and operatic music; it is the birthplace of Baroque music composers Tomaso Albinoni and Antonio Vivaldi.\nIn the 21st century, Venice remains a very popular tourist destination and a major cultural centre, and has often been ranked one of the most beautiful cities in the world. It has been described by The Times as one of Europe's most romantic cities and by The New York Times as \"undoubtedly the most beautiful city built by man\". However, the city faces challenges, including overtourism, pollution, tide peaks, and cruise ships sailing too close to buildings. Because Venice and its lagoon are under constant threat, Venice's UNESCO listing has been under constant examination.\n\n",
+              "coordinates": [
+                {
+                  "lat": 45.4375,
+                  "lon": 12.33583333,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Venice",
+      "title": "Venice",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Venice/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikipedia",
+          "article": "Venice",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 99448
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Venice",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 82803
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Venice",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 88607
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Venice",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 91171
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Venice",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 79591
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Venice",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 85778
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Venice",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 81328
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Venice",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 94070
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Venice",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 84640
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Venice",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 86098
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Venice",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 82387
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Venice",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 83929
+        }
+      ],
+      "total": 1039850,
+      "average": 86654.17,
+      "status": "matched"
+    },
+    {
+      "city": "Rio de Janeiro",
+      "country": "Brazil",
+      "requestedTitle": "Rio de Janeiro",
+      "pulledAt": "2026-10-06T02:19:14.891Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 7,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "25936": {
+              "pageid": 25936,
+              "ns": 0,
+              "title": "Rio de Janeiro",
+              "pageprops": {
+                "page_image_free": "Cidade_Maravilhosa.jpg",
+                "wikibase-shortdesc": "Second-largest city in Brazil",
+                "wikibase_item": "Q8678"
+              },
+              "extract": "Rio de Janeiro, also known simply as Rio, is the capital and largest city of the state of Rio de Janeiro. It is the second-largest city in Brazil after São Paulo, and the largest by international tourists. It has a population of 6 million in the city proper, and 13 million people in its metropolitan area as of 2025. It is also the sixth-most-populous city in the Americas.\nFounded in 1565, the city was initially the seat of the Captaincy of Rio de Janeiro, a domain of the Portuguese Empire. In 1763, it became the capital of the State of Brazil. In 1808, when the Portuguese Royal Court moved to Brazil, Rio de Janeiro became the seat of the court of Queen Maria I of Portugal. Under the leadership of her son, Prince Regent John of Braganza, Maria raised Brazil to the dignity of a kingdom within the United Kingdom of Portugal, Brazil, and Algarves. Rio remained as the capital of the pluricontinental monarchy until 1822, when the Brazilian War of Independence began. This is the only instance in modern history that the capital of a colonizing country officially shifted to a city in one of its colonies. Rio de Janeiro subsequently served as the capital of the Empire of Brazil until 1889, and then the capital of republican Brazil until 1960, when the capital was moved to Brasília.\nRio de Janeiro has the second largest municipal GDP in the country, and 30th-largest in the world as of 2008, estimated at R$343 billion. It is home to the headquarters of major Brazilian oil, mining, and telecommunications companies, including two of the country's largest corporations, Petrobras and Vale, and Latin America's largest telemedia conglomerate, Grupo Globo. The home of many universities and institutes, it is the second-largest center of research and development in Brazil, accounting for 17 percent of national scientific output according to 2005 data. Despite the perception of a high crime rate, the city actually has a lower incidence of crime than most state capitals in Brazil.\nRio de Janeiro is one of the most visited cities in the Southern Hemisphere and is known for its natural settings, carnival, samba, bossa nova, and beaches such as Barra da Tijuca, Copacabana, Ipanema, and Leblon. In addition to the beaches, other landmarks include the statue of Christ the Redeemer atop Corcovado mountain, named one of the New Seven Wonders of the World; Sugarloaf Mountain with its cable car; the Sambódromo, a permanent grandstand-lined parade avenue which is used during Carnival; and Maracanã Stadium, one of the world's largest football stadiums. Rio de Janeiro was the host of the 2016 Summer Olympics and Paralympics, making the city the first South American and Portuguese-speaking city to host these events, and the third time that the Olympics were held in a Southern Hemisphere city. The Maracanã Stadium held the finals of the 1950 and 2014 FIFA World Cups and the 2013 FIFA Confederations Cup. The city also hosted the XV Pan American Games in 2007, and the G20 summit in 2024, and will host the FIFA Women's World Cup in 2027.",
+              "coordinates": [
+                {
+                  "lat": -22.91111111,
+                  "lon": -43.20555556,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Rio+de+Janeiro",
+      "title": "Rio de Janeiro",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Rio_de_Janeiro/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikipedia",
+          "article": "Rio_de_Janeiro",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 75299
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Rio_de_Janeiro",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 74837
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Rio_de_Janeiro",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 67978
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Rio_de_Janeiro",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 84439
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Rio_de_Janeiro",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 71847
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Rio_de_Janeiro",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 70357
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Rio_de_Janeiro",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 103473
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Rio_de_Janeiro",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 79294
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Rio_de_Janeiro",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 112537
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Rio_de_Janeiro",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 85535
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Rio_de_Janeiro",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 64169
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Rio_de_Janeiro",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 74078
+        }
+      ],
+      "total": 963843,
+      "average": 80320.25,
+      "status": "matched"
+    },
+    {
+      "city": "Munich",
+      "country": "Germany",
+      "requestedTitle": "Munich",
+      "pulledAt": "2026-10-06T02:19:14.891Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 7,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "19058": {
+              "pageid": 19058,
+              "ns": 0,
+              "title": "Munich",
+              "pageprops": {
+                "page_image_free": "Stadtbild_München.jpg",
+                "wikibase-shortdesc": "Capital of Bavaria, Germany",
+                "wikibase_item": "Q1726"
+              },
+              "extract": "Munich (German: München [ˈmʏnçn̩] , Bavarian: Minga [ˈmɪŋ(ː)ɐ] ) is the capital and most populous city of the German state of Bavaria. As of 30 November 2024, its population was 1,604,384, making it the third most-populous city in Germany after Berlin and Hamburg. Munich is the largest city in Germany that is not a state of its own, and it ranks as the 11th-largest city in the European Union (EU). The metropolitan area has around 3 million inhabitants, and the broader Munich Metropolitan Region is home to about 6.2 million people. It is the third largest metropolitan region by GDP in the EU. Munich is located on the river Isar north of the Alps. It is the seat of the Upper Bavarian administrative region. With 4,800 people per km2, Munich is Germany's most densely populated municipality. It is also the second-largest city in the Bavarian dialect area after Vienna.\nThe first record of Munich dates to 1158. The city has played an important role in Bavarian and German history. During the Reformation, it remained a Catholic stronghold. Munich became the capital of the Kingdom of Bavaria in 1806 and developed as a centre for arts, architecture, culture, and science. The House of Wittelsbach ruled until 1918, when the German revolution of 1918–1919 ended their reign and saw the short-lived Bavarian Soviet Republic. In the 1920s, Munich became a centre of political movements, including the rise of the Nazi Party. The city was known as the \"Capital of the Movement\". During World War II, Munich was heavily bombed, but much of its historic architecture has since been restored. After the war, the city's population and economy grew rapidly. Munich hosted the 1972 Summer Olympics and the 1974 FIFA World Cup final.\nMunich is a major centre for science, technology, finance, innovation, business, and tourism. It has a high standard of living, ranking first in Germany and third worldwide in the 2018 Mercer survey. It was named the world's most liveable city by Monocle's Quality of Life Survey 2018. Munich is the wealthiest city in the EU by GDP per capita among cities with over one million inhabitants and is among the most expensive German cities for real estate and rents. In 2023, 30.1% of residents were foreigners, and 19.4% were German citizens with a migration background from abroad. Munich's economy is based on high tech, automobiles, the service sector, information technology, biotechnology, engineering, and electronics. Multinational companies such as BMW, Siemens, Allianz SE, and Munich Re are headquartered there. The city has two research universities and many scientific institutions. Munich is known for its architecture, cultural venues, sports events, exhibitions, and the annual Oktoberfest, the world's largest Volksfest.",
+              "coordinates": [
+                {
+                  "lat": 48.1375,
+                  "lon": 11.575,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Munich",
+      "title": "Munich",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Munich/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikipedia",
+          "article": "Munich",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 83146
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Munich",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 76284
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Munich",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 81755
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Munich",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 69216
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Munich",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 67237
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Munich",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 69920
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Munich",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 69774
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Munich",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 73254
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Munich",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 70799
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Munich",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 77868
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Munich",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 65668
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Munich",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 74326
+        }
+      ],
+      "total": 879247,
+      "average": 73270.58,
+      "status": "matched"
+    },
+    {
+      "city": "Cape Town",
+      "country": "South Africa",
+      "requestedTitle": "Cape Town",
+      "pulledAt": "2026-10-06T02:19:14.891Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 8,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "6653": {
+              "pageid": 6653,
+              "ns": 0,
+              "title": "Cape Town",
+              "pageprops": {
+                "page_image_free": "Camps_bay_(53460319478)_(cropped).jpg",
+                "wikibase-shortdesc": "Legislative capital of South Africa",
+                "wikibase_item": "Q5465"
+              },
+              "extract": "Cape Town is the legislative capital of South Africa. It is the country's oldest city and the seat of the Parliament of South Africa. Cape Town is the capital and largest city of the Western Cape, and the country's second-most populous city, after Johannesburg. The city is part of the City of Cape Town metropolitan municipality.\nThe city is known for its harbour, its natural setting in the Cape Floristic Region, and for landmarks such as Table Mountain and Cape Point. Located on the shore of Table Bay, the City Bowl area of Cape Town, which contains its central business district (CBD), is the oldest urban area in the Western Cape, with a significant cultural heritage. The metropolitan area has a long coastline on the Atlantic Ocean, which includes a northern section in the West Beach region, as well as the False Bay area in the south.\nThe Table Mountain National Park is within the city boundaries and there are several other nature reserves and marine-protected areas within and adjacent to the city. These include Kirstenbosch National Botanical Garden, which contains 5 of South Africa's 6 biomes, and displays many plants native to the Cape region.\nA popular global tourist destination, Cape Town has been named the best city in the world, and the world's best city for travellers numerous times, including by The New York Times in 2014, Time Out in 2025, the World Travel Awards in 2026, and The Telegraph for the past 8 years (2017 through 2025).  Cape Town has South Africa's highest household incomes, lowest rate of unemployment, highest level of infrastructure investment, strongest service delivery performance, largest tourism appeal, and most robust real estate market.",
+              "coordinates": [
+                {
+                  "lat": -33.92527778,
+                  "lon": 18.42388889,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Cape+Town",
+      "title": "Cape Town",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Cape_Town/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikipedia",
+          "article": "Cape_Town",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 64518
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Cape_Town",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 73179
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Cape_Town",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 65942
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Cape_Town",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 68959
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Cape_Town",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 63804
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Cape_Town",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 66565
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Cape_Town",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 76621
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Cape_Town",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 64679
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Cape_Town",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 68358
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Cape_Town",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 64227
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Cape_Town",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 61656
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Cape_Town",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 56808
+        }
+      ],
+      "total": 795316,
+      "average": 66276.33,
+      "status": "matched"
+    },
+    {
+      "city": "Cairo",
+      "country": "Egypt",
+      "requestedTitle": "Cairo",
+      "pulledAt": "2026-10-06T02:19:14.891Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 7,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "6293": {
+              "pageid": 6293,
+              "ns": 0,
+              "title": "Cairo",
+              "pageprops": {
+                "page_image_free": "Cairo_Opera_House,_Al_Hurriyah_Park_and_the_Nile_river_(14797782354).jpg",
+                "wikibase-shortdesc": "Capital and largest city of Egypt",
+                "wikibase_item": "Q85"
+              },
+              "extract": "Cairo is the capital and largest city of Egypt and the Cairo Governorate. It is home to more than 9.8 million people. The city is also part of the largest urban agglomeration in Africa, the Arab world, and the Middle East. The Greater Cairo metropolitan area is one of the largest in the world by population with over 22 million people. Areas of what would become Cairo were inhabited from pre-dynastic and early-dynastic ancient Egypt c. 6000 years ago, as the Giza pyramid complex and the ancient cities of Memphis and Heliopolis are today within the city.\nLocated near the Nile Delta, the predecessor city was Fustat. Thereafter, Cairo was founded in 969, and became the official seat and capital of the Fatimid Caliphate in 973. It later superseded Fustat as the main urban centre during the Ayyubid and Mamluk periods (12th–16th centuries). Cairo has since become a longstanding centre of political and cultural life, and is titled \"the city of a thousand minarets\" for its preponderance of Islamic architecture. Cairo's historic center was awarded World Heritage Site status in 1979. The city is considered a regional center of finance and commerce, academics and the arts, and is home to the Cairo Symphony Orchestra and the Cairo Opera House, while the Academy of Arts provides visual arts education. \nCairo is home to Egypt's oldest university, Al-Azhar University, one of the oldest universities in the world, as well as the oldest and largest film and music industry in Africa and the Arab world. Many international media, businesses, and organizations have regional headquarters in Cairo, such as the headquarters of the Arab League, and the regional offices of the World Health Organization, the Food and Agriculture Organization, the International Civil Aviation Organization, and the United Nations Development Programme.\nCairo is a key global city and, like many other megacities, suffers from high levels of pollution and traffic. The Cairo Metro, opened in 1987, is the oldest metro system in Africa, and ranks amongst the fifteen busiest in the world, with over 1 billion annual passenger rides. The economy of Cairo was ranked first in the Middle East in 2005 by Foreign Policy's Global Cities Index, and first in Africa in 2025 according to the International Monetary Fund, and continues to be a major destination for foreign direct investment (FDI) due to its massive consumer market and strategic location.",
+              "coordinates": [
+                {
+                  "lat": 30.04444444,
+                  "lon": 31.23583333,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Cairo",
+      "title": "Cairo",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Cairo/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikipedia",
+          "article": "Cairo",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 66465
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Cairo",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 63888
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Cairo",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 61195
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Cairo",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 64861
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Cairo",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 54380
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Cairo",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 66568
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Cairo",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 55938
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Cairo",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 55331
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Cairo",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 55820
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Cairo",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 62772
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Cairo",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 53201
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Cairo",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 55952
+        }
+      ],
+      "total": 716371,
+      "average": 59697.58,
+      "status": "matched"
+    },
+    {
+      "city": "Reykjavik",
+      "country": "Iceland",
+      "requestedTitle": "Reykjavík",
+      "pulledAt": "2026-10-06T02:19:14.891Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 7,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "25798": {
+              "pageid": 25798,
+              "ns": 0,
+              "title": "Reykjavík",
+              "pageprops": {
+                "defaultsort": "Reykjavik",
+                "page_image_free": "Reykjavík,_view_from_Hallgrímskirkja_(2).jpg",
+                "wikibase-shortdesc": "Capital and most populous city of Iceland",
+                "wikibase_item": "Q1764"
+              },
+              "extract": "Reykjavík is the capital and largest city of Iceland. It is located on the southern shore of the Faxaflói bay in southwest Iceland and has a latitude of 64°08′ N, making it the world's northernmost capital of a sovereign state. Reykjavík has a population of around 140,000 as of 2026, and the surrounding Capital Region has a population of around 252,000, constituting approximately 64% of Iceland's population.\nAccording to Landnámabók, the settlement of Iceland began in Reykjavík when Ingólfur Arnarson arrived from Norway in the year 874. For over 900 years following this, there was no urban development; the city was officially founded in 1786 as a trading town and grew steadily as it transformed into its current state as the centre of Iceland's cultural, economic, and governmental activity. It is popular with tourists and is consistently ranked as one of the cleanest, safest, and most environmentally friendly cities in the world.\n\n",
+              "coordinates": [
+                {
+                  "lat": 64.14583333,
+                  "lon": -21.9425,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Reykjav%C3%ADk",
+      "title": "Reykjavík",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Reykjav%C3%ADk/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikipedia",
+          "article": "Reykjavík",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 56289
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Reykjavík",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 50534
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Reykjavík",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 52082
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Reykjavík",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 73489
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Reykjavík",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 47667
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Reykjavík",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 52616
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Reykjavík",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 47745
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Reykjavík",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 51122
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Reykjavík",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 52837
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Reykjavík",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 60934
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Reykjavík",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 66568
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Reykjavík",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 55856
+        }
+      ],
+      "total": 667739,
+      "average": 55644.92,
+      "status": "matched"
+    },
+    {
+      "city": "Honolulu",
+      "country": "United States",
+      "requestedTitle": "Honolulu",
+      "pulledAt": "2026-10-06T02:19:14.891Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 7,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "13887": {
+              "pageid": 13887,
+              "ns": 0,
+              "title": "Honolulu",
+              "pageprops": {
+                "page_image_free": "2022_Views_from_Diamond_Head_02.jpg",
+                "wikibase-shortdesc": "Capital and largest city in Hawaii, US",
+                "wikibase_item": "Q18094"
+              },
+              "extract": "Honolulu (  HON-ə-LOO-loo; Hawaiian: [honoˈlulu]) is the capital and most populous city of the U.S. state of Hawaii, located in the Pacific Ocean. It is the county seat of the consolidated City and County of Honolulu, situated along the southeast coast of the island of Oʻahu. The population of Honolulu was 350,964 at the 2020 census, dropping to an estimated 341,868 by 2025. The Urban Honolulu metropolitan area had an estimated population of just under 1 million residents in 2024 and is the 56th-largest metropolitan area in the nation.\nThe area's geography and Honolulu Harbor have long made it desirable as a port, accounting for the city's growth and importance in the Hawaiian archipelago and the broader Pacific region. Honolulu has been the capital of Hawaii since 1845, first as seat of the independent Hawaiian Kingdom until the kingdom's overthrow in 1893, then of the U.S. territory established after annexation in 1898, and since 1959 of the state of Hawaii. The city gained worldwide recognition following the Empire of Japan's attack on nearby Pearl Harbor on December 7, 1941, which prompted the entry of the U.S. into World War II; the harbor remains a major U.S. Navy base, hosting the United States Pacific Fleet, the world's largest naval command.\nHonolulu is the westernmost and southernmost major U.S. city and state capital. It is also a hub for business, commerce, finance, hospitality, and military defense in Oceania. The city is characterized by a mix of various Asian, Western, and Pacific cultures, reflected in its diverse demography, cuisine, and traditions. Honolulu's favorable tropical climate, rich natural scenery, and extensive beaches make it a popular global destination for tourists. With nearly 1.5 million visitors in 2024, Honolulu is among the ten most visited cities in the United States. However, since the beginning of the 21st century, climate change has significantly impacted Honolulu and its tourism economy, contributing to increasing drought and water shortages, and sea level rise as well as beach and hotel flooding in Downtown Honolulu. These factors are compounded by an aging and declining population, with an exodus emigrating to the U.S. mainland.",
+              "coordinates": [
+                {
+                  "lat": 21.3,
+                  "lon": -157.85,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Honolulu",
+      "title": "Honolulu",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Honolulu/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikipedia",
+          "article": "Honolulu",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 53702
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Honolulu",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 53502
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Honolulu",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 57723
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Honolulu",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 59379
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Honolulu",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 51517
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Honolulu",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 56753
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Honolulu",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 47757
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Honolulu",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 53505
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Honolulu",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 47439
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Honolulu",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 54594
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Honolulu",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 51924
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Honolulu",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 49819
+        }
+      ],
+      "total": 637614,
+      "average": 53134.5,
+      "status": "matched"
+    },
+    {
+      "city": "Kyoto",
+      "country": "Japan",
+      "requestedTitle": "Kyoto",
+      "pulledAt": "2026-10-06T02:19:14.891Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 7,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "37652": {
+              "pageid": 37652,
+              "ns": 0,
+              "title": "Kyoto",
+              "pageprops": {
+                "page_image_free": "Kyoto,_Japan_(49667780482).jpg",
+                "wikibase-shortdesc": "City in the Kansai region of Japan",
+                "wikibase_item": "Q34600"
+              },
+              "extract": "Kyoto ( or ; Japanese: 京都, Kyōto [kʲoꜜːto] ), officially Kyoto City (京都市, Kyōto-shi; [kʲoːtoꜜɕi] ), is the capital city of Kyoto Prefecture in the Kansai region of Japan's largest and most populous island of Honshu. As of 2020, the city had a population of 1.46 million, making it the ninth-most populous city in Japan. More than half (56.8%) of Kyoto Prefecture's population resides in the city. The city is the cultural anchor of the substantially larger Greater Kyoto, a metropolitan statistical area home to approximately 3.8 million people. It is also part of the even larger Keihanshin metropolitan area, along with Osaka and Kobe.\nKyoto is one of the oldest municipalities in Japan, having been chosen in 794 as the new seat of Japan's imperial court by Emperor Kanmu. The original city, named Heian-kyō, was arranged in accordance with traditional Chinese feng shui following the model of the ancient Chinese capitals of Chang'an and Luoyang. The emperors of Japan ruled from Kyoto in the following eleven centuries until 1869. It was the scene of several key events of the Muromachi period, Sengoku period, and the Boshin War, such as the Ōnin War, the Honnō-ji Incident, the Kinmon incident, and the Battle of Toba–Fushimi. The capital was relocated from Kyoto to Tokyo after the Meiji Restoration. The modern municipality of Kyoto was established in 1889. The city was spared from large-scale destruction during World War II and, as a result, its prewar cultural heritage has mostly been preserved.\nKyoto is considered the cultural capital of Japan and is a major tourist destination. The Agency for Cultural Affairs of the national government is headquartered in the city. It is home to numerous Buddhist temples, Shinto shrines, palaces and gardens, some of which have been designated collectively as a World Heritage Site by UNESCO. Prominent landmarks include the Kyoto Imperial Palace, Kiyomizu-dera, Kinkaku-ji, Ginkaku-ji, and Kyoto Tower. The internationally renowned video game company Nintendo is based in Kyoto. Kyoto is also a center of higher learning in the country, and its institutions include Kyoto University, the second-oldest university in Japan.\n\n",
+              "coordinates": [
+                {
+                  "lat": 35.01161,
+                  "lon": 135.76811,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Kyoto",
+      "title": "Kyoto",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Kyoto/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikipedia",
+          "article": "Kyoto",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 61690
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Kyoto",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 76296
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Kyoto",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 51000
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Kyoto",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 52053
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Kyoto",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 45340
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Kyoto",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 55190
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Kyoto",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 55517
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Kyoto",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 53312
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Kyoto",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 45063
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Kyoto",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 42685
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Kyoto",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 42894
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Kyoto",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 46434
+        }
+      ],
+      "total": 627474,
+      "average": 52289.5,
+      "status": "matched"
+    },
+    {
+      "city": "Hanoi",
+      "country": "Vietnam",
+      "requestedTitle": "Hanoi",
+      "pulledAt": "2026-10-06T02:19:14.891Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 7,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "56667": {
+              "pageid": 56667,
+              "ns": 0,
+              "title": "Hanoi",
+              "pageprops": {
+                "page_image_free": "Hanoi_skyline_with_Ba_Vi_Mountain.jpg",
+                "wikibase-shortdesc": "Capital and centrally-governed city of Vietnam",
+                "wikibase_item": "Q1858"
+              },
+              "extract": "Hanoi ( ha-NOY; Vietnamese: Hà Nội, pronounced [haː˨˩ noj˧˨ʔ] ) is the capital and second-most populous centrally-governed city of Vietnam. It covers an area of 3,358.6 km2 (1,296.8 mi2), and as of 2025 has a population of 8,807,523. Hanoi had the second-highest gross regional domestic product of all Vietnamese provinces and centrally-governed cities at US$48 billion in 2023, behind Ho Chi Minh City. It hosts 78 foreign embassies, the headquarters of the Vietnam People's Army (VPA), its Vietnam National University system, and other governmental organizations. Hanoi had 18.7 million domestic and international visitors in 2022. It hosts the Imperial Citadel of Thăng Long, Ho Chi Minh Mausoleum, Hoàn Kiếm Lake, West Lake, and Ba Vì National Park near the outskirts of the municipality. Hanoi's urban area has architectural styles, including pre-colonial Vietnamese architecture, French colonial architecture, brutalist apartments and disorganized alleys and tube houses stemming from the city's growth in the 20th century.\nIn 1010, under the Lý dynasty, emperor Lý Thái Tổ established the capital of the imperial nation Đại Việt in what would later become central Hanoi, naming the city Thăng Long ([tʰɐŋ loŋ], 'ascending dragon'). In 1428, king Lê Lợi renamed the city to Đông Kinh ([ɗoŋ kīŋ̟], 'eastern capital'), with the city using this name until 1789. In 1802, the Nguyễn dynasty moved the national capital to Huế and the city was renamed Hanoi in 1831. Hanoi served as the capital of French Indochina from 1902 to 1945 and of the French protectorate of Tonkin from 1883 to 1949. After the August Revolution and the fall of the Nguyễn dynasty, the Democratic Republic of Vietnam (DRV) designated Hanoi as the capital of the newly independent country. From 1949 to 1954, Hanoi was part of the State of Vietnam. It was again part of the DRV from 1954 to 1976. In 1976, Hanoi became the capital of the unified Socialist Republic of Vietnam.",
+              "coordinates": [
+                {
+                  "lat": 21,
+                  "lon": 105.85,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Hanoi",
+      "title": "Hanoi",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hanoi/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikipedia",
+          "article": "Hanoi",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 48610
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Hanoi",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 58155
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Hanoi",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 51635
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Hanoi",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 51736
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Hanoi",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 40842
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Hanoi",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 46265
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Hanoi",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 41586
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Hanoi",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 40879
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Hanoi",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 35573
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Hanoi",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 39671
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Hanoi",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 40317
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Hanoi",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 41332
+        }
+      ],
+      "total": 536601,
+      "average": 44716.75,
+      "status": "matched"
+    },
+    {
+      "city": "Nice",
+      "country": "France",
+      "requestedTitle": "Nice",
+      "pulledAt": "2026-10-06T02:19:14.891Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 7,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "47088": {
+              "pageid": 47088,
+              "ns": 0,
+              "title": "Nice",
+              "pageprops": {
+                "page_image_free": "Promenade_des_Anglais_Nice_IMG_1255.jpg",
+                "wikibase-shortdesc": "Prefecture of Alpes-Maritimes, Southern France",
+                "wikibase_item": "Q33959"
+              },
+              "extract": "Nice is a city and commune, and the prefecture of the department of Alpes-Maritimes, and the administrative region of Provence-Alpes-Côte d'Azur, France. The Nice agglomeration extends beyond the administrative city limits, with a population of nearly one million over an area of approximately 744 km2 (287 sq mi) or about the size of Singapore. Located on the French Riviera, the southeastern coast of France on the Mediterranean Sea, at the foot of the French Alps, Nice is the second-largest French city on the Mediterranean coast and second-largest city in the Provence-Alpes-Côte d'Azur region after Marseille. It is approximately 13 kilometres (8 mi) from the principality of Monaco and 30 kilometres (19 mi) from the French–Italian border. Nice's airport serves as a gateway to the region.\nThe city is nicknamed Nice la Belle (Nissa La Bella in Niçard), meaning 'Nice the Beautiful', which is also the title of the unofficial anthem of Nice, written by Menica Rondelly. The Nice agglomeration contains Terra Amata, an archaeological site which displays evidence of early use of fire 380,000 years ago. Around 350 BC, Greeks of Marseille founded a permanent settlement and called it Nikaia, after Nike, the goddess of victory. The town has changed hands many times. Its strategic location and port significantly contributed to its maritime strength. From 1388, it was a dominion of Savoy, then became part of the French First Republic between 1792 and 1815, when it was returned to the Kingdom of Piedmont-Sardinia, the legal predecessor of the Kingdom of Italy, until its annexation by France in 1860.\nThe natural environment of the Nice area and its mild Mediterranean climate came to the attention of the English upper classes in the second half of the 18th century, when an increasing number of aristocratic families began spending their winters there. In 1931, following its refurbishment, the city's main promenade, the Promenade des Anglais (\"Walkway of the English\"), was inaugurated by Prince Arthur, Duke of Connaught; it owes its name to visitors to the resort. These included Queen Victoria along with her son Edward VII who spent winters there.\nThe clear air and soft light have appealed to notable painters, such as Marc Chagall, Henri Matisse, Niki de Saint Phalle, and Arman. Their work is commemorated in the city's museums, including Musée Marc Chagall, Musée Matisse and Musée des Beaux-Arts. Frank Harris wrote several books, including his autobiography My Life and Loves, in Nice. Friedrich Nietzsche spent six consecutive winters in Nice, and wrote Thus Spoke Zarathustra there. Russian writer Anton Chekhov completed his play Three Sisters while living in Nice. Nice's appeal extended to the Russian upper classes. Prince Nicholas Alexandrovich, heir apparent to Imperial Russia, died in Nice and was a patron of the Russian Orthodox Cemetery, Nice where Princess Catherine Dolgorukova, morganatic wife of Tsar Alexander II of Russia, is buried. Also buried there are General Dmitry Shcherbachev and General Nikolai Yudenich, leaders of the anti-Communist White Movement. Those interred at the Cimetière du Château include celebrated jeweler Alfred Van Cleef, Emil Jellinek-Mercedes, founder of the Mercedes car company, poet Agathe-Sophie Sasserno, Asterix comics creator René Goscinny, The Phantom of the Opera author Gaston Leroux, French prime minister Léon Gambetta, and the first president of the International Court of Justice José Gustavo Guerrero.\nBecause of its historical importance as a winter resort town for the European aristocracy and the resulting mix of cultures, UNESCO proclaimed Nice a World Heritage Site in 2021. The city has the second largest hotel capacity in the country, and is the second most visited metropolis in Metropolitan France, receiving four million tourists every year. It is the historical capital city of the County of Nice (French: Comté de Nice, Niçard: Countèa de Nissa).",
+              "coordinates": [
+                {
+                  "lat": 43.7034,
+                  "lon": 7.2663,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Nice",
+      "title": "Nice",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Nice/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikipedia",
+          "article": "Nice",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 41875
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Nice",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 40214
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Nice",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 36580
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Nice",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 38294
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Nice",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 47237
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Nice",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 45003
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Nice",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 40658
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Nice",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 45423
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Nice",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 43526
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Nice",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 46638
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Nice",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 40409
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Nice",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 37337
+        }
+      ],
+      "total": 503194,
+      "average": 41932.83,
+      "status": "matched"
+    },
+    {
+      "city": "Banff",
+      "country": "Canada",
+      "requestedTitle": "Banff, Alberta",
+      "pulledAt": "2026-10-06T02:19:14.891Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 7,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "358789": {
+              "pageid": 358789,
+              "ns": 0,
+              "title": "Banff, Alberta",
+              "pageprops": {
+                "page_image_free": "Town_of_Banff_viewed_from_Sulphur_Mountain.jpg",
+                "wikibase-shortdesc": "Town in Canada",
+                "wikibase_item": "Q58337"
+              },
+              "extract": "Banff is a resort town in Banff National Park, Alberta, Canada, in Alberta's Rockies along the Trans-Canada Highway, 126 km (78 mi) west of Calgary, 58 km (36 mi) east of Lake Louise, and 1,400 to 1,630 m (4,590 to 5,350 ft) above sea level.\nBanff was the first municipality to incorporate within a Canadian national park. The town is a member of the Calgary Regional Partnership.\nBanff is one of Canada's most popular tourist destinations. Known for its mountainous surroundings and hot springs, it is a destination for outdoor sports and hiking, biking, scrambling and skiing. Sunshine Village, Ski Norquay and Lake Louise Ski Resort are nearby ski resorts within the national park.",
+              "coordinates": [
+                {
+                  "lat": 51.17777778,
+                  "lon": -115.57361111,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Banff%2C+Alberta",
+      "title": "Banff, Alberta",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Banff%2C_Alberta/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikipedia",
+          "article": "Banff,_Alberta",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 23387
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Banff,_Alberta",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 18558
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Banff,_Alberta",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 21443
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Banff,_Alberta",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 25451
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Banff,_Alberta",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 23301
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Banff,_Alberta",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 20340
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Banff,_Alberta",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 19335
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Banff,_Alberta",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 27284
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Banff,_Alberta",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 33715
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Banff,_Alberta",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 35693
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Banff,_Alberta",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 32291
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Banff,_Alberta",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 28840
+        }
+      ],
+      "total": 309638,
+      "average": 25803.17,
+      "status": "matched"
+    },
+    {
+      "city": "Queenstown",
+      "country": "New Zealand",
+      "requestedTitle": "Queenstown, New Zealand",
+      "pulledAt": "2026-10-06T02:19:14.891Z",
+      "verified": 0,
+      "populated": 15,
+      "named": 7,
+      "identity": {
+        "batchcomplete": "",
+        "query": {
+          "pages": {
+            "173320": {
+              "pageid": 173320,
+              "ns": 0,
+              "title": "Queenstown, New Zealand",
+              "pageprops": {
+                "page_image_free": "Queenstown_1_(8168013172).jpg",
+                "wikibase-shortdesc": "Resort town in New Zealand's South Island",
+                "wikibase_item": "Q613602"
+              },
+              "extract": "Queenstown (Māori: Tāhuna) is a resort town in Otago in the south-west of New Zealand's South Island. It is the largest town in the Queenstown-Lakes District, and the primary administrative centre.\nThe town is on the northwestern edge of Lake Wakatipu, a long, thin, S-shaped lake formed by glacial processes, and has views of nearby mountains such as The Remarkables, Cecil Peak, Walter Peak and, just above the town, Ben Lomond and Queenstown Hill. Queenstown is known for its tourism businesses, especially adventure and ski tourism.\n\n",
+              "coordinates": [
+                {
+                  "lat": -45.03111111,
+                  "lon": 168.6625,
+                  "primary": "",
+                  "globe": "earth"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "identityUrl": "https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&prop=pageprops%7Cextracts%7Ccoordinates&exintro=1&explaintext=1&titles=Queenstown%2C+New+Zealand",
+      "title": "Queenstown, New Zealand",
+      "apiUrl": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Queenstown%2C_New_Zealand/monthly/2025100100/2026093000",
+      "items": [
+        {
+          "project": "en.wikipedia",
+          "article": "Queenstown,_New_Zealand",
+          "granularity": "monthly",
+          "timestamp": "2025100100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 14588
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Queenstown,_New_Zealand",
+          "granularity": "monthly",
+          "timestamp": "2025110100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 15094
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Queenstown,_New_Zealand",
+          "granularity": "monthly",
+          "timestamp": "2025120100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 23785
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Queenstown,_New_Zealand",
+          "granularity": "monthly",
+          "timestamp": "2026010100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 17320
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Queenstown,_New_Zealand",
+          "granularity": "monthly",
+          "timestamp": "2026020100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 14499
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Queenstown,_New_Zealand",
+          "granularity": "monthly",
+          "timestamp": "2026030100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 14673
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Queenstown,_New_Zealand",
+          "granularity": "monthly",
+          "timestamp": "2026040100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 12565
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Queenstown,_New_Zealand",
+          "granularity": "monthly",
+          "timestamp": "2026050100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 12521
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Queenstown,_New_Zealand",
+          "granularity": "monthly",
+          "timestamp": "2026060100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 11725
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Queenstown,_New_Zealand",
+          "granularity": "monthly",
+          "timestamp": "2026070100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 12077
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Queenstown,_New_Zealand",
+          "granularity": "monthly",
+          "timestamp": "2026080100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 12765
+        },
+        {
+          "project": "en.wikipedia",
+          "article": "Queenstown,_New_Zealand",
+          "granularity": "monthly",
+          "timestamp": "2026090100",
+          "access": "all-access",
+          "agent": "user",
+          "views": 12927
+        }
+      ],
+      "total": 174539,
+      "average": 14544.92,
+      "status": "matched"
+    }
+  ]
+}

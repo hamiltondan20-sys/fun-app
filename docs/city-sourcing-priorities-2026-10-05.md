@@ -1,98 +1,48 @@
-# Demand-Led Sourcing Queue
+# Provisional City Sourcing Priorities
 
-Updated October 5, 2026. Research planning, not new source verification.
+Pulled 2026-10-06 (UTC). Period: 202510 through 202609, the last 12 full calendar months.
 
-DATA STATUS: 0 tool-sourced keyword rows; all 60 ranges remain editorial
-estimates. Re-ranking is pending the owner's export. Use the
-[Ahrefs export request](ahrefs-city-export-request.md), not this provisional
-ranking alone, to allocate the next sourcing batch.
+Source: Wikimedia REST API, English Wikipedia, all-access, user pageviews.
+These are measured article views worldwide, NOT search volumes, travel intent,
+unique visitors or US demand. Singapore and Hong Kong articles cover broader
+city-state/territory topics. News can increase readership. Redirect-alias views
+are not combined with canonical article views; no estimate fills missing data.
 
-All volumes below are LOW-CONFIDENCE EDITORIAL ESTIMATES of monthly US English
-Google searches, not Keyword Planner, Search Console or paid keyword-tool data.
-Existing estimates were retained from the October 1 queue; Hanoi, Nice and
-Queenstown are new estimates. Ranges are not measurements. Rank uses approximate
-combined range midpoints, with ties resolved editorially. Summed queries are
-not unique people. Validate with a keyword tool before allocating major effort.
+This ranking is provisional and should be superseded by Search Console page
+impressions in 2-3 weeks. No editorial keyword estimates remain in this table.
+Source-verified counts reflect dated supporting records, not capitalised names.
+Populated categories may still contain unsourced items. Classifier matches may repeat.
 
-This is a queue within the published 5-9 classifier-name band, not a claim these
-are the world's 20 highest-demand cities. London, Paris and Tokyo may have much
-greater demand outside this band. Boston, Edinburgh and Dublin were removed
-because their current evidence reviews are complete.
-
-Names below are CLASSIFIER-MATCHED ENTRIES, not independently verified places;
-repetition can inflate them. Every candidate below has zero complete ledger-
-verified current recommendations. All have 15 nonempty categories, which does
-not mean all 15 contain real recommendations. Named categories are shown separately.
-
-| Rank | City | Things to do | Restaurants | Itinerary | Name matches | Named categories | Difficulty |
+| Rank | City | Confirmed en.wikipedia article | Wikimedia 12-month views (2026-10-06) | Wikimedia monthly mean (2026-10-06) | Source-record verified names (2026-10-06) | Detail populated categories (2026-10-06) | Classifier named entries (2026-10-06) |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Singapore | 15-35k | 2-8k | 2-6k | 8 | 4 | Medium |
-| 2 | Vancouver | 15-35k | 3-8k | 0.5-2k | 8 | 4 | Low |
-| 3 | Honolulu | 10-30k | 3-10k | 0.5-2k | 7 | 3 | Medium |
-| 4 | Prague | 10-25k | 2-6k | 1-4k | 7 | 3 | Medium |
-| 5 | Kyoto | 10-25k | 1-5k | 2-5k | 7 | 3 | Medium |
-| 6 | Montreal | 10-25k | 3-8k | 0.3-1.5k | 7 | 3 | Low-medium |
-| 7 | Hanoi | 10-25k | 1-4k | 1-3k | 7 | 3 | Medium-high |
-| 8 | Berlin | 10-25k | 1-5k | 0.5-2k | 7 | 3 | Low-medium |
-| 9 | Venice | 10-25k | 1-5k | 0.5-2k | 8 | 4 | Medium |
-| 10 | Banff | 8-20k | 1-4k | 1-3k | 7 | 3 | Low-medium |
-| 11 | Nice | 8-20k | 1-4k | 0.5-2k | 7 | 3 | Low-medium |
-| 12 | Vienna | 8-20k | 1-4k | 0.5-2k | 7 | 3 | Low-medium |
-| 13 | Munich | 8-20k | 1-4k | 0.5-2k | 7 | 3 | Low-medium |
-| 14 | Hong Kong | 5-15k | 1-4k | 1-3k | 5 | 3 | Medium |
-| 15 | Cape Town | 5-15k | 0.5-3k | 1-3k | 8 | 4 | Low-medium |
-| 16 | Reykjavik | 5-15k | 1-4k | 0.3-1.5k | 7 | 3 | Low-medium |
-| 17 | Queenstown | 5-15k | 0.5-2k | 0.5-2k | 7 | 3 | Low |
-| 18 | Melbourne | 3-10k | 1-4k | 0.3-1.5k | 7 | 3 | Low |
-| 19 | Rio de Janeiro | 3-10k | 0.3-1.5k | 0.5-2k | 7 | 3 | Medium |
-| 20 | Cairo | 2-8k | 0.2-1k | 0.3-1.5k | 7 | 5 | Medium-high |
+| 1 | Singapore | Singapore | 4089068 | 340755.67 | 0 | 15 | 8 |
+| 2 | Hong Kong | Hong Kong | 3000316 | 250026.33 | 0 | 15 | 5 |
+| 3 | Berlin | Berlin | 1672816 | 139401.33 | 0 | 15 | 7 |
+| 4 | Prague | Prague | 1219794 | 101649.5 | 0 | 15 | 7 |
+| 5 | Vancouver | Vancouver | 1212881 | 101073.42 | 0 | 15 | 8 |
+| 6 | Montreal | Montreal | 1179063 | 98255.25 | 0 | 15 | 7 |
+| 7 | Vienna | Vienna | 1165442 | 97120.17 | 0 | 15 | 7 |
+| 8 | Melbourne | Melbourne | 1124536 | 93711.33 | 0 | 15 | 7 |
+| 9 | Venice | Venice | 1039850 | 86654.17 | 0 | 15 | 8 |
+| 10 | Rio de Janeiro | Rio de Janeiro | 963843 | 80320.25 | 0 | 15 | 7 |
+| 11 | Munich | Munich | 879247 | 73270.58 | 0 | 15 | 7 |
+| 12 | Cape Town | Cape Town | 795316 | 66276.33 | 0 | 15 | 8 |
+| 13 | Cairo | Cairo | 716371 | 59697.58 | 0 | 15 | 7 |
+| 14 | Reykjavik | Reykjavík | 667739 | 55644.92 | 0 | 15 | 7 |
+| 15 | Honolulu | Honolulu | 637614 | 53134.5 | 0 | 15 | 7 |
+| 16 | Kyoto | Kyoto | 627474 | 52289.5 | 0 | 15 | 7 |
+| 17 | Hanoi | Hanoi | 536601 | 44716.75 | 0 | 15 | 7 |
+| 18 | Nice | Nice | 503194 | 41932.83 | 0 | 15 | 7 |
+| 19 | Banff | Banff, Alberta | 309638 | 25803.17 | 0 | 15 | 7 |
+| 20 | Queenstown | Queenstown, New Zealand | 174539 | 14544.92 | 0 | 15 | 7 |
 
-## Tourism starts and verification difficulty
+## Re-run and evidence
 
-These are research starting points, not evidence that any listed business is open.
+Run `node scripts/pull-city-pageviews.mjs` from the checkout. CSV: [download](city-demand-wikipedia-2026-10-06.csv).
+Full article identity responses, redirects, coordinates, source URLs and monthly
+counts are retained in [evidence](city-demand-wikipedia-2026-10-06.json).
 
-| City | Official starting point | Main sourcing issue |
-| --- | --- | --- |
-| Singapore | https://www.visitsingapore.com/ | English resources; distinguish hawker centre from individual stall and branch. Resume saved research first. |
-| Vancouver | https://www.destinationvancouver.com/ | English resources; confirm British Columbia, not Washington. |
-| Honolulu | https://www.gohawaii.com/islands/oahu/regions/honolulu | English resources; distinguish Honolulu from other Oahu destinations. |
-| Prague | https://prague.eu/en/ | English tourism, Czech operator names and branches. |
-| Kyoto | https://kyoto.travel/en/ | English tourism; some small restaurant sites require Japanese review. |
-| Montreal | https://www.mtl.org/en | English/French operator evidence and exact branch. |
-| Hanoi | https://vietnam.travel/vi/places-to-go/northern-vietnam/ha-noi | Official Vietnamese page found; attempted English route returned 404. Operator and stall verification may require Vietnamese. |
-| Berlin | https://www.visitberlin.de/en | English tourism, German operator evidence. |
-| Venice | https://www.veneziaunica.it/en | Verify Italy location and current restaurant operation. |
-| Banff | https://www.banfflakelouise.com/ | Distinguish town, national park and Lake Louise activities. |
-| Nice | https://www.explorenicecotedazur.com/en/ | English tourism; French operator and regional location checks. |
-| Vienna | https://www.wien.info/en | English tourism; German operator/branch checks. |
-| Munich | https://www.munich.travel/en | English tourism; separate seasonal events from permanent venues. |
-| Hong Kong | https://www.discoverhongkong.com/eng/index.html | English tourism; Chinese names and branch identity. |
-| Cape Town | https://www.capetown.travel/ | English resources; label out-of-city Winelands trips accurately. |
-| Reykjavik | https://visitreykjavik.is/ | English resources; seasonal trips and city versus region. |
-| Queenstown | https://www.queenstownnz.co.nz/ | English resources; operator/weather limitations and trip geography. |
-| Melbourne | https://www.visitmelbourne.com/regions/melbourne | English resources; Australia, not Florida. |
-| Rio de Janeiro | https://riotur.rio/en/welcome/ | Tourism resources; Portuguese venue evidence and exact location. |
-| Cairo | https://www.experienceegypt.eg/en | Tourism resources; Arabic transliteration and Cairo/Giza scope. |
+All 20 article matches passed city/location and non-disambiguation checks.
 
-Typical complete review: low 4-6 hours, medium 5-7 hours, medium-high 6-8 hours.
-These are planning estimates, not guarantees. Retain all 15 fields: this is
-display consolidation only, with no claimed sourcing reduction.
-
-## Reusable workflow
-
-1. Confirm exact city and country, then start with its official tourism board.
-2. Open each operator's current website and check exact name, branch and address.
-3. Record checked URLs, verification date and operating evidence, such as current
-   booking access, visitor hours or an explicit closure notice. A homepage alone
-   does not establish that a business is open.
-4. Seek independent corroboration where available; record limitations honestly.
-5. Map evidence to every current recommendation, including activity descriptors.
-   Duplicate recommendations do not count as additional verified places.
-6. Remove unresolved recommendations or leave the field empty, never add filler.
-7. Update the source ledger, dated research and verification inventory. Mark a
-   city complete only when every current detail recommendation is supported.
-8. Before publication run the existing full release/test chain, audit links and
-   schema, inspect mobile/desktop, and stop on unrelated output or count decreases.
-
-No threshold changes are proposed. Source-review completions, not classifier
-thresholds, are the progress metric. Automated content work remains paused.
+For later Search Console ranking, follow [the export process](search-console-content-monitoring.md).
+No sourcing work, gate change or domain migration is authorised by this ranking.
