@@ -30,3 +30,16 @@ it is not strict schema validation.
 Live planner footer links resolve About, FAQ, Contact, Privacy and Terms at
 the domain root instead of /fun-app/. Correct and test this before cutover.
 No unrelated interface edits were made in this verification pass.
+
+## Subsequent path and filename fix
+
+The planner has base href=../. Its ./assets and ./scripts references correctly
+resolve at the site root; they were not broken and were left unchanged.
+The live stylesheet's resolved /fun-app/assets/app.css returned HTTP 200.
+The footer and consent-policy links were the actual path bug and now use ./
+relative to that base. Paris, France still prefills in the browser preview.
+
+The export filename now starts the-fullest-life-travel-. A regression test
+restores a synthetic Horizon Bound payload with a horizon-bound filename.
+The original audit above records the pre-fix state. Cross-origin round-trip
+testing is still pending, and no domain migration was performed.

@@ -2384,7 +2384,7 @@ function getBlueprintTopPlaces() {
 
     function exportLocalAccountBackup() {
       const payload = getLocalAccountPayload();
-      const filename = `horizon-bound-${getSafeBackupNamePart(payload.appState?.destination || payload.currentTrip?.title)}-backup.json`;
+      const filename = `the-fullest-life-travel-${getSafeBackupNamePart(payload.appState?.destination || payload.currentTrip?.title)}-backup.json`;
       try {
         const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
         const url = window.URL.createObjectURL(blob);
