@@ -155,6 +155,23 @@ or price claim is certified merely by the city status.
 
 ## Earlier Work
 
+### Austin status clarification
+
+Austin was reviewed under an earlier source-list standard on September 19.
+The current standard is stricter: every exact recommendation needs mapped
+evidence with checked date, source type and operating/context evidence.
+Its 32 older references lack that complete per-record format. Three current
+labels do not exactly match the source keys: Lady Bird Lake hike-and-bike
+trail, Congress Avenue Bridge at sunset, and South Congress Avenue evening.
+Their base places have older sources, not current verification of each activity.
+
+The evidence format changed, and Austin's record is not reconciled to it.
+Earlier unqualified claims of full verification were too broad relative to
+today's standard. This does not establish that its places are invented.
+Retain prior-source-review until the current recommendations are rechecked
+and mapped. The About page's process is not proof every published city has
+already completed it. No new Austin verification was performed in this pass.
+
 Austin has an earlier source review and its existing source ledger is retained.
 Its original date is not refreshed just because Cusco was checked. Other cities
 remain research-pending or partially researched unless their ledger says

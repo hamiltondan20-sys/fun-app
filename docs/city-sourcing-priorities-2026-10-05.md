@@ -2,6 +2,11 @@
 
 Updated October 5, 2026. Research planning, not new source verification.
 
+DATA STATUS: 0 tool-sourced keyword rows; all 60 ranges remain editorial
+estimates. Re-ranking is pending the owner's export. Use the
+[Ahrefs export request](ahrefs-city-export-request.md), not this provisional
+ranking alone, to allocate the next sourcing batch.
+
 All volumes below are LOW-CONFIDENCE EDITORIAL ESTIMATES of monthly US English
 Google searches, not Keyword Planner, Search Console or paid keyword-tool data.
 Existing estimates were retained from the October 1 queue; Hanoi, Nice and
