@@ -2,7 +2,7 @@
 
 Updated: 2026-10-05. This is an editorial record, not a publication gate.
 
-The [refreshed demand-led queue](city-sourcing-priorities-2026-10-05.md)
+The [user-approved Wikivoyage-led queue](city-sourcing-priorities-2026-10-05.md)
 distinguishes classifier matches from sourced recommendations. No new city was
 verified in this planning pass. Saved Singapore research remains unfinished,
 and automated content work remains paused. The legal-page release has 217

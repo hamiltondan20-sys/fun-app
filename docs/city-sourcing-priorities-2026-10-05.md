@@ -1,48 +1,63 @@
-# Provisional City Sourcing Priorities
+# Approved City Sourcing Priorities
 
-Pulled 2026-10-06 (UTC). Period: 202510 through 202609, the last 12 full calendar months.
+User approved October 5, 2026. Pulled October 6 UTC.
+Period: October 2025 through September 2026.
 
-Source: Wikimedia REST API, English Wikipedia, all-access, user pageviews.
-These are measured article views worldwide, NOT search volumes, travel intent,
-unique visitors or US demand. Singapore and Hong Kong articles cover broader
-city-state/territory topics. News can increase readership. Redirect-alias views
-are not combined with canonical article views; no estimate fills missing data.
+Source: Wikimedia REST API, English Wikivoyage, all-access, user pageviews.
+These are readership figures, not search volume, unique visitors or US demand.
+Wikivoyage is the better travel-guide proxy where sources disagree because
+its articles serve travellers rather than general encyclopedic interest.
+Individual reader intent is not measured. Canonical top-level views exclude
+district pages and redirect aliases.
 
-This ranking is provisional and should be superseded by Search Console page
-impressions in 2-3 weeks. No editorial keyword estimates remain in this table.
-Source-verified counts reflect dated supporting records, not capitalised names.
-Populated categories may still contain unsourced items. Classifier matches may repeat.
+This approved order remains provisional until Search Console impressions
+supersede it in 2-3 weeks. All 20 city entities matched; no absent data was estimated.
 
-| Rank | City | Confirmed en.wikipedia article | Wikimedia 12-month views (2026-10-06) | Wikimedia monthly mean (2026-10-06) | Source-record verified names (2026-10-06) | Detail populated categories (2026-10-06) | Classifier named entries (2026-10-06) |
+| Order | City | Wikivoyage article | 12-month views (2026-10-06) | Monthly average (2026-10-06) | Source-record verified names (2026-10-06) | Populated categories (2026-10-06) | Classifier named entries (2026-10-06) |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Singapore | Singapore | 4089068 | 340755.67 | 0 | 15 | 8 |
-| 2 | Hong Kong | Hong Kong | 3000316 | 250026.33 | 0 | 15 | 5 |
-| 3 | Berlin | Berlin | 1672816 | 139401.33 | 0 | 15 | 7 |
-| 4 | Prague | Prague | 1219794 | 101649.5 | 0 | 15 | 7 |
-| 5 | Vancouver | Vancouver | 1212881 | 101073.42 | 0 | 15 | 8 |
-| 6 | Montreal | Montreal | 1179063 | 98255.25 | 0 | 15 | 7 |
-| 7 | Vienna | Vienna | 1165442 | 97120.17 | 0 | 15 | 7 |
-| 8 | Melbourne | Melbourne | 1124536 | 93711.33 | 0 | 15 | 7 |
-| 9 | Venice | Venice | 1039850 | 86654.17 | 0 | 15 | 8 |
-| 10 | Rio de Janeiro | Rio de Janeiro | 963843 | 80320.25 | 0 | 15 | 7 |
-| 11 | Munich | Munich | 879247 | 73270.58 | 0 | 15 | 7 |
-| 12 | Cape Town | Cape Town | 795316 | 66276.33 | 0 | 15 | 8 |
-| 13 | Cairo | Cairo | 716371 | 59697.58 | 0 | 15 | 7 |
-| 14 | Reykjavik | Reykjavík | 667739 | 55644.92 | 0 | 15 | 7 |
-| 15 | Honolulu | Honolulu | 637614 | 53134.5 | 0 | 15 | 7 |
-| 16 | Kyoto | Kyoto | 627474 | 52289.5 | 0 | 15 | 7 |
-| 17 | Hanoi | Hanoi | 536601 | 44716.75 | 0 | 15 | 7 |
-| 18 | Nice | Nice | 503194 | 41932.83 | 0 | 15 | 7 |
-| 19 | Banff | Banff, Alberta | 309638 | 25803.17 | 0 | 15 | 7 |
-| 20 | Queenstown | Queenstown, New Zealand | 174539 | 14544.92 | 0 | 15 | 7 |
+| 1 | Singapore | Singapore | 99245 | 8270.42 | 0 | 15 | 8 |
+| 2 | Hong Kong | Hong Kong | 82854 | 6904.5 | 0 | 15 | 5 |
+| 3 | Berlin | Berlin | 72191 | 6015.92 | 0 | 15 | 7 |
+| 4 | Venice | Venice | 62100 | 5175 | 0 | 15 | 8 |
+| 5 | Montreal | Montreal | 56849 | 4737.42 | 0 | 15 | 7 |
+| 6 | Prague | Prague | 55995 | 4666.25 | 0 | 15 | 7 |
+| 7 | Vienna | Vienna | 55033 | 4586.08 | 0 | 15 | 7 |
+| 8 | Munich | Munich | 49215 | 4101.25 | 0 | 15 | 7 |
+| 9 | Hanoi | Hanoi | 43185 | 3598.75 | 0 | 15 | 7 |
+| 10 | Vancouver | Vancouver | 42642 | 3553.5 | 0 | 15 | 8 |
+| 11 | Rio de Janeiro | Rio de Janeiro | 41310 | 3442.5 | 0 | 15 | 7 |
+| 12 | Melbourne | Melbourne | 40862 | 3405.17 | 0 | 15 | 7 |
+| 13 | Cape Town | Cape Town | 35895 | 2991.25 | 0 | 15 | 8 |
+| 14 | Cairo | Cairo | 31391 | 2615.92 | 0 | 15 | 7 |
+| 15 | Nice | Nice | 28715 | 2392.92 | 0 | 15 | 7 |
+| 16 | Kyoto | Kyoto | 26502 | 2208.5 | 0 | 15 | 7 |
+| 17 | Reykjavik | Reykjavík | 23053 | 1921.08 | 0 | 15 | 7 |
+| 18 | Banff | Banff | 19718 | 1643.17 | 0 | 15 | 7 |
+| 19 | Queenstown | Queenstown (New Zealand) | 14390 | 1199.17 | 0 | 15 | 7 |
+| 20 | Honolulu | Honolulu | 11452 | 954.33 | 0 | 15 | 7 |
 
-## Re-run and evidence
+Classifier names are not verified recommendations; entries may repeat.
+Populated categories can still contain unsourced items.
 
-Run `node scripts/pull-city-pageviews.mjs` from the checkout. CSV: [download](city-demand-wikipedia-2026-10-06.csv).
-Full article identity responses, redirects, coordinates, source URLs and monthly
-counts are retained in [evidence](city-demand-wikipedia-2026-10-06.json).
+## Next work
 
-All 20 article matches passed city/location and non-disambiguation checks.
+Resume saved [Singapore research](content-research/singapore.md) first, then
+Hong Kong. This approval changes priority only: content automation remains
+paused until explicitly resumed. Retain all 15 fields and the existing
+publication gates. No domain migration or new source verification occurred.
 
-For later Search Console ranking, follow [the export process](search-console-content-monitoring.md).
-No sourcing work, gate change or domain migration is authorised by this ranking.
+## Evidence
+
+- [Wikivoyage CSV](city-demand-wikivoyage-2026-10-06.csv)
+- [Article and monthly evidence](city-demand-wikivoyage-2026-10-06.json)
+- [Both-source comparison](city-demand-comparison-2026-10-06.md)
+- [Search Console process](search-console-content-monitoring.md)
+
+Hanoi is the only rank difference above five: Wikipedia 17, Wikivoyage 9.
+Inspect that signal without assuming its cause.
+
+Re-run without changing the approved queue:
+
+```bash
+node scripts/pull-city-pageviews.mjs --project=en.wikivoyage --end-month=2026-09 --compare=docs/city-demand-wikipedia-2026-10-06.json
+```
