@@ -149,5 +149,19 @@ proposal only; generator schema and layout are unchanged in this batch.
 ## Validation and Deployment
 
 Full image/page-generation/release chain passed. Sixteen regression tests passed
-after refreshing the verification inventory. Final link, schema, date and public
-deployment checks are recorded after publication rather than assumed.
+after refreshing the verification inventory. The audit checked 5,165 internal
+anchor targets across 219 HTML files, with zero broken targets; all 1,760 JSON-LD
+blocks parsed. Sitemap contains 217 loc and 217 lastmod elements. Re-running the
+generator after the content and sitemap commits left generated-file status clean.
+No node_modules files are tracked.
+
+Content commit e79d9db and sitemap commit e1447d7 were pushed. [Actions run
+37548593950](https://github.com/hamiltondan20-sys/fun-app/actions/runs/37548593950)
+completed successfully. All four public pages returned HTTP 200 with the October
+6 review notice; the public sitemap also has 217 loc and 217 lastmod elements.
+Public browser checks at 390px and 1440px found loaded hero images, one H1 per
+page and no horizontal overflow. Screenshots were inspected, including Munich's
+desktop recommendation sections. Existing fallback illustrations were retained.
+Local file-browser inspection was unavailable; public checks were performed after
+deployment instead. Unrelated content-program edits and handoff archives remain
+untouched. No schema, publication gate, reuse cap or domain migration was changed.
