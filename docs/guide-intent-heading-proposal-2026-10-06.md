@@ -1,6 +1,25 @@
 # Single-Intent Heading Proposal and FAQ Backlog
 
-October 6, 2026. Read-only site audit; rendering changes await explicit approval.
+October 6, 2026. Conditional-heading change approved, implemented and deployed.
+
+## Deployment Result
+
+Commit f760302 deployed successfully in Actions run 37551855016. Public browser
+inspection confirmed Special occasions in Hanoi and Vienna. Heading, navigation
+and ItemList name changed together; budget-splurge anchors and section counts
+remain unchanged. Other seven reviewed pages and all 180 unreviewed pages were
+byte-identical against the pre-change checkout. All 18 focused tests passed;
+the full image, generation and release-check chain passed. Internal link audit:
+5,209 links, zero broken. Sitemap: 217 loc and 217 lastmod. Reviewed sections:
+71, matching 71 ItemList blocks.
+
+FAQ assessment: Google's May 8, 2026 changelog says FAQ rich results stopped
+appearing on May 7, 2026. June 15, 2026 records removal of the documentation.
+Source: https://developers.google.com/search/updates (checked October 6, 2026).
+Existing accurate FAQPage markup is inert for that retired Google feature, not
+inherently harmful. Keeping it as semantic data is optional; no ranking or
+other-consumer benefit has been established here. The nine missing FAQ blocks
+are reader-content work, not a Google FAQ rich-result opportunity.
 
 ## Evidence Correction to Retain
 
@@ -22,7 +41,7 @@ Budget and Splurge entries. No reviewed guide currently has Budget only.
 This audit concerns labels and evidence-backed category membership, not measured
 prices or a claim that the State Opera is necessarily Vienna's costliest outing.
 
-## Proposed Fix, Not Implemented
+## Approved Fix
 
 Recommended: derive the section heading from the intents present after evidence
 filtering. Both intents: Budget and special occasions. Budget only: On a budget.
