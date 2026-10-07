@@ -56,4 +56,13 @@ positions. Sitemap has 217 loc and 217 lastmod elements. Only the nine reviewed
 destination HTML files change; CSS additions are scoped to their new selectors.
 Unrelated content-program edits and handoff archives are not part of this release.
 
-Public deployment and responsive checks are recorded separately after completion.
+Content commit b5f6d13 and synchronized sitemap commit d5452aa were pushed.
+[Actions run 37549820689](https://github.com/hamiltondan20-sys/fun-app/actions/runs/37549820689)
+completed successfully. All nine live guides display the new sections. Browser
+checks at 390px and 1440px found no horizontal overflow and loaded hero images
+on every pilot page. Screenshots were inspected for Munich's mobile/desktop
+lists, Boston's desktop lists and Singapore's combined labels; the Singapore
+Meals worth planning jump link also reached its section. Browser size overrides
+and temporary tabs were cleaned up. Public sitemap counts remain 217/217.
+Generated-file status was clean after synchronization. Local file-browser checks
+were unavailable; public responsive verification followed deployment instead.
