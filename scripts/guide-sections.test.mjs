@@ -22,3 +22,22 @@ test("reviewed sections preserve every field and merge only within a section", (
   assert.equal(JSON.stringify(clusters), before);
   assert.deepEqual(reviewedSections([]), []);
 });
+
+test("budget heading reflects only the intents present without changing its anchor", () => {
+  for (const [budget, splurge, label] of [
+    [true, false, "On a budget"],
+    [false, true, "Special occasions"],
+    [true, true, "Budget and special occasions"],
+    [false, false, null]
+  ]) {
+    const clusters = [{ blocks: [
+      { field: "bestBudget", items: budget ? ["Free Place"] : [] },
+      { field: "bestLuxury", items: splurge ? ["Booked Place"] : [] }
+    ] }];
+    const before = JSON.stringify(clusters);
+    const section = reviewedSections(clusters).find(s => s.id === "budget-splurge");
+    assert.equal(section?.label || null, label);
+    if (label) assert.equal(section.id, "budget-splurge");
+    assert.equal(JSON.stringify(clusters), before);
+  }
+});

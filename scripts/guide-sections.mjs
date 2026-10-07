@@ -22,6 +22,16 @@ export function reviewedSections(clusters) {
         if (!entry.labels.includes(label)) entry.labels.push(label);
       }
     }
-    return { ...section, entries: [...entries.values()] };
+    const items = [...entries.values()];
+    let label = section.label;
+    if (section.id === "budget-splurge") {
+      // Navigation, heading and ItemList all use this label. Do not advertise
+      // an intent absent from the evidence-filtered entries.
+      const budget = items.some(entry => entry.labels.includes("Budget"));
+      const splurge = items.some(entry => entry.labels.includes("Splurge"));
+      if (budget && !splurge) label = "On a budget";
+      if (splurge && !budget) label = "Special occasions";
+    }
+    return { ...section, label, entries: items };
   }).filter(section => section.entries.length);
 }
