@@ -606,6 +606,54 @@ window.HB_DATA = window.HB_DATA || {};
     ],
     trust: "All 13 distinct recommendations in this guide were checked against official operator websites on October 6, 2026, starting with Visit Singapore. This was a website review, not a visit or telephone confirmation. Advertised opening and reservation details do not guarantee availability; confirm before traveling."
   };
+  data.cityGuideDetailData["Hong Kong, China"] = {
+    "bestAttractions": [
+        "M+",
+        "Star Ferry (Central-Tsim Sha Tsui)"
+    ],
+    "bestUnique": [
+        "PMQ"
+    ],
+    "bestBreakfast": [
+        "Bakehouse (Wan Chai)"
+    ],
+    "bestLunch": [
+        "Duddell's (Central)"
+    ],
+    "bestDinner": [
+        "Lung King Heen"
+    ],
+    "bestCocktails": [
+        "ARGO"
+    ],
+    "bestBakeries": [
+        "Bakehouse (Wan Chai)"
+    ],
+    "bestCoffee": [
+        "noc (Tsim Sha Tsui, Sun Arcade)"
+    ],
+    "bestRestaurants": [
+        "Duddell's (Central)",
+        "Lung King Heen"
+    ],
+    "bestKids": [],
+    "bestFirstTimers": [
+        "Star Ferry (Central-Tsim Sha Tsui)"
+    ],
+    "bestSolo": [
+        "M+",
+        "noc (Tsim Sha Tsui, Sun Arcade)"
+    ],
+    "bestCouples": [
+        "ARGO"
+    ],
+    "bestBudget": [
+        "M+"
+    ],
+    "bestLuxury": [
+        "Lung King Heen"
+    ]
+};
   data.cityGuideDetailData["Hanoi, Vietnam"] = {
     bestAttractions: ["Temple of Literature", "Hanoi Museum"],
     bestFirstTimers: ["Temple of Literature", "Cafe Giang (Nguyen Huu Huan)"],
@@ -668,6 +716,24 @@ window.HB_DATA = window.HB_DATA || {};
     bestLuxury: ["Restaurant Tantris"]
   };
   const reviewedBatch = {
+    "Hong Kong, China": {
+      summary: "A short source-checked selection of harbour crossings, art, design, breakfast and booked meals, with exact Hong Kong branches.",
+      highlights: ["M+", "Star Ferry (Central-Tsim Sha Tsui)", "PMQ"],
+      tip: "Choose one side of the harbour for your main outing, then check the exact branch and service before booking a meal.",
+      intro: [
+        "Start with the outing you want to spend time on, rather than trying to finish a long list. M+ is at 38 Museum Drive in West Kowloon. Its galleries have ticket arrangements, while several public spaces remain free. The budget suggestion here means those free areas, including the Roof Garden and Found Space, not free entry to every exhibition. Check the museum's current visitor information before choosing what to see.",
+        "For a harbour crossing, this guide means Star Ferry's ordinary Central-Tsim Sha Tsui service. A separately sold harbour tour is a different outing. Use the operator's pier information to find your boarding point and leave some flexibility for weather or changes to sailing times. PMQ, at 35 Aberdeen Street in Central, adds design shops and heritage displays to another part of the day. Individual tenants and events have their own hours; a visit to the building does not promise that every studio or workshop will be available.",
+        "Bakehouse's Wan Chai restaurant is at 14 Tai Wong Street East and publishes a dine-in breakfast menu. Do not substitute one of its takeaway-only branches if you want to sit down. For coffee, noc's Sun Arcade branch is at 28 Canton Road in Tsim Sha Tsui. It is not the nearby Empire Centre location. Check the individual branch page for its hours rather than treating a momentary Closed indicator in a location directory as a permanent closure notice.",
+        "Duddell's recommendation means the Central restaurant at 1 Duddell Street, not its airport outlet. The main dining room and Upper Room offer different menus and service arrangements. Lung King Heen is on the fourth floor of Four Seasons Hotel Hong Kong at 8 Finance Street. It publishes lunch and dinner reservations as well as child-age restrictions that vary by day. Confirm the rules for your party directly, especially with younger children.",
+        "ARGO is a separate evening drinks stop on the hotel's first floor. It welcomes non-hotel guests but has its own age and dress requirements. The hotel's directions currently specify lift access from IFC during escalator maintenance, so use those directions rather than an older route description. This is a deliberately short selection, not a complete catalogue of Hong Kong. Children's recommendations remain empty while the current candidate checks are unresolved. Opening details, admission arrangements and reservations can change; confirm the visit you want with the operator before traveling."
+      ],
+      toolkit: [
+        { label: "Museum admission", value: "Free areas are not all galleries", copy: "M+ advertises free public spaces separately from ticketed exhibitions. Check the current admission arrangements for your intended visit." },
+        { label: "Find the branch", value: "Use the complete address", copy: "Bakehouse Wan Chai offers dine-in breakfast. noc's Sun Arcade branch and Duddell's Central restaurant are specific locations, not interchangeable outlets." },
+        { label: "Dining", value: "Check age and service rules", copy: "Lung King Heen's child-age arrangements vary by day. ARGO has its own age and dress requirements. Confirm with the venue before booking." },
+        { label: "Getting there", value: "Read current directions", copy: "Four Seasons currently specifies lift access from IFC during escalator maintenance. Ferry piers and sailing arrangements have their own operator information." }
+      ]
+    },
     "Hanoi, Vietnam": {
       summary: "Museum visits, egg coffee, brunch and Vietnamese meals, with exact branches to help you plan Hanoi.",
       highlights: ["Temple of Literature", "Hanoi Museum", "Cafe Giang (Nguyen Huu Huan)"],

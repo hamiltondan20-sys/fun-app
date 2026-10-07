@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 9.
-- Classifier-passed (published, not fully documented in that format): 180.
+- Source-verified (complete dated evidence format): 10.
+- Classifier-passed (published, not fully documented in that format): 179.
 - Held back: 295.
 - Published destinations: 189; country hubs: 19; sitemap URLs: 217.
 
@@ -223,7 +223,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Hobart, Australia | hobart | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Hoi An, Vietnam | hoi-an | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
 | Hondarribia, Spain | hondarribia | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Hong Kong, China | hong-kong | classifier-passed | not-reviewed | 0 | 5 | 15 | 3 | None |
+| Hong Kong, China | hong-kong | source-verified | source-checked | 8 | 15 | 14 | 13 | None |
 | Honolulu, United States | honolulu | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
 | Hua Hin, Thailand | hua-hin | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Huanglong, China | huanglong | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |

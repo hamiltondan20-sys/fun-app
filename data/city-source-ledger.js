@@ -5,6 +5,113 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Hong Kong, China": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-06",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised service does not guarantee availability. Audience placements are editorial judgements. Missing independent corroboration is recorded, not assumed. No recommendation of inaccessible candidate sites and no inference that a fetch failure means closure.",
+    "sourceUrls": [
+        "https://www.discoverhongkong.com/eng/index.html"
+    ],
+    "placeSources": {
+        "M+": {
+            "sourcedFor": "bestAttractions",
+            "url": "https://www.mplus.org.hk/en/plan-your-visit/",
+            "locationSourceUrl": "https://www.mplus.org.hk/en/plan-your-visit/",
+            "checkedOn": "2026-10-06",
+            "sourceType": "official museum operator",
+            "address": "38 Museum Drive, West Kowloon Cultural District, Kowloon",
+            "operatingEvidence": "Current ticket information, opening days and getting-here directions. Free public spaces listed separately from paid gallery access.",
+            "independentCorroborationUrls": [],
+            "budgetScope": "Mediatheque, Grand Stair except ticketed events, B1, B2, Found Space and Roof Garden advertised as free; not all exhibitions."
+        },
+        "Star Ferry (Central-Tsim Sha Tsui)": {
+            "sourcedFor": "bestFirstTimers",
+            "url": "https://www.starferry.com.hk/en/service",
+            "locationSourceUrl": "https://www.starferry.com.hk/en/pier",
+            "checkedOn": "2026-10-06",
+            "sourceType": "official ferry operator",
+            "address": "Central and Tsim Sha Tsui Star Ferry piers",
+            "operatingEvidence": "Current Central-Tsim Sha Tsui timetable and operator pier information. Sailing times can vary with weather and traffic. Harbour tours are a separate service.",
+            "independentCorroborationUrls": [
+                "https://www.discoverhongkong.com/eng/place-to-go/travel.guide-star-ferry-pier.html"
+            ]
+        },
+        "PMQ": {
+            "sourcedFor": "bestUnique",
+            "url": "https://www.pmq.org.hk/tourist-information/explore-pmq/?lang=en",
+            "locationSourceUrl": "https://www.pmq.org.hk/the-site/location-transportation/",
+            "checkedOn": "2026-10-06",
+            "sourceType": "official venue operator",
+            "address": "35 Aberdeen Street, Central",
+            "operatingEvidence": "Current studio/shop visitor information and walking routes from MTR stations. Individual tenant and event hours differ; no specific workshop or free admission promise.",
+            "independentCorroborationUrls": [
+                "https://www.discoverhongkong.com/tc/place-to-go/travel.guide-pmq.html"
+            ]
+        },
+        "Bakehouse (Wan Chai)": {
+            "sourcedFor": "bestBreakfast",
+            "url": "https://www.bakehouse.hk/wanchai-cafe-menu",
+            "locationSourceUrl": "https://www.bakehouse.hk/locations",
+            "checkedOn": "2026-10-06",
+            "sourceType": "business's own site",
+            "address": "G/F, 14 Tai Wong Street East, Wan Chai",
+            "operatingEvidence": "Current dine-in breakfast, brunch and pastry menus; branch hours and reservation link. Other branches include takeaway-only locations and are not substituted.",
+            "independentCorroborationUrls": []
+        },
+        "Duddell's (Central)": {
+            "sourcedFor": "bestLunch",
+            "url": "https://duddells.co/",
+            "locationSourceUrl": "https://duddells.co/",
+            "checkedOn": "2026-10-06",
+            "sourceType": "business's own site",
+            "address": "Levels 3 and 4, 1 Duddell Street, Central",
+            "operatingEvidence": "Current lunch and dinner menus, reservations and contact address after renovation. Main dining room and Upper Room have different service arrangements. Airport branch is not substituted.",
+            "independentCorroborationUrls": [
+                "https://www.discoverhongkong.com/eng/place-to-go/travel.guide-duddell-s.html"
+            ]
+        },
+        "Lung King Heen": {
+            "sourcedFor": "bestDinner",
+            "url": "https://www.fourseasons.com/hongkong/dining/restaurants/lung_king_heen/",
+            "locationSourceUrl": "https://www.fourseasons.com/hongkong/getting-here/",
+            "checkedOn": "2026-10-06",
+            "sourceType": "business's own hotel site",
+            "address": "4/F, Four Seasons Hotel Hong Kong, 8 Finance Street, Central",
+            "operatingEvidence": "Current lunch/dinner service, menus and reservations. Weekday child-age restrictions are advertised. Getting-here page notes IFC escalator maintenance September 1-November 30, 2026 and lift access.",
+            "independentCorroborationUrls": [
+                "https://www.discoverhongkong.com/eng/place-to-go/travel.guide-lung-king-heen.html"
+            ]
+        },
+        "ARGO": {
+            "sourcedFor": "bestCocktails",
+            "url": "https://www.fourseasons.com/hongkong/dining/lounges/argo/",
+            "locationSourceUrl": "https://www.fourseasons.com/hongkong/getting-here/",
+            "checkedOn": "2026-10-06",
+            "sourceType": "business's own hotel site",
+            "address": "1/F, Four Seasons Hotel Hong Kong, 8 Finance Street, Central",
+            "operatingEvidence": "Current evening hours, cocktail menu and reservation contact; non-hotel guests welcome. Directions identify current hotel entrance arrangements. Not presented as unrestricted children's access.",
+            "independentCorroborationUrls": [
+                "https://www.discoverhongkong.com/eng/place-to-go/travel.guide-argo.html"
+            ]
+        },
+        "noc (Tsim Sha Tsui, Sun Arcade)": {
+            "sourcedFor": "bestCoffee",
+            "url": "https://noc.coffee/menu/",
+            "locationSourceUrl": "https://noc.coffee/locations/tsim-sha-tsui/",
+            "checkedOn": "2026-10-06",
+            "sourceType": "business's own site",
+            "address": "Shop 02, UG/F, The Sun Arcade, 28 Canton Road, Tsim Sha Tsui",
+            "operatingEvidence": "Current branch address, weekday/weekend hours and coffeehouse/brunch description. Menu advertises coffee. Not the Empire Centre branch; Graham Street was not found in the current location list and is not used.",
+            "additionalCheckedUrls": [
+                "https://noc.coffee/location/"
+            ],
+            "independentCorroborationUrls": []
+        }
+    }
+},
   "Hanoi, Vietnam": {
     renderVerifiedOnly: true, checkedOn: "2026-10-06", status: "source-checked", reviewScope: "cityGuideDetailData", verificationMethod: "official-web-review",
     limitations: "Operator website review, not a visit or telephone confirmation. Current advertised service is not guaranteed availability. Category grouping is editorial. Unreadable and conflicting candidates were omitted; bakery and budget fields remain empty. Own-site pages are not independent corroboration.",

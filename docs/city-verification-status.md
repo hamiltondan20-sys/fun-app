@@ -1,6 +1,6 @@
 # City Verification Status
 
-Updated: 2026-10-06. This is an editorial record, not a publication gate.
+Updated: 2026-10-07. This is an editorial record, not a publication gate.
 
 The [user-approved Wikivoyage-led queue](city-sourcing-priorities-2026-10-05.md)
 distinguishes classifier matches from sourced recommendations. Singapore's
@@ -17,11 +17,11 @@ destination a status: `source-verified`, `classifier-passed`, or `held-back`.
 There are 484 canonical destinations from 485 detail records. The existing
 Guilin merge accounts for the difference; no destination was deleted in this pass.
 
-- 9 source-covered in the local evidence inventory: Boston, Cusco, Edinburgh, Dublin, Singapore, Hanoi, Berlin, Vienna and Munich.
-- 180 classifier-passed guides in the local build, including Austin's retained prior review.
+- 10 source-covered in the local evidence inventory: Boston, Cusco, Edinburgh, Dublin, Singapore, Hanoi, Berlin, Vienna, Munich and Hong Kong.
+- 179 classifier-passed guides in the local build, including Austin's retained prior review.
 - 295 held-back destinations.
 
-Ten cities have a source-review history, but they are not identically documented.
+Eleven cities have a source-review history, but they are not identically documented.
 Austin has 32 legacy source references; three current activity labels do not
 exactly match those source keys, and per-place operating evidence is not yet
 migrated. This is a documentation gap, not evidence that those activities are
@@ -49,7 +49,7 @@ context labels, deduplicating only within each section. Evidence and publication
 calculations still use the original fields. This is a layout change, not a new
 verification claim or a reduction in sourcing requirements.
 
-The nine reviewed ledger records explicitly set `renderVerifiedOnly: true`.
+The ten reviewed ledger records explicitly set `renderVerifiedOnly: true`.
 The static generator renders only entries with dated HTTPS source records,
 source type and operating evidence for those cities. Unreviewed cities keep
 their existing rendering. Filtering never removes underlying data or ledger
@@ -59,6 +59,17 @@ categories are omitted. Publication thresholds are unchanged.
 `classifyItem` recognizes name-like text. It cannot establish that a business
 exists, is in the right country, or is open. Repeated entries across categories
 also increase its count. Never describe that total as verified places.
+
+## Hong Kong Approved Release
+
+Approved October 7, 2026. Eight distinct recommendations with operator/location
+evidence dated October 6; noc branch and Four Seasons directions rechecked on
+October 7. Fourteen populated detail fields, 17 placements, mean 2.125, maximum
+three. Seven display sections and seven matching ItemList blocks. The children
+field remains empty. The unchanged classifier counts 15 named placements across
+13 categories; rendered words: 908. All 188 other destination guides are
+byte-identical to the pre-release checkout. Research limitations and unresolved
+operator-site checks are retained in docs/content-research/hong-kong-2026-10-06.json.
 
 Use `data/city-source-ledger.js` for provenance rather than adding a bare boolean:
 
