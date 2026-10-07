@@ -74,3 +74,20 @@ Recommendation: retain the evidence standard, use modest related-city batches,
 measure actual effort, and separately seek approval for prominent per-guide
 status wording. Honest coverage disclosure should not wait for a multi-year
 backlog to finish. No About text or status display was changed in this release.
+
+## Measured Work Starting October 7
+
+Next reviews in approved readership order: Venice, Montreal, Prague. Record
+each active work segment separately as sourcing, writing, validation or
+deployment. Sum segments per phase only after completion. Approval waiting and
+other-city work are excluded; tooling latency during active work is included.
+Unstarted phases remain absent, not zero. Historical hours remain unknown.
+
+Venice's first sourcing segment ran 23:48:02-23:49:27 UTC: 85 seconds, initial
+official-tourism discovery only. It is not a completed review or a throughput
+estimate. Further segments will be recorded in city-review-time-log.csv.
+
+The sample-day audit and proposed scoped labels are in
+guide-review-status-proposal-2026-10-07.md. Eight reviewed guides have no static
+sample day; Singapore and Hong Kong retain generated, inherited timelines not
+covered by their detail ledgers. No labels have been implemented.

@@ -17,6 +17,7 @@ import { execSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { classifyItem, linkItem } from "./place-links.mjs";
 import evidence from "./guide-evidence.cjs";
+import { guideReviewStatus, SAMPLE_DAY_NOTICE } from "./guide-review-status.mjs";
 import { reviewedSections } from "./guide-sections.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -368,6 +369,7 @@ const cities = rawCities.map((record) => {
     editorial,
     hero,
     planningToolkit: cleanPlanningToolkit,
+    reviewStatus: guideReviewStatus(ledger),
     clusters,
     // Undocumented is not the same as wrong. Keep unreviewed layouts intact;
     // only ledger-reviewed guides enter the approved display pilot.
@@ -581,6 +583,7 @@ ${planningToolkit.map((entry) => `          <details>
   const dayBlock = city.day
     ? `      <section class="hb-day" id="day">
         <h2>A first day in ${esc(city.name)}</h2>
+        <p class="hb-section-lead hb-review-status">${esc(SAMPLE_DAY_NOTICE)}</p>
         <p class="hb-section-lead">Here is one way the planner could shape an opening day. Your version changes with your dates, pace, and who you are traveling with.</p>
         <ol class="hb-timeline">
 ${city.day.map((slot) => `          <li>
@@ -624,6 +627,7 @@ ${cluster.blocks.map((block) => `          <div class="hb-block">
         <p class="hb-eyebrow">${esc(city.country || KIND_LABEL[city.kind] || "Travel guide")}</p>
         <h1>${esc(city.name)}</h1>
         <p class="hb-dek">${esc(city.editorial?.dek || city.summary || `A practical travel guide to ${city.name}.`)}</p>
+        <p class="hb-review-status">${esc(city.reviewStatus)}</p>
       </header>
       ${image ? `<img class="hb-hero" src="${esc(image)}" alt="${esc(heroAlt)}" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async" />` : ""}
 ${quickFacts}
