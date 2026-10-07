@@ -43,6 +43,12 @@ city with missing evidence makes the report fail rather than retaining its label
 
 ## What the counts mean
 
+The user approved the [reviewed-guide layout pilot](reviewed-guide-layout-2026-10-06.md).
+Reviewed guides combine their 15 fields into up to eight display sections with
+context labels, deduplicating only within each section. Evidence and publication
+calculations still use the original fields. This is a layout change, not a new
+verification claim or a reduction in sourcing requirements.
+
 The nine reviewed ledger records explicitly set `renderVerifiedOnly: true`.
 The static generator renders only entries with dated HTTPS source records,
 source type and operating evidence for those cities. Unreviewed cities keep

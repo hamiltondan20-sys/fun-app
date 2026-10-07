@@ -17,6 +17,7 @@ import { execSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { classifyItem, linkItem } from "./place-links.mjs";
 import evidence from "./guide-evidence.cjs";
+import { reviewedSections } from "./guide-sections.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const arg = (name, fallback) => {
@@ -368,6 +369,9 @@ const cities = rawCities.map((record) => {
     hero,
     planningToolkit: cleanPlanningToolkit,
     clusters,
+    // Undocumented is not the same as wrong. Keep unreviewed layouts intact;
+    // only ledger-reviewed guides enter the approved display pilot.
+    sections: ledger?.renderVerifiedOnly ? reviewedSections(clusters) : null,
     day: sampleDay(name)
   };
 });
@@ -501,9 +505,9 @@ function cityPage(city) {
           }
         : {})
     },
-    ...city.clusters
+    ...(city.sections ? city.sections.map(section => ({ label: section.label, items: section.entries.map(entry => entry.name) })) : city.clusters
       .flatMap((cluster) => cluster.blocks)
-      .slice(0, 6)
+      .slice(0, 6))
       .map((block) => ({
       "@context": "https://schema.org",
       "@type": "ItemList",
@@ -547,9 +551,11 @@ ${facts.map(([label, copy]) => `        <div><dt>${esc(label)}</dt><dd>${esc(cop
   const navTargets = [
     city.day ? ["day", "A first day"] : null,
     planningToolkit.length ? ["planning", "Before you book"] : null,
-    city.clusters.some((cluster) => cluster.id === "see") ? ["see", "What to see"] : null,
-    city.clusters.some((cluster) => cluster.id === "eat") ? ["eat", "Food and drinks"] : null,
-    city.clusters.some((cluster) => cluster.id === "who") ? ["who", "Choose your style"] : null,
+    ...(city.sections ? city.sections.map(section => [section.id, section.label]) : [
+      city.clusters.some((cluster) => cluster.id === "see") ? ["see", "What to see"] : null,
+      city.clusters.some((cluster) => cluster.id === "eat") ? ["eat", "Food and drinks"] : null,
+      city.clusters.some((cluster) => cluster.id === "who") ? ["who", "Choose your style"] : null
+    ]),
     city.tip ? ["tip", "Planning tip"] : null
   ].filter(Boolean);
   const jumpNav = navTargets.length > 1
@@ -589,7 +595,10 @@ ${city.day.map((slot) => `          <li>
       </section>`
     : "";
 
-  const clusterMarkup = city.clusters.map((cluster) => `      <section class="hb-cluster hb-cluster--${esc(cluster.layout)}" id="${esc(cluster.id)}">
+  const clusterMarkup = city.sections ? city.sections.map(section => `      <section class="hb-cluster hb-reviewed-section" id="${esc(section.id)}">
+        <h2>${esc(section.label)}</h2>
+        <ul class="hb-reviewed-list">${section.entries.map(entry => `<li><div>${linkItem(entry.name, city.key, DATA.cityPlaceQueries?.[city.key]?.[entry.name])}</div><p class="hb-recommendation-context">${entry.labels.map(esc).join(" / ")}</p></li>`).join("")}</ul>
+      </section>`).join("\n") : city.clusters.map((cluster) => `      <section class="hb-cluster hb-cluster--${esc(cluster.layout)}" id="${esc(cluster.id)}">
         <h2>${esc(cluster.heading)}</h2>
         <p class="hb-section-lead">${esc(cluster.lead)}</p>
         <div class="hb-cluster-body">

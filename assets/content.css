@@ -673,6 +673,29 @@ body.hb-content {
   text-underline-offset: 3px;
 }
 
+.hb-reviewed-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 20px 32px;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+.hb-reviewed-list > li {
+  min-width: 0;
+  border-top: 1px solid #d8e1df;
+  padding-top: 12px;
+  overflow-wrap: anywhere;
+}
+
+.hb-reviewed-list .hb-recommendation-context {
+  color: #465651;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 6px 0 0;
+}
+
 .hb-cluster {
   max-width: 72rem;
   margin: 0 0 3rem;
