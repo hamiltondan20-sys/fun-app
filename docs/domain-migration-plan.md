@@ -1,7 +1,82 @@
 # Custom Domain Decision
 
-Researched October 5, 2026. Planning only: no domain, DNS, site configuration,
+Refreshed October 7, 2026. Planning only: no domain, DNS, site configuration,
 canonical, email address or sitemap has been changed.
+
+## October 7 decision checkpoint
+
+Current build: 189 destination guides, 19 country hubs, 217 sitemap URLs.
+Ten detail reviews and 179 pending-review labels are live. Preserve these
+labels, evidence dates, sample-day notices and all publication thresholds.
+
+Today's live RDAP requests returned HTTP 404 for all three candidates: Verisign
+for .com, Identity Digital for .travel, and rdap.org's .co lookup. This means
+no registration record was returned, not guaranteed retail availability. No
+purchase, DNS or domain-binding action was taken.
+
+Today's read-only header check again returned an actual HTTP 301 from
+https://twbs.github.io/bootstrap/docs/5.3/ to
+http://getbootstrap.com/docs/5.3/. GitHub's documentation describes custom-domain
+configuration but does not specify every old-project redirect status/path
+detail; the 301 status is directly observed, not quoted from that documentation.
+Verify our own old paths, query strings and HTTPS chain at cutover.
+
+Live browser check of /fun-app/plan/#saved confirmed both Export backup and
+Restore backup under Beta local account. No personal draft was exported or
+overwritten in this check. Export/import reachability is confirmed; successful
+cross-origin restoration is not yet confirmed. The importer validates payload
+type, not the filename or product branding. Current export filenames use
+the-fullest-life-travel-.
+
+### Required cross-origin test before cutover
+
+1. Use disposable test data on the existing origin: a profile, destination,
+   named trip version and booking note/status. Export through the actual UI.
+   Do not overwrite a visitor's real draft for testing.
+2. Open the migration build on a different origin, such as localhost on a test
+   port. A different path on github.io is NOT a different origin.
+3. Confirm the test origin starts without the old saved data; import the
+   downloaded file through Saved > Beta local account > Restore backup.
+4. Compare profile, draft, versions and booking notes/statuses with the original.
+   Reload, restore the draft again and verify persistence. Record the two
+   origins, file and result. Do not report success based on source inspection
+   or same-origin export alone.
+5. Confirm analytics consent is requested separately on the new origin. Do not
+   transfer consent as part of a trip backup.
+
+Origin-scoped storage remains at the old origin; it is not deleted by moving.
+The native redirect can prevent visitors from reaching that old interface to
+export after cutover. Therefore provide advance notice and a recovery plan
+before enabling the binding, rather than promising loss-free migration.
+
+Proposed pre-cutover notice, requiring separate approval before publication:
+"We are moving to thefullestlifetravel.com on [confirmed date]. If you have a
+saved trip, open Saved > Beta local account and choose Export backup before
+that date. On the new site, choose Restore backup. Your saved trips do not
+transfer automatically. Keep the backup private: it can contain your profile
+and booking notes."
+
+### File inventory additions and clarifications
+
+The inventory below still applies. Include scripts/planner-paths.test.mjs
+when updating root-path expectations. scripts/pull-city-pageviews.mjs contains
+project references that must be inspected for active URL assumptions, not
+blindly replaced. Preserve historical research URLs and evidence records.
+
+plan/index.html contains <base href="../">: relative assets resolve one level
+above /plan/, already supporting the app root. Do not mechanically add another
+../. Edit its absolute metadata directly and test every resolved reference.
+404.html is also directly maintained and requires root-path link checks.
+
+Privacy, Terms and About are generated: update domain-specific source text and
+metadata in scripts/generate-pages.mjs, then regenerate all three. Their
+canonical and social metadata must use the new origin, even where body copy
+does not name the host. Preserve the approved privacy practices and review
+scope. No email change is required for this decision.
+
+Decision requested: approve .com as the intended domain, subject to registrar
+availability/renewal price, then approve a separately tested migration. Domain
+purchase alone does not authorize DNS changes or deployment. No migration yet.
 
 ## Registration checks
 
