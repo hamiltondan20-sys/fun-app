@@ -26,7 +26,7 @@
     rel="stylesheet"
   />
   <link href="./assets/app.css?v=20260830e" rel="stylesheet" />
-  <link href="./assets/app-inline.css?v=20260912b" rel="stylesheet" />
+  <link href="./assets/app-inline.css?v=20261007layout" rel="stylesheet" />
 </head>
 <body class="text-ink">
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -1478,9 +1478,6 @@
             </button>
           </div>
 
-          <div id="trip-next-actions" class="trip-next-actions mt-4"></div>
-          <div id="trip-readiness-panel" class="trip-readiness-panel mt-4"></div>
-          <div id="trip-handoff-panel" class="trip-handoff-panel mt-4"></div>
 
           <div id="trip-day-overview" class="trip-day-overview mt-4"></div>
 
@@ -1503,20 +1500,6 @@
               <span class="rounded-full bg-white px-3 py-1 text-xs font-semibold text-primary">Memorable</span>
             </div>
           </div>
-
-          <div class="trip-perspective-band mt-5">
-            <div>
-              <p id="trip-perspective-kicker" class="text-xs font-semibold uppercase tracking-[0.16em] text-primary">A note for your trip</p>
-              <h4 id="trip-perspective-title" class="mt-1 font-display text-xl font-bold">One great day beats three rushed ones.</h4>
-            </div>
-            <div id="trip-perspective-points" class="trip-perspective-points">
-              <span><span class="material-symbols-outlined" aria-hidden="true">star</span> Keep the main event</span>
-              <span><span class="material-symbols-outlined" aria-hidden="true">schedule</span> Leave time between stops</span>
-              <span><span class="material-symbols-outlined" aria-hidden="true">favorite</span> Make it feel like yours</span>
-            </div>
-          </div>
-
-          <div id="trip-match-summary" class="match-summary-strip mt-5"></div>
 
           <div id="trip-map-shell" class="trip-map-shell map-shell mt-6">
             <div class="border-b border-line px-4 py-4">
@@ -1555,7 +1538,7 @@
           <div class="trip-guide-panel trip-collapsible-panel mt-6 rounded-[24px] border border-line bg-surface-soft px-4 py-4" data-trip-section="guide">
             <div class="trip-guide-head trip-collapsible-head">
               <div class="trip-guide-head-copy">
-                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Before you go</p>
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Destination notes</p>
                 <h4 id="trip-guide-title" class="mt-1 font-display text-lg font-bold"></h4>
                 <p id="trip-guide-summary" class="trip-collapsible-summary mt-1 text-sm leading-6 text-muted"></p>
               </div>
@@ -1635,6 +1618,8 @@
           </div>
 
           <div id="trip-days" class="mt-4 space-y-4"></div>
+
+          <div id="trip-handoff-panel" class="trip-handoff-panel mt-6"></div>
 
           <div id="trip-logistics-section" class="trip-collapsible-panel mt-6 rounded-[24px] border border-line bg-surface-soft px-4 py-4" data-trip-section="logistics">
             <div class="trip-support-head trip-collapsible-head">
@@ -2074,10 +2059,10 @@
     <script defer src="./data/destination-expansion.js?v=20260912a"></script>
     <script defer src="./data/destination-coverage.js?v=20260912b"></script>
     <script defer src="./scripts/app-analytics.js?v=20261005privacy"></script>
-    <script defer src="./scripts/app-bootstrap.js?v=20260912b"></script>
+    <script defer src="./scripts/app-bootstrap.js?v=20261007layout"></script>
     <script defer src="./scripts/app-foundation.js?v=20260830c"></script>
     <script defer src="./scripts/app-guides.js?v=20260912d"></script>
-  <script defer src="./scripts/app-trip.js?v=20261005backup"></script>
-  <script defer src="./scripts/app-ui.js?v=20260913a"></script>
+  <script defer src="./scripts/app-trip.js?v=20261007layout"></script>
+  <script defer src="./scripts/app-ui.js?v=20261007layout"></script>
 </body>
 </html>

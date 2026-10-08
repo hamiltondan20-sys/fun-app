@@ -129,7 +129,7 @@ function updatePrimaryCta() {
         return;
       }
       if (hbState.activePanelId === "trip-panel") {
-        hbRefs.generateBtn.textContent = "Save Draft";
+        hbRefs.generateBtn.textContent = "Save a Version";
         return;
       }
       if (hbState.activePanelId === "saved-panel") {
@@ -1606,8 +1606,9 @@ function updatePrimaryCta() {
       };
       hbState.compareVersionId = "";
       renderThinking();
+      hbState.tripAutosaveEnabled = true;
       renderTrip();
-      persistTripDraft({ feedback: "Draft saved automatically" });
+      persistTripDraft({ feedback: "Saved automatically in this browser" });
       setActivePanel("thinking-panel");
       startThinkingSequence();
     }
@@ -1818,9 +1819,10 @@ function updatePrimaryCta() {
       }
 
       if (hbState.activePanelId === "trip-panel") {
-        persistTripDraft({ feedback: "Draft saved" });
-        renderTrip();
-        renderSavedPanel();
+        // Open the versions panel (same path as the "Save a version" button) and focus the name field.
+        persistTripDraft({ silent: true });
+        document.querySelector("#trip-draft-status [data-section='versions']")?.click();
+        window.setTimeout(() => document.getElementById("alternate-version-name-input")?.focus({ preventScroll: true }), 120);
         return;
       }
 
@@ -1849,7 +1851,7 @@ function updatePrimaryCta() {
           return;
         }
         const dayCard = event.target.closest(".trip-day-card");
-        if (dayCard && !event.target.closest("button")) {
+        if (dayCard && !event.target.closest("button, summary")) {
           renderTripMap(dayCard.dataset.dayId);
         }
         return;
@@ -2069,7 +2071,7 @@ function updatePrimaryCta() {
       }
 
       if (event.key !== "Enter" && event.key !== " ") return;
-      if (event.target.closest("button")) return;
+      if (event.target.closest("button, summary")) return;
 
       const step = event.target.closest(".timeline-step");
       if (step) {

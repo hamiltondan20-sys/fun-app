@@ -2499,7 +2499,7 @@
       box-shadow: inset 0 0 0 1px rgba(203, 215, 227, 0.86);
     }
 
-    .trip-day-edit-hint {
+    .trip-day-route-note {
       display: flex;
       align-items: flex-start;
       gap: 0.7rem;
@@ -2511,17 +2511,55 @@
       box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.82);
     }
 
-    .trip-day-edit-hint .material-symbols-outlined {
+    .trip-day-route-note .material-symbols-outlined {
       flex: 0 0 auto;
       color: #2458c8;
       font-size: 1.15rem;
     }
 
-    .trip-day-edit-hint p {
+    .trip-day-route-note p {
       min-width: 0;
       font-size: 0.86rem;
       font-weight: 600;
       line-height: 1.5;
+    }
+
+    .trip-day-more {
+      border-radius: 18px;
+      border: 1px solid rgba(203, 215, 227, 0.92);
+      background: rgba(255, 255, 255, 0.7);
+    }
+
+    .trip-day-more-summary {
+      cursor: pointer;
+      padding: 0.8rem 0.95rem;
+      font-size: 0.86rem;
+      font-weight: 700;
+      color: #2458c8;
+    }
+
+    .trip-day-more-summary:focus-visible {
+      outline: 2px solid #2458c8;
+      outline-offset: 2px;
+      border-radius: 18px;
+    }
+
+    .trip-day-more-body {
+      padding: 0 0.95rem 0.95rem;
+    }
+
+    /* The planner intro belongs to the first step only; later steps start with the step itself. */
+    body[data-surface="details-panel"] .homepage-hero,
+    body[data-surface="details-panel"] .homepage-trip-notes,
+    body[data-surface="blueprint-panel"] .homepage-hero,
+    body[data-surface="blueprint-panel"] .homepage-trip-notes,
+    body[data-surface="thinking-panel"] .homepage-hero,
+    body[data-surface="thinking-panel"] .homepage-trip-notes,
+    body[data-surface="trip-panel"] .homepage-hero,
+    body[data-surface="trip-panel"] .homepage-trip-notes,
+    body[data-surface="saved-panel"] .homepage-hero,
+    body[data-surface="saved-panel"] .homepage-trip-notes {
+      display: none;
     }
 
     .trip-day-section {
@@ -7249,6 +7287,7 @@
       .trip-day-step-actions,
       .trip-support-actions {
         width: 100%;
+        flex: 0 0 auto;
         flex-direction: column;
         align-items: stretch;
       }

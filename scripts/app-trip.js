@@ -2276,7 +2276,7 @@ function getBlueprintTopPlaces() {
     }
 
     function persistTripDraft(options = {}) {
-      const { feedback = "Draft saved" } = options;
+      const { feedback = "Draft saved", silent = false } = options;
       const now = new Date();
       const payload = {
         savedAt: formatDraftSavedAt(now),
@@ -2294,6 +2294,7 @@ function getBlueprintTopPlaces() {
       try {
         window.localStorage.setItem(DRAFT_STORAGE_KEY, JSON.stringify(payload));
         hbState.savedDraft = getDraftMetaFromPayload(payload);
+        if (silent) return true;
         hbState.draftSaveFeedback = feedback;
         window.setTimeout(() => {
           if (hbState.draftSaveFeedback !== feedback) return;
@@ -2336,6 +2337,7 @@ function getBlueprintTopPlaces() {
       hbState.unsavedArrangement = { dirty: false, message: "" };
       hbState.savedDraft = getDraftMetaFromPayload(payload);
       hbState.draftSaveFeedback = `Restored draft from ${hbState.savedDraft?.savedAt || "your saved draft"}`;
+      hbState.tripAutosaveEnabled = Boolean(hbState.currentTrip);
       syncPlanningInputsFromState();
       renderTrip();
       renderSavedPanel();
@@ -2568,7 +2570,7 @@ function getBlueprintTopPlaces() {
       const changes = getTripChangeItems(hbState.currentTrip);
       const hasTrip = Boolean(hbState.currentTrip);
       const emptyCopy = hasTrip
-        ? "Give feedback on any day and we will keep track of the changes before you save."
+        ? "Give feedback on any day and we will keep track of what changed."
         : "Build a trip first, then day feedback will appear here.";
 
       if (!changes.length) {
@@ -2592,7 +2594,7 @@ function getBlueprintTopPlaces() {
           <div class="trip-change-summary-head">
             <div>
               <p class="trip-change-summary-label">Trip changes</p>
-              <h4 class="trip-change-summary-title">${changes.length} ${changes.length === 1 ? "adjustment" : "adjustments"} ready to save</h4>
+              <h4 class="trip-change-summary-title">${changes.length} ${changes.length === 1 ? "adjustment" : "adjustments"} made</h4>
               <p class="trip-change-summary-copy">${escapeHtml(getTripChangeSummary(hbState.currentTrip, ""))}</p>
             </div>
             <span class="trip-change-summary-chip">${changes.length} changed</span>
@@ -2611,10 +2613,7 @@ function getBlueprintTopPlaces() {
           </div>
           <div class="trip-change-actions">
             <button class="rounded-full bg-secondary px-4 py-2 text-sm font-semibold text-white" data-action="jump-trip-anchor" data-target-id="trip-versions-panel" data-section="versions" type="button">
-              Save adjusted version
-            </button>
-            <button class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="save-current-draft" type="button">
-              Save draft
+              Save as a version
             </button>
           </div>
         </div>
@@ -2629,199 +2628,35 @@ function getBlueprintTopPlaces() {
       const saved = hbState.savedDraft;
       const hasTrip = Boolean(hbState.currentTrip);
       const feedback = hbState.draftSaveFeedback ? `<p class="trip-draft-status-meta">${escapeHtml(hbState.draftSaveFeedback)}</p>` : "";
-      const meta = saved
-        ? `${saved.days ? `${saved.days} day${saved.days === 1 ? "" : "s"} saved` : "Draft saved"}${saved.changeCount ? ` - ${saved.changeCount} trip change${saved.changeCount === 1 ? "" : "s"}` : ""} - ${saved.savedAt}`
-        : "Not saved yet";
+      const autosaved = Boolean(saved && hbState.tripAutosaveEnabled);
+      const meta = saved ? `Last saved ${saved.savedAt}` : "Not saved yet";
 
+      // Three distinct controls: automatic browser save, a named snapshot, and a portable backup file.
       status.innerHTML = `
         <div class="trip-draft-status-copy">
-          <p class="trip-draft-status-label">${saved ? "Saved draft" : "Draft not saved"}</p>
-          <p class="trip-draft-status-title">${saved ? escapeHtml(saved.title) : "Save this trip when it starts to feel useful"}</p>
-          <p class="trip-draft-status-meta">${escapeHtml(meta)}</p>
+          <p class="trip-draft-status-label">${autosaved ? "Saved automatically in this browser" : (saved ? "Saved in this browser" : "Not saved yet")}</p>
+          <p class="trip-draft-status-meta">${escapeHtml(meta)}. Only this browser keeps it; export a backup to move it.</p>
           ${feedback}
         </div>
         <div class="trip-draft-status-actions">
-          <button class="rounded-full bg-secondary px-4 py-2 text-sm font-semibold text-white" data-action="save-current-draft" type="button" ${hasTrip ? "" : "disabled"}>
-            Save draft
-          </button>
-          ${saved ? `
-            <button class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="restore-saved-draft" type="button">
-              Restore draft
+          ${autosaved ? "" : `
+            <button class="rounded-full bg-secondary px-4 py-2 text-sm font-semibold text-white" data-action="save-current-draft" type="button" ${hasTrip ? "" : "disabled"}>
+              Save in this browser
             </button>
-          ` : ""}
+          `}
+          <button class="rounded-full ${autosaved ? "bg-secondary text-white" : "bg-white text-secondary ring-1 ring-line"} px-4 py-2 text-sm font-semibold" data-action="jump-trip-anchor" data-section="versions" data-target-id="trip-versions-panel" type="button" ${hasTrip ? "" : "disabled"}>
+            Save a version
+          </button>
+          <button class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="export-local-backup" type="button">
+            Export backup
+          </button>
         </div>
       `;
-    }
-
-    function buildTripNextActions() {
-      hydrateSavedDraftStatus();
-      const days = hbState.currentTrip?.days || [];
-      const hasGuideData = Boolean(getDestinationGuideEntry() || getDestinationGuideDetails());
-      const saved = hbState.savedDraft;
-      const hasStay = Boolean(hbState.appState.hotelName || hbState.appState.hotelArea);
-      const logisticsReady = hasStay && getFlightPlanStatus().handled;
-      const firstGuideTarget = hasGuideData ? "trip-guide-depth" : "trip-days";
-      const topBookingPick = getDestinationGuideDetails()
-        ? joinGuideItems(uniqueGuidePlaces(
-            getDestinationGuideDetails().bestDinner || [],
-            getDestinationGuideDetails().bestFirstTimers || [],
-            getDestinationGuideDetails().bestAttractions || []
-          ).slice(0, 2), "your highest-priority stops")
-        : (days[0]?.highlight || "your highest-priority stops");
-
-      return [
-        {
-          icon: hasGuideData ? "menu_book" : "route",
-          tone: "ready",
-          label: hasGuideData ? "From the city guide" : "Trip flow",
-          title: hasGuideData ? "See why this plan works" : "Review the day flow",
-          copy: hasGuideData
-            ? `See how the city guide shaped the routes, meals, and must-see stops.`
-            : `Start with the day-by-day flow, then open any day that feels too full or too light.`,
-          cta: hasGuideData ? "See guide picks" : "Review days",
-          action: "jump-trip-anchor",
-          targetId: firstGuideTarget,
-          section: hasGuideData ? "guide" : ""
-        },
-        {
-          icon: "event_available",
-          tone: logisticsReady ? "ready" : "attention",
-          label: logisticsReady ? "Ready to book" : "Needs details",
-          title: logisticsReady ? "Confirm bookings around the plan" : "Add stay or travel details",
-          copy: logisticsReady
-            ? `Keep reservations and timing aligned around ${topBookingPick}, then leave room for small changes.`
-            : `Add hotel area, hotel name, or flight timing so the first and last days stay realistic.`,
-          cta: logisticsReady ? "Review logistics" : "Add logistics",
-          action: "jump-trip-anchor",
-          targetId: "trip-logistics-section",
-          section: "logistics"
-        },
-        {
-          icon: saved ? "bookmark_added" : "bookmark",
-          tone: saved ? "ready" : "attention",
-          label: saved ? "Draft saved" : "Keep progress",
-          title: saved ? "Manage saved versions" : "Save this draft",
-          copy: saved
-            ? `Your working trip is saved. Use versions when you want to compare a calmer, cheaper, or more packed plan.`
-            : `Save once the trip feels useful, then you can come back without starting over.`,
-          cta: saved ? "Open versions" : "Save draft",
-          action: saved ? "jump-trip-anchor" : "save-current-draft",
-          targetId: saved ? "trip-versions-panel" : "",
-          section: saved ? "versions" : ""
-        }
-      ];
-    }
-
-    function renderTripNextActions() {
-      const wrap = document.getElementById("trip-next-actions");
-      if (!wrap) return;
-
-      const actions = buildTripNextActions();
-      wrap.innerHTML = `
-        <div class="trip-next-actions-head">
-          <div>
-            <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Next best steps</p>
-            <h4 class="mt-1 font-display text-lg font-bold text-ink">Keep planning without getting stuck</h4>
-            <p class="mt-2 max-w-[44rem] text-sm leading-6 text-muted">The itinerary is ready to review. These are the practical moves that usually matter next.</p>
-          </div>
-          <span class="self-start rounded-full bg-blue-soft px-3 py-1 text-xs font-semibold text-secondary">Actionable</span>
-        </div>
-        <div class="trip-next-actions-grid">
-          ${actions.map((item) => `
-            <article class="trip-next-action-card ${item.tone === "attention" ? "is-attention" : "is-ready"}">
-              <div>
-                <div class="trip-next-action-head">
-                  <span class="trip-next-action-icon material-symbols-outlined" aria-hidden="true">${escapeHtml(item.icon)}</span>
-                  <div class="min-w-0">
-                    <p class="trip-next-action-label">${escapeHtml(item.label)}</p>
-                    <h5 class="trip-next-action-title">${escapeHtml(item.title)}</h5>
-                  </div>
-                </div>
-                <p class="trip-next-action-copy">${escapeHtml(item.copy)}</p>
-              </div>
-              <button class="trip-next-action-button ${item.tone === "attention" ? "bg-primary text-white" : "bg-surface-soft text-secondary ring-1 ring-line"}" data-action="${escapeHtml(item.action)}" ${item.targetId ? `data-target-id="${escapeHtml(item.targetId)}"` : ""} ${item.section ? `data-section="${escapeHtml(item.section)}"` : ""} type="button">
-                ${escapeHtml(item.cta)}
-              </button>
-            </article>
-          `).join("")}
-        </div>
-      `;
-    }
-
-    function buildTripReadinessItems() {
-      const readiness = getPlanningReadiness();
-      const basicsReady = readiness.required.every((item) => item.ready);
-      const preferences = readiness.optional.find((item) => item.id === "preferences");
-      const guide = readiness.optional.find((item) => item.id === "guide");
-      const logistics = readiness.optional.find((item) => item.id === "logistics");
-
-      return [
-        {
-          title: "Trip basics",
-          ready: basicsReady,
-          copy: basicsReady
-            ? `${getCityName()}, ${formatDate(hbState.appState.startDate)} to ${formatDate(hbState.appState.endDate)}, for ${buildTravelerText()}.`
-            : "Add destination, dates, and travelers before trusting the plan."
-        },
-        {
-          title: "Your preferences",
-          ready: Boolean(preferences?.ready),
-          copy: preferences?.ready
-            ? `${preferences.readyCopy} ${hbState.appState.memory} is the main trip vibe.`
-            : preferences?.missingCopy || "Pick a style, pace, and trip vibe so the draft has a clear direction."
-        },
-        {
-          title: "City guide",
-          ready: Boolean(guide?.ready),
-          copy: guide?.ready
-            ? "Your city guide is shaping the route, priorities, and booking notes."
-            : guide?.missingCopy || "No city guide is connected yet, so the draft is using general destination guidance."
-        },
-        {
-          title: "Booking details",
-          ready: Boolean(logistics?.ready),
-          copy: logistics?.ready
-            ? logistics.readyCopy
-            : logistics?.missingCopy || "Add hotel area, hotel name, or flight timing before booking tightly."
-        },
-        {
-          title: "Save point",
-          ready: Boolean(hbState.savedDraft),
-          copy: hbState.savedDraft
-            ? `Saved as ${hbState.savedDraft.title}.`
-            : "Save this draft once the direction feels close."
-        }
-      ];
-    }
-
-    function renderTripReadinessPanel() {
-      const wrap = document.getElementById("trip-readiness-panel");
-      if (!wrap) return;
-
-      const items = buildTripReadinessItems();
-      const readyCount = items.filter((item) => item.ready).length;
-      wrap.innerHTML = `
-        <div class="trip-readiness-head">
-          <div>
-            <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Trip readiness</p>
-            <h4 class="mt-1 font-display text-lg font-bold text-ink">What is ready before you book</h4>
-            <p class="mt-2 max-w-[44rem] text-sm leading-6 text-muted">A quick check of the details that make this itinerary easier to trust.</p>
-          </div>
-          <span class="trip-readiness-score">${readyCount} of ${items.length} ready</span>
-        </div>
-        <div class="trip-readiness-list">
-          ${items.map((item) => `
-            <div class="trip-readiness-item ${item.ready ? "is-ready" : "is-attention"}">
-              <p class="trip-readiness-status">
-                <span class="material-symbols-outlined" aria-hidden="true">${item.ready ? "check_circle" : "error"}</span>
-                <span>${item.ready ? "Ready" : "Check"}</span>
-              </p>
-              <p class="trip-readiness-title">${escapeHtml(item.title)}</p>
-              <p class="trip-readiness-copy">${escapeHtml(item.copy)}</p>
-            </div>
-          `).join("")}
-        </div>
-      `;
+      status.querySelector("[data-action='export-local-backup']").onclick = (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        exportLocalAccountBackup();
+      };
     }
 
     function getTripHandoffAnchors() {
@@ -2844,6 +2679,8 @@ function getBlueprintTopPlaces() {
       const hasStay = Boolean(hbState.appState.hotelName || hbState.appState.hotelArea);
       const flightStatus = getFlightPlanStatus();
       const flightReady = flightStatus.handled;
+      const scheduledKeys = new Set(anchors.map((anchor) => anchor.key));
+      const unscheduled = (hbState.currentTrip?.unscheduledMustHaves || []).filter((anchor) => !scheduledKeys.has(anchor.key));
       const bookingAnchorLabel = joinGuideItems(
         uniqueGuidePlaces(
           foodAnchors.map((anchor) => anchor.label),
@@ -2856,8 +2693,8 @@ function getBlueprintTopPlaces() {
       return [
         {
           icon: "restaurant",
-          status: foodAnchors.length ? "Ready to book" : "Review",
-          ready: Boolean(foodAnchors.length),
+          status: foodAnchors.length ? "To book" : "Review",
+          ready: false,
           title: "Meals to book",
           copy: foodAnchors.length
             ? (() => {
@@ -2876,7 +2713,7 @@ function getBlueprintTopPlaces() {
         {
           icon: "confirmation_number",
           status: sightAnchors.length ? "Check timing" : "Review",
-          ready: Boolean(sightAnchors.length),
+          ready: false,
           title: "Tickets and timed entries",
           copy: sightAnchors.length
             ? `Check timing for ${joinGuideItems(sightAnchors.map((anchor) => anchor.label).slice(0, 2), "your main sights")} so the day order stays realistic.`
@@ -2910,19 +2747,17 @@ function getBlueprintTopPlaces() {
           targetId: "trip-flights-section",
           section: "flights"
         },
-        {
-          icon: hbState.savedDraft ? "bookmark_added" : "bookmark",
-          status: hbState.savedDraft ? "Saved" : "Not saved",
-          ready: Boolean(hbState.savedDraft),
-          title: "Save this version",
-          copy: hbState.savedDraft
-            ? `Saved as ${hbState.savedDraft.title}. Save a named version when edits start branching.`
-            : "Save the draft before making bigger changes, so the useful version does not get lost.",
-          cta: hbState.savedDraft ? "Open versions" : "Save draft",
-          action: hbState.savedDraft ? "jump-trip-anchor" : "save-current-draft",
-          targetId: hbState.savedDraft ? "trip-versions-panel" : "",
-          section: hbState.savedDraft ? "versions" : ""
-        }
+        ...(unscheduled.length ? [{
+          icon: "push_pin",
+          status: "Not scheduled yet",
+          ready: false,
+          title: "Must-haves still missing",
+          copy: `${joinGuideItems(unscheduled.map((anchor) => anchor.label), "A must-have")} ${unscheduled.length === 1 ? "is" : "are"} not in any day yet. Add ${unscheduled.length === 1 ? "it" : "them"} to a day, or drop ${unscheduled.length === 1 ? "it" : "them"} from your must-haves.`,
+          cta: "Edit must-haves",
+          action: "open-manual-adjust",
+          targetId: "",
+          section: ""
+        }] : [])
       ];
     }
 
@@ -2930,16 +2765,16 @@ function getBlueprintTopPlaces() {
       const wrap = document.getElementById("trip-handoff-panel");
       if (!wrap) return;
       const items = buildTripHandoffItems();
-      const readyCount = items.filter((item) => item.ready).length;
+      const todoCount = items.filter((item) => !item.ready).length;
 
       wrap.innerHTML = `
         <div class="trip-handoff-head">
           <div>
-            <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Booking handoff</p>
-            <h4 class="mt-1 font-display text-lg font-bold text-ink">Turn this itinerary into a real trip</h4>
-            <p class="mt-2 max-w-[44rem] text-sm leading-6 text-muted">Use this as the final practical pass before reservations, tickets, and saved versions.</p>
+            <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Before you go</p>
+            <h4 class="mt-1 font-display text-lg font-bold text-ink">What you still need to arrange</h4>
+            <p class="mt-2 max-w-[44rem] text-sm leading-6 text-muted">Bookings and open decisions for this plan.</p>
           </div>
-          <span class="trip-handoff-score">${readyCount} of ${items.length} handled</span>
+          <span class="trip-handoff-score">${todoCount ? `${todoCount} to arrange` : "All set"}</span>
         </div>
         <div class="trip-handoff-list">
           ${items.map((item) => `
@@ -3752,12 +3587,8 @@ function getBlueprintTopPlaces() {
       if (!day?.item || profile.key === "balanced") return day;
 
       const next = cloneData(day);
-      const labelPattern = new RegExp(profile.dayLabel.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i");
 
       next.item.label = profile.dayLabel;
-      if (!labelPattern.test(next.item.fit || "")) {
-        next.item.fit = `${next.item.fit} ${profile.dayLabel}: ${profile.dayNote}`;
-      }
 
       if (profile.key === "budget" && index === 1) {
         next.item.body = `${next.item.body} Choose the free or low-cost version first, then spend where it will make the day better.`;
@@ -5176,6 +5007,10 @@ function getBlueprintTopPlaces() {
       if (!hbState.currentTrip) {
         hbState.currentTrip = buildGeneratedTrip();
       }
+      // Once a trip has been built or restored here, every edit re-renders, so this keeps the browser copy current.
+      if (hbState.tripAutosaveEnabled) {
+        persistTripDraft({ silent: true });
+      }
       if (!hbState.tripSectionVisibility) {
         hbState.tripSectionVisibility = {
           guide: true,
@@ -5277,8 +5112,6 @@ function getBlueprintTopPlaces() {
       }
       renderTripDraftStatus();
       renderTripChangeSummary();
-      renderTripNextActions();
-      renderTripReadinessPanel();
       renderTripHandoffPanel();
       renderTripDayOverview();
       hbUtils.renderDestinationHero("trip");
@@ -5769,10 +5602,6 @@ function getBlueprintTopPlaces() {
                   <span class="trip-day-stat-value">${day.item.timeline?.length || 0}</span>
                 </div>
               </div>
-              <div class="trip-day-why-strip mt-3">
-                <p class="trip-day-section-label">Why this day makes sense</p>
-                <p class="trip-day-meta mt-2">${escapeTripText(day.rationale)}</p>
-              </div>
             </div>
             <div class="trip-day-header-actions">
               <span class="trip-day-chip trip-day-chip--ghost">Move day</span>
@@ -5806,11 +5635,6 @@ function getBlueprintTopPlaces() {
           </div>
           ` : ""}
 
-          <div class="trip-day-edit-hint mt-3">
-            <span class="material-symbols-outlined" aria-hidden="true">edit_calendar</span>
-            <p>Make it yours: move the day, try a nearby alternative, lighten the plan, or adjust stop timing after opening the schedule.</p>
-          </div>
-
           <div class="trip-day-section trip-day-section--summary mt-4">
             ${day.item.removed ? `
               <div class="flex items-center justify-between gap-3">
@@ -5824,45 +5648,11 @@ function getBlueprintTopPlaces() {
                 </button>
               </div>
             ` : `
-              <div class="flex items-start justify-between gap-3">
-                <div>
-                  <p class="trip-day-section-label">Day snapshot</p>
-                  <div class="flex flex-wrap items-center gap-2">
-                    <p class="trip-heading trip-day-plan-title mt-2 text-xl text-ink">${escapeTripText(day.item.title)}</p>
-                    <span class="rounded-full ${index === 1 ? "bg-teal-soft text-tertiary" : "bg-blue-soft text-secondary"} px-3 py-1 text-xs font-semibold">${escapeTripText(day.item.label)}</span>
-                  </div>
-                </div>
-              </div>
-              <div class="trip-day-summary-grid mt-3">
-                <div class="trip-day-summary-card trip-day-summary-card--plan">
-                  <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Plan</p>
-                  <p class="trip-day-overview-copy mt-2">${escapeTripText(day.item.body)}</p>
-                </div>
-                <div class="trip-day-summary-card trip-day-summary-card--fit">
-                  <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Why it fits</p>
-                  <p class="trip-day-overview-copy mt-2">${escapeTripText(day.item.fit)}</p>
-                </div>
+              <div class="trip-day-route-note">
+                <span class="material-symbols-outlined" aria-hidden="true">route</span>
+                <p>${escapeTripText(buildDayOrderNote(day, index, hbState.currentTrip.days.length))}</p>
               </div>
               ${renderDayProtectedAnchorStrip(day, index, hbState.currentTrip.days.length)}
-              ${renderDayGuideMustHaveCards(day, index, hbState.currentTrip.days.length)}
-              ${renderDayQualityControls(day, index, hbState.currentTrip.days.length)}
-              <div class="trip-day-planner-notes mt-3">
-                ${buildDayPlanningNotes(day, index, hbState.currentTrip.days.length).map((note) => `
-                  <div class="trip-day-note-card">
-                    <span class="material-symbols-outlined" aria-hidden="true">${note.icon}</span>
-                    <div>
-                      <p class="trip-day-note-label">${escapeHtml(note.label)}</p>
-                      <p class="trip-day-note-copy">${escapeTripText(note.copy)}</p>
-                    </div>
-                  </div>
-                `).join("")}
-              </div>
-              <div class="trip-day-meta-row mt-3">
-                <div class="trip-day-meta-pill trip-day-meta-pill--note">
-                  <span class="trip-day-meta-pill-label">Good to know</span>
-                  <span class="trip-day-meta-pill-value">${escapeTripText(day.weather)}</span>
-                </div>
-              </div>
               ${!day.expanded ? `
                 <div class="trip-day-preview-strip mt-4">
                   ${day.item.timeline.slice(0, 2).map((step) => `
@@ -5927,6 +5717,38 @@ function getBlueprintTopPlaces() {
                   </div>
                 </div>
               ` : ""}
+              <details class="trip-day-more mt-4" data-day-id="${day.id}" ${hbState.openDayDetails?.has(day.id) ? "open" : ""}>
+                <summary class="trip-day-more-summary">More about this day</summary>
+                <div class="trip-day-more-body">
+                  <div class="trip-day-summary-grid">
+                    <div class="trip-day-summary-card trip-day-summary-card--plan">
+                      <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Plan</p>
+                      <p class="trip-day-overview-copy mt-2">${escapeTripText(day.item.body)}</p>
+                    </div>
+                    <div class="trip-day-summary-card trip-day-summary-card--fit">
+                      <p class="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Why it fits</p>
+                      <p class="trip-day-overview-copy mt-2">${escapeTripText(day.rationale)} ${escapeTripText(day.item.fit)}</p>
+                    </div>
+                  </div>
+                  ${renderDayGuideMustHaveCards(day, index, hbState.currentTrip.days.length)}
+                  <div class="trip-day-planner-notes mt-3">
+                    ${buildDayPlanningNotes(day, index, hbState.currentTrip.days.length)
+                      .filter((note) => note.icon !== "route" && note.icon !== "push_pin")
+                      .concat([{ icon: "info", label: "Good to know", copy: day.weather }])
+                      .filter((note) => note.copy)
+                      .map((note) => `
+                      <div class="trip-day-note-card">
+                        <span class="material-symbols-outlined" aria-hidden="true">${note.icon}</span>
+                        <div>
+                          <p class="trip-day-note-label">${escapeHtml(note.label)}</p>
+                          <p class="trip-day-note-copy">${escapeTripText(note.copy)}</p>
+                        </div>
+                      </div>
+                    `).join("")}
+                  </div>
+                  ${renderDayQualityControls(day, index, hbState.currentTrip.days.length)}
+                </div>
+              </details>
               <div class="trip-day-section trip-day-section--actions mt-4">
                 <div class="trip-day-actions">
                   <div class="trip-day-actions-copy">
@@ -5952,6 +5774,14 @@ function getBlueprintTopPlaces() {
           </div>
         </article>
       `).join("");
+
+      // Keep "More about this day" open across re-renders (e.g. after quick feedback inside it).
+      document.querySelectorAll("#trip-days details.trip-day-more").forEach((details) => {
+        details.addEventListener("toggle", () => {
+          hbState.openDayDetails = hbState.openDayDetails || new Set();
+          hbState.openDayDetails[details.open ? "add" : "delete"](details.dataset.dayId);
+        });
+      });
 
       renderTripMap();
       renderSavedPanel();
