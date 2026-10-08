@@ -4657,6 +4657,7 @@ function getBlueprintTopPlaces() {
             <div class="saved-panel-card-copy">
               <p class="text-sm font-semibold text-primary">Beta local account</p>
               <h4 class="mt-1 font-display text-lg font-bold">Save here, export when you want a backup</h4>
+              <p class="mt-3 text-sm text-ink" data-migration-backup-notice>We're preparing to move to thefullestlifetravel.com. Your saved trips won't transfer automatically. Go to Saved &rarr; Beta local account &rarr; Export backup. Keep that file so you can use Restore backup on the new site. Without a backup, saved trips will be lost.</p>
               <p class="mt-2 text-sm text-muted">For beta, trips stay free and local to this browser. There is no online account sync yet, so export a backup file before switching devices, clearing browser data, or sharing a draft with yourself.</p>
               ${localAccountFeedback}
             </div>
