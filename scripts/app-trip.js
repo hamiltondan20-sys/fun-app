@@ -64,6 +64,24 @@ function getBlueprintTopPlaces() {
       }
     }
 
+    // Single source of truth for flight status across readiness, next steps, and booking handoff.
+    function getFlightPlanStatus(appState = hbState.appState) {
+      const mode = appState.flightMode;
+      if (mode === "not-needed") {
+        return { mode, booked: false, hasTiming: false, handled: true, status: "No flights needed", copy: "Flights are not needed for this plan, so we can keep the focus on the destination." };
+      }
+      if (mode === "have-flights") {
+        const hasTiming = Boolean(appState.arrivalFlight || appState.departureFlight || appState.flightNumber || appState.flightAirline);
+        return hasTiming
+          ? { mode, booked: true, hasTiming, handled: true, status: "Flights added", copy: "Your flight details are in the plan, so the first and last days can work around them." }
+          : { mode, booked: true, hasTiming, handled: false, status: "Add flight times", copy: "You have flights, but no times yet. Add arrival or departure timing before booking tight first-day plans." };
+      }
+      if (mode === "need-help") {
+        return { mode, booked: false, hasTiming: false, handled: false, status: "Not booked yet", copy: "You asked for help finding flights. Compare options before treating the first and last days as final." };
+      }
+      return { mode: mode || "", booked: false, hasTiming: false, handled: false, status: "Not provided", copy: "Flight plans have not been added yet." };
+    }
+
     function buildFlightSummary() {
       if (hbState.appState.flightMode === "need-help") return `Need help finding flights • ${hbState.appState.flightPreference}`;
       if (hbState.appState.flightMode === "have-flights") {
@@ -599,8 +617,20 @@ function getBlueprintTopPlaces() {
       }))).filter((item) => item.label && item.key);
     }
 
+    // Display form of a must-have: "the Eiffel Tower" -> "Eiffel Tower", "a slower final day" -> "Slower final day".
+    function formatAnchorLabel(value) {
+      const text = cleanPlanningAnchor(value).replace(/^(the|a|an)\s+/i, "");
+      return text ? `${text.charAt(0).toUpperCase()}${text.slice(1)}` : "";
+    }
+
+    // Mid-sentence form: "One memorable dinner" -> "one memorable dinner", proper names like "Eiffel Tower" unchanged.
+    function formatInlineAnchorLabel(label) {
+      const text = String(label || "");
+      return /^\S+\s+[a-z]/.test(text) ? `${text.charAt(0).toLowerCase()}${text.slice(1)}` : text;
+    }
+
     function classifyPlanningAnchor(anchor, guideKeys, catalog) {
-      const label = cleanPlanningAnchor(anchor);
+      const label = formatAnchorLabel(anchor);
       const key = getPlanningAnchorKey(label);
       const catalogMatch = catalog.find((item) => item.key === key || item.key.includes(key) || key.includes(item.key));
       const text = label.toLowerCase();
@@ -636,48 +666,21 @@ function getBlueprintTopPlaces() {
         });
     }
 
-    function pickAnchorByType(anchors, type, seed = 0) {
-      const guideMatches = anchors.filter((anchor) => anchor.type === type && anchor.source === "guide");
-      const matches = guideMatches.length ? guideMatches : anchors.filter((anchor) => anchor.type === type);
-      return matches.length
-        ? matches[Math.abs(seed) % matches.length]
-        : null;
-    }
 
-    function buildDayProtectedAnchorMatches(day, index, totalDays) {
+    // Fallback for drafts saved before trip-level scheduling: only anchors this day's stops actually contain.
+    function buildDayProtectedAnchorMatches(day) {
       const anchors = getProtectedMustHaveAnchors();
       if (!anchors.length) return [];
-
-      const dayText = getDaySearchText(day);
-      const dayKey = getPlanningAnchorKey(dayText);
-      const exactMatches = anchors.filter((anchor) => anchor.key && dayKey.includes(anchor.key));
-      if (exactMatches.length) return exactMatches.slice(0, 2);
-
-      const preferredTypes = [];
-      if (/dinner|lunch|breakfast|restaurant|reservation|food|market|bakery|coffee|cafe/.test(dayText)) {
-        preferredTypes.push("food");
-      }
-      if (/museum|tower|palace|garden|bridge|view|cruise|show|tour|temple|colosseum|forum|acropolis|sagrada|louvre|vatican|gallery|landmark/.test(dayText)) {
-        preferredTypes.push("sight");
-      }
-      if (index === totalDays - 1 || /final|light|reset|slow|relax/.test(dayText)) {
-        preferredTypes.push("rest");
-      }
-      preferredTypes.push("unique", "atmosphere", "easy", "general");
-
-      const picked = [];
-      preferredTypes.forEach((type) => {
-        if (picked.length >= 2) return;
-        const candidate = pickAnchorByType(anchors.filter((anchor) => !picked.some((item) => item.key === anchor.key)), type, index + picked.length);
-        if (candidate) picked.push(candidate);
-      });
-
-      if (picked.length) return picked;
-      return [anchors[index % anchors.length]].filter(Boolean);
+      const steps = day.item?.timeline || [];
+      return anchors.flatMap((anchor) => {
+        const step = steps.find((item) => anchor.key && getPlanningAnchorKey(item?.title || "").includes(anchor.key));
+        return step ? [{ ...anchor, scheduled: true, stepTitle: step.title, stepTime: step.time }] : [];
+      }).slice(0, 2);
     }
 
     function getDayProtectedAnchors(day, index, totalDays) {
-      if (Array.isArray(day.protectedAnchors) && day.protectedAnchors.length) {
+      // Anchors not marked as scheduled come from the old per-day guessing, so re-derive them.
+      if (Array.isArray(day.protectedAnchors) && day.protectedAnchors.every((anchor) => anchor?.scheduled)) {
         return day.protectedAnchors;
       }
       return buildDayProtectedAnchorMatches(day, index, totalDays);
@@ -719,32 +722,21 @@ function getBlueprintTopPlaces() {
       }) || null;
     }
 
-    function buildProtectedAnchorReason(day, anchor, index, totalDays) {
-      const step = findAnchorTimelineStep(day, anchor);
-      const source = anchor.source === "guide" ? buildDestinationGuideSourceName() : "your must-haves";
-      const label = anchor.label || "this must-have";
+    function buildProtectedAnchorReason(day, anchor) {
+      const step = anchor.stepTitle
+        ? (day.item?.timeline || []).find((item) => item.title === anchor.stepTitle) || { title: anchor.stepTitle, time: anchor.stepTime }
+        : (anchor.scheduled ? null : findAnchorTimelineStep(day, anchor));
+      const label = formatInlineAnchorLabel(anchor.label) || "this must-have";
 
       if (step) {
-        return `Placed at ${step.time} as ${step.title}, so ${label} is part of the schedule instead of buried in notes.`;
+        return `${step.time ? `Scheduled at ${step.time}` : "Scheduled"} as ${step.title}, so ${label} is part of the plan instead of buried in notes.`;
       }
 
-      if (anchor.type === "food") {
-        return `Kept from ${source} as the main meal, then the surrounding stops stay close enough for the food plan to feel realistic.`;
-      }
-
-      if (anchor.type === "sight") {
-        return `Kept from ${source} as the main sight, then the rest of ${day.area} is built around it instead of competing with it.`;
-      }
-
-      if (anchor.type === "rest" || index === totalDays - 1) {
+      if (anchor.type === "rest") {
         return `Kept as a pacing priority, so this day leaves room to slow down instead of filling every open hour.`;
       }
 
-      if (anchor.type === "unique" || anchor.type === "atmosphere") {
-        return `Kept as part of the day's character, helping ${day.area} feel intentional rather than interchangeable.`;
-      }
-
-      return `Kept from ${source}, then used as the reason this day stays focused around ${day.area}.`;
+      return `Included in ${day.dayLabel || "this day"}.`;
     }
 
     function renderDayGuideMustHaveCards(day, index, totalDays) {
@@ -795,7 +787,7 @@ function getBlueprintTopPlaces() {
               <span class="material-symbols-outlined" aria-hidden="true">push_pin</span>
               ${escapeHtml(label)}
             </p>
-            <p class="trip-day-protected-copy">${escapeHtml(source)}. This day keeps ${escapeHtml(joinGuideItems(anchors.map((anchor) => anchor.label), "your priority moments"))} in the plan itself, not just in the preferences.</p>
+            <p class="trip-day-protected-copy">${escapeHtml(source)}. Scheduled in ${escapeHtml(day.dayLabel || "this day")}: ${escapeHtml(joinGuideItems(anchors.map((anchor) => formatInlineAnchorLabel(anchor.label)), "your priority moments"))}.</p>
           </div>
           <div class="trip-day-protected-chips">
             ${anchors.map((anchor) => `
@@ -806,33 +798,13 @@ function getBlueprintTopPlaces() {
       `;
     }
 
-    function hasEarlierTimelineType(day, type, stepIndex) {
-      const previousSteps = (day.item?.timeline || []).slice(0, stepIndex);
-      const pattern = type === "food"
-        ? /dinner|lunch|breakfast|restaurant|meal|food|market|bakery|coffee|cafe/
-        : /museum|tower|palace|temple|cathedral|landmark|sight|gallery|garden|bridge|view/;
-      return previousSteps.some((step) => pattern.test(`${step?.title || ""} ${step?.copy || ""}`.toLowerCase()));
-    }
-
-    function getTimelineProtectedAnchors(step, day, dayAnchors, stepIndex) {
-      if (!dayAnchors.length) return [];
-      const stepText = `${step?.title || ""} ${step?.copy || ""}`.toLowerCase();
-      const stepKey = getPlanningAnchorKey(stepText);
-      const exactMatches = dayAnchors.filter((anchor) => anchor.key && stepKey.includes(anchor.key));
-      if (exactMatches.length) return exactMatches.slice(0, 2);
-
-      if (/dinner|lunch|breakfast|restaurant|meal|food|market|bakery|coffee|cafe/.test(stepText)) {
-        if (hasEarlierTimelineType(day, "food", stepIndex)) return [];
-        const foodAnchor = pickAnchorByType(dayAnchors, "food");
-        if (foodAnchor) return [foodAnchor];
-      }
-      if (/museum|tower|palace|temple|cathedral|landmark|sight|gallery|garden|bridge|view/.test(stepText)) {
-        if (hasEarlierTimelineType(day, "sight", stepIndex)) return [];
-        const sightAnchor = pickAnchorByType(dayAnchors, "sight");
-        if (sightAnchor) return [sightAnchor];
-      }
-      if (stepIndex === 0 && dayAnchors.length === 1) return dayAnchors;
-      return [];
+    // A step only carries a must-have badge when that anchor was scheduled on this exact step.
+    function getTimelineProtectedAnchors(step, day, dayAnchors) {
+      if (!dayAnchors.length || !step?.title) return [];
+      const stepKey = getPlanningAnchorKey(step.title);
+      return dayAnchors.filter((anchor) => (anchor.scheduled
+        ? anchor.stepTitle === step.title
+        : Boolean(anchor.key) && stepKey.includes(anchor.key))).slice(0, 2);
     }
 
     function renderTimelineAnchorBadges(step, day, index, totalDays, stepIndex) {
@@ -895,48 +867,77 @@ function getBlueprintTopPlaces() {
       `;
     }
 
+    // Only days whose stops matched a known area can claim to stay "in" that area.
+    function getConfirmedDayArea(day) {
+      return day.areaConfirmed === false ? "" : (day.area || "");
+    }
+
     function buildDayOrderNote(day, index, totalDays) {
       const firstStop = day.item?.timeline?.[0]?.title || day.highlight || day.area;
       const lastStop = day.item?.timeline?.[day.item.timeline.length - 1]?.title || day.highlight || day.area;
+      const area = getConfirmedDayArea(day);
 
       if (index === 0) {
-        return `Starts with ${firstStop} and keeps the day rooted in ${day.area}, so the trip feels active without becoming a cross-city sprint.`;
+        return area
+          ? `Starts with ${firstStop} and keeps the day rooted in ${area}, so the trip feels active without becoming a cross-city sprint.`
+          : `Starts with ${firstStop}, so the trip feels underway early without packing the first day.`;
       }
 
       if (index === totalDays - 1) {
         return `Ends with ${lastStop} and keeps the close lighter, so packing, checkout, or a slower final meal do not get squeezed.`;
       }
 
+      if (!area) {
+        return `This day moves between a few parts of ${getCityName()}, so check travel time between stops before locking in reservations.`;
+      }
+
       if (hbState.appState.pace === "Packed") {
-        return `This day can carry more movement because the main stops stay connected around ${day.area} instead of scattering the route.`;
+        return `This day can carry more movement because the main stops stay connected around ${area} instead of scattering the route.`;
       }
 
       if (hbState.appState.memory === "Relaxing" || hbState.appState.styles.includes("Relaxing")) {
-        return `The plan keeps the stronger stops close together, leaving enough room for slower meals and unplanned time in ${day.area}.`;
+        return `The plan keeps the stronger stops close together, leaving enough room for slower meals and unplanned time in ${area}.`;
       }
 
       if (hbState.appState.memory === "Adventurous" || hbState.appState.styles.includes("Adventurous")) {
-        return `This is a good discovery day: one clear highlight, then enough nearby texture to make ${day.area} feel explored.`;
+        return `This is a good discovery day: one clear highlight, then enough nearby texture to make ${area} feel explored.`;
       }
 
       return `The day has one clear highlight and nearby follow-through, so it feels planned without turning into a checklist.`;
     }
 
+    // The restaurant a day actually schedules: its dinner stop first, then lunch, then a guide pick named in the day.
+    function getDayMealVenue(day) {
+      const steps = day.item?.timeline || day.timeline || [];
+      for (const pattern of [/^(?:evening reservation|dinner)\s+at\s+(.+)$/i, /^lunch\s+at\s+(.+)$/i]) {
+        const step = steps.find((item) => pattern.test(String(item?.title || "").trim()));
+        if (step) return String(step.title).trim().match(pattern)[1].trim();
+      }
+      return "";
+    }
+
+    function pickGuidePlaceInDay(day, groups) {
+      const dayText = getDaySearchText(day);
+      return uniqueGuidePlaces(...groups).find((item) => dayText.includes(String(item).toLowerCase())) || "";
+    }
+
     function buildDayBookingNote(day, index, totalDays) {
       const details = getDestinationGuideDetails();
-      const restaurant = details
-        ? pickGuidePlace(day, [details.bestDinner, details.bestRestaurants, details.bestLunch], index, day.highlight)
-        : day.highlight;
-      const attraction = details
-        ? pickGuidePlace(day, [details.bestFirstTimers, details.bestAttractions, details.bestUnique], index, day.highlight)
-        : day.highlight;
+      const restaurant = getDayMealVenue(day)
+        || (details ? pickGuidePlaceInDay(day, [details.bestDinner, details.bestRestaurants, details.bestLunch]) : "");
+      const attraction = (details ? pickGuidePlaceInDay(day, [details.bestFirstTimers, details.bestAttractions, details.bestUnique]) : "")
+        || day.highlight;
       const dayText = getDaySearchText(day);
       const foodFocused = hbState.appState.foodImportance === "Food is a focus" || hbState.appState.memory === "Food-focused" || hbState.appState.styles.includes("Foodie");
       const looksMealLed = /dinner|lunch|breakfast|restaurant|reservation|food|market|bakery|coffee|cafe/.test(dayText);
       const looksTicketed = /museum|tower|palace|garden|bridge|view|cruise|show|tour|temple|colosseum|forum|acropolis|sagrada|louvre|vatican|gallery/.test(dayText);
 
-      if (foodFocused || looksMealLed) {
+      if (restaurant && (foodFocused || looksMealLed)) {
         return `Reserve ${restaurant} if you want to, then leave enough time for the meal before adding extra stops.`;
+      }
+
+      if (day.templateSlot >= 5) {
+        return `Nothing here needs booking yet; keep the day open for whatever you want more of.`;
       }
 
       if (looksTicketed) {
@@ -944,7 +945,8 @@ function getBlueprintTopPlaces() {
       }
 
       if (index === 0) {
-        return `Save one reliable first meal near ${day.area}; it keeps the opening day from turning into a last-minute search.`;
+        const area = getConfirmedDayArea(day);
+        return `Save one reliable first meal${area ? ` near ${area}` : ""}; it keeps the opening day from turning into a last-minute search.`;
       }
 
       if (index === totalDays - 1) {
@@ -976,25 +978,24 @@ function getBlueprintTopPlaces() {
 
       if (hbState.appState.memory === "Adventurous" || hbState.appState.styles.includes("Adventurous")) {
         const uniquePick = pickGuidePlace(day, [details.bestUnique, details.bestSolo], index, details.bestUnique?.[0] || day.highlight);
-        return `For more discovery, swap in ${uniquePick} without breaking the neighborhood flow.`;
+        return `For more discovery, ${uniquePick} is an optional swap from the guide; check how far it is from the day's other stops first.`;
       }
 
       const flexiblePick = pickGuidePlace(day, [details.bestUnique, details.bestBudget, details.bestSolo], index, day.highlight);
-      return `If the original plan is not quite right, try ${flexiblePick} as a nearby-feeling alternate.`;
+      return `If the original plan is not quite right, ${flexiblePick} is an optional alternative from the guide; check the distance before swapping.`;
     }
 
     function buildDayMustHaveNote(day, index, totalDays) {
       const protectedAnchors = getDayProtectedAnchors(day, index, totalDays);
-      const mustHaves = trimPlanningText(hbState.appState.mustHaves, 86);
       const nonNegotiables = trimPlanningText(hbState.appState.nonNegotiables, 86);
 
       if (protectedAnchors.length) {
         const guideBacked = protectedAnchors.some((anchor) => anchor.source === "guide");
-        const labels = joinGuideItems(protectedAnchors.map((anchor) => anchor.label), "your priority moments");
+        const labels = joinGuideItems(protectedAnchors.map((anchor) => formatInlineAnchorLabel(anchor.label)), "your priority moments");
         return {
           icon: "push_pin",
           label: guideBacked ? "Guide-applied must-have" : "Must-have fit",
-          copy: `Keeps ${labels} in view for this day, then builds nearby stops around them.`
+          copy: `Scheduled in ${day.dayLabel || "this day"}: ${labels}.`
         };
       }
 
@@ -1003,14 +1004,6 @@ function getBlueprintTopPlaces() {
           icon: "rule",
           label: "Things to avoid",
           copy: `When you make changes, keep these in mind: ${nonNegotiables}`
-        };
-      }
-
-      if (mustHaves) {
-        return {
-          icon: "push_pin",
-          label: "Must-have check",
-          copy: `Before you save, make sure this still includes: ${mustHaves}`
         };
       }
 
@@ -1024,20 +1017,26 @@ function getBlueprintTopPlaces() {
 
       const guideSource = buildDestinationGuideSourceName();
       const dayText = getDaySearchText(day);
+      // Name only guide places this day actually schedules; never rotate in one from elsewhere.
       const guidePlace = details
-        ? pickGuidePlace(day, [details.bestFirstTimers, details.bestAttractions, details.bestUnique], index, day.highlight || day.area)
-        : (day.highlight || day.area);
+        ? pickGuidePlaceInDay(day, [details.bestFirstTimers, details.bestAttractions, details.bestUnique])
+        : "";
       const guideMeal = details
-        ? pickGuidePlace(day, [details.bestDinner, details.bestRestaurants, details.bestLunch], index, "")
+        ? pickGuidePlaceInDay(day, [details.bestDinner, details.bestRestaurants, details.bestLunch])
         : "";
       const mealLed = guideMeal && /dinner|lunch|breakfast|restaurant|reservation|food|market|bakery|coffee|cafe/.test(dayText);
+      const area = getConfirmedDayArea(day);
+
+      if (!mealLed && !guidePlace) return null;
 
       return {
         icon: "menu_book",
           label: "From the city guide",
         copy: mealLed
-          ? `From the ${guideSource}: ${guideMeal} is treated as a real anchor, so the rest of the day stays close enough for the meal to matter.`
-          : `From the ${guideSource}: ${guidePlace} helps explain why this day is centered in ${day.area} instead of jumping between unrelated stops.`
+          ? `From the ${guideSource}: ${guideMeal} is treated as a real anchor, so the rest of the day is planned around the meal.`
+          : (area && guidePlace.toLowerCase() === area.toLowerCase()
+            ? `From the ${guideSource}: ${guidePlace} is one of the guide's top picks, so this day stays there instead of crossing the city.`
+            : `From the ${guideSource}: ${guidePlace} is the guide pick this day is built around${area ? `, which is why it stays in ${area}` : ""}.`)
       };
     }
 
@@ -1427,10 +1426,26 @@ function getBlueprintTopPlaces() {
           label: "What matters most",
           value: hbState.appState.mustHaves?.trim() ? "Your must-haves" : hbState.appState.memory,
           detail: hbState.appState.mustHaves?.trim()
-            ? hbState.appState.mustHaves.trim()
+            ? (buildMustHaveScheduleSummary() || hbState.appState.mustHaves.trim())
             : `${hbState.appState.spontaneity} - one of the main planning choices`
         }
       ];
+    }
+
+    // "Eiffel Tower: Day 3 · One memorable dinner: Day 4. Not scheduled yet: Food market."
+    function buildMustHaveScheduleSummary(trip = hbState.currentTrip) {
+      const days = trip?.days || [];
+      if (!days.length) return "";
+      const scheduled = new Map();
+      days.forEach((day, index) => getDayProtectedAnchors(day, index, days.length).forEach((anchor) => {
+        const entry = scheduled.get(anchor.key) || { label: anchor.label, days: [] };
+        entry.days.push(day.dayLabel);
+        scheduled.set(anchor.key, entry);
+      }));
+      const scheduledText = [...scheduled.values()].map((entry) => `${entry.label}: ${entry.days.join(", ")}`).join(" · ");
+      const unscheduled = (trip.unscheduledMustHaves || []).filter((anchor) => !scheduled.has(anchor.key));
+      const unscheduledText = unscheduled.length ? `Not scheduled yet: ${unscheduled.map((anchor) => anchor.label).join(", ")}.` : "";
+      return [scheduledText ? `${scheduledText}.` : "", unscheduledText].filter(Boolean).join(" ");
     }
 
     function getPlanningReadiness() {
@@ -1446,8 +1461,7 @@ function getBlueprintTopPlaces() {
       const destinationIsAmbiguous = destinationVerdict?.kind === "ambiguous";
       const hasGuideData = Boolean(getDestinationGuideEntry() || getDestinationGuideDetails());
       const hasStay = Boolean(hbState.appState.hotelName || hbState.appState.hotelArea);
-      const flightReady = hbState.appState.flightMode !== "have-flights"
-        || Boolean(hbState.appState.arrivalFlight || hbState.appState.departureFlight || hbState.appState.flightNumber || hbState.appState.flightAirline);
+      const flightReady = getFlightPlanStatus().handled;
       const stylesReady = Boolean(hbState.appState.styles?.length);
       const basicsReady = Boolean(destination) && !destinationIsAmbiguous && hasValidDates && adults >= 1;
       const required = [
@@ -1854,7 +1868,7 @@ function getBlueprintTopPlaces() {
       const citySpecificSteps = {
         Paris: {
           reset: { title: "Coffee and pastry stop", copy: "Take a short cafe break nearby so the morning feels like Paris, not just a route between pins." },
-          followThrough: { title: "Rue des Rosiers or river stroll", copy: "Give this side of Paris a little more room with an easy walk before dinner rather than jumping somewhere new." }
+          followThrough: { title: "Side-street or riverside stroll", copy: "Give this side of Paris a little more room with an easy walk before dinner rather than jumping somewhere new." }
         },
         Rome: {
           reset: { title: "Espresso pause in the square", copy: "Stop for a quick espresso nearby so the day keeps its Roman rhythm without feeling rushed." },
@@ -1924,22 +1938,25 @@ function getBlueprintTopPlaces() {
         return timeline;
       }
 
+      // Never pad a day with a kind of stop it already has (a second coffee break, a second stroll).
+      const titles = expanded.map((step) => String(step.title || "").toLowerCase());
+      const hasKind = {
+        reset: titles.some((title) => /coffee|cafe|café|pastry|bakery|espresso|tea\b|breakfast/.test(title)),
+        followThrough: titles.some((title) => /walk|stroll|wander|browse/.test(title))
+      };
+
       if (expanded.length === 3) {
         const firstMinutes = stepMinutes[0];
         const secondMinutes = stepMinutes[1];
         const thirdMinutes = stepMinutes[2];
         const lateMorningMinutes = Math.max(firstMinutes + 90, Math.min(secondMinutes - 60, firstMinutes + 135));
         const midAfternoonMinutes = Math.max(secondMinutes + 120, Math.min(thirdMinutes - 90, secondMinutes + 180));
-        const extraSteps = [
-          buildInsertedTimelineStep("reset", formatTimelineMinutes(lateMorningMinutes), city, area, highlight),
-          buildInsertedTimelineStep("followThrough", formatTimelineMinutes(midAfternoonMinutes), city, area, highlight)
-        ];
 
         return [
           expanded[0],
-          extraSteps[0],
+          ...(hasKind.reset ? [] : [buildInsertedTimelineStep("reset", formatTimelineMinutes(lateMorningMinutes), city, area, highlight)]),
           expanded[1],
-          extraSteps[1],
+          ...(hasKind.followThrough ? [] : [buildInsertedTimelineStep("followThrough", formatTimelineMinutes(midAfternoonMinutes), city, area, highlight)]),
           expanded[2]
         ];
       }
@@ -1958,7 +1975,10 @@ function getBlueprintTopPlaces() {
       if (!largestGap || largestGap.size < 90) return timeline;
 
       const insertMinutes = Math.round((largestGap.start + largestGap.end) / 2 / 15) * 15;
-      const insertKind = largestGap.index === 0 || largestGap.end <= 13 * 60 ? "reset" : "followThrough";
+      const preferredKind = largestGap.index === 0 || largestGap.end <= 13 * 60 ? "reset" : "followThrough";
+      const fallbackKind = preferredKind === "reset" ? "followThrough" : "reset";
+      const insertKind = !hasKind[preferredKind] ? preferredKind : (!hasKind[fallbackKind] ? fallbackKind : "");
+      if (!insertKind) return timeline;
       const insertedStep = buildInsertedTimelineStep(insertKind, formatTimelineMinutes(insertMinutes), city, area, highlight);
 
       return [
@@ -2102,30 +2122,38 @@ function getBlueprintTopPlaces() {
       hbState.appState.journalEntry = hbRefs.formBindings.journalEntry?.value.trim() || "";
     }
 
-    function applyVibeContentToDay(day, index, lastIndex, vibeContent) {
+    // slot is the template's position in the day pool, so overrides follow the template, not the calendar day.
+    // Written days (with their own timeline) keep their title and plan text, which describe the real stops;
+    // the generic vibe copy names areas the day may never visit, so it only shapes the framing there.
+    function applyVibeContentToDay(day, slot, isLastDay, vibeContent) {
       const next = { ...day };
+      const keepWrittenPlan = Array.isArray(day.timeline) && day.timeline.length > 0;
 
-      if (index === 1) {
-        next.title = vibeContent.dayTwoTitle;
+      if (slot === 1) {
         next.rationale = vibeContent.dayTwoRationale;
         next.timeShape = vibeContent.dayTwoTimeShape;
-        next.itemTitle = vibeContent.dayTwoItemTitle;
-        next.itemBody = vibeContent.dayTwoItemBody;
         next.fit = vibeContent.dayTwoFit;
+        if (!keepWrittenPlan) {
+          next.title = vibeContent.dayTwoTitle;
+          next.itemTitle = vibeContent.dayTwoItemTitle;
+          next.itemBody = vibeContent.dayTwoItemBody;
+        }
       }
 
-      if (index === 3) {
-        next.title = vibeContent.signatureTitle;
+      if (slot === 3) {
         next.rationale = vibeContent.signatureRationale;
         next.timeShape = vibeContent.signatureTimeShape;
-        next.itemTitle = vibeContent.signatureItemTitle;
-        next.itemBody = vibeContent.signatureItemBody;
         next.fit = vibeContent.signatureFit;
+        if (!keepWrittenPlan) {
+          next.title = vibeContent.signatureTitle;
+          next.itemTitle = vibeContent.signatureItemTitle;
+          next.itemBody = vibeContent.signatureItemBody;
+        }
       }
 
-      if (index === lastIndex && lastIndex >= 2) {
-        next.itemBody = vibeContent.finalItemBody;
+      if (isLastDay) {
         next.fit = vibeContent.finalFit;
+        if (!keepWrittenPlan) next.itemBody = vibeContent.finalItemBody;
       }
 
       return next;
@@ -2631,8 +2659,7 @@ function getBlueprintTopPlaces() {
       const hasGuideData = Boolean(getDestinationGuideEntry() || getDestinationGuideDetails());
       const saved = hbState.savedDraft;
       const hasStay = Boolean(hbState.appState.hotelName || hbState.appState.hotelArea);
-      const hasFlightTiming = hbState.appState.flightMode !== "have-flights" || Boolean(hbState.appState.arrivalFlight || hbState.appState.departureFlight || hbState.appState.flightNumber);
-      const logisticsReady = hasStay && hasFlightTiming;
+      const logisticsReady = hasStay && getFlightPlanStatus().handled;
       const firstGuideTarget = hasGuideData ? "trip-guide-depth" : "trip-days";
       const topBookingPick = getDestinationGuideDetails()
         ? joinGuideItems(uniqueGuidePlaces(
@@ -2815,9 +2842,8 @@ function getBlueprintTopPlaces() {
       const foodAnchors = anchors.filter((anchor) => anchor.type === "food");
       const sightAnchors = anchors.filter((anchor) => anchor.type === "sight");
       const hasStay = Boolean(hbState.appState.hotelName || hbState.appState.hotelArea);
-      const hasFlightTiming = hbState.appState.flightMode !== "have-flights"
-        || Boolean(hbState.appState.arrivalFlight || hbState.appState.departureFlight || hbState.appState.flightNumber || hbState.appState.flightAirline);
-      const flightReady = hbState.appState.flightMode === "not-needed" || hasFlightTiming;
+      const flightStatus = getFlightPlanStatus();
+      const flightReady = flightStatus.handled;
       const bookingAnchorLabel = joinGuideItems(
         uniqueGuidePlaces(
           foodAnchors.map((anchor) => anchor.label),
@@ -2834,7 +2860,13 @@ function getBlueprintTopPlaces() {
           ready: Boolean(foodAnchors.length),
           title: "Meals to book",
           copy: foodAnchors.length
-            ? `Prioritize ${joinGuideItems(foodAnchors.map((anchor) => anchor.label).slice(0, 2), "the meal that matters most")} before adding extra food stops.`
+            ? (() => {
+                const venue = getDayMealVenue({ timeline: foodAnchors.map((anchor) => ({ title: anchor.stepTitle })) });
+                const goal = formatInlineAnchorLabel(foodAnchors[0].label);
+                return venue
+                  ? `Book ${venue} first; it is the reservation that covers ${goal}.`
+                  : `Prioritize ${joinGuideItems(foodAnchors.map((anchor) => formatInlineAnchorLabel(anchor.label)).slice(0, 2), "the meal that matters most")} before adding extra food stops.`;
+              })()
             : "Review the daily plan for any meals you want to book ahead.",
           cta: "Review days",
           action: "jump-trip-anchor",
@@ -2869,15 +2901,11 @@ function getBlueprintTopPlaces() {
         },
         {
           icon: "flight",
-          status: flightReady ? "Travel timing set" : "Add timing",
+          status: flightStatus.status,
           ready: flightReady,
           title: "Flights and arrival windows",
-          copy: flightReady
-            ? (hbState.appState.flightMode === "not-needed"
-                ? "Flights are not needed for this plan, so we can keep the focus on the destination."
-                : "Arrival and departure timing are enough to keep travel days believable.")
-            : "Add flight number, airline, arrival, or departure timing before booking tight first-day plans.",
-          cta: flightReady ? "Review flights" : "Add flights",
+          copy: flightStatus.copy,
+          cta: flightReady ? "Review flights" : (flightStatus.mode === "need-help" ? "Find flights" : "Add flights"),
           action: "jump-trip-anchor",
           targetId: "trip-flights-section",
           section: "flights"
@@ -2984,43 +3012,45 @@ function getBlueprintTopPlaces() {
       });
     }
 
+    // Classify by the stop's title first (copy is only a fallback), with whole-word matches,
+    // and meals before coffee so "Lunch at Cafe Charlot" is a meal, not a coffee stop.
     function getTimelineStepVisual(step) {
-      const text = `${step?.title || ""} ${step?.copy || ""}`.toLowerCase();
-
-      if (/arrival|hotel|check-?in|flight|land/.test(text)) {
-        return { icon: "luggage", label: "Arrival", accent: "bg-warm text-primary" };
-      }
-      if (/breakfast|bakery|coffee|cafe/.test(text)) {
-        return { icon: "local_cafe", label: "Coffee", accent: "bg-blue-soft text-secondary" };
-      }
-      if (/lunch|dinner|restaurant|meal|tapas|cocktail|bar|food/.test(text)) {
-        return { icon: "restaurant", label: "Meal", accent: "bg-warm text-primary" };
-      }
-      if (/museum|gallery|palace|cathedral|temple|tower|bridge|landmark|sight/.test(text)) {
-        return { icon: "museum", label: "Landmark", accent: "bg-teal-soft text-tertiary" };
-      }
-      if (/walk|stroll|view|viewpoint|park|beach|river|sunset|scenic|overlook/.test(text)) {
-        return { icon: "landscape", label: "Scenic", accent: "bg-blue-soft text-secondary" };
+      const rules = [
+        [/\b(arrival|arrive|check-?in|flight|landing|airport)\b/, { icon: "luggage", label: "Arrival", accent: "bg-warm text-primary" }],
+        [/\b(lunch|dinner|brunch|restaurant|meal|tapas|cocktails?|bar|food|reservation)\b/, { icon: "restaurant", label: "Meal", accent: "bg-warm text-primary" }],
+        [/\b(breakfast|bakery|coffee|cafe|pastry|pastel|espresso|tea)\b/,{ icon: "local_cafe", label: "Coffee", accent: "bg-blue-soft text-secondary" }],
+        [/\b(museum|gallery|palace|cathedral|temple|tower|bridge|landmark|monument|castle)\b/, { icon: "museum", label: "Landmark", accent: "bg-teal-soft text-tertiary" }],
+        [/\b(walk|stroll|wander|views?|viewpoint|park|gardens?|beach|river|riverside|sunset|scenic|overlook|canal)\b/, { icon: "landscape", label: "Scenic", accent: "bg-blue-soft text-secondary" }]
+      ];
+      for (const text of [String(step?.title || "").toLowerCase(), String(step?.copy || "").toLowerCase()]) {
+        const match = rules.find(([pattern]) => pattern.test(text));
+        if (match) return match[1];
       }
       return { icon: "place", label: "Stop", accent: "bg-surface-soft text-secondary" };
     }
 
+    // Badges describe the day's actual schedule: how long it runs and which kinds of stops it contains.
     function buildDayConfidenceSignals(day) {
       const signals = [];
-      const stopCount = day.item?.timeline?.length || 0;
-      const text = `${day.title || ""} ${day.rationale || ""} ${day.item?.body || ""} ${day.weather || ""}`.toLowerCase();
+      const steps = (day.item?.timeline || []).filter((step) => step?.title);
+      const minutes = steps.map((step) => parseTimelineTimeToMinutes(step.time)).filter((value) => value !== null);
+      const span = minutes.length > 1 ? Math.max(...minutes) - Math.min(...minutes) : 0;
+      const kinds = steps.map((step) => getTimelineStepVisual(step).label);
 
-      signals.push(stopCount > 4 ? "Fuller day" : "Easy route");
-      signals.push(day.pace === "Packed" ? "More movement" : "Room to breathe");
+      if (day.pace === "Packed" || steps.length >= 6 || span >= 10 * 60) {
+        signals.push("Fuller day");
+      } else if (steps.length <= 3 || (span && span <= 6 * 60)) {
+        signals.push("Room to breathe");
+      }
 
-      if (/dinner|reservation|restaurant|meal|lunch|food|bakery|market/.test(text)) {
-        signals.push("Meal timing matters");
-      } else if (/museum|gallery|tower|palace|temple|cathedral|ticket/.test(text)) {
+      if (steps.some((step) => /\b(reservation|dinner at)\b/i.test(step.title))) {
+        signals.push("Book the dinner");
+      }
+      if (kinds.includes("Landmark")) {
         signals.push("Ticket timing helps");
-      } else if (/walk|stroll|view|park|beach|river|overlook/.test(text)) {
+      }
+      if (kinds.filter((kind) => kind === "Scenic").length >= 2) {
         signals.push("Good walking day");
-      } else {
-        signals.push("Flexible plans");
       }
 
       return Array.from(new Set(signals)).slice(0, 3);
@@ -3468,7 +3498,7 @@ function getBlueprintTopPlaces() {
           title: `${day.dayLabel}: ${day.area}`,
           copy: `Open the day area in Maps before booking anything that depends on location or travel time.`,
           priority: "Plan route",
-          href: buildGoogleMapsSearchUrl(`${day.area}, ${destination}`),
+          href: buildGoogleMapsSearchUrl(`${day.areas?.[0] || day.area}, ${destination}`),
           cta: "Open map"
         });
       });
@@ -3646,8 +3676,8 @@ function getBlueprintTopPlaces() {
       });
 
       const query = activeStep
-        ? `${activeStep.title}, ${activeDay.area}, ${hbState.appState.destination}`
-        : `${activeDay.area}, ${hbState.appState.destination}`;
+        ? `${activeStep.title}, ${activeDay.areas?.[0] || activeDay.area}, ${hbState.appState.destination}`
+        : `${activeDay.areas?.[0] || activeDay.area}, ${hbState.appState.destination}`;
 
       if (mapShell) {
         mapShell.classList.add("is-trip-map-active");
@@ -3722,20 +3752,11 @@ function getBlueprintTopPlaces() {
       if (!day?.item || profile.key === "balanced") return day;
 
       const next = cloneData(day);
-      const dayContext = index === 0
-        ? "Start this trip with the specific traveler needs visible."
-        : index === totalDays - 1
-          ? "Keep the close practical so the trip ends cleanly."
-        : "Use this day to make the trip feel like yours.";
       const labelPattern = new RegExp(profile.dayLabel.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i");
 
       next.item.label = profile.dayLabel;
       if (!labelPattern.test(next.item.fit || "")) {
         next.item.fit = `${next.item.fit} ${profile.dayLabel}: ${profile.dayNote}`;
-      }
-
-      if (index === 0) {
-        next.rationale = `${next.rationale} ${dayContext}`;
       }
 
       if (profile.key === "budget" && index === 1) {
@@ -3838,6 +3859,111 @@ function getBlueprintTopPlaces() {
       return { open, final };
     }
 
+    // ---- itinerary-logic: pure helpers (sliced by scripts/itinerary-logic.test.mjs) ----
+
+    // Full five-day city sets end on a written closing day; shorter sets (Rome, Tokyo...) end mid-trip.
+    function isClosingTemplate(template, templateCount) {
+      if (!template || templateCount < 5) return false;
+      return /last|final|pack|departure|wind-down|closing|close\b/i.test(`${template.title} ${template.rationale} ${template.timeShape} ${template.itemBody}`);
+    }
+
+    // Split city templates into in-order core days plus the day that closes the trip, falling back to generic templates.
+    function planDayTemplatePool(concreteTemplates, genericTemplates) {
+      if (!concreteTemplates?.length) {
+        return { coreTemplates: genericTemplates.slice(0, 4), closingTemplate: genericTemplates[4] };
+      }
+      const last = concreteTemplates[concreteTemplates.length - 1];
+      if (isClosingTemplate(last, concreteTemplates.length)) {
+        return { coreTemplates: concreteTemplates.slice(0, -1), closingTemplate: last };
+      }
+      return {
+        coreTemplates: [...concreteTemplates, ...genericTemplates.slice(concreteTemplates.length, 4)],
+        closingTemplate: genericTemplates[4]
+      };
+    }
+
+    // Middle days use the core templates in order (then open/flexible days); the closing template is always the last day.
+    function selectDayTemplates({ coreTemplates, closingTemplate, openTemplate, count, buildFlexibleTemplate }) {
+      const middleCount = Math.max(count - 1, 0);
+      const middle = Array.from({ length: middleCount }, (_, index) => {
+        if (coreTemplates[index]) return { template: coreTemplates[index], slot: index };
+        if (index === coreTemplates.length && openTemplate) return { template: openTemplate, slot: 5 };
+        return { template: buildFlexibleTemplate(index), slot: index };
+      });
+      const closing = closingTemplate
+        ? { template: closingTemplate, slot: 4 }
+        : { template: buildFlexibleTemplate(middleCount), slot: middleCount };
+      return [...middle, closing];
+    }
+
+    // A day's area comes from the places it actually visits (title, highlight, stop titles), never from its position.
+    function resolveDayArea(day, areas, city) {
+      const stopText = [day?.title, day?.highlight, ...(Array.isArray(day?.timeline) ? day.timeline.map((step) => step?.title) : [])]
+        .filter(Boolean)
+        .join(" | ")
+        .toLowerCase();
+      const matched = (areas || []).filter(Boolean).filter((area) => area.toLowerCase().split("/")
+        .map((part) => part.trim())
+        .filter((part) => part.length > 2)
+        .some((part) => new RegExp(`(^|[^\\p{L}])${part.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?=$|[^\\p{L}])`, "u").test(stopText)))
+        .slice(0, 2);
+      return matched.length
+        ? { areas: matched, primary: matched[0], label: matched.join(" + "), confirmed: true }
+        : { areas: [], primary: "", label: city || "", confirmed: false };
+    }
+
+    // Each must-have lands only on days whose stops contain it. Trip-level goals ("one memorable dinner",
+    // "a slower final day") go to exactly one day that structurally fits; everything else stays unscheduled.
+    function scheduleMustHaveAnchors(anchors, days) {
+      const byDay = days.map(() => []);
+      const unscheduled = [];
+      const stepsOf = (day) => (day.item?.timeline || []).filter((step) => step?.title);
+      const mark = (anchor, step) => ({ ...anchor, scheduled: true, stepTitle: step?.title || "", stepTime: step?.time || "" });
+
+      (anchors || []).forEach((anchor) => {
+        const exactDays = [];
+        days.forEach((day, index) => {
+          if (!anchor.key) return;
+          const step = stepsOf(day).find((item) => getPlanningAnchorKey(item.title).includes(anchor.key));
+          if (step) exactDays.push({ index, step });
+        });
+        if (exactDays.length) {
+          exactDays.forEach(({ index, step }) => byDay[index].push(mark(anchor, step)));
+          return;
+        }
+
+        const text = String(anchor.label || "").toLowerCase();
+        if (anchor.type === "food" && /dinner|meal|restaurant|reservation/.test(text)) {
+          const dinners = days
+            .map((day, index) => ({ index, slot: day.templateSlot, step: stepsOf(day).find((item) => /^(evening reservation|dinner)\b/i.test(item.title)) }))
+            .filter((candidate) => candidate.step);
+          const pick = dinners.find((candidate) => candidate.slot === 3)
+            || dinners.find((candidate) => /reservation/i.test(candidate.step.title));
+          if (pick) {
+            byDay[pick.index].push(mark(anchor, pick.step));
+            return;
+          }
+        }
+        if (anchor.type === "rest" && /final|last/.test(text) && days.length) {
+          byDay[days.length - 1].push(mark(anchor, null));
+          return;
+        }
+        unscheduled.push(anchor);
+      });
+
+      return { byDay, unscheduled };
+    }
+
+    function buildFlexibleDayTimeline(area) {
+      return [
+        { time: "10:00 AM", title: `Slow start + coffee in ${area}`, copy: "Leave the morning open for a favorite spot or a place you passed earlier in the trip." },
+        { time: "1:00 PM", title: `Lunch in ${area}`, copy: "Pick somewhere nearby instead of crossing the city for a meal." },
+        { time: "3:30 PM", title: "Favorite return or open time", copy: "Go back to a place you loved, follow a local tip, or simply rest." }
+      ];
+    }
+
+    // ---- end itinerary-logic ----
+
     function buildDayData() {
       const city = getCityName();
       const days = getTripLength();
@@ -3911,13 +4037,10 @@ function getBlueprintTopPlaces() {
       ];
 
       const count = Math.max(days, 3);
-      const templatePool = concreteTemplates
-        ? [...concreteTemplates, ...dayTemplates.slice(concreteTemplates.length)]
-        : dayTemplates;
-      const selectedTemplates = Array.from({ length: count }, (_, index) => templatePool[index] || {
+      const buildFlexibleTemplate = (index) => ({
         title: `Flexible day in ${areas[index % areas.length]}`,
         rationale: `Keep this day centered on one area and let the trip respond to energy, weather, and the experiences that still feel worth adding.`,
-        highlight: dayHighlights[index % dayHighlights.length] || `Local time in ${areas[index % areas.length]}`,
+        highlight: `Local time in ${areas[index % areas.length]}`,
         timeShape: "Flexible and easy to adjust",
         weather: "Keep the day open enough to follow local advice and make changes without breaking the trip.",
         itemTitle: `Local time in ${areas[index % areas.length]}`,
@@ -3925,13 +4048,25 @@ function getBlueprintTopPlaces() {
         fit: `It keeps a longer trip from becoming repetitive or overpacked.`,
         timeline: null
       });
-      return selectedTemplates.map((sourceDay, index) => {
-        const area = areas[Math.min(index, areas.length - 1)];
-        const baseDay = index === 0 ? normalizeFirstDayTemplate(sourceDay, area) : { ...sourceDay };
-        const day = applyVibeContentToDay(baseDay, index, count - 1, vibeContent);
-        const dayLead = index === 0 ? "Morning" : index === 3 ? "Evening" : "Midday";
-        const resolvedTimeline = day.timeline || timelineTemplates[Math.min(index, timelineTemplates.length - 1)];
-        const normalizedTimeline = index === 0 ? normalizeFirstDayTimeline(resolvedTimeline, area) : resolvedTimeline;
+      const selectedTemplates = selectDayTemplates({
+        ...planDayTemplatePool(concreteTemplates, dayTemplates),
+        openTemplate: dayTemplates[5],
+        count,
+        buildFlexibleTemplate
+      });
+      const builtDays = selectedTemplates.map(({ template: sourceDay, slot }, index) => {
+        const isLastDay = index === count - 1;
+        // Open and flexible days (slot 5+) get an open-ended timeline; the later generic templates end in packing.
+        const sourceTimeline = sourceDay.timeline || (slot >= 5
+          ? buildFlexibleDayTimeline(resolveDayArea(sourceDay, areas, city).label)
+          : timelineTemplates[Math.min(slot, timelineTemplates.length - 1)]);
+        let areaInfo = resolveDayArea({ ...sourceDay, timeline: sourceTimeline }, areas, city);
+        const baseDay = index === 0 ? normalizeFirstDayTemplate(sourceDay, areaInfo.primary || areas[0]) : { ...sourceDay };
+        const day = applyVibeContentToDay(baseDay, slot, isLastDay, vibeContent);
+        const dayLead = slot === 0 ? "Morning" : slot === 3 ? "Evening" : "Midday";
+        const normalizedTimeline = index === 0 ? normalizeFirstDayTimeline(sourceTimeline, areaInfo.primary || areas[0]) : sourceTimeline;
+        if (index === 0) areaInfo = resolveDayArea({ ...sourceDay, timeline: normalizedTimeline }, areas, city);
+        const area = areaInfo.label;
         const finalTimeline = expandTimelineSteps(normalizedTimeline, city, area, day.highlight);
 
         const generatedDay = {
@@ -3939,12 +4074,15 @@ function getBlueprintTopPlaces() {
           dayLabel: `Day ${index + 1}`,
           date: formatDate(addLocalDays(hbState.appState.startDate, index)),
           area,
+          areaConfirmed: areaInfo.confirmed,
+          areas: areaInfo.areas,
+          templateSlot: slot,
           pace: index === 0 && hbState.appState.pace === "Packed" ? "Balanced" : hbState.appState.pace,
           item: {
             title: `${dayLead} • ${day.itemTitle}`,
             body: day.itemBody,
             fit: day.fit,
-            label: index === 2 ? "Crowd-loved + fit" : "Personalized",
+            label: slot === 2 ? "Crowd-loved + fit" : "Personalized",
             timeline: finalTimeline,
             removed: false,
             alternatives: [
@@ -3965,14 +4103,18 @@ function getBlueprintTopPlaces() {
           },
           ...day
         };
-        const qualityDay = applyTripQualityToDay(generatedDay, index, count, city);
-        qualityDay.protectedAnchors = buildDayProtectedAnchorMatches(qualityDay, index, count);
-        return qualityDay;
+        return applyTripQualityToDay(generatedDay, index, count, city);
       });
+      const schedule = scheduleMustHaveAnchors(getProtectedMustHaveAnchors(), builtDays);
+      builtDays.forEach((day, index) => {
+        day.protectedAnchors = schedule.byDay[index];
+      });
+      return { days: builtDays, unscheduledMustHaves: schedule.unscheduled };
     }
 
     function buildGeneratedTrip() {
       const city = getCityName();
+      const dayData = buildDayData();
       return {
         title: buildTripTitle(city),
         summary: buildTripSummary(city),
@@ -3980,7 +4122,8 @@ function getBlueprintTopPlaces() {
         signature: buildSignatureEvent(city),
         flightCard: buildFlightCard(),
         stayCard: buildStayCard(city),
-        days: buildDayData()
+        days: dayData.days,
+        unscheduledMustHaves: dayData.unscheduledMustHaves
       };
     }
 
@@ -5652,6 +5795,7 @@ function getBlueprintTopPlaces() {
             </div>
           </div>
 
+          ${buildDayConfidenceSignals(day).length ? `
           <div class="trip-day-confidence mt-3">
             <p class="trip-day-confidence-label">At a glance</p>
             <div class="trip-day-confidence-list">
@@ -5660,6 +5804,7 @@ function getBlueprintTopPlaces() {
               `).join("")}
             </div>
           </div>
+          ` : ""}
 
           <div class="trip-day-edit-hint mt-3">
             <span class="material-symbols-outlined" aria-hidden="true">edit_calendar</span>
@@ -6075,6 +6220,7 @@ function getBlueprintTopPlaces() {
     }
 
 Object.assign(hbUtils, {
+  getFlightPlanStatus,
   buildFlightCard,
   buildStayCard,
   renderDestinationStoryBands,

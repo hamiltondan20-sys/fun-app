@@ -1,12 +1,20 @@
 window.HB_APP = window.HB_APP || {};
 
 (function initializeHBAppNamespace(ns) {
+  // Suggested dates always sit in the future: a week-long trip starting about a month out.
+  function getSuggestedTripDate(daysFromToday) {
+    const date = new Date();
+    date.setHours(12, 0, 0, 0);
+    date.setDate(date.getDate() + daysFromToday);
+    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
+  }
+
   const state = {
     appState: {
       mode: "simple",
       destination: "Paris, France",
-      startDate: "2026-09-14",
-      endDate: "2026-09-20",
+      startDate: getSuggestedTripDate(30),
+      endDate: getSuggestedTripDate(36),
       datesFlexible: false,
       adults: 2,
       children: 0,

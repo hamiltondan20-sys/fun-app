@@ -749,8 +749,7 @@ function updatePrimaryCta() {
       const destinationVerdict = window.HB_COVERAGE?.resolveDestination?.(destination);
       const destinationIsAmbiguous = destinationVerdict?.kind === "ambiguous";
       const hasStay = Boolean(hbState.appState.hotelName || hbState.appState.hotelArea);
-      const flightReady = hbState.appState.flightMode !== "have-flights"
-        || Boolean(hbState.appState.arrivalFlight || hbState.appState.departureFlight || hbState.appState.flightNumber || hbState.appState.flightAirline);
+      const flightReady = Boolean(hbUtils.getFlightPlanStatus?.().handled);
       const required = [
         {
           id: "destination-choice",
@@ -2939,6 +2938,8 @@ function updatePrimaryCta() {
     window.addEventListener("resize", scheduleEditorialStickyBarsUpdate, { passive: true });
     window.addEventListener("resize", syncBottomContentPadding, { passive: true });
 
+    hbRefs.formBindings.startDate.value = hbState.appState.startDate;
+    hbRefs.formBindings.endDate.value = hbState.appState.endDate;
     restoreGuideBrowseMemory();
     applyPlannerDestinationDeepLink();
     hydrateTripProfile();
