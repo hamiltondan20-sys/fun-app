@@ -5685,7 +5685,7 @@ function getBlueprintTopPlaces() {
                             <div class="timeline-time">${step.time}</div>
                           </div>
                           <div class="timeline-step-kind ${getTimelineStepVisual(step).accent}">
-                            <span class="material-symbols-outlined text-[1rem]">${getTimelineStepVisual(step).icon}</span>
+                            <span class="material-symbols-outlined text-[1rem]" aria-hidden="true">${getTimelineStepVisual(step).icon}</span>
                             <span>${getTimelineStepVisual(step).label}</span>
                           </div>
                         </div>

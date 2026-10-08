@@ -11,7 +11,8 @@ const html = fs.readFileSync(path.join(root, "plan/index.html"), "utf8");
 test("planner references resolve through its base at project and custom-domain roots", () => {
   const baseHref = html.match(/<base\s+href="([^"]+)"/)[1];
   const references = [...html.replace(/<base\b[^>]*>/, "")
-    .matchAll(/(?:href|src)="(\.\.?\/[^"?#]*)(?:[^"]*)"/g)];
+    .matchAll(/(?:href|src)="(\.\.?\/[^"?#]*)(?:[^"]*)"|"(\.\/(?:scripts|data)\/[^"?#]+\.js)\?v=[^"]*"/g)]
+    .map(([match, attribute, loaderScript]) => [match, attribute || loaderScript]);
   for (const page of ["https://example.com/fun-app/plan/", "https://example.com/plan/"]) {
     const base = new URL(baseHref, page);
     for (const [, reference] of references) {

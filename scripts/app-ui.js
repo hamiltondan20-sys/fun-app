@@ -1077,7 +1077,8 @@ function updatePrimaryCta() {
       const queryRoute = new URLSearchParams(window.location.search).get("route") || "";
       const rawRoute = rawHash || queryRoute;
       if (!rawRoute) {
-        setActivePanel("build-panel", { updateHash: false });
+        // Plain /plan/ visits start at the top so the intro is visible; no jump after scripts load.
+        setActivePanel("build-panel", { updateHash: false, keepScroll: true });
         return;
       }
 
@@ -1489,7 +1490,7 @@ function updatePrimaryCta() {
     }
 
     function setActivePanel(targetId, options = {}) {
-      const { updateHash = true, focusTargetId = "" } = options;
+      const { updateHash = true, focusTargetId = "", keepScroll = false } = options;
       rememberGuidePanelScroll();
       hbState.activePanelId = targetId;
       document.body.dataset.surface = targetId;
@@ -1516,8 +1517,10 @@ function updatePrimaryCta() {
         else tab.removeAttribute("aria-current");
       });
 
+      // Only the four numbered tabs are steps; Explore and Saved are places.
+      const stepPanels = ["build-panel", "details-panel", "blueprint-panel", "trip-panel"];
       hbRefs.tabs.forEach((tab) => {
-        if (tab.dataset.target === targetId) tab.setAttribute("aria-current", "step");
+        if (tab.dataset.target === targetId) tab.setAttribute("aria-current", stepPanels.includes(targetId) ? "step" : "page");
         else tab.removeAttribute("aria-current");
       });
 
@@ -1536,7 +1539,7 @@ function updatePrimaryCta() {
       saveGuideBrowseMemory();
       if (focusTargetId) {
         focusEditableTripDetail(focusTargetId);
-      } else {
+      } else if (!keepScroll) {
         restoreGuidePanelScroll(targetId);
       }
       if (updateHash) {
@@ -2958,9 +2961,11 @@ function updatePrimaryCta() {
     renderPanelContent("build-panel");
     applyHashRoute();
     window.requestAnimationFrame(applyHashRoute);
-    window.addEventListener("load", applyHashRoute, { once: true });
-    window.addEventListener("load", updateEditorialStickyBars, { once: true });
-    window.addEventListener("load", syncEditorialStickyObserver, { once: true });
+    // Scripts now load after first paint, so the window load event may already have fired.
+    [applyHashRoute, updateEditorialStickyBars, syncEditorialStickyObserver].forEach((handler) => {
+      if (document.readyState === "complete") window.setTimeout(handler, 0);
+      else window.addEventListener("load", handler, { once: true });
+    });
 
     Object.assign(hbUtils, {
       updatePrimaryCta,

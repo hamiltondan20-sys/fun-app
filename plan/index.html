@@ -26,7 +26,7 @@
     rel="stylesheet"
   />
   <link href="./assets/app.css?v=20260830e" rel="stylesheet" />
-  <link href="./assets/app-inline.css?v=20261007layout" rel="stylesheet" />
+  <link href="./assets/app-inline.css?v=20261007p3" rel="stylesheet" />
 </head>
 <body class="text-ink">
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -169,17 +169,17 @@
           <button class="stage-tab rounded-full px-4 py-2 text-sm font-semibold text-muted" data-target="explore-panel">
             Explore
           </button>
-          <button class="stage-tab rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary shadow-sm" data-target="build-panel">
-            Build
+          <button class="stage-tab rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary shadow-sm" data-target="build-panel" aria-label="Step 1 of 4: Build">
+            1. Build
           </button>
-          <button class="stage-tab rounded-full px-4 py-2 text-sm font-semibold text-muted" data-target="details-panel">
-            Details
+          <button class="stage-tab rounded-full px-4 py-2 text-sm font-semibold text-muted" data-target="details-panel" aria-label="Step 2 of 4: Preferences">
+            2. Preferences
           </button>
-          <button class="stage-tab rounded-full px-4 py-2 text-sm font-semibold text-muted" data-target="blueprint-panel">
-            Review
+          <button class="stage-tab rounded-full px-4 py-2 text-sm font-semibold text-muted" data-target="blueprint-panel" aria-label="Step 3 of 4: Review">
+            3. Review
           </button>
-          <button class="stage-tab rounded-full px-4 py-2 text-sm font-semibold text-muted" data-target="trip-panel">
-            Your Trip
+          <button class="stage-tab rounded-full px-4 py-2 text-sm font-semibold text-muted" data-target="trip-panel" aria-label="Step 4 of 4: Your trip">
+            4. Your Trip
           </button>
           <button class="stage-tab rounded-full px-4 py-2 text-sm font-semibold text-muted" data-target="saved-panel">
             Saved
@@ -1140,7 +1140,7 @@
 
           <div class="mt-4 rounded-[22px] border border-line bg-warm px-4 py-4 ring-1 ring-warm-line">
             <div class="flex items-start gap-3">
-              <span class="material-symbols-outlined text-primary">rule</span>
+              <span class="material-symbols-outlined text-primary" aria-hidden="true">rule</span>
               <div>
                 <p class="text-xs font-semibold uppercase tracking-[0.14em] text-primary">Preferences and must-avoids</p>
                 <p class="mt-2 text-sm leading-6 text-muted">Preferences guide the shape of the trip. Non-negotiables are rules the plan must respect, like accessibility needs, dietary limits, firm budgets, or avoid lists.</p>
@@ -1297,7 +1297,7 @@
 
             <div class="rounded-[24px] bg-warm px-4 py-4 ring-1 ring-warm-line">
               <div class="flex items-start gap-3">
-                <span class="material-symbols-outlined text-primary">auto_awesome</span>
+                <span class="material-symbols-outlined text-primary" aria-hidden="true">auto_awesome</span>
                 <div>
                   <h4 class="font-display text-lg font-bold">Not sure yet?</h4>
                   <p class="mt-1 text-sm leading-6 text-muted">
@@ -1452,7 +1452,7 @@
 
       <section class="page-panel itinerary-surface mt-6" id="trip-panel" aria-labelledby="trip-title">
         <div id="trip-card" class="trip-top-card rounded-[30px] border border-line bg-white p-5 shadow-float">
-          <p class="text-xs font-semibold uppercase tracking-[0.24em] text-primary">Your Trip</p>
+          <p class="text-xs font-semibold uppercase tracking-[0.24em] text-primary">Step 4 of 4 · Your trip</p>
           <div class="trip-top-header mt-2">
             <div class="trip-top-copy">
               <h3 id="trip-title" class="font-display text-[1.9rem] font-extrabold leading-tight"></h3>
@@ -1677,7 +1677,7 @@
 
           <div id="trip-flights-section" class="trip-support-card trip-collapsible-panel mt-6" data-trip-section="flights">
             <div class="trip-support-card-shell">
-              <span class="trip-support-icon material-symbols-outlined">flight</span>
+              <span class="trip-support-icon material-symbols-outlined" aria-hidden="true">flight</span>
               <div class="trip-support-body">
                 <div class="trip-collapsible-head">
                   <div>
@@ -1706,7 +1706,7 @@
 
           <div id="trip-stay-section" class="trip-support-card trip-collapsible-panel mt-6" data-trip-section="stay">
             <div class="trip-support-card-shell">
-              <span class="trip-support-icon material-symbols-outlined">bed</span>
+              <span class="trip-support-icon material-symbols-outlined" aria-hidden="true">bed</span>
               <div class="trip-support-body">
                 <div class="trip-collapsible-head">
                   <div>
@@ -2050,19 +2050,30 @@
     </div>
   </aside>
 
-    <script defer src="./scripts/site-config.js?v=20260913a"></script>
-    <script defer src="./data/destinations.js?v=20260912a"></script>
-    <script defer src="./data/country-guides.js?v=20260629j"></script>
-    <script defer src="./data/city-guides.js?v=20260830b"></script>
-    <script defer src="./data/trip-content.js?v=20260912b"></script>
-    <script defer src="./data/top-100-destinations.js?v=20260912a"></script>
-    <script defer src="./data/destination-expansion.js?v=20260912a"></script>
-    <script defer src="./data/destination-coverage.js?v=20260912b"></script>
     <script defer src="./scripts/app-analytics.js?v=20261005privacy"></script>
-    <script defer src="./scripts/app-bootstrap.js?v=20261007layout"></script>
-    <script defer src="./scripts/app-foundation.js?v=20260830c"></script>
-    <script defer src="./scripts/app-guides.js?v=20260912d"></script>
-  <script defer src="./scripts/app-trip.js?v=20261007layout"></script>
-  <script defer src="./scripts/app-ui.js?v=20261007layout"></script>
+    <script>
+      // Load the planner after the page shell has painted, so visitors never see a blank screen
+      // while ~1 MB of guide data parses. async=false keeps execution in this exact order.
+      [
+        "./scripts/site-config.js?v=20260913a",
+        "./data/destinations.js?v=20260912a",
+        "./data/country-guides.js?v=20260629j",
+        "./data/city-guides.js?v=20260830b",
+        "./data/trip-content.js?v=20260912b",
+        "./data/top-100-destinations.js?v=20260912a",
+        "./data/destination-expansion.js?v=20260912a",
+        "./data/destination-coverage.js?v=20260912b",
+        "./scripts/app-bootstrap.js?v=20261007layout",
+        "./scripts/app-foundation.js?v=20260830c",
+        "./scripts/app-guides.js?v=20260912d",
+        "./scripts/app-trip.js?v=20261007p3",
+        "./scripts/app-ui.js?v=20261007p3"
+      ].forEach(function (src) {
+        var script = document.createElement("script");
+        script.src = src;
+        script.async = false;
+        document.body.appendChild(script);
+      });
+    </script>
 </body>
 </html>

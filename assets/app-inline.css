@@ -2548,6 +2548,24 @@
       padding: 0 0.95rem 0.95rem;
     }
 
+    /* The planner always sits in a 40rem column, so window-width breakpoints must not split it into columns. */
+    .app-shell .homepage-hero-grid,
+    .app-shell .homepage-trip-notes,
+    .app-shell .saved-dashboard-layout,
+    .app-shell .trip-day-planner-notes,
+    .app-shell .trip-day-anchor-grid,
+    .app-shell .destination-depth-grid {
+      grid-template-columns: minmax(0, 1fr) !important;
+    }
+
+    .app-shell #build-panel > div {
+      display: block !important;
+    }
+
+    .app-shell #build-panel > div > * + * {
+      margin-top: 1.25rem !important;
+    }
+
     /* The planner intro belongs to the first step only; later steps start with the step itself. */
     body[data-surface="details-panel"] .homepage-hero,
     body[data-surface="details-panel"] .homepage-trip-notes,
