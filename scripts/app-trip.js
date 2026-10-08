@@ -2423,6 +2423,11 @@ function getBlueprintTopPlaces() {
         activeTripSource: payload.activeTripSource || { type: "live", versionId: "", name: "" }
       };
       const profilePayload = payload.storage?.profile || payload.tripProfile || {};
+      // Named versions can be newer than the last saved draft. Restore the
+      // export-time list into persistent storage as well as the active state.
+      if (Array.isArray(payload.alternateTrips)) {
+        draftPayload.alternateTrips = cloneData(payload.alternateTrips);
+      }
       const bookingPayload = payload.storage?.booking || {
         savedAt: payload.exportedAtLabel || formatDraftSavedAt(),
         destination: payload.appState?.destination || hbState.appState.destination,

@@ -45,9 +45,13 @@ test("restore accepts an old-brand backup with its legacy filename", () => {
   context.legacyFile = {
     name: "horizon-bound-paris-backup.json",
     content: JSON.stringify({ type: "local-account-backup", product: "Horizon Bound",
-      appState: { destination: "Paris, France" }, tripProfile: { name: "Test traveler" } })
+      appState: { destination: "Paris, France" }, tripProfile: { name: "Test traveler" },
+      alternateTrips: [{ id: "newer-version", name: "Named newer version", trip: { days: [{ title: "Edited day" }] } }],
+      storage: { draft: { appState: { destination: "Paris, France" }, alternateTrips: [] } } })
   };
   vm.runInContext("importLocalAccountBackup(legacyFile)", context);
   assert.equal(context.hbState.localAccountFeedback, "Backup restored on this browser");
   assert.equal(JSON.parse(storage.get("draft")).appState.destination, "Paris, France");
+  assert.equal(context.hbState.alternateTrips[0].name, "Named newer version");
+  assert.equal(JSON.parse(storage.get("draft")).alternateTrips[0].trip.days[0].title, "Edited day");
 });

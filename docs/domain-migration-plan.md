@@ -3,6 +3,23 @@
 Refreshed October 7, 2026. Planning only: no domain, DNS, site configuration,
 canonical, email address or sitemap has been changed.
 
+## Latest prerequisite results
+
+October 7: a real cross-origin test found named versions lost when an older
+stored draft had an empty version list. The local importer fix now restores the
+export-time list into active state and persistent storage. Retesting passed
+import, reload, Restore draft and exact full-version re-export comparison.
+See docs/backup-migration-test-2026-10-07.md. Deployment approval is still pending.
+
+Porkbun's live exact-domain search lists thefullestlifetravel.com as available:
+USD 11.08 for one year, renewal USD 11.08/year at today's rate. Its public
+non-premium price table includes ICANN and other fees. Future renewal rates can
+change; this is not a guaranteed lifetime price or a completed checkout.
+Sources: https://porkbun.com/checkout/search?q=thefullestlifetravel.com and
+https://porkbun.com/products/domains. No cart addition or purchase was made.
+User price acceptance, deployment of the backup fix and coordinated cutover
+approval remain required. No domain configuration is authorized by these tests.
+
 ## October 7 decision checkpoint
 
 Current build: 189 destination guides, 19 country hubs, 217 sitemap URLs.
