@@ -284,6 +284,7 @@ window.HB_DATA.destinationFacts = {
 window.HB_TRIP_HELPERS.getAreaSet = function(city) {
       const map = {
         Paris: ["Le Marais", "Saint-Germain", "Eiffel / Left Bank"],
+        Berlin: ["Scheunenviertel", "Museum Island", "Bernauer Strasse", "Kreuzberg", "Friedrichshain", "Charlottenburg", "City West", "Schoeneberg", "Tempelhof"],
         Lisbon: ["Baixa", "Chiado", "Alfama"],
         Rome: ["Centro Storico", "Trastevere", "Monti"],
         Tokyo: ["Shinjuku", "Asakusa", "Ginza"],
@@ -887,6 +888,108 @@ window.HB_TRIP_HELPERS.getConcreteTripTemplates = function(city, areas) {
               { time: "10:00 AM", title: "Pastry at Du Pain et des Idees", copy: "Start the last day with something memorable enough that it still feels like part of the trip, not only the wind-down." },
               { time: "1:00 PM", title: "Lunch at Le Verre Vole", copy: "Keep lunch in the same pocket of the city so the closing stretch stays easy." },
               { time: "4:00 PM", title: "Canal Saint-Martin walk", copy: "Use one last neighborhood walk to close the trip before heading back to pack." }
+            ]
+          }
+        ],
+        // Berlin: every named stop is a places-registry entry (data/places.js) checked against the
+        // operator's own site on 2026-10-06. Meals and gaps without a reviewed pick are free time,
+        // not invented venues. Opening hours for specific dates are not confirmed here.
+        Berlin: [
+          {
+            title: "Scheunenviertel breakfast and Museum Island",
+            rationale: "The first day stays within a short walk: brunch on Auguststrasse, then two museums beside the Spree.",
+            highlight: "Neues Museum",
+            timeShape: "Two museums, short walks between them",
+            weather: "Neues Museum's published entrance is the James Simon Galerie on Bodestrasse. Check opening days for your dates before you go.",
+            itemTitle: "House of Small Wonder + Neues Museum + DDR Museum",
+            itemBody: "Start with brunch at House of Small Wonder on Auguststrasse, walk to Museum Island for Neues Museum, then finish at the DDR Museum by the river. Lunch is your choice nearby.",
+            fit: "Everything is within about a kilometre, so the day is about the museums rather than getting between them.",
+            timeline: [
+              { time: "9:00 AM", title: "Brunch at House of Small Wonder", copy: "Use the current Auguststrasse 11-13 address. The operator warns that picking the name in a ride app can send you to its closed former branch.", placeId: "plc_berlin_house-of-small-wonder-auguststrasse" },
+              { time: "10:30 AM", title: "Neues Museum", copy: "Enter through the James Simon Galerie on Bodestrasse. Allow at least two hours.", placeId: "plc_berlin_neues-museum" },
+              { time: "1:00 PM", title: "Lunch near Museum Island (your choice)", copy: "This plan has no reviewed lunch pick here yet, so choose something nearby that suits you.", kind: "flexible" },
+              { time: "3:00 PM", title: "DDR Museum", copy: "On Karl-Liebknecht-Strasse by the Spree. Access from the river promenade has stairs or a steep ramp.", placeId: "plc_berlin_ddr-museum" },
+              { time: "5:00 PM", title: "Free evening", copy: "Nothing is scheduled. Rest after two museums, or explore at your own pace.", kind: "flexible" }
+            ]
+          },
+          {
+            title: "Wall history on Bernauer Strasse",
+            rationale: "The Berlin Wall Memorial gets a full morning, with a natural history museum close by for the afternoon.",
+            highlight: "Berlin Wall Memorial",
+            timeShape: "Outdoor history in the morning, museum in the afternoon",
+            weather: "The memorial is largely outdoors; dress for the weather. Check the museum's opening days for your dates.",
+            itemTitle: "THE BARN + Berlin Wall Memorial + Museum fuer Naturkunde",
+            itemBody: "Coffee at THE BARN's Auguststrasse branch, then the outdoor and indoor exhibitions along Bernauer Strasse, then the Museum fuer Naturkunde on Invalidenstrasse.",
+            fit: "The two main stops are about a kilometre apart, so the day has depth without crossing the city.",
+            timeline: [
+              { time: "9:00 AM", title: "Coffee at THE BARN (Mitte)", copy: "The Mitte branch at Auguststrasse 58, not another location.", placeId: "plc_berlin_the-barn-mitte" },
+              { time: "10:00 AM", title: "Berlin Wall Memorial", copy: "The historical site on Bernauer Strasse. Leave time for both the outdoor grounds and the indoor exhibitions.", placeId: "plc_berlin_berlin-wall-memorial" },
+              { time: "1:00 PM", title: "Lunch near Bernauer Strasse (your choice)", copy: "No reviewed lunch pick here yet; choose something nearby.", kind: "flexible" },
+              { time: "2:30 PM", title: "Museum fuer Naturkunde", copy: "At Invalidenstrasse 43. Workshops and special events need their own date checks.", placeId: "plc_berlin_museum-fuer-naturkunde-berlin" },
+              { time: "5:00 PM", title: "Free evening", copy: "Nothing is scheduled.", kind: "flexible" }
+            ]
+          },
+          {
+            title: "Charlottenburg Palace and City West",
+            rationale: "A western day: the palace in the morning, the zoo after lunch, and drinks in Schoeneberg.",
+            highlight: "Charlottenburg Palace (Old Palace)",
+            timeShape: "Palace morning, zoo afternoon, evening drinks",
+            weather: "The palace and zoo are about 3.4 km apart in a straight line: take public transport or a taxi between them. Palace areas have separate admission.",
+            itemTitle: "Charlottenburg Palace + Zoo Berlin + Green Door Bar",
+            itemBody: "Visit the Old Palace at Charlottenburg, take transit to Zoo Berlin at Hardenbergplatz, and end with drinks at Green Door Bar on Winterfeldtstrasse.",
+            fit: "Each stop is a separate journey, so the day keeps to three of them instead of adding more.",
+            timeline: [
+              { time: "10:00 AM", title: "Charlottenburg Palace (Old Palace)", copy: "Spandauer Damm 10-22. Other palace areas have different admission and access.", placeId: "plc_berlin_charlottenburg-palace-old-palace" },
+              { time: "12:30 PM", title: "Lunch near the palace (your choice)", copy: "No reviewed lunch pick here yet.", kind: "flexible" },
+              { time: "2:00 PM", title: "Zoo Berlin", copy: "About 3.4 km from the palace in a straight line: use public transport or a taxi. Aquarium admission is not assumed to be included.", placeId: "plc_berlin_zoo-berlin" },
+              { time: "7:00 PM", title: "Drinks at Green Door Bar", copy: "An evening cocktail bar on Winterfeldtstrasse, not a family meal. About 1.6 km from the zoo in a straight line.", placeId: "plc_berlin_green-door-bar" }
+            ]
+          },
+          {
+            title: "East Side Gallery and a Kreuzberg dinner",
+            rationale: "This is the food-led day: the Wall art in the morning, a market lunch, and the trip's reserved dinner.",
+            highlight: "Restaurant Tim Raue",
+            timeShape: "Outdoor morning, market lunch, booked dinner",
+            weather: "Book Restaurant Tim Raue in advance. Markthalle Neun's stalls keep different hours from the hall itself.",
+            itemTitle: "East Side Gallery + Markthalle Neun + Restaurant Tim Raue",
+            itemBody: "Walk the East Side Gallery along Muehlenstrasse, cross to Kreuzberg for lunch at Markthalle Neun, and finish with dinner at Restaurant Tim Raue.",
+            fit: "The gallery and market are under a kilometre apart; dinner is about 2.8 km west, so plan transit for the evening.",
+            timeline: [
+              { time: "10:00 AM", title: "East Side Gallery", copy: "The outdoor wall-art site on Muehlenstrasse, about 1.3 km long. Allow time to walk it.", placeId: "plc_berlin_east-side-gallery" },
+              { time: "12:30 PM", title: "Lunch at Markthalle Neun", copy: "Eisenbahnstrasse 42/43. Check the market calendar: an open hall does not mean every stall is serving.", placeId: "plc_berlin_markthalle-neun" },
+              { time: "2:30 PM", title: "Free afternoon in Kreuzberg", copy: "Nothing is scheduled. Rest before dinner or explore nearby.", kind: "flexible" },
+              { time: "7:30 PM", title: "Dinner at Restaurant Tim Raue", copy: "Reserve ahead. Rudi-Dutschke-Strasse 26, about 2.8 km from the market. Lunch service is not assumed.", placeId: "plc_berlin_restaurant-tim-raue" }
+            ]
+          },
+          {
+            title: "Technology museum, Tempelhofer Feld and a Kreuzberg dinner",
+            rationale: "A museum morning, open space in the afternoon, and a second booked dinner.",
+            highlight: "Tempelhofer Feld",
+            timeShape: "Museum, open space, booked dinner",
+            weather: "Some Technikmuseum galleries are currently inaccessible; check the ones you want first. Tempelhofer Feld has seasonal gate hours and several entrances.",
+            itemTitle: "Deutsches Technikmuseum + Tempelhofer Feld + Nobelhart & Schmutzig",
+            itemBody: "Start at the Deutsches Technikmuseum, spend the afternoon on Tempelhofer Feld, and end with dinner at Nobelhart & Schmutzig on Friedrichstrasse.",
+            fit: "Each move is around 3 km, so use public transport between stops and keep the rest of the day open.",
+            timeline: [
+              { time: "10:00 AM", title: "Deutsches Technikmuseum", copy: "Trebbiner Strasse 9. Photography, film and chemistry/pharmacy exhibitions are currently inaccessible; Spectrum uses a different entrance.", placeId: "plc_berlin_deutsches-technikmuseum" },
+              { time: "1:00 PM", title: "Lunch near Gleisdreieck (your choice)", copy: "No reviewed lunch pick here yet.", kind: "flexible" },
+              { time: "3:00 PM", title: "Tempelhofer Feld", copy: "Free entry. Use the operator's entrance map and current gate hours; development work can close some areas.", placeId: "plc_berlin_tempelhofer-feld" },
+              { time: "7:30 PM", title: "Dinner at Nobelhart & Schmutzig", copy: "Reserve ahead. Friedrichstrasse 218. Its published hours disagree between pages, so confirm when booking.", placeId: "plc_berlin_nobelhart-und-schmutzig" }
+            ]
+          },
+          {
+            title: "Last morning in Scheunenviertel",
+            rationale: "The final day keeps one named stop and leaves the rest for packing and the journey home.",
+            highlight: "Zeit fuer Brot (Alte Schoenhauser Strasse)",
+            timeShape: "Light, with room to pack",
+            weather: "Leave enough time for checkout and travel to the airport or station.",
+            itemTitle: "Zeit fuer Brot + a last walk",
+            itemBody: "Breakfast at Zeit fuer Brot on Alte Schoenhauser Strasse, a last unplanned walk, then packing and departure.",
+            fit: "It ends the trip with a specific place without squeezing in another big visit before you leave.",
+            timeline: [
+              { time: "9:00 AM", title: "Breakfast at Zeit fuer Brot", copy: "The Alte Schoenhauser Strasse 4 bakery.", placeId: "plc_berlin_zeit-fuer-brot-alte-schoenhauser-strasse" },
+              { time: "10:30 AM", title: "Last walk in Scheunenviertel", copy: "Unplanned time on foot before you leave.", kind: "flexible" },
+              { time: "12:00 PM", title: "Pack and travel", copy: "Keep the rest of the day for checkout and the journey.", kind: "flexible" }
             ]
           }
         ],

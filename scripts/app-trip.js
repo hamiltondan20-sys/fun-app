@@ -876,7 +876,9 @@ function getBlueprintTopPlaces() {
 
     function buildDayOrderNote(day, index, totalDays) {
       const firstStop = day.item?.timeline?.[0]?.title || day.highlight || day.area;
-      const lastStop = day.item?.timeline?.[day.item.timeline.length - 1]?.title || day.highlight || day.area;
+      // Name the last real stop, not a free-time block like "Pack and travel".
+      const namedStops = (day.item?.timeline || []).filter((step) => step.kind !== "flexible");
+      const lastStop = namedStops[namedStops.length - 1]?.title || day.highlight || day.area;
       const area = getConfirmedDayArea(day);
 
       if (index === 0) {
@@ -887,6 +889,17 @@ function getBlueprintTopPlaces() {
 
       if (index === totalDays - 1) {
         return `Ends with ${lastStop} and keeps the close lighter, so packing, checkout, or a slower final meal do not get squeezed.`;
+      }
+
+      // When stops are registered places, describe the route from their real distances.
+      const longestMove = (day.item?.timeline || [])
+        .filter((step) => step.travelFromPrevious?.distanceKm != null)
+        .sort((left, right) => right.travelFromPrevious.distanceKm - left.travelFromPrevious.distanceKm)[0];
+      if (longestMove) {
+        const km = longestMove.travelFromPrevious.distanceKm;
+        return km >= 2
+          ? `The longest move is about ${km} km (straight line) to ${longestMove.title}; plan public transport or a taxi for it. Travel times are not calculated.`
+          : `All scheduled stops are within about ${km} km of each other (straight line), so most of the day can be on foot.`;
       }
 
       if (!area) {
@@ -1910,23 +1923,26 @@ function getBlueprintTopPlaces() {
         }
       };
 
+      // Inserted steps are never specific venues, so they are always free-time blocks.
       const cityConfig = citySpecificSteps[city];
       if (cityConfig?.[kind]) {
-        return { time, ...cityConfig[kind] };
+        return { time, ...cityConfig[kind], kind: "flexible" };
       }
 
       if (kind === "reset") {
         return {
           time,
           title: `Coffee or reset near ${area}`,
-          copy: `Use this stretch to pause, grab something easy, and stay in the same part of the city before moving into the next anchor.`
+          copy: `Use this stretch to pause, grab something easy, and stay in the same part of the city before moving into the next anchor.`,
+          kind: "flexible"
         };
       }
 
       return {
         time,
         title: `Afternoon follow-through in ${area}`,
-        copy: `Give ${label} a little more room with an easier follow-through stop, so the day feels fuller without becoming crowded.`
+        copy: `Give ${label} a little more room with an easier follow-through stop, so the day feels fuller without becoming crowded.`,
+        kind: "flexible"
       };
     }
 
@@ -1939,6 +1955,9 @@ function getBlueprintTopPlaces() {
       if (stepMinutes.some((value) => value === null)) {
         return timeline;
       }
+
+      // Days that already schedule free time stay as written: padding them would invent stops.
+      if (expanded.some((step) => step.kind === "flexible")) return timeline;
 
       // Never pad a day with a kind of stop it already has (a second coffee break, a second stroll).
       const titles = expanded.map((step) => String(step.title || "").toLowerCase());
@@ -3148,7 +3167,38 @@ function getBlueprintTopPlaces() {
 
     // Classify by the stop's title first (copy is only a fallback), with whole-word matches,
     // and meals before coffee so "Lunch at Cafe Charlot" is a meal, not a coffee stop.
+    // What we actually know about a stop: its checked address and the straight-line distance from
+    // the previous stop. Travel time is shown as not calculated rather than guessed.
+    function renderStepPlaceFacts(step) {
+      if (!step?.place) return "";
+      const { snapshot, verification } = step.place;
+      const checked = verification?.checkedOn
+        ? `Location checked ${formatDate(verification.checkedOn)}${verification.sourceUrl ? ` (<a href="${escapeHtml(verification.sourceUrl)}" target="_blank" rel="noopener noreferrer">source</a>)` : ""}`
+        : "Location not yet checked";
+      const travel = step.travelFromPrevious?.distanceKm != null
+        ? `<li>About ${escapeHtml(String(step.travelFromPrevious.distanceKm))} km from the previous stop in a straight line; travel time not calculated.</li>`
+        : "";
+      return `
+        <ul class="timeline-place-facts">
+          ${snapshot?.address ? `<li>${escapeHtml(snapshot.address)}</li>` : ""}
+          <li>${checked}. Opening hours for your dates not confirmed.</li>
+          ${travel}
+        </ul>
+      `;
+    }
+
     function getTimelineStepVisual(step) {
+      if (step?.kind === "flexible") {
+        return { icon: "schedule", label: "Free time", accent: "bg-surface-soft text-secondary" };
+      }
+      // Registered places say what they are; trust that over words in the title.
+      const placeKinds = {
+        landmark: { icon: "museum", label: "Landmark", accent: "bg-teal-soft text-tertiary" },
+        scenic: { icon: "landscape", label: "Scenic", accent: "bg-blue-soft text-secondary" },
+        meal: { icon: "restaurant", label: "Meal", accent: "bg-warm text-primary" },
+        cafe: { icon: "local_cafe", label: "Coffee", accent: "bg-blue-soft text-secondary" }
+      };
+      if (step?.place && placeKinds[step.kind]) return placeKinds[step.kind];
       const rules = [
         [/\b(arrival|arrive|check[- ]?in|flight|landing|airport)\b/,{ icon: "luggage", label: "Arrival", accent: "bg-warm text-primary" }],
         [/\b(lunch|dinner|brunch|restaurant|meal|tapas|cocktails?|bar|food|reservation)\b/, { icon: "restaurant", label: "Meal", accent: "bg-warm text-primary" }],
@@ -4028,8 +4078,53 @@ function getBlueprintTopPlaces() {
       return [...middle, closing];
     }
 
+    // Straight-line distance in km between two registry coordinates (not a travel time).
+    function straightLineKm(from, to) {
+      const radians = (value) => (value * Math.PI) / 180;
+      const dLat = radians(to.lat - from.lat);
+      const dLng = radians(to.lng - from.lng);
+      const a = Math.sin(dLat / 2) ** 2 + Math.cos(radians(from.lat)) * Math.cos(radians(to.lat)) * Math.sin(dLng / 2) ** 2;
+      return Math.round(6371 * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a)) * 10) / 10;
+    }
+
+    // Resolve template stops that name a registry place: attach a minimal place snapshot and the
+    // straight-line distance from the previous placed stop. Travel time stays unknown (null);
+    // a distance is never presented as a timing. Template objects are not mutated.
+    function attachPlaces(timeline, registry) {
+      if (!Array.isArray(timeline)) return timeline;
+      let previous = null;
+      return timeline.map((step) => {
+        const next = { ...step };
+        const place = step.placeId ? registry?.[step.placeId] : null;
+        if (step.placeId && !place) next.placeMissing = true;
+        if (place) {
+          next.kind = next.kind || place.kind;
+          next.place = {
+            id: place.id,
+            snapshot: { name: place.name, area: place.area, address: place.address, lat: place.coordinates.lat, lng: place.coordinates.lng },
+            verification: { status: place.verification.status, checkedOn: place.verification.checkedOn, sourceUrl: place.verification.evidence[0]?.url || "" }
+          };
+          if (previous) {
+            next.travelFromPrevious = { distanceKm: straightLineKm(previous, place.coordinates), basis: "straight-line", minutes: null, mode: null };
+          }
+          previous = place.coordinates;
+        }
+        return next;
+      });
+    }
+
     // A day's area comes from the places it actually visits (title, highlight, stop titles), never from its position.
     function resolveDayArea(day, areas, city) {
+      // Registered places carry their own area; prefer them over matching words in titles.
+      const placeAreas = (Array.isArray(day?.timeline) ? day.timeline : [])
+        .map((step) => step?.place?.snapshot?.area)
+        .filter(Boolean);
+      if (placeAreas.length) {
+        const counts = new Map();
+        placeAreas.forEach((area) => counts.set(area, (counts.get(area) || 0) + 1));
+        const ranked = [...counts.keys()].sort((left, right) => counts.get(right) - counts.get(left) || placeAreas.indexOf(left) - placeAreas.indexOf(right)).slice(0, 2);
+        return { areas: ranked, primary: ranked[0], label: ranked.join(" + "), confirmed: true };
+      }
       const stopText = [day?.title, day?.highlight, ...(Array.isArray(day?.timeline) ? day.timeline.map((step) => step?.title) : [])]
         .filter(Boolean)
         .join(" | ")
@@ -4088,9 +4183,9 @@ function getBlueprintTopPlaces() {
 
     function buildFlexibleDayTimeline(area) {
       return [
-        { time: "10:00 AM", title: `Slow start + coffee in ${area}`, copy: "Leave the morning open for a favorite spot or a place you passed earlier in the trip." },
-        { time: "1:00 PM", title: `Lunch in ${area}`, copy: "Pick somewhere nearby instead of crossing the city for a meal." },
-        { time: "3:30 PM", title: "Favorite return or open time", copy: "Go back to a place you loved, follow a local tip, or simply rest." }
+        { time: "10:00 AM", title: `Slow start + coffee in ${area}`, copy: "Leave the morning open for a favorite spot or a place you passed earlier in the trip.", kind: "flexible" },
+        { time: "1:00 PM", title: `Lunch in ${area}`, copy: "Pick somewhere nearby instead of crossing the city for a meal.", kind: "flexible" },
+        { time: "3:30 PM", title: "Favorite return or open time", copy: "Go back to a place you loved, follow a local tip, or simply rest.", kind: "flexible" }
       ];
     }
 
@@ -4189,9 +4284,9 @@ function getBlueprintTopPlaces() {
       const builtDays = selectedTemplates.map(({ template: sourceDay, slot }, index) => {
         const isLastDay = index === count - 1;
         // Open and flexible days (slot 5+) get an open-ended timeline; the later generic templates end in packing.
-        const sourceTimeline = sourceDay.timeline || (slot >= 5
+        const sourceTimeline = attachPlaces(sourceDay.timeline || (slot >= 5
           ? buildFlexibleDayTimeline(resolveDayArea(sourceDay, areas, city).label)
-          : timelineTemplates[Math.min(slot, timelineTemplates.length - 1)]);
+          : timelineTemplates[Math.min(slot, timelineTemplates.length - 1)]), window.HB_PLACES?.places);
         let areaInfo = resolveDayArea({ ...sourceDay, timeline: sourceTimeline }, areas, city);
         const baseDay = index === 0 ? normalizeFirstDayTemplate(sourceDay, areaInfo.primary || areas[0]) : { ...sourceDay };
         const day = applyVibeContentToDay(baseDay, slot, isLastDay, vibeContent);
@@ -6079,6 +6174,7 @@ function getBlueprintTopPlaces() {
                             <div class="timeline-step-copy-block">
                               <p class="timeline-title">${escapeTripText(step.title)}</p>
                               <p class="timeline-copy timeline-step-copy mt-2">${escapeTripText(step.copy)}</p>
+                              ${renderStepPlaceFacts(step)}
                               ${renderTimelineAnchorBadges(step, day, index, hbState.currentTrip.days.length, stepIndex)}
                               ${hbState.currentTripMapQuery === day.id && hbState.currentTripMapStepIndex === stepIndex ? `<span class="timeline-focus-chip is-active">On the map</span>` : ""}
                             </div>

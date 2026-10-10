@@ -2548,6 +2548,22 @@
       padding: 0 0.95rem 0.95rem;
     }
 
+    .timeline-place-facts {
+      margin-top: 0.4rem;
+      display: grid;
+      gap: 0.15rem;
+      list-style: none;
+      padding: 0;
+      font-size: 0.78rem;
+      line-height: 1.45;
+      color: #4f5f6f;
+    }
+
+    .timeline-place-facts a {
+      color: #2458c8;
+      text-decoration: underline;
+    }
+
     .saved-trip-list {
       border-radius: 24px;
       border: 1px solid rgba(203, 215, 227, 0.92);

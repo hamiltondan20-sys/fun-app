@@ -26,6 +26,7 @@ function sliceBlock(startMarker, endMarker) {
 function loadLogic(appState = {}) {
   const context = vm.createContext({ window: {}, hbState: { appState } });
   vm.runInContext(fs.readFileSync(path.join(root, "data/trip-content.js"), "utf8"), context);
+  vm.runInContext(fs.readFileSync(path.join(root, "data/places.js"), "utf8"), context);
   vm.runInContext([
     "cleanPlanningAnchor", "getPlanningAnchorKey", "formatAnchorLabel", "formatInlineAnchorLabel",
     "parseTimelineTimeToMinutes", "formatTimelineMinutes", "buildInsertedTimelineStep", "expandTimelineSteps",
@@ -51,9 +52,10 @@ function buildCityTrip(city, dayCount, anchors) {
     buildFlexibleTemplate: (index) => ({ title: `Flexible day in ${areas[index % areas.length]}`, timeline: null })
   });
   const days = selected.map(({ template: sourceTemplate, slot }, index) => {
-    const template = sourceTemplate.timeline || slot < 5
-      ? sourceTemplate
-      : { ...sourceTemplate, timeline: logic.buildFlexibleDayTimeline(logic.resolveDayArea(sourceTemplate, areas, city).label) };
+    const rawTimeline = sourceTemplate.timeline || (slot < 5
+      ? null
+      : logic.buildFlexibleDayTimeline(logic.resolveDayArea(sourceTemplate, areas, city).label));
+    const template = { ...sourceTemplate, timeline: logic.attachPlaces(rawTimeline, logic.window.HB_PLACES.places) };
     const areaInfo = logic.resolveDayArea(template, areas, city);
     return {
       dayLabel: `Day ${index + 1}`,
@@ -71,6 +73,75 @@ function buildCityTrip(city, dayCount, anchors) {
 }
 
 const buildParisTrip = (dayCount, anchors) => buildCityTrip("Paris", dayCount, anchors);
+
+// ---- Berlin pilot: milestone criteria that can be checked from data alone (docs/pilot-milestone.md) ----
+
+test("Berlin: every scheduled stop is a checked registry place or an explicit free-time block", () => {
+  const logic = loadLogic();
+  const registry = logic.window.HB_PLACES.places;
+  const templates = logic.window.HB_TRIP_HELPERS.getConcreteTripTemplates("Berlin", logic.window.HB_TRIP_HELPERS.getAreaSet("Berlin"));
+  assert.equal(templates.length, 6, "five researched days plus a closing morning");
+  templates.flatMap((day) => day.timeline).forEach((step) => {
+    if (step.kind === "flexible") {
+      assert.ok(!step.placeId, `${step.title}: free time must not name a venue`);
+      return;
+    }
+    const place = registry[step.placeId];
+    assert.ok(place, `${step.title}: not in the places registry`);
+    assert.equal(place.verification.status, "location-checked");
+    assert.match(place.verification.checkedOn, /^\d{4}-\d{2}-\d{2}$/);
+    assert.ok(place.verification.evidence[0].url.startsWith("https://"), `${step.title}: evidence url`);
+    assert.ok(place.verification.notChecked.includes("opening-hours-for-your-dates"), "hours are not claimed");
+  });
+});
+
+test("Berlin: no stop is scheduled twice and places sit inside Berlin", () => {
+  const logic = loadLogic();
+  const registry = logic.window.HB_PLACES.places;
+  const templates = logic.window.HB_TRIP_HELPERS.getConcreteTripTemplates("Berlin", []);
+  const placeIds = templates.flatMap((day) => day.timeline.map((step) => step.placeId).filter(Boolean));
+  assert.equal(new Set(placeIds).size, placeIds.length, "duplicate stop");
+  Object.values(registry).filter((place) => place.city === "berlin").forEach((place) => {
+    assert.ok(place.coordinates.lat > 52.3 && place.coordinates.lat < 52.7 && place.coordinates.lng > 13.0 && place.coordinates.lng < 13.8, `${place.name} outside Berlin`);
+    assert.match(place.coordinates.attribution, /OpenStreetMap/);
+    assert.equal(place.timeZone, "Europe/Berlin");
+  });
+});
+
+test("Berlin 7-day trip: seven distinct days, areas from places, coherent geography, honest travel", () => {
+  const anchors = [
+    { label: "One memorable dinner", key: "onememorabledinner", type: "food", source: "traveler" },
+    { label: "Slower final day", key: "slowerfinalday", type: "rest", source: "traveler" }
+  ];
+  const { days, schedule } = buildCityTrip("Berlin", 7, anchors);
+  assert.equal(new Set(days.map((day) => day.title)).size, 7, "no repeated days");
+  assert.equal(days[6].title, "Last morning in Scheunenviertel");
+  assert.equal(days[5].title, "Open day near Scheunenviertel", "day 6 is an honest open day");
+  assert.ok(days[5].item.timeline.every((step) => step.kind === "flexible"));
+  assert.equal(days[0].area, "Museum Island + Scheunenviertel");
+  assert.equal(days[1].area, "Bernauer Strasse + Scheunenviertel");
+  assert.ok(days.slice(0, 5).every((day) => day.areaConfirmed));
+
+  days.forEach((day) => day.item.timeline.forEach((step) => {
+    if (!step.travelFromPrevious) return;
+    assert.equal(step.travelFromPrevious.minutes, null, "travel time stays unknown");
+    assert.equal(step.travelFromPrevious.basis, "straight-line");
+    assert.ok(step.travelFromPrevious.distanceKm < 4, `${day.title}: ${step.title} is ${step.travelFromPrevious.distanceKm} km from the previous stop`);
+    // Distances written into the copy must match the registry coordinates.
+    const written = String(step.copy).match(/about (\d+(?:\.\d+)?) km from/);
+    if (written) assert.ok(Math.abs(Number(written[1]) - step.travelFromPrevious.distanceKm) <= 0.2, `${step.title}: copy says ${written[1]} km, coordinates give ${step.travelFromPrevious.distanceKm} km`);
+  }));
+
+  const dinnerDay = schedule.byDay.findIndex((list) => list.some((anchor) => anchor.key === "onememorabledinner"));
+  assert.equal(days[dinnerDay].item.timeline.find((step) => step.title === "Dinner at Restaurant Tim Raue") != null, true);
+  assert.ok(schedule.byDay[6].some((anchor) => anchor.key === "slowerfinalday"));
+});
+
+test("Berlin 3-day trip keeps the closing morning last and nothing is padded with invented stops", () => {
+  const { days } = buildCityTrip("Berlin", 3, []);
+  assert.deepEqual([...days.map((day) => day.title)], ["Scheunenviertel breakfast and Museum Island", "Wall history on Bernauer Strasse", "Last morning in Scheunenviertel"]);
+  days.forEach((day) => day.item.timeline.forEach((step) => assert.ok(step.kind === "flexible" || step.place, `${step.title} is neither a place nor free time`)));
+});
 
 const parisMustHaves = [
   { label: "One memorable dinner", key: "onememorabledinner", type: "food", source: "traveler" },
