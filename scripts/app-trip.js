@@ -5,6 +5,8 @@ const { getAreaSet, getDayHighlights, getDayNotes, getTimelineTemplates, getConc
 const DRAFT_STORAGE_KEY = "hb-trip-draft-v1";
 const PROFILE_STORAGE_KEY = "hb-trip-profile-v1";
 const BOOKING_STORAGE_KEY = "hb-trip-booking-v1";
+const TRIPS_STORAGE_KEY = "hb-trips-v2";
+const PREMIGRATION_STORAGE_KEY = "hb-trip-draft-v1-premigration";
 const LOCAL_ACCOUNT_BACKUP_VERSION = 1;
 
 function getGuideSourceReasoning() {
@@ -2275,6 +2277,180 @@ function getBlueprintTopPlaces() {
       hbState.savedDraft = getDraftMetaFromPayload(getStoredTripDraft());
     }
 
+    // ---- Trip collection (several trips per browser) ----
+    // The v1 draft key stays the working copy of the active trip, so every existing edit/save/
+    // restore path is unchanged. The collection keeps a saved copy of each trip's draft.
+
+    function readTripCollection() {
+      try {
+        const parsed = JSON.parse(window.localStorage.getItem(TRIPS_STORAGE_KEY) || "null");
+        if (parsed && Array.isArray(parsed.trips)) return parsed;
+      } catch (error) {
+        // Fall through to an empty collection; the working draft is untouched.
+      }
+      return { activeTripId: null, trips: [] };
+    }
+
+    function writeTripCollection(collection) {
+      window.localStorage.setItem(TRIPS_STORAGE_KEY, JSON.stringify(collection));
+    }
+
+    function describeTripEntry(draft) {
+      const trip = draft.currentTrip || {};
+      return {
+        id: trip.tripId,
+        title: trip.title || "Untitled trip",
+        destination: draft.appState?.destination || "",
+        startDate: draft.appState?.startDate || "",
+        endDate: draft.appState?.endDate || "",
+        days: trip.days?.length || 0,
+        versionCount: draft.alternateTrips?.length || 0,
+        updatedAtMs: draft.savedAtMs || Date.now(),
+        draft
+      };
+    }
+
+    function upsertTripEntry(draft, { makeActive = true } = {}) {
+      const id = draft?.currentTrip?.tripId;
+      if (!id) return;
+      const collection = readTripCollection();
+      const entry = describeTripEntry(draft);
+      const index = collection.trips.findIndex((item) => item.id === id);
+      if (index === -1) collection.trips.push(entry);
+      else collection.trips[index] = entry;
+      if (makeActive) collection.activeTripId = id;
+      writeTripCollection(collection);
+    }
+
+    // One-time move from the single-draft layout. The old key keeps working as the active
+    // trip's working copy, and an untouched copy is kept as a fallback.
+    function migrateToTripCollection() {
+      if (window.localStorage.getItem(TRIPS_STORAGE_KEY)) return;
+      const draft = getStoredTripDraft();
+      if (!draft?.currentTrip) {
+        writeTripCollection({ activeTripId: null, trips: [] });
+        return;
+      }
+      if (!window.localStorage.getItem(PREMIGRATION_STORAGE_KEY)) {
+        window.localStorage.setItem(PREMIGRATION_STORAGE_KEY, JSON.stringify(draft));
+      }
+      draft.currentTrip.tripId = draft.currentTrip.tripId || window.HB_TRIP_FORMAT.newId("trp");
+      window.HB_TRIP_FORMAT.ensureIds(draft.currentTrip);
+      window.localStorage.setItem(DRAFT_STORAGE_KEY, JSON.stringify(draft));
+      writeTripCollection({ activeTripId: draft.currentTrip.tripId, trips: [describeTripEntry(draft)] });
+    }
+
+    // Save the trip on screen before leaving it, but only when it really is the saved trip
+    // (after a build or restore); otherwise the stored copy is already the truth.
+    function saveActiveTripBeforeLeaving() {
+      if (hbState.tripAutosaveEnabled && hbState.currentTrip) persistTripDraft({ silent: true });
+    }
+
+    function loadTripEntryIntoWorkspace(entry) {
+      window.localStorage.setItem(DRAFT_STORAGE_KEY, JSON.stringify(entry.draft));
+      window.localStorage.setItem(BOOKING_STORAGE_KEY, JSON.stringify({
+        savedAt: entry.draft.savedAt || formatDraftSavedAt(),
+        destination: entry.draft.appState?.destination || "",
+        items: cloneData(entry.draft.bookingItems || {})
+      }));
+      const collection = readTripCollection();
+      collection.activeTripId = entry.id;
+      writeTripCollection(collection);
+      hbState.openDayDetails = new Set();
+      return restoreSavedDraft();
+    }
+
+    function openTripFromCollection(tripId) {
+      saveActiveTripBeforeLeaving();
+      const entry = readTripCollection().trips.find((item) => item.id === tripId);
+      if (!entry) return false;
+      const opened = loadTripEntryIntoWorkspace(entry);
+      if (opened) hbState.draftSaveFeedback = `Opened "${entry.title}"`;
+      return opened;
+    }
+
+    function renameTripInCollection(tripId, title) {
+      const cleanTitle = String(title || "").trim().slice(0, 80);
+      if (!cleanTitle) return false;
+      const collection = readTripCollection();
+      const entry = collection.trips.find((item) => item.id === tripId);
+      if (!entry) return false;
+      entry.title = cleanTitle;
+      entry.draft.currentTrip.title = cleanTitle;
+      if (entry.draft.liveDraftTrip) entry.draft.liveDraftTrip.title = cleanTitle;
+      writeTripCollection(collection);
+      if (hbState.currentTrip?.tripId === tripId) {
+        hbState.currentTrip.title = cleanTitle;
+        if (hbState.liveDraftTrip) hbState.liveDraftTrip.title = cleanTitle;
+        persistTripDraft({ silent: true });
+      }
+      return true;
+    }
+
+    function duplicateTripInCollection(tripId) {
+      saveActiveTripBeforeLeaving();
+      const collection = readTripCollection();
+      const entry = collection.trips.find((item) => item.id === tripId);
+      if (!entry) return null;
+      const draft = cloneData(entry.draft);
+      const newTripId = window.HB_TRIP_FORMAT.newId("trp");
+      draft.currentTrip.tripId = newTripId;
+      draft.currentTrip.title = `${entry.title} (copy)`;
+      if (draft.liveDraftTrip) {
+        draft.liveDraftTrip.tripId = newTripId;
+        draft.liveDraftTrip.title = draft.currentTrip.title;
+      }
+      draft.savedAtMs = Date.now();
+      collection.trips.push(describeTripEntry(draft));
+      writeTripCollection(collection);
+      return newTripId;
+    }
+
+    // Deleting the active trip opens the most recently updated remaining trip, or clears the
+    // workspace when none are left. The caller confirms with the visitor first.
+    function deleteTripFromCollection(tripId) {
+      const collection = readTripCollection();
+      const remaining = collection.trips.filter((item) => item.id !== tripId);
+      if (remaining.length === collection.trips.length) return false;
+      const wasActive = collection.activeTripId === tripId || hbState.currentTrip?.tripId === tripId;
+      collection.trips = remaining;
+      if (wasActive) collection.activeTripId = null;
+      writeTripCollection(collection);
+      if (!wasActive) return true;
+      const next = [...remaining].sort((a, b) => (b.updatedAtMs || 0) - (a.updatedAtMs || 0))[0];
+      if (next) {
+        loadTripEntryIntoWorkspace(next);
+      } else {
+        clearTripWorkspace();
+      }
+      return true;
+    }
+
+    function clearTripWorkspace() {
+      window.localStorage.removeItem(DRAFT_STORAGE_KEY);
+      window.localStorage.setItem(BOOKING_STORAGE_KEY, JSON.stringify({ savedAt: formatDraftSavedAt(), destination: "", items: {} }));
+      hbState.currentTrip = null;
+      hbState.liveDraftTrip = null;
+      hbState.likedTrip = null;
+      hbState.alternateTrips = [];
+      hbState.bookingItems = {};
+      hbState.activeTripSource = { type: "live", versionId: "", name: "" };
+      hbState.tripAutosaveEnabled = false;
+      hbState.savedDraft = null;
+      hbState.openDayDetails = new Set();
+    }
+
+    // "Plan a new trip": keep the current one in the list, then start from an empty workspace.
+    // The next build gets a new trip id instead of overwriting the trip that was open.
+    function startNewTrip() {
+      saveActiveTripBeforeLeaving();
+      const collection = readTripCollection();
+      collection.activeTripId = null;
+      writeTripCollection(collection);
+      clearTripWorkspace();
+      hbState.startNewTrip = true;
+    }
+
     function persistTripDraft(options = {}) {
       const { feedback = "Draft saved", silent = false } = options;
       const now = new Date();
@@ -2298,6 +2474,7 @@ function getBlueprintTopPlaces() {
 
       try {
         window.localStorage.setItem(DRAFT_STORAGE_KEY, JSON.stringify(payload));
+        upsertTripEntry(payload);
         hbState.savedDraft = getDraftMetaFromPayload(payload);
         if (silent) return true;
         hbState.draftSaveFeedback = feedback;
@@ -2429,15 +2606,30 @@ function getBlueprintTopPlaces() {
       (draft.alternateTrips || []).forEach((version) => {
         if (!versions.some((item) => item?.id && item.id === version?.id)) versions.push(version);
       });
-      const currentTrip = hbState.currentTrip || draft.currentTrip || null;
+      // The open trip comes from the screen only when it is the saved trip (after a build or
+      // restore); otherwise from its stored working copy.
+      const useScreen = Boolean(hbState.tripAutosaveEnabled && hbState.currentTrip);
+      const currentTrip = useScreen ? hbState.currentTrip : (draft.currentTrip || null);
       const trips = currentTrip ? [format.tripFromApp({
         id: currentTrip.tripId,
-        appState: hbState.currentTrip ? hbState.appState : (draft.appState || hbState.appState),
+        appState: useScreen ? hbState.appState : (draft.appState || hbState.appState),
         currentTrip,
         alternateTrips: versions,
-        bookingItems: hbState.bookingItems || {}
+        bookingItems: useScreen ? (hbState.bookingItems || {}) : (draft.bookingItems || hbState.bookingItems || {})
       })] : [];
-      return format.buildEnvelope({ kind: "backup", trips, profile: getStoredTripProfile() || hbState.tripProfile || null, appBuild: "20261010" });
+      // Every other trip in this browser's list.
+      readTripCollection().trips
+        .filter((entry) => entry.id && entry.id !== currentTrip?.tripId)
+        .forEach((entry) => {
+          trips.push(format.tripFromApp({
+            id: entry.id,
+            appState: entry.draft.appState || {},
+            currentTrip: entry.draft.currentTrip,
+            alternateTrips: entry.draft.alternateTrips || [],
+            bookingItems: entry.draft.bookingItems || {}
+          }));
+        });
+      return format.buildEnvelope({ kind: "backup", trips, activeTripId: currentTrip?.tripId || null, profile: getStoredTripProfile() || hbState.tripProfile || null, appBuild: "20261010" });
     }
 
     function exportLocalAccountBackup() {
@@ -2537,41 +2729,76 @@ function getBlueprintTopPlaces() {
       return true;
     }
 
-    // v2 files are converted to the v1 restore shape so they go through the same tested path.
-    // Until several trips per browser ship, the file's active trip is restored.
+    function draftFromPortableTrip(trip, profile) {
+      const app = window.HB_TRIP_FORMAT.tripToApp(trip);
+      app.currentTrip.tripId = trip.id;
+      return {
+        savedAt: formatDraftSavedAt(),
+        savedAtMs: Date.now(),
+        appState: app.appState,
+        currentTrip: app.currentTrip,
+        liveDraftTrip: cloneData(app.currentTrip),
+        likedTrip: null,
+        alternateTrips: app.alternateTrips,
+        // Restore draft reloads bookings from the draft, so they must live here too.
+        bookingItems: app.bookingItems,
+        tripProfile: profile || {},
+        activeTripSource: { type: "live", versionId: "", name: "" }
+      };
+    }
+
+    // Restore adds the backup's trips to this browser's list and opens the backup's active
+    // trip. It never silently overwrites: a trip that already exists is replaced only if the
+    // visitor says so, otherwise both are kept. v2 drafts go through the tested v1 restore path.
     function applyTripBackup(payload) {
-      if (!payload?.format) return applyLocalAccountBackup(payload);
+      saveActiveTripBeforeLeaving();
+      if (!payload?.format) {
+        const restored = applyLocalAccountBackup(payload);
+        if (hbState.currentTrip) {
+          hbState.tripAutosaveEnabled = true;
+          persistTripDraft({ silent: true });
+        }
+        return restored;
+      }
       const envelope = window.HB_TRIP_FORMAT.readBackup(payload);
       if (envelope.kind === "share") throw new Error("This is a shared trip copy, not a backup. Open it from its share link instead.");
-      const trip = envelope.trips.find((item) => item.id === envelope.activeTripId) || envelope.trips[0];
-      const app = trip ? window.HB_TRIP_FORMAT.tripToApp(trip) : null;
-      if (app) app.currentTrip.tripId = trip.id;
+      if (!envelope.trips.length) {
+        if (envelope.profile) window.localStorage.setItem(PROFILE_STORAGE_KEY, JSON.stringify(envelope.profile));
+        hbState.localAccountFeedback = "Backup restored: profile only (the file had no trips)";
+        renderSavedPanel();
+        return true;
+      }
+
+      const existing = readTripCollection().trips;
+      const imported = envelope.trips.map((trip) => {
+        const clash = existing.find((item) => item.id === trip.id);
+        const replace = clash && typeof window.confirm === "function"
+          && window.confirm(`You already have "${clash.title}" on this browser.\n\nOK: replace it with the copy from the backup.\nCancel: keep both.`);
+        const target = clash && !replace
+          ? { ...cloneData(trip), id: window.HB_TRIP_FORMAT.newId("trp"), title: `${trip.title} (imported)` }
+          : trip;
+        const draft = draftFromPortableTrip(target, envelope.profile);
+        upsertTripEntry(draft, { makeActive: false });
+        return { sourceId: trip.id, draft, keptBoth: Boolean(clash && !replace), replaced: Boolean(replace) };
+      });
+
+      const active = imported.find((item) => item.sourceId === envelope.activeTripId) || imported[0];
       const restored = applyLocalAccountBackup({
         type: "local-account-backup",
         exportedAt: envelope.exportedAt,
-        alternateTrips: app?.alternateTrips || [],
-        storage: {
-          draft: app ? {
-            savedAt: formatDraftSavedAt(),
-            savedAtMs: Date.now(),
-            appState: app.appState,
-            currentTrip: app.currentTrip,
-            liveDraftTrip: cloneData(app.currentTrip),
-            likedTrip: null,
-            alternateTrips: app.alternateTrips,
-            // Restore draft reloads bookings from the draft, so they must live here too.
-            bookingItems: app.bookingItems,
-            tripProfile: envelope.profile || {},
-            activeTripSource: { type: "live", versionId: "", name: "" }
-          } : null,
-          profile: envelope.profile || null,
-          booking: { items: app?.bookingItems || {} }
-        }
+        alternateTrips: active.draft.alternateTrips,
+        storage: { draft: active.draft, profile: envelope.profile || null, booking: { items: active.draft.bookingItems } }
       });
-      if (envelope.trips.length > 1) {
-        hbState.localAccountFeedback = `Backup restored: "${trip.title}" (1 of ${envelope.trips.length} trips; the others need several-trip support)`;
-        renderSavedPanel();
-      }
+      hbState.tripAutosaveEnabled = true;
+      upsertTripEntry(active.draft);
+      const keptBoth = imported.filter((item) => item.keptBoth).length;
+      const replaced = imported.filter((item) => item.replaced).length;
+      hbState.localAccountFeedback = [
+        `Backup restored: ${imported.length} trip${imported.length === 1 ? "" : "s"} added to this browser`,
+        replaced ? `${replaced} replaced` : "",
+        keptBoth ? `${keptBoth} kept alongside your existing copy` : ""
+      ].filter(Boolean).join(", ");
+      renderSavedPanel();
       return restored;
     }
 
@@ -3280,6 +3507,8 @@ function getBlueprintTopPlaces() {
           destination: hbState.appState.destination,
           items: cloneData(hbState.bookingItems || {})
         }));
+        // Bookings belong to a trip: keep the trip's saved copy in the list current too.
+        if (hbState.tripAutosaveEnabled && hbState.currentTrip) persistTripDraft({ silent: true });
         hbState.bookingSaveFeedback = feedback;
         window.setTimeout(() => {
           if (hbState.bookingSaveFeedback !== feedback) return;
@@ -4018,8 +4247,20 @@ function getBlueprintTopPlaces() {
     function buildGeneratedTrip() {
       const city = getCityName();
       const dayData = buildDayData();
+      // Rebuilding the open trip (new preferences) keeps its id. A new destination or
+      // "Plan a new trip" starts a separate trip, and the previous one stays in the list.
+      const previousId = hbState.currentTrip?.tripId;
+      const previousEntry = previousId ? readTripCollection().trips.find((item) => item.id === previousId) : null;
+      const keepId = Boolean(previousId) && !hbState.startNewTrip
+        && (!previousEntry || previousEntry.destination === hbState.appState.destination);
+      if (previousId && !keepId) {
+        hbState.alternateTrips = [];
+        hbState.bookingItems = {};
+        window.localStorage.setItem(BOOKING_STORAGE_KEY, JSON.stringify({ savedAt: formatDraftSavedAt(), destination: hbState.appState.destination, items: {} }));
+      }
+      hbState.startNewTrip = false;
       return window.HB_TRIP_FORMAT.ensureIds({
-        tripId: window.HB_TRIP_FORMAT.newId("trp"),
+        tripId: keepId ? previousId : window.HB_TRIP_FORMAT.newId("trp"),
         title: buildTripTitle(city),
         summary: buildTripSummary(city),
         reasoning: buildTripReasoning(),
@@ -4428,7 +4669,7 @@ function getBlueprintTopPlaces() {
           : "Ready";
       const localAccountCards = getLocalAccountSnapshotCards();
       const localAccountFeedback = hbState.localAccountFeedback
-        ? `<p class="mt-3 rounded-2xl bg-teal-soft px-4 py-3 text-sm font-semibold text-tertiary">${escapeHtml(hbState.localAccountFeedback)}</p>`
+        ? `<p class="mt-3 rounded-2xl bg-teal-soft px-4 py-3 text-sm font-semibold text-tertiary" role="status">${escapeHtml(hbState.localAccountFeedback)}</p>`
         : "";
       const hasTripBasics = Boolean(hbState.appState.destination && hbState.appState.startDate && hbState.appState.endDate);
       const hasBookingProgress = Boolean(bookingSummary.booked || bookingSummary.searching);
@@ -4710,7 +4951,6 @@ function getBlueprintTopPlaces() {
               <p class="text-sm font-semibold text-primary">Beta local account</p>
               <h4 class="mt-1 font-display text-lg font-bold">Save here, export when you want a backup</h4>
               <p class="mt-2 text-sm text-muted">For beta, trips stay free and local to this browser. There is no online account sync yet, so export a backup file before switching devices, clearing browser data, or sharing a draft with yourself.</p>
-              ${localAccountFeedback}
             </div>
             <span class="rounded-full bg-teal-soft px-3 py-1 text-xs font-semibold text-tertiary">No backend needed</span>
           </div>
@@ -4724,7 +4964,7 @@ function getBlueprintTopPlaces() {
             `).join("")}
           </div>
           <div class="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <p class="text-sm leading-6 text-muted">Restore replaces the saved draft, profile, booking notes, and versions on this browser with the backup file.</p>
+            <p class="text-sm leading-6 text-muted">Export saves every trip on this browser to one file. Restore adds the file's trips to your list; if one is already here, you choose to replace it or keep both.</p>
             <div class="flex flex-col gap-2 sm:flex-row sm:items-center">
               <button class="rounded-full bg-secondary px-4 py-3 text-sm font-semibold text-white" data-action="export-local-backup" type="button">
                 Export backup
@@ -4736,6 +4976,44 @@ function getBlueprintTopPlaces() {
             </div>
           </div>
         </div>
+      `;
+
+      const tripCollection = readTripCollection();
+      const activeListId = hbState.tripAutosaveEnabled ? hbState.currentTrip?.tripId : tripCollection.activeTripId;
+      const listedTrips = [...tripCollection.trips].sort((a, b) => (b.updatedAtMs || 0) - (a.updatedAtMs || 0));
+      const tripListBlock = `
+        <section class="saved-trip-list mt-5" aria-labelledby="saved-trip-list-title">
+          <div class="saved-trip-list-head">
+            <div>
+              <h4 id="saved-trip-list-title" class="font-display text-lg font-bold">Your trips</h4>
+              <p class="mt-1 text-sm text-muted">${listedTrips.length ? `${listedTrips.length} trip${listedTrips.length === 1 ? "" : "s"} saved in this browser.` : "Trips you build are saved here automatically."}</p>
+            </div>
+            <button class="rounded-full bg-secondary px-4 py-2 text-sm font-semibold text-white" data-trip-list-action="new" type="button">Plan a new trip</button>
+          </div>
+          ${localAccountFeedback}
+          ${listedTrips.length ? `
+            <ul class="saved-trip-list-items mt-3">
+              ${listedTrips.map((entry) => {
+                const isActive = entry.id === activeListId;
+                const dates = entry.startDate && entry.endDate ? `${formatDate(entry.startDate)} – ${formatDate(entry.endDate)}` : "Dates not set";
+                return `
+                  <li class="saved-trip-list-item ${isActive ? "is-active" : ""}">
+                    <div class="saved-trip-list-copy">
+                      <p class="saved-trip-list-title">${escapeHtml(entry.title)}${isActive ? ` <span class="saved-trip-list-badge">Open now</span>` : ""}</p>
+                      <p class="saved-trip-list-meta">${escapeHtml([entry.destination, dates, `${entry.days} day${entry.days === 1 ? "" : "s"}`, entry.versionCount ? `${entry.versionCount} version${entry.versionCount === 1 ? "" : "s"}` : ""].filter(Boolean).join(" · "))}</p>
+                    </div>
+                    <div class="saved-trip-list-actions" role="group" aria-label="${escapeHtml(`Actions for ${entry.title}`)}">
+                      ${isActive ? "" : `<button class="rounded-full bg-secondary px-3 py-1 text-sm font-semibold text-white" data-trip-list-action="open" data-trip-id="${escapeHtml(entry.id)}" type="button">Open</button>`}
+                      <button class="rounded-full bg-white px-3 py-1 text-sm font-semibold text-secondary ring-1 ring-line" data-trip-list-action="rename" data-trip-id="${escapeHtml(entry.id)}" type="button" aria-label="${escapeHtml(`Rename ${entry.title}`)}">Rename</button>
+                      <button class="rounded-full bg-white px-3 py-1 text-sm font-semibold text-secondary ring-1 ring-line" data-trip-list-action="duplicate" data-trip-id="${escapeHtml(entry.id)}" type="button" aria-label="${escapeHtml(`Duplicate ${entry.title}`)}">Duplicate</button>
+                      <button class="rounded-full bg-white px-3 py-1 text-sm font-semibold text-primary ring-1 ring-line" data-trip-list-action="delete" data-trip-id="${escapeHtml(entry.id)}" type="button" aria-label="${escapeHtml(`Delete ${entry.title}`)}">Delete</button>
+                    </div>
+                  </li>
+                `;
+              }).join("")}
+            </ul>
+          ` : ""}
+        </section>
       `;
 
       hbRefs.savedPanel.innerHTML = `
@@ -4750,6 +5028,8 @@ function getBlueprintTopPlaces() {
             </div>
             <span class="rounded-full bg-teal-soft px-3 py-1 text-xs font-semibold text-tertiary">For later</span>
           </div>
+
+          ${tripListBlock}
 
           <div class="saved-account-overview">
             <div class="saved-account-overview-head">
@@ -5017,6 +5297,39 @@ function getBlueprintTopPlaces() {
           event.preventDefault();
           event.stopPropagation();
           exportLocalAccountBackup();
+        };
+      });
+
+      // Trip list: open, rename, duplicate, delete, plan a new trip.
+      hbRefs.savedPanel.querySelectorAll("[data-trip-list-action]").forEach((button) => {
+        button.onclick = (event) => {
+          event.preventDefault();
+          event.stopPropagation();
+          const { tripListAction: action, tripId } = button.dataset;
+          const entry = readTripCollection().trips.find((item) => item.id === tripId);
+          if (action === "open") {
+            if (openTripFromCollection(tripId)) hbUtils.setActivePanel?.("trip-panel");
+            return;
+          }
+          if (action === "rename" && entry) {
+            const title = window.prompt("Rename this trip", entry.title);
+            if (title !== null && renameTripInCollection(tripId, title)) hbState.localAccountFeedback = `Renamed to "${title.trim().slice(0, 80)}"`;
+          }
+          if (action === "duplicate" && entry && duplicateTripInCollection(tripId)) {
+            hbState.localAccountFeedback = `Duplicated "${entry.title}"`;
+          }
+          if (action === "delete" && entry) {
+            const confirmed = window.confirm(`Delete "${entry.title}" from this browser?\n\nIts named versions and booking notes are deleted too. This cannot be undone unless you have an exported backup.`);
+            if (!confirmed) return;
+            deleteTripFromCollection(tripId);
+            hbState.localAccountFeedback = `Deleted "${entry.title}"`;
+          }
+          if (action === "new") {
+            startNewTrip();
+            hbUtils.setActivePanel?.("build-panel");
+            return;
+          }
+          renderSavedPanel();
         };
       });
 
@@ -6121,7 +6434,16 @@ function getBlueprintTopPlaces() {
       renderTrip();
     }
 
+try {
+  migrateToTripCollection();
+} catch (error) {
+  // Storage unavailable (private mode, quota): the single working draft keeps working as before.
+}
+
 Object.assign(hbUtils, {
+  readTripCollection,
+  openTripFromCollection,
+  startNewTrip,
   getFlightPlanStatus,
   buildFlightCard,
   buildStayCard,

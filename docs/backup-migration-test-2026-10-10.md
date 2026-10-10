@@ -65,3 +65,28 @@ Restore accepts v1 and v2.
   adapter had only written them to the booking store. Covered by a new assertion in
   scripts/planner-paths.test.mjs.
 - Refused as expected: shared copies and files from a newer schema (unit tests).
+
+## Several trips per browser (increment 2), same day
+
+Storage: `hb-trips-v2` holds `{ activeTripId, trips[] }`, each entry a saved copy of that
+trip's draft (versions and bookings included). `hb-trip-draft-v1` stays the active trip's
+working copy, so existing save/restore paths are unchanged.
+
+- **Upgrade of a current visitor's storage.** The live build (origin/main, served at
+  /old-app/) and this build (/fun-app/) were served on the same localhost origin, so they
+  shared storage. A trip built with the live code (Day 3 edit, named version, booking
+  status and note, profile) was then opened with this build: the one-time move listed it
+  as "Open now" with its dates, 7 days and 1 version; trip id and all 26 stop ids were
+  unchanged; an untouched copy was written to `hb-trip-draft-v1-premigration`; Restore
+  draft brought back the version, Day 3, booking, note and profile.
+- **Plan a new trip.** Paris stayed in the list; London was built as a separate trip with
+  no versions or bookings carried over.
+- **Switch, rebuild, rename, duplicate, delete.** Opening Paris from the list restored its
+  version and booking. Rebuilding Paris with a different pace kept the same trip id (no
+  duplicate entry). Rename updated the list and the open trip; Duplicate copied versions;
+  Delete (after confirmation) removed only the copy.
+- **Export/restore of several trips.** Export carried both trips. After wiping storage,
+  Restore added both with identical trip and stop ids; Paris reopened with its version and
+  booking; no question was asked. Restoring the same file again asked once per trip and,
+  on "keep both", added "(imported)" copies without touching the originals.
+- Phone width: trip list fits with no horizontal overflow.

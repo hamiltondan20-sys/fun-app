@@ -31,16 +31,25 @@ function loadRestoreContext() {
   const end = source.indexOf("    function createVersionId()", start);
   assert.ok(start >= 0 && end > start);
   const storage = new Map();
+  const collection = { activeTripId: null, trips: [] };
   const context = vm.createContext({
     window: { localStorage: { setItem: (key, value) => storage.set(key, value) } },
     DRAFT_STORAGE_KEY: "draft", PROFILE_STORAGE_KEY: "profile", BOOKING_STORAGE_KEY: "booking",
     hbState: { appState: {}, tripProfile: {} },
     cloneData: (value) => JSON.parse(JSON.stringify(value)),
     formatDraftSavedAt: () => "Test date", getDraftMetaFromPayload: () => ({}),
-    syncPlanningInputsFromState() {}, renderTrip() {}, renderSavedPanel() {}
+    syncPlanningInputsFromState() {}, renderTrip() {}, renderSavedPanel() {},
+    // Trip-list functions live outside this slice; scripts/trip-collection.test.mjs covers them.
+    saveActiveTripBeforeLeaving() {}, persistTripDraft() {},
+    readTripCollection: () => collection,
+    upsertTripEntry(draft) {
+      const id = draft?.currentTrip?.tripId;
+      if (!id) return;
+      collection.trips = collection.trips.filter((item) => item.id !== id).concat([{ id, title: draft.currentTrip.title, draft }]);
+    }
   });
   vm.runInContext(source.slice(start, end), context);
-  return { context, storage };
+  return { context, storage, collection };
 }
 
 test("restore accepts a v2 backup through the same restore path", () => {
@@ -58,7 +67,7 @@ test("restore accepts a v2 backup through the same restore path", () => {
   context.FileReader = class { readAsText(file) { this.result = file.content; this.onload(); } };
   vm.runInContext("importLocalAccountBackup(v2File)", context);
 
-  assert.equal(context.hbState.localAccountFeedback, "Backup restored on this browser");
+  assert.equal(context.hbState.localAccountFeedback, "Backup restored: 1 trip added to this browser");
   const draft = JSON.parse(storage.get("draft"));
   assert.equal(draft.currentTrip.tripId, trip.id, "trip id survives restore");
   assert.equal(draft.currentTrip.days[0].item.timeline[0].id, trip.days[0].stops[0].id, "stop id survives restore");
@@ -68,6 +77,37 @@ test("restore accepts a v2 backup through the same restore path", () => {
   assert.equal(draft.bookingItems["flight-search"].status, "searching", "Restore draft reads bookings from the draft");
 });
 
+test("restoring a trip that already exists asks, and never overwrites without a yes", () => {
+  for (const answer of [false, true]) {
+    const { context, collection } = loadRestoreContext();
+    vm.runInContext(fs.readFileSync(path.join(root, "scripts/trip-format.js"), "utf8"), context);
+    const format = context.window.HB_TRIP_FORMAT;
+    const appTrip = { title: "Paris trip", days: [{ id: "day-1", title: "From backup", item: { timeline: [{ time: "9:00 AM", title: "Pastry" }] } }] };
+    const trip = format.tripFromApp({ id: "trp_same", appState: { destination: "Paris, France" }, currentTrip: appTrip });
+    collection.trips.push({ id: "trp_same", title: "My Paris trip", draft: { currentTrip: { tripId: "trp_same", title: "My Paris trip" } } });
+    const asked = [];
+    context.window.confirm = (message) => { asked.push(message); return answer; };
+    context.FileReader = class { readAsText(file) { this.result = file.content; this.onload(); } };
+    context.file = { content: JSON.stringify(format.buildEnvelope({ trips: [trip] })) };
+    vm.runInContext("importLocalAccountBackup(file)", context);
+
+    assert.equal(asked.length, 1);
+    assert.match(asked[0], /My Paris trip/);
+    if (answer) {
+      assert.equal(collection.trips.length, 1, "replace keeps one copy");
+      assert.equal(collection.trips[0].id, "trp_same");
+      assert.equal(collection.trips[0].draft.currentTrip.days[0].title, "From backup");
+      assert.match(context.hbState.localAccountFeedback, /1 replaced/);
+    } else {
+      assert.equal(collection.trips.length, 2, "keep both");
+      assert.equal(collection.trips[0].title, "My Paris trip", "original untouched");
+      assert.ok(collection.trips[1].id !== "trp_same");
+      assert.equal(collection.trips[1].title, "Paris trip (imported)");
+      assert.match(context.hbState.localAccountFeedback, /kept alongside/);
+    }
+  }
+});
+
 test("restore refuses a shared copy and a backup from a newer planner", () => {
   const { context } = loadRestoreContext();
   vm.runInContext(fs.readFileSync(path.join(root, "scripts/trip-format.js"), "utf8"), context);
@@ -75,6 +115,7 @@ test("restore refuses a shared copy and a backup from a newer planner", () => {
   context.renderSavedPanel = () => {};
   context.shareFile = { content: JSON.stringify({ format: "fullest-life-trip", schemaVersion: 2, kind: "share", trips: [] }) };
   vm.runInContext("importLocalAccountBackup(shareFile)", context);
+  assert.equal(JSON.stringify(context.readTripCollection().trips), "[]", "a refused file adds nothing");
   assert.match(context.hbState.localAccountFeedback, /shared trip copy/);
   context.newerFile = { content: JSON.stringify({ format: "fullest-life-trip", schemaVersion: 9, trips: [] }) };
   vm.runInContext("importLocalAccountBackup(newerFile)", context);
@@ -109,23 +150,10 @@ test("restore merges newer export-time versions with stored ones without duplica
 });
 
 test("restore accepts an old-brand backup with its legacy filename", () => {
-  const source = fs.readFileSync(path.join(root, "scripts/app-trip.js"), "utf8");
-  const start = source.indexOf("    function applyLocalAccountBackup(payload)");
-  const end = source.indexOf("    function createVersionId()", start);
-  assert.ok(start >= 0 && end > start);
-  const storage = new Map();
-  const context = vm.createContext({
-    window: { localStorage: { setItem: (key, value) => storage.set(key, value) } },
-    DRAFT_STORAGE_KEY: "draft", PROFILE_STORAGE_KEY: "profile", BOOKING_STORAGE_KEY: "booking",
-    hbState: { appState: {}, tripProfile: {} },
-    cloneData: (value) => JSON.parse(JSON.stringify(value)),
-    formatDraftSavedAt: () => "Test date", getDraftMetaFromPayload: () => ({}),
-    syncPlanningInputsFromState() {}, renderTrip() {}, renderSavedPanel() {},
-    FileReader: class {
-      readAsText(file) { this.result = file.content; this.onload(); }
-    }
-  });
-  vm.runInContext(source.slice(start, end), context);
+  const { context, storage } = loadRestoreContext();
+  context.FileReader = class {
+    readAsText(file) { this.result = file.content; this.onload(); }
+  };
   context.legacyFile = {
     name: "horizon-bound-paris-backup.json",
     content: JSON.stringify({ type: "local-account-backup", product: "Horizon Bound",
