@@ -1,6 +1,22 @@
-# Portable trip format v2 (draft for review)
+# Portable trip format v2
 
-Status: proposal, October 10, 2026. No code uses this yet.
+Status: design agreed October 10, 2026 (decisions below). No code uses this yet.
+
+## Decisions (October 10)
+
+1. **Share a frozen snapshot.** Users share the current itinerary or a chosen named
+   version, frozen when the link is created. Later edits never change what the
+   recipient sees. Without a backend it is labelled "Shared copy" and built from the
+   privacy allow-list.
+2. **Several trips now.** Storage is a trip collection with one active trip. UI stays
+   small: create, open, rename, duplicate, delete, export. Named versions live inside
+   a trip; they are not separate trips. Import never silently overwrites another trip.
+3. **Separate places registry.** Guides and stops reference stable place IDs. The
+   registry holds exact branch, coordinates, time zone and evidence; guide data keeps
+   editorial descriptions and category membership. Exported trips keep a minimal place
+   snapshot so backups stay readable when the registry changes.
+4. **Verification is a record, not a boolean.** Every "verified" claim says what was
+   checked, when, and against which evidence (see Places).
 
 One versioned structure for **backups, share links, print/calendar export and
 future account sync**, so the four don't drift apart.
@@ -79,7 +95,10 @@ future account sync**, so the four don't drift apart.
       "kind": "landmark",
       "title": "Trocadero + Eiffel Tower",
       "note": "Go early so the big Paris moment feels smoother.",
-      "place": { "ref": "paris/eiffel-tower", "verified": false },
+      "place": {
+        "id": "plc_paris_eiffel-tower",
+        "snapshot": { "name": "Eiffel Tower", "area": "Eiffel / Left Bank", "lat": 48.8584, "lng": 2.2945 }
+      },
       "travelFromPrevious": null
     }
   ],
@@ -92,11 +111,48 @@ future account sync**, so the four don't drift apart.
   notes instead of inventing a time.
 - **Times** are local wall-clock times in the trip's `timeZone` (no UTC offsets in
   stops), so a trip still reads correctly across daylight-saving changes.
-- **`place.verified`** is true only when the place has been checked against a source
-  (branch, address, coordinates). Unverified places must not claim exact locations.
+- **`place.id`** points at the places registry; **`place.snapshot`** is the minimal
+  copy kept in the trip so exports stay readable. Verification lives in the registry.
+- **Flexible time** is a stop with `kind: "flexible"` and no `place`; it is never a
+  made-up venue.
 - **`travelFromPrevious`**: `{ "minutes": 15, "mode": "walk | transit | drive",
   "basis": "estimate | routed", "checkedOn": "2026-10-10" }`. The UI must label
   estimates as estimates; `routed` timings are still a snapshot, not a guarantee.
+
+## Places registry (separate file, shared by guides and itineraries)
+
+```json
+{
+  "id": "plc_paris_eiffel-tower",
+  "name": "Eiffel Tower",
+  "city": "paris",
+  "branch": null,
+  "address": "Av. Gustave Eiffel, 75007 Paris",
+  "lat": 48.8584, "lng": 2.2945,
+  "timeZone": "Europe/Paris",
+  "area": "Eiffel / Left Bank",
+  "verification": {
+    "status": "unchecked | location-checked | hours-checked | closed | moved",
+    "checkedOn": "2026-10-10",
+    "checked": ["location", "opening-hours", "booking-required"],
+    "evidence": [{ "source": "official site", "url": "https://...", "retrievedOn": "2026-10-10" }]
+  }
+}
+```
+
+- The UI may say "location checked October 10" — never just "verified".
+- `closed` or `moved` places are kept (so old trips still resolve) but are not scheduled.
+- Coordinates come with their source and licence; map/routing data attribution is
+  shown wherever it is used.
+
+## Storage collection
+
+```json
+{ "activeTripId": "trp_8f3c...", "trips": [ /* Trip */ ] }
+```
+
+Import adds trips to the collection. If an imported trip id already exists, the user
+chooses: keep both (imported copy gets a new id and "(imported)" title) or replace.
 
 ## Privacy
 
@@ -130,10 +186,6 @@ On import of a `local-account-backup` v1 file:
 v1 export stays available until v2 import has shipped and been verified across
 origins, so no visitor holds a file nothing can read.
 
-## Open questions
+## Resolved questions
 
-1. Should share links include a named version or always the live trip?
-2. Do we keep one trip per browser (today) or allow several trips in `trips[]` now,
-   ahead of accounts?
-3. Where do place references (`paris/eiffel-tower`) live: in the guide data files,
-   or a separate places file that guides and itineraries both point to?
+Answered October 10 — see Decisions 1–3 at the top.
