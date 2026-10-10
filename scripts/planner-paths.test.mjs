@@ -43,6 +43,44 @@ function loadRestoreContext() {
   return { context, storage };
 }
 
+test("restore accepts a v2 backup through the same restore path", () => {
+  const { context, storage } = loadRestoreContext();
+  vm.runInContext(fs.readFileSync(path.join(root, "scripts/trip-format.js"), "utf8"), context);
+  const format = context.window.HB_TRIP_FORMAT;
+  const appTrip = { title: "Paris trip", days: [{ id: "day-1", title: "Day one", area: "Le Marais",
+    item: { title: "t", body: "b", fit: "f", label: "l", alternatives: [], alternativeIndex: 0, timeline: [{ time: "9:00 AM", title: "Pastry", copy: "" }] },
+    protectedAnchors: [] }] };
+  const trip = format.tripFromApp({ appState: { destination: "Paris, France", startDate: "2026-11-06" }, currentTrip: appTrip,
+    alternateTrips: [{ id: "v1", name: "Lighter", trip: appTrip }], bookingItems: { "flight-search": { status: "searching", note: "n" } } });
+  context.v2File = { name: "the-fullest-life-travel-paris-france-backup.json",
+    content: JSON.stringify(format.buildEnvelope({ trips: [trip], profile: { displayName: "Test Traveler" } })) };
+  context.cloneData = (value) => JSON.parse(JSON.stringify(value));
+  context.FileReader = class { readAsText(file) { this.result = file.content; this.onload(); } };
+  vm.runInContext("importLocalAccountBackup(v2File)", context);
+
+  assert.equal(context.hbState.localAccountFeedback, "Backup restored on this browser");
+  const draft = JSON.parse(storage.get("draft"));
+  assert.equal(draft.currentTrip.tripId, trip.id, "trip id survives restore");
+  assert.equal(draft.currentTrip.days[0].item.timeline[0].id, trip.days[0].stops[0].id, "stop id survives restore");
+  assert.equal(draft.alternateTrips[0].name, "Lighter");
+  assert.equal(JSON.parse(storage.get("profile")).displayName, "Test Traveler");
+  assert.equal(JSON.parse(storage.get("booking")).items["flight-search"].status, "searching");
+  assert.equal(draft.bookingItems["flight-search"].status, "searching", "Restore draft reads bookings from the draft");
+});
+
+test("restore refuses a shared copy and a backup from a newer planner", () => {
+  const { context } = loadRestoreContext();
+  vm.runInContext(fs.readFileSync(path.join(root, "scripts/trip-format.js"), "utf8"), context);
+  context.FileReader = class { readAsText(file) { this.result = file.content; this.onload(); } };
+  context.renderSavedPanel = () => {};
+  context.shareFile = { content: JSON.stringify({ format: "fullest-life-trip", schemaVersion: 2, kind: "share", trips: [] }) };
+  vm.runInContext("importLocalAccountBackup(shareFile)", context);
+  assert.match(context.hbState.localAccountFeedback, /shared trip copy/);
+  context.newerFile = { content: JSON.stringify({ format: "fullest-life-trip", schemaVersion: 9, trips: [] }) };
+  vm.runInContext("importLocalAccountBackup(newerFile)", context);
+  assert.match(context.hbState.localAccountFeedback, /newer version/);
+});
+
 test("restore keeps saved versions when the export was made before they loaded into memory", () => {
   // Real flow: open Saved on a fresh page load, click Export. The in-memory list is still empty,
   // but the stored draft inside the file holds the named versions.

@@ -46,3 +46,22 @@ Result after import, reload, and Restore draft on B — all matched A:
 
 Remaining before cutover: deploy this fix to the live site before visitors are asked
 to export, so their files carry the version list, and repeat on a real phone.
+
+## Trip format v2 (increment 1), same day
+
+Export now writes `fullest-life-trip` schemaVersion 2 (docs/trip-format-v2.md);
+Restore accepts v1 and v2.
+
+- **v1 → new build, cross-origin.** A v1 file exported from a fresh Saved page on the
+  live github.io build was restored on the localhost build through the real file input.
+  Profile, Day 3 edit, named version, booking status and note all matched after reload
+  and Restore draft. Saving assigned stable ids to all 26 stops.
+- **v2 round trip.** Exported v2 (80 KB; Europe/Paris; ISO day dates; booking linked to
+  its scheduled stop; three scheduled must-haves), wiped storage, restored, reloaded,
+  Restore draft: trip id and all 26 stop ids identical; version, Day 3, must-have pins,
+  profile, booking status and note all preserved.
+- **Bug found and fixed during this test:** the first v2 restore lost bookings after
+  Restore draft, because Restore draft reloads bookings from the draft and the v2
+  adapter had only written them to the booking store. Covered by a new assertion in
+  scripts/planner-paths.test.mjs.
+- Refused as expected: shared copies and files from a newer schema (unit tests).

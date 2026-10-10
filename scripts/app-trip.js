@@ -2278,6 +2278,11 @@ function getBlueprintTopPlaces() {
     function persistTripDraft(options = {}) {
       const { feedback = "Draft saved", silent = false } = options;
       const now = new Date();
+      // Edits can add stops; give them stable ids before anything is stored or exported.
+      if (hbState.currentTrip) {
+        window.HB_TRIP_FORMAT.ensureIds(hbState.currentTrip);
+        hbState.currentTrip.tripId = hbState.currentTrip.tripId || window.HB_TRIP_FORMAT.newId("trp");
+      }
       const payload = {
         savedAt: formatDraftSavedAt(now),
         savedAtMs: now.getTime(),
@@ -2414,9 +2419,31 @@ function getBlueprintTopPlaces() {
       ];
     }
 
+    // v2 backup (docs/trip-format-v2.md). Versions in memory and in the stored draft are merged
+    // by id so an export made before Restore draft still carries every named version.
+    function buildBackupEnvelope() {
+      const format = window.HB_TRIP_FORMAT;
+      const draft = getStoredTripDraft() || {};
+      hydrateBookingItems();
+      const versions = [...(hbState.alternateTrips || [])];
+      (draft.alternateTrips || []).forEach((version) => {
+        if (!versions.some((item) => item?.id && item.id === version?.id)) versions.push(version);
+      });
+      const currentTrip = hbState.currentTrip || draft.currentTrip || null;
+      const trips = currentTrip ? [format.tripFromApp({
+        id: currentTrip.tripId,
+        appState: hbState.currentTrip ? hbState.appState : (draft.appState || hbState.appState),
+        currentTrip,
+        alternateTrips: versions,
+        bookingItems: hbState.bookingItems || {}
+      })] : [];
+      return format.buildEnvelope({ kind: "backup", trips, profile: getStoredTripProfile() || hbState.tripProfile || null, appBuild: "20261010" });
+    }
+
     function exportLocalAccountBackup() {
-      const payload = getLocalAccountPayload();
-      const filename = `the-fullest-life-travel-${getSafeBackupNamePart(payload.appState?.destination || payload.currentTrip?.title)}-backup.json`;
+      const payload = buildBackupEnvelope();
+      const trip = payload.trips[0];
+      const filename = `the-fullest-life-travel-${getSafeBackupNamePart([trip?.destination?.name, trip?.destination?.country].filter(Boolean).join(" ") || trip?.title || "profile")}-backup.json`;
       try {
         const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
         const url = window.URL.createObjectURL(blob);
@@ -2510,13 +2537,51 @@ function getBlueprintTopPlaces() {
       return true;
     }
 
+    // v2 files are converted to the v1 restore shape so they go through the same tested path.
+    // Until several trips per browser ship, the file's active trip is restored.
+    function applyTripBackup(payload) {
+      if (!payload?.format) return applyLocalAccountBackup(payload);
+      const envelope = window.HB_TRIP_FORMAT.readBackup(payload);
+      if (envelope.kind === "share") throw new Error("This is a shared trip copy, not a backup. Open it from its share link instead.");
+      const trip = envelope.trips.find((item) => item.id === envelope.activeTripId) || envelope.trips[0];
+      const app = trip ? window.HB_TRIP_FORMAT.tripToApp(trip) : null;
+      if (app) app.currentTrip.tripId = trip.id;
+      const restored = applyLocalAccountBackup({
+        type: "local-account-backup",
+        exportedAt: envelope.exportedAt,
+        alternateTrips: app?.alternateTrips || [],
+        storage: {
+          draft: app ? {
+            savedAt: formatDraftSavedAt(),
+            savedAtMs: Date.now(),
+            appState: app.appState,
+            currentTrip: app.currentTrip,
+            liveDraftTrip: cloneData(app.currentTrip),
+            likedTrip: null,
+            alternateTrips: app.alternateTrips,
+            // Restore draft reloads bookings from the draft, so they must live here too.
+            bookingItems: app.bookingItems,
+            tripProfile: envelope.profile || {},
+            activeTripSource: { type: "live", versionId: "", name: "" }
+          } : null,
+          profile: envelope.profile || null,
+          booking: { items: app?.bookingItems || {} }
+        }
+      });
+      if (envelope.trips.length > 1) {
+        hbState.localAccountFeedback = `Backup restored: "${trip.title}" (1 of ${envelope.trips.length} trips; the others need several-trip support)`;
+        renderSavedPanel();
+      }
+      return restored;
+    }
+
     function importLocalAccountBackup(file) {
       if (!file) return;
       const reader = new FileReader();
       reader.onload = () => {
         try {
           const payload = JSON.parse(String(reader.result || "{}"));
-          applyLocalAccountBackup(payload);
+          applyTripBackup(payload);
         } catch (error) {
           hbState.localAccountFeedback = error?.message || "Unable to import this backup file";
           renderSavedPanel();
@@ -3953,7 +4018,8 @@ function getBlueprintTopPlaces() {
     function buildGeneratedTrip() {
       const city = getCityName();
       const dayData = buildDayData();
-      return {
+      return window.HB_TRIP_FORMAT.ensureIds({
+        tripId: window.HB_TRIP_FORMAT.newId("trp"),
         title: buildTripTitle(city),
         summary: buildTripSummary(city),
         reasoning: buildTripReasoning(),
@@ -3962,7 +4028,7 @@ function getBlueprintTopPlaces() {
         stayCard: buildStayCard(city),
         days: dayData.days,
         unscheduledMustHaves: dayData.unscheduledMustHaves
-      };
+      });
     }
 
     function updateStateFromInputs() {
@@ -6070,6 +6136,8 @@ Object.assign(hbUtils, {
   persistTripDraft,
   restoreSavedDraft,
   getLocalAccountPayload,
+  buildBackupEnvelope,
+  applyTripBackup,
   exportLocalAccountBackup,
   importLocalAccountBackup,
   applyLocalAccountBackup,

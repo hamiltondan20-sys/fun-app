@@ -1,7 +1,6 @@
 # Pilot milestone: a reliable seven-day plan
 
-Status: definition drafted October 10, 2026 — **awaiting owner approval** before any
-new itinerary content is written.
+Status: definition approved by the owner October 10, 2026.
 
 Pilot cities: Paris, London, Singapore, Hong Kong, Berlin.
 

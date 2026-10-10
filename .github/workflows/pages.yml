@@ -34,7 +34,7 @@ jobs:
 
       - name: Regenerate pages and validate
         run: |
-          node --test scripts/publication-gates.test.mjs scripts/analytics-consent.test.mjs scripts/guide-evidence.test.mjs scripts/itinerary-logic.test.mjs scripts/planner-paths.test.mjs
+          node --test scripts/publication-gates.test.mjs scripts/analytics-consent.test.mjs scripts/guide-evidence.test.mjs scripts/itinerary-logic.test.mjs scripts/planner-paths.test.mjs scripts/trip-format.test.mjs
           node scripts/create-fallback-images.mjs
           node scripts/generate-pages.mjs --base=/fun-app --origin=https://hamiltondan20-sys.github.io --out=. --min-words=350
           node scripts/check-release.js
