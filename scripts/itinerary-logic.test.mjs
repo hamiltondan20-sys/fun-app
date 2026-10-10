@@ -139,8 +139,9 @@ test("trip-level dinner goal lands on the signature dinner, and the Eiffel Tower
   assert.equal(days[dinnerDay].templateSlot, 3);
   assert.equal(schedule.byDay[dinnerDay].find((anchor) => anchor.key === "onememorabledinner").stepTitle, "Dinner at Septime");
   const eiffelDays = schedule.byDay.map((anchors, index) => (anchors.some((anchor) => anchor.key === "eiffeltower") ? index : -1)).filter((index) => index >= 0);
-  assert.deepEqual(eiffelDays, [2]);
-  assert.deepEqual(schedule.byDay[0], []);
+  // Spread vm-realm arrays into this realm before deep comparison.
+  assert.deepEqual([...eiffelDays], [2]);
+  assert.equal(schedule.byDay[0].length, 0);
 });
 
 test("short trip without a signature dinner leaves the dinner goal unscheduled", () => {

@@ -2367,7 +2367,9 @@ function getBlueprintTopPlaces() {
         currentTrip: hbState.currentTrip ? cloneData(hbState.currentTrip) : null,
         liveDraftTrip: hbState.liveDraftTrip ? cloneData(hbState.liveDraftTrip) : null,
         likedTrip: hbState.likedTrip ? cloneData(hbState.likedTrip) : null,
-        alternateTrips: cloneData(hbState.alternateTrips || []),
+        // Versions only load into memory after Restore draft; fall back to the stored list
+        // so an export made straight from the Saved page still carries them.
+        alternateTrips: cloneData(hbState.alternateTrips?.length ? hbState.alternateTrips : (draftPayload?.alternateTrips || [])),
         tripProfile: cloneData(hbState.tripProfile || {}),
         bookingItems: cloneData(hbState.bookingItems || {}),
         activeTripSource: cloneData(hbState.activeTripSource || { type: "live", versionId: "", name: "" }),
@@ -2453,11 +2455,16 @@ function getBlueprintTopPlaces() {
         activeTripSource: payload.activeTripSource || { type: "live", versionId: "", name: "" }
       };
       const profilePayload = payload.storage?.profile || payload.tripProfile || {};
-      // Named versions can be newer than the last saved draft. Restore the
-      // export-time list into persistent storage as well as the active state.
-      if (Array.isArray(payload.alternateTrips)) {
-        draftPayload.alternateTrips = cloneData(payload.alternateTrips);
-      }
+      // Named versions can be newer than the last saved draft, but the export-time
+      // list is empty when Export runs before versions load into memory. Merge both
+      // by id (export-time entries win) so neither case loses a version.
+      const exportVersions = Array.isArray(payload.alternateTrips) ? payload.alternateTrips : [];
+      const storedVersions = Array.isArray(draftPayload.alternateTrips) ? draftPayload.alternateTrips : [];
+      const mergedVersions = [...exportVersions];
+      storedVersions.forEach((version) => {
+        if (!mergedVersions.some((item) => item?.id && item.id === version?.id)) mergedVersions.push(version);
+      });
+      draftPayload.alternateTrips = cloneData(mergedVersions);
       const bookingPayload = payload.storage?.booking || {
         savedAt: payload.exportedAtLabel || formatDraftSavedAt(),
         destination: payload.appState?.destination || hbState.appState.destination,
@@ -2851,7 +2858,7 @@ function getBlueprintTopPlaces() {
     // and meals before coffee so "Lunch at Cafe Charlot" is a meal, not a coffee stop.
     function getTimelineStepVisual(step) {
       const rules = [
-        [/\b(arrival|arrive|check-?in|flight|landing|airport)\b/, { icon: "luggage", label: "Arrival", accent: "bg-warm text-primary" }],
+        [/\b(arrival|arrive|check[- ]?in|flight|landing|airport)\b/,{ icon: "luggage", label: "Arrival", accent: "bg-warm text-primary" }],
         [/\b(lunch|dinner|brunch|restaurant|meal|tapas|cocktails?|bar|food|reservation)\b/, { icon: "restaurant", label: "Meal", accent: "bg-warm text-primary" }],
         [/\b(breakfast|bakery|coffee|cafe|pastry|pastel|espresso|tea)\b/,{ icon: "local_cafe", label: "Coffee", accent: "bg-blue-soft text-secondary" }],
         [/\b(museum|gallery|palace|cathedral|temple|tower|bridge|landmark|monument|castle)\b/, { icon: "museum", label: "Landmark", accent: "bg-teal-soft text-tertiary" }],
