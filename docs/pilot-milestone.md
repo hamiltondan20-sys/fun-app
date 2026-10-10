@@ -43,7 +43,7 @@ weekdays (one must be a Monday, when many museums close):
 | London | 5 written days, review pending | Same as Paris |
 | Singapore | 3 written days, guide reviewed | Supported extensions (e.g. day trips) or clearly flexible days for 4–7 |
 | Hong Kong | 3 written days, guide reviewed | Same as Singapore |
-| Berlin | **Oct 10:** 16 places registered (data/places.js, from the Oct 6 source review + OpenStreetMap coordinates); 5 written days + closing morning, every named stop a registry place, other time labelled free time | Opening hours per weekday (Monday test), real travel times, reviewed lunch options; then run the test matrix |
+| Berlin | **Oct 10:** 16 places registered (data/places.js, from the Oct 6 source review + OpenStreetMap coordinates); 5 written days + closing morning, every named stop a registry place, other time labelled free time. Published hours for all 16 places researched from official sites (data/place-hours.json, with quotes; three spot-checked), including seasonal periods and dated holiday closures; the planner flags closed days and out-of-hours stops for the trip's real dates | Real travel times, reviewed lunch options; then run the test matrix |
 
 Paris and London's five written days do not exempt them from source review.
 

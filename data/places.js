@@ -24,15 +24,105 @@ window.HB_PLACES = {
         "attribution": "© OpenStreetMap contributors",
         "retrievedOn": "2026-10-10"
       },
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-10",
+        "periods": [
+          {
+            "from": "2026-10-10",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [],
+              "tue": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-12-24",
+            "hours": [],
+            "note": "SMB public-holiday page (all SMB museums)"
+          },
+          {
+            "date": "2026-12-25",
+            "hours": [
+              [
+                "10:00",
+                "18:00"
+              ]
+            ],
+            "note": "Sunday hours"
+          },
+          {
+            "date": "2026-12-26",
+            "hours": [
+              [
+                "10:00",
+                "18:00"
+              ]
+            ],
+            "note": "Sunday hours"
+          },
+          {
+            "date": "2026-12-31",
+            "hours": [],
+            "note": "SMB public-holiday page"
+          }
+        ],
+        "lastEntry": null,
+        "caveat": null,
+        "notes": "No last-entry time published. Holiday rules come from SMB's general holiday page. Closed 15-17 March 2027 for maintenance (outside the researched period).",
+        "evidence": {
+          "url": "https://www.smb.museum/en/museums-institutions/neues-museum/plan-your-visit/",
+          "quote": "Mon closed / Tue 10:00 am - 6:00 pm / Wed 10:00 am - 6:00 pm / Thu 10:00 am - 6:00 pm / Fri 10:00 am - 6:00 pm / Sat 10:00 am - 6:00 pm / Sun 10:00 am - 6:00 pm",
+          "confidence": "high"
+        }
+      },
       "verification": {
         "status": "location-checked",
         "checkedOn": "2026-10-06",
         "checked": [
           "location",
-          "currently-operating"
+          "currently-operating",
+          "published-weekly-hours"
         ],
         "notChecked": [
-          "opening-hours-for-your-dates",
+          "unlisted-holiday-or-special-closures",
           "reservations-or-availability"
         ],
         "evidence": [
@@ -64,15 +154,79 @@ window.HB_PLACES = {
         "attribution": "© OpenStreetMap contributors",
         "retrievedOn": "2026-10-10"
       },
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-10",
+        "periods": [
+          {
+            "from": "2026-10-10",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "08:00",
+                  "22:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "08:00",
+                  "22:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "08:00",
+                  "22:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "08:00",
+                  "22:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "08:00",
+                  "22:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "08:00",
+                  "22:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "08:00",
+                  "22:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": "Hours shown are for the outdoor memorial grounds. The Visitor Center and Documentation Center are open Tuesday to Sunday 10:00–18:00 (closed Mondays except 9 November 2026).",
+        "notes": "Indoor centres closed 24, 25 and 31 Dec 2026; Visitor Center 12:00-18:00 on 26 Dec 2026. Free admission.",
+        "evidence": {
+          "url": "https://www.stiftung-berliner-mauer.de/en/berlin-wall-memorial/visit/information",
+          "quote": "The outdoor exhibition on the memorial grounds on Bernauer Strasse is accessible Monday to Sunday, 8 a.m. to 10 p.m. ... Visitor Center: Tuesday to Sunday, 10 a.m. to 6 p.m. ... Documentation Center: Tuesday to Sunday, 10 a.m. – 6 p.m.",
+          "confidence": "high"
+        }
+      },
       "verification": {
         "status": "location-checked",
         "checkedOn": "2026-10-06",
         "checked": [
           "location",
-          "currently-operating"
+          "currently-operating",
+          "published-weekly-hours"
         ],
         "notChecked": [
-          "opening-hours-for-your-dates",
+          "unlisted-holiday-or-special-closures",
           "reservations-or-availability"
         ],
         "evidence": [
@@ -104,15 +258,130 @@ window.HB_PLACES = {
         "attribution": "© OpenStreetMap contributors",
         "retrievedOn": "2026-10-10"
       },
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-10",
+        "periods": [
+          {
+            "from": "2026-10-10",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [],
+              "tue": [
+                [
+                  "09:30",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "09:30",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:30",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:30",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-11-01",
+            "hours": [
+              [
+                "10:00",
+                "14:00"
+              ]
+            ],
+            "note": "early closing (special opening hours page)"
+          },
+          {
+            "date": "2026-11-24",
+            "hours": [
+              [
+                "09:30",
+                "14:00"
+              ]
+            ],
+            "note": "early closing"
+          },
+          {
+            "date": "2026-11-25",
+            "hours": [
+              [
+                "09:30",
+                "14:00"
+              ]
+            ],
+            "note": "early closing"
+          },
+          {
+            "date": "2026-12-24",
+            "hours": [],
+            "note": "listed without a year on the special opening hours page"
+          },
+          {
+            "date": "2026-12-25",
+            "hours": [],
+            "note": "listed without a year"
+          },
+          {
+            "date": "2026-12-26",
+            "hours": [
+              [
+                "10:00",
+                "18:00"
+              ]
+            ],
+            "note": "public holiday hours"
+          },
+          {
+            "date": "2026-12-31",
+            "hours": [],
+            "note": "listed without a year"
+          }
+        ],
+        "lastEntry": "30 minutes before closing",
+        "caveat": null,
+        "notes": "Hours load dynamically on the official page; read from the same-domain hours feed. The English page's 'Thursday to Friday' label is a typo; the German page says Tuesday to Friday.",
+        "evidence": {
+          "url": "https://www.museumfuernaturkunde.berlin/en/plan-your-visit/",
+          "quote": "The museum is open daily until 6.00 pm. The museum is closed on Mondays. Last admission is 30 minutes before closing time. [Tuesday-Friday] 9.30 – 18.00 [weekend] 10.00 – 18.00",
+          "confidence": "high"
+        }
+      },
       "verification": {
         "status": "location-checked",
         "checkedOn": "2026-10-06",
         "checked": [
           "location",
-          "currently-operating"
+          "currently-operating",
+          "published-weekly-hours"
         ],
         "notChecked": [
-          "opening-hours-for-your-dates",
+          "unlisted-holiday-or-special-closures",
           "reservations-or-availability"
         ],
         "evidence": [
@@ -144,15 +413,100 @@ window.HB_PLACES = {
         "attribution": "© OpenStreetMap contributors",
         "retrievedOn": "2026-10-10"
       },
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-10",
+        "periods": [
+          {
+            "from": "2026-10-10",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "09:00",
+                  "21:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "09:00",
+                  "21:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "09:00",
+                  "21:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:00",
+                  "21:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:00",
+                  "21:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "21:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "21:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-12-24",
+            "hours": [
+              [
+                "09:00",
+                "16:00"
+              ]
+            ],
+            "note": null
+          },
+          {
+            "date": "2026-12-31",
+            "hours": [
+              [
+                "09:00",
+                "16:00"
+              ]
+            ],
+            "note": null
+          }
+        ],
+        "lastEntry": null,
+        "caveat": null,
+        "notes": null,
+        "evidence": {
+          "url": "https://www.ddr-museum.de/en/visit",
+          "quote": "daily 9 am – 9 pm ... open seven days a week and on public holidays. On 24 December and 31 December, the museum is open from 9 am to 4 pm.",
+          "confidence": "high"
+        }
+      },
       "verification": {
         "status": "location-checked",
         "checkedOn": "2026-10-06",
         "checked": [
           "location",
-          "currently-operating"
+          "currently-operating",
+          "published-weekly-hours"
         ],
         "notChecked": [
-          "opening-hours-for-your-dates",
+          "unlisted-holiday-or-special-closures",
           "reservations-or-availability"
         ],
         "evidence": [
@@ -184,15 +538,138 @@ window.HB_PLACES = {
         "attribution": "© OpenStreetMap contributors",
         "retrievedOn": "2026-10-10"
       },
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-10",
+        "periods": [
+          {
+            "from": "2026-10-10",
+            "to": "2026-10-25",
+            "weekly": {
+              "mon": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2026-10-26",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "09:00",
+                  "16:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "09:00",
+                  "16:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "09:00",
+                  "16:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:00",
+                  "16:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:00",
+                  "16:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "16:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "16:30"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-12-24",
+            "hours": [
+              [
+                "09:00",
+                "14:00"
+              ]
+            ],
+            "note": null
+          }
+        ],
+        "lastEntry": "1 hour before closing",
+        "caveat": "Zoo hours only; the Aquarium has its own hours and admission.",
+        "notes": "Animal houses and restaurants close 30 minutes before the Zoo.",
+        "evidence": {
+          "url": "https://www.zoo-berlin.de/en/tickets-service/opening-hours",
+          "quote": "21. September - 25. October / 9:00 - 18:00 / Last admission: 17:00 / 26. October - 31. December / 9:00 - 16:30 / Last admission: 15:30 / The Zoo closes at 2 p.m. on 24 December.",
+          "confidence": "high"
+        }
+      },
       "verification": {
         "status": "location-checked",
         "checkedOn": "2026-10-06",
         "checked": [
           "location",
-          "currently-operating"
+          "currently-operating",
+          "published-weekly-hours"
         ],
         "notChecked": [
-          "opening-hours-for-your-dates",
+          "unlisted-holiday-or-special-closures",
           "reservations-or-availability"
         ],
         "evidence": [
@@ -224,15 +701,79 @@ window.HB_PLACES = {
         "attribution": "© OpenStreetMap contributors",
         "retrievedOn": "2026-10-10"
       },
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-10",
+        "periods": [
+          {
+            "from": "2026-10-10",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": "The outdoor gallery is open around the clock. Its visitor centre (Muehlenstrasse 73, the tour meeting point) opens 10:00–17:00 and is closed on Fridays from November.",
+        "notes": null,
+        "evidence": {
+          "url": "https://www.stiftung-berliner-mauer.de/en/east-side-gallery/visit/map-information",
+          "quote": "The East Side Gallery is open around the clock. ... [visitor center] open daily from 10 a.m. to 5 p.m. ... From November on, the visitor center will be closed on Fridays.",
+          "confidence": "high"
+        }
+      },
       "verification": {
         "status": "location-checked",
         "checkedOn": "2026-10-06",
         "checked": [
           "location",
-          "currently-operating"
+          "currently-operating",
+          "published-weekly-hours"
         ],
         "notChecked": [
-          "opening-hours-for-your-dates",
+          "unlisted-holiday-or-special-closures",
           "reservations-or-availability"
         ],
         "evidence": [
@@ -264,15 +805,148 @@ window.HB_PLACES = {
         "attribution": "© OpenStreetMap contributors",
         "retrievedOn": "2026-10-10"
       },
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-10",
+        "periods": [
+          {
+            "from": "2026-10-10",
+            "to": "2026-10-31",
+            "weekly": {
+              "mon": [],
+              "tue": [
+                [
+                  "10:00",
+                  "17:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "17:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "17:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "17:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "17:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "17:30"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2026-11-01",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [],
+              "tue": [
+                [
+                  "10:00",
+                  "16:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "16:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "16:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "16:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "16:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "16:30"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-12-24",
+            "hours": [],
+            "note": null
+          },
+          {
+            "date": "2026-12-25",
+            "hours": [],
+            "note": null
+          },
+          {
+            "date": "2026-12-26",
+            "hours": [
+              [
+                "10:00",
+                "16:30"
+              ]
+            ],
+            "note": null
+          },
+          {
+            "date": "2026-12-31",
+            "hours": [
+              [
+                "10:00",
+                "14:00"
+              ]
+            ],
+            "note": null
+          }
+        ],
+        "lastEntry": "30 minutes before closing",
+        "caveat": null,
+        "notes": null,
+        "evidence": {
+          "url": "https://www.spsg.de/en/palaces-gardens/object/charlottenburg-palace-old-palace/",
+          "quote": "April to October: Monday closed, Tuesday – Sunday: 10.00 AM – 05.30 PM. November/December: Monday closed, Tuesday – Sunday: 10.00 AM – 04.30 PM. Last admission 30 minutes before closing.",
+          "confidence": "high"
+        }
+      },
       "verification": {
         "status": "location-checked",
         "checkedOn": "2026-10-06",
         "checked": [
           "location",
-          "currently-operating"
+          "currently-operating",
+          "published-weekly-hours"
         ],
         "notChecked": [
-          "opening-hours-for-your-dates",
+          "unlisted-holiday-or-special-closures",
           "reservations-or-availability"
         ],
         "evidence": [
@@ -304,15 +978,79 @@ window.HB_PLACES = {
         "attribution": "© OpenStreetMap contributors",
         "retrievedOn": "2026-10-10"
       },
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-10",
+        "periods": [
+          {
+            "from": "2026-10-10",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": "Brunch last order 16:30",
+        "caveat": null,
+        "notes": null,
+        "evidence": {
+          "url": "https://www.houseofsmallwonder.de/find-us",
+          "quote": "Brunch: Mon-Sun 9:00-17:00 (last order 16:30)",
+          "confidence": "high"
+        }
+      },
       "verification": {
         "status": "location-checked",
         "checkedOn": "2026-10-06",
         "checked": [
           "location",
-          "currently-operating"
+          "currently-operating",
+          "published-weekly-hours"
         ],
         "notChecked": [
-          "opening-hours-for-your-dates",
+          "unlisted-holiday-or-special-closures",
           "reservations-or-availability"
         ],
         "evidence": [
@@ -344,15 +1082,79 @@ window.HB_PLACES = {
         "attribution": "© OpenStreetMap contributors",
         "retrievedOn": "2026-10-10"
       },
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-10",
+        "periods": [
+          {
+            "from": "2026-10-10",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "08:00",
+                  "18:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "08:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "08:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "08:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "08:00",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": null,
+        "notes": null,
+        "evidence": {
+          "url": "https://thebarn.de/pages/locations/mitte",
+          "quote": "Monday - Friday: 08:00–18:00 / Saturday: 9:00- 18:00 / Sunday: 10:00–18:00",
+          "confidence": "high"
+        }
+      },
       "verification": {
         "status": "location-checked",
         "checkedOn": "2026-10-06",
         "checked": [
           "location",
-          "currently-operating"
+          "currently-operating",
+          "published-weekly-hours"
         ],
         "notChecked": [
-          "opening-hours-for-your-dates",
+          "unlisted-holiday-or-special-closures",
           "reservations-or-availability"
         ],
         "evidence": [
@@ -384,15 +1186,79 @@ window.HB_PLACES = {
         "attribution": "© OpenStreetMap contributors",
         "retrievedOn": "2026-10-10"
       },
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-10",
+        "periods": [
+          {
+            "from": "2026-10-10",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "07:00",
+                  "20:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "07:00",
+                  "20:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "07:00",
+                  "20:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "07:00",
+                  "20:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "07:00",
+                  "20:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "08:00",
+                  "20:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "08:00",
+                  "18:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": null,
+        "notes": "The nearby Weinbergsweg 2 branch has different weekend hours; these are for Alte Schoenhauser Strasse 4 only.",
+        "evidence": {
+          "url": "https://zeitfuerbrot.com/en/bakeries",
+          "quote": "Alte Schönhauser Straße 4 10119 Berlin / Mitte ... Mon–Fri 7:00am – 8:00pm Sat 8:00am – 8:00pm Sun 8:00am – 6:00pm",
+          "confidence": "high"
+        }
+      },
       "verification": {
         "status": "location-checked",
         "checkedOn": "2026-10-06",
         "checked": [
           "location",
-          "currently-operating"
+          "currently-operating",
+          "published-weekly-hours"
         ],
         "notChecked": [
-          "opening-hours-for-your-dates",
+          "unlisted-holiday-or-special-closures",
           "reservations-or-availability"
         ],
         "evidence": [
@@ -424,15 +1290,110 @@ window.HB_PLACES = {
         "attribution": "© OpenStreetMap contributors",
         "retrievedOn": "2026-10-10"
       },
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-10",
+        "periods": [
+          {
+            "from": "2026-10-10",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [],
+              "tue": [
+                [
+                  "18:00",
+                  "24:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "18:00",
+                  "24:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "18:00",
+                  "24:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "17:00",
+                  "24:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "17:00",
+                  "24:00"
+                ]
+              ],
+              "sun": []
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-12-24",
+            "hours": [],
+            "note": null
+          },
+          {
+            "date": "2026-12-25",
+            "hours": [],
+            "note": null
+          },
+          {
+            "date": "2026-12-26",
+            "hours": [],
+            "note": null
+          },
+          {
+            "date": "2026-12-27",
+            "hours": [],
+            "note": null
+          },
+          {
+            "date": "2026-12-28",
+            "hours": [],
+            "note": null
+          },
+          {
+            "date": "2026-12-29",
+            "hours": [],
+            "note": null
+          },
+          {
+            "date": "2026-12-30",
+            "hours": [],
+            "note": null
+          },
+          {
+            "date": "2026-12-31",
+            "hours": [],
+            "note": null
+          }
+        ],
+        "lastEntry": null,
+        "caveat": "Dinner only. Bookings are taken only through the restaurant's online system, up to three months ahead.",
+        "notes": "Sunday and Monday are not listed as dinner days (the site does not use the word closed for them).",
+        "evidence": {
+          "url": "https://tim-raue.com/kontakt/",
+          "quote": "Dinner: Dienstag – Donnerstag 18.00 - 24.00 / Freitag & Samstag 17.00 - 24.00 ... geschlossen: 24.12.2026 - 04.01.2027",
+          "confidence": "high"
+        }
+      },
       "verification": {
         "status": "location-checked",
         "checkedOn": "2026-10-06",
         "checked": [
           "location",
-          "currently-operating"
+          "currently-operating",
+          "published-weekly-hours"
         ],
         "notChecked": [
-          "opening-hours-for-your-dates",
+          "unlisted-holiday-or-special-closures",
           "reservations-or-availability"
         ],
         "evidence": [
@@ -464,15 +1425,79 @@ window.HB_PLACES = {
         "attribution": "© OpenStreetMap contributors",
         "retrievedOn": "2026-10-10"
       },
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-10",
+        "periods": [
+          {
+            "from": "2026-10-10",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "19:00",
+                  null
+                ]
+              ],
+              "tue": [
+                [
+                  "19:00",
+                  null
+                ]
+              ],
+              "wed": [
+                [
+                  "19:00",
+                  null
+                ]
+              ],
+              "thu": [
+                [
+                  "19:00",
+                  null
+                ]
+              ],
+              "fri": [
+                [
+                  "19:00",
+                  null
+                ]
+              ],
+              "sat": [
+                [
+                  "19:00",
+                  null
+                ]
+              ],
+              "sun": [
+                [
+                  "19:00",
+                  null
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": null,
+        "notes": "Only an opening time is published ('currently daily from 19:00'); no closing time.",
+        "evidence": {
+          "url": "https://www.greendoor.de/de/",
+          "quote": "Geöffnet täglich ab 19 Uhr. ... Die Green Door hat aktuell täglich jeweils ab 19 Uhr geöffnet.",
+          "confidence": "medium"
+        }
+      },
       "verification": {
         "status": "location-checked",
         "checkedOn": "2026-10-06",
         "checked": [
           "location",
-          "currently-operating"
+          "currently-operating",
+          "published-weekly-hours"
         ],
         "notChecked": [
-          "opening-hours-for-your-dates",
+          "unlisted-holiday-or-special-closures",
           "reservations-or-availability"
         ],
         "evidence": [
@@ -504,15 +1529,74 @@ window.HB_PLACES = {
         "attribution": "© OpenStreetMap contributors",
         "retrievedOn": "2026-10-10"
       },
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-10",
+        "periods": [
+          {
+            "from": "2026-10-10",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "08:00",
+                  "20:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "08:00",
+                  "20:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "08:00",
+                  "20:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "08:00",
+                  "22:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "08:00",
+                  "20:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "08:00",
+                  "20:00"
+                ]
+              ],
+              "sun": null
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": "Hall door times; individual stalls keep their own hours. Street Food Thursday runs 17:00–22:00.",
+        "notes": "No Sunday door time is published; the only Sunday listing is a children's flea market 12:00-16:00.",
+        "evidence": {
+          "url": "https://markthalleneun.de/ueber",
+          "quote": "Türzeiten? Mo–Mi:08:00–20:00 Do:08:00–22:00 Fr+Sa:08:00–20:00",
+          "confidence": "medium"
+        }
+      },
       "verification": {
         "status": "location-checked",
         "checkedOn": "2026-10-06",
         "checked": [
           "location",
-          "currently-operating"
+          "currently-operating",
+          "published-weekly-hours"
         ],
         "notChecked": [
-          "opening-hours-for-your-dates",
+          "unlisted-holiday-or-special-closures",
           "reservations-or-availability"
         ],
         "evidence": [
@@ -544,15 +1628,69 @@ window.HB_PLACES = {
         "attribution": "© OpenStreetMap contributors",
         "retrievedOn": "2026-10-10"
       },
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-10",
+        "periods": [
+          {
+            "from": "2026-10-10",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": null,
+              "tue": [
+                [
+                  "18:00",
+                  null
+                ]
+              ],
+              "wed": [
+                [
+                  "18:00",
+                  null
+                ]
+              ],
+              "thu": [
+                [
+                  "18:00",
+                  null
+                ]
+              ],
+              "fri": [
+                [
+                  "18:00",
+                  null
+                ]
+              ],
+              "sat": [
+                [
+                  "18:00",
+                  null
+                ]
+              ],
+              "sun": null
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": "Sundays by appointment. The reservation page says it is also open on Mondays from 5 October to 28 December 2026 (except 21 December); confirm when booking, as its pages disagree.",
+        "notes": "No closing time published. Winter closure 1-11 January 2027 (outside the researched period).",
+        "evidence": {
+          "url": "https://nobelhartundschmutzig.com/en/",
+          "quote": "Opening hours: Tuesday – Saturday from 6:00 pm. We are open by appointment on Sundays and Mondays. [Footer:] Öffnungszeiten: Mo. – Sa. ab 18:00 Uhr",
+          "confidence": "medium"
+        }
+      },
       "verification": {
         "status": "location-checked",
         "checkedOn": "2026-10-06",
         "checked": [
           "location",
-          "currently-operating"
+          "currently-operating",
+          "published-weekly-hours"
         ],
         "notChecked": [
-          "opening-hours-for-your-dates",
+          "unlisted-holiday-or-special-closures",
           "reservations-or-availability"
         ],
         "evidence": [
@@ -584,15 +1722,175 @@ window.HB_PLACES = {
         "attribution": "© OpenStreetMap contributors",
         "retrievedOn": "2026-10-10"
       },
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-10",
+        "periods": [
+          {
+            "from": "2026-10-10",
+            "to": "2026-10-31",
+            "weekly": {
+              "mon": [
+                [
+                  "07:00",
+                  "19:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "07:00",
+                  "19:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "07:00",
+                  "19:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "07:00",
+                  "19:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "07:00",
+                  "19:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "07:00",
+                  "19:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "07:00",
+                  "19:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2026-11-01",
+            "to": "2026-11-30",
+            "weekly": {
+              "mon": [
+                [
+                  "07:00",
+                  "18:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "07:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "07:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "07:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "07:00",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "07:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "07:00",
+                  "18:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2026-12-01",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "07:30",
+                  "17:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "07:30",
+                  "17:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "07:30",
+                  "17:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "07:30",
+                  "17:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "07:30",
+                  "17:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "07:30",
+                  "17:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "07:30",
+                  "17:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": "Gates close at the end of opening hours; you can still leave through turnstiles at five entrances.",
+        "notes": "The monthly table has no year; read as the current schedule. Free admission.",
+        "evidence": {
+          "url": "https://www.tempelhoferfeld.de/service-infos/besuch-planen/",
+          "quote": "Oktober: 7:00 - 19:00 Uhr; November: 7:00 - 18:00 Uhr; Dezember: 7:30 - 17:00 Uhr. Nach Ende der Öffnungszeiten werden die Eingänge geschlossen.",
+          "confidence": "high"
+        }
+      },
       "verification": {
         "status": "location-checked",
         "checkedOn": "2026-10-06",
         "checked": [
           "location",
-          "currently-operating"
+          "currently-operating",
+          "published-weekly-hours"
         ],
         "notChecked": [
-          "opening-hours-for-your-dates",
+          "unlisted-holiday-or-special-closures",
           "reservations-or-availability"
         ],
         "evidence": [
@@ -624,15 +1922,100 @@ window.HB_PLACES = {
         "attribution": "© OpenStreetMap contributors",
         "retrievedOn": "2026-10-10"
       },
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-10",
+        "periods": [
+          {
+            "from": "2026-10-10",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [],
+              "tue": [
+                [
+                  "09:00",
+                  "17:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "09:00",
+                  "17:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:00",
+                  "17:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:00",
+                  "17:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-12-24",
+            "hours": [],
+            "note": null
+          },
+          {
+            "date": "2026-12-25",
+            "hours": [],
+            "note": null
+          },
+          {
+            "date": "2026-12-26",
+            "hours": [
+              [
+                "10:00",
+                "18:00"
+              ]
+            ],
+            "note": null
+          },
+          {
+            "date": "2026-12-31",
+            "hours": [],
+            "note": null
+          }
+        ],
+        "lastEntry": "17:00",
+        "caveat": null,
+        "notes": "Special-dates list carries no year but matches 2026.",
+        "evidence": {
+          "url": "https://technikmuseum.berlin/besuch/infos",
+          "quote": "Montag geschlossen. Dienstag bis Freitag: 9–17:30 Uhr. Samstag, Sonntag, Feiertage: 10–18 Uhr. Letzter Einlass: 17 Uhr.",
+          "confidence": "high"
+        }
+      },
       "verification": {
         "status": "location-checked",
         "checkedOn": "2026-10-06",
         "checked": [
           "location",
-          "currently-operating"
+          "currently-operating",
+          "published-weekly-hours"
         ],
         "notChecked": [
-          "opening-hours-for-your-dates",
+          "unlisted-holiday-or-special-closures",
           "reservations-or-availability"
         ],
         "evidence": [

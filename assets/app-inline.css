@@ -2559,6 +2559,13 @@
       color: #4f5f6f;
     }
 
+    .timeline-place-facts .is-warning {
+      border-radius: 10px;
+      background: #fff1e6;
+      padding: 0.35rem 0.55rem;
+      color: #8a3412;
+    }
+
     .timeline-place-facts a {
       color: #2458c8;
       text-decoration: underline;

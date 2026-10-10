@@ -43,6 +43,44 @@ const slug = (value) => value.toLowerCase()
   .replace(/\(.*?\)/g, (match) => match.replace(/[()]/g, ""))
   .replace(/&/g, "und").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
 
+// Researched weekly hours (data/place-hours.json), each with its official source and quote.
+const hoursSource = JSON.parse(fs.readFileSync(path.join(root, "data/place-hours.json"), "utf8"));
+const DAYS = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+
+// One day's published hours:
+//   "10:00-18:00,19:00-23:00" -> [["10:00","18:00"],["19:00","23:00"]]
+//   "19:00-late"  -> [["19:00", null]]   (opening time published, closing time not)
+//   "open 24h"    -> [["00:00","24:00"]]
+//   "closed"      -> []
+//   "unknown"     -> null                 (the source does not say)
+function parseDayHours(value) {
+  const text = String(value || "").trim().toLowerCase();
+  if (!text || text === "unknown") return null;
+  if (text === "closed") return [];
+  if (text === "open 24h") return [["00:00", "24:00"]];
+  const ranges = text.split(",").map((part) => part.trim().match(/^(\d{2}:\d{2})-(\d{2}:\d{2}|late)$/));
+  if (ranges.some((match) => !match)) throw new Error(`Unreadable hours "${value}"`);
+  return ranges.map((match) => [match[1], match[2] === "late" ? null : (match[2] === "00:00" ? "24:00" : match[2])]);
+}
+
+const parseWeek = (weekly) => Object.fromEntries(DAYS.map((day) => [day, parseDayHours(weekly?.[day])]));
+
+// Hours apply only within researched periods; a date outside them is "unknown", never guessed.
+function buildHours(id) {
+  const source = hoursSource.places?.[id];
+  if (!source) return { status: "unchecked" };
+  return {
+    status: "hours-checked",
+    checkedOn: source.retrievedOn,
+    periods: source.periods.map((period) => ({ from: period.from, to: period.to, weekly: parseWeek(period.weekly) })),
+    exceptions: (source.exceptions || []).map((item) => ({ date: item.date, hours: parseDayHours(item.hours), note: item.note || null })),
+    lastEntry: source.lastEntry || null,
+    caveat: source.caveat || null,
+    notes: source.notes || null,
+    evidence: { url: source.url, quote: source.quote, confidence: source.confidence }
+  };
+}
+
 const places = {};
 for (const [city, name, kind, address, area, lat, lng, osm, basis] of PLACES) {
   const meta = CITY_META[city];
@@ -50,6 +88,8 @@ for (const [city, name, kind, address, area, lat, lng, osm, basis] of PLACES) {
   if (!record) throw new Error(`No reviewed source for ${name} in ${meta.ledgerKey}`);
   const id = `plc_${city}_${slug(name)}`;
   if (places[id]) throw new Error(`Duplicate place id ${id}`);
+  const hours = buildHours(id);
+  const hoursChecked = hours.status === "hours-checked";
   places[id] = {
     id,
     name,
@@ -59,12 +99,15 @@ for (const [city, name, kind, address, area, lat, lng, osm, basis] of PLACES) {
     timeZone: meta.timeZone,
     address,
     coordinates: { lat, lng, basis, osm, ...OSM },
+    hours,
     verification: {
       // What the October review checked: the place's own page for its location and current operation.
       status: "location-checked",
       checkedOn: record.checkedOn,
-      checked: ["location", "currently-operating"],
-      notChecked: ["opening-hours-for-your-dates", "reservations-or-availability"],
+      checked: hoursChecked ? ["location", "currently-operating", "published-weekly-hours"] : ["location", "currently-operating"],
+      notChecked: hoursChecked
+        ? ["unlisted-holiday-or-special-closures", "reservations-or-availability"]
+        : ["opening-hours-for-your-dates", "reservations-or-availability"],
       evidence: [{ source: record.sourceType, url: record.url, locationUrl: record.locationSourceUrl, retrievedOn: record.checkedOn, note: record.operatingEvidence }]
     }
   };

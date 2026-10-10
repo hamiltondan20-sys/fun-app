@@ -2949,6 +2949,7 @@ function updatePrimaryCta() {
     applyPlannerDestinationDeepLink();
     hydrateTripProfile();
     hydrateSavedDraftStatus();
+    hbUtils.openActiveTripOnLoad?.();
     updateModeUI();
     updateBudgetHelper();
     updateFlightUI();

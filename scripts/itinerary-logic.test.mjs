@@ -91,7 +91,8 @@ test("Berlin: every scheduled stop is a checked registry place or an explicit fr
     assert.equal(place.verification.status, "location-checked");
     assert.match(place.verification.checkedOn, /^\d{4}-\d{2}-\d{2}$/);
     assert.ok(place.verification.evidence[0].url.startsWith("https://"), `${step.title}: evidence url`);
-    assert.ok(place.verification.notChecked.includes("opening-hours-for-your-dates"), "hours are not claimed");
+    assert.ok(place.verification.checked.includes("published-weekly-hours"), "published hours were checked");
+    assert.ok(place.verification.notChecked.includes("unlisted-holiday-or-special-closures"), "unlisted closures are not claimed");
   });
 });
 
@@ -135,6 +136,51 @@ test("Berlin 7-day trip: seven distinct days, areas from places, coherent geogra
   const dinnerDay = schedule.byDay.findIndex((list) => list.some((anchor) => anchor.key === "onememorabledinner"));
   assert.equal(days[dinnerDay].item.timeline.find((step) => step.title === "Dinner at Restaurant Tim Raue") != null, true);
   assert.ok(schedule.byDay[6].some((anchor) => anchor.key === "slowerfinalday"));
+});
+
+// "2026-11-09" + n days, as the planner numbers trip days.
+const isoPlus = (iso, days) => new Date(Date.UTC(Number(iso.slice(0, 4)), Number(iso.slice(5, 7)) - 1, Number(iso.slice(8, 10)) + days)).toISOString().slice(0, 10);
+
+function hoursConflicts(logic, days, startIso) {
+  const registry = logic.window.HB_PLACES.places;
+  return days.flatMap((day, index) => day.item.timeline.filter((step) => step.place).map((step) => ({
+    day: index + 1, title: step.title, check: logic.checkStopHours(step, isoPlus(startIso, index), registry[step.place.id].hours)
+  }))).filter(({ check }) => check.state === "closed" || check.state === "outside-hours");
+}
+
+test("Berlin hours: a Monday start flags exactly the museum that is closed on Mondays", () => {
+  const { logic, days } = buildCityTrip("Berlin", 7, []);
+  assert.equal(logic.weekdayKeyForIsoDate("2026-11-09"), "mon");
+  const monday = hoursConflicts(logic, days, "2026-11-09");
+  assert.deepEqual(JSON.parse(JSON.stringify(monday.map(({ day, title, check }) => [day, title, check.state]))), [[1, "Neues Museum", "closed"]]);
+  assert.equal(hoursConflicts(logic, days, "2026-11-10").length, 0, "a Tuesday start fits every published schedule");
+});
+
+test("Berlin hours: seasonal periods, dated exceptions, open-ended closing and unknown dates", () => {
+  const logic = loadLogic();
+  const hours = (id) => logic.window.HB_PLACES.places[id].hours;
+  const zoo = hours("plc_berlin_zoo-berlin");
+  const at = (time) => ({ time });
+  assert.equal(logic.checkStopHours(at("5:00 PM"), "2026-10-20", zoo).state, "open", "October hours run to 18:00");
+  assert.equal(logic.checkStopHours(at("5:00 PM"), "2026-11-20", zoo).state, "outside-hours", "from 26 October the zoo closes at 16:30");
+  assert.equal(logic.checkStopHours(at("2:00 PM"), "2026-12-24", zoo).state, "outside-hours", "24 December closes at 14:00");
+  assert.equal(logic.checkStopHours(at("11:00 PM"), "2026-11-20", hours("plc_berlin_green-door-bar")).state, "open", "opening time only: open after 19:00");
+  assert.equal(logic.checkStopHours(at("6:00 PM"), "2026-11-20", hours("plc_berlin_green-door-bar")).state, "outside-hours");
+  assert.equal(logic.checkStopHours(at("12:00 PM"), "2026-11-22", hours("plc_berlin_markthalle-neun")).state, "unknown", "Sunday is not published");
+  assert.equal(logic.checkStopHours(at("10:00 AM"), "2027-02-02", hours("plc_berlin_neues-museum")).state, "unknown", "outside the researched period");
+  assert.equal(logic.checkStopHours(at("3:00 AM"), "2026-11-20", hours("plc_berlin_east-side-gallery")).state, "open", "open around the clock");
+  assert.equal(logic.checkStopHours(at("Flexible"), "2026-11-20", hours("plc_berlin_neues-museum")).state, "open-day");
+});
+
+test("Berlin hours: every registered place has an official, dated source", () => {
+  const logic = loadLogic();
+  Object.values(logic.window.HB_PLACES.places).filter((place) => place.city === "berlin").forEach((place) => {
+    assert.equal(place.hours.status, "hours-checked", place.name);
+    assert.match(place.hours.evidence.url, /^https:\/\//);
+    assert.ok(place.hours.evidence.quote.length > 10, `${place.name}: quote`);
+    assert.ok(["high", "medium"].includes(place.hours.evidence.confidence));
+    assert.ok(place.hours.periods.every((period) => period.from <= period.to));
+  });
 });
 
 test("Berlin 3-day trip keeps the closing morning last and nothing is padded with invented stops", () => {

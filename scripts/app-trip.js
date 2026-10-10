@@ -190,6 +190,13 @@ function getBlueprintTopPlaces() {
       return date;
     }
 
+    // Calendar date (YYYY-MM-DD) of the trip's Nth day, or "" when dates are not set.
+    function getTripDayIsoDate(index) {
+      const date = addLocalDays(hbState.appState.startDate, index);
+      if (Number.isNaN(date.getTime())) return "";
+      return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
+    }
+
     function escapeHtml(value) {
       return String(value ?? "")
         .replace(/&/g, "&amp;")
@@ -2456,6 +2463,7 @@ function getBlueprintTopPlaces() {
       hbState.activeTripSource = { type: "live", versionId: "", name: "" };
       hbState.tripAutosaveEnabled = false;
       hbState.savedDraft = null;
+      hbState.lastDraftSignature = null;
       hbState.openDayDetails = new Set();
     }
 
@@ -2470,29 +2478,27 @@ function getBlueprintTopPlaces() {
       hbState.startNewTrip = true;
     }
 
+    // Everything that makes up the saved trip except the save time, for change detection.
+    function getDraftSignature(payload) {
+      return JSON.stringify([payload.appState, payload.currentTrip, payload.liveDraftTrip, payload.likedTrip,
+        payload.alternateTrips, payload.tripProfile, payload.bookingItems, payload.activeTripSource]);
+    }
+
     function persistTripDraft(options = {}) {
       const { feedback = "Draft saved", silent = false } = options;
-      const now = new Date();
       // Edits can add stops; give them stable ids before anything is stored or exported.
       if (hbState.currentTrip) {
         window.HB_TRIP_FORMAT.ensureIds(hbState.currentTrip);
         hbState.currentTrip.tripId = hbState.currentTrip.tripId || window.HB_TRIP_FORMAT.newId("trp");
       }
-      const payload = {
-        savedAt: formatDraftSavedAt(now),
-        savedAtMs: now.getTime(),
-        appState: cloneData(hbState.appState),
-        currentTrip: hbState.currentTrip ? cloneData(hbState.currentTrip) : null,
-        liveDraftTrip: hbState.liveDraftTrip ? cloneData(hbState.liveDraftTrip) : null,
-        likedTrip: hbState.likedTrip ? cloneData(hbState.likedTrip) : null,
-        alternateTrips: cloneData(hbState.alternateTrips || []),
-        tripProfile: cloneData(hbState.tripProfile || {}),
-        bookingItems: cloneData(hbState.bookingItems || {}),
-        activeTripSource: cloneData(hbState.activeTripSource || { type: "live", versionId: "", name: "" })
-      };
+      const payload = buildDraftPayload();
+      const signature = getDraftSignature(payload);
+      // Autosave runs on every render; only write when something actually changed.
+      if (silent && signature === hbState.lastDraftSignature) return true;
 
       try {
         window.localStorage.setItem(DRAFT_STORAGE_KEY, JSON.stringify(payload));
+        hbState.lastDraftSignature = signature;
         upsertTripEntry(payload);
         hbState.savedDraft = getDraftMetaFromPayload(payload);
         if (silent) return true;
@@ -2510,7 +2516,34 @@ function getBlueprintTopPlaces() {
       }
     }
 
-    function restoreSavedDraft() {
+    function buildDraftPayload() {
+      const now = new Date();
+      return {
+        savedAt: formatDraftSavedAt(now),
+        savedAtMs: now.getTime(),
+        appState: cloneData(hbState.appState),
+        currentTrip: hbState.currentTrip ? cloneData(hbState.currentTrip) : null,
+        liveDraftTrip: hbState.liveDraftTrip ? cloneData(hbState.liveDraftTrip) : null,
+        likedTrip: hbState.likedTrip ? cloneData(hbState.likedTrip) : null,
+        alternateTrips: cloneData(hbState.alternateTrips || []),
+        tripProfile: cloneData(hbState.tripProfile || {}),
+        bookingItems: cloneData(hbState.bookingItems || {}),
+        activeTripSource: cloneData(hbState.activeTripSource || { type: "live", versionId: "", name: "" })
+      };
+    }
+
+    // Returning visitors land on their active trip instead of a generated default. A planner
+    // link from a guide (?destination=...) starts fresh planning for that place; the saved trip
+    // stays in the list and the next build becomes a separate trip.
+    function openActiveTripOnLoad() {
+      if (new URLSearchParams(window.location.search).get("destination")) return false;
+      if (!getStoredTripDraft()?.currentTrip) return false;
+      return restoreSavedDraft({ onLoad: true });
+    }
+
+    function restoreSavedDraft(options = {}) {
+      // onLoad: open quietly (no message) and without re-saving, so "last saved" stays accurate.
+      const { onLoad = false } = options;
       const payload = getStoredTripDraft();
       if (!payload) {
         hydrateSavedDraftStatus();
@@ -2532,16 +2565,21 @@ function getBlueprintTopPlaces() {
         ...(payload.tripProfile || {})
       };
       hbState.bookingItems = payload.bookingItems ? cloneData(payload.bookingItems) : {};
-      persistBookingItems({ feedback: "Booking progress restored" });
+      if (!onLoad) persistBookingItems({ feedback: "Booking progress restored" });
       hbState.activeTripSource = payload.activeTripSource || { type: "live", versionId: "", name: "" };
       hbState.compareVersionId = "";
       hbState.unsavedArrangement = { dirty: false, message: "" };
       hbState.savedDraft = getDraftMetaFromPayload(payload);
-      hbState.draftSaveFeedback = `Restored draft from ${hbState.savedDraft?.savedAt || "your saved draft"}`;
+      hbState.draftSaveFeedback = onLoad ? "" : `Restored draft from ${hbState.savedDraft?.savedAt || "your saved draft"}`;
       hbState.tripAutosaveEnabled = Boolean(hbState.currentTrip);
+      // Autosave skips unchanged content, so viewing a just-opened trip never rewrites it.
+      hbState.lastDraftSignature = getDraftSignature(buildDraftPayload());
       syncPlanningInputsFromState();
-      renderTrip();
-      renderSavedPanel();
+      // On load, panels render when the visitor opens them (no hidden render, no map frame).
+      if (!onLoad) {
+        renderTrip();
+        renderSavedPanel();
+      }
       return true;
     }
 
@@ -2997,6 +3035,7 @@ function getBlueprintTopPlaces() {
       const hasStay = Boolean(hbState.appState.hotelName || hbState.appState.hotelArea);
       const flightStatus = getFlightPlanStatus();
       const flightReady = flightStatus.handled;
+      const hoursConflicts = getTripHoursConflicts();
       const scheduledKeys = new Set(anchors.map((anchor) => anchor.key));
       const unscheduled = (hbState.currentTrip?.unscheduledMustHaves || []).filter((anchor) => !scheduledKeys.has(anchor.key));
       const bookingAnchorLabel = joinGuideItems(
@@ -3065,6 +3104,18 @@ function getBlueprintTopPlaces() {
           targetId: "trip-flights-section",
           section: "flights"
         },
+        ...(hoursConflicts.length ? [{
+          icon: "event_busy",
+          status: "Check the schedule",
+          ready: false,
+          title: "Stops on a closed day or outside opening hours",
+          copy: hoursConflicts.slice(0, 3).map(({ day, step, check }) => `${day.dayLabel}: ${step.place?.snapshot?.name || step.title} ${check.state === "closed" ? `is closed on ${WEEKDAY_NAMES[check.day]}s` : "is scheduled outside its opening hours"}`).join("; ")
+            + (hoursConflicts.length > 3 ? `; and ${hoursConflicts.length - 3} more` : "") + ". Move the stop or swap days.",
+          cta: "Review days",
+          action: "jump-trip-anchor",
+          targetId: "trip-days",
+          section: ""
+        }] : []),
         ...(unscheduled.length ? [{
           icon: "push_pin",
           status: "Not scheduled yet",
@@ -3169,22 +3220,62 @@ function getBlueprintTopPlaces() {
     // and meals before coffee so "Lunch at Cafe Charlot" is a meal, not a coffee stop.
     // What we actually know about a stop: its checked address and the straight-line distance from
     // the previous stop. Travel time is shown as not calculated rather than guessed.
-    function renderStepPlaceFacts(step) {
+    function formatHoursRanges(ranges) {
+      if (ranges.length === 1 && ranges[0][0] === "00:00" && ranges[0][1] === "24:00") return "around the clock";
+      return ranges.map(([open, close]) => (close === null
+        ? `from ${open} (closing time not published)`
+        : `${open}–${close === "24:00" ? "midnight" : close}`)).join(" and ");
+    }
+
+    // Published hours for this stop on its calendar date, phrased as what we know and what we don't.
+    function describeStopHours(step, isoDate) {
+      const hours = window.HB_PLACES?.places?.[step.place?.id]?.hours;
+      const result = checkStopHours(step, isoDate, hours);
+      const dayName = WEEKDAY_NAMES[result.day] || "that day";
+      const when = result.exception ? `on ${formatDate(isoDate)}` : `on ${dayName}s`;
+      const checkedOn = hours?.checkedOn ? formatDate(hours.checkedOn) : "";
+      const sourceLink = hours?.evidence?.url ? `<a href="${escapeHtml(hours.evidence.url)}" target="_blank" rel="noopener noreferrer">official hours</a>` : "official hours";
+      const caveat = hours?.caveat ? `<li>${escapeHtml(hours.caveat)}</li>` : "";
+      if (result.state === "closed") {
+        return { state: result.state, html: `<li class="is-warning"><strong>Closed ${when}</strong> (${sourceLink}, checked ${checkedOn}). Move this stop or swap days.</li>${caveat}` };
+      }
+      if (result.state === "outside-hours") {
+        return { state: result.state, html: `<li class="is-warning"><strong>Outside opening hours:</strong> open ${formatHoursRanges(result.ranges)} ${when} (${sourceLink}, checked ${checkedOn}). Adjust the time.</li>${caveat}` };
+      }
+      if (result.state === "open" || result.state === "open-day") {
+        return { state: result.state, html: `<li>Open ${formatHoursRanges(result.ranges)} ${when} (${sourceLink}, checked ${checkedOn}). Unlisted holiday closures are not checked.</li>${caveat}` };
+      }
+      const why = hours?.status === "hours-checked" ? "The published hours don't cover this date or day." : "Opening hours for your dates not confirmed.";
+      return { state: "unknown", html: `<li>${why}</li>${caveat}` };
+    }
+
+    // What we actually know about a stop: its checked address and the straight-line distance from
+    // the previous stop. Travel time is shown as not calculated rather than guessed.
+    function renderStepPlaceFacts(step, isoDate) {
       if (!step?.place) return "";
       const { snapshot, verification } = step.place;
       const checked = verification?.checkedOn
-        ? `Location checked ${formatDate(verification.checkedOn)}${verification.sourceUrl ? ` (<a href="${escapeHtml(verification.sourceUrl)}" target="_blank" rel="noopener noreferrer">source</a>)` : ""}`
-        : "Location not yet checked";
+        ? `Location checked ${formatDate(verification.checkedOn)}${verification.sourceUrl ? ` (<a href="${escapeHtml(verification.sourceUrl)}" target="_blank" rel="noopener noreferrer">source</a>)` : ""}.`
+        : "Location not yet checked.";
       const travel = step.travelFromPrevious?.distanceKm != null
         ? `<li>About ${escapeHtml(String(step.travelFromPrevious.distanceKm))} km from the previous stop in a straight line; travel time not calculated.</li>`
         : "";
       return `
         <ul class="timeline-place-facts">
           ${snapshot?.address ? `<li>${escapeHtml(snapshot.address)}</li>` : ""}
-          <li>${checked}. Opening hours for your dates not confirmed.</li>
+          <li>${checked}</li>
+          ${describeStopHours(step, isoDate).html}
           ${travel}
         </ul>
       `;
+    }
+
+    // Scheduled stops that fall on a closed day or outside opening hours, for "Before you go".
+    function getTripHoursConflicts(trip = hbState.currentTrip) {
+      return (trip?.days || []).flatMap((day, index) => (day.item?.timeline || [])
+        .filter((step) => step.place)
+        .map((step) => ({ day, step, check: checkStopHours(step, getTripDayIsoDate(index), window.HB_PLACES?.places?.[step.place.id]?.hours) }))
+        .filter(({ check }) => check.state === "closed" || check.state === "outside-hours"));
     }
 
     function getTimelineStepVisual(step) {
@@ -4111,6 +4202,45 @@ function getBlueprintTopPlaces() {
         }
         return next;
       });
+    }
+
+    const WEEKDAY_KEYS = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+    const WEEKDAY_NAMES = { mon: "Monday", tue: "Tuesday", wed: "Wednesday", thu: "Thursday", fri: "Friday", sat: "Saturday", sun: "Sunday" };
+
+    // "2026-11-09" -> "mon" (calendar date, independent of the viewer's time zone).
+    function weekdayKeyForIsoDate(isoDate) {
+      const match = String(isoDate || "").match(/^(\d{4})-(\d{2})-(\d{2})$/);
+      if (!match) return null;
+      return WEEKDAY_KEYS[new Date(Date.UTC(Number(match[1]), Number(match[2]) - 1, Number(match[3]))).getUTCDay()];
+    }
+
+    function clockToMinutes(value) {
+      const match = String(value || "").match(/^(\d{2}):(\d{2})$/);
+      return match ? Number(match[1]) * 60 + Number(match[2]) : null;
+    }
+
+    // Published hours for one calendar date: a dated exception first, then the weekly schedule of
+    // the researched period that contains the date. Outside every period the answer is unknown.
+    function getHoursForDate(hours, isoDate) {
+      const day = weekdayKeyForIsoDate(isoDate);
+      if (!hours || hours.status !== "hours-checked" || !day) return { day, ranges: null };
+      const exception = (hours.exceptions || []).find((item) => item.date === isoDate);
+      if (exception) return { day, ranges: exception.hours, exception };
+      const period = (hours.periods || []).find((item) => item.from <= isoDate && isoDate <= item.to);
+      return { day, ranges: period ? period.weekly?.[day] ?? null : null };
+    }
+
+    // Compare a scheduled stop with the place's published hours on that calendar date.
+    // states: open | closed | outside-hours | open-day (untimed stop) | unknown
+    // A range with no closing time ([open, null]) means only the opening time is published.
+    function checkStopHours(step, isoDate, hours) {
+      const { day, ranges, exception } = getHoursForDate(hours, isoDate);
+      if (!Array.isArray(ranges)) return { state: "unknown", day };
+      if (!ranges.length) return { state: "closed", day, ranges, exception };
+      const minutes = parseTimelineTimeToMinutes(step?.time);
+      if (minutes === null) return { state: "open-day", day, ranges, exception };
+      const inside = ranges.some(([open, close]) => clockToMinutes(open) <= minutes && (close === null || minutes < clockToMinutes(close)));
+      return { state: inside ? "open" : "outside-hours", day, ranges, exception };
     }
 
     // A day's area comes from the places it actually visits (title, highlight, stop titles), never from its position.
@@ -6174,7 +6304,7 @@ function getBlueprintTopPlaces() {
                             <div class="timeline-step-copy-block">
                               <p class="timeline-title">${escapeTripText(step.title)}</p>
                               <p class="timeline-copy timeline-step-copy mt-2">${escapeTripText(step.copy)}</p>
-                              ${renderStepPlaceFacts(step)}
+                              ${renderStepPlaceFacts(step, getTripDayIsoDate(index))}
                               ${renderTimelineAnchorBadges(step, day, index, hbState.currentTrip.days.length, stepIndex)}
                               ${hbState.currentTripMapQuery === day.id && hbState.currentTripMapStepIndex === stepIndex ? `<span class="timeline-focus-chip is-active">On the map</span>` : ""}
                             </div>
@@ -6538,6 +6668,7 @@ try {
 
 Object.assign(hbUtils, {
   readTripCollection,
+  openActiveTripOnLoad,
   openTripFromCollection,
   startNewTrip,
   getFlightPlanStatus,
