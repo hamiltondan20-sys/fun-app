@@ -66,6 +66,10 @@ The native redirect can prevent visitors from reaching that old interface to
 export after cutover. Therefore provide advance notice and a recovery plan
 before enabling the binding, rather than promising loss-free migration.
 
+October 10: the move is on hold while the site is built out, so the live
+"preparing to move" notice was removed from the planner and Saved panel. Restore
+it a few weeks before an agreed cutover date (wording below).
+
 Proposed pre-cutover notice, requiring separate approval before publication:
 "We are moving to thefullestlifetravel.com on [confirmed date]. If you have a
 saved trip, open Saved > Beta local account and choose Export backup before
