@@ -39,7 +39,9 @@ What each column rests on (identical across all eight runs unless noted):
 
 1. **Places.** Every named stop is one of 19 registry places: the 16 guide places plus 3
    lunches added in this round. Each has a checked location, published weekly hours and a
-   dated official source. Free time is labelled free time (11 blocks).
+   dated official source. Free time is labelled free time: 11 blocks at first, 9 after the
+   Singapore run stopped generic padding on researched days. Days 3 and 5 no longer get an
+   inserted "Afternoon follow-through" block.
 2. **Coverage.**
    - 5 researched days, 1 open day ("Open day near Scheunenviertel") and a closing morning.
    - The open day is labelled as open and does not repeat a researched day.

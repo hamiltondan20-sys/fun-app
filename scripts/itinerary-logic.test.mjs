@@ -205,11 +205,11 @@ test("Berlin Easygoing: the two three-stop days lose their evening stop; everyth
     assert.equal(day.title, before.title, "same days in the same order");
     const evening = day.item.timeline[day.item.timeline.length - 1];
     if (dropped.includes(before.item.timeline.at(-1).placeId)) {
-      // The evening stop becomes labelled free time (not a gap), and no padding is added.
+      // The evening stop becomes labelled free time (not a gap) in the same slot.
       assert.equal(evening.kind, "flexible");
       assert.ok(!evening.placeId);
       assert.match(evening.copy, /^Easygoing pace:/);
-      assert.ok(day.item.timeline.length < before.item.timeline.length, `${day.title} is lighter`);
+      assert.equal(day.item.timeline.length, before.item.timeline.length);
     } else {
       assert.deepEqual([...day.item.timeline.map((step) => step.title)], [...before.item.timeline.map((step) => step.title)], `${day.title} unchanged`);
     }
@@ -226,6 +226,100 @@ test("Berlin Easygoing: the two three-stop days lose their evening stop; everyth
   });
   // Other paces leave templates untouched.
   templates.forEach((template) => assert.equal(easy.logic.applyPaceToTemplate(template, "Packed"), template));
+});
+
+// ---- Singapore pilot ----
+
+test("Singapore: every scheduled stop is a checked registry place or free time, once, inside Singapore", () => {
+  const logic = loadLogic();
+  const registry = logic.window.HB_PLACES.places;
+  const templates = logic.window.HB_TRIP_HELPERS.getConcreteTripTemplates("Singapore", logic.window.HB_TRIP_HELPERS.getAreaSet("Singapore"));
+  assert.equal(templates.length, 5, "four researched days plus a closing morning");
+  const steps = templates.flatMap((day) => day.timeline);
+  steps.forEach((step) => {
+    if (step.kind === "flexible") return assert.ok(!step.placeId, `${step.title}: free time must not name a venue`);
+    const place = registry[step.placeId];
+    assert.ok(place, `${step.title}: not in the places registry`);
+    assert.equal(place.city, "singapore");
+    assert.equal(place.timeZone, "Asia/Singapore");
+    assert.ok(place.coordinates.lat > 1.2 && place.coordinates.lat < 1.5 && place.coordinates.lng > 103.6 && place.coordinates.lng < 104.1, `${place.name} outside Singapore`);
+    assert.ok(place.verification.checked.includes("published-weekly-hours"), `${place.name}: published hours were checked`);
+    assert.ok(place.verification.evidence[0].url.startsWith("https://"));
+  });
+  const placeIds = steps.map((step) => step.placeId).filter(Boolean);
+  assert.equal(new Set(placeIds).size, placeIds.length, "duplicate stop");
+  // The guide review excluded Flower Dome and the earlier unreviewed picks; none may come back.
+  assert.ok(!steps.some((step) => /Flower Dome|Lau Pa Sat|Satay by the Bay|Maxwell|Boat Quay/.test(`${step.title} ${step.copy}`)));
+});
+
+test("Singapore 7-day trip: four researched days, honest open days, and every long hop timed", () => {
+  const anchors = [{ label: "One memorable dinner", key: "onememorabledinner", type: "food", source: "traveler" }];
+  const { logic, days, schedule } = buildCityTrip("Singapore", 7, anchors);
+  assert.equal(new Set(days.map((day) => day.title)).size, 7, "no repeated days");
+  assert.equal(days[6].title, "Last morning in Tiong Bahru");
+  [4, 5].forEach((index) => assert.ok(days[index].item.timeline.every((step) => step.kind === "flexible"), `${days[index].title} is open time`));
+  assert.ok(days.slice(0, 4).every((day) => day.areaConfirmed));
+  days.forEach((day) => day.item.timeline.forEach((step) => {
+    const travel = step.travelFromPrevious;
+    if (!travel) return;
+    if (travel.distanceKm >= 1.5) {
+      assert.equal(travel.basis, "routed", `${step.title}: long hop without a stored journey`);
+      assert.match(travel.source, /Transitous/);
+      assert.ok(travel.minutes > 0 && travel.minutes < 60);
+    } else if (travel.basis === "estimate") {
+      assert.equal(travel.minutes, logic.estimateWalkMinutes(travel.distanceKm));
+    } else {
+      assert.ok(["routed", "same-site"].includes(travel.basis), `${step.title}: ${travel.basis}`);
+    }
+  }));
+  // The Gallery-to-ArtScience walk follows the street route around the bay, not the straight line.
+  const artScience = days[0].item.timeline.find((step) => step.placeId === "plc_singapore_artscience-museum");
+  assert.equal(artScience.travelFromPrevious.basis, "routed");
+  assert.equal(artScience.travelFromPrevious.mode, "walk");
+  assert.ok(artScience.travelFromPrevious.minutes > logic.estimateWalkMinutes(artScience.travelFromPrevious.distanceKm));
+  const dinnerDay = schedule.byDay.findIndex((list) => list.some((anchor) => anchor.key === "onememorabledinner"));
+  assert.equal(days[dinnerDay].title, "Tiong Bahru and a riverside dinner");
+});
+
+test("Singapore hours: no stop lands on a closed day for any start date, including ATLAS's dated closure", () => {
+  for (let offset = 0; offset < 14; offset += 1) {
+    const start = isoPlus("2026-10-12", offset);
+    const { logic, days } = buildCityTrip("Singapore", 7, [], start);
+    const closed = hoursConflicts(logic, days, start).filter(({ check }) => check.state === "closed");
+    assert.deepEqual([...closed.map(({ day, title }) => `${day} ${title}`)], [], `start ${start}`);
+    assert.equal(days[6].title, "Last morning in Tiong Bahru");
+  }
+});
+
+test("Singapore Easygoing: the museum afternoon and the late drink become free time", () => {
+  const balanced = buildCityTrip("Singapore", 7, []);
+  const easy = buildCityTrip("Singapore", 7, [], null, "Easygoing");
+  const placeIds = (trip) => [...trip.days.flatMap((day) => day.item.timeline.map((step) => step.placeId).filter(Boolean))];
+  assert.deepEqual(placeIds(balanced).filter((id) => !placeIds(easy).includes(id)), ["plc_singapore_artscience-museum", "plc_singapore_jigger-and-pony"]);
+  // Without the museum, lunch to the Gardens is a stored MRT journey.
+  const gardens = easy.days[0].item.timeline.find((step) => step.placeId === "plc_singapore_gardens-by-the-bay-outdoor-gardens");
+  assert.equal(gardens.travelFromPrevious.basis, "routed");
+  assert.equal(gardens.travelFromPrevious.mode, "transit");
+});
+
+test("Researched days are never padded with generic stops", () => {
+  ["Berlin", "Singapore"].forEach((city) => {
+    const { days } = buildCityTrip(city, 7, []);
+    const logic = loadLogic();
+    const templates = logic.window.HB_TRIP_HELPERS.getConcreteTripTemplates(city, []);
+    days.filter((day) => day.item.timeline.some((step) => step.placeId)).forEach((day) => {
+      const written = templates.find((template) => template.title === day.title);
+      assert.deepEqual([...day.item.timeline.map((step) => step.title)], [...written.timeline.map((step) => step.title)], `${city}: ${day.title}`);
+    });
+  });
+});
+
+test("Opening hours that run past midnight", () => {
+  const logic = loadLogic();
+  const hours = logic.window.HB_PLACES.places["plc_singapore_gardens-by-the-bay-outdoor-gardens"].hours;
+  assert.equal(logic.checkStopHours({ time: "5:30 PM" }, "2026-11-11", hours).state, "open");
+  assert.equal(logic.checkStopHours({ time: "11:30 PM" }, "2026-11-11", hours).state, "open");
+  assert.equal(logic.checkStopHours({ time: "4:00 AM" }, "2026-11-11", hours).state, "outside-hours");
 });
 
 test("Must-haves: a stop can cover a named need beyond its title", () => {

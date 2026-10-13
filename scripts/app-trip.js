@@ -907,7 +907,7 @@ function getBlueprintTopPlaces() {
       if (longestMove) {
         const travel = longestMove.travelFromPrevious;
         if (travel.basis === "routed") {
-          return `The longest move is to ${longestMove.title}: about ${travel.minutes} min by public transport (${travel.summary}).`;
+          return `The longest move is to ${longestMove.title}: about ${travel.minutes} min ${travel.mode === "walk" ? "on foot" : "by public transport"} (${travel.summary}).`;
         }
         if (travel.distanceKm >= 2) {
           return `The longest move is about ${travel.distanceKm} km (straight line) to ${longestMove.title}; plan public transport or a taxi. Its travel time is not calculated.`;
@@ -1975,7 +1975,9 @@ function getBlueprintTopPlaces() {
       }
 
       // Days that already schedule free time stay as written: padding them would invent stops.
-      if (expanded.some((step) => step.kind === "flexible")) return timeline;
+      // So do researched days built from registry places: their timing is written deliberately
+      // (a break inserted mid-visit would contradict "allow two hours").
+      if (expanded.some((step) => step.kind === "flexible" || step.placeId)) return timeline;
 
       // Never pad a day with a kind of stop it already has (a second coffee break, a second stroll).
       const titles = expanded.map((step) => String(step.title || "").toLowerCase());
@@ -3263,6 +3265,9 @@ function getBlueprintTopPlaces() {
     // How to get here from the previous stop, labelled by where the number came from.
     function describeTravelLine(travel) {
       if (!travel || travel.distanceKm == null) return "";
+      if (travel.basis === "routed" && travel.mode === "walk") {
+        return `<li>About ${travel.minutes} min walk: ${escapeHtml(travel.summary)} (street route checked ${formatDate(travel.checkedOn)}).</li>`;
+      }
       if (travel.basis === "routed") {
         return `<li>About ${travel.minutes} min by public transport: ${escapeHtml(travel.summary)} (timetable checked ${formatDate(travel.checkedOn)} for ${escapeHtml(travel.conditions)}; times vary by day and hour).</li>`;
       }
@@ -4263,7 +4268,7 @@ function getBlueprintTopPlaces() {
       const distanceKm = straightLineKm(from, to);
       const journey = routes?.journeys?.[`${previousPlace.id}|${place.id}`];
       if (journey) {
-        return { distanceKm, minutes: journey.minutes, mode: journey.mode, basis: "routed", summary: journey.summary, conditions: journey.conditions, checkedOn: journey.checkedOn, source: routes.source };
+        return { distanceKm, minutes: journey.minutes, mode: journey.mode, basis: "routed", summary: journey.summary, conditions: journey.conditions, checkedOn: journey.checkedOn, source: journey.source || routes.source };
       }
       // Places registered at the same point (e.g. a restaurant inside a museum) share a site.
       if (distanceKm < SAME_SITE_MAX_KM) {
@@ -4331,7 +4336,13 @@ function getBlueprintTopPlaces() {
       if (!ranges.length) return { state: "closed", day, ranges, exception };
       const minutes = parseTimelineTimeToMinutes(step?.time);
       if (minutes === null) return { state: "open-day", day, ranges, exception };
-      const inside = ranges.some(([open, close]) => clockToMinutes(open) <= minutes && (close === null || minutes < clockToMinutes(close)));
+      // A closing time at or before the opening time runs past midnight (e.g. 05:00-02:00).
+      const inside = ranges.some(([open, close]) => {
+        const openMinutes = clockToMinutes(open);
+        if (close === null) return openMinutes <= minutes;
+        const closeMinutes = clockToMinutes(close) <= openMinutes ? clockToMinutes(close) + 24 * 60 : clockToMinutes(close);
+        return openMinutes <= minutes && minutes < closeMinutes;
+      });
       return { state: inside ? "open" : "outside-hours", day, ranges, exception };
     }
 

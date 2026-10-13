@@ -2055,6 +2055,1337 @@ window.HB_PLACES = {
         ]
       }
     },
+    "plc_singapore_national-gallery-singapore": {
+      "id": "plc_singapore_national-gallery-singapore",
+      "name": "National Gallery Singapore",
+      "city": "singapore",
+      "kind": "landmark",
+      "area": "Civic District",
+      "timeZone": "Asia/Singapore",
+      "address": "1 St Andrew's Road, Singapore",
+      "coordinates": {
+        "lat": 1.29026,
+        "lng": 103.85147,
+        "basis": "named feature at 1 St Andrew's Road",
+        "osm": "node/4759240362",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-12"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-12",
+        "periods": [
+          {
+            "from": "2026-10-12",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": "18:30",
+        "caveat": "The UOB Southeast Asia Gallery is closed until late 2027; other galleries are open.",
+        "notes": "Only the building entrances (for restaurants and bars) stay open late; the galleries close at 19:00. No exceptions listed for November or December 2026.",
+        "evidence": {
+          "url": "https://www.nationalgallery.sg/sg/en/visit/visitor-information.html",
+          "quote": "Daily, 10am – 7pm | Last admission: 6.30pm",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-06",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site",
+            "url": "https://www.nationalgallery.sg/sg/en/visit/visitor-information.html",
+            "retrievedOn": "2026-10-06",
+            "note": "Current visitor page gives 1 St Andrew's Road, advertised daily opening, tickets and accessible entrances. UOB Southeast Asia Gallery is closed until late 2027; other displays remain open. October road and entrance restrictions are described, not a whole-museum closure. Tourism board corroborates the City Hall and former Supreme Court location."
+          }
+        ]
+      }
+    },
+    "plc_singapore_national-kitchen-by-violet-oon": {
+      "id": "plc_singapore_national-kitchen-by-violet-oon",
+      "name": "National Kitchen by Violet Oon",
+      "city": "singapore",
+      "kind": "meal",
+      "area": "Civic District",
+      "timeZone": "Asia/Singapore",
+      "address": "1 St Andrew's Road #02-01, Singapore (inside National Gallery Singapore, City Hall wing)",
+      "coordinates": {
+        "lat": 1.29026,
+        "lng": 103.85147,
+        "basis": "the Gallery's named feature; the restaurant is inside it, City Hall wing level 2",
+        "osm": "node/4759240362",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-12"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-12",
+        "periods": [
+          {
+            "from": "2026-10-12",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "22:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "22:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "22:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "22:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "12:00",
+                  "17:00"
+                ],
+                [
+                  "18:00",
+                  "22:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "12:00",
+                  "17:00"
+                ],
+                [
+                  "18:00",
+                  "22:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "12:00",
+                  "17:00"
+                ],
+                [
+                  "18:00",
+                  "22:30"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": "Last orders: lunch 14:30, high tea 16:00, dinner 21:30",
+        "caveat": "High tea (15:00-17:00) is served Friday to Sunday only. Enter by the Gallery's Coleman Street entrance.",
+        "notes": "Friday to Sunday, lunch runs straight into high tea, so the hours are merged as 12:00-17:00.",
+        "evidence": {
+          "url": "https://violetoon.com/national-kitchen-by-violet-oon-national-gallery-singapore/",
+          "quote": "Lunch 12PM – 3PM (last order 2:30PM) | High Tea 3PM – 5PM (last order 4PM) Friday – Sunday only | Dinner 6PM – 10.30PM (last order 9:30PM)",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-06",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site",
+            "url": "https://violetoon.com/national-kitchen-by-violet-oon-national-gallery-singapore/",
+            "retrievedOn": "2026-10-06",
+            "note": "Own page lists 1 St Andrew's Road #02-01, City Hall wing, Coleman Street access, lunch/dinner menus and booking links. High tea is Friday to Sunday rather than daily. Tourism board corroborates the named restaurant within the Gallery."
+          }
+        ]
+      }
+    },
+    "plc_singapore_artscience-museum": {
+      "id": "plc_singapore_artscience-museum",
+      "name": "ArtScience Museum",
+      "city": "singapore",
+      "kind": "landmark",
+      "area": "Marina Bay",
+      "timeZone": "Asia/Singapore",
+      "address": "6 Bayfront Avenue, Singapore",
+      "coordinates": {
+        "lat": 1.28614,
+        "lng": 103.85923,
+        "basis": "named feature at 6 Bayfront Avenue",
+        "osm": "node/11361584770",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-12"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-12",
+        "periods": [
+          {
+            "from": "2026-10-12",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": "17:00",
+        "caveat": "Entry to the museum is free; selected exhibitions are ticketed separately.",
+        "notes": "Read directly from the operator's page on 2026-10-12 (an earlier automated fetch timed out).",
+        "evidence": {
+          "url": "https://www.marinabaysands.com/museum/plan-your-visit.html",
+          "quote": "Opening Hours Days Time Daily 9am – 6pm (Last entry at 5pm) Box Office: 9am – 5pm",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-06",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site",
+            "url": "https://www.marinabaysands.com/museum.html",
+            "retrievedOn": "2026-10-06",
+            "note": "Marina Bay Sands advertises current exhibitions, tickets and daily visits. Visitor page places museum at 6 Bayfront Avenue and provides Bayfront MRT walking routes. Entry to the building and paid exhibitions differ; no promise one ticket covers all exhibits."
+          }
+        ]
+      }
+    },
+    "plc_singapore_gardens-by-the-bay-outdoor-gardens": {
+      "id": "plc_singapore_gardens-by-the-bay-outdoor-gardens",
+      "name": "Gardens by the Bay outdoor gardens",
+      "city": "singapore",
+      "kind": "scenic",
+      "area": "Marina Bay",
+      "timeZone": "Asia/Singapore",
+      "address": "18 Marina Gardens Drive, Singapore (free outdoor gardens and Supertree Grove)",
+      "coordinates": {
+        "lat": 1.282,
+        "lng": 103.86394,
+        "basis": "named feature: Supertree Grove, at the centre of the free outdoor gardens (not the paid conservatories)",
+        "osm": "way/171979084",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-12"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-12",
+        "periods": [
+          {
+            "from": "2026-10-12",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "05:00",
+                  "02:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "05:00",
+                  "02:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "05:00",
+                  "02:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "05:00",
+                  "02:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "05:00",
+                  "02:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "05:00",
+                  "02:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "05:00",
+                  "02:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": "The Garden Rhapsody light show runs daily at 19:45 and 20:45. Supertree Grove may be ticketed during Christmas events (from 29 November; dates not published).",
+        "notes": "Hours cover the free outdoor gardens only; the conservatories and Skyway are ticketed and have their own maintenance days. Pedestrians on the Waterfront Promenade have a slight diversion.",
+        "evidence": {
+          "url": "https://www.gardensbythebay.com.sg/en/plan-your-visit/opening-hours.html",
+          "quote": "Outdoor Gardens ... Daily: 5.00am – 2.00am. | Garden Rhapsody: Daily, 7.45pm & 8.45pm",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-06",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site",
+            "url": "https://www.gardensbythebay.com.sg/en/plan-your-visit/opening-hours.html",
+            "retrievedOn": "2026-10-06",
+            "note": "Operator lists outdoor gardens at 18 Marina Gardens Drive with current daily access. Scope excludes ticketed conservatories and elevated attractions. Flower Dome has a maintenance closure on the check date; bridge works divert pedestrians. Check current notices before visiting."
+          }
+        ]
+      }
+    },
+    "plc_singapore_singapore-botanic-gardens": {
+      "id": "plc_singapore_singapore-botanic-gardens",
+      "name": "Singapore Botanic Gardens",
+      "city": "singapore",
+      "kind": "scenic",
+      "area": "Tanglin",
+      "timeZone": "Asia/Singapore",
+      "address": "1 Cluny Road, Singapore (enter at Tanglin Gate)",
+      "coordinates": {
+        "lat": 1.31463,
+        "lng": 103.81562,
+        "basis": "centre of a garden about 2.5 km long; distances use Tanglin Gate",
+        "osm": "way/47257476",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-12"
+      },
+      "entrance": {
+        "name": "Tanglin Gate",
+        "lat": 1.30714,
+        "lng": 103.8186,
+        "osm": "node/602215681",
+        "note": "The gardens' southern entrance on Cluny Road, nearest Napier MRT and Dempsey.",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-12"
+      },
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-12",
+        "periods": [
+          {
+            "from": "2026-10-12",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "05:00",
+                  "24:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "05:00",
+                  "24:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "05:00",
+                  "24:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "05:00",
+                  "24:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "05:00",
+                  "24:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "05:00",
+                  "24:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "05:00",
+                  "24:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": "Some boardwalks and trails close from 19:00 to 07:00. The National Orchid Garden is ticketed separately.",
+        "notes": "The Healing Garden closes on Tuesdays and the Heritage Museum on the last Monday of each month. Dated maintenance closures of individual attractions were not readable.",
+        "evidence": {
+          "url": "https://sbg.nparks.gov.sg/visit/general-info/",
+          "quote": "Gardens 5am to 12mn daily",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-06",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "official public operator",
+            "url": "https://sbg.nparks.gov.sg/visit/general-info/",
+            "retrievedOn": "2026-10-06",
+            "note": "NParks lists daily garden access, free general admission and separate National Orchid Garden charges. Tanglin entrance is served by Napier MRT; Bukit Timah entrance by Botanic Gardens MRT. Visitor maps and access arrangements are published. Not a claim every garden attraction is open."
+          }
+        ]
+      }
+    },
+    "plc_singapore_candlenut": {
+      "id": "plc_singapore_candlenut",
+      "name": "Candlenut",
+      "city": "singapore",
+      "kind": "meal",
+      "area": "Dempsey",
+      "timeZone": "Asia/Singapore",
+      "address": "17A Dempsey Road, Singapore",
+      "coordinates": {
+        "lat": 1.30581,
+        "lng": 103.81003,
+        "basis": "named feature at 17A Dempsey Road",
+        "osm": "node/6370600536",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-12"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-12",
+        "periods": [
+          {
+            "from": "2026-10-12",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "22:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "22:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "22:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "22:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "22:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "22:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "22:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": null,
+        "notes": "No closure dates listed. Reservations are taken online.",
+        "evidence": {
+          "url": "https://www.comoepicurean.com/restaurants/candlenut/",
+          "quote": "Lunch: Mon to Sun, 12pm to 3pm | Dinner: Mon to Sun, Eve of Public Holidays, 6pm to 10pm",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-06",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site",
+            "url": "https://www.comoepicurean.com/restaurants/candlenut/",
+            "retrievedOn": "2026-10-06",
+            "note": "Operator lists 17A Dempsey Road, Singapore, current lunch and dinner menus, advertised daily service and a reservation link. Peranakan cooking is described by the restaurant. Dietary needs and availability require direct confirmation."
+          }
+        ]
+      }
+    },
+    "plc_singapore_singapore-zoo": {
+      "id": "plc_singapore_singapore-zoo",
+      "name": "Singapore Zoo",
+      "city": "singapore",
+      "kind": "landmark",
+      "area": "Mandai",
+      "timeZone": "Asia/Singapore",
+      "address": "80 Mandai Lake Road, Singapore",
+      "coordinates": {
+        "lat": 1.40371,
+        "lng": 103.79404,
+        "basis": "zoo grounds; distances use the main entrance at Entrance Plaza",
+        "osm": "way/262885931",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-12"
+      },
+      "entrance": {
+        "name": "Main entrance, Entrance Plaza",
+        "lat": 1.40467,
+        "lng": 103.79087,
+        "osm": "node/12666413113",
+        "note": "Visitor entrance beside the Singapore Zoo bus stop on Mandai Lake Road.",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-12"
+      },
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-12",
+        "periods": [
+          {
+            "from": "2026-10-12",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "08:30",
+                  "18:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "08:30",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "08:30",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "08:30",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "08:30",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "08:30",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "08:30",
+                  "18:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-10-29",
+            "hours": [
+              [
+                "08:30",
+                "18:00"
+              ]
+            ],
+            "note": "The Elephants of Asia exhibit and elephant sessions are unavailable; the zoo is open"
+          }
+        ],
+        "lastEntry": "17:00",
+        "caveat": "The African Penguin exhibit is closed for upgrading until 30 November 2026.",
+        "notes": "No holiday exceptions listed. Last tram departures run from 17:30 to 18:15 depending on the station.",
+        "evidence": {
+          "url": "https://www.mandai.com/en/singapore-zoo.html",
+          "quote": "Opening Hours: Daily, 8:30am – 6:00pm (Last Entry: 5:00pm)",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-06",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site",
+            "url": "https://www.mandai.com/en/singapore-zoo.html",
+            "retrievedOn": "2026-10-06",
+            "note": "Mandai advertises daily zoo opening, current ticket purchase, attraction map and visitor information. Its transport page provides routes to Mandai Wildlife Reserve. Recommendation is specifically Singapore Zoo, not every separately ticketed Mandai attraction."
+          }
+        ]
+      }
+    },
+    "plc_singapore_plain-vanilla-tiong-bahru": {
+      "id": "plc_singapore_plain-vanilla-tiong-bahru",
+      "name": "Plain Vanilla (Tiong Bahru)",
+      "city": "singapore",
+      "kind": "cafe",
+      "area": "Tiong Bahru",
+      "timeZone": "Asia/Singapore",
+      "address": "1D Yong Siak Street, Singapore",
+      "coordinates": {
+        "lat": 1.28228,
+        "lng": 103.83049,
+        "basis": "named feature at 1D Yong Siak Street (not the Holland Village branch)",
+        "osm": "way/481650008",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-12"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-12",
+        "periods": [
+          {
+            "from": "2026-10-12",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "07:30",
+                  "19:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "07:30",
+                  "19:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "07:30",
+                  "19:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "07:30",
+                  "19:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "07:30",
+                  "19:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "07:30",
+                  "19:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "07:30",
+                  "19:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": "15:50 (hot food last order)",
+        "caveat": "Festive closures are announced only on the café's Instagram.",
+        "notes": "Tiong Bahru branch only; the other branches are excluded.",
+        "evidence": {
+          "url": "https://plainvanilla.com.sg/pages/stores",
+          "quote": "Daily 7.30am — 7pm. Last orders for hot food menu is at 3.50pm.",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-06",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site",
+            "url": "https://plainvanilla.com.sg/pages/stores",
+            "retrievedOn": "2026-10-06",
+            "note": "Tiong Bahru section lists 1D Yong Siak Street, Singapore 168641, current daily service, brunch, baked goods and coffee. Hot-food service ends before cafe closing; stores do not take reservations. Holland Village's later reopening is a different branch and not recommended."
+          }
+        ]
+      }
+    },
+    "plc_singapore_tiong-bahru-bakery-eng-hoon-street": {
+      "id": "plc_singapore_tiong-bahru-bakery-eng-hoon-street",
+      "name": "Tiong Bahru Bakery (Eng Hoon Street)",
+      "city": "singapore",
+      "kind": "cafe",
+      "area": "Tiong Bahru",
+      "timeZone": "Asia/Singapore",
+      "address": "56 Eng Hoon Street #01-70, Singapore",
+      "coordinates": {
+        "lat": 1.28445,
+        "lng": 103.83365,
+        "basis": "named feature at 56 Eng Hoon Street",
+        "osm": "node/3100404287",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-12"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-12",
+        "periods": [
+          {
+            "from": "2026-10-12",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "07:30",
+                  "20:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "07:30",
+                  "20:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "07:30",
+                  "20:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "07:30",
+                  "20:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "07:30",
+                  "20:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "08:00",
+                  "20:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "08:00",
+                  "20:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": null,
+        "notes": "Eng Hoon Street branch only. The page does not say which hours apply on public holidays.",
+        "evidence": {
+          "url": "https://tiongbahrubakery.com/pages/locations",
+          "quote": "Mon – Fri from 7.30am to 8pm; Sat – Sun from 8am – 8pm",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-06",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site",
+            "url": "https://tiongbahrubakery.com/pages/locations",
+            "retrievedOn": "2026-10-06",
+            "note": "Own location list advertises the Tiong Bahru branch at 56 Eng Hoon Street #01-70, Singapore 160056, with current weekday/weekend hours. Own homepage describes pastries and coffee with current pickup ordering. Not confused with nearby Crumb & Go or non-Singapore branches."
+          }
+        ]
+      }
+    },
+    "plc_singapore_jumbo-seafood-riverside-point": {
+      "id": "plc_singapore_jumbo-seafood-riverside-point",
+      "name": "JUMBO Seafood (Riverside Point)",
+      "city": "singapore",
+      "kind": "meal",
+      "area": "Clarke Quay",
+      "timeZone": "Asia/Singapore",
+      "address": "30 Merchant Road #01-01/02, Riverside Point, Singapore",
+      "coordinates": {
+        "lat": 1.2889,
+        "lng": 103.84469,
+        "basis": "named feature at Riverside Point, 30 Merchant Road (not another JUMBO branch)",
+        "osm": "node/3806234846",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-12"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-12",
+        "periods": [
+          {
+            "from": "2026-10-12",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "11:30",
+                  "23:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "11:30",
+                  "23:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "11:30",
+                  "23:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "11:30",
+                  "23:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "11:30",
+                  "23:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "11:30",
+                  "23:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "11:30",
+                  "23:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": "22:15 (last order)",
+        "caveat": null,
+        "notes": "Riverside Point branch only. No closures listed.",
+        "evidence": {
+          "url": "https://www.jumboseafood.com.sg/en/riverside-point",
+          "quote": "Operating Hours (Daily) 11:30am – 11:00pm (Last order 10:15pm)",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-06",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site",
+            "url": "https://www.jumboseafood.com.sg/en/riverside-point",
+            "retrievedOn": "2026-10-06",
+            "note": "Exact branch page lists 30 Merchant Road #01-01/02 Riverside Point, Singapore 058282, daily service and links to current menus and reservations. Other JUMBO branches are not substituted for this address."
+          }
+        ]
+      }
+    },
+    "plc_singapore_jigger-and-pony": {
+      "id": "plc_singapore_jigger-and-pony",
+      "name": "Jigger & Pony",
+      "city": "singapore",
+      "kind": "meal",
+      "area": "Tanjong Pagar",
+      "timeZone": "Asia/Singapore",
+      "address": "Amara Singapore, 165 Tanjong Pagar Road, Singapore",
+      "coordinates": {
+        "lat": 1.27494,
+        "lng": 103.84366,
+        "basis": "the hotel's named feature; the bar is inside Amara Singapore",
+        "osm": "node/4302905385",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-12"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-12",
+        "periods": [
+          {
+            "from": "2026-10-12",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "18:00",
+                  "24:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "18:00",
+                  "24:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "18:00",
+                  "02:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "18:00",
+                  "02:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "18:00",
+                  "02:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "18:00",
+                  "02:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "18:00",
+                  "24:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": "Guests must be over 18.",
+        "notes": "No holiday exceptions stated.",
+        "evidence": {
+          "url": "https://www.jiggerandpony.com/",
+          "quote": "Sundays, Mondays & Tuesdays: 6pm - 12am; Wednesdays to Saturdays: 6pm - 2am; Happy Hour: daily 6pm - 7:30pm",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-06",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site",
+            "url": "https://www.jiggerandpony.com/",
+            "retrievedOn": "2026-10-06",
+            "note": "Own page lists Amara Singapore, 165 Tanjong Pagar Road, current cocktail and food menus, evening opening and a table reservation link. Entry is strictly for guests above 18. Not placed in the children's or breakfast fields."
+          }
+        ]
+      }
+    },
+    "plc_singapore_atlas": {
+      "id": "plc_singapore_atlas",
+      "name": "ATLAS",
+      "city": "singapore",
+      "kind": "meal",
+      "area": "Bugis",
+      "timeZone": "Asia/Singapore",
+      "address": "Parkview Square, 600 North Bridge Road, Singapore",
+      "coordinates": {
+        "lat": 1.3001,
+        "lng": 103.85771,
+        "basis": "named feature at Parkview Square, 600 North Bridge Road",
+        "osm": "node/6033094985",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-12"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-12",
+        "periods": [
+          {
+            "from": "2026-10-12",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "15:00",
+                  "24:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "12:00",
+                  "24:00"
+                ]
+              ],
+              "wed": null,
+              "thu": [
+                [
+                  "12:00",
+                  "24:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "12:00",
+                  "02:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "12:00",
+                  "02:00"
+                ]
+              ],
+              "sun": []
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-10-14",
+            "hours": [],
+            "note": "Dated one-off closure on the bar's own page"
+          }
+        ],
+        "lastEntry": null,
+        "caveat": "The bar's page shows two different sets of hours and none for regular Wednesdays; confirm with the bar before you go. Smart-casual dress code from 17:00.",
+        "notes": "Weekly hours follow the page's header block, which carries a dated closure for 14 Oct 2026 and so looks current; the footer block (Mon-Thu 10:00-01:00, Fri 10:00-02:00, Sat 15:00-02:00) looks older. Both say closed on Sundays. Spot-checked on the page on 2026-10-12.",
+        "evidence": {
+          "url": "https://www.atlasbar.sg/",
+          "quote": "Header: Mon: 3pm - 12am / 14 Oct Wed: CLOSED / Tues & Thurs: 12pm - 12am / Fri - Sat: 12pm - 2am / Sun: Closed. Footer: MON - THU: 10am - 1am / FRI: 10am - 2am / SAT: 3pm - 2am / SUN: Closed",
+          "confidence": "medium"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-06",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site",
+            "url": "https://www.atlasbar.sg/",
+            "retrievedOn": "2026-10-06",
+            "note": "Own page gives Parkview Square, 600 North Bridge Road, Singapore 188778, active dining/drink links and reservations, with evening dress rules. Top and footer hours differ; no fixed schedule is published in our guide. Verify the chosen date directly."
+          }
+        ]
+      }
+    },
     "plc_berlin_lebenswelten-bistro-humboldt-forum": {
       "id": "plc_berlin_lebenswelten-bistro-humboldt-forum",
       "name": "Lebenswelten Bistro (Humboldt Forum)",
@@ -2455,6 +3786,69 @@ window.HB_PLACES = {
         "conditions": "Wednesday 14 Oct 2026, departing about 18:50",
         "checkedOn": "2026-10-10",
         "alternatives": null
+      },
+      "plc_singapore_national-kitchen-by-violet-oon|plc_singapore_artscience-museum": {
+        "minutes": 26,
+        "mode": "walk",
+        "summary": "about 1.9 km on foot around the Marina Bay waterfront",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-12",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_singapore_artscience-museum|plc_singapore_gardens-by-the-bay-outdoor-gardens": {
+        "minutes": 14,
+        "mode": "walk",
+        "summary": "about 1 km on foot to Supertree Grove",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-12",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_singapore_national-kitchen-by-violet-oon|plc_singapore_gardens-by-the-bay-outdoor-gardens": {
+        "minutes": 28,
+        "mode": "transit",
+        "summary": "MRT from Esplanade (Circle Line, then Downtown Line at Promenade) to Bayfront, with about 1.4 km of walking in total",
+        "conditions": "Wednesday 14 Oct 2026, departing about 17:15",
+        "checkedOn": "2026-10-12",
+        "source": "Transitous journey planner (transitous.org), LTA timetable data",
+        "alternatives": "North-South Line from City Hall, then Circle Line: about 28 min; Bus 97: about 33 min"
+      },
+      "plc_singapore_singapore-botanic-gardens|plc_singapore_candlenut": {
+        "minutes": 17,
+        "mode": "walk",
+        "summary": "about 1.2 km on foot from Tanglin Gate to Dempsey Road",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-12",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_singapore_candlenut|plc_singapore_atlas": {
+        "minutes": 36,
+        "mode": "transit",
+        "summary": "Bus 7 to Bugis, with about 0.9 km of walking in total",
+        "conditions": "Wednesday 14 Oct 2026, departing about 20:10",
+        "checkedOn": "2026-10-12",
+        "source": "Transitous journey planner (transitous.org), LTA timetable data",
+        "alternatives": "Bus 174 then Downtown Line MRT: about 38 min"
+      },
+      "plc_singapore_plain-vanilla-tiong-bahru|plc_singapore_jumbo-seafood-riverside-point": {
+        "minutes": 23,
+        "mode": "transit",
+        "summary": "Bus 63, with about 1 km of walking in total",
+        "conditions": "Wednesday 14 Oct 2026, departing about 18:30",
+        "checkedOn": "2026-10-12",
+        "source": "Transitous journey planner (transitous.org), LTA timetable data",
+        "alternatives": "MRT from Tiong Bahru (East-West Line, then North-East Line at Outram Park): about 25 min"
+      },
+      "plc_singapore_jumbo-seafood-riverside-point|plc_singapore_jigger-and-pony": {
+        "minutes": 20,
+        "mode": "transit",
+        "summary": "MRT from Clarke Quay (North-East Line, then East-West Line at Outram Park) to Tanjong Pagar, with about 0.8 km of walking in total",
+        "conditions": "Wednesday 14 Oct 2026, departing about 21:00",
+        "checkedOn": "2026-10-12",
+        "source": "Transitous journey planner (transitous.org), LTA timetable data",
+        "alternatives": "Walking: about 29 min"
       }
     }
   }

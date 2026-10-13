@@ -263,6 +263,157 @@
       ],
       "caveat": "Inside the museum building; the page does not say whether a museum ticket is needed to eat here.",
       "notes": "Closed on Mondays, the same as the museum. Christmas dates follow the museum's own closures."
+    },
+    "plc_singapore_national-gallery-singapore": {
+      "url": "https://www.nationalgallery.sg/sg/en/visit/visitor-information.html",
+      "retrievedOn": "2026-10-12",
+      "confidence": "high",
+      "quote": "Daily, 10am – 7pm | Last admission: 6.30pm",
+      "lastEntry": "18:30",
+      "periods": [
+        { "from": "2026-10-12", "to": "2026-12-31", "weekly": { "mon": "10:00-19:00", "tue": "10:00-19:00", "wed": "10:00-19:00", "thu": "10:00-19:00", "fri": "10:00-19:00", "sat": "10:00-19:00", "sun": "10:00-19:00" } }
+      ],
+      "exceptions": [],
+      "caveat": "The UOB Southeast Asia Gallery is closed until late 2027; other galleries are open.",
+      "notes": "Only the building entrances (for restaurants and bars) stay open late; the galleries close at 19:00. No exceptions listed for November or December 2026."
+    },
+    "plc_singapore_national-kitchen-by-violet-oon": {
+      "url": "https://violetoon.com/national-kitchen-by-violet-oon-national-gallery-singapore/",
+      "retrievedOn": "2026-10-12",
+      "confidence": "high",
+      "quote": "Lunch 12PM – 3PM (last order 2:30PM) | High Tea 3PM – 5PM (last order 4PM) Friday – Sunday only | Dinner 6PM – 10.30PM (last order 9:30PM)",
+      "lastEntry": "Last orders: lunch 14:30, high tea 16:00, dinner 21:30",
+      "periods": [
+        { "from": "2026-10-12", "to": "2026-12-31", "weekly": { "mon": "12:00-15:00,18:00-22:30", "tue": "12:00-15:00,18:00-22:30", "wed": "12:00-15:00,18:00-22:30", "thu": "12:00-15:00,18:00-22:30", "fri": "12:00-17:00,18:00-22:30", "sat": "12:00-17:00,18:00-22:30", "sun": "12:00-17:00,18:00-22:30" } }
+      ],
+      "exceptions": [],
+      "caveat": "High tea (15:00-17:00) is served Friday to Sunday only. Enter by the Gallery's Coleman Street entrance.",
+      "notes": "Friday to Sunday, lunch runs straight into high tea, so the hours are merged as 12:00-17:00."
+    },
+    "plc_singapore_artscience-museum": {
+      "url": "https://www.marinabaysands.com/museum/plan-your-visit.html",
+      "retrievedOn": "2026-10-12",
+      "confidence": "high",
+      "quote": "Opening Hours Days Time Daily 9am – 6pm (Last entry at 5pm) Box Office: 9am – 5pm",
+      "lastEntry": "17:00",
+      "periods": [
+        { "from": "2026-10-12", "to": "2026-12-31", "weekly": { "mon": "09:00-18:00", "tue": "09:00-18:00", "wed": "09:00-18:00", "thu": "09:00-18:00", "fri": "09:00-18:00", "sat": "09:00-18:00", "sun": "09:00-18:00" } }
+      ],
+      "exceptions": [],
+      "caveat": "Entry to the museum is free; selected exhibitions are ticketed separately.",
+      "notes": "Read directly from the operator's page on 2026-10-12 (an earlier automated fetch timed out)."
+    },
+    "plc_singapore_gardens-by-the-bay-outdoor-gardens": {
+      "url": "https://www.gardensbythebay.com.sg/en/plan-your-visit/opening-hours.html",
+      "retrievedOn": "2026-10-12",
+      "confidence": "high",
+      "quote": "Outdoor Gardens ... Daily: 5.00am – 2.00am. | Garden Rhapsody: Daily, 7.45pm & 8.45pm",
+      "periods": [
+        { "from": "2026-10-12", "to": "2026-12-31", "weekly": { "mon": "05:00-02:00", "tue": "05:00-02:00", "wed": "05:00-02:00", "thu": "05:00-02:00", "fri": "05:00-02:00", "sat": "05:00-02:00", "sun": "05:00-02:00" } }
+      ],
+      "exceptions": [],
+      "caveat": "The Garden Rhapsody light show runs daily at 19:45 and 20:45. Supertree Grove may be ticketed during Christmas events (from 29 November; dates not published).",
+      "notes": "Hours cover the free outdoor gardens only; the conservatories and Skyway are ticketed and have their own maintenance days. Pedestrians on the Waterfront Promenade have a slight diversion."
+    },
+    "plc_singapore_singapore-botanic-gardens": {
+      "url": "https://sbg.nparks.gov.sg/visit/general-info/",
+      "retrievedOn": "2026-10-12",
+      "confidence": "high",
+      "quote": "Gardens 5am to 12mn daily",
+      "periods": [
+        { "from": "2026-10-12", "to": "2026-12-31", "weekly": { "mon": "05:00-00:00", "tue": "05:00-00:00", "wed": "05:00-00:00", "thu": "05:00-00:00", "fri": "05:00-00:00", "sat": "05:00-00:00", "sun": "05:00-00:00" } }
+      ],
+      "exceptions": [],
+      "caveat": "Some boardwalks and trails close from 19:00 to 07:00. The National Orchid Garden is ticketed separately.",
+      "notes": "The Healing Garden closes on Tuesdays and the Heritage Museum on the last Monday of each month. Dated maintenance closures of individual attractions were not readable."
+    },
+    "plc_singapore_candlenut": {
+      "url": "https://www.comoepicurean.com/restaurants/candlenut/",
+      "retrievedOn": "2026-10-12",
+      "confidence": "high",
+      "quote": "Lunch: Mon to Sun, 12pm to 3pm | Dinner: Mon to Sun, Eve of Public Holidays, 6pm to 10pm",
+      "periods": [
+        { "from": "2026-10-12", "to": "2026-12-31", "weekly": { "mon": "12:00-15:00,18:00-22:00", "tue": "12:00-15:00,18:00-22:00", "wed": "12:00-15:00,18:00-22:00", "thu": "12:00-15:00,18:00-22:00", "fri": "12:00-15:00,18:00-22:00", "sat": "12:00-15:00,18:00-22:00", "sun": "12:00-15:00,18:00-22:00" } }
+      ],
+      "exceptions": [],
+      "notes": "No closure dates listed. Reservations are taken online."
+    },
+    "plc_singapore_singapore-zoo": {
+      "url": "https://www.mandai.com/en/singapore-zoo.html",
+      "retrievedOn": "2026-10-12",
+      "confidence": "high",
+      "quote": "Opening Hours: Daily, 8:30am – 6:00pm (Last Entry: 5:00pm)",
+      "lastEntry": "17:00",
+      "periods": [
+        { "from": "2026-10-12", "to": "2026-12-31", "weekly": { "mon": "08:30-18:00", "tue": "08:30-18:00", "wed": "08:30-18:00", "thu": "08:30-18:00", "fri": "08:30-18:00", "sat": "08:30-18:00", "sun": "08:30-18:00" } }
+      ],
+      "exceptions": [
+        { "date": "2026-10-29", "hours": "08:30-18:00", "note": "The Elephants of Asia exhibit and elephant sessions are unavailable; the zoo is open" }
+      ],
+      "caveat": "The African Penguin exhibit is closed for upgrading until 30 November 2026.",
+      "notes": "No holiday exceptions listed. Last tram departures run from 17:30 to 18:15 depending on the station."
+    },
+    "plc_singapore_plain-vanilla-tiong-bahru": {
+      "url": "https://plainvanilla.com.sg/pages/stores",
+      "retrievedOn": "2026-10-12",
+      "confidence": "high",
+      "quote": "Daily 7.30am — 7pm. Last orders for hot food menu is at 3.50pm.",
+      "lastEntry": "15:50 (hot food last order)",
+      "periods": [
+        { "from": "2026-10-12", "to": "2026-12-31", "weekly": { "mon": "07:30-19:00", "tue": "07:30-19:00", "wed": "07:30-19:00", "thu": "07:30-19:00", "fri": "07:30-19:00", "sat": "07:30-19:00", "sun": "07:30-19:00" } }
+      ],
+      "exceptions": [],
+      "caveat": "Festive closures are announced only on the café's Instagram.",
+      "notes": "Tiong Bahru branch only; the other branches are excluded."
+    },
+    "plc_singapore_tiong-bahru-bakery-eng-hoon-street": {
+      "url": "https://tiongbahrubakery.com/pages/locations",
+      "retrievedOn": "2026-10-12",
+      "confidence": "high",
+      "quote": "Mon – Fri from 7.30am to 8pm; Sat – Sun from 8am – 8pm",
+      "periods": [
+        { "from": "2026-10-12", "to": "2026-12-31", "weekly": { "mon": "07:30-20:00", "tue": "07:30-20:00", "wed": "07:30-20:00", "thu": "07:30-20:00", "fri": "07:30-20:00", "sat": "08:00-20:00", "sun": "08:00-20:00" } }
+      ],
+      "exceptions": [],
+      "notes": "Eng Hoon Street branch only. The page does not say which hours apply on public holidays."
+    },
+    "plc_singapore_jumbo-seafood-riverside-point": {
+      "url": "https://www.jumboseafood.com.sg/en/riverside-point",
+      "retrievedOn": "2026-10-12",
+      "confidence": "high",
+      "quote": "Operating Hours (Daily) 11:30am – 11:00pm (Last order 10:15pm)",
+      "lastEntry": "22:15 (last order)",
+      "periods": [
+        { "from": "2026-10-12", "to": "2026-12-31", "weekly": { "mon": "11:30-23:00", "tue": "11:30-23:00", "wed": "11:30-23:00", "thu": "11:30-23:00", "fri": "11:30-23:00", "sat": "11:30-23:00", "sun": "11:30-23:00" } }
+      ],
+      "exceptions": [],
+      "notes": "Riverside Point branch only. No closures listed."
+    },
+    "plc_singapore_jigger-and-pony": {
+      "url": "https://www.jiggerandpony.com/",
+      "retrievedOn": "2026-10-12",
+      "confidence": "high",
+      "quote": "Sundays, Mondays & Tuesdays: 6pm - 12am; Wednesdays to Saturdays: 6pm - 2am; Happy Hour: daily 6pm - 7:30pm",
+      "periods": [
+        { "from": "2026-10-12", "to": "2026-12-31", "weekly": { "mon": "18:00-00:00", "tue": "18:00-00:00", "wed": "18:00-02:00", "thu": "18:00-02:00", "fri": "18:00-02:00", "sat": "18:00-02:00", "sun": "18:00-00:00" } }
+      ],
+      "exceptions": [],
+      "caveat": "Guests must be over 18.",
+      "notes": "No holiday exceptions stated."
+    },
+    "plc_singapore_atlas": {
+      "url": "https://www.atlasbar.sg/",
+      "retrievedOn": "2026-10-12",
+      "confidence": "medium",
+      "quote": "Header: Mon: 3pm - 12am / 14 Oct Wed: CLOSED / Tues & Thurs: 12pm - 12am / Fri - Sat: 12pm - 2am / Sun: Closed. Footer: MON - THU: 10am - 1am / FRI: 10am - 2am / SAT: 3pm - 2am / SUN: Closed",
+      "periods": [
+        { "from": "2026-10-12", "to": "2026-12-31", "weekly": { "mon": "15:00-00:00", "tue": "12:00-00:00", "wed": "unknown", "thu": "12:00-00:00", "fri": "12:00-02:00", "sat": "12:00-02:00", "sun": "closed" } }
+      ],
+      "exceptions": [
+        { "date": "2026-10-14", "hours": "closed", "note": "Dated one-off closure on the bar's own page" }
+      ],
+      "caveat": "The bar's page shows two different sets of hours and none for regular Wednesdays; confirm with the bar before you go. Smart-casual dress code from 17:00.",
+      "notes": "Weekly hours follow the page's header block, which carries a dated closure for 14 Oct 2026 and so looks current; the footer block (Mon-Thu 10:00-01:00, Fri 10:00-02:00, Sat 15:00-02:00) looks older. Both say closed on Sundays. Spot-checked on the page on 2026-10-12."
     }
   }
 }

@@ -295,7 +295,7 @@ window.HB_TRIP_HELPERS.getAreaSet = function(city) {
         Jeju: ["Jeju City", "Seongsan", "Jungmun"],
         Bangkok: ["Sukhumvit", "Old Town", "Riverside"],
         Phuket: ["Patong", "Old Phuket Town", "Kata / Karon"],
-        Singapore: ["Marina Bay", "Chinatown", "Tiong Bahru"],
+        Singapore: ["Tiong Bahru", "Civic District", "Marina Bay", "Tanglin", "Dempsey", "Clarke Quay", "Tanjong Pagar", "Bugis", "Mandai"],
         Bali: ["Seminyak", "Ubud", "Uluwatu"],
         Dubai: ["Downtown Dubai", "Dubai Marina", "Jumeirah"],
         "Abu Dhabi": ["Corniche", "Saadiyat Island", "Yas Island"],
@@ -6540,54 +6540,102 @@ window.HB_TRIP_HELPERS.getConcreteTripTemplates = function(city, areas) {
         ],
         Singapore: [
           {
-            title: "First day at Marina Bay",
-            rationale: "Singapore starts best with a polished waterfront day and one strong dinner, not an overbuilt arrival schedule.",
-            highlight: "Marina Bay + hawker dinner",
-            timeShape: "Polished waterfront day with a skyline close",
-            weather: "Keep the first day central so the city feels smooth right away.",
-            itemTitle: "Marina Bay opener + hawker lunch",
-            itemBody: "Open with Marina Bay, skyline views, and a hawker stop that still feels distinctly Singapore, then let the bay own the later part of the day too.",
-            fit: "It creates an immediate sense of place without turning the first day into a checklist.",
+            title: "National Gallery and Marina Bay",
+            rationale: "A civic-district morning, a Peranakan lunch in the same building, then the bay's museum and gardens into the evening.",
+            highlight: "Gardens by the Bay outdoor gardens",
+            timeShape: "Museum morning, bay afternoon, gardens at dusk",
+            weather: "The walks between stops are outdoors in the heat; carry water. The Gardens' conservatories are ticketed and not part of this day.",
+            itemTitle: "National Gallery + ArtScience Museum + Gardens by the Bay",
+            itemBody: "Start at National Gallery Singapore, have lunch at National Kitchen by Violet Oon inside it, walk around the bay to the ArtScience Museum, and end in the free outdoor gardens at Supertree Grove.",
+            fit: "Every move is on foot: about 26 minutes around the bay to the museum, then 14 minutes to the Supertrees.",
             timeline: [
-              { time: "9:00 AM", title: "Marina Bay promenade start", copy: "Stay close to the waterfront so the first stretch feels easy and polished." },
-              { time: "11:00 AM", title: "Merlion and Fullerton-side continuation", copy: "Use one connected waterfront loop for the city's clearest visual payoff instead of splitting the morning too widely." },
-              { time: "1:00 PM", title: "Lunch at Lau Pa Sat", copy: "A hawker-style first-day meal makes the trip feel properly Singapore." },
-              { time: "5:00 PM", title: "Helix Bridge and bay skyline at golden hour", copy: "Save the cleanest skyline stretch for later light so the city gets a stronger emotional payoff." },
-              { time: "8:00 PM", title: "Marina Bay Sands observation or rooftop close", copy: "Finish with one broader city view that still feels polished and central." }
+              { time: "10:00 AM", title: "National Gallery Singapore", copy: "In the former Supreme Court and City Hall at 1 St Andrew's Road. Allow at least two hours.", placeId: "plc_singapore_national-gallery-singapore" },
+              { time: "12:30 PM", title: "Lunch at National Kitchen by Violet Oon", copy: "Peranakan cooking on level 2 of the Gallery's City Hall wing. Booking recommended.", placeId: "plc_singapore_national-kitchen-by-violet-oon" },
+              { time: "3:00 PM", title: "ArtScience Museum", copy: "The lotus-shaped museum on the bay. Allow an hour or two.", placeId: "plc_singapore_artscience-museum" },
+              { time: "5:30 PM", title: "Gardens by the Bay at dusk", copy: "The free outdoor gardens and Supertree Grove. Stay for the Garden Rhapsody light show if you like.", placeId: "plc_singapore_gardens-by-the-bay-outdoor-gardens" }
+            ],
+            // Easygoing pace: the afternoon museum becomes free time before the gardens.
+            easygoing: {
+              drop: "plc_singapore_artscience-museum",
+              replacement: { time: "2:30 PM", title: "Free afternoon", copy: "Easygoing pace: rest through the hottest part of the day, then head to the Gardens for the evening.", kind: "flexible" },
+              rationale: "A civic-district morning, a Peranakan lunch in the same building, then the bay's gardens at dusk.",
+              timeShape: "Museum morning, free afternoon, gardens at dusk",
+              itemTitle: "National Gallery + Gardens by the Bay",
+              itemBody: "Start at National Gallery Singapore, have lunch at National Kitchen by Violet Oon inside it, rest in the afternoon, and end in the free outdoor gardens at Supertree Grove.",
+              fit: "One move in the afternoon: about 28 minutes by MRT from the Gallery to the Gardens."
+            }
+          },
+          {
+            title: "Botanic Gardens and Dempsey",
+            rationale: "The Botanic Gardens in the cool of the morning, a Peranakan lunch nearby, a long rest, and drinks in the evening.",
+            highlight: "Singapore Botanic Gardens",
+            timeShape: "Early garden walk, long lunch, evening drinks",
+            weather: "Go early: the gardens open at 5 AM and are much cooler before midday. Some boardwalks close in the evening.",
+            itemTitle: "Singapore Botanic Gardens + Candlenut + ATLAS",
+            itemBody: "Walk the Singapore Botanic Gardens from Tanglin Gate, walk on to Candlenut on Dempsey Road for lunch, keep the afternoon free, and end with a drink at ATLAS in Parkview Square.",
+            fit: "Lunch is a 17-minute walk from the gardens; the evening bar is a separate trip of about 36 minutes by bus.",
+            timeline: [
+              { time: "8:00 AM", title: "Singapore Botanic Gardens", copy: "Enter at Tanglin Gate on Cluny Road, near Napier MRT. General entry is free; the National Orchid Garden is ticketed.", placeId: "plc_singapore_singapore-botanic-gardens" },
+              { time: "12:30 PM", title: "Lunch at Candlenut", copy: "Peranakan restaurant at 17A Dempsey Road. Reserve ahead.", placeId: "plc_singapore_candlenut" },
+              { time: "2:30 PM", title: "Free afternoon", copy: "Nothing is scheduled. Rest through the hottest part of the day.", kind: "flexible" },
+              { time: "8:30 PM", title: "Drinks at ATLAS", copy: "A grand bar in Parkview Square. Smart-casual dress from 5 PM. Its own page shows two sets of hours, so confirm before you go.", placeId: "plc_singapore_atlas" }
             ]
           },
           {
-            title: "Gardens + civic core day",
-            rationale: "The obvious first-time Singapore moments get a full, coherent day here instead of being scattered around into a checklist.",
-            highlight: "Gardens by the Bay + civic center",
-            timeShape: "Signature-sight day with an elegant taper",
-            weather: "Let the central sights stay grouped so the day feels elegant and not too busy.",
-            itemTitle: "Gardens day + riverfront close",
-            itemBody: "Use the morning for Gardens by the Bay, then slow into lunch and one easier afternoon stretch nearby instead of trying to bolt on too many extra neighborhoods.",
-            fit: "It covers the city's signature visuals without asking the day to carry more than it needs.",
+            title: "Singapore Zoo",
+            rationale: "The zoo gets a morning of its own, because it is in the north of the island; the rest of the day is free.",
+            highlight: "Singapore Zoo",
+            timeShape: "Zoo morning, free afternoon and evening",
+            weather: "Most of the zoo is outdoors; go at opening for cooler air and more active animals.",
+            itemTitle: "Singapore Zoo",
+            itemBody: "Spend the morning at Singapore Zoo in Mandai, then keep the afternoon and evening free.",
+            fit: "The zoo is far from the centre (public buses into town take well over an hour), so nothing else is scheduled.",
             timeline: [
-              { time: "9:30 AM", title: "Gardens by the Bay", copy: "Use the morning for one of Singapore's clearest modern icons and let it be enough." },
-              { time: "11:30 AM", title: "Cloud Forest or Flower Dome continuation", copy: "Keep the signature-sight side coherent instead of immediately pushing into another district." },
-              { time: "1:00 PM", title: "Lunch at Satay by the Bay", copy: "Keep lunch tied to the part of the city already shaping the day." },
-              { time: "4:00 PM", title: "Civic District or river walk", copy: "Let the late afternoon stay clean and central instead of over-routing it." },
-              { time: "7:30 PM", title: "Singapore River dinner at Boat Quay", copy: "Finish with one easy riverfront evening that still feels very clearly Singapore." }
+              { time: "8:30 AM", title: "Singapore Zoo", copy: "80 Mandai Lake Road. Allow at least an hour each way by public transport from the centre. Other Mandai parks are ticketed separately.", placeId: "plc_singapore_singapore-zoo" },
+              { time: "1:30 PM", title: "Free afternoon and evening", copy: "Nothing is scheduled after the zoo. Rest, or eat near where you are staying.", kind: "flexible" }
             ]
           },
           {
-            title: "Chinatown + Tiong Bahru close",
-            rationale: "This adds a more local-feeling day built around food, streets, and slower neighborhood time away from the big skyline picture.",
-            highlight: "Chinatown + Tiong Bahru",
-            timeShape: "Neighborhood day with a softer local finish",
-            weather: "Leave room for wandering because this day works better when it does not feel too rigid.",
-            itemTitle: "Chinatown day + Tiong Bahru finish",
-            itemBody: "Start in Chinatown, then let cafés, lunch, and a softer neighborhood finish carry the rest of the day instead of keeping the whole trip in the polished core.",
-            fit: "It rounds out Singapore with something more personal than the skyline version of the city alone.",
+            title: "Tiong Bahru and a riverside dinner",
+            rationale: "A slow neighbourhood morning in Tiong Bahru, a free afternoon, then the trip's booked dinner by the river and a late drink.",
+            highlight: "JUMBO Seafood (Riverside Point)",
+            timeShape: "Neighbourhood brunch, free afternoon, booked dinner",
+            weather: "Book JUMBO Seafood ahead. Jigger & Pony admits guests over 18 only.",
+            itemTitle: "Plain Vanilla + JUMBO Seafood + Jigger & Pony",
+            itemBody: "Have brunch at Plain Vanilla in Tiong Bahru and wander the neighbourhood, keep the afternoon free, then have dinner at JUMBO Seafood at Riverside Point and a drink at Jigger & Pony in Tanjong Pagar.",
+            fit: "The evening moves are short: about 23 minutes by bus to dinner, then 20 minutes by MRT to the bar.",
             timeline: [
-              { time: "10:00 AM", title: "Chinatown and market lanes", copy: "Use the morning for one of the city's easiest food-and-street districts." },
-              { time: "11:30 AM", title: "Buddha Tooth Relic Temple or nearby lane continuation", copy: "Add one nearby anchor so Chinatown still feels like a whole day chapter, not just a meal stop." },
-              { time: "1:30 PM", title: "Lunch at Maxwell Food Centre", copy: "Let lunch come straight from the neighborhood itself." },
-              { time: "4:30 PM", title: "Tiong Bahru cafés and walk", copy: "Finish in a calmer neighborhood that feels more lived-in than the skyline core." },
-              { time: "7:30 PM", title: "Dinner at Tiong Bahru Bakery / nearby neighborhood close", copy: "Keep the evening softer so the day ends on a more local, low-pressure note." }
+              { time: "9:30 AM", title: "Brunch at Plain Vanilla (Tiong Bahru)", copy: "1D Yong Siak Street. Hot food stops before 4 PM; no reservations.", placeId: "plc_singapore_plain-vanilla-tiong-bahru" },
+              { time: "11:00 AM", title: "Walk in Tiong Bahru", copy: "Unplanned time around Yong Siak and Eng Hoon streets.", kind: "flexible" },
+              { time: "1:00 PM", title: "Free afternoon", copy: "Nothing is scheduled. Rest before the evening.", kind: "flexible" },
+              { time: "7:00 PM", title: "Dinner at JUMBO Seafood (Riverside Point)", copy: "30 Merchant Road, on the river at Clarke Quay. Reserve ahead.", placeId: "plc_singapore_jumbo-seafood-riverside-point" },
+              { time: "9:15 PM", title: "Drinks at Jigger & Pony", copy: "Cocktail bar in Amara Singapore, 165 Tanjong Pagar Road. Over-18s only.", placeId: "plc_singapore_jigger-and-pony" }
+            ],
+            // Easygoing pace: the late drink becomes a free evening after dinner.
+            easygoing: {
+              drop: "plc_singapore_jigger-and-pony",
+              replacement: { time: "9:15 PM", title: "Free evening", copy: "Easygoing pace: nothing is planned after dinner.", kind: "flexible" },
+              rationale: "A slow neighbourhood morning in Tiong Bahru, a free afternoon, then the trip's booked dinner by the river.",
+              timeShape: "Neighbourhood brunch, free afternoon, booked dinner",
+              weather: "Book JUMBO Seafood ahead.",
+              itemTitle: "Plain Vanilla + JUMBO Seafood",
+              itemBody: "Have brunch at Plain Vanilla in Tiong Bahru and wander the neighbourhood, keep the afternoon free, then have dinner at JUMBO Seafood at Riverside Point.",
+              fit: "One evening move: about 23 minutes by bus to dinner."
+            }
+          },
+          {
+            title: "Last morning in Tiong Bahru",
+            rationale: "The final day keeps one named stop and leaves the rest for packing and the journey home.",
+            highlight: "Tiong Bahru Bakery (Eng Hoon Street)",
+            timeShape: "Light, with room to pack",
+            weather: "Leave enough time for checkout and the trip to Changi Airport.",
+            itemTitle: "Tiong Bahru Bakery + a last walk",
+            itemBody: "Breakfast at Tiong Bahru Bakery on Eng Hoon Street, a last unplanned walk, then packing and departure.",
+            fit: "It ends the trip with a specific place without squeezing in another big visit before you leave.",
+            timeline: [
+              { time: "8:30 AM", title: "Breakfast at Tiong Bahru Bakery", copy: "The Eng Hoon Street branch, 56 Eng Hoon Street.", placeId: "plc_singapore_tiong-bahru-bakery-eng-hoon-street" },
+              { time: "10:00 AM", title: "Last walk in Tiong Bahru", copy: "Unplanned time on foot before you leave.", kind: "flexible" },
+              { time: "12:00 PM", title: "Pack and travel", copy: "Keep the rest of the day for checkout and the journey.", kind: "flexible" }
             ]
           }
         ],
