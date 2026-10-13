@@ -40,22 +40,26 @@ function loadLogic(appState = {}) {
 const genericTemplates = ["Generic day 1", "Generic day 2", "Generic day 3", "Generic signature day", "Generic lighter close"]
   .map((title) => ({ title, timeline: null }));
 
-function buildCityTrip(city, dayCount, anchors) {
+function buildCityTrip(city, dayCount, anchors, startIso = null) {
   const logic = loadLogic();
   const helpers = logic.window.HB_TRIP_HELPERS;
   const areas = helpers.getAreaSet(city);
   const concrete = helpers.getConcreteTripTemplates(city, areas);
-  const selected = logic.selectDayTemplates({
+  const pool = logic.selectDayTemplates({
     ...logic.planDayTemplatePool(concrete, genericTemplates),
     openTemplate: { title: `Open day near ${areas[0]}`, highlight: `Flexible time near ${areas[0]}`, timeline: null },
     count: dayCount,
     buildFlexibleTemplate: (index) => ({ title: `Flexible day in ${areas[index % areas.length]}`, timeline: null })
   });
+  // With a start date, days are ordered around opening hours as buildDayData does.
+  const selected = startIso
+    ? logic.orderDaysForOpeningHours(pool, Array.from({ length: dayCount }, (_, index) => isoPlus(startIso, index)), logic.window.HB_PLACES.places)
+    : pool;
   const days = selected.map(({ template: sourceTemplate, slot }, index) => {
     const rawTimeline = sourceTemplate.timeline || (slot < 5
       ? null
       : logic.buildFlexibleDayTimeline(logic.resolveDayArea(sourceTemplate, areas, city).label));
-    const template = { ...sourceTemplate, timeline: logic.attachPlaces(rawTimeline, logic.window.HB_PLACES.places) };
+    const template = { ...sourceTemplate, timeline: logic.attachPlaces(rawTimeline, logic.window.HB_PLACES.places, logic.window.HB_PLACES.routes) };
     const areaInfo = logic.resolveDayArea(template, areas, city);
     return {
       dayLabel: `Day ${index + 1}`,
@@ -114,7 +118,7 @@ test("Berlin 7-day trip: seven distinct days, areas from places, coherent geogra
     { label: "One memorable dinner", key: "onememorabledinner", type: "food", source: "traveler" },
     { label: "Slower final day", key: "slowerfinalday", type: "rest", source: "traveler" }
   ];
-  const { days, schedule } = buildCityTrip("Berlin", 7, anchors);
+  const { logic, days, schedule } = buildCityTrip("Berlin", 7, anchors);
   assert.equal(new Set(days.map((day) => day.title)).size, 7, "no repeated days");
   assert.equal(days[6].title, "Last morning in Scheunenviertel");
   assert.equal(days[5].title, "Open day near Scheunenviertel", "day 6 is an honest open day");
@@ -125,9 +129,22 @@ test("Berlin 7-day trip: seven distinct days, areas from places, coherent geogra
 
   days.forEach((day) => day.item.timeline.forEach((step) => {
     if (!step.travelFromPrevious) return;
-    assert.equal(step.travelFromPrevious.minutes, null, "travel time stays unknown");
-    assert.equal(step.travelFromPrevious.basis, "straight-line");
-    assert.ok(step.travelFromPrevious.distanceKm < 4, `${day.title}: ${step.title} is ${step.travelFromPrevious.distanceKm} km from the previous stop`);
+    const travel = step.travelFromPrevious;
+    assert.ok(travel.distanceKm < 4, `${day.title}: ${step.title} is ${travel.distanceKm} km from the previous stop`);
+    // Every Berlin hop is either a stored timetable journey or a short walk estimate.
+    if (travel.distanceKm >= 1.5) {
+      assert.equal(travel.basis, "routed", `${step.title}: long hop without a timetable journey`);
+      assert.ok(travel.minutes > 0 && travel.minutes < 60);
+      assert.match(travel.conditions, /\d{4}, departing about \d{2}:\d{2}/);
+      assert.match(travel.source, /VBB/);
+    } else if (travel.basis === "same-site") {
+      assert.ok(travel.distanceKm < 0.05, `${step.title}: same-site hop of ${travel.distanceKm} km`);
+      assert.equal(travel.minutes, 0);
+    } else if (travel.basis !== "routed") {
+      assert.equal(travel.basis, "estimate");
+      assert.equal(travel.mode, "walk");
+      assert.equal(travel.minutes, logic.estimateWalkMinutes(travel.distanceKm));
+    }
     // Distances written into the copy must match the registry coordinates.
     const written = String(step.copy).match(/about (\d+(?:\.\d+)?) km from/);
     if (written) assert.ok(Math.abs(Number(written[1]) - step.travelFromPrevious.distanceKm) <= 0.2, `${step.title}: copy says ${written[1]} km, coordinates give ${step.travelFromPrevious.distanceKm} km`);
@@ -139,7 +156,9 @@ test("Berlin 7-day trip: seven distinct days, areas from places, coherent geogra
 });
 
 // "2026-11-09" + n days, as the planner numbers trip days.
-const isoPlus = (iso, days) => new Date(Date.UTC(Number(iso.slice(0, 4)), Number(iso.slice(5, 7)) - 1, Number(iso.slice(8, 10)) + days)).toISOString().slice(0, 10);
+function isoPlus(iso, days) {
+  return new Date(Date.UTC(Number(iso.slice(0, 4)), Number(iso.slice(5, 7)) - 1, Number(iso.slice(8, 10)) + days)).toISOString().slice(0, 10);
+}
 
 function hoursConflicts(logic, days, startIso) {
   const registry = logic.window.HB_PLACES.places;
@@ -148,12 +167,37 @@ function hoursConflicts(logic, days, startIso) {
   }))).filter(({ check }) => check.state === "closed" || check.state === "outside-hours");
 }
 
-test("Berlin hours: a Monday start flags exactly the museum that is closed on Mondays", () => {
+test("Berlin hours: in written order, a Monday start puts the museum that is closed on Mondays on day 1", () => {
   const { logic, days } = buildCityTrip("Berlin", 7, []);
   assert.equal(logic.weekdayKeyForIsoDate("2026-11-09"), "mon");
   const monday = hoursConflicts(logic, days, "2026-11-09");
   assert.deepEqual(JSON.parse(JSON.stringify(monday.map(({ day, title, check }) => [day, title, check.state]))), [[1, "Neues Museum", "closed"]]);
   assert.equal(hoursConflicts(logic, days, "2026-11-10").length, 0, "a Tuesday start fits every published schedule");
+});
+
+test("Berlin hours: days are reordered so no stop lands on its closed day, for any start weekday", () => {
+  const written = [...buildCityTrip("Berlin", 7, []).days.map((day) => day.title)];
+  for (let offset = 0; offset < 7; offset += 1) {
+    const start = isoPlus("2026-11-09", offset);
+    const { logic, days } = buildCityTrip("Berlin", 7, [], start);
+    const closed = hoursConflicts(logic, days, start).filter(({ check }) => check.state === "closed");
+    assert.deepEqual([...closed.map(({ day, title }) => `${day} ${title}`)], [], `start ${start}`);
+    assert.deepEqual([...days.map((day) => day.title)].sort(), [...written].sort(), "same days, only reordered");
+    assert.equal(days[6].title, written[6], "the closing day stays last");
+  }
+  // On a Monday start no researched day fits (each has a stop closed on Mondays), so the open day takes Monday.
+  const monday = buildCityTrip("Berlin", 7, [], "2026-11-09").days.map((day) => day.title);
+  assert.equal(monday[0], written[5]);
+  assert.equal(monday[5], written[0]);
+  // A Tuesday start already fits, so nothing moves.
+  assert.deepEqual([...buildCityTrip("Berlin", 7, [], "2026-11-10").days.map((day) => day.title)], written);
+});
+
+test("Must-haves: a stop can cover a named need beyond its title", () => {
+  const { schedule } = buildCityTrip("Berlin", 7, [{ label: "Food market", key: "foodmarket", type: "food", source: "traveler" }]);
+  assert.equal(schedule.unscheduled.length, 0);
+  const day = schedule.byDay.findIndex((anchors) => anchors.some((anchor) => anchor.key === "foodmarket"));
+  assert.equal(schedule.byDay[day][0].stepTitle, "Lunch at Markthalle Neun");
 });
 
 test("Berlin hours: seasonal periods, dated exceptions, open-ended closing and unknown dates", () => {

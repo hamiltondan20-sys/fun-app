@@ -34,7 +34,7 @@ window.HB_APP = window.HB_APP || {};
       budgetFlexible: false,
       styles: ["Relaxing", "Foodie"],
       pace: "Balanced",
-      mustHaves: "One memorable dinner, the Eiffel Tower, and a slower final day.",
+      mustHaves: "One memorable dinner, a slower final day.",
       nonNegotiables: "",
       depth: "Top sights",
       foodImportance: "Good local spots",

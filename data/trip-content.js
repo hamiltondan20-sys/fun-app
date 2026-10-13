@@ -897,17 +897,17 @@ window.HB_TRIP_HELPERS.getConcreteTripTemplates = function(city, areas) {
         Berlin: [
           {
             title: "Scheunenviertel breakfast and Museum Island",
-            rationale: "The first day stays within a short walk: brunch on Auguststrasse, then two museums beside the Spree.",
+            rationale: "A day within a short walk: brunch on Auguststrasse, then two museums beside the Spree.",
             highlight: "Neues Museum",
             timeShape: "Two museums, short walks between them",
             weather: "Neues Museum's published entrance is the James Simon Galerie on Bodestrasse. Check opening days for your dates before you go.",
             itemTitle: "House of Small Wonder + Neues Museum + DDR Museum",
-            itemBody: "Start with brunch at House of Small Wonder on Auguststrasse, walk to Museum Island for Neues Museum, then finish at the DDR Museum by the river. Lunch is your choice nearby.",
+            itemBody: "Start with brunch at House of Small Wonder on Auguststrasse, walk to Museum Island for Neues Museum, have lunch at the Humboldt Forum's Lebenswelten Bistro, then finish at the DDR Museum by the river.",
             fit: "Everything is within about a kilometre, so the day is about the museums rather than getting between them.",
             timeline: [
               { time: "9:00 AM", title: "Brunch at House of Small Wonder", copy: "Use the current Auguststrasse 11-13 address. The operator warns that picking the name in a ride app can send you to its closed former branch.", placeId: "plc_berlin_house-of-small-wonder-auguststrasse" },
               { time: "10:30 AM", title: "Neues Museum", copy: "Enter through the James Simon Galerie on Bodestrasse. Allow at least two hours.", placeId: "plc_berlin_neues-museum" },
-              { time: "1:00 PM", title: "Lunch near Museum Island (your choice)", copy: "This plan has no reviewed lunch pick here yet, so choose something nearby that suits you.", kind: "flexible" },
+              { time: "1:00 PM", title: "Lunch at Lebenswelten Bistro (Humboldt Forum)", copy: "In the Humboldt Forum's ground-floor Passage: salads, German classics and vegetarian bowls. Open Mondays too.", placeId: "plc_berlin_lebenswelten-bistro-humboldt-forum" },
               { time: "3:00 PM", title: "DDR Museum", copy: "On Karl-Liebknecht-Strasse by the Spree. Access from the river promenade has stairs or a steep ramp.", placeId: "plc_berlin_ddr-museum" },
               { time: "5:00 PM", title: "Free evening", copy: "Nothing is scheduled. Rest after two museums, or explore at your own pace.", kind: "flexible" }
             ]
@@ -936,12 +936,12 @@ window.HB_TRIP_HELPERS.getConcreteTripTemplates = function(city, areas) {
             timeShape: "Palace morning, zoo afternoon, evening drinks",
             weather: "The palace and zoo are about 3.4 km apart in a straight line: take public transport or a taxi between them. Palace areas have separate admission.",
             itemTitle: "Charlottenburg Palace + Zoo Berlin + Green Door Bar",
-            itemBody: "Visit the Old Palace at Charlottenburg, take transit to Zoo Berlin at Hardenbergplatz, and end with drinks at Green Door Bar on Winterfeldtstrasse.",
-            fit: "Each stop is a separate journey, so the day keeps to three of them instead of adding more.",
+            itemBody: "Visit the Old Palace at Charlottenburg, have lunch at Luisenbraeu across the square, take transit to Zoo Berlin at Hardenbergplatz, and end with drinks at Green Door Bar on Winterfeldtstrasse.",
+            fit: "Lunch is a short walk from the palace; the other moves are separate journeys, so the day keeps to three main stops instead of adding more.",
             timeline: [
               { time: "10:00 AM", title: "Charlottenburg Palace (Old Palace)", copy: "Spandauer Damm 10-22. Other palace areas have different admission and access.", placeId: "plc_berlin_charlottenburg-palace-old-palace" },
-              { time: "12:30 PM", title: "Lunch near the palace (your choice)", copy: "No reviewed lunch pick here yet.", kind: "flexible" },
-              { time: "2:00 PM", title: "Zoo Berlin", copy: "About 3.4 km from the palace in a straight line: use public transport or a taxi. Aquarium admission is not assumed to be included.", placeId: "plc_berlin_zoo-berlin" },
+              { time: "12:30 PM", title: "Lunch at Luisenbraeu", copy: "A brewpub with Berlin and German food at Luisenplatz 1, across from the palace forecourt. Tables can be booked online.", placeId: "plc_berlin_luisenbraeu-by-lemke" },
+              { time: "2:00 PM", title: "Zoo Berlin", copy: "About 3 km from lunch in a straight line: use public transport or a taxi. Aquarium admission is not assumed to be included.", placeId: "plc_berlin_zoo-berlin" },
               { time: "7:00 PM", title: "Drinks at Green Door Bar", copy: "An evening cocktail bar on Winterfeldtstrasse, not a family meal. About 1.6 km from the zoo in a straight line.", placeId: "plc_berlin_green-door-bar" }
             ]
           },
@@ -956,23 +956,23 @@ window.HB_TRIP_HELPERS.getConcreteTripTemplates = function(city, areas) {
             fit: "The gallery and market are under a kilometre apart; dinner is about 2.8 km west, so plan transit for the evening.",
             timeline: [
               { time: "10:00 AM", title: "East Side Gallery", copy: "The outdoor wall-art site on Muehlenstrasse, about 1.3 km long. Allow time to walk it.", placeId: "plc_berlin_east-side-gallery" },
-              { time: "12:30 PM", title: "Lunch at Markthalle Neun", copy: "Eisenbahnstrasse 42/43. Check the market calendar: an open hall does not mean every stall is serving.", placeId: "plc_berlin_markthalle-neun" },
+              { time: "12:30 PM", title: "Lunch at Markthalle Neun", copy: "Eisenbahnstrasse 42/43. Check the market calendar: an open hall does not mean every stall is serving.", placeId: "plc_berlin_markthalle-neun", covers: ["food market", "market hall"] },
               { time: "2:30 PM", title: "Free afternoon in Kreuzberg", copy: "Nothing is scheduled. Rest before dinner or explore nearby.", kind: "flexible" },
               { time: "7:30 PM", title: "Dinner at Restaurant Tim Raue", copy: "Reserve ahead. Rudi-Dutschke-Strasse 26, about 2.8 km from the market. Lunch service is not assumed.", placeId: "plc_berlin_restaurant-tim-raue" }
             ]
           },
           {
             title: "Technology museum, Tempelhofer Feld and a Kreuzberg dinner",
-            rationale: "A museum morning, open space in the afternoon, and a second booked dinner.",
+            rationale: "A museum morning, open space in the afternoon, and another booked dinner.",
             highlight: "Tempelhofer Feld",
             timeShape: "Museum, open space, booked dinner",
             weather: "Some Technikmuseum galleries are currently inaccessible; check the ones you want first. Tempelhofer Feld has seasonal gate hours and several entrances.",
             itemTitle: "Deutsches Technikmuseum + Tempelhofer Feld + Nobelhart & Schmutzig",
-            itemBody: "Start at the Deutsches Technikmuseum, spend the afternoon on Tempelhofer Feld, and end with dinner at Nobelhart & Schmutzig on Friedrichstrasse.",
-            fit: "Each move is around 3 km, so use public transport between stops and keep the rest of the day open.",
+            itemBody: "Start at the Deutsches Technikmuseum and have lunch in its restaurant, spend the afternoon on Tempelhofer Feld, and end with dinner at Nobelhart & Schmutzig on Friedrichstrasse.",
+            fit: "Both afternoon moves are on the U6 (Tempelhofer Feld via its Tempelhofer Damm entrance), so the day has room to slow down.",
             timeline: [
               { time: "10:00 AM", title: "Deutsches Technikmuseum", copy: "Trebbiner Strasse 9. Photography, film and chemistry/pharmacy exhibitions are currently inaccessible; Spectrum uses a different entrance.", placeId: "plc_berlin_deutsches-technikmuseum" },
-              { time: "1:00 PM", title: "Lunch near Gleisdreieck (your choice)", copy: "No reviewed lunch pick here yet.", kind: "flexible" },
+              { time: "1:00 PM", title: "Lunch at Restaurant Anhalt", copy: "The restaurant inside the Technikmuseum. Closed Mondays, like the museum.", placeId: "plc_berlin_restaurant-anhalt-deutsches-technikmuseum" },
               { time: "3:00 PM", title: "Tempelhofer Feld", copy: "Free entry. Use the operator's entrance map and current gate hours; development work can close some areas.", placeId: "plc_berlin_tempelhofer-feld" },
               { time: "7:30 PM", title: "Dinner at Nobelhart & Schmutzig", copy: "Reserve ahead. Friedrichstrasse 218. Its published hours disagree between pages, so confirm when booking.", placeId: "plc_berlin_nobelhart-und-schmutzig" }
             ]

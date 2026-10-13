@@ -503,7 +503,9 @@ function getBlueprintTopPlaces() {
           icon: "menu_book",
           label: "Guide source",
           value: `From the ${guideSource}`,
-          copy: `The itinerary starts with guide recommendations, then adjusts them to your dates, pace, budget, and must-haves.`,
+          copy: hasResearchedDays()
+            ? `Researched days use checked places and are ordered around their opening days. Pace and budget do not change them yet; must-haves are matched to them or listed as not scheduled.`
+            : `The itinerary starts with guide recommendations, then adjusts them to your dates, pace, budget, and must-haves.`,
           chips: ["Guide picks", hbState.appState.pace, formatTripStyles()]
         },
         {
@@ -903,10 +905,14 @@ function getBlueprintTopPlaces() {
         .filter((step) => step.travelFromPrevious?.distanceKm != null)
         .sort((left, right) => right.travelFromPrevious.distanceKm - left.travelFromPrevious.distanceKm)[0];
       if (longestMove) {
-        const km = longestMove.travelFromPrevious.distanceKm;
-        return km >= 2
-          ? `The longest move is about ${km} km (straight line) to ${longestMove.title}; plan public transport or a taxi for it. Travel times are not calculated.`
-          : `All scheduled stops are within about ${km} km of each other (straight line), so most of the day can be on foot.`;
+        const travel = longestMove.travelFromPrevious;
+        if (travel.basis === "routed") {
+          return `The longest move is to ${longestMove.title}: about ${travel.minutes} min by public transport (${travel.summary}).`;
+        }
+        if (travel.distanceKm >= 2) {
+          return `The longest move is about ${travel.distanceKm} km (straight line) to ${longestMove.title}; plan public transport or a taxi. Its travel time is not calculated.`;
+        }
+        return `All scheduled stops are within about ${travel.distanceKm} km of each other, so most of the day can be on foot.`;
       }
 
       if (!area) {
@@ -1131,8 +1137,10 @@ function getBlueprintTopPlaces() {
       const beach = /beach|coast|island|resort beach|swim|snorkel|ocean|shore|waterfront|sunset by the water/.test(text)
         || /cancun|miami|sydney|nadi|suva|roseau/.test(city.toLowerCase());
       const road = /road trip|drive|driving|rental car|parking|scenic route|route day|national park|highway/.test(text);
-      const budget = hbState.appState.budget === "Budget" || /budget|cheap|low-cost|lower-cost|save money|affordable|free museum|free sight|free attraction|free walking/.test(text);
-      const luxury = /luxury|splurge|high-end|private|vip|palace|resort spa|tasting menu|five-star/.test(text);
+      // Researched days are not reshaped by budget yet, so they never claim a budget or luxury lens.
+      const researched = hasResearchedDays(city);
+      const budget = !researched && (hbState.appState.budget === "Budget" || /budget|cheap|low-cost|lower-cost|save money|affordable|free museum|free sight|free attraction|free walking/.test(text));
+      const luxury = !researched && /luxury|splurge|high-end|private|vip|palace|resort spa|tasting menu|five-star/.test(text);
       const solo = (adults === 1 && children === 0 && !hasPet) || /solo|alone|single traveler/.test(text);
       const adventurous = /adventurous|adventure|active|hike|kayak|explor|outdoor outing|big outing/.test(text);
       const food = /foodie|food-focused|food is a focus|restaurant|reservation|dinner|market|bakery/.test(text);
@@ -1350,6 +1358,9 @@ function getBlueprintTopPlaces() {
       const styleText = hbState.appState.styles.length > 1
         ? `${hbState.appState.styles[0].toLowerCase()} and ${hbState.appState.styles[1].toLowerCase()}`
         : (hbState.appState.styles[0] || "balanced").toLowerCase();
+      if (hasResearchedDays(city)) {
+        return `${buildTravelerText()} in ${city}: researched days at checked places, with open time between them. ${getTripQualityProfile(city).summary}`;
+      }
       return `${buildTravelerText()} in ${city}, built around ${styleText} days and ${formatPacePhrase()}. ${getTripQualityProfile(city).summary}`;
     }
 
@@ -3249,17 +3260,29 @@ function getBlueprintTopPlaces() {
       return { state: "unknown", html: `<li>${why}</li>${caveat}` };
     }
 
-    // What we actually know about a stop: its checked address and the straight-line distance from
-    // the previous stop. Travel time is shown as not calculated rather than guessed.
+    // How to get here from the previous stop, labelled by where the number came from.
+    function describeTravelLine(travel) {
+      if (!travel || travel.distanceKm == null) return "";
+      if (travel.basis === "routed") {
+        return `<li>About ${travel.minutes} min by public transport: ${escapeHtml(travel.summary)} (timetable checked ${formatDate(travel.checkedOn)} for ${escapeHtml(travel.conditions)}; times vary by day and hour).</li>`;
+      }
+      if (travel.basis === "same-site") {
+        return `<li>At the same site as the previous stop.</li>`;
+      }
+      if (travel.basis === "estimate") {
+        return `<li>About ${travel.minutes} min walk (estimated from the ${travel.distanceKm} km distance).</li>`;
+      }
+      return `<li>About ${travel.distanceKm} km from the previous stop in a straight line; travel time not calculated.</li>`;
+    }
+
+    // What we actually know about a stop: its checked address, hours, and how to get there.
     function renderStepPlaceFacts(step, isoDate) {
       if (!step?.place) return "";
       const { snapshot, verification } = step.place;
       const checked = verification?.checkedOn
         ? `Location checked ${formatDate(verification.checkedOn)}${verification.sourceUrl ? ` (<a href="${escapeHtml(verification.sourceUrl)}" target="_blank" rel="noopener noreferrer">source</a>)` : ""}.`
         : "Location not yet checked.";
-      const travel = step.travelFromPrevious?.distanceKm != null
-        ? `<li>About ${escapeHtml(String(step.travelFromPrevious.distanceKm))} km from the previous stop in a straight line; travel time not calculated.</li>`
-        : "";
+      const travel = describeTravelLine(step.travelFromPrevious);
       return `
         <ul class="timeline-place-facts">
           ${snapshot?.address ? `<li>${escapeHtml(snapshot.address)}</li>` : ""}
@@ -4169,6 +4192,33 @@ function getBlueprintTopPlaces() {
       return [...middle, closing];
     }
 
+    // Stops on a day whose registry place publishes the date as closed.
+    function countClosedStops(template, isoDate, registry) {
+      return (Array.isArray(template?.timeline) ? template.timeline : []).filter((step) => {
+        const place = step?.placeId && registry?.[step.placeId];
+        return place && checkStopHours(step, isoDate, place.hours).state === "closed";
+      }).length;
+    }
+
+    // Swap days so a named stop does not land on a date its place is closed (e.g. a museum on a
+    // Monday). Any day but the closing one can move, so an open day can take the closed date. A swap
+    // is made only when both days end up with no closed stops; otherwise the day keeps its place and
+    // the conflict is flagged to the traveler.
+    function orderDaysForOpeningHours(selected, isoDates, registry) {
+      const order = selected.slice();
+      const movable = order.map((_, index) => index).slice(0, -1);
+      movable.forEach((index) => {
+        if (!countClosedStops(order[index].template, isoDates[index], registry)) return;
+        const swapWith = movable
+          .filter((other) => other !== index)
+          .sort((left, right) => Math.abs(left - index) - Math.abs(right - index) || left - right)
+          .find((other) => !countClosedStops(order[index].template, isoDates[other], registry)
+            && !countClosedStops(order[other].template, isoDates[index], registry));
+        if (swapWith !== undefined) [order[index], order[swapWith]] = [order[swapWith], order[index]];
+      });
+      return order;
+    }
+
     // Straight-line distance in km between two registry coordinates (not a travel time).
     function straightLineKm(from, to) {
       const radians = (value) => (value * Math.PI) / 180;
@@ -4181,7 +4231,36 @@ function getBlueprintTopPlaces() {
     // Resolve template stops that name a registry place: attach a minimal place snapshot and the
     // straight-line distance from the previous placed stop. Travel time stays unknown (null);
     // a distance is never presented as a timing. Template objects are not mutated.
-    function attachPlaces(timeline, registry) {
+    // Walking estimate for short hops: straight-line distance plus 30% for the street layout, at
+    // 4.8 km/h. Always labelled an estimate.
+    const WALK_ESTIMATE_MAX_KM = 1.5;
+    const SAME_SITE_MAX_KM = 0.05;
+    function estimateWalkMinutes(distanceKm) {
+      return Math.max(1, Math.round((distanceKm * 1.3 / 4.8) * 60));
+    }
+
+    // Travel from the previous placed stop: a stored timetable journey when one exists, a walking
+    // estimate for short hops, otherwise unknown (minutes null). Distances use a site's visitor
+    // entrance when the registry has one (e.g. a large park), not its centre point.
+    function describeTravel(previousPlace, place, routes) {
+      const from = previousPlace.entrance || previousPlace.coordinates;
+      const to = place.entrance || place.coordinates;
+      const distanceKm = straightLineKm(from, to);
+      const journey = routes?.journeys?.[`${previousPlace.id}|${place.id}`];
+      if (journey) {
+        return { distanceKm, minutes: journey.minutes, mode: journey.mode, basis: "routed", summary: journey.summary, conditions: journey.conditions, checkedOn: journey.checkedOn, source: routes.source };
+      }
+      // Places registered at the same point (e.g. a restaurant inside a museum) share a site.
+      if (distanceKm < SAME_SITE_MAX_KM) {
+        return { distanceKm, minutes: 0, mode: "walk", basis: "same-site" };
+      }
+      if (distanceKm < WALK_ESTIMATE_MAX_KM) {
+        return { distanceKm, minutes: estimateWalkMinutes(distanceKm), mode: "walk", basis: "estimate" };
+      }
+      return { distanceKm, minutes: null, mode: null, basis: "straight-line" };
+    }
+
+    function attachPlaces(timeline, registry, routes) {
       if (!Array.isArray(timeline)) return timeline;
       let previous = null;
       return timeline.map((step) => {
@@ -4195,10 +4274,8 @@ function getBlueprintTopPlaces() {
             snapshot: { name: place.name, area: place.area, address: place.address, lat: place.coordinates.lat, lng: place.coordinates.lng },
             verification: { status: place.verification.status, checkedOn: place.verification.checkedOn, sourceUrl: place.verification.evidence[0]?.url || "" }
           };
-          if (previous) {
-            next.travelFromPrevious = { distanceKm: straightLineKm(previous, place.coordinates), basis: "straight-line", minutes: null, mode: null };
-          }
-          previous = place.coordinates;
+          if (previous) next.travelFromPrevious = describeTravel(previous, place, routes);
+          previous = place;
         }
         return next;
       });
@@ -4281,7 +4358,9 @@ function getBlueprintTopPlaces() {
         const exactDays = [];
         days.forEach((day, index) => {
           if (!anchor.key) return;
-          const step = stepsOf(day).find((item) => getPlanningAnchorKey(item.title).includes(anchor.key));
+          // A stop matches by its title or by the must-haves it is written to cover (e.g. a market hall: "food market").
+          const step = stepsOf(day).find((item) => [item.title, ...(Array.isArray(item.covers) ? item.covers : [])]
+            .some((label) => getPlanningAnchorKey(label).includes(anchor.key)));
           if (step) exactDays.push({ index, step });
         });
         if (exactDays.length) {
@@ -4405,18 +4484,18 @@ function getBlueprintTopPlaces() {
         fit: `It keeps a longer trip from becoming repetitive or overpacked.`,
         timeline: null
       });
-      const selectedTemplates = selectDayTemplates({
+      const selectedTemplates = orderDaysForOpeningHours(selectDayTemplates({
         ...planDayTemplatePool(concreteTemplates, dayTemplates),
         openTemplate: dayTemplates[5],
         count,
         buildFlexibleTemplate
-      });
+      }), Array.from({ length: count }, (_, index) => getTripDayIsoDate(index)), window.HB_PLACES?.places);
       const builtDays = selectedTemplates.map(({ template: sourceDay, slot }, index) => {
         const isLastDay = index === count - 1;
         // Open and flexible days (slot 5+) get an open-ended timeline; the later generic templates end in packing.
         const sourceTimeline = attachPlaces(sourceDay.timeline || (slot >= 5
           ? buildFlexibleDayTimeline(resolveDayArea(sourceDay, areas, city).label)
-          : timelineTemplates[Math.min(slot, timelineTemplates.length - 1)]), window.HB_PLACES?.places);
+          : timelineTemplates[Math.min(slot, timelineTemplates.length - 1)]), window.HB_PLACES?.places, window.HB_PLACES?.routes);
         let areaInfo = resolveDayArea({ ...sourceDay, timeline: sourceTimeline }, areas, city);
         const baseDay = index === 0 ? normalizeFirstDayTemplate(sourceDay, areaInfo.primary || areas[0]) : { ...sourceDay };
         const day = applyVibeContentToDay(baseDay, slot, isLastDay, vibeContent);
@@ -4691,14 +4770,21 @@ function getBlueprintTopPlaces() {
       }
     }
 
+    // Researched days are written around registry places; pace and budget do not reshape them yet.
+    function hasResearchedDays(city = getCityName()) {
+      const templates = getConcreteTripTemplates(city, getAreaSet(city)) || [];
+      return templates.some((template) => (template.timeline || []).some((step) => step?.placeId));
+    }
+
     function renderThinking() {
       const city = getCityName();
       const canonicalCity = hbData.normalizeCityLabel?.(hbState.appState.destination) || hbState.appState.destination;
       const styleLead = (hbState.appState.styles[0] || "relaxed").toLowerCase();
       document.getElementById("thinking-optimization").textContent =
         `Keeping your days local, your ${styleLead} moments clear, and your ${hbState.appState.memory.toLowerCase()} goal visible.`;
-      document.getElementById("thinking-support").textContent =
-        `We are shaping the trip around your ${hbState.appState.pace.toLowerCase()} pace, your ${hbState.appState.budget.toLowerCase()} budget, and the must-haves you said actually matter.`;
+      document.getElementById("thinking-support").textContent = hasResearchedDays()
+        ? `We are placing researched days around opening hours and matching the must-haves you said actually matter.`
+        : `We are shaping the trip around your ${hbState.appState.pace.toLowerCase()} pace, your ${hbState.appState.budget.toLowerCase()} budget, and the must-haves you said actually matter.`;
       document.getElementById("thinking-fact").textContent =
         hbData.destinationFacts[canonicalCity] || hbData.destinationFacts[city] || `${city} tends to feel best when you let a neighborhood breathe instead of trying to cover every corner in one day.`;
     }

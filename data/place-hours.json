@@ -219,6 +219,50 @@
       ],
       "exceptions": [],
       "notes": "No closing time published. Winter closure 1-11 January 2027 (outside the researched period)."
+    },
+    "plc_berlin_lebenswelten-bistro-humboldt-forum": {
+      "url": "https://www.humboldtforum.org/en/programm/dauerangebot/food-and-drink/lebenswelten-bistro-23376/",
+      "retrievedOn": "2026-10-10",
+      "confidence": "high",
+      "quote": "Opening hours Mon, Tue: 10:00 – 17:00 Wed, Thu, Fri, Sat, Sun: 10:00 – 19:00 Exceptions 24 Dec 2026: closed 25 Dec 2026: closed 26 Dec 2026: closed 31 Dec 2026: closed 1 Jan 2027: closed",
+      "periods": [
+        { "from": "2026-10-10", "to": "2026-12-31", "weekly": { "mon": "10:00-17:00", "tue": "10:00-17:00", "wed": "10:00-19:00", "thu": "10:00-19:00", "fri": "10:00-19:00", "sat": "10:00-19:00", "sun": "10:00-19:00" } }
+      ],
+      "exceptions": [
+        { "date": "2026-12-24", "hours": "closed" },
+        { "date": "2026-12-25", "hours": "closed" },
+        { "date": "2026-12-26", "hours": "closed" },
+        { "date": "2026-12-31", "hours": "closed" }
+      ],
+      "notes": "Also closed 1 January 2027 (outside the researched period). The bistro is open on Tuesdays even though the Humboldt Forum exhibitions are not."
+    },
+    "plc_berlin_luisenbraeu-by-lemke": {
+      "url": "https://www.lemke.berlin/en/luisenbraeu/",
+      "retrievedOn": "2026-10-10",
+      "confidence": "high",
+      "quote": "OPENING HOURS MONDAY – SUNDAY 12 noon – 10 p.m.",
+      "periods": [
+        { "from": "2026-10-10", "to": "2026-12-31", "weekly": { "mon": "12:00-22:00", "tue": "12:00-22:00", "wed": "12:00-22:00", "thu": "12:00-22:00", "fri": "12:00-22:00", "sat": "12:00-22:00", "sun": "12:00-22:00" } }
+      ],
+      "exceptions": [],
+      "notes": "No holiday exceptions published. Tables can be booked online."
+    },
+    "plc_berlin_restaurant-anhalt-deutsches-technikmuseum": {
+      "url": "https://technikmuseum.berlin/besuch/essen-trinken",
+      "retrievedOn": "2026-10-10",
+      "confidence": "high",
+      "quote": "Dienstag bis Freitag: 10–16:30 Uhr; Samstag, Sonntag, Feiertag: 10–17 Uhr; Montag: Ruhetag",
+      "periods": [
+        { "from": "2026-10-10", "to": "2026-12-31", "weekly": { "mon": "closed", "tue": "10:00-16:30", "wed": "10:00-16:30", "thu": "10:00-16:30", "fri": "10:00-16:30", "sat": "10:00-17:00", "sun": "10:00-17:00" } }
+      ],
+      "exceptions": [
+        { "date": "2026-12-24", "hours": "closed", "note": "The museum building is closed" },
+        { "date": "2026-12-25", "hours": "closed", "note": "The museum building is closed" },
+        { "date": "2026-12-26", "hours": "10:00-17:00", "note": "Public holiday: weekend hours" },
+        { "date": "2026-12-31", "hours": "closed", "note": "The museum building is closed" }
+      ],
+      "caveat": "Inside the museum building; the page does not say whether a museum ticket is needed to eat here.",
+      "notes": "Closed on Mondays, the same as the museum. Christmas dates follow the museum's own closures."
     }
   }
 }

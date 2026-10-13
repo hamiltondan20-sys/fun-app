@@ -1,0 +1,44 @@
+{
+  "about": "Itinerary-only places (not in a reviewed city guide), each with its own official-source record. Same fields as data/city-source-ledger.js placeSources: sourceType, url, locationSourceUrl, checkedOn, operatingEvidence.",
+  "places": [
+    {
+      "city": "berlin", "name": "Lebenswelten Bistro (Humboldt Forum)", "kind": "meal",
+      "address": "Humboldt Forum, ground-floor Passage, Schlossplatz, Berlin", "area": "Museum Island",
+      "lat": 52.51703, "lng": 13.40123, "osm": "node/8413352835",
+      "basis": "named feature: Humboldt Forum (the bistro is in its ground-floor Passage; the official page gives no house number)",
+      "source": {
+        "sourceType": "Official venue page (Humboldt Forum)",
+        "url": "https://www.humboldtforum.org/en/programm/dauerangebot/food-and-drink/lebenswelten-bistro-23376/",
+        "locationSourceUrl": "https://www.humboldtforum.org/en/programm/dauerangebot/food-and-drink/lebenswelten-bistro-23376/",
+        "checkedOn": "2026-10-10",
+        "operatingEvidence": "The Humboldt Forum's own page lists current hours with closures dated December 2026 to January 2027, a current menu description and a booking phone number."
+      }
+    },
+    {
+      "city": "berlin", "name": "Luisenbraeu by Lemke", "kind": "meal",
+      "address": "Luisenplatz 1, Berlin", "area": "Charlottenburg",
+      "lat": 52.52000, "lng": 13.29982, "osm": "node/420511325",
+      "basis": "named feature at Luisenplatz 1",
+      "source": {
+        "sourceType": "Official business page (Lemke Berlin)",
+        "url": "https://www.lemke.berlin/en/luisenbraeu/",
+        "locationSourceUrl": "https://www.lemke.berlin/en/luisenbraeu/",
+        "checkedOn": "2026-10-10",
+        "operatingEvidence": "The official page links a current menu (file dated May 2026), offers online table booking and shows a current seasonal news banner."
+      }
+    },
+    {
+      "city": "berlin", "name": "Restaurant Anhalt (Deutsches Technikmuseum)", "kind": "meal",
+      "address": "Trebbiner Strasse 9, Berlin (inside the Deutsches Technikmuseum)", "area": "Kreuzberg",
+      "lat": 52.49718, "lng": 13.37593, "osm": "way/31622818",
+      "basis": "the museum's named feature at Trebbiner Strasse 9 (the restaurant is inside the museum building)",
+      "source": {
+        "sourceType": "Official museum page (Deutsches Technikmuseum, Essen & Trinken)",
+        "url": "https://technikmuseum.berlin/besuch/essen-trinken",
+        "locationSourceUrl": "https://technikmuseum.berlin/besuch/essen-trinken",
+        "checkedOn": "2026-10-10",
+        "operatingEvidence": "The museum's current visitor page lists the restaurant with its address, phone number and current opening hours."
+      }
+    }
+  ]
+}

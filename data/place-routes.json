@@ -1,0 +1,31 @@
+{
+  "about": "Public-transport journeys between consecutive itinerary stops longer than 1.5 km, looked up once (not live) in VBB timetable data via https://v6.vbb.transport.rest (a wrapper of the VBB journey planner). Minutes are door-to-door including walking, for the stated weekday and departure time; they vary by time of day, day of week and service changes. Tempelhofer Feld is routed via its Tempelhofer Damm main entrance (Tor 10). Restaurant Anhalt shares the Deutsches Technikmuseum's location, so its journey is the museum's.",
+  "source": "VBB Verkehrsverbund Berlin-Brandenburg timetable data, via v6.vbb.transport.rest",
+  "routes": {
+    "plc_berlin_luisenbraeu-by-lemke|plc_berlin_zoo-berlin": {
+      "minutes": 28, "mode": "transit", "summary": "Bus M45, with about 0.8 km of walking in total",
+      "conditions": "Wednesday 14 Oct 2026, departing about 13:40", "checkedOn": "2026-10-10",
+      "alternatives": "Bus 109: about 34 min; Bus M45 then U2: about 27 min"
+    },
+    "plc_berlin_zoo-berlin|plc_berlin_green-door-bar": {
+      "minutes": 24, "mode": "transit", "summary": "U2, with about 1.3 km of walking in total",
+      "conditions": "Wednesday 14 Oct 2026, departing about 18:15", "checkedOn": "2026-10-10",
+      "alternatives": "Bus 187: about 24 min"
+    },
+    "plc_berlin_markthalle-neun|plc_berlin_restaurant-tim-raue": {
+      "minutes": 21, "mode": "transit", "summary": "Bus M29, with about 0.7 km of walking",
+      "conditions": "Wednesday 14 Oct 2026, departing about 18:50", "checkedOn": "2026-10-10",
+      "alternatives": null
+    },
+    "plc_berlin_restaurant-anhalt-deutsches-technikmuseum|plc_berlin_tempelhofer-feld": {
+      "minutes": 22, "mode": "transit", "summary": "U6 to the Tempelhofer Damm entrance, with about 1.4 km of walking",
+      "conditions": "Wednesday 14 Oct 2026, departing about 14:20", "checkedOn": "2026-10-10",
+      "alternatives": null
+    },
+    "plc_berlin_tempelhofer-feld|plc_berlin_nobelhart-und-schmutzig": {
+      "minutes": 13, "mode": "transit", "summary": "U6 from the Tempelhofer Damm entrance, with about 0.4 km of walking",
+      "conditions": "Wednesday 14 Oct 2026, departing about 18:50", "checkedOn": "2026-10-10",
+      "alternatives": null
+    }
+  }
+}

@@ -24,6 +24,7 @@ window.HB_PLACES = {
         "attribution": "© OpenStreetMap contributors",
         "retrievedOn": "2026-10-10"
       },
+      "entrance": null,
       "hours": {
         "status": "hours-checked",
         "checkedOn": "2026-10-10",
@@ -154,6 +155,7 @@ window.HB_PLACES = {
         "attribution": "© OpenStreetMap contributors",
         "retrievedOn": "2026-10-10"
       },
+      "entrance": null,
       "hours": {
         "status": "hours-checked",
         "checkedOn": "2026-10-10",
@@ -258,6 +260,7 @@ window.HB_PLACES = {
         "attribution": "© OpenStreetMap contributors",
         "retrievedOn": "2026-10-10"
       },
+      "entrance": null,
       "hours": {
         "status": "hours-checked",
         "checkedOn": "2026-10-10",
@@ -413,6 +416,7 @@ window.HB_PLACES = {
         "attribution": "© OpenStreetMap contributors",
         "retrievedOn": "2026-10-10"
       },
+      "entrance": null,
       "hours": {
         "status": "hours-checked",
         "checkedOn": "2026-10-10",
@@ -538,6 +542,7 @@ window.HB_PLACES = {
         "attribution": "© OpenStreetMap contributors",
         "retrievedOn": "2026-10-10"
       },
+      "entrance": null,
       "hours": {
         "status": "hours-checked",
         "checkedOn": "2026-10-10",
@@ -701,6 +706,7 @@ window.HB_PLACES = {
         "attribution": "© OpenStreetMap contributors",
         "retrievedOn": "2026-10-10"
       },
+      "entrance": null,
       "hours": {
         "status": "hours-checked",
         "checkedOn": "2026-10-10",
@@ -805,6 +811,7 @@ window.HB_PLACES = {
         "attribution": "© OpenStreetMap contributors",
         "retrievedOn": "2026-10-10"
       },
+      "entrance": null,
       "hours": {
         "status": "hours-checked",
         "checkedOn": "2026-10-10",
@@ -978,6 +985,7 @@ window.HB_PLACES = {
         "attribution": "© OpenStreetMap contributors",
         "retrievedOn": "2026-10-10"
       },
+      "entrance": null,
       "hours": {
         "status": "hours-checked",
         "checkedOn": "2026-10-10",
@@ -1082,6 +1090,7 @@ window.HB_PLACES = {
         "attribution": "© OpenStreetMap contributors",
         "retrievedOn": "2026-10-10"
       },
+      "entrance": null,
       "hours": {
         "status": "hours-checked",
         "checkedOn": "2026-10-10",
@@ -1186,6 +1195,7 @@ window.HB_PLACES = {
         "attribution": "© OpenStreetMap contributors",
         "retrievedOn": "2026-10-10"
       },
+      "entrance": null,
       "hours": {
         "status": "hours-checked",
         "checkedOn": "2026-10-10",
@@ -1290,6 +1300,7 @@ window.HB_PLACES = {
         "attribution": "© OpenStreetMap contributors",
         "retrievedOn": "2026-10-10"
       },
+      "entrance": null,
       "hours": {
         "status": "hours-checked",
         "checkedOn": "2026-10-10",
@@ -1425,6 +1436,7 @@ window.HB_PLACES = {
         "attribution": "© OpenStreetMap contributors",
         "retrievedOn": "2026-10-10"
       },
+      "entrance": null,
       "hours": {
         "status": "hours-checked",
         "checkedOn": "2026-10-10",
@@ -1529,6 +1541,7 @@ window.HB_PLACES = {
         "attribution": "© OpenStreetMap contributors",
         "retrievedOn": "2026-10-10"
       },
+      "entrance": null,
       "hours": {
         "status": "hours-checked",
         "checkedOn": "2026-10-10",
@@ -1628,6 +1641,7 @@ window.HB_PLACES = {
         "attribution": "© OpenStreetMap contributors",
         "retrievedOn": "2026-10-10"
       },
+      "entrance": null,
       "hours": {
         "status": "hours-checked",
         "checkedOn": "2026-10-10",
@@ -1717,6 +1731,17 @@ window.HB_PLACES = {
         "lng": 13.4026,
         "basis": "centre of a large park with several entrances; use the operator's entrance map, not this point",
         "osm": "relation/7317281",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-10"
+      },
+      "entrance": {
+        "name": "Haupteingang Tor 10, Tempelhofer Damm",
+        "lat": 52.47615,
+        "lng": 13.38611,
+        "osm": "node/941540807",
+        "note": "Main public entrance; the opening hours tagged on this gate in OpenStreetMap match the operator's published hours.",
         "source": "OpenStreetMap Nominatim",
         "licence": "ODbL 1.0",
         "attribution": "© OpenStreetMap contributors",
@@ -1922,6 +1947,7 @@ window.HB_PLACES = {
         "attribution": "© OpenStreetMap contributors",
         "retrievedOn": "2026-10-10"
       },
+      "entrance": null,
       "hours": {
         "status": "hours-checked",
         "checkedOn": "2026-10-10",
@@ -2027,6 +2053,408 @@ window.HB_PLACES = {
             "note": "Current tickets, exhibitions and visitor hours at Trebbiner Strasse 9, Berlin. Photography, film and chemistry/pharmacy exhibitions currently inaccessible. Spectrum has a different entrance."
           }
         ]
+      }
+    },
+    "plc_berlin_lebenswelten-bistro-humboldt-forum": {
+      "id": "plc_berlin_lebenswelten-bistro-humboldt-forum",
+      "name": "Lebenswelten Bistro (Humboldt Forum)",
+      "city": "berlin",
+      "kind": "meal",
+      "area": "Museum Island",
+      "timeZone": "Europe/Berlin",
+      "address": "Humboldt Forum, ground-floor Passage, Schlossplatz, Berlin",
+      "coordinates": {
+        "lat": 52.51703,
+        "lng": 13.40123,
+        "basis": "named feature: Humboldt Forum (the bistro is in its ground-floor Passage; the official page gives no house number)",
+        "osm": "node/8413352835",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-10"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-10",
+        "periods": [
+          {
+            "from": "2026-10-10",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "10:00",
+                  "17:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "10:00",
+                  "17:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-12-24",
+            "hours": [],
+            "note": null
+          },
+          {
+            "date": "2026-12-25",
+            "hours": [],
+            "note": null
+          },
+          {
+            "date": "2026-12-26",
+            "hours": [],
+            "note": null
+          },
+          {
+            "date": "2026-12-31",
+            "hours": [],
+            "note": null
+          }
+        ],
+        "lastEntry": null,
+        "caveat": null,
+        "notes": "Also closed 1 January 2027 (outside the researched period). The bistro is open on Tuesdays even though the Humboldt Forum exhibitions are not.",
+        "evidence": {
+          "url": "https://www.humboldtforum.org/en/programm/dauerangebot/food-and-drink/lebenswelten-bistro-23376/",
+          "quote": "Opening hours Mon, Tue: 10:00 – 17:00 Wed, Thu, Fri, Sat, Sun: 10:00 – 19:00 Exceptions 24 Dec 2026: closed 25 Dec 2026: closed 26 Dec 2026: closed 31 Dec 2026: closed 1 Jan 2027: closed",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-10",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "Official venue page (Humboldt Forum)",
+            "url": "https://www.humboldtforum.org/en/programm/dauerangebot/food-and-drink/lebenswelten-bistro-23376/",
+            "locationUrl": "https://www.humboldtforum.org/en/programm/dauerangebot/food-and-drink/lebenswelten-bistro-23376/",
+            "retrievedOn": "2026-10-10",
+            "note": "The Humboldt Forum's own page lists current hours with closures dated December 2026 to January 2027, a current menu description and a booking phone number."
+          }
+        ]
+      }
+    },
+    "plc_berlin_luisenbraeu-by-lemke": {
+      "id": "plc_berlin_luisenbraeu-by-lemke",
+      "name": "Luisenbraeu by Lemke",
+      "city": "berlin",
+      "kind": "meal",
+      "area": "Charlottenburg",
+      "timeZone": "Europe/Berlin",
+      "address": "Luisenplatz 1, Berlin",
+      "coordinates": {
+        "lat": 52.52,
+        "lng": 13.29982,
+        "basis": "named feature at Luisenplatz 1",
+        "osm": "node/420511325",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-10"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-10",
+        "periods": [
+          {
+            "from": "2026-10-10",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "12:00",
+                  "22:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "12:00",
+                  "22:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "12:00",
+                  "22:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "12:00",
+                  "22:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "12:00",
+                  "22:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "12:00",
+                  "22:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "12:00",
+                  "22:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": null,
+        "notes": "No holiday exceptions published. Tables can be booked online.",
+        "evidence": {
+          "url": "https://www.lemke.berlin/en/luisenbraeu/",
+          "quote": "OPENING HOURS MONDAY – SUNDAY 12 noon – 10 p.m.",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-10",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "Official business page (Lemke Berlin)",
+            "url": "https://www.lemke.berlin/en/luisenbraeu/",
+            "locationUrl": "https://www.lemke.berlin/en/luisenbraeu/",
+            "retrievedOn": "2026-10-10",
+            "note": "The official page links a current menu (file dated May 2026), offers online table booking and shows a current seasonal news banner."
+          }
+        ]
+      }
+    },
+    "plc_berlin_restaurant-anhalt-deutsches-technikmuseum": {
+      "id": "plc_berlin_restaurant-anhalt-deutsches-technikmuseum",
+      "name": "Restaurant Anhalt (Deutsches Technikmuseum)",
+      "city": "berlin",
+      "kind": "meal",
+      "area": "Kreuzberg",
+      "timeZone": "Europe/Berlin",
+      "address": "Trebbiner Strasse 9, Berlin (inside the Deutsches Technikmuseum)",
+      "coordinates": {
+        "lat": 52.49718,
+        "lng": 13.37593,
+        "basis": "the museum's named feature at Trebbiner Strasse 9 (the restaurant is inside the museum building)",
+        "osm": "way/31622818",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-10"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-10",
+        "periods": [
+          {
+            "from": "2026-10-10",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [],
+              "tue": [
+                [
+                  "10:00",
+                  "16:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "16:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "16:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "16:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "17:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "17:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-12-24",
+            "hours": [],
+            "note": "The museum building is closed"
+          },
+          {
+            "date": "2026-12-25",
+            "hours": [],
+            "note": "The museum building is closed"
+          },
+          {
+            "date": "2026-12-26",
+            "hours": [
+              [
+                "10:00",
+                "17:00"
+              ]
+            ],
+            "note": "Public holiday: weekend hours"
+          },
+          {
+            "date": "2026-12-31",
+            "hours": [],
+            "note": "The museum building is closed"
+          }
+        ],
+        "lastEntry": null,
+        "caveat": "Inside the museum building; the page does not say whether a museum ticket is needed to eat here.",
+        "notes": "Closed on Mondays, the same as the museum. Christmas dates follow the museum's own closures.",
+        "evidence": {
+          "url": "https://technikmuseum.berlin/besuch/essen-trinken",
+          "quote": "Dienstag bis Freitag: 10–16:30 Uhr; Samstag, Sonntag, Feiertag: 10–17 Uhr; Montag: Ruhetag",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-10",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "Official museum page (Deutsches Technikmuseum, Essen & Trinken)",
+            "url": "https://technikmuseum.berlin/besuch/essen-trinken",
+            "locationUrl": "https://technikmuseum.berlin/besuch/essen-trinken",
+            "retrievedOn": "2026-10-10",
+            "note": "The museum's current visitor page lists the restaurant with its address, phone number and current opening hours."
+          }
+        ]
+      }
+    }
+  },
+  "routes": {
+    "source": "VBB Verkehrsverbund Berlin-Brandenburg timetable data, via v6.vbb.transport.rest",
+    "journeys": {
+      "plc_berlin_luisenbraeu-by-lemke|plc_berlin_zoo-berlin": {
+        "minutes": 28,
+        "mode": "transit",
+        "summary": "Bus M45, with about 0.8 km of walking in total",
+        "conditions": "Wednesday 14 Oct 2026, departing about 13:40",
+        "checkedOn": "2026-10-10",
+        "alternatives": "Bus 109: about 34 min; Bus M45 then U2: about 27 min"
+      },
+      "plc_berlin_zoo-berlin|plc_berlin_green-door-bar": {
+        "minutes": 24,
+        "mode": "transit",
+        "summary": "U2, with about 1.3 km of walking in total",
+        "conditions": "Wednesday 14 Oct 2026, departing about 18:15",
+        "checkedOn": "2026-10-10",
+        "alternatives": "Bus 187: about 24 min"
+      },
+      "plc_berlin_markthalle-neun|plc_berlin_restaurant-tim-raue": {
+        "minutes": 21,
+        "mode": "transit",
+        "summary": "Bus M29, with about 0.7 km of walking",
+        "conditions": "Wednesday 14 Oct 2026, departing about 18:50",
+        "checkedOn": "2026-10-10",
+        "alternatives": null
+      },
+      "plc_berlin_restaurant-anhalt-deutsches-technikmuseum|plc_berlin_tempelhofer-feld": {
+        "minutes": 22,
+        "mode": "transit",
+        "summary": "U6 to the Tempelhofer Damm entrance, with about 1.4 km of walking",
+        "conditions": "Wednesday 14 Oct 2026, departing about 14:20",
+        "checkedOn": "2026-10-10",
+        "alternatives": null
+      },
+      "plc_berlin_tempelhofer-feld|plc_berlin_nobelhart-und-schmutzig": {
+        "minutes": 13,
+        "mode": "transit",
+        "summary": "U6 from the Tempelhofer Damm entrance, with about 0.4 km of walking",
+        "conditions": "Wednesday 14 Oct 2026, departing about 18:50",
+        "checkedOn": "2026-10-10",
+        "alternatives": null
       }
     }
   }
