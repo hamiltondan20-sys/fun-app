@@ -943,7 +943,17 @@ window.HB_TRIP_HELPERS.getConcreteTripTemplates = function(city, areas) {
               { time: "12:30 PM", title: "Lunch at Luisenbraeu", copy: "A brewpub with Berlin and German food at Luisenplatz 1, across from the palace forecourt. Tables can be booked online.", placeId: "plc_berlin_luisenbraeu-by-lemke" },
               { time: "2:00 PM", title: "Zoo Berlin", copy: "About 3 km from lunch in a straight line: use public transport or a taxi. Aquarium admission is not assumed to be included.", placeId: "plc_berlin_zoo-berlin" },
               { time: "7:00 PM", title: "Drinks at Green Door Bar", copy: "An evening cocktail bar on Winterfeldtstrasse, not a family meal. About 1.6 km from the zoo in a straight line.", placeId: "plc_berlin_green-door-bar" }
-            ]
+            ],
+            // Easygoing pace: the third main stop (evening drinks) becomes a free evening.
+            easygoing: {
+              drop: "plc_berlin_green-door-bar",
+              replacement: { time: "6:00 PM", title: "Free evening", copy: "Easygoing pace: nothing is booked tonight. Head back to rest, or find dinner near where you are staying.", kind: "flexible" },
+              rationale: "A western day: the palace in the morning, the zoo after lunch, and a free evening.",
+              timeShape: "Palace morning, zoo afternoon, free evening",
+              itemTitle: "Charlottenburg Palace + Zoo Berlin",
+              itemBody: "Visit the Old Palace at Charlottenburg, have lunch at Luisenbraeu across the square, then take transit to Zoo Berlin at Hardenbergplatz. The evening is yours.",
+              fit: "Lunch is a short walk from the palace and the zoo is one bus ride on, so the day has two main stops and an open evening."
+            }
           },
           {
             title: "East Side Gallery and a Kreuzberg dinner",
@@ -975,7 +985,17 @@ window.HB_TRIP_HELPERS.getConcreteTripTemplates = function(city, areas) {
               { time: "1:00 PM", title: "Lunch at Restaurant Anhalt", copy: "The restaurant inside the Technikmuseum. Closed Mondays, like the museum.", placeId: "plc_berlin_restaurant-anhalt-deutsches-technikmuseum" },
               { time: "3:00 PM", title: "Tempelhofer Feld", copy: "Free entry. Use the operator's entrance map and current gate hours; development work can close some areas.", placeId: "plc_berlin_tempelhofer-feld" },
               { time: "7:30 PM", title: "Dinner at Nobelhart & Schmutzig", copy: "Reserve ahead. Friedrichstrasse 218. Its published hours disagree between pages, so confirm when booking.", placeId: "plc_berlin_nobelhart-und-schmutzig" }
-            ]
+            ],
+            // Easygoing pace: the third main stop (the booked dinner) becomes a free evening.
+            easygoing: {
+              drop: "plc_berlin_nobelhart-und-schmutzig",
+              replacement: { time: "6:00 PM", title: "Free evening", copy: "Easygoing pace: no dinner is booked tonight. Rest after the museum and the Feld, or eat somewhere close by.", kind: "flexible" },
+              rationale: "A museum morning, open space in the afternoon, and a free evening.",
+              timeShape: "Museum, open space, free evening",
+              itemTitle: "Deutsches Technikmuseum + Tempelhofer Feld",
+              itemBody: "Start at the Deutsches Technikmuseum and have lunch in its restaurant, then spend the afternoon on Tempelhofer Feld. Nothing is booked for the evening.",
+              fit: "The one afternoon move is on the U6 (Tempelhofer Feld via its Tempelhofer Damm entrance), and the evening stays open."
+            }
           },
           {
             title: "Last morning in Scheunenviertel",

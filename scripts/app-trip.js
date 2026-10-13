@@ -504,7 +504,7 @@ function getBlueprintTopPlaces() {
           label: "Guide source",
           value: `From the ${guideSource}`,
           copy: hasResearchedDays()
-            ? `Researched days use checked places and are ordered around their opening days. Pace and budget do not change them yet; must-haves are matched to them or listed as not scheduled.`
+            ? `Researched days use checked places and are ordered around their opening days. An Easygoing pace frees the evening on the fullest days; budget does not change them yet. Must-haves are matched to them or listed as not scheduled.`
             : `The itinerary starts with guide recommendations, then adjusts them to your dates, pace, budget, and must-haves.`,
           chips: ["Guide picks", hbState.appState.pace, formatTripStyles()]
         },
@@ -4192,6 +4192,21 @@ function getBlueprintTopPlaces() {
       return [...middle, closing];
     }
 
+    // Easygoing pace on a researched day: the template names the stop it drops (its third main stop)
+    // and the copy that describes the lighter day. Days without an easygoing variant are unchanged.
+    function applyPaceToTemplate(template, pace) {
+      const variant = template?.easygoing;
+      if (pace !== "Easygoing" || !variant || !Array.isArray(template.timeline)) return template;
+      const { drop, replacement, ...copy } = variant;
+      if (!template.timeline.some((step) => step?.placeId === drop)) return template;
+      return {
+        ...template,
+        ...copy,
+        timeline: template.timeline.map((step) => (step?.placeId === drop ? { ...replacement } : step)),
+        paceAdjusted: "Easygoing"
+      };
+    }
+
     // Stops on a day whose registry place publishes the date as closed.
     function countClosedStops(template, isoDate, registry) {
       return (Array.isArray(template?.timeline) ? template.timeline : []).filter((step) => {
@@ -4489,7 +4504,7 @@ function getBlueprintTopPlaces() {
         openTemplate: dayTemplates[5],
         count,
         buildFlexibleTemplate
-      }), Array.from({ length: count }, (_, index) => getTripDayIsoDate(index)), window.HB_PLACES?.places);
+      }).map((entry) => ({ ...entry, template: applyPaceToTemplate(entry.template, hbState.appState.pace) })), Array.from({ length: count }, (_, index) => getTripDayIsoDate(index)), window.HB_PLACES?.places);
       const builtDays = selectedTemplates.map(({ template: sourceDay, slot }, index) => {
         const isLastDay = index === count - 1;
         // Open and flexible days (slot 5+) get an open-ended timeline; the later generic templates end in packing.
@@ -4770,7 +4785,8 @@ function getBlueprintTopPlaces() {
       }
     }
 
-    // Researched days are written around registry places; pace and budget do not reshape them yet.
+    // Researched days are written around registry places. Easygoing uses each day's written lighter
+    // variant (applyPaceToTemplate); budget does not reshape them yet.
     function hasResearchedDays(city = getCityName()) {
       const templates = getConcreteTripTemplates(city, getAreaSet(city)) || [];
       return templates.some((template) => (template.timeline || []).some((step) => step?.placeId));

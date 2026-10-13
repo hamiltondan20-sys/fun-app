@@ -40,7 +40,7 @@ function loadLogic(appState = {}) {
 const genericTemplates = ["Generic day 1", "Generic day 2", "Generic day 3", "Generic signature day", "Generic lighter close"]
   .map((title) => ({ title, timeline: null }));
 
-function buildCityTrip(city, dayCount, anchors, startIso = null) {
+function buildCityTrip(city, dayCount, anchors, startIso = null, pace = "Balanced") {
   const logic = loadLogic();
   const helpers = logic.window.HB_TRIP_HELPERS;
   const areas = helpers.getAreaSet(city);
@@ -50,7 +50,7 @@ function buildCityTrip(city, dayCount, anchors, startIso = null) {
     openTemplate: { title: `Open day near ${areas[0]}`, highlight: `Flexible time near ${areas[0]}`, timeline: null },
     count: dayCount,
     buildFlexibleTemplate: (index) => ({ title: `Flexible day in ${areas[index % areas.length]}`, timeline: null })
-  });
+  }).map((entry) => ({ ...entry, template: logic.applyPaceToTemplate(entry.template, pace) }));
   // With a start date, days are ordered around opening hours as buildDayData does.
   const selected = startIso
     ? logic.orderDaysForOpeningHours(pool, Array.from({ length: dayCount }, (_, index) => isoPlus(startIso, index)), logic.window.HB_PLACES.places)
@@ -68,7 +68,7 @@ function buildCityTrip(city, dayCount, anchors, startIso = null) {
       area: areaInfo.label,
       areaConfirmed: areaInfo.confirmed,
       templateSlot: slot,
-      pace: "Balanced",
+      pace,
       item: { timeline: logic.expandTimelineSteps(template.timeline, city, areaInfo.label, template.highlight) }
     };
   });
@@ -191,6 +191,41 @@ test("Berlin hours: days are reordered so no stop lands on its closed day, for a
   assert.equal(monday[5], written[0]);
   // A Tuesday start already fits, so nothing moves.
   assert.deepEqual([...buildCityTrip("Berlin", 7, [], "2026-11-10").days.map((day) => day.title)], written);
+});
+
+test("Berlin Easygoing: the two three-stop days lose their evening stop; everything else is unchanged", () => {
+  const anchors = [{ label: "One memorable dinner", key: "onememorabledinner", type: "food", source: "traveler" }];
+  const balanced = buildCityTrip("Berlin", 7, anchors);
+  const easy = buildCityTrip("Berlin", 7, anchors, null, "Easygoing");
+  const placeIds = (trip) => [...trip.days.flatMap((day) => day.item.timeline.map((step) => step.placeId).filter(Boolean))];
+  const dropped = placeIds(balanced).filter((id) => !placeIds(easy).includes(id));
+  assert.deepEqual(dropped, ["plc_berlin_green-door-bar", "plc_berlin_nobelhart-und-schmutzig"]);
+  easy.days.forEach((day, index) => {
+    const before = balanced.days[index];
+    assert.equal(day.title, before.title, "same days in the same order");
+    const evening = day.item.timeline[day.item.timeline.length - 1];
+    if (dropped.includes(before.item.timeline.at(-1).placeId)) {
+      // The evening stop becomes labelled free time (not a gap), and no padding is added.
+      assert.equal(evening.kind, "flexible");
+      assert.ok(!evening.placeId);
+      assert.match(evening.copy, /^Easygoing pace:/);
+      assert.ok(day.item.timeline.length < before.item.timeline.length, `${day.title} is lighter`);
+    } else {
+      assert.deepEqual([...day.item.timeline.map((step) => step.title)], [...before.item.timeline.map((step) => step.title)], `${day.title} unchanged`);
+    }
+  });
+  // The memorable dinner still has its booked dinner.
+  const dinnerDay = easy.schedule.byDay.findIndex((list) => list.some((anchor) => anchor.key === "onememorabledinner"));
+  assert.equal(easy.days[dinnerDay].title, "East Side Gallery and a Kreuzberg dinner");
+  // The lighter days' written copy no longer names the dropped stops.
+  const templates = easy.logic.window.HB_TRIP_HELPERS.getConcreteTripTemplates("Berlin", []);
+  templates.filter((template) => template.easygoing).forEach((template) => {
+    const light = easy.logic.applyPaceToTemplate(template, "Easygoing");
+    const droppedName = easy.logic.window.HB_PLACES.places[template.easygoing.drop].name.split(" ")[0];
+    [light.itemTitle, light.itemBody, light.fit, light.rationale, light.timeShape].forEach((text) => assert.ok(!text.includes(droppedName), `${template.title}: "${text}" still names ${droppedName}`));
+  });
+  // Other paces leave templates untouched.
+  templates.forEach((template) => assert.equal(easy.logic.applyPaceToTemplate(template, "Packed"), template));
 });
 
 test("Must-haves: a stop can cover a named need beyond its title", () => {

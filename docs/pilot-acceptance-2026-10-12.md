@@ -22,14 +22,14 @@ four pilot cities are not ready to test yet.
 
 ## Results
 
-P = pass. "Stated" = passes because the limitation is shown to the traveler, not hidden.
+P = pass. "Stated" = passes because the limitation is shown to the traveler, not hidden. "Rerun" = re-tested after a fix made the same day.
 
 | Run | 1 Places | 2 Coverage | 3 Geography | 4 Travel | 5 Timing | 6 Preferences | 7 Repetition | 8 Portable | 9 Phones |
 |---|---|---|---|---|---|---|---|---|---|
 | First visit / Mon | P | P | P | P | P | P | P | P | Partial |
 | First visit / Wed | P | P | P | P | P | P | P | P | Partial |
-| Easygoing / Mon | P | P | P | P | P | Stated | P | P | Partial |
-| Easygoing / Wed | P | P | P | P | P | Stated | P | P | Partial |
+| Easygoing / Mon | P | P | P | P | P | P (rerun) | P | P | Partial |
+| Easygoing / Wed | P | P | P | P | P | P (rerun) | P | P | Partial |
 | Budget / Mon | P | P | P | P | P | Stated | P | P | Partial |
 | Budget / Wed | P | P | P | P | P | Stated | P | P | Partial |
 | Must-haves / Mon | P | P | P | P | P | P | P | P | Partial |
@@ -61,10 +61,15 @@ What each column rests on (identical across all eight runs unless noted):
      - The Wall Memorial goes to Day 2.
      - The food market goes to Day 4 (Markthalle Neun).
      - The Brandenburg Gate is listed as "Not scheduled yet", with a prompt to add it or drop it.
-   - Easygoing and Budget: the plan is identical to the default. The planner now says so
-     ("Pace and budget do not change them yet"). It no longer claims a budget or pace lens,
-     and no longer titles the trip "Budget-Friendly" while it includes two tasting-menu
-     dinners.
+   - Easygoing (rerun after the owner chose the option, same day):
+     - The two days with three main stops lose their evening stop, which becomes a labelled
+       free evening: Day 3 drops Green Door Bar, and Day 5 drops Nobelhart & Schmutzig.
+     - Those days' headline, description and fit are rewritten so they don't name the
+       dropped stop.
+     - The other days are unchanged, and the memorable dinner stays on Day 4 (Tim Raue).
+   - Budget: the plan is identical to the default, and the planner says so ("budget does
+     not change them yet"). It no longer claims a budget lens, and no longer titles the
+     trip "Budget-Friendly" while it includes two tasting-menu dinners.
 7. **Repetition.** No duplicate stops or day titles.
 8. **Portability.**
    - A Monday-start trip (reordered days, must-haves, lunch places) survives a page reload
@@ -89,11 +94,10 @@ What each column rests on (identical across all eight runs unless noted):
 
 ## Open items
 
-1. **Pace and budget for researched days.** This needs an owner decision. Today they are
-   stated as not applying. Options:
-   - Easygoing drops each day's third main stop or evening booking.
-   - Budget swaps the two tasting-menu dinners for checked casual dinners, which needs new
-     place research.
+1. **Budget for researched days.** It is stated as not applying. The option on the table:
+   swap the two tasting-menu dinners for checked casual dinners, which needs new place
+   research. (Easygoing was decided and built on October 12: each template can carry an
+   `easygoing` variant naming the stop it drops.)
 2. **"Try alternate" on a researched day** replaces the day's headline and description with
    generic text ("Nearby alternative: a different version of the same kind of stop…").
    The timeline keeps the same places, so the summary no longer describes them. For
