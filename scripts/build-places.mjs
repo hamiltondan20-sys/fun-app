@@ -56,18 +56,40 @@ const PLACES = [
   ["hongkong", "Star Ferry (Central-Tsim Sha Tsui)", "scenic", "Tsim Sha Tsui Star Ferry Pier, Salisbury Road, Kowloon", "Tsim Sha Tsui", 22.29354, 114.16799, "relation/14941144", "named feature: Tsim Sha Tsui Star Ferry Pier, where this plan boards"],
   ["hongkong", "noc (Tsim Sha Tsui, Sun Arcade)", "cafe", "Shop 02, UG/F, The Sun Arcade, 28 Canton Road, Tsim Sha Tsui", "Tsim Sha Tsui", 22.29669, 114.16960, "way/693737390", "the Sun Arcade at 28 Canton Road (not the Tsim Sha Tsui East branch)"],
   ["hongkong", "M+", "landmark", "38 Museum Drive, West Kowloon Cultural District, Kowloon", "West Kowloon", 22.30105, 114.15915, "way/549702815", "named feature: M+ building"],
-  ["hongkong", "Bakehouse (Wan Chai)", "cafe", "G/F, 14 Tai Wong Street East, Wan Chai, Hong Kong", "Wan Chai", 22.27587, 114.17140, "node/6788818059", "named feature on Tai Wong Street East (not another branch)"]
+  ["hongkong", "Bakehouse (Wan Chai)", "cafe", "G/F, 14 Tai Wong Street East, Wan Chai, Hong Kong", "Wan Chai", 22.27587, 114.17140, "node/6788818059", "named feature on Tai Wong Street East (not another branch)"],
+  // Paris: OSM lookup on 2026-10-14.
+  ["paris", "Louvre Museum", "landmark", "Pyramid entrance, Cour Napoléon, 75001 Paris", "Louvre", 48.86099, 2.33584, "way/375076234", "named feature: the Louvre Pyramid, the main visitor entrance"],
+  ["paris", "Galerie Vivienne", "scenic", "4 rue des Petits-Champs / 6 rue Vivienne, 75002 Paris", "Bourse", 48.86673, 2.33976, "relation/546789", "named feature: the covered passage"],
+  ["paris", "Frenchie (rue du Nil)", "meal", "5 rue du Nil, 75002 Paris", "Sentier", 48.86774, 2.34798, "node/2383363287", "named feature 'Restaurant Frenchie' on rue du Nil (not the wine bar or shop)"],
+  ["paris", "Poilâne (rue du Cherche-Midi)", "cafe", "8 rue du Cherche-Midi, 75006 Paris", "Saint-Germain", 48.85131, 2.32899, "node/6695032685", "named feature: Boulangerie Poilâne on rue du Cherche-Midi"],
+  ["paris", "Jardin du Luxembourg", "scenic", "Entrances on place Edmond Rostand, rue Guynemer and rue de Vaugirard, 75006 Paris", "Luxembourg", 48.84672, 2.33641, "way/128206209", "centre of the garden; it has several gates"],
+  ["paris", "Musée d'Orsay", "landmark", "Esplanade Valéry Giscard d'Estaing, 75007 Paris", "Saint-Germain", 48.85992, 2.32658, "way/63178753", "named feature: the museum building"],
+  ["paris", "Sainte-Chapelle", "landmark", "10 boulevard du Palais, 75001 Paris", "Île de la Cité", 48.85539, 2.34499, "relation/3344870", "named feature on boulevard du Palais"],
+  ["paris", "Coutume Café (Babylone)", "cafe", "47 rue de Babylone, 75007 Paris", "Invalides", 48.85166, 2.31830, "node/2355464116", "named feature at 47 rue de Babylone"],
+  ["paris", "Musée Rodin", "landmark", "77 rue de Varenne, 75007 Paris", "Invalides", 48.85475, 2.31587, "way/472159547", "named feature at 77 rue de Varenne (not the Meudon site)"],
+  ["paris", "Eiffel Tower", "landmark", "Champ de Mars, 75007 Paris", "Eiffel Tower", 48.85826, 2.29450, "way/5013364", "named feature: the tower"],
+  ["paris", "Le Jules Verne", "meal", "Eiffel Tower 2nd floor, 6 avenue Gustave Eiffel, 75007 Paris", "Eiffel Tower", 48.85826, 2.29450, "way/5013364", "the tower's named feature; the restaurant is on its second floor"],
+  ["paris", "Holybelly", "cafe", "5 rue Lucien Sampaix, 75010 Paris", "Canal Saint-Martin", 48.87100, 2.35976, "node/4904689828", "named feature on rue Lucien Sampaix"],
+  ["paris", "Clamato", "meal", "80 rue de Charonne, 75011 Paris", "Charonne", 48.85359, 2.38085, "node/3602657895", "named feature at 80 rue de Charonne"],
+  ["paris", "Bistrot Paul Bert", "meal", "18 rue Paul Bert, 75011 Paris", "Charonne", 48.85222, 2.38492, "node/589485658", "named feature on rue Paul Bert"],
+  ["paris", "Sacré-Cœur Basilica", "landmark", "35 rue du Chevalier de La Barre, 75018 Paris", "Montmartre", 48.88681, 2.34302, "way/23762981", "named feature: the basilica"],
+  ["paris", "Breizh Café (Marais)", "meal", "109 rue Vieille du Temple, 75003 Paris", "Le Marais", 48.86063, 2.36182, "node/2383363288", "named feature on rue Vieille du Temple (not another branch)"],
+  ["paris", "Little Red Door", "meal", "60 rue Charlot, 75003 Paris", "Le Marais", 48.86366, 2.36359, "node/3265513124", "named feature at 60 rue Charlot"],
+  ["paris", "Terres de Café (Rambuteau)", "cafe", "14 rue Rambuteau, 75003 Paris", "Le Marais", 48.86061, 2.35554, "node/5908178879", "named feature at 14 rue Rambuteau (not another branch)"]
 ];
 
 const CITY_META = {
   berlin: { ledgerKey: "Berlin, Germany", timeZone: "Europe/Berlin", osmRetrievedOn: "2026-10-10" },
   singapore: { ledgerKey: "Singapore, Singapore", timeZone: "Asia/Singapore", osmRetrievedOn: "2026-10-12" },
-  hongkong: { ledgerKey: "Hong Kong, China", timeZone: "Asia/Hong_Kong", osmRetrievedOn: "2026-10-14" }
+  hongkong: { ledgerKey: "Hong Kong, China", timeZone: "Asia/Hong_Kong", osmRetrievedOn: "2026-10-14" },
+  paris: { ledgerKey: "Paris, France", timeZone: "Europe/Paris", osmRetrievedOn: "2026-10-14" }
 };
 
 // "&" reads as "und" in German place names (Nobelhart & Schmutzig), "and" elsewhere. Apostrophes
-// drop (Duddell's -> duddells) and "+" reads as "plus" (M+ -> m-plus).
+// drop (Duddell's -> duddells), "+" reads as "plus" (M+ -> m-plus) and accents fold
+// (Musée d'Orsay -> musee-dorsay, Sacré-Cœur -> sacre-coeur).
 const slug = (value, city) => value.toLowerCase()
+  .replace(/œ/g, "oe").replace(/æ/g, "ae").normalize("NFD").replace(/[̀-ͯ]/g, "")
   .replace(/\(.*?\)/g, (match) => match.replace(/[()]/g, ""))
   .replace(/['’]/g, "").replace(/\+/g, "-plus")
   .replace(/&/g, city === "berlin" ? "und" : "and").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");

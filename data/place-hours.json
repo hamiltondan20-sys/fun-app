@@ -7,13 +7,41 @@
       "confidence": "high",
       "quote": "Mon closed / Tue 10:00 am - 6:00 pm / Wed 10:00 am - 6:00 pm / Thu 10:00 am - 6:00 pm / Fri 10:00 am - 6:00 pm / Sat 10:00 am - 6:00 pm / Sun 10:00 am - 6:00 pm",
       "periods": [
-        { "from": "2026-10-10", "to": "2026-12-31", "weekly": { "mon": "closed", "tue": "10:00-18:00", "wed": "10:00-18:00", "thu": "10:00-18:00", "fri": "10:00-18:00", "sat": "10:00-18:00", "sun": "10:00-18:00" } }
+        {
+          "from": "2026-10-10",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "closed",
+            "tue": "10:00-18:00",
+            "wed": "10:00-18:00",
+            "thu": "10:00-18:00",
+            "fri": "10:00-18:00",
+            "sat": "10:00-18:00",
+            "sun": "10:00-18:00"
+          }
+        }
       ],
       "exceptions": [
-        { "date": "2026-12-24", "hours": "closed", "note": "SMB public-holiday page (all SMB museums)" },
-        { "date": "2026-12-25", "hours": "10:00-18:00", "note": "Sunday hours" },
-        { "date": "2026-12-26", "hours": "10:00-18:00", "note": "Sunday hours" },
-        { "date": "2026-12-31", "hours": "closed", "note": "SMB public-holiday page" }
+        {
+          "date": "2026-12-24",
+          "hours": "closed",
+          "note": "SMB public-holiday page (all SMB museums)"
+        },
+        {
+          "date": "2026-12-25",
+          "hours": "10:00-18:00",
+          "note": "Sunday hours"
+        },
+        {
+          "date": "2026-12-26",
+          "hours": "10:00-18:00",
+          "note": "Sunday hours"
+        },
+        {
+          "date": "2026-12-31",
+          "hours": "closed",
+          "note": "SMB public-holiday page"
+        }
       ],
       "notes": "No last-entry time published. Holiday rules come from SMB's general holiday page. Closed 15-17 March 2027 for maintenance (outside the researched period)."
     },
@@ -23,11 +51,29 @@
       "confidence": "high",
       "quote": "daily 9 am – 9 pm ... open seven days a week and on public holidays. On 24 December and 31 December, the museum is open from 9 am to 4 pm.",
       "periods": [
-        { "from": "2026-10-10", "to": "2026-12-31", "weekly": { "mon": "09:00-21:00", "tue": "09:00-21:00", "wed": "09:00-21:00", "thu": "09:00-21:00", "fri": "09:00-21:00", "sat": "09:00-21:00", "sun": "09:00-21:00" } }
+        {
+          "from": "2026-10-10",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "09:00-21:00",
+            "tue": "09:00-21:00",
+            "wed": "09:00-21:00",
+            "thu": "09:00-21:00",
+            "fri": "09:00-21:00",
+            "sat": "09:00-21:00",
+            "sun": "09:00-21:00"
+          }
+        }
       ],
       "exceptions": [
-        { "date": "2026-12-24", "hours": "09:00-16:00" },
-        { "date": "2026-12-31", "hours": "09:00-16:00" }
+        {
+          "date": "2026-12-24",
+          "hours": "09:00-16:00"
+        },
+        {
+          "date": "2026-12-31",
+          "hours": "09:00-16:00"
+        }
       ]
     },
     "plc_berlin_museum-fuer-naturkunde-berlin": {
@@ -37,16 +83,56 @@
       "quote": "The museum is open daily until 6.00 pm. The museum is closed on Mondays. Last admission is 30 minutes before closing time. [Tuesday-Friday] 9.30 – 18.00 [weekend] 10.00 – 18.00",
       "lastEntry": "30 minutes before closing",
       "periods": [
-        { "from": "2026-10-10", "to": "2026-12-31", "weekly": { "mon": "closed", "tue": "09:30-18:00", "wed": "09:30-18:00", "thu": "09:30-18:00", "fri": "09:30-18:00", "sat": "10:00-18:00", "sun": "10:00-18:00" } }
+        {
+          "from": "2026-10-10",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "closed",
+            "tue": "09:30-18:00",
+            "wed": "09:30-18:00",
+            "thu": "09:30-18:00",
+            "fri": "09:30-18:00",
+            "sat": "10:00-18:00",
+            "sun": "10:00-18:00"
+          }
+        }
       ],
       "exceptions": [
-        { "date": "2026-11-01", "hours": "10:00-14:00", "note": "early closing (special opening hours page)" },
-        { "date": "2026-11-24", "hours": "09:30-14:00", "note": "early closing" },
-        { "date": "2026-11-25", "hours": "09:30-14:00", "note": "early closing" },
-        { "date": "2026-12-24", "hours": "closed", "note": "listed without a year on the special opening hours page" },
-        { "date": "2026-12-25", "hours": "closed", "note": "listed without a year" },
-        { "date": "2026-12-26", "hours": "10:00-18:00", "note": "public holiday hours" },
-        { "date": "2026-12-31", "hours": "closed", "note": "listed without a year" }
+        {
+          "date": "2026-11-01",
+          "hours": "10:00-14:00",
+          "note": "early closing (special opening hours page)"
+        },
+        {
+          "date": "2026-11-24",
+          "hours": "09:30-14:00",
+          "note": "early closing"
+        },
+        {
+          "date": "2026-11-25",
+          "hours": "09:30-14:00",
+          "note": "early closing"
+        },
+        {
+          "date": "2026-12-24",
+          "hours": "closed",
+          "note": "listed without a year on the special opening hours page"
+        },
+        {
+          "date": "2026-12-25",
+          "hours": "closed",
+          "note": "listed without a year"
+        },
+        {
+          "date": "2026-12-26",
+          "hours": "10:00-18:00",
+          "note": "public holiday hours"
+        },
+        {
+          "date": "2026-12-31",
+          "hours": "closed",
+          "note": "listed without a year"
+        }
       ],
       "notes": "Hours load dynamically on the official page; read from the same-domain hours feed. The English page's 'Thursday to Friday' label is a typo; the German page says Tuesday to Friday."
     },
@@ -57,7 +143,19 @@
       "quote": "The outdoor exhibition on the memorial grounds on Bernauer Strasse is accessible Monday to Sunday, 8 a.m. to 10 p.m. ... Visitor Center: Tuesday to Sunday, 10 a.m. to 6 p.m. ... Documentation Center: Tuesday to Sunday, 10 a.m. – 6 p.m.",
       "caveat": "Hours shown are for the outdoor memorial grounds. The Visitor Center and Documentation Center are open Tuesday to Sunday 10:00–18:00 (closed Mondays except 9 November 2026).",
       "periods": [
-        { "from": "2026-10-10", "to": "2026-12-31", "weekly": { "mon": "08:00-22:00", "tue": "08:00-22:00", "wed": "08:00-22:00", "thu": "08:00-22:00", "fri": "08:00-22:00", "sat": "08:00-22:00", "sun": "08:00-22:00" } }
+        {
+          "from": "2026-10-10",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "08:00-22:00",
+            "tue": "08:00-22:00",
+            "wed": "08:00-22:00",
+            "thu": "08:00-22:00",
+            "fri": "08:00-22:00",
+            "sat": "08:00-22:00",
+            "sun": "08:00-22:00"
+          }
+        }
       ],
       "exceptions": [],
       "notes": "Indoor centres closed 24, 25 and 31 Dec 2026; Visitor Center 12:00-18:00 on 26 Dec 2026. Free admission."
@@ -70,11 +168,38 @@
       "lastEntry": "1 hour before closing",
       "caveat": "Zoo hours only; the Aquarium has its own hours and admission.",
       "periods": [
-        { "from": "2026-10-10", "to": "2026-10-25", "weekly": { "mon": "09:00-18:00", "tue": "09:00-18:00", "wed": "09:00-18:00", "thu": "09:00-18:00", "fri": "09:00-18:00", "sat": "09:00-18:00", "sun": "09:00-18:00" } },
-        { "from": "2026-10-26", "to": "2026-12-31", "weekly": { "mon": "09:00-16:30", "tue": "09:00-16:30", "wed": "09:00-16:30", "thu": "09:00-16:30", "fri": "09:00-16:30", "sat": "09:00-16:30", "sun": "09:00-16:30" } }
+        {
+          "from": "2026-10-10",
+          "to": "2026-10-25",
+          "weekly": {
+            "mon": "09:00-18:00",
+            "tue": "09:00-18:00",
+            "wed": "09:00-18:00",
+            "thu": "09:00-18:00",
+            "fri": "09:00-18:00",
+            "sat": "09:00-18:00",
+            "sun": "09:00-18:00"
+          }
+        },
+        {
+          "from": "2026-10-26",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "09:00-16:30",
+            "tue": "09:00-16:30",
+            "wed": "09:00-16:30",
+            "thu": "09:00-16:30",
+            "fri": "09:00-16:30",
+            "sat": "09:00-16:30",
+            "sun": "09:00-16:30"
+          }
+        }
       ],
       "exceptions": [
-        { "date": "2026-12-24", "hours": "09:00-14:00" }
+        {
+          "date": "2026-12-24",
+          "hours": "09:00-14:00"
+        }
       ],
       "notes": "Animal houses and restaurants close 30 minutes before the Zoo."
     },
@@ -85,14 +210,50 @@
       "quote": "April to October: Monday closed, Tuesday – Sunday: 10.00 AM – 05.30 PM. November/December: Monday closed, Tuesday – Sunday: 10.00 AM – 04.30 PM. Last admission 30 minutes before closing.",
       "lastEntry": "30 minutes before closing",
       "periods": [
-        { "from": "2026-10-10", "to": "2026-10-31", "weekly": { "mon": "closed", "tue": "10:00-17:30", "wed": "10:00-17:30", "thu": "10:00-17:30", "fri": "10:00-17:30", "sat": "10:00-17:30", "sun": "10:00-17:30" } },
-        { "from": "2026-11-01", "to": "2026-12-31", "weekly": { "mon": "closed", "tue": "10:00-16:30", "wed": "10:00-16:30", "thu": "10:00-16:30", "fri": "10:00-16:30", "sat": "10:00-16:30", "sun": "10:00-16:30" } }
+        {
+          "from": "2026-10-10",
+          "to": "2026-10-31",
+          "weekly": {
+            "mon": "closed",
+            "tue": "10:00-17:30",
+            "wed": "10:00-17:30",
+            "thu": "10:00-17:30",
+            "fri": "10:00-17:30",
+            "sat": "10:00-17:30",
+            "sun": "10:00-17:30"
+          }
+        },
+        {
+          "from": "2026-11-01",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "closed",
+            "tue": "10:00-16:30",
+            "wed": "10:00-16:30",
+            "thu": "10:00-16:30",
+            "fri": "10:00-16:30",
+            "sat": "10:00-16:30",
+            "sun": "10:00-16:30"
+          }
+        }
       ],
       "exceptions": [
-        { "date": "2026-12-24", "hours": "closed" },
-        { "date": "2026-12-25", "hours": "closed" },
-        { "date": "2026-12-26", "hours": "10:00-16:30" },
-        { "date": "2026-12-31", "hours": "10:00-14:00" }
+        {
+          "date": "2026-12-24",
+          "hours": "closed"
+        },
+        {
+          "date": "2026-12-25",
+          "hours": "closed"
+        },
+        {
+          "date": "2026-12-26",
+          "hours": "10:00-16:30"
+        },
+        {
+          "date": "2026-12-31",
+          "hours": "10:00-14:00"
+        }
       ]
     },
     "plc_berlin_east-side-gallery": {
@@ -102,7 +263,19 @@
       "quote": "The East Side Gallery is open around the clock. ... [visitor center] open daily from 10 a.m. to 5 p.m. ... From November on, the visitor center will be closed on Fridays.",
       "caveat": "The outdoor gallery is open around the clock. Its visitor centre (Muehlenstrasse 73, the tour meeting point) opens 10:00–17:00 and is closed on Fridays from November.",
       "periods": [
-        { "from": "2026-10-10", "to": "2026-12-31", "weekly": { "mon": "open 24h", "tue": "open 24h", "wed": "open 24h", "thu": "open 24h", "fri": "open 24h", "sat": "open 24h", "sun": "open 24h" } }
+        {
+          "from": "2026-10-10",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "open 24h",
+            "tue": "open 24h",
+            "wed": "open 24h",
+            "thu": "open 24h",
+            "fri": "open 24h",
+            "sat": "open 24h",
+            "sun": "open 24h"
+          }
+        }
       ],
       "exceptions": []
     },
@@ -113,9 +286,45 @@
       "quote": "Oktober: 7:00 - 19:00 Uhr; November: 7:00 - 18:00 Uhr; Dezember: 7:30 - 17:00 Uhr. Nach Ende der Öffnungszeiten werden die Eingänge geschlossen.",
       "caveat": "Gates close at the end of opening hours; you can still leave through turnstiles at five entrances.",
       "periods": [
-        { "from": "2026-10-10", "to": "2026-10-31", "weekly": { "mon": "07:00-19:00", "tue": "07:00-19:00", "wed": "07:00-19:00", "thu": "07:00-19:00", "fri": "07:00-19:00", "sat": "07:00-19:00", "sun": "07:00-19:00" } },
-        { "from": "2026-11-01", "to": "2026-11-30", "weekly": { "mon": "07:00-18:00", "tue": "07:00-18:00", "wed": "07:00-18:00", "thu": "07:00-18:00", "fri": "07:00-18:00", "sat": "07:00-18:00", "sun": "07:00-18:00" } },
-        { "from": "2026-12-01", "to": "2026-12-31", "weekly": { "mon": "07:30-17:00", "tue": "07:30-17:00", "wed": "07:30-17:00", "thu": "07:30-17:00", "fri": "07:30-17:00", "sat": "07:30-17:00", "sun": "07:30-17:00" } }
+        {
+          "from": "2026-10-10",
+          "to": "2026-10-31",
+          "weekly": {
+            "mon": "07:00-19:00",
+            "tue": "07:00-19:00",
+            "wed": "07:00-19:00",
+            "thu": "07:00-19:00",
+            "fri": "07:00-19:00",
+            "sat": "07:00-19:00",
+            "sun": "07:00-19:00"
+          }
+        },
+        {
+          "from": "2026-11-01",
+          "to": "2026-11-30",
+          "weekly": {
+            "mon": "07:00-18:00",
+            "tue": "07:00-18:00",
+            "wed": "07:00-18:00",
+            "thu": "07:00-18:00",
+            "fri": "07:00-18:00",
+            "sat": "07:00-18:00",
+            "sun": "07:00-18:00"
+          }
+        },
+        {
+          "from": "2026-12-01",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "07:30-17:00",
+            "tue": "07:30-17:00",
+            "wed": "07:30-17:00",
+            "thu": "07:30-17:00",
+            "fri": "07:30-17:00",
+            "sat": "07:30-17:00",
+            "sun": "07:30-17:00"
+          }
+        }
       ],
       "exceptions": [],
       "notes": "The monthly table has no year; read as the current schedule. Free admission."
@@ -127,13 +336,37 @@
       "quote": "Montag geschlossen. Dienstag bis Freitag: 9–17:30 Uhr. Samstag, Sonntag, Feiertage: 10–18 Uhr. Letzter Einlass: 17 Uhr.",
       "lastEntry": "17:00",
       "periods": [
-        { "from": "2026-10-10", "to": "2026-12-31", "weekly": { "mon": "closed", "tue": "09:00-17:30", "wed": "09:00-17:30", "thu": "09:00-17:30", "fri": "09:00-17:30", "sat": "10:00-18:00", "sun": "10:00-18:00" } }
+        {
+          "from": "2026-10-10",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "closed",
+            "tue": "09:00-17:30",
+            "wed": "09:00-17:30",
+            "thu": "09:00-17:30",
+            "fri": "09:00-17:30",
+            "sat": "10:00-18:00",
+            "sun": "10:00-18:00"
+          }
+        }
       ],
       "exceptions": [
-        { "date": "2026-12-24", "hours": "closed" },
-        { "date": "2026-12-25", "hours": "closed" },
-        { "date": "2026-12-26", "hours": "10:00-18:00" },
-        { "date": "2026-12-31", "hours": "closed" }
+        {
+          "date": "2026-12-24",
+          "hours": "closed"
+        },
+        {
+          "date": "2026-12-25",
+          "hours": "closed"
+        },
+        {
+          "date": "2026-12-26",
+          "hours": "10:00-18:00"
+        },
+        {
+          "date": "2026-12-31",
+          "hours": "closed"
+        }
       ],
       "notes": "Special-dates list carries no year but matches 2026."
     },
@@ -144,7 +377,19 @@
       "quote": "Brunch: Mon-Sun 9:00-17:00 (last order 16:30)",
       "lastEntry": "Brunch last order 16:30",
       "periods": [
-        { "from": "2026-10-10", "to": "2026-12-31", "weekly": { "mon": "09:00-17:00", "tue": "09:00-17:00", "wed": "09:00-17:00", "thu": "09:00-17:00", "fri": "09:00-17:00", "sat": "09:00-17:00", "sun": "09:00-17:00" } }
+        {
+          "from": "2026-10-10",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "09:00-17:00",
+            "tue": "09:00-17:00",
+            "wed": "09:00-17:00",
+            "thu": "09:00-17:00",
+            "fri": "09:00-17:00",
+            "sat": "09:00-17:00",
+            "sun": "09:00-17:00"
+          }
+        }
       ],
       "exceptions": []
     },
@@ -154,7 +399,19 @@
       "confidence": "high",
       "quote": "Monday - Friday: 08:00–18:00 / Saturday: 9:00- 18:00 / Sunday: 10:00–18:00",
       "periods": [
-        { "from": "2026-10-10", "to": "2026-12-31", "weekly": { "mon": "08:00-18:00", "tue": "08:00-18:00", "wed": "08:00-18:00", "thu": "08:00-18:00", "fri": "08:00-18:00", "sat": "09:00-18:00", "sun": "10:00-18:00" } }
+        {
+          "from": "2026-10-10",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "08:00-18:00",
+            "tue": "08:00-18:00",
+            "wed": "08:00-18:00",
+            "thu": "08:00-18:00",
+            "fri": "08:00-18:00",
+            "sat": "09:00-18:00",
+            "sun": "10:00-18:00"
+          }
+        }
       ],
       "exceptions": []
     },
@@ -164,7 +421,19 @@
       "confidence": "high",
       "quote": "Alte Schönhauser Straße 4 10119 Berlin / Mitte ... Mon–Fri 7:00am – 8:00pm Sat 8:00am – 8:00pm Sun 8:00am – 6:00pm",
       "periods": [
-        { "from": "2026-10-10", "to": "2026-12-31", "weekly": { "mon": "07:00-20:00", "tue": "07:00-20:00", "wed": "07:00-20:00", "thu": "07:00-20:00", "fri": "07:00-20:00", "sat": "08:00-20:00", "sun": "08:00-18:00" } }
+        {
+          "from": "2026-10-10",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "07:00-20:00",
+            "tue": "07:00-20:00",
+            "wed": "07:00-20:00",
+            "thu": "07:00-20:00",
+            "fri": "07:00-20:00",
+            "sat": "08:00-20:00",
+            "sun": "08:00-18:00"
+          }
+        }
       ],
       "exceptions": [],
       "notes": "The nearby Weinbergsweg 2 branch has different weekend hours; these are for Alte Schoenhauser Strasse 4 only."
@@ -176,12 +445,53 @@
       "quote": "Dinner: Dienstag – Donnerstag 18.00 - 24.00 / Freitag & Samstag 17.00 - 24.00 ... geschlossen: 24.12.2026 - 04.01.2027",
       "caveat": "Dinner only. Bookings are taken only through the restaurant's online system, up to three months ahead.",
       "periods": [
-        { "from": "2026-10-10", "to": "2026-12-31", "weekly": { "mon": "closed", "tue": "18:00-24:00", "wed": "18:00-24:00", "thu": "18:00-24:00", "fri": "17:00-24:00", "sat": "17:00-24:00", "sun": "closed" } }
+        {
+          "from": "2026-10-10",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "closed",
+            "tue": "18:00-24:00",
+            "wed": "18:00-24:00",
+            "thu": "18:00-24:00",
+            "fri": "17:00-24:00",
+            "sat": "17:00-24:00",
+            "sun": "closed"
+          }
+        }
       ],
       "exceptions": [
-        { "date": "2026-12-24", "hours": "closed" }, { "date": "2026-12-25", "hours": "closed" }, { "date": "2026-12-26", "hours": "closed" },
-        { "date": "2026-12-27", "hours": "closed" }, { "date": "2026-12-28", "hours": "closed" }, { "date": "2026-12-29", "hours": "closed" },
-        { "date": "2026-12-30", "hours": "closed" }, { "date": "2026-12-31", "hours": "closed" }
+        {
+          "date": "2026-12-24",
+          "hours": "closed"
+        },
+        {
+          "date": "2026-12-25",
+          "hours": "closed"
+        },
+        {
+          "date": "2026-12-26",
+          "hours": "closed"
+        },
+        {
+          "date": "2026-12-27",
+          "hours": "closed"
+        },
+        {
+          "date": "2026-12-28",
+          "hours": "closed"
+        },
+        {
+          "date": "2026-12-29",
+          "hours": "closed"
+        },
+        {
+          "date": "2026-12-30",
+          "hours": "closed"
+        },
+        {
+          "date": "2026-12-31",
+          "hours": "closed"
+        }
       ],
       "notes": "Sunday and Monday are not listed as dinner days (the site does not use the word closed for them)."
     },
@@ -191,7 +501,19 @@
       "confidence": "medium",
       "quote": "Geöffnet täglich ab 19 Uhr. ... Die Green Door hat aktuell täglich jeweils ab 19 Uhr geöffnet.",
       "periods": [
-        { "from": "2026-10-10", "to": "2026-12-31", "weekly": { "mon": "19:00-late", "tue": "19:00-late", "wed": "19:00-late", "thu": "19:00-late", "fri": "19:00-late", "sat": "19:00-late", "sun": "19:00-late" } }
+        {
+          "from": "2026-10-10",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "19:00-late",
+            "tue": "19:00-late",
+            "wed": "19:00-late",
+            "thu": "19:00-late",
+            "fri": "19:00-late",
+            "sat": "19:00-late",
+            "sun": "19:00-late"
+          }
+        }
       ],
       "exceptions": [],
       "notes": "Only an opening time is published ('currently daily from 19:00'); no closing time."
@@ -203,7 +525,19 @@
       "quote": "Türzeiten? Mo–Mi:08:00–20:00 Do:08:00–22:00 Fr+Sa:08:00–20:00",
       "caveat": "Hall door times; individual stalls keep their own hours. Street Food Thursday runs 17:00–22:00.",
       "periods": [
-        { "from": "2026-10-10", "to": "2026-12-31", "weekly": { "mon": "08:00-20:00", "tue": "08:00-20:00", "wed": "08:00-20:00", "thu": "08:00-22:00", "fri": "08:00-20:00", "sat": "08:00-20:00", "sun": "unknown" } }
+        {
+          "from": "2026-10-10",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "08:00-20:00",
+            "tue": "08:00-20:00",
+            "wed": "08:00-20:00",
+            "thu": "08:00-22:00",
+            "fri": "08:00-20:00",
+            "sat": "08:00-20:00",
+            "sun": "unknown"
+          }
+        }
       ],
       "exceptions": [],
       "notes": "No Sunday door time is published; the only Sunday listing is a children's flea market 12:00-16:00."
@@ -215,7 +549,19 @@
       "quote": "Opening hours: Tuesday – Saturday from 6:00 pm. We are open by appointment on Sundays and Mondays. [Footer:] Öffnungszeiten: Mo. – Sa. ab 18:00 Uhr",
       "caveat": "Sundays by appointment. The reservation page says it is also open on Mondays from 5 October to 28 December 2026 (except 21 December); confirm when booking, as its pages disagree.",
       "periods": [
-        { "from": "2026-10-10", "to": "2026-12-31", "weekly": { "mon": "unknown", "tue": "18:00-late", "wed": "18:00-late", "thu": "18:00-late", "fri": "18:00-late", "sat": "18:00-late", "sun": "unknown" } }
+        {
+          "from": "2026-10-10",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "unknown",
+            "tue": "18:00-late",
+            "wed": "18:00-late",
+            "thu": "18:00-late",
+            "fri": "18:00-late",
+            "sat": "18:00-late",
+            "sun": "unknown"
+          }
+        }
       ],
       "exceptions": [],
       "notes": "No closing time published. Winter closure 1-11 January 2027 (outside the researched period)."
@@ -226,13 +572,37 @@
       "confidence": "high",
       "quote": "Opening hours Mon, Tue: 10:00 – 17:00 Wed, Thu, Fri, Sat, Sun: 10:00 – 19:00 Exceptions 24 Dec 2026: closed 25 Dec 2026: closed 26 Dec 2026: closed 31 Dec 2026: closed 1 Jan 2027: closed",
       "periods": [
-        { "from": "2026-10-10", "to": "2026-12-31", "weekly": { "mon": "10:00-17:00", "tue": "10:00-17:00", "wed": "10:00-19:00", "thu": "10:00-19:00", "fri": "10:00-19:00", "sat": "10:00-19:00", "sun": "10:00-19:00" } }
+        {
+          "from": "2026-10-10",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "10:00-17:00",
+            "tue": "10:00-17:00",
+            "wed": "10:00-19:00",
+            "thu": "10:00-19:00",
+            "fri": "10:00-19:00",
+            "sat": "10:00-19:00",
+            "sun": "10:00-19:00"
+          }
+        }
       ],
       "exceptions": [
-        { "date": "2026-12-24", "hours": "closed" },
-        { "date": "2026-12-25", "hours": "closed" },
-        { "date": "2026-12-26", "hours": "closed" },
-        { "date": "2026-12-31", "hours": "closed" }
+        {
+          "date": "2026-12-24",
+          "hours": "closed"
+        },
+        {
+          "date": "2026-12-25",
+          "hours": "closed"
+        },
+        {
+          "date": "2026-12-26",
+          "hours": "closed"
+        },
+        {
+          "date": "2026-12-31",
+          "hours": "closed"
+        }
       ],
       "notes": "Also closed 1 January 2027 (outside the researched period). The bistro is open on Tuesdays even though the Humboldt Forum exhibitions are not."
     },
@@ -242,7 +612,19 @@
       "confidence": "high",
       "quote": "OPENING HOURS MONDAY – SUNDAY 12 noon – 10 p.m.",
       "periods": [
-        { "from": "2026-10-10", "to": "2026-12-31", "weekly": { "mon": "12:00-22:00", "tue": "12:00-22:00", "wed": "12:00-22:00", "thu": "12:00-22:00", "fri": "12:00-22:00", "sat": "12:00-22:00", "sun": "12:00-22:00" } }
+        {
+          "from": "2026-10-10",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "12:00-22:00",
+            "tue": "12:00-22:00",
+            "wed": "12:00-22:00",
+            "thu": "12:00-22:00",
+            "fri": "12:00-22:00",
+            "sat": "12:00-22:00",
+            "sun": "12:00-22:00"
+          }
+        }
       ],
       "exceptions": [],
       "notes": "No holiday exceptions published. Tables can be booked online."
@@ -253,13 +635,41 @@
       "confidence": "high",
       "quote": "Dienstag bis Freitag: 10–16:30 Uhr; Samstag, Sonntag, Feiertag: 10–17 Uhr; Montag: Ruhetag",
       "periods": [
-        { "from": "2026-10-10", "to": "2026-12-31", "weekly": { "mon": "closed", "tue": "10:00-16:30", "wed": "10:00-16:30", "thu": "10:00-16:30", "fri": "10:00-16:30", "sat": "10:00-17:00", "sun": "10:00-17:00" } }
+        {
+          "from": "2026-10-10",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "closed",
+            "tue": "10:00-16:30",
+            "wed": "10:00-16:30",
+            "thu": "10:00-16:30",
+            "fri": "10:00-16:30",
+            "sat": "10:00-17:00",
+            "sun": "10:00-17:00"
+          }
+        }
       ],
       "exceptions": [
-        { "date": "2026-12-24", "hours": "closed", "note": "The museum building is closed" },
-        { "date": "2026-12-25", "hours": "closed", "note": "The museum building is closed" },
-        { "date": "2026-12-26", "hours": "10:00-17:00", "note": "Public holiday: weekend hours" },
-        { "date": "2026-12-31", "hours": "closed", "note": "The museum building is closed" }
+        {
+          "date": "2026-12-24",
+          "hours": "closed",
+          "note": "The museum building is closed"
+        },
+        {
+          "date": "2026-12-25",
+          "hours": "closed",
+          "note": "The museum building is closed"
+        },
+        {
+          "date": "2026-12-26",
+          "hours": "10:00-17:00",
+          "note": "Public holiday: weekend hours"
+        },
+        {
+          "date": "2026-12-31",
+          "hours": "closed",
+          "note": "The museum building is closed"
+        }
       ],
       "caveat": "Inside the museum building; the page does not say whether a museum ticket is needed to eat here.",
       "notes": "Closed on Mondays, the same as the museum. Christmas dates follow the museum's own closures."
@@ -271,7 +681,19 @@
       "quote": "Daily, 10am – 7pm | Last admission: 6.30pm",
       "lastEntry": "18:30",
       "periods": [
-        { "from": "2026-10-12", "to": "2026-12-31", "weekly": { "mon": "10:00-19:00", "tue": "10:00-19:00", "wed": "10:00-19:00", "thu": "10:00-19:00", "fri": "10:00-19:00", "sat": "10:00-19:00", "sun": "10:00-19:00" } }
+        {
+          "from": "2026-10-12",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "10:00-19:00",
+            "tue": "10:00-19:00",
+            "wed": "10:00-19:00",
+            "thu": "10:00-19:00",
+            "fri": "10:00-19:00",
+            "sat": "10:00-19:00",
+            "sun": "10:00-19:00"
+          }
+        }
       ],
       "exceptions": [],
       "caveat": "The UOB Southeast Asia Gallery is closed until late 2027; other galleries are open.",
@@ -284,7 +706,19 @@
       "quote": "Lunch 12PM – 3PM (last order 2:30PM) | High Tea 3PM – 5PM (last order 4PM) Friday – Sunday only | Dinner 6PM – 10.30PM (last order 9:30PM)",
       "lastEntry": "Last orders: lunch 14:30, high tea 16:00, dinner 21:30",
       "periods": [
-        { "from": "2026-10-12", "to": "2026-12-31", "weekly": { "mon": "12:00-15:00,18:00-22:30", "tue": "12:00-15:00,18:00-22:30", "wed": "12:00-15:00,18:00-22:30", "thu": "12:00-15:00,18:00-22:30", "fri": "12:00-17:00,18:00-22:30", "sat": "12:00-17:00,18:00-22:30", "sun": "12:00-17:00,18:00-22:30" } }
+        {
+          "from": "2026-10-12",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "12:00-15:00,18:00-22:30",
+            "tue": "12:00-15:00,18:00-22:30",
+            "wed": "12:00-15:00,18:00-22:30",
+            "thu": "12:00-15:00,18:00-22:30",
+            "fri": "12:00-17:00,18:00-22:30",
+            "sat": "12:00-17:00,18:00-22:30",
+            "sun": "12:00-17:00,18:00-22:30"
+          }
+        }
       ],
       "exceptions": [],
       "caveat": "High tea (15:00-17:00) is served Friday to Sunday only. Enter by the Gallery's Coleman Street entrance.",
@@ -297,7 +731,19 @@
       "quote": "Opening Hours Days Time Daily 9am – 6pm (Last entry at 5pm) Box Office: 9am – 5pm",
       "lastEntry": "17:00",
       "periods": [
-        { "from": "2026-10-12", "to": "2026-12-31", "weekly": { "mon": "09:00-18:00", "tue": "09:00-18:00", "wed": "09:00-18:00", "thu": "09:00-18:00", "fri": "09:00-18:00", "sat": "09:00-18:00", "sun": "09:00-18:00" } }
+        {
+          "from": "2026-10-12",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "09:00-18:00",
+            "tue": "09:00-18:00",
+            "wed": "09:00-18:00",
+            "thu": "09:00-18:00",
+            "fri": "09:00-18:00",
+            "sat": "09:00-18:00",
+            "sun": "09:00-18:00"
+          }
+        }
       ],
       "exceptions": [],
       "caveat": "Entry to the museum is free; selected exhibitions are ticketed separately.",
@@ -309,7 +755,19 @@
       "confidence": "high",
       "quote": "Outdoor Gardens ... Daily: 5.00am – 2.00am. | Garden Rhapsody: Daily, 7.45pm & 8.45pm",
       "periods": [
-        { "from": "2026-10-12", "to": "2026-12-31", "weekly": { "mon": "05:00-02:00", "tue": "05:00-02:00", "wed": "05:00-02:00", "thu": "05:00-02:00", "fri": "05:00-02:00", "sat": "05:00-02:00", "sun": "05:00-02:00" } }
+        {
+          "from": "2026-10-12",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "05:00-02:00",
+            "tue": "05:00-02:00",
+            "wed": "05:00-02:00",
+            "thu": "05:00-02:00",
+            "fri": "05:00-02:00",
+            "sat": "05:00-02:00",
+            "sun": "05:00-02:00"
+          }
+        }
       ],
       "exceptions": [],
       "caveat": "The Garden Rhapsody light show runs daily at 19:45 and 20:45. Supertree Grove may be ticketed during Christmas events (from 29 November; dates not published).",
@@ -321,7 +779,19 @@
       "confidence": "high",
       "quote": "Gardens 5am to 12mn daily",
       "periods": [
-        { "from": "2026-10-12", "to": "2026-12-31", "weekly": { "mon": "05:00-00:00", "tue": "05:00-00:00", "wed": "05:00-00:00", "thu": "05:00-00:00", "fri": "05:00-00:00", "sat": "05:00-00:00", "sun": "05:00-00:00" } }
+        {
+          "from": "2026-10-12",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "05:00-00:00",
+            "tue": "05:00-00:00",
+            "wed": "05:00-00:00",
+            "thu": "05:00-00:00",
+            "fri": "05:00-00:00",
+            "sat": "05:00-00:00",
+            "sun": "05:00-00:00"
+          }
+        }
       ],
       "exceptions": [],
       "caveat": "Some boardwalks and trails close from 19:00 to 07:00. The National Orchid Garden is ticketed separately.",
@@ -333,7 +803,19 @@
       "confidence": "high",
       "quote": "Lunch: Mon to Sun, 12pm to 3pm | Dinner: Mon to Sun, Eve of Public Holidays, 6pm to 10pm",
       "periods": [
-        { "from": "2026-10-12", "to": "2026-12-31", "weekly": { "mon": "12:00-15:00,18:00-22:00", "tue": "12:00-15:00,18:00-22:00", "wed": "12:00-15:00,18:00-22:00", "thu": "12:00-15:00,18:00-22:00", "fri": "12:00-15:00,18:00-22:00", "sat": "12:00-15:00,18:00-22:00", "sun": "12:00-15:00,18:00-22:00" } }
+        {
+          "from": "2026-10-12",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "12:00-15:00,18:00-22:00",
+            "tue": "12:00-15:00,18:00-22:00",
+            "wed": "12:00-15:00,18:00-22:00",
+            "thu": "12:00-15:00,18:00-22:00",
+            "fri": "12:00-15:00,18:00-22:00",
+            "sat": "12:00-15:00,18:00-22:00",
+            "sun": "12:00-15:00,18:00-22:00"
+          }
+        }
       ],
       "exceptions": [],
       "notes": "No closure dates listed. Reservations are taken online."
@@ -345,10 +827,26 @@
       "quote": "Opening Hours: Daily, 8:30am – 6:00pm (Last Entry: 5:00pm)",
       "lastEntry": "17:00",
       "periods": [
-        { "from": "2026-10-12", "to": "2026-12-31", "weekly": { "mon": "08:30-18:00", "tue": "08:30-18:00", "wed": "08:30-18:00", "thu": "08:30-18:00", "fri": "08:30-18:00", "sat": "08:30-18:00", "sun": "08:30-18:00" } }
+        {
+          "from": "2026-10-12",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "08:30-18:00",
+            "tue": "08:30-18:00",
+            "wed": "08:30-18:00",
+            "thu": "08:30-18:00",
+            "fri": "08:30-18:00",
+            "sat": "08:30-18:00",
+            "sun": "08:30-18:00"
+          }
+        }
       ],
       "exceptions": [
-        { "date": "2026-10-29", "hours": "08:30-18:00", "note": "The Elephants of Asia exhibit and elephant sessions are unavailable; the zoo is open" }
+        {
+          "date": "2026-10-29",
+          "hours": "08:30-18:00",
+          "note": "The Elephants of Asia exhibit and elephant sessions are unavailable; the zoo is open"
+        }
       ],
       "caveat": "The African Penguin exhibit is closed for upgrading until 30 November 2026.",
       "notes": "No holiday exceptions listed. Last tram departures run from 17:30 to 18:15 depending on the station."
@@ -360,7 +858,19 @@
       "quote": "Daily 7.30am — 7pm. Last orders for hot food menu is at 3.50pm.",
       "lastEntry": "15:50 (hot food last order)",
       "periods": [
-        { "from": "2026-10-12", "to": "2026-12-31", "weekly": { "mon": "07:30-19:00", "tue": "07:30-19:00", "wed": "07:30-19:00", "thu": "07:30-19:00", "fri": "07:30-19:00", "sat": "07:30-19:00", "sun": "07:30-19:00" } }
+        {
+          "from": "2026-10-12",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "07:30-19:00",
+            "tue": "07:30-19:00",
+            "wed": "07:30-19:00",
+            "thu": "07:30-19:00",
+            "fri": "07:30-19:00",
+            "sat": "07:30-19:00",
+            "sun": "07:30-19:00"
+          }
+        }
       ],
       "exceptions": [],
       "caveat": "Festive closures are announced only on the café's Instagram.",
@@ -372,7 +882,19 @@
       "confidence": "high",
       "quote": "Mon – Fri from 7.30am to 8pm; Sat – Sun from 8am – 8pm",
       "periods": [
-        { "from": "2026-10-12", "to": "2026-12-31", "weekly": { "mon": "07:30-20:00", "tue": "07:30-20:00", "wed": "07:30-20:00", "thu": "07:30-20:00", "fri": "07:30-20:00", "sat": "08:00-20:00", "sun": "08:00-20:00" } }
+        {
+          "from": "2026-10-12",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "07:30-20:00",
+            "tue": "07:30-20:00",
+            "wed": "07:30-20:00",
+            "thu": "07:30-20:00",
+            "fri": "07:30-20:00",
+            "sat": "08:00-20:00",
+            "sun": "08:00-20:00"
+          }
+        }
       ],
       "exceptions": [],
       "notes": "Eng Hoon Street branch only. The page does not say which hours apply on public holidays."
@@ -384,7 +906,19 @@
       "quote": "Operating Hours (Daily) 11:30am – 11:00pm (Last order 10:15pm)",
       "lastEntry": "22:15 (last order)",
       "periods": [
-        { "from": "2026-10-12", "to": "2026-12-31", "weekly": { "mon": "11:30-23:00", "tue": "11:30-23:00", "wed": "11:30-23:00", "thu": "11:30-23:00", "fri": "11:30-23:00", "sat": "11:30-23:00", "sun": "11:30-23:00" } }
+        {
+          "from": "2026-10-12",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "11:30-23:00",
+            "tue": "11:30-23:00",
+            "wed": "11:30-23:00",
+            "thu": "11:30-23:00",
+            "fri": "11:30-23:00",
+            "sat": "11:30-23:00",
+            "sun": "11:30-23:00"
+          }
+        }
       ],
       "exceptions": [],
       "notes": "Riverside Point branch only. No closures listed."
@@ -395,7 +929,19 @@
       "confidence": "high",
       "quote": "Sundays, Mondays & Tuesdays: 6pm - 12am; Wednesdays to Saturdays: 6pm - 2am; Happy Hour: daily 6pm - 7:30pm",
       "periods": [
-        { "from": "2026-10-12", "to": "2026-12-31", "weekly": { "mon": "18:00-00:00", "tue": "18:00-00:00", "wed": "18:00-02:00", "thu": "18:00-02:00", "fri": "18:00-02:00", "sat": "18:00-02:00", "sun": "18:00-00:00" } }
+        {
+          "from": "2026-10-12",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "18:00-00:00",
+            "tue": "18:00-00:00",
+            "wed": "18:00-02:00",
+            "thu": "18:00-02:00",
+            "fri": "18:00-02:00",
+            "sat": "18:00-02:00",
+            "sun": "18:00-00:00"
+          }
+        }
       ],
       "exceptions": [],
       "caveat": "Guests must be over 18.",
@@ -407,10 +953,26 @@
       "confidence": "medium",
       "quote": "Header: Mon: 3pm - 12am / 14 Oct Wed: CLOSED / Tues & Thurs: 12pm - 12am / Fri - Sat: 12pm - 2am / Sun: Closed. Footer: MON - THU: 10am - 1am / FRI: 10am - 2am / SAT: 3pm - 2am / SUN: Closed",
       "periods": [
-        { "from": "2026-10-12", "to": "2026-12-31", "weekly": { "mon": "15:00-00:00", "tue": "12:00-00:00", "wed": "unknown", "thu": "12:00-00:00", "fri": "12:00-02:00", "sat": "12:00-02:00", "sun": "closed" } }
+        {
+          "from": "2026-10-12",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "15:00-00:00",
+            "tue": "12:00-00:00",
+            "wed": "unknown",
+            "thu": "12:00-00:00",
+            "fri": "12:00-02:00",
+            "sat": "12:00-02:00",
+            "sun": "closed"
+          }
+        }
       ],
       "exceptions": [
-        { "date": "2026-10-14", "hours": "closed", "note": "Dated one-off closure on the bar's own page" }
+        {
+          "date": "2026-10-14",
+          "hours": "closed",
+          "note": "Dated one-off closure on the bar's own page"
+        }
       ],
       "caveat": "The bar's page shows two different sets of hours and none for regular Wednesdays; confirm with the bar before you go. Smart-casual dress code from 17:00.",
       "notes": "Weekly hours follow the page's header block, which carries a dated closure for 14 Oct 2026 and so looks current; the footer block (Mon-Thu 10:00-01:00, Fri 10:00-02:00, Sat 15:00-02:00) looks older. Both say closed on Sundays. Spot-checked on the page on 2026-10-12."
@@ -421,7 +983,19 @@
       "confidence": "medium",
       "quote": "服務時間：上午八時正至下午六時正，初一、十五及誕期則為上午七時正至下午六時正",
       "periods": [
-        { "from": "2026-10-14", "to": "2026-12-31", "weekly": { "mon": "08:00-18:00", "tue": "08:00-18:00", "wed": "08:00-18:00", "thu": "08:00-18:00", "fri": "08:00-18:00", "sat": "08:00-18:00", "sun": "08:00-18:00" } }
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "08:00-18:00",
+            "tue": "08:00-18:00",
+            "wed": "08:00-18:00",
+            "thu": "08:00-18:00",
+            "fri": "08:00-18:00",
+            "sat": "08:00-18:00",
+            "sun": "08:00-18:00"
+          }
+        }
       ],
       "exceptions": [],
       "caveat": "Opens at 7 AM on the 1st and 15th of each lunar month and on festival days. It is a working temple; be respectful of worshippers.",
@@ -433,7 +1007,19 @@
       "confidence": "high",
       "quote": "Tai Kwun: 8am-11pm; JC Contemporary: 11am-7pm, Tuesday to Sunday",
       "periods": [
-        { "from": "2026-10-14", "to": "2026-12-31", "weekly": { "mon": "08:00-23:00", "tue": "08:00-23:00", "wed": "08:00-23:00", "thu": "08:00-23:00", "fri": "08:00-23:00", "sat": "08:00-23:00", "sun": "08:00-23:00" } }
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "08:00-23:00",
+            "tue": "08:00-23:00",
+            "wed": "08:00-23:00",
+            "thu": "08:00-23:00",
+            "fri": "08:00-23:00",
+            "sat": "08:00-23:00",
+            "sun": "08:00-23:00"
+          }
+        }
       ],
       "exceptions": [],
       "caveat": "The site is free and open 8 AM-11 PM; the heritage galleries open 10 or 11 AM-7 PM, and the JC Contemporary gallery is closed on Mondays.",
@@ -445,7 +1031,19 @@
       "confidence": "high",
       "quote": "The Peak Tram Central & Peak Terminus 7:30 am to 11 pm (Mon - Sun & Public Holidays) ... Sky Terrace 428 8:30 am to 10 pm (Mon - Sun & Public Holidays)",
       "periods": [
-        { "from": "2026-10-14", "to": "2026-12-31", "weekly": { "mon": "07:30-23:00", "tue": "07:30-23:00", "wed": "07:30-23:00", "thu": "07:30-23:00", "fri": "07:30-23:00", "sat": "07:30-23:00", "sun": "07:30-23:00" } }
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "07:30-23:00",
+            "tue": "07:30-23:00",
+            "wed": "07:30-23:00",
+            "thu": "07:30-23:00",
+            "fri": "07:30-23:00",
+            "sat": "07:30-23:00",
+            "sun": "07:30-23:00"
+          }
+        }
       ],
       "exceptions": [],
       "caveat": "Sky Terrace 428 at the top (8:30 AM-10 PM) is ticketed separately. Buy tram tickets only from the operator's official channels; it warns of counterfeit ticket sites.",
@@ -457,11 +1055,31 @@
       "confidence": "medium",
       "quote": "Mon-Sat 11:00am-3:00pm, 5:30pm-11pm; Sundays & public holidays 9:00am-3:00pm, 5:30pm-11pm",
       "periods": [
-        { "from": "2026-10-14", "to": "2026-12-31", "weekly": { "mon": "11:00-15:00,17:30-23:00", "tue": "11:00-15:00,17:30-23:00", "wed": "11:00-15:00,17:30-23:00", "thu": "11:00-15:00,17:30-23:00", "fri": "11:00-15:00,17:30-23:00", "sat": "11:00-15:00,17:30-23:00", "sun": "09:00-15:00,17:30-23:00" } }
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "11:00-15:00,17:30-23:00",
+            "tue": "11:00-15:00,17:30-23:00",
+            "wed": "11:00-15:00,17:30-23:00",
+            "thu": "11:00-15:00,17:30-23:00",
+            "fri": "11:00-15:00,17:30-23:00",
+            "sat": "11:00-15:00,17:30-23:00",
+            "sun": "09:00-15:00,17:30-23:00"
+          }
+        }
       ],
       "exceptions": [
-        { "date": "2026-12-25", "hours": "09:00-15:00,17:30-23:00", "note": "Public holiday: Sunday hours" },
-        { "date": "2026-12-26", "hours": "09:00-15:00,17:30-23:00", "note": "Public holiday: Sunday hours" }
+        {
+          "date": "2026-12-25",
+          "hours": "09:00-15:00,17:30-23:00",
+          "note": "Public holiday: Sunday hours"
+        },
+        {
+          "date": "2026-12-26",
+          "hours": "09:00-15:00,17:30-23:00",
+          "note": "Public holiday: Sunday hours"
+        }
       ],
       "caveat": "The daytime session is the dim sum and lunch service; book through the restaurant's enquiry line or expect to queue.",
       "notes": "Two daily sessions without lunch or dinner labels. Trolley service is not stated on the page."
@@ -472,11 +1090,31 @@
       "confidence": "high",
       "quote": "Monday, Wednesday, Thursday, and Sunday: 10:00 am–06:00 pm; Friday, Saturday, and Public Holiday: 10:00 am–08:00 pm; Closed on Tuesdays (except public holidays)",
       "periods": [
-        { "from": "2026-10-14", "to": "2026-12-31", "weekly": { "mon": "10:00-18:00", "tue": "closed", "wed": "10:00-18:00", "thu": "10:00-18:00", "fri": "10:00-20:00", "sat": "10:00-20:00", "sun": "10:00-18:00" } }
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "10:00-18:00",
+            "tue": "closed",
+            "wed": "10:00-18:00",
+            "thu": "10:00-18:00",
+            "fri": "10:00-20:00",
+            "sat": "10:00-20:00",
+            "sun": "10:00-18:00"
+          }
+        }
       ],
       "exceptions": [
-        { "date": "2026-12-25", "hours": "10:00-20:00", "note": "Public holiday hours" },
-        { "date": "2026-12-26", "hours": "10:00-20:00", "note": "Public holiday hours" }
+        {
+          "date": "2026-12-25",
+          "hours": "10:00-20:00",
+          "note": "Public holiday hours"
+        },
+        {
+          "date": "2026-12-26",
+          "hours": "10:00-20:00",
+          "note": "Public holiday hours"
+        }
       ],
       "caveat": "Closed on Tuesdays. Ticket sales close an hour before the museum; booking ahead is recommended.",
       "notes": "Public-holiday exceptions follow the page's general rule, not dated notices."
@@ -487,10 +1125,26 @@
       "confidence": "high",
       "quote": "Weekdays: 10:00 - 18:00; Saturdays, Sundays and Public Holidays: 9:00 - 18:30",
       "periods": [
-        { "from": "2026-10-14", "to": "2026-12-31", "weekly": { "mon": "10:00-18:00", "tue": "10:00-18:00", "wed": "10:00-18:00", "thu": "10:00-18:00", "fri": "10:00-18:00", "sat": "09:00-18:30", "sun": "09:00-18:30" } }
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "10:00-18:00",
+            "tue": "10:00-18:00",
+            "wed": "10:00-18:00",
+            "thu": "10:00-18:00",
+            "fri": "10:00-18:00",
+            "sat": "09:00-18:30",
+            "sun": "09:00-18:30"
+          }
+        }
       ],
       "exceptions": [
-        { "date": "2026-12-25", "hours": "09:00-18:30", "note": "Public holiday hours" }
+        {
+          "date": "2026-12-25",
+          "hours": "09:00-18:30",
+          "note": "Public holiday hours"
+        }
       ],
       "caveat": "The cable car can be suspended in bad weather; check the operator's announcements on the day.",
       "notes": "The operator says no maintenance day is scheduled for 2026 at the moment; dates may be added later."
@@ -501,7 +1155,19 @@
       "confidence": "medium",
       "quote": "Tian Tan Big Buddha: Monday to Sunday (including public holidays) 10 am to 5:30 pm; Po Lin Monastery: 9 am to 6 pm",
       "periods": [
-        { "from": "2026-10-14", "to": "2026-12-31", "weekly": { "mon": "10:00-17:30", "tue": "10:00-17:30", "wed": "10:00-17:30", "thu": "10:00-17:30", "fri": "10:00-17:30", "sat": "10:00-17:30", "sun": "10:00-17:30" } }
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "10:00-17:30",
+            "tue": "10:00-17:30",
+            "wed": "10:00-17:30",
+            "thu": "10:00-17:30",
+            "fri": "10:00-17:30",
+            "sat": "10:00-17:30",
+            "sun": "10:00-17:30"
+          }
+        }
       ],
       "exceptions": [],
       "caveat": "These are the Big Buddha's hours; the monastery itself opens 9 AM-6 PM.",
@@ -514,12 +1180,36 @@
       "quote": "Tuesdays to Thursdays and weekends: 10:00–18:00; Fridays: 10:00–22:00; Mondays: Closed",
       "lastEntry": "30 minutes before closing",
       "periods": [
-        { "from": "2026-10-14", "to": "2026-12-31", "weekly": { "mon": "closed", "tue": "10:00-18:00", "wed": "10:00-18:00", "thu": "10:00-18:00", "fri": "10:00-22:00", "sat": "10:00-18:00", "sun": "10:00-18:00" } }
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "closed",
+            "tue": "10:00-18:00",
+            "wed": "10:00-18:00",
+            "thu": "10:00-18:00",
+            "fri": "10:00-22:00",
+            "sat": "10:00-18:00",
+            "sun": "10:00-18:00"
+          }
+        }
       ],
       "exceptions": [
-        { "date": "2026-10-31", "hours": "closed", "note": "M+ will be closed on 31 Oct 2026 (Sat)" },
-        { "date": "2026-11-02", "hours": "10:00-18:00", "note": "M+ will remain open on 2 Nov 2026 (Mon)" },
-        { "date": "2026-11-08", "hours": "10:00-20:00", "note": "Free admission day with late opening" }
+        {
+          "date": "2026-10-31",
+          "hours": "closed",
+          "note": "M+ will be closed on 31 Oct 2026 (Sat)"
+        },
+        {
+          "date": "2026-11-02",
+          "hours": "10:00-18:00",
+          "note": "M+ will remain open on 2 Nov 2026 (Mon)"
+        },
+        {
+          "date": "2026-11-08",
+          "hours": "10:00-20:00",
+          "note": "Free admission day with late opening"
+        }
       ],
       "caveat": "Closed on Mondays. Black Rainstorm or Typhoon Signal 8 can close or delay opening.",
       "notes": "Gallery hours. Open on public holidays unless announced otherwise."
@@ -531,7 +1221,19 @@
       "quote": "From Tsim Sha Tsui, Mon–Fri: first 06:30, last 23:30; Sat, Sun & public holidays: first 06:30, last 23:30",
       "lastEntry": "23:30 (last sailing)",
       "periods": [
-        { "from": "2026-10-14", "to": "2026-12-31", "weekly": { "mon": "06:30-23:30", "tue": "06:30-23:30", "wed": "06:30-23:30", "thu": "06:30-23:30", "fri": "06:30-23:30", "sat": "06:30-23:30", "sun": "06:30-23:30" } }
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "06:30-23:30",
+            "tue": "06:30-23:30",
+            "wed": "06:30-23:30",
+            "thu": "06:30-23:30",
+            "fri": "06:30-23:30",
+            "sat": "06:30-23:30",
+            "sun": "06:30-23:30"
+          }
+        }
       ],
       "exceptions": [],
       "caveat": "Sailings run every 6-12 minutes; times can vary with sea and weather conditions.",
@@ -543,7 +1245,19 @@
       "confidence": "medium",
       "quote": "Studios and shops: 12:00nn – 7:00pm; Cafes and restaurants: 9:00am – 11:00pm",
       "periods": [
-        { "from": "2026-10-14", "to": "2026-12-31", "weekly": { "mon": "12:00-19:00", "tue": "12:00-19:00", "wed": "12:00-19:00", "thu": "12:00-19:00", "fri": "12:00-19:00", "sat": "12:00-19:00", "sun": "12:00-19:00" } }
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "12:00-19:00",
+            "tue": "12:00-19:00",
+            "wed": "12:00-19:00",
+            "thu": "12:00-19:00",
+            "fri": "12:00-19:00",
+            "sat": "12:00-19:00",
+            "sun": "12:00-19:00"
+          }
+        }
       ],
       "exceptions": [],
       "caveat": "Individual studios and shops set their own hours, so some may be closed within the general noon-7 PM window.",
@@ -555,7 +1269,19 @@
       "confidence": "medium",
       "quote": "Mon - Thur: 08:00 - 21:00; Fri - Sun & Public Holidays: 08:00 - 21:30",
       "periods": [
-        { "from": "2026-10-14", "to": "2026-12-31", "weekly": { "mon": "08:00-21:00", "tue": "08:00-21:00", "wed": "08:00-21:00", "thu": "08:00-21:00", "fri": "08:00-21:30", "sat": "08:00-21:30", "sun": "08:00-21:30" } }
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "08:00-21:00",
+            "tue": "08:00-21:00",
+            "wed": "08:00-21:00",
+            "thu": "08:00-21:00",
+            "fri": "08:00-21:30",
+            "sat": "08:00-21:30",
+            "sun": "08:00-21:30"
+          }
+        }
       ],
       "exceptions": [],
       "notes": "The Wan Chai menu page gives Friday dinner until 21:00, the locations page 21:30. Weekday breakfast 08:00-11:45; weekend brunch 08:00-14:45. Wan Chai branch only."
@@ -567,7 +1293,19 @@
       "quote": "3/F Main Dining Room: Monday ~ Sunday 12pm-3pm (2:30pm last order) 6pm-11pm (9:30pm last order)",
       "lastEntry": "Last orders: lunch 14:30, dinner 21:30",
       "periods": [
-        { "from": "2026-10-14", "to": "2026-12-31", "weekly": { "mon": "12:00-15:00,18:00-23:00", "tue": "12:00-15:00,18:00-23:00", "wed": "12:00-15:00,18:00-23:00", "thu": "12:00-15:00,18:00-23:00", "fri": "12:00-15:00,18:00-23:00", "sat": "12:00-15:00,18:00-23:00", "sun": "12:00-15:00,18:00-23:00" } }
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "12:00-15:00,18:00-23:00",
+            "tue": "12:00-15:00,18:00-23:00",
+            "wed": "12:00-15:00,18:00-23:00",
+            "thu": "12:00-15:00,18:00-23:00",
+            "fri": "12:00-15:00,18:00-23:00",
+            "sat": "12:00-15:00,18:00-23:00",
+            "sun": "12:00-15:00,18:00-23:00"
+          }
+        }
       ],
       "exceptions": [],
       "notes": "Main dining room hours; the 4/F Upper Room keeps longer hours. No dated holiday hours are published."
@@ -579,10 +1317,26 @@
       "quote": "LUNCH MONDAY – FRIDAY 12:00 NOON – 2:30 PM ... SATURDAY, SUNDAY AND PUBLIC HOLIDAYS 11:30 AM – 3:00 PM ... DINNER 6:00 – 8:30 PM (LAST SEATING) 9:00 PM (LAST ORDER)",
       "lastEntry": "Dinner: last seating 20:30, last order 21:00",
       "periods": [
-        { "from": "2026-10-14", "to": "2026-12-31", "weekly": { "mon": "12:00-14:30,18:00-late", "tue": "12:00-14:30,18:00-late", "wed": "12:00-14:30,18:00-late", "thu": "12:00-14:30,18:00-late", "fri": "12:00-14:30,18:00-late", "sat": "11:30-15:00,18:00-late", "sun": "11:30-15:00,18:00-late" } }
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "12:00-14:30,18:00-late",
+            "tue": "12:00-14:30,18:00-late",
+            "wed": "12:00-14:30,18:00-late",
+            "thu": "12:00-14:30,18:00-late",
+            "fri": "12:00-14:30,18:00-late",
+            "sat": "11:30-15:00,18:00-late",
+            "sun": "11:30-15:00,18:00-late"
+          }
+        }
       ],
       "exceptions": [
-        { "date": "2026-12-25", "hours": "11:30-15:00,18:00-late", "note": "Public holiday lunch hours" }
+        {
+          "date": "2026-12-25",
+          "hours": "11:30-15:00,18:00-late",
+          "note": "Public holiday lunch hours"
+        }
       ],
       "caveat": "Reserve ahead. Lunch has a minimum spend of HKD 700 plus service per person aged 12+, and on weekdays children must be 7 or older. Smart-casual dress.",
       "notes": "Read in a browser (automated fetches were refused). No dinner closing time is published, only last seating and last order."
@@ -593,7 +1347,19 @@
       "confidence": "high",
       "quote": "MONDAY – THURSDAY 5:00 PM – 1:00 AM ... FRIDAY – SATURDAY 5:00 PM – 2:00 AM",
       "periods": [
-        { "from": "2026-10-14", "to": "2026-12-31", "weekly": { "mon": "17:00-01:00", "tue": "17:00-01:00", "wed": "17:00-01:00", "thu": "17:00-01:00", "fri": "17:00-02:00", "sat": "17:00-02:00", "sun": "unknown" } }
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "17:00-01:00",
+            "tue": "17:00-01:00",
+            "wed": "17:00-01:00",
+            "thu": "17:00-01:00",
+            "fri": "17:00-02:00",
+            "sat": "17:00-02:00",
+            "sun": "unknown"
+          }
+        }
       ],
       "exceptions": [],
       "caveat": "No Sunday hours are published. Children 8 and older are welcome; smart-casual dress.",
@@ -605,12 +1371,594 @@
       "confidence": "high",
       "quote": "Monday to Friday: 8am to 9pm; Saturday to Sunday and public holidays: 9am to 9pm",
       "periods": [
-        { "from": "2026-10-14", "to": "2026-12-31", "weekly": { "mon": "08:00-21:00", "tue": "08:00-21:00", "wed": "08:00-21:00", "thu": "08:00-21:00", "fri": "08:00-21:00", "sat": "09:00-21:00", "sun": "09:00-21:00" } }
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "08:00-21:00",
+            "tue": "08:00-21:00",
+            "wed": "08:00-21:00",
+            "thu": "08:00-21:00",
+            "fri": "08:00-21:00",
+            "sat": "09:00-21:00",
+            "sun": "09:00-21:00"
+          }
+        }
       ],
       "exceptions": [
-        { "date": "2026-12-25", "hours": "09:00-21:00", "note": "Public holiday hours" }
+        {
+          "date": "2026-12-25",
+          "hours": "09:00-21:00",
+          "note": "Public holiday hours"
+        }
       ],
       "notes": "Sun Arcade branch only; the Tsim Sha Tsui East branch is excluded."
+    },
+    "plc_paris_louvre-museum": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [
+        {
+          "date": "2026-12-25",
+          "hours": "closed",
+          "note": "Closed 1 January, 1 May and 25 December"
+        }
+      ],
+      "url": "https://www.louvre.fr/en/visit/hours-admission",
+      "confidence": "high",
+      "quote": "9:00 AM to 6:00 PM Monday, Thursday, Saturday and Sunday; 9:00 AM to 9:00 PM Wednesday and Friday; Closed Tuesday",
+      "lastEntry": "1 hour before closing",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "09:00-18:00",
+            "tue": "closed",
+            "wed": "09:00-21:00",
+            "thu": "09:00-18:00",
+            "fri": "09:00-21:00",
+            "sat": "09:00-18:00",
+            "sun": "09:00-18:00"
+          }
+        }
+      ],
+      "caveat": "Timed reservation is required for every visitor from 17 October to 1 November 2026. Rooms start closing 30 minutes before the museum.",
+      "notes": "Open on other public holidays unless they fall on a Tuesday. The Porte des Lions entrance keeps shorter hours."
+    },
+    "plc_paris_galerie-vivienne": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [],
+      "url": "https://www.galerie-vivienne.com/",
+      "confidence": "medium",
+      "quote": "du lundi au dimanche de 8h30 à 20h",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "08:30-20:00",
+            "tue": "08:30-20:00",
+            "wed": "08:30-20:00",
+            "thu": "08:30-20:00",
+            "fri": "08:30-20:00",
+            "sat": "08:30-20:00",
+            "sun": "08:30-20:00"
+          }
+        }
+      ],
+      "caveat": "These are the passage's hours; its shops keep their own, often shorter, hours.",
+      "notes": "Published by the passage merchants' site, not a public body."
+    },
+    "plc_paris_frenchie-rue-du-nil": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [],
+      "url": "https://www.frenchie-ruedunil.com/",
+      "confidence": "medium",
+      "quote": "Lundi — Dimanche 18H30 — 21H15",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "18:30-21:15",
+            "tue": "18:30-21:15",
+            "wed": "18:30-21:15",
+            "thu": "18:30-21:15",
+            "fri": "18:30-21:15",
+            "sat": "18:30-21:15",
+            "sun": "18:30-21:15"
+          }
+        }
+      ],
+      "caveat": "Dinner only, one set menu; book through the restaurant's site or by phone.",
+      "notes": "An embedded post on the same site says 21:30; 21:15 may be the last seating."
+    },
+    "plc_paris_poilane-rue-du-cherche-midi": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [],
+      "url": "https://www.poilane.com/pages/boulangerie-poilane-saint-germain-des-pres",
+      "confidence": "high",
+      "quote": "Lundi–Samedi : 7h15 – 20h00 ; Dimanche : Fermé",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "07:15-20:00",
+            "tue": "07:15-20:00",
+            "wed": "07:15-20:00",
+            "thu": "07:15-20:00",
+            "fri": "07:15-20:00",
+            "sat": "07:15-20:00",
+            "sun": "closed"
+          }
+        }
+      ],
+      "notes": "The original rue du Cherche-Midi shop only. No holiday closures published."
+    },
+    "plc_paris_jardin-du-luxembourg": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [],
+      "url": "https://jardin.senat.fr/infos-pratiques/horaires-douverture.html",
+      "confidence": "high",
+      "quote": "Le Jardin adapte ses horaires tous les quinze jours au lever et coucher du soleil.",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-10-15",
+          "weekly": {
+            "mon": "07:45-18:45",
+            "tue": "07:45-18:45",
+            "wed": "07:45-18:45",
+            "thu": "07:45-18:45",
+            "fri": "07:45-18:45",
+            "sat": "07:45-18:45",
+            "sun": "07:45-18:45"
+          }
+        },
+        {
+          "from": "2026-10-16",
+          "to": "2026-10-24",
+          "weekly": {
+            "mon": "08:00-18:15",
+            "tue": "08:00-18:15",
+            "wed": "08:00-18:15",
+            "thu": "08:00-18:15",
+            "fri": "08:00-18:15",
+            "sat": "08:00-18:15",
+            "sun": "08:00-18:15"
+          }
+        },
+        {
+          "from": "2026-10-25",
+          "to": "2026-10-31",
+          "weekly": {
+            "mon": "08:00-17:15",
+            "tue": "08:00-17:15",
+            "wed": "08:00-17:15",
+            "thu": "08:00-17:15",
+            "fri": "08:00-17:15",
+            "sat": "08:00-17:15",
+            "sun": "08:00-17:15"
+          }
+        },
+        {
+          "from": "2026-11-01",
+          "to": "2026-11-15",
+          "weekly": {
+            "mon": "08:00-17:00",
+            "tue": "08:00-17:00",
+            "wed": "08:00-17:00",
+            "thu": "08:00-17:00",
+            "fri": "08:00-17:00",
+            "sat": "08:00-17:00",
+            "sun": "08:00-17:00"
+          }
+        },
+        {
+          "from": "2026-11-16",
+          "to": "2026-11-30",
+          "weekly": {
+            "mon": "08:00-16:45",
+            "tue": "08:00-16:45",
+            "wed": "08:00-16:45",
+            "thu": "08:00-16:45",
+            "fri": "08:00-16:45",
+            "sat": "08:00-16:45",
+            "sun": "08:00-16:45"
+          }
+        },
+        {
+          "from": "2026-12-01",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "08:15-16:30",
+            "tue": "08:15-16:30",
+            "wed": "08:15-16:30",
+            "thu": "08:15-16:30",
+            "fri": "08:15-16:30",
+            "sat": "08:15-16:30",
+            "sun": "08:15-16:30"
+          }
+        }
+      ],
+      "caveat": "Gate times change on the 1st and 16th of each month to follow daylight.",
+      "notes": "The page's periods '16 to the last Saturday of October' and 'last Sunday of October to 31 October' fall on 16-24 and 25-31 October in 2026."
+    },
+    "plc_paris_musee-dorsay": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [],
+      "url": "https://www.musee-orsay.fr/en/visit",
+      "confidence": "high",
+      "quote": "Monday Closed / Tuesday 9.30am 6.00pm / ... / Thursday 9.30am 9.45pm / ... Last admission to the museum at 5:00 p.m.",
+      "lastEntry": "17:00 (later on Thursdays)",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "closed",
+            "tue": "09:30-18:00",
+            "wed": "09:30-18:00",
+            "thu": "09:30-21:45",
+            "fri": "09:30-18:00",
+            "sat": "09:30-18:00",
+            "sun": "09:30-18:00"
+          }
+        }
+      ],
+      "notes": "Read in a browser (automated fetches were refused). Galleries close at 17:30 on ordinary days."
+    },
+    "plc_paris_sainte-chapelle": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [
+        {
+          "date": "2026-12-25",
+          "hours": "closed",
+          "note": "Closed 1 January, 1 May and 25 December"
+        }
+      ],
+      "url": "https://www.sainte-chapelle.fr/en/visit/practical-information",
+      "confidence": "high",
+      "quote": "1 October to 31 March: 9am - 5pm",
+      "lastEntry": "16:30",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "09:00-17:00",
+            "tue": "09:00-17:00",
+            "wed": "09:00-17:00",
+            "thu": "09:00-17:00",
+            "fri": "09:00-17:00",
+            "sat": "09:00-17:00",
+            "sun": "09:00-17:00"
+          }
+        }
+      ],
+      "notes": "Winter hours (1 October to 31 March)."
+    },
+    "plc_paris_coutume-cafe-babylone": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [],
+      "url": "https://www.coutumecafe.com/pages/cafe-babylone",
+      "confidence": "medium",
+      "quote": "Lundi–Vendredi 8:00 - 17:30 ; Samedi–Dimanche 9:00 - 18:00",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "08:00-17:30",
+            "tue": "08:00-17:30",
+            "wed": "08:00-17:30",
+            "thu": "08:00-17:30",
+            "fri": "08:00-17:30",
+            "sat": "09:00-18:00",
+            "sun": "09:00-18:00"
+          }
+        }
+      ],
+      "notes": "The branch page shows hours in an embedded widget labelled 'powered by Google'."
+    },
+    "plc_paris_musee-rodin": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [
+        {
+          "date": "2026-12-25",
+          "hours": "closed",
+          "note": "Closed 1 January, 1 May and 25 December"
+        }
+      ],
+      "url": "https://www.musee-rodin.fr/en",
+      "confidence": "high",
+      "quote": "Open Tuesday to Sunday from 10am. to 6.30pm. Last entry at 5.45pm.",
+      "lastEntry": "17:45",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "closed",
+            "tue": "10:00-18:30",
+            "wed": "10:00-18:30",
+            "thu": "10:00-18:30",
+            "fri": "10:00-18:30",
+            "sat": "10:00-18:30",
+            "sun": "10:00-18:30"
+          }
+        }
+      ],
+      "caveat": "Large bags are not accepted. The Meudon site is a different place and is closed until spring 2027."
+    },
+    "plc_paris_eiffel-tower": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [],
+      "url": "https://www.toureiffel.paris/en/rates-opening-times",
+      "confidence": "high",
+      "quote": "Open Wednesday 14 October 2026 09:30 - 23:00 ... (if a date cannot be clicked on, the opening hours have not yet been communicated)",
+      "lastEntry": "Last ascents at 22:45",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-10-20",
+          "weekly": {
+            "mon": "09:30-23:00",
+            "tue": "09:30-23:00",
+            "wed": "09:30-23:00",
+            "thu": "09:30-23:00",
+            "fri": "09:30-23:00",
+            "sat": "09:30-23:00",
+            "sun": "09:30-23:00"
+          }
+        }
+      ],
+      "caveat": "The operator publishes hours only a few days ahead; access to the top can be restricted in bad weather or at peak times. Large luggage is not allowed.",
+      "notes": "Read in a browser. Dates after 20 October 2026 had no published hours on 14 October, so they show as unknown."
+    },
+    "plc_paris_le-jules-verne": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [],
+      "url": "https://www.restaurants-toureiffel.com/fr/restaurant-jules-verne.html",
+      "confidence": "high",
+      "quote": "Du lundi au dimanche, de 12h à 13h45 et de 19h à 21h",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "12:00-13:45,19:00-21:00",
+            "tue": "12:00-13:45,19:00-21:00",
+            "wed": "12:00-13:45,19:00-21:00",
+            "thu": "12:00-13:45,19:00-21:00",
+            "fri": "12:00-13:45,19:00-21:00",
+            "sat": "12:00-13:45,19:00-21:00",
+            "sun": "12:00-13:45,19:00-21:00"
+          }
+        }
+      ],
+      "caveat": "Book ahead. Jacket required for men; no shorts or sportswear.",
+      "notes": "The times may be seating windows rather than closing times. The restaurant lists a closure on 14 July 2027 only."
+    },
+    "plc_paris_holybelly": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [
+        {
+          "date": "2026-11-01",
+          "hours": "closed",
+          "note": "Bank holiday"
+        },
+        {
+          "date": "2026-11-11",
+          "hours": "closed",
+          "note": "Bank holiday"
+        },
+        {
+          "date": "2026-12-21",
+          "hours": "closed",
+          "note": "Christmas holidays, 21-27 December"
+        },
+        {
+          "date": "2026-12-22",
+          "hours": "closed",
+          "note": "Christmas holidays, 21-27 December"
+        },
+        {
+          "date": "2026-12-23",
+          "hours": "closed",
+          "note": "Christmas holidays, 21-27 December"
+        },
+        {
+          "date": "2026-12-24",
+          "hours": "closed",
+          "note": "Christmas holidays, 21-27 December"
+        },
+        {
+          "date": "2026-12-25",
+          "hours": "closed",
+          "note": "Christmas holidays, 21-27 December"
+        },
+        {
+          "date": "2026-12-26",
+          "hours": "closed",
+          "note": "Christmas holidays, 21-27 December"
+        },
+        {
+          "date": "2026-12-27",
+          "hours": "closed",
+          "note": "Christmas holidays, 21-27 December"
+        }
+      ],
+      "url": "https://holybellycafe.com",
+      "confidence": "high",
+      "quote": "Ouvert tous les jours de 9 à 17h (dernière commande à 16h)",
+      "lastEntry": "Last food order 16:00",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "09:00-17:00",
+            "tue": "09:00-17:00",
+            "wed": "09:00-17:00",
+            "thu": "09:00-17:00",
+            "fri": "09:00-17:00",
+            "sat": "09:00-17:00",
+            "sun": "09:00-17:00"
+          }
+        }
+      ],
+      "notes": "Drinks and cake until 16:45."
+    },
+    "plc_paris_clamato": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [],
+      "url": "https://www.clamato-charonne.fr/",
+      "confidence": "medium",
+      "quote": "Ouverture 7/7 — Du lundi au dimanche de 12h à 14h30 et de 19h à 22h30",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "12:00-14:30,19:00-22:30",
+            "tue": "12:00-14:30,19:00-22:30",
+            "wed": "12:00-14:30,19:00-22:30",
+            "thu": "12:00-14:30,19:00-22:30",
+            "fri": "12:00-14:30,19:00-22:30",
+            "sat": "12:00-14:30,19:00-22:30",
+            "sun": "12:00-14:30,19:00-22:30"
+          }
+        }
+      ],
+      "caveat": "No reservations: walk in and expect a queue."
+    },
+    "plc_paris_bistrot-paul-bert": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [],
+      "url": "https://www.bistrotpaulbert.fr/",
+      "confidence": "medium",
+      "quote": "Mardi au samedi 12h – 14h · 19h30 – 23h; dimanche et lundi Fermé",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "closed",
+            "tue": "12:00-14:00,19:30-23:00",
+            "wed": "12:00-14:00,19:30-23:00",
+            "thu": "12:00-14:00,19:30-23:00",
+            "fri": "12:00-14:00,19:30-23:00",
+            "sat": "12:00-14:00,19:30-23:00",
+            "sun": "closed"
+          }
+        }
+      ],
+      "caveat": "Bookings by phone only."
+    },
+    "plc_paris_sacre-coeur-basilica": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [
+        {
+          "date": "2026-11-05",
+          "hours": "06:30-00:00",
+          "note": "Open until midnight on the first Thursday of the month"
+        },
+        {
+          "date": "2026-12-03",
+          "hours": "06:30-00:00",
+          "note": "Open until midnight on the first Thursday of the month"
+        }
+      ],
+      "url": "https://www.sacre-coeur-montmartre.com/en/info-and-visits/practical-information/hours-and-directions/",
+      "confidence": "high",
+      "quote": "open every day of the year, without exception, from 6:30 a.m. to 10:30 p.m.",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "06:30-22:30",
+            "tue": "06:30-22:30",
+            "wed": "06:30-22:30",
+            "thu": "06:30-22:30",
+            "fri": "06:30-22:30",
+            "sat": "06:30-22:30",
+            "sun": "06:30-22:30"
+          }
+        }
+      ],
+      "caveat": "An active church: visits pause during services. The dome has its own hours and fee (not checked)."
+    },
+    "plc_paris_breizh-cafe-marais": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [],
+      "url": "https://www.breizhcafe.com/le-marais",
+      "confidence": "high",
+      "quote": "LUN - DIM : 09h00 - 23h00",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "09:00-23:00",
+            "tue": "09:00-23:00",
+            "wed": "09:00-23:00",
+            "thu": "09:00-23:00",
+            "fri": "09:00-23:00",
+            "sat": "09:00-23:00",
+            "sun": "09:00-23:00"
+          }
+        }
+      ],
+      "notes": "Marais branch only."
+    },
+    "plc_paris_little-red-door": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [],
+      "url": "https://www.lrdparis.com/",
+      "confidence": "high",
+      "quote": "Open 7/7 17h - 01h Walk-ins Welcomed",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "17:00-01:00",
+            "tue": "17:00-01:00",
+            "wed": "17:00-01:00",
+            "thu": "17:00-01:00",
+            "fri": "17:00-01:00",
+            "sat": "17:00-01:00",
+            "sun": "17:00-01:00"
+          }
+        }
+      ],
+      "notes": "Read in a browser (the site is a JavaScript app)."
+    },
+    "plc_paris_terres-de-cafe-rambuteau": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [],
+      "url": "https://www.terresdecafe.com/fr/content/70-nos-boutiques",
+      "confidence": "high",
+      "quote": "Lundi - Vendredi : 8h / 19h ; Samedi - Dimanche : 9h30 / 19h",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "08:00-19:00",
+            "tue": "08:00-19:00",
+            "wed": "08:00-19:00",
+            "thu": "08:00-19:00",
+            "fri": "08:00-19:00",
+            "sat": "09:30-19:00",
+            "sun": "09:30-19:00"
+          }
+        }
+      ],
+      "notes": "Rambuteau shop only."
     }
   }
 }

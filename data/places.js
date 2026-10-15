@@ -4324,6 +4324,2249 @@ window.HB_PLACES = {
         ]
       }
     },
+    "plc_paris_louvre-museum": {
+      "id": "plc_paris_louvre-museum",
+      "name": "Louvre Museum",
+      "city": "paris",
+      "kind": "landmark",
+      "area": "Louvre",
+      "timeZone": "Europe/Paris",
+      "address": "Pyramid entrance, Cour Napoléon, 75001 Paris",
+      "coordinates": {
+        "lat": 48.86099,
+        "lng": 2.33584,
+        "basis": "named feature: the Louvre Pyramid, the main visitor entrance",
+        "osm": "way/375076234",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "tue": [],
+              "wed": [
+                [
+                  "09:00",
+                  "21:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:00",
+                  "21:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-12-25",
+            "hours": [],
+            "note": "Closed 1 January, 1 May and 25 December"
+          }
+        ],
+        "lastEntry": "1 hour before closing",
+        "caveat": "Timed reservation is required for every visitor from 17 October to 1 November 2026. Rooms start closing 30 minutes before the museum.",
+        "notes": "Open on other public holidays unless they fall on a Tuesday. The Porte des Lions entrance keeps shorter hours.",
+        "evidence": {
+          "url": "https://www.louvre.fr/en/visit/hours-admission",
+          "quote": "9:00 AM to 6:00 PM Monday, Thursday, Saturday and Sunday; 9:00 AM to 9:00 PM Wednesday and Friday; Closed Tuesday",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site",
+            "url": "https://www.louvre.fr/en/visit/hours-admission",
+            "retrievedOn": "2026-10-14",
+            "note": "Current hours and 2026 rates are published, with a notice that timed reservation is required for all visitors from 17 October to 1 November 2026."
+          }
+        ]
+      }
+    },
+    "plc_paris_galerie-vivienne": {
+      "id": "plc_paris_galerie-vivienne",
+      "name": "Galerie Vivienne",
+      "city": "paris",
+      "kind": "scenic",
+      "area": "Bourse",
+      "timeZone": "Europe/Paris",
+      "address": "4 rue des Petits-Champs / 6 rue Vivienne, 75002 Paris",
+      "coordinates": {
+        "lat": 48.86673,
+        "lng": 2.33976,
+        "basis": "named feature: the covered passage",
+        "osm": "relation/546789",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "08:30",
+                  "20:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "08:30",
+                  "20:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "08:30",
+                  "20:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "08:30",
+                  "20:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "08:30",
+                  "20:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "08:30",
+                  "20:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "08:30",
+                  "20:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": "These are the passage's hours; its shops keep their own, often shorter, hours.",
+        "notes": "Published by the passage merchants' site, not a public body.",
+        "evidence": {
+          "url": "https://www.galerie-vivienne.com/",
+          "quote": "du lundi au dimanche de 8h30 à 20h",
+          "confidence": "medium"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "the passage merchants' official site",
+            "url": "https://www.galerie-vivienne.com/",
+            "retrievedOn": "2026-10-14",
+            "note": "News posts dated 5, 7 and 13 October 2026; daily hours and free entry."
+          }
+        ]
+      }
+    },
+    "plc_paris_frenchie-rue-du-nil": {
+      "id": "plc_paris_frenchie-rue-du-nil",
+      "name": "Frenchie (rue du Nil)",
+      "city": "paris",
+      "kind": "meal",
+      "area": "Sentier",
+      "timeZone": "Europe/Paris",
+      "address": "5 rue du Nil, 75002 Paris",
+      "coordinates": {
+        "lat": 48.86774,
+        "lng": 2.34798,
+        "basis": "named feature 'Restaurant Frenchie' on rue du Nil (not the wine bar or shop)",
+        "osm": "node/2383363287",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "18:30",
+                  "21:15"
+                ]
+              ],
+              "tue": [
+                [
+                  "18:30",
+                  "21:15"
+                ]
+              ],
+              "wed": [
+                [
+                  "18:30",
+                  "21:15"
+                ]
+              ],
+              "thu": [
+                [
+                  "18:30",
+                  "21:15"
+                ]
+              ],
+              "fri": [
+                [
+                  "18:30",
+                  "21:15"
+                ]
+              ],
+              "sat": [
+                [
+                  "18:30",
+                  "21:15"
+                ]
+              ],
+              "sun": [
+                [
+                  "18:30",
+                  "21:15"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": "Dinner only, one set menu; book through the restaurant's site or by phone.",
+        "notes": "An embedded post on the same site says 21:30; 21:15 may be the last seating.",
+        "evidence": {
+          "url": "https://www.frenchie-ruedunil.com/",
+          "quote": "Lundi — Dimanche 18H30 — 21H15",
+          "confidence": "medium"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "restaurant's own site",
+            "url": "https://www.frenchie-ruedunil.com/",
+            "retrievedOn": "2026-10-14",
+            "note": "Current five-course set dinner menu with pairings and an active booking link. Dinner only. Not Frenchie Bar à Vins or the group's other outlets."
+          }
+        ]
+      }
+    },
+    "plc_paris_poilane-rue-du-cherche-midi": {
+      "id": "plc_paris_poilane-rue-du-cherche-midi",
+      "name": "Poilâne (rue du Cherche-Midi)",
+      "city": "paris",
+      "kind": "cafe",
+      "area": "Saint-Germain",
+      "timeZone": "Europe/Paris",
+      "address": "8 rue du Cherche-Midi, 75006 Paris",
+      "coordinates": {
+        "lat": 48.85131,
+        "lng": 2.32899,
+        "basis": "named feature: Boulangerie Poilâne on rue du Cherche-Midi",
+        "osm": "node/6695032685",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "07:15",
+                  "20:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "07:15",
+                  "20:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "07:15",
+                  "20:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "07:15",
+                  "20:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "07:15",
+                  "20:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "07:15",
+                  "20:00"
+                ]
+              ],
+              "sun": []
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": null,
+        "notes": "The original rue du Cherche-Midi shop only. No holiday closures published.",
+        "evidence": {
+          "url": "https://www.poilane.com/pages/boulangerie-poilane-saint-germain-des-pres",
+          "quote": "Lundi–Samedi : 7h15 – 20h00 ; Dimanche : Fermé",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "bakery's own shop page",
+            "url": "https://www.poilane.com/pages/boulangerie-poilane-saint-germain-des-pres",
+            "retrievedOn": "2026-10-14",
+            "note": "The original shop's page lists current weekly hours; no shop closure notice."
+          }
+        ]
+      }
+    },
+    "plc_paris_jardin-du-luxembourg": {
+      "id": "plc_paris_jardin-du-luxembourg",
+      "name": "Jardin du Luxembourg",
+      "city": "paris",
+      "kind": "scenic",
+      "area": "Luxembourg",
+      "timeZone": "Europe/Paris",
+      "address": "Entrances on place Edmond Rostand, rue Guynemer and rue de Vaugirard, 75006 Paris",
+      "coordinates": {
+        "lat": 48.84672,
+        "lng": 2.33641,
+        "basis": "centre of the garden; it has several gates",
+        "osm": "way/128206209",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-10-15",
+            "weekly": {
+              "mon": [
+                [
+                  "07:45",
+                  "18:45"
+                ]
+              ],
+              "tue": [
+                [
+                  "07:45",
+                  "18:45"
+                ]
+              ],
+              "wed": [
+                [
+                  "07:45",
+                  "18:45"
+                ]
+              ],
+              "thu": [
+                [
+                  "07:45",
+                  "18:45"
+                ]
+              ],
+              "fri": [
+                [
+                  "07:45",
+                  "18:45"
+                ]
+              ],
+              "sat": [
+                [
+                  "07:45",
+                  "18:45"
+                ]
+              ],
+              "sun": [
+                [
+                  "07:45",
+                  "18:45"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2026-10-16",
+            "to": "2026-10-24",
+            "weekly": {
+              "mon": [
+                [
+                  "08:00",
+                  "18:15"
+                ]
+              ],
+              "tue": [
+                [
+                  "08:00",
+                  "18:15"
+                ]
+              ],
+              "wed": [
+                [
+                  "08:00",
+                  "18:15"
+                ]
+              ],
+              "thu": [
+                [
+                  "08:00",
+                  "18:15"
+                ]
+              ],
+              "fri": [
+                [
+                  "08:00",
+                  "18:15"
+                ]
+              ],
+              "sat": [
+                [
+                  "08:00",
+                  "18:15"
+                ]
+              ],
+              "sun": [
+                [
+                  "08:00",
+                  "18:15"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2026-10-25",
+            "to": "2026-10-31",
+            "weekly": {
+              "mon": [
+                [
+                  "08:00",
+                  "17:15"
+                ]
+              ],
+              "tue": [
+                [
+                  "08:00",
+                  "17:15"
+                ]
+              ],
+              "wed": [
+                [
+                  "08:00",
+                  "17:15"
+                ]
+              ],
+              "thu": [
+                [
+                  "08:00",
+                  "17:15"
+                ]
+              ],
+              "fri": [
+                [
+                  "08:00",
+                  "17:15"
+                ]
+              ],
+              "sat": [
+                [
+                  "08:00",
+                  "17:15"
+                ]
+              ],
+              "sun": [
+                [
+                  "08:00",
+                  "17:15"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2026-11-01",
+            "to": "2026-11-15",
+            "weekly": {
+              "mon": [
+                [
+                  "08:00",
+                  "17:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "08:00",
+                  "17:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "08:00",
+                  "17:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "08:00",
+                  "17:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "08:00",
+                  "17:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "08:00",
+                  "17:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "08:00",
+                  "17:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2026-11-16",
+            "to": "2026-11-30",
+            "weekly": {
+              "mon": [
+                [
+                  "08:00",
+                  "16:45"
+                ]
+              ],
+              "tue": [
+                [
+                  "08:00",
+                  "16:45"
+                ]
+              ],
+              "wed": [
+                [
+                  "08:00",
+                  "16:45"
+                ]
+              ],
+              "thu": [
+                [
+                  "08:00",
+                  "16:45"
+                ]
+              ],
+              "fri": [
+                [
+                  "08:00",
+                  "16:45"
+                ]
+              ],
+              "sat": [
+                [
+                  "08:00",
+                  "16:45"
+                ]
+              ],
+              "sun": [
+                [
+                  "08:00",
+                  "16:45"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2026-12-01",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "08:15",
+                  "16:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "08:15",
+                  "16:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "08:15",
+                  "16:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "08:15",
+                  "16:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "08:15",
+                  "16:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "08:15",
+                  "16:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "08:15",
+                  "16:30"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": "Gate times change on the 1st and 16th of each month to follow daylight.",
+        "notes": "The page's periods '16 to the last Saturday of October' and 'last Sunday of October to 31 October' fall on 16-24 and 25-31 October in 2026.",
+        "evidence": {
+          "url": "https://jardin.senat.fr/infos-pratiques/horaires-douverture.html",
+          "quote": "Le Jardin adapte ses horaires tous les quinze jours au lever et coucher du soleil.",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "official public operator (French Senate)",
+            "url": "https://jardin.senat.fr/infos-pratiques/horaires-douverture.html",
+            "retrievedOn": "2026-10-14",
+            "note": "Current exhibitions on the garden railings (19 September 2026-17 January 2027) and gate hours that change twice a month with daylight."
+          }
+        ]
+      }
+    },
+    "plc_paris_musee-dorsay": {
+      "id": "plc_paris_musee-dorsay",
+      "name": "Musée d'Orsay",
+      "city": "paris",
+      "kind": "landmark",
+      "area": "Saint-Germain",
+      "timeZone": "Europe/Paris",
+      "address": "Esplanade Valéry Giscard d'Estaing, 75007 Paris",
+      "coordinates": {
+        "lat": 48.85992,
+        "lng": 2.32658,
+        "basis": "named feature: the museum building",
+        "osm": "way/63178753",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [],
+              "tue": [
+                [
+                  "09:30",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "09:30",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:30",
+                  "21:45"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:30",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:30",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:30",
+                  "18:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": "17:00 (later on Thursdays)",
+        "caveat": null,
+        "notes": "Read in a browser (automated fetches were refused). Galleries close at 17:30 on ordinary days.",
+        "evidence": {
+          "url": "https://www.musee-orsay.fr/en/visit",
+          "quote": "Monday Closed / Tuesday 9.30am 6.00pm / ... / Thursday 9.30am 9.45pm / ... Last admission to the museum at 5:00 p.m.",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site",
+            "url": "https://www.musee-orsay.fr/en/visit",
+            "retrievedOn": "2026-10-14",
+            "note": "The visit page shows today's opening, a weekly schedule and last-admission times."
+          }
+        ]
+      }
+    },
+    "plc_paris_sainte-chapelle": {
+      "id": "plc_paris_sainte-chapelle",
+      "name": "Sainte-Chapelle",
+      "city": "paris",
+      "kind": "landmark",
+      "area": "Île de la Cité",
+      "timeZone": "Europe/Paris",
+      "address": "10 boulevard du Palais, 75001 Paris",
+      "coordinates": {
+        "lat": 48.85539,
+        "lng": 2.34499,
+        "basis": "named feature on boulevard du Palais",
+        "osm": "relation/3344870",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-12-25",
+            "hours": [],
+            "note": "Closed 1 January, 1 May and 25 December"
+          }
+        ],
+        "lastEntry": "16:30",
+        "caveat": null,
+        "notes": "Winter hours (1 October to 31 March).",
+        "evidence": {
+          "url": "https://www.sainte-chapelle.fr/en/visit/practical-information",
+          "quote": "1 October to 31 March: 9am - 5pm",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "official public operator (Centre des monuments nationaux)",
+            "url": "https://www.sainte-chapelle.fr/en/visit/practical-information",
+            "retrievedOn": "2026-10-14",
+            "note": "The CMN site sells tickets at prices effective 12 January 2026 and publishes winter hours; a restoration news item carries no closure notice."
+          }
+        ]
+      }
+    },
+    "plc_paris_coutume-cafe-babylone": {
+      "id": "plc_paris_coutume-cafe-babylone",
+      "name": "Coutume Café (Babylone)",
+      "city": "paris",
+      "kind": "cafe",
+      "area": "Invalides",
+      "timeZone": "Europe/Paris",
+      "address": "47 rue de Babylone, 75007 Paris",
+      "coordinates": {
+        "lat": 48.85166,
+        "lng": 2.3183,
+        "basis": "named feature at 47 rue de Babylone",
+        "osm": "node/2355464116",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "08:00",
+                  "17:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "08:00",
+                  "17:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "08:00",
+                  "17:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "08:00",
+                  "17:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "08:00",
+                  "17:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": null,
+        "notes": "The branch page shows hours in an embedded widget labelled 'powered by Google'.",
+        "evidence": {
+          "url": "https://www.coutumecafe.com/pages/cafe-babylone",
+          "quote": "Lundi–Vendredi 8:00 - 17:30 ; Samedi–Dimanche 9:00 - 18:00",
+          "confidence": "medium"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "café's own branch page",
+            "url": "https://www.coutumecafe.com/pages/cafe-babylone",
+            "retrievedOn": "2026-10-14",
+            "note": "Branch page with brunch description and table reservations; weekly hours shown in an embedded widget labelled 'powered by Google'."
+          }
+        ]
+      }
+    },
+    "plc_paris_musee-rodin": {
+      "id": "plc_paris_musee-rodin",
+      "name": "Musée Rodin",
+      "city": "paris",
+      "kind": "landmark",
+      "area": "Invalides",
+      "timeZone": "Europe/Paris",
+      "address": "77 rue de Varenne, 75007 Paris",
+      "coordinates": {
+        "lat": 48.85475,
+        "lng": 2.31587,
+        "basis": "named feature at 77 rue de Varenne (not the Meudon site)",
+        "osm": "way/472159547",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [],
+              "tue": [
+                [
+                  "10:00",
+                  "18:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "18:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "18:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "18:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "18:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "18:30"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-12-25",
+            "hours": [],
+            "note": "Closed 1 January, 1 May and 25 December"
+          }
+        ],
+        "lastEntry": "17:45",
+        "caveat": "Large bags are not accepted. The Meudon site is a different place and is closed until spring 2027.",
+        "notes": null,
+        "evidence": {
+          "url": "https://www.musee-rodin.fr/en",
+          "quote": "Open Tuesday to Sunday from 10am. to 6.30pm. Last entry at 5.45pm.",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site",
+            "url": "https://www.musee-rodin.fr/en",
+            "retrievedOn": "2026-10-14",
+            "note": "Tickets on sale and dated events (31 October 2026 evening; family Sundays from September 2026). The separate Meudon site is closed until spring 2027."
+          }
+        ]
+      }
+    },
+    "plc_paris_eiffel-tower": {
+      "id": "plc_paris_eiffel-tower",
+      "name": "Eiffel Tower",
+      "city": "paris",
+      "kind": "landmark",
+      "area": "Eiffel Tower",
+      "timeZone": "Europe/Paris",
+      "address": "Champ de Mars, 75007 Paris",
+      "coordinates": {
+        "lat": 48.85826,
+        "lng": 2.2945,
+        "basis": "named feature: the tower",
+        "osm": "way/5013364",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-10-20",
+            "weekly": {
+              "mon": [
+                [
+                  "09:30",
+                  "23:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "09:30",
+                  "23:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "09:30",
+                  "23:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:30",
+                  "23:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:30",
+                  "23:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:30",
+                  "23:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:30",
+                  "23:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": "Last ascents at 22:45",
+        "caveat": "The operator publishes hours only a few days ahead; access to the top can be restricted in bad weather or at peak times. Large luggage is not allowed.",
+        "notes": "Read in a browser. Dates after 20 October 2026 had no published hours on 14 October, so they show as unknown.",
+        "evidence": {
+          "url": "https://www.toureiffel.paris/en/rates-opening-times",
+          "quote": "Open Wednesday 14 October 2026 09:30 - 23:00 ... (if a date cannot be clicked on, the opening hours have not yet been communicated)",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site (SETE)",
+            "url": "https://www.toureiffel.paris/en/rates-opening-times",
+            "retrievedOn": "2026-10-14",
+            "note": "The operator's calendar shows the tower open 9:30 AM-11 PM on 14-16 October 2026 with live attendance and weather, and says hours for later dates are published closer to the day. Last ascents 10:45 PM; access to the top can be restricted in severe weather or peak periods."
+          }
+        ]
+      }
+    },
+    "plc_paris_le-jules-verne": {
+      "id": "plc_paris_le-jules-verne",
+      "name": "Le Jules Verne",
+      "city": "paris",
+      "kind": "meal",
+      "area": "Eiffel Tower",
+      "timeZone": "Europe/Paris",
+      "address": "Eiffel Tower 2nd floor, 6 avenue Gustave Eiffel, 75007 Paris",
+      "coordinates": {
+        "lat": 48.85826,
+        "lng": 2.2945,
+        "basis": "the tower's named feature; the restaurant is on its second floor",
+        "osm": "way/5013364",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "12:00",
+                  "13:45"
+                ],
+                [
+                  "19:00",
+                  "21:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "12:00",
+                  "13:45"
+                ],
+                [
+                  "19:00",
+                  "21:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "12:00",
+                  "13:45"
+                ],
+                [
+                  "19:00",
+                  "21:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "12:00",
+                  "13:45"
+                ],
+                [
+                  "19:00",
+                  "21:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "12:00",
+                  "13:45"
+                ],
+                [
+                  "19:00",
+                  "21:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "12:00",
+                  "13:45"
+                ],
+                [
+                  "19:00",
+                  "21:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "12:00",
+                  "13:45"
+                ],
+                [
+                  "19:00",
+                  "21:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": "Book ahead. Jacket required for men; no shorts or sportswear.",
+        "notes": "The times may be seating windows rather than closing times. The restaurant lists a closure on 14 July 2027 only.",
+        "evidence": {
+          "url": "https://www.restaurants-toureiffel.com/fr/restaurant-jules-verne.html",
+          "quote": "Du lundi au dimanche, de 12h à 13h45 et de 19h à 21h",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "restaurant's own site (Eiffel Tower restaurants)",
+            "url": "https://www.restaurants-toureiffel.com/fr/restaurant-jules-verne.html",
+            "retrievedOn": "2026-10-14",
+            "note": "Live booking link, phone and email booking, and a forward closure date of 14 July 2027. Jacket required for men; no shorts or sportswear."
+          }
+        ]
+      }
+    },
+    "plc_paris_holybelly": {
+      "id": "plc_paris_holybelly",
+      "name": "Holybelly",
+      "city": "paris",
+      "kind": "cafe",
+      "area": "Canal Saint-Martin",
+      "timeZone": "Europe/Paris",
+      "address": "5 rue Lucien Sampaix, 75010 Paris",
+      "coordinates": {
+        "lat": 48.871,
+        "lng": 2.35976,
+        "basis": "named feature on rue Lucien Sampaix",
+        "osm": "node/4904689828",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-11-01",
+            "hours": [],
+            "note": "Bank holiday"
+          },
+          {
+            "date": "2026-11-11",
+            "hours": [],
+            "note": "Bank holiday"
+          },
+          {
+            "date": "2026-12-21",
+            "hours": [],
+            "note": "Christmas holidays, 21-27 December"
+          },
+          {
+            "date": "2026-12-22",
+            "hours": [],
+            "note": "Christmas holidays, 21-27 December"
+          },
+          {
+            "date": "2026-12-23",
+            "hours": [],
+            "note": "Christmas holidays, 21-27 December"
+          },
+          {
+            "date": "2026-12-24",
+            "hours": [],
+            "note": "Christmas holidays, 21-27 December"
+          },
+          {
+            "date": "2026-12-25",
+            "hours": [],
+            "note": "Christmas holidays, 21-27 December"
+          },
+          {
+            "date": "2026-12-26",
+            "hours": [],
+            "note": "Christmas holidays, 21-27 December"
+          },
+          {
+            "date": "2026-12-27",
+            "hours": [],
+            "note": "Christmas holidays, 21-27 December"
+          }
+        ],
+        "lastEntry": "Last food order 16:00",
+        "caveat": null,
+        "notes": "Drinks and cake until 16:45.",
+        "evidence": {
+          "url": "https://holybellycafe.com",
+          "quote": "Ouvert tous les jours de 9 à 17h (dernière commande à 16h)",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "café's own site",
+            "url": "https://holybellycafe.com",
+            "retrievedOn": "2026-10-14",
+            "note": "A dated 2026 closure calendar and daily hours (last food order 16:00)."
+          }
+        ]
+      }
+    },
+    "plc_paris_clamato": {
+      "id": "plc_paris_clamato",
+      "name": "Clamato",
+      "city": "paris",
+      "kind": "meal",
+      "area": "Charonne",
+      "timeZone": "Europe/Paris",
+      "address": "80 rue de Charonne, 75011 Paris",
+      "coordinates": {
+        "lat": 48.85359,
+        "lng": 2.38085,
+        "basis": "named feature at 80 rue de Charonne",
+        "osm": "node/3602657895",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "12:00",
+                  "14:30"
+                ],
+                [
+                  "19:00",
+                  "22:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "12:00",
+                  "14:30"
+                ],
+                [
+                  "19:00",
+                  "22:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "12:00",
+                  "14:30"
+                ],
+                [
+                  "19:00",
+                  "22:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "12:00",
+                  "14:30"
+                ],
+                [
+                  "19:00",
+                  "22:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "12:00",
+                  "14:30"
+                ],
+                [
+                  "19:00",
+                  "22:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "12:00",
+                  "14:30"
+                ],
+                [
+                  "19:00",
+                  "22:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "12:00",
+                  "14:30"
+                ],
+                [
+                  "19:00",
+                  "22:30"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": "No reservations: walk in and expect a queue.",
+        "notes": null,
+        "evidence": {
+          "url": "https://www.clamato-charonne.fr/",
+          "quote": "Ouverture 7/7 — Du lundi au dimanche de 12h à 14h30 et de 19h à 22h30",
+          "confidence": "medium"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "restaurant's own site",
+            "url": "https://www.clamato-charonne.fr/",
+            "retrievedOn": "2026-10-14",
+            "note": "Open seven days with published service times; no reservations (walk-in only)."
+          }
+        ]
+      }
+    },
+    "plc_paris_bistrot-paul-bert": {
+      "id": "plc_paris_bistrot-paul-bert",
+      "name": "Bistrot Paul Bert",
+      "city": "paris",
+      "kind": "meal",
+      "area": "Charonne",
+      "timeZone": "Europe/Paris",
+      "address": "18 rue Paul Bert, 75011 Paris",
+      "coordinates": {
+        "lat": 48.85222,
+        "lng": 2.38492,
+        "basis": "named feature on rue Paul Bert",
+        "osm": "node/589485658",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [],
+              "tue": [
+                [
+                  "12:00",
+                  "14:00"
+                ],
+                [
+                  "19:30",
+                  "23:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "12:00",
+                  "14:00"
+                ],
+                [
+                  "19:30",
+                  "23:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "12:00",
+                  "14:00"
+                ],
+                [
+                  "19:30",
+                  "23:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "12:00",
+                  "14:00"
+                ],
+                [
+                  "19:30",
+                  "23:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "12:00",
+                  "14:00"
+                ],
+                [
+                  "19:30",
+                  "23:00"
+                ]
+              ],
+              "sun": []
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": "Bookings by phone only.",
+        "notes": null,
+        "evidence": {
+          "url": "https://www.bistrotpaulbert.fr/",
+          "quote": "Mardi au samedi 12h – 14h · 19h30 – 23h; dimanche et lundi Fermé",
+          "confidence": "medium"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "restaurant's own site",
+            "url": "https://www.bistrotpaulbert.fr/",
+            "retrievedOn": "2026-10-14",
+            "note": "Current service hours and a phone booking line (bookings by phone only)."
+          }
+        ]
+      }
+    },
+    "plc_paris_sacre-coeur-basilica": {
+      "id": "plc_paris_sacre-coeur-basilica",
+      "name": "Sacré-Cœur Basilica",
+      "city": "paris",
+      "kind": "landmark",
+      "area": "Montmartre",
+      "timeZone": "Europe/Paris",
+      "address": "35 rue du Chevalier de La Barre, 75018 Paris",
+      "coordinates": {
+        "lat": 48.88681,
+        "lng": 2.34302,
+        "basis": "named feature: the basilica",
+        "osm": "way/23762981",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "06:30",
+                  "22:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "06:30",
+                  "22:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "06:30",
+                  "22:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "06:30",
+                  "22:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "06:30",
+                  "22:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "06:30",
+                  "22:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "06:30",
+                  "22:30"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-11-05",
+            "hours": [
+              [
+                "06:30",
+                "24:00"
+              ]
+            ],
+            "note": "Open until midnight on the first Thursday of the month"
+          },
+          {
+            "date": "2026-12-03",
+            "hours": [
+              [
+                "06:30",
+                "24:00"
+              ]
+            ],
+            "note": "Open until midnight on the first Thursday of the month"
+          }
+        ],
+        "lastEntry": null,
+        "caveat": "An active church: visits pause during services. The dome has its own hours and fee (not checked).",
+        "notes": null,
+        "evidence": {
+          "url": "https://www.sacre-coeur-montmartre.com/en/info-and-visits/practical-information/hours-and-directions/",
+          "quote": "open every day of the year, without exception, from 6:30 a.m. to 10:30 p.m.",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site (basilica)",
+            "url": "https://www.sacre-coeur-montmartre.com/en/info-and-visits/practical-information/hours-and-directions/",
+            "retrievedOn": "2026-10-14",
+            "note": "Open every day without exception, free entry; great-organ restoration through May 2027 noted."
+          }
+        ]
+      }
+    },
+    "plc_paris_breizh-cafe-marais": {
+      "id": "plc_paris_breizh-cafe-marais",
+      "name": "Breizh Café (Marais)",
+      "city": "paris",
+      "kind": "meal",
+      "area": "Le Marais",
+      "timeZone": "Europe/Paris",
+      "address": "109 rue Vieille du Temple, 75003 Paris",
+      "coordinates": {
+        "lat": 48.86063,
+        "lng": 2.36182,
+        "basis": "named feature on rue Vieille du Temple (not another branch)",
+        "osm": "node/2383363288",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "09:00",
+                  "23:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "09:00",
+                  "23:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "09:00",
+                  "23:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:00",
+                  "23:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:00",
+                  "23:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "23:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "23:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": null,
+        "notes": "Marais branch only.",
+        "evidence": {
+          "url": "https://www.breizhcafe.com/le-marais",
+          "quote": "LUN - DIM : 09h00 - 23h00",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "restaurant group's own branch page",
+            "url": "https://www.breizhcafe.com/le-marais",
+            "retrievedOn": "2026-10-14",
+            "note": "Live booking link and phone line for this branch; other Breizh Café branches are not substituted."
+          }
+        ]
+      }
+    },
+    "plc_paris_little-red-door": {
+      "id": "plc_paris_little-red-door",
+      "name": "Little Red Door",
+      "city": "paris",
+      "kind": "meal",
+      "area": "Le Marais",
+      "timeZone": "Europe/Paris",
+      "address": "60 rue Charlot, 75003 Paris",
+      "coordinates": {
+        "lat": 48.86366,
+        "lng": 2.36359,
+        "basis": "named feature at 60 rue Charlot",
+        "osm": "node/3265513124",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "17:00",
+                  "01:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "17:00",
+                  "01:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "17:00",
+                  "01:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "17:00",
+                  "01:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "17:00",
+                  "01:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "17:00",
+                  "01:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "17:00",
+                  "01:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": null,
+        "notes": "Read in a browser (the site is a JavaScript app).",
+        "evidence": {
+          "url": "https://www.lrdparis.com/",
+          "quote": "Open 7/7 17h - 01h Walk-ins Welcomed",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "bar's own site",
+            "url": "https://www.lrdparis.com/",
+            "retrievedOn": "2026-10-14",
+            "note": "Current menu ('Technics for Future Farming'), a booking link and 'Open 7/7 17h-01h, walk-ins welcomed'."
+          }
+        ]
+      }
+    },
+    "plc_paris_terres-de-cafe-rambuteau": {
+      "id": "plc_paris_terres-de-cafe-rambuteau",
+      "name": "Terres de Café (Rambuteau)",
+      "city": "paris",
+      "kind": "cafe",
+      "area": "Le Marais",
+      "timeZone": "Europe/Paris",
+      "address": "14 rue Rambuteau, 75003 Paris",
+      "coordinates": {
+        "lat": 48.86061,
+        "lng": 2.35554,
+        "basis": "named feature at 14 rue Rambuteau (not another branch)",
+        "osm": "node/5908178879",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "08:00",
+                  "19:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "08:00",
+                  "19:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "08:00",
+                  "19:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "08:00",
+                  "19:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "08:00",
+                  "19:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:30",
+                  "19:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:30",
+                  "19:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": null,
+        "notes": "Rambuteau shop only.",
+        "evidence": {
+          "url": "https://www.terresdecafe.com/fr/content/70-nos-boutiques",
+          "quote": "Lundi - Vendredi : 8h / 19h ; Samedi - Dimanche : 9h30 / 19h",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "roaster's own shop list",
+            "url": "https://www.terresdecafe.com/fr/content/70-nos-boutiques",
+            "retrievedOn": "2026-10-14",
+            "note": "The shop list gives this branch's phone and weekly hours; an active online shop."
+          }
+        ]
+      }
+    },
     "plc_berlin_lebenswelten-bistro-humboldt-forum": {
       "id": "plc_berlin_lebenswelten-bistro-humboldt-forum",
       "name": "Lebenswelten Bistro (Humboldt Forum)",
@@ -5696,6 +7939,123 @@ window.HB_PLACES = {
         "checkedOn": "2026-10-14",
         "source": "Transitous journey planner (transitous.org), Hong Kong timetable data",
         "alternatives": "MTR Tsuen Wan Line to Central: about 25 min"
+      },
+      "plc_paris_louvre-museum|plc_paris_galerie-vivienne": {
+        "minutes": 12,
+        "mode": "walk",
+        "summary": "about 0.9 km on foot past the Palais-Royal",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_paris_galerie-vivienne|plc_paris_frenchie-rue-du-nil": {
+        "minutes": 10,
+        "mode": "walk",
+        "summary": "about 0.7 km on foot",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_paris_louvre-museum|plc_paris_frenchie-rue-du-nil": {
+        "minutes": 20,
+        "mode": "walk",
+        "summary": "about 1.5 km on foot",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_paris_poilane-rue-du-cherche-midi|plc_paris_jardin-du-luxembourg": {
+        "minutes": 15,
+        "mode": "walk",
+        "summary": "about 1 km on foot",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_paris_jardin-du-luxembourg|plc_paris_musee-dorsay": {
+        "minutes": 20,
+        "mode": "transit",
+        "summary": "RER B from Luxembourg to Saint-Michel Notre-Dame, then RER C to Musée d'Orsay, with about 0.8 km of walking in total",
+        "conditions": "Wednesday 4 Nov 2026, departing about 10:30",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous journey planner (transitous.org), Île-de-France timetable data",
+        "alternatives": "Bus 68: about 26 min; walking: about 31 min"
+      },
+      "plc_paris_musee-dorsay|plc_paris_sainte-chapelle": {
+        "minutes": 12,
+        "mode": "transit",
+        "summary": "RER C from Musée d'Orsay to Saint-Michel Notre-Dame, with about 0.6 km of walking in total",
+        "conditions": "Wednesday 4 Nov 2026, departing about 15:00",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous journey planner (transitous.org), Île-de-France timetable data",
+        "alternatives": "Walking along the Seine: about 24 min"
+      },
+      "plc_paris_coutume-cafe-babylone|plc_paris_musee-rodin": {
+        "minutes": 12,
+        "mode": "walk",
+        "summary": "about 0.8 km on foot",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_paris_musee-rodin|plc_paris_eiffel-tower": {
+        "minutes": 23,
+        "mode": "transit",
+        "summary": "Metro line 13 from Varenne to Invalides, then RER C to Champ de Mars Tour Eiffel, with about 1.2 km of walking in total",
+        "conditions": "Wednesday 4 Nov 2026, departing about 14:00",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous journey planner (transitous.org), Île-de-France timetable data",
+        "alternatives": "Bus 69: about 25 min; walking: about 32 min"
+      },
+      "plc_paris_coutume-cafe-babylone|plc_paris_eiffel-tower": {
+        "minutes": 17,
+        "mode": "transit",
+        "summary": "Bus 86 from Vaneau - Babylone, with about 0.6 km of walking in total",
+        "conditions": "Wednesday 4 Nov 2026, departing about 14:00",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous journey planner (transitous.org), Île-de-France timetable data",
+        "alternatives": "Walking: about 31 min"
+      },
+      "plc_paris_holybelly|plc_paris_clamato": {
+        "minutes": 22,
+        "mode": "transit",
+        "summary": "Metro line 9 from République to Charonne, with about 1 km of walking in total",
+        "conditions": "Wednesday 4 Nov 2026, departing about 12:00",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous journey planner (transitous.org), Île-de-France timetable data",
+        "alternatives": "Metro line 8: about 23 min; walking: about 37 min"
+      },
+      "plc_paris_clamato|plc_paris_bistrot-paul-bert": {
+        "minutes": 6,
+        "mode": "walk",
+        "summary": "about 0.4 km on foot",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_paris_sacre-coeur-basilica|plc_paris_breizh-cafe-marais": {
+        "minutes": 36,
+        "mode": "transit",
+        "summary": "Metro line 4 from Barbès - Rochechouart, then line 8 to Filles du Calvaire, with about 1.4 km of walking in total",
+        "conditions": "Wednesday 4 Nov 2026, departing about 12:15",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous journey planner (transitous.org), Île-de-France timetable data",
+        "alternatives": "Bus 56: about 41 min; walking: about 54 min"
+      },
+      "plc_paris_breizh-cafe-marais|plc_paris_little-red-door": {
+        "minutes": 7,
+        "mode": "walk",
+        "summary": "about 0.5 km on foot",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
       }
     }
   }

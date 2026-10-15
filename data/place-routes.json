@@ -1,5 +1,5 @@
 {
-  "about": "Journeys between consecutive itinerary stops, looked up once (not live). Public-transport minutes are door-to-door including walking, for the stated weekday and departure time; they vary by time of day, day of week and service changes. Walking routes follow streets and footpaths. A route's own `source` overrides the default. Berlin: VBB timetable data via https://v6.vbb.transport.rest, for every hop of 1.5 km or more; Tempelhofer Feld is routed via its Tempelhofer Damm main entrance (Tor 10); Restaurant Anhalt shares the Deutsches Technikmuseum's location, so its journey is the museum's. Singapore: the Transitous journey planner (https://transitous.org, MOTIS) on 2026-10-12, using LTA timetable data for buses and MRT and OpenStreetMap for walking; hops of 1.5 km or more, plus Marina Bay walks where the street route is much longer than the straight line; Singapore Botanic Gardens is routed from Tanglin Gate; National Kitchen shares National Gallery Singapore's location. Hong Kong: Transitous on 2026-10-14 (MTR, bus and Star Ferry timetable data; OpenStreetMap for walking), for Wednesday 21 Oct 2026; Central walks are street-routed because of the hills. The Ngong Ping 360 cable-car ride is not in the timetable data and its duration is not published as text by the operator, so that hop is left untimed.",
+  "about": "Journeys between consecutive itinerary stops, looked up once (not live). Public-transport minutes are door-to-door including walking, for the stated weekday and departure time; they vary by time of day, day of week and service changes. Walking routes follow streets and footpaths. A route's own `source` overrides the default. Berlin: VBB timetable data via https://v6.vbb.transport.rest, for every hop of 1.5 km or more; Tempelhofer Feld is routed via its Tempelhofer Damm main entrance (Tor 10); Restaurant Anhalt shares the Deutsches Technikmuseum's location, so its journey is the museum's. Singapore: the Transitous journey planner (https://transitous.org, MOTIS) on 2026-10-12, using LTA timetable data for buses and MRT and OpenStreetMap for walking; hops of 1.5 km or more, plus Marina Bay walks where the street route is much longer than the straight line; Singapore Botanic Gardens is routed from Tanglin Gate; National Kitchen shares National Gallery Singapore's location. Hong Kong: Transitous on 2026-10-14 (MTR, bus and Star Ferry timetable data; OpenStreetMap for walking), for Wednesday 21 Oct 2026; Central walks are street-routed because of the hills. The Ngong Ping 360 cable-car ride is not in the timetable data and its duration is not published as text by the operator, so that hop is left untimed. Paris: Transitous on 2026-10-14 (RATP/RER timetable data; OpenStreetMap for walking), for Wednesday 4 Nov 2026; every hop is stored, as street-routed walks or timetabled journeys. Le Jules Verne shares the Eiffel Tower location.",
   "source": "VBB Verkehrsverbund Berlin-Brandenburg timetable data, via v6.vbb.transport.rest",
   "routes": {
     "plc_berlin_luisenbraeu-by-lemke|plc_berlin_zoo-berlin": {
@@ -194,6 +194,123 @@
       "checkedOn": "2026-10-14",
       "source": "Transitous journey planner (transitous.org), Hong Kong timetable data",
       "alternatives": "MTR Tsuen Wan Line to Central: about 25 min"
+    },
+    "plc_paris_louvre-museum|plc_paris_galerie-vivienne": {
+      "minutes": 12,
+      "mode": "walk",
+      "summary": "about 0.9 km on foot past the Palais-Royal",
+      "conditions": "walking route",
+      "checkedOn": "2026-10-14",
+      "source": "Transitous street routing (OpenStreetMap data)",
+      "alternatives": null
+    },
+    "plc_paris_galerie-vivienne|plc_paris_frenchie-rue-du-nil": {
+      "minutes": 10,
+      "mode": "walk",
+      "summary": "about 0.7 km on foot",
+      "conditions": "walking route",
+      "checkedOn": "2026-10-14",
+      "source": "Transitous street routing (OpenStreetMap data)",
+      "alternatives": null
+    },
+    "plc_paris_louvre-museum|plc_paris_frenchie-rue-du-nil": {
+      "minutes": 20,
+      "mode": "walk",
+      "summary": "about 1.5 km on foot",
+      "conditions": "walking route",
+      "checkedOn": "2026-10-14",
+      "source": "Transitous street routing (OpenStreetMap data)",
+      "alternatives": null
+    },
+    "plc_paris_poilane-rue-du-cherche-midi|plc_paris_jardin-du-luxembourg": {
+      "minutes": 15,
+      "mode": "walk",
+      "summary": "about 1 km on foot",
+      "conditions": "walking route",
+      "checkedOn": "2026-10-14",
+      "source": "Transitous street routing (OpenStreetMap data)",
+      "alternatives": null
+    },
+    "plc_paris_jardin-du-luxembourg|plc_paris_musee-dorsay": {
+      "minutes": 20,
+      "mode": "transit",
+      "summary": "RER B from Luxembourg to Saint-Michel Notre-Dame, then RER C to Musée d'Orsay, with about 0.8 km of walking in total",
+      "conditions": "Wednesday 4 Nov 2026, departing about 10:30",
+      "checkedOn": "2026-10-14",
+      "source": "Transitous journey planner (transitous.org), Île-de-France timetable data",
+      "alternatives": "Bus 68: about 26 min; walking: about 31 min"
+    },
+    "plc_paris_musee-dorsay|plc_paris_sainte-chapelle": {
+      "minutes": 12,
+      "mode": "transit",
+      "summary": "RER C from Musée d'Orsay to Saint-Michel Notre-Dame, with about 0.6 km of walking in total",
+      "conditions": "Wednesday 4 Nov 2026, departing about 15:00",
+      "checkedOn": "2026-10-14",
+      "source": "Transitous journey planner (transitous.org), Île-de-France timetable data",
+      "alternatives": "Walking along the Seine: about 24 min"
+    },
+    "plc_paris_coutume-cafe-babylone|plc_paris_musee-rodin": {
+      "minutes": 12,
+      "mode": "walk",
+      "summary": "about 0.8 km on foot",
+      "conditions": "walking route",
+      "checkedOn": "2026-10-14",
+      "source": "Transitous street routing (OpenStreetMap data)",
+      "alternatives": null
+    },
+    "plc_paris_musee-rodin|plc_paris_eiffel-tower": {
+      "minutes": 23,
+      "mode": "transit",
+      "summary": "Metro line 13 from Varenne to Invalides, then RER C to Champ de Mars Tour Eiffel, with about 1.2 km of walking in total",
+      "conditions": "Wednesday 4 Nov 2026, departing about 14:00",
+      "checkedOn": "2026-10-14",
+      "source": "Transitous journey planner (transitous.org), Île-de-France timetable data",
+      "alternatives": "Bus 69: about 25 min; walking: about 32 min"
+    },
+    "plc_paris_coutume-cafe-babylone|plc_paris_eiffel-tower": {
+      "minutes": 17,
+      "mode": "transit",
+      "summary": "Bus 86 from Vaneau - Babylone, with about 0.6 km of walking in total",
+      "conditions": "Wednesday 4 Nov 2026, departing about 14:00",
+      "checkedOn": "2026-10-14",
+      "source": "Transitous journey planner (transitous.org), Île-de-France timetable data",
+      "alternatives": "Walking: about 31 min"
+    },
+    "plc_paris_holybelly|plc_paris_clamato": {
+      "minutes": 22,
+      "mode": "transit",
+      "summary": "Metro line 9 from République to Charonne, with about 1 km of walking in total",
+      "conditions": "Wednesday 4 Nov 2026, departing about 12:00",
+      "checkedOn": "2026-10-14",
+      "source": "Transitous journey planner (transitous.org), Île-de-France timetable data",
+      "alternatives": "Metro line 8: about 23 min; walking: about 37 min"
+    },
+    "plc_paris_clamato|plc_paris_bistrot-paul-bert": {
+      "minutes": 6,
+      "mode": "walk",
+      "summary": "about 0.4 km on foot",
+      "conditions": "walking route",
+      "checkedOn": "2026-10-14",
+      "source": "Transitous street routing (OpenStreetMap data)",
+      "alternatives": null
+    },
+    "plc_paris_sacre-coeur-basilica|plc_paris_breizh-cafe-marais": {
+      "minutes": 36,
+      "mode": "transit",
+      "summary": "Metro line 4 from Barbès - Rochechouart, then line 8 to Filles du Calvaire, with about 1.4 km of walking in total",
+      "conditions": "Wednesday 4 Nov 2026, departing about 12:15",
+      "checkedOn": "2026-10-14",
+      "source": "Transitous journey planner (transitous.org), Île-de-France timetable data",
+      "alternatives": "Bus 56: about 41 min; walking: about 54 min"
+    },
+    "plc_paris_breizh-cafe-marais|plc_paris_little-red-door": {
+      "minutes": 7,
+      "mode": "walk",
+      "summary": "about 0.5 km on foot",
+      "conditions": "walking route",
+      "checkedOn": "2026-10-14",
+      "source": "Transitous street routing (OpenStreetMap data)",
+      "alternatives": null
     }
   }
 }

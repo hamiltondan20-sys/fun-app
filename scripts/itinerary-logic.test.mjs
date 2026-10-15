@@ -378,8 +378,67 @@ test("Hong Kong Easygoing: PMQ and the second museum become free time", () => {
   assert.equal(ferry.travelFromPrevious.basis, "routed", "M+ to the pier is a stored journey");
 });
 
+// ---- Paris pilot ----
+
+test("Paris: every scheduled stop is a reviewed registry place or free time, once, inside Paris", () => {
+  const logic = loadLogic();
+  const registry = logic.window.HB_PLACES.places;
+  const templates = logic.window.HB_TRIP_HELPERS.getConcreteTripTemplates("Paris", logic.window.HB_TRIP_HELPERS.getAreaSet("Paris"));
+  assert.equal(templates.length, 6, "five researched days plus a closing morning");
+  const steps = templates.flatMap((day) => day.timeline);
+  steps.forEach((step) => {
+    if (step.kind === "flexible") return assert.ok(!step.placeId, `${step.title}: free time must not name a venue`);
+    const place = registry[step.placeId];
+    assert.ok(place, `${step.title}: not in the places registry`);
+    assert.equal(place.city, "paris");
+    assert.equal(place.timeZone, "Europe/Paris");
+    assert.ok(place.coordinates.lat > 48.8 && place.coordinates.lat < 48.95 && place.coordinates.lng > 2.2 && place.coordinates.lng < 2.45, `${place.name} outside Paris`);
+    assert.ok(place.verification.checked.includes("published-weekly-hours"), `${place.name}: published hours were checked`);
+  });
+  const placeIds = steps.map((step) => step.placeId).filter(Boolean);
+  assert.equal(new Set(placeIds).size, placeIds.length, "duplicate stop");
+  // Places the October 14 review could not verify, or found closed, must not be scheduled.
+  assert.ok(!steps.some((step) => /Pompidou|Notre-Dame|Lachaise|Comptoir du Relais|Servan|Fallafel|Candelaria|Carette|Kozy|KB Coffee|Chez Janou|Cafe Charlot/.test(`${step.title} ${step.copy}`)));
+});
+
+test("Paris 7-day trip: five researched days, every hop timed, and the dinner goal on the bistro dinner", () => {
+  const anchors = [{ label: "One memorable dinner", key: "onememorabledinner", type: "food", source: "traveler" }];
+  const { days, schedule } = buildCityTrip("Paris", 7, anchors);
+  assert.equal(new Set(days.map((day) => day.title)).size, 7, "no repeated days");
+  assert.ok(days[5].item.timeline.every((step) => step.kind === "flexible"), "day 6 is an honest open day");
+  days.forEach((day) => day.item.timeline.forEach((step) => {
+    const travel = step.travelFromPrevious;
+    if (!travel) return;
+    // Every Paris hop is a stored journey, or the same building (Le Jules Verne in the Eiffel Tower).
+    assert.ok(travel.basis === "routed" || travel.basis === "same-site", `${step.title}: ${travel.basis}`);
+    if (travel.basis === "routed") assert.match(travel.source, /Transitous/);
+  }));
+  const dinnerDay = schedule.byDay.findIndex((list) => list.some((anchor) => anchor.key === "onememorabledinner"));
+  assert.equal(days[dinnerDay].title, "Canal Saint-Martin and a dinner in the 11th");
+});
+
+test("Paris hours: no stop lands on a closed day for any start date (Louvre Tuesdays, Orsay and Rodin Mondays, Paul Bert Sundays and Mondays)", () => {
+  for (let offset = 0; offset < 21; offset += 1) {
+    const start = isoPlus("2026-10-21", offset);
+    const { logic, days } = buildCityTrip("Paris", 7, [], start);
+    const closed = hoursConflicts(logic, days, start).filter(({ check }) => check.state === "closed");
+    assert.deepEqual([...closed.map(({ day, title }) => `${day} ${title}`)], [], `start ${start}`);
+    assert.equal(days[6].title, "Last morning in the Marais");
+  }
+});
+
+test("Paris Easygoing: the passage, the chapel and the Rodin museum become free time", () => {
+  const balanced = buildCityTrip("Paris", 7, []);
+  const easy = buildCityTrip("Paris", 7, [], null, "Easygoing");
+  const placeIds = (trip) => [...trip.days.flatMap((day) => day.item.timeline.map((step) => step.placeId).filter(Boolean))];
+  assert.deepEqual(placeIds(balanced).filter((id) => !placeIds(easy).includes(id)), ["plc_paris_galerie-vivienne", "plc_paris_sainte-chapelle", "plc_paris_musee-rodin"]);
+  easy.days.forEach((day) => day.item.timeline.forEach((step) => {
+    if (step.travelFromPrevious) assert.ok(["routed", "same-site"].includes(step.travelFromPrevious.basis), `${day.title}: ${step.title}`);
+  }));
+});
+
 test("Researched days are never padded with generic stops", () => {
-  ["Berlin", "Singapore", "Hong Kong"].forEach((city) => {
+  ["Berlin", "Singapore", "Hong Kong", "Paris"].forEach((city) => {
     const { days } = buildCityTrip(city, 7, []);
     const logic = loadLogic();
     const templates = logic.window.HB_TRIP_HELPERS.getConcreteTripTemplates(city, []);
@@ -449,8 +508,8 @@ for (const dayCount of [3, 5, 7]) {
   test(`${dayCount}-day trip: only the last day uses the closing template`, () => {
     const { days } = buildParisTrip(dayCount, []);
     assert.equal(days.length, dayCount);
-    assert.equal(days[dayCount - 1].title, "Canal morning + easy close");
-    assert.equal(days.filter((day) => day.title === "Canal morning + easy close").length, 1);
+    assert.equal(days[dayCount - 1].title, "Last morning in the Marais");
+    assert.equal(days.filter((day) => day.title === "Last morning in the Marais").length, 1);
   });
 
   test(`${dayCount}-day trip: each must-have appears only on days that schedule it`, () => {
@@ -490,20 +549,18 @@ test("only the final day talks about packing or the last day", () => {
 
 test("areas come from each day's stops, not its position", () => {
   const { days } = buildParisTrip(7, []);
-  assert.equal(days[0].area, "Le Marais");
-  assert.equal(days[1].area, "Saint-Germain");
-  assert.equal(days[2].area, "Eiffel / Left Bank");
-  assert.equal(days[3].areaConfirmed, false, "Palais-Royal + Septime is not in a known area");
-  assert.equal(days[3].area, "Paris");
-  assert.equal(days[6].areaConfirmed, false, "Canal Saint-Martin is not Eiffel / Left Bank");
-  assert.equal(days[4].area, "Le Marais", "The open day is labelled by the area it names");
+  // Researched days take their areas from their registry places, most-visited first.
+  assert.deepEqual([...days.slice(0, 5).map((day) => day.area)], ["Louvre + Bourse", "Saint-Germain + Luxembourg", "Invalides + Eiffel Tower", "Charonne + Canal Saint-Martin", "Le Marais + Montmartre"]);
+  assert.ok(days.every((day) => day.areaConfirmed));
+  assert.equal(days[5].area, "Saint-Germain", "The open day is labelled by the area it names");
+  assert.equal(days[6].area, "Le Marais");
 });
 
 test("trip-level dinner goal lands on the signature dinner, and the Eiffel Tower only on its day", () => {
   const { days, schedule } = buildParisTrip(7, parisMustHaves);
   const dinnerDay = schedule.byDay.findIndex((anchors) => anchors.some((anchor) => anchor.key === "onememorabledinner"));
   assert.equal(days[dinnerDay].templateSlot, 3);
-  assert.equal(schedule.byDay[dinnerDay].find((anchor) => anchor.key === "onememorabledinner").stepTitle, "Dinner at Septime");
+  assert.equal(schedule.byDay[dinnerDay].find((anchor) => anchor.key === "onememorabledinner").stepTitle, "Dinner at Bistrot Paul Bert");
   const eiffelDays = schedule.byDay.map((anchors, index) => (anchors.some((anchor) => anchor.key === "eiffeltower") ? index : -1)).filter((index) => index >= 0);
   // Spread vm-realm arrays into this realm before deep comparison.
   assert.deepEqual([...eiffelDays], [2]);

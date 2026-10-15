@@ -283,7 +283,7 @@ window.HB_DATA.destinationFacts = {
 
 window.HB_TRIP_HELPERS.getAreaSet = function(city) {
       const map = {
-        Paris: ["Le Marais", "Saint-Germain", "Eiffel / Left Bank"],
+        Paris: ["Saint-Germain", "Le Marais", "Louvre", "Invalides", "Eiffel Tower", "Canal Saint-Martin", "Charonne", "Montmartre", "Île de la Cité", "Bourse", "Sentier", "Luxembourg"],
         Berlin: ["Scheunenviertel", "Museum Island", "Bernauer Strasse", "Kreuzberg", "Friedrichshain", "Charlottenburg", "City West", "Schoeneberg", "Tempelhof"],
         Lisbon: ["Baixa", "Chiado", "Alfama"],
         Rome: ["Centro Storico", "Trastevere", "Monti"],
@@ -813,81 +813,132 @@ window.HB_TRIP_HELPERS.getConcreteTripTemplates = function(city, areas) {
       const map = {
         Paris: [
           {
-            title: "Le Marais opening day",
-            rationale: "The first day stays rooted in one area, so Paris starts early and feels real without becoming too demanding.",
-            highlight: "Place des Vosges + Chez Janou",
-            timeShape: "Easy morning + low-pressure evening",
-            weather: "Keep this first day local so the city feels inviting instead of rushed.",
-            itemTitle: "Place des Vosges stroll + Chez Janou dinner",
-            itemBody: "Start with a bakery stop, let Le Marais carry most of the day, and end with a first dinner that feels warm and unmistakably Parisian.",
-            fit: "It gives the trip an actual day shape right away, without making day one feel overworked.",
+            title: "The Louvre and the covered passages",
+            rationale: "A Right Bank day: the Louvre in the morning, a covered passage in the afternoon, and a set dinner nearby.",
+            highlight: "Louvre Museum",
+            timeShape: "Museum morning, passage afternoon, booked dinner",
+            weather: "The Louvre is closed on Tuesdays and needs a timed reservation from 17 October to 1 November 2026. Frenchie serves dinner only; book ahead.",
+            itemTitle: "Louvre Museum + Galerie Vivienne + Frenchie",
+            itemBody: "Start at the Louvre when it opens, keep lunch flexible, walk to Galerie Vivienne in the afternoon, and finish with dinner at Frenchie on rue du Nil.",
+            fit: "Everything after the museum is on foot: about 12 minutes to the passage and 10 minutes on to dinner.",
             timeline: [
-              { time: "9:00 AM", title: "Pastry at Carette Place des Vosges", copy: "Begin with an easy Paris morning moment so the trip feels underway from the start." },
-              { time: "10:30 AM", title: "Walk Place des Vosges + Rue des Rosiers", copy: "Let the neighborhood itself do the work instead of turning the first day into a landmark sprint." },
-              { time: "1:00 PM", title: "Lunch at Cafe Charlot", copy: "Keep lunch inside Le Marais so the day stays relaxed and local." },
-              { time: "6:30 PM", title: "Dinner at Chez Janou", copy: "A neighborhood first-night dinner keeps the tone warm, local, and low-pressure." }
-            ]
+              { time: "9:00 AM", title: "Louvre Museum", copy: "Enter at the Pyramid. Choose the wings you want before you go; it is a large museum.", placeId: "plc_paris_louvre-museum" },
+              { time: "1:00 PM", title: "Lunch near the Louvre (your choice)", copy: "Nothing is booked; eat near the museum before the afternoon walk.", kind: "flexible" },
+              { time: "3:30 PM", title: "Galerie Vivienne", copy: "A covered passage that is free to walk through; its shops keep their own hours.", placeId: "plc_paris_galerie-vivienne" },
+              { time: "7:00 PM", title: "Dinner at Frenchie", copy: "One set dinner menu at 5 rue du Nil. Book ahead.", placeId: "plc_paris_frenchie-rue-du-nil" }
+            ],
+            // Easygoing pace: the afternoon passage becomes free time before dinner.
+            easygoing: {
+              drop: "plc_paris_galerie-vivienne",
+              replacement: { time: "3:00 PM", title: "Free afternoon", copy: "Easygoing pace: rest after the museum before dinner.", kind: "flexible" },
+              rationale: "A Right Bank day: the Louvre in the morning, a free afternoon, and a set dinner nearby.",
+              timeShape: "Museum morning, free afternoon, booked dinner",
+              itemTitle: "Louvre Museum + Frenchie",
+              itemBody: "Start at the Louvre when it opens, keep lunch and the afternoon free, and finish with dinner at Frenchie on rue du Nil.",
+              fit: "Dinner is about 20 minutes on foot from the museum."
+            }
           },
           {
-            title: "Saint-Germain + Musee d'Orsay day",
-            rationale: "This pairs one major museum with a Left Bank afternoon that still leaves room to linger.",
-            highlight: "Musee d'Orsay",
-            timeShape: "Planned, with room to wander",
-            weather: "Leave room after the museum so Saint-Germain can breathe a little.",
-            itemTitle: "Musee d'Orsay + Left Bank afternoon",
-            itemBody: "Build the day around Musee d'Orsay, then give the Left Bank time for coffee, bookstores, and a slower afternoon.",
-            fit: "It covers one essential museum day without making Paris feel like a string of ticketed stops.",
+            title: "Saint-Germain, Orsay and Sainte-Chapelle",
+            rationale: "A Left Bank day: a bakery breakfast, the Luxembourg garden, Musée d'Orsay, and Sainte-Chapelle's stained glass in the afternoon.",
+            highlight: "Musée d'Orsay",
+            timeShape: "Garden morning, museum, chapel afternoon",
+            weather: "Musée d'Orsay is closed on Mondays and Poilâne on Sundays. Sainte-Chapelle keeps winter hours (9 AM-5 PM) from October to March.",
+            itemTitle: "Poilâne + Jardin du Luxembourg + Musée d'Orsay + Sainte-Chapelle",
+            itemBody: "Start with bread and pastries at Poilâne's original shop, walk in the Jardin du Luxembourg, spend the late morning at Musée d'Orsay, and see Sainte-Chapelle in the afternoon.",
+            fit: "A short walk to the garden, then about 20 minutes by RER to the museum and 12 minutes to the chapel.",
             timeline: [
-              { time: "10:00 AM", title: "Coffee at Cafe de Flore", copy: "Start in Saint-Germain so the Left Bank sets the tone before the museum does." },
-              { time: "12:30 PM", title: "Musee d'Orsay", copy: "Make one museum the centerpiece instead of trying to turn the day into an art marathon." },
-              { time: "2:45 PM", title: "Lunch at Les Antiquaires", copy: "A proper lunch helps the museum day stay civilized instead of feeling like a rush between tickets." },
-              { time: "4:30 PM", title: "Luxembourg Gardens walk", copy: "Use the late afternoon to let the Left Bank breathe again after the museum." }
-            ]
+              { time: "8:30 AM", title: "Breakfast at Poilâne", copy: "The original shop at 8 rue du Cherche-Midi.", placeId: "plc_paris_poilane-rue-du-cherche-midi" },
+              { time: "9:15 AM", title: "Jardin du Luxembourg", copy: "Free to enter; gate times change twice a month with daylight.", placeId: "plc_paris_jardin-du-luxembourg" },
+              { time: "11:00 AM", title: "Musée d'Orsay", copy: "Last admission is at 5 PM; it stays open later on Thursdays.", placeId: "plc_paris_musee-dorsay" },
+              { time: "1:30 PM", title: "Lunch in Saint-Germain (your choice)", copy: "Nothing is booked.", kind: "flexible" },
+              { time: "3:30 PM", title: "Sainte-Chapelle", copy: "At 10 boulevard du Palais. Last entry is 30 minutes before closing.", placeId: "plc_paris_sainte-chapelle" }
+            ],
+            // Easygoing pace: the afternoon chapel becomes free time.
+            easygoing: {
+              drop: "plc_paris_sainte-chapelle",
+              replacement: { time: "3:30 PM", title: "Free afternoon", copy: "Easygoing pace: nothing is planned after lunch.", kind: "flexible" },
+              rationale: "A Left Bank morning: a bakery breakfast, the Luxembourg garden and Musée d'Orsay, then a free afternoon.",
+              timeShape: "Garden morning, museum, free afternoon",
+              weather: "Musée d'Orsay is closed on Mondays and Poilâne on Sundays.",
+              itemTitle: "Poilâne + Jardin du Luxembourg + Musée d'Orsay",
+              itemBody: "Start with bread and pastries at Poilâne's original shop, walk in the Jardin du Luxembourg, spend the late morning at Musée d'Orsay, and keep the afternoon free.",
+              fit: "A short walk to the garden, then about 20 minutes by RER to the museum."
+            }
           },
           {
-            title: "Eiffel Tower + Left Bank views",
-            rationale: "The Eiffel Tower still gets its spotlight, but the rest of the day is shaped so it does not feel rushed.",
+            title: "Rodin and the Eiffel Tower",
+            rationale: "A western day: coffee, the Rodin museum, the Eiffel Tower in the afternoon, and dinner on its second floor.",
             highlight: "Eiffel Tower",
-            timeShape: "Balanced with time for meals",
-            weather: "Go earlier for a smoother experience around the tower.",
-            itemTitle: "Eiffel Tower morning + Seine-side evening",
-            itemBody: "Use the morning for the Eiffel Tower area, keep lunch close by, and end with one strong Paris view instead of adding too much more.",
-            fit: "You get the headline Paris moment, and the day still feels pleasant instead of overpacked.",
+            timeShape: "Museum morning, tower afternoon, booked dinner",
+            weather: "Musée Rodin is closed on Mondays. The Eiffel Tower publishes its hours only a few days ahead and can restrict access to the top in bad weather. Le Jules Verne requires a jacket for men; book ahead.",
+            itemTitle: "Musée Rodin + Eiffel Tower + Le Jules Verne",
+            itemBody: "Have coffee at Coutume on rue de Babylone, visit Musée Rodin, go up the Eiffel Tower in the afternoon, and stay for dinner at Le Jules Verne.",
+            fit: "A short walk to the museum, then about 23 minutes by Metro and RER to the tower, where dinner is in the same building.",
             timeline: [
-              { time: "9:00 AM", title: "Trocadero + Eiffel Tower", copy: "Go early so the big Paris moment feels smoother and less swallowed by crowds." },
-              { time: "12:30 PM", title: "Lunch at Cafe Constant", copy: "Stay nearby for a proper lunch instead of treating the tower as a hit-and-run stop." },
-              { time: "3:30 PM", title: "Rue Cler wander", copy: "Let the afternoon stay close to the tower area so the day keeps its shape." },
-              { time: "6:00 PM", title: "Pont Alexandre III view", copy: "Finish with one of the city's strongest river views instead of forcing in another attraction." }
+              { time: "9:00 AM", title: "Coffee at Coutume Café", copy: "The Babylone café at 47 rue de Babylone.", placeId: "plc_paris_coutume-cafe-babylone" },
+              { time: "10:00 AM", title: "Musée Rodin", copy: "77 rue de Varenne. Large bags are not accepted.", placeId: "plc_paris_musee-rodin" },
+              { time: "12:30 PM", title: "Lunch near the Invalides (your choice)", copy: "Nothing is booked.", kind: "flexible" },
+              { time: "2:30 PM", title: "Eiffel Tower", copy: "Buy tickets from the operator's official site. Large luggage is not allowed.", placeId: "plc_paris_eiffel-tower" },
+              { time: "7:30 PM", title: "Dinner at Le Jules Verne", copy: "On the Eiffel Tower's second floor, reached by its private lift. Book ahead; jacket required for men.", placeId: "plc_paris_le-jules-verne" }
+            ],
+            // Easygoing pace: the morning museum becomes free time.
+            easygoing: {
+              drop: "plc_paris_musee-rodin",
+              replacement: { time: "10:00 AM", title: "Free morning", copy: "Easygoing pace: a slow start before the tower.", kind: "flexible" },
+              rationale: "A western day: coffee, a slow morning, the Eiffel Tower in the afternoon, and dinner on its second floor.",
+              timeShape: "Slow morning, tower afternoon, booked dinner",
+              weather: "The Eiffel Tower publishes its hours only a few days ahead and can restrict access to the top in bad weather. Le Jules Verne requires a jacket for men; book ahead.",
+              itemTitle: "Eiffel Tower + Le Jules Verne",
+              itemBody: "Have coffee at Coutume on rue de Babylone, keep the morning free, go up the Eiffel Tower in the afternoon, and stay for dinner at Le Jules Verne.",
+              fit: "About 17 minutes by bus from the café to the tower, where dinner is in the same building."
+            }
+          },
+          {
+            title: "Canal Saint-Martin and a dinner in the 11th",
+            rationale: "The food-led day: a café breakfast near the canal, a walk-in lunch, a free afternoon and the trip's bistro dinner.",
+            highlight: "Bistrot Paul Bert",
+            timeShape: "Café morning, walk-in lunch, booked dinner",
+            weather: "Bistrot Paul Bert is closed on Sundays and Mondays and takes bookings by phone. Clamato takes no reservations.",
+            itemTitle: "Holybelly + Clamato + Bistrot Paul Bert",
+            itemBody: "Have breakfast at Holybelly near the Canal Saint-Martin, take the Metro to Clamato for lunch, keep the afternoon free, and finish with dinner at Bistrot Paul Bert.",
+            fit: "About 22 minutes by Metro to lunch; dinner is a 6-minute walk from there.",
+            timeline: [
+              { time: "9:30 AM", title: "Breakfast at Holybelly", copy: "5 rue Lucien Sampaix. The last food order is at 4 PM.", placeId: "plc_paris_holybelly" },
+              { time: "12:30 PM", title: "Lunch at Clamato", copy: "80 rue de Charonne. No reservations; expect a queue.", placeId: "plc_paris_clamato" },
+              { time: "2:30 PM", title: "Free afternoon", copy: "Nothing is scheduled. Rest before dinner.", kind: "flexible" },
+              { time: "7:30 PM", title: "Dinner at Bistrot Paul Bert", copy: "18 rue Paul Bert. Book by phone.", placeId: "plc_paris_bistrot-paul-bert" }
             ]
           },
           {
-            title: "Palais-Royal afternoon + signature dinner",
-            rationale: "This is the meal-led day, so the afternoon stays lighter and the evening has room to feel special.",
-            highlight: "Septime dinner",
-            timeShape: "Open afternoon + special evening",
-            weather: "A lighter afternoon makes the dinner feel more worth it.",
-            itemTitle: "Palais-Royal + Septime",
-            itemBody: "Keep the first half of the day elegant and easy, then build toward a signature dinner that feels like the trip's standout meal.",
-            fit: "It leaves the trip with one standout food memory without making the whole day revolve around a single reservation.",
+            title: "Montmartre and the Marais",
+            rationale: "Sacré-Cœur in the morning, lunch in the Marais, a free afternoon and cocktails in the evening.",
+            highlight: "Sacré-Cœur Basilica",
+            timeShape: "Hilltop morning, Marais lunch, evening drinks",
+            weather: "Sacré-Cœur is an active church; visits pause during services.",
+            itemTitle: "Sacré-Cœur + Breizh Café + Little Red Door",
+            itemBody: "Visit Sacré-Cœur in Montmartre, take the Metro to the Marais for lunch at Breizh Café, keep the afternoon free, and end with a drink at Little Red Door.",
+            fit: "About 36 minutes by Metro to lunch; the bar is a 7-minute walk from there.",
             timeline: [
-              { time: "11:00 AM", title: "Palais-Royal walk", copy: "Keep the morning elegant and unhurried so the day builds naturally toward the evening." },
-              { time: "3:00 PM", title: "Canal Saint-Martin break", copy: "Use the afternoon to slow down so the signature dinner still feels like an event." },
-              { time: "7:30 PM", title: "Dinner at Septime", copy: "This is the meal designed to become one of the trip's clearest memories." }
+              { time: "10:00 AM", title: "Sacré-Cœur Basilica", copy: "Free to enter. The dome has separate hours and a fee.", placeId: "plc_paris_sacre-coeur-basilica" },
+              { time: "1:00 PM", title: "Lunch at Breizh Café (Marais)", copy: "The Marais branch at 109 rue Vieille du Temple.", placeId: "plc_paris_breizh-cafe-marais" },
+              { time: "3:00 PM", title: "Free afternoon in the Marais", copy: "Nothing is scheduled.", kind: "flexible" },
+              { time: "7:00 PM", title: "Drinks at Little Red Door", copy: "Cocktail bar at 60 rue Charlot. Walk-ins welcome.", placeId: "plc_paris_little-red-door" }
             ]
           },
           {
-            title: "Canal morning + easy close",
-            rationale: "The last full stretch stays lighter so the trip can end on a good note instead of feeling squeezed.",
-            highlight: "Du Pain et des Idees",
+            title: "Last morning in the Marais",
+            rationale: "The final day keeps one named stop and leaves the rest for packing and the journey home.",
+            highlight: "Terres de Café (Rambuteau)",
             timeShape: "Light, with room to pack",
-            weather: "Keep this last stretch open enough that tomorrow does not feel rushed.",
-            itemTitle: "Bakery stop + Canal Saint-Martin close",
-            itemBody: "Use the last day for one great bakery, one easy lunch, and a final neighborhood walk before packing.",
-            fit: "It lets the trip end with real Paris atmosphere, without cramming too much into the last day.",
+            weather: "Leave enough time for checkout and the journey to the airport or station.",
+            itemTitle: "Terres de Café + a last walk",
+            itemBody: "Coffee at Terres de Café on rue Rambuteau, a last unplanned walk, then packing and departure.",
+            fit: "It ends the trip with a specific place without squeezing in another big visit before you leave.",
             timeline: [
-              { time: "10:00 AM", title: "Pastry at Du Pain et des Idees", copy: "Start the last day with something memorable enough that it still feels like part of the trip, not only the wind-down." },
-              { time: "1:00 PM", title: "Lunch at Le Verre Vole", copy: "Keep lunch in the same pocket of the city so the closing stretch stays easy." },
-              { time: "4:00 PM", title: "Canal Saint-Martin walk", copy: "Use one last neighborhood walk to close the trip before heading back to pack." }
+              { time: "9:30 AM", title: "Coffee at Terres de Café", copy: "The Rambuteau shop at 14 rue Rambuteau.", placeId: "plc_paris_terres-de-cafe-rambuteau" },
+              { time: "10:30 AM", title: "Last walk in the Marais", copy: "Unplanned time on foot before you leave.", kind: "flexible" },
+              { time: "12:00 PM", title: "Pack and travel", copy: "Keep the rest of the day for checkout and the journey.", kind: "flexible" }
             ]
           }
         ],
