@@ -437,8 +437,66 @@ test("Paris Easygoing: the passage, the chapel and the Rodin museum become free 
   }));
 });
 
+// ---- London pilot ----
+
+test("London: every scheduled stop is a reviewed registry place or free time, once, inside London", () => {
+  const logic = loadLogic();
+  const registry = logic.window.HB_PLACES.places;
+  const templates = logic.window.HB_TRIP_HELPERS.getConcreteTripTemplates("London", logic.window.HB_TRIP_HELPERS.getAreaSet("London"));
+  assert.equal(templates.length, 6, "five researched days plus a closing morning");
+  const steps = templates.flatMap((day) => day.timeline);
+  steps.forEach((step) => {
+    if (step.kind === "flexible") return assert.ok(!step.placeId, `${step.title}: free time must not name a venue`);
+    const place = registry[step.placeId];
+    assert.ok(place, `${step.title}: not in the places registry`);
+    assert.equal(place.city, "london");
+    assert.equal(place.timeZone, "Europe/London");
+    assert.ok(place.coordinates.lat > 51.4 && place.coordinates.lat < 51.6 && place.coordinates.lng > -0.3 && place.coordinates.lng < 0.05, `${place.name} outside London`);
+    assert.ok(place.verification.checked.includes("published-weekly-hours"), `${place.name}: published hours were checked`);
+  });
+  const placeIds = steps.map((step) => step.placeId).filter(Boolean);
+  assert.equal(new Set(placeIds).size, placeIds.length, "duplicate stop");
+  // Places the October 14 review could not verify, or found closed, must not be scheduled.
+  assert.ok(!steps.some((step) => /British Museum|Hamleys|Tay[eē]r/.test(`${step.title} ${step.copy}`)));
+});
+
+test("London 7-day trip: five researched days, every hop timed, and the dinner goal on Dishoom", () => {
+  const anchors = [{ label: "One memorable dinner", key: "onememorabledinner", type: "food", source: "traveler" }];
+  const { days, schedule } = buildCityTrip("London", 7, anchors);
+  assert.equal(new Set(days.map((day) => day.title)).size, 7, "no repeated days");
+  assert.ok(days[5].item.timeline.every((step) => step.kind === "flexible"), "day 6 is an honest open day");
+  days.forEach((day) => day.item.timeline.forEach((step) => {
+    const travel = step.travelFromPrevious;
+    if (!travel) return;
+    assert.equal(travel.basis, "routed", `${step.title}: ${travel.basis}`);
+    assert.match(travel.source, /Transitous/);
+  }));
+  const dinnerDay = schedule.byDay.findIndex((list) => list.some((anchor) => anchor.key === "onememorabledinner"));
+  assert.equal(days[dinnerDay].title, "Borough Market, Bankside and a Covent Garden dinner");
+});
+
+test("London hours: no stop lands on a closed day for any start date (Sunday churches, Borough Market Mondays, Core, Sky Garden closures)", () => {
+  for (let offset = 0; offset < 28; offset += 1) {
+    const start = isoPlus("2026-10-21", offset);
+    const { logic, days } = buildCityTrip("London", 7, [], start);
+    const closed = hoursConflicts(logic, days, start).filter(({ check }) => check.state === "closed");
+    assert.deepEqual([...closed.map(({ day, title }) => `${day} ${title}`)], [], `start ${start}`);
+    assert.equal(days[6].title, "Last morning in Soho");
+  }
+});
+
+test("London Easygoing: Leadenhall, Covent Garden and the V&A become free time, with every hop still timed", () => {
+  const balanced = buildCityTrip("London", 7, []);
+  const easy = buildCityTrip("London", 7, [], null, "Easygoing");
+  const placeIds = (trip) => [...trip.days.flatMap((day) => day.item.timeline.map((step) => step.placeId).filter(Boolean))];
+  assert.deepEqual(placeIds(balanced).filter((id) => !placeIds(easy).includes(id)), ["plc_london_leadenhall-market", "plc_london_covent-garden-market-building-and-piazza", "plc_london_vanda-south-kensington"]);
+  easy.days.forEach((day) => day.item.timeline.forEach((step) => {
+    if (step.travelFromPrevious) assert.equal(step.travelFromPrevious.basis, "routed", `${day.title}: ${step.title}`);
+  }));
+});
+
 test("Researched days are never padded with generic stops", () => {
-  ["Berlin", "Singapore", "Hong Kong", "Paris"].forEach((city) => {
+  ["Berlin", "Singapore", "Hong Kong", "Paris", "London"].forEach((city) => {
     const { days } = buildCityTrip(city, 7, []);
     const logic = loadLogic();
     const templates = logic.window.HB_TRIP_HELPERS.getConcreteTripTemplates(city, []);

@@ -75,14 +75,38 @@ const PLACES = [
   ["paris", "Sacré-Cœur Basilica", "landmark", "35 rue du Chevalier de La Barre, 75018 Paris", "Montmartre", 48.88681, 2.34302, "way/23762981", "named feature: the basilica"],
   ["paris", "Breizh Café (Marais)", "meal", "109 rue Vieille du Temple, 75003 Paris", "Le Marais", 48.86063, 2.36182, "node/2383363288", "named feature on rue Vieille du Temple (not another branch)"],
   ["paris", "Little Red Door", "meal", "60 rue Charlot, 75003 Paris", "Le Marais", 48.86366, 2.36359, "node/3265513124", "named feature at 60 rue Charlot"],
-  ["paris", "Terres de Café (Rambuteau)", "cafe", "14 rue Rambuteau, 75003 Paris", "Le Marais", 48.86061, 2.35554, "node/5908178879", "named feature at 14 rue Rambuteau (not another branch)"]
+  ["paris", "Terres de Café (Rambuteau)", "cafe", "14 rue Rambuteau, 75003 Paris", "Le Marais", 48.86061, 2.35554, "node/5908178879", "named feature at 14 rue Rambuteau (not another branch)"],
+  // London: OSM lookup on 2026-10-14.
+  ["london", "Tower of London", "landmark", "Tower of London, London EC3N 4AB", "Tower Hill", 51.50822, -0.07619, "way/370870741", "named feature: the Tower of London site"],
+  ["london", "Tower Bridge", "landmark", "Tower Bridge, London (entrance on the north-west side of the bridge)", "Tower Hill", 51.50552, -0.07537, "way/378541210", "named feature: the bridge"],
+  ["london", "Leadenhall Market", "scenic", "Gracechurch Street, London EC3V 1LT", "City", 51.51273, -0.08340, "way/143113935", "named feature: the covered market"],
+  ["london", "Sky Garden", "scenic", "1 Sky Garden Walk, London EC3M 8AF", "City", 51.51110, -0.08360, "node/3272712570", "named viewpoint feature at 20 Fenchurch Street"],
+  ["london", "Westminster Abbey", "landmark", "Westminster Abbey, Dean's Yard, London SW1P 3PA", "Westminster", 51.49940, -0.12739, "way/364313092", "named feature: the abbey church"],
+  ["london", "National Gallery", "landmark", "Trafalgar Square, London WC2N 5DN", "Trafalgar Square", 51.50872, -0.12859, "node/6173732685", "the Gallery's shop feature, inside the building on Trafalgar Square"],
+  ["london", "Covent Garden (Market Building and Piazza)", "scenic", "Covent Garden Piazza, London (no postal address published)", "Covent Garden", 51.51198, -0.12274, "way/633369346", "named feature: Covent Garden Market building"],
+  ["london", "Rules", "meal", "34-35 Maiden Lane, London WC2E 7LB", "Covent Garden", 51.51083, -0.12319, "way/558928361", "named feature at 34-35 Maiden Lane"],
+  ["london", "Granger & Co. (Notting Hill)", "cafe", "175 Westbourne Grove, London W11 2SB", "Notting Hill", 51.51462, -0.19778, "node/7138194615", "named feature at 175 Westbourne Grove (not another branch)"],
+  ["london", "Natural History Museum", "landmark", "Cromwell Road, London SW7 5BD", "South Kensington", 51.49651, -0.17600, "way/24436446", "named feature: the museum building"],
+  ["london", "V&A South Kensington", "landmark", "Cromwell Road, London SW7 2RL", "South Kensington", 51.49688, -0.17164, "relation/29795", "named feature: the Victoria and Albert Museum"],
+  ["london", "Core by Clare Smyth", "meal", "92 Kensington Park Road, London W11 2PN", "Notting Hill", 51.51272, -0.20311, "node/7096147785", "named feature at 92 Kensington Park Road"],
+  ["london", "Monmouth Coffee (Borough)", "cafe", "2 Park Street, London SE1 9AB", "Borough", 51.50550, -0.09143, "node/14181043726", "named feature at 2 Park Street (not another branch)"],
+  ["london", "Borough Market", "scenic", "8 Southwark Street, London SE1 1TL", "Borough", 51.50553, -0.09044, "way/24282400", "named feature: the market"],
+  ["london", "Padella (Borough Market)", "meal", "6 Southwark Street, London SE1 1TQ", "Borough", 51.50513, -0.08991, "node/14181043755", "named feature at 6 Southwark Street (not another branch)"],
+  ["london", "Tate Modern", "landmark", "Bankside, London SE1 9TG", "Bankside", 51.50743, -0.09934, "way/24642569", "named feature: the gallery building"],
+  ["london", "Dishoom (Covent Garden)", "meal", "12 Upper St Martin's Lane, London WC2H 9FB", "Covent Garden", 51.51243, -0.12686, "way/207104925", "named feature at 12 Upper St Martin's Lane (not another branch)"],
+  ["london", "Prufrock Coffee (Leather Lane)", "cafe", "23-25 Leather Lane, London EC1N 7TE", "Holborn", 51.51995, -0.10952, "node/4185611903", "named feature at 23-25 Leather Lane"],
+  ["london", "St Paul's Cathedral", "landmark", "St Paul's Churchyard, London EC4M 8AD", "City", 51.51379, -0.09845, "way/369161987", "named feature: the cathedral"],
+  ["london", "Flat Iron (Covent Garden)", "meal", "17-18 Henrietta Street, London WC2E 8QH", "Covent Garden", 51.51081, -0.12399, "node/4611099089", "named feature at 17-18 Henrietta Street (not another branch)"],
+  ["london", "Swift Soho", "meal", "12 Old Compton Street, London W1D 4TQ", "Soho", 51.51374, -0.12999, "node/692190788", "named feature at 12 Old Compton Street (not another branch)"],
+  ["london", "The Breakfast Club (Soho)", "cafe", "33 D'Arblay Street, London W1F 8EU", "Soho", 51.51471, -0.13533, "way/477968033", "named feature at 33 D'Arblay Street (the original branch)"]
 ];
 
 const CITY_META = {
   berlin: { ledgerKey: "Berlin, Germany", timeZone: "Europe/Berlin", osmRetrievedOn: "2026-10-10" },
   singapore: { ledgerKey: "Singapore, Singapore", timeZone: "Asia/Singapore", osmRetrievedOn: "2026-10-12" },
   hongkong: { ledgerKey: "Hong Kong, China", timeZone: "Asia/Hong_Kong", osmRetrievedOn: "2026-10-14" },
-  paris: { ledgerKey: "Paris, France", timeZone: "Europe/Paris", osmRetrievedOn: "2026-10-14" }
+  paris: { ledgerKey: "Paris, France", timeZone: "Europe/Paris", osmRetrievedOn: "2026-10-14" },
+  london: { ledgerKey: "London, United Kingdom", timeZone: "Europe/London", osmRetrievedOn: "2026-10-14" }
 };
 
 // "&" reads as "und" in German place names (Nobelhart & Schmutzig), "and" elsewhere. Apostrophes

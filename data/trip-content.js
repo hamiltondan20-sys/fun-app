@@ -331,7 +331,7 @@ window.HB_TRIP_HELPERS.getAreaSet = function(city) {
         Barcelona: ["Gothic Quarter", "Eixample", "Barceloneta"],
         Madrid: ["Sol", "Malasana", "Retiro"],
         Athens: ["Plaka", "Koukaki", "Monastiraki"],
-        London: ["Covent Garden", "Westminster", "South Bank", "Notting Hill", "Kensington"],
+        London: ["Covent Garden", "Soho", "Westminster", "Trafalgar Square", "Tower Hill", "City", "South Kensington", "Notting Hill", "Borough", "Bankside", "Holborn"],
         Marrakech: ["Medina", "Gueliz", "Hivernage"],
         Cairo: ["Zamalek", "Downtown", "Giza"],
         Casablanca: ["Corniche", "Habous Quarter", "Hassan II Mosque side"],
@@ -1207,83 +1207,132 @@ window.HB_TRIP_HELPERS.getConcreteTripTemplates = function(city, areas) {
         ],
         London: [
           {
-            title: "Covent Garden opening day",
-            rationale: "The first day stays central and walkable so London starts early without immediately feeling transit-heavy.",
-            highlight: "Covent Garden + Dishoom",
-            timeShape: "Simple morning + polished evening",
-            weather: "Keep day one local so London does not start with too much transit.",
-            itemTitle: "Covent Garden walk + Dishoom dinner",
-            itemBody: "Begin with coffee and the piazza, let the West End streets open the day, and keep dinner nearby so the whole plan feels clean.",
-            fit: "It gives the trip an actual London rhythm from the start without overcomplicating day one.",
+            title: "The Tower and the City",
+            rationale: "The Tower of London in the morning, Tower Bridge next door, lunch in Leadenhall Market's covered passages and the Sky Garden view in the afternoon.",
+            highlight: "Tower of London",
+            timeShape: "Castle morning, bridge, market lunch, rooftop garden",
+            weather: "The Tower of London publishes its opening times one day at a time. Sky Garden needs a free timed ticket, released each Monday three weeks ahead.",
+            itemTitle: "Tower of London + Tower Bridge + Leadenhall Market + Sky Garden",
+            itemBody: "Start at the Tower of London, walk to Tower Bridge, have lunch around Leadenhall Market, and end at the free Sky Garden.",
+            fit: "All on foot: about 19 minutes to the bridge, 32 to the market, and 4 more to Sky Garden.",
             timeline: [
-              { time: "9:00 AM", title: "Coffee at Monmouth", copy: "Start with a classic central coffee stop so the city feels approachable right away." },
-              { time: "10:30 AM", title: "Covent Garden + Seven Dials", copy: "Use the morning for a walkable first pass through the West End." },
-              { time: "1:00 PM", title: "Lunch at Flat Iron Covent Garden", copy: "Keep lunch nearby so the first day stays grounded in one easy zone." },
-              { time: "7:00 PM", title: "Dinner at Dishoom Covent Garden", copy: "A reliable first-night dinner keeps the evening smooth and low-stress." }
+              { time: "9:00 AM", title: "Tower of London", copy: "Allow at least three hours. A Yeoman Warder tour is included in the ticket.", placeId: "plc_london_tower-of-london" },
+              { time: "12:30 PM", title: "Tower Bridge", copy: "The bridge exhibition opens daily; last entry is at 5 PM.", placeId: "plc_london_tower-bridge" },
+              { time: "2:00 PM", title: "Lunch at Leadenhall Market", copy: "Eat in the covered market's passages; its restaurants keep their own hours.", placeId: "plc_london_leadenhall-market" },
+              { time: "3:30 PM", title: "Sky Garden", copy: "Free with a timed ticket. Arriving more than 15 minutes late may mean no entry.", placeId: "plc_london_sky-garden" }
+            ],
+            // Easygoing pace: the market lunch becomes free time before Sky Garden.
+            easygoing: {
+              drop: "plc_london_leadenhall-market",
+              replacement: { time: "2:00 PM", title: "Free afternoon", copy: "Easygoing pace: eat and rest wherever suits you before your Sky Garden slot.", kind: "flexible" },
+              rationale: "The Tower of London in the morning, Tower Bridge next door, a free early afternoon and the Sky Garden view.",
+              timeShape: "Castle morning, bridge, free time, rooftop garden",
+              itemTitle: "Tower of London + Tower Bridge + Sky Garden",
+              itemBody: "Start at the Tower of London, walk to Tower Bridge, keep the early afternoon free, and end at the free Sky Garden.",
+              fit: "On foot: about 19 minutes to the bridge and 28 to Sky Garden."
+            }
+          },
+          {
+            title: "Westminster and Trafalgar Square",
+            rationale: "Westminster Abbey in the morning, the National Gallery after a walk, Covent Garden in the afternoon and dinner on Maiden Lane.",
+            highlight: "Westminster Abbey",
+            timeShape: "Abbey morning, gallery, piazza, booked dinner",
+            weather: "Westminster Abbey has no sightseeing on Sundays. Several National Gallery rooms are closed for building work. Book Rules ahead.",
+            itemTitle: "Westminster Abbey + National Gallery + Covent Garden + Rules",
+            itemBody: "Visit Westminster Abbey, walk to the National Gallery on Trafalgar Square, spend the afternoon around Covent Garden's Piazza, and have dinner at Rules.",
+            fit: "All on foot: about 17 minutes to the Gallery, 10 to Covent Garden and 3 to dinner.",
+            timeline: [
+              { time: "9:30 AM", title: "Westminster Abbey", copy: "A working church; last admission is at 3:30 PM on weekdays.", placeId: "plc_london_westminster-abbey" },
+              { time: "12:00 PM", title: "National Gallery", copy: "Free to enter. Check the floorplan if you want a particular painting.", placeId: "plc_london_national-gallery" },
+              { time: "2:00 PM", title: "Lunch near Trafalgar Square (your choice)", copy: "Nothing is booked.", kind: "flexible" },
+              { time: "3:30 PM", title: "Covent Garden", copy: "The Piazza and Market Building are always open; shops keep their own hours.", placeId: "plc_london_covent-garden-market-building-and-piazza" },
+              { time: "6:30 PM", title: "Dinner at Rules", copy: "34-35 Maiden Lane. No shorts or sportswear; children under 10 are not admitted after 7 PM.", placeId: "plc_london_rules" }
+            ],
+            // Easygoing pace: the Covent Garden afternoon becomes free time before dinner.
+            easygoing: {
+              drop: "plc_london_covent-garden-market-building-and-piazza",
+              replacement: { time: "3:30 PM", title: "Free afternoon", copy: "Easygoing pace: rest before dinner.", kind: "flexible" },
+              rationale: "Westminster Abbey in the morning, the National Gallery after a walk, a free afternoon and dinner on Maiden Lane.",
+              timeShape: "Abbey morning, gallery, free afternoon, booked dinner",
+              itemTitle: "Westminster Abbey + National Gallery + Rules",
+              itemBody: "Visit Westminster Abbey, walk to the National Gallery on Trafalgar Square, keep the afternoon free, and have dinner at Rules.",
+              fit: "On foot: about 17 minutes to the Gallery and 8 to dinner."
+            }
+          },
+          {
+            title: "South Kensington museums and a Notting Hill dinner",
+            rationale: "Breakfast in Notting Hill, the Natural History Museum and the V&A side by side, and a booked dinner back in Notting Hill.",
+            highlight: "Natural History Museum",
+            timeShape: "Breakfast, two museums, booked dinner",
+            weather: "Both museums are free; a free ticket guarantees entry at the Natural History Museum. Core serves dinner Tuesday to Saturday only; book ahead.",
+            itemTitle: "Granger & Co. + Natural History Museum + V&A + Core by Clare Smyth",
+            itemBody: "Have breakfast at Granger & Co. on Westbourne Grove, take the bus to the Natural History Museum, walk to the V&A in the afternoon, and take the Tube to dinner at Core.",
+            fit: "About 33 minutes by bus to the museums, a 16-minute walk between them, and 28 minutes by Circle line to dinner.",
+            timeline: [
+              { time: "8:30 AM", title: "Breakfast at Granger & Co.", copy: "175 Westbourne Grove.", placeId: "plc_london_granger-and-co-notting-hill" },
+              { time: "10:00 AM", title: "Natural History Museum", copy: "Free entry; last entry is at 5:30 PM.", placeId: "plc_london_natural-history-museum" },
+              { time: "12:30 PM", title: "Lunch in South Kensington (your choice)", copy: "Nothing is booked.", kind: "flexible" },
+              { time: "2:00 PM", title: "V&A South Kensington", copy: "Free to enter; some exhibitions are ticketed.", placeId: "plc_london_vanda-south-kensington" },
+              { time: "7:00 PM", title: "Dinner at Core by Clare Smyth", copy: "92 Kensington Park Road. Book ahead.", placeId: "plc_london_core-by-clare-smyth" }
+            ],
+            // Easygoing pace: the second museum becomes free time.
+            easygoing: {
+              drop: "plc_london_vanda-south-kensington",
+              replacement: { time: "2:00 PM", title: "Free afternoon", copy: "Easygoing pace: one museum is enough; rest before dinner.", kind: "flexible" },
+              rationale: "Breakfast in Notting Hill, the Natural History Museum, a free afternoon and a booked dinner back in Notting Hill.",
+              timeShape: "Breakfast, one museum, booked dinner",
+              itemTitle: "Granger & Co. + Natural History Museum + Core by Clare Smyth",
+              itemBody: "Have breakfast at Granger & Co. on Westbourne Grove, take the bus to the Natural History Museum, keep the afternoon free, and take the Tube to dinner at Core.",
+              fit: "About 33 minutes by bus to the museum and 30 minutes by Circle line to dinner."
+            }
+          },
+          {
+            title: "Borough Market, Bankside and a Covent Garden dinner",
+            rationale: "The food-led day: coffee and Borough Market, a pasta lunch, Tate Modern in the afternoon and the trip's dinner at Dishoom.",
+            highlight: "Dishoom (Covent Garden)",
+            timeShape: "Market morning, walk-in lunch, gallery, dinner",
+            weather: "Borough Market is closed on Mondays until 30 November and Monmouth's shop on Sundays. Padella and Dishoom's evening service work on queues rather than bookings for small groups.",
+            itemTitle: "Monmouth Coffee + Borough Market + Padella + Tate Modern + Dishoom",
+            itemBody: "Start with coffee at Monmouth on Park Street, browse Borough Market, queue for lunch at Padella, walk along Bankside to Tate Modern, and finish with dinner at Dishoom in Covent Garden.",
+            fit: "The morning is all next door; Tate Modern is a 13-minute walk, and dinner about 25 minutes by bus and Tube.",
+            timeline: [
+              { time: "8:30 AM", title: "Coffee at Monmouth Coffee", copy: "2 Park Street. Card payments only.", placeId: "plc_london_monmouth-coffee-borough" },
+              { time: "10:00 AM", title: "Borough Market", copy: "Traders keep their own hours within the market's.", placeId: "plc_london_borough-market" },
+              { time: "12:00 PM", title: "Lunch at Padella", copy: "No reservations: join the virtual queue at the door.", placeId: "plc_london_padella-borough-market" },
+              { time: "2:30 PM", title: "Tate Modern", copy: "Free to enter; large bags are not allowed.", placeId: "plc_london_tate-modern" },
+              { time: "7:30 PM", title: "Dinner at Dishoom (Covent Garden)", copy: "12 Upper St Martin's Lane. After 6 PM, tables are booked only for groups of six or more.", placeId: "plc_london_dishoom-covent-garden" }
             ]
           },
           {
-            title: "Westminster + St James's day",
-            rationale: "This groups London's classic landmarks in one sweep so the day feels coherent instead of scattered.",
-            highlight: "Big Ben + Buckingham Palace",
-            timeShape: "Balanced with time for meals",
-            weather: "Handle the obvious icons together so the day still has shape.",
-            itemTitle: "Westminster icons + St James's lunch",
-            itemBody: "Use Westminster for the big first-timer landmarks, then slow down over lunch and park time nearby.",
-            fit: "It covers the essentials without turning London into a race from one landmark to the next.",
+            title: "St Paul's and Soho",
+            rationale: "Coffee on Leather Lane, St Paul's Cathedral in the morning, a steak lunch in Covent Garden, a free afternoon and cocktails in Soho.",
+            highlight: "St Paul's Cathedral",
+            timeShape: "Cathedral morning, lunch, free afternoon, drinks",
+            weather: "St Paul's has no sightseeing on Sundays and its times can change for services. Large bags are not allowed.",
+            itemTitle: "Prufrock Coffee + St Paul's Cathedral + Flat Iron + Swift Soho",
+            itemBody: "Have coffee at Prufrock on Leather Lane, visit St Paul's Cathedral, take the Tube to lunch at Flat Iron in Covent Garden, keep the afternoon free, and end with a drink at Swift in Soho.",
+            fit: "About 14 minutes by Central line to the cathedral, 21 to lunch, and a 9-minute walk to the bar.",
             timeline: [
-              { time: "9:30 AM", title: "Big Ben + Westminster", copy: "Use the morning for London's clearest first-timer landmark stretch." },
-              { time: "12:30 PM", title: "Lunch at The Wolseley", copy: "A proper lunch softens the landmark run and gives the area more elegance." },
-              { time: "2:30 PM", title: "Churchill War Rooms or a gentler Whitehall walk", copy: "Add one focused continuation instead of scattering the landmarks farther apart." },
-              { time: "4:30 PM", title: "St James's Park + Buckingham Palace", copy: "Finish with a classic London walk that still feels easy rather than over-programmed." }
+              { time: "9:00 AM", title: "Coffee at Prufrock Coffee", copy: "23-25 Leather Lane.", placeId: "plc_london_prufrock-coffee-leather-lane" },
+              { time: "10:00 AM", title: "St Paul's Cathedral", copy: "Last entry is usually at 4 PM.", placeId: "plc_london_st-pauls-cathedral" },
+              { time: "1:00 PM", title: "Lunch at Flat Iron (Covent Garden)", copy: "17-18 Henrietta Street.", placeId: "plc_london_flat-iron-covent-garden" },
+              { time: "2:30 PM", title: "Free afternoon", copy: "Nothing is scheduled.", kind: "flexible" },
+              { time: "7:00 PM", title: "Drinks at Swift Soho", copy: "12 Old Compton Street. Walk-ins accepted; booking recommended.", placeId: "plc_london_swift-soho" }
             ]
           },
           {
-            title: "South Bank + skyline evening",
-            rationale: "You get London's riverfront rhythm here, one museum option, and a skyline finish that feels earned.",
-            highlight: "Sky Garden",
-            timeShape: "Planned, with room to wander",
-            weather: "The riverfront works best when you leave room to linger.",
-            itemTitle: "South Bank walk + Sky Garden",
-            itemBody: "Use the South Bank for the middle of the day, then end with a skyline view instead of squeezing in more stops.",
-            fit: "It feels like London at its easiest: scenic, walkable, and not overworked.",
+            title: "Last morning in Soho",
+            rationale: "The final day keeps one named stop and leaves the rest for packing and the journey home.",
+            highlight: "The Breakfast Club (Soho)",
+            timeShape: "Light, with room to pack",
+            weather: "Leave enough time for checkout and the journey to the airport or station.",
+            itemTitle: "The Breakfast Club + a last walk",
+            itemBody: "Breakfast at The Breakfast Club on D'Arblay Street, a last unplanned walk, then packing and departure.",
+            fit: "It ends the trip with a specific place without squeezing in another big visit before you leave.",
             timeline: [
-              { time: "10:00 AM", title: "Tate Modern or South Bank start", copy: "Let the riverfront set the tone instead of filling the morning with too many competing stops." },
-              { time: "1:00 PM", title: "Lunch at Borough Market", copy: "Keep lunch close and worthwhile rather than spending the best middle hours in transit." },
-              { time: "3:30 PM", title: "Walk the Millennium Bridge stretch", copy: "Use the afternoon for more river time instead of forcing in a disconnected district." },
-              { time: "6:00 PM", title: "View from Sky Garden", copy: "End with a skyline payoff that gives the whole riverfront day a strong finish." }
-            ]
-          },
-          {
-            title: "Notting Hill + Portobello evening",
-            rationale: "This gives West London an actual sequence, so the afternoon does not feel like filler before dinner.",
-            highlight: "Portobello Road + The Ledbury",
-            timeShape: "Walkable neighborhood day + stronger dinner",
-            weather: "This part of London works best when you let the neighborhood carry the flow instead of over-structuring it.",
-            itemTitle: "Portobello Road walk + Holland Park + standout dinner",
-            itemBody: "Start with Portobello Road, give yourself a proper lunch in the neighborhood, and let the evening build toward one dinner worth dressing for.",
-            fit: "It turns a looser London day into a real West London agenda without making it feel overplanned.",
-            timeline: [
-              { time: "10:00 AM", title: "Portobello Road start", copy: "Begin with the market street and side lanes while the neighborhood still feels slower and easier to enjoy." },
-              { time: "12:30 PM", title: "Lunch at Gold Notting Hill", copy: "Keep lunch rooted in the area so the day feels cohesive instead of bouncing across town." },
-              { time: "3:00 PM", title: "Holland Park + Kyoto Garden", copy: "Use the afternoon for one calmer West London stretch before the evening sharpens." },
-              { time: "7:30 PM", title: "Dinner at The Ledbury", copy: "Make the evening reservation the clear payoff, rather than something the rest of the day vaguely circles around." }
-            ]
-          },
-          {
-            title: "Kensington close with museum and gardens",
-            rationale: "The trip closes better when London softens a little, but still gives you one more place that feels worth the time.",
-            highlight: "V&A + Kensington Gardens",
-            timeShape: "Calmer close with one polished stop",
-            weather: "A museum-and-gardens mix keeps the last London stretch useful even if the weather shifts.",
-            itemTitle: "V&A Museum + Kensington Gardens close",
-            itemBody: "Use the morning for one museum that still feels destination-worthy, then let lunch and a garden walk wind the trip down cleanly.",
-            fit: "It gives the last London day a real plan without making the ending feel crowded or tiring.",
-            timeline: [
-              { time: "10:00 AM", title: "Victoria and Albert Museum", copy: "Use the morning for one museum that feels substantial without swallowing the entire day." },
-              { time: "1:00 PM", title: "Lunch at Dishoom Kensington", copy: "Keep lunch nearby so the close of the trip stays smooth and rooted in one part of town." },
-              { time: "3:30 PM", title: "Kensington Gardens walk", copy: "Let the afternoon breathe with one polished London walk instead of squeezing in another heavyweight stop." },
-              { time: "6:00 PM", title: "Final drink or early dinner near the park", copy: "Finish with one easy last London moment that still feels memorable before packing takes over." }
+              { time: "8:30 AM", title: "Breakfast at The Breakfast Club", copy: "The original café at 33 D'Arblay Street.", placeId: "plc_london_the-breakfast-club-soho" },
+              { time: "10:00 AM", title: "Last walk in Soho", copy: "Unplanned time on foot before you leave.", kind: "flexible" },
+              { time: "12:00 PM", title: "Pack and travel", copy: "Keep the rest of the day for checkout and the journey.", kind: "flexible" }
             ]
           }
         ],

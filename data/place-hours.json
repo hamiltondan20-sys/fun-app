@@ -1959,6 +1959,683 @@
         }
       ],
       "notes": "Rambuteau shop only."
+    },
+    "plc_london_tower-of-london": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [],
+      "url": "https://www.hrp.org.uk/tower-of-london/visit/",
+      "confidence": "medium",
+      "quote": "Opening times Tower of London Thursday 15 October: 09:00 - 17:30 ... Last entry: 16:30.",
+      "lastEntry": "16:30 on 15 October",
+      "periods": [
+        {
+          "from": "2026-10-15",
+          "to": "2026-10-15",
+          "weekly": {
+            "mon": "09:00-17:30",
+            "tue": "09:00-17:30",
+            "wed": "09:00-17:30",
+            "thu": "09:00-17:30",
+            "fri": "09:00-17:30",
+            "sat": "09:00-17:30",
+            "sun": "09:00-17:30"
+          }
+        }
+      ],
+      "caveat": "Historic Royal Palaces publishes opening times one day at a time; check the date you plan to visit. Check temporary route closures before you go.",
+      "notes": "Read in a browser (automated fetches were refused). Only 15 October 2026 was readable, so other dates show as not covered."
+    },
+    "plc_london_tower-bridge": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [
+        {
+          "date": "2026-12-24",
+          "hours": "closed",
+          "note": "Annual closure"
+        },
+        {
+          "date": "2026-12-25",
+          "hours": "closed",
+          "note": "Annual closure"
+        },
+        {
+          "date": "2026-12-26",
+          "hours": "closed",
+          "note": "Annual closure"
+        }
+      ],
+      "url": "https://www.towerbridge.org.uk/plan-your-visit",
+      "confidence": "high",
+      "quote": "Open daily: 09:30 to 18:00 ... Last entry is 17:00.",
+      "lastEntry": "17:00",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "09:30-18:00",
+            "tue": "09:30-18:00",
+            "wed": "09:30-18:00",
+            "thu": "09:30-18:00",
+            "fri": "09:30-18:00",
+            "sat": "09:30-18:00",
+            "sun": "09:30-18:00"
+          }
+        }
+      ],
+      "caveat": "On the second Saturday of each month, 09:30-11:30 is a relaxed, low-capacity session."
+    },
+    "plc_london_leadenhall-market": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [],
+      "url": "https://www.leadenhallmarket.co.uk/",
+      "confidence": "medium",
+      "quote": "remain open 24/7",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "open 24h",
+            "tue": "open 24h",
+            "wed": "open 24h",
+            "thu": "open 24h",
+            "fri": "open 24h",
+            "sat": "open 24h",
+            "sun": "open 24h"
+          }
+        }
+      ],
+      "caveat": "The covered passages are always open; shops and restaurants keep their own hours."
+    },
+    "plc_london_sky-garden": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [
+        {
+          "date": "2026-10-21",
+          "hours": "10:00-16:00",
+          "note": "Closed from 4 PM for a private hire"
+        },
+        {
+          "date": "2026-11-16",
+          "hours": "closed",
+          "note": "Maintenance day"
+        },
+        {
+          "date": "2026-11-24",
+          "hours": "10:00-16:00",
+          "note": "Closed from 4 PM for a private hire"
+        },
+        {
+          "date": "2026-11-25",
+          "hours": "closed",
+          "note": "Full-day private hire"
+        },
+        {
+          "date": "2026-12-03",
+          "hours": "10:00-16:00",
+          "note": "Closed from 4 PM for a private hire"
+        },
+        {
+          "date": "2026-12-07",
+          "hours": "closed",
+          "note": "Maintenance day"
+        },
+        {
+          "date": "2026-12-10",
+          "hours": "10:00-16:00",
+          "note": "Closed from 4 PM for a private hire"
+        },
+        {
+          "date": "2026-12-24",
+          "hours": "10:00-18:00",
+          "note": "Closes at 6 PM"
+        },
+        {
+          "date": "2026-12-25",
+          "hours": "closed",
+          "note": "Christmas Day"
+        }
+      ],
+      "url": "https://skygarden.london/faqs/",
+      "confidence": "high",
+      "quote": "Ticket holders can visit 10am–6pm on weekdays and 11am–9pm on weekends and bank holidays.",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "10:00-18:00",
+            "tue": "10:00-18:00",
+            "wed": "10:00-18:00",
+            "thu": "10:00-18:00",
+            "fri": "10:00-18:00",
+            "sat": "11:00-21:00",
+            "sun": "11:00-21:00"
+          }
+        }
+      ],
+      "caveat": "Book a free timed ticket (released each Monday, three weeks ahead); arriving more than 15 minutes late may mean no entry. Capacity is reduced while a lift is out of service.",
+      "notes": "These are the free visiting hours, not the restaurants' and bars' hours."
+    },
+    "plc_london_westminster-abbey": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [],
+      "url": "https://www.westminster-abbey.org/visit-us/opening-times-and-prices/",
+      "confidence": "medium",
+      "quote": "Daily 9:30am – 4:30pm (last admission 3:30pm); Saturday 9:00am – 4:00pm (last admission 3:00pm); Sunday open for services",
+      "lastEntry": "15:30 Monday-Friday; 15:00 Saturday",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "09:30-16:30",
+            "tue": "09:30-16:30",
+            "wed": "09:30-16:30",
+            "thu": "09:30-16:30",
+            "fri": "09:30-16:30",
+            "sat": "09:00-16:00",
+            "sun": "closed"
+          }
+        }
+      ],
+      "caveat": "No sightseeing on Sundays (worship only). A working church that can close at short notice.",
+      "notes": "Christmas dates were not published on 14 October."
+    },
+    "plc_london_national-gallery": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [
+        {
+          "date": "2026-12-24",
+          "hours": "closed",
+          "note": "Closed 24-26 December"
+        },
+        {
+          "date": "2026-12-25",
+          "hours": "closed",
+          "note": "Closed 24-26 December"
+        },
+        {
+          "date": "2026-12-26",
+          "hours": "closed",
+          "note": "Closed 24-26 December"
+        }
+      ],
+      "url": "https://www.nationalgallery.org.uk/visiting",
+      "confidence": "high",
+      "quote": "Open daily 10am–6pm Friday until 9pm (Closed 24–26 December and 1 January)",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "10:00-18:00",
+            "tue": "10:00-18:00",
+            "wed": "10:00-18:00",
+            "thu": "10:00-18:00",
+            "fri": "10:00-21:00",
+            "sat": "10:00-18:00",
+            "sun": "10:00-18:00"
+          }
+        }
+      ],
+      "caveat": "Several rooms are closed for building work; check the floorplan for a particular painting."
+    },
+    "plc_london_covent-garden-market-building-and-piazza": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [],
+      "url": "https://www.coventgarden.london/about/faqs",
+      "confidence": "medium",
+      "quote": "Covent Garden, the Piazza and the Market Building is always open ... the shops usually operate between 10am and 8pm Monday to Saturday ... on Sunday from around 11am to 6pm.",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "open 24h",
+            "tue": "open 24h",
+            "wed": "open 24h",
+            "thu": "open 24h",
+            "fri": "open 24h",
+            "sat": "open 24h",
+            "sun": "open 24h"
+          }
+        }
+      ],
+      "caveat": "The Piazza and Market Building are always open; shops usually open 10 AM-8 PM Monday-Saturday and about 11 AM-6 PM on Sundays."
+    },
+    "plc_london_rules": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [],
+      "url": "https://rules.co.uk/contact/",
+      "confidence": "high",
+      "quote": "Monday to Thursday 12:00 – 10.00pm last reservation; Friday and Saturday 12:00 – 11.30pm last orders; Sunday 12:00 – 10.00pm last reservation",
+      "lastEntry": "Last reservation 22:00 Sunday-Thursday; last orders 23:30 Friday-Saturday",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "12:00-late",
+            "tue": "12:00-late",
+            "wed": "12:00-late",
+            "thu": "12:00-late",
+            "fri": "12:00-late",
+            "sat": "12:00-late",
+            "sun": "12:00-late"
+          }
+        }
+      ],
+      "caveat": "No shorts or sportswear; children under 10 are not admitted after 7 PM."
+    },
+    "plc_london_granger-and-co-notting-hill": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [
+        {
+          "date": "2026-12-25",
+          "hours": "unknown",
+          "note": "Bank holiday: no hours published"
+        }
+      ],
+      "url": "https://grangerandco.com/locations/notting-hill",
+      "confidence": "high",
+      "quote": "Monday to Saturday: 7am - 10.30pm (last orders); Sunday and bank holidays: 8am - 9.30pm (last orders)",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "07:00-22:30",
+            "tue": "07:00-22:30",
+            "wed": "07:00-22:30",
+            "thu": "07:00-22:30",
+            "fri": "07:00-22:30",
+            "sat": "07:00-22:30",
+            "sun": "08:00-21:30"
+          }
+        }
+      ],
+      "notes": "The published closing times are last orders. Bank holidays follow Sunday hours."
+    },
+    "plc_london_natural-history-museum": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [
+        {
+          "date": "2026-12-24",
+          "hours": "closed",
+          "note": "Closed 24-26 December"
+        },
+        {
+          "date": "2026-12-25",
+          "hours": "closed",
+          "note": "Closed 24-26 December"
+        },
+        {
+          "date": "2026-12-26",
+          "hours": "closed",
+          "note": "Closed 24-26 December"
+        }
+      ],
+      "url": "https://www.nhm.ac.uk/visit.html",
+      "confidence": "high",
+      "quote": "Open daily, 10:00–17:50. Last entry 17:30",
+      "lastEntry": "17:30",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "10:00-17:50",
+            "tue": "10:00-17:50",
+            "wed": "10:00-17:50",
+            "thu": "10:00-17:50",
+            "fri": "10:00-17:50",
+            "sat": "10:00-17:50",
+            "sun": "10:00-17:50"
+          }
+        }
+      ],
+      "caveat": "Entry is free; a free ticket guarantees entry at busy times."
+    },
+    "plc_london_vanda-south-kensington": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [
+        {
+          "date": "2026-12-24",
+          "hours": "closed",
+          "note": "Closed 24-26 December"
+        },
+        {
+          "date": "2026-12-25",
+          "hours": "closed",
+          "note": "Closed 24-26 December"
+        },
+        {
+          "date": "2026-12-26",
+          "hours": "closed",
+          "note": "Closed 24-26 December"
+        }
+      ],
+      "url": "https://www.vam.ac.uk/south-kensington",
+      "confidence": "high",
+      "quote": "10.00 – 17.45; Friday 10.00 – 22.00 (some galleries close after 17.45); Closed 24 – 26 December",
+      "lastEntry": "Gallery clearing begins 30 minutes before closing",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "10:00-17:45",
+            "tue": "10:00-17:45",
+            "wed": "10:00-17:45",
+            "thu": "10:00-17:45",
+            "fri": "10:00-22:00",
+            "sat": "10:00-17:45",
+            "sun": "10:00-17:45"
+          }
+        }
+      ]
+    },
+    "plc_london_core-by-clare-smyth": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [],
+      "url": "https://www.corebyclaresmyth.com/menus/",
+      "confidence": "high",
+      "quote": "Lunch: Thursday – Saturday, 12:00 – 14:15; Dinner: Tuesday – Saturday, 18:30 – 21:45",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "closed",
+            "tue": "18:30-21:45",
+            "wed": "18:30-21:45",
+            "thu": "12:00-14:15,18:30-21:45",
+            "fri": "12:00-14:15,18:30-21:45",
+            "sat": "12:00-14:15,18:30-21:45",
+            "sun": "closed"
+          }
+        }
+      ],
+      "caveat": "Book ahead; the whole table orders the same menu format.",
+      "notes": "Sunday and Monday are not listed, so they are treated as closed."
+    },
+    "plc_london_monmouth-coffee-borough": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [],
+      "url": "https://www.monmouthcoffee.co.uk/",
+      "confidence": "high",
+      "quote": "The Borough 2 Park Street ... Monday to Saturday 7.30am to 6pm Closed Sunday Card payments only",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "07:30-18:00",
+            "tue": "07:30-18:00",
+            "wed": "07:30-18:00",
+            "thu": "07:30-18:00",
+            "fri": "07:30-18:00",
+            "sat": "07:30-18:00",
+            "sun": "closed"
+          }
+        }
+      ],
+      "caveat": "Card payments only.",
+      "notes": "Read in a browser (automated fetches were refused)."
+    },
+    "plc_london_borough-market": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [
+        {
+          "date": "2026-12-23",
+          "hours": "10:00-18:00"
+        },
+        {
+          "date": "2026-12-24",
+          "hours": "08:00-15:00",
+          "note": "Christmas Eve"
+        },
+        {
+          "date": "2026-12-25",
+          "hours": "closed",
+          "note": "Festive closure"
+        },
+        {
+          "date": "2026-12-26",
+          "hours": "closed",
+          "note": "Festive closure"
+        },
+        {
+          "date": "2026-12-27",
+          "hours": "closed",
+          "note": "Festive closure"
+        },
+        {
+          "date": "2026-12-31",
+          "hours": "10:00-15:00"
+        }
+      ],
+      "url": "https://boroughmarket.org.uk/visit-us/",
+      "confidence": "high",
+      "quote": "Monday: Closed; Tue–Fri 10am – 5pm; Saturday 9am – 5pm; Sunday 10am – 4pm",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-11-29",
+          "weekly": {
+            "mon": "closed",
+            "tue": "10:00-17:00",
+            "wed": "10:00-17:00",
+            "thu": "10:00-17:00",
+            "fri": "10:00-17:00",
+            "sat": "09:00-17:00",
+            "sun": "10:00-16:00"
+          }
+        },
+        {
+          "from": "2026-11-30",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "10:00-17:00",
+            "tue": "10:00-17:00",
+            "wed": "10:00-17:00",
+            "thu": "10:00-17:00",
+            "fri": "10:00-17:00",
+            "sat": "09:00-17:00",
+            "sun": "10:00-16:00"
+          }
+        }
+      ],
+      "caveat": "Closed on Mondays until 30 November; traders keep their own hours within the market's."
+    },
+    "plc_london_padella-borough-market": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [],
+      "url": "https://www.padella.co/borough-market",
+      "confidence": "high",
+      "quote": "Lunch Monday - Sunday: 11:30 to 15:45; Dinner Monday - Saturday: 17:00 to 22:30; Sunday: 17:00 to 21:00",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "11:30-15:45,17:00-22:30",
+            "tue": "11:30-15:45,17:00-22:30",
+            "wed": "11:30-15:45,17:00-22:30",
+            "thu": "11:30-15:45,17:00-22:30",
+            "fri": "11:30-15:45,17:00-22:30",
+            "sat": "11:30-15:45,17:00-22:30",
+            "sun": "11:30-15:45,17:00-21:00"
+          }
+        }
+      ],
+      "caveat": "No reservations: join the virtual queue at the door; groups of up to 6."
+    },
+    "plc_london_tate-modern": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [],
+      "url": "https://www.tate.org.uk/visit/tate-modern",
+      "confidence": "medium",
+      "quote": "Sunday to Thursday 10.00–18.00; Friday to Saturday 10.00–21.00; Last entry 30 minutes before closing time",
+      "lastEntry": "30 minutes before closing",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "10:00-18:00",
+            "tue": "10:00-18:00",
+            "wed": "10:00-18:00",
+            "thu": "10:00-18:00",
+            "fri": "10:00-21:00",
+            "sat": "10:00-21:00",
+            "sun": "10:00-18:00"
+          }
+        }
+      ],
+      "caveat": "Bags larger than 55x40x20 cm are not allowed and there is no cloakroom.",
+      "notes": "Christmas dates were not on the page read."
+    },
+    "plc_london_dishoom-covent-garden": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [],
+      "url": "https://www.dishoom.com/covent-garden/",
+      "confidence": "high",
+      "quote": "Monday–Thursday 8am to 11pm; Friday 8am to 12am; Saturday 9am to 12am; Sunday 9am to 11pm",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "08:00-23:00",
+            "tue": "08:00-23:00",
+            "wed": "08:00-23:00",
+            "thu": "08:00-23:00",
+            "fri": "08:00-00:00",
+            "sat": "09:00-00:00",
+            "sun": "09:00-23:00"
+          }
+        }
+      ],
+      "caveat": "After 6 PM tables are booked only for groups of six or more; expect a walk-in queue."
+    },
+    "plc_london_prufrock-coffee-leather-lane": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [],
+      "url": "https://www.prufrockcoffee.com/",
+      "confidence": "high",
+      "quote": "Monday to Friday: 7:30am to 4:30pm; Saturday: 8am to 5pm; Sunday: 9am to 5pm",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "07:30-16:30",
+            "tue": "07:30-16:30",
+            "wed": "07:30-16:30",
+            "thu": "07:30-16:30",
+            "fri": "07:30-16:30",
+            "sat": "08:00-17:00",
+            "sun": "09:00-17:00"
+          }
+        }
+      ],
+      "caveat": "The kitchen stops serving food at 3:40 PM on weekdays and 4:20 PM at weekends."
+    },
+    "plc_london_st-pauls-cathedral": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [],
+      "url": "https://www.stpauls.co.uk/planning-your-visit",
+      "confidence": "medium",
+      "quote": "We're open from 8.30am Monday to Saturday for sightseeing. Last entry for sightseeing is usually at 4pm with sightseeing ending 30 minutes after the last entry time.",
+      "lastEntry": "usually 16:00",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "08:30-16:30",
+            "tue": "08:30-16:30",
+            "wed": "08:30-16:30",
+            "thu": "08:30-16:30",
+            "fri": "08:30-16:30",
+            "sat": "08:30-16:30",
+            "sun": "closed"
+          }
+        }
+      ],
+      "caveat": "No sightseeing on Sundays; times can change for services and events. Bags larger than 45x30x25 cm are not allowed.",
+      "notes": "Christmas dates were not on the pages read."
+    },
+    "plc_london_flat-iron-covent-garden": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [],
+      "url": "https://flatironsteak.co.uk/restaurant/covent-garden/",
+      "confidence": "high",
+      "quote": "SUN – TUE: 11:30 – 22:30; WED – THU: 11:30 – 23:00; FRI – SAT: 11:30 – 23:30",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "11:30-22:30",
+            "tue": "11:30-22:30",
+            "wed": "11:30-23:00",
+            "thu": "11:30-23:00",
+            "fri": "11:30-23:30",
+            "sat": "11:30-23:30",
+            "sun": "11:30-22:30"
+          }
+        }
+      ]
+    },
+    "plc_london_swift-soho": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [],
+      "url": "https://www.barswift.com/swift-bar-locations",
+      "confidence": "high",
+      "quote": "Monday – Saturday 3pm-Midnight; Sunday 3pm-11pm",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "15:00-00:00",
+            "tue": "15:00-00:00",
+            "wed": "15:00-00:00",
+            "thu": "15:00-00:00",
+            "fri": "15:00-00:00",
+            "sat": "15:00-00:00",
+            "sun": "15:00-23:00"
+          }
+        }
+      ],
+      "caveat": "Walk-ins accepted; booking recommended."
+    },
+    "plc_london_the-breakfast-club-soho": {
+      "retrievedOn": "2026-10-14",
+      "exceptions": [],
+      "url": "https://www.thebreakfastclubcafes.com/soho",
+      "confidence": "high",
+      "quote": "Monday to Friday: 7:30am - 3:00pm; Saturday: 7:30am - 5:00pm; Sunday: 7:30am - 5:00pm",
+      "periods": [
+        {
+          "from": "2026-10-14",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "07:30-15:00",
+            "tue": "07:30-15:00",
+            "wed": "07:30-15:00",
+            "thu": "07:30-15:00",
+            "fri": "07:30-15:00",
+            "sat": "07:30-17:00",
+            "sun": "07:30-17:00"
+          }
+        }
+      ],
+      "notes": "The original D'Arblay Street café. No holiday hours were published."
     }
   }
 }

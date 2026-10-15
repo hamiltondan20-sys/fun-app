@@ -6567,6 +6567,2539 @@ window.HB_PLACES = {
         ]
       }
     },
+    "plc_london_tower-of-london": {
+      "id": "plc_london_tower-of-london",
+      "name": "Tower of London",
+      "city": "london",
+      "kind": "landmark",
+      "area": "Tower Hill",
+      "timeZone": "Europe/London",
+      "address": "Tower of London, London EC3N 4AB",
+      "coordinates": {
+        "lat": 51.50822,
+        "lng": -0.07619,
+        "basis": "named feature: the Tower of London site",
+        "osm": "way/370870741",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-15",
+            "to": "2026-10-15",
+            "weekly": {
+              "mon": [
+                [
+                  "09:00",
+                  "17:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "09:00",
+                  "17:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "09:00",
+                  "17:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:00",
+                  "17:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:00",
+                  "17:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "17:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "17:30"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": "16:30 on 15 October",
+        "caveat": "Historic Royal Palaces publishes opening times one day at a time; check the date you plan to visit. Check temporary route closures before you go.",
+        "notes": "Read in a browser (automated fetches were refused). Only 15 October 2026 was readable, so other dates show as not covered.",
+        "evidence": {
+          "url": "https://www.hrp.org.uk/tower-of-london/visit/",
+          "quote": "Opening times Tower of London Thursday 15 October: 09:00 - 17:30 ... Last entry: 16:30.",
+          "confidence": "medium"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "official public operator (Historic Royal Palaces)",
+            "url": "https://www.hrp.org.uk/tower-of-london/visit/",
+            "retrievedOn": "2026-10-14",
+            "note": "The visit page sells tickets, shows opening times for the day (15 October: 09:00-17:30, last entry 16:30, last Yeoman Warder tour 15:15) and lists dated Opening Ceremony experiences until 1 November 2026. It asks visitors to check temporary route closures."
+          }
+        ]
+      }
+    },
+    "plc_london_tower-bridge": {
+      "id": "plc_london_tower-bridge",
+      "name": "Tower Bridge",
+      "city": "london",
+      "kind": "landmark",
+      "area": "Tower Hill",
+      "timeZone": "Europe/London",
+      "address": "Tower Bridge, London (entrance on the north-west side of the bridge)",
+      "coordinates": {
+        "lat": 51.50552,
+        "lng": -0.07537,
+        "basis": "named feature: the bridge",
+        "osm": "way/378541210",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "09:30",
+                  "18:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "09:30",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "09:30",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:30",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:30",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:30",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:30",
+                  "18:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-12-24",
+            "hours": [],
+            "note": "Annual closure"
+          },
+          {
+            "date": "2026-12-25",
+            "hours": [],
+            "note": "Annual closure"
+          },
+          {
+            "date": "2026-12-26",
+            "hours": [],
+            "note": "Annual closure"
+          }
+        ],
+        "lastEntry": "17:00",
+        "caveat": "On the second Saturday of each month, 09:30-11:30 is a relaxed, low-capacity session.",
+        "notes": null,
+        "evidence": {
+          "url": "https://www.towerbridge.org.uk/plan-your-visit",
+          "quote": "Open daily: 09:30 to 18:00 ... Last entry is 17:00.",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site (City of London Corporation)",
+            "url": "https://www.towerbridge.org.uk/plan-your-visit",
+            "retrievedOn": "2026-10-14",
+            "note": "Open daily with tickets on sale; annual closures 24-26 December. A relaxed opening runs on the second Saturday of each month, 09:30-11:30."
+          }
+        ]
+      }
+    },
+    "plc_london_leadenhall-market": {
+      "id": "plc_london_leadenhall-market",
+      "name": "Leadenhall Market",
+      "city": "london",
+      "kind": "scenic",
+      "area": "City",
+      "timeZone": "Europe/London",
+      "address": "Gracechurch Street, London EC3V 1LT",
+      "coordinates": {
+        "lat": 51.51273,
+        "lng": -0.0834,
+        "basis": "named feature: the covered market",
+        "osm": "way/143113935",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": "The covered passages are always open; shops and restaurants keep their own hours.",
+        "notes": null,
+        "evidence": {
+          "url": "https://www.leadenhallmarket.co.uk/",
+          "quote": "remain open 24/7",
+          "confidence": "medium"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site (City of London Corporation)",
+            "url": "https://www.leadenhallmarket.co.uk/",
+            "retrievedOn": "2026-10-14",
+            "note": "The public areas 'remain open 24/7'; 2026 seasonal events are listed."
+          }
+        ]
+      }
+    },
+    "plc_london_sky-garden": {
+      "id": "plc_london_sky-garden",
+      "name": "Sky Garden",
+      "city": "london",
+      "kind": "scenic",
+      "area": "City",
+      "timeZone": "Europe/London",
+      "address": "1 Sky Garden Walk, London EC3M 8AF",
+      "coordinates": {
+        "lat": 51.5111,
+        "lng": -0.0836,
+        "basis": "named viewpoint feature at 20 Fenchurch Street",
+        "osm": "node/3272712570",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "11:00",
+                  "21:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "11:00",
+                  "21:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-10-21",
+            "hours": [
+              [
+                "10:00",
+                "16:00"
+              ]
+            ],
+            "note": "Closed from 4 PM for a private hire"
+          },
+          {
+            "date": "2026-11-16",
+            "hours": [],
+            "note": "Maintenance day"
+          },
+          {
+            "date": "2026-11-24",
+            "hours": [
+              [
+                "10:00",
+                "16:00"
+              ]
+            ],
+            "note": "Closed from 4 PM for a private hire"
+          },
+          {
+            "date": "2026-11-25",
+            "hours": [],
+            "note": "Full-day private hire"
+          },
+          {
+            "date": "2026-12-03",
+            "hours": [
+              [
+                "10:00",
+                "16:00"
+              ]
+            ],
+            "note": "Closed from 4 PM for a private hire"
+          },
+          {
+            "date": "2026-12-07",
+            "hours": [],
+            "note": "Maintenance day"
+          },
+          {
+            "date": "2026-12-10",
+            "hours": [
+              [
+                "10:00",
+                "16:00"
+              ]
+            ],
+            "note": "Closed from 4 PM for a private hire"
+          },
+          {
+            "date": "2026-12-24",
+            "hours": [
+              [
+                "10:00",
+                "18:00"
+              ]
+            ],
+            "note": "Closes at 6 PM"
+          },
+          {
+            "date": "2026-12-25",
+            "hours": [],
+            "note": "Christmas Day"
+          }
+        ],
+        "lastEntry": null,
+        "caveat": "Book a free timed ticket (released each Monday, three weeks ahead); arriving more than 15 minutes late may mean no entry. Capacity is reduced while a lift is out of service.",
+        "notes": "These are the free visiting hours, not the restaurants' and bars' hours.",
+        "evidence": {
+          "url": "https://skygarden.london/faqs/",
+          "quote": "Ticket holders can visit 10am–6pm on weekdays and 11am–9pm on weekends and bank holidays.",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site",
+            "url": "https://skygarden.london/",
+            "retrievedOn": "2026-10-14",
+            "note": "Free timed tickets (released each Monday, three weeks ahead); capacity is temporarily reduced while one lift is out of service; a dated list of hire and maintenance closures for October-December 2026."
+          }
+        ]
+      }
+    },
+    "plc_london_westminster-abbey": {
+      "id": "plc_london_westminster-abbey",
+      "name": "Westminster Abbey",
+      "city": "london",
+      "kind": "landmark",
+      "area": "Westminster",
+      "timeZone": "Europe/London",
+      "address": "Westminster Abbey, Dean's Yard, London SW1P 3PA",
+      "coordinates": {
+        "lat": 51.4994,
+        "lng": -0.12739,
+        "basis": "named feature: the abbey church",
+        "osm": "way/364313092",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "09:30",
+                  "16:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "09:30",
+                  "16:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "09:30",
+                  "16:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:30",
+                  "16:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:30",
+                  "16:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "16:00"
+                ]
+              ],
+              "sun": []
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": "15:30 Monday-Friday; 15:00 Saturday",
+        "caveat": "No sightseeing on Sundays (worship only). A working church that can close at short notice.",
+        "notes": "Christmas dates were not published on 14 October.",
+        "evidence": {
+          "url": "https://www.westminster-abbey.org/visit-us/opening-times-and-prices/",
+          "quote": "Daily 9:30am – 4:30pm (last admission 3:30pm); Saturday 9:00am – 4:00pm (last admission 3:00pm); Sunday open for services",
+          "confidence": "medium"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site",
+            "url": "https://www.westminster-abbey.org/visit-us/opening-times-and-prices/",
+            "retrievedOn": "2026-10-14",
+            "note": "Sightseeing hours are published (a working church that can close at short notice); the opening-times page shows a date-specific admittance window and closed areas."
+          }
+        ]
+      }
+    },
+    "plc_london_national-gallery": {
+      "id": "plc_london_national-gallery",
+      "name": "National Gallery",
+      "city": "london",
+      "kind": "landmark",
+      "area": "Trafalgar Square",
+      "timeZone": "Europe/London",
+      "address": "Trafalgar Square, London WC2N 5DN",
+      "coordinates": {
+        "lat": 51.50872,
+        "lng": -0.12859,
+        "basis": "the Gallery's shop feature, inside the building on Trafalgar Square",
+        "osm": "node/6173732685",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "21:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-12-24",
+            "hours": [],
+            "note": "Closed 24-26 December"
+          },
+          {
+            "date": "2026-12-25",
+            "hours": [],
+            "note": "Closed 24-26 December"
+          },
+          {
+            "date": "2026-12-26",
+            "hours": [],
+            "note": "Closed 24-26 December"
+          }
+        ],
+        "lastEntry": null,
+        "caveat": "Several rooms are closed for building work; check the floorplan for a particular painting.",
+        "notes": null,
+        "evidence": {
+          "url": "https://www.nationalgallery.org.uk/visiting",
+          "quote": "Open daily 10am–6pm Friday until 9pm (Closed 24–26 December and 1 January)",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site",
+            "url": "https://www.nationalgallery.org.uk/visiting",
+            "retrievedOn": "2026-10-14",
+            "note": "Daily hours and the current 'Renoir and Love' exhibition are listed; several rooms are closed for building work (floorplan lists Rooms 1, 7, 8, 16, 17, 17a, 30, 31 and the Sunley Room)."
+          }
+        ]
+      }
+    },
+    "plc_london_covent-garden-market-building-and-piazza": {
+      "id": "plc_london_covent-garden-market-building-and-piazza",
+      "name": "Covent Garden (Market Building and Piazza)",
+      "city": "london",
+      "kind": "scenic",
+      "area": "Covent Garden",
+      "timeZone": "Europe/London",
+      "address": "Covent Garden Piazza, London (no postal address published)",
+      "coordinates": {
+        "lat": 51.51198,
+        "lng": -0.12274,
+        "basis": "named feature: Covent Garden Market building",
+        "osm": "way/633369346",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": "The Piazza and Market Building are always open; shops usually open 10 AM-8 PM Monday-Saturday and about 11 AM-6 PM on Sundays.",
+        "notes": null,
+        "evidence": {
+          "url": "https://www.coventgarden.london/about/faqs",
+          "quote": "Covent Garden, the Piazza and the Market Building is always open ... the shops usually operate between 10am and 8pm Monday to Saturday ... on Sunday from around 11am to 6pm.",
+          "confidence": "medium"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "estate operator's own site",
+            "url": "https://www.coventgarden.london/about/faqs",
+            "retrievedOn": "2026-10-14",
+            "note": "The Piazza and Market Building are always open; usual shop hours and current events (lights switch-on 12 November) are published."
+          }
+        ]
+      }
+    },
+    "plc_london_rules": {
+      "id": "plc_london_rules",
+      "name": "Rules",
+      "city": "london",
+      "kind": "meal",
+      "area": "Covent Garden",
+      "timeZone": "Europe/London",
+      "address": "34-35 Maiden Lane, London WC2E 7LB",
+      "coordinates": {
+        "lat": 51.51083,
+        "lng": -0.12319,
+        "basis": "named feature at 34-35 Maiden Lane",
+        "osm": "way/558928361",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "12:00",
+                  null
+                ]
+              ],
+              "tue": [
+                [
+                  "12:00",
+                  null
+                ]
+              ],
+              "wed": [
+                [
+                  "12:00",
+                  null
+                ]
+              ],
+              "thu": [
+                [
+                  "12:00",
+                  null
+                ]
+              ],
+              "fri": [
+                [
+                  "12:00",
+                  null
+                ]
+              ],
+              "sat": [
+                [
+                  "12:00",
+                  null
+                ]
+              ],
+              "sun": [
+                [
+                  "12:00",
+                  null
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": "Last reservation 22:00 Sunday-Thursday; last orders 23:30 Friday-Saturday",
+        "caveat": "No shorts or sportswear; children under 10 are not admitted after 7 PM.",
+        "notes": null,
+        "evidence": {
+          "url": "https://rules.co.uk/contact/",
+          "quote": "Monday to Thursday 12:00 – 10.00pm last reservation; Friday and Saturday 12:00 – 11.30pm last orders; Sunday 12:00 – 10.00pm last reservation",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "restaurant's own site",
+            "url": "https://rules.co.uk/contact/",
+            "retrievedOn": "2026-10-14",
+            "note": "'Open seven days each week from 2nd March 2026' with a live booking link. No shorts or sportswear; children under 10 not admitted after 7 PM."
+          }
+        ]
+      }
+    },
+    "plc_london_granger-and-co-notting-hill": {
+      "id": "plc_london_granger-and-co-notting-hill",
+      "name": "Granger & Co. (Notting Hill)",
+      "city": "london",
+      "kind": "cafe",
+      "area": "Notting Hill",
+      "timeZone": "Europe/London",
+      "address": "175 Westbourne Grove, London W11 2SB",
+      "coordinates": {
+        "lat": 51.51462,
+        "lng": -0.19778,
+        "basis": "named feature at 175 Westbourne Grove (not another branch)",
+        "osm": "node/7138194615",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "07:00",
+                  "22:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "07:00",
+                  "22:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "07:00",
+                  "22:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "07:00",
+                  "22:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "07:00",
+                  "22:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "07:00",
+                  "22:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "08:00",
+                  "21:30"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-12-25",
+            "hours": null,
+            "note": "Bank holiday: no hours published"
+          }
+        ],
+        "lastEntry": null,
+        "caveat": null,
+        "notes": "The published closing times are last orders. Bank holidays follow Sunday hours.",
+        "evidence": {
+          "url": "https://grangerandco.com/locations/notting-hill",
+          "quote": "Monday to Saturday: 7am - 10.30pm (last orders); Sunday and bank holidays: 8am - 9.30pm (last orders)",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "restaurant's own site",
+            "url": "https://grangerandco.com/locations/notting-hill",
+            "retrievedOn": "2026-10-14",
+            "note": "Location page with current hours (closing times are last orders); open all day, every day."
+          }
+        ]
+      }
+    },
+    "plc_london_natural-history-museum": {
+      "id": "plc_london_natural-history-museum",
+      "name": "Natural History Museum",
+      "city": "london",
+      "kind": "landmark",
+      "area": "South Kensington",
+      "timeZone": "Europe/London",
+      "address": "Cromwell Road, London SW7 5BD",
+      "coordinates": {
+        "lat": 51.49651,
+        "lng": -0.176,
+        "basis": "named feature: the museum building",
+        "osm": "way/24436446",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "10:00",
+                  "17:50"
+                ]
+              ],
+              "tue": [
+                [
+                  "10:00",
+                  "17:50"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "17:50"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "17:50"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "17:50"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "17:50"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "17:50"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-12-24",
+            "hours": [],
+            "note": "Closed 24-26 December"
+          },
+          {
+            "date": "2026-12-25",
+            "hours": [],
+            "note": "Closed 24-26 December"
+          },
+          {
+            "date": "2026-12-26",
+            "hours": [],
+            "note": "Closed 24-26 December"
+          }
+        ],
+        "lastEntry": "17:30",
+        "caveat": "Entry is free; a free ticket guarantees entry at busy times.",
+        "notes": null,
+        "evidence": {
+          "url": "https://www.nhm.ac.uk/visit.html",
+          "quote": "Open daily, 10:00–17:50. Last entry 17:30",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site",
+            "url": "https://www.nhm.ac.uk/visit.html",
+            "retrievedOn": "2026-10-14",
+            "note": "Daily hours, free entry with optional guaranteed-entry tickets, current exhibitions, and closures on 24-26 December."
+          }
+        ]
+      }
+    },
+    "plc_london_vanda-south-kensington": {
+      "id": "plc_london_vanda-south-kensington",
+      "name": "V&A South Kensington",
+      "city": "london",
+      "kind": "landmark",
+      "area": "South Kensington",
+      "timeZone": "Europe/London",
+      "address": "Cromwell Road, London SW7 2RL",
+      "coordinates": {
+        "lat": 51.49688,
+        "lng": -0.17164,
+        "basis": "named feature: the Victoria and Albert Museum",
+        "osm": "relation/29795",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "10:00",
+                  "17:45"
+                ]
+              ],
+              "tue": [
+                [
+                  "10:00",
+                  "17:45"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "17:45"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "17:45"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "22:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "17:45"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "17:45"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-12-24",
+            "hours": [],
+            "note": "Closed 24-26 December"
+          },
+          {
+            "date": "2026-12-25",
+            "hours": [],
+            "note": "Closed 24-26 December"
+          },
+          {
+            "date": "2026-12-26",
+            "hours": [],
+            "note": "Closed 24-26 December"
+          }
+        ],
+        "lastEntry": "Gallery clearing begins 30 minutes before closing",
+        "caveat": null,
+        "notes": null,
+        "evidence": {
+          "url": "https://www.vam.ac.uk/south-kensington",
+          "quote": "10.00 – 17.45; Friday 10.00 – 22.00 (some galleries close after 17.45); Closed 24 – 26 December",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site",
+            "url": "https://www.vam.ac.uk/south-kensington",
+            "retrievedOn": "2026-10-14",
+            "note": "Current and upcoming exhibitions are listed (Rising Voices to January 2027; Constantinople to Istanbul from 7 November 2026); closed 24-26 December."
+          }
+        ]
+      }
+    },
+    "plc_london_core-by-clare-smyth": {
+      "id": "plc_london_core-by-clare-smyth",
+      "name": "Core by Clare Smyth",
+      "city": "london",
+      "kind": "meal",
+      "area": "Notting Hill",
+      "timeZone": "Europe/London",
+      "address": "92 Kensington Park Road, London W11 2PN",
+      "coordinates": {
+        "lat": 51.51272,
+        "lng": -0.20311,
+        "basis": "named feature at 92 Kensington Park Road",
+        "osm": "node/7096147785",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [],
+              "tue": [
+                [
+                  "18:30",
+                  "21:45"
+                ]
+              ],
+              "wed": [
+                [
+                  "18:30",
+                  "21:45"
+                ]
+              ],
+              "thu": [
+                [
+                  "12:00",
+                  "14:15"
+                ],
+                [
+                  "18:30",
+                  "21:45"
+                ]
+              ],
+              "fri": [
+                [
+                  "12:00",
+                  "14:15"
+                ],
+                [
+                  "18:30",
+                  "21:45"
+                ]
+              ],
+              "sat": [
+                [
+                  "12:00",
+                  "14:15"
+                ],
+                [
+                  "18:30",
+                  "21:45"
+                ]
+              ],
+              "sun": []
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": "Book ahead; the whole table orders the same menu format.",
+        "notes": "Sunday and Monday are not listed, so they are treated as closed.",
+        "evidence": {
+          "url": "https://www.corebyclaresmyth.com/menus/",
+          "quote": "Lunch: Thursday – Saturday, 12:00 – 14:15; Dinner: Tuesday – Saturday, 18:30 – 21:45",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "restaurant's own site",
+            "url": "https://www.corebyclaresmyth.com/menus/",
+            "retrievedOn": "2026-10-14",
+            "note": "Current priced menus and an online reservation link; the whole table orders the same format."
+          }
+        ]
+      }
+    },
+    "plc_london_monmouth-coffee-borough": {
+      "id": "plc_london_monmouth-coffee-borough",
+      "name": "Monmouth Coffee (Borough)",
+      "city": "london",
+      "kind": "cafe",
+      "area": "Borough",
+      "timeZone": "Europe/London",
+      "address": "2 Park Street, London SE1 9AB",
+      "coordinates": {
+        "lat": 51.5055,
+        "lng": -0.09143,
+        "basis": "named feature at 2 Park Street (not another branch)",
+        "osm": "node/14181043726",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "07:30",
+                  "18:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "07:30",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "07:30",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "07:30",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "07:30",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "07:30",
+                  "18:00"
+                ]
+              ],
+              "sun": []
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": "Card payments only.",
+        "notes": "Read in a browser (automated fetches were refused).",
+        "evidence": {
+          "url": "https://www.monmouthcoffee.co.uk/",
+          "quote": "The Borough 2 Park Street ... Monday to Saturday 7.30am to 6pm Closed Sunday Card payments only",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "roaster's own site",
+            "url": "https://www.monmouthcoffee.co.uk/",
+            "retrievedOn": "2026-10-14",
+            "note": "The 'Our shops' list gives this shop's address and hours; card payments only."
+          }
+        ]
+      }
+    },
+    "plc_london_borough-market": {
+      "id": "plc_london_borough-market",
+      "name": "Borough Market",
+      "city": "london",
+      "kind": "scenic",
+      "area": "Borough",
+      "timeZone": "Europe/London",
+      "address": "8 Southwark Street, London SE1 1TL",
+      "coordinates": {
+        "lat": 51.50553,
+        "lng": -0.09044,
+        "basis": "named feature: the market",
+        "osm": "way/24282400",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-11-29",
+            "weekly": {
+              "mon": [],
+              "tue": [
+                [
+                  "10:00",
+                  "17:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "17:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "17:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "17:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "16:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2026-11-30",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "10:00",
+                  "17:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "10:00",
+                  "17:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "17:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "17:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "17:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "16:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-12-23",
+            "hours": [
+              [
+                "10:00",
+                "18:00"
+              ]
+            ],
+            "note": null
+          },
+          {
+            "date": "2026-12-24",
+            "hours": [
+              [
+                "08:00",
+                "15:00"
+              ]
+            ],
+            "note": "Christmas Eve"
+          },
+          {
+            "date": "2026-12-25",
+            "hours": [],
+            "note": "Festive closure"
+          },
+          {
+            "date": "2026-12-26",
+            "hours": [],
+            "note": "Festive closure"
+          },
+          {
+            "date": "2026-12-27",
+            "hours": [],
+            "note": "Festive closure"
+          },
+          {
+            "date": "2026-12-31",
+            "hours": [
+              [
+                "10:00",
+                "15:00"
+              ]
+            ],
+            "note": null
+          }
+        ],
+        "lastEntry": null,
+        "caveat": "Closed on Mondays until 30 November; traders keep their own hours within the market's.",
+        "notes": null,
+        "evidence": {
+          "url": "https://boroughmarket.org.uk/visit-us/",
+          "quote": "Monday: Closed; Tue–Fri 10am – 5pm; Saturday 9am – 5pm; Sunday 10am – 4pm",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site (Borough Market trustees)",
+            "url": "https://boroughmarket.org.uk/visit-us/",
+            "retrievedOn": "2026-10-14",
+            "note": "Regular trading hours (closed Mondays) and dated festive hours from 30 November 2026 to 2 January 2027."
+          }
+        ]
+      }
+    },
+    "plc_london_padella-borough-market": {
+      "id": "plc_london_padella-borough-market",
+      "name": "Padella (Borough Market)",
+      "city": "london",
+      "kind": "meal",
+      "area": "Borough",
+      "timeZone": "Europe/London",
+      "address": "6 Southwark Street, London SE1 1TQ",
+      "coordinates": {
+        "lat": 51.50513,
+        "lng": -0.08991,
+        "basis": "named feature at 6 Southwark Street (not another branch)",
+        "osm": "node/14181043755",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "11:30",
+                  "15:45"
+                ],
+                [
+                  "17:00",
+                  "22:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "11:30",
+                  "15:45"
+                ],
+                [
+                  "17:00",
+                  "22:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "11:30",
+                  "15:45"
+                ],
+                [
+                  "17:00",
+                  "22:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "11:30",
+                  "15:45"
+                ],
+                [
+                  "17:00",
+                  "22:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "11:30",
+                  "15:45"
+                ],
+                [
+                  "17:00",
+                  "22:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "11:30",
+                  "15:45"
+                ],
+                [
+                  "17:00",
+                  "22:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "11:30",
+                  "15:45"
+                ],
+                [
+                  "17:00",
+                  "21:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": "No reservations: join the virtual queue at the door; groups of up to 6.",
+        "notes": null,
+        "evidence": {
+          "url": "https://www.padella.co/borough-market",
+          "quote": "Lunch Monday - Sunday: 11:30 to 15:45; Dinner Monday - Saturday: 17:00 to 22:30; Sunday: 17:00 to 21:00",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "restaurant's own site",
+            "url": "https://www.padella.co/borough-market",
+            "retrievedOn": "2026-10-14",
+            "note": "A dated daily menu ('Thursday 15th October') and a virtual queue; no reservations, groups up to 6."
+          }
+        ]
+      }
+    },
+    "plc_london_tate-modern": {
+      "id": "plc_london_tate-modern",
+      "name": "Tate Modern",
+      "city": "london",
+      "kind": "landmark",
+      "area": "Bankside",
+      "timeZone": "Europe/London",
+      "address": "Bankside, London SE1 9TG",
+      "coordinates": {
+        "lat": 51.50743,
+        "lng": -0.09934,
+        "basis": "named feature: the gallery building",
+        "osm": "way/24642569",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "21:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "21:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": "30 minutes before closing",
+        "caveat": "Bags larger than 55x40x20 cm are not allowed and there is no cloakroom.",
+        "notes": "Christmas dates were not on the page read.",
+        "evidence": {
+          "url": "https://www.tate.org.uk/visit/tate-modern",
+          "quote": "Sunday to Thursday 10.00–18.00; Friday to Saturday 10.00–21.00; Last entry 30 minutes before closing time",
+          "confidence": "medium"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site",
+            "url": "https://www.tate.org.uk/visit/tate-modern",
+            "retrievedOn": "2026-10-14",
+            "note": "Current exhibitions into 2027 are listed; the Level 0 cloakroom has closed and bags larger than 55x40x20 cm are not allowed."
+          }
+        ]
+      }
+    },
+    "plc_london_dishoom-covent-garden": {
+      "id": "plc_london_dishoom-covent-garden",
+      "name": "Dishoom (Covent Garden)",
+      "city": "london",
+      "kind": "meal",
+      "area": "Covent Garden",
+      "timeZone": "Europe/London",
+      "address": "12 Upper St Martin's Lane, London WC2H 9FB",
+      "coordinates": {
+        "lat": 51.51243,
+        "lng": -0.12686,
+        "basis": "named feature at 12 Upper St Martin's Lane (not another branch)",
+        "osm": "way/207104925",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "08:00",
+                  "23:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "08:00",
+                  "23:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "08:00",
+                  "23:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "08:00",
+                  "23:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "08:00",
+                  "24:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "24:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "23:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": "After 6 PM tables are booked only for groups of six or more; expect a walk-in queue.",
+        "notes": null,
+        "evidence": {
+          "url": "https://www.dishoom.com/covent-garden/",
+          "quote": "Monday–Thursday 8am to 11pm; Friday 8am to 12am; Saturday 9am to 12am; Sunday 9am to 11pm",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "restaurant's own site",
+            "url": "https://www.dishoom.com/covent-garden/",
+            "retrievedOn": "2026-10-14",
+            "note": "Open all day, every day for breakfast, lunch and dinner; bookings for any group by day but only for 6 or more after 6 PM."
+          }
+        ]
+      }
+    },
+    "plc_london_prufrock-coffee-leather-lane": {
+      "id": "plc_london_prufrock-coffee-leather-lane",
+      "name": "Prufrock Coffee (Leather Lane)",
+      "city": "london",
+      "kind": "cafe",
+      "area": "Holborn",
+      "timeZone": "Europe/London",
+      "address": "23-25 Leather Lane, London EC1N 7TE",
+      "coordinates": {
+        "lat": 51.51995,
+        "lng": -0.10952,
+        "basis": "named feature at 23-25 Leather Lane",
+        "osm": "node/4185611903",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "07:30",
+                  "16:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "07:30",
+                  "16:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "07:30",
+                  "16:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "07:30",
+                  "16:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "07:30",
+                  "16:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "08:00",
+                  "17:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": "The kitchen stops serving food at 3:40 PM on weekdays and 4:20 PM at weekends.",
+        "notes": null,
+        "evidence": {
+          "url": "https://www.prufrockcoffee.com/",
+          "quote": "Monday to Friday: 7:30am to 4:30pm; Saturday: 8am to 5pm; Sunday: 9am to 5pm",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "café's own site",
+            "url": "https://www.prufrockcoffee.com/",
+            "retrievedOn": "2026-10-14",
+            "note": "Current hours, a priced menu and an online shop; the kitchen closes before the café."
+          }
+        ]
+      }
+    },
+    "plc_london_st-pauls-cathedral": {
+      "id": "plc_london_st-pauls-cathedral",
+      "name": "St Paul's Cathedral",
+      "city": "london",
+      "kind": "landmark",
+      "area": "City",
+      "timeZone": "Europe/London",
+      "address": "St Paul's Churchyard, London EC4M 8AD",
+      "coordinates": {
+        "lat": 51.51379,
+        "lng": -0.09845,
+        "basis": "named feature: the cathedral",
+        "osm": "way/369161987",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "08:30",
+                  "16:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "08:30",
+                  "16:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "08:30",
+                  "16:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "08:30",
+                  "16:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "08:30",
+                  "16:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "08:30",
+                  "16:30"
+                ]
+              ],
+              "sun": []
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": "usually 16:00",
+        "caveat": "No sightseeing on Sundays; times can change for services and events. Bags larger than 45x30x25 cm are not allowed.",
+        "notes": "Christmas dates were not on the pages read.",
+        "evidence": {
+          "url": "https://www.stpauls.co.uk/planning-your-visit",
+          "quote": "We're open from 8.30am Monday to Saturday for sightseeing. Last entry for sightseeing is usually at 4pm with sightseeing ending 30 minutes after the last entry time.",
+          "confidence": "medium"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site",
+            "url": "https://www.stpauls.co.uk/planning-your-visit",
+            "retrievedOn": "2026-10-14",
+            "note": "Sightseeing tickets are on sale Monday to Saturday; times can change for services and events, and large bags are not allowed."
+          }
+        ]
+      }
+    },
+    "plc_london_flat-iron-covent-garden": {
+      "id": "plc_london_flat-iron-covent-garden",
+      "name": "Flat Iron (Covent Garden)",
+      "city": "london",
+      "kind": "meal",
+      "area": "Covent Garden",
+      "timeZone": "Europe/London",
+      "address": "17-18 Henrietta Street, London WC2E 8QH",
+      "coordinates": {
+        "lat": 51.51081,
+        "lng": -0.12399,
+        "basis": "named feature at 17-18 Henrietta Street (not another branch)",
+        "osm": "node/4611099089",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "11:30",
+                  "22:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "11:30",
+                  "22:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "11:30",
+                  "23:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "11:30",
+                  "23:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "11:30",
+                  "23:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "11:30",
+                  "23:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "11:30",
+                  "22:30"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": null,
+        "notes": null,
+        "evidence": {
+          "url": "https://flatironsteak.co.uk/restaurant/covent-garden/",
+          "quote": "SUN – TUE: 11:30 – 22:30; WED – THU: 11:30 – 23:00; FRI – SAT: 11:30 – 23:30",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "restaurant's own site",
+            "url": "https://flatironsteak.co.uk/restaurant/covent-garden/",
+            "retrievedOn": "2026-10-14",
+            "note": "Branch page with current hours and a booking link; 16 other London branches are not substituted."
+          }
+        ]
+      }
+    },
+    "plc_london_swift-soho": {
+      "id": "plc_london_swift-soho",
+      "name": "Swift Soho",
+      "city": "london",
+      "kind": "meal",
+      "area": "Soho",
+      "timeZone": "Europe/London",
+      "address": "12 Old Compton Street, London W1D 4TQ",
+      "coordinates": {
+        "lat": 51.51374,
+        "lng": -0.12999,
+        "basis": "named feature at 12 Old Compton Street (not another branch)",
+        "osm": "node/692190788",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "15:00",
+                  "24:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "15:00",
+                  "24:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "15:00",
+                  "24:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "15:00",
+                  "24:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "15:00",
+                  "24:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "15:00",
+                  "24:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "15:00",
+                  "23:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": "Walk-ins accepted; booking recommended.",
+        "notes": null,
+        "evidence": {
+          "url": "https://www.barswift.com/swift-bar-locations",
+          "quote": "Monday – Saturday 3pm-Midnight; Sunday 3pm-11pm",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "bar's own site",
+            "url": "https://www.barswift.com/swift-bar-locations",
+            "retrievedOn": "2026-10-14",
+            "note": "Locations page with current hours and a booking link; walk-ins accepted."
+          }
+        ]
+      }
+    },
+    "plc_london_the-breakfast-club-soho": {
+      "id": "plc_london_the-breakfast-club-soho",
+      "name": "The Breakfast Club (Soho)",
+      "city": "london",
+      "kind": "cafe",
+      "area": "Soho",
+      "timeZone": "Europe/London",
+      "address": "33 D'Arblay Street, London W1F 8EU",
+      "coordinates": {
+        "lat": 51.51471,
+        "lng": -0.13533,
+        "basis": "named feature at 33 D'Arblay Street (the original branch)",
+        "osm": "way/477968033",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "07:30",
+                  "15:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "07:30",
+                  "15:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "07:30",
+                  "15:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "07:30",
+                  "15:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "07:30",
+                  "15:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "07:30",
+                  "17:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "07:30",
+                  "17:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": null,
+        "notes": "The original D'Arblay Street café. No holiday hours were published.",
+        "evidence": {
+          "url": "https://www.thebreakfastclubcafes.com/soho",
+          "quote": "Monday to Friday: 7:30am - 3:00pm; Saturday: 7:30am - 5:00pm; Sunday: 7:30am - 5:00pm",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "café's own branch page",
+            "url": "https://www.thebreakfastclubcafes.com/soho",
+            "retrievedOn": "2026-10-14",
+            "note": "The original 2005 branch, with current hours and a menu 'available now'."
+          }
+        ]
+      }
+    },
     "plc_berlin_lebenswelten-bistro-humboldt-forum": {
       "id": "plc_berlin_lebenswelten-bistro-humboldt-forum",
       "name": "Lebenswelten Bistro (Humboldt Forum)",
@@ -8052,6 +10585,177 @@ window.HB_PLACES = {
         "minutes": 7,
         "mode": "walk",
         "summary": "about 0.5 km on foot",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_london_tower-of-london|plc_london_tower-bridge": {
+        "minutes": 19,
+        "mode": "walk",
+        "summary": "about 0.5 km on foot to the bridge's entrance side",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_london_tower-bridge|plc_london_leadenhall-market": {
+        "minutes": 32,
+        "mode": "walk",
+        "summary": "about 1.4 km on foot into the City",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_london_tower-bridge|plc_london_sky-garden": {
+        "minutes": 28,
+        "mode": "walk",
+        "summary": "about 1.2 km on foot into the City",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_london_leadenhall-market|plc_london_sky-garden": {
+        "minutes": 4,
+        "mode": "walk",
+        "summary": "about 0.3 km on foot",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_london_westminster-abbey|plc_london_national-gallery": {
+        "minutes": 17,
+        "mode": "walk",
+        "summary": "about 1.2 km on foot",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_london_national-gallery|plc_london_covent-garden-market-building-and-piazza": {
+        "minutes": 10,
+        "mode": "walk",
+        "summary": "about 0.75 km on foot",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_london_covent-garden-market-building-and-piazza|plc_london_rules": {
+        "minutes": 3,
+        "mode": "walk",
+        "summary": "about 0.2 km on foot",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_london_national-gallery|plc_london_rules": {
+        "minutes": 8,
+        "mode": "walk",
+        "summary": "about 0.6 km on foot",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_london_granger-and-co-notting-hill|plc_london_natural-history-museum": {
+        "minutes": 33,
+        "mode": "transit",
+        "summary": "Bus 27, then bus 70 to Prince Consort Road, with about 1 km of walking in total",
+        "conditions": "Wednesday 4 Nov 2026, departing about 09:30",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous journey planner (transitous.org), TfL timetable data",
+        "alternatives": "Bus 70 throughout: about 36 min; walking: about 45 min"
+      },
+      "plc_london_natural-history-museum|plc_london_vanda-south-kensington": {
+        "minutes": 16,
+        "mode": "walk",
+        "summary": "about 1.1 km on foot along Cromwell Road",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_london_vanda-south-kensington|plc_london_core-by-clare-smyth": {
+        "minutes": 28,
+        "mode": "transit",
+        "summary": "Circle line from South Kensington to Notting Hill Gate, with about 1.3 km of walking in total",
+        "conditions": "Wednesday 4 Nov 2026, departing about 18:15",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous journey planner (transitous.org), TfL timetable data",
+        "alternatives": "Piccadilly then District line: about 31 min"
+      },
+      "plc_london_natural-history-museum|plc_london_core-by-clare-smyth": {
+        "minutes": 30,
+        "mode": "transit",
+        "summary": "Circle line from Gloucester Road to Notting Hill Gate, with about 1.7 km of walking in total",
+        "conditions": "Wednesday 4 Nov 2026, departing about 18:15",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous journey planner (transitous.org), TfL timetable data",
+        "alternatives": "Bus 70: about 33 min"
+      },
+      "plc_london_monmouth-coffee-borough|plc_london_borough-market": {
+        "minutes": 1,
+        "mode": "walk",
+        "summary": "next door, about 80 m",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_london_borough-market|plc_london_padella-borough-market": {
+        "minutes": 1,
+        "mode": "walk",
+        "summary": "about 80 m, at the market's edge",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_london_padella-borough-market|plc_london_tate-modern": {
+        "minutes": 13,
+        "mode": "walk",
+        "summary": "about 0.9 km on foot along Bankside",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_london_tate-modern|plc_london_dishoom-covent-garden": {
+        "minutes": 25,
+        "mode": "transit",
+        "summary": "Bus 381 to Waterloo, then the Northern line to Leicester Square, with about 0.8 km of walking in total",
+        "conditions": "Wednesday 4 Nov 2026, departing about 19:00",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous journey planner (transitous.org), TfL timetable data",
+        "alternatives": "District line from Blackfriars: about 31 min; walking: about 38 min"
+      },
+      "plc_london_prufrock-coffee-leather-lane|plc_london_st-pauls-cathedral": {
+        "minutes": 14,
+        "mode": "transit",
+        "summary": "Central line from Chancery Lane to St. Paul's, with about 0.8 km of walking in total",
+        "conditions": "Wednesday 4 Nov 2026, departing about 09:45",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous journey planner (transitous.org), TfL timetable data",
+        "alternatives": "Walking: about 17 min"
+      },
+      "plc_london_st-pauls-cathedral|plc_london_flat-iron-covent-garden": {
+        "minutes": 21,
+        "mode": "transit",
+        "summary": "Central line to Tottenham Court Road, then the Northern line to Leicester Square, with about 1 km of walking in total",
+        "conditions": "Wednesday 4 Nov 2026, departing about 12:30",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous journey planner (transitous.org), TfL timetable data",
+        "alternatives": "District line from Blackfriars: about 23 min"
+      },
+      "plc_london_flat-iron-covent-garden|plc_london_swift-soho": {
+        "minutes": 9,
+        "mode": "walk",
+        "summary": "about 0.65 km on foot",
         "conditions": "walking route",
         "checkedOn": "2026-10-14",
         "source": "Transitous street routing (OpenStreetMap data)",
