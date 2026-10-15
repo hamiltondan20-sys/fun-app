@@ -47,17 +47,29 @@ const PLACES = [
   ["singapore", "Tiong Bahru Bakery (Eng Hoon Street)", "cafe", "56 Eng Hoon Street #01-70, Singapore", "Tiong Bahru", 1.28445, 103.83365, "node/3100404287", "named feature at 56 Eng Hoon Street"],
   ["singapore", "JUMBO Seafood (Riverside Point)", "meal", "30 Merchant Road #01-01/02, Riverside Point, Singapore", "Clarke Quay", 1.28890, 103.84469, "node/3806234846", "named feature at Riverside Point, 30 Merchant Road (not another JUMBO branch)"],
   ["singapore", "Jigger & Pony", "meal", "Amara Singapore, 165 Tanjong Pagar Road, Singapore", "Tanjong Pagar", 1.27494, 103.84366, "node/4302905385", "the hotel's named feature; the bar is inside Amara Singapore"],
-  ["singapore", "ATLAS", "meal", "Parkview Square, 600 North Bridge Road, Singapore", "Bugis", 1.30010, 103.85771, "node/6033094985", "named feature at Parkview Square, 600 North Bridge Road"]
+  ["singapore", "ATLAS", "meal", "Parkview Square, 600 North Bridge Road, Singapore", "Bugis", 1.30010, 103.85771, "node/6033094985", "named feature at Parkview Square, 600 North Bridge Road"],
+  // Hong Kong: OSM lookup on 2026-10-14.
+  ["hongkong", "PMQ", "landmark", "35 Aberdeen Street, Central, Hong Kong", "Central", 22.28333, 114.15184, "node/7057630219", "named feature at 35 Aberdeen Street"],
+  ["hongkong", "Duddell's (Central)", "meal", "Level 3 & 4, 1 Duddell Street, Central, Hong Kong", "Central", 22.28024, 114.15725, "way/295407529", "the building at 1 Duddell Street"],
+  ["hongkong", "Lung King Heen", "meal", "4/F, Four Seasons Hotel Hong Kong, 8 Finance Street, Central", "Central", 22.28647, 114.15691, "node/11815493063", "named feature in the Four Seasons Hotel, 8 Finance Street"],
+  ["hongkong", "ARGO", "meal", "1/F, Four Seasons Hotel Hong Kong, 8 Finance Street, Central", "Central", 22.28663, 114.15666, "way/148554935", "the Four Seasons Hotel at 8 Finance Street; the bar is on 1/F"],
+  ["hongkong", "Star Ferry (Central-Tsim Sha Tsui)", "scenic", "Tsim Sha Tsui Star Ferry Pier, Salisbury Road, Kowloon", "Tsim Sha Tsui", 22.29354, 114.16799, "relation/14941144", "named feature: Tsim Sha Tsui Star Ferry Pier, where this plan boards"],
+  ["hongkong", "noc (Tsim Sha Tsui, Sun Arcade)", "cafe", "Shop 02, UG/F, The Sun Arcade, 28 Canton Road, Tsim Sha Tsui", "Tsim Sha Tsui", 22.29669, 114.16960, "way/693737390", "the Sun Arcade at 28 Canton Road (not the Tsim Sha Tsui East branch)"],
+  ["hongkong", "M+", "landmark", "38 Museum Drive, West Kowloon Cultural District, Kowloon", "West Kowloon", 22.30105, 114.15915, "way/549702815", "named feature: M+ building"],
+  ["hongkong", "Bakehouse (Wan Chai)", "cafe", "G/F, 14 Tai Wong Street East, Wan Chai, Hong Kong", "Wan Chai", 22.27587, 114.17140, "node/6788818059", "named feature on Tai Wong Street East (not another branch)"]
 ];
 
 const CITY_META = {
   berlin: { ledgerKey: "Berlin, Germany", timeZone: "Europe/Berlin", osmRetrievedOn: "2026-10-10" },
-  singapore: { ledgerKey: "Singapore, Singapore", timeZone: "Asia/Singapore", osmRetrievedOn: "2026-10-12" }
+  singapore: { ledgerKey: "Singapore, Singapore", timeZone: "Asia/Singapore", osmRetrievedOn: "2026-10-12" },
+  hongkong: { ledgerKey: "Hong Kong, China", timeZone: "Asia/Hong_Kong", osmRetrievedOn: "2026-10-14" }
 };
 
-// "&" reads as "und" in German place names (Nobelhart & Schmutzig), "and" elsewhere.
+// "&" reads as "und" in German place names (Nobelhart & Schmutzig), "and" elsewhere. Apostrophes
+// drop (Duddell's -> duddells) and "+" reads as "plus" (M+ -> m-plus).
 const slug = (value, city) => value.toLowerCase()
   .replace(/\(.*?\)/g, (match) => match.replace(/[()]/g, ""))
+  .replace(/['’]/g, "").replace(/\+/g, "-plus")
   .replace(/&/g, city === "berlin" ? "und" : "and").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
 
 // Researched weekly hours (data/place-hours.json), each with its official source and quote.

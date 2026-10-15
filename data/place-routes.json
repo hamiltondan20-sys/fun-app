@@ -1,73 +1,199 @@
 {
-  "about": "Journeys between consecutive itinerary stops, looked up once (not live). Public-transport minutes are door-to-door including walking, for the stated weekday and departure time; they vary by time of day, day of week and service changes. Walking routes follow streets and footpaths. A route's own `source` overrides the default. Berlin: VBB timetable data via https://v6.vbb.transport.rest, for every hop of 1.5 km or more; Tempelhofer Feld is routed via its Tempelhofer Damm main entrance (Tor 10); Restaurant Anhalt shares the Deutsches Technikmuseum's location, so its journey is the museum's. Singapore: the Transitous journey planner (https://transitous.org, MOTIS) on 2026-10-12, using LTA timetable data for buses and MRT and OpenStreetMap for walking; hops of 1.5 km or more, plus Marina Bay walks where the street route is much longer than the straight line; Singapore Botanic Gardens is routed from Tanglin Gate; National Kitchen shares National Gallery Singapore's location.",
+  "about": "Journeys between consecutive itinerary stops, looked up once (not live). Public-transport minutes are door-to-door including walking, for the stated weekday and departure time; they vary by time of day, day of week and service changes. Walking routes follow streets and footpaths. A route's own `source` overrides the default. Berlin: VBB timetable data via https://v6.vbb.transport.rest, for every hop of 1.5 km or more; Tempelhofer Feld is routed via its Tempelhofer Damm main entrance (Tor 10); Restaurant Anhalt shares the Deutsches Technikmuseum's location, so its journey is the museum's. Singapore: the Transitous journey planner (https://transitous.org, MOTIS) on 2026-10-12, using LTA timetable data for buses and MRT and OpenStreetMap for walking; hops of 1.5 km or more, plus Marina Bay walks where the street route is much longer than the straight line; Singapore Botanic Gardens is routed from Tanglin Gate; National Kitchen shares National Gallery Singapore's location. Hong Kong: Transitous on 2026-10-14 (MTR, bus and Star Ferry timetable data; OpenStreetMap for walking), for Wednesday 21 Oct 2026; Central walks are street-routed because of the hills. The Ngong Ping 360 cable-car ride is not in the timetable data and its duration is not published as text by the operator, so that hop is left untimed.",
   "source": "VBB Verkehrsverbund Berlin-Brandenburg timetable data, via v6.vbb.transport.rest",
   "routes": {
     "plc_berlin_luisenbraeu-by-lemke|plc_berlin_zoo-berlin": {
-      "minutes": 28, "mode": "transit", "summary": "Bus M45, with about 0.8 km of walking in total",
-      "conditions": "Wednesday 14 Oct 2026, departing about 13:40", "checkedOn": "2026-10-10",
+      "minutes": 28,
+      "mode": "transit",
+      "summary": "Bus M45, with about 0.8 km of walking in total",
+      "conditions": "Wednesday 14 Oct 2026, departing about 13:40",
+      "checkedOn": "2026-10-10",
       "alternatives": "Bus 109: about 34 min; Bus M45 then U2: about 27 min"
     },
     "plc_berlin_zoo-berlin|plc_berlin_green-door-bar": {
-      "minutes": 24, "mode": "transit", "summary": "U2, with about 1.3 km of walking in total",
-      "conditions": "Wednesday 14 Oct 2026, departing about 18:15", "checkedOn": "2026-10-10",
+      "minutes": 24,
+      "mode": "transit",
+      "summary": "U2, with about 1.3 km of walking in total",
+      "conditions": "Wednesday 14 Oct 2026, departing about 18:15",
+      "checkedOn": "2026-10-10",
       "alternatives": "Bus 187: about 24 min"
     },
     "plc_berlin_markthalle-neun|plc_berlin_restaurant-tim-raue": {
-      "minutes": 21, "mode": "transit", "summary": "Bus M29, with about 0.7 km of walking",
-      "conditions": "Wednesday 14 Oct 2026, departing about 18:50", "checkedOn": "2026-10-10",
+      "minutes": 21,
+      "mode": "transit",
+      "summary": "Bus M29, with about 0.7 km of walking",
+      "conditions": "Wednesday 14 Oct 2026, departing about 18:50",
+      "checkedOn": "2026-10-10",
       "alternatives": null
     },
     "plc_berlin_restaurant-anhalt-deutsches-technikmuseum|plc_berlin_tempelhofer-feld": {
-      "minutes": 22, "mode": "transit", "summary": "U6 to the Tempelhofer Damm entrance, with about 1.4 km of walking",
-      "conditions": "Wednesday 14 Oct 2026, departing about 14:20", "checkedOn": "2026-10-10",
+      "minutes": 22,
+      "mode": "transit",
+      "summary": "U6 to the Tempelhofer Damm entrance, with about 1.4 km of walking",
+      "conditions": "Wednesday 14 Oct 2026, departing about 14:20",
+      "checkedOn": "2026-10-10",
       "alternatives": null
     },
     "plc_berlin_tempelhofer-feld|plc_berlin_nobelhart-und-schmutzig": {
-      "minutes": 13, "mode": "transit", "summary": "U6 from the Tempelhofer Damm entrance, with about 0.4 km of walking",
-      "conditions": "Wednesday 14 Oct 2026, departing about 18:50", "checkedOn": "2026-10-10",
+      "minutes": 13,
+      "mode": "transit",
+      "summary": "U6 from the Tempelhofer Damm entrance, with about 0.4 km of walking",
+      "conditions": "Wednesday 14 Oct 2026, departing about 18:50",
+      "checkedOn": "2026-10-10",
       "alternatives": null
     },
     "plc_singapore_national-kitchen-by-violet-oon|plc_singapore_artscience-museum": {
-      "minutes": 26, "mode": "walk", "summary": "about 1.9 km on foot around the Marina Bay waterfront",
-      "conditions": "walking route", "checkedOn": "2026-10-12",
+      "minutes": 26,
+      "mode": "walk",
+      "summary": "about 1.9 km on foot around the Marina Bay waterfront",
+      "conditions": "walking route",
+      "checkedOn": "2026-10-12",
       "source": "Transitous street routing (OpenStreetMap data)",
       "alternatives": null
     },
     "plc_singapore_artscience-museum|plc_singapore_gardens-by-the-bay-outdoor-gardens": {
-      "minutes": 14, "mode": "walk", "summary": "about 1 km on foot to Supertree Grove",
-      "conditions": "walking route", "checkedOn": "2026-10-12",
+      "minutes": 14,
+      "mode": "walk",
+      "summary": "about 1 km on foot to Supertree Grove",
+      "conditions": "walking route",
+      "checkedOn": "2026-10-12",
       "source": "Transitous street routing (OpenStreetMap data)",
       "alternatives": null
     },
     "plc_singapore_national-kitchen-by-violet-oon|plc_singapore_gardens-by-the-bay-outdoor-gardens": {
-      "minutes": 28, "mode": "transit", "summary": "MRT from Esplanade (Circle Line, then Downtown Line at Promenade) to Bayfront, with about 1.4 km of walking in total",
-      "conditions": "Wednesday 14 Oct 2026, departing about 17:15", "checkedOn": "2026-10-12",
+      "minutes": 28,
+      "mode": "transit",
+      "summary": "MRT from Esplanade (Circle Line, then Downtown Line at Promenade) to Bayfront, with about 1.4 km of walking in total",
+      "conditions": "Wednesday 14 Oct 2026, departing about 17:15",
+      "checkedOn": "2026-10-12",
       "source": "Transitous journey planner (transitous.org), LTA timetable data",
       "alternatives": "North-South Line from City Hall, then Circle Line: about 28 min; Bus 97: about 33 min"
     },
     "plc_singapore_singapore-botanic-gardens|plc_singapore_candlenut": {
-      "minutes": 17, "mode": "walk", "summary": "about 1.2 km on foot from Tanglin Gate to Dempsey Road",
-      "conditions": "walking route", "checkedOn": "2026-10-12",
+      "minutes": 17,
+      "mode": "walk",
+      "summary": "about 1.2 km on foot from Tanglin Gate to Dempsey Road",
+      "conditions": "walking route",
+      "checkedOn": "2026-10-12",
       "source": "Transitous street routing (OpenStreetMap data)",
       "alternatives": null
     },
     "plc_singapore_candlenut|plc_singapore_atlas": {
-      "minutes": 36, "mode": "transit", "summary": "Bus 7 to Bugis, with about 0.9 km of walking in total",
-      "conditions": "Wednesday 14 Oct 2026, departing about 20:10", "checkedOn": "2026-10-12",
+      "minutes": 36,
+      "mode": "transit",
+      "summary": "Bus 7 to Bugis, with about 0.9 km of walking in total",
+      "conditions": "Wednesday 14 Oct 2026, departing about 20:10",
+      "checkedOn": "2026-10-12",
       "source": "Transitous journey planner (transitous.org), LTA timetable data",
       "alternatives": "Bus 174 then Downtown Line MRT: about 38 min"
     },
     "plc_singapore_plain-vanilla-tiong-bahru|plc_singapore_jumbo-seafood-riverside-point": {
-      "minutes": 23, "mode": "transit", "summary": "Bus 63, with about 1 km of walking in total",
-      "conditions": "Wednesday 14 Oct 2026, departing about 18:30", "checkedOn": "2026-10-12",
+      "minutes": 23,
+      "mode": "transit",
+      "summary": "Bus 63, with about 1 km of walking in total",
+      "conditions": "Wednesday 14 Oct 2026, departing about 18:30",
+      "checkedOn": "2026-10-12",
       "source": "Transitous journey planner (transitous.org), LTA timetable data",
       "alternatives": "MRT from Tiong Bahru (East-West Line, then North-East Line at Outram Park): about 25 min"
     },
     "plc_singapore_jumbo-seafood-riverside-point|plc_singapore_jigger-and-pony": {
-      "minutes": 20, "mode": "transit", "summary": "MRT from Clarke Quay (North-East Line, then East-West Line at Outram Park) to Tanjong Pagar, with about 0.8 km of walking in total",
-      "conditions": "Wednesday 14 Oct 2026, departing about 21:00", "checkedOn": "2026-10-12",
+      "minutes": 20,
+      "mode": "transit",
+      "summary": "MRT from Clarke Quay (North-East Line, then East-West Line at Outram Park) to Tanjong Pagar, with about 0.8 km of walking in total",
+      "conditions": "Wednesday 14 Oct 2026, departing about 21:00",
+      "checkedOn": "2026-10-12",
       "source": "Transitous journey planner (transitous.org), LTA timetable data",
       "alternatives": "Walking: about 29 min"
+    },
+    "plc_hongkong_man-mo-temple|plc_hongkong_tai-kwun": {
+      "minutes": 9,
+      "mode": "walk",
+      "summary": "about 0.6 km on foot along Hollywood Road",
+      "conditions": "walking route",
+      "checkedOn": "2026-10-14",
+      "source": "Transitous street routing (OpenStreetMap data)",
+      "alternatives": null
+    },
+    "plc_hongkong_tai-kwun|plc_hongkong_duddells-central": {
+      "minutes": 8,
+      "mode": "walk",
+      "summary": "about 0.6 km on foot, downhill to Duddell Street",
+      "conditions": "walking route",
+      "checkedOn": "2026-10-14",
+      "source": "Transitous street routing (OpenStreetMap data)",
+      "alternatives": null
+    },
+    "plc_hongkong_duddells-central|plc_hongkong_pmq": {
+      "minutes": 13,
+      "mode": "walk",
+      "summary": "about 0.9 km on foot, uphill to Aberdeen Street",
+      "conditions": "walking route",
+      "checkedOn": "2026-10-14",
+      "source": "Transitous street routing (OpenStreetMap data)",
+      "alternatives": null
+    },
+    "plc_hongkong_the-peak-tram-central-terminus|plc_hongkong_maxims-palace-city-hall": {
+      "minutes": 12,
+      "mode": "walk",
+      "summary": "about 0.85 km on foot from Garden Road to City Hall",
+      "conditions": "walking route",
+      "checkedOn": "2026-10-14",
+      "source": "Transitous street routing (OpenStreetMap data)",
+      "alternatives": null
+    },
+    "plc_hongkong_maxims-palace-city-hall|plc_hongkong_argo": {
+      "minutes": 15,
+      "mode": "walk",
+      "summary": "about 1 km on foot along the Central waterfront to the Four Seasons",
+      "conditions": "walking route",
+      "checkedOn": "2026-10-14",
+      "source": "Transitous street routing (OpenStreetMap data)",
+      "alternatives": null
+    },
+    "plc_hongkong_noc-tsim-sha-tsui-sun-arcade|plc_hongkong_m-plus": {
+      "minutes": 14,
+      "mode": "transit",
+      "summary": "Bus 215X or 281A from Kowloon Park Drive, with about 0.5 km of walking in total",
+      "conditions": "Wednesday 21 Oct 2026, departing about 09:45",
+      "checkedOn": "2026-10-14",
+      "source": "Transitous journey planner (transitous.org), Hong Kong timetable data",
+      "alternatives": "Walking: about 28 min"
+    },
+    "plc_hongkong_m-plus|plc_hongkong_hong-kong-palace-museum": {
+      "minutes": 7,
+      "mode": "walk",
+      "summary": "about 0.5 km on foot through the West Kowloon Cultural District",
+      "conditions": "walking route",
+      "checkedOn": "2026-10-14",
+      "source": "Transitous street routing (OpenStreetMap data)",
+      "alternatives": null
+    },
+    "plc_hongkong_hong-kong-palace-museum|plc_hongkong_star-ferry-central-tsim-sha-tsui": {
+      "minutes": 20,
+      "mode": "transit",
+      "summary": "Bus 296D to Canton Road, with about 0.7 km of walking in total",
+      "conditions": "Wednesday 21 Oct 2026, departing about 17:30",
+      "checkedOn": "2026-10-14",
+      "source": "Transitous journey planner (transitous.org), Hong Kong timetable data",
+      "alternatives": "Walking: about 37 min"
+    },
+    "plc_hongkong_m-plus|plc_hongkong_star-ferry-central-tsim-sha-tsui": {
+      "minutes": 21,
+      "mode": "transit",
+      "summary": "Bus 296D to Canton Road, with about 0.7 km of walking in total",
+      "conditions": "Wednesday 21 Oct 2026, departing about 17:30",
+      "checkedOn": "2026-10-14",
+      "source": "Transitous journey planner (transitous.org), Hong Kong timetable data",
+      "alternatives": "Walking: about 33 min"
+    },
+    "plc_hongkong_star-ferry-central-tsim-sha-tsui|plc_hongkong_lung-king-heen": {
+      "minutes": 23,
+      "mode": "transit",
+      "summary": "the Star Ferry to Central Pier 7, then about 0.8 km on foot",
+      "conditions": "Wednesday 21 Oct 2026, departing about 18:15",
+      "checkedOn": "2026-10-14",
+      "source": "Transitous journey planner (transitous.org), Hong Kong timetable data",
+      "alternatives": "MTR Tsuen Wan Line to Central: about 25 min"
     }
   }
 }

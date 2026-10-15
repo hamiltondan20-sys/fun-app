@@ -214,7 +214,14 @@
   const baseGetTimelineTemplates = window.HB_TRIP_HELPERS.getTimelineTemplates;
   const seedByName = (city) => generatedSeeds.find((seed) => seed.city === city || cityName(seed) === city || seed.title === city);
 
+  // Cities with researched itineraries (registry places in data/places.js, loaded later) keep the
+  // area list written for those places; the seed's areas would name districts the plan never visits.
+  const hasResearchedPlaces = (city) => {
+    const key = String(city || "").split(",")[0].toLowerCase().replace(/[^a-z]/g, "");
+    return Object.values(window.HB_PLACES?.places || {}).some((place) => place.city === key);
+  };
   window.HB_TRIP_HELPERS.getAreaSet = function (city) {
+    if (hasResearchedPlaces(city)) return baseGetAreaSet(city);
     return seedByName(city)?.areas || baseGetAreaSet(city);
   };
   window.HB_TRIP_HELPERS.getDayHighlights = function (city, areas) {

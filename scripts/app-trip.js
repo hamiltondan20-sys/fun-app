@@ -884,6 +884,9 @@ function getBlueprintTopPlaces() {
     }
 
     function buildDayOrderNote(day, index, totalDays) {
+      // A researched day can explain its own route when the stops' distances would mislead
+      // (e.g. a cable car that is not in timetable data).
+      if (day.orderNote) return day.orderNote;
       const firstStop = day.item?.timeline?.[0]?.title || day.highlight || day.area;
       // Name the last real stop, not a free-time block like "Pack and travel".
       const namedStops = (day.item?.timeline || []).filter((step) => step.kind !== "flexible");

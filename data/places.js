@@ -3386,6 +3386,944 @@ window.HB_PLACES = {
         ]
       }
     },
+    "plc_hongkong_pmq": {
+      "id": "plc_hongkong_pmq",
+      "name": "PMQ",
+      "city": "hongkong",
+      "kind": "landmark",
+      "area": "Central",
+      "timeZone": "Asia/Hong_Kong",
+      "address": "35 Aberdeen Street, Central, Hong Kong",
+      "coordinates": {
+        "lat": 22.28333,
+        "lng": 114.15184,
+        "basis": "named feature at 35 Aberdeen Street",
+        "osm": "node/7057630219",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "12:00",
+                  "19:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "12:00",
+                  "19:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "12:00",
+                  "19:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "12:00",
+                  "19:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "12:00",
+                  "19:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "12:00",
+                  "19:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "12:00",
+                  "19:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": "Individual studios and shops set their own hours, so some may be closed within the general noon-7 PM window.",
+        "notes": "General hours not tied to specific days; cafés and restaurants keep 09:00-23:00.",
+        "evidence": {
+          "url": "https://www.pmq.org.hk/tourist-information/explore-pmq/?lang=en",
+          "quote": "Studios and shops: 12:00nn – 7:00pm; Cafes and restaurants: 9:00am – 11:00pm",
+          "confidence": "medium"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-06",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "official venue operator",
+            "url": "https://www.pmq.org.hk/tourist-information/explore-pmq/?lang=en",
+            "locationUrl": "https://www.pmq.org.hk/the-site/location-transportation/",
+            "retrievedOn": "2026-10-06",
+            "note": "Current studio/shop visitor information and walking routes from MTR stations. Individual tenant and event hours differ; no specific workshop or free admission promise."
+          }
+        ]
+      }
+    },
+    "plc_hongkong_duddells-central": {
+      "id": "plc_hongkong_duddells-central",
+      "name": "Duddell's (Central)",
+      "city": "hongkong",
+      "kind": "meal",
+      "area": "Central",
+      "timeZone": "Asia/Hong_Kong",
+      "address": "Level 3 & 4, 1 Duddell Street, Central, Hong Kong",
+      "coordinates": {
+        "lat": 22.28024,
+        "lng": 114.15725,
+        "basis": "the building at 1 Duddell Street",
+        "osm": "way/295407529",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "23:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "23:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "23:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "23:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "23:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "23:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "23:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": "Last orders: lunch 14:30, dinner 21:30",
+        "caveat": null,
+        "notes": "Main dining room hours; the 4/F Upper Room keeps longer hours. No dated holiday hours are published.",
+        "evidence": {
+          "url": "https://duddells.co/",
+          "quote": "3/F Main Dining Room: Monday ~ Sunday 12pm-3pm (2:30pm last order) 6pm-11pm (9:30pm last order)",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-06",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "business's own site",
+            "url": "https://duddells.co/",
+            "locationUrl": "https://duddells.co/",
+            "retrievedOn": "2026-10-06",
+            "note": "Current lunch and dinner menus, reservations and contact address after renovation. Main dining room and Upper Room have different service arrangements. Airport branch is not substituted."
+          }
+        ]
+      }
+    },
+    "plc_hongkong_lung-king-heen": {
+      "id": "plc_hongkong_lung-king-heen",
+      "name": "Lung King Heen",
+      "city": "hongkong",
+      "kind": "meal",
+      "area": "Central",
+      "timeZone": "Asia/Hong_Kong",
+      "address": "4/F, Four Seasons Hotel Hong Kong, 8 Finance Street, Central",
+      "coordinates": {
+        "lat": 22.28647,
+        "lng": 114.15691,
+        "basis": "named feature in the Four Seasons Hotel, 8 Finance Street",
+        "osm": "node/11815493063",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "12:00",
+                  "14:30"
+                ],
+                [
+                  "18:00",
+                  null
+                ]
+              ],
+              "tue": [
+                [
+                  "12:00",
+                  "14:30"
+                ],
+                [
+                  "18:00",
+                  null
+                ]
+              ],
+              "wed": [
+                [
+                  "12:00",
+                  "14:30"
+                ],
+                [
+                  "18:00",
+                  null
+                ]
+              ],
+              "thu": [
+                [
+                  "12:00",
+                  "14:30"
+                ],
+                [
+                  "18:00",
+                  null
+                ]
+              ],
+              "fri": [
+                [
+                  "12:00",
+                  "14:30"
+                ],
+                [
+                  "18:00",
+                  null
+                ]
+              ],
+              "sat": [
+                [
+                  "11:30",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  null
+                ]
+              ],
+              "sun": [
+                [
+                  "11:30",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  null
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-12-25",
+            "hours": [
+              [
+                "11:30",
+                "15:00"
+              ],
+              [
+                "18:00",
+                null
+              ]
+            ],
+            "note": "Public holiday lunch hours"
+          }
+        ],
+        "lastEntry": "Dinner: last seating 20:30, last order 21:00",
+        "caveat": "Reserve ahead. Lunch has a minimum spend of HKD 700 plus service per person aged 12+, and on weekdays children must be 7 or older. Smart-casual dress.",
+        "notes": "Read in a browser (automated fetches were refused). No dinner closing time is published, only last seating and last order.",
+        "evidence": {
+          "url": "https://www.fourseasons.com/hongkong/dining/restaurants/lung_king_heen/",
+          "quote": "LUNCH MONDAY – FRIDAY 12:00 NOON – 2:30 PM ... SATURDAY, SUNDAY AND PUBLIC HOLIDAYS 11:30 AM – 3:00 PM ... DINNER 6:00 – 8:30 PM (LAST SEATING) 9:00 PM (LAST ORDER)",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-06",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "business's own hotel site",
+            "url": "https://www.fourseasons.com/hongkong/dining/restaurants/lung_king_heen/",
+            "locationUrl": "https://www.fourseasons.com/hongkong/getting-here/",
+            "retrievedOn": "2026-10-06",
+            "note": "Current lunch/dinner service, menus and reservations. Weekday child-age restrictions are advertised. Getting-here page notes IFC escalator maintenance September 1-November 30, 2026 and lift access."
+          }
+        ]
+      }
+    },
+    "plc_hongkong_argo": {
+      "id": "plc_hongkong_argo",
+      "name": "ARGO",
+      "city": "hongkong",
+      "kind": "meal",
+      "area": "Central",
+      "timeZone": "Asia/Hong_Kong",
+      "address": "1/F, Four Seasons Hotel Hong Kong, 8 Finance Street, Central",
+      "coordinates": {
+        "lat": 22.28663,
+        "lng": 114.15666,
+        "basis": "the Four Seasons Hotel at 8 Finance Street; the bar is on 1/F",
+        "osm": "way/148554935",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "17:00",
+                  "01:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "17:00",
+                  "01:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "17:00",
+                  "01:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "17:00",
+                  "01:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "17:00",
+                  "02:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "17:00",
+                  "02:00"
+                ]
+              ],
+              "sun": null
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": "No Sunday hours are published. Children 8 and older are welcome; smart-casual dress.",
+        "notes": "Read in a browser (automated fetches were refused).",
+        "evidence": {
+          "url": "https://www.fourseasons.com/hongkong/dining/lounges/argo/",
+          "quote": "MONDAY – THURSDAY 5:00 PM – 1:00 AM ... FRIDAY – SATURDAY 5:00 PM – 2:00 AM",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-06",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "business's own hotel site",
+            "url": "https://www.fourseasons.com/hongkong/dining/lounges/argo/",
+            "locationUrl": "https://www.fourseasons.com/hongkong/getting-here/",
+            "retrievedOn": "2026-10-06",
+            "note": "Current evening hours, cocktail menu and reservation contact; non-hotel guests welcome. Directions identify current hotel entrance arrangements. Not presented as unrestricted children's access."
+          }
+        ]
+      }
+    },
+    "plc_hongkong_star-ferry-central-tsim-sha-tsui": {
+      "id": "plc_hongkong_star-ferry-central-tsim-sha-tsui",
+      "name": "Star Ferry (Central-Tsim Sha Tsui)",
+      "city": "hongkong",
+      "kind": "scenic",
+      "area": "Tsim Sha Tsui",
+      "timeZone": "Asia/Hong_Kong",
+      "address": "Tsim Sha Tsui Star Ferry Pier, Salisbury Road, Kowloon",
+      "coordinates": {
+        "lat": 22.29354,
+        "lng": 114.16799,
+        "basis": "named feature: Tsim Sha Tsui Star Ferry Pier, where this plan boards",
+        "osm": "relation/14941144",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "06:30",
+                  "23:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "06:30",
+                  "23:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "06:30",
+                  "23:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "06:30",
+                  "23:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "06:30",
+                  "23:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "06:30",
+                  "23:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "06:30",
+                  "23:30"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": "23:30 (last sailing)",
+        "caveat": "Sailings run every 6-12 minutes; times can vary with sea and weather conditions.",
+        "notes": "Hours are the first and last sailings from Tsim Sha Tsui; Central runs the same span.",
+        "evidence": {
+          "url": "https://www.starferry.com.hk/en/service",
+          "quote": "From Tsim Sha Tsui, Mon–Fri: first 06:30, last 23:30; Sat, Sun & public holidays: first 06:30, last 23:30",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-06",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "official ferry operator",
+            "url": "https://www.starferry.com.hk/en/service",
+            "locationUrl": "https://www.starferry.com.hk/en/pier",
+            "retrievedOn": "2026-10-06",
+            "note": "Current Central-Tsim Sha Tsui timetable and operator pier information. Sailing times can vary with weather and traffic. Harbour tours are a separate service."
+          }
+        ]
+      }
+    },
+    "plc_hongkong_noc-tsim-sha-tsui-sun-arcade": {
+      "id": "plc_hongkong_noc-tsim-sha-tsui-sun-arcade",
+      "name": "noc (Tsim Sha Tsui, Sun Arcade)",
+      "city": "hongkong",
+      "kind": "cafe",
+      "area": "Tsim Sha Tsui",
+      "timeZone": "Asia/Hong_Kong",
+      "address": "Shop 02, UG/F, The Sun Arcade, 28 Canton Road, Tsim Sha Tsui",
+      "coordinates": {
+        "lat": 22.29669,
+        "lng": 114.1696,
+        "basis": "the Sun Arcade at 28 Canton Road (not the Tsim Sha Tsui East branch)",
+        "osm": "way/693737390",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "08:00",
+                  "21:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "08:00",
+                  "21:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "08:00",
+                  "21:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "08:00",
+                  "21:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "08:00",
+                  "21:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "21:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "21:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-12-25",
+            "hours": [
+              [
+                "09:00",
+                "21:00"
+              ]
+            ],
+            "note": "Public holiday hours"
+          }
+        ],
+        "lastEntry": null,
+        "caveat": null,
+        "notes": "Sun Arcade branch only; the Tsim Sha Tsui East branch is excluded.",
+        "evidence": {
+          "url": "https://noc.coffee/locations/tsim-sha-tsui/",
+          "quote": "Monday to Friday: 8am to 9pm; Saturday to Sunday and public holidays: 9am to 9pm",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-06",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "business's own site",
+            "url": "https://noc.coffee/menu/",
+            "locationUrl": "https://noc.coffee/locations/tsim-sha-tsui/",
+            "retrievedOn": "2026-10-06",
+            "note": "Current branch address, weekday/weekend hours and coffeehouse/brunch description. Menu advertises coffee. Not the Empire Centre branch; Graham Street was not found in the current location list and is not used."
+          }
+        ]
+      }
+    },
+    "plc_hongkong_m-plus": {
+      "id": "plc_hongkong_m-plus",
+      "name": "M+",
+      "city": "hongkong",
+      "kind": "landmark",
+      "area": "West Kowloon",
+      "timeZone": "Asia/Hong_Kong",
+      "address": "38 Museum Drive, West Kowloon Cultural District, Kowloon",
+      "coordinates": {
+        "lat": 22.30105,
+        "lng": 114.15915,
+        "basis": "named feature: M+ building",
+        "osm": "way/549702815",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [],
+              "tue": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "22:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-10-31",
+            "hours": [],
+            "note": "M+ will be closed on 31 Oct 2026 (Sat)"
+          },
+          {
+            "date": "2026-11-02",
+            "hours": [
+              [
+                "10:00",
+                "18:00"
+              ]
+            ],
+            "note": "M+ will remain open on 2 Nov 2026 (Mon)"
+          },
+          {
+            "date": "2026-11-08",
+            "hours": [
+              [
+                "10:00",
+                "20:00"
+              ]
+            ],
+            "note": "Free admission day with late opening"
+          }
+        ],
+        "lastEntry": "30 minutes before closing",
+        "caveat": "Closed on Mondays. Black Rainstorm or Typhoon Signal 8 can close or delay opening.",
+        "notes": "Gallery hours. Open on public holidays unless announced otherwise.",
+        "evidence": {
+          "url": "https://www.mplus.org.hk/en/plan-your-visit/",
+          "quote": "Tuesdays to Thursdays and weekends: 10:00–18:00; Fridays: 10:00–22:00; Mondays: Closed",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-06",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "official museum operator",
+            "url": "https://www.mplus.org.hk/en/plan-your-visit/",
+            "locationUrl": "https://www.mplus.org.hk/en/plan-your-visit/",
+            "retrievedOn": "2026-10-06",
+            "note": "Current ticket information, opening days and getting-here directions. Free public spaces listed separately from paid gallery access."
+          }
+        ]
+      }
+    },
+    "plc_hongkong_bakehouse-wan-chai": {
+      "id": "plc_hongkong_bakehouse-wan-chai",
+      "name": "Bakehouse (Wan Chai)",
+      "city": "hongkong",
+      "kind": "cafe",
+      "area": "Wan Chai",
+      "timeZone": "Asia/Hong_Kong",
+      "address": "G/F, 14 Tai Wong Street East, Wan Chai, Hong Kong",
+      "coordinates": {
+        "lat": 22.27587,
+        "lng": 114.1714,
+        "basis": "named feature on Tai Wong Street East (not another branch)",
+        "osm": "node/6788818059",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "08:00",
+                  "21:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "08:00",
+                  "21:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "08:00",
+                  "21:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "08:00",
+                  "21:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "08:00",
+                  "21:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "08:00",
+                  "21:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "08:00",
+                  "21:30"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": null,
+        "notes": "The Wan Chai menu page gives Friday dinner until 21:00, the locations page 21:30. Weekday breakfast 08:00-11:45; weekend brunch 08:00-14:45. Wan Chai branch only.",
+        "evidence": {
+          "url": "https://www.bakehouse.hk/locations",
+          "quote": "Mon - Thur: 08:00 - 21:00; Fri - Sun & Public Holidays: 08:00 - 21:30",
+          "confidence": "medium"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-06",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "business's own site",
+            "url": "https://www.bakehouse.hk/wanchai-cafe-menu",
+            "locationUrl": "https://www.bakehouse.hk/locations",
+            "retrievedOn": "2026-10-06",
+            "note": "Current dine-in breakfast, brunch and pastry menus; branch hours and reservation link. Other branches include takeaway-only locations and are not substituted."
+          }
+        ]
+      }
+    },
     "plc_berlin_lebenswelten-bistro-humboldt-forum": {
       "id": "plc_berlin_lebenswelten-bistro-humboldt-forum",
       "name": "Lebenswelten Bistro (Humboldt Forum)",
@@ -3742,6 +4680,825 @@ window.HB_PLACES = {
           }
         ]
       }
+    },
+    "plc_hongkong_man-mo-temple": {
+      "id": "plc_hongkong_man-mo-temple",
+      "name": "Man Mo Temple",
+      "city": "hongkong",
+      "kind": "landmark",
+      "area": "Sheung Wan",
+      "timeZone": "Asia/Hong_Kong",
+      "address": "124-126 Hollywood Road, Sheung Wan, Hong Kong",
+      "coordinates": {
+        "lat": 22.28387,
+        "lng": 114.15016,
+        "basis": "named feature at 124-126 Hollywood Road",
+        "osm": "way/1300658311",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "08:00",
+                  "18:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "08:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "08:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "08:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "08:00",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "08:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "08:00",
+                  "18:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": "Opens at 7 AM on the 1st and 15th of each lunar month and on festival days. It is a working temple; be respectful of worshippers.",
+        "notes": "Read in a browser on the operator's Chinese-language page (an automated fetch failed its certificate check). The page is undated, hence medium confidence.",
+        "evidence": {
+          "url": "https://temples.tungwahcsd.org/twghs-man-mo-temple",
+          "quote": "服務時間：上午八時正至下午六時正，初一、十五及誕期則為上午七時正至下午六時正",
+          "confidence": "medium"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "Operator's own page (Tung Wah Group of Hospitals temples site)",
+            "url": "https://temples.tungwahcsd.org/twghs-man-mo-temple",
+            "locationUrl": "https://rho.tungwah.org.hk/tc/built-heritage/2",
+            "retrievedOn": "2026-10-14",
+            "note": "The operator's temple page gives the address, phone numbers, current service hours and service type (public temple); its heritage page confirms the address."
+          }
+        ]
+      }
+    },
+    "plc_hongkong_tai-kwun": {
+      "id": "plc_hongkong_tai-kwun",
+      "name": "Tai Kwun",
+      "city": "hongkong",
+      "kind": "landmark",
+      "area": "Central",
+      "timeZone": "Asia/Hong_Kong",
+      "address": "10 Hollywood Road, Central, Hong Kong",
+      "coordinates": {
+        "lat": 22.28118,
+        "lng": 114.154,
+        "basis": "named feature: the Tai Kwun compound on Hollywood Road",
+        "osm": "way/591035975",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "08:00",
+                  "23:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "08:00",
+                  "23:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "08:00",
+                  "23:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "08:00",
+                  "23:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "08:00",
+                  "23:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "08:00",
+                  "23:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "08:00",
+                  "23:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": "The site is free and open 8 AM-11 PM; the heritage galleries open 10 or 11 AM-7 PM, and the JC Contemporary gallery is closed on Mondays.",
+        "notes": "Some exhibitions and programmes are ticketed. Black Rainstorm and Typhoon Signal 8 rules can close the site.",
+        "evidence": {
+          "url": "https://www.taikwun.hk/en/visit/visiting_tai_kwun",
+          "quote": "Tai Kwun: 8am-11pm; JC Contemporary: 11am-7pm, Tuesday to Sunday",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "Operator's own site (Tai Kwun Centre for Heritage and Arts)",
+            "url": "https://www.taikwun.hk/en/visit/visiting_tai_kwun",
+            "locationUrl": "https://www.taikwun.hk/en/visit/visiting_tai_kwun",
+            "retrievedOn": "2026-10-14",
+            "note": "The visitor page gives the address, daily site hours and free entry; the homepage lists current 2026 exhibitions and programmes with no closure notice."
+          }
+        ]
+      }
+    },
+    "plc_hongkong_the-peak-tram-central-terminus": {
+      "id": "plc_hongkong_the-peak-tram-central-terminus",
+      "name": "The Peak Tram (Central Terminus)",
+      "city": "hongkong",
+      "kind": "scenic",
+      "area": "Central",
+      "timeZone": "Asia/Hong_Kong",
+      "address": "Peak Tram Central Terminus, Garden Road, Central, Hong Kong",
+      "coordinates": {
+        "lat": 22.2776,
+        "lng": 114.15896,
+        "basis": "named feature: Garden Road station, the tram's Central terminus",
+        "osm": "node/13876192807",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "07:30",
+                  "23:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "07:30",
+                  "23:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "07:30",
+                  "23:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "07:30",
+                  "23:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "07:30",
+                  "23:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "07:30",
+                  "23:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "07:30",
+                  "23:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": "Sky Terrace 428 at the top (8:30 AM-10 PM) is ticketed separately. Buy tram tickets only from the operator's official channels; it warns of counterfeit ticket sites.",
+        "notes": "Read in a browser (automated fetches were refused). The Central terminus is a 10-15 minute walk from MTR Central Exit J2.",
+        "evidence": {
+          "url": "https://www.thepeak.com.hk/en/the-peak-experience/the-peak-tram",
+          "quote": "The Peak Tram Central & Peak Terminus 7:30 am to 11 pm (Mon - Sun & Public Holidays) ... Sky Terrace 428 8:30 am to 10 pm (Mon - Sun & Public Holidays)",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "Operator's own site (The Peak Tramways Co.)",
+            "url": "https://www.thepeak.com.hk/en/the-peak-experience/the-peak-tram",
+            "locationUrl": "https://www.thepeak.com.hk/en/getting-to-the-peak/transportation",
+            "retrievedOn": "2026-10-14",
+            "note": "Read in a browser (automated fetches were refused): the operator lists current daily hours for the Central and Peak termini, sells tickets online, and its only important notice warns about counterfeit ticket sites, not a service suspension."
+          }
+        ]
+      }
+    },
+    "plc_hongkong_maxims-palace-city-hall": {
+      "id": "plc_hongkong_maxims-palace-city-hall",
+      "name": "Maxim's Palace (City Hall)",
+      "city": "hongkong",
+      "kind": "meal",
+      "area": "Central",
+      "timeZone": "Asia/Hong_Kong",
+      "address": "2/F, City Hall Low Block, Central, Hong Kong",
+      "coordinates": {
+        "lat": 22.28235,
+        "lng": 114.16158,
+        "basis": "the Hong Kong City Hall complex at Edinburgh Place; the restaurant is on 2/F of the Low Block",
+        "osm": "way/101959040",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "11:00",
+                  "15:00"
+                ],
+                [
+                  "17:30",
+                  "23:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "11:00",
+                  "15:00"
+                ],
+                [
+                  "17:30",
+                  "23:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "11:00",
+                  "15:00"
+                ],
+                [
+                  "17:30",
+                  "23:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "11:00",
+                  "15:00"
+                ],
+                [
+                  "17:30",
+                  "23:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "11:00",
+                  "15:00"
+                ],
+                [
+                  "17:30",
+                  "23:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "11:00",
+                  "15:00"
+                ],
+                [
+                  "17:30",
+                  "23:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "15:00"
+                ],
+                [
+                  "17:30",
+                  "23:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-12-25",
+            "hours": [
+              [
+                "09:00",
+                "15:00"
+              ],
+              [
+                "17:30",
+                "23:00"
+              ]
+            ],
+            "note": "Public holiday: Sunday hours"
+          },
+          {
+            "date": "2026-12-26",
+            "hours": [
+              [
+                "09:00",
+                "15:00"
+              ],
+              [
+                "17:30",
+                "23:00"
+              ]
+            ],
+            "note": "Public holiday: Sunday hours"
+          }
+        ],
+        "lastEntry": null,
+        "caveat": "The daytime session is the dim sum and lunch service; book through the restaurant's enquiry line or expect to queue.",
+        "notes": "Two daily sessions without lunch or dinner labels. Trolley service is not stated on the page.",
+        "evidence": {
+          "url": "https://www.maximschinese.com.hk/en/brand/1",
+          "quote": "Mon-Sat 11:00am-3:00pm, 5:30pm-11pm; Sundays & public holidays 9:00am-3:00pm, 5:30pm-11pm",
+          "confidence": "medium"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "Operator's own site (Maxim's Chinese Cuisine, Maxim's Caterers)",
+            "url": "https://www.maximschinese.com.hk/en/brand/1",
+            "locationUrl": "https://www.maximschinese.com.hk/en/brand/1",
+            "retrievedOn": "2026-10-14",
+            "note": "The brand page lists the City Hall branch among seven current Maxim's Palace branches, with its address, phone number, two daily sessions and reservation enquiry buttons."
+          }
+        ]
+      }
+    },
+    "plc_hongkong_hong-kong-palace-museum": {
+      "id": "plc_hongkong_hong-kong-palace-museum",
+      "name": "Hong Kong Palace Museum",
+      "city": "hongkong",
+      "kind": "landmark",
+      "area": "West Kowloon",
+      "timeZone": "Asia/Hong_Kong",
+      "address": "8 Museum Drive, West Kowloon Cultural District, Kowloon",
+      "coordinates": {
+        "lat": 22.30165,
+        "lng": 114.1554,
+        "basis": "named feature at 8 Museum Drive",
+        "osm": "way/640750810",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "tue": [],
+              "wed": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "20:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "20:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-12-25",
+            "hours": [
+              [
+                "10:00",
+                "20:00"
+              ]
+            ],
+            "note": "Public holiday hours"
+          },
+          {
+            "date": "2026-12-26",
+            "hours": [
+              [
+                "10:00",
+                "20:00"
+              ]
+            ],
+            "note": "Public holiday hours"
+          }
+        ],
+        "lastEntry": null,
+        "caveat": "Closed on Tuesdays. Ticket sales close an hour before the museum; booking ahead is recommended.",
+        "notes": "Public-holiday exceptions follow the page's general rule, not dated notices.",
+        "evidence": {
+          "url": "https://www.hkpm.org.hk/en/visit/plan-your-visit",
+          "quote": "Monday, Wednesday, Thursday, and Sunday: 10:00 am–06:00 pm; Friday, Saturday, and Public Holiday: 10:00 am–08:00 pm; Closed on Tuesdays (except public holidays)",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "Operator's own site (Hong Kong Palace Museum)",
+            "url": "https://www.hkpm.org.hk/en/visit/plan-your-visit",
+            "locationUrl": "https://www.hkpm.org.hk/en/visit/plan-your-visit",
+            "retrievedOn": "2026-10-14",
+            "note": "The visitor page gives the address, weekly hours and Tuesday closure; the site lists current exhibitions and sells tickets online."
+          }
+        ]
+      }
+    },
+    "plc_hongkong_ngong-ping-360-tung-chung-cable-car-terminal": {
+      "id": "plc_hongkong_ngong-ping-360-tung-chung-cable-car-terminal",
+      "name": "Ngong Ping 360 (Tung Chung Cable Car Terminal)",
+      "city": "hongkong",
+      "kind": "scenic",
+      "area": "Tung Chung",
+      "timeZone": "Asia/Hong_Kong",
+      "address": "Tung Chung Cable Car Terminal, next to MTR Tung Chung Station (Exit B), Lantau",
+      "coordinates": {
+        "lat": 22.28918,
+        "lng": 113.93867,
+        "basis": "named feature: Tung Chung Cable Car Terminal",
+        "osm": "node/1201296598",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "18:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "18:30"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-12-25",
+            "hours": [
+              [
+                "09:00",
+                "18:30"
+              ]
+            ],
+            "note": "Public holiday hours"
+          }
+        ],
+        "lastEntry": null,
+        "caveat": "The cable car can be suspended in bad weather; check the operator's announcements on the day.",
+        "notes": "The operator says no maintenance day is scheduled for 2026 at the moment; dates may be added later.",
+        "evidence": {
+          "url": "https://www.np360.com.hk/en/visitor-information/tourist-guide/",
+          "quote": "Weekdays: 10:00 - 18:00; Saturdays, Sundays and Public Holidays: 9:00 - 18:30",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "Operator's own site (Ngong Ping 360 Limited)",
+            "url": "https://www.np360.com.hk/en/visitor-information/tourist-guide/",
+            "locationUrl": "https://www.np360.com.hk/en/visitor-information/tourist-guide/",
+            "retrievedOn": "2026-10-14",
+            "note": "The operator's site shows an 'Open Today' banner, current autumn 2026 ticket offers and published hours, and says no maintenance day is scheduled for 2026 at the moment."
+          }
+        ]
+      }
+    },
+    "plc_hongkong_tian-tan-buddha-po-lin-monastery": {
+      "id": "plc_hongkong_tian-tan-buddha-po-lin-monastery",
+      "name": "Tian Tan Buddha (Po Lin Monastery)",
+      "city": "hongkong",
+      "kind": "landmark",
+      "area": "Ngong Ping",
+      "timeZone": "Asia/Hong_Kong",
+      "address": "Ngong Ping, Lantau Island, Hong Kong",
+      "coordinates": {
+        "lat": 22.25396,
+        "lng": 113.90501,
+        "basis": "named feature: Tian Tan Buddha statue at Ngong Ping",
+        "osm": "way/45659816",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-14"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-14",
+        "periods": [
+          {
+            "from": "2026-10-14",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "10:00",
+                  "17:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "10:00",
+                  "17:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "17:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "17:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "17:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "17:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "17:30"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": "These are the Big Buddha's hours; the monastery itself opens 9 AM-6 PM.",
+        "notes": "The monastery's site is not recently dated (footer 2023), hence medium confidence.",
+        "evidence": {
+          "url": "https://plm.org.hk/eng/visitors.php",
+          "quote": "Tian Tan Big Buddha: Monday to Sunday (including public holidays) 10 am to 5:30 pm; Po Lin Monastery: 9 am to 6 pm",
+          "confidence": "medium"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "Operator's own site (Po Lin Monastery)",
+            "url": "https://plm.org.hk/eng/visitors.php",
+            "locationUrl": "https://plm.org.hk/eng/visitors.php",
+            "retrievedOn": "2026-10-14",
+            "note": "The monastery's visitor page lists daily hours for the Big Buddha and the monastery, including public holidays. The site is not recently dated (footer 2023), so this is medium-confidence evidence of current operation."
+          }
+        ]
+      }
     }
   },
   "routes": {
@@ -3849,6 +5606,96 @@ window.HB_PLACES = {
         "checkedOn": "2026-10-12",
         "source": "Transitous journey planner (transitous.org), LTA timetable data",
         "alternatives": "Walking: about 29 min"
+      },
+      "plc_hongkong_man-mo-temple|plc_hongkong_tai-kwun": {
+        "minutes": 9,
+        "mode": "walk",
+        "summary": "about 0.6 km on foot along Hollywood Road",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_hongkong_tai-kwun|plc_hongkong_duddells-central": {
+        "minutes": 8,
+        "mode": "walk",
+        "summary": "about 0.6 km on foot, downhill to Duddell Street",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_hongkong_duddells-central|plc_hongkong_pmq": {
+        "minutes": 13,
+        "mode": "walk",
+        "summary": "about 0.9 km on foot, uphill to Aberdeen Street",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_hongkong_the-peak-tram-central-terminus|plc_hongkong_maxims-palace-city-hall": {
+        "minutes": 12,
+        "mode": "walk",
+        "summary": "about 0.85 km on foot from Garden Road to City Hall",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_hongkong_maxims-palace-city-hall|plc_hongkong_argo": {
+        "minutes": 15,
+        "mode": "walk",
+        "summary": "about 1 km on foot along the Central waterfront to the Four Seasons",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_hongkong_noc-tsim-sha-tsui-sun-arcade|plc_hongkong_m-plus": {
+        "minutes": 14,
+        "mode": "transit",
+        "summary": "Bus 215X or 281A from Kowloon Park Drive, with about 0.5 km of walking in total",
+        "conditions": "Wednesday 21 Oct 2026, departing about 09:45",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous journey planner (transitous.org), Hong Kong timetable data",
+        "alternatives": "Walking: about 28 min"
+      },
+      "plc_hongkong_m-plus|plc_hongkong_hong-kong-palace-museum": {
+        "minutes": 7,
+        "mode": "walk",
+        "summary": "about 0.5 km on foot through the West Kowloon Cultural District",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_hongkong_hong-kong-palace-museum|plc_hongkong_star-ferry-central-tsim-sha-tsui": {
+        "minutes": 20,
+        "mode": "transit",
+        "summary": "Bus 296D to Canton Road, with about 0.7 km of walking in total",
+        "conditions": "Wednesday 21 Oct 2026, departing about 17:30",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous journey planner (transitous.org), Hong Kong timetable data",
+        "alternatives": "Walking: about 37 min"
+      },
+      "plc_hongkong_m-plus|plc_hongkong_star-ferry-central-tsim-sha-tsui": {
+        "minutes": 21,
+        "mode": "transit",
+        "summary": "Bus 296D to Canton Road, with about 0.7 km of walking in total",
+        "conditions": "Wednesday 21 Oct 2026, departing about 17:30",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous journey planner (transitous.org), Hong Kong timetable data",
+        "alternatives": "Walking: about 33 min"
+      },
+      "plc_hongkong_star-ferry-central-tsim-sha-tsui|plc_hongkong_lung-king-heen": {
+        "minutes": 23,
+        "mode": "transit",
+        "summary": "the Star Ferry to Central Pier 7, then about 0.8 km on foot",
+        "conditions": "Wednesday 21 Oct 2026, departing about 18:15",
+        "checkedOn": "2026-10-14",
+        "source": "Transitous journey planner (transitous.org), Hong Kong timetable data",
+        "alternatives": "MTR Tsuen Wan Line to Central: about 25 min"
       }
     }
   }

@@ -312,7 +312,7 @@ window.HB_TRIP_HELPERS.getAreaSet = function(city) {
         Suzhou: ["Pingjiang Road", "Humble Administrator's Garden side", "Jinji Lake"],
         Guilin: ["Two Rivers area", "Elephant Trunk Hill side", "Reed Flute Cave side"],
         Lhasa: ["Potala Palace area", "Barkhor", "Norbulingka side"],
-        "Hong Kong": ["Central", "Tsim Sha Tsui", "Causeway Bay"],
+        "Hong Kong": ["Central", "Sheung Wan", "West Kowloon", "Ngong Ping", "Wan Chai", "Tsim Sha Tsui", "Tung Chung"],
         Beijing: ["Forbidden City area", "Sanlitun", "Mutianyu / Great Wall side"],
         Hanoi: ["Old Quarter", "French Quarter", "West Lake"],
         "Ho Chi Minh City": ["District 1", "District 3", "Thu Duc"],
@@ -6434,54 +6434,106 @@ window.HB_TRIP_HELPERS.getConcreteTripTemplates = function(city, areas) {
         ],
         HongKong: [
           {
-            title: "First day in Central",
-            rationale: "Hong Kong starts best with skyline, street energy, and one strong dinner rather than trying to conquer multiple districts at once.",
-            highlight: "Central + Mott 32",
-            timeShape: "Sharp central day with a skyline close",
-            weather: "Keep the first day on Hong Kong Island so the city feels sharp, not scattered.",
-            itemTitle: "Central opener + skyline dinner",
-            itemBody: "Start with Central streets, the harbor edge, and a stronger dinner that immediately feels like Hong Kong instead of waiting until the evening for the city to arrive.",
-            fit: "It delivers an immediate city payoff without overcomplicating the first day.",
+            title: "Old Central and Sheung Wan",
+            rationale: "A walking day on Hong Kong Island: a working temple, a heritage compound, a Cantonese lunch and a design hub, all within a short walk.",
+            highlight: "Tai Kwun",
+            timeShape: "Temple morning, long lunch, design-hub afternoon",
+            weather: "Central's streets are steep; the walk up to PMQ is uphill. Tai Kwun's galleries open from 10 or 11 AM.",
+            itemTitle: "Man Mo Temple + Tai Kwun + Duddell's + PMQ",
+            itemBody: "Start at Man Mo Temple on Hollywood Road, walk to Tai Kwun, have lunch at Duddell's, then walk up to PMQ for design studios and shops.",
+            fit: "All four stops are on foot, between 8 and 13 minutes apart.",
             timeline: [
-              { time: "9:30 AM", title: "Central start", copy: "Begin in the district that gives the city its sharpest first impression without needing a complicated route." },
-              { time: "11:00 AM", title: "Mid-Levels escalator or laneway continuation", copy: "Use one connected Central follow-through so the morning feels layered instead of rushed." },
-              { time: "1:00 PM", title: "Lunch in Central", copy: "Keep lunch on the same side so the opening day stays tight and energetic." },
-              { time: "5:00 PM", title: "Central + Star Ferry / harbour edge", copy: "Use the later stretch for skyline and city energy in one compact sequence." },
-              { time: "8:00 PM", title: "Dinner at Mott 32", copy: "A stronger first-night dinner helps the city feel as exciting as it looks." }
+              { time: "9:30 AM", title: "Man Mo Temple", copy: "A working temple at 124-126 Hollywood Road, founded in 1847 and run by Tung Wah. Be respectful of worshippers.", placeId: "plc_hongkong_man-mo-temple" },
+              { time: "10:30 AM", title: "Tai Kwun", copy: "The restored heritage compound at 10 Hollywood Road. The site is free; some exhibitions are ticketed.", placeId: "plc_hongkong_tai-kwun" },
+              { time: "12:30 PM", title: "Lunch at Duddell's", copy: "Cantonese restaurant on levels 3 and 4 of 1 Duddell Street. Reserve ahead.", placeId: "plc_hongkong_duddells-central" },
+              { time: "2:30 PM", title: "PMQ", copy: "Design studios and shops at 35 Aberdeen Street. Shops open from noon.", placeId: "plc_hongkong_pmq" },
+              { time: "4:30 PM", title: "Free evening", copy: "Nothing is scheduled. Rest, or eat near where you are staying.", kind: "flexible" }
+            ],
+            // Easygoing pace: the afternoon design hub becomes free time.
+            easygoing: {
+              drop: "plc_hongkong_pmq",
+              replacement: { time: "2:30 PM", title: "Free afternoon", copy: "Easygoing pace: nothing is planned after lunch.", kind: "flexible" },
+              rationale: "A walking morning on Hong Kong Island: a working temple, a heritage compound and a Cantonese lunch, then a free afternoon.",
+              timeShape: "Temple morning, long lunch, free afternoon",
+              itemTitle: "Man Mo Temple + Tai Kwun + Duddell's",
+              itemBody: "Start at Man Mo Temple on Hollywood Road, walk to Tai Kwun, have lunch at Duddell's, and keep the afternoon free.",
+              fit: "The morning is on foot, 8 to 9 minutes between stops, and the afternoon is open."
+            }
+          },
+          {
+            title: "The Peak and the Central waterfront",
+            rationale: "The Peak Tram in the morning, dim sum at City Hall, a free afternoon, and drinks at the Four Seasons.",
+            highlight: "The Peak Tram (Central Terminus)",
+            timeShape: "Peak morning, dim sum lunch, evening drinks",
+            weather: "Go up early for clearer views and shorter queues. Buy tram tickets only from the operator's official channels.",
+            itemTitle: "The Peak Tram + Maxim's Palace + ARGO",
+            itemBody: "Ride the Peak Tram up from Garden Road, come down for dim sum at Maxim's Palace in City Hall, keep the afternoon free, and end with a drink at ARGO.",
+            fit: "Everything is on foot from the tram terminus: about 12 minutes to City Hall, then 15 minutes along the waterfront to the bar.",
+            timeline: [
+              { time: "9:00 AM", title: "The Peak Tram", copy: "Board at the Garden Road terminus and allow about two hours at the top. Sky Terrace 428 is ticketed separately.", placeId: "plc_hongkong_the-peak-tram-central-terminus" },
+              { time: "12:30 PM", title: "Dim sum at Maxim's Palace (City Hall)", copy: "Cantonese dim sum hall on 2/F of City Hall Low Block. Busy at lunch; book or expect to queue.", placeId: "plc_hongkong_maxims-palace-city-hall" },
+              { time: "2:30 PM", title: "Free afternoon", copy: "Nothing is scheduled. Rest before the evening.", kind: "flexible" },
+              { time: "6:30 PM", title: "Drinks at ARGO", copy: "Cocktail bar on 1/F of the Four Seasons, 8 Finance Street.", placeId: "plc_hongkong_argo" }
             ]
           },
           {
-            title: "Peak + Tsim Sha Tsui day",
-            rationale: "This shapes the city's clearest first-time skyline day while keeping the route logical and not too transit-heavy.",
-            highlight: "Victoria Peak + Aqua skyline close",
-            timeShape: "Signature skyline day with a strong harbor close",
-            weather: "Use one strong skyline day instead of trying to force every district into the same schedule.",
-            itemTitle: "Peak morning + Kowloon close",
-            itemBody: "Build the day around the Peak first, then shift toward the harbor and Kowloon side for lunch and evening views that still feel connected to one another.",
-            fit: "It covers Hong Kong's most expected visual payoffs without turning the whole day into transfers.",
+            title: "Lantau: Ngong Ping and the Big Buddha",
+            rationale: "A day out on Lantau: the cable car up to Ngong Ping and the Tian Tan Buddha, with the rest of the day left open.",
+            highlight: "Tian Tan Buddha (Po Lin Monastery)",
+            timeShape: "Cable car and Big Buddha, then open time",
+            weather: "Lantau is about 30 minutes from Hong Kong Station by MTR. The cable car can be suspended in bad weather; check the operator's notices that morning.",
+            itemTitle: "Ngong Ping 360 + Tian Tan Buddha",
+            itemBody: "Take the MTR to Tung Chung, ride the Ngong Ping 360 cable car up to Ngong Ping, visit the Tian Tan Buddha, and keep the rest of the day free.",
+            fit: "Lantau is far from the centre, so the day has one destination and nothing else is scheduled.",
+            orderNote: "Take the MTR to Tung Chung (about 30 minutes from Hong Kong Station, per Ngong Ping 360), then the cable car up to Ngong Ping. The cable car's ride time is not calculated here.",
             timeline: [
-              { time: "9:00 AM", title: "Victoria Peak", copy: "Use the morning for one of the city's clearest iconic view moments while the route is still simple." },
-              { time: "11:30 AM", title: "Peak tram return + harbor transfer", copy: "Make the transition part of the day feel intentional instead of like dead time between districts." },
-              { time: "1:30 PM", title: "Lunch at Mak's Noodle or nearby Tsim Sha Tsui stop", copy: "Shift across the water once and let the rest of the day stay there." },
-              { time: "4:30 PM", title: "Tsim Sha Tsui promenade", copy: "Use the afternoon for a slower harbor-side continuation before the skyline close." },
-              { time: "7:00 PM", title: "Drinks or dinner at Aqua", copy: "Use the evening for a skyline close that actually feels worth protecting in the plan." }
+              { time: "10:00 AM", title: "Ngong Ping 360 cable car", copy: "From the Tung Chung terminal, a 5-minute walk from MTR Tung Chung Exit B. Buy tickets only through the operator's official channels.", placeId: "plc_hongkong_ngong-ping-360-tung-chung-cable-car-terminal" },
+              { time: "11:30 AM", title: "Tian Tan Buddha", copy: "Reached by the cable car from Tung Chung (the operator does not publish the ride time as text). If the cable car is suspended, Bus 23 from Tung Chung takes about 52 minutes.", placeId: "plc_hongkong_tian-tan-buddha-po-lin-monastery" },
+              { time: "1:00 PM", title: "Lunch and the rest of the day (your choice)", copy: "Nothing is booked. Po Lin Monastery's vegetarian kitchen is one option; return by cable car when you are ready.", kind: "flexible" }
             ]
           },
           {
-            title: "Causeway Bay + market close",
-            rationale: "This adds one more urban day that feels lived-in, energetic, and more local than the skyline-only version of the city.",
-            highlight: "Causeway Bay + Temple Street",
-            timeShape: "Street-level city day with a market finish",
-            weather: "Leave enough space that the market-and-street side of the city can still breathe.",
-            itemTitle: "Causeway Bay + Temple Street finish",
-            itemBody: "Make this the district day for shopping, café stops, and a market-style close rather than another skyline-heavy route across the harbor.",
-            fit: "It rounds out Hong Kong with the busier, more textured version of the city that people remember just as much as the views.",
+            title: "West Kowloon and the Star Ferry",
+            rationale: "Two museums on the West Kowloon waterfront, the Star Ferry across the harbour at dusk, and the trip's booked dinner.",
+            highlight: "Lung King Heen",
+            timeShape: "Museum day, harbour crossing, booked dinner",
+            weather: "M+ is closed on Mondays and the Palace Museum on Tuesdays. Book Lung King Heen ahead.",
+            itemTitle: "M+ + Hong Kong Palace Museum + Star Ferry + Lung King Heen",
+            itemBody: "Have coffee at noc in Tsim Sha Tsui, visit M+, then the Hong Kong Palace Museum, cross the harbour on the Star Ferry at dusk, and finish with dinner at Lung King Heen.",
+            fit: "About 14 minutes by bus to M+, a 7-minute walk between the museums, and the Star Ferry carries you to Central for dinner.",
             timeline: [
-              { time: "9:30 AM", title: "Causeway Bay streets", copy: "Use the day for one of the city's most energetic commercial districts without over-routing it." },
-              { time: "11:30 AM", title: "Times Square or Victoria Park continuation", copy: "Let one nearby continuation deepen the district instead of jumping too early to the night market side." },
-              { time: "1:30 PM", title: "Lunch at Yat Lok or nearby", copy: "Keep lunch in the same district so the day stays cohesive." },
-              { time: "5:00 PM", title: "Cross-harbor reset", copy: "Give the day one clean transition into the evening zone instead of making it feel nonstop." },
-              { time: "7:30 PM", title: "Temple Street evening", copy: "Finish with a more atmospheric street-level version of Hong Kong than the skyline-only route gives you." }
+              { time: "9:00 AM", title: "Coffee at noc (Tsim Sha Tsui)", copy: "Sun Arcade, 28 Canton Road.", placeId: "plc_hongkong_noc-tsim-sha-tsui-sun-arcade" },
+              { time: "10:00 AM", title: "M+", copy: "Museum of visual culture on the West Kowloon waterfront. Allow at least two hours.", placeId: "plc_hongkong_m-plus" },
+              { time: "1:00 PM", title: "Lunch in West Kowloon (your choice)", copy: "Nothing is booked; both museums are in the cultural district.", kind: "flexible" },
+              { time: "2:30 PM", title: "Hong Kong Palace Museum", copy: "8 Museum Drive. Book tickets ahead.", placeId: "plc_hongkong_hong-kong-palace-museum" },
+              { time: "6:00 PM", title: "Star Ferry to Central", copy: "Board at the Tsim Sha Tsui pier for the harbour crossing at dusk.", placeId: "plc_hongkong_star-ferry-central-tsim-sha-tsui" },
+              { time: "7:30 PM", title: "Dinner at Lung King Heen", copy: "Cantonese restaurant on 4/F of the Four Seasons, 8 Finance Street. Reserve ahead.", placeId: "plc_hongkong_lung-king-heen" }
+            ],
+            // Easygoing pace: the second museum becomes free time before the evening.
+            easygoing: {
+              drop: "plc_hongkong_hong-kong-palace-museum",
+              replacement: { time: "2:30 PM", title: "Free afternoon", copy: "Easygoing pace: rest after M+ before the evening crossing.", kind: "flexible" },
+              rationale: "One museum on the West Kowloon waterfront, the Star Ferry across the harbour at dusk, and the trip's booked dinner.",
+              timeShape: "Museum morning, harbour crossing, booked dinner",
+              weather: "M+ is closed on Mondays. Book Lung King Heen ahead.",
+              itemTitle: "M+ + Star Ferry + Lung King Heen",
+              itemBody: "Have coffee at noc in Tsim Sha Tsui, visit M+, rest in the afternoon, cross the harbour on the Star Ferry at dusk, and finish with dinner at Lung King Heen.",
+              fit: "About 14 minutes by bus to M+, and the Star Ferry carries you to Central for dinner."
+            }
+          },
+          {
+            title: "Last morning in Wan Chai",
+            rationale: "The final day keeps one named stop and leaves the rest for packing and the journey home.",
+            highlight: "Bakehouse (Wan Chai)",
+            timeShape: "Light, with room to pack",
+            weather: "Leave enough time for checkout and the trip to the airport.",
+            itemTitle: "Bakehouse + a last walk",
+            itemBody: "Breakfast at Bakehouse in Wan Chai, a last unplanned walk, then packing and departure.",
+            fit: "It ends the trip with a specific place without squeezing in another big visit before you leave.",
+            timeline: [
+              { time: "8:30 AM", title: "Breakfast at Bakehouse (Wan Chai)", copy: "The Wan Chai café at 14 Tai Wong Street East.", placeId: "plc_hongkong_bakehouse-wan-chai" },
+              { time: "10:00 AM", title: "Last walk in Wan Chai", copy: "Unplanned time on foot before you leave.", kind: "flexible" },
+              { time: "12:00 PM", title: "Pack and travel", copy: "Keep the rest of the day for checkout and the journey.", kind: "flexible" }
             ]
           }
         ],

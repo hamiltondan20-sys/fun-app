@@ -414,6 +414,203 @@
       ],
       "caveat": "The bar's page shows two different sets of hours and none for regular Wednesdays; confirm with the bar before you go. Smart-casual dress code from 17:00.",
       "notes": "Weekly hours follow the page's header block, which carries a dated closure for 14 Oct 2026 and so looks current; the footer block (Mon-Thu 10:00-01:00, Fri 10:00-02:00, Sat 15:00-02:00) looks older. Both say closed on Sundays. Spot-checked on the page on 2026-10-12."
+    },
+    "plc_hongkong_man-mo-temple": {
+      "url": "https://temples.tungwahcsd.org/twghs-man-mo-temple",
+      "retrievedOn": "2026-10-14",
+      "confidence": "medium",
+      "quote": "服務時間：上午八時正至下午六時正，初一、十五及誕期則為上午七時正至下午六時正",
+      "periods": [
+        { "from": "2026-10-14", "to": "2026-12-31", "weekly": { "mon": "08:00-18:00", "tue": "08:00-18:00", "wed": "08:00-18:00", "thu": "08:00-18:00", "fri": "08:00-18:00", "sat": "08:00-18:00", "sun": "08:00-18:00" } }
+      ],
+      "exceptions": [],
+      "caveat": "Opens at 7 AM on the 1st and 15th of each lunar month and on festival days. It is a working temple; be respectful of worshippers.",
+      "notes": "Read in a browser on the operator's Chinese-language page (an automated fetch failed its certificate check). The page is undated, hence medium confidence."
+    },
+    "plc_hongkong_tai-kwun": {
+      "url": "https://www.taikwun.hk/en/visit/visiting_tai_kwun",
+      "retrievedOn": "2026-10-14",
+      "confidence": "high",
+      "quote": "Tai Kwun: 8am-11pm; JC Contemporary: 11am-7pm, Tuesday to Sunday",
+      "periods": [
+        { "from": "2026-10-14", "to": "2026-12-31", "weekly": { "mon": "08:00-23:00", "tue": "08:00-23:00", "wed": "08:00-23:00", "thu": "08:00-23:00", "fri": "08:00-23:00", "sat": "08:00-23:00", "sun": "08:00-23:00" } }
+      ],
+      "exceptions": [],
+      "caveat": "The site is free and open 8 AM-11 PM; the heritage galleries open 10 or 11 AM-7 PM, and the JC Contemporary gallery is closed on Mondays.",
+      "notes": "Some exhibitions and programmes are ticketed. Black Rainstorm and Typhoon Signal 8 rules can close the site."
+    },
+    "plc_hongkong_the-peak-tram-central-terminus": {
+      "url": "https://www.thepeak.com.hk/en/the-peak-experience/the-peak-tram",
+      "retrievedOn": "2026-10-14",
+      "confidence": "high",
+      "quote": "The Peak Tram Central & Peak Terminus 7:30 am to 11 pm (Mon - Sun & Public Holidays) ... Sky Terrace 428 8:30 am to 10 pm (Mon - Sun & Public Holidays)",
+      "periods": [
+        { "from": "2026-10-14", "to": "2026-12-31", "weekly": { "mon": "07:30-23:00", "tue": "07:30-23:00", "wed": "07:30-23:00", "thu": "07:30-23:00", "fri": "07:30-23:00", "sat": "07:30-23:00", "sun": "07:30-23:00" } }
+      ],
+      "exceptions": [],
+      "caveat": "Sky Terrace 428 at the top (8:30 AM-10 PM) is ticketed separately. Buy tram tickets only from the operator's official channels; it warns of counterfeit ticket sites.",
+      "notes": "Read in a browser (automated fetches were refused). The Central terminus is a 10-15 minute walk from MTR Central Exit J2."
+    },
+    "plc_hongkong_maxims-palace-city-hall": {
+      "url": "https://www.maximschinese.com.hk/en/brand/1",
+      "retrievedOn": "2026-10-14",
+      "confidence": "medium",
+      "quote": "Mon-Sat 11:00am-3:00pm, 5:30pm-11pm; Sundays & public holidays 9:00am-3:00pm, 5:30pm-11pm",
+      "periods": [
+        { "from": "2026-10-14", "to": "2026-12-31", "weekly": { "mon": "11:00-15:00,17:30-23:00", "tue": "11:00-15:00,17:30-23:00", "wed": "11:00-15:00,17:30-23:00", "thu": "11:00-15:00,17:30-23:00", "fri": "11:00-15:00,17:30-23:00", "sat": "11:00-15:00,17:30-23:00", "sun": "09:00-15:00,17:30-23:00" } }
+      ],
+      "exceptions": [
+        { "date": "2026-12-25", "hours": "09:00-15:00,17:30-23:00", "note": "Public holiday: Sunday hours" },
+        { "date": "2026-12-26", "hours": "09:00-15:00,17:30-23:00", "note": "Public holiday: Sunday hours" }
+      ],
+      "caveat": "The daytime session is the dim sum and lunch service; book through the restaurant's enquiry line or expect to queue.",
+      "notes": "Two daily sessions without lunch or dinner labels. Trolley service is not stated on the page."
+    },
+    "plc_hongkong_hong-kong-palace-museum": {
+      "url": "https://www.hkpm.org.hk/en/visit/plan-your-visit",
+      "retrievedOn": "2026-10-14",
+      "confidence": "high",
+      "quote": "Monday, Wednesday, Thursday, and Sunday: 10:00 am–06:00 pm; Friday, Saturday, and Public Holiday: 10:00 am–08:00 pm; Closed on Tuesdays (except public holidays)",
+      "periods": [
+        { "from": "2026-10-14", "to": "2026-12-31", "weekly": { "mon": "10:00-18:00", "tue": "closed", "wed": "10:00-18:00", "thu": "10:00-18:00", "fri": "10:00-20:00", "sat": "10:00-20:00", "sun": "10:00-18:00" } }
+      ],
+      "exceptions": [
+        { "date": "2026-12-25", "hours": "10:00-20:00", "note": "Public holiday hours" },
+        { "date": "2026-12-26", "hours": "10:00-20:00", "note": "Public holiday hours" }
+      ],
+      "caveat": "Closed on Tuesdays. Ticket sales close an hour before the museum; booking ahead is recommended.",
+      "notes": "Public-holiday exceptions follow the page's general rule, not dated notices."
+    },
+    "plc_hongkong_ngong-ping-360-tung-chung-cable-car-terminal": {
+      "url": "https://www.np360.com.hk/en/visitor-information/tourist-guide/",
+      "retrievedOn": "2026-10-14",
+      "confidence": "high",
+      "quote": "Weekdays: 10:00 - 18:00; Saturdays, Sundays and Public Holidays: 9:00 - 18:30",
+      "periods": [
+        { "from": "2026-10-14", "to": "2026-12-31", "weekly": { "mon": "10:00-18:00", "tue": "10:00-18:00", "wed": "10:00-18:00", "thu": "10:00-18:00", "fri": "10:00-18:00", "sat": "09:00-18:30", "sun": "09:00-18:30" } }
+      ],
+      "exceptions": [
+        { "date": "2026-12-25", "hours": "09:00-18:30", "note": "Public holiday hours" }
+      ],
+      "caveat": "The cable car can be suspended in bad weather; check the operator's announcements on the day.",
+      "notes": "The operator says no maintenance day is scheduled for 2026 at the moment; dates may be added later."
+    },
+    "plc_hongkong_tian-tan-buddha-po-lin-monastery": {
+      "url": "https://plm.org.hk/eng/visitors.php",
+      "retrievedOn": "2026-10-14",
+      "confidence": "medium",
+      "quote": "Tian Tan Big Buddha: Monday to Sunday (including public holidays) 10 am to 5:30 pm; Po Lin Monastery: 9 am to 6 pm",
+      "periods": [
+        { "from": "2026-10-14", "to": "2026-12-31", "weekly": { "mon": "10:00-17:30", "tue": "10:00-17:30", "wed": "10:00-17:30", "thu": "10:00-17:30", "fri": "10:00-17:30", "sat": "10:00-17:30", "sun": "10:00-17:30" } }
+      ],
+      "exceptions": [],
+      "caveat": "These are the Big Buddha's hours; the monastery itself opens 9 AM-6 PM.",
+      "notes": "The monastery's site is not recently dated (footer 2023), hence medium confidence."
+    },
+    "plc_hongkong_m-plus": {
+      "url": "https://www.mplus.org.hk/en/plan-your-visit/",
+      "retrievedOn": "2026-10-14",
+      "confidence": "high",
+      "quote": "Tuesdays to Thursdays and weekends: 10:00–18:00; Fridays: 10:00–22:00; Mondays: Closed",
+      "lastEntry": "30 minutes before closing",
+      "periods": [
+        { "from": "2026-10-14", "to": "2026-12-31", "weekly": { "mon": "closed", "tue": "10:00-18:00", "wed": "10:00-18:00", "thu": "10:00-18:00", "fri": "10:00-22:00", "sat": "10:00-18:00", "sun": "10:00-18:00" } }
+      ],
+      "exceptions": [
+        { "date": "2026-10-31", "hours": "closed", "note": "M+ will be closed on 31 Oct 2026 (Sat)" },
+        { "date": "2026-11-02", "hours": "10:00-18:00", "note": "M+ will remain open on 2 Nov 2026 (Mon)" },
+        { "date": "2026-11-08", "hours": "10:00-20:00", "note": "Free admission day with late opening" }
+      ],
+      "caveat": "Closed on Mondays. Black Rainstorm or Typhoon Signal 8 can close or delay opening.",
+      "notes": "Gallery hours. Open on public holidays unless announced otherwise."
+    },
+    "plc_hongkong_star-ferry-central-tsim-sha-tsui": {
+      "url": "https://www.starferry.com.hk/en/service",
+      "retrievedOn": "2026-10-14",
+      "confidence": "high",
+      "quote": "From Tsim Sha Tsui, Mon–Fri: first 06:30, last 23:30; Sat, Sun & public holidays: first 06:30, last 23:30",
+      "lastEntry": "23:30 (last sailing)",
+      "periods": [
+        { "from": "2026-10-14", "to": "2026-12-31", "weekly": { "mon": "06:30-23:30", "tue": "06:30-23:30", "wed": "06:30-23:30", "thu": "06:30-23:30", "fri": "06:30-23:30", "sat": "06:30-23:30", "sun": "06:30-23:30" } }
+      ],
+      "exceptions": [],
+      "caveat": "Sailings run every 6-12 minutes; times can vary with sea and weather conditions.",
+      "notes": "Hours are the first and last sailings from Tsim Sha Tsui; Central runs the same span."
+    },
+    "plc_hongkong_pmq": {
+      "url": "https://www.pmq.org.hk/tourist-information/explore-pmq/?lang=en",
+      "retrievedOn": "2026-10-14",
+      "confidence": "medium",
+      "quote": "Studios and shops: 12:00nn – 7:00pm; Cafes and restaurants: 9:00am – 11:00pm",
+      "periods": [
+        { "from": "2026-10-14", "to": "2026-12-31", "weekly": { "mon": "12:00-19:00", "tue": "12:00-19:00", "wed": "12:00-19:00", "thu": "12:00-19:00", "fri": "12:00-19:00", "sat": "12:00-19:00", "sun": "12:00-19:00" } }
+      ],
+      "exceptions": [],
+      "caveat": "Individual studios and shops set their own hours, so some may be closed within the general noon-7 PM window.",
+      "notes": "General hours not tied to specific days; cafés and restaurants keep 09:00-23:00."
+    },
+    "plc_hongkong_bakehouse-wan-chai": {
+      "url": "https://www.bakehouse.hk/locations",
+      "retrievedOn": "2026-10-14",
+      "confidence": "medium",
+      "quote": "Mon - Thur: 08:00 - 21:00; Fri - Sun & Public Holidays: 08:00 - 21:30",
+      "periods": [
+        { "from": "2026-10-14", "to": "2026-12-31", "weekly": { "mon": "08:00-21:00", "tue": "08:00-21:00", "wed": "08:00-21:00", "thu": "08:00-21:00", "fri": "08:00-21:30", "sat": "08:00-21:30", "sun": "08:00-21:30" } }
+      ],
+      "exceptions": [],
+      "notes": "The Wan Chai menu page gives Friday dinner until 21:00, the locations page 21:30. Weekday breakfast 08:00-11:45; weekend brunch 08:00-14:45. Wan Chai branch only."
+    },
+    "plc_hongkong_duddells-central": {
+      "url": "https://duddells.co/",
+      "retrievedOn": "2026-10-14",
+      "confidence": "high",
+      "quote": "3/F Main Dining Room: Monday ~ Sunday 12pm-3pm (2:30pm last order) 6pm-11pm (9:30pm last order)",
+      "lastEntry": "Last orders: lunch 14:30, dinner 21:30",
+      "periods": [
+        { "from": "2026-10-14", "to": "2026-12-31", "weekly": { "mon": "12:00-15:00,18:00-23:00", "tue": "12:00-15:00,18:00-23:00", "wed": "12:00-15:00,18:00-23:00", "thu": "12:00-15:00,18:00-23:00", "fri": "12:00-15:00,18:00-23:00", "sat": "12:00-15:00,18:00-23:00", "sun": "12:00-15:00,18:00-23:00" } }
+      ],
+      "exceptions": [],
+      "notes": "Main dining room hours; the 4/F Upper Room keeps longer hours. No dated holiday hours are published."
+    },
+    "plc_hongkong_lung-king-heen": {
+      "url": "https://www.fourseasons.com/hongkong/dining/restaurants/lung_king_heen/",
+      "retrievedOn": "2026-10-14",
+      "confidence": "high",
+      "quote": "LUNCH MONDAY – FRIDAY 12:00 NOON – 2:30 PM ... SATURDAY, SUNDAY AND PUBLIC HOLIDAYS 11:30 AM – 3:00 PM ... DINNER 6:00 – 8:30 PM (LAST SEATING) 9:00 PM (LAST ORDER)",
+      "lastEntry": "Dinner: last seating 20:30, last order 21:00",
+      "periods": [
+        { "from": "2026-10-14", "to": "2026-12-31", "weekly": { "mon": "12:00-14:30,18:00-late", "tue": "12:00-14:30,18:00-late", "wed": "12:00-14:30,18:00-late", "thu": "12:00-14:30,18:00-late", "fri": "12:00-14:30,18:00-late", "sat": "11:30-15:00,18:00-late", "sun": "11:30-15:00,18:00-late" } }
+      ],
+      "exceptions": [
+        { "date": "2026-12-25", "hours": "11:30-15:00,18:00-late", "note": "Public holiday lunch hours" }
+      ],
+      "caveat": "Reserve ahead. Lunch has a minimum spend of HKD 700 plus service per person aged 12+, and on weekdays children must be 7 or older. Smart-casual dress.",
+      "notes": "Read in a browser (automated fetches were refused). No dinner closing time is published, only last seating and last order."
+    },
+    "plc_hongkong_argo": {
+      "url": "https://www.fourseasons.com/hongkong/dining/lounges/argo/",
+      "retrievedOn": "2026-10-14",
+      "confidence": "high",
+      "quote": "MONDAY – THURSDAY 5:00 PM – 1:00 AM ... FRIDAY – SATURDAY 5:00 PM – 2:00 AM",
+      "periods": [
+        { "from": "2026-10-14", "to": "2026-12-31", "weekly": { "mon": "17:00-01:00", "tue": "17:00-01:00", "wed": "17:00-01:00", "thu": "17:00-01:00", "fri": "17:00-02:00", "sat": "17:00-02:00", "sun": "unknown" } }
+      ],
+      "exceptions": [],
+      "caveat": "No Sunday hours are published. Children 8 and older are welcome; smart-casual dress.",
+      "notes": "Read in a browser (automated fetches were refused)."
+    },
+    "plc_hongkong_noc-tsim-sha-tsui-sun-arcade": {
+      "url": "https://noc.coffee/locations/tsim-sha-tsui/",
+      "retrievedOn": "2026-10-14",
+      "confidence": "high",
+      "quote": "Monday to Friday: 8am to 9pm; Saturday to Sunday and public holidays: 9am to 9pm",
+      "periods": [
+        { "from": "2026-10-14", "to": "2026-12-31", "weekly": { "mon": "08:00-21:00", "tue": "08:00-21:00", "wed": "08:00-21:00", "thu": "08:00-21:00", "fri": "08:00-21:00", "sat": "09:00-21:00", "sun": "09:00-21:00" } }
+      ],
+      "exceptions": [
+        { "date": "2026-12-25", "hours": "09:00-21:00", "note": "Public holiday hours" }
+      ],
+      "notes": "Sun Arcade branch only; the Tsim Sha Tsui East branch is excluded."
     }
   }
 }

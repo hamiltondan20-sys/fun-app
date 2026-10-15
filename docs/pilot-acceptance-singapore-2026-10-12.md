@@ -103,6 +103,14 @@ ATLAS is closed on Sundays. The automated tests also cover every start date from
 9. **Phones.** No horizontal scroll at 375 px; the long walking lines wrap inside the
    card. A real-phone check is still needed.
 
+## Correction, October 14
+
+The Hong Kong run found that, in the live planner, `data/top-100-destinations.js` replaced
+Singapore's area list with its seed list. That changed the names of the open and flexible
+days. The researched days and their stops were not affected. It is fixed: cities with
+registry places keep their own areas. Rechecked in the browser: "Open day near Tiong
+Bahru" and "Flexible day in Clarke Quay".
+
 ## Open items
 
 1. **No hawker centre.** None of the reviewed places is a hawker centre, and that is the

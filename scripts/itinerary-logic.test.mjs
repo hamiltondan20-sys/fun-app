@@ -302,8 +302,84 @@ test("Singapore Easygoing: the museum afternoon and the late drink become free t
   assert.equal(gardens.travelFromPrevious.mode, "transit");
 });
 
+// ---- Hong Kong pilot ----
+
+test("Hong Kong: every scheduled stop is a checked registry place or free time, once, inside Hong Kong", () => {
+  const logic = loadLogic();
+  const registry = logic.window.HB_PLACES.places;
+  const templates = logic.window.HB_TRIP_HELPERS.getConcreteTripTemplates("Hong Kong", logic.window.HB_TRIP_HELPERS.getAreaSet("Hong Kong"));
+  assert.equal(templates.length, 5, "four researched days plus a closing morning");
+  const steps = templates.flatMap((day) => day.timeline);
+  steps.forEach((step) => {
+    if (step.kind === "flexible") return assert.ok(!step.placeId, `${step.title}: free time must not name a venue`);
+    const place = registry[step.placeId];
+    assert.ok(place, `${step.title}: not in the places registry`);
+    assert.equal(place.city, "hongkong");
+    assert.equal(place.timeZone, "Asia/Hong_Kong");
+    assert.ok(place.coordinates.lat > 22.1 && place.coordinates.lat < 22.6 && place.coordinates.lng > 113.8 && place.coordinates.lng < 114.5, `${place.name} outside Hong Kong`);
+    assert.ok(place.verification.checked.includes("published-weekly-hours"), `${place.name}: published hours were checked`);
+  });
+  const placeIds = steps.map((step) => step.placeId).filter(Boolean);
+  assert.equal(new Set(placeIds).size, placeIds.length, "duplicate stop");
+  // The earlier unreviewed picks must not come back.
+  assert.ok(!steps.some((step) => /Mott 32|Aqua|Mak's Noodle|Yat Lok|Temple Street/.test(`${step.title} ${step.copy}`)));
+});
+
+test("Hong Kong 7-day trip: four researched days, honest open days, and long hops timed or explained", () => {
+  const anchors = [{ label: "One memorable dinner", key: "onememorabledinner", type: "food", source: "traveler" }];
+  const { logic, days, schedule } = buildCityTrip("Hong Kong", 7, anchors);
+  assert.equal(new Set(days.map((day) => day.title)).size, 7, "no repeated days");
+  assert.equal(days[6].title, "Last morning in Wan Chai");
+  [4, 5].forEach((index) => assert.ok(days[index].item.timeline.every((step) => step.kind === "flexible"), `${days[index].title} is open time`));
+  assert.ok(days.slice(0, 4).every((day) => day.areaConfirmed));
+  days.forEach((day) => day.item.timeline.forEach((step) => {
+    const travel = step.travelFromPrevious;
+    if (!travel) return;
+    if (step.placeId === "plc_hongkong_tian-tan-buddha-po-lin-monastery") {
+      // The cable car is not in timetable data and its ride time is not published as text: untimed, and the copy says how to get there.
+      assert.equal(travel.basis, "straight-line");
+      assert.equal(travel.minutes, null);
+      assert.match(step.copy, /cable car/);
+      return;
+    }
+    if (travel.distanceKm >= 1.5) {
+      assert.equal(travel.basis, "routed", `${step.title}: long hop without a stored journey`);
+      assert.match(travel.source, /Transitous/);
+    } else if (travel.basis === "estimate") {
+      assert.equal(travel.minutes, logic.estimateWalkMinutes(travel.distanceKm));
+    } else {
+      assert.ok(["routed", "same-site"].includes(travel.basis), `${step.title}: ${travel.basis}`);
+    }
+  }));
+  // Crossing the harbour is a stored Star Ferry journey, never a walking estimate over water.
+  const dinner = days[3].item.timeline.find((step) => step.placeId === "plc_hongkong_lung-king-heen");
+  assert.equal(dinner.travelFromPrevious.basis, "routed");
+  assert.match(dinner.travelFromPrevious.summary, /Star Ferry/);
+  const dinnerDay = schedule.byDay.findIndex((list) => list.some((anchor) => anchor.key === "onememorabledinner"));
+  assert.equal(days[dinnerDay].title, "West Kowloon and the Star Ferry");
+});
+
+test("Hong Kong hours: no stop lands on a closed day for any start date (M+ Mondays, Palace Museum Tuesdays, M+ on 31 Oct)", () => {
+  for (let offset = 0; offset < 21; offset += 1) {
+    const start = isoPlus("2026-10-14", offset);
+    const { logic, days } = buildCityTrip("Hong Kong", 7, [], start);
+    const closed = hoursConflicts(logic, days, start).filter(({ check }) => check.state === "closed");
+    assert.deepEqual([...closed.map(({ day, title }) => `${day} ${title}`)], [], `start ${start}`);
+    assert.equal(days[6].title, "Last morning in Wan Chai");
+  }
+});
+
+test("Hong Kong Easygoing: PMQ and the second museum become free time", () => {
+  const balanced = buildCityTrip("Hong Kong", 7, []);
+  const easy = buildCityTrip("Hong Kong", 7, [], null, "Easygoing");
+  const placeIds = (trip) => [...trip.days.flatMap((day) => day.item.timeline.map((step) => step.placeId).filter(Boolean))];
+  assert.deepEqual(placeIds(balanced).filter((id) => !placeIds(easy).includes(id)), ["plc_hongkong_pmq", "plc_hongkong_hong-kong-palace-museum"]);
+  const ferry = easy.days[3].item.timeline.find((step) => step.placeId === "plc_hongkong_star-ferry-central-tsim-sha-tsui");
+  assert.equal(ferry.travelFromPrevious.basis, "routed", "M+ to the pier is a stored journey");
+});
+
 test("Researched days are never padded with generic stops", () => {
-  ["Berlin", "Singapore"].forEach((city) => {
+  ["Berlin", "Singapore", "Hong Kong"].forEach((city) => {
     const { days } = buildCityTrip(city, 7, []);
     const logic = loadLogic();
     const templates = logic.window.HB_TRIP_HELPERS.getConcreteTripTemplates(city, []);

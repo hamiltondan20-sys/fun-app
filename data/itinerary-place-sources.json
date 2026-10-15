@@ -39,6 +39,97 @@
         "checkedOn": "2026-10-10",
         "operatingEvidence": "The museum's current visitor page lists the restaurant with its address, phone number and current opening hours."
       }
+    },
+    {
+      "city": "hongkong", "name": "Man Mo Temple", "kind": "landmark",
+      "address": "124-126 Hollywood Road, Sheung Wan, Hong Kong", "area": "Sheung Wan",
+      "lat": 22.28387, "lng": 114.15016, "osm": "way/1300658311",
+      "basis": "named feature at 124-126 Hollywood Road",
+      "source": {
+        "sourceType": "Operator's own page (Tung Wah Group of Hospitals temples site)",
+        "url": "https://temples.tungwahcsd.org/twghs-man-mo-temple",
+        "locationSourceUrl": "https://rho.tungwah.org.hk/tc/built-heritage/2",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "The operator's temple page gives the address, phone numbers, current service hours and service type (public temple); its heritage page confirms the address."
+      }
+    },
+    {
+      "city": "hongkong", "name": "Tai Kwun", "kind": "landmark",
+      "address": "10 Hollywood Road, Central, Hong Kong", "area": "Central",
+      "lat": 22.28118, "lng": 114.15400, "osm": "way/591035975",
+      "basis": "named feature: the Tai Kwun compound on Hollywood Road",
+      "source": {
+        "sourceType": "Operator's own site (Tai Kwun Centre for Heritage and Arts)",
+        "url": "https://www.taikwun.hk/en/visit/visiting_tai_kwun",
+        "locationSourceUrl": "https://www.taikwun.hk/en/visit/visiting_tai_kwun",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "The visitor page gives the address, daily site hours and free entry; the homepage lists current 2026 exhibitions and programmes with no closure notice."
+      }
+    },
+    {
+      "city": "hongkong", "name": "The Peak Tram (Central Terminus)", "kind": "scenic",
+      "address": "Peak Tram Central Terminus, Garden Road, Central, Hong Kong", "area": "Central",
+      "lat": 22.27760, "lng": 114.15896, "osm": "node/13876192807",
+      "basis": "named feature: Garden Road station, the tram's Central terminus",
+      "source": {
+        "sourceType": "Operator's own site (The Peak Tramways Co.)",
+        "url": "https://www.thepeak.com.hk/en/the-peak-experience/the-peak-tram",
+        "locationSourceUrl": "https://www.thepeak.com.hk/en/getting-to-the-peak/transportation",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Read in a browser (automated fetches were refused): the operator lists current daily hours for the Central and Peak termini, sells tickets online, and its only important notice warns about counterfeit ticket sites, not a service suspension."
+      }
+    },
+    {
+      "city": "hongkong", "name": "Maxim's Palace (City Hall)", "kind": "meal",
+      "address": "2/F, City Hall Low Block, Central, Hong Kong", "area": "Central",
+      "lat": 22.28235, "lng": 114.16158, "osm": "way/101959040",
+      "basis": "the Hong Kong City Hall complex at Edinburgh Place; the restaurant is on 2/F of the Low Block",
+      "source": {
+        "sourceType": "Operator's own site (Maxim's Chinese Cuisine, Maxim's Caterers)",
+        "url": "https://www.maximschinese.com.hk/en/brand/1",
+        "locationSourceUrl": "https://www.maximschinese.com.hk/en/brand/1",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "The brand page lists the City Hall branch among seven current Maxim's Palace branches, with its address, phone number, two daily sessions and reservation enquiry buttons."
+      }
+    },
+    {
+      "city": "hongkong", "name": "Hong Kong Palace Museum", "kind": "landmark",
+      "address": "8 Museum Drive, West Kowloon Cultural District, Kowloon", "area": "West Kowloon",
+      "lat": 22.30165, "lng": 114.15540, "osm": "way/640750810",
+      "basis": "named feature at 8 Museum Drive",
+      "source": {
+        "sourceType": "Operator's own site (Hong Kong Palace Museum)",
+        "url": "https://www.hkpm.org.hk/en/visit/plan-your-visit",
+        "locationSourceUrl": "https://www.hkpm.org.hk/en/visit/plan-your-visit",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "The visitor page gives the address, weekly hours and Tuesday closure; the site lists current exhibitions and sells tickets online."
+      }
+    },
+    {
+      "city": "hongkong", "name": "Ngong Ping 360 (Tung Chung Cable Car Terminal)", "kind": "scenic",
+      "address": "Tung Chung Cable Car Terminal, next to MTR Tung Chung Station (Exit B), Lantau", "area": "Tung Chung",
+      "lat": 22.28918, "lng": 113.93867, "osm": "node/1201296598",
+      "basis": "named feature: Tung Chung Cable Car Terminal",
+      "source": {
+        "sourceType": "Operator's own site (Ngong Ping 360 Limited)",
+        "url": "https://www.np360.com.hk/en/visitor-information/tourist-guide/",
+        "locationSourceUrl": "https://www.np360.com.hk/en/visitor-information/tourist-guide/",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "The operator's site shows an 'Open Today' banner, current autumn 2026 ticket offers and published hours, and says no maintenance day is scheduled for 2026 at the moment."
+      }
+    },
+    {
+      "city": "hongkong", "name": "Tian Tan Buddha (Po Lin Monastery)", "kind": "landmark",
+      "address": "Ngong Ping, Lantau Island, Hong Kong", "area": "Ngong Ping",
+      "lat": 22.25396, "lng": 113.90501, "osm": "way/45659816",
+      "basis": "named feature: Tian Tan Buddha statue at Ngong Ping",
+      "source": {
+        "sourceType": "Operator's own site (Po Lin Monastery)",
+        "url": "https://plm.org.hk/eng/visitors.php",
+        "locationSourceUrl": "https://plm.org.hk/eng/visitors.php",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "The monastery's visitor page lists daily hours for the Big Buddha and the monastery, including public holidays. The site is not recently dated (footer 2023), so this is medium-confidence evidence of current operation."
+      }
     }
   ]
 }
