@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 10.
-- Classifier-passed (published, not fully documented in that format): 179.
+- Source-verified (complete dated evidence format): 11.
+- Classifier-passed (published, not fully documented in that format): 178.
 - Held back: 295.
 - Published destinations: 189; country hubs: 19; sitemap URLs: 217.
 
@@ -364,7 +364,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Pamukkale, Turkey | pamukkale | held-back | not-reviewed | 0 | 4 | 15 | 2 | has 4 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Panama Canal, Panama | panama-canal | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
 | Papua New Guinea, Papua New Guinea | papua-new-guinea | classifier-passed | not-reviewed | 0 | 6 | 15 | 4 | None |
-| Paris, France | paris | classifier-passed | not-reviewed | 0 | 31 | 15 | 12 | None |
+| Paris, France | paris | source-verified | source-checked | 28 | 37 | 15 | 15 | None |
 | Paros, Greece | paros | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Patagonia, Argentina and Chile | patagonia | classifier-passed | not-reviewed | 0 | 6 | 15 | 4 | None |
 | Patagonia, Chile | patagonia-chile | classifier-passed | not-reviewed | 0 | 6 | 15 | 3 | None |

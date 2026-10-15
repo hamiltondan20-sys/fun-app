@@ -39,7 +39,7 @@ weekdays (one must be a Monday, when many museums close):
 
 | City | Today | Needed |
 |---|---|---|
-| Paris | 5 written days, guide source review pending | Source review; register every stop as a place; flexible days 6–7 |
+| Paris | **Oct 14:** source review approved and applied. 28 places were checked against their operators' own sites (`docs/content-research/paris-2026-10-14.md`) and 10 were not used, including the Centre Pompidou (closed for renovation). The guide now shows only the checked places. The 5 written days still use older, unreviewed stops | Register the reviewed places; rebuild the written days from them; flexible days 6–7 |
 | London | 5 written days, review pending | Same as Paris |
 | Singapore | **Oct 12:** the 3 old written days (unreviewed places, including the excluded Flower Dome) replaced by 4 researched days, 2 open days and a closing morning, using 12 reviewed places with official hours and stored Transitous journeys. Test matrix run: all 8 checks pass criteria 1–8; criterion 9 needs a real phone (`docs/pilot-acceptance-singapore-2026-10-12.md`) | A reviewed hawker centre; budget decision; real-phone check |
 | Hong Kong | **Oct 14:** the 3 old written days (unreviewed places) replaced by 4 researched days, 2 open days and a closing morning: 8 guide places plus 7 newly reviewed ones, with official hours and stored Transitous journeys (including the Star Ferry). Test matrix run: all 8 checks pass criteria 1–8; criterion 9 needs a real phone (`docs/pilot-acceptance-hong-kong-2026-10-14.md`) | Cable-car ride time; Temple Street source; budget decision; real-phone check |

@@ -5,6 +5,250 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Paris, France": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-14",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Suitability and grouping are editorial judgments. Twenty-eight distinct recommendations cover all 15 fields; repeated category appearances are not additional verified places. Sites that refused automated fetches were read in a browser; Notre-Dame's site showed a bot check and was not verified. Hours are not published for Mamiche, and Palais Garnier and Jardin d'Acclimatation show times only in booking calendars.",
+    "sourceUrls": [
+      "docs/content-research/paris-2026-10-14.md",
+      "docs/content-research/paris-2026-10-14.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Centre Pompidou",
+        "url": "https://www.centrepompidou.fr/en/visit",
+        "checkedOn": "2026-10-14",
+        "reason": "Closed for renovation since 22 September 2025, with a 2030 horizon; programmes run at partner venues."
+      },
+      {
+        "name": "Notre-Dame de Paris",
+        "url": "https://www.notredamedeparis.fr/en/visit/",
+        "checkedOn": "2026-10-14",
+        "reason": "Not verified: the official site shows a bot-check page to automated browsers. Not declared closed. The owner can confirm it in an ordinary browser."
+      },
+      {
+        "name": "Père Lachaise Cemetery",
+        "url": "https://www.paris.fr/",
+        "checkedOn": "2026-10-14",
+        "reason": "Not verified: the City of Paris page could not be found by URL or site search."
+      },
+      {
+        "name": "Le Comptoir du Relais",
+        "url": "https://www.hotel-paris-relais-saint-germain.com/restaurant-le-comptoir",
+        "checkedOn": "2026-10-14",
+        "reason": "The hotel's page publishes no hours, menu or dated content; walk-in only."
+      },
+      {
+        "name": "Le Servan",
+        "url": "https://www.leservan.com/",
+        "checkedOn": "2026-10-14",
+        "reason": "Not verified: the official site could not be read or opened."
+      },
+      {
+        "name": "L'As du Fallafel",
+        "url": null,
+        "checkedOn": "2026-10-14",
+        "reason": "No official website found."
+      },
+      {
+        "name": "Candelaria",
+        "url": "https://candelaria-paris.com/",
+        "checkedOn": "2026-10-14",
+        "reason": "Its own site gives no address or hours (only 'every day of the week' and no reservations)."
+      },
+      {
+        "name": "Carette",
+        "url": null,
+        "checkedOn": "2026-10-14",
+        "reason": "Not verified: the official site refused connections; no branch could be confirmed."
+      },
+      {
+        "name": "Kozy",
+        "url": null,
+        "checkedOn": "2026-10-14",
+        "reason": "Not verified: the official site could not be read; third-party addresses conflict."
+      },
+      {
+        "name": "KB Coffee Roasters",
+        "url": "https://www.kbcoffeeroasters.com",
+        "checkedOn": "2026-10-14",
+        "reason": "The official site gives no street address or hours for its Pigalle shop. One fetch reported text addressed to AI assistants on its homepage; it was ignored and did not reappear."
+      }
+    ],
+    "placeSources": {
+      "Eiffel Tower": {
+        "url": "https://www.toureiffel.paris/en/rates-opening-times",
+        "sourceType": "operator's own site (SETE)",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "The operator's calendar shows the tower open 9:30 AM-11 PM on 14-16 October 2026 with live attendance and weather, and says hours for later dates are published closer to the day. Last ascents 10:45 PM; access to the top can be restricted in severe weather or peak periods."
+      },
+      "Louvre Museum": {
+        "url": "https://www.louvre.fr/en/visit/hours-admission",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Current hours and 2026 rates are published, with a notice that timed reservation is required for all visitors from 17 October to 1 November 2026."
+      },
+      "Musée d'Orsay": {
+        "url": "https://www.musee-orsay.fr/en/visit",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "The visit page shows today's opening, a weekly schedule and last-admission times."
+      },
+      "Musée de l'Orangerie": {
+        "url": "https://www.musee-orangerie.fr/en",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "The homepage shows 'Open today from 9.00am to 6.00pm' and current exhibitions 'Monet, painting time' (30 September 2026-25 January 2027) and 'Vija Celmins' (until 15 February 2027). It warns of fake booking sites and long queues."
+      },
+      "Sainte-Chapelle": {
+        "url": "https://www.sainte-chapelle.fr/en/visit/practical-information",
+        "sourceType": "official public operator (Centre des monuments nationaux)",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "The CMN site sells tickets at prices effective 12 January 2026 and publishes winter hours; a restoration news item carries no closure notice."
+      },
+      "Arc de Triomphe": {
+        "url": "https://www.paris-arc-de-triomphe.fr/en/visit/practical-information",
+        "sourceType": "official public operator (Centre des monuments nationaux)",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Tickets on sale and guided tours listed for 24 October and 6 November 2026. The lift is under maintenance until further notice, so the terrace is stairs only (284 steps)."
+      },
+      "Musée Rodin": {
+        "url": "https://www.musee-rodin.fr/en",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Tickets on sale and dated events (31 October 2026 evening; family Sundays from September 2026). The separate Meudon site is closed until spring 2027."
+      },
+      "Palais Garnier": {
+        "url": "https://www.operadeparis.fr/en/visits/palais-garnier",
+        "sourceType": "operator's own site (Opéra national de Paris)",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Self-guided visit tickets are on sale online (30 days ahead) and exhibitions are dated October 2026-February 2027. Rehearsals cause frequent, unannounced auditorium closures."
+      },
+      "Jardin du Luxembourg": {
+        "url": "https://jardin.senat.fr/infos-pratiques/horaires-douverture.html",
+        "sourceType": "official public operator (French Senate)",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Current exhibitions on the garden railings (19 September 2026-17 January 2027) and gate hours that change twice a month with daylight."
+      },
+      "Jardin d'Acclimatation": {
+        "url": "https://www.jardindacclimatation.fr/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Dated events (Día de los Muertos to 1 November 2026; lantern festival from 27 November 2026) and 'open every day of the year'."
+      },
+      "Cité des sciences et de l'industrie": {
+        "url": "https://www.cite-sciences.fr/en/visit-us/opening-hours",
+        "sourceType": "operator's own site (Universcience)",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Current exhibitions running into 2027 and special school-holiday hours for 19 October-1 November 2026."
+      },
+      "Marché aux Puces de Saint-Ouen": {
+        "url": "https://www.pucesdeparissaintouen.com/en",
+        "sourceType": "official market site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Runs every weekend of the year including public holidays; 2026 event items listed."
+      },
+      "Galerie Vivienne": {
+        "url": "https://www.galerie-vivienne.com/",
+        "sourceType": "the passage merchants' official site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "News posts dated 5, 7 and 13 October 2026; daily hours and free entry."
+      },
+      "Sacré-Cœur Basilica": {
+        "url": "https://www.sacre-coeur-montmartre.com/en/info-and-visits/practical-information/hours-and-directions/",
+        "sourceType": "operator's own site (basilica)",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Open every day without exception, free entry; great-organ restoration through May 2027 noted."
+      },
+      "Septime": {
+        "url": "https://www.septime-charonne.fr/",
+        "sourceType": "restaurant's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Current autumn tasting menus (5-course lunch, 7-course dinner) and an active booking link; bookings open daily at 10:00 for 21 days ahead."
+      },
+      "Frenchie (rue du Nil)": {
+        "url": "https://www.frenchie-ruedunil.com/",
+        "sourceType": "restaurant's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Current five-course set dinner menu with pairings and an active booking link. Dinner only. Not Frenchie Bar à Vins or the group's other outlets."
+      },
+      "Bistrot Paul Bert": {
+        "url": "https://www.bistrotpaulbert.fr/",
+        "sourceType": "restaurant's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Current service hours and a phone booking line (bookings by phone only)."
+      },
+      "Le Jules Verne": {
+        "url": "https://www.restaurants-toureiffel.com/fr/restaurant-jules-verne.html",
+        "sourceType": "restaurant's own site (Eiffel Tower restaurants)",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Live booking link, phone and email booking, and a forward closure date of 14 July 2027. Jacket required for men; no shorts or sportswear."
+      },
+      "Clamato": {
+        "url": "https://www.clamato-charonne.fr/",
+        "sourceType": "restaurant's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Open seven days with published service times; no reservations (walk-in only)."
+      },
+      "Breizh Café (Marais)": {
+        "url": "https://www.breizhcafe.com/le-marais",
+        "sourceType": "restaurant group's own branch page",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Live booking link and phone line for this branch; other Breizh Café branches are not substituted."
+      },
+      "Little Red Door": {
+        "url": "https://www.lrdparis.com/",
+        "sourceType": "bar's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Current menu ('Technics for Future Farming'), a booking link and 'Open 7/7 17h-01h, walk-ins welcomed'."
+      },
+      "Bar Hemingway (Ritz Paris)": {
+        "url": "https://www.ritzparis.com/hotel/paris/bars-restaurants",
+        "sourceType": "hotel's official page",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "The Ritz's bars page lists Bar Hemingway 'every day from 05:00pm to 12:00am, no booking required', tapas 5:30-10:30 PM."
+      },
+      "Holybelly": {
+        "url": "https://holybellycafe.com",
+        "sourceType": "café's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "A dated 2026 closure calendar and daily hours (last food order 16:00)."
+      },
+      "Du Pain et des Idées": {
+        "url": "https://dupainetdesidees.com/boulangerie",
+        "sourceType": "bakery's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Address, weekday hours and weekend closure; weekly workshops promoted (site 2025-2026)."
+      },
+      "Poilâne (rue du Cherche-Midi)": {
+        "url": "https://www.poilane.com/pages/boulangerie-poilane-saint-germain-des-pres",
+        "sourceType": "bakery's own shop page",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "The original shop's page lists current weekly hours; no shop closure notice."
+      },
+      "Mamiche (rue du Château d'Eau)": {
+        "url": "https://www.mamiche.fr",
+        "sourceType": "bakery's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Listed with address and phone; the site says delivery has ended and invites customers to the shops. Hours are not published."
+      },
+      "Terres de Café (Rambuteau)": {
+        "url": "https://www.terresdecafe.com/fr/content/70-nos-boutiques",
+        "sourceType": "roaster's own shop list",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "The shop list gives this branch's phone and weekly hours; an active online shop."
+      },
+      "Coutume Café (Babylone)": {
+        "url": "https://www.coutumecafe.com/pages/cafe-babylone",
+        "sourceType": "café's own branch page",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Branch page with brunch description and table reservations; weekly hours shown in an embedded widget labelled 'powered by Google'."
+      }
+    }
+  },
   "Hong Kong, China": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-06",

@@ -811,4 +811,81 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "The named detail recommendations were reviewed against official operator websites on October 6, 2026. This was a website review, not a visit or telephone confirmation. Current opening and booking information does not guarantee availability."
     };
   }
+
+  // Paris: source review approved October 14, 2026 (docs/content-research/paris-2026-10-14.md).
+  data.cityGuideDetailData["Paris, France"] = {
+    bestAttractions: ["Eiffel Tower", "Louvre Museum", "Musée d'Orsay", "Sainte-Chapelle"],
+    bestFirstTimers: ["Eiffel Tower", "Louvre Museum", "Arc de Triomphe"],
+    bestRestaurants: ["Septime", "Frenchie (rue du Nil)", "Bistrot Paul Bert"],
+    bestBudget: ["Jardin du Luxembourg", "Sacré-Cœur Basilica", "Galerie Vivienne"],
+    bestLuxury: ["Le Jules Verne", "Bar Hemingway (Ritz Paris)"],
+    bestCouples: ["Musée de l'Orangerie", "Sacré-Cœur Basilica", "Le Jules Verne"],
+    bestKids: ["Jardin d'Acclimatation", "Cité des sciences et de l'industrie", "Jardin du Luxembourg"],
+    bestSolo: ["Musée Rodin", "Musée d'Orsay", "Coutume Café (Babylone)"],
+    bestUnique: ["Galerie Vivienne", "Marché aux Puces de Saint-Ouen", "Palais Garnier"],
+    bestBreakfast: ["Holybelly", "Poilâne (rue du Cherche-Midi)", "Breizh Café (Marais)"],
+    bestLunch: ["Clamato", "Breizh Café (Marais)", "Septime"],
+    bestDinner: ["Septime", "Bistrot Paul Bert", "Frenchie (rue du Nil)"],
+    bestCocktails: ["Little Red Door", "Bar Hemingway (Ritz Paris)"],
+    bestBakeries: ["Du Pain et des Idées", "Poilâne (rue du Cherche-Midi)", "Mamiche (rue du Château d'Eau)"],
+    bestCoffee: ["Terres de Café (Rambuteau)", "Coutume Café (Babylone)", "Holybelly"]
+  };
+  data.cityPlaceQueries["Paris, France"] = {
+    "Eiffel Tower": "Eiffel Tower Champ de Mars Paris",
+    "Louvre Museum": "Louvre Museum Pyramid Paris",
+    "Musée d'Orsay": "Musée d'Orsay Esplanade Valéry Giscard d'Estaing Paris",
+    "Musée de l'Orangerie": "Musée de l'Orangerie Jardin des Tuileries Paris",
+    "Sainte-Chapelle": "Sainte-Chapelle 10 boulevard du Palais Paris",
+    "Arc de Triomphe": "Arc de Triomphe Place Charles de Gaulle Paris",
+    "Musée Rodin": "Musée Rodin 77 rue de Varenne Paris",
+    "Palais Garnier": "Palais Garnier Place de l'Opéra Paris",
+    "Jardin du Luxembourg": "Jardin du Luxembourg Paris",
+    "Jardin d'Acclimatation": "Jardin d'Acclimatation Bois de Boulogne Paris",
+    "Cité des sciences et de l'industrie": "Cité des sciences et de l'industrie 30 avenue Corentin Cariou Paris",
+    "Marché aux Puces de Saint-Ouen": "Marché aux Puces de Saint-Ouen rue des Rosiers Saint-Ouen",
+    "Galerie Vivienne": "Galerie Vivienne 4 rue des Petits-Champs Paris",
+    "Sacré-Cœur Basilica": "Sacré-Cœur Basilica 35 rue du Chevalier de La Barre Paris",
+    "Septime": "Septime 80 rue de Charonne Paris",
+    "Frenchie (rue du Nil)": "Frenchie 5 rue du Nil Paris",
+    "Bistrot Paul Bert": "Bistrot Paul Bert 18 rue Paul Bert Paris",
+    "Le Jules Verne": "Le Jules Verne Eiffel Tower Paris",
+    "Clamato": "Clamato 80 rue de Charonne Paris",
+    "Breizh Café (Marais)": "Breizh Café 109 rue Vieille du Temple Paris",
+    "Little Red Door": "Little Red Door 60 rue Charlot Paris",
+    "Bar Hemingway (Ritz Paris)": "Bar Hemingway Ritz Paris 15 place Vendôme",
+    "Holybelly": "Holybelly 5 rue Lucien Sampaix Paris",
+    "Du Pain et des Idées": "Du Pain et des Idées 34 rue Yves Toudic Paris",
+    "Poilâne (rue du Cherche-Midi)": "Poilâne 8 rue du Cherche-Midi Paris",
+    "Mamiche (rue du Château d'Eau)": "Mamiche 32 rue du Château d'Eau Paris",
+    "Terres de Café (Rambuteau)": "Terres de Café 14 rue Rambuteau Paris",
+    "Coutume Café (Babylone)": "Coutume Café 47 rue de Babylone Paris"
+  };
+  const paris = data.cityGuideData.find((guide) => guide.city === "Paris, France");
+  paris.summary = "Museums, monuments and gardens, with bakeries, bistros and cocktail bars checked against their own websites.";
+  paris.highlights = ["Eiffel Tower", "Louvre Museum", "Musée d'Orsay", "Sainte-Chapelle"];
+  paris.tip = "Choose one museum or monument per half day, check its closed day and booking rules, then plan a meal nearby instead of crossing the city.";
+  data.destinationFacts["Paris, France"] = paris.tip;
+  data.destinationHeroData["Paris, France"].copy = paris.summary;
+  data.cityPlanningToolkitData["Paris, France"] = [
+    { label: "Closed days", value: "Check before you plan the day", copy: "The Louvre closes on Tuesdays. Musée d'Orsay, Musée Rodin and the Cité des sciences close on Mondays (the Cité des sciences opens on Mondays during the 19 October-1 November school holidays). Du Pain et des Idées closes at weekends and Poilâne on Sundays." },
+    { label: "Book ahead", value: "Timed entry and set menus", copy: "The Louvre requires a timed reservation for every visitor from 17 October to 1 November 2026. Palais Garnier sells visit tickets online only. Septime opens bookings 21 days ahead; Bistrot Paul Bert takes bookings by phone." },
+    { label: "Walk-in", value: "Places that don't take reservations", copy: "Clamato is walk-in only. Bar Hemingway needs no booking, and Little Red Door welcomes walk-ins. Expect queues at busy times." },
+    { label: "Access", value: "Stairs, lifts and gate times", copy: "The Arc de Triomphe's lift is out of service, so the terrace is 284 steps. The Jardin du Luxembourg changes its gate times twice a month with daylight. Rehearsals can close the Palais Garnier auditorium without notice." }
+  ];
+  data.cityEditorialPageData["Paris, France"] = {
+    ...data.cityEditorialPageData["Paris, France"],
+    dek: "Choose the museum or monument you most want to see, check its closed day and booking rules, and build the rest of the day around a meal nearby.",
+    intro: [
+      "Start with the sight that matters most to you. The Eiffel Tower publishes its opening hours a few days at a time and can restrict access to the top in bad weather. The Louvre is closed on Tuesdays and requires a timed reservation for every visitor from 17 October to 1 November 2026. Musée d'Orsay closes on Mondays and stays open late on Thursdays. Sainte-Chapelle keeps shorter winter hours from October to March. For a smaller museum, Musée de l'Orangerie recommends booking a time slot, and Musée Rodin on rue de Varenne closes on Mondays.",
+      "The Arc de Triomphe's lift is out of service until further notice, so reaching the terrace means 284 steps. Palais Garnier sells visit tickets online only, and rehearsals can close the auditorium at short notice. For free time outdoors, the Jardin du Luxembourg changes its gate times twice a month to follow daylight. Sacré-Cœur Basilica is open every day with free entry, although it is an active church. Galerie Vivienne is a covered passage you can walk through for free; its shops keep their own hours. The Marché aux Puces de Saint-Ouen is a weekend and Monday outing, with stalls setting their own hours.",
+      "With children, compare the Jardin d'Acclimatation in the Bois de Boulogne with the Cité des sciences et de l'industrie. Many of the garden's attractions pause at midday outside school holidays, and the science museum closes on Mondays outside the autumn holidays.",
+      "For meals, Septime serves tasting menus at lunch and dinner on weekdays and opens bookings 21 days ahead. Clamato, next door, takes no reservations. Frenchie on rue du Nil serves a set dinner only, and Bistrot Paul Bert takes bookings by phone and closes on Sundays and Mondays. Le Jules Verne, on the Eiffel Tower's second floor, requires a jacket for men. For breakfast, Holybelly serves food until 4 PM and closes for some holidays; Breizh Café's Marais branch opens at 9 AM. Du Pain et des Idées closes at weekends and Poilâne's original shop closes on Sundays. In the evening, Little Red Door welcomes walk-ins and Bar Hemingway at the Ritz needs no booking."
+    ],
+    summaryCards: [
+      ["First visit", "Pair one big museum or monument with a nearby meal, rather than crossing the city between bookings."],
+      ["A slower morning", "Start with a bakery or café, then a garden or a smaller museum like Musée Rodin."],
+      ["Before booking", "Check closed days, timed-entry rules, dress codes and whether the restaurant takes reservations."]
+    ],
+    trust: "All 28 distinct recommendations in this guide were checked against their operators' own websites on October 14, 2026. Sites that refused automated reading were read in a browser. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+  };
 })();
