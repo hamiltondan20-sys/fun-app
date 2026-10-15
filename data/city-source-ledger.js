@@ -5,6 +5,220 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "London, United Kingdom": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-14",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Suitability and grouping are editorial judgments. Thirty distinct recommendations cover all 15 fields; repeated category appearances are not additional verified places. Sites that refused automated fetches were read in a browser; the British Museum and Hamleys showed bot checks and were not verified. The Tower of London publishes hours one day at a time; The Barbary's hours were not readable and Claridge's does not publish afternoon tea sitting times.",
+    "sourceUrls": [
+      "docs/content-research/london-2026-10-14.md",
+      "docs/content-research/london-2026-10-14.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "British Museum",
+        "url": "https://www.britishmuseum.org/visit",
+        "checkedOn": "2026-10-14",
+        "reason": "Not verified: the official site shows a bot-check page to automated browsers. Not declared closed; the owner can confirm it in an ordinary browser."
+      },
+      {
+        "name": "Hamleys (Regent Street)",
+        "url": "https://www.hamleys.com/",
+        "checkedOn": "2026-10-14",
+        "reason": "Not verified: the official site shows a bot-check page to automated browsers."
+      },
+      {
+        "name": "Tayēr + Elementary",
+        "url": "https://tayer-elementary.com/",
+        "checkedOn": "2026-10-14",
+        "reason": "Its own site says it is temporarily closed after a fire in the building, with no reopening date."
+      }
+    ],
+    "placeSources": {
+      "Tower of London": {
+        "url": "https://www.hrp.org.uk/tower-of-london/visit/",
+        "sourceType": "official public operator (Historic Royal Palaces)",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "The visit page sells tickets, shows opening times for the day (15 October: 09:00-17:30, last entry 16:30, last Yeoman Warder tour 15:15) and lists dated Opening Ceremony experiences until 1 November 2026. It asks visitors to check temporary route closures."
+      },
+      "Tower Bridge": {
+        "url": "https://www.towerbridge.org.uk/plan-your-visit",
+        "sourceType": "operator's own site (City of London Corporation)",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Open daily with tickets on sale; annual closures 24-26 December. A relaxed opening runs on the second Saturday of each month, 09:30-11:30."
+      },
+      "Westminster Abbey": {
+        "url": "https://www.westminster-abbey.org/visit-us/opening-times-and-prices/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Sightseeing hours are published (a working church that can close at short notice); the opening-times page shows a date-specific admittance window and closed areas."
+      },
+      "National Gallery": {
+        "url": "https://www.nationalgallery.org.uk/visiting",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Daily hours and the current 'Renoir and Love' exhibition are listed; several rooms are closed for building work (floorplan lists Rooms 1, 7, 8, 16, 17, 17a, 30, 31 and the Sunley Room)."
+      },
+      "Tate Modern": {
+        "url": "https://www.tate.org.uk/visit/tate-modern",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Current exhibitions into 2027 are listed; the Level 0 cloakroom has closed and bags larger than 55x40x20 cm are not allowed."
+      },
+      "St Paul's Cathedral": {
+        "url": "https://www.stpauls.co.uk/planning-your-visit",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Sightseeing tickets are on sale Monday to Saturday; times can change for services and events, and large bags are not allowed."
+      },
+      "V&A South Kensington": {
+        "url": "https://www.vam.ac.uk/south-kensington",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Current and upcoming exhibitions are listed (Rising Voices to January 2027; Constantinople to Istanbul from 7 November 2026); closed 24-26 December."
+      },
+      "Natural History Museum": {
+        "url": "https://www.nhm.ac.uk/visit.html",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Daily hours, free entry with optional guaranteed-entry tickets, current exhibitions, and closures on 24-26 December."
+      },
+      "Science Museum": {
+        "url": "https://www.sciencemuseum.org.uk/visit-us",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Free pre-booked tickets required; dated autumn closures including all day on 11 November 2026; some galleries closed for building work."
+      },
+      "Sky Garden": {
+        "url": "https://skygarden.london/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Free timed tickets (released each Monday, three weeks ahead); capacity is temporarily reduced while one lift is out of service; a dated list of hire and maintenance closures for October-December 2026."
+      },
+      "Leadenhall Market": {
+        "url": "https://www.leadenhallmarket.co.uk/",
+        "sourceType": "operator's own site (City of London Corporation)",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "The public areas 'remain open 24/7'; 2026 seasonal events are listed."
+      },
+      "Covent Garden (Market Building and Piazza)": {
+        "url": "https://www.coventgarden.london/about/faqs",
+        "sourceType": "estate operator's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "The Piazza and Market Building are always open; usual shop hours and current events (lights switch-on 12 November) are published."
+      },
+      "Borough Market": {
+        "url": "https://boroughmarket.org.uk/visit-us/",
+        "sourceType": "operator's own site (Borough Market trustees)",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Regular trading hours (closed Mondays) and dated festive hours from 30 November 2026 to 2 January 2027."
+      },
+      "Dishoom (Covent Garden)": {
+        "url": "https://www.dishoom.com/covent-garden/",
+        "sourceType": "restaurant's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Open all day, every day for breakfast, lunch and dinner; bookings for any group by day but only for 6 or more after 6 PM."
+      },
+      "The Barbary (Neal's Yard)": {
+        "url": "https://www.thebarbary.co.uk/neals-yard",
+        "sourceType": "restaurant's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Live booking widget for 2-4 people and walk-ins at the counter; hours are not shown in readable text."
+      },
+      "Rules": {
+        "url": "https://rules.co.uk/contact/",
+        "sourceType": "restaurant's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "'Open seven days each week from 2nd March 2026' with a live booking link. No shorts or sportswear; children under 10 not admitted after 7 PM."
+      },
+      "Afternoon Tea at Claridge's": {
+        "url": "https://www.maybourne.com/en/hotels/claridges/restaurants-bars/afternoon-tea",
+        "sourceType": "hotel's official page",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Served in the Foyer and Reading Room with a live booking link; a Festive Afternoon Tea replaces it from 3 November to 3 January (not 25 December). Sitting times are not published."
+      },
+      "Core by Clare Smyth": {
+        "url": "https://www.corebyclaresmyth.com/menus/",
+        "sourceType": "restaurant's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Current priced menus and an online reservation link; the whole table orders the same format."
+      },
+      "Padella (Borough Market)": {
+        "url": "https://www.padella.co/borough-market",
+        "sourceType": "restaurant's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "A dated daily menu ('Thursday 15th October') and a virtual queue; no reservations, groups up to 6."
+      },
+      "Flat Iron (Covent Garden)": {
+        "url": "https://flatironsteak.co.uk/restaurant/covent-garden/",
+        "sourceType": "restaurant's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Branch page with current hours and a booking link; 16 other London branches are not substituted."
+      },
+      "Connaught Bar": {
+        "url": "https://www.maybourne.com/en/hotels/the-connaught/restaurants-bars/connaught-bar",
+        "sourceType": "hotel's official page",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "A menu dated October 2026 and 'a no reservation policy'; Sunday hours are not published."
+      },
+      "Swift Soho": {
+        "url": "https://www.barswift.com/swift-bar-locations",
+        "sourceType": "bar's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Locations page with current hours and a booking link; walk-ins accepted."
+      },
+      "The Breakfast Club (Soho)": {
+        "url": "https://www.thebreakfastclubcafes.com/soho",
+        "sourceType": "café's own branch page",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "The original 2005 branch, with current hours and a menu 'available now'."
+      },
+      "Granger & Co. (Notting Hill)": {
+        "url": "https://grangerandco.com/locations/notting-hill",
+        "sourceType": "restaurant's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Location page with current hours (closing times are last orders); open all day, every day."
+      },
+      "Jolene (Newington Green)": {
+        "url": "https://www.jolenebakery.com/location/jolene-newington-green",
+        "sourceType": "bakery's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Bakery and restaurant hours, reservations and a Christmas dates page (no year shown). Sit-in at the bakery until 11:00 Tuesday-Sunday."
+      },
+      "Pophams (Islington)": {
+        "url": "https://www.pophamsbakery.com/pages/locations",
+        "sourceType": "bakery's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Locations page with current hours and live online ordering."
+      },
+      "Eric's Bakery (East Dulwich)": {
+        "url": "https://www.ericslondon.com/pages/contact",
+        "sourceType": "bakery's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "A neighbourhood bakery with an online shop (2026) and Thursday pre-order collections; open in person Thursday to Saturday, Friday and Saturday until sold out."
+      },
+      "Monmouth Coffee (Borough)": {
+        "url": "https://www.monmouthcoffee.co.uk/",
+        "sourceType": "roaster's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "The 'Our shops' list gives this shop's address and hours; card payments only."
+      },
+      "Kiss the Hippo (Fitzrovia)": {
+        "url": "https://kissthehippo.com/pages/locations",
+        "sourceType": "roaster's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Locations page with current hours alongside 11 other cafés."
+      },
+      "Prufrock Coffee (Leather Lane)": {
+        "url": "https://www.prufrockcoffee.com/",
+        "sourceType": "café's own site",
+        "checkedOn": "2026-10-14",
+        "operatingEvidence": "Current hours, a priced menu and an online shop; the kitchen closes before the café."
+      }
+    }
+  },
   "Paris, France": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-14",

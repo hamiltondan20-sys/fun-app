@@ -888,4 +888,83 @@ window.HB_DATA = window.HB_DATA || {};
     ],
     trust: "All 28 distinct recommendations in this guide were checked against their operators' own websites on October 14, 2026. Sites that refused automated reading were read in a browser. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
   };
+
+  // London: source review approved October 14, 2026 (docs/content-research/london-2026-10-14.md).
+  data.cityGuideDetailData["London, United Kingdom"] = {
+    bestAttractions: ["Tower of London", "National Gallery", "Westminster Abbey", "St Paul's Cathedral"],
+    bestFirstTimers: ["Tower of London", "Tower Bridge", "Covent Garden (Market Building and Piazza)"],
+    bestRestaurants: ["Dishoom (Covent Garden)", "The Barbary (Neal's Yard)", "Rules"],
+    bestBudget: ["National Gallery", "Tate Modern", "Sky Garden"],
+    bestLuxury: ["Core by Clare Smyth", "Afternoon Tea at Claridge's", "Connaught Bar"],
+    bestCouples: ["Sky Garden", "The Barbary (Neal's Yard)", "Connaught Bar"],
+    bestKids: ["Natural History Museum", "Science Museum", "V&A South Kensington"],
+    bestSolo: ["Tate Modern", "V&A South Kensington", "Prufrock Coffee (Leather Lane)"],
+    bestUnique: ["Leadenhall Market", "Sky Garden", "Borough Market"],
+    bestBreakfast: ["Dishoom (Covent Garden)", "The Breakfast Club (Soho)", "Granger & Co. (Notting Hill)"],
+    bestLunch: ["Padella (Borough Market)", "Borough Market", "Flat Iron (Covent Garden)"],
+    bestDinner: ["Dishoom (Covent Garden)", "Rules", "Core by Clare Smyth"],
+    bestCocktails: ["Connaught Bar", "Swift Soho"],
+    bestBakeries: ["Jolene (Newington Green)", "Pophams (Islington)", "Eric's Bakery (East Dulwich)"],
+    bestCoffee: ["Monmouth Coffee (Borough)", "Kiss the Hippo (Fitzrovia)", "Prufrock Coffee (Leather Lane)"]
+  };
+  data.cityPlaceQueries["London, United Kingdom"] = {
+    "Tower of London": "Tower of London EC3N 4AB",
+    "Tower Bridge": "Tower Bridge London",
+    "Westminster Abbey": "Westminster Abbey London SW1P 3PA",
+    "National Gallery": "National Gallery Trafalgar Square London",
+    "Tate Modern": "Tate Modern Bankside London",
+    "St Paul's Cathedral": "St Paul's Cathedral London EC4M 8AD",
+    "V&A South Kensington": "V&A Cromwell Road London",
+    "Natural History Museum": "Natural History Museum Cromwell Road London",
+    "Science Museum": "Science Museum Exhibition Road London",
+    "Sky Garden": "Sky Garden 1 Sky Garden Walk London",
+    "Leadenhall Market": "Leadenhall Market Gracechurch Street London",
+    "Covent Garden (Market Building and Piazza)": "Covent Garden Market Building London",
+    "Borough Market": "Borough Market 8 Southwark Street London",
+    "Dishoom (Covent Garden)": "Dishoom 12 Upper St Martin's Lane London",
+    "The Barbary (Neal's Yard)": "The Barbary 16 Neal's Yard London",
+    "Rules": "Rules 34-35 Maiden Lane London",
+    "Afternoon Tea at Claridge's": "Claridge's Brook Street London",
+    "Core by Clare Smyth": "Core by Clare Smyth 92 Kensington Park Road London",
+    "Padella (Borough Market)": "Padella 6 Southwark Street London",
+    "Flat Iron (Covent Garden)": "Flat Iron 17 Henrietta Street London",
+    "Connaught Bar": "Connaught Bar Carlos Place London",
+    "Swift Soho": "Swift 12 Old Compton Street London",
+    "The Breakfast Club (Soho)": "The Breakfast Club 33 D'Arblay Street London",
+    "Granger & Co. (Notting Hill)": "Granger & Co 175 Westbourne Grove London",
+    "Jolene (Newington Green)": "Jolene 21 Newington Green London",
+    "Pophams (Islington)": "Pophams 19 Prebend Street London",
+    "Eric's Bakery (East Dulwich)": "Eric's Bakery 20 Upland Road London",
+    "Monmouth Coffee (Borough)": "Monmouth Coffee 2 Park Street London",
+    "Kiss the Hippo (Fitzrovia)": "Kiss the Hippo 51 Margaret Street London",
+    "Prufrock Coffee (Leather Lane)": "Prufrock Coffee 23 Leather Lane London"
+  };
+  const london = data.cityGuideData.find((guide) => guide.city === "London, United Kingdom");
+  london.summary = "Palaces, galleries and markets, with breakfast spots, dinners and cocktail bars checked against their own websites.";
+  london.highlights = ["Tower of London", "National Gallery", "Westminster Abbey", "Tower Bridge"];
+  london.tip = "Pick one big sight per half day, check whether it opens on Sundays and whether it needs a timed ticket, then plan a meal nearby.";
+  data.destinationFacts["London, United Kingdom"] = london.tip;
+  data.destinationHeroData["London, United Kingdom"].copy = london.summary;
+  data.cityPlanningToolkitData["London, United Kingdom"] = [
+    { label: "Sundays", value: "Churches are for worship", copy: "Westminster Abbey and St Paul's Cathedral offer no sightseeing on Sundays. Borough Market closes on Mondays until 30 November, and Monmouth's Borough shop closes on Sundays." },
+    { label: "Free tickets", value: "Free does not mean walk-in", copy: "Sky Garden needs a free timed ticket, released each Monday three weeks ahead. The Science Museum asks visitors to pre-book free tickets and is closed all day on 11 November 2026." },
+    { label: "Walk-in", value: "Queues instead of bookings", copy: "Padella runs a virtual queue, the Connaught Bar takes no reservations, and Dishoom books evening tables only for groups of six or more." },
+    { label: "Before you go", value: "Bags, rooms and age rules", copy: "Tate Modern and St Paul's don't allow large bags. Several National Gallery rooms are closed for building work. Rules does not admit children under 10 after 7 PM." }
+  ];
+  data.cityEditorialPageData["London, United Kingdom"] = {
+    ...data.cityEditorialPageData["London, United Kingdom"],
+    dek: "Choose the palace, gallery or market you most want to see, check its Sunday and ticket rules, and build the day around a meal nearby.",
+    intro: [
+      "Start with the sight you care about most. The Tower of London publishes its opening times one day at a time, with last entry an hour before closing, so check the day you plan to go. Tower Bridge opens daily and closes from 24 to 26 December. Westminster Abbey and St Paul's Cathedral are working churches: neither offers sightseeing on Sundays, and both can close at short notice for services.",
+      "London's big galleries and museums are free to enter, but not always walk-in. The National Gallery is open daily, until 9 PM on Fridays, although several rooms are closed for building work. Tate Modern stays open late on Fridays and Saturdays and doesn't allow large bags. In South Kensington, the V&A, the Natural History Museum and the Science Museum sit close together. The Science Museum asks for a free pre-booked ticket and closes all day on 11 November 2026.",
+      "For a view, Sky Garden needs a free timed ticket released each Monday, and its capacity is currently reduced while a lift is out of service. Leadenhall Market's covered passages are open at all hours, although its shops keep City hours. Covent Garden's Piazza and Market Building are always open. Borough Market trades from Tuesday to Sunday, adding Mondays from 30 November.",
+      "Dishoom's Covent Garden café serves breakfast from 8 AM on weekdays, and The Breakfast Club's original Soho café closes at 3 PM on weekdays. At Borough Market, Padella runs a virtual queue instead of taking bookings. Rules on Maiden Lane is open seven days and does not admit children under 10 after 7 PM. Core by Clare Smyth in Notting Hill serves dinner Tuesday to Saturday. Claridge's serves a Festive Afternoon Tea from 3 November. In the evening, the Connaught Bar takes no reservations and Swift Soho accepts walk-ins."
+    ],
+    summaryCards: [
+      ["First visit", "Pair one big sight with a meal nearby: the Tower and Tower Bridge, or Westminster Abbey and Trafalgar Square's National Gallery."],
+      ["A slower morning", "Start with coffee at Monmouth or Prufrock, then one gallery rather than three."],
+      ["Before booking", "Check Sunday closures, free timed tickets, bag rules and whether the restaurant takes reservations."]
+    ],
+    trust: "All 30 distinct recommendations in this guide were checked against their operators' own websites on October 14, 2026. Sites that refused automated reading were read in a browser. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+  };
 })();
