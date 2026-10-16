@@ -17,7 +17,8 @@ if (!ledger) throw new Error("Could not read data/city-source-ledger.js");
 
 const OSM = { source: "OpenStreetMap Nominatim", licence: "ODbL 1.0", attribution: "© OpenStreetMap contributors", retrievedOn: "2026-10-10" };
 
-// city, ledger key, kind, address (from the reviewed record), area, coordinates (OSM lookup on 2026-10-10) and what the point represents.
+// city, ledger key, kind, address (from the reviewed record), area, coordinates (OSM lookup on 2026-10-10) and what the point represents,
+// plus the lookup date when it differs from the city's.
 const PLACES = [
   ["berlin", "Neues Museum", "landmark", "James Simon Galerie entrance, Bodestrasse, Berlin", "Museum Island", 52.51989, 13.39744, "node/13972036398", "named feature: James Simon Galerie, the published visitor entrance"],
   ["berlin", "Berlin Wall Memorial", "landmark", "Bernauer Strasse, Berlin (outdoor memorial site)", "Bernauer Strasse", 52.53582, 13.39085, "way/389400710", "named feature: memorial grounds on Bernauer Strasse (centre of the outdoor site)"],
@@ -76,6 +77,10 @@ const PLACES = [
   ["paris", "Breizh Café (Marais)", "meal", "109 rue Vieille du Temple, 75003 Paris", "Le Marais", 48.86063, 2.36182, "node/2383363288", "named feature on rue Vieille du Temple (not another branch)"],
   ["paris", "Little Red Door", "meal", "60 rue Charlot, 75003 Paris", "Le Marais", 48.86366, 2.36359, "node/3265513124", "named feature at 60 rue Charlot"],
   ["paris", "Terres de Café (Rambuteau)", "cafe", "14 rue Rambuteau, 75003 Paris", "Le Marais", 48.86061, 2.35554, "node/5908178879", "named feature at 14 rue Rambuteau (not another branch)"],
+  ["paris", "Musée de l'Orangerie", "landmark", "Jardin des Tuileries, Place de la Concorde (Seine side), 75001 Paris", "Tuileries", 48.86377, 2.32266, "way/54188996", "named feature: the museum building", "2026-10-16"],
+  ["paris", "Arc de Triomphe", "landmark", "Place Charles de Gaulle, 75008 Paris", "Étoile", 48.87378, 2.29504, "way/226413508", "named feature: the arch", "2026-10-16"],
+  ["paris", "Septime", "meal", "80 rue de Charonne, 75011 Paris", "Charonne", 48.85360, 2.38096, "node/3602657896", "named feature at 80 rue de Charonne", "2026-10-16"],
+  ["paris", "Bar Hemingway (Ritz Paris)", "meal", "Ritz Paris, 15 place Vendôme, 75001 Paris", "Vendôme", 48.86797, 2.32884, "node/5755624024", "the hotel's named feature; the bar is inside the Ritz", "2026-10-16"],
   // London: OSM lookup on 2026-10-14.
   ["london", "Tower of London", "landmark", "Tower of London, London EC3N 4AB", "Tower Hill", 51.50822, -0.07619, "way/370870741", "named feature: the Tower of London site"],
   ["london", "Tower Bridge", "landmark", "Tower Bridge, London (entrance on the north-west side of the bridge)", "Tower Hill", 51.50552, -0.07537, "way/378541210", "named feature: the bridge"],
@@ -98,7 +103,9 @@ const PLACES = [
   ["london", "St Paul's Cathedral", "landmark", "St Paul's Churchyard, London EC4M 8AD", "City", 51.51379, -0.09845, "way/369161987", "named feature: the cathedral"],
   ["london", "Flat Iron (Covent Garden)", "meal", "17-18 Henrietta Street, London WC2E 8QH", "Covent Garden", 51.51081, -0.12399, "node/4611099089", "named feature at 17-18 Henrietta Street (not another branch)"],
   ["london", "Swift Soho", "meal", "12 Old Compton Street, London W1D 4TQ", "Soho", 51.51374, -0.12999, "node/692190788", "named feature at 12 Old Compton Street (not another branch)"],
-  ["london", "The Breakfast Club (Soho)", "cafe", "33 D'Arblay Street, London W1F 8EU", "Soho", 51.51471, -0.13533, "way/477968033", "named feature at 33 D'Arblay Street (the original branch)"]
+  ["london", "The Breakfast Club (Soho)", "cafe", "33 D'Arblay Street, London W1F 8EU", "Soho", 51.51471, -0.13533, "way/477968033", "named feature at 33 D'Arblay Street (the original branch)"],
+  ["london", "Science Museum", "landmark", "Exhibition Road, South Kensington, London SW7 2DD", "South Kensington", 51.49740, -0.17467, "way/27765411", "named feature: the museum building", "2026-10-16"],
+  ["london", "Connaught Bar", "meal", "The Connaught, Carlos Place, Mayfair, London W1K 2AL", "Mayfair", 51.51018, -0.15022, "way/26707058", "the hotel's named feature; the bar is inside The Connaught", "2026-10-16"]
 ];
 
 const CITY_META = {
@@ -172,12 +179,12 @@ const routesSource = JSON.parse(fs.readFileSync(path.join(root, "data/place-rout
 const ITINERARY_PLACE_SOURCES = JSON.parse(fs.readFileSync(path.join(root, "data/itinerary-place-sources.json"), "utf8")).places;
 
 const allPlaces = [
-  ...PLACES.map(([city, name, kind, address, area, lat, lng, osm, basis]) => ({ city, name, kind, address, area, lat, lng, osm, basis, record: null })),
+  ...PLACES.map(([city, name, kind, address, area, lat, lng, osm, basis, osmRetrievedOn]) => ({ city, name, kind, address, area, lat, lng, osm, basis, osmRetrievedOn, record: null })),
   ...ITINERARY_PLACE_SOURCES.map((item) => ({ ...item, record: item.source }))
 ];
 
 const places = {};
-for (const { city, name, kind, address, area, lat, lng, osm, basis, record: ownRecord } of allPlaces) {
+for (const { city, name, kind, address, area, lat, lng, osm, basis, osmRetrievedOn, record: ownRecord } of allPlaces) {
   const meta = CITY_META[city];
   const record = ownRecord || ledger[meta.ledgerKey]?.placeSources?.[name];
   if (!record) throw new Error(`No reviewed source for ${name} in ${meta.ledgerKey}`);
@@ -193,7 +200,7 @@ for (const { city, name, kind, address, area, lat, lng, osm, basis, record: ownR
     area,
     timeZone: meta.timeZone,
     address,
-    coordinates: { lat, lng, basis, osm, ...OSM, retrievedOn: meta.osmRetrievedOn },
+    coordinates: { lat, lng, basis, osm, ...OSM, retrievedOn: osmRetrievedOn || meta.osmRetrievedOn },
     entrance: ENTRANCES[id] ? { ...ENTRANCES[id], ...OSM, retrievedOn: meta.osmRetrievedOn } : null,
     hours,
     verification: {

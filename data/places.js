@@ -6567,6 +6567,459 @@ window.HB_PLACES = {
         ]
       }
     },
+    "plc_paris_musee-de-lorangerie": {
+      "id": "plc_paris_musee-de-lorangerie",
+      "name": "Musée de l'Orangerie",
+      "city": "paris",
+      "kind": "landmark",
+      "area": "Tuileries",
+      "timeZone": "Europe/Paris",
+      "address": "Jardin des Tuileries, Place de la Concorde (Seine side), 75001 Paris",
+      "coordinates": {
+        "lat": 48.86377,
+        "lng": 2.32266,
+        "basis": "named feature: the museum building",
+        "osm": "way/54188996",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-16"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-16",
+        "periods": [
+          {
+            "from": "2026-10-16",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "tue": [],
+              "wed": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:00",
+                  "21:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-12-25",
+            "hours": [],
+            "note": "Published annual closure"
+          }
+        ],
+        "lastEntry": "17:15 (20:15 on late Fridays)",
+        "caveat": null,
+        "notes": "Read in a browser (automated fetches were refused). Friday late opening applies during exhibition periods; the current exhibitions run until 25 January and 15 February 2027.",
+        "evidence": {
+          "url": "https://www.musee-orangerie.fr/en/visit-orangerie",
+          "quote": "Monday 9.00am 6.00pm / Tuesday Closed / Wednesday 9.00am 6.00pm / Thursday 9.00am 6.00pm / Friday 9.00am 9.00pm* / Saturday 9.00am 6.00pm / Sunday 9.00am 6.00pm. Last admission at 5:15 p.m. ... Closed every Tuesday, May 1, the morning of July 14, and December 25. *Late night opening until 9 p.m. every Friday during exhibition periods.",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site",
+            "url": "https://www.musee-orangerie.fr/en",
+            "retrievedOn": "2026-10-14",
+            "note": "The homepage shows 'Open today from 9.00am to 6.00pm' and current exhibitions 'Monet, painting time' (30 September 2026-25 January 2027) and 'Vija Celmins' (until 15 February 2027). It warns of fake booking sites and long queues."
+          }
+        ]
+      }
+    },
+    "plc_paris_arc-de-triomphe": {
+      "id": "plc_paris_arc-de-triomphe",
+      "name": "Arc de Triomphe",
+      "city": "paris",
+      "kind": "landmark",
+      "area": "Étoile",
+      "timeZone": "Europe/Paris",
+      "address": "Place Charles de Gaulle, 75008 Paris",
+      "coordinates": {
+        "lat": 48.87378,
+        "lng": 2.29504,
+        "basis": "named feature: the arch",
+        "osm": "way/226413508",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-16"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-16",
+        "periods": [
+          {
+            "from": "2026-10-16",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "10:00",
+                  "22:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "11:00",
+                  "22:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "22:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "22:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "22:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "22:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "22:30"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-11-11",
+            "hours": null,
+            "note": "Closed in the morning; the afternoon opening time is not published"
+          },
+          {
+            "date": "2026-12-24",
+            "hours": [
+              [
+                "10:00",
+                "16:00"
+              ]
+            ],
+            "note": "Early closing"
+          },
+          {
+            "date": "2026-12-31",
+            "hours": [
+              [
+                "10:00",
+                "16:00"
+              ]
+            ],
+            "note": "Early closing"
+          }
+        ],
+        "lastEntry": "45 minutes before closing",
+        "caveat": "The lift is out of service (since late July 2026), so the terrace is reached by 284 steps.",
+        "notes": null,
+        "evidence": {
+          "url": "https://www.paris-arc-de-triomphe.fr/en/visit/practical-information",
+          "quote": "1st October to 31 March: Wednesday to Monday 10am - 10.30pm; Tuesdays 11am - 10.30pm ... last admission to the monument 45 minutes before closing time. Annual closures on 1st May, 8 May, 14 July, 11 November (morning). Early closing at 4pm on 24 and 31 December 2026.",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "official public operator (Centre des monuments nationaux)",
+            "url": "https://www.paris-arc-de-triomphe.fr/en/visit/practical-information",
+            "retrievedOn": "2026-10-14",
+            "note": "Tickets on sale and guided tours listed for 24 October and 6 November 2026. The lift is under maintenance until further notice, so the terrace is stairs only (284 steps)."
+          }
+        ]
+      }
+    },
+    "plc_paris_septime": {
+      "id": "plc_paris_septime",
+      "name": "Septime",
+      "city": "paris",
+      "kind": "meal",
+      "area": "Charonne",
+      "timeZone": "Europe/Paris",
+      "address": "80 rue de Charonne, 75011 Paris",
+      "coordinates": {
+        "lat": 48.8536,
+        "lng": 2.38096,
+        "basis": "named feature at 80 rue de Charonne",
+        "osm": "node/3602657896",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-16"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-16",
+        "periods": [
+          {
+            "from": "2026-10-16",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "12:15",
+                  "14:00"
+                ],
+                [
+                  "19:30",
+                  "23:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "12:15",
+                  "14:00"
+                ],
+                [
+                  "19:30",
+                  "23:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "12:15",
+                  "14:00"
+                ],
+                [
+                  "19:30",
+                  "23:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "12:15",
+                  "14:00"
+                ],
+                [
+                  "19:30",
+                  "23:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "12:15",
+                  "14:00"
+                ],
+                [
+                  "19:30",
+                  "23:00"
+                ]
+              ],
+              "sat": [],
+              "sun": []
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": "Bookings open online at 10:00, 21 days ahead.",
+        "notes": null,
+        "evidence": {
+          "url": "https://www.septime-charonne.fr/",
+          "quote": "lundi — vendredi ... Déjeuner 12h15-14h / Dîner 19h30-23h ... samedi – dimanche [fermé]",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "restaurant's own site",
+            "url": "https://www.septime-charonne.fr/",
+            "retrievedOn": "2026-10-14",
+            "note": "Current autumn tasting menus (5-course lunch, 7-course dinner) and an active booking link; bookings open daily at 10:00 for 21 days ahead."
+          }
+        ]
+      }
+    },
+    "plc_paris_bar-hemingway-ritz-paris": {
+      "id": "plc_paris_bar-hemingway-ritz-paris",
+      "name": "Bar Hemingway (Ritz Paris)",
+      "city": "paris",
+      "kind": "meal",
+      "area": "Vendôme",
+      "timeZone": "Europe/Paris",
+      "address": "Ritz Paris, 15 place Vendôme, 75001 Paris",
+      "coordinates": {
+        "lat": 48.86797,
+        "lng": 2.32884,
+        "basis": "the hotel's named feature; the bar is inside the Ritz",
+        "osm": "node/5755624024",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-16"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-16",
+        "periods": [
+          {
+            "from": "2026-10-16",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "17:00",
+                  "24:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "17:00",
+                  "24:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "17:00",
+                  "24:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "17:00",
+                  "24:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "17:00",
+                  "24:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "17:00",
+                  "24:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "17:00",
+                  "24:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": null,
+        "notes": "Read in a browser (automated fetches were refused).",
+        "evidence": {
+          "url": "https://www.ritzparis.com/hotel/paris/bars-restaurants",
+          "quote": "Bar Hemingway: Every day from 05:00pm to 12:00am, no booking required. Tapas from 05:30pm to 10:30pm",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "hotel's official page",
+            "url": "https://www.ritzparis.com/hotel/paris/bars-restaurants",
+            "retrievedOn": "2026-10-14",
+            "note": "The Ritz's bars page lists Bar Hemingway 'every day from 05:00pm to 12:00am, no booking required', tapas 5:30-10:30 PM."
+          }
+        ]
+      }
+    },
     "plc_london_tower-of-london": {
       "id": "plc_london_tower-of-london",
       "name": "Tower of London",
@@ -9100,6 +9553,240 @@ window.HB_PLACES = {
         ]
       }
     },
+    "plc_london_science-museum": {
+      "id": "plc_london_science-museum",
+      "name": "Science Museum",
+      "city": "london",
+      "kind": "landmark",
+      "area": "South Kensington",
+      "timeZone": "Europe/London",
+      "address": "Exhibition Road, South Kensington, London SW7 2DD",
+      "coordinates": {
+        "lat": 51.4974,
+        "lng": -0.17467,
+        "basis": "named feature: the museum building",
+        "osm": "way/27765411",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-16"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-16",
+        "periods": [
+          {
+            "from": "2026-10-16",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-11-11",
+            "hours": [],
+            "note": "Closed all day"
+          },
+          {
+            "date": "2026-11-26",
+            "hours": [
+              [
+                "10:00",
+                "17:00"
+              ]
+            ],
+            "note": "Early closing"
+          },
+          {
+            "date": "2026-12-24",
+            "hours": [],
+            "note": "Closed 24-26 December"
+          },
+          {
+            "date": "2026-12-25",
+            "hours": [],
+            "note": "Closed 24-26 December"
+          },
+          {
+            "date": "2026-12-26",
+            "hours": [],
+            "note": "Closed 24-26 December"
+          }
+        ],
+        "lastEntry": "17:15",
+        "caveat": "Free, but a ticket must be booked ahead. Some galleries have their own closures.",
+        "notes": null,
+        "evidence": {
+          "url": "https://www.sciencemuseum.org.uk/visit-us",
+          "quote": "The museum is open daily from 10.00–18.00 (except for 24–26 December when the museum is closed). Last entry is 17.15. ... The museum will be closed all day on Wednesday 11 November 2026. The museum closes at 17.00 on Thursday 26 November 2026.",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site",
+            "url": "https://www.sciencemuseum.org.uk/visit-us",
+            "retrievedOn": "2026-10-14",
+            "note": "Free pre-booked tickets required; dated autumn closures including all day on 11 November 2026; some galleries closed for building work."
+          }
+        ]
+      }
+    },
+    "plc_london_connaught-bar": {
+      "id": "plc_london_connaught-bar",
+      "name": "Connaught Bar",
+      "city": "london",
+      "kind": "meal",
+      "area": "Mayfair",
+      "timeZone": "Europe/London",
+      "address": "The Connaught, Carlos Place, Mayfair, London W1K 2AL",
+      "coordinates": {
+        "lat": 51.51018,
+        "lng": -0.15022,
+        "basis": "the hotel's named feature; the bar is inside The Connaught",
+        "osm": "way/26707058",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-16"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-16",
+        "periods": [
+          {
+            "from": "2026-10-16",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "16:00",
+                  "01:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "16:00",
+                  "01:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "16:00",
+                  "01:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "16:00",
+                  "01:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "16:00",
+                  "01:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "16:00",
+                  "01:00"
+                ]
+              ],
+              "sun": null
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": "No reservations. Sunday hours are not published.",
+        "notes": null,
+        "evidence": {
+          "url": "https://www.maybourne.com/en/hotels/the-connaught/restaurants-bars/connaught-bar",
+          "quote": "Monday - Saturday: 4pm - 1am. ... The Connaught Bar operates a no reservation policy.",
+          "confidence": "medium"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-14",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "hotel's official page",
+            "url": "https://www.maybourne.com/en/hotels/the-connaught/restaurants-bars/connaught-bar",
+            "retrievedOn": "2026-10-14",
+            "note": "A menu dated October 2026 and 'a no reservation policy'; Sunday hours are not published."
+          }
+        ]
+      }
+    },
     "plc_berlin_lebenswelten-bistro-humboldt-forum": {
       "id": "plc_berlin_lebenswelten-bistro-humboldt-forum",
       "name": "Lebenswelten Bistro (Humboldt Forum)",
@@ -10760,6 +11447,69 @@ window.HB_PLACES = {
         "checkedOn": "2026-10-14",
         "source": "Transitous street routing (OpenStreetMap data)",
         "alternatives": null
+      },
+      "plc_paris_musee-de-lorangerie|plc_paris_galerie-vivienne": {
+        "minutes": 24,
+        "mode": "walk",
+        "summary": "about 1.7 km on foot",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-16",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_paris_coutume-cafe-babylone|plc_paris_arc-de-triomphe": {
+        "minutes": 25,
+        "mode": "transit",
+        "summary": "Bus 92 from Saint-François-Xavier to Charles de Gaulle - Étoile, with about 0.6 km of walking in total",
+        "conditions": "Wednesday 4 Nov 2026, departing about 9:45",
+        "checkedOn": "2026-10-16",
+        "source": "Transitous journey planner (transitous.org), Île-de-France timetable data",
+        "alternatives": "Metro 13 then 1: about 24-27 min; walking: about 50 min"
+      },
+      "plc_paris_arc-de-triomphe|plc_paris_eiffel-tower": {
+        "minutes": 20,
+        "mode": "transit",
+        "summary": "Metro 6 from Charles de Gaulle - Étoile to Bir-Hakeim, with about 0.8 km of walking in total",
+        "conditions": "Wednesday 4 Nov 2026, departing about 14:00",
+        "checkedOn": "2026-10-16",
+        "source": "Transitous journey planner (transitous.org), Île-de-France timetable data",
+        "alternatives": "Walking: about 31 min"
+      },
+      "plc_paris_breizh-cafe-marais|plc_paris_bar-hemingway-ritz-paris": {
+        "minutes": 23,
+        "mode": "transit",
+        "summary": "Metro 8 from Saint-Sébastien - Froissart to Opéra, with about 1.1 km of walking in total",
+        "conditions": "Wednesday 4 Nov 2026, departing about 18:30",
+        "checkedOn": "2026-10-16",
+        "source": "Transitous journey planner (transitous.org), Île-de-France timetable data",
+        "alternatives": "Walking: about 39 min"
+      },
+      "plc_london_natural-history-museum|plc_london_science-museum": {
+        "minutes": 13,
+        "mode": "walk",
+        "summary": "about 0.9 km on foot",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-16",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_london_science-museum|plc_london_core-by-clare-smyth": {
+        "minutes": 28,
+        "mode": "transit",
+        "summary": "Circle line from South Kensington to Notting Hill Gate, with about 1.3 km of walking in total",
+        "conditions": "Wednesday 4 Nov 2026, departing about 18:15",
+        "checkedOn": "2026-10-16",
+        "source": "Transitous journey planner (transitous.org), TfL timetable data",
+        "alternatives": "Bus 52: about 29 min"
+      },
+      "plc_london_flat-iron-covent-garden|plc_london_connaught-bar": {
+        "minutes": 22,
+        "mode": "transit",
+        "summary": "Piccadilly line from Leicester Square to Green Park, with about 1.3 km of walking in total",
+        "conditions": "Wednesday 4 Nov 2026, departing about 18:30",
+        "checkedOn": "2026-10-16",
+        "source": "Transitous journey planner (transitous.org), TfL timetable data",
+        "alternatives": "Walking: about 31 min"
       }
     }
   }

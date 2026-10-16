@@ -3297,6 +3297,17 @@
       color: #5e6872;
     }
 
+    /* "Swap in <place>" names a real place, so it sizes to its text and may wrap on phones. */
+    .trip-day-edit-toggle {
+      max-width: 100%;
+    }
+
+    .trip-day-edit-button.trip-day-edit-button--swap {
+      flex: 1 1 auto;
+      white-space: normal;
+      text-align: center;
+    }
+
     .trip-day-actions-buttons .trip-day-map-button,
     .trip-day-actions-buttons .trip-day-edit-toggle {
       flex: 0 0 auto;

@@ -821,6 +821,27 @@ window.HB_TRIP_HELPERS.getConcreteTripTemplates = function(city, areas) {
             itemTitle: "Louvre Museum + Galerie Vivienne + Frenchie",
             itemBody: "Start at the Louvre when it opens, keep lunch flexible, walk to Galerie Vivienne in the afternoon, and finish with dinner at Frenchie on rue du Nil.",
             fit: "Everything after the museum is on foot: about 12 minutes to the passage and 10 minutes on to dinner.",
+            // Checked alternate: the smaller Orangerie instead of the Louvre.
+            alternates: [{
+              replaces: "plc_paris_louvre-museum",
+              note: "Swap the Louvre for the smaller Musée de l'Orangerie, home of Monet's Water Lilies, at the Concorde end of the Tuileries.",
+              step: {
+                title: "Musée de l'Orangerie",
+                copy: "Jardin des Tuileries, on the Concorde side. Book a timed ticket on the museum's own site; last admission is at 5:15 PM.",
+                placeId: "plc_paris_musee-de-lorangerie"
+              },
+              rationale: "A Right Bank day: Monet's Water Lilies at the Orangerie in the morning, a covered passage in the afternoon, and a set dinner nearby.",
+              highlight: "Musée de l'Orangerie",
+              weather: "The Orangerie is closed on Tuesdays; book its timed tickets on the museum's own site, not through resellers. Frenchie serves dinner only; book ahead.",
+              itemTitle: "Musée de l'Orangerie + Galerie Vivienne + Frenchie",
+              itemBody: "Start at the Orangerie when it opens, keep lunch flexible, walk to Galerie Vivienne in the afternoon, and finish with dinner at Frenchie on rue du Nil.",
+              fit: "Everything after the museum is on foot: about 24 minutes to the passage and 10 minutes on to dinner.",
+              retitle: [{
+                from: "Lunch near the Louvre (your choice)",
+                title: "Lunch near the Tuileries (your choice)",
+                copy: "Nothing is booked; eat near the museum before the afternoon walk."
+              }]
+            }],
             timeline: [
               { time: "9:00 AM", title: "Louvre Museum", copy: "Enter at the Pyramid. Choose the wings you want before you go; it is a large museum.", placeId: "plc_paris_louvre-museum" },
               { time: "1:00 PM", title: "Lunch near the Louvre (your choice)", copy: "Nothing is booked; eat near the museum before the afternoon walk.", kind: "flexible" },
@@ -875,6 +896,27 @@ window.HB_TRIP_HELPERS.getConcreteTripTemplates = function(city, areas) {
             itemTitle: "Musée Rodin + Eiffel Tower + Le Jules Verne",
             itemBody: "Have coffee at Coutume on rue de Babylone, visit Musée Rodin, go up the Eiffel Tower in the afternoon, and stay for dinner at Le Jules Verne.",
             fit: "A short walk to the museum, then about 23 minutes by Metro and RER to the tower, where dinner is in the same building.",
+            // Checked alternate: the Arc de Triomphe terrace instead of Musée Rodin.
+            alternates: [{
+              replaces: "plc_paris_musee-rodin",
+              note: "Swap Musée Rodin for the view from the Arc de Triomphe's terrace. Its lift is out of service, so it is 284 steps up.",
+              step: {
+                title: "Arc de Triomphe",
+                copy: "Place Charles de Gaulle. The lift is out of service, so the terrace is 284 steps up. Last admission is 45 minutes before closing.",
+                placeId: "plc_paris_arc-de-triomphe"
+              },
+              rationale: "A western day: coffee, the view from the Arc de Triomphe, the Eiffel Tower in the afternoon, and dinner on its second floor.",
+              timeShape: "Rooftop morning, tower afternoon, booked dinner",
+              weather: "The Arc de Triomphe's lift is out of service, so its terrace is stairs only. The Eiffel Tower publishes its hours only a few days ahead and can restrict access to the top in bad weather. Le Jules Verne requires a jacket for men; book ahead.",
+              itemTitle: "Arc de Triomphe + Eiffel Tower + Le Jules Verne",
+              itemBody: "Have coffee at Coutume on rue de Babylone, take the bus to the Arc de Triomphe and climb to its terrace, go up the Eiffel Tower in the afternoon, and stay for dinner at Le Jules Verne.",
+              fit: "About 25 minutes by bus to the Arc, then about 20 minutes by Metro line 6 to the tower, where dinner is in the same building.",
+              retitle: [{
+                from: "Lunch near the Invalides (your choice)",
+                title: "Lunch between the Arc and the tower (your choice)",
+                copy: "Nothing is booked."
+              }]
+            }],
             timeline: [
               { time: "9:00 AM", title: "Coffee at Coutume Café", copy: "The Babylone café at 47 rue de Babylone.", placeId: "plc_paris_coutume-cafe-babylone" },
               { time: "10:00 AM", title: "Musée Rodin", copy: "77 rue de Varenne. Large bags are not accepted.", placeId: "plc_paris_musee-rodin" },
@@ -903,6 +945,22 @@ window.HB_TRIP_HELPERS.getConcreteTripTemplates = function(city, areas) {
             itemTitle: "Holybelly + Clamato + Bistrot Paul Bert",
             itemBody: "Have breakfast at Holybelly near the Canal Saint-Martin, take the Metro to Clamato for lunch, keep the afternoon free, and finish with dinner at Bistrot Paul Bert.",
             fit: "About 22 minutes by Metro to lunch; dinner is a 6-minute walk from there.",
+            // Checked alternate: a tasting dinner at Septime instead of Bistrot Paul Bert.
+            alternates: [{
+              replaces: "plc_paris_bistrot-paul-bert",
+              note: "Swap Bistrot Paul Bert for the tasting dinner at Septime, at the same address as lunch. Septime is closed at weekends.",
+              step: {
+                title: "Dinner at Septime",
+                copy: "80 rue de Charonne. A seven-course tasting dinner; bookings open online at 10 AM, 21 days ahead.",
+                placeId: "plc_paris_septime"
+              },
+              rationale: "The food-led day: a café breakfast near the canal, a walk-in lunch, a free afternoon and a tasting dinner at Septime.",
+              highlight: "Septime",
+              weather: "Septime is closed on Saturdays and Sundays; bookings open online at 10 AM, 21 days ahead. Clamato takes no reservations.",
+              itemTitle: "Holybelly + Clamato + Septime",
+              itemBody: "Have breakfast at Holybelly near the Canal Saint-Martin, take the Metro to Clamato for lunch, keep the afternoon free, and come back to the same address for dinner at Septime.",
+              fit: "About 22 minutes by Metro to lunch; dinner is at the same address."
+            }],
             timeline: [
               { time: "9:30 AM", title: "Breakfast at Holybelly", copy: "5 rue Lucien Sampaix. The last food order is at 4 PM.", placeId: "plc_paris_holybelly" },
               { time: "12:30 PM", title: "Lunch at Clamato", copy: "80 rue de Charonne. No reservations; expect a queue.", placeId: "plc_paris_clamato" },
@@ -919,6 +977,21 @@ window.HB_TRIP_HELPERS.getConcreteTripTemplates = function(city, areas) {
             itemTitle: "Sacré-Cœur + Breizh Café + Little Red Door",
             itemBody: "Visit Sacré-Cœur in Montmartre, take the Metro to the Marais for lunch at Breizh Café, keep the afternoon free, and end with a drink at Little Red Door.",
             fit: "About 36 minutes by Metro to lunch; the bar is a 7-minute walk from there.",
+            // Checked alternate: Bar Hemingway at the Ritz instead of Little Red Door.
+            alternates: [{
+              replaces: "plc_paris_little-red-door",
+              note: "Swap Little Red Door for Bar Hemingway at the Ritz on place Vendôme, about 23 minutes away by Metro.",
+              step: {
+                title: "Drinks at Bar Hemingway",
+                copy: "Inside the Ritz Paris, 15 place Vendôme. Open every day from 5 PM; no booking required.",
+                placeId: "plc_paris_bar-hemingway-ritz-paris"
+              },
+              rationale: "Sacré-Cœur in the morning, lunch in the Marais, a free afternoon and cocktails at the Ritz.",
+              weather: "Sacré-Cœur is an active church; visits pause during services. Bar Hemingway takes no bookings.",
+              itemTitle: "Sacré-Cœur + Breizh Café + Bar Hemingway",
+              itemBody: "Visit Sacré-Cœur in Montmartre, take the Metro to the Marais for lunch at Breizh Café, keep the afternoon free, and end with a drink at Bar Hemingway in the Ritz.",
+              fit: "About 36 minutes by Metro to lunch, and about 23 minutes by Metro line 8 to the bar."
+            }],
             timeline: [
               { time: "10:00 AM", title: "Sacré-Cœur Basilica", copy: "Free to enter. The dome has separate hours and a fee.", placeId: "plc_paris_sacre-coeur-basilica" },
               { time: "1:00 PM", title: "Lunch at Breizh Café (Marais)", copy: "The Marais branch at 109 rue Vieille du Temple.", placeId: "plc_paris_breizh-cafe-marais" },
@@ -1268,6 +1341,21 @@ window.HB_TRIP_HELPERS.getConcreteTripTemplates = function(city, areas) {
             itemTitle: "Granger & Co. + Natural History Museum + V&A + Core by Clare Smyth",
             itemBody: "Have breakfast at Granger & Co. on Westbourne Grove, take the bus to the Natural History Museum, walk to the V&A in the afternoon, and take the Tube to dinner at Core.",
             fit: "About 33 minutes by bus to the museums, a 16-minute walk between them, and 28 minutes by Circle line to dinner.",
+            // Checked alternate: the Science Museum instead of the V&A.
+            alternates: [{
+              replaces: "plc_london_vanda-south-kensington",
+              note: "Swap the V&A for the Science Museum on Exhibition Road. It is free, but its ticket must be booked ahead.",
+              step: {
+                title: "Science Museum",
+                copy: "Exhibition Road. Free, but book a ticket ahead; last entry is at 5:15 PM. Some galleries are closed for building work.",
+                placeId: "plc_london_science-museum"
+              },
+              rationale: "Breakfast in Notting Hill, the Natural History Museum and the Science Museum side by side, and a booked dinner back in Notting Hill.",
+              weather: "Both museums are free; the Science Museum needs a booked ticket, and a free ticket guarantees entry at the Natural History Museum. Core serves dinner Tuesday to Saturday only; book ahead.",
+              itemTitle: "Granger & Co. + Natural History Museum + Science Museum + Core by Clare Smyth",
+              itemBody: "Have breakfast at Granger & Co. on Westbourne Grove, take the bus to the Natural History Museum, walk to the Science Museum in the afternoon, and take the Tube to dinner at Core.",
+              fit: "About 33 minutes by bus to the museums, a 13-minute walk between them, and 28 minutes by Circle line to dinner."
+            }],
             timeline: [
               { time: "8:30 AM", title: "Breakfast at Granger & Co.", copy: "175 Westbourne Grove.", placeId: "plc_london_granger-and-co-notting-hill" },
               { time: "10:00 AM", title: "Natural History Museum", copy: "Free entry; last entry is at 5:30 PM.", placeId: "plc_london_natural-history-museum" },
@@ -1312,6 +1400,21 @@ window.HB_TRIP_HELPERS.getConcreteTripTemplates = function(city, areas) {
             itemTitle: "Prufrock Coffee + St Paul's Cathedral + Flat Iron + Swift Soho",
             itemBody: "Have coffee at Prufrock on Leather Lane, visit St Paul's Cathedral, take the Tube to lunch at Flat Iron in Covent Garden, keep the afternoon free, and end with a drink at Swift in Soho.",
             fit: "About 14 minutes by Central line to the cathedral, 21 to lunch, and a 9-minute walk to the bar.",
+            // Checked alternate: the Connaught Bar instead of Swift Soho.
+            alternates: [{
+              replaces: "plc_london_swift-soho",
+              note: "Swap Swift Soho for the Connaught Bar in Mayfair, about 22 minutes away by Tube. It takes no reservations, and its Sunday hours are not published.",
+              step: {
+                title: "Drinks at the Connaught Bar",
+                copy: "Inside The Connaught, Carlos Place, Mayfair. Open from 4 PM Monday to Saturday; no reservations.",
+                placeId: "plc_london_connaught-bar"
+              },
+              rationale: "Coffee on Leather Lane, St Paul's Cathedral in the morning, a steak lunch in Covent Garden, a free afternoon and cocktails in Mayfair.",
+              weather: "St Paul's has no sightseeing on Sundays and its times can change for services. Large bags are not allowed. The Connaught Bar takes no reservations.",
+              itemTitle: "Prufrock Coffee + St Paul's Cathedral + Flat Iron + Connaught Bar",
+              itemBody: "Have coffee at Prufrock on Leather Lane, visit St Paul's Cathedral, take the Tube to lunch at Flat Iron in Covent Garden, keep the afternoon free, and end with a drink at the Connaught Bar in Mayfair.",
+              fit: "About 14 minutes by Central line to the cathedral, 21 to lunch, and 22 minutes by Piccadilly line to the bar."
+            }],
             timeline: [
               { time: "9:00 AM", title: "Coffee at Prufrock Coffee", copy: "23-25 Leather Lane.", placeId: "plc_london_prufrock-coffee-leather-lane" },
               { time: "10:00 AM", title: "St Paul's Cathedral", copy: "Last entry is usually at 4 PM.", placeId: "plc_london_st-pauls-cathedral" },

@@ -4999,6 +4999,58 @@ function getBlueprintTopPlaces() {
       };
     }
 
+    // Day text that names the day's stops, replaced together with a stop so the summary always
+    // matches the schedule.
+    const STOP_ALTERNATE_COPY_FIELDS = ["title", "rationale", "highlight", "timeShape", "weather", "itemTitle", "itemBody", "fit"];
+
+    // "Try alternate" on a researched day: a template's checked alternates (each swaps one named stop
+    // for another registry place, with its own copy). An alternate's copy is written for the full
+    // day, so a pace-adjusted (Easygoing) day offers none.
+    function getTemplateStopAlternates(template) {
+      if (template?.paceAdjusted) return [];
+      const placeIds = new Set((template?.timeline || []).map((step) => step?.placeId).filter(Boolean));
+      return (Array.isArray(template?.alternates) ? template.alternates : [])
+        .filter((alternate) => alternate?.step?.placeId && placeIds.has(alternate.replaces))
+        .map((alternate) => ({ kind: "stop", ...JSON.parse(JSON.stringify(alternate)) }));
+    }
+
+    // Swap one stop for its checked alternate: the new place takes the old stop's time, travel is
+    // recalculated from the registry, and the day's copy fields come from the alternate. Returns the
+    // new timeline and copy plus the reverse swap, or null if the stop or place is missing.
+    function applyStopAlternate({ timeline, copy }, alternate, registry, routes) {
+      const index = (timeline || []).findIndex((step) => step?.placeId && step.placeId === alternate?.replaces);
+      if (index < 0 || !registry?.[alternate.step?.placeId]) return null;
+      const original = timeline[index];
+      const fields = STOP_ALTERNATE_COPY_FIELDS.filter((key) => typeof alternate[key] === "string");
+      // Free-time slots named after the old stop's neighbourhood can be renamed too.
+      const retitle = Array.isArray(alternate.retitle) ? alternate.retitle : [];
+      const reverseRetitle = [];
+      const swapped = timeline.map((step, stepIndex) => {
+        if (stepIndex === index) return { ...alternate.step, time: original.time };
+        const rename = !step?.placeId && retitle.find((item) => item.from === step?.title);
+        if (!rename) return step;
+        reverseRetitle.push({ from: rename.title, title: step.title, copy: step.copy });
+        return { ...step, title: rename.title, copy: rename.copy ?? step.copy };
+      });
+      const { place, travelFromPrevious, time, ...originalStep } = original;
+      return {
+        timeline: attachPlaces(swapped, registry, routes),
+        copy: { ...copy, ...Object.fromEntries(fields.map((key) => [key, alternate[key]])) },
+        // Going back restores the original stop and copy; going back again offers the alternate as first written.
+        undo: alternate.restores ? alternate.original : {
+          kind: "stop",
+          restores: true,
+          replaces: alternate.step.placeId,
+          step: originalStep,
+          note: `Go back to the original plan with ${original.title}.`,
+          ...Object.fromEntries(fields.map((key) => [key, copy[key]])),
+          retitle: reverseRetitle,
+          original: alternate
+        },
+        removedTitle: original.title
+      };
+    }
+
     // Stops on a day whose registry place publishes the date as closed.
     function countClosedStops(template, isoDate, registry) {
       return (Array.isArray(template?.timeline) ? template.timeline : []).filter((step) => {
@@ -5334,7 +5386,9 @@ function getBlueprintTopPlaces() {
             label: slot === 2 ? "Crowd-loved + fit" : "Personalized",
             timeline: finalTimeline,
             removed: false,
-            alternatives: [
+            // Researched days offer only checked alternates (often none); generic days keep the
+            // generic reframing options.
+            alternatives: finalTimeline.some((step) => step?.placeId) ? getTemplateStopAlternates(sourceDay) : [
               {
                 title: `${dayLead} • Nearby alternative`,
                 body: `A different version of the same kind of stop in the same part of ${city}, so you can change the tone without breaking the flow of the day.`,
@@ -7273,16 +7327,14 @@ function getBlueprintTopPlaces() {
                 <div class="trip-day-actions">
                   <div class="trip-day-actions-copy">
                     <p class="trip-day-section-label">Edit this day</p>
-                    <p class="mt-2 text-sm leading-6 text-muted">Try a nearby alternative, make the day lighter, or keep it focused on the map while you review the route.</p>
+                    <p class="mt-2 text-sm leading-6 text-muted">${escapeTripText(describeDayEditOptions(day, index))}</p>
                   </div>
                   <div class="trip-day-actions-buttons">
                     <button class="trip-day-map-button trip-day-map-button--footer rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line ${hbState.currentTripMapQuery === day.id ? "is-active" : ""}" data-action="focus-trip-map" data-day-id="${day.id}" type="button">
                       ${hbState.currentTripMapQuery === day.id ? "Focused on map" : "Show day on map"}
                     </button>
                     <div class="trip-day-edit-toggle" role="group" aria-label="Edit this day">
-                      <button class="trip-day-edit-button" data-action="swap-item" data-day-id="${day.id}" type="button">
-                        Try alternate
-                      </button>
+                      ${renderSwapButton(day, index)}
                       <button class="trip-day-edit-button is-muted" data-action="remove-item" data-day-id="${day.id}" type="button">
                         Make lighter
                       </button>
@@ -7321,6 +7373,15 @@ function getBlueprintTopPlaces() {
     function stepMatchesProtectedAnchor(step, day, dayIndex) {
       const totalDays = hbState.currentTrip?.days?.length || 1;
       return getTimelineProtectedAnchors(step, day, getDayProtectedAnchors(day, dayIndex, totalDays), 0).length > 0;
+    }
+
+    // A stop the traveler asked for by name ("Musée Rodin") can't be swapped out. A guide pick, or a
+    // must-have the stop only fills by kind ("one memorable dinner"), can: the swap moves it to the new stop.
+    function stepIsTravelerMustHave(step, day, dayIndex) {
+      const totalDays = hbState.currentTrip?.days?.length || 1;
+      const names = [step?.title, ...(Array.isArray(step?.covers) ? step.covers : [])].map((label) => getPlanningAnchorKey(label));
+      return getTimelineProtectedAnchors(step, day, getDayProtectedAnchors(day, dayIndex, totalDays), 0)
+        .some((anchor) => anchor.source !== "guide" && anchor.key && names.some((name) => name.includes(anchor.key)));
     }
 
     function setDayQualityAdjustment(day, feedback, title, copy, icon = "auto_fix_high") {
@@ -7369,7 +7430,8 @@ function getBlueprintTopPlaces() {
     }
 
     function applyWrongAreaAdjustment(day) {
-      if (!day.item?.alternatives?.length) return false;
+      // A researched day's area comes from its checked stops; rewording it would not move anything.
+      if (isResearchedDay(day) || !day.item?.alternatives?.length) return false;
       const next = day.item.alternatives[day.item.alternativeIndex % day.item.alternatives.length];
       const currentSnapshot = {
         title: day.item.title,
@@ -7453,9 +7515,91 @@ function getBlueprintTopPlaces() {
       renderTrip();
     }
 
+    function describeDayEditOptions(day, dayIndex) {
+      if (!isResearchedDay(day)) return "Try a nearby alternative, make the day lighter, or keep it focused on the map while you review the route.";
+      const choice = getAvailableStopAlternates(day, dayIndex)[0];
+      if (choice) return `${choice.alternate.note || `Swap in ${choice.alternate.step.title}.`}${choice.alternate.restores ? "" : " Times and travel update to match."}`;
+      // Say why a day's checked alternate isn't offered, rather than implying there is none.
+      const otherOptions = "You can reorder stops, make the day lighter, or use quick feedback.";
+      const held = (day.item.alternatives || []).find((alternate) => alternate?.kind === "stop");
+      const place = held && window.HB_PLACES?.places?.[held.step?.placeId];
+      const replaced = held && day.item.timeline.find((step) => step?.placeId === held.replaces);
+      if (place && replaced) {
+        if (stepIsTravelerMustHave(replaced, day, dayIndex)) return `${place.name} could replace ${replaced.title}, but that is one of your must-haves, so it stays. ${otherOptions}`;
+        return `The checked alternative for this day, ${place.name}, is closed on this date. ${otherOptions}`;
+      }
+      return `Every named stop on this day is a checked place, and there's no checked alternative for it yet. ${otherOptions}`;
+    }
+
+    function renderSwapButton(day, dayIndex) {
+      if (!isResearchedDay(day)) {
+        return `<button class="trip-day-edit-button" data-action="swap-item" data-day-id="${day.id}" type="button">Try alternate</button>`;
+      }
+      const choice = getAvailableStopAlternates(day, dayIndex)[0];
+      if (!choice) return "";
+      // The branch in brackets stays in the note above; the button keeps to the place's name.
+      const name = String(window.HB_PLACES?.places?.[choice.alternate.step.placeId]?.name || choice.alternate.step.title).replace(/\s*\(.*\)$/, "");
+      return `<button class="trip-day-edit-button trip-day-edit-button--swap" data-action="swap-item" data-day-id="${day.id}" type="button">${choice.alternate.restores ? "Back to" : "Swap in"} ${escapeHtml(name)}</button>`;
+    }
+
+    // A day built from checked places: its text names real stops, so generic reframing doesn't apply.
+    function isResearchedDay(day) {
+      return (day?.item?.timeline || []).some((step) => step?.placeId);
+    }
+
+    // Checked alternates this day can offer now: the stop it replaces is still there and isn't a
+    // must-have, and the new place isn't published as closed on the day's date. Older saved trips
+    // carry generic alternatives on researched days; those are never offered.
+    function getAvailableStopAlternates(day, dayIndex) {
+      const registry = window.HB_PLACES?.places;
+      const isoDate = getTripDayIsoDate(dayIndex);
+      return (day?.item?.alternatives || [])
+        .map((alternate, index) => ({ alternate, index }))
+        .filter(({ alternate }) => {
+          if (alternate?.kind !== "stop") return false;
+          const step = day.item.timeline.find((item) => item?.placeId === alternate.replaces);
+          const place = registry?.[alternate.step?.placeId];
+          if (!step || !place || stepIsTravelerMustHave(step, day, dayIndex)) return false;
+          return checkStopHours({ time: step.time }, isoDate, place.hours).state !== "closed";
+        });
+    }
+
+    function swapStopAlternate(day, dayIndex) {
+      const choice = getAvailableStopAlternates(day, dayIndex)[0];
+      if (!choice) return false;
+      const copy = Object.fromEntries(STOP_ALTERNATE_COPY_FIELDS.map((key) => [key, day[key]]));
+      const result = applyStopAlternate({ timeline: day.item.timeline, copy }, choice.alternate, window.HB_PLACES?.places, window.HB_PLACES?.routes);
+      if (!result) return false;
+      // Text the trip-quality pass appended to the template copy stays appended.
+      const suffix = (text, base) => (base && String(text || "").startsWith(base) ? String(text).slice(base.length) : "");
+      const bodySuffix = suffix(day.item.body, day.itemBody);
+      const lead = String(day.item.title || "").includes(" • ") ? `${day.item.title.split(" • ")[0]} • ` : "";
+      Object.assign(day, result.copy);
+      day.item.timeline = result.timeline;
+      day.item.title = `${lead}${day.itemTitle}`;
+      day.item.body = `${day.itemBody}${bodySuffix}`;
+      day.item.fit = day.fit;
+      day.item.alternatives[choice.index] = result.undo;
+      // Must-haves the old stop filled by kind now point at the new one.
+      (day.protectedAnchors || []).forEach((anchor) => {
+        if (anchor.stepTitle === result.removedTitle) anchor.stepTitle = choice.alternate.step.title;
+      });
+      // The day's area follows its stops.
+      const areaInfo = resolveDayArea({ timeline: result.timeline }, [], getCityName());
+      if (areaInfo.confirmed) Object.assign(day, { area: areaInfo.label, areaConfirmed: true, areas: areaInfo.areas });
+      const added = choice.alternate.step.title;
+      markUnsavedArrangement(`${day.dayLabel}: ${added} instead of ${result.removedTitle}. Save this version if it feels better.`);
+      return true;
+    }
+
     function swapDayItem(dayId) {
       const day = findDay(dayId);
-      if (!day || day.item.removed || !day.item.alternatives.length) return;
+      if (!day || day.item.removed) return;
+      if (isResearchedDay(day)) {
+        if (swapStopAlternate(day, findDayIndex(dayId))) renderTrip();
+        return;
+      }
+      if (!day.item.alternatives.length) return;
       const next = day.item.alternatives[day.item.alternativeIndex % day.item.alternatives.length];
       const currentSnapshot = {
         title: day.item.title,

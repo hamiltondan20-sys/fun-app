@@ -707,3 +707,84 @@ test("default planner dates are in the future", () => {
   assert.ok(context.getSuggestedTripDate(Number(endDate[1])) > context.getSuggestedTripDate(Number(startDate[1])));
   assert.doesNotMatch(fs.readFileSync(path.join(root, "plan/index.html"), "utf8"), /type="date" value="\d{4}-/);
 });
+
+// ---- "Try alternate" on researched days: checked alternates only ----
+
+const RESEARCHED_CITIES = ["Berlin", "Singapore", "Hong Kong", "Paris", "London"];
+
+test("checked alternates point at registry places, replace a stop that is there, and rewrite every copy field that names it", () => {
+  const logic = loadLogic();
+  const helpers = logic.window.HB_TRIP_HELPERS;
+  const registry = logic.window.HB_PLACES.places;
+  let count = 0;
+  for (const city of RESEARCHED_CITIES) {
+    const templates = helpers.getConcreteTripTemplates(city, helpers.getAreaSet(city));
+    const usedIds = new Set(templates.flatMap((template) => (template.timeline || []).map((step) => step.placeId).filter(Boolean)));
+    for (const template of templates) {
+      const alternates = logic.getTemplateStopAlternates(template);
+      assert.ok(alternates.length <= 1, `${template.title}: one alternate per day, so its copy is never combined with another`);
+      for (const alternate of alternates) {
+        count++;
+        const replaced = template.timeline.find((step) => step.placeId === alternate.replaces);
+        const place = registry[alternate.step.placeId];
+        assert.ok(place, `${alternate.step.placeId} is in the registry`);
+        assert.equal(place.hours.status, "hours-checked", `${place.name} has researched hours`);
+        assert.ok(!usedIds.has(alternate.step.placeId), `${place.name} isn't already a stop elsewhere in ${city}`);
+        // Every field of the template that names the old stop gets a replacement that doesn't.
+        const oldName = registry[replaced.placeId].name.replace(/\s*\(.*\)$/, "");
+        for (const key of ["title", "rationale", "highlight", "timeShape", "weather", "itemTitle", "itemBody", "fit"]) {
+          if (String(template[key] || "").includes(oldName)) {
+            assert.equal(typeof alternate[key], "string", `${template.title}: ${key} names ${oldName}, so the alternate must rewrite it`);
+            assert.ok(!alternate[key].includes(oldName), `${template.title}: the alternate's ${key} still names ${oldName}`);
+          }
+        }
+        // A pace-adjusted day offers none: the alternate's copy is written for the full day.
+        assert.equal(logic.getTemplateStopAlternates({ ...template, paceAdjusted: "Easygoing" }).length, 0);
+      }
+    }
+  }
+  assert.equal(count, 6);
+});
+
+test("swapping a stop recalculates travel, renames free time, and swaps back exactly", () => {
+  const logic = loadLogic();
+  const helpers = logic.window.HB_TRIP_HELPERS;
+  const { places: registry, routes } = logic.window.HB_PLACES;
+  const template = helpers.getConcreteTripTemplates("Paris", helpers.getAreaSet("Paris")).find((item) => item.highlight === "Eiffel Tower");
+  const [alternate] = logic.getTemplateStopAlternates(template);
+  const timeline = logic.attachPlaces(template.timeline, registry, routes);
+  const copy = { itemTitle: template.itemTitle, itemBody: template.itemBody, fit: template.fit, rationale: template.rationale, timeShape: template.timeShape, weather: template.weather };
+
+  const swapped = logic.applyStopAlternate({ timeline, copy }, alternate, registry, routes);
+  const arc = swapped.timeline.find((step) => step.placeId === "plc_paris_arc-de-triomphe");
+  assert.equal(arc.time, "10:00 AM", "the new stop takes the old stop's time");
+  assert.equal(arc.travelFromPrevious.basis, "routed");
+  assert.equal(arc.travelFromPrevious.minutes, 25);
+  assert.equal(swapped.timeline.find((step) => step.placeId === "plc_paris_eiffel-tower").travelFromPrevious.minutes, 20, "the next hop is recalculated too");
+  assert.ok(swapped.timeline.some((step) => step.title === "Lunch between the Arc and the tower (your choice)"));
+  assert.equal(swapped.copy.itemTitle, "Arc de Triomphe + Eiffel Tower + Le Jules Verne");
+  assert.equal(swapped.removedTitle, "Musée Rodin");
+
+  const back = logic.applyStopAlternate({ timeline: swapped.timeline, copy: swapped.copy }, swapped.undo, registry, routes);
+  const strip = (steps) => [...steps].map(({ title, time, placeId, copy: text, travelFromPrevious }) => ({ title, time, placeId, copy: text, minutes: travelFromPrevious?.minutes ?? null }));
+  assert.deepEqual(strip(back.timeline), strip(timeline));
+  assert.deepEqual({ ...back.copy }, copy);
+  // Going back again offers the alternate exactly as first written.
+  assert.equal(back.undo, swapped.undo.original);
+
+  // A missing stop or an unknown place is refused rather than half-applied.
+  assert.equal(logic.applyStopAlternate({ timeline, copy }, { ...alternate, replaces: "plc_paris_nowhere" }, registry, routes), null);
+  assert.equal(logic.applyStopAlternate({ timeline, copy }, { ...alternate, step: { ...alternate.step, placeId: "plc_paris_nowhere" } }, registry, routes), null);
+});
+
+test("a swapped-in stop that is closed on the day's date is recognised as closed", () => {
+  const logic = loadLogic();
+  const registry = logic.window.HB_PLACES.places;
+  // Science Museum: closed all day on Wednesday 11 November 2026; Septime: closed at weekends.
+  assert.equal(logic.checkStopHours({ time: "2:00 PM" }, "2026-11-11", registry["plc_london_science-museum"].hours).state, "closed");
+  assert.equal(logic.checkStopHours({ time: "2:00 PM" }, "2026-11-12", registry["plc_london_science-museum"].hours).state, "open");
+  assert.equal(logic.checkStopHours({ time: "7:30 PM" }, "2026-11-07", registry["plc_paris_septime"].hours).state, "closed");
+  assert.equal(logic.checkStopHours({ time: "7:30 PM" }, "2026-11-06", registry["plc_paris_septime"].hours).state, "open");
+  // Unpublished Sunday hours stay unknown, never assumed.
+  assert.equal(logic.checkStopHours({ time: "7:00 PM" }, "2026-11-08", registry["plc_london_connaught-bar"].hours).state, "unknown");
+});

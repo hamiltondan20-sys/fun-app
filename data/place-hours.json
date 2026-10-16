@@ -2636,6 +2636,195 @@
         }
       ],
       "notes": "The original D'Arblay Street café. No holiday hours were published."
+    },
+    "plc_paris_musee-de-lorangerie": {
+      "url": "https://www.musee-orangerie.fr/en/visit-orangerie",
+      "retrievedOn": "2026-10-16",
+      "confidence": "high",
+      "quote": "Monday 9.00am 6.00pm / Tuesday Closed / Wednesday 9.00am 6.00pm / Thursday 9.00am 6.00pm / Friday 9.00am 9.00pm* / Saturday 9.00am 6.00pm / Sunday 9.00am 6.00pm. Last admission at 5:15 p.m. ... Closed every Tuesday, May 1, the morning of July 14, and December 25. *Late night opening until 9 p.m. every Friday during exhibition periods.",
+      "periods": [
+        {
+          "from": "2026-10-16",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "09:00-18:00",
+            "tue": "closed",
+            "wed": "09:00-18:00",
+            "thu": "09:00-18:00",
+            "fri": "09:00-21:00",
+            "sat": "09:00-18:00",
+            "sun": "09:00-18:00"
+          }
+        }
+      ],
+      "exceptions": [
+        {
+          "date": "2026-12-25",
+          "hours": "closed",
+          "note": "Published annual closure"
+        }
+      ],
+      "lastEntry": "17:15 (20:15 on late Fridays)",
+      "notes": "Read in a browser (automated fetches were refused). Friday late opening applies during exhibition periods; the current exhibitions run until 25 January and 15 February 2027."
+    },
+    "plc_paris_arc-de-triomphe": {
+      "url": "https://www.paris-arc-de-triomphe.fr/en/visit/practical-information",
+      "retrievedOn": "2026-10-16",
+      "confidence": "high",
+      "quote": "1st October to 31 March: Wednesday to Monday 10am - 10.30pm; Tuesdays 11am - 10.30pm ... last admission to the monument 45 minutes before closing time. Annual closures on 1st May, 8 May, 14 July, 11 November (morning). Early closing at 4pm on 24 and 31 December 2026.",
+      "periods": [
+        {
+          "from": "2026-10-16",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "10:00-22:30",
+            "tue": "11:00-22:30",
+            "wed": "10:00-22:30",
+            "thu": "10:00-22:30",
+            "fri": "10:00-22:30",
+            "sat": "10:00-22:30",
+            "sun": "10:00-22:30"
+          }
+        }
+      ],
+      "exceptions": [
+        {
+          "date": "2026-11-11",
+          "hours": "unknown",
+          "note": "Closed in the morning; the afternoon opening time is not published"
+        },
+        {
+          "date": "2026-12-24",
+          "hours": "10:00-16:00",
+          "note": "Early closing"
+        },
+        {
+          "date": "2026-12-31",
+          "hours": "10:00-16:00",
+          "note": "Early closing"
+        }
+      ],
+      "lastEntry": "45 minutes before closing",
+      "caveat": "The lift is out of service (since late July 2026), so the terrace is reached by 284 steps."
+    },
+    "plc_paris_septime": {
+      "url": "https://www.septime-charonne.fr/",
+      "retrievedOn": "2026-10-16",
+      "confidence": "high",
+      "quote": "lundi — vendredi ... Déjeuner 12h15-14h / Dîner 19h30-23h ... samedi – dimanche [fermé]",
+      "periods": [
+        {
+          "from": "2026-10-16",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "12:15-14:00,19:30-23:00",
+            "tue": "12:15-14:00,19:30-23:00",
+            "wed": "12:15-14:00,19:30-23:00",
+            "thu": "12:15-14:00,19:30-23:00",
+            "fri": "12:15-14:00,19:30-23:00",
+            "sat": "closed",
+            "sun": "closed"
+          }
+        }
+      ],
+      "exceptions": [],
+      "caveat": "Bookings open online at 10:00, 21 days ahead."
+    },
+    "plc_paris_bar-hemingway-ritz-paris": {
+      "url": "https://www.ritzparis.com/hotel/paris/bars-restaurants",
+      "retrievedOn": "2026-10-16",
+      "confidence": "high",
+      "quote": "Bar Hemingway: Every day from 05:00pm to 12:00am, no booking required. Tapas from 05:30pm to 10:30pm",
+      "periods": [
+        {
+          "from": "2026-10-16",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "17:00-00:00",
+            "tue": "17:00-00:00",
+            "wed": "17:00-00:00",
+            "thu": "17:00-00:00",
+            "fri": "17:00-00:00",
+            "sat": "17:00-00:00",
+            "sun": "17:00-00:00"
+          }
+        }
+      ],
+      "exceptions": [],
+      "notes": "Read in a browser (automated fetches were refused)."
+    },
+    "plc_london_science-museum": {
+      "url": "https://www.sciencemuseum.org.uk/visit-us",
+      "retrievedOn": "2026-10-16",
+      "confidence": "high",
+      "quote": "The museum is open daily from 10.00–18.00 (except for 24–26 December when the museum is closed). Last entry is 17.15. ... The museum will be closed all day on Wednesday 11 November 2026. The museum closes at 17.00 on Thursday 26 November 2026.",
+      "periods": [
+        {
+          "from": "2026-10-16",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "10:00-18:00",
+            "tue": "10:00-18:00",
+            "wed": "10:00-18:00",
+            "thu": "10:00-18:00",
+            "fri": "10:00-18:00",
+            "sat": "10:00-18:00",
+            "sun": "10:00-18:00"
+          }
+        }
+      ],
+      "exceptions": [
+        {
+          "date": "2026-11-11",
+          "hours": "closed",
+          "note": "Closed all day"
+        },
+        {
+          "date": "2026-11-26",
+          "hours": "10:00-17:00",
+          "note": "Early closing"
+        },
+        {
+          "date": "2026-12-24",
+          "hours": "closed",
+          "note": "Closed 24-26 December"
+        },
+        {
+          "date": "2026-12-25",
+          "hours": "closed",
+          "note": "Closed 24-26 December"
+        },
+        {
+          "date": "2026-12-26",
+          "hours": "closed",
+          "note": "Closed 24-26 December"
+        }
+      ],
+      "lastEntry": "17:15",
+      "caveat": "Free, but a ticket must be booked ahead. Some galleries have their own closures."
+    },
+    "plc_london_connaught-bar": {
+      "url": "https://www.maybourne.com/en/hotels/the-connaught/restaurants-bars/connaught-bar",
+      "retrievedOn": "2026-10-16",
+      "confidence": "medium",
+      "quote": "Monday - Saturday: 4pm - 1am. ... The Connaught Bar operates a no reservation policy.",
+      "periods": [
+        {
+          "from": "2026-10-16",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "16:00-01:00",
+            "tue": "16:00-01:00",
+            "wed": "16:00-01:00",
+            "thu": "16:00-01:00",
+            "fri": "16:00-01:00",
+            "sat": "16:00-01:00",
+            "sun": "unknown"
+          }
+        }
+      ],
+      "exceptions": [],
+      "caveat": "No reservations. Sunday hours are not published."
     }
   }
 }

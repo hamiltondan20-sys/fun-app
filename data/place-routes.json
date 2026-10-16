@@ -1,5 +1,5 @@
 {
-  "about": "Journeys between consecutive itinerary stops, looked up once (not live). Public-transport minutes are door-to-door including walking, for the stated weekday and departure time; they vary by time of day, day of week and service changes. Walking routes follow streets and footpaths. A route's own `source` overrides the default. Berlin: VBB timetable data via https://v6.vbb.transport.rest, for every hop of 1.5 km or more; Tempelhofer Feld is routed via its Tempelhofer Damm main entrance (Tor 10); Restaurant Anhalt shares the Deutsches Technikmuseum's location, so its journey is the museum's. Singapore: the Transitous journey planner (https://transitous.org, MOTIS) on 2026-10-12, using LTA timetable data for buses and MRT and OpenStreetMap for walking; hops of 1.5 km or more, plus Marina Bay walks where the street route is much longer than the straight line; Singapore Botanic Gardens is routed from Tanglin Gate; National Kitchen shares National Gallery Singapore's location. Hong Kong: Transitous on 2026-10-14 (MTR, bus and Star Ferry timetable data; OpenStreetMap for walking), for Wednesday 21 Oct 2026; Central walks are street-routed because of the hills. The Ngong Ping 360 cable-car ride is not in the timetable data and its duration is not published as text by the operator, so that hop is left untimed. Paris: Transitous on 2026-10-14 (RATP/RER timetable data; OpenStreetMap for walking), for Wednesday 4 Nov 2026; every hop is stored, as street-routed walks or timetabled journeys. Le Jules Verne shares the Eiffel Tower location. London: Transitous on 2026-10-14 (TfL Underground and bus timetable data; OpenStreetMap for walking), for Wednesday 4 Nov 2026; every hop is stored.",
+  "about": "Journeys between consecutive itinerary stops, looked up once (not live). Public-transport minutes are door-to-door including walking, for the stated weekday and departure time; they vary by time of day, day of week and service changes. Walking routes follow streets and footpaths. A route's own `source` overrides the default. Berlin: VBB timetable data via https://v6.vbb.transport.rest, for every hop of 1.5 km or more; Tempelhofer Feld is routed via its Tempelhofer Damm main entrance (Tor 10); Restaurant Anhalt shares the Deutsches Technikmuseum's location, so its journey is the museum's. Singapore: the Transitous journey planner (https://transitous.org, MOTIS) on 2026-10-12, using LTA timetable data for buses and MRT and OpenStreetMap for walking; hops of 1.5 km or more, plus Marina Bay walks where the street route is much longer than the straight line; Singapore Botanic Gardens is routed from Tanglin Gate; National Kitchen shares National Gallery Singapore's location. Hong Kong: Transitous on 2026-10-14 (MTR, bus and Star Ferry timetable data; OpenStreetMap for walking), for Wednesday 21 Oct 2026; Central walks are street-routed because of the hills. The Ngong Ping 360 cable-car ride is not in the timetable data and its duration is not published as text by the operator, so that hop is left untimed. Paris: Transitous on 2026-10-14 (RATP/RER timetable data; OpenStreetMap for walking), for Wednesday 4 Nov 2026; every hop is stored, as street-routed walks or timetabled journeys. Le Jules Verne shares the Eiffel Tower location. London: Transitous on 2026-10-14 (TfL Underground and bus timetable data; OpenStreetMap for walking), for Wednesday 4 Nov 2026; every hop is stored. Alternate stops (2026-10-16): the same Wednesday, from Transitous on 2026-10-16; Septime shares Clamato's address, so that hop is the same site.",
   "source": "VBB Verkehrsverbund Berlin-Brandenburg timetable data, via v6.vbb.transport.rest",
   "routes": {
     "plc_berlin_luisenbraeu-by-lemke|plc_berlin_zoo-berlin": {
@@ -482,6 +482,69 @@
       "checkedOn": "2026-10-14",
       "source": "Transitous street routing (OpenStreetMap data)",
       "alternatives": null
+    },
+    "plc_paris_musee-de-lorangerie|plc_paris_galerie-vivienne": {
+      "minutes": 24,
+      "mode": "walk",
+      "summary": "about 1.7 km on foot",
+      "conditions": "walking route",
+      "checkedOn": "2026-10-16",
+      "source": "Transitous street routing (OpenStreetMap data)",
+      "alternatives": null
+    },
+    "plc_paris_coutume-cafe-babylone|plc_paris_arc-de-triomphe": {
+      "minutes": 25,
+      "mode": "transit",
+      "summary": "Bus 92 from Saint-François-Xavier to Charles de Gaulle - Étoile, with about 0.6 km of walking in total",
+      "conditions": "Wednesday 4 Nov 2026, departing about 9:45",
+      "checkedOn": "2026-10-16",
+      "source": "Transitous journey planner (transitous.org), Île-de-France timetable data",
+      "alternatives": "Metro 13 then 1: about 24-27 min; walking: about 50 min"
+    },
+    "plc_paris_arc-de-triomphe|plc_paris_eiffel-tower": {
+      "minutes": 20,
+      "mode": "transit",
+      "summary": "Metro 6 from Charles de Gaulle - Étoile to Bir-Hakeim, with about 0.8 km of walking in total",
+      "conditions": "Wednesday 4 Nov 2026, departing about 14:00",
+      "checkedOn": "2026-10-16",
+      "source": "Transitous journey planner (transitous.org), Île-de-France timetable data",
+      "alternatives": "Walking: about 31 min"
+    },
+    "plc_paris_breizh-cafe-marais|plc_paris_bar-hemingway-ritz-paris": {
+      "minutes": 23,
+      "mode": "transit",
+      "summary": "Metro 8 from Saint-Sébastien - Froissart to Opéra, with about 1.1 km of walking in total",
+      "conditions": "Wednesday 4 Nov 2026, departing about 18:30",
+      "checkedOn": "2026-10-16",
+      "source": "Transitous journey planner (transitous.org), Île-de-France timetable data",
+      "alternatives": "Walking: about 39 min"
+    },
+    "plc_london_natural-history-museum|plc_london_science-museum": {
+      "minutes": 13,
+      "mode": "walk",
+      "summary": "about 0.9 km on foot",
+      "conditions": "walking route",
+      "checkedOn": "2026-10-16",
+      "source": "Transitous street routing (OpenStreetMap data)",
+      "alternatives": null
+    },
+    "plc_london_science-museum|plc_london_core-by-clare-smyth": {
+      "minutes": 28,
+      "mode": "transit",
+      "summary": "Circle line from South Kensington to Notting Hill Gate, with about 1.3 km of walking in total",
+      "conditions": "Wednesday 4 Nov 2026, departing about 18:15",
+      "checkedOn": "2026-10-16",
+      "source": "Transitous journey planner (transitous.org), TfL timetable data",
+      "alternatives": "Bus 52: about 29 min"
+    },
+    "plc_london_flat-iron-covent-garden|plc_london_connaught-bar": {
+      "minutes": 22,
+      "mode": "transit",
+      "summary": "Piccadilly line from Leicester Square to Green Park, with about 1.3 km of walking in total",
+      "conditions": "Wednesday 4 Nov 2026, departing about 18:30",
+      "checkedOn": "2026-10-16",
+      "source": "Transitous journey planner (transitous.org), TfL timetable data",
+      "alternatives": "Walking: about 31 min"
     }
   }
 }
