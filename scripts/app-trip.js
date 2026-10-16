@@ -2812,6 +2812,251 @@ function getBlueprintTopPlaces() {
     // Ctrl+P or the browser's own Print menu prints the same clean view.
     window.addEventListener("beforeprint", renderTripPrintView);
 
+    // ---- Share links (scripts/trip-share.js): a frozen, allow-listed copy carried in the link ----
+    const SHARED_VIEW_KEY = "hb-shared-link";
+
+    function openDialog(id, labelledBy, html) {
+      closeDialog(id);
+      const overlay = document.createElement("div");
+      overlay.id = id;
+      overlay.className = "hb-dialog";
+      overlay.innerHTML = `<div class="hb-dialog-panel" role="dialog" aria-modal="true" aria-labelledby="${labelledBy}" tabindex="-1">${html}</div>`;
+      overlay.addEventListener("click", (event) => { if (event.target === overlay) closeDialog(id); });
+      overlay.addEventListener("keydown", (event) => { if (event.key === "Escape") closeDialog(id); });
+      document.body.appendChild(overlay);
+      overlay.dataset.returnFocus = document.activeElement?.dataset?.action || "";
+      (overlay.querySelector("[autofocus]") || overlay.querySelector(".hb-dialog-panel")).focus();
+      return overlay;
+    }
+
+    function closeDialog(id) {
+      const overlay = document.getElementById(id);
+      if (!overlay) return;
+      const returnTo = overlay.dataset.returnFocus;
+      overlay.remove();
+      if (returnTo) document.querySelector(`[data-action="${returnTo}"]`)?.focus();
+    }
+
+    function openShareDialog() {
+      if (!hbState.currentTrip) return;
+      const versions = (hbState.alternateTrips || []).filter((version) => version?.id && version?.trip);
+      const stayArea = String(hbState.appState.hotelArea || "").trim();
+      const overlay = openDialog("share-dialog", "share-dialog-title", `
+        <h2 id="share-dialog-title" class="hb-dialog-title">Share a copy of this trip</h2>
+        <p class="hb-dialog-copy">The link holds a frozen copy of the plan. Anyone with the link can open it, and it doesn't change when you edit your trip.</p>
+        <fieldset class="hb-dialog-group">
+          <legend>What to share</legend>
+          <label><input type="radio" name="share-source" value="" checked autofocus> The current plan</label>
+          ${versions.map((version) => `<label><input type="radio" name="share-source" value="${escapeHtml(version.id)}"> Saved version: ${escapeHtml(version.name || "Saved version")}</label>`).join("")}
+          ${stayArea ? `<label><input type="checkbox" name="share-stay-area"> Include the area I'm staying in (${escapeHtml(stayArea)})</label>` : ""}
+        </fieldset>
+        <div class="hb-dialog-columns">
+          <div>
+            <p class="hb-dialog-label">Included</p>
+            <ul><li>Trip title and dates</li><li>Days, stops and times</li><li>Checked addresses, opening-hours notes and travel times</li><li>Must-have labels</li></ul>
+          </div>
+          <div>
+            <p class="hb-dialog-label">Never included</p>
+            <ul><li>Booking status and notes</li><li>Flights and hotel name</li><li>Your name, email and home airport</li><li>Your other trips and saved versions</li></ul>
+          </div>
+        </div>
+        <p class="hb-dialog-warning">A link can't be withdrawn once sent: the trip is inside the link itself, not stored on a server.</p>
+        <div class="hb-dialog-result" hidden></div>
+        <div class="hb-dialog-actions">
+          <button type="button" class="hb-dialog-primary" data-share-create>Create link</button>
+          <button type="button" class="hb-dialog-secondary" data-dialog-close>Close</button>
+        </div>
+      `);
+      overlay.querySelector("[data-dialog-close]").onclick = () => closeDialog("share-dialog");
+      overlay.querySelector("[data-share-create]").onclick = async (event) => {
+        const button = event.currentTarget;
+        const result = overlay.querySelector(".hb-dialog-result");
+        button.disabled = true;
+        try {
+          const versionId = overlay.querySelector("input[name=share-source]:checked")?.value || null;
+          const includeLogistics = Boolean(overlay.querySelector("input[name=share-stay-area]")?.checked);
+          const trip = window.HB_TRIP_FORMAT.tripFromApp({ id: hbState.currentTrip.tripId, appState: hbState.appState, currentTrip: hbState.currentTrip, alternateTrips: hbState.alternateTrips || [] });
+          const encoded = await window.HB_TRIP_SHARE.encodeShare(window.HB_TRIP_FORMAT.buildShareCopy(trip, { versionId, includeLogistics }));
+          const link = `${window.location.origin}${window.location.pathname}#share=${encoded}`;
+          result.hidden = false;
+          result.innerHTML = `
+            <label class="hb-dialog-label" for="share-link-field">Your link</label>
+            <input id="share-link-field" class="hb-dialog-link" type="text" readonly value="${escapeHtml(link)}">
+            <p class="hb-dialog-copy">${link.length.toLocaleString()} characters. Most messaging and email apps handle this length; paste it into a test message first if you're unsure.</p>
+            <div class="hb-dialog-actions">
+              <button type="button" class="hb-dialog-primary" data-share-copy>Copy link</button>
+              ${typeof navigator.share === "function" ? '<button type="button" class="hb-dialog-secondary" data-share-native>Share…</button>' : ""}
+            </div>
+            <p class="hb-dialog-status" role="status" aria-live="polite"></p>
+          `;
+          const status = result.querySelector(".hb-dialog-status");
+          const field = result.querySelector("#share-link-field");
+          field.addEventListener("focus", () => field.select());
+          result.querySelector("[data-share-copy]").onclick = async () => {
+            try {
+              await navigator.clipboard.writeText(link);
+              status.textContent = "Link copied.";
+            } catch (error) {
+              field.focus();
+              status.textContent = "Couldn't copy automatically: the link is selected, so press Ctrl+C (or Cmd+C).";
+            }
+          };
+          const nativeButton = result.querySelector("[data-share-native]");
+          if (nativeButton) nativeButton.onclick = () => navigator.share({ title: trip.title, url: link }).catch(() => {});
+          button.textContent = "Create a new link";
+        } catch (error) {
+          result.hidden = false;
+          result.innerHTML = `<p class="hb-dialog-warning" role="alert">${escapeHtml(error?.message || "Couldn't create a link in this browser.")}</p>`;
+        }
+        button.disabled = false;
+      };
+    }
+
+    // A shared stop, rebuilt as the planner's step shape so the same renderers can show it.
+    function sharedStopAsStep(stop) {
+      return {
+        time: window.HB_TRIP_FORMAT.toDisplayTime(stop.start) || "Flexible",
+        title: stop.title,
+        copy: stop.note,
+        kind: stop.kind || undefined,
+        place: stop.place?.id ? stop.place : null,
+        travelFromPrevious: stop.travelFromPrevious || null
+      };
+    }
+
+    function renderSharedTripView(shared, encoded) {
+      const { trip, exportedAt } = shared;
+      const longDate = (iso) => (iso ? new Date(`${iso}T12:00:00Z`).toLocaleDateString(undefined, { weekday: "long", day: "numeric", month: "long", timeZone: "UTC" }) : "");
+      const unscheduled = trip.mustHaves.filter((item) => !item.scheduled).map((item) => item.label);
+      const days = trip.days.map((day, index) => `
+        <section class="shared-day">
+          <h3>Day ${index + 1}${day.date ? ` · ${escapeHtml(longDate(day.date))}` : ""}</h3>
+          <p class="shared-day-title">${escapeHtml(day.title)}${day.area ? ` · ${escapeHtml(day.area)}` : ""}</p>
+          <ol class="shared-steps">
+            ${day.stops.map((stop) => {
+              const step = sharedStopAsStep(stop);
+              return `
+                <li class="shared-step">
+                  <p class="shared-step-head"><span>${escapeHtml(step.time)}</span> ${escapeHtml(step.title)}${step.kind === "flexible" ? ' <span class="shared-step-tag">Free time</span>' : ""}</p>
+                  ${step.copy ? `<p class="shared-step-copy">${escapeHtml(step.copy)}</p>` : ""}
+                  ${step.place ? renderStepPlaceFacts(step, day.date) : ""}
+                </li>
+              `;
+            }).join("")}
+          </ol>
+        </section>
+      `).join("");
+      const overlay = openDialog("shared-trip-view", "shared-trip-title", `
+        <p class="hb-dialog-label">Shared copy${trip.sharedFrom?.versionName ? ` · ${escapeHtml(trip.sharedFrom.versionName)}` : ""}</p>
+        <h2 id="shared-trip-title" class="hb-dialog-title">${escapeHtml(trip.title)}</h2>
+        <p class="hb-dialog-copy">${escapeHtml([trip.destination.name, trip.destination.country].filter(Boolean).join(", "))}${trip.dates.start ? ` · ${escapeHtml(longDate(trip.dates.start))}${trip.dates.end ? ` to ${escapeHtml(longDate(trip.dates.end))}` : ""}` : ""}${trip.timeZone ? ` · Times are local (${escapeHtml(trip.timeZone)})` : ""}</p>
+        ${trip.stayArea ? `<p class="hb-dialog-copy">Staying around ${escapeHtml(trip.stayArea)}.</p>` : ""}
+        ${unscheduled.length ? `<p class="hb-dialog-copy">Not scheduled yet: ${escapeHtml(unscheduled.join(", "))}.</p>` : ""}
+        <p class="hb-dialog-warning">This is a read-only copy someone shared${exportedAt ? ` on ${escapeHtml(new Date(exportedAt).toLocaleDateString(undefined, { day: "numeric", month: "long", year: "numeric" }))}` : ""}. Opening hours shown are from this planner's own checks; confirm with venues before you go.</p>
+        <div class="hb-dialog-actions">
+          <button type="button" class="hb-dialog-primary" data-shared-save autofocus>Save a copy to my trips</button>
+          <button type="button" class="hb-dialog-secondary" data-dialog-close>Close</button>
+        </div>
+        <p class="hb-dialog-status" role="status" aria-live="polite"></p>
+        ${days}
+      `);
+      overlay.classList.add("hb-dialog--wide");
+      const close = () => {
+        try { window.sessionStorage.removeItem(SHARED_VIEW_KEY); } catch (error) { /* nothing stored */ }
+        if (window.location.hash === "#shared-trip") window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}`);
+        closeDialog("shared-trip-view");
+      };
+      overlay.querySelector("[data-dialog-close]").onclick = close;
+      overlay.addEventListener("keydown", (event) => { if (event.key === "Escape") close(); });
+      overlay.querySelector("[data-shared-save]").onclick = (event) => {
+        const status = overlay.querySelector(".hb-dialog-status");
+        try {
+          const draft = draftFromPortableTrip(portableTripFromShare(trip), null);
+          upsertTripEntry(draft, { makeActive: false });
+          event.currentTarget.disabled = true;
+          status.textContent = `Saved to your trips as "${draft.currentTrip.title}". Open it from Saved; your current trip is unchanged.`;
+          renderSavedPanel();
+        } catch (error) {
+          status.textContent = "Couldn't save a copy in this browser.";
+        }
+      };
+      return encoded;
+    }
+
+    // A shared copy -> a portable trip that can sit in the visitor's own collection.
+    function portableTripFromShare(trip) {
+      const format = window.HB_TRIP_FORMAT;
+      return {
+        id: format.newId("trp"),
+        title: `${trip.title} (shared copy)`,
+        destination: { name: trip.destination.name, country: trip.destination.country },
+        timeZone: trip.timeZone,
+        timeZoneSource: trip.timeZone ? "destination" : "unknown",
+        dates: { start: trip.dates.start, end: trip.dates.end, flexible: false },
+        travelers: { adults: 1, children: 0, pets: "No pets" },
+        preferences: { styles: [], pace: "", budget: "" },
+        // Scheduled must-haves are already visible in the days; unscheduled ones stay listed.
+        mustHaves: trip.mustHaves.filter((item) => !item.scheduled).map((item, index) => ({ id: `mh_shared_${index}`, label: item.label, key: getPlanningAnchorKey(item.label), type: "general", source: "shared", scheduled: [] })),
+        days: trip.days.map((day) => ({
+          id: format.newId("day"),
+          date: day.date,
+          title: day.title,
+          area: { label: day.area, confirmed: Boolean(day.area) },
+          stops: day.stops.map((stop) => ({ id: format.newId("stp"), start: stop.start, kind: stop.kind, title: stop.title, note: stop.note, place: stop.place?.id ? stop.place : null, travelFromPrevious: stop.travelFromPrevious })),
+          feedback: null,
+          display: null
+        })),
+        logistics: { flights: {}, stay: { name: "", area: trip.stayArea || "", checkIn: null, checkOut: null } },
+        bookings: [],
+        versions: [],
+        inputs: { destination: [trip.destination.name, trip.destination.country].filter(Boolean).join(", "), startDate: trip.dates.start, endDate: trip.dates.end },
+        // A shared copy has no planner preferences behind it, so its summary says what it is.
+        display: {
+          title: `${trip.title} (shared copy)`,
+          summary: "A copy of a trip someone shared with you. Its days, stops and checked places are kept as they were shared.",
+          reasoning: "Preferences, bookings and travel details were not part of the shared copy. Rebuild the trip from Build if you want the planner to adjust it.",
+          signature: { title: trip.days[0]?.title || "Shared plan", reason: "The first day of the plan as it was shared." }
+        },
+        updatedAt: new Date().toISOString()
+      };
+    }
+
+    // A share link pasted into a tab that already has the planner open changes only the fragment.
+    window.addEventListener("hashchange", () => {
+      if (window.location.hash.startsWith("#share=")) openSharedTripOnLoad();
+    });
+
+    // On load, a #share=... link opens the shared copy over the planner. The encoded trip moves
+    // into session storage and the address becomes #shared-trip, so it is not kept in history,
+    // bookmarks or analytics, while a refresh still reopens it.
+    async function openSharedTripOnLoad() {
+      let encoded = null;
+      if (window.location.hash.startsWith("#share=")) {
+        encoded = window.location.hash.slice("#share=".length);
+        try { window.sessionStorage.setItem(SHARED_VIEW_KEY, encoded); } catch (error) { /* view still opens */ }
+        window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}#shared-trip`);
+      } else if (window.location.hash === "#shared-trip") {
+        try { encoded = window.sessionStorage.getItem(SHARED_VIEW_KEY); } catch (error) { encoded = null; }
+      }
+      if (!encoded) return false;
+      try {
+        renderSharedTripView(await window.HB_TRIP_SHARE.decodeShare(encoded), encoded);
+        return true;
+      } catch (error) {
+        const overlay = openDialog("shared-trip-view", "shared-trip-title", `
+          <h2 id="shared-trip-title" class="hb-dialog-title">This shared trip can't be opened</h2>
+          <p class="hb-dialog-warning" role="alert">${escapeHtml(error?.message || "The link is damaged.")}</p>
+          <div class="hb-dialog-actions"><button type="button" class="hb-dialog-secondary" data-dialog-close autofocus>Close</button></div>
+        `);
+        overlay.querySelector("[data-dialog-close]").onclick = () => {
+          try { window.sessionStorage.removeItem(SHARED_VIEW_KEY); } catch (storageError) { /* nothing stored */ }
+          window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}`);
+          closeDialog("shared-trip-view");
+        };
+        return false;
+      }
+    }
+
     function applyLocalAccountBackup(payload) {
       if (!payload || typeof payload !== "object") {
         throw new Error("Backup file is empty or unreadable.");
@@ -3114,8 +3359,16 @@ function getBlueprintTopPlaces() {
           <button class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="export-trip-calendar" type="button" ${hasTrip ? "" : "disabled"}>
             Add to calendar (.ics)
           </button>
+          <button class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="share-trip" type="button" ${hasTrip ? "" : "disabled"}>
+            Share a copy
+          </button>
         </div>
       `;
+      status.querySelector("[data-action='share-trip']").onclick = (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        openShareDialog();
+      };
       status.querySelector("[data-action='export-local-backup']").onclick = (event) => {
         event.preventDefault();
         event.stopPropagation();
@@ -5946,8 +6199,8 @@ function getBlueprintTopPlaces() {
       if (tripHeroKicker) {
         tripHeroKicker.textContent = hbState.guidePlanContext?.sourceType ? "From the destination guide" : "Destination preview";
       }
-      document.getElementById("signature-title").textContent = humanizeTripCopy(hbState.currentTrip.signature.title);
-      document.getElementById("signature-reason").textContent = humanizeTripCopy(hbState.currentTrip.signature.reason);
+      document.getElementById("signature-title").textContent = humanizeTripCopy(hbState.currentTrip.signature?.title || "");
+      document.getElementById("signature-reason").textContent = humanizeTripCopy(hbState.currentTrip.signature?.reason || "");
       hbState.currentTrip.flightCard = buildFlightCard();
       hbState.currentTrip.stayCard = buildStayCard(getCityName());
       document.getElementById("flight-title").textContent = humanizeTripCopy(hbState.currentTrip.flightCard.title);
@@ -6887,6 +7140,7 @@ try {
 Object.assign(hbUtils, {
   readTripCollection,
   openActiveTripOnLoad,
+  openSharedTripOnLoad,
   openTripFromCollection,
   startNewTrip,
   getFlightPlanStatus,

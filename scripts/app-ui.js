@@ -2950,6 +2950,8 @@ function updatePrimaryCta() {
     hydrateTripProfile();
     hydrateSavedDraftStatus();
     hbUtils.openActiveTripOnLoad?.();
+    // A shared-trip link opens a read-only copy over the planner; the visitor's own trip is untouched.
+    hbUtils.openSharedTripOnLoad?.();
     updateModeUI();
     updateBudgetHelper();
     updateFlightUI();

@@ -56,4 +56,4 @@ Paris and London's five written days do not exempt them from source review.
 4. Write or extend pilot itineraries against the registry.
 5. Print/PDF and calendar export. **Done October 16** (see `docs/trip-format-v2.md`, "Print and calendar export").
 6. Run the test matrix; fix; repeat until all 40 checks pass.
-7. Shared snapshots, then accounts/sync, then the domain move.
+7. Shared snapshots (**done October 16**: share links, see `docs/trip-format-v2.md`), then accounts/sync, then the domain move.

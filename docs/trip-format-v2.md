@@ -196,6 +196,44 @@ Both work on the open trip; neither sends anything anywhere.
   - **UIDs:** stable per stop, so a re-export updates the same events.
   - **Format:** lines are RFC 5545 escaped and folded.
 
+## Share links (October 16)
+
+"Share a copy" (`openShareDialog` in `scripts/app-trip.js`; encoding in `scripts/trip-share.js`,
+tested in `scripts/trip-share.test.mjs`):
+
+- **Choosing what to share.**
+  - The sharer picks the current plan or one saved version, and can opt in to sharing the
+    area they're staying in.
+  - The dialog lists what is included and what is never included.
+  - It warns that a link can't be withdrawn.
+- **The link.**
+  - It carries a frozen copy in the URL fragment:
+    `…/plan/#share=s1.<base64url(deflate-raw(JSON))>`. Browsers never send fragments to
+    the web server.
+  - The copy is rebuilt from `buildShareCopy` through a second allow-list, and only what
+    the shared view renders is kept.
+  - A 7-day pilot trip is about 4,700 characters.
+- **Opening a link.**
+  - The shared copy shows read-only over the planner; the visitor's own trip is never
+    replaced.
+  - The data moves into session storage and the address becomes `#shared-trip`, so it
+    isn't kept in history or bookmarks. A refresh still reopens it, and Close clears it.
+  - Analytics reports pages without the fragment.
+  - A link pasted into an open tab works too (`hashchange`).
+- **Incoming links are untrusted.**
+  - Size limits apply to both the encoded link and the decompressed JSON, so a small link
+    can't inflate into a huge payload.
+  - The format, kind and schema version are checked.
+  - Every field is rebuilt from an allow-list:
+    - text is trimmed and length-limited
+    - dates, times, coordinates and time-zone names must be well-formed
+    - only `https:` source links survive
+    - place IDs must match the registry pattern
+  - All text is escaped when rendered.
+- **"Save a copy to my trips"** adds the copy as a separate trip ("… (shared copy)"),
+  without opening it. Must-haves the plan already scheduled are visible in its days, and
+  unscheduled ones stay listed.
+
 ## Migration from v1
 
 On import of a `local-account-backup` v1 file:

@@ -38,7 +38,8 @@
     window.dataLayer = window.dataLayer || [];
     window.gtag = function () { window.dataLayer.push(arguments); };
     window.gtag("js", new Date());
-    window.gtag("config", measurementId, { anonymize_ip: true });
+    // Report the page without its #fragment: shared-trip links carry the trip there.
+    window.gtag("config", measurementId, { anonymize_ip: true, page_location: `${window.location.origin}${window.location.pathname}${window.location.search}` });
     const script = document.createElement("script");
     script.async = true;
     script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(measurementId)}`;

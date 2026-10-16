@@ -8755,3 +8755,208 @@
         color: #555;
       }
     }
+    /* Share dialog and shared-trip view (scripts/app-trip.js openShareDialog / renderSharedTripView). */
+    .hb-dialog {
+      position: fixed;
+      inset: 0;
+      z-index: 200;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 1.5rem 1rem;
+      overflow-y: auto;
+      background: rgba(17, 24, 39, 0.45);
+    }
+
+    .hb-dialog-panel {
+      width: min(36rem, 100%);
+      margin: auto 0;
+      padding: 1.5rem;
+      border-radius: 1.5rem;
+      background: #fff;
+      color: #1f2937;
+      box-shadow: 0 24px 60px rgba(17, 24, 39, 0.25);
+      outline: none;
+    }
+
+    .hb-dialog--wide .hb-dialog-panel {
+      width: min(48rem, 100%);
+    }
+
+    .hb-dialog-title {
+      margin: 0.25rem 0 0.5rem;
+      font-size: 1.4rem;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    .hb-dialog-copy,
+    .hb-dialog-status {
+      margin: 0.4rem 0;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #4b5563;
+    }
+
+    .hb-dialog-label {
+      margin: 0 0 0.35rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #6b7280;
+    }
+
+    .hb-dialog-warning {
+      margin: 0.8rem 0;
+      padding: 0.75rem 0.9rem;
+      border-radius: 0.9rem;
+      background: #fef6e7;
+      color: #7a4b00;
+      font-size: 0.9rem;
+      line-height: 1.45;
+    }
+
+    .hb-dialog-group {
+      margin: 1rem 0;
+      padding: 0;
+      border: 0;
+    }
+
+    .hb-dialog-group legend {
+      margin-bottom: 0.4rem;
+      font-weight: 600;
+    }
+
+    .hb-dialog-group label {
+      display: flex;
+      gap: 0.6rem;
+      align-items: flex-start;
+      padding: 0.35rem 0;
+      line-height: 1.4;
+    }
+
+    .hb-dialog-group input {
+      margin-top: 0.2rem;
+    }
+
+    .hb-dialog-columns {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+      gap: 0.75rem 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    .hb-dialog-columns ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      list-style: disc;
+      line-height: 1.5;
+    }
+
+    .hb-dialog-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 1rem;
+    }
+
+    .hb-dialog-primary,
+    .hb-dialog-secondary {
+      min-height: 44px;
+      padding: 0.6rem 1.2rem;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .hb-dialog-primary {
+      background: #1d6b62;
+      color: #fff;
+    }
+
+    .hb-dialog-primary:disabled {
+      opacity: 0.6;
+    }
+
+    .hb-dialog-secondary {
+      background: #fff;
+      color: #1d6b62;
+      box-shadow: inset 0 0 0 1px #d6d3cc;
+    }
+
+    .hb-dialog-link {
+      width: 100%;
+      padding: 0.6rem 0.75rem;
+      border: 1px solid #d6d3cc;
+      border-radius: 0.75rem;
+      font: 0.85rem/1.3 ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+
+    .hb-dialog-result {
+      margin-top: 1rem;
+    }
+
+    .shared-day {
+      margin-top: 1.25rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e5e2db;
+    }
+
+    .shared-day h3 {
+      margin: 0;
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+
+    .shared-day-title {
+      margin: 0.15rem 0 0.5rem;
+      color: #4b5563;
+    }
+
+    .shared-steps {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .shared-step {
+      margin: 0.6rem 0;
+    }
+
+    .shared-step-head {
+      margin: 0;
+      font-weight: 600;
+    }
+
+    .shared-step-head span:first-child {
+      display: inline-block;
+      min-width: 5rem;
+      color: #1d6b62;
+    }
+
+    .shared-step-tag {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #6b7280;
+    }
+
+    .shared-step-copy,
+    .shared-step .timeline-place-facts {
+      margin: 0.2rem 0 0 5rem;
+      font-size: 0.9rem;
+      color: #4b5563;
+    }
+
+    @media (max-width: 640px) {
+      .shared-step-copy,
+      .shared-step .timeline-place-facts {
+        margin-left: 0;
+      }
+    }
+
+    @media print {
+      .hb-dialog {
+        display: none !important;
+      }
+    }
