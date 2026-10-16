@@ -788,3 +788,39 @@ test("a swapped-in stop that is closed on the day's date is recognised as closed
   // Unpublished Sunday hours stay unknown, never assumed.
   assert.equal(logic.checkStopHours({ time: "7:00 PM" }, "2026-11-08", registry["plc_london_connaught-bar"].hours).state, "unknown");
 });
+// ---- "Make lighter" on researched days: the template's Easygoing stop becomes free time ----
+
+test("make lighter turns one chosen stop into free time with matching copy, and undo puts it back", () => {
+  const logic = loadLogic();
+  const helpers = logic.window.HB_TRIP_HELPERS;
+  const { places: registry, routes } = logic.window.HB_PLACES;
+  let lighterDays = 0;
+  for (const city of RESEARCHED_CITIES) {
+    for (const template of helpers.getConcreteTripTemplates(city, helpers.getAreaSet(city))) {
+      const variant = logic.getTemplateLighterVariant(template);
+      if (!variant) continue;
+      lighterDays++;
+      const timeline = logic.attachPlaces(template.timeline, registry, routes);
+      const copy = Object.fromEntries(["title", "rationale", "highlight", "timeShape", "weather", "itemTitle", "itemBody", "fit"].map((key) => [key, template[key]]));
+      const lighter = logic.applyLighterVariant({ timeline, copy }, variant, registry, routes);
+      const dropped = registry[variant.drop].name.replace(/\s*\(.*\)$/, "");
+      assert.ok(!lighter.timeline.some((step) => step.placeId === variant.drop), `${template.title}: ${dropped} is gone`);
+      const freeTime = lighter.timeline.find((step) => step.lighterOf === variant.drop);
+      assert.equal(freeTime.kind, "flexible");
+      assert.doesNotMatch(freeTime.copy, /easygoing/i, "the traveler chose this, so the note doesn't mention the Easygoing pace");
+      assert.match(freeTime.copy, /^[A-Z]/);
+      for (const key of ["itemTitle", "itemBody"]) assert.ok(!lighter.copy[key].includes(dropped), `${template.title}: ${key} no longer names ${dropped}`);
+      // Travel to the stop after the free time is recalculated from the stop before it.
+      const placeSteps = lighter.timeline.filter((step) => step.placeId);
+      placeSteps.slice(1).forEach((step) => assert.ok(step.travelFromPrevious, `${template.title}: travel to ${step.title}`));
+
+      const back = logic.undoLighterVariant({ timeline: lighter.timeline, copy: lighter.copy }, lighter.undo, registry, routes);
+      const strip = (steps) => [...steps].map(({ title, time, placeId, copy: text, travelFromPrevious }) => ({ title, time, placeId, copy: text, minutes: travelFromPrevious?.minutes ?? null }));
+      assert.deepEqual(strip(back.timeline), strip(timeline), `${template.title}: undo restores the day`);
+      assert.deepEqual({ ...back.copy }, copy);
+      // A day already at the Easygoing pace has nothing more to drop.
+      assert.equal(logic.getTemplateLighterVariant(logic.applyPaceToTemplate(template, "Easygoing")), null);
+    }
+  }
+  assert.equal(lighterDays, 12, "the researched days with an Easygoing variant (Paris 3, London 3, Berlin 2, Hong Kong 4)");
+});
