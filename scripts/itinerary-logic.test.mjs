@@ -848,3 +848,24 @@ test("an open day moves to an unused area, renames its free time, and cycles bac
   assert.deepEqual({ ...partial.copy }, { a: "Lunch in Bourse", b: "Louvreside walk" });
   assert.equal(logic.moveOpenDayArea({ timeline, copy }, "Saint-Germain", "Saint-Germain"), null);
 });
+test("an older saved trip's reworded day summaries are put back to their original wording", () => {
+  const context = vm.createContext({});
+  const constant = tripSource.slice(tripSource.indexOf("    const REWORD_LABELS"), tripSource.indexOf("\n", tripSource.indexOf("    const REWORD_LABELS")));
+  vm.runInContext(`${constant}\n${sliceFunction("restoreRewordedDays")}`, context);
+  // What "Try alternate" left behind before October 16: the summary swapped, the original kept as an option.
+  const trip = { days: [
+    { item: { title: "Midday • Nearby alternative", body: "A different version...", fit: "It protects...", label: "Alternative",
+      alternatives: [{ title: "Midday • Gothic Quarter stroll", body: "Open with coffee.", fit: "Starts with atmosphere.", label: "Personalized" }, { title: "Midday • Lighter option", body: "A lighter version", fit: "Easier", label: "Lighter" }], alternativeIndex: 1 } },
+    { item: { title: "Midday • Louvre + Frenchie", body: "Researched.", fit: "On foot.", label: "Personalized",
+      alternatives: [{ kind: "stop", replaces: "plc_paris_louvre-museum", step: { placeId: "plc_paris_musee-de-lorangerie" } }, { title: "Midday • Nearby alternative", label: "Alternative" }], alternativeIndex: 0 } }
+  ] };
+  context.restoreRewordedDays(trip);
+  assert.equal(trip.days[0].item.title, "Midday • Gothic Quarter stroll");
+  assert.equal(trip.days[0].item.body, "Open with coffee.");
+  assert.equal(trip.days[0].item.label, "Personalized");
+  assert.equal(trip.days[0].item.alternatives.length, 0);
+  // Checked alternates stay; an untouched summary is left alone.
+  assert.equal(trip.days[1].item.title, "Midday • Louvre + Frenchie");
+  assert.deepEqual([...trip.days[1].item.alternatives].map((alternate) => alternate.kind), ["stop"]);
+  assert.doesNotThrow(() => context.restoreRewordedDays(null));
+});

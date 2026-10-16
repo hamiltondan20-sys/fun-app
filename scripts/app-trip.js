@@ -2586,6 +2586,7 @@ function getBlueprintTopPlaces() {
       hbState.liveDraftTrip = payload.liveDraftTrip ? cloneData(payload.liveDraftTrip) : (hbState.currentTrip ? cloneData(hbState.currentTrip) : null);
       hbState.likedTrip = payload.likedTrip ? cloneData(payload.likedTrip) : null;
       hbState.alternateTrips = Array.isArray(payload.alternateTrips) ? cloneData(payload.alternateTrips) : [];
+      [hbState.currentTrip, hbState.liveDraftTrip, hbState.likedTrip, ...hbState.alternateTrips.map((version) => version?.trip)].forEach(restoreRewordedDays);
       hbState.tripProfile = {
         ...hbState.tripProfile,
         ...(payload.tripProfile || {})
@@ -5449,24 +5450,10 @@ function getBlueprintTopPlaces() {
             label: slot === 2 ? "Crowd-loved + fit" : "Personalized",
             timeline: finalTimeline,
             removed: false,
-            // Researched days offer only checked alternates (often none); generic days keep the
-            // generic reframing options.
             // "Make lighter" on a researched day turns the template's chosen stop into free time.
             lighter: finalTimeline.some((step) => step?.placeId) ? getTemplateLighterVariant(sourceDay) : null,
-            alternatives: finalTimeline.some((step) => step?.placeId) ? getTemplateStopAlternates(sourceDay) : [
-              {
-                title: `${dayLead} • Nearby alternative`,
-                body: `A different version of the same kind of stop in the same part of ${city}, so you can change the tone without breaking the flow of the day.`,
-                fit: `It protects the same overall feel of the plan while giving you a better fit if the original stop is not quite right.`,
-                label: "Alternative"
-              },
-              {
-                title: `${dayLead} • Lighter option`,
-                body: `A lighter version with more breathing room, useful if this part of the day starts to feel fuller than you want.`,
-                fit: `It still works with the trip, but it gives you an easier rhythm and less pressure to keep pushing.`,
-                label: "Lighter"
-              }
-            ],
+            // Only checked alternates: a day not built from checked places has none to offer.
+            alternatives: finalTimeline.some((step) => step?.placeId) ? getTemplateStopAlternates(sourceDay) : [],
             alternativeIndex: 0
           },
           ...day
@@ -7495,23 +7482,24 @@ function getBlueprintTopPlaces() {
       return step;
     }
 
-    function applyWrongAreaAdjustment(day) {
-      // A researched day's area comes from its checked stops; rewording it would not move anything.
-      if (isResearchedDay(day) || !day.item?.alternatives?.length) return false;
-      const next = day.item.alternatives[day.item.alternativeIndex % day.item.alternatives.length];
-      const currentSnapshot = {
-        title: day.item.title,
-        body: day.item.body,
-        fit: day.item.fit,
-        label: day.item.label
-      };
-      day.item.title = next.title;
-      day.item.body = `${next.body} The main moments stay in the plan, but the day is easier to reshape around nearby stops.`;
-      day.item.fit = `${next.fit} This is a better review version if the original area or flow felt off.`;
-      day.item.label = "Area adjusted";
-      day.item.alternatives[day.item.alternativeIndex % day.item.alternatives.length] = currentSnapshot;
-      day.item.alternativeIndex += 1;
-      return true;
+    // Trips saved before October 16 could hold reworded day summaries ("Nearby alternative",
+    // "Lighter option", "Area adjusted") that never changed a stop. Put the original wording back
+    // (it was kept among the day's alternatives) and drop the rewording options.
+    const REWORD_LABELS = new Set(["Alternative", "Lighter", "Area adjusted"]);
+
+    function restoreRewordedDays(trip) {
+      (trip?.days || []).forEach((day) => {
+        const item = day?.item;
+        if (!item || !Array.isArray(item.alternatives)) return;
+        const rewordings = item.alternatives.filter((alternate) => alternate?.kind !== "stop");
+        if (!rewordings.length) return;
+        if (REWORD_LABELS.has(item.label)) {
+          const original = rewordings.find((alternate) => !REWORD_LABELS.has(alternate?.label) && !/ • (Nearby alternative|Lighter option)$/.test(alternate?.title || ""));
+          if (original) Object.assign(item, { title: original.title, body: original.body, fit: original.fit, label: original.label });
+        }
+        item.alternatives = item.alternatives.filter((alternate) => alternate?.kind === "stop");
+      });
+      return trip;
     }
 
     function adjustDayQuality(dayId, feedback) {
@@ -7580,14 +7568,12 @@ function getBlueprintTopPlaces() {
         );
         message = move ? `You moved ${day.dayLabel} to ${move.to}.` : `${day.dayLabel} stays in ${fromArea}.`;
       } else if (feedback === "wrong-area") {
-        const adjusted = applyWrongAreaAdjustment(day);
+        // Rewording the summary would not move any stop, so the day is flagged for review instead.
         setDayQualityAdjustment(
           day,
           feedback,
-          adjusted ? "Reframed the day" : "Marked area for review",
-          adjusted
-            ? `Switched the day framing and kept ${protectedSummary} as the main focus, so the itinerary can change without losing what matters.`
-            : `Keep ${protectedSummary}, then review the map and nearby stops before saving this day.`,
+          "Marked area for review",
+          `Keep ${protectedSummary}, then review the map and nearby stops before saving this day.`,
           "near_me"
         );
         message = `You asked to rethink ${day.dayLabel}'s area while keeping your must-haves in view.`;
@@ -7619,7 +7605,7 @@ function getBlueprintTopPlaces() {
           ? `${lead} You can move its free time back to ${move.to}.`
           : `${lead} Try another area to spend its free time around ${move.to}, which no other day of the trip centers on.`;
       }
-      if (!isResearchedDay(day)) return "Try a nearby alternative, make the day lighter, or keep it focused on the map while you review the route.";
+      if (!isResearchedDay(day)) return "This day isn't built from checked places yet, so there's no checked alternative to swap in. You can reorder stops, make the day lighter, or focus it on the map while you review the route.";
       return [describeAlternateOption(day, dayIndex), describeLighterOption(day, dayIndex), "You can also reorder stops or use quick feedback."].join(" ");
     }
 
@@ -7672,9 +7658,7 @@ function getBlueprintTopPlaces() {
         const move = getOpenDayMove(day);
         return move ? `<button class="trip-day-edit-button trip-day-edit-button--swap" data-action="swap-item" data-day-id="${day.id}" type="button">${move.back ? "Back to" : "Move to"} ${escapeHtml(move.to)}</button>` : "";
       }
-      if (!isResearchedDay(day)) {
-        return `<button class="trip-day-edit-button" data-action="swap-item" data-day-id="${day.id}" type="button">Try alternate</button>`;
-      }
+      if (!isResearchedDay(day)) return "";
       const choice = getAvailableStopAlternates(day, dayIndex)[0];
       if (!choice) return "";
       // The branch in brackets stays in the note above; the button keeps to the place's name.
@@ -7817,26 +7801,8 @@ function getBlueprintTopPlaces() {
         if (moveOpenDay(day)) renderTrip();
         return;
       }
-      if (isResearchedDay(day)) {
-        if (swapStopAlternate(day, findDayIndex(dayId))) renderTrip();
-        return;
-      }
-      if (!day.item.alternatives.length) return;
-      const next = day.item.alternatives[day.item.alternativeIndex % day.item.alternatives.length];
-      const currentSnapshot = {
-        title: day.item.title,
-        body: day.item.body,
-        fit: day.item.fit,
-        label: day.item.label
-      };
-      day.item.title = next.title;
-      day.item.body = next.body;
-      day.item.fit = next.fit;
-      day.item.label = next.label;
-      day.item.alternatives[day.item.alternativeIndex % day.item.alternatives.length] = currentSnapshot;
-      day.item.alternativeIndex += 1;
-      markUnsavedArrangement(`You tried an alternate plan for ${day.dayLabel}. Save this version if it feels better.`);
-      renderTrip();
+      // Days not built from checked places have no alternate to offer (the button isn't shown).
+      if (isResearchedDay(day) && swapStopAlternate(day, findDayIndex(dayId))) renderTrip();
     }
 
     function removeDayItem(dayId) {
