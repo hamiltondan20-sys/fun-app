@@ -26,7 +26,7 @@
     rel="stylesheet"
   />
   <link href="./assets/app.css?v=20260830e" rel="stylesheet" />
-  <link href="./assets/app-inline.css?v=20261016share" rel="stylesheet" />
+  <link href="./assets/app-inline.css?v=20261016sync" rel="stylesheet" />
 </head>
 <body class="text-ink">
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -2052,7 +2052,7 @@
       // Load the planner after the page shell has painted, so visitors never see a blank screen
       // while ~1 MB of guide data parses. async=false keeps execution in this exact order.
       [
-        "./scripts/site-config.js?v=20260913a",
+        "./scripts/site-config.js?v=20261016sync",
         "./data/destinations.js?v=20260912a",
         "./data/country-guides.js?v=20260629j",
         "./data/city-guides.js?v=20260830b",
@@ -2067,8 +2067,9 @@
         "./scripts/trip-format.js?v=20261010v2",
         "./scripts/trip-export.js?v=20261016ics",
         "./scripts/trip-share.js?v=20261016share",
-        "./scripts/app-trip.js?v=20261016share3",
-        "./scripts/app-ui.js?v=20261016share"
+        "./scripts/account-sync.js?v=20261016sync",
+        "./scripts/app-trip.js?v=20261016sync",
+        "./scripts/app-ui.js?v=20261016sync"
       ].forEach(function (src) {
         var script = document.createElement("script");
         script.src = src;

@@ -36,7 +36,9 @@ function loadCollection(initialStorage = {}) {
       context.hbState.tripAutosaveEnabled = true;
       return true;
     },
-    persistTripDraft() { calls.persisted += 1; }
+    persistTripDraft() { calls.persisted += 1; },
+    // Account sync (tested in account-sync.test.mjs) is told about every collection write.
+    scheduleAccountSync() { calls.syncScheduled = (calls.syncScheduled || 0) + 1; }
   });
   vm.runInContext(fs.readFileSync(path.join(root, "scripts/trip-format.js"), "utf8"), context);
   vm.runInContext(tripSource.slice(start, end), context);

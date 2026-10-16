@@ -162,7 +162,7 @@ chooses: keep both (imported copy gets a new id and "(imported)" title) or repla
 | Named versions | yes | yes | only the version chosen to share |
 | Bookings (status, notes, confirmation details) | yes | yes | **never** |
 | Logistics (flights, hotel name) | yes | yes | only if the sharer ticks "include" |
-| Profile (name, email, home airport) | yes | account | **never** |
+| Profile (name, email, home airport) | yes | **never** (the account holds only its sign-in email) | **never** |
 | Analytics consent | **never** | **never** | **never** |
 
 Share links carry a sanitized snapshot built from an allow-list (not by deleting
@@ -233,6 +233,13 @@ tested in `scripts/trip-share.test.mjs`):
 - **"Save a copy to my trips"** adds the copy as a separate trip ("… (shared copy)"),
   without opening it. Must-haves the plan already scheduled are visible in its days, and
   unscheduled ones stay listed.
+
+## Account sync (October 16)
+
+Built with Supabase and off until the project is set up; see `docs/account-sync.md`. Sync copies
+each trip's saved draft (one row per trip) rather than a v2 envelope, so a synced trip restores
+exactly as it was saved. It follows the privacy table above: bookings and logistics sync, while
+the planner profile and the analytics choice never do.
 
 ## Migration from v1
 

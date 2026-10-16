@@ -8,6 +8,15 @@ const BOOKING_STORAGE_KEY = "hb-trip-booking-v1";
 const TRIPS_STORAGE_KEY = "hb-trips-v2";
 const PREMIGRATION_STORAGE_KEY = "hb-trip-draft-v1-premigration";
 const LOCAL_ACCOUNT_BACKUP_VERSION = 1;
+const SYNC_BASE_KEY = "hb-sync-base-v1";
+// Account sync is off unless scripts/site-config.js names a Supabase project.
+const accountSync = (() => {
+  const config = window.HB_SYNC_CONFIG || {};
+  const client = config.url && config.publishableKey && window.HB_ACCOUNT_SYNC
+    ? window.HB_ACCOUNT_SYNC.createClient({ url: config.url, publishableKey: config.publishableKey, fetch: (...args) => window.fetch(...args), storage: window.localStorage })
+    : null;
+  return { client, running: false, again: false, timer: 0, applyingRemote: false, lastSyncedAt: 0, message: "", error: "", lastVisibleSync: 0 };
+})();
 
 function getGuideSourceReasoning() {
       const context = hbState.guidePlanContext || {};
@@ -2335,6 +2344,7 @@ function getBlueprintTopPlaces() {
 
     function writeTripCollection(collection) {
       window.localStorage.setItem(TRIPS_STORAGE_KEY, JSON.stringify(collection));
+      scheduleAccountSync();
     }
 
     function describeTripEntry(draft) {
@@ -3055,6 +3065,425 @@ function getBlueprintTopPlaces() {
         };
         return false;
       }
+    }
+
+    // ---- Account sync (scripts/account-sync.js, docs/account-sync.md) ----
+    // The trip collection stays the working copy. Sync copies whole trips to and from the visitor's
+    // Supabase rows after saves, on load, when the tab returns, and when the connection comes back.
+
+    function syncUser() {
+      return accountSync.client?.currentUser() || null;
+    }
+
+    function readSyncBase() {
+      const user = syncUser();
+      try {
+        const stored = JSON.parse(window.localStorage.getItem(SYNC_BASE_KEY) || "null");
+        if (stored && stored.userId === user?.id && stored.trips && typeof stored.trips === "object") return stored;
+      } catch (error) {
+        // Start over: the next pass compares contents, so nothing is lost.
+      }
+      // localOnly: null until the visitor decides whether this browser's trips join the account.
+      return { userId: user?.id || "", trips: {}, localOnly: null };
+    }
+
+    function writeSyncBase(base) {
+      window.localStorage.setItem(SYNC_BASE_KEY, JSON.stringify(base));
+    }
+
+    function isTripOnScreen(tripId) {
+      return Boolean(hbState.tripAutosaveEnabled && hbState.currentTrip?.tripId === tripId);
+    }
+
+    function storedTripHash(tripId) {
+      const entry = readTripCollection().trips.find((item) => item.id === tripId);
+      return entry ? window.HB_ACCOUNT_SYNC.contentHash(entry.draft) : null;
+    }
+
+    // Writes from sync never trigger another sync, and never replace a trip with unsaved changes
+    // on screen or one that changed since the pass began (the next pass picks those up).
+    const syncStore = {
+      listEntries: () => readTripCollection().trips.map((entry) => ({ id: entry.id, draft: entry.draft })),
+      putEntry(draft, { expectedHash }) {
+        const tripId = draft.currentTrip.tripId;
+        if (storedTripHash(tripId) !== expectedHash) return false;
+        if (isTripOnScreen(tripId) && hbState.unsavedArrangement?.dirty) return false;
+        const existing = readTripCollection().trips.find((item) => item.id === tripId);
+        // Each browser keeps its own profile; synced copies never carry one.
+        const merged = { ...draft, tripProfile: cloneData(existing?.draft?.tripProfile || hbState.tripProfile || {}) };
+        accountSync.applyingRemote = true;
+        try {
+          upsertTripEntry(merged, { makeActive: false });
+          const collection = readTripCollection();
+          if (collection.activeTripId === tripId) {
+            if (isTripOnScreen(tripId)) {
+              loadTripEntryIntoWorkspace(collection.trips.find((item) => item.id === tripId));
+              hbState.draftSaveFeedback = "Updated with changes from your other device";
+            } else {
+              window.localStorage.setItem(DRAFT_STORAGE_KEY, JSON.stringify(merged));
+            }
+          }
+        } finally {
+          accountSync.applyingRemote = false;
+        }
+        return true;
+      },
+      removeEntry(tripId, { expectedHash }) {
+        if (storedTripHash(tripId) !== expectedHash) return false;
+        if (isTripOnScreen(tripId) && hbState.unsavedArrangement?.dirty) return false;
+        accountSync.applyingRemote = true;
+        try {
+          deleteTripFromCollection(tripId);
+        } finally {
+          accountSync.applyingRemote = false;
+        }
+        return true;
+      },
+      readBase: readSyncBase,
+      writeBase: writeSyncBase
+    };
+
+    function scheduleAccountSync(delay = 4000) {
+      if (accountSync.applyingRemote || !syncUser()) return;
+      window.clearTimeout(accountSync.timer);
+      accountSync.timer = window.setTimeout(() => runAccountSync(), delay);
+    }
+
+    function describeSyncResult(summary) {
+      const notes = [];
+      const count = (value, word) => `${value} ${word}${value === 1 ? "" : "s"}`;
+      if (summary.downloaded) notes.push(`${count(summary.downloaded, "trip")} brought up to date from your account.`);
+      if (summary.conflicts) notes.push(`${count(summary.conflicts, "trip")} changed on two devices at once, so both versions were kept: look for "(conflicting copy)" in your trips and delete the one you don't want.`);
+      if (summary.removedHere) notes.push(`${count(summary.removedHere, "trip")} deleted on another device ${summary.removedHere === 1 ? "was" : "were"} removed here.`);
+      for (const item of summary.skipped) {
+        if (item.reason === "too-large") notes.push(`"${item.title}" is too large to sync and stays on this browser only.`);
+        if (item.reason === "trip-limit") notes.push(`Your account holds up to ${window.HB_ACCOUNT_SYNC.MAX_TRIPS} trips, so "${item.title}" stays on this browser only. Delete trips you no longer need to make room.`);
+        if (item.reason === "unreadable") notes.push("One synced trip couldn't be read here and was left as it is online.");
+      }
+      return notes.join(" ");
+    }
+
+    function refreshAfterSync() {
+      if (hbState.activePanelId === "saved-panel") renderSavedPanel();
+      if (hbState.activePanelId === "trip-panel" && hbState.currentTrip) renderTrip();
+    }
+
+    async function runAccountSync() {
+      if (!syncUser()) return null;
+      if (accountSync.running) {
+        accountSync.again = true;
+        return null;
+      }
+      if (navigator.onLine === false) {
+        accountSync.error = "You're offline. Your trips are saved on this browser and will sync when you're back online.";
+        refreshAfterSync();
+        return null;
+      }
+      const base = readSyncBase();
+      if (base.localOnly === null) {
+        const localTrips = readTripCollection().trips;
+        if (localTrips.length) {
+          refreshAfterSync();
+          openJoinAccountDialog(localTrips);
+          return null;
+        }
+        writeSyncBase({ ...base, localOnly: [] });
+      }
+      accountSync.running = true;
+      accountSync.error = "";
+      refreshAfterSync();
+      try {
+        // Whatever is on screen is saved first, so the pass sees the latest edits.
+        if (hbState.tripAutosaveEnabled && hbState.currentTrip) persistTripDraft({ silent: true });
+        window.clearTimeout(accountSync.timer);
+        const summary = await accountSync.client.lock(() => window.HB_ACCOUNT_SYNC.runSync({
+          api: accountSync.client.api, store: syncStore, newId: window.HB_TRIP_FORMAT.newId
+        }));
+        accountSync.lastSyncedAt = Date.now();
+        accountSync.message = describeSyncResult(summary);
+        return summary;
+      } catch (error) {
+        if (error?.code === "signed-out") {
+          accountSync.message = "";
+          accountSync.error = "Your sign-in ended, so sync is paused. Sign in again to continue; your trips are still on this browser.";
+        } else if (error?.offline) {
+          accountSync.error = "You're offline. Your trips are saved on this browser and will sync when you're back online.";
+        } else {
+          accountSync.error = "Sync didn't finish. Your trips are safe on this browser; it will try again shortly.";
+          scheduleAccountSync(60000);
+        }
+        return null;
+      } finally {
+        accountSync.running = false;
+        refreshAfterSync();
+        if (accountSync.again) {
+          accountSync.again = false;
+          scheduleAccountSync(500);
+        }
+      }
+    }
+
+    function openSignInDialog() {
+      if (!accountSync.client) return;
+      const overlay = openDialog("sync-sign-in", "sync-sign-in-title", `
+        <h2 id="sync-sign-in-title" class="hb-dialog-title">Sign in to keep your trips on all your devices</h2>
+        <form data-sync-step="email">
+          <p class="hb-dialog-copy">Enter your email and we'll send you a 6-digit code. There's no password to remember, and the same email works on your phone, tablet and computer.</p>
+          <label class="hb-dialog-label" for="sync-email">Email</label>
+          <input id="sync-email" class="hb-dialog-field" type="email" autocomplete="email" inputmode="email" required autofocus>
+          <p class="hb-dialog-copy">Stored online: your trips, with their saved versions and booking notes. Your planner profile (name, home airport) stays on this browser. <a href="${escapeHtml(new URL("../privacy/", window.location.href).pathname)}" target="_blank" rel="noopener">Privacy policy</a></p>
+          <div class="hb-dialog-actions">
+            <button type="submit" class="hb-dialog-primary">Email me a code</button>
+            <button type="button" class="hb-dialog-secondary" data-dialog-close>Cancel</button>
+          </div>
+        </form>
+        <form data-sync-step="code" hidden>
+          <p class="hb-dialog-copy" data-sync-sent></p>
+          <label class="hb-dialog-label" for="sync-code">Code</label>
+          <input id="sync-code" class="hb-dialog-field" type="text" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6,10}" maxlength="10" required>
+          <div class="hb-dialog-actions">
+            <button type="submit" class="hb-dialog-primary">Sign in</button>
+            <button type="button" class="hb-dialog-secondary" data-sync-resend>Send a new code</button>
+            <button type="button" class="hb-dialog-secondary" data-sync-back>Use a different email</button>
+          </div>
+        </form>
+        <p class="hb-dialog-status" role="status" aria-live="polite"></p>
+      `);
+      const emailForm = overlay.querySelector("[data-sync-step=email]");
+      const codeForm = overlay.querySelector("[data-sync-step=code]");
+      const status = overlay.querySelector(".hb-dialog-status");
+      let email = "";
+      const busy = (form, value) => form.querySelectorAll("button").forEach((button) => { button.disabled = value; });
+      const sendCode = async (form) => {
+        busy(form, true);
+        status.textContent = "Sending…";
+        try {
+          await accountSync.client.sendCode(email);
+          emailForm.hidden = true;
+          codeForm.hidden = false;
+          overlay.querySelector("[data-sync-sent]").textContent = `We sent a code to ${email}. It can take a minute to arrive; check your spam folder if you don't see it.`;
+          status.textContent = "";
+          overlay.querySelector("#sync-code").focus();
+        } catch (error) {
+          status.textContent = error?.message || "Couldn't send a code. Please try again.";
+        }
+        busy(form, false);
+      };
+      overlay.querySelector("[data-dialog-close]").onclick = () => closeDialog("sync-sign-in");
+      emailForm.onsubmit = (event) => {
+        event.preventDefault();
+        email = overlay.querySelector("#sync-email").value.trim();
+        if (email) sendCode(emailForm);
+      };
+      overlay.querySelector("[data-sync-resend]").onclick = () => sendCode(codeForm);
+      overlay.querySelector("[data-sync-back]").onclick = () => {
+        codeForm.hidden = true;
+        emailForm.hidden = false;
+        status.textContent = "";
+        overlay.querySelector("#sync-email").focus();
+      };
+      codeForm.onsubmit = async (event) => {
+        event.preventDefault();
+        const code = overlay.querySelector("#sync-code").value.replace(/\s+/g, "");
+        busy(codeForm, true);
+        status.textContent = "Signing in…";
+        try {
+          await accountSync.client.verifyCode(email, code);
+          closeDialog("sync-sign-in");
+          accountSync.message = "";
+          accountSync.error = "";
+          await runAccountSync();
+        } catch (error) {
+          status.textContent = error?.message || "That code didn't work. Please try again.";
+          busy(codeForm, false);
+        }
+      };
+    }
+
+    // First sign-in on a browser that already has trips: the visitor decides whether they join
+    // the account. "Keep here" trips are never uploaded; trips made afterwards sync normally.
+    function openJoinAccountDialog(localTrips) {
+      const overlay = openDialog("sync-join", "sync-join-title", `
+        <h2 id="sync-join-title" class="hb-dialog-title">Add this browser's trips to your account?</h2>
+        <p class="hb-dialog-copy">This browser has ${localTrips.length} trip${localTrips.length === 1 ? "" : "s"}:</p>
+        <ul class="hb-dialog-list">${localTrips.slice(0, 8).map((entry) => `<li>${escapeHtml(entry.title)}</li>`).join("")}${localTrips.length > 8 ? `<li>and ${localTrips.length - 8} more</li>` : ""}</ul>
+        <p class="hb-dialog-copy">If you add them, they'll appear on every device where you sign in. If someone else planned these trips on a shared computer, keep them here instead.</p>
+        <div class="hb-dialog-actions">
+          <button type="button" class="hb-dialog-primary" data-sync-join="add" autofocus>Add them to my account</button>
+          <button type="button" class="hb-dialog-secondary" data-sync-join="keep">Keep them on this browser only</button>
+        </div>
+      `);
+      overlay.querySelectorAll("[data-sync-join]").forEach((button) => {
+        button.onclick = () => {
+          const keep = button.dataset.syncJoin === "keep";
+          writeSyncBase({ ...readSyncBase(), localOnly: keep ? localTrips.map((entry) => entry.id) : [] });
+          closeDialog("sync-join");
+          runAccountSync();
+        };
+      });
+      // Closing without choosing leaves the question for next time; nothing is uploaded.
+    }
+
+    function openSignOutDialog() {
+      const user = syncUser();
+      if (!user) return;
+      const overlay = openDialog("sync-sign-out", "sync-sign-out-title", `
+        <h2 id="sync-sign-out-title" class="hb-dialog-title">Sign out of ${escapeHtml(user.email)}?</h2>
+        <p class="hb-dialog-copy">Your trips stay in your account. Choose whether this browser keeps its copies.</p>
+        <p class="hb-dialog-copy">On a shared or borrowed computer, remove them, so the next person can't see your trips or booking notes.</p>
+        <div class="hb-dialog-actions">
+          <button type="button" class="hb-dialog-primary" data-sync-sign-out="keep" autofocus>Sign out, keep trips here</button>
+          <button type="button" class="hb-dialog-secondary" data-sync-sign-out="remove">Sign out and remove my trips from this browser</button>
+          <button type="button" class="hb-dialog-secondary" data-dialog-close>Cancel</button>
+        </div>
+        <p class="hb-dialog-status" role="status" aria-live="polite"></p>
+      `);
+      overlay.querySelector("[data-dialog-close]").onclick = () => closeDialog("sync-sign-out");
+      overlay.querySelectorAll("[data-sync-sign-out]").forEach((button) => {
+        button.onclick = async () => {
+          const remove = button.dataset.syncSignOut === "remove";
+          overlay.querySelectorAll("button").forEach((item) => { item.disabled = true; });
+          let kept = 0;
+          if (remove) {
+            overlay.querySelector(".hb-dialog-status").textContent = "Syncing your latest changes first…";
+            await runAccountSync();
+          }
+          const base = readSyncBase();
+          window.clearTimeout(accountSync.timer);
+          await accountSync.client.signOut();
+          window.localStorage.removeItem(SYNC_BASE_KEY);
+          if (remove) {
+            // Only trips whose online copy matches are removed; anything not yet synced stays.
+            accountSync.applyingRemote = true;
+            try {
+              for (const entry of readTripCollection().trips) {
+                const synced = base.trips[entry.id]?.hash === window.HB_ACCOUNT_SYNC.contentHash(entry.draft);
+                if (synced) deleteTripFromCollection(entry.id);
+                else kept++;
+              }
+              // The untouched copy kept from the move to several trips (if any) goes too.
+              window.localStorage.removeItem(PREMIGRATION_STORAGE_KEY);
+            } finally {
+              accountSync.applyingRemote = false;
+            }
+          }
+          accountSync.lastSyncedAt = 0;
+          accountSync.error = "";
+          accountSync.message = remove
+            ? `Signed out and removed your synced trips from this browser.${kept ? ` ${kept} trip${kept === 1 ? " that wasn't" : "s that weren't"} synced ${kept === 1 ? "was" : "were"} kept here.` : ""}`
+            : "Signed out. Your trips are still on this browser.";
+          closeDialog("sync-sign-out");
+          if (remove && !hbState.currentTrip) hbUtils.setActivePanel?.("saved-panel");
+          renderSavedPanel();
+        };
+      });
+    }
+
+    function openDeleteAccountDialog() {
+      const user = syncUser();
+      if (!user) return;
+      const overlay = openDialog("sync-delete", "sync-delete-title", `
+        <h2 id="sync-delete-title" class="hb-dialog-title">Delete your account?</h2>
+        <p class="hb-dialog-copy">This permanently deletes the account for ${escapeHtml(user.email)} and every trip stored with it online. Other signed-in devices stop syncing.</p>
+        <p class="hb-dialog-copy">Trips on this browser stay here. Export a backup first if you want a file copy.</p>
+        <div class="hb-dialog-actions">
+          <button type="button" class="hb-dialog-danger" data-sync-delete>Delete my account</button>
+          <button type="button" class="hb-dialog-secondary" data-dialog-close autofocus>Cancel</button>
+        </div>
+        <p class="hb-dialog-status" role="status" aria-live="polite"></p>
+      `);
+      overlay.querySelector("[data-dialog-close]").onclick = () => closeDialog("sync-delete");
+      overlay.querySelector("[data-sync-delete]").onclick = async (event) => {
+        const status = overlay.querySelector(".hb-dialog-status");
+        event.currentTarget.disabled = true;
+        status.textContent = "Deleting…";
+        try {
+          window.clearTimeout(accountSync.timer);
+          await accountSync.client.lock(() => accountSync.client.api.deleteAccount());
+          window.localStorage.removeItem(SYNC_BASE_KEY);
+          accountSync.lastSyncedAt = 0;
+          accountSync.error = "";
+          accountSync.message = "Your account and its online trips were deleted. Trips on this browser are unchanged.";
+          closeDialog("sync-delete");
+          renderSavedPanel();
+        } catch (error) {
+          status.textContent = error?.message || "Couldn't delete your account. Please try again.";
+          event.currentTarget.disabled = false;
+        }
+      };
+    }
+
+    function renderAccountSyncBlock() {
+      if (!accountSync.client) return "";
+      const user = syncUser();
+      const notice = accountSync.error || accountSync.message;
+      const noticeHtml = notice ? `<p class="saved-sync-notice ${accountSync.error ? "is-warning" : ""}" role="status">${escapeHtml(notice)}</p>` : "";
+      if (!user) {
+        return `
+          <section class="saved-sync mt-5" aria-labelledby="saved-sync-title">
+            <div>
+              <h4 id="saved-sync-title" class="font-display text-lg font-bold">Use your trips on every device</h4>
+              <p class="mt-1 text-sm text-muted">Sign in with your email to keep your trips in step on your phone, tablet and computer. Free, no password.</p>
+            </div>
+            ${noticeHtml}
+            <div class="saved-sync-actions">
+              <button class="rounded-full bg-secondary px-4 py-2 text-sm font-semibold text-white" data-sync-action="sign-in" type="button">Sign in to sync</button>
+            </div>
+          </section>
+        `;
+      }
+      const syncedAt = accountSync.lastSyncedAt ? new Date(accountSync.lastSyncedAt).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" }) : "";
+      const state = accountSync.running ? "Syncing…" : syncedAt ? `Synced at ${syncedAt}` : "Not synced yet on this visit";
+      const localOnlyCount = (readSyncBase().localOnly || []).length;
+      return `
+        <section class="saved-sync mt-5" aria-labelledby="saved-sync-title">
+          <div>
+            <h4 id="saved-sync-title" class="font-display text-lg font-bold">Synced to your account</h4>
+            <p class="mt-1 text-sm text-muted">Signed in as ${escapeHtml(user.email)} · ${escapeHtml(state)}</p>
+            ${localOnlyCount ? `<p class="mt-1 text-sm text-muted">${localOnlyCount} trip${localOnlyCount === 1 ? " is" : "s are"} kept on this browser only.</p>` : ""}
+          </div>
+          ${noticeHtml}
+          <div class="saved-sync-actions">
+            <button class="rounded-full bg-secondary px-4 py-2 text-sm font-semibold text-white" data-sync-action="sync-now" type="button" ${accountSync.running ? "disabled" : ""}>Sync now</button>
+            <button class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-sync-action="sign-out" type="button">Sign out</button>
+            <button class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-primary ring-1 ring-line" data-sync-action="delete-account" type="button">Delete account</button>
+          </div>
+        </section>
+      `;
+    }
+
+    function bindAccountSyncActions(container) {
+      container.querySelectorAll("[data-sync-action]").forEach((button) => {
+        button.onclick = (event) => {
+          event.preventDefault();
+          event.stopPropagation();
+          const action = button.dataset.syncAction;
+          if (action === "sign-in") openSignInDialog();
+          if (action === "sync-now") runAccountSync();
+          if (action === "sign-out") openSignOutDialog();
+          if (action === "delete-account") openDeleteAccountDialog();
+        };
+      });
+    }
+
+    function startAccountSyncOnLoad() {
+      if (!accountSync.client) return;
+      // Fallback for a sign-in link (instead of a code): tokens arrive in the fragment once.
+      if (/[#&](access_token|error)=/.test(window.location.hash)) {
+        const fragment = window.location.hash;
+        window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}`);
+        accountSync.client.completeRedirect(fragment)
+          .then((user) => { if (user) runAccountSync(); })
+          .catch((error) => { accountSync.error = error?.message || "That sign-in link didn't work."; refreshAfterSync(); });
+      } else if (syncUser()) {
+        runAccountSync();
+      }
+      window.addEventListener("online", () => scheduleAccountSync(500));
+      document.addEventListener("visibilitychange", () => {
+        if (document.visibilityState !== "visible" || Date.now() - accountSync.lastVisibleSync < 60000) return;
+        accountSync.lastVisibleSync = Date.now();
+        scheduleAccountSync(500);
+      });
     }
 
     function applyLocalAccountBackup(payload) {
@@ -5646,7 +6075,9 @@ function getBlueprintTopPlaces() {
             <div class="saved-panel-card-copy">
               <p class="text-sm font-semibold text-primary">Beta local account</p>
               <h4 class="mt-1 font-display text-lg font-bold">Save here, export when you want a backup</h4>
-              <p class="mt-2 text-sm text-muted">For beta, trips stay free and local to this browser. There is no online account sync yet, so export a backup file before switching devices, clearing browser data, or sharing a draft with yourself.</p>
+              <p class="mt-2 text-sm text-muted">${accountSync.client
+                ? "Trips are saved in this browser first. Sign in above to keep them on all your devices, or export a backup file before clearing browser data."
+                : "For beta, trips stay free and local to this browser. There is no online account sync yet, so export a backup file before switching devices, clearing browser data, or sharing a draft with yourself."}</p>
             </div>
             <span class="rounded-full bg-teal-soft px-3 py-1 text-xs font-semibold text-tertiary">No backend needed</span>
           </div>
@@ -5726,6 +6157,8 @@ function getBlueprintTopPlaces() {
           </div>
 
           ${tripListBlock}
+
+          ${renderAccountSyncBlock()}
 
           <div class="saved-account-overview">
             <div class="saved-account-overview-head">
@@ -5996,6 +6429,8 @@ function getBlueprintTopPlaces() {
         };
       });
 
+      bindAccountSyncActions(hbRefs.savedPanel);
+
       // Trip list: open, rename, duplicate, delete, plan a new trip.
       hbRefs.savedPanel.querySelectorAll("[data-trip-list-action]").forEach((button) => {
         button.onclick = (event) => {
@@ -6015,7 +6450,10 @@ function getBlueprintTopPlaces() {
             hbState.localAccountFeedback = `Duplicated "${entry.title}"`;
           }
           if (action === "delete" && entry) {
-            const confirmed = window.confirm(`Delete "${entry.title}" from this browser?\n\nIts named versions and booking notes are deleted too. This cannot be undone unless you have an exported backup.`);
+            const synced = Boolean(syncUser() && readSyncBase().trips[tripId]);
+            const confirmed = window.confirm(synced
+              ? `Delete "${entry.title}" from this browser and your account?\n\nIt will also disappear from your other signed-in devices, with its named versions and booking notes. This cannot be undone unless you have an exported backup.`
+              : `Delete "${entry.title}" from this browser?\n\nIts named versions and booking notes are deleted too. This cannot be undone unless you have an exported backup.`);
             if (!confirmed) return;
             deleteTripFromCollection(tripId);
             hbState.localAccountFeedback = `Deleted "${entry.title}"`;
@@ -7141,6 +7579,7 @@ Object.assign(hbUtils, {
   readTripCollection,
   openActiveTripOnLoad,
   openSharedTripOnLoad,
+  startAccountSyncOnLoad,
   openTripFromCollection,
   startNewTrip,
   getFlightPlanStatus,

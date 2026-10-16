@@ -8897,6 +8897,92 @@
       margin-top: 1rem;
     }
 
+    .hb-dialog-primary,
+    .hb-dialog-secondary,
+    .hb-dialog-danger {
+      cursor: pointer;
+    }
+
+    .hb-dialog-danger {
+      min-height: 44px;
+      padding: 0.6rem 1.2rem;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      background: #a33a2a;
+      color: #fff;
+    }
+
+    .hb-dialog-danger:disabled,
+    .hb-dialog-secondary:disabled {
+      opacity: 0.6;
+    }
+
+    /* 16px text keeps iOS from zooming into the field. */
+    .hb-dialog-field {
+      width: 100%;
+      min-height: 44px;
+      margin: 0.3rem 0 0.6rem;
+      padding: 0.6rem 0.75rem;
+      border: 1px solid #b9b5ad;
+      border-radius: 0.75rem;
+      font-size: 1rem;
+    }
+
+    .hb-dialog-field:focus {
+      outline: 2px solid #1d6b62;
+      outline-offset: 1px;
+    }
+
+    .hb-dialog-copy a {
+      color: #1d6b62;
+      text-decoration: underline;
+    }
+
+    .hb-dialog-list {
+      margin: 0.4rem 0 0.8rem;
+      padding-left: 1.1rem;
+      list-style: disc;
+      line-height: 1.5;
+    }
+
+    .saved-sync {
+      display: grid;
+      gap: 0.75rem;
+      padding: 1rem;
+      border: 1px solid #d6e7e3;
+      border-radius: 1.5rem;
+      background: #f3faf8;
+    }
+
+    .saved-sync-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .saved-sync-actions button {
+      min-height: 44px;
+    }
+
+    .saved-sync-actions button:disabled {
+      opacity: 0.6;
+    }
+
+    .saved-sync-notice {
+      margin: 0;
+      padding: 0.6rem 0.8rem;
+      border-radius: 0.9rem;
+      background: #fff;
+      font-size: 0.9rem;
+      line-height: 1.45;
+    }
+
+    .saved-sync-notice.is-warning {
+      background: #fef6e7;
+      color: #7a4b00;
+    }
+
     .shared-day {
       margin-top: 1.25rem;
       padding-top: 1rem;
