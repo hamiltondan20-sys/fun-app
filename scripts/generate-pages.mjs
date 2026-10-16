@@ -418,7 +418,7 @@ function pageHead({ title, description, canonical, image = "", socialImage = "",
   <link rel="stylesheet" href="${url("/assets/app.css")}" />
   <link rel="stylesheet" href="${url("/assets/content.css")}" />
   <script defer src="${url("/scripts/site-config.js")}?v=20260913a"></script>
-  <script defer src="${url("/scripts/app-analytics.js")}?v=20261005privacy"></script>
+  <script defer src="${url("/scripts/app-analytics.js")}?v=20261016share"></script>
   ${schema.map(jsonld).join("\n  ")}`;
 }
 
