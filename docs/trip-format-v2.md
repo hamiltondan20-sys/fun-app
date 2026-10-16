@@ -169,6 +169,33 @@ Share links carry a sanitized snapshot built from an allow-list (not by deleting
 known-private fields), show a preview of exactly what will be shared, and warn that
 a link cannot be revoked while sharing is URL-based.
 
+## Print and calendar export (October 16)
+
+Both work on the open trip; neither sends anything anywhere.
+
+- **Print or save as PDF** (`renderTripPrintView` in `scripts/app-trip.js`):
+  - A print-only section lists, for every day and stop:
+    - the address and hours for that date
+    - the travel line and route note
+  - It uses the same renderers as the planner, so the printed plan matches the screen.
+  - The header carries the trip's dates, its local time zone, its must-haves (scheduled
+    and not) and any closed-day or out-of-hours warnings. The footer says it is a plan,
+    not a booking.
+  - The browser's own Print menu prints the same view.
+- **Add to calendar (.ics)** (`scripts/trip-export.js`, tested in
+  `scripts/trip-export.test.mjs`):
+  - **Events:** one event per timed, named stop. Free-time blocks and untimed stops are
+    left out and counted, so the calendar never shows invented commitments.
+  - **Time zone:** times are converted from the trip's time zone to UTC, including
+    daylight-saving changes. Destinations without a known time zone get floating local
+    times.
+  - **Duration:** an event lasts until the next timed stop that day (at most three hours),
+    or 90 minutes for the day's last stop.
+  - **Event content:** address, map point, the operator's page and the travel line. Each
+    description says the times are a plan, not a booking.
+  - **UIDs:** stable per stop, so a re-export updates the same events.
+  - **Format:** lines are RFC 5545 escaped and folded.
+
 ## Migration from v1
 
 On import of a `local-account-backup` v1 file:

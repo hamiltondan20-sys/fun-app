@@ -2726,6 +2726,92 @@ function getBlueprintTopPlaces() {
       renderSavedPanel();
     }
 
+    // Calendar (.ics) export of the open trip: one event per timed, named stop, in the
+    // destination's time zone. Built from the portable trip format (scripts/trip-export.js).
+    function exportTripCalendar() {
+      if (!hbState.currentTrip) return;
+      try {
+        const trip = window.HB_TRIP_FORMAT.tripFromApp({ id: hbState.currentTrip.tripId, appState: hbState.appState, currentTrip: hbState.currentTrip });
+        const { ics, eventCount, skippedFreeTime } = window.HB_TRIP_EXPORT.buildCalendar(trip);
+        const filename = `the-fullest-life-travel-${getSafeBackupNamePart(trip.destination?.name || trip.title || "trip")}-calendar.ics`;
+        const blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
+        const url = window.URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = filename;
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+        window.URL.revokeObjectURL(url);
+        hbState.draftSaveFeedback = `Calendar file downloaded: ${eventCount} stops${skippedFreeTime ? `; ${skippedFreeTime} free-time blocks left out` : ""}. Open it to add the trip to your calendar.`;
+      } catch (error) {
+        hbState.draftSaveFeedback = error?.message || "Unable to create a calendar file in this browser.";
+      }
+      renderTripDraftStatus();
+    }
+
+    // A print-only page for the open trip (browser print or "Save as PDF"), using the same place,
+    // hours and travel renderers as the planner so the printed plan matches the screen.
+    function renderTripPrintView() {
+      const trip = hbState.currentTrip;
+      let view = document.getElementById("trip-print-view");
+      if (!trip) {
+        view?.remove();
+        return;
+      }
+      if (!view) {
+        view = document.createElement("section");
+        view.id = "trip-print-view";
+        view.setAttribute("aria-hidden", "true");
+        document.body.appendChild(view);
+      }
+      const startIso = getTripDayIsoDate(0);
+      const endIso = getTripDayIsoDate(trip.days.length - 1);
+      const longDate = (iso) => (iso ? new Date(`${iso}T12:00:00Z`).toLocaleDateString(undefined, { weekday: "long", day: "numeric", month: "long", timeZone: "UTC" }) : "");
+      const timeZone = window.HB_TRIP_FORMAT?.tripFromApp({ appState: hbState.appState, currentTrip: { days: [] } })?.timeZone;
+      const scheduled = getTripHandoffAnchors().map((anchor) => formatAnchorLabel(anchor.label));
+      const unscheduled = (trip.unscheduledMustHaves || []).map((anchor) => formatAnchorLabel(anchor.label));
+      const conflicts = getTripHoursConflicts(trip);
+      const days = trip.days.map((day, index) => {
+        const isoDate = getTripDayIsoDate(index);
+        const steps = (day.item?.timeline || []).map((step) => `
+          <li class="print-step">
+            <p class="print-step-head"><span class="print-step-time">${escapeHtml(step.time || "")}</span> ${escapeHtml(step.title || "")}${step.kind === "flexible" ? ' <span class="print-step-tag">Free time</span>' : ""}</p>
+            ${step.copy ? `<p class="print-step-copy">${escapeHtml(step.copy)}</p>` : ""}
+            ${renderStepPlaceFacts(step, isoDate)}
+          </li>
+        `).join("");
+        return `
+          <section class="print-day">
+            <h2>${escapeHtml(day.dayLabel || `Day ${index + 1}`)}${isoDate ? ` · ${escapeHtml(longDate(isoDate))}` : ""}</h2>
+            <p class="print-day-title">${escapeHtml(day.title || day.item?.title || "")}</p>
+            ${day.area ? `<p class="print-day-area">Area: ${escapeHtml(day.area)}</p>` : ""}
+            <p class="print-day-fit">${escapeHtml(buildDayOrderNote(day, index, trip.days.length))}</p>
+            <ol class="print-steps">${steps}</ol>
+          </section>
+        `;
+      }).join("");
+      view.innerHTML = `
+        <header class="print-header">
+          <p class="print-brand">The Fullest Life Travel</p>
+          <h1>${escapeHtml(trip.title || "Your trip")}</h1>
+          <p>${escapeHtml(hbState.appState.destination || "")}${startIso ? ` · ${escapeHtml(longDate(startIso))} to ${escapeHtml(longDate(endIso))}` : ""}${timeZone ? ` · Times are local (${escapeHtml(timeZone)})` : ""}</p>
+          ${scheduled.length || unscheduled.length ? `<p>Must-haves: ${escapeHtml(scheduled.join(", ") || "none scheduled")}${unscheduled.length ? `. Not scheduled yet: ${escapeHtml(unscheduled.join(", "))}` : ""}.</p>` : ""}
+          ${conflicts.length ? `<p class="print-warning">Check before you go: ${conflicts.map(({ day, step, check }) => `${escapeHtml(day.dayLabel)}: ${escapeHtml(step.title)} (${check.state === "closed" ? "closed that day" : "outside opening hours"})`).join("; ")}.</p>` : ""}
+        </header>
+        ${days}
+        <footer class="print-footer">Places were checked against their own websites on the dates shown. This is a plan, not a booking: confirm opening hours and reservations before you go. Printed ${escapeHtml(new Date().toLocaleDateString(undefined, { day: "numeric", month: "long", year: "numeric" }))}.</footer>
+      `;
+    }
+
+    function printTrip() {
+      renderTripPrintView();
+      window.print();
+    }
+
+    // Ctrl+P or the browser's own Print menu prints the same clean view.
+    window.addEventListener("beforeprint", renderTripPrintView);
+
     function applyLocalAccountBackup(payload) {
       if (!payload || typeof payload !== "object") {
         throw new Error("Backup file is empty or unreadable.");
@@ -3022,12 +3108,28 @@ function getBlueprintTopPlaces() {
           <button class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="export-local-backup" type="button">
             Export backup
           </button>
+          <button class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="print-trip" type="button" ${hasTrip ? "" : "disabled"}>
+            Print or save as PDF
+          </button>
+          <button class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-secondary ring-1 ring-line" data-action="export-trip-calendar" type="button" ${hasTrip ? "" : "disabled"}>
+            Add to calendar (.ics)
+          </button>
         </div>
       `;
       status.querySelector("[data-action='export-local-backup']").onclick = (event) => {
         event.preventDefault();
         event.stopPropagation();
         exportLocalAccountBackup();
+      };
+      status.querySelector("[data-action='print-trip']").onclick = (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        printTrip();
+      };
+      status.querySelector("[data-action='export-trip-calendar']").onclick = (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        exportTripCalendar();
       };
     }
 

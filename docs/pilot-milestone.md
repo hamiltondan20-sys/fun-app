@@ -54,6 +54,6 @@ Paris and London's five written days do not exempt them from source review.
    including v1 backup upgrade.
 3. Register and check the places used by the five pilots.
 4. Write or extend pilot itineraries against the registry.
-5. Print/PDF and calendar export.
+5. Print/PDF and calendar export. **Done October 16** (see `docs/trip-format-v2.md`, "Print and calendar export").
 6. Run the test matrix; fix; repeat until all 40 checks pass.
 7. Shared snapshots, then accounts/sync, then the domain move.

@@ -8637,3 +8637,121 @@
         padding: 1.25rem !important;
       }
     }
+
+    /* Print / Save as PDF: only the trip's print view (scripts/app-trip.js renderTripPrintView). */
+    @media screen {
+      #trip-print-view {
+        display: none !important;
+      }
+    }
+
+    @media print {
+      @page {
+        margin: 16mm 14mm;
+      }
+
+      body > *:not(#trip-print-view) {
+        display: none !important;
+      }
+
+      body {
+        background: #fff !important;
+      }
+
+      #trip-print-view {
+        display: block !important;
+        color: #111;
+        font: 10.5pt/1.45 Georgia, "Times New Roman", serif;
+      }
+
+      #trip-print-view h1 {
+        margin: 0.1rem 0 0.35rem;
+        font-size: 20pt;
+        line-height: 1.15;
+      }
+
+      #trip-print-view h2 {
+        margin: 0 0 0.15rem;
+        font-size: 13pt;
+        break-after: avoid;
+      }
+
+      #trip-print-view p {
+        margin: 0.15rem 0;
+      }
+
+      #trip-print-view .print-brand {
+        font: 600 8.5pt/1.2 Arial, sans-serif;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #555;
+      }
+
+      #trip-print-view .print-header,
+      #trip-print-view .print-day {
+        padding-bottom: 0.6rem;
+        margin-bottom: 0.8rem;
+        border-bottom: 1px solid #bbb;
+      }
+
+      #trip-print-view .print-warning {
+        font-weight: 600;
+      }
+
+      #trip-print-view .print-day-title {
+        font-weight: 600;
+      }
+
+      #trip-print-view .print-day-area,
+      #trip-print-view .print-step-tag {
+        font: 8.5pt/1.2 Arial, sans-serif;
+        color: #555;
+      }
+
+      #trip-print-view .print-day-fit,
+      #trip-print-view .print-step-copy,
+      #trip-print-view .timeline-place-facts {
+        color: #333;
+      }
+
+      #trip-print-view .print-steps {
+        margin: 0.4rem 0 0;
+        padding-left: 0;
+        list-style: none;
+      }
+
+      #trip-print-view .print-step {
+        margin: 0 0 0.45rem;
+        break-inside: avoid;
+      }
+
+      #trip-print-view .print-step-head {
+        font-weight: 600;
+      }
+
+      #trip-print-view .print-step-time {
+        display: inline-block;
+        min-width: 5.2rem;
+        font: 600 9.5pt/1.2 Arial, sans-serif;
+      }
+
+      #trip-print-view .print-step-copy {
+        margin-left: 5.2rem;
+      }
+
+      #trip-print-view .timeline-place-facts {
+        margin: 0.1rem 0 0 5.2rem;
+        padding-left: 1rem;
+        font-size: 9pt;
+      }
+
+      #trip-print-view a {
+        color: inherit;
+        text-decoration: underline;
+      }
+
+      #trip-print-view .print-footer {
+        font-size: 8.5pt;
+        color: #555;
+      }
+    }
