@@ -5037,14 +5037,44 @@ function getBlueprintTopPlaces() {
       return {
         timeline: attachPlaces(timeline.map((step, stepIndex) => (stepIndex === index ? freeTime : step)), registry, routes),
         copy: { ...copy, ...Object.fromEntries(fields.map((key) => [key, variant[key]])) },
-        undo: { step: originalStep, copy: Object.fromEntries(fields.map((key) => [key, copy[key]])) },
+        undo: { marker: variant.drop, step: originalStep, copy: Object.fromEntries(fields.map((key) => [key, copy[key]])) },
+        removedTitle: original.title
+      };
+    }
+
+    // "Make lighter" on a day not built from checked places (no Easygoing variant to follow): like
+    // Easygoing, the day's last main stop becomes free time. Arrival, check-in and departure steps
+    // and stops that hold a must-have stay; a day with fewer than three main stops is already light.
+    const STRUCTURAL_STEP = /arrival|arrive|hotel|check-?in|check-?out|flight|departure|pack and travel/i;
+
+    function chooseRegularLighterStop(timeline, holdsMustHave) {
+      const main = (timeline || [])
+        .map((step, index) => ({ step, index }))
+        .filter(({ step }) => step?.title && step.kind !== "flexible" && !STRUCTURAL_STEP.test(`${step.title} ${step.copy || ""}`));
+      if (main.length < 3) return null;
+      const candidates = main.filter(({ index }) => index > 0);
+      const free = [...candidates].reverse().find(({ step }) => !holdsMustHave(step));
+      return free ? { index: free.index, title: free.step.title } : { blocked: candidates[candidates.length - 1].step.title };
+    }
+
+    function applyRegularLighter({ timeline, copy }, index) {
+      const original = timeline?.[index];
+      if (!original || original.kind === "flexible") return null;
+      const freeTime = { time: original.time, title: "Free time", copy: `You made this day lighter: ${original.title} is off the plan. Rest, or go if you still feel like it.`, kind: "flexible", lighterOf: "regular" };
+      // These days' summaries are written around their stops, so the summary says what changed.
+      const itemBody = `${copy?.itemBody || ""} Made lighter: ${original.title} is now free time.`.trim();
+      return {
+        timeline: timeline.map((step, stepIndex) => (stepIndex === index ? freeTime : step)),
+        copy: { ...copy, itemBody },
+        undo: { marker: "regular", step: original, copy: { itemBody: copy?.itemBody } },
         removedTitle: original.title
       };
     }
 
     // Put the dropped stop back where its free time is, with the copy it had.
     function undoLighterVariant({ timeline, copy }, undo, registry, routes) {
-      const index = (timeline || []).findIndex((step) => step?.lighterOf && step.lighterOf === undo?.step?.placeId);
+      const marker = undo?.marker ?? undo?.step?.placeId;
+      const index = (timeline || []).findIndex((step) => step?.lighterOf && step.lighterOf === marker);
       if (index < 0) return null;
       return {
         timeline: attachPlaces(timeline.map((step, stepIndex) => (stepIndex === index ? { ...undo.step } : step)), registry, routes),
@@ -7445,25 +7475,6 @@ function getBlueprintTopPlaces() {
       };
     }
 
-    function removeLowestPriorityStep(day, dayIndex) {
-      const timeline = day.item?.timeline || [];
-      if (timeline.length <= 3) return null;
-
-      for (let index = timeline.length - 1; index >= 0; index -= 1) {
-        const step = timeline[index];
-        const stepText = `${step.title || ""} ${step.copy || ""}`.toLowerCase();
-        const protectedStep = stepMatchesProtectedAnchor(step, day, dayIndex);
-        const structuralStep = /arrival|hotel|check-?in|flight|departure/.test(stepText);
-        if (!protectedStep && !structuralStep) {
-          const [removed] = timeline.splice(index, 1);
-          day.removedTimelineSteps = [...(day.removedTimelineSteps || []), removed];
-          return removed;
-        }
-      }
-
-      return null;
-    }
-
     function addFlexibleFollowThrough(day) {
       const timeline = day.item?.timeline || [];
       if (timeline.length >= 6) return null;
@@ -7510,7 +7521,7 @@ function getBlueprintTopPlaces() {
       const protectedSummary = getProtectedAnchorSummary(day, dayIndex, hbState.currentTrip?.days?.length || 1);
       let message = "";
 
-      if (feedback === "too-full" && isResearchedDay(day)) {
+      if (feedback === "too-full") {
         const option = getLighterOption(day, dayIndex);
         const removed = option.state === "available" && makeResearchedDayLighter(day, dayIndex);
         const reasons = {
@@ -7526,18 +7537,6 @@ function getBlueprintTopPlaces() {
           "remove_circle"
         );
         message = removed ? `You made ${day.dayLabel} lighter.` : `${day.dayLabel} stays as it is.`;
-      } else if (feedback === "too-full") {
-        const removed = removeLowestPriorityStep(day, dayIndex);
-        setDayQualityAdjustment(
-          day,
-          feedback,
-          removed ? "Made this day lighter" : "Kept the main plan intact",
-          removed
-            ? `Removed ${removed.title}, but kept ${protectedSummary} in the plan so the day has more breathing room.`
-            : `This day is already tight around ${protectedSummary}, so no lower-priority stop was removed.`,
-          "remove_circle"
-        );
-        message = `You made ${day.dayLabel} lighter while keeping your must-haves in view.`;
       }
 
       if (feedback === "too-light") {
@@ -7605,7 +7604,7 @@ function getBlueprintTopPlaces() {
           ? `${lead} You can move its free time back to ${move.to}.`
           : `${lead} Try another area to spend its free time around ${move.to}, which no other day of the trip centers on.`;
       }
-      if (!isResearchedDay(day)) return "This day isn't built from checked places yet, so there's no checked alternative to swap in. You can reorder stops, make the day lighter, or focus it on the map while you review the route.";
+      if (!isResearchedDay(day)) return `This day isn't built from checked places yet, so there's no checked alternative to swap in. ${describeLighterOption(day, dayIndex)} You can also reorder stops or focus the day on the map.`;
       return [describeAlternateOption(day, dayIndex), describeLighterOption(day, dayIndex), "You can also reorder stops or use quick feedback."].join(" ");
     }
 
@@ -7636,15 +7635,14 @@ function getBlueprintTopPlaces() {
     function describeNoLighterVersion(day) {
       return day.item.timeline.some((step) => step?.kind === "flexible" && !step.placeId)
         ? "This day already keeps time free, so there's no stop to drop."
-        : "There's no checked lighter version of this day yet.";
+        : isResearchedDay(day)
+          ? "There's no checked lighter version of this day yet."
+          : "This day already has fewer than three main stops, so there's no stop to drop.";
     }
 
     function renderLighterButton(day, dayIndex) {
       // An open day is already all free time.
       if (isOpenDay(day)) return "";
-      if (!isResearchedDay(day)) {
-        return `<button class="trip-day-edit-button is-muted" data-action="remove-item" data-day-id="${day.id}" type="button">Make lighter</button>`;
-      }
       const option = getLighterOption(day, dayIndex);
       if (option.state === "available") return `<button class="trip-day-edit-button is-muted" data-action="remove-item" data-day-id="${day.id}" type="button">Make lighter</button>`;
       if (option.state === "undo") {
@@ -7741,20 +7739,29 @@ function getBlueprintTopPlaces() {
     // "Make lighter" on a researched day: what it would do, or why it can't.
     function getLighterOption(day, dayIndex) {
       if (day.item.lighterUndo) return { state: "undo", title: day.item.lighterUndo.step.title };
+      // Dropping a stop that carries one of the traveler's must-haves would unschedule it.
+      const carriesMustHave = (step) => stepIsTravelerMustHave(step, day, dayIndex)
+        || (day.protectedAnchors || []).some((anchor) => anchor.source !== "guide" && anchor.stepTitle === step.title);
+      if (!isResearchedDay(day)) {
+        const choice = chooseRegularLighterStop(day.item.timeline, carriesMustHave);
+        if (!choice) return { state: "none" };
+        if (choice.blocked) return { state: "blocked", title: choice.blocked };
+        return { state: "available", title: choice.title, index: choice.index };
+      }
       const variant = day.item.lighter;
       const step = variant && day.item.timeline.find((item) => item?.placeId === variant.drop);
       if (!step) return { state: "none" };
-      // Dropping a stop that carries one of the traveler's must-haves would unschedule it.
-      const carriesMustHave = stepIsTravelerMustHave(step, day, dayIndex)
-        || (day.protectedAnchors || []).some((anchor) => anchor.source !== "guide" && anchor.stepTitle === step.title);
-      if (carriesMustHave) return { state: "blocked", title: step.title };
+      if (carriesMustHave(step)) return { state: "blocked", title: step.title };
       return { state: "available", title: step.title, variant };
     }
 
     function makeResearchedDayLighter(day, dayIndex) {
       const option = getLighterOption(day, dayIndex);
       if (option.state !== "available") return false;
-      const result = applyLighterVariant({ timeline: day.item.timeline, copy: getResearchedDayCopy(day) }, option.variant, window.HB_PLACES?.places, window.HB_PLACES?.routes);
+      const copy = getResearchedDayCopy(day);
+      const result = option.variant
+        ? applyLighterVariant({ timeline: day.item.timeline, copy }, option.variant, window.HB_PLACES?.places, window.HB_PLACES?.routes)
+        : applyRegularLighter({ timeline: day.item.timeline, copy }, option.index);
       if (!result) return false;
       setResearchedDayContent(day, result.timeline, result.copy);
       // Guide picks on the dropped stop leave the day with it, and come back on undo.
@@ -7808,8 +7815,8 @@ function getBlueprintTopPlaces() {
     function removeDayItem(dayId) {
       const day = findDay(dayId);
       if (!day) return;
-      // A researched day drops one chosen stop (it becomes free time) instead of hiding the day.
-      if (isResearchedDay(day) && !day.item.removed) {
+      // One chosen stop becomes free time instead of the whole day being hidden.
+      if (!day.item.removed) {
         if (makeResearchedDayLighter(day, findDayIndex(dayId))) renderTrip();
         return;
       }

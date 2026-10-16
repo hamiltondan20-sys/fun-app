@@ -869,3 +869,30 @@ test("an older saved trip's reworded day summaries are put back to their origina
   assert.deepEqual([...trip.days[1].item.alternatives].map((alternate) => alternate.kind), ["stop"]);
   assert.doesNotThrow(() => context.restoreRewordedDays(null));
 });
+test("make lighter on a day not built from checked places: the last main stop becomes free time, and put back restores it", () => {
+  const logic = loadLogic();
+  const helpers = logic.window.HB_TRIP_HELPERS;
+  const day = helpers.getConcreteTripTemplates("Barcelona", helpers.getAreaSet("Barcelona"))[0];
+  const none = () => false;
+  // Gothic Quarter day: coffee, cathedral, lunch, dinner. The dinner is the last main stop.
+  const choice = logic.chooseRegularLighterStop(day.timeline, none);
+  assert.equal(choice.title, "Dinner at El Xampanyet");
+  // A must-have on the dinner moves the choice to the stop before; if every later stop holds one, nothing drops.
+  assert.equal(logic.chooseRegularLighterStop(day.timeline, (step) => /Xampanyet/.test(step.title)).title, "Lunch at Bormuth");
+  assert.deepEqual({ ...logic.chooseRegularLighterStop(day.timeline, (step) => step.title !== day.timeline[0].title) }, { blocked: "Dinner at El Xampanyet" });
+  // Fewer than three main stops, or only arrival/departure steps: already light.
+  assert.equal(logic.chooseRegularLighterStop(day.timeline.slice(0, 2), none), null);
+  assert.equal(logic.chooseRegularLighterStop([{ title: "Arrive and check in", copy: "" }, { title: "Dinner", copy: "" }, { title: "Pack and travel", copy: "" }, { title: "Walk", copy: "", kind: "flexible" }], none), null);
+
+  const copy = { itemTitle: day.itemTitle, itemBody: day.itemBody, fit: day.fit };
+  const lighter = logic.applyRegularLighter({ timeline: day.timeline, copy }, choice.index);
+  const freeTime = lighter.timeline[choice.index];
+  assert.equal(freeTime.kind, "flexible");
+  assert.equal(freeTime.title, "Free time");
+  assert.equal(freeTime.time, day.timeline[choice.index].time);
+  assert.match(lighter.copy.itemBody, /Made lighter: Dinner at El Xampanyet is now free time\.$/);
+  const back = logic.undoLighterVariant({ timeline: lighter.timeline, copy: lighter.copy }, lighter.undo, {}, null);
+  assert.deepEqual([...back.timeline].map((step) => step.title), [...day.timeline].map((step) => step.title));
+  assert.equal(back.copy.itemBody, day.itemBody);
+  assert.equal(logic.applyRegularLighter({ timeline: lighter.timeline, copy }, choice.index), null, "free time isn't dropped again");
+});
