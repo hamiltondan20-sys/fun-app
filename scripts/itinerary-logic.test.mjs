@@ -824,3 +824,27 @@ test("make lighter turns one chosen stop into free time with matching copy, and 
   }
   assert.equal(lighterDays, 12, "the researched days with an Easygoing variant (Paris 3, London 3, Berlin 2, Hong Kong 4)");
 });
+// ---- "Try alternate" on open days: move the free time to an area no other day covers ----
+
+test("an open day moves to an unused area, renames its free time, and cycles back to where it started", () => {
+  const logic = loadLogic();
+  const areas = ["Saint-Germain", "Le Marais", "Louvre", "Montmartre", "Bourse"];
+  // Le Marais and Louvre already have days; Saint-Germain is where the open day started.
+  assert.equal(logic.chooseOpenDayArea(areas, "Saint-Germain", ["Le Marais", "Louvre"], "Saint-Germain"), "Montmartre");
+  assert.equal(logic.chooseOpenDayArea(areas, "Montmartre", ["Le Marais", "Louvre"], "Saint-Germain"), "Bourse");
+  assert.equal(logic.chooseOpenDayArea(areas, "Bourse", ["Le Marais", "Louvre"], "Saint-Germain"), "Saint-Germain");
+  // Nowhere new and already at the start: nothing to offer.
+  assert.equal(logic.chooseOpenDayArea(["Saint-Germain", "Le Marais"], "Saint-Germain", ["Le Marais"], "Saint-Germain"), null);
+
+  const timeline = logic.buildFlexibleDayTimeline("Saint-Germain");
+  const copy = { title: "Open day near Saint-Germain", highlight: "Flexible time near Saint-Germain", itemBody: "Use the day for a repeat favorite." };
+  const moved = logic.moveOpenDayArea({ timeline, copy }, "Saint-Germain", "Montmartre");
+  assert.deepEqual([...moved.timeline].map((step) => step.title), ["Slow start + coffee in Montmartre", "Lunch in Montmartre", "Favorite return or open time"]);
+  assert.ok(moved.timeline.every((step) => step.kind === "flexible"));
+  assert.equal(moved.copy.title, "Open day near Montmartre");
+  assert.equal(moved.copy.highlight, "Flexible time near Montmartre");
+  // Whole names only: "Louvre" must not rewrite "Louvre Museum"-style text partially, and "Bourse" not "Bourses".
+  const partial = logic.moveOpenDayArea({ timeline: [], copy: { a: "Lunch in Louvre", b: "Louvreside walk" } }, "Louvre", "Bourse");
+  assert.deepEqual({ ...partial.copy }, { a: "Lunch in Bourse", b: "Louvreside walk" });
+  assert.equal(logic.moveOpenDayArea({ timeline, copy }, "Saint-Germain", "Saint-Germain"), null);
+});

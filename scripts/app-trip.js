@@ -5292,6 +5292,32 @@ function getBlueprintTopPlaces() {
       return { byDay, unscheduled };
     }
 
+    // An open day is all free time in one area, so its real alternative is another area. The next
+    // area is one no other day centers on (no repeated neighbourhoods); after those, back to the
+    // original. Returns null when there is nowhere else to go.
+    function chooseOpenDayArea(areas, currentArea, usedAreas, originalArea) {
+      const used = new Set((usedAreas || []).map((area) => String(area).toLowerCase()));
+      const list = (areas || []).filter(Boolean);
+      // A fixed loop: the unused areas in guide order after the original, then the original again.
+      const start = list.indexOf(originalArea);
+      const rotated = start < 0 ? list : [...list.slice(start + 1), ...list.slice(0, start)];
+      const loop = [...rotated.filter((area) => area !== originalArea && !used.has(area.toLowerCase())), originalArea].filter(Boolean);
+      if (loop.length < 2) return null;
+      const position = loop.indexOf(currentArea);
+      return loop[(position + 1) % loop.length];
+    }
+
+    // Rename the area everywhere the open day mentions it: its copy and its free-time blocks.
+    function moveOpenDayArea({ timeline, copy }, fromArea, toArea) {
+      if (!fromArea || !toArea || fromArea === toArea) return null;
+      const pattern = new RegExp(`(^|[^\\p{L}])${fromArea.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?=$|[^\\p{L}])`, "gu");
+      const rename = (text) => (typeof text === "string" ? text.replace(pattern, (match, before) => `${before}${toArea}`) : text);
+      return {
+        timeline: (timeline || []).map((step) => ({ ...step, title: rename(step.title), copy: rename(step.copy) })),
+        copy: Object.fromEntries(Object.entries(copy || {}).map(([key, value]) => [key, rename(value)]))
+      };
+    }
+
     function buildFlexibleDayTimeline(area) {
       return [
         { time: "10:00 AM", title: `Slow start + coffee in ${area}`, copy: "Leave the morning open for a favorite spot or a place you passed earlier in the trip.", kind: "flexible" },
@@ -7540,7 +7566,20 @@ function getBlueprintTopPlaces() {
         message = `You added more variety to ${day.dayLabel} without crowding the main moments.`;
       }
 
-      if (feedback === "wrong-area") {
+      if (feedback === "wrong-area" && isOpenDay(day)) {
+        const fromArea = day.areas?.[0] || day.area;
+        const move = moveOpenDay(day);
+        setDayQualityAdjustment(
+          day,
+          feedback,
+          move ? `Moved to ${move.to}` : "Kept this area",
+          move
+            ? `This open day's free time is now around ${move.to} instead of ${fromArea}.`
+            : "Every other area in this guide already has a day, so the free time stays where it is.",
+          "near_me"
+        );
+        message = move ? `You moved ${day.dayLabel} to ${move.to}.` : `${day.dayLabel} stays in ${fromArea}.`;
+      } else if (feedback === "wrong-area") {
         const adjusted = applyWrongAreaAdjustment(day);
         setDayQualityAdjustment(
           day,
@@ -7572,6 +7611,14 @@ function getBlueprintTopPlaces() {
     }
 
     function describeDayEditOptions(day, dayIndex) {
+      if (isOpenDay(day)) {
+        const move = getOpenDayMove(day);
+        const lead = "This open day has no booked stops.";
+        if (!move) return `${lead} Every other area in this guide already has a day, so there's nowhere new to move its free time. You can also reorder its blocks.`;
+        return move.back
+          ? `${lead} You can move its free time back to ${move.to}.`
+          : `${lead} Try another area to spend its free time around ${move.to}, which no other day of the trip centers on.`;
+      }
       if (!isResearchedDay(day)) return "Try a nearby alternative, make the day lighter, or keep it focused on the map while you review the route.";
       return [describeAlternateOption(day, dayIndex), describeLighterOption(day, dayIndex), "You can also reorder stops or use quick feedback."].join(" ");
     }
@@ -7607,6 +7654,8 @@ function getBlueprintTopPlaces() {
     }
 
     function renderLighterButton(day, dayIndex) {
+      // An open day is already all free time.
+      if (isOpenDay(day)) return "";
       if (!isResearchedDay(day)) {
         return `<button class="trip-day-edit-button is-muted" data-action="remove-item" data-day-id="${day.id}" type="button">Make lighter</button>`;
       }
@@ -7619,6 +7668,10 @@ function getBlueprintTopPlaces() {
     }
 
     function renderSwapButton(day, dayIndex) {
+      if (isOpenDay(day)) {
+        const move = getOpenDayMove(day);
+        return move ? `<button class="trip-day-edit-button trip-day-edit-button--swap" data-action="swap-item" data-day-id="${day.id}" type="button">${move.back ? "Back to" : "Move to"} ${escapeHtml(move.to)}</button>` : "";
+      }
       if (!isResearchedDay(day)) {
         return `<button class="trip-day-edit-button" data-action="swap-item" data-day-id="${day.id}" type="button">Try alternate</button>`;
       }
@@ -7627,6 +7680,36 @@ function getBlueprintTopPlaces() {
       // The branch in brackets stays in the note above; the button keeps to the place's name.
       const name = String(window.HB_PLACES?.places?.[choice.alternate.step.placeId]?.name || choice.alternate.step.title).replace(/\s*\(.*\)$/, "");
       return `<button class="trip-day-edit-button trip-day-edit-button--swap" data-action="swap-item" data-day-id="${day.id}" type="button">${choice.alternate.restores ? "Back to" : "Swap in"} ${escapeHtml(name)}</button>`;
+    }
+
+    // A day that is all free time in one area (an open or flexible day).
+    function isOpenDay(day) {
+      const timeline = day?.item?.timeline || [];
+      return timeline.length > 0 && timeline.every((step) => step?.kind === "flexible" && !step.placeId);
+    }
+
+    function getOpenDayMove(day) {
+      const from = day.areas?.[0] || day.area;
+      const used = (hbState.currentTrip?.days || [])
+        .filter((other) => other.id !== day.id)
+        .flatMap((other) => (other.areas?.length ? other.areas : String(other.area || "").split(" + ")));
+      const original = day.item.openAreaOriginal || from;
+      const to = chooseOpenDayArea(getAreaSet(getCityName()), from, used, original);
+      return to ? { from, to, back: to === original } : null;
+    }
+
+    function moveOpenDay(day) {
+      const move = getOpenDayMove(day);
+      if (!move) return null;
+      const result = moveOpenDayArea({ timeline: day.item.timeline, copy: getResearchedDayCopy(day) }, move.from, move.to);
+      const shown = moveOpenDayArea({ timeline: [], copy: { title: day.item.title, body: day.item.body, fit: day.item.fit } }, move.from, move.to);
+      if (!result || !shown) return null;
+      Object.assign(day, result.copy, { area: move.to, areas: [move.to], areaConfirmed: true });
+      Object.assign(day.item, shown.copy, { timeline: result.timeline });
+      if (move.back) delete day.item.openAreaOriginal;
+      else day.item.openAreaOriginal = day.item.openAreaOriginal || move.from;
+      markUnsavedArrangement(`${day.dayLabel}'s free time is now around ${move.to}. Save this version if it feels better.`);
+      return move;
     }
 
     // A day built from checked places: its text names real stops, so generic reframing doesn't apply.
@@ -7730,6 +7813,10 @@ function getBlueprintTopPlaces() {
     function swapDayItem(dayId) {
       const day = findDay(dayId);
       if (!day || day.item.removed) return;
+      if (isOpenDay(day)) {
+        if (moveOpenDay(day)) renderTrip();
+        return;
+      }
       if (isResearchedDay(day)) {
         if (swapStopAlternate(day, findDayIndex(dayId))) renderTrip();
         return;
