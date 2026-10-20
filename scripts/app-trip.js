@@ -5094,7 +5094,8 @@ function getBlueprintTopPlaces() {
       const retitle = Array.isArray(alternate.retitle) ? alternate.retitle : [];
       const reverseRetitle = [];
       const swapped = timeline.map((step, stepIndex) => {
-        if (stepIndex === index) return { ...alternate.step, time: original.time };
+        // The new stop keeps the old one's time unless it has its own (e.g. a later opening).
+        if (stepIndex === index) return { ...alternate.step, time: alternate.step.time || original.time };
         const rename = !step?.placeId && retitle.find((item) => item.from === step?.title);
         if (!rename) return step;
         reverseRetitle.push({ from: rename.title, title: step.title, copy: step.copy });
@@ -7712,7 +7713,7 @@ function getBlueprintTopPlaces() {
           const step = day.item.timeline.find((item) => item?.placeId === alternate.replaces);
           const place = registry?.[alternate.step?.placeId];
           if (!step || !place || stepIsTravelerMustHave(step, day, dayIndex)) return false;
-          return checkStopHours({ time: step.time }, isoDate, place.hours).state !== "closed";
+          return checkStopHours({ time: alternate.step.time || step.time }, isoDate, place.hours).state !== "closed";
         });
     }
 

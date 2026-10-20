@@ -1,0 +1,96 @@
+{
+  "about": "Source review for checked alternates in Berlin, Hong Kong and Singapore, 2026-10-19. Draft: nothing here is used by the planner until the owner approves. Every record was read on the operator's own site or the public body that runs it; quotes are short extracts.",
+  "checkedOn": "2026-10-19",
+  "proposed": [
+    {
+      "city": "berlin", "name": "Alte Nationalgalerie", "kind": "landmark", "replaces": "plc_berlin_ddr-museum", "verdict": "confirmed",
+      "address": "Bodestraße, 10178 Berlin (visitor entrance)",
+      "source": { "sourceType": "operator's own site (Staatliche Museen zu Berlin)", "url": "https://www.smb.museum/en/museums-institutions/alte-nationalgalerie/plan-your-visit/", "operatingEvidence": "Current exhibition 'Scandal! Hermione von Preuschen and the Mors Imperator' (22.03.2026-15.11.2026); 2nd floor closed 29 Sep-21 Oct 2026, 'fully open again from 22 October'." },
+      "hours": { "quote": "Mon closed / Tue 10:00 am - 6:00 pm ... (Tue-Sun)", "weekly": { "mon": "closed", "tue": "10:00-18:00", "wed": "10:00-18:00", "thu": "10:00-18:00", "fri": "10:00-18:00", "sat": "10:00-18:00", "sun": "10:00-18:00" }, "exceptions": [{ "date": "2026-12-24", "hours": "closed" }, { "date": "2026-12-25", "hours": "10:00-18:00", "note": "Sunday hours" }, { "date": "2026-12-26", "hours": "10:00-18:00", "note": "Sunday hours" }, { "date": "2026-12-31", "hours": "closed" }], "holidaySource": "https://www.smb.museum/en/plan-your-visit/special-opening-hours-during-public-holidays/" }
+    },
+    {
+      "city": "berlin", "name": "Hamburger Bahnhof", "kind": "landmark", "replaces": "plc_berlin_museum-fuer-naturkunde-berlin", "verdict": "confirmed",
+      "address": "Invalidenstraße 50, 10557 Berlin",
+      "source": { "sourceType": "operator's own site (Staatliche Museen zu Berlin)", "url": "https://www.smb.museum/en/museums-institutions/hamburger-bahnhof/plan-your-visit/", "operatingEvidence": "Current exhibitions 'Next Door' (09.10.2026-27.06.2027) and Ryuichi Sakamoto (11.09.2026-20.06.2027); notice of new opening hours from 1 December 2026." },
+      "hours": { "quote": "Tue, Wed, Fri 10:00 am-6:00 pm; Thu 10:00 am-8:00 pm; Sat, Sun 11:00 am-6:00 pm. 'From 1 December 2026, new opening hours will apply: Tuesday to Sunday from 10 am to 6 pm.'", "periods": [{ "from": "2026-10-19", "to": "2026-11-30", "weekly": { "mon": "closed", "tue": "10:00-18:00", "wed": "10:00-18:00", "thu": "10:00-20:00", "fri": "10:00-18:00", "sat": "11:00-18:00", "sun": "11:00-18:00" } }, { "from": "2026-12-01", "to": "2026-12-31", "weekly": { "mon": "closed", "tue": "10:00-18:00", "wed": "10:00-18:00", "thu": "10:00-18:00", "fri": "10:00-18:00", "sat": "10:00-18:00", "sun": "10:00-18:00" } }], "exceptions": [{ "date": "2026-12-24", "hours": "closed" }, { "date": "2026-12-31", "hours": "closed" }] },
+      "caveats": "Access to the Rieckhallen is currently not barrier-free."
+    },
+    {
+      "city": "berlin", "name": "Kaiser Wilhelm Memorial Church", "kind": "landmark", "replaces": "plc_berlin_zoo-berlin", "verdict": "confirmed (church)",
+      "address": "Breitscheidplatz, 10789 Berlin",
+      "source": { "sourceType": "operator's own site", "url": "https://gedaechtniskirche-berlin.de/besuch/offene-kirche/oeffnungszeiten", "operatingEvidence": "Renovation page: services, concerts, events and tours continue throughout; the Gedenkhalle exhibition closed from 29.08.2026 for renovation." },
+      "hours": { "quote": "Montag bis Sonntag: 10 bis 18 Uhr, ausgenommen während der Gottesdienste, Andachten und Konzerte", "weekly": { "mon": "10:00-18:00", "tue": "10:00-18:00", "wed": "10:00-18:00", "thu": "10:00-18:00", "fri": "10:00-18:00", "sat": "10:00-18:00", "sun": "10:00-18:00" }, "exceptions": [] },
+      "caveats": "Gedenkhalle (old tower) exhibition closed for renovation, no end date. Visits pause during services and concerts."
+    },
+    {
+      "city": "berlin", "name": "Horváth", "kind": "meal", "replaces": "plc_berlin_restaurant-tim-raue", "verdict": "confirmed",
+      "address": "Paul-Lincke-Ufer 44A, 10999 Berlin",
+      "source": { "sourceType": "restaurant's own site", "url": "https://restaurant-horvath.de/", "operatingEvidence": "Page dated 29 Sep 2026; reservations through an OpenTable link." },
+      "hours": { "quote": "Öffnungszeiten: Mittwoch bis Samstag ab 18:30", "weekly": { "mon": "closed", "tue": "closed", "wed": "18:30-late", "thu": "18:30-late", "fri": "18:30-late", "sat": "18:30-late", "sun": "closed" }, "exceptions": [] }
+    },
+    {
+      "city": "berlin", "name": "Jewish Museum Berlin", "kind": "landmark", "replaces": "plc_berlin_tempelhofer-feld", "verdict": "confirmed",
+      "address": "Lindenstraße 9–14, 10969 Berlin",
+      "source": { "sourceType": "operator's own site", "url": "https://www.jmberlin.de/en/visit", "operatingEvidence": "Events listed on 22 and 24 Oct 2026; dated closures on 14 Nov and 24 Dec 2026. Re-read 2026-10-19." },
+      "hours": { "quote": "Open Tue–Sun 10 am–6 pm ... Last admission: 5 pm ... Closed on Mondays", "weekly": { "mon": "closed", "tue": "10:00-18:00", "wed": "10:00-18:00", "thu": "10:00-18:00", "fri": "10:00-18:00", "sat": "10:00-18:00", "sun": "10:00-18:00" }, "exceptions": [{ "date": "2026-11-14", "hours": "closed", "note": "Award ceremony" }, { "date": "2026-12-24", "hours": "closed", "note": "Christmas Eve" }], "lastEntry": "17:00" },
+      "caveats": "Time-slot ticket recommended; walk-in tickets also sold."
+    },
+    {
+      "city": "hongkong", "name": "Hong Kong Zoological and Botanical Gardens", "kind": "scenic", "replaces": "plc_hongkong_pmq", "verdict": "confirmed",
+      "address": "Albany Road, Central, Hong Kong",
+      "source": { "sourceType": "official site of the LCSD-run gardens (linked from lcsd.gov.hk parks list)", "url": "https://www.hkzbg.gov.hk/en/visitPage.html", "operatingEvidence": "October 2026 'Flowering Plants of the Month'; weekly free guided visits." },
+      "hours": { "quote": "Fountain Terrace Garden 5am - 10pm; Green House 9am - 4:30pm; Mammals Section 6am – 7pm; Other Areas 6am - 7pm. Admission Free.", "weekly": { "mon": "06:00-19:00", "tue": "06:00-19:00", "wed": "06:00-19:00", "thu": "06:00-19:00", "fri": "06:00-19:00", "sat": "06:00-19:00", "sun": "06:00-19:00" }, "exceptions": [] }
+    },
+    {
+      "city": "hongkong", "name": "The Old Man", "kind": "meal", "replaces": "plc_hongkong_argo", "verdict": "confirmed (weak current evidence)",
+      "address": "37 Aberdeen Street, Soho, Central, Hong Kong",
+      "source": { "sourceType": "bar's own site", "url": "https://www.theoldmanhongkong.com/", "operatingEvidence": "Hours and a current menu are posted, but nothing on the site is dated 2026 (footer © 2021)." },
+      "hours": { "quote": "5pm to 2am, Monday–Saturday; 5pm to 12am, Sunday", "weekly": { "mon": "17:00-02:00", "tue": "17:00-02:00", "wed": "17:00-02:00", "thu": "17:00-02:00", "fri": "17:00-02:00", "sat": "17:00-02:00", "sun": "17:00-00:00" }, "exceptions": [] }
+    },
+    {
+      "city": "hongkong", "name": "Hong Kong Museum of Art", "kind": "landmark", "replaces": "plc_hongkong_hong-kong-palace-museum", "verdict": "confirmed",
+      "address": "10 Salisbury Road, Tsim Sha Tsui, Kowloon, Hong Kong",
+      "source": { "sourceType": "operator's own site (LCSD)", "url": "https://hk.art.museum/en/web/ma/visit/opening-hours-and-admission.html", "operatingEvidence": "Dated exhibitions: 'By the People 2' (2026.09.23-2026.12.15), 'Fermata: Hong Kong in Venice' (2026.05.09-2026.11.22). Re-read 2026-10-19." },
+      "hours": { "quote": "Mondays to Wednesdays, Fridays 10:00am – 6:00pm; Saturdays, Sundays and public holidays 10:00am – 9:00pm; Christmas Eve 10:00am – 5:00pm; Closed on Thursdays (except public holiday)", "weekly": { "mon": "10:00-18:00", "tue": "10:00-18:00", "wed": "10:00-18:00", "thu": "closed", "fri": "10:00-18:00", "sat": "10:00-21:00", "sun": "10:00-21:00" }, "exceptions": [{ "date": "2026-12-24", "hours": "10:00-17:00", "note": "Christmas Eve" }, { "date": "2026-12-25", "hours": "10:00-21:00", "note": "Public holiday hours" }] },
+      "caveats": "Free admission except special exhibitions; box office closes 30 minutes before the museum."
+    },
+    {
+      "city": "singapore", "name": "Asian Civilisations Museum", "kind": "landmark", "replaces": "plc_singapore_artscience-museum", "verdict": "confirmed",
+      "address": "1 Empress Place, Singapore 179555",
+      "source": { "sourceType": "operator's own site (National Heritage Board)", "url": "https://acm.nhb.gov.sg/visit/plan-your-visit", "operatingEvidence": "Dated exhibitions 'Sacred Caves' (25 Sep 2026-7 Mar 2027) and 'Crosscurrents' (19 Jun 2026-24 Jan 2027); online tickets." },
+      "hours": { "quote": "Daily 10am - 7pm; Friday 10am - 9pm. Admission to all galleries ends 30 minutes before closing time.", "weekly": { "mon": "10:00-19:00", "tue": "10:00-19:00", "wed": "10:00-19:00", "thu": "10:00-19:00", "fri": "10:00-21:00", "sat": "10:00-19:00", "sun": "10:00-19:00" }, "exceptions": [] },
+      "caveats": "Some exhibitions need an all-access ticket; free entry applies to residents only."
+    },
+    {
+      "city": "singapore", "name": "Long Bar (Raffles Hotel Singapore)", "kind": "meal", "replaces": "plc_singapore_atlas", "verdict": "confirmed",
+      "address": "#02-01 Raffles Arcade, 328 North Bridge Road, Singapore 188719",
+      "source": { "sourceType": "hotel's official page", "url": "https://www.raffles.com/singapore/dining/long-bar/", "operatingEvidence": "Live page with current hours and walk-in policy; no dated content." },
+      "hours": { "quote": "Sunday to Wednesday: 11.00am – 10.30pm (last seating); Thursday to Saturday: 11.00am – 11.30pm (last seating)", "weekly": { "mon": "11:00-22:30", "tue": "11:00-22:30", "wed": "11:00-22:30", "thu": "11:00-23:30", "fri": "11:00-23:30", "sat": "11:00-23:30", "sun": "11:00-22:30" }, "exceptions": [], "note": "Times are last seating." },
+      "caveats": "Walk-in only; smart casual recommended."
+    },
+    {
+      "city": "singapore", "name": "Bird Paradise", "kind": "landmark", "replaces": "plc_singapore_singapore-zoo", "verdict": "confirmed",
+      "address": "Mandai Wildlife WEST, 20 Mandai Lake Road, Singapore 729825",
+      "source": { "sourceType": "operator's own site (Mandai Wildlife Group)", "url": "https://www.mandai.com/en/bird-paradise.html", "operatingEvidence": "Tickets on sale; dated maintenance closure of one attraction 10-12 Nov 2026." },
+      "hours": { "quote": "Daily, 9:00am – 6:00pm (Last Entry: 5:00pm)", "weekly": { "mon": "09:00-18:00", "tue": "09:00-18:00", "wed": "09:00-18:00", "thu": "09:00-18:00", "fri": "09:00-18:00", "sat": "09:00-18:00", "sun": "09:00-18:00" }, "exceptions": [], "lastEntry": "17:00" }
+    }
+  ],
+  "needsDecision": [
+    {
+      "slot": "Singapore, Tiong Bahru day: instead of dinner at JUMBO Seafood (plc_singapore_jumbo-seafood-riverside-point)",
+      "options": [
+        { "name": "Maxwell Food Centre", "kind": "meal", "recommended": true, "address": "1 Kadayanallur Street, Singapore 069184", "source": { "sourceType": "government body that manages it (NEA)", "url": "https://www.nea.gov.sg/our-services/hawker-management/overview", "operatingEvidence": "On NEA's list of hawker centres dated 17 Aug 2026; NEA cleaning schedule: 'Maxwell Food Centre (Kim Hua Market) 14 Dec 2026 to 14 Dec 2026 Cleaning' (read in a browser 2026-10-19)." }, "hours": { "quote": "No centre or stall hours published.", "weekly": "unknown", "exceptions": [{ "date": "2026-12-14", "hours": "closed", "note": "NEA cleaning closure" }] } },
+        { "name": "Lau Pa Sat", "kind": "meal", "recommended": false, "address": "18 Raffles Quay, Singapore 048582", "source": { "sourceType": "operator's own site", "url": "https://www.laupasat.sg/", "operatingEvidence": "Address with '(24 hours)'; weekly live band Fri-Sun 7.30pm-9.30pm; no 2026-dated content (footer © 2024). Re-read 2026-10-19." }, "hours": { "quote": "18 Raffles Quay, Singapore 048582 (24 hours)", "weekly": "open 24h (centre); stall hours not published" } }
+      ]
+    }
+  ],
+  "backupsConfirmedNotUsed": ["Bode-Museum", "Topography of Terror", "Hong Kong Park", "Hong Kong Space Museum", "River Wonders", "Tim Ho Wan (K11 Art Mall / West Kowloon Station)", "Mott 32 (Central)"],
+  "notUsed": [
+    { "name": "Museum Berggruen", "reason": "Closed for basic renovation since 5 September 2022 (smb.museum)." },
+    { "name": "Mauerpark", "reason": "Not verified: official berlin.de pages returned 404/410/429 and mauerpark.info returned 500." },
+    { "name": "Lode & Stijn", "reason": "Not verified: the restaurant's site certificate has expired." },
+    { "name": "Bar Leone", "reason": "Not verified: barleone.com is a parked domain; barleonehk.com showed no content." },
+    { "name": "National Museum of Singapore", "reason": "Not verified: hours and address fields were empty on the official pages read." },
+    { "name": "Native (Amoy Street)", "reason": "Hours published on tribenative.com, but the site couldn't be tied to the bar and has no current content." }
+  ]
+}

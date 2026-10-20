@@ -10962,6 +10962,1319 @@ window.HB_PLACES = {
           }
         ]
       }
+    },
+    "plc_berlin_alte-nationalgalerie": {
+      "id": "plc_berlin_alte-nationalgalerie",
+      "name": "Alte Nationalgalerie",
+      "city": "berlin",
+      "kind": "landmark",
+      "area": "Museum Island",
+      "timeZone": "Europe/Berlin",
+      "address": "Bodestraße, 10178 Berlin (visitor entrance)",
+      "coordinates": {
+        "lat": 52.52086,
+        "lng": 13.39827,
+        "basis": "named feature: the museum building on Bodestrasse",
+        "osm": "way/313670733",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-19"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-19",
+        "periods": [
+          {
+            "from": "2026-10-19",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [],
+              "tue": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-12-24",
+            "hours": [],
+            "note": "Published closure"
+          },
+          {
+            "date": "2026-12-25",
+            "hours": [
+              [
+                "10:00",
+                "18:00"
+              ]
+            ],
+            "note": "Sunday hours"
+          },
+          {
+            "date": "2026-12-26",
+            "hours": [
+              [
+                "10:00",
+                "18:00"
+              ]
+            ],
+            "note": "Sunday hours"
+          },
+          {
+            "date": "2026-12-31",
+            "hours": [],
+            "note": "Published closure"
+          }
+        ],
+        "lastEntry": null,
+        "caveat": null,
+        "notes": "Holiday hours from https://www.smb.museum/en/plan-your-visit/special-opening-hours-during-public-holidays/.",
+        "evidence": {
+          "url": "https://www.smb.museum/en/museums-institutions/alte-nationalgalerie/plan-your-visit/",
+          "quote": "Mon closed / Tue 10:00 am - 6:00 pm ... (Tue-Sun)",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-19",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site (Staatliche Museen zu Berlin)",
+            "url": "https://www.smb.museum/en/museums-institutions/alte-nationalgalerie/plan-your-visit/",
+            "locationUrl": "https://www.smb.museum/en/museums-institutions/alte-nationalgalerie/plan-your-visit/",
+            "retrievedOn": "2026-10-19",
+            "note": "Current exhibition 'Scandal! Hermione von Preuschen and the Mors Imperator' (22.03.2026-15.11.2026); 2nd floor closed 29 Sep-21 Oct 2026, 'fully open again from 22 October'."
+          }
+        ]
+      }
+    },
+    "plc_berlin_hamburger-bahnhof": {
+      "id": "plc_berlin_hamburger-bahnhof",
+      "name": "Hamburger Bahnhof",
+      "city": "berlin",
+      "kind": "landmark",
+      "area": "Moabit",
+      "timeZone": "Europe/Berlin",
+      "address": "Invalidenstraße 50, 10557 Berlin",
+      "coordinates": {
+        "lat": 52.52863,
+        "lng": 13.37187,
+        "basis": "named feature: the museum building at Invalidenstrasse 50-51",
+        "osm": "way/175464203",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-19"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-19",
+        "periods": [
+          {
+            "from": "2026-10-19",
+            "to": "2026-11-30",
+            "weekly": {
+              "mon": [],
+              "tue": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "20:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "11:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "11:00",
+                  "18:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2026-12-01",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [],
+              "tue": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-12-24",
+            "hours": [],
+            "note": "Published closure"
+          },
+          {
+            "date": "2026-12-31",
+            "hours": [],
+            "note": "Published closure"
+          }
+        ],
+        "lastEntry": null,
+        "caveat": "Access to the Rieckhallen is currently not barrier-free.",
+        "notes": null,
+        "evidence": {
+          "url": "https://www.smb.museum/en/museums-institutions/hamburger-bahnhof/plan-your-visit/",
+          "quote": "Tue, Wed, Fri 10:00 am-6:00 pm; Thu 10:00 am-8:00 pm; Sat, Sun 11:00 am-6:00 pm. 'From 1 December 2026, new opening hours will apply: Tuesday to Sunday from 10 am to 6 pm.'",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-19",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site (Staatliche Museen zu Berlin)",
+            "url": "https://www.smb.museum/en/museums-institutions/hamburger-bahnhof/plan-your-visit/",
+            "locationUrl": "https://www.smb.museum/en/museums-institutions/hamburger-bahnhof/plan-your-visit/",
+            "retrievedOn": "2026-10-19",
+            "note": "Current exhibitions 'Next Door' (09.10.2026-27.06.2027) and Ryuichi Sakamoto (11.09.2026-20.06.2027); notice of new opening hours from 1 December 2026."
+          }
+        ]
+      }
+    },
+    "plc_berlin_kaiser-wilhelm-memorial-church": {
+      "id": "plc_berlin_kaiser-wilhelm-memorial-church",
+      "name": "Kaiser Wilhelm Memorial Church",
+      "city": "berlin",
+      "kind": "landmark",
+      "area": "City West",
+      "timeZone": "Europe/Berlin",
+      "address": "Breitscheidplatz, 10789 Berlin",
+      "coordinates": {
+        "lat": 52.50489,
+        "lng": 13.33461,
+        "basis": "named feature: the new church on Breitscheidplatz, beside the old tower",
+        "osm": "way/15218371",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-19"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-19",
+        "periods": [
+          {
+            "from": "2026-10-19",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": "Gedenkhalle (old tower) exhibition closed for renovation, no end date. Visits pause during services and concerts.",
+        "notes": null,
+        "evidence": {
+          "url": "https://gedaechtniskirche-berlin.de/besuch/offene-kirche/oeffnungszeiten",
+          "quote": "Montag bis Sonntag: 10 bis 18 Uhr, ausgenommen während der Gottesdienste, Andachten und Konzerte",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-19",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site",
+            "url": "https://gedaechtniskirche-berlin.de/besuch/offene-kirche/oeffnungszeiten",
+            "locationUrl": "https://gedaechtniskirche-berlin.de/besuch/offene-kirche/oeffnungszeiten",
+            "retrievedOn": "2026-10-19",
+            "note": "Renovation page: services, concerts, events and tours continue throughout; the Gedenkhalle exhibition closed from 29.08.2026 for renovation."
+          }
+        ]
+      }
+    },
+    "plc_berlin_horvath": {
+      "id": "plc_berlin_horvath",
+      "name": "Horváth",
+      "city": "berlin",
+      "kind": "meal",
+      "area": "Kreuzberg",
+      "timeZone": "Europe/Berlin",
+      "address": "Paul-Lincke-Ufer 44A, 10999 Berlin",
+      "coordinates": {
+        "lat": 52.49638,
+        "lng": 13.42081,
+        "basis": "named feature at Paul-Lincke-Ufer 44a",
+        "osm": "node/941439093",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-19"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-19",
+        "periods": [
+          {
+            "from": "2026-10-19",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [],
+              "tue": [],
+              "wed": [
+                [
+                  "18:30",
+                  null
+                ]
+              ],
+              "thu": [
+                [
+                  "18:30",
+                  null
+                ]
+              ],
+              "fri": [
+                [
+                  "18:30",
+                  null
+                ]
+              ],
+              "sat": [
+                [
+                  "18:30",
+                  null
+                ]
+              ],
+              "sun": []
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": null,
+        "notes": null,
+        "evidence": {
+          "url": "https://restaurant-horvath.de/",
+          "quote": "Öffnungszeiten: Mittwoch bis Samstag ab 18:30",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-19",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "restaurant's own site",
+            "url": "https://restaurant-horvath.de/",
+            "locationUrl": "https://restaurant-horvath.de/",
+            "retrievedOn": "2026-10-19",
+            "note": "Page dated 29 Sep 2026; reservations through an OpenTable link."
+          }
+        ]
+      }
+    },
+    "plc_berlin_jewish-museum-berlin": {
+      "id": "plc_berlin_jewish-museum-berlin",
+      "name": "Jewish Museum Berlin",
+      "city": "berlin",
+      "kind": "landmark",
+      "area": "Kreuzberg",
+      "timeZone": "Europe/Berlin",
+      "address": "Lindenstraße 9–14, 10969 Berlin",
+      "coordinates": {
+        "lat": 52.50225,
+        "lng": 13.39515,
+        "basis": "named feature at Lindenstrasse 9-14",
+        "osm": "way/24649550",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-19"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-19",
+        "periods": [
+          {
+            "from": "2026-10-19",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [],
+              "tue": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-11-14",
+            "hours": [],
+            "note": "Award ceremony"
+          },
+          {
+            "date": "2026-12-24",
+            "hours": [],
+            "note": "Christmas Eve"
+          }
+        ],
+        "lastEntry": "17:00",
+        "caveat": "Time-slot ticket recommended; walk-in tickets also sold.",
+        "notes": null,
+        "evidence": {
+          "url": "https://www.jmberlin.de/en/visit",
+          "quote": "Open Tue–Sun 10 am–6 pm ... Last admission: 5 pm ... Closed on Mondays",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-19",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site",
+            "url": "https://www.jmberlin.de/en/visit",
+            "locationUrl": "https://www.jmberlin.de/en/visit",
+            "retrievedOn": "2026-10-19",
+            "note": "Events listed on 22 and 24 Oct 2026; dated closures on 14 Nov and 24 Dec 2026. Re-read 2026-10-19."
+          }
+        ]
+      }
+    },
+    "plc_hongkong_hong-kong-zoological-and-botanical-gardens": {
+      "id": "plc_hongkong_hong-kong-zoological-and-botanical-gardens",
+      "name": "Hong Kong Zoological and Botanical Gardens",
+      "city": "hongkong",
+      "kind": "scenic",
+      "area": "Central",
+      "timeZone": "Asia/Hong_Kong",
+      "address": "Albany Road, Central, Hong Kong",
+      "coordinates": {
+        "lat": 22.2776,
+        "lng": 114.1564,
+        "basis": "centre of the gardens on Government Hill; they have several gates",
+        "osm": "relation/12955557",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-19"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-19",
+        "periods": [
+          {
+            "from": "2026-10-19",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "06:00",
+                  "19:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "06:00",
+                  "19:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "06:00",
+                  "19:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "06:00",
+                  "19:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "06:00",
+                  "19:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "06:00",
+                  "19:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "06:00",
+                  "19:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": null,
+        "notes": null,
+        "evidence": {
+          "url": "https://www.hkzbg.gov.hk/en/visitPage.html",
+          "quote": "Fountain Terrace Garden 5am - 10pm; Green House 9am - 4:30pm; Mammals Section 6am – 7pm; Other Areas 6am - 7pm. Admission Free.",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-19",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "official site of the LCSD-run gardens (linked from lcsd.gov.hk parks list)",
+            "url": "https://www.hkzbg.gov.hk/en/visitPage.html",
+            "locationUrl": "https://www.hkzbg.gov.hk/en/visitPage.html",
+            "retrievedOn": "2026-10-19",
+            "note": "October 2026 'Flowering Plants of the Month'; weekly free guided visits."
+          }
+        ]
+      }
+    },
+    "plc_hongkong_the-old-man": {
+      "id": "plc_hongkong_the-old-man",
+      "name": "The Old Man",
+      "city": "hongkong",
+      "kind": "meal",
+      "area": "Central",
+      "timeZone": "Asia/Hong_Kong",
+      "address": "37 Aberdeen Street, Soho, Central, Hong Kong",
+      "coordinates": {
+        "lat": 22.28278,
+        "lng": 114.15171,
+        "basis": "named feature on Aberdeen Street",
+        "osm": "node/5712459821",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-19"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-19",
+        "periods": [
+          {
+            "from": "2026-10-19",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "17:00",
+                  "02:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "17:00",
+                  "02:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "17:00",
+                  "02:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "17:00",
+                  "02:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "17:00",
+                  "02:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "17:00",
+                  "02:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "17:00",
+                  "24:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": null,
+        "notes": null,
+        "evidence": {
+          "url": "https://www.theoldmanhongkong.com/",
+          "quote": "5pm to 2am, Monday–Saturday; 5pm to 12am, Sunday",
+          "confidence": "medium"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-19",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "bar's own site",
+            "url": "https://www.theoldmanhongkong.com/",
+            "locationUrl": "https://www.theoldmanhongkong.com/",
+            "retrievedOn": "2026-10-19",
+            "note": "Hours and a current menu are posted, but nothing on the site is dated 2026 (footer © 2021)."
+          }
+        ]
+      }
+    },
+    "plc_hongkong_hong-kong-museum-of-art": {
+      "id": "plc_hongkong_hong-kong-museum-of-art",
+      "name": "Hong Kong Museum of Art",
+      "city": "hongkong",
+      "kind": "landmark",
+      "area": "Tsim Sha Tsui",
+      "timeZone": "Asia/Hong_Kong",
+      "address": "10 Salisbury Road, Tsim Sha Tsui, Kowloon, Hong Kong",
+      "coordinates": {
+        "lat": 22.29353,
+        "lng": 114.17203,
+        "basis": "named feature at 10 Salisbury Road",
+        "osm": "node/10578103641",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-19"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-19",
+        "periods": [
+          {
+            "from": "2026-10-19",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [],
+              "fri": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "21:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "21:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-12-24",
+            "hours": [
+              [
+                "10:00",
+                "17:00"
+              ]
+            ],
+            "note": "Christmas Eve"
+          },
+          {
+            "date": "2026-12-25",
+            "hours": [
+              [
+                "10:00",
+                "21:00"
+              ]
+            ],
+            "note": "Public holiday hours"
+          }
+        ],
+        "lastEntry": null,
+        "caveat": "Free admission except special exhibitions; box office closes 30 minutes before the museum.",
+        "notes": null,
+        "evidence": {
+          "url": "https://hk.art.museum/en/web/ma/visit/opening-hours-and-admission.html",
+          "quote": "Mondays to Wednesdays, Fridays 10:00am – 6:00pm; Saturdays, Sundays and public holidays 10:00am – 9:00pm; Christmas Eve 10:00am – 5:00pm; Closed on Thursdays (except public holiday)",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-19",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site (LCSD)",
+            "url": "https://hk.art.museum/en/web/ma/visit/opening-hours-and-admission.html",
+            "locationUrl": "https://hk.art.museum/en/web/ma/visit/opening-hours-and-admission.html",
+            "retrievedOn": "2026-10-19",
+            "note": "Dated exhibitions: 'By the People 2' (2026.09.23-2026.12.15), 'Fermata: Hong Kong in Venice' (2026.05.09-2026.11.22). Re-read 2026-10-19."
+          }
+        ]
+      }
+    },
+    "plc_singapore_asian-civilisations-museum": {
+      "id": "plc_singapore_asian-civilisations-museum",
+      "name": "Asian Civilisations Museum",
+      "city": "singapore",
+      "kind": "landmark",
+      "area": "Civic District",
+      "timeZone": "Asia/Singapore",
+      "address": "1 Empress Place, Singapore 179555",
+      "coordinates": {
+        "lat": 1.28745,
+        "lng": 103.85149,
+        "basis": "named feature at 1 Empress Place",
+        "osm": "way/46595390",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-19"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-19",
+        "periods": [
+          {
+            "from": "2026-10-19",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "21:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": "Some exhibitions need an all-access ticket; free entry applies to residents only.",
+        "notes": null,
+        "evidence": {
+          "url": "https://acm.nhb.gov.sg/visit/plan-your-visit",
+          "quote": "Daily 10am - 7pm; Friday 10am - 9pm. Admission to all galleries ends 30 minutes before closing time.",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-19",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site (National Heritage Board)",
+            "url": "https://acm.nhb.gov.sg/visit/plan-your-visit",
+            "locationUrl": "https://acm.nhb.gov.sg/visit/plan-your-visit",
+            "retrievedOn": "2026-10-19",
+            "note": "Dated exhibitions 'Sacred Caves' (25 Sep 2026-7 Mar 2027) and 'Crosscurrents' (19 Jun 2026-24 Jan 2027); online tickets."
+          }
+        ]
+      }
+    },
+    "plc_singapore_long-bar-raffles-hotel-singapore": {
+      "id": "plc_singapore_long-bar-raffles-hotel-singapore",
+      "name": "Long Bar (Raffles Hotel Singapore)",
+      "city": "singapore",
+      "kind": "meal",
+      "area": "Civic District",
+      "timeZone": "Asia/Singapore",
+      "address": "#02-01 Raffles Arcade, 328 North Bridge Road, Singapore 188719",
+      "coordinates": {
+        "lat": 1.29564,
+        "lng": 103.85403,
+        "basis": "Raffles Arcade, the building its address names (the bar is on level 2)",
+        "osm": "relation/3413596",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-19"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-19",
+        "periods": [
+          {
+            "from": "2026-10-19",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "11:00",
+                  "22:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "11:00",
+                  "22:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "11:00",
+                  "22:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "11:00",
+                  "23:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "11:00",
+                  "23:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "11:00",
+                  "23:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "11:00",
+                  "22:30"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": null,
+        "caveat": "Walk-in only; smart casual recommended.",
+        "notes": "Times are last seating.",
+        "evidence": {
+          "url": "https://www.raffles.com/singapore/dining/long-bar/",
+          "quote": "Sunday to Wednesday: 11.00am – 10.30pm (last seating); Thursday to Saturday: 11.00am – 11.30pm (last seating)",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-19",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "hotel's official page",
+            "url": "https://www.raffles.com/singapore/dining/long-bar/",
+            "locationUrl": "https://www.raffles.com/singapore/dining/long-bar/",
+            "retrievedOn": "2026-10-19",
+            "note": "Live page with current hours and walk-in policy; no dated content."
+          }
+        ]
+      }
+    },
+    "plc_singapore_bird-paradise": {
+      "id": "plc_singapore_bird-paradise",
+      "name": "Bird Paradise",
+      "city": "singapore",
+      "kind": "landmark",
+      "area": "Mandai",
+      "timeZone": "Asia/Singapore",
+      "address": "Mandai Wildlife WEST, 20 Mandai Lake Road, Singapore 729825",
+      "coordinates": {
+        "lat": 1.40546,
+        "lng": 103.78099,
+        "basis": "centre of the park grounds",
+        "osm": "way/767316592",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-19"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-19",
+        "periods": [
+          {
+            "from": "2026-10-19",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ]
+            }
+          }
+        ],
+        "exceptions": [],
+        "lastEntry": "17:00",
+        "caveat": null,
+        "notes": null,
+        "evidence": {
+          "url": "https://www.mandai.com/en/bird-paradise.html",
+          "quote": "Daily, 9:00am – 6:00pm (Last Entry: 5:00pm)",
+          "confidence": "high"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-19",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "operator's own site (Mandai Wildlife Group)",
+            "url": "https://www.mandai.com/en/bird-paradise.html",
+            "locationUrl": "https://www.mandai.com/en/bird-paradise.html",
+            "retrievedOn": "2026-10-19",
+            "note": "Tickets on sale; dated maintenance closure of one attraction 10-12 Nov 2026."
+          }
+        ]
+      }
+    },
+    "plc_singapore_maxwell-food-centre": {
+      "id": "plc_singapore_maxwell-food-centre",
+      "name": "Maxwell Food Centre",
+      "city": "singapore",
+      "kind": "meal",
+      "area": "Chinatown",
+      "timeZone": "Asia/Singapore",
+      "address": "1 Kadayanallur Street, Singapore 069184",
+      "coordinates": {
+        "lat": 1.28035,
+        "lng": 103.84474,
+        "basis": "named feature at 1 Kadayanallur Street",
+        "osm": "way/47298639",
+        "source": "OpenStreetMap Nominatim",
+        "licence": "ODbL 1.0",
+        "attribution": "© OpenStreetMap contributors",
+        "retrievedOn": "2026-10-19"
+      },
+      "entrance": null,
+      "hours": {
+        "status": "hours-checked",
+        "checkedOn": "2026-10-19",
+        "periods": [
+          {
+            "from": "2026-10-19",
+            "to": "2026-12-31",
+            "weekly": {
+              "mon": null,
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null,
+              "sun": null
+            }
+          }
+        ],
+        "exceptions": [
+          {
+            "date": "2026-12-14",
+            "hours": [],
+            "note": "NEA cleaning closure"
+          }
+        ],
+        "lastEntry": null,
+        "caveat": null,
+        "notes": "A hawker centre: no centre or stall hours are published; each stall keeps its own hours. The dated closure is NEA's cleaning schedule (read in a browser).",
+        "evidence": {
+          "url": "https://www.nea.gov.sg/our-services/hawker-management/overview",
+          "quote": "No centre or stall hours published.",
+          "confidence": "medium"
+        }
+      },
+      "verification": {
+        "status": "location-checked",
+        "checkedOn": "2026-10-19",
+        "checked": [
+          "location",
+          "currently-operating",
+          "published-weekly-hours"
+        ],
+        "notChecked": [
+          "unlisted-holiday-or-special-closures",
+          "reservations-or-availability"
+        ],
+        "evidence": [
+          {
+            "source": "government body that manages it (NEA)",
+            "url": "https://www.nea.gov.sg/our-services/hawker-management/overview",
+            "locationUrl": "https://www.nea.gov.sg/our-services/hawker-management/overview",
+            "retrievedOn": "2026-10-19",
+            "note": "On NEA's list of hawker centres dated 17 Aug 2026; NEA cleaning schedule: 'Maxwell Food Centre (Kim Hua Market) 14 Dec 2026 to 14 Dec 2026 Cleaning' (read in a browser 2026-10-19)."
+          }
+        ]
+      }
     }
   },
   "routes": {
@@ -11510,6 +12823,150 @@ window.HB_PLACES = {
         "checkedOn": "2026-10-16",
         "source": "Transitous journey planner (transitous.org), TfL timetable data",
         "alternatives": "Walking: about 31 min"
+      },
+      "plc_berlin_lebenswelten-bistro-humboldt-forum|plc_berlin_alte-nationalgalerie": {
+        "minutes": 8,
+        "mode": "walk",
+        "summary": "about 0.6 km on foot",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-19",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_berlin_berlin-wall-memorial|plc_berlin_hamburger-bahnhof": {
+        "minutes": 20,
+        "mode": "transit",
+        "summary": "Bus M10 from Gedenkstaette Berliner Mauer to U Naturkundemuseum, with about 1.0 km of walking in total",
+        "conditions": "Wednesday 4 Nov 2026, departing about 14:15",
+        "checkedOn": "2026-10-19",
+        "source": "Transitous journey planner (transitous.org), German timetable data",
+        "alternatives": "Tram M8: about 21 min; walking: about 25 min"
+      },
+      "plc_berlin_luisenbraeu-by-lemke|plc_berlin_kaiser-wilhelm-memorial-church": {
+        "minutes": 25,
+        "mode": "transit",
+        "summary": "Bus 109 from Luisenplatz/Schloss Charlottenburg to U Kurfuerstendamm, with about 0.5 km of walking in total",
+        "conditions": "Wednesday 4 Nov 2026, departing about 13:40",
+        "checkedOn": "2026-10-19",
+        "source": "Transitous journey planner (transitous.org), German timetable data",
+        "alternatives": "Bus 109 then U2: about 22 min"
+      },
+      "plc_berlin_kaiser-wilhelm-memorial-church|plc_berlin_green-door-bar": {
+        "minutes": 16,
+        "mode": "transit",
+        "summary": "U2 from Zoologischer Garten to Nollendorfplatz, with about 0.8 km of walking in total",
+        "conditions": "Wednesday 4 Nov 2026, departing about 18:15",
+        "checkedOn": "2026-10-19",
+        "source": "Transitous journey planner (transitous.org), German timetable data",
+        "alternatives": "Walking: about 26 min"
+      },
+      "plc_berlin_markthalle-neun|plc_berlin_horvath": {
+        "minutes": 17,
+        "mode": "walk",
+        "summary": "about 1.2 km on foot",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-19",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_berlin_restaurant-anhalt-deutsches-technikmuseum|plc_berlin_jewish-museum-berlin": {
+        "minutes": 25,
+        "mode": "walk",
+        "summary": "about 1.8 km on foot",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-19",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_berlin_jewish-museum-berlin|plc_berlin_nobelhart-und-schmutzig": {
+        "minutes": 8,
+        "mode": "walk",
+        "summary": "about 0.6 km on foot",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-19",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_hongkong_duddells-central|plc_hongkong_hong-kong-zoological-and-botanical-gardens": {
+        "minutes": 10,
+        "mode": "walk",
+        "summary": "about 0.8 km on foot",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-19",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_hongkong_maxims-palace-city-hall|plc_hongkong_the-old-man": {
+        "minutes": 17,
+        "mode": "transit",
+        "summary": "Bus 103 from Murray Road to Dr Sun Yat-sen Museum, with about 0.6 km of walking in total",
+        "conditions": "Wednesday 4 Nov 2026, departing about 18:00",
+        "checkedOn": "2026-10-19",
+        "source": "Transitous journey planner (transitous.org), Hong Kong timetable data",
+        "alternatives": "Walking: about 21 min"
+      },
+      "plc_hongkong_m-plus|plc_hongkong_hong-kong-museum-of-art": {
+        "minutes": 25,
+        "mode": "transit",
+        "summary": "Bus 973 from M+ (Museum Drive) to Peking Road, with about 0.8 km of walking in total",
+        "conditions": "Wednesday 4 Nov 2026, departing about 14:00",
+        "checkedOn": "2026-10-19",
+        "source": "Transitous journey planner (transitous.org), Hong Kong timetable data",
+        "alternatives": "Walking: about 37 min"
+      },
+      "plc_hongkong_hong-kong-museum-of-art|plc_hongkong_star-ferry-central-tsim-sha-tsui": {
+        "minutes": 8,
+        "mode": "walk",
+        "summary": "about 0.6 km on foot",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-19",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_singapore_national-kitchen-by-violet-oon|plc_singapore_asian-civilisations-museum": {
+        "minutes": 7,
+        "mode": "walk",
+        "summary": "about 0.5 km on foot",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-19",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
+      },
+      "plc_singapore_asian-civilisations-museum|plc_singapore_gardens-by-the-bay-outdoor-gardens": {
+        "minutes": 29,
+        "mode": "transit",
+        "summary": "Bus 97, 106 or 133 from The Sail to Bayfront, with about 1.7 km of walking in total",
+        "conditions": "Wednesday 4 Nov 2026, departing about 17:00",
+        "checkedOn": "2026-10-19",
+        "source": "Transitous journey planner (transitous.org), LTA timetable data",
+        "alternatives": "Walking: about 35 min"
+      },
+      "plc_singapore_candlenut|plc_singapore_long-bar-raffles-hotel-singapore": {
+        "minutes": 32,
+        "mode": "transit",
+        "summary": "Bus 106 from Opp Peirce Road to Raffles Hotel, with about 0.6 km of walking in total",
+        "conditions": "Wednesday 4 Nov 2026, departing about 19:45",
+        "checkedOn": "2026-10-19",
+        "source": "Transitous journey planner (transitous.org), LTA timetable data",
+        "alternatives": "Bus 7: about 32 min"
+      },
+      "plc_singapore_plain-vanilla-tiong-bahru|plc_singapore_maxwell-food-centre": {
+        "minutes": 25,
+        "mode": "transit",
+        "summary": "MRT East-West line from Tiong Bahru to Tanjong Pagar, with about 1.4 km of walking in total",
+        "conditions": "Wednesday 4 Nov 2026, departing about 18:15",
+        "checkedOn": "2026-10-19",
+        "source": "Transitous journey planner (transitous.org), LTA timetable data",
+        "alternatives": "Bus 851: about 24 min; walking: about 31 min"
+      },
+      "plc_singapore_maxwell-food-centre|plc_singapore_jigger-and-pony": {
+        "minutes": 11,
+        "mode": "walk",
+        "summary": "about 0.8 km on foot",
+        "conditions": "walking route",
+        "checkedOn": "2026-10-19",
+        "source": "Transitous street routing (OpenStreetMap data)",
+        "alternatives": null
       }
     }
   }

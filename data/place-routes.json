@@ -1,5 +1,5 @@
 {
-  "about": "Journeys between consecutive itinerary stops, looked up once (not live). Public-transport minutes are door-to-door including walking, for the stated weekday and departure time; they vary by time of day, day of week and service changes. Walking routes follow streets and footpaths. A route's own `source` overrides the default. Berlin: VBB timetable data via https://v6.vbb.transport.rest, for every hop of 1.5 km or more; Tempelhofer Feld is routed via its Tempelhofer Damm main entrance (Tor 10); Restaurant Anhalt shares the Deutsches Technikmuseum's location, so its journey is the museum's. Singapore: the Transitous journey planner (https://transitous.org, MOTIS) on 2026-10-12, using LTA timetable data for buses and MRT and OpenStreetMap for walking; hops of 1.5 km or more, plus Marina Bay walks where the street route is much longer than the straight line; Singapore Botanic Gardens is routed from Tanglin Gate; National Kitchen shares National Gallery Singapore's location. Hong Kong: Transitous on 2026-10-14 (MTR, bus and Star Ferry timetable data; OpenStreetMap for walking), for Wednesday 21 Oct 2026; Central walks are street-routed because of the hills. The Ngong Ping 360 cable-car ride is not in the timetable data and its duration is not published as text by the operator, so that hop is left untimed. Paris: Transitous on 2026-10-14 (RATP/RER timetable data; OpenStreetMap for walking), for Wednesday 4 Nov 2026; every hop is stored, as street-routed walks or timetabled journeys. Le Jules Verne shares the Eiffel Tower location. London: Transitous on 2026-10-14 (TfL Underground and bus timetable data; OpenStreetMap for walking), for Wednesday 4 Nov 2026; every hop is stored. Alternate stops (2026-10-16): the same Wednesday, from Transitous on 2026-10-16; Septime shares Clamato's address, so that hop is the same site.",
+  "about": "Journeys between consecutive itinerary stops, looked up once (not live). Public-transport minutes are door-to-door including walking, for the stated weekday and departure time; they vary by time of day, day of week and service changes. Walking routes follow streets and footpaths. A route's own `source` overrides the default. Berlin: VBB timetable data via https://v6.vbb.transport.rest, for every hop of 1.5 km or more; Tempelhofer Feld is routed via its Tempelhofer Damm main entrance (Tor 10); Restaurant Anhalt shares the Deutsches Technikmuseum's location, so its journey is the museum's. Singapore: the Transitous journey planner (https://transitous.org, MOTIS) on 2026-10-12, using LTA timetable data for buses and MRT and OpenStreetMap for walking; hops of 1.5 km or more, plus Marina Bay walks where the street route is much longer than the straight line; Singapore Botanic Gardens is routed from Tanglin Gate; National Kitchen shares National Gallery Singapore's location. Hong Kong: Transitous on 2026-10-14 (MTR, bus and Star Ferry timetable data; OpenStreetMap for walking), for Wednesday 21 Oct 2026; Central walks are street-routed because of the hills. The Ngong Ping 360 cable-car ride is not in the timetable data and its duration is not published as text by the operator, so that hop is left untimed. Paris: Transitous on 2026-10-14 (RATP/RER timetable data; OpenStreetMap for walking), for Wednesday 4 Nov 2026; every hop is stored, as street-routed walks or timetabled journeys. Le Jules Verne shares the Eiffel Tower location. London: Transitous on 2026-10-14 (TfL Underground and bus timetable data; OpenStreetMap for walking), for Wednesday 4 Nov 2026; every hop is stored. Alternate stops (2026-10-16): the same Wednesday, from Transitous on 2026-10-16; Septime shares Clamato's address, so that hop is the same site. Berlin, Hong Kong and Singapore alternates (2026-10-19): Transitous on 2026-10-19 for Wednesday 4 Nov 2026; every new hop is stored.",
   "source": "VBB Verkehrsverbund Berlin-Brandenburg timetable data, via v6.vbb.transport.rest",
   "routes": {
     "plc_berlin_luisenbraeu-by-lemke|plc_berlin_zoo-berlin": {
@@ -545,6 +545,150 @@
       "checkedOn": "2026-10-16",
       "source": "Transitous journey planner (transitous.org), TfL timetable data",
       "alternatives": "Walking: about 31 min"
+    },
+    "plc_berlin_lebenswelten-bistro-humboldt-forum|plc_berlin_alte-nationalgalerie": {
+      "minutes": 8,
+      "mode": "walk",
+      "summary": "about 0.6 km on foot",
+      "conditions": "walking route",
+      "checkedOn": "2026-10-19",
+      "source": "Transitous street routing (OpenStreetMap data)",
+      "alternatives": null
+    },
+    "plc_berlin_berlin-wall-memorial|plc_berlin_hamburger-bahnhof": {
+      "minutes": 20,
+      "mode": "transit",
+      "summary": "Bus M10 from Gedenkstaette Berliner Mauer to U Naturkundemuseum, with about 1.0 km of walking in total",
+      "conditions": "Wednesday 4 Nov 2026, departing about 14:15",
+      "checkedOn": "2026-10-19",
+      "source": "Transitous journey planner (transitous.org), German timetable data",
+      "alternatives": "Tram M8: about 21 min; walking: about 25 min"
+    },
+    "plc_berlin_luisenbraeu-by-lemke|plc_berlin_kaiser-wilhelm-memorial-church": {
+      "minutes": 25,
+      "mode": "transit",
+      "summary": "Bus 109 from Luisenplatz/Schloss Charlottenburg to U Kurfuerstendamm, with about 0.5 km of walking in total",
+      "conditions": "Wednesday 4 Nov 2026, departing about 13:40",
+      "checkedOn": "2026-10-19",
+      "source": "Transitous journey planner (transitous.org), German timetable data",
+      "alternatives": "Bus 109 then U2: about 22 min"
+    },
+    "plc_berlin_kaiser-wilhelm-memorial-church|plc_berlin_green-door-bar": {
+      "minutes": 16,
+      "mode": "transit",
+      "summary": "U2 from Zoologischer Garten to Nollendorfplatz, with about 0.8 km of walking in total",
+      "conditions": "Wednesday 4 Nov 2026, departing about 18:15",
+      "checkedOn": "2026-10-19",
+      "source": "Transitous journey planner (transitous.org), German timetable data",
+      "alternatives": "Walking: about 26 min"
+    },
+    "plc_berlin_markthalle-neun|plc_berlin_horvath": {
+      "minutes": 17,
+      "mode": "walk",
+      "summary": "about 1.2 km on foot",
+      "conditions": "walking route",
+      "checkedOn": "2026-10-19",
+      "source": "Transitous street routing (OpenStreetMap data)",
+      "alternatives": null
+    },
+    "plc_berlin_restaurant-anhalt-deutsches-technikmuseum|plc_berlin_jewish-museum-berlin": {
+      "minutes": 25,
+      "mode": "walk",
+      "summary": "about 1.8 km on foot",
+      "conditions": "walking route",
+      "checkedOn": "2026-10-19",
+      "source": "Transitous street routing (OpenStreetMap data)",
+      "alternatives": null
+    },
+    "plc_berlin_jewish-museum-berlin|plc_berlin_nobelhart-und-schmutzig": {
+      "minutes": 8,
+      "mode": "walk",
+      "summary": "about 0.6 km on foot",
+      "conditions": "walking route",
+      "checkedOn": "2026-10-19",
+      "source": "Transitous street routing (OpenStreetMap data)",
+      "alternatives": null
+    },
+    "plc_hongkong_duddells-central|plc_hongkong_hong-kong-zoological-and-botanical-gardens": {
+      "minutes": 10,
+      "mode": "walk",
+      "summary": "about 0.8 km on foot",
+      "conditions": "walking route",
+      "checkedOn": "2026-10-19",
+      "source": "Transitous street routing (OpenStreetMap data)",
+      "alternatives": null
+    },
+    "plc_hongkong_maxims-palace-city-hall|plc_hongkong_the-old-man": {
+      "minutes": 17,
+      "mode": "transit",
+      "summary": "Bus 103 from Murray Road to Dr Sun Yat-sen Museum, with about 0.6 km of walking in total",
+      "conditions": "Wednesday 4 Nov 2026, departing about 18:00",
+      "checkedOn": "2026-10-19",
+      "source": "Transitous journey planner (transitous.org), Hong Kong timetable data",
+      "alternatives": "Walking: about 21 min"
+    },
+    "plc_hongkong_m-plus|plc_hongkong_hong-kong-museum-of-art": {
+      "minutes": 25,
+      "mode": "transit",
+      "summary": "Bus 973 from M+ (Museum Drive) to Peking Road, with about 0.8 km of walking in total",
+      "conditions": "Wednesday 4 Nov 2026, departing about 14:00",
+      "checkedOn": "2026-10-19",
+      "source": "Transitous journey planner (transitous.org), Hong Kong timetable data",
+      "alternatives": "Walking: about 37 min"
+    },
+    "plc_hongkong_hong-kong-museum-of-art|plc_hongkong_star-ferry-central-tsim-sha-tsui": {
+      "minutes": 8,
+      "mode": "walk",
+      "summary": "about 0.6 km on foot",
+      "conditions": "walking route",
+      "checkedOn": "2026-10-19",
+      "source": "Transitous street routing (OpenStreetMap data)",
+      "alternatives": null
+    },
+    "plc_singapore_national-kitchen-by-violet-oon|plc_singapore_asian-civilisations-museum": {
+      "minutes": 7,
+      "mode": "walk",
+      "summary": "about 0.5 km on foot",
+      "conditions": "walking route",
+      "checkedOn": "2026-10-19",
+      "source": "Transitous street routing (OpenStreetMap data)",
+      "alternatives": null
+    },
+    "plc_singapore_asian-civilisations-museum|plc_singapore_gardens-by-the-bay-outdoor-gardens": {
+      "minutes": 29,
+      "mode": "transit",
+      "summary": "Bus 97, 106 or 133 from The Sail to Bayfront, with about 1.7 km of walking in total",
+      "conditions": "Wednesday 4 Nov 2026, departing about 17:00",
+      "checkedOn": "2026-10-19",
+      "source": "Transitous journey planner (transitous.org), LTA timetable data",
+      "alternatives": "Walking: about 35 min"
+    },
+    "plc_singapore_candlenut|plc_singapore_long-bar-raffles-hotel-singapore": {
+      "minutes": 32,
+      "mode": "transit",
+      "summary": "Bus 106 from Opp Peirce Road to Raffles Hotel, with about 0.6 km of walking in total",
+      "conditions": "Wednesday 4 Nov 2026, departing about 19:45",
+      "checkedOn": "2026-10-19",
+      "source": "Transitous journey planner (transitous.org), LTA timetable data",
+      "alternatives": "Bus 7: about 32 min"
+    },
+    "plc_singapore_plain-vanilla-tiong-bahru|plc_singapore_maxwell-food-centre": {
+      "minutes": 25,
+      "mode": "transit",
+      "summary": "MRT East-West line from Tiong Bahru to Tanjong Pagar, with about 1.4 km of walking in total",
+      "conditions": "Wednesday 4 Nov 2026, departing about 18:15",
+      "checkedOn": "2026-10-19",
+      "source": "Transitous journey planner (transitous.org), LTA timetable data",
+      "alternatives": "Bus 851: about 24 min; walking: about 31 min"
+    },
+    "plc_singapore_maxwell-food-centre|plc_singapore_jigger-and-pony": {
+      "minutes": 11,
+      "mode": "walk",
+      "summary": "about 0.8 km on foot",
+      "conditions": "walking route",
+      "checkedOn": "2026-10-19",
+      "source": "Transitous street routing (OpenStreetMap data)",
+      "alternatives": null
     }
   }
 }

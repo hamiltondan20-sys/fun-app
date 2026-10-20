@@ -1028,6 +1028,14 @@ window.HB_TRIP_HELPERS.getConcreteTripTemplates = function(city, areas) {
             itemTitle: "House of Small Wonder + Neues Museum + DDR Museum",
             itemBody: "Start with brunch at House of Small Wonder on Auguststrasse, walk to Museum Island for Neues Museum, have lunch at the Humboldt Forum's Lebenswelten Bistro, then finish at the DDR Museum by the river.",
             fit: "Everything is within about a kilometre, so the day is about the museums rather than getting between them.",
+            // Checked alternate (review of 2026-10-19): the Alte Nationalgalerie instead of the DDR Museum.
+            alternates: [{
+              replaces: "plc_berlin_ddr-museum",
+              note: "Swap the DDR Museum for the Alte Nationalgalerie, a few minutes' walk away on Museum Island. It is closed on Mondays.",
+              step: { title: "Alte Nationalgalerie", copy: "Bodestrasse, on Museum Island. Closed on Mondays and on 24 and 31 December.", placeId: "plc_berlin_alte-nationalgalerie" },
+              itemTitle: "House of Small Wonder + Neues Museum + Alte Nationalgalerie",
+              itemBody: "Start with brunch at House of Small Wonder on Auguststrasse, walk to Museum Island for Neues Museum, have lunch at the Humboldt Forum's Lebenswelten Bistro, then finish at the Alte Nationalgalerie."
+            }],
             timeline: [
               { time: "9:00 AM", title: "Brunch at House of Small Wonder", copy: "Use the current Auguststrasse 11-13 address. The operator warns that picking the name in a ride app can send you to its closed former branch.", placeId: "plc_berlin_house-of-small-wonder-auguststrasse" },
               { time: "10:30 AM", title: "Neues Museum", copy: "Enter through the James Simon Galerie on Bodestrasse. Allow at least two hours.", placeId: "plc_berlin_neues-museum" },
@@ -1045,6 +1053,17 @@ window.HB_TRIP_HELPERS.getConcreteTripTemplates = function(city, areas) {
             itemTitle: "THE BARN + Berlin Wall Memorial + Museum fuer Naturkunde",
             itemBody: "Coffee at THE BARN's Auguststrasse branch, then the outdoor and indoor exhibitions along Bernauer Strasse, then the Museum fuer Naturkunde on Invalidenstrasse.",
             fit: "The two main stops are about a kilometre apart, so the day has depth without crossing the city.",
+            // Checked alternate (review of 2026-10-19): Hamburger Bahnhof instead of the Museum fuer Naturkunde.
+            alternates: [{
+              replaces: "plc_berlin_museum-fuer-naturkunde-berlin",
+              note: "Swap the Museum fuer Naturkunde for Hamburger Bahnhof, the contemporary art museum at Invalidenstrasse 50, about 20 minutes by bus from the memorial.",
+              step: { title: "Hamburger Bahnhof", copy: "Invalidenstrasse 50. Closed on Mondays and on 24 and 31 December; its opening hours change on 1 December.", placeId: "plc_berlin_hamburger-bahnhof" },
+              rationale: "The Berlin Wall Memorial gets a full morning, with a contemporary art museum close by for the afternoon.",
+              weather: "The memorial is largely outdoors; dress for the weather. Hamburger Bahnhof is closed on Mondays.",
+              itemTitle: "THE BARN + Berlin Wall Memorial + Hamburger Bahnhof",
+              itemBody: "Coffee at THE BARN's Auguststrasse branch, then the outdoor and indoor exhibitions along Bernauer Strasse, then Hamburger Bahnhof on Invalidenstrasse.",
+              fit: "About 20 minutes by bus from the memorial to the museum, so the day has depth without crossing the city."
+            }],
             timeline: [
               { time: "9:00 AM", title: "Coffee at THE BARN (Mitte)", copy: "The Mitte branch at Auguststrasse 58, not another location.", placeId: "plc_berlin_the-barn-mitte" },
               { time: "10:00 AM", title: "Berlin Wall Memorial", copy: "The historical site on Bernauer Strasse. Leave time for both the outdoor grounds and the indoor exhibitions.", placeId: "plc_berlin_berlin-wall-memorial" },
@@ -1062,6 +1081,18 @@ window.HB_TRIP_HELPERS.getConcreteTripTemplates = function(city, areas) {
             itemTitle: "Charlottenburg Palace + Zoo Berlin + Green Door Bar",
             itemBody: "Visit the Old Palace at Charlottenburg, have lunch at Luisenbraeu across the square, take transit to Zoo Berlin at Hardenbergplatz, and end with drinks at Green Door Bar on Winterfeldtstrasse.",
             fit: "Lunch is a short walk from the palace; the other moves are separate journeys, so the day keeps to three main stops instead of adding more.",
+            // Checked alternate (review of 2026-10-19): the Kaiser Wilhelm Memorial Church instead of Zoo Berlin.
+            alternates: [{
+              replaces: "plc_berlin_zoo-berlin",
+              note: "Swap Zoo Berlin for a shorter visit to the Kaiser Wilhelm Memorial Church on Breitscheidplatz. The exhibition in its old tower is closed for renovation.",
+              step: { title: "Kaiser Wilhelm Memorial Church", copy: "Breitscheidplatz. Open daily 10 AM to 6 PM, except during services and concerts. The exhibition in the old tower is closed for renovation.", placeId: "plc_berlin_kaiser-wilhelm-memorial-church" },
+              rationale: "A western day: the palace in the morning, the Memorial Church after lunch, and drinks in Schoeneberg.",
+              timeShape: "Palace morning, short church visit, evening drinks",
+              weather: "Take public transport between the palace and Breitscheidplatz. Palace areas have separate admission. Church visits pause during services.",
+              itemTitle: "Charlottenburg Palace + Kaiser Wilhelm Memorial Church + Green Door Bar",
+              itemBody: "Visit the Old Palace at Charlottenburg, have lunch at Luisenbraeu across the square, take the bus to the Kaiser Wilhelm Memorial Church on Breitscheidplatz, and end with drinks at Green Door Bar on Winterfeldtstrasse.",
+              fit: "About 25 minutes by bus from lunch to the church and 16 minutes by U2 to the bar, with a long free stretch before the evening."
+            }],
             timeline: [
               { time: "10:00 AM", title: "Charlottenburg Palace (Old Palace)", copy: "Spandauer Damm 10-22. Other palace areas have different admission and access.", placeId: "plc_berlin_charlottenburg-palace-old-palace" },
               { time: "12:30 PM", title: "Lunch at Luisenbraeu", copy: "A brewpub with Berlin and German food at Luisenplatz 1, across from the palace forecourt. Tables can be booked online.", placeId: "plc_berlin_luisenbraeu-by-lemke" },
@@ -1088,6 +1119,17 @@ window.HB_TRIP_HELPERS.getConcreteTripTemplates = function(city, areas) {
             itemTitle: "East Side Gallery + Markthalle Neun + Restaurant Tim Raue",
             itemBody: "Walk the East Side Gallery along Muehlenstrasse, cross to Kreuzberg for lunch at Markthalle Neun, and finish with dinner at Restaurant Tim Raue.",
             fit: "The gallery and market are under a kilometre apart; dinner is about 2.8 km west, so plan transit for the evening.",
+            // Checked alternate (review of 2026-10-19): dinner at Horváth instead of Restaurant Tim Raue.
+            alternates: [{
+              replaces: "plc_berlin_restaurant-tim-raue",
+              note: "Swap Restaurant Tim Raue for dinner at Horváth on Paul-Lincke-Ufer, about 17 minutes on foot from the market. Horváth is open Wednesday to Saturday only.",
+              step: { title: "Dinner at Horváth", copy: "Paul-Lincke-Ufer 44A. Open Wednesday to Saturday from 6:30 PM; book ahead online.", placeId: "plc_berlin_horvath" },
+              highlight: "Horváth",
+              weather: "Book Horváth in advance; it is open Wednesday to Saturday only. Markthalle Neun's stalls keep different hours from the hall itself.",
+              itemTitle: "East Side Gallery + Markthalle Neun + Horváth",
+              itemBody: "Walk the East Side Gallery along Muehlenstrasse, cross to Kreuzberg for lunch at Markthalle Neun, and finish with dinner at Horváth on Paul-Lincke-Ufer.",
+              fit: "The gallery and market are under a kilometre apart, and dinner is about 17 minutes on foot from the market."
+            }],
             timeline: [
               { time: "10:00 AM", title: "East Side Gallery", copy: "The outdoor wall-art site on Muehlenstrasse, about 1.3 km long. Allow time to walk it.", placeId: "plc_berlin_east-side-gallery" },
               { time: "12:30 PM", title: "Lunch at Markthalle Neun", copy: "Eisenbahnstrasse 42/43. Check the market calendar: an open hall does not mean every stall is serving.", placeId: "plc_berlin_markthalle-neun", covers: ["food market", "market hall"] },
@@ -1104,6 +1146,20 @@ window.HB_TRIP_HELPERS.getConcreteTripTemplates = function(city, areas) {
             itemTitle: "Deutsches Technikmuseum + Tempelhofer Feld + Nobelhart & Schmutzig",
             itemBody: "Start at the Deutsches Technikmuseum and have lunch in its restaurant, spend the afternoon on Tempelhofer Feld, and end with dinner at Nobelhart & Schmutzig on Friedrichstrasse.",
             fit: "Both afternoon moves are on the U6 (Tempelhofer Feld via its Tempelhofer Damm entrance), so the day has room to slow down.",
+            // Checked alternate (review of 2026-10-19): the Jewish Museum Berlin instead of Tempelhofer Feld.
+            alternates: [{
+              replaces: "plc_berlin_tempelhofer-feld",
+              title: "Technology museum, Jewish Museum and a Kreuzberg dinner",
+              note: "Swap Tempelhofer Feld for the Jewish Museum Berlin on Lindenstrasse, about 25 minutes on foot from lunch. Last admission is at 5 PM.",
+              step: { title: "Jewish Museum Berlin", copy: "Lindenstrasse 9-14. Closed on Mondays, 14 November and 24 December; last admission 5 PM. A time-slot ticket is recommended.", placeId: "plc_berlin_jewish-museum-berlin" },
+              rationale: "A museum morning, a second museum in the afternoon, and another booked dinner.",
+              highlight: "Jewish Museum Berlin",
+              timeShape: "Two museums, booked dinner",
+              weather: "Some Technikmuseum galleries are currently inaccessible; check the ones you want first. Book a Jewish Museum time slot ahead.",
+              itemTitle: "Deutsches Technikmuseum + Jewish Museum Berlin + Nobelhart & Schmutzig",
+              itemBody: "Start at the Deutsches Technikmuseum and have lunch in its restaurant, spend the afternoon at the Jewish Museum Berlin, and end with dinner at Nobelhart & Schmutzig on Friedrichstrasse.",
+              fit: "About 25 minutes on foot to the museum, then 8 minutes on foot to dinner."
+            }],
             timeline: [
               { time: "10:00 AM", title: "Deutsches Technikmuseum", copy: "Trebbiner Strasse 9. Photography, film and chemistry/pharmacy exhibitions are currently inaccessible; Spectrum uses a different entrance.", placeId: "plc_berlin_deutsches-technikmuseum" },
               { time: "1:00 PM", title: "Lunch at Restaurant Anhalt", copy: "The restaurant inside the Technikmuseum. Closed Mondays, like the museum.", placeId: "plc_berlin_restaurant-anhalt-deutsches-technikmuseum" },
@@ -6645,6 +6701,18 @@ window.HB_TRIP_HELPERS.getConcreteTripTemplates = function(city, areas) {
             itemTitle: "Man Mo Temple + Tai Kwun + Duddell's + PMQ",
             itemBody: "Start at Man Mo Temple on Hollywood Road, walk to Tai Kwun, have lunch at Duddell's, then walk up to PMQ for design studios and shops.",
             fit: "All four stops are on foot, between 8 and 13 minutes apart.",
+            // Checked alternate (review of 2026-10-19): the Zoological and Botanical Gardens instead of PMQ.
+            alternates: [{
+              replaces: "plc_hongkong_pmq",
+              note: "Swap PMQ for the free Hong Kong Zoological and Botanical Gardens on Albany Road, about 10 minutes on foot from lunch.",
+              step: { title: "Hong Kong Zoological and Botanical Gardens", copy: "Albany Road, Central. Free; most areas are open 6 AM to 7 PM.", placeId: "plc_hongkong_hong-kong-zoological-and-botanical-gardens" },
+              rationale: "A walking day on Hong Kong Island: a working temple, a heritage compound, a Cantonese lunch and the zoological and botanical gardens, all within a short walk.",
+              timeShape: "Temple morning, long lunch, garden afternoon",
+              weather: "Central's streets are steep. Tai Kwun's galleries open from 10 or 11 AM.",
+              itemTitle: "Man Mo Temple + Tai Kwun + Duddell's + Zoological and Botanical Gardens",
+              itemBody: "Start at Man Mo Temple on Hollywood Road, walk to Tai Kwun, have lunch at Duddell's, then walk to the Zoological and Botanical Gardens on Albany Road.",
+              fit: "All four stops are on foot, between 8 and 10 minutes apart."
+            }],
             timeline: [
               { time: "9:30 AM", title: "Man Mo Temple", copy: "A working temple at 124-126 Hollywood Road, founded in 1847 and run by Tung Wah. Be respectful of worshippers.", placeId: "plc_hongkong_man-mo-temple" },
               { time: "10:30 AM", title: "Tai Kwun", copy: "The restored heritage compound at 10 Hollywood Road. The site is free; some exhibitions are ticketed.", placeId: "plc_hongkong_tai-kwun" },
@@ -6672,6 +6740,16 @@ window.HB_TRIP_HELPERS.getConcreteTripTemplates = function(city, areas) {
             itemTitle: "The Peak Tram + Maxim's Palace + ARGO",
             itemBody: "Ride the Peak Tram up from Garden Road, come down for dim sum at Maxim's Palace in City Hall, keep the afternoon free, and end with a drink at ARGO.",
             fit: "Everything is on foot from the tram terminus: about 12 minutes to City Hall, then 15 minutes along the waterfront to the bar.",
+            // Checked alternate (review of 2026-10-19): The Old Man instead of ARGO.
+            alternates: [{
+              replaces: "plc_hongkong_argo",
+              note: "Swap ARGO for The Old Man, a cocktail bar on Aberdeen Street in Soho, about 17 minutes by bus from City Hall.",
+              step: { title: "Drinks at The Old Man", copy: "37 Aberdeen Street, Soho. Open from 5 PM daily. Its site publishes no booking details.", placeId: "plc_hongkong_the-old-man" },
+              rationale: "The Peak Tram in the morning, dim sum at City Hall, a free afternoon, and drinks in Soho.",
+              itemTitle: "The Peak Tram + Maxim's Palace + The Old Man",
+              itemBody: "Ride the Peak Tram up from Garden Road, come down for dim sum at Maxim's Palace in City Hall, keep the afternoon free, and end with a drink at The Old Man in Soho.",
+              fit: "City Hall is about 12 minutes on foot from the tram terminus; the bar is about 17 minutes by bus."
+            }],
             timeline: [
               { time: "9:00 AM", title: "The Peak Tram", copy: "Board at the Garden Road terminus and allow about two hours at the top. Sky Terrace 428 is ticketed separately.", placeId: "plc_hongkong_the-peak-tram-central-terminus" },
               { time: "12:30 PM", title: "Dim sum at Maxim's Palace (City Hall)", copy: "Cantonese dim sum hall on 2/F of City Hall Low Block. Busy at lunch; book or expect to queue.", placeId: "plc_hongkong_maxims-palace-city-hall" },
@@ -6704,6 +6782,18 @@ window.HB_TRIP_HELPERS.getConcreteTripTemplates = function(city, areas) {
             itemTitle: "M+ + Hong Kong Palace Museum + Star Ferry + Lung King Heen",
             itemBody: "Have coffee at noc in Tsim Sha Tsui, visit M+, then the Hong Kong Palace Museum, cross the harbour on the Star Ferry at dusk, and finish with dinner at Lung King Heen.",
             fit: "About 14 minutes by bus to M+, a 7-minute walk between the museums, and the Star Ferry carries you to Central for dinner.",
+            // Checked alternate (review of 2026-10-19): the Hong Kong Museum of Art instead of the Palace Museum.
+            alternates: [{
+              replaces: "plc_hongkong_hong-kong-palace-museum",
+              note: "Swap the Hong Kong Palace Museum for the Hong Kong Museum of Art on Salisbury Road, an 8-minute walk from the Star Ferry pier. It is closed on Thursdays.",
+              step: { title: "Hong Kong Museum of Art", copy: "10 Salisbury Road, Tsim Sha Tsui. Free except special exhibitions; closed on Thursdays.", placeId: "plc_hongkong_hong-kong-museum-of-art" },
+              rationale: "M+ on the West Kowloon waterfront, the Museum of Art in Tsim Sha Tsui, the Star Ferry across the harbour at dusk, and the trip's booked dinner.",
+              weather: "M+ is closed on Mondays and the Museum of Art on Thursdays. Book Lung King Heen ahead.",
+              itemTitle: "M+ + Hong Kong Museum of Art + Star Ferry + Lung King Heen",
+              itemBody: "Have coffee at noc in Tsim Sha Tsui, visit M+, then the Hong Kong Museum of Art, cross the harbour on the Star Ferry at dusk, and finish with dinner at Lung King Heen.",
+              fit: "About 14 minutes by bus to M+, about 25 minutes by bus to the Museum of Art, then an 8-minute walk to the Star Ferry pier.",
+              retitle: [{ from: "Lunch in West Kowloon (your choice)", title: "Lunch in West Kowloon (your choice)", copy: "Nothing is booked; M+ is in the cultural district." }]
+            }],
             timeline: [
               { time: "9:00 AM", title: "Coffee at noc (Tsim Sha Tsui)", copy: "Sun Arcade, 28 Canton Road.", placeId: "plc_hongkong_noc-tsim-sha-tsui-sun-arcade" },
               { time: "10:00 AM", title: "M+", copy: "Museum of visual culture on the West Kowloon waterfront. Allow at least two hours.", placeId: "plc_hongkong_m-plus" },
@@ -6803,6 +6893,17 @@ window.HB_TRIP_HELPERS.getConcreteTripTemplates = function(city, areas) {
             itemTitle: "National Gallery + ArtScience Museum + Gardens by the Bay",
             itemBody: "Start at National Gallery Singapore, have lunch at National Kitchen by Violet Oon inside it, walk around the bay to the ArtScience Museum, and end in the free outdoor gardens at Supertree Grove.",
             fit: "Every move is on foot: about 26 minutes around the bay to the museum, then 14 minutes to the Supertrees.",
+            // Checked alternate (review of 2026-10-19): the Asian Civilisations Museum instead of the ArtScience Museum.
+            alternates: [{
+              replaces: "plc_singapore_artscience-museum",
+              note: "Swap the ArtScience Museum for the Asian Civilisations Museum at Empress Place, a 7-minute walk from lunch.",
+              step: { title: "Asian Civilisations Museum", copy: "1 Empress Place. Open 10 AM to 7 PM (9 PM on Fridays); galleries stop admitting 30 minutes before closing. Some exhibitions need an all-access ticket.", placeId: "plc_singapore_asian-civilisations-museum" },
+              rationale: "A civic-district morning, a Peranakan lunch in the same building, a second museum nearby, then the bay's gardens into the evening.",
+              timeShape: "Two museums, gardens at dusk",
+              itemTitle: "National Gallery + Asian Civilisations Museum + Gardens by the Bay",
+              itemBody: "Start at National Gallery Singapore, have lunch at National Kitchen by Violet Oon inside it, walk to the Asian Civilisations Museum at Empress Place, and end in the free outdoor gardens at Supertree Grove.",
+              fit: "A 7-minute walk to the museum, then about 29 minutes by bus to the Supertrees."
+            }],
             timeline: [
               { time: "10:00 AM", title: "National Gallery Singapore", copy: "In the former Supreme Court and City Hall at 1 St Andrew's Road. Allow at least two hours.", placeId: "plc_singapore_national-gallery-singapore" },
               { time: "12:30 PM", title: "Lunch at National Kitchen by Violet Oon", copy: "Peranakan cooking on level 2 of the Gallery's City Hall wing. Booking recommended.", placeId: "plc_singapore_national-kitchen-by-violet-oon" },
@@ -6829,6 +6930,15 @@ window.HB_TRIP_HELPERS.getConcreteTripTemplates = function(city, areas) {
             itemTitle: "Singapore Botanic Gardens + Candlenut + ATLAS",
             itemBody: "Walk the Singapore Botanic Gardens from Tanglin Gate, walk on to Candlenut on Dempsey Road for lunch, keep the afternoon free, and end with a drink at ATLAS in Parkview Square.",
             fit: "Lunch is a 17-minute walk from the gardens; the evening bar is a separate trip of about 36 minutes by bus.",
+            // Checked alternate (review of 2026-10-19): the Long Bar at Raffles Hotel instead of ATLAS.
+            alternates: [{
+              replaces: "plc_singapore_atlas",
+              note: "Swap ATLAS for the Long Bar at Raffles Hotel, about 32 minutes by bus from Dempsey. It is walk-in only.",
+              step: { title: "Drinks at Long Bar (Raffles Hotel)", copy: "Raffles Arcade, 328 North Bridge Road, level 2. Walk-in only; last seating 10:30 PM Sunday to Wednesday, 11:30 PM Thursday to Saturday. Smart casual recommended.", placeId: "plc_singapore_long-bar-raffles-hotel-singapore" },
+              itemTitle: "Singapore Botanic Gardens + Candlenut + Long Bar",
+              itemBody: "Walk the Singapore Botanic Gardens from Tanglin Gate, walk on to Candlenut on Dempsey Road for lunch, keep the afternoon free, and end with a drink at the Long Bar in Raffles Hotel.",
+              fit: "Lunch is a 17-minute walk from the gardens; the evening bar is a separate trip of about 32 minutes by bus."
+            }],
             timeline: [
               { time: "8:00 AM", title: "Singapore Botanic Gardens", copy: "Enter at Tanglin Gate on Cluny Road, near Napier MRT. General entry is free; the National Orchid Garden is ticketed.", placeId: "plc_singapore_singapore-botanic-gardens" },
               { time: "12:30 PM", title: "Lunch at Candlenut", copy: "Peranakan restaurant at 17A Dempsey Road. Reserve ahead.", placeId: "plc_singapore_candlenut" },
@@ -6845,6 +6955,21 @@ window.HB_TRIP_HELPERS.getConcreteTripTemplates = function(city, areas) {
             itemTitle: "Singapore Zoo",
             itemBody: "Spend the morning at Singapore Zoo in Mandai, then keep the afternoon and evening free.",
             fit: "The zoo is far from the centre (public buses into town take well over an hour), so nothing else is scheduled.",
+            // Checked alternate (review of 2026-10-19): Bird Paradise instead of Singapore Zoo.
+            alternates: [{
+              replaces: "plc_singapore_singapore-zoo",
+              note: "Swap Singapore Zoo for Bird Paradise, in the same Mandai area. It opens at 9 AM.",
+              step: { time: "9:00 AM", title: "Bird Paradise", copy: "20 Mandai Lake Road. Open daily 9 AM to 6 PM; last entry 5 PM. Allow at least an hour each way by public transport from the centre.", placeId: "plc_singapore_bird-paradise" },
+              title: "Bird Paradise",
+              rationale: "Bird Paradise gets a morning of its own, because it is in the north of the island; the rest of the day is free.",
+              highlight: "Bird Paradise",
+              timeShape: "Bird park morning, free afternoon and evening",
+              weather: "Go at opening for cooler air.",
+              itemTitle: "Bird Paradise",
+              itemBody: "Spend the morning at Bird Paradise in Mandai, then keep the afternoon and evening free.",
+              fit: "Mandai is far from the centre (public buses into town take well over an hour), so nothing else is scheduled.",
+              retitle: [{ from: "Free afternoon and evening", title: "Free afternoon and evening", copy: "Nothing is scheduled after Bird Paradise. Rest, or eat near where you are staying." }]
+            }],
             timeline: [
               { time: "8:30 AM", title: "Singapore Zoo", copy: "80 Mandai Lake Road. Allow at least an hour each way by public transport from the centre. Other Mandai parks are ticketed separately.", placeId: "plc_singapore_singapore-zoo" },
               { time: "1:30 PM", title: "Free afternoon and evening", copy: "Nothing is scheduled after the zoo. Rest, or eat near where you are staying.", kind: "flexible" }
@@ -6859,6 +6984,19 @@ window.HB_TRIP_HELPERS.getConcreteTripTemplates = function(city, areas) {
             itemTitle: "Plain Vanilla + JUMBO Seafood + Jigger & Pony",
             itemBody: "Have brunch at Plain Vanilla in Tiong Bahru and wander the neighbourhood, keep the afternoon free, then have dinner at JUMBO Seafood at Riverside Point and a drink at Jigger & Pony in Tanjong Pagar.",
             fit: "The evening moves are short: about 23 minutes by bus to dinner, then 20 minutes by MRT to the bar.",
+            // Checked alternate (review of 2026-10-19): a hawker dinner at Maxwell Food Centre instead of JUMBO Seafood.
+            alternates: [{
+              replaces: "plc_singapore_jumbo-seafood-riverside-point",
+              note: "Swap JUMBO Seafood for a hawker dinner at Maxwell Food Centre in Chinatown, an 11-minute walk from the bar. Stall hours vary, and it closes for cleaning on 14 December.",
+              step: { title: "Dinner at Maxwell Food Centre", copy: "1 Kadayanallur Street. A hawker centre managed by Singapore's National Environment Agency: no booking, and each stall keeps its own hours. Closed for cleaning on 14 December.", placeId: "plc_singapore_maxwell-food-centre" },
+              rationale: "A slow neighbourhood morning in Tiong Bahru, a free afternoon, then a hawker-centre dinner and a late drink.",
+              highlight: "Maxwell Food Centre",
+              timeShape: "Neighbourhood brunch, free afternoon, hawker dinner",
+              weather: "Maxwell Food Centre's stalls keep their own hours. Jigger & Pony admits guests over 18 only.",
+              itemTitle: "Plain Vanilla + Maxwell Food Centre + Jigger & Pony",
+              itemBody: "Have brunch at Plain Vanilla in Tiong Bahru and wander the neighbourhood, keep the afternoon free, then have dinner at Maxwell Food Centre and a drink at Jigger & Pony in Tanjong Pagar.",
+              fit: "About 25 minutes by MRT to dinner, then an 11-minute walk to the bar."
+            }],
             timeline: [
               { time: "9:30 AM", title: "Brunch at Plain Vanilla (Tiong Bahru)", copy: "1D Yong Siak Street. Hot food stops before 4 PM; no reservations.", placeId: "plc_singapore_plain-vanilla-tiong-bahru" },
               { time: "11:00 AM", title: "Walk in Tiong Bahru", copy: "Unplanned time around Yong Siak and Eng Hoon streets.", kind: "flexible" },

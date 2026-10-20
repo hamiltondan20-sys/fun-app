@@ -2825,6 +2825,354 @@
       ],
       "exceptions": [],
       "caveat": "No reservations. Sunday hours are not published."
+    },
+    "plc_berlin_alte-nationalgalerie": {
+      "url": "https://www.smb.museum/en/museums-institutions/alte-nationalgalerie/plan-your-visit/",
+      "retrievedOn": "2026-10-19",
+      "confidence": "high",
+      "quote": "Mon closed / Tue 10:00 am - 6:00 pm ... (Tue-Sun)",
+      "periods": [
+        {
+          "from": "2026-10-19",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "closed",
+            "tue": "10:00-18:00",
+            "wed": "10:00-18:00",
+            "thu": "10:00-18:00",
+            "fri": "10:00-18:00",
+            "sat": "10:00-18:00",
+            "sun": "10:00-18:00"
+          }
+        }
+      ],
+      "exceptions": [
+        {
+          "date": "2026-12-24",
+          "hours": "closed",
+          "note": "Published closure"
+        },
+        {
+          "date": "2026-12-25",
+          "hours": "10:00-18:00",
+          "note": "Sunday hours"
+        },
+        {
+          "date": "2026-12-26",
+          "hours": "10:00-18:00",
+          "note": "Sunday hours"
+        },
+        {
+          "date": "2026-12-31",
+          "hours": "closed",
+          "note": "Published closure"
+        }
+      ],
+      "notes": "Holiday hours from https://www.smb.museum/en/plan-your-visit/special-opening-hours-during-public-holidays/."
+    },
+    "plc_berlin_hamburger-bahnhof": {
+      "url": "https://www.smb.museum/en/museums-institutions/hamburger-bahnhof/plan-your-visit/",
+      "retrievedOn": "2026-10-19",
+      "confidence": "high",
+      "quote": "Tue, Wed, Fri 10:00 am-6:00 pm; Thu 10:00 am-8:00 pm; Sat, Sun 11:00 am-6:00 pm. 'From 1 December 2026, new opening hours will apply: Tuesday to Sunday from 10 am to 6 pm.'",
+      "periods": [
+        {
+          "from": "2026-10-19",
+          "to": "2026-11-30",
+          "weekly": {
+            "mon": "closed",
+            "tue": "10:00-18:00",
+            "wed": "10:00-18:00",
+            "thu": "10:00-20:00",
+            "fri": "10:00-18:00",
+            "sat": "11:00-18:00",
+            "sun": "11:00-18:00"
+          }
+        },
+        {
+          "from": "2026-12-01",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "closed",
+            "tue": "10:00-18:00",
+            "wed": "10:00-18:00",
+            "thu": "10:00-18:00",
+            "fri": "10:00-18:00",
+            "sat": "10:00-18:00",
+            "sun": "10:00-18:00"
+          }
+        }
+      ],
+      "exceptions": [
+        {
+          "date": "2026-12-24",
+          "hours": "closed",
+          "note": "Published closure"
+        },
+        {
+          "date": "2026-12-31",
+          "hours": "closed",
+          "note": "Published closure"
+        }
+      ],
+      "caveat": "Access to the Rieckhallen is currently not barrier-free."
+    },
+    "plc_berlin_kaiser-wilhelm-memorial-church": {
+      "url": "https://gedaechtniskirche-berlin.de/besuch/offene-kirche/oeffnungszeiten",
+      "retrievedOn": "2026-10-19",
+      "confidence": "high",
+      "quote": "Montag bis Sonntag: 10 bis 18 Uhr, ausgenommen während der Gottesdienste, Andachten und Konzerte",
+      "periods": [
+        {
+          "from": "2026-10-19",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "10:00-18:00",
+            "tue": "10:00-18:00",
+            "wed": "10:00-18:00",
+            "thu": "10:00-18:00",
+            "fri": "10:00-18:00",
+            "sat": "10:00-18:00",
+            "sun": "10:00-18:00"
+          }
+        }
+      ],
+      "exceptions": [],
+      "caveat": "Gedenkhalle (old tower) exhibition closed for renovation, no end date. Visits pause during services and concerts."
+    },
+    "plc_berlin_horvath": {
+      "url": "https://restaurant-horvath.de/",
+      "retrievedOn": "2026-10-19",
+      "confidence": "high",
+      "quote": "Öffnungszeiten: Mittwoch bis Samstag ab 18:30",
+      "periods": [
+        {
+          "from": "2026-10-19",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "closed",
+            "tue": "closed",
+            "wed": "18:30-late",
+            "thu": "18:30-late",
+            "fri": "18:30-late",
+            "sat": "18:30-late",
+            "sun": "closed"
+          }
+        }
+      ],
+      "exceptions": []
+    },
+    "plc_berlin_jewish-museum-berlin": {
+      "url": "https://www.jmberlin.de/en/visit",
+      "retrievedOn": "2026-10-19",
+      "confidence": "high",
+      "quote": "Open Tue–Sun 10 am–6 pm ... Last admission: 5 pm ... Closed on Mondays",
+      "periods": [
+        {
+          "from": "2026-10-19",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "closed",
+            "tue": "10:00-18:00",
+            "wed": "10:00-18:00",
+            "thu": "10:00-18:00",
+            "fri": "10:00-18:00",
+            "sat": "10:00-18:00",
+            "sun": "10:00-18:00"
+          }
+        }
+      ],
+      "exceptions": [
+        {
+          "date": "2026-11-14",
+          "hours": "closed",
+          "note": "Award ceremony"
+        },
+        {
+          "date": "2026-12-24",
+          "hours": "closed",
+          "note": "Christmas Eve"
+        }
+      ],
+      "lastEntry": "17:00",
+      "caveat": "Time-slot ticket recommended; walk-in tickets also sold."
+    },
+    "plc_hongkong_hong-kong-zoological-and-botanical-gardens": {
+      "url": "https://www.hkzbg.gov.hk/en/visitPage.html",
+      "retrievedOn": "2026-10-19",
+      "confidence": "high",
+      "quote": "Fountain Terrace Garden 5am - 10pm; Green House 9am - 4:30pm; Mammals Section 6am – 7pm; Other Areas 6am - 7pm. Admission Free.",
+      "periods": [
+        {
+          "from": "2026-10-19",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "06:00-19:00",
+            "tue": "06:00-19:00",
+            "wed": "06:00-19:00",
+            "thu": "06:00-19:00",
+            "fri": "06:00-19:00",
+            "sat": "06:00-19:00",
+            "sun": "06:00-19:00"
+          }
+        }
+      ],
+      "exceptions": []
+    },
+    "plc_hongkong_the-old-man": {
+      "url": "https://www.theoldmanhongkong.com/",
+      "retrievedOn": "2026-10-19",
+      "confidence": "medium",
+      "quote": "5pm to 2am, Monday–Saturday; 5pm to 12am, Sunday",
+      "periods": [
+        {
+          "from": "2026-10-19",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "17:00-02:00",
+            "tue": "17:00-02:00",
+            "wed": "17:00-02:00",
+            "thu": "17:00-02:00",
+            "fri": "17:00-02:00",
+            "sat": "17:00-02:00",
+            "sun": "17:00-00:00"
+          }
+        }
+      ],
+      "exceptions": []
+    },
+    "plc_hongkong_hong-kong-museum-of-art": {
+      "url": "https://hk.art.museum/en/web/ma/visit/opening-hours-and-admission.html",
+      "retrievedOn": "2026-10-19",
+      "confidence": "high",
+      "quote": "Mondays to Wednesdays, Fridays 10:00am – 6:00pm; Saturdays, Sundays and public holidays 10:00am – 9:00pm; Christmas Eve 10:00am – 5:00pm; Closed on Thursdays (except public holiday)",
+      "periods": [
+        {
+          "from": "2026-10-19",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "10:00-18:00",
+            "tue": "10:00-18:00",
+            "wed": "10:00-18:00",
+            "thu": "closed",
+            "fri": "10:00-18:00",
+            "sat": "10:00-21:00",
+            "sun": "10:00-21:00"
+          }
+        }
+      ],
+      "exceptions": [
+        {
+          "date": "2026-12-24",
+          "hours": "10:00-17:00",
+          "note": "Christmas Eve"
+        },
+        {
+          "date": "2026-12-25",
+          "hours": "10:00-21:00",
+          "note": "Public holiday hours"
+        }
+      ],
+      "caveat": "Free admission except special exhibitions; box office closes 30 minutes before the museum."
+    },
+    "plc_singapore_asian-civilisations-museum": {
+      "url": "https://acm.nhb.gov.sg/visit/plan-your-visit",
+      "retrievedOn": "2026-10-19",
+      "confidence": "high",
+      "quote": "Daily 10am - 7pm; Friday 10am - 9pm. Admission to all galleries ends 30 minutes before closing time.",
+      "periods": [
+        {
+          "from": "2026-10-19",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "10:00-19:00",
+            "tue": "10:00-19:00",
+            "wed": "10:00-19:00",
+            "thu": "10:00-19:00",
+            "fri": "10:00-21:00",
+            "sat": "10:00-19:00",
+            "sun": "10:00-19:00"
+          }
+        }
+      ],
+      "exceptions": [],
+      "caveat": "Some exhibitions need an all-access ticket; free entry applies to residents only."
+    },
+    "plc_singapore_long-bar-raffles-hotel-singapore": {
+      "url": "https://www.raffles.com/singapore/dining/long-bar/",
+      "retrievedOn": "2026-10-19",
+      "confidence": "high",
+      "quote": "Sunday to Wednesday: 11.00am – 10.30pm (last seating); Thursday to Saturday: 11.00am – 11.30pm (last seating)",
+      "periods": [
+        {
+          "from": "2026-10-19",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "11:00-22:30",
+            "tue": "11:00-22:30",
+            "wed": "11:00-22:30",
+            "thu": "11:00-23:30",
+            "fri": "11:00-23:30",
+            "sat": "11:00-23:30",
+            "sun": "11:00-22:30"
+          }
+        }
+      ],
+      "exceptions": [],
+      "caveat": "Walk-in only; smart casual recommended.",
+      "notes": "Times are last seating."
+    },
+    "plc_singapore_bird-paradise": {
+      "url": "https://www.mandai.com/en/bird-paradise.html",
+      "retrievedOn": "2026-10-19",
+      "confidence": "high",
+      "quote": "Daily, 9:00am – 6:00pm (Last Entry: 5:00pm)",
+      "periods": [
+        {
+          "from": "2026-10-19",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "09:00-18:00",
+            "tue": "09:00-18:00",
+            "wed": "09:00-18:00",
+            "thu": "09:00-18:00",
+            "fri": "09:00-18:00",
+            "sat": "09:00-18:00",
+            "sun": "09:00-18:00"
+          }
+        }
+      ],
+      "exceptions": [],
+      "lastEntry": "17:00"
+    },
+    "plc_singapore_maxwell-food-centre": {
+      "url": "https://www.nea.gov.sg/our-services/hawker-management/overview",
+      "retrievedOn": "2026-10-19",
+      "confidence": "medium",
+      "quote": "No centre or stall hours published.",
+      "periods": [
+        {
+          "from": "2026-10-19",
+          "to": "2026-12-31",
+          "weekly": {
+            "mon": "unknown",
+            "tue": "unknown",
+            "wed": "unknown",
+            "thu": "unknown",
+            "fri": "unknown",
+            "sat": "unknown",
+            "sun": "unknown"
+          }
+        }
+      ],
+      "exceptions": [
+        {
+          "date": "2026-12-14",
+          "hours": "closed",
+          "note": "NEA cleaning closure"
+        }
+      ],
+      "notes": "A hawker centre: no centre or stall hours are published; each stall keeps its own hours. The dated closure is NEA's cleaning schedule (read in a browser)."
     }
   }
 }

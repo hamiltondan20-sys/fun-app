@@ -743,7 +743,7 @@ test("checked alternates point at registry places, replace a stop that is there,
       }
     }
   }
-  assert.equal(count, 6);
+  assert.equal(count, 18, "Paris 4, London 2, Berlin 5, Hong Kong 3, Singapore 4");
 });
 
 test("swapping a stop recalculates travel, renames free time, and swaps back exactly", () => {

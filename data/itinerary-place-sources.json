@@ -1,5 +1,5 @@
 {
-  "about": "Itinerary-only places (not in a reviewed city guide), each with its own official-source record. Same fields as data/city-source-ledger.js placeSources: sourceType, url, locationSourceUrl, checkedOn, operatingEvidence.",
+  "about": "Itinerary-only places (not in a reviewed city guide), each with its own official-source record. Same fields as data/city-source-ledger.js placeSources: sourceType, url, locationSourceUrl, checkedOn, operatingEvidence. Alternates added 2026-10-19 from the owner-approved review docs/content-research/alternates-berlin-hongkong-singapore-2026-10-19.md.",
   "places": [
     {
       "city": "berlin", "name": "Lebenswelten Bistro (Humboldt Forum)", "kind": "meal",
@@ -129,6 +129,162 @@
         "locationSourceUrl": "https://plm.org.hk/eng/visitors.php",
         "checkedOn": "2026-10-14",
         "operatingEvidence": "The monastery's visitor page lists daily hours for the Big Buddha and the monastery, including public holidays. The site is not recently dated (footer 2023), so this is medium-confidence evidence of current operation."
+      }
+    },
+    {
+      "city": "berlin", "name": "Alte Nationalgalerie", "kind": "landmark",
+      "address": "Bodestraße, 10178 Berlin (visitor entrance)", "area": "Museum Island",
+      "lat": 52.52086, "lng": 13.39827, "osm": "way/313670733",
+      "basis": "named feature: the museum building on Bodestrasse", "osmRetrievedOn": "2026-10-19",
+      "source": {
+        "sourceType": "operator's own site (Staatliche Museen zu Berlin)",
+        "url": "https://www.smb.museum/en/museums-institutions/alte-nationalgalerie/plan-your-visit/",
+        "locationSourceUrl": "https://www.smb.museum/en/museums-institutions/alte-nationalgalerie/plan-your-visit/",
+        "checkedOn": "2026-10-19",
+        "operatingEvidence": "Current exhibition 'Scandal! Hermione von Preuschen and the Mors Imperator' (22.03.2026-15.11.2026); 2nd floor closed 29 Sep-21 Oct 2026, 'fully open again from 22 October'."
+      }
+    },
+    {
+      "city": "berlin", "name": "Hamburger Bahnhof", "kind": "landmark",
+      "address": "Invalidenstraße 50, 10557 Berlin", "area": "Moabit",
+      "lat": 52.52863, "lng": 13.37187, "osm": "way/175464203",
+      "basis": "named feature: the museum building at Invalidenstrasse 50-51", "osmRetrievedOn": "2026-10-19",
+      "source": {
+        "sourceType": "operator's own site (Staatliche Museen zu Berlin)",
+        "url": "https://www.smb.museum/en/museums-institutions/hamburger-bahnhof/plan-your-visit/",
+        "locationSourceUrl": "https://www.smb.museum/en/museums-institutions/hamburger-bahnhof/plan-your-visit/",
+        "checkedOn": "2026-10-19",
+        "operatingEvidence": "Current exhibitions 'Next Door' (09.10.2026-27.06.2027) and Ryuichi Sakamoto (11.09.2026-20.06.2027); notice of new opening hours from 1 December 2026."
+      }
+    },
+    {
+      "city": "berlin", "name": "Kaiser Wilhelm Memorial Church", "kind": "landmark",
+      "address": "Breitscheidplatz, 10789 Berlin", "area": "City West",
+      "lat": 52.50489, "lng": 13.33461, "osm": "way/15218371",
+      "basis": "named feature: the new church on Breitscheidplatz, beside the old tower", "osmRetrievedOn": "2026-10-19",
+      "source": {
+        "sourceType": "operator's own site",
+        "url": "https://gedaechtniskirche-berlin.de/besuch/offene-kirche/oeffnungszeiten",
+        "locationSourceUrl": "https://gedaechtniskirche-berlin.de/besuch/offene-kirche/oeffnungszeiten",
+        "checkedOn": "2026-10-19",
+        "operatingEvidence": "Renovation page: services, concerts, events and tours continue throughout; the Gedenkhalle exhibition closed from 29.08.2026 for renovation."
+      }
+    },
+    {
+      "city": "berlin", "name": "Horváth", "kind": "meal",
+      "address": "Paul-Lincke-Ufer 44A, 10999 Berlin", "area": "Kreuzberg",
+      "lat": 52.49638, "lng": 13.42081, "osm": "node/941439093",
+      "basis": "named feature at Paul-Lincke-Ufer 44a", "osmRetrievedOn": "2026-10-19",
+      "source": {
+        "sourceType": "restaurant's own site",
+        "url": "https://restaurant-horvath.de/",
+        "locationSourceUrl": "https://restaurant-horvath.de/",
+        "checkedOn": "2026-10-19",
+        "operatingEvidence": "Page dated 29 Sep 2026; reservations through an OpenTable link."
+      }
+    },
+    {
+      "city": "berlin", "name": "Jewish Museum Berlin", "kind": "landmark",
+      "address": "Lindenstraße 9–14, 10969 Berlin", "area": "Kreuzberg",
+      "lat": 52.50225, "lng": 13.39515, "osm": "way/24649550",
+      "basis": "named feature at Lindenstrasse 9-14", "osmRetrievedOn": "2026-10-19",
+      "source": {
+        "sourceType": "operator's own site",
+        "url": "https://www.jmberlin.de/en/visit",
+        "locationSourceUrl": "https://www.jmberlin.de/en/visit",
+        "checkedOn": "2026-10-19",
+        "operatingEvidence": "Events listed on 22 and 24 Oct 2026; dated closures on 14 Nov and 24 Dec 2026. Re-read 2026-10-19."
+      }
+    },
+    {
+      "city": "hongkong", "name": "Hong Kong Zoological and Botanical Gardens", "kind": "scenic",
+      "address": "Albany Road, Central, Hong Kong", "area": "Central",
+      "lat": 22.27760, "lng": 114.15640, "osm": "relation/12955557",
+      "basis": "centre of the gardens on Government Hill; they have several gates", "osmRetrievedOn": "2026-10-19",
+      "source": {
+        "sourceType": "official site of the LCSD-run gardens (linked from lcsd.gov.hk parks list)",
+        "url": "https://www.hkzbg.gov.hk/en/visitPage.html",
+        "locationSourceUrl": "https://www.hkzbg.gov.hk/en/visitPage.html",
+        "checkedOn": "2026-10-19",
+        "operatingEvidence": "October 2026 'Flowering Plants of the Month'; weekly free guided visits."
+      }
+    },
+    {
+      "city": "hongkong", "name": "The Old Man", "kind": "meal",
+      "address": "37 Aberdeen Street, Soho, Central, Hong Kong", "area": "Central",
+      "lat": 22.28278, "lng": 114.15171, "osm": "node/5712459821",
+      "basis": "named feature on Aberdeen Street", "osmRetrievedOn": "2026-10-19",
+      "source": {
+        "sourceType": "bar's own site",
+        "url": "https://www.theoldmanhongkong.com/",
+        "locationSourceUrl": "https://www.theoldmanhongkong.com/",
+        "checkedOn": "2026-10-19",
+        "operatingEvidence": "Hours and a current menu are posted, but nothing on the site is dated 2026 (footer © 2021)."
+      }
+    },
+    {
+      "city": "hongkong", "name": "Hong Kong Museum of Art", "kind": "landmark",
+      "address": "10 Salisbury Road, Tsim Sha Tsui, Kowloon, Hong Kong", "area": "Tsim Sha Tsui",
+      "lat": 22.29353, "lng": 114.17203, "osm": "node/10578103641",
+      "basis": "named feature at 10 Salisbury Road", "osmRetrievedOn": "2026-10-19",
+      "source": {
+        "sourceType": "operator's own site (LCSD)",
+        "url": "https://hk.art.museum/en/web/ma/visit/opening-hours-and-admission.html",
+        "locationSourceUrl": "https://hk.art.museum/en/web/ma/visit/opening-hours-and-admission.html",
+        "checkedOn": "2026-10-19",
+        "operatingEvidence": "Dated exhibitions: 'By the People 2' (2026.09.23-2026.12.15), 'Fermata: Hong Kong in Venice' (2026.05.09-2026.11.22). Re-read 2026-10-19."
+      }
+    },
+    {
+      "city": "singapore", "name": "Asian Civilisations Museum", "kind": "landmark",
+      "address": "1 Empress Place, Singapore 179555", "area": "Civic District",
+      "lat": 1.28745, "lng": 103.85149, "osm": "way/46595390",
+      "basis": "named feature at 1 Empress Place", "osmRetrievedOn": "2026-10-19",
+      "source": {
+        "sourceType": "operator's own site (National Heritage Board)",
+        "url": "https://acm.nhb.gov.sg/visit/plan-your-visit",
+        "locationSourceUrl": "https://acm.nhb.gov.sg/visit/plan-your-visit",
+        "checkedOn": "2026-10-19",
+        "operatingEvidence": "Dated exhibitions 'Sacred Caves' (25 Sep 2026-7 Mar 2027) and 'Crosscurrents' (19 Jun 2026-24 Jan 2027); online tickets."
+      }
+    },
+    {
+      "city": "singapore", "name": "Long Bar (Raffles Hotel Singapore)", "kind": "meal",
+      "address": "#02-01 Raffles Arcade, 328 North Bridge Road, Singapore 188719", "area": "Civic District",
+      "lat": 1.29564, "lng": 103.85403, "osm": "relation/3413596",
+      "basis": "Raffles Arcade, the building its address names (the bar is on level 2)", "osmRetrievedOn": "2026-10-19",
+      "source": {
+        "sourceType": "hotel's official page",
+        "url": "https://www.raffles.com/singapore/dining/long-bar/",
+        "locationSourceUrl": "https://www.raffles.com/singapore/dining/long-bar/",
+        "checkedOn": "2026-10-19",
+        "operatingEvidence": "Live page with current hours and walk-in policy; no dated content."
+      }
+    },
+    {
+      "city": "singapore", "name": "Bird Paradise", "kind": "landmark",
+      "address": "Mandai Wildlife WEST, 20 Mandai Lake Road, Singapore 729825", "area": "Mandai",
+      "lat": 1.40546, "lng": 103.78099, "osm": "way/767316592",
+      "basis": "centre of the park grounds", "osmRetrievedOn": "2026-10-19",
+      "source": {
+        "sourceType": "operator's own site (Mandai Wildlife Group)",
+        "url": "https://www.mandai.com/en/bird-paradise.html",
+        "locationSourceUrl": "https://www.mandai.com/en/bird-paradise.html",
+        "checkedOn": "2026-10-19",
+        "operatingEvidence": "Tickets on sale; dated maintenance closure of one attraction 10-12 Nov 2026."
+      }
+    },
+    {
+      "city": "singapore", "name": "Maxwell Food Centre", "kind": "meal",
+      "address": "1 Kadayanallur Street, Singapore 069184", "area": "Chinatown",
+      "lat": 1.28035, "lng": 103.84474, "osm": "way/47298639",
+      "basis": "named feature at 1 Kadayanallur Street", "osmRetrievedOn": "2026-10-19",
+      "source": {
+        "sourceType": "government body that manages it (NEA)",
+        "url": "https://www.nea.gov.sg/our-services/hawker-management/overview",
+        "locationSourceUrl": "https://www.nea.gov.sg/our-services/hawker-management/overview",
+        "checkedOn": "2026-10-19",
+        "operatingEvidence": "On NEA's list of hawker centres dated 17 Aug 2026; NEA cleaning schedule: 'Maxwell Food Centre (Kim Hua Market) 14 Dec 2026 to 14 Dec 2026 Cleaning' (read in a browser 2026-10-19)."
       }
     }
   ]
