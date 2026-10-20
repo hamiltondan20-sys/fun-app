@@ -27,11 +27,54 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-10",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-10",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [],
+              "tue": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [],
               "tue": [
@@ -103,11 +146,86 @@ window.HB_PLACES = {
             "date": "2026-12-31",
             "hours": [],
             "note": "SMB public-holiday page"
+          },
+          {
+            "date": "2027-01-01",
+            "hours": [
+              [
+                "12:00",
+                "18:00"
+              ]
+            ],
+            "note": "SMB holiday page: New Year (Fri, 1 Jan) 'All museums are open from noon to 6 pm.'"
+          },
+          {
+            "date": "2027-03-15",
+            "hours": [],
+            "note": "'closed from 15 March to 17 March 2027 for maintenance work' (Monday, closed anyway)"
+          },
+          {
+            "date": "2027-03-16",
+            "hours": [],
+            "note": "'closed from 15 March to 17 March 2027 for maintenance work'"
+          },
+          {
+            "date": "2027-03-17",
+            "hours": [],
+            "note": "'closed from 15 March to 17 March 2027 for maintenance work'"
+          },
+          {
+            "date": "2027-03-26",
+            "hours": [
+              [
+                "10:00",
+                "18:00"
+              ]
+            ],
+            "note": "SMB holiday page: Easter (Fri 26 Mar to Mon 29 Mar) 'All museums are open as on a Sunday.'"
+          },
+          {
+            "date": "2027-03-29",
+            "hours": [
+              [
+                "10:00",
+                "18:00"
+              ]
+            ],
+            "note": "SMB holiday page: Easter Monday open 'as on a Sunday' (normally closed Mondays)"
+          },
+          {
+            "date": "2027-05-01",
+            "hours": [
+              [
+                "10:00",
+                "18:00"
+              ]
+            ],
+            "note": "SMB holiday page: May Day (Sat, 1 May) 'open as on a Sunday'"
+          },
+          {
+            "date": "2027-05-06",
+            "hours": [
+              [
+                "10:00",
+                "18:00"
+              ]
+            ],
+            "note": "SMB holiday page: Ascension Day (Thu, 6 May) 'open as on a Sunday'"
+          },
+          {
+            "date": "2027-05-17",
+            "hours": [
+              [
+                "10:00",
+                "18:00"
+              ]
+            ],
+            "note": "SMB holiday page: Whit Monday (17 May) 'open as on a Sunday' (normally closed Mondays)"
           }
         ],
         "lastEntry": null,
         "caveat": null,
-        "notes": "No last-entry time published. Holiday rules come from SMB's general holiday page. Closed 15-17 March 2027 for maintenance (outside the researched period).",
+        "notes": "No last-entry time published. Holiday rules come from SMB's general holiday page. Closed 15-17 March 2027 for maintenance (outside the researched period). 2027 re-check (2026-10-19): Standing weekly hours, no end date published. Holiday dates from https://www.smb.museum/en/plan-your-visit/special-opening-hours-during-public-holidays/ ('All museums'; 'Subject to changes'). The 15-17 March 2027 maintenance closure now falls inside the window.",
         "evidence": {
           "url": "https://www.smb.museum/en/museums-institutions/neues-museum/plan-your-visit/",
           "quote": "Mon closed / Tue 10:00 am - 6:00 pm / Wed 10:00 am - 6:00 pm / Thu 10:00 am - 6:00 pm / Fri 10:00 am - 6:00 pm / Sat 10:00 am - 6:00 pm / Sun 10:00 am - 6:00 pm",
@@ -158,11 +276,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-10",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-10",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "08:00",
+                  "22:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "08:00",
+                  "22:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "08:00",
+                  "22:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "08:00",
+                  "22:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "08:00",
+                  "22:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "08:00",
+                  "22:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "08:00",
+                  "22:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -212,7 +378,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": "Hours shown are for the outdoor memorial grounds. The Visitor Center and Documentation Center are open Tuesday to Sunday 10:00–18:00 (closed Mondays except 9 November 2026).",
-        "notes": "Indoor centres closed 24, 25 and 31 Dec 2026; Visitor Center 12:00-18:00 on 26 Dec 2026. Free admission.",
+        "notes": "Indoor centres closed 24, 25 and 31 Dec 2026; Visitor Center 12:00-18:00 on 26 Dec 2026. Free admission. 2027 re-check (2026-10-19): Standing weekly hours, no end date published (periods = outdoor grounds). Indoor centres only: 1 Jan 2027 Visitor Center open 12:00-18:00, Documentation Center open (hours not given); no change stated for the outdoor grounds, so not listed as an exception. No other 2027 dates or general holiday rule published.",
         "evidence": {
           "url": "https://www.stiftung-berliner-mauer.de/en/berlin-wall-memorial/visit/information",
           "quote": "The outdoor exhibition on the memorial grounds on Bernauer Strasse is accessible Monday to Sunday, 8 a.m. to 10 p.m. ... Visitor Center: Tuesday to Sunday, 10 a.m. to 6 p.m. ... Documentation Center: Tuesday to Sunday, 10 a.m. – 6 p.m.",
@@ -263,11 +429,54 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-10",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-10",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [],
+              "tue": [
+                [
+                  "09:30",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "09:30",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:30",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:30",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [],
               "tue": [
@@ -368,7 +577,7 @@ window.HB_PLACES = {
         ],
         "lastEntry": "30 minutes before closing",
         "caveat": null,
-        "notes": "Hours load dynamically on the official page; read from the same-domain hours feed. The English page's 'Thursday to Friday' label is a typo; the German page says Tuesday to Friday.",
+        "notes": "Hours load dynamically on the official page; read from the same-domain hours feed. The English page's 'Thursday to Friday' label is a typo; the German page says Tuesday to Friday. 2027 re-check (2026-10-19): Standing hours, no end date. Monday closure and 18:00 closing confirmed; the per-day opening times (9:30 Tue-Fri, 10:00 weekend/holidays) load dynamically and were not visible in the fetched text, so record values retained. Table labels 'Samstag, Sonntag und an Feiertagen' share weekend hours, but no holiday-on-Monday rule is stated. Special-hours page (/de/besuch-planen/sonderoeffnungszeiten/) lists no 2027 dates.",
         "evidence": {
           "url": "https://www.museumfuernaturkunde.berlin/en/plan-your-visit/",
           "quote": "The museum is open daily until 6.00 pm. The museum is closed on Mondays. Last admission is 30 minutes before closing time. [Tuesday-Friday] 9.30 – 18.00 [weekend] 10.00 – 18.00",
@@ -419,11 +628,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-10",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-10",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "09:00",
+                  "21:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "09:00",
+                  "21:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "09:00",
+                  "21:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:00",
+                  "21:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:00",
+                  "21:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "21:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "21:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -494,7 +751,7 @@ window.HB_PLACES = {
         ],
         "lastEntry": null,
         "caveat": null,
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Standing weekly hours, no end date published. Open on public holidays per the page, so no holiday exceptions in the window.",
         "evidence": {
           "url": "https://www.ddr-museum.de/en/visit",
           "quote": "daily 9 am – 9 pm ... open seven days a week and on public holidays. On 24 December and 31 December, the museum is open from 9 am to 4 pm.",
@@ -545,7 +802,7 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-10",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-10",
@@ -642,6 +899,150 @@ window.HB_PLACES = {
                 ]
               ]
             }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-02-22",
+            "weekly": {
+              "mon": [
+                [
+                  "09:00",
+                  "16:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "09:00",
+                  "16:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "09:00",
+                  "16:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:00",
+                  "16:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:00",
+                  "16:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "16:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "16:30"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-02-23",
+            "to": "2027-03-29",
+            "weekly": {
+              "mon": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-03-30",
+            "to": "2027-06-30",
+            "weekly": {
+              "mon": [
+                [
+                  "09:00",
+                  "18:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "09:00",
+                  "18:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "09:00",
+                  "18:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:00",
+                  "18:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:00",
+                  "18:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "18:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "18:30"
+                ]
+              ]
+            }
           }
         ],
         "exceptions": [
@@ -658,10 +1059,10 @@ window.HB_PLACES = {
         ],
         "lastEntry": "1 hour before closing",
         "caveat": "Zoo hours only; the Aquarium has its own hours and admission.",
-        "notes": "Animal houses and restaurants close 30 minutes before the Zoo.",
+        "notes": "Animal houses and restaurants close 30 minutes before the Zoo. 2027 re-check (2026-10-19): Annual season table with no year stated, applied to 2027. Last admission 15:30 (Jan-22 Feb) and 17:00 (from 23 Feb). Open every day of the year; no 2027 dated exceptions. Animal houses and restaurants close 30 minutes before the Zoo.",
         "evidence": {
           "url": "https://www.zoo-berlin.de/en/tickets-service/opening-hours",
-          "quote": "21. September - 25. October / 9:00 - 18:00 / Last admission: 17:00 / 26. October - 31. December / 9:00 - 16:30 / Last admission: 15:30 / The Zoo closes at 2 p.m. on 24 December.",
+          "quote": "1. January - 22. February 9:00 - 16:30 ... 23. February - 29. March 9:00 - 18:00 ... 30. March - 20. September 9:00 - 18:30 Last admission: 17:00",
           "confidence": "high"
         }
       },
@@ -709,11 +1110,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-10",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-10",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -763,7 +1212,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": "The outdoor gallery is open around the clock. Its visitor centre (Muehlenstrasse 73, the tour meeting point) opens 10:00–17:00 and is closed on Fridays from November.",
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Outdoor gallery open around the clock, no end date. Visitor centre only: 'From December 24, 2026, through January 2, 2027: Closed', and closed on Fridays from November (no end date given). Not listed as exceptions because the outdoor gallery is unaffected.",
         "evidence": {
           "url": "https://www.stiftung-berliner-mauer.de/en/east-side-gallery/visit/map-information",
           "quote": "The East Side Gallery is open around the clock. ... [visitor center] open daily from 10 a.m. to 5 p.m. ... From November on, the visitor center will be closed on Fridays.",
@@ -814,7 +1263,7 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-10",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-10",
@@ -901,6 +1350,62 @@ window.HB_PLACES = {
                 ]
               ]
             }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-03-31",
+            "weekly": {
+              "mon": [],
+              "tue": null,
+              "wed": null,
+              "thu": null,
+              "fri": null,
+              "sat": null,
+              "sun": null
+            }
+          },
+          {
+            "from": "2027-04-01",
+            "to": "2027-06-30",
+            "weekly": {
+              "mon": [],
+              "tue": [
+                [
+                  "10:00",
+                  "17:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "17:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "17:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "17:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "17:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "17:30"
+                ]
+              ]
+            }
           }
         ],
         "exceptions": [
@@ -933,14 +1438,54 @@ window.HB_PLACES = {
               ]
             ],
             "note": null
+          },
+          {
+            "date": "2027-01-01",
+            "hours": [
+              [
+                "11:00",
+                "16:30"
+              ]
+            ],
+            "note": "'New Year's Day 01.01.2027: 11.00 AM – 04.30 PM'"
+          },
+          {
+            "date": "2027-03-26",
+            "hours": null,
+            "note": "Good Friday: rule 'weekend hours apply on public holidays unless otherwise stated', but January-March hours are not published"
+          },
+          {
+            "date": "2027-03-29",
+            "hours": null,
+            "note": "Easter Monday: weekend-hours holiday rule applies, but January-March hours are not published"
+          },
+          {
+            "date": "2027-05-06",
+            "hours": [
+              [
+                "10:00",
+                "17:30"
+              ]
+            ],
+            "note": "Ascension: public-holiday rule applied ('weekend hours apply on public holidays unless otherwise stated')"
+          },
+          {
+            "date": "2027-05-17",
+            "hours": [
+              [
+                "10:00",
+                "17:30"
+              ]
+            ],
+            "note": "Whit Monday: public-holiday rule applied (weekend hours, although Mondays are normally closed)"
           }
         ],
         "lastEntry": "30 minutes before closing",
         "caveat": null,
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Page (EN and DE) publishes only April-October and November/December hours; no hours for January-March, so those days are unknown (Monday closed is stated for all seasons). SPSG overview refers to a PDF 'Schlossoeffnungszeiten im Überblick' that was not read. Last admission 30 minutes before closing. 1 May 2027 is a Saturday (regular weekend hours).",
         "evidence": {
           "url": "https://www.spsg.de/en/palaces-gardens/object/charlottenburg-palace-old-palace/",
-          "quote": "April to October: Monday closed, Tuesday – Sunday: 10.00 AM – 05.30 PM. November/December: Monday closed, Tuesday – Sunday: 10.00 AM – 04.30 PM. Last admission 30 minutes before closing.",
+          "quote": "April to October: Monday closed, Tuesday – Sunday: 10.00 AM – 05.30 PM. November/December: Monday closed, Tuesday – Sunday: 10.00 AM – 04.30 PM.",
           "confidence": "high"
         }
       },
@@ -988,11 +1533,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-10",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-10",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -1042,7 +1635,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": "Brunch last order 16:30",
         "caveat": null,
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Standing weekly hours, no end date published; no holiday rules. Page also lists dinner ('Candyman') Mon-Sun 17:30-23:00 and a bar Thu & Fri 17:00-22:00(ish). Johannisstrasse location remains closed (different branch).",
         "evidence": {
           "url": "https://www.houseofsmallwonder.de/find-us",
           "quote": "Brunch: Mon-Sun 9:00-17:00 (last order 16:30)",
@@ -1093,11 +1686,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-10",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-10",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "08:00",
+                  "18:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "08:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "08:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "08:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "08:00",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -1147,7 +1788,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": null,
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Standing weekly hours, no end date published; no holiday rules or dated closures.",
         "evidence": {
           "url": "https://thebarn.de/pages/locations/mitte",
           "quote": "Monday - Friday: 08:00–18:00 / Saturday: 9:00- 18:00 / Sunday: 10:00–18:00",
@@ -1198,11 +1839,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-10",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-10",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "07:00",
+                  "20:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "07:00",
+                  "20:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "07:00",
+                  "20:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "07:00",
+                  "20:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "07:00",
+                  "20:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "08:00",
+                  "20:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "08:00",
+                  "18:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -1252,7 +1941,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": null,
-        "notes": "The nearby Weinbergsweg 2 branch has different weekend hours; these are for Alte Schoenhauser Strasse 4 only.",
+        "notes": "The nearby Weinbergsweg 2 branch has different weekend hours; these are for Alte Schoenhauser Strasse 4 only. 2027 re-check (2026-10-19): Standing weekly hours, no end date published; no holiday rules or dated closures.",
         "evidence": {
           "url": "https://zeitfuerbrot.com/en/bakeries",
           "quote": "Alte Schönhauser Straße 4 10119 Berlin / Mitte ... Mon–Fri 7:00am – 8:00pm Sat 8:00am – 8:00pm Sun 8:00am – 6:00pm",
@@ -1303,11 +1992,49 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-10",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-10",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [],
+              "tue": [
+                [
+                  "18:00",
+                  "24:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "18:00",
+                  "24:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "18:00",
+                  "24:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "17:00",
+                  "24:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "17:00",
+                  "24:00"
+                ]
+              ],
+              "sun": []
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [],
               "tue": [
@@ -1384,11 +2111,31 @@ window.HB_PLACES = {
             "date": "2026-12-31",
             "hours": [],
             "note": null
+          },
+          {
+            "date": "2027-01-01",
+            "hours": [],
+            "note": "'Das Restaurant Tim Raue ist an folgenden Tagen geschlossen: 24.12.2026 - 04.01.2027'"
+          },
+          {
+            "date": "2027-01-02",
+            "hours": [],
+            "note": "within closure 24.12.2026 - 04.01.2027"
+          },
+          {
+            "date": "2027-01-03",
+            "hours": [],
+            "note": "within closure 24.12.2026 - 04.01.2027 (Sunday, not a dinner day anyway)"
+          },
+          {
+            "date": "2027-01-04",
+            "hours": [],
+            "note": "within closure 24.12.2026 - 04.01.2027 (Monday, not a dinner day anyway)"
           }
         ],
         "lastEntry": null,
         "caveat": "Dinner only. Bookings are taken only through the restaurant's online system, up to three months ahead.",
-        "notes": "Sunday and Monday are not listed as dinner days (the site does not use the word closed for them).",
+        "notes": "Sunday and Monday are not listed as dinner days (the site does not use the word closed for them). 2027 re-check (2026-10-19): Standing weekly hours, no end date published. Sunday and Monday are not listed as dinner days (site does not use the word closed). No other 2027 closures published.",
         "evidence": {
           "url": "https://tim-raue.com/kontakt/",
           "quote": "Dinner: Dienstag – Donnerstag 18.00 - 24.00 / Freitag & Samstag 17.00 - 24.00 ... geschlossen: 24.12.2026 - 04.01.2027",
@@ -1439,11 +2186,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-10",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-10",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "19:00",
+                  null
+                ]
+              ],
+              "tue": [
+                [
+                  "19:00",
+                  null
+                ]
+              ],
+              "wed": [
+                [
+                  "19:00",
+                  null
+                ]
+              ],
+              "thu": [
+                [
+                  "19:00",
+                  null
+                ]
+              ],
+              "fri": [
+                [
+                  "19:00",
+                  null
+                ]
+              ],
+              "sat": [
+                [
+                  "19:00",
+                  null
+                ]
+              ],
+              "sun": [
+                [
+                  "19:00",
+                  null
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -1493,7 +2288,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": null,
-        "notes": "Only an opening time is published ('currently daily from 19:00'); no closing time.",
+        "notes": "Only an opening time is published ('currently daily from 19:00'); no closing time. 2027 re-check (2026-10-19): Only an opening time is published ('aktuell' = currently daily from 19:00); no closing time, no end date, no holiday rules.",
         "evidence": {
           "url": "https://www.greendoor.de/de/",
           "quote": "Geöffnet täglich ab 19 Uhr. ... Die Green Door hat aktuell täglich jeweils ab 19 Uhr geöffnet.",
@@ -1544,11 +2339,54 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-10",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-10",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "08:00",
+                  "20:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "08:00",
+                  "20:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "08:00",
+                  "20:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "08:00",
+                  "22:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "08:00",
+                  "20:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "08:00",
+                  "20:00"
+                ]
+              ],
+              "sun": null
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -1593,7 +2431,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": "Hall door times; individual stalls keep their own hours. Street Food Thursday runs 17:00–22:00.",
-        "notes": "No Sunday door time is published; the only Sunday listing is a children's flea market 12:00-16:00.",
+        "notes": "No Sunday door time is published; the only Sunday listing is a children's flea market 12:00-16:00. 2027 re-check (2026-10-19): Standing door times, no end date. Sunday has no door time; the separate market-times list says 'So: GESCHLOSSEN' (Sunday market closed), so Sunday kept as unknown for the hall. No holiday rules or dated 2027 closures published.",
         "evidence": {
           "url": "https://markthalleneun.de/ueber",
           "quote": "Türzeiten? Mo–Mi:08:00–20:00 Do:08:00–22:00 Fr+Sa:08:00–20:00",
@@ -1644,11 +2482,49 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-10",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-10",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": null,
+              "tue": [
+                [
+                  "18:00",
+                  null
+                ]
+              ],
+              "wed": [
+                [
+                  "18:00",
+                  null
+                ]
+              ],
+              "thu": [
+                [
+                  "18:00",
+                  null
+                ]
+              ],
+              "fri": [
+                [
+                  "18:00",
+                  null
+                ]
+              ],
+              "sat": [
+                [
+                  "18:00",
+                  null
+                ]
+              ],
+              "sun": null
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": null,
               "tue": [
@@ -1688,7 +2564,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": "Sundays by appointment. The reservation page says it is also open on Mondays from 5 October to 28 December 2026 (except 21 December); confirm when booking, as its pages disagree.",
-        "notes": "No closing time published. Winter closure 1-11 January 2027 (outside the researched period).",
+        "notes": "No closing time published. Winter closure 1-11 January 2027 (outside the researched period). 2027 re-check (2026-10-19): Standing hours, no closing time or end date. Neither the EN nor DE homepage currently shows any 2027 dates; the winter closure 1-11 January 2027 noted in the record is no longer visible, so it is not listed (not confirmed). Monday-opening banner '27.10. - 29.12.' (except 22.12.) is a 2026 promotion. Footer 'Mo. – Sa.' conflicts with main text 'Tuesday – Saturday'.",
         "evidence": {
           "url": "https://nobelhartundschmutzig.com/en/",
           "quote": "Opening hours: Tuesday – Saturday from 6:00 pm. We are open by appointment on Sundays and Mondays. [Footer:] Öffnungszeiten: Mo. – Sa. ab 18:00 Uhr",
@@ -1749,7 +2625,7 @@ window.HB_PLACES = {
       },
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-10",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-10",
@@ -1894,15 +2770,351 @@ window.HB_PLACES = {
                 ]
               ]
             }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-01-31",
+            "weekly": {
+              "mon": [
+                [
+                  "07:30",
+                  "17:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "07:30",
+                  "17:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "07:30",
+                  "17:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "07:30",
+                  "17:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "07:30",
+                  "17:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "07:30",
+                  "17:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "07:30",
+                  "17:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-02-01",
+            "to": "2027-02-28",
+            "weekly": {
+              "mon": [
+                [
+                  "07:00",
+                  "18:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "07:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "07:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "07:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "07:00",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "07:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "07:00",
+                  "18:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-03-01",
+            "to": "2027-03-31",
+            "weekly": {
+              "mon": [
+                [
+                  "06:00",
+                  "19:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "06:00",
+                  "19:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "06:00",
+                  "19:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "06:00",
+                  "19:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "06:00",
+                  "19:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "06:00",
+                  "19:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "06:00",
+                  "19:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-04-01",
+            "to": "2027-04-30",
+            "weekly": {
+              "mon": [
+                [
+                  "06:00",
+                  "20:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "06:00",
+                  "20:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "06:00",
+                  "20:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "06:00",
+                  "20:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "06:00",
+                  "20:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "06:00",
+                  "20:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "06:00",
+                  "20:30"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-05-01",
+            "to": "2027-05-15",
+            "weekly": {
+              "mon": [
+                [
+                  "06:00",
+                  "21:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "06:00",
+                  "21:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "06:00",
+                  "21:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "06:00",
+                  "21:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "06:00",
+                  "21:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "06:00",
+                  "21:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "06:00",
+                  "21:30"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-05-16",
+            "to": "2027-05-31",
+            "weekly": {
+              "mon": [
+                [
+                  "06:00",
+                  "22:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "06:00",
+                  "22:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "06:00",
+                  "22:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "06:00",
+                  "22:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "06:00",
+                  "22:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "06:00",
+                  "22:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "06:00",
+                  "22:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-06-01",
+            "to": "2027-06-30",
+            "weekly": {
+              "mon": [
+                [
+                  "06:00",
+                  "23:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "06:00",
+                  "23:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "06:00",
+                  "23:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "06:00",
+                  "23:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "06:00",
+                  "23:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "06:00",
+                  "23:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "06:00",
+                  "23:00"
+                ]
+              ]
+            }
           }
         ],
         "exceptions": [],
         "lastEntry": null,
         "caveat": "Gates close at the end of opening hours; you can still leave through turnstiles at five entrances.",
-        "notes": "The monthly table has no year; read as the current schedule. Free admission.",
+        "notes": "The monthly table has no year; read as the current schedule. Free admission. 2027 re-check (2026-10-19): Monthly table has no year ('jahreszeitenabhängig geregelt'); applied to 2027 as the standing schedule. Entrances close at end of hours; exit via turnstiles. No holiday rules or dated closures published. Free admission.",
         "evidence": {
           "url": "https://www.tempelhoferfeld.de/service-infos/besuch-planen/",
-          "quote": "Oktober: 7:00 - 19:00 Uhr; November: 7:00 - 18:00 Uhr; Dezember: 7:30 - 17:00 Uhr. Nach Ende der Öffnungszeiten werden die Eingänge geschlossen.",
+          "quote": "Januar 7:30 - 17:00 Uhr; Februar 7:00 - 18:00 Uhr; März 6:00 - 19:00 Uhr; April 6:00 - 20:30 Uhr; Mai (1.-15.) 6:00 - 21:30 Uhr; Mai (16.-31.) 6:00 - 22:00 Uhr; Juni 6:00 - 23:00 Uhr",
           "confidence": "high"
         }
       },
@@ -1950,11 +3162,54 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-10",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-10",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [],
+              "tue": [
+                [
+                  "09:00",
+                  "17:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "09:00",
+                  "17:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:00",
+                  "17:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:00",
+                  "17:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [],
               "tue": [
@@ -2021,11 +3276,61 @@ window.HB_PLACES = {
             "date": "2026-12-31",
             "hours": [],
             "note": null
+          },
+          {
+            "date": "2027-01-01",
+            "hours": null,
+            "note": "Undated special-dates list says 'Neujahr 01. Januar: 13 - 18 Uhr', but the list carries no year and matches 2026; not confirmed for 2027"
+          },
+          {
+            "date": "2027-03-26",
+            "hours": [
+              [
+                "10:00",
+                "18:00"
+              ]
+            ],
+            "note": "Good Friday: public-holiday rule applied ('Samstag, Sonntag, Feiertage: 10–18 Uhr')"
+          },
+          {
+            "date": "2027-03-29",
+            "hours": [
+              [
+                "10:00",
+                "18:00"
+              ]
+            ],
+            "note": "Easter Monday: public-holiday rule applied ('Feiertage: 10–18 Uhr')"
+          },
+          {
+            "date": "2027-05-01",
+            "hours": null,
+            "note": "Undated special-dates list says 'Tag der Arbeit 01. Mai: geschlossen', but no year given; not confirmed for 2027"
+          },
+          {
+            "date": "2027-05-06",
+            "hours": [
+              [
+                "10:00",
+                "18:00"
+              ]
+            ],
+            "note": "Ascension: public-holiday rule applied ('Feiertage: 10–18 Uhr')"
+          },
+          {
+            "date": "2027-05-17",
+            "hours": [
+              [
+                "10:00",
+                "18:00"
+              ]
+            ],
+            "note": "Whit Monday: public-holiday rule applied ('Feiertage: 10–18 Uhr')"
           }
         ],
         "lastEntry": "17:00",
         "caveat": null,
-        "notes": "Special-dates list carries no year but matches 2026.",
+        "notes": "Special-dates list carries no year but matches 2026. 2027 re-check (2026-10-19): Standing weekly hours, no end date. Special-dates list has no year and its movable dates are 2026's (Karfreitag 03. April etc.); 2027 entries derived from the general holiday rule. Exhibitions 'Fototechnik', 'Filmtechnik' and 'Chemie und Pharmazie' inaccessible 'wegen Umbauarbeiten bis auf Weiteres'.",
         "evidence": {
           "url": "https://technikmuseum.berlin/besuch/infos",
           "quote": "Montag geschlossen. Dienstag bis Freitag: 9–17:30 Uhr. Samstag, Sonntag, Feiertage: 10–18 Uhr. Letzter Einlass: 17 Uhr.",
@@ -2076,11 +3381,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-12",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-12",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -2130,7 +3483,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": "18:30",
         "caveat": "The UOB Southeast Asia Gallery is closed until late 2027; other galleries are open.",
-        "notes": "Only the building entrances (for restaurants and bars) stay open late; the galleries close at 19:00. No exceptions listed for November or December 2026.",
+        "notes": "Only the building entrances (for restaurants and bars) stay open late; the galleries close at 19:00. No exceptions listed for November or December 2026. 2027 re-check (2026-10-19): Standing weekly hours, no end date published. No 2027 or Chinese New Year closures listed. The UOB Southeast Asia Gallery is temporarily closed and will reopen in late 2027 (one gallery only, not the building). Building entrances stay open later for dining.",
         "evidence": {
           "url": "https://www.nationalgallery.sg/sg/en/visit/visitor-information.html",
           "quote": "Daily, 10am – 7pm | Last admission: 6.30pm",
@@ -2180,11 +3533,87 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-12",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-12",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "22:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "22:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "22:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "22:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "12:00",
+                  "17:00"
+                ],
+                [
+                  "18:00",
+                  "22:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "12:00",
+                  "17:00"
+                ],
+                [
+                  "18:00",
+                  "22:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "12:00",
+                  "17:00"
+                ],
+                [
+                  "18:00",
+                  "22:30"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -2262,7 +3691,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": "Last orders: lunch 14:30, high tea 16:00, dinner 21:30",
         "caveat": "High tea (15:00-17:00) is served Friday to Sunday only. Enter by the Gallery's Coleman Street entrance.",
-        "notes": "Friday to Sunday, lunch runs straight into high tea, so the hours are merged as 12:00-17:00.",
+        "notes": "Friday to Sunday, lunch runs straight into high tea, so the hours are merged as 12:00-17:00. 2027 re-check (2026-10-19): Standing weekly hours, no end date published. No holiday or 2027 closures listed.",
         "evidence": {
           "url": "https://violetoon.com/national-kitchen-by-violet-oon-national-gallery-singapore/",
           "quote": "Lunch 12PM – 3PM (last order 2:30PM) | High Tea 3PM – 5PM (last order 4PM) Friday – Sunday only | Dinner 6PM – 10.30PM (last order 9:30PM)",
@@ -2312,11 +3741,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-12",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-12",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -2366,7 +3843,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": "17:00",
         "caveat": "Entry to the museum is free; selected exhibitions are ticketed separately.",
-        "notes": "Read directly from the operator's page on 2026-10-12 (an earlier automated fetch timed out).",
+        "notes": "Read directly from the operator's page on 2026-10-12 (an earlier automated fetch timed out). 2027 re-check (2026-10-19): Read in a browser on 2026-10-19 (automated fetches were refused); standing weekly hours unchanged, no end date published.",
         "evidence": {
           "url": "https://www.marinabaysands.com/museum/plan-your-visit.html",
           "quote": "Opening Hours Days Time Daily 9am – 6pm (Last entry at 5pm) Box Office: 9am – 5pm",
@@ -2416,11 +3893,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-12",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-12",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "05:00",
+                  "02:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "05:00",
+                  "02:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "05:00",
+                  "02:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "05:00",
+                  "02:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "05:00",
+                  "02:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "05:00",
+                  "02:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "05:00",
+                  "02:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -2470,7 +3995,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": "The Garden Rhapsody light show runs daily at 19:45 and 20:45. Supertree Grove may be ticketed during Christmas events (from 29 November; dates not published).",
-        "notes": "Hours cover the free outdoor gardens only; the conservatories and Skyway are ticketed and have their own maintenance days. Pedestrians on the Waterfront Promenade have a slight diversion.",
+        "notes": "Hours cover the free outdoor gardens only; the conservatories and Skyway are ticketed and have their own maintenance days. Pedestrians on the Waterfront Promenade have a slight diversion. 2027 re-check (2026-10-19): Standing weekly hours, no end date published. The page lists 2027 maintenance closures only for the ticketed attractions, not the outdoor gardens. Flower Dome: 12 Jan, 2 Feb, 2 Mar, 13 Apr, 24 May, 30 Jun. Cloud Forest: 19 Jan, 23 Feb, 23 Mar, 27 Apr, 11 May, 29 Jun. Floral Fantasy: 20 Jan, 24 Feb, 24 Mar, 28 Apr, 12 May. OCBC Skyway: 6 Jan, 3 Feb, 3 Mar, 7 Apr, 26 May. Supertree Observatory: 26 Jan, 16 Feb, 30 Mar, 20 Apr, 4 May. Chinese New Year is not mentioned.",
         "evidence": {
           "url": "https://www.gardensbythebay.com.sg/en/plan-your-visit/opening-hours.html",
           "quote": "Outdoor Gardens ... Daily: 5.00am – 2.00am. | Garden Rhapsody: Daily, 7.45pm & 8.45pm",
@@ -2530,11 +4055,59 @@ window.HB_PLACES = {
       },
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-12",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-12",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "05:00",
+                  "24:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "05:00",
+                  "24:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "05:00",
+                  "24:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "05:00",
+                  "24:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "05:00",
+                  "24:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "05:00",
+                  "24:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "05:00",
+                  "24:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -2584,7 +4157,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": "Some boardwalks and trails close from 19:00 to 07:00. The National Orchid Garden is ticketed separately.",
-        "notes": "The Healing Garden closes on Tuesdays and the Heritage Museum on the last Monday of each month. Dated maintenance closures of individual attractions were not readable.",
+        "notes": "The Healing Garden closes on Tuesdays and the Heritage Museum on the last Monday of each month. Dated maintenance closures of individual attractions were not readable. 2027 re-check (2026-10-19): Standing weekly hours, no end date published. No dated 2027 closures. Individual attractions have recurring closures: Healing Garden every Tuesday; Jacob Ballas Children's Garden Mondays unless a public holiday; others on the last Mon/Tue/Wed/Thu of the month. Footer says last updated 19 October 2026.",
         "evidence": {
           "url": "https://sbg.nparks.gov.sg/visit/general-info/",
           "quote": "Gardens 5am to 12mn daily",
@@ -2634,11 +4207,87 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-12",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-12",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "22:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "22:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "22:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "22:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "22:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "22:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "22:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -2716,7 +4365,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": null,
-        "notes": "No closure dates listed. Reservations are taken online.",
+        "notes": "No closure dates listed. Reservations are taken online. 2027 re-check (2026-10-19): Standing weekly hours, no end date published. No dated closures and no separate public-holiday hours; dinner also runs on public-holiday eves.",
         "evidence": {
           "url": "https://www.comoepicurean.com/restaurants/candlenut/",
           "quote": "Lunch: Mon to Sun, 12pm to 3pm | Dinner: Mon to Sun, Eve of Public Holidays, 6pm to 10pm",
@@ -2776,11 +4425,59 @@ window.HB_PLACES = {
       },
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-12",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-12",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "08:30",
+                  "18:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "08:30",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "08:30",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "08:30",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "08:30",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "08:30",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "08:30",
+                  "18:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -2841,7 +4538,7 @@ window.HB_PLACES = {
         ],
         "lastEntry": "17:00",
         "caveat": "The African Penguin exhibit is closed for upgrading until 30 November 2026.",
-        "notes": "No holiday exceptions listed. Last tram departures run from 17:30 to 18:15 depending on the station.",
+        "notes": "No holiday exceptions listed. Last tram departures run from 17:30 to 18:15 depending on the station. 2027 re-check (2026-10-19): Standing weekly hours, no end date published. Only 2026 exhibit closures are listed (penguins to 30 Nov 2026, etc.). Nothing for 2027 or holidays.",
         "evidence": {
           "url": "https://www.mandai.com/en/singapore-zoo.html",
           "quote": "Opening Hours: Daily, 8:30am – 6:00pm (Last Entry: 5:00pm)",
@@ -2891,11 +4588,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-12",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-12",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "07:30",
+                  "19:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "07:30",
+                  "19:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "07:30",
+                  "19:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "07:30",
+                  "19:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "07:30",
+                  "19:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "07:30",
+                  "19:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "07:30",
+                  "19:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -2945,7 +4690,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": "15:50 (hot food last order)",
         "caveat": "Festive closures are announced only on the café's Instagram.",
-        "notes": "Tiong Bahru branch only; the other branches are excluded.",
+        "notes": "Tiong Bahru branch only; the other branches are excluded. 2027 re-check (2026-10-19): Standing weekly hours, no end date published. Festive closures (e.g. Chinese New Year) are posted only on Instagram, which was not checked. Possible CNY closure unknown.",
         "evidence": {
           "url": "https://plainvanilla.com.sg/pages/stores",
           "quote": "Daily 7.30am — 7pm. Last orders for hot food menu is at 3.50pm.",
@@ -2995,11 +4740,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-12",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-12",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "07:30",
+                  "20:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "07:30",
+                  "20:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "07:30",
+                  "20:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "07:30",
+                  "20:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "07:30",
+                  "20:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "08:00",
+                  "20:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "08:00",
+                  "20:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -3049,7 +4842,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": null,
-        "notes": "Eng Hoon Street branch only. The page does not say which hours apply on public holidays.",
+        "notes": "Eng Hoon Street branch only. The page does not say which hours apply on public holidays. 2027 re-check (2026-10-19): Standing weekly hours, no end date published. No public-holiday or dated closures stated.",
         "evidence": {
           "url": "https://tiongbahrubakery.com/pages/locations",
           "quote": "Mon – Fri from 7.30am to 8pm; Sat – Sun from 8am – 8pm",
@@ -3099,11 +4892,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-12",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-12",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "11:30",
+                  "23:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "11:30",
+                  "23:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "11:30",
+                  "23:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "11:30",
+                  "23:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "11:30",
+                  "23:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "11:30",
+                  "23:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "11:30",
+                  "23:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -3153,7 +4994,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": "22:15 (last order)",
         "caveat": null,
-        "notes": "Riverside Point branch only. No closures listed.",
+        "notes": "Riverside Point branch only. No closures listed. 2027 re-check (2026-10-19): Standing weekly hours, no end date published. No dated closures.",
         "evidence": {
           "url": "https://www.jumboseafood.com.sg/en/riverside-point",
           "quote": "Operating Hours (Daily) 11:30am – 11:00pm (Last order 10:15pm)",
@@ -3203,11 +5044,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-12",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-12",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "18:00",
+                  "24:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "18:00",
+                  "24:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "18:00",
+                  "02:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "18:00",
+                  "02:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "18:00",
+                  "02:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "18:00",
+                  "02:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "18:00",
+                  "24:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -3257,7 +5146,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": "Guests must be over 18.",
-        "notes": "No holiday exceptions stated.",
+        "notes": "No holiday exceptions stated. 2027 re-check (2026-10-19): Standing weekly hours, no end date published. No holiday exceptions. The page also shows a leftover site-builder message about the newsletter form ('needs a storage option'); it is aimed at the site editor and is not AI-directed.",
         "evidence": {
           "url": "https://www.jiggerandpony.com/",
           "quote": "Sundays, Mondays & Tuesdays: 6pm - 12am; Wednesdays to Saturdays: 6pm - 2am; Happy Hour: daily 6pm - 7:30pm",
@@ -3307,11 +5196,49 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-12",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-12",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "15:00",
+                  "24:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "12:00",
+                  "24:00"
+                ]
+              ],
+              "wed": null,
+              "thu": [
+                [
+                  "12:00",
+                  "24:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "12:00",
+                  "02:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "12:00",
+                  "02:00"
+                ]
+              ],
+              "sun": []
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -3357,7 +5284,7 @@ window.HB_PLACES = {
         ],
         "lastEntry": null,
         "caveat": "The bar's page shows two different sets of hours and none for regular Wednesdays; confirm with the bar before you go. Smart-casual dress code from 17:00.",
-        "notes": "Weekly hours follow the page's header block, which carries a dated closure for 14 Oct 2026 and so looks current; the footer block (Mon-Thu 10:00-01:00, Fri 10:00-02:00, Sat 15:00-02:00) looks older. Both say closed on Sundays. Spot-checked on the page on 2026-10-12.",
+        "notes": "Weekly hours follow the page's header block, which carries a dated closure for 14 Oct 2026 and so looks current; the footer block (Mon-Thu 10:00-01:00, Fri 10:00-02:00, Sat 15:00-02:00) looks older. Both say closed on Sundays. Spot-checked on the page on 2026-10-12. 2027 re-check (2026-10-19): The page still shows two conflicting sets of hours (a block reading 'Tues - Thurs: 12pm - 12am' and footer hours); the hours on record are kept and Wednesday stays unknown.",
         "evidence": {
           "url": "https://www.atlasbar.sg/",
           "quote": "Header: Mon: 3pm - 12am / 14 Oct Wed: CLOSED / Tues & Thurs: 12pm - 12am / Fri - Sat: 12pm - 2am / Sun: Closed. Footer: MON - THU: 10am - 1am / FRI: 10am - 2am / SAT: 3pm - 2am / SUN: Closed",
@@ -3407,11 +5334,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "12:00",
+                  "19:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "12:00",
+                  "19:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "12:00",
+                  "19:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "12:00",
+                  "19:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "12:00",
+                  "19:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "12:00",
+                  "19:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "12:00",
+                  "19:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -3461,7 +5436,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": "Individual studios and shops set their own hours, so some may be closed within the general noon-7 PM window.",
-        "notes": "General hours not tied to specific days; cafés and restaurants keep 09:00-23:00.",
+        "notes": "General hours not tied to specific days; cafés and restaurants keep 09:00-23:00. 2027 re-check (2026-10-19): Standing hours, no end date published; no dated closures or holiday rules on page. Individual tenants set their own hours.",
         "evidence": {
           "url": "https://www.pmq.org.hk/tourist-information/explore-pmq/?lang=en",
           "quote": "Studios and shops: 12:00nn – 7:00pm; Cafes and restaurants: 9:00am – 11:00pm",
@@ -3512,11 +5487,87 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "23:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "23:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "23:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "23:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "23:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "23:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "12:00",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  "23:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -3594,7 +5645,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": "Last orders: lunch 14:30, dinner 21:30",
         "caveat": null,
-        "notes": "Main dining room hours; the 4/F Upper Room keeps longer hours. No dated holiday hours are published.",
+        "notes": "Main dining room hours; the 4/F Upper Room keeps longer hours. No dated holiday hours are published. 2027 re-check (2026-10-19): Standing weekly hours, no end date published. A Lunar New Year image appears on the page but carries no readable hours or closure text.",
         "evidence": {
           "url": "https://duddells.co/",
           "quote": "3/F Main Dining Room: Monday ~ Sunday 12pm-3pm (2:30pm last order) 6pm-11pm (9:30pm last order)",
@@ -3645,11 +5696,87 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "12:00",
+                  "14:30"
+                ],
+                [
+                  "18:00",
+                  null
+                ]
+              ],
+              "tue": [
+                [
+                  "12:00",
+                  "14:30"
+                ],
+                [
+                  "18:00",
+                  null
+                ]
+              ],
+              "wed": [
+                [
+                  "12:00",
+                  "14:30"
+                ],
+                [
+                  "18:00",
+                  null
+                ]
+              ],
+              "thu": [
+                [
+                  "12:00",
+                  "14:30"
+                ],
+                [
+                  "18:00",
+                  null
+                ]
+              ],
+              "fri": [
+                [
+                  "12:00",
+                  "14:30"
+                ],
+                [
+                  "18:00",
+                  null
+                ]
+              ],
+              "sat": [
+                [
+                  "11:30",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  null
+                ]
+              ],
+              "sun": [
+                [
+                  "11:30",
+                  "15:00"
+                ],
+                [
+                  "18:00",
+                  null
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -3742,7 +5869,7 @@ window.HB_PLACES = {
         ],
         "lastEntry": "Dinner: last seating 20:30, last order 21:00",
         "caveat": "Reserve ahead. Lunch has a minimum spend of HKD 700 plus service per person aged 12+, and on weekdays children must be 7 or older. Smart-casual dress.",
-        "notes": "Read in a browser (automated fetches were refused). No dinner closing time is published, only last seating and last order.",
+        "notes": "Read in a browser (automated fetches were refused). No dinner closing time is published, only last seating and last order. 2027 re-check (2026-10-19): Read in a browser on 2026-10-19 (automated fetches were refused); standing weekly hours unchanged, no end date published.",
         "evidence": {
           "url": "https://www.fourseasons.com/hongkong/dining/restaurants/lung_king_heen/",
           "quote": "LUNCH MONDAY – FRIDAY 12:00 NOON – 2:30 PM ... SATURDAY, SUNDAY AND PUBLIC HOLIDAYS 11:30 AM – 3:00 PM ... DINNER 6:00 – 8:30 PM (LAST SEATING) 9:00 PM (LAST ORDER)",
@@ -3793,11 +5920,54 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "17:00",
+                  "01:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "17:00",
+                  "01:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "17:00",
+                  "01:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "17:00",
+                  "01:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "17:00",
+                  "02:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "17:00",
+                  "02:00"
+                ]
+              ],
+              "sun": null
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -3842,7 +6012,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": "No Sunday hours are published. Children 8 and older are welcome; smart-casual dress.",
-        "notes": "Read in a browser (automated fetches were refused).",
+        "notes": "Read in a browser (automated fetches were refused). 2027 re-check (2026-10-19): Read in a browser on 2026-10-19 (automated fetches were refused); standing weekly hours unchanged, no end date published.",
         "evidence": {
           "url": "https://www.fourseasons.com/hongkong/dining/lounges/argo/",
           "quote": "MONDAY – THURSDAY 5:00 PM – 1:00 AM ... FRIDAY – SATURDAY 5:00 PM – 2:00 AM",
@@ -3893,11 +6063,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "06:30",
+                  "23:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "06:30",
+                  "23:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "06:30",
+                  "23:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "06:30",
+                  "23:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "06:30",
+                  "23:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "06:30",
+                  "23:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "06:30",
+                  "23:30"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -3947,7 +6165,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": "23:30 (last sailing)",
         "caveat": "Sailings run every 6-12 minutes; times can vary with sea and weather conditions.",
-        "notes": "Hours are the first and last sailings from Tsim Sha Tsui; Central runs the same span.",
+        "notes": "Hours are the first and last sailings from Tsim Sha Tsui; Central runs the same span. 2027 re-check (2026-10-19): Standing timetable, no end date published; first 06:30 / last 23:30 from both piers on all day types, so public holidays do not change the span. No dated service notices.",
         "evidence": {
           "url": "https://www.starferry.com.hk/en/service",
           "quote": "From Tsim Sha Tsui, Mon–Fri: first 06:30, last 23:30; Sat, Sun & public holidays: first 06:30, last 23:30",
@@ -3998,11 +6216,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "08:00",
+                  "21:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "08:00",
+                  "21:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "08:00",
+                  "21:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "08:00",
+                  "21:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "08:00",
+                  "21:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "21:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "21:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -4059,11 +6325,81 @@ window.HB_PLACES = {
               ]
             ],
             "note": "Public holiday hours"
+          },
+          {
+            "date": "2027-01-01",
+            "hours": [
+              [
+                "09:00",
+                "21:00"
+              ]
+            ],
+            "note": "Public holiday rule: 'Sat – Sun & Public Holidays 9am – 9pm'"
+          },
+          {
+            "date": "2027-02-08",
+            "hours": [
+              [
+                "09:00",
+                "21:00"
+              ]
+            ],
+            "note": "Public holiday rule (third day of Lunar New Year)"
+          },
+          {
+            "date": "2027-03-26",
+            "hours": [
+              [
+                "09:00",
+                "21:00"
+              ]
+            ],
+            "note": "Public holiday rule (Good Friday)"
+          },
+          {
+            "date": "2027-03-29",
+            "hours": [
+              [
+                "09:00",
+                "21:00"
+              ]
+            ],
+            "note": "Public holiday rule (Easter Monday)"
+          },
+          {
+            "date": "2027-04-05",
+            "hours": [
+              [
+                "09:00",
+                "21:00"
+              ]
+            ],
+            "note": "Public holiday rule (Ching Ming)"
+          },
+          {
+            "date": "2027-05-13",
+            "hours": [
+              [
+                "09:00",
+                "21:00"
+              ]
+            ],
+            "note": "Public holiday rule (Buddha's Birthday)"
+          },
+          {
+            "date": "2027-06-09",
+            "hours": [
+              [
+                "09:00",
+                "21:00"
+              ]
+            ],
+            "note": "Public holiday rule (Tuen Ng)"
           }
         ],
         "lastEntry": null,
         "caveat": null,
-        "notes": "Sun Arcade branch only; the Tsim Sha Tsui East branch is excluded.",
+        "notes": "Sun Arcade branch only; the Tsim Sha Tsui East branch is excluded. 2027 re-check (2026-10-19): Standing hours, no end date published; weekday public holidays get the stated weekend/PH hours. No Lunar New Year closures published.",
         "evidence": {
           "url": "https://noc.coffee/locations/tsim-sha-tsui/",
           "quote": "Monday to Friday: 8am to 9pm; Saturday to Sunday and public holidays: 9am to 9pm",
@@ -4114,11 +6450,54 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [],
+              "tue": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "22:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [],
               "tue": [
@@ -4185,11 +6564,26 @@ window.HB_PLACES = {
               ]
             ],
             "note": "Free admission day with late opening"
+          },
+          {
+            "date": "2027-02-08",
+            "hours": null,
+            "note": "Monday public holiday; page says museum 'is open on all public holidays unless otherwise announced'; hours for a holiday Monday not stated (a 2026 holiday Monday notice gave 10:00–18:00)"
+          },
+          {
+            "date": "2027-03-29",
+            "hours": null,
+            "note": "Monday public holiday (Easter Monday); same 'open on all public holidays' rule, hours not stated"
+          },
+          {
+            "date": "2027-04-05",
+            "hours": null,
+            "note": "Monday public holiday (Ching Ming); same 'open on all public holidays' rule, hours not stated"
           }
         ],
         "lastEntry": "30 minutes before closing",
         "caveat": "Closed on Mondays. Black Rainstorm or Typhoon Signal 8 can close or delay opening.",
-        "notes": "Gallery hours. Open on public holidays unless announced otherwise.",
+        "notes": "Gallery hours. Open on public holidays unless announced otherwise. 2027 re-check (2026-10-19): Standing hours, no end date; no 2027 notices and no Lunar New Year closure rule on page. Only 2026 dated notices (31 Oct closed, 2 Nov open).",
         "evidence": {
           "url": "https://www.mplus.org.hk/en/plan-your-visit/",
           "quote": "Tuesdays to Thursdays and weekends: 10:00–18:00; Fridays: 10:00–22:00; Mondays: Closed",
@@ -4240,7 +6634,7 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
@@ -4289,12 +6683,111 @@ window.HB_PLACES = {
                 ]
               ]
             }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
+            "weekly": {
+              "mon": [
+                [
+                  "08:00",
+                  "21:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "08:00",
+                  "21:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "08:00",
+                  "21:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "08:00",
+                  "21:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "08:00",
+                  "21:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "08:00",
+                  "21:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "08:00",
+                  "21:30"
+                ]
+              ]
+            }
           }
         ],
-        "exceptions": [],
+        "exceptions": [
+          {
+            "date": "2027-02-08",
+            "hours": [
+              [
+                "08:00",
+                "21:30"
+              ]
+            ],
+            "note": "Public holiday rule: 'Fri - Sun & Public Holidays: 08:00 - 21:30'"
+          },
+          {
+            "date": "2027-03-29",
+            "hours": [
+              [
+                "08:00",
+                "21:30"
+              ]
+            ],
+            "note": "Public holiday rule (Easter Monday)"
+          },
+          {
+            "date": "2027-04-05",
+            "hours": [
+              [
+                "08:00",
+                "21:30"
+              ]
+            ],
+            "note": "Public holiday rule (Ching Ming)"
+          },
+          {
+            "date": "2027-05-13",
+            "hours": [
+              [
+                "08:00",
+                "21:30"
+              ]
+            ],
+            "note": "Public holiday rule (Buddha's Birthday)"
+          },
+          {
+            "date": "2027-06-09",
+            "hours": [
+              [
+                "08:00",
+                "21:30"
+              ]
+            ],
+            "note": "Public holiday rule (Tuen Ng)"
+          }
+        ],
         "lastEntry": null,
         "caveat": null,
-        "notes": "The Wan Chai menu page gives Friday dinner until 21:00, the locations page 21:30. Weekday breakfast 08:00-11:45; weekend brunch 08:00-14:45. Wan Chai branch only.",
+        "notes": "The Wan Chai menu page gives Friday dinner until 21:00, the locations page 21:30. Weekday breakfast 08:00-11:45; weekend brunch 08:00-14:45. Wan Chai branch only. 2027 re-check (2026-10-19): Standing hours, no end date; only Mon–Thu public holidays listed (Fri/Sat holidays already 21:30). No Lunar New Year closures published.",
         "evidence": {
           "url": "https://www.bakehouse.hk/locations",
           "quote": "Mon - Thur: 08:00 - 21:00; Fri - Sun & Public Holidays: 08:00 - 21:30",
@@ -4345,11 +6838,54 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "tue": [],
+              "wed": [
+                [
+                  "09:00",
+                  "21:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:00",
+                  "21:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -4396,11 +6932,21 @@ window.HB_PLACES = {
             "date": "2026-12-25",
             "hours": [],
             "note": "Closed 1 January, 1 May and 25 December"
+          },
+          {
+            "date": "2027-01-01",
+            "hours": [],
+            "note": "General rule applied: 'the Louvre is closed on 1 January, 1 May and 25 December.'"
+          },
+          {
+            "date": "2027-05-01",
+            "hours": [],
+            "note": "General rule applied: 'the Louvre is closed on 1 January, 1 May and 25 December.'"
           }
         ],
         "lastEntry": "1 hour before closing",
         "caveat": "Timed reservation is required for every visitor from 17 October to 1 November 2026. Rooms start closing 30 minutes before the museum.",
-        "notes": "Open on other public holidays unless they fall on a Tuesday. The Porte des Lions entrance keeps shorter hours.",
+        "notes": "Open on other public holidays unless they fall on a Tuesday. The Porte des Lions entrance keeps shorter hours. 2027 re-check (2026-10-19): Standing weekly hours, no end date published. Other public holidays open unless on a Tuesday (Easter Monday, Ascension, Whit Monday 2027 are not Tuesdays). Last entry 1 hour before closing. The page also carries a stray line 'The museum is closed all day', apparently a same-day status widget; not treated as a closure.",
         "evidence": {
           "url": "https://www.louvre.fr/en/visit/hours-admission",
           "quote": "9:00 AM to 6:00 PM Monday, Thursday, Saturday and Sunday; 9:00 AM to 9:00 PM Wednesday and Friday; Closed Tuesday",
@@ -4450,11 +6996,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "08:30",
+                  "20:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "08:30",
+                  "20:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "08:30",
+                  "20:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "08:30",
+                  "20:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "08:30",
+                  "20:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "08:30",
+                  "20:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "08:30",
+                  "20:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -4504,7 +7098,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": "These are the passage's hours; its shops keep their own, often shorter, hours.",
-        "notes": "Published by the passage merchants' site, not a public body.",
+        "notes": "Published by the passage merchants' site, not a public body. 2027 re-check (2026-10-19): Standing weekly hours, no end date published; no holiday closures listed.",
         "evidence": {
           "url": "https://www.galerie-vivienne.com/",
           "quote": "du lundi au dimanche de 8h30 à 20h",
@@ -4554,11 +7148,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "18:30",
+                  "21:15"
+                ]
+              ],
+              "tue": [
+                [
+                  "18:30",
+                  "21:15"
+                ]
+              ],
+              "wed": [
+                [
+                  "18:30",
+                  "21:15"
+                ]
+              ],
+              "thu": [
+                [
+                  "18:30",
+                  "21:15"
+                ]
+              ],
+              "fri": [
+                [
+                  "18:30",
+                  "21:15"
+                ]
+              ],
+              "sat": [
+                [
+                  "18:30",
+                  "21:15"
+                ]
+              ],
+              "sun": [
+                [
+                  "18:30",
+                  "21:15"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -4608,7 +7250,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": "Dinner only, one set menu; book through the restaurant's site or by phone.",
-        "notes": "An embedded post on the same site says 21:30; 21:15 may be the last seating.",
+        "notes": "An embedded post on the same site says 21:30; 21:15 may be the last seating. 2027 re-check (2026-10-19): Standing weekly hours, no end date published; no closures listed. An embedded Instagram post on the page still says 'Tous les jours, de 18h30 à 21h30' (21:15 is likely last seating).",
         "evidence": {
           "url": "https://www.frenchie-ruedunil.com/",
           "quote": "Lundi — Dimanche 18H30 — 21H15",
@@ -4658,11 +7300,54 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "07:15",
+                  "20:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "07:15",
+                  "20:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "07:15",
+                  "20:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "07:15",
+                  "20:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "07:15",
+                  "20:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "07:15",
+                  "20:00"
+                ]
+              ],
+              "sun": []
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -4707,7 +7392,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": null,
-        "notes": "The original rue du Cherche-Midi shop only. No holiday closures published.",
+        "notes": "The original rue du Cherche-Midi shop only. No holiday closures published. 2027 re-check (2026-10-19): Standing weekly hours, no end date published; no holiday closures listed.",
         "evidence": {
           "url": "https://www.poilane.com/pages/boulangerie-poilane-saint-germain-des-pres",
           "quote": "Lundi–Samedi : 7h15 – 20h00 ; Dimanche : Fermé",
@@ -4757,7 +7442,7 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
@@ -5046,12 +7731,636 @@ window.HB_PLACES = {
                 ]
               ]
             }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-01-15",
+            "weekly": {
+              "mon": [
+                [
+                  "08:15",
+                  "16:45"
+                ]
+              ],
+              "tue": [
+                [
+                  "08:15",
+                  "16:45"
+                ]
+              ],
+              "wed": [
+                [
+                  "08:15",
+                  "16:45"
+                ]
+              ],
+              "thu": [
+                [
+                  "08:15",
+                  "16:45"
+                ]
+              ],
+              "fri": [
+                [
+                  "08:15",
+                  "16:45"
+                ]
+              ],
+              "sat": [
+                [
+                  "08:15",
+                  "16:45"
+                ]
+              ],
+              "sun": [
+                [
+                  "08:15",
+                  "16:45"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-16",
+            "to": "2027-01-31",
+            "weekly": {
+              "mon": [
+                [
+                  "08:15",
+                  "17:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "08:15",
+                  "17:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "08:15",
+                  "17:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "08:15",
+                  "17:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "08:15",
+                  "17:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "08:15",
+                  "17:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "08:15",
+                  "17:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-02-01",
+            "to": "2027-02-15",
+            "weekly": {
+              "mon": [
+                [
+                  "08:00",
+                  "17:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "08:00",
+                  "17:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "08:00",
+                  "17:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "08:00",
+                  "17:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "08:00",
+                  "17:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "08:00",
+                  "17:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "08:00",
+                  "17:30"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-02-16",
+            "to": "2027-02-28",
+            "weekly": {
+              "mon": [
+                [
+                  "07:45",
+                  "17:45"
+                ]
+              ],
+              "tue": [
+                [
+                  "07:45",
+                  "17:45"
+                ]
+              ],
+              "wed": [
+                [
+                  "07:45",
+                  "17:45"
+                ]
+              ],
+              "thu": [
+                [
+                  "07:45",
+                  "17:45"
+                ]
+              ],
+              "fri": [
+                [
+                  "07:45",
+                  "17:45"
+                ]
+              ],
+              "sat": [
+                [
+                  "07:45",
+                  "17:45"
+                ]
+              ],
+              "sun": [
+                [
+                  "07:45",
+                  "17:45"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-03-01",
+            "to": "2027-03-15",
+            "weekly": {
+              "mon": [
+                [
+                  "07:30",
+                  "18:15"
+                ]
+              ],
+              "tue": [
+                [
+                  "07:30",
+                  "18:15"
+                ]
+              ],
+              "wed": [
+                [
+                  "07:30",
+                  "18:15"
+                ]
+              ],
+              "thu": [
+                [
+                  "07:30",
+                  "18:15"
+                ]
+              ],
+              "fri": [
+                [
+                  "07:30",
+                  "18:15"
+                ]
+              ],
+              "sat": [
+                [
+                  "07:30",
+                  "18:15"
+                ]
+              ],
+              "sun": [
+                [
+                  "07:30",
+                  "18:15"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-03-16",
+            "to": "2027-03-27",
+            "weekly": {
+              "mon": [
+                [
+                  "07:30",
+                  "18:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "07:30",
+                  "18:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "07:30",
+                  "18:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "07:30",
+                  "18:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "07:30",
+                  "18:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "07:30",
+                  "18:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "07:30",
+                  "18:30"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-03-28",
+            "to": "2027-03-31",
+            "weekly": {
+              "mon": [
+                [
+                  "07:30",
+                  "19:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "07:30",
+                  "19:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "07:30",
+                  "19:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "07:30",
+                  "19:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "07:30",
+                  "19:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "07:30",
+                  "19:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "07:30",
+                  "19:30"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-04-01",
+            "to": "2027-04-15",
+            "weekly": {
+              "mon": [
+                [
+                  "07:30",
+                  "20:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "07:30",
+                  "20:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "07:30",
+                  "20:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "07:30",
+                  "20:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "07:30",
+                  "20:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "07:30",
+                  "20:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "07:30",
+                  "20:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-04-16",
+            "to": "2027-04-30",
+            "weekly": {
+              "mon": [
+                [
+                  "07:30",
+                  "20:15"
+                ]
+              ],
+              "tue": [
+                [
+                  "07:30",
+                  "20:15"
+                ]
+              ],
+              "wed": [
+                [
+                  "07:30",
+                  "20:15"
+                ]
+              ],
+              "thu": [
+                [
+                  "07:30",
+                  "20:15"
+                ]
+              ],
+              "fri": [
+                [
+                  "07:30",
+                  "20:15"
+                ]
+              ],
+              "sat": [
+                [
+                  "07:30",
+                  "20:15"
+                ]
+              ],
+              "sun": [
+                [
+                  "07:30",
+                  "20:15"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-05-01",
+            "to": "2027-05-15",
+            "weekly": {
+              "mon": [
+                [
+                  "07:30",
+                  "20:45"
+                ]
+              ],
+              "tue": [
+                [
+                  "07:30",
+                  "20:45"
+                ]
+              ],
+              "wed": [
+                [
+                  "07:30",
+                  "20:45"
+                ]
+              ],
+              "thu": [
+                [
+                  "07:30",
+                  "20:45"
+                ]
+              ],
+              "fri": [
+                [
+                  "07:30",
+                  "20:45"
+                ]
+              ],
+              "sat": [
+                [
+                  "07:30",
+                  "20:45"
+                ]
+              ],
+              "sun": [
+                [
+                  "07:30",
+                  "20:45"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-05-16",
+            "to": "2027-05-31",
+            "weekly": {
+              "mon": [
+                [
+                  "07:30",
+                  "21:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "07:30",
+                  "21:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "07:30",
+                  "21:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "07:30",
+                  "21:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "07:30",
+                  "21:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "07:30",
+                  "21:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "07:30",
+                  "21:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-06-01",
+            "to": "2027-06-15",
+            "weekly": {
+              "mon": [
+                [
+                  "07:30",
+                  "21:15"
+                ]
+              ],
+              "tue": [
+                [
+                  "07:30",
+                  "21:15"
+                ]
+              ],
+              "wed": [
+                [
+                  "07:30",
+                  "21:15"
+                ]
+              ],
+              "thu": [
+                [
+                  "07:30",
+                  "21:15"
+                ]
+              ],
+              "fri": [
+                [
+                  "07:30",
+                  "21:15"
+                ]
+              ],
+              "sat": [
+                [
+                  "07:30",
+                  "21:15"
+                ]
+              ],
+              "sun": [
+                [
+                  "07:30",
+                  "21:15"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-06-16",
+            "to": "2027-06-30",
+            "weekly": {
+              "mon": [
+                [
+                  "07:30",
+                  "21:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "07:30",
+                  "21:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "07:30",
+                  "21:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "07:30",
+                  "21:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "07:30",
+                  "21:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "07:30",
+                  "21:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "07:30",
+                  "21:30"
+                ]
+              ]
+            }
           }
         ],
         "exceptions": [],
         "lastEntry": null,
         "caveat": "Gate times change on the 1st and 16th of each month to follow daylight.",
-        "notes": "The page's periods '16 to the last Saturday of October' and 'last Sunday of October to 31 October' fall on 16-24 and 25-31 October in 2026.",
+        "notes": "The page's periods '16 to the last Saturday of October' and 'last Sunday of October to 31 October' fall on 16-24 and 25-31 October in 2026. 2027 re-check (2026-10-19): Recurring half-monthly gate table, no year stated. The page's periods '16 au dernier samedi de mars' and 'Dernier dimanche de mars au 31 mars' fall on 16-27 and 28-31 March in 2027. No closures listed (weather closures not published in advance).",
         "evidence": {
           "url": "https://jardin.senat.fr/infos-pratiques/horaires-douverture.html",
           "quote": "Le Jardin adapte ses horaires tous les quinze jours au lever et coucher du soleil.",
@@ -5101,7 +8410,7 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
@@ -5145,12 +8454,61 @@ window.HB_PLACES = {
                 ]
               ]
             }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
+            "weekly": {
+              "mon": [],
+              "tue": [
+                [
+                  "09:30",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "09:30",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:30",
+                  "21:45"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:30",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:30",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:30",
+                  "18:00"
+                ]
+              ]
+            }
           }
         ],
-        "exceptions": [],
+        "exceptions": [
+          {
+            "date": "2027-05-01",
+            "hours": [],
+            "note": "Closed every Monday, May 1, and December 25 (standing rule)"
+          }
+        ],
         "lastEntry": "17:00 (later on Thursdays)",
         "caveat": null,
-        "notes": "Read in a browser (automated fetches were refused). Galleries close at 17:30 on ordinary days.",
+        "notes": "Read in a browser (automated fetches were refused). Galleries close at 17:30 on ordinary days. 2027 re-check (2026-10-19): Read in a browser on 2026-10-19 (automated fetches were refused); standing weekly hours unchanged, no end date published.",
         "evidence": {
           "url": "https://www.musee-orsay.fr/en/visit",
           "quote": "Monday Closed / Tuesday 9.30am 6.00pm / ... / Thursday 9.30am 9.45pm / ... Last admission to the museum at 5:00 p.m.",
@@ -5200,7 +8558,7 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
@@ -5249,6 +8607,102 @@ window.HB_PLACES = {
                 ]
               ]
             }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-03-31",
+            "weekly": {
+              "mon": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-04-01",
+            "to": "2027-06-30",
+            "weekly": {
+              "mon": [
+                [
+                  "09:00",
+                  "19:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "09:00",
+                  "19:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "09:00",
+                  "19:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:00",
+                  "19:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:00",
+                  "19:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "19:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "19:00"
+                ]
+              ]
+            }
           }
         ],
         "exceptions": [
@@ -5256,14 +8710,24 @@ window.HB_PLACES = {
             "date": "2026-12-25",
             "hours": [],
             "note": "Closed 1 January, 1 May and 25 December"
+          },
+          {
+            "date": "2027-01-01",
+            "hours": [],
+            "note": "General rule applied: 'Closed on 1 January, 1 May and 25 December.'"
+          },
+          {
+            "date": "2027-05-01",
+            "hours": [],
+            "note": "General rule applied: 'Closed on 1 January, 1 May and 25 December.'"
           }
         ],
         "lastEntry": "16:30",
         "caveat": null,
-        "notes": "Winter hours (1 October to 31 March).",
+        "notes": "Winter hours (1 October to 31 March). 2027 re-check (2026-10-19): Recurring winter/summer seasons, no year stated. Last access 30 minutes before closing.",
         "evidence": {
           "url": "https://www.sainte-chapelle.fr/en/visit/practical-information",
-          "quote": "1 October to 31 March: 9am - 5pm",
+          "quote": "1 April to 30 September: 9am - 7pm / 1 October to 31 March: 9am - 5pm ... Closed on 1 January, 1 May and 25 December.",
           "confidence": "high"
         }
       },
@@ -5310,11 +8774,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "08:00",
+                  "17:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "08:00",
+                  "17:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "08:00",
+                  "17:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "08:00",
+                  "17:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "08:00",
+                  "17:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -5364,7 +8876,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": null,
-        "notes": "The branch page shows hours in an embedded widget labelled 'powered by Google'.",
+        "notes": "The branch page shows hours in an embedded widget labelled 'powered by Google'. 2027 re-check (2026-10-19): Standing weekly hours, no end date. Shown in an embedded 'Hours powered by Google' widget on the official page; a 'Closed' label above the list looks like a live open/closed status, not a weekday closure. No holiday closures listed.",
         "evidence": {
           "url": "https://www.coutumecafe.com/pages/cafe-babylone",
           "quote": "Lundi–Vendredi 8:00 - 17:30 ; Samedi–Dimanche 9:00 - 18:00",
@@ -5414,11 +8926,54 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [],
+              "tue": [
+                [
+                  "10:00",
+                  "18:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "18:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "18:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "18:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "18:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "18:30"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [],
               "tue": [
@@ -5465,11 +9020,21 @@ window.HB_PLACES = {
             "date": "2026-12-25",
             "hours": [],
             "note": "Closed 1 January, 1 May and 25 December"
+          },
+          {
+            "date": "2027-01-01",
+            "hours": [],
+            "note": "General rule applied: 'Closed on May 1, January 1 and December 25.'"
+          },
+          {
+            "date": "2027-05-01",
+            "hours": [],
+            "note": "General rule applied: 'Closed on May 1, January 1 and December 25.'"
           }
         ],
         "lastEntry": "17:45",
         "caveat": "Large bags are not accepted. The Meudon site is a different place and is closed until spring 2027.",
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Standing weekly hours, no end date published. (The separate Meudon site is closed for winter until spring 2027; not this Paris museum.)",
         "evidence": {
           "url": "https://www.musee-rodin.fr/en",
           "quote": "Open Tuesday to Sunday from 10am. to 6.30pm. Last entry at 5.45pm.",
@@ -5623,11 +9188,87 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "12:00",
+                  "13:45"
+                ],
+                [
+                  "19:00",
+                  "21:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "12:00",
+                  "13:45"
+                ],
+                [
+                  "19:00",
+                  "21:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "12:00",
+                  "13:45"
+                ],
+                [
+                  "19:00",
+                  "21:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "12:00",
+                  "13:45"
+                ],
+                [
+                  "19:00",
+                  "21:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "12:00",
+                  "13:45"
+                ],
+                [
+                  "19:00",
+                  "21:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "12:00",
+                  "13:45"
+                ],
+                [
+                  "19:00",
+                  "21:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "12:00",
+                  "13:45"
+                ],
+                [
+                  "19:00",
+                  "21:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -5705,7 +9346,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": "Book ahead. Jacket required for men; no shorts or sportswear.",
-        "notes": "The times may be seating windows rather than closing times. The restaurant lists a closure on 14 July 2027 only.",
+        "notes": "The times may be seating windows rather than closing times. The restaurant lists a closure on 14 July 2027 only. 2027 re-check (2026-10-19): Standing weekly hours, every day; times are likely seating windows. Only dated closure is 14 July 2027, outside the window.",
         "evidence": {
           "url": "https://www.restaurants-toureiffel.com/fr/restaurant-jules-verne.html",
           "quote": "Du lundi au dimanche, de 12h à 13h45 et de 19h à 21h",
@@ -5755,11 +9396,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -5855,7 +9544,7 @@ window.HB_PLACES = {
         ],
         "lastEntry": "Last food order 16:00",
         "caveat": null,
-        "notes": "Drinks and cake until 16:45.",
+        "notes": "Drinks and cake until 16:45. 2027 re-check (2026-10-19): Standing weekly hours. The page lists only 2026 closures (Easter holiday 13-21 April 2026, every French bank holiday incl. 1 May, 8 May, Ascension, Whit Monday 2026, Christmas 21-27 Dec 2026). No 2027 dates published yet; the 2026 pattern suggests bank-holiday closures in 2027, but not recorded as exceptions. Re-check early 2027.",
         "evidence": {
           "url": "https://holybellycafe.com",
           "quote": "Ouvert tous les jours de 9 à 17h (dernière commande à 16h)",
@@ -5905,11 +9594,87 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "12:00",
+                  "14:30"
+                ],
+                [
+                  "19:00",
+                  "22:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "12:00",
+                  "14:30"
+                ],
+                [
+                  "19:00",
+                  "22:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "12:00",
+                  "14:30"
+                ],
+                [
+                  "19:00",
+                  "22:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "12:00",
+                  "14:30"
+                ],
+                [
+                  "19:00",
+                  "22:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "12:00",
+                  "14:30"
+                ],
+                [
+                  "19:00",
+                  "22:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "12:00",
+                  "14:30"
+                ],
+                [
+                  "19:00",
+                  "22:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "12:00",
+                  "14:30"
+                ],
+                [
+                  "19:00",
+                  "22:30"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -5987,7 +9752,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": "No reservations: walk in and expect a queue.",
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Standing weekly hours, no end date published; no closures listed.",
         "evidence": {
           "url": "https://www.clamato-charonne.fr/",
           "quote": "Ouverture 7/7 — Du lundi au dimanche de 12h à 14h30 et de 19h à 22h30",
@@ -6037,11 +9802,69 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [],
+              "tue": [
+                [
+                  "12:00",
+                  "14:00"
+                ],
+                [
+                  "19:30",
+                  "23:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "12:00",
+                  "14:00"
+                ],
+                [
+                  "19:30",
+                  "23:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "12:00",
+                  "14:00"
+                ],
+                [
+                  "19:30",
+                  "23:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "12:00",
+                  "14:00"
+                ],
+                [
+                  "19:30",
+                  "23:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "12:00",
+                  "14:00"
+                ],
+                [
+                  "19:30",
+                  "23:00"
+                ]
+              ],
+              "sun": []
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [],
               "tue": [
@@ -6101,7 +9924,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": "Bookings by phone only.",
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Standing weekly hours, no end date published; no holiday closures listed.",
         "evidence": {
           "url": "https://www.bistrotpaulbert.fr/",
           "quote": "Mardi au samedi 12h – 14h · 19h30 – 23h; dimanche et lundi Fermé",
@@ -6151,11 +9974,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "06:30",
+                  "22:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "06:30",
+                  "22:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "06:30",
+                  "22:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "06:30",
+                  "22:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "06:30",
+                  "22:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "06:30",
+                  "22:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "06:30",
+                  "22:30"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -6226,7 +10097,7 @@ window.HB_PLACES = {
         ],
         "lastEntry": null,
         "caveat": "An active church: visits pause during services. The dome has its own hours and fee (not checked).",
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Standing hours, every day of the year. Page says it closes later on major holy days and some vigils (no dates given). Dome/crypt hours not on this page.",
         "evidence": {
           "url": "https://www.sacre-coeur-montmartre.com/en/info-and-visits/practical-information/hours-and-directions/",
           "quote": "open every day of the year, without exception, from 6:30 a.m. to 10:30 p.m.",
@@ -6276,11 +10147,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "09:00",
+                  "23:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "09:00",
+                  "23:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "09:00",
+                  "23:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:00",
+                  "23:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:00",
+                  "23:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "23:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "23:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -6330,7 +10249,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": null,
-        "notes": "Marais branch only.",
+        "notes": "Marais branch only. 2027 re-check (2026-10-19): Standing weekly hours. The page also says 'fermé du lundi 9 février au mercredi 18 février' with no year; those weekdays match February 2026 (in 2027, 9 February is a Tuesday), so it is a stale notice and not applied to 2027.",
         "evidence": {
           "url": "https://www.breizhcafe.com/le-marais",
           "quote": "LUN - DIM : 09h00 - 23h00",
@@ -6380,11 +10299,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "17:00",
+                  "01:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "17:00",
+                  "01:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "17:00",
+                  "01:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "17:00",
+                  "01:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "17:00",
+                  "01:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "17:00",
+                  "01:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "17:00",
+                  "01:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -6434,7 +10401,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": null,
-        "notes": "Read in a browser (the site is a JavaScript app).",
+        "notes": "Read in a browser (the site is a JavaScript app). 2027 re-check (2026-10-19): Read in a browser on 2026-10-19 (automated fetches were refused); standing weekly hours unchanged, no end date published.",
         "evidence": {
           "url": "https://www.lrdparis.com/",
           "quote": "Open 7/7 17h - 01h Walk-ins Welcomed",
@@ -6484,11 +10451,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "08:00",
+                  "19:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "08:00",
+                  "19:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "08:00",
+                  "19:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "08:00",
+                  "19:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "08:00",
+                  "19:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:30",
+                  "19:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:30",
+                  "19:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -6538,7 +10553,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": null,
-        "notes": "Rambuteau shop only.",
+        "notes": "Rambuteau shop only. 2027 re-check (2026-10-19): Standing weekly hours, no end date published; no closures listed for this shop.",
         "evidence": {
           "url": "https://www.terresdecafe.com/fr/content/70-nos-boutiques",
           "quote": "Lundi - Vendredi : 8h / 19h ; Samedi - Dimanche : 9h30 / 19h",
@@ -6588,7 +10603,7 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-16",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-16",
@@ -6632,6 +10647,87 @@ window.HB_PLACES = {
                 ]
               ]
             }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-02-15",
+            "weekly": {
+              "mon": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "tue": [],
+              "wed": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:00",
+                  "21:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-02-16",
+            "to": "2027-06-30",
+            "weekly": {
+              "mon": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "tue": [],
+              "wed": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "fri": null,
+              "sat": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ]
+            }
           }
         ],
         "exceptions": [
@@ -6639,11 +10735,16 @@ window.HB_PLACES = {
             "date": "2026-12-25",
             "hours": [],
             "note": "Published annual closure"
+          },
+          {
+            "date": "2027-05-01",
+            "hours": [],
+            "note": "General rule applied: 'Closed every Tuesday, May 1, the morning of July 14, and December 25.'"
           }
         ],
         "lastEntry": "17:15 (20:15 on late Fridays)",
         "caveat": null,
-        "notes": "Read in a browser (automated fetches were refused). Friday late opening applies during exhibition periods; the current exhibitions run until 25 January and 15 February 2027.",
+        "notes": "Read in a browser (automated fetches were refused). Friday late opening applies during exhibition periods; the current exhibitions run until 25 January and 15 February 2027. 2027 re-check (2026-10-19): Standing weekly hours (unchanged). This time the automated fetch succeeded. Friday 21:00 applies only during exhibition periods; current exhibitions run until 25 January and 15 February 2027, and no later exhibition is listed, so Friday after 15 Feb is 09:00-18:00 or 09:00-21:00 depending on programming. 1 January is not listed as a closure. Last admission 17:15.",
         "evidence": {
           "url": "https://www.musee-orangerie.fr/en/visit-orangerie",
           "quote": "Monday 9.00am 6.00pm / Tuesday Closed / Wednesday 9.00am 6.00pm / Thursday 9.00am 6.00pm / Friday 9.00am 9.00pm* / Saturday 9.00am 6.00pm / Sunday 9.00am 6.00pm. Last admission at 5:15 p.m. ... Closed every Tuesday, May 1, the morning of July 14, and December 25. *Late night opening until 9 p.m. every Friday during exhibition periods.",
@@ -6693,7 +10794,7 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-16",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-16",
@@ -6742,6 +10843,102 @@ window.HB_PLACES = {
                 ]
               ]
             }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-03-31",
+            "weekly": {
+              "mon": [
+                [
+                  "10:00",
+                  "22:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "11:00",
+                  "22:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "22:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "22:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "22:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "22:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "22:30"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-04-01",
+            "to": "2027-06-30",
+            "weekly": {
+              "mon": [
+                [
+                  "10:00",
+                  "23:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "11:00",
+                  "23:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "23:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "23:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "23:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "23:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "23:00"
+                ]
+              ]
+            }
           }
         ],
         "exceptions": [
@@ -6769,14 +10966,24 @@ window.HB_PLACES = {
               ]
             ],
             "note": "Early closing"
+          },
+          {
+            "date": "2027-05-01",
+            "hours": [],
+            "note": "General rule applied: 'Annual closures on 1st May, 8 May, 14 July, 11 November (morning).'"
+          },
+          {
+            "date": "2027-05-08",
+            "hours": [],
+            "note": "General rule applied: 'Annual closures on 1st May, 8 May, 14 July, 11 November (morning).'"
           }
         ],
         "lastEntry": "45 minutes before closing",
         "caveat": "The lift is out of service (since late July 2026), so the terrace is reached by 284 steps.",
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Recurring seasons, no year stated. Last admission 45 minutes before closing. Access by stairs only since late July 2026; elevator return date 'to be announced'. Exceptional closures possible for ceremonies/bad weather (undated). 1 January not listed as a closure.",
         "evidence": {
           "url": "https://www.paris-arc-de-triomphe.fr/en/visit/practical-information",
-          "quote": "1st October to 31 March: Wednesday to Monday 10am - 10.30pm; Tuesdays 11am - 10.30pm ... last admission to the monument 45 minutes before closing time. Annual closures on 1st May, 8 May, 14 July, 11 November (morning). Early closing at 4pm on 24 and 31 December 2026.",
+          "quote": "1st April to 30 September: Wednesday to Monday 10am - 11pm; Tuesdays 11am - 11pm. 1st October to 31 March: Wednesday to Monday 10am - 10.30pm; Tuesdays 11am - 10.30pm",
           "confidence": "high"
         }
       },
@@ -6823,11 +11030,69 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-16",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-16",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "12:15",
+                  "14:00"
+                ],
+                [
+                  "19:30",
+                  "23:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "12:15",
+                  "14:00"
+                ],
+                [
+                  "19:30",
+                  "23:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "12:15",
+                  "14:00"
+                ],
+                [
+                  "19:30",
+                  "23:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "12:15",
+                  "14:00"
+                ],
+                [
+                  "19:30",
+                  "23:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "12:15",
+                  "14:00"
+                ],
+                [
+                  "19:30",
+                  "23:00"
+                ]
+              ],
+              "sat": [],
+              "sun": []
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -6887,7 +11152,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": "Bookings open online at 10:00, 21 days ahead.",
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Standing weekly hours, no end date published; no holiday closures listed.",
         "evidence": {
           "url": "https://www.septime-charonne.fr/",
           "quote": "lundi — vendredi ... Déjeuner 12h15-14h / Dîner 19h30-23h ... samedi – dimanche [fermé]",
@@ -6937,11 +11202,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-16",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-16",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "17:00",
+                  "24:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "17:00",
+                  "24:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "17:00",
+                  "24:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "17:00",
+                  "24:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "17:00",
+                  "24:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "17:00",
+                  "24:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "17:00",
+                  "24:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -6991,7 +11304,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": null,
-        "notes": "Read in a browser (automated fetches were refused).",
+        "notes": "Read in a browser (automated fetches were refused). 2027 re-check (2026-10-19): Read in a browser on 2026-10-19 (automated fetches were refused); standing weekly hours unchanged, no end date published.",
         "evidence": {
           "url": "https://www.ritzparis.com/hotel/paris/bars-restaurants",
           "quote": "Bar Hemingway: Every day from 05:00pm to 12:00am, no booking required. Tapas from 05:30pm to 10:30pm",
@@ -7145,11 +11458,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "09:30",
+                  "18:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "09:30",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "09:30",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:30",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:30",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:30",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:30",
+                  "18:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -7211,11 +11572,16 @@ window.HB_PLACES = {
             "date": "2026-12-26",
             "hours": [],
             "note": "Annual closure"
+          },
+          {
+            "date": "2027-01-01",
+            "hours": null,
+            "note": "General annual rule applied: 'Open at 10:00 on 1 January (New Year's Day) every year'; closing time not stated, assumed standard 18:00. Not stated for this date, so treated as unknown."
           }
         ],
         "lastEntry": "17:00",
         "caveat": "On the second Saturday of each month, 09:30-11:30 is a relaxed, low-capacity session.",
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Standing weekly hours, no end date published. Relaxed Opening 09:30-11:30 on the second Saturday of each month (not a closure). No Easter/bank holiday variations published.",
         "evidence": {
           "url": "https://www.towerbridge.org.uk/plan-your-visit",
           "quote": "Open daily: 09:30 to 18:00 ... Last entry is 17:00.",
@@ -7265,11 +11631,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -7319,7 +11733,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": "The covered passages are always open; shops and restaurants keep their own hours.",
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Standing statement for public areas, no end date published. Individual shop hours vary.",
         "evidence": {
           "url": "https://www.leadenhallmarket.co.uk/",
           "quote": "remain open 24/7",
@@ -7369,11 +11783,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "11:00",
+                  "21:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "11:00",
+                  "21:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -7490,11 +11952,81 @@ window.HB_PLACES = {
             "date": "2026-12-25",
             "hours": [],
             "note": "Christmas Day"
+          },
+          {
+            "date": "2027-01-01",
+            "hours": [
+              [
+                "11:00",
+                "21:00"
+              ]
+            ],
+            "note": "General rule applied: 'Weekends and Bank Holidays: 11am – 9pm' (New Year's Day bank holiday)."
+          },
+          {
+            "date": "2027-01-04",
+            "hours": null,
+            "note": "General rule applied: 'On the first Monday of every month (subject to change), The Sky Garden is closed for maintenance until 6 pm.' Weekday public hours end 18:00. 2027 dates not yet listed on closure page. Not stated for this date, so treated as unknown."
+          },
+          {
+            "date": "2027-02-01",
+            "hours": null,
+            "note": "First-Monday maintenance rule (subject to change), closed until 6 pm. The rule is marked subject to change and the 2027 dates aren't listed, so treated as unknown."
+          },
+          {
+            "date": "2027-03-01",
+            "hours": null,
+            "note": "First-Monday maintenance rule (subject to change), closed until 6 pm. The rule is marked subject to change and the 2027 dates aren't listed, so treated as unknown."
+          },
+          {
+            "date": "2027-03-26",
+            "hours": [
+              [
+                "11:00",
+                "21:00"
+              ]
+            ],
+            "note": "General rule applied: bank holidays 11am – 9pm (Good Friday)."
+          },
+          {
+            "date": "2027-03-29",
+            "hours": [
+              [
+                "11:00",
+                "21:00"
+              ]
+            ],
+            "note": "General rule applied: bank holidays 11am – 9pm (Easter Monday)."
+          },
+          {
+            "date": "2027-04-05",
+            "hours": null,
+            "note": "First-Monday maintenance rule (subject to change), closed until 6 pm. The rule is marked subject to change and the 2027 dates aren't listed, so treated as unknown."
+          },
+          {
+            "date": "2027-05-03",
+            "hours": null,
+            "note": "Early May bank holiday (11am – 9pm rule) coincides with first-Monday maintenance rule (closed until 6 pm, subject to change); combined hours not published."
+          },
+          {
+            "date": "2027-05-31",
+            "hours": [
+              [
+                "11:00",
+                "21:00"
+              ]
+            ],
+            "note": "General rule applied: bank holidays 11am – 9pm (spring bank holiday)."
+          },
+          {
+            "date": "2027-06-07",
+            "hours": null,
+            "note": "First-Monday maintenance rule (subject to change), closed until 6 pm. The rule is marked subject to change and the 2027 dates aren't listed, so treated as unknown."
           }
         ],
         "lastEntry": null,
         "caveat": "Book a free timed ticket (released each Monday, three weeks ahead); arriving more than 15 minutes late may mean no entry. Capacity is reduced while a lift is out of service.",
-        "notes": "These are the free visiting hours, not the restaurants' and bars' hours.",
+        "notes": "These are the free visiting hours, not the restaurants' and bars' hours. 2027 re-check (2026-10-19): Standing ticketed hours, no end date. Closure-dates page (https://skygarden.london/sky-garden-closure-dates/) lists only Oct-Dec 2026; it states the first-Monday rule is 'subject to change' (in 2026 the November maintenance day was the 16th, not the first Monday), so first-Monday exceptions are rule-derived, not confirmed dates. Notice: visitor capacity temporarily reduced (lift out of service). Free visiting hours only, not restaurants/bars.",
         "evidence": {
           "url": "https://skygarden.london/faqs/",
           "quote": "Ticket holders can visit 10am–6pm on weekdays and 11am–9pm on weekends and bank holidays.",
@@ -7643,11 +12175,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "21:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -7709,11 +12289,16 @@ window.HB_PLACES = {
             "date": "2026-12-26",
             "hours": [],
             "note": "Closed 24-26 December"
+          },
+          {
+            "date": "2027-01-01",
+            "hours": [],
+            "note": "General rule applied: '(Closed 24–26 December and 1 January)'."
           }
         ],
         "lastEntry": null,
         "caveat": "Several rooms are closed for building work; check the floorplan for a particular painting.",
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Standing weekly hours, no end date published. Page notes some rooms may be closed; no other 2027 dated changes.",
         "evidence": {
           "url": "https://www.nationalgallery.org.uk/visiting",
           "quote": "Open daily 10am–6pm Friday until 9pm (Closed 24–26 December and 1 January)",
@@ -7763,11 +12348,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "00:00",
+                  "24:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -7817,7 +12450,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": "The Piazza and Market Building are always open; shops usually open 10 AM-8 PM Monday-Saturday and about 11 AM-6 PM on Sundays.",
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Standing statement, no end date published. Apple Market daily 10am-6pm; East Colonnade Market 10:30am-7pm.",
         "evidence": {
           "url": "https://www.coventgarden.london/about/faqs",
           "quote": "Covent Garden, the Piazza and the Market Building is always open ... the shops usually operate between 10am and 8pm Monday to Saturday ... on Sunday from around 11am to 6pm.",
@@ -7867,11 +12500,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "12:00",
+                  null
+                ]
+              ],
+              "tue": [
+                [
+                  "12:00",
+                  null
+                ]
+              ],
+              "wed": [
+                [
+                  "12:00",
+                  null
+                ]
+              ],
+              "thu": [
+                [
+                  "12:00",
+                  null
+                ]
+              ],
+              "fri": [
+                [
+                  "12:00",
+                  null
+                ]
+              ],
+              "sat": [
+                [
+                  "12:00",
+                  null
+                ]
+              ],
+              "sun": [
+                [
+                  "12:00",
+                  null
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -7921,7 +12602,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": "Last reservation 22:00 Sunday-Thursday; last orders 23:30 Friday-Saturday",
         "caveat": "No shorts or sportswear; children under 10 are not admitted after 7 PM.",
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Standing weekly hours, no end date published. Published times are last reservation/last orders, hence 'late'.",
         "evidence": {
           "url": "https://rules.co.uk/contact/",
           "quote": "Monday to Thursday 12:00 – 10.00pm last reservation; Friday and Saturday 12:00 – 11.30pm last orders; Sunday 12:00 – 10.00pm last reservation",
@@ -7971,11 +12652,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "07:00",
+                  "22:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "07:00",
+                  "22:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "07:00",
+                  "22:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "07:00",
+                  "22:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "07:00",
+                  "22:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "07:00",
+                  "22:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "08:00",
+                  "21:30"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -8027,11 +12756,61 @@ window.HB_PLACES = {
             "date": "2026-12-25",
             "hours": null,
             "note": "Bank holiday: no hours published"
+          },
+          {
+            "date": "2027-01-01",
+            "hours": [
+              [
+                "08:00",
+                "21:30"
+              ]
+            ],
+            "note": "General rule applied: 'sun & bank holidays 8am - 9.30pm (last orders)'."
+          },
+          {
+            "date": "2027-03-26",
+            "hours": [
+              [
+                "08:00",
+                "21:30"
+              ]
+            ],
+            "note": "General bank holiday rule applied (Good Friday)."
+          },
+          {
+            "date": "2027-03-29",
+            "hours": [
+              [
+                "08:00",
+                "21:30"
+              ]
+            ],
+            "note": "General bank holiday rule applied (Easter Monday)."
+          },
+          {
+            "date": "2027-05-03",
+            "hours": [
+              [
+                "08:00",
+                "21:30"
+              ]
+            ],
+            "note": "General bank holiday rule applied (early May bank holiday)."
+          },
+          {
+            "date": "2027-05-31",
+            "hours": [
+              [
+                "08:00",
+                "21:30"
+              ]
+            ],
+            "note": "General bank holiday rule applied (spring bank holiday)."
           }
         ],
         "lastEntry": null,
         "caveat": null,
-        "notes": "The published closing times are last orders. Bank holidays follow Sunday hours.",
+        "notes": "The published closing times are last orders. Bank holidays follow Sunday hours. 2027 re-check (2026-10-19): Standing weekly hours, no end date published. Closing times are last orders.",
         "evidence": {
           "url": "https://grangerandco.com/locations/notting-hill",
           "quote": "Monday to Saturday: 7am - 10.30pm (last orders); Sunday and bank holidays: 8am - 9.30pm (last orders)",
@@ -8081,11 +12860,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "10:00",
+                  "17:50"
+                ]
+              ],
+              "tue": [
+                [
+                  "10:00",
+                  "17:50"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "17:50"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "17:50"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "17:50"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "17:50"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "17:50"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -8151,7 +12978,7 @@ window.HB_PLACES = {
         ],
         "lastEntry": "17:30",
         "caveat": "Entry is free; a free ticket guarantees entry at busy times.",
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Standing weekly hours, no end date published. No 1 January or bank holiday closures stated.",
         "evidence": {
           "url": "https://www.nhm.ac.uk/visit.html",
           "quote": "Open daily, 10:00–17:50. Last entry 17:30",
@@ -8201,11 +13028,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "10:00",
+                  "17:45"
+                ]
+              ],
+              "tue": [
+                [
+                  "10:00",
+                  "17:45"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "17:45"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "17:45"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "22:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "17:45"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "17:45"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -8271,7 +13146,7 @@ window.HB_PLACES = {
         ],
         "lastEntry": "Gallery clearing begins 30 minutes before closing",
         "caveat": null,
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Standing weekly hours, no end date published. No 2027 dated closures.",
         "evidence": {
           "url": "https://www.vam.ac.uk/south-kensington",
           "quote": "10.00 – 17.45; Friday 10.00 – 22.00 (some galleries close after 17.45); Closed 24 – 26 December",
@@ -8321,11 +13196,61 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [],
+              "tue": [
+                [
+                  "18:30",
+                  "21:45"
+                ]
+              ],
+              "wed": [
+                [
+                  "18:30",
+                  "21:45"
+                ]
+              ],
+              "thu": [
+                [
+                  "12:00",
+                  "14:15"
+                ],
+                [
+                  "18:30",
+                  "21:45"
+                ]
+              ],
+              "fri": [
+                [
+                  "12:00",
+                  "14:15"
+                ],
+                [
+                  "18:30",
+                  "21:45"
+                ]
+              ],
+              "sat": [
+                [
+                  "12:00",
+                  "14:15"
+                ],
+                [
+                  "18:30",
+                  "21:45"
+                ]
+              ],
+              "sun": []
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [],
               "tue": [
@@ -8377,7 +13302,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": "Book ahead; the whole table orders the same menu format.",
-        "notes": "Sunday and Monday are not listed, so they are treated as closed.",
+        "notes": "Sunday and Monday are not listed, so they are treated as closed. 2027 re-check (2026-10-19): Standing weekly hours, no end date published. Sunday and Monday not listed, treated as closed.",
         "evidence": {
           "url": "https://www.corebyclaresmyth.com/menus/",
           "quote": "Lunch: Thursday – Saturday, 12:00 – 14:15; Dinner: Tuesday – Saturday, 18:30 – 21:45",
@@ -8427,11 +13352,54 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "07:30",
+                  "18:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "07:30",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "07:30",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "07:30",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "07:30",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "07:30",
+                  "18:00"
+                ]
+              ],
+              "sun": []
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -8476,7 +13444,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": "Card payments only.",
-        "notes": "Read in a browser (automated fetches were refused).",
+        "notes": "Read in a browser (automated fetches were refused). 2027 re-check (2026-10-19): Read in a browser on 2026-10-19 (automated fetches were refused); standing weekly hours unchanged, no end date published.",
         "evidence": {
           "url": "https://www.monmouthcoffee.co.uk/",
           "quote": "The Borough 2 Park Street ... Monday to Saturday 7.30am to 6pm Closed Sunday Card payments only",
@@ -8526,7 +13494,7 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
@@ -8618,6 +13586,49 @@ window.HB_PLACES = {
                 ]
               ]
             }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
+            "weekly": {
+              "mon": [],
+              "tue": [
+                [
+                  "10:00",
+                  "17:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "17:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "17:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "17:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "16:00"
+                ]
+              ]
+            }
           }
         ],
         "exceptions": [
@@ -8665,11 +13676,16 @@ window.HB_PLACES = {
               ]
             ],
             "note": null
+          },
+          {
+            "date": "2027-01-01",
+            "hours": [],
+            "note": "'New Year's Day 2027: CLOSED'"
           }
         ],
         "lastEntry": null,
         "caveat": "Closed on Mondays until 30 November; traders keep their own hours within the market's.",
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Regular hours from https://boroughmarket.org.uk/visit-us/ (Mon closed; Tue-Fri 10am-5pm; Sat 9am-5pm; Sun 10am-4pm), standing, no end date; normal hours return 2 January 2027. Same as the record's regular (pre-30 Nov) period. Site says 'Opening times vary during the festive period and at Bank Holidays'; Easter and May 2027 bank holiday hours not yet published.",
         "evidence": {
           "url": "https://boroughmarket.org.uk/visit-us/",
           "quote": "Monday: Closed; Tue–Fri 10am – 5pm; Saturday 9am – 5pm; Sunday 10am – 4pm",
@@ -8719,11 +13735,87 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "11:30",
+                  "15:45"
+                ],
+                [
+                  "17:00",
+                  "22:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "11:30",
+                  "15:45"
+                ],
+                [
+                  "17:00",
+                  "22:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "11:30",
+                  "15:45"
+                ],
+                [
+                  "17:00",
+                  "22:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "11:30",
+                  "15:45"
+                ],
+                [
+                  "17:00",
+                  "22:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "11:30",
+                  "15:45"
+                ],
+                [
+                  "17:00",
+                  "22:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "11:30",
+                  "15:45"
+                ],
+                [
+                  "17:00",
+                  "22:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "11:30",
+                  "15:45"
+                ],
+                [
+                  "17:00",
+                  "21:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -8801,7 +13893,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": "No reservations: join the virtual queue at the door; groups of up to 6.",
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Standing weekly hours, no end date published.",
         "evidence": {
           "url": "https://www.padella.co/borough-market",
           "quote": "Lunch Monday - Sunday: 11:30 to 15:45; Dinner Monday - Saturday: 17:00 to 22:30; Sunday: 17:00 to 21:00",
@@ -8851,11 +13943,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "21:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "21:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -8905,7 +14045,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": "30 minutes before closing",
         "caveat": "Bags larger than 55x40x20 cm are not allowed and there is no cloakroom.",
-        "notes": "Christmas dates were not on the page read.",
+        "notes": "Christmas dates were not on the page read. 2027 re-check (2026-10-19): Standing weekly hours, no end date published. No holiday dates on the page.",
         "evidence": {
           "url": "https://www.tate.org.uk/visit/tate-modern",
           "quote": "Sunday to Thursday 10.00–18.00; Friday to Saturday 10.00–21.00; Last entry 30 minutes before closing time",
@@ -8955,7 +14095,7 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
@@ -9004,15 +14144,63 @@ window.HB_PLACES = {
                 ]
               ]
             }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
+            "weekly": {
+              "mon": [
+                [
+                  "08:00",
+                  "23:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "08:00",
+                  "23:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "08:00",
+                  "23:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "08:00",
+                  "23:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "08:00",
+                  "24:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "08:00",
+                  "24:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "23:00"
+                ]
+              ]
+            }
           }
         ],
         "exceptions": [],
         "lastEntry": null,
         "caveat": "After 6 PM tables are booked only for groups of six or more; expect a walk-in queue.",
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Standing weekly hours, no end date published. Changed vs record: Saturday now opens 8am (record 9am). '12am' read as midnight.",
         "evidence": {
           "url": "https://www.dishoom.com/covent-garden/",
-          "quote": "Monday–Thursday 8am to 11pm; Friday 8am to 12am; Saturday 9am to 12am; Sunday 9am to 11pm",
+          "quote": "Monday–Thursday 8am to 11pm; Friday–Saturday 8am to 12am; Sunday 9am to 11pm",
           "confidence": "high"
         }
       },
@@ -9059,11 +14247,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "07:30",
+                  "16:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "07:30",
+                  "16:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "07:30",
+                  "16:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "07:30",
+                  "16:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "07:30",
+                  "16:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "08:00",
+                  "17:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "17:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -9113,7 +14349,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": "The kitchen stops serving food at 3:40 PM on weekdays and 4:20 PM at weekends.",
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Standing weekly hours, no end date published.",
         "evidence": {
           "url": "https://www.prufrockcoffee.com/",
           "quote": "Monday to Friday: 7:30am to 4:30pm; Saturday: 8am to 5pm; Sunday: 9am to 5pm",
@@ -9163,11 +14399,54 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "08:30",
+                  "16:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "08:30",
+                  "16:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "08:30",
+                  "16:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "08:30",
+                  "16:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "08:30",
+                  "16:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "08:30",
+                  "16:30"
+                ]
+              ],
+              "sun": []
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -9212,7 +14491,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": "usually 16:00",
         "caveat": "No sightseeing on Sundays; times can change for services and events. Bags larger than 45x30x25 cm are not allowed.",
-        "notes": "Christmas dates were not on the pages read.",
+        "notes": "Christmas dates were not on the pages read. 2027 re-check (2026-10-19): Standing sightseeing hours, no end date ('opening and closing times can change' - check calendar). Sunday Dome Galleries opening stated only for 15 March-25 October 2026; no 2027 Sunday dates published, so Sunday kept closed for sightseeing. Calendar (/whats-on) shows no Jan-Jun 2027 closures.",
         "evidence": {
           "url": "https://www.stpauls.co.uk/planning-your-visit",
           "quote": "We're open from 8.30am Monday to Saturday for sightseeing. Last entry for sightseeing is usually at 4pm with sightseeing ending 30 minutes after the last entry time.",
@@ -9262,11 +14541,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "11:30",
+                  "22:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "11:30",
+                  "22:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "11:30",
+                  "23:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "11:30",
+                  "23:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "11:30",
+                  "23:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "11:30",
+                  "23:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "11:30",
+                  "22:30"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -9316,7 +14643,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": null,
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Standing weekly hours, no end date published.",
         "evidence": {
           "url": "https://flatironsteak.co.uk/restaurant/covent-garden/",
           "quote": "SUN – TUE: 11:30 – 22:30; WED – THU: 11:30 – 23:00; FRI – SAT: 11:30 – 23:30",
@@ -9366,11 +14693,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "15:00",
+                  "24:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "15:00",
+                  "24:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "15:00",
+                  "24:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "15:00",
+                  "24:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "15:00",
+                  "24:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "15:00",
+                  "24:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "15:00",
+                  "23:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -9420,7 +14795,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": "Walk-ins accepted; booking recommended.",
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Standing weekly hours, no end date published.",
         "evidence": {
           "url": "https://www.barswift.com/swift-bar-locations",
           "quote": "Monday – Saturday 3pm-Midnight; Sunday 3pm-11pm",
@@ -9470,11 +14845,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "07:30",
+                  "15:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "07:30",
+                  "15:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "07:30",
+                  "15:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "07:30",
+                  "15:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "07:30",
+                  "15:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "07:30",
+                  "17:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "07:30",
+                  "17:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -9524,7 +14947,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": null,
-        "notes": "The original D'Arblay Street café. No holiday hours were published.",
+        "notes": "The original D'Arblay Street café. No holiday hours were published. 2027 re-check (2026-10-19): Standing weekly hours, no end date published. No holiday hours published.",
         "evidence": {
           "url": "https://www.thebreakfastclubcafes.com/soho",
           "quote": "Monday to Friday: 7:30am - 3:00pm; Saturday: 7:30am - 5:00pm; Sunday: 7:30am - 5:00pm",
@@ -9574,11 +14997,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-16",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-16",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -9659,7 +15130,7 @@ window.HB_PLACES = {
         ],
         "lastEntry": "17:15",
         "caveat": "Free, but a ticket must be booked ahead. Some galleries have their own closures.",
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Standing weekly hours, no end date published. No whole-museum 2027 closures. Gallery-level only: 'Who Am I?' closes 15.00 on 15 Jan, 5 Mar, 12 Mar 2027; 'Information Age' opens 11.00 on 27 Feb 2027.",
         "evidence": {
           "url": "https://www.sciencemuseum.org.uk/visit-us",
           "quote": "The museum is open daily from 10.00–18.00 (except for 24–26 December when the museum is closed). Last entry is 17.15. ... The museum will be closed all day on Wednesday 11 November 2026. The museum closes at 17.00 on Thursday 26 November 2026.",
@@ -9709,11 +15180,54 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-16",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-16",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "16:00",
+                  "01:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "16:00",
+                  "01:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "16:00",
+                  "01:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "16:00",
+                  "01:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "16:00",
+                  "01:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "16:00",
+                  "01:00"
+                ]
+              ],
+              "sun": null
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -9758,7 +15272,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": "No reservations. Sunday hours are not published.",
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Standing weekly hours, no end date published. Sunday not listed (kept unknown, as on record).",
         "evidence": {
           "url": "https://www.maybourne.com/en/hotels/the-connaught/restaurants-bars/connaught-bar",
           "quote": "Monday - Saturday: 4pm - 1am. ... The Connaught Bar operates a no reservation policy.",
@@ -9808,11 +15322,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-10",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-10",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "10:00",
+                  "17:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "10:00",
+                  "17:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -9879,11 +15441,16 @@ window.HB_PLACES = {
             "date": "2026-12-31",
             "hours": [],
             "note": null
+          },
+          {
+            "date": "2027-01-01",
+            "hours": [],
+            "note": "'1 Jan 2027: closed'"
           }
         ],
         "lastEntry": null,
         "caveat": null,
-        "notes": "Also closed 1 January 2027 (outside the researched period). The bistro is open on Tuesdays even though the Humboldt Forum exhibitions are not.",
+        "notes": "Also closed 1 January 2027 (outside the researched period). The bistro is open on Tuesdays even though the Humboldt Forum exhibitions are not. 2027 re-check (2026-10-19): Standing weekly hours, no end date published. No other 2027 exceptions listed; no general holiday rule.",
         "evidence": {
           "url": "https://www.humboldtforum.org/en/programm/dauerangebot/food-and-drink/lebenswelten-bistro-23376/",
           "quote": "Opening hours Mon, Tue: 10:00 – 17:00 Wed, Thu, Fri, Sat, Sun: 10:00 – 19:00 Exceptions 24 Dec 2026: closed 25 Dec 2026: closed 26 Dec 2026: closed 31 Dec 2026: closed 1 Jan 2027: closed",
@@ -9934,11 +15501,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-10",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-10",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "12:00",
+                  "22:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "12:00",
+                  "22:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "12:00",
+                  "22:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "12:00",
+                  "22:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "12:00",
+                  "22:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "12:00",
+                  "22:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "12:00",
+                  "22:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -9988,7 +15603,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": null,
-        "notes": "No holiday exceptions published. Tables can be booked online.",
+        "notes": "No holiday exceptions published. Tables can be booked online. 2027 re-check (2026-10-19): Standing weekly hours, no end date published; no holiday exceptions published.",
         "evidence": {
           "url": "https://www.lemke.berlin/en/luisenbraeu/",
           "quote": "OPENING HOURS MONDAY – SUNDAY 12 noon – 10 p.m.",
@@ -10039,11 +15654,54 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-10",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-10",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [],
+              "tue": [
+                [
+                  "10:00",
+                  "16:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "16:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "16:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "16:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "17:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "17:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [],
               "tue": [
@@ -10110,11 +15768,51 @@ window.HB_PLACES = {
             "date": "2026-12-31",
             "hours": [],
             "note": "The museum building is closed"
+          },
+          {
+            "date": "2027-01-01",
+            "hours": null,
+            "note": "Holiday rule says 'Feiertag: 10–17 Uhr', but the museum's undated list gives Neujahr 13-18; not confirmed for 2027"
+          },
+          {
+            "date": "2027-03-26",
+            "hours": [
+              [
+                "10:00",
+                "17:00"
+              ]
+            ],
+            "note": "Good Friday: public-holiday rule applied ('Samstag, Sonntag, Feiertag: 10–17 Uhr')"
+          },
+          {
+            "date": "2027-03-29",
+            "hours": null,
+            "note": "Easter Monday: Monday is 'Ruhetag'; page does not say whether the holiday rule overrides it (museum opens 10-18 on holidays)"
+          },
+          {
+            "date": "2027-05-01",
+            "hours": null,
+            "note": "Saturday holiday; museum's undated list says 1 May 'geschlossen'; not confirmed for 2027"
+          },
+          {
+            "date": "2027-05-06",
+            "hours": [
+              [
+                "10:00",
+                "17:00"
+              ]
+            ],
+            "note": "Ascension: public-holiday rule applied ('Feiertag: 10–17 Uhr')"
+          },
+          {
+            "date": "2027-05-17",
+            "hours": null,
+            "note": "Whit Monday: Monday is 'Ruhetag'; page does not say whether the holiday rule overrides it"
           }
         ],
         "lastEntry": null,
         "caveat": "Inside the museum building; the page does not say whether a museum ticket is needed to eat here.",
-        "notes": "Closed on Mondays, the same as the museum. Christmas dates follow the museum's own closures.",
+        "notes": "Closed on Mondays, the same as the museum. Christmas dates follow the museum's own closures. 2027 re-check (2026-10-19): Standing weekly hours, no end date. No dated 2027 closures on the restaurant page; public-holiday rule applied where unambiguous.",
         "evidence": {
           "url": "https://technikmuseum.berlin/besuch/essen-trinken",
           "quote": "Dienstag bis Freitag: 10–16:30 Uhr; Samstag, Sonntag, Feiertag: 10–17 Uhr; Montag: Ruhetag",
@@ -10165,11 +15863,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "08:00",
+                  "18:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "08:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "08:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "08:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "08:00",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "08:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "08:00",
+                  "18:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -10219,7 +15965,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": "Opens at 7 AM on the 1st and 15th of each lunar month and on festival days. It is a working temple; be respectful of worshippers.",
-        "notes": "Read in a browser on the operator's Chinese-language page (an automated fetch failed its certificate check). The page is undated, hence medium confidence.",
+        "notes": "Read in a browser on the operator's Chinese-language page (an automated fetch failed its certificate check). The page is undated, hence medium confidence. 2027 re-check (2026-10-19): Read in a browser on 2026-10-19 (automated fetches were refused); standing weekly hours unchanged, no end date published.",
         "evidence": {
           "url": "https://temples.tungwahcsd.org/twghs-man-mo-temple",
           "quote": "服務時間：上午八時正至下午六時正，初一、十五及誕期則為上午七時正至下午六時正",
@@ -10270,11 +16016,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "08:00",
+                  "23:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "08:00",
+                  "23:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "08:00",
+                  "23:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "08:00",
+                  "23:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "08:00",
+                  "23:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "08:00",
+                  "23:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "08:00",
+                  "23:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -10324,7 +16118,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": "The site is free and open 8 AM-11 PM; the heritage galleries open 10 or 11 AM-7 PM, and the JC Contemporary gallery is closed on Mondays.",
-        "notes": "Some exhibitions and programmes are ticketed. Black Rainstorm and Typhoon Signal 8 rules can close the site.",
+        "notes": "Some exhibitions and programmes are ticketed. Black Rainstorm and Typhoon Signal 8 rules can close the site. 2027 re-check (2026-10-19): Standing site hours, no end date; no public holiday or Lunar New Year rules or dated notices. Weather (Black Rainstorm) closure rule still stated.",
         "evidence": {
           "url": "https://www.taikwun.hk/en/visit/visiting_tai_kwun",
           "quote": "Tai Kwun: 8am-11pm; JC Contemporary: 11am-7pm, Tuesday to Sunday",
@@ -10480,11 +16274,87 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "11:00",
+                  "15:00"
+                ],
+                [
+                  "17:30",
+                  "23:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "11:00",
+                  "15:00"
+                ],
+                [
+                  "17:30",
+                  "23:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "11:00",
+                  "15:00"
+                ],
+                [
+                  "17:30",
+                  "23:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "11:00",
+                  "15:00"
+                ],
+                [
+                  "17:30",
+                  "23:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "11:00",
+                  "15:00"
+                ],
+                [
+                  "17:30",
+                  "23:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "11:00",
+                  "15:00"
+                ],
+                [
+                  "17:30",
+                  "23:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "15:00"
+                ],
+                [
+                  "17:30",
+                  "23:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -10587,11 +16457,151 @@ window.HB_PLACES = {
               ]
             ],
             "note": "Public holiday: Sunday hours"
+          },
+          {
+            "date": "2027-01-01",
+            "hours": [
+              [
+                "09:00",
+                "15:00"
+              ],
+              [
+                "17:30",
+                "23:00"
+              ]
+            ],
+            "note": "Public holiday rule: '星期日及公眾假期' (Sundays and public holidays)"
+          },
+          {
+            "date": "2027-02-06",
+            "hours": [
+              [
+                "09:00",
+                "15:00"
+              ],
+              [
+                "17:30",
+                "23:00"
+              ]
+            ],
+            "note": "Public holiday rule (first day of Lunar New Year, Saturday); no LNY-specific hours published"
+          },
+          {
+            "date": "2027-02-08",
+            "hours": [
+              [
+                "09:00",
+                "15:00"
+              ],
+              [
+                "17:30",
+                "23:00"
+              ]
+            ],
+            "note": "Public holiday rule (third day of Lunar New Year); no LNY-specific hours published"
+          },
+          {
+            "date": "2027-03-26",
+            "hours": [
+              [
+                "09:00",
+                "15:00"
+              ],
+              [
+                "17:30",
+                "23:00"
+              ]
+            ],
+            "note": "Public holiday rule (Good Friday)"
+          },
+          {
+            "date": "2027-03-27",
+            "hours": [
+              [
+                "09:00",
+                "15:00"
+              ],
+              [
+                "17:30",
+                "23:00"
+              ]
+            ],
+            "note": "Public holiday rule (Holy Saturday)"
+          },
+          {
+            "date": "2027-03-29",
+            "hours": [
+              [
+                "09:00",
+                "15:00"
+              ],
+              [
+                "17:30",
+                "23:00"
+              ]
+            ],
+            "note": "Public holiday rule (Easter Monday)"
+          },
+          {
+            "date": "2027-04-05",
+            "hours": [
+              [
+                "09:00",
+                "15:00"
+              ],
+              [
+                "17:30",
+                "23:00"
+              ]
+            ],
+            "note": "Public holiday rule (Ching Ming)"
+          },
+          {
+            "date": "2027-05-01",
+            "hours": [
+              [
+                "09:00",
+                "15:00"
+              ],
+              [
+                "17:30",
+                "23:00"
+              ]
+            ],
+            "note": "Public holiday rule (Labour Day, Saturday)"
+          },
+          {
+            "date": "2027-05-13",
+            "hours": [
+              [
+                "09:00",
+                "15:00"
+              ],
+              [
+                "17:30",
+                "23:00"
+              ]
+            ],
+            "note": "Public holiday rule (Buddha's Birthday)"
+          },
+          {
+            "date": "2027-06-09",
+            "hours": [
+              [
+                "09:00",
+                "15:00"
+              ],
+              [
+                "17:30",
+                "23:00"
+              ]
+            ],
+            "note": "Public holiday rule (Tuen Ng)"
           }
         ],
         "lastEntry": null,
         "caveat": "The daytime session is the dim sum and lunch service; book through the restaurant's enquiry line or expect to queue.",
-        "notes": "Two daily sessions without lunch or dinner labels. Trolley service is not stated on the page.",
+        "notes": "Two daily sessions without lunch or dinner labels. Trolley service is not stated on the page. 2027 re-check (2026-10-19): Standing hours, no end date; Sunday/public-holiday hours applied to every non-Sunday public holiday in the window. No Lunar New Year special hours published.",
         "evidence": {
           "url": "https://www.maximschinese.com.hk/en/brand/1",
           "quote": "Mon-Sat 11:00am-3:00pm, 5:30pm-11pm; Sundays & public holidays 9:00am-3:00pm, 5:30pm-11pm",
@@ -10642,11 +16652,54 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "tue": [],
+              "wed": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "20:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "20:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -10708,11 +16761,71 @@ window.HB_PLACES = {
               ]
             ],
             "note": "Public holiday hours"
+          },
+          {
+            "date": "2027-02-06",
+            "hours": [],
+            "note": "'Closed on ... the first two days of the Lunar New Year' (LNY rule applied)"
+          },
+          {
+            "date": "2027-02-07",
+            "hours": [],
+            "note": "'Closed on ... the first two days of the Lunar New Year' (LNY rule applied)"
+          },
+          {
+            "date": "2027-02-08",
+            "hours": [
+              [
+                "10:00",
+                "20:00"
+              ]
+            ],
+            "note": "Public holiday hours (third day of LNY): 'Friday, Saturday, and Public Holiday: 10:00 am–08:00 pm'"
+          },
+          {
+            "date": "2027-03-29",
+            "hours": [
+              [
+                "10:00",
+                "20:00"
+              ]
+            ],
+            "note": "Public holiday hours (Easter Monday)"
+          },
+          {
+            "date": "2027-04-05",
+            "hours": [
+              [
+                "10:00",
+                "20:00"
+              ]
+            ],
+            "note": "Public holiday hours (Ching Ming)"
+          },
+          {
+            "date": "2027-05-13",
+            "hours": [
+              [
+                "10:00",
+                "20:00"
+              ]
+            ],
+            "note": "Public holiday hours (Buddha's Birthday)"
+          },
+          {
+            "date": "2027-06-09",
+            "hours": [
+              [
+                "10:00",
+                "20:00"
+              ]
+            ],
+            "note": "Public holiday hours (Tuen Ng)"
           }
         ],
         "lastEntry": null,
         "caveat": "Closed on Tuesdays. Ticket sales close an hour before the museum; booking ahead is recommended.",
-        "notes": "Public-holiday exceptions follow the page's general rule, not dated notices.",
+        "notes": "Public-holiday exceptions follow the page's general rule, not dated notices. 2027 re-check (2026-10-19): Standing hours, no end date; LNY rule applied (no eve early-closing rule stated, so 5 Feb unchanged). Other holidays (1 Jan, Good Fri, Holy Sat, Labour Day) fall on Fri/Sat and already 10:00–20:00. No 2027 dated notices.",
         "evidence": {
           "url": "https://www.hkpm.org.hk/en/visit/plan-your-visit",
           "quote": "Monday, Wednesday, Thursday, and Sunday: 10:00 am–06:00 pm; Friday, Saturday, and Public Holiday: 10:00 am–08:00 pm; Closed on Tuesdays (except public holidays)",
@@ -10763,11 +16876,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "18:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "18:30"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -10824,11 +16985,81 @@ window.HB_PLACES = {
               ]
             ],
             "note": "Public holiday hours"
+          },
+          {
+            "date": "2027-01-01",
+            "hours": [
+              [
+                "09:00",
+                "18:30"
+              ]
+            ],
+            "note": "Public holiday rule: 'Saturdays, Sundays and Public Holidays: 9:00 - 18:30'"
+          },
+          {
+            "date": "2027-02-08",
+            "hours": [
+              [
+                "09:00",
+                "18:30"
+              ]
+            ],
+            "note": "Public holiday rule (third day of LNY)"
+          },
+          {
+            "date": "2027-03-26",
+            "hours": [
+              [
+                "09:00",
+                "18:30"
+              ]
+            ],
+            "note": "Public holiday rule (Good Friday)"
+          },
+          {
+            "date": "2027-03-29",
+            "hours": [
+              [
+                "09:00",
+                "18:30"
+              ]
+            ],
+            "note": "Public holiday rule (Easter Monday)"
+          },
+          {
+            "date": "2027-04-05",
+            "hours": [
+              [
+                "09:00",
+                "18:30"
+              ]
+            ],
+            "note": "Public holiday rule (Ching Ming)"
+          },
+          {
+            "date": "2027-05-13",
+            "hours": [
+              [
+                "09:00",
+                "18:30"
+              ]
+            ],
+            "note": "Public holiday rule (Buddha's Birthday)"
+          },
+          {
+            "date": "2027-06-09",
+            "hours": [
+              [
+                "09:00",
+                "18:30"
+              ]
+            ],
+            "note": "Public holiday rule (Tuen Ng)"
           }
         ],
         "lastEntry": null,
         "caveat": "The cable car can be suspended in bad weather; check the operator's announcements on the day.",
-        "notes": "The operator says no maintenance day is scheduled for 2026 at the moment; dates may be added later.",
+        "notes": "The operator says no maintenance day is scheduled for 2026 at the moment; dates may be added later. 2027 re-check (2026-10-19): Standing hours, no end date. Page only has 'Scheduled Maintenance Days in 2026' (none); no 2027 maintenance schedule published yet, dates may be added. Special-date hours are announced at top of site.",
         "evidence": {
           "url": "https://www.np360.com.hk/en/visitor-information/tourist-guide/",
           "quote": "Weekdays: 10:00 - 18:00; Saturdays, Sundays and Public Holidays: 9:00 - 18:30",
@@ -10879,11 +17110,59 @@ window.HB_PLACES = {
       "entrance": null,
       "hours": {
         "status": "hours-checked",
-        "checkedOn": "2026-10-14",
+        "checkedOn": "2026-10-19",
         "periods": [
           {
             "from": "2026-10-14",
             "to": "2026-12-31",
+            "weekly": {
+              "mon": [
+                [
+                  "10:00",
+                  "17:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "10:00",
+                  "17:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "17:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "17:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "17:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "17:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "17:30"
+                ]
+              ]
+            }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
             "weekly": {
               "mon": [
                 [
@@ -10933,7 +17212,7 @@ window.HB_PLACES = {
         "exceptions": [],
         "lastEntry": null,
         "caveat": "These are the Big Buddha's hours; the monastery itself opens 9 AM-6 PM.",
-        "notes": "The monastery's site is not recently dated (footer 2023), hence medium confidence.",
+        "notes": "The monastery's site is not recently dated (footer 2023), hence medium confidence. 2027 re-check (2026-10-19): Standing hours including public holidays, no end date; Po Lin Monastery 9am to 6pm. No dated notices.",
         "evidence": {
           "url": "https://plm.org.hk/eng/visitors.php",
           "quote": "Tian Tan Big Buddha: Monday to Sunday (including public holidays) 10 am to 5:30 pm; Po Lin Monastery: 9 am to 6 pm",
@@ -11028,6 +17307,49 @@ window.HB_PLACES = {
                 ]
               ]
             }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
+            "weekly": {
+              "mon": [],
+              "tue": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ]
+            }
           }
         ],
         "exceptions": [
@@ -11060,11 +17382,71 @@ window.HB_PLACES = {
             "date": "2026-12-31",
             "hours": [],
             "note": "Published closure"
+          },
+          {
+            "date": "2027-01-01",
+            "hours": [
+              [
+                "12:00",
+                "18:00"
+              ]
+            ],
+            "note": "SMB holiday page: New Year (Fri, 1 Jan) 'All museums are open from noon to 6 pm.'"
+          },
+          {
+            "date": "2027-03-26",
+            "hours": [
+              [
+                "10:00",
+                "18:00"
+              ]
+            ],
+            "note": "SMB holiday page: Easter (Fri 26 Mar to Mon 29 Mar) 'All museums are open as on a Sunday.'"
+          },
+          {
+            "date": "2027-03-29",
+            "hours": [
+              [
+                "10:00",
+                "18:00"
+              ]
+            ],
+            "note": "SMB holiday page: Easter Monday open 'as on a Sunday' (normally closed Mondays)"
+          },
+          {
+            "date": "2027-05-01",
+            "hours": [
+              [
+                "10:00",
+                "18:00"
+              ]
+            ],
+            "note": "SMB holiday page: May Day (Sat, 1 May) 'open as on a Sunday'"
+          },
+          {
+            "date": "2027-05-06",
+            "hours": [
+              [
+                "10:00",
+                "18:00"
+              ]
+            ],
+            "note": "SMB holiday page: Ascension Day (Thu, 6 May) 'open as on a Sunday'"
+          },
+          {
+            "date": "2027-05-17",
+            "hours": [
+              [
+                "10:00",
+                "18:00"
+              ]
+            ],
+            "note": "SMB holiday page: Whit Monday (17 May) 'open as on a Sunday' (normally closed Mondays)"
           }
         ],
         "lastEntry": null,
         "caveat": null,
-        "notes": "Holiday hours from https://www.smb.museum/en/plan-your-visit/special-opening-hours-during-public-holidays/.",
+        "notes": "Holiday hours from https://www.smb.museum/en/plan-your-visit/special-opening-hours-during-public-holidays/. 2027 re-check (2026-10-19): Standing weekly hours, no end date published. Holiday dates from https://www.smb.museum/en/plan-your-visit/special-opening-hours-during-public-holidays/ ('All museums'; 'Subject to changes'). Second-floor closure ended 21 Oct 2026; no 2027 closures on the museum page.",
         "evidence": {
           "url": "https://www.smb.museum/en/museums-institutions/alte-nationalgalerie/plan-your-visit/",
           "quote": "Mon closed / Tue 10:00 am - 6:00 pm ... (Tue-Sun)",
@@ -11202,6 +17584,49 @@ window.HB_PLACES = {
                 ]
               ]
             }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
+            "weekly": {
+              "mon": [],
+              "tue": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ]
+            }
           }
         ],
         "exceptions": [
@@ -11214,11 +17639,71 @@ window.HB_PLACES = {
             "date": "2026-12-31",
             "hours": [],
             "note": "Published closure"
+          },
+          {
+            "date": "2027-01-01",
+            "hours": [
+              [
+                "12:00",
+                "18:00"
+              ]
+            ],
+            "note": "SMB holiday page: New Year (Fri, 1 Jan) 'All museums are open from noon to 6 pm.'"
+          },
+          {
+            "date": "2027-03-26",
+            "hours": [
+              [
+                "10:00",
+                "18:00"
+              ]
+            ],
+            "note": "SMB holiday page: Easter (Fri 26 Mar to Mon 29 Mar) 'All museums are open as on a Sunday.'"
+          },
+          {
+            "date": "2027-03-29",
+            "hours": [
+              [
+                "10:00",
+                "18:00"
+              ]
+            ],
+            "note": "SMB holiday page: Easter Monday open 'as on a Sunday' (normally closed Mondays)"
+          },
+          {
+            "date": "2027-05-01",
+            "hours": [
+              [
+                "10:00",
+                "18:00"
+              ]
+            ],
+            "note": "SMB holiday page: May Day (Sat, 1 May) 'open as on a Sunday'"
+          },
+          {
+            "date": "2027-05-06",
+            "hours": [
+              [
+                "10:00",
+                "18:00"
+              ]
+            ],
+            "note": "SMB holiday page: Ascension Day (Thu, 6 May) 'open as on a Sunday'"
+          },
+          {
+            "date": "2027-05-17",
+            "hours": [
+              [
+                "10:00",
+                "18:00"
+              ]
+            ],
+            "note": "SMB holiday page: Whit Monday (17 May) 'open as on a Sunday' (normally closed Mondays)"
           }
         ],
         "lastEntry": null,
         "caveat": "Access to the Rieckhallen is currently not barrier-free.",
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Matches the record's 1 Dec 2026 period (new standing hours Tue-Sun 10-18, no end date). The page still also shows the pre-December hours (Thu to 20:00, Sat/Sun from 11:00). Holiday dates from the SMB-wide holiday page ('All museums'; 'Subject to changes'); 'as on a Sunday' taken as the new 10:00-18:00 Sunday hours.",
         "evidence": {
           "url": "https://www.smb.museum/en/museums-institutions/hamburger-bahnhof/plan-your-visit/",
           "quote": "Tue, Wed, Fri 10:00 am-6:00 pm; Thu 10:00 am-8:00 pm; Sat, Sun 11:00 am-6:00 pm. 'From 1 December 2026, new opening hours will apply: Tuesday to Sunday from 10 am to 6 pm.'",
@@ -11318,12 +17803,60 @@ window.HB_PLACES = {
                 ]
               ]
             }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
+            "weekly": {
+              "mon": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ]
+            }
           }
         ],
         "exceptions": [],
         "lastEntry": null,
         "caveat": "Gedenkhalle (old tower) exhibition closed for renovation, no end date. Visits pause during services and concerts.",
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Standing weekly hours, no end date; no visits during services, devotions and concerts. 'Ab 29.08.2026 schließt die Ausstellung in der Gedenkhalle aufgrund von Sanierungsarbeiten' (no reopening date); church tours continue. No 2027 holiday dates published.",
         "evidence": {
           "url": "https://gedaechtniskirche-berlin.de/besuch/offene-kirche/oeffnungszeiten",
           "quote": "Montag bis Sonntag: 10 bis 18 Uhr, ausgenommen während der Gottesdienste, Andachten und Konzerte",
@@ -11408,12 +17941,45 @@ window.HB_PLACES = {
               ],
               "sun": []
             }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
+            "weekly": {
+              "mon": [],
+              "tue": [],
+              "wed": [
+                [
+                  "18:30",
+                  null
+                ]
+              ],
+              "thu": [
+                [
+                  "18:30",
+                  null
+                ]
+              ],
+              "fri": [
+                [
+                  "18:30",
+                  null
+                ]
+              ],
+              "sat": [
+                [
+                  "18:30",
+                  null
+                ]
+              ],
+              "sun": []
+            }
           }
         ],
         "exceptions": [],
         "lastEntry": null,
         "caveat": null,
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Standing hours, no closing time or end date; no Betriebsferien or holiday dates published on the homepage.",
         "evidence": {
           "url": "https://restaurant-horvath.de/",
           "quote": "Öffnungszeiten: Mittwoch bis Samstag ab 18:30",
@@ -11508,6 +18074,49 @@ window.HB_PLACES = {
                 ]
               ]
             }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
+            "weekly": {
+              "mon": [],
+              "tue": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ]
+            }
           }
         ],
         "exceptions": [
@@ -11524,7 +18133,7 @@ window.HB_PLACES = {
         ],
         "lastEntry": "17:00",
         "caveat": "Time-slot ticket recommended; walk-in tickets also sold.",
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Standing weekly hours, no end date. Listed additional closures (14 Nov 2026, 24 Dec 2026, 2-3 Oct 2027, 11 Oct 2027) are all outside the window; nothing listed for Jan-Jun 2027. Page does not say whether the museum opens on holiday Mondays (Easter/Whit Monday) — only ANOHA children's museum opens Mondays that are Berlin public holidays.",
         "evidence": {
           "url": "https://www.jmberlin.de/en/visit",
           "quote": "Open Tue–Sun 10 am–6 pm ... Last admission: 5 pm ... Closed on Mondays",
@@ -11624,12 +18233,60 @@ window.HB_PLACES = {
                 ]
               ]
             }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
+            "weekly": {
+              "mon": [
+                [
+                  "06:00",
+                  "19:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "06:00",
+                  "19:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "06:00",
+                  "19:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "06:00",
+                  "19:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "06:00",
+                  "19:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "06:00",
+                  "19:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "06:00",
+                  "19:00"
+                ]
+              ]
+            }
           }
         ],
         "exceptions": [],
         "lastEntry": null,
         "caveat": null,
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Standing hours, no end date; 'Other Areas' hours used. No dated closures.",
         "evidence": {
           "url": "https://www.hkzbg.gov.hk/en/visitPage.html",
           "quote": "Fountain Terrace Garden 5am - 10pm; Green House 9am - 4:30pm; Mammals Section 6am – 7pm; Other Areas 6am - 7pm. Admission Free.",
@@ -11729,12 +18386,60 @@ window.HB_PLACES = {
                 ]
               ]
             }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
+            "weekly": {
+              "mon": [
+                [
+                  "17:00",
+                  "02:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "17:00",
+                  "02:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "17:00",
+                  "02:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "17:00",
+                  "02:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "17:00",
+                  "02:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "17:00",
+                  "02:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "17:00",
+                  "24:00"
+                ]
+              ]
+            }
           }
         ],
         "exceptions": [],
         "lastEntry": null,
         "caveat": null,
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Standing hours, no end date; no holiday notices.",
         "evidence": {
           "url": "https://www.theoldmanhongkong.com/",
           "quote": "5pm to 2am, Monday–Saturday; 5pm to 12am, Sunday",
@@ -11829,6 +18534,49 @@ window.HB_PLACES = {
                 ]
               ]
             }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
+            "weekly": {
+              "mon": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [],
+              "fri": [
+                [
+                  "10:00",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "21:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "21:00"
+                ]
+              ]
+            }
           }
         ],
         "exceptions": [
@@ -11851,11 +18599,101 @@ window.HB_PLACES = {
               ]
             ],
             "note": "Public holiday hours"
+          },
+          {
+            "date": "2027-01-01",
+            "hours": [
+              [
+                "10:00",
+                "21:00"
+              ]
+            ],
+            "note": "'Saturdays, Sundays and public holidays 10:00am – 9:00pm'"
+          },
+          {
+            "date": "2027-02-05",
+            "hours": [
+              [
+                "10:00",
+                "17:00"
+              ]
+            ],
+            "note": "'Lunar New Year's Eve 10:00am – 5:00pm' (LNY rule applied)"
+          },
+          {
+            "date": "2027-02-06",
+            "hours": [],
+            "note": "'Closed on ... the first two days of the Lunar New Year' (LNY rule applied)"
+          },
+          {
+            "date": "2027-02-07",
+            "hours": [],
+            "note": "'Closed on ... the first two days of the Lunar New Year' (LNY rule applied)"
+          },
+          {
+            "date": "2027-02-08",
+            "hours": [
+              [
+                "10:00",
+                "21:00"
+              ]
+            ],
+            "note": "Public holiday hours (third day of LNY)"
+          },
+          {
+            "date": "2027-03-26",
+            "hours": [
+              [
+                "10:00",
+                "21:00"
+              ]
+            ],
+            "note": "Public holiday hours (Good Friday)"
+          },
+          {
+            "date": "2027-03-29",
+            "hours": [
+              [
+                "10:00",
+                "21:00"
+              ]
+            ],
+            "note": "Public holiday hours (Easter Monday)"
+          },
+          {
+            "date": "2027-04-05",
+            "hours": [
+              [
+                "10:00",
+                "21:00"
+              ]
+            ],
+            "note": "Public holiday hours (Ching Ming)"
+          },
+          {
+            "date": "2027-05-13",
+            "hours": [
+              [
+                "10:00",
+                "21:00"
+              ]
+            ],
+            "note": "Public holiday hours; Thursday but 'Closed on Thursdays (except public holiday)' (Buddha's Birthday)"
+          },
+          {
+            "date": "2027-06-09",
+            "hours": [
+              [
+                "10:00",
+                "21:00"
+              ]
+            ],
+            "note": "Public holiday hours (Tuen Ng)"
           }
         ],
         "lastEntry": null,
         "caveat": "Free admission except special exhibitions; box office closes 30 minutes before the museum.",
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Standing hours, no end date; LNY rule applied (eve early close 5 Feb, closed 6–7 Feb). No 2027 dated notices.",
         "evidence": {
           "url": "https://hk.art.museum/en/web/ma/visit/opening-hours-and-admission.html",
           "quote": "Mondays to Wednesdays, Fridays 10:00am – 6:00pm; Saturdays, Sundays and public holidays 10:00am – 9:00pm; Christmas Eve 10:00am – 5:00pm; Closed on Thursdays (except public holiday)",
@@ -11955,12 +18793,60 @@ window.HB_PLACES = {
                 ]
               ]
             }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
+            "weekly": {
+              "mon": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "10:00",
+                  "21:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "10:00",
+                  "19:00"
+                ]
+              ]
+            }
           }
         ],
         "exceptions": [],
         "lastEntry": null,
         "caveat": "Some exhibitions need an all-access ticket; free entry applies to residents only.",
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Standing weekly hours, no end date published (page last updated 25 Feb 2026). No dated closures.",
         "evidence": {
           "url": "https://acm.nhb.gov.sg/visit/plan-your-visit",
           "quote": "Daily 10am - 7pm; Friday 10am - 9pm. Admission to all galleries ends 30 minutes before closing time.",
@@ -12060,12 +18946,60 @@ window.HB_PLACES = {
                 ]
               ]
             }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
+            "weekly": {
+              "mon": [
+                [
+                  "11:00",
+                  "22:30"
+                ]
+              ],
+              "tue": [
+                [
+                  "11:00",
+                  "22:30"
+                ]
+              ],
+              "wed": [
+                [
+                  "11:00",
+                  "22:30"
+                ]
+              ],
+              "thu": [
+                [
+                  "11:00",
+                  "23:30"
+                ]
+              ],
+              "fri": [
+                [
+                  "11:00",
+                  "23:30"
+                ]
+              ],
+              "sat": [
+                [
+                  "11:00",
+                  "23:30"
+                ]
+              ],
+              "sun": [
+                [
+                  "11:00",
+                  "22:30"
+                ]
+              ]
+            }
           }
         ],
         "exceptions": [],
         "lastEntry": null,
         "caveat": "Walk-in only; smart casual recommended.",
-        "notes": "Times are last seating.",
+        "notes": "Times are last seating. 2027 re-check (2026-10-19): Standing weekly hours, no end date published; times are last seating. Walk-ins only. Singapore Sling Day (27 June, annual) is an event, not an hours change.",
         "evidence": {
           "url": "https://www.raffles.com/singapore/dining/long-bar/",
           "quote": "Sunday to Wednesday: 11.00am – 10.30pm (last seating); Thursday to Saturday: 11.00am – 11.30pm (last seating)",
@@ -12165,12 +19099,60 @@ window.HB_PLACES = {
                 ]
               ]
             }
+          },
+          {
+            "from": "2027-01-01",
+            "to": "2027-06-30",
+            "weekly": {
+              "mon": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "tue": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "wed": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "thu": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "fri": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "sat": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ],
+              "sun": [
+                [
+                  "09:00",
+                  "18:00"
+                ]
+              ]
+            }
           }
         ],
         "exceptions": [],
         "lastEntry": "17:00",
         "caveat": null,
-        "notes": null,
+        "notes": "2027 re-check (2026-10-19): Standing weekly hours, no end date published. Only 2026 exhibit maintenance notices (Egg Splash 10-12 Nov 2026). Nothing for 2027 or holidays.",
         "evidence": {
           "url": "https://www.mandai.com/en/bird-paradise.html",
           "quote": "Daily, 9:00am – 6:00pm (Last Entry: 5:00pm)",

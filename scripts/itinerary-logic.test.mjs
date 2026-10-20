@@ -533,7 +533,9 @@ test("Berlin hours: seasonal periods, dated exceptions, open-ended closing and u
   assert.equal(logic.checkStopHours(at("11:00 PM"), "2026-11-20", hours("plc_berlin_green-door-bar")).state, "open", "opening time only: open after 19:00");
   assert.equal(logic.checkStopHours(at("6:00 PM"), "2026-11-20", hours("plc_berlin_green-door-bar")).state, "outside-hours");
   assert.equal(logic.checkStopHours(at("12:00 PM"), "2026-11-22", hours("plc_berlin_markthalle-neun")).state, "unknown", "Sunday is not published");
-  assert.equal(logic.checkStopHours(at("10:00 AM"), "2027-02-02", hours("plc_berlin_neues-museum")).state, "unknown", "outside the researched period");
+  assert.equal(logic.checkStopHours(at("10:00 AM"), "2027-08-03", hours("plc_berlin_neues-museum")).state, "unknown", "outside the researched period");
+  // Researched into 2027 (re-checked 2026-10-19): a Tuesday in February is open.
+  assert.equal(logic.checkStopHours(at("10:00 AM"), "2027-02-02", hours("plc_berlin_neues-museum")).state, "open");
   assert.equal(logic.checkStopHours(at("3:00 AM"), "2026-11-20", hours("plc_berlin_east-side-gallery")).state, "open", "open around the clock");
   assert.equal(logic.checkStopHours(at("Flexible"), "2026-11-20", hours("plc_berlin_neues-museum")).state, "open-day");
 });

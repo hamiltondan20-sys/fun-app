@@ -1441,7 +1441,7 @@ window.HB_TRIP_HELPERS.getConcreteTripTemplates = function(city, areas) {
             fit: "The morning is all next door; Tate Modern is a 13-minute walk, and dinner about 25 minutes by bus and Tube.",
             timeline: [
               { time: "8:30 AM", title: "Coffee at Monmouth Coffee", copy: "2 Park Street. Card payments only.", placeId: "plc_london_monmouth-coffee-borough" },
-              { time: "10:00 AM", title: "Borough Market", copy: "Traders keep their own hours within the market's.", placeId: "plc_london_borough-market" },
+              { time: "10:00 AM", title: "Borough Market", copy: "Traders keep their own hours within the market's.", placeId: "plc_london_borough-market", covers: ["food market", "market hall"] },
               { time: "12:00 PM", title: "Lunch at Padella", copy: "No reservations: join the virtual queue at the door.", placeId: "plc_london_padella-borough-market" },
               { time: "2:30 PM", title: "Tate Modern", copy: "Free to enter; large bags are not allowed.", placeId: "plc_london_tate-modern" },
               { time: "7:30 PM", title: "Dinner at Dishoom (Covent Garden)", copy: "12 Upper St Martin's Lane. After 6 PM, tables are booked only for groups of six or more.", placeId: "plc_london_dishoom-covent-garden" }
