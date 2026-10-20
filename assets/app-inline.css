@@ -3308,6 +3308,12 @@
       text-align: center;
     }
 
+    /* Beside a long "Swap in <place>", the other button keeps its own width; the swap label wraps instead. */
+    .trip-day-edit-toggle .trip-day-edit-button:not(.trip-day-edit-button--swap) {
+      flex: 0 0 auto;
+      min-width: max-content;
+    }
+
     .trip-day-actions-buttons .trip-day-map-button,
     .trip-day-actions-buttons .trip-day-edit-toggle {
       flex: 0 0 auto;
@@ -3869,7 +3875,8 @@
       font-size: 0.74rem;
       line-height: 1.35;
       opacity: 0.84;
-      max-width: 11rem;
+      /* Never wider than its chip, which is half the row on phones. */
+      max-width: min(11rem, 100%);
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -9055,5 +9062,13 @@
     @media print {
       .hb-dialog {
         display: none !important;
+      }
+    }
+    /* iOS zooms into any text field under 16px; keep fields at 16px on phone-width screens. */
+    @media (max-width: 767px) {
+      input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="file"]),
+      select,
+      textarea {
+        font-size: 16px !important;
       }
     }

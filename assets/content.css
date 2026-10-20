@@ -112,8 +112,16 @@ body.hb-content {
   flex-wrap: wrap;
   gap: 0.45rem;
   margin-top: 1.35rem;
+  align-items: center;
   color: var(--hb-muted);
   font-size: 0.88rem;
+}
+
+/* At least 24px tall, so each crumb is a comfortable tap target on phones. */
+.hb-crumbs a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
 }
 
 .crumb-sep {
