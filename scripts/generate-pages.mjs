@@ -21,6 +21,8 @@ import { guideReviewStatus, SAMPLE_DAY_NOTICE } from "./guide-review-status.mjs"
 import { reviewedSections } from "./guide-sections.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+// Cities whose planner days are built from checked places (docs/pilot-milestone.md).
+const PILOT_CITY_NAMES = ["Paris", "London", "Berlin", "Hong Kong", "Singapore"];
 const arg = (name, fallback) => {
   const match = process.argv.find((value) => value.startsWith(`--${name}=`));
   return match ? match.slice(name.length + 3) : fallback;
@@ -189,7 +191,10 @@ const esc = (value) => String(value ?? "")
   .replace(/>/g, "&gt;")
   .replace(/"/g, "&quot;");
 
-const clamp = (value, limit = 155) => {
+// "an Amsterdam itinerary", "a Paris trip": by the name's first letter (vowel sound).
+const article = (name) => (/^[AEIOU]/i.test(String(name || "").trim()) ? "an" : "a");
+
+const clamp =(value, limit = 155) => {
   const text = String(value || "").replace(/\s+/g, " ").trim();
   if (text.length <= limit) return text;
   const clipped = text.slice(0, limit).replace(/\s+\S*$/, "").trim();
@@ -637,11 +642,10 @@ ${intro}
 ${dayBlock}
 ${clusterMarkup}
       ${city.tip ? `<aside class="hb-tip" id="tip"><h2>Planning tip</h2><p>${esc(city.tip)}</p></aside>` : ""}
-      ${city.editorial?.trust ? `<section class="hb-trust"><h2>How this guide helps</h2><p>${esc(city.editorial.trust)}</p></section>` : ""}
       <section class="hb-convert">
-        <h2>Build a ${esc(city.name)} ${city.kind === "landmark" ? "visit" : "itinerary"}</h2>
+        <h2>Build ${article(city.name)} ${esc(city.name)} ${city.kind === "landmark" ? "visit" : "itinerary"}</h2>
         <p>Turn these ideas into a trip built around your dates, pace, and priorities.</p>
-        <a class="hb-cta-lg" href="${url(`/plan/?destination=${encodeURIComponent(city.key)}`)}">Plan a ${esc(city.name)} trip</a>
+        <a class="hb-cta-lg" href="${url(`/plan/?destination=${encodeURIComponent(city.key)}`)}">Plan ${article(city.name)} ${esc(city.name)} trip</a>
       </section>
       ${related.length ? `<section class="hb-related">
         <h2>More places to consider</h2>
@@ -793,13 +797,20 @@ function homePage(featured) {
     ["Tell us what sounds good", "Choose your pace, trip style, food interests, and the things you do not want to miss."],
     ["Make it yours", "Review the first draft, swap anything that feels off, and save a version when it feels right."]
   ];
-  const destinationCards = featured.filter((city) => typeof city.hero === "string" ? city.hero : city.hero?.image).slice(0, 12).map((city) => {
-    const image = typeof city.hero === "string" ? city.hero : city.hero?.image;
+  const cardImage = (city) => (typeof city.hero === "string" ? city.hero : city.hero?.image);
+  const card = (city, badge = "", fallbackImage = "") => {
+    const image = cardImage(city) || fallbackImage;
     return `<article class="hb-feature-card">
           ${image ? `<img src="${esc(image)}" alt="${esc(`${city.name} travel highlights`)}" width="720" height="420" loading="lazy" decoding="async" />` : ""}
-          <div><h3><a href="${url(`/destinations/${city.slug}/`)}">${esc(city.name)}</a></h3><p>${esc(clamp(city.summary, 120))}</p></div>
+          <div>${badge}<h3><a href="${url(`/destinations/${city.slug}/`)}">${esc(city.name)}</a></h3><p>${esc(clamp(city.summary, 120))}</p></div>
         </article>`;
-  }).join("\n");
+  };
+  // The pilot cities: full itineraries whose places, hours and travel times were checked against
+  // each place's own website (docs/pilot-milestone.md). Listed first, and not repeated below.
+  const pilots = PILOT_CITY_NAMES.map((name) => featured.find((city) => city.name === name)).filter(Boolean);
+  // Pilots without a photo use the site's own city illustration, so the row stays even.
+  const pilotCards = pilots.map((city) => card(city, `<p class="hb-checked-badge">Checked against official sources</p>`, url("/assets/guide-city.png"))).join("\n");
+  const destinationCards = featured.filter((city) => cardImage(city) && !pilots.includes(city)).slice(0, 12).map((city) => card(city)).join("\n");
   const body = `    <article>
       <header class="hb-lede hb-lede--home">
         <p class="hb-eyebrow">Your next trip</p>
@@ -815,7 +826,15 @@ function homePage(featured) {
         </div>
       </section>
 
-      <section class="hb-cluster hb-cluster--grid" id="featured">
+${pilotCards ? `      <section class="hb-cluster hb-cluster--grid" id="checked">
+        <h2>Checked against official sources</h2>
+        <p class="hb-section-lead">Full day-by-day plans for these cities use places checked on their own websites, with published opening hours for your dates and timed travel between stops.</p>
+        <div class="hb-feature-grid">
+          ${pilotCards}
+        </div>
+      </section>
+
+` : ""}      <section class="hb-cluster hb-cluster--grid" id="featured">
         <h2>Get inspired by a destination</h2>
         <p class="hb-section-lead">Browse guides for ${featured.length} places, with ideas for what to see, where to eat, and how to spend a day.</p>
         <div class="hb-feature-grid">

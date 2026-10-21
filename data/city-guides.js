@@ -745,7 +745,7 @@ window.HB_DATA.cityEditorialPageData = {
         trust: "This page is built to help travelers sort Paris into what is iconic, what is actually worth prioritizing, and what supports a better rhythm once the trip begins. The goal is not to make Paris feel smaller. It is to make it feel clearer.",
         summaryCards: [
           ["Best for", "First-time Europe trips, couples, food lovers, and travelers who want classic city beauty without feeling rushed."],
-          ["Ideal trip length", "4 to 5 days if users want the essentials, one standout meal, and time to enjoy at least a few neighborhoods properly."],
+          ["Ideal trip length", "4 to 5 days if you want the essentials, one standout meal, and time to enjoy at least a few neighborhoods properly."],
           ["How to plan it", "Paris feels better when each day stays fairly local. Crossing the city too many times makes even a beautiful trip feel heavier than it should."]
         ],
         gallery: [
@@ -766,7 +766,7 @@ window.HB_DATA.cityEditorialPageData = {
           }
         ],
         sectionIntros: {
-          "Best Attractions": "Paris attractions are strongest when users choose the icons that actually suit the trip rather than trying to treat every famous sight as equally urgent. In Paris, the setting around the attraction matters almost as much as the attraction itself.",
+          "Best Attractions": "Paris attractions are strongest when you choose the icons that actually suit the trip rather than trying to treat every famous sight as equally urgent. In Paris, the setting around the attraction matters almost as much as the attraction itself.",
           "Best Restaurants": "Restaurants in Paris should do more than check a culinary box. The best ones help define the neighborhood, the mood of the evening, or the kind of memory the trip is trying to create.",
           "Best for a Budget": "Paris does not have to feel lesser on a more moderate budget. Some of the most convincing Paris moments are the ones that happen outdoors, on foot, or between the bigger ticketed experiences.",
           "Best luxury things to do": "Luxury in Paris tends to work best when it feels elegant rather than excessive. One beautiful meal, one private experience, or one especially well-located stay often does more than trying to upgrade everything.",
@@ -785,7 +785,7 @@ window.HB_DATA.cityEditorialPageData = {
         itemCopy: {
           "Best Attractions": {
             "Eiffel Tower": "The Eiffel Tower still earns its place because it gives first-time travelers the unmistakable Paris moment they came for. The experience is usually better when the surrounding area and the view are part of the plan, not just the tower itself.",
-            "Louvre Museum": "The Louvre works best when users treat it as a selective museum visit rather than a completionist challenge. Even a focused visit can make the day feel culturally significant.",
+            "Louvre Museum": "The Louvre works best when you treat it as a selective museum visit rather than a completionist challenge. Even a focused visit can make the day feel culturally significant.",
             "Le Marais": "Le Marais is one of the easiest neighborhoods to recommend because it gives travelers food, walking, shopping, and city atmosphere without asking the day to do too much."
           },
           "Best Restaurants": {
@@ -799,7 +799,7 @@ window.HB_DATA.cityEditorialPageData = {
             "Free museum or church stops": "Smaller free cultural stops help the trip feel layered and thoughtful without requiring every day to revolve around ticketed highlights."
           },
           "Best luxury things to do": {
-            "Lunch at Le Jules Verne": "This kind of splurge works when the user wants one unmistakably Paris luxury moment rather than a long list of upgrades.",
+            "Lunch at Le Jules Verne": "This kind of splurge works when you want one unmistakably Paris luxury moment rather than a long list of upgrades.",
             "Private Seine cruise": "A private Seine cruise can feel worth it because it turns the city’s beauty into the experience itself instead of just the backdrop.",
             "Palace hotel tea service": "A palace tea service is a good example of a Paris luxury that feels elegant and destination-specific rather than arbitrary."
           },
@@ -816,7 +816,7 @@ window.HB_DATA.cityEditorialPageData = {
           "Best unique things to do": {
             "Covered passages": "The covered passages make Paris feel older, quieter, and more layered than the standard first-pass itinerary.",
             "Pere Lachaise": "Pere Lachaise is one of those places that gives the city depth for travelers who want something reflective and specific.",
-            "Vintage market at Saint-Ouen": "Saint-Ouen works best for users who want a side of Paris that feels more open-ended, local, and less polished than the central postcard version."
+            "Vintage market at Saint-Ouen": "Saint-Ouen works best for travelers who want a side of Paris that feels more open-ended, local, and less polished than the central postcard version."
           },
           "Best bakeries": {
             "Du Pain et des Idees": "Du Pain et des Idees is worth building into the day when the bakery stop itself should feel memorable and destination-specific.",
@@ -840,7 +840,7 @@ window.HB_DATA.cityEditorialPageData = {
         summaryCards: [
           ["Best for", "History-focused trips, food lovers, couples, and travelers who want a city that still feels cinematic after the first landmark."],
           ["Ideal trip length", "3 to 4 days for the essentials, longer if the goal is to slow down and let neighborhoods matter."],
-          ["How to plan it", "Rome improves when users do fewer major monuments per day and leave enough room for meals, walking, and evening atmosphere."]
+          ["How to plan it", "Rome improves when you do fewer major monuments per day and leave enough room for meals, walking, and evening atmosphere."]
         ],
         gallery: [
           {
@@ -879,7 +879,7 @@ window.HB_DATA.cityEditorialPageData = {
         itemCopy: {
           "Best Attractions": {
             "Colosseum": "The Colosseum still deserves its place because it delivers the scale and cultural weight many first-time Rome travelers are hoping to feel in person.",
-            "Roman Forum": "The Roman Forum works best when users want the ancient-city context that makes the rest of Rome feel more connected and legible.",
+            "Roman Forum": "The Roman Forum works best when you want the ancient-city context that makes the rest of Rome feel more connected and legible.",
             "Trastevere": "Trastevere is one of the most reliable neighborhoods in the city for travelers who want atmosphere, food, and an evening that feels unmistakably Roman."
           },
           "Best Restaurants": {
@@ -910,10 +910,10 @@ window.HB_DATA.cityEditorialPageData = {
           "Tokyo rewards curiosity more than efficiency. It is huge, layered, and full of neighborhoods that feel like entirely different cities once the day begins. That is part of the appeal, but it is also why Tokyo can quickly become overwhelming if the trip tries to cover too much at once.",
           "The strongest Tokyo trips usually feel district-based. One day might lean traditional, another fast-paced and bright, another more design-forward or food-driven. Once travelers accept that structure, the city opens up in a much more enjoyable way."
         ],
-        trust: "This page is meant to make Tokyo easier to read before the itinerary gets built. It highlights the must-do experiences, but it also points users toward the pacing and district logic that make the city feel exciting instead of chaotic.",
+        trust: "This page is meant to make Tokyo easier to read before the itinerary gets built. It highlights the must-do experiences, but it also points you toward the pacing and district logic that make the city feel exciting instead of chaotic.",
         summaryCards: [
           ["Best for", "Food-first trips, design lovers, repeat city travelers, and people who enjoy neighborhoods with very different personalities."],
-          ["Ideal trip length", "5 to 6 days if users want major districts, strong meals, and at least one slower neighborhood day."],
+          ["Ideal trip length", "5 to 6 days if you want major districts, strong meals, and at least one slower neighborhood day."],
           ["How to plan it", "Tokyo works best when each day is built around one side of the city or one district cluster rather than constant cross-city movement."]
         ],
         gallery: [
@@ -934,7 +934,7 @@ window.HB_DATA.cityEditorialPageData = {
           }
         ],
         sectionIntros: {
-          "Best Attractions": "Tokyo attractions work better when users think in districts instead of isolated stops. The city feels more coherent once each major experience is tied to the part of town around it.",
+          "Best Attractions": "Tokyo attractions work better when you think in districts instead of isolated stops. The city feels more coherent once each major experience is tied to the part of town around it.",
           "Best Restaurants": "Restaurants in Tokyo are often one of the clearest ways to define the day. The right meal can shape whether the experience feels traditional, design-forward, casual, or intensely local.",
           "Best for a Budget": "Tokyo can reward budget travelers surprisingly well when they focus on neighborhood wandering, markets, transit-smart planning, and food that does not need a luxury price tag to feel memorable.",
           "Best luxury things to do": "Luxury in Tokyo works when it clarifies the city rather than distancing the traveler from it. One great omakase, one ryokan extension, or one private cultural moment often goes a long way.",
@@ -946,7 +946,7 @@ window.HB_DATA.cityEditorialPageData = {
           "Best breakfast spots": "Breakfast in Tokyo can be one of the easiest ways to shape the day’s personality early, especially when the morning needs a strong neighborhood anchor.",
           "Best lunch spots": "Lunch matters in Tokyo because a well-placed meal can keep the day tight, local, and much more enjoyable than crossing districts for a weaker plan.",
           "Best dinner spots": "Dinner is often the clearest chance to make Tokyo feel intentional. The best choices help the night feel distinctly of the city rather than interchangeable.",
-          "Best cocktail spots": "Cocktails in Tokyo tend to work best when the user wants one part of the night to feel polished, hidden, or unusually precise.",
+          "Best cocktail spots": "Cocktails in Tokyo tend to work best when you want one part of the night to feel polished, hidden, or unusually precise.",
           "Best bakeries": "Tokyo bakeries are often an underrated part of the city and can give the trip a softer, more everyday moment between the bigger attractions.",
           "Best coffee shops": "Coffee shops in Tokyo often reflect the city’s design sensibility and neighborhood character, which makes them especially useful as intentional reset points."
         },
@@ -959,11 +959,11 @@ window.HB_DATA.cityEditorialPageData = {
           "Best Restaurants": {
             "Sushi Daiwa": "Sushi Daiwa is best when the trip wants one meal that feels specifically tied to Tokyo’s food identity rather than just globally recognized fine dining.",
             "Narisawa": "Narisawa works when dinner should feel elevated, deliberate, and worthy of being one of the trip’s clearest memory moments.",
-            "Izakaya Toyo style food alleys": "Food alleys and izakaya clusters help Tokyo feel social and specific, especially when the user wants the city at night rather than a formal reservation."
+            "Izakaya Toyo style food alleys": "Food alleys and izakaya clusters help Tokyo feel social and specific, especially when you want the city at night rather than a formal reservation."
           },
           "Best for a Budget": {
             "Tsukiji Outer Market": "Tsukiji Outer Market is one of the easiest budget-friendly ways to make the food side of Tokyo feel exciting without turning the day into a splurge.",
-            "Free skyline views": "Free skyline options work because they let users enjoy Tokyo’s scale without forcing every city view into a ticketed attraction.",
+            "Free skyline views": "Free skyline options work because they let you enjoy Tokyo’s scale without forcing every city view into a ticketed attraction.",
             "Temple and shrine wandering": "Temple and shrine wandering gives the trip a quieter Tokyo rhythm and helps balance the city’s more intense commercial districts."
           },
           "Best things to do for first timers": {
@@ -987,8 +987,8 @@ window.HB_DATA.cityEditorialPageData = {
         trust: "This page helps travelers sort out what is actually worth the time in New York, where the city feels most like itself, and how to avoid spending half the trip in transit between good ideas.",
         summaryCards: [
           ["Best for", "First-time big-city trips, food variety, iconic skyline moments, and travelers who like neighborhoods with different personalities."],
-          ["Ideal trip length", "4 to 5 days if users want classic sights, a few strong meals, and at least one night that really feels like New York."],
-          ["How to plan it", "New York feels better when users group neighborhoods and choose one or two major priorities per day instead of chasing everything."]
+          ["Ideal trip length", "4 to 5 days if you want classic sights, a few strong meals, and at least one night that really feels like New York."],
+          ["How to plan it", "New York feels better when you group neighborhoods and choose one or two major priorities per day instead of chasing everything."]
         ],
         gallery: [
           {
@@ -1008,7 +1008,7 @@ window.HB_DATA.cityEditorialPageData = {
           }
         ],
         sectionIntros: {
-          "Best Attractions": "New York attractions are less about checking off names and more about choosing the icons that actually match the kind of trip a user wants. A skyline-heavy first visit feels very different from a museum trip or a neighborhood-forward one, so the smartest plans pick a lane each day.",
+          "Best Attractions": "New York attractions are less about checking off names and more about choosing the icons that actually match the kind of trip you want. A skyline-heavy first visit feels very different from a museum trip or a neighborhood-forward one, so the smartest plans pick a lane each day.",
           "Best Restaurants": "Food is one of the easiest ways to make New York feel personal. The strongest restaurant picks are not always the hardest reservations. They are the places that fit the neighborhood, the time of day, and the version of New York the traveler wants to remember.",
           "Best for a Budget": "New York can absolutely reward budget-minded travelers if they know where the city naturally gives value. Long walks, ferry views, parks, and casual classics often feel more New York than expensive tickets packed into the wrong day.",
           "Best luxury things to do": "Luxury in New York works best when it sharpens the trip instead of making it feel staged. A great suite, a private skyline moment, or one extraordinary dinner usually lands better than trying to upgrade every part of the itinerary.",
@@ -1020,7 +1020,7 @@ window.HB_DATA.cityEditorialPageData = {
           "Best breakfast spots": "Breakfast in New York can either be a quick fuel stop or a real part of the day’s identity. These are the places worth protecting when the morning should actually feel like part of the trip.",
           "Best lunch spots": "Lunch matters more in New York than people think because it helps shape the neighborhood feel of the day. A strong lunch can be the thing that keeps the itinerary from feeling too fast or too generic.",
           "Best dinner spots": "Dinner is where New York often feels most like itself. A great dinner here should not only taste good. It should sharpen the mood of the neighborhood and give the day a stronger finish.",
-          "Best cocktail spots": "Cocktails are one of the easiest ways to create a real New York evening. The best bar choices here usually depend on whether the user wants classic glamour, downtown energy, or a more hidden-night-out feel.",
+          "Best cocktail spots": "Cocktails are one of the easiest ways to create a real New York evening. The best bar choices here usually depend on whether you want classic glamour, downtown energy, or a more hidden-night-out feel.",
           "Best bakeries": "Bakery stops in New York work best when they feel built into the day rather than treated like a separate mission. These are the places worth folding into a walk, a neighborhood morning, or an afternoon reset.",
           "Best coffee shops": "Coffee shops in New York are often less about slowing down for long stretches and more about giving the day a smart, local reset. The best ones feel useful, atmospheric, and easy to build around."
         },
@@ -1028,7 +1028,7 @@ window.HB_DATA.cityEditorialPageData = {
           "Best Attractions": {
             "Central Park": "Central Park is not just a park stop. It is one of the best ways to give a New York trip some breathing room, especially if the itinerary needs one stretch that feels spacious and unmistakably local at the same time.",
             "Statue of Liberty views": "For many first-time visitors, seeing the Statue of Liberty matters more than committing to a full island visit. Building in a strong view can deliver the iconic moment without consuming too much of the day.",
-            "Top of the Rock": "Top of the Rock remains one of the smartest observation-deck picks because it gives users the skyline they actually came for, including the Empire State Building in the view."
+            "Top of the Rock": "Top of the Rock remains one of the smartest observation-deck picks because it gives you the skyline you actually came for, including the Empire State Building in the view."
           },
           "Best Restaurants": {
             "Katz's Delicatessen": "Katz's works because it feels classic, specific, and hard to confuse with anywhere else. It is best when the day already leans Lower East Side or downtown.",
@@ -1036,7 +1036,7 @@ window.HB_DATA.cityEditorialPageData = {
             "L'Artusi": "L'Artusi lands especially well for travelers who want one West Village dinner that feels lively, satisfying, and very much part of a New York night out."
           },
           "Best for a Budget": {
-            "High Line walk": "The High Line is one of the easiest budget-friendly wins in the city because it gives users a strong sense of place while naturally connecting them to neighborhoods worth exploring.",
+            "High Line walk": "The High Line is one of the easiest budget-friendly wins in the city because it gives you a strong sense of place while naturally connecting you to neighborhoods worth exploring.",
             "Staten Island Ferry": "The Staten Island Ferry still earns its spot because it gives travelers a classic harbor view without turning the experience into a major ticketed commitment.",
             "Dollar-slice and park time": "Simple New York moments like a cheap slice and time in the park often feel more satisfying than forcing one more paid attraction into an already full day."
           },
@@ -1056,7 +1056,7 @@ window.HB_DATA.cityEditorialPageData = {
             "Observation deck": "One good observation deck is usually enough. Choosing it well matters more than trying to do all of them."
           },
           "Best unique things to do": {
-            "Roosevelt Island Tram": "The Roosevelt Island Tram gives users a city view that feels a little less standard, and it adds some novelty without complicating the day too much.",
+            "Roosevelt Island Tram": "The Roosevelt Island Tram gives you a city view that feels a little less standard, and it adds some novelty without complicating the day too much.",
             "DUMBO sunrise": "DUMBO at sunrise is one of the better ways to make New York feel quieter and more cinematic than it does during the middle of the day.",
             "Smorgasburg when in season": "Smorgasburg works when the trip wants a more open-ended food experience that still feels distinctly local and social."
           },
@@ -1068,7 +1068,7 @@ window.HB_DATA.cityEditorialPageData = {
           "Best coffee shops": {
             "La Cabra": "La Cabra is a strong fit when the day needs a downtown-style coffee stop that still feels considered and worth lingering in for a few minutes.",
             "Stumptown": "Stumptown remains a dependable city coffee stop because it is easy to fold into a faster-paced day without overthinking it.",
-            "Devocion": "Devocion is one of the better coffee choices when the user wants the stop itself to feel visually memorable, not just practical."
+            "Devocion": "Devocion is one of the better coffee choices when you want the stop itself to feel visually memorable, not just practical."
           }
         }
       },
@@ -1076,13 +1076,13 @@ window.HB_DATA.cityEditorialPageData = {
         dek: "For travelers who want museums, neighborhoods, and classic London atmosphere with enough flexibility for weather and wandering.",
         intro: [
           "London works especially well for travelers who like city trips with range. It can be museum-heavy, food-focused, historic, green, theatrical, or relaxed depending on how the days are shaped. That flexibility is one of its best qualities.",
-          "The key is not treating London like a landmark sprint. The city tends to feel richer when users give neighborhoods time to breathe, let museums share space with parks or pubs, and avoid the instinct to cross town just because transit makes it technically possible."
+          "The key is not treating London like a landmark sprint. The city tends to feel richer when you give neighborhoods time to breathe, let museums share space with parks or pubs, and avoid the instinct to cross town just because transit makes it technically possible."
         ],
         trust: "This page is meant to help travelers understand London as a set of moods and neighborhoods, not just a set of major sights. That usually leads to a trip that feels warmer and more personal.",
         summaryCards: [
-          ["Best for", "Museum lovers, repeat Europe travelers, history fans, and users who like trips with both structure and flexibility."],
+          ["Best for", "Museum lovers, repeat Europe travelers, history fans, and anyone who likes trips with both structure and flexibility."],
           ["Ideal trip length", "4 days for a first pass, longer if the trip is meant to include theater, day trips, or slower neighborhood wandering."],
-          ["How to plan it", "London usually gets better when users let one area shape the day and treat extra landmarks as optional rather than mandatory."]
+          ["How to plan it", "London usually gets better when you let one area shape the day and treat extra landmarks as optional rather than mandatory."]
         ],
         gallery: [
           {
@@ -1112,7 +1112,7 @@ window.HB_DATA.cityEditorialPageData = {
           "Best things to do for first timers": "A first London trip should absolutely include a few famous landmarks, but the city becomes more convincing once those are tied to neighborhoods and not treated like isolated stops.",
           "Best unique things to do": "London’s unique side often comes from atmosphere and location rather than spectacle. The best offbeat picks make the city feel more textured and less expected.",
           "Best breakfast spots": "Breakfast can shape a London day more than travelers expect, especially when the weather or walking pace makes the morning tone important.",
-          "Best lunch spots": "Lunch in London works best when it supports the neighborhood the user is already in, rather than forcing a detour that makes the city feel more sprawling.",
+          "Best lunch spots": "Lunch in London works best when it supports the neighborhood you are already in, rather than forcing a detour that makes the city feel more sprawling.",
           "Best dinner spots": "Dinner is where London often sharpens into the kind of trip people remember, especially when the restaurant matches the evening’s area and mood.",
           "Best cocktail spots": "Cocktails in London are often about choosing the kind of evening the traveler wants, from polished classic bars to livelier Soho energy.",
           "Best bakeries": "London bakeries can give the trip a softer, more local-feeling pause that works especially well on mornings built around walking.",
@@ -1152,11 +1152,11 @@ window.HB_DATA.cityEditorialPageData = {
           "Barcelona is often at its best when it feels textured rather than packed. Travelers usually come for Gaudí, the old city, the sea, and the food, but the city’s real strength is how naturally those things can fit together when the pace stays realistic.",
           "The mistake is trying to turn Barcelona into a nonstop attraction city. A stronger version of the trip usually pairs one clear sight with neighborhood time, a meal worth lingering over, and enough space in the evening for the city’s slower rhythm to show up."
         ],
-        trust: "This page helps users understand which Barcelona experiences are worth protecting, which ones are easy to overdo, and how to build the kind of trip that still feels like a vacation rather than a checklist.",
+        trust: "This page helps you understand which Barcelona experiences are worth protecting, which ones are easy to overdo, and how to build the kind of trip that still feels like a vacation rather than a checklist.",
         summaryCards: [
           ["Best for", "Architecture lovers, couples, food-focused city breaks, and travelers who want some beach or waterfront balance."],
           ["Ideal trip length", "3 to 4 days for the essentials and one slower day, longer if the trip leans more local or food-first."],
-          ["How to plan it", "Barcelona works well when users choose one major sight per day and let the rest of the day unfold nearby."]
+          ["How to plan it", "Barcelona works well when you choose one major sight per day and let the rest of the day unfold nearby."]
         ],
         gallery: [
           {
@@ -1231,10 +1231,10 @@ window.HB_DATA.cityEditorialPageData = {
           "Lisbon has a way of making a trip feel lighter. The viewpoints, tiled streets, old neighborhoods, and easy food moments all make the city feel inviting, but it is also a place where hills, walking, and slower meals matter more than many first-timers expect.",
           "The best Lisbon trips usually lean into that rhythm instead of resisting it. One great area, one scenic stop, one standout meal, and enough room to pause often feels far better here than a tightly packed sightseeing plan."
         ],
-        trust: "This page helps users understand why Lisbon feels so appealing in practice, not just in photos. It points toward the parts of the city that deliver atmosphere, not just activity.",
+        trust: "This page helps you understand why Lisbon feels so appealing in practice, not just in photos. It points toward the parts of the city that deliver atmosphere, not just activity.",
         summaryCards: [
           ["Best for", "Relaxed city breaks, scenic food trips, couples, and travelers who care more about vibe than volume."],
-          ["Ideal trip length", "3 to 4 days for the city itself, longer if users want time for nearby day trips."],
+          ["Ideal trip length", "3 to 4 days for the city itself, longer if you want time for nearby day trips."],
           ["How to plan it", "Lisbon usually feels best when the day stays local, walking expectations stay realistic, and meals are treated as part of the experience."]
         ],
         gallery: [
@@ -1265,7 +1265,7 @@ window.HB_DATA.cityEditorialPageData = {
           "Best things to do for first timers": "A first Lisbon trip should make room for the obvious neighborhoods and a few of the classic viewpoints. The stronger version keeps those pieces close together and does not underestimate the hills.",
           "Best unique things to do": "Lisbon’s unique side usually comes from music, viewpoints, and creative districts that feel a little less postcard-ready and a little more lived-in.",
           "Best breakfast spots": "Breakfast matters in Lisbon because it helps set a pace for the whole day. The strongest spots make it easier to start slow without losing momentum.",
-          "Best lunch spots": "Lunch in Lisbon often works best when it extends the district the user is already in rather than sending them uphill for something that breaks the flow.",
+          "Best lunch spots": "Lunch in Lisbon often works best when it extends the district you are already in rather than sending you uphill for something that breaks the flow.",
           "Best dinner spots": "Dinner is where Lisbon often turns from pretty to memorable. The best choices feel rooted in the neighborhood and make the evening feel intentional.",
           "Best cocktail spots": "Cocktails in Lisbon are strongest when the night wants a little style after an already scenic day. The city does not need much forcing once the setting is right.",
           "Best bakeries": "Lisbon bakeries are not just practical stops. They are part of the city’s identity, especially on mornings and afternoons that want an easy, delicious pause.",
@@ -1314,7 +1314,7 @@ window.HB_DATA.cityEditorialPageData = {
         summaryCards: [
           ["Best for", "Street food lovers, first-time Southeast Asia trips, nightlife, and travelers who like a city with strong sensory energy."],
           ["Ideal trip length", "3 to 4 days for a first visit, longer if the trip uses Bangkok as a fuller food and neighborhood stay."],
-          ["How to plan it", "Bangkok feels smoother when users avoid zigzagging across the city and build days around one side of the river or one district cluster."]
+          ["How to plan it", "Bangkok feels smoother when you avoid zigzagging across the city and build days around one side of the river or one district cluster."]
         ],
         gallery: [
           {
@@ -1334,7 +1334,7 @@ window.HB_DATA.cityEditorialPageData = {
           }
         ],
         sectionIntros: {
-          "Best Attractions": "Bangkok attractions work best when users accept the city’s heat, traffic, and neighborhood scale. The strongest plans group temples and river sights together instead of turning them into scattered errands.",
+          "Best Attractions": "Bangkok attractions work best when you accept the city’s heat, traffic, and neighborhood scale. The strongest plans group temples and river sights together instead of turning them into scattered errands.",
           "Best Restaurants": "Bangkok restaurants can define the whole trip because food is one of the city’s clearest strengths. The best choices help separate everyday eating from the meals that should feel like true highlights.",
           "Best for a Budget": "Bangkok is excellent on a moderate budget because some of its strongest experiences are still inexpensive: ferries, markets, temple visits, and street food.",
           "Best luxury things to do": "Luxury in Bangkok often feels most worthwhile when it offers relief as much as indulgence. A spa, rooftop dinner, or private boat can balance the city’s intensity beautifully.",
@@ -1392,7 +1392,7 @@ window.HB_DATA.cityEditorialPageData = {
         trust: "This page helps travelers understand what Los Angeles is genuinely strong at, which parts of the city deserve their own day, and how to avoid turning traffic into the main memory of the trip.",
         summaryCards: [
           ["Best for", "First-time California trips, entertainment fans, beach-city combinations, and travelers who like neighborhoods with totally different moods."],
-          ["Ideal trip length", "4 to 5 days if users want to split the city into a few distinct area-based days."],
+          ["Ideal trip length", "4 to 5 days if you want to split the city into a few distinct area-based days."],
           ["How to plan it", "Los Angeles gets much better when each day stays on one side of town and the itinerary treats driving time as a real part of the plan."]
         ],
         gallery: [
@@ -1431,7 +1431,7 @@ window.HB_DATA.cityEditorialPageData = {
         },
         itemCopy: {
           "Best Attractions": {
-            "Griffith Observatory": "Griffith Observatory is one of the clearest ways to make Los Angeles feel legible. It gives users both a classic city image and a better sense of the city’s scale.",
+            "Griffith Observatory": "Griffith Observatory is one of the clearest ways to make Los Angeles feel legible. It gives you both a classic city image and a better sense of the city’s scale.",
             "Santa Monica": "Santa Monica works because it lets first-time visitors understand the coastal side of LA without needing a whole beach-hopping strategy.",
             "The Getty Center": "The Getty Center is a strong fit when the day wants culture, views, and architecture without the intensity of a denser city-center museum experience."
           },
@@ -1472,7 +1472,7 @@ window.HB_DATA.cityEditorialPageData = {
         summaryCards: [
           ["Best for", "Warm-weather city breaks, couples trips, nightlife, art-forward neighborhoods, and travelers who want beach access without a resort-only trip."],
           ["Ideal trip length", "3 to 4 days for a balanced first visit with beach time, one neighborhood day, and a stronger night out."],
-          ["How to plan it", "Miami usually works best when users decide early whether the day leans beach, nightlife, or neighborhood exploring and build around that choice."]
+          ["How to plan it", "Miami usually works best when you decide early whether the day leans beach, nightlife, or neighborhood exploring and build around that choice."]
         ],
         gallery: [
           {
@@ -1749,7 +1749,7 @@ window.HB_DATA.cityEditorialPageData = {
         trust: "This page helps travelers understand which Sydney moments are worth prioritizing, where the city asks for extra travel time, and how to build a trip that still feels relaxed in a place with so much visual pull.",
         summaryCards: [
           ["Best for", "First-time Australia trips, coastal city breaks, couples, and travelers who like mixing outdoors time with urban comfort."],
-          ["Ideal trip length", "4 to 5 days if users want both the harbor and beach sides of the city to feel properly included."],
+          ["Ideal trip length", "4 to 5 days if you want both the harbor and beach sides of the city to feel properly included."],
           ["How to plan it", "Sydney usually works best when harbor days and beach days are not forced into the same overambitious schedule."]
         ],
         gallery: [
@@ -1808,7 +1808,7 @@ window.HB_DATA.cityEditorialPageData = {
         ],
         trust: "This page helps travelers understand what Porto is genuinely best at, which parts of the city are worth lingering in, and how to build a trip that feels graceful instead of overly structured.",
         summaryCards: [
-          ["Best for", "Short Europe trips, couples, scenic food travel, and users who want a city break with strong atmosphere and less pressure."],
+          ["Best for", "Short Europe trips, couples, scenic food travel, and anyone who wants a city break with strong atmosphere and less pressure."],
           ["Ideal trip length", "2 to 3 days for a first Porto stay, longer if the trip widens into the Douro Valley."],
           ["How to plan it", "Porto usually feels best when the day keeps the river and the hills in mind and leaves real room for views, wine, and slower meals."]
         ],
@@ -1834,12 +1834,12 @@ window.HB_DATA.cityEditorialPageData = {
         dek: "For travelers who want one of the world’s great food-and-neighborhood cities and have the patience to let it unfold district by district.",
         intro: [
           "Mexico City rewards repeat wandering. It is broad, creative, deeply layered, and full of neighborhoods that each feel like their own version of the city. That makes it excellent for travelers who want more than a one-note trip.",
-          "The best version of Mexico City is rarely the one that tries to do everything. It is usually the one that lets users spend real time in Roma, Condesa, Centro, or Chapultepec, and builds the days around food, museums, and local rhythm rather than constant movement."
+          "The best version of Mexico City is rarely the one that tries to do everything. It is usually the one that lets you spend real time in Roma, Condesa, Centro, or Chapultepec, and builds the days around food, museums, and local rhythm rather than constant movement."
         ],
-        trust: "This page helps users make sense of a very large city by focusing on the places and experiences that most strongly shape a memorable first or repeat visit.",
+        trust: "This page helps you make sense of a very large city by focusing on the places and experiences that most strongly shape a memorable first or repeat visit.",
         summaryCards: [
-          ["Best for", "Food-driven travelers, long-weekend city trips, design lovers, and users who want neighborhoods with strong personality."],
-          ["Ideal trip length", "4 to 5 days if users want multiple neighborhoods, museums, and enough meal time to let the city show off."],
+          ["Best for", "Food-driven travelers, long-weekend city trips, design lovers, and anyone who wants neighborhoods with strong personality."],
+          ["Ideal trip length", "4 to 5 days if you want multiple neighborhoods, museums, and enough meal time to let the city show off."],
           ["How to plan it", "Mexico City is strongest when each neighborhood cluster becomes its own anchor instead of being treated like a quick stop."]
         ],
         gallery: [
@@ -1866,7 +1866,7 @@ window.HB_DATA.cityEditorialPageData = {
           "Cancun works best when travelers decide early whether the trip is mainly about relaxing or mainly about excursions. It can do both, but the trip usually feels smoother when those modes are separated instead of forced into the same day.",
           "The strongest Cancun trips are often simpler than people expect. A beach-first day, one island or cenote outing, and one meal or evening worth dressing up for usually creates a better vacation than trying to turn a resort destination into a nonstop sightseeing trip."
         ],
-        trust: "This page helps users understand what Cancun is genuinely strong at, where a little extra spending is worth it, and how to avoid overcomplicating a destination that is often best when it stays easy.",
+        trust: "This page helps you understand what Cancun is genuinely strong at, where a little extra spending is worth it, and how to avoid overcomplicating a destination that is often best when it stays easy.",
         summaryCards: [
           ["Best for", "Beach vacations, couples trips, family resort stays, and travelers who want some flexibility without constant planning."],
           ["Ideal trip length", "4 to 5 days for a balanced beach trip with one or two outings."],
@@ -1898,9 +1898,9 @@ window.HB_DATA.cityEditorialPageData = {
         ],
         trust: "This page helps travelers understand how to prioritize Beijing without flattening it into just imperial sites. It protects the essential experiences while also making room for atmosphere.",
         summaryCards: [
-          ["Best for", "History-focused travelers, first-time China trips, and users who like major landmarks with real cultural weight."],
+          ["Best for", "History-focused travelers, first-time China trips, and anyone who likes major landmarks with real cultural weight."],
           ["Ideal trip length", "4 days for a strong first visit, especially if one day is set aside for the Great Wall."],
-          ["How to plan it", "Beijing improves when users assume fewer major sights per day and give the city time to feel expansive rather than rushed."]
+          ["How to plan it", "Beijing improves when you assume fewer major sights per day and give the city time to feel expansive rather than rushed."]
         ],
         gallery: [
           {
@@ -1928,9 +1928,9 @@ window.HB_DATA.cityEditorialPageData = {
         ],
         trust: "This page is designed to help travelers understand Istanbul as both a major cultural city and a place with real day-to-day atmosphere. The strongest trips need both.",
         summaryCards: [
-          ["Best for", "History lovers, food travelers, couples, and users who want a destination with strong mood and strong cultural depth."],
+          ["Best for", "History lovers, food travelers, couples, and anyone who wants a destination with strong mood and strong cultural depth."],
           ["Ideal trip length", "4 to 5 days for landmarks, local time, and at least one Bosphorus-centered day."],
-          ["How to plan it", "Istanbul works best when users leave room for slower meals, ferry time, and neighborhood atmosphere instead of filling every slot with a major site."]
+          ["How to plan it", "Istanbul works best when you leave room for slower meals, ferry time, and neighborhood atmosphere instead of filling every slot with a major site."]
         ],
         gallery: [
           {
@@ -1953,10 +1953,10 @@ window.HB_DATA.cityEditorialPageData = {
       "Dubai, United Arab Emirates": {
         dek: "For travelers who want comfort, skyline spectacle, and a few memorable upgrades without losing sight of the city’s practical geography.",
         intro: [
-          "Dubai can be flashy, but the better trips usually feel selective instead of excessive. The city is strongest when users know which big-ticket experiences are actually worth it for them and which ones are easy to leave behind.",
+          "Dubai can be flashy, but the better trips usually feel selective instead of excessive. The city is strongest when you know which big-ticket experiences are actually worth it for you and which ones are easy to leave behind.",
           "A good Dubai trip often comes down to contrast: skyline and old city, beach and desert, high-end dinner and a more casual daytime pace. When those contrasts are planned well, the city feels polished rather than overwhelming."
         ],
-        trust: "This page helps users see Dubai beyond the headline image. It points toward the experiences that justify the destination, while also keeping travel time and area planning in view.",
+        trust: "This page helps you see Dubai beyond the headline image. It points toward the experiences that justify the destination, while also keeping travel time and area planning in view.",
         summaryCards: [
           ["Best for", "Luxury-leaning trips, couples, winter sun, skyline seekers, and travelers who want a polished vacation base."],
           ["Ideal trip length", "3 to 4 days for the city itself, longer if the trip includes more resort time or desert add-ons."],
@@ -2016,11 +2016,11 @@ window.HB_DATA.cityEditorialPageData = {
           "Amsterdam is easy to underestimate because it looks compact and calm. That is part of its charm, but it can lead travelers to overfill the trip and miss what the city actually does so well: scenery, ease, and atmosphere.",
           "The best Amsterdam trips are often the ones that slow down enough to let the canal belt, cafes, museums, and quieter side streets carry the day. It is a city that rewards appreciation more than ambition."
         ],
-        trust: "This page helps travelers understand how to get the best out of Amsterdam without flattening it into a museum checklist. The city shines when users give its setting time to matter.",
+        trust: "This page helps travelers understand how to get the best out of Amsterdam without flattening it into a museum checklist. The city shines when you give its setting time to matter.",
         summaryCards: [
           ["Best for", "Art and museum trips, couples, relaxed city breaks, and travelers who like visually coherent places."],
           ["Ideal trip length", "3 to 4 days for a balanced first visit with one or two slower afternoons."],
-          ["How to plan it", "Amsterdam usually feels strongest when users do fewer things per day and let the setting itself be part of the plan."]
+          ["How to plan it", "Amsterdam usually feels strongest when you do fewer things per day and let the setting itself be part of the plan."]
         ],
         gallery: [
           {

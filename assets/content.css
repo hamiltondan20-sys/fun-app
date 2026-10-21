@@ -773,6 +773,19 @@ body.hb-content {
   line-height: 1.5;
 }
 
+/* Pilot cities on the home page: places checked on their own websites. */
+.hb-feature-card .hb-checked-badge {
+  display: inline-block;
+  margin: 0 0 0.5rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: #e3f2ee;
+  color: #1d6b62;
+  font-size: 0.76rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
 .hb-block h3 {
   margin: 0 0 0.5rem;
   border-bottom: 1px solid var(--hb-line);
