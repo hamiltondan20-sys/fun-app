@@ -395,6 +395,8 @@ const countries = Object.entries(DATA.countryGuideData || {})
 
 const pages = [];
 let publishedCitySlugs = new Set();
+// Filled once country pages are reviewed; city pages link only to published country guides.
+let publishedCountrySlugs = new Set();
 
 function pageHead({ title, description, canonical, image = "", socialImage = "", schema = [], noindex = false }) {
   const previewImage = socialImage || image || DEFAULT_OG_IMAGE;
@@ -622,6 +624,11 @@ ${cluster.blocks.map((block) => `          <div class="hb-block">
     .flatMap((country) => countries.find((item) => item.name === country)?.cities || [])
     .filter((item) => item.slug !== city.slug && (!publishedCitySlugs.size || publishedCitySlugs.has(item.slug)))
     .slice(0, 6);
+  // Internal link to the city's country guide, when that guide is published.
+  const countryGuide = city.countries
+    .map((name) => countries.find((item) => item.name === name))
+    .find((item) => item && publishedCountrySlugs.has(item.slug));
+  const countryHref = countryGuide ? url(`/countries/${countryGuide.slug}/`) : "";
   const heroAlt = city.hero?.copy
     ? `${city.name}: ${city.hero.copy}`
     : city.hero?.image
@@ -629,7 +636,9 @@ ${cluster.blocks.map((block) => `          <div class="hb-block">
       : `${city.name} travel guide illustration`;
   const body = `    <article>
       <header class="hb-lede">
-        <p class="hb-eyebrow">${esc(city.country || KIND_LABEL[city.kind] || "Travel guide")}</p>
+        <p class="hb-eyebrow">${countryHref && city.country === countryGuide.name
+          ? `<a href="${countryHref}">${esc(city.country)}</a>`
+          : esc(city.country || KIND_LABEL[city.kind] || "Travel guide")}</p>
         <h1>${esc(city.name)}</h1>
         <p class="hb-dek">${esc(city.editorial?.dek || city.summary || `A practical travel guide to ${city.name}.`)}</p>
         <p class="hb-review-status">${esc(city.reviewStatus)}</p>
@@ -647,11 +656,12 @@ ${clusterMarkup}
         <p>Turn these ideas into a trip built around your dates, pace, and priorities.</p>
         <a class="hb-cta-lg" href="${url(`/plan/?destination=${encodeURIComponent(city.key)}`)}">Plan ${article(city.name)} ${esc(city.name)} trip</a>
       </section>
-      ${related.length ? `<section class="hb-related">
+      ${related.length || countryHref ? `<section class="hb-related">
         <h2>More places to consider</h2>
-        <ul class="hb-city-list">
+        ${related.length ? `<ul class="hb-city-list">
 ${related.map((item) => `          <li><a href="${url(`/destinations/${item.slug}/`)}">${esc(item.name)}</a></li>`).join("\n")}
-        </ul>
+        </ul>` : ""}
+        ${countryHref ? `<p class="hb-related-country"><a href="${countryHref}">${esc(countryGuide.name)} travel guide: all destinations</a></p>` : ""}
       </section>` : ""}
     </article>`;
   return {
@@ -1015,6 +1025,7 @@ const countryCandidates = (TIER1_ONLY ? countries.filter((country) => country.ed
   }));
 const countryReviews = countryCandidates.map(reviewCountryPage);
 const publishedCountries = countryReviews.filter((review) => review.eligible).map((review) => review.country);
+publishedCountrySlugs = new Set(publishedCountries.map((country) => country.slug));
 const excludedCountrySlugs = new Set(countries
   .filter((country) => publishedCitySlugs.has(country.slug))
   .map((country) => country.slug));
