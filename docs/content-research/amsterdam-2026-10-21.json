@@ -1,0 +1,557 @@
+{
+  "city": "Amsterdam, Netherlands",
+  "checkedOn": "2026-10-21",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Rijksmuseum",
+      "kind": "museum",
+      "url": "https://www.rijksmuseum.nl/en/visit",
+      "sourceType": "operator's own site (national museum)",
+      "address": "Museumstraat 1, Amsterdam",
+      "operatingEvidence": "Visit page says \"Booking a start time is required for a visit to the Rijksmuseum\"; What's on lists 'Willem de Kooning at work' and 'Document Netherlands: New Energy' until 17 January, and 'Carel Visser in the Rijksmuseum Gardens' until 25 October as \"last chance\".",
+      "hours": "\"Open daily 9 to 17h\", \"including all public holidays\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Anne Frank House",
+      "kind": "museum",
+      "url": "https://www.annefrank.org/en/museum/tickets/",
+      "sourceType": "operator's own site (Anne Frank House)",
+      "address": "Westermarkt 20, 1016 DK Amsterdam",
+      "operatingEvidence": "Ticket page: \"Tickets are not sold at the door, only online\", for a set time slot; new tickets on sale every Tuesday at 10am for a visit six weeks later. Lists 2026 exceptions, e.g. 7 November 2026 9:00-18:30.",
+      "hours": "Daily 9:00-22:00; exceptions include 27 April and 4 May (9:00-17:00), 25 and 31 December (9:00-17:00), 1 January (12:00-22:00)",
+      "confidence": "high"
+    },
+    {
+      "name": "Stedelijk Museum",
+      "kind": "museum",
+      "url": "https://www.stedelijk.nl/en/visit",
+      "sourceType": "operator's own site",
+      "address": "Museumplein 10, 1071 DJ Amsterdam",
+      "operatingEvidence": "Exhibitions page lists Yayoi Kusama (Sep 11, 2026 - Jan 17, 2027) and Adam Pendleton, 'Some Wild Kind of Language' (Oct 10, 2026 - Jan 17, 2027). Visit page asks visitors to buy tickets online in advance.",
+      "hours": "Daily 10am-6pm, \"No entrance after 5.45 pm\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Eye Filmmuseum",
+      "kind": "museum",
+      "url": "https://www.eyefilm.nl/en/visit",
+      "sourceType": "operator's own site",
+      "address": "IJpromenade 1, 1031 KT Amsterdam",
+      "operatingEvidence": "Homepage lists the Ulrich Seidl exhibition (19 September 2026 - 31 January 2027) and the Yuzo Kawashima film programme (22 October - 11 November 2026). Visit page notes card-only payment.",
+      "hours": "Exhibition: closed Mondays (open from 10:00 incl. Mondays in school holidays), Tue-Sun 10:00-19:00; box office Mon 18:00-22:00, Tue-Thu 10:00-22:00, Fri-Sat 10:00-23:00, Sun 10:00-22:00; closes 17:00 on Saturday 7 November except for Museumnacht",
+      "confidence": "high"
+    },
+    {
+      "name": "Oude Kerk",
+      "kind": "landmark",
+      "url": "https://www.oudekerk.nl/en/",
+      "sourceType": "operator's own site",
+      "address": "Oudekerksplein 23, 1012 GX Amsterdam",
+      "operatingEvidence": "Lists 'Mire Lee: Vomit My Blessing' from 13 November 2026 to 14 March 2027 and the tower visit (24 April - 31 October) as \"Now on\"; notice \"Oude Kerk temporarily closed\" for 9-12 November.",
+      "hours": "Daily 10am-6pm; Sunday 1pm-5:30pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Royal Palace Amsterdam",
+      "kind": "landmark",
+      "url": "https://www.paleisamsterdam.nl/en/visit/",
+      "sourceType": "official public operator (Royal Palace Amsterdam)",
+      "address": "\"Damsquare, Amsterdam\" (contact page)",
+      "operatingEvidence": "Banner \"OPEN: 1 October - 11 November\"; says the Palace is open more than 230 days in 2026; October 'Drawing Month'. Visitor information warns \"The Palace may be closed due to a royal event.\"",
+      "hours": "Daily from 10.00 a.m. on opening days per the online calendar; \"Opening days and times are subject to change\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Rembrandt House Museum",
+      "kind": "museum",
+      "url": "https://www.rembrandthuis.nl/en/",
+      "sourceType": "operator's own site",
+      "address": "Jodenbreestraat 4, Amsterdam",
+      "operatingEvidence": "Lists an autumn-holiday etching workshop (11-25 October 2026) and 'The Poor Man's Rembrandt Project' tattoo studio (26 October - 7 November 2026).",
+      "hours": "\"open every day from 10 a.m\" (closing time not readable); closed on King's Day and 25 December",
+      "confidence": "high"
+    },
+    {
+      "name": "NEMO Science Museum",
+      "kind": "museum",
+      "url": "https://www.nemosciencemuseum.nl/en/plan-your-visit/",
+      "sourceType": "operator's own site",
+      "address": "Oosterdok 2, 1011 VX Amsterdam",
+      "operatingEvidence": "Plan-your-visit page: \"Tickets for NEMO have a start time\" and an 'Open on Mondays' list including \"Monday 12, 19, 26 October 2026\" and \"Monday 2 November 2026\"; homepage lists Museumnacht on 7 November.",
+      "hours": "not published in readable form (opening-hours section empty in fetched text); open on listed Mondays only",
+      "confidence": "medium"
+    },
+    {
+      "name": "ARTIS",
+      "kind": "park",
+      "url": "https://www.artis.nl/en",
+      "sourceType": "operator's own site",
+      "address": "Plantage Kerklaan 38-40, Amsterdam",
+      "operatingEvidence": "News item dated 10 September 2026 on ARTIS-Micropia and the Rijksmuseum; \"the new ARTIS Aquarium is open again!\"; Late Afternoon Ticket on weekdays from 16:00 for €15.",
+      "hours": "not published on the page read",
+      "confidence": "medium"
+    },
+    {
+      "name": "Het Scheepvaartmuseum",
+      "kind": "museum",
+      "url": "https://www.hetscheepvaartmuseum.com/",
+      "sourceType": "operator's own site (National Maritime Museum)",
+      "address": "Kattenburgerplein 1, 1018 KK Amsterdam",
+      "operatingEvidence": "Homepage publishes current daily hours and online ticket links; footer dated 2026. No exhibition titles or dates were readable.",
+      "hours": "Museum Mon-Sun 10:00-17:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "A'DAM Lookout",
+      "kind": "scenic",
+      "url": "https://www.adamlookout.com/",
+      "sourceType": "operator's own site",
+      "address": "IJpromenade 4, 1031 KT Amsterdam",
+      "operatingEvidence": "Online ticket sales from €16.50 with €2 off when booking online; Over the Edge swing and Skydeck; footer \"© 2026 A'DAM LOOKOUT\" and 2026 image uploads.",
+      "hours": "Daily 10:00-22:00, last admission 21:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Cafe de Klepel",
+      "kind": "meal",
+      "url": "https://www.cafedeklepel.nl/",
+      "sourceType": "operator's own site",
+      "address": "Prinsenstraat 22, Amsterdam",
+      "operatingEvidence": "Live reservation system: \"Je kunt bij ons tot twee maanden van tevoren reserveren\"; max 8 per table; no vegan alternative to the menu. No 2026-dated content seen.",
+      "hours": "Mon-Thu 17:00-00:00; Fri 15:00-00:00; Sat 12:00-00:00; Sun 15:00-00:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bakers & Roasters (Kadijksplein)",
+      "kind": "meal",
+      "url": "https://www.bakersandroasters.com/",
+      "sourceType": "operator's own site",
+      "address": "Kadijksplein 16, 1018 AC Amsterdam",
+      "operatingEvidence": "\"We mainly operate as walk-in only\" with a virtual waitlist; limited reservations only at this branch; closure notice for King's Day (27/04/2026).",
+      "hours": "Mon-Fri 8:30-15:00; Sat-Sun 8:30-16:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Bakers & Roasters (De Pijp)",
+      "kind": "meal",
+      "url": "https://www.bakersandroasters.com/",
+      "sourceType": "operator's own site",
+      "address": "Eerste Jacob van Campenstraat 54, 1072 BH Amsterdam",
+      "operatingEvidence": "Walk-in with virtual waitlist; closure notice for King's Day (27/04/2026) covering both locations.",
+      "hours": "Mon-Fri 8:30-15:00; Sat-Sun 8:30-16:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Little Collins",
+      "kind": "meal",
+      "url": "https://www.littlecollins.nl/home/depijp",
+      "sourceType": "operator's own site",
+      "address": "Eerste Sweelinckstraat 19f, 1073 CL Amsterdam",
+      "operatingEvidence": "Brunch page states \"Walk-in only\", \"Kitchen open until 15:30\" and holiday notice \"25 & 26 Dec & 1 Jan - closed\". No 2026-dated content seen.",
+      "hours": "Mon-Sun 09.00-16.00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Foodhallen",
+      "kind": "market",
+      "url": "https://foodhallen.nl/en/amsterdam/",
+      "sourceType": "operator's own site",
+      "address": "Hannie Dankbaarpassage 16, 1053 RT Amsterdam-West",
+      "operatingEvidence": "\"open van 12:00 tot 23:00, 364 dagen per jaar\"; closed 25 December, closes 20:00 on 24 and 31 December; footer \"© 2026 Foodhallen\".",
+      "hours": "Daily 12:00-23:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Fabel Friet (Runstraat)",
+      "kind": "meal",
+      "url": "https://www.fabelfriet.nl/",
+      "sourceType": "operator's own site",
+      "address": "Runstraat 1, 1016 GJ Amsterdam",
+      "operatingEvidence": "Branch list publishes current hours for five Amsterdam branches, including Runstraat \"Maandag t/m Zondag: Open tussen 11:00 - 21:00\". No 2026-dated content seen.",
+      "hours": "Mon-Sun 11:00-21:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Super Lyan",
+      "kind": "bar",
+      "url": "https://www.superlyan.com/",
+      "sourceType": "operator's own site",
+      "address": "Nieuwezijds Voorburgwal 3, 1012 RC Amsterdam",
+      "operatingEvidence": "\"We don't take reservations, just walk in!\"; groups over 8 book via SevenRooms; footer \"©2026 Mr Lyan and Lore Group\".",
+      "hours": "Wed & Sun 17.00-00.00; Thu-Sat 17.00-01.00 (Mon-Tue not listed)",
+      "confidence": "high"
+    },
+    {
+      "name": "Vlaamsch Broodhuys (Haarlemmerstraat)",
+      "kind": "bakery",
+      "url": "https://www.vlaamschbroodhuys.nl/winkels/amsterdam",
+      "sourceType": "operator's own site",
+      "address": "Haarlemmerstraat 108, 1013 EW Amsterdam",
+      "operatingEvidence": "Newsflash dated 21-10-2026 announces pumpkin cake, crunchy pumpkin muffin and stoofpeertaartje in all Baker's Cafés; Amsterdam store page lists eight branches open seven days.",
+      "hours": "Daily 08:00-17:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Hartog's Volkoren",
+      "kind": "bakery",
+      "url": "https://www.volkorenbrood.nl/",
+      "sourceType": "operator's own site",
+      "address": "Wibautstraat 77, 1091 GK Amsterdam",
+      "operatingEvidence": "Site publishes current weekly shop hours with Sunday \"Gesloten\". No 2026-dated content seen.",
+      "hours": "Mon-Fri 07:00-18:00; Sat 07:00-17:00; Sun closed",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bocca Coffee (Kerkstraat)",
+      "kind": "cafe",
+      "url": "https://bocca.nl/",
+      "sourceType": "operator's own site",
+      "address": "Kerkstraat 96, Amsterdam",
+      "operatingEvidence": "Site lists the espresso bar with current weekly hours. No 2026-dated content seen.",
+      "hours": "Mon-Fri 8:00-18:00; Sat-Sun 9:00-18:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "De Wasserette",
+      "kind": "meal",
+      "url": "https://www.dewasserette.com/",
+      "sourceType": "operator's own site",
+      "address": "Eerste van der Helststraat 27, Amsterdam",
+      "operatingEvidence": "\"opened daily from 7.30 until 17.00\"; \"Reservations are not necessary, you can sit whenever and wherever there is a seat available.\" No 2026-dated content seen.",
+      "hours": "Daily 07:30-17:00",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Canal Belt",
+      "reason": "generic, not a place (district)",
+      "url": ""
+    },
+    {
+      "name": "Jordaan",
+      "reason": "generic, not a place (neighbourhood)",
+      "url": ""
+    },
+    {
+      "name": "Jordaan or De Pijp",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Canal walks",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market snacks",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Canal house stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private boat cruise",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Fine tasting menu dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Canal cruise at dusk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Jordaan dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Museum and cafe day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Canal boat ride",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Museum morning",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee in De Pijp",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Noord ferry exploration",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Brown cafe night",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Hidden courtyard wandering",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Ferry to Noord",
+      "reason": "operator page (GVB) returned HTTP 403; not fetched further. (A'DAM Lookout's site mentions the free F3 ferry, used only as that venue's own travel note.)",
+      "url": "https://www.gvb.nl/en/visit-amsterdam/ferry"
+    },
+    {
+      "name": "De Kas",
+      "reason": "official site returned HTTP 403 Forbidden",
+      "url": "https://www.dekas.nl/en/"
+    },
+    {
+      "name": "Restaurant Breda",
+      "reason": "official site returned HTTP 503 Service Unavailable (www.restaurant-breda.nl does not resolve; breda-amsterdam.com 404)",
+      "url": "https://bredagroup-amsterdam.com/breda/"
+    },
+    {
+      "name": "Breda",
+      "reason": "duplicate of Restaurant Breda; official site HTTP 503",
+      "url": "https://bredagroup-amsterdam.com/breda/"
+    },
+    {
+      "name": "Dignita",
+      "reason": "official sites unreachable: eatwelldogood.nl HTTP 503, dignita.nl connection refused",
+      "url": "https://www.eatwelldogood.nl/"
+    },
+    {
+      "name": "Tales & Spirits",
+      "reason": "talesandspirits.com 301-redirects to an unrelated domain (jeremysaid.com); no official venue page readable",
+      "url": "https://www.talesandspirits.com/"
+    },
+    {
+      "name": "Door 74",
+      "reason": "official site shows only \"This site is currently under construction\"; no address or operating evidence",
+      "url": "https://www.door-74.com/"
+    },
+    {
+      "name": "Saint-Jean",
+      "reason": "no official website found (boulangerie-saintjean.nl does not resolve); only guides/maps list it",
+      "url": ""
+    },
+    {
+      "name": "Lot Sixty One",
+      "reason": "official site TLS/certificate error (TLSV1_ALERT_INTERNAL_ERROR); not bypassed",
+      "url": "https://www.lotsixtyonecoffee.com/"
+    },
+    {
+      "name": "Friedhats",
+      "reason": "official site lists Fuku Cafe at Bos en Lommerweg 136 but no hours or dated content; operating status not evidenced",
+      "url": "https://www.friedhats.com/"
+    },
+    {
+      "name": "Vondelpark",
+      "reason": "City of Amsterdam page returned HTTP 403",
+      "url": "https://www.amsterdam.nl/en/vondelpark/"
+    },
+    {
+      "name": "Van Gogh Museum",
+      "reason": "official pages returned no readable content (unrendered template placeholder only)",
+      "url": "https://www.vangoghmuseum.nl/en/visit"
+    },
+    {
+      "name": "Heineken Experience",
+      "reason": "official homepage shows no street address; contact page 404",
+      "url": "https://www.heinekenexperience.com/en/"
+    },
+    {
+      "name": "Hortus Botanicus",
+      "reason": "certificate hostname mismatch on hortusbotanicus.nl; not bypassed",
+      "url": "https://www.hortusbotanicus.nl/"
+    },
+    {
+      "name": "Albert Cuyp Market",
+      "reason": "City of Amsterdam page returned HTTP 403",
+      "url": "https://www.amsterdam.nl/en/markets/albert-cuyp-market/"
+    },
+    {
+      "name": "Begijnhof",
+      "reason": "candidate URL returned HTTP 404",
+      "url": "https://www.begijnhofamsterdam.nl/en/"
+    },
+    {
+      "name": "Amsterdam Museum",
+      "reason": "main Kalverstraat location \"currectly closed\" for renovation; other locations listed without street addresses",
+      "url": "https://www.amsterdammuseum.nl/en"
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Rijksmuseum",
+        "Royal Palace Amsterdam",
+        "Oude Kerk",
+        "A'DAM Lookout"
+      ],
+      "bestFirstTimers": [
+        "Rijksmuseum",
+        "Anne Frank House",
+        "Royal Palace Amsterdam",
+        "Stedelijk Museum"
+      ],
+      "bestRestaurants": [
+        "Cafe de Klepel",
+        "Foodhallen",
+        "Bakers & Roasters (Kadijksplein)"
+      ],
+      "bestBudget": [
+        "Fabel Friet (Runstraat)",
+        "Foodhallen",
+        "Vlaamsch Broodhuys (Haarlemmerstraat)",
+        "Bocca Coffee (Kerkstraat)"
+      ],
+      "bestLuxury": [
+        "A'DAM Lookout",
+        "Super Lyan",
+        "Cafe de Klepel"
+      ],
+      "bestCouples": [
+        "Cafe de Klepel",
+        "Super Lyan",
+        "A'DAM Lookout",
+        "Eye Filmmuseum"
+      ],
+      "bestKids": [
+        "NEMO Science Museum",
+        "ARTIS",
+        "Het Scheepvaartmuseum"
+      ],
+      "bestSolo": [
+        "Eye Filmmuseum",
+        "Stedelijk Museum",
+        "Rembrandt House Museum",
+        "Bocca Coffee (Kerkstraat)"
+      ],
+      "bestUnique": [
+        "Oude Kerk",
+        "Eye Filmmuseum",
+        "A'DAM Lookout",
+        "Hartog's Volkoren"
+      ],
+      "bestBreakfast": [
+        "Bakers & Roasters (De Pijp)",
+        "Little Collins",
+        "De Wasserette",
+        "Bakers & Roasters (Kadijksplein)"
+      ],
+      "bestLunch": [
+        "Foodhallen",
+        "Fabel Friet (Runstraat)",
+        "De Wasserette",
+        "Little Collins"
+      ],
+      "bestDinner": [
+        "Cafe de Klepel",
+        "Foodhallen"
+      ],
+      "bestCocktails": [
+        "Super Lyan"
+      ],
+      "bestBakeries": [
+        "Vlaamsch Broodhuys (Haarlemmerstraat)",
+        "Hartog's Volkoren"
+      ],
+      "bestCoffee": [
+        "Bocca Coffee (Kerkstraat)"
+      ]
+    },
+    "queries": {
+      "Rijksmuseum": "Rijksmuseum Museumstraat 1 Amsterdam",
+      "Anne Frank House": "Anne Frank House Westermarkt 20 Amsterdam",
+      "Stedelijk Museum": "Stedelijk Museum Museumplein 10 Amsterdam",
+      "Eye Filmmuseum": "Eye Filmmuseum IJpromenade 1 Amsterdam",
+      "Oude Kerk": "Oude Kerk Oudekerksplein 23 Amsterdam",
+      "Royal Palace Amsterdam": "Royal Palace Amsterdam Dam Square Amsterdam",
+      "Rembrandt House Museum": "Rembrandt House Museum Jodenbreestraat 4 Amsterdam",
+      "NEMO Science Museum": "NEMO Science Museum Oosterdok 2 Amsterdam",
+      "ARTIS": "ARTIS Plantage Kerklaan 38 Amsterdam",
+      "Het Scheepvaartmuseum": "Het Scheepvaartmuseum Kattenburgerplein 1 Amsterdam",
+      "A'DAM Lookout": "A'DAM Lookout IJpromenade 4 Amsterdam",
+      "Cafe de Klepel": "Cafe de Klepel Prinsenstraat 22 Amsterdam",
+      "Bakers & Roasters (Kadijksplein)": "Bakers & Roasters Kadijksplein 16 Amsterdam",
+      "Bakers & Roasters (De Pijp)": "Bakers & Roasters Eerste Jacob van Campenstraat 54 Amsterdam",
+      "Little Collins": "Little Collins Eerste Sweelinckstraat 19f Amsterdam",
+      "Foodhallen": "Foodhallen Hannie Dankbaarpassage 16 Amsterdam",
+      "Fabel Friet (Runstraat)": "Fabel Friet Runstraat 1 Amsterdam",
+      "Super Lyan": "Super Lyan Nieuwezijds Voorburgwal 3 Amsterdam",
+      "Vlaamsch Broodhuys (Haarlemmerstraat)": "Vlaamsch Broodhuys Haarlemmerstraat 108 Amsterdam",
+      "Hartog's Volkoren": "Hartog's Volkoren Wibautstraat 77 Amsterdam",
+      "Bocca Coffee (Kerkstraat)": "Bocca Coffee Kerkstraat 96 Amsterdam",
+      "De Wasserette": "De Wasserette Eerste van der Helststraat 27 Amsterdam"
+    },
+    "summary": "Museums, a royal palace, a medieval church and a riverside lookout, with breakfast cafés, bakeries, a food hall, dinners and a cocktail bar checked against their own websites.",
+    "highlights": [
+      "Rijksmuseum",
+      "Anne Frank House",
+      "Royal Palace Amsterdam",
+      "Stedelijk Museum"
+    ],
+    "tip": "Book the Anne Frank House early: tickets are sold only online for a set time slot, released every Tuesday at 10am for visits six weeks later, and none are sold at the door.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Check Mondays and holidays",
+        "copy": "Eye Filmmuseum's exhibition is closed on Mondays outside school holidays, and NEMO Science Museum opens only on listed Mondays such as 26 October and 2 November 2026. Hartog's Volkoren is closed on Sundays, and the Oude Kerk is temporarily closed 9-12 November."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Timed slots are common",
+        "copy": "The Rijksmuseum requires a booked start time, including for Museumkaart holders, and NEMO tickets also have a start time. Anne Frank House tickets are online only and cannot be exchanged or refunded."
+      },
+      {
+        "label": "Walk-in or queue",
+        "value": "Many cafés don't book",
+        "copy": "Little Collins is walk-in only, De Wasserette says reservations are not necessary, and Bakers & Roasters works mainly walk-in with a virtual waitlist (limited reservations at Kadijksplein only). Super Lyan takes no reservations except for groups of more than 8."
+      },
+      {
+        "label": "Bags and payment",
+        "value": "Travel light",
+        "copy": "The Stedelijk Museum does not allow backpacks or weekend cases in the galleries, and the Royal Palace allows only small bags up to 30x30x15 cm. Eye Filmmuseum and the Anne Frank House take card payments only."
+      }
+    ],
+    "dek": "Book your timed museum slots first, then build mornings around the walk-in brunch cafés and evenings around a reserved dinner.",
+    "intro": [
+      "Amsterdam's headline museums run on timed entry, so plan those first. The Rijksmuseum on Museumstraat is open daily from 9 to 17h, including public holidays, and says booking a start time is required. Its current shows include Willem de Kooning at work, on until 17 January, while Carel Visser's sculptures in the museum gardens end on 25 October. The Anne Frank House at Westermarkt 20 sells tickets only online for a fixed slot, releasing them every Tuesday at 10am for visits six weeks ahead, so you should book as early as you can.",
+      "On Museumplein, the Stedelijk Museum is open daily from 10am to 6pm, with last entry at 5.45pm. Yayoi Kusama runs from 11 September 2026 to 17 January 2027, alongside Adam Pendleton's Some Wild Kind of Language from 10 October. Leave your backpack behind, as backpacks are not allowed in the galleries. The Royal Palace on Dam Square is open to visitors from 1 October to 11 November, from 10am on calendar days, though it may close for royal events. Nearby, the Oude Kerk opens Mire Lee: Vomit My Blessing on 13 November.",
+      "Across the IJ, Eye Filmmuseum shows an Ulrich Seidl exhibition from 19 September 2026 to 31 January 2027; its exhibition is closed on Mondays outside school holidays. Next door, A'DAM Lookout is open daily from 10:00 to 22:00, with last admission at 21:00, and knocks €2 off tickets when you book online. If you travel with children, NEMO Science Museum at Oosterdok 2 sells tickets with a start time and suggests weekdays after 14:00 as quieter. ARTIS has reopened its restored aquarium and offers a €15 weekday late-afternoon ticket from 16:00.",
+      "For food, many places are walk-in. Little Collins in De Pijp serves brunch daily from 9 to 16, walk-in only, and De Wasserette opens daily from 7:30 to 17:00 without reservations. Bakers & Roasters runs two branches with a virtual waitlist. For dinner, Cafe de Klepel on Prinsenstraat takes bookings up to two months ahead, for tables of up to 8. Foodhallen is open daily from 12:00 to 23:00, and Super Lyan pours cocktails from 17:00 Wednesday to Sunday with no reservations for small groups."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Book a Rijksmuseum start time and an online Anne Frank House slot, then add the Royal Palace on Dam Square while it is open until 11 November."
+      ],
+      [
+        "A slower morning",
+        "Walk in for brunch at Little Collins or De Wasserette, then pick up bread at Hartog's Volkoren on Wibautstraat, which is closed on Sundays."
+      ],
+      [
+        "Before booking",
+        "Check closing days: Eye's exhibition shuts on Mondays outside school holidays, NEMO opens only on listed Mondays, and the Oude Kerk closes 9-12 November."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several official sites could not be read by automated fetch: De Kas and the City of Amsterdam pages for Vondelpark and Albert Cuyp Market (HTTP 403), Restaurant Breda and Dignita (503 or connection refused), Lot Sixty One and Hortus Botanicus (certificate errors), the Van Gogh Museum (no readable content), and the GVB ferry page (403). Tales & Spirits' domain redirects elsewhere and Door 74's site is under construction. Some places were published only partially: NEMO and ARTIS hours were not readable, the Rembrandt House Museum's closing time was cut off, the Royal Palace's daily calendar did not load, and several cafés and bakeries (Cafe de Klepel, Little Collins, Fabel Friet, Hartog's Volkoren, Bocca Coffee, De Wasserette) showed hours but no 2026-dated content, so they are marked medium confidence. Gap candidates checked exceeded eight because many failed; the confirmed total is 22, below the 25-35 target.",
+  "injectionLikeText": []
+}

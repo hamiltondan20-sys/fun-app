@@ -1,0 +1,508 @@
+{
+  "city": "Tokyo, Japan",
+  "checkedOn": "2026-10-21",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Senso-ji",
+      "kind": "landmark",
+      "url": "https://www.senso-ji.jp/",
+      "sourceType": "operator's own site",
+      "address": "〒111-0032　東京都台東区浅草2-3-1",
+      "operatingEvidence": "News items linked as 2026-10-01, e.g. a harp and violin concert \"福祉会館にてコンサートがおこなわれた\". Main-hall hours are published.",
+      "hours": "Main hall \"午前6時～午後5時\"; October to March \"開堂時間は午前6時30分\" (opens 6:30)",
+      "confidence": "high"
+    },
+    {
+      "name": "Meiji Jingu",
+      "kind": "landmark",
+      "url": "https://www.meijijingu.or.jp/",
+      "sourceType": "operator's own site",
+      "address": "1-1, Yoyogi Kamizono-cho, Shibuya-ku, Tokyo 151-8557, Japan (〒151-8557 東京都渋谷区代々木神園町1-1)",
+      "operatingEvidence": "News dated 令和8年 (2026), e.g. 10月15日 \"横綱による手数入が奉納されました\". The English site says \"Meiji Jingu is open everyday\".",
+      "hours": "Gates follow sunrise/sunset: October \"午前5時40分～午後4時40分\"; November \"午前6時10分～午後4時10分\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Ueno Zoo",
+      "kind": "park",
+      "url": "https://www.tokyo-zoo.net/zoo/ueno/",
+      "sourceType": "official public operator (Tokyo Zoological Park Society, Tokyo Metropolitan zoos)",
+      "address": "〒110-8711　台東区上野公園9-83 上野動物園",
+      "operatingEvidence": "News dated 2026.10.20 on partial path closures Oct 27–30; 2026.10.19 notice of path closures \"10月26日(月)～11月16日(月)\"; 2026.08.31 notice that some animal exhibits are halted or changed for construction until January 2027.",
+      "hours": "not published (visitor ticket/hours page did not load; footer hours \"9:30～17:00（月曜休）\" appear next to the phone number)",
+      "confidence": "high"
+    },
+    {
+      "name": "Tokyo National Museum",
+      "kind": "museum",
+      "url": "https://www.tnm.jp/?lang=en",
+      "sourceType": "official public operator (National Institutes for Cultural Heritage)",
+      "address": "13-9 Ueno Park, Taito-ku, Tokyo, 110-8712, Japan",
+      "operatingEvidence": "Current special exhibition \"Hiroshige: New Perspectives on Edo Japan\", September 29 to December 20, 2026. Honkan Room 4 closes October 26, 2026 to April 25, 2027.",
+      "hours": "\"9:30–17:00 (Last admission 30 minutes before closing.)\"; until 20:00 on Fridays, Saturdays and Sundays before a Monday holiday; closed Mondays (next day if Monday is a holiday); year-end closure December 26–31, 2026",
+      "confidence": "high"
+    },
+    {
+      "name": "Tokyo Skytree",
+      "kind": "scenic",
+      "url": "https://en.tokyo-skytree.jp/",
+      "sourceType": "operator's own site",
+      "address": "〒131-0045 1-1-2 Oshiage, Sumida-ku, Tokyo",
+      "operatingEvidence": "Events \"DISCOVER AUTUMN at TOKYO SKYTREE\" (Sep 10–Oct 31) and \"TOKYO SKYTREE Dream Christmas 2026\" (Nov 5–Dec 25); an Oct 21 lighting-inspection notice.",
+      "hours": "\"Today's Operation Hours\": \"10:00 am~10:00 pm final entry 21:00\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Mori Art Museum",
+      "kind": "museum",
+      "url": "https://art-view.roppongihills.com/en/info/index.html",
+      "sourceType": "operator's own site",
+      "address": "Roppongi Hills Mori Tower, 6-10-1 Roppongi, Minato-ku, Tokyo, Japan (53F)",
+      "operatingEvidence": "Closed September 24 to October 30, 2026 for exhibition preparation. It reopens with \"Mariko Mori: All That Shines\", October 31, 2026 to March 28, 2027, and advance tickets are on sale (news dated October 13, 2026).",
+      "hours": "\"10:00-22:00\", \"10:00-17:00 on Tuesdays\", last admission 30 minutes before closing; open until 18:00 on Nov 3, 2026",
+      "confidence": "high"
+    },
+    {
+      "name": "Tokyo City View",
+      "kind": "scenic",
+      "url": "https://art-view.roppongihills.com/en/info/index.html",
+      "sourceType": "operator's own site",
+      "address": "Roppongi Hills Mori Tower, 6-10-1 Roppongi, Minato-ku, Tokyo, Japan (52F)",
+      "operatingEvidence": "Its 2026 schedule shows it is closed on Tuesday, October 27, 2026 and from November 10 to 12, 2026. A combo ticket with the Mori Art Museum goes on sale October 31.",
+      "hours": "Daily 10:00 to 22:00 (last admission 21:30), with the listed exceptions",
+      "confidence": "high"
+    },
+    {
+      "name": "Tokyo Metropolitan Government Building Observation Decks",
+      "kind": "scenic",
+      "url": "https://www.zaimu.metro.tokyo.lg.jp/tochousha/goannai/tenbou",
+      "sourceType": "official public operator (Tokyo Metropolitan Government)",
+      "address": "〒163-8001 東京都新宿区西新宿2-8-1",
+      "operatingEvidence": "Current visitor guide with \"入室料金　無料\" (free) and per-deck closing rules. The page carries a heading for an award titled \"トラベラーズチョイス アワード2026\".",
+      "hours": "South deck entry \"9時30分～21時30分\" (closed 1st and 3rd Tuesday); North deck entry \"9時30分～17時00分\" (closed 2nd and 4th Monday); both decks closed Dec 29–31 and Jan 2–3",
+      "confidence": "high"
+    },
+    {
+      "name": "Imperial Palace East Gardens",
+      "kind": "park",
+      "url": "https://www.kunaicho.go.jp/e-event/higashigyoen02.html",
+      "sourceType": "official public operator (Imperial Household Agency)",
+      "address": "1 Chiyoda, Chiyoda-ku, Tokyo (gates: Ote-mon, Hirakawa-mon, Kitahanebashi-mon)",
+      "operatingEvidence": "Current published schedule of seasonal hours and closed days, with a linked closure calendar. Admission is free. The page has no 2026-dated item.",
+      "hours": "October 9:00–16:30 (entry by 16:00); November 1 to end of February 9:00–16:00 (entry by 15:30); closed every Monday and Friday and December 28 to January 3",
+      "confidence": "medium"
+    },
+    {
+      "name": "Shinjuku Gyoen National Garden",
+      "kind": "park",
+      "url": "https://policies.env.go.jp/national-garden/shinjukugyoen/index.html",
+      "sourceType": "official public operator (Ministry of the Environment)",
+      "address": "〒160-0014 東京都新宿区内藤町11",
+      "operatingEvidence": "The homepage has current notices for a chrysanthemum display (菊花壇展) and early opening (早朝開園), but neither is dated. Advance web tickets are offered.",
+      "hours": "not published on pages read; closed days \"毎週月曜（月曜が休日の場合は翌平日）と年末年始\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Gonpachi (Nishi-Azabu)",
+      "kind": "meal",
+      "url": "https://www.gonpachi.jp/nishi-azabu/",
+      "sourceType": "operator's own site",
+      "address": "東京都港区西麻布1-13-11 1F・ 2F (\"1F/2F 1-13-11 Nishi-Azabu, Minato-ku Tokyo\")",
+      "operatingEvidence": "News dated 2026-09-18 announces a \"25周年記念イベント\" at the Nishi-Azabu branch, and an autumn menu ran from 9/19.",
+      "hours": "\"EVERYDAY 11:30～27:30\"; \"LUNCHTIME 11:30～15:00\"; \"LAST ORDER Food 26:45/Drink 27:00\"; \"定休日 – 無休\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Narisawa",
+      "kind": "meal",
+      "url": "https://www.narisawa-yoshihiro.com/",
+      "sourceType": "operator's own site",
+      "address": "東京都港区南青山2-6-15 (given in the site's map link, not as visible text)",
+      "operatingEvidence": "The site takes bookings: \"ご予約は下記の予約サイトより承っております\" (via OMAKASE) and \"お電話でのご予約は承っておりません\". There is no dated 2026 content.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Ivy Place",
+      "kind": "meal",
+      "url": "https://www.tysons.jp/ivyplace/access/",
+      "sourceType": "operator's own site (TYSONS & COMPANY)",
+      "address": "150-0033 東京都渋谷区猿楽町16-15",
+      "operatingEvidence": "Current meal-by-meal hours are published. The operator's news lists \"LEMON FAIR 2026\", but it is not specific to this restaurant.",
+      "hours": "Breakfast 8:00–11:30 (LO 10:45); Lunch 11:30–16:00 (LO 15:00); Cafe weekdays 15:00–18:00, weekends 15:00–17:30; Dinner weekdays 18:00–23:00, weekends 17:30–23:00 (LO 22:00)",
+      "confidence": "medium"
+    },
+    {
+      "name": "AFURI (Ebisu)",
+      "kind": "meal",
+      "url": "https://afuri.com/findus/",
+      "sourceType": "operator's own site",
+      "address": "1F, 117 Bldg, 1-1-7 Ebisu, Shibuya-ku",
+      "operatingEvidence": "The branch list gives current hours, marks the branch fully cashless and says reservations are available. There is no dated 2026 content.",
+      "hours": "Daily 11:00 to 5:00 the next morning (until the soup runs out)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Udon Shin",
+      "kind": "meal",
+      "url": "https://www.udonshin.com/",
+      "sourceType": "operator's own site",
+      "address": "東京都 渋谷区 代々木2丁目 20番地 16号 相馬ビル1階",
+      "operatingEvidence": "A TableCheck reservation link and current hours are published. The only dated items are from 2023, and the site warns of \"10～15分程の待ち時間\" after ordering.",
+      "hours": "\"11:00～L.O.22:00\"; \"無休\" \"（年末年始は除く）\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Glitch Coffee (Jimbocho)",
+      "kind": "cafe",
+      "url": "https://glitchcoffee.com/",
+      "sourceType": "operator's own site",
+      "address": "\"1F 3-16 KANDA-NISHIKICHO CHIYODA-KU TOKYO 101-0054\" (東京都千代田区神田錦町3-16 香村ビル1F)",
+      "operatingEvidence": "Current branch hours are listed with \"NO SCHEDULED HOLIDAY\". There is no dated 2026 content.",
+      "hours": "Weekdays 8:00-19:00; Weekends 9:00-19:00; \"NO SCHEDULED HOLIDAY\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "The SG Club",
+      "kind": "bar",
+      "url": "https://sg-management.jp/sgclub/",
+      "sourceType": "operator's own site (SG Management)",
+      "address": "1-7-8 Jinnan, Shibuya-ku, Tokyo",
+      "operatingEvidence": "TableCheck booking links \"Book Sip\" and \"Book Sangai\". The group site has 2026 news, e.g. 2026-10-16 \"Roku Industry Icon Award\".",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bar High Five",
+      "kind": "bar",
+      "url": "https://www.barhighfive.com/map",
+      "sourceType": "operator's own site",
+      "address": "\"Efflore Ginza5 Bldg. BF 5-4-15 Ginza Chuo-ward Tokyo 104-0061 JAPAN\"",
+      "operatingEvidence": "Notice dated 17 June 2026: \"We will close our bar on Wednesday 1st July for the inventry.\" No reservations: \"We have decided to take NO reservations from this May 2015.\"",
+      "hours": "\"Mon. - Sat. 17:00 ~ 01:00\"; last entry \"00:00\"; \"Closed on Sun. and National Holidays\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Fuglen Tokyo (Tomigaya)",
+      "kind": "cafe",
+      "url": "https://fuglen.no/Fuglen-Tokyo-Tomigaya",
+      "sourceType": "operator's own site",
+      "address": "1-16-11 Tomigaya, Shibuya, Tokyo",
+      "operatingEvidence": "Current hours are listed, and the site describes coffee, baked goods and cocktails served \"from 7am every day\". There is no dated 2026 content.",
+      "hours": "Mon-Tue 7am – 10pm; Wed-Sun/Public Holidays 7am – 1am",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Shibuya Crossing",
+      "reason": "public street crossing with no operator website to check",
+      "url": ""
+    },
+    {
+      "name": "Shinjuku",
+      "reason": "generic, not a place (district)",
+      "url": ""
+    },
+    {
+      "name": "Shibuya",
+      "reason": "generic, not a place (district)",
+      "url": ""
+    },
+    {
+      "name": "Yanaka neighborhood",
+      "reason": "generic, not a place (neighbourhood)",
+      "url": ""
+    },
+    {
+      "name": "Izakaya Toyo style food alleys",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free skyline views",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Temple and shrine wandering",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Omakase dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Luxury ryokan stay extension",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private tea experience",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Shibuya Sky at sunset",
+      "reason": "Official SHIBUYA SKY pages returned only an empty script shell (title, logo, 'MENU'). Sub-pages returned 404, so there was no readable address, hours or current content.",
+      "url": "https://www.shibuya-scramble-square.com/sky/"
+    },
+    {
+      "name": "Ginza dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Odaiba night view",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "teamLab-style digital art",
+      "reason": "Generic entry. The gap candidate teamLab Planets TOKYO was checked, but the official page returned only its title, with no address, hours or tickets.",
+      "url": "https://www.teamlab.art/e/planets/"
+    },
+    {
+      "name": "Tokyo Disney add-on",
+      "reason": "generic, not a place (no specific park named)",
+      "url": ""
+    },
+    {
+      "name": "Ramen counter crawl",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Asakusa morning",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Shinjuku night wandering",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Depachika food halls",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Themed cafe or arcade stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Memory Lane izakayas",
+      "reason": "generic, not a place (alley of many separate bars)",
+      "url": ""
+    },
+    {
+      "name": "Tsukiji Outer Market",
+      "reason": "The official site shows an October 2026 calendar, 2026 news and public hours (9:00–14:00), but none of its home, English, access or calendar pages gives a postal address, so it fails the exact-address rule.",
+      "url": "https://www.tsukiji.or.jp/english/calendar/"
+    },
+    {
+      "name": "Sushi Daiwa",
+      "reason": "fetch failed: DNS lookup failed (ENOTFOUND) for the presumed official domain; not evidence of closure",
+      "url": "https://www.sushidaiwa.co.jp/"
+    },
+    {
+      "name": "Bills Omotesando",
+      "reason": "official site returned no readable content (homepage empty; branch and English pages 404)",
+      "url": "https://bills-jp.net/"
+    },
+    {
+      "name": "Soba House Konjiki-Hototogisu",
+      "reason": "The presumed official domain redirected to konjikiramen.com, which lists a Toronto shop and an undated 'Shinjuku NEW location' address with no hours or current evidence. The operator could not be verified.",
+      "url": "http://konjikiramen.com/"
+    },
+    {
+      "name": "Bar Benfiddich",
+      "reason": "fetch failed: DNS lookup failed (ENOTFOUND) for the presumed official domain; not evidence of closure",
+      "url": "https://www.benfiddich.com/"
+    },
+    {
+      "name": "Path",
+      "reason": "fetch failed: DNS lookup failed (ENOTFOUND) for the presumed official domain; not evidence of closure",
+      "url": "https://path-restaurant.tokyo/"
+    },
+    {
+      "name": "365 Days",
+      "reason": "fetch failed: DNS error (EAI_AGAIN) on three attempts; not evidence of closure",
+      "url": "https://www.365jours.jp/"
+    },
+    {
+      "name": "Viron",
+      "reason": "domain viron.jp belongs to an unrelated Hamamatsu ironwork company; the bakery's official site was not identified",
+      "url": "https://www.viron.jp/"
+    },
+    {
+      "name": "Koffee Mameya",
+      "reason": "The official site lists shops only as map links, with no written address, hours or dated content. The Kakeru page has only a reservation link, and the Omotesando page returned 404.",
+      "url": "https://koffee-mameya.com/"
+    },
+    {
+      "name": "Hama-rikyu Gardens",
+      "reason": "The official English page gives the address '1-1, Hama Rikyu-teien, Chuo-ku, Tokyo 104-0046' but no hours or current-operation evidence. Other pages returned 404.",
+      "url": "https://www.tokyo-park.or.jp/teien/en/hama-rikyu/"
+    },
+    {
+      "name": "Fuglen (fuglen.com)",
+      "reason": "certificate has expired on fuglen.com; not bypassed (Tokyo branch confirmed instead via fuglen.no)",
+      "url": "https://www.fuglen.com/"
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Senso-ji",
+        "Meiji Jingu",
+        "Tokyo Skytree",
+        "Tokyo National Museum"
+      ],
+      "bestFirstTimers": [
+        "Senso-ji",
+        "Meiji Jingu",
+        "Imperial Palace East Gardens",
+        "Tokyo Metropolitan Government Building Observation Decks"
+      ],
+      "bestRestaurants": [
+        "Narisawa",
+        "Gonpachi (Nishi-Azabu)",
+        "Udon Shin"
+      ],
+      "bestBudget": [
+        "Tokyo Metropolitan Government Building Observation Decks",
+        "Imperial Palace East Gardens"
+      ],
+      "bestLuxury": [
+        "Narisawa",
+        "The SG Club"
+      ],
+      "bestCouples": [
+        "Tokyo City View",
+        "Tokyo Skytree",
+        "Bar High Five"
+      ],
+      "bestKids": [
+        "Ueno Zoo",
+        "Tokyo National Museum",
+        "Tokyo Skytree"
+      ],
+      "bestSolo": [
+        "Glitch Coffee (Jimbocho)",
+        "AFURI (Ebisu)",
+        "Mori Art Museum"
+      ],
+      "bestUnique": [
+        "Mori Art Museum",
+        "Shinjuku Gyoen National Garden",
+        "Udon Shin"
+      ],
+      "bestBreakfast": [
+        "Ivy Place",
+        "Fuglen Tokyo (Tomigaya)",
+        "Glitch Coffee (Jimbocho)"
+      ],
+      "bestLunch": [
+        "AFURI (Ebisu)",
+        "Udon Shin",
+        "Gonpachi (Nishi-Azabu)",
+        "Ivy Place"
+      ],
+      "bestDinner": [
+        "Narisawa",
+        "Gonpachi (Nishi-Azabu)",
+        "Ivy Place"
+      ],
+      "bestCocktails": [
+        "Bar High Five",
+        "The SG Club",
+        "Fuglen Tokyo (Tomigaya)"
+      ],
+      "bestBakeries": [],
+      "bestCoffee": [
+        "Glitch Coffee (Jimbocho)",
+        "Fuglen Tokyo (Tomigaya)"
+      ]
+    },
+    "queries": {
+      "Senso-ji": "Senso-ji 2-3-1 Asakusa Taito-ku Tokyo",
+      "Meiji Jingu": "Meiji Jingu 1-1 Yoyogi Kamizono-cho Shibuya-ku Tokyo",
+      "Ueno Zoo": "Ueno Zoo 9-83 Uenokoen Taito-ku Tokyo",
+      "Tokyo National Museum": "Tokyo National Museum 13-9 Ueno Park Taito-ku Tokyo",
+      "Tokyo Skytree": "Tokyo Skytree 1-1-2 Oshiage Sumida-ku Tokyo",
+      "Mori Art Museum": "Mori Art Museum 6-10-1 Roppongi Minato-ku Tokyo",
+      "Tokyo City View": "Tokyo City View 6-10-1 Roppongi Minato-ku Tokyo",
+      "Tokyo Metropolitan Government Building Observation Decks": "Tokyo Metropolitan Government Building 2-8-1 Nishi-Shinjuku Shinjuku-ku Tokyo",
+      "Imperial Palace East Gardens": "Imperial Palace East Gardens 1 Chiyoda Chiyoda-ku Tokyo",
+      "Shinjuku Gyoen National Garden": "Shinjuku Gyoen National Garden 11 Naitomachi Shinjuku-ku Tokyo",
+      "Gonpachi (Nishi-Azabu)": "Gonpachi Nishi-Azabu 1-13-11 Nishi-Azabu Minato-ku Tokyo",
+      "Narisawa": "Narisawa 2-6-15 Minami-Aoyama Minato-ku Tokyo",
+      "Ivy Place": "Ivy Place 16-15 Sarugakucho Shibuya-ku Tokyo",
+      "AFURI (Ebisu)": "AFURI Ebisu 1-1-7 Ebisu Shibuya-ku Tokyo",
+      "Udon Shin": "Udon Shin 2-20-16 Yoyogi Shibuya-ku Tokyo",
+      "Glitch Coffee (Jimbocho)": "Glitch Coffee 3-16 Kanda-Nishikicho Chiyoda-ku Tokyo",
+      "The SG Club": "The SG Club 1-7-8 Jinnan Shibuya-ku Tokyo",
+      "Bar High Five": "Bar High Five 5-4-15 Ginza Chuo-ku Tokyo",
+      "Fuglen Tokyo (Tomigaya)": "Fuglen Tokyo 1-16-11 Tomigaya Shibuya-ku Tokyo"
+    },
+    "summary": "Temples, shrines, museums, observation decks and gardens, plus breakfast cafés, noodle lunches, dinners and cocktail bars, each checked against its own or its public operator's website.",
+    "highlights": [
+      "Senso-ji",
+      "Meiji Jingu",
+      "Tokyo National Museum",
+      "Tokyo Skytree"
+    ],
+    "tip": "Watch the closing days: the Tokyo National Museum closes on Mondays, the Imperial Palace East Gardens on Mondays and Fridays, and Bar High Five on Sundays and national holidays.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mon / Fri closures",
+        "copy": "The Tokyo National Museum and Shinjuku Gyoen National Garden close on Mondays (the next weekday if Monday is a holiday). The Imperial Palace East Gardens close every Monday and Friday."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book ahead online",
+        "copy": "Narisawa takes reservations only through its online booking site, not by phone. The Tokyo National Museum recommends buying tickets online because waits at its security screening can exceed 30 minutes."
+      },
+      {
+        "label": "Walk-in policies",
+        "value": "No reservations",
+        "copy": "Bar High Five has taken no reservations since May 2015 and admits its last guests at 00:00, Monday to Saturday. At Udon Shin noodles are made to order, so expect a 10 to 15 minute wait after you order."
+      },
+      {
+        "label": "Bags and rules",
+        "value": "No suitcases",
+        "copy": "The Tokyo National Museum does not allow suitcases and screens visitors at the Main Gate. AFURI (Ebisu) is marked fully cashless, so bring a card."
+      }
+    ],
+    "dek": "Do the early-closing sights first: Senso-ji's main hall shuts at 5pm and Meiji Jingu's gates close in late afternoon, while observation decks and bars run late.",
+    "intro": [
+      "You can start early at Senso-ji in Asakusa: from October to March its main hall opens at 6:30 a.m. and closes at 5:00 p.m. Meiji Jingu's gate hours follow the sun, 5:40 a.m. to 4:40 p.m. in October and 6:10 a.m. to 4:10 p.m. in November, so a morning visit leaves time for more. The Imperial Palace East Gardens are free, but they close every Monday and Friday, and from November the last entry is 3:30 p.m.",
+      "In Ueno, the Tokyo National Museum is showing the special exhibition Hiroshige: New Perspectives on Edo Japan from September 29 to December 20, 2026. It opens 9:30 to 17:00 and is closed on Mondays. Admission to the collection is free if you are under 18 or over 70. Suitcases are not allowed, and the museum suggests buying tickets online because queues at its security screening can run past 30 minutes. Next door, Ueno Zoo has posted partial path closures from October 26 to November 16.",
+      "For views, Tokyo Skytree lists hours of 10:00 to 22:00 with final entry at 21:00, and its Dream Christmas event runs November 5 to December 25. The Tokyo Metropolitan Government Building's observation decks are free: the south deck admits visitors until 21:30 but closes on the first and third Tuesdays of the month. In Roppongi, the Mori Art Museum reopens on October 31 with Mariko Mori: All That Shines, which runs to March 28, 2027. Tokyo City View, one floor below, is closed October 27 and November 10 to 12.",
+      "For food, Ivy Place in Daikanyama serves breakfast from 8:00, and Fuglen Tokyo in Tomigaya opens at 7am. At lunch you can choose AFURI (Ebisu), which is cashless, or Udon Shin in Yoyogi, where every bowl is cut and boiled to order. Gonpachi (Nishi-Azabu) is open daily until 27:30, and Narisawa accepts bookings online only. To end the night, Bar High Five in Ginza is open Monday to Saturday from 17:00 and does not take reservations."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair Senso-ji's early main-hall opening with the Tokyo National Museum's Hiroshige exhibition, which runs to December 20, 2026, remembering the museum closes on Mondays."
+      ],
+      [
+        "A slower morning",
+        "Have breakfast at Ivy Place from 8:00 or Fuglen Tokyo (Tomigaya) from 7am, then walk to Meiji Jingu before its gates close in the late afternoon."
+      ],
+      [
+        "Before booking",
+        "Book Narisawa through its online reservation site, because it takes no phone bookings, and note that Bar High Five takes no reservations at all."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several sites could not be read: SHIBUYA SKY and teamLab Planets returned only empty script shells, Bills returned no content, and Sushi Daiwa, Bar Benfiddich, Path and 365 Days failed DNS lookups. fuglen.com had an expired certificate, which was not bypassed. None of these failures is evidence of closure. Tsukiji Outer Market was left out only because its official pages give no postal address. Some places were published only partially: Ueno Zoo's visitor hours page did not load, Shinjuku Gyoen's hours and Narisawa's and The SG Club's hours were not published, and Narisawa's address appears only in a map link. Udon Shin, Glitch Coffee, AFURI, Fuglen Tokyo, Ivy Place and the Imperial Palace East Gardens are supported by currently published hours or booking links rather than 2026-dated content. Tokyo Skytree's stated hours were shown as 'today's' hours without a date. Fewer than 25 places were confirmed, because many input entries were generic or unreadable and the gap-candidate limit of 8 was reached.",
+  "injectionLikeText": []
+}

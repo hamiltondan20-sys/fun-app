@@ -1,0 +1,515 @@
+{
+  "city": "Barcelona, Spain",
+  "checkedOn": "2026-10-21",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Sagrada Família",
+      "kind": "landmark",
+      "url": "https://sagradafamilia.org/en/opening-hours-and-getting-here",
+      "sourceType": "operator's own site (Junta Constructora / Fundació Sagrada Família)",
+      "address": "Visitor entrance: \"general entrance on the Nativity façade, on Carrer de la Marina\"; Foundation address \"Carrer Mallorca, 401 Barcelona 08013\"",
+      "operatingEvidence": "Official ticket vendor site with \"Tickets\" and \"Choose your visit\" links; homepage lists an \"Events 2026\" programme and news items modified as late as 10/19/26.",
+      "hours": "March and October: \"Monday to Friday from 9:00 am to 7:00 pm. Saturdays from 9:00 am to 6:00 pm\", Sundays \"from 10:30 am to 7:00 pm\". November-February: \"Monday to Saturday from 9:00 am to 6:00 pm. Sundays from 10:30 am to 6:00 pm.\" Times \"may occasionally be modified\" for special events.",
+      "confidence": "high"
+    },
+    {
+      "name": "Park Güell",
+      "kind": "park",
+      "url": "https://parkguell.barcelona/en/planning-your-visit/prices-and-times",
+      "sourceType": "operator's own site (official Park Güell site, Barcelona city)",
+      "address": "No street number published; entrances listed include \"Avinguda del Santuari de Sant Josep de la Muntanya\", \"Carretera del Carmel\", \"Carrer Larrard\" and \"Baixada de la Glòria\" (how-to-get-there page)",
+      "operatingEvidence": "Homepage shows live ticket status (\"The availability of tickets for today is medium\") and states \"Tickets for Park Güell must be purchased in advance and online\"; news item on Barcelona 2026, World Capital of Architecture.",
+      "hours": "Ticketed visits \"From 9:30 am to 19:30 pm\"; \"The park is open all the year round\"; residents-only windows 7-9:30 am and 8-10 pm. Entry allowed up to 30 minutes after ticket start time.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Casa Batlló",
+      "kind": "landmark",
+      "url": "https://www.casabatllo.es/en/",
+      "sourceType": "operator's own site",
+      "address": "\"Passeig de Gràcia 43, 08007 Barcelona\"",
+      "operatingEvidence": "Lists \"Gaudí Year 2026\" activities, \"2026 Magical Nights\" concerts, a night visit and the exhibition \"Gaudí-Miró-Gomis: Deconstructed\".",
+      "hours": "\"Every day from 9am to 10:30pm\"",
+      "confidence": "high"
+    },
+    {
+      "name": "La Pedrera-Casa Milà",
+      "kind": "landmark",
+      "url": "https://www.lapedrera.com/en/practical-information",
+      "sourceType": "operator's own site (Fundació Catalunya La Pedrera)",
+      "address": "\"Pg. de Gràcia 92, Eixample, 08008 Barcelona\"",
+      "operatingEvidence": "Dated 2026 schedule; La Pedrera Sunset ticket offered \"Until 01/11/26\"; rooftop closes in rain.",
+      "hours": "Summer (6 Mar - 1 Nov 2026): daily 9:00 am - 8:30 pm, night visits 8:40-10:20 pm. Winter (2 Nov 2026 - 25 Feb 2027): daily 9:00 am - 6:30 pm, night visits 7:00-11:00 pm. \"Closed on 6 July, 7 September and 25 December 2026, as well as from 11 to 17 January 2027.\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Museu Picasso",
+      "kind": "museum",
+      "url": "https://museupicassobcn.cat/en",
+      "sourceType": "official public operator (Barcelona City Council museum)",
+      "address": "\"c/ Montcada, 15-23 - 08003\" Barcelona",
+      "operatingEvidence": "Announces the exhibition \"Picasso and Architecture\", 20 November 2026 to 7 March 2027.",
+      "hours": "29 September to 29 March: Tuesday to Sunday, 10:00-19:00 (no Monday hours listed).",
+      "confidence": "high"
+    },
+    {
+      "name": "Museu Nacional d'Art de Catalunya (MNAC)",
+      "kind": "museum",
+      "url": "https://www.museunacional.cat/en/opening-hours-and-prices",
+      "sourceType": "official public operator (national museum of Catalonia)",
+      "address": "\"Palau Nacional, Parc de Montjuïc, Barcelona\"",
+      "operatingEvidence": "Current exhibitions listed on the homepage, including \"Art, War & Memory\" and \"Wounded Militiaman: The Recovery of an Irredeemable Painting\" (no dates shown); current hours and free-entry rules published.",
+      "hours": "\"October to April, Tuesday to Saturday, 10am to 6pm; Sundays and public holidays, 10am to 3pm.\" Closed Mondays (except public holidays), 1 January, 1 May, 25 December. Free Saturdays from 3pm and first Sunday of the month, with advance online reservation.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Palau de la Música Catalana",
+      "kind": "landmark",
+      "url": "https://www.palaumusica.cat/en/getting-here_1180820",
+      "sourceType": "operator's own site",
+      "address": "\"Carrer del Palau de la Música, 4-6\", \"08003 - Barcelona\"",
+      "operatingEvidence": "Concert listings for 22 Oct to 9 Nov (e.g. London Philharmonic & Gardner on Oct 26) and a \"Temporada 2026-2027\" menu; guided tours bookable online.",
+      "hours": "Guided tours: \"La visita es fa entre les 9.00 i les 15.30 h\", about 50 minutes; general ticket €24.",
+      "confidence": "high"
+    },
+    {
+      "name": "Barcelona Cathedral",
+      "kind": "landmark",
+      "url": "https://catedralbcn.org/en/tourist-visit/visiting-hours/",
+      "sourceType": "operator's own site (Cathedral of Barcelona)",
+      "address": "\"Pla de la Seu s/n, 08002 Barcelona\"",
+      "operatingEvidence": "Published tourist-visit hours and an online ticket shop (tickets.catedralbcn.org); no dated 2026 notice besides footer.",
+      "hours": "Weekdays \"from 9:30 to 18:30 h. (access will be closed at 17:45 h)\"; Saturdays \"from 9:30 to 17:15 h\"; Sundays and religious holidays \"from 14:00 to 17:00 h (access will be closed at 16:30 h.)\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bunkers del Carmel (MUHBA Turó de la Rovira)",
+      "kind": "scenic",
+      "url": "https://www.barcelona.cat/museuhistoria/en/heritages/museum-spaces/turo-de-la-rovira",
+      "sourceType": "official public operator (MUHBA, Barcelona City History Museum)",
+      "address": "\"Marià Labèrnia s/n, 08032 Barcelona\"",
+      "operatingEvidence": "Current visiting hours published, free access; page has a heading \"From 1 August 2026:\" (no text under it) and a 2026-27 schools programme.",
+      "hours": "Museum spaces, October to May: \"Wednesdays, Fridays, Saturdays and Sundays, from 10 am to 2 pm.\" June-September: same days, 4-7 pm. Closed 1 Jan, 1 May, 24 Jun, 25 Dec.",
+      "confidence": "medium"
+    },
+    {
+      "name": "L'Aquàrium de Barcelona",
+      "kind": "landmark",
+      "url": "https://www.aquariumbcn.com/en/",
+      "sourceType": "operator's own site",
+      "address": "\"Moll d'Espanya del Port Vell, s/n\"",
+      "operatingEvidence": "\"Book your ticket now!\" with current prices (adults €30, children 5-10 €23); \"Ticket office and admission close one hour before closing time.\"",
+      "hours": "\"Open 365 days a year from 10 am\" (closing time table did not load)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mercat de Santa Caterina",
+      "kind": "market",
+      "url": "https://www.mercatsantacaterina.com/",
+      "sourceType": "operator's own site",
+      "address": "\"Av. Francesc Cambó, 16, 08003 Barcelona\"",
+      "operatingEvidence": "Published opening hours, home delivery and online shop; footer \"© 2026 - Mercat de Santa Caterina\".",
+      "hours": "Monday, Wednesday, Saturday 7:30-15:30; Tuesday, Thursday, Friday 7:30-20:30 (summer hours differ).",
+      "confidence": "medium"
+    },
+    {
+      "name": "Disfrutar",
+      "kind": "meal",
+      "url": "https://www.disfrutarbarcelona.com/",
+      "sourceType": "operator's own site",
+      "address": "\"C. de Villarroel, 163\", \"08036 Barcelona\"",
+      "operatingEvidence": "\"RESERVES\" booking link; menu prices marked \"Preu vigent fins 07/08/2027\"; press item dated 01/06/2026.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "El Xampanyet",
+      "kind": "bar",
+      "url": "https://www.elxampanyet.com/",
+      "sourceType": "operator's own site",
+      "address": "\"C/ de Montcada, 22, Ciutat Vella, 08003 Barcelona\"",
+      "operatingEvidence": "Current weekly hours published; site states reservations are not accepted.",
+      "hours": "Monday 19:00-23:00; Tuesday-Friday 12:00-15:30 and 19:00-23:00; Saturday 12:00-15:30; \"Dg. Tancat\" (Sunday closed).",
+      "confidence": "medium"
+    },
+    {
+      "name": "Can Fisher",
+      "kind": "meal",
+      "url": "https://www.canfisher.com/",
+      "sourceType": "operator's own site",
+      "address": "\"Av. del Litoral, 64, Sant Martí, 08005 Barcelona\" (Playa del Bogatell)",
+      "operatingEvidence": "\"RESERVAR\" online booking; menu of \"Paellas y arroces secos, caldosos y melosos con arroz del Delta del Ebro\".",
+      "hours": "Monday to Sunday, 12:30-00:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Paradiso",
+      "kind": "bar",
+      "url": "https://paradiso.cat/",
+      "sourceType": "operator's own site",
+      "address": "\"C. RERA PALAU, 4 (EL BORN), BARCELONA\"",
+      "operatingEvidence": "\"Número 17 en la lista de los World's 50 Best Bars 2026\"; current cocktail menu; The Macallan Experience \"todos los jueves y viernes a las 19 h\".",
+      "hours": "not published; \"No se hacen reservas con antelación\", virtual queue via QR code at the door",
+      "confidence": "high"
+    },
+    {
+      "name": "Federal Café (Gòtic)",
+      "kind": "cafe",
+      "url": "https://www.federalcafe.es/bcn-gotic",
+      "sourceType": "operator's own site",
+      "address": "\"C/ Ptge.de la Pau, 11, Ciutat Vella / 08002 Barcelona\"",
+      "operatingEvidence": "Branch page with current hours and linked menus (\"carta-26\").",
+      "hours": "\"L-D 9:00- 16:30\" (daily)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Brunch & Cake (Enric Granados)",
+      "kind": "cafe",
+      "url": "https://www.brunchandcake.com/enric-granados",
+      "sourceType": "operator's own site",
+      "address": "\"Carrer d'Enric Granados, 19, L'Eixample, 08007 Barcelona\"",
+      "operatingEvidence": "Branch page with location, menu and hours; footer \"Copyright 2026 Brunch & Cake\".",
+      "hours": "\"Monday to Thursday 9-17h.\" \"Friday to Sunday 8:30-17h.\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Hofmann Pastelería (Born)",
+      "kind": "bakery",
+      "url": "https://www.hofmannpasteleria.com/",
+      "sourceType": "operator's own site (Grupo Hofmann)",
+      "address": "\"Carrer dels Flassaders, 44, 08003 Barcelona\"",
+      "operatingEvidence": "Online shop with seasonal Castañada products and a product labelled \"Mejor Pasta de Té de Cataluña 2026\"; delivery and takeaway in Barcelona.",
+      "hours": "Monday to Saturday 9:00-20:00, Sunday 9:00-19:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Petit Nomad (Nomad Coffee, Bergara)",
+      "kind": "cafe",
+      "url": "https://nomadcoffee.es/pages/locales-nomad-coffee-en-barcelona",
+      "sourceType": "operator's own site",
+      "address": "\"Carrer de Bergara, 10, 08002 Barcelona\"",
+      "operatingEvidence": "Homepage notice: \"A partir de octubre, Petit NOMAD abre los siete días de la semana.\"",
+      "hours": "Monday-Friday 8:00-17:00; Saturday and Sunday 9:00-17:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Nomad Coffee Bar (Passatge Sert)",
+      "kind": "cafe",
+      "url": "https://nomadcoffee.es/pages/locales-nomad-coffee-en-barcelona",
+      "sourceType": "operator's own site",
+      "address": "\"Passatge Sert, 12, 08003 Barcelona\"",
+      "operatingEvidence": "Listed on the operator's current locations page with weekly hours.",
+      "hours": "Monday-Friday 8:00-19:00; Saturday and Sunday closed",
+      "confidence": "medium"
+    },
+    {
+      "name": "Hidden Coffee Roasters (El Born)",
+      "kind": "cafe",
+      "url": "https://hiddencoffeeroasters.com/en/tienda/coffee-shop-el-born/",
+      "sourceType": "operator's own site",
+      "address": "\"Carrer dels Canvis Vells, 10, Barcelona, Catalunya, 08003, Spain\"",
+      "operatingEvidence": "Branch page with current weekly hours; footer \"Copyright © 2026 • Hidden Coffee Roasters SL\".",
+      "hours": "Monday to Friday 8:00-19:00; Saturdays, Sundays and holidays 9:00-19:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Three Marks Coffee (Ausiàs Marc)",
+      "kind": "cafe",
+      "url": "https://www.threemarkscoffee.com/en/pages/contact",
+      "sourceType": "operator's own site",
+      "address": "\"Carrer d'Ausiàs Marc, 151, 08013 Barcelona\"",
+      "operatingEvidence": "Contact page lists the café with hours and announces a second branch (\"Three Marks Castillejos is opening soon\"); footer \"© 2026 Three Marks Coffee\".",
+      "hours": "Two conflicting sets published: \"Monday – Sunday: 8.00am – 7pm\" and \"Monday – Friday: 8.30am – 4pm\", \"Saturday & Sunday: 9.30am – 5pm\"",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Gothic Quarter",
+      "reason": "neighbourhood, not a single operated place",
+      "url": ""
+    },
+    {
+      "name": "La Boqueria area",
+      "reason": "official site (boqueria.barcelona) returned nothing readable on several pages (home, contact, services, market-open); not confirmed",
+      "url": "https://www.boqueria.barcelona/home"
+    },
+    {
+      "name": "La Boqueria grazing",
+      "reason": "generic, not a place (Boqueria itself could not be read, see above)",
+      "url": ""
+    },
+    {
+      "name": "Quimet & Quimet",
+      "reason": "official site gives address (\"Carrer del Poeta Cabanyes, 25, 08004 Barcelona\") but no hours, menu, booking or dated content beyond a footer; no operating evidence",
+      "url": "https://quimetquimet.com/"
+    },
+    {
+      "name": "Bohl",
+      "reason": "no official website found; only third-party listings",
+      "url": ""
+    },
+    {
+      "name": "Tapeo",
+      "reason": "no official website found (tapeoborn.com does not resolve); only third-party listings",
+      "url": "https://tapeoborn.com/"
+    },
+    {
+      "name": "Two Schmucks",
+      "reason": "no readable official site; schmuckordie.com does not resolve",
+      "url": "https://www.schmuckordie.com/"
+    },
+    {
+      "name": "Dr Stravinsky",
+      "reason": "official site gives address (\"Carrer Mirallers, 5\") but no hours or dated content; no operating evidence",
+      "url": "https://drstravinsky.cat/contacto/"
+    },
+    {
+      "name": "Baluard",
+      "reason": "baluard.com redirects to a domain-for-sale page; no official site found",
+      "url": "https://www.baluard.com/"
+    },
+    {
+      "name": "Brunells",
+      "reason": "official site refused connection (ECONNREFUSED); not evidence of closure",
+      "url": "https://www.brunells.cat/"
+    },
+    {
+      "name": "Fundació Joan Miró",
+      "reason": "official site returned HTTP 403 Forbidden to automated fetch; not bypassed",
+      "url": "https://www.fmirobcn.org/en/"
+    },
+    {
+      "name": "Beach and old town walking",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Tapas hopping",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Bunkers del Carmel views",
+      "reason": "generic, not a place (site itself confirmed as Bunkers del Carmel (MUHBA Turó de la Rovira))",
+      "url": ""
+    },
+    {
+      "name": "Dinner at Disfrutar",
+      "reason": "duplicate of Disfrutar (confirmed)",
+      "url": ""
+    },
+    {
+      "name": "Private Gaudí tour",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Seafront sunset charter",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Borne evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Beach sunset",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Rooftop drinks",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Beach afternoon",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "El Born wandering",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Tapas crawl",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Museum and coffee day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Poble-sec vermouth stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sant Antoni food scene",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Sagrada Família",
+        "Park Güell",
+        "Casa Batlló",
+        "La Pedrera-Casa Milà"
+      ],
+      "bestFirstTimers": [
+        "Sagrada Família",
+        "Barcelona Cathedral",
+        "Museu Picasso",
+        "Park Güell"
+      ],
+      "bestRestaurants": [
+        "Disfrutar",
+        "El Xampanyet",
+        "Can Fisher"
+      ],
+      "bestBudget": [
+        "Bunkers del Carmel (MUHBA Turó de la Rovira)",
+        "Museu Nacional d'Art de Catalunya (MNAC)",
+        "Mercat de Santa Caterina"
+      ],
+      "bestLuxury": [
+        "Disfrutar",
+        "Casa Batlló",
+        "Palau de la Música Catalana"
+      ],
+      "bestCouples": [
+        "Paradiso",
+        "La Pedrera-Casa Milà",
+        "Palau de la Música Catalana",
+        "Bunkers del Carmel (MUHBA Turó de la Rovira)"
+      ],
+      "bestKids": [
+        "L'Aquàrium de Barcelona",
+        "Park Güell"
+      ],
+      "bestSolo": [
+        "Museu Picasso",
+        "Museu Nacional d'Art de Catalunya (MNAC)",
+        "Hidden Coffee Roasters (El Born)",
+        "Nomad Coffee Bar (Passatge Sert)"
+      ],
+      "bestUnique": [
+        "Bunkers del Carmel (MUHBA Turó de la Rovira)",
+        "Palau de la Música Catalana",
+        "Paradiso"
+      ],
+      "bestBreakfast": [
+        "Brunch & Cake (Enric Granados)",
+        "Federal Café (Gòtic)",
+        "Petit Nomad (Nomad Coffee, Bergara)"
+      ],
+      "bestLunch": [
+        "El Xampanyet",
+        "Can Fisher",
+        "Mercat de Santa Caterina"
+      ],
+      "bestDinner": [
+        "Disfrutar",
+        "Can Fisher",
+        "El Xampanyet"
+      ],
+      "bestCocktails": [
+        "Paradiso"
+      ],
+      "bestBakeries": [
+        "Hofmann Pastelería (Born)"
+      ],
+      "bestCoffee": [
+        "Petit Nomad (Nomad Coffee, Bergara)",
+        "Nomad Coffee Bar (Passatge Sert)",
+        "Hidden Coffee Roasters (El Born)",
+        "Three Marks Coffee (Ausiàs Marc)"
+      ]
+    },
+    "queries": {
+      "Sagrada Família": "Sagrada Família Carrer de Mallorca 401 Barcelona",
+      "Park Güell": "Park Güell Avinguda del Santuari de Sant Josep de la Muntanya Barcelona",
+      "Casa Batlló": "Casa Batlló Passeig de Gràcia 43 Barcelona",
+      "La Pedrera-Casa Milà": "La Pedrera-Casa Milà Passeig de Gràcia 92 Barcelona",
+      "Museu Picasso": "Museu Picasso Carrer de Montcada 15-23 Barcelona",
+      "Museu Nacional d'Art de Catalunya (MNAC)": "Museu Nacional d'Art de Catalunya Palau Nacional Parc de Montjuïc Barcelona",
+      "Palau de la Música Catalana": "Palau de la Música Catalana Carrer del Palau de la Música 4-6 Barcelona",
+      "Barcelona Cathedral": "Barcelona Cathedral Pla de la Seu Barcelona",
+      "Bunkers del Carmel (MUHBA Turó de la Rovira)": "MUHBA Turó de la Rovira Carrer de Marià Labèrnia Barcelona",
+      "L'Aquàrium de Barcelona": "L'Aquàrium de Barcelona Moll d'Espanya del Port Vell Barcelona",
+      "Mercat de Santa Caterina": "Mercat de Santa Caterina Avinguda de Francesc Cambó 16 Barcelona",
+      "Disfrutar": "Disfrutar Carrer de Villarroel 163 Barcelona",
+      "El Xampanyet": "El Xampanyet Carrer de Montcada 22 Barcelona",
+      "Can Fisher": "Can Fisher Avinguda del Litoral 64 Barcelona",
+      "Paradiso": "Paradiso Carrer de Rera Palau 4 Barcelona",
+      "Federal Café (Gòtic)": "Federal Café Passatge de la Pau 11 Barcelona",
+      "Brunch & Cake (Enric Granados)": "Brunch & Cake Carrer d'Enric Granados 19 Barcelona",
+      "Hofmann Pastelería (Born)": "Hofmann Pastelería Carrer dels Flassaders 44 Barcelona",
+      "Petit Nomad (Nomad Coffee, Bergara)": "Petit Nomad Carrer de Bergara 10 Barcelona",
+      "Nomad Coffee Bar (Passatge Sert)": "Nomad Coffee Passatge Sert 12 Barcelona",
+      "Hidden Coffee Roasters (El Born)": "Hidden Coffee Roasters Carrer dels Canvis Vells 10 Barcelona",
+      "Three Marks Coffee (Ausiàs Marc)": "Three Marks Coffee Carrer d'Ausiàs Marc 151 Barcelona"
+    },
+    "summary": "Gaudí landmarks, the cathedral, Picasso and Catalan art museums, a market, tapas bars, seafront rice, a cocktail bar, a pastry shop and specialty coffee, each checked against its own website.",
+    "highlights": [
+      "Sagrada Família",
+      "Park Güell",
+      "Casa Batlló",
+      "Museu Picasso"
+    ],
+    "tip": "Park Güell tickets must be bought in advance online and hold for 30 minutes after your slot, while Museu Picasso and MNAC publish no Monday opening, so put the museums on other days.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mondays and Sundays",
+        "copy": "Museu Picasso lists hours only Tuesday to Sunday, and MNAC is closed on Mondays except public holidays. El Xampanyet is closed on Sundays and opens only in the evening on Mondays."
+      },
+      {
+        "label": "Tickets",
+        "value": "Book ahead",
+        "copy": "Park Güell tickets must be bought in advance and online, and entry is allowed up to 30 minutes after your slot. Palau de la Música Catalana tours cost €2 more at the box office than online."
+      },
+      {
+        "label": "Walk-in only",
+        "value": "No reservations",
+        "copy": "Paradiso takes no advance reservations and runs a virtual queue you join by scanning a QR code at the door. El Xampanyet also states that it does not accept reservations."
+      },
+      {
+        "label": "Free and late",
+        "value": "Timing tricks",
+        "copy": "MNAC is free on Saturdays from 3pm and the first Sunday of the month, with an advance online reservation. Casa Batlló is open every day until 10:30pm, and La Pedrera runs night visits."
+      }
+    ],
+    "dek": "Book Gaudí sites and Park Güell before you fly, then leave mornings for coffee and the old town and evenings for walk-in tapas and cocktails.",
+    "intro": [
+      "You can build a first Barcelona trip around Gaudí. Sagrada Família is open in October from 9am to 7pm on weekdays, 9am to 6pm on Saturdays and 10:30am to 7pm on Sundays, with shorter hours from November to February. Individual visitors enter on the Nativity façade, on Carrer de la Marina. Park Güell sells tickets online and in advance only, for visits between 9:30am and 7:30pm, and your entry holds for 30 minutes after the time on your ticket.",
+      "On Passeig de Gràcia, Casa Batlló opens every day from 9am to 10:30pm. Its 2026 programme includes Magical Nights concerts and the exhibition Gaudí-Miró-Gomis: Deconstructed. Further up the avenue, La Pedrera-Casa Milà keeps summer hours of 9am to 8:30pm until 1 November 2026, then 9am to 6:30pm from 2 November. It closes on 25 December 2026 and from 11 to 17 January 2027, and its rooftop shuts when it rains.",
+      "In the old town, Barcelona Cathedral receives tourist visits on weekdays from 9:30am to 6:30pm, and only from 2pm to 5pm on Sundays. Museu Picasso on Carrer de Montcada opens Tuesday to Sunday, 10am to 7pm, in winter, and its exhibition Picasso and Architecture runs from 20 November 2026 to 7 March 2027. On Montjuïc, MNAC is free on Saturdays from 3pm and on the first Sunday of each month if you reserve online. Palau de la Música Catalana runs 50-minute guided tours between 9am and 3:30pm.",
+      "For food, El Xampanyet on Carrer de Montcada takes no reservations and closes on Sundays. Can Fisher, on Bogatell beach, serves Ebro Delta rice dishes daily from 12:30pm to midnight. Disfrutar takes bookings online. Paradiso, ranked 17th on the World's 50 Best Bars 2026 list, works through a QR-code virtual queue rather than bookings. For mornings, Petit Nomad now opens seven days a week, Federal Café in the Gòtic serves daily from 9am to 4:30pm, and Hofmann's Born shop sells pastries every day."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair a booked Sagrada Família slot with an online-only Park Güell ticket, then walk Passeig de Gràcia for Casa Batlló and La Pedrera."
+      ],
+      [
+        "A slower morning",
+        "Start with coffee at Petit Nomad or Hidden Coffee Roasters in El Born, then visit Museu Picasso on Carrer de Montcada, which opens at 10am Tuesday to Sunday in winter."
+      ],
+      [
+        "Before booking",
+        "Book Park Güell and the Palau de la Música tour online, but plan to walk in or queue for El Xampanyet and Paradiso, which take no reservations."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. La Boqueria's official site returned nothing readable, Fundació Joan Miró's site refused automated reading (403) and Brunells' site refused the connection, so they are not included. Bohl, Tapeo, Two Schmucks and Baluard had no reachable official website. Quimet & Quimet and Dr Stravinsky published an address but no hours or current content. Several places were only partly published: Disfrutar and Paradiso show no opening hours, the Aquarium's closing times did not load, Park Güell gives entrances but no street number, MNAC's current exhibitions are undated, and Three Marks Coffee lists two conflicting sets of hours for Ausiàs Marc. The Sagrada Família site also shows an undated notice that the Gaudí House Museum is temporarily closed. This guide has fewer than the 25-place target because of these gaps.",
+  "injectionLikeText": []
+}

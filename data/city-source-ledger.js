@@ -5,6 +5,1257 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Barcelona, Spain": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-21",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. La Boqueria's official site returned nothing readable, Fundació Joan Miró's site refused automated reading (403) and Brunells' site refused the connection, so they are not included. Bohl, Tapeo, Two Schmucks and Baluard had no reachable official website. Quimet & Quimet and Dr Stravinsky published an address but no hours or current content. Several places were only partly published: Disfrutar and Paradiso show no opening hours, the Aquarium's closing times did not load, Park Güell gives entrances but no street number, MNAC's current exhibitions are undated, and Three Marks Coffee lists two conflicting sets of hours for Ausiàs Marc. The Sagrada Família site also shows an undated notice that the Gaudí House Museum is temporarily closed. This guide has fewer than the 25-place target because of these gaps.",
+    "sourceUrls": [
+      "docs/content-research/barcelona-2026-10-21.md",
+      "docs/content-research/barcelona-2026-10-21.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Gothic Quarter",
+        "checkedOn": "2026-10-21",
+        "reason": "neighbourhood, not a single operated place"
+      },
+      {
+        "name": "La Boqueria area",
+        "url": "https://www.boqueria.barcelona/home",
+        "checkedOn": "2026-10-21",
+        "reason": "official site (boqueria.barcelona) returned nothing readable on several pages (home, contact, services, market-open); not confirmed"
+      },
+      {
+        "name": "La Boqueria grazing",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place (Boqueria itself could not be read, see above)"
+      },
+      {
+        "name": "Quimet & Quimet",
+        "url": "https://quimetquimet.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "official site gives address (\"Carrer del Poeta Cabanyes, 25, 08004 Barcelona\") but no hours, menu, booking or dated content beyond a footer; no operating evidence"
+      },
+      {
+        "name": "Bohl",
+        "checkedOn": "2026-10-21",
+        "reason": "no official website found; only third-party listings"
+      },
+      {
+        "name": "Tapeo",
+        "url": "https://tapeoborn.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "no official website found (tapeoborn.com does not resolve); only third-party listings"
+      },
+      {
+        "name": "Two Schmucks",
+        "url": "https://www.schmuckordie.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "no readable official site; schmuckordie.com does not resolve"
+      },
+      {
+        "name": "Dr Stravinsky",
+        "url": "https://drstravinsky.cat/contacto/",
+        "checkedOn": "2026-10-21",
+        "reason": "official site gives address (\"Carrer Mirallers, 5\") but no hours or dated content; no operating evidence"
+      },
+      {
+        "name": "Baluard",
+        "url": "https://www.baluard.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "baluard.com redirects to a domain-for-sale page; no official site found"
+      },
+      {
+        "name": "Brunells",
+        "url": "https://www.brunells.cat/",
+        "checkedOn": "2026-10-21",
+        "reason": "official site refused connection (ECONNREFUSED); not evidence of closure"
+      },
+      {
+        "name": "Fundació Joan Miró",
+        "url": "https://www.fmirobcn.org/en/",
+        "checkedOn": "2026-10-21",
+        "reason": "official site returned HTTP 403 Forbidden to automated fetch; not bypassed"
+      },
+      {
+        "name": "Beach and old town walking",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Tapas hopping",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Bunkers del Carmel views",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place (site itself confirmed as Bunkers del Carmel (MUHBA Turó de la Rovira))"
+      },
+      {
+        "name": "Dinner at Disfrutar",
+        "checkedOn": "2026-10-21",
+        "reason": "duplicate of Disfrutar (confirmed)"
+      },
+      {
+        "name": "Private Gaudí tour",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Seafront sunset charter",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Borne evening",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Beach sunset",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Rooftop drinks",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Beach afternoon",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "El Born wandering",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Tapas crawl",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Museum and coffee day",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Poble-sec vermouth stop",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sant Antoni food scene",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Sagrada Família": {
+        "url": "https://sagradafamilia.org/en/opening-hours-and-getting-here",
+        "sourceType": "operator's own site (Junta Constructora / Fundació Sagrada Família)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Official ticket vendor site with \"Tickets\" and \"Choose your visit\" links; homepage lists an \"Events 2026\" programme and news items modified as late as 10/19/26."
+      },
+      "Park Güell": {
+        "url": "https://parkguell.barcelona/en/planning-your-visit/prices-and-times",
+        "sourceType": "operator's own site (official Park Güell site, Barcelona city)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Homepage shows live ticket status (\"The availability of tickets for today is medium\") and states \"Tickets for Park Güell must be purchased in advance and online\"; news item on Barcelona 2026, World Capital of Architecture."
+      },
+      "Casa Batlló": {
+        "url": "https://www.casabatllo.es/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Lists \"Gaudí Year 2026\" activities, \"2026 Magical Nights\" concerts, a night visit and the exhibition \"Gaudí-Miró-Gomis: Deconstructed\"."
+      },
+      "La Pedrera-Casa Milà": {
+        "url": "https://www.lapedrera.com/en/practical-information",
+        "sourceType": "operator's own site (Fundació Catalunya La Pedrera)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Dated 2026 schedule; La Pedrera Sunset ticket offered \"Until 01/11/26\"; rooftop closes in rain."
+      },
+      "Museu Picasso": {
+        "url": "https://museupicassobcn.cat/en",
+        "sourceType": "official public operator (Barcelona City Council museum)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Announces the exhibition \"Picasso and Architecture\", 20 November 2026 to 7 March 2027."
+      },
+      "Museu Nacional d'Art de Catalunya (MNAC)": {
+        "url": "https://www.museunacional.cat/en/opening-hours-and-prices",
+        "sourceType": "official public operator (national museum of Catalonia)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Current exhibitions listed on the homepage, including \"Art, War & Memory\" and \"Wounded Militiaman: The Recovery of an Irredeemable Painting\" (no dates shown); current hours and free-entry rules published."
+      },
+      "Palau de la Música Catalana": {
+        "url": "https://www.palaumusica.cat/en/getting-here_1180820",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Concert listings for 22 Oct to 9 Nov (e.g. London Philharmonic & Gardner on Oct 26) and a \"Temporada 2026-2027\" menu; guided tours bookable online."
+      },
+      "Barcelona Cathedral": {
+        "url": "https://catedralbcn.org/en/tourist-visit/visiting-hours/",
+        "sourceType": "operator's own site (Cathedral of Barcelona)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Published tourist-visit hours and an online ticket shop (tickets.catedralbcn.org); no dated 2026 notice besides footer."
+      },
+      "Bunkers del Carmel (MUHBA Turó de la Rovira)": {
+        "url": "https://www.barcelona.cat/museuhistoria/en/heritages/museum-spaces/turo-de-la-rovira",
+        "sourceType": "official public operator (MUHBA, Barcelona City History Museum)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Current visiting hours published, free access; page has a heading \"From 1 August 2026:\" (no text under it) and a 2026-27 schools programme."
+      },
+      "L'Aquàrium de Barcelona": {
+        "url": "https://www.aquariumbcn.com/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "\"Book your ticket now!\" with current prices (adults €30, children 5-10 €23); \"Ticket office and admission close one hour before closing time.\""
+      },
+      "Mercat de Santa Caterina": {
+        "url": "https://www.mercatsantacaterina.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Published opening hours, home delivery and online shop; footer \"© 2026 - Mercat de Santa Caterina\"."
+      },
+      "Disfrutar": {
+        "url": "https://www.disfrutarbarcelona.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "\"RESERVES\" booking link; menu prices marked \"Preu vigent fins 07/08/2027\"; press item dated 01/06/2026."
+      },
+      "El Xampanyet": {
+        "url": "https://www.elxampanyet.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Current weekly hours published; site states reservations are not accepted."
+      },
+      "Can Fisher": {
+        "url": "https://www.canfisher.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "\"RESERVAR\" online booking; menu of \"Paellas y arroces secos, caldosos y melosos con arroz del Delta del Ebro\"."
+      },
+      "Paradiso": {
+        "url": "https://paradiso.cat/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "\"Número 17 en la lista de los World's 50 Best Bars 2026\"; current cocktail menu; The Macallan Experience \"todos los jueves y viernes a las 19 h\"."
+      },
+      "Federal Café (Gòtic)": {
+        "url": "https://www.federalcafe.es/bcn-gotic",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Branch page with current hours and linked menus (\"carta-26\")."
+      },
+      "Brunch & Cake (Enric Granados)": {
+        "url": "https://www.brunchandcake.com/enric-granados",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Branch page with location, menu and hours; footer \"Copyright 2026 Brunch & Cake\"."
+      },
+      "Hofmann Pastelería (Born)": {
+        "url": "https://www.hofmannpasteleria.com/",
+        "sourceType": "operator's own site (Grupo Hofmann)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Online shop with seasonal Castañada products and a product labelled \"Mejor Pasta de Té de Cataluña 2026\"; delivery and takeaway in Barcelona."
+      },
+      "Petit Nomad (Nomad Coffee, Bergara)": {
+        "url": "https://nomadcoffee.es/pages/locales-nomad-coffee-en-barcelona",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Homepage notice: \"A partir de octubre, Petit NOMAD abre los siete días de la semana.\""
+      },
+      "Nomad Coffee Bar (Passatge Sert)": {
+        "url": "https://nomadcoffee.es/pages/locales-nomad-coffee-en-barcelona",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Listed on the operator's current locations page with weekly hours."
+      },
+      "Hidden Coffee Roasters (El Born)": {
+        "url": "https://hiddencoffeeroasters.com/en/tienda/coffee-shop-el-born/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Branch page with current weekly hours; footer \"Copyright © 2026 • Hidden Coffee Roasters SL\"."
+      },
+      "Three Marks Coffee (Ausiàs Marc)": {
+        "url": "https://www.threemarkscoffee.com/en/pages/contact",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Contact page lists the café with hours and announces a second branch (\"Three Marks Castillejos is opening soon\"); footer \"© 2026 Three Marks Coffee\"."
+      }
+    }
+  },
+  "Tokyo, Japan": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-21",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several sites could not be read: SHIBUYA SKY and teamLab Planets returned only empty script shells, Bills returned no content, and Sushi Daiwa, Bar Benfiddich, Path and 365 Days failed DNS lookups. fuglen.com had an expired certificate, which was not bypassed. None of these failures is evidence of closure. Tsukiji Outer Market was left out only because its official pages give no postal address. Some places were published only partially: Ueno Zoo's visitor hours page did not load, Shinjuku Gyoen's hours and Narisawa's and The SG Club's hours were not published, and Narisawa's address appears only in a map link. Udon Shin, Glitch Coffee, AFURI, Fuglen Tokyo, Ivy Place and the Imperial Palace East Gardens are supported by currently published hours or booking links rather than 2026-dated content. Tokyo Skytree's stated hours were shown as 'today's' hours without a date. Fewer than 25 places were confirmed, because many input entries were generic or unreadable and the gap-candidate limit of 8 was reached.",
+    "sourceUrls": [
+      "docs/content-research/tokyo-2026-10-21.md",
+      "docs/content-research/tokyo-2026-10-21.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Shibuya Crossing",
+        "checkedOn": "2026-10-21",
+        "reason": "public street crossing with no operator website to check"
+      },
+      {
+        "name": "Shinjuku",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place (district)"
+      },
+      {
+        "name": "Shibuya",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place (district)"
+      },
+      {
+        "name": "Yanaka neighborhood",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place (neighbourhood)"
+      },
+      {
+        "name": "Izakaya Toyo style food alleys",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free skyline views",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Temple and shrine wandering",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Omakase dinner",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Luxury ryokan stay extension",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private tea experience",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Shibuya Sky at sunset",
+        "url": "https://www.shibuya-scramble-square.com/sky/",
+        "checkedOn": "2026-10-21",
+        "reason": "Official SHIBUYA SKY pages returned only an empty script shell (title, logo, 'MENU'). Sub-pages returned 404, so there was no readable address, hours or current content."
+      },
+      {
+        "name": "Ginza dinner",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Odaiba night view",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "teamLab-style digital art",
+        "url": "https://www.teamlab.art/e/planets/",
+        "checkedOn": "2026-10-21",
+        "reason": "Generic entry. The gap candidate teamLab Planets TOKYO was checked, but the official page returned only its title, with no address, hours or tickets."
+      },
+      {
+        "name": "Tokyo Disney add-on",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place (no specific park named)"
+      },
+      {
+        "name": "Ramen counter crawl",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Asakusa morning",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Shinjuku night wandering",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Depachika food halls",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Themed cafe or arcade stop",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Memory Lane izakayas",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place (alley of many separate bars)"
+      },
+      {
+        "name": "Tsukiji Outer Market",
+        "url": "https://www.tsukiji.or.jp/english/calendar/",
+        "checkedOn": "2026-10-21",
+        "reason": "The official site shows an October 2026 calendar, 2026 news and public hours (9:00–14:00), but none of its home, English, access or calendar pages gives a postal address, so it fails the exact-address rule."
+      },
+      {
+        "name": "Sushi Daiwa",
+        "url": "https://www.sushidaiwa.co.jp/",
+        "checkedOn": "2026-10-21",
+        "reason": "fetch failed: DNS lookup failed (ENOTFOUND) for the presumed official domain; not evidence of closure"
+      },
+      {
+        "name": "Bills Omotesando",
+        "url": "https://bills-jp.net/",
+        "checkedOn": "2026-10-21",
+        "reason": "official site returned no readable content (homepage empty; branch and English pages 404)"
+      },
+      {
+        "name": "Soba House Konjiki-Hototogisu",
+        "url": "http://konjikiramen.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "The presumed official domain redirected to konjikiramen.com, which lists a Toronto shop and an undated 'Shinjuku NEW location' address with no hours or current evidence. The operator could not be verified."
+      },
+      {
+        "name": "Bar Benfiddich",
+        "url": "https://www.benfiddich.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "fetch failed: DNS lookup failed (ENOTFOUND) for the presumed official domain; not evidence of closure"
+      },
+      {
+        "name": "Path",
+        "url": "https://path-restaurant.tokyo/",
+        "checkedOn": "2026-10-21",
+        "reason": "fetch failed: DNS lookup failed (ENOTFOUND) for the presumed official domain; not evidence of closure"
+      },
+      {
+        "name": "365 Days",
+        "url": "https://www.365jours.jp/",
+        "checkedOn": "2026-10-21",
+        "reason": "fetch failed: DNS error (EAI_AGAIN) on three attempts; not evidence of closure"
+      },
+      {
+        "name": "Viron",
+        "url": "https://www.viron.jp/",
+        "checkedOn": "2026-10-21",
+        "reason": "domain viron.jp belongs to an unrelated Hamamatsu ironwork company; the bakery's official site was not identified"
+      },
+      {
+        "name": "Koffee Mameya",
+        "url": "https://koffee-mameya.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "The official site lists shops only as map links, with no written address, hours or dated content. The Kakeru page has only a reservation link, and the Omotesando page returned 404."
+      },
+      {
+        "name": "Hama-rikyu Gardens",
+        "url": "https://www.tokyo-park.or.jp/teien/en/hama-rikyu/",
+        "checkedOn": "2026-10-21",
+        "reason": "The official English page gives the address '1-1, Hama Rikyu-teien, Chuo-ku, Tokyo 104-0046' but no hours or current-operation evidence. Other pages returned 404."
+      },
+      {
+        "name": "Fuglen (fuglen.com)",
+        "url": "https://www.fuglen.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "certificate has expired on fuglen.com; not bypassed (Tokyo branch confirmed instead via fuglen.no)"
+      }
+    ],
+    "placeSources": {
+      "Senso-ji": {
+        "url": "https://www.senso-ji.jp/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "News items linked as 2026-10-01, e.g. a harp and violin concert \"福祉会館にてコンサートがおこなわれた\". Main-hall hours are published."
+      },
+      "Meiji Jingu": {
+        "url": "https://www.meijijingu.or.jp/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "News dated 令和8年 (2026), e.g. 10月15日 \"横綱による手数入が奉納されました\". The English site says \"Meiji Jingu is open everyday\"."
+      },
+      "Ueno Zoo": {
+        "url": "https://www.tokyo-zoo.net/zoo/ueno/",
+        "sourceType": "official public operator (Tokyo Zoological Park Society, Tokyo Metropolitan zoos)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "News dated 2026.10.20 on partial path closures Oct 27–30; 2026.10.19 notice of path closures \"10月26日(月)～11月16日(月)\"; 2026.08.31 notice that some animal exhibits are halted or changed for construction until January 2027."
+      },
+      "Tokyo National Museum": {
+        "url": "https://www.tnm.jp/?lang=en",
+        "sourceType": "official public operator (National Institutes for Cultural Heritage)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Current special exhibition \"Hiroshige: New Perspectives on Edo Japan\", September 29 to December 20, 2026. Honkan Room 4 closes October 26, 2026 to April 25, 2027."
+      },
+      "Tokyo Skytree": {
+        "url": "https://en.tokyo-skytree.jp/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Events \"DISCOVER AUTUMN at TOKYO SKYTREE\" (Sep 10–Oct 31) and \"TOKYO SKYTREE Dream Christmas 2026\" (Nov 5–Dec 25); an Oct 21 lighting-inspection notice."
+      },
+      "Mori Art Museum": {
+        "url": "https://art-view.roppongihills.com/en/info/index.html",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Closed September 24 to October 30, 2026 for exhibition preparation. It reopens with \"Mariko Mori: All That Shines\", October 31, 2026 to March 28, 2027, and advance tickets are on sale (news dated October 13, 2026)."
+      },
+      "Tokyo City View": {
+        "url": "https://art-view.roppongihills.com/en/info/index.html",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Its 2026 schedule shows it is closed on Tuesday, October 27, 2026 and from November 10 to 12, 2026. A combo ticket with the Mori Art Museum goes on sale October 31."
+      },
+      "Tokyo Metropolitan Government Building Observation Decks": {
+        "url": "https://www.zaimu.metro.tokyo.lg.jp/tochousha/goannai/tenbou",
+        "sourceType": "official public operator (Tokyo Metropolitan Government)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Current visitor guide with \"入室料金　無料\" (free) and per-deck closing rules. The page carries a heading for an award titled \"トラベラーズチョイス アワード2026\"."
+      },
+      "Imperial Palace East Gardens": {
+        "url": "https://www.kunaicho.go.jp/e-event/higashigyoen02.html",
+        "sourceType": "official public operator (Imperial Household Agency)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Current published schedule of seasonal hours and closed days, with a linked closure calendar. Admission is free. The page has no 2026-dated item."
+      },
+      "Shinjuku Gyoen National Garden": {
+        "url": "https://policies.env.go.jp/national-garden/shinjukugyoen/index.html",
+        "sourceType": "official public operator (Ministry of the Environment)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "The homepage has current notices for a chrysanthemum display (菊花壇展) and early opening (早朝開園), but neither is dated. Advance web tickets are offered."
+      },
+      "Gonpachi (Nishi-Azabu)": {
+        "url": "https://www.gonpachi.jp/nishi-azabu/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "News dated 2026-09-18 announces a \"25周年記念イベント\" at the Nishi-Azabu branch, and an autumn menu ran from 9/19."
+      },
+      "Narisawa": {
+        "url": "https://www.narisawa-yoshihiro.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "The site takes bookings: \"ご予約は下記の予約サイトより承っております\" (via OMAKASE) and \"お電話でのご予約は承っておりません\". There is no dated 2026 content."
+      },
+      "Ivy Place": {
+        "url": "https://www.tysons.jp/ivyplace/access/",
+        "sourceType": "operator's own site (TYSONS & COMPANY)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Current meal-by-meal hours are published. The operator's news lists \"LEMON FAIR 2026\", but it is not specific to this restaurant."
+      },
+      "AFURI (Ebisu)": {
+        "url": "https://afuri.com/findus/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "The branch list gives current hours, marks the branch fully cashless and says reservations are available. There is no dated 2026 content."
+      },
+      "Udon Shin": {
+        "url": "https://www.udonshin.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "A TableCheck reservation link and current hours are published. The only dated items are from 2023, and the site warns of \"10～15分程の待ち時間\" after ordering."
+      },
+      "Glitch Coffee (Jimbocho)": {
+        "url": "https://glitchcoffee.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Current branch hours are listed with \"NO SCHEDULED HOLIDAY\". There is no dated 2026 content."
+      },
+      "The SG Club": {
+        "url": "https://sg-management.jp/sgclub/",
+        "sourceType": "operator's own site (SG Management)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "TableCheck booking links \"Book Sip\" and \"Book Sangai\". The group site has 2026 news, e.g. 2026-10-16 \"Roku Industry Icon Award\"."
+      },
+      "Bar High Five": {
+        "url": "https://www.barhighfive.com/map",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Notice dated 17 June 2026: \"We will close our bar on Wednesday 1st July for the inventry.\" No reservations: \"We have decided to take NO reservations from this May 2015.\""
+      },
+      "Fuglen Tokyo (Tomigaya)": {
+        "url": "https://fuglen.no/Fuglen-Tokyo-Tomigaya",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Current hours are listed, and the site describes coffee, baked goods and cocktails served \"from 7am every day\". There is no dated 2026 content."
+      }
+    }
+  },
+  "New York, United States": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-21",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "This is a website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several official sites could not be read by automated fetch and were left out rather than bypassed: Top of the Rock, the American Museum of Natural History, MoMA and Grand Central Terminal (HTTP 403), The Met and the Brooklyn Museum (HTTP 429), the Guggenheim (cookie wall only), the NYPL main branch (empty page), Bubby's (connection refused), Mah-Ze-Dahr (HTTP 404) and NYC Parks' Central Park page (HTTP 403; the Conservancy site was used instead). Some places were only partly published. Crown Shy, Attaboy and Devoción showed hours but no dated content. The Whitney listed exhibitions without dates. The Frick page carried one apparently stale notice. Employees Only's reservations page may be out of date. Katz's listed weekly hours that conflict with its \"open 24 hrs on weekends\" banner. The High Line's closure notice and Central Park's event dates had no year shown.",
+    "sourceUrls": [
+      "docs/content-research/new-york-2026-10-21.md",
+      "docs/content-research/new-york-2026-10-21.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Statue of Liberty views",
+        "url": "https://www.nps.gov/stli/planyourvisit/basicinfo.htm",
+        "checkedOn": "2026-10-21",
+        "reason": "Largely generic (views); the NPS pages read gave only a mailing address (\"1 Ellis Island, Jersey City, NJ\") and no physical-location or current hours text, deferring to the ferry concessioner."
+      },
+      {
+        "name": "Top of the Rock",
+        "url": "https://www.rockefellercenter.com/attractions/top-of-the-rock-observation-deck/",
+        "checkedOn": "2026-10-21",
+        "reason": "Official site returned HTTP 403 Forbidden to automated reading; not bypassed."
+      },
+      {
+        "name": "American Museum of Natural History",
+        "url": "https://www.amnh.org/plan-your-visit",
+        "checkedOn": "2026-10-21",
+        "reason": "Official site returned HTTP 403 Forbidden (visit page and homepage); not bypassed."
+      },
+      {
+        "name": "Brooklyn Bridge",
+        "url": "https://www.nyc.gov/html/dot/html/infrastructure/brooklyn-bridge.shtml",
+        "checkedOn": "2026-10-21",
+        "reason": "NYC DOT page gives no exact access point or address and no 2026-dated content (only \"The bridge promenade will be open at all times\")."
+      },
+      {
+        "name": "Times Square once",
+        "url": "https://www.timessquarenyc.org/",
+        "checkedOn": "2026-10-21",
+        "reason": "Only source found is the Times Square Alliance, a district promotion organization rather than an operator or public body; treated like a tourism board."
+      },
+      {
+        "name": "Bubby's",
+        "url": "https://bubbys.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "Official site fetch failed (connection refused); not evidence of closure."
+      },
+      {
+        "name": "Los Tacos No. 1",
+        "url": "https://lostacos1.com/locations/",
+        "checkedOn": "2026-10-21",
+        "reason": "Homepage and locations page returned no readable addresses or hours."
+      },
+      {
+        "name": "Joe's Pizza (Carmine Street)",
+        "url": "https://www.joespizzanyc.com/locations",
+        "checkedOn": "2026-10-21",
+        "reason": "Official site gives the address (7 Carmine Street) but no hours, menu notice or dated content as operating evidence."
+      },
+      {
+        "name": "Mah-Ze-Dahr",
+        "url": "https://www.mahzedahrbakery.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "Official site returned HTTP 404; nothing readable. Not evidence of closure."
+      },
+      {
+        "name": "The Metropolitan Museum of Art",
+        "url": "https://www.metmuseum.org/plan-your-visit",
+        "checkedOn": "2026-10-21",
+        "reason": "Gap candidate; official site returned HTTP 429 Too Many Requests on repeated attempts; not bypassed."
+      },
+      {
+        "name": "Museum of Modern Art (MoMA)",
+        "url": "https://www.moma.org/visit",
+        "checkedOn": "2026-10-21",
+        "reason": "Gap candidate; official site returned HTTP 403 Forbidden; not bypassed."
+      },
+      {
+        "name": "Solomon R. Guggenheim Museum",
+        "url": "https://www.guggenheim.org/plan-your-visit",
+        "checkedOn": "2026-10-21",
+        "reason": "Gap candidate; page returned only a cookie notice, nothing readable."
+      },
+      {
+        "name": "Grand Central Terminal",
+        "url": "https://www.grandcentralterminal.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "Gap candidate; official site returned HTTP 403 Forbidden; not bypassed."
+      },
+      {
+        "name": "New York Public Library (Stephen A. Schwarzman Building)",
+        "url": "https://www.nypl.org/locations/schwarzman",
+        "checkedOn": "2026-10-21",
+        "reason": "Gap candidate; page returned no readable content."
+      },
+      {
+        "name": "Brooklyn Museum",
+        "url": "https://www.brooklynmuseum.org/visit",
+        "checkedOn": "2026-10-21",
+        "reason": "Gap candidate; official site returned HTTP 429 Too Many Requests; not bypassed."
+      },
+      {
+        "name": "Bryant Park",
+        "url": "https://bryantpark.org/",
+        "checkedOn": "2026-10-21",
+        "reason": "Gap candidate; homepage shows dated 2026 events but no address or hours, and the hours page returned 404."
+      },
+      {
+        "name": "Brooklyn Bridge Park",
+        "url": "https://www.brooklynbridgepark.org/",
+        "checkedOn": "2026-10-21",
+        "reason": "Gap candidate; hours and events shown but no street address, only pier and landing names."
+      },
+      {
+        "name": "Dollar-slice and park time",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Michelin tasting menu",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private skyline cruise",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Fifth Avenue hotel stay",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "West Village dinner",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Jazz club night",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "FAO Schwarz area",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Museum morning",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "SoHo shopping",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Greenwich Village cafe day",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Observation deck",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "DUMBO sunrise",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Central Park": {
+        "url": "https://www.centralparknyc.org/visit",
+        "sourceType": "official park manager (Central Park Conservancy)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Homepage banner \"Match Your Gift During The Fall Membership Drive!\" (donation link 'fund-2026-09') and upcoming tours listed for Oct 23 and Oct 31."
+      },
+      "Central Park Zoo": {
+        "url": "https://centralparkzoo.com/plan-your-visit",
+        "sourceType": "operator's own site (Wildlife Conservation Society)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Published hours for \"April 2 — October 31, 2026\" and \"November 1, 2026 — March 2027\"; homepage daily schedule dated 2026-10-22 with penguin and sea lion feedings."
+      },
+      "The High Line": {
+        "url": "https://www.thehighline.org/visit/",
+        "sourceType": "operator's own site (Friends of the High Line)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Park update banner: \"On October 19, the section of the park between 18th Street and 23rd Street will be temporarily closed\"; footer \"© 2000 - 2026 Friends of the High Line\"."
+      },
+      "Staten Island Ferry": {
+        "url": "https://www.siferry.com/",
+        "sourceType": "official public operator (City of New York)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Notice dated 03/27/26 \"Beer is Back at the Ferry\"; site states \"The Staten Island Ferry is a free service provided by the City of New York.\""
+      },
+      "Roosevelt Island Tram": {
+        "url": "https://www.rioc.ny.gov/community/transportation/tram",
+        "sourceType": "official public operator (Roosevelt Island Operating Corporation, New York State)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Current timetable published; RIOC homepage reports a 50th-anniversary celebration at Tramway Plaza on June 1 and a May 18 cabin-redesign initiative; the tram \"accepts standard MTA fares, including OMNY tap-to-pay\"."
+      },
+      "9/11 Memorial & Museum": {
+        "url": "https://www.911memorial.org/visit",
+        "sourceType": "operator's own site (National September 11 Memorial & Museum)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Visit page with current hours and ticketing: the Museum \"requires advance ticket purchase\"; \"The Memorial is free and open to the public seven days a week\"; footer \"© 2026\"."
+      },
+      "Empire State Building": {
+        "url": "https://www.esbnyc.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Ticket booking live: 86th Floor \"from $46\", 102nd & 86th Floor \"from $81\"; all visits require a timed reservation; \"2026 Run-Up\" listed and footer \"© 2026\"."
+      },
+      "Whitney Museum of American Art": {
+        "url": "https://www.whitney.org/visit",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Current exhibitions listed, including \"Roy Lichtenstein: Like New\" and \"Dyani White Hawk: Nourish\" (no dates shown); advance tickets bookable online."
+      },
+      "The Frick Collection": {
+        "url": "https://www.frick.org/visit",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Current gallery notices: \"The Cabinet Gallery and Anteroom are closed October 15–22\"; timed tickets bookable online ($30 adult). One notice on the page (Sunday, February 11) appears stale."
+      },
+      "Chelsea Market": {
+        "url": "https://www.chelseamarket.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Dated events including \"Live Music - Sean the Cellist: October 21, 2026\" and \"Trick-or-Treating at Chelsea Market: October 31, 2026\"."
+      },
+      "Smorgasburg (Williamsburg)": {
+        "url": "https://www.smorgasburg.com/new-york",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Listed as an active 2026-season location on Saturdays; Central Park and World Trade Center markets shown \"Closed for the Season\"."
+      },
+      "Katz's Delicatessen": {
+        "url": "https://katzsdelicatessen.com/address",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Live menu and Manhattan delivery ordering (Pastrami Sandwich $28.95); holiday-hours notices; footer \"© 2026 Katz's Delicatessen\"."
+      },
+      "Crown Shy": {
+        "url": "https://www.crownshy.nyc/location/crown-shy/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Weekly hours published and an online reservation form (\"Find A Table\"); no dated content seen."
+      },
+      "L'Artusi": {
+        "url": "https://www.lartusi.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Reservations \"release on a two-week rolling basis, each day at 9 AM\" via Resy; menu file named \"L-Artusi_Wine_New_10.16.26\"."
+      },
+      "Via Carota": {
+        "url": "https://www.viacarota.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Menu images named \"VC MENU 10-08-2026\"; \"Walk-ins always welcome\"; footer \"Copyright Via Carota 2026\"."
+      },
+      "Russ & Daughters Cafe": {
+        "url": "https://www.russanddaughterscafe.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Current hours and policy: \"No reservations - just walk-in!\" and \"(Sorry, no takeout.)\"; menu PDFs coded 041326 and 093026."
+      },
+      "Clinton St. Baking Company": {
+        "url": "https://www.clintonstreetbaking.com/pages/contact",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Indoor dining, takeout and dinner hours published with a Reservations & Waitlist page; footer \"©2026 Clinton St. Baking Co.\"."
+      },
+      "Employees Only": {
+        "url": "https://www.employeesonlynyc.com/reservations",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Dinner reservations on Resy; \"all cocktail and appetizer requests are seated strictly on a walk-in basis\". Page is undated and includes older outdoor-dining text."
+      },
+      "Attaboy": {
+        "url": "https://www.attaboy.us/nyc",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Published hours and booking: \"Limited reservations are available on OpenTable\", otherwise first-come, first-served; no dated content."
+      },
+      "Bemelmans Bar": {
+        "url": "https://www.rosewoodhotels.com/en/the-carlyle-new-york/dining/bemelmans-bar",
+        "sourceType": "operator's own site (Rosewood, The Carlyle)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Current cover charges (tables USD 25 to 35, bar USD 20 to 25 depending on the artist) and music schedule: pianists from 5:30 pm, jazz trio from 9 pm; footer \"© 2026\"."
+      },
+      "Dominique Ansel Bakery (Spring Street)": {
+        "url": "https://www.dominiqueanselny.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "October 2026 menu PDF (\"DAB-Menu-OCT-2026\"); parent site offers Cronut pre-orders \"for Soho pick-ups starting October 1st\"."
+      },
+      "Levain Bakery (West 74th Street)": {
+        "url": "https://levainbakery.com/pages/west-74th-street",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Branch page shows today's hours and a seasonal notice \"New Fall Flavors Online Now\"; footer \"©Levain Bakery 2026\"."
+      },
+      "La Cabra (SoHo)": {
+        "url": "https://www.lacabra.com/pages/locations",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Branch hours published on the locations page; site footer copyright 2026."
+      },
+      "Stumptown (Greenwich Village)": {
+        "url": "https://www.stumptowncoffee.com/pages/locations",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Branch hours published with no closure notice; footer \"©2026 Stumptown Coffee Roasters\"."
+      },
+      "Devoción (Williamsburg)": {
+        "url": "https://www.devocion.com/pages/cafes",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Cafés page lists this branch as \"Coffee Shop & Training Lab\" with current hours; online coffee shop live. No dated content seen."
+      }
+    }
+  },
+  "Amsterdam, Netherlands": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-21",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several official sites could not be read by automated fetch: De Kas and the City of Amsterdam pages for Vondelpark and Albert Cuyp Market (HTTP 403), Restaurant Breda and Dignita (503 or connection refused), Lot Sixty One and Hortus Botanicus (certificate errors), the Van Gogh Museum (no readable content), and the GVB ferry page (403). Tales & Spirits' domain redirects elsewhere and Door 74's site is under construction. Some places were published only partially: NEMO and ARTIS hours were not readable, the Rembrandt House Museum's closing time was cut off, the Royal Palace's daily calendar did not load, and several cafés and bakeries (Cafe de Klepel, Little Collins, Fabel Friet, Hartog's Volkoren, Bocca Coffee, De Wasserette) showed hours but no 2026-dated content, so they are marked medium confidence. Gap candidates checked exceeded eight because many failed; the confirmed total is 22, below the 25-35 target.",
+    "sourceUrls": [
+      "docs/content-research/amsterdam-2026-10-21.md",
+      "docs/content-research/amsterdam-2026-10-21.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Canal Belt",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place (district)"
+      },
+      {
+        "name": "Jordaan",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place (neighbourhood)"
+      },
+      {
+        "name": "Jordaan or De Pijp",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Canal walks",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market snacks",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Canal house stay",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private boat cruise",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Fine tasting menu dinner",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Canal cruise at dusk",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Jordaan dinner",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Museum and cafe day",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Canal boat ride",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Museum morning",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee in De Pijp",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Noord ferry exploration",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Brown cafe night",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Hidden courtyard wandering",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Ferry to Noord",
+        "url": "https://www.gvb.nl/en/visit-amsterdam/ferry",
+        "checkedOn": "2026-10-21",
+        "reason": "operator page (GVB) returned HTTP 403; not fetched further. (A'DAM Lookout's site mentions the free F3 ferry, used only as that venue's own travel note.)"
+      },
+      {
+        "name": "De Kas",
+        "url": "https://www.dekas.nl/en/",
+        "checkedOn": "2026-10-21",
+        "reason": "official site returned HTTP 403 Forbidden"
+      },
+      {
+        "name": "Restaurant Breda",
+        "url": "https://bredagroup-amsterdam.com/breda/",
+        "checkedOn": "2026-10-21",
+        "reason": "official site returned HTTP 503 Service Unavailable (www.restaurant-breda.nl does not resolve; breda-amsterdam.com 404)"
+      },
+      {
+        "name": "Breda",
+        "url": "https://bredagroup-amsterdam.com/breda/",
+        "checkedOn": "2026-10-21",
+        "reason": "duplicate of Restaurant Breda; official site HTTP 503"
+      },
+      {
+        "name": "Dignita",
+        "url": "https://www.eatwelldogood.nl/",
+        "checkedOn": "2026-10-21",
+        "reason": "official sites unreachable: eatwelldogood.nl HTTP 503, dignita.nl connection refused"
+      },
+      {
+        "name": "Tales & Spirits",
+        "url": "https://www.talesandspirits.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "talesandspirits.com 301-redirects to an unrelated domain (jeremysaid.com); no official venue page readable"
+      },
+      {
+        "name": "Door 74",
+        "url": "https://www.door-74.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "official site shows only \"This site is currently under construction\"; no address or operating evidence"
+      },
+      {
+        "name": "Saint-Jean",
+        "checkedOn": "2026-10-21",
+        "reason": "no official website found (boulangerie-saintjean.nl does not resolve); only guides/maps list it"
+      },
+      {
+        "name": "Lot Sixty One",
+        "url": "https://www.lotsixtyonecoffee.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "official site TLS/certificate error (TLSV1_ALERT_INTERNAL_ERROR); not bypassed"
+      },
+      {
+        "name": "Friedhats",
+        "url": "https://www.friedhats.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "official site lists Fuku Cafe at Bos en Lommerweg 136 but no hours or dated content; operating status not evidenced"
+      },
+      {
+        "name": "Vondelpark",
+        "url": "https://www.amsterdam.nl/en/vondelpark/",
+        "checkedOn": "2026-10-21",
+        "reason": "City of Amsterdam page returned HTTP 403"
+      },
+      {
+        "name": "Van Gogh Museum",
+        "url": "https://www.vangoghmuseum.nl/en/visit",
+        "checkedOn": "2026-10-21",
+        "reason": "official pages returned no readable content (unrendered template placeholder only)"
+      },
+      {
+        "name": "Heineken Experience",
+        "url": "https://www.heinekenexperience.com/en/",
+        "checkedOn": "2026-10-21",
+        "reason": "official homepage shows no street address; contact page 404"
+      },
+      {
+        "name": "Hortus Botanicus",
+        "url": "https://www.hortusbotanicus.nl/",
+        "checkedOn": "2026-10-21",
+        "reason": "certificate hostname mismatch on hortusbotanicus.nl; not bypassed"
+      },
+      {
+        "name": "Albert Cuyp Market",
+        "url": "https://www.amsterdam.nl/en/markets/albert-cuyp-market/",
+        "checkedOn": "2026-10-21",
+        "reason": "City of Amsterdam page returned HTTP 403"
+      },
+      {
+        "name": "Begijnhof",
+        "url": "https://www.begijnhofamsterdam.nl/en/",
+        "checkedOn": "2026-10-21",
+        "reason": "candidate URL returned HTTP 404"
+      },
+      {
+        "name": "Amsterdam Museum",
+        "url": "https://www.amsterdammuseum.nl/en",
+        "checkedOn": "2026-10-21",
+        "reason": "main Kalverstraat location \"currectly closed\" for renovation; other locations listed without street addresses"
+      }
+    ],
+    "placeSources": {
+      "Rijksmuseum": {
+        "url": "https://www.rijksmuseum.nl/en/visit",
+        "sourceType": "operator's own site (national museum)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Visit page says \"Booking a start time is required for a visit to the Rijksmuseum\"; What's on lists 'Willem de Kooning at work' and 'Document Netherlands: New Energy' until 17 January, and 'Carel Visser in the Rijksmuseum Gardens' until 25 October as \"last chance\"."
+      },
+      "Anne Frank House": {
+        "url": "https://www.annefrank.org/en/museum/tickets/",
+        "sourceType": "operator's own site (Anne Frank House)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Ticket page: \"Tickets are not sold at the door, only online\", for a set time slot; new tickets on sale every Tuesday at 10am for a visit six weeks later. Lists 2026 exceptions, e.g. 7 November 2026 9:00-18:30."
+      },
+      "Stedelijk Museum": {
+        "url": "https://www.stedelijk.nl/en/visit",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Exhibitions page lists Yayoi Kusama (Sep 11, 2026 - Jan 17, 2027) and Adam Pendleton, 'Some Wild Kind of Language' (Oct 10, 2026 - Jan 17, 2027). Visit page asks visitors to buy tickets online in advance."
+      },
+      "Eye Filmmuseum": {
+        "url": "https://www.eyefilm.nl/en/visit",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Homepage lists the Ulrich Seidl exhibition (19 September 2026 - 31 January 2027) and the Yuzo Kawashima film programme (22 October - 11 November 2026). Visit page notes card-only payment."
+      },
+      "Oude Kerk": {
+        "url": "https://www.oudekerk.nl/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Lists 'Mire Lee: Vomit My Blessing' from 13 November 2026 to 14 March 2027 and the tower visit (24 April - 31 October) as \"Now on\"; notice \"Oude Kerk temporarily closed\" for 9-12 November."
+      },
+      "Royal Palace Amsterdam": {
+        "url": "https://www.paleisamsterdam.nl/en/visit/",
+        "sourceType": "official public operator (Royal Palace Amsterdam)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Banner \"OPEN: 1 October - 11 November\"; says the Palace is open more than 230 days in 2026; October 'Drawing Month'. Visitor information warns \"The Palace may be closed due to a royal event.\""
+      },
+      "Rembrandt House Museum": {
+        "url": "https://www.rembrandthuis.nl/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Lists an autumn-holiday etching workshop (11-25 October 2026) and 'The Poor Man's Rembrandt Project' tattoo studio (26 October - 7 November 2026)."
+      },
+      "NEMO Science Museum": {
+        "url": "https://www.nemosciencemuseum.nl/en/plan-your-visit/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Plan-your-visit page: \"Tickets for NEMO have a start time\" and an 'Open on Mondays' list including \"Monday 12, 19, 26 October 2026\" and \"Monday 2 November 2026\"; homepage lists Museumnacht on 7 November."
+      },
+      "ARTIS": {
+        "url": "https://www.artis.nl/en",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "News item dated 10 September 2026 on ARTIS-Micropia and the Rijksmuseum; \"the new ARTIS Aquarium is open again!\"; Late Afternoon Ticket on weekdays from 16:00 for €15."
+      },
+      "Het Scheepvaartmuseum": {
+        "url": "https://www.hetscheepvaartmuseum.com/",
+        "sourceType": "operator's own site (National Maritime Museum)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Homepage publishes current daily hours and online ticket links; footer dated 2026. No exhibition titles or dates were readable."
+      },
+      "A'DAM Lookout": {
+        "url": "https://www.adamlookout.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Online ticket sales from €16.50 with €2 off when booking online; Over the Edge swing and Skydeck; footer \"© 2026 A'DAM LOOKOUT\" and 2026 image uploads."
+      },
+      "Cafe de Klepel": {
+        "url": "https://www.cafedeklepel.nl/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Live reservation system: \"Je kunt bij ons tot twee maanden van tevoren reserveren\"; max 8 per table; no vegan alternative to the menu. No 2026-dated content seen."
+      },
+      "Bakers & Roasters (Kadijksplein)": {
+        "url": "https://www.bakersandroasters.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "\"We mainly operate as walk-in only\" with a virtual waitlist; limited reservations only at this branch; closure notice for King's Day (27/04/2026)."
+      },
+      "Bakers & Roasters (De Pijp)": {
+        "url": "https://www.bakersandroasters.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Walk-in with virtual waitlist; closure notice for King's Day (27/04/2026) covering both locations."
+      },
+      "Little Collins": {
+        "url": "https://www.littlecollins.nl/home/depijp",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Brunch page states \"Walk-in only\", \"Kitchen open until 15:30\" and holiday notice \"25 & 26 Dec & 1 Jan - closed\". No 2026-dated content seen."
+      },
+      "Foodhallen": {
+        "url": "https://foodhallen.nl/en/amsterdam/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "\"open van 12:00 tot 23:00, 364 dagen per jaar\"; closed 25 December, closes 20:00 on 24 and 31 December; footer \"© 2026 Foodhallen\"."
+      },
+      "Fabel Friet (Runstraat)": {
+        "url": "https://www.fabelfriet.nl/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Branch list publishes current hours for five Amsterdam branches, including Runstraat \"Maandag t/m Zondag: Open tussen 11:00 - 21:00\". No 2026-dated content seen."
+      },
+      "Super Lyan": {
+        "url": "https://www.superlyan.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "\"We don't take reservations, just walk in!\"; groups over 8 book via SevenRooms; footer \"©2026 Mr Lyan and Lore Group\"."
+      },
+      "Vlaamsch Broodhuys (Haarlemmerstraat)": {
+        "url": "https://www.vlaamschbroodhuys.nl/winkels/amsterdam",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Newsflash dated 21-10-2026 announces pumpkin cake, crunchy pumpkin muffin and stoofpeertaartje in all Baker's Cafés; Amsterdam store page lists eight branches open seven days."
+      },
+      "Hartog's Volkoren": {
+        "url": "https://www.volkorenbrood.nl/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Site publishes current weekly shop hours with Sunday \"Gesloten\". No 2026-dated content seen."
+      },
+      "Bocca Coffee (Kerkstraat)": {
+        "url": "https://bocca.nl/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Site lists the espresso bar with current weekly hours. No 2026-dated content seen."
+      },
+      "De Wasserette": {
+        "url": "https://www.dewasserette.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "\"opened daily from 7.30 until 17.00\"; \"Reservations are not necessary, you can sit whenever and wherever there is a seat available.\" No 2026-dated content seen."
+      }
+    }
+  },
   "London, United Kingdom": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-14",

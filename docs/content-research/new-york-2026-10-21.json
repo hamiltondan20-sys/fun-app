@@ -1,0 +1,571 @@
+{
+  "city": "New York, United States",
+  "checkedOn": "2026-10-21",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Central Park",
+      "kind": "park",
+      "url": "https://www.centralparknyc.org/visit",
+      "sourceType": "official park manager (Central Park Conservancy)",
+      "address": "Conservancy listed at \"717 Fifth Avenue\", \"New York, NY 10022\"; tours meet at \"Doris C. Freedman Plaza\"",
+      "operatingEvidence": "Homepage banner \"Match Your Gift During The Fall Membership Drive!\" (donation link 'fund-2026-09') and upcoming tours listed for Oct 23 and Oct 31.",
+      "hours": "\"Central Park opens at 6:00 am and closes at 1:00 am, 365 days a year.\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Central Park Zoo",
+      "kind": "park",
+      "url": "https://centralparkzoo.com/plan-your-visit",
+      "sourceType": "operator's own site (Wildlife Conservation Society)",
+      "address": "\"64th Street & 5th Avenue, New York, NY 10065\" (entrance)",
+      "operatingEvidence": "Published hours for \"April 2 — October 31, 2026\" and \"November 1, 2026 — March 2027\"; homepage daily schedule dated 2026-10-22 with penguin and sea lion feedings.",
+      "hours": "Apr 2–Oct 31, 2026: Mon-Fri 10:00 AM - 5:00 PM, weekends & federal holidays 10:00 AM - 5:30 PM; Nov 1, 2026–Mar 2027: daily 10:00 AM - 4:30 PM; last entry 1 hour before closing",
+      "confidence": "high"
+    },
+    {
+      "name": "The High Line",
+      "kind": "park",
+      "url": "https://www.thehighline.org/visit/",
+      "sourceType": "operator's own site (Friends of the High Line)",
+      "address": "Park-level access \"30th Street at Hudson Yards\" and \"31st Street and Dyer Avenue\" (Moynihan Connector)",
+      "operatingEvidence": "Park update banner: \"On October 19, the section of the park between 18th Street and 23rd Street will be temporarily closed\"; footer \"© 2000 - 2026 Friends of the High Line\".",
+      "hours": "\"April 1 – November 30: 7am to 10pm\"; \"December 1 – March 31: 7am to 8pm\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Staten Island Ferry",
+      "kind": "scenic",
+      "url": "https://www.siferry.com/",
+      "sourceType": "official public operator (City of New York)",
+      "address": "Whitehall Ferry Terminal, \"4 South Street, Manhattan\"; St. George Ferry Terminal, \"1 Bay Street, Staten Island\"",
+      "operatingEvidence": "Notice dated 03/27/26 \"Beer is Back at the Ferry\"; site states \"The Staten Island Ferry is a free service provided by the City of New York.\"",
+      "hours": "Runs 24 hours, every day; weekday rush hours every 15–20 minutes, off-peak every 30 minutes, weekends every 30 minutes",
+      "confidence": "high"
+    },
+    {
+      "name": "Roosevelt Island Tram",
+      "kind": "scenic",
+      "url": "https://www.rioc.ny.gov/community/transportation/tram",
+      "sourceType": "official public operator (Roosevelt Island Operating Corporation, New York State)",
+      "address": "Stations at \"Tramway Plaza on Roosevelt Island and East 60th Street and Second Avenue in Manhattan\"",
+      "operatingEvidence": "Current timetable published; RIOC homepage reports a 50th-anniversary celebration at Tramway Plaza on June 1 and a May 18 cabin-redesign initiative; the tram \"accepts standard MTA fares, including OMNY tap-to-pay\".",
+      "hours": "Sun-Thu 6:00 a.m. to 2:00 a.m.; Fri-Sat 6:00 a.m. to 3:30 a.m.; every 7.5 minutes at rush hour, otherwise every 15 minutes",
+      "confidence": "high"
+    },
+    {
+      "name": "9/11 Memorial & Museum",
+      "kind": "museum",
+      "url": "https://www.911memorial.org/visit",
+      "sourceType": "operator's own site (National September 11 Memorial & Museum)",
+      "address": "\"180 Greenwich Street\", \"New York, NY 10007\"",
+      "operatingEvidence": "Visit page with current hours and ticketing: the Museum \"requires advance ticket purchase\"; \"The Memorial is free and open to the public seven days a week\"; footer \"© 2026\".",
+      "hours": "Memorial \"Daily, 8 a.m.-8 p.m.\"; Museum \"Weds-Mon, 9 a.m.-7 p.m.\" plus select Tuesdays, last entry 5:30 p.m.",
+      "confidence": "high"
+    },
+    {
+      "name": "Empire State Building",
+      "kind": "landmark",
+      "url": "https://www.esbnyc.com/",
+      "sourceType": "operator's own site",
+      "address": "Ticket office \"12 W 34th Street (between Fifth and Sixth Avenues)\"",
+      "operatingEvidence": "Ticket booking live: 86th Floor \"from $46\", 102nd & 86th Floor \"from $81\"; all visits require a timed reservation; \"2026 Run-Up\" listed and footer \"© 2026\".",
+      "hours": "Observatory \"9 AM - 11 PM\", \"Doors close at 10 PM\"; varies seasonally",
+      "confidence": "high"
+    },
+    {
+      "name": "Whitney Museum of American Art",
+      "kind": "museum",
+      "url": "https://www.whitney.org/visit",
+      "sourceType": "operator's own site",
+      "address": "\"99 Gansevoort Street, New York, NY 10014\"",
+      "operatingEvidence": "Current exhibitions listed, including \"Roy Lichtenstein: Like New\" and \"Dyani White Hawk: Nourish\" (no dates shown); advance tickets bookable online.",
+      "hours": "Mon, Wed, Thu, Sat, Sun 10:30 am–6 pm; Fri 10:30 am–10 pm; Tuesday closed",
+      "confidence": "high"
+    },
+    {
+      "name": "The Frick Collection",
+      "kind": "museum",
+      "url": "https://www.frick.org/visit",
+      "sourceType": "operator's own site",
+      "address": "\"1 East 70th Street, New York, NY 10021\"",
+      "operatingEvidence": "Current gallery notices: \"The Cabinet Gallery and Anteroom are closed October 15–22\"; timed tickets bookable online ($30 adult). One notice on the page (Sunday, February 11) appears stale.",
+      "hours": "Mon, Wed–Sun 10:30 a.m. to 5:30 p.m.; Tuesday closed; Pay-What-You-Wish Wed 1:30–5:30 p.m.; First Fridays 5:30–9:00 p.m.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Chelsea Market",
+      "kind": "market",
+      "url": "https://www.chelseamarket.com/",
+      "sourceType": "operator's own site",
+      "address": "\"75 9th Ave New York, NY\"",
+      "operatingEvidence": "Dated events including \"Live Music - Sean the Cellist: October 21, 2026\" and \"Trick-or-Treating at Chelsea Market: October 31, 2026\".",
+      "hours": "\"our concourse is open! 7 am - 10 pm\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Smorgasburg (Williamsburg)",
+      "kind": "market",
+      "url": "https://www.smorgasburg.com/new-york",
+      "sourceType": "operator's own site",
+      "address": "\"Marsha P. Johnson State Park, 90 Kent Ave, Brooklyn\"",
+      "operatingEvidence": "Listed as an active 2026-season location on Saturdays; Central Park and World Trade Center markets shown \"Closed for the Season\".",
+      "hours": "Saturdays 11am to 6pm (no pets)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Katz's Delicatessen",
+      "kind": "meal",
+      "url": "https://katzsdelicatessen.com/address",
+      "sourceType": "operator's own site",
+      "address": "\"205 East Houston Street (corner of Ludlow St), New York City, 10002\"",
+      "operatingEvidence": "Live menu and Manhattan delivery ordering (Pastrami Sandwich $28.95); holiday-hours notices; footer \"© 2026 Katz's Delicatessen\".",
+      "hours": "Mon-Thu 8:00 AM - 11:00 PM; Friday 8:00 AM - Sunday 11:00 PM (\"Now open 24 hrs on weekends!\")",
+      "confidence": "high"
+    },
+    {
+      "name": "Crown Shy",
+      "kind": "meal",
+      "url": "https://www.crownshy.nyc/location/crown-shy/",
+      "sourceType": "operator's own site",
+      "address": "\"70 Pine St, New York, NY 10005\"",
+      "operatingEvidence": "Weekly hours published and an online reservation form (\"Find A Table\"); no dated content seen.",
+      "hours": "Mon–Wed 11:30am-2pm, 5 - 9:30pm; Thu–Fri 11:30am-2pm, 5 - 10pm; Sat 5 - 10pm; Sun 5 - 9:30pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "L'Artusi",
+      "kind": "meal",
+      "url": "https://www.lartusi.com/",
+      "sourceType": "operator's own site",
+      "address": "\"228 West 10th Street, New York, NY 10014\"",
+      "operatingEvidence": "Reservations \"release on a two-week rolling basis, each day at 9 AM\" via Resy; menu file named \"L-Artusi_Wine_New_10.16.26\".",
+      "hours": "Lunch Mon–Fri 12:00–2:30 PM; dinner Sun–Thu 5:00–11 PM, Fri–Sat 5:00 PM–midnight; weekend brunch 11:00 AM–2:30 PM",
+      "confidence": "high"
+    },
+    {
+      "name": "Via Carota",
+      "kind": "meal",
+      "url": "https://www.viacarota.com/",
+      "sourceType": "operator's own site",
+      "address": "\"51 Grove Street\", New York, NY 10014",
+      "operatingEvidence": "Menu images named \"VC MENU 10-08-2026\"; \"Walk-ins always welcome\"; footer \"Copyright Via Carota 2026\".",
+      "hours": "Mon–Thu 11:00am–11:00pm; Fri–Sun 10:00am–11:00pm (footer lists Friday from 11:00am)",
+      "confidence": "high"
+    },
+    {
+      "name": "Russ & Daughters Cafe",
+      "kind": "meal",
+      "url": "https://www.russanddaughterscafe.com/",
+      "sourceType": "operator's own site",
+      "address": "\"127 Orchard Street, New York, New York 10002\"",
+      "operatingEvidence": "Current hours and policy: \"No reservations - just walk-in!\" and \"(Sorry, no takeout.)\"; menu PDFs coded 041326 and 093026.",
+      "hours": "Mon–Thu 8:30 AM to last seating 2:30 PM; Fri–Sun 8:30 AM to last seating 3:30 PM",
+      "confidence": "high"
+    },
+    {
+      "name": "Clinton St. Baking Company",
+      "kind": "meal",
+      "url": "https://www.clintonstreetbaking.com/pages/contact",
+      "sourceType": "operator's own site",
+      "address": "\"4 Clinton Street (btw. East Houston & Stanton), New York, NY 10002\"",
+      "operatingEvidence": "Indoor dining, takeout and dinner hours published with a Reservations & Waitlist page; footer \"©2026 Clinton St. Baking Co.\".",
+      "hours": "Brunch Mon–Fri 8:30am–3:30pm, Sat–Sun 8:30am–4pm; dinner Wed–Sat 5:30pm–10pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Employees Only",
+      "kind": "bar",
+      "url": "https://www.employeesonlynyc.com/reservations",
+      "sourceType": "operator's own site",
+      "address": "\"510 Hudson Street, NYC 10014 (between Christopher & West 10th)\"",
+      "operatingEvidence": "Dinner reservations on Resy; \"all cocktail and appetizer requests are seated strictly on a walk-in basis\". Page is undated and includes older outdoor-dining text.",
+      "hours": "Indoor dining and bar 6PM to 4AM, seven days; kitchen until 3AM (page may be out of date)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Attaboy",
+      "kind": "bar",
+      "url": "https://www.attaboy.us/nyc",
+      "sourceType": "operator's own site",
+      "address": "\"134 Eldridge St., New York, NY 10002\"",
+      "operatingEvidence": "Published hours and booking: \"Limited reservations are available on OpenTable\", otherwise first-come, first-served; no dated content.",
+      "hours": "\"Open 7 days a week\", 5 PM - 3 AM",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bemelmans Bar",
+      "kind": "bar",
+      "url": "https://www.rosewoodhotels.com/en/the-carlyle-new-york/dining/bemelmans-bar",
+      "sourceType": "operator's own site (Rosewood, The Carlyle)",
+      "address": "The Carlyle, \"35 East 76th St., New York, NY 10021\"",
+      "operatingEvidence": "Current cover charges (tables USD 25 to 35, bar USD 20 to 25 depending on the artist) and music schedule: pianists from 5:30 pm, jazz trio from 9 pm; footer \"© 2026\".",
+      "hours": "Sun–Mon 12 pm to 12 am; Tue–Thu 12 pm to 12:30 am; Fri–Sat 12 pm to 1 am",
+      "confidence": "high"
+    },
+    {
+      "name": "Dominique Ansel Bakery (Spring Street)",
+      "kind": "bakery",
+      "url": "https://www.dominiqueanselny.com/",
+      "sourceType": "operator's own site",
+      "address": "\"189 Spring St, NY, NY 10012\"",
+      "operatingEvidence": "October 2026 menu PDF (\"DAB-Menu-OCT-2026\"); parent site offers Cronut pre-orders \"for Soho pick-ups starting October 1st\".",
+      "hours": "Header: Mon-Thurs 8AM-7PM, Fri-Sat 8AM-8PM, Sun 8AM-7PM (visit section says \"OPEN DAILY 8am – 7pm\")",
+      "confidence": "high"
+    },
+    {
+      "name": "Levain Bakery (West 74th Street)",
+      "kind": "bakery",
+      "url": "https://levainbakery.com/pages/west-74th-street",
+      "sourceType": "operator's own site",
+      "address": "\"167 West 74th St, NYC 10023\"",
+      "operatingEvidence": "Branch page shows today's hours and a seasonal notice \"New Fall Flavors Online Now\"; footer \"©Levain Bakery 2026\".",
+      "hours": "Daily 8:00AM - 8:00PM",
+      "confidence": "high"
+    },
+    {
+      "name": "La Cabra (SoHo)",
+      "kind": "cafe",
+      "url": "https://www.lacabra.com/pages/locations",
+      "sourceType": "operator's own site",
+      "address": "\"284 Lafayette St, 10012 New York\"",
+      "operatingEvidence": "Branch hours published on the locations page; site footer copyright 2026.",
+      "hours": "Mon–Fri 7AM–8PM; Sat–Sun 8AM–8PM",
+      "confidence": "medium"
+    },
+    {
+      "name": "Stumptown (Greenwich Village)",
+      "kind": "cafe",
+      "url": "https://www.stumptowncoffee.com/pages/locations",
+      "sourceType": "operator's own site",
+      "address": "\"30 W 8TH STREET, NEW YORK, NY 10011\"",
+      "operatingEvidence": "Branch hours published with no closure notice; footer \"©2026 Stumptown Coffee Roasters\".",
+      "hours": "Weekdays 6:30 a.m. to 7 p.m.; weekends 7 a.m. to 7 p.m.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Devoción (Williamsburg)",
+      "kind": "cafe",
+      "url": "https://www.devocion.com/pages/cafes",
+      "sourceType": "operator's own site",
+      "address": "\"148 Grand St, Brooklyn, NY 11249\"",
+      "operatingEvidence": "Cafés page lists this branch as \"Coffee Shop & Training Lab\" with current hours; online coffee shop live. No dated content seen.",
+      "hours": "Mon–Fri 7am – 6pm; Sat–Sun 7:30am – 6pm",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Statue of Liberty views",
+      "reason": "Largely generic (views); the NPS pages read gave only a mailing address (\"1 Ellis Island, Jersey City, NJ\") and no physical-location or current hours text, deferring to the ferry concessioner.",
+      "url": "https://www.nps.gov/stli/planyourvisit/basicinfo.htm"
+    },
+    {
+      "name": "Top of the Rock",
+      "reason": "Official site returned HTTP 403 Forbidden to automated reading; not bypassed.",
+      "url": "https://www.rockefellercenter.com/attractions/top-of-the-rock-observation-deck/"
+    },
+    {
+      "name": "American Museum of Natural History",
+      "reason": "Official site returned HTTP 403 Forbidden (visit page and homepage); not bypassed.",
+      "url": "https://www.amnh.org/plan-your-visit"
+    },
+    {
+      "name": "Brooklyn Bridge",
+      "reason": "NYC DOT page gives no exact access point or address and no 2026-dated content (only \"The bridge promenade will be open at all times\").",
+      "url": "https://www.nyc.gov/html/dot/html/infrastructure/brooklyn-bridge.shtml"
+    },
+    {
+      "name": "Times Square once",
+      "reason": "Only source found is the Times Square Alliance, a district promotion organization rather than an operator or public body; treated like a tourism board.",
+      "url": "https://www.timessquarenyc.org/"
+    },
+    {
+      "name": "Bubby's",
+      "reason": "Official site fetch failed (connection refused); not evidence of closure.",
+      "url": "https://bubbys.com/"
+    },
+    {
+      "name": "Los Tacos No. 1",
+      "reason": "Homepage and locations page returned no readable addresses or hours.",
+      "url": "https://lostacos1.com/locations/"
+    },
+    {
+      "name": "Joe's Pizza (Carmine Street)",
+      "reason": "Official site gives the address (7 Carmine Street) but no hours, menu notice or dated content as operating evidence.",
+      "url": "https://www.joespizzanyc.com/locations"
+    },
+    {
+      "name": "Mah-Ze-Dahr",
+      "reason": "Official site returned HTTP 404; nothing readable. Not evidence of closure.",
+      "url": "https://www.mahzedahrbakery.com/"
+    },
+    {
+      "name": "The Metropolitan Museum of Art",
+      "reason": "Gap candidate; official site returned HTTP 429 Too Many Requests on repeated attempts; not bypassed.",
+      "url": "https://www.metmuseum.org/plan-your-visit"
+    },
+    {
+      "name": "Museum of Modern Art (MoMA)",
+      "reason": "Gap candidate; official site returned HTTP 403 Forbidden; not bypassed.",
+      "url": "https://www.moma.org/visit"
+    },
+    {
+      "name": "Solomon R. Guggenheim Museum",
+      "reason": "Gap candidate; page returned only a cookie notice, nothing readable.",
+      "url": "https://www.guggenheim.org/plan-your-visit"
+    },
+    {
+      "name": "Grand Central Terminal",
+      "reason": "Gap candidate; official site returned HTTP 403 Forbidden; not bypassed.",
+      "url": "https://www.grandcentralterminal.com/"
+    },
+    {
+      "name": "New York Public Library (Stephen A. Schwarzman Building)",
+      "reason": "Gap candidate; page returned no readable content.",
+      "url": "https://www.nypl.org/locations/schwarzman"
+    },
+    {
+      "name": "Brooklyn Museum",
+      "reason": "Gap candidate; official site returned HTTP 429 Too Many Requests; not bypassed.",
+      "url": "https://www.brooklynmuseum.org/visit"
+    },
+    {
+      "name": "Bryant Park",
+      "reason": "Gap candidate; homepage shows dated 2026 events but no address or hours, and the hours page returned 404.",
+      "url": "https://bryantpark.org/"
+    },
+    {
+      "name": "Brooklyn Bridge Park",
+      "reason": "Gap candidate; hours and events shown but no street address, only pier and landing names.",
+      "url": "https://www.brooklynbridgepark.org/"
+    },
+    {
+      "name": "Dollar-slice and park time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Michelin tasting menu",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private skyline cruise",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Fifth Avenue hotel stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "West Village dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Jazz club night",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "FAO Schwarz area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Museum morning",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "SoHo shopping",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Greenwich Village cafe day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Observation deck",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "DUMBO sunrise",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Central Park",
+        "The High Line",
+        "Empire State Building",
+        "9/11 Memorial & Museum"
+      ],
+      "bestFirstTimers": [
+        "Central Park",
+        "Empire State Building",
+        "Staten Island Ferry",
+        "9/11 Memorial & Museum"
+      ],
+      "bestRestaurants": [
+        "Katz's Delicatessen",
+        "Crown Shy",
+        "L'Artusi",
+        "Via Carota"
+      ],
+      "bestBudget": [
+        "Staten Island Ferry",
+        "The High Line",
+        "Smorgasburg (Williamsburg)",
+        "Roosevelt Island Tram"
+      ],
+      "bestLuxury": [
+        "Crown Shy",
+        "Bemelmans Bar",
+        "The Frick Collection"
+      ],
+      "bestCouples": [
+        "L'Artusi",
+        "Bemelmans Bar",
+        "Attaboy",
+        "The High Line"
+      ],
+      "bestKids": [
+        "Central Park Zoo",
+        "Central Park",
+        "Staten Island Ferry",
+        "Roosevelt Island Tram"
+      ],
+      "bestSolo": [
+        "Whitney Museum of American Art",
+        "The Frick Collection",
+        "Chelsea Market",
+        "Stumptown (Greenwich Village)"
+      ],
+      "bestUnique": [
+        "Roosevelt Island Tram",
+        "Smorgasburg (Williamsburg)",
+        "Chelsea Market"
+      ],
+      "bestBreakfast": [
+        "Russ & Daughters Cafe",
+        "Clinton St. Baking Company",
+        "Katz's Delicatessen"
+      ],
+      "bestLunch": [
+        "Katz's Delicatessen",
+        "Russ & Daughters Cafe",
+        "Chelsea Market",
+        "Crown Shy"
+      ],
+      "bestDinner": [
+        "Crown Shy",
+        "L'Artusi",
+        "Via Carota",
+        "Employees Only"
+      ],
+      "bestCocktails": [
+        "Employees Only",
+        "Attaboy",
+        "Bemelmans Bar"
+      ],
+      "bestBakeries": [
+        "Levain Bakery (West 74th Street)",
+        "Dominique Ansel Bakery (Spring Street)"
+      ],
+      "bestCoffee": [
+        "La Cabra (SoHo)",
+        "Stumptown (Greenwich Village)",
+        "Devoción (Williamsburg)"
+      ]
+    },
+    "queries": {
+      "Central Park": "Central Park Doris C. Freedman Plaza Fifth Avenue New York",
+      "Central Park Zoo": "Central Park Zoo 64th Street & 5th Avenue New York",
+      "The High Line": "The High Line 30th Street Hudson Yards New York",
+      "Staten Island Ferry": "Staten Island Ferry Whitehall Terminal 4 South Street New York",
+      "Roosevelt Island Tram": "Roosevelt Island Tram East 60th Street and Second Avenue New York",
+      "9/11 Memorial & Museum": "9/11 Memorial & Museum 180 Greenwich Street New York",
+      "Empire State Building": "Empire State Building 12 W 34th Street New York",
+      "Whitney Museum of American Art": "Whitney Museum of American Art 99 Gansevoort Street New York",
+      "The Frick Collection": "The Frick Collection 1 East 70th Street New York",
+      "Chelsea Market": "Chelsea Market 75 9th Ave New York",
+      "Smorgasburg (Williamsburg)": "Smorgasburg 90 Kent Ave Brooklyn New York",
+      "Katz's Delicatessen": "Katz's Delicatessen 205 East Houston Street New York",
+      "Crown Shy": "Crown Shy 70 Pine St New York",
+      "L'Artusi": "L'Artusi 228 West 10th Street New York",
+      "Via Carota": "Via Carota 51 Grove Street New York",
+      "Russ & Daughters Cafe": "Russ & Daughters Cafe 127 Orchard Street New York",
+      "Clinton St. Baking Company": "Clinton St. Baking Company 4 Clinton Street New York",
+      "Employees Only": "Employees Only 510 Hudson Street New York",
+      "Attaboy": "Attaboy 134 Eldridge St New York",
+      "Bemelmans Bar": "Bemelmans Bar 35 East 76th St New York",
+      "Dominique Ansel Bakery (Spring Street)": "Dominique Ansel Bakery 189 Spring St New York",
+      "Levain Bakery (West 74th Street)": "Levain Bakery 167 West 74th St New York",
+      "La Cabra (SoHo)": "La Cabra 284 Lafayette St New York",
+      "Stumptown (Greenwich Village)": "Stumptown Coffee 30 W 8th Street New York",
+      "Devoción (Williamsburg)": "Devoción 148 Grand St Brooklyn New York"
+    },
+    "summary": "Parks, a free ferry, the tram, observation decks and museums, with breakfast spots, dinners, cocktail bars, bakeries and coffee checked against their own websites.",
+    "highlights": [
+      "Central Park",
+      "Empire State Building",
+      "9/11 Memorial & Museum",
+      "The High Line"
+    ],
+    "tip": "Plan museum days around Tuesdays, when the Whitney and the Frick are both closed, and book the Empire State Building ahead because every visit needs a timed reservation.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Tuesdays",
+        "copy": "The Whitney Museum of American Art and The Frick Collection are both closed on Tuesdays. The 9/11 Museum opens Wednesday to Monday with select Tuesdays, while the Memorial is open daily 8 a.m.-8 p.m."
+      },
+      {
+        "label": "Timed tickets",
+        "value": "Book ahead",
+        "copy": "All Empire State Building visits require a timed reservation, with 86th-floor tickets from $46, and the 9/11 Museum requires advance ticket purchase. The Frick recommends timed tickets, and last tickets are sold one hour before closing."
+      },
+      {
+        "label": "Walk-ins and tables",
+        "value": "Know the policy",
+        "copy": "Russ & Daughters Cafe takes no reservations, and Via Carota says walk-ins are always welcome. L'Artusi releases Resy tables two weeks ahead at 9 AM, and at Employees Only cocktails are walk-in only while the dining room needs a dinner reservation."
+      },
+      {
+        "label": "Rules",
+        "value": "Age, ID, dress",
+        "copy": "Attaboy is 21+, needs a valid physical government-issued ID and takes parties of six and under. The Frick admits only children aged 10 and older, and Bemelmans Bar discourages athletic and casual leisure wear."
+      }
+    ],
+    "dek": "Spend your mornings at the parks and museums, book timed tickets and dinner tables ahead, and leave the walk-in cafés and bars for when you have time to wait.",
+    "intro": [
+      "Start outdoors. According to the Central Park Conservancy, Central Park opens at 6:00 am and closes at 1:00 am, 365 days a year. The Central Park Zoo entrance is at 64th Street and 5th Avenue, and the zoo is open 10:00 AM to 5:00 PM on weekdays through October 31, 2026, then 10:00 AM to 4:30 PM daily from November 1. The High Line is open 7am to 10pm until November 30, then 7am to 8pm. Its site posted a temporary closure of the stretch between 18th and 23rd Streets on October 19.",
+      "For harbor and skyline views, the Staten Island Ferry is free and runs around the clock from Whitehall Terminal at 4 South Street. The City warns you about scammers selling fake tickets. The 9/11 Memorial at 180 Greenwich Street is free and open daily 8 a.m.-8 p.m. The Museum requires advance tickets and is open Wednesday to Monday. Every Empire State Building visit needs a timed reservation, with 86th-floor tickets from $46. The Roosevelt Island Tram leaves from East 60th Street and Second Avenue and takes standard MTA fares, including OMNY.",
+      "Tuesday is the closing day at both the Whitney Museum of American Art on Gansevoort Street and The Frick Collection at 1 East 70th Street. The Whitney stays open until 10 pm on Fridays, with Free Friday Nights from 5 to 10 pm, and its current shows include Roy Lichtenstein: Like New. The Frick recommends timed tickets, admits only children aged 10 and older, and has Pay-What-You-Wish admission on Wednesdays from 1:30 to 5:30 p.m. At Chelsea Market, 75 9th Ave, the concourse is open 7 am to 10 pm, and trick-or-treating is scheduled for October 31, 2026.",
+      "For food, Russ & Daughters Cafe at 127 Orchard Street is walk-in only with no takeout. Via Carota on Grove Street welcomes walk-ins, and L'Artusi releases Resy tables two weeks ahead at 9 AM, keeping bar and counter seats for walk-ins. Katz's Delicatessen at 205 East Houston Street opens at 8:00 AM. For drinks, Attaboy on Eldridge Street is 21+, takes parties of six and under, and asks for a physical ID. Bemelmans Bar at The Carlyle has pianists from 5:30 pm and a jazz trio from 9 pm, with a cover charge that depends on the artist."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair a free Staten Island Ferry ride with the 9/11 Memorial and a timed Empire State Building slot, then walk Central Park, which is open 6:00 am to 1:00 am."
+      ],
+      [
+        "A slower morning",
+        "Take a walk-in table at Russ & Daughters Cafe from 8:30 AM, then pick up coffee at Stumptown on West 8th Street before the High Line opens its gates at 7am."
+      ],
+      [
+        "Before booking",
+        "Check that your museum day isn't a Tuesday, book L'Artusi on Resy when tables release at 9 AM two weeks out, and bring physical ID if you plan to go to Attaboy."
+      ]
+    ]
+  },
+  "limitations": "This is a website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several official sites could not be read by automated fetch and were left out rather than bypassed: Top of the Rock, the American Museum of Natural History, MoMA and Grand Central Terminal (HTTP 403), The Met and the Brooklyn Museum (HTTP 429), the Guggenheim (cookie wall only), the NYPL main branch (empty page), Bubby's (connection refused), Mah-Ze-Dahr (HTTP 404) and NYC Parks' Central Park page (HTTP 403; the Conservancy site was used instead). Some places were only partly published. Crown Shy, Attaboy and Devoción showed hours but no dated content. The Whitney listed exhibitions without dates. The Frick page carried one apparently stale notice. Employees Only's reservations page may be out of date. Katz's listed weekly hours that conflict with its \"open 24 hrs on weekends\" banner. The High Line's closure notice and Central Park's event dates had no year shown.",
+  "injectionLikeText": []
+}

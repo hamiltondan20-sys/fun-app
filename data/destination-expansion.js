@@ -967,4 +967,404 @@ window.HB_DATA = window.HB_DATA || {};
     ],
     trust: "All 30 distinct recommendations in this guide were checked against their operators' own websites on October 14, 2026. Sites that refused automated reading were read in a browser. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
   };
+  // Amsterdam, Netherlands: source review of 2026-10-21 (docs/content-research/amsterdam-2026-10-21.md).
+  {
+    const cityKey = "Amsterdam, Netherlands";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Rijksmuseum","Royal Palace Amsterdam","Oude Kerk","A'DAM Lookout"],
+      bestFirstTimers: ["Rijksmuseum","Anne Frank House","Royal Palace Amsterdam","Stedelijk Museum"],
+      bestRestaurants: ["Cafe de Klepel","Foodhallen","Bakers & Roasters (Kadijksplein)"],
+      bestBudget: ["Fabel Friet (Runstraat)","Foodhallen","Vlaamsch Broodhuys (Haarlemmerstraat)","Bocca Coffee (Kerkstraat)"],
+      bestLuxury: ["A'DAM Lookout","Super Lyan","Cafe de Klepel"],
+      bestCouples: ["Cafe de Klepel","Super Lyan","A'DAM Lookout","Eye Filmmuseum"],
+      bestKids: ["NEMO Science Museum","ARTIS","Het Scheepvaartmuseum"],
+      bestSolo: ["Eye Filmmuseum","Stedelijk Museum","Rembrandt House Museum","Bocca Coffee (Kerkstraat)"],
+      bestUnique: ["Oude Kerk","Eye Filmmuseum","A'DAM Lookout","Hartog's Volkoren"],
+      bestBreakfast: ["Bakers & Roasters (De Pijp)","Little Collins","De Wasserette","Bakers & Roasters (Kadijksplein)"],
+      bestLunch: ["Foodhallen","Fabel Friet (Runstraat)","De Wasserette","Little Collins"],
+      bestDinner: ["Cafe de Klepel","Foodhallen"],
+      bestCocktails: ["Super Lyan"],
+      bestBakeries: ["Vlaamsch Broodhuys (Haarlemmerstraat)","Hartog's Volkoren"],
+      bestCoffee: ["Bocca Coffee (Kerkstraat)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Rijksmuseum": "Rijksmuseum Museumstraat 1 Amsterdam",
+      "Royal Palace Amsterdam": "Royal Palace Amsterdam Dam Square Amsterdam",
+      "Oude Kerk": "Oude Kerk Oudekerksplein 23 Amsterdam",
+      "A'DAM Lookout": "A'DAM Lookout IJpromenade 4 Amsterdam",
+      "Anne Frank House": "Anne Frank House Westermarkt 20 Amsterdam",
+      "Stedelijk Museum": "Stedelijk Museum Museumplein 10 Amsterdam",
+      "Cafe de Klepel": "Cafe de Klepel Prinsenstraat 22 Amsterdam",
+      "Foodhallen": "Foodhallen Hannie Dankbaarpassage 16 Amsterdam",
+      "Bakers & Roasters (Kadijksplein)": "Bakers & Roasters Kadijksplein 16 Amsterdam",
+      "Fabel Friet (Runstraat)": "Fabel Friet Runstraat 1 Amsterdam",
+      "Vlaamsch Broodhuys (Haarlemmerstraat)": "Vlaamsch Broodhuys Haarlemmerstraat 108 Amsterdam",
+      "Bocca Coffee (Kerkstraat)": "Bocca Coffee Kerkstraat 96 Amsterdam",
+      "Super Lyan": "Super Lyan Nieuwezijds Voorburgwal 3 Amsterdam",
+      "Eye Filmmuseum": "Eye Filmmuseum IJpromenade 1 Amsterdam",
+      "NEMO Science Museum": "NEMO Science Museum Oosterdok 2 Amsterdam",
+      "ARTIS": "ARTIS Plantage Kerklaan 38 Amsterdam",
+      "Het Scheepvaartmuseum": "Het Scheepvaartmuseum Kattenburgerplein 1 Amsterdam",
+      "Rembrandt House Museum": "Rembrandt House Museum Jodenbreestraat 4 Amsterdam",
+      "Hartog's Volkoren": "Hartog's Volkoren Wibautstraat 77 Amsterdam",
+      "Bakers & Roasters (De Pijp)": "Bakers & Roasters Eerste Jacob van Campenstraat 54 Amsterdam",
+      "Little Collins": "Little Collins Eerste Sweelinckstraat 19f Amsterdam",
+      "De Wasserette": "De Wasserette Eerste van der Helststraat 27 Amsterdam"
+    };
+    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (cityGuide) {
+      cityGuide.summary = "Museums, a royal palace, a medieval church and a riverside lookout, with breakfast cafés, bakeries, a food hall, dinners and a cocktail bar checked against their own websites.";
+      cityGuide.highlights = ["Rijksmuseum","Anne Frank House","Royal Palace Amsterdam","Stedelijk Museum"];
+      cityGuide.tip = "Book the Anne Frank House early: tickets are sold only online for a set time slot, released every Tuesday at 10am for visits six weeks later, and none are sold at the door.";
+    }
+    data.destinationFacts[cityKey] = "Book the Anne Frank House early: tickets are sold only online for a set time slot, released every Tuesday at 10am for visits six weeks later, and none are sold at the door.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Museums, a royal palace, a medieval church and a riverside lookout, with breakfast cafés, bakeries, a food hall, dinners and a cocktail bar checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Check Mondays and holidays",
+        "copy": "Eye Filmmuseum's exhibition is closed on Mondays outside school holidays, and NEMO Science Museum opens only on listed Mondays such as 26 October and 2 November 2026. Hartog's Volkoren is closed on Sundays, and the Oude Kerk is temporarily closed 9-12 November."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Timed slots are common",
+        "copy": "The Rijksmuseum requires a booked start time, including for Museumkaart holders, and NEMO tickets also have a start time. Anne Frank House tickets are online only and cannot be exchanged or refunded."
+      },
+      {
+        "label": "Walk-in or queue",
+        "value": "Many cafés don't book",
+        "copy": "Little Collins is walk-in only, De Wasserette says reservations are not necessary, and Bakers & Roasters works mainly walk-in with a virtual waitlist (limited reservations at Kadijksplein only). Super Lyan takes no reservations except for groups of more than 8."
+      },
+      {
+        "label": "Bags and payment",
+        "value": "Travel light",
+        "copy": "The Stedelijk Museum does not allow backpacks or weekend cases in the galleries, and the Royal Palace allows only small bags up to 30x30x15 cm. Eye Filmmuseum and the Anne Frank House take card payments only."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Book your timed museum slots first, then build mornings around the walk-in brunch cafés and evenings around a reserved dinner.",
+      intro: [
+        "Amsterdam's headline museums run on timed entry, so plan those first. The Rijksmuseum on Museumstraat is open daily from 9 to 17h, including public holidays, and says booking a start time is required. Its current shows include Willem de Kooning at work, on until 17 January, while Carel Visser's sculptures in the museum gardens end on 25 October. The Anne Frank House at Westermarkt 20 sells tickets only online for a fixed slot, releasing them every Tuesday at 10am for visits six weeks ahead, so you should book as early as you can.",
+        "On Museumplein, the Stedelijk Museum is open daily from 10am to 6pm, with last entry at 5.45pm. Yayoi Kusama runs from 11 September 2026 to 17 January 2027, alongside Adam Pendleton's Some Wild Kind of Language from 10 October. Leave your backpack behind, as backpacks are not allowed in the galleries. The Royal Palace on Dam Square is open to visitors from 1 October to 11 November, from 10am on calendar days, though it may close for royal events. Nearby, the Oude Kerk opens Mire Lee: Vomit My Blessing on 13 November.",
+        "Across the IJ, Eye Filmmuseum shows an Ulrich Seidl exhibition from 19 September 2026 to 31 January 2027; its exhibition is closed on Mondays outside school holidays. Next door, A'DAM Lookout is open daily from 10:00 to 22:00, with last admission at 21:00, and knocks €2 off tickets when you book online. If you travel with children, NEMO Science Museum at Oosterdok 2 sells tickets with a start time and suggests weekdays after 14:00 as quieter. ARTIS has reopened its restored aquarium and offers a €15 weekday late-afternoon ticket from 16:00.",
+        "For food, many places are walk-in. Little Collins in De Pijp serves brunch daily from 9 to 16, walk-in only, and De Wasserette opens daily from 7:30 to 17:00 without reservations. Bakers & Roasters runs two branches with a virtual waitlist. For dinner, Cafe de Klepel on Prinsenstraat takes bookings up to two months ahead, for tables of up to 8. Foodhallen is open daily from 12:00 to 23:00, and Super Lyan pours cocktails from 17:00 Wednesday to Sunday with no reservations for small groups."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Book a Rijksmuseum start time and an online Anne Frank House slot, then add the Royal Palace on Dam Square while it is open until 11 November."
+        ],
+        [
+          "A slower morning",
+          "Walk in for brunch at Little Collins or De Wasserette, then pick up bread at Hartog's Volkoren on Wibautstraat, which is closed on Sundays."
+        ],
+        [
+          "Before booking",
+          "Check closing days: Eye's exhibition shuts on Mondays outside school holidays, NEMO opens only on listed Mondays, and the Oude Kerk closes 9-12 November."
+        ]
+      ],
+      trust: "All 22 distinct recommendations in this guide were checked against their operators' own websites on October 21, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
+  // New York, United States: source review of 2026-10-21 (docs/content-research/new-york-2026-10-21.md).
+  {
+    const cityKey = "New York, United States";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Central Park","The High Line","Empire State Building","9/11 Memorial & Museum"],
+      bestFirstTimers: ["Central Park","Empire State Building","Staten Island Ferry","9/11 Memorial & Museum"],
+      bestRestaurants: ["Katz's Delicatessen","Crown Shy","L'Artusi","Via Carota"],
+      bestBudget: ["Staten Island Ferry","The High Line","Smorgasburg (Williamsburg)","Roosevelt Island Tram"],
+      bestLuxury: ["Crown Shy","Bemelmans Bar","The Frick Collection"],
+      bestCouples: ["L'Artusi","Bemelmans Bar","Attaboy","The High Line"],
+      bestKids: ["Central Park Zoo","Central Park","Staten Island Ferry","Roosevelt Island Tram"],
+      bestSolo: ["Whitney Museum of American Art","The Frick Collection","Chelsea Market","Stumptown (Greenwich Village)"],
+      bestUnique: ["Roosevelt Island Tram","Smorgasburg (Williamsburg)","Chelsea Market"],
+      bestBreakfast: ["Russ & Daughters Cafe","Clinton St. Baking Company","Katz's Delicatessen"],
+      bestLunch: ["Katz's Delicatessen","Russ & Daughters Cafe","Chelsea Market","Crown Shy"],
+      bestDinner: ["Crown Shy","L'Artusi","Via Carota","Employees Only"],
+      bestCocktails: ["Employees Only","Attaboy","Bemelmans Bar"],
+      bestBakeries: ["Levain Bakery (West 74th Street)","Dominique Ansel Bakery (Spring Street)"],
+      bestCoffee: ["La Cabra (SoHo)","Stumptown (Greenwich Village)","Devoción (Williamsburg)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Central Park": "Central Park Doris C. Freedman Plaza Fifth Avenue New York",
+      "The High Line": "The High Line 30th Street Hudson Yards New York",
+      "Empire State Building": "Empire State Building 12 W 34th Street New York",
+      "9/11 Memorial & Museum": "9/11 Memorial & Museum 180 Greenwich Street New York",
+      "Staten Island Ferry": "Staten Island Ferry Whitehall Terminal 4 South Street New York",
+      "Katz's Delicatessen": "Katz's Delicatessen 205 East Houston Street New York",
+      "Crown Shy": "Crown Shy 70 Pine St New York",
+      "L'Artusi": "L'Artusi 228 West 10th Street New York",
+      "Via Carota": "Via Carota 51 Grove Street New York",
+      "Smorgasburg (Williamsburg)": "Smorgasburg 90 Kent Ave Brooklyn New York",
+      "Roosevelt Island Tram": "Roosevelt Island Tram East 60th Street and Second Avenue New York",
+      "Bemelmans Bar": "Bemelmans Bar 35 East 76th St New York",
+      "The Frick Collection": "The Frick Collection 1 East 70th Street New York",
+      "Attaboy": "Attaboy 134 Eldridge St New York",
+      "Central Park Zoo": "Central Park Zoo 64th Street & 5th Avenue New York",
+      "Whitney Museum of American Art": "Whitney Museum of American Art 99 Gansevoort Street New York",
+      "Chelsea Market": "Chelsea Market 75 9th Ave New York",
+      "Stumptown (Greenwich Village)": "Stumptown Coffee 30 W 8th Street New York",
+      "Russ & Daughters Cafe": "Russ & Daughters Cafe 127 Orchard Street New York",
+      "Clinton St. Baking Company": "Clinton St. Baking Company 4 Clinton Street New York",
+      "Employees Only": "Employees Only 510 Hudson Street New York",
+      "Levain Bakery (West 74th Street)": "Levain Bakery 167 West 74th St New York",
+      "Dominique Ansel Bakery (Spring Street)": "Dominique Ansel Bakery 189 Spring St New York",
+      "La Cabra (SoHo)": "La Cabra 284 Lafayette St New York",
+      "Devoción (Williamsburg)": "Devoción 148 Grand St Brooklyn New York"
+    };
+    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (cityGuide) {
+      cityGuide.summary = "Parks, a free ferry, the tram, observation decks and museums, with breakfast spots, dinners, cocktail bars, bakeries and coffee checked against their own websites.";
+      cityGuide.highlights = ["Central Park","Empire State Building","9/11 Memorial & Museum","The High Line"];
+      cityGuide.tip = "Plan museum days around Tuesdays, when the Whitney and the Frick are both closed, and book the Empire State Building ahead because every visit needs a timed reservation.";
+    }
+    data.destinationFacts[cityKey] = "Plan museum days around Tuesdays, when the Whitney and the Frick are both closed, and book the Empire State Building ahead because every visit needs a timed reservation.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Parks, a free ferry, the tram, observation decks and museums, with breakfast spots, dinners, cocktail bars, bakeries and coffee checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Tuesdays",
+        "copy": "The Whitney Museum of American Art and The Frick Collection are both closed on Tuesdays. The 9/11 Museum opens Wednesday to Monday with select Tuesdays, while the Memorial is open daily 8 a.m.-8 p.m."
+      },
+      {
+        "label": "Timed tickets",
+        "value": "Book ahead",
+        "copy": "All Empire State Building visits require a timed reservation, with 86th-floor tickets from $46, and the 9/11 Museum requires advance ticket purchase. The Frick recommends timed tickets, and last tickets are sold one hour before closing."
+      },
+      {
+        "label": "Walk-ins and tables",
+        "value": "Know the policy",
+        "copy": "Russ & Daughters Cafe takes no reservations, and Via Carota says walk-ins are always welcome. L'Artusi releases Resy tables two weeks ahead at 9 AM, and at Employees Only cocktails are walk-in only while the dining room needs a dinner reservation."
+      },
+      {
+        "label": "Rules",
+        "value": "Age, ID, dress",
+        "copy": "Attaboy is 21+, needs a valid physical government-issued ID and takes parties of six and under. The Frick admits only children aged 10 and older, and Bemelmans Bar discourages athletic and casual leisure wear."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Spend your mornings at the parks and museums, book timed tickets and dinner tables ahead, and leave the walk-in cafés and bars for when you have time to wait.",
+      intro: [
+        "Start outdoors. According to the Central Park Conservancy, Central Park opens at 6:00 am and closes at 1:00 am, 365 days a year. The Central Park Zoo entrance is at 64th Street and 5th Avenue, and the zoo is open 10:00 AM to 5:00 PM on weekdays through October 31, 2026, then 10:00 AM to 4:30 PM daily from November 1. The High Line is open 7am to 10pm until November 30, then 7am to 8pm. Its site posted a temporary closure of the stretch between 18th and 23rd Streets on October 19.",
+        "For harbor and skyline views, the Staten Island Ferry is free and runs around the clock from Whitehall Terminal at 4 South Street. The City warns you about scammers selling fake tickets. The 9/11 Memorial at 180 Greenwich Street is free and open daily 8 a.m.-8 p.m. The Museum requires advance tickets and is open Wednesday to Monday. Every Empire State Building visit needs a timed reservation, with 86th-floor tickets from $46. The Roosevelt Island Tram leaves from East 60th Street and Second Avenue and takes standard MTA fares, including OMNY.",
+        "Tuesday is the closing day at both the Whitney Museum of American Art on Gansevoort Street and The Frick Collection at 1 East 70th Street. The Whitney stays open until 10 pm on Fridays, with Free Friday Nights from 5 to 10 pm, and its current shows include Roy Lichtenstein: Like New. The Frick recommends timed tickets, admits only children aged 10 and older, and has Pay-What-You-Wish admission on Wednesdays from 1:30 to 5:30 p.m. At Chelsea Market, 75 9th Ave, the concourse is open 7 am to 10 pm, and trick-or-treating is scheduled for October 31, 2026.",
+        "For food, Russ & Daughters Cafe at 127 Orchard Street is walk-in only with no takeout. Via Carota on Grove Street welcomes walk-ins, and L'Artusi releases Resy tables two weeks ahead at 9 AM, keeping bar and counter seats for walk-ins. Katz's Delicatessen at 205 East Houston Street opens at 8:00 AM. For drinks, Attaboy on Eldridge Street is 21+, takes parties of six and under, and asks for a physical ID. Bemelmans Bar at The Carlyle has pianists from 5:30 pm and a jazz trio from 9 pm, with a cover charge that depends on the artist."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair a free Staten Island Ferry ride with the 9/11 Memorial and a timed Empire State Building slot, then walk Central Park, which is open 6:00 am to 1:00 am."
+        ],
+        [
+          "A slower morning",
+          "Take a walk-in table at Russ & Daughters Cafe from 8:30 AM, then pick up coffee at Stumptown on West 8th Street before the High Line opens its gates at 7am."
+        ],
+        [
+          "Before booking",
+          "Check that your museum day isn't a Tuesday, book L'Artusi on Resy when tables release at 9 AM two weeks out, and bring physical ID if you plan to go to Attaboy."
+        ]
+      ],
+      trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 21, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
+  // Tokyo, Japan: source review of 2026-10-21 (docs/content-research/tokyo-2026-10-21.md).
+  {
+    const cityKey = "Tokyo, Japan";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Senso-ji","Meiji Jingu","Tokyo Skytree","Tokyo National Museum"],
+      bestFirstTimers: ["Senso-ji","Meiji Jingu","Imperial Palace East Gardens","Tokyo Metropolitan Government Building Observation Decks"],
+      bestRestaurants: ["Narisawa","Gonpachi (Nishi-Azabu)","Udon Shin"],
+      bestBudget: ["Tokyo Metropolitan Government Building Observation Decks","Imperial Palace East Gardens"],
+      bestLuxury: ["Narisawa","The SG Club"],
+      bestCouples: ["Tokyo City View","Tokyo Skytree","Bar High Five"],
+      bestKids: ["Ueno Zoo","Tokyo National Museum","Tokyo Skytree"],
+      bestSolo: ["Glitch Coffee (Jimbocho)","AFURI (Ebisu)","Mori Art Museum"],
+      bestUnique: ["Mori Art Museum","Shinjuku Gyoen National Garden","Udon Shin"],
+      bestBreakfast: ["Ivy Place","Fuglen Tokyo (Tomigaya)","Glitch Coffee (Jimbocho)"],
+      bestLunch: ["AFURI (Ebisu)","Udon Shin","Gonpachi (Nishi-Azabu)","Ivy Place"],
+      bestDinner: ["Narisawa","Gonpachi (Nishi-Azabu)","Ivy Place"],
+      bestCocktails: ["Bar High Five","The SG Club","Fuglen Tokyo (Tomigaya)"],
+      bestBakeries: [],
+      bestCoffee: ["Glitch Coffee (Jimbocho)","Fuglen Tokyo (Tomigaya)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Senso-ji": "Senso-ji 2-3-1 Asakusa Taito-ku Tokyo",
+      "Meiji Jingu": "Meiji Jingu 1-1 Yoyogi Kamizono-cho Shibuya-ku Tokyo",
+      "Tokyo Skytree": "Tokyo Skytree 1-1-2 Oshiage Sumida-ku Tokyo",
+      "Tokyo National Museum": "Tokyo National Museum 13-9 Ueno Park Taito-ku Tokyo",
+      "Imperial Palace East Gardens": "Imperial Palace East Gardens 1 Chiyoda Chiyoda-ku Tokyo",
+      "Tokyo Metropolitan Government Building Observation Decks": "Tokyo Metropolitan Government Building 2-8-1 Nishi-Shinjuku Shinjuku-ku Tokyo",
+      "Narisawa": "Narisawa 2-6-15 Minami-Aoyama Minato-ku Tokyo",
+      "Gonpachi (Nishi-Azabu)": "Gonpachi Nishi-Azabu 1-13-11 Nishi-Azabu Minato-ku Tokyo",
+      "Udon Shin": "Udon Shin 2-20-16 Yoyogi Shibuya-ku Tokyo",
+      "The SG Club": "The SG Club 1-7-8 Jinnan Shibuya-ku Tokyo",
+      "Tokyo City View": "Tokyo City View 6-10-1 Roppongi Minato-ku Tokyo",
+      "Bar High Five": "Bar High Five 5-4-15 Ginza Chuo-ku Tokyo",
+      "Ueno Zoo": "Ueno Zoo 9-83 Uenokoen Taito-ku Tokyo",
+      "Glitch Coffee (Jimbocho)": "Glitch Coffee 3-16 Kanda-Nishikicho Chiyoda-ku Tokyo",
+      "AFURI (Ebisu)": "AFURI Ebisu 1-1-7 Ebisu Shibuya-ku Tokyo",
+      "Mori Art Museum": "Mori Art Museum 6-10-1 Roppongi Minato-ku Tokyo",
+      "Shinjuku Gyoen National Garden": "Shinjuku Gyoen National Garden 11 Naitomachi Shinjuku-ku Tokyo",
+      "Ivy Place": "Ivy Place 16-15 Sarugakucho Shibuya-ku Tokyo",
+      "Fuglen Tokyo (Tomigaya)": "Fuglen Tokyo 1-16-11 Tomigaya Shibuya-ku Tokyo"
+    };
+    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (cityGuide) {
+      cityGuide.summary = "Temples, shrines, museums, observation decks and gardens, plus breakfast cafés, noodle lunches, dinners and cocktail bars, each checked against its own or its public operator's website.";
+      cityGuide.highlights = ["Senso-ji","Meiji Jingu","Tokyo National Museum","Tokyo Skytree"];
+      cityGuide.tip = "Watch the closing days: the Tokyo National Museum closes on Mondays, the Imperial Palace East Gardens on Mondays and Fridays, and Bar High Five on Sundays and national holidays.";
+    }
+    data.destinationFacts[cityKey] = "Watch the closing days: the Tokyo National Museum closes on Mondays, the Imperial Palace East Gardens on Mondays and Fridays, and Bar High Five on Sundays and national holidays.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Temples, shrines, museums, observation decks and gardens, plus breakfast cafés, noodle lunches, dinners and cocktail bars, each checked against its own or its public operator's website.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mon / Fri closures",
+        "copy": "The Tokyo National Museum and Shinjuku Gyoen National Garden close on Mondays (the next weekday if Monday is a holiday). The Imperial Palace East Gardens close every Monday and Friday."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book ahead online",
+        "copy": "Narisawa takes reservations only through its online booking site, not by phone. The Tokyo National Museum recommends buying tickets online because waits at its security screening can exceed 30 minutes."
+      },
+      {
+        "label": "Walk-in policies",
+        "value": "No reservations",
+        "copy": "Bar High Five has taken no reservations since May 2015 and admits its last guests at 00:00, Monday to Saturday. At Udon Shin noodles are made to order, so expect a 10 to 15 minute wait after you order."
+      },
+      {
+        "label": "Bags and rules",
+        "value": "No suitcases",
+        "copy": "The Tokyo National Museum does not allow suitcases and screens visitors at the Main Gate. AFURI (Ebisu) is marked fully cashless, so bring a card."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Do the early-closing sights first: Senso-ji's main hall shuts at 5pm and Meiji Jingu's gates close in late afternoon, while observation decks and bars run late.",
+      intro: [
+        "You can start early at Senso-ji in Asakusa: from October to March its main hall opens at 6:30 a.m. and closes at 5:00 p.m. Meiji Jingu's gate hours follow the sun, 5:40 a.m. to 4:40 p.m. in October and 6:10 a.m. to 4:10 p.m. in November, so a morning visit leaves time for more. The Imperial Palace East Gardens are free, but they close every Monday and Friday, and from November the last entry is 3:30 p.m.",
+        "In Ueno, the Tokyo National Museum is showing the special exhibition Hiroshige: New Perspectives on Edo Japan from September 29 to December 20, 2026. It opens 9:30 to 17:00 and is closed on Mondays. Admission to the collection is free if you are under 18 or over 70. Suitcases are not allowed, and the museum suggests buying tickets online because queues at its security screening can run past 30 minutes. Next door, Ueno Zoo has posted partial path closures from October 26 to November 16.",
+        "For views, Tokyo Skytree lists hours of 10:00 to 22:00 with final entry at 21:00, and its Dream Christmas event runs November 5 to December 25. The Tokyo Metropolitan Government Building's observation decks are free: the south deck admits visitors until 21:30 but closes on the first and third Tuesdays of the month. In Roppongi, the Mori Art Museum reopens on October 31 with Mariko Mori: All That Shines, which runs to March 28, 2027. Tokyo City View, one floor below, is closed October 27 and November 10 to 12.",
+        "For food, Ivy Place in Daikanyama serves breakfast from 8:00, and Fuglen Tokyo in Tomigaya opens at 7am. At lunch you can choose AFURI (Ebisu), which is cashless, or Udon Shin in Yoyogi, where every bowl is cut and boiled to order. Gonpachi (Nishi-Azabu) is open daily until 27:30, and Narisawa accepts bookings online only. To end the night, Bar High Five in Ginza is open Monday to Saturday from 17:00 and does not take reservations."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair Senso-ji's early main-hall opening with the Tokyo National Museum's Hiroshige exhibition, which runs to December 20, 2026, remembering the museum closes on Mondays."
+        ],
+        [
+          "A slower morning",
+          "Have breakfast at Ivy Place from 8:00 or Fuglen Tokyo (Tomigaya) from 7am, then walk to Meiji Jingu before its gates close in the late afternoon."
+        ],
+        [
+          "Before booking",
+          "Book Narisawa through its online reservation site, because it takes no phone bookings, and note that Bar High Five takes no reservations at all."
+        ]
+      ],
+      trust: "All 19 distinct recommendations in this guide were checked against their operators' own websites on October 21, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
+  // Barcelona, Spain: source review of 2026-10-21 (docs/content-research/barcelona-2026-10-21.md).
+  {
+    const cityKey = "Barcelona, Spain";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Sagrada Família","Park Güell","Casa Batlló","La Pedrera-Casa Milà"],
+      bestFirstTimers: ["Sagrada Família","Barcelona Cathedral","Museu Picasso","Park Güell"],
+      bestRestaurants: ["Disfrutar","El Xampanyet","Can Fisher"],
+      bestBudget: ["Bunkers del Carmel (MUHBA Turó de la Rovira)","Museu Nacional d'Art de Catalunya (MNAC)","Mercat de Santa Caterina"],
+      bestLuxury: ["Disfrutar","Casa Batlló","Palau de la Música Catalana"],
+      bestCouples: ["Paradiso","La Pedrera-Casa Milà","Palau de la Música Catalana","Bunkers del Carmel (MUHBA Turó de la Rovira)"],
+      bestKids: ["L'Aquàrium de Barcelona","Park Güell"],
+      bestSolo: ["Museu Picasso","Museu Nacional d'Art de Catalunya (MNAC)","Hidden Coffee Roasters (El Born)","Nomad Coffee Bar (Passatge Sert)"],
+      bestUnique: ["Bunkers del Carmel (MUHBA Turó de la Rovira)","Palau de la Música Catalana","Paradiso"],
+      bestBreakfast: ["Brunch & Cake (Enric Granados)","Federal Café (Gòtic)","Petit Nomad (Nomad Coffee, Bergara)"],
+      bestLunch: ["El Xampanyet","Can Fisher","Mercat de Santa Caterina"],
+      bestDinner: ["Disfrutar","Can Fisher","El Xampanyet"],
+      bestCocktails: ["Paradiso"],
+      bestBakeries: ["Hofmann Pastelería (Born)"],
+      bestCoffee: ["Petit Nomad (Nomad Coffee, Bergara)","Nomad Coffee Bar (Passatge Sert)","Hidden Coffee Roasters (El Born)","Three Marks Coffee (Ausiàs Marc)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Sagrada Família": "Sagrada Família Carrer de Mallorca 401 Barcelona",
+      "Park Güell": "Park Güell Avinguda del Santuari de Sant Josep de la Muntanya Barcelona",
+      "Casa Batlló": "Casa Batlló Passeig de Gràcia 43 Barcelona",
+      "La Pedrera-Casa Milà": "La Pedrera-Casa Milà Passeig de Gràcia 92 Barcelona",
+      "Barcelona Cathedral": "Barcelona Cathedral Pla de la Seu Barcelona",
+      "Museu Picasso": "Museu Picasso Carrer de Montcada 15-23 Barcelona",
+      "Disfrutar": "Disfrutar Carrer de Villarroel 163 Barcelona",
+      "El Xampanyet": "El Xampanyet Carrer de Montcada 22 Barcelona",
+      "Can Fisher": "Can Fisher Avinguda del Litoral 64 Barcelona",
+      "Bunkers del Carmel (MUHBA Turó de la Rovira)": "MUHBA Turó de la Rovira Carrer de Marià Labèrnia Barcelona",
+      "Museu Nacional d'Art de Catalunya (MNAC)": "Museu Nacional d'Art de Catalunya Palau Nacional Parc de Montjuïc Barcelona",
+      "Mercat de Santa Caterina": "Mercat de Santa Caterina Avinguda de Francesc Cambó 16 Barcelona",
+      "Palau de la Música Catalana": "Palau de la Música Catalana Carrer del Palau de la Música 4-6 Barcelona",
+      "Paradiso": "Paradiso Carrer de Rera Palau 4 Barcelona",
+      "L'Aquàrium de Barcelona": "L'Aquàrium de Barcelona Moll d'Espanya del Port Vell Barcelona",
+      "Hidden Coffee Roasters (El Born)": "Hidden Coffee Roasters Carrer dels Canvis Vells 10 Barcelona",
+      "Nomad Coffee Bar (Passatge Sert)": "Nomad Coffee Passatge Sert 12 Barcelona",
+      "Brunch & Cake (Enric Granados)": "Brunch & Cake Carrer d'Enric Granados 19 Barcelona",
+      "Federal Café (Gòtic)": "Federal Café Passatge de la Pau 11 Barcelona",
+      "Petit Nomad (Nomad Coffee, Bergara)": "Petit Nomad Carrer de Bergara 10 Barcelona",
+      "Hofmann Pastelería (Born)": "Hofmann Pastelería Carrer dels Flassaders 44 Barcelona",
+      "Three Marks Coffee (Ausiàs Marc)": "Three Marks Coffee Carrer d'Ausiàs Marc 151 Barcelona"
+    };
+    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (cityGuide) {
+      cityGuide.summary = "Gaudí landmarks, the cathedral, Picasso and Catalan art museums, a market, tapas bars, seafront rice, a cocktail bar, a pastry shop and specialty coffee, each checked against its own website.";
+      cityGuide.highlights = ["Sagrada Família","Park Güell","Casa Batlló","Museu Picasso"];
+      cityGuide.tip = "Park Güell tickets must be bought in advance online and hold for 30 minutes after your slot, while Museu Picasso and MNAC publish no Monday opening, so put the museums on other days.";
+    }
+    data.destinationFacts[cityKey] = "Park Güell tickets must be bought in advance online and hold for 30 minutes after your slot, while Museu Picasso and MNAC publish no Monday opening, so put the museums on other days.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Gaudí landmarks, the cathedral, Picasso and Catalan art museums, a market, tapas bars, seafront rice, a cocktail bar, a pastry shop and specialty coffee, each checked against its own website.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays and Sundays",
+        "copy": "Museu Picasso lists hours only Tuesday to Sunday, and MNAC is closed on Mondays except public holidays. El Xampanyet is closed on Sundays and opens only in the evening on Mondays."
+      },
+      {
+        "label": "Tickets",
+        "value": "Book ahead",
+        "copy": "Park Güell tickets must be bought in advance and online, and entry is allowed up to 30 minutes after your slot. Palau de la Música Catalana tours cost €2 more at the box office than online."
+      },
+      {
+        "label": "Walk-in only",
+        "value": "No reservations",
+        "copy": "Paradiso takes no advance reservations and runs a virtual queue you join by scanning a QR code at the door. El Xampanyet also states that it does not accept reservations."
+      },
+      {
+        "label": "Free and late",
+        "value": "Timing tricks",
+        "copy": "MNAC is free on Saturdays from 3pm and the first Sunday of the month, with an advance online reservation. Casa Batlló is open every day until 10:30pm, and La Pedrera runs night visits."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Book Gaudí sites and Park Güell before you fly, then leave mornings for coffee and the old town and evenings for walk-in tapas and cocktails.",
+      intro: [
+        "You can build a first Barcelona trip around Gaudí. Sagrada Família is open in October from 9am to 7pm on weekdays, 9am to 6pm on Saturdays and 10:30am to 7pm on Sundays, with shorter hours from November to February. Individual visitors enter on the Nativity façade, on Carrer de la Marina. Park Güell sells tickets online and in advance only, for visits between 9:30am and 7:30pm, and your entry holds for 30 minutes after the time on your ticket.",
+        "On Passeig de Gràcia, Casa Batlló opens every day from 9am to 10:30pm. Its 2026 programme includes Magical Nights concerts and the exhibition Gaudí-Miró-Gomis: Deconstructed. Further up the avenue, La Pedrera-Casa Milà keeps summer hours of 9am to 8:30pm until 1 November 2026, then 9am to 6:30pm from 2 November. It closes on 25 December 2026 and from 11 to 17 January 2027, and its rooftop shuts when it rains.",
+        "In the old town, Barcelona Cathedral receives tourist visits on weekdays from 9:30am to 6:30pm, and only from 2pm to 5pm on Sundays. Museu Picasso on Carrer de Montcada opens Tuesday to Sunday, 10am to 7pm, in winter, and its exhibition Picasso and Architecture runs from 20 November 2026 to 7 March 2027. On Montjuïc, MNAC is free on Saturdays from 3pm and on the first Sunday of each month if you reserve online. Palau de la Música Catalana runs 50-minute guided tours between 9am and 3:30pm.",
+        "For food, El Xampanyet on Carrer de Montcada takes no reservations and closes on Sundays. Can Fisher, on Bogatell beach, serves Ebro Delta rice dishes daily from 12:30pm to midnight. Disfrutar takes bookings online. Paradiso, ranked 17th on the World's 50 Best Bars 2026 list, works through a QR-code virtual queue rather than bookings. For mornings, Petit Nomad now opens seven days a week, Federal Café in the Gòtic serves daily from 9am to 4:30pm, and Hofmann's Born shop sells pastries every day."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair a booked Sagrada Família slot with an online-only Park Güell ticket, then walk Passeig de Gràcia for Casa Batlló and La Pedrera."
+        ],
+        [
+          "A slower morning",
+          "Start with coffee at Petit Nomad or Hidden Coffee Roasters in El Born, then visit Museu Picasso on Carrer de Montcada, which opens at 10am Tuesday to Sunday in winter."
+        ],
+        [
+          "Before booking",
+          "Book Park Güell and the Palau de la Música tour online, but plan to walk in or queue for El Xampanyet and Paradiso, which take no reservations."
+        ]
+      ],
+      trust: "All 22 distinct recommendations in this guide were checked against their operators' own websites on October 21, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();
