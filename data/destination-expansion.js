@@ -1556,4 +1556,305 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 15 distinct recommendations in this guide were checked against their operators' own websites on October 21, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // New York, United States: places added 2026-10-21 after the source review (docs/content-research/new-york-2026-10-21.md).
+  {
+    const cityKey = "New York, United States";
+    const detail = data.cityGuideDetailData[cityKey];
+    const additions = {"The Metropolitan Museum of Art":["bestAttractions","bestFirstTimers","bestCouples"],"Museum of Modern Art (MoMA)":["bestAttractions","bestSolo"],"American Museum of Natural History":["bestKids","bestFirstTimers"],"Solomon R. Guggenheim Museum":["bestUnique","bestSolo"],"Top of the Rock":["bestCouples","bestFirstTimers"]};
+    for (const [name, categories] of Object.entries(additions)) {
+      for (const category of categories) {
+        const list = [name, ...(detail[category] || []).filter((item) => item !== name)];
+        // Trim to 5 from the end, but never drop a place that appears in no other list.
+        for (let index = list.length - 1; list.length > 5 && index > 0; index -= 1) {
+          if (Object.entries(detail).some(([other, items]) => other !== category && items.includes(list[index]))) list.splice(index, 1);
+        }
+        detail[category] = list;
+      }
+    }
+    Object.assign(data.cityPlaceQueries[cityKey], {"The Metropolitan Museum of Art":"The Metropolitan Museum of Art 1000 Fifth Avenue New York","Museum of Modern Art (MoMA)":"Museum of Modern Art 11 West 53rd Street New York","American Museum of Natural History":"American Museum of Natural History 200 Central Park West New York","Solomon R. Guggenheim Museum":"Solomon R. Guggenheim Museum 1071 Fifth Avenue New York","Top of the Rock":"Top of the Rock 30 Rockefeller Plaza New York"});
+    const editorial = data.cityEditorialPageData[cityKey];
+    const count = new Set(Object.values(detail).flat()).size;
+    if (editorial?.trust) editorial.trust = editorial.trust.replace(/^All \d+ distinct recommendations/, `All ${count} distinct recommendations`);
+  }
+  // Amsterdam, Netherlands: places added 2026-10-21 after the source review (docs/content-research/amsterdam-2026-10-21.md).
+  {
+    const cityKey = "Amsterdam, Netherlands";
+    const detail = data.cityGuideDetailData[cityKey];
+    const additions = {"Van Gogh Museum":["bestAttractions","bestFirstTimers","bestCouples"]};
+    for (const [name, categories] of Object.entries(additions)) {
+      for (const category of categories) {
+        const list = [name, ...(detail[category] || []).filter((item) => item !== name)];
+        // Trim to 5 from the end, but never drop a place that appears in no other list.
+        for (let index = list.length - 1; list.length > 5 && index > 0; index -= 1) {
+          if (Object.entries(detail).some(([other, items]) => other !== category && items.includes(list[index]))) list.splice(index, 1);
+        }
+        detail[category] = list;
+      }
+    }
+    Object.assign(data.cityPlaceQueries[cityKey], {"Van Gogh Museum":"Van Gogh Museum Museumplein 6 Amsterdam"});
+    const editorial = data.cityEditorialPageData[cityKey];
+    const count = new Set(Object.values(detail).flat()).size;
+    if (editorial?.trust) editorial.trust = editorial.trust.replace(/^All \d+ distinct recommendations/, `All ${count} distinct recommendations`);
+  }
+  // Barcelona, Spain: places added 2026-10-21 after the source review (docs/content-research/barcelona-2026-10-21.md).
+  {
+    const cityKey = "Barcelona, Spain";
+    const detail = data.cityGuideDetailData[cityKey];
+    const additions = {"Mercat de la Boqueria":["bestFirstTimers","bestBudget","bestLunch"],"Fundació Joan Miró":["bestAttractions","bestUnique","bestSolo"]};
+    for (const [name, categories] of Object.entries(additions)) {
+      for (const category of categories) {
+        const list = [name, ...(detail[category] || []).filter((item) => item !== name)];
+        // Trim to 5 from the end, but never drop a place that appears in no other list.
+        for (let index = list.length - 1; list.length > 5 && index > 0; index -= 1) {
+          if (Object.entries(detail).some(([other, items]) => other !== category && items.includes(list[index]))) list.splice(index, 1);
+        }
+        detail[category] = list;
+      }
+    }
+    Object.assign(data.cityPlaceQueries[cityKey], {"Mercat de la Boqueria":"Mercat de la Boqueria La Rambla 91 Barcelona","Fundació Joan Miró":"Fundació Joan Miró Parc de Montjuïc Barcelona"});
+    const editorial = data.cityEditorialPageData[cityKey];
+    const count = new Set(Object.values(detail).flat()).size;
+    if (editorial?.trust) editorial.trust = editorial.trust.replace(/^All \d+ distinct recommendations/, `All ${count} distinct recommendations`);
+  }
+  // Tokyo, Japan: places added 2026-10-21 after the source review (docs/content-research/tokyo-2026-10-21.md).
+  {
+    const cityKey = "Tokyo, Japan";
+    const detail = data.cityGuideDetailData[cityKey];
+    const additions = {"teamLab Planets TOKYO":["bestUnique","bestKids","bestCouples"],"SHIBUYA SKY":["bestCouples","bestFirstTimers","bestAttractions"]};
+    for (const [name, categories] of Object.entries(additions)) {
+      for (const category of categories) {
+        const list = [name, ...(detail[category] || []).filter((item) => item !== name)];
+        // Trim to 5 from the end, but never drop a place that appears in no other list.
+        for (let index = list.length - 1; list.length > 5 && index > 0; index -= 1) {
+          if (Object.entries(detail).some(([other, items]) => other !== category && items.includes(list[index]))) list.splice(index, 1);
+        }
+        detail[category] = list;
+      }
+    }
+    Object.assign(data.cityPlaceQueries[cityKey], {"teamLab Planets TOKYO":"teamLab Planets TOKYO 6-1-16 Toyosu Koto Tokyo","SHIBUYA SKY":"SHIBUYA SKY Shibuya Scramble Square 2-24-12 Shibuya Tokyo"});
+    const editorial = data.cityEditorialPageData[cityKey];
+    const count = new Set(Object.values(detail).flat()).size;
+    if (editorial?.trust) editorial.trust = editorial.trust.replace(/^All \d+ distinct recommendations/, `All ${count} distinct recommendations`);
+  }
+  // Prague, Czechia: source review of 2026-10-21 (docs/content-research/prague-2026-10-21.md).
+  {
+    const cityKey = "Prague, Czechia";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["National Museum (Historical Building)","Jewish Museum in Prague","Strahov Monastery","Municipal House (Obecní dům)"],
+      bestFirstTimers: ["National Museum (Historical Building)","Jewish Museum in Prague","House at the Golden Ring (Museum of Prague)","Strahov Monastery"],
+      bestRestaurants: ["La Degustation Bohême Bourgeoise","Field","Café Imperial","Kantýna"],
+      bestBudget: ["Museum of Prague (Main Building)","Vyšehrad","Lokál Dlouhááá","U Zlatého tygra"],
+      bestLuxury: ["La Degustation Bohême Bourgeoise","Field","Rudolfinum (Czech Philharmonic)","Municipal House (Obecní dům)"],
+      bestCouples: ["Rudolfinum (Czech Philharmonic)","Hemingway Bar","Field","Museum Kampa"],
+      bestKids: ["Prague Zoo","National Technical Museum","Museum of Prague (Main Building)","National Museum (Historical Building)"],
+      bestSolo: ["National Gallery Prague (Trade Fair Palace)","Museum Kampa","Mucha Museum","Café Slavia"],
+      bestUnique: ["Strahov Monastery","U Zlatého tygra","National Technical Museum","Rudolfinum (Czech Philharmonic)"],
+      bestBreakfast: ["Café Imperial","Eska (Letná)","Café Louvre","Myšák (Vodičkova)"],
+      bestLunch: ["Lokál Dlouhááá","Kantýna","Eska (Karlín)","Field"],
+      bestDinner: ["La Degustation Bohême Bourgeoise","Field","Lokál Dlouhááá","Kantýna"],
+      bestCocktails: ["Hemingway Bar","Anonymous Bar"],
+      bestBakeries: ["Eska (Karlín)","Eska (Letná)","Myšák (Vodičkova)"],
+      bestCoffee: ["Můj šálek kávy","Café Slavia","Café Louvre","Café Savoy"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "National Museum (Historical Building)": "National Museum Václavské náměstí 68 Prague",
+      "Jewish Museum in Prague": "Jewish Museum in Prague Maiselova 15 Prague",
+      "Strahov Monastery": "Strahov Monastery Strahovské nádvoří 132/1 Prague",
+      "Municipal House (Obecní dům)": "Obecní dům náměstí Republiky 5 Prague",
+      "House at the Golden Ring (Museum of Prague)": "House at the Golden Ring Týnská 630/6 Prague",
+      "La Degustation Bohême Bourgeoise": "La Degustation Bohême Bourgeoise Haštalská 18 Prague",
+      "Field": "Field Restaurant U Milosrdných 12 Prague",
+      "Café Imperial": "Café Imperial Na Poříčí 15 Prague",
+      "Kantýna": "Kantýna Politických vězňů 1511/5 Prague",
+      "Museum of Prague (Main Building)": "Museum of Prague Na Poříčí 1554/52 Prague",
+      "Vyšehrad": "Vyšehrad V Pevnosti 163/2 Prague",
+      "Lokál Dlouhááá": "Lokál Dlouhááá Dlouhá 33 Prague",
+      "U Zlatého tygra": "U Zlatého tygra Husova 17 Prague",
+      "Rudolfinum (Czech Philharmonic)": "Rudolfinum Alšovo nábřeží 79/12 Prague",
+      "Hemingway Bar": "Hemingway Bar Opatovická 1737/3 Prague",
+      "Museum Kampa": "Museum Kampa U Sovových mlýnů 503/2 Prague",
+      "Prague Zoo": "Prague Zoo U Trojského zámku 120/3 Prague",
+      "National Technical Museum": "National Technical Museum Kostelní 42 Prague",
+      "National Gallery Prague (Trade Fair Palace)": "Trade Fair Palace National Gallery Dukelských hrdinů 47 Prague",
+      "Mucha Museum": "Mucha Museum Panská 7 Prague",
+      "Café Slavia": "Café Slavia Národní 1 Prague",
+      "Eska (Letná)": "Eska Veletržní 290/42 Prague",
+      "Café Louvre": "Café Louvre Národní 22 Prague",
+      "Myšák (Vodičkova)": "Myšák Vodičkova 710/31 Prague",
+      "Eska (Karlín)": "Eska Pernerova 49 Prague",
+      "Anonymous Bar": "Anonymous Bar Michalská 12 Prague",
+      "Můj šálek kávy": "Můj šálek kávy Křižíkova 105 Prague",
+      "Café Savoy": "Café Savoy Vítězná 5 Prague"
+    };
+    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (cityGuide) {
+      cityGuide.summary = "Museums, the Jewish Quarter, Strahov, Vyšehrad and the zoo, with historic cafés, bakeries, Czech pubs, tasting menus and cocktail bars checked against their own websites.";
+      cityGuide.highlights = ["National Museum (Historical Building)","Jewish Museum in Prague","Strahov Monastery","Municipal House (Obecní dům)"];
+      cityGuide.tip = "Keep Mondays for the National Museum, Museum Kampa, the Mucha Museum or the zoo, because the Trade Fair Palace, the National Technical Museum and the Museum of Prague's main building close that day, and avoid Saturdays for the Jewish Museum.";
+    }
+    data.destinationFacts[cityKey] = "Keep Mondays for the National Museum, Museum Kampa, the Mucha Museum or the zoo, because the Trade Fair Palace, the National Technical Museum and the Museum of Prague's main building close that day, and avoid Saturdays for the Jewish Museum.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Museums, the Jewish Quarter, Strahov, Vyšehrad and the zoo, with historic cafés, bakeries, Czech pubs, tasting menus and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays and Saturdays",
+        "copy": "The National Gallery's Trade Fair Palace, the National Technical Museum and the Museum of Prague's main building and House at the Golden Ring are closed on Mondays. The Jewish Museum in Prague closes on Saturdays and Jewish holidays."
+      },
+      {
+        "label": "Autumn hours",
+        "value": "Earlier closing",
+        "copy": "From 18 October the Jewish Museum sites close at 4:30 p.m., and Prague Zoo closes at 5 pm in October and 4 pm in November, with ticket offices and pavilions closing earlier."
+      },
+      {
+        "label": "Booking and walk-ins",
+        "value": "Book the big tables",
+        "copy": "Café Imperial suggests reserving \"even weeks in advance\", and Field holds reservations for only 15 minutes. Café Slavia says you rarely need to book, takes weekend reservations only from 19:00 and none on public holidays."
+      },
+      {
+        "label": "Rules",
+        "value": "Dress and age",
+        "copy": "Field asks for smart casual and is not suitable for children under 6. At the Rudolfinum, the Czech Philharmonic turns no one away for clothing, though a dark suit or business formal is the safe choice for evening concerts."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Plan museum days around Monday and Saturday closures, book Café Imperial and Field ahead, and save one evening for a concert at the Rudolfinum or the Municipal House.",
+      intro: [
+        "This Prague guide is built from places whose own websites were read on 21 October 2026. You can start at the National Museum's Historical Building at Václavské náměstí 68, open daily from 10:00 to 18:00, where Maps and Atlases from the Kinsky Library runs until 3 January 2027. Entry pauses when the building is full, usually around weekend noon. The Jewish Museum in Prague, based at Maiselova 15, opens 9 a.m. to 4:30 p.m. from 18 October and closes on Saturdays and Jewish holidays. Up at Hradčany, the Strahov Monastery library and gallery open from 9:00 to 17:00.",
+        "For art, Museum Kampa in Malá Strana opens daily from 10 am to 6 pm and shows Milan Kunc – Pop Renaissance until 17 January 2027. The Mucha Museum on Panská opens daily from 10:00 to 18:00. The National Gallery's Trade Fair Palace in Prague 7 has Zbyněk Sekal — Blue Flower until 31 January 2027 but closes on Mondays. The Museum of Prague's House at the Golden Ring on Týnská covers Prague under Charles IV, and its main building on Na Poříčí stays open until 8 pm on Thursdays.",
+        "With children, you can try Prague Zoo in Troja, open 9 am to 5 pm in October and to 4 pm in November and December. The National Technical Museum on Kostelní opens Tuesday to Sunday and has The Saga of the Hainz Family from 14 October 2026. The Museum of Prague's free Cloud exhibition is aimed at young children. In the evening, the Czech Philharmonic plays the Rudolfinum with Semyon Bychkov on 22 and 23 October, and the Municipal House stages Rossini's Le Comte Ory on 24 October.",
+        "For food, Café Imperial on Na Poříčí serves a breakfast buffet from 7:00 daily and says it is in the Michelin Guide 2026. Eska bakes in Karlín and Letná, and Myšák on Vodičkova serves Czech desserts. For Czech beer, Lokál Dlouhááá opens from 11:00 and U Zlatého tygra on Husova from 15:00. Field and La Degustation Bohême Bourgeoise take reservations, and Field holds a table for only 15 minutes. Afterwards, Hemingway Bar opens from 17:00 and Anonymous Bar on Michalská serves until 02:00."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair the National Museum on Wenceslas Square with a weekday at the Jewish Museum, which closes on Saturdays, then walk up to the Strahov Monastery library, open 9:00 to 17:00."
+        ],
+        [
+          "A slower morning",
+          "Start with the 7:00 breakfast buffet at Café Imperial or a pastry at Eska in Letná, then spend the late morning at Museum Kampa, open daily from 10 am."
+        ],
+        [
+          "Before booking",
+          "Reserve Café Imperial and Field ahead, check concert dates for the Rudolfinum and the Municipal House, and remember several museums close on Mondays."
+        ]
+      ],
+      trust: "All 28 distinct recommendations in this guide were checked against their operators' own websites on October 21, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
+  // Istanbul, Turkey: source review of 2026-10-21 (docs/content-research/istanbul-2026-10-21.md).
+  {
+    const cityKey = "Istanbul, Turkey";
+    for (const twin of ["Istanbul, Türkiye"]) {
+      delete data.cityGuideDetailData[twin];
+      delete data.cityPlaceQueries[twin];
+      for (const map of [data.destinationHeroData, data.cityPlanningToolkitData, data.cityEditorialPageData, data.destinationFacts]) {
+        if (map && twin in map) {
+          if (!(cityKey in map)) map[cityKey] = map[twin];
+          delete map[twin];
+        }
+      }
+      const twinGuide = data.cityGuideData.find((item) => item.city === twin);
+      if (twinGuide && !data.cityGuideData.some((item) => item.city === cityKey)) twinGuide.city = cityKey;
+    }
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Topkapı Palace Museum","Galata Tower Museum","Dolmabahçe Palace","Grand Bazaar"],
+      bestFirstTimers: ["Topkapı Palace Museum","Hagia Sophia History and Experience Museum","Istanbul Archaeological Museums","Grand Bazaar"],
+      bestRestaurants: ["Mikla","Pandeli","Karaköy Lokantası","Arkestra"],
+      bestBudget: ["Karaköy Lokantası","Kurukahveci Mehmet Efendi (Tahmis)","Petra Roasting Co. (Şişhane)","Grand Bazaar"],
+      bestLuxury: ["Mikla","Arkestra","Kubbeli Saloon (Pera Palace Hotel)","Dolmabahçe Palace"],
+      bestCouples: ["Mikla Bar","Kubbeli Saloon (Pera Palace Hotel)","Beylerbeyi Palace","Neolokal"],
+      bestKids: ["Miniaturk","Rahmi M. Koç Museum","Galata Tower Museum","Istanbul Archaeological Museums"],
+      bestSolo: ["Istanbul Modern","Pera Museum","Museum of Innocence","Petra Roasting Co. (Şişhane)"],
+      bestUnique: ["Museum of Innocence","Galata Mevlevi Lodge Museum","Miniaturk","Sakıp Sabancı Museum"],
+      bestBreakfast: ["Petra Roasting Co. (Şişhane)"],
+      bestLunch: ["Pandeli","Karaköy Lokantası","Beyti"],
+      bestDinner: ["Mikla","Neolokal","Arkestra","Beyti"],
+      bestCocktails: ["Mikla Bar","Arkestra"],
+      bestBakeries: ["Patisserie de Pera (Pera Palace Hotel)"],
+      bestCoffee: ["Petra Roasting Co. (Şişhane)","Kurukahveci Mehmet Efendi (Tahmis)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Topkapı Palace Museum": "Topkapı Palace Museum Babı Hümayun Caddesi Sultanahmet Istanbul",
+      "Galata Tower Museum": "Galata Tower Museum Bereketzade Beyoğlu Istanbul",
+      "Dolmabahçe Palace": "Dolmabahçe Palace Dolmabahçe Caddesi Beşiktaş Istanbul",
+      "Grand Bazaar": "Grand Bazaar Kalpakçılar Caddesi Beyazıt Istanbul",
+      "Hagia Sophia History and Experience Museum": "Hagia Sophia History and Experience Museum At Meydanı Sokak 10 Fatih Istanbul",
+      "Istanbul Archaeological Museums": "Istanbul Archaeological Museums Osman Hamdi Bey Yokuşu Gülhane Istanbul",
+      "Mikla": "Mikla Meşrutiyet Caddesi 15 Beyoğlu Istanbul",
+      "Pandeli": "Pandeli Mısır Çarşısı Balık Pazarı Kapısı Sokağı Fatih Istanbul",
+      "Karaköy Lokantası": "Karaköy Lokantası Kemankeş Caddesi 57 Karaköy Istanbul",
+      "Arkestra": "Arkestra Dilhayat Sokak 28 Etiler Istanbul",
+      "Kurukahveci Mehmet Efendi (Tahmis)": "Kurukahveci Mehmet Efendi Tahmis Sokağı 66 Eminönü Istanbul",
+      "Petra Roasting Co. (Şişhane)": "Petra Roasting Co. Şişhane Istanbul",
+      "Kubbeli Saloon (Pera Palace Hotel)": "Kubbeli Saloon Pera Palace Hotel Meşrutiyet Caddesi 52 Tepebaşı Istanbul",
+      "Mikla Bar": "Mikla Bar The Marmara Pera Meşrutiyet Caddesi 15 Istanbul",
+      "Beylerbeyi Palace": "Beylerbeyi Palace Abdullah Ağa Caddesi 12 Üsküdar Istanbul",
+      "Neolokal": "Neolokal SALT Galata Bankalar Caddesi Karaköy Istanbul",
+      "Miniaturk": "Miniaturk İmrahor Caddesi 7 Sütlüce Istanbul",
+      "Rahmi M. Koç Museum": "Rahmi M. Koç Museum Rahmi M. Koç Caddesi 3 Hasköy Istanbul",
+      "Istanbul Modern": "Istanbul Modern Tophane İskele Caddesi 1 Beyoğlu Istanbul",
+      "Pera Museum": "Pera Museum Meşrutiyet Caddesi 65 Tepebaşı Istanbul",
+      "Museum of Innocence": "Museum of Innocence Çukurcuma Caddesi Dalgıç Çıkmazı 2 Beyoğlu Istanbul",
+      "Galata Mevlevi Lodge Museum": "Galata Mevlevi Lodge Museum Galip Dede Caddesi 15 Tünel Istanbul",
+      "Sakıp Sabancı Museum": "Sakıp Sabancı Museum Sakıp Sabancı Caddesi 42 Emirgan Istanbul",
+      "Beyti": "Beyti Orman Sokak 6-8 Florya Bakırköy Istanbul",
+      "Patisserie de Pera (Pera Palace Hotel)": "Patisserie de Pera Pera Palace Hotel Meşrutiyet Caddesi 52 Tepebaşı Istanbul"
+    };
+    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (cityGuide) {
+      cityGuide.summary = "Palaces, state and private museums, the Grand Bazaar, restaurants from Karaköy to Etiler, a historic coffee house, a hotel patisserie and afternoon tea, each checked against its own or its public operator's website.";
+      cityGuide.highlights = ["Topkapı Palace Museum","Dolmabahçe Palace","Galata Tower Museum","Istanbul Archaeological Museums"];
+      cityGuide.tip = "Most closures fall on Mondays: Dolmabahçe Palace, Beylerbeyi Palace, Pera Museum, Sakıp Sabancı Museum, Rahmi M. Koç Museum, Museum of Innocence, Galata Mevlevi Lodge Museum, Miniaturk and Beyti all close then. Topkapı Palace Museum closes on Tuesdays instead.";
+    }
+    data.destinationFacts[cityKey] = "Most closures fall on Mondays: Dolmabahçe Palace, Beylerbeyi Palace, Pera Museum, Sakıp Sabancı Museum, Rahmi M. Koç Museum, Museum of Innocence, Galata Mevlevi Lodge Museum, Miniaturk and Beyti all close then. Topkapı Palace Museum closes on Tuesdays instead.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Palaces, state and private museums, the Grand Bazaar, restaurants from Karaköy to Etiler, a historic coffee house, a hotel patisserie and afternoon tea, each checked against its own or its public operator's website.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays at most museums; Tuesdays at Topkapı",
+        "copy": "Topkapı Palace Museum lists Tuesday as its closed day, while Dolmabahçe, Beylerbeyi, Pera Museum, Sakıp Sabancı Museum, Rahmi M. Koç Museum and the Museum of Innocence close on Mondays. Istanbul Archaeological Museums is open every day but will close for one day on 24 October 2026."
+      },
+      {
+        "label": "Tickets",
+        "value": "Foreign-visitor prices; a free Tuesday",
+        "copy": "Topkapı's combined Palace, Aya İrini and Harem ticket is 2,750 TL for foreign visitors and is valid for one day, and the Hagia Sophia History and Experience Museum charges €25 and does not accept the Museum Card. Sakıp Sabancı Museum is free on Tuesdays, and Pera Museum is free for students on Wednesdays."
+      },
+      {
+        "label": "Booking",
+        "value": "Card guarantee at Mikla",
+        "copy": "Mikla's online booking asks for a card guarantee of 35 euros per person, charged only for a no-show, and Pandeli counts a booking as confirmed only once the restaurant emails you. Arkestra takes online reservations, and its upstairs Listening Room bar currently welcomes restaurant guests only."
+      },
+      {
+        "label": "Rules",
+        "value": "Dress code, ages, no tea-only tables",
+        "copy": "Mikla follows a Smart Chic dress code, and tracksuits and slippers are not accepted. Galata Tower Museum requires visitors under 18 to come with a parent, and Pandeli does not seat guests for sweets, tea or coffee only."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Plan your museum days around the Monday closures and Topkapı's Tuesday closure, and book Mikla and Arkestra ahead.",
+      intro: [
+        "On the historic peninsula, start with Topkapı Palace Museum in Sultanahmet. Its ticket office runs from 09:00 to 17:00, it is closed on Tuesdays, and a combined ticket for the palace, Aya İrini and the Harem is valid for one day. Istanbul Archaeological Museums in Gülhane opens every day from 09:00 to 18:30, though it will close for one day on 24 October 2026. The Hagia Sophia History and Experience Museum opens daily from 09:00 to 20:00. Nearby, Kurukahveci Mehmet Efendi runs its head shop on Tahmis Sokağı in Eminönü, and Pandeli sits inside the Spice Bazaar.",
+        "In Beyoğlu, Galata Tower Museum opens every day from 08:30 to 18:30, with a night session until 22:00, and you must bring a parent if you are under 18. The Galata Mevlevi Lodge Museum on Galip Dede Caddesi is closed on Mondays. Pera Museum stays open until 22:00 on Fridays, and its programme includes events on 25 October 2026. At the Pera Palace Hotel, afternoon tea with live piano is served in the Kubbeli Saloon from 15:00 to 18:00, and Patisserie de Pera opens daily from 10:00 to 18:00. The Museum of Innocence in Çukurcuma charges 750 TL.",
+        "Along the water, Istanbul Modern is showing Semiha Berksoy: Aria of All Colors until 22 November 2026. Sakıp Sabancı Museum in Emirgan has Yoko Ono: İçses ve İçyapı until 27 December 2026 and is free on Tuesdays. Dolmabahçe Palace and Beylerbeyi Palace on the Asian shore both sell tickets from 09:00 to 17:00 and close on Mondays. If you are travelling with children, try the Rahmi M. Koç Museum in Hasköy, open from 09:30 on Tuesday to Sunday, or Miniaturk in Sütlüce, which is closed on Mondays.",
+        "For dinner, Mikla at The Marmara Pera serves Monday to Saturday with last orders at 21:30, asks for a Smart Chic dress code, and has a roof terrace bar open until 02:00. Karaköy Lokantası on Kemankeş Caddesi serves lunch Monday to Saturday and dinner nightly, and Neolokal is at SALT Galata. In Etiler, Arkestra takes online reservations, and its upstairs Listening Room serves craft cocktails to restaurant guests. Beyti in Florya opens from 11:30 to 23:00 and is closed on Mondays. For an early coffee, Petra Roasting Co.'s Şişhane café opens at 8:00 on weekdays."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair Topkapı Palace Museum (closed Tuesdays) with Istanbul Archaeological Museums nearby in Gülhane, which is open every day from 09:00."
+        ],
+        [
+          "A slower morning",
+          "Start with coffee at Petra Roasting Co. in Şişhane from 8:00 on a weekday, then walk to Pera Museum when it opens at 10:00."
+        ],
+        [
+          "Before booking",
+          "Mikla needs a card guarantee of 35 euros per person and is closed on Sundays, and Arkestra's Listening Room bar is currently open to restaurant guests only."
+        ]
+      ],
+      trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 21, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

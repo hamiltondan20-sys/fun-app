@@ -504,5 +504,45 @@
     ]
   },
   "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several sites could not be read: SHIBUYA SKY and teamLab Planets returned only empty script shells, Bills returned no content, and Sushi Daiwa, Bar Benfiddich, Path and 365 Days failed DNS lookups. fuglen.com had an expired certificate, which was not bypassed. None of these failures is evidence of closure. Tsukiji Outer Market was left out only because its official pages give no postal address. Some places were published only partially: Ueno Zoo's visitor hours page did not load, Shinjuku Gyoen's hours and Narisawa's and The SG Club's hours were not published, and Narisawa's address appears only in a map link. Udon Shin, Glitch Coffee, AFURI, Fuglen Tokyo, Ivy Place and the Imperial Palace East Gardens are supported by currently published hours or booking links rather than 2026-dated content. Tokyo Skytree's stated hours were shown as 'today's' hours without a date. Fewer than 25 places were confirmed, because many input entries were generic or unreadable and the gap-candidate limit of 8 was reached.",
-  "injectionLikeText": []
+  "injectionLikeText": [],
+  "additions": [
+    {
+      "checkedOn": "2026-10-21",
+      "method": "These official pages returned only a script shell to automated reading during the review. Each was then read on its operator's own page in a browser; no review sites, maps or blogs were used.",
+      "places": [
+        {
+          "name": "teamLab Planets TOKYO",
+          "url": "https://www.teamlab.art/e/planets/",
+          "sourceType": "operator's own site (teamLab)",
+          "address": "teamLab Planets TOKYO, Toyosu 6-1-16, Koto-ku, Tokyo",
+          "operatingEvidence": "The official page gives the term as \"July 7, 2018 - End of 2027\", publishes daily hours with shorter hours on Thursday, December 31, and lists closed days of \"Thursday, November 5; Thursday, December 3\".",
+          "hours": "8:00-22:00, last entry one hour before closing; closed Thu 5 Nov and Thu 3 Dec 2026",
+          "query": "teamLab Planets TOKYO 6-1-16 Toyosu Koto Tokyo",
+          "categories": [
+            "bestUnique",
+            "bestKids",
+            "bestCouples"
+          ],
+          "replacesExcluded": []
+        },
+        {
+          "name": "SHIBUYA SKY",
+          "url": "https://www.shibuya-scramble-square.com/sky/",
+          "sourceType": "operator's own site (Shibuya Scramble Square)",
+          "address": "Shibuya Scramble Square, 2-24-12 Shibuya, Shibuya-ku, Tokyo (東京都渋谷区渋谷二丁目24番12号)",
+          "operatingEvidence": "The SHIBUYA SKY page shows hours of \"10:00 - 22:30\" with last entry at 21:20, a status panel dated 2026.10.21, and current notices, including a Halloween costume notice for 31 October. It says bags cannot be taken onto the rooftop.",
+          "hours": "10:00-22:30, last entry 21:20",
+          "query": "SHIBUYA SKY Shibuya Scramble Square 2-24-12 Shibuya Tokyo",
+          "categories": [
+            "bestCouples",
+            "bestFirstTimers",
+            "bestAttractions"
+          ],
+          "replacesExcluded": [
+            "Shibuya Sky at sunset"
+          ]
+        }
+      ]
+    }
+  ]
 }

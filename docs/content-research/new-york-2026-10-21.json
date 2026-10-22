@@ -567,5 +567,94 @@
     ]
   },
   "limitations": "This is a website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several official sites could not be read by automated fetch and were left out rather than bypassed: Top of the Rock, the American Museum of Natural History, MoMA and Grand Central Terminal (HTTP 403), The Met and the Brooklyn Museum (HTTP 429), the Guggenheim (cookie wall only), the NYPL main branch (empty page), Bubby's (connection refused), Mah-Ze-Dahr (HTTP 404) and NYC Parks' Central Park page (HTTP 403; the Conservancy site was used instead). Some places were only partly published. Crown Shy, Attaboy and Devoción showed hours but no dated content. The Whitney listed exhibitions without dates. The Frick page carried one apparently stale notice. Employees Only's reservations page may be out of date. Katz's listed weekly hours that conflict with its \"open 24 hrs on weekends\" banner. The High Line's closure notice and Central Park's event dates had no year shown.",
-  "injectionLikeText": []
+  "injectionLikeText": [],
+  "additions": [
+    {
+      "checkedOn": "2026-10-21",
+      "method": "These official sites refused automated reading during the review. Each was then read on its operator's own page in a browser; no review sites, maps or blogs were used.",
+      "places": [
+        {
+          "name": "The Metropolitan Museum of Art",
+          "url": "https://www.metmuseum.org/plan-your-visit",
+          "sourceType": "operator's own site (museum)",
+          "address": "1000 Fifth Avenue, New York, NY 10028",
+          "operatingEvidence": "The Plan Your Visit page publishes current weekly hours and lists galleries currently closed for renovation, including the Cantor Roof Garden and the Modern and Contemporary galleries. It says the museum is \"Closed Thanksgiving Day, December 25, January 1, and the first Monday in May.\"",
+          "hours": "Sun-Tue and Thu 10am-5pm; Fri-Sat 10am-9pm; closed Wednesday",
+          "query": "The Metropolitan Museum of Art 1000 Fifth Avenue New York",
+          "categories": [
+            "bestAttractions",
+            "bestFirstTimers",
+            "bestCouples"
+          ],
+          "replacesExcluded": [
+            "The Metropolitan Museum of Art"
+          ]
+        },
+        {
+          "name": "Museum of Modern Art (MoMA)",
+          "url": "https://www.moma.org/visit",
+          "sourceType": "operator's own site (museum)",
+          "address": "11 West 53 Street, Manhattan",
+          "operatingEvidence": "The visit page publishes daily hours with a Friday late opening, and free Friday evenings (5:30-8:30 p.m.) for New York State residents who reserve in advance. The footer reads \"© 2026 The Museum of Modern Art\".",
+          "hours": "Daily 10:30am-5:30pm; Friday until 8:30pm",
+          "query": "Museum of Modern Art 11 West 53rd Street New York",
+          "categories": [
+            "bestAttractions",
+            "bestSolo"
+          ],
+          "replacesExcluded": [
+            "Museum of Modern Art (MoMA)"
+          ]
+        },
+        {
+          "name": "American Museum of Natural History",
+          "url": "https://www.amnh.org/plan-your-visit",
+          "sourceType": "operator's own site (museum)",
+          "address": "200 Central Park West",
+          "operatingEvidence": "The Plan Your Visit page says \"Open daily, 10 am-5:30 pm\" and \"Closed Thanksgiving Day and Christmas Day\", offers Pay What You Wish general admission to New York State residents with ID, and lists a new exhibition that \"Opens November 16, 2026\".",
+          "hours": "Daily 10am-5:30pm; closed Thanksgiving Day and Christmas Day",
+          "query": "American Museum of Natural History 200 Central Park West New York",
+          "categories": [
+            "bestKids",
+            "bestFirstTimers"
+          ],
+          "replacesExcluded": [
+            "American Museum of Natural History"
+          ]
+        },
+        {
+          "name": "Solomon R. Guggenheim Museum",
+          "url": "https://www.guggenheim.org/plan-your-visit",
+          "sourceType": "operator's own site (museum)",
+          "address": "1071 Fifth Avenue, New York, NY 10128 (at 88th Street)",
+          "operatingEvidence": "The Plan Your Visit page gives regular hours of \"Every day, 10:30 am-5:30 pm\" and holiday hours including \"Thanksgiving Thursday, November 26, museum closed\" and \"Christmas Day, Friday, December 25, museum closed\". The footer reads \"© 2026\".",
+          "hours": "Every day 10:30am-5:30pm; last tickets about 15 minutes before closing",
+          "query": "Solomon R. Guggenheim Museum 1071 Fifth Avenue New York",
+          "categories": [
+            "bestUnique",
+            "bestSolo"
+          ],
+          "replacesExcluded": [
+            "Solomon R. Guggenheim Museum"
+          ]
+        },
+        {
+          "name": "Top of the Rock",
+          "url": "https://www.rockefellercenter.com/tickets/top-of-the-rock-observation-deck",
+          "sourceType": "operator's own site (Rockefeller Center)",
+          "address": "50 West 50th Street, New York, NY 10112 (entrance on 50th Street between Fifth and Sixth Avenues)",
+          "operatingEvidence": "The ticket page sells timed tickets online and says the deck is open \"Daily from 8 AM - 12 AM\", with \"Last entry is at 11:10 PM\".",
+          "hours": "Daily 8am-12am; last entry 11:10pm",
+          "query": "Top of the Rock 30 Rockefeller Plaza New York",
+          "categories": [
+            "bestCouples",
+            "bestFirstTimers"
+          ],
+          "replacesExcluded": [
+            "Top of the Rock"
+          ]
+        }
+      ]
+    }
+  ]
 }

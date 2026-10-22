@@ -1,0 +1,868 @@
+{
+  "city": "Prague, Czechia",
+  "checkedOn": "2026-10-21",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "National Museum (Historical Building)",
+      "kind": "museum",
+      "url": "https://www.nm.cz/en/visit-us/buildings/historical-building-of-the-national-museum",
+      "sourceType": "official public operator (National Museum)",
+      "address": "Václavské náměstí 68, Praha 1",
+      "operatingEvidence": "Current exhibitions include \"Maps and Atlases from the Kinsky Library\" (24 Sep 2026 – 3 Jan 2027) and \"The Dark Blue World of Jaroslav Ježek\" (23 Sep 2026 – 28 Feb 2027); Czech Press Photo 2025 runs in the New Building 12 May – 30 Nov 2026.",
+      "hours": "\"Open from 10:00 to 18:00\" daily, including weekends and holidays",
+      "confidence": "high"
+    },
+    {
+      "name": "National Gallery Prague (Trade Fair Palace)",
+      "kind": "museum",
+      "url": "https://www.ngprague.cz/en/about/buildings",
+      "sourceType": "official public operator (National Gallery Prague)",
+      "address": "Dukelských hrdinů 47, 170 00 Prague 7",
+      "operatingEvidence": "Home page lists \"Zbyněk Sekal — Blue Flower\" (24/9 2026 – 31/1 2027) and \"230 Years of the NGP\" (26/3 2026 – 3/1 2027) at the Trade Fair Palace, plus the Schiele drawings show \"Edith and Egon\" until 25/10 2026.",
+      "hours": "Tuesday–Sunday 10:00–18:00 (closed Mondays)",
+      "confidence": "high"
+    },
+    {
+      "name": "Jewish Museum in Prague",
+      "kind": "museum",
+      "url": "https://www.jewishmuseum.cz/en/info/visit/opening-hours/",
+      "sourceType": "operator's own site",
+      "address": "Information and Reservation Centre, \"Maiselova 15, Prague 1\"; Spanish Synagogue \"Vězeňská 1, Praha 1\"; Klausen Synagogue \"U Starého hřbitova 3a, Praha 1\"",
+      "operatingEvidence": "2026 opening-hours table and 2026 holiday closure list; events calendar for October–November 2026, including a Klezmatics concert at the Spanish Synagogue on 14 Nov 2026.",
+      "hours": "18 Oct–31 Dec: 9 a.m.–4:30 p.m.; 24 Dec: 9 a.m.–2 p.m.; open daily \"except Saturdays and Jewish holidays\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Vyšehrad",
+      "kind": "landmark",
+      "url": "https://www.praha-vysehrad.cz/en",
+      "sourceType": "official public operator (Národní kulturní památka Vyšehrad, founded by the City of Prague)",
+      "address": "V Pevnosti 163/2, 128 00 Praha 2",
+      "operatingEvidence": "Notices dated 6 Jan 2026 (Burgrave's Residence rental offer) and 12 Jan 2026 (new electric service vehicles); a December 2025 notice says \"regular opening hours until 6:00 p.m. apply\".",
+      "hours": "Partial only: \"regular opening hours until 6:00 p.m.\"; full schedule not published on page read",
+      "confidence": "medium"
+    },
+    {
+      "name": "Rudolfinum (Czech Philharmonic)",
+      "kind": "landmark",
+      "url": "https://www.ceskafilharmonie.cz/en/transport-and-parking/",
+      "sourceType": "operator's own site (Czech Philharmonic)",
+      "address": "Rudolfinum, \"Alšovo nábřeží 79/12\", \"110 00 Praha 1\"",
+      "operatingEvidence": "Concert listings for Czech Philharmonic with Semyon Bychkov on 22–23 October 2026 and Czech Chamber Music Society concerts on 24 and 27 October 2026.",
+      "hours": "Box office hours not published on pages read; Customer Service \"Every weekday 9.00-18.00. In July and August until 15.00.\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Lokál Dlouhááá",
+      "kind": "meal",
+      "url": "https://lokal-dlouha.ambi.cz/en/",
+      "sourceType": "operator's own site (Ambiente)",
+      "address": "Dlouhá 33, 110 00 Praha 1",
+      "operatingEvidence": "News item dated 09/01/2026 (\"Czech lager heads to Philadelphia\") and an online reservation page; the site advises \"It gets busy, so best secure your spot in advance.\"",
+      "hours": "Mon–Sat 11:00–00:00; Sun 11:00–22:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Café Louvre",
+      "kind": "cafe",
+      "url": "https://www.cafelouvre.cz/en/",
+      "sourceType": "operator's own site",
+      "address": "\"Národní 22 Prague 1 110 00\"",
+      "operatingEvidence": "Live hours banner \"TODAY WE ARE OPEN: 08:00 – 23:30\" and an online reservation link; no 2026-dated content found.",
+      "hours": "\"Mo - Fr: 08:00 - 23:30\"; \"Sa - Su: 09:00 - 23:30\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Café Savoy",
+      "kind": "cafe",
+      "url": "https://cafesavoy.ambi.cz/en/",
+      "sourceType": "operator's own site (Ambiente)",
+      "address": "\"Vítězná 5, 150 00 Praha 5, Malá Strana\"",
+      "operatingEvidence": "Published weekly and public-holiday hours with reservation and menu links; no 2026-dated content found and the menu page was not readable.",
+      "hours": "Mon–Fri \"08:00 – 22:00\"; Sat–Sun \"09:00 – 22:00\"; public holidays \"09:00 – 22:00\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Prague Zoo",
+      "kind": "park",
+      "url": "https://www.zoopraha.cz/en/before-visit/opening-time",
+      "sourceType": "official public operator (Prague Zoo, a City of Prague organisation)",
+      "address": "U Trojského zámku 120/3, 171 00 Praha 7",
+      "operatingEvidence": "Home page news \"Prague Zoo Attracts Visitors with New Animal Babies This Autumn\" (macaque births on 25 September, 7 and 12 October, year not stated) and a promoted new Ball's Pyramid exhibition; footer \"(c) 2026\".",
+      "hours": "October \"9 am – 5 pm\"; November–December \"9 am – 4 pm\"; ticket offices and pavilions close earlier; the fur seal exhibit is closed every Friday for pool cleaning",
+      "confidence": "medium"
+    },
+    {
+      "name": "National Technical Museum",
+      "kind": "museum",
+      "url": "https://www.ntm.cz/en",
+      "sourceType": "official public operator (National Technical Museum)",
+      "address": "\"Kostelní 42, Prague 7\"",
+      "operatingEvidence": "Exhibitions \"What Made The Railways, What the Railways Made\" (3 Oct 2025 – 7 Feb 2027) and \"The Saga of the Hainz Family\" (14 Oct 2026 – 28 Mar 2027); notice that the Postal Museum in Prague reopened \"From June 11, 2026\".",
+      "hours": "Main Building Tuesday–Sunday 09:00–18:00, Monday \"Closed\"; \"If Monday is a state holiday the museum is open: 9:00-18:00.\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Municipal House (Obecní dům)",
+      "kind": "landmark",
+      "url": "https://www.obecnidum.cz/en/",
+      "sourceType": "operator's own site (Obecní dům, a.s., owned by the City of Prague)",
+      "address": "\"náměstí Republiky 1090/5, 111 21 Praha 1 – Staré Město\"",
+      "operatingEvidence": "Programme lists Rossini \"Le Comte Ory\" on 24 October 2026 at 19:30 in Smetana Hall and Christian Van Horn \"Devils and Kings\" on 8 November at 19:30; one event notice says \"rescheduled for 2027\".",
+      "hours": "not published on page read (tour hours on a separate page not read)",
+      "confidence": "high"
+    },
+    {
+      "name": "Strahov Monastery",
+      "kind": "landmark",
+      "url": "https://www.strahovskyklaster.cz/en",
+      "sourceType": "operator's own site (Royal Canonry of Premonstratensians at Strahov)",
+      "address": "\"Strahovské nádvoří 132/1, 118 00 Praha 1 — Hradčany\"",
+      "operatingEvidence": "News dated 13 October 2026 (\"Chapter Meeting of the Canonry\") and \"Concert in the Basilica – 23 September 2026\".",
+      "hours": "\"Opening hours of the Library and Gallery 9:00 — 17:00\" (days not specified)",
+      "confidence": "high"
+    },
+    {
+      "name": "Mucha Museum",
+      "kind": "museum",
+      "url": "https://www.mucha.cz/en/",
+      "sourceType": "operator's own site (Muchovo muzeum s.r.o.)",
+      "address": "\"Kaunický Palace, Panská 7, 110 00 Prague 1\"",
+      "operatingEvidence": "Published daily opening hours; only 2026 reference is the footer \"© 2026 Muchovo muzeum s.r.o.\".",
+      "hours": "\"Opened daily from 10:00 to 18:00\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Museum Kampa",
+      "kind": "museum",
+      "url": "https://www.museumkampa.cz/visit/",
+      "sourceType": "operator's own site (The Jan and Meda Mládek Foundation)",
+      "address": "\"U Sovových mlýnů 503/2, 118 00 Prague 1 – Malá Strana\"",
+      "operatingEvidence": "Current exhibitions \"Milan Kunc – Pop Renaissance\" and \"Mikuláš Medek, Jan Koblasa – In Defiance\" (both 3 Oct 2026 – 17 Jan 2027); all-exhibitions adult ticket 360 CZK.",
+      "hours": "Monday–Sunday 10 am–6 pm, last entry 5:30 pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Museum of Prague (Main Building)",
+      "kind": "museum",
+      "url": "https://www.muzeumprahy.cz/en/exhibitions-and-events/cloud",
+      "sourceType": "official public operator (Museum of Prague / Prague City Museum, City of Prague)",
+      "address": "\"Na Poříčí 1554/52, 180 00 Prague 8\"",
+      "operatingEvidence": "Free interactive children's exhibition \"Cloud\", \"starting February 24, 2026\"; the page notes the museum is currently not barrier-free because of the Florenc metro reconstruction.",
+      "hours": "\"Tue–Sun 10 am–6 pm, Thursday until 8 pm\" (from the museum home page)",
+      "confidence": "high"
+    },
+    {
+      "name": "House at the Golden Ring (Museum of Prague)",
+      "kind": "museum",
+      "url": "https://www.muzeumprahy.cz/en/visit/dum-u-zlateho-prstenu-4",
+      "sourceType": "official public operator (Museum of Prague / Prague City Museum, City of Prague)",
+      "address": "\"Týnská 630/6, 110 00 Prague 1 – Old Town\"",
+      "operatingEvidence": "Current exhibition \"Prague in the Time of Charles IV\" and a nine-metre animation of Prague under Rudolf II, with published admission (CZK 180 standard); no 2026 dates on the page.",
+      "hours": "Tuesday–Sunday 10 am–6 pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Café Imperial",
+      "kind": "meal",
+      "url": "https://www.cafeimperial.cz/en/",
+      "sourceType": "operator's own site",
+      "address": "\"Na Poříčí 15, Praha 1\"",
+      "operatingEvidence": "Says it is \"recognised by the Michelin Guide 2026\" and lists a \"Christmas menu 25. – 27. 12. 2026\" and a New Year's Eve 2026 menu; breakfast buffet \"every day from 7:00\".",
+      "hours": "\"Open daily: Mon - Sun 7:00 - 23:00\"",
+      "confidence": "high"
+    },
+    {
+      "name": "La Degustation Bohême Bourgeoise",
+      "kind": "meal",
+      "url": "https://ladegustation.ambi.cz/en/",
+      "sourceType": "operator's own site (Ambiente)",
+      "address": "\"Haštalská 18, 110 00 Praha 1\"",
+      "operatingEvidence": "Published daily service hours and a reservation link; no 2026-dated content found.",
+      "hours": "Monday–Sunday 11:30–15:00 and 18:00–00:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Field",
+      "kind": "meal",
+      "url": "https://www.fieldrestaurant.cz/en/",
+      "sourceType": "operator's own site",
+      "address": "\"U Milosrdných 12, 110 00 Praha 1\"",
+      "operatingEvidence": "Online and phone reservations; \"We can only hold your reservations for 15 minutes.\" Smart-casual dress code, not suitable for children under 6. No 2026-dated content found.",
+      "hours": "Mon–Fri 11:00–14:30, 18:00–22:30; Sat 12:00–15:00, 18:00–22:30; Sun 12:00–15:00, 18:00–22:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Kantýna",
+      "kind": "meal",
+      "url": "https://kantyna.ambi.cz/en/",
+      "sourceType": "operator's own site (Ambiente)",
+      "address": "\"Politických vězňů 1511/5, 110 00 PRAHA 1\"",
+      "operatingEvidence": "Published weekly hours for Kantýna and The Butchers; no 2026-dated content found.",
+      "hours": "Monday–Saturday 11:30–23:00; Sunday 11:30–22:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "U Zlatého tygra",
+      "kind": "bar",
+      "url": "https://www.uzlatehotygra.cz/",
+      "sourceType": "operator's own site",
+      "address": "\"Husova 17 110 00 Praha 1\"",
+      "operatingEvidence": "Published daily hours and phone reservations (\"Rezervace na tel.\"); footer \"© 2026 U Zlatého Tygra\".",
+      "hours": "Every day 15:00–23:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Hemingway Bar",
+      "kind": "bar",
+      "url": "https://www.hemingwaybar.cz/bar-praha/",
+      "sourceType": "operator's own site",
+      "address": "\"Opatovická 1737/3\", Praha 1",
+      "operatingEvidence": "Online booking form (\"Rezervace ONLINE\") and published hours; no 2026-dated content found.",
+      "hours": "Mon–Thu and Sun 17:00–01:00; Fri–Sat 17:00–02:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Anonymous Bar",
+      "kind": "bar",
+      "url": "https://www.anonymousbar.cz/",
+      "sourceType": "operator's own site (AnonymouS Concept s.r.o.)",
+      "address": "\"Michalská 12, Praha 1\"",
+      "operatingEvidence": "Booking link (\"Rezervace\") and published hours; only 2026 reference is \"Copyright © 2011 - 2026\".",
+      "hours": "\"17:00 – 02:00\" daily; \"Public holidays are considered as Sundays\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Café Slavia",
+      "kind": "cafe",
+      "url": "https://www.cafeslavia.cz/",
+      "sourceType": "operator's own site",
+      "address": "\"Národní 1, Praha 1\"",
+      "operatingEvidence": "Current reservation rules: weekend bookings \"only from 19:00\" and none on public holidays; staff usually find a table within about 10 minutes. No 2026-dated content found.",
+      "hours": "\"Po-So 9:00-23:00, Ne 9:00-22:00\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Můj šálek kávy",
+      "kind": "cafe",
+      "url": "https://www.mujsalekkavy.cz/en/",
+      "sourceType": "operator's own site",
+      "address": "\"Křižíkova 105, Praha 8\"",
+      "operatingEvidence": "Breakfast and coffee menu links and an online reservation form; no 2026-dated content found.",
+      "hours": "\"Po-Pá: 9-21, So: 9-20, Ne: 10-18\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Eska (Karlín)",
+      "kind": "bakery",
+      "url": "https://eska.ambi.cz/en/",
+      "sourceType": "operator's own site (Ambiente)",
+      "address": "\"Pernerova 49, 186 00 Praha 8\"",
+      "operatingEvidence": "Ground-floor bakery with brunch and a shop for \"a long breakfast or a quick lunch\"; published hours. No 2026-dated content found.",
+      "hours": "Mon–Fri 08:00–18:00; Sat–Sun 09:00–18:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Eska (Letná)",
+      "kind": "bakery",
+      "url": "https://eska.ambi.cz/en/",
+      "sourceType": "operator's own site (Ambiente)",
+      "address": "\"Veletržní 290/42, 170 00 Praha 7\"",
+      "operatingEvidence": "Sweet and savoury breakfasts to go, baked goods and Nordbeans coffee; bread made from \"three-stage rye sourdough\". No 2026-dated content found.",
+      "hours": "Mon–Fri 07:30–19:00; Sat–Sun 09:00–19:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Myšák (Vodičkova)",
+      "kind": "bakery",
+      "url": "https://mysak.ambi.cz/en/",
+      "sourceType": "operator's own site (Ambiente)",
+      "address": "\"Vodičkova 710/31, 110 00 Praha 1\"",
+      "operatingEvidence": "Traditional Czech desserts and breakfasts, café downstairs with bakers upstairs; the site says a third patisserie at Prague Castle opened in 2026.",
+      "hours": "Mon–Fri 08:00–19:00; Sat–Sun 09:00–19:00",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Prague Castle",
+      "reason": "Official site hrad.cz returned HTTP 403 Forbidden to automated reading (three pages tried); not bypassed. Not evidence of closure.",
+      "url": "https://www.hrad.cz/en/prague-castle-for-visitors"
+    },
+    {
+      "name": "Charles Bridge",
+      "reason": "Public bridge with no operator website giving an address and operating evidence; only tourism-board pages available, which are excluded.",
+      "url": ""
+    },
+    {
+      "name": "Old Town Square",
+      "reason": "Public square with no operator website giving operating evidence; the Old Town Hall page is on prague.eu (Prague City Tourism, a tourism board), which is excluded.",
+      "url": "http://prague.eu/en/object/places/101/old-town-hall-with-astronomical-clock"
+    },
+    {
+      "name": "Letna viewpoint",
+      "reason": "Public park viewpoint; no official operator page reviewed with address and operating evidence.",
+      "url": ""
+    },
+    {
+      "name": "Charles Bridge at sunrise",
+      "reason": "generic, not a place (time-of-day variant of Charles Bridge)",
+      "url": ""
+    },
+    {
+      "name": "Evening classical music",
+      "reason": "generic, not a place (Rudolfinum added as a specific venue)",
+      "url": ""
+    },
+    {
+      "name": "Czech pub lunch",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Vinohrady dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Bakery and coffee morning",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Mala Strana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Vinohrady",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Old Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Old Town walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Mala Strana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Vinohrady",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Vinohrady",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Charles Bridge",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Old Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Charles Bridge at sunrise",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Mala Strana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Old Town Square",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Old Town evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Mala Strana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Vinohrady",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Old Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Charles Bridge",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Mala Strana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Vinohrady",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Old Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Charles Bridge",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Old Town cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Letna viewpoint",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Vinohrady",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Vinohrady",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Old Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Old Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Mala Strana bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Charles Bridge",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Vinohrady",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Old Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Old Town Square",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Vinohrady",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Old Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Mala Strana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Vinohrady",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Old Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Old Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Mala Strana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Prague Castle",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Old Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Mala Strana morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Charles Bridge",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Vinohrady",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Old Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Mala Strana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Vinohrady",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Petřín Lookout Tower",
+      "reason": "Not listed among the Museum of Prague's buildings on its official site; the en.muzeumprahy.cz page tried does not resolve (DNS not found). Only remaining source would be a tourism board, which is excluded.",
+      "url": "https://en.muzeumprahy.cz/petrin-lookout-tower/"
+    },
+    {
+      "name": "Old Town Bridge Tower",
+      "reason": "Not listed among the Museum of Prague's buildings on its official site; the en.muzeumprahy.cz page tried does not resolve (DNS not found). Only remaining source would be a tourism board, which is excluded.",
+      "url": "https://en.muzeumprahy.cz/old-town-bridge-tower/"
+    },
+    {
+      "name": "Clam-Gallas Palace (Museum of Prague)",
+      "reason": "Official site lists it as \"Temporarily closed\" with \"See you in spring 2028\".",
+      "url": "https://www.muzeumprahy.cz/en/visit/clam-gallasuv-palac-12"
+    },
+    {
+      "name": "U Fleků",
+      "reason": "Home page read but gave no address, hours or 2026 content; the contact/where-to-find-us page returned HTTP 404. Not evidence of closure.",
+      "url": "https://www.ufleku.cz/en/"
+    },
+    {
+      "name": "Black Angel's Bar",
+      "reason": "Fetch failed twice (connection reset, ECONNRESET); not bypassed. Not evidence of closure.",
+      "url": "https://www.blackangelsbar.cz/"
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "National Museum (Historical Building)",
+        "Jewish Museum in Prague",
+        "Strahov Monastery",
+        "Municipal House (Obecní dům)"
+      ],
+      "bestFirstTimers": [
+        "National Museum (Historical Building)",
+        "Jewish Museum in Prague",
+        "House at the Golden Ring (Museum of Prague)",
+        "Strahov Monastery"
+      ],
+      "bestRestaurants": [
+        "La Degustation Bohême Bourgeoise",
+        "Field",
+        "Café Imperial",
+        "Kantýna"
+      ],
+      "bestBudget": [
+        "Museum of Prague (Main Building)",
+        "Vyšehrad",
+        "Lokál Dlouhááá",
+        "U Zlatého tygra"
+      ],
+      "bestLuxury": [
+        "La Degustation Bohême Bourgeoise",
+        "Field",
+        "Rudolfinum (Czech Philharmonic)",
+        "Municipal House (Obecní dům)"
+      ],
+      "bestCouples": [
+        "Rudolfinum (Czech Philharmonic)",
+        "Hemingway Bar",
+        "Field",
+        "Museum Kampa"
+      ],
+      "bestKids": [
+        "Prague Zoo",
+        "National Technical Museum",
+        "Museum of Prague (Main Building)",
+        "National Museum (Historical Building)"
+      ],
+      "bestSolo": [
+        "National Gallery Prague (Trade Fair Palace)",
+        "Museum Kampa",
+        "Mucha Museum",
+        "Café Slavia"
+      ],
+      "bestUnique": [
+        "Strahov Monastery",
+        "U Zlatého tygra",
+        "National Technical Museum",
+        "Rudolfinum (Czech Philharmonic)"
+      ],
+      "bestBreakfast": [
+        "Café Imperial",
+        "Eska (Letná)",
+        "Café Louvre",
+        "Myšák (Vodičkova)"
+      ],
+      "bestLunch": [
+        "Lokál Dlouhááá",
+        "Kantýna",
+        "Eska (Karlín)",
+        "Field"
+      ],
+      "bestDinner": [
+        "La Degustation Bohême Bourgeoise",
+        "Field",
+        "Lokál Dlouhááá",
+        "Kantýna"
+      ],
+      "bestCocktails": [
+        "Hemingway Bar",
+        "Anonymous Bar"
+      ],
+      "bestBakeries": [
+        "Eska (Karlín)",
+        "Eska (Letná)",
+        "Myšák (Vodičkova)"
+      ],
+      "bestCoffee": [
+        "Můj šálek kávy",
+        "Café Slavia",
+        "Café Louvre",
+        "Café Savoy"
+      ]
+    },
+    "queries": {
+      "National Museum (Historical Building)": "National Museum Václavské náměstí 68 Prague",
+      "National Gallery Prague (Trade Fair Palace)": "Trade Fair Palace National Gallery Dukelských hrdinů 47 Prague",
+      "Jewish Museum in Prague": "Jewish Museum in Prague Maiselova 15 Prague",
+      "Vyšehrad": "Vyšehrad V Pevnosti 163/2 Prague",
+      "Rudolfinum (Czech Philharmonic)": "Rudolfinum Alšovo nábřeží 79/12 Prague",
+      "Lokál Dlouhááá": "Lokál Dlouhááá Dlouhá 33 Prague",
+      "Café Louvre": "Café Louvre Národní 22 Prague",
+      "Café Savoy": "Café Savoy Vítězná 5 Prague",
+      "Prague Zoo": "Prague Zoo U Trojského zámku 120/3 Prague",
+      "National Technical Museum": "National Technical Museum Kostelní 42 Prague",
+      "Municipal House (Obecní dům)": "Obecní dům náměstí Republiky 5 Prague",
+      "Strahov Monastery": "Strahov Monastery Strahovské nádvoří 132/1 Prague",
+      "Mucha Museum": "Mucha Museum Panská 7 Prague",
+      "Museum Kampa": "Museum Kampa U Sovových mlýnů 503/2 Prague",
+      "Museum of Prague (Main Building)": "Museum of Prague Na Poříčí 1554/52 Prague",
+      "House at the Golden Ring (Museum of Prague)": "House at the Golden Ring Týnská 630/6 Prague",
+      "Café Imperial": "Café Imperial Na Poříčí 15 Prague",
+      "La Degustation Bohême Bourgeoise": "La Degustation Bohême Bourgeoise Haštalská 18 Prague",
+      "Field": "Field Restaurant U Milosrdných 12 Prague",
+      "Kantýna": "Kantýna Politických vězňů 1511/5 Prague",
+      "U Zlatého tygra": "U Zlatého tygra Husova 17 Prague",
+      "Hemingway Bar": "Hemingway Bar Opatovická 1737/3 Prague",
+      "Anonymous Bar": "Anonymous Bar Michalská 12 Prague",
+      "Café Slavia": "Café Slavia Národní 1 Prague",
+      "Můj šálek kávy": "Můj šálek kávy Křižíkova 105 Prague",
+      "Eska (Karlín)": "Eska Pernerova 49 Prague",
+      "Eska (Letná)": "Eska Veletržní 290/42 Prague",
+      "Myšák (Vodičkova)": "Myšák Vodičkova 710/31 Prague"
+    },
+    "summary": "Museums, the Jewish Quarter, Strahov, Vyšehrad and the zoo, with historic cafés, bakeries, Czech pubs, tasting menus and cocktail bars checked against their own websites.",
+    "highlights": [
+      "National Museum (Historical Building)",
+      "Jewish Museum in Prague",
+      "Strahov Monastery",
+      "Municipal House (Obecní dům)"
+    ],
+    "tip": "Keep Mondays for the National Museum, Museum Kampa, the Mucha Museum or the zoo, because the Trade Fair Palace, the National Technical Museum and the Museum of Prague's main building close that day, and avoid Saturdays for the Jewish Museum.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mondays and Saturdays",
+        "copy": "The National Gallery's Trade Fair Palace, the National Technical Museum and the Museum of Prague's main building and House at the Golden Ring are closed on Mondays. The Jewish Museum in Prague closes on Saturdays and Jewish holidays."
+      },
+      {
+        "label": "Autumn hours",
+        "value": "Earlier closing",
+        "copy": "From 18 October the Jewish Museum sites close at 4:30 p.m., and Prague Zoo closes at 5 pm in October and 4 pm in November, with ticket offices and pavilions closing earlier."
+      },
+      {
+        "label": "Booking and walk-ins",
+        "value": "Book the big tables",
+        "copy": "Café Imperial suggests reserving \"even weeks in advance\", and Field holds reservations for only 15 minutes. Café Slavia says you rarely need to book, takes weekend reservations only from 19:00 and none on public holidays."
+      },
+      {
+        "label": "Rules",
+        "value": "Dress and age",
+        "copy": "Field asks for smart casual and is not suitable for children under 6. At the Rudolfinum, the Czech Philharmonic turns no one away for clothing, though a dark suit or business formal is the safe choice for evening concerts."
+      }
+    ],
+    "dek": "Plan museum days around Monday and Saturday closures, book Café Imperial and Field ahead, and save one evening for a concert at the Rudolfinum or the Municipal House.",
+    "intro": [
+      "This Prague guide is built from places whose own websites were read on 21 October 2026. You can start at the National Museum's Historical Building at Václavské náměstí 68, open daily from 10:00 to 18:00, where Maps and Atlases from the Kinsky Library runs until 3 January 2027. Entry pauses when the building is full, usually around weekend noon. The Jewish Museum in Prague, based at Maiselova 15, opens 9 a.m. to 4:30 p.m. from 18 October and closes on Saturdays and Jewish holidays. Up at Hradčany, the Strahov Monastery library and gallery open from 9:00 to 17:00.",
+      "For art, Museum Kampa in Malá Strana opens daily from 10 am to 6 pm and shows Milan Kunc – Pop Renaissance until 17 January 2027. The Mucha Museum on Panská opens daily from 10:00 to 18:00. The National Gallery's Trade Fair Palace in Prague 7 has Zbyněk Sekal — Blue Flower until 31 January 2027 but closes on Mondays. The Museum of Prague's House at the Golden Ring on Týnská covers Prague under Charles IV, and its main building on Na Poříčí stays open until 8 pm on Thursdays.",
+      "With children, you can try Prague Zoo in Troja, open 9 am to 5 pm in October and to 4 pm in November and December. The National Technical Museum on Kostelní opens Tuesday to Sunday and has The Saga of the Hainz Family from 14 October 2026. The Museum of Prague's free Cloud exhibition is aimed at young children. In the evening, the Czech Philharmonic plays the Rudolfinum with Semyon Bychkov on 22 and 23 October, and the Municipal House stages Rossini's Le Comte Ory on 24 October.",
+      "For food, Café Imperial on Na Poříčí serves a breakfast buffet from 7:00 daily and says it is in the Michelin Guide 2026. Eska bakes in Karlín and Letná, and Myšák on Vodičkova serves Czech desserts. For Czech beer, Lokál Dlouhááá opens from 11:00 and U Zlatého tygra on Husova from 15:00. Field and La Degustation Bohême Bourgeoise take reservations, and Field holds a table for only 15 minutes. Afterwards, Hemingway Bar opens from 17:00 and Anonymous Bar on Michalská serves until 02:00."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair the National Museum on Wenceslas Square with a weekday at the Jewish Museum, which closes on Saturdays, then walk up to the Strahov Monastery library, open 9:00 to 17:00."
+      ],
+      [
+        "A slower morning",
+        "Start with the 7:00 breakfast buffet at Café Imperial or a pastry at Eska in Letná, then spend the late morning at Museum Kampa, open daily from 10 am."
+      ],
+      [
+        "Before booking",
+        "Reserve Café Imperial and Field ahead, check concert dates for the Rudolfinum and the Municipal House, and remember several museums close on Mondays."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Prague Castle's official site (hrad.cz) refused automated reading with HTTP 403, so the castle is not included; that is not evidence of closure. Black Angel's Bar could not be read (connection reset), and U Fleků's contact page returned 404, so both are left out. Petřín Lookout Tower and the Old Town Bridge Tower are not listed on the Museum of Prague's own site, and tourism-board pages were excluded by method. Charles Bridge, Old Town Square and the Letná viewpoint are public spaces with no operator page giving operating evidence. Several places (Café Louvre, Café Savoy, Café Slavia, Kantýna, La Degustation Bohême Bourgeoise, Field, Hemingway Bar, Můj šálek kávy, both Eska branches and the House at the Golden Ring) showed current hours or booking but no 2026-dated content, and the Mucha Museum, U Zlatého tygra and Anonymous Bar carried only a 2026 copyright line. Prague Zoo's monthly hours and news gave no year. Vyšehrad and the Strahov Monastery published only partial hours, and Municipal House tour hours and Rudolfinum box-office hours were not on the pages read.",
+  "injectionLikeText": []
+}

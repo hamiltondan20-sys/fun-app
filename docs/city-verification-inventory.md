@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 18.
-- Classifier-passed (published, not fully documented in that format): 171.
+- Source-verified (complete dated evidence format): 20.
+- Classifier-passed (published, not fully documented in that format): 169.
 - Held back: 295.
 - Published destinations: 189; country hubs: 19; sitemap URLs: 217.
 
@@ -44,7 +44,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Amalfi, Italy | amalfi | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Amasra, Turkey | amasra | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Amman, Jordan | amman | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
-| Amsterdam, Netherlands | amsterdam | source-verified | source-checked | 22 | 47 | 15 | 15 | None |
+| Amsterdam, Netherlands | amsterdam | source-verified | source-checked | 23 | 50 | 15 | 15 | None |
 | Anchorage, United States | anchorage | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Angel Falls, Venezuela | angel-falls | classifier-passed | not-reviewed | 0 | 5 | 15 | 3 | None |
 | Angkor Wat, Cambodia | angkor-wat | classifier-passed | not-reviewed | 0 | 11 | 15 | 7 | None |
@@ -73,7 +73,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Bali, Indonesia | bali | held-back | not-reviewed | 0 | 3 | 15 | 3 | has 3 named places across 3 categories; needs at least 5 named places across 3 categories |
 | Banff, Canada | banff | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
 | Bangkok, Thailand | bangkok | classifier-passed | not-reviewed | 0 | 27 | 15 | 11 | None |
-| Barcelona, Spain | barcelona | source-verified | source-checked | 22 | 40 | 15 | 15 | None |
+| Barcelona, Spain | barcelona | source-verified | source-checked | 24 | 46 | 15 | 15 | None |
 | Bariloche, Argentina | bariloche | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Bath, United Kingdom | bath | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
 | Beijing, China | beijing | classifier-passed | not-reviewed | 0 | 22 | 15 | 10 | None |
@@ -240,7 +240,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Iquitos, Peru | iquitos | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Isfahan, Iran | isfahan | classifier-passed | not-reviewed | 0 | 8 | 15 | 4 | None |
 | Isla Holbox, Mexico | isla-holbox | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Istanbul, Turkey | istanbul | classifier-passed | not-reviewed | 0 | 25 | 15 | 11 | None |
+| Istanbul, Turkey | istanbul | source-verified | source-checked | 25 | 43 | 15 | 13 | None |
 | Izmir, Turkey | izmir | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Jackson Hole, United States | jackson-hole | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Jaipur, India | jaipur | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
@@ -337,7 +337,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Nazare, Portugal | nazare | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Nepal Himalayas, Nepal | nepal-himalayas | held-back | not-reviewed | 0 | 3 | 15 | 3 | has 3 named places across 3 categories; needs at least 5 named places across 3 categories |
 | New Orleans, United States | new-orleans | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| New York, United States | new-york-city | source-verified | source-checked | 25 | 50 | 15 | 15 | None |
+| New York, United States | new-york-city | source-verified | source-checked | 30 | 57 | 15 | 15 | None |
 | New Zealand, New Zealand | new-zealand | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
 | Nha Trang, Vietnam | nha-trang | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Niagara Falls, Canada | niagara-falls | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
@@ -382,7 +382,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Porto, Portugal | porto | classifier-passed | not-reviewed | 0 | 20 | 15 | 11 | None |
 | Portsmouth, Dominica | portsmouth | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Positano, Italy | positano | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Prague, Czechia | prague | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Prague, Czechia | prague | source-verified | source-checked | 28 | 50 | 15 | 15 | None |
 | Pretoria, South Africa | pretoria | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Puerto Escondido, Mexico | puerto-escondido | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Puerto Vallarta, Mexico | puerto-vallarta | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
@@ -464,7 +464,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | The Hague, Netherlands | the-hague | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Thessaloniki, Greece | thessaloniki | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
 | Tofino, Canada | tofino | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Tokyo, Japan | tokyo | source-verified | source-checked | 19 | 39 | 14 | 14 | None |
+| Tokyo, Japan | tokyo | source-verified | source-checked | 21 | 42 | 14 | 14 | None |
 | Toledo, Spain | toledo | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Toronto, Canada | toronto | classifier-passed | not-reviewed | 0 | 26 | 15 | 12 | None |
 | Toulouse, France | toulouse | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |

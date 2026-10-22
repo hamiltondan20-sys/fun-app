@@ -93,10 +93,33 @@ const newLedger = ledgerText.replace(anchor, anchor + ledgerBlock);
 
 const q = (value) => JSON.stringify(value);
 const trust = `All ${usedPlaces.length} distinct recommendations in this guide were checked against their operators' own websites on ${new Intl.DateTimeFormat("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" }).format(new Date(`${date}T00:00:00Z`))}. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling.`;
+// destination-coverage.js folds country spellings together ("Istanbul, Türkiye" into "Istanbul, Turkey"), so a twin
+// record's unreviewed lists would be merged back in. Drop the twins' lists and queries.
+const COUNTRY_ALIASES = { turkiye: "turkey", republicofturkey: "turkey", czechrepublic: "czechia", unitedstatesofamerica: "unitedstates", usa: "unitedstates", us: "unitedstates", uae: "unitedarabemirates", republicofkorea: "southkorea", holland: "netherlands", england: "unitedkingdom" };
+const comparable = (value) => String(value || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]/g, "");
+const countryKey = (label) => { const country = comparable(label.split(",").at(-1)); return COUNTRY_ALIASES[country] || country; };
+const dataText = ["city-guides", "destinations", "trip-content", "top-100-destinations"].map((name) => {
+  const file = path.join(root, "data", `${name}.js`);
+  return fs.existsSync(file) ? fs.readFileSync(file, "utf8") : "";
+}).join("\n");
+const twinKeys = [...new Set([...dataText.matchAll(/"([^"\n]+, [^"\n]+)": \{/g)].map((match) => match[1]))]
+  .filter((other) => other !== key && other.split(",")[0].trim() === key.split(",")[0].trim() && countryKey(other) === countryKey(key));
 const block = `  // ${key}: source review of ${date} (${researchBase}.md).
   {
     const cityKey = ${q(key)};
-    data.cityGuideDetailData[cityKey] = {
+${twinKeys.length ? `    for (const twin of ${q(twinKeys)}) {
+      delete data.cityGuideDetailData[twin];
+      delete data.cityPlaceQueries[twin];
+      for (const map of [data.destinationHeroData, data.cityPlanningToolkitData, data.cityEditorialPageData, data.destinationFacts]) {
+        if (map && twin in map) {
+          if (!(cityKey in map)) map[cityKey] = map[twin];
+          delete map[twin];
+        }
+      }
+      const twinGuide = data.cityGuideData.find((item) => item.city === twin);
+      if (twinGuide && !data.cityGuideData.some((item) => item.city === cityKey)) twinGuide.city = cityKey;
+    }
+` : ""}    data.cityGuideDetailData[cityKey] = {
 ${CATEGORIES.map((category) => `      ${category}: ${q(detail[category] || [])}`).join(",\n")}
     };
     data.cityPlaceQueries[cityKey] = ${indent(JSON.stringify(Object.fromEntries([...used].map((name) => [name, guide.queries[name]])), null, 2), 4)};

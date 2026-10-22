@@ -1,0 +1,675 @@
+{
+  "city": "Istanbul, Turkey",
+  "checkedOn": "2026-10-21",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Topkapı Palace Museum",
+      "kind": "museum",
+      "url": "https://www.millisaraylar.gov.tr/saraylar/topkapi-sarayi",
+      "sourceType": "official public operator (Milli Saraylar, National Palaces Administration)",
+      "address": "Cankurtaran Mah. Babı Hümayun Cad. No: 1 Sultanahmet/Fatih",
+      "operatingEvidence": "The page publishes current ticket prices, including a combined Topkapı Palace + Aya İrini + Harem ticket at 2,750 TL for foreign visitors that is valid for one day, and a night tour at 4,000 TL for foreign visitors. No 2026-dated notice; the footer reads © 2023.",
+      "hours": "Ticket office 09:00-17:00; \"Kapalı Günler : Salı\" (closed Tuesday); closed Ramazan Bayramı day 1 and New Year's Day",
+      "confidence": "medium"
+    },
+    {
+      "name": "Dolmabahçe Palace",
+      "kind": "museum",
+      "url": "https://www.millisaraylar.gov.tr/saraylar/dolmabahce-sarayi",
+      "sourceType": "official public operator (Milli Saraylar, National Palaces Administration)",
+      "address": "Vişnezade Mahallesi Dolmabahçe Caddesi , Beşiktaş",
+      "operatingEvidence": "Current ticket prices are listed: Selamlık, Harem and Painting Museum together at 2,000 TL for foreign visitors, with combined palace passes valid for one month. No 2026-dated notice.",
+      "hours": "Ticket office 09:00-17:00; \"Kapalı Günler : Pazartesi\" (closed Monday); also closed New Year's Day and the first days of Ramazan and Kurban Bayramı",
+      "confidence": "medium"
+    },
+    {
+      "name": "Istanbul Archaeological Museums",
+      "kind": "museum",
+      "url": "https://muze.gov.tr/muze-detay?SectionId=IAR01&DistId=IAR",
+      "sourceType": "official public operator (Ministry of Culture and Tourism, muze.gov.tr)",
+      "address": "Alemdar Caddesi,Osman Hamdi Bey Yokuşu,Gülhane",
+      "operatingEvidence": "The page is marked \"AÇIK\" (open) and carries a dated notice: \"24.10.2026 tarihinde 1 gün kapalı olacaktır\" (closed for one day on 24 October 2026).",
+      "hours": "09:00-18:30, ticket office closes 17:30; \"Her gün açık\" (open every day)",
+      "confidence": "high"
+    },
+    {
+      "name": "Galata Tower Museum",
+      "kind": "landmark",
+      "url": "https://muze.gov.tr/muze-detay?SectionId=GLT04&DistId=MRK",
+      "sourceType": "official public operator (Ministry of Culture and Tourism, muze.gov.tr)",
+      "address": "Bereketzade, Galata Kulesi, 34421 Beyoğlu/İstanbul",
+      "operatingEvidence": "The page lists daily day hours and a separate night museum session (18:30-22:00), and states that visitors under 18 must come with a parent: \"18 yaş altı çocukların ebeveynleri ile ziyaret etmeleri zorunludur.\" No 2026-dated notice.",
+      "hours": "08:30-18:30 (ticket office closes 18:14); night museum 18:30-22:00; open every day",
+      "confidence": "medium"
+    },
+    {
+      "name": "Hagia Sophia History and Experience Museum",
+      "kind": "museum",
+      "url": "https://muze.gov.tr/muze-detay?SectionId=YSM01&DistId=MRK",
+      "sourceType": "official public operator (Ministry of Culture and Tourism, muze.gov.tr)",
+      "address": "Binbirdirek Mahallesi. At Meydanı Sokak. No:10 Fatih/ İstanbul",
+      "operatingEvidence": "The page lists daily hours and a general admission price of €25, and notes \"Müzekart geçerli değildir\" (the Museum Card is not accepted). No 2026-dated notice.",
+      "hours": "09:00-20:00, ticket office closes 19:00; open every day",
+      "confidence": "medium"
+    },
+    {
+      "name": "Istanbul Modern",
+      "kind": "museum",
+      "url": "https://www.istanbulmodern.org/en",
+      "sourceType": "operator's own site",
+      "address": "Kılıç Ali Paşa Mahallesi, Tophane Iskele Caddesi No:1/1 34433 Beyoğlu-İstanbul",
+      "operatingEvidence": "Current exhibitions are listed, including \"Semiha Berksoy: Aria of All Colors\" (January 22 to November 22, 2026) and \"Beneath the Same Blue\" (dated September 8, 2026). Tickets are sold online through bilet.istanbulmodern.org.",
+      "hours": "\"Open Today: 10.00–18.00\"; weekly hours not published on the pages read",
+      "confidence": "high"
+    },
+    {
+      "name": "Pera Museum",
+      "kind": "museum",
+      "url": "https://www.peramuzesi.org.tr/ziyaret",
+      "sourceType": "operator's own site",
+      "address": "Meşrutiyet Caddesi No:65 34430 Tepebaşı - Beyoğlu - İstanbul",
+      "operatingEvidence": "The homepage lists current exhibitions, including \"Frank Bowling: Yaratım ve Yıkım\" and \"Osman Hamdi Bey\", plus events dated 25 October 2026. Tickets are 450 TL full and 250 TL reduced, and students enter free on Wednesdays.",
+      "hours": "Tuesday-Saturday 10:00-19:00, Friday 10:00-22:00, Sunday 12:00-18:00; \"Müze Pazartesi günü kapalıdır\" (closed Monday)",
+      "confidence": "high"
+    },
+    {
+      "name": "Miniaturk",
+      "kind": "park",
+      "url": "https://www.miniaturk.com.tr",
+      "sourceType": "operator's own site",
+      "address": "Örnektepe Mahallesi, İmrahor Caddesi,No.7 Sütlüce 34445 Beyoğlu – İstanbul",
+      "operatingEvidence": "Current ticket prices are published: \"Yabancı Bilet\" (foreign visitor) ₺900, full ₺330, and combined tickets for foreign visitors at ₺1350. No 2026-dated notice.",
+      "hours": "10:00-18:00, \"Pazartesi hariç\" (every day except Monday)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Grand Bazaar",
+      "kind": "market",
+      "url": "https://www.kapalicarsi.com.tr/ulasim-iletisim",
+      "sourceType": "official body of the bazaar's traders (Kapalı Çarşı Esnafları Derneği)",
+      "address": "Kalpakçılar Cad. Sorguçlu Han No: 22 Kapalıçarşı Beyazıt İstanbul (association office inside the bazaar)",
+      "operatingEvidence": "The site posts 2026 news, including a 05/04/2026 item on the completed property owners' board election (\"KAPALI ÇARŞI KAT MALİKLERİ YÖNETİM KURULU SEÇİMİ TAMAMLANDI\"). The footer reads \"2026 - Kapalı Çarşı Esnafları Derneği\".",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mikla",
+      "kind": "meal",
+      "url": "https://www.miklarestaurant.com/reservation",
+      "sourceType": "operator's own site",
+      "address": "Meşrutiyet Caddesi No:15, 34430, Beyoğlu, İstanbul (The Marmara Pera)",
+      "operatingEvidence": "Online booking is live and asks for a card guarantee of 35 euros per person (\"No charges will be made unless there is a no-show\"). The current menu lists Mikla Tasting at 10500 TL, and the dress code is \"Smart Chic\" with tracksuits and slippers not accepted.",
+      "hours": "Monday-Saturday 18:00-24:00, last food order 21:30; closed Sunday and for lunch",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mikla Bar",
+      "kind": "bar",
+      "url": "https://www.miklarestaurant.com",
+      "sourceType": "operator's own site",
+      "address": "Meşrutiyet Caddesi No:15, 34430, Beyoğlu, İstanbul (roof terrace of The Marmara Pera)",
+      "operatingEvidence": "The site describes the roof terrace bar (\"Located at the top of the Marmara Pera\"), and the current menu prices Mikla Signature Cocktails at 980 TL.",
+      "hours": "18:00-02:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Pandeli",
+      "kind": "meal",
+      "url": "https://www.pandeli.com.tr",
+      "sourceType": "operator's own site",
+      "address": "Rüstempaşa Mah. Balık Pazarı Kapısı Sokağı Mısırçarşı İçi 1, D:2, Fatih - İstanbul",
+      "operatingEvidence": "A reservation form is live, and \"12:00 ile 18:00 arası rezervasyon talebi alınmaktadır\" (requests are taken 12:00-18:00). Bookings count only once the restaurant emails a confirmation, and guests are not seated for sweets, tea or coffee only. No 2026 content; the footer reads 2023.",
+      "hours": "not published (reservation requests 12:00-18:00)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Karaköy Lokantası",
+      "kind": "meal",
+      "url": "https://www.karakoylokantasi.com/en/info",
+      "sourceType": "operator's own site",
+      "address": "Kemankeş Mahallesi, Kemankeş Caddesi No:57 Karaköy, Beyoğlu, İstanbul",
+      "operatingEvidence": "The site publishes lunch and dinner service hours, describing lunch as an \"esnaf lokantası\" tradition and dinner as a tavern serving mezes with rakı. It has a reservation section. No 2026-dated content.",
+      "hours": "Lunch Mon-Sat 12:00-16:00, Sun closed; Dinner Mon-Sat 17:30-24:00, Sun 16:00-24:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Neolokal",
+      "kind": "meal",
+      "url": "https://www.neolokal.com",
+      "sourceType": "operator's own site",
+      "address": "SALT Galata, Bankalar Caddesi, Karaköy 34420 İstanbul Türkiye",
+      "operatingEvidence": "The site has a reservation section with phone and email contacts and mentions valet service. The footer reads \"© 2026 neolokal.\"",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Petra Roasting Co. (Şişhane)",
+      "kind": "cafe",
+      "url": "https://www.petracoffee.com",
+      "sourceType": "operator's own site",
+      "address": "Şişhane branch (the site gives the neighbourhood and a map link only, with no street address)",
+      "operatingEvidence": "The site lists current branch hours, and the footer reads \"2026 © Petra Roasting Co.\"",
+      "hours": "Weekdays 8:00-20:00, closed Mondays; weekends 10:00-20:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Sakıp Sabancı Museum",
+      "kind": "museum",
+      "url": "https://www.sakipsabancimuzesi.org/ziyaret",
+      "sourceType": "operator's own site",
+      "address": "Sakıp Sabancı Caddesi No:42 Emirgan 34467 İstanbul",
+      "operatingEvidence": "The museum's current exhibitions include \"Yoko Ono: İçses ve İçyapı\" (\"25 Haziran - 27 Aralık 2026\"). Adult tickets are 450₺, and Tuesdays are free.",
+      "hours": "Tuesday-Sunday 10:00-18:00, ticket sales end 30 minutes before closing; closed Monday, 1 January and the first days of Ramazan and Kurban Bayramı",
+      "confidence": "high"
+    },
+    {
+      "name": "Rahmi M. Koç Museum",
+      "kind": "museum",
+      "url": "https://www.rmk-museum.org.tr/istanbul",
+      "sourceType": "operator's own site",
+      "address": "Rahmi M. Koç Cad. No: 3 Hasköy 34445 İstanbul, Türkiye",
+      "operatingEvidence": "The page publishes weekly hours and a current visitor notice: \"Ziyaretçilerin kullanımı için ücretli ve sınırlı sayıda otopark alanı mevcuttur\" (paid, limited parking for visitors). It links to online ticketing.",
+      "hours": "\"Salı-Cuma: 09:30 - 17:30\", \"Cumartesi-Pazar: 09:30 - 18:00\", \"Pazartesi: Kapalı\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Beylerbeyi Palace",
+      "kind": "museum",
+      "url": "https://www.millisaraylar.gov.tr/saraylar/beylerbeyi-sarayi",
+      "sourceType": "official public operator (Milli Saraylar, National Palaces Administration)",
+      "address": "Beylerbeyi Mah. Abdullah Ağa Cad. No:12, Beylerbeyi/Üsküdar",
+      "operatingEvidence": "Current ticket prices are listed: 800 TL for foreign adults and 100 TL for the garden only, with free entry for children aged 0-6. No 2026-dated notice; the footer reads © 2023.",
+      "hours": "Ticket office 09:00-17:00; closed Monday, New Year's Day and the first days of Ramazan and Kurban Bayramı",
+      "confidence": "medium"
+    },
+    {
+      "name": "Galata Mevlevi Lodge Museum",
+      "kind": "museum",
+      "url": "https://muze.gov.tr/muze-detay?SectionId=GLT01&DistId=MRK",
+      "sourceType": "official public operator (Ministry of Culture and Tourism, muze.gov.tr)",
+      "address": "Galip Dede Cad. No:15, Tünel, 34220",
+      "operatingEvidence": "The page shows the museum's status as \"AÇIK\" (open) and lists hours and Monday closure. No 2026-dated notice and no ticket prices.",
+      "hours": "09:00-18:30, ticket office closes 17:30; closed Monday",
+      "confidence": "medium"
+    },
+    {
+      "name": "Museum of Innocence",
+      "kind": "museum",
+      "url": "https://www.masumiyetmuzesi.org/en/zi-yaret-gün-ve-saatleri",
+      "sourceType": "operator's own site",
+      "address": "Firuzağa Mahallesi, Çukurcuma Caddesi, Dalgıç Çıkmazı, 2, 34425, Beyoğlu, İstanbul, Türkiye",
+      "operatingEvidence": "Current visiting information gives general admission at 750 TL and an audio guide at 50 TL. Tickets are sold at the booth Tuesday to Sunday, 10:00-17:30. No 2026-dated notice.",
+      "hours": "Tuesday-Sunday 10:00-18:00; closed Monday, 1 January and the first days of Eid-ul-Fitr and Eid al-Adha",
+      "confidence": "medium"
+    },
+    {
+      "name": "Kurukahveci Mehmet Efendi (Tahmis)",
+      "kind": "cafe",
+      "url": "https://www.mehmetefendi.com/iletisim",
+      "sourceType": "operator's own site",
+      "address": "Tahmis Sokağı 66 Eminönü 34116 İstanbul",
+      "operatingEvidence": "The contact page lists the Eminönü store as \"MERKEZ\" (head shop). The homepage runs a 2026 World Coffee Day campaign banner, and its footer reads \"© 2018–2026 Kurukahveci Mehmet Efendi\".",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Patisserie de Pera (Pera Palace Hotel)",
+      "kind": "bakery",
+      "url": "https://perapalace.com/",
+      "sourceType": "operator's own site",
+      "address": "Meşrutiyet Cad. No:52 Tepebaşı 34430 Istanbul, Türkiye (TR)",
+      "operatingEvidence": "The hotel's site lists the patisserie with daily hours, \"Haftanın Her Günü, 10:00-18:00\", alongside current hotel events such as a season-opening concert.",
+      "hours": "\"Haftanın Her Günü, 10:00-18:00\" (every day 10:00-18:00)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Kubbeli Saloon (Pera Palace Hotel)",
+      "kind": "cafe",
+      "url": "https://perapalace.com/",
+      "sourceType": "operator's own site",
+      "address": "Meşrutiyet Cad. No:52 Tepebaşı 34430 Istanbul, Türkiye (TR)",
+      "operatingEvidence": "Afternoon tea with live piano is served in the Kubbeli Saloon \"Haftanın her günü 15.00 – 18.00 arasında\" (every day 15:00-18:00).",
+      "hours": "Afternoon tea every day 15:00-18:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Beyti",
+      "kind": "meal",
+      "url": "https://www.beyti.com",
+      "sourceType": "operator's own site",
+      "address": "Orman Sok. No:6-8 Florya-Bakırköy/İstanbul",
+      "operatingEvidence": "The site lists current opening hours and reservation contacts (phone and rezervasyon@beyti.com). No 2026-dated content.",
+      "hours": "\"Açılış/Kapanış: 11:30 - 23:00\", \"Pazartesi: Kapalı\" (closed Monday)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Arkestra",
+      "kind": "meal",
+      "url": "https://arkestra.com.tr",
+      "sourceType": "operator's own site",
+      "address": "Etiler, Dilhayat Sokak No: 28 Besiktas, Istanbul",
+      "operatingEvidence": "Online reservations are live through the site's \"RESERVE ONLINE\" link. Its upstairs Listening Room, \"An audiophile bar serving craft cocktails\", is \"Currently welcoming restaurant guests only.\"",
+      "hours": "\"Thuesday - Saturday: 18:00 - 01:00\" (sic; restaurant hours as published)",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Hagia Sophia area",
+      "reason": "Official site fetch failed with a certificate error (\"unable to verify the first certificate\"); not bypassed. Not evidence of closure.",
+      "url": "https://ayasofyacamii.gov.tr"
+    },
+    {
+      "name": "Blue Mosque and Sultanahmet",
+      "reason": "Official site fetch failed with a certificate error (\"unable to get local issuer certificate\"); not bypassed. Not evidence of closure.",
+      "url": "https://www.sultanahmetcamii.org"
+    },
+    {
+      "name": "Sultanahmet",
+      "reason": "generic, not a place (district)",
+      "url": ""
+    },
+    {
+      "name": "Bosphorus views",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Ferry rides",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Mosque visits",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market and tea time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private Bosphorus cruise",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Mikla dinner",
+      "reason": "duplicate of Mikla (confirmed separately)",
+      "url": ""
+    },
+    {
+      "name": "Hammam spa ritual",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset Bosphorus view",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Rooftop dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Karakoy evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Spice Bazaar snacks",
+      "reason": "Spice Bazaar official site fetch failed with a certificate hostname mismatch; not bypassed. Not evidence of closure.",
+      "url": "https://www.misircarsisi.org"
+    },
+    {
+      "name": "Karakoy cafes",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Old city walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Ferry between sides",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Bosphorus cruise",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Balat streets",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Asian side day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Historic hammam",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sultanahmet kofte stops",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Van Kahvalti Evi",
+      "reason": "No official website found (searched; vankahvaltievi.com does not resolve); only third-party listings, which are not admissible.",
+      "url": "https://www.vankahvaltievi.com"
+    },
+    {
+      "name": "Namli Gurme",
+      "reason": "Official site (namligurme.com.tr, which redirects to namligurmeonline.com) gives only the company contact address (Mumhane Cad. Atilla İş Hanı No:6/A, Karaköy), not a restaurant branch, and publishes no hours; branch address not confirmed.",
+      "url": "https://www.namligurmeonline.com/"
+    },
+    {
+      "name": "Privato Cafe",
+      "reason": "No official website found; only review sites and guides, which are not admissible.",
+      "url": ""
+    },
+    {
+      "name": "Alexandra",
+      "reason": "No official website found (alexandracocktailbar.com does not resolve); only guides and listings, which are not admissible.",
+      "url": "https://www.alexandracocktailbar.com"
+    },
+    {
+      "name": "Moretenders",
+      "reason": "No official website found; only an Instagram account (social media is not admissible) and third-party listings.",
+      "url": ""
+    },
+    {
+      "name": "Karakoy Gulluoglu",
+      "reason": "Official site returned HTTP 403 Forbidden (homepage and contact page); not bypassed. Not evidence of closure.",
+      "url": "https://www.karakoygulluoglu.com"
+    },
+    {
+      "name": "Hafiz Mustafa",
+      "reason": "Official homepage readable but has no branch addresses or hours. Store page returned 404 and online.hafizmustafa.com returned HTTP 403, so no branch could be confirmed.",
+      "url": "https://www.hafizmustafa.com"
+    },
+    {
+      "name": "Galata Simitcisi",
+      "reason": "No official website found (galatasimitcisi.com does not resolve).",
+      "url": "https://www.galatasimitcisi.com"
+    },
+    {
+      "name": "Mandabatmaz",
+      "reason": "Official site fetch failed with a certificate hostname mismatch (cert issued for ihs.com.tr); not bypassed. Not evidence of closure.",
+      "url": "https://www.mandabatmaz.com"
+    },
+    {
+      "name": "Coffee Department",
+      "reason": "No verifiable official website (coffeedepartment.com.tr failed DNS lookup); only third-party listings.",
+      "url": "https://www.coffeedepartment.com.tr"
+    },
+    {
+      "name": "Basilica Cistern (Yerebatan Sarnıcı)",
+      "reason": "Gap candidate. Operator site yerebatan.com closed the connection repeatedly (\"Socket is closed\"). The İBB Kültür AŞ page showed only a truncated address (\"Yerebatan Cad. Alemdar Mah. […]\") with the main article password-protected, so the exact address was not confirmed.",
+      "url": "https://yerebatan.com/"
+    },
+    {
+      "name": "Orient Bar (Pera Palace Hotel)",
+      "reason": "Gap candidate. The official page says the bar is closed with no reopening date: \"Yaz sezonu bitene kadar hizmet vermemektedir\" (not operating until the summer season ends). The page also contained AI-directed text (see injectionLikeText).",
+      "url": "https://perapalace.com/orient-bar"
+    },
+    {
+      "name": "Balıkçı Sabahattin",
+      "reason": "Gap candidate. The official site shows a reservation form and a €35 fish lunch menu, but neither the homepage nor the reservations page gives a street address.",
+      "url": "https://www.balikcisabahattin.com/reservations"
+    },
+    {
+      "name": "Hamdi Restaurant",
+      "reason": "Gap candidate. The official site lists addresses (Eminönü: Tahmis Cad. Kalçın Sokak No:11) but no hours, menu, booking or 2026 content, so there is no evidence it is currently operating.",
+      "url": "https://hamdi.com.tr/"
+    },
+    {
+      "name": "Asitane",
+      "reason": "Gap candidate. The official site's newest dated content is from early 2020 (copyright 2005-2019), and no street address appears on the homepage, so it is not confirmed as currently operating.",
+      "url": "https://www.asitanerestaurant.com"
+    },
+    {
+      "name": "Hacı Bekir",
+      "reason": "Gap candidate. The official site names the Bahçekapı shop but gives no address for it; the only address shown is in Pendik and is not identified as a shop.",
+      "url": "https://www.hacibekir.com"
+    },
+    {
+      "name": "Vefa Bozacısı",
+      "reason": "Gap candidate. Official homepage shows no shop address, hours or current content.",
+      "url": "https://www.vefa.com.tr"
+    },
+    {
+      "name": "Tarihi Sultanahmet Köftecisi Selim Usta",
+      "reason": "Gap candidate. The official homepage names a Sultanahmet branch without a street address or hours, and its branches page returned 404.",
+      "url": "https://www.sultanahmetkoftesi.com"
+    },
+    {
+      "name": "Kronotrop",
+      "reason": "Gap candidate. The official homepage lists no cafe addresses; the branch pages tried returned 404.",
+      "url": "https://www.kronotrop.com.tr"
+    },
+    {
+      "name": "Saray Muhallebicisi",
+      "reason": "Gap candidate. The official site redirects to online.saraymuhallebicisi.com, which returned HTTP 403; not bypassed.",
+      "url": "https://online.saraymuhallebicisi.com/"
+    },
+    {
+      "name": "Divan Pastanesi",
+      "reason": "Gap candidate. divan.com.tr lists branch neighbourhoods only, with no street addresses or hours; divanpastaneleri.com.tr returned no readable content.",
+      "url": "https://www.divan.com.tr"
+    },
+    {
+      "name": "Simit Sarayı",
+      "reason": "Gap candidate. The store page loads branch details dynamically, and no central Istanbul branch address was readable.",
+      "url": "https://www.simitsarayi.com/magazalar"
+    },
+    {
+      "name": "Hünkar Lokantası",
+      "reason": "Gap candidate. The official site returned an empty page.",
+      "url": "https://www.hunkarlokantasi.com"
+    },
+    {
+      "name": "Fazıl Bey",
+      "reason": "Gap candidate. The official domain showed a hosting error page (no site configured).",
+      "url": "https://www.fazilbey.com"
+    },
+    {
+      "name": "Baylan Pastanesi",
+      "reason": "Gap candidate. Connection refused (ECONNREFUSED); not bypassed.",
+      "url": "https://www.baylanpastanesi.com.tr"
+    },
+    {
+      "name": "360 Istanbul",
+      "reason": "Gap candidate. Connection reset (ECONNRESET); not bypassed.",
+      "url": "https://www.360istanbul.com"
+    },
+    {
+      "name": "Develi (Samatya)",
+      "reason": "Gap candidate. Certificate hostname mismatch for www.develikebap.com; not bypassed.",
+      "url": "https://www.develikebap.com"
+    },
+    {
+      "name": "Çiya Sofrası",
+      "reason": "Gap candidate. The official homepage gives no branch addresses, hours or 2026 content.",
+      "url": "https://www.ciya.com.tr"
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Topkapı Palace Museum",
+        "Galata Tower Museum",
+        "Dolmabahçe Palace",
+        "Grand Bazaar"
+      ],
+      "bestFirstTimers": [
+        "Topkapı Palace Museum",
+        "Hagia Sophia History and Experience Museum",
+        "Istanbul Archaeological Museums",
+        "Grand Bazaar"
+      ],
+      "bestRestaurants": [
+        "Mikla",
+        "Pandeli",
+        "Karaköy Lokantası",
+        "Arkestra"
+      ],
+      "bestBudget": [
+        "Karaköy Lokantası",
+        "Kurukahveci Mehmet Efendi (Tahmis)",
+        "Petra Roasting Co. (Şişhane)",
+        "Grand Bazaar"
+      ],
+      "bestLuxury": [
+        "Mikla",
+        "Arkestra",
+        "Kubbeli Saloon (Pera Palace Hotel)",
+        "Dolmabahçe Palace"
+      ],
+      "bestCouples": [
+        "Mikla Bar",
+        "Kubbeli Saloon (Pera Palace Hotel)",
+        "Beylerbeyi Palace",
+        "Neolokal"
+      ],
+      "bestKids": [
+        "Miniaturk",
+        "Rahmi M. Koç Museum",
+        "Galata Tower Museum",
+        "Istanbul Archaeological Museums"
+      ],
+      "bestSolo": [
+        "Istanbul Modern",
+        "Pera Museum",
+        "Museum of Innocence",
+        "Petra Roasting Co. (Şişhane)"
+      ],
+      "bestUnique": [
+        "Museum of Innocence",
+        "Galata Mevlevi Lodge Museum",
+        "Miniaturk",
+        "Sakıp Sabancı Museum"
+      ],
+      "bestBreakfast": [
+        "Petra Roasting Co. (Şişhane)"
+      ],
+      "bestLunch": [
+        "Pandeli",
+        "Karaköy Lokantası",
+        "Beyti"
+      ],
+      "bestDinner": [
+        "Mikla",
+        "Neolokal",
+        "Arkestra",
+        "Beyti"
+      ],
+      "bestCocktails": [
+        "Mikla Bar",
+        "Arkestra"
+      ],
+      "bestBakeries": [
+        "Patisserie de Pera (Pera Palace Hotel)"
+      ],
+      "bestCoffee": [
+        "Petra Roasting Co. (Şişhane)",
+        "Kurukahveci Mehmet Efendi (Tahmis)"
+      ]
+    },
+    "queries": {
+      "Topkapı Palace Museum": "Topkapı Palace Museum Babı Hümayun Caddesi Sultanahmet Istanbul",
+      "Dolmabahçe Palace": "Dolmabahçe Palace Dolmabahçe Caddesi Beşiktaş Istanbul",
+      "Istanbul Archaeological Museums": "Istanbul Archaeological Museums Osman Hamdi Bey Yokuşu Gülhane Istanbul",
+      "Galata Tower Museum": "Galata Tower Museum Bereketzade Beyoğlu Istanbul",
+      "Hagia Sophia History and Experience Museum": "Hagia Sophia History and Experience Museum At Meydanı Sokak 10 Fatih Istanbul",
+      "Istanbul Modern": "Istanbul Modern Tophane İskele Caddesi 1 Beyoğlu Istanbul",
+      "Pera Museum": "Pera Museum Meşrutiyet Caddesi 65 Tepebaşı Istanbul",
+      "Miniaturk": "Miniaturk İmrahor Caddesi 7 Sütlüce Istanbul",
+      "Grand Bazaar": "Grand Bazaar Kalpakçılar Caddesi Beyazıt Istanbul",
+      "Mikla": "Mikla Meşrutiyet Caddesi 15 Beyoğlu Istanbul",
+      "Mikla Bar": "Mikla Bar The Marmara Pera Meşrutiyet Caddesi 15 Istanbul",
+      "Pandeli": "Pandeli Mısır Çarşısı Balık Pazarı Kapısı Sokağı Fatih Istanbul",
+      "Karaköy Lokantası": "Karaköy Lokantası Kemankeş Caddesi 57 Karaköy Istanbul",
+      "Neolokal": "Neolokal SALT Galata Bankalar Caddesi Karaköy Istanbul",
+      "Petra Roasting Co. (Şişhane)": "Petra Roasting Co. Şişhane Istanbul",
+      "Sakıp Sabancı Museum": "Sakıp Sabancı Museum Sakıp Sabancı Caddesi 42 Emirgan Istanbul",
+      "Rahmi M. Koç Museum": "Rahmi M. Koç Museum Rahmi M. Koç Caddesi 3 Hasköy Istanbul",
+      "Beylerbeyi Palace": "Beylerbeyi Palace Abdullah Ağa Caddesi 12 Üsküdar Istanbul",
+      "Galata Mevlevi Lodge Museum": "Galata Mevlevi Lodge Museum Galip Dede Caddesi 15 Tünel Istanbul",
+      "Museum of Innocence": "Museum of Innocence Çukurcuma Caddesi Dalgıç Çıkmazı 2 Beyoğlu Istanbul",
+      "Kurukahveci Mehmet Efendi (Tahmis)": "Kurukahveci Mehmet Efendi Tahmis Sokağı 66 Eminönü Istanbul",
+      "Patisserie de Pera (Pera Palace Hotel)": "Patisserie de Pera Pera Palace Hotel Meşrutiyet Caddesi 52 Tepebaşı Istanbul",
+      "Kubbeli Saloon (Pera Palace Hotel)": "Kubbeli Saloon Pera Palace Hotel Meşrutiyet Caddesi 52 Tepebaşı Istanbul",
+      "Beyti": "Beyti Orman Sokak 6-8 Florya Bakırköy Istanbul",
+      "Arkestra": "Arkestra Dilhayat Sokak 28 Etiler Istanbul"
+    },
+    "summary": "Palaces, state and private museums, the Grand Bazaar, restaurants from Karaköy to Etiler, a historic coffee house, a hotel patisserie and afternoon tea, each checked against its own or its public operator's website.",
+    "highlights": [
+      "Topkapı Palace Museum",
+      "Dolmabahçe Palace",
+      "Galata Tower Museum",
+      "Istanbul Archaeological Museums"
+    ],
+    "tip": "Most closures fall on Mondays: Dolmabahçe Palace, Beylerbeyi Palace, Pera Museum, Sakıp Sabancı Museum, Rahmi M. Koç Museum, Museum of Innocence, Galata Mevlevi Lodge Museum, Miniaturk and Beyti all close then. Topkapı Palace Museum closes on Tuesdays instead.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mondays at most museums; Tuesdays at Topkapı",
+        "copy": "Topkapı Palace Museum lists Tuesday as its closed day, while Dolmabahçe, Beylerbeyi, Pera Museum, Sakıp Sabancı Museum, Rahmi M. Koç Museum and the Museum of Innocence close on Mondays. Istanbul Archaeological Museums is open every day but will close for one day on 24 October 2026."
+      },
+      {
+        "label": "Tickets",
+        "value": "Foreign-visitor prices; a free Tuesday",
+        "copy": "Topkapı's combined Palace, Aya İrini and Harem ticket is 2,750 TL for foreign visitors and is valid for one day, and the Hagia Sophia History and Experience Museum charges €25 and does not accept the Museum Card. Sakıp Sabancı Museum is free on Tuesdays, and Pera Museum is free for students on Wednesdays."
+      },
+      {
+        "label": "Booking",
+        "value": "Card guarantee at Mikla",
+        "copy": "Mikla's online booking asks for a card guarantee of 35 euros per person, charged only for a no-show, and Pandeli counts a booking as confirmed only once the restaurant emails you. Arkestra takes online reservations, and its upstairs Listening Room bar currently welcomes restaurant guests only."
+      },
+      {
+        "label": "Rules",
+        "value": "Dress code, ages, no tea-only tables",
+        "copy": "Mikla follows a Smart Chic dress code, and tracksuits and slippers are not accepted. Galata Tower Museum requires visitors under 18 to come with a parent, and Pandeli does not seat guests for sweets, tea or coffee only."
+      }
+    ],
+    "dek": "Plan your museum days around the Monday closures and Topkapı's Tuesday closure, and book Mikla and Arkestra ahead.",
+    "intro": [
+      "On the historic peninsula, start with Topkapı Palace Museum in Sultanahmet. Its ticket office runs from 09:00 to 17:00, it is closed on Tuesdays, and a combined ticket for the palace, Aya İrini and the Harem is valid for one day. Istanbul Archaeological Museums in Gülhane opens every day from 09:00 to 18:30, though it will close for one day on 24 October 2026. The Hagia Sophia History and Experience Museum opens daily from 09:00 to 20:00. Nearby, Kurukahveci Mehmet Efendi runs its head shop on Tahmis Sokağı in Eminönü, and Pandeli sits inside the Spice Bazaar.",
+      "In Beyoğlu, Galata Tower Museum opens every day from 08:30 to 18:30, with a night session until 22:00, and you must bring a parent if you are under 18. The Galata Mevlevi Lodge Museum on Galip Dede Caddesi is closed on Mondays. Pera Museum stays open until 22:00 on Fridays, and its programme includes events on 25 October 2026. At the Pera Palace Hotel, afternoon tea with live piano is served in the Kubbeli Saloon from 15:00 to 18:00, and Patisserie de Pera opens daily from 10:00 to 18:00. The Museum of Innocence in Çukurcuma charges 750 TL.",
+      "Along the water, Istanbul Modern is showing Semiha Berksoy: Aria of All Colors until 22 November 2026. Sakıp Sabancı Museum in Emirgan has Yoko Ono: İçses ve İçyapı until 27 December 2026 and is free on Tuesdays. Dolmabahçe Palace and Beylerbeyi Palace on the Asian shore both sell tickets from 09:00 to 17:00 and close on Mondays. If you are travelling with children, try the Rahmi M. Koç Museum in Hasköy, open from 09:30 on Tuesday to Sunday, or Miniaturk in Sütlüce, which is closed on Mondays.",
+      "For dinner, Mikla at The Marmara Pera serves Monday to Saturday with last orders at 21:30, asks for a Smart Chic dress code, and has a roof terrace bar open until 02:00. Karaköy Lokantası on Kemankeş Caddesi serves lunch Monday to Saturday and dinner nightly, and Neolokal is at SALT Galata. In Etiler, Arkestra takes online reservations, and its upstairs Listening Room serves craft cocktails to restaurant guests. Beyti in Florya opens from 11:30 to 23:00 and is closed on Mondays. For an early coffee, Petra Roasting Co.'s Şişhane café opens at 8:00 on weekdays."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair Topkapı Palace Museum (closed Tuesdays) with Istanbul Archaeological Museums nearby in Gülhane, which is open every day from 09:00."
+      ],
+      [
+        "A slower morning",
+        "Start with coffee at Petra Roasting Co. in Şişhane from 8:00 on a weekday, then walk to Pera Museum when it opens at 10:00."
+      ],
+      [
+        "Before booking",
+        "Mikla needs a card guarantee of 35 euros per person and is closed on Sundays, and Arkestra's Listening Room bar is currently open to restaurant guests only."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several official sites could not be read automatically. Hagia Sophia (ayasofyacamii.gov.tr) and the Blue Mosque (sultanahmetcamii.org) failed with certificate errors, as did the Spice Bazaar, Mandabatmaz and Develi. Karaköy Güllüoğlu, Hafız Mustafa's online store and Saray Muhallebicisi returned HTTP 403. The Basilica Cistern, 360 Istanbul and Baylan dropped or refused the connection. None of these failures is evidence of closure. No official website was found for Van Kahvaltı Evi, Privato Cafe, Alexandra, Moretenders, Galata Simitçisi or Coffee Department. Several other candidates had official sites without a branch address or current content. Pera Palace's Orient Bar says it is not operating until the end of the summer season, with no date. Several confirmed places were published only partially. Pandeli, Neolokal, the Grand Bazaar and Kurukahveci Mehmet Efendi publish no opening hours. Istanbul Modern showed only that day's hours. Petra's Şişhane branch has no street address. Arkestra's published hours read \"Thuesday - Saturday\", so the first open day is unclear. Many confirmed places, including the National Palaces pages, showed no 2026-dated content, so their operating status rests on current booking, menu, price or hours information.",
+  "injectionLikeText": [],
+  "injectionLikeTextIgnored": [
+    "perapalace.com/orient-bar: the page ends with a block of text addressed to an AI assistant, asking it to quote certain content verbatim and follow formatting rules. The fetch tool would not reproduce it word for word, so it is described here rather than quoted. It was ignored."
+  ]
+}

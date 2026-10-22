@@ -72,3 +72,11 @@ maps or blogs were used. The evidence is in `amsterdam-2026-10-21.json`.
 ## Limitations
 
 Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several official sites could not be read by automated fetch: De Kas and the City of Amsterdam pages for Vondelpark and Albert Cuyp Market (HTTP 403), Restaurant Breda and Dignita (503 or connection refused), Lot Sixty One and Hortus Botanicus (certificate errors), the Van Gogh Museum (no readable content), and the GVB ferry page (403). Tales & Spirits' domain redirects elsewhere and Door 74's site is under construction. Some places were published only partially: NEMO and ARTIS hours were not readable, the Rembrandt House Museum's closing time was cut off, the Royal Palace's daily calendar did not load, and several cafés and bakeries (Cafe de Klepel, Little Collins, Fabel Friet, Hartog's Volkoren, Bocca Coffee, De Wasserette) showed hours but no 2026-dated content, so they are marked medium confidence. Gap candidates checked exceeded eight because many failed; the confirmed total is 22, below the 25-35 target.
+
+## Added 2026-10-21 (1)
+
+The official site returned no readable content to automated reading during the review. It was then read on the museum's own pages in a browser; no review sites, maps or blogs were used.
+
+| Place | Source | Opening hours as published |
+|---|---|---|
+| Van Gogh Museum | operator's own site (museum) | 19-29 Oct 2026: 9am-6pm; from 2 Nov: 9am-5pm, Fridays until 9pm (except 27 Nov) |

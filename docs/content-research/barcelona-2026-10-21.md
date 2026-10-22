@@ -64,3 +64,12 @@ maps or blogs were used. The evidence is in `barcelona-2026-10-21.json`.
 ## Limitations
 
 Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. La Boqueria's official site returned nothing readable, Fundació Joan Miró's site refused automated reading (403) and Brunells' site refused the connection, so they are not included. Bohl, Tapeo, Two Schmucks and Baluard had no reachable official website. Quimet & Quimet and Dr Stravinsky published an address but no hours or current content. Several places were only partly published: Disfrutar and Paradiso show no opening hours, the Aquarium's closing times did not load, Park Güell gives entrances but no street number, MNAC's current exhibitions are undated, and Three Marks Coffee lists two conflicting sets of hours for Ausiàs Marc. The Sagrada Família site also shows an undated notice that the Gaudí House Museum is temporarily closed. This guide has fewer than the 25-place target because of these gaps.
+
+## Added 2026-10-21 (2)
+
+These official sites returned nothing readable, or HTTP 403, to automated reading during the review. Each was then read on its operator's own page in a browser; no review sites, maps or blogs were used.
+
+| Place | Source | Opening hours as published |
+|---|---|---|
+| Mercat de la Boqueria | operator's own site (market) | Monday to Saturday 8:00-20:30 |
+| Fundació Joan Miró | operator's own site (museum foundation) | 1 Nov-31 Mar: Tue-Sun 10am-7pm; 1 Apr-31 Oct: Tue-Sat 10am-8pm, Sun 10am-7pm; closed Monday |

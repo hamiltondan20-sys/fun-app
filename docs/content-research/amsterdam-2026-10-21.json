@@ -553,5 +553,30 @@
     ]
   },
   "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several official sites could not be read by automated fetch: De Kas and the City of Amsterdam pages for Vondelpark and Albert Cuyp Market (HTTP 403), Restaurant Breda and Dignita (503 or connection refused), Lot Sixty One and Hortus Botanicus (certificate errors), the Van Gogh Museum (no readable content), and the GVB ferry page (403). Tales & Spirits' domain redirects elsewhere and Door 74's site is under construction. Some places were published only partially: NEMO and ARTIS hours were not readable, the Rembrandt House Museum's closing time was cut off, the Royal Palace's daily calendar did not load, and several cafés and bakeries (Cafe de Klepel, Little Collins, Fabel Friet, Hartog's Volkoren, Bocca Coffee, De Wasserette) showed hours but no 2026-dated content, so they are marked medium confidence. Gap candidates checked exceeded eight because many failed; the confirmed total is 22, below the 25-35 target.",
-  "injectionLikeText": []
+  "injectionLikeText": [],
+  "additions": [
+    {
+      "checkedOn": "2026-10-21",
+      "method": "The official site returned no readable content to automated reading during the review. It was then read on the museum's own pages in a browser; no review sites, maps or blogs were used.",
+      "places": [
+        {
+          "name": "Van Gogh Museum",
+          "url": "https://www.vangoghmuseum.nl/en/visit/address-and-opening-hours",
+          "sourceType": "operator's own site (museum)",
+          "address": "Museumplein 6, 1071 DJ Amsterdam",
+          "operatingEvidence": "The opening-hours page publishes day-by-day hours for October to December 2026, for example \"19 - 29 October: 9 am to 6 pm\". The tickets page says tickets \"are available online only\" and that every visitor needs a ticket with a start time.",
+          "hours": "19-29 Oct 2026: 9am-6pm; from 2 Nov: 9am-5pm, Fridays until 9pm (except 27 Nov)",
+          "query": "Van Gogh Museum Museumplein 6 Amsterdam",
+          "categories": [
+            "bestAttractions",
+            "bestFirstTimers",
+            "bestCouples"
+          ],
+          "replacesExcluded": [
+            "Van Gogh Museum"
+          ]
+        }
+      ]
+    }
+  ]
 }

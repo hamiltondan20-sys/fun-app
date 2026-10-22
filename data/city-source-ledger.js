@@ -5,6 +5,1047 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Istanbul, Turkey": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-21",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several official sites could not be read automatically. Hagia Sophia (ayasofyacamii.gov.tr) and the Blue Mosque (sultanahmetcamii.org) failed with certificate errors, as did the Spice Bazaar, Mandabatmaz and Develi. Karaköy Güllüoğlu, Hafız Mustafa's online store and Saray Muhallebicisi returned HTTP 403. The Basilica Cistern, 360 Istanbul and Baylan dropped or refused the connection. None of these failures is evidence of closure. No official website was found for Van Kahvaltı Evi, Privato Cafe, Alexandra, Moretenders, Galata Simitçisi or Coffee Department. Several other candidates had official sites without a branch address or current content. Pera Palace's Orient Bar says it is not operating until the end of the summer season, with no date. Several confirmed places were published only partially. Pandeli, Neolokal, the Grand Bazaar and Kurukahveci Mehmet Efendi publish no opening hours. Istanbul Modern showed only that day's hours. Petra's Şişhane branch has no street address. Arkestra's published hours read \"Thuesday - Saturday\", so the first open day is unclear. Many confirmed places, including the National Palaces pages, showed no 2026-dated content, so their operating status rests on current booking, menu, price or hours information.",
+    "sourceUrls": [
+      "docs/content-research/istanbul-2026-10-21.md",
+      "docs/content-research/istanbul-2026-10-21.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Hagia Sophia area",
+        "url": "https://ayasofyacamii.gov.tr",
+        "checkedOn": "2026-10-21",
+        "reason": "Official site fetch failed with a certificate error (\"unable to verify the first certificate\"); not bypassed. Not evidence of closure."
+      },
+      {
+        "name": "Blue Mosque and Sultanahmet",
+        "url": "https://www.sultanahmetcamii.org",
+        "checkedOn": "2026-10-21",
+        "reason": "Official site fetch failed with a certificate error (\"unable to get local issuer certificate\"); not bypassed. Not evidence of closure."
+      },
+      {
+        "name": "Sultanahmet",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place (district)"
+      },
+      {
+        "name": "Bosphorus views",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Ferry rides",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Mosque visits",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market and tea time",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private Bosphorus cruise",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Mikla dinner",
+        "checkedOn": "2026-10-21",
+        "reason": "duplicate of Mikla (confirmed separately)"
+      },
+      {
+        "name": "Hammam spa ritual",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset Bosphorus view",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Rooftop dinner",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Karakoy evening",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Spice Bazaar snacks",
+        "url": "https://www.misircarsisi.org",
+        "checkedOn": "2026-10-21",
+        "reason": "Spice Bazaar official site fetch failed with a certificate hostname mismatch; not bypassed. Not evidence of closure."
+      },
+      {
+        "name": "Karakoy cafes",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Old city walk",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Ferry between sides",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Bosphorus cruise",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Balat streets",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Asian side day",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Historic hammam",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sultanahmet kofte stops",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Van Kahvalti Evi",
+        "url": "https://www.vankahvaltievi.com",
+        "checkedOn": "2026-10-21",
+        "reason": "No official website found (searched; vankahvaltievi.com does not resolve); only third-party listings, which are not admissible."
+      },
+      {
+        "name": "Namli Gurme",
+        "url": "https://www.namligurmeonline.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "Official site (namligurme.com.tr, which redirects to namligurmeonline.com) gives only the company contact address (Mumhane Cad. Atilla İş Hanı No:6/A, Karaköy), not a restaurant branch, and publishes no hours; branch address not confirmed."
+      },
+      {
+        "name": "Privato Cafe",
+        "checkedOn": "2026-10-21",
+        "reason": "No official website found; only review sites and guides, which are not admissible."
+      },
+      {
+        "name": "Alexandra",
+        "url": "https://www.alexandracocktailbar.com",
+        "checkedOn": "2026-10-21",
+        "reason": "No official website found (alexandracocktailbar.com does not resolve); only guides and listings, which are not admissible."
+      },
+      {
+        "name": "Moretenders",
+        "checkedOn": "2026-10-21",
+        "reason": "No official website found; only an Instagram account (social media is not admissible) and third-party listings."
+      },
+      {
+        "name": "Karakoy Gulluoglu",
+        "url": "https://www.karakoygulluoglu.com",
+        "checkedOn": "2026-10-21",
+        "reason": "Official site returned HTTP 403 Forbidden (homepage and contact page); not bypassed. Not evidence of closure."
+      },
+      {
+        "name": "Hafiz Mustafa",
+        "url": "https://www.hafizmustafa.com",
+        "checkedOn": "2026-10-21",
+        "reason": "Official homepage readable but has no branch addresses or hours. Store page returned 404 and online.hafizmustafa.com returned HTTP 403, so no branch could be confirmed."
+      },
+      {
+        "name": "Galata Simitcisi",
+        "url": "https://www.galatasimitcisi.com",
+        "checkedOn": "2026-10-21",
+        "reason": "No official website found (galatasimitcisi.com does not resolve)."
+      },
+      {
+        "name": "Mandabatmaz",
+        "url": "https://www.mandabatmaz.com",
+        "checkedOn": "2026-10-21",
+        "reason": "Official site fetch failed with a certificate hostname mismatch (cert issued for ihs.com.tr); not bypassed. Not evidence of closure."
+      },
+      {
+        "name": "Coffee Department",
+        "url": "https://www.coffeedepartment.com.tr",
+        "checkedOn": "2026-10-21",
+        "reason": "No verifiable official website (coffeedepartment.com.tr failed DNS lookup); only third-party listings."
+      },
+      {
+        "name": "Basilica Cistern (Yerebatan Sarnıcı)",
+        "url": "https://yerebatan.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "Gap candidate. Operator site yerebatan.com closed the connection repeatedly (\"Socket is closed\"). The İBB Kültür AŞ page showed only a truncated address (\"Yerebatan Cad. Alemdar Mah. […]\") with the main article password-protected, so the exact address was not confirmed."
+      },
+      {
+        "name": "Orient Bar (Pera Palace Hotel)",
+        "url": "https://perapalace.com/orient-bar",
+        "checkedOn": "2026-10-21",
+        "reason": "Gap candidate. The official page says the bar is closed with no reopening date: \"Yaz sezonu bitene kadar hizmet vermemektedir\" (not operating until the summer season ends). The page also contained AI-directed text (see injectionLikeText)."
+      },
+      {
+        "name": "Balıkçı Sabahattin",
+        "url": "https://www.balikcisabahattin.com/reservations",
+        "checkedOn": "2026-10-21",
+        "reason": "Gap candidate. The official site shows a reservation form and a €35 fish lunch menu, but neither the homepage nor the reservations page gives a street address."
+      },
+      {
+        "name": "Hamdi Restaurant",
+        "url": "https://hamdi.com.tr/",
+        "checkedOn": "2026-10-21",
+        "reason": "Gap candidate. The official site lists addresses (Eminönü: Tahmis Cad. Kalçın Sokak No:11) but no hours, menu, booking or 2026 content, so there is no evidence it is currently operating."
+      },
+      {
+        "name": "Asitane",
+        "url": "https://www.asitanerestaurant.com",
+        "checkedOn": "2026-10-21",
+        "reason": "Gap candidate. The official site's newest dated content is from early 2020 (copyright 2005-2019), and no street address appears on the homepage, so it is not confirmed as currently operating."
+      },
+      {
+        "name": "Hacı Bekir",
+        "url": "https://www.hacibekir.com",
+        "checkedOn": "2026-10-21",
+        "reason": "Gap candidate. The official site names the Bahçekapı shop but gives no address for it; the only address shown is in Pendik and is not identified as a shop."
+      },
+      {
+        "name": "Vefa Bozacısı",
+        "url": "https://www.vefa.com.tr",
+        "checkedOn": "2026-10-21",
+        "reason": "Gap candidate. Official homepage shows no shop address, hours or current content."
+      },
+      {
+        "name": "Tarihi Sultanahmet Köftecisi Selim Usta",
+        "url": "https://www.sultanahmetkoftesi.com",
+        "checkedOn": "2026-10-21",
+        "reason": "Gap candidate. The official homepage names a Sultanahmet branch without a street address or hours, and its branches page returned 404."
+      },
+      {
+        "name": "Kronotrop",
+        "url": "https://www.kronotrop.com.tr",
+        "checkedOn": "2026-10-21",
+        "reason": "Gap candidate. The official homepage lists no cafe addresses; the branch pages tried returned 404."
+      },
+      {
+        "name": "Saray Muhallebicisi",
+        "url": "https://online.saraymuhallebicisi.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "Gap candidate. The official site redirects to online.saraymuhallebicisi.com, which returned HTTP 403; not bypassed."
+      },
+      {
+        "name": "Divan Pastanesi",
+        "url": "https://www.divan.com.tr",
+        "checkedOn": "2026-10-21",
+        "reason": "Gap candidate. divan.com.tr lists branch neighbourhoods only, with no street addresses or hours; divanpastaneleri.com.tr returned no readable content."
+      },
+      {
+        "name": "Simit Sarayı",
+        "url": "https://www.simitsarayi.com/magazalar",
+        "checkedOn": "2026-10-21",
+        "reason": "Gap candidate. The store page loads branch details dynamically, and no central Istanbul branch address was readable."
+      },
+      {
+        "name": "Hünkar Lokantası",
+        "url": "https://www.hunkarlokantasi.com",
+        "checkedOn": "2026-10-21",
+        "reason": "Gap candidate. The official site returned an empty page."
+      },
+      {
+        "name": "Fazıl Bey",
+        "url": "https://www.fazilbey.com",
+        "checkedOn": "2026-10-21",
+        "reason": "Gap candidate. The official domain showed a hosting error page (no site configured)."
+      },
+      {
+        "name": "Baylan Pastanesi",
+        "url": "https://www.baylanpastanesi.com.tr",
+        "checkedOn": "2026-10-21",
+        "reason": "Gap candidate. Connection refused (ECONNREFUSED); not bypassed."
+      },
+      {
+        "name": "360 Istanbul",
+        "url": "https://www.360istanbul.com",
+        "checkedOn": "2026-10-21",
+        "reason": "Gap candidate. Connection reset (ECONNRESET); not bypassed."
+      },
+      {
+        "name": "Develi (Samatya)",
+        "url": "https://www.develikebap.com",
+        "checkedOn": "2026-10-21",
+        "reason": "Gap candidate. Certificate hostname mismatch for www.develikebap.com; not bypassed."
+      },
+      {
+        "name": "Çiya Sofrası",
+        "url": "https://www.ciya.com.tr",
+        "checkedOn": "2026-10-21",
+        "reason": "Gap candidate. The official homepage gives no branch addresses, hours or 2026 content."
+      }
+    ],
+    "placeSources": {
+      "Topkapı Palace Museum": {
+        "url": "https://www.millisaraylar.gov.tr/saraylar/topkapi-sarayi",
+        "sourceType": "official public operator (Milli Saraylar, National Palaces Administration)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "The page publishes current ticket prices, including a combined Topkapı Palace + Aya İrini + Harem ticket at 2,750 TL for foreign visitors that is valid for one day, and a night tour at 4,000 TL for foreign visitors. No 2026-dated notice; the footer reads © 2023."
+      },
+      "Dolmabahçe Palace": {
+        "url": "https://www.millisaraylar.gov.tr/saraylar/dolmabahce-sarayi",
+        "sourceType": "official public operator (Milli Saraylar, National Palaces Administration)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Current ticket prices are listed: Selamlık, Harem and Painting Museum together at 2,000 TL for foreign visitors, with combined palace passes valid for one month. No 2026-dated notice."
+      },
+      "Istanbul Archaeological Museums": {
+        "url": "https://muze.gov.tr/muze-detay?SectionId=IAR01&DistId=IAR",
+        "sourceType": "official public operator (Ministry of Culture and Tourism, muze.gov.tr)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "The page is marked \"AÇIK\" (open) and carries a dated notice: \"24.10.2026 tarihinde 1 gün kapalı olacaktır\" (closed for one day on 24 October 2026)."
+      },
+      "Galata Tower Museum": {
+        "url": "https://muze.gov.tr/muze-detay?SectionId=GLT04&DistId=MRK",
+        "sourceType": "official public operator (Ministry of Culture and Tourism, muze.gov.tr)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "The page lists daily day hours and a separate night museum session (18:30-22:00), and states that visitors under 18 must come with a parent: \"18 yaş altı çocukların ebeveynleri ile ziyaret etmeleri zorunludur.\" No 2026-dated notice."
+      },
+      "Hagia Sophia History and Experience Museum": {
+        "url": "https://muze.gov.tr/muze-detay?SectionId=YSM01&DistId=MRK",
+        "sourceType": "official public operator (Ministry of Culture and Tourism, muze.gov.tr)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "The page lists daily hours and a general admission price of €25, and notes \"Müzekart geçerli değildir\" (the Museum Card is not accepted). No 2026-dated notice."
+      },
+      "Istanbul Modern": {
+        "url": "https://www.istanbulmodern.org/en",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Current exhibitions are listed, including \"Semiha Berksoy: Aria of All Colors\" (January 22 to November 22, 2026) and \"Beneath the Same Blue\" (dated September 8, 2026). Tickets are sold online through bilet.istanbulmodern.org."
+      },
+      "Pera Museum": {
+        "url": "https://www.peramuzesi.org.tr/ziyaret",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "The homepage lists current exhibitions, including \"Frank Bowling: Yaratım ve Yıkım\" and \"Osman Hamdi Bey\", plus events dated 25 October 2026. Tickets are 450 TL full and 250 TL reduced, and students enter free on Wednesdays."
+      },
+      "Miniaturk": {
+        "url": "https://www.miniaturk.com.tr",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Current ticket prices are published: \"Yabancı Bilet\" (foreign visitor) ₺900, full ₺330, and combined tickets for foreign visitors at ₺1350. No 2026-dated notice."
+      },
+      "Grand Bazaar": {
+        "url": "https://www.kapalicarsi.com.tr/ulasim-iletisim",
+        "sourceType": "official body of the bazaar's traders (Kapalı Çarşı Esnafları Derneği)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "The site posts 2026 news, including a 05/04/2026 item on the completed property owners' board election (\"KAPALI ÇARŞI KAT MALİKLERİ YÖNETİM KURULU SEÇİMİ TAMAMLANDI\"). The footer reads \"2026 - Kapalı Çarşı Esnafları Derneği\"."
+      },
+      "Mikla": {
+        "url": "https://www.miklarestaurant.com/reservation",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Online booking is live and asks for a card guarantee of 35 euros per person (\"No charges will be made unless there is a no-show\"). The current menu lists Mikla Tasting at 10500 TL, and the dress code is \"Smart Chic\" with tracksuits and slippers not accepted."
+      },
+      "Mikla Bar": {
+        "url": "https://www.miklarestaurant.com",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "The site describes the roof terrace bar (\"Located at the top of the Marmara Pera\"), and the current menu prices Mikla Signature Cocktails at 980 TL."
+      },
+      "Pandeli": {
+        "url": "https://www.pandeli.com.tr",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "A reservation form is live, and \"12:00 ile 18:00 arası rezervasyon talebi alınmaktadır\" (requests are taken 12:00-18:00). Bookings count only once the restaurant emails a confirmation, and guests are not seated for sweets, tea or coffee only. No 2026 content; the footer reads 2023."
+      },
+      "Karaköy Lokantası": {
+        "url": "https://www.karakoylokantasi.com/en/info",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "The site publishes lunch and dinner service hours, describing lunch as an \"esnaf lokantası\" tradition and dinner as a tavern serving mezes with rakı. It has a reservation section. No 2026-dated content."
+      },
+      "Neolokal": {
+        "url": "https://www.neolokal.com",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "The site has a reservation section with phone and email contacts and mentions valet service. The footer reads \"© 2026 neolokal.\""
+      },
+      "Petra Roasting Co. (Şişhane)": {
+        "url": "https://www.petracoffee.com",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "The site lists current branch hours, and the footer reads \"2026 © Petra Roasting Co.\""
+      },
+      "Sakıp Sabancı Museum": {
+        "url": "https://www.sakipsabancimuzesi.org/ziyaret",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "The museum's current exhibitions include \"Yoko Ono: İçses ve İçyapı\" (\"25 Haziran - 27 Aralık 2026\"). Adult tickets are 450₺, and Tuesdays are free."
+      },
+      "Rahmi M. Koç Museum": {
+        "url": "https://www.rmk-museum.org.tr/istanbul",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "The page publishes weekly hours and a current visitor notice: \"Ziyaretçilerin kullanımı için ücretli ve sınırlı sayıda otopark alanı mevcuttur\" (paid, limited parking for visitors). It links to online ticketing."
+      },
+      "Beylerbeyi Palace": {
+        "url": "https://www.millisaraylar.gov.tr/saraylar/beylerbeyi-sarayi",
+        "sourceType": "official public operator (Milli Saraylar, National Palaces Administration)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Current ticket prices are listed: 800 TL for foreign adults and 100 TL for the garden only, with free entry for children aged 0-6. No 2026-dated notice; the footer reads © 2023."
+      },
+      "Galata Mevlevi Lodge Museum": {
+        "url": "https://muze.gov.tr/muze-detay?SectionId=GLT01&DistId=MRK",
+        "sourceType": "official public operator (Ministry of Culture and Tourism, muze.gov.tr)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "The page shows the museum's status as \"AÇIK\" (open) and lists hours and Monday closure. No 2026-dated notice and no ticket prices."
+      },
+      "Museum of Innocence": {
+        "url": "https://www.masumiyetmuzesi.org/en/zi-yaret-gün-ve-saatleri",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Current visiting information gives general admission at 750 TL and an audio guide at 50 TL. Tickets are sold at the booth Tuesday to Sunday, 10:00-17:30. No 2026-dated notice."
+      },
+      "Kurukahveci Mehmet Efendi (Tahmis)": {
+        "url": "https://www.mehmetefendi.com/iletisim",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "The contact page lists the Eminönü store as \"MERKEZ\" (head shop). The homepage runs a 2026 World Coffee Day campaign banner, and its footer reads \"© 2018–2026 Kurukahveci Mehmet Efendi\"."
+      },
+      "Patisserie de Pera (Pera Palace Hotel)": {
+        "url": "https://perapalace.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "The hotel's site lists the patisserie with daily hours, \"Haftanın Her Günü, 10:00-18:00\", alongside current hotel events such as a season-opening concert."
+      },
+      "Kubbeli Saloon (Pera Palace Hotel)": {
+        "url": "https://perapalace.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Afternoon tea with live piano is served in the Kubbeli Saloon \"Haftanın her günü 15.00 – 18.00 arasında\" (every day 15:00-18:00)."
+      },
+      "Beyti": {
+        "url": "https://www.beyti.com",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "The site lists current opening hours and reservation contacts (phone and rezervasyon@beyti.com). No 2026-dated content."
+      },
+      "Arkestra": {
+        "url": "https://arkestra.com.tr",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Online reservations are live through the site's \"RESERVE ONLINE\" link. Its upstairs Listening Room, \"An audiophile bar serving craft cocktails\", is \"Currently welcoming restaurant guests only.\""
+      }
+    }
+  },
+  "Prague, Czechia": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-21",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Prague Castle's official site (hrad.cz) refused automated reading with HTTP 403, so the castle is not included; that is not evidence of closure. Black Angel's Bar could not be read (connection reset), and U Fleků's contact page returned 404, so both are left out. Petřín Lookout Tower and the Old Town Bridge Tower are not listed on the Museum of Prague's own site, and tourism-board pages were excluded by method. Charles Bridge, Old Town Square and the Letná viewpoint are public spaces with no operator page giving operating evidence. Several places (Café Louvre, Café Savoy, Café Slavia, Kantýna, La Degustation Bohême Bourgeoise, Field, Hemingway Bar, Můj šálek kávy, both Eska branches and the House at the Golden Ring) showed current hours or booking but no 2026-dated content, and the Mucha Museum, U Zlatého tygra and Anonymous Bar carried only a 2026 copyright line. Prague Zoo's monthly hours and news gave no year. Vyšehrad and the Strahov Monastery published only partial hours, and Municipal House tour hours and Rudolfinum box-office hours were not on the pages read.",
+    "sourceUrls": [
+      "docs/content-research/prague-2026-10-21.md",
+      "docs/content-research/prague-2026-10-21.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Prague Castle",
+        "url": "https://www.hrad.cz/en/prague-castle-for-visitors",
+        "checkedOn": "2026-10-21",
+        "reason": "Official site hrad.cz returned HTTP 403 Forbidden to automated reading (three pages tried); not bypassed. Not evidence of closure."
+      },
+      {
+        "name": "Charles Bridge",
+        "checkedOn": "2026-10-21",
+        "reason": "Public bridge with no operator website giving an address and operating evidence; only tourism-board pages available, which are excluded."
+      },
+      {
+        "name": "Old Town Square",
+        "url": "http://prague.eu/en/object/places/101/old-town-hall-with-astronomical-clock",
+        "checkedOn": "2026-10-21",
+        "reason": "Public square with no operator website giving operating evidence; the Old Town Hall page is on prague.eu (Prague City Tourism, a tourism board), which is excluded."
+      },
+      {
+        "name": "Letna viewpoint",
+        "checkedOn": "2026-10-21",
+        "reason": "Public park viewpoint; no official operator page reviewed with address and operating evidence."
+      },
+      {
+        "name": "Charles Bridge at sunrise",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place (time-of-day variant of Charles Bridge)"
+      },
+      {
+        "name": "Evening classical music",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place (Rudolfinum added as a specific venue)"
+      },
+      {
+        "name": "Czech pub lunch",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Vinohrady dinner",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Bakery and coffee morning",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Mala Strana",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Vinohrady",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Old Town",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Old Town walk",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Mala Strana",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Vinohrady",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Vinohrady",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Charles Bridge",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Old Town",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Charles Bridge at sunrise",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Mala Strana",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Old Town Square",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Old Town evening",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Mala Strana",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Vinohrady",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Old Town",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Charles Bridge",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Mala Strana",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Vinohrady",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Old Town",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Charles Bridge",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Old Town cafe or market",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Letna viewpoint",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Vinohrady",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Vinohrady",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Old Town",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Old Town",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Mala Strana bakery or market",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Charles Bridge",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Vinohrady",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Old Town",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Old Town Square",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Vinohrady",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Old Town",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Mala Strana",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Vinohrady",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Old Town",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Old Town",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Mala Strana",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Prague Castle",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Old Town",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Mala Strana morning market",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Charles Bridge",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Vinohrady",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Old Town",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Mala Strana",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Vinohrady",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Petřín Lookout Tower",
+        "url": "https://en.muzeumprahy.cz/petrin-lookout-tower/",
+        "checkedOn": "2026-10-21",
+        "reason": "Not listed among the Museum of Prague's buildings on its official site; the en.muzeumprahy.cz page tried does not resolve (DNS not found). Only remaining source would be a tourism board, which is excluded."
+      },
+      {
+        "name": "Old Town Bridge Tower",
+        "url": "https://en.muzeumprahy.cz/old-town-bridge-tower/",
+        "checkedOn": "2026-10-21",
+        "reason": "Not listed among the Museum of Prague's buildings on its official site; the en.muzeumprahy.cz page tried does not resolve (DNS not found). Only remaining source would be a tourism board, which is excluded."
+      },
+      {
+        "name": "Clam-Gallas Palace (Museum of Prague)",
+        "url": "https://www.muzeumprahy.cz/en/visit/clam-gallasuv-palac-12",
+        "checkedOn": "2026-10-21",
+        "reason": "Official site lists it as \"Temporarily closed\" with \"See you in spring 2028\"."
+      },
+      {
+        "name": "U Fleků",
+        "url": "https://www.ufleku.cz/en/",
+        "checkedOn": "2026-10-21",
+        "reason": "Home page read but gave no address, hours or 2026 content; the contact/where-to-find-us page returned HTTP 404. Not evidence of closure."
+      },
+      {
+        "name": "Black Angel's Bar",
+        "url": "https://www.blackangelsbar.cz/",
+        "checkedOn": "2026-10-21",
+        "reason": "Fetch failed twice (connection reset, ECONNRESET); not bypassed. Not evidence of closure."
+      }
+    ],
+    "placeSources": {
+      "National Museum (Historical Building)": {
+        "url": "https://www.nm.cz/en/visit-us/buildings/historical-building-of-the-national-museum",
+        "sourceType": "official public operator (National Museum)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Current exhibitions include \"Maps and Atlases from the Kinsky Library\" (24 Sep 2026 – 3 Jan 2027) and \"The Dark Blue World of Jaroslav Ježek\" (23 Sep 2026 – 28 Feb 2027); Czech Press Photo 2025 runs in the New Building 12 May – 30 Nov 2026."
+      },
+      "National Gallery Prague (Trade Fair Palace)": {
+        "url": "https://www.ngprague.cz/en/about/buildings",
+        "sourceType": "official public operator (National Gallery Prague)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Home page lists \"Zbyněk Sekal — Blue Flower\" (24/9 2026 – 31/1 2027) and \"230 Years of the NGP\" (26/3 2026 – 3/1 2027) at the Trade Fair Palace, plus the Schiele drawings show \"Edith and Egon\" until 25/10 2026."
+      },
+      "Jewish Museum in Prague": {
+        "url": "https://www.jewishmuseum.cz/en/info/visit/opening-hours/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "2026 opening-hours table and 2026 holiday closure list; events calendar for October–November 2026, including a Klezmatics concert at the Spanish Synagogue on 14 Nov 2026."
+      },
+      "Vyšehrad": {
+        "url": "https://www.praha-vysehrad.cz/en",
+        "sourceType": "official public operator (Národní kulturní památka Vyšehrad, founded by the City of Prague)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Notices dated 6 Jan 2026 (Burgrave's Residence rental offer) and 12 Jan 2026 (new electric service vehicles); a December 2025 notice says \"regular opening hours until 6:00 p.m. apply\"."
+      },
+      "Rudolfinum (Czech Philharmonic)": {
+        "url": "https://www.ceskafilharmonie.cz/en/transport-and-parking/",
+        "sourceType": "operator's own site (Czech Philharmonic)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Concert listings for Czech Philharmonic with Semyon Bychkov on 22–23 October 2026 and Czech Chamber Music Society concerts on 24 and 27 October 2026."
+      },
+      "Lokál Dlouhááá": {
+        "url": "https://lokal-dlouha.ambi.cz/en/",
+        "sourceType": "operator's own site (Ambiente)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "News item dated 09/01/2026 (\"Czech lager heads to Philadelphia\") and an online reservation page; the site advises \"It gets busy, so best secure your spot in advance.\""
+      },
+      "Café Louvre": {
+        "url": "https://www.cafelouvre.cz/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Live hours banner \"TODAY WE ARE OPEN: 08:00 – 23:30\" and an online reservation link; no 2026-dated content found."
+      },
+      "Café Savoy": {
+        "url": "https://cafesavoy.ambi.cz/en/",
+        "sourceType": "operator's own site (Ambiente)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Published weekly and public-holiday hours with reservation and menu links; no 2026-dated content found and the menu page was not readable."
+      },
+      "Prague Zoo": {
+        "url": "https://www.zoopraha.cz/en/before-visit/opening-time",
+        "sourceType": "official public operator (Prague Zoo, a City of Prague organisation)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Home page news \"Prague Zoo Attracts Visitors with New Animal Babies This Autumn\" (macaque births on 25 September, 7 and 12 October, year not stated) and a promoted new Ball's Pyramid exhibition; footer \"(c) 2026\"."
+      },
+      "National Technical Museum": {
+        "url": "https://www.ntm.cz/en",
+        "sourceType": "official public operator (National Technical Museum)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Exhibitions \"What Made The Railways, What the Railways Made\" (3 Oct 2025 – 7 Feb 2027) and \"The Saga of the Hainz Family\" (14 Oct 2026 – 28 Mar 2027); notice that the Postal Museum in Prague reopened \"From June 11, 2026\"."
+      },
+      "Municipal House (Obecní dům)": {
+        "url": "https://www.obecnidum.cz/en/",
+        "sourceType": "operator's own site (Obecní dům, a.s., owned by the City of Prague)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Programme lists Rossini \"Le Comte Ory\" on 24 October 2026 at 19:30 in Smetana Hall and Christian Van Horn \"Devils and Kings\" on 8 November at 19:30; one event notice says \"rescheduled for 2027\"."
+      },
+      "Strahov Monastery": {
+        "url": "https://www.strahovskyklaster.cz/en",
+        "sourceType": "operator's own site (Royal Canonry of Premonstratensians at Strahov)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "News dated 13 October 2026 (\"Chapter Meeting of the Canonry\") and \"Concert in the Basilica – 23 September 2026\"."
+      },
+      "Mucha Museum": {
+        "url": "https://www.mucha.cz/en/",
+        "sourceType": "operator's own site (Muchovo muzeum s.r.o.)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Published daily opening hours; only 2026 reference is the footer \"© 2026 Muchovo muzeum s.r.o.\"."
+      },
+      "Museum Kampa": {
+        "url": "https://www.museumkampa.cz/visit/",
+        "sourceType": "operator's own site (The Jan and Meda Mládek Foundation)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Current exhibitions \"Milan Kunc – Pop Renaissance\" and \"Mikuláš Medek, Jan Koblasa – In Defiance\" (both 3 Oct 2026 – 17 Jan 2027); all-exhibitions adult ticket 360 CZK."
+      },
+      "Museum of Prague (Main Building)": {
+        "url": "https://www.muzeumprahy.cz/en/exhibitions-and-events/cloud",
+        "sourceType": "official public operator (Museum of Prague / Prague City Museum, City of Prague)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Free interactive children's exhibition \"Cloud\", \"starting February 24, 2026\"; the page notes the museum is currently not barrier-free because of the Florenc metro reconstruction."
+      },
+      "House at the Golden Ring (Museum of Prague)": {
+        "url": "https://www.muzeumprahy.cz/en/visit/dum-u-zlateho-prstenu-4",
+        "sourceType": "official public operator (Museum of Prague / Prague City Museum, City of Prague)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Current exhibition \"Prague in the Time of Charles IV\" and a nine-metre animation of Prague under Rudolf II, with published admission (CZK 180 standard); no 2026 dates on the page."
+      },
+      "Café Imperial": {
+        "url": "https://www.cafeimperial.cz/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Says it is \"recognised by the Michelin Guide 2026\" and lists a \"Christmas menu 25. – 27. 12. 2026\" and a New Year's Eve 2026 menu; breakfast buffet \"every day from 7:00\"."
+      },
+      "La Degustation Bohême Bourgeoise": {
+        "url": "https://ladegustation.ambi.cz/en/",
+        "sourceType": "operator's own site (Ambiente)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Published daily service hours and a reservation link; no 2026-dated content found."
+      },
+      "Field": {
+        "url": "https://www.fieldrestaurant.cz/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Online and phone reservations; \"We can only hold your reservations for 15 minutes.\" Smart-casual dress code, not suitable for children under 6. No 2026-dated content found."
+      },
+      "Kantýna": {
+        "url": "https://kantyna.ambi.cz/en/",
+        "sourceType": "operator's own site (Ambiente)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Published weekly hours for Kantýna and The Butchers; no 2026-dated content found."
+      },
+      "U Zlatého tygra": {
+        "url": "https://www.uzlatehotygra.cz/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Published daily hours and phone reservations (\"Rezervace na tel.\"); footer \"© 2026 U Zlatého Tygra\"."
+      },
+      "Hemingway Bar": {
+        "url": "https://www.hemingwaybar.cz/bar-praha/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Online booking form (\"Rezervace ONLINE\") and published hours; no 2026-dated content found."
+      },
+      "Anonymous Bar": {
+        "url": "https://www.anonymousbar.cz/",
+        "sourceType": "operator's own site (AnonymouS Concept s.r.o.)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Booking link (\"Rezervace\") and published hours; only 2026 reference is \"Copyright © 2011 - 2026\"."
+      },
+      "Café Slavia": {
+        "url": "https://www.cafeslavia.cz/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Current reservation rules: weekend bookings \"only from 19:00\" and none on public holidays; staff usually find a table within about 10 minutes. No 2026-dated content found."
+      },
+      "Můj šálek kávy": {
+        "url": "https://www.mujsalekkavy.cz/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Breakfast and coffee menu links and an online reservation form; no 2026-dated content found."
+      },
+      "Eska (Karlín)": {
+        "url": "https://eska.ambi.cz/en/",
+        "sourceType": "operator's own site (Ambiente)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Ground-floor bakery with brunch and a shop for \"a long breakfast or a quick lunch\"; published hours. No 2026-dated content found."
+      },
+      "Eska (Letná)": {
+        "url": "https://eska.ambi.cz/en/",
+        "sourceType": "operator's own site (Ambiente)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Sweet and savoury breakfasts to go, baked goods and Nordbeans coffee; bread made from \"three-stage rye sourdough\". No 2026-dated content found."
+      },
+      "Myšák (Vodičkova)": {
+        "url": "https://mysak.ambi.cz/en/",
+        "sourceType": "operator's own site (Ambiente)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Traditional Czech desserts and breakfasts, café downstairs with bakers upstairs; the site says a third patisserie at Prague Castle opened in 2026."
+      }
+    }
+  },
   "Lisbon, Portugal": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-21",
@@ -607,7 +1648,7 @@ window.HB_DATA.citySourceLedger = {
     "status": "source-checked",
     "reviewScope": "cityGuideDetailData",
     "verificationMethod": "official-web-review",
-    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. La Boqueria's official site returned nothing readable, Fundació Joan Miró's site refused automated reading (403) and Brunells' site refused the connection, so they are not included. Bohl, Tapeo, Two Schmucks and Baluard had no reachable official website. Quimet & Quimet and Dr Stravinsky published an address but no hours or current content. Several places were only partly published: Disfrutar and Paradiso show no opening hours, the Aquarium's closing times did not load, Park Güell gives entrances but no street number, MNAC's current exhibitions are undated, and Three Marks Coffee lists two conflicting sets of hours for Ausiàs Marc. The Sagrada Família site also shows an undated notice that the Gaudí House Museum is temporarily closed. This guide has fewer than the 25-place target because of these gaps.",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. La Boqueria's official site returned nothing readable, Fundació Joan Miró's site refused automated reading (403) and Brunells' site refused the connection, so they are not included. Bohl, Tapeo, Two Schmucks and Baluard had no reachable official website. Quimet & Quimet and Dr Stravinsky published an address but no hours or current content. Several places were only partly published: Disfrutar and Paradiso show no opening hours, the Aquarium's closing times did not load, Park Güell gives entrances but no street number, MNAC's current exhibitions are undated, and Three Marks Coffee lists two conflicting sets of hours for Ausiàs Marc. The Sagrada Família site also shows an undated notice that the Gaudí House Museum is temporarily closed. This guide has fewer than the 25-place target because of these gaps. La Boqueria and the Fundació Joan Miró were read later the same day in a browser, from their own pages, and added. La Boqueria's page shows recent news but no 2026-dated item.",
     "sourceUrls": [
       "docs/content-research/barcelona-2026-10-21.md",
       "docs/content-research/barcelona-2026-10-21.json"
@@ -617,12 +1658,6 @@ window.HB_DATA.citySourceLedger = {
         "name": "Gothic Quarter",
         "checkedOn": "2026-10-21",
         "reason": "neighbourhood, not a single operated place"
-      },
-      {
-        "name": "La Boqueria area",
-        "url": "https://www.boqueria.barcelona/home",
-        "checkedOn": "2026-10-21",
-        "reason": "official site (boqueria.barcelona) returned nothing readable on several pages (home, contact, services, market-open); not confirmed"
       },
       {
         "name": "La Boqueria grazing",
@@ -669,12 +1704,6 @@ window.HB_DATA.citySourceLedger = {
         "url": "https://www.brunells.cat/",
         "checkedOn": "2026-10-21",
         "reason": "official site refused connection (ECONNREFUSED); not evidence of closure"
-      },
-      {
-        "name": "Fundació Joan Miró",
-        "url": "https://www.fmirobcn.org/en/",
-        "checkedOn": "2026-10-21",
-        "reason": "official site returned HTTP 403 Forbidden to automated fetch; not bypassed"
       },
       {
         "name": "Beach and old town walking",
@@ -753,6 +1782,18 @@ window.HB_DATA.citySourceLedger = {
       }
     ],
     "placeSources": {
+      "Mercat de la Boqueria": {
+        "url": "https://www.boqueria.barcelona/",
+        "sourceType": "operator's own site (market)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "The market's site publishes its opening hours (\"Dilluns a dissabte: 8:00h - 20:30h\") and recent news, including a renovation plan whose larger works are scheduled for 2027 to 2029."
+      },
+      "Fundació Joan Miró": {
+        "url": "https://www.fmirobcn.org/en/visit-us/plan-your-visit/",
+        "sourceType": "operator's own site (museum foundation)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "The Plan your visit page publishes seasonal hours and says \"Monday closed. Except 8 December 2025, and 6 April, 18 and 25 May, 12 October, 28 December 2026.\" The footer reads \"© Fundació Joan Miró Barcelona 2026\"."
+      },
       "Sagrada Família": {
         "url": "https://sagradafamilia.org/en/opening-hours-and-getting-here",
         "sourceType": "operator's own site (Junta Constructora / Fundació Sagrada Família)",
@@ -893,7 +1934,7 @@ window.HB_DATA.citySourceLedger = {
     "status": "source-checked",
     "reviewScope": "cityGuideDetailData",
     "verificationMethod": "official-web-review",
-    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several sites could not be read: SHIBUYA SKY and teamLab Planets returned only empty script shells, Bills returned no content, and Sushi Daiwa, Bar Benfiddich, Path and 365 Days failed DNS lookups. fuglen.com had an expired certificate, which was not bypassed. None of these failures is evidence of closure. Tsukiji Outer Market was left out only because its official pages give no postal address. Some places were published only partially: Ueno Zoo's visitor hours page did not load, Shinjuku Gyoen's hours and Narisawa's and The SG Club's hours were not published, and Narisawa's address appears only in a map link. Udon Shin, Glitch Coffee, AFURI, Fuglen Tokyo, Ivy Place and the Imperial Palace East Gardens are supported by currently published hours or booking links rather than 2026-dated content. Tokyo Skytree's stated hours were shown as 'today's' hours without a date. Fewer than 25 places were confirmed, because many input entries were generic or unreadable and the gap-candidate limit of 8 was reached.",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several sites could not be read: SHIBUYA SKY and teamLab Planets returned only empty script shells, Bills returned no content, and Sushi Daiwa, Bar Benfiddich, Path and 365 Days failed DNS lookups. fuglen.com had an expired certificate, which was not bypassed. None of these failures is evidence of closure. Tsukiji Outer Market was left out only because its official pages give no postal address. Some places were published only partially: Ueno Zoo's visitor hours page did not load, Shinjuku Gyoen's hours and Narisawa's and The SG Club's hours were not published, and Narisawa's address appears only in a map link. Udon Shin, Glitch Coffee, AFURI, Fuglen Tokyo, Ivy Place and the Imperial Palace East Gardens are supported by currently published hours or booking links rather than 2026-dated content. Tokyo Skytree's stated hours were shown as 'today's' hours without a date. Fewer than 25 places were confirmed, because many input entries were generic or unreadable and the gap-candidate limit of 8 was reached. teamLab Planets TOKYO and SHIBUYA SKY were read later the same day in a browser, from their operators' own pages, and added.",
     "sourceUrls": [
       "docs/content-research/tokyo-2026-10-21.md",
       "docs/content-research/tokyo-2026-10-21.json"
@@ -948,12 +1989,6 @@ window.HB_DATA.citySourceLedger = {
         "name": "Private tea experience",
         "checkedOn": "2026-10-21",
         "reason": "generic, not a place"
-      },
-      {
-        "name": "Shibuya Sky at sunset",
-        "url": "https://www.shibuya-scramble-square.com/sky/",
-        "checkedOn": "2026-10-21",
-        "reason": "Official SHIBUYA SKY pages returned only an empty script shell (title, logo, 'MENU'). Sub-pages returned 404, so there was no readable address, hours or current content."
       },
       {
         "name": "Ginza dinner",
@@ -1074,6 +2109,18 @@ window.HB_DATA.citySourceLedger = {
       }
     ],
     "placeSources": {
+      "teamLab Planets TOKYO": {
+        "url": "https://www.teamlab.art/e/planets/",
+        "sourceType": "operator's own site (teamLab)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "The official page gives the term as \"July 7, 2018 - End of 2027\", publishes daily hours with shorter hours on Thursday, December 31, and lists closed days of \"Thursday, November 5; Thursday, December 3\"."
+      },
+      "SHIBUYA SKY": {
+        "url": "https://www.shibuya-scramble-square.com/sky/",
+        "sourceType": "operator's own site (Shibuya Scramble Square)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "The SHIBUYA SKY page shows hours of \"10:00 - 22:30\" with last entry at 21:20, a status panel dated 2026.10.21, and current notices, including a Halloween costume notice for 31 October. It says bags cannot be taken onto the rooftop."
+      },
       "Senso-ji": {
         "url": "https://www.senso-ji.jp/",
         "sourceType": "operator's own site",
@@ -1196,7 +2243,7 @@ window.HB_DATA.citySourceLedger = {
     "status": "source-checked",
     "reviewScope": "cityGuideDetailData",
     "verificationMethod": "official-web-review",
-    "limitations": "This is a website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several official sites could not be read by automated fetch and were left out rather than bypassed: Top of the Rock, the American Museum of Natural History, MoMA and Grand Central Terminal (HTTP 403), The Met and the Brooklyn Museum (HTTP 429), the Guggenheim (cookie wall only), the NYPL main branch (empty page), Bubby's (connection refused), Mah-Ze-Dahr (HTTP 404) and NYC Parks' Central Park page (HTTP 403; the Conservancy site was used instead). Some places were only partly published. Crown Shy, Attaboy and Devoción showed hours but no dated content. The Whitney listed exhibitions without dates. The Frick page carried one apparently stale notice. Employees Only's reservations page may be out of date. Katz's listed weekly hours that conflict with its \"open 24 hrs on weekends\" banner. The High Line's closure notice and Central Park's event dates had no year shown.",
+    "limitations": "This is a website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several official sites could not be read by automated fetch and were left out rather than bypassed: Top of the Rock, the American Museum of Natural History, MoMA and Grand Central Terminal (HTTP 403), The Met and the Brooklyn Museum (HTTP 429), the Guggenheim (cookie wall only), the NYPL main branch (empty page), Bubby's (connection refused), Mah-Ze-Dahr (HTTP 404) and NYC Parks' Central Park page (HTTP 403; the Conservancy site was used instead). Some places were only partly published. Crown Shy, Attaboy and Devoción showed hours but no dated content. The Whitney listed exhibitions without dates. The Frick page carried one apparently stale notice. Employees Only's reservations page may be out of date. Katz's listed weekly hours that conflict with its \"open 24 hrs on weekends\" banner. The High Line's closure notice and Central Park's event dates had no year shown. The Met, MoMA, the American Museum of Natural History, the Guggenheim and Top of the Rock were read later the same day in a browser, from their operators' own pages, and added.",
     "sourceUrls": [
       "docs/content-research/new-york-2026-10-21.md",
       "docs/content-research/new-york-2026-10-21.json"
@@ -1207,18 +2254,6 @@ window.HB_DATA.citySourceLedger = {
         "url": "https://www.nps.gov/stli/planyourvisit/basicinfo.htm",
         "checkedOn": "2026-10-21",
         "reason": "Largely generic (views); the NPS pages read gave only a mailing address (\"1 Ellis Island, Jersey City, NJ\") and no physical-location or current hours text, deferring to the ferry concessioner."
-      },
-      {
-        "name": "Top of the Rock",
-        "url": "https://www.rockefellercenter.com/attractions/top-of-the-rock-observation-deck/",
-        "checkedOn": "2026-10-21",
-        "reason": "Official site returned HTTP 403 Forbidden to automated reading; not bypassed."
-      },
-      {
-        "name": "American Museum of Natural History",
-        "url": "https://www.amnh.org/plan-your-visit",
-        "checkedOn": "2026-10-21",
-        "reason": "Official site returned HTTP 403 Forbidden (visit page and homepage); not bypassed."
       },
       {
         "name": "Brooklyn Bridge",
@@ -1255,24 +2290,6 @@ window.HB_DATA.citySourceLedger = {
         "url": "https://www.mahzedahrbakery.com/",
         "checkedOn": "2026-10-21",
         "reason": "Official site returned HTTP 404; nothing readable. Not evidence of closure."
-      },
-      {
-        "name": "The Metropolitan Museum of Art",
-        "url": "https://www.metmuseum.org/plan-your-visit",
-        "checkedOn": "2026-10-21",
-        "reason": "Gap candidate; official site returned HTTP 429 Too Many Requests on repeated attempts; not bypassed."
-      },
-      {
-        "name": "Museum of Modern Art (MoMA)",
-        "url": "https://www.moma.org/visit",
-        "checkedOn": "2026-10-21",
-        "reason": "Gap candidate; official site returned HTTP 403 Forbidden; not bypassed."
-      },
-      {
-        "name": "Solomon R. Guggenheim Museum",
-        "url": "https://www.guggenheim.org/plan-your-visit",
-        "checkedOn": "2026-10-21",
-        "reason": "Gap candidate; page returned only a cookie notice, nothing readable."
       },
       {
         "name": "Grand Central Terminal",
@@ -1366,6 +2383,36 @@ window.HB_DATA.citySourceLedger = {
       }
     ],
     "placeSources": {
+      "The Metropolitan Museum of Art": {
+        "url": "https://www.metmuseum.org/plan-your-visit",
+        "sourceType": "operator's own site (museum)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "The Plan Your Visit page publishes current weekly hours and lists galleries currently closed for renovation, including the Cantor Roof Garden and the Modern and Contemporary galleries. It says the museum is \"Closed Thanksgiving Day, December 25, January 1, and the first Monday in May.\""
+      },
+      "Museum of Modern Art (MoMA)": {
+        "url": "https://www.moma.org/visit",
+        "sourceType": "operator's own site (museum)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "The visit page publishes daily hours with a Friday late opening, and free Friday evenings (5:30-8:30 p.m.) for New York State residents who reserve in advance. The footer reads \"© 2026 The Museum of Modern Art\"."
+      },
+      "American Museum of Natural History": {
+        "url": "https://www.amnh.org/plan-your-visit",
+        "sourceType": "operator's own site (museum)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "The Plan Your Visit page says \"Open daily, 10 am-5:30 pm\" and \"Closed Thanksgiving Day and Christmas Day\", offers Pay What You Wish general admission to New York State residents with ID, and lists a new exhibition that \"Opens November 16, 2026\"."
+      },
+      "Solomon R. Guggenheim Museum": {
+        "url": "https://www.guggenheim.org/plan-your-visit",
+        "sourceType": "operator's own site (museum)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "The Plan Your Visit page gives regular hours of \"Every day, 10:30 am-5:30 pm\" and holiday hours including \"Thanksgiving Thursday, November 26, museum closed\" and \"Christmas Day, Friday, December 25, museum closed\". The footer reads \"© 2026\"."
+      },
+      "Top of the Rock": {
+        "url": "https://www.rockefellercenter.com/tickets/top-of-the-rock-observation-deck",
+        "sourceType": "operator's own site (Rockefeller Center)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "The ticket page sells timed tickets online and says the deck is open \"Daily from 8 AM - 12 AM\", with \"Last entry is at 11:10 PM\"."
+      },
       "Central Park": {
         "url": "https://www.centralparknyc.org/visit",
         "sourceType": "official park manager (Central Park Conservancy)",
@@ -1524,7 +2571,7 @@ window.HB_DATA.citySourceLedger = {
     "status": "source-checked",
     "reviewScope": "cityGuideDetailData",
     "verificationMethod": "official-web-review",
-    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several official sites could not be read by automated fetch: De Kas and the City of Amsterdam pages for Vondelpark and Albert Cuyp Market (HTTP 403), Restaurant Breda and Dignita (503 or connection refused), Lot Sixty One and Hortus Botanicus (certificate errors), the Van Gogh Museum (no readable content), and the GVB ferry page (403). Tales & Spirits' domain redirects elsewhere and Door 74's site is under construction. Some places were published only partially: NEMO and ARTIS hours were not readable, the Rembrandt House Museum's closing time was cut off, the Royal Palace's daily calendar did not load, and several cafés and bakeries (Cafe de Klepel, Little Collins, Fabel Friet, Hartog's Volkoren, Bocca Coffee, De Wasserette) showed hours but no 2026-dated content, so they are marked medium confidence. Gap candidates checked exceeded eight because many failed; the confirmed total is 22, below the 25-35 target.",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several official sites could not be read by automated fetch: De Kas and the City of Amsterdam pages for Vondelpark and Albert Cuyp Market (HTTP 403), Restaurant Breda and Dignita (503 or connection refused), Lot Sixty One and Hortus Botanicus (certificate errors), the Van Gogh Museum (no readable content), and the GVB ferry page (403). Tales & Spirits' domain redirects elsewhere and Door 74's site is under construction. Some places were published only partially: NEMO and ARTIS hours were not readable, the Rembrandt House Museum's closing time was cut off, the Royal Palace's daily calendar did not load, and several cafés and bakeries (Cafe de Klepel, Little Collins, Fabel Friet, Hartog's Volkoren, Bocca Coffee, De Wasserette) showed hours but no 2026-dated content, so they are marked medium confidence. Gap candidates checked exceeded eight because many failed; the confirmed total is 22, below the 25-35 target. The Van Gogh Museum was read later the same day in a browser, from its own pages, and added.",
     "sourceUrls": [
       "docs/content-research/amsterdam-2026-10-21.md",
       "docs/content-research/amsterdam-2026-10-21.json"
@@ -1681,12 +2728,6 @@ window.HB_DATA.citySourceLedger = {
         "reason": "City of Amsterdam page returned HTTP 403"
       },
       {
-        "name": "Van Gogh Museum",
-        "url": "https://www.vangoghmuseum.nl/en/visit",
-        "checkedOn": "2026-10-21",
-        "reason": "official pages returned no readable content (unrendered template placeholder only)"
-      },
-      {
         "name": "Heineken Experience",
         "url": "https://www.heinekenexperience.com/en/",
         "checkedOn": "2026-10-21",
@@ -1718,6 +2759,12 @@ window.HB_DATA.citySourceLedger = {
       }
     ],
     "placeSources": {
+      "Van Gogh Museum": {
+        "url": "https://www.vangoghmuseum.nl/en/visit/address-and-opening-hours",
+        "sourceType": "operator's own site (museum)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "The opening-hours page publishes day-by-day hours for October to December 2026, for example \"19 - 29 October: 9 am to 6 pm\". The tickets page says tickets \"are available online only\" and that every visitor needs a ticket with a start time."
+      },
       "Rijksmuseum": {
         "url": "https://www.rijksmuseum.nl/en/visit",
         "sourceType": "operator's own site (national museum)",
