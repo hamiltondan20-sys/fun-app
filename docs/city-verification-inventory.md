@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 17.
-- Classifier-passed (published, not fully documented in that format): 172.
+- Source-verified (complete dated evidence format): 18.
+- Classifier-passed (published, not fully documented in that format): 171.
 - Held back: 295.
 - Published destinations: 189; country hubs: 19; sitemap URLs: 217.
 
@@ -277,7 +277,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Lhasa, China | lhasa | classifier-passed | not-reviewed | 0 | 8 | 15 | 4 | None |
 | Lille, France | lille | held-back | ready-for-content-draft | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Lima, Peru | lima | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
-| Lisbon, Portugal | lisbon | classifier-passed | not-reviewed | 0 | 27 | 15 | 12 | None |
+| Lisbon, Portugal | lisbon | source-verified | source-checked | 15 | 39 | 15 | 15 | None |
 | Liverpool, United Kingdom | liverpool | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Lombok, Indonesia | lombok | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
 | London, United Kingdom | london | source-verified | source-checked | 30 | 43 | 15 | 15 | None |

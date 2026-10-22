@@ -5,6 +5,288 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Lisbon, Portugal": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-21",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "This is a website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several official sites could not be read. LX Factory's page returned only encoded image data. Dear Breakfast and The Mill failed with SSL errors, and Sea Me's site refused the connection. No official site could be found for Taberna da Rua das Flores, Heim Cafe or Fauna & Flora. Red Frog and Monkey Mash publish no street address on the pages read. Padaria São Roque's operator site shows no hours or current activity. Some places were only partly published. Pastéis de Belém gives no opening times, Copenhagen Coffee Lab (Madalena) lists no hours, and Hello Kristof gives conflicting hours. Torre de Belém shows two different morning opening times. The Oceanário gives no street number. Torre de Belém, Jerónimos, Pastéis de Belém, Manteigaria and Cinco Lounge show no 2026-dated content beyond published hours or tickets. Museu Nacional do Azulejo, Museu Nacional de Arte Antiga (until 21 November) and Elevador de Santa Justa are currently closed.",
+    "sourceUrls": [
+      "docs/content-research/lisbon-2026-10-21.md",
+      "docs/content-research/lisbon-2026-10-21.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Alfama",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place (neighbourhood)"
+      },
+      {
+        "name": "Belem Tower area",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place (area); checked as Torre de Belém instead"
+      },
+      {
+        "name": "Miradouro viewpoints",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Tram views and walking",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Pastel and coffee stops",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free viewpoints",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Belcanto dinner",
+        "checkedOn": "2026-10-21",
+        "reason": "duplicate of Belcanto (confirmed separately)"
+      },
+      {
+        "name": "Private sail on the Tagus",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Palace hotel stay",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Alfama at sunset",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Riverfront evening",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Wine bar night",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Tram ride",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Time Out Market snacks",
+        "checkedOn": "2026-10-21",
+        "reason": "duplicate of Time Out Market Lisboa (confirmed separately)"
+      },
+      {
+        "name": "Chiado cafes",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Alfama wandering",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Belem",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place (district)"
+      },
+      {
+        "name": "Chiado and Baixa",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place (districts)"
+      },
+      {
+        "name": "Fado night",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Day trip feel from Cais do Sodre",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "LX Factory",
+        "url": "https://lxfactory.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "Official site returned no readable text (only encoded image data across the fetched page); address and operating status could not be read. Not evidence of closure."
+      },
+      {
+        "name": "Taberna da Rua das Flores",
+        "url": "https://www.tabernadaruadasflores.pt/",
+        "checkedOn": "2026-10-21",
+        "reason": "No official website found; tabernadaruadasflores.pt does not resolve (DNS ENOTFOUND) and only social media/directory listings exist, which are not accepted as evidence."
+      },
+      {
+        "name": "Dear Breakfast",
+        "url": "https://dearbreakfast.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "Official site fetch failed with an SSL/TLS error (WRONG_VERSION_NUMBER); not bypassed. Not evidence of closure."
+      },
+      {
+        "name": "Heim Cafe",
+        "checkedOn": "2026-10-21",
+        "reason": "No official website found (only social media pages, not accepted); directory reports of a Santos relocation could not be verified."
+      },
+      {
+        "name": "Fauna & Flora",
+        "checkedOn": "2026-10-21",
+        "reason": "No official website found; guessed domain faunaeflora.pt does not resolve. Only third-party listings available."
+      },
+      {
+        "name": "Sea Me",
+        "url": "https://www.peixariamoderna.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "Official site peixariamoderna.com refused the connection (ECONNREFUSED); not bypassed. Not evidence of closure."
+      },
+      {
+        "name": "Red Frog",
+        "url": "https://www.redfrog.pt/reservas/",
+        "checkedOn": "2026-10-21",
+        "reason": "Official site read (hours \"Terça a Sábado: 18:00 – 01:00\", booking suggested) but no street address is published on the pages read, so it fails the address requirement."
+      },
+      {
+        "name": "Monkey Mash",
+        "url": "https://www.monkeymash.pt/",
+        "checkedOn": "2026-10-21",
+        "reason": "Official site read but shows no address, hours or dated content; only a 'RESERVAS' link."
+      },
+      {
+        "name": "Padaria Sao Roque",
+        "url": "https://panifsroque.pt/contactos-2/",
+        "checkedOn": "2026-10-21",
+        "reason": "Operator site lists the shop \"Padaria S. Roque (Patriarcal): Rua D. Pedro V, 57\" but publishes no hours and no current-operation evidence (footer \"©2015\"). Not confirmed."
+      },
+      {
+        "name": "The Mill",
+        "url": "https://themill.pt/",
+        "checkedOn": "2026-10-21",
+        "reason": "Official site (themill.pt) fetch failed with an SSL/TLS error (WRONG_VERSION_NUMBER); not bypassed. Not evidence of closure."
+      },
+      {
+        "name": "Museu Nacional do Azulejo",
+        "url": "https://www.museusemonumentos.pt/pt/museus-e-monumentos/museu-nacional-do-azulejo",
+        "checkedOn": "2026-10-21",
+        "reason": "Gap candidate. Official page says \"Encerrado para obras de requalificação\" (PRR works) with no reopening date."
+      },
+      {
+        "name": "Museu Nacional de Arte Antiga",
+        "url": "https://www.museusemonumentos.pt/pt/museus-e-monumentos/museu-nacional-de-arte-antiga",
+        "checkedOn": "2026-10-21",
+        "reason": "Gap candidate. Currently closed: \"Reabre dia 21 de novembro após obras de requalificação no âmbito do PRR\" (year not stated)."
+      },
+      {
+        "name": "Elevador de Santa Justa",
+        "url": "https://www.carris.pt/descubra/frota/elevador/",
+        "checkedOn": "2026-10-21",
+        "reason": "Gap candidate. Carris page header says \"Encerrado temporariamente\" with no reopening date."
+      }
+    ],
+    "placeSources": {
+      "Torre de Belém": {
+        "url": "https://www.museusemonumentos.pt/pt/museus-e-monumentos/torre-de-belem",
+        "sourceType": "official public operator (Museus e Monumentos de Portugal)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "The page publishes current hours, closing days and a 'Bilhete normal' of 15,00 € with an online ticket office link. It shows no 2026-dated item and the footer reads '© 2024'."
+      },
+      "Mosteiro dos Jerónimos": {
+        "url": "https://www.museusemonumentos.pt/pt/museus-e-monumentos/mosteiro-dos-jeronimos-e-capela-de-sao-jeronimo",
+        "sourceType": "official public operator (Museus e Monumentos de Portugal)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Current visiting hours for cloister and church, a standard ticket of 18,00 € with online sales, and the notice \"Bilheteiras encerram às 16h30\"."
+      },
+      "Padrão dos Descobrimentos": {
+        "url": "https://padraodosdescobrimentos.pt/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Current exhibition \"PADRÃO. Casa-Obsessão\" and a family Sunday event \"A Minha Casa-Obsessão\" on 25 October 2026."
+      },
+      "MAAT": {
+        "url": "https://www.maat.pt/",
+        "sourceType": "operator's own site (Fundação EDP)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Exhibitions including \"Turn around\" at MAAT Central \"até Janeiro de 2027\" and dated events such as a visit-performance on 25/10/2026 and MAAT Friends After Hours on 28/10/2026."
+      },
+      "Museu Calouste Gulbenkian": {
+        "url": "https://gulbenkian.pt/museu/informacoes/informacoes-contactos/",
+        "sourceType": "operator's own site (Fundação Calouste Gulbenkian)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "A reopening page published 1 July 2026 says the museum reopens \"um ano e meio depois de ter encerrado para obras de renovação\". The museum page notes gallery works \"Entre 12 e 23 de outubro\" with some artworks removed, and lists \"A Coleção Imaginária\" from 21 Nov 2026 to 15 Mar 2027."
+      },
+      "Castelo de São Jorge": {
+        "url": "https://castelodesaojorge.pt/pt/horarios",
+        "sourceType": "official public operator (EGEAC, Lisbon City Council)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "A \"Programação 2026\" page covers May to October 2026, including \"Domingos no Castelo\" on the last Sunday of each month until October. The hours page notes that the castle's museum nucleus is temporarily closed while its sanitary facilities are improved."
+      },
+      "Oceanário de Lisboa": {
+        "url": "https://www.oceanario.pt/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Footer \"© OCEANÁRIO DE LISBOA 2026\". Temporary exhibitions \"Monstros Marinhos\" and \"Universo Submerso\" are listed, with online tickets \"a partir de 25,5€\"."
+      },
+      "Time Out Market Lisboa": {
+        "url": "https://www.timeout.pt/time-out-market-lisboa/pt",
+        "sourceType": "operator's own site (Time Out)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Footer \"© 2026 Time Out England Limited\" and a headline saying \"O Time Out Market faz 12 anos\". The page describes the market as having \"26 restaurantes, 8 bares, uma dúzia de lojas\"."
+      },
+      "Belcanto": {
+        "url": "https://www.belcanto.pt/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Footer \"José Avillez © 2026\", a June 2026 FAQ file and an online \"Reservar\" link. The site says emails \"não devem ser utilizados para solicitar reservas\"."
+      },
+      "Prado": {
+        "url": "https://www.pradorestaurante.com/index2.php",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Footer \"2026 © Sweet Lisbon, Lda\" and a linked menu PDF and wine list. The on-page booking buttons are placeholders."
+      },
+      "Cinco Lounge": {
+        "url": "https://www.cincolounge.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "\"Open daily 8pm – 2am\", with bookings taken 20:00-22:00 by email, walk-ins accepted and a linked cocktail menu. The page has no 2026 date."
+      },
+      "Pastéis de Belém": {
+        "url": "https://pasteisdebelem.pt/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "The homepage states \"Estamos abertos\" \"todos os dias\". The notice is undated, with no 2026 content."
+      },
+      "Manteigaria (Chiado)": {
+        "url": "https://manteigaria.com/as-nossas-fabricas/chiado/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "The branch page publishes \"Horário: 08h00 – 00h00\" and a phone number. No 2026-dated content."
+      },
+      "Copenhagen Coffee Lab (Madalena)": {
+        "url": "https://copenhagencoffeelab.com/pages/lokation/copenhagen-coffee-lab-madalena",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Footer \"© 2026 - Copenhagen Coffee Lab\" and a linked menu, with brunch described as \"served all day\"."
+      },
+      "Hello Kristof (Poço dos Negros)": {
+        "url": "https://hellokristof.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Footer \"© 2026 Hello Kristof\" and an announced \"Coffee Methods Workshop\" on \"Saturday, 21st November\" at its São Bento location."
+      }
+    }
+  },
   "Rome, Italy": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-21",

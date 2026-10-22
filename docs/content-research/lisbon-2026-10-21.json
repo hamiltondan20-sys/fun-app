@@ -1,0 +1,470 @@
+{
+  "city": "Lisbon, Portugal",
+  "checkedOn": "2026-10-21",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Torre de Belém",
+      "kind": "landmark",
+      "url": "https://www.museusemonumentos.pt/pt/museus-e-monumentos/torre-de-belem",
+      "sourceType": "official public operator (Museus e Monumentos de Portugal)",
+      "address": "Torre de Belém, Av. Brasília · 1400-038 Lisboa",
+      "operatingEvidence": "The page publishes current hours, closing days and a 'Bilhete normal' of 15,00 € with an online ticket office link. It shows no 2026-dated item and the footer reads '© 2024'.",
+      "hours": "\"Terça a Domingo, das 9h30 às 17h30\" (the English page also gives 9:00am-5:30pm); closed Mondays, 1 Jan, Easter Sunday, 1 May, 13 Jun, 25 Dec",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mosteiro dos Jerónimos",
+      "kind": "landmark",
+      "url": "https://www.museusemonumentos.pt/pt/museus-e-monumentos/mosteiro-dos-jeronimos-e-capela-de-sao-jeronimo",
+      "sourceType": "official public operator (Museus e Monumentos de Portugal)",
+      "address": "Praça do Império · 1400-206 Lisboa",
+      "operatingEvidence": "Current visiting hours for cloister and church, a standard ticket of 18,00 € with online sales, and the notice \"Bilheteiras encerram às 16h30\".",
+      "hours": "Cloister Tuesday-Sunday 9h30-17h30 (last entry 17h00); church Tuesday-Saturday 10h30-17h00, Sundays and religious holidays 14h00-17h00; closed Mondays, 1 Jan, Easter Sunday, 1 May, 13 Jun, 25 Dec",
+      "confidence": "medium"
+    },
+    {
+      "name": "Padrão dos Descobrimentos",
+      "kind": "landmark",
+      "url": "https://padraodosdescobrimentos.pt/",
+      "sourceType": "operator's own site",
+      "address": "Av. Brasília 1400-038 Lisboa",
+      "operatingEvidence": "Current exhibition \"PADRÃO. Casa-Obsessão\" and a family Sunday event \"A Minha Casa-Obsessão\" on 25 October 2026.",
+      "hours": "October-February daily 10:00-18:00 (last entry 17:30); March-September daily 10:00-19:00 (last entry 18:30); closed 1 Jan, 1 May, 24, 25 and 31 Dec",
+      "confidence": "high"
+    },
+    {
+      "name": "MAAT",
+      "kind": "museum",
+      "url": "https://www.maat.pt/",
+      "sourceType": "operator's own site (Fundação EDP)",
+      "address": "Av. Brasília, Belém, 1300-598 Lisboa",
+      "operatingEvidence": "Exhibitions including \"Turn around\" at MAAT Central \"até Janeiro de 2027\" and dated events such as a visit-performance on 25/10/2026 and MAAT Friends After Hours on 28/10/2026.",
+      "hours": "\"Aberto de quarta a segunda-feira\", 10.00-19.00; closed Tuesdays, 1 Jan, 1 May, 25 Dec, and 24 and 31 Dec from 15.00",
+      "confidence": "high"
+    },
+    {
+      "name": "Museu Calouste Gulbenkian",
+      "kind": "museum",
+      "url": "https://gulbenkian.pt/museu/informacoes/informacoes-contactos/",
+      "sourceType": "operator's own site (Fundação Calouste Gulbenkian)",
+      "address": "Av. de Berna 45A, 1067-001 Lisboa",
+      "operatingEvidence": "A reopening page published 1 July 2026 says the museum reopens \"um ano e meio depois de ter encerrado para obras de renovação\". The museum page notes gallery works \"Entre 12 e 23 de outubro\" with some artworks removed, and lists \"A Coleção Imaginária\" from 21 Nov 2026 to 15 Mar 2027.",
+      "hours": "10:00-18:00, Saturdays 10:00-21:00 (gulbenkian.pt/informacoes-uteis/horarios/); last entry 30 minutes before closing; closed Tuesdays, 1 Jan, Easter Sunday, 1 May, 24 and 25 Dec",
+      "confidence": "high"
+    },
+    {
+      "name": "Castelo de São Jorge",
+      "kind": "landmark",
+      "url": "https://castelodesaojorge.pt/pt/horarios",
+      "sourceType": "official public operator (EGEAC, Lisbon City Council)",
+      "address": "Rua de Santa Cruz do Castelo, 1100-129 Lisboa",
+      "operatingEvidence": "A \"Programação 2026\" page covers May to October 2026, including \"Domingos no Castelo\" on the last Sunday of each month until October. The hours page notes that the castle's museum nucleus is temporarily closed while its sanitary facilities are improved.",
+      "hours": "Summer (1 Mar-31 Oct) 9:00-21:00, last admission 20:30; winter (1 Nov-end Feb) 9:00-18:00, last admission 17:30; closed 1 Jan, 1 May, 24, 25 and 31 Dec",
+      "confidence": "high"
+    },
+    {
+      "name": "Oceanário de Lisboa",
+      "kind": "museum",
+      "url": "https://www.oceanario.pt/",
+      "sourceType": "operator's own site",
+      "address": "\"situado na Doca dos Olivais, no Parque das Nações\" (no street number given)",
+      "operatingEvidence": "Footer \"© OCEANÁRIO DE LISBOA 2026\". Temporary exhibitions \"Monstros Marinhos\" and \"Universo Submerso\" are listed, with online tickets \"a partir de 25,5€\".",
+      "hours": "Daily 10h-20h, last entry 19h; 24 and 31 Dec 10h-19h; 25 Dec and 1 Jan 11h-20h",
+      "confidence": "high"
+    },
+    {
+      "name": "Time Out Market Lisboa",
+      "kind": "market",
+      "url": "https://www.timeout.pt/time-out-market-lisboa/pt",
+      "sourceType": "operator's own site (Time Out)",
+      "address": "Mercado da Ribeira, Av. 24 de Julho, 1200-479 Lisboa",
+      "operatingEvidence": "Footer \"© 2026 Time Out England Limited\" and a headline saying \"O Time Out Market faz 12 anos\". The page describes the market as having \"26 restaurantes, 8 bares, uma dúzia de lojas\".",
+      "hours": "\"Todos os dias 10.00-00.00\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Belcanto",
+      "kind": "meal",
+      "url": "https://www.belcanto.pt/",
+      "sourceType": "operator's own site",
+      "address": "Rua Serpa Pinto, 10 A, 1200-445 Lisboa",
+      "operatingEvidence": "Footer \"José Avillez © 2026\", a June 2026 FAQ file and an online \"Reservar\" link. The site says emails \"não devem ser utilizados para solicitar reservas\".",
+      "hours": "Tuesday-Saturday, lunch 12:30-15:00, dinner 19:00-22:00; closed Sundays and Mondays",
+      "confidence": "high"
+    },
+    {
+      "name": "Prado",
+      "kind": "meal",
+      "url": "https://www.pradorestaurante.com/index2.php",
+      "sourceType": "operator's own site",
+      "address": "Travessa das Pedras Negras, 2 1100-404 Lisboa",
+      "operatingEvidence": "Footer \"2026 © Sweet Lisbon, Lda\" and a linked menu PDF and wine list. The on-page booking buttons are placeholders.",
+      "hours": "Lunch Thursday-Saturday 12h-17h (last admissions 15h); dinner Tuesday-Saturday 19h-01h (last admissions 22h30)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Cinco Lounge",
+      "kind": "bar",
+      "url": "https://www.cincolounge.com/",
+      "sourceType": "operator's own site",
+      "address": "Rua Ruben A. Leitão 17A, Lisboa",
+      "operatingEvidence": "\"Open daily 8pm – 2am\", with bookings taken 20:00-22:00 by email, walk-ins accepted and a linked cocktail menu. The page has no 2026 date.",
+      "hours": "\"Every day 8pm – 2am\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Pastéis de Belém",
+      "kind": "bakery",
+      "url": "https://pasteisdebelem.pt/",
+      "sourceType": "operator's own site",
+      "address": "Rua de Belém nº 84 a 92, 1300 – 085 Lisboa Portugal",
+      "operatingEvidence": "The homepage states \"Estamos abertos\" \"todos os dias\". The notice is undated, with no 2026 content.",
+      "hours": "\"todos os dias\" (open every day); times not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Manteigaria (Chiado)",
+      "kind": "bakery",
+      "url": "https://manteigaria.com/as-nossas-fabricas/chiado/",
+      "sourceType": "operator's own site",
+      "address": "Rua do Loreto 2, 1200-108 Lisboa",
+      "operatingEvidence": "The branch page publishes \"Horário: 08h00 – 00h00\" and a phone number. No 2026-dated content.",
+      "hours": "\"08h00 – 00h00\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Copenhagen Coffee Lab (Madalena)",
+      "kind": "cafe",
+      "url": "https://copenhagencoffeelab.com/pages/lokation/copenhagen-coffee-lab-madalena",
+      "sourceType": "operator's own site",
+      "address": "\"We are located at Rua da Madalena 96, in the heart of Lisbon's historic downtown\"",
+      "operatingEvidence": "Footer \"© 2026 - Copenhagen Coffee Lab\" and a linked menu, with brunch described as \"served all day\".",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Hello Kristof (Poço dos Negros)",
+      "kind": "cafe",
+      "url": "https://hellokristof.com/",
+      "sourceType": "operator's own site",
+      "address": "\"Hello, Kristof — Poço dos Negros, 103, Lisbon\"",
+      "operatingEvidence": "Footer \"© 2026 Hello Kristof\" and an announced \"Coffee Methods Workshop\" on \"Saturday, 21st November\" at its São Bento location.",
+      "hours": "\"8:45 AM – 3:45 PM\" in an embedded post; the FAQ says \"open 7 days a week, all day\" (conflicting)",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Alfama",
+      "reason": "generic, not a place (neighbourhood)",
+      "url": ""
+    },
+    {
+      "name": "Belem Tower area",
+      "reason": "generic, not a place (area); checked as Torre de Belém instead",
+      "url": ""
+    },
+    {
+      "name": "Miradouro viewpoints",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Tram views and walking",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Pastel and coffee stops",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free viewpoints",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Belcanto dinner",
+      "reason": "duplicate of Belcanto (confirmed separately)",
+      "url": ""
+    },
+    {
+      "name": "Private sail on the Tagus",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Palace hotel stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Alfama at sunset",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Riverfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Wine bar night",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Tram ride",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Time Out Market snacks",
+      "reason": "duplicate of Time Out Market Lisboa (confirmed separately)",
+      "url": ""
+    },
+    {
+      "name": "Chiado cafes",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Alfama wandering",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Belem",
+      "reason": "generic, not a place (district)",
+      "url": ""
+    },
+    {
+      "name": "Chiado and Baixa",
+      "reason": "generic, not a place (districts)",
+      "url": ""
+    },
+    {
+      "name": "Fado night",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Day trip feel from Cais do Sodre",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "LX Factory",
+      "reason": "Official site returned no readable text (only encoded image data across the fetched page); address and operating status could not be read. Not evidence of closure.",
+      "url": "https://lxfactory.com/"
+    },
+    {
+      "name": "Taberna da Rua das Flores",
+      "reason": "No official website found; tabernadaruadasflores.pt does not resolve (DNS ENOTFOUND) and only social media/directory listings exist, which are not accepted as evidence.",
+      "url": "https://www.tabernadaruadasflores.pt/"
+    },
+    {
+      "name": "Dear Breakfast",
+      "reason": "Official site fetch failed with an SSL/TLS error (WRONG_VERSION_NUMBER); not bypassed. Not evidence of closure.",
+      "url": "https://dearbreakfast.com/"
+    },
+    {
+      "name": "Heim Cafe",
+      "reason": "No official website found (only social media pages, not accepted); directory reports of a Santos relocation could not be verified.",
+      "url": ""
+    },
+    {
+      "name": "Fauna & Flora",
+      "reason": "No official website found; guessed domain faunaeflora.pt does not resolve. Only third-party listings available.",
+      "url": ""
+    },
+    {
+      "name": "Sea Me",
+      "reason": "Official site peixariamoderna.com refused the connection (ECONNREFUSED); not bypassed. Not evidence of closure.",
+      "url": "https://www.peixariamoderna.com/"
+    },
+    {
+      "name": "Red Frog",
+      "reason": "Official site read (hours \"Terça a Sábado: 18:00 – 01:00\", booking suggested) but no street address is published on the pages read, so it fails the address requirement.",
+      "url": "https://www.redfrog.pt/reservas/"
+    },
+    {
+      "name": "Monkey Mash",
+      "reason": "Official site read but shows no address, hours or dated content; only a 'RESERVAS' link.",
+      "url": "https://www.monkeymash.pt/"
+    },
+    {
+      "name": "Padaria Sao Roque",
+      "reason": "Operator site lists the shop \"Padaria S. Roque (Patriarcal): Rua D. Pedro V, 57\" but publishes no hours and no current-operation evidence (footer \"©2015\"). Not confirmed.",
+      "url": "https://panifsroque.pt/contactos-2/"
+    },
+    {
+      "name": "The Mill",
+      "reason": "Official site (themill.pt) fetch failed with an SSL/TLS error (WRONG_VERSION_NUMBER); not bypassed. Not evidence of closure.",
+      "url": "https://themill.pt/"
+    },
+    {
+      "name": "Museu Nacional do Azulejo",
+      "reason": "Gap candidate. Official page says \"Encerrado para obras de requalificação\" (PRR works) with no reopening date.",
+      "url": "https://www.museusemonumentos.pt/pt/museus-e-monumentos/museu-nacional-do-azulejo"
+    },
+    {
+      "name": "Museu Nacional de Arte Antiga",
+      "reason": "Gap candidate. Currently closed: \"Reabre dia 21 de novembro após obras de requalificação no âmbito do PRR\" (year not stated).",
+      "url": "https://www.museusemonumentos.pt/pt/museus-e-monumentos/museu-nacional-de-arte-antiga"
+    },
+    {
+      "name": "Elevador de Santa Justa",
+      "reason": "Gap candidate. Carris page header says \"Encerrado temporariamente\" with no reopening date.",
+      "url": "https://www.carris.pt/descubra/frota/elevador/"
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Mosteiro dos Jerónimos",
+        "Torre de Belém",
+        "Castelo de São Jorge",
+        "Oceanário de Lisboa"
+      ],
+      "bestFirstTimers": [
+        "Mosteiro dos Jerónimos",
+        "Torre de Belém",
+        "Castelo de São Jorge",
+        "Time Out Market Lisboa"
+      ],
+      "bestRestaurants": [
+        "Belcanto",
+        "Prado"
+      ],
+      "bestBudget": [
+        "Pastéis de Belém",
+        "Manteigaria (Chiado)",
+        "Time Out Market Lisboa"
+      ],
+      "bestLuxury": [
+        "Belcanto",
+        "Cinco Lounge"
+      ],
+      "bestCouples": [
+        "Castelo de São Jorge",
+        "Prado",
+        "Cinco Lounge"
+      ],
+      "bestKids": [
+        "Oceanário de Lisboa",
+        "Padrão dos Descobrimentos",
+        "MAAT",
+        "Castelo de São Jorge"
+      ],
+      "bestSolo": [
+        "Museu Calouste Gulbenkian",
+        "MAAT",
+        "Hello Kristof (Poço dos Negros)",
+        "Copenhagen Coffee Lab (Madalena)"
+      ],
+      "bestUnique": [
+        "MAAT",
+        "Padrão dos Descobrimentos",
+        "Museu Calouste Gulbenkian"
+      ],
+      "bestBreakfast": [
+        "Copenhagen Coffee Lab (Madalena)",
+        "Hello Kristof (Poço dos Negros)",
+        "Manteigaria (Chiado)"
+      ],
+      "bestLunch": [
+        "Time Out Market Lisboa",
+        "Prado",
+        "Belcanto"
+      ],
+      "bestDinner": [
+        "Belcanto",
+        "Prado"
+      ],
+      "bestCocktails": [
+        "Cinco Lounge"
+      ],
+      "bestBakeries": [
+        "Pastéis de Belém",
+        "Manteigaria (Chiado)"
+      ],
+      "bestCoffee": [
+        "Copenhagen Coffee Lab (Madalena)",
+        "Hello Kristof (Poço dos Negros)"
+      ]
+    },
+    "queries": {
+      "Torre de Belém": "Torre de Belém Avenida Brasília Lisbon",
+      "Mosteiro dos Jerónimos": "Mosteiro dos Jerónimos Praça do Império Lisbon",
+      "Padrão dos Descobrimentos": "Padrão dos Descobrimentos Avenida Brasília Lisbon",
+      "MAAT": "MAAT Avenida Brasília Belém Lisbon",
+      "Museu Calouste Gulbenkian": "Museu Calouste Gulbenkian Avenida de Berna 45A Lisbon",
+      "Castelo de São Jorge": "Castelo de São Jorge Rua de Santa Cruz do Castelo Lisbon",
+      "Oceanário de Lisboa": "Oceanário de Lisboa Doca dos Olivais Parque das Nações Lisbon",
+      "Time Out Market Lisboa": "Time Out Market Lisboa Mercado da Ribeira Avenida 24 de Julho Lisbon",
+      "Belcanto": "Belcanto Rua Serpa Pinto 10A Lisbon",
+      "Prado": "Prado Travessa das Pedras Negras 2 Lisbon",
+      "Cinco Lounge": "Cinco Lounge Rua Ruben A Leitão 17A Lisbon",
+      "Pastéis de Belém": "Pastéis de Belém Rua de Belém 84 Lisbon",
+      "Manteigaria (Chiado)": "Manteigaria Rua do Loreto 2 Lisbon",
+      "Copenhagen Coffee Lab (Madalena)": "Copenhagen Coffee Lab Rua da Madalena 96 Lisbon",
+      "Hello Kristof (Poço dos Negros)": "Hello Kristof Rua do Poço dos Negros 103 Lisbon"
+    },
+    "summary": "Belém monuments, the castle, museums and the aquarium, with bakeries, cafés, restaurants and a cocktail bar checked against their own websites.",
+    "highlights": [
+      "Mosteiro dos Jerónimos",
+      "Torre de Belém",
+      "Castelo de São Jorge",
+      "Museu Calouste Gulbenkian"
+    ],
+    "tip": "Avoid Belém on a Monday, when Mosteiro dos Jerónimos and Torre de Belém are both closed, and remember that MAAT and the Museu Calouste Gulbenkian close on Tuesdays instead.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mon: Belém monuments · Tue: MAAT, Gulbenkian",
+        "copy": "Mosteiro dos Jerónimos and Torre de Belém close on Mondays, while MAAT and the Museu Calouste Gulbenkian close on Tuesdays. Belcanto is closed on Sundays and Mondays."
+      },
+      {
+        "label": "Tickets",
+        "value": "Jerónimos 18 €, Torre 15 €",
+        "copy": "The standard ticket is 18,00 € at Mosteiro dos Jerónimos and 15,00 € at Torre de Belém, both sold through an online ticket office. At Jerónimos the ticket offices close at 16h30, an hour before the cloister."
+      },
+      {
+        "label": "Booking",
+        "value": "Book Belcanto online or by phone",
+        "copy": "Belcanto takes reservations through its booking page or by phone, and says emails should not be used to request them. Cinco Lounge takes bookings for 20:00-22:00 by email and also accepts walk-ins."
+      },
+      {
+        "label": "Seasonal hours",
+        "value": "Castle closes 18:00 from 1 Nov",
+        "copy": "Castelo de São Jorge runs summer hours to 21:00 until 31 October, then closes at 18:00 (last admission 17:30) from 1 November. The Oceanário de Lisboa opens daily 10h-20h with last entry at 19h, and offers lockers for luggage."
+      }
+    ],
+    "dek": "Group Belém's monuments on any day but Monday, keep Tuesday for the castle or aquarium, and book Belcanto ahead.",
+    "intro": [
+      "In Belém, Mosteiro dos Jerónimos, Torre de Belém and the Padrão dos Descobrimentos stand within a short walk of each other, so you can see all three in one day. Jerónimos opens its cloister Tuesday to Sunday from 9h30 to 17h30, with last entry at 17h00, but its ticket offices close at 16h30. The standard ticket costs 18,00 €. Torre de Belém also closes on Mondays and charges 15,00 €. The Padrão opens daily, from 10:00 to 18:00 until February, and its current exhibition is \"PADRÃO. Casa-Obsessão\".",
+      "MAAT, also on Avenida Brasília, opens Wednesday to Monday from 10.00 to 19.00. Its show \"Turn around\", drawn from the Fundação EDP art collection, runs until January 2027. Across town, the Museu Calouste Gulbenkian has reopened after about a year and a half of renovation. It opens 10:00 to 18:00, stays open to 21:00 on Saturdays, and closes on Tuesdays. Gallery works run from 12 to 23 October, so some pieces may be off view during your visit. \"A Coleção Imaginária\" opens on 21 November 2026 and runs until 15 March 2027.",
+      "Castelo de São Jorge is open every day apart from a few holidays. It keeps summer hours, 9:00 to 21:00, until 31 October. From 1 November it closes at 18:00, with last admission at 17:30. The castle's museum nucleus is temporarily closed while its toilets are improved. The Oceanário de Lisboa at Parque das Nações opens daily from 10h to 20h, with last entry at 19h. Its temporary exhibitions are \"Monstros Marinhos\" and \"Universo Submerso\". Online tickets start at 25,5€, and lockers are available for your luggage.",
+      "For food, Time Out Market Lisboa in the Mercado da Ribeira opens daily from 10.00 to midnight, with 26 restaurants and 8 bars. Belcanto on Rua Serpa Pinto serves lunch and dinner Tuesday to Saturday. Prado serves dinner Tuesday to Saturday and lunch Thursday to Saturday. For pastries, Pastéis de Belém says it is open every day, and Manteigaria on Rua do Loreto opens from 08h00 to midnight. After dark, Cinco Lounge in Príncipe Real pours cocktails daily from 8pm to 2am."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Spend a Tuesday-to-Sunday morning at Mosteiro dos Jerónimos and Torre de Belém, then walk to the Padrão dos Descobrimentos, which opens daily."
+      ],
+      [
+        "A slower morning",
+        "Start with coffee at Copenhagen Coffee Lab on Rua da Madalena or Hello Kristof on Poço dos Negros, then take a custard tart from Manteigaria, which opens at 08h00."
+      ],
+      [
+        "Before booking",
+        "Reserve Belcanto through its booking page or by phone rather than by email, and note that it closes on Sundays and Mondays."
+      ]
+    ]
+  },
+  "limitations": "This is a website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several official sites could not be read. LX Factory's page returned only encoded image data. Dear Breakfast and The Mill failed with SSL errors, and Sea Me's site refused the connection. No official site could be found for Taberna da Rua das Flores, Heim Cafe or Fauna & Flora. Red Frog and Monkey Mash publish no street address on the pages read. Padaria São Roque's operator site shows no hours or current activity. Some places were only partly published. Pastéis de Belém gives no opening times, Copenhagen Coffee Lab (Madalena) lists no hours, and Hello Kristof gives conflicting hours. Torre de Belém shows two different morning opening times. The Oceanário gives no street number. Torre de Belém, Jerónimos, Pastéis de Belém, Manteigaria and Cinco Lounge show no 2026-dated content beyond published hours or tickets. Museu Nacional do Azulejo, Museu Nacional de Arte Antiga (until 21 November) and Elevador de Santa Justa are currently closed.",
+  "injectionLikeText": []
+}

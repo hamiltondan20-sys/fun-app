@@ -1463,4 +1463,97 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 18 distinct recommendations in this guide were checked against their operators' own websites on October 21, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Lisbon, Portugal: source review of 2026-10-21 (docs/content-research/lisbon-2026-10-21.md).
+  {
+    const cityKey = "Lisbon, Portugal";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Mosteiro dos Jerónimos","Torre de Belém","Castelo de São Jorge","Oceanário de Lisboa"],
+      bestFirstTimers: ["Mosteiro dos Jerónimos","Torre de Belém","Castelo de São Jorge","Time Out Market Lisboa"],
+      bestRestaurants: ["Belcanto","Prado"],
+      bestBudget: ["Pastéis de Belém","Manteigaria (Chiado)","Time Out Market Lisboa"],
+      bestLuxury: ["Belcanto","Cinco Lounge"],
+      bestCouples: ["Castelo de São Jorge","Prado","Cinco Lounge"],
+      bestKids: ["Oceanário de Lisboa","Padrão dos Descobrimentos","MAAT","Castelo de São Jorge"],
+      bestSolo: ["Museu Calouste Gulbenkian","MAAT","Hello Kristof (Poço dos Negros)","Copenhagen Coffee Lab (Madalena)"],
+      bestUnique: ["MAAT","Padrão dos Descobrimentos","Museu Calouste Gulbenkian"],
+      bestBreakfast: ["Copenhagen Coffee Lab (Madalena)","Hello Kristof (Poço dos Negros)","Manteigaria (Chiado)"],
+      bestLunch: ["Time Out Market Lisboa","Prado","Belcanto"],
+      bestDinner: ["Belcanto","Prado"],
+      bestCocktails: ["Cinco Lounge"],
+      bestBakeries: ["Pastéis de Belém","Manteigaria (Chiado)"],
+      bestCoffee: ["Copenhagen Coffee Lab (Madalena)","Hello Kristof (Poço dos Negros)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Mosteiro dos Jerónimos": "Mosteiro dos Jerónimos Praça do Império Lisbon",
+      "Torre de Belém": "Torre de Belém Avenida Brasília Lisbon",
+      "Castelo de São Jorge": "Castelo de São Jorge Rua de Santa Cruz do Castelo Lisbon",
+      "Oceanário de Lisboa": "Oceanário de Lisboa Doca dos Olivais Parque das Nações Lisbon",
+      "Time Out Market Lisboa": "Time Out Market Lisboa Mercado da Ribeira Avenida 24 de Julho Lisbon",
+      "Belcanto": "Belcanto Rua Serpa Pinto 10A Lisbon",
+      "Prado": "Prado Travessa das Pedras Negras 2 Lisbon",
+      "Pastéis de Belém": "Pastéis de Belém Rua de Belém 84 Lisbon",
+      "Manteigaria (Chiado)": "Manteigaria Rua do Loreto 2 Lisbon",
+      "Cinco Lounge": "Cinco Lounge Rua Ruben A Leitão 17A Lisbon",
+      "Padrão dos Descobrimentos": "Padrão dos Descobrimentos Avenida Brasília Lisbon",
+      "MAAT": "MAAT Avenida Brasília Belém Lisbon",
+      "Museu Calouste Gulbenkian": "Museu Calouste Gulbenkian Avenida de Berna 45A Lisbon",
+      "Hello Kristof (Poço dos Negros)": "Hello Kristof Rua do Poço dos Negros 103 Lisbon",
+      "Copenhagen Coffee Lab (Madalena)": "Copenhagen Coffee Lab Rua da Madalena 96 Lisbon"
+    };
+    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (cityGuide) {
+      cityGuide.summary = "Belém monuments, the castle, museums and the aquarium, with bakeries, cafés, restaurants and a cocktail bar checked against their own websites.";
+      cityGuide.highlights = ["Mosteiro dos Jerónimos","Torre de Belém","Castelo de São Jorge","Museu Calouste Gulbenkian"];
+      cityGuide.tip = "Avoid Belém on a Monday, when Mosteiro dos Jerónimos and Torre de Belém are both closed, and remember that MAAT and the Museu Calouste Gulbenkian close on Tuesdays instead.";
+    }
+    data.destinationFacts[cityKey] = "Avoid Belém on a Monday, when Mosteiro dos Jerónimos and Torre de Belém are both closed, and remember that MAAT and the Museu Calouste Gulbenkian close on Tuesdays instead.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Belém monuments, the castle, museums and the aquarium, with bakeries, cafés, restaurants and a cocktail bar checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mon: Belém monuments · Tue: MAAT, Gulbenkian",
+        "copy": "Mosteiro dos Jerónimos and Torre de Belém close on Mondays, while MAAT and the Museu Calouste Gulbenkian close on Tuesdays. Belcanto is closed on Sundays and Mondays."
+      },
+      {
+        "label": "Tickets",
+        "value": "Jerónimos 18 €, Torre 15 €",
+        "copy": "The standard ticket is 18,00 € at Mosteiro dos Jerónimos and 15,00 € at Torre de Belém, both sold through an online ticket office. At Jerónimos the ticket offices close at 16h30, an hour before the cloister."
+      },
+      {
+        "label": "Booking",
+        "value": "Book Belcanto online or by phone",
+        "copy": "Belcanto takes reservations through its booking page or by phone, and says emails should not be used to request them. Cinco Lounge takes bookings for 20:00-22:00 by email and also accepts walk-ins."
+      },
+      {
+        "label": "Seasonal hours",
+        "value": "Castle closes 18:00 from 1 Nov",
+        "copy": "Castelo de São Jorge runs summer hours to 21:00 until 31 October, then closes at 18:00 (last admission 17:30) from 1 November. The Oceanário de Lisboa opens daily 10h-20h with last entry at 19h, and offers lockers for luggage."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Group Belém's monuments on any day but Monday, keep Tuesday for the castle or aquarium, and book Belcanto ahead.",
+      intro: [
+        "In Belém, Mosteiro dos Jerónimos, Torre de Belém and the Padrão dos Descobrimentos stand within a short walk of each other, so you can see all three in one day. Jerónimos opens its cloister Tuesday to Sunday from 9h30 to 17h30, with last entry at 17h00, but its ticket offices close at 16h30. The standard ticket costs 18,00 €. Torre de Belém also closes on Mondays and charges 15,00 €. The Padrão opens daily, from 10:00 to 18:00 until February, and its current exhibition is \"PADRÃO. Casa-Obsessão\".",
+        "MAAT, also on Avenida Brasília, opens Wednesday to Monday from 10.00 to 19.00. Its show \"Turn around\", drawn from the Fundação EDP art collection, runs until January 2027. Across town, the Museu Calouste Gulbenkian has reopened after about a year and a half of renovation. It opens 10:00 to 18:00, stays open to 21:00 on Saturdays, and closes on Tuesdays. Gallery works run from 12 to 23 October, so some pieces may be off view during your visit. \"A Coleção Imaginária\" opens on 21 November 2026 and runs until 15 March 2027.",
+        "Castelo de São Jorge is open every day apart from a few holidays. It keeps summer hours, 9:00 to 21:00, until 31 October. From 1 November it closes at 18:00, with last admission at 17:30. The castle's museum nucleus is temporarily closed while its toilets are improved. The Oceanário de Lisboa at Parque das Nações opens daily from 10h to 20h, with last entry at 19h. Its temporary exhibitions are \"Monstros Marinhos\" and \"Universo Submerso\". Online tickets start at 25,5€, and lockers are available for your luggage.",
+        "For food, Time Out Market Lisboa in the Mercado da Ribeira opens daily from 10.00 to midnight, with 26 restaurants and 8 bars. Belcanto on Rua Serpa Pinto serves lunch and dinner Tuesday to Saturday. Prado serves dinner Tuesday to Saturday and lunch Thursday to Saturday. For pastries, Pastéis de Belém says it is open every day, and Manteigaria on Rua do Loreto opens from 08h00 to midnight. After dark, Cinco Lounge in Príncipe Real pours cocktails daily from 8pm to 2am."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Spend a Tuesday-to-Sunday morning at Mosteiro dos Jerónimos and Torre de Belém, then walk to the Padrão dos Descobrimentos, which opens daily."
+        ],
+        [
+          "A slower morning",
+          "Start with coffee at Copenhagen Coffee Lab on Rua da Madalena or Hello Kristof on Poço dos Negros, then take a custard tart from Manteigaria, which opens at 08h00."
+        ],
+        [
+          "Before booking",
+          "Reserve Belcanto through its booking page or by phone rather than by email, and note that it closes on Sundays and Mondays."
+        ]
+      ],
+      trust: "All 15 distinct recommendations in this guide were checked against their operators' own websites on October 21, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();
