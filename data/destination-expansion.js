@@ -1367,4 +1367,100 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 22 distinct recommendations in this guide were checked against their operators' own websites on October 21, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Rome, Italy: source review of 2026-10-21 (docs/content-research/rome-2026-10-21.md).
+  {
+    const cityKey = "Rome, Italy";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Vatican Museums","St. Peter's Basilica","Pantheon","Trevi Fountain"],
+      bestFirstTimers: ["Pantheon","Trevi Fountain","St. Peter's Basilica","Musei Capitolini"],
+      bestRestaurants: ["Armando al Pantheon","Da Enzo al 29","La Pergola"],
+      bestBudget: ["Trevi Fountain","Pizzarium (Via della Meloria)","Supplizio","Passeggiata del Pincio"],
+      bestLuxury: ["La Pergola","Galleria Doria Pamphilj"],
+      bestCouples: ["Passeggiata del Pincio","Da Enzo al 29","Drink Kong"],
+      bestKids: ["Passeggiata del Pincio","Galleria Doria Pamphilj","Supplizio"],
+      bestSolo: ["Musei Capitolini","Museo dell'Ara Pacis","Mercato Centrale Roma"],
+      bestUnique: ["Parco Regionale dell'Appia Antica","Museo dell'Ara Pacis","Jerry Thomas Speakeasy"],
+      bestBreakfast: ["Antico Forno Roscioli (Via dei Chiavari)","Mercato Centrale Roma"],
+      bestLunch: ["Pizzarium (Via della Meloria)","Supplizio","Armando al Pantheon"],
+      bestDinner: ["Da Enzo al 29","Armando al Pantheon","La Pergola"],
+      bestCocktails: ["Drink Kong","Jerry Thomas Speakeasy"],
+      bestBakeries: ["Antico Forno Roscioli (Via dei Chiavari)"],
+      bestCoffee: []
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Vatican Museums": "Vatican Museums Viale Vaticano Rome",
+      "St. Peter's Basilica": "St. Peter's Basilica Piazza San Pietro Vatican City Rome",
+      "Pantheon": "Pantheon Piazza della Rotonda Rome",
+      "Trevi Fountain": "Trevi Fountain Via della Stamperia Rome",
+      "Musei Capitolini": "Musei Capitolini Piazza del Campidoglio 1 Rome",
+      "Armando al Pantheon": "Armando al Pantheon Salita de' Crescenzi 31 Rome",
+      "Da Enzo al 29": "Da Enzo al 29 Via dei Vascellari 29 Rome",
+      "La Pergola": "La Pergola Rome Cavalieri Via Alberto Cadlolo 101 Rome",
+      "Pizzarium (Via della Meloria)": "Pizzarium Bonci Via della Meloria 43 Rome",
+      "Supplizio": "Supplizio Via dei Banchi Vecchi 143 Rome",
+      "Passeggiata del Pincio": "Passeggiata del Pincio Viale delle Magnolie Rome",
+      "Galleria Doria Pamphilj": "Galleria Doria Pamphilj Via del Corso 305 Rome",
+      "Drink Kong": "Drink Kong Piazza di San Martino ai Monti 8 Rome",
+      "Museo dell'Ara Pacis": "Museo dell'Ara Pacis Lungotevere in Augusta Rome",
+      "Mercato Centrale Roma": "Mercato Centrale Roma Via Giovanni Giolitti 36 Rome",
+      "Parco Regionale dell'Appia Antica": "Parco Regionale dell'Appia Antica Via Appia Antica 42 Rome",
+      "Jerry Thomas Speakeasy": "Jerry Thomas Speakeasy Vicolo Cellini 30 Rome",
+      "Antico Forno Roscioli (Via dei Chiavari)": "Antico Forno Roscioli Via dei Chiavari 34 Rome"
+    };
+    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (cityGuide) {
+      cityGuide.summary = "Vatican and Roman landmarks, civic museums, a park walk and the Appian Way park, with trattorias, pizza-by-the-slice, a bakery, a food hall and cocktail bars checked against their own websites.";
+      cityGuide.highlights = ["Vatican Museums","St. Peter's Basilica","Pantheon","Trevi Fountain"];
+      cityGuide.tip = "The Vatican Museums are closed on Sundays except the last Sunday of the month, when entry is free from 9:00 to 14:00 (final entry 12:30), so plan a weekday visit or arrive early on 25 October.";
+    }
+    data.destinationFacts[cityKey] = "The Vatican Museums are closed on Sundays except the last Sunday of the month, when entry is free from 9:00 to 14:00 (final entry 12:30), so plan a weekday visit or arrive early on 25 October.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Vatican and Roman landmarks, civic museums, a park walk and the Appian Way park, with trattorias, pizza-by-the-slice, a bakery, a food hall and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Check before you go",
+        "copy": "The Vatican Museums close on Sundays except the last Sunday of the month, and on 1 November and 8, 25 and 26 December. Galleria Doria Pamphilj closes every Wednesday, and Musei Capitolini and the Ara Pacis close on 1 May and 25 December."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Use the official sites",
+        "copy": "Book Vatican Museums tickets only at tickets.museivaticani.va; the museums warn of scam sites with similar domains. Trevi Fountain's inner area costs €2 for non-residents, and pre-bought tickets have no date or time and cannot be refunded."
+      },
+      {
+        "label": "Walk-in or reserve",
+        "value": "Policies differ",
+        "copy": "Da Enzo al 29 takes no reservations and seats guests in order of arrival, while Armando al Pantheon takes bookings only online. Drink Kong takes online reservations for up to 6 people but none after midnight."
+      },
+      {
+        "label": "Rules",
+        "value": "Dress, food and bags",
+        "copy": "St. Peter's Basilica admits only clothing appropriate for a place of worship, with no overly brief outfits, tank tops or headwear, and entry is through a police security check. Trevi Fountain bans food, drink and sitting on the basin edge, and has no cloakroom, so bring a small bag."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Book the Vatican Museums and your dinner slots in advance, and leave walk-in trattorias and the Trevi Fountain for flexible moments.",
+      intro: [
+        "You can build a first day in Rome around the Vatican. The Vatican Museums on Viale Vaticano open Monday to Saturday from 8:00 to 20:00, with final entry at 18:00. They are closed on Sundays except the last Sunday of the month, which is free from 9:00 to 14:00. St. Peter's Basilica opens at 7:00 and, from 26 October 2026, closes at 19:00. The dome opens 7:30 to 17:00 in winter. You enter through police security checks on the right side of St. Peter's Square, and you need clothing suited to a place of worship.",
+        "In the historic centre, the Pantheon on Piazza della Rotonda opens every day from 9:00 to 19:00, with last entry at 18:30, and its site lists free entry on the first Sunday of the month. The Trevi Fountain has charged non-residents €2 for the inner area since 2 February 2026. You enter on Via della Stamperia and leave by Via dei Crociferi. It opens at 9:00, or 11:30 on Mondays and Fridays, with last entry at 21:00. After closing you can still see it free from outside.",
+        "For museums beyond the big names, the Musei Capitolini on Piazza del Campidoglio open daily from 9:30 to 19:30. They are showing a Diego Rivera exhibition until 13 December 2026. The Ara Pacis keeps the same hours and opens a Fayum portrait exhibition on 5 November 2026, running to 2 May 2027. Galleria Doria Pamphilj, entered at Via del Corso 305, closes every Wednesday, and a standard ticket costs €16. For open air, the Passeggiata del Pincio is always open and has bike rental, and the Appia Antica park office is at Via Appia Antica 42.",
+        "Food planning matters as much as tickets. Da Enzo al 29 in Trastevere opens Monday to Saturday and takes no reservations. Armando al Pantheon books only online and is closed Saturday evening and Sunday. Supplizio on Via dei Banchi Vecchi is closed on Sundays. Antico Forno Roscioli on Via dei Chiavari opens daily at 7:30, and Mercato Centrale Roma on Via Giolitti runs daily from 7:30 to 23:30. For drinks, Drink Kong in Monti opens nightly at 18:30, and Jerry Thomas Speakeasy opens at 21:00."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair the Vatican Museums (Monday to Saturday, final entry 18:00) with St. Peter's Basilica, then cross to the Pantheon and the Trevi Fountain."
+        ],
+        [
+          "A slower morning",
+          "Start with bread at Antico Forno Roscioli from 7:30, then walk up to the always-open Passeggiata del Pincio."
+        ],
+        [
+          "Before booking",
+          "Buy Vatican tickets only on tickets.museivaticani.va, book Armando al Pantheon online, and plan to queue at Da Enzo al 29, which takes no reservations."
+        ]
+      ],
+      trust: "All 18 distinct recommendations in this guide were checked against their operators' own websites on October 21, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

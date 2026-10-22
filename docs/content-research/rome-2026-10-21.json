@@ -1,0 +1,510 @@
+{
+  "city": "Rome, Italy",
+  "checkedOn": "2026-10-21",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Vatican Museums",
+      "kind": "museum",
+      "url": "https://www.museivaticani.va/content/museivaticani/en/info/orari-musei-vaticani.html",
+      "sourceType": "official public operator (Vatican Museums, Vatican City State)",
+      "address": "Viale Vaticano, 00165 Rome",
+      "operatingEvidence": "The hours page lists 2026 closures, e.g. the Carriage Pavilion \"closed 20–23 October\" and regular closures on 1 November and 8, 25 and 26 December. Tickets are sold at \"tickets.museivaticani.va\", and the site warns of scam sites with similar domains.",
+      "hours": "\"From Monday to Saturday 08.00 a.m. – 08.00 p.m. (final entry 06.00 p.m.)\"; \"Every last Sunday of the month 09.00 a.m. – 02.00 p.m. (final entry 12.30 p.m.)\" with free entry; other Sundays closed.",
+      "confidence": "high"
+    },
+    {
+      "name": "St. Peter's Basilica",
+      "kind": "landmark",
+      "url": "https://www.basilicasanpietro.va/en/opening-hours",
+      "sourceType": "operator's own site (Basilica Papale di San Pietro)",
+      "address": "No street address published; security entrance is in \"the right hemicycle of Saint Peter's Square looking towards the Basilica\".",
+      "operatingEvidence": "Dated 2026 news, including \"New opening hours for St Peter's Basilica\" (28 May) and a sacred music concert on Saturday 10 October. Hours are given for \"October 26, 2026 to March 28, 2027\".",
+      "hours": "Basilica 07:00–20:00 until 25 October 2026, then 07:00–19:00 from 26 October 2026 to 28 March 2027. Dome: 7:00–18:00 in summer, 7:30–17:00 in winter.",
+      "confidence": "high"
+    },
+    {
+      "name": "Pantheon",
+      "kind": "landmark",
+      "url": "https://pantheonroma.com/en/",
+      "sourceType": "operator's own site (\"Sito della Basilica di Santa Maria ad Martyres\")",
+      "address": "Piazza della Rotonda, 00186 Roma RM, Italy",
+      "operatingEvidence": "\"BOOK NOW\" ticket link and 2026-dated news posts (e.g. 24 March, 12 March). Lists a \"First Sunday of the month free entry\" option.",
+      "hours": "\"All days: 9:00am – 7:00pm\" (last entry 6:30pm)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Trevi Fountain",
+      "kind": "landmark",
+      "url": "https://fontanaditrevi.roma.it/",
+      "sourceType": "official public operator (Roma Capitale)",
+      "address": "\"Ingresso: Via della Stamperia\" (ticket office); exit on Via dei Crociferi.",
+      "operatingEvidence": "Ticketing for non-residents since 2 February 2026: \"Scopri come entrare dal 2 febbraio 2026\". The inner perimeter costs €2 for non-residents. Pre-bought tickets are \"open, senza data e orario\" and cannot be refunded.",
+      "hours": "Monday and Friday 11:30–22:00; other days 9:00–22:00; \"Tutti i giorni ultimo ingresso 21:00\". The fountain stays visible free from outside after hours.",
+      "confidence": "high"
+    },
+    {
+      "name": "Musei Capitolini",
+      "kind": "museum",
+      "url": "https://www.museicapitolini.org/en/informazioni_pratiche/orari_e_indirizzi",
+      "sourceType": "official public operator (Roma Capitale, Sovrintendenza Capitolina)",
+      "address": "Piazza del Campidoglio 1, 00186 Roma",
+      "operatingEvidence": "Current exhibition \"Diego Rivera e la costruzione dell'arte moderna in Messico nel XX secolo\" runs 09/06/2026–13/12/2026, and \"Angeli - Messaggeri, custodi e viandanti\" runs to 10/01/2027. The Horti di Mecenate halls are closed for renovation (notice of 05/08/2026).",
+      "hours": "Daily 9:30–19:30; 24 and 31 December 9:30–14:00; last admission one hour before closing; closed 1 May and 25 December.",
+      "confidence": "high"
+    },
+    {
+      "name": "Museo dell'Ara Pacis",
+      "kind": "museum",
+      "url": "https://www.arapacis.it/en",
+      "sourceType": "official public operator (Roma Capitale)",
+      "address": "Lungotevere in Augusta, corner of via Tomacelli, 00100 Roma (RM)",
+      "operatingEvidence": "\"L'Ara si rivela\" runs 27/03/2026–31/12/2026. The exhibition \"Il potere del ritratto. Egitto e Roma. I volti del Fayum\" runs 05/11/2026–02/05/2027, with advance tickets on sale.",
+      "hours": "\"Everyday 9.30 - 19.30\"; 24 and 31 December 9.30–14.00; last admission one hour before closing; \"Closed 1 May and 25 December\".",
+      "confidence": "high"
+    },
+    {
+      "name": "Galleria Doria Pamphilj",
+      "kind": "museum",
+      "url": "https://www.doriapamphilj.it/roma/la-visita/",
+      "sourceType": "operator's own site (Amministrazione Doria Pamphilj s.r.l.)",
+      "address": "\"L'ingresso in Via del Corso 305, 00186 – Roma\"",
+      "operatingEvidence": "Publishes current visiting hours and ticket prices (standard €16, €17 booked online; under-12s free) with an online booking link. Footer \"©2026\".",
+      "hours": "Mon–Thu 9:00–19:00 (last entry 18:00); Fri–Sun 10:00–20:00 (last entry 19:00); closed every Wednesday, 1 January, Easter and 25 December.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Passeggiata del Pincio",
+      "kind": "scenic",
+      "url": "https://www.sovraintendenzaroma.it/i_luoghi/ville_e_parchi_storici/passeggiate_parchi_e_giardini/passeggiata_del_pincio",
+      "sourceType": "official public operator (Roma Capitale, Sovrintendenza Capitolina)",
+      "address": "\"tra piazza del Popolo, Villa Medici e il Muro Torto\"; entrances on via Gabriele d'Annunzio, viale di Villa Medici and viale delle Magnolie.",
+      "operatingEvidence": "Listed as \"Sempre aperto\" on a page carrying notices dated October 2026. Services include bike rental on via di Villa Medici and via dell'Orologio, and the Teatrino dei burattini S. Carlino.",
+      "hours": "\"Sempre aperto\" (always open)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Parco Regionale dell'Appia Antica",
+      "kind": "park",
+      "url": "https://www.parcoappiaantica.it/",
+      "sourceType": "official public operator (Ente Regionale Parco dell'Appia Antica)",
+      "address": "Via Appia Antica, 42, 00179 Roma",
+      "operatingEvidence": "News dated 20 October 2026 (a weather alert) and 6 October 2026 (Giornata Nazionale delle Famiglie al Museo). The site has a \"Noleggio Bici Appia Antica\" link.",
+      "hours": "not published",
+      "confidence": "high"
+    },
+    {
+      "name": "Armando al Pantheon",
+      "kind": "meal",
+      "url": "https://www.armandoalpantheon.it/",
+      "sourceType": "operator's own site",
+      "address": "Salita de' Crescenzi 31, 00186 Roma",
+      "operatingEvidence": "\"Copyright 2026\" and recent news items (a 1 October Hypertrattoria dinner). \"le prenotazioni sono possibili solo online\".",
+      "hours": "\"Aperto a pranzo dalle 12:30 alle 15:00\"; \"Dal lunedì al venerdì aperti a cena dalle 18:00 alle 23:00\"; closed Saturday evening and Sunday.",
+      "confidence": "high"
+    },
+    {
+      "name": "Da Enzo al 29",
+      "kind": "meal",
+      "url": "https://www.daenzoal29.com/",
+      "sourceType": "operator's own site",
+      "address": "via dei Vascellari, 29 (Trastevere, Roma)",
+      "operatingEvidence": "\"© 2026 Locanda Da Enzo\" with current hours. \"Non si accettano prenotazioni\": guests are seated in order of arrival.",
+      "hours": "\"Da lunedì a sabato\" 12:00–15:00 and 18:30–22:30 (Sunday not listed).",
+      "confidence": "medium"
+    },
+    {
+      "name": "La Pergola",
+      "kind": "meal",
+      "url": "https://www.romecavalieri.com/la-pergola/",
+      "sourceType": "operator's own site (Rome Cavalieri, Hilton Italiana S.r.l.)",
+      "address": "Via Alberto Cadlolo, 101 - 00136 Rome (hotel address; no separate restaurant address)",
+      "operatingEvidence": "Online \"Book Table\" link, reservation phone and email, and \"2026 © Hilton Italiana S.r.l.\". \"The menu offering is subject to seasonal changes.\"",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Pizzarium (Via della Meloria)",
+      "kind": "meal",
+      "url": "https://www.bonci.it/",
+      "sourceType": "operator's own site (Bonci)",
+      "address": "\"Via della Meloria, 43 00136 – Roma – Italia\"",
+      "operatingEvidence": "Group news dated 5 October 2026 (new Termini station space \"operativo\") and \"Copyright © 2026, Bonci\". No Pizzarium-specific hours or notice.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Supplizio",
+      "kind": "meal",
+      "url": "https://www.supplizioroma.it/",
+      "sourceType": "operator's own site",
+      "address": "\"Via dei Banchi Vecchi, 143 – 00186 – Roma\"",
+      "operatingEvidence": "Footer \"© 2016 - 2026 Supplizio\" with published hours. There is a summer closure notice for 10–31 August, with no year given.",
+      "hours": "\"Lun – Sab: 12:00 – 15:30 e 17:00 – 21:30\"; \"Domenica: chiuso\".",
+      "confidence": "high"
+    },
+    {
+      "name": "Drink Kong",
+      "kind": "bar",
+      "url": "https://www.drinkkong.com/",
+      "sourceType": "operator's own site",
+      "address": "Piazza di S. Martino ai Monti 8, Rome",
+      "operatingEvidence": "2026 menus (wine and spirits lists dated February 2026, food menu June 2026) and online reservations for up to 6 people. No reservations after midnight.",
+      "hours": "Every day 18:30–02:00; last order 01:30.",
+      "confidence": "high"
+    },
+    {
+      "name": "Jerry Thomas Speakeasy",
+      "kind": "bar",
+      "url": "https://www.thejerrythomasproject.it/speakeasy",
+      "sourceType": "operator's own site",
+      "address": "Vicolo Cellini, 30, 00186 Roma",
+      "operatingEvidence": "Published hours and a \"PRENOTA UN TAVOLO\" booking link. The newsletter sign-up gives \"la parola segreta\". No 2026-dated content (copyright \"© 2015 - 2023\").",
+      "hours": "Monday–Saturday 21:00–04:30; Sunday 21:00–03:30.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Antico Forno Roscioli (Via dei Chiavari)",
+      "kind": "bakery",
+      "url": "https://www.anticofornoroscioli.it/",
+      "sourceType": "operator's own site",
+      "address": "\"Via dei Chiavari 34, Roma\" (second shop: Via Augusto Armellini 81-83)",
+      "operatingEvidence": "Published daily hours and footer \"© 2026 Antico Forno Roscioli\".",
+      "hours": "\"Lun — Dom: 7:30 – 20:00\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mercato Centrale Roma",
+      "kind": "market",
+      "url": "https://www.mercatocentrale.it/roma/info/",
+      "sourceType": "operator's own site",
+      "address": "Via Giovanni Giolitti, 36, 00185 Roma",
+      "operatingEvidence": "Current events, including \"Mercato Centrale Roma compie 10 anni: un mese di eventi tra cibo, arte e cultura\" (the market opened in October 2016) and an \"Aperitivo Centrale\" series.",
+      "hours": "\"Siamo aperti tutti i giorni. Dalle 7:30 alle 23:30 dal lunedì alla domenica.\"",
+      "confidence": "high"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Colosseum",
+      "reason": "Official site colosseo.it refused the connection (ECONNREFUSED) on several attempts. ticketing.colosseo.it showed a browser security check, which was not bypassed. Not checked; this is not evidence of closure.",
+      "url": "https://colosseo.it/orari-e-biglietti/"
+    },
+    {
+      "name": "Roman Forum",
+      "reason": "Run by the Parco archeologico del Colosseo, whose site colosseo.it refused the connection (ECONNREFUSED). Not checked.",
+      "url": "https://colosseo.it/en/"
+    },
+    {
+      "name": "Spanish Steps",
+      "reason": "No official operator page found or read; the only pages found were tourism-board, news and a 2016 press PDF.",
+      "url": ""
+    },
+    {
+      "name": "Roscioli",
+      "reason": "The official site publishes hours and booking rules (daily 12:30–15:30 and 19:00–23:30) but no street address for the Salumeria, so it fails the address rule. A later fetch returned HTTP 429.",
+      "url": "https://www.salumeriaroscioli.com/pages/prenota"
+    },
+    {
+      "name": "Barnum Cafe",
+      "reason": "No official website found (barnumcafe.com does not resolve). Press reports say it moved in 2026, but press is not valid evidence.",
+      "url": ""
+    },
+    {
+      "name": "Marigold",
+      "reason": "No official website found. Third-party sources report it closed, but that is not valid evidence and was not verified.",
+      "url": ""
+    },
+    {
+      "name": "Pergamino Caffe",
+      "reason": "No official website found (pergaminocaffe.it does not resolve). Third-party sources suggest the premises now house a different business; not verified.",
+      "url": ""
+    },
+    {
+      "name": "Faro",
+      "reason": "The official site gives the address (\"Via Piave 55, 00187 RM\") but no hours or 2026-dated content (menus labelled \"OTTOBRE 25\").",
+      "url": "https://www.farorome.com/"
+    },
+    {
+      "name": "Sant'Eustachio Il Caffe",
+      "reason": "The official site failed with too many redirects (.it and .com); not readable.",
+      "url": "https://www.santeustachioilcaffe.it/"
+    },
+    {
+      "name": "Forno Campo de' Fiori",
+      "reason": "The official site refused the connection (ECONNREFUSED) on two attempts.",
+      "url": "https://www.fornocampodefiori.com/"
+    },
+    {
+      "name": "Panella",
+      "reason": "The official site shows a maintenance page (\"Il sito è attualmente in manutenzione\"), with no address, hours or current content.",
+      "url": "https://www.panellaroma.com/"
+    },
+    {
+      "name": "Le Levain",
+      "reason": "The official site lists shops (Via Luigi Santini 22, Trastevere; Via Piave 8, Sallustiano) but no hours, menu or dated content beyond a \"© 2026\" footer. Operating evidence is insufficient.",
+      "url": "https://www.lelevainroma.it/trastevere/"
+    },
+    {
+      "name": "The Court",
+      "reason": "The official Manfredi Hotels page returned HTTP 403 Forbidden.",
+      "url": "https://www.manfredihotels.com/en/palazzo-manfredi/the-court"
+    },
+    {
+      "name": "Villa Borghese",
+      "reason": "No official operator page found or read (guessed Sovrintendenza URL returned 404; search found only tourism-board pages).",
+      "url": ""
+    },
+    {
+      "name": "Keyhole on Aventine Hill",
+      "reason": "The Order of Malta official site gives no visitor information, address or hours for the Villa del Priorato keyhole.",
+      "url": "https://www.orderofmalta.int/"
+    },
+    {
+      "name": "Galleria Borghese (gap candidate)",
+      "reason": "Official site failed: galleriaborghese.beniculturali.it does not resolve, and galleriaborghese.cultura.gov.it refused the connection.",
+      "url": "https://galleriaborghese.cultura.gov.it/en/"
+    },
+    {
+      "name": "Mercato di Testaccio (gap candidate)",
+      "reason": "The official site gives entrances but no hours and no 2026 content (latest item June 2025).",
+      "url": "https://www.mercatoditestaccio.it/"
+    },
+    {
+      "name": "Trapizzino (gap candidate)",
+      "reason": "The official site returned HTTP 403 Forbidden.",
+      "url": "https://www.trapizzino.it/"
+    },
+    {
+      "name": "Tazza d'Oro (gap candidate)",
+      "reason": "The official site lists only a Formello company address, with no Pantheon-area branch address, hours or 2026 content.",
+      "url": "https://www.tazzadorocoffeeshop.com/"
+    },
+    {
+      "name": "Pasticceria Regoli (gap candidate)",
+      "reason": "The official site returned HTTP 500 Internal Server Error.",
+      "url": "https://www.pasticceriaregoli.com/"
+    },
+    {
+      "name": "Pantheon and piazza walks",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Trevi Fountain at night",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Street pizza and supplì",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private Vatican tour",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Luxury spa afternoon",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Trastevere dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Night walk past Trevi",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Colosseum family tour",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Gelato crawl",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning in Monti",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Pantheon",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided ancient Rome walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Appian Way bike ride",
+      "reason": "generic, not a place (the park itself was checked as Parco Regionale dell'Appia Antica)",
+      "url": ""
+    },
+    {
+      "name": "Testaccio food stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sant'Eustachio area coffee and cornetto",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Vatican Museums",
+        "St. Peter's Basilica",
+        "Pantheon",
+        "Trevi Fountain"
+      ],
+      "bestFirstTimers": [
+        "Pantheon",
+        "Trevi Fountain",
+        "St. Peter's Basilica",
+        "Musei Capitolini"
+      ],
+      "bestRestaurants": [
+        "Armando al Pantheon",
+        "Da Enzo al 29",
+        "La Pergola"
+      ],
+      "bestBudget": [
+        "Trevi Fountain",
+        "Pizzarium (Via della Meloria)",
+        "Supplizio",
+        "Passeggiata del Pincio"
+      ],
+      "bestLuxury": [
+        "La Pergola",
+        "Galleria Doria Pamphilj"
+      ],
+      "bestCouples": [
+        "Passeggiata del Pincio",
+        "Da Enzo al 29",
+        "Drink Kong"
+      ],
+      "bestKids": [
+        "Passeggiata del Pincio",
+        "Galleria Doria Pamphilj",
+        "Supplizio"
+      ],
+      "bestSolo": [
+        "Musei Capitolini",
+        "Museo dell'Ara Pacis",
+        "Mercato Centrale Roma"
+      ],
+      "bestUnique": [
+        "Parco Regionale dell'Appia Antica",
+        "Museo dell'Ara Pacis",
+        "Jerry Thomas Speakeasy"
+      ],
+      "bestBreakfast": [
+        "Antico Forno Roscioli (Via dei Chiavari)",
+        "Mercato Centrale Roma"
+      ],
+      "bestLunch": [
+        "Pizzarium (Via della Meloria)",
+        "Supplizio",
+        "Armando al Pantheon"
+      ],
+      "bestDinner": [
+        "Da Enzo al 29",
+        "Armando al Pantheon",
+        "La Pergola"
+      ],
+      "bestCocktails": [
+        "Drink Kong",
+        "Jerry Thomas Speakeasy"
+      ],
+      "bestBakeries": [
+        "Antico Forno Roscioli (Via dei Chiavari)"
+      ],
+      "bestCoffee": []
+    },
+    "queries": {
+      "Vatican Museums": "Vatican Museums Viale Vaticano Rome",
+      "St. Peter's Basilica": "St. Peter's Basilica Piazza San Pietro Vatican City Rome",
+      "Pantheon": "Pantheon Piazza della Rotonda Rome",
+      "Trevi Fountain": "Trevi Fountain Via della Stamperia Rome",
+      "Musei Capitolini": "Musei Capitolini Piazza del Campidoglio 1 Rome",
+      "Museo dell'Ara Pacis": "Museo dell'Ara Pacis Lungotevere in Augusta Rome",
+      "Galleria Doria Pamphilj": "Galleria Doria Pamphilj Via del Corso 305 Rome",
+      "Passeggiata del Pincio": "Passeggiata del Pincio Viale delle Magnolie Rome",
+      "Parco Regionale dell'Appia Antica": "Parco Regionale dell'Appia Antica Via Appia Antica 42 Rome",
+      "Armando al Pantheon": "Armando al Pantheon Salita de' Crescenzi 31 Rome",
+      "Da Enzo al 29": "Da Enzo al 29 Via dei Vascellari 29 Rome",
+      "La Pergola": "La Pergola Rome Cavalieri Via Alberto Cadlolo 101 Rome",
+      "Pizzarium (Via della Meloria)": "Pizzarium Bonci Via della Meloria 43 Rome",
+      "Supplizio": "Supplizio Via dei Banchi Vecchi 143 Rome",
+      "Drink Kong": "Drink Kong Piazza di San Martino ai Monti 8 Rome",
+      "Jerry Thomas Speakeasy": "Jerry Thomas Speakeasy Vicolo Cellini 30 Rome",
+      "Antico Forno Roscioli (Via dei Chiavari)": "Antico Forno Roscioli Via dei Chiavari 34 Rome",
+      "Mercato Centrale Roma": "Mercato Centrale Roma Via Giovanni Giolitti 36 Rome"
+    },
+    "summary": "Vatican and Roman landmarks, civic museums, a park walk and the Appian Way park, with trattorias, pizza-by-the-slice, a bakery, a food hall and cocktail bars checked against their own websites.",
+    "highlights": [
+      "Vatican Museums",
+      "St. Peter's Basilica",
+      "Pantheon",
+      "Trevi Fountain"
+    ],
+    "tip": "The Vatican Museums are closed on Sundays except the last Sunday of the month, when entry is free from 9:00 to 14:00 (final entry 12:30), so plan a weekday visit or arrive early on 25 October.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Check before you go",
+        "copy": "The Vatican Museums close on Sundays except the last Sunday of the month, and on 1 November and 8, 25 and 26 December. Galleria Doria Pamphilj closes every Wednesday, and Musei Capitolini and the Ara Pacis close on 1 May and 25 December."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Use the official sites",
+        "copy": "Book Vatican Museums tickets only at tickets.museivaticani.va; the museums warn of scam sites with similar domains. Trevi Fountain's inner area costs €2 for non-residents, and pre-bought tickets have no date or time and cannot be refunded."
+      },
+      {
+        "label": "Walk-in or reserve",
+        "value": "Policies differ",
+        "copy": "Da Enzo al 29 takes no reservations and seats guests in order of arrival, while Armando al Pantheon takes bookings only online. Drink Kong takes online reservations for up to 6 people but none after midnight."
+      },
+      {
+        "label": "Rules",
+        "value": "Dress, food and bags",
+        "copy": "St. Peter's Basilica admits only clothing appropriate for a place of worship, with no overly brief outfits, tank tops or headwear, and entry is through a police security check. Trevi Fountain bans food, drink and sitting on the basin edge, and has no cloakroom, so bring a small bag."
+      }
+    ],
+    "dek": "Book the Vatican Museums and your dinner slots in advance, and leave walk-in trattorias and the Trevi Fountain for flexible moments.",
+    "intro": [
+      "You can build a first day in Rome around the Vatican. The Vatican Museums on Viale Vaticano open Monday to Saturday from 8:00 to 20:00, with final entry at 18:00. They are closed on Sundays except the last Sunday of the month, which is free from 9:00 to 14:00. St. Peter's Basilica opens at 7:00 and, from 26 October 2026, closes at 19:00. The dome opens 7:30 to 17:00 in winter. You enter through police security checks on the right side of St. Peter's Square, and you need clothing suited to a place of worship.",
+      "In the historic centre, the Pantheon on Piazza della Rotonda opens every day from 9:00 to 19:00, with last entry at 18:30, and its site lists free entry on the first Sunday of the month. The Trevi Fountain has charged non-residents €2 for the inner area since 2 February 2026. You enter on Via della Stamperia and leave by Via dei Crociferi. It opens at 9:00, or 11:30 on Mondays and Fridays, with last entry at 21:00. After closing you can still see it free from outside.",
+      "For museums beyond the big names, the Musei Capitolini on Piazza del Campidoglio open daily from 9:30 to 19:30. They are showing a Diego Rivera exhibition until 13 December 2026. The Ara Pacis keeps the same hours and opens a Fayum portrait exhibition on 5 November 2026, running to 2 May 2027. Galleria Doria Pamphilj, entered at Via del Corso 305, closes every Wednesday, and a standard ticket costs €16. For open air, the Passeggiata del Pincio is always open and has bike rental, and the Appia Antica park office is at Via Appia Antica 42.",
+      "Food planning matters as much as tickets. Da Enzo al 29 in Trastevere opens Monday to Saturday and takes no reservations. Armando al Pantheon books only online and is closed Saturday evening and Sunday. Supplizio on Via dei Banchi Vecchi is closed on Sundays. Antico Forno Roscioli on Via dei Chiavari opens daily at 7:30, and Mercato Centrale Roma on Via Giolitti runs daily from 7:30 to 23:30. For drinks, Drink Kong in Monti opens nightly at 18:30, and Jerry Thomas Speakeasy opens at 21:00."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair the Vatican Museums (Monday to Saturday, final entry 18:00) with St. Peter's Basilica, then cross to the Pantheon and the Trevi Fountain."
+      ],
+      [
+        "A slower morning",
+        "Start with bread at Antico Forno Roscioli from 7:30, then walk up to the always-open Passeggiata del Pincio."
+      ],
+      [
+        "Before booking",
+        "Buy Vatican tickets only on tickets.museivaticani.va, book Armando al Pantheon online, and plan to queue at Da Enzo al 29, which takes no reservations."
+      ]
+    ]
+  },
+  "limitations": "This is a website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The Colosseum and Roman Forum could not be checked because colosseo.it refused automated connections and the ticketing site showed a bot check. Galleria Borghese's site also refused connection, and Forno Campo de' Fiori, Sant'Eustachio Il Caffè, The Court, Trapizzino, Pasticceria Regoli and Panella could not be read (connection refused, redirect loop, 403, 500 or maintenance page). Roscioli publishes no street address, and no official sites were found for Barnum Cafe, Marigold, Pergamino, the Spanish Steps or Villa Borghese. Hours are not published for La Pergola, Pizzarium or the Appia Antica park. St. Peter's Basilica gives no street address, and Da Enzo al 29 does not state its Sunday status. Jerry Thomas Speakeasy's site carries no 2026-dated content beyond live hours and booking. Only 18 places were confirmed, below the 25–35 target.",
+  "injectionLikeText": []
+}

@@ -5,6 +5,320 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Rome, Italy": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-21",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "This is a website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The Colosseum and Roman Forum could not be checked because colosseo.it refused automated connections and the ticketing site showed a bot check. Galleria Borghese's site also refused connection, and Forno Campo de' Fiori, Sant'Eustachio Il Caffè, The Court, Trapizzino, Pasticceria Regoli and Panella could not be read (connection refused, redirect loop, 403, 500 or maintenance page). Roscioli publishes no street address, and no official sites were found for Barnum Cafe, Marigold, Pergamino, the Spanish Steps or Villa Borghese. Hours are not published for La Pergola, Pizzarium or the Appia Antica park. St. Peter's Basilica gives no street address, and Da Enzo al 29 does not state its Sunday status. Jerry Thomas Speakeasy's site carries no 2026-dated content beyond live hours and booking. Only 18 places were confirmed, below the 25–35 target.",
+    "sourceUrls": [
+      "docs/content-research/rome-2026-10-21.md",
+      "docs/content-research/rome-2026-10-21.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Colosseum",
+        "url": "https://colosseo.it/orari-e-biglietti/",
+        "checkedOn": "2026-10-21",
+        "reason": "Official site colosseo.it refused the connection (ECONNREFUSED) on several attempts. ticketing.colosseo.it showed a browser security check, which was not bypassed. Not checked; this is not evidence of closure."
+      },
+      {
+        "name": "Roman Forum",
+        "url": "https://colosseo.it/en/",
+        "checkedOn": "2026-10-21",
+        "reason": "Run by the Parco archeologico del Colosseo, whose site colosseo.it refused the connection (ECONNREFUSED). Not checked."
+      },
+      {
+        "name": "Spanish Steps",
+        "checkedOn": "2026-10-21",
+        "reason": "No official operator page found or read; the only pages found were tourism-board, news and a 2016 press PDF."
+      },
+      {
+        "name": "Roscioli",
+        "url": "https://www.salumeriaroscioli.com/pages/prenota",
+        "checkedOn": "2026-10-21",
+        "reason": "The official site publishes hours and booking rules (daily 12:30–15:30 and 19:00–23:30) but no street address for the Salumeria, so it fails the address rule. A later fetch returned HTTP 429."
+      },
+      {
+        "name": "Barnum Cafe",
+        "checkedOn": "2026-10-21",
+        "reason": "No official website found (barnumcafe.com does not resolve). Press reports say it moved in 2026, but press is not valid evidence."
+      },
+      {
+        "name": "Marigold",
+        "checkedOn": "2026-10-21",
+        "reason": "No official website found. Third-party sources report it closed, but that is not valid evidence and was not verified."
+      },
+      {
+        "name": "Pergamino Caffe",
+        "checkedOn": "2026-10-21",
+        "reason": "No official website found (pergaminocaffe.it does not resolve). Third-party sources suggest the premises now house a different business; not verified."
+      },
+      {
+        "name": "Faro",
+        "url": "https://www.farorome.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "The official site gives the address (\"Via Piave 55, 00187 RM\") but no hours or 2026-dated content (menus labelled \"OTTOBRE 25\")."
+      },
+      {
+        "name": "Sant'Eustachio Il Caffe",
+        "url": "https://www.santeustachioilcaffe.it/",
+        "checkedOn": "2026-10-21",
+        "reason": "The official site failed with too many redirects (.it and .com); not readable."
+      },
+      {
+        "name": "Forno Campo de' Fiori",
+        "url": "https://www.fornocampodefiori.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "The official site refused the connection (ECONNREFUSED) on two attempts."
+      },
+      {
+        "name": "Panella",
+        "url": "https://www.panellaroma.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "The official site shows a maintenance page (\"Il sito è attualmente in manutenzione\"), with no address, hours or current content."
+      },
+      {
+        "name": "Le Levain",
+        "url": "https://www.lelevainroma.it/trastevere/",
+        "checkedOn": "2026-10-21",
+        "reason": "The official site lists shops (Via Luigi Santini 22, Trastevere; Via Piave 8, Sallustiano) but no hours, menu or dated content beyond a \"© 2026\" footer. Operating evidence is insufficient."
+      },
+      {
+        "name": "The Court",
+        "url": "https://www.manfredihotels.com/en/palazzo-manfredi/the-court",
+        "checkedOn": "2026-10-21",
+        "reason": "The official Manfredi Hotels page returned HTTP 403 Forbidden."
+      },
+      {
+        "name": "Villa Borghese",
+        "checkedOn": "2026-10-21",
+        "reason": "No official operator page found or read (guessed Sovrintendenza URL returned 404; search found only tourism-board pages)."
+      },
+      {
+        "name": "Keyhole on Aventine Hill",
+        "url": "https://www.orderofmalta.int/",
+        "checkedOn": "2026-10-21",
+        "reason": "The Order of Malta official site gives no visitor information, address or hours for the Villa del Priorato keyhole."
+      },
+      {
+        "name": "Galleria Borghese (gap candidate)",
+        "url": "https://galleriaborghese.cultura.gov.it/en/",
+        "checkedOn": "2026-10-21",
+        "reason": "Official site failed: galleriaborghese.beniculturali.it does not resolve, and galleriaborghese.cultura.gov.it refused the connection."
+      },
+      {
+        "name": "Mercato di Testaccio (gap candidate)",
+        "url": "https://www.mercatoditestaccio.it/",
+        "checkedOn": "2026-10-21",
+        "reason": "The official site gives entrances but no hours and no 2026 content (latest item June 2025)."
+      },
+      {
+        "name": "Trapizzino (gap candidate)",
+        "url": "https://www.trapizzino.it/",
+        "checkedOn": "2026-10-21",
+        "reason": "The official site returned HTTP 403 Forbidden."
+      },
+      {
+        "name": "Tazza d'Oro (gap candidate)",
+        "url": "https://www.tazzadorocoffeeshop.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "The official site lists only a Formello company address, with no Pantheon-area branch address, hours or 2026 content."
+      },
+      {
+        "name": "Pasticceria Regoli (gap candidate)",
+        "url": "https://www.pasticceriaregoli.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "The official site returned HTTP 500 Internal Server Error."
+      },
+      {
+        "name": "Pantheon and piazza walks",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Trevi Fountain at night",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Street pizza and supplì",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private Vatican tour",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Luxury spa afternoon",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Trastevere dinner",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Night walk past Trevi",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Colosseum family tour",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Gelato crawl",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning in Monti",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Pantheon",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided ancient Rome walk",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Appian Way bike ride",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place (the park itself was checked as Parco Regionale dell'Appia Antica)"
+      },
+      {
+        "name": "Testaccio food stop",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sant'Eustachio area coffee and cornetto",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Vatican Museums": {
+        "url": "https://www.museivaticani.va/content/museivaticani/en/info/orari-musei-vaticani.html",
+        "sourceType": "official public operator (Vatican Museums, Vatican City State)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "The hours page lists 2026 closures, e.g. the Carriage Pavilion \"closed 20–23 October\" and regular closures on 1 November and 8, 25 and 26 December. Tickets are sold at \"tickets.museivaticani.va\", and the site warns of scam sites with similar domains."
+      },
+      "St. Peter's Basilica": {
+        "url": "https://www.basilicasanpietro.va/en/opening-hours",
+        "sourceType": "operator's own site (Basilica Papale di San Pietro)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Dated 2026 news, including \"New opening hours for St Peter's Basilica\" (28 May) and a sacred music concert on Saturday 10 October. Hours are given for \"October 26, 2026 to March 28, 2027\"."
+      },
+      "Pantheon": {
+        "url": "https://pantheonroma.com/en/",
+        "sourceType": "operator's own site (\"Sito della Basilica di Santa Maria ad Martyres\")",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "\"BOOK NOW\" ticket link and 2026-dated news posts (e.g. 24 March, 12 March). Lists a \"First Sunday of the month free entry\" option."
+      },
+      "Trevi Fountain": {
+        "url": "https://fontanaditrevi.roma.it/",
+        "sourceType": "official public operator (Roma Capitale)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Ticketing for non-residents since 2 February 2026: \"Scopri come entrare dal 2 febbraio 2026\". The inner perimeter costs €2 for non-residents. Pre-bought tickets are \"open, senza data e orario\" and cannot be refunded."
+      },
+      "Musei Capitolini": {
+        "url": "https://www.museicapitolini.org/en/informazioni_pratiche/orari_e_indirizzi",
+        "sourceType": "official public operator (Roma Capitale, Sovrintendenza Capitolina)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Current exhibition \"Diego Rivera e la costruzione dell'arte moderna in Messico nel XX secolo\" runs 09/06/2026–13/12/2026, and \"Angeli - Messaggeri, custodi e viandanti\" runs to 10/01/2027. The Horti di Mecenate halls are closed for renovation (notice of 05/08/2026)."
+      },
+      "Museo dell'Ara Pacis": {
+        "url": "https://www.arapacis.it/en",
+        "sourceType": "official public operator (Roma Capitale)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "\"L'Ara si rivela\" runs 27/03/2026–31/12/2026. The exhibition \"Il potere del ritratto. Egitto e Roma. I volti del Fayum\" runs 05/11/2026–02/05/2027, with advance tickets on sale."
+      },
+      "Galleria Doria Pamphilj": {
+        "url": "https://www.doriapamphilj.it/roma/la-visita/",
+        "sourceType": "operator's own site (Amministrazione Doria Pamphilj s.r.l.)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Publishes current visiting hours and ticket prices (standard €16, €17 booked online; under-12s free) with an online booking link. Footer \"©2026\"."
+      },
+      "Passeggiata del Pincio": {
+        "url": "https://www.sovraintendenzaroma.it/i_luoghi/ville_e_parchi_storici/passeggiate_parchi_e_giardini/passeggiata_del_pincio",
+        "sourceType": "official public operator (Roma Capitale, Sovrintendenza Capitolina)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Listed as \"Sempre aperto\" on a page carrying notices dated October 2026. Services include bike rental on via di Villa Medici and via dell'Orologio, and the Teatrino dei burattini S. Carlino."
+      },
+      "Parco Regionale dell'Appia Antica": {
+        "url": "https://www.parcoappiaantica.it/",
+        "sourceType": "official public operator (Ente Regionale Parco dell'Appia Antica)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "News dated 20 October 2026 (a weather alert) and 6 October 2026 (Giornata Nazionale delle Famiglie al Museo). The site has a \"Noleggio Bici Appia Antica\" link."
+      },
+      "Armando al Pantheon": {
+        "url": "https://www.armandoalpantheon.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "\"Copyright 2026\" and recent news items (a 1 October Hypertrattoria dinner). \"le prenotazioni sono possibili solo online\"."
+      },
+      "Da Enzo al 29": {
+        "url": "https://www.daenzoal29.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "\"© 2026 Locanda Da Enzo\" with current hours. \"Non si accettano prenotazioni\": guests are seated in order of arrival."
+      },
+      "La Pergola": {
+        "url": "https://www.romecavalieri.com/la-pergola/",
+        "sourceType": "operator's own site (Rome Cavalieri, Hilton Italiana S.r.l.)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Online \"Book Table\" link, reservation phone and email, and \"2026 © Hilton Italiana S.r.l.\". \"The menu offering is subject to seasonal changes.\""
+      },
+      "Pizzarium (Via della Meloria)": {
+        "url": "https://www.bonci.it/",
+        "sourceType": "operator's own site (Bonci)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Group news dated 5 October 2026 (new Termini station space \"operativo\") and \"Copyright © 2026, Bonci\". No Pizzarium-specific hours or notice."
+      },
+      "Supplizio": {
+        "url": "https://www.supplizioroma.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Footer \"© 2016 - 2026 Supplizio\" with published hours. There is a summer closure notice for 10–31 August, with no year given."
+      },
+      "Drink Kong": {
+        "url": "https://www.drinkkong.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "2026 menus (wine and spirits lists dated February 2026, food menu June 2026) and online reservations for up to 6 people. No reservations after midnight."
+      },
+      "Jerry Thomas Speakeasy": {
+        "url": "https://www.thejerrythomasproject.it/speakeasy",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Published hours and a \"PRENOTA UN TAVOLO\" booking link. The newsletter sign-up gives \"la parola segreta\". No 2026-dated content (copyright \"© 2015 - 2023\")."
+      },
+      "Antico Forno Roscioli (Via dei Chiavari)": {
+        "url": "https://www.anticofornoroscioli.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Published daily hours and footer \"© 2026 Antico Forno Roscioli\"."
+      },
+      "Mercato Centrale Roma": {
+        "url": "https://www.mercatocentrale.it/roma/info/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Current events, including \"Mercato Centrale Roma compie 10 anni: un mese di eventi tra cibo, arte e cultura\" (the market opened in October 2016) and an \"Aperitivo Centrale\" series."
+      }
+    }
+  },
   "Barcelona, Spain": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-21",

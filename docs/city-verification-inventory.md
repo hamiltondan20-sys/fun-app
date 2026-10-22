@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 16.
-- Classifier-passed (published, not fully documented in that format): 173.
+- Source-verified (complete dated evidence format): 17.
+- Classifier-passed (published, not fully documented in that format): 172.
 - Held back: 295.
 - Published destinations: 189; country hubs: 19; sitemap URLs: 217.
 
@@ -399,7 +399,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Rio de Janeiro, Brazil | rio-de-janeiro | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
 | Riviera Maya Cenotes, Mexico | riviera-maya-cenotes | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
 | Riyadh, Saudi Arabia | riyadh | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Rome, Italy | rome | classifier-passed | not-reviewed | 0 | 30 | 15 | 12 | None |
+| Rome, Italy | rome | source-verified | source-checked | 18 | 35 | 14 | 13 | None |
 | Roseau, Dominica | roseau | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Rotorua, New Zealand | rotorua | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
 | Rotterdam, Netherlands | rotterdam | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
