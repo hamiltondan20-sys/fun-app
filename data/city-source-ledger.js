@@ -5,6 +5,455 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Florence, Italy": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-21",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The Duomo, Museo Ferragamo and several hotel bar sites (Four Seasons, Lungarno Collection, Rocco Forte) returned HTTP 403; the City of Florence, Musei Civici Fiorentini and regional museums (Museo di San Marco) sites refused connections; and the Galleria dell'Accademia, Caffè Gilli, Trattoria Mario, St. Regis, Gelateria Santa Trinita, Badiani and Paszkowski sites had certificate or SSL errors. None of these failures is evidence of closure. Several food entries are confirmed only at medium confidence, from a live booking system, published hours or a 2026 copyright line: Harry's Bar Firenze, Osteria Santo Spirito and Ora d'Aria showed no 2026-dated content, and Vivoli, Ditta Artigianale, Pasticceria Buonamici, B-Roof, Trattoria Zà Zà and Enoteca Pinchiorri publish no opening hours. Santa Croce, Santa Maria Novella, San Miniato al Monte and Museo Galileo regular hours were not readable. Palazzo Pitti, the Boboli Gardens and Orsanmichele have no street number. Museo Novecento and Harry's Bar pages contradict themselves on opening days. The strike notice is attributed only to the Uffizi Galleries' notice page; the Pitti and Boboli pages carry only its headline.",
+    "sourceUrls": [
+      "docs/content-research/florence-2026-10-21.md",
+      "docs/content-research/florence-2026-10-21.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Duomo (Cattedrale di Santa Maria del Fiore)",
+        "url": "https://duomo.firenze.it/en/home",
+        "checkedOn": "2026-10-21",
+        "reason": "Official site returned HTTP 403 Forbidden on home and opening-times pages; not bypassed. Not evidence of closure."
+      },
+      {
+        "name": "Ponte Vecchio",
+        "url": "https://www.comune.fi.it/",
+        "checkedOn": "2026-10-21",
+        "reason": "Public bridge with no operator site; City of Florence site (comune.fi.it) refused connection (ECONNREFUSED)."
+      },
+      {
+        "name": "Piazzale Michelangelo (Sunset from Piazzale Michelangelo)",
+        "url": "https://www.comune.fi.it/",
+        "checkedOn": "2026-10-21",
+        "reason": "Public square with no operator site; City of Florence site refused connection (ECONNREFUSED)."
+      },
+      {
+        "name": "Galleria dell'Accademia",
+        "url": "https://www.galleriaaccademiafirenze.it/en/",
+        "checkedOn": "2026-10-21",
+        "reason": "Certificate error on official site (\"unable to verify the first certificate\"); not bypassed."
+      },
+      {
+        "name": "Palazzo Vecchio",
+        "url": "https://www.museicivicifiorentini.comune.fi.it/en/palazzovecchio/",
+        "checkedOn": "2026-10-21",
+        "reason": "Musei Civici Fiorentini site refused connection (ECONNREFUSED)."
+      },
+      {
+        "name": "Caffè Gilli",
+        "url": "https://www.gilli.it/",
+        "checkedOn": "2026-10-21",
+        "reason": "Certificate error: hostname does not match certificate; not bypassed."
+      },
+      {
+        "name": "Mercato di Sant'Ambrogio",
+        "url": "https://www.mercatosantambrogio.it/",
+        "checkedOn": "2026-10-21",
+        "reason": "Site gives address (Piazza Lorenzo Ghiberti) and hours (Mon-Sat 07:00-14:00) but no 2026-dated content and official status unclear."
+      },
+      {
+        "name": "Museo di San Marco",
+        "url": "https://museitoscana.cultura.gov.it/luoghi_della_cultura/museo-di-san-marco/",
+        "checkedOn": "2026-10-21",
+        "reason": "Regional museums site refused connection (ECONNREFUSED)."
+      },
+      {
+        "name": "Museo Stibbert",
+        "url": "https://www.museostibbert.it/",
+        "checkedOn": "2026-10-21",
+        "reason": "Address and hours published (closed Thursdays) but no year-dated current content; footer \"© 2021\"."
+      },
+      {
+        "name": "Museo Marino Marini",
+        "url": "https://www.museomarinomarini.it/en/",
+        "checkedOn": "2026-10-21",
+        "reason": "Hours published but no street number and no dated current content."
+      },
+      {
+        "name": "Basilica di San Lorenzo",
+        "url": "https://www.operamedicealaurenziana.org/en/",
+        "checkedOn": "2026-10-21",
+        "reason": "Opera Medicea Laurenziana page shows conflicting hours, including an outdated November 2020 block, and no 2026 content."
+      },
+      {
+        "name": "Museo Salvatore Ferragamo",
+        "url": "https://www.ferragamo.com/museo/en/usa/",
+        "checkedOn": "2026-10-21",
+        "reason": "HTTP 403 Forbidden; not bypassed."
+      },
+      {
+        "name": "Officina Profumo-Farmaceutica di Santa Maria Novella",
+        "url": "https://www.smnovella.com/en/florence-via-della-scala",
+        "checkedOn": "2026-10-21",
+        "reason": "Branch page returned HTTP 404."
+      },
+      {
+        "name": "Trattoria Mario",
+        "url": "https://www.trattoriamario.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "Certificate error (\"unable to verify the first certificate\"); not bypassed."
+      },
+      {
+        "name": "Cibrèo (Sant'Ambrogio)",
+        "url": "https://www.cibreo.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "Homepage lists venues but no addresses or hours; contact and venue pages returned 404."
+      },
+      {
+        "name": "Il Santo Bevitore",
+        "url": "https://www.ilsantobevitore.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "Address published (Via di Santo Spirito 64/66) but no hours or dated content; menus are images; Sforno page 404."
+      },
+      {
+        "name": "Teatro del Sale",
+        "url": "https://www.teatrodelsale.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "Address and membership rules published but no dated 2026 shows or events."
+      },
+      {
+        "name": "Gucci Osteria (Florence)",
+        "url": "https://www.gucciosteria.com/en/florence",
+        "checkedOn": "2026-10-21",
+        "reason": "Address published but no hours and no content later than 2023."
+      },
+      {
+        "name": "All'Antico Vinaio (Via dei Neri)",
+        "url": "https://www.allanticovinaio.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "Shop listed but no street addresses or hours on page read."
+      },
+      {
+        "name": "Caffè Rivoire",
+        "url": "https://www.rivoire.it/it/",
+        "checkedOn": "2026-10-21",
+        "reason": "Only a registered-office address and 2026 copyright; no café address or hours."
+      },
+      {
+        "name": "Caffè Paszkowski",
+        "url": "https://www.paszkowski.it/",
+        "checkedOn": "2026-10-21",
+        "reason": "SSL error (WRONG_VERSION_NUMBER); not bypassed."
+      },
+      {
+        "name": "Locale Firenze",
+        "url": "https://www.localefirenze.it/",
+        "checkedOn": "2026-10-21",
+        "reason": "Page showed no address, hours or 2026 content (latest date 2022)."
+      },
+      {
+        "name": "Le Volpi e l'Uva",
+        "url": "https://www.levolpieluva.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "Address published (Piazza dei Rossi 1) but no hours or dated content."
+      },
+      {
+        "name": "Divina Terrazza (Grand Hotel Cavour)",
+        "url": "https://www.hotelcavour.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "Hotel address published but no terrace hours, booking or dated content beyond copyright."
+      },
+      {
+        "name": "Atrium Bar (Four Seasons Florence)",
+        "url": "https://www.fourseasons.com/florence/dining/lounges/atrium-bar/",
+        "checkedOn": "2026-10-21",
+        "reason": "HTTP 403 Forbidden; not bypassed."
+      },
+      {
+        "name": "Fusion Bar (Gallery Hotel Art)",
+        "url": "https://www.lungarnocollection.com/fusion-bar-restaurant",
+        "checkedOn": "2026-10-21",
+        "reason": "HTTP 403 Forbidden; not bypassed."
+      },
+      {
+        "name": "Hotel Savoy bars",
+        "url": "https://www.roccofortehotels.com/hotels-and-resorts/hotel-savoy/restaurants-and-bars/",
+        "checkedOn": "2026-10-21",
+        "reason": "HTTP 403 Forbidden; not bypassed."
+      },
+      {
+        "name": "St. Regis Florence bar",
+        "url": "https://www.stregisflorence.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "Certificate hostname mismatch; not bypassed."
+      },
+      {
+        "name": "Mad Souls & Spirits",
+        "url": "https://www.madsoulsandspirits.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "Domain redirects to an unrelated site."
+      },
+      {
+        "name": "Rasputin",
+        "url": "https://www.rasputinfirenze.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "Domain not found (ENOTFOUND)."
+      },
+      {
+        "name": "Carapina",
+        "url": "https://www.carapina.it/",
+        "checkedOn": "2026-10-21",
+        "reason": "Domain now hosts an unrelated online-casino page."
+      },
+      {
+        "name": "Gelateria dei Neri",
+        "url": "https://www.gelateriadeineri.it/",
+        "checkedOn": "2026-10-21",
+        "reason": "Domain now hosts an unrelated online-casino page."
+      },
+      {
+        "name": "Perchè No!",
+        "url": "https://www.percheno.firenze.it/",
+        "checkedOn": "2026-10-21",
+        "reason": "Address published (Via de' Tavolini 19r) but no hours or dated content."
+      },
+      {
+        "name": "Gelateria Santa Trinita",
+        "url": "https://www.gelateriasantatrinita.it/",
+        "checkedOn": "2026-10-21",
+        "reason": "Certificate expired; not bypassed."
+      },
+      {
+        "name": "Gelateria La Carraia",
+        "url": "https://www.lacarraiagroup.eu/",
+        "checkedOn": "2026-10-21",
+        "reason": "No Florence shop address or hours on page read."
+      },
+      {
+        "name": "Gelateria Badiani",
+        "url": "https://www.badiani1932.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "gelateriabadiani.it certificate mismatch; badiani1932.com homepage gave no Florence address or hours."
+      },
+      {
+        "name": "Robiglio",
+        "url": "https://www.robiglio.it/",
+        "checkedOn": "2026-10-21",
+        "reason": "Connection reset (ECONNRESET) twice."
+      },
+      {
+        "name": "Pasticceria Nencioni",
+        "url": "http://www.pasticcerianencioni.com/",
+        "checkedOn": "2026-10-21",
+        "reason": "No address, hours or dated content on page read."
+      },
+      {
+        "name": "Pasticceria Giorgio",
+        "url": "https://www.pasticceriagiorgio.it/",
+        "checkedOn": "2026-10-21",
+        "reason": "Address and hours published but no dated content; outside the centre."
+      },
+      {
+        "name": "Vestri",
+        "url": "https://www.vestri.it/",
+        "checkedOn": "2026-10-21",
+        "reason": "No Florence shop address; notice says sales resume from late September 2026."
+      },
+      {
+        "name": "Pasticceria Sieni",
+        "url": "https://www.pasticceriasieni.it/",
+        "checkedOn": "2026-10-21",
+        "reason": "Domain redirects to a domain-sale page."
+      },
+      {
+        "name": "Oltrarno artisan streets",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A half-day Tuscan hill town",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A Florentine steak dinner",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A small Oltrarno trattoria",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "All other descriptive entries (e.g. \"A cafe near Oltrarno\", \"Market meal around Santa Croce\", \"Private guide for Uffizi Gallery\", \"Sunset drinks near Duomo\", \"Local bakery near Duomo\", \"Coffee near Duomo\")",
+        "checkedOn": "2026-10-21",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Uffizi Gallery": {
+        "url": "https://www.uffizi.it/en/the-uffizi",
+        "sourceType": "official public operator (Gallerie degli Uffizi, Italian Ministry of Culture)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Current notices include \"Strike on 30 October 2026\" and \"October 2026: free admission for those who donate to breast cancer prevention\". The strike notice itself (https://www.uffizi.it/en/notices/strike) says the Uffizi Galleries guarantee the \"Gallery of Statues and Paintings (Uffizi) from 1.30 pm to 6.30 pm\"."
+      },
+      "Palazzo Pitti": {
+        "url": "https://www.uffizi.it/en/pitti-palace",
+        "sourceType": "official public operator (Gallerie degli Uffizi, Italian Ministry of Culture)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Exhibition \"Sarmi's Genius. A new exhibition at the Museum of Costume and Fashion\" runs \"From 18/06/2026 to 31/12/2026\". The page carries only a headline link to the Uffizi Galleries' strike notice; it does not itself say the strike affects Pitti, and Pitti is not among the museums the notice guarantees."
+      },
+      "Boboli Gardens": {
+        "url": "https://www.uffizi.it/en/boboli-garden",
+        "sourceType": "official public operator (Gallerie degli Uffizi, Italian Ministry of Culture)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Combined Boboli + Bardini ticket \"Available only at the ticket offices on the day of admission\" from 3 March 2026; October 2026 free-admission notice. The garden page shows only a headline link to the strike notice; the notice page (https://www.uffizi.it/en/notices/strike) lists \"Boboli Gardens, open throughout the entire day\" on 30 October 2026."
+      },
+      "Museo Nazionale del Bargello": {
+        "url": "https://bargellomusei.it/en/museum/museo-nazionale-del-bargello/",
+        "sourceType": "official public operator (Musei del Bargello, Italian Ministry of Culture)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Special openings on 26 October 2026 (5:00-9:00 pm) and 30 November 2026 (5:15-9:00 pm); homepage notes \"Notturno al Museo\" Monday evening openings 5-26 October 2026."
+      },
+      "Basilica di Santa Croce": {
+        "url": "https://www.santacroceopera.it/en/",
+        "sourceType": "operator's own site (Opera di Santa Croce)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Notice that on \"Friday October 23rd\" (a Friday in 2026) \"the monumental complex will close at 4.00 pm (last entry at 3.30 pm) due to a special liturgical celebration\"; online tickets sold at ticket.santacroceopera.it; footer \"©2009-2026\"."
+      },
+      "Mercato Centrale Firenze": {
+        "url": "https://www.mercatocentrale.it/firenze/info/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Homepage lists autumn 2026 events including a chocolate and wine tasting and the \"Creature in CreTam\" workshop, and promotes \"L'ora dell'aperitivo è sempre più Centrale!\"; stalls include David Bedu (\"Il pane e la pasticceria\") and Mondicaffè (\"Il bar e la caffetteria\")."
+      },
+      "Palazzo Strozzi": {
+        "url": "https://www.palazzostrozzi.org/en/",
+        "sourceType": "operator's own site (Fondazione Palazzo Strozzi)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Exhibition \"Broken: The Power of the Fragment\" from 25 September 2026 to 24 January 2027; family activities \"All in One\" (ages 3-6) and \"Make and Remix\" (ages 7-12) run from early October 2026 to January 2027."
+      },
+      "Museo Galileo": {
+        "url": "https://www.museogalileo.it/en/",
+        "sourceType": "operator's own site (Museo Galileo)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Upcoming events include \"Esperimenti e meraviglie alla corte dei Lorena\" on 24 October and \"A spasso con Galileo\" on 31 October, both 15:00-16:00 tours with actors in costume, and a Leibniz conference on 5-6 November 2026."
+      },
+      "Basilica di San Miniato al Monte": {
+        "url": "https://www.sanminiatoalmonte.it/",
+        "sourceType": "operator's own site (the basilica's community)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "\"Sabato 24 ottobre 2026, ore 16.30: benedizione e presentazione di una nuova scultura bronzea\", followed by liturgies for the solemnity of St Miniato on 24 and 25 October 2026; posts dated May 2026."
+      },
+      "Villa e Giardino Bardini": {
+        "url": "https://www.villabardini.it/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Ticketing \"Every day, from 10:30 AM to 18:00 PM\"; the exhibition \"Firenze '50 '60 '70\" ran \"From 7 May to 18 October 2026\"; footer \"© 2026 - Villa e Giardino Bardini\"."
+      },
+      "Cappelle Medicee": {
+        "url": "https://www.bargellomusei.it/en/museum/cappelle-medicee/",
+        "sourceType": "official public operator (Musei del Bargello, Italian Ministry of Culture)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Special opening 30 November 2026, 05:15-09:00 pm; closed 25 December 2026 and 1 January 2027; full ticket €11, optional reservation €4."
+      },
+      "Orsanmichele": {
+        "url": "https://www.bargellomusei.it/en/museum/orsanmichele/",
+        "sourceType": "official public operator (Musei del Bargello, Italian Ministry of Culture)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Special openings on 26 October 2026 (05:00-09:00 pm) and 30 November 2026 (05:15-09:00 pm, \"Festa della Toscana\")."
+      },
+      "Palazzo Medici Riccardi": {
+        "url": "https://www.palazzomediciriccardi.it/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Current exhibitions \"Oltre il Rinascimento\" (to 5 January 2027) and \"San Francesco d'Assisi e Giuseppe Nicola Nasini\" (to 31 January 2027); online ticket sales."
+      },
+      "Museo Novecento": {
+        "url": "https://www.museonovecento.it/en/",
+        "sourceType": "operator's own site (civic museum)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Exhibitions Victor Man (26 Sep 2026 - 7 Mar 2027) and Danielle McKinney, \"Tra Noi\" (17 Oct 2026 - 28 Feb 2027). \"The museum's permanent collection is temporarily closed for renovation work\", with no end date."
+      },
+      "Buca Mario": {
+        "url": "https://www.bucamario.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "\"PRENOTA UN TAVOLO\" online booking; footer \"© 2026 Buca Mario S.R.L.\"; posts give \"Dal lunedì al sabato, dalle 19:00\"."
+      },
+      "Trattoria Zà Zà": {
+        "url": "https://www.trattoriazaza.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Booking (\"Prenota\") and menu pages linked; blog posts with images uploaded July-October 2026; footer \"© 2026 Trattoria Zà Zà\"."
+      },
+      "La Ménagère": {
+        "url": "https://www.lamenagere.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Breakfast, lunch, aperitivo, dinner and drinks described; \"PRENOTA UN TAVOLO\" online booking; footer dated 2026."
+      },
+      "Enoteca Pinchiorri": {
+        "url": "https://www.enotecapinchiorri.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Badge \"Enoteca Pinchiorri 3 stars michelin 2026\"; \"Prenota\" buttons link to booking."
+      },
+      "Ristorante Il Latini": {
+        "url": "https://latinifirenze.com/",
+        "sourceType": "operator's own site (illatini.com redirects here)",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "\"Prenota qui il tuo tavolo\" online booking, plus phone and email booking; footer \"2026 © All right reserved\"."
+      },
+      "Procacci": {
+        "url": "https://www.procacci1885.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Menu file \"Menu_Procacci-2026.pdf\" uploaded June 2026; footer \"© 2026 - All rights reserved - Procacci srl\"."
+      },
+      "Ditta Artigianale (Via dei Neri)": {
+        "url": "https://www.dittaartigianale.it/pages/locali",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Locations page lists six Florence cafés; homepage heading \"Miglior Roaster d'Italia 2026\"; footer \"© 2026 Ditta Artigianale\"."
+      },
+      "B-Roof (Grand Hotel Baglioni)": {
+        "url": "https://www.b-roof.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Separate booking links for the restaurant and the American Bar; selected for the \"Forchettiere Awards Toscana 2026\"; vouchers \"valid for 180 days (6 months)\"."
+      },
+      "Pasticceria Buonamici": {
+        "url": "https://www.pasticceriabuonamici.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Blog post \"Non l'avresti mai detto, eh?!\" dated 4 February 2026; footer \"© 2026 Buonamici Pasticceria S.r.l.\"."
+      },
+      "Harry's Bar Firenze": {
+        "url": "https://www.harrysbarfirenze.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "\"PRENOTA\" booking buttons and published service hours; no 2026-dated content seen."
+      },
+      "Osteria Santo Spirito": {
+        "url": "https://www.osteriasantospirito.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "\"Prenota il tuo tavolo\" online booking and linked menu; no 2026-dated content seen."
+      },
+      "Ora d'Aria": {
+        "url": "https://www.oradariaristorante.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "\"Prenota un tavolo\" online booking, à la carte and tasting menus; site copyright 2024, no 2026-dated content."
+      },
+      "Vivoli": {
+        "url": "https://www.vivoli.it/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-21",
+        "operatingEvidence": "Gelato, semifreddi and affogato (\"La gran crema al caffè\") described; online merchandise shop; footer \"© 2026 Vivoli Piero il gelato srl\"."
+      }
+    }
+  },
   "Istanbul, Turkey": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-21",

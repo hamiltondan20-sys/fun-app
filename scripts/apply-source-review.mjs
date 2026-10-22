@@ -78,7 +78,7 @@ const ledgerEntry = {
   limitations: review.limitations,
   sourceUrls: [`${researchBase}.md`, `${researchBase}.json`],
   excludedCandidates: (review.notUsed || []).filter((item) => item?.name).map((item) => ({ name: item.name, ...(item.url ? { url: item.url } : {}), checkedOn: date, reason: item.reason })),
-  placeSources: Object.fromEntries(confirmed.map((place) => [place.name, {
+  placeSources: Object.fromEntries(usedPlaces.map((place) => [place.name, {
     url: place.url,
     sourceType: place.sourceType,
     checkedOn: date,

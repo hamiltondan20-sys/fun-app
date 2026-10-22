@@ -1857,4 +1857,109 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 21, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Florence, Italy: source review of 2026-10-21 (docs/content-research/florence-2026-10-21.md).
+  {
+    const cityKey = "Florence, Italy";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Uffizi Gallery","Palazzo Pitti","Museo Nazionale del Bargello","Cappelle Medicee"],
+      bestFirstTimers: ["Uffizi Gallery","Basilica di Santa Croce","Mercato Centrale Firenze","Palazzo Strozzi"],
+      bestRestaurants: ["Enoteca Pinchiorri","Buca Mario","Trattoria Zà Zà","Ristorante Il Latini"],
+      bestBudget: ["Mercato Centrale Firenze","Boboli Gardens","Basilica di San Miniato al Monte"],
+      bestLuxury: ["Enoteca Pinchiorri","B-Roof (Grand Hotel Baglioni)","Procacci"],
+      bestCouples: ["Boboli Gardens","Villa e Giardino Bardini","B-Roof (Grand Hotel Baglioni)","Ora d'Aria"],
+      bestKids: ["Palazzo Strozzi","Museo Galileo","Boboli Gardens","Mercato Centrale Firenze"],
+      bestSolo: ["Museo Nazionale del Bargello","Museo Novecento","Ditta Artigianale (Via dei Neri)","Orsanmichele"],
+      bestUnique: ["Orsanmichele","Museo Galileo","Basilica di San Miniato al Monte","Palazzo Medici Riccardi"],
+      bestBreakfast: ["La Ménagère","Ditta Artigianale (Via dei Neri)","Pasticceria Buonamici","Mercato Centrale Firenze"],
+      bestLunch: ["Procacci","Osteria Santo Spirito","Mercato Centrale Firenze","Trattoria Zà Zà"],
+      bestDinner: ["Buca Mario","Ristorante Il Latini","Ora d'Aria","Enoteca Pinchiorri"],
+      bestCocktails: ["B-Roof (Grand Hotel Baglioni)","Harry's Bar Firenze","La Ménagère","Mercato Centrale Firenze"],
+      bestBakeries: ["Pasticceria Buonamici","Mercato Centrale Firenze","Procacci"],
+      bestCoffee: ["Ditta Artigianale (Via dei Neri)","Vivoli","La Ménagère","Mercato Centrale Firenze"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Uffizi Gallery": "Uffizi Gallery Piazzale degli Uffizi 6 Florence",
+      "Palazzo Pitti": "Palazzo Pitti Piazza de' Pitti Florence",
+      "Museo Nazionale del Bargello": "Museo Nazionale del Bargello Via del Proconsolo 4 Florence",
+      "Cappelle Medicee": "Cappelle Medicee Piazza di Madonna degli Aldobrandini 6 Florence",
+      "Basilica di Santa Croce": "Basilica di Santa Croce Piazza Santa Croce 16 Florence",
+      "Mercato Centrale Firenze": "Mercato Centrale Via dell'Ariento Florence",
+      "Palazzo Strozzi": "Palazzo Strozzi Piazza Strozzi Florence",
+      "Enoteca Pinchiorri": "Enoteca Pinchiorri Via Ghibellina 87 Florence",
+      "Buca Mario": "Buca Mario Piazza degli Ottaviani 16 Florence",
+      "Trattoria Zà Zà": "Trattoria Zà Zà Piazza del Mercato Centrale 26 Florence",
+      "Ristorante Il Latini": "Il Latini Via dei Palchetti 6 Florence",
+      "Boboli Gardens": "Boboli Gardens Via Romana Florence",
+      "Basilica di San Miniato al Monte": "San Miniato al Monte Via delle Porte Sante 34 Florence",
+      "B-Roof (Grand Hotel Baglioni)": "B-Roof Grand Hotel Baglioni Piazza dell'Unità Italiana 6 Florence",
+      "Procacci": "Procacci Via de' Tornabuoni 64 Florence",
+      "Villa e Giardino Bardini": "Villa Bardini Costa San Giorgio 2 Florence",
+      "Ora d'Aria": "Ora d'Aria Via dei Georgofili 11 Florence",
+      "Museo Galileo": "Museo Galileo Piazza dei Giudici 1 Florence",
+      "Museo Novecento": "Museo Novecento Piazza Santa Maria Novella 10 Florence",
+      "Ditta Artigianale (Via dei Neri)": "Ditta Artigianale Via de' Neri 32 Florence",
+      "Orsanmichele": "Orsanmichele Via dell'Arte della Lana Florence",
+      "Palazzo Medici Riccardi": "Palazzo Medici Riccardi Via Cavour 3 Florence",
+      "La Ménagère": "La Ménagère Via de' Ginori 8 Florence",
+      "Pasticceria Buonamici": "Pasticceria Buonamici Via dell'Orto 27 Florence",
+      "Osteria Santo Spirito": "Osteria Santo Spirito Piazza Santo Spirito 16 Florence",
+      "Harry's Bar Firenze": "Harry's Bar Via il Prato 54 Florence",
+      "Vivoli": "Vivoli Via dell'Isola delle Stinche 7 Florence"
+    };
+    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (cityGuide) {
+      cityGuide.summary = "State and civic museums, churches, gardens and a food hall, with trattorie, dinners, breakfast cafés, pastry, gelato and cocktail bars, each checked against its own website.";
+      cityGuide.highlights = ["Uffizi Gallery","Palazzo Pitti","Museo Nazionale del Bargello","Basilica di San Miniato al Monte"];
+      cityGuide.tip = "The Uffizi, Pitti, Bargello, Cappelle Medicee and Orsanmichele all close on Mondays, Palazzo Medici Riccardi closes on Wednesdays and Osteria Santo Spirito on Tuesdays, so check each closing day before you fix your plan.";
+    }
+    data.destinationFacts[cityKey] = "The Uffizi, Pitti, Bargello, Cappelle Medicee and Orsanmichele all close on Mondays, Palazzo Medici Riccardi closes on Wednesdays and Osteria Santo Spirito on Tuesdays, so check each closing day before you fix your plan.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "State and civic museums, churches, gardens and a food hall, with trattorie, dinners, breakfast cafés, pastry, gelato and cocktail bars, each checked against its own website.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mostly Mondays",
+        "copy": "The Uffizi, Palazzo Pitti, the Bargello, the Cappelle Medicee and Orsanmichele close on Mondays, and the Boboli Gardens close on the first and last Monday of each month. Palazzo Medici Riccardi closes on Wednesdays, Museo Novecento on Thursdays and Harry's Bar Firenze on Mondays."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book ahead, with exceptions",
+        "copy": "The Cappelle Medicee charge €11, with an optional €4 reservation, and the Boboli + Bardini combined ticket is sold only at the ticket offices on the day you visit. Buca Mario, Il Latini, Osteria Santo Spirito, Ora d'Aria and B-Roof all take table bookings online."
+      },
+      {
+        "label": "Strike on 30 October",
+        "value": "Uffizi from 1.30 pm",
+        "copy": "The Uffizi Galleries' strike notice warns of a national general strike on 30 October 2026 and says closures and disruptions may occur. It guarantees only the Uffizi, from 1.30 pm to 6.30 pm, and the Boboli Gardens, open all day."
+      },
+      {
+        "label": "Rules and age limits",
+        "value": "Check before you go",
+        "copy": "Michelangelo's Secret Room at the Cappelle Medicee is by reservation only, lasts 15 minutes, and does not admit children under 10 or unaccompanied minors. Museo Novecento's permanent collection is closed for renovation, so only its temporary exhibitions are on show."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Plan the state museums around Monday closures, check the 30 October strike notice, and book dinners such as Buca Mario or Il Latini online.",
+      intro: [
+        "You can build a Florence visit around places whose own websites show current activity. The Uffizi Gallery, at Piazzale degli Uffizi 6, opens Tuesday to Sunday from 8.15 am to 6.30 pm, and its ticket office closes at 5.30 pm. The Uffizi Galleries' strike notice warns of a national general strike on 30 October 2026 and guarantees only the Uffizi, from 1.30 pm, and the Boboli Gardens, all day. Palazzo Pitti keeps the same Tuesday-to-Sunday hours, and its Museum of Costume and Fashion shows \"Sarmi's Genius\" until 31 December 2026.",
+        "The Bargello, at Via del Proconsolo 4, and the Cappelle Medicee, at Piazza di Madonna degli Aldobrandini 6, open Tuesday to Sunday from 8.15 am to 6.50 pm and close on Mondays. Both list a special evening opening on 30 November 2026, and the Bargello and Orsanmichele add one on 26 October. Palazzo Strozzi shows \"Broken: The Power of the Fragment\" until 24 January 2027. Palazzo Medici Riccardi, open from 9 am to 7 pm and closed on Wednesdays, runs \"Oltre il Rinascimento\" until 5 January 2027. Museo Novecento has two exhibitions, but its permanent collection is closed for renovation.",
+        "Santa Croce closes early, at 4.00 pm, on Friday 23 October. San Miniato al Monte, at Via delle Porte Sante 34, presents a new bronze sculpture on 24 October 2026 and holds liturgies for its patron saint that weekend. Santa Maria Novella posts early closings on its own site. The Boboli Gardens close at 4:30 pm from November, and the Villa Bardini ticket desk on Costa San Giorgio is open every day from 10:30 am to 6 pm. If you have children with you, Museo Galileo runs tours with costumed actors on 24 and 31 October, and Palazzo Strozzi runs family activities into January.",
+        "For food, Mercato Centrale is open every day from 9:00 to 23:00, and La Ménagère on Via de' Ginori is open every day from 8.00 to 2.00. Procacci on Via de' Tornabuoni opens Monday to Saturday from 10.00 to 21.00 and has published a 2026 menu. For dinner, Buca Mario serves Monday to Saturday from 19:00, Il Latini's kitchen opens for dinner from Tuesday and adds lunch at weekends, and Osteria Santo Spirito closes on Tuesdays. Harry's Bar Firenze on Via il Prato closes on Mondays, and B-Roof, on the fifth floor of the Grand Hotel Baglioni, takes bookings for its American Bar."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair the Uffizi Gallery, open Tuesday to Sunday from 8.15 am, with lunch at Mercato Centrale, which is open daily from 9:00."
+        ],
+        [
+          "A slower morning",
+          "Start with breakfast at La Ménagère, which opens at 8.00, then walk up to the Boboli Gardens or the Villa Bardini, whose ticket desk opens at 10:30 am."
+        ],
+        [
+          "Before booking",
+          "Avoid Mondays for the Uffizi, Pitti, Bargello and Cappelle Medicee, and read the Uffizi Galleries' strike notice for 30 October 2026."
+        ]
+      ],
+      trust: "All 27 distinct recommendations in this guide were checked against their operators' own websites on October 21, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();
