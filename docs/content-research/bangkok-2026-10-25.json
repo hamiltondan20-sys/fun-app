@@ -1,0 +1,714 @@
+{
+  "city": "Bangkok, Thailand",
+  "checkedOn": "2026-10-25",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Grand Palace",
+      "kind": "landmark",
+      "url": "https://www.royalgrandpalace.th/en/home",
+      "sourceType": "official public operator (Bureau of the Royal Household)",
+      "address": "Na Phra Lan Road Phranakorn (Rattanakosin)",
+      "operatingEvidence": "Current visitor notice: \"Tickets sold from 8:30 AM - 3:30 PM and cost 500 baht\". No 2026-dated item on the page; the footer reads \"© 2021\".",
+      "hours": "Daily 8:30 AM - 4:30 PM",
+      "confidence": "medium"
+    },
+    {
+      "name": "Queen Sirikit Museum of Textiles",
+      "kind": "museum",
+      "url": "https://www.qsmtthailand.org/",
+      "sourceType": "operator's own site",
+      "address": "Ratsadakorn-bhibhathana Building, The Grand Palace, Phra Nakhon Bangkok 10200 Thailand",
+      "operatingEvidence": "Current exhibition \"Royal Court Textiles of Siam\", Gallery 3–4, \"From July 30, 2024 Until April 30, 2027\". \"Some exhibitions and events carry a separate\" charge.",
+      "hours": "Open Daily 09.00 - 16.30, last admission 15.30",
+      "confidence": "high"
+    },
+    {
+      "name": "Bangkok National Museum",
+      "kind": "museum",
+      "url": "https://www.finearts.go.th/museumbangkok",
+      "sourceType": "official public operator (Fine Arts Department)",
+      "address": "4 ถนนหน้าพระธาตุ แขวงพระบรมมหาราชวัง เขตพระนคร กรุงเทพมหานคร 10200 (4 Na Phra That Road, Phra Nakhon)",
+      "operatingEvidence": "An October 2569 (2026) opening-service calendar was posted on 1 Oct 2026, and an article was posted on 15 Oct 2026.",
+      "hours": "not published in readable form (October 2026 calendar linked but not readable)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Jim Thompson House",
+      "kind": "museum",
+      "url": "https://www.jimthompsonhouse.org/",
+      "sourceType": "operator's own site (The James H. W. Thompson Foundation)",
+      "address": "6 Soi Kasemsan 2, Rama 1 Road, Bangkok",
+      "operatingEvidence": "Ticketing notice: \"Online ticket sales will be available on September 8, 2026\"; adults 250 baht, ages 10–21 150 baht with ID, under-10s free with an adult. \"customers are not allowed to enter the house without a guide\".",
+      "hours": "Everyday from 10:00 AM to 5:00 PM with the last guided tour at 5:00 PM",
+      "confidence": "high"
+    },
+    {
+      "name": "Jim Thompson Art Center",
+      "kind": "museum",
+      "url": "https://www.jimthompsonartcenter.org/",
+      "sourceType": "operator's own site (The James H. W. Thompson Foundation)",
+      "address": "No.6 Soi Kasemsan 2, Rama 1 Road, Bangkok",
+      "operatingEvidence": "Current exhibition \"And Still, Another After\", 10 October 2026 to 29 March 2027.",
+      "hours": "Open Every-day from 10 AM to 6 PM",
+      "confidence": "high"
+    },
+    {
+      "name": "MOCA Bangkok",
+      "kind": "museum",
+      "url": "https://www.mocabangkok.com/",
+      "sourceType": "operator's own site",
+      "address": "499 Kamphaengphet 6 Road, Load, Ladyao, Chatuchak, Bangkok 10900 Thailand",
+      "operatingEvidence": "Exhibitions posted in 2026 including \"Front & Back: The Art of the Steal\" (posted Sept 30, 2026). General admission adult 400 baht, student 120 baht; free for under-13s and over-60s with ID; special exhibitions not included.",
+      "hours": "Tuesday - Sunday 10.00 am - 06.00 pm; closed Mondays",
+      "confidence": "high"
+    },
+    {
+      "name": "Mahanakhon SkyWalk",
+      "kind": "scenic",
+      "url": "https://www.kingpowermahanakhon.co.th/",
+      "sourceType": "operator's own site (King Power Mahanakhon)",
+      "address": "114 Narathiwas Ratchanakarin Rd., Silom, Bangrak, Bangkok",
+      "operatingEvidence": "Ticket range \"THB 500 - THB 1,200\", price varies by time; articles dated September 2026 on the site.",
+      "hours": "10 AM - 12 AM, Last Access 11 PM",
+      "confidence": "high"
+    },
+    {
+      "name": "SEA LIFE Bangkok (Siam Paragon)",
+      "kind": "landmark",
+      "url": "https://www.visitsealife.com/bangkok/",
+      "sourceType": "operator's own site",
+      "address": "ชั้นใต้ดินของสยามพารากอน (basement level of Siam Paragon)",
+      "operatingEvidence": "Family bundle bookable for visits \"ตั้งแต่วันที่ 1 ถึง 31 ตุลาคม 2569\" (1–31 October 2026); online tickets from 449 baht; advance booking only through the official website.",
+      "hours": "10.00 - 20.00 น. (entrance closes 19.00)",
+      "confidence": "medium"
+    },
+    {
+      "name": "ICONSIAM",
+      "kind": "landmark",
+      "url": "https://www.iconsiam.com/en",
+      "sourceType": "operator's own site",
+      "address": "299 Charoen Nakhon Soi 5, Charoen Nakhon Road, Khlong Ton Sai Sub District, Khlong San District, Bangkok 10600",
+      "operatingEvidence": "\"The ICONIC Multimedia Water Features Show\" listed to 31 Dec 2026; a pet-care programme runs to 6 Dec 2026. Lists SookSiam among its experiences.",
+      "hours": "not published on the page read",
+      "confidence": "medium"
+    },
+    {
+      "name": "Asiatique The Riverfront",
+      "kind": "market",
+      "url": "https://www.asiatiquethailand.com/",
+      "sourceType": "operator's own site",
+      "address": "2194 Charoenkrung Road, Wat Phrayakrai District Bangkor Laem, Bangkok 10120",
+      "operatingEvidence": "Hours notice: \"Every day from 11:00 - 00:00 hrs\"; phone line staffed 16:00–22:00. No 2026-dated item found.",
+      "hours": "Every day from 11:00 - 00:00 hrs",
+      "confidence": "medium"
+    },
+    {
+      "name": "One Bangkok",
+      "kind": "landmark",
+      "url": "https://www.onebangkok.com/en",
+      "sourceType": "operator's own site",
+      "address": "Wireless Road, Lumphini, Patumwan, Bangkok 10330 Thailand",
+      "operatingEvidence": "Exhibition \"Fortune Teller\" by Julie Stephen Chheng, 2 Oct to 15 Nov 2026; \"One Oktoberfest 2026\", 28 Oct to 1 Nov, One Bangkok Park.",
+      "hours": "not published",
+      "confidence": "high"
+    },
+    {
+      "name": "Warehouse 30",
+      "kind": "landmark",
+      "url": "https://www.warehouse30.com/",
+      "sourceType": "operator's own site",
+      "address": "52-60 Captain Bush Ln, Bang Rak, Bangkok 10500",
+      "operatingEvidence": "What's on lists \"JUMBLE BANGKOK × BETTERCODE ART SHOW 2026\" and the group exhibition \"Cellulose II: Wood, Wood You?\".",
+      "hours": "Soi 30 Gate is open 7AM – 1AM; check each vendor's own hours",
+      "confidence": "medium"
+    },
+    {
+      "name": "Thipsamai (Pratoopee)",
+      "kind": "meal",
+      "url": "https://www.thipsamai.com/",
+      "sourceType": "operator's own site",
+      "address": "313-315 Mahachai Road, Samranrat, Pranakorn, Bangkok, 10200",
+      "operatingEvidence": "Current pad thai menu (Basic, Superb, with fresh prawns) and 2026-dated (2569 BE) notices on the site; menu items and prices vary by branch.",
+      "hours": "Open Daily: 9:00AM to 12:00AM, Close every Tuesday",
+      "confidence": "high"
+    },
+    {
+      "name": "nahm (COMO Metropolitan Bangkok)",
+      "kind": "meal",
+      "url": "https://www.comohotels.com/nahm-bangkok",
+      "sourceType": "operator's own site (COMO Hotels and Resorts)",
+      "address": "\"ground floor of COMO Metropolitan Bangkok\"",
+      "operatingEvidence": "A \"Taste of COMO\" evening with Chef Pim Techamuanvivit on \"November 13th 2026\"; booking via OpenTable, phone or WhatsApp; daily degustation menu.",
+      "hours": "Daily, Dinner: 6.00pm to 10.00pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Bo.lan",
+      "kind": "meal",
+      "url": "https://www.bolan.co.th/",
+      "sourceType": "operator's own site",
+      "address": "24 Soi Sukhumvit 53 (Pai Dee-Ma Dee), Khlong Tan Nuea, Watthana, Bangkok 10110",
+      "operatingEvidence": "Set lunch and dinner menus; booking through TableCheck or +66 2 260 2962; dietary needs \"กรุณาแจ้งล่วงหน้า\" (notify in advance). 2026-dated event content on the site.",
+      "hours": "Lunch Fri–Sun 12:00–14:00 (pop-up says 14:30); dinner Thu–Mon from 18:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Sorn",
+      "kind": "meal",
+      "url": "https://www.sornfinesouthern.com/",
+      "sourceType": "operator's own site",
+      "address": "56 Soi Sukhumvit 26 Khlong Tan, Khlong Toei Bangkok 10110 Thailand",
+      "operatingEvidence": "Seasonal Menu on selected dates: \"October 2026: 19–22 and 26–28\", \"November 2026: 16–19 and 23–26\"; reservations via TableCheck or email.",
+      "hours": "not published (phone line \"Available from 2:00 PM to 6:00 PM\")",
+      "confidence": "high"
+    },
+    {
+      "name": "Le Du",
+      "kind": "meal",
+      "url": "https://www.ledubkk.com/",
+      "sourceType": "operator's own site",
+      "address": "399/3 Silom 7 Alley, Silom, Bang Rak Bangkok 10500",
+      "operatingEvidence": "Online reservations; \"4-course or 6-course tasting menu\", and \"We require 6-course tasting menu for a group above 5 persons\". Footer reads © 2023; no 2026 content.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mezzaluna (lebua, State Tower)",
+      "kind": "meal",
+      "url": "https://lebua.com/restaurants/mezzaluna/",
+      "sourceType": "operator's own site (lebua Hotels & Resorts)",
+      "address": "65th Floor, State Tower, 1055 Silom Road, Bangrak, Bangkok 10500, Thailand",
+      "operatingEvidence": "Collaboration \"The Willow & The Moon\" on 13–14 November 2026; TableCheck booking with a deposit, free changes up to 72 hours before. \"Collared shirts and long trousers are required\" for men; children 7 and above.",
+      "hours": "not published",
+      "confidence": "high"
+    },
+    {
+      "name": "Sky Bar (lebua, State Tower)",
+      "kind": "bar",
+      "url": "https://lebua.com/restaurants/sky-bar/",
+      "sourceType": "operator's own site (lebua Hotels & Resorts)",
+      "address": "64th Floor, State Tower Bangkok 1055 Silom Road, Bangrak Bangkok 10500 Thailand",
+      "operatingEvidence": "\"Sky Bar and all other bars welcome walk-in only\"; smart casual, no athletic wear, swimwear, sleeveless shirts for men or flip-flops; \"children aged 7 and above are welcome when accompanied by an adult\". Site posts dated October 2026.",
+      "hours": "not published",
+      "confidence": "high"
+    },
+    {
+      "name": "Vesper",
+      "kind": "bar",
+      "url": "https://www.vesperbar.co/hours",
+      "sourceType": "operator's own site",
+      "address": "10/15 Convent Road, Silom, Bangkok 10500",
+      "operatingEvidence": "Hours page with drinks menu PDF linked; \"Last order is at 1:30 AM\". No 2026-dated item.",
+      "hours": "Monday to Sunday, 6:30 PM to 2:00 AM",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Siam",
+      "kind": "meal",
+      "url": "https://www.thesiamhotel.com/",
+      "sourceType": "operator's own site",
+      "address": "3/2 Thanon Khao, Vachirapayabal, Dusit, Bangkok 10300, Thailand",
+      "operatingEvidence": "Loy Krathong on \"Tuesday, 24 November 2026\" from 18:00 at The Pier and Chon Lawn, 10% early-bird for bookings by 19 November 2026; October 2026 roundup. Venues include Chon Thai Restaurant and Deco Bar & Bistro.",
+      "hours": "Afternoon tea 12:00–17:00 (full set weekends, à la carte Mon–Fri); other hours not published",
+      "confidence": "high"
+    },
+    {
+      "name": "Sarnies Bangkok (Charoen Krung 44)",
+      "kind": "cafe",
+      "url": "https://sarnies.com/concept/sarnies-bangkok",
+      "sourceType": "operator's own site",
+      "address": "101–103 Charoen Krung 44, Bang Rak, Bangkok 10500",
+      "operatingEvidence": "Current priced menu, e.g. \"Tom yum eggs benedict\" ฿420, \"Fry-up\" ฿480; evening menu from 17:00. Footer © 2026.",
+      "hours": "Daily 08:00 – 21:30",
+      "confidence": "medium"
+    },
+    {
+      "name": "Sarnies Sourdough (Charoen Krung 42/1)",
+      "kind": "bakery",
+      "url": "https://sarnies.com/concept/sarnies-sourdough",
+      "sourceType": "operator's own site",
+      "address": "55/14 Charoen Krung 42/1, Bang Rak, Bangkok 10500",
+      "operatingEvidence": "Sourdough loaves baked in-house daily, pizzas in the evening, coffee roasted in-house; \"Chilli jam eggs benedict\" ฿400. Footer © 2026.",
+      "hours": "Daily 07:30 – 21:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Sarnies & Friends (Talat Noi)",
+      "kind": "cafe",
+      "url": "https://sarnies.com/concept/sarnies-friends",
+      "sourceType": "operator's own site",
+      "address": "The Corner House, 951 Charoen Krung Rd, Talat Noi, Bangkok 10100",
+      "operatingEvidence": "Breakfast \"from 08:00, Tuesday to Sunday\"; menu incl. \"Mala egg benedict\" ฿210. Footer © 2026.",
+      "hours": "Tue–Fri 08:00–17:30 · Sat–Sun 08:00–19:30 · (closed Mon)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Sarnies Sukhumvit (Soi 37)",
+      "kind": "cafe",
+      "url": "https://sarnies.com/concept/sarnies-sukhumvit",
+      "sourceType": "operator's own site",
+      "address": "1/39 Soi Sukhumvit 37, Watthana, Bangkok 10110",
+      "operatingEvidence": "Current priced menu, e.g. \"Mabo Shakshuka\" ฿380; about 3 minutes' walk from BTS Phrom Phong. Footer © 2026.",
+      "hours": "Daily 07:00 – 21:30",
+      "confidence": "medium"
+    },
+    {
+      "name": "Holey Artisan Bakery (Soi 31)",
+      "kind": "bakery",
+      "url": "https://holeyartisanbakery.com/locations/",
+      "sourceType": "operator's own site",
+      "address": "245 12 Sukhumvit 31, Khlong Toei Nuea, Watthana, Bangkok 10110, Thailand",
+      "operatingEvidence": "Locations page lists four Bangkok branches with addresses; homepage footer © 2026.",
+      "hours": "Everyday Bangkok: 7 a.m. - 7 p.m.",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Grand Palace area",
+      "reason": "generic, not a place (Grand Palace itself checked separately)",
+      "url": ""
+    },
+    {
+      "name": "Chao Phraya Riverside",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Street food hopping",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Temple visits",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Canal or river ferry rides",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Rooftop dining",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private longtail canal tour",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Luxury spa ritual",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Riverside dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Rooftop cocktails",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Night market wandering",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "River boat rides",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Chatuchak snack adventure",
+      "reason": "generic, not a place; chatuchakmarket.org does not identify itself as the market operator and links to a tour-booking partner, so not used as evidence",
+      "url": "https://www.chatuchakmarket.org/opening-times/"
+    },
+    {
+      "name": "Street food crawl",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Temple morning",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Cafe day in Ari",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Riverside and street food",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Train market style outing",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Hidden canal neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Talad Noi",
+      "reason": "neighbourhood with no operator website; Sarnies & Friends in Talat Noi confirmed instead",
+      "url": ""
+    },
+    {
+      "name": "Wat Arun",
+      "reason": "no official temple website identified; not checked",
+      "url": ""
+    },
+    {
+      "name": "Wat Pho",
+      "reason": "official site read (2026 news present) but no address, hours or ticket details found in the first 200,000 characters of the page",
+      "url": "https://www.watpho.com/en/"
+    },
+    {
+      "name": "Jay Fai",
+      "reason": "no official website identified; social media not accepted as evidence",
+      "url": ""
+    },
+    {
+      "name": "Gaggan Anand",
+      "reason": "official domain did not resolve (getaddrinfo ENOTFOUND)",
+      "url": "https://www.gaggananand.com/"
+    },
+    {
+      "name": "Kay's Boutique Breakfast",
+      "reason": "guessed domain did not resolve and no official site identified (search unavailable)",
+      "url": "https://www.kaysbkk.com/"
+    },
+    {
+      "name": "Rocket Coffeebar",
+      "reason": "fetch failed twice (socket closed)",
+      "url": "https://www.rocketcoffeebar.com/"
+    },
+    {
+      "name": "Here Hai",
+      "reason": "no official website identified",
+      "url": ""
+    },
+    {
+      "name": "Som Tam Nua",
+      "reason": "no official website identified",
+      "url": ""
+    },
+    {
+      "name": "Teens of Thailand",
+      "reason": "no official website identified",
+      "url": ""
+    },
+    {
+      "name": "Tropic City",
+      "reason": "closed: own site says \"Tropic City is now closed\"",
+      "url": "https://www.tropiccitybkk.com/"
+    },
+    {
+      "name": "Bamboo Bar (Mandarin Oriental)",
+      "reason": "official page returned only navigation; no address, hours or operating evidence readable",
+      "url": "https://www.mandarinoriental.com/en/bangkok/chao-phraya-river/dine/the-bamboo-bar"
+    },
+    {
+      "name": "Le Normandie (Mandarin Oriental)",
+      "reason": "official page truncated to navigation; only a booking link readable",
+      "url": "https://www.mandarinoriental.com/en/bangkok/chao-phraya-river/dine/le-normandie"
+    },
+    {
+      "name": "Conkey's",
+      "reason": "conkeys.com redirects to an unrelated outdoor company; no official bakery website identified",
+      "url": "https://www.conkeys.com/"
+    },
+    {
+      "name": "Landhaus Bakery",
+      "reason": "guessed official domain did not resolve",
+      "url": "https://www.landhausbakery.com/"
+    },
+    {
+      "name": "Eric Kayser Bangkok",
+      "reason": "guessed official domain did not resolve",
+      "url": "https://www.maisonkayser.co.th/"
+    },
+    {
+      "name": "Factory Coffee",
+      "reason": "HTTP 429 Too Many Requests on repeated attempts",
+      "url": "https://www.factorybkk.com/"
+    },
+    {
+      "name": "Nana Coffee Roasters",
+      "reason": "homepage lists no Bangkok address; locations page returned HTTP 429",
+      "url": "https://www.nanacoffeeroasters.com/pages/our-locations"
+    },
+    {
+      "name": "Phil Coffee",
+      "reason": "domain is a parked registrar page",
+      "url": "https://www.phil.coffee/"
+    },
+    {
+      "name": "Museum Siam",
+      "reason": "only a splash page readable; no address, hours or exhibitions",
+      "url": "https://www.museumsiam.org/"
+    },
+    {
+      "name": "Bangkok Art and Culture Centre",
+      "reason": "HTTP 403 Forbidden",
+      "url": "https://www.bacc.or.th/"
+    },
+    {
+      "name": "Err",
+      "reason": "domain now shows unrelated gambling spam",
+      "url": "https://www.errbkk.com/"
+    },
+    {
+      "name": "The Peninsula Bangkok dining",
+      "reason": "HTTP 403 Forbidden",
+      "url": "https://www.peninsula.com/en/bangkok/hotel-fine-dining"
+    },
+    {
+      "name": "Kamthieng House (Siam Society)",
+      "reason": "HTTP 403 Forbidden",
+      "url": "https://www.siam.org/"
+    },
+    {
+      "name": "Vertigo and Moon Bar (Banyan Tree)",
+      "reason": "HTTP 403 Forbidden",
+      "url": "https://www.banyantree.com/thailand/bangkok/dining/vertigo-and-moon-bar"
+    },
+    {
+      "name": "BKK Social Club (Four Seasons)",
+      "reason": "HTTP 403 Forbidden",
+      "url": "https://www.fourseasons.com/bangkok/dining/lounges/bkk-social-club/"
+    },
+    {
+      "name": "Capella Bangkok dining",
+      "reason": "HTTP 403 Forbidden",
+      "url": "https://www.capellahotels.com/en/capella-bangkok/dining"
+    },
+    {
+      "name": "Lumphini Park",
+      "reason": "lumpinipark.com states it is \"Not affiliated with the Bangkok Metropolitan Administration\"; not an official source",
+      "url": "https://lumpinipark.com/"
+    },
+    {
+      "name": "Safari World",
+      "reason": "ticket site gives hours but no address and shows © 2024",
+      "url": "https://ticket.safariworld.com/?openExternalBrowser=1"
+    },
+    {
+      "name": "Pacamara Coffee",
+      "reason": "site lists only the head office, no café branch addresses",
+      "url": "https://www.pacamaracoffee.com/contact"
+    },
+    {
+      "name": "Rosewood Bangkok restaurants",
+      "reason": "no hours or dated content for individual venues",
+      "url": "https://www.rosewoodhotels.com/en/bangkok/dining"
+    },
+    {
+      "name": "Potong",
+      "reason": "page content unreadable (image data only)",
+      "url": "https://www.restaurantpotong.com/"
+    },
+    {
+      "name": "Paste",
+      "reason": "no address or hours on the page read",
+      "url": "https://www.pastebangkok.com/"
+    },
+    {
+      "name": "Blue Elephant",
+      "reason": "certificate error",
+      "url": "https://www.blue-elephant.com/bangkok/"
+    },
+    {
+      "name": "Siam Paragon",
+      "reason": "no address on the page read; covered via SEA LIFE Bangkok",
+      "url": "https://www.siamparagon.co.th/"
+    },
+    {
+      "name": "Emsphere",
+      "reason": "no address or hours on the page read",
+      "url": "https://www.emsphere.co.th/"
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Grand Palace",
+        "Jim Thompson House",
+        "Bangkok National Museum",
+        "Mahanakhon SkyWalk"
+      ],
+      "bestFirstTimers": [
+        "Grand Palace",
+        "Queen Sirikit Museum of Textiles",
+        "ICONSIAM",
+        "Asiatique The Riverfront"
+      ],
+      "bestRestaurants": [
+        "nahm (COMO Metropolitan Bangkok)",
+        "Bo.lan",
+        "Sorn",
+        "Le Du"
+      ],
+      "bestBudget": [
+        "Thipsamai (Pratoopee)",
+        "Bangkok National Museum",
+        "Holey Artisan Bakery (Soi 31)",
+        "Warehouse 30"
+      ],
+      "bestLuxury": [
+        "Mezzaluna (lebua, State Tower)",
+        "Sorn",
+        "The Siam",
+        "Sky Bar (lebua, State Tower)"
+      ],
+      "bestCouples": [
+        "Sky Bar (lebua, State Tower)",
+        "Vesper",
+        "Asiatique The Riverfront",
+        "nahm (COMO Metropolitan Bangkok)"
+      ],
+      "bestKids": [
+        "SEA LIFE Bangkok (Siam Paragon)",
+        "ICONSIAM",
+        "One Bangkok",
+        "Jim Thompson House"
+      ],
+      "bestSolo": [
+        "MOCA Bangkok",
+        "Jim Thompson Art Center",
+        "Warehouse 30",
+        "Sarnies & Friends (Talat Noi)"
+      ],
+      "bestUnique": [
+        "Sarnies & Friends (Talat Noi)",
+        "Warehouse 30",
+        "Queen Sirikit Museum of Textiles",
+        "Jim Thompson Art Center"
+      ],
+      "bestBreakfast": [
+        "Sarnies Bangkok (Charoen Krung 44)",
+        "Sarnies & Friends (Talat Noi)",
+        "Sarnies Sukhumvit (Soi 37)",
+        "Holey Artisan Bakery (Soi 31)"
+      ],
+      "bestLunch": [
+        "Thipsamai (Pratoopee)",
+        "Bo.lan",
+        "Sarnies Sourdough (Charoen Krung 42/1)",
+        "The Siam"
+      ],
+      "bestDinner": [
+        "nahm (COMO Metropolitan Bangkok)",
+        "Le Du",
+        "Mezzaluna (lebua, State Tower)",
+        "Bo.lan"
+      ],
+      "bestCocktails": [
+        "Vesper",
+        "Sky Bar (lebua, State Tower)",
+        "The Siam"
+      ],
+      "bestBakeries": [
+        "Sarnies Sourdough (Charoen Krung 42/1)",
+        "Holey Artisan Bakery (Soi 31)"
+      ],
+      "bestCoffee": [
+        "Sarnies Sourdough (Charoen Krung 42/1)",
+        "Sarnies & Friends (Talat Noi)"
+      ]
+    },
+    "queries": {
+      "Grand Palace": "Grand Palace Na Phra Lan Road Bangkok",
+      "Queen Sirikit Museum of Textiles": "Queen Sirikit Museum of Textiles Grand Palace Phra Nakhon Bangkok",
+      "Bangkok National Museum": "Bangkok National Museum 4 Na Phra That Road Bangkok",
+      "Jim Thompson House": "Jim Thompson House 6 Soi Kasemsan 2 Rama 1 Road Bangkok",
+      "Jim Thompson Art Center": "Jim Thompson Art Center 6 Soi Kasemsan 2 Rama 1 Road Bangkok",
+      "MOCA Bangkok": "MOCA Bangkok 499 Kamphaengphet 6 Road Bangkok",
+      "Mahanakhon SkyWalk": "Mahanakhon SkyWalk 114 Narathiwas Ratchanakarin Road Bangkok",
+      "SEA LIFE Bangkok (Siam Paragon)": "SEA LIFE Bangkok Siam Paragon Rama 1 Road Bangkok",
+      "ICONSIAM": "ICONSIAM 299 Charoen Nakhon Road Bangkok",
+      "Asiatique The Riverfront": "Asiatique The Riverfront 2194 Charoenkrung Road Bangkok",
+      "One Bangkok": "One Bangkok Wireless Road Bangkok",
+      "Warehouse 30": "Warehouse 30 52-60 Captain Bush Lane Bangkok",
+      "Thipsamai (Pratoopee)": "Thipsamai 313 Mahachai Road Bangkok",
+      "nahm (COMO Metropolitan Bangkok)": "nahm COMO Metropolitan South Sathorn Road Bangkok",
+      "Bo.lan": "Bo.lan 24 Soi Sukhumvit 53 Bangkok",
+      "Sorn": "Sorn 56 Soi Sukhumvit 26 Bangkok",
+      "Le Du": "Le Du 399/3 Silom Soi 7 Bangkok",
+      "Mezzaluna (lebua, State Tower)": "Mezzaluna State Tower 1055 Silom Road Bangkok",
+      "Sky Bar (lebua, State Tower)": "Sky Bar State Tower 1055 Silom Road Bangkok",
+      "Vesper": "Vesper 10/15 Convent Road Bangkok",
+      "The Siam": "The Siam 3/2 Thanon Khao Dusit Bangkok",
+      "Sarnies Bangkok (Charoen Krung 44)": "Sarnies 101 Charoen Krung 44 Bangkok",
+      "Sarnies Sourdough (Charoen Krung 42/1)": "Sarnies Sourdough 55/14 Charoen Krung 42/1 Bangkok",
+      "Sarnies & Friends (Talat Noi)": "Sarnies & Friends The Corner House 951 Charoen Krung Road Bangkok",
+      "Sarnies Sukhumvit (Soi 37)": "Sarnies 1/39 Soi Sukhumvit 37 Bangkok",
+      "Holey Artisan Bakery (Soi 31)": "Holey Artisan Bakery 245 Sukhumvit 31 Bangkok"
+    },
+    "summary": "Palace museums, galleries, a river mall and night market, rooftop and cocktail bars, Thai tasting menus, pad thai and Charoen Krung breakfast cafés, each checked against its own website.",
+    "highlights": [
+      "Grand Palace",
+      "Jim Thompson House",
+      "Bangkok National Museum",
+      "Mahanakhon SkyWalk"
+    ],
+    "tip": "Thipsamai's Pratoopee shop closes every Tuesday and MOCA Bangkok closes on Mondays, so keep those days for the Grand Palace, which opens daily with tickets sold 8:30 AM to 3:30 PM.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mon / Tue",
+        "copy": "MOCA Bangkok is open Tuesday to Sunday and closed Mondays, as is Sarnies & Friends in Talat Noi. Thipsamai's Pratoopee branch closes every Tuesday."
+      },
+      {
+        "label": "Tickets",
+        "value": "Gate times",
+        "copy": "Grand Palace tickets cost 500 baht and are sold only from 8:30 AM to 3:30 PM. At Jim Thompson House, adults pay 250 baht and you can enter only with a guide."
+      },
+      {
+        "label": "Walk-in or book",
+        "value": "Varies",
+        "copy": "Sky Bar at lebua takes walk-ins only, with no reservations. Mezzaluna, one floor up, needs a deposit through TableCheck, and changes are free up to 72 hours ahead."
+      },
+      {
+        "label": "Dress and age",
+        "value": "Rooftops",
+        "copy": "Sky Bar is smart casual and refuses athletic wear, swimwear, sleeveless shirts for men and flip-flops. Mezzaluna requires collared shirts and long trousers for men, and both admit children aged 7 and above with an adult."
+      }
+    ],
+    "dek": "Start at the Grand Palace early because ticket sales stop at 3:30 PM, and book Bangkok's tasting-menu dinners ahead while keeping rooftop drinks at Sky Bar flexible as a walk-in.",
+    "intro": [
+      "You can start in Rattanakosin at the Grand Palace, which opens daily from 8:30 AM to 4:30 PM. Tickets cost 500 baht and are sold only until 3:30 PM. Inside the palace grounds, the Queen Sirikit Museum of Textiles opens daily from 09.00 to 16.30, with last admission at 15.30. Its exhibition \"Royal Court Textiles of Siam\" runs until April 30, 2027. The Bangkok National Museum on Na Phra That Road posts a monthly opening calendar on its own site, so check it before you go.",
+      "In Pathum Wan, Jim Thompson House is open every day from 10:00 AM to 5:00 PM, and you can enter the house only with a guide. Adults pay 250 baht. Next door, the Jim Thompson Art Center is showing \"And Still, Another After\" from 10 October 2026 to 29 March 2027. For contemporary art further north, MOCA Bangkok opens Tuesday to Sunday from 10.00 am to 06.00 pm. Adult tickets cost 400 baht, and children under 13 enter free.",
+      "For views, Mahanakhon SkyWalk opens from 10 AM to midnight, last access 11 PM, and tickets range from 500 to 1,200 baht depending on the time. Sky Bar on the 64th floor of State Tower takes walk-ins only and admits children aged 7 and above with an adult. On the river, Asiatique The Riverfront opens every day from 11:00 to midnight. With children, you can visit SEA LIFE Bangkok in the basement of Siam Paragon, open 10.00 to 20.00. One Bangkok's \"Fortune Teller\" exhibition runs to 15 November.",
+      "For food, Thipsamai's original Pratoopee shop on Mahachai Road serves pad thai from 9:00AM to midnight and closes every Tuesday. nahm at COMO Metropolitan serves dinner daily from 6.00pm, and Bo.lan on Sukhumvit 53 takes bookings through TableCheck. Sorn offers its Seasonal Menu on selected dates, including 26–28 October and 16–19 November 2026. For breakfast along Charoen Krung, Sarnies Bangkok opens daily at 08:00 and Sarnies Sourdough at 07:30. Sarnies Sourdough bakes its sourdough in-house and roasts its own coffee."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Arrive at the Grand Palace before ticket sales end at 3:30 PM, then visit the Queen Sirikit Museum of Textiles inside the palace grounds, which takes last admission at 15.30."
+      ],
+      [
+        "A slower morning",
+        "Have breakfast from 08:00 at Sarnies & Friends in The Corner House in Talat Noi, open Tuesday to Sunday, then take the guided tour of Jim Thompson House from 10:00 AM."
+      ],
+      [
+        "Before booking",
+        "Mezzaluna takes a deposit through TableCheck with free changes up to 72 hours ahead, while Sky Bar downstairs takes walk-ins only."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several input places could not be checked: Wat Arun, Jay Fai, Here Hai, Som Tam Nua, Teens of Thailand and Conkey's had no official website identified. Gaggan Anand, Kay's Boutique Breakfast, Landhaus Bakery and Eric Kayser's guessed domains did not resolve. Rocket Coffeebar, Factory Coffee and Nana Coffee Roasters failed or rate-limited, and the Bamboo Bar page showed only navigation. Tropic City's own site says it has closed. BACC, the Siam Society, The Peninsula, Banyan Tree, Four Seasons and Capella returned 403. Some places are published only partially: Bangkok National Museum, ICONSIAM, One Bangkok, Sorn, Le Du, Mezzaluna and Sky Bar had no readable weekly hours. nahm and SEA LIFE gave a building, not a street address. The Grand Palace, Le Du, Vesper and Asiatique pages carried no 2026-dated content.",
+  "injectionLikeText": []
+}

@@ -2170,4 +2170,210 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Venice, Italy: source review of 2026-10-25 (docs/content-research/venice-2026-10-25.md).
+  {
+    const cityKey = "Venice, Italy";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Basilica di San Marco","Palazzo Ducale","Gallerie dell'Accademia","Biennale Arte 2026 (Giardini and Arsenale)"],
+      bestFirstTimers: ["Basilica di San Marco","Palazzo Ducale","Museo Correr","Peggy Guggenheim Collection"],
+      bestRestaurants: ["Trattoria Antiche Carampane","Ristorante Al Covo","Venissa (Mazzorbo)","Cantina Do Spade"],
+      bestBudget: ["Cantina Do Spade","Scuola Grande di San Rocco","Trattoria alla Madonna"],
+      bestLuxury: ["Venissa (Mazzorbo)","Gran Caffè Quadri","Teatro La Fenice","Caffè Florian"],
+      bestCouples: ["Teatro La Fenice","Caffè Florian","Venissa (Mazzorbo)","Experimental Cocktail Club Venice (Il Palazzo Experimental)"],
+      bestKids: ["Museo di Storia Naturale","Torre dell'Orologio","Biennale Arte 2026 (Giardini and Arsenale)"],
+      bestSolo: ["Fondazione Querini Stampalia","Museo Fortuny","Ca' Pesaro","Cafè Mariona (Querini Stampalia)"],
+      bestUnique: ["Torre dell'Orologio","Scuola Grande di San Rocco","Palazzo Mocenigo","Trattoria Da Romano (Burano)"],
+      bestBreakfast: ["Caffè Florian","Gran Caffè Quadri"],
+      bestLunch: ["Trattoria Da Romano (Burano)","Cantina Do Spade","Ristorante Al Covo"],
+      bestDinner: ["Trattoria Antiche Carampane","Ristorante Al Covo","Venissa (Mazzorbo)","Trattoria alla Madonna"],
+      bestCocktails: ["Experimental Cocktail Club Venice (Il Palazzo Experimental)","Gran Caffè Quadri"],
+      bestBakeries: [],
+      bestCoffee: ["Caffè Florian","Gran Caffè Quadri","Cafè Mariona (Querini Stampalia)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Basilica di San Marco": "Basilica di San Marco Piazza San Marco 328 Venice",
+      "Palazzo Ducale": "Palazzo Ducale Piazzetta San Marco 1 Venice",
+      "Gallerie dell'Accademia": "Gallerie dell'Accademia Campo della Carità Dorsoduro 1050 Venice",
+      "Biennale Arte 2026 (Giardini and Arsenale)": "Biennale Giardini Viale Trento 1260 Venice",
+      "Museo Correr": "Museo Correr Piazza San Marco 52 Venice",
+      "Peggy Guggenheim Collection": "Peggy Guggenheim Collection Dorsoduro 701 Venice",
+      "Trattoria Antiche Carampane": "Trattoria Antiche Carampane San Polo 1911 Venice",
+      "Ristorante Al Covo": "Ristorante Al Covo Castello 3968 Venice",
+      "Venissa (Mazzorbo)": "Venissa Fondamenta Santa Caterina 3 Mazzorbo Venice",
+      "Cantina Do Spade": "Cantina Do Spade Calle Do Spade 859 Venice",
+      "Scuola Grande di San Rocco": "Scuola Grande di San Rocco Campo San Rocco San Polo 3052 Venice",
+      "Trattoria alla Madonna": "Trattoria alla Madonna Calle della Madonna 594 San Polo Venice",
+      "Gran Caffè Quadri": "Gran Caffè Quadri Piazza San Marco 121 Venice",
+      "Teatro La Fenice": "Teatro La Fenice San Marco 1965 Venice",
+      "Caffè Florian": "Caffè Florian Piazza San Marco 57 Venice",
+      "Experimental Cocktail Club Venice (Il Palazzo Experimental)": "Il Palazzo Experimental Dorsoduro 1410 Venice",
+      "Museo di Storia Naturale": "Museo di Storia Naturale Santa Croce 1730 Venice",
+      "Torre dell'Orologio": "Torre dell'Orologio Piazza San Marco Venice",
+      "Fondazione Querini Stampalia": "Fondazione Querini Stampalia Castello 5252 Venice",
+      "Museo Fortuny": "Museo Fortuny San Marco 3958 Venice",
+      "Ca' Pesaro": "Ca' Pesaro Santa Croce 2076 Venice",
+      "Cafè Mariona (Querini Stampalia)": "Cafè Mariona Querini Stampalia Castello 5252 Venice",
+      "Palazzo Mocenigo": "Palazzo Mocenigo Santa Croce 1992 Venice",
+      "Trattoria Da Romano (Burano)": "Trattoria Da Romano Via Baldassarre Galuppi 221 Burano Venice"
+    };
+    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (cityGuide) {
+      cityGuide.summary = "Basilica, palaces, civic museums, the 2026 Art Biennale and island trattorias, with cafés, dinners and a cocktail bar checked against their own websites.";
+      cityGuide.highlights = ["Basilica di San Marco","Palazzo Ducale","Gallerie dell'Accademia","Peggy Guggenheim Collection"];
+      cityGuide.tip = "Check closing days before you plan the day: the Peggy Guggenheim Collection is closed on Tuesdays, and the Biennale Arte is closed on Mondays except 16 November.";
+    }
+    data.destinationFacts[cityKey] = "Check closing days before you plan the day: the Peggy Guggenheim Collection is closed on Tuesdays, and the Biennale Arte is closed on Mondays except 16 November.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Basilica, palaces, civic museums, the 2026 Art Biennale and island trattorias, with cafés, dinners and a cocktail bar checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Tuesdays, Mondays, midweek",
+        "copy": "The Peggy Guggenheim Collection closes on Tuesdays, Fondazione Querini Stampalia and the Biennale Arte on Mondays (the Biennale opens Monday 16 November). Antiche Carampane closes Sundays and Mondays, Al Covo Tuesdays and Wednesdays, and Da Romano on Burano on Tuesdays."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book ahead for tours and the Biennale",
+        "copy": "Torre dell'Orologio is visited only on booked guided tours that meet at the Museo Correr ticket office, and late arrivals of over 15 minutes are excluded. Biennale tickets are sold online and need a reservation."
+      },
+      {
+        "label": "Timing and late openings",
+        "value": "Winter hours from 1 November",
+        "copy": "Palazzo Ducale is open 09:00-19:00 to 31 October, then 09:00-18:00 from 1 November, with last entry an hour before closing. Ca' Pesaro and Museo Fortuny stay open until 20:00 from 20 to 22 November 2026."
+      },
+      {
+        "label": "Bags and age rules",
+        "value": "No bulky luggage; under-6 limits",
+        "copy": "Palazzo Ducale bars suitcases and trolleys, and large bags, backpacks and umbrellas go in its free storage. Children under 6 are not allowed on Torre dell'Orologio tours but enter the Biennale free."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Book the Torre dell'Orologio tour and Biennale entry ahead, and plan restaurant dinners around their midweek closing days.",
+      intro: [
+        "Your Venice visit can start in Piazza San Marco, where the Basilica di San Marco sells online tickets for the Basilica, the Pala d'Oro, the Museo and Loggia dei Cavalli, the Campanile and evening visits. Next door, Palazzo Ducale is open 09:00-19:00 until 31 October and 09:00-18:00 from 1 November, with last entry an hour before closing. Its 'Ospiti a Palazzo' display runs to 23 March 2027. The Museo Correr shows Bizhan Bassiri and 'Spiral Economy. Charrière and Canova' until 22 November 2026.",
+        "Across the Grand Canal in Dorsoduro, the Gallerie dell'Accademia has Leiko Ikemura's 'TransLucent' until 22 November. Its 2026 news also reports that the Miracoli della Vera Croce are back on view. The Peggy Guggenheim Collection is open daily 10 am-6 pm except Tuesdays, and 'Fucina degli Angeli', on twentieth-century artistic glass, opens on 14 November 2026. Ca' Rezzonico shows 'Nel segno di Venezia' until 11 January 2027. The Biennale Arte 2026, 'In Minor Keys', closes on 22 November and is open 10 am-6 pm in its final weeks.",
+        "In Santa Croce, Ca' Pesaro shows Jenny Saville until 22 November 2026, and Palazzo Mocenigo has 'Un merletto per Venezia 2026' until 6 January 2027. The Museo di Storia Naturale is an easy family stop, with 'Dietro le quinte 2026' until 15 November. In San Marco, Museo Fortuny shows Erwin Wurm's 'Dreamers', and both Fortuny and Ca' Pesaro open until 20:00 from 20 to 22 November. Scuola Grande di San Rocco is open daily 9:30-17:30, and at La Fenice the opera season opens with 'Fedora' from 13 November.",
+        "For coffee, Gran Caffè Quadri on the Piazza opens daily from 9:30 to midnight, and Caffè Florian's menu covers breakfast and afternoon tea. Book dinner ahead. Antiche Carampane charges €35 per cover for late cancellations and closes Sundays and Mondays, and Al Covo serves dinner 19:30-22:00 from Thursday to Monday. On the islands, Venissa on Mazzorbo takes online bookings, and Da Romano on Burano serves lunch every day except Tuesday."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair the Basilica di San Marco and Palazzo Ducale with a booked Torre dell'Orologio tour that starts from the Museo Correr ticket office."
+        ],
+        [
+          "A slower morning",
+          "Have a coffee at Gran Caffè Quadri from 9:30, then visit Fondazione Querini Stampalia, open Tuesday to Sunday from 10:00 with its Cafè Mariona."
+        ],
+        [
+          "Before booking",
+          "Biennale tickets need an online reservation, and Antiche Carampane charges €35 per cover for cancellations after noon on the day."
+        ]
+      ],
+      trust: "All 24 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
+  // Bangkok, Thailand: source review of 2026-10-25 (docs/content-research/bangkok-2026-10-25.md).
+  {
+    const cityKey = "Bangkok, Thailand";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Grand Palace","Jim Thompson House","Bangkok National Museum","Mahanakhon SkyWalk"],
+      bestFirstTimers: ["Grand Palace","Queen Sirikit Museum of Textiles","ICONSIAM","Asiatique The Riverfront"],
+      bestRestaurants: ["nahm (COMO Metropolitan Bangkok)","Bo.lan","Sorn","Le Du"],
+      bestBudget: ["Thipsamai (Pratoopee)","Bangkok National Museum","Holey Artisan Bakery (Soi 31)","Warehouse 30"],
+      bestLuxury: ["Mezzaluna (lebua, State Tower)","Sorn","The Siam","Sky Bar (lebua, State Tower)"],
+      bestCouples: ["Sky Bar (lebua, State Tower)","Vesper","Asiatique The Riverfront","nahm (COMO Metropolitan Bangkok)"],
+      bestKids: ["SEA LIFE Bangkok (Siam Paragon)","ICONSIAM","One Bangkok","Jim Thompson House"],
+      bestSolo: ["MOCA Bangkok","Jim Thompson Art Center","Warehouse 30","Sarnies & Friends (Talat Noi)"],
+      bestUnique: ["Sarnies & Friends (Talat Noi)","Warehouse 30","Queen Sirikit Museum of Textiles","Jim Thompson Art Center"],
+      bestBreakfast: ["Sarnies Bangkok (Charoen Krung 44)","Sarnies & Friends (Talat Noi)","Sarnies Sukhumvit (Soi 37)","Holey Artisan Bakery (Soi 31)"],
+      bestLunch: ["Thipsamai (Pratoopee)","Bo.lan","Sarnies Sourdough (Charoen Krung 42/1)","The Siam"],
+      bestDinner: ["nahm (COMO Metropolitan Bangkok)","Le Du","Mezzaluna (lebua, State Tower)","Bo.lan"],
+      bestCocktails: ["Vesper","Sky Bar (lebua, State Tower)","The Siam"],
+      bestBakeries: ["Sarnies Sourdough (Charoen Krung 42/1)","Holey Artisan Bakery (Soi 31)"],
+      bestCoffee: ["Sarnies Sourdough (Charoen Krung 42/1)","Sarnies & Friends (Talat Noi)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Grand Palace": "Grand Palace Na Phra Lan Road Bangkok",
+      "Jim Thompson House": "Jim Thompson House 6 Soi Kasemsan 2 Rama 1 Road Bangkok",
+      "Bangkok National Museum": "Bangkok National Museum 4 Na Phra That Road Bangkok",
+      "Mahanakhon SkyWalk": "Mahanakhon SkyWalk 114 Narathiwas Ratchanakarin Road Bangkok",
+      "Queen Sirikit Museum of Textiles": "Queen Sirikit Museum of Textiles Grand Palace Phra Nakhon Bangkok",
+      "ICONSIAM": "ICONSIAM 299 Charoen Nakhon Road Bangkok",
+      "Asiatique The Riverfront": "Asiatique The Riverfront 2194 Charoenkrung Road Bangkok",
+      "nahm (COMO Metropolitan Bangkok)": "nahm COMO Metropolitan South Sathorn Road Bangkok",
+      "Bo.lan": "Bo.lan 24 Soi Sukhumvit 53 Bangkok",
+      "Sorn": "Sorn 56 Soi Sukhumvit 26 Bangkok",
+      "Le Du": "Le Du 399/3 Silom Soi 7 Bangkok",
+      "Thipsamai (Pratoopee)": "Thipsamai 313 Mahachai Road Bangkok",
+      "Holey Artisan Bakery (Soi 31)": "Holey Artisan Bakery 245 Sukhumvit 31 Bangkok",
+      "Warehouse 30": "Warehouse 30 52-60 Captain Bush Lane Bangkok",
+      "Mezzaluna (lebua, State Tower)": "Mezzaluna State Tower 1055 Silom Road Bangkok",
+      "The Siam": "The Siam 3/2 Thanon Khao Dusit Bangkok",
+      "Sky Bar (lebua, State Tower)": "Sky Bar State Tower 1055 Silom Road Bangkok",
+      "Vesper": "Vesper 10/15 Convent Road Bangkok",
+      "SEA LIFE Bangkok (Siam Paragon)": "SEA LIFE Bangkok Siam Paragon Rama 1 Road Bangkok",
+      "One Bangkok": "One Bangkok Wireless Road Bangkok",
+      "MOCA Bangkok": "MOCA Bangkok 499 Kamphaengphet 6 Road Bangkok",
+      "Jim Thompson Art Center": "Jim Thompson Art Center 6 Soi Kasemsan 2 Rama 1 Road Bangkok",
+      "Sarnies & Friends (Talat Noi)": "Sarnies & Friends The Corner House 951 Charoen Krung Road Bangkok",
+      "Sarnies Bangkok (Charoen Krung 44)": "Sarnies 101 Charoen Krung 44 Bangkok",
+      "Sarnies Sukhumvit (Soi 37)": "Sarnies 1/39 Soi Sukhumvit 37 Bangkok",
+      "Sarnies Sourdough (Charoen Krung 42/1)": "Sarnies Sourdough 55/14 Charoen Krung 42/1 Bangkok"
+    };
+    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (cityGuide) {
+      cityGuide.summary = "Palace museums, galleries, a river mall and night market, rooftop and cocktail bars, Thai tasting menus, pad thai and Charoen Krung breakfast cafés, each checked against its own website.";
+      cityGuide.highlights = ["Grand Palace","Jim Thompson House","Bangkok National Museum","Mahanakhon SkyWalk"];
+      cityGuide.tip = "Thipsamai's Pratoopee shop closes every Tuesday and MOCA Bangkok closes on Mondays, so keep those days for the Grand Palace, which opens daily with tickets sold 8:30 AM to 3:30 PM.";
+    }
+    data.destinationFacts[cityKey] = "Thipsamai's Pratoopee shop closes every Tuesday and MOCA Bangkok closes on Mondays, so keep those days for the Grand Palace, which opens daily with tickets sold 8:30 AM to 3:30 PM.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Palace museums, galleries, a river mall and night market, rooftop and cocktail bars, Thai tasting menus, pad thai and Charoen Krung breakfast cafés, each checked against its own website.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mon / Tue",
+        "copy": "MOCA Bangkok is open Tuesday to Sunday and closed Mondays, as is Sarnies & Friends in Talat Noi. Thipsamai's Pratoopee branch closes every Tuesday."
+      },
+      {
+        "label": "Tickets",
+        "value": "Gate times",
+        "copy": "Grand Palace tickets cost 500 baht and are sold only from 8:30 AM to 3:30 PM. At Jim Thompson House, adults pay 250 baht and you can enter only with a guide."
+      },
+      {
+        "label": "Walk-in or book",
+        "value": "Varies",
+        "copy": "Sky Bar at lebua takes walk-ins only, with no reservations. Mezzaluna, one floor up, needs a deposit through TableCheck, and changes are free up to 72 hours ahead."
+      },
+      {
+        "label": "Dress and age",
+        "value": "Rooftops",
+        "copy": "Sky Bar is smart casual and refuses athletic wear, swimwear, sleeveless shirts for men and flip-flops. Mezzaluna requires collared shirts and long trousers for men, and both admit children aged 7 and above with an adult."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Start at the Grand Palace early because ticket sales stop at 3:30 PM, and book Bangkok's tasting-menu dinners ahead while keeping rooftop drinks at Sky Bar flexible as a walk-in.",
+      intro: [
+        "You can start in Rattanakosin at the Grand Palace, which opens daily from 8:30 AM to 4:30 PM. Tickets cost 500 baht and are sold only until 3:30 PM. Inside the palace grounds, the Queen Sirikit Museum of Textiles opens daily from 09.00 to 16.30, with last admission at 15.30. Its exhibition \"Royal Court Textiles of Siam\" runs until April 30, 2027. The Bangkok National Museum on Na Phra That Road posts a monthly opening calendar on its own site, so check it before you go.",
+        "In Pathum Wan, Jim Thompson House is open every day from 10:00 AM to 5:00 PM, and you can enter the house only with a guide. Adults pay 250 baht. Next door, the Jim Thompson Art Center is showing \"And Still, Another After\" from 10 October 2026 to 29 March 2027. For contemporary art further north, MOCA Bangkok opens Tuesday to Sunday from 10.00 am to 06.00 pm. Adult tickets cost 400 baht, and children under 13 enter free.",
+        "For views, Mahanakhon SkyWalk opens from 10 AM to midnight, last access 11 PM, and tickets range from 500 to 1,200 baht depending on the time. Sky Bar on the 64th floor of State Tower takes walk-ins only and admits children aged 7 and above with an adult. On the river, Asiatique The Riverfront opens every day from 11:00 to midnight. With children, you can visit SEA LIFE Bangkok in the basement of Siam Paragon, open 10.00 to 20.00. One Bangkok's \"Fortune Teller\" exhibition runs to 15 November.",
+        "For food, Thipsamai's original Pratoopee shop on Mahachai Road serves pad thai from 9:00AM to midnight and closes every Tuesday. nahm at COMO Metropolitan serves dinner daily from 6.00pm, and Bo.lan on Sukhumvit 53 takes bookings through TableCheck. Sorn offers its Seasonal Menu on selected dates, including 26–28 October and 16–19 November 2026. For breakfast along Charoen Krung, Sarnies Bangkok opens daily at 08:00 and Sarnies Sourdough at 07:30. Sarnies Sourdough bakes its sourdough in-house and roasts its own coffee."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Arrive at the Grand Palace before ticket sales end at 3:30 PM, then visit the Queen Sirikit Museum of Textiles inside the palace grounds, which takes last admission at 15.30."
+        ],
+        [
+          "A slower morning",
+          "Have breakfast from 08:00 at Sarnies & Friends in The Corner House in Talat Noi, open Tuesday to Sunday, then take the guided tour of Jim Thompson House from 10:00 AM."
+        ],
+        [
+          "Before booking",
+          "Mezzaluna takes a deposit through TableCheck with free changes up to 72 hours ahead, while Sky Bar downstairs takes walk-ins only."
+        ]
+      ],
+      trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

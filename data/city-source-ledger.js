@@ -5,6 +5,1021 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Bangkok, Thailand": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-25",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several input places could not be checked: Wat Arun, Jay Fai, Here Hai, Som Tam Nua, Teens of Thailand and Conkey's had no official website identified. Gaggan Anand, Kay's Boutique Breakfast, Landhaus Bakery and Eric Kayser's guessed domains did not resolve. Rocket Coffeebar, Factory Coffee and Nana Coffee Roasters failed or rate-limited, and the Bamboo Bar page showed only navigation. Tropic City's own site says it has closed. BACC, the Siam Society, The Peninsula, Banyan Tree, Four Seasons and Capella returned 403. Some places are published only partially: Bangkok National Museum, ICONSIAM, One Bangkok, Sorn, Le Du, Mezzaluna and Sky Bar had no readable weekly hours. nahm and SEA LIFE gave a building, not a street address. The Grand Palace, Le Du, Vesper and Asiatique pages carried no 2026-dated content.",
+    "sourceUrls": [
+      "docs/content-research/bangkok-2026-10-25.md",
+      "docs/content-research/bangkok-2026-10-25.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Grand Palace area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (Grand Palace itself checked separately)"
+      },
+      {
+        "name": "Chao Phraya Riverside",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Street food hopping",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Temple visits",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Canal or river ferry rides",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Rooftop dining",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private longtail canal tour",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Luxury spa ritual",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Riverside dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Rooftop cocktails",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Night market wandering",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "River boat rides",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Chatuchak snack adventure",
+        "url": "https://www.chatuchakmarket.org/opening-times/",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place; chatuchakmarket.org does not identify itself as the market operator and links to a tour-booking partner, so not used as evidence"
+      },
+      {
+        "name": "Street food crawl",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Temple morning",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Cafe day in Ari",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Riverside and street food",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Train market style outing",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Hidden canal neighborhoods",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Talad Noi",
+        "checkedOn": "2026-10-25",
+        "reason": "neighbourhood with no operator website; Sarnies & Friends in Talat Noi confirmed instead"
+      },
+      {
+        "name": "Wat Arun",
+        "checkedOn": "2026-10-25",
+        "reason": "no official temple website identified; not checked"
+      },
+      {
+        "name": "Wat Pho",
+        "url": "https://www.watpho.com/en/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site read (2026 news present) but no address, hours or ticket details found in the first 200,000 characters of the page"
+      },
+      {
+        "name": "Jay Fai",
+        "checkedOn": "2026-10-25",
+        "reason": "no official website identified; social media not accepted as evidence"
+      },
+      {
+        "name": "Gaggan Anand",
+        "url": "https://www.gaggananand.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "official domain did not resolve (getaddrinfo ENOTFOUND)"
+      },
+      {
+        "name": "Kay's Boutique Breakfast",
+        "url": "https://www.kaysbkk.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "guessed domain did not resolve and no official site identified (search unavailable)"
+      },
+      {
+        "name": "Rocket Coffeebar",
+        "url": "https://www.rocketcoffeebar.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "fetch failed twice (socket closed)"
+      },
+      {
+        "name": "Here Hai",
+        "checkedOn": "2026-10-25",
+        "reason": "no official website identified"
+      },
+      {
+        "name": "Som Tam Nua",
+        "checkedOn": "2026-10-25",
+        "reason": "no official website identified"
+      },
+      {
+        "name": "Teens of Thailand",
+        "checkedOn": "2026-10-25",
+        "reason": "no official website identified"
+      },
+      {
+        "name": "Tropic City",
+        "url": "https://www.tropiccitybkk.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "closed: own site says \"Tropic City is now closed\""
+      },
+      {
+        "name": "Bamboo Bar (Mandarin Oriental)",
+        "url": "https://www.mandarinoriental.com/en/bangkok/chao-phraya-river/dine/the-bamboo-bar",
+        "checkedOn": "2026-10-25",
+        "reason": "official page returned only navigation; no address, hours or operating evidence readable"
+      },
+      {
+        "name": "Le Normandie (Mandarin Oriental)",
+        "url": "https://www.mandarinoriental.com/en/bangkok/chao-phraya-river/dine/le-normandie",
+        "checkedOn": "2026-10-25",
+        "reason": "official page truncated to navigation; only a booking link readable"
+      },
+      {
+        "name": "Conkey's",
+        "url": "https://www.conkeys.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "conkeys.com redirects to an unrelated outdoor company; no official bakery website identified"
+      },
+      {
+        "name": "Landhaus Bakery",
+        "url": "https://www.landhausbakery.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "guessed official domain did not resolve"
+      },
+      {
+        "name": "Eric Kayser Bangkok",
+        "url": "https://www.maisonkayser.co.th/",
+        "checkedOn": "2026-10-25",
+        "reason": "guessed official domain did not resolve"
+      },
+      {
+        "name": "Factory Coffee",
+        "url": "https://www.factorybkk.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests on repeated attempts"
+      },
+      {
+        "name": "Nana Coffee Roasters",
+        "url": "https://www.nanacoffeeroasters.com/pages/our-locations",
+        "checkedOn": "2026-10-25",
+        "reason": "homepage lists no Bangkok address; locations page returned HTTP 429"
+      },
+      {
+        "name": "Phil Coffee",
+        "url": "https://www.phil.coffee/",
+        "checkedOn": "2026-10-25",
+        "reason": "domain is a parked registrar page"
+      },
+      {
+        "name": "Museum Siam",
+        "url": "https://www.museumsiam.org/",
+        "checkedOn": "2026-10-25",
+        "reason": "only a splash page readable; no address, hours or exhibitions"
+      },
+      {
+        "name": "Bangkok Art and Culture Centre",
+        "url": "https://www.bacc.or.th/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 403 Forbidden"
+      },
+      {
+        "name": "Err",
+        "url": "https://www.errbkk.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "domain now shows unrelated gambling spam"
+      },
+      {
+        "name": "The Peninsula Bangkok dining",
+        "url": "https://www.peninsula.com/en/bangkok/hotel-fine-dining",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 403 Forbidden"
+      },
+      {
+        "name": "Kamthieng House (Siam Society)",
+        "url": "https://www.siam.org/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 403 Forbidden"
+      },
+      {
+        "name": "Vertigo and Moon Bar (Banyan Tree)",
+        "url": "https://www.banyantree.com/thailand/bangkok/dining/vertigo-and-moon-bar",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 403 Forbidden"
+      },
+      {
+        "name": "BKK Social Club (Four Seasons)",
+        "url": "https://www.fourseasons.com/bangkok/dining/lounges/bkk-social-club/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 403 Forbidden"
+      },
+      {
+        "name": "Capella Bangkok dining",
+        "url": "https://www.capellahotels.com/en/capella-bangkok/dining",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 403 Forbidden"
+      },
+      {
+        "name": "Lumphini Park",
+        "url": "https://lumpinipark.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "lumpinipark.com states it is \"Not affiliated with the Bangkok Metropolitan Administration\"; not an official source"
+      },
+      {
+        "name": "Safari World",
+        "url": "https://ticket.safariworld.com/?openExternalBrowser=1",
+        "checkedOn": "2026-10-25",
+        "reason": "ticket site gives hours but no address and shows © 2024"
+      },
+      {
+        "name": "Pacamara Coffee",
+        "url": "https://www.pacamaracoffee.com/contact",
+        "checkedOn": "2026-10-25",
+        "reason": "site lists only the head office, no café branch addresses"
+      },
+      {
+        "name": "Rosewood Bangkok restaurants",
+        "url": "https://www.rosewoodhotels.com/en/bangkok/dining",
+        "checkedOn": "2026-10-25",
+        "reason": "no hours or dated content for individual venues"
+      },
+      {
+        "name": "Potong",
+        "url": "https://www.restaurantpotong.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "page content unreadable (image data only)"
+      },
+      {
+        "name": "Paste",
+        "url": "https://www.pastebangkok.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "no address or hours on the page read"
+      },
+      {
+        "name": "Blue Elephant",
+        "url": "https://www.blue-elephant.com/bangkok/",
+        "checkedOn": "2026-10-25",
+        "reason": "certificate error"
+      },
+      {
+        "name": "Siam Paragon",
+        "url": "https://www.siamparagon.co.th/",
+        "checkedOn": "2026-10-25",
+        "reason": "no address on the page read; covered via SEA LIFE Bangkok"
+      },
+      {
+        "name": "Emsphere",
+        "url": "https://www.emsphere.co.th/",
+        "checkedOn": "2026-10-25",
+        "reason": "no address or hours on the page read"
+      }
+    ],
+    "placeSources": {
+      "Grand Palace": {
+        "url": "https://www.royalgrandpalace.th/en/home",
+        "sourceType": "official public operator (Bureau of the Royal Household)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current visitor notice: \"Tickets sold from 8:30 AM - 3:30 PM and cost 500 baht\". No 2026-dated item on the page; the footer reads \"© 2021\"."
+      },
+      "Queen Sirikit Museum of Textiles": {
+        "url": "https://www.qsmtthailand.org/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibition \"Royal Court Textiles of Siam\", Gallery 3–4, \"From July 30, 2024 Until April 30, 2027\". \"Some exhibitions and events carry a separate\" charge."
+      },
+      "Bangkok National Museum": {
+        "url": "https://www.finearts.go.th/museumbangkok",
+        "sourceType": "official public operator (Fine Arts Department)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "An October 2569 (2026) opening-service calendar was posted on 1 Oct 2026, and an article was posted on 15 Oct 2026."
+      },
+      "Jim Thompson House": {
+        "url": "https://www.jimthompsonhouse.org/",
+        "sourceType": "operator's own site (The James H. W. Thompson Foundation)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Ticketing notice: \"Online ticket sales will be available on September 8, 2026\"; adults 250 baht, ages 10–21 150 baht with ID, under-10s free with an adult. \"customers are not allowed to enter the house without a guide\"."
+      },
+      "Jim Thompson Art Center": {
+        "url": "https://www.jimthompsonartcenter.org/",
+        "sourceType": "operator's own site (The James H. W. Thompson Foundation)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibition \"And Still, Another After\", 10 October 2026 to 29 March 2027."
+      },
+      "MOCA Bangkok": {
+        "url": "https://www.mocabangkok.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Exhibitions posted in 2026 including \"Front & Back: The Art of the Steal\" (posted Sept 30, 2026). General admission adult 400 baht, student 120 baht; free for under-13s and over-60s with ID; special exhibitions not included."
+      },
+      "Mahanakhon SkyWalk": {
+        "url": "https://www.kingpowermahanakhon.co.th/",
+        "sourceType": "operator's own site (King Power Mahanakhon)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Ticket range \"THB 500 - THB 1,200\", price varies by time; articles dated September 2026 on the site."
+      },
+      "SEA LIFE Bangkok (Siam Paragon)": {
+        "url": "https://www.visitsealife.com/bangkok/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Family bundle bookable for visits \"ตั้งแต่วันที่ 1 ถึง 31 ตุลาคม 2569\" (1–31 October 2026); online tickets from 449 baht; advance booking only through the official website."
+      },
+      "ICONSIAM": {
+        "url": "https://www.iconsiam.com/en",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"The ICONIC Multimedia Water Features Show\" listed to 31 Dec 2026; a pet-care programme runs to 6 Dec 2026. Lists SookSiam among its experiences."
+      },
+      "Asiatique The Riverfront": {
+        "url": "https://www.asiatiquethailand.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Hours notice: \"Every day from 11:00 - 00:00 hrs\"; phone line staffed 16:00–22:00. No 2026-dated item found."
+      },
+      "One Bangkok": {
+        "url": "https://www.onebangkok.com/en",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Exhibition \"Fortune Teller\" by Julie Stephen Chheng, 2 Oct to 15 Nov 2026; \"One Oktoberfest 2026\", 28 Oct to 1 Nov, One Bangkok Park."
+      },
+      "Warehouse 30": {
+        "url": "https://www.warehouse30.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "What's on lists \"JUMBLE BANGKOK × BETTERCODE ART SHOW 2026\" and the group exhibition \"Cellulose II: Wood, Wood You?\"."
+      },
+      "Thipsamai (Pratoopee)": {
+        "url": "https://www.thipsamai.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current pad thai menu (Basic, Superb, with fresh prawns) and 2026-dated (2569 BE) notices on the site; menu items and prices vary by branch."
+      },
+      "nahm (COMO Metropolitan Bangkok)": {
+        "url": "https://www.comohotels.com/nahm-bangkok",
+        "sourceType": "operator's own site (COMO Hotels and Resorts)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "A \"Taste of COMO\" evening with Chef Pim Techamuanvivit on \"November 13th 2026\"; booking via OpenTable, phone or WhatsApp; daily degustation menu."
+      },
+      "Bo.lan": {
+        "url": "https://www.bolan.co.th/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Set lunch and dinner menus; booking through TableCheck or +66 2 260 2962; dietary needs \"กรุณาแจ้งล่วงหน้า\" (notify in advance). 2026-dated event content on the site."
+      },
+      "Sorn": {
+        "url": "https://www.sornfinesouthern.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Seasonal Menu on selected dates: \"October 2026: 19–22 and 26–28\", \"November 2026: 16–19 and 23–26\"; reservations via TableCheck or email."
+      },
+      "Le Du": {
+        "url": "https://www.ledubkk.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online reservations; \"4-course or 6-course tasting menu\", and \"We require 6-course tasting menu for a group above 5 persons\". Footer reads © 2023; no 2026 content."
+      },
+      "Mezzaluna (lebua, State Tower)": {
+        "url": "https://lebua.com/restaurants/mezzaluna/",
+        "sourceType": "operator's own site (lebua Hotels & Resorts)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Collaboration \"The Willow & The Moon\" on 13–14 November 2026; TableCheck booking with a deposit, free changes up to 72 hours before. \"Collared shirts and long trousers are required\" for men; children 7 and above."
+      },
+      "Sky Bar (lebua, State Tower)": {
+        "url": "https://lebua.com/restaurants/sky-bar/",
+        "sourceType": "operator's own site (lebua Hotels & Resorts)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Sky Bar and all other bars welcome walk-in only\"; smart casual, no athletic wear, swimwear, sleeveless shirts for men or flip-flops; \"children aged 7 and above are welcome when accompanied by an adult\". Site posts dated October 2026."
+      },
+      "Vesper": {
+        "url": "https://www.vesperbar.co/hours",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Hours page with drinks menu PDF linked; \"Last order is at 1:30 AM\". No 2026-dated item."
+      },
+      "The Siam": {
+        "url": "https://www.thesiamhotel.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Loy Krathong on \"Tuesday, 24 November 2026\" from 18:00 at The Pier and Chon Lawn, 10% early-bird for bookings by 19 November 2026; October 2026 roundup. Venues include Chon Thai Restaurant and Deco Bar & Bistro."
+      },
+      "Sarnies Bangkok (Charoen Krung 44)": {
+        "url": "https://sarnies.com/concept/sarnies-bangkok",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current priced menu, e.g. \"Tom yum eggs benedict\" ฿420, \"Fry-up\" ฿480; evening menu from 17:00. Footer © 2026."
+      },
+      "Sarnies Sourdough (Charoen Krung 42/1)": {
+        "url": "https://sarnies.com/concept/sarnies-sourdough",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Sourdough loaves baked in-house daily, pizzas in the evening, coffee roasted in-house; \"Chilli jam eggs benedict\" ฿400. Footer © 2026."
+      },
+      "Sarnies & Friends (Talat Noi)": {
+        "url": "https://sarnies.com/concept/sarnies-friends",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Breakfast \"from 08:00, Tuesday to Sunday\"; menu incl. \"Mala egg benedict\" ฿210. Footer © 2026."
+      },
+      "Sarnies Sukhumvit (Soi 37)": {
+        "url": "https://sarnies.com/concept/sarnies-sukhumvit",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current priced menu, e.g. \"Mabo Shakshuka\" ฿380; about 3 minutes' walk from BTS Phrom Phong. Footer © 2026."
+      },
+      "Holey Artisan Bakery (Soi 31)": {
+        "url": "https://holeyartisanbakery.com/locations/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Locations page lists four Bangkok branches with addresses; homepage footer © 2026."
+      }
+    }
+  },
+  "Venice, Italy": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-25",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several civic museum homepages showed only that day's hours, not a weekly schedule. Basilica di San Marco hours sit on an external ticketing site that was not read. Caffè Florian, Al Covo, Trattoria alla Madonna and Experimental Cocktail Club Venice had no 2026-dated item and are rated medium confidence. Fondazione Querini Stampalia says its new website is still under construction. No dedicated bakery could be confirmed, so the bakery list uses Caffè Florian's pastry menu. These sites could not be read: Palazzo Grassi, Fondazione Cini, Torrefazione Cannaregio, Caffè Lavena and Ristorante Local (403 or fetch error), Ristorante Quadri and Majer (429), the Basilica dei Frari visit pages (404 or login screen), Il Mercante (expired certificate) and the City of Venice Rialto Market page (empty).",
+    "sourceUrls": [
+      "docs/content-research/venice-2026-10-25.md",
+      "docs/content-research/venice-2026-10-25.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "St. Mark's Square",
+        "checkedOn": "2026-10-25",
+        "reason": "public square with no operator website to confirm against; covered via Basilica di San Marco, Palazzo Ducale, Museo Correr and Torre dell'Orologio"
+      },
+      {
+        "name": "Grand Canal",
+        "checkedOn": "2026-10-25",
+        "reason": "waterway, not a place with an operator website"
+      },
+      {
+        "name": "Rialto Market",
+        "url": "https://www.comune.venezia.it/it/content/mercato-rialto",
+        "checkedOn": "2026-10-25",
+        "reason": "City of Venice page returned no readable content"
+      },
+      {
+        "name": "a cicchetti crawl or lagoon-side dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "San Marco local table",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Venice signature dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided San Marco walk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Dorsoduro public viewpoint",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market or picnic near Cannaregio",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for St. Mark's Square",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "a quiet vaporetto ride at dusk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Destination dinner near Cannaregio",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset around Grand Canal",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "San Marco dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly St. Mark's Square",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Dorsoduro",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Cannaregio",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to St. Mark's Square",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "San Marco cafe or market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Dorsoduro route",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Dorsoduro at a quieter hour",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Cannaregio local rhythm",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near San Marco",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Dorsoduro bakery or market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before St. Mark's Square",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "a cicchetti crawl or lagoon-side lunch",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Grand Canal",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Cannaregio",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Evening table in San Marco",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near San Marco",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Dorsoduro",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Rialto Market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near San Marco",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Dorsoduro morning market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before St. Mark's Square",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near San Marco",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Dorsoduro",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Cannaregio",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Basilica dei Frari",
+        "url": "https://www.basilicadeifrari.it/",
+        "checkedOn": "2026-10-25",
+        "reason": "homepage gave address (S. Polo 3072) but no operating evidence; hours page 404 and English page showed 'Content is protected' login screen"
+      },
+      {
+        "name": "Palazzo Grassi / Punta della Dogana",
+        "url": "https://www.palazzograssi.it/en/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site palazzograssi.it could not be fetched; pinaultcollection.com listed exhibitions but no addresses or hours"
+      },
+      {
+        "name": "Ca' d'Oro (Galleria Giorgio Franchetti)",
+        "url": "https://www.cadoro.org/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site lists no museum address or hours; latest exhibition ended 6 January 2026"
+      },
+      {
+        "name": "Museo del Vetro (Murano)",
+        "url": "https://museovetro.visitmuve.it/",
+        "checkedOn": "2026-10-25",
+        "reason": "homepage gave no address, hours or exhibition dates"
+      },
+      {
+        "name": "Museo del Merletto (Burano)",
+        "url": "https://museomerletto.visitmuve.it/",
+        "checkedOn": "2026-10-25",
+        "reason": "homepage gave no address, hours or exhibition dates"
+      },
+      {
+        "name": "Fondazione Giorgio Cini (San Giorgio Maggiore)",
+        "url": "https://www.cini.it/en/",
+        "checkedOn": "2026-10-25",
+        "reason": "403 Forbidden"
+      },
+      {
+        "name": "Ristorante Quadri",
+        "url": "https://www.alajmo.it/pages/homepage-ristorante-quadri",
+        "checkedOn": "2026-10-25",
+        "reason": "429 Too Many Requests on repeated attempts"
+      },
+      {
+        "name": "Harry's Bar",
+        "url": "https://www.harrysbarvenezia.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "harrysbarvenezia.com redirects to an unrelated site (wulfandlamb.com); cipriani.com page 404"
+      },
+      {
+        "name": "Belmond Hotel Cipriani bars",
+        "url": "https://www.belmond.com/hotels/europe/italy/venice/belmond-hotel-cipriani/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site says the hotel is closed for the 2026 season and reopens 1 June 2027"
+      },
+      {
+        "name": "Bar Longhi (The Gritti Palace)",
+        "url": "https://www.thegrittipalace.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site redirects to marriott.com, which returned 403 Forbidden"
+      },
+      {
+        "name": "Skyline Rooftop Bar",
+        "url": "https://www.skylinebarvenice.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "domain redirects to an unrelated photography site"
+      },
+      {
+        "name": "Terrazza Danieli",
+        "url": "https://www.terrazzadanieli.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "page returned no readable content"
+      },
+      {
+        "name": "Il Mercante",
+        "url": "https://www.ilmercantevenezia.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "certificate has expired"
+      },
+      {
+        "name": "Aman Venice (The Bar)",
+        "url": "https://www.aman.com/hotels/aman-venice",
+        "checkedOn": "2026-10-25",
+        "reason": "no hours and no dated or bar-specific booking information on the page read"
+      },
+      {
+        "name": "Hotel Londra Palace (LPV Bar)",
+        "url": "https://www.londrapalace.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "no bar hours and no 2026 content; booking shown is for the hotel"
+      },
+      {
+        "name": "Torrefazione Cannaregio",
+        "url": "https://www.torrefazionecannaregio.it/",
+        "checkedOn": "2026-10-25",
+        "reason": "403 Forbidden"
+      },
+      {
+        "name": "Caffè Lavena",
+        "url": "https://www.lavena.it/",
+        "checkedOn": "2026-10-25",
+        "reason": "403 Forbidden"
+      },
+      {
+        "name": "Caffè del Doge",
+        "url": "https://www.caffedeldoge.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "only the registered office address; no shop address, hours or current content"
+      },
+      {
+        "name": "Rosa Salva",
+        "url": "https://www.rosasalva.it/",
+        "checkedOn": "2026-10-25",
+        "reason": "only the registered office address; no branch address, hours or 2026 content; branches page 404"
+      },
+      {
+        "name": "Majer",
+        "url": "https://www.majer.it/",
+        "checkedOn": "2026-10-25",
+        "reason": "homepage named shops without addresses or hours; later attempts returned 429 Too Many Requests"
+      },
+      {
+        "name": "Pasticceria Dal Mas",
+        "url": "https://www.dalmaspasticceria.it/",
+        "checkedOn": "2026-10-25",
+        "reason": "address on site (Rio Terà Lista di Spagna 149/150) but no hours, menu or 2026 content"
+      },
+      {
+        "name": "Pasticceria Marchini Time",
+        "url": "https://www.marchinitime.it/",
+        "checkedOn": "2026-10-25",
+        "reason": "domain did not resolve (ENOTFOUND)"
+      },
+      {
+        "name": "Gelateria Nico",
+        "url": "https://www.gelaterianico.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "latest dated content is a November 2024 hours notice; no current evidence"
+      },
+      {
+        "name": "Suso gelateria",
+        "url": "https://www.suso.biz/",
+        "checkedOn": "2026-10-25",
+        "reason": "suso.biz is an unrelated site"
+      },
+      {
+        "name": "Osteria Bancogiro",
+        "url": "https://www.osteriabancogiro.it/",
+        "checkedOn": "2026-10-25",
+        "reason": "address on site (Campo S. Giacometto, S. Polo 122) but no hours, booking or 2026 content"
+      },
+      {
+        "name": "Osteria alle Testiere",
+        "url": "https://www.osteriaalletestiere.it/",
+        "checkedOn": "2026-10-25",
+        "reason": "domain did not resolve (ENOTFOUND)"
+      },
+      {
+        "name": "Ristorante Local",
+        "url": "https://www.ristorantelocal.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "403 Forbidden"
+      },
+      {
+        "name": "Osteria da Fiore",
+        "url": "https://www.dafiore.net/",
+        "checkedOn": "2026-10-25",
+        "reason": "dafiore.net is now an unrelated food blog"
+      },
+      {
+        "name": "Ristorante Riviera",
+        "url": "https://www.ristoranteriviera.it/",
+        "checkedOn": "2026-10-25",
+        "reason": "domain did not resolve (ENOTFOUND)"
+      },
+      {
+        "name": "Taverna La Fenice",
+        "url": "https://www.tavernalafenice.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "domain did not resolve (ENOTFOUND)"
+      },
+      {
+        "name": "Giardini Reali",
+        "url": "https://www.giardinirealivenezia.it/",
+        "checkedOn": "2026-10-25",
+        "reason": "domain did not resolve (ENOTFOUND)"
+      }
+    ],
+    "placeSources": {
+      "Basilica di San Marco": {
+        "url": "https://www.basilicasanmarco.it/news/",
+        "sourceType": "operator's own site (Procuratoria di San Marco)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online ticketing for the Basilica, Pala d'Oro, Museo and Loggia dei Cavalli, Campanile and 'Visite serali' (evening visits); news items dated 12/10/2026."
+      },
+      "Palazzo Ducale": {
+        "url": "https://palazzoducale.visitmuve.it/informazioni-pratiche/",
+        "sourceType": "official public operator (Fondazione Musei Civici di Venezia)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Event 'Ospiti a Palazzo' runs 22 October 2026 to 23 March 2027; homepage notice 'Biglietti senza fascia oraria'."
+      },
+      "Museo Correr": {
+        "url": "https://correr.visitmuve.it/",
+        "sourceType": "official public operator (Fondazione Musei Civici di Venezia)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Exhibitions 'Bizhan Bassiri' (27 February-22 November 2026) and 'Spiral Economy. Charrière and Canova' (30 April-22 November 2026); the 'Sale Reali' route is 'solo su prenotazione'."
+      },
+      "Torre dell'Orologio": {
+        "url": "https://torreorologio.visitmuve.it/en/pianifica-la-tua-visita",
+        "sourceType": "official public operator (Fondazione Musei Civici di Venezia)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "'Visits available upon prior booking, with specialized guide'; published weekly tour timetable in Italian, English and French, meeting at the Correr ticket office."
+      },
+      "Gallerie dell'Accademia": {
+        "url": "https://www.gallerieaccademia.it/",
+        "sourceType": "official public operator (Italian Ministry of Culture museum)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Leiko Ikemura, 'TransLucent — La forma della luce', 'fino al 22 novembre'; news dated 29 September 2026 on the return to view of the Miracoli della Vera Croce."
+      },
+      "Peggy Guggenheim Collection": {
+        "url": "https://www.guggenheim-venice.it/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Upcoming exhibition 'Fucina degli Angeli: Peggy Guggenheim and 20th-Century Artistic Glass', 14 November 2026-29 March 2027; tickets 'online or at the museum's ticket office'."
+      },
+      "Ca' Pesaro": {
+        "url": "https://capesaro.visitmuve.it/",
+        "sourceType": "official public operator (Fondazione Musei Civici di Venezia)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "'Jenny Saville a Ca' Pesaro' 28 March-22 November 2026 and 'Gianmaria Potenza. Io, Venezia' 3 October-22 November 2026; 'Apertura prolungata fino alle 20.00 dal 20 al 22 novembre 2026'."
+      },
+      "Palazzo Mocenigo": {
+        "url": "https://mocenigo.visitmuve.it/",
+        "sourceType": "official public operator (Fondazione Musei Civici di Venezia)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "'LE TARBOUCHE' to 8 November 2026, 'Le sete di Lucio Andrich' to 11 November 2026 and 'Un merletto per Venezia 2026' to 6 January 2027; notice 'Restauro in corso' (details not shown)."
+      },
+      "Museo di Storia Naturale": {
+        "url": "https://msn.visitmuve.it/",
+        "sourceType": "official public operator (Fondazione Musei Civici di Venezia)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "'Dietro le quinte 2026', 15 March-15 November 2026, listed as in progress."
+      },
+      "Museo Fortuny": {
+        "url": "https://fortuny.visitmuve.it/",
+        "sourceType": "official public operator (Fondazione Musei Civici di Venezia)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "'Erwin Wurm. Dreamers' 6 May-22 November 2026; 'Apertura speciale fino alle 20.00 dal 20 al 22 novembre 2026'."
+      },
+      "Fondazione Querini Stampalia": {
+        "url": "https://www.querinistampalia.org/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "'Luca Rento. Prima che tutto svanisca' 25.09.26-17.01.27; 'Pellestrina isola sottile' 24.09.26-06.11.26. Site notes it is still under construction."
+      },
+      "Cafè Mariona (Querini Stampalia)": {
+        "url": "https://www.querinistampalia.org/",
+        "sourceType": "operator's own site (Fondazione Querini Stampalia)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Caffetteria listed with current hours on the foundation's 2026 homepage alongside dated 2026 exhibitions."
+      },
+      "Scuola Grande di San Rocco": {
+        "url": "https://www.scuolagrandesanrocco.org/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published daily hours and admission notice ('Il contributo di ingresso è destinato al restauro e alla conservazione del patrimonio artistico'); footer '© 2026'."
+      },
+      "Teatro La Fenice": {
+        "url": "https://www.teatrolafenice.it/en/",
+        "sourceType": "operator's own site (Fondazione Teatro La Fenice)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Season calendar: 'Fedora' opens the opera season at La Fenice 13-22 November 2026; opening concerts 28-29 November 2026."
+      },
+      "Biennale Arte 2026 (Giardini and Arsenale)": {
+        "url": "https://www.labiennale.org/en/art/2026/information",
+        "sourceType": "operator's own site (La Biennale di Venezia)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "61st International Art Exhibition 'In Minor Keys', 9 May-22 November 2026; tickets sold online with reservation."
+      },
+      "Caffè Florian": {
+        "url": "https://www.caffeflorian.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Concert booking ('Book your place for a unique experience of music and history') and a linked menu covering breakfast, afternoon tea and sweet and savoury dishes; no 2026-dated item found."
+      },
+      "Gran Caffè Quadri": {
+        "url": "https://www.alajmo.it/pages/homepage-grancaffe-quadri",
+        "sourceType": "operator's own site (Alajmo)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Booking by phone, email and 'PRENOTA' page; menu file for autumn 2026 and cocktail list for spring 2026; 'NATALE 2026' section."
+      },
+      "Trattoria Antiche Carampane": {
+        "url": "https://www.antichecarampane.com/it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online booking; cancellations free until 12:00 on the day, otherwise €35 per cover; first sitting at 19:30 runs until 21:30; footer '© 2026'."
+      },
+      "Ristorante Al Covo": {
+        "url": "https://www.ristorantealcovo.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online 'Prenota' booking and published service times; no 2026-dated item found."
+      },
+      "Trattoria alla Madonna": {
+        "url": "https://www.ristoranteallamadonna.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "'Prenota' booking link and 'Chiuso il mercoledì'; footer dated 2022, no 2026 content."
+      },
+      "Cantina Do Spade": {
+        "url": "https://www.cantinadospade.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "'Prenota un tavolo' booking page; footer '© 2026 Cantina do Spade SRL'."
+      },
+      "Venissa (Mazzorbo)": {
+        "url": "https://www.venissa.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Separate online booking for the restaurant and the osteria; 2026 yoga programme and an October 2026 osteria menu."
+      },
+      "Trattoria Da Romano (Burano)": {
+        "url": "https://www.daromano.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Booking form on the 'Prenota' page and a 2026 news post ('Accogliere ospiti è sempre parte del nostro lavoro')."
+      },
+      "Experimental Cocktail Club Venice (Il Palazzo Experimental)": {
+        "url": "https://www.experimentalgroup.com/venice/il-palazzo-experimental",
+        "sourceType": "operator's own site (Experimental Group)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Bar described as 'a lounge hidden away from the crowds'; hotel and Adriatica restaurant booking live; footer 'ALL RIGHTS RESERVED 2026'."
+      }
+    }
+  },
   "Sydney, Australia": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-25",

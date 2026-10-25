@@ -620,6 +620,22 @@ body.hb-content {
   color: var(--hb-muted);
 }
 
+.hb-link-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  gap: 0.25rem 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hb-link-list a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--hb-ocean);
+}
+
 .hb-timeline {
   max-width: 46rem;
   margin: 1.5rem 0 1.25rem;

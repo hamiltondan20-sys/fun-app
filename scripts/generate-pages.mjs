@@ -821,6 +821,9 @@ function homePage(featured) {
   // Pilots without a photo use the site's own city illustration, so the row stays even.
   const pilotCards = pilots.map((city) => card(city, `<p class="hb-checked-badge">Checked against official sources</p>`, url("/assets/guide-city.png"))).join("\n");
   const destinationCards = featured.filter((city) => cardImage(city) && !pilots.includes(city)).slice(0, 12).map((city) => card(city)).join("\n");
+  // Guides whose recommendation lists were source-reviewed (citySourceLedger), linked by name.
+  const reviewedGuides = featured.filter((city) => city.reviewStatus.startsWith("Detail recommendations source-reviewed") && !pilots.includes(city))
+    .sort((a, b) => a.name.localeCompare(b.name));
   const body = `    <article>
       <header class="hb-lede hb-lede--home">
         <p class="hb-eyebrow">Your next trip</p>
@@ -842,6 +845,14 @@ ${pilotCards ? `      <section class="hb-cluster hb-cluster--grid" id="checked">
         <div class="hb-feature-grid">
           ${pilotCards}
         </div>
+      </section>
+
+` : ""}${reviewedGuides.length ? `      <section class="hb-cluster" id="reviewed">
+        <h2>Guides with source-reviewed recommendations</h2>
+        <p class="hb-section-lead">Every place recommended in these guides was checked on its own website, or that of the public body that runs it.</p>
+        <ul class="hb-link-list">
+          ${reviewedGuides.map((city) => `<li><a href="${url(`/destinations/${city.slug}/`)}">${esc(city.name)}</a></li>`).join("\n          ")}
+        </ul>
       </section>
 
 ` : ""}      <section class="hb-cluster hb-cluster--grid" id="featured">

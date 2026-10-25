@@ -1,0 +1,765 @@
+{
+  "city": "Venice, Italy",
+  "checkedOn": "2026-10-25",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Basilica di San Marco",
+      "kind": "landmark",
+      "url": "https://www.basilicasanmarco.it/news/",
+      "sourceType": "operator's own site (Procuratoria di San Marco)",
+      "address": "San Marco, 328 - 30124 Venezia",
+      "operatingEvidence": "Online ticketing for the Basilica, Pala d'Oro, Museo and Loggia dei Cavalli, Campanile and 'Visite serali' (evening visits); news items dated 12/10/2026.",
+      "hours": "not published (hours are only on the external ticketing site, which was not read)",
+      "confidence": "high"
+    },
+    {
+      "name": "Palazzo Ducale",
+      "kind": "museum",
+      "url": "https://palazzoducale.visitmuve.it/informazioni-pratiche/",
+      "sourceType": "official public operator (Fondazione Musei Civici di Venezia)",
+      "address": "San Marco 1, 30124 Venezia; public entrance 'Porta del Frumento, Piazzetta San Marco'",
+      "operatingEvidence": "Event 'Ospiti a Palazzo' runs 22 October 2026 to 23 March 2027; homepage notice 'Biglietti senza fascia oraria'.",
+      "hours": "1 April-31 October 09:00-19:00 (last entry 18:00); 1 November-31 March 09:00-18:00 (last entry 17:00)",
+      "confidence": "high"
+    },
+    {
+      "name": "Museo Correr",
+      "kind": "museum",
+      "url": "https://correr.visitmuve.it/",
+      "sourceType": "official public operator (Fondazione Musei Civici di Venezia)",
+      "address": "San Marco 52, 30124 Venezia; entrance 'Piazza San Marco, Ala Napoleonica, Scalone monumentale'",
+      "operatingEvidence": "Exhibitions 'Bizhan Bassiri' (27 February-22 November 2026) and 'Spiral Economy. Charrière and Canova' (30 April-22 November 2026); the 'Sale Reali' route is 'solo su prenotazione'.",
+      "hours": "homepage showed 'Oggi il museo è aperto' 10:00-18:00; weekly hours not published on pages read",
+      "confidence": "high"
+    },
+    {
+      "name": "Torre dell'Orologio",
+      "kind": "landmark",
+      "url": "https://torreorologio.visitmuve.it/en/pianifica-la-tua-visita",
+      "sourceType": "official public operator (Fondazione Musei Civici di Venezia)",
+      "address": "Piazza San Marco, 30124 Venezia",
+      "operatingEvidence": "'Visits available upon prior booking, with specialized guide'; published weekly tour timetable in Italian, English and French, meeting at the Correr ticket office.",
+      "hours": "guided tours only, e.g. English Mon 11:00 and 14:00, Fri 11:00, 14:00 and 16:00; no undated walk-in hours",
+      "confidence": "medium"
+    },
+    {
+      "name": "Gallerie dell'Accademia",
+      "kind": "museum",
+      "url": "https://www.gallerieaccademia.it/",
+      "sourceType": "official public operator (Italian Ministry of Culture museum)",
+      "address": "Campo della Carità Dorsoduro 1050, 30123 Venezia",
+      "operatingEvidence": "Leiko Ikemura, 'TransLucent — La forma della luce', 'fino al 22 novembre'; news dated 29 September 2026 on the return to view of the Miracoli della Vera Croce.",
+      "hours": "not published on the pages read (homepage said it reopens at 09:00)",
+      "confidence": "high"
+    },
+    {
+      "name": "Peggy Guggenheim Collection",
+      "kind": "museum",
+      "url": "https://www.guggenheim-venice.it/en/",
+      "sourceType": "operator's own site",
+      "address": "Palazzo Venier dei Leoni Dorsoduro 701 I-30123 Venice",
+      "operatingEvidence": "Upcoming exhibition 'Fucina degli Angeli: Peggy Guggenheim and 20th-Century Artistic Glass', 14 November 2026-29 March 2027; tickets 'online or at the museum's ticket office'.",
+      "hours": "'Daily 10 am–6 pm', ticket office closes 5 pm; closed Tuesdays and December 25",
+      "confidence": "high"
+    },
+    {
+      "name": "Ca' Rezzonico",
+      "kind": "museum",
+      "url": "https://carezzonico.visitmuve.it/",
+      "sourceType": "official public operator (Fondazione Musei Civici di Venezia)",
+      "address": "Dorsoduro 3136, 30123 Venezia",
+      "operatingEvidence": "Exhibition 'Nel segno di Venezia', 23 September 2026-11 January 2027; notice headed 'IMPORTANTI INTERVENTI DI RESTAURO' (details not shown).",
+      "hours": "homepage showed 10:00-18:00 for the day read; weekly hours not published on pages read",
+      "confidence": "high"
+    },
+    {
+      "name": "Ca' Pesaro",
+      "kind": "museum",
+      "url": "https://capesaro.visitmuve.it/",
+      "sourceType": "official public operator (Fondazione Musei Civici di Venezia)",
+      "address": "Santa Croce 2076, 30135 Venezia",
+      "operatingEvidence": "'Jenny Saville a Ca' Pesaro' 28 March-22 November 2026 and 'Gianmaria Potenza. Io, Venezia' 3 October-22 November 2026; 'Apertura prolungata fino alle 20.00 dal 20 al 22 novembre 2026'.",
+      "hours": "homepage showed 10:00-18:00 for the day read",
+      "confidence": "high"
+    },
+    {
+      "name": "Palazzo Mocenigo",
+      "kind": "museum",
+      "url": "https://mocenigo.visitmuve.it/",
+      "sourceType": "official public operator (Fondazione Musei Civici di Venezia)",
+      "address": "Santa Croce 1992, 30135 Venezia",
+      "operatingEvidence": "'LE TARBOUCHE' to 8 November 2026, 'Le sete di Lucio Andrich' to 11 November 2026 and 'Un merletto per Venezia 2026' to 6 January 2027; notice 'Restauro in corso' (details not shown).",
+      "hours": "homepage showed 10:00-18:00 for the day read",
+      "confidence": "high"
+    },
+    {
+      "name": "Museo di Storia Naturale",
+      "kind": "museum",
+      "url": "https://msn.visitmuve.it/",
+      "sourceType": "official public operator (Fondazione Musei Civici di Venezia)",
+      "address": "Santa Croce 1730, 30135 Venezia",
+      "operatingEvidence": "'Dietro le quinte 2026', 15 March-15 November 2026, listed as in progress.",
+      "hours": "homepage showed 09:00-17:00 for the day read",
+      "confidence": "high"
+    },
+    {
+      "name": "Museo Fortuny",
+      "kind": "museum",
+      "url": "https://fortuny.visitmuve.it/",
+      "sourceType": "official public operator (Fondazione Musei Civici di Venezia)",
+      "address": "San Marco 3958, 30124 Venezia",
+      "operatingEvidence": "'Erwin Wurm. Dreamers' 6 May-22 November 2026; 'Apertura speciale fino alle 20.00 dal 20 al 22 novembre 2026'.",
+      "hours": "homepage showed 10:00-18:00, 'Ultimo ingresso ore 17.00'",
+      "confidence": "high"
+    },
+    {
+      "name": "Fondazione Querini Stampalia",
+      "kind": "museum",
+      "url": "https://www.querinistampalia.org/",
+      "sourceType": "operator's own site",
+      "address": "Santa Maria Formosa, Castello 5252, 30122 Venezia",
+      "operatingEvidence": "'Luca Rento. Prima che tutto svanisca' 25.09.26-17.01.27; 'Pellestrina isola sottile' 24.09.26-06.11.26. Site notes it is still under construction.",
+      "hours": "Collections and exhibitions Tuesday-Sunday 10:00-18:00, ticket office closes 17:30, closed Mondays",
+      "confidence": "medium"
+    },
+    {
+      "name": "Cafè Mariona (Querini Stampalia)",
+      "kind": "cafe",
+      "url": "https://www.querinistampalia.org/",
+      "sourceType": "operator's own site (Fondazione Querini Stampalia)",
+      "address": "Santa Maria Formosa, Castello 5252, 30122 Venezia",
+      "operatingEvidence": "Caffetteria listed with current hours on the foundation's 2026 homepage alongside dated 2026 exhibitions.",
+      "hours": "Tuesday-Sunday 10:00-18:00 or 10:00-19:00 (page shows both); closed Mondays",
+      "confidence": "medium"
+    },
+    {
+      "name": "Scuola Grande di San Rocco",
+      "kind": "museum",
+      "url": "https://www.scuolagrandesanrocco.org/",
+      "sourceType": "operator's own site",
+      "address": "San Polo 3052, 30125 Venezia (Campo San Rocco)",
+      "operatingEvidence": "Published daily hours and admission notice ('Il contributo di ingresso è destinato al restauro e alla conservazione del patrimonio artistico'); footer '© 2026'.",
+      "hours": "Scuola daily 9:30-17:30, ticket office closes 17:00; closed 25 December, 1 January and Easter",
+      "confidence": "medium"
+    },
+    {
+      "name": "Teatro La Fenice",
+      "kind": "landmark",
+      "url": "https://www.teatrolafenice.it/en/",
+      "sourceType": "operator's own site (Fondazione Teatro La Fenice)",
+      "address": "Fondazione Teatro La Fenice 1965, San Marco, 30124 Venice (as given in footer)",
+      "operatingEvidence": "Season calendar: 'Fedora' opens the opera season at La Fenice 13-22 November 2026; opening concerts 28-29 November 2026.",
+      "hours": "not published (visit hours on a separate page not read)",
+      "confidence": "high"
+    },
+    {
+      "name": "Biennale Arte 2026 (Giardini and Arsenale)",
+      "kind": "scenic",
+      "url": "https://www.labiennale.org/en/art/2026/information",
+      "sourceType": "operator's own site (La Biennale di Venezia)",
+      "address": "Giardini, Viale Trento 1260; Arsenale, Campo della Tana 2169/F",
+      "operatingEvidence": "61st International Art Exhibition 'In Minor Keys', 9 May-22 November 2026; tickets sold online with reservation.",
+      "hours": "29 September-22 November 10 am-6 pm, last admission 5:45 pm; closed Mondays except 16 November",
+      "confidence": "high"
+    },
+    {
+      "name": "Caffè Florian",
+      "kind": "cafe",
+      "url": "https://www.caffeflorian.com/",
+      "sourceType": "operator's own site",
+      "address": "Piazza San Marco, 57 30124 Venezia (VE) – Italia",
+      "operatingEvidence": "Concert booking ('Book your place for a unique experience of music and history') and a linked menu covering breakfast, afternoon tea and sweet and savoury dishes; no 2026-dated item found.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Gran Caffè Quadri",
+      "kind": "cafe",
+      "url": "https://www.alajmo.it/pages/homepage-grancaffe-quadri",
+      "sourceType": "operator's own site (Alajmo)",
+      "address": "Piazza San Marco, 121, 30124 Venezia (VE)",
+      "operatingEvidence": "Booking by phone, email and 'PRENOTA' page; menu file for autumn 2026 and cocktail list for spring 2026; 'NATALE 2026' section.",
+      "hours": "'Lun-Dom: 9.30 - 0:00'",
+      "confidence": "high"
+    },
+    {
+      "name": "Trattoria Antiche Carampane",
+      "kind": "meal",
+      "url": "https://www.antichecarampane.com/it/",
+      "sourceType": "operator's own site",
+      "address": "San Polo, 1911 - 30125 Venezia",
+      "operatingEvidence": "Online booking; cancellations free until 12:00 on the day, otherwise €35 per cover; first sitting at 19:30 runs until 21:30; footer '© 2026'.",
+      "hours": "'Chiuso domenica e lunedì'; full hours not published",
+      "confidence": "high"
+    },
+    {
+      "name": "Ristorante Al Covo",
+      "kind": "meal",
+      "url": "https://www.ristorantealcovo.com/",
+      "sourceType": "operator's own site",
+      "address": "Castello 3968 – 30122 Venezia",
+      "operatingEvidence": "Online 'Prenota' booking and published service times; no 2026-dated item found.",
+      "hours": "'Pranzo dalle 12.45 alle 14.00 – Cena dalle 19.30 alle 22.00'; 'Chiuso martedì e mercoledì'",
+      "confidence": "medium"
+    },
+    {
+      "name": "Trattoria alla Madonna",
+      "kind": "meal",
+      "url": "https://www.ristoranteallamadonna.com/",
+      "sourceType": "operator's own site",
+      "address": "Calle della Madonna, 594, San Polo (VE), Italia",
+      "operatingEvidence": "'Prenota' booking link and 'Chiuso il mercoledì'; footer dated 2022, no 2026 content.",
+      "hours": "closed Wednesdays; other hours not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Cantina Do Spade",
+      "kind": "meal",
+      "url": "https://www.cantinadospade.com/",
+      "sourceType": "operator's own site",
+      "address": "Calle Do Spade, 859 30125 Venezia",
+      "operatingEvidence": "'Prenota un tavolo' booking page; footer '© 2026 Cantina do Spade SRL'.",
+      "hours": "'Da Lunedì a Domenica 10–15 e 18–22' (phone line hours differ slightly)",
+      "confidence": "high"
+    },
+    {
+      "name": "Venissa (Mazzorbo)",
+      "kind": "meal",
+      "url": "https://www.venissa.it/",
+      "sourceType": "operator's own site",
+      "address": "Fondamenta S. Caterina, 3, 30142 Mazzorbo Venezia",
+      "operatingEvidence": "Separate online booking for the restaurant and the osteria; 2026 yoga programme and an October 2026 osteria menu.",
+      "hours": "not published on the page read",
+      "confidence": "high"
+    },
+    {
+      "name": "Trattoria Da Romano (Burano)",
+      "kind": "meal",
+      "url": "https://www.daromano.it/",
+      "sourceType": "operator's own site",
+      "address": "Via Baldassarre Galuppi, 221, Isola di Burano, Venezia",
+      "operatingEvidence": "Booking form on the 'Prenota' page and a 2026 news post ('Accogliere ospiti è sempre parte del nostro lavoro').",
+      "hours": "Monday and Wednesday-Sunday 12:00-15:00; closed Tuesday",
+      "confidence": "high"
+    },
+    {
+      "name": "Experimental Cocktail Club Venice (Il Palazzo Experimental)",
+      "kind": "bar",
+      "url": "https://www.experimentalgroup.com/venice/il-palazzo-experimental",
+      "sourceType": "operator's own site (Experimental Group)",
+      "address": "Dorsoduro 1410, 1411, 1412 30123, Venice Italy",
+      "operatingEvidence": "Bar described as 'a lounge hidden away from the crowds'; hotel and Adriatica restaurant booking live; footer 'ALL RIGHTS RESERVED 2026'.",
+      "hours": "not published",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "St. Mark's Square",
+      "reason": "public square with no operator website to confirm against; covered via Basilica di San Marco, Palazzo Ducale, Museo Correr and Torre dell'Orologio",
+      "url": ""
+    },
+    {
+      "name": "Grand Canal",
+      "reason": "waterway, not a place with an operator website",
+      "url": ""
+    },
+    {
+      "name": "Rialto Market",
+      "reason": "City of Venice page returned no readable content",
+      "url": "https://www.comune.venezia.it/it/content/mercato-rialto"
+    },
+    {
+      "name": "a cicchetti crawl or lagoon-side dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "San Marco local table",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Venice signature dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided San Marco walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Dorsoduro public viewpoint",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market or picnic near Cannaregio",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for St. Mark's Square",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "a quiet vaporetto ride at dusk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Destination dinner near Cannaregio",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset around Grand Canal",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "San Marco dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly St. Mark's Square",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Dorsoduro",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Cannaregio",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to St. Mark's Square",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "San Marco cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Dorsoduro route",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Dorsoduro at a quieter hour",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Cannaregio local rhythm",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near San Marco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Dorsoduro bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before St. Mark's Square",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "a cicchetti crawl or lagoon-side lunch",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Grand Canal",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Cannaregio",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Evening table in San Marco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near San Marco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Dorsoduro",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Rialto Market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near San Marco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Dorsoduro morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before St. Mark's Square",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near San Marco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Dorsoduro",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Cannaregio",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Basilica dei Frari",
+      "reason": "homepage gave address (S. Polo 3072) but no operating evidence; hours page 404 and English page showed 'Content is protected' login screen",
+      "url": "https://www.basilicadeifrari.it/"
+    },
+    {
+      "name": "Palazzo Grassi / Punta della Dogana",
+      "reason": "official site palazzograssi.it could not be fetched; pinaultcollection.com listed exhibitions but no addresses or hours",
+      "url": "https://www.palazzograssi.it/en/"
+    },
+    {
+      "name": "Ca' d'Oro (Galleria Giorgio Franchetti)",
+      "reason": "official site lists no museum address or hours; latest exhibition ended 6 January 2026",
+      "url": "https://www.cadoro.org/"
+    },
+    {
+      "name": "Museo del Vetro (Murano)",
+      "reason": "homepage gave no address, hours or exhibition dates",
+      "url": "https://museovetro.visitmuve.it/"
+    },
+    {
+      "name": "Museo del Merletto (Burano)",
+      "reason": "homepage gave no address, hours or exhibition dates",
+      "url": "https://museomerletto.visitmuve.it/"
+    },
+    {
+      "name": "Fondazione Giorgio Cini (San Giorgio Maggiore)",
+      "reason": "403 Forbidden",
+      "url": "https://www.cini.it/en/"
+    },
+    {
+      "name": "Ristorante Quadri",
+      "reason": "429 Too Many Requests on repeated attempts",
+      "url": "https://www.alajmo.it/pages/homepage-ristorante-quadri"
+    },
+    {
+      "name": "Harry's Bar",
+      "reason": "harrysbarvenezia.com redirects to an unrelated site (wulfandlamb.com); cipriani.com page 404",
+      "url": "https://www.harrysbarvenezia.com/"
+    },
+    {
+      "name": "Belmond Hotel Cipriani bars",
+      "reason": "official site says the hotel is closed for the 2026 season and reopens 1 June 2027",
+      "url": "https://www.belmond.com/hotels/europe/italy/venice/belmond-hotel-cipriani/"
+    },
+    {
+      "name": "Bar Longhi (The Gritti Palace)",
+      "reason": "official site redirects to marriott.com, which returned 403 Forbidden",
+      "url": "https://www.thegrittipalace.com/"
+    },
+    {
+      "name": "Skyline Rooftop Bar",
+      "reason": "domain redirects to an unrelated photography site",
+      "url": "https://www.skylinebarvenice.com/"
+    },
+    {
+      "name": "Terrazza Danieli",
+      "reason": "page returned no readable content",
+      "url": "https://www.terrazzadanieli.com/"
+    },
+    {
+      "name": "Il Mercante",
+      "reason": "certificate has expired",
+      "url": "https://www.ilmercantevenezia.com/"
+    },
+    {
+      "name": "Aman Venice (The Bar)",
+      "reason": "no hours and no dated or bar-specific booking information on the page read",
+      "url": "https://www.aman.com/hotels/aman-venice"
+    },
+    {
+      "name": "Hotel Londra Palace (LPV Bar)",
+      "reason": "no bar hours and no 2026 content; booking shown is for the hotel",
+      "url": "https://www.londrapalace.com/"
+    },
+    {
+      "name": "Torrefazione Cannaregio",
+      "reason": "403 Forbidden",
+      "url": "https://www.torrefazionecannaregio.it/"
+    },
+    {
+      "name": "Caffè Lavena",
+      "reason": "403 Forbidden",
+      "url": "https://www.lavena.it/"
+    },
+    {
+      "name": "Caffè del Doge",
+      "reason": "only the registered office address; no shop address, hours or current content",
+      "url": "https://www.caffedeldoge.com/"
+    },
+    {
+      "name": "Rosa Salva",
+      "reason": "only the registered office address; no branch address, hours or 2026 content; branches page 404",
+      "url": "https://www.rosasalva.it/"
+    },
+    {
+      "name": "Majer",
+      "reason": "homepage named shops without addresses or hours; later attempts returned 429 Too Many Requests",
+      "url": "https://www.majer.it/"
+    },
+    {
+      "name": "Pasticceria Dal Mas",
+      "reason": "address on site (Rio Terà Lista di Spagna 149/150) but no hours, menu or 2026 content",
+      "url": "https://www.dalmaspasticceria.it/"
+    },
+    {
+      "name": "Pasticceria Marchini Time",
+      "reason": "domain did not resolve (ENOTFOUND)",
+      "url": "https://www.marchinitime.it/"
+    },
+    {
+      "name": "Gelateria Nico",
+      "reason": "latest dated content is a November 2024 hours notice; no current evidence",
+      "url": "https://www.gelaterianico.com/"
+    },
+    {
+      "name": "Suso gelateria",
+      "reason": "suso.biz is an unrelated site",
+      "url": "https://www.suso.biz/"
+    },
+    {
+      "name": "Osteria Bancogiro",
+      "reason": "address on site (Campo S. Giacometto, S. Polo 122) but no hours, booking or 2026 content",
+      "url": "https://www.osteriabancogiro.it/"
+    },
+    {
+      "name": "Osteria alle Testiere",
+      "reason": "domain did not resolve (ENOTFOUND)",
+      "url": "https://www.osteriaalletestiere.it/"
+    },
+    {
+      "name": "Ristorante Local",
+      "reason": "403 Forbidden",
+      "url": "https://www.ristorantelocal.com/"
+    },
+    {
+      "name": "Osteria da Fiore",
+      "reason": "dafiore.net is now an unrelated food blog",
+      "url": "https://www.dafiore.net/"
+    },
+    {
+      "name": "Ristorante Riviera",
+      "reason": "domain did not resolve (ENOTFOUND)",
+      "url": "https://www.ristoranteriviera.it/"
+    },
+    {
+      "name": "Taverna La Fenice",
+      "reason": "domain did not resolve (ENOTFOUND)",
+      "url": "https://www.tavernalafenice.com/"
+    },
+    {
+      "name": "Giardini Reali",
+      "reason": "domain did not resolve (ENOTFOUND)",
+      "url": "https://www.giardinirealivenezia.it/"
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Basilica di San Marco",
+        "Palazzo Ducale",
+        "Gallerie dell'Accademia",
+        "Biennale Arte 2026 (Giardini and Arsenale)"
+      ],
+      "bestFirstTimers": [
+        "Basilica di San Marco",
+        "Palazzo Ducale",
+        "Museo Correr",
+        "Peggy Guggenheim Collection"
+      ],
+      "bestRestaurants": [
+        "Trattoria Antiche Carampane",
+        "Ristorante Al Covo",
+        "Venissa (Mazzorbo)",
+        "Cantina Do Spade"
+      ],
+      "bestBudget": [
+        "Cantina Do Spade",
+        "Scuola Grande di San Rocco",
+        "Trattoria alla Madonna"
+      ],
+      "bestLuxury": [
+        "Venissa (Mazzorbo)",
+        "Gran Caffè Quadri",
+        "Teatro La Fenice",
+        "Caffè Florian"
+      ],
+      "bestCouples": [
+        "Teatro La Fenice",
+        "Caffè Florian",
+        "Venissa (Mazzorbo)",
+        "Experimental Cocktail Club Venice (Il Palazzo Experimental)"
+      ],
+      "bestKids": [
+        "Museo di Storia Naturale",
+        "Torre dell'Orologio",
+        "Biennale Arte 2026 (Giardini and Arsenale)"
+      ],
+      "bestSolo": [
+        "Fondazione Querini Stampalia",
+        "Museo Fortuny",
+        "Ca' Pesaro",
+        "Cafè Mariona (Querini Stampalia)"
+      ],
+      "bestUnique": [
+        "Torre dell'Orologio",
+        "Scuola Grande di San Rocco",
+        "Palazzo Mocenigo",
+        "Trattoria Da Romano (Burano)"
+      ],
+      "bestBreakfast": [
+        "Caffè Florian",
+        "Gran Caffè Quadri"
+      ],
+      "bestLunch": [
+        "Trattoria Da Romano (Burano)",
+        "Cantina Do Spade",
+        "Ristorante Al Covo"
+      ],
+      "bestDinner": [
+        "Trattoria Antiche Carampane",
+        "Ristorante Al Covo",
+        "Venissa (Mazzorbo)",
+        "Trattoria alla Madonna"
+      ],
+      "bestCocktails": [
+        "Experimental Cocktail Club Venice (Il Palazzo Experimental)",
+        "Gran Caffè Quadri"
+      ],
+      "bestBakeries": [],
+      "bestCoffee": [
+        "Caffè Florian",
+        "Gran Caffè Quadri",
+        "Cafè Mariona (Querini Stampalia)"
+      ]
+    },
+    "queries": {
+      "Basilica di San Marco": "Basilica di San Marco Piazza San Marco 328 Venice",
+      "Palazzo Ducale": "Palazzo Ducale Piazzetta San Marco 1 Venice",
+      "Museo Correr": "Museo Correr Piazza San Marco 52 Venice",
+      "Torre dell'Orologio": "Torre dell'Orologio Piazza San Marco Venice",
+      "Gallerie dell'Accademia": "Gallerie dell'Accademia Campo della Carità Dorsoduro 1050 Venice",
+      "Peggy Guggenheim Collection": "Peggy Guggenheim Collection Dorsoduro 701 Venice",
+      "Ca' Rezzonico": "Ca' Rezzonico Dorsoduro 3136 Venice",
+      "Ca' Pesaro": "Ca' Pesaro Santa Croce 2076 Venice",
+      "Palazzo Mocenigo": "Palazzo Mocenigo Santa Croce 1992 Venice",
+      "Museo di Storia Naturale": "Museo di Storia Naturale Santa Croce 1730 Venice",
+      "Museo Fortuny": "Museo Fortuny San Marco 3958 Venice",
+      "Fondazione Querini Stampalia": "Fondazione Querini Stampalia Castello 5252 Venice",
+      "Cafè Mariona (Querini Stampalia)": "Cafè Mariona Querini Stampalia Castello 5252 Venice",
+      "Scuola Grande di San Rocco": "Scuola Grande di San Rocco Campo San Rocco San Polo 3052 Venice",
+      "Teatro La Fenice": "Teatro La Fenice San Marco 1965 Venice",
+      "Biennale Arte 2026 (Giardini and Arsenale)": "Biennale Giardini Viale Trento 1260 Venice",
+      "Caffè Florian": "Caffè Florian Piazza San Marco 57 Venice",
+      "Gran Caffè Quadri": "Gran Caffè Quadri Piazza San Marco 121 Venice",
+      "Trattoria Antiche Carampane": "Trattoria Antiche Carampane San Polo 1911 Venice",
+      "Ristorante Al Covo": "Ristorante Al Covo Castello 3968 Venice",
+      "Trattoria alla Madonna": "Trattoria alla Madonna Calle della Madonna 594 San Polo Venice",
+      "Cantina Do Spade": "Cantina Do Spade Calle Do Spade 859 Venice",
+      "Venissa (Mazzorbo)": "Venissa Fondamenta Santa Caterina 3 Mazzorbo Venice",
+      "Trattoria Da Romano (Burano)": "Trattoria Da Romano Via Baldassarre Galuppi 221 Burano Venice",
+      "Experimental Cocktail Club Venice (Il Palazzo Experimental)": "Il Palazzo Experimental Dorsoduro 1410 Venice"
+    },
+    "summary": "Basilica, palaces, civic museums, the 2026 Art Biennale and island trattorias, with cafés, dinners and a cocktail bar checked against their own websites.",
+    "highlights": [
+      "Basilica di San Marco",
+      "Palazzo Ducale",
+      "Gallerie dell'Accademia",
+      "Peggy Guggenheim Collection"
+    ],
+    "tip": "Check closing days before you plan the day: the Peggy Guggenheim Collection is closed on Tuesdays, and the Biennale Arte is closed on Mondays except 16 November.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Tuesdays, Mondays, midweek",
+        "copy": "The Peggy Guggenheim Collection closes on Tuesdays, Fondazione Querini Stampalia and the Biennale Arte on Mondays (the Biennale opens Monday 16 November). Antiche Carampane closes Sundays and Mondays, Al Covo Tuesdays and Wednesdays, and Da Romano on Burano on Tuesdays."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book ahead for tours and the Biennale",
+        "copy": "Torre dell'Orologio is visited only on booked guided tours that meet at the Museo Correr ticket office, and late arrivals of over 15 minutes are excluded. Biennale tickets are sold online and need a reservation."
+      },
+      {
+        "label": "Timing and late openings",
+        "value": "Winter hours from 1 November",
+        "copy": "Palazzo Ducale is open 09:00-19:00 to 31 October, then 09:00-18:00 from 1 November, with last entry an hour before closing. Ca' Pesaro and Museo Fortuny stay open until 20:00 from 20 to 22 November 2026."
+      },
+      {
+        "label": "Bags and age rules",
+        "value": "No bulky luggage; under-6 limits",
+        "copy": "Palazzo Ducale bars suitcases and trolleys, and large bags, backpacks and umbrellas go in its free storage. Children under 6 are not allowed on Torre dell'Orologio tours but enter the Biennale free."
+      }
+    ],
+    "dek": "Book the Torre dell'Orologio tour and Biennale entry ahead, and plan restaurant dinners around their midweek closing days.",
+    "intro": [
+      "Your Venice visit can start in Piazza San Marco, where the Basilica di San Marco sells online tickets for the Basilica, the Pala d'Oro, the Museo and Loggia dei Cavalli, the Campanile and evening visits. Next door, Palazzo Ducale is open 09:00-19:00 until 31 October and 09:00-18:00 from 1 November, with last entry an hour before closing. Its 'Ospiti a Palazzo' display runs to 23 March 2027. The Museo Correr shows Bizhan Bassiri and 'Spiral Economy. Charrière and Canova' until 22 November 2026.",
+      "Across the Grand Canal in Dorsoduro, the Gallerie dell'Accademia has Leiko Ikemura's 'TransLucent' until 22 November. Its 2026 news also reports that the Miracoli della Vera Croce are back on view. The Peggy Guggenheim Collection is open daily 10 am-6 pm except Tuesdays, and 'Fucina degli Angeli', on twentieth-century artistic glass, opens on 14 November 2026. Ca' Rezzonico shows 'Nel segno di Venezia' until 11 January 2027. The Biennale Arte 2026, 'In Minor Keys', closes on 22 November and is open 10 am-6 pm in its final weeks.",
+      "In Santa Croce, Ca' Pesaro shows Jenny Saville until 22 November 2026, and Palazzo Mocenigo has 'Un merletto per Venezia 2026' until 6 January 2027. The Museo di Storia Naturale is an easy family stop, with 'Dietro le quinte 2026' until 15 November. In San Marco, Museo Fortuny shows Erwin Wurm's 'Dreamers', and both Fortuny and Ca' Pesaro open until 20:00 from 20 to 22 November. Scuola Grande di San Rocco is open daily 9:30-17:30, and at La Fenice the opera season opens with 'Fedora' from 13 November.",
+      "For coffee, Gran Caffè Quadri on the Piazza opens daily from 9:30 to midnight, and Caffè Florian's menu covers breakfast and afternoon tea. Book dinner ahead. Antiche Carampane charges €35 per cover for late cancellations and closes Sundays and Mondays, and Al Covo serves dinner 19:30-22:00 from Thursday to Monday. On the islands, Venissa on Mazzorbo takes online bookings, and Da Romano on Burano serves lunch every day except Tuesday."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair the Basilica di San Marco and Palazzo Ducale with a booked Torre dell'Orologio tour that starts from the Museo Correr ticket office."
+      ],
+      [
+        "A slower morning",
+        "Have a coffee at Gran Caffè Quadri from 9:30, then visit Fondazione Querini Stampalia, open Tuesday to Sunday from 10:00 with its Cafè Mariona."
+      ],
+      [
+        "Before booking",
+        "Biennale tickets need an online reservation, and Antiche Carampane charges €35 per cover for cancellations after noon on the day."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several civic museum homepages showed only that day's hours, not a weekly schedule. Basilica di San Marco hours sit on an external ticketing site that was not read. Caffè Florian, Al Covo, Trattoria alla Madonna and Experimental Cocktail Club Venice had no 2026-dated item and are rated medium confidence. Fondazione Querini Stampalia says its new website is still under construction. No dedicated bakery could be confirmed, so the bakery list uses Caffè Florian's pastry menu. These sites could not be read: Palazzo Grassi, Fondazione Cini, Torrefazione Cannaregio, Caffè Lavena and Ristorante Local (403 or fetch error), Ristorante Quadri and Majer (429), the Basilica dei Frari visit pages (404 or login screen), Il Mercante (expired certificate) and the City of Venice Rialto Market page (empty).",
+  "injectionLikeText": []
+}
