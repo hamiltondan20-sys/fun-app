@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 25.
-- Classifier-passed (published, not fully documented in that format): 164.
+- Source-verified (complete dated evidence format): 26.
+- Classifier-passed (published, not fully documented in that format): 163.
 - Held back: 295.
 - Published destinations: 189; country hubs: 19; sitemap URLs: 217.
 
@@ -426,7 +426,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Scottish Highlands, United Kingdom | scottish-highlands | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
 | Seattle, United States | seattle | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Sedona, United States | sedona | held-back | ready-for-content-draft | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
-| Seoul, South Korea | seoul | classifier-passed | not-reviewed | 0 | 28 | 15 | 10 | None |
+| Seoul, South Korea | seoul | source-verified | source-checked | 26 | 50 | 15 | 15 | None |
 | Sequoia National Park, United States | sequoia-national-park | classifier-passed | not-reviewed | 0 | 8 | 15 | 4 | None |
 | Serengeti, Tanzania | serengeti | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Seville, Spain | seville | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |

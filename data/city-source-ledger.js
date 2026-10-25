@@ -5,6 +5,513 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Seoul, South Korea": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-25",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Palace opening hours for Gyeongbokgung, Changdeokgung and Deoksugung were not on the pages read, and neither were regular hours for Leeum Museum of Art or Seoul Arts Center; SEA LIFE COEX Aquarium showed only a same-day snapshot. Jungsik, Hadongkwan, 1914 Lounge & Bar and both Fritz Coffee branches publish addresses and hours or booking links but no dated 2026 content, so they are rated medium. Many input places could not be confirmed: Gwangjang Market, Tosokchon and Myeongdong Kyoja had certificate errors; Charles H and Anthracite returned 403; London Bagel Museum's domain did not resolve; Mingles and Lotte World returned no readable content; N Seoul Tower's pages had an encoding error; Bar Cham and Center Coffee have no official websites; and Alice Cheongdam, Maison M.O and Breadypost could not be identified. Coverage of bakeries and cocktail bars therefore relies on hotel venues.",
+    "sourceUrls": [
+      "docs/content-research/seoul-2026-10-25.md",
+      "docs/content-research/seoul-2026-10-25.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Hongdae",
+        "checkedOn": "2026-10-25",
+        "reason": "neighbourhood, not a single operated place"
+      },
+      {
+        "name": "Bukchon Hanok Village",
+        "checkedOn": "2026-10-25",
+        "reason": "residential neighbourhood; no operator page read"
+      },
+      {
+        "name": "Myeongdong",
+        "checkedOn": "2026-10-25",
+        "reason": "neighbourhood, not a single operated place"
+      },
+      {
+        "name": "Han River",
+        "url": "https://hangang.seoul.go.kr/",
+        "checkedOn": "2026-10-25",
+        "reason": "generic area; Hangang Parks site showed no address or dated content for a specific park"
+      },
+      {
+        "name": "Mingles",
+        "url": "https://www.restaurant-mingles.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site returned no readable content beyond the name"
+      },
+      {
+        "name": "Tosokchon",
+        "url": "https://www.tosokchon.co.kr/",
+        "checkedOn": "2026-10-25",
+        "reason": "certificate error (self-signed certificate)"
+      },
+      {
+        "name": "Born & Bred",
+        "url": "http://www.bandb.co.kr/kr/index.php",
+        "checkedOn": "2026-10-25",
+        "reason": "official site shows only a reservation link to a booking platform; no address or dated content"
+      },
+      {
+        "name": "Lotte World",
+        "url": "https://www.lotteworld.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site returned no readable content"
+      },
+      {
+        "name": "Lotte World Tower Seoul Sky",
+        "url": "https://seoulsky.lotteworld.com/en/main/index.do",
+        "checkedOn": "2026-10-25",
+        "reason": "official site returned no readable content"
+      },
+      {
+        "name": "London Bagel Museum",
+        "url": "https://www.londonbagelmuseum.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "official domains did not resolve (DNS failure)"
+      },
+      {
+        "name": "Cafe Onion",
+        "url": "https://www.cafeonion.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "fetch failed (socket closed)"
+      },
+      {
+        "name": "Breadypost",
+        "checkedOn": "2026-10-25",
+        "reason": "no official website identified during review"
+      },
+      {
+        "name": "Gwangjang Market",
+        "url": "https://www.kwangjangmarket.co.kr/",
+        "checkedOn": "2026-10-25",
+        "reason": "certificate error (self-signed certificate)"
+      },
+      {
+        "name": "Myeongdong Kyoja",
+        "url": "https://www.mdkj.co.kr/",
+        "checkedOn": "2026-10-25",
+        "reason": "certificate error (self-signed certificate)"
+      },
+      {
+        "name": "Charles H",
+        "url": "https://www.fourseasons.com/seoul/dining/lounges/charles-h/",
+        "checkedOn": "2026-10-25",
+        "reason": "official Four Seasons page returned 403 Forbidden"
+      },
+      {
+        "name": "Bar Cham",
+        "checkedOn": "2026-10-25",
+        "reason": "no official website found; presence appears limited to social media"
+      },
+      {
+        "name": "Alice Cheongdam",
+        "checkedOn": "2026-10-25",
+        "reason": "official website not identified (search unavailable during review)"
+      },
+      {
+        "name": "Maison M.O",
+        "checkedOn": "2026-10-25",
+        "reason": "official website not identified during review"
+      },
+      {
+        "name": "Tartine Seoul",
+        "url": "https://www.tartinebakery.com/locations",
+        "checkedOn": "2026-10-25",
+        "reason": "no official Seoul page found; tartinebakery.com locations page returned 404"
+      },
+      {
+        "name": "Center Coffee",
+        "checkedOn": "2026-10-25",
+        "reason": "no official website found"
+      },
+      {
+        "name": "Anthracite",
+        "url": "https://anthracitecoffee.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site returned 403 Forbidden"
+      },
+      {
+        "name": "N Seoul Tower",
+        "url": "https://www.nseoultower.co.kr/",
+        "checkedOn": "2026-10-25",
+        "reason": "pages garbled by character-encoding error; address and hours not readable"
+      },
+      {
+        "name": "War Memorial of Korea",
+        "url": "https://www.warmemo.or.kr/",
+        "checkedOn": "2026-10-25",
+        "reason": "certificate error (unable to verify the first certificate)"
+      },
+      {
+        "name": "Dongdaemun Design Plaza",
+        "url": "https://www.ddp.or.kr/",
+        "checkedOn": "2026-10-25",
+        "reason": "certificate error (unable to verify the first certificate)"
+      },
+      {
+        "name": "National Hangeul Museum",
+        "url": "https://www.hangeul.go.kr/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site says closed until the second half of 2028 (\"2028년 하반기까지 휴관합니다\")"
+      },
+      {
+        "name": "Seoul Museum of History",
+        "url": "https://museum.seoul.go.kr/",
+        "checkedOn": "2026-10-25",
+        "reason": "site redirected to a sign-in (SSO) page; no readable content"
+      },
+      {
+        "name": "National Folk Museum of Korea",
+        "url": "https://www.nfm.go.kr/",
+        "checkedOn": "2026-10-25",
+        "reason": "site returned \"잘못된 접근입니다\" (improper access) message"
+      },
+      {
+        "name": "Amorepacific Museum of Art",
+        "url": "https://apma.amorepacific.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "site returned no readable content"
+      },
+      {
+        "name": "Seoul Grand Park",
+        "url": "https://grandpark.seoul.go.kr/",
+        "checkedOn": "2026-10-25",
+        "reason": "site returned no readable content"
+      },
+      {
+        "name": "Seoul Forest",
+        "url": "https://seoulforest.or.kr/",
+        "checkedOn": "2026-10-25",
+        "reason": "conservancy site states its activities ended 31 December 2021; no current park page read"
+      },
+      {
+        "name": "Namsangol Hanok Village",
+        "url": "https://www.hanokmaeul.or.kr/",
+        "checkedOn": "2026-10-25",
+        "reason": "domain did not resolve (DNS failure)"
+      },
+      {
+        "name": "Noryangjin Fisheries Wholesale Market",
+        "url": "https://www.susanijang.co.kr/",
+        "checkedOn": "2026-10-25",
+        "reason": "domain did not resolve (DNS failure)"
+      },
+      {
+        "name": "The Hyundai Seoul",
+        "url": "https://thehyundaiseoul.ehyundai.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "address shown but no hours or dated current content"
+      },
+      {
+        "name": "Lotte Hotel Seoul dining",
+        "url": "https://www.lottehotel.com/seoul-hotel/en/dining.html",
+        "checkedOn": "2026-10-25",
+        "reason": "bot check (\"Pardon Our Interruption\"); not bypassed"
+      },
+      {
+        "name": "Banyan Tree Club & Spa Seoul dining",
+        "url": "https://www.banyantree.com/south-korea/seoul/dining",
+        "checkedOn": "2026-10-25",
+        "reason": "403 Forbidden"
+      },
+      {
+        "name": "Blue Bottle Coffee (Seoul)",
+        "url": "https://bluebottlecoffee.com/kr/ko/cafes",
+        "checkedOn": "2026-10-25",
+        "reason": "Korean site refused connection; global cafes page 403 Forbidden"
+      },
+      {
+        "name": "Isaac Toast",
+        "url": "https://www.isaac-toast.co.kr/",
+        "checkedOn": "2026-10-25",
+        "reason": "site has 2026 notices but no individual branch address"
+      },
+      {
+        "name": "Terarosa (Seoul)",
+        "url": "https://www.terarosa.com/store/",
+        "checkedOn": "2026-10-25",
+        "reason": "no Seoul branch address or hours readable"
+      },
+      {
+        "name": "Coffee Libre",
+        "url": "https://www.coffeelibre.kr/",
+        "checkedOn": "2026-10-25",
+        "reason": "no cafe address or hours on site; only Paju company address"
+      },
+      {
+        "name": "Namusairo",
+        "url": "https://www.namusairo.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "no cafe address or hours on page read"
+      },
+      {
+        "name": "Paul Bassett",
+        "url": "https://www.baristapaulbassett.co.kr/",
+        "checkedOn": "2026-10-25",
+        "reason": "site returned no readable content"
+      },
+      {
+        "name": "Onjium",
+        "url": "https://www.onjium.org/",
+        "checkedOn": "2026-10-25",
+        "reason": "site describes a research institute, not a restaurant; no 2026 content"
+      },
+      {
+        "name": "Josun Deli The Boutique (Josun Palace)",
+        "url": "https://jpg.josunhotel.com/dining/JosunDeli.do",
+        "checkedOn": "2026-10-25",
+        "reason": "page describes gift products, not a bakery; no dated content"
+      },
+      {
+        "name": "Street food markets",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Palace grounds",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Neighborhood night walks",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Fine Korean tasting menu",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private spa jjimjilbang day",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "High-end shopping and hotel stay",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Namsan evening",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Han River picnic",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Cafe and rooftop date",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Aquarium stop",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Cafe day in Seongsu",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market lunch",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Neighborhood night wandering",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Ikseondong alleys",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Late-night convenience culture",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "K-beauty and cafe hopping",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Jungsik-style fine dining",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (Jungsik itself was checked separately)"
+      }
+    ],
+    "placeSources": {
+      "Gyeongbokgung": {
+        "url": "https://royal.khs.go.kr/ROYAL/contents/menuInfo-gbg.do?grpCode=gbg",
+        "sourceType": "official public operator (Korea Heritage Service, Gyeongbokgung Palace Management Office)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Notice list includes \"[행사] 2026년 흥복전 왕실문화 아카데미 개최\" (2026.10.13) and \"2026년 10~11월 경복궁, 칠궁 관람 운영 안내\"; access to the Geunjeongjeon platform (월대) is restricted until 31 October."
+      },
+      "Changdeokgung": {
+        "url": "https://royal.khs.go.kr/ROYAL/contents/menuInfo-cdg.do?grpCode=cdg",
+        "sourceType": "official public operator (Korea Heritage Service, Changdeokgung Palace Management Office)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "2026.10.12 notice for the inner-palace event \"왕과 왕비의 생활공간, 창덕궁 내전에 들다\" (10.20–10.31); 2026.10.20 notice of fire-suppression works restricting access to the Gwolnaegaksa area."
+      },
+      "Deoksugung": {
+        "url": "https://royal.khs.go.kr/ROYAL/contents/menuInfo-dsg.do?grpCode=dsg",
+        "sourceType": "official public operator (Korea Heritage Service, Deoksugung Palace Management Office)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "2026.09.29 \"10월 덕수궁 관람 안내\"; 2026.10.12 notice \"돈덕전 관람중지 안내('26. 10. 13. ~ 11. 1.)\" (Dondeokjeon closed to 1 November); outer wall works 9.21–11.19."
+      },
+      "National Museum of Korea": {
+        "url": "https://www.museum.go.kr/site/eng/home",
+        "sourceType": "official public operator (National Museum of Korea)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibitions include \"Tour of National Treasures: Masterpieces Across the Country\" (May 19 – Nov 29, 2026) and \"Kim Jeonghui and His Companions\" (Aug 11 – Nov 22, 2026)."
+      },
+      "MMCA Seoul": {
+        "url": "https://www.mmca.go.kr/eng/visitingInfo/seoulInfo.do",
+        "sourceType": "official public operator (National Museum of Modern and Contemporary Art, Korea)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Homepage lists Seoul exhibitions \"Do Ho Suh\" (2026-08-27 to 2027-02-09) and \"Korea Artist Prize 2026\" (2026-07-24 to 2026-12-06)."
+      },
+      "Leeum Museum of Art": {
+        "url": "https://www.leeumhoam.org/leeum",
+        "sourceType": "operator's own site (Leeum Museum of Art)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibitions \"구정아: 우스모스\" (Sept 5 – Dec 27, 2026) and \"다른 공간 안으로: 여성 작가들의 공감각적 환경 1956-1976\" (May 5 – Nov 29, 2026)."
+      },
+      "Seoul Museum of Art (Seosomun)": {
+        "url": "https://sema.seoul.go.kr/",
+        "sourceType": "official public operator (Seoul Metropolitan Government, Seoul Museum of Art)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Exhibition \"가나아트컬렉션 《기술의 저변: 경계에 선 장면들》\" runs 2026.04.16 – 2026.11.22."
+      },
+      "National Palace Museum of Korea": {
+        "url": "https://www.gogung.go.kr/",
+        "sourceType": "official public operator (National Palace Museum of Korea)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Homepage carries 2026-dated news notices and permanent halls: \"상설 전시실은 3개의 층, 6개의 전시실로 구성되어 있습니다.\""
+      },
+      "Seodaemun Prison History Hall": {
+        "url": "https://sphh.sscmc.or.kr/",
+        "sourceType": "official public operator (Seodaemun-gu Urban Management Corporation)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "2026-10-15 notice on winter (Nov–Feb) operating hours; 2026-10-01 notice for a night programme."
+      },
+      "Seoul Museum of Craft Art": {
+        "url": "https://craftmuseum.seoul.go.kr/",
+        "sourceType": "official public operator (Seoul Metropolitan Government, Seoul Museum of Craft Art)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Exhibitions include \"에퀴녹스: 추분_춘분\" (2026.09.22 – 2027.03.07) and \"공예동행@쇼윈도 #6. 실루엣 Silhouette\" (2026.10.21 – 2026.12.06); night opening notice for 9.15–11.30."
+      },
+      "Seoul Arts Center": {
+        "url": "https://www.sac.or.kr/",
+        "sourceType": "operator's own site (Seoul Arts Center)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Programme lists \"2026 예술의전당 토월정통연극 〈유리동물원〉\" (10.17–11.22, CJ Towol Theater) and \"달리·Differently·Dali\" (10.30–11.15, Hangaram Art Museum Gallery 7)."
+      },
+      "Seoul Children's Grand Park": {
+        "url": "https://www.sisul.or.kr/open_content/childrenpark/",
+        "sourceType": "official public operator (Seoul Facilities Corporation)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "2026.09.14 notice for the autumn festival \"단풍 물든 클래식\" (9.19–11.7); botanical garden operations suspended from 27 May 2026 until \"2027년 하반기(예정)\"."
+      },
+      "Seoul Botanic Park": {
+        "url": "https://botanicpark.seoul.go.kr/",
+        "sourceType": "official public operator (Seoul Metropolitan Government)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "2026.09.30 \"10월 운영 및 휴관 안내\" (closed on 26 October among other October dates); 2026.10.13 notice on exhibition-hall operations during an international symposium."
+      },
+      "SEA LIFE COEX Aquarium": {
+        "url": "https://www.visitsealife.com/coex-seoul/",
+        "sourceType": "operator's own site (SEA LIFE / Merlin Entertainments)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Live online ticket booking with same-day hours shown: \"금일 운영시간: 10:00 - 20:00 (마지막 입장 19:00)\"; online buyers can skip the queue."
+      },
+      "Starfield Library (Starfield COEX Mall)": {
+        "url": "https://www.starfield.co.kr/coexmall/main.do",
+        "sourceType": "operator's own site (Starfield COEX Mall)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"10.1(목) - 10.31(토) 10월의 별마당도서관 소식\" and a November kids' programme banner \"11.14(토), 11.28(토)\"."
+      },
+      "La Yeon (The Shilla Seoul)": {
+        "url": "https://www.shillahotels.com/en/theshilla/seoul/dining/restaurant/layeon.do",
+        "sourceType": "operator's own site (The Shilla Seoul)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Deposit and cancellation policy \"updated effective September 10, 2026\"; bookable with KRW 50,000 per person deposit; downloadable lunch and dinner menus."
+      },
+      "Continental (The Shilla Seoul)": {
+        "url": "https://www.shillahotels.com/en/theshilla/seoul/dining/restaurant/continental.do",
+        "sourceType": "operator's own site (The Shilla Seoul)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Reservations open on the first day of the month two months ahead; policy updated \"effective September 10, 2026\"."
+      },
+      "The Parkview (The Shilla Seoul)": {
+        "url": "https://www.shillahotels.com/en/theshilla/seoul/dining/restaurant/theParkview.do",
+        "sourceType": "operator's own site (The Shilla Seoul)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Publishes an October–December schedule; deposit policy updated \"effective September 10, 2026\"."
+      },
+      "The Library (The Shilla Seoul)": {
+        "url": "https://www.shillahotels.com/en/theshilla/seoul/dining/loungeBar/theLibrary.do",
+        "sourceType": "operator's own site (The Shilla Seoul)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Lounge and bar with \"views of Namsan and the gentle presence of live music\"; reservation policy \"updated effective September 10, 2026\"."
+      },
+      "The Distillers Library (The Shilla Seoul)": {
+        "url": "https://www.shillahotels.com/en/theshilla/seoul/dining/loungeBar/theDistillersLibrary.do",
+        "sourceType": "operator's own site (The Shilla Seoul)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Premium whisky bar page with reservations line \"+82-2-2230-3388~9\"; footer cites \"2026 Forbes Travel Guide\"."
+      },
+      "Pastry Boutique (The Shilla Seoul)": {
+        "url": "https://www.shillahotels.com/en/theshilla/seoul/dining/bakery/pastryBoutique.do",
+        "sourceType": "operator's own site (The Shilla Seoul)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Cakes and pastries; links a \"Pastry Boutique Chuseok Gift Collection\" brochure and allergen information; footer cites \"2026 Forbes Travel Guide\"."
+      },
+      "1914 Lounge & Bar (Josun Palace)": {
+        "url": "https://jpg.josunhotel.com/dining/1914.do",
+        "sourceType": "operator's own site (Josun Hotels & Resorts)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published hours and rules: \"BAR 입장 및 주문은 18시부터 가능합니다\"; dress code \"CASUAL\". No dated 2026 content seen."
+      },
+      "Jungsik": {
+        "url": "https://www.jungsik.kr/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Live \"온라인 예약 / Online Reservation\" link plus phone +82 2 517 4654 and reservation@jungsik.kr. No dated 2026 content seen."
+      },
+      "Hadongkwan (Myeongdong)": {
+        "url": "https://www.hadongkwan.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Branch hours table for the Myeongdong main branch (7:00–16:00, closed Sundays) and gomtang described as the main dish. No dated 2026 content seen."
+      },
+      "Fritz Coffee (Dohwa)": {
+        "url": "https://www.fritz.co.kr/store/detail.html?product_no=2243&cate_no=125&display_group=1",
+        "sourceType": "operator's own site (Fritz Coffee Company)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Listed as the first branch on the current store page with published hours. No explicitly dated 2026 content."
+      },
+      "Fritz Coffee (Wonseo)": {
+        "url": "https://www.fritz.co.kr/store/detail.html?product_no=2242&cate_no=125&display_group=1",
+        "sourceType": "operator's own site (Fritz Coffee Company)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Listed on the current store page with published daily hours. No explicitly dated 2026 content."
+      }
+    }
+  },
   "Bangkok, Thailand": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-25",

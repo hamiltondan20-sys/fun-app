@@ -2376,4 +2376,108 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Seoul, South Korea: source review of 2026-10-25 (docs/content-research/seoul-2026-10-25.md).
+  {
+    const cityKey = "Seoul, South Korea";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Gyeongbokgung","Changdeokgung","National Museum of Korea","Leeum Museum of Art"],
+      bestFirstTimers: ["Gyeongbokgung","National Palace Museum of Korea","Deoksugung","Seoul Museum of Art (Seosomun)"],
+      bestRestaurants: ["La Yeon (The Shilla Seoul)","Jungsik","Continental (The Shilla Seoul)","Hadongkwan (Myeongdong)"],
+      bestBudget: ["Hadongkwan (Myeongdong)","Seoul Botanic Park","Starfield Library (Starfield COEX Mall)","Fritz Coffee (Wonseo)"],
+      bestLuxury: ["La Yeon (The Shilla Seoul)","Continental (The Shilla Seoul)","Jungsik","The Distillers Library (The Shilla Seoul)"],
+      bestCouples: ["The Library (The Shilla Seoul)","1914 Lounge & Bar (Josun Palace)","Deoksugung","Seoul Arts Center"],
+      bestKids: ["Seoul Children's Grand Park","SEA LIFE COEX Aquarium","Seoul Botanic Park","Starfield Library (Starfield COEX Mall)"],
+      bestSolo: ["MMCA Seoul","Seoul Museum of Craft Art","Fritz Coffee (Wonseo)","Starfield Library (Starfield COEX Mall)"],
+      bestUnique: ["Seodaemun Prison History Hall","Seoul Museum of Craft Art","Leeum Museum of Art","Changdeokgung"],
+      bestBreakfast: ["The Parkview (The Shilla Seoul)","Hadongkwan (Myeongdong)","Fritz Coffee (Dohwa)","Pastry Boutique (The Shilla Seoul)"],
+      bestLunch: ["Hadongkwan (Myeongdong)","La Yeon (The Shilla Seoul)","Continental (The Shilla Seoul)","The Parkview (The Shilla Seoul)"],
+      bestDinner: ["La Yeon (The Shilla Seoul)","Continental (The Shilla Seoul)","Jungsik","The Parkview (The Shilla Seoul)"],
+      bestCocktails: ["The Library (The Shilla Seoul)","1914 Lounge & Bar (Josun Palace)","The Distillers Library (The Shilla Seoul)"],
+      bestBakeries: ["Pastry Boutique (The Shilla Seoul)"],
+      bestCoffee: ["Fritz Coffee (Dohwa)","Fritz Coffee (Wonseo)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Gyeongbokgung": "Gyeongbokgung 161 Sajik-ro Jongno-gu Seoul",
+      "Changdeokgung": "Changdeokgung 99 Yulgok-ro Jongno-gu Seoul",
+      "National Museum of Korea": "National Museum of Korea 137 Seobinggo-ro Yongsan-gu Seoul",
+      "Leeum Museum of Art": "Leeum Museum of Art 60-16 Itaewon-ro 55-gil Yongsan-gu Seoul",
+      "National Palace Museum of Korea": "National Palace Museum of Korea 12 Hyoja-ro Jongno-gu Seoul",
+      "Deoksugung": "Deoksugung 99 Sejong-daero Jung-gu Seoul",
+      "Seoul Museum of Art (Seosomun)": "Seoul Museum of Art 61 Deoksugung-gil Jung-gu Seoul",
+      "La Yeon (The Shilla Seoul)": "La Yeon The Shilla Seoul 249 Dongho-ro Jung-gu Seoul",
+      "Jungsik": "Jungsik 11 Seolleung-ro 158-gil Gangnam-gu Seoul",
+      "Continental (The Shilla Seoul)": "Continental The Shilla Seoul 249 Dongho-ro Jung-gu Seoul",
+      "Hadongkwan (Myeongdong)": "Hadongkwan Myeongdong 1-ga 10-4 Jung-gu Seoul",
+      "Seoul Botanic Park": "Seoul Botanic Park 161 Magokdong-ro Gangseo-gu Seoul",
+      "Starfield Library (Starfield COEX Mall)": "Starfield Library COEX Mall 513 Yeongdong-daero Gangnam-gu Seoul",
+      "Fritz Coffee (Wonseo)": "Fritz Coffee Wonseo 83 Yulgok-ro Jongno-gu Seoul",
+      "The Distillers Library (The Shilla Seoul)": "The Distillers Library The Shilla Seoul 249 Dongho-ro Jung-gu Seoul",
+      "The Library (The Shilla Seoul)": "The Library The Shilla Seoul 249 Dongho-ro Jung-gu Seoul",
+      "1914 Lounge & Bar (Josun Palace)": "1914 Lounge & Bar Josun Palace 231 Teheran-ro Gangnam-gu Seoul",
+      "Seoul Arts Center": "Seoul Arts Center 2406 Nambusunhwan-ro Seocho-gu Seoul",
+      "Seoul Children's Grand Park": "Seoul Children's Grand Park 216 Neungdong-ro Gwangjin-gu Seoul",
+      "SEA LIFE COEX Aquarium": "SEA LIFE COEX Aquarium 513 Yeongdong-daero Gangnam-gu Seoul",
+      "MMCA Seoul": "MMCA Seoul 30 Samcheong-ro Jongno-gu Seoul",
+      "Seoul Museum of Craft Art": "Seoul Museum of Craft Art 4 Yulgok-ro 3-gil Jongno-gu Seoul",
+      "Seodaemun Prison History Hall": "Seodaemun Prison History Hall 251 Tongil-ro Seodaemun-gu Seoul",
+      "The Parkview (The Shilla Seoul)": "The Parkview The Shilla Seoul 249 Dongho-ro Jung-gu Seoul",
+      "Fritz Coffee (Dohwa)": "Fritz Coffee Dohwa 17 Saechang-ro 2-gil Mapo-gu Seoul",
+      "Pastry Boutique (The Shilla Seoul)": "Pastry Boutique The Shilla Seoul 249 Dongho-ro Jung-gu Seoul"
+    };
+    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (cityGuide) {
+      cityGuide.summary = "Joseon palaces, national and city museums, parks and an aquarium, with hotel dining rooms, a gomtang house, cocktail lounges, a hotel bakery and coffee bars checked against their own websites.";
+      cityGuide.highlights = ["Gyeongbokgung","Changdeokgung","National Museum of Korea","Leeum Museum of Art"];
+      cityGuide.tip = "Plan museum days around closures: Seoul Museum of Art closes every Monday, Seodaemun Prison History Hall closes Mondays and moves to winter hours of 09:30–17:00 from November, and the National Palace Museum of Korea closes on the last Monday of each month.";
+    }
+    data.destinationFacts[cityKey] = "Plan museum days around closures: Seoul Museum of Art closes every Monday, Seodaemun Prison History Hall closes Mondays and moves to winter hours of 09:30–17:00 from November, and the National Palace Museum of Korea closes on the last Monday of each month.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Joseon palaces, national and city museums, parks and an aquarium, with hotel dining rooms, a gomtang house, cocktail lounges, a hotel bakery and coffee bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays and month-end Mondays",
+        "copy": "Seoul Museum of Art (Seosomun) and Seodaemun Prison History Hall close every Monday, while the National Palace Museum of Korea closes on the last Monday of the month."
+      },
+      {
+        "label": "Late openings",
+        "value": "Wednesday and Saturday evenings",
+        "copy": "The National Museum of Korea and MMCA Seoul both stay open until 21:00 on Wednesdays and Saturdays. The National Palace Museum of Korea runs to 21:00 on Saturdays, and the Seoul Museum of Craft Art opens until 21:00 on Tuesdays, Wednesdays and Fridays to Sundays through 30 November."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Deposits and advance windows",
+        "copy": "La Yeon and Continental at The Shilla Seoul take a KRW 50,000 per person deposit, with Continental bookings opening on the first day of the month two months ahead. SEA LIFE COEX Aquarium sells tickets online and says online buyers can skip the queue."
+      },
+      {
+        "label": "Rules",
+        "value": "Dress codes and age limits",
+        "copy": "La Yeon and Continental recommend smart casual dress and limit the main dining hall to guests aged 6 and above. 1914 Lounge & Bar at Josun Palace has a casual dress code, turns away training pants, pajamas, bathrobes and slippers, and takes bar orders only from 18:00."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Check each palace's notice board before you go, because access to parts of Gyeongbokgung, Changdeokgung and Deoksugung is restricted this autumn.",
+      intro: [
+        "Seoul's royal palaces are the obvious place to start: Gyeongbokgung on Sajik-ro, Changdeokgung on Yulgok-ro and Deoksugung on Sejong-daero. Each palace posts notices of works and restricted areas on its own site, so check them before you go. This autumn, fire-suppression works limit access to Changdeokgung's government offices area, and outer wall works at Deoksugung run to 19 November. Gyeongbokgung is also running a royal culture academy at Heungbokjeon. Next to Gyeongbokgung, the National Palace Museum of Korea opens until 21:00 on Saturdays and closes on the last Monday of each month.",
+        "Several of the city's major museums stay open late, so you can spend a day at the palaces and see art in the evening. The National Museum of Korea opens until 21:00 on Wednesdays and Saturdays, and its special exhibition \"Tour of National Treasures\" runs until 29 November. MMCA Seoul, on Samcheong-ro, keeps the same late nights and is showing Do Ho Suh until 9 February 2027 and the Korea Artist Prize 2026 until 6 December. At Leeum Museum of Art in Hannam, Koo Jeong A's exhibition runs until 27 December.",
+        "For a quieter or more unusual day, you can visit Seodaemun Prison History Hall, which closes on Mondays and switches to 09:30–17:00 hours from November. The Seoul Museum of Craft Art near Anguk opens until 21:00 on most evenings through 30 November, with Equinox running until March 2027. If you are travelling with children, Seoul Children's Grand Park is open from 05:00 to 22:00 every day, and its autumn festival runs until 7 November, although its botanical garden is closed until the second half of 2027.",
+        "For dining, The Shilla Seoul puts several options under one roof. The Parkview serves breakfast from 06:00, La Yeon on the 23rd floor serves Korean cuisine at lunch and dinner, and Pastry Boutique is open from 07:00 to 22:00. Hadongkwan's Myeongdong branch serves gomtang from 07:00 to 16:00 and closes on Sundays. For coffee, you can visit Fritz Coffee in Dohwa or Wonseo. For drinks, try The Library at The Shilla or 1914 Lounge & Bar on the 24th floor of Josun Palace."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair Gyeongbokgung with the National Palace Museum of Korea next door, but check the palace notices for areas closed this autumn."
+        ],
+        [
+          "A slower morning",
+          "Start with breakfast at The Parkview from 06:00 or coffee at Fritz Coffee (Wonseo), which opens daily at 09:00."
+        ],
+        [
+          "Before booking",
+          "La Yeon and Continental at The Shilla Seoul take a KRW 50,000 per person deposit and admit only guests aged 6 and above to the main dining hall."
+        ]
+      ],
+      trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();
