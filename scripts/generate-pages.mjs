@@ -397,6 +397,10 @@ const pages = [];
 let publishedCitySlugs = new Set();
 // Filled once country pages are reviewed; city pages link only to published country guides.
 let publishedCountrySlugs = new Set();
+// Guides whose recommendation lists were source-reviewed (citySourceLedger).
+const reviewedSlugs = new Set(cities
+  .filter((city) => city.reviewStatus.startsWith("Detail recommendations source-reviewed"))
+  .map((city) => city.slug));
 
 function pageHead({ title, description, canonical, image = "", socialImage = "", schema = [], noindex = false }) {
   const previewImage = socialImage || image || DEFAULT_OG_IMAGE;
@@ -623,6 +627,8 @@ ${cluster.blocks.map((block) => `          <div class="hb-block">
   const related = city.countries
     .flatMap((country) => countries.find((item) => item.name === country)?.cities || [])
     .filter((item) => item.slug !== city.slug && (!publishedCitySlugs.size || publishedCitySlugs.has(item.slug)))
+    // Source-reviewed guides first, so they link to each other.
+    .sort((a, b) => Number(reviewedSlugs.has(b.slug)) - Number(reviewedSlugs.has(a.slug)))
     .slice(0, 6);
   // Internal link to the city's country guide, when that guide is published.
   const countryGuide = city.countries
