@@ -1,0 +1,606 @@
+{
+  "city": "Toronto, Canada",
+  "checkedOn": "2026-10-25",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "CN Tower",
+      "kind": "landmark",
+      "url": "https://www.cntower.ca/contact-us",
+      "sourceType": "operator's own site",
+      "address": "290 Bremner Blvd., Toronto, Ontario, M5V 3L9, Canada",
+      "operatingEvidence": "Homepage promotes \"Browse ticket options\", \"Book EdgeWalk\" and 360 Restaurant reservations, a 2026 CityPASS banner, and a Toronto Biennial of Art work on view \"until December 20, 2026\".",
+      "hours": "not published on pages read (hours on a separate page); notice that Main Observation Level hours are adjusted on October 27, November 3 and November 6",
+      "confidence": "high"
+    },
+    {
+      "name": "St. Lawrence Market",
+      "kind": "market",
+      "url": "https://www.stlawrencemarket.com/",
+      "sourceType": "operator's own site (City of Toronto linked)",
+      "address": "92-95 Front St East, Toronto, Ontario, M5E 1C3",
+      "operatingEvidence": "\"Coming Up at the Market\" lists \"November 1st 2026 Antiques at St. Lawrence Market\" and \"October 25th 2026 Sunday Variety Vintage Market\".",
+      "hours": "South Market: Tue-Fri 9am-7pm; Sat 7am-5pm; Sun 10am-5pm; Mon closed. Farmer's Market: Sat 5am-3pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Royal Ontario Museum",
+      "kind": "museum",
+      "url": "https://www.rom.on.ca/",
+      "sourceType": "operator's own site",
+      "address": "100 Queen's Park, Toronto, ON M5S 2C6",
+      "operatingEvidence": "Current exhibition \"Psychedelics\" runs until December 06, 2026; tickets sold online via \"Book tickets\"; \"3rd Tuesday Nights Free\" listed.",
+      "hours": "10:00-17:30 (week of Oct 21-25); 3rd Tuesday 10:00-20:30",
+      "confidence": "high"
+    },
+    {
+      "name": "Toronto Zoo",
+      "kind": "park",
+      "url": "https://www.torontozoo.com/tz/contact",
+      "sourceType": "operator's own site (City of Toronto logo in footer)",
+      "address": "2000 Meadowvale Road, Toronto, Ontario M1B 5K7",
+      "operatingEvidence": "Homepage lists Boo at the Zoo (Oct 24, 25, 31), Remembrance Day ceremony (Nov 11) and \"GreenStep Tourism Level 4 - 2026\"; tickets \"Buy Early & Save!\".",
+      "hours": "\"Daily: 9:30am - 4:30pm\", \"Last Admission 1 Hour Before Close\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Ripley's Aquarium of Canada",
+      "kind": "landmark",
+      "url": "https://www.ripleys.com/attractions/ripleys-aquarium-of-canada",
+      "sourceType": "operator's own site",
+      "address": "288 Bremner Boulevard, Toronto, Ontario M5V 3L9",
+      "operatingEvidence": "Page shows \"Today's Hours: 9:00 a.m. - 9:00 p.m.\" and \"Buy Tickets\"; the CN Tower site also sells a joint CN Tower and aquarium package.",
+      "hours": "\"Today's Hours: 9:00 a.m. - 9:00 p.m.\" (weekly hours not published)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Distillery Historic District",
+      "kind": "landmark",
+      "url": "https://www.thedistillerydistrict.com/",
+      "sourceType": "operator's own site",
+      "address": "55 Mill Street, Toronto ON, M5A 3C4",
+      "operatingEvidence": "\"The 2026 season kicks off on Thursday, November 12th, at 6 pm!\" for Winter Village; October 2026 events listed; \"Open 364 days a year!\"",
+      "hours": "Mon-Wed 10am-8pm; Thu-Sat 10am-9pm; Sun 11am-8pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Casa Loma",
+      "kind": "landmark",
+      "url": "https://casaloma.ca/",
+      "sourceType": "operator's own site",
+      "address": "1 Austin Terrace, Toronto, ON",
+      "operatingEvidence": "Notice that \"the Conservatory and Peacock Alley will be closed on October 6th, 2026\"; \"Date specific General Admission tickets\" sold online; Legends of Horror Halloween event.",
+      "hours": "\"CASA LOMA IS OPEN DAILY 9.30AM - 5PM\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Bata Shoe Museum",
+      "kind": "museum",
+      "url": "https://batashoemuseum.ca/",
+      "sourceType": "operator's own site",
+      "address": "327 Bloor St W, Toronto, Ontario M5S 1W7",
+      "operatingEvidence": "New exhibition \"Brilliant: The Art of Beaded Footwear Around the World\" opened October 22; late hours to 9pm every second Friday through the end of 2026; free admission every Sunday.",
+      "hours": "Mon-Sat 10am-5pm; Sun 12pm-5pm; closed December 25, 26 and January 1",
+      "confidence": "high"
+    },
+    {
+      "name": "Gardiner Museum",
+      "kind": "museum",
+      "url": "https://www.gardinermuseum.on.ca/visit/",
+      "sourceType": "operator's own site",
+      "address": "111 Queen's Park, Toronto, Ontario, M5S 2C7, Canada",
+      "operatingEvidence": "Homepage lists \"After the Island: Caribbean Canadian Ceramics\" and \"Magnus Hara: The Light of Day\" as on now; visit page publishes hours and free Wednesday evenings.",
+      "hours": "Mon, Tue, Thu, Fri 10am-6pm; Wed 10am-9pm (free after 4pm); Sat, Sun and holidays 10am-5pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Aga Khan Museum",
+      "kind": "museum",
+      "url": "https://agakhanmuseum.org/",
+      "sourceType": "operator's own site",
+      "address": "77 Wynford Drive, Toronto, Ontario, M3C 1K1",
+      "operatingEvidence": "\"Saks Afridi: SpaceMosque\" runs October 24, 2026 to March 7, 2027 (\"Now Open\"); Toronto Biennial installation July 23, 2026 to April 11, 2027.",
+      "hours": "Mon closed; Tue, Thu-Sun 10am-5:30pm; Wed 10am-8pm (BMO Free Wednesdays 4-8pm); open statutory holidays except December 25",
+      "confidence": "high"
+    },
+    {
+      "name": "High Park",
+      "kind": "park",
+      "url": "https://www.toronto.ca/explore-enjoy/parks-gardens-beaches/high-park/",
+      "sourceType": "official public operator (City of Toronto)",
+      "address": "Entrances include Bloor Street West and High Park Avenue, and Parkside Drive and High Park Boulevard; Grenadier Café at 200 Parkside Dr.",
+      "operatingEvidence": "City page modified October 6, 2026; Trackless Train runs \"daily, weather permitting\" 10:30 a.m. to dusk in spring, summer and fall; Animal Display closed from October 13 through Spring 2027.",
+      "hours": "not published for the park; Trackless Train 10:30 a.m. to dusk (seasonal)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Steam Whistle Brewing",
+      "kind": "bar",
+      "url": "https://steamwhistle.ca/",
+      "sourceType": "operator's own site",
+      "address": "255 Bremner Blvd., Toronto, Ontario",
+      "operatingEvidence": "Site offers \"Book a Tour\", \"Book a Table\" and group bookings; footer links a 2026-named report.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Alo",
+      "kind": "meal",
+      "url": "https://alorestaurant.com/",
+      "sourceType": "operator's own site",
+      "address": "163 Spadina Avenue, 3rd Floor, Toronto, ON M5V 2L6",
+      "operatingEvidence": "Site publishes current service days and a reservations page; images uploaded March 2026.",
+      "hours": "Tuesday to Saturday from 5pm (closing time not published)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Pai (18 Duncan)",
+      "kind": "meal",
+      "url": "https://www.paitoronto.com/",
+      "sourceType": "operator's own site",
+      "address": "18 Duncan Street, Toronto, Ontario M5H 3G8",
+      "operatingEvidence": "Downtown \"reservations open 30 days in advance\" and are not taken by phone; Thanksgiving (Mon. Oct. 12) closure notice; Square One \"Coming Fall 2026\".",
+      "hours": "Sun 11:45am-9:30pm; Mon 4-9:30pm; Tue-Thu 11:45am-9:30pm; Fri-Sat 11:45am-10pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Richmond Station",
+      "kind": "meal",
+      "url": "https://www.richmondstation.ca/",
+      "sourceType": "operator's own site",
+      "address": "1 Richmond St W, Toronto, ON M5H 3W4",
+      "operatingEvidence": "\"6-course rotating tasting menu, available for dinner every night\"; online reservations; \"Copyright Richmond Station 2026\"; parking advice due to nearby construction.",
+      "hours": "Lunch Mon-Fri 11:30am-2:30pm; Dinner Mon-Sun 4:30pm-10pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Canoe",
+      "kind": "meal",
+      "url": "https://www.canoerestaurant.com/",
+      "sourceType": "operator's own site (Oliver & Bonacini)",
+      "address": "66 Wellington St. W, TD Bank Tower, 54th Floor, Toronto, ON M5K 1H6",
+      "operatingEvidence": "\"Taste Canoe: Fall 2026\" tasting menu; reservations online up to 3 months ahead for up to 12; bar walk-ins welcome subject to availability.",
+      "hours": "Lunch Mon-Fri 11:30am-2pm; Dinner Mon-Fri 5pm-9:30pm; Bar Mon-Fri 11:30am-11:30pm; closed to the public Saturdays and Sundays",
+      "confidence": "high"
+    },
+    {
+      "name": "Maha's",
+      "kind": "meal",
+      "url": "https://www.mahasbrunch.com/",
+      "sourceType": "operator's own site",
+      "address": "226 Greenwood Avenue, Toronto, ON M4L 2R2",
+      "operatingEvidence": "Publishes current walk-in policy (\"a walk-in only restaurant and do not take reservations\") and takeout menu; no 2026-dated content (copyright 2025).",
+      "hours": "8:00am-4:30pm; \"Maha's Closed Wednesdays and National Holidays\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Lady Marmalade",
+      "kind": "meal",
+      "url": "https://www.ladymarmalade.ca/",
+      "sourceType": "operator's own site",
+      "address": "265 Broadview Ave, Toronto",
+      "operatingEvidence": "Site states \"Open 8:30 to 3:00 every day!\"; no dated content.",
+      "hours": "\"Open 8:30 to 3:00 every day!\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Simpl Things",
+      "kind": "bar",
+      "url": "https://www.simplthings.ca/",
+      "sourceType": "operator's own site",
+      "address": "269 Dunn Ave, Toronto, ON",
+      "operatingEvidence": "Page published \"Jul 10, 2026\"; online reservations up to 6 people, \"Walk-ins are always accepted!\"; \"$12 cocktail of the day everyday\".",
+      "hours": "Mon-Tue closed; Wed-Fri 12pm-12am; Sat-Sun 10am-12am",
+      "confidence": "high"
+    },
+    {
+      "name": "Bar Raval",
+      "kind": "bar",
+      "url": "https://www.thisisbarraval.com/",
+      "sourceType": "operator's own site",
+      "address": "505 College St, Toronto",
+      "operatingEvidence": "Site publishes daily hours and \"NO RESERVATIONS\" policy; no dated content.",
+      "hours": "1pm-1am, seven days a week",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bar Mordecai",
+      "kind": "bar",
+      "url": "https://www.barmordecai.com/",
+      "sourceType": "operator's own site",
+      "address": "1272 Dundas Street West, Toronto, ONT M6J 1X7",
+      "operatingEvidence": "Site publishes weekly hours and a \"RESERVE\" link; no dated content.",
+      "hours": "Wed 6pm-midnight; Thu 6pm-1am; Fri-Sat 6pm-2am; Sun 8pm-1am (Mon-Tue not listed)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Harbord Bakery",
+      "kind": "bakery",
+      "url": "https://www.harbordbakery.ca/",
+      "sourceType": "operator's own site",
+      "address": "115 Harbord St, Toronto, ON, Canada",
+      "operatingEvidence": "\"Pre-order cakes and baked goods online\" with morning or afternoon pickup slots; \"© 2026 Harbord Bakery & Calandria\".",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Forno Cultura (King)",
+      "kind": "bakery",
+      "url": "https://www.fornocultura.com/locations/",
+      "sourceType": "operator's own site",
+      "address": "609 King St W, Basement",
+      "operatingEvidence": "Locations page lists current branch hours and contacts; \"© 2026 FornoCultura\" on homepage.",
+      "hours": "Mon-Fri 7:30am-7pm; Sat-Sun 8am-7pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Sam James Coffee Bar (Harbord)",
+      "kind": "cafe",
+      "url": "https://samjamescoffeebar.com/",
+      "sourceType": "operator's own site",
+      "address": "297 Harbord St (listed as Little Italy)",
+      "operatingEvidence": "Site lists current location hours; footer \"© 2026, Sam James Coffee Bar\".",
+      "hours": "Mon-Fri 7am-4pm; weekends 8am-4pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "De Mello (Yonge & Castlefield)",
+      "kind": "cafe",
+      "url": "https://www.demellocoffee.com/locations/",
+      "sourceType": "operator's own site",
+      "address": "2489 Yonge Street, Toronto, ON, M4P 2H6, Canada",
+      "operatingEvidence": "Locations page lists current hours for each café; footer \"© 2026\".",
+      "hours": "Mon-Fri 7am-7pm; Sat-Sun 8am-7pm",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "CN Tower area",
+      "reason": "generic, not a place (replaced by CN Tower, confirmed)",
+      "url": ""
+    },
+    {
+      "name": "Toronto Islands access",
+      "reason": "generic, not a place; City of Toronto island and ferry pages read but give no street address for the park or Jack Layton Ferry Terminal",
+      "url": "https://www.toronto.ca/explore-enjoy/toronto-island-ferries/ferry-routes-schedules/"
+    },
+    {
+      "name": "Harbourfront walking",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Kensington Market grazing",
+      "reason": "generic, not a place (neighbourhood with no single operator site)",
+      "url": ""
+    },
+    {
+      "name": "High Park day",
+      "reason": "generic, not a place (replaced by High Park, confirmed)",
+      "url": ""
+    },
+    {
+      "name": "Chef tasting-menu night",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Luxury Yorkville stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private harbor charter",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Island ferry at golden hour",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Yorkville dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Distillery District evening",
+      "reason": "generic, not a place (Distillery Historic District confirmed separately)",
+      "url": ""
+    },
+    {
+      "name": "Island ferry day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee in Queen West",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Kensington lunch walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "One market and one waterfront stretch",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Toronto Islands bike loop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Graffiti Alley",
+      "reason": "generic, not a place with an operator website",
+      "url": ""
+    },
+    {
+      "name": "West Queen West design stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "St. Lawrence Market grazing",
+      "reason": "generic, not a place (St. Lawrence Market confirmed separately)",
+      "url": ""
+    },
+    {
+      "name": "Art Gallery of Ontario (from 'AGO or ROM visit')",
+      "reason": "site refused automated reading (HTTP 403); not evidence of closure",
+      "url": "https://ago.ca/"
+    },
+    {
+      "name": "Mildred's Temple Kitchen",
+      "reason": "fetch failed (connection refused); not evidence of closure",
+      "url": "https://www.templekitchen.com/"
+    },
+    {
+      "name": "Sisters & Co.",
+      "reason": "fetch failed (domain did not resolve); not evidence of closure",
+      "url": "https://sistersandco.ca/"
+    },
+    {
+      "name": "Civil Liberties",
+      "reason": "site read but shows only address (878 Bloor St West); no hours or current operating evidence",
+      "url": "https://www.civillibertiesbar.com/"
+    },
+    {
+      "name": "Blackbird Baking Co.",
+      "reason": "www host had a certificate error; bare domain read but publishes no street address or hours",
+      "url": "https://blackbirdbakingco.com/"
+    },
+    {
+      "name": "Roselle",
+      "reason": "fetch failed (domain did not resolve); not evidence of closure",
+      "url": "https://www.roselledesserts.com/"
+    },
+    {
+      "name": "Nord Lyon",
+      "reason": "fetch failed (SSL error); not bypassed, not evidence of closure",
+      "url": "https://www.nordlyon.com/"
+    },
+    {
+      "name": "Pilot Coffee",
+      "reason": "site refused automated reading (HTTP 429, repeated); not evidence of closure",
+      "url": "https://www.pilotcoffeeroasters.com/pages/cafes"
+    },
+    {
+      "name": "Hockey Hall of Fame",
+      "reason": "homepage read (Induction Weekend Nov. 7-9, 2026) but no street address or hours found on pages that loaded; visit pages returned 404",
+      "url": "https://www.hhof.com/"
+    },
+    {
+      "name": "Toronto Botanical Garden",
+      "reason": "homepage read (hours and 2026 events) but no street address published; visit page returned 404",
+      "url": "https://torontobotanicalgarden.ca/"
+    },
+    {
+      "name": "BarChef",
+      "reason": "site shows address (472 Queen Street West) only; no hours or current operating evidence",
+      "url": "https://barchef.com/"
+    },
+    {
+      "name": "Mother",
+      "reason": "fetch returned no readable content",
+      "url": "https://www.mothercocktailbar.com/"
+    },
+    {
+      "name": "Bar Pompette",
+      "reason": "fetch failed (domain did not resolve)",
+      "url": "https://www.barpompette.com/"
+    },
+    {
+      "name": "Dineen Coffee",
+      "reason": "homepage read but no address or hours published",
+      "url": "https://dineencoffee.com/"
+    },
+    {
+      "name": "Balzac's (Distillery)",
+      "reason": "site refused automated reading (HTTP 429)",
+      "url": "https://www.balzacs.com/pages/locations"
+    },
+    {
+      "name": "Bakerbots",
+      "reason": "fetch failed (domain did not resolve)",
+      "url": "https://www.bakerbots.ca/"
+    },
+    {
+      "name": "Fort York",
+      "reason": "fortyork.ca redirects to Friends of Fort York, a support group rather than the City operator; not used",
+      "url": "https://www.fortyork.ca/"
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "CN Tower",
+        "St. Lawrence Market",
+        "Royal Ontario Museum",
+        "Casa Loma"
+      ],
+      "bestFirstTimers": [
+        "CN Tower",
+        "Distillery Historic District",
+        "St. Lawrence Market",
+        "Ripley's Aquarium of Canada"
+      ],
+      "bestRestaurants": [
+        "Alo",
+        "Pai (18 Duncan)",
+        "Richmond Station",
+        "Canoe"
+      ],
+      "bestBudget": [
+        "High Park",
+        "St. Lawrence Market",
+        "Bata Shoe Museum",
+        "Aga Khan Museum"
+      ],
+      "bestLuxury": [
+        "Alo",
+        "Canoe",
+        "Richmond Station"
+      ],
+      "bestCouples": [
+        "Distillery Historic District",
+        "Casa Loma",
+        "Canoe",
+        "Bar Mordecai"
+      ],
+      "bestKids": [
+        "Toronto Zoo",
+        "Ripley's Aquarium of Canada",
+        "Royal Ontario Museum",
+        "High Park"
+      ],
+      "bestSolo": [
+        "Gardiner Museum",
+        "Bata Shoe Museum",
+        "Sam James Coffee Bar (Harbord)",
+        "Bar Raval"
+      ],
+      "bestUnique": [
+        "Bata Shoe Museum",
+        "Aga Khan Museum",
+        "Steam Whistle Brewing",
+        "Gardiner Museum"
+      ],
+      "bestBreakfast": [
+        "Maha's",
+        "Lady Marmalade",
+        "Simpl Things"
+      ],
+      "bestLunch": [
+        "Pai (18 Duncan)",
+        "Richmond Station",
+        "St. Lawrence Market",
+        "Forno Cultura (King)"
+      ],
+      "bestDinner": [
+        "Alo",
+        "Richmond Station",
+        "Pai (18 Duncan)",
+        "Canoe"
+      ],
+      "bestCocktails": [
+        "Bar Raval",
+        "Bar Mordecai",
+        "Simpl Things"
+      ],
+      "bestBakeries": [
+        "Harbord Bakery",
+        "Forno Cultura (King)"
+      ],
+      "bestCoffee": [
+        "Sam James Coffee Bar (Harbord)",
+        "De Mello (Yonge & Castlefield)"
+      ]
+    },
+    "queries": {
+      "CN Tower": "CN Tower 290 Bremner Blvd Toronto",
+      "St. Lawrence Market": "St. Lawrence Market 92 Front St East Toronto",
+      "Royal Ontario Museum": "Royal Ontario Museum 100 Queen's Park Toronto",
+      "Toronto Zoo": "Toronto Zoo 2000 Meadowvale Road Toronto",
+      "Ripley's Aquarium of Canada": "Ripley's Aquarium of Canada 288 Bremner Boulevard Toronto",
+      "Distillery Historic District": "Distillery Historic District 55 Mill Street Toronto",
+      "Casa Loma": "Casa Loma 1 Austin Terrace Toronto",
+      "Bata Shoe Museum": "Bata Shoe Museum 327 Bloor St W Toronto",
+      "Gardiner Museum": "Gardiner Museum 111 Queen's Park Toronto",
+      "Aga Khan Museum": "Aga Khan Museum 77 Wynford Drive Toronto",
+      "High Park": "High Park Bloor Street West and High Park Avenue Toronto",
+      "Steam Whistle Brewing": "Steam Whistle Brewing 255 Bremner Blvd Toronto",
+      "Alo": "Alo 163 Spadina Avenue Toronto",
+      "Pai (18 Duncan)": "Pai 18 Duncan Street Toronto",
+      "Richmond Station": "Richmond Station 1 Richmond St W Toronto",
+      "Canoe": "Canoe 66 Wellington St W Toronto",
+      "Maha's": "Maha's 226 Greenwood Avenue Toronto",
+      "Lady Marmalade": "Lady Marmalade 265 Broadview Ave Toronto",
+      "Simpl Things": "Simpl Things 269 Dunn Ave Toronto",
+      "Bar Raval": "Bar Raval 505 College St Toronto",
+      "Bar Mordecai": "Bar Mordecai 1272 Dundas Street West Toronto",
+      "Harbord Bakery": "Harbord Bakery 115 Harbord St Toronto",
+      "Forno Cultura (King)": "Forno Cultura 609 King St W Toronto",
+      "Sam James Coffee Bar (Harbord)": "Sam James Coffee Bar 297 Harbord St Toronto",
+      "De Mello (Yonge & Castlefield)": "De Mello 2489 Yonge Street Toronto"
+    },
+    "summary": "Toronto's towers, museums, markets and parks, with brunch spots, dinners, cocktail bars, bakeries and cafés checked against their own websites.",
+    "highlights": [
+      "CN Tower",
+      "Royal Ontario Museum",
+      "St. Lawrence Market",
+      "Casa Loma"
+    ],
+    "tip": "Plan around Monday closures: St. Lawrence Market's South Market and the Aga Khan Museum are closed Mondays, while the Gardiner Museum stays open until 9pm on Wednesdays.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mondays and weekends",
+        "copy": "St. Lawrence Market's South Market and the Aga Khan Museum close on Mondays, and Canoe is closed to the public on Saturdays and Sundays. Maha's is closed Wednesdays and national holidays."
+      },
+      {
+        "label": "Free entry",
+        "value": "Sundays and Wednesday evenings",
+        "copy": "The Bata Shoe Museum is free every Sunday, the Aga Khan Museum is free on Wednesdays from 4 to 8pm, and the Gardiner Museum is free after 4pm on Wednesdays."
+      },
+      {
+        "label": "Booking",
+        "value": "Book ahead for dinner",
+        "copy": "Pai's downtown reservations open 30 days in advance and aren't taken by phone. Canoe takes online reservations up to 3 months ahead for parties of up to 12."
+      },
+      {
+        "label": "Walk-ins",
+        "value": "No-reservation spots",
+        "copy": "Bar Raval states \"NO RESERVATIONS\" and Maha's is walk-in only. Simpl Things takes online bookings for up to 6 but says walk-ins are always accepted."
+      }
+    ],
+    "dek": "Pair a downtown landmark with a museum each day, and book dinners ahead while saving bars and brunch for walk-ins.",
+    "intro": [
+      "Toronto's core sights cluster near the waterfront. The CN Tower, at 290 Bremner Blvd., sells timed tickets online, including EdgeWalk and reservations at its 360 Restaurant, and it is hosting a Toronto Biennial of Art work until December 20, 2026. Ripley's Aquarium of Canada sits next door at 288 Bremner Boulevard, and Steam Whistle Brewing at 255 Bremner Blvd. takes tour bookings. East of downtown, St. Lawrence Market's South Market opens Tuesday to Sunday and closes Mondays, with the Saturday Farmer's Market starting at 5am.",
+      "For museums, the Royal Ontario Museum at 100 Queen's Park runs Psychedelics until December 6, 2026, and opens until 8:30pm on the third Tuesday of the month. Across the road, the Gardiner Museum stays open until 9pm on Wednesdays, with free entry after 4pm. The Bata Shoe Museum on Bloor Street West is free every Sunday and opened its beaded-footwear exhibition, Brilliant, on October 22. Further north, the Aga Khan Museum shows Saks Afridi: SpaceMosque until March 7, 2027, and closes on Mondays.",
+      "If you want a slower day, the Distillery Historic District at 55 Mill Street is open 364 days a year, and its Winter Village opens on November 12, 2026, with free entry Monday to Wednesday through December 13 and tickets on weekend evenings. Casa Loma opens daily from 9:30am to 5pm with date-specific tickets. High Park is a free outdoor option, but the City says its Animal Display is closed until Spring 2027. The Toronto Zoo opens daily from 9:30am to 4:30pm, with last admission an hour before closing.",
+      "For food, book dinner ahead. Pai's downtown reservations open 30 days in advance, Canoe on the 54th floor of the TD Bank Tower takes bookings up to three months ahead and is closed on weekends, and Alo serves from Tuesday to Saturday. For breakfast, Maha's on Greenwood Avenue is walk-in only and closed Wednesdays, and Lady Marmalade on Broadview opens daily from 8:30 to 3. In the evening, Bar Raval on College Street takes no reservations and opens daily from 1pm to 1am."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Start with the CN Tower and Ripley's Aquarium on Bremner Boulevard, then walk to St. Lawrence Market, remembering it's closed on Mondays."
+      ],
+      [
+        "A slower morning",
+        "Have a walk-in brunch at Maha's (closed Wednesdays) or Lady Marmalade, then visit the Gardiner or Bata Shoe Museum on Bloor and Queen's Park."
+      ],
+      [
+        "Before booking",
+        "Pai's downtown tables open 30 days ahead and Canoe's three months ahead, while Bar Raval and Maha's take no reservations."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several sites could not be read: the Art Gallery of Ontario (HTTP 403), Pilot Coffee and Balzac's (HTTP 429), Mildred's Temple Kitchen (connection refused), Sisters & Co., Roselle, Bar Pompette and Bakerbots (domain not found), Nord Lyon (SSL error), and Mother (no readable content). These failures are not evidence of closure. The Hockey Hall of Fame and Toronto Botanical Garden were left out because no street address loaded, and Toronto Island was left out because the City pages read gave no terminal address. Some confirmed places are only partly published: the CN Tower's weekly hours and the opening hours for Steam Whistle Brewing, Harbord Bakery and High Park were not shown, Ripley's showed only the current day's hours, Alo's closing time is not given, and several restaurants, bars and cafés have no 2026-dated content beyond a footer or published hours (medium confidence).",
+  "injectionLikeText": []
+}

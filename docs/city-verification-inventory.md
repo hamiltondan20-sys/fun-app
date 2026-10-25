@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 37.
-- Classifier-passed (published, not fully documented in that format): 155.
+- Source-verified (complete dated evidence format): 38.
+- Classifier-passed (published, not fully documented in that format): 154.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -466,7 +466,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Tofino, Canada | tofino | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Tokyo, Japan | tokyo | source-verified | source-checked | 21 | 42 | 14 | 14 | None |
 | Toledo, Spain | toledo | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Toronto, Canada | toronto | classifier-passed | not-reviewed | 0 | 26 | 15 | 12 | None |
+| Toronto, Canada | toronto | source-verified | source-checked | 25 | 50 | 15 | 15 | None |
 | Toulouse, France | toulouse | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Tromso, Norway | tromso | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Trujillo, Peru | trujillo | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |

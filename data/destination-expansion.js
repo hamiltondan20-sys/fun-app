@@ -3679,4 +3679,110 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 27 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Toronto, Canada: source review of 2026-10-25 (docs/content-research/toronto-2026-10-25.md).
+  {
+    const cityKey = "Toronto, Canada";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["CN Tower","St. Lawrence Market","Royal Ontario Museum","Casa Loma"],
+      bestFirstTimers: ["CN Tower","Distillery Historic District","St. Lawrence Market","Ripley's Aquarium of Canada"],
+      bestRestaurants: ["Alo","Pai (18 Duncan)","Richmond Station","Canoe"],
+      bestBudget: ["High Park","St. Lawrence Market","Bata Shoe Museum","Aga Khan Museum"],
+      bestLuxury: ["Alo","Canoe","Richmond Station"],
+      bestCouples: ["Distillery Historic District","Casa Loma","Canoe","Bar Mordecai"],
+      bestKids: ["Toronto Zoo","Ripley's Aquarium of Canada","Royal Ontario Museum","High Park"],
+      bestSolo: ["Gardiner Museum","Bata Shoe Museum","Sam James Coffee Bar (Harbord)","Bar Raval"],
+      bestUnique: ["Bata Shoe Museum","Aga Khan Museum","Steam Whistle Brewing","Gardiner Museum"],
+      bestBreakfast: ["Maha's","Lady Marmalade","Simpl Things"],
+      bestLunch: ["Pai (18 Duncan)","Richmond Station","St. Lawrence Market","Forno Cultura (King)"],
+      bestDinner: ["Alo","Richmond Station","Pai (18 Duncan)","Canoe"],
+      bestCocktails: ["Bar Raval","Bar Mordecai","Simpl Things"],
+      bestBakeries: ["Harbord Bakery","Forno Cultura (King)"],
+      bestCoffee: ["Sam James Coffee Bar (Harbord)","De Mello (Yonge & Castlefield)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "CN Tower": "CN Tower 290 Bremner Blvd Toronto",
+      "St. Lawrence Market": "St. Lawrence Market 92 Front St East Toronto",
+      "Royal Ontario Museum": "Royal Ontario Museum 100 Queen's Park Toronto",
+      "Casa Loma": "Casa Loma 1 Austin Terrace Toronto",
+      "Distillery Historic District": "Distillery Historic District 55 Mill Street Toronto",
+      "Ripley's Aquarium of Canada": "Ripley's Aquarium of Canada 288 Bremner Boulevard Toronto",
+      "Alo": "Alo 163 Spadina Avenue Toronto",
+      "Pai (18 Duncan)": "Pai 18 Duncan Street Toronto",
+      "Richmond Station": "Richmond Station 1 Richmond St W Toronto",
+      "Canoe": "Canoe 66 Wellington St W Toronto",
+      "High Park": "High Park Bloor Street West and High Park Avenue Toronto",
+      "Bata Shoe Museum": "Bata Shoe Museum 327 Bloor St W Toronto",
+      "Aga Khan Museum": "Aga Khan Museum 77 Wynford Drive Toronto",
+      "Bar Mordecai": "Bar Mordecai 1272 Dundas Street West Toronto",
+      "Toronto Zoo": "Toronto Zoo 2000 Meadowvale Road Toronto",
+      "Gardiner Museum": "Gardiner Museum 111 Queen's Park Toronto",
+      "Sam James Coffee Bar (Harbord)": "Sam James Coffee Bar 297 Harbord St Toronto",
+      "Bar Raval": "Bar Raval 505 College St Toronto",
+      "Steam Whistle Brewing": "Steam Whistle Brewing 255 Bremner Blvd Toronto",
+      "Maha's": "Maha's 226 Greenwood Avenue Toronto",
+      "Lady Marmalade": "Lady Marmalade 265 Broadview Ave Toronto",
+      "Simpl Things": "Simpl Things 269 Dunn Ave Toronto",
+      "Forno Cultura (King)": "Forno Cultura 609 King St W Toronto",
+      "Harbord Bakery": "Harbord Bakery 115 Harbord St Toronto",
+      "De Mello (Yonge & Castlefield)": "De Mello 2489 Yonge Street Toronto"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Toronto" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Toronto's towers, museums, markets and parks, with brunch spots, dinners, cocktail bars, bakeries and cafés checked against their own websites.";
+    cityGuide.highlights = ["CN Tower","Royal Ontario Museum","St. Lawrence Market","Casa Loma"];
+    cityGuide.tip = "Plan around Monday closures: St. Lawrence Market's South Market and the Aga Khan Museum are closed Mondays, while the Gardiner Museum stays open until 9pm on Wednesdays.";
+    data.destinationFacts[cityKey] = "Plan around Monday closures: St. Lawrence Market's South Market and the Aga Khan Museum are closed Mondays, while the Gardiner Museum stays open until 9pm on Wednesdays.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Toronto's towers, museums, markets and parks, with brunch spots, dinners, cocktail bars, bakeries and cafés checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays and weekends",
+        "copy": "St. Lawrence Market's South Market and the Aga Khan Museum close on Mondays, and Canoe is closed to the public on Saturdays and Sundays. Maha's is closed Wednesdays and national holidays."
+      },
+      {
+        "label": "Free entry",
+        "value": "Sundays and Wednesday evenings",
+        "copy": "The Bata Shoe Museum is free every Sunday, the Aga Khan Museum is free on Wednesdays from 4 to 8pm, and the Gardiner Museum is free after 4pm on Wednesdays."
+      },
+      {
+        "label": "Booking",
+        "value": "Book ahead for dinner",
+        "copy": "Pai's downtown reservations open 30 days in advance and aren't taken by phone. Canoe takes online reservations up to 3 months ahead for parties of up to 12."
+      },
+      {
+        "label": "Walk-ins",
+        "value": "No-reservation spots",
+        "copy": "Bar Raval states \"NO RESERVATIONS\" and Maha's is walk-in only. Simpl Things takes online bookings for up to 6 but says walk-ins are always accepted."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Pair a downtown landmark with a museum each day, and book dinners ahead while saving bars and brunch for walk-ins.",
+      intro: [
+        "Toronto's core sights cluster near the waterfront. The CN Tower, at 290 Bremner Blvd., sells timed tickets online, including EdgeWalk and reservations at its 360 Restaurant, and it is hosting a Toronto Biennial of Art work until December 20, 2026. Ripley's Aquarium of Canada sits next door at 288 Bremner Boulevard, and Steam Whistle Brewing at 255 Bremner Blvd. takes tour bookings. East of downtown, St. Lawrence Market's South Market opens Tuesday to Sunday and closes Mondays, with the Saturday Farmer's Market starting at 5am.",
+        "For museums, the Royal Ontario Museum at 100 Queen's Park runs Psychedelics until December 6, 2026, and opens until 8:30pm on the third Tuesday of the month. Across the road, the Gardiner Museum stays open until 9pm on Wednesdays, with free entry after 4pm. The Bata Shoe Museum on Bloor Street West is free every Sunday and opened its beaded-footwear exhibition, Brilliant, on October 22. Further north, the Aga Khan Museum shows Saks Afridi: SpaceMosque until March 7, 2027, and closes on Mondays.",
+        "If you want a slower day, the Distillery Historic District at 55 Mill Street is open 364 days a year, and its Winter Village opens on November 12, 2026, with free entry Monday to Wednesday through December 13 and tickets on weekend evenings. Casa Loma opens daily from 9:30am to 5pm with date-specific tickets. High Park is a free outdoor option, but the City says its Animal Display is closed until Spring 2027. The Toronto Zoo opens daily from 9:30am to 4:30pm, with last admission an hour before closing.",
+        "For food, book dinner ahead. Pai's downtown reservations open 30 days in advance, Canoe on the 54th floor of the TD Bank Tower takes bookings up to three months ahead and is closed on weekends, and Alo serves from Tuesday to Saturday. For breakfast, Maha's on Greenwood Avenue is walk-in only and closed Wednesdays, and Lady Marmalade on Broadview opens daily from 8:30 to 3. In the evening, Bar Raval on College Street takes no reservations and opens daily from 1pm to 1am."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Start with the CN Tower and Ripley's Aquarium on Bremner Boulevard, then walk to St. Lawrence Market, remembering it's closed on Mondays."
+        ],
+        [
+          "A slower morning",
+          "Have a walk-in brunch at Maha's (closed Wednesdays) or Lady Marmalade, then visit the Gardiner or Bata Shoe Museum on Bloor and Queen's Park."
+        ],
+        [
+          "Before booking",
+          "Pai's downtown tables open 30 days ahead and Canoe's three months ahead, while Bar Raval and Maha's take no reservations."
+        ]
+      ],
+      trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

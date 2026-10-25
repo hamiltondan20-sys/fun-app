@@ -5,6 +5,370 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Toronto, Canada": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-25",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several sites could not be read: the Art Gallery of Ontario (HTTP 403), Pilot Coffee and Balzac's (HTTP 429), Mildred's Temple Kitchen (connection refused), Sisters & Co., Roselle, Bar Pompette and Bakerbots (domain not found), Nord Lyon (SSL error), and Mother (no readable content). These failures are not evidence of closure. The Hockey Hall of Fame and Toronto Botanical Garden were left out because no street address loaded, and Toronto Island was left out because the City pages read gave no terminal address. Some confirmed places are only partly published: the CN Tower's weekly hours and the opening hours for Steam Whistle Brewing, Harbord Bakery and High Park were not shown, Ripley's showed only the current day's hours, Alo's closing time is not given, and several restaurants, bars and cafés have no 2026-dated content beyond a footer or published hours (medium confidence).",
+    "sourceUrls": [
+      "docs/content-research/toronto-2026-10-25.md",
+      "docs/content-research/toronto-2026-10-25.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "CN Tower area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (replaced by CN Tower, confirmed)"
+      },
+      {
+        "name": "Toronto Islands access",
+        "url": "https://www.toronto.ca/explore-enjoy/toronto-island-ferries/ferry-routes-schedules/",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place; City of Toronto island and ferry pages read but give no street address for the park or Jack Layton Ferry Terminal"
+      },
+      {
+        "name": "Harbourfront walking",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Kensington Market grazing",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (neighbourhood with no single operator site)"
+      },
+      {
+        "name": "High Park day",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (replaced by High Park, confirmed)"
+      },
+      {
+        "name": "Chef tasting-menu night",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Luxury Yorkville stay",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private harbor charter",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Island ferry at golden hour",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Yorkville dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Distillery District evening",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (Distillery Historic District confirmed separately)"
+      },
+      {
+        "name": "Island ferry day",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee in Queen West",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Kensington lunch walk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "One market and one waterfront stretch",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Toronto Islands bike loop",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Graffiti Alley",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place with an operator website"
+      },
+      {
+        "name": "West Queen West design stop",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "St. Lawrence Market grazing",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (St. Lawrence Market confirmed separately)"
+      },
+      {
+        "name": "Art Gallery of Ontario (from 'AGO or ROM visit')",
+        "url": "https://ago.ca/",
+        "checkedOn": "2026-10-25",
+        "reason": "site refused automated reading (HTTP 403); not evidence of closure"
+      },
+      {
+        "name": "Mildred's Temple Kitchen",
+        "url": "https://www.templekitchen.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "fetch failed (connection refused); not evidence of closure"
+      },
+      {
+        "name": "Sisters & Co.",
+        "url": "https://sistersandco.ca/",
+        "checkedOn": "2026-10-25",
+        "reason": "fetch failed (domain did not resolve); not evidence of closure"
+      },
+      {
+        "name": "Civil Liberties",
+        "url": "https://www.civillibertiesbar.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "site read but shows only address (878 Bloor St West); no hours or current operating evidence"
+      },
+      {
+        "name": "Blackbird Baking Co.",
+        "url": "https://blackbirdbakingco.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "www host had a certificate error; bare domain read but publishes no street address or hours"
+      },
+      {
+        "name": "Roselle",
+        "url": "https://www.roselledesserts.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "fetch failed (domain did not resolve); not evidence of closure"
+      },
+      {
+        "name": "Nord Lyon",
+        "url": "https://www.nordlyon.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "fetch failed (SSL error); not bypassed, not evidence of closure"
+      },
+      {
+        "name": "Pilot Coffee",
+        "url": "https://www.pilotcoffeeroasters.com/pages/cafes",
+        "checkedOn": "2026-10-25",
+        "reason": "site refused automated reading (HTTP 429, repeated); not evidence of closure"
+      },
+      {
+        "name": "Hockey Hall of Fame",
+        "url": "https://www.hhof.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "homepage read (Induction Weekend Nov. 7-9, 2026) but no street address or hours found on pages that loaded; visit pages returned 404"
+      },
+      {
+        "name": "Toronto Botanical Garden",
+        "url": "https://torontobotanicalgarden.ca/",
+        "checkedOn": "2026-10-25",
+        "reason": "homepage read (hours and 2026 events) but no street address published; visit page returned 404"
+      },
+      {
+        "name": "BarChef",
+        "url": "https://barchef.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "site shows address (472 Queen Street West) only; no hours or current operating evidence"
+      },
+      {
+        "name": "Mother",
+        "url": "https://www.mothercocktailbar.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "fetch returned no readable content"
+      },
+      {
+        "name": "Bar Pompette",
+        "url": "https://www.barpompette.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "fetch failed (domain did not resolve)"
+      },
+      {
+        "name": "Dineen Coffee",
+        "url": "https://dineencoffee.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "homepage read but no address or hours published"
+      },
+      {
+        "name": "Balzac's (Distillery)",
+        "url": "https://www.balzacs.com/pages/locations",
+        "checkedOn": "2026-10-25",
+        "reason": "site refused automated reading (HTTP 429)"
+      },
+      {
+        "name": "Bakerbots",
+        "url": "https://www.bakerbots.ca/",
+        "checkedOn": "2026-10-25",
+        "reason": "fetch failed (domain did not resolve)"
+      },
+      {
+        "name": "Fort York",
+        "url": "https://www.fortyork.ca/",
+        "checkedOn": "2026-10-25",
+        "reason": "fortyork.ca redirects to Friends of Fort York, a support group rather than the City operator; not used"
+      }
+    ],
+    "placeSources": {
+      "CN Tower": {
+        "url": "https://www.cntower.ca/contact-us",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Homepage promotes \"Browse ticket options\", \"Book EdgeWalk\" and 360 Restaurant reservations, a 2026 CityPASS banner, and a Toronto Biennial of Art work on view \"until December 20, 2026\"."
+      },
+      "St. Lawrence Market": {
+        "url": "https://www.stlawrencemarket.com/",
+        "sourceType": "operator's own site (City of Toronto linked)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Coming Up at the Market\" lists \"November 1st 2026 Antiques at St. Lawrence Market\" and \"October 25th 2026 Sunday Variety Vintage Market\"."
+      },
+      "Royal Ontario Museum": {
+        "url": "https://www.rom.on.ca/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibition \"Psychedelics\" runs until December 06, 2026; tickets sold online via \"Book tickets\"; \"3rd Tuesday Nights Free\" listed."
+      },
+      "Toronto Zoo": {
+        "url": "https://www.torontozoo.com/tz/contact",
+        "sourceType": "operator's own site (City of Toronto logo in footer)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Homepage lists Boo at the Zoo (Oct 24, 25, 31), Remembrance Day ceremony (Nov 11) and \"GreenStep Tourism Level 4 - 2026\"; tickets \"Buy Early & Save!\"."
+      },
+      "Ripley's Aquarium of Canada": {
+        "url": "https://www.ripleys.com/attractions/ripleys-aquarium-of-canada",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Page shows \"Today's Hours: 9:00 a.m. - 9:00 p.m.\" and \"Buy Tickets\"; the CN Tower site also sells a joint CN Tower and aquarium package."
+      },
+      "Distillery Historic District": {
+        "url": "https://www.thedistillerydistrict.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"The 2026 season kicks off on Thursday, November 12th, at 6 pm!\" for Winter Village; October 2026 events listed; \"Open 364 days a year!\""
+      },
+      "Casa Loma": {
+        "url": "https://casaloma.ca/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Notice that \"the Conservatory and Peacock Alley will be closed on October 6th, 2026\"; \"Date specific General Admission tickets\" sold online; Legends of Horror Halloween event."
+      },
+      "Bata Shoe Museum": {
+        "url": "https://batashoemuseum.ca/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "New exhibition \"Brilliant: The Art of Beaded Footwear Around the World\" opened October 22; late hours to 9pm every second Friday through the end of 2026; free admission every Sunday."
+      },
+      "Gardiner Museum": {
+        "url": "https://www.gardinermuseum.on.ca/visit/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Homepage lists \"After the Island: Caribbean Canadian Ceramics\" and \"Magnus Hara: The Light of Day\" as on now; visit page publishes hours and free Wednesday evenings."
+      },
+      "Aga Khan Museum": {
+        "url": "https://agakhanmuseum.org/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Saks Afridi: SpaceMosque\" runs October 24, 2026 to March 7, 2027 (\"Now Open\"); Toronto Biennial installation July 23, 2026 to April 11, 2027."
+      },
+      "High Park": {
+        "url": "https://www.toronto.ca/explore-enjoy/parks-gardens-beaches/high-park/",
+        "sourceType": "official public operator (City of Toronto)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "City page modified October 6, 2026; Trackless Train runs \"daily, weather permitting\" 10:30 a.m. to dusk in spring, summer and fall; Animal Display closed from October 13 through Spring 2027."
+      },
+      "Steam Whistle Brewing": {
+        "url": "https://steamwhistle.ca/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Site offers \"Book a Tour\", \"Book a Table\" and group bookings; footer links a 2026-named report."
+      },
+      "Alo": {
+        "url": "https://alorestaurant.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Site publishes current service days and a reservations page; images uploaded March 2026."
+      },
+      "Pai (18 Duncan)": {
+        "url": "https://www.paitoronto.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Downtown \"reservations open 30 days in advance\" and are not taken by phone; Thanksgiving (Mon. Oct. 12) closure notice; Square One \"Coming Fall 2026\"."
+      },
+      "Richmond Station": {
+        "url": "https://www.richmondstation.ca/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"6-course rotating tasting menu, available for dinner every night\"; online reservations; \"Copyright Richmond Station 2026\"; parking advice due to nearby construction."
+      },
+      "Canoe": {
+        "url": "https://www.canoerestaurant.com/",
+        "sourceType": "operator's own site (Oliver & Bonacini)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Taste Canoe: Fall 2026\" tasting menu; reservations online up to 3 months ahead for up to 12; bar walk-ins welcome subject to availability."
+      },
+      "Maha's": {
+        "url": "https://www.mahasbrunch.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Publishes current walk-in policy (\"a walk-in only restaurant and do not take reservations\") and takeout menu; no 2026-dated content (copyright 2025)."
+      },
+      "Lady Marmalade": {
+        "url": "https://www.ladymarmalade.ca/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Site states \"Open 8:30 to 3:00 every day!\"; no dated content."
+      },
+      "Simpl Things": {
+        "url": "https://www.simplthings.ca/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Page published \"Jul 10, 2026\"; online reservations up to 6 people, \"Walk-ins are always accepted!\"; \"$12 cocktail of the day everyday\"."
+      },
+      "Bar Raval": {
+        "url": "https://www.thisisbarraval.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Site publishes daily hours and \"NO RESERVATIONS\" policy; no dated content."
+      },
+      "Bar Mordecai": {
+        "url": "https://www.barmordecai.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Site publishes weekly hours and a \"RESERVE\" link; no dated content."
+      },
+      "Harbord Bakery": {
+        "url": "https://www.harbordbakery.ca/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Pre-order cakes and baked goods online\" with morning or afternoon pickup slots; \"© 2026 Harbord Bakery & Calandria\"."
+      },
+      "Forno Cultura (King)": {
+        "url": "https://www.fornocultura.com/locations/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Locations page lists current branch hours and contacts; \"© 2026 FornoCultura\" on homepage."
+      },
+      "Sam James Coffee Bar (Harbord)": {
+        "url": "https://samjamescoffeebar.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Site lists current location hours; footer \"© 2026, Sam James Coffee Bar\"."
+      },
+      "De Mello (Yonge & Castlefield)": {
+        "url": "https://www.demellocoffee.com/locations/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Locations page lists current hours for each café; footer \"© 2026\"."
+      }
+    }
+  },
   "Cape Town, South Africa": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-25",
