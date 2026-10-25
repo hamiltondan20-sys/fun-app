@@ -1,0 +1,550 @@
+{
+  "city": "Marrakech, Morocco",
+  "checkedOn": "2026-10-25",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "MACAAL",
+      "kind": "museum",
+      "url": "https://www.macaal.org/",
+      "sourceType": "operator's own site",
+      "address": "Al Maaden Sidi Youssef Ben Ali 40000 Marrakech",
+      "operatingEvidence": "Season banner 'New Art Season 2026'; Daoud Aoulad-Syad solo show 'Le temps d'un battement de cil' runs 18.09.2026 to 29.11.2026; 'Statues Also Breathe' and Yassine Balbzioui's 'Crazy Lines' run 08.02.2026 to 08.01.2027.",
+      "hours": "not published on the page read",
+      "confidence": "high"
+    },
+    {
+      "name": "Maison de la Photographie",
+      "kind": "museum",
+      "url": "https://www.maisondelaphotographie.ma/",
+      "sourceType": "operator's own site",
+      "address": "46 rue Ahl Fes, Bin Lafnadek, Marrakech 40030",
+      "operatingEvidence": "Current exhibition 'Maroc, Regards d'hier et d'aujourd'hui'; pages dated through 27 June 2026; tickets on site only (80 MAD adult, free under 15), ticket also covers the Musée de la Musique de Marrakech.",
+      "hours": "'Ouvert tous les jours de 9h30 à 19h00'",
+      "confidence": "high"
+    },
+    {
+      "name": "Le Jardin Secret",
+      "kind": "park",
+      "url": "https://www.lejardinsecretmarrakech.com/",
+      "sourceType": "operator's own site",
+      "address": "Rue Mouassine 121, Marrakech medina",
+      "operatingEvidence": "Publishes seasonal hours and ticket prices (100 dirhams full, free under 12; tower 40 dirhams, not open to children under 6); last entry '30 minutes avant la fermeture'.",
+      "hours": "Open daily: Jan-Mar 9:30-18:30; Apr-Sep 9:30-19:30; Oct 9:30-18:00; Nov-Dec 9:30-17:30",
+      "confidence": "medium"
+    },
+    {
+      "name": "Musée Yves Saint Laurent Marrakech",
+      "kind": "museum",
+      "url": "https://www.museeyslmarrakech.com/en/contact/",
+      "sourceType": "operator's own site",
+      "address": "Rue Yves Saint Laurent, 40090 Marrakech",
+      "operatingEvidence": "Hours notice 'open every day of the week, except Wednesdays'; tickets sold only through tickets.jardinmajorelle.com, 'THE ONLY OFFICIAL WEBSITE'. No 2026-dated exhibition found.",
+      "hours": "Daily except Wednesday, 10:00-18:00, last entry 17:30",
+      "confidence": "medium"
+    },
+    {
+      "name": "Musée des Confluences Dar El Bacha",
+      "kind": "museum",
+      "url": "https://fnm.ma/museums/26",
+      "sourceType": "official public operator (Fondation Nationale des Musées)",
+      "address": "65,69 Riad Laârous, route Dar El Bacha, Marrakech",
+      "operatingEvidence": "FNM announces 'Enki Bilal : l'Exposition' at the museum 'À partir du 15 octobre 2026' (no end date stated); ticket prices published (60 DH foreign visitors).",
+      "hours": "Tuesday to Sunday 10:00-18:00; closed Mondays",
+      "confidence": "high"
+    },
+    {
+      "name": "Dar Si Saïd (Musée national du tissage et du tapis)",
+      "kind": "museum",
+      "url": "https://fnm.ma/museums/30",
+      "sourceType": "official public operator (Fondation Nationale des Musées)",
+      "address": "Derb El Bahia, Riad Zitoun Jdid, Marrakech",
+      "operatingEvidence": "Current FNM page lists hours 'Du mardi au dimanche : 10h - 18h', 'Fermé le lundi' and prices (30 DH adults).",
+      "hours": "Tuesday to Sunday 10:00-18:00; closed Mondays",
+      "confidence": "medium"
+    },
+    {
+      "name": "Musée du patrimoine immatériel Jamaâ el-Fna",
+      "kind": "museum",
+      "url": "https://fnm.ma/museums/40",
+      "sourceType": "official public operator (Fondation Nationale des Musées)",
+      "address": "Rue Ibn Marine, Place Jamaâ el-Fna, Marrakech",
+      "operatingEvidence": "FNM page lists hours, prices (40 DH foreigners) and an exhibition 'dédiée à la place Jamaâ el-Fna et à ses acteurs'.",
+      "hours": "Tuesday to Sunday 10:00-18:00; closed Mondays",
+      "confidence": "medium"
+    },
+    {
+      "name": "Anima Garden",
+      "kind": "park",
+      "url": "https://www.anima-garden.com/en/visit",
+      "sourceType": "operator's own site",
+      "address": "Douar Sbiti Route d'Ourika, Marrakesh",
+      "operatingEvidence": "'Open all year 9 am – 6 pm'; tickets MAD 140 adults, free 0-11; 'Free shuttle bus from Marrakech to ANIMA'; footer '©2016-2026'.",
+      "hours": "Daily 09:00-18:00; closed during the Aid holidays",
+      "confidence": "high"
+    },
+    {
+      "name": "Marrakesh-Timbuktu (Bert Flint collection)",
+      "kind": "museum",
+      "url": "https://www.marrakesh-timbuktu.com/visit-tickets",
+      "sourceType": "operator's own site",
+      "address": "Hay quenaria derb boutouil n°33b Marrakesh",
+      "operatingEvidence": "Visit page: 'Open every day from 10.00 to 19.00', last entry 30 minutes before closing; full price 100 Dirhams, children up to 12 free.",
+      "hours": "Daily 10:00-19:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "La Mamounia",
+      "kind": "landmark",
+      "url": "https://www.mamounia.com/",
+      "sourceType": "operator's own site",
+      "address": "Avenue Bab Jdid, 40040 Marrakech-Medina",
+      "operatingEvidence": "Table reservation forms for restaurants (Le Marocain, L'Italien par Simone Zanoni) and bars (Le Churchill, Le Bar Majorelle); a 'Ftour' link to a 2026 Ramadan page.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Royal Mansour Marrakech",
+      "kind": "meal",
+      "url": "https://www.royalmansour.com/",
+      "sourceType": "operator's own site",
+      "address": "Rue Abou El Abbas Sebti, 40 000, Marrakech",
+      "operatingEvidence": "Site names La Grande Table Marocaine and Sesamo among its Marrakech tables and carries a 2026 article on the 50 Best Hotels ranking.",
+      "hours": "not published for the restaurants",
+      "confidence": "medium"
+    },
+    {
+      "name": "Al Fassia Aguedal",
+      "kind": "meal",
+      "url": "https://www.alfassia.com/",
+      "sourceType": "operator's own site",
+      "address": "9 bis, Zone Touristique de l'Agdal, Km 2 route de l'Ourika, Marrakech 40000",
+      "operatingEvidence": "Site says Aguedal 'invites you every evening for a dinner' and offers online booking ('BOOK NOW'). No 2026-dated content.",
+      "hours": "not published (dinner every evening)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Le Grand Café de la Poste",
+      "kind": "meal",
+      "url": "https://www.grandcafedelaposte.restaurant/contactez-nous/",
+      "sourceType": "operator's own site",
+      "address": "à l'angle du boulevard El Mansour Eddahbi et de l'avenue Imam Malik, Guéliz",
+      "operatingEvidence": "Table booking with slots for 'Petit déjeuner' (09h00-11h30), 'Déjeuner' and 'Dîner' (19h00-23h30); published breakfast menu; footer 'Copyright © 2026'.",
+      "hours": "not published as weekly hours; booking slots 09:00-23:30",
+      "confidence": "medium"
+    },
+    {
+      "name": "Terrasse des Épices",
+      "kind": "meal",
+      "url": "https://www.terrassedesepices.com/",
+      "sourceType": "operator's own site",
+      "address": "15, souk cherifia, sidi abdelaziz, Marrakech Médina",
+      "operatingEvidence": "Online table booking with lunch and dinner seatings; 'last orders 45 minutes before closing'; seasonal cocktail list.",
+      "hours": "'ouvert tous les jours de 12h00 à 17h00 et de 18h30 à 00h30'",
+      "confidence": "medium"
+    },
+    {
+      "name": "+61",
+      "kind": "meal",
+      "url": "https://www.plus61.com/",
+      "sourceType": "operator's own site",
+      "address": "96 Rue Mohammed el Beqal, Gueliz, Marrakech",
+      "operatingEvidence": "Published weekly hours and 'Book now' reservation link.",
+      "hours": "Monday-Saturday 12:00-16:00; 'Sun Closed'",
+      "confidence": "medium"
+    },
+    {
+      "name": "El Fenn Rooftop",
+      "kind": "bar",
+      "url": "https://el-fenn.com/rooftop-bar/",
+      "sourceType": "operator's own site",
+      "address": "Derb Moulay Abdellah Ben Hezzian, Bab El Ksour, Medina, Marrakech",
+      "operatingEvidence": "Roof terrace open to non-residents, no reservation for drinks but 'limited capacity'; cocktail list PDF dated 2026/08; homepage has '2026' retreats and hotlist.",
+      "hours": "12:00-23:00; 'Last admittance and last orders at 22:30'",
+      "confidence": "high"
+    },
+    {
+      "name": "La Sultana Marrakech",
+      "kind": "bar",
+      "url": "https://www.lasultanahotels.com/Marrakech/cocktail_sur_les_toits_de_la_medina",
+      "sourceType": "operator's own site",
+      "address": "403 Rue de la Kasbah, 40 000 Marrakech",
+      "operatingEvidence": "Bookable nightly sunset mixology workshop on the rooftop at 6 p.m., 30 minutes, up to 4 participants; cocktails 'À partir de 350 MAD'.",
+      "hours": "not published for the bar; workshop nightly 18:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Kabana",
+      "kind": "bar",
+      "url": "https://www.kabana-marrakech.com/",
+      "sourceType": "operator's own site",
+      "address": "Kissariat Ben Khaled R'mila, 1 Rue Fatima Zahra, Marrakech 40000",
+      "operatingEvidence": "'We're open every day from 11:00 AM to 2:00 AM'; 'Reservations required'; brunch 11am-5pm; nightly DJ sets.",
+      "hours": "Daily 11:00-02:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Comptoir Darna",
+      "kind": "meal",
+      "url": "https://www.comptoirmarrakech.com/",
+      "sourceType": "operator's own site",
+      "address": "Avenue Echouhada, Hivernage, 40000 Marrakech",
+      "operatingEvidence": "Restaurant 'Tous les soirs : 19h00 -01h00'; SevenRooms booking; dress code 'smart casual'; '© 2026'.",
+      "hours": "Restaurant nightly 19:00-01:00; Patio & Club 19:00-03:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Le Foundouk",
+      "kind": "meal",
+      "url": "https://www.foundouk.com/",
+      "sourceType": "operator's own site",
+      "address": "55, Souk Hal Fes - Kaat Bennahid, Marrakech Medina",
+      "operatingEvidence": "Online reservations; 'Ouvert tous les jours de 19h à minuit, fermé le mercredi.'",
+      "hours": "19:00-midnight, closed Wednesday",
+      "confidence": "medium"
+    },
+    {
+      "name": "Naranj",
+      "kind": "meal",
+      "url": "https://www.naranj.ma/",
+      "sourceType": "operator's own site",
+      "address": "84 Rue Riad Zitoun el Jdid Marrakech 40000",
+      "operatingEvidence": "'We're open every day from 12:30 PM to 10:30 PM'; 'Book Now' link and PDF menu.",
+      "hours": "Daily 12:30-22:30",
+      "confidence": "medium"
+    },
+    {
+      "name": "Le Trou au Mur",
+      "kind": "meal",
+      "url": "https://www.letrouaumur.com/",
+      "sourceType": "operator's own site",
+      "address": "39 Derb el Farnatchi, Rue Souk el Fassis, Qua'at Ben Ahid, Marrakech Medina",
+      "operatingEvidence": "Lunch and dinner menu pages and 'Book a table' link; footer '© 2026 Le Trou Au Mur'.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "La Famille",
+      "kind": "meal",
+      "url": "https://www.lafamillemarrakech.com/",
+      "sourceType": "operator's own site",
+      "address": "42 Riad Zitoun Jdid, Marrakech Medina",
+      "operatingEvidence": "'Opening hours: Monday to Saturday, 12h00 to 16h00'; 'la carte, ici, change chaque jour'; booking link.",
+      "hours": "Monday-Saturday 12:00-16:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Amal Gueliz Center",
+      "kind": "meal",
+      "url": "https://amalnonprofit.org/gueliz.html",
+      "sourceType": "operator's own site (Amal non-profit)",
+      "address": "Angle rues Allal Ben Ahmed & Ibn Sina, quartier l'hôpital, Gueliz, Marrakech",
+      "operatingEvidence": "'Lunch Monday–Saturday, 12:00 – 15:30 (closed Sundays)'; walk-ins accepted, Friday is couscous day and busy; homepage blog posts dated April-May 2026.",
+      "hours": "Monday-Saturday 12:00-15:30; closed Sunday",
+      "confidence": "high"
+    },
+    {
+      "name": "Cafe Clock Marrakech",
+      "kind": "cafe",
+      "url": "https://www.cafeclock.com/contact-us",
+      "sourceType": "operator's own site",
+      "address": "224 Derb Chtouka, Kasbah, Marrakech",
+      "operatingEvidence": "Contact page gives '9am -11pm daily'; site advertises live music every night and workshops.",
+      "hours": "Daily 09:00-23:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Pâtisserie Amandine (Rue Mohamed El Beqal)",
+      "kind": "bakery",
+      "url": "https://www.amandinemarrakech.com/",
+      "sourceType": "operator's own site",
+      "address": "177, Rue Mohamed El Beqal, 40000 Marrakech",
+      "operatingEvidence": "Site lists two boutiques with hours ('Mohamed El Beqal : 08:00 – 21:00'; Rue de la Liberté 08:00-20:00) and viennoiseries. No 2026-dated content.",
+      "hours": "08:00-21:00 (closing days not stated)",
+      "confidence": "medium"
+    },
+    {
+      "name": "La Maison Arabe",
+      "kind": "meal",
+      "url": "https://www.cenizaro.com/lamaisonarabe/marrakech",
+      "sourceType": "operator's own site (Cenizaro Hotels)",
+      "address": "1, Derb Assehbé, Bab Doukkala, Marrakech Médina",
+      "operatingEvidence": "Operator site lists dining venues (Le Restaurant, Les Trois Saveurs, The Rooftop, Piano Bar) and a Cooking School with booking; notes seasonal hours may change.",
+      "hours": "not published",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "All 88 input entries (e.g. 'Marrakech historic center or old town', 'A local market in Medina', 'Coffee near Medina')",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Jardin Majorelle",
+      "reason": "Official site shows hours (daily 8:00-17:30) and online-only ticketing but no street address on pages read; contact page returned HTTP 429 and French homepage HTTP 500",
+      "url": "https://www.jardinmajorelle.com/"
+    },
+    {
+      "name": "Nomad",
+      "reason": "SSL error (WRONG_VERSION_NUMBER); not bypassed",
+      "url": "https://www.nomadmarrakech.com/"
+    },
+    {
+      "name": "Café des Épices",
+      "reason": "Domain redirects to an unrelated steakhouse site; no official page found",
+      "url": "https://www.cafedesepices.net/"
+    },
+    {
+      "name": "Le Jardin",
+      "reason": "SSL handshake failure; not bypassed",
+      "url": "https://www.lejardinmarrakech.com/"
+    },
+    {
+      "name": "Le Salama",
+      "reason": "Domain did not resolve (ENOTFOUND)",
+      "url": "https://www.lesalama.com/"
+    },
+    {
+      "name": "Musée de Marrakech",
+      "reason": "Connection refused",
+      "url": "https://www.museedemarrakech.ma/"
+    },
+    {
+      "name": "Kechmara",
+      "reason": "Page returned no readable content",
+      "url": "https://www.kechmara.com/"
+    },
+    {
+      "name": "L'Mida",
+      "reason": "Certificate error; not bypassed",
+      "url": "https://www.lmidamarrakech.com/"
+    },
+    {
+      "name": "Dar Moha",
+      "reason": "Certificate error; not bypassed",
+      "url": "https://www.darmoha.ma/"
+    },
+    {
+      "name": "Pepe Nero",
+      "reason": "Certificate error; not bypassed",
+      "url": "https://www.pepenero-marrakech.com/"
+    },
+    {
+      "name": "Dar Yacout",
+      "reason": "Domain did not resolve (ENOTFOUND)",
+      "url": "https://www.dar-yacout.com/"
+    },
+    {
+      "name": "Bacha Coffee (Dar El Bacha)",
+      "reason": "Official site and locations page give no Marrakech address or hours",
+      "url": "https://www.bachacoffee.com/en/locations"
+    },
+    {
+      "name": "Amal Targa Center",
+      "reason": "Official page gives no street address ('Targa, Marrakech' only)",
+      "url": "https://amalnonprofit.org/targa.html"
+    },
+    {
+      "name": "Four Seasons Resort Marrakech (Zest rooftop)",
+      "reason": "HTTP 403 on official dining page",
+      "url": "https://www.fourseasons.com/marrakech/dining/"
+    },
+    {
+      "name": "Mandarin Oriental Marrakech",
+      "reason": "Page content truncated; no address or dining details readable",
+      "url": "https://www.mandarinoriental.com/en/marrakech/la-medina"
+    },
+    {
+      "name": "Beldi Country Club",
+      "reason": "Address shown but no hours, menu or dated operating evidence on page read",
+      "url": "https://www.beldicountryclub.com/"
+    },
+    {
+      "name": "Café Atay",
+      "reason": "Guessed domain did not resolve; no official site found",
+      "url": "https://www.cafeatay.com/"
+    },
+    {
+      "name": "Musée Mouassine",
+      "reason": "Guessed domain did not resolve; no official site found",
+      "url": "https://www.museemouassine.com/"
+    },
+    {
+      "name": "Pâtisserie Al Jawda",
+      "reason": "No official website found (directory listings only)",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Le Jardin Secret",
+        "Musée Yves Saint Laurent Marrakech",
+        "Musée des Confluences Dar El Bacha",
+        "MACAAL"
+      ],
+      "bestFirstTimers": [
+        "Musée du patrimoine immatériel Jamaâ el-Fna",
+        "Le Jardin Secret",
+        "Musée Yves Saint Laurent Marrakech",
+        "Dar Si Saïd (Musée national du tissage et du tapis)"
+      ],
+      "bestRestaurants": [
+        "Al Fassia Aguedal",
+        "Le Foundouk",
+        "Naranj",
+        "Le Trou au Mur"
+      ],
+      "bestBudget": [
+        "Amal Gueliz Center",
+        "Musée du patrimoine immatériel Jamaâ el-Fna",
+        "Dar Si Saïd (Musée national du tissage et du tapis)",
+        "Cafe Clock Marrakech"
+      ],
+      "bestLuxury": [
+        "La Mamounia",
+        "Royal Mansour Marrakech",
+        "Comptoir Darna",
+        "La Sultana Marrakech"
+      ],
+      "bestCouples": [
+        "El Fenn Rooftop",
+        "La Sultana Marrakech",
+        "Terrasse des Épices",
+        "Anima Garden"
+      ],
+      "bestKids": [
+        "Anima Garden",
+        "Le Jardin Secret",
+        "Maison de la Photographie",
+        "Pâtisserie Amandine (Rue Mohamed El Beqal)"
+      ],
+      "bestSolo": [
+        "Maison de la Photographie",
+        "Marrakesh-Timbuktu (Bert Flint collection)",
+        "Cafe Clock Marrakech",
+        "MACAAL"
+      ],
+      "bestUnique": [
+        "MACAAL",
+        "Marrakesh-Timbuktu (Bert Flint collection)",
+        "Anima Garden",
+        "La Maison Arabe"
+      ],
+      "bestBreakfast": [
+        "Le Grand Café de la Poste",
+        "Pâtisserie Amandine (Rue Mohamed El Beqal)",
+        "Cafe Clock Marrakech"
+      ],
+      "bestLunch": [
+        "Amal Gueliz Center",
+        "La Famille",
+        "+61",
+        "Naranj"
+      ],
+      "bestDinner": [
+        "Al Fassia Aguedal",
+        "Le Foundouk",
+        "Comptoir Darna",
+        "Terrasse des Épices"
+      ],
+      "bestCocktails": [
+        "El Fenn Rooftop",
+        "La Sultana Marrakech",
+        "Kabana",
+        "La Mamounia"
+      ],
+      "bestBakeries": [
+        "Pâtisserie Amandine (Rue Mohamed El Beqal)"
+      ],
+      "bestCoffee": [
+        "Cafe Clock Marrakech",
+        "Pâtisserie Amandine (Rue Mohamed El Beqal)",
+        "Le Grand Café de la Poste"
+      ]
+    },
+    "queries": {
+      "MACAAL": "MACAAL Al Maaden Sidi Youssef Ben Ali Marrakech",
+      "Maison de la Photographie": "Maison de la Photographie 46 rue Ahl Fes Marrakech",
+      "Le Jardin Secret": "Le Jardin Secret 121 Rue Mouassine Marrakech",
+      "Musée Yves Saint Laurent Marrakech": "Musée Yves Saint Laurent Rue Yves Saint Laurent Marrakech",
+      "Musée des Confluences Dar El Bacha": "Musée des Confluences Dar El Bacha Route Dar El Bacha Marrakech",
+      "Dar Si Saïd (Musée national du tissage et du tapis)": "Dar Si Said Riad Zitoun Jdid Marrakech",
+      "Musée du patrimoine immatériel Jamaâ el-Fna": "Musée du patrimoine immatériel Rue Ibn Marine Place Jamaa el-Fna Marrakech",
+      "Anima Garden": "Anima Garden Douar Sbiti Route d'Ourika Marrakech",
+      "Marrakesh-Timbuktu (Bert Flint collection)": "Marrakesh-Timbuktu Derb Boutouil 33b Marrakech",
+      "La Mamounia": "La Mamounia Avenue Bab Jdid Marrakech",
+      "Royal Mansour Marrakech": "Royal Mansour Rue Abou El Abbas Sebti Marrakech",
+      "Al Fassia Aguedal": "Al Fassia Aguedal Route de l'Ourika Agdal Marrakech",
+      "Le Grand Café de la Poste": "Le Grand Café de la Poste Boulevard El Mansour Eddahbi Avenue Imam Malik Marrakech",
+      "Terrasse des Épices": "Terrasse des Épices 15 Souk Cherifia Sidi Abdelaziz Marrakech",
+      "+61": "+61 96 Rue Mohammed el Beqal Gueliz Marrakech",
+      "El Fenn Rooftop": "El Fenn Derb Moulay Abdellah Ben Hezzian Bab El Ksour Marrakech",
+      "La Sultana Marrakech": "La Sultana 403 Rue de la Kasbah Marrakech",
+      "Kabana": "Kabana 1 Rue Fatima Zahra Marrakech",
+      "Comptoir Darna": "Comptoir Darna Avenue Echouhada Hivernage Marrakech",
+      "Le Foundouk": "Le Foundouk 55 Souk Hal Fes Kaat Bennahid Marrakech",
+      "Naranj": "Naranj 84 Rue Riad Zitoun el Jdid Marrakech",
+      "Le Trou au Mur": "Le Trou au Mur 39 Derb el Farnatchi Rue Souk el Fassis Marrakech",
+      "La Famille": "La Famille 42 Riad Zitoun Jdid Marrakech",
+      "Amal Gueliz Center": "Amal Rue Allal Ben Ahmed Ibn Sina Gueliz Marrakech",
+      "Cafe Clock Marrakech": "Cafe Clock 224 Derb Chtouka Kasbah Marrakech",
+      "Pâtisserie Amandine (Rue Mohamed El Beqal)": "Pâtisserie Amandine 177 Rue Mohamed El Beqal Marrakech",
+      "La Maison Arabe": "La Maison Arabe 1 Derb Assehbé Bab Doukkala Marrakech"
+    },
+    "summary": "Museums, gardens and medina restaurants, with breakfast cafés, a Guéliz bakery, rooftop cocktail bars and luxury hotel tables checked against their own websites.",
+    "highlights": [
+      "Le Jardin Secret",
+      "Musée Yves Saint Laurent Marrakech",
+      "Musée des Confluences Dar El Bacha",
+      "MACAAL"
+    ],
+    "tip": "Plan around closing days: the Fondation Nationale des Musées sites (Dar El Bacha, Dar Si Saïd and the Jamaâ el-Fna museum) close on Mondays, and the Musée Yves Saint Laurent closes on Wednesdays.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mon / Wed / Sun",
+        "copy": "Dar El Bacha, Dar Si Saïd and the Jamaâ el-Fna museum close on Mondays; the Musée Yves Saint Laurent and Le Foundouk close on Wednesdays. Amal Gueliz, La Famille and +61 serve lunch Monday to Saturday only."
+      },
+      {
+        "label": "Tickets",
+        "value": "Online vs on site",
+        "copy": "Musée Yves Saint Laurent tickets are sold only through tickets.jardinmajorelle.com, which it calls the only official site. Maison de la Photographie tickets are not sold online and are paid on site by card or cash."
+      },
+      {
+        "label": "Walk-ins",
+        "value": "Check first",
+        "copy": "El Fenn's roof terrace takes no reservations for drinks but has limited capacity, with last admittance at 22:30. Kabana states reservations are required, and Amal Gueliz accepts walk-ins but advises booking for busy Friday couscous day."
+      },
+      {
+        "label": "Rules",
+        "value": "Dress and age",
+        "copy": "Comptoir Darna's dress code is smart casual, with sportswear, shorts and men's sandals not welcome. Le Jardin Secret's tower is not open to children under 6, while entry to the garden is free for under-12s."
+      }
+    ],
+    "dek": "Anchor each day on one museum or garden in the morning, keep Mondays for sights outside the national museum network, and book dinners and rooftop tables ahead.",
+    "intro": [
+      "You can cover a lot of Marrakech's museums on foot from the medina, but closing days shape the week. The Fondation Nationale des Musées runs the Musée des Confluences Dar El Bacha, Dar Si Saïd's carpet and weaving museum and the Jamaâ el-Fna intangible heritage museum, all open Tuesday to Sunday from 10:00 to 18:00 and closed on Mondays. Dar El Bacha is showing Enki Bilal: l'Exposition from 15 October 2026. Maison de la Photographie, on rue Ahl Fes, opens every day from 9:30 to 19:00, sells tickets on site only, and includes entry to the Musée de la Musique.",
+      "In the medina's north, Le Jardin Secret on Rue Mouassine opens daily, with October hours of 9:30 to 18:00 and November hours of 9:30 to 17:30; its tower costs extra and is closed to under-6s. Out in Guéliz, the Musée Yves Saint Laurent Marrakech opens 10:00 to 18:00 every day except Wednesday and sells tickets only online. For contemporary art, MACAAL at Al Maaden has Daoud Aoulad-Syad's solo show until 29 November 2026 and Yassine Balbzioui's Crazy Lines until 8 January 2027. Anima Garden, on the Ourika road, runs a free shuttle from the medina.",
+      "For lunch, Amal's Guéliz centre serves Monday to Saturday from 12:00 to 15:30, and Friday is couscous day, so you should arrive early. La Famille on Riad Zitoun Jdid changes its menu daily and serves Monday to Saturday lunch, while Naranj on the same street opens daily from 12:30 to 22:30. For breakfast, Le Grand Café de la Poste takes bookings from 9:00, Pâtisserie Amandine on Rue Mohamed El Beqal opens at 8:00, and Cafe Clock in the Kasbah opens daily from 9:00 to 23:00.",
+      "Evenings run late. Terrasse des Épices serves dinner from 18:30 to 00:30 daily, Le Foundouk opens from 19:00 to midnight except Wednesdays, and Comptoir Darna in Hivernage serves nightly from 19:00 with a smart casual dress code. For drinks, El Fenn's roof terrace is open to non-residents from 12:00 to 23:00 without reservations, though capacity is limited. La Sultana runs a 6 p.m. sunset mixology workshop for up to four people, and Kabana opens daily until 2:00 with reservations required."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Start with Le Jardin Secret and the Jamaâ el-Fna museum in the medina, then head to the Musée Yves Saint Laurent on any day but Wednesday."
+      ],
+      [
+        "A slower morning",
+        "Have breakfast at Pâtisserie Amandine from 8:00 or Le Grand Café de la Poste from 9:00, then walk to Maison de la Photographie, open daily from 9:30."
+      ],
+      [
+        "Before booking",
+        "Remember that the national museums close on Mondays, YSL tickets are online only, and Kabana and the larger dinner venues take reservations."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability, and hours may change for Ramadan and the Aid holidays. The Jardin Majorelle's site published hours but no street address on the pages that loaded, and its contact and French pages failed (HTTP 429/500), so it is not included. Several sites could not be read because of certificate or connection errors (Nomad, Le Jardin, L'Mida, Dar Moha, Pepe Nero, Musée de Marrakech, Kechmara, Four Seasons). Weekly hours were not published for La Mamounia, Royal Mansour, Al Fassia Aguedal, Le Trou au Mur, La Maison Arabe or MACAAL, and Pâtisserie Amandine did not state closing days. The end date of the Enki Bilal exhibition at Dar El Bacha was not published.",
+  "injectionLikeText": []
+}

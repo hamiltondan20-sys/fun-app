@@ -3252,4 +3252,112 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Marrakech, Morocco: source review of 2026-10-25 (docs/content-research/marrakech-2026-10-25.md).
+  {
+    const cityKey = "Marrakech, Morocco";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Le Jardin Secret","Musée Yves Saint Laurent Marrakech","Musée des Confluences Dar El Bacha","MACAAL"],
+      bestFirstTimers: ["Musée du patrimoine immatériel Jamaâ el-Fna","Le Jardin Secret","Musée Yves Saint Laurent Marrakech","Dar Si Saïd (Musée national du tissage et du tapis)"],
+      bestRestaurants: ["Al Fassia Aguedal","Le Foundouk","Naranj","Le Trou au Mur"],
+      bestBudget: ["Amal Gueliz Center","Musée du patrimoine immatériel Jamaâ el-Fna","Dar Si Saïd (Musée national du tissage et du tapis)","Cafe Clock Marrakech"],
+      bestLuxury: ["La Mamounia","Royal Mansour Marrakech","Comptoir Darna","La Sultana Marrakech"],
+      bestCouples: ["El Fenn Rooftop","La Sultana Marrakech","Terrasse des Épices","Anima Garden"],
+      bestKids: ["Anima Garden","Le Jardin Secret","Maison de la Photographie","Pâtisserie Amandine (Rue Mohamed El Beqal)"],
+      bestSolo: ["Maison de la Photographie","Marrakesh-Timbuktu (Bert Flint collection)","Cafe Clock Marrakech","MACAAL"],
+      bestUnique: ["MACAAL","Marrakesh-Timbuktu (Bert Flint collection)","Anima Garden","La Maison Arabe"],
+      bestBreakfast: ["Le Grand Café de la Poste","Pâtisserie Amandine (Rue Mohamed El Beqal)","Cafe Clock Marrakech"],
+      bestLunch: ["Amal Gueliz Center","La Famille","+61","Naranj"],
+      bestDinner: ["Al Fassia Aguedal","Le Foundouk","Comptoir Darna","Terrasse des Épices"],
+      bestCocktails: ["El Fenn Rooftop","La Sultana Marrakech","Kabana","La Mamounia"],
+      bestBakeries: ["Pâtisserie Amandine (Rue Mohamed El Beqal)"],
+      bestCoffee: ["Cafe Clock Marrakech","Pâtisserie Amandine (Rue Mohamed El Beqal)","Le Grand Café de la Poste"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Le Jardin Secret": "Le Jardin Secret 121 Rue Mouassine Marrakech",
+      "Musée Yves Saint Laurent Marrakech": "Musée Yves Saint Laurent Rue Yves Saint Laurent Marrakech",
+      "Musée des Confluences Dar El Bacha": "Musée des Confluences Dar El Bacha Route Dar El Bacha Marrakech",
+      "MACAAL": "MACAAL Al Maaden Sidi Youssef Ben Ali Marrakech",
+      "Musée du patrimoine immatériel Jamaâ el-Fna": "Musée du patrimoine immatériel Rue Ibn Marine Place Jamaa el-Fna Marrakech",
+      "Dar Si Saïd (Musée national du tissage et du tapis)": "Dar Si Said Riad Zitoun Jdid Marrakech",
+      "Al Fassia Aguedal": "Al Fassia Aguedal Route de l'Ourika Agdal Marrakech",
+      "Le Foundouk": "Le Foundouk 55 Souk Hal Fes Kaat Bennahid Marrakech",
+      "Naranj": "Naranj 84 Rue Riad Zitoun el Jdid Marrakech",
+      "Le Trou au Mur": "Le Trou au Mur 39 Derb el Farnatchi Rue Souk el Fassis Marrakech",
+      "Amal Gueliz Center": "Amal Rue Allal Ben Ahmed Ibn Sina Gueliz Marrakech",
+      "Cafe Clock Marrakech": "Cafe Clock 224 Derb Chtouka Kasbah Marrakech",
+      "La Mamounia": "La Mamounia Avenue Bab Jdid Marrakech",
+      "Royal Mansour Marrakech": "Royal Mansour Rue Abou El Abbas Sebti Marrakech",
+      "Comptoir Darna": "Comptoir Darna Avenue Echouhada Hivernage Marrakech",
+      "La Sultana Marrakech": "La Sultana 403 Rue de la Kasbah Marrakech",
+      "El Fenn Rooftop": "El Fenn Derb Moulay Abdellah Ben Hezzian Bab El Ksour Marrakech",
+      "Terrasse des Épices": "Terrasse des Épices 15 Souk Cherifia Sidi Abdelaziz Marrakech",
+      "Anima Garden": "Anima Garden Douar Sbiti Route d'Ourika Marrakech",
+      "Maison de la Photographie": "Maison de la Photographie 46 rue Ahl Fes Marrakech",
+      "Pâtisserie Amandine (Rue Mohamed El Beqal)": "Pâtisserie Amandine 177 Rue Mohamed El Beqal Marrakech",
+      "Marrakesh-Timbuktu (Bert Flint collection)": "Marrakesh-Timbuktu Derb Boutouil 33b Marrakech",
+      "La Maison Arabe": "La Maison Arabe 1 Derb Assehbé Bab Doukkala Marrakech",
+      "Le Grand Café de la Poste": "Le Grand Café de la Poste Boulevard El Mansour Eddahbi Avenue Imam Malik Marrakech",
+      "La Famille": "La Famille 42 Riad Zitoun Jdid Marrakech",
+      "+61": "+61 96 Rue Mohammed el Beqal Gueliz Marrakech",
+      "Kabana": "Kabana 1 Rue Fatima Zahra Marrakech"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Marrakech" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Museums, gardens and medina restaurants, with breakfast cafés, a Guéliz bakery, rooftop cocktail bars and luxury hotel tables checked against their own websites.";
+    cityGuide.highlights = ["Le Jardin Secret","Musée Yves Saint Laurent Marrakech","Musée des Confluences Dar El Bacha","MACAAL"];
+    cityGuide.tip = "Plan around closing days: the Fondation Nationale des Musées sites (Dar El Bacha, Dar Si Saïd and the Jamaâ el-Fna museum) close on Mondays, and the Musée Yves Saint Laurent closes on Wednesdays.";
+    data.destinationFacts[cityKey] = "Plan around closing days: the Fondation Nationale des Musées sites (Dar El Bacha, Dar Si Saïd and the Jamaâ el-Fna museum) close on Mondays, and the Musée Yves Saint Laurent closes on Wednesdays.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Museums, gardens and medina restaurants, with breakfast cafés, a Guéliz bakery, rooftop cocktail bars and luxury hotel tables checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mon / Wed / Sun",
+        "copy": "Dar El Bacha, Dar Si Saïd and the Jamaâ el-Fna museum close on Mondays; the Musée Yves Saint Laurent and Le Foundouk close on Wednesdays. Amal Gueliz, La Famille and +61 serve lunch Monday to Saturday only."
+      },
+      {
+        "label": "Tickets",
+        "value": "Online vs on site",
+        "copy": "Musée Yves Saint Laurent tickets are sold only through tickets.jardinmajorelle.com, which it calls the only official site. Maison de la Photographie tickets are not sold online and are paid on site by card or cash."
+      },
+      {
+        "label": "Walk-ins",
+        "value": "Check first",
+        "copy": "El Fenn's roof terrace takes no reservations for drinks but has limited capacity, with last admittance at 22:30. Kabana states reservations are required, and Amal Gueliz accepts walk-ins but advises booking for busy Friday couscous day."
+      },
+      {
+        "label": "Rules",
+        "value": "Dress and age",
+        "copy": "Comptoir Darna's dress code is smart casual, with sportswear, shorts and men's sandals not welcome. Le Jardin Secret's tower is not open to children under 6, while entry to the garden is free for under-12s."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Anchor each day on one museum or garden in the morning, keep Mondays for sights outside the national museum network, and book dinners and rooftop tables ahead.",
+      intro: [
+        "You can cover a lot of Marrakech's museums on foot from the medina, but closing days shape the week. The Fondation Nationale des Musées runs the Musée des Confluences Dar El Bacha, Dar Si Saïd's carpet and weaving museum and the Jamaâ el-Fna intangible heritage museum, all open Tuesday to Sunday from 10:00 to 18:00 and closed on Mondays. Dar El Bacha is showing Enki Bilal: l'Exposition from 15 October 2026. Maison de la Photographie, on rue Ahl Fes, opens every day from 9:30 to 19:00, sells tickets on site only, and includes entry to the Musée de la Musique.",
+        "In the medina's north, Le Jardin Secret on Rue Mouassine opens daily, with October hours of 9:30 to 18:00 and November hours of 9:30 to 17:30; its tower costs extra and is closed to under-6s. Out in Guéliz, the Musée Yves Saint Laurent Marrakech opens 10:00 to 18:00 every day except Wednesday and sells tickets only online. For contemporary art, MACAAL at Al Maaden has Daoud Aoulad-Syad's solo show until 29 November 2026 and Yassine Balbzioui's Crazy Lines until 8 January 2027. Anima Garden, on the Ourika road, runs a free shuttle from the medina.",
+        "For lunch, Amal's Guéliz centre serves Monday to Saturday from 12:00 to 15:30, and Friday is couscous day, so you should arrive early. La Famille on Riad Zitoun Jdid changes its menu daily and serves Monday to Saturday lunch, while Naranj on the same street opens daily from 12:30 to 22:30. For breakfast, Le Grand Café de la Poste takes bookings from 9:00, Pâtisserie Amandine on Rue Mohamed El Beqal opens at 8:00, and Cafe Clock in the Kasbah opens daily from 9:00 to 23:00.",
+        "Evenings run late. Terrasse des Épices serves dinner from 18:30 to 00:30 daily, Le Foundouk opens from 19:00 to midnight except Wednesdays, and Comptoir Darna in Hivernage serves nightly from 19:00 with a smart casual dress code. For drinks, El Fenn's roof terrace is open to non-residents from 12:00 to 23:00 without reservations, though capacity is limited. La Sultana runs a 6 p.m. sunset mixology workshop for up to four people, and Kabana opens daily until 2:00 with reservations required."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Start with Le Jardin Secret and the Jamaâ el-Fna museum in the medina, then head to the Musée Yves Saint Laurent on any day but Wednesday."
+        ],
+        [
+          "A slower morning",
+          "Have breakfast at Pâtisserie Amandine from 8:00 or Le Grand Café de la Poste from 9:00, then walk to Maison de la Photographie, open daily from 9:30."
+        ],
+        [
+          "Before booking",
+          "Remember that the national museums close on Mondays, YSL tickets are online only, and Kabana and the larger dinner venues take reservations."
+        ]
+      ],
+      trust: "All 27 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

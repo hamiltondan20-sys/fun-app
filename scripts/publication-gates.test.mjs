@@ -54,10 +54,11 @@ test("publication ratchet respects thresholds without writing generated output",
     }
     previousSlugs = new Set(published.map((city) => city.slug));
   }
-  for (const slug of ["rome", "london", "tokyo", "austin", "cusco"]) {
+  // Marrakech was held back until its source review on 2026-10-25 replaced the generated starter lists.
+  for (const slug of ["rome", "london", "tokyo", "austin", "cusco", "marrakech"]) {
     assert.ok(reports[0].cities.find((city) => city.slug === slug)?.eligible, `${slug} should pass at five`);
   }
-  for (const slug of ["marrakech", "manchester", "liverpool", "glasgow", "goa", "nha-trang", "sharjah", "ajman"]) {
+  for (const slug of ["manchester", "liverpool", "glasgow", "goa", "nha-trang", "sharjah", "ajman"]) {
     assert.equal(reports[0].cities.find((city) => city.slug === slug)?.eligible, false, `${slug} should remain held back`);
   }
   assert.equal(generatedSnapshot(), before, "dry-run changed generated files");

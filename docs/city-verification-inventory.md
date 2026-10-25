@@ -6,10 +6,10 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 33.
+- Source-verified (complete dated evidence format): 34.
 - Classifier-passed (published, not fully documented in that format): 158.
-- Held back: 293.
-- Published destinations: 191; country hubs: 19; sitemap URLs: 219.
+- Held back: 292.
+- Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
 Austin's prior source review is retained in the Review column. Its classifier-passed label here means the newer evidence format is incomplete, not that its earlier research was disproved.
 The Evidence column counts distinct current recommendations with an HTTPS source, date, source type, and operating/context evidence. Zero means no qualifying records, not zero real places in the city.
@@ -298,7 +298,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Malmo, Sweden | malmo | held-back | not-reviewed | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Manchester, United Kingdom | manchester | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Manila, Philippines | manila | classifier-passed | not-reviewed | 0 | 5 | 15 | 3 | None |
-| Marrakech, Morocco | marrakech | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
+| Marrakech, Morocco | marrakech | source-verified | source-checked | 27 | 38 | 15 | 14 | None |
 | Marrakesh, Morocco | marrakesh | held-back | not-reviewed | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Marseille, France | marseille | classifier-passed | not-reviewed | 0 | 10 | 15 | 4 | None |
 | Maui, United States | maui | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |

@@ -5,6 +5,302 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Marrakech, Morocco": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-25",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability, and hours may change for Ramadan and the Aid holidays. The Jardin Majorelle's site published hours but no street address on the pages that loaded, and its contact and French pages failed (HTTP 429/500), so it is not included. Several sites could not be read because of certificate or connection errors (Nomad, Le Jardin, L'Mida, Dar Moha, Pepe Nero, Musée de Marrakech, Kechmara, Four Seasons). Weekly hours were not published for La Mamounia, Royal Mansour, Al Fassia Aguedal, Le Trou au Mur, La Maison Arabe or MACAAL, and Pâtisserie Amandine did not state closing days. The end date of the Enki Bilal exhibition at Dar El Bacha was not published.",
+    "sourceUrls": [
+      "docs/content-research/marrakech-2026-10-25.md",
+      "docs/content-research/marrakech-2026-10-25.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "All 88 input entries (e.g. 'Marrakech historic center or old town', 'A local market in Medina', 'Coffee near Medina')",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Jardin Majorelle",
+        "url": "https://www.jardinmajorelle.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site shows hours (daily 8:00-17:30) and online-only ticketing but no street address on pages read; contact page returned HTTP 429 and French homepage HTTP 500"
+      },
+      {
+        "name": "Nomad",
+        "url": "https://www.nomadmarrakech.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "SSL error (WRONG_VERSION_NUMBER); not bypassed"
+      },
+      {
+        "name": "Café des Épices",
+        "url": "https://www.cafedesepices.net/",
+        "checkedOn": "2026-10-25",
+        "reason": "Domain redirects to an unrelated steakhouse site; no official page found"
+      },
+      {
+        "name": "Le Jardin",
+        "url": "https://www.lejardinmarrakech.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "SSL handshake failure; not bypassed"
+      },
+      {
+        "name": "Le Salama",
+        "url": "https://www.lesalama.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Domain did not resolve (ENOTFOUND)"
+      },
+      {
+        "name": "Musée de Marrakech",
+        "url": "https://www.museedemarrakech.ma/",
+        "checkedOn": "2026-10-25",
+        "reason": "Connection refused"
+      },
+      {
+        "name": "Kechmara",
+        "url": "https://www.kechmara.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Page returned no readable content"
+      },
+      {
+        "name": "L'Mida",
+        "url": "https://www.lmidamarrakech.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Certificate error; not bypassed"
+      },
+      {
+        "name": "Dar Moha",
+        "url": "https://www.darmoha.ma/",
+        "checkedOn": "2026-10-25",
+        "reason": "Certificate error; not bypassed"
+      },
+      {
+        "name": "Pepe Nero",
+        "url": "https://www.pepenero-marrakech.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Certificate error; not bypassed"
+      },
+      {
+        "name": "Dar Yacout",
+        "url": "https://www.dar-yacout.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Domain did not resolve (ENOTFOUND)"
+      },
+      {
+        "name": "Bacha Coffee (Dar El Bacha)",
+        "url": "https://www.bachacoffee.com/en/locations",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site and locations page give no Marrakech address or hours"
+      },
+      {
+        "name": "Amal Targa Center",
+        "url": "https://amalnonprofit.org/targa.html",
+        "checkedOn": "2026-10-25",
+        "reason": "Official page gives no street address ('Targa, Marrakech' only)"
+      },
+      {
+        "name": "Four Seasons Resort Marrakech (Zest rooftop)",
+        "url": "https://www.fourseasons.com/marrakech/dining/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 403 on official dining page"
+      },
+      {
+        "name": "Mandarin Oriental Marrakech",
+        "url": "https://www.mandarinoriental.com/en/marrakech/la-medina",
+        "checkedOn": "2026-10-25",
+        "reason": "Page content truncated; no address or dining details readable"
+      },
+      {
+        "name": "Beldi Country Club",
+        "url": "https://www.beldicountryclub.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Address shown but no hours, menu or dated operating evidence on page read"
+      },
+      {
+        "name": "Café Atay",
+        "url": "https://www.cafeatay.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Guessed domain did not resolve; no official site found"
+      },
+      {
+        "name": "Musée Mouassine",
+        "url": "https://www.museemouassine.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Guessed domain did not resolve; no official site found"
+      },
+      {
+        "name": "Pâtisserie Al Jawda",
+        "checkedOn": "2026-10-25",
+        "reason": "No official website found (directory listings only)"
+      }
+    ],
+    "placeSources": {
+      "MACAAL": {
+        "url": "https://www.macaal.org/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Season banner 'New Art Season 2026'; Daoud Aoulad-Syad solo show 'Le temps d'un battement de cil' runs 18.09.2026 to 29.11.2026; 'Statues Also Breathe' and Yassine Balbzioui's 'Crazy Lines' run 08.02.2026 to 08.01.2027."
+      },
+      "Maison de la Photographie": {
+        "url": "https://www.maisondelaphotographie.ma/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibition 'Maroc, Regards d'hier et d'aujourd'hui'; pages dated through 27 June 2026; tickets on site only (80 MAD adult, free under 15), ticket also covers the Musée de la Musique de Marrakech."
+      },
+      "Le Jardin Secret": {
+        "url": "https://www.lejardinsecretmarrakech.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Publishes seasonal hours and ticket prices (100 dirhams full, free under 12; tower 40 dirhams, not open to children under 6); last entry '30 minutes avant la fermeture'."
+      },
+      "Musée Yves Saint Laurent Marrakech": {
+        "url": "https://www.museeyslmarrakech.com/en/contact/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Hours notice 'open every day of the week, except Wednesdays'; tickets sold only through tickets.jardinmajorelle.com, 'THE ONLY OFFICIAL WEBSITE'. No 2026-dated exhibition found."
+      },
+      "Musée des Confluences Dar El Bacha": {
+        "url": "https://fnm.ma/museums/26",
+        "sourceType": "official public operator (Fondation Nationale des Musées)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "FNM announces 'Enki Bilal : l'Exposition' at the museum 'À partir du 15 octobre 2026' (no end date stated); ticket prices published (60 DH foreign visitors)."
+      },
+      "Dar Si Saïd (Musée national du tissage et du tapis)": {
+        "url": "https://fnm.ma/museums/30",
+        "sourceType": "official public operator (Fondation Nationale des Musées)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current FNM page lists hours 'Du mardi au dimanche : 10h - 18h', 'Fermé le lundi' and prices (30 DH adults)."
+      },
+      "Musée du patrimoine immatériel Jamaâ el-Fna": {
+        "url": "https://fnm.ma/museums/40",
+        "sourceType": "official public operator (Fondation Nationale des Musées)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "FNM page lists hours, prices (40 DH foreigners) and an exhibition 'dédiée à la place Jamaâ el-Fna et à ses acteurs'."
+      },
+      "Anima Garden": {
+        "url": "https://www.anima-garden.com/en/visit",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "'Open all year 9 am – 6 pm'; tickets MAD 140 adults, free 0-11; 'Free shuttle bus from Marrakech to ANIMA'; footer '©2016-2026'."
+      },
+      "Marrakesh-Timbuktu (Bert Flint collection)": {
+        "url": "https://www.marrakesh-timbuktu.com/visit-tickets",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Visit page: 'Open every day from 10.00 to 19.00', last entry 30 minutes before closing; full price 100 Dirhams, children up to 12 free."
+      },
+      "La Mamounia": {
+        "url": "https://www.mamounia.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Table reservation forms for restaurants (Le Marocain, L'Italien par Simone Zanoni) and bars (Le Churchill, Le Bar Majorelle); a 'Ftour' link to a 2026 Ramadan page."
+      },
+      "Royal Mansour Marrakech": {
+        "url": "https://www.royalmansour.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Site names La Grande Table Marocaine and Sesamo among its Marrakech tables and carries a 2026 article on the 50 Best Hotels ranking."
+      },
+      "Al Fassia Aguedal": {
+        "url": "https://www.alfassia.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Site says Aguedal 'invites you every evening for a dinner' and offers online booking ('BOOK NOW'). No 2026-dated content."
+      },
+      "Le Grand Café de la Poste": {
+        "url": "https://www.grandcafedelaposte.restaurant/contactez-nous/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Table booking with slots for 'Petit déjeuner' (09h00-11h30), 'Déjeuner' and 'Dîner' (19h00-23h30); published breakfast menu; footer 'Copyright © 2026'."
+      },
+      "Terrasse des Épices": {
+        "url": "https://www.terrassedesepices.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online table booking with lunch and dinner seatings; 'last orders 45 minutes before closing'; seasonal cocktail list."
+      },
+      "+61": {
+        "url": "https://www.plus61.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published weekly hours and 'Book now' reservation link."
+      },
+      "El Fenn Rooftop": {
+        "url": "https://el-fenn.com/rooftop-bar/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Roof terrace open to non-residents, no reservation for drinks but 'limited capacity'; cocktail list PDF dated 2026/08; homepage has '2026' retreats and hotlist."
+      },
+      "La Sultana Marrakech": {
+        "url": "https://www.lasultanahotels.com/Marrakech/cocktail_sur_les_toits_de_la_medina",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Bookable nightly sunset mixology workshop on the rooftop at 6 p.m., 30 minutes, up to 4 participants; cocktails 'À partir de 350 MAD'."
+      },
+      "Kabana": {
+        "url": "https://www.kabana-marrakech.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "'We're open every day from 11:00 AM to 2:00 AM'; 'Reservations required'; brunch 11am-5pm; nightly DJ sets."
+      },
+      "Comptoir Darna": {
+        "url": "https://www.comptoirmarrakech.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Restaurant 'Tous les soirs : 19h00 -01h00'; SevenRooms booking; dress code 'smart casual'; '© 2026'."
+      },
+      "Le Foundouk": {
+        "url": "https://www.foundouk.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online reservations; 'Ouvert tous les jours de 19h à minuit, fermé le mercredi.'"
+      },
+      "Naranj": {
+        "url": "https://www.naranj.ma/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "'We're open every day from 12:30 PM to 10:30 PM'; 'Book Now' link and PDF menu."
+      },
+      "Le Trou au Mur": {
+        "url": "https://www.letrouaumur.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Lunch and dinner menu pages and 'Book a table' link; footer '© 2026 Le Trou Au Mur'."
+      },
+      "La Famille": {
+        "url": "https://www.lafamillemarrakech.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "'Opening hours: Monday to Saturday, 12h00 to 16h00'; 'la carte, ici, change chaque jour'; booking link."
+      },
+      "Amal Gueliz Center": {
+        "url": "https://amalnonprofit.org/gueliz.html",
+        "sourceType": "operator's own site (Amal non-profit)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "'Lunch Monday–Saturday, 12:00 – 15:30 (closed Sundays)'; walk-ins accepted, Friday is couscous day and busy; homepage blog posts dated April-May 2026."
+      },
+      "Cafe Clock Marrakech": {
+        "url": "https://www.cafeclock.com/contact-us",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Contact page gives '9am -11pm daily'; site advertises live music every night and workshops."
+      },
+      "Pâtisserie Amandine (Rue Mohamed El Beqal)": {
+        "url": "https://www.amandinemarrakech.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Site lists two boutiques with hours ('Mohamed El Beqal : 08:00 – 21:00'; Rue de la Liberté 08:00-20:00) and viennoiseries. No 2026-dated content."
+      },
+      "La Maison Arabe": {
+        "url": "https://www.cenizaro.com/lamaisonarabe/marrakech",
+        "sourceType": "operator's own site (Cenizaro Hotels)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Operator site lists dining venues (Le Restaurant, Les Trois Saveurs, The Rooftop, Piano Bar) and a Cooking School with booking; notes seasonal hours may change."
+      }
+    }
+  },
   "Los Angeles, United States": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-25",
