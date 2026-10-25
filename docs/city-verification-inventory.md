@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 21.
-- Classifier-passed (published, not fully documented in that format): 168.
+- Source-verified (complete dated evidence format): 22.
+- Classifier-passed (published, not fully documented in that format): 167.
 - Held back: 295.
 - Published destinations: 189; country hubs: 19; sitemap URLs: 217.
 
@@ -266,7 +266,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Krabi, Thailand | krabi | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
 | Krakow, Poland | krakow | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
 | Kruger National Park, South Africa | kruger-national-park | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Kyoto, Japan | kyoto | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Kyoto, Japan | kyoto | source-verified | source-checked | 27 | 47 | 15 | 14 | None |
 | Lagos, Portugal | lagos | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Lake Baikal, Russia | lake-baikal | classifier-passed | not-reviewed | 0 | 8 | 15 | 4 | None |
 | Lake Como, Italy | lake-como | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |

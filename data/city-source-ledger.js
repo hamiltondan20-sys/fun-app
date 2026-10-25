@@ -5,6 +5,484 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Kyoto, Japan": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-25",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "This is a website review, not a visit or a phone check. Published opening, booking and exhibition details don't guarantee availability. Several official sites couldn't be read: Kyoto Imperial Palace (maintenance notice), Sanjusangen-do and Ryoan-ji (certificate or SSL errors), Heian Jingu and Shinshindo (connection refused), Hyotei, Kagizen Yoshifusa and Smart Coffee (502 errors), Four Seasons and Park Hyatt Kyoto (403), % Arabica (418), Kyoto Railway Museum and Shimogamo Shrine (no readable content), and Kyoto Aquarium's access page (timed out). Kinkaku-ji's only dated 2026 item is a September 28 cashless-payment notice. Hours weren't published or readable for Fushimi Inari Taisha, Nishiki Market, Toji, the National Museum of Modern Art, Weekenders Coffee, Stumptown Coffee, Mr. Maurice's Rooftop Bar and The Garden Bar. Yasaka Shrine lists only its office hours. Sizuya and Ippodo rest on company-wide 2026 notices, and Le Petit Mec's address is an English rendering from its shop list.",
+    "sourceUrls": [
+      "docs/content-research/kyoto-2026-10-25.md",
+      "docs/content-research/kyoto-2026-10-25.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Arashiyama Bamboo Grove",
+        "checkedOn": "2026-10-25",
+        "reason": "Public path with no operator website found to confirm it; Tenryu-ji (whose north gate entrance sells tickets) was checked instead."
+      },
+      {
+        "name": "Kyoto Imperial Palace",
+        "url": "https://sankan.kunaicho.go.jp/english/guide/kyoto.html",
+        "checkedOn": "2026-10-25",
+        "reason": "Official Imperial Household Agency page redirected to a maintenance notice (\"System Maintenance in Progress\"); could not be read."
+      },
+      {
+        "name": "Sanjusangen-do",
+        "url": "https://www.sanjusangendo.jp/",
+        "checkedOn": "2026-10-25",
+        "reason": "Certificate error (\"unable to verify the first certificate\"); not bypassed."
+      },
+      {
+        "name": "Ryoan-ji",
+        "url": "https://www.ryoanji.jp/",
+        "checkedOn": "2026-10-25",
+        "reason": "SSL error (WRONG_VERSION_NUMBER); site could not be read."
+      },
+      {
+        "name": "Kyoto Railway Museum",
+        "url": "https://www.kyotorailwaymuseum.jp/",
+        "checkedOn": "2026-10-25",
+        "reason": "Fetch returned no readable content (English and Japanese pages)."
+      },
+      {
+        "name": "Kyoto Aquarium",
+        "url": "https://en.kyoto-aquarium.com/access/",
+        "checkedOn": "2026-10-25",
+        "reason": "Homepage showed dated 2026 news (e.g. 2026.10.21), but the access page with the address and hours timed out twice, so no address could be quoted."
+      },
+      {
+        "name": "Heian Jingu",
+        "url": "https://www.heianjingu.or.jp/",
+        "checkedOn": "2026-10-25",
+        "reason": "Connection refused (ECONNREFUSED); site could not be read."
+      },
+      {
+        "name": "Shimogamo Shrine",
+        "url": "https://www.shimogamo-jinja.or.jp/",
+        "checkedOn": "2026-10-25",
+        "reason": "Fetch returned only the page title; no address or notices readable."
+      },
+      {
+        "name": "Honke Owariya",
+        "url": "https://www.honke-owariya.co.jp/",
+        "checkedOn": "2026-10-25",
+        "reason": "Site showed only a WordPress default \"Hello world!\" post; no address, hours or real notices readable."
+      },
+      {
+        "name": "Hyotei",
+        "url": "https://www.hyotei.co.jp/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 502 Bad Gateway; site could not be read."
+      },
+      {
+        "name": "Saryo Tsujiri (Gion main store)",
+        "url": "https://www.giontsujiri.co.jp/store/saryotsujiri-honten/",
+        "checkedOn": "2026-10-25",
+        "reason": "Store page gave address and hours (10:30-20:30) but no dated 2026 operating evidence; news page was empty."
+      },
+      {
+        "name": "Kagizen Yoshifusa",
+        "url": "https://www.kagizen.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 502 Bad Gateway; site could not be read."
+      },
+      {
+        "name": "Smart Coffee",
+        "url": "https://www.smartcoffee.jp/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 502 Bad Gateway on two attempts; site could not be read."
+      },
+      {
+        "name": "Shinshindo",
+        "url": "https://www.shinshindo.jp/",
+        "checkedOn": "2026-10-25",
+        "reason": "Connection refused (ECONNREFUSED); site could not be read."
+      },
+      {
+        "name": "Rokuyosha",
+        "url": "https://www.rokuyosha-coffee.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Site gave a street location but no hours and no readable dated 2026 content (news shown only as images)."
+      },
+      {
+        "name": "Kurasu Kyoto",
+        "url": "https://kurasu.kyoto/",
+        "checkedOn": "2026-10-25",
+        "reason": "Homepage had 2026 blog posts but no Kyoto café address or hours readable."
+      },
+      {
+        "name": "% Arabica Kyoto Higashiyama",
+        "url": "https://arabica.com/en/location/arabica-kyoto-higashiyama/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 418 refusal after redirect; site could not be read."
+      },
+      {
+        "name": "The Bar (Four Seasons Hotel Kyoto)",
+        "url": "https://www.fourseasons.com/kyoto/dining/lounges/the-bar/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 403 Forbidden; not bypassed."
+      },
+      {
+        "name": "Kyoto Bar (Park Hyatt Kyoto)",
+        "url": "https://www.hyatt.com/park-hyatt/en-US/itmph-park-hyatt-kyoto/dining",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 403 Forbidden; not bypassed."
+      },
+      {
+        "name": "The Bar (The Ritz-Carlton, Kyoto)",
+        "url": "https://www.ritzcarlton.com/en/hotels/uktrz-the-ritz-carlton-kyoto/dining/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 404 on the dining page tried; not read."
+      },
+      {
+        "name": "L'Escamoteur",
+        "url": "https://www.lescamoteurbar.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Domain tried did not resolve (ENOTFOUND); no official site read."
+      },
+      {
+        "name": "a Kyoto set dinner or Nishiki Market stop",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (Nishiki Market checked separately)"
+      },
+      {
+        "name": "Gion local table",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Kyoto signature dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Gion walk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Higashiyama public viewpoint",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market or picnic near Arashiyama",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Fushimi Inari",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "a quiet garden or tea experience",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Destination dinner near Arashiyama",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset around Kiyomizu-dera",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (Kiyomizu-dera checked separately)"
+      },
+      {
+        "name": "Gion dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Fushimi Inari",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (Fushimi Inari Taisha checked separately)"
+      },
+      {
+        "name": "Easy outing around Higashiyama",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Arashiyama",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Fushimi Inari",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Gion cafe or market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Higashiyama route",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Higashiyama at a quieter hour",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Arashiyama local rhythm",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Gion",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Higashiyama bakery or market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Fushimi Inari",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "a Kyoto set lunch or Nishiki Market stop",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (Nishiki Market checked separately)"
+      },
+      {
+        "name": "Casual lunch near Kiyomizu-dera",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Arashiyama",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Evening table in Gion",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Gion",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Higashiyama",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Arashiyama Bamboo Grove",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Gion",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Higashiyama morning market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Fushimi Inari",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Gion",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Higashiyama",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Arashiyama",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Fushimi Inari Taisha": {
+        "url": "https://inari.jp/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Japanese homepage lists dated 2026 notices, including a 2026-09-07 request on visitor manners in the precincts and a 2026-09-01 notice for 七五三詣 (Shichi-Go-San visits). The access page advises \"taking public transport\" because nearby parking is \"very crowded\"."
+      },
+      "Kiyomizu-dera": {
+        "url": "https://www.kiyomizudera.or.jp/en/location/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "English site carries 2026 news (\"The Evening Special Visit 2026 spring\", \"Thousand-day Prayer 2026\") and the visit page lists a special night viewing on Nov 21-30, 2026, open until 9:30 PM (last entry 9:00 PM), and a Jojuin garden special viewing on Nov 21-30."
+      },
+      "Tenryu-ji": {
+        "url": "https://www.tenryuji.com/en/visit/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Visit page lists scheduled 2026 closings including \"October 29,30th\" and says the Hatto is \"closed to the public on October 28-30\"; the 2026 calendar lists the Hatto autumn Cloud Dragon exhibition Sept 19-Dec 6 and an early 7:30 opening of the Sogen Pond Garden Nov 14-30. Tickets are sold at the garden, main building and north gate entrances."
+      },
+      "Nishiki Market": {
+        "url": "https://www.kyoto-nishiki.or.jp/",
+        "sourceType": "official operator (京都錦市場商店街振興組合, Nishiki Market shopping street association)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Association site posts dated 2026 notices, e.g. 2026.09.10 that Kyoto Points can be used at registered shops (valid 2026-08-01 to 2027-02-28) and a 2026.05.31 fifth-anniversary campaign for its online shop."
+      },
+      "Nijo Castle": {
+        "url": "https://nijo-jocastle.city.kyoto.lg.jp/?lang=en",
+        "sourceType": "official public operator (City of Kyoto)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "City site lists \"NIJO-JO CASTLE FESTIVAL 2026\" (posted 2026.10.9) and a notice of \"Shortened Admission Hours on Sunday, December 6, 2026\"."
+      },
+      "Kyoto National Museum": {
+        "url": "https://www.kyohaku.go.jp/eng/",
+        "sourceType": "official public operator (National Institutes for Cultural Heritage)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current special exhibition \"The Tale of Genji: Radiant Culture of the Japanese Imperial Court\", October 6-November 29, 2026; advance tickets not required. \"All exhibits from the museum collection have been deinstalled\" for it, with collection exhibitions resuming December 22, 2026."
+      },
+      "Ippodo Tea Kyoto Main Store": {
+        "url": "https://global.ippodo-tea.co.jp/pages/store-kyoto?view=store-detail",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Store page lists the Kaboku Tearoom (44 seats) with a current menu PDF dated 20261001 in its filename; the Ippodo site carries October 2026 store notices."
+      },
+      "Ginkaku-ji": {
+        "url": "https://www.shokoku-ji.jp/ginkakuji/",
+        "sourceType": "operator's own site (Shokoku-ji, the head temple that runs Ginkaku-ji)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Lists \"銀閣寺 秋の特別拝観 令和8年11月1日（日）～ 12月5日（土）\" (autumn special viewing, November 1-December 5, 2026), autumn-limited goshuin \"2026年11月1日(日)より\", and an offering-fee change \"2026年4月1日より\"."
+      },
+      "Kinkaku-ji": {
+        "url": "https://www.shokoku-ji.jp/kinkakuji/news/",
+        "sourceType": "operator's own site (Shokoku-ji, the head temple that runs Kinkaku-ji)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "News page dated 2026年9月28日 announces the \"おまいりPay\" cashless payment service at the admission desk (excluding amulets and goshuin). The events page says \"現在金閣寺にて開催の行事はありません\" (no events currently held)."
+      },
+      "Toji": {
+        "url": "https://toji.or.jp/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Homepage lists autumn 2026 openings: Treasure House exhibition \"東寺五重塔の美術と歴史\" 2026年9月20日-11月25日; special opening of the Five-Storied Pagoda's first floor and an autumn light-up with night admission to the Kondo and Kodo, 2026年10月31日-12月13日."
+      },
+      "Yasaka Shrine": {
+        "url": "https://www.yasaka-jinja.or.jp/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Dated 令和8年 (2026) notices include a 9月1日 recruitment notice for New Year shrine helpers and a 7月10日 Shichi-Go-San package notice."
+      },
+      "Kitano Tenmangu": {
+        "url": "https://www.kitanotenmangu.or.jp/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Autumn Momiji Garden runs \"令和8年10月31日（土）～12月6日（日）\", 9:00-16:00 (last entry 15:40), with evening illumination November 13-December 6 from sunset to 20:00; adults 1,500 yen, children 700 yen."
+      },
+      "Kyoto City KYOCERA Museum of Art": {
+        "url": "https://kyotocity-kyocera.museum/en/exhibition",
+        "sourceType": "operator's own site (City of Kyoto museum)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibitions include \"Zen and Ghibli\" (2026/10/3-2026/12/6, Higashiyama Cube), \"Yamaga Seika: Boundless Imagination in Textile Art\" (2026/9/19-2026/12/20) and The Triangle: Matsunobe Soshi: Walls (2026/9/12-2026/12/20, free)."
+      },
+      "National Museum of Modern Art, Kyoto": {
+        "url": "https://www.momak.go.jp/English/",
+        "sourceType": "official public operator (national museum)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Lists \"Reflections in Jewellery: Memory and Identity\" and the 3rd Collection Gallery Exhibition 2026, both \"2026.10.24 sat. - 01.17 sun.\" (now running)."
+      },
+      "Kyoto Tower": {
+        "url": "https://www.kyoto-tower.jp/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Dated 2026 notices include an observation-deck fee revision (2026年08月01日) and a September 9 notice that hotel guests receive deck tickets from October 1, 2026."
+      },
+      "Kyoto Botanical Gardens": {
+        "url": "https://www.pref.kyoto.jp/plant/",
+        "sourceType": "official public operator (Kyoto Prefecture)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Page \"更新日：2026年9月27日\"; announces a plant-painting contest accepting entries \"令和8年10月1日より\", with an exhibition in January 2027."
+      },
+      "Inoda Coffee Main Store": {
+        "url": "https://www.inoda-coffee.co.jp/shop/honten/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Main-store page lists a 本店限定 drip assortment on sale \"2026年9月1日(火)～\" and a 2026.09.13 main-store autumn cake notice; it says \"朝はモーニングコーヒーや朝食\" are served."
+      },
+      "Francois Kissa": {
+        "url": "https://www.francois1934.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "News lists \"音楽の夜vol.7\" dated 2026/10/08. House rules: cash only, no reservations, no children under school age, possible time limits when crowded, large luggage may be refused."
+      },
+      "Weekenders Coffee (Shinmachi)": {
+        "url": "https://www.weekenderscoffee.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Access section says the Shinmachi shop opened \"2026年9月30日オープン！\"; news posts new beans on 2026-10-01. A 2026-03-10 notice announced the Tominokoji shop's relocation."
+      },
+      "Stumptown Coffee (Ace Hotel Kyoto)": {
+        "url": "https://acehotel.com/kyoto/",
+        "sourceType": "operator's own site (Ace Hotel Kyoto)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Hotel page lists \"the first Stumptown cafe in Japan\" among its outlets and a dated calendar of October-December 2026 hotel events (e.g. Oct 25 listening session in the Lobby Lounge)."
+      },
+      "Mr. Maurice's Rooftop Bar (Ace Hotel Kyoto)": {
+        "url": "https://acehotel.com/kyoto/",
+        "sourceType": "operator's own site (Ace Hotel Kyoto)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Hotel page lists the rooftop bar serving Italian-American food, wine and cocktails, alongside dated 2026 hotel events such as \"Saturday Night Ace\" on October 31 and Día de los Muertos at PIOPIKO on November 1."
+      },
+      "The Garden Bar (Hotel The Mitsui Kyoto)": {
+        "url": "https://www.hotelthemitsui.com/en/kyoto/",
+        "sourceType": "operator's own site (Hotel The Mitsui Kyoto)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "THE GARDEN BAR is listed among the hotel's restaurants and bars; Restaurants and Bar notices dated 2026.09.29 (6th anniversary event, November 3 and 7, 2026) and 2026.10.01 (Christmas cakes, December 1-25, 2026)."
+      },
+      "Kikunoi Honten": {
+        "url": "https://kikunoi.jp/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Japanese site notice dated 2026.04.23 says Kikunoi Honten received three stars in \"ミシュランガイド京都・大阪2026\". Reservations by phone (+81-75-561-0015) or through MY CONCIERGE or TABLE ALL."
+      },
+      "Nanzenji Junsei": {
+        "url": "https://www.to-fu.co.jp/access/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Homepage posts \"９月１０月の休業日のお知らせ\" dated 2026.08.23 and a 2026.07.05 garden notice."
+      },
+      "Omen Ginkakuji Main Store": {
+        "url": "https://www.omen.co.jp/pages/shops",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Homepage notice dated 2026/06/26: \"銀閣寺本店　金曜日夜営業再開のお知らせ\" (Friday evening service resumed). Reservations by phone to each store; email reservations not accepted."
+      },
+      "Sizuya (Kyoto Station)": {
+        "url": "https://www.sizuya.co.jp/shop/kyotost.html",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Bakery founded in 昭和23年 (1948); company site posts monthly 2026 new-product notices, most recently 2026.8.25 for September products. Store-specific 2026 notice not seen."
+      },
+      "Le Petit Mec (Imadegawa)": {
+        "url": "https://www.lepetitmec.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Site announces a 28th-anniversary campaign starting October 10 (Sat), listed as just posted, and Galette des Rois pre-orders on a page referring to 2026."
+      }
+    }
+  },
   "Florence, Italy": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-21",
