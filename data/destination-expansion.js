@@ -3785,4 +3785,111 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Vancouver, Canada: source review of 2026-10-25 (docs/content-research/vancouver-2026-10-25.md).
+  {
+    const cityKey = "Vancouver, Canada";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Grouse Mountain","Capilano Suspension Bridge Park","Vancouver Art Gallery","Granville Island Public Market"],
+      bestFirstTimers: ["Granville Island Public Market","Vancouver Art Gallery","Capilano Suspension Bridge Park","Museum of Anthropology at UBC"],
+      bestRestaurants: ["Vij's","Blue Water Cafe","Published on Main","Kissa Tanto"],
+      bestBudget: ["The Polygon Gallery","Lonsdale Quay Market","Granville Island Public Market","Nemesis Coffee (Gastown)"],
+      bestLuxury: ["Hawksworth Restaurant","Botanist","Blue Water Cafe","Published on Main"],
+      bestCouples: ["The Teahouse in Stanley Park","Kissa Tanto","St. Lawrence","Botanist"],
+      bestKids: ["Museum of Vancouver","Vancouver Maritime Museum","Grouse Mountain","Granville Island Public Market"],
+      bestSolo: ["Museum of Anthropology at UBC","The Polygon Gallery","Vancouver Art Gallery","Nemesis Coffee (Gastown)"],
+      bestUnique: ["Museum of Anthropology at UBC","Vancouver Maritime Museum","The Keefer Bar","Lonsdale Quay Market"],
+      bestBreakfast: ["Café Medina","Purebread (Gastown)","Small Victory (Yaletown)","Beaucoup Bakery (Kitsilano)"],
+      bestLunch: ["Miku Vancouver","Hawksworth Restaurant","Joe Fortes Seafood & Chop House","Granville Island Public Market"],
+      bestDinner: ["Vij's","St. Lawrence","Kissa Tanto","Blue Water Cafe"],
+      bestCocktails: ["The Keefer Bar","Botanist","Hawksworth Restaurant","The Pourhouse"],
+      bestBakeries: ["Purebread (Gastown)","Beaucoup Bakery (Kitsilano)","Small Victory (Yaletown)"],
+      bestCoffee: ["Nemesis Coffee (Gastown)","Small Victory (Yaletown)","Café Medina"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Grouse Mountain": "Grouse Mountain 6400 Nancy Greene Way North Vancouver",
+      "Capilano Suspension Bridge Park": "Capilano Suspension Bridge Park 3735 Capilano Road North Vancouver",
+      "Vancouver Art Gallery": "Vancouver Art Gallery 750 Hornby Street Vancouver",
+      "Granville Island Public Market": "Granville Island Public Market 1689 Johnston Street Vancouver",
+      "Museum of Anthropology at UBC": "Museum of Anthropology at UBC 6393 NW Marine Drive Vancouver",
+      "Vij's": "Vij's 3106 Cambie Street Vancouver",
+      "Blue Water Cafe": "Blue Water Cafe 1095 Hamilton Street Vancouver",
+      "Published on Main": "Published on Main 3593 Main Street Vancouver",
+      "Kissa Tanto": "Kissa Tanto 263 East Pender Street Vancouver",
+      "The Polygon Gallery": "The Polygon Gallery 101 Carrie Cates Court North Vancouver",
+      "Lonsdale Quay Market": "Lonsdale Quay Market 123 Carrie Cates Court North Vancouver",
+      "Nemesis Coffee (Gastown)": "Nemesis Coffee 302 West Hastings Street Vancouver",
+      "Hawksworth Restaurant": "Hawksworth Restaurant 801 West Georgia Street Vancouver",
+      "Botanist": "Botanist 1038 Canada Place Vancouver",
+      "The Teahouse in Stanley Park": "The Teahouse Ferguson Point Stanley Park Vancouver",
+      "St. Lawrence": "St. Lawrence 269 Powell Street Vancouver",
+      "Museum of Vancouver": "Museum of Vancouver 1100 Chestnut Street Vancouver",
+      "Vancouver Maritime Museum": "Vancouver Maritime Museum 1905 Ogden Ave Vancouver",
+      "The Keefer Bar": "The Keefer Bar 135 Keefer Street Vancouver",
+      "Café Medina": "Café Medina 780 Richards Street Vancouver",
+      "Purebread (Gastown)": "Purebread 159 West Hastings Street Vancouver",
+      "Small Victory (Yaletown)": "Small Victory 1089 Marinaside Crescent Vancouver",
+      "Beaucoup Bakery (Kitsilano)": "Beaucoup Bakery 2150 Fir Street Vancouver",
+      "Miku Vancouver": "Miku 200 Granville Street Vancouver",
+      "Joe Fortes Seafood & Chop House": "Joe Fortes Seafood & Chop House 777 Thurlow Street Vancouver",
+      "The Pourhouse": "The Pourhouse 162 Water Street Vancouver"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Vancouver" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Museums, North Shore viewpoints and public markets, with breakfast spots, dinners, bakeries, coffee and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Capilano Suspension Bridge Park","Museum of Anthropology at UBC","Vancouver Art Gallery","Granville Island Public Market"];
+    cityGuide.tip = "Check closing days before you plan: the Vancouver Art Gallery is closed on Tuesdays, the Museum of Anthropology at UBC is closed Mondays from October 15 to May 15, and The Polygon Gallery lists no Monday or Tuesday hours.";
+    data.destinationFacts[cityKey] = "Check closing days before you plan: the Vancouver Art Gallery is closed on Tuesdays, the Museum of Anthropology at UBC is closed Mondays from October 15 to May 15, and The Polygon Gallery lists no Monday or Tuesday hours.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Museums, North Shore viewpoints and public markets, with breakfast spots, dinners, bakeries, coffee and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Tue and Mon gaps",
+        "copy": "The Vancouver Art Gallery is closed on Tuesdays, and the Museum of Anthropology at UBC is closed Mondays from October 15 to May 15. Vancouver Maritime Museum opens Tuesday to Sunday, and St. Lawrence serves Wednesday to Sunday only."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book ahead",
+        "copy": "The Vancouver Art Gallery recommends booking online to avoid the line, and Capilano Suspension Bridge Park says passholders must reserve online with limited weekend slots. Kissa Tanto releases Tock reservations 30 days in advance at midnight."
+      },
+      {
+        "label": "Walk-ins and deals",
+        "value": "Free or cheaper slots",
+        "copy": "Vij's says walk-in guests are always welcome, and The Keefer Bar keeps plenty of space for walk-ins. The Polygon Gallery is always by donation, and the Museum of Anthropology at UBC is half price on Thursdays after 5 pm."
+      },
+      {
+        "label": "Rules",
+        "value": "19+ and large groups",
+        "copy": "The Keefer Bar states guests must be 19+. Blue Water Cafe asks parties of 8 or more to contact it directly, and Kissa Tanto's largest table seats 6."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Pair one North Shore outing with a museum day downtown or at UBC, and check each venue's closing day before you commit.",
+      intro: [
+        "Vancouver rewards you for splitting your days between the city and the North Shore. Capilano Suspension Bridge Park at 3735 Capilano Road lists hours of 10 AM to 8 PM and asks passholders to reserve online, with limited weekend and holiday slots. Further up Nancy Greene Way, Grouse Mountain advertises newly opened Red Skyride cabins. Back on the water, Lonsdale Quay Market is open seven days a week, and The Polygon Gallery next door is always admission by donation, open Wednesday to Sunday with Thursdays until 9pm.",
+        "For museums, plan around closing days. The Vancouver Art Gallery on Hornby Street is closed on Tuesdays and stays open until 8 PM on Fridays; Future Geographies and SANCTUARY: The Ancient Forest Experience both run until January 10, 2027. The Museum of Anthropology at UBC is closed Mondays from October 15 to May 15, opens late on Thursdays until 9 pm at half price after 5 pm, and shows Tupananchiskama: Ancient Andean Cosmovision until January 3, 2027, with From the Deep opening November 19, 2026.",
+        "In Kitsilano, the Museum of Vancouver stays open until 8pm Thursday to Saturday, and the Vancouver Maritime Museum opens Tuesday to Sunday, with its St. Roch Revitalization listed as opening Winter 2026/2027. For a slower morning, the Granville Island Public Market opens 9 AM to 6 PM and closes on Mondays in January only. Purebread's Gastown branch opens daily from 8am, while Beaucoup Bakery's Kitsilano shop lists closures on Tuesdays and Wednesdays.",
+        "Dinner needs some planning. Kissa Tanto on East Pender opens Tock reservations 30 days ahead at midnight, while Vij's on Cambie opens daily from 5:30 p.m. and says walk-in guests are always welcome. Published on Main says it is ranked #17 on North America's 50 Best Restaurants 2026, and Hawksworth runs a daily lounge-only cocktail hour from 4pm to 6pm. For a late drink, The Keefer Bar in Chinatown is open until 1am most nights and 2am on weekends, for guests 19 and over."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair the Vancouver Art Gallery (closed Tuesdays) with lunch at the Granville Island Public Market, then cross to Capilano Suspension Bridge Park."
+        ],
+        [
+          "A slower morning",
+          "Start with a pastry at Purebread in Gastown from 8am, then walk to Nemesis Coffee on West Hastings before the galleries open at 10."
+        ],
+        [
+          "Before booking",
+          "Kissa Tanto releases tables 30 days ahead on Tock, Capilano passholders must reserve online, and The Keefer Bar admits guests 19 and over only."
+        ]
+      ],
+      trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

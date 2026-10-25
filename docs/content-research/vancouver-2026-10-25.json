@@ -1,0 +1,897 @@
+{
+  "city": "Vancouver, Canada",
+  "checkedOn": "2026-10-25",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Grouse Mountain",
+      "kind": "scenic",
+      "url": "https://www.grousemountain.com/",
+      "sourceType": "operator's own site",
+      "address": "6400 NANCY GREENE WAY NORTH VANCOUVER, BC V7R 4K9",
+      "operatingEvidence": "Current notices: \"the Grouse Grind is currently closed for annual maintenance until Tuesday, November 10th\" (BCMC Trail stays open); Red Skyride has \"newly opened cabins\"; early-bird pass sale with prices up \"November 5th\". The year appears only in image paths, but 10 November falls on a Tuesday in 2026.",
+      "hours": "not published on the page read",
+      "confidence": "medium"
+    },
+    {
+      "name": "Capilano Suspension Bridge Park",
+      "kind": "scenic",
+      "url": "https://www.capbridge.com/",
+      "sourceType": "operator's own site",
+      "address": "3735 Capilano Road, North Vancouver, BC V7R 4J1",
+      "operatingEvidence": "Canyon Frights runs October 9, 2026 to November 1, 2026 (\"Canyon Frights On Now!\"); footer \"© 2026\". Passholders must reserve online in advance and weekend and holiday time slots are limited.",
+      "hours": "\"10 AM - 8 PM\" (promo states 10 AM - 9 PM until October 25)",
+      "confidence": "high"
+    },
+    {
+      "name": "Vancouver Art Gallery",
+      "kind": "museum",
+      "url": "https://www.vanartgallery.bc.ca/",
+      "sourceType": "operator's own site",
+      "address": "750 Hornby Street, Vancouver, BC V6Z 2H7",
+      "operatingEvidence": "Current exhibitions include Future Geographies: Art in the Century of Climate Change and SANCTUARY: The Ancient Forest Experience (May 14, 2026 to January 10, 2027); Free First Friday Nights on November 6, 2026, 4 to 8 PM. Site recommends booking tickets online in advance.",
+      "hours": "Mon, Wed, Thu, Sat, Sun 10 AM-5 PM; Fri 10 AM-8 PM; \"The Gallery is closed on Tuesdays.\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Museum of Anthropology at UBC",
+      "kind": "museum",
+      "url": "https://moa.ubc.ca/",
+      "sourceType": "official public operator (University of British Columbia)",
+      "address": "6393 NW Marine Drive, Vancouver, BC, Canada V6T 1Z2",
+      "operatingEvidence": "Tupananchiskama: Ancient Andean Cosmovision runs March 19, 2026 to January 3, 2027; From the Deep opens November 19, 2026; 2026 holiday hours published. Thursday evenings after 5 pm are half price; tickets sold at the door.",
+      "hours": "Tue-Sun 10 am-5 pm, Thursdays until 9 pm; \"Closed Mondays October 15 – May 15\"",
+      "confidence": "high"
+    },
+    {
+      "name": "The Polygon Gallery",
+      "kind": "museum",
+      "url": "https://thepolygon.ca/",
+      "sourceType": "operator's own site",
+      "address": "101 Carrie Cates Court, North Vancouver, BC V7M 3J4",
+      "operatingEvidence": "Catherine Blackburn + Jeneen Frei Njootli: Traces runs September 25, 2026 to March 14, 2027; The Lind Biennial is listed for November 27, 2026 to January 31, 2027. \"Admission is always by donation, courtesy of BMO.\"",
+      "hours": "Wed 10am-5pm; Thu 10am-9pm; Fri-Sun 10am-5pm (Mon and Tue not listed)",
+      "confidence": "high"
+    },
+    {
+      "name": "Vancouver Maritime Museum",
+      "kind": "museum",
+      "url": "https://www.vanmaritime.com/",
+      "sourceType": "operator's own site",
+      "address": "1905 Ogden Ave., Vancouver, BC V6J 1A3",
+      "operatingEvidence": "Dated programme includes An Evening on St. Roch fundraiser on Thursday, November 12 and October 2026 Argonaut II tours; the St. Roch Revitalization is listed as \"Opening Winter 2026/2027.\"",
+      "hours": "Tuesday to Sunday 10:00 am-5:00 pm; statutory holidays (excluding Christmas) 10:00 am-5:00 pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Museum of Vancouver",
+      "kind": "museum",
+      "url": "https://museumofvancouver.ca/",
+      "sourceType": "operator's own site",
+      "address": "1100 Chestnut Street, Vancouver, BC, V6J 3J9, Canada",
+      "operatingEvidence": "Feature exhibitions include Becoming: The Art of Gu Xiong and The Suitcase Project; dated events include Spooky Storytime for Kids! (November 1, 2026) and Wild Dyes of the Pacific Northwest (November 29, 2026).",
+      "hours": "Mon-Wed 10am-5pm; Thu-Sat 10am-8pm; Sun 10am-5pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Granville Island Public Market",
+      "kind": "market",
+      "url": "https://granvilleisland.com/directory/public-market",
+      "sourceType": "operator's own site (granvilleisland.com)",
+      "address": "1689 Johnston Street, Vancouver, BC V6H 3R9",
+      "operatingEvidence": "granvilleisland.com lists 2026 events on the island (Writers Fest 2026, Theatresports September 4 - December 19) and states \"The Public Market is closed MONDAYS IN JANUARY ONLY for annual maintenance.\"",
+      "hours": "\"Public Market 9 AM – 6 PM\"; Net Loft 10 AM – 6 PM; open statutory holidays except December 25, 26 and January 1",
+      "confidence": "high"
+    },
+    {
+      "name": "Lonsdale Quay Market",
+      "kind": "market",
+      "url": "https://www.lonsdalequay.com/",
+      "sourceType": "operator's own site",
+      "address": "123 Carrie Cates Court, North Vancouver, BC",
+      "operatingEvidence": "Open 7 days a week with published level-by-level hours; \"Coming soon\" Anytime Fitness. 2026 dates appear only in uploaded file paths (hours signage uploaded 2026/04).",
+      "hours": "Market level 9am-7pm; second level 10am-6pm; Food Hall & Bar 10am-9pm Sun-Thu, 10am-11pm Fri-Sat",
+      "confidence": "medium"
+    },
+    {
+      "name": "Blue Water Cafe",
+      "kind": "meal",
+      "url": "https://bluewatercafe.ca/",
+      "sourceType": "operator's own site",
+      "address": "1095 Hamilton Street, Vancouver, BC (Yaletown)",
+      "operatingEvidence": "Lists 2026 awards (Vancouver Magazine \"Best Seafood Restaurant – Silver\", Wine Spectator Award of Excellence); online booking through SevenRooms, \"To book parties of 8 or more, please contact us directly\".",
+      "hours": "Bar daily from 4:30 PM; dinner Sun-Thu from 5 PM, Fri-Sat from 4:30 PM",
+      "confidence": "high"
+    },
+    {
+      "name": "Vij's",
+      "kind": "meal",
+      "url": "https://www.vijs.ca/",
+      "sourceType": "operator's own site",
+      "address": "3106 Cambie St., Vancouver BC V5Z 2W2",
+      "operatingEvidence": "Closure alert for private events on \"THURSDAY, 15 OCTOBER 2026\" and \"TUESDAY, 27 OCTOBER 2026\"; Michelin Bib Gourmand 2023-2026; reservations via Tock and \"Walk-In Guests Always Welcome!\"",
+      "hours": "\"Open Daily from 5:30 p.m.\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Joe Fortes Seafood & Chop House",
+      "kind": "meal",
+      "url": "https://www.joefortes.ca/",
+      "sourceType": "operator's own site",
+      "address": "777 Thurlow Street, Vancouver, BC, Canada",
+      "operatingEvidence": "Hours notice \"We are open 11am to 11pm 7 days a week\" and an active reservations link; no dated 2026 content on the page.",
+      "hours": "11am-11pm, 7 days a week",
+      "confidence": "medium"
+    },
+    {
+      "name": "Miku Vancouver",
+      "kind": "meal",
+      "url": "https://mikurestaurant.com/contact/",
+      "sourceType": "operator's own site",
+      "address": "70-200 Granville Street, Granville Square, Vancouver, BC V6C 1S4 (\"Please access from main entrance on Howe Street\")",
+      "operatingEvidence": "Published hours of operation and OpenTable booking link; latest dated item is a 2025 Wine Spectator award.",
+      "hours": "Mon-Fri 11:30 am-10 pm; Sat-Sun 12 pm-10 pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Café Medina",
+      "kind": "meal",
+      "url": "https://www.medinacafe.com/",
+      "sourceType": "operator's own site",
+      "address": "780 Richards St, Vancouver, BC, V6B 0C8, Canada",
+      "operatingEvidence": "Active reservation booking (\"RESERVE YOUR TABLE NOW\", \"Make a Reservation by Donation\"); no dated 2026 content.",
+      "hours": "not published on the page read",
+      "confidence": "medium"
+    },
+    {
+      "name": "St. Lawrence",
+      "kind": "meal",
+      "url": "https://www.stlawrencerestaurant.com/",
+      "sourceType": "operator's own site",
+      "address": "269 Powell Street Vancouver, BC V6A 1G3",
+      "operatingEvidence": "Published service hours, a table d'hôte section and reservation page; no dated 2026 content.",
+      "hours": "\"Wednesday - Sunday 5pm — 10:30 pm\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Kissa Tanto",
+      "kind": "meal",
+      "url": "https://www.kissatanto.com/",
+      "sourceType": "operator's own site",
+      "address": "263 EAST PENDER STREET VANCOUVER, B.C. V6A 1T8",
+      "operatingEvidence": "Current drinks list file dated September 23, 2026; \"Reservations open 30 days in advance at midnight\" through Tock for parties up to 6.",
+      "hours": "Wed, Thu, Sun 5:30pm-11:00pm; Fri-Sat 5:30pm-12:00am (Mon and Tue not listed)",
+      "confidence": "high"
+    },
+    {
+      "name": "Published on Main",
+      "kind": "meal",
+      "url": "https://www.publishedonmain.com/",
+      "sourceType": "operator's own site",
+      "address": "3593 Main Street, Vancouver, BC V5V 3N4",
+      "operatingEvidence": "States it is \"ranked #17 on North America's 50 Best Restaurants 2026\"; à la carte and Harvest Tasting Menu reservations; footer \"© 2026\".",
+      "hours": "not published on the page read",
+      "confidence": "high"
+    },
+    {
+      "name": "The Teahouse in Stanley Park",
+      "kind": "meal",
+      "url": "https://www.vancouverdine.com/teahouse/",
+      "sourceType": "operator's own site",
+      "address": "Ferguson Point Stanley Park Vancouver, BC",
+      "operatingEvidence": "French Wine Dinner on \"Tuesday, October 27\" at $139 per person; Wine Hour and Dinner for Two offers; reservations via OpenTable or 604.669.3281.",
+      "hours": "General hours not published; Wine Hour Mon, Thu, Fri 2:30pm-5:00pm; Dinner for Two from 4:30pm Thu-Mon",
+      "confidence": "medium"
+    },
+    {
+      "name": "Hawksworth Restaurant",
+      "kind": "meal",
+      "url": "https://hawksworthrestaurant.com/",
+      "sourceType": "operator's own site",
+      "address": "801 West Georgia Street, Vancouver, BC V6C 1P7 (Rosewood Hotel Georgia)",
+      "operatingEvidence": "Menu files dated September 28, October 5 and October 13, 2026; \"2026 MICHELIN Guide Recommended\"; reservations via OpenTable and Exploretock.",
+      "hours": "Lunch Mon-Fri 11:30am-3:00pm; dinner daily 4:00pm until late; Cocktail Hour daily 4pm-6pm (lounge only)",
+      "confidence": "high"
+    },
+    {
+      "name": "The Keefer Bar",
+      "kind": "bar",
+      "url": "https://www.thekeeferbar.com/",
+      "sourceType": "operator's own site",
+      "address": "135 Keefer Street, Vancouver Chinatown",
+      "operatingEvidence": "Footer \"© 2026 The Keefer Bar\"; \"we always save plenty of space for walk-ins\"; \"Guests must be 19+.\"",
+      "hours": "Sun-Thu 4:00pm-1:00am; Fri-Sat 4:00pm-2:00am",
+      "confidence": "high"
+    },
+    {
+      "name": "Botanist",
+      "kind": "bar",
+      "url": "https://www.botanistrestaurant.com/location/botanist/",
+      "sourceType": "operator's own site",
+      "address": "1038 Canada Place, Vancouver, BC V6C 0B9 (Fairmont Pacific Rim)",
+      "operatingEvidence": "Published daily dining room and bar hours and an OpenTable booking link; no dated 2026 content.",
+      "hours": "Dining room daily 5:00pm-9:30pm; Botanist Bar daily 5:00pm-11:00pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Pourhouse",
+      "kind": "bar",
+      "url": "https://www.pourhousevancouver.com/",
+      "sourceType": "operator's own site",
+      "address": "162 Water Street, Vancouver, BC, V6B 2M9, Canada",
+      "operatingEvidence": "Published hours, daily happy hour 3pm-6pm and reservation buttons; no dated 2026 content, and two conflicting hour listings.",
+      "hours": "Conflicting: footer Mon-Thu 11:30am-11pm, Fri 11:30am-12am, Sat 10am-12am, Sun 10am-11pm; dining section Tue-Thu 11:30am-12AM, Fri-Sat 11:30am-1AM, Sun-Mon 11:30am-12AM",
+      "confidence": "medium"
+    },
+    {
+      "name": "Purebread (Gastown)",
+      "kind": "bakery",
+      "url": "https://purebread.ca/find-us",
+      "sourceType": "operator's own site",
+      "address": "159 W. Hastings Street, Vancouver",
+      "operatingEvidence": "Find-us page lists the Gastown branch with daily hours; FAQ says stores open 7 days a week except December 25, 26 and January 1. No dated 2026 content.",
+      "hours": "Daily 8am-4pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Beaucoup Bakery (Kitsilano)",
+      "kind": "bakery",
+      "url": "https://www.beaucoupbakery.com/contact",
+      "sourceType": "operator's own site",
+      "address": "2150 Fir St, Vancouver, BC V6J 3B5",
+      "operatingEvidence": "Contact page publishes branch hours and closed days; no dated 2026 content, and the page layout makes the Kitsilano hours partly ambiguous.",
+      "hours": "Mon, Thu 7am-3pm; Fri 7am-5pm; Sat-Sun 8am-5pm; closed Tuesdays and Wednesdays (layout ambiguous)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Small Victory (Yaletown)",
+      "kind": "bakery",
+      "url": "https://www.smallvictory.ca/",
+      "sourceType": "operator's own site",
+      "address": "1089 Marinaside Crescent, Vancouver, BC V6Z 2Z4",
+      "operatingEvidence": "Branch listing with hours and phone (604-336-6025); no explicit 2026 date on the page.",
+      "hours": "Daily 8am-5pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Nemesis Coffee (Gastown)",
+      "kind": "cafe",
+      "url": "https://www.nemesis.coffee/",
+      "sourceType": "operator's own site",
+      "address": "302 W Hastings St, Vancouver",
+      "operatingEvidence": "Locations page lists the Gastown branch with weekday and weekend hours; no dated 2026 content.",
+      "hours": "Mon-Fri 8-4; Sat-Sun 8-4",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Stanley Park",
+      "reason": "Official City of Vancouver page returned HTTP 403 Forbidden to automated reading; not bypassed. Not evidence of closure.",
+      "url": "https://vancouver.ca/parks-recreation-culture/stanley-park.aspx"
+    },
+    {
+      "name": "Vancouver Aquarium",
+      "reason": "Official site returned HTTP 403 Forbidden; not bypassed.",
+      "url": "https://www.vanaqua.org/"
+    },
+    {
+      "name": "Dr. Sun Yat-Sen Classical Chinese Garden",
+      "reason": "Official site returned HTTP 403 Forbidden; not bypassed.",
+      "url": "https://vancouverchinesegarden.com/"
+    },
+    {
+      "name": "Science World",
+      "reason": "Homepage returned only a cookie notice with no readable visit content; visit pages tried returned 404.",
+      "url": "https://www.scienceworld.ca/"
+    },
+    {
+      "name": "Vancouver Lookout",
+      "reason": "Official site returned nothing readable beyond the title.",
+      "url": "https://vancouverlookout.com/"
+    },
+    {
+      "name": "FlyOver Canada",
+      "reason": "Official site (redirected to experienceflyover.com) returned nothing readable beyond the title.",
+      "url": "https://www.experienceflyover.com/vancouver/"
+    },
+    {
+      "name": "Bill Reid Gallery",
+      "reason": "Official site returned HTTP 429 Too Many Requests on two attempts.",
+      "url": "https://www.billreidgallery.ca/"
+    },
+    {
+      "name": "49th Parallel Coffee",
+      "reason": "Official locations page returned HTTP 429 Too Many Requests on three attempts.",
+      "url": "https://49thcoffee.com/pages/locations"
+    },
+    {
+      "name": "Revolver Coffee",
+      "reason": "Official site returned HTTP 429 Too Many Requests on two attempts.",
+      "url": "https://www.revolvercoffee.ca/"
+    },
+    {
+      "name": "Anh and Chi",
+      "reason": "Official site returned HTTP 429 Too Many Requests on two attempts.",
+      "url": "https://www.anhandchi.com/"
+    },
+    {
+      "name": "Elysian Coffee",
+      "reason": "Official site returned HTTP 429 Too Many Requests.",
+      "url": "https://www.elysiancoffee.com/"
+    },
+    {
+      "name": "Matchstick Coffee",
+      "reason": "Official site returned no readable content.",
+      "url": "https://matchstickcoffee.com/"
+    },
+    {
+      "name": "The Diamond (Gastown)",
+      "reason": "Former official domain di6mond.com now redirects to ghostalleyespresso.com; the bar could not be confirmed.",
+      "url": "https://www.di6mond.com/"
+    },
+    {
+      "name": "Jam Cafe",
+      "reason": "Official site lists hours by branch but no street addresses; no dated content.",
+      "url": "https://www.jamcafes.com/"
+    },
+    {
+      "name": "Breka Bakery & Café",
+      "reason": "Official site gives no branch street addresses in its text, and an 'Important Notice' about temporary store closures was not readable.",
+      "url": "https://www.breka.ca/"
+    },
+    {
+      "name": "Ask for Luigi",
+      "reason": "Readable portion of official site gave no address, hours or dated content.",
+      "url": "https://www.askforluigi.com/"
+    },
+    {
+      "name": "Lee's Donuts",
+      "reason": "Readable portion of official site listed branches but no street address or hours.",
+      "url": "https://www.leesdonuts.ca/"
+    },
+    {
+      "name": "Prohibition (Rosewood Hotel Georgia)",
+      "reason": "Not listed among the hotel's dining venues on the official Rosewood page (which lists 1927 Lounge, The Georgia Bar, Hawksworth, Prophecy and others); not confirmed.",
+      "url": "https://www.rosewoodhotels.com/en/hotel-georgia-vancouver/dining/prohibition"
+    },
+    {
+      "name": "Granville Island",
+      "reason": "Area rather than a single venue; the official granvilleisland.com pages give no single street address, so it is covered through Granville Island Public Market.",
+      "url": "https://granvilleisland.com/"
+    },
+    {
+      "name": "Stanley Park bike ride",
+      "reason": "generic, not a place (activity; Stanley Park page blocked)",
+      "url": ""
+    },
+    {
+      "name": "North Shore mountains",
+      "reason": "generic, not a place (covered through Grouse Mountain)",
+      "url": ""
+    },
+    {
+      "name": "a seafood or Asian food crawl",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Vancouver market or cafe",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local dinner in Downtown",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Gastown",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Kitsilano",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Downtown",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Downtown walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Gastown",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Kitsilano",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Kitsilano",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Stanley Park",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Downtown",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Stanley Park bike ride",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Gastown",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Granville Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Downtown evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Gastown",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Kitsilano",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Downtown",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Stanley Park",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Gastown",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Kitsilano",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Downtown",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Stanley Park",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Downtown cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Grouse Mountain outing",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Kitsilano",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Kitsilano",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Downtown",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Downtown",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Gastown bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Stanley Park",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Kitsilano",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Downtown",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Granville Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Kitsilano",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Downtown",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Gastown",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Kitsilano",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Downtown",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Downtown",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Gastown",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near North Shore mountains",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Downtown",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Gastown morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Stanley Park",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Kitsilano",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Downtown",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Gastown",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Kitsilano",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Grouse Mountain",
+        "Capilano Suspension Bridge Park",
+        "Vancouver Art Gallery",
+        "Granville Island Public Market"
+      ],
+      "bestFirstTimers": [
+        "Granville Island Public Market",
+        "Vancouver Art Gallery",
+        "Capilano Suspension Bridge Park",
+        "Museum of Anthropology at UBC"
+      ],
+      "bestRestaurants": [
+        "Vij's",
+        "Blue Water Cafe",
+        "Published on Main",
+        "Kissa Tanto"
+      ],
+      "bestBudget": [
+        "The Polygon Gallery",
+        "Lonsdale Quay Market",
+        "Granville Island Public Market",
+        "Nemesis Coffee (Gastown)"
+      ],
+      "bestLuxury": [
+        "Hawksworth Restaurant",
+        "Botanist",
+        "Blue Water Cafe",
+        "Published on Main"
+      ],
+      "bestCouples": [
+        "The Teahouse in Stanley Park",
+        "Kissa Tanto",
+        "St. Lawrence",
+        "Botanist"
+      ],
+      "bestKids": [
+        "Museum of Vancouver",
+        "Vancouver Maritime Museum",
+        "Grouse Mountain",
+        "Granville Island Public Market"
+      ],
+      "bestSolo": [
+        "Museum of Anthropology at UBC",
+        "The Polygon Gallery",
+        "Vancouver Art Gallery",
+        "Nemesis Coffee (Gastown)"
+      ],
+      "bestUnique": [
+        "Museum of Anthropology at UBC",
+        "Vancouver Maritime Museum",
+        "The Keefer Bar",
+        "Lonsdale Quay Market"
+      ],
+      "bestBreakfast": [
+        "Café Medina",
+        "Purebread (Gastown)",
+        "Small Victory (Yaletown)",
+        "Beaucoup Bakery (Kitsilano)"
+      ],
+      "bestLunch": [
+        "Miku Vancouver",
+        "Hawksworth Restaurant",
+        "Joe Fortes Seafood & Chop House",
+        "Granville Island Public Market"
+      ],
+      "bestDinner": [
+        "Vij's",
+        "St. Lawrence",
+        "Kissa Tanto",
+        "Blue Water Cafe"
+      ],
+      "bestCocktails": [
+        "The Keefer Bar",
+        "Botanist",
+        "Hawksworth Restaurant",
+        "The Pourhouse"
+      ],
+      "bestBakeries": [
+        "Purebread (Gastown)",
+        "Beaucoup Bakery (Kitsilano)",
+        "Small Victory (Yaletown)"
+      ],
+      "bestCoffee": [
+        "Nemesis Coffee (Gastown)",
+        "Small Victory (Yaletown)",
+        "Café Medina"
+      ]
+    },
+    "queries": {
+      "Grouse Mountain": "Grouse Mountain 6400 Nancy Greene Way North Vancouver",
+      "Capilano Suspension Bridge Park": "Capilano Suspension Bridge Park 3735 Capilano Road North Vancouver",
+      "Vancouver Art Gallery": "Vancouver Art Gallery 750 Hornby Street Vancouver",
+      "Museum of Anthropology at UBC": "Museum of Anthropology at UBC 6393 NW Marine Drive Vancouver",
+      "The Polygon Gallery": "The Polygon Gallery 101 Carrie Cates Court North Vancouver",
+      "Vancouver Maritime Museum": "Vancouver Maritime Museum 1905 Ogden Ave Vancouver",
+      "Museum of Vancouver": "Museum of Vancouver 1100 Chestnut Street Vancouver",
+      "Granville Island Public Market": "Granville Island Public Market 1689 Johnston Street Vancouver",
+      "Lonsdale Quay Market": "Lonsdale Quay Market 123 Carrie Cates Court North Vancouver",
+      "Blue Water Cafe": "Blue Water Cafe 1095 Hamilton Street Vancouver",
+      "Vij's": "Vij's 3106 Cambie Street Vancouver",
+      "Joe Fortes Seafood & Chop House": "Joe Fortes Seafood & Chop House 777 Thurlow Street Vancouver",
+      "Miku Vancouver": "Miku 200 Granville Street Vancouver",
+      "Café Medina": "Café Medina 780 Richards Street Vancouver",
+      "St. Lawrence": "St. Lawrence 269 Powell Street Vancouver",
+      "Kissa Tanto": "Kissa Tanto 263 East Pender Street Vancouver",
+      "Published on Main": "Published on Main 3593 Main Street Vancouver",
+      "The Teahouse in Stanley Park": "The Teahouse Ferguson Point Stanley Park Vancouver",
+      "Hawksworth Restaurant": "Hawksworth Restaurant 801 West Georgia Street Vancouver",
+      "The Keefer Bar": "The Keefer Bar 135 Keefer Street Vancouver",
+      "Botanist": "Botanist 1038 Canada Place Vancouver",
+      "The Pourhouse": "The Pourhouse 162 Water Street Vancouver",
+      "Purebread (Gastown)": "Purebread 159 West Hastings Street Vancouver",
+      "Beaucoup Bakery (Kitsilano)": "Beaucoup Bakery 2150 Fir Street Vancouver",
+      "Small Victory (Yaletown)": "Small Victory 1089 Marinaside Crescent Vancouver",
+      "Nemesis Coffee (Gastown)": "Nemesis Coffee 302 West Hastings Street Vancouver"
+    },
+    "summary": "Museums, North Shore viewpoints and public markets, with breakfast spots, dinners, bakeries, coffee and cocktail bars checked against their own websites.",
+    "highlights": [
+      "Capilano Suspension Bridge Park",
+      "Museum of Anthropology at UBC",
+      "Vancouver Art Gallery",
+      "Granville Island Public Market"
+    ],
+    "tip": "Check closing days before you plan: the Vancouver Art Gallery is closed on Tuesdays, the Museum of Anthropology at UBC is closed Mondays from October 15 to May 15, and The Polygon Gallery lists no Monday or Tuesday hours.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Tue and Mon gaps",
+        "copy": "The Vancouver Art Gallery is closed on Tuesdays, and the Museum of Anthropology at UBC is closed Mondays from October 15 to May 15. Vancouver Maritime Museum opens Tuesday to Sunday, and St. Lawrence serves Wednesday to Sunday only."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book ahead",
+        "copy": "The Vancouver Art Gallery recommends booking online to avoid the line, and Capilano Suspension Bridge Park says passholders must reserve online with limited weekend slots. Kissa Tanto releases Tock reservations 30 days in advance at midnight."
+      },
+      {
+        "label": "Walk-ins and deals",
+        "value": "Free or cheaper slots",
+        "copy": "Vij's says walk-in guests are always welcome, and The Keefer Bar keeps plenty of space for walk-ins. The Polygon Gallery is always by donation, and the Museum of Anthropology at UBC is half price on Thursdays after 5 pm."
+      },
+      {
+        "label": "Rules",
+        "value": "19+ and large groups",
+        "copy": "The Keefer Bar states guests must be 19+. Blue Water Cafe asks parties of 8 or more to contact it directly, and Kissa Tanto's largest table seats 6."
+      }
+    ],
+    "dek": "Pair one North Shore outing with a museum day downtown or at UBC, and check each venue's closing day before you commit.",
+    "intro": [
+      "Vancouver rewards you for splitting your days between the city and the North Shore. Capilano Suspension Bridge Park at 3735 Capilano Road lists hours of 10 AM to 8 PM and asks passholders to reserve online, with limited weekend and holiday slots. Further up Nancy Greene Way, Grouse Mountain advertises newly opened Red Skyride cabins. Back on the water, Lonsdale Quay Market is open seven days a week, and The Polygon Gallery next door is always admission by donation, open Wednesday to Sunday with Thursdays until 9pm.",
+      "For museums, plan around closing days. The Vancouver Art Gallery on Hornby Street is closed on Tuesdays and stays open until 8 PM on Fridays; Future Geographies and SANCTUARY: The Ancient Forest Experience both run until January 10, 2027. The Museum of Anthropology at UBC is closed Mondays from October 15 to May 15, opens late on Thursdays until 9 pm at half price after 5 pm, and shows Tupananchiskama: Ancient Andean Cosmovision until January 3, 2027, with From the Deep opening November 19, 2026.",
+      "In Kitsilano, the Museum of Vancouver stays open until 8pm Thursday to Saturday, and the Vancouver Maritime Museum opens Tuesday to Sunday, with its St. Roch Revitalization listed as opening Winter 2026/2027. For a slower morning, the Granville Island Public Market opens 9 AM to 6 PM and closes on Mondays in January only. Purebread's Gastown branch opens daily from 8am, while Beaucoup Bakery's Kitsilano shop lists closures on Tuesdays and Wednesdays.",
+      "Dinner needs some planning. Kissa Tanto on East Pender opens Tock reservations 30 days ahead at midnight, while Vij's on Cambie opens daily from 5:30 p.m. and says walk-in guests are always welcome. Published on Main says it is ranked #17 on North America's 50 Best Restaurants 2026, and Hawksworth runs a daily lounge-only cocktail hour from 4pm to 6pm. For a late drink, The Keefer Bar in Chinatown is open until 1am most nights and 2am on weekends, for guests 19 and over."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair the Vancouver Art Gallery (closed Tuesdays) with lunch at the Granville Island Public Market, then cross to Capilano Suspension Bridge Park."
+      ],
+      [
+        "A slower morning",
+        "Start with a pastry at Purebread in Gastown from 8am, then walk to Nemesis Coffee on West Hastings before the galleries open at 10."
+      ],
+      [
+        "Before booking",
+        "Kissa Tanto releases tables 30 days ahead on Tock, Capilano passholders must reserve online, and The Keefer Bar admits guests 19 and over only."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Stanley Park (City of Vancouver), the Vancouver Aquarium and Dr. Sun Yat-Sen Classical Chinese Garden returned HTTP 403; Bill Reid Gallery, 49th Parallel, Revolver, Anh and Chi and Elysian Coffee returned HTTP 429; Science World, Vancouver Lookout, FlyOver Canada and Matchstick Coffee returned no readable content, so none of these are included, and none of these failures indicates a closure. Several confirmed places publish no dated 2026 content and rest on standing hours or booking notices (Joe Fortes, Miku, Café Medina, St. Lawrence, Botanist, The Pourhouse, Purebread, Beaucoup Bakery, Small Victory, Nemesis Coffee, Lonsdale Quay Market); Grouse Mountain, Café Medina and Published on Main publish no hours on the pages read; The Pourhouse shows two conflicting hour sets; and Beaucoup Bakery's Kitsilano hours are ambiguous in the page layout. The Diamond's former domain now redirects to another business. One automated summary of the Lonsdale Quay page mentioned AI-directed text, but a re-read found none, so nothing is quoted.",
+  "injectionLikeText": []
+}

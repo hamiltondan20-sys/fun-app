@@ -5,6 +5,652 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Vancouver, Canada": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-25",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Stanley Park (City of Vancouver), the Vancouver Aquarium and Dr. Sun Yat-Sen Classical Chinese Garden returned HTTP 403; Bill Reid Gallery, 49th Parallel, Revolver, Anh and Chi and Elysian Coffee returned HTTP 429; Science World, Vancouver Lookout, FlyOver Canada and Matchstick Coffee returned no readable content, so none of these are included, and none of these failures indicates a closure. Several confirmed places publish no dated 2026 content and rest on standing hours or booking notices (Joe Fortes, Miku, Café Medina, St. Lawrence, Botanist, The Pourhouse, Purebread, Beaucoup Bakery, Small Victory, Nemesis Coffee, Lonsdale Quay Market); Grouse Mountain, Café Medina and Published on Main publish no hours on the pages read; The Pourhouse shows two conflicting hour sets; and Beaucoup Bakery's Kitsilano hours are ambiguous in the page layout. The Diamond's former domain now redirects to another business. One automated summary of the Lonsdale Quay page mentioned AI-directed text, but a re-read found none, so nothing is quoted.",
+    "sourceUrls": [
+      "docs/content-research/vancouver-2026-10-25.md",
+      "docs/content-research/vancouver-2026-10-25.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Stanley Park",
+        "url": "https://vancouver.ca/parks-recreation-culture/stanley-park.aspx",
+        "checkedOn": "2026-10-25",
+        "reason": "Official City of Vancouver page returned HTTP 403 Forbidden to automated reading; not bypassed. Not evidence of closure."
+      },
+      {
+        "name": "Vancouver Aquarium",
+        "url": "https://www.vanaqua.org/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site returned HTTP 403 Forbidden; not bypassed."
+      },
+      {
+        "name": "Dr. Sun Yat-Sen Classical Chinese Garden",
+        "url": "https://vancouverchinesegarden.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site returned HTTP 403 Forbidden; not bypassed."
+      },
+      {
+        "name": "Science World",
+        "url": "https://www.scienceworld.ca/",
+        "checkedOn": "2026-10-25",
+        "reason": "Homepage returned only a cookie notice with no readable visit content; visit pages tried returned 404."
+      },
+      {
+        "name": "Vancouver Lookout",
+        "url": "https://vancouverlookout.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site returned nothing readable beyond the title."
+      },
+      {
+        "name": "FlyOver Canada",
+        "url": "https://www.experienceflyover.com/vancouver/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site (redirected to experienceflyover.com) returned nothing readable beyond the title."
+      },
+      {
+        "name": "Bill Reid Gallery",
+        "url": "https://www.billreidgallery.ca/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site returned HTTP 429 Too Many Requests on two attempts."
+      },
+      {
+        "name": "49th Parallel Coffee",
+        "url": "https://49thcoffee.com/pages/locations",
+        "checkedOn": "2026-10-25",
+        "reason": "Official locations page returned HTTP 429 Too Many Requests on three attempts."
+      },
+      {
+        "name": "Revolver Coffee",
+        "url": "https://www.revolvercoffee.ca/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site returned HTTP 429 Too Many Requests on two attempts."
+      },
+      {
+        "name": "Anh and Chi",
+        "url": "https://www.anhandchi.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site returned HTTP 429 Too Many Requests on two attempts."
+      },
+      {
+        "name": "Elysian Coffee",
+        "url": "https://www.elysiancoffee.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site returned HTTP 429 Too Many Requests."
+      },
+      {
+        "name": "Matchstick Coffee",
+        "url": "https://matchstickcoffee.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site returned no readable content."
+      },
+      {
+        "name": "The Diamond (Gastown)",
+        "url": "https://www.di6mond.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Former official domain di6mond.com now redirects to ghostalleyespresso.com; the bar could not be confirmed."
+      },
+      {
+        "name": "Jam Cafe",
+        "url": "https://www.jamcafes.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site lists hours by branch but no street addresses; no dated content."
+      },
+      {
+        "name": "Breka Bakery & Café",
+        "url": "https://www.breka.ca/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site gives no branch street addresses in its text, and an 'Important Notice' about temporary store closures was not readable."
+      },
+      {
+        "name": "Ask for Luigi",
+        "url": "https://www.askforluigi.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Readable portion of official site gave no address, hours or dated content."
+      },
+      {
+        "name": "Lee's Donuts",
+        "url": "https://www.leesdonuts.ca/",
+        "checkedOn": "2026-10-25",
+        "reason": "Readable portion of official site listed branches but no street address or hours."
+      },
+      {
+        "name": "Prohibition (Rosewood Hotel Georgia)",
+        "url": "https://www.rosewoodhotels.com/en/hotel-georgia-vancouver/dining/prohibition",
+        "checkedOn": "2026-10-25",
+        "reason": "Not listed among the hotel's dining venues on the official Rosewood page (which lists 1927 Lounge, The Georgia Bar, Hawksworth, Prophecy and others); not confirmed."
+      },
+      {
+        "name": "Granville Island",
+        "url": "https://granvilleisland.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Area rather than a single venue; the official granvilleisland.com pages give no single street address, so it is covered through Granville Island Public Market."
+      },
+      {
+        "name": "Stanley Park bike ride",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (activity; Stanley Park page blocked)"
+      },
+      {
+        "name": "North Shore mountains",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (covered through Grouse Mountain)"
+      },
+      {
+        "name": "a seafood or Asian food crawl",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Vancouver market or cafe",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local dinner in Downtown",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Gastown",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Kitsilano",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Downtown",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Downtown walk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Gastown",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Kitsilano",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Kitsilano",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Stanley Park",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Downtown",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Stanley Park bike ride",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Gastown",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Granville Island",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Downtown evening",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Gastown",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Kitsilano",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Downtown",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Stanley Park",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Gastown",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Kitsilano",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Downtown",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Stanley Park",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Downtown cafe or market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Grouse Mountain outing",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Kitsilano",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Kitsilano",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Downtown",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Downtown",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Gastown bakery or market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Stanley Park",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Kitsilano",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Downtown",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Granville Island",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Kitsilano",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Downtown",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Gastown",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Kitsilano",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Downtown",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Downtown",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Gastown",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near North Shore mountains",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Downtown",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Gastown morning market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Stanley Park",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Kitsilano",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Downtown",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Gastown",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Kitsilano",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Grouse Mountain": {
+        "url": "https://www.grousemountain.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current notices: \"the Grouse Grind is currently closed for annual maintenance until Tuesday, November 10th\" (BCMC Trail stays open); Red Skyride has \"newly opened cabins\"; early-bird pass sale with prices up \"November 5th\". The year appears only in image paths, but 10 November falls on a Tuesday in 2026."
+      },
+      "Capilano Suspension Bridge Park": {
+        "url": "https://www.capbridge.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Canyon Frights runs October 9, 2026 to November 1, 2026 (\"Canyon Frights On Now!\"); footer \"© 2026\". Passholders must reserve online in advance and weekend and holiday time slots are limited."
+      },
+      "Vancouver Art Gallery": {
+        "url": "https://www.vanartgallery.bc.ca/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibitions include Future Geographies: Art in the Century of Climate Change and SANCTUARY: The Ancient Forest Experience (May 14, 2026 to January 10, 2027); Free First Friday Nights on November 6, 2026, 4 to 8 PM. Site recommends booking tickets online in advance."
+      },
+      "Museum of Anthropology at UBC": {
+        "url": "https://moa.ubc.ca/",
+        "sourceType": "official public operator (University of British Columbia)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Tupananchiskama: Ancient Andean Cosmovision runs March 19, 2026 to January 3, 2027; From the Deep opens November 19, 2026; 2026 holiday hours published. Thursday evenings after 5 pm are half price; tickets sold at the door."
+      },
+      "The Polygon Gallery": {
+        "url": "https://thepolygon.ca/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Catherine Blackburn + Jeneen Frei Njootli: Traces runs September 25, 2026 to March 14, 2027; The Lind Biennial is listed for November 27, 2026 to January 31, 2027. \"Admission is always by donation, courtesy of BMO.\""
+      },
+      "Vancouver Maritime Museum": {
+        "url": "https://www.vanmaritime.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Dated programme includes An Evening on St. Roch fundraiser on Thursday, November 12 and October 2026 Argonaut II tours; the St. Roch Revitalization is listed as \"Opening Winter 2026/2027.\""
+      },
+      "Museum of Vancouver": {
+        "url": "https://museumofvancouver.ca/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Feature exhibitions include Becoming: The Art of Gu Xiong and The Suitcase Project; dated events include Spooky Storytime for Kids! (November 1, 2026) and Wild Dyes of the Pacific Northwest (November 29, 2026)."
+      },
+      "Granville Island Public Market": {
+        "url": "https://granvilleisland.com/directory/public-market",
+        "sourceType": "operator's own site (granvilleisland.com)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "granvilleisland.com lists 2026 events on the island (Writers Fest 2026, Theatresports September 4 - December 19) and states \"The Public Market is closed MONDAYS IN JANUARY ONLY for annual maintenance.\""
+      },
+      "Lonsdale Quay Market": {
+        "url": "https://www.lonsdalequay.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Open 7 days a week with published level-by-level hours; \"Coming soon\" Anytime Fitness. 2026 dates appear only in uploaded file paths (hours signage uploaded 2026/04)."
+      },
+      "Blue Water Cafe": {
+        "url": "https://bluewatercafe.ca/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Lists 2026 awards (Vancouver Magazine \"Best Seafood Restaurant – Silver\", Wine Spectator Award of Excellence); online booking through SevenRooms, \"To book parties of 8 or more, please contact us directly\"."
+      },
+      "Vij's": {
+        "url": "https://www.vijs.ca/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Closure alert for private events on \"THURSDAY, 15 OCTOBER 2026\" and \"TUESDAY, 27 OCTOBER 2026\"; Michelin Bib Gourmand 2023-2026; reservations via Tock and \"Walk-In Guests Always Welcome!\""
+      },
+      "Joe Fortes Seafood & Chop House": {
+        "url": "https://www.joefortes.ca/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Hours notice \"We are open 11am to 11pm 7 days a week\" and an active reservations link; no dated 2026 content on the page."
+      },
+      "Miku Vancouver": {
+        "url": "https://mikurestaurant.com/contact/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published hours of operation and OpenTable booking link; latest dated item is a 2025 Wine Spectator award."
+      },
+      "Café Medina": {
+        "url": "https://www.medinacafe.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Active reservation booking (\"RESERVE YOUR TABLE NOW\", \"Make a Reservation by Donation\"); no dated 2026 content."
+      },
+      "St. Lawrence": {
+        "url": "https://www.stlawrencerestaurant.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published service hours, a table d'hôte section and reservation page; no dated 2026 content."
+      },
+      "Kissa Tanto": {
+        "url": "https://www.kissatanto.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current drinks list file dated September 23, 2026; \"Reservations open 30 days in advance at midnight\" through Tock for parties up to 6."
+      },
+      "Published on Main": {
+        "url": "https://www.publishedonmain.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "States it is \"ranked #17 on North America's 50 Best Restaurants 2026\"; à la carte and Harvest Tasting Menu reservations; footer \"© 2026\"."
+      },
+      "The Teahouse in Stanley Park": {
+        "url": "https://www.vancouverdine.com/teahouse/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "French Wine Dinner on \"Tuesday, October 27\" at $139 per person; Wine Hour and Dinner for Two offers; reservations via OpenTable or 604.669.3281."
+      },
+      "Hawksworth Restaurant": {
+        "url": "https://hawksworthrestaurant.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Menu files dated September 28, October 5 and October 13, 2026; \"2026 MICHELIN Guide Recommended\"; reservations via OpenTable and Exploretock."
+      },
+      "The Keefer Bar": {
+        "url": "https://www.thekeeferbar.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Footer \"© 2026 The Keefer Bar\"; \"we always save plenty of space for walk-ins\"; \"Guests must be 19+.\""
+      },
+      "Botanist": {
+        "url": "https://www.botanistrestaurant.com/location/botanist/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published daily dining room and bar hours and an OpenTable booking link; no dated 2026 content."
+      },
+      "The Pourhouse": {
+        "url": "https://www.pourhousevancouver.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published hours, daily happy hour 3pm-6pm and reservation buttons; no dated 2026 content, and two conflicting hour listings."
+      },
+      "Purebread (Gastown)": {
+        "url": "https://purebread.ca/find-us",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Find-us page lists the Gastown branch with daily hours; FAQ says stores open 7 days a week except December 25, 26 and January 1. No dated 2026 content."
+      },
+      "Beaucoup Bakery (Kitsilano)": {
+        "url": "https://www.beaucoupbakery.com/contact",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Contact page publishes branch hours and closed days; no dated 2026 content, and the page layout makes the Kitsilano hours partly ambiguous."
+      },
+      "Small Victory (Yaletown)": {
+        "url": "https://www.smallvictory.ca/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Branch listing with hours and phone (604-336-6025); no explicit 2026 date on the page."
+      },
+      "Nemesis Coffee (Gastown)": {
+        "url": "https://www.nemesis.coffee/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Locations page lists the Gastown branch with weekday and weekend hours; no dated 2026 content."
+      }
+    }
+  },
   "Toronto, Canada": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-25",
