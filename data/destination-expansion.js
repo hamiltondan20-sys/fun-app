@@ -2067,4 +2067,107 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 27 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Sydney, Australia: source review of 2026-10-25 (docs/content-research/sydney-2026-10-25.md).
+  {
+    const cityKey = "Sydney, Australia";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Sydney Opera House","Art Gallery of New South Wales","Royal Botanic Garden Sydney","BridgeMuseum"],
+      bestFirstTimers: ["Sydney Opera House","Royal Botanic Garden Sydney","Australian National Maritime Museum","BridgeMuseum"],
+      bestRestaurants: ["Bennelong","Saint Peter","Firedoor","Ester"],
+      bestBudget: ["Art Gallery of New South Wales","Australian Museum","Paddington Markets","Royal Botanic Garden Sydney"],
+      bestLuxury: ["Bennelong","Aria","Saint Peter","Rockpool Bar & Grill (Sydney)"],
+      bestCouples: ["Bennelong","Maybe Sammy","Dean & Nancy on 22","Sydney Observatory"],
+      bestKids: ["Australian Museum","Australian National Maritime Museum","Sydney Observatory","Bondi Icebergs Pool"],
+      bestSolo: ["Art Gallery of New South Wales","Single O (Surry Hills)","Paddington Markets"],
+      bestUnique: ["Bondi Icebergs Pool","Sydney Observatory","BridgeMuseum","Sydney Fish Market"],
+      bestBreakfast: ["bills (Surry Hills)","A.P Bread & Wine (Darlinghurst)","Skittle Lane (CBD)","Dean & Nancy on 22"],
+      bestLunch: ["Saint Peter","Sydney Fish Market","Icebergs Dining Room and Bar","Firedoor"],
+      bestDinner: ["Bennelong","Firedoor","Ester","Aria"],
+      bestCocktails: ["Maybe Sammy","Dean & Nancy on 22","Bennelong"],
+      bestBakeries: ["Bourke Street Bakery (Surry Hills)","Flour and Stone (Pantry)","A.P Bread & Wine (Darlinghurst)"],
+      bestCoffee: ["Single O (Surry Hills)","Skittle Lane (CBD)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Sydney Opera House": "Sydney Opera House Bennelong Point Sydney",
+      "Art Gallery of New South Wales": "Art Gallery of New South Wales Art Gallery Road Sydney",
+      "Royal Botanic Garden Sydney": "Royal Botanic Garden Mrs Macquaries Road Sydney",
+      "BridgeMuseum": "BridgeMuseum South-East Pylon Sydney Harbour Bridge The Rocks Sydney",
+      "Australian National Maritime Museum": "Australian National Maritime Museum 2 Murray Street Darling Harbour Sydney",
+      "Bennelong": "Bennelong Bennelong Point Sydney",
+      "Saint Peter": "Saint Peter 161 Underwood St Paddington Sydney",
+      "Firedoor": "Firedoor 23-33 Mary Street Surry Hills Sydney",
+      "Ester": "Ester 46-52 Meagher St Chippendale Sydney",
+      "Australian Museum": "Australian Museum 1 William Street Sydney",
+      "Paddington Markets": "Paddington Markets 395 Oxford Street Paddington Sydney",
+      "Aria": "Aria 1 Macquarie St Sydney",
+      "Rockpool Bar & Grill (Sydney)": "Rockpool Bar & Grill 66 Hunter Street Sydney",
+      "Maybe Sammy": "Maybe Sammy 115 Harrington Street The Rocks Sydney",
+      "Dean & Nancy on 22": "Dean & Nancy on 22 2 Hunter Street Sydney",
+      "Sydney Observatory": "Sydney Observatory 1003 Upper Fort Street Millers Point Sydney",
+      "Bondi Icebergs Pool": "Bondi Icebergs Pool 1 Notts Avenue Bondi Beach Sydney",
+      "Single O (Surry Hills)": "Single O 60-64 Reservoir St Surry Hills Sydney",
+      "Sydney Fish Market": "Sydney Fish Market 1 Bridge Rd Glebe Sydney",
+      "bills (Surry Hills)": "bills 355 Crown Street Surry Hills Sydney",
+      "A.P Bread & Wine (Darlinghurst)": "A.P Bread & Wine 32 Burton St Darlinghurst Sydney",
+      "Skittle Lane (CBD)": "Skittle Lane 40 King St Sydney",
+      "Icebergs Dining Room and Bar": "Icebergs Dining Room and Bar 1 Notts Avenue Bondi Beach Sydney",
+      "Bourke Street Bakery (Surry Hills)": "Bourke Street Bakery 633 Bourke Street Surry Hills Sydney",
+      "Flour and Stone (Pantry)": "Flour and Stone 53 Riley Street Woolloomooloo Sydney"
+    };
+    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (cityGuide) {
+      cityGuide.summary = "Harbour landmarks, free galleries and museums, markets and an ocean pool, with breakfast spots, bakeries, coffee, dinners and cocktail bars checked against their own websites.";
+      cityGuide.highlights = ["Sydney Opera House","Art Gallery of New South Wales","Royal Botanic Garden Sydney","Australian National Maritime Museum"];
+      cityGuide.tip = "The Art Gallery of New South Wales stays open until 10pm on Wednesdays, while Sydney Observatory opens only Thursday to Sunday, so plan those two around your week.";
+    }
+    data.destinationFacts[cityKey] = "The Art Gallery of New South Wales stays open until 10pm on Wednesdays, while Sydney Observatory opens only Thursday to Sunday, so plan those two around your week.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Harbour landmarks, free galleries and museums, markets and an ocean pool, with breakfast spots, bakeries, coffee, dinners and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Check before you go",
+        "copy": "Sydney Observatory opens Thursday to Sunday, and Flour and Stone's Pantry is closed Sundays. Skittle Lane's King Street café is closed at weekends."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book ahead for tours",
+        "copy": "Sydney Opera House tours are booked online, hold up to 35 people, and are forfeited if you arrive more than 5 minutes late. Firedoor takes reservations up to six months in advance."
+      },
+      {
+        "label": "Walk-ins",
+        "value": "Bars are flexible",
+        "copy": "Maybe Sammy says \"Walk-Ins Always Welcome,\" as do Bennelong Bar and the bar at Saint Peter. Ester also welcomes same-day walk-ins."
+      },
+      {
+        "label": "Rules",
+        "value": "Bags and BYO",
+        "copy": "On the Opera House tour, bags larger than A4 must be cloaked and suitcases cannot be stored. Ester is fully licensed and does not permit BYO."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Pair a booked Opera House tour with the free galleries and Botanic Garden nearby, then reserve dinner early, as Firedoor, Bennelong and Ester all take bookings.",
+      intro: [
+        "Start at the Sydney Opera House on Bennelong Point, where tours run daily, last about 60 minutes and begin at the Welcome Centre on the Lower Concourse. Arrive 15 minutes early, because you forfeit the tour if you are more than 5 minutes late. Tours are unavailable on 25 and 31 December 2026. In the evening, the program lists Strong is the New Pretty until 12 December and Copland Dance Episodes from 6 to 21 November 2026.",
+        "From the Opera House you can walk into the Royal Botanic Garden Sydney on Mrs Macquaries Road, open daily from 7am to sunset. The Art Gallery of New South Wales on Art Gallery Road has free general entry and opens daily from 10am to 5pm, with Wednesdays running to 10pm. Nolan Origins is ticketed until 7 February 2027, and Takashi Murakami opens on 5 December 2026. The Australian Museum on William Street is also free and opens daily from 10am to 5pm.",
+        "Across the city, the Australian National Maritime Museum on Murray Street offers free entry to its permanent galleries. Sydney Observatory in Millers Point opens Thursday to Sunday while heritage works continue. The BridgeMuseum sits in the Harbour Bridge's South-East Pylon, reached by the lift or stairs from Cumberland Street. At Bondi, Icebergs' ocean pool opens from 6am on weekdays but closes on Thursdays for cleaning, weather permitting.",
+        "For food, bills in Surry Hills opens all day, every day, and A.P Bread & Wine in Darlinghurst stays open late Wednesday to Saturday. Sydney Fish Market in Glebe is open daily from 7am. For dinner, you can book Bennelong, Firedoor, Aria or Ester; Ester's last service of 2026 is 23 December. Maybe Sammy in The Rocks opens Tuesday to Saturday from 5pm, and Dean & Nancy on 22 serves aperitivo from late afternoon."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Book a Sydney Opera House tour, then walk through the Royal Botanic Garden to the free Art Gallery of New South Wales."
+        ],
+        [
+          "A slower morning",
+          "Have breakfast at bills in Surry Hills or coffee at Single O, then browse Paddington Markets, open Saturdays from 10am."
+        ],
+        [
+          "Before booking",
+          "Check closing days: Sydney Observatory opens Thursday to Sunday only, and Ester closes from 24 December until 5 January 2027."
+        ]
+      ],
+      trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

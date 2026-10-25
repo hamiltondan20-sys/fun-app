@@ -1,0 +1,648 @@
+{
+  "city": "Sydney, Australia",
+  "checkedOn": "2026-10-25",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Sydney Opera House",
+      "kind": "landmark",
+      "url": "https://www.sydneyoperahouse.com/",
+      "sourceType": "operator's own site",
+      "address": "Bennelong Point, Sydney, NSW 2000, Australia",
+      "operatingEvidence": "Lists 2026 performances, including My Fair Lady (Opera Australia) to 30 Oct 2026, Strong is the New Pretty (Sydney Theatre Company) to 12 Dec 2026 and Copland Dance Episodes 6–21 Nov 2026. The tour page says \"Tours are not available on 25 December 2026 and 31 December 2026.\"",
+      "hours": "not published (tours run daily; about 60 minutes; times shown at booking)",
+      "confidence": "high"
+    },
+    {
+      "name": "Bennelong",
+      "kind": "meal",
+      "url": "https://www.bennelong.com.au/",
+      "sourceType": "operator's own site",
+      "address": "Sydney Opera House, Bennelong Point, Sydney, NSW 2000",
+      "operatingEvidence": "Lists New Year's Eve for Thursday 31 December 2026 and a 2026 Christmas Day Lunch; says the Good Food Guide 2026 retains Two Hats. Bennelong Bar: \"Walk-ins welcome.\"",
+      "hours": "Lunch Fri–Sun, reservations 12pm–2pm; dinner Sun–Thu 5.30pm–8.45pm, Fri–Sat 5.30pm–9.15pm; Bennelong Bar Mon–Thu from 5.30pm, Fri–Sun from 12pm until late",
+      "confidence": "high"
+    },
+    {
+      "name": "Saint Peter",
+      "kind": "meal",
+      "url": "https://www.saintpeter.com.au/",
+      "sourceType": "operator's own site",
+      "address": "161 Underwood St Paddington, NSW, 2021, Australia",
+      "operatingEvidence": "Publishes current service times and menu prices (lunch choice menu $195 pp, dinner tasting menu $395 pp) with reservation links; bar: \"Walk-ins always welcome. Bookings available, not required.\" No dated 2026 text found.",
+      "hours": "Dining room lunch Thu–Sun from 12pm, dinner seven days from 5.30pm; bar Mon–Wed from 5pm, Thu–Sun from 12pm (kitchen closes 9pm)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Firedoor",
+      "kind": "meal",
+      "url": "https://www.firedoor.com.au/",
+      "sourceType": "operator's own site",
+      "address": "23-33 Mary Street, Surry Hills, NSW",
+      "operatingEvidence": "2026 posts on new lunch hours (April 2026) and Friday/Saturday à la carte lunch (June 2026); a 24 December Festive Long Lunch is described as \"marking our final service of 2026.\" Reservations \"available to book up to six-months in advance.\"",
+      "hours": "Wed–Thu 5.30–11pm; Fri–Sat 12–4pm & 5–11pm (other days not listed)",
+      "confidence": "high"
+    },
+    {
+      "name": "Ester",
+      "kind": "meal",
+      "url": "https://ester-restaurant.com.au/",
+      "sourceType": "operator's own site",
+      "address": "46-52 Meagher St, Chippendale, Sydney, 2018",
+      "operatingEvidence": "Last service of 2026 is Wednesday 23 December (set menu only), reopening Tuesday 5 January 2027; \"opening Tuesdays and Wednesdays from December 1st\"; \"same day walk ins are also very welcome.\" BYO not permitted.",
+      "hours": "Mon, Thu, Fri 5pm–9pm; Sat lunch 12pm–3pm and dinner 5pm–9pm; Sun lunch 12pm–3pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Aria",
+      "kind": "meal",
+      "url": "https://www.ariasydney.com.au/",
+      "sourceType": "operator's own site",
+      "address": "1 Macquarie St, Sydney, NSW 2000, Australia",
+      "operatingEvidence": "Publishes current reservation times with an online booking link and phone (02) 9240 2255. No dated 2026 text found.",
+      "hours": "Mon–Wed reservations 5pm–9.30pm; Thu–Sat 12pm–2.30pm and 5pm–9.30pm; Sun 12pm–2.30pm and 5pm–8.30pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Rockpool Bar & Grill (Sydney)",
+      "kind": "meal",
+      "url": "https://hunterstreethospitality.com.au/venues/rockpool/",
+      "sourceType": "operator's own site (Hunter Street Hospitality)",
+      "address": "66 Hunter Street Sydney NSW",
+      "operatingEvidence": "\"BOOK NOW\" reservations via SevenRooms; current listings for Year-End Dining at Rockpool and a gift-card offer \"Available November 27th - 30th only.\"",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Icebergs Dining Room and Bar",
+      "kind": "meal",
+      "url": "https://www.idrb.com/",
+      "sourceType": "operator's own site",
+      "address": "1 Notts Avenue, Bondi Beach NSW 2026",
+      "operatingEvidence": "Publishes current service times and a \"Book a Table\" link; footer \"© 2026 Icebergs Dining Room and Bar.\"",
+      "hours": "Mon–Thu all-day dining from 12pm; Fri–Sat lunch from 12pm, dinner from 6.30pm; Sun all-day dining from 12pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Sydney Fish Market",
+      "kind": "market",
+      "url": "https://www.sydneyfishmarket.com.au/",
+      "sourceType": "operator's own site",
+      "address": "1 Bridge Rd, Glebe NSW",
+      "operatingEvidence": "Dated 2026 articles, most recently 30 Sep 2026 (Reel Life documentary). No closure or relocation notice shown.",
+      "hours": "\"Open Daily 7am - 10pm (individual retail trading hours apply)\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Paddington Markets",
+      "kind": "market",
+      "url": "https://www.paddingtonmarkets.com.au/",
+      "sourceType": "operator's own site",
+      "address": "395 Oxford Street, Paddington, Sydney",
+      "operatingEvidence": "\"Open every Saturday year round\"; site lists a 2026 events schedule.",
+      "hours": "Saturdays 10am–4pm (\"Shine or Rain\"); Growers Market from 9am",
+      "confidence": "high"
+    },
+    {
+      "name": "Art Gallery of New South Wales",
+      "kind": "museum",
+      "url": "https://www.artgallery.nsw.gov.au/whats-on/exhibitions/",
+      "sourceType": "official public operator (Art Gallery of New South Wales, NSW Government)",
+      "address": "Art Gallery Road, Sydney NSW 2000, Australia",
+      "operatingEvidence": "Current exhibitions include Nolan Origins (ticketed, until 7 February 2027) and Brett Whiteley Travelling Art Scholarship 2026 (free, until 22 November 2026); Takashi Murakami opens 5 December 2026 (charges apply). \"Free general entry.\"",
+      "hours": "Daily 10am–5pm, Wednesdays until 10pm; closed Good Friday and Christmas Day",
+      "confidence": "high"
+    },
+    {
+      "name": "Australian Museum",
+      "kind": "museum",
+      "url": "https://australian.museum/visit/",
+      "sourceType": "official public operator (Australian Museum, NSW Government)",
+      "address": "1 William Street, Sydney NSW 2010",
+      "operatingEvidence": "Visit page publishes current hours: \"Open daily 10am-5pm (closed Christmas Day)\" and \"General entry to the Australian Museum is FREE.\" No dated 2026 exhibition was readable.",
+      "hours": "Daily 10am–5pm, closed Christmas Day",
+      "confidence": "medium"
+    },
+    {
+      "name": "Australian National Maritime Museum",
+      "kind": "museum",
+      "url": "https://www.sea.museum/",
+      "sourceType": "official public operator (Australian National Maritime Museum)",
+      "address": "2 Murray Street Darling Harbour, Sydney NSW 2000, Australia",
+      "operatingEvidence": "Exhibitions now on include Ultimate Depth and Voyage to Freedom; HMAS Onslow \"Closed from 19 October to 30 October 2026.\" \"Free entry to permanent galleries.\"",
+      "hours": "10am–4pm (last vessel boarding 3:10pm); school holidays 9:30am–5pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Royal Botanic Garden Sydney",
+      "kind": "park",
+      "url": "https://www.botanicgardens.org.au/royal-botanic-garden-sydney",
+      "sourceType": "official public operator (Botanic Gardens of Sydney)",
+      "address": "Mrs Macquaries Road, Sydney NSW 2000",
+      "operatingEvidence": "Publishes current monthly hours (October 7:00 AM to 7:30 PM, November 7:00 AM to 8:00 PM); footer \"Copyright © 2026.\"",
+      "hours": "\"Open daily from 7am to sunset\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Sydney Observatory",
+      "kind": "museum",
+      "url": "https://www.powerhouse.com.au/visit/sydney-observatory",
+      "sourceType": "official public operator (Powerhouse, NSW Government)",
+      "address": "1003 Upper Fort Street, Millers Point, NSW 2000",
+      "operatingEvidence": "Monthly 2026 Sky Guides listed; bookable tours \"Every Wed—Sun\"; notes \"heritage conservation works are currently underway and access to some areas may be impacted.\"",
+      "hours": "\"Open Thursday–Sunday\" (times not published)",
+      "confidence": "medium"
+    },
+    {
+      "name": "BridgeMuseum",
+      "kind": "scenic",
+      "url": "https://www.bridgemuseum.com.au/",
+      "sourceType": "operator's own site",
+      "address": "South-East Pylon, Sydney Harbour Bridge, The Rocks NSW 2000",
+      "operatingEvidence": "Booking links for the Day Session and SkyHouse After Hours; access \"From The Rocks, take the Harbour Bridge lift or stairs from Cumberland Street\"; footer \"© 2026 BridgeMuseum.\"",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bondi Icebergs Pool",
+      "kind": "scenic",
+      "url": "https://icebergs.com.au/",
+      "sourceType": "operator's own site (Bondi Icebergs Club)",
+      "address": "1 Notts Avenue Bondi Beach NSW 2026",
+      "operatingEvidence": "Publishes current pool, club and kitchen hours; Thursday pool \"Closed for cleaning pending weather conditions.\"",
+      "hours": "Pool Mon–Fri 6am–7:30pm, Sat–Sun 6:30am–6:30pm (Thursday cleaning closure, weather permitting); club daily 11am–10pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Maybe Sammy",
+      "kind": "bar",
+      "url": "https://www.maybesammy.com/book-now",
+      "sourceType": "operator's own site",
+      "address": "115 Harrington Street, The Rocks, Sydney, NSW",
+      "operatingEvidence": "Live booking page with 90-minute indoor seatings Tue–Sat; \"Walk-Ins Always Welcome.\" No dated 2026 text found.",
+      "hours": "Tue–Thu 5pm–12am; Fri–Sat 5pm–1am",
+      "confidence": "medium"
+    },
+    {
+      "name": "Dean & Nancy on 22",
+      "kind": "bar",
+      "url": "https://www.deanandnancyon22.com.au/",
+      "sourceType": "operator's own site",
+      "address": "Level 22, 2 Hunter Street, Sydney, NSW 2000 (A by Adina Sydney)",
+      "operatingEvidence": "Publishes current breakfast, bar and aperitivo hours with a Reservations link; links a Winter 2026 breakfast menu PDF.",
+      "hours": "Breakfast Mon–Fri 6:30am–10:30am, weekends 7am–11am; bar & dining Sun–Wed from 5pm, Thu–Sat from 4:30pm, until late",
+      "confidence": "medium"
+    },
+    {
+      "name": "bills (Surry Hills)",
+      "kind": "meal",
+      "url": "https://bills.com.au/",
+      "sourceType": "operator's own site",
+      "address": "355 Crown Street, Surry Hills NSW 2010",
+      "operatingEvidence": "\"We open all day, every day\" for breakfast, lunch, afternoon tea and dinner; notes only the Darlinghurst branch is temporarily closed for repairs, with the other locations open.",
+      "hours": "\"open all day, every day\" (times not published)",
+      "confidence": "medium"
+    },
+    {
+      "name": "A.P Bread & Wine (Darlinghurst)",
+      "kind": "bakery",
+      "url": "https://www.apbakery.com.au/stores-locations",
+      "sourceType": "operator's own site (All Purpose Bakery)",
+      "address": "32 BURTON ST, DARLINGHURST, NSW 2010",
+      "operatingEvidence": "Locations page publishes branch hours and links dinner and apéritivo menus labelled \"Sep 2026.\"",
+      "hours": "Sun–Tue 7.30am–3pm; Wed–Sat 7.30am till late",
+      "confidence": "medium"
+    },
+    {
+      "name": "Flour and Stone (Pantry)",
+      "kind": "bakery",
+      "url": "https://www.flourandstone.com.au/",
+      "sourceType": "operator's own site",
+      "address": "53 Riley Street, Woolloomooloo",
+      "operatingEvidence": "Current pre-order banner \"PRE-ORDERS FOR THE WEEK CLOSE AT 2PM ON THURSDAY\" and Christmas ordering; footer \"© 2026 Flour and Stone.\"",
+      "hours": "Mon–Fri 7am–3pm; Sat 8am–3pm; closed Sundays",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bourke Street Bakery (Surry Hills)",
+      "kind": "bakery",
+      "url": "https://bourkestreetbakery.com.au/pages/surry-hills",
+      "sourceType": "operator's own site",
+      "address": "633 Bourke Street, Surry Hills, NSW 2010",
+      "operatingEvidence": "Store page publishes current hours for the original Surry Hills branch. No dated 2026 notice found.",
+      "hours": "Mon–Fri 7am–6pm; Sat–Sun 7am–5pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Single O (Surry Hills)",
+      "kind": "cafe",
+      "url": "https://singleo.com.au/",
+      "sourceType": "operator's own site",
+      "address": "60-64 Reservoir St, Surry Hills, NSW",
+      "operatingEvidence": "\"CafeSmart is BACK for 2026\" post; footer \"© Single O 2026.\"",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Skittle Lane (CBD)",
+      "kind": "cafe",
+      "url": "https://skittlelane.com/pages/locations",
+      "sourceType": "operator's own site",
+      "address": "40 King St, Sydney NSW 2000",
+      "operatingEvidence": "Locations page publishes branch hours; footer \"Skittle Lane 2026.\"",
+      "hours": "Mon, Tue, Wed, Fri 7am–4pm (Thursday not listed); Sat–Sun closed",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Quay",
+      "reason": "Closed: operator says \"On 15 February 2026, Quay served its final guests and closed its doors.\"",
+      "url": "https://finkgroup.com.au/a-farewell-to-quay/"
+    },
+    {
+      "name": "Taronga Zoo",
+      "reason": "Official pages showed Address and Opening Hours headings with no readable content; ticket page gives prices only, no address",
+      "url": "https://taronga.org.au/sydney-zoo"
+    },
+    {
+      "name": "Bondi to Coogee walk",
+      "reason": "Council page (Waverley) returned HTTP 403; not verified",
+      "url": "https://www.waverley.nsw.gov.au/recreation/beaches_and_coast/coastal_walk"
+    },
+    {
+      "name": "Bronte pool stop",
+      "reason": "Council page (Waverley) returned HTTP 403; not verified",
+      "url": "https://www.waverley.nsw.gov.au/recreation/beaches_and_coast/coastal_walk"
+    },
+    {
+      "name": "The Rocks",
+      "reason": "Official precinct site gives no street address (area description only)",
+      "url": "https://www.therocks.com/"
+    },
+    {
+      "name": "Manly ferry day",
+      "reason": "Transport for NSW F1 page returned no readable route content",
+      "url": "https://transportnsw.info/routes/details/sydney-ferries/f1/"
+    },
+    {
+      "name": "Cantina OK!",
+      "reason": "Certificate error (hostname mismatch); not bypassed",
+      "url": "https://www.cantinaok.com.au/"
+    },
+    {
+      "name": "The Baxter Inn",
+      "reason": "Certificate error (expired certificate); not bypassed",
+      "url": "https://www.thebaxterinn.com/"
+    },
+    {
+      "name": "Lode Pies & Pastries",
+      "reason": "lodepiesandpastries.com did not resolve (DNS); lodepies.com returned only a title, no address or hours",
+      "url": "https://lodepies.com/"
+    },
+    {
+      "name": "Edition Coffee Roasters",
+      "reason": "Certificate error (self-signed certificate); not bypassed",
+      "url": "https://editioncoffeeroasters.com/"
+    },
+    {
+      "name": "Paramount Coffee Project",
+      "reason": "Site gives only \"Surry hills\", no street address; contact page 404",
+      "url": "https://www.paramountcoffeeproject.com.au/"
+    },
+    {
+      "name": "bills (Darlinghurst)",
+      "reason": "Temporarily closed for repairs since 5 October; operator says reopening late November",
+      "url": "https://bills.com.au/"
+    },
+    {
+      "name": "BridgeClimb",
+      "reason": "HTTP 403 Forbidden",
+      "url": "https://www.bridgeclimb.com/"
+    },
+    {
+      "name": "Hyde Park Barracks",
+      "reason": "HTTP 403 Forbidden",
+      "url": "https://mhnsw.au/visit-us/hyde-park-barracks/"
+    },
+    {
+      "name": "Museum of Contemporary Art Australia",
+      "reason": "Pages returned only a title, no readable content (opening-hours URL 404)",
+      "url": "https://www.mca.com.au/"
+    },
+    {
+      "name": "SEA LIFE Sydney Aquarium",
+      "reason": "Operator page gives no street address (Darling Harbour only); getting-here page 404",
+      "url": "https://www.visitsealife.com/sydney/"
+    },
+    {
+      "name": "Sydney Tower Eye",
+      "reason": "Operator page gives no street address; location page 404",
+      "url": "https://www.sydneytowereye.com.au/"
+    },
+    {
+      "name": "Powerhouse Ultimo",
+      "reason": "\"Temporarily Closed for Heritage Revitalisation\" with no reopening date",
+      "url": "https://www.powerhouse.com.au/visit"
+    },
+    {
+      "name": "State Library of NSW",
+      "reason": "Page returned no readable content",
+      "url": "https://www.sl.nsw.gov.au/visit"
+    },
+    {
+      "name": "Mr Wong",
+      "reason": "Merivale page returned no readable content",
+      "url": "https://www.merivale.com/venues/mrwong"
+    },
+    {
+      "name": "Totti's (Bondi)",
+      "reason": "Merivale page returned no readable content",
+      "url": "https://www.merivale.com/venues/totti-s-bondi"
+    },
+    {
+      "name": "Hubert",
+      "reason": "Domain did not resolve (DNS)",
+      "url": "https://www.hubertrestaurant.com/"
+    },
+    {
+      "name": "Bulletin Place",
+      "reason": "Domain redirects to an expired-domain listing; no official page found",
+      "url": "https://www.bulletinplace.com/"
+    },
+    {
+      "name": "PS40",
+      "reason": "Site gives hours but no street address",
+      "url": "https://www.ps40bar.com/"
+    },
+    {
+      "name": "Reuben Hills",
+      "reason": "HTTP 429 Too Many Requests on repeated attempts",
+      "url": "https://reubenhills.com.au/"
+    },
+    {
+      "name": "Mecca Coffee",
+      "reason": "HTTP 429 Too Many Requests",
+      "url": "https://mecca.coffee/"
+    },
+    {
+      "name": "Barangaroo Reserve",
+      "reason": "Official precinct page gives no address or hours for the reserve",
+      "url": "https://www.barangaroo.com/"
+    },
+    {
+      "name": "Chinese Garden of Friendship",
+      "reason": "HTTP 404 Not Found",
+      "url": "https://www.darlingharbour.com/chinese-garden-of-friendship"
+    },
+    {
+      "name": "Harbour walks",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Beach day at Bondi",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Ferry ride across the harbor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sydney Harbour private cruise",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Fine-dining harbor dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Luxury harbor hotel stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset ferry ride",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Watsons Bay lunch",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Opera House night",
+      "reason": "generic, not a place (Sydney Opera House confirmed separately)",
+      "url": ""
+    },
+    {
+      "name": "Bondi beach afternoon",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Ferry day and aquarium stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee in Surry Hills",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Harbor walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Beach-and-bookshop day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Harbour Bridge views",
+      "reason": "generic, not a place (BridgeMuseum confirmed separately)",
+      "url": ""
+    },
+    {
+      "name": "Bondi side outing",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Sydney Opera House",
+        "Art Gallery of New South Wales",
+        "Royal Botanic Garden Sydney",
+        "BridgeMuseum"
+      ],
+      "bestFirstTimers": [
+        "Sydney Opera House",
+        "Royal Botanic Garden Sydney",
+        "Australian National Maritime Museum",
+        "BridgeMuseum"
+      ],
+      "bestRestaurants": [
+        "Bennelong",
+        "Saint Peter",
+        "Firedoor",
+        "Ester"
+      ],
+      "bestBudget": [
+        "Art Gallery of New South Wales",
+        "Australian Museum",
+        "Paddington Markets",
+        "Royal Botanic Garden Sydney"
+      ],
+      "bestLuxury": [
+        "Bennelong",
+        "Aria",
+        "Saint Peter",
+        "Rockpool Bar & Grill (Sydney)"
+      ],
+      "bestCouples": [
+        "Bennelong",
+        "Maybe Sammy",
+        "Dean & Nancy on 22",
+        "Sydney Observatory"
+      ],
+      "bestKids": [
+        "Australian Museum",
+        "Australian National Maritime Museum",
+        "Sydney Observatory",
+        "Bondi Icebergs Pool"
+      ],
+      "bestSolo": [
+        "Art Gallery of New South Wales",
+        "Single O (Surry Hills)",
+        "Paddington Markets"
+      ],
+      "bestUnique": [
+        "Bondi Icebergs Pool",
+        "Sydney Observatory",
+        "BridgeMuseum",
+        "Sydney Fish Market"
+      ],
+      "bestBreakfast": [
+        "bills (Surry Hills)",
+        "A.P Bread & Wine (Darlinghurst)",
+        "Skittle Lane (CBD)",
+        "Dean & Nancy on 22"
+      ],
+      "bestLunch": [
+        "Saint Peter",
+        "Sydney Fish Market",
+        "Icebergs Dining Room and Bar",
+        "Firedoor"
+      ],
+      "bestDinner": [
+        "Bennelong",
+        "Firedoor",
+        "Ester",
+        "Aria"
+      ],
+      "bestCocktails": [
+        "Maybe Sammy",
+        "Dean & Nancy on 22",
+        "Bennelong"
+      ],
+      "bestBakeries": [
+        "Bourke Street Bakery (Surry Hills)",
+        "Flour and Stone (Pantry)",
+        "A.P Bread & Wine (Darlinghurst)"
+      ],
+      "bestCoffee": [
+        "Single O (Surry Hills)",
+        "Skittle Lane (CBD)"
+      ]
+    },
+    "queries": {
+      "Sydney Opera House": "Sydney Opera House Bennelong Point Sydney",
+      "Bennelong": "Bennelong Bennelong Point Sydney",
+      "Saint Peter": "Saint Peter 161 Underwood St Paddington Sydney",
+      "Firedoor": "Firedoor 23-33 Mary Street Surry Hills Sydney",
+      "Ester": "Ester 46-52 Meagher St Chippendale Sydney",
+      "Aria": "Aria 1 Macquarie St Sydney",
+      "Rockpool Bar & Grill (Sydney)": "Rockpool Bar & Grill 66 Hunter Street Sydney",
+      "Icebergs Dining Room and Bar": "Icebergs Dining Room and Bar 1 Notts Avenue Bondi Beach Sydney",
+      "Sydney Fish Market": "Sydney Fish Market 1 Bridge Rd Glebe Sydney",
+      "Paddington Markets": "Paddington Markets 395 Oxford Street Paddington Sydney",
+      "Art Gallery of New South Wales": "Art Gallery of New South Wales Art Gallery Road Sydney",
+      "Australian Museum": "Australian Museum 1 William Street Sydney",
+      "Australian National Maritime Museum": "Australian National Maritime Museum 2 Murray Street Darling Harbour Sydney",
+      "Royal Botanic Garden Sydney": "Royal Botanic Garden Mrs Macquaries Road Sydney",
+      "Sydney Observatory": "Sydney Observatory 1003 Upper Fort Street Millers Point Sydney",
+      "BridgeMuseum": "BridgeMuseum South-East Pylon Sydney Harbour Bridge The Rocks Sydney",
+      "Bondi Icebergs Pool": "Bondi Icebergs Pool 1 Notts Avenue Bondi Beach Sydney",
+      "Maybe Sammy": "Maybe Sammy 115 Harrington Street The Rocks Sydney",
+      "Dean & Nancy on 22": "Dean & Nancy on 22 2 Hunter Street Sydney",
+      "bills (Surry Hills)": "bills 355 Crown Street Surry Hills Sydney",
+      "A.P Bread & Wine (Darlinghurst)": "A.P Bread & Wine 32 Burton St Darlinghurst Sydney",
+      "Flour and Stone (Pantry)": "Flour and Stone 53 Riley Street Woolloomooloo Sydney",
+      "Bourke Street Bakery (Surry Hills)": "Bourke Street Bakery 633 Bourke Street Surry Hills Sydney",
+      "Single O (Surry Hills)": "Single O 60-64 Reservoir St Surry Hills Sydney",
+      "Skittle Lane (CBD)": "Skittle Lane 40 King St Sydney"
+    },
+    "summary": "Harbour landmarks, free galleries and museums, markets and an ocean pool, with breakfast spots, bakeries, coffee, dinners and cocktail bars checked against their own websites.",
+    "highlights": [
+      "Sydney Opera House",
+      "Art Gallery of New South Wales",
+      "Royal Botanic Garden Sydney",
+      "Australian National Maritime Museum"
+    ],
+    "tip": "The Art Gallery of New South Wales stays open until 10pm on Wednesdays, while Sydney Observatory opens only Thursday to Sunday, so plan those two around your week.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Check before you go",
+        "copy": "Sydney Observatory opens Thursday to Sunday, and Flour and Stone's Pantry is closed Sundays. Skittle Lane's King Street café is closed at weekends."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book ahead for tours",
+        "copy": "Sydney Opera House tours are booked online, hold up to 35 people, and are forfeited if you arrive more than 5 minutes late. Firedoor takes reservations up to six months in advance."
+      },
+      {
+        "label": "Walk-ins",
+        "value": "Bars are flexible",
+        "copy": "Maybe Sammy says \"Walk-Ins Always Welcome,\" as do Bennelong Bar and the bar at Saint Peter. Ester also welcomes same-day walk-ins."
+      },
+      {
+        "label": "Rules",
+        "value": "Bags and BYO",
+        "copy": "On the Opera House tour, bags larger than A4 must be cloaked and suitcases cannot be stored. Ester is fully licensed and does not permit BYO."
+      }
+    ],
+    "dek": "Pair a booked Opera House tour with the free galleries and Botanic Garden nearby, then reserve dinner early, as Firedoor, Bennelong and Ester all take bookings.",
+    "intro": [
+      "Start at the Sydney Opera House on Bennelong Point, where tours run daily, last about 60 minutes and begin at the Welcome Centre on the Lower Concourse. Arrive 15 minutes early, because you forfeit the tour if you are more than 5 minutes late. Tours are unavailable on 25 and 31 December 2026. In the evening, the program lists Strong is the New Pretty until 12 December and Copland Dance Episodes from 6 to 21 November 2026.",
+      "From the Opera House you can walk into the Royal Botanic Garden Sydney on Mrs Macquaries Road, open daily from 7am to sunset. The Art Gallery of New South Wales on Art Gallery Road has free general entry and opens daily from 10am to 5pm, with Wednesdays running to 10pm. Nolan Origins is ticketed until 7 February 2027, and Takashi Murakami opens on 5 December 2026. The Australian Museum on William Street is also free and opens daily from 10am to 5pm.",
+      "Across the city, the Australian National Maritime Museum on Murray Street offers free entry to its permanent galleries. Sydney Observatory in Millers Point opens Thursday to Sunday while heritage works continue. The BridgeMuseum sits in the Harbour Bridge's South-East Pylon, reached by the lift or stairs from Cumberland Street. At Bondi, Icebergs' ocean pool opens from 6am on weekdays but closes on Thursdays for cleaning, weather permitting.",
+      "For food, bills in Surry Hills opens all day, every day, and A.P Bread & Wine in Darlinghurst stays open late Wednesday to Saturday. Sydney Fish Market in Glebe is open daily from 7am. For dinner, you can book Bennelong, Firedoor, Aria or Ester; Ester's last service of 2026 is 23 December. Maybe Sammy in The Rocks opens Tuesday to Saturday from 5pm, and Dean & Nancy on 22 serves aperitivo from late afternoon."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Book a Sydney Opera House tour, then walk through the Royal Botanic Garden to the free Art Gallery of New South Wales."
+      ],
+      [
+        "A slower morning",
+        "Have breakfast at bills in Surry Hills or coffee at Single O, then browse Paddington Markets, open Saturdays from 10am."
+      ],
+      [
+        "Before booking",
+        "Check closing days: Sydney Observatory opens Thursday to Sunday only, and Ester closes from 24 December until 5 January 2027."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several sites could not be read: BridgeClimb, Hyde Park Barracks and the Waverley Council coastal-walk page (HTTP 403), Cantina OK!, The Baxter Inn and Edition Coffee Roasters (certificate errors), Reuben Hills and Mecca Coffee (rate-limited), and Taronga Zoo, MCA, the State Library, Mr Wong and Totti's (no readable content); none of these failures indicates closure. SEA LIFE Sydney, Sydney Tower Eye, PS40, Paramount Coffee Project and The Rocks published no street address. Hours were not published for the Opera House, Rockpool, BridgeMuseum and Single O, Sydney Observatory gave days but no times, and Skittle Lane's King Street listing omits Thursday. Several venues (Saint Peter, Aria, Maybe Sammy, Bourke Street Bakery) showed current hours or booking pages but no dated 2026 text.",
+  "injectionLikeText": []
+}

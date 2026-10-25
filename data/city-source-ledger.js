@@ -5,6 +5,420 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Sydney, Australia": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-25",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several sites could not be read: BridgeClimb, Hyde Park Barracks and the Waverley Council coastal-walk page (HTTP 403), Cantina OK!, The Baxter Inn and Edition Coffee Roasters (certificate errors), Reuben Hills and Mecca Coffee (rate-limited), and Taronga Zoo, MCA, the State Library, Mr Wong and Totti's (no readable content); none of these failures indicates closure. SEA LIFE Sydney, Sydney Tower Eye, PS40, Paramount Coffee Project and The Rocks published no street address. Hours were not published for the Opera House, Rockpool, BridgeMuseum and Single O, Sydney Observatory gave days but no times, and Skittle Lane's King Street listing omits Thursday. Several venues (Saint Peter, Aria, Maybe Sammy, Bourke Street Bakery) showed current hours or booking pages but no dated 2026 text.",
+    "sourceUrls": [
+      "docs/content-research/sydney-2026-10-25.md",
+      "docs/content-research/sydney-2026-10-25.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Quay",
+        "url": "https://finkgroup.com.au/a-farewell-to-quay/",
+        "checkedOn": "2026-10-25",
+        "reason": "Closed: operator says \"On 15 February 2026, Quay served its final guests and closed its doors.\""
+      },
+      {
+        "name": "Taronga Zoo",
+        "url": "https://taronga.org.au/sydney-zoo",
+        "checkedOn": "2026-10-25",
+        "reason": "Official pages showed Address and Opening Hours headings with no readable content; ticket page gives prices only, no address"
+      },
+      {
+        "name": "Bondi to Coogee walk",
+        "url": "https://www.waverley.nsw.gov.au/recreation/beaches_and_coast/coastal_walk",
+        "checkedOn": "2026-10-25",
+        "reason": "Council page (Waverley) returned HTTP 403; not verified"
+      },
+      {
+        "name": "Bronte pool stop",
+        "url": "https://www.waverley.nsw.gov.au/recreation/beaches_and_coast/coastal_walk",
+        "checkedOn": "2026-10-25",
+        "reason": "Council page (Waverley) returned HTTP 403; not verified"
+      },
+      {
+        "name": "The Rocks",
+        "url": "https://www.therocks.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official precinct site gives no street address (area description only)"
+      },
+      {
+        "name": "Manly ferry day",
+        "url": "https://transportnsw.info/routes/details/sydney-ferries/f1/",
+        "checkedOn": "2026-10-25",
+        "reason": "Transport for NSW F1 page returned no readable route content"
+      },
+      {
+        "name": "Cantina OK!",
+        "url": "https://www.cantinaok.com.au/",
+        "checkedOn": "2026-10-25",
+        "reason": "Certificate error (hostname mismatch); not bypassed"
+      },
+      {
+        "name": "The Baxter Inn",
+        "url": "https://www.thebaxterinn.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Certificate error (expired certificate); not bypassed"
+      },
+      {
+        "name": "Lode Pies & Pastries",
+        "url": "https://lodepies.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "lodepiesandpastries.com did not resolve (DNS); lodepies.com returned only a title, no address or hours"
+      },
+      {
+        "name": "Edition Coffee Roasters",
+        "url": "https://editioncoffeeroasters.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Certificate error (self-signed certificate); not bypassed"
+      },
+      {
+        "name": "Paramount Coffee Project",
+        "url": "https://www.paramountcoffeeproject.com.au/",
+        "checkedOn": "2026-10-25",
+        "reason": "Site gives only \"Surry hills\", no street address; contact page 404"
+      },
+      {
+        "name": "bills (Darlinghurst)",
+        "url": "https://bills.com.au/",
+        "checkedOn": "2026-10-25",
+        "reason": "Temporarily closed for repairs since 5 October; operator says reopening late November"
+      },
+      {
+        "name": "BridgeClimb",
+        "url": "https://www.bridgeclimb.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 403 Forbidden"
+      },
+      {
+        "name": "Hyde Park Barracks",
+        "url": "https://mhnsw.au/visit-us/hyde-park-barracks/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 403 Forbidden"
+      },
+      {
+        "name": "Museum of Contemporary Art Australia",
+        "url": "https://www.mca.com.au/",
+        "checkedOn": "2026-10-25",
+        "reason": "Pages returned only a title, no readable content (opening-hours URL 404)"
+      },
+      {
+        "name": "SEA LIFE Sydney Aquarium",
+        "url": "https://www.visitsealife.com/sydney/",
+        "checkedOn": "2026-10-25",
+        "reason": "Operator page gives no street address (Darling Harbour only); getting-here page 404"
+      },
+      {
+        "name": "Sydney Tower Eye",
+        "url": "https://www.sydneytowereye.com.au/",
+        "checkedOn": "2026-10-25",
+        "reason": "Operator page gives no street address; location page 404"
+      },
+      {
+        "name": "Powerhouse Ultimo",
+        "url": "https://www.powerhouse.com.au/visit",
+        "checkedOn": "2026-10-25",
+        "reason": "\"Temporarily Closed for Heritage Revitalisation\" with no reopening date"
+      },
+      {
+        "name": "State Library of NSW",
+        "url": "https://www.sl.nsw.gov.au/visit",
+        "checkedOn": "2026-10-25",
+        "reason": "Page returned no readable content"
+      },
+      {
+        "name": "Mr Wong",
+        "url": "https://www.merivale.com/venues/mrwong",
+        "checkedOn": "2026-10-25",
+        "reason": "Merivale page returned no readable content"
+      },
+      {
+        "name": "Totti's (Bondi)",
+        "url": "https://www.merivale.com/venues/totti-s-bondi",
+        "checkedOn": "2026-10-25",
+        "reason": "Merivale page returned no readable content"
+      },
+      {
+        "name": "Hubert",
+        "url": "https://www.hubertrestaurant.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Domain did not resolve (DNS)"
+      },
+      {
+        "name": "Bulletin Place",
+        "url": "https://www.bulletinplace.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Domain redirects to an expired-domain listing; no official page found"
+      },
+      {
+        "name": "PS40",
+        "url": "https://www.ps40bar.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Site gives hours but no street address"
+      },
+      {
+        "name": "Reuben Hills",
+        "url": "https://reubenhills.com.au/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests on repeated attempts"
+      },
+      {
+        "name": "Mecca Coffee",
+        "url": "https://mecca.coffee/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests"
+      },
+      {
+        "name": "Barangaroo Reserve",
+        "url": "https://www.barangaroo.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official precinct page gives no address or hours for the reserve"
+      },
+      {
+        "name": "Chinese Garden of Friendship",
+        "url": "https://www.darlingharbour.com/chinese-garden-of-friendship",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 404 Not Found"
+      },
+      {
+        "name": "Harbour walks",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Beach day at Bondi",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Ferry ride across the harbor",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sydney Harbour private cruise",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Fine-dining harbor dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Luxury harbor hotel stay",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset ferry ride",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Watsons Bay lunch",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Opera House night",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (Sydney Opera House confirmed separately)"
+      },
+      {
+        "name": "Bondi beach afternoon",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Ferry day and aquarium stop",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee in Surry Hills",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Harbor walk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Beach-and-bookshop day",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Harbour Bridge views",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (BridgeMuseum confirmed separately)"
+      },
+      {
+        "name": "Bondi side outing",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Sydney Opera House": {
+        "url": "https://www.sydneyoperahouse.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Lists 2026 performances, including My Fair Lady (Opera Australia) to 30 Oct 2026, Strong is the New Pretty (Sydney Theatre Company) to 12 Dec 2026 and Copland Dance Episodes 6–21 Nov 2026. The tour page says \"Tours are not available on 25 December 2026 and 31 December 2026.\""
+      },
+      "Bennelong": {
+        "url": "https://www.bennelong.com.au/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Lists New Year's Eve for Thursday 31 December 2026 and a 2026 Christmas Day Lunch; says the Good Food Guide 2026 retains Two Hats. Bennelong Bar: \"Walk-ins welcome.\""
+      },
+      "Saint Peter": {
+        "url": "https://www.saintpeter.com.au/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Publishes current service times and menu prices (lunch choice menu $195 pp, dinner tasting menu $395 pp) with reservation links; bar: \"Walk-ins always welcome. Bookings available, not required.\" No dated 2026 text found."
+      },
+      "Firedoor": {
+        "url": "https://www.firedoor.com.au/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "2026 posts on new lunch hours (April 2026) and Friday/Saturday à la carte lunch (June 2026); a 24 December Festive Long Lunch is described as \"marking our final service of 2026.\" Reservations \"available to book up to six-months in advance.\""
+      },
+      "Ester": {
+        "url": "https://ester-restaurant.com.au/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Last service of 2026 is Wednesday 23 December (set menu only), reopening Tuesday 5 January 2027; \"opening Tuesdays and Wednesdays from December 1st\"; \"same day walk ins are also very welcome.\" BYO not permitted."
+      },
+      "Aria": {
+        "url": "https://www.ariasydney.com.au/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Publishes current reservation times with an online booking link and phone (02) 9240 2255. No dated 2026 text found."
+      },
+      "Rockpool Bar & Grill (Sydney)": {
+        "url": "https://hunterstreethospitality.com.au/venues/rockpool/",
+        "sourceType": "operator's own site (Hunter Street Hospitality)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"BOOK NOW\" reservations via SevenRooms; current listings for Year-End Dining at Rockpool and a gift-card offer \"Available November 27th - 30th only.\""
+      },
+      "Icebergs Dining Room and Bar": {
+        "url": "https://www.idrb.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Publishes current service times and a \"Book a Table\" link; footer \"© 2026 Icebergs Dining Room and Bar.\""
+      },
+      "Sydney Fish Market": {
+        "url": "https://www.sydneyfishmarket.com.au/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Dated 2026 articles, most recently 30 Sep 2026 (Reel Life documentary). No closure or relocation notice shown."
+      },
+      "Paddington Markets": {
+        "url": "https://www.paddingtonmarkets.com.au/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Open every Saturday year round\"; site lists a 2026 events schedule."
+      },
+      "Art Gallery of New South Wales": {
+        "url": "https://www.artgallery.nsw.gov.au/whats-on/exhibitions/",
+        "sourceType": "official public operator (Art Gallery of New South Wales, NSW Government)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibitions include Nolan Origins (ticketed, until 7 February 2027) and Brett Whiteley Travelling Art Scholarship 2026 (free, until 22 November 2026); Takashi Murakami opens 5 December 2026 (charges apply). \"Free general entry.\""
+      },
+      "Australian Museum": {
+        "url": "https://australian.museum/visit/",
+        "sourceType": "official public operator (Australian Museum, NSW Government)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Visit page publishes current hours: \"Open daily 10am-5pm (closed Christmas Day)\" and \"General entry to the Australian Museum is FREE.\" No dated 2026 exhibition was readable."
+      },
+      "Australian National Maritime Museum": {
+        "url": "https://www.sea.museum/",
+        "sourceType": "official public operator (Australian National Maritime Museum)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Exhibitions now on include Ultimate Depth and Voyage to Freedom; HMAS Onslow \"Closed from 19 October to 30 October 2026.\" \"Free entry to permanent galleries.\""
+      },
+      "Royal Botanic Garden Sydney": {
+        "url": "https://www.botanicgardens.org.au/royal-botanic-garden-sydney",
+        "sourceType": "official public operator (Botanic Gardens of Sydney)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Publishes current monthly hours (October 7:00 AM to 7:30 PM, November 7:00 AM to 8:00 PM); footer \"Copyright © 2026.\""
+      },
+      "Sydney Observatory": {
+        "url": "https://www.powerhouse.com.au/visit/sydney-observatory",
+        "sourceType": "official public operator (Powerhouse, NSW Government)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Monthly 2026 Sky Guides listed; bookable tours \"Every Wed—Sun\"; notes \"heritage conservation works are currently underway and access to some areas may be impacted.\""
+      },
+      "BridgeMuseum": {
+        "url": "https://www.bridgemuseum.com.au/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Booking links for the Day Session and SkyHouse After Hours; access \"From The Rocks, take the Harbour Bridge lift or stairs from Cumberland Street\"; footer \"© 2026 BridgeMuseum.\""
+      },
+      "Bondi Icebergs Pool": {
+        "url": "https://icebergs.com.au/",
+        "sourceType": "operator's own site (Bondi Icebergs Club)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Publishes current pool, club and kitchen hours; Thursday pool \"Closed for cleaning pending weather conditions.\""
+      },
+      "Maybe Sammy": {
+        "url": "https://www.maybesammy.com/book-now",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Live booking page with 90-minute indoor seatings Tue–Sat; \"Walk-Ins Always Welcome.\" No dated 2026 text found."
+      },
+      "Dean & Nancy on 22": {
+        "url": "https://www.deanandnancyon22.com.au/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Publishes current breakfast, bar and aperitivo hours with a Reservations link; links a Winter 2026 breakfast menu PDF."
+      },
+      "bills (Surry Hills)": {
+        "url": "https://bills.com.au/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"We open all day, every day\" for breakfast, lunch, afternoon tea and dinner; notes only the Darlinghurst branch is temporarily closed for repairs, with the other locations open."
+      },
+      "A.P Bread & Wine (Darlinghurst)": {
+        "url": "https://www.apbakery.com.au/stores-locations",
+        "sourceType": "operator's own site (All Purpose Bakery)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Locations page publishes branch hours and links dinner and apéritivo menus labelled \"Sep 2026.\""
+      },
+      "Flour and Stone (Pantry)": {
+        "url": "https://www.flourandstone.com.au/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current pre-order banner \"PRE-ORDERS FOR THE WEEK CLOSE AT 2PM ON THURSDAY\" and Christmas ordering; footer \"© 2026 Flour and Stone.\""
+      },
+      "Bourke Street Bakery (Surry Hills)": {
+        "url": "https://bourkestreetbakery.com.au/pages/surry-hills",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Store page publishes current hours for the original Surry Hills branch. No dated 2026 notice found."
+      },
+      "Single O (Surry Hills)": {
+        "url": "https://singleo.com.au/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"CafeSmart is BACK for 2026\" post; footer \"© Single O 2026.\""
+      },
+      "Skittle Lane (CBD)": {
+        "url": "https://skittlelane.com/pages/locations",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Locations page publishes branch hours; footer \"Skittle Lane 2026.\""
+      }
+    }
+  },
   "Kyoto, Japan": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-25",

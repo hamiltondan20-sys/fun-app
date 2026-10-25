@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 22.
-- Classifier-passed (published, not fully documented in that format): 167.
+- Source-verified (complete dated evidence format): 23.
+- Classifier-passed (published, not fully documented in that format): 166.
 - Held back: 295.
 - Published destinations: 189; country hubs: 19; sitemap URLs: 217.
 
@@ -452,7 +452,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Surfers Paradise, Australia | surfers-paradise | classifier-passed | not-reviewed | 0 | 6 | 15 | 4 | None |
 | Suva, Fiji | suva | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Suzhou, China | suzhou | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Sydney, Australia | sydney | classifier-passed | not-reviewed | 0 | 25 | 15 | 12 | None |
+| Sydney, Australia | sydney | source-verified | source-checked | 25 | 48 | 15 | 15 | None |
 | Taj Mahal, India | taj-mahal | classifier-passed | not-reviewed | 0 | 8 | 15 | 4 | None |
 | Tangier, Morocco | tangier | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Taormina, Italy | taormina | held-back | not-reviewed | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
