@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 27.
-- Classifier-passed (published, not fully documented in that format): 162.
+- Source-verified (complete dated evidence format): 28.
+- Classifier-passed (published, not fully documented in that format): 161.
 - Held back: 295.
 - Published destinations: 189; country hubs: 19; sitemap URLs: 217.
 
@@ -412,7 +412,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Salzburg, Austria | salzburg | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Samarkand, Uzbekistan | samarkand | classifier-passed | not-reviewed | 0 | 11 | 15 | 5 | None |
 | San Diego, United States | san-diego | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| San Francisco, United States | san-francisco | classifier-passed | not-reviewed | 0 | 25 | 15 | 12 | None |
+| San Francisco, United States | san-francisco | source-verified | source-checked | 31 | 50 | 15 | 15 | None |
 | San Miguel de Allende, Mexico | san-miguel-de-allende | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | San Sebastian, Spain | san-sebastian | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Santa Marta, Colombia | santa-marta | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |

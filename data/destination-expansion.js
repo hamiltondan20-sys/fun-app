@@ -2575,4 +2575,113 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 17 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // San Francisco, United States: source review of 2026-10-25 (docs/content-research/san-francisco-2026-10-25.md).
+  {
+    const cityKey = "San Francisco, United States";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Golden Gate Bridge","Alcatraz Island","SFMOMA","Ferry Building Marketplace"],
+      bestFirstTimers: ["Alcatraz Island","Golden Gate Bridge","Cable cars (Powell & Market)","Ferry Building Marketplace"],
+      bestRestaurants: ["Zuni Café","State Bird Provisions","Foreign Cinema","Tadich Grill"],
+      bestBudget: ["Golden Gate Park","San Francisco Botanical Garden","Ferry Building Marketplace","Golden Gate Bridge"],
+      bestLuxury: ["State Bird Provisions","House of Prime Rib","True Laurel"],
+      bestCouples: ["Foreign Cinema","Japanese Tea Garden","Conservatory of Flowers","Smuggler's Cove"],
+      bestKids: ["California Academy of Sciences","PIER 39","Cable cars (Powell & Market)","Walt Disney Family Museum"],
+      bestSolo: ["SFMOMA","Ritual Coffee (Valencia St)","Hog Island Oyster Co. (Ferry Building)","Golden Gate Park"],
+      bestUnique: ["Alcatraz Island","Japanese Tea Garden","Conservatory of Flowers","Buena Vista Cafe"],
+      bestBreakfast: ["Tartine Manufactory","Plow","Outerlands"],
+      bestLunch: ["Hog Island Oyster Co. (Ferry Building)","Tadich Grill","Zuni Café","Tartine Manufactory"],
+      bestDinner: ["Zuni Café","State Bird Provisions","Foreign Cinema","House of Prime Rib"],
+      bestCocktails: ["Trick Dog","Smuggler's Cove","True Laurel","Comstock Saloon"],
+      bestBakeries: ["Tartine Bakery (Guerrero St)","b. patisserie","Tartine Manufactory"],
+      bestCoffee: ["Ritual Coffee (Valencia St)","Ritual Coffee (Hayes Valley)","Philz Coffee (Noe Valley)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Golden Gate Bridge": "Golden Gate Bridge Welcome Center San Francisco",
+      "Alcatraz Island": "Alcatraz Landing Pier 33 Embarcadero San Francisco",
+      "SFMOMA": "SFMOMA 151 Third Street San Francisco",
+      "Ferry Building Marketplace": "Ferry Building Marketplace 1 Ferry Building San Francisco",
+      "Cable cars (Powell & Market)": "Powell and Market cable car turnaround San Francisco",
+      "Zuni Café": "Zuni Cafe 1658 Market Street San Francisco",
+      "State Bird Provisions": "State Bird Provisions 1529 Fillmore Street San Francisco",
+      "Foreign Cinema": "Foreign Cinema 2534 Mission Street San Francisco",
+      "Tadich Grill": "Tadich Grill 240 California Street San Francisco",
+      "Golden Gate Park": "Golden Gate Park McLaren Lodge 501 Stanyan Street San Francisco",
+      "San Francisco Botanical Garden": "San Francisco Botanical Garden 1199 9th Avenue San Francisco",
+      "House of Prime Rib": "House of Prime Rib 1906 Van Ness Avenue San Francisco",
+      "True Laurel": "True Laurel 753 Alabama Street San Francisco",
+      "Japanese Tea Garden": "Japanese Tea Garden 75 Hagiwara Tea Garden Drive San Francisco",
+      "Conservatory of Flowers": "Conservatory of Flowers 100 John F Kennedy Drive San Francisco",
+      "Smuggler's Cove": "Smuggler's Cove 650 Gough Street San Francisco",
+      "California Academy of Sciences": "California Academy of Sciences 55 Music Concourse Drive San Francisco",
+      "PIER 39": "PIER 39 The Embarcadero and Beach Street San Francisco",
+      "Walt Disney Family Museum": "Walt Disney Family Museum 104 Montgomery Street Presidio San Francisco",
+      "Ritual Coffee (Valencia St)": "Ritual Coffee 1026 Valencia Street San Francisco",
+      "Hog Island Oyster Co. (Ferry Building)": "Hog Island Oyster Co 1 Ferry Building San Francisco",
+      "Buena Vista Cafe": "Buena Vista Cafe 2765 Hyde Street San Francisco",
+      "Tartine Manufactory": "Tartine Manufactory 595 Alabama Street San Francisco",
+      "Plow": "Plow 1299 18th Street San Francisco",
+      "Outerlands": "Outerlands 4001 Judah Street San Francisco",
+      "Trick Dog": "Trick Dog 3010 20th Street San Francisco",
+      "Comstock Saloon": "Comstock Saloon 155 Columbus Avenue San Francisco",
+      "Tartine Bakery (Guerrero St)": "Tartine Bakery 600 Guerrero Street San Francisco",
+      "b. patisserie": "b. patisserie 2821 California Street San Francisco",
+      "Ritual Coffee (Hayes Valley)": "Ritual Coffee 432b Octavia Street San Francisco",
+      "Philz Coffee (Noe Valley)": "Philz Coffee 4298 24th Street San Francisco"
+    };
+    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (cityGuide) {
+      cityGuide.summary = "The bridge, Alcatraz, museums and Golden Gate Park gardens, with breakfast spots, dinners, cocktail bars, bakeries and coffee checked against their own websites.";
+      cityGuide.highlights = ["Golden Gate Bridge","Alcatraz Island","SFMOMA","California Academy of Sciences"];
+      cityGuide.tip = "Book Alcatraz well ahead, since the National Park Service says it frequently sells out in advance, and avoid planning SFMOMA or the Conservatory of Flowers for a Wednesday, when both are closed.";
+    }
+    data.destinationFacts[cityKey] = "Book Alcatraz well ahead, since the National Park Service says it frequently sells out in advance, and avoid planning SFMOMA or the Conservatory of Flowers for a Wednesday, when both are closed.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "The bridge, Alcatraz, museums and Golden Gate Park gardens, with breakfast spots, dinners, cocktail bars, bakeries and coffee checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Wednesdays and Mondays",
+        "copy": "SFMOMA and the Conservatory of Flowers both close on Wednesdays, and Zuni Café is closed on Mondays. b. patisserie is closed Mondays and Tuesdays, and the Walt Disney Family Museum opens Thursday to Sunday only."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book ahead",
+        "copy": "The National Park Service says Alcatraz can sell out a month or more ahead in summer and near holidays, and the Japanese Tea Garden requires every visitor to reserve a time slot. Zuni Café and Foreign Cinema take reservations up to 60 days ahead, with Foreign Cinema releasing dates daily at 12:00 pm."
+      },
+      {
+        "label": "Walk-ins",
+        "value": "No booking needed",
+        "copy": "Hog Island Oyster Co. at the Ferry Building takes no reservations, and Outerlands seats Friday breakfast/lunch and weekend brunch on a walk-in basis only, for parties of up to 8. Trick Dog says reservations are not required, and Comstock Saloon welcomes walk-ins."
+      },
+      {
+        "label": "Rules",
+        "value": "Prepay, 21+, sidewalks",
+        "copy": "From 8 a.m. to 8 p.m. you must prepay your cable car fare before boarding at Powell & Market, Bay & Taylor or Hyde & Beach, and bicycles are not allowed on board. Thursday NightLife at the California Academy of Sciences is for ages 21+, and pedestrians on the Golden Gate Bridge may use the east sidewalk only."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Book Alcatraz and timed garden entry first, then build your days around Wednesday museum closures and walk-in breakfasts.",
+      intro: [
+        "San Francisco rewards a little planning. The National Park Service says Alcatraz is open every day except Christmas, Thanksgiving and New Year's Day, with ferries leaving Piers 31-33 about every half hour from 8:45am, and that the island frequently sells out in advance, so book through the contracted ferry operator first. On the Golden Gate Bridge, you walk the east sidewalk only; from early November, under Pacific Standard Time, pedestrian gates are open 5:00 am to 6:30 pm. The bridge Welcome Center is open daily from 9:00 a.m. to 6:00 p.m.",
+        "For art, SFMOMA at 151 Third St is closed on Wednesdays and stays open until 8 p.m. on Thursdays; visitors 18 and younger get in free. Klee Behind the Mask runs until April 18, 2027, Feel the Beat: Dance in Photographs until February 28, 2027, and Sarah Sze: Forever is Composed of Nows opens November 21, 2026. In Golden Gate Park, the California Academy of Sciences recommends buying tickets in advance for weekends and holidays, and its Thursday NightLife evenings are for ages 21 and over.",
+        "The park's gardens run on their own rules. The Japanese Tea Garden requires a timed reservation, offers a free hour on Monday, Wednesday and Friday mornings from 9am to 10am, and moves last entry to 4:30pm from November to February. The Conservatory of Flowers is closed on Wednesdays and free on the first Tuesday of the month, while the San Francisco Botanical Garden is free every day from 7:30 to 9am. The Botanical Garden lists Lightscape from November 20 through January 3 for the 2026 winter season.",
+        "For food, you can walk in for breakfast at Plow from 7AM on weekdays, at Tartine Manufactory from 8am daily, or at Outerlands, where weekend brunch is walk-in only. The Ferry Building is open daily 6:00am to 10:00pm, with a farmers market on Tuesday, Thursday and Saturday, and Hog Island Oyster Co. there takes no reservations. For dinner, Zuni Café is closed on Mondays, and Tadich Grill now takes reservations. Smuggler's Cove is open seven days a week from 5:00PM, and Trick Dog says reservations are not required."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair a pre-booked Alcatraz ferry from Piers 31-33 with a walk on the Golden Gate Bridge's east sidewalk and a prepaid cable car ride from Powell & Market."
+        ],
+        [
+          "A slower morning",
+          "Start with a walk-in breakfast at Tartine Manufactory or Plow, then catch the San Francisco Botanical Garden's free 7:30 to 9am entry or the Japanese Tea Garden's free 9am hour on Monday, Wednesday or Friday."
+        ],
+        [
+          "Before booking",
+          "Check that you aren't planning SFMOMA or the Conservatory of Flowers for a Wednesday, and reserve Zuni Café or Foreign Cinema up to 60 days ahead."
+        ]
+      ],
+      trust: "All 31 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

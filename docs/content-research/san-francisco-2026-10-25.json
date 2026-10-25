@@ -1,0 +1,704 @@
+{
+  "city": "San Francisco, United States",
+  "checkedOn": "2026-10-25",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Alcatraz Island",
+      "kind": "landmark",
+      "url": "https://www.nps.gov/alca/planyourvisit/hours.htm",
+      "sourceType": "official public operator (National Park Service); ferry concessioner page alcatrazcitycruises.com/tickets also read",
+      "address": "\"A ferry, located at Piers 31-33 (cross streets of Embarcadero & Bay Street) will take you to the island.\"",
+      "operatingEvidence": "NPS states \"Alcatraz is open every day except Christmas, Thanksgiving and New Year's day\" and \"frequently sells out in advance, as much as a month or more in summer and near holidays.\" The contracted ferry operator's ticket page offers live \"Check Availability\" booking from Pier 33. NPS page last updated 2021.",
+      "hours": "\"The hours of operation vary with the season\"; departures \"about every half hour throughout the day beginning at 8:45am\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Ferry Building Marketplace",
+      "kind": "market",
+      "url": "https://www.ferrybuildingmarketplace.com/visit",
+      "sourceType": "operator's own site",
+      "address": "\"One Ferry Building / San Francisco, California / 94111\"",
+      "operatingEvidence": "Visit page lists building hours and year-round farmers market days (Tue, Thu 10am-2pm; Sat 8am-2pm); footer \"©2026\".",
+      "hours": "\"Daily, 6:00am to 10:00pm\"; \"Hours for individual businesses vary.\"",
+      "confidence": "high"
+    },
+    {
+      "name": "California Academy of Sciences",
+      "kind": "museum",
+      "url": "https://www.calacademy.org/visit",
+      "sourceType": "operator's own site",
+      "address": "\"55 Music Concourse Drive\", Golden Gate Park, San Francisco, CA 94118",
+      "operatingEvidence": "Current October event listings and ticketing; \"Advance purchase is recommended, especially for weekend or holiday visits.\" Thursday NightLife is 21+, \"6–10 p.m. most Thursdays\"; planetarium passes are first-come, first-served.",
+      "hours": "\"Monday–Saturday: 9:30 a.m.–5 p.m.\"; \"Sunday: 11 a.m.–5 p.m.\"",
+      "confidence": "high"
+    },
+    {
+      "name": "SFMOMA",
+      "kind": "museum",
+      "url": "https://www.sfmoma.org/visit/",
+      "sourceType": "operator's own site (exhibitions page sfmoma.org/exhibitions also read)",
+      "address": "\"151 Third St, San Francisco, CA 94103\"",
+      "operatingEvidence": "Exhibitions page lists \"Klee Behind the Mask\" (Aug 08, 2026–Apr 18, 2027), \"Feel the Beat: Dance in Photographs\" (May 16, 2026–Feb 28, 2027), \"New Work: Raven Chacon\" (October 24, 2026–November 7, 2027) and upcoming \"Sarah Sze: Forever is Composed of Nows\" opening November 21, 2026. Adults $30; age 18 and younger free.",
+      "hours": "Mon–Tue 10 a.m.–5 p.m.; Wednesday closed; Thursday noon–8 p.m.; Fri–Sun 10 a.m.–5 p.m.; closed Thanksgiving and Christmas",
+      "confidence": "high"
+    },
+    {
+      "name": "Golden Gate Bridge",
+      "kind": "landmark",
+      "url": "https://www.goldengate.org/bridge/visiting-the-bridge/bikes-pedestrians/",
+      "sourceType": "official public operator (Golden Gate Bridge, Highway and Transportation District)",
+      "address": "No street address published; the page refers to the bridge's \"east sidewalk\", \"west sidewalk\" and \"West Parking Lot\"",
+      "operatingEvidence": "Published sidewalk access schedule: pedestrians use the east sidewalk only, 5:00 am to 9:00 pm in Pacific Daylight Time and 5:00 am to 6:30 pm in Pacific Standard Time; footer \"© Copyright 2026\". Welcome Center \"Open daily from 9:00 a.m. to 6:00 p.m.\"",
+      "hours": "Pedestrians (east sidewalk): 5:00 am–9:00 pm (PDT), 5:00 am–6:30 pm (PST); Welcome Center 9:00 a.m.–6:00 p.m. daily",
+      "confidence": "medium"
+    },
+    {
+      "name": "Golden Gate Park",
+      "kind": "park",
+      "url": "https://sfrecpark.org/770/Coit-Tower",
+      "sourceType": "official public operator (San Francisco Recreation & Parks)",
+      "address": "Department office at McLaren Lodge: \"501 Stanyan Street, San Francisco, CA 94117\"",
+      "operatingEvidence": "City park page with current late-October and early-November event listings.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Japanese Tea Garden",
+      "kind": "park",
+      "url": "https://gggp.org/visit/admissions-hours/",
+      "sourceType": "Gardens of Golden Gate Park (with San Francisco Recreation & Parks)",
+      "address": "\"75 Hagiwara Tea Garden Drive, San Francisco, CA 94118\"",
+      "operatingEvidence": "Online timed ticketing; \"All visitors are required to reserve a time slot in advance.\" Free hour Monday, Wednesday and Friday 9am-10am; the Long Bridge is under renovation.",
+      "hours": "Open daily from 9am; last entry 5:30pm (March–October), 4:30pm (November–February)",
+      "confidence": "high"
+    },
+    {
+      "name": "Conservatory of Flowers",
+      "kind": "park",
+      "url": "https://gggp.org/visit/admissions-hours/",
+      "sourceType": "Gardens of Golden Gate Park (with San Francisco Recreation & Parks)",
+      "address": "\"100 John F Kennedy Drive, San Francisco, CA 94118\"",
+      "operatingEvidence": "\"Open six days a week. Closed Wednesdays.\" Free on the first Tuesday of the month; 2026 annual maintenance closure January 21–February 4, 2026 listed; free nightly Photosynthesis light show starting 30 minutes after sunset.",
+      "hours": "10am–4:30pm, last entry 4pm; closed Wednesdays",
+      "confidence": "high"
+    },
+    {
+      "name": "San Francisco Botanical Garden",
+      "kind": "park",
+      "url": "https://gggp.org/visit/admissions-hours/",
+      "sourceType": "Gardens of Golden Gate Park (with San Francisco Recreation & Parks)",
+      "address": "\"1199 9th Ave, San Francisco, CA 94122\"",
+      "operatingEvidence": "Free daily 7:30–9am and the second Tuesday of every month; the GGGP site lists Lightscape at the Botanical Garden November 20 through January 3 for the 2026 winter season.",
+      "hours": "Open daily from 7:30am; last entry 4pm from the first Sunday in November through January; closes one hour after last entry",
+      "confidence": "high"
+    },
+    {
+      "name": "Cable cars (Powell & Market)",
+      "kind": "landmark",
+      "url": "https://www.sfmta.com/getting-around/muni/cable-cars",
+      "sourceType": "official public operator (SFMTA)",
+      "address": "Powell/Hyde and Powell/Mason lines \"start at Powell and Market\"; California line starts at California and Market",
+      "operatingEvidence": "Current service rules: to board at Powell & Market, Bay & Taylor or Hyde & Beach you must prepay \"8 a.m. to 8 p.m. daily\" via MuniMobile or Clipper; bicycles not permitted. No 2026-dated notice.",
+      "hours": "not published (prepayment rule applies 8 a.m.–8 p.m. daily)",
+      "confidence": "medium"
+    },
+    {
+      "name": "PIER 39",
+      "kind": "landmark",
+      "url": "https://www.pier39.com/",
+      "sourceType": "operator's own site",
+      "address": "\"PIER 39, The Embarcadero & Beach Street, San Francisco, CA 94133\"",
+      "operatingEvidence": "Published store, restaurant and attraction hours, a live Sea Lion Web Cam and footer \"©2026 PIER 39\".",
+      "hours": "Retail 10:00 am–8:00 pm; full-service restaurants 11:00 am–9:00 pm; attractions 10:00 am–8:00 pm (\"subject to change without notice\")",
+      "confidence": "medium"
+    },
+    {
+      "name": "Walt Disney Family Museum",
+      "kind": "museum",
+      "url": "https://www.waltdisney.org/visit",
+      "sourceType": "operator's own site",
+      "address": "\"104 Montgomery Street in the Presidio,\" San Francisco, CA 94129",
+      "operatingEvidence": "Visit page publishes current opening days and last-entry time and links to admission and ticketing; no exhibition dates read.",
+      "hours": "\"Thu–Sun, 10am–5:30pm (last entry at 4:30pm)\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Zuni Café",
+      "kind": "meal",
+      "url": "https://zunicafe.com/",
+      "sourceType": "operator's own site",
+      "address": "\"1658 Market Street San Francisco, CA 94102\"",
+      "operatingEvidence": "\"2026 Holiday Closures\" list (including November 26, December 24 and 25, December 31); reservations accepted up to 60 days in advance by phone or OpenTable.",
+      "hours": "Lunch Fri–Sun 11:00 am–3:00 pm; dinner Tue–Sun 5:00 pm–9:30 pm; Monday closed",
+      "confidence": "high"
+    },
+    {
+      "name": "State Bird Provisions",
+      "kind": "meal",
+      "url": "https://statebirdsf.com/",
+      "sourceType": "operator's own site",
+      "address": "\"1529 Fillmore Street San Francisco CA 94115\"",
+      "operatingEvidence": "\"State Bird has received a Michelin One Star from 2014 to 2026\"; online reservations for 1 to 4 guests and listed upcoming closure dates (November 3, 6, 21, 26; December 9-11, 17, 24-25).",
+      "hours": "Sun–Thu 5:30 pm–10:00 pm; Fri–Sat 5:30 pm–10:30 pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Foreign Cinema",
+      "kind": "meal",
+      "url": "https://foreigncinema.com/",
+      "sourceType": "operator's own site",
+      "address": "\"2534 Mission Street, San Francisco, CA 94110\"",
+      "operatingEvidence": "\"Walk-ins welcome, reservations are encouraged\"; \"Reserve up to 60 days in advance, on a daily basis at 12:00 pm PST\"; Thursday, November 26 \"closed for the holiday\"; films start \"at dusk in the outdoor courtyard.\"",
+      "hours": "Dinner Mon–Thu 5pm–9:30pm, Fri–Sat 5pm–10pm, Sun 5pm–9pm; brunch Sat–Sun 10:30am–2pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Tartine Bakery (Guerrero St)",
+      "kind": "bakery",
+      "url": "https://tartinebakery.com/san-francisco/bakery",
+      "sourceType": "operator's own site",
+      "address": "\"600 Guerrero St, San Francisco, CA 94110\"",
+      "operatingEvidence": "Menu PDF named \"Vertical_Menu_Guerrero_JUN_2026\"; holiday pastry and pie pre-orders open; \"We only close for Thanksgiving and Christmas day!\"",
+      "hours": "7:30am–6pm every day",
+      "confidence": "high"
+    },
+    {
+      "name": "Tartine Manufactory",
+      "kind": "meal",
+      "url": "https://tartinebakery.com/san-francisco/manufactory",
+      "sourceType": "operator's own site",
+      "address": "\"595 Alabama St, San Francisco, CA 94110\"",
+      "operatingEvidence": "AM and dinner menus uploaded October 2026 (\"sample menus\"); dinner Wednesday–Sunday, \"Walk-ins are welcome, but reservations are recommended.\"",
+      "hours": "Breakfast and lunch 8am–4pm daily; dinner Wed–Sun 5pm–9pm, limited Tuesday dinner; Monday 8am–4pm only",
+      "confidence": "high"
+    },
+    {
+      "name": "Plow",
+      "kind": "meal",
+      "url": "https://www.eatatplow.com/",
+      "sourceType": "operator's own site",
+      "address": "\"1299 18th Street San Francisco, CA 94107\"",
+      "operatingEvidence": "Published daily hours and wine dinner sign-up; no 2026 content (footer ©2025).",
+      "hours": "\"Monday-Friday 7AM-2PM\"; \"Saturday + Sunday 8AM-2PM\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Outerlands",
+      "kind": "meal",
+      "url": "https://outerlandssf.com/reservations",
+      "sourceType": "operator's own site",
+      "address": "\"4001 Judah Street\"",
+      "operatingEvidence": "Live Resy booking: \"Reservations are only for dinner, walk-ins are always welcome!\"; \"Friday breakfast/lunch, and weekend brunch are seated on a walk-in basis only, with a maximum party size of 8.\"",
+      "hours": "not published on pages read",
+      "confidence": "medium"
+    },
+    {
+      "name": "Hog Island Oyster Co. (Ferry Building)",
+      "kind": "meal",
+      "url": "https://www.hogislandoysters.com/locations/san-francisco",
+      "sourceType": "operator's own site",
+      "address": "\"1 Ferry Building, San Francisco, CA 94105\"",
+      "operatingEvidence": "Location page timestamped September 7, 2026; \"Casual Dine-In and Oysters To-Go | No Reservations.\"",
+      "hours": "Mon–Thu 11:30 am–8:00 pm; Fri–Sun 11:00 am–8:00 pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Tadich Grill",
+      "kind": "meal",
+      "url": "https://www.tadichgrillsf.com/",
+      "sourceType": "operator's own site",
+      "address": "\"240 California Street, San Francisco, CA 94111\"",
+      "operatingEvidence": "\"For your convenience we now take reservations\"; walk-in seating \"on a first-come, first-served basis.\" No 2026 content (©2020).",
+      "hours": "Mon–Fri 11:00am–9:00pm; Sat 4:00pm–9:00pm; Sunday closed to regular service",
+      "confidence": "medium"
+    },
+    {
+      "name": "House of Prime Rib",
+      "kind": "meal",
+      "url": "https://www.houseofprimerib.net/",
+      "sourceType": "operator's own site",
+      "address": "\"1906 Van Ness Avenue, between Washington & Jackson street\", San Francisco, CA 94109",
+      "operatingEvidence": "Dinner hours and phone/OpenTable reservations published; no 2026 content (footer ©2017).",
+      "hours": "Mon–Fri 5:00pm–10:00pm; Sat–Sun 4:00pm–10:00pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Smuggler's Cove",
+      "kind": "bar",
+      "url": "https://www.smugglerscovesf.com/",
+      "sourceType": "operator's own site",
+      "address": "\"650 Gough Street, San Francisco, CA, 94102\"",
+      "operatingEvidence": "\"2026 James Beard Foundation Nominee\" (Outstanding Bar); \"NOW OPEN SEVEN DAYS A WEEK!\"",
+      "hours": "\"Mondays-Sundays 5:00PM-1:15AM\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Trick Dog",
+      "kind": "bar",
+      "url": "https://www.trickdogbar.com/",
+      "sourceType": "operator's own site",
+      "address": "\"3010 20th Street, San Francisco, CA\"",
+      "operatingEvidence": "\"NEW MENU IS LIVE! WACKY WRESTLERS OF TRICK DOG (WWTD)\"; \"reservations not required\", SevenRooms booking available.",
+      "hours": "Sun–Thu 4pm–12am (food til 10pm); Fri–Sat 4pm–2am (food til midnight)",
+      "confidence": "medium"
+    },
+    {
+      "name": "True Laurel",
+      "kind": "bar",
+      "url": "https://www.truelaurelsf.com/",
+      "sourceType": "operator's own site",
+      "address": "\"753 alabama st\"",
+      "operatingEvidence": "\"#14 Best Bars in North America, 2026\" and \"Pinnacle Guide 2026\" noted; Tock reservations; weekend brunch 11am-3pm.",
+      "hours": "\"tues/wed: 4pm-10pm, thursday: 4pm-11pm, friday: 4pm-midnight, saturday: 11am-midnight, sunday: 11am-10pm\" (Monday not listed)",
+      "confidence": "high"
+    },
+    {
+      "name": "Comstock Saloon",
+      "kind": "bar",
+      "url": "https://www.comstocksaloon.com/",
+      "sourceType": "operator's own site",
+      "address": "\"155 Columbus Ave., San Francisco, CA 94133\"",
+      "operatingEvidence": "October live-music calendar matching 2026 dates (e.g. Saturdays 10/24, 10/31); Toast dinner reservations, walk-ins welcome: \"DONT CALL JUST COME!\"",
+      "hours": "Tue–Sat 4 pm–midnight; Friday noon–midnight (Sunday and Monday not listed)",
+      "confidence": "high"
+    },
+    {
+      "name": "Buena Vista Cafe",
+      "kind": "bar",
+      "url": "https://www.thebuenavista.com/",
+      "sourceType": "operator's own site",
+      "address": "\"2765 Hyde St (@ Beach), San Francisco, CA 94109\"",
+      "operatingEvidence": "Published weekly hours with kitchen closing time; no 2026 content.",
+      "hours": "Mon–Thu 9am–11pm; Fri 9am–12am; Sat 8am–12am; Sun 8am–11pm (kitchen closes 9:30pm)",
+      "confidence": "medium"
+    },
+    {
+      "name": "b. patisserie",
+      "kind": "bakery",
+      "url": "https://www.bpatisserie.com/",
+      "sourceType": "operator's own site",
+      "address": "\"2821 California St. @ Divisadero St. San Francisco, CA 94115\"",
+      "operatingEvidence": "Published hours and closing days; no 2026 content.",
+      "hours": "\"Wed to Fri 8-4 / Sat to Sun 8-5\"; \"CLOSED MONDAYS AND TUESDAYS\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Ritual Coffee (Valencia St)",
+      "kind": "cafe",
+      "url": "https://ritualcoffee.com/location/mission/",
+      "sourceType": "operator's own site",
+      "address": "\"1026 Valencia Street San Francisco, CA 94110\"",
+      "operatingEvidence": "\"Ritual on Valencia is now Ritual Coffee + General Store\"; published hours; homepage announces a newly opened FiDi café. Footer ©2025.",
+      "hours": "\"6:30am–7:00pm Monday–Thursday\"; \"6:30am–8:00pm Friday–Sunday\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Ritual Coffee (Hayes Valley)",
+      "kind": "cafe",
+      "url": "https://ritualcoffee.com/location/hayes-valley/",
+      "sourceType": "operator's own site",
+      "address": "\"@Proxy, 432b Octavia Street San Francisco, CA 94102\"",
+      "operatingEvidence": "Published hours on the branch page; footer ©2025.",
+      "hours": "\"7am–3:30pm Monday–Friday\"; \"7am–5pm Saturday–Sunday\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Philz Coffee (Noe Valley)",
+      "kind": "cafe",
+      "url": "https://www.philzcoffee.com/locations",
+      "sourceType": "operator's own site",
+      "address": "\"4298 24th St,\" San Francisco, CA 94114",
+      "operatingEvidence": "Locations page shows live same-day hours \"Today's Hours: 6:00am - 4:30pm\"; no 2026 content.",
+      "hours": "Same-day hours only: 6:00am–4:30pm",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Golden Gate Bridge views",
+      "reason": "generic, not a place (Golden Gate Bridge confirmed separately)",
+      "url": ""
+    },
+    {
+      "name": "Golden Gate views",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Ferry Building and Embarcadero",
+      "reason": "generic combination; Ferry Building Marketplace confirmed separately",
+      "url": ""
+    },
+    {
+      "name": "Ferry Building and one great dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Ferry Building grazing",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Waterfront walking",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Mission burrito stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Golden Gate Park time",
+      "reason": "generic, not a place (Golden Gate Park confirmed separately)",
+      "url": ""
+    },
+    {
+      "name": "Golden Gate Park morning",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private bay sail",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Tasting-menu night",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Luxury Nob Hill stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sausalito ferry moment",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset at Crissy Field",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "North Beach dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Pier 39 sea lions",
+      "reason": "generic phrasing; PIER 39 confirmed separately",
+      "url": ""
+    },
+    {
+      "name": "Cable car ride",
+      "reason": "generic phrasing; Cable cars (Powell & Market) confirmed separately",
+      "url": ""
+    },
+    {
+      "name": "Coffee in the Mission",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Bookshop and North Beach afternoon",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Japantown stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Twin Peaks at golden hour",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Lands End walk",
+      "reason": "NPS Lands End page gives no street address, no hours and was last updated September 23, 2021; no current operating evidence",
+      "url": "https://www.nps.gov/goga/planyourvisit/landsend.htm"
+    },
+    {
+      "name": "La Taqueria",
+      "reason": "official site domain did not resolve (getaddrinfo ENOTFOUND); not evidence of closure",
+      "url": "https://www.lataqueriasf.com/"
+    },
+    {
+      "name": "Swan Oyster Depot",
+      "reason": "the domain tried redirects to an unrelated site (oldpostofficedc.com); no official site found",
+      "url": "https://www.swanoysterdepot.us/"
+    },
+    {
+      "name": "Arsicault",
+      "reason": "official site publishes no street address or hours on the pages read (only \"© 2026 Arsicault Bakery\")",
+      "url": "https://www.arsicault-bakery.com/"
+    },
+    {
+      "name": "Sightglass",
+      "reason": "sightglass.com redirected (301) to an unrelated site (ernstinstruments.com); locations page 404",
+      "url": "https://sightglass.com/"
+    },
+    {
+      "name": "Andytown Coffee Roasters",
+      "reason": "official site returned HTTP 429 Too Many Requests on three attempts; not evidence of closure",
+      "url": "https://andytownsf.com/"
+    },
+    {
+      "name": "Tartine",
+      "reason": "ambiguous name; confirmed as two branches, Tartine Bakery (Guerrero St) and Tartine Manufactory",
+      "url": "https://www.tartinebakery.com/"
+    },
+    {
+      "name": "de Young Museum",
+      "reason": "official site returned HTTP 403 Forbidden",
+      "url": "https://www.famsf.org/visit/de-young"
+    },
+    {
+      "name": "Exploratorium",
+      "reason": "official site returned HTTP 403 Forbidden",
+      "url": "https://www.exploratorium.edu/visit"
+    },
+    {
+      "name": "Asian Art Museum",
+      "reason": "visit page returned HTTP 404 Not Found",
+      "url": "https://asianart.org/visit/"
+    },
+    {
+      "name": "Cable Car Museum",
+      "reason": "site footer © 2004-2023 and contradictory \"Open Daily\" / \"Closed Mondays\" with no times; no current evidence",
+      "url": "https://www.cablecarmuseum.org/"
+    },
+    {
+      "name": "Coit Tower",
+      "reason": "SF Rec & Park URLs tried returned unrelated pages; no Coit Tower details read",
+      "url": "https://sfrecpark.org/1027/Coit-Tower"
+    },
+    {
+      "name": "City Lights Booksellers",
+      "reason": "visit page returned HTTP 307 redirect without readable content",
+      "url": "https://citylights.com/visit/"
+    },
+    {
+      "name": "Blue Bottle Coffee (Ferry Building)",
+      "reason": "official site returned HTTP 403 Forbidden",
+      "url": "https://bluebottlecoffee.com/us/eng/cafes/ferry-building"
+    },
+    {
+      "name": "Zazie",
+      "reason": "domain tried did not resolve (getaddrinfo ENOTFOUND)",
+      "url": "https://www.zazierestaurant.com/"
+    },
+    {
+      "name": "Tosca Cafe",
+      "reason": "certificate error (hostname does not match certificate); not bypassed",
+      "url": "https://www.toscacafesf.com/"
+    },
+    {
+      "name": "Musée Mécanique",
+      "reason": "connection refused (ECONNREFUSED)",
+      "url": "https://www.museemecaniquesf.com/"
+    },
+    {
+      "name": "Mr. Holmes Bakehouse",
+      "reason": "site shows only a logo and cookie notice; no address or hours",
+      "url": "https://www.mrholmesbakehouse.com/"
+    },
+    {
+      "name": "Equator Coffees",
+      "reason": "official site returned HTTP 429 Too Many Requests",
+      "url": "https://www.equatorcoffees.com/pages/cafes"
+    },
+    {
+      "name": "Four Barrel Coffee",
+      "reason": "official site returned HTTP 429 Too Many Requests",
+      "url": "https://www.fourbarrelcoffee.com/"
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Golden Gate Bridge",
+        "Alcatraz Island",
+        "SFMOMA",
+        "Ferry Building Marketplace"
+      ],
+      "bestFirstTimers": [
+        "Alcatraz Island",
+        "Golden Gate Bridge",
+        "Cable cars (Powell & Market)",
+        "Ferry Building Marketplace"
+      ],
+      "bestRestaurants": [
+        "Zuni Café",
+        "State Bird Provisions",
+        "Foreign Cinema",
+        "Tadich Grill"
+      ],
+      "bestBudget": [
+        "Golden Gate Park",
+        "San Francisco Botanical Garden",
+        "Ferry Building Marketplace",
+        "Golden Gate Bridge"
+      ],
+      "bestLuxury": [
+        "State Bird Provisions",
+        "House of Prime Rib",
+        "True Laurel"
+      ],
+      "bestCouples": [
+        "Foreign Cinema",
+        "Japanese Tea Garden",
+        "Conservatory of Flowers",
+        "Smuggler's Cove"
+      ],
+      "bestKids": [
+        "California Academy of Sciences",
+        "PIER 39",
+        "Cable cars (Powell & Market)",
+        "Walt Disney Family Museum"
+      ],
+      "bestSolo": [
+        "SFMOMA",
+        "Ritual Coffee (Valencia St)",
+        "Hog Island Oyster Co. (Ferry Building)",
+        "Golden Gate Park"
+      ],
+      "bestUnique": [
+        "Alcatraz Island",
+        "Japanese Tea Garden",
+        "Conservatory of Flowers",
+        "Buena Vista Cafe"
+      ],
+      "bestBreakfast": [
+        "Tartine Manufactory",
+        "Plow",
+        "Outerlands"
+      ],
+      "bestLunch": [
+        "Hog Island Oyster Co. (Ferry Building)",
+        "Tadich Grill",
+        "Zuni Café",
+        "Tartine Manufactory"
+      ],
+      "bestDinner": [
+        "Zuni Café",
+        "State Bird Provisions",
+        "Foreign Cinema",
+        "House of Prime Rib"
+      ],
+      "bestCocktails": [
+        "Trick Dog",
+        "Smuggler's Cove",
+        "True Laurel",
+        "Comstock Saloon"
+      ],
+      "bestBakeries": [
+        "Tartine Bakery (Guerrero St)",
+        "b. patisserie",
+        "Tartine Manufactory"
+      ],
+      "bestCoffee": [
+        "Ritual Coffee (Valencia St)",
+        "Ritual Coffee (Hayes Valley)",
+        "Philz Coffee (Noe Valley)"
+      ]
+    },
+    "queries": {
+      "Alcatraz Island": "Alcatraz Landing Pier 33 Embarcadero San Francisco",
+      "Ferry Building Marketplace": "Ferry Building Marketplace 1 Ferry Building San Francisco",
+      "California Academy of Sciences": "California Academy of Sciences 55 Music Concourse Drive San Francisco",
+      "SFMOMA": "SFMOMA 151 Third Street San Francisco",
+      "Golden Gate Bridge": "Golden Gate Bridge Welcome Center San Francisco",
+      "Golden Gate Park": "Golden Gate Park McLaren Lodge 501 Stanyan Street San Francisco",
+      "Japanese Tea Garden": "Japanese Tea Garden 75 Hagiwara Tea Garden Drive San Francisco",
+      "Conservatory of Flowers": "Conservatory of Flowers 100 John F Kennedy Drive San Francisco",
+      "San Francisco Botanical Garden": "San Francisco Botanical Garden 1199 9th Avenue San Francisco",
+      "Cable cars (Powell & Market)": "Powell and Market cable car turnaround San Francisco",
+      "PIER 39": "PIER 39 The Embarcadero and Beach Street San Francisco",
+      "Walt Disney Family Museum": "Walt Disney Family Museum 104 Montgomery Street Presidio San Francisco",
+      "Zuni Café": "Zuni Cafe 1658 Market Street San Francisco",
+      "State Bird Provisions": "State Bird Provisions 1529 Fillmore Street San Francisco",
+      "Foreign Cinema": "Foreign Cinema 2534 Mission Street San Francisco",
+      "Tartine Bakery (Guerrero St)": "Tartine Bakery 600 Guerrero Street San Francisco",
+      "Tartine Manufactory": "Tartine Manufactory 595 Alabama Street San Francisco",
+      "Plow": "Plow 1299 18th Street San Francisco",
+      "Outerlands": "Outerlands 4001 Judah Street San Francisco",
+      "Hog Island Oyster Co. (Ferry Building)": "Hog Island Oyster Co 1 Ferry Building San Francisco",
+      "Tadich Grill": "Tadich Grill 240 California Street San Francisco",
+      "House of Prime Rib": "House of Prime Rib 1906 Van Ness Avenue San Francisco",
+      "Smuggler's Cove": "Smuggler's Cove 650 Gough Street San Francisco",
+      "Trick Dog": "Trick Dog 3010 20th Street San Francisco",
+      "True Laurel": "True Laurel 753 Alabama Street San Francisco",
+      "Comstock Saloon": "Comstock Saloon 155 Columbus Avenue San Francisco",
+      "Buena Vista Cafe": "Buena Vista Cafe 2765 Hyde Street San Francisco",
+      "b. patisserie": "b. patisserie 2821 California Street San Francisco",
+      "Ritual Coffee (Valencia St)": "Ritual Coffee 1026 Valencia Street San Francisco",
+      "Ritual Coffee (Hayes Valley)": "Ritual Coffee 432b Octavia Street San Francisco",
+      "Philz Coffee (Noe Valley)": "Philz Coffee 4298 24th Street San Francisco"
+    },
+    "summary": "The bridge, Alcatraz, museums and Golden Gate Park gardens, with breakfast spots, dinners, cocktail bars, bakeries and coffee checked against their own websites.",
+    "highlights": [
+      "Golden Gate Bridge",
+      "Alcatraz Island",
+      "SFMOMA",
+      "California Academy of Sciences"
+    ],
+    "tip": "Book Alcatraz well ahead, since the National Park Service says it frequently sells out in advance, and avoid planning SFMOMA or the Conservatory of Flowers for a Wednesday, when both are closed.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Wednesdays and Mondays",
+        "copy": "SFMOMA and the Conservatory of Flowers both close on Wednesdays, and Zuni Café is closed on Mondays. b. patisserie is closed Mondays and Tuesdays, and the Walt Disney Family Museum opens Thursday to Sunday only."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book ahead",
+        "copy": "The National Park Service says Alcatraz can sell out a month or more ahead in summer and near holidays, and the Japanese Tea Garden requires every visitor to reserve a time slot. Zuni Café and Foreign Cinema take reservations up to 60 days ahead, with Foreign Cinema releasing dates daily at 12:00 pm."
+      },
+      {
+        "label": "Walk-ins",
+        "value": "No booking needed",
+        "copy": "Hog Island Oyster Co. at the Ferry Building takes no reservations, and Outerlands seats Friday breakfast/lunch and weekend brunch on a walk-in basis only, for parties of up to 8. Trick Dog says reservations are not required, and Comstock Saloon welcomes walk-ins."
+      },
+      {
+        "label": "Rules",
+        "value": "Prepay, 21+, sidewalks",
+        "copy": "From 8 a.m. to 8 p.m. you must prepay your cable car fare before boarding at Powell & Market, Bay & Taylor or Hyde & Beach, and bicycles are not allowed on board. Thursday NightLife at the California Academy of Sciences is for ages 21+, and pedestrians on the Golden Gate Bridge may use the east sidewalk only."
+      }
+    ],
+    "dek": "Book Alcatraz and timed garden entry first, then build your days around Wednesday museum closures and walk-in breakfasts.",
+    "intro": [
+      "San Francisco rewards a little planning. The National Park Service says Alcatraz is open every day except Christmas, Thanksgiving and New Year's Day, with ferries leaving Piers 31-33 about every half hour from 8:45am, and that the island frequently sells out in advance, so book through the contracted ferry operator first. On the Golden Gate Bridge, you walk the east sidewalk only; from early November, under Pacific Standard Time, pedestrian gates are open 5:00 am to 6:30 pm. The bridge Welcome Center is open daily from 9:00 a.m. to 6:00 p.m.",
+      "For art, SFMOMA at 151 Third St is closed on Wednesdays and stays open until 8 p.m. on Thursdays; visitors 18 and younger get in free. Klee Behind the Mask runs until April 18, 2027, Feel the Beat: Dance in Photographs until February 28, 2027, and Sarah Sze: Forever is Composed of Nows opens November 21, 2026. In Golden Gate Park, the California Academy of Sciences recommends buying tickets in advance for weekends and holidays, and its Thursday NightLife evenings are for ages 21 and over.",
+      "The park's gardens run on their own rules. The Japanese Tea Garden requires a timed reservation, offers a free hour on Monday, Wednesday and Friday mornings from 9am to 10am, and moves last entry to 4:30pm from November to February. The Conservatory of Flowers is closed on Wednesdays and free on the first Tuesday of the month, while the San Francisco Botanical Garden is free every day from 7:30 to 9am. The Botanical Garden lists Lightscape from November 20 through January 3 for the 2026 winter season.",
+      "For food, you can walk in for breakfast at Plow from 7AM on weekdays, at Tartine Manufactory from 8am daily, or at Outerlands, where weekend brunch is walk-in only. The Ferry Building is open daily 6:00am to 10:00pm, with a farmers market on Tuesday, Thursday and Saturday, and Hog Island Oyster Co. there takes no reservations. For dinner, Zuni Café is closed on Mondays, and Tadich Grill now takes reservations. Smuggler's Cove is open seven days a week from 5:00PM, and Trick Dog says reservations are not required."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair a pre-booked Alcatraz ferry from Piers 31-33 with a walk on the Golden Gate Bridge's east sidewalk and a prepaid cable car ride from Powell & Market."
+      ],
+      [
+        "A slower morning",
+        "Start with a walk-in breakfast at Tartine Manufactory or Plow, then catch the San Francisco Botanical Garden's free 7:30 to 9am entry or the Japanese Tea Garden's free 9am hour on Monday, Wednesday or Friday."
+      ],
+      [
+        "Before booking",
+        "Check that you aren't planning SFMOMA or the Conservatory of Flowers for a Wednesday, and reserve Zuni Café or Foreign Cinema up to 60 days ahead."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability, and several operators note that hours can change for holidays and events. Some confirmed places showed no 2026-dated content and are rated medium (Plow, Tadich Grill, House of Prime Rib, Buena Vista Cafe, b. patisserie, the Ritual Coffee branches, Philz Coffee); the NPS Alcatraz pages were last updated in 2021. Hours were not published on the pages read for Outerlands, Golden Gate Park or the cable cars, and Philz showed same-day hours only. The Golden Gate Bridge site gives no street address. These sites could not be read: de Young and Exploratorium (403), Blue Bottle (403), Andytown, Equator and Four Barrel (429), Tosca Cafe (certificate error), Musée Mécanique (connection refused), La Taqueria and Zazie (domain not found), Asian Art Museum visit page (404) and City Lights (redirect). Sightglass and Swan Oyster Depot domains redirected to unrelated sites. None of these failures is evidence of closure.",
+  "injectionLikeText": [],
+  "injectionLikeTextIgnored": [
+    "tartinebakery.com homepage: the first automated read reported text 'addressed to an AI, asking for a particular output format and quotations'; a second read found no such text, so the exact wording could not be captured. It was ignored.",
+    "2026-10-25: the homepage was re-read in a browser and its full HTML searched; no AI-directed text was present."
+  ]
+}

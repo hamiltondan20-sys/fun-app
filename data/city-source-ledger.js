@@ -5,6 +5,433 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "San Francisco, United States": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-25",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability, and several operators note that hours can change for holidays and events. Some confirmed places showed no 2026-dated content and are rated medium (Plow, Tadich Grill, House of Prime Rib, Buena Vista Cafe, b. patisserie, the Ritual Coffee branches, Philz Coffee); the NPS Alcatraz pages were last updated in 2021. Hours were not published on the pages read for Outerlands, Golden Gate Park or the cable cars, and Philz showed same-day hours only. The Golden Gate Bridge site gives no street address. These sites could not be read: de Young and Exploratorium (403), Blue Bottle (403), Andytown, Equator and Four Barrel (429), Tosca Cafe (certificate error), Musée Mécanique (connection refused), La Taqueria and Zazie (domain not found), Asian Art Museum visit page (404) and City Lights (redirect). Sightglass and Swan Oyster Depot domains redirected to unrelated sites. None of these failures is evidence of closure.",
+    "sourceUrls": [
+      "docs/content-research/san-francisco-2026-10-25.md",
+      "docs/content-research/san-francisco-2026-10-25.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Golden Gate Bridge views",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (Golden Gate Bridge confirmed separately)"
+      },
+      {
+        "name": "Golden Gate views",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Ferry Building and Embarcadero",
+        "checkedOn": "2026-10-25",
+        "reason": "generic combination; Ferry Building Marketplace confirmed separately"
+      },
+      {
+        "name": "Ferry Building and one great dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Ferry Building grazing",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Waterfront walking",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Mission burrito stop",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Golden Gate Park time",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (Golden Gate Park confirmed separately)"
+      },
+      {
+        "name": "Golden Gate Park morning",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private bay sail",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Tasting-menu night",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Luxury Nob Hill stay",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sausalito ferry moment",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset at Crissy Field",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "North Beach dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Pier 39 sea lions",
+        "checkedOn": "2026-10-25",
+        "reason": "generic phrasing; PIER 39 confirmed separately"
+      },
+      {
+        "name": "Cable car ride",
+        "checkedOn": "2026-10-25",
+        "reason": "generic phrasing; Cable cars (Powell & Market) confirmed separately"
+      },
+      {
+        "name": "Coffee in the Mission",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Bookshop and North Beach afternoon",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Japantown stop",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Twin Peaks at golden hour",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Lands End walk",
+        "url": "https://www.nps.gov/goga/planyourvisit/landsend.htm",
+        "checkedOn": "2026-10-25",
+        "reason": "NPS Lands End page gives no street address, no hours and was last updated September 23, 2021; no current operating evidence"
+      },
+      {
+        "name": "La Taqueria",
+        "url": "https://www.lataqueriasf.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site domain did not resolve (getaddrinfo ENOTFOUND); not evidence of closure"
+      },
+      {
+        "name": "Swan Oyster Depot",
+        "url": "https://www.swanoysterdepot.us/",
+        "checkedOn": "2026-10-25",
+        "reason": "the domain tried redirects to an unrelated site (oldpostofficedc.com); no official site found"
+      },
+      {
+        "name": "Arsicault",
+        "url": "https://www.arsicault-bakery.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site publishes no street address or hours on the pages read (only \"© 2026 Arsicault Bakery\")"
+      },
+      {
+        "name": "Sightglass",
+        "url": "https://sightglass.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "sightglass.com redirected (301) to an unrelated site (ernstinstruments.com); locations page 404"
+      },
+      {
+        "name": "Andytown Coffee Roasters",
+        "url": "https://andytownsf.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site returned HTTP 429 Too Many Requests on three attempts; not evidence of closure"
+      },
+      {
+        "name": "Tartine",
+        "url": "https://www.tartinebakery.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "ambiguous name; confirmed as two branches, Tartine Bakery (Guerrero St) and Tartine Manufactory"
+      },
+      {
+        "name": "de Young Museum",
+        "url": "https://www.famsf.org/visit/de-young",
+        "checkedOn": "2026-10-25",
+        "reason": "official site returned HTTP 403 Forbidden"
+      },
+      {
+        "name": "Exploratorium",
+        "url": "https://www.exploratorium.edu/visit",
+        "checkedOn": "2026-10-25",
+        "reason": "official site returned HTTP 403 Forbidden"
+      },
+      {
+        "name": "Asian Art Museum",
+        "url": "https://asianart.org/visit/",
+        "checkedOn": "2026-10-25",
+        "reason": "visit page returned HTTP 404 Not Found"
+      },
+      {
+        "name": "Cable Car Museum",
+        "url": "https://www.cablecarmuseum.org/",
+        "checkedOn": "2026-10-25",
+        "reason": "site footer © 2004-2023 and contradictory \"Open Daily\" / \"Closed Mondays\" with no times; no current evidence"
+      },
+      {
+        "name": "Coit Tower",
+        "url": "https://sfrecpark.org/1027/Coit-Tower",
+        "checkedOn": "2026-10-25",
+        "reason": "SF Rec & Park URLs tried returned unrelated pages; no Coit Tower details read"
+      },
+      {
+        "name": "City Lights Booksellers",
+        "url": "https://citylights.com/visit/",
+        "checkedOn": "2026-10-25",
+        "reason": "visit page returned HTTP 307 redirect without readable content"
+      },
+      {
+        "name": "Blue Bottle Coffee (Ferry Building)",
+        "url": "https://bluebottlecoffee.com/us/eng/cafes/ferry-building",
+        "checkedOn": "2026-10-25",
+        "reason": "official site returned HTTP 403 Forbidden"
+      },
+      {
+        "name": "Zazie",
+        "url": "https://www.zazierestaurant.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "domain tried did not resolve (getaddrinfo ENOTFOUND)"
+      },
+      {
+        "name": "Tosca Cafe",
+        "url": "https://www.toscacafesf.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "certificate error (hostname does not match certificate); not bypassed"
+      },
+      {
+        "name": "Musée Mécanique",
+        "url": "https://www.museemecaniquesf.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "connection refused (ECONNREFUSED)"
+      },
+      {
+        "name": "Mr. Holmes Bakehouse",
+        "url": "https://www.mrholmesbakehouse.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "site shows only a logo and cookie notice; no address or hours"
+      },
+      {
+        "name": "Equator Coffees",
+        "url": "https://www.equatorcoffees.com/pages/cafes",
+        "checkedOn": "2026-10-25",
+        "reason": "official site returned HTTP 429 Too Many Requests"
+      },
+      {
+        "name": "Four Barrel Coffee",
+        "url": "https://www.fourbarrelcoffee.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site returned HTTP 429 Too Many Requests"
+      }
+    ],
+    "placeSources": {
+      "Alcatraz Island": {
+        "url": "https://www.nps.gov/alca/planyourvisit/hours.htm",
+        "sourceType": "official public operator (National Park Service); ferry concessioner page alcatrazcitycruises.com/tickets also read",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "NPS states \"Alcatraz is open every day except Christmas, Thanksgiving and New Year's day\" and \"frequently sells out in advance, as much as a month or more in summer and near holidays.\" The contracted ferry operator's ticket page offers live \"Check Availability\" booking from Pier 33. NPS page last updated 2021."
+      },
+      "Ferry Building Marketplace": {
+        "url": "https://www.ferrybuildingmarketplace.com/visit",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Visit page lists building hours and year-round farmers market days (Tue, Thu 10am-2pm; Sat 8am-2pm); footer \"©2026\"."
+      },
+      "California Academy of Sciences": {
+        "url": "https://www.calacademy.org/visit",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current October event listings and ticketing; \"Advance purchase is recommended, especially for weekend or holiday visits.\" Thursday NightLife is 21+, \"6–10 p.m. most Thursdays\"; planetarium passes are first-come, first-served."
+      },
+      "SFMOMA": {
+        "url": "https://www.sfmoma.org/visit/",
+        "sourceType": "operator's own site (exhibitions page sfmoma.org/exhibitions also read)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Exhibitions page lists \"Klee Behind the Mask\" (Aug 08, 2026–Apr 18, 2027), \"Feel the Beat: Dance in Photographs\" (May 16, 2026–Feb 28, 2027), \"New Work: Raven Chacon\" (October 24, 2026–November 7, 2027) and upcoming \"Sarah Sze: Forever is Composed of Nows\" opening November 21, 2026. Adults $30; age 18 and younger free."
+      },
+      "Golden Gate Bridge": {
+        "url": "https://www.goldengate.org/bridge/visiting-the-bridge/bikes-pedestrians/",
+        "sourceType": "official public operator (Golden Gate Bridge, Highway and Transportation District)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published sidewalk access schedule: pedestrians use the east sidewalk only, 5:00 am to 9:00 pm in Pacific Daylight Time and 5:00 am to 6:30 pm in Pacific Standard Time; footer \"© Copyright 2026\". Welcome Center \"Open daily from 9:00 a.m. to 6:00 p.m.\""
+      },
+      "Golden Gate Park": {
+        "url": "https://sfrecpark.org/770/Coit-Tower",
+        "sourceType": "official public operator (San Francisco Recreation & Parks)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "City park page with current late-October and early-November event listings."
+      },
+      "Japanese Tea Garden": {
+        "url": "https://gggp.org/visit/admissions-hours/",
+        "sourceType": "Gardens of Golden Gate Park (with San Francisco Recreation & Parks)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online timed ticketing; \"All visitors are required to reserve a time slot in advance.\" Free hour Monday, Wednesday and Friday 9am-10am; the Long Bridge is under renovation."
+      },
+      "Conservatory of Flowers": {
+        "url": "https://gggp.org/visit/admissions-hours/",
+        "sourceType": "Gardens of Golden Gate Park (with San Francisco Recreation & Parks)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Open six days a week. Closed Wednesdays.\" Free on the first Tuesday of the month; 2026 annual maintenance closure January 21–February 4, 2026 listed; free nightly Photosynthesis light show starting 30 minutes after sunset."
+      },
+      "San Francisco Botanical Garden": {
+        "url": "https://gggp.org/visit/admissions-hours/",
+        "sourceType": "Gardens of Golden Gate Park (with San Francisco Recreation & Parks)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Free daily 7:30–9am and the second Tuesday of every month; the GGGP site lists Lightscape at the Botanical Garden November 20 through January 3 for the 2026 winter season."
+      },
+      "Cable cars (Powell & Market)": {
+        "url": "https://www.sfmta.com/getting-around/muni/cable-cars",
+        "sourceType": "official public operator (SFMTA)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current service rules: to board at Powell & Market, Bay & Taylor or Hyde & Beach you must prepay \"8 a.m. to 8 p.m. daily\" via MuniMobile or Clipper; bicycles not permitted. No 2026-dated notice."
+      },
+      "PIER 39": {
+        "url": "https://www.pier39.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published store, restaurant and attraction hours, a live Sea Lion Web Cam and footer \"©2026 PIER 39\"."
+      },
+      "Walt Disney Family Museum": {
+        "url": "https://www.waltdisney.org/visit",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Visit page publishes current opening days and last-entry time and links to admission and ticketing; no exhibition dates read."
+      },
+      "Zuni Café": {
+        "url": "https://zunicafe.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"2026 Holiday Closures\" list (including November 26, December 24 and 25, December 31); reservations accepted up to 60 days in advance by phone or OpenTable."
+      },
+      "State Bird Provisions": {
+        "url": "https://statebirdsf.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"State Bird has received a Michelin One Star from 2014 to 2026\"; online reservations for 1 to 4 guests and listed upcoming closure dates (November 3, 6, 21, 26; December 9-11, 17, 24-25)."
+      },
+      "Foreign Cinema": {
+        "url": "https://foreigncinema.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Walk-ins welcome, reservations are encouraged\"; \"Reserve up to 60 days in advance, on a daily basis at 12:00 pm PST\"; Thursday, November 26 \"closed for the holiday\"; films start \"at dusk in the outdoor courtyard.\""
+      },
+      "Tartine Bakery (Guerrero St)": {
+        "url": "https://tartinebakery.com/san-francisco/bakery",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Menu PDF named \"Vertical_Menu_Guerrero_JUN_2026\"; holiday pastry and pie pre-orders open; \"We only close for Thanksgiving and Christmas day!\""
+      },
+      "Tartine Manufactory": {
+        "url": "https://tartinebakery.com/san-francisco/manufactory",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "AM and dinner menus uploaded October 2026 (\"sample menus\"); dinner Wednesday–Sunday, \"Walk-ins are welcome, but reservations are recommended.\""
+      },
+      "Plow": {
+        "url": "https://www.eatatplow.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published daily hours and wine dinner sign-up; no 2026 content (footer ©2025)."
+      },
+      "Outerlands": {
+        "url": "https://outerlandssf.com/reservations",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Live Resy booking: \"Reservations are only for dinner, walk-ins are always welcome!\"; \"Friday breakfast/lunch, and weekend brunch are seated on a walk-in basis only, with a maximum party size of 8.\""
+      },
+      "Hog Island Oyster Co. (Ferry Building)": {
+        "url": "https://www.hogislandoysters.com/locations/san-francisco",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Location page timestamped September 7, 2026; \"Casual Dine-In and Oysters To-Go | No Reservations.\""
+      },
+      "Tadich Grill": {
+        "url": "https://www.tadichgrillsf.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"For your convenience we now take reservations\"; walk-in seating \"on a first-come, first-served basis.\" No 2026 content (©2020)."
+      },
+      "House of Prime Rib": {
+        "url": "https://www.houseofprimerib.net/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Dinner hours and phone/OpenTable reservations published; no 2026 content (footer ©2017)."
+      },
+      "Smuggler's Cove": {
+        "url": "https://www.smugglerscovesf.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"2026 James Beard Foundation Nominee\" (Outstanding Bar); \"NOW OPEN SEVEN DAYS A WEEK!\""
+      },
+      "Trick Dog": {
+        "url": "https://www.trickdogbar.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"NEW MENU IS LIVE! WACKY WRESTLERS OF TRICK DOG (WWTD)\"; \"reservations not required\", SevenRooms booking available."
+      },
+      "True Laurel": {
+        "url": "https://www.truelaurelsf.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"#14 Best Bars in North America, 2026\" and \"Pinnacle Guide 2026\" noted; Tock reservations; weekend brunch 11am-3pm."
+      },
+      "Comstock Saloon": {
+        "url": "https://www.comstocksaloon.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "October live-music calendar matching 2026 dates (e.g. Saturdays 10/24, 10/31); Toast dinner reservations, walk-ins welcome: \"DONT CALL JUST COME!\""
+      },
+      "Buena Vista Cafe": {
+        "url": "https://www.thebuenavista.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published weekly hours with kitchen closing time; no 2026 content."
+      },
+      "b. patisserie": {
+        "url": "https://www.bpatisserie.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published hours and closing days; no 2026 content."
+      },
+      "Ritual Coffee (Valencia St)": {
+        "url": "https://ritualcoffee.com/location/mission/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Ritual on Valencia is now Ritual Coffee + General Store\"; published hours; homepage announces a newly opened FiDi café. Footer ©2025."
+      },
+      "Ritual Coffee (Hayes Valley)": {
+        "url": "https://ritualcoffee.com/location/hayes-valley/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published hours on the branch page; footer ©2025."
+      },
+      "Philz Coffee (Noe Valley)": {
+        "url": "https://www.philzcoffee.com/locations",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Locations page shows live same-day hours \"Today's Hours: 6:00am - 4:30pm\"; no 2026 content."
+      }
+    }
+  },
   "Dubai, United Arab Emirates": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-25",
