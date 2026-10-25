@@ -1,0 +1,643 @@
+{
+  "city": "Madrid, Spain",
+  "checkedOn": "2026-10-25",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Palacio Real de Madrid",
+      "kind": "landmark",
+      "url": "https://tickets.patrimonionacional.es/es/tickets/palacio-real-de-madrid",
+      "sourceType": "official public operator (Patrimonio Nacional)",
+      "address": "Calle de Bailén, s/n, Madrid, 28071",
+      "operatingEvidence": "Ticket page sells dated time slots and lists 2026 closures (1 Jan, 6 Jan, 1 May, 25 Dec all day; 24 and 31 Dec from 15:00). Notice for improvement works: \"se recomienda no traer mochilas, maletas, bolsos y paquetes de grandes dimensiones\".",
+      "hours": "Winter (Oct-Mar): Mon-Sat 10:00-18:00, Sun 10:00-16:00. Summer (Apr-Sep): Mon-Sat 10:00-19:00, Sun 10:00-16:00. Entry ends one hour before closing.",
+      "confidence": "high"
+    },
+    {
+      "name": "Museo Nacional Centro de Arte Reina Sofía",
+      "kind": "museum",
+      "url": "https://www.museoreinasofia.es/visita",
+      "sourceType": "official public operator (national museum)",
+      "address": "Calle Santa Isabel, 52, 28012 Madrid (Edificio Nouvel entrance: Ronda de Atocha, 2)",
+      "operatingEvidence": "Visit page lists 2026 exhibitions, including Andrea Canepa's \"Fardo\" (13 January 2026 to 1 January 2027) covering the Palacio de Cristal, which is \"temporarily closed\" for building improvements. General admission 12 €.",
+      "hours": "Mon and Wed-Sun open from 10:00 (closing times not clearly labelled on the page); Tuesday closed.",
+      "confidence": "high"
+    },
+    {
+      "name": "Museo Nacional Thyssen-Bornemisza",
+      "kind": "museum",
+      "url": "https://www.museothyssen.org/visita/horarios-tarifas",
+      "sourceType": "official public operator (national museum)",
+      "address": "Paseo del Prado, 8, 28014 Madrid",
+      "operatingEvidence": "Lists the exhibition \"El universo freudiano de Dalí\" with guided visits on 15 November 2026 and 17 January 2027, plus a free lecture on 3 November 2026 requiring reservation. Collection plus temporary exhibitions 14€.",
+      "hours": "Winter (1 Sep-30 Jun): Mon 12:00-16:00 (free, collection only); Tue-Fri 10:00-19:00; Sat 10:00-23:00 (free 21:00-23:00); Sun 10:00-19:00. Closed 1 Jan, 1 May, 25 Dec.",
+      "confidence": "high"
+    },
+    {
+      "name": "Museo Sorolla",
+      "kind": "museum",
+      "url": "https://www.cultura.gob.es/msorolla/visita/horarios.html",
+      "sourceType": "official public operator (Ministerio de Cultura)",
+      "address": "Edificio de ampliación: Calle Zurbano, 68, 28010 Madrid (Casa Museo: Paseo General Martínez Campos, 37, temporarily closed)",
+      "operatingEvidence": "Hours page says the museum opens from 15 October with \"Visita limitada al nuevo edificio de la ampliación\"; the Casa Museo is temporarily closed for rehabilitation. \"ENTRADA GRATUITA.\"",
+      "hours": "Tue-Sat 9:30-20:00; Sundays and holidays 10:00-15:00; closed Mondays, 1 and 6 Jan, 1 May, 24, 25 and 31 Dec.",
+      "confidence": "high"
+    },
+    {
+      "name": "Museo Lázaro Galdiano",
+      "kind": "museum",
+      "url": "https://www.museolazarogaldiano.es/visita",
+      "sourceType": "official public operator (Fundación Lázaro Galdiano)",
+      "address": "Calle Serrano 122, 28006 Madrid",
+      "operatingEvidence": "Visit page lists closures on 24, 25 and 31 December 2026; homepage lists 2026 programme including guided \"Paseos por la Colección\" through 30.12.2026. Cámara del Tesoro temporarily closed for inspection.",
+      "hours": "Tue-Fri 9:30-15:00 and 16:30-19:30; Sat-Sun 9:30-15:00; closed Mondays. General €8; free Tue-Fri 14:00-15:00.",
+      "confidence": "high"
+    },
+    {
+      "name": "Museo del Romanticismo",
+      "kind": "museum",
+      "url": "https://www.cultura.gob.es/mromanticismo/visita/horariosytarifas.html",
+      "sourceType": "official public operator (Ministerio de Cultura)",
+      "address": "C/ San Mateo, 13. 28004 Madrid",
+      "operatingEvidence": "Hours page carries a 2026 notice (\"Acceso gratuito al museo hasta el 31 de octubre de 2026\") and lists 2026 free days; current exhibition \"Roberta Marrero. Yo soy la navaja y la herida\". Rooms XV-XXI closed for works.",
+      "hours": "Winter (Nov-Apr): Tue-Sat 9:30-18:30; Summer (May-Oct): Tue-Sat 9:30-20:30; Sundays and holidays 10:00-15:00; closed Mondays. General €3; free Saturdays from 14:00 and Sundays.",
+      "confidence": "high"
+    },
+    {
+      "name": "Museo del Ferrocarril",
+      "kind": "museum",
+      "url": "https://www.museodelferrocarril.org/",
+      "sourceType": "operator's own site",
+      "address": "Paseo de las Delicias, 61, 28045 Madrid",
+      "operatingEvidence": "News dated 08/10/2026: temporary exhibition \"El tren de la vida\" opened in Sala 3000; 21/10/2026 item on the Halloween experience \"El Museo Encantado\".",
+      "hours": "October to May: Mon-Fri 9:30-15:00; Sat and holidays 10:00-19:00; Sun 10:00-15:00. June to September: daily 10:00-15:00.",
+      "confidence": "high"
+    },
+    {
+      "name": "Jardines de El Buen Retiro",
+      "kind": "park",
+      "url": "https://www.madrid.es/portales/munimadrid/es/Jardines-de-El-Buen-Retiro/?vgnextfmt=default&vgnextoid=499561945d9ec210VgnVCM2000000c205a0aRCRD&vgnextchannel=38bb1914e7d4e210VgnVCM1000000b205a0aRCRD",
+      "sourceType": "official public operator (Ayuntamiento de Madrid)",
+      "address": "Plaza de la Independencia, 7, 28001 Madrid",
+      "operatingEvidence": "City page links an adverse-weather protocol dated 20.06.2026; rowboats can be rented on the Estanque Grande, with the embarcadero reached from Plaza de la Independencia.",
+      "hours": "April-September 6:00-24:00; October-March 6:00-22:00.",
+      "confidence": "high"
+    },
+    {
+      "name": "Real Jardín Botánico",
+      "kind": "park",
+      "url": "https://www.rjb.csic.es/",
+      "sourceType": "official public operator (CSIC)",
+      "address": "Plaza de Murillo, 2. 28014. Madrid",
+      "operatingEvidence": "Homepage announces \"Semana de la Ciencia 2026\" (17-29 November) with free activities and limited places; lists exhibition \"No acabarán mis flores\".",
+      "hours": "Opens 10:00 daily; closes 17:30 (Nov-Feb), 18:30 (Mar, Oct), 19:30 (Apr, Sep), 20:30 (May-Aug).",
+      "confidence": "high"
+    },
+    {
+      "name": "Azotea del Círculo de Bellas Artes",
+      "kind": "scenic",
+      "url": "https://www.circulobellasartes.com/azotea/",
+      "sourceType": "operator's own site",
+      "address": "Círculo de Bellas Artes, Alcalá, 42, 28014 Madrid",
+      "operatingEvidence": "Rooftop page sells tickets (normal €6, reduced €5) online at tickets.circulobellasartes.com; footer \"© 2026\". Ticket does not guarantee a place in the café-restaurant area.",
+      "hours": "Sun-Thu 10:00-01:30 (last access 00:30); Fri-Sat 10:00-02:00 (last access 01:00).",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mercado de San Miguel",
+      "kind": "market",
+      "url": "https://www.mercadodesanmiguel.es/",
+      "sourceType": "operator's own site",
+      "address": "Plaza de San Miguel, s/n, 28005 Madrid",
+      "operatingEvidence": "Posts dated 16 Sep 2026 (\"Una mesa para todos\"), 9 Jul 2026 and 22 Jun 2026 on events at the market.",
+      "hours": "Sun-Thu 10:00-24:00; Fri, Sat and eves of holidays 10:00-01:00.",
+      "confidence": "high"
+    },
+    {
+      "name": "Mercado de San Antón",
+      "kind": "market",
+      "url": "https://www.mercadosananton.com/",
+      "sourceType": "operator's own site",
+      "address": "C/ de Augusto Figueroa, 24, Madrid",
+      "operatingEvidence": "Homepage publishes current hours for market stalls, food stalls and restaurant; latest dated material is from 2025, no 2026 date seen.",
+      "hours": "Market stalls Mon-Sat 9:30-21:30; food stalls daily 12:00-00:00; restaurant daily 13:00-01:00.",
+      "confidence": "medium"
+    },
+    {
+      "name": "DiverXO",
+      "kind": "meal",
+      "url": "https://www.diverxo.com/reservas",
+      "sourceType": "operator's own site",
+      "address": "NH Eurobuilding, C/ Padre Damián 23, Madrid",
+      "operatingEvidence": "Live booking system: \"A new date opens at 00:00 each day, 90 days in advance\" with a €450 per person deposit; current tasting menu priced at 450€.",
+      "hours": "Tuesday to Friday, lunch and dinner (times not published).",
+      "confidence": "medium"
+    },
+    {
+      "name": "Casa Lucio",
+      "kind": "meal",
+      "url": "https://www.casalucio.es/",
+      "sourceType": "operator's own site",
+      "address": "Cava Baja 35, 28005 Madrid",
+      "operatingEvidence": "Footer \"© 2026\", images uploaded June and July 2026; reservations by phone, WhatsApp and online.",
+      "hours": "Daily lunch 13:00-16:00 and dinner 20:00-23:30; closed nights of 24 and 31 Dec, 25 Dec, 1 Jan, and all of August.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Lhardy",
+      "kind": "meal",
+      "url": "https://www.lhardy.com/",
+      "sourceType": "operator's own site",
+      "address": "c/ Carrera de San Jerónimo, 8, 28014 Madrid",
+      "operatingEvidence": "Homepage publishes restaurant and shop hours and a booking link; no 2026 date seen.",
+      "hours": "Restaurant Mon-Sat 13:00-00:00, Sun 13:00-16:00 (closed Sunday evenings). Shop Mon-Sat 9:00-23:00, Sun 10:00-17:00.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Taberna La Bola",
+      "kind": "meal",
+      "url": "https://www.labola.es/",
+      "sourceType": "operator's own site",
+      "address": "C/ Bola 5, 28013 Madrid",
+      "operatingEvidence": "\"156 Aniversario\" menu at 45,00€ per person and footer \"© 1870–2026\"; online and phone booking.",
+      "hours": "Sun-Wed 13:00-16:00; Thu-Sat 12:00-20:30.",
+      "confidence": "high"
+    },
+    {
+      "name": "Casa Alberto",
+      "kind": "meal",
+      "url": "https://www.casaalberto.es/",
+      "sourceType": "operator's own site",
+      "address": "Calle de las Huertas, 18, 28012 Madrid",
+      "operatingEvidence": "Homepage publishes current taberna and restaurant hours with \"Lunes cerrado\" and a booking page; no 2026 date seen (images from 2025).",
+      "hours": "Taberna Tue-Sat 12:00-23:00, Sun 12:00-16:00; restaurant Tue-Sat 13:30-16:00 and 20:00-23:00; closed Mondays.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Casa Dani (Mercado de la Paz)",
+      "kind": "meal",
+      "url": "https://www.casadani.es/horario",
+      "sourceType": "operator's own site",
+      "address": "Mercado de la Paz, Calle Ayala, 28, 28001 Madrid",
+      "operatingEvidence": "Hours page lists current branch schedules and notes that some locations close on Sundays and holidays; no 2026 date seen.",
+      "hours": "Bar/Restaurante: Mon-Fri 7:00-20:00, Sat 7:00-17:00.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Corral de la Morería",
+      "kind": "meal",
+      "url": "https://www.corraldelamoreria.com/",
+      "sourceType": "operator's own site",
+      "address": "C/ Morería, 17, 28005 Madrid",
+      "operatingEvidence": "Live ticket booking for show-only and show-with-dinner options; \"No se admiten niños menores de 7 años\"; footer \"© 2026\".",
+      "hours": "Second turn: dinner 21:10, show 21:30; other times not published.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Salmon Guru",
+      "kind": "bar",
+      "url": "https://salmonguru.es/",
+      "sourceType": "operator's own site",
+      "address": "C. Echegaray, 21, 28014 Madrid",
+      "operatingEvidence": "Cocktail and food menu PDFs uploaded in 2026 and a 2026 press release for the Madrid 10th anniversary; \"TRABAJAMOS SIN RESERVAS\".",
+      "hours": "Sun-Thu 16:00-02:00; Fri-Sat 16:00-02:30; closed 24, 25, 31 Dec and 1 Jan.",
+      "confidence": "high"
+    },
+    {
+      "name": "Museo Chicote",
+      "kind": "bar",
+      "url": "https://www.museochicote.com/",
+      "sourceType": "operator's own site",
+      "address": "C/ Gran Vía, 12, 28013, Madrid",
+      "operatingEvidence": "\"Nuevo horario de apertura al público\" and booking rules (over-18s only; brunch with a 5 € per person guarantee); images uploaded August and September 2026.",
+      "hours": "Mon-Thu 16:00-03:00; Fri 16:00-03:30; Sat 13:00-03:30; Sun 13:00-03:00.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Chocolatería San Ginés",
+      "kind": "cafe",
+      "url": "https://chocolateriasangines.com/",
+      "sourceType": "operator's own site",
+      "address": "Pasadizo de San Ginés, 5, 28013 Madrid",
+      "operatingEvidence": "Homepage states \"ABIERTO TODOS LOS DÍAS\" and \"Abierto 24 horas todos los días del año\"; latest dated post is from 2019, so the hours claim is the only current notice.",
+      "hours": "\"Abierto 24 horas todos los días del año\"; the page also says the main shop stays open late Thursday to Saturday (statements not fully consistent).",
+      "confidence": "medium"
+    },
+    {
+      "name": "La Mallorquina (Puerta del Sol)",
+      "kind": "bakery",
+      "url": "https://www.pastelerialamallorquina.es/",
+      "sourceType": "operator's own site",
+      "address": "Puerta del Sol, 8, Madrid",
+      "operatingEvidence": "Homepage lists current shop hours and phone numbers; footer \"1984 - 2026\".",
+      "hours": "Monday to Sunday 8:30-21:00.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Federal Café (Comendadoras)",
+      "kind": "cafe",
+      "url": "https://federalcafe.es/madrid-comendadoras",
+      "sourceType": "operator's own site",
+      "address": "Pl. de las Comendadoras, 9, Centro, 28015 Madrid",
+      "operatingEvidence": "Branch page publishes current hours; group homepage links a \"CARTA 26\" menu.",
+      "hours": "Mon-Sat 09:00-21:00; Sun 09:00-19:00.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Café Comercial",
+      "kind": "cafe",
+      "url": "https://www.cafecomercialmadrid.com/",
+      "sourceType": "operator's own site",
+      "address": "Glorieta de Bilbao 7, Madrid",
+      "operatingEvidence": "Menus uploaded in 2026 (group menu \"MenuGrupos2026.pdf\", October 2026) and footer \"Café Comercial Madrid 2026 ©\"; table reservations online or on 91 088 25 25.",
+      "hours": "not published",
+      "confidence": "high"
+    },
+    {
+      "name": "Café de Oriente",
+      "kind": "cafe",
+      "url": "https://www.cafedeoriente.es/",
+      "sourceType": "operator's own site",
+      "address": "Plaza de Oriente, 2, 28013, Madrid",
+      "operatingEvidence": "Homepage publishes current hours and a reservations link; no 2026 date seen.",
+      "hours": "\"L-V 08:30h a 24h / S-D 9h a 24h\"",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Museo Nacional del Prado",
+      "reason": "Official site returned HTTP 403 Forbidden on two pages; not bypassed. Fetch failure is not evidence of closure.",
+      "url": "https://www.museodelprado.es/"
+    },
+    {
+      "name": "Plaza Mayor",
+      "reason": "Public square; no operator page was read for it in this review.",
+      "url": ""
+    },
+    {
+      "name": "Sacha",
+      "reason": "Official site shows only a phone number and booking anchor; no address or operating evidence.",
+      "url": "https://www.restaurantesacha.com/"
+    },
+    {
+      "name": "Toma Café",
+      "reason": "Connection refused (ECONNREFUSED).",
+      "url": "https://tomacafe.es/"
+    },
+    {
+      "name": "Sala de Despiece",
+      "reason": "Official page returned only its title; no address or operating evidence.",
+      "url": "https://www.saladedespiece.com/"
+    },
+    {
+      "name": "Bodega de la Ardosa",
+      "reason": "Official page returned no readable content.",
+      "url": "https://www.laardosa.es/"
+    },
+    {
+      "name": "Angelita",
+      "reason": "Domain did not resolve (ENOTFOUND) with or without www; no other official URL found.",
+      "url": "https://angelitamadrid.com/"
+    },
+    {
+      "name": "1862 Dry Bar",
+      "reason": "Certificate error (hostname not in certificate); not bypassed.",
+      "url": "https://1862drybar.com/"
+    },
+    {
+      "name": "Moulin Chocolat",
+      "reason": "Assumed domain did not resolve (ENOTFOUND); no official site found by search.",
+      "url": "https://moulinchocolat.es/"
+    },
+    {
+      "name": "Panod",
+      "reason": "Official site returned HTTP 500.",
+      "url": "https://panod.es/"
+    },
+    {
+      "name": "Acid Bakehouse",
+      "reason": "Domain acid.cafe showed unrelated content (\"build your machine\"); official site not confirmed.",
+      "url": "https://acid.cafe/"
+    },
+    {
+      "name": "Hola Coffee",
+      "reason": "HTTP 429 Too Many Requests on repeated attempts.",
+      "url": "https://hola.coffee/"
+    },
+    {
+      "name": "Misión Café",
+      "reason": "TLS error (TLSV1_ALERT_INTERNAL_ERROR); not bypassed.",
+      "url": "https://mision.cafe/"
+    },
+    {
+      "name": "Sobrino de Botín",
+      "reason": "Homepage too large to read (content limit exceeded); reservations page returned 404.",
+      "url": "https://www.botin.es/"
+    },
+    {
+      "name": "CaixaForum Madrid",
+      "reason": "HTTP 403 Forbidden.",
+      "url": "https://caixaforum.org/es/madrid"
+    },
+    {
+      "name": "Museo Arqueológico Nacional",
+      "reason": "Hours page text did not include address or hours in readable sections.",
+      "url": "https://www.man.es/man/visita/horarios.html"
+    },
+    {
+      "name": "Museo Nacional de Ciencias Naturales",
+      "reason": "Connection refused (ECONNREFUSED).",
+      "url": "https://www.mncn.csic.es/"
+    },
+    {
+      "name": "Museo Cerralbo",
+      "reason": "Hours page returned 'Página no encontrada'.",
+      "url": "https://www.cultura.gob.es/mcerralbo/visita/horarios.html"
+    },
+    {
+      "name": "Viena Capellanes",
+      "reason": "Official page showed only a catering title; no shop address or hours.",
+      "url": "https://www.vienacapellanes.com/"
+    },
+    {
+      "name": "Horno San Onofre",
+      "reason": "Domain shows a default hosting placeholder page.",
+      "url": "https://www.hornosanonofre.com/"
+    },
+    {
+      "name": "Confitería El Riojano",
+      "reason": "HTTP 403 Forbidden.",
+      "url": "https://www.confiteriaelriojano.com/"
+    },
+    {
+      "name": "Casa Labra",
+      "reason": "Certificate error (hostname not in certificate); not bypassed.",
+      "url": "https://www.casalabra.es/"
+    },
+    {
+      "name": "Teleférico de Madrid",
+      "reason": "Domain did not resolve (ENOTFOUND).",
+      "url": "https://www.teleferico.com/"
+    },
+    {
+      "name": "Panic",
+      "reason": "Connection refused (ECONNREFUSED).",
+      "url": "https://panic.es/"
+    },
+    {
+      "name": "Prado and museum row",
+      "reason": "generic, not a place (Prado itself could not be read; Thyssen and Reina Sofía confirmed separately)",
+      "url": ""
+    },
+    {
+      "name": "Retiro and city walking",
+      "reason": "generic, not a place (Jardines de El Buen Retiro confirmed separately)",
+      "url": ""
+    },
+    {
+      "name": "Mercado food stops",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free evening plaza wandering",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Luxury Salamanca stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private art tour",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Late dinner in Salesas",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset rooftop drink",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy tapas-and-churros day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Museum morning",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Literary Quarter coffee stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Tapas night in La Latina",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Old Madrid and one stronger dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Taberna crawl in La Latina",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Chamberí neighborhood stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Mercado de San Miguel style grazing",
+      "reason": "generic, not a place (Mercado de San Miguel confirmed separately)",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Palacio Real de Madrid",
+        "Museo Nacional Thyssen-Bornemisza",
+        "Museo Nacional Centro de Arte Reina Sofía",
+        "Jardines de El Buen Retiro"
+      ],
+      "bestFirstTimers": [
+        "Palacio Real de Madrid",
+        "Jardines de El Buen Retiro",
+        "Mercado de San Miguel",
+        "Chocolatería San Ginés"
+      ],
+      "bestRestaurants": [
+        "Casa Lucio",
+        "Lhardy",
+        "Taberna La Bola",
+        "Casa Alberto"
+      ],
+      "bestBudget": [
+        "Jardines de El Buen Retiro",
+        "Museo Sorolla",
+        "Museo del Romanticismo",
+        "Mercado de San Antón"
+      ],
+      "bestLuxury": [
+        "DiverXO",
+        "Lhardy",
+        "Corral de la Morería"
+      ],
+      "bestCouples": [
+        "Azotea del Círculo de Bellas Artes",
+        "Corral de la Morería",
+        "Real Jardín Botánico",
+        "Casa Lucio"
+      ],
+      "bestKids": [
+        "Museo del Ferrocarril",
+        "Jardines de El Buen Retiro",
+        "Real Jardín Botánico",
+        "Chocolatería San Ginés"
+      ],
+      "bestSolo": [
+        "Museo Lázaro Galdiano",
+        "Museo Sorolla",
+        "Café Comercial",
+        "Mercado de San Antón"
+      ],
+      "bestUnique": [
+        "Museo Sorolla",
+        "Corral de la Morería",
+        "Museo del Romanticismo",
+        "Museo Chicote"
+      ],
+      "bestBreakfast": [
+        "Federal Café (Comendadoras)",
+        "La Mallorquina (Puerta del Sol)",
+        "Casa Dani (Mercado de la Paz)",
+        "Café de Oriente"
+      ],
+      "bestLunch": [
+        "Casa Dani (Mercado de la Paz)",
+        "Taberna La Bola",
+        "Mercado de San Miguel",
+        "Casa Alberto"
+      ],
+      "bestDinner": [
+        "DiverXO",
+        "Casa Lucio",
+        "Lhardy",
+        "Casa Alberto"
+      ],
+      "bestCocktails": [
+        "Salmon Guru",
+        "Museo Chicote",
+        "Azotea del Círculo de Bellas Artes"
+      ],
+      "bestBakeries": [
+        "La Mallorquina (Puerta del Sol)",
+        "Lhardy"
+      ],
+      "bestCoffee": [
+        "Federal Café (Comendadoras)",
+        "Café Comercial",
+        "Café de Oriente"
+      ]
+    },
+    "queries": {
+      "Palacio Real de Madrid": "Palacio Real de Madrid Calle de Bailén Madrid",
+      "Museo Nacional Centro de Arte Reina Sofía": "Museo Reina Sofía Calle Santa Isabel 52 Madrid",
+      "Museo Nacional Thyssen-Bornemisza": "Museo Thyssen-Bornemisza Paseo del Prado 8 Madrid",
+      "Museo Sorolla": "Museo Sorolla Calle Zurbano 68 Madrid",
+      "Museo Lázaro Galdiano": "Museo Lázaro Galdiano Calle Serrano 122 Madrid",
+      "Museo del Romanticismo": "Museo del Romanticismo Calle San Mateo 13 Madrid",
+      "Museo del Ferrocarril": "Museo del Ferrocarril Paseo de las Delicias 61 Madrid",
+      "Jardines de El Buen Retiro": "Jardines de El Buen Retiro Plaza de la Independencia 7 Madrid",
+      "Real Jardín Botánico": "Real Jardín Botánico Plaza de Murillo 2 Madrid",
+      "Azotea del Círculo de Bellas Artes": "Azotea Círculo de Bellas Artes Calle Alcalá 42 Madrid",
+      "Mercado de San Miguel": "Mercado de San Miguel Plaza de San Miguel Madrid",
+      "Mercado de San Antón": "Mercado de San Antón Calle Augusto Figueroa 24 Madrid",
+      "DiverXO": "DiverXO Calle Padre Damián 23 Madrid",
+      "Casa Lucio": "Casa Lucio Cava Baja 35 Madrid",
+      "Lhardy": "Lhardy Carrera de San Jerónimo 8 Madrid",
+      "Taberna La Bola": "Taberna La Bola Calle Bola 5 Madrid",
+      "Casa Alberto": "Casa Alberto Calle de las Huertas 18 Madrid",
+      "Casa Dani (Mercado de la Paz)": "Casa Dani Mercado de la Paz Calle Ayala 28 Madrid",
+      "Corral de la Morería": "Corral de la Morería Calle Morería 17 Madrid",
+      "Salmon Guru": "Salmon Guru Calle Echegaray 21 Madrid",
+      "Museo Chicote": "Museo Chicote Gran Vía 12 Madrid",
+      "Chocolatería San Ginés": "Chocolatería San Ginés Pasadizo de San Ginés 5 Madrid",
+      "La Mallorquina (Puerta del Sol)": "La Mallorquina Puerta del Sol 8 Madrid",
+      "Federal Café (Comendadoras)": "Federal Café Plaza de las Comendadoras 9 Madrid",
+      "Café Comercial": "Café Comercial Glorieta de Bilbao 7 Madrid",
+      "Café de Oriente": "Café de Oriente Plaza de Oriente 2 Madrid"
+    },
+    "summary": "Royal palace, Paseo del Prado museums, smaller house museums, parks and markets, with breakfast cafés, classic Madrid dining and cocktail bars checked against their own websites.",
+    "highlights": [
+      "Palacio Real de Madrid",
+      "Museo Nacional Thyssen-Bornemisza",
+      "Museo Nacional Centro de Arte Reina Sofía",
+      "Jardines de El Buen Retiro"
+    ],
+    "tip": "Check closing days before you plan museum time: the Reina Sofía is closed on Tuesdays, while the Lázaro Galdiano, Sorolla and Romanticismo museums are closed on Mondays.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mondays and Tuesdays",
+        "copy": "The Museo Lázaro Galdiano, Museo Sorolla, Museo del Romanticismo and Casa Alberto are closed on Mondays, and the Reina Sofía is closed on Tuesdays. Casa Lucio closes for all of August."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Timed slots and far-ahead tables",
+        "copy": "The Palacio Real sells tickets by date and time slot, with a €0.77 online booking fee per ticket and entry ending an hour before closing. DiverXO releases each date 90 days ahead at midnight and takes a €450 per person deposit."
+      },
+      {
+        "label": "Walk-in and queues",
+        "value": "No bookings at Salmon Guru",
+        "copy": "Salmon Guru says it works without reservations and seats you as soon as possible. The Círculo de Bellas Artes rooftop sells tickets only at reception from 14:00 to 16:00 and after 21:00, and a ticket does not guarantee a seat in its café area."
+      },
+      {
+        "label": "Rules",
+        "value": "Bags and ages",
+        "copy": "The Palacio Real recommends not bringing backpacks, suitcases or large bags during its improvement works. Corral de la Morería does not admit children under 7, Museo Chicote bookings are for over-18s only, and DiverXO is not recommended for children under 10."
+      }
+    ],
+    "dek": "Group the Paseo del Prado museums around their free slots and closing days, and book DiverXO, the Palacio Real and the flamenco show ahead while leaving the cocktail bars for walk-ins.",
+    "intro": [
+      "Start at the Palacio Real de Madrid on Calle de Bailén. From October to March, Patrimonio Nacional opens it from 10:00 to 18:00 Monday to Saturday and 10:00 to 16:00 on Sunday, and entry ends one hour before closing. You buy tickets for a date and time slot, and a self-guided visit costs €18 at the basic rate. During its improvement works, the palace recommends you leave backpacks, suitcases and large bags behind. It can also close for official events, and it closes all day on 25 December and from 15:00 on 24 and 31 December.",
+      "On the Paseo del Prado, the Thyssen-Bornemisza at number 8 offers free entry to its collection on Mondays from 12:00 to 16:00. On Saturdays it stays open until 23:00, with free entry from 21:00 to the temporary exhibitions on the ground floor and level -1. Guided visits to El universo freudiano de Dalí are listed into January 2027. The Reina Sofía, at Calle Santa Isabel 52, is closed on Tuesdays and charges €12 for general admission. You still need a ticket for its free hours. Its Palacio de Cristal in El Retiro is closed for building improvements and is wrapped in Andrea Canepa's Fardo until 1 January 2027.",
+      "For a quieter day, the Museo Lázaro Galdiano at Calle Serrano 122 is closed on Mondays and costs €8, and you can get in free Tuesday to Friday from 14:00 to 15:00. The Museo Sorolla is free, but while the Casa Museo is closed for rehabilitation, visits are limited to the new extension building at Calle Zurbano 68. El Retiro opens at 6:00 and closes at 22:00 from October to March, and you can rent rowboats on the Estanque Grande. The Real Jardín Botánico closes at 17:30 from November.",
+      "For food, DiverXO at Calle Padre Damián 23 serves only a tasting menu and opens Tuesday to Friday. Casa Lucio on Cava Baja serves lunch and dinner every day but closes for all of August. Taberna La Bola on Calle Bola marks 156 years with a 45€ anniversary menu. For drinks, Salmon Guru on Calle Echegaray takes no reservations and opens daily from 16:00. Museo Chicote on Gran Vía takes bookings only for over-18s. Chocolatería San Ginés says it is open every day of the year."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Book a timed slot at the Palacio Real, then walk to the Thyssen-Bornemisza or the Reina Sofía, remembering that the Reina Sofía is closed on Tuesdays."
+      ],
+      [
+        "A slower morning",
+        "Have breakfast at Federal Café on Plaza de las Comendadoras from 09:00, then visit the Real Jardín Botánico, which opens at 10:00."
+      ],
+      [
+        "Before booking",
+        "DiverXO releases tables 90 days ahead with a €450 per person deposit, while Salmon Guru takes no reservations at all."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The Prado, CaixaForum Madrid and Confitería El Riojano returned HTTP 403, Hola Coffee returned HTTP 429, and Toma Café, Misión Café, 1862 Dry Bar, Casa Labra, Angelita, Moulin Chocolat, Panod, Panic, the Teleférico and the Museo Nacional de Ciencias Naturales failed on connection, certificate, DNS or server errors, so they are not included; none of these failures is evidence of closure. Sobrino de Botín's homepage was too large to read. Several confirmed places were published only partially: DiverXO and Corral de la Morería give no full weekly hours, Café Comercial publishes no hours, the Reina Sofía hours were not clearly labelled, and Chocolatería San Ginés gives inconsistent statements about 24-hour opening. Casa Lucio, Lhardy, Casa Alberto, Mercado de San Antón, Café de Oriente, Casa Dani and La Mallorquina showed current hours but little or no dated 2026 content, so they are rated medium confidence.",
+  "injectionLikeText": [],
+  "injectionLikeTextIgnored": [
+    "chocolateriasangines.com: a first automated read reported a block of text addressed to an AI, asking it to quote the block and follow formatting rules. A second read of the same page found no such text, so it could not be quoted verbatim. It was not acted on.",
+    "2026-10-25: the homepage was re-read in a browser and its full HTML searched; no AI-directed text was present."
+  ]
+}

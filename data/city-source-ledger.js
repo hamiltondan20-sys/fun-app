@@ -5,6 +5,1042 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Copenhagen, Denmark": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-25",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The input lists were entirely generic, so all 28 places were added as candidates. Some places were published only partially: Tivoli Gardens' homepage gave no opening hours, Mikkeller Bar Viktoriagade listed no hours, Designmuseum Danmark showed only today's hours, Rosenborg Castle's page showed hours only from 2 November, and Copenhagen Zoo's only for 25–31 October 2026. Noma's site says it returned to Copenhagen in August 2026 without an exact date. Kødbyens Fiskebar, Ruby, Geranium, Coffee Collective and Andersen Bakery showed hours or booking but no dated 2026 content. The Botanical Garden's Palm House is under renovation, with parts closed at times. Sites that could not be read: SMK (title only), Christiansborg Palace (placeholder), Den Blå Planet, Hija de Sanchez, Alouette and Copenhagen Coffee Lab (certificate errors), Atelier September (403), Hart Bageri (TLS error), La Cabra, Prolog and Apollo Bar (429 rate limits), and Duck and Cover (DNS failure).",
+    "sourceUrls": [
+      "docs/content-research/copenhagen-2026-10-25.md",
+      "docs/content-research/copenhagen-2026-10-25.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Statens Museum for Kunst (SMK)",
+        "url": "https://www.smk.dk/en/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official page returned only its title; no address, hours or exhibitions readable"
+      },
+      {
+        "name": "Christiansborg Palace",
+        "url": "https://kongeligeslotte.dk/en/palaces-and-gardens/christiansborg-palace.html",
+        "checkedOn": "2026-10-25",
+        "reason": "Official royal palaces site is a 'coming soon' placeholder; no address or hours published"
+      },
+      {
+        "name": "Den Blå Planet",
+        "url": "https://www.denblaaplanet.dk/en/",
+        "checkedOn": "2026-10-25",
+        "reason": "Certificate error (hostname not in certificate); not bypassed"
+      },
+      {
+        "name": "Hija de Sanchez",
+        "url": "https://www.hijadesanchez.dk/",
+        "checkedOn": "2026-10-25",
+        "reason": "Certificate expired; not bypassed"
+      },
+      {
+        "name": "Atelier September",
+        "url": "https://atelierseptember.dk/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 403 Forbidden"
+      },
+      {
+        "name": "Hart Bageri",
+        "url": "https://www.hartbageri.com/locations",
+        "checkedOn": "2026-10-25",
+        "reason": "Homepage returned only its name; locations page failed with a TLS error"
+      },
+      {
+        "name": "La Cabra",
+        "url": "https://www.lacabra.dk/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests on repeated attempts"
+      },
+      {
+        "name": "Prolog Coffee Bar",
+        "url": "https://prologcoffee.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests on repeated attempts"
+      },
+      {
+        "name": "Apollo Bar",
+        "url": "https://www.apollobar.dk/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests"
+      },
+      {
+        "name": "Duck and Cover",
+        "url": "https://www.duckandcover.dk/",
+        "checkedOn": "2026-10-25",
+        "reason": "DNS lookup failed (EAI_AGAIN)"
+      },
+      {
+        "name": "Alouette",
+        "url": "https://www.alouette.dk/",
+        "checkedOn": "2026-10-25",
+        "reason": "Certificate error (hostname not in certificate); not bypassed"
+      },
+      {
+        "name": "Copenhagen Coffee Lab",
+        "url": "https://www.cphcoffeelab.dk/",
+        "checkedOn": "2026-10-25",
+        "reason": "Certificate error (hostname not in certificate); not bypassed"
+      },
+      {
+        "name": "Alchemist",
+        "url": "https://www.alchemist.dk/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official homepage shows no address, opening days or dated content"
+      },
+      {
+        "name": "Hahnemanns Køkken",
+        "url": "https://www.hahnemannskoekken.dk/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site not found; tried domain is an unrelated recipe site"
+      },
+      {
+        "name": "Cisternerne",
+        "url": "https://frederiksbergmuseerne.dk/da/cisternerne//en",
+        "checkedOn": "2026-10-25",
+        "reason": "Redirected English page returned 404"
+      },
+      {
+        "name": "Hotel d'Angleterre bars",
+        "url": "https://www.dahotel.dk/",
+        "checkedOn": "2026-10-25",
+        "reason": "DNS lookup failed for tried domain"
+      },
+      {
+        "name": "Lille Bakery",
+        "url": "https://www.lillegrocer.dk/",
+        "checkedOn": "2026-10-25",
+        "reason": "Tried domain does not resolve; official site not found"
+      },
+      {
+        "name": "A local market in Copenhagen",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood food walk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal from Denmark",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe or bakery near A flexible day-trip area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cooking or tasting experience",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A nearby day trip from Copenhagen",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local market in Your main base in Copenhagen",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A food-focused walk through A nearby area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature dinner from Denmark",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tasting or cooking experience",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood table away from the busiest sights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided market walk in Your main base in Copenhagen",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A low-cost local meal in A nearby area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free neighborhood wandering",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A public square or viewpoint near A flexible day-trip area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A casual cafe stop",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A destination-led dinner in Your main base in Copenhagen",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private food walk or cooking class",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A polished stay near A nearby area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening around A neighborhood food walk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer for a day trip",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored local experience",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near A nearby area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic outing built around A neighborhood food walk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long local dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow morning in A flexible day-trip area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Your main base in Copenhagen",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A memorable day trip from Copenhagen",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "An easy first stop near Your main base in Copenhagen",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A family-friendly market walk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A food hall everyone can browse",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near A nearby area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short neighborhood walk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A low-pressure afternoon",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "An early visit to A local market in Copenhagen",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Your main base in Copenhagen market or cafe",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided food walk through A nearby area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local class or tasting",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in A flexible day-trip area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of A flexible day-trip area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A less obvious side of Copenhagen",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A seasonal experience in Denmark",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Your main base in Copenhagen",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "An off-peak version of A local market in Copenhagen",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Your main base in Copenhagen",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A nearby area bakery or market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before A local market in Copenhagen",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through A flexible day-trip area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual local lunch near Your main base in Copenhagen",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around A nearby area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Lunch between A local market in Copenhagen and A neighborhood food walk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday meal in A flexible day-trip area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local dinner in Your main base in Copenhagen",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty from Denmark near A nearby area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A memorable table close to A flexible day-trip area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower final-night meal away from the busiest sights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Your main base in Copenhagen",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around A nearby area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near A flexible day-trip area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Your main base in Copenhagen",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A nearby area morning market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before A local market in Copenhagen",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Your main base in Copenhagen",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in A nearby area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood coffee stop in A flexible day-trip area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup before the next stop",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Tivoli Gardens": {
+        "url": "https://www.tivoli.dk/en",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Programme lists dated autumn 2026 events, e.g. Halloween in Tivoli 2 October to 1 November and DM i Stand-Up 2026 on 27 October; footer \"© Tivoli 2026\"."
+      },
+      "Rundetaarn (The Round Tower)": {
+        "url": "https://www.rundetaarn.dk/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibitions 'Light Echoes' (2 Oct to 3 Jan) and 'Ole Rømer and the Great Discovery'; observatory telescope evenings 5 Oct to 31 Mar. Adults 60 DKK, under 18 free; 'not well suited for wheelchairs and pushchairs'."
+      },
+      "Rosenborg Castle": {
+        "url": "https://denkongeligesamling.dk/en/rosenborg-castle/plan-your-visit/opening-hours/",
+        "sourceType": "operator's own site (The Royal Danish Collection)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published 2026 schedule: 'From 2 November to 23 December' Tue–Sun 10.00–16.00, Monday closed, plus a Christmas 2026 table. Online tickets save 10 kroner; no food or drink in the castle or Treasury."
+      },
+      "National Museum of Denmark": {
+        "url": "https://nationalmuseet.dk/en/",
+        "sourceType": "official public operator (National Museum of Denmark)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current special exhibitions 'The Viking sorceress', 'KA-CHING!' and 'Land Unknown' (no dates shown); adult tickets 150 DKK or 135 DKK online, valid one year; under 18 free."
+      },
+      "Ny Carlsberg Glyptotek": {
+        "url": "https://www.glyptoteket.com/visit/opening-hours/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Exhibition 'The Power of Fashion in the Roman Empire' October 1, 2026 to March 29, 2027; free admission the last Wednesday of each month; online tickets save 10%."
+      },
+      "Thorvaldsens Museum": {
+        "url": "https://www.thorvaldsensmuseum.dk/en",
+        "sourceType": "official public operator (City of Copenhagen museums)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "New exhibition 'Life, Longing & Landscape - Thorvaldsen's Painting Collection' (no dates shown); 'Free admission for all on Wednesdays'; adults DKK 110, under 18 free. Courtyard café temporarily closed for construction."
+      },
+      "Designmuseum Danmark": {
+        "url": "https://designmuseum.dk/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "'Henrik Vibskov: The Exhibition' September 18, 2026 to February 21, 2027; Verner Panton centenary display; Café FORMAT open 'every day except Monday', no ticket needed."
+      },
+      "Kunsthal Charlottenborg": {
+        "url": "https://kunsthalcharlottenborg.dk/en/visit/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Three exhibitions (Amalie Smith, Jochen Lempert, Som Supaparinya) running 26 September 2026 – 21 February 2027. Over 16: 95 DKK; free Wednesdays from 17.00."
+      },
+      "Copenhagen Contemporary": {
+        "url": "https://copenhagencontemporary.org/en/visit",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Camille Henrot 'Paper Planes' 05.06.26 – 31.12.26; Kengo Kuma 'Earth | Tree' 28.03.26 – 21.02.27; permanent James Turrell 'Aftershock'. Adults 140 DKK."
+      },
+      "Louisiana Museum of Modern Art": {
+        "url": "https://louisiana.dk/en/plan-your-visit/opening-hours/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Tracey Emin 8 Oct 2026 to 18 Apr 2027; Remedios Varo 18 Sep 2026 to 10 Jan 2027. 'No advance reservation or time slot' needed; adults 145 DKK, under 18 free; ticket needed even for café, shop or sculpture park."
+      },
+      "Botanical Garden (Natural History Museum of Denmark)": {
+        "url": "https://snm.dk/en/opening-hours",
+        "sourceType": "official public operator (Natural History Museum of Denmark, University of Copenhagen)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Seasonal 2026 hours published; press releases dated 22.10.2026 and 02.10.2026. 'We are renovating the Palm House', so parts of it 'will be closed to visitors at times'."
+      },
+      "Copenhagen Zoo": {
+        "url": "https://www.zoo.dk/en/opening-hours",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Opening-hours page lists October 25–31, 2026 as 9:00 AM - 5:00 PM daily; footer '© Zoologisk Have 2026'."
+      },
+      "Experimentarium": {
+        "url": "https://www.experimentarium.dk/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Daily listings and '© 2026 Experimentarium'; online tickets 'Save 10%'. Interactive Film Theatre 'currently closed for renovation'."
+      },
+      "Torvehallerne": {
+        "url": "https://torvehallernekbh.dk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Recurring Thursday market for small producers 13:00–19:00; risengrød on the 24th of each month through 24 November; dated October/November 2026 posts."
+      },
+      "Reffen": {
+        "url": "https://reffen.dk/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "'October is full of things to see, do and taste at Reffen, and we're open every day'; autumn 2026 events banner."
+      },
+      "GRØD (Torvehallerne)": {
+        "url": "https://www.groed.com/restauranter/koebenhavn-torvehallerne",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Branch page lists current hours and delivery 'until 18:45'; porridge restaurant at the stall since spring 2013."
+      },
+      "Mad & Kaffe (Vesterbro)": {
+        "url": "https://www.madogkaffe.dk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "News dated October 2026 (fifth café opened 7 October in Aarhus) and August 2026 menu update; 'Vi holder altid pladser til dig, der dropper ind' (seats kept for drop-ins), booking recommended."
+      },
+      "Coffee Collective (Jægersborggade)": {
+        "url": "https://coffeecollective.dk/pages/coffee-shop/jaeggersborggade",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Branch page with current hours; described as the company's 'very first coffee shop, now relocated to a new, larger space'. No dated content."
+      },
+      "Juno the Bakery": {
+        "url": "https://www.junothebakery.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Page published 'Oct 21, 2026'; 'Since 2018', '8 years of service'."
+      },
+      "Andersen Bakery (Islands Brygge)": {
+        "url": "https://andersenbakery.dk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current 'Åbningstider' listing with pickup orders possible; '© 2026' footer. No dated news."
+      },
+      "Restaurant Schønnemann": {
+        "url": "https://www.restaurantschonnemann.dk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Christmas 2026 runs 12 November to 23 December 2026, with a Thursday–Saturday 'Julebord' 18:30–23:00; closed 24 December 2026 to 5 January 2027."
+      },
+      "Kødbyens Fiskebar": {
+        "url": "https://fiskebaren.dk/kontakt/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Live 'Book bord' table booking and current hours; walk-ins can 'kom forbi og få en plads i baren'. No dated content."
+      },
+      "Barr": {
+        "url": "https://www.restaurantbarr.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "'Book a table' via Tock; site images uploaded May–July 2026."
+      },
+      "Noma": {
+        "url": "https://www.noma.dk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Founders' letter: 'This August, we are coming home' after an LA residency (March 11 to June 26, 2026); 'twelve seasons of Noma'; booking via Tock. Reopening date not stated exactly."
+      },
+      "Geranium": {
+        "url": "https://www.geranium.dk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online booking via SevenRooms for 2–6 guests, up to '3 month in ahead', deposit 1500 DKK per guest. No 2026-dated content."
+      },
+      "Lidkoeb": {
+        "url": "https://lidkoeb.dk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "September 2026 menus ('Lidkoeb-sept26-MAIN.pdf'); online reservations."
+      },
+      "Ruby": {
+        "url": "https://rby.dk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current hours and bookings contact; 'Ruby opened its doors on the 21st June in 2007'; minimum entry age 21. No 2026-dated content."
+      },
+      "Mikkeller Bar Viktoriagade": {
+        "url": "https://www.mikkeller.com/locations/mikkeller-viktoriagade",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "'the site of the very first Mikkeller Bar'; 'You will always be able to book a table', max party 10; live tap list with 'Recent activity' 18 hours ago."
+      }
+    }
+  },
+  "Madrid, Spain": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-25",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The Prado, CaixaForum Madrid and Confitería El Riojano returned HTTP 403, Hola Coffee returned HTTP 429, and Toma Café, Misión Café, 1862 Dry Bar, Casa Labra, Angelita, Moulin Chocolat, Panod, Panic, the Teleférico and the Museo Nacional de Ciencias Naturales failed on connection, certificate, DNS or server errors, so they are not included; none of these failures is evidence of closure. Sobrino de Botín's homepage was too large to read. Several confirmed places were published only partially: DiverXO and Corral de la Morería give no full weekly hours, Café Comercial publishes no hours, the Reina Sofía hours were not clearly labelled, and Chocolatería San Ginés gives inconsistent statements about 24-hour opening. Casa Lucio, Lhardy, Casa Alberto, Mercado de San Antón, Café de Oriente, Casa Dani and La Mallorquina showed current hours but little or no dated 2026 content, so they are rated medium confidence.",
+    "sourceUrls": [
+      "docs/content-research/madrid-2026-10-25.md",
+      "docs/content-research/madrid-2026-10-25.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Museo Nacional del Prado",
+        "url": "https://www.museodelprado.es/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site returned HTTP 403 Forbidden on two pages; not bypassed. Fetch failure is not evidence of closure."
+      },
+      {
+        "name": "Plaza Mayor",
+        "checkedOn": "2026-10-25",
+        "reason": "Public square; no operator page was read for it in this review."
+      },
+      {
+        "name": "Sacha",
+        "url": "https://www.restaurantesacha.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site shows only a phone number and booking anchor; no address or operating evidence."
+      },
+      {
+        "name": "Toma Café",
+        "url": "https://tomacafe.es/",
+        "checkedOn": "2026-10-25",
+        "reason": "Connection refused (ECONNREFUSED)."
+      },
+      {
+        "name": "Sala de Despiece",
+        "url": "https://www.saladedespiece.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official page returned only its title; no address or operating evidence."
+      },
+      {
+        "name": "Bodega de la Ardosa",
+        "url": "https://www.laardosa.es/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official page returned no readable content."
+      },
+      {
+        "name": "Angelita",
+        "url": "https://angelitamadrid.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Domain did not resolve (ENOTFOUND) with or without www; no other official URL found."
+      },
+      {
+        "name": "1862 Dry Bar",
+        "url": "https://1862drybar.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Certificate error (hostname not in certificate); not bypassed."
+      },
+      {
+        "name": "Moulin Chocolat",
+        "url": "https://moulinchocolat.es/",
+        "checkedOn": "2026-10-25",
+        "reason": "Assumed domain did not resolve (ENOTFOUND); no official site found by search."
+      },
+      {
+        "name": "Panod",
+        "url": "https://panod.es/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site returned HTTP 500."
+      },
+      {
+        "name": "Acid Bakehouse",
+        "url": "https://acid.cafe/",
+        "checkedOn": "2026-10-25",
+        "reason": "Domain acid.cafe showed unrelated content (\"build your machine\"); official site not confirmed."
+      },
+      {
+        "name": "Hola Coffee",
+        "url": "https://hola.coffee/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests on repeated attempts."
+      },
+      {
+        "name": "Misión Café",
+        "url": "https://mision.cafe/",
+        "checkedOn": "2026-10-25",
+        "reason": "TLS error (TLSV1_ALERT_INTERNAL_ERROR); not bypassed."
+      },
+      {
+        "name": "Sobrino de Botín",
+        "url": "https://www.botin.es/",
+        "checkedOn": "2026-10-25",
+        "reason": "Homepage too large to read (content limit exceeded); reservations page returned 404."
+      },
+      {
+        "name": "CaixaForum Madrid",
+        "url": "https://caixaforum.org/es/madrid",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 403 Forbidden."
+      },
+      {
+        "name": "Museo Arqueológico Nacional",
+        "url": "https://www.man.es/man/visita/horarios.html",
+        "checkedOn": "2026-10-25",
+        "reason": "Hours page text did not include address or hours in readable sections."
+      },
+      {
+        "name": "Museo Nacional de Ciencias Naturales",
+        "url": "https://www.mncn.csic.es/",
+        "checkedOn": "2026-10-25",
+        "reason": "Connection refused (ECONNREFUSED)."
+      },
+      {
+        "name": "Museo Cerralbo",
+        "url": "https://www.cultura.gob.es/mcerralbo/visita/horarios.html",
+        "checkedOn": "2026-10-25",
+        "reason": "Hours page returned 'Página no encontrada'."
+      },
+      {
+        "name": "Viena Capellanes",
+        "url": "https://www.vienacapellanes.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official page showed only a catering title; no shop address or hours."
+      },
+      {
+        "name": "Horno San Onofre",
+        "url": "https://www.hornosanonofre.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Domain shows a default hosting placeholder page."
+      },
+      {
+        "name": "Confitería El Riojano",
+        "url": "https://www.confiteriaelriojano.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 403 Forbidden."
+      },
+      {
+        "name": "Casa Labra",
+        "url": "https://www.casalabra.es/",
+        "checkedOn": "2026-10-25",
+        "reason": "Certificate error (hostname not in certificate); not bypassed."
+      },
+      {
+        "name": "Teleférico de Madrid",
+        "url": "https://www.teleferico.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Domain did not resolve (ENOTFOUND)."
+      },
+      {
+        "name": "Panic",
+        "url": "https://panic.es/",
+        "checkedOn": "2026-10-25",
+        "reason": "Connection refused (ECONNREFUSED)."
+      },
+      {
+        "name": "Prado and museum row",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (Prado itself could not be read; Thyssen and Reina Sofía confirmed separately)"
+      },
+      {
+        "name": "Retiro and city walking",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (Jardines de El Buen Retiro confirmed separately)"
+      },
+      {
+        "name": "Mercado food stops",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free evening plaza wandering",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Luxury Salamanca stay",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private art tour",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Late dinner in Salesas",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset rooftop drink",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy tapas-and-churros day",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Museum morning",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Literary Quarter coffee stop",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Tapas night in La Latina",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Old Madrid and one stronger dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Taberna crawl in La Latina",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Chamberí neighborhood stop",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Mercado de San Miguel style grazing",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (Mercado de San Miguel confirmed separately)"
+      }
+    ],
+    "placeSources": {
+      "Palacio Real de Madrid": {
+        "url": "https://tickets.patrimonionacional.es/es/tickets/palacio-real-de-madrid",
+        "sourceType": "official public operator (Patrimonio Nacional)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Ticket page sells dated time slots and lists 2026 closures (1 Jan, 6 Jan, 1 May, 25 Dec all day; 24 and 31 Dec from 15:00). Notice for improvement works: \"se recomienda no traer mochilas, maletas, bolsos y paquetes de grandes dimensiones\"."
+      },
+      "Museo Nacional Centro de Arte Reina Sofía": {
+        "url": "https://www.museoreinasofia.es/visita",
+        "sourceType": "official public operator (national museum)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Visit page lists 2026 exhibitions, including Andrea Canepa's \"Fardo\" (13 January 2026 to 1 January 2027) covering the Palacio de Cristal, which is \"temporarily closed\" for building improvements. General admission 12 €."
+      },
+      "Museo Nacional Thyssen-Bornemisza": {
+        "url": "https://www.museothyssen.org/visita/horarios-tarifas",
+        "sourceType": "official public operator (national museum)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Lists the exhibition \"El universo freudiano de Dalí\" with guided visits on 15 November 2026 and 17 January 2027, plus a free lecture on 3 November 2026 requiring reservation. Collection plus temporary exhibitions 14€."
+      },
+      "Museo Sorolla": {
+        "url": "https://www.cultura.gob.es/msorolla/visita/horarios.html",
+        "sourceType": "official public operator (Ministerio de Cultura)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Hours page says the museum opens from 15 October with \"Visita limitada al nuevo edificio de la ampliación\"; the Casa Museo is temporarily closed for rehabilitation. \"ENTRADA GRATUITA.\""
+      },
+      "Museo Lázaro Galdiano": {
+        "url": "https://www.museolazarogaldiano.es/visita",
+        "sourceType": "official public operator (Fundación Lázaro Galdiano)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Visit page lists closures on 24, 25 and 31 December 2026; homepage lists 2026 programme including guided \"Paseos por la Colección\" through 30.12.2026. Cámara del Tesoro temporarily closed for inspection."
+      },
+      "Museo del Romanticismo": {
+        "url": "https://www.cultura.gob.es/mromanticismo/visita/horariosytarifas.html",
+        "sourceType": "official public operator (Ministerio de Cultura)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Hours page carries a 2026 notice (\"Acceso gratuito al museo hasta el 31 de octubre de 2026\") and lists 2026 free days; current exhibition \"Roberta Marrero. Yo soy la navaja y la herida\". Rooms XV-XXI closed for works."
+      },
+      "Museo del Ferrocarril": {
+        "url": "https://www.museodelferrocarril.org/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "News dated 08/10/2026: temporary exhibition \"El tren de la vida\" opened in Sala 3000; 21/10/2026 item on the Halloween experience \"El Museo Encantado\"."
+      },
+      "Jardines de El Buen Retiro": {
+        "url": "https://www.madrid.es/portales/munimadrid/es/Jardines-de-El-Buen-Retiro/?vgnextfmt=default&vgnextoid=499561945d9ec210VgnVCM2000000c205a0aRCRD&vgnextchannel=38bb1914e7d4e210VgnVCM1000000b205a0aRCRD",
+        "sourceType": "official public operator (Ayuntamiento de Madrid)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "City page links an adverse-weather protocol dated 20.06.2026; rowboats can be rented on the Estanque Grande, with the embarcadero reached from Plaza de la Independencia."
+      },
+      "Real Jardín Botánico": {
+        "url": "https://www.rjb.csic.es/",
+        "sourceType": "official public operator (CSIC)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Homepage announces \"Semana de la Ciencia 2026\" (17-29 November) with free activities and limited places; lists exhibition \"No acabarán mis flores\"."
+      },
+      "Azotea del Círculo de Bellas Artes": {
+        "url": "https://www.circulobellasartes.com/azotea/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Rooftop page sells tickets (normal €6, reduced €5) online at tickets.circulobellasartes.com; footer \"© 2026\". Ticket does not guarantee a place in the café-restaurant area."
+      },
+      "Mercado de San Miguel": {
+        "url": "https://www.mercadodesanmiguel.es/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Posts dated 16 Sep 2026 (\"Una mesa para todos\"), 9 Jul 2026 and 22 Jun 2026 on events at the market."
+      },
+      "Mercado de San Antón": {
+        "url": "https://www.mercadosananton.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Homepage publishes current hours for market stalls, food stalls and restaurant; latest dated material is from 2025, no 2026 date seen."
+      },
+      "DiverXO": {
+        "url": "https://www.diverxo.com/reservas",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Live booking system: \"A new date opens at 00:00 each day, 90 days in advance\" with a €450 per person deposit; current tasting menu priced at 450€."
+      },
+      "Casa Lucio": {
+        "url": "https://www.casalucio.es/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Footer \"© 2026\", images uploaded June and July 2026; reservations by phone, WhatsApp and online."
+      },
+      "Lhardy": {
+        "url": "https://www.lhardy.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Homepage publishes restaurant and shop hours and a booking link; no 2026 date seen."
+      },
+      "Taberna La Bola": {
+        "url": "https://www.labola.es/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"156 Aniversario\" menu at 45,00€ per person and footer \"© 1870–2026\"; online and phone booking."
+      },
+      "Casa Alberto": {
+        "url": "https://www.casaalberto.es/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Homepage publishes current taberna and restaurant hours with \"Lunes cerrado\" and a booking page; no 2026 date seen (images from 2025)."
+      },
+      "Casa Dani (Mercado de la Paz)": {
+        "url": "https://www.casadani.es/horario",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Hours page lists current branch schedules and notes that some locations close on Sundays and holidays; no 2026 date seen."
+      },
+      "Corral de la Morería": {
+        "url": "https://www.corraldelamoreria.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Live ticket booking for show-only and show-with-dinner options; \"No se admiten niños menores de 7 años\"; footer \"© 2026\"."
+      },
+      "Salmon Guru": {
+        "url": "https://salmonguru.es/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Cocktail and food menu PDFs uploaded in 2026 and a 2026 press release for the Madrid 10th anniversary; \"TRABAJAMOS SIN RESERVAS\"."
+      },
+      "Museo Chicote": {
+        "url": "https://www.museochicote.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Nuevo horario de apertura al público\" and booking rules (over-18s only; brunch with a 5 € per person guarantee); images uploaded August and September 2026."
+      },
+      "Chocolatería San Ginés": {
+        "url": "https://chocolateriasangines.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Homepage states \"ABIERTO TODOS LOS DÍAS\" and \"Abierto 24 horas todos los días del año\"; latest dated post is from 2019, so the hours claim is the only current notice."
+      },
+      "La Mallorquina (Puerta del Sol)": {
+        "url": "https://www.pastelerialamallorquina.es/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Homepage lists current shop hours and phone numbers; footer \"1984 - 2026\"."
+      },
+      "Federal Café (Comendadoras)": {
+        "url": "https://federalcafe.es/madrid-comendadoras",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Branch page publishes current hours; group homepage links a \"CARTA 26\" menu."
+      },
+      "Café Comercial": {
+        "url": "https://www.cafecomercialmadrid.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Menus uploaded in 2026 (group menu \"MenuGrupos2026.pdf\", October 2026) and footer \"Café Comercial Madrid 2026 ©\"; table reservations online or on 91 088 25 25."
+      },
+      "Café de Oriente": {
+        "url": "https://www.cafedeoriente.es/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Homepage publishes current hours and a reservations link; no 2026 date seen."
+      }
+    }
+  },
   "San Francisco, United States": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-25",

@@ -1,0 +1,898 @@
+{
+  "city": "Copenhagen, Denmark",
+  "checkedOn": "2026-10-25",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Tivoli Gardens",
+      "kind": "landmark",
+      "url": "https://www.tivoli.dk/en",
+      "sourceType": "operator's own site",
+      "address": "Vesterbrogade 3 1620 København V",
+      "operatingEvidence": "Programme lists dated autumn 2026 events, e.g. Halloween in Tivoli 2 October to 1 November and DM i Stand-Up 2026 on 27 October; footer \"© Tivoli 2026\".",
+      "hours": "not published on the page read (linked 'See opening hours' page not read)",
+      "confidence": "high"
+    },
+    {
+      "name": "Rundetaarn (The Round Tower)",
+      "kind": "landmark",
+      "url": "https://www.rundetaarn.dk/en/",
+      "sourceType": "operator's own site",
+      "address": "Købmagergade 52 A, 1150 Copenhagen K",
+      "operatingEvidence": "Current exhibitions 'Light Echoes' (2 Oct to 3 Jan) and 'Ole Rømer and the Great Discovery'; observatory telescope evenings 5 Oct to 31 Mar. Adults 60 DKK, under 18 free; 'not well suited for wheelchairs and pushchairs'.",
+      "hours": "Winter (October–March): Mon–Tue 10–21, Wed–Sun 10–18; summer (April–September) daily 10–20; observatory Oct–Mar Mon–Tue 18–21",
+      "confidence": "high"
+    },
+    {
+      "name": "Rosenborg Castle",
+      "kind": "landmark",
+      "url": "https://denkongeligesamling.dk/en/rosenborg-castle/plan-your-visit/opening-hours/",
+      "sourceType": "operator's own site (The Royal Danish Collection)",
+      "address": "Rosenborg Slot, Øster Voldgade 4A, 1350 København K",
+      "operatingEvidence": "Published 2026 schedule: 'From 2 November to 23 December' Tue–Sun 10.00–16.00, Monday closed, plus a Christmas 2026 table. Online tickets save 10 kroner; no food or drink in the castle or Treasury.",
+      "hours": "2 Nov–23 Dec 2026: Tue–Sun 10.00–16.00, Mon closed; 24–25 Dec closed; 31 Dec 10.00–14.00; current October hours not shown",
+      "confidence": "high"
+    },
+    {
+      "name": "National Museum of Denmark",
+      "kind": "museum",
+      "url": "https://nationalmuseet.dk/en/",
+      "sourceType": "official public operator (National Museum of Denmark)",
+      "address": "Ny Vestergade 10, Copenhagen 1471",
+      "operatingEvidence": "Current special exhibitions 'The Viking sorceress', 'KA-CHING!' and 'Land Unknown' (no dates shown); adult tickets 150 DKK or 135 DKK online, valid one year; under 18 free.",
+      "hours": "Mon–Sun 10:00–17:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Ny Carlsberg Glyptotek",
+      "kind": "museum",
+      "url": "https://www.glyptoteket.com/visit/opening-hours/",
+      "sourceType": "operator's own site",
+      "address": "Ny Carlsberg Glyptotek, Dantes Plads 7, 1556 Copenhagen",
+      "operatingEvidence": "Exhibition 'The Power of Fashion in the Roman Empire' October 1, 2026 to March 29, 2027; free admission the last Wednesday of each month; online tickets save 10%.",
+      "hours": "Tue–Sun 10:00–17:00, Thu until 21:00, Mon closed; closed 23–26 Dec and 1 Jan; 31 Dec 10:00–15:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Thorvaldsens Museum",
+      "kind": "museum",
+      "url": "https://www.thorvaldsensmuseum.dk/en",
+      "sourceType": "official public operator (City of Copenhagen museums)",
+      "address": "2 Bertel Thorvaldsens Plads, DK-1213 Copenhagen K",
+      "operatingEvidence": "New exhibition 'Life, Longing & Landscape - Thorvaldsen's Painting Collection' (no dates shown); 'Free admission for all on Wednesdays'; adults DKK 110, under 18 free. Courtyard café temporarily closed for construction.",
+      "hours": "Tuesday–Sunday 10 am – 5 pm; closed Mondays and 24, 25, 31 Dec and 1 Jan",
+      "confidence": "medium"
+    },
+    {
+      "name": "Designmuseum Danmark",
+      "kind": "museum",
+      "url": "https://designmuseum.dk/en/",
+      "sourceType": "operator's own site",
+      "address": "Bredgade 68, 1260 Copenhagen K",
+      "operatingEvidence": "'Henrik Vibskov: The Exhibition' September 18, 2026 to February 21, 2027; Verner Panton centenary display; Café FORMAT open 'every day except Monday', no ticket needed.",
+      "hours": "'Open today 10:00 - 18:00'; weekly hours not shown on page read",
+      "confidence": "high"
+    },
+    {
+      "name": "Kunsthal Charlottenborg",
+      "kind": "museum",
+      "url": "https://kunsthalcharlottenborg.dk/en/visit/",
+      "sourceType": "operator's own site",
+      "address": "Nyhavn 2, 1051 Copenhagen K",
+      "operatingEvidence": "Three exhibitions (Amalie Smith, Jochen Lempert, Som Supaparinya) running 26 September 2026 – 21 February 2027. Over 16: 95 DKK; free Wednesdays from 17.00.",
+      "hours": "Mon 11–19, Tue closed, Wed–Fri 11–19, Sat–Sun 11–17; closed 24–25 Dec and 31 Dec–1 Jan",
+      "confidence": "high"
+    },
+    {
+      "name": "Copenhagen Contemporary",
+      "kind": "museum",
+      "url": "https://copenhagencontemporary.org/en/visit",
+      "sourceType": "operator's own site",
+      "address": "Refshalevej 173A, 1432 København",
+      "operatingEvidence": "Camille Henrot 'Paper Planes' 05.06.26 – 31.12.26; Kengo Kuma 'Earth | Tree' 28.03.26 – 21.02.27; permanent James Turrell 'Aftershock'. Adults 140 DKK.",
+      "hours": "Tue–Sun 11:00–18:00, Thu 11:00–21:00, Mon closed; closed 24, 25, 28, 31 Dec and 1 Jan 2027",
+      "confidence": "high"
+    },
+    {
+      "name": "Louisiana Museum of Modern Art",
+      "kind": "museum",
+      "url": "https://louisiana.dk/en/plan-your-visit/opening-hours/",
+      "sourceType": "operator's own site",
+      "address": "Louisiana Museum of Modern Art Gl. Strandvej 13 3050 Humlebæk Denmark",
+      "operatingEvidence": "Tracey Emin 8 Oct 2026 to 18 Apr 2027; Remedios Varo 18 Sep 2026 to 10 Jan 2027. 'No advance reservation or time slot' needed; adults 145 DKK, under 18 free; ticket needed even for café, shop or sculpture park.",
+      "hours": "Tue–Fri 11:00–22:00, Sat–Sun 11:00–18:00, Mon closed; closed 24, 25, 31 Dec and 1 Jan",
+      "confidence": "high"
+    },
+    {
+      "name": "Botanical Garden (Natural History Museum of Denmark)",
+      "kind": "park",
+      "url": "https://snm.dk/en/opening-hours",
+      "sourceType": "official public operator (Natural History Museum of Denmark, University of Copenhagen)",
+      "address": "Øster Voldgade 5 – 7, 1350 Copenhagen K",
+      "operatingEvidence": "Seasonal 2026 hours published; press releases dated 22.10.2026 and 02.10.2026. 'We are renovating the Palm House', so parts of it 'will be closed to visitors at times'.",
+      "hours": "Garden: 25 Oct–28 Feb 8:30–16:00 (1 Mar–24 Oct 8:30–18:00); greenhouses from 25 Oct Tue–Sun 10:00–15:30, Mon closed; garden closed 24–26, 31 Dec and 1 Jan",
+      "confidence": "high"
+    },
+    {
+      "name": "Copenhagen Zoo",
+      "kind": "park",
+      "url": "https://www.zoo.dk/en/opening-hours",
+      "sourceType": "operator's own site",
+      "address": "Roskildevej 32, 2000 Frederiksberg",
+      "operatingEvidence": "Opening-hours page lists October 25–31, 2026 as 9:00 AM - 5:00 PM daily; footer '© Zoologisk Have 2026'.",
+      "hours": "25–31 October 2026: 9:00–17:00 daily; later dates not shown",
+      "confidence": "high"
+    },
+    {
+      "name": "Experimentarium",
+      "kind": "museum",
+      "url": "https://www.experimentarium.dk/en/",
+      "sourceType": "operator's own site",
+      "address": "Tuborg Havnevej 7, 2900 Hellerup",
+      "operatingEvidence": "Daily listings and '© 2026 Experimentarium'; online tickets 'Save 10%'. Interactive Film Theatre 'currently closed for renovation'.",
+      "hours": "Daily 09.30–17.00 (page also says 9 AM–5 PM); 24 and 31 Dec 9.30–14.00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Torvehallerne",
+      "kind": "market",
+      "url": "https://torvehallernekbh.dk/",
+      "sourceType": "operator's own site",
+      "address": "Frederiksborggade 21, 1360 København K",
+      "operatingEvidence": "Recurring Thursday market for small producers 13:00–19:00; risengrød on the 24th of each month through 24 November; dated October/November 2026 posts.",
+      "hours": "Mon–Fri 10:00–19:00, Sat–Sun 10:00–18:00; breakfast and bakery from 07:00; some stalls open longer",
+      "confidence": "high"
+    },
+    {
+      "name": "Reffen",
+      "kind": "market",
+      "url": "https://reffen.dk/en/",
+      "sourceType": "operator's own site",
+      "address": "Refshalevej 167A, 1432 København K",
+      "operatingEvidence": "'October is full of things to see, do and taste at Reffen, and we're open every day'; autumn 2026 events banner.",
+      "hours": "Street food daily 11.30–20.30; bars daily 11.00–21.30; coffee shop daily from 10.30",
+      "confidence": "high"
+    },
+    {
+      "name": "GRØD (Torvehallerne)",
+      "kind": "cafe",
+      "url": "https://www.groed.com/restauranter/koebenhavn-torvehallerne",
+      "sourceType": "operator's own site",
+      "address": "Hal 2, Stade 8A, Linnésgade 17, 1362 København K (Torvehallerne)",
+      "operatingEvidence": "Branch page lists current hours and delivery 'until 18:45'; porridge restaurant at the stall since spring 2013.",
+      "hours": "Mon–Fri 7:00–19:00, Sat–Sun 9:00–18:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mad & Kaffe (Vesterbro)",
+      "kind": "cafe",
+      "url": "https://www.madogkaffe.dk/",
+      "sourceType": "operator's own site",
+      "address": "Sønder Boulevard 68, 1720 København V",
+      "operatingEvidence": "News dated October 2026 (fifth café opened 7 October in Aarhus) and August 2026 menu update; 'Vi holder altid pladser til dig, der dropper ind' (seats kept for drop-ins), booking recommended.",
+      "hours": "Mon–Sat 8.30–20, Sun 8.30–17; kitchen closes one hour before",
+      "confidence": "high"
+    },
+    {
+      "name": "Coffee Collective (Jægersborggade)",
+      "kind": "cafe",
+      "url": "https://coffeecollective.dk/pages/coffee-shop/jaeggersborggade",
+      "sourceType": "operator's own site",
+      "address": "Jægersborggade 57, 2200 København N",
+      "operatingEvidence": "Branch page with current hours; described as the company's 'very first coffee shop, now relocated to a new, larger space'. No dated content.",
+      "hours": "Mon–Fri 7:00–20:00, Sat–Sun 8:00–19:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Juno the Bakery",
+      "kind": "bakery",
+      "url": "https://www.junothebakery.com/",
+      "sourceType": "operator's own site",
+      "address": "Århusgade 48, Østerbro, Copenhagen",
+      "operatingEvidence": "Page published 'Oct 21, 2026'; 'Since 2018', '8 years of service'.",
+      "hours": "Tue–Sat 7:30–18:00, Sun 7:30–16:00; Monday not listed",
+      "confidence": "high"
+    },
+    {
+      "name": "Andersen Bakery (Islands Brygge)",
+      "kind": "bakery",
+      "url": "https://andersenbakery.dk/",
+      "sourceType": "operator's own site",
+      "address": "Thorshavnsgade 26, 2300 København S",
+      "operatingEvidence": "Current 'Åbningstider' listing with pickup orders possible; '© 2026' footer. No dated news.",
+      "hours": "Mon–Sun 06:30–19:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Restaurant Schønnemann",
+      "kind": "meal",
+      "url": "https://www.restaurantschonnemann.dk/",
+      "sourceType": "operator's own site",
+      "address": "Restaurant Schønnemann, Hauser Plads 16, 1127 København K",
+      "operatingEvidence": "Christmas 2026 runs 12 November to 23 December 2026, with a Thursday–Saturday 'Julebord' 18:30–23:00; closed 24 December 2026 to 5 January 2027.",
+      "hours": "Mon–Sun 11:30–17:00 (lunch)",
+      "confidence": "high"
+    },
+    {
+      "name": "Kødbyens Fiskebar",
+      "kind": "meal",
+      "url": "https://fiskebaren.dk/kontakt/",
+      "sourceType": "operator's own site",
+      "address": "Kødbyens Fiskebar, Flæsketorvet 100, 1711 København V",
+      "operatingEvidence": "Live 'Book bord' table booking and current hours; walk-ins can 'kom forbi og få en plads i baren'. No dated content.",
+      "hours": "Sun–Thu 11:30–24:00, Fri–Sat 11:30–01:00; kitchen 11:30–14:30 and 17:30–23:00; oysters and drinks all day",
+      "confidence": "medium"
+    },
+    {
+      "name": "Barr",
+      "kind": "meal",
+      "url": "https://www.restaurantbarr.com/",
+      "sourceType": "operator's own site",
+      "address": "Strandgade 93, 1401 Copenhagen",
+      "operatingEvidence": "'Book a table' via Tock; site images uploaded May–July 2026.",
+      "hours": "Dinner daily from 17:00; lunch Fri–Sun from 12:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Noma",
+      "kind": "meal",
+      "url": "https://www.noma.dk/",
+      "sourceType": "operator's own site",
+      "address": "Refshalevej 96, 1432 Copenhagen K",
+      "operatingEvidence": "Founders' letter: 'This August, we are coming home' after an LA residency (March 11 to June 26, 2026); 'twelve seasons of Noma'; booking via Tock. Reopening date not stated exactly.",
+      "hours": "Wed–Sat 17:00–23:00; Sun–Tue closed",
+      "confidence": "medium"
+    },
+    {
+      "name": "Geranium",
+      "kind": "meal",
+      "url": "https://www.geranium.dk/",
+      "sourceType": "operator's own site",
+      "address": "Per Henrik Lings Allé 4, 8., DK-2100 Copenhagen Ø",
+      "operatingEvidence": "Online booking via SevenRooms for 2–6 guests, up to '3 month in ahead', deposit 1500 DKK per guest. No 2026-dated content.",
+      "hours": "Wed dinner 18:00–23:00; Thu–Sat lunch 12:00–15:30, dinner 18:30–23:30",
+      "confidence": "medium"
+    },
+    {
+      "name": "Lidkoeb",
+      "kind": "bar",
+      "url": "https://lidkoeb.dk/",
+      "sourceType": "operator's own site",
+      "address": "Vesterbrogade 72B, 1620 Kbh V",
+      "operatingEvidence": "September 2026 menus ('Lidkoeb-sept26-MAIN.pdf'); online reservations.",
+      "hours": "Mon 18–00, Tue 16–00, Wed–Sat 16–02, Sun closed; upper-floor bars only some nights",
+      "confidence": "high"
+    },
+    {
+      "name": "Ruby",
+      "kind": "bar",
+      "url": "https://rby.dk/",
+      "sourceType": "operator's own site",
+      "address": "Nybrogade 10, 1203 København K",
+      "operatingEvidence": "Current hours and bookings contact; 'Ruby opened its doors on the 21st June in 2007'; minimum entry age 21. No 2026-dated content.",
+      "hours": "Sun–Wed 17:00–01:00, Thu 16:00–01:00, Fri–Sat 16:00–02:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mikkeller Bar Viktoriagade",
+      "kind": "bar",
+      "url": "https://www.mikkeller.com/locations/mikkeller-viktoriagade",
+      "sourceType": "operator's own site",
+      "address": "Viktoriagade 8 B-C, 1655 Copenhagen V",
+      "operatingEvidence": "'the site of the very first Mikkeller Bar'; 'You will always be able to book a table', max party 10; live tap list with 'Recent activity' 18 hours ago.",
+      "hours": "not published (heading present but no hours)",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Statens Museum for Kunst (SMK)",
+      "reason": "Official page returned only its title; no address, hours or exhibitions readable",
+      "url": "https://www.smk.dk/en/"
+    },
+    {
+      "name": "Christiansborg Palace",
+      "reason": "Official royal palaces site is a 'coming soon' placeholder; no address or hours published",
+      "url": "https://kongeligeslotte.dk/en/palaces-and-gardens/christiansborg-palace.html"
+    },
+    {
+      "name": "Den Blå Planet",
+      "reason": "Certificate error (hostname not in certificate); not bypassed",
+      "url": "https://www.denblaaplanet.dk/en/"
+    },
+    {
+      "name": "Hija de Sanchez",
+      "reason": "Certificate expired; not bypassed",
+      "url": "https://www.hijadesanchez.dk/"
+    },
+    {
+      "name": "Atelier September",
+      "reason": "HTTP 403 Forbidden",
+      "url": "https://atelierseptember.dk/"
+    },
+    {
+      "name": "Hart Bageri",
+      "reason": "Homepage returned only its name; locations page failed with a TLS error",
+      "url": "https://www.hartbageri.com/locations"
+    },
+    {
+      "name": "La Cabra",
+      "reason": "HTTP 429 Too Many Requests on repeated attempts",
+      "url": "https://www.lacabra.dk/"
+    },
+    {
+      "name": "Prolog Coffee Bar",
+      "reason": "HTTP 429 Too Many Requests on repeated attempts",
+      "url": "https://prologcoffee.com/"
+    },
+    {
+      "name": "Apollo Bar",
+      "reason": "HTTP 429 Too Many Requests",
+      "url": "https://www.apollobar.dk/"
+    },
+    {
+      "name": "Duck and Cover",
+      "reason": "DNS lookup failed (EAI_AGAIN)",
+      "url": "https://www.duckandcover.dk/"
+    },
+    {
+      "name": "Alouette",
+      "reason": "Certificate error (hostname not in certificate); not bypassed",
+      "url": "https://www.alouette.dk/"
+    },
+    {
+      "name": "Copenhagen Coffee Lab",
+      "reason": "Certificate error (hostname not in certificate); not bypassed",
+      "url": "https://www.cphcoffeelab.dk/"
+    },
+    {
+      "name": "Alchemist",
+      "reason": "Official homepage shows no address, opening days or dated content",
+      "url": "https://www.alchemist.dk/"
+    },
+    {
+      "name": "Hahnemanns Køkken",
+      "reason": "Official site not found; tried domain is an unrelated recipe site",
+      "url": "https://www.hahnemannskoekken.dk/"
+    },
+    {
+      "name": "Cisternerne",
+      "reason": "Redirected English page returned 404",
+      "url": "https://frederiksbergmuseerne.dk/da/cisternerne//en"
+    },
+    {
+      "name": "Hotel d'Angleterre bars",
+      "reason": "DNS lookup failed for tried domain",
+      "url": "https://www.dahotel.dk/"
+    },
+    {
+      "name": "Lille Bakery",
+      "reason": "Tried domain does not resolve; official site not found",
+      "url": "https://www.lillegrocer.dk/"
+    },
+    {
+      "name": "A local market in Copenhagen",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood food walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal from Denmark",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe or bakery near A flexible day-trip area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cooking or tasting experience",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A nearby day trip from Copenhagen",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local market in Your main base in Copenhagen",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A food-focused walk through A nearby area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature dinner from Denmark",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tasting or cooking experience",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood table away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided market walk in Your main base in Copenhagen",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A low-cost local meal in A nearby area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free neighborhood wandering",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A public square or viewpoint near A flexible day-trip area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A casual cafe stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A destination-led dinner in Your main base in Copenhagen",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private food walk or cooking class",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A polished stay near A nearby area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening around A neighborhood food walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer for a day trip",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored local experience",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near A nearby area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic outing built around A neighborhood food walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long local dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow morning in A flexible day-trip area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Your main base in Copenhagen",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A memorable day trip from Copenhagen",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "An easy first stop near Your main base in Copenhagen",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A family-friendly market walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A food hall everyone can browse",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near A nearby area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short neighborhood walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A low-pressure afternoon",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "An early visit to A local market in Copenhagen",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Your main base in Copenhagen market or cafe",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided food walk through A nearby area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local class or tasting",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in A flexible day-trip area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of A flexible day-trip area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A less obvious side of Copenhagen",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A seasonal experience in Denmark",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Your main base in Copenhagen",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "An off-peak version of A local market in Copenhagen",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Your main base in Copenhagen",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A nearby area bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before A local market in Copenhagen",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through A flexible day-trip area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual local lunch near Your main base in Copenhagen",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around A nearby area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Lunch between A local market in Copenhagen and A neighborhood food walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday meal in A flexible day-trip area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local dinner in Your main base in Copenhagen",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty from Denmark near A nearby area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A memorable table close to A flexible day-trip area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Your main base in Copenhagen",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around A nearby area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near A flexible day-trip area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Your main base in Copenhagen",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A nearby area morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before A local market in Copenhagen",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Your main base in Copenhagen",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in A nearby area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood coffee stop in A flexible day-trip area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup before the next stop",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Tivoli Gardens",
+        "Rosenborg Castle",
+        "Rundetaarn (The Round Tower)",
+        "National Museum of Denmark"
+      ],
+      "bestFirstTimers": [
+        "Tivoli Gardens",
+        "National Museum of Denmark",
+        "Ny Carlsberg Glyptotek",
+        "Torvehallerne"
+      ],
+      "bestRestaurants": [
+        "Restaurant Schønnemann",
+        "Kødbyens Fiskebar",
+        "Barr",
+        "Geranium"
+      ],
+      "bestBudget": [
+        "Torvehallerne",
+        "Reffen",
+        "Thorvaldsens Museum",
+        "GRØD (Torvehallerne)"
+      ],
+      "bestLuxury": [
+        "Noma",
+        "Geranium",
+        "Barr"
+      ],
+      "bestCouples": [
+        "Louisiana Museum of Modern Art",
+        "Kunsthal Charlottenborg",
+        "Ruby",
+        "Geranium"
+      ],
+      "bestKids": [
+        "Copenhagen Zoo",
+        "Experimentarium",
+        "Tivoli Gardens",
+        "Botanical Garden (Natural History Museum of Denmark)"
+      ],
+      "bestSolo": [
+        "Designmuseum Danmark",
+        "Copenhagen Contemporary",
+        "Coffee Collective (Jægersborggade)",
+        "Thorvaldsens Museum"
+      ],
+      "bestUnique": [
+        "Copenhagen Contemporary",
+        "Rundetaarn (The Round Tower)",
+        "Reffen",
+        "Mikkeller Bar Viktoriagade"
+      ],
+      "bestBreakfast": [
+        "Mad & Kaffe (Vesterbro)",
+        "GRØD (Torvehallerne)",
+        "Juno the Bakery"
+      ],
+      "bestLunch": [
+        "Restaurant Schønnemann",
+        "Torvehallerne",
+        "Reffen",
+        "Kødbyens Fiskebar"
+      ],
+      "bestDinner": [
+        "Barr",
+        "Kødbyens Fiskebar",
+        "Noma",
+        "Geranium"
+      ],
+      "bestCocktails": [
+        "Lidkoeb",
+        "Ruby"
+      ],
+      "bestBakeries": [
+        "Juno the Bakery",
+        "Andersen Bakery (Islands Brygge)"
+      ],
+      "bestCoffee": [
+        "Coffee Collective (Jægersborggade)",
+        "Mad & Kaffe (Vesterbro)"
+      ]
+    },
+    "queries": {
+      "Tivoli Gardens": "Tivoli Gardens Vesterbrogade 3 Copenhagen",
+      "Rundetaarn (The Round Tower)": "Rundetaarn Købmagergade 52A Copenhagen",
+      "Rosenborg Castle": "Rosenborg Castle Øster Voldgade 4A Copenhagen",
+      "National Museum of Denmark": "National Museum of Denmark Ny Vestergade 10 Copenhagen",
+      "Ny Carlsberg Glyptotek": "Ny Carlsberg Glyptotek Dantes Plads 7 Copenhagen",
+      "Thorvaldsens Museum": "Thorvaldsens Museum Bertel Thorvaldsens Plads 2 Copenhagen",
+      "Designmuseum Danmark": "Designmuseum Danmark Bredgade 68 Copenhagen",
+      "Kunsthal Charlottenborg": "Kunsthal Charlottenborg Nyhavn 2 Copenhagen",
+      "Copenhagen Contemporary": "Copenhagen Contemporary Refshalevej 173A Copenhagen",
+      "Louisiana Museum of Modern Art": "Louisiana Museum of Modern Art Gl. Strandvej 13 Humlebæk",
+      "Botanical Garden (Natural History Museum of Denmark)": "Botanical Garden Øster Voldgade 5-7 Copenhagen",
+      "Copenhagen Zoo": "Copenhagen Zoo Roskildevej 32 Frederiksberg",
+      "Experimentarium": "Experimentarium Tuborg Havnevej 7 Hellerup",
+      "Torvehallerne": "Torvehallerne Frederiksborggade 21 Copenhagen",
+      "Reffen": "Reffen Refshalevej 167A Copenhagen",
+      "GRØD (Torvehallerne)": "GRØD Torvehallerne Linnésgade 17 Copenhagen",
+      "Mad & Kaffe (Vesterbro)": "Mad & Kaffe Sønder Boulevard 68 Copenhagen",
+      "Coffee Collective (Jægersborggade)": "Coffee Collective Jægersborggade 57 Copenhagen",
+      "Juno the Bakery": "Juno the Bakery Århusgade 48 Copenhagen",
+      "Andersen Bakery (Islands Brygge)": "Andersen Bakery Thorshavnsgade 26 Copenhagen",
+      "Restaurant Schønnemann": "Restaurant Schønnemann Hauser Plads 16 Copenhagen",
+      "Kødbyens Fiskebar": "Kødbyens Fiskebar Flæsketorvet 100 Copenhagen",
+      "Barr": "Barr Strandgade 93 Copenhagen",
+      "Noma": "Noma Refshalevej 96 Copenhagen",
+      "Geranium": "Geranium Per Henrik Lings Allé 4 Copenhagen",
+      "Lidkoeb": "Lidkoeb Vesterbrogade 72B Copenhagen",
+      "Ruby": "Ruby Nybrogade 10 Copenhagen",
+      "Mikkeller Bar Viktoriagade": "Mikkeller Bar Viktoriagade 8 Copenhagen"
+    },
+    "summary": "Royal castles, museums, food markets and a harbourside art district, with breakfast spots, lunch and dinner tables, bakeries, coffee and cocktail bars checked against their own websites.",
+    "highlights": [
+      "Tivoli Gardens",
+      "Rosenborg Castle",
+      "National Museum of Denmark",
+      "Louisiana Museum of Modern Art"
+    ],
+    "tip": "Save Mondays for the National Museum of Denmark, which opens daily 10:00–17:00, because Ny Carlsberg Glyptotek, Louisiana, Copenhagen Contemporary and Thorvaldsens Museum close on Mondays, as does Rosenborg Castle from 2 November.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mondays (Charlottenborg: Tuesdays)",
+        "copy": "Ny Carlsberg Glyptotek, Louisiana, Copenhagen Contemporary and Thorvaldsens Museum are closed on Mondays, and Rosenborg Castle is closed Mondays from 2 November. Kunsthal Charlottenborg closes on Tuesdays instead."
+      },
+      {
+        "label": "Tickets",
+        "value": "Buy online to save",
+        "copy": "Rosenborg Castle saves you 10 kroner per ticket bought online and Ny Carlsberg Glyptotek 10%, while the National Museum of Denmark charges 135 DKK online against 150 DKK. Louisiana needs no time slot, and online tickets are valid for a visit within a year."
+      },
+      {
+        "label": "Free entry",
+        "value": "Wednesdays and under-18s",
+        "copy": "Thorvaldsens Museum is free for everyone on Wednesdays, Kunsthal Charlottenborg from 17.00 on Wednesdays, and Ny Carlsberg Glyptotek on the last Wednesday of each month. Under-18s enter free at the National Museum of Denmark, Louisiana and Rundetaarn."
+      },
+      {
+        "label": "Rules",
+        "value": "Age, food and access",
+        "copy": "Ruby has a minimum entry age of 21, and Rosenborg Castle allows no food or drink in the castle or Treasury. Rundetaarn has no lift and says it is not well suited to wheelchairs and pushchairs."
+      }
+    ],
+    "dek": "Build each day around one museum's opening hours, since closing days differ, and book the tasting-menu dinners well ahead.",
+    "intro": [
+      "Copenhagen's historic sights are easy to combine on foot. The National Museum of Denmark at Ny Vestergade 10 opens every day from 10:00 to 17:00; adult tickets cost 150 DKK, or 135 DKK online, they stay valid for a year, and under-18s go free. Rosenborg Castle on Øster Voldgade opens Tuesday to Sunday from 10:00 to 16:00 from 2 November, and buying online saves you 10 kroner a ticket. Rundetaarn on Købmagergade stays open until 21:00 on Mondays and Tuesdays through the winter, when its observatory runs telescope evenings, and adult entry costs 60 DKK.",
+      "Several art museums close on Mondays, so plan around that. Ny Carlsberg Glyptotek on Dantes Plads opens Tuesday to Sunday, until 21:00 on Thursdays, and is free on the last Wednesday of each month; its exhibition The Power of Fashion in the Roman Empire runs until 29 March 2027. Thorvaldsens Museum is free for everyone on Wednesdays. Designmuseum Danmark on Bredgade shows Henrik Vibskov: The Exhibition until 21 February 2027, and Kunsthal Charlottenborg at Nyhavn 2, which closes on Tuesdays, has three exhibitions running to the same date.",
+      "Louisiana Museum of Modern Art at Gl. Strandvej 13 in Humlebæk needs no time slot. It opens Tuesday to Friday until 22:00 and weekends until 18:00, and you need a ticket even for its café, shop or sculpture park. Its Tracey Emin exhibition runs until 18 April 2027. Back in the city, Refshaleøen pairs Reffen's street food, open daily from 11.30, with Copenhagen Contemporary, which opens until 21:00 on Thursdays and shows Camille Henrot's Paper Planes until 31 December 2026 alongside a permanent James Turrell work.",
+      "For food, Torvehallerne on Frederiksborggade serves breakfast and bakery items from 07:00, and the GRØD porridge stall there opens at 7:00 on weekdays. Restaurant Schønnemann on Hauser Plads serves lunch daily from 11:30, runs a Christmas season from 12 November to 23 December 2026, then closes until 5 January 2027. Geranium takes bookings up to three months ahead, with a 1,500 DKK deposit per guest. For drinks, Lidkoeb on Vesterbrogade is closed on Sundays, and Ruby on Nybrogade admits guests aged 21 and over."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair the National Museum of Denmark, open daily 10:00–17:00, with Rundetaarn and Rosenborg Castle, both a short walk from Torvehallerne."
+      ],
+      [
+        "A slower morning",
+        "Start with porridge at GRØD in Torvehallerne or a pastry from Juno the Bakery on Århusgade, then the Botanical Garden, open from 8:30."
+      ],
+      [
+        "Before booking",
+        "Check Monday closures at Glyptotek, Louisiana and Copenhagen Contemporary, and book Geranium up to three months ahead with its 1,500 DKK per-guest deposit."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The input lists were entirely generic, so all 28 places were added as candidates. Some places were published only partially: Tivoli Gardens' homepage gave no opening hours, Mikkeller Bar Viktoriagade listed no hours, Designmuseum Danmark showed only today's hours, Rosenborg Castle's page showed hours only from 2 November, and Copenhagen Zoo's only for 25–31 October 2026. Noma's site says it returned to Copenhagen in August 2026 without an exact date. Kødbyens Fiskebar, Ruby, Geranium, Coffee Collective and Andersen Bakery showed hours or booking but no dated 2026 content. The Botanical Garden's Palm House is under renovation, with parts closed at times. Sites that could not be read: SMK (title only), Christiansborg Palace (placeholder), Den Blå Planet, Hija de Sanchez, Alouette and Copenhagen Coffee Lab (certificate errors), Atelier September (403), Hart Bageri (TLS error), La Cabra, Prolog and Apollo Bar (429 rate limits), and Duck and Cover (DNS failure).",
+  "injectionLikeText": []
+}

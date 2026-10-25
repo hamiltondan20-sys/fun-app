@@ -2684,4 +2684,214 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 31 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Madrid, Spain: source review of 2026-10-25 (docs/content-research/madrid-2026-10-25.md).
+  {
+    const cityKey = "Madrid, Spain";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Palacio Real de Madrid","Museo Nacional Thyssen-Bornemisza","Museo Nacional Centro de Arte Reina Sofía","Jardines de El Buen Retiro"],
+      bestFirstTimers: ["Palacio Real de Madrid","Jardines de El Buen Retiro","Mercado de San Miguel","Chocolatería San Ginés"],
+      bestRestaurants: ["Casa Lucio","Lhardy","Taberna La Bola","Casa Alberto"],
+      bestBudget: ["Jardines de El Buen Retiro","Museo Sorolla","Museo del Romanticismo","Mercado de San Antón"],
+      bestLuxury: ["DiverXO","Lhardy","Corral de la Morería"],
+      bestCouples: ["Azotea del Círculo de Bellas Artes","Corral de la Morería","Real Jardín Botánico","Casa Lucio"],
+      bestKids: ["Museo del Ferrocarril","Jardines de El Buen Retiro","Real Jardín Botánico","Chocolatería San Ginés"],
+      bestSolo: ["Museo Lázaro Galdiano","Museo Sorolla","Café Comercial","Mercado de San Antón"],
+      bestUnique: ["Museo Sorolla","Corral de la Morería","Museo del Romanticismo","Museo Chicote"],
+      bestBreakfast: ["Federal Café (Comendadoras)","La Mallorquina (Puerta del Sol)","Casa Dani (Mercado de la Paz)","Café de Oriente"],
+      bestLunch: ["Casa Dani (Mercado de la Paz)","Taberna La Bola","Mercado de San Miguel","Casa Alberto"],
+      bestDinner: ["DiverXO","Casa Lucio","Lhardy","Casa Alberto"],
+      bestCocktails: ["Salmon Guru","Museo Chicote","Azotea del Círculo de Bellas Artes"],
+      bestBakeries: ["La Mallorquina (Puerta del Sol)","Lhardy"],
+      bestCoffee: ["Federal Café (Comendadoras)","Café Comercial","Café de Oriente"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Palacio Real de Madrid": "Palacio Real de Madrid Calle de Bailén Madrid",
+      "Museo Nacional Thyssen-Bornemisza": "Museo Thyssen-Bornemisza Paseo del Prado 8 Madrid",
+      "Museo Nacional Centro de Arte Reina Sofía": "Museo Reina Sofía Calle Santa Isabel 52 Madrid",
+      "Jardines de El Buen Retiro": "Jardines de El Buen Retiro Plaza de la Independencia 7 Madrid",
+      "Mercado de San Miguel": "Mercado de San Miguel Plaza de San Miguel Madrid",
+      "Chocolatería San Ginés": "Chocolatería San Ginés Pasadizo de San Ginés 5 Madrid",
+      "Casa Lucio": "Casa Lucio Cava Baja 35 Madrid",
+      "Lhardy": "Lhardy Carrera de San Jerónimo 8 Madrid",
+      "Taberna La Bola": "Taberna La Bola Calle Bola 5 Madrid",
+      "Casa Alberto": "Casa Alberto Calle de las Huertas 18 Madrid",
+      "Museo Sorolla": "Museo Sorolla Calle Zurbano 68 Madrid",
+      "Museo del Romanticismo": "Museo del Romanticismo Calle San Mateo 13 Madrid",
+      "Mercado de San Antón": "Mercado de San Antón Calle Augusto Figueroa 24 Madrid",
+      "DiverXO": "DiverXO Calle Padre Damián 23 Madrid",
+      "Corral de la Morería": "Corral de la Morería Calle Morería 17 Madrid",
+      "Azotea del Círculo de Bellas Artes": "Azotea Círculo de Bellas Artes Calle Alcalá 42 Madrid",
+      "Real Jardín Botánico": "Real Jardín Botánico Plaza de Murillo 2 Madrid",
+      "Museo del Ferrocarril": "Museo del Ferrocarril Paseo de las Delicias 61 Madrid",
+      "Museo Lázaro Galdiano": "Museo Lázaro Galdiano Calle Serrano 122 Madrid",
+      "Café Comercial": "Café Comercial Glorieta de Bilbao 7 Madrid",
+      "Museo Chicote": "Museo Chicote Gran Vía 12 Madrid",
+      "Federal Café (Comendadoras)": "Federal Café Plaza de las Comendadoras 9 Madrid",
+      "La Mallorquina (Puerta del Sol)": "La Mallorquina Puerta del Sol 8 Madrid",
+      "Casa Dani (Mercado de la Paz)": "Casa Dani Mercado de la Paz Calle Ayala 28 Madrid",
+      "Café de Oriente": "Café de Oriente Plaza de Oriente 2 Madrid",
+      "Salmon Guru": "Salmon Guru Calle Echegaray 21 Madrid"
+    };
+    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (cityGuide) {
+      cityGuide.summary = "Royal palace, Paseo del Prado museums, smaller house museums, parks and markets, with breakfast cafés, classic Madrid dining and cocktail bars checked against their own websites.";
+      cityGuide.highlights = ["Palacio Real de Madrid","Museo Nacional Thyssen-Bornemisza","Museo Nacional Centro de Arte Reina Sofía","Jardines de El Buen Retiro"];
+      cityGuide.tip = "Check closing days before you plan museum time: the Reina Sofía is closed on Tuesdays, while the Lázaro Galdiano, Sorolla and Romanticismo museums are closed on Mondays.";
+    }
+    data.destinationFacts[cityKey] = "Check closing days before you plan museum time: the Reina Sofía is closed on Tuesdays, while the Lázaro Galdiano, Sorolla and Romanticismo museums are closed on Mondays.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Royal palace, Paseo del Prado museums, smaller house museums, parks and markets, with breakfast cafés, classic Madrid dining and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays and Tuesdays",
+        "copy": "The Museo Lázaro Galdiano, Museo Sorolla, Museo del Romanticismo and Casa Alberto are closed on Mondays, and the Reina Sofía is closed on Tuesdays. Casa Lucio closes for all of August."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Timed slots and far-ahead tables",
+        "copy": "The Palacio Real sells tickets by date and time slot, with a €0.77 online booking fee per ticket and entry ending an hour before closing. DiverXO releases each date 90 days ahead at midnight and takes a €450 per person deposit."
+      },
+      {
+        "label": "Walk-in and queues",
+        "value": "No bookings at Salmon Guru",
+        "copy": "Salmon Guru says it works without reservations and seats you as soon as possible. The Círculo de Bellas Artes rooftop sells tickets only at reception from 14:00 to 16:00 and after 21:00, and a ticket does not guarantee a seat in its café area."
+      },
+      {
+        "label": "Rules",
+        "value": "Bags and ages",
+        "copy": "The Palacio Real recommends not bringing backpacks, suitcases or large bags during its improvement works. Corral de la Morería does not admit children under 7, Museo Chicote bookings are for over-18s only, and DiverXO is not recommended for children under 10."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Group the Paseo del Prado museums around their free slots and closing days, and book DiverXO, the Palacio Real and the flamenco show ahead while leaving the cocktail bars for walk-ins.",
+      intro: [
+        "Start at the Palacio Real de Madrid on Calle de Bailén. From October to March, Patrimonio Nacional opens it from 10:00 to 18:00 Monday to Saturday and 10:00 to 16:00 on Sunday, and entry ends one hour before closing. You buy tickets for a date and time slot, and a self-guided visit costs €18 at the basic rate. During its improvement works, the palace recommends you leave backpacks, suitcases and large bags behind. It can also close for official events, and it closes all day on 25 December and from 15:00 on 24 and 31 December.",
+        "On the Paseo del Prado, the Thyssen-Bornemisza at number 8 offers free entry to its collection on Mondays from 12:00 to 16:00. On Saturdays it stays open until 23:00, with free entry from 21:00 to the temporary exhibitions on the ground floor and level -1. Guided visits to El universo freudiano de Dalí are listed into January 2027. The Reina Sofía, at Calle Santa Isabel 52, is closed on Tuesdays and charges €12 for general admission. You still need a ticket for its free hours. Its Palacio de Cristal in El Retiro is closed for building improvements and is wrapped in Andrea Canepa's Fardo until 1 January 2027.",
+        "For a quieter day, the Museo Lázaro Galdiano at Calle Serrano 122 is closed on Mondays and costs €8, and you can get in free Tuesday to Friday from 14:00 to 15:00. The Museo Sorolla is free, but while the Casa Museo is closed for rehabilitation, visits are limited to the new extension building at Calle Zurbano 68. El Retiro opens at 6:00 and closes at 22:00 from October to March, and you can rent rowboats on the Estanque Grande. The Real Jardín Botánico closes at 17:30 from November.",
+        "For food, DiverXO at Calle Padre Damián 23 serves only a tasting menu and opens Tuesday to Friday. Casa Lucio on Cava Baja serves lunch and dinner every day but closes for all of August. Taberna La Bola on Calle Bola marks 156 years with a 45€ anniversary menu. For drinks, Salmon Guru on Calle Echegaray takes no reservations and opens daily from 16:00. Museo Chicote on Gran Vía takes bookings only for over-18s. Chocolatería San Ginés says it is open every day of the year."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Book a timed slot at the Palacio Real, then walk to the Thyssen-Bornemisza or the Reina Sofía, remembering that the Reina Sofía is closed on Tuesdays."
+        ],
+        [
+          "A slower morning",
+          "Have breakfast at Federal Café on Plaza de las Comendadoras from 09:00, then visit the Real Jardín Botánico, which opens at 10:00."
+        ],
+        [
+          "Before booking",
+          "DiverXO releases tables 90 days ahead with a €450 per person deposit, while Salmon Guru takes no reservations at all."
+        ]
+      ],
+      trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
+  // Copenhagen, Denmark: source review of 2026-10-25 (docs/content-research/copenhagen-2026-10-25.md).
+  {
+    const cityKey = "Copenhagen, Denmark";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Tivoli Gardens","Rosenborg Castle","Rundetaarn (The Round Tower)","National Museum of Denmark"],
+      bestFirstTimers: ["Tivoli Gardens","National Museum of Denmark","Ny Carlsberg Glyptotek","Torvehallerne"],
+      bestRestaurants: ["Restaurant Schønnemann","Kødbyens Fiskebar","Barr","Geranium"],
+      bestBudget: ["Torvehallerne","Reffen","Thorvaldsens Museum","GRØD (Torvehallerne)"],
+      bestLuxury: ["Noma","Geranium","Barr"],
+      bestCouples: ["Louisiana Museum of Modern Art","Kunsthal Charlottenborg","Ruby","Geranium"],
+      bestKids: ["Copenhagen Zoo","Experimentarium","Tivoli Gardens","Botanical Garden (Natural History Museum of Denmark)"],
+      bestSolo: ["Designmuseum Danmark","Copenhagen Contemporary","Coffee Collective (Jægersborggade)","Thorvaldsens Museum"],
+      bestUnique: ["Copenhagen Contemporary","Rundetaarn (The Round Tower)","Reffen","Mikkeller Bar Viktoriagade"],
+      bestBreakfast: ["Mad & Kaffe (Vesterbro)","GRØD (Torvehallerne)","Juno the Bakery"],
+      bestLunch: ["Restaurant Schønnemann","Torvehallerne","Reffen","Kødbyens Fiskebar"],
+      bestDinner: ["Barr","Kødbyens Fiskebar","Noma","Geranium"],
+      bestCocktails: ["Lidkoeb","Ruby"],
+      bestBakeries: ["Juno the Bakery","Andersen Bakery (Islands Brygge)"],
+      bestCoffee: ["Coffee Collective (Jægersborggade)","Mad & Kaffe (Vesterbro)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Tivoli Gardens": "Tivoli Gardens Vesterbrogade 3 Copenhagen",
+      "Rosenborg Castle": "Rosenborg Castle Øster Voldgade 4A Copenhagen",
+      "Rundetaarn (The Round Tower)": "Rundetaarn Købmagergade 52A Copenhagen",
+      "National Museum of Denmark": "National Museum of Denmark Ny Vestergade 10 Copenhagen",
+      "Ny Carlsberg Glyptotek": "Ny Carlsberg Glyptotek Dantes Plads 7 Copenhagen",
+      "Torvehallerne": "Torvehallerne Frederiksborggade 21 Copenhagen",
+      "Restaurant Schønnemann": "Restaurant Schønnemann Hauser Plads 16 Copenhagen",
+      "Kødbyens Fiskebar": "Kødbyens Fiskebar Flæsketorvet 100 Copenhagen",
+      "Barr": "Barr Strandgade 93 Copenhagen",
+      "Geranium": "Geranium Per Henrik Lings Allé 4 Copenhagen",
+      "Reffen": "Reffen Refshalevej 167A Copenhagen",
+      "Thorvaldsens Museum": "Thorvaldsens Museum Bertel Thorvaldsens Plads 2 Copenhagen",
+      "GRØD (Torvehallerne)": "GRØD Torvehallerne Linnésgade 17 Copenhagen",
+      "Noma": "Noma Refshalevej 96 Copenhagen",
+      "Louisiana Museum of Modern Art": "Louisiana Museum of Modern Art Gl. Strandvej 13 Humlebæk",
+      "Kunsthal Charlottenborg": "Kunsthal Charlottenborg Nyhavn 2 Copenhagen",
+      "Ruby": "Ruby Nybrogade 10 Copenhagen",
+      "Copenhagen Zoo": "Copenhagen Zoo Roskildevej 32 Frederiksberg",
+      "Experimentarium": "Experimentarium Tuborg Havnevej 7 Hellerup",
+      "Botanical Garden (Natural History Museum of Denmark)": "Botanical Garden Øster Voldgade 5-7 Copenhagen",
+      "Designmuseum Danmark": "Designmuseum Danmark Bredgade 68 Copenhagen",
+      "Copenhagen Contemporary": "Copenhagen Contemporary Refshalevej 173A Copenhagen",
+      "Coffee Collective (Jægersborggade)": "Coffee Collective Jægersborggade 57 Copenhagen",
+      "Mikkeller Bar Viktoriagade": "Mikkeller Bar Viktoriagade 8 Copenhagen",
+      "Mad & Kaffe (Vesterbro)": "Mad & Kaffe Sønder Boulevard 68 Copenhagen",
+      "Juno the Bakery": "Juno the Bakery Århusgade 48 Copenhagen",
+      "Lidkoeb": "Lidkoeb Vesterbrogade 72B Copenhagen",
+      "Andersen Bakery (Islands Brygge)": "Andersen Bakery Thorshavnsgade 26 Copenhagen"
+    };
+    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (cityGuide) {
+      cityGuide.summary = "Royal castles, museums, food markets and a harbourside art district, with breakfast spots, lunch and dinner tables, bakeries, coffee and cocktail bars checked against their own websites.";
+      cityGuide.highlights = ["Tivoli Gardens","Rosenborg Castle","National Museum of Denmark","Louisiana Museum of Modern Art"];
+      cityGuide.tip = "Save Mondays for the National Museum of Denmark, which opens daily 10:00–17:00, because Ny Carlsberg Glyptotek, Louisiana, Copenhagen Contemporary and Thorvaldsens Museum close on Mondays, as does Rosenborg Castle from 2 November.";
+    }
+    data.destinationFacts[cityKey] = "Save Mondays for the National Museum of Denmark, which opens daily 10:00–17:00, because Ny Carlsberg Glyptotek, Louisiana, Copenhagen Contemporary and Thorvaldsens Museum close on Mondays, as does Rosenborg Castle from 2 November.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Royal castles, museums, food markets and a harbourside art district, with breakfast spots, lunch and dinner tables, bakeries, coffee and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays (Charlottenborg: Tuesdays)",
+        "copy": "Ny Carlsberg Glyptotek, Louisiana, Copenhagen Contemporary and Thorvaldsens Museum are closed on Mondays, and Rosenborg Castle is closed Mondays from 2 November. Kunsthal Charlottenborg closes on Tuesdays instead."
+      },
+      {
+        "label": "Tickets",
+        "value": "Buy online to save",
+        "copy": "Rosenborg Castle saves you 10 kroner per ticket bought online and Ny Carlsberg Glyptotek 10%, while the National Museum of Denmark charges 135 DKK online against 150 DKK. Louisiana needs no time slot, and online tickets are valid for a visit within a year."
+      },
+      {
+        "label": "Free entry",
+        "value": "Wednesdays and under-18s",
+        "copy": "Thorvaldsens Museum is free for everyone on Wednesdays, Kunsthal Charlottenborg from 17.00 on Wednesdays, and Ny Carlsberg Glyptotek on the last Wednesday of each month. Under-18s enter free at the National Museum of Denmark, Louisiana and Rundetaarn."
+      },
+      {
+        "label": "Rules",
+        "value": "Age, food and access",
+        "copy": "Ruby has a minimum entry age of 21, and Rosenborg Castle allows no food or drink in the castle or Treasury. Rundetaarn has no lift and says it is not well suited to wheelchairs and pushchairs."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Build each day around one museum's opening hours, since closing days differ, and book the tasting-menu dinners well ahead.",
+      intro: [
+        "Copenhagen's historic sights are easy to combine on foot. The National Museum of Denmark at Ny Vestergade 10 opens every day from 10:00 to 17:00; adult tickets cost 150 DKK, or 135 DKK online, they stay valid for a year, and under-18s go free. Rosenborg Castle on Øster Voldgade opens Tuesday to Sunday from 10:00 to 16:00 from 2 November, and buying online saves you 10 kroner a ticket. Rundetaarn on Købmagergade stays open until 21:00 on Mondays and Tuesdays through the winter, when its observatory runs telescope evenings, and adult entry costs 60 DKK.",
+        "Several art museums close on Mondays, so plan around that. Ny Carlsberg Glyptotek on Dantes Plads opens Tuesday to Sunday, until 21:00 on Thursdays, and is free on the last Wednesday of each month; its exhibition The Power of Fashion in the Roman Empire runs until 29 March 2027. Thorvaldsens Museum is free for everyone on Wednesdays. Designmuseum Danmark on Bredgade shows Henrik Vibskov: The Exhibition until 21 February 2027, and Kunsthal Charlottenborg at Nyhavn 2, which closes on Tuesdays, has three exhibitions running to the same date.",
+        "Louisiana Museum of Modern Art at Gl. Strandvej 13 in Humlebæk needs no time slot. It opens Tuesday to Friday until 22:00 and weekends until 18:00, and you need a ticket even for its café, shop or sculpture park. Its Tracey Emin exhibition runs until 18 April 2027. Back in the city, Refshaleøen pairs Reffen's street food, open daily from 11.30, with Copenhagen Contemporary, which opens until 21:00 on Thursdays and shows Camille Henrot's Paper Planes until 31 December 2026 alongside a permanent James Turrell work.",
+        "For food, Torvehallerne on Frederiksborggade serves breakfast and bakery items from 07:00, and the GRØD porridge stall there opens at 7:00 on weekdays. Restaurant Schønnemann on Hauser Plads serves lunch daily from 11:30, runs a Christmas season from 12 November to 23 December 2026, then closes until 5 January 2027. Geranium takes bookings up to three months ahead, with a 1,500 DKK deposit per guest. For drinks, Lidkoeb on Vesterbrogade is closed on Sundays, and Ruby on Nybrogade admits guests aged 21 and over."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair the National Museum of Denmark, open daily 10:00–17:00, with Rundetaarn and Rosenborg Castle, both a short walk from Torvehallerne."
+        ],
+        [
+          "A slower morning",
+          "Start with porridge at GRØD in Torvehallerne or a pastry from Juno the Bakery on Århusgade, then the Botanical Garden, open from 8:30."
+        ],
+        [
+          "Before booking",
+          "Check Monday closures at Glyptotek, Louisiana and Copenhagen Contemporary, and book Geranium up to three months ahead with its 1,500 DKK per-guest deposit."
+        ]
+      ],
+      trust: "All 28 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();
