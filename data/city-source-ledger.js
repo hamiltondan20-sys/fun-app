@@ -5,6 +5,466 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Rio de Janeiro, Brazil": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-25",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several sites could not be read: Theatro Municipal and Garota de Ipanema (expired certificates), Museu Nacional de Belas Artes, Artesanos Bakery and Hotel Santa Teresa (DNS failures), Bar do Mineiro (connection reset) and Bar Lagoa (nothing readable); no official site was found for Padaria Nema. MAR and IMS Rio are temporarily closed per their own sites, and at Copacabana Palace, Cipriani and the Pool Bar are under renovation. Hours were not published on the pages read for Trem do Corcovado, Cristo Redentor, CCBB Rio, Parque Lage, Bar Urca, Aprazível, Churrascaria Palace, Confeitaria Colombo, Cafeína and the Copacabana Palace and Fairmont venues (except Tropìk). Several restaurants and cafés show no dated content beyond a 2026 copyright, booking links or menus. Election-day (25 October) notices at MAM Rio and CCBB were left out as short-lived. The MAR homepage contained unrelated gambling links that appear to be injected spam.",
+    "sourceUrls": [
+      "docs/content-research/rio-de-janeiro-2026-10-25.md",
+      "docs/content-research/rio-de-janeiro-2026-10-25.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Ipanema Beach",
+        "checkedOn": "2026-10-25",
+        "reason": "public beach with no operator website to check; not confirmable under the evidence rules"
+      },
+      {
+        "name": "Museu de Arte do Rio (MAR)",
+        "url": "https://museudeartedorio.org.br/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site says 'O MAR está temporariamente fechado' with no reopening date"
+      },
+      {
+        "name": "Instituto Moreira Salles (IMS Rio)",
+        "url": "https://ims.com.br/unidade/rio-de-janeiro/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site says the Rio unit is 'fechado temporariamente para reformas', no reopening date"
+      },
+      {
+        "name": "Theatro Municipal do Rio de Janeiro",
+        "url": "https://theatromunicipal.rj.gov.br/",
+        "checkedOn": "2026-10-25",
+        "reason": "fetch failed: certificate has expired"
+      },
+      {
+        "name": "Garota de Ipanema (bar)",
+        "url": "https://www.garotadeipanema.com.br/",
+        "checkedOn": "2026-10-25",
+        "reason": "fetch failed: certificate has expired"
+      },
+      {
+        "name": "Museu Nacional de Belas Artes",
+        "url": "https://mnba.gov.br/",
+        "checkedOn": "2026-10-25",
+        "reason": "fetch failed: DNS error (EAI_AGAIN)"
+      },
+      {
+        "name": "Ristorante Hotel Cipriani (Copacabana Palace)",
+        "url": "https://www.belmond.com/hotels/south-america/brazil/rio-de-janeiro/belmond-copacabana-palace/",
+        "checkedOn": "2026-10-25",
+        "reason": "operator says closed for renovation, no reopening date"
+      },
+      {
+        "name": "Pool Bar (Copacabana Palace)",
+        "url": "https://www.belmond.com/hotels/south-america/brazil/rio-de-janeiro/belmond-copacabana-palace/dining",
+        "checkedOn": "2026-10-25",
+        "reason": "operator says 'Currently under renovation'"
+      },
+      {
+        "name": "Talho Capixaba",
+        "url": "https://www.talhocapixaba.com.br/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site gives addresses but no hours, menu, booking or dated content as operating evidence"
+      },
+      {
+        "name": "Armazém do Café",
+        "url": "https://www.armazemdocafe.com.br/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site gives addresses but no hours or current content (copyright 2025)"
+      },
+      {
+        "name": "Gero Rio (Fasano Rio de Janeiro)",
+        "url": "https://www.fasano.com.br/hoteis/fasano-rio-de-janeiro/",
+        "checkedOn": "2026-10-25",
+        "reason": "hotel page gives no hours, booking or dated content for the restaurant"
+      },
+      {
+        "name": "Baretto-Londra (Fasano Rio de Janeiro)",
+        "url": "https://www.fasano.com.br/restaurantes/baretto-londra-rio-de-janeiro/",
+        "checkedOn": "2026-10-25",
+        "reason": "restaurant page returned 404; hotel page names it only as an events venue"
+      },
+      {
+        "name": "Bar Astor",
+        "url": "https://www.barastor.com.br/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site lists São Paulo branches only; no Rio branch"
+      },
+      {
+        "name": "Bar Lagoa",
+        "url": "https://www.barlagoa.com.br/",
+        "checkedOn": "2026-10-25",
+        "reason": "fetch returned nothing readable"
+      },
+      {
+        "name": "Bar do Mineiro",
+        "url": "https://www.bardomineiro.net/",
+        "checkedOn": "2026-10-25",
+        "reason": "fetch failed: connection reset (ECONNRESET)"
+      },
+      {
+        "name": "Hotel Santa Teresa (Bar dos Descasados)",
+        "url": "https://www.hotelsantateresa.com.br/",
+        "checkedOn": "2026-10-25",
+        "reason": "fetch failed: DNS not found"
+      },
+      {
+        "name": "Padaria Nema",
+        "url": "https://www.padarianema.com.br/",
+        "checkedOn": "2026-10-25",
+        "reason": "no official website found (nema.com.br belongs to an unrelated company; padarianema.com.br does not resolve)"
+      },
+      {
+        "name": "Artesanos Bakery",
+        "url": "https://www.artesanosbakery.com.br/",
+        "checkedOn": "2026-10-25",
+        "reason": "fetch failed: DNS not found"
+      },
+      {
+        "name": "a Brazilian grill or beachside seafood dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Copacabana local table",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Rio de Janeiro signature dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Copacabana walk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Ipanema public viewpoint",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market or picnic near Santa Teresa",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Christ the Redeemer",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "a golden-hour viewpoint over the bay",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Destination dinner near Santa Teresa",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset around Sugarloaf Mountain",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Copacabana dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Christ the Redeemer",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Ipanema",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Santa Teresa",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Christ the Redeemer",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Copacabana cafe or market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Ipanema route",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Ipanema at a quieter hour",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Santa Teresa local rhythm",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Copacabana",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Ipanema bakery or market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Christ the Redeemer",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "a Brazilian grill or beachside seafood lunch",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Sugarloaf Mountain",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Santa Teresa",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Evening table in Copacabana",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Copacabana",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Ipanema",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Ipanema Beach",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Copacabana",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Ipanema morning market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Christ the Redeemer",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Copacabana",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Ipanema",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Santa Teresa",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Bondinho Pão de Açúcar": {
+        "url": "https://www.bondinho.com.br/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online 'Comprar Ingressos' sales with ticket types incl. 'Acesso Rápido / Visita Guiada'; 'Copyright © 2026' and the Anna Bella Geiger 'Projeto Maravilha' exhibition listed as included with the ticket."
+      },
+      "Trem do Corcovado": {
+        "url": "https://www.tremdocorcovado.rio/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Live ticket prices 'VALOR PARA VISITA HOJE' (Adulto R$ 134,00; children up to 6 free on a guardian's lap) sold online, by phone and app; '© 2026 Trem do Corcovado'."
+      },
+      "Cristo Redentor": {
+        "url": "https://santuariocristoredentor.com.br/",
+        "sourceType": "operator's own site (Santuário Cristo Redentor)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "News dated October 2026, incl. 16/10/2026 celebration of the statue's '95 anos' and special illuminations on 18/10 and 21/10/2026."
+      },
+      "Museu do Amanhã": {
+        "url": "https://museudoamanha.org.br/pt-br/visite",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Visit page gives current hours; homepage lists a 10th-anniversary exhibition, the new outdoor 'Jardim de Esculturas' and an event dated 2026-10-31."
+      },
+      "Real Gabinete Português de Leitura": {
+        "url": "https://www.realgabinete.com.br/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "'horário atual' published; exhibition 'Convergência Lusíada: 50 anos da revista do RGPL' 'está em cartaz'; '12º Colóquio do PPLB (2026)' listed."
+      },
+      "Parque Lage (Escola de Artes Visuais)": {
+        "url": "https://eavparquelage.rj.gov.br/",
+        "sourceType": "official public operator (Rio de Janeiro state, EAV Parque Lage)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "2026 programme incl. Cine Lage on 30 October and the book launch 'Rogério Sganzerla: cinemáticas de invenção' on 4 November 2026."
+      },
+      "MAM Rio": {
+        "url": "https://mam.rio/visite/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibitions 'Coleções de arte', 'Carnaval como método' and an Andréa Hygino installation; 'programação completa de outubro' promoted. 'O ingresso no MAM Rio é gratuito'."
+      },
+      "AquaRio": {
+        "url": "https://www.aquariomarinhodorio.com.br/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online ticketing with a discount for booking online; ticket and security policy PDFs uploaded August 2026."
+      },
+      "Jardim Botânico do Rio de Janeiro": {
+        "url": "https://www.gov.br/jbrj/pt-br/assuntos/visitacao/horarios-e-ingressos",
+        "sourceType": "official public operator (Instituto de Pesquisas Jardim Botânico do Rio de Janeiro, federal government)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Hours page updated 30/07/2026 and tickets sold in advance via jbrj.eleventickets.com; homepage notices for Semana Nacional de Ciência e Tecnologia 2026."
+      },
+      "Parque Nacional da Tijuca": {
+        "url": "https://parquenacionaldatijuca.rio/",
+        "sourceType": "official public operator (Parque Nacional da Tijuca / ICMBio)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Notices dated August 2026, including a closure and 'Reabertura do Parque Nacional da Tijuca' on 7 Aug 2026."
+      },
+      "CCBB Rio de Janeiro": {
+        "url": "https://ccbb.com.br/rio-de-janeiro/",
+        "sourceType": "operator's own site (Centro Cultural Banco do Brasil)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Exhibitions 'Amazônicas – Poéticas Femininas' (02/09 to 16/11) and 'Palavras em Cena: O Cinema que Veio dos Livros' (until 31/12), with tickets via ingressosccbb.com.br."
+      },
+      "CADEG": {
+        "url": "https://www.cadeg.com.br/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Posts dated 2026 (e.g. 28/05/2026 Dia dos Namorados campaign, 06/05/2026 Banco de Alimentos project); shops in about 20 categories incl. restaurants, bars and cafeterias."
+      },
+      "Bar Urca": {
+        "url": "https://www.barurca.com.br/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Menus section and reservation form on the site; dishes named include 'Bolinhos de bacalhau', 'Moqueca' and 'Camarão na moranga'. No dated content."
+      },
+      "Aprazível": {
+        "url": "https://www.aprazivel.com.br/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online reservations via aprazivel.meitre.com and a menu page; '© 2026. Aprazível'. Cuisine described as 'trivial, saborosa, orgânica'."
+      },
+      "Lasai": {
+        "url": "https://www.lasai.com.br/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online booking via Tock; 'Só atendemos mediante reserva'; tasting menu only. No dated content."
+      },
+      "Oro": {
+        "url": "https://www.ororestaurante.com.br/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "'Reservas pela Meitre ou pelos telefones da casa'; two menus, 'Criatividade' (changes daily) and 'Afetividade'; '© 2026'."
+      },
+      "Churrascaria Palace": {
+        "url": "https://www.churrascariapalace.com.br/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Marks its 75th anniversary with a commemorative wine; year-end party menus and a 'Reserve Agora!' booking button; rodízio of about 40 meats plus buffet."
+      },
+      "Pérgula (Belmond Copacabana Palace)": {
+        "url": "https://www.belmond.com/hotels/south-america/brazil/rio-de-janeiro/belmond-copacabana-palace/dining",
+        "sourceType": "operator's own site (Belmond)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Listed as an open restaurant serving breakfast, lunch and dinner, with Sunday Brunch and Feijoada experiences; 'Copyright Belmond Management Limited 2026'."
+      },
+      "MEE (Belmond Copacabana Palace)": {
+        "url": "https://www.belmond.com/hotels/south-america/brazil/rio-de-janeiro/belmond-copacabana-palace/dining",
+        "sourceType": "operator's own site (Belmond)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Listed as a current 'Michelin-starred pan-Asian restaurant' on the 2026 dining page, alongside renovation notices for other venues that do not include MEE."
+      },
+      "Spirit Copa Bar (Fairmont Rio de Janeiro Copacabana)": {
+        "url": "https://www.fairmont.com/en/hotels/rio-de-janeiro/fairmont-rio-de-janeiro-copacabana/dining.html",
+        "sourceType": "operator's own site (Fairmont)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Dining page lists 'classic drinks and house mixology' and a Sunday feijoada with live samba; the site carries offers bookable from 15 October 2026 and New Year's Eve 2027 dinner."
+      },
+      "Tropìk (Fairmont Rio de Janeiro Copacabana)": {
+        "url": "https://www.fairmont.com/en/hotels/rio-de-janeiro/fairmont-rio-de-janeiro-copacabana/dining.html",
+        "sourceType": "operator's own site (Fairmont)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Mediterranean and Greek cuisine at Posto 6 led by chef Jérôme Dardillac; open 'from 8am to midnight'; site has offers bookable from 15 October 2026."
+      },
+      "Coa Café & Co (Fairmont Rio de Janeiro Copacabana)": {
+        "url": "https://www.fairmont.com/en/hotels/rio-de-janeiro/fairmont-rio-de-janeiro-copacabana/dining.html",
+        "sourceType": "operator's own site (Fairmont)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Listed on the dining page serving organic coffees from Camocim Farm and an afternoon tea with pastries; site has offers bookable from 15 October 2026."
+      },
+      "Academia da Cachaça (Leblon)": {
+        "url": "https://www.academiadacachaca.com.br/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published branch hours, delivery hours and per-branch menu PDFs; caipirinhas described as 'incomparáveis', feijoada served daily; '© Academia da Cachaça 2026'."
+      },
+      "Confeitaria Colombo (Rua Gonçalves Dias)": {
+        "url": "https://www.confeitariacolombo.com.br/contato/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Homepage offers 'Reservar uma Mesa' online booking and links the current menu: 'Conheça o cardápio da Colombo Matriz'. No dated content."
+      },
+      "La Bicyclette (Jardim Botânico)": {
+        "url": "https://www.labicyclette.com.br/nossas-lojas",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Store page publishes current hours for three branches; describes itself as 'Padaria artesanal, mercearia e bistrô'. No dated content."
+      },
+      "Curto Café (Centro)": {
+        "url": "https://curto.cafe/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published weekday hours and '© 2026 Curto Café'."
+      },
+      "Cafeína (Copacabana)": {
+        "url": "https://cafeinacafe.com.br/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "In-store menu PDF dated September 2026 and breakfast baskets on sale (e.g. 'Cesta Elegance: R$ 305,00')."
+      }
+    }
+  },
   "Vancouver, Canada": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-25",

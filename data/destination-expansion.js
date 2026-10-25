@@ -3892,4 +3892,112 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Rio de Janeiro, Brazil: source review of 2026-10-25 (docs/content-research/rio-de-janeiro-2026-10-25.md).
+  {
+    const cityKey = "Rio de Janeiro, Brazil";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Cristo Redentor","Bondinho Pão de Açúcar","Museu do Amanhã","Jardim Botânico do Rio de Janeiro"],
+      bestFirstTimers: ["Trem do Corcovado","Bondinho Pão de Açúcar","Museu do Amanhã","Real Gabinete Português de Leitura"],
+      bestRestaurants: ["Oro","Lasai","Aprazível","Churrascaria Palace"],
+      bestBudget: ["MAM Rio","Parque Nacional da Tijuca","CADEG","Real Gabinete Português de Leitura"],
+      bestLuxury: ["MEE (Belmond Copacabana Palace)","Lasai","Oro","Pérgula (Belmond Copacabana Palace)"],
+      bestCouples: ["Bondinho Pão de Açúcar","Aprazível","Parque Lage (Escola de Artes Visuais)","Spirit Copa Bar (Fairmont Rio de Janeiro Copacabana)"],
+      bestKids: ["AquaRio","Museu do Amanhã","Jardim Botânico do Rio de Janeiro","Trem do Corcovado"],
+      bestSolo: ["CCBB Rio de Janeiro","MAM Rio","Curto Café (Centro)","Real Gabinete Português de Leitura"],
+      bestUnique: ["Real Gabinete Português de Leitura","CADEG","Parque Lage (Escola de Artes Visuais)","Parque Nacional da Tijuca"],
+      bestBreakfast: ["Pérgula (Belmond Copacabana Palace)","La Bicyclette (Jardim Botânico)","Cafeína (Copacabana)","Tropìk (Fairmont Rio de Janeiro Copacabana)"],
+      bestLunch: ["Bar Urca","Confeitaria Colombo (Rua Gonçalves Dias)","Academia da Cachaça (Leblon)","Churrascaria Palace"],
+      bestDinner: ["Oro","Lasai","Aprazível","Churrascaria Palace"],
+      bestCocktails: ["Spirit Copa Bar (Fairmont Rio de Janeiro Copacabana)","Academia da Cachaça (Leblon)","Bar Urca"],
+      bestBakeries: ["Confeitaria Colombo (Rua Gonçalves Dias)","La Bicyclette (Jardim Botânico)"],
+      bestCoffee: ["Curto Café (Centro)","Cafeína (Copacabana)","Coa Café & Co (Fairmont Rio de Janeiro Copacabana)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Cristo Redentor": "Cristo Redentor Parque Nacional da Tijuca Alto da Boa Vista Rio de Janeiro",
+      "Bondinho Pão de Açúcar": "Bondinho Pão de Açúcar Av. Pasteur 520 Urca Rio de Janeiro",
+      "Museu do Amanhã": "Museu do Amanhã Praça Mauá 1 Centro Rio de Janeiro",
+      "Jardim Botânico do Rio de Janeiro": "Jardim Botânico Rua Jardim Botânico 1008 Rio de Janeiro",
+      "Trem do Corcovado": "Trem do Corcovado Rua Cosme Velho 513 Rio de Janeiro",
+      "Real Gabinete Português de Leitura": "Real Gabinete Português de Leitura Rua Luís de Camões 30 Rio de Janeiro",
+      "Oro": "Oro Rua General San Martin 889 Leblon Rio de Janeiro",
+      "Lasai": "Lasai Largo dos Leões 35 Humaitá Rio de Janeiro",
+      "Aprazível": "Aprazível Rua Aprazível 62 Santa Teresa Rio de Janeiro",
+      "Churrascaria Palace": "Churrascaria Palace Rua Rodolfo Dantas 16 Copacabana Rio de Janeiro",
+      "MAM Rio": "MAM Rio Av. Infante Dom Henrique 85 Rio de Janeiro",
+      "Parque Nacional da Tijuca": "Parque Nacional da Tijuca Estrada da Cascatinha 850 Rio de Janeiro",
+      "CADEG": "CADEG Rua Capitão Félix 110 Benfica Rio de Janeiro",
+      "MEE (Belmond Copacabana Palace)": "MEE Copacabana Palace Avenida Atlântica 1702 Rio de Janeiro",
+      "Pérgula (Belmond Copacabana Palace)": "Pérgula Copacabana Palace Avenida Atlântica 1702 Rio de Janeiro",
+      "Parque Lage (Escola de Artes Visuais)": "Parque Lage Rua Jardim Botânico 414 Rio de Janeiro",
+      "Spirit Copa Bar (Fairmont Rio de Janeiro Copacabana)": "Spirit Copa Bar Fairmont Avenida Atlântica 4240 Rio de Janeiro",
+      "AquaRio": "AquaRio Praça Muhammad Ali Gamboa Rio de Janeiro",
+      "CCBB Rio de Janeiro": "CCBB Rua Primeiro de Março 66 Rio de Janeiro",
+      "Curto Café (Centro)": "Curto Café Rua da Assembleia 10 Centro Rio de Janeiro",
+      "La Bicyclette (Jardim Botânico)": "La Bicyclette Rua Pacheco Leão 320 Rio de Janeiro",
+      "Cafeína (Copacabana)": "Cafeína Rua Barata Ribeiro 507 Copacabana Rio de Janeiro",
+      "Tropìk (Fairmont Rio de Janeiro Copacabana)": "Tropik Fairmont Avenida Atlântica 4240 Rio de Janeiro",
+      "Bar Urca": "Bar Urca Rua Candido Gaffree 205 Rio de Janeiro",
+      "Confeitaria Colombo (Rua Gonçalves Dias)": "Confeitaria Colombo Rua Gonçalves Dias 32 Rio de Janeiro",
+      "Academia da Cachaça (Leblon)": "Academia da Cachaça Rua Conde de Bernadotte 26 Leblon Rio de Janeiro",
+      "Coa Café & Co (Fairmont Rio de Janeiro Copacabana)": "Coa Café Fairmont Avenida Atlântica 4240 Rio de Janeiro"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Rio de Janeiro" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Cable car and rack railway, museums, parks and a wholesale market, with breakfast spots, tasting-menu dinners, cafés, a historic confeitaria and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Cristo Redentor","Bondinho Pão de Açúcar","Museu do Amanhã","Jardim Botânico do Rio de Janeiro"];
+    cityGuide.tip = "Avoid Wednesday mornings for Museu do Amanhã and the Jardim Botânico: the museum publishes Thursday-to-Tuesday hours, the garden's museum is closed on Wednesdays and its arboretum opens only at 11h that day.";
+    data.destinationFacts[cityKey] = "Avoid Wednesday mornings for Museu do Amanhã and the Jardim Botânico: the museum publishes Thursday-to-Tuesday hours, the garden's museum is closed on Wednesdays and its arboretum opens only at 11h that day.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Cable car and rack railway, museums, parks and a wholesale market, with breakfast spots, tasting-menu dinners, cafés, a historic confeitaria and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Wednesdays and Sun–Mon",
+        "copy": "Museu do Amanhã publishes Thursday-to-Tuesday hours and the Museu do Jardim Botânico is closed on Wednesdays. Oro is closed on Sunday and Monday, and La Bicyclette's Leblon branch closes on Mondays."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Buy ahead online",
+        "copy": "The Jardim Botânico asks you to buy tickets in advance through its ticketing site, and AquaRio offers a discount for online booking. Trem do Corcovado sells tickets online, by phone and through its app."
+      },
+      {
+        "label": "Reservations",
+        "value": "Book dinners",
+        "copy": "Lasai serves only by reservation ('Só atendemos mediante reserva'), with seatings at 20:00 Tuesday to Friday. Oro takes bookings through Meitre or by phone."
+      },
+      {
+        "label": "Visitor rules",
+        "value": "Bags and children",
+        "copy": "At MAM Rio, items larger than 45 cm × 30 cm cannot enter the galleries, children under 12 must be with an adult, and food and drink stay out of exhibition spaces."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Plan your museum days around Wednesday closures, book Corcovado, Sugarloaf and dinner tables online, and save free MAM Rio for a Wednesday-to-Sunday slot.",
+      intro: [
+        "You can reach Rio's two classic viewpoints with tickets bought online. Trem do Corcovado runs from Rua Cosme Velho, 513 and sells tickets through its site, app and phone line; children up to 6 ride free on a guardian's lap. The Santuário Cristo Redentor marked the statue's 95th anniversary in October 2026. Bondinho Pão de Açúcar leaves from Av. Pasteur, 520 in Urca, runs from 08:30 on weekdays and 07:30 at weekends, and stops boarding at 19:30.",
+        "Museu do Amanhã, on Praça Mauá, opens Thursday to Tuesday from 10h to 18h and is marking its tenth anniversary with an exhibition and a new outdoor sculpture garden. Nearby, CCBB Rio shows 'Amazônicas – Poéticas Femininas' until 16 November and 'Palavras em Cena' until 31 December. MAM Rio in Parque do Flamengo is free and open Wednesday to Sunday. You can also see the reading room of the Real Gabinete Português de Leitura, which opens on weekdays from 10h to 17h.",
+        "For greener days, the Jardim Botânico's arboretum opens Thursday to Tuesday from 8h, but only from 11h on Wednesdays, when its museum is closed; you should buy tickets in advance. Parque Lage, at Rua Jardim Botânico, 414, runs a busy arts programme listed on its own site. Parque Nacional da Tijuca opens daily from 8h to 17h. If you are travelling with children, AquaRio in Gamboa opens every day from 9h, with last entry at 16h.",
+        "For dinner, Lasai in Humaitá serves a single tasting menu and takes reservations only. Oro in Leblon offers 'Criatividade' and 'Afetividade' menus and is closed on Sundays and Mondays. Aprazível in Santa Teresa takes online bookings, and Churrascaria Palace in Copacabana is celebrating 75 years of rodízio. For drinks, try the house mixology at Spirit Copa Bar or the caipirinhas at Academia da Cachaça in Leblon. For a slower morning, La Bicyclette opens at 8h, and Curto Café pours coffee in Centro on weekdays."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair Trem do Corcovado up to Cristo Redentor with an evening Bondinho Pão de Açúcar ride, remembering last boarding is at 19:30."
+        ],
+        [
+          "A slower morning",
+          "Start with pastries at La Bicyclette in Jardim Botânico from 8h, then walk the Jardim Botânico arboretum (from 11h on Wednesdays)."
+        ],
+        [
+          "Before booking",
+          "Reserve Lasai and Oro ahead, buy Jardim Botânico and AquaRio tickets online, and avoid Wednesdays for Museu do Amanhã."
+        ]
+      ],
+      trust: "All 27 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

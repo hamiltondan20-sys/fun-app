@@ -1,0 +1,716 @@
+{
+  "city": "Rio de Janeiro, Brazil",
+  "checkedOn": "2026-10-25",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Bondinho Pão de Açúcar",
+      "kind": "scenic",
+      "url": "https://www.bondinho.com.br/",
+      "sourceType": "operator's own site",
+      "address": "Av. Pasteur, 520 - Urca - Rio de Janeiro - RJ",
+      "operatingEvidence": "Online 'Comprar Ingressos' sales with ticket types incl. 'Acesso Rápido / Visita Guiada'; 'Copyright © 2026' and the Anna Bella Geiger 'Projeto Maravilha' exhibition listed as included with the ticket.",
+      "hours": "Cable car: Mon–Fri 08:30–21:00, Sat–Sun 07:30–21:00; last boarding 19:30",
+      "confidence": "high"
+    },
+    {
+      "name": "Trem do Corcovado",
+      "kind": "scenic",
+      "url": "https://www.tremdocorcovado.rio/",
+      "sourceType": "operator's own site",
+      "address": "Rua Cosme Velho, 513, Cosme Velho, Rio de Janeiro - RJ",
+      "operatingEvidence": "Live ticket prices 'VALOR PARA VISITA HOJE' (Adulto R$ 134,00; children up to 6 free on a guardian's lap) sold online, by phone and app; '© 2026 Trem do Corcovado'.",
+      "hours": "not published (only phone/WhatsApp support hours)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Cristo Redentor",
+      "kind": "landmark",
+      "url": "https://santuariocristoredentor.com.br/",
+      "sourceType": "operator's own site (Santuário Cristo Redentor)",
+      "address": "Parque Nacional da Tijuca, Alto da Boa Vista, Rio de Janeiro - RJ",
+      "operatingEvidence": "News dated October 2026, incl. 16/10/2026 celebration of the statue's '95 anos' and special illuminations on 18/10 and 21/10/2026.",
+      "hours": "not published on the page read",
+      "confidence": "medium"
+    },
+    {
+      "name": "Museu do Amanhã",
+      "kind": "museum",
+      "url": "https://museudoamanha.org.br/pt-br/visite",
+      "sourceType": "operator's own site",
+      "address": "Praça Mauá, 1 - Centro, Rio de Janeiro, RJ, CEP 20081-240",
+      "operatingEvidence": "Visit page gives current hours; homepage lists a 10th-anniversary exhibition, the new outdoor 'Jardim de Esculturas' and an event dated 2026-10-31.",
+      "hours": "'Quinta a terça das 10h às 18h' (last entry 17h), including holidays; Wednesday not listed",
+      "confidence": "high"
+    },
+    {
+      "name": "Real Gabinete Português de Leitura",
+      "kind": "landmark",
+      "url": "https://www.realgabinete.com.br/",
+      "sourceType": "operator's own site",
+      "address": "Rua Luís de Camões, 30, Centro, Rio de Janeiro - RJ, CEP 20051-020",
+      "operatingEvidence": "'horário atual' published; exhibition 'Convergência Lusíada: 50 anos da revista do RGPL' 'está em cartaz'; '12º Colóquio do PPLB (2026)' listed.",
+      "hours": "'Segunda a sexta-feira: 10h00 - 17h00'; no weekend hours given",
+      "confidence": "high"
+    },
+    {
+      "name": "Parque Lage (Escola de Artes Visuais)",
+      "kind": "park",
+      "url": "https://eavparquelage.rj.gov.br/",
+      "sourceType": "official public operator (Rio de Janeiro state, EAV Parque Lage)",
+      "address": "Rua Jardim Botânico, 414, Jardim Botânico, Rio de Janeiro, RJ",
+      "operatingEvidence": "2026 programme incl. Cine Lage on 30 October and the book launch 'Rogério Sganzerla: cinemáticas de invenção' on 4 November 2026.",
+      "hours": "not published",
+      "confidence": "high"
+    },
+    {
+      "name": "MAM Rio",
+      "kind": "museum",
+      "url": "https://mam.rio/visite/",
+      "sourceType": "operator's own site",
+      "address": "Av. Infante Dom Henrique, 85, Parque do Flamengo, Rio de Janeiro",
+      "operatingEvidence": "Current exhibitions 'Coleções de arte', 'Carnaval como método' and an Andréa Hygino installation; 'programação completa de outubro' promoted. 'O ingresso no MAM Rio é gratuito'.",
+      "hours": "Wed–Sat 10h–18h; Sun 10h–11h reserved for neurodivergent/hypersensitive visitors, 11h–18h general public; last entry 17h30; Mon–Tue not listed",
+      "confidence": "high"
+    },
+    {
+      "name": "AquaRio",
+      "kind": "museum",
+      "url": "https://www.aquariomarinhodorio.com.br/",
+      "sourceType": "operator's own site",
+      "address": "Praça Muhammad Ali, Gambôa, 20220360, Rio de Janeiro, RJ",
+      "operatingEvidence": "Online ticketing with a discount for booking online; ticket and security policy PDFs uploaded August 2026.",
+      "hours": "'09h às 17h (Última entrada às 16h)', 'TODOS OS DIAS'",
+      "confidence": "high"
+    },
+    {
+      "name": "Jardim Botânico do Rio de Janeiro",
+      "kind": "park",
+      "url": "https://www.gov.br/jbrj/pt-br/assuntos/visitacao/horarios-e-ingressos",
+      "sourceType": "official public operator (Instituto de Pesquisas Jardim Botânico do Rio de Janeiro, federal government)",
+      "address": "'Rua Jardim Botânico, 1008 - acesso com bilheterias, aberto diariamente'",
+      "operatingEvidence": "Hours page updated 30/07/2026 and tickets sold in advance via jbrj.eleventickets.com; homepage notices for Semana Nacional de Ciência e Tecnologia 2026.",
+      "hours": "Arboretum Thu–Tue 8h–17h, Wed 11h–17h; Museu do Jardim Botânico Thu–Tue 10h–18h, 'fechado às quartas-feiras'; closed 25 Dec and 1 Jan",
+      "confidence": "high"
+    },
+    {
+      "name": "Parque Nacional da Tijuca",
+      "kind": "park",
+      "url": "https://parquenacionaldatijuca.rio/",
+      "sourceType": "official public operator (Parque Nacional da Tijuca / ICMBio)",
+      "address": "Sede Estrada da Cascatinha: 'Estrada da Cascatinha, 850 | Alto da Boa Vista'; Sede Paineiras: 'Estrada das Paineiras, S/N | Santa Teresa'",
+      "operatingEvidence": "Notices dated August 2026, including a closure and 'Reabertura do Parque Nacional da Tijuca' on 7 Aug 2026.",
+      "hours": "'Diariamente das 8h às 17h'",
+      "confidence": "medium"
+    },
+    {
+      "name": "CCBB Rio de Janeiro",
+      "kind": "museum",
+      "url": "https://ccbb.com.br/rio-de-janeiro/",
+      "sourceType": "operator's own site (Centro Cultural Banco do Brasil)",
+      "address": "Rua Primeiro de Março, 66, Rio de Janeiro",
+      "operatingEvidence": "Exhibitions 'Amazônicas – Poéticas Femininas' (02/09 to 16/11) and 'Palavras em Cena: O Cinema que Veio dos Livros' (until 31/12), with tickets via ingressosccbb.com.br.",
+      "hours": "not published on the page read",
+      "confidence": "high"
+    },
+    {
+      "name": "CADEG",
+      "kind": "market",
+      "url": "https://www.cadeg.com.br/",
+      "sourceType": "operator's own site",
+      "address": "'Rua Capitão Félix, nº 110', Benfica, Rio de Janeiro - RJ, CEP 20920-310",
+      "operatingEvidence": "Posts dated 2026 (e.g. 28/05/2026 Dia dos Namorados campaign, 06/05/2026 Banco de Alimentos project); shops in about 20 categories incl. restaurants, bars and cafeterias.",
+      "hours": "Flower market Mon–Sat 4h–12h (Thu from 2h); individual shops set their own hours (not listed)",
+      "confidence": "high"
+    },
+    {
+      "name": "Bar Urca",
+      "kind": "bar",
+      "url": "https://www.barurca.com.br/",
+      "sourceType": "operator's own site",
+      "address": "Rua Candido Gaffree, 205 - loja, Urca, Rio de Janeiro - RJ",
+      "operatingEvidence": "Menus section and reservation form on the site; dishes named include 'Bolinhos de bacalhau', 'Moqueca' and 'Camarão na moranga'. No dated content.",
+      "hours": "not published ('Disponível em nosso instagram')",
+      "confidence": "medium"
+    },
+    {
+      "name": "Aprazível",
+      "kind": "meal",
+      "url": "https://www.aprazivel.com.br/",
+      "sourceType": "operator's own site",
+      "address": "Rua Aprazivel 62, Santa Teresa, Rio de Janeiro (RJ)",
+      "operatingEvidence": "Online reservations via aprazivel.meitre.com and a menu page; '© 2026. Aprazível'. Cuisine described as 'trivial, saborosa, orgânica'.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Lasai",
+      "kind": "meal",
+      "url": "https://www.lasai.com.br/",
+      "sourceType": "operator's own site",
+      "address": "Largo dos Leões 35, Humaitá, Rio de Janeiro / RJ, 22260-210",
+      "operatingEvidence": "Online booking via Tock; 'Só atendemos mediante reserva'; tasting menu only. No dated content.",
+      "hours": "Tue–Fri seating 20:00; Sat 19:00 and 22:30",
+      "confidence": "medium"
+    },
+    {
+      "name": "Oro",
+      "kind": "meal",
+      "url": "https://www.ororestaurante.com.br/",
+      "sourceType": "operator's own site",
+      "address": "Rua General San Martin, 889, Leblon, Rio de Janeiro, RJ",
+      "operatingEvidence": "'Reservas pela Meitre ou pelos telefones da casa'; two menus, 'Criatividade' (changes daily) and 'Afetividade'; '© 2026'.",
+      "hours": "Tue–Fri 19h–23h; Sat 13h–15h and 19h–23h; Sun and Mon closed",
+      "confidence": "high"
+    },
+    {
+      "name": "Churrascaria Palace",
+      "kind": "meal",
+      "url": "https://www.churrascariapalace.com.br/",
+      "sourceType": "operator's own site",
+      "address": "Rua Rodolfo Dantas, 16, Copacabana, Rio de Janeiro",
+      "operatingEvidence": "Marks its 75th anniversary with a commemorative wine; year-end party menus and a 'Reserve Agora!' booking button; rodízio of about 40 meats plus buffet.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Pérgula (Belmond Copacabana Palace)",
+      "kind": "meal",
+      "url": "https://www.belmond.com/hotels/south-america/brazil/rio-de-janeiro/belmond-copacabana-palace/dining",
+      "sourceType": "operator's own site (Belmond)",
+      "address": "Avenida Atlântica 1702, Rio de Janeiro, CEP 22021 001",
+      "operatingEvidence": "Listed as an open restaurant serving breakfast, lunch and dinner, with Sunday Brunch and Feijoada experiences; 'Copyright Belmond Management Limited 2026'.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "MEE (Belmond Copacabana Palace)",
+      "kind": "meal",
+      "url": "https://www.belmond.com/hotels/south-america/brazil/rio-de-janeiro/belmond-copacabana-palace/dining",
+      "sourceType": "operator's own site (Belmond)",
+      "address": "Avenida Atlântica 1702, Rio de Janeiro, CEP 22021 001",
+      "operatingEvidence": "Listed as a current 'Michelin-starred pan-Asian restaurant' on the 2026 dining page, alongside renovation notices for other venues that do not include MEE.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Spirit Copa Bar (Fairmont Rio de Janeiro Copacabana)",
+      "kind": "bar",
+      "url": "https://www.fairmont.com/en/hotels/rio-de-janeiro/fairmont-rio-de-janeiro-copacabana/dining.html",
+      "sourceType": "operator's own site (Fairmont)",
+      "address": "Av. Atlântica, 4240, Copacabana, Rio de Janeiro, RJ, 22070-002",
+      "operatingEvidence": "Dining page lists 'classic drinks and house mixology' and a Sunday feijoada with live samba; the site carries offers bookable from 15 October 2026 and New Year's Eve 2027 dinner.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Tropìk (Fairmont Rio de Janeiro Copacabana)",
+      "kind": "meal",
+      "url": "https://www.fairmont.com/en/hotels/rio-de-janeiro/fairmont-rio-de-janeiro-copacabana/dining.html",
+      "sourceType": "operator's own site (Fairmont)",
+      "address": "Av. Atlântica, 4240, Copacabana, Rio de Janeiro, RJ, 22070-002",
+      "operatingEvidence": "Mediterranean and Greek cuisine at Posto 6 led by chef Jérôme Dardillac; open 'from 8am to midnight'; site has offers bookable from 15 October 2026.",
+      "hours": "'from 8am to midnight'",
+      "confidence": "medium"
+    },
+    {
+      "name": "Coa Café & Co (Fairmont Rio de Janeiro Copacabana)",
+      "kind": "cafe",
+      "url": "https://www.fairmont.com/en/hotels/rio-de-janeiro/fairmont-rio-de-janeiro-copacabana/dining.html",
+      "sourceType": "operator's own site (Fairmont)",
+      "address": "Av. Atlântica, 4240, Copacabana, Rio de Janeiro, RJ, 22070-002",
+      "operatingEvidence": "Listed on the dining page serving organic coffees from Camocim Farm and an afternoon tea with pastries; site has offers bookable from 15 October 2026.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Academia da Cachaça (Leblon)",
+      "kind": "bar",
+      "url": "https://www.academiadacachaca.com.br/",
+      "sourceType": "operator's own site",
+      "address": "Rua Conde de Bernadotte, 26, Leblon, Rio de Janeiro",
+      "operatingEvidence": "Published branch hours, delivery hours and per-branch menu PDFs; caipirinhas described as 'incomparáveis', feijoada served daily; '© Academia da Cachaça 2026'.",
+      "hours": "Mon–Thu 12h–00h; Fri–Sat 12h–01h; Sun 12h–22h",
+      "confidence": "high"
+    },
+    {
+      "name": "Confeitaria Colombo (Rua Gonçalves Dias)",
+      "kind": "bakery",
+      "url": "https://www.confeitariacolombo.com.br/contato/",
+      "sourceType": "operator's own site",
+      "address": "Rua Gonçalves Dias 32 - Centro - Rio de Janeiro - RJ",
+      "operatingEvidence": "Homepage offers 'Reservar uma Mesa' online booking and links the current menu: 'Conheça o cardápio da Colombo Matriz'. No dated content.",
+      "hours": "not published on the pages read",
+      "confidence": "medium"
+    },
+    {
+      "name": "La Bicyclette (Jardim Botânico)",
+      "kind": "bakery",
+      "url": "https://www.labicyclette.com.br/nossas-lojas",
+      "sourceType": "operator's own site",
+      "address": "Rua Pacheco Leão, 320, Loja D, Jardim Botânico, Rio de Janeiro",
+      "operatingEvidence": "Store page publishes current hours for three branches; describes itself as 'Padaria artesanal, mercearia e bistrô'. No dated content.",
+      "hours": "'Seg-Sex: 8h as 21h | Sab, Dom e feriados: 8h as 20h'",
+      "confidence": "medium"
+    },
+    {
+      "name": "Curto Café (Centro)",
+      "kind": "cafe",
+      "url": "https://curto.cafe/",
+      "sourceType": "operator's own site",
+      "address": "'R. da Assembléia, 10 — Térreo Edifício Cândido Mendes', Centro, Rio de Janeiro, RJ",
+      "operatingEvidence": "Published weekday hours and '© 2026 Curto Café'.",
+      "hours": "'Segunda a Sexta: 8h — 19h'; weekend not listed",
+      "confidence": "medium"
+    },
+    {
+      "name": "Cafeína (Copacabana)",
+      "kind": "cafe",
+      "url": "https://cafeinacafe.com.br/",
+      "sourceType": "operator's own site",
+      "address": "Rua Barata Ribeiro, 507, Copacabana, Rio de Janeiro",
+      "operatingEvidence": "In-store menu PDF dated September 2026 and breakfast baskets on sale (e.g. 'Cesta Elegance: R$ 305,00').",
+      "hours": "not published",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Ipanema Beach",
+      "reason": "public beach with no operator website to check; not confirmable under the evidence rules",
+      "url": ""
+    },
+    {
+      "name": "Museu de Arte do Rio (MAR)",
+      "reason": "official site says 'O MAR está temporariamente fechado' with no reopening date",
+      "url": "https://museudeartedorio.org.br/"
+    },
+    {
+      "name": "Instituto Moreira Salles (IMS Rio)",
+      "reason": "official site says the Rio unit is 'fechado temporariamente para reformas', no reopening date",
+      "url": "https://ims.com.br/unidade/rio-de-janeiro/"
+    },
+    {
+      "name": "Theatro Municipal do Rio de Janeiro",
+      "reason": "fetch failed: certificate has expired",
+      "url": "https://theatromunicipal.rj.gov.br/"
+    },
+    {
+      "name": "Garota de Ipanema (bar)",
+      "reason": "fetch failed: certificate has expired",
+      "url": "https://www.garotadeipanema.com.br/"
+    },
+    {
+      "name": "Museu Nacional de Belas Artes",
+      "reason": "fetch failed: DNS error (EAI_AGAIN)",
+      "url": "https://mnba.gov.br/"
+    },
+    {
+      "name": "Ristorante Hotel Cipriani (Copacabana Palace)",
+      "reason": "operator says closed for renovation, no reopening date",
+      "url": "https://www.belmond.com/hotels/south-america/brazil/rio-de-janeiro/belmond-copacabana-palace/"
+    },
+    {
+      "name": "Pool Bar (Copacabana Palace)",
+      "reason": "operator says 'Currently under renovation'",
+      "url": "https://www.belmond.com/hotels/south-america/brazil/rio-de-janeiro/belmond-copacabana-palace/dining"
+    },
+    {
+      "name": "Talho Capixaba",
+      "reason": "official site gives addresses but no hours, menu, booking or dated content as operating evidence",
+      "url": "https://www.talhocapixaba.com.br/"
+    },
+    {
+      "name": "Armazém do Café",
+      "reason": "official site gives addresses but no hours or current content (copyright 2025)",
+      "url": "https://www.armazemdocafe.com.br/"
+    },
+    {
+      "name": "Gero Rio (Fasano Rio de Janeiro)",
+      "reason": "hotel page gives no hours, booking or dated content for the restaurant",
+      "url": "https://www.fasano.com.br/hoteis/fasano-rio-de-janeiro/"
+    },
+    {
+      "name": "Baretto-Londra (Fasano Rio de Janeiro)",
+      "reason": "restaurant page returned 404; hotel page names it only as an events venue",
+      "url": "https://www.fasano.com.br/restaurantes/baretto-londra-rio-de-janeiro/"
+    },
+    {
+      "name": "Bar Astor",
+      "reason": "official site lists São Paulo branches only; no Rio branch",
+      "url": "https://www.barastor.com.br/"
+    },
+    {
+      "name": "Bar Lagoa",
+      "reason": "fetch returned nothing readable",
+      "url": "https://www.barlagoa.com.br/"
+    },
+    {
+      "name": "Bar do Mineiro",
+      "reason": "fetch failed: connection reset (ECONNRESET)",
+      "url": "https://www.bardomineiro.net/"
+    },
+    {
+      "name": "Hotel Santa Teresa (Bar dos Descasados)",
+      "reason": "fetch failed: DNS not found",
+      "url": "https://www.hotelsantateresa.com.br/"
+    },
+    {
+      "name": "Padaria Nema",
+      "reason": "no official website found (nema.com.br belongs to an unrelated company; padarianema.com.br does not resolve)",
+      "url": "https://www.padarianema.com.br/"
+    },
+    {
+      "name": "Artesanos Bakery",
+      "reason": "fetch failed: DNS not found",
+      "url": "https://www.artesanosbakery.com.br/"
+    },
+    {
+      "name": "a Brazilian grill or beachside seafood dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Copacabana local table",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Rio de Janeiro signature dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Copacabana walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Ipanema public viewpoint",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market or picnic near Santa Teresa",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Christ the Redeemer",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "a golden-hour viewpoint over the bay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Destination dinner near Santa Teresa",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset around Sugarloaf Mountain",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Copacabana dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Christ the Redeemer",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Ipanema",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Santa Teresa",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Christ the Redeemer",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Copacabana cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Ipanema route",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Ipanema at a quieter hour",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Santa Teresa local rhythm",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Copacabana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Ipanema bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Christ the Redeemer",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "a Brazilian grill or beachside seafood lunch",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Sugarloaf Mountain",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Santa Teresa",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Evening table in Copacabana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Copacabana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Ipanema",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Ipanema Beach",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Copacabana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Ipanema morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Christ the Redeemer",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Copacabana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Ipanema",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Santa Teresa",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Cristo Redentor",
+        "Bondinho Pão de Açúcar",
+        "Museu do Amanhã",
+        "Jardim Botânico do Rio de Janeiro"
+      ],
+      "bestFirstTimers": [
+        "Trem do Corcovado",
+        "Bondinho Pão de Açúcar",
+        "Museu do Amanhã",
+        "Real Gabinete Português de Leitura"
+      ],
+      "bestRestaurants": [
+        "Oro",
+        "Lasai",
+        "Aprazível",
+        "Churrascaria Palace"
+      ],
+      "bestBudget": [
+        "MAM Rio",
+        "Parque Nacional da Tijuca",
+        "CADEG",
+        "Real Gabinete Português de Leitura"
+      ],
+      "bestLuxury": [
+        "MEE (Belmond Copacabana Palace)",
+        "Lasai",
+        "Oro",
+        "Pérgula (Belmond Copacabana Palace)"
+      ],
+      "bestCouples": [
+        "Bondinho Pão de Açúcar",
+        "Aprazível",
+        "Parque Lage (Escola de Artes Visuais)",
+        "Spirit Copa Bar (Fairmont Rio de Janeiro Copacabana)"
+      ],
+      "bestKids": [
+        "AquaRio",
+        "Museu do Amanhã",
+        "Jardim Botânico do Rio de Janeiro",
+        "Trem do Corcovado"
+      ],
+      "bestSolo": [
+        "CCBB Rio de Janeiro",
+        "MAM Rio",
+        "Curto Café (Centro)",
+        "Real Gabinete Português de Leitura"
+      ],
+      "bestUnique": [
+        "Real Gabinete Português de Leitura",
+        "CADEG",
+        "Parque Lage (Escola de Artes Visuais)",
+        "Parque Nacional da Tijuca"
+      ],
+      "bestBreakfast": [
+        "Pérgula (Belmond Copacabana Palace)",
+        "La Bicyclette (Jardim Botânico)",
+        "Cafeína (Copacabana)",
+        "Tropìk (Fairmont Rio de Janeiro Copacabana)"
+      ],
+      "bestLunch": [
+        "Bar Urca",
+        "Confeitaria Colombo (Rua Gonçalves Dias)",
+        "Academia da Cachaça (Leblon)",
+        "Churrascaria Palace"
+      ],
+      "bestDinner": [
+        "Oro",
+        "Lasai",
+        "Aprazível",
+        "Churrascaria Palace"
+      ],
+      "bestCocktails": [
+        "Spirit Copa Bar (Fairmont Rio de Janeiro Copacabana)",
+        "Academia da Cachaça (Leblon)",
+        "Bar Urca"
+      ],
+      "bestBakeries": [
+        "Confeitaria Colombo (Rua Gonçalves Dias)",
+        "La Bicyclette (Jardim Botânico)"
+      ],
+      "bestCoffee": [
+        "Curto Café (Centro)",
+        "Cafeína (Copacabana)",
+        "Coa Café & Co (Fairmont Rio de Janeiro Copacabana)"
+      ]
+    },
+    "queries": {
+      "Bondinho Pão de Açúcar": "Bondinho Pão de Açúcar Av. Pasteur 520 Urca Rio de Janeiro",
+      "Trem do Corcovado": "Trem do Corcovado Rua Cosme Velho 513 Rio de Janeiro",
+      "Cristo Redentor": "Cristo Redentor Parque Nacional da Tijuca Alto da Boa Vista Rio de Janeiro",
+      "Museu do Amanhã": "Museu do Amanhã Praça Mauá 1 Centro Rio de Janeiro",
+      "Real Gabinete Português de Leitura": "Real Gabinete Português de Leitura Rua Luís de Camões 30 Rio de Janeiro",
+      "Parque Lage (Escola de Artes Visuais)": "Parque Lage Rua Jardim Botânico 414 Rio de Janeiro",
+      "MAM Rio": "MAM Rio Av. Infante Dom Henrique 85 Rio de Janeiro",
+      "AquaRio": "AquaRio Praça Muhammad Ali Gamboa Rio de Janeiro",
+      "Jardim Botânico do Rio de Janeiro": "Jardim Botânico Rua Jardim Botânico 1008 Rio de Janeiro",
+      "Parque Nacional da Tijuca": "Parque Nacional da Tijuca Estrada da Cascatinha 850 Rio de Janeiro",
+      "CCBB Rio de Janeiro": "CCBB Rua Primeiro de Março 66 Rio de Janeiro",
+      "CADEG": "CADEG Rua Capitão Félix 110 Benfica Rio de Janeiro",
+      "Bar Urca": "Bar Urca Rua Candido Gaffree 205 Rio de Janeiro",
+      "Aprazível": "Aprazível Rua Aprazível 62 Santa Teresa Rio de Janeiro",
+      "Lasai": "Lasai Largo dos Leões 35 Humaitá Rio de Janeiro",
+      "Oro": "Oro Rua General San Martin 889 Leblon Rio de Janeiro",
+      "Churrascaria Palace": "Churrascaria Palace Rua Rodolfo Dantas 16 Copacabana Rio de Janeiro",
+      "Pérgula (Belmond Copacabana Palace)": "Pérgula Copacabana Palace Avenida Atlântica 1702 Rio de Janeiro",
+      "MEE (Belmond Copacabana Palace)": "MEE Copacabana Palace Avenida Atlântica 1702 Rio de Janeiro",
+      "Spirit Copa Bar (Fairmont Rio de Janeiro Copacabana)": "Spirit Copa Bar Fairmont Avenida Atlântica 4240 Rio de Janeiro",
+      "Tropìk (Fairmont Rio de Janeiro Copacabana)": "Tropik Fairmont Avenida Atlântica 4240 Rio de Janeiro",
+      "Coa Café & Co (Fairmont Rio de Janeiro Copacabana)": "Coa Café Fairmont Avenida Atlântica 4240 Rio de Janeiro",
+      "Academia da Cachaça (Leblon)": "Academia da Cachaça Rua Conde de Bernadotte 26 Leblon Rio de Janeiro",
+      "Confeitaria Colombo (Rua Gonçalves Dias)": "Confeitaria Colombo Rua Gonçalves Dias 32 Rio de Janeiro",
+      "La Bicyclette (Jardim Botânico)": "La Bicyclette Rua Pacheco Leão 320 Rio de Janeiro",
+      "Curto Café (Centro)": "Curto Café Rua da Assembleia 10 Centro Rio de Janeiro",
+      "Cafeína (Copacabana)": "Cafeína Rua Barata Ribeiro 507 Copacabana Rio de Janeiro"
+    },
+    "summary": "Cable car and rack railway, museums, parks and a wholesale market, with breakfast spots, tasting-menu dinners, cafés, a historic confeitaria and cocktail bars checked against their own websites.",
+    "highlights": [
+      "Cristo Redentor",
+      "Bondinho Pão de Açúcar",
+      "Museu do Amanhã",
+      "Jardim Botânico do Rio de Janeiro"
+    ],
+    "tip": "Avoid Wednesday mornings for Museu do Amanhã and the Jardim Botânico: the museum publishes Thursday-to-Tuesday hours, the garden's museum is closed on Wednesdays and its arboretum opens only at 11h that day.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Wednesdays and Sun–Mon",
+        "copy": "Museu do Amanhã publishes Thursday-to-Tuesday hours and the Museu do Jardim Botânico is closed on Wednesdays. Oro is closed on Sunday and Monday, and La Bicyclette's Leblon branch closes on Mondays."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Buy ahead online",
+        "copy": "The Jardim Botânico asks you to buy tickets in advance through its ticketing site, and AquaRio offers a discount for online booking. Trem do Corcovado sells tickets online, by phone and through its app."
+      },
+      {
+        "label": "Reservations",
+        "value": "Book dinners",
+        "copy": "Lasai serves only by reservation ('Só atendemos mediante reserva'), with seatings at 20:00 Tuesday to Friday. Oro takes bookings through Meitre or by phone."
+      },
+      {
+        "label": "Visitor rules",
+        "value": "Bags and children",
+        "copy": "At MAM Rio, items larger than 45 cm × 30 cm cannot enter the galleries, children under 12 must be with an adult, and food and drink stay out of exhibition spaces."
+      }
+    ],
+    "dek": "Plan your museum days around Wednesday closures, book Corcovado, Sugarloaf and dinner tables online, and save free MAM Rio for a Wednesday-to-Sunday slot.",
+    "intro": [
+      "You can reach Rio's two classic viewpoints with tickets bought online. Trem do Corcovado runs from Rua Cosme Velho, 513 and sells tickets through its site, app and phone line; children up to 6 ride free on a guardian's lap. The Santuário Cristo Redentor marked the statue's 95th anniversary in October 2026. Bondinho Pão de Açúcar leaves from Av. Pasteur, 520 in Urca, runs from 08:30 on weekdays and 07:30 at weekends, and stops boarding at 19:30.",
+      "Museu do Amanhã, on Praça Mauá, opens Thursday to Tuesday from 10h to 18h and is marking its tenth anniversary with an exhibition and a new outdoor sculpture garden. Nearby, CCBB Rio shows 'Amazônicas – Poéticas Femininas' until 16 November and 'Palavras em Cena' until 31 December. MAM Rio in Parque do Flamengo is free and open Wednesday to Sunday. You can also see the reading room of the Real Gabinete Português de Leitura, which opens on weekdays from 10h to 17h.",
+      "For greener days, the Jardim Botânico's arboretum opens Thursday to Tuesday from 8h, but only from 11h on Wednesdays, when its museum is closed; you should buy tickets in advance. Parque Lage, at Rua Jardim Botânico, 414, runs a busy arts programme listed on its own site. Parque Nacional da Tijuca opens daily from 8h to 17h. If you are travelling with children, AquaRio in Gamboa opens every day from 9h, with last entry at 16h.",
+      "For dinner, Lasai in Humaitá serves a single tasting menu and takes reservations only. Oro in Leblon offers 'Criatividade' and 'Afetividade' menus and is closed on Sundays and Mondays. Aprazível in Santa Teresa takes online bookings, and Churrascaria Palace in Copacabana is celebrating 75 years of rodízio. For drinks, try the house mixology at Spirit Copa Bar or the caipirinhas at Academia da Cachaça in Leblon. For a slower morning, La Bicyclette opens at 8h, and Curto Café pours coffee in Centro on weekdays."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair Trem do Corcovado up to Cristo Redentor with an evening Bondinho Pão de Açúcar ride, remembering last boarding is at 19:30."
+      ],
+      [
+        "A slower morning",
+        "Start with pastries at La Bicyclette in Jardim Botânico from 8h, then walk the Jardim Botânico arboretum (from 11h on Wednesdays)."
+      ],
+      [
+        "Before booking",
+        "Reserve Lasai and Oro ahead, buy Jardim Botânico and AquaRio tickets online, and avoid Wednesdays for Museu do Amanhã."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several sites could not be read: Theatro Municipal and Garota de Ipanema (expired certificates), Museu Nacional de Belas Artes, Artesanos Bakery and Hotel Santa Teresa (DNS failures), Bar do Mineiro (connection reset) and Bar Lagoa (nothing readable); no official site was found for Padaria Nema. MAR and IMS Rio are temporarily closed per their own sites, and at Copacabana Palace, Cipriani and the Pool Bar are under renovation. Hours were not published on the pages read for Trem do Corcovado, Cristo Redentor, CCBB Rio, Parque Lage, Bar Urca, Aprazível, Churrascaria Palace, Confeitaria Colombo, Cafeína and the Copacabana Palace and Fairmont venues (except Tropìk). Several restaurants and cafés show no dated content beyond a 2026 copyright, booking links or menus. Election-day (25 October) notices at MAM Rio and CCBB were left out as short-lived. The MAR homepage contained unrelated gambling links that appear to be injected spam.",
+  "injectionLikeText": []
+}
