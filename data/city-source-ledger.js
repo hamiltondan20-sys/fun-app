@@ -5,6 +5,454 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Dubai, United Arab Emirates": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-25",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "This is a website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several major sites could not be read automatically and were left out rather than bypassed: Burj Khalifa, At.mosphere, The Espresso Lab, Dubai Aquarium, Dubai Opera, SALT and Sky Views returned HTTP 403; the Dubai Culture museum sites (Etihad Museum, Al Shindagha) and Bageri Form and Arabian Tea House returned certificate or SSL errors; Atlantis Aquaventure timed out; Nightjar Coffee and Mirzam were rate-limited; Coca-Cola Arena sent a queue page. Museum of the Future says it is temporarily closed with no reopening date. Global Village, LEGOLAND Dubai, Souk Al Seef and The Dubai Mall published hours or seasons but no street address on the pages read. Some confirmed places are published only partly: Orfali Bros gives dinner days without times, Comptoir 102 shows no 2026-dated content, Jameel Arts Centre's hours conflict with its Tuesday closure, CÉ LA VI and Al Fanar give location descriptions rather than street addresses, and Alserkal Avenue lists entrances rather than a single address. No bakery could be confirmed, so the bakeries list is empty, and only one coffee roaster was confirmed. The total of 17 confirmed places is below the 25-35 target.",
+    "sourceUrls": [
+      "docs/content-research/dubai-2026-10-25.md",
+      "docs/content-research/dubai-2026-10-25.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Burj Khalifa (At the Top)",
+        "url": "https://www.burjkhalifa.ae/en/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site returned HTTP 403 to automated reading; not bypassed"
+      },
+      {
+        "name": "Museum of the Future",
+        "url": "https://museumofthefuture.ae/en",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site says \"temporarily closed as we prepare for our next chapter\"; no reopening date"
+      },
+      {
+        "name": "Arabian Tea House",
+        "url": "https://www.arabianteahouse.co/",
+        "checkedOn": "2026-10-25",
+        "reason": "arabianteahouse.net DNS failure; arabianteahouse.co certificate error; not bypassed"
+      },
+      {
+        "name": "At.mosphere",
+        "url": "https://www.atmosphereburjkhalifa.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site returned HTTP 403"
+      },
+      {
+        "name": "Bounty Beets",
+        "url": "https://www.bountybeets.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Fetch failed with no readable output"
+      },
+      {
+        "name": "Gold on 27",
+        "url": "https://www.goldon27.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "goldon27.com refused connection; Jumeirah Burj Al Arab page readable portion gave no address, hours or 2026 content"
+      },
+      {
+        "name": "Galaxy Bar",
+        "url": "https://www.galaxybardubai.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "No reachable official site (galaxybardubai.com and galaxybar.ae did not resolve)"
+      },
+      {
+        "name": "Bageri Form",
+        "url": "https://bageriform.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "SSL error on official site; not bypassed"
+      },
+      {
+        "name": "Birch Bakery",
+        "url": "https://birchbakery.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Site found lists only Mukilteo, Washington, USA; no Dubai branch confirmed"
+      },
+      {
+        "name": "Nightjar Coffee",
+        "url": "https://nightjar.coffee/",
+        "checkedOn": "2026-10-25",
+        "reason": "Homepage gives no café address (only an Alserkal Avenue tag); find-us page 404; further fetches rate-limited (HTTP 429)"
+      },
+      {
+        "name": "The Espresso Lab",
+        "url": "https://theespressolab.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site returned HTTP 403"
+      },
+      {
+        "name": "Dubai Aquarium & Underwater Zoo",
+        "url": "https://www.thedubaiaquarium.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Aquarium site returned HTTP 403; Dubai Mall pages name it but give no address or hours"
+      },
+      {
+        "name": "Atlantis Aquaventure",
+        "url": "https://www.atlantis.com/dubai/aquaventure",
+        "checkedOn": "2026-10-25",
+        "reason": "Fetch timed out twice"
+      },
+      {
+        "name": "The Dubai Mall / Dubai Fountain",
+        "url": "https://www.thedubaimall.com/en/plan-your-visit/opening-hours",
+        "checkedOn": "2026-10-25",
+        "reason": "Official pages give mall hours but no address and no fountain show times"
+      },
+      {
+        "name": "Dubai Opera",
+        "url": "https://www.dubaiopera.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site returned HTTP 403"
+      },
+      {
+        "name": "Global Village",
+        "url": "https://www.globalvillage.ae/en/plan-your-visit",
+        "checkedOn": "2026-10-25",
+        "reason": "Season 31 (14 Oct 2026-May 2027) and hours published, but no street address on pages read"
+      },
+      {
+        "name": "Etihad Museum / Al Shindagha Museum (Dubai Culture)",
+        "url": "https://dubaiculture.gov.ae/en/Our-Places/Museums",
+        "checkedOn": "2026-10-25",
+        "reason": "Dubai Culture sites returned a certificate error; not bypassed"
+      },
+      {
+        "name": "Coffee Museum",
+        "url": "https://coffeemuseum.ae/",
+        "checkedOn": "2026-10-25",
+        "reason": "Homepage gives only \"Al Fahidi in Bur Dubai\"; contact page 404; no hours or current evidence"
+      },
+      {
+        "name": "Souk Al Seef",
+        "url": "https://soukalseef.ae/en/plan-your-visit",
+        "checkedOn": "2026-10-25",
+        "reason": "Hours published but no street address (location label only)"
+      },
+      {
+        "name": "LEGOLAND Dubai",
+        "url": "https://www.legoland.com/dubai/",
+        "checkedOn": "2026-10-25",
+        "reason": "2026 events and hours published but no address on pages read; directions page 404"
+      },
+      {
+        "name": "Coca-Cola Arena",
+        "url": "https://www.coca-cola-arena.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Redirected to a queue/bot-check page; not bypassed"
+      },
+      {
+        "name": "Expo City Dubai (Terra)",
+        "url": "https://www.expocitydubai.com/en/things-to-do/",
+        "checkedOn": "2026-10-25",
+        "reason": "No address or opening hours published on pages read; attraction pages 404"
+      },
+      {
+        "name": "The View at The Palm",
+        "url": "https://www.theviewpalm.ae/",
+        "checkedOn": "2026-10-25",
+        "reason": "Hours and prices published, but no address beyond \"Palm Jumeirah\""
+      },
+      {
+        "name": "Kinoya",
+        "url": "https://kinoya.ae/",
+        "checkedOn": "2026-10-25",
+        "reason": "Address and hours published, but no 2026 evidence and the page contains unrelated casino links; not relied on"
+      },
+      {
+        "name": "Tom & Serg",
+        "url": "https://eatx.com/tom-serg/",
+        "checkedOn": "2026-10-25",
+        "reason": "Operator page (EatX) gives hours but only a company office address, not the café's"
+      },
+      {
+        "name": "The Sum of Us",
+        "url": "https://eatx.com/the-sum-of-us/",
+        "checkedOn": "2026-10-25",
+        "reason": "Operator page (EatX) gives hours but only a company office address, not the café's"
+      },
+      {
+        "name": "Lime Tree Café",
+        "url": "https://www.thelimetreecafe.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Branches listed without street addresses; founding Jumeirah café \"Now closed in 2025\""
+      },
+      {
+        "name": "Bait Maryam",
+        "url": "https://www.baitmaryam.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "No addresses or hours on official site"
+      },
+      {
+        "name": "Mirzam Chocolate Makers",
+        "url": "https://mirzam.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Rate-limited (HTTP 429) on every attempt"
+      },
+      {
+        "name": "% Arabica",
+        "url": "https://arabica.com/en/location/",
+        "checkedOn": "2026-10-25",
+        "reason": "Location page returned HTTP 418"
+      },
+      {
+        "name": "SALT",
+        "url": "https://www.find-salt.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site returned HTTP 403"
+      },
+      {
+        "name": "Sky Views Dubai",
+        "url": "https://www.skyviewsdubai.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site returned HTTP 403"
+      },
+      {
+        "name": "Amazónico Dubai",
+        "url": "https://amazonicorestaurant.com/dubai/",
+        "checkedOn": "2026-10-25",
+        "reason": "No street address or opening hours on official page"
+      },
+      {
+        "name": "PAUL (UAE)",
+        "url": "https://www.paularabia.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Regional landing page lists no Dubai branch addresses or hours"
+      },
+      {
+        "name": "Tashas",
+        "url": "https://tashascafe.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Dubai branches named without addresses or hours"
+      },
+      {
+        "name": "Brunch & Cake",
+        "url": "https://brunchandcake.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Dubai branches named without addresses or hours"
+      },
+      {
+        "name": "Café Bateel",
+        "url": "https://bateel.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "No branch addresses or hours on homepage"
+      },
+      {
+        "name": "Jones the Grocer",
+        "url": "https://www.jonesthegrocer.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "No Dubai branch addresses or hours on homepage"
+      },
+      {
+        "name": "Logma",
+        "url": "https://logma.ae/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site shows only \"Under Construction\""
+      },
+      {
+        "name": "Ripe Market",
+        "url": "https://www.ripeme.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "No Dubai market location, dates or hours on official site"
+      },
+      {
+        "name": "Dubai Marina",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Old Dubai",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Dubai Fountain area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Abra ride in Old Dubai",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public beach time",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Desert safari upgrade",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Beach club day",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Marina evening",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Desert sunset",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Rooftop dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and design stops",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Old Dubai wandering",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Beach and skyline day",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Dubai Mall area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "One desert experience",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Al Seef and creek side",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunrise desert calm",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Paul Arabia-style outposts",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Dubai Frame": {
+        "url": "https://www.dubaiframe.ae/en/plan-your-visit",
+        "sourceType": "official public operator (Dubai Municipality)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current plan-your-visit page with live online ticketing at ticketingsales.dubaiframe.ae; adults AED 50, children (3-12) AED 20, under 3 free. Site footer says it is supervised by Dubai Municipality. The page footer is dated 2021; current operation rests on the live ticketing."
+      },
+      "Jameel Arts Centre": {
+        "url": "https://www.jameelartscentre.org/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Dated programme: Artist's Rooms (Walid Siti, Lulua Alyahya, Shezad Dawood) 20 September 2026-31 January 2027; Salah Elmur 31 October 2026-14 March 2027. \"open-access and free for all.\""
+      },
+      "Alserkal Avenue": {
+        "url": "https://alserkal.online/opening-hours",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Homepage runs \"weekends at alserkal\" for October 2026 and \"what the food by alserkal\" on 31 Oct-1 Nov. Individual venues set their own hours."
+      },
+      "Dubai Miracle Garden": {
+        "url": "https://www.dubaimiraclegarden.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online tickets delivered as a WhatsApp QR code; a \"Right on Time\" concert listed for Saturday 21 November 2026; seasonal morning events October-November need separate event tickets."
+      },
+      "Dubai Safari Park": {
+        "url": "https://www.dubaisafari.ae/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Season 8 opened 12 October 2026 and runs to 31 May 2027 (page \"LAST UPDATED: 1 October 2026\"); Saturday workshops for ages 6-12 on 31 October 2026. Safari Park Pass from AED 50."
+      },
+      "The Green Planet": {
+        "url": "https://www.thegreenplanetdubai.com/en/parks-opening-hours",
+        "sourceType": "operator's own site (Dubai Holding Entertainment)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Live booking widget showing \"Sun 25 Oct 2026\", a Halloween banner and \"© 2026 Dubai Holding Entertainment\"."
+      },
+      "Zuma (DIFC)": {
+        "url": "https://www.zumarestaurant.com/en/dubai",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Bookings via SevenRooms; weekly Yashoku night brunch every Wednesday from 21:00 in the lounge; footer \"© Zuma 2026\"."
+      },
+      "Orfali Bros (Wasl 51 Mall)": {
+        "url": "https://orfalibros.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current SevenRooms reservations and set menus: Aromas of Aleppo AED 295, The OG Menu AED 350, The Voyage Menu AED 795; \"© 2026 Orfali Bros\"."
+      },
+      "3 Fils (Jumeirah Fishing Harbour)": {
+        "url": "https://3fils.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Lists itself at #17 on MENA's 50 Best Restaurants 2026; \"No reservations needed — just walk in and grab a seat.\""
+      },
+      "Trèsind Studio": {
+        "url": "https://www.tresindstudio.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online reservations open with two seatings, \"6:00 PM | 9:15 PM\"; reservation policy linked."
+      },
+      "Al Fanar Seafood Market (Al Seef)": {
+        "url": "https://www.alfanarrestaurant.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Site states the Al Seef branch is in the MICHELIN Guide Dubai 2026 selection; current Pinktober offer."
+      },
+      "Al Fanar Restaurant & Cafe (Dubai Festival City)": {
+        "url": "https://www.alfanarrestaurant.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Branch listed with current hours and phone; menu lists \"Emirati breakfast\"; current Pinktober offer."
+      },
+      "Comptoir 102": {
+        "url": "https://comptoir102.com/pages/contact",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Contact page hours notice \"We are open daily\"; restaurant menu dated Nov-2025 linked from the homepage. No 2026-dated content seen."
+      },
+      "RAW Coffee Company (Al Quoz)": {
+        "url": "https://rawcoffeecompany.com/pages/contact",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Roasts \"at our warehouse in Al Quoz\"; current coffee list includes a \"winner of Uganda Taste of Harvest 2026\"."
+      },
+      "Mimi Kakushi": {
+        "url": "https://mimikakushi.ae/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "SevenRooms reservations; 2026-dated food, drinks and bar bites menus; Minami Jazz Nights promoted; \"© MIMI KAKUSHI, 2026\"."
+      },
+      "CÉ LA VI Dubai": {
+        "url": "https://dxb.celavi.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "2026-dated menus (lunch set menu 2026.09.11); Halloween in the Club Lounge on Fri 30 and Sat 31 October."
+      },
+      "Honeycomb Hi-Fi": {
+        "url": "https://www.honeycombhifi.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "SevenRooms reservations and WhatsApp booking; current event listings for October (year not stated in text)."
+      }
+    }
+  },
   "Seoul, South Korea": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-25",

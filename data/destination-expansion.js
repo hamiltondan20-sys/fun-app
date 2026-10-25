@@ -2480,4 +2480,99 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Dubai, United Arab Emirates: source review of 2026-10-25 (docs/content-research/dubai-2026-10-25.md).
+  {
+    const cityKey = "Dubai, United Arab Emirates";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Dubai Frame","Jameel Arts Centre","Alserkal Avenue","Dubai Miracle Garden"],
+      bestFirstTimers: ["Dubai Frame","Dubai Miracle Garden","Dubai Safari Park","CÉ LA VI Dubai"],
+      bestRestaurants: ["Orfali Bros (Wasl 51 Mall)","3 Fils (Jumeirah Fishing Harbour)","Trèsind Studio","Zuma (DIFC)"],
+      bestBudget: ["Jameel Arts Centre","Alserkal Avenue","3 Fils (Jumeirah Fishing Harbour)","RAW Coffee Company (Al Quoz)"],
+      bestLuxury: ["Trèsind Studio","CÉ LA VI Dubai","Zuma (DIFC)","Mimi Kakushi"],
+      bestCouples: ["CÉ LA VI Dubai","Mimi Kakushi","Al Fanar Seafood Market (Al Seef)","Trèsind Studio"],
+      bestKids: ["Dubai Safari Park","The Green Planet","Dubai Miracle Garden","Dubai Frame"],
+      bestSolo: ["Jameel Arts Centre","Alserkal Avenue","RAW Coffee Company (Al Quoz)","3 Fils (Jumeirah Fishing Harbour)"],
+      bestUnique: ["The Green Planet","Alserkal Avenue","Jameel Arts Centre","Al Fanar Seafood Market (Al Seef)"],
+      bestBreakfast: ["Al Fanar Restaurant & Cafe (Dubai Festival City)","Comptoir 102","RAW Coffee Company (Al Quoz)"],
+      bestLunch: ["Zuma (DIFC)","3 Fils (Jumeirah Fishing Harbour)","Al Fanar Restaurant & Cafe (Dubai Festival City)","Comptoir 102"],
+      bestDinner: ["Orfali Bros (Wasl 51 Mall)","Trèsind Studio","Zuma (DIFC)","Al Fanar Seafood Market (Al Seef)"],
+      bestCocktails: ["Honeycomb Hi-Fi","Mimi Kakushi","CÉ LA VI Dubai","Zuma (DIFC)"],
+      bestBakeries: [],
+      bestCoffee: ["RAW Coffee Company (Al Quoz)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Dubai Frame": "Dubai Frame Zabeel Park Gate 4 Dubai",
+      "Jameel Arts Centre": "Jameel Arts Centre Jaddaf Waterfront Dubai",
+      "Alserkal Avenue": "Alserkal Avenue 17th Street Al Quoz 1 Dubai",
+      "Dubai Miracle Garden": "Dubai Miracle Garden Al Barsha South 3 Dubai",
+      "Dubai Safari Park": "Dubai Safari Park Al Warqa 5 Hatta Road Dubai",
+      "CÉ LA VI Dubai": "CÉ LA VI Address Sky View Downtown Dubai",
+      "Orfali Bros (Wasl 51 Mall)": "Orfali Bros Wasl 51 Mall Dubai",
+      "3 Fils (Jumeirah Fishing Harbour)": "3 Fils Jumeirah Fishing Harbour Al Urouba Street Dubai",
+      "Trèsind Studio": "Trèsind Studio St. Regis Gardens Palm Jumeirah Dubai",
+      "Zuma (DIFC)": "Zuma Gate Village 06 DIFC Dubai",
+      "RAW Coffee Company (Al Quoz)": "RAW Coffee Company Al Manara Road Al Quoz 1 Dubai",
+      "Mimi Kakushi": "Mimi Kakushi Four Seasons Resort Jumeirah Beach Road Dubai",
+      "Al Fanar Seafood Market (Al Seef)": "Al Fanar Seafood Market Al Seef Dubai Creek Dubai",
+      "The Green Planet": "The Green Planet City Walk Al Wasl Dubai",
+      "Al Fanar Restaurant & Cafe (Dubai Festival City)": "Al Fanar Restaurant Dubai Festival City Mall Dubai",
+      "Comptoir 102": "Comptoir 102 102 Beach Road Jumeirah 1 Dubai",
+      "Honeycomb Hi-Fi": "Honeycomb Hi-Fi Pullman Dubai Downtown Dubai"
+    };
+    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (cityGuide) {
+      cityGuide.summary = "Dubai's Frame, art districts, gardens and safari park, with breakfast cafés, dinners and cocktail bars checked against their own websites.";
+      cityGuide.highlights = ["Dubai Frame","Jameel Arts Centre","Dubai Miracle Garden","Dubai Safari Park"];
+      cityGuide.tip = "Jameel Arts Centre is free but its site lists Tuesday as a closing day, so plan Al Jaddaf and Alserkal Avenue visits for another day.";
+    }
+    data.destinationFacts[cityKey] = "Jameel Arts Centre is free but its site lists Tuesday as a closing day, so plan Al Jaddaf and Alserkal Avenue visits for another day.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Dubai's Frame, art districts, gardens and safari park, with breakfast cafés, dinners and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Check before you go",
+        "copy": "Jameel Arts Centre's site lists Tuesday as closed, Trèsind Studio lists hours Monday to Saturday only, and Orfali Bros serves dinner Wednesday to Monday."
+      },
+      {
+        "label": "Tickets",
+        "value": "Book online",
+        "copy": "Dubai Frame sells tickets online (adults AED 50, children 3-12 AED 20, under 3 free), and Dubai Miracle Garden sends tickets as a WhatsApp QR code scanned at the gate. Dubai Safari Park passes start at AED 50."
+      },
+      {
+        "label": "Walk-ins",
+        "value": "Some, not all",
+        "copy": "3 Fils at Jumeirah Fishing Harbour says no reservations are needed, while Zuma, Orfali Bros, Mimi Kakushi and Honeycomb Hi-Fi take bookings through SevenRooms."
+      },
+      {
+        "label": "Rules",
+        "value": "Bags, food, age",
+        "copy": "Dubai Frame bans food, drinks, pets and smoking, and large bags and strollers must be left at the Gate 4 counter; under-12s need an adult. Zuma's lounge is for over-21s in the evening, and Dubai Miracle Garden bans drones and outside food."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Book timed sights like Dubai Frame and the evening restaurants ahead, and keep Tuesdays away from Jameel Arts Centre.",
+      intro: [
+        "You can get a strong first read of Dubai at Dubai Frame in Zabeel Park, which the site says is supervised by Dubai Municipality. It opens daily from 8:00 am to 9:00 pm, including weekends and public holidays, with hours that may change during Ramadan and holidays. Tickets are sold online at AED 50 for adults and AED 20 for children aged 3 to 12. Leave large bags and strollers at the Gate 4 counter, and note that food, drinks, pets and smoking are not allowed inside.",
+        "For art, Jameel Arts Centre on the Jaddaf Waterfront is free and open-access. Its Artist's Rooms for Walid Siti, Lulua Alyahya and Shezad Dawood run from 20 September 2026 to 31 January 2027, and a Salah Elmur exhibition opens on 31 October 2026 and runs to 14 March 2027. The site lists Tuesday as closed. Across town in Al Quoz, Alserkal Avenue is open every day from 10 a.m. to 7 p.m., though individual venues set their own hours, and its food weekend runs 31 October to 1 November.",
+        "Families have outdoor options. Dubai Safari Park in Al Warqa 5 opened Season 8 on 12 October 2026 and runs until 31 May 2027, open 9:00 AM to 6:00 PM with last entry at 5:00 PM. Dubai Miracle Garden in Al Barsha South 3 opens 9:00 AM to 9:00 PM daily, bans drones and outside food, and lists a concert on 21 November 2026. The Green Planet at City Walk opens every day from 10 AM to 6 PM.",
+        "For food, 3 Fils at Jumeirah Fishing Harbour takes walk-ins from noon, and Orfali Bros at Wasl 51 Mall serves dinner Wednesday to Monday with set menus from AED 295. Trèsind Studio at St. Regis Gardens on the Palm runs two seatings, at 6:00 PM and 9:15 PM. For an early start, RAW Coffee Company's Al Quoz café opens daily at 7:30am. After dark, you can try Mimi Kakushi, open until 2AM, or CÉ LA VI, 54 floors up at Address Sky View."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Start at Dubai Frame in Zabeel Park, then see the free exhibitions at Jameel Arts Centre on any day but Tuesday."
+        ],
+        [
+          "A slower morning",
+          "Take a 7:30am coffee at RAW Coffee Company in Al Quoz, then walk Alserkal Avenue once it opens at 10 a.m."
+        ],
+        [
+          "Before booking",
+          "Reserve Trèsind Studio, Zuma or Orfali Bros ahead, but walk straight into 3 Fils from noon."
+        ]
+      ],
+      trust: "All 17 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();
