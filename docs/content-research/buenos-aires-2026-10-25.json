@@ -1,0 +1,958 @@
+{
+  "city": "Buenos Aires, Argentina",
+  "checkedOn": "2026-10-25",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "MALBA",
+      "kind": "museum",
+      "url": "https://www.malba.org.ar/",
+      "sourceType": "operator's own site",
+      "address": "Av. Figueroa Alcorta 3415, C1425CLA Buenos Aires",
+      "operatingEvidence": "Current exhibitions: 'Belkis Ayón: Mito y desobediencia' and 'Viva Frida', each 'Continúa hasta el 15 de marzo de 2027'; permanent Colección Malba—Costantini.",
+      "hours": "Jueves a lunes de 12:00 a 20:00. Miércoles de 11:00 a 20:00. Martes cerrado.",
+      "confidence": "high"
+    },
+    {
+      "name": "Teatro Colón",
+      "kind": "landmark",
+      "url": "https://teatrocolon.org.ar/",
+      "sourceType": "operator's own site (city-run theatre)",
+      "address": "Cerrito 628, Ciudad Autónoma de Buenos Aires",
+      "operatingEvidence": "2026 calendar lists 'Aura' gala on 26 October and ballet 'Manon' 5–15 November; guided visits cover the Sala, Foyer Principal, Galería de Bustos and Salón Dorado.",
+      "hours": "In-person ticket sales 'de lunes a sábado de 9 a 16.45' via Libertad 621; tour times not published on page read",
+      "confidence": "high"
+    },
+    {
+      "name": "Museo Evita",
+      "kind": "museum",
+      "url": "https://www.museoevita.org.ar/",
+      "sourceType": "operator's own site",
+      "address": "Lafinur 2988, Palermo",
+      "operatingEvidence": "'Agenda 2026 abierta para visitas educativas'; October agenda lists public guided tours 'martes a domingo, 16 hs' and Friday English tours at 15 hs; temporary exhibition 'Umbrales'.",
+      "hours": "Martes a Domingos de 11:00 a 19:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Fundación PROA",
+      "kind": "museum",
+      "url": "https://www.proa.org/",
+      "sourceType": "operator's own site",
+      "address": "Av. Pedro de Mendoza 1929, La Boca, C1169AAD Buenos Aires",
+      "operatingEvidence": "Thomas Demand exhibition 'el tartamudeo de la historia'; proa21 article dated 17 September 2026; participates in the XX Bienal Internacional de Arquitectura 'durante todo octubre'.",
+      "hours": "De miércoles a domingo, 12 - 19 h",
+      "confidence": "high"
+    },
+    {
+      "name": "Jardín Japonés",
+      "kind": "park",
+      "url": "https://www.jardinjapones.org.ar/",
+      "sourceType": "operator's own site",
+      "address": "Av. Casares 3500, entre Av. Berro y Av. Libertador, Parque 3 de Febrero, Palermo",
+      "operatingEvidence": "Published 2026 ticket prices: residents '$8.000', non-residents '$24.000'; 'El Jardín NO cierra por lluvias'; cultural activity flyers uploaded 2026/09.",
+      "hours": "Abierto todos los días de 10:00 a 18:45 h (ticket sales close 18:30)",
+      "confidence": "high"
+    },
+    {
+      "name": "Café Tortoni",
+      "kind": "cafe",
+      "url": "https://www.cafetortoni.com.ar/",
+      "sourceType": "operator's own site",
+      "address": "Av. de Mayo 825, C1084 CABA",
+      "operatingEvidence": "Hours notice 'LUNES - DOMINGO 08:00 - 21:00'; footer 'Café Tortoni© 2026'.",
+      "hours": "Lunes - Domingo 08:00 - 21:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Don Julio",
+      "kind": "meal",
+      "url": "https://www.parrilladonjulio.com/",
+      "sourceType": "operator's own site",
+      "address": "Guatemala 4699 (esquina Gurruchaga) Palermo Viejo, C.A.B.A.",
+      "operatingEvidence": "Published daily service hours and a 'RESERVAS ONLINE' booking link; no dated 2026 content (footer © 2024).",
+      "hours": "Every day 11:30 - 16:00 hs | 19:00 - 1:00 hs",
+      "confidence": "medium"
+    },
+    {
+      "name": "Colección Amalita",
+      "kind": "museum",
+      "url": "https://coleccionamalita.org.ar/",
+      "sourceType": "operator's own site (formerly Colección Fortabat; old domain redirects here)",
+      "address": "Olga Cossettini 141, Puerto Madero Este (1107), Buenos Aires",
+      "operatingEvidence": "Exhibitions including 'Living' and 'Jorge Gumier Maier, la diferencia' featured, with 2026-dated exhibition pages; free guided tours 'Gratis con la compra del ticket de admisión. Sin reserva previa.'",
+      "hours": "Jueves a domingos de 12 a 20. Ingreso hasta media hora antes del cierre.",
+      "confidence": "high"
+    },
+    {
+      "name": "Florería Atlántico",
+      "kind": "bar",
+      "url": "https://www.floreriaatlantico.com.ar/",
+      "sourceType": "operator's own site",
+      "address": "Arroyo 872, Ciudad de Buenos Aires",
+      "operatingEvidence": "Booking channels published (reservas@floreriaatlantico.com.ar, WhatsApp 'Quisiera hacer una reserva'); no dated 2026 content.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "La Biela",
+      "kind": "cafe",
+      "url": "https://www.labiela.com/",
+      "sourceType": "operator's own site",
+      "address": "Av. Pres. Manuel Quintana 600, Buenos Aires",
+      "operatingEvidence": "Hours notice '08:00 a. m. – 01:00 a. m.' with 'Abre hoy'; footer 'Copyright © 2026 La Biela'.",
+      "hours": "08:00 a. m. – 01:00 a. m.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Cuervo Café (Recoleta)",
+      "kind": "cafe",
+      "url": "https://www.cuervocafe.com/",
+      "sourceType": "operator's own site",
+      "address": "Recoleta: Azcuénaga 1505",
+      "operatingEvidence": "Branch list and hours notice 'Abrimos de martes a domingo 8 hs - 20 hs'; footer '2026, © Cuervo'.",
+      "hours": "Martes a domingo 8 hs - 20 hs (chain-wide)",
+      "confidence": "medium"
+    },
+    {
+      "name": "La Cabrera (Palermo)",
+      "kind": "meal",
+      "url": "https://www.lacabrera.com.ar/",
+      "sourceType": "operator's own site",
+      "address": "José Antonio Cabrera 5099 / 5127, Palermo, Buenos Aires",
+      "operatingEvidence": "'Abiertos todos los días' with online booking link, phone 4831-0325 and WhatsApp; no dated 2026 content.",
+      "hours": "Todos los días 12:00 a 16:00 hs - 18:30hs a 1:00hs",
+      "confidence": "medium"
+    },
+    {
+      "name": "Gran Bar Danzón",
+      "kind": "bar",
+      "url": "https://www.granbardanzon.com.ar/",
+      "sourceType": "operator's own site",
+      "address": "Libertad 1161, C.A.B.A.",
+      "operatingEvidence": "States it is open every day; 'Reservas: (+5411) 4811.1108' and 'RESERVA AHORA' booking page; no dated 2026 content.",
+      "hours": "Open every day; times not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Alvear Palace Hotel",
+      "kind": "bar",
+      "url": "https://www.alvearpalace.com/",
+      "sourceType": "operator's own site",
+      "address": "Avda. Alvear 1891 (C1129AAA), Buenos Aires",
+      "operatingEvidence": "October 2026 offers ('Octubre en Buenos Aires' stays 1–31 October 2026); venues include L'Orangerie (buffet breakfast), Lobby Bar and Alvear Roof Bar with rooftop terrace.",
+      "hours": "not published for restaurants and bars",
+      "confidence": "high"
+    },
+    {
+      "name": "Museo Argentino de Ciencias Naturales",
+      "kind": "museum",
+      "url": "https://www.macnconicet.gob.ar/",
+      "sourceType": "official public operator (CONICET)",
+      "address": "Av. Angel Gallardo 470 - C1405DJR - Buenos Aires",
+      "operatingEvidence": "Homepage post dated 2026-09-29 on 'Vacaciones de Invierno 2026'; event 'Exploraciones imaginarias' listed '16/10/2026 — 30/11/2026'.",
+      "hours": "not published (only winter-holiday hours shown)",
+      "confidence": "high"
+    },
+    {
+      "name": "Museo de Arte Moderno de Buenos Aires",
+      "kind": "museum",
+      "url": "https://www.museomoderno.org/",
+      "sourceType": "operator's own site (city museum)",
+      "address": "Av. San Juan 350. San Telmo. Buenos Aires. C1147AAO",
+      "operatingEvidence": "Current exhibitions listed, including 'Luis Camnitzer: todo por aprender' and 'Habitando el futuro'; no run dates shown.",
+      "hours": "not published on page read",
+      "confidence": "medium"
+    },
+    {
+      "name": "Café de los Angelitos",
+      "kind": "meal",
+      "url": "https://www.cafedelosangelitos.com/",
+      "sourceType": "operator's own site",
+      "address": "Rivadavia 2100, Buenos Aires",
+      "operatingEvidence": "Dinner-and-show timings (dinner 20:00, show 21:45, '1.2 Hr Show') with online 'Reserva' booking; no dated 2026 content (footer 2025).",
+      "hours": "General hours not published; show at 21:45",
+      "confidence": "medium"
+    },
+    {
+      "name": "El Querandí",
+      "kind": "meal",
+      "url": "https://querandi.com.ar/",
+      "sourceType": "operator's own site",
+      "address": "Perú 322, Ciudad de Buenos Aires",
+      "operatingEvidence": "Bookable dinner shows with published prices; New Year's Eve '31 / 12 / 2026' programme; footer 'Copyright © 2026'.",
+      "hours": "Doors and dinner 19:30 hs; show 21:30 hs (75 minutes)",
+      "confidence": "high"
+    },
+    {
+      "name": "Faena Hotel Buenos Aires",
+      "kind": "landmark",
+      "url": "https://www.faena.com/buenos-aires",
+      "sourceType": "operator's own site",
+      "address": "Martha Salotti 445, C1107CMB Buenos Aires",
+      "operatingEvidence": "Venues listed (Bistro Sur, El Mercado, El Cabaret, The Library Lounge, Poolbar); 2026 journal item on Condé Nast Traveler 2026 Readers' Choice; reservations +54-11-4010-9070.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Presidente Bar (Recoleta)",
+      "kind": "bar",
+      "url": "https://www.presidentebar.com.ar/",
+      "sourceType": "operator's own site",
+      "address": "Av. Presidente Manuel Quintana 188",
+      "operatingEvidence": "Weekly hours and 'RESERVÁ TU MESA' booking link; footer '© 2026, Presidente Bar'.",
+      "hours": "From 20:00: Tue and Sun until 2:00; Wed until 2:30; Thu until 3:00; Fri–Sat until 3:30",
+      "confidence": "high"
+    },
+    {
+      "name": "Atelier Fuerza (Recoleta)",
+      "kind": "bakery",
+      "url": "https://www.atelierfuerza.com/",
+      "sourceType": "operator's own site",
+      "address": "Ecuador 1283, Recoleta",
+      "operatingEvidence": "'Pan dulce AF 2026' preorders with December pickup dates; products include 'Medialuna de manteca clásica AF' and 'Canelé tradicional'; footer '® 2026'.",
+      "hours": "not published",
+      "confidence": "high"
+    },
+    {
+      "name": "Bioparque Temaikèn",
+      "kind": "park",
+      "url": "https://www.temaiken.org.ar/",
+      "sourceType": "operator's own site",
+      "address": "Ruta Provincial 25, a 1 kilómetro de la Ruta Panamericana ramal Escobar-Campana, Belén de Escobar",
+      "operatingEvidence": "Online ticket sales and visit-date booking via ecommerce.temaiken.org.ar; September 2026 '50% off' promotion.",
+      "hours": "not published on page read ('Recomendamos verificar los dias y horarios de apertura')",
+      "confidence": "medium"
+    },
+    {
+      "name": "Rojo Tango",
+      "kind": "meal",
+      "url": "https://www.rojotango.com/",
+      "sourceType": "operator's own site",
+      "address": "Martha Salotti 445 CABA (Faena Hotel)",
+      "operatingEvidence": "Dinner-and-show timeline with 'Reservar' booking; news item 'Inauguramos el 2026 con una nueva propuesta gastronómica'.",
+      "hours": "Dinner 19:30; show 21:15 (1.2 hr)",
+      "confidence": "medium"
+    },
+    {
+      "name": "El Cuartito",
+      "kind": "meal",
+      "url": "https://www.elcuartito.com.ar/",
+      "sourceType": "operator's own site",
+      "address": "Talcahuano 937, Buenos Aires",
+      "operatingEvidence": "Pizzería founded 1934; hours published and 'Quilmes & El Cuartito · Mundial 2026' promotion.",
+      "hours": "Tuesday to Sunday, 12:30 to 00:30",
+      "confidence": "high"
+    },
+    {
+      "name": "Teatro Nacional Cervantes",
+      "kind": "landmark",
+      "url": "https://www.teatrocervantes.gob.ar/",
+      "sourceType": "official public operator (national theatre)",
+      "address": "Libertad 815 - C1012AAQ, Ciudad Autónoma de Buenos Aires",
+      "operatingEvidence": "October 2026 calendar lists 'Santos Vega' and 'Lo mucho que te amé' plus guided visits 'Historia y leyenda' at 11:00.",
+      "hours": "Box office: Miércoles a domingo, de 10 a 22 h",
+      "confidence": "high"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Recoleta Cemetery",
+      "reason": "official city (buenosaires.gob.ar) pages returned 404 or redirect to an archived 'gcaba_historico' section; no current official page read",
+      "url": "https://buenosaires.gob.ar/cementerio-de-la-recoleta"
+    },
+    {
+      "name": "Museo Nacional de Bellas Artes",
+      "reason": "HTTP 403 Forbidden",
+      "url": "https://www.bellasartes.gob.ar/"
+    },
+    {
+      "name": "Planetario Galileo Galilei",
+      "reason": "certificate error (hostname not in certificate)",
+      "url": "https://www.planetario.gob.ar/"
+    },
+    {
+      "name": "Confitería Las Violetas",
+      "reason": "connection refused (ECONNREFUSED) on two attempts",
+      "url": "https://www.lasvioletas.com/"
+    },
+    {
+      "name": "Ninina",
+      "reason": "HTTP 429 Too Many Requests on every attempt",
+      "url": "https://www.ninina.com/"
+    },
+    {
+      "name": "Casa Rosada",
+      "reason": "fetch timed out",
+      "url": "https://www.casarosada.gob.ar/"
+    },
+    {
+      "name": "Palacio Barolo",
+      "reason": "no current operating evidence; latest dated item from 2018, no tour times",
+      "url": "https://www.palaciobarolo.com.ar/"
+    },
+    {
+      "name": "Ecoparque",
+      "reason": "HTTP 403 Forbidden",
+      "url": "https://buenosaires.gob.ar/ecoparque"
+    },
+    {
+      "name": "Palacio Libertad (ex CCK)",
+      "reason": "HTTP 403 Forbidden",
+      "url": "https://palaciolibertad.gob.ar/"
+    },
+    {
+      "name": "Biblioteca Nacional",
+      "reason": "certificate error (unable to verify first certificate)",
+      "url": "https://www.bn.gob.ar/"
+    },
+    {
+      "name": "Catedral Metropolitana",
+      "reason": "certificate error (hostname not in certificate)",
+      "url": "https://www.catedralbuenosaires.org.ar/"
+    },
+    {
+      "name": "Elena (Four Seasons)",
+      "reason": "HTTP 403 Forbidden",
+      "url": "https://www.fourseasons.com/buenosaires/dining/restaurants/elena/"
+    },
+    {
+      "name": "LAB Café",
+      "reason": "SSL handshake failure",
+      "url": "https://www.labcafe.com.ar/"
+    },
+    {
+      "name": "Lattente",
+      "reason": "SSL handshake failure",
+      "url": "https://www.lattente.com/"
+    },
+    {
+      "name": "Tegui",
+      "reason": "connection refused",
+      "url": "https://www.tegui.com.ar/"
+    },
+    {
+      "name": "Pizzería Güerrín",
+      "reason": "certificate error (hostname not in certificate)",
+      "url": "https://www.pizzeriaguerrin.com/"
+    },
+    {
+      "name": "Full City Coffee House",
+      "reason": "domain serves unrelated content; not an official café page",
+      "url": "https://www.fullcitycoffeehouse.com/"
+    },
+    {
+      "name": "Mercado de San Telmo",
+      "reason": "guessed domain is parked/for sale; no official page found",
+      "url": "https://www.mercadodesantelmo.com/"
+    },
+    {
+      "name": "Bar Los Galgos",
+      "reason": "site shows template placeholder address (Chicago) and no real hours; address not confirmable",
+      "url": "https://www.barlosgalgos.com.ar/contacto"
+    },
+    {
+      "name": "Mishiguene",
+      "reason": "no address, hours or 2026 content on official page",
+      "url": "https://www.mishiguene.com/"
+    },
+    {
+      "name": "Croque Madame",
+      "reason": "no hours or 2026 content; branch addresses not given except Av Callao 1569",
+      "url": "https://www.croquemadame.com.ar/"
+    },
+    {
+      "name": "Galerías Pacífico",
+      "reason": "mall street address not stated on page read",
+      "url": "https://www.galeriaspacifico.com.ar/"
+    },
+    {
+      "name": "Hipódromo de Palermo",
+      "reason": "site under update; no address, hours or dates",
+      "url": "https://www.palermo.com.ar/"
+    },
+    {
+      "name": "Havanna",
+      "reason": "no Buenos Aires branch address or hours readable",
+      "url": "https://havanna.com.ar/nuestros-locales/1"
+    },
+    {
+      "name": "Le Pain Quotidien",
+      "reason": "Argentine domain redirects to global site with no Buenos Aires branch listed",
+      "url": "https://www.lepainquotidien.com/"
+    },
+    {
+      "name": "Le Blé",
+      "reason": "no branch addresses or hours on official page",
+      "url": "https://www.leble.com.ar/"
+    },
+    {
+      "name": "Café Martínez",
+      "reason": "no branch addresses or hours on page read",
+      "url": "https://www.cafemartinez.com/"
+    },
+    {
+      "name": "Museo Participativo de Ciencias (Prohibido No Tocar)",
+      "reason": "no hours or 2026 content on homepage; hours page 404",
+      "url": "https://www.mpc.org.ar/"
+    },
+    {
+      "name": "El Preferido de Palermo",
+      "reason": "page returned no readable content",
+      "url": "https://www.elpreferidodepalermo.com/"
+    },
+    {
+      "name": "Birkin",
+      "reason": "domain shows hosting placeholder page",
+      "url": "https://www.birkin.com.ar/"
+    },
+    {
+      "name": "Museo Nacional de Arte Decorativo",
+      "reason": "tried domain redirects to unrelated marketing site",
+      "url": "https://www.mnad.org/"
+    },
+    {
+      "name": "San Telmo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Palermo parks",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Tango night",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Recoleta architecture walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Palermo sunset park time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Parrilla dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Cafe con leche morning",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "San Telmo market lunch",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Recoleta",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in San Telmo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Palermo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Palermo walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Recoleta",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around San Telmo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through San Telmo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Recoleta Cemetery",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Palermo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Tango night",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Recoleta",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near San Telmo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Palermo evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Recoleta",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near San Telmo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Palermo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Recoleta Cemetery",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Recoleta",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near San Telmo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Palermo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Recoleta Cemetery",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Palermo cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Recoleta architecture walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in San Telmo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of San Telmo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Palermo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Palermo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Recoleta bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Recoleta Cemetery",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through San Telmo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Palermo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near San Telmo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around San Telmo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Palermo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Recoleta",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in San Telmo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Palermo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Palermo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Recoleta",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Palermo parks",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Palermo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Recoleta morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Recoleta Cemetery",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near San Telmo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Palermo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Recoleta",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near San Telmo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Teatro Colón",
+        "MALBA",
+        "Jardín Japonés",
+        "Museo Evita"
+      ],
+      "bestFirstTimers": [
+        "Teatro Colón",
+        "Café Tortoni",
+        "MALBA",
+        "El Querandí"
+      ],
+      "bestRestaurants": [
+        "Don Julio",
+        "La Cabrera (Palermo)",
+        "El Cuartito",
+        "Café de los Angelitos"
+      ],
+      "bestBudget": [
+        "Jardín Japonés",
+        "El Cuartito",
+        "Museo Evita",
+        "Colección Amalita"
+      ],
+      "bestLuxury": [
+        "Alvear Palace Hotel",
+        "Faena Hotel Buenos Aires",
+        "Teatro Colón",
+        "Rojo Tango"
+      ],
+      "bestCouples": [
+        "El Querandí",
+        "Rojo Tango",
+        "Teatro Colón",
+        "Jardín Japonés"
+      ],
+      "bestKids": [
+        "Museo Argentino de Ciencias Naturales",
+        "Bioparque Temaikèn",
+        "Jardín Japonés"
+      ],
+      "bestSolo": [
+        "MALBA",
+        "Fundación PROA",
+        "Colección Amalita",
+        "Cuervo Café (Recoleta)"
+      ],
+      "bestUnique": [
+        "Museo Evita",
+        "Fundación PROA",
+        "Café de los Angelitos",
+        "Teatro Nacional Cervantes"
+      ],
+      "bestBreakfast": [
+        "La Biela",
+        "Café Tortoni",
+        "Cuervo Café (Recoleta)",
+        "Alvear Palace Hotel"
+      ],
+      "bestLunch": [
+        "Don Julio",
+        "La Cabrera (Palermo)",
+        "El Cuartito",
+        "Café Tortoni"
+      ],
+      "bestDinner": [
+        "Don Julio",
+        "La Cabrera (Palermo)",
+        "El Cuartito",
+        "Café de los Angelitos"
+      ],
+      "bestCocktails": [
+        "Florería Atlántico",
+        "Gran Bar Danzón",
+        "Presidente Bar (Recoleta)",
+        "Alvear Palace Hotel"
+      ],
+      "bestBakeries": [
+        "Atelier Fuerza (Recoleta)"
+      ],
+      "bestCoffee": [
+        "Cuervo Café (Recoleta)",
+        "Café Tortoni",
+        "La Biela"
+      ]
+    },
+    "queries": {
+      "MALBA": "MALBA Av. Figueroa Alcorta 3415 Buenos Aires",
+      "Teatro Colón": "Teatro Colón Cerrito 628 Buenos Aires",
+      "Museo Evita": "Museo Evita Lafinur 2988 Buenos Aires",
+      "Fundación PROA": "Fundación PROA Av. Pedro de Mendoza 1929 Buenos Aires",
+      "Jardín Japonés": "Jardín Japonés Av. Casares 3500 Buenos Aires",
+      "Café Tortoni": "Café Tortoni Av. de Mayo 825 Buenos Aires",
+      "Don Julio": "Don Julio Guatemala 4699 Buenos Aires",
+      "Colección Amalita": "Colección Amalita Olga Cossettini 141 Buenos Aires",
+      "Florería Atlántico": "Florería Atlántico Arroyo 872 Buenos Aires",
+      "La Biela": "La Biela Av. Pres. Manuel Quintana 600 Buenos Aires",
+      "Cuervo Café (Recoleta)": "Cuervo Café Azcuénaga 1505 Buenos Aires",
+      "La Cabrera (Palermo)": "La Cabrera José Antonio Cabrera 5099 Buenos Aires",
+      "Gran Bar Danzón": "Gran Bar Danzón Libertad 1161 Buenos Aires",
+      "Alvear Palace Hotel": "Alvear Palace Hotel Av. Alvear 1891 Buenos Aires",
+      "Museo Argentino de Ciencias Naturales": "Museo Argentino de Ciencias Naturales Av. Ángel Gallardo 470 Buenos Aires",
+      "Museo de Arte Moderno de Buenos Aires": "Museo de Arte Moderno Av. San Juan 350 Buenos Aires",
+      "Café de los Angelitos": "Café de los Angelitos Rivadavia 2100 Buenos Aires",
+      "El Querandí": "El Querandí Perú 322 Buenos Aires",
+      "Faena Hotel Buenos Aires": "Faena Hotel Martha Salotti 445 Buenos Aires",
+      "Presidente Bar (Recoleta)": "Presidente Bar Av. Presidente Manuel Quintana 188 Buenos Aires",
+      "Atelier Fuerza (Recoleta)": "Atelier Fuerza Ecuador 1283 Buenos Aires",
+      "Bioparque Temaikèn": "Bioparque Temaikèn Ruta Provincial 25 Belén de Escobar",
+      "Rojo Tango": "Rojo Tango Martha Salotti 445 Buenos Aires",
+      "El Cuartito": "El Cuartito Talcahuano 937 Buenos Aires",
+      "Teatro Nacional Cervantes": "Teatro Nacional Cervantes Libertad 815 Buenos Aires"
+    },
+    "summary": "Theatres, art museums, gardens and tango dinner shows, with parrillas, historic cafés, a bakery and cocktail bars checked against their own websites.",
+    "highlights": [
+      "Teatro Colón",
+      "MALBA",
+      "Jardín Japonés",
+      "Museo Evita"
+    ],
+    "tip": "Plan museum days around closures: MALBA is closed on Tuesdays, Museo Evita on Mondays, Fundación PROA on Mondays and Tuesdays, and Colección Amalita opens only Thursday to Sunday.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Check before you go",
+        "copy": "MALBA states 'Martes cerrado', and Colección Amalita opens Thursday to Sunday, 12:00–20:00. Fundación PROA opens Wednesday to Sunday, and Museo Evita Tuesday to Sunday."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Teatro Colón and Temaikèn",
+        "copy": "Teatro Colón sells guided-visit tickets online and in person Monday to Saturday, 9:00–16:45, entering at Libertad 621. Bioparque Temaikèn sells tickets and visit dates online."
+      },
+      {
+        "label": "Walk-in and queues",
+        "value": "No booking needed",
+        "copy": "Colección Amalita's Spanish guided tours are free with admission and need no booking. At the Jardín Japonés, ticket sales close at 18:30, and the garden says it does not close for rain."
+      },
+      {
+        "label": "Rules and policies",
+        "value": "Residency and cancellations",
+        "copy": "The Jardín Japonés charges residents less on showing a DNI, and children under 12 enter free with an adult. El Querandí lets you change your show date for free; cancellations get 50% back if made before 14:00 that day."
+      }
+    ],
+    "dek": "Anchor each day on one museum with known opening days, then book a parrilla or tango dinner show ahead for the evening.",
+    "intro": [
+      "Buenos Aires rewards you for checking closing days before you set out. MALBA, at Av. Figueroa Alcorta 3415, is closed on Tuesdays. It opens 12:00–20:00 Thursday to Monday and from 11:00 on Wednesdays, and its exhibitions 'Belkis Ayón: Mito y desobediencia' and 'Viva Frida' both run until 15 March 2027. Museo Evita in Palermo opens Tuesday to Sunday, 11:00–19:00, with public guided tours at 16:00 and an English-language tour on Fridays at 15:00. Fundación PROA in La Boca opens Wednesday to Sunday, 12:00–19:00.",
+      "Colección Amalita in Puerto Madero, formerly Colección Fortabat, opens Thursday to Sunday, 12:00–20:00, and its Spanish guided tours are free with admission and need no booking. At Teatro Colón, Cerrito 628, guided visits take in the auditorium, the main foyer and the Salón Dorado. Tickets are sold online, or in person Monday to Saturday from 9:00 to 16:45 at Libertad 621. Teatro Nacional Cervantes, at Libertad 815, runs its box office Wednesday to Sunday, 10:00–22:00, and lists guided visits on its calendar.",
+      "For families, the Museo Argentino de Ciencias Naturales at Av. Ángel Gallardo 470 lists 'Exploraciones imaginarias' from 16 October to 30 November 2026. The Jardín Japonés in Parque 3 de Febrero opens daily from 10:00 to 18:45, and ticket sales end at 18:30. Children under 12 enter free with an adult, and the garden says it does not close for rain. Bioparque Temaikèn, in Escobar outside the city, sells tickets and visit dates online and advises you to check opening days first.",
+      "For eating, Don Julio in Palermo Viejo serves daily from 11:30 to 16:00 and from 19:00 to 1:00. La Cabrera, on José Antonio Cabrera, opens every day for lunch and dinner. El Cuartito on Talcahuano, a pizzería founded in 1934, opens Tuesday to Sunday. Café Tortoni on Av. de Mayo and La Biela in Recoleta both open at 8:00, which suits an early start. For tango, El Querandí, Café de los Angelitos and Rojo Tango all stage dinner shows, and El Querandí's show starts at 21:30."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair a Teatro Colón guided visit with coffee at Café Tortoni, then book a dinner show at El Querandí."
+      ],
+      [
+        "A slower morning",
+        "Start at La Biela or Cuervo Café in Recoleta, then walk the Jardín Japonés when it opens at 10:00."
+      ],
+      [
+        "Before booking",
+        "Check closing days: MALBA is closed on Tuesdays, and Colección Amalita opens only Thursday to Sunday."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several sites could not be read: Museo Nacional de Bellas Artes, Ecoparque, Palacio Libertad and Four Seasons (403), Planetario, Biblioteca Nacional and Catedral Metropolitana (certificate errors), Las Violetas (connection refused), Ninina (rate-limited) and Casa Rosada (timeout). No current official city page for Recoleta Cemetery was found, so it is omitted. Hours were not published for Florería Atlántico, Faena, the Alvear Palace venues, Atelier Fuerza, Museo de Arte Moderno and Temaikèn, and Gran Bar Danzón gives days but no times. Don Julio, La Cabrera, Gran Bar Danzón, Florería Atlántico and Café de los Angelitos showed no 2026-dated content, so they rest on published hours or booking channels. Cuervo Café publishes one chain-wide schedule rather than branch hours.",
+  "injectionLikeText": []
+}

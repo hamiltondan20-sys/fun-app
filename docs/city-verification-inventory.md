@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 35.
-- Classifier-passed (published, not fully documented in that format): 157.
+- Source-verified (complete dated evidence format): 37.
+- Classifier-passed (published, not fully documented in that format): 155.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -101,7 +101,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Bruges, Belgium | bruges | held-back | not-reviewed | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Brussels, Belgium | brussels | held-back | not-reviewed | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Budapest, Hungary | budapest | source-verified | source-checked | 28 | 53 | 15 | 15 | None |
-| Buenos Aires, Argentina | buenos-aires | classifier-passed | not-reviewed | 0 | 5 | 15 | 3 | None |
+| Buenos Aires, Argentina | buenos-aires | source-verified | source-checked | 24 | 52 | 15 | 15 | None |
 | Bukhara, Uzbekistan | bukhara | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Busan, South Korea | busan | classifier-passed | not-reviewed | 0 | 11 | 15 | 5 | None |
 | Byron Bay, Australia | byron-bay | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
@@ -113,7 +113,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Canberra, Australia | canberra | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Cancun, Mexico | cancun | classifier-passed | not-reviewed | 0 | 18 | 15 | 7 | None |
 | Cannes, France | cannes | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Cape Town, South Africa | cape-town | classifier-passed | not-reviewed | 0 | 8 | 15 | 4 | None |
+| Cape Town, South Africa | cape-town | source-verified | source-checked | 27 | 54 | 15 | 15 | None |
 | Cappadocia, Turkey | cappadocia | held-back | not-reviewed | 0 | 3 | 15 | 3 | has 3 named places across 3 categories; needs at least 5 named places across 3 categories |
 | Capri and Neapolitan Islands, Italy | capri | held-back | not-reviewed | 0 | 3 | 15 | 3 | has 3 named places across 3 categories; needs at least 5 named places across 3 categories |
 | Cardiff, United Kingdom | cardiff | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |

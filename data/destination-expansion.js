@@ -3466,4 +3466,217 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Buenos Aires, Argentina: source review of 2026-10-25 (docs/content-research/buenos-aires-2026-10-25.md).
+  {
+    const cityKey = "Buenos Aires, Argentina";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Teatro Colón","MALBA","Jardín Japonés","Museo Evita"],
+      bestFirstTimers: ["Teatro Colón","Café Tortoni","MALBA","El Querandí"],
+      bestRestaurants: ["Don Julio","La Cabrera (Palermo)","El Cuartito","Café de los Angelitos"],
+      bestBudget: ["Jardín Japonés","El Cuartito","Museo Evita","Colección Amalita"],
+      bestLuxury: ["Alvear Palace Hotel","Faena Hotel Buenos Aires","Teatro Colón","Rojo Tango"],
+      bestCouples: ["El Querandí","Rojo Tango","Teatro Colón","Jardín Japonés"],
+      bestKids: ["Museo Argentino de Ciencias Naturales","Bioparque Temaikèn","Jardín Japonés"],
+      bestSolo: ["MALBA","Fundación PROA","Colección Amalita","Cuervo Café (Recoleta)"],
+      bestUnique: ["Museo Evita","Fundación PROA","Café de los Angelitos","Teatro Nacional Cervantes"],
+      bestBreakfast: ["La Biela","Café Tortoni","Cuervo Café (Recoleta)","Alvear Palace Hotel"],
+      bestLunch: ["Don Julio","La Cabrera (Palermo)","El Cuartito","Café Tortoni"],
+      bestDinner: ["Don Julio","La Cabrera (Palermo)","El Cuartito","Café de los Angelitos"],
+      bestCocktails: ["Florería Atlántico","Gran Bar Danzón","Presidente Bar (Recoleta)","Alvear Palace Hotel"],
+      bestBakeries: ["Atelier Fuerza (Recoleta)"],
+      bestCoffee: ["Cuervo Café (Recoleta)","Café Tortoni","La Biela"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Teatro Colón": "Teatro Colón Cerrito 628 Buenos Aires",
+      "MALBA": "MALBA Av. Figueroa Alcorta 3415 Buenos Aires",
+      "Jardín Japonés": "Jardín Japonés Av. Casares 3500 Buenos Aires",
+      "Museo Evita": "Museo Evita Lafinur 2988 Buenos Aires",
+      "Café Tortoni": "Café Tortoni Av. de Mayo 825 Buenos Aires",
+      "El Querandí": "El Querandí Perú 322 Buenos Aires",
+      "Don Julio": "Don Julio Guatemala 4699 Buenos Aires",
+      "La Cabrera (Palermo)": "La Cabrera José Antonio Cabrera 5099 Buenos Aires",
+      "El Cuartito": "El Cuartito Talcahuano 937 Buenos Aires",
+      "Café de los Angelitos": "Café de los Angelitos Rivadavia 2100 Buenos Aires",
+      "Colección Amalita": "Colección Amalita Olga Cossettini 141 Buenos Aires",
+      "Alvear Palace Hotel": "Alvear Palace Hotel Av. Alvear 1891 Buenos Aires",
+      "Faena Hotel Buenos Aires": "Faena Hotel Martha Salotti 445 Buenos Aires",
+      "Rojo Tango": "Rojo Tango Martha Salotti 445 Buenos Aires",
+      "Museo Argentino de Ciencias Naturales": "Museo Argentino de Ciencias Naturales Av. Ángel Gallardo 470 Buenos Aires",
+      "Bioparque Temaikèn": "Bioparque Temaikèn Ruta Provincial 25 Belén de Escobar",
+      "Fundación PROA": "Fundación PROA Av. Pedro de Mendoza 1929 Buenos Aires",
+      "Cuervo Café (Recoleta)": "Cuervo Café Azcuénaga 1505 Buenos Aires",
+      "Teatro Nacional Cervantes": "Teatro Nacional Cervantes Libertad 815 Buenos Aires",
+      "La Biela": "La Biela Av. Pres. Manuel Quintana 600 Buenos Aires",
+      "Florería Atlántico": "Florería Atlántico Arroyo 872 Buenos Aires",
+      "Gran Bar Danzón": "Gran Bar Danzón Libertad 1161 Buenos Aires",
+      "Presidente Bar (Recoleta)": "Presidente Bar Av. Presidente Manuel Quintana 188 Buenos Aires",
+      "Atelier Fuerza (Recoleta)": "Atelier Fuerza Ecuador 1283 Buenos Aires"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Buenos Aires" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Theatres, art museums, gardens and tango dinner shows, with parrillas, historic cafés, a bakery and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Teatro Colón","MALBA","Jardín Japonés","Museo Evita"];
+    cityGuide.tip = "Plan museum days around closures: MALBA is closed on Tuesdays, Museo Evita on Mondays, Fundación PROA on Mondays and Tuesdays, and Colección Amalita opens only Thursday to Sunday.";
+    data.destinationFacts[cityKey] = "Plan museum days around closures: MALBA is closed on Tuesdays, Museo Evita on Mondays, Fundación PROA on Mondays and Tuesdays, and Colección Amalita opens only Thursday to Sunday.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Theatres, art museums, gardens and tango dinner shows, with parrillas, historic cafés, a bakery and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Check before you go",
+        "copy": "MALBA states 'Martes cerrado', and Colección Amalita opens Thursday to Sunday, 12:00–20:00. Fundación PROA opens Wednesday to Sunday, and Museo Evita Tuesday to Sunday."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Teatro Colón and Temaikèn",
+        "copy": "Teatro Colón sells guided-visit tickets online and in person Monday to Saturday, 9:00–16:45, entering at Libertad 621. Bioparque Temaikèn sells tickets and visit dates online."
+      },
+      {
+        "label": "Walk-in and queues",
+        "value": "No booking needed",
+        "copy": "Colección Amalita's Spanish guided tours are free with admission and need no booking. At the Jardín Japonés, ticket sales close at 18:30, and the garden says it does not close for rain."
+      },
+      {
+        "label": "Rules and policies",
+        "value": "Residency and cancellations",
+        "copy": "The Jardín Japonés charges residents less on showing a DNI, and children under 12 enter free with an adult. El Querandí lets you change your show date for free; cancellations get 50% back if made before 14:00 that day."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Anchor each day on one museum with known opening days, then book a parrilla or tango dinner show ahead for the evening.",
+      intro: [
+        "Buenos Aires rewards you for checking closing days before you set out. MALBA, at Av. Figueroa Alcorta 3415, is closed on Tuesdays. It opens 12:00–20:00 Thursday to Monday and from 11:00 on Wednesdays, and its exhibitions 'Belkis Ayón: Mito y desobediencia' and 'Viva Frida' both run until 15 March 2027. Museo Evita in Palermo opens Tuesday to Sunday, 11:00–19:00, with public guided tours at 16:00 and an English-language tour on Fridays at 15:00. Fundación PROA in La Boca opens Wednesday to Sunday, 12:00–19:00.",
+        "Colección Amalita in Puerto Madero, formerly Colección Fortabat, opens Thursday to Sunday, 12:00–20:00, and its Spanish guided tours are free with admission and need no booking. At Teatro Colón, Cerrito 628, guided visits take in the auditorium, the main foyer and the Salón Dorado. Tickets are sold online, or in person Monday to Saturday from 9:00 to 16:45 at Libertad 621. Teatro Nacional Cervantes, at Libertad 815, runs its box office Wednesday to Sunday, 10:00–22:00, and lists guided visits on its calendar.",
+        "For families, the Museo Argentino de Ciencias Naturales at Av. Ángel Gallardo 470 lists 'Exploraciones imaginarias' from 16 October to 30 November 2026. The Jardín Japonés in Parque 3 de Febrero opens daily from 10:00 to 18:45, and ticket sales end at 18:30. Children under 12 enter free with an adult, and the garden says it does not close for rain. Bioparque Temaikèn, in Escobar outside the city, sells tickets and visit dates online and advises you to check opening days first.",
+        "For eating, Don Julio in Palermo Viejo serves daily from 11:30 to 16:00 and from 19:00 to 1:00. La Cabrera, on José Antonio Cabrera, opens every day for lunch and dinner. El Cuartito on Talcahuano, a pizzería founded in 1934, opens Tuesday to Sunday. Café Tortoni on Av. de Mayo and La Biela in Recoleta both open at 8:00, which suits an early start. For tango, El Querandí, Café de los Angelitos and Rojo Tango all stage dinner shows, and El Querandí's show starts at 21:30."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair a Teatro Colón guided visit with coffee at Café Tortoni, then book a dinner show at El Querandí."
+        ],
+        [
+          "A slower morning",
+          "Start at La Biela or Cuervo Café in Recoleta, then walk the Jardín Japonés when it opens at 10:00."
+        ],
+        [
+          "Before booking",
+          "Check closing days: MALBA is closed on Tuesdays, and Colección Amalita opens only Thursday to Sunday."
+        ]
+      ],
+      trust: "All 24 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
+  // Cape Town, South Africa: source review of 2026-10-25 (docs/content-research/cape-town-2026-10-25.md).
+  {
+    const cityKey = "Cape Town, South Africa";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Table Mountain Aerial Cableway","Zeitz MOCAA","Castle of Good Hope","Norval Foundation"],
+      bestFirstTimers: ["Table Mountain Aerial Cableway","Castle of Good Hope","District Six Museum","Two Oceans Aquarium"],
+      bestRestaurants: ["FYN","La Colombe","The Pot Luck Club","Bo-Kaap Kombuis"],
+      bestBudget: ["Castle of Good Hope","Iziko South African Museum","Oranjezicht City Farm Market","Iziko Bo-Kaap Museum"],
+      bestLuxury: ["La Colombe","FYN","Planet Bar (Belmond Mount Nelson Hotel)"],
+      bestCouples: ["Table Mountain Aerial Cableway","Planet Bar (Belmond Mount Nelson Hotel)","Harbour House (Camps Bay)","The Gin Bar"],
+      bestKids: ["Two Oceans Aquarium","Cape Town Science Centre","Zeitz MOCAA","Iziko South African Museum"],
+      bestSolo: ["Iziko South African National Gallery","Iziko Slave Lodge","District Six Museum","Neighbourgoods Market (Old Biscuit Mill)"],
+      bestUnique: ["Zeitz MOCAA","Norval Foundation","Oranjezicht City Farm Market","Neighbourgoods Market (Old Biscuit Mill)"],
+      bestBreakfast: ["Hemelhuijs","Schoon (Sea Point)","Knead (Muizenberg)","Kloof Street House"],
+      bestLunch: ["Bo-Kaap Kombuis","Harbour House (Kalk Bay)","Bukhara (Church Street)","Hemelhuijs"],
+      bestDinner: ["FYN","The Pot Luck Club","Harbour House (V&A Waterfront)","Bukhara (Church Street)"],
+      bestCocktails: ["The Gin Bar","Planet Bar (Belmond Mount Nelson Hotel)","Harbour House (Camps Bay)","Kloof Street House"],
+      bestBakeries: ["Schoon (Sea Point)","Knead (Muizenberg)","Oranjezicht City Farm Market"],
+      bestCoffee: ["Schoon (Sea Point)","Knead (Muizenberg)","Hemelhuijs"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Table Mountain Aerial Cableway": "Table Mountain Aerial Cableway 5821 Tafelberg Rd Cape Town",
+      "Zeitz MOCAA": "Zeitz MOCAA South Arm Road V&A Waterfront Cape Town",
+      "Castle of Good Hope": "Castle of Good Hope Castle Street Darling Street Cape Town",
+      "Norval Foundation": "Norval Foundation 4 Steenberg Road Tokai Cape Town",
+      "District Six Museum": "District Six Museum 25A Buitenkant Street Cape Town",
+      "Two Oceans Aquarium": "Two Oceans Aquarium Dock Road V&A Waterfront Cape Town",
+      "FYN": "FYN Restaurant 37 Parliament Street Cape Town",
+      "La Colombe": "La Colombe Silvermist Estate Hout Bay Cape Town",
+      "The Pot Luck Club": "The Pot Luck Club 373 Albert Road Woodstock Cape Town",
+      "Bo-Kaap Kombuis": "Bo-Kaap Kombuis 7 August Street Schotsche Kloof Cape Town",
+      "Iziko South African Museum": "Iziko South African Museum 25 Queen Victoria Street Cape Town",
+      "Oranjezicht City Farm Market": "Oranjezicht City Farm Market Granger Bay Boulevard Dock Road Cape Town",
+      "Iziko Bo-Kaap Museum": "Iziko Bo-Kaap Museum 71 Wale Street Cape Town",
+      "Planet Bar (Belmond Mount Nelson Hotel)": "Planet Bar Mount Nelson 76 Orange Street Cape Town",
+      "Harbour House (Camps Bay)": "Harbour House 87 Victoria Road Camps Bay Cape Town",
+      "The Gin Bar": "The Gin Bar 64a Wale Street Cape Town",
+      "Cape Town Science Centre": "Cape Town Science Centre 370B Main Road Observatory Cape Town",
+      "Iziko South African National Gallery": "Iziko South African National Gallery Government Avenue Cape Town",
+      "Iziko Slave Lodge": "Iziko Slave Lodge Adderley Street Wale Street Cape Town",
+      "Neighbourgoods Market (Old Biscuit Mill)": "Neighbourgoods Market Old Biscuit Mill 373 Albert Road Woodstock Cape Town",
+      "Hemelhuijs": "Hemelhuijs 71 Waterkant Street Cape Town",
+      "Schoon (Sea Point)": "Schoon The Point Mall 76 Regent Road Sea Point Cape Town",
+      "Knead (Muizenberg)": "Knead Bakery Beach Road Muizenberg Cape Town",
+      "Kloof Street House": "Kloof Street House 30 Kloof Street Cape Town",
+      "Harbour House (Kalk Bay)": "Harbour House Kalk Bay Harbour Kalk Bay Cape Town",
+      "Bukhara (Church Street)": "Bukhara 33 Church Street Cape Town",
+      "Harbour House (V&A Waterfront)": "Harbour House Quay Four V&A Waterfront Cape Town"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Cape Town" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Table Mountain's cableway, museums, galleries and food markets, with breakfast cafés, bakeries, dinners and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Table Mountain Aerial Cableway","Zeitz MOCAA","Castle of Good Hope","Norval Foundation"];
+    cityGuide.tip = "The Table Mountain Aerial Cableway says it may close in bad weather, so check its live status on the day; standard tickets stay valid for 7 days if the mountain is clouded in.";
+    data.destinationFacts[cityKey] = "The Table Mountain Aerial Cableway says it may close in bad weather, so check its live status on the day; standard tickets stay valid for 7 days if the mountain is clouded in.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Table Mountain's cableway, museums, galleries and food markets, with breakfast cafés, bakeries, dinners and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mon–Tue at Norval; Mon at Bo-Kaap Kombuis; Sun at the Science Centre",
+        "copy": "Norval Foundation is closed Monday and Tuesday, Bo-Kaap Kombuis is closed on Mondays, and the Cape Town Science Centre is closed on Sundays. The Iziko museums and Castle of Good Hope close on Christmas Day and Workers' Day."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book ahead for District Six and fine dining",
+        "copy": "District Six Museum says bookings are essential via Quicket, and Bo-Kaap Kombuis says bookings are essential. FYN, La Colombe and The Pot Luck Club take deposits, with FYN and La Colombe refunding cancellations made more than 48 hours ahead."
+      },
+      {
+        "label": "Walk-ins and queues",
+        "value": "Cableway tickets valid 7 days",
+        "copy": "Standard Table Mountain Aerial Cableway tickets are valid for 7 days, while Fast Track needs an online timeslot. The Gin Bar welcomes walk-ins, entered through the Honest Chocolate cafe on Wale Street."
+      },
+      {
+        "label": "Age rules",
+        "value": "Under-18s free at Zeitz MOCAA",
+        "copy": "Zeitz MOCAA admits visitors under 18 free. La Colombe does not admit children under eight, and Bukhara (Church Street) does not allow under-12s at dinner service."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Pair the cableway with a weather-proof museum backup, and book dinners and District Six Museum ahead.",
+      intro: [
+        "Start with the Table Mountain Aerial Cableway on Tafelberg Road, where first cars go up at 08:30 and the operator warns the Cableway may close in bad weather. Standard tickets are valid for 7 days, which gives you room if cloud sets in, while Fast Track tickets need an online timeslot. On a closed-mountain day, the Two Oceans Aquarium on Dock Road at the V&A Waterfront is open daily from 9:30am to 6pm, and the Cape Town Science Centre in Observatory runs Monday to Saturday.",
+        "For art, Zeitz MOCAA in the Silo District opens daily from 10:00 to 18:00 with last entry at 17:30, and visitors under 18 enter free. Its current programme includes 'A Protea Is Not a Flower', running until 20 June 2027, with 'Were It Not for Shadows …' opening on 12 November 2026. Out in Tokai, the Norval Foundation is closed Monday and Tuesday; its Irma Stern exhibition 'Looking Closer to Home' runs until 10 January 2027.",
+        "History sits close together in the city centre. The Castle of Good Hope opens daily from 09h00 to 16h00, with last tickets at 15:45. The District Six Museum on Buitenkant Street opens Monday to Saturday and says bookings are essential. Iziko runs the South African Museum on Queen Victoria Street, the National Gallery on Government Avenue, the Slave Lodge and the Bo-Kaap Museum on Wale Street, all closed on Christmas Day and Workers' Day. You can then walk on to Bo-Kaap Kombuis on August Street, which is closed on Mondays and asks you to book.",
+        "For mornings, Hemelhuijs on Waterkant Street opens at 9am on weekdays, and Schoon in Sea Point opens at 07:00. The Oranjezicht City Farm Market moved to its new Granger Bay Boulevard site in December 2025 and trades on Saturday and Sunday mornings, plus a Wednesday night market outside June and July. In the evening, FYN serves dinner Monday to Saturday, The Pot Luck Club takes a deposit per guest, and The Gin Bar on Wale Street welcomes walk-ins from 3pm Thursday to Saturday."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Ride the Table Mountain Aerial Cableway early, then spend the afternoon at the Castle of Good Hope and the District Six Museum."
+        ],
+        [
+          "A slower morning",
+          "Have breakfast at Hemelhuijs or Schoon (Sea Point), then browse the Oranjezicht City Farm Market on a Saturday or Sunday."
+        ],
+        [
+          "Before booking",
+          "Check the cableway's weather status on the day, avoid Norval Foundation on Mondays and Tuesdays, and expect deposits at FYN, La Colombe and The Pot Luck Club."
+        ]
+      ],
+      trust: "All 27 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

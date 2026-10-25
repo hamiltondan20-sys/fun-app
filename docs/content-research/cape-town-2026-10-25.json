@@ -1,0 +1,752 @@
+{
+  "city": "Cape Town, South Africa",
+  "checkedOn": "2026-10-25",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Table Mountain Aerial Cableway",
+      "kind": "scenic",
+      "url": "https://www.tablemountain.net/",
+      "sourceType": "operator's own site",
+      "address": "5821 Tafelberg Rd, Table Mountain (Nature Reserve), Cape Town, 8001",
+      "operatingEvidence": "Live operating panel with first up 08:30 and last down 19:00; latest blog post dated 20 October 2026; student and senior specials valid 1 July 2026 to 30 June 2027. The Cableway \"may be closed in bad weather\".",
+      "hours": "First up 08:30, last up 18:00, last down 19:00 (as shown on 25 October 2026; weather-dependent)",
+      "confidence": "high"
+    },
+    {
+      "name": "Zeitz MOCAA",
+      "kind": "museum",
+      "url": "https://zeitzmocaa.museum/plan-your-visit/",
+      "sourceType": "operator's own site",
+      "address": "Silo District, South Arm Road, V&A Waterfront, Cape Town, 8002",
+      "operatingEvidence": "Current programme includes 'A Protea Is Not a Flower' (16 Oct 2025 to 20 Jun 2027) and 'Were It Not for Shadows …' (12 Nov 2026 to 29 Aug 2027); reduced on-site rate of \"R199\" for South African and African citizens from 1 September 2026.",
+      "hours": "Daily 10:00-18:00, \"Last entry at 5:30 PM\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Two Oceans Aquarium",
+      "kind": "museum",
+      "url": "https://www.aquarium.co.za/",
+      "sourceType": "operator's own site",
+      "address": "Dock Road, V&A Waterfront, Cape Town, South Africa",
+      "operatingEvidence": "News posts dated 17, 20 and 23 October 2026; online ticket shop linked.",
+      "hours": "\"Open daily, 9:30am – 6pm\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Iziko South African Museum",
+      "kind": "museum",
+      "url": "https://www.iziko.org.za/museums/south-african-museum/",
+      "sourceType": "official public operator (Iziko Museums of South Africa)",
+      "address": "25 Queen Victoria Street, Gardens, Cape Town",
+      "operatingEvidence": "\"Now Showing\" lists 'The Sea and Us', 'Humanity' and 'Making Freedom' (no run dates given); published fee table (international adults R100).",
+      "hours": "09h00-17h00 Monday to Sunday; winter weekends 08h30-16h00; closed Christmas Day and Workers' Day",
+      "confidence": "medium"
+    },
+    {
+      "name": "Iziko Bo-Kaap Museum",
+      "kind": "museum",
+      "url": "https://www.iziko.org.za/museums/bo-kaap-museum/",
+      "sourceType": "official public operator (Iziko Museums of South Africa)",
+      "address": "71 Wale Street, Bo-Kaap, Cape Town",
+      "operatingEvidence": "Current exhibition 'The Send Off: Interconnections of Culture and Faith' (no dates given); published fee table.",
+      "hours": "Monday to Saturday 09h00-17h00 (winter Saturdays 08h30-16h00); closed 25 December, 1 May and 1-2 January",
+      "confidence": "medium"
+    },
+    {
+      "name": "Iziko South African National Gallery",
+      "kind": "museum",
+      "url": "https://www.iziko.org.za/museums/south-african-national-gallery/",
+      "sourceType": "official public operator (Iziko Museums of South Africa)",
+      "address": "Government Avenue, Company's Garden, Cape Town",
+      "operatingEvidence": "\"Now Showing\" lists 'Modernism and its Discontents: South African Art from the Permanent Collection ... 1925-2025' (run dates not given).",
+      "hours": "09h00-17h00 Monday to Sunday; winter weekends 08h30-16h00; closed Christmas Day and Workers' Day",
+      "confidence": "medium"
+    },
+    {
+      "name": "Iziko Slave Lodge",
+      "kind": "museum",
+      "url": "https://www.iziko.org.za/museums/slave-lodge/",
+      "sourceType": "official public operator (Iziko Museums of South Africa)",
+      "address": "Corner Adderley and Wale Streets, Cape Town",
+      "operatingEvidence": "Published hours and fee table; lower level \"explores the history of slavery in South Africa\". No dated 2026 exhibition shown.",
+      "hours": "09h00-17h00 Monday to Saturday (winter Saturdays 08h30-16h00); closed Christmas Day and Workers' Day",
+      "confidence": "medium"
+    },
+    {
+      "name": "District Six Museum",
+      "kind": "museum",
+      "url": "https://www.districtsix.co.za/",
+      "sourceType": "operator's own site",
+      "address": "25A Buitenkant Street, Cape Town, 8001",
+      "operatingEvidence": "Booking notice: \"Bookings are essential\" via Quicket; warns \"BEWARE OF FRAUDULENT TICKET VENDORS!\". No 2026-dated content.",
+      "hours": "09h00-16h00, Monday to Saturday",
+      "confidence": "medium"
+    },
+    {
+      "name": "Castle of Good Hope",
+      "kind": "landmark",
+      "url": "https://www.castleofgoodhope.co.za/",
+      "sourceType": "operator's own site",
+      "address": "Corner of Castle and Darling Streets, Cape Town, 8001",
+      "operatingEvidence": "\"Military_Heritage_Weekend_2026_Media_Pack\" and a Heritage Month spring special under \"What's New\"; published ticket prices, last ticket 15:45.",
+      "hours": "\"Open between 09h00 and 16h00\" Monday to Sunday; \"Closed on Christmas Day and Workers' Day\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Norval Foundation",
+      "kind": "museum",
+      "url": "https://www.norvalfoundation.org/",
+      "sourceType": "operator's own site",
+      "address": "4 Steenberg Road, Tokai, Cape Town",
+      "operatingEvidence": "Current exhibitions include Irma Stern 'Looking Closer to Home' (2 Oct 2026 to 10 Jan 2027) and Kate Gottgens 'Unsteady Realms' (15 Sep 2026 to 7 Feb 2027); tickets via Webtickets.",
+      "hours": "Mon-Tue closed; Wed-Sat 10:00-17:00; Sundays and public holidays 10:00-16:00; last admission 30 minutes before closing",
+      "confidence": "high"
+    },
+    {
+      "name": "Cape Town Science Centre",
+      "kind": "museum",
+      "url": "https://www.ctsc.org.za/",
+      "sourceType": "operator's own site",
+      "address": "370B Main Road, Observatory",
+      "operatingEvidence": "Merck Curiosity Cube visit 27 October to 5 November 2026; \"Tickets available online\" via WebTickets.",
+      "hours": "\"Monday to Saturday: 9:00 – 16:30\"; \"Sundays: Closed\"; public holidays 10:00-16:30; closed 25 December and 1 January",
+      "confidence": "high"
+    },
+    {
+      "name": "Oranjezicht City Farm Market",
+      "kind": "market",
+      "url": "https://www.ozcf.co.za/",
+      "sourceType": "operator's own site",
+      "address": "Cnr Granger Bay Boulevard and Dock Rd, V&A Waterfront",
+      "operatingEvidence": "On 6 December 2025 \"the Market moved across the road to its brand-new market space!\"; weekly market schedule published.",
+      "hours": "Saturday 08:00-14:30; Sunday 08:30-14:30; Wednesday Night Market 16:00-21:30 (closed June and July)",
+      "confidence": "high"
+    },
+    {
+      "name": "Neighbourgoods Market (Old Biscuit Mill)",
+      "kind": "market",
+      "url": "https://theoldbiscuitmill.co.za/",
+      "sourceType": "operator's own site (The Old Biscuit Mill / Neighbourgoods Market)",
+      "address": "373-375 Albert Road, Woodstock, Cape Town (neighbourgoodsmarket.co.za gives \"375 ALBERT RD WOODSTOCK, CAPE TOWN\")",
+      "operatingEvidence": "Mill site notes no parking inside \"on Saturdays, because the Neighbourgoods Market takes over the parking areas\"; footer \"© The Old Biscuit Mill 2026\".",
+      "hours": "not published (Saturday market implied)",
+      "confidence": "medium"
+    },
+    {
+      "name": "FYN",
+      "kind": "meal",
+      "url": "https://www.fynrestaurant.com/",
+      "sourceType": "operator's own site",
+      "address": "5th Floor, Speakers Corner, 37 Parliament Str, Cape Town, 8001",
+      "operatingEvidence": "\"Booking now open for summer!\"; deposit policy published; footer \"© 2026 FYN RESTAURANT\".",
+      "hours": "Monday to Saturday; lunch seating 12:00-14:00; dinner seating 18:00-20:30",
+      "confidence": "high"
+    },
+    {
+      "name": "The Pot Luck Club",
+      "kind": "meal",
+      "url": "https://thepotluckclub.co.za/contact/",
+      "sourceType": "operator's own site",
+      "address": "SILO TOP FLOOR, THE OLD BISCUIT MILL, 373 – 375 ALBERT ROAD WOODSTOCK, CAPE TOWN",
+      "operatingEvidence": "Bookings with R750-per-guest deposit; collaboration dinner \"PLC x CW Beau Constantia\" on 13 and 14 November 2026 at \"R1950 per person\".",
+      "hours": "\"Monday to Saturday Dinner and Lunch\"; \"Sunday Brunch 11h00\"",
+      "confidence": "high"
+    },
+    {
+      "name": "La Colombe",
+      "kind": "meal",
+      "url": "https://www.lacolombe.restaurant/la-colombe",
+      "sourceType": "operator's own site",
+      "address": "Silvermist Estate, Hout Bay, Western Cape (no street number published)",
+      "operatingEvidence": "Spring Lunch Menu R1695 p.p. \"Valid until 30 November 2026\"; online booking with deposit; \"no children under the age of eight (8) are allowed\".",
+      "hours": "not published (spring menu is \"Weekdays Lunch Only\")",
+      "confidence": "medium"
+    },
+    {
+      "name": "Kloof Street House",
+      "kind": "meal",
+      "url": "https://www.kloofstreethouse.co.za/",
+      "sourceType": "operator's own site",
+      "address": "30 Kloof Street, Gardens, Cape Town",
+      "operatingEvidence": "Published weekly hours and reservations page; image uploaded October 2026.",
+      "hours": "\"Mondays 11:00 till late\"; \"Tuesday to Sunday 10:00 till late\"; kitchen closes 00:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bukhara (Church Street)",
+      "kind": "meal",
+      "url": "https://www.bukhara.com/",
+      "sourceType": "operator's own site",
+      "address": "33 Church Street, Cape Town",
+      "operatingEvidence": "Published hours and booking rules (tables of 10+ need set menu and deposit; under-12s not allowed at dinner); guest reviews on its own site dated through July 2026.",
+      "hours": "Wed-Sat 11am-11pm; Sun-Tue 11am-10pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Hemelhuijs",
+      "kind": "cafe",
+      "url": "https://www.hemelhuijs.co.za/",
+      "sourceType": "operator's own site",
+      "address": "71 Waterkant Street, Cape Town, WC, 8001, South Africa",
+      "operatingEvidence": "Published weekly hours and Dineplan reservations link; newest menu file is Summer 2025 (no 2026 content).",
+      "hours": "Mon-Fri 9am-4pm; Sat 9am-3pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bo-Kaap Kombuis",
+      "kind": "meal",
+      "url": "https://www.bokaapkombuis.co.za/",
+      "sourceType": "operator's own site",
+      "address": "7 August St, Schotsche Kloof, Cape Town, 8001",
+      "operatingEvidence": "\"Bookings Are Essential To Avoid Disappointment!\"; published weekly hours; footer \"Copyright © 2026\".",
+      "hours": "Mon closed; Tue-Sat 12PM-4PM and 6-9:30PM; Sun 12PM-3PM",
+      "confidence": "medium"
+    },
+    {
+      "name": "Harbour House (V&A Waterfront)",
+      "kind": "meal",
+      "url": "https://www.harbourhouse.co.za/",
+      "sourceType": "operator's own site",
+      "address": "Quay Four, Ground Floor, V&A Waterfront",
+      "operatingEvidence": "Main, wine, cocktail and sommelier menus dated May 2026; reservations by phone and email.",
+      "hours": "Monday-Sunday 12h00-23h00",
+      "confidence": "high"
+    },
+    {
+      "name": "Harbour House (Camps Bay)",
+      "kind": "meal",
+      "url": "https://www.harbourhouse.co.za/",
+      "sourceType": "operator's own site",
+      "address": "Shop 4, Ground Floor, The Promenade, 87 Victoria Road, Camps Bay",
+      "operatingEvidence": "Main, wine, cocktail and sommelier menus dated May 2026.",
+      "hours": "Monday-Sunday 11h00-23h00",
+      "confidence": "high"
+    },
+    {
+      "name": "Harbour House (Kalk Bay)",
+      "kind": "meal",
+      "url": "https://www.harbourhouse.co.za/",
+      "sourceType": "operator's own site",
+      "address": "Kalk Bay Harbour, Kalk Bay (no street number published)",
+      "operatingEvidence": "Main, wine and cocktail menus dated May 2026; reservations by phone and email.",
+      "hours": "Monday-Sunday 12h00-22h00",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Gin Bar",
+      "kind": "bar",
+      "url": "https://www.theginbar.co.za/",
+      "sourceType": "operator's own site",
+      "address": "64a Wale Street, Cape Town (enter through Honest Chocolate cafe)",
+      "operatingEvidence": "Published hours and \"Walk-in's Welcome\"; notes it may close earlier when quiet in winter; footer \"© 2026 The Gin Bar\".",
+      "hours": "Mon-Wed 5pm-1:00am; Thu-Sat 3pm-1:00am",
+      "confidence": "medium"
+    },
+    {
+      "name": "Planet Bar (Belmond Mount Nelson Hotel)",
+      "kind": "bar",
+      "url": "https://www.belmond.com/hotels/africa/south-africa/cape-town/belmond-mount-nelson-hotel/",
+      "sourceType": "operator's own site (Belmond)",
+      "address": "76 Orange Street, Gardens, Cape Town, 8001",
+      "operatingEvidence": "Planet Bar listed for \"cocktails and champagne\"; hotel notes it was listed in The 50 Best Hotels 2026 and hosts Confections x Collections 2026 on 5-7 November.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Schoon (Sea Point)",
+      "kind": "bakery",
+      "url": "https://www.schoon.co.za/",
+      "sourceType": "operator's own site",
+      "address": "The Point Mall, 76 Regent Road, Sea Point, Cape Town",
+      "operatingEvidence": "Winter menu PDFs uploaded May 2026; footer \"Copyright 2026 @ Schoon\"; branch hours published.",
+      "hours": "Mon-Fri 07:00-17:00; Sat-Sun 08:00-16:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Knead (Muizenberg)",
+      "kind": "bakery",
+      "url": "https://www.kneadbakery.co.za/",
+      "sourceType": "operator's own site",
+      "address": "MUIZENBERG (SURFER'S CORNER) Beach Road, Muizenberg Cape Town",
+      "operatingEvidence": "Hours notice with last orders and public-holiday hours; \"CLOSED 25 DECEMBER\". No 2026-dated content.",
+      "hours": "Mon-Sun 7AM-5.30PM (last orders 5.00PM); public holidays 7AM-4.30",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Cape of Good Hope",
+      "reason": "SANParks (Table Mountain National Park) page returned HTTP 403; not bypassed.",
+      "url": "https://www.sanparks.org/parks/table-mountain"
+    },
+    {
+      "name": "Cape Point (Flying Dutchman Funicular)",
+      "reason": "Official site gives no exact address (\"within the southern section of Table Mountain National park\"); also states the funicular is temporarily closed from Monday 26 October 2026 for track-sensor maintenance with no reopening date (shuttle runs).",
+      "url": "https://www.capepoint.co.za/"
+    },
+    {
+      "name": "Boulders Beach (penguins)",
+      "reason": "Operated by SANParks; site returned HTTP 403; not bypassed.",
+      "url": "https://www.sanparks.org/parks/table-mountain"
+    },
+    {
+      "name": "V&A Waterfront",
+      "reason": "Repeated HTTP 429 Too Many Requests; not readable.",
+      "url": "https://www.waterfront.co.za/"
+    },
+    {
+      "name": "Robben Island Museum",
+      "reason": "Departure point named (Nelson Mandela Gateway) but no 2026 content and conflicting tour times; booking only via external site; insufficient current-operation evidence.",
+      "url": "https://www.robben-island.org.za/"
+    },
+    {
+      "name": "Kirstenbosch National Botanical Garden",
+      "reason": "SANBI pages read do not publish Kirstenbosch's address or hours (only 2026 concert listings); kirstenbosch.co.za redirects to an unrelated site and was not followed.",
+      "url": "https://www.sanbi.org/gardens/kirstenbosch/"
+    },
+    {
+      "name": "Groot Constantia",
+      "reason": "Only a postal address (\"Private Bag X1, Constantia\") published; no street address.",
+      "url": "https://www.grootconstantia.co.za/contact-us/"
+    },
+    {
+      "name": "Chapman's Peak Drive",
+      "reason": "No address, operator or hours published; road status showed \"CLOSED\" (updated 25/10/2026) with no reason.",
+      "url": "https://www.chapmanspeakdrive.co.za/"
+    },
+    {
+      "name": "Tjing Tjing",
+      "reason": "Closed permanently: site says it \"will be closing its doors on Saturday, 18 April 2026\".",
+      "url": "https://www.tjingtjing.co.za/"
+    },
+    {
+      "name": "Jason Bakery",
+      "reason": "Site shows no address or hours, only that a store \"will launch in November\".",
+      "url": "https://www.jasonbakery.com/"
+    },
+    {
+      "name": "Truth Coffee",
+      "reason": "Home page lists no address or hours; contact page returned HTTP 429.",
+      "url": "https://truth.coffee/"
+    },
+    {
+      "name": "Bootlegger Coffee Company",
+      "reason": "Repeated HTTP 429 Too Many Requests.",
+      "url": "https://www.bootlegger.coffee/"
+    },
+    {
+      "name": "Espresso Lab Microroasters",
+      "reason": "Repeated HTTP 429 Too Many Requests.",
+      "url": "https://www.espressolabmicroroasters.com/"
+    },
+    {
+      "name": "Deluxe Coffeeworks",
+      "reason": "HTTP 429 Too Many Requests.",
+      "url": "https://www.deluxecoffeeworks.co.za/"
+    },
+    {
+      "name": "Origin Coffee Roasting",
+      "reason": "HTTP 429 Too Many Requests.",
+      "url": "https://www.originroasting.co.za/"
+    },
+    {
+      "name": "Rosetta Roastery",
+      "reason": "Home page gives no café address or hours; locations page returned HTTP 429.",
+      "url": "https://www.rosettaroastery.com/pages/locations"
+    },
+    {
+      "name": "Tribe Coffee",
+      "reason": "HTTP 429 Too Many Requests.",
+      "url": "https://www.tribecoffee.co.za/"
+    },
+    {
+      "name": "Vida e Caffè (Kloof Street)",
+      "reason": "Home page lists no store address or hours (only head-office address).",
+      "url": "https://www.vidaecaffe.com/"
+    },
+    {
+      "name": "Clarke's Bar & Dining Room",
+      "reason": "Home page shows no address, hours or dated content.",
+      "url": "https://www.clarkesdining.co.za/"
+    },
+    {
+      "name": "Loading Bay",
+      "reason": "HTTP 429 Too Many Requests.",
+      "url": "https://www.loadingbay.co.za/"
+    },
+    {
+      "name": "Jarryd's",
+      "reason": "Domain did not resolve (ENOTFOUND).",
+      "url": "https://www.jarryds.co.za/"
+    },
+    {
+      "name": "Cause | Effect Cocktail Kitchen",
+      "reason": "Domain did not resolve (DNS error).",
+      "url": "https://www.causeeffect.co.za/"
+    },
+    {
+      "name": "The Athletic Club & Social",
+      "reason": "Fetch failed with no output.",
+      "url": "https://www.theathletic.club/"
+    },
+    {
+      "name": "World of Birds",
+      "reason": "Redirected to a different domain (worldofbirds.co.za); not followed within time.",
+      "url": "https://www.worldofbirds.org.za/"
+    },
+    {
+      "name": "Table Mountain",
+      "reason": "Covered by the confirmed operator entry 'Table Mountain Aerial Cableway'.",
+      "url": "https://www.tablemountain.net/"
+    },
+    {
+      "name": "a Cape Malay or waterfront dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "City Bowl local table",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Cape Town signature dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided City Bowl walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "V&A Waterfront public viewpoint",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market or picnic near Camps Bay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Table Mountain",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "a clear Table Mountain viewpoint",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Destination dinner near Camps Bay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset around Cape of Good Hope",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "City Bowl dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Table Mountain",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around V&A Waterfront",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Camps Bay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Table Mountain",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "City Bowl cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided V&A Waterfront route",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "V&A Waterfront at a quieter hour",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Camps Bay local rhythm",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near City Bowl",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "V&A Waterfront bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Table Mountain",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "a Cape Malay or waterfront lunch",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Cape of Good Hope",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Camps Bay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Evening table in City Bowl",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near City Bowl",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around V&A Waterfront",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near V&A Waterfront",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near City Bowl",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "V&A Waterfront morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Table Mountain",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near City Bowl",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in V&A Waterfront",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Camps Bay",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Table Mountain Aerial Cableway",
+        "Zeitz MOCAA",
+        "Castle of Good Hope",
+        "Norval Foundation"
+      ],
+      "bestFirstTimers": [
+        "Table Mountain Aerial Cableway",
+        "Castle of Good Hope",
+        "District Six Museum",
+        "Two Oceans Aquarium"
+      ],
+      "bestRestaurants": [
+        "FYN",
+        "La Colombe",
+        "The Pot Luck Club",
+        "Bo-Kaap Kombuis"
+      ],
+      "bestBudget": [
+        "Castle of Good Hope",
+        "Iziko South African Museum",
+        "Oranjezicht City Farm Market",
+        "Iziko Bo-Kaap Museum"
+      ],
+      "bestLuxury": [
+        "La Colombe",
+        "FYN",
+        "Planet Bar (Belmond Mount Nelson Hotel)"
+      ],
+      "bestCouples": [
+        "Table Mountain Aerial Cableway",
+        "Planet Bar (Belmond Mount Nelson Hotel)",
+        "Harbour House (Camps Bay)",
+        "The Gin Bar"
+      ],
+      "bestKids": [
+        "Two Oceans Aquarium",
+        "Cape Town Science Centre",
+        "Zeitz MOCAA",
+        "Iziko South African Museum"
+      ],
+      "bestSolo": [
+        "Iziko South African National Gallery",
+        "Iziko Slave Lodge",
+        "District Six Museum",
+        "Neighbourgoods Market (Old Biscuit Mill)"
+      ],
+      "bestUnique": [
+        "Zeitz MOCAA",
+        "Norval Foundation",
+        "Oranjezicht City Farm Market",
+        "Neighbourgoods Market (Old Biscuit Mill)"
+      ],
+      "bestBreakfast": [
+        "Hemelhuijs",
+        "Schoon (Sea Point)",
+        "Knead (Muizenberg)",
+        "Kloof Street House"
+      ],
+      "bestLunch": [
+        "Bo-Kaap Kombuis",
+        "Harbour House (Kalk Bay)",
+        "Bukhara (Church Street)",
+        "Hemelhuijs"
+      ],
+      "bestDinner": [
+        "FYN",
+        "The Pot Luck Club",
+        "Harbour House (V&A Waterfront)",
+        "Bukhara (Church Street)"
+      ],
+      "bestCocktails": [
+        "The Gin Bar",
+        "Planet Bar (Belmond Mount Nelson Hotel)",
+        "Harbour House (Camps Bay)",
+        "Kloof Street House"
+      ],
+      "bestBakeries": [
+        "Schoon (Sea Point)",
+        "Knead (Muizenberg)",
+        "Oranjezicht City Farm Market"
+      ],
+      "bestCoffee": [
+        "Schoon (Sea Point)",
+        "Knead (Muizenberg)",
+        "Hemelhuijs"
+      ]
+    },
+    "queries": {
+      "Table Mountain Aerial Cableway": "Table Mountain Aerial Cableway 5821 Tafelberg Rd Cape Town",
+      "Zeitz MOCAA": "Zeitz MOCAA South Arm Road V&A Waterfront Cape Town",
+      "Two Oceans Aquarium": "Two Oceans Aquarium Dock Road V&A Waterfront Cape Town",
+      "Iziko South African Museum": "Iziko South African Museum 25 Queen Victoria Street Cape Town",
+      "Iziko Bo-Kaap Museum": "Iziko Bo-Kaap Museum 71 Wale Street Cape Town",
+      "Iziko South African National Gallery": "Iziko South African National Gallery Government Avenue Cape Town",
+      "Iziko Slave Lodge": "Iziko Slave Lodge Adderley Street Wale Street Cape Town",
+      "District Six Museum": "District Six Museum 25A Buitenkant Street Cape Town",
+      "Castle of Good Hope": "Castle of Good Hope Castle Street Darling Street Cape Town",
+      "Norval Foundation": "Norval Foundation 4 Steenberg Road Tokai Cape Town",
+      "Cape Town Science Centre": "Cape Town Science Centre 370B Main Road Observatory Cape Town",
+      "Oranjezicht City Farm Market": "Oranjezicht City Farm Market Granger Bay Boulevard Dock Road Cape Town",
+      "Neighbourgoods Market (Old Biscuit Mill)": "Neighbourgoods Market Old Biscuit Mill 373 Albert Road Woodstock Cape Town",
+      "FYN": "FYN Restaurant 37 Parliament Street Cape Town",
+      "The Pot Luck Club": "The Pot Luck Club 373 Albert Road Woodstock Cape Town",
+      "La Colombe": "La Colombe Silvermist Estate Hout Bay Cape Town",
+      "Kloof Street House": "Kloof Street House 30 Kloof Street Cape Town",
+      "Bukhara (Church Street)": "Bukhara 33 Church Street Cape Town",
+      "Hemelhuijs": "Hemelhuijs 71 Waterkant Street Cape Town",
+      "Bo-Kaap Kombuis": "Bo-Kaap Kombuis 7 August Street Schotsche Kloof Cape Town",
+      "Harbour House (V&A Waterfront)": "Harbour House Quay Four V&A Waterfront Cape Town",
+      "Harbour House (Camps Bay)": "Harbour House 87 Victoria Road Camps Bay Cape Town",
+      "Harbour House (Kalk Bay)": "Harbour House Kalk Bay Harbour Kalk Bay Cape Town",
+      "The Gin Bar": "The Gin Bar 64a Wale Street Cape Town",
+      "Planet Bar (Belmond Mount Nelson Hotel)": "Planet Bar Mount Nelson 76 Orange Street Cape Town",
+      "Schoon (Sea Point)": "Schoon The Point Mall 76 Regent Road Sea Point Cape Town",
+      "Knead (Muizenberg)": "Knead Bakery Beach Road Muizenberg Cape Town"
+    },
+    "summary": "Table Mountain's cableway, museums, galleries and food markets, with breakfast cafés, bakeries, dinners and cocktail bars checked against their own websites.",
+    "highlights": [
+      "Table Mountain Aerial Cableway",
+      "Zeitz MOCAA",
+      "Castle of Good Hope",
+      "Norval Foundation"
+    ],
+    "tip": "The Table Mountain Aerial Cableway says it may close in bad weather, so check its live status on the day; standard tickets stay valid for 7 days if the mountain is clouded in.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mon–Tue at Norval; Mon at Bo-Kaap Kombuis; Sun at the Science Centre",
+        "copy": "Norval Foundation is closed Monday and Tuesday, Bo-Kaap Kombuis is closed on Mondays, and the Cape Town Science Centre is closed on Sundays. The Iziko museums and Castle of Good Hope close on Christmas Day and Workers' Day."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book ahead for District Six and fine dining",
+        "copy": "District Six Museum says bookings are essential via Quicket, and Bo-Kaap Kombuis says bookings are essential. FYN, La Colombe and The Pot Luck Club take deposits, with FYN and La Colombe refunding cancellations made more than 48 hours ahead."
+      },
+      {
+        "label": "Walk-ins and queues",
+        "value": "Cableway tickets valid 7 days",
+        "copy": "Standard Table Mountain Aerial Cableway tickets are valid for 7 days, while Fast Track needs an online timeslot. The Gin Bar welcomes walk-ins, entered through the Honest Chocolate cafe on Wale Street."
+      },
+      {
+        "label": "Age rules",
+        "value": "Under-18s free at Zeitz MOCAA",
+        "copy": "Zeitz MOCAA admits visitors under 18 free. La Colombe does not admit children under eight, and Bukhara (Church Street) does not allow under-12s at dinner service."
+      }
+    ],
+    "dek": "Pair the cableway with a weather-proof museum backup, and book dinners and District Six Museum ahead.",
+    "intro": [
+      "Start with the Table Mountain Aerial Cableway on Tafelberg Road, where first cars go up at 08:30 and the operator warns the Cableway may close in bad weather. Standard tickets are valid for 7 days, which gives you room if cloud sets in, while Fast Track tickets need an online timeslot. On a closed-mountain day, the Two Oceans Aquarium on Dock Road at the V&A Waterfront is open daily from 9:30am to 6pm, and the Cape Town Science Centre in Observatory runs Monday to Saturday.",
+      "For art, Zeitz MOCAA in the Silo District opens daily from 10:00 to 18:00 with last entry at 17:30, and visitors under 18 enter free. Its current programme includes 'A Protea Is Not a Flower', running until 20 June 2027, with 'Were It Not for Shadows …' opening on 12 November 2026. Out in Tokai, the Norval Foundation is closed Monday and Tuesday; its Irma Stern exhibition 'Looking Closer to Home' runs until 10 January 2027.",
+      "History sits close together in the city centre. The Castle of Good Hope opens daily from 09h00 to 16h00, with last tickets at 15:45. The District Six Museum on Buitenkant Street opens Monday to Saturday and says bookings are essential. Iziko runs the South African Museum on Queen Victoria Street, the National Gallery on Government Avenue, the Slave Lodge and the Bo-Kaap Museum on Wale Street, all closed on Christmas Day and Workers' Day. You can then walk on to Bo-Kaap Kombuis on August Street, which is closed on Mondays and asks you to book.",
+      "For mornings, Hemelhuijs on Waterkant Street opens at 9am on weekdays, and Schoon in Sea Point opens at 07:00. The Oranjezicht City Farm Market moved to its new Granger Bay Boulevard site in December 2025 and trades on Saturday and Sunday mornings, plus a Wednesday night market outside June and July. In the evening, FYN serves dinner Monday to Saturday, The Pot Luck Club takes a deposit per guest, and The Gin Bar on Wale Street welcomes walk-ins from 3pm Thursday to Saturday."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Ride the Table Mountain Aerial Cableway early, then spend the afternoon at the Castle of Good Hope and the District Six Museum."
+      ],
+      [
+        "A slower morning",
+        "Have breakfast at Hemelhuijs or Schoon (Sea Point), then browse the Oranjezicht City Farm Market on a Saturday or Sunday."
+      ],
+      [
+        "Before booking",
+        "Check the cableway's weather status on the day, avoid Norval Foundation on Mondays and Tuesdays, and expect deposits at FYN, La Colombe and The Pot Luck Club."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. SANParks pages (Cape of Good Hope, Boulders) returned 403 and the V&A Waterfront site and several coffee roasters (Truth, Bootlegger, Espresso Lab, Origin, Rosetta, Tribe, Deluxe) returned 429, so they are not included; Cape Point gives no exact address and says its funicular closes for maintenance from 26 October 2026. Kirstenbosch and Groot Constantia did not publish a street address on the pages read. Iziko pages give inconsistent winter hours and no exhibition run dates; Iziko, District Six Museum, Hemelhuijs and Knead (Muizenberg) showed no 2026-dated content; La Colombe and Harbour House (Kalk Bay) publish no street number; Neighbourgoods Market and Planet Bar publish no hours. Coffee entries are cafés and bakeries rather than specialist roasters because roaster sites could not be read.",
+  "injectionLikeText": []
+}

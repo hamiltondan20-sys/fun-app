@@ -5,6 +5,1230 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Cape Town, South Africa": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-25",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. SANParks pages (Cape of Good Hope, Boulders) returned 403 and the V&A Waterfront site and several coffee roasters (Truth, Bootlegger, Espresso Lab, Origin, Rosetta, Tribe, Deluxe) returned 429, so they are not included; Cape Point gives no exact address and says its funicular closes for maintenance from 26 October 2026. Kirstenbosch and Groot Constantia did not publish a street address on the pages read. Iziko pages give inconsistent winter hours and no exhibition run dates; Iziko, District Six Museum, Hemelhuijs and Knead (Muizenberg) showed no 2026-dated content; La Colombe and Harbour House (Kalk Bay) publish no street number; Neighbourgoods Market and Planet Bar publish no hours. Coffee entries are cafés and bakeries rather than specialist roasters because roaster sites could not be read.",
+    "sourceUrls": [
+      "docs/content-research/cape-town-2026-10-25.md",
+      "docs/content-research/cape-town-2026-10-25.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Cape of Good Hope",
+        "url": "https://www.sanparks.org/parks/table-mountain",
+        "checkedOn": "2026-10-25",
+        "reason": "SANParks (Table Mountain National Park) page returned HTTP 403; not bypassed."
+      },
+      {
+        "name": "Cape Point (Flying Dutchman Funicular)",
+        "url": "https://www.capepoint.co.za/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site gives no exact address (\"within the southern section of Table Mountain National park\"); also states the funicular is temporarily closed from Monday 26 October 2026 for track-sensor maintenance with no reopening date (shuttle runs)."
+      },
+      {
+        "name": "Boulders Beach (penguins)",
+        "url": "https://www.sanparks.org/parks/table-mountain",
+        "checkedOn": "2026-10-25",
+        "reason": "Operated by SANParks; site returned HTTP 403; not bypassed."
+      },
+      {
+        "name": "V&A Waterfront",
+        "url": "https://www.waterfront.co.za/",
+        "checkedOn": "2026-10-25",
+        "reason": "Repeated HTTP 429 Too Many Requests; not readable."
+      },
+      {
+        "name": "Robben Island Museum",
+        "url": "https://www.robben-island.org.za/",
+        "checkedOn": "2026-10-25",
+        "reason": "Departure point named (Nelson Mandela Gateway) but no 2026 content and conflicting tour times; booking only via external site; insufficient current-operation evidence."
+      },
+      {
+        "name": "Kirstenbosch National Botanical Garden",
+        "url": "https://www.sanbi.org/gardens/kirstenbosch/",
+        "checkedOn": "2026-10-25",
+        "reason": "SANBI pages read do not publish Kirstenbosch's address or hours (only 2026 concert listings); kirstenbosch.co.za redirects to an unrelated site and was not followed."
+      },
+      {
+        "name": "Groot Constantia",
+        "url": "https://www.grootconstantia.co.za/contact-us/",
+        "checkedOn": "2026-10-25",
+        "reason": "Only a postal address (\"Private Bag X1, Constantia\") published; no street address."
+      },
+      {
+        "name": "Chapman's Peak Drive",
+        "url": "https://www.chapmanspeakdrive.co.za/",
+        "checkedOn": "2026-10-25",
+        "reason": "No address, operator or hours published; road status showed \"CLOSED\" (updated 25/10/2026) with no reason."
+      },
+      {
+        "name": "Tjing Tjing",
+        "url": "https://www.tjingtjing.co.za/",
+        "checkedOn": "2026-10-25",
+        "reason": "Closed permanently: site says it \"will be closing its doors on Saturday, 18 April 2026\"."
+      },
+      {
+        "name": "Jason Bakery",
+        "url": "https://www.jasonbakery.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Site shows no address or hours, only that a store \"will launch in November\"."
+      },
+      {
+        "name": "Truth Coffee",
+        "url": "https://truth.coffee/",
+        "checkedOn": "2026-10-25",
+        "reason": "Home page lists no address or hours; contact page returned HTTP 429."
+      },
+      {
+        "name": "Bootlegger Coffee Company",
+        "url": "https://www.bootlegger.coffee/",
+        "checkedOn": "2026-10-25",
+        "reason": "Repeated HTTP 429 Too Many Requests."
+      },
+      {
+        "name": "Espresso Lab Microroasters",
+        "url": "https://www.espressolabmicroroasters.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Repeated HTTP 429 Too Many Requests."
+      },
+      {
+        "name": "Deluxe Coffeeworks",
+        "url": "https://www.deluxecoffeeworks.co.za/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests."
+      },
+      {
+        "name": "Origin Coffee Roasting",
+        "url": "https://www.originroasting.co.za/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests."
+      },
+      {
+        "name": "Rosetta Roastery",
+        "url": "https://www.rosettaroastery.com/pages/locations",
+        "checkedOn": "2026-10-25",
+        "reason": "Home page gives no café address or hours; locations page returned HTTP 429."
+      },
+      {
+        "name": "Tribe Coffee",
+        "url": "https://www.tribecoffee.co.za/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests."
+      },
+      {
+        "name": "Vida e Caffè (Kloof Street)",
+        "url": "https://www.vidaecaffe.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Home page lists no store address or hours (only head-office address)."
+      },
+      {
+        "name": "Clarke's Bar & Dining Room",
+        "url": "https://www.clarkesdining.co.za/",
+        "checkedOn": "2026-10-25",
+        "reason": "Home page shows no address, hours or dated content."
+      },
+      {
+        "name": "Loading Bay",
+        "url": "https://www.loadingbay.co.za/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests."
+      },
+      {
+        "name": "Jarryd's",
+        "url": "https://www.jarryds.co.za/",
+        "checkedOn": "2026-10-25",
+        "reason": "Domain did not resolve (ENOTFOUND)."
+      },
+      {
+        "name": "Cause | Effect Cocktail Kitchen",
+        "url": "https://www.causeeffect.co.za/",
+        "checkedOn": "2026-10-25",
+        "reason": "Domain did not resolve (DNS error)."
+      },
+      {
+        "name": "The Athletic Club & Social",
+        "url": "https://www.theathletic.club/",
+        "checkedOn": "2026-10-25",
+        "reason": "Fetch failed with no output."
+      },
+      {
+        "name": "World of Birds",
+        "url": "https://www.worldofbirds.org.za/",
+        "checkedOn": "2026-10-25",
+        "reason": "Redirected to a different domain (worldofbirds.co.za); not followed within time."
+      },
+      {
+        "name": "Table Mountain",
+        "url": "https://www.tablemountain.net/",
+        "checkedOn": "2026-10-25",
+        "reason": "Covered by the confirmed operator entry 'Table Mountain Aerial Cableway'."
+      },
+      {
+        "name": "a Cape Malay or waterfront dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "City Bowl local table",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Cape Town signature dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided City Bowl walk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "V&A Waterfront public viewpoint",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market or picnic near Camps Bay",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Table Mountain",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "a clear Table Mountain viewpoint",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Destination dinner near Camps Bay",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset around Cape of Good Hope",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "City Bowl dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Table Mountain",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around V&A Waterfront",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Camps Bay",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Table Mountain",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "City Bowl cafe or market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided V&A Waterfront route",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "V&A Waterfront at a quieter hour",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Camps Bay local rhythm",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near City Bowl",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "V&A Waterfront bakery or market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Table Mountain",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "a Cape Malay or waterfront lunch",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Cape of Good Hope",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Camps Bay",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Evening table in City Bowl",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near City Bowl",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around V&A Waterfront",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near V&A Waterfront",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near City Bowl",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "V&A Waterfront morning market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Table Mountain",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near City Bowl",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in V&A Waterfront",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Camps Bay",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Table Mountain Aerial Cableway": {
+        "url": "https://www.tablemountain.net/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Live operating panel with first up 08:30 and last down 19:00; latest blog post dated 20 October 2026; student and senior specials valid 1 July 2026 to 30 June 2027. The Cableway \"may be closed in bad weather\"."
+      },
+      "Zeitz MOCAA": {
+        "url": "https://zeitzmocaa.museum/plan-your-visit/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current programme includes 'A Protea Is Not a Flower' (16 Oct 2025 to 20 Jun 2027) and 'Were It Not for Shadows …' (12 Nov 2026 to 29 Aug 2027); reduced on-site rate of \"R199\" for South African and African citizens from 1 September 2026."
+      },
+      "Two Oceans Aquarium": {
+        "url": "https://www.aquarium.co.za/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "News posts dated 17, 20 and 23 October 2026; online ticket shop linked."
+      },
+      "Iziko South African Museum": {
+        "url": "https://www.iziko.org.za/museums/south-african-museum/",
+        "sourceType": "official public operator (Iziko Museums of South Africa)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Now Showing\" lists 'The Sea and Us', 'Humanity' and 'Making Freedom' (no run dates given); published fee table (international adults R100)."
+      },
+      "Iziko Bo-Kaap Museum": {
+        "url": "https://www.iziko.org.za/museums/bo-kaap-museum/",
+        "sourceType": "official public operator (Iziko Museums of South Africa)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibition 'The Send Off: Interconnections of Culture and Faith' (no dates given); published fee table."
+      },
+      "Iziko South African National Gallery": {
+        "url": "https://www.iziko.org.za/museums/south-african-national-gallery/",
+        "sourceType": "official public operator (Iziko Museums of South Africa)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Now Showing\" lists 'Modernism and its Discontents: South African Art from the Permanent Collection ... 1925-2025' (run dates not given)."
+      },
+      "Iziko Slave Lodge": {
+        "url": "https://www.iziko.org.za/museums/slave-lodge/",
+        "sourceType": "official public operator (Iziko Museums of South Africa)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published hours and fee table; lower level \"explores the history of slavery in South Africa\". No dated 2026 exhibition shown."
+      },
+      "District Six Museum": {
+        "url": "https://www.districtsix.co.za/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Booking notice: \"Bookings are essential\" via Quicket; warns \"BEWARE OF FRAUDULENT TICKET VENDORS!\". No 2026-dated content."
+      },
+      "Castle of Good Hope": {
+        "url": "https://www.castleofgoodhope.co.za/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Military_Heritage_Weekend_2026_Media_Pack\" and a Heritage Month spring special under \"What's New\"; published ticket prices, last ticket 15:45."
+      },
+      "Norval Foundation": {
+        "url": "https://www.norvalfoundation.org/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibitions include Irma Stern 'Looking Closer to Home' (2 Oct 2026 to 10 Jan 2027) and Kate Gottgens 'Unsteady Realms' (15 Sep 2026 to 7 Feb 2027); tickets via Webtickets."
+      },
+      "Cape Town Science Centre": {
+        "url": "https://www.ctsc.org.za/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Merck Curiosity Cube visit 27 October to 5 November 2026; \"Tickets available online\" via WebTickets."
+      },
+      "Oranjezicht City Farm Market": {
+        "url": "https://www.ozcf.co.za/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "On 6 December 2025 \"the Market moved across the road to its brand-new market space!\"; weekly market schedule published."
+      },
+      "Neighbourgoods Market (Old Biscuit Mill)": {
+        "url": "https://theoldbiscuitmill.co.za/",
+        "sourceType": "operator's own site (The Old Biscuit Mill / Neighbourgoods Market)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Mill site notes no parking inside \"on Saturdays, because the Neighbourgoods Market takes over the parking areas\"; footer \"© The Old Biscuit Mill 2026\"."
+      },
+      "FYN": {
+        "url": "https://www.fynrestaurant.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Booking now open for summer!\"; deposit policy published; footer \"© 2026 FYN RESTAURANT\"."
+      },
+      "The Pot Luck Club": {
+        "url": "https://thepotluckclub.co.za/contact/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Bookings with R750-per-guest deposit; collaboration dinner \"PLC x CW Beau Constantia\" on 13 and 14 November 2026 at \"R1950 per person\"."
+      },
+      "La Colombe": {
+        "url": "https://www.lacolombe.restaurant/la-colombe",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Spring Lunch Menu R1695 p.p. \"Valid until 30 November 2026\"; online booking with deposit; \"no children under the age of eight (8) are allowed\"."
+      },
+      "Kloof Street House": {
+        "url": "https://www.kloofstreethouse.co.za/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published weekly hours and reservations page; image uploaded October 2026."
+      },
+      "Bukhara (Church Street)": {
+        "url": "https://www.bukhara.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published hours and booking rules (tables of 10+ need set menu and deposit; under-12s not allowed at dinner); guest reviews on its own site dated through July 2026."
+      },
+      "Hemelhuijs": {
+        "url": "https://www.hemelhuijs.co.za/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published weekly hours and Dineplan reservations link; newest menu file is Summer 2025 (no 2026 content)."
+      },
+      "Bo-Kaap Kombuis": {
+        "url": "https://www.bokaapkombuis.co.za/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Bookings Are Essential To Avoid Disappointment!\"; published weekly hours; footer \"Copyright © 2026\"."
+      },
+      "Harbour House (V&A Waterfront)": {
+        "url": "https://www.harbourhouse.co.za/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Main, wine, cocktail and sommelier menus dated May 2026; reservations by phone and email."
+      },
+      "Harbour House (Camps Bay)": {
+        "url": "https://www.harbourhouse.co.za/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Main, wine, cocktail and sommelier menus dated May 2026."
+      },
+      "Harbour House (Kalk Bay)": {
+        "url": "https://www.harbourhouse.co.za/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Main, wine and cocktail menus dated May 2026; reservations by phone and email."
+      },
+      "The Gin Bar": {
+        "url": "https://www.theginbar.co.za/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published hours and \"Walk-in's Welcome\"; notes it may close earlier when quiet in winter; footer \"© 2026 The Gin Bar\"."
+      },
+      "Planet Bar (Belmond Mount Nelson Hotel)": {
+        "url": "https://www.belmond.com/hotels/africa/south-africa/cape-town/belmond-mount-nelson-hotel/",
+        "sourceType": "operator's own site (Belmond)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Planet Bar listed for \"cocktails and champagne\"; hotel notes it was listed in The 50 Best Hotels 2026 and hosts Confections x Collections 2026 on 5-7 November."
+      },
+      "Schoon (Sea Point)": {
+        "url": "https://www.schoon.co.za/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Winter menu PDFs uploaded May 2026; footer \"Copyright 2026 @ Schoon\"; branch hours published."
+      },
+      "Knead (Muizenberg)": {
+        "url": "https://www.kneadbakery.co.za/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Hours notice with last orders and public-holiday hours; \"CLOSED 25 DECEMBER\". No 2026-dated content."
+      }
+    }
+  },
+  "Buenos Aires, Argentina": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-25",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several sites could not be read: Museo Nacional de Bellas Artes, Ecoparque, Palacio Libertad and Four Seasons (403), Planetario, Biblioteca Nacional and Catedral Metropolitana (certificate errors), Las Violetas (connection refused), Ninina (rate-limited) and Casa Rosada (timeout). No current official city page for Recoleta Cemetery was found, so it is omitted. Hours were not published for Florería Atlántico, Faena, the Alvear Palace venues, Atelier Fuerza, Museo de Arte Moderno and Temaikèn, and Gran Bar Danzón gives days but no times. Don Julio, La Cabrera, Gran Bar Danzón, Florería Atlántico and Café de los Angelitos showed no 2026-dated content, so they rest on published hours or booking channels. Cuervo Café publishes one chain-wide schedule rather than branch hours.",
+    "sourceUrls": [
+      "docs/content-research/buenos-aires-2026-10-25.md",
+      "docs/content-research/buenos-aires-2026-10-25.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Recoleta Cemetery",
+        "url": "https://buenosaires.gob.ar/cementerio-de-la-recoleta",
+        "checkedOn": "2026-10-25",
+        "reason": "official city (buenosaires.gob.ar) pages returned 404 or redirect to an archived 'gcaba_historico' section; no current official page read"
+      },
+      {
+        "name": "Museo Nacional de Bellas Artes",
+        "url": "https://www.bellasartes.gob.ar/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 403 Forbidden"
+      },
+      {
+        "name": "Planetario Galileo Galilei",
+        "url": "https://www.planetario.gob.ar/",
+        "checkedOn": "2026-10-25",
+        "reason": "certificate error (hostname not in certificate)"
+      },
+      {
+        "name": "Confitería Las Violetas",
+        "url": "https://www.lasvioletas.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "connection refused (ECONNREFUSED) on two attempts"
+      },
+      {
+        "name": "Ninina",
+        "url": "https://www.ninina.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests on every attempt"
+      },
+      {
+        "name": "Casa Rosada",
+        "url": "https://www.casarosada.gob.ar/",
+        "checkedOn": "2026-10-25",
+        "reason": "fetch timed out"
+      },
+      {
+        "name": "Palacio Barolo",
+        "url": "https://www.palaciobarolo.com.ar/",
+        "checkedOn": "2026-10-25",
+        "reason": "no current operating evidence; latest dated item from 2018, no tour times"
+      },
+      {
+        "name": "Ecoparque",
+        "url": "https://buenosaires.gob.ar/ecoparque",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 403 Forbidden"
+      },
+      {
+        "name": "Palacio Libertad (ex CCK)",
+        "url": "https://palaciolibertad.gob.ar/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 403 Forbidden"
+      },
+      {
+        "name": "Biblioteca Nacional",
+        "url": "https://www.bn.gob.ar/",
+        "checkedOn": "2026-10-25",
+        "reason": "certificate error (unable to verify first certificate)"
+      },
+      {
+        "name": "Catedral Metropolitana",
+        "url": "https://www.catedralbuenosaires.org.ar/",
+        "checkedOn": "2026-10-25",
+        "reason": "certificate error (hostname not in certificate)"
+      },
+      {
+        "name": "Elena (Four Seasons)",
+        "url": "https://www.fourseasons.com/buenosaires/dining/restaurants/elena/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 403 Forbidden"
+      },
+      {
+        "name": "LAB Café",
+        "url": "https://www.labcafe.com.ar/",
+        "checkedOn": "2026-10-25",
+        "reason": "SSL handshake failure"
+      },
+      {
+        "name": "Lattente",
+        "url": "https://www.lattente.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "SSL handshake failure"
+      },
+      {
+        "name": "Tegui",
+        "url": "https://www.tegui.com.ar/",
+        "checkedOn": "2026-10-25",
+        "reason": "connection refused"
+      },
+      {
+        "name": "Pizzería Güerrín",
+        "url": "https://www.pizzeriaguerrin.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "certificate error (hostname not in certificate)"
+      },
+      {
+        "name": "Full City Coffee House",
+        "url": "https://www.fullcitycoffeehouse.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "domain serves unrelated content; not an official café page"
+      },
+      {
+        "name": "Mercado de San Telmo",
+        "url": "https://www.mercadodesantelmo.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "guessed domain is parked/for sale; no official page found"
+      },
+      {
+        "name": "Bar Los Galgos",
+        "url": "https://www.barlosgalgos.com.ar/contacto",
+        "checkedOn": "2026-10-25",
+        "reason": "site shows template placeholder address (Chicago) and no real hours; address not confirmable"
+      },
+      {
+        "name": "Mishiguene",
+        "url": "https://www.mishiguene.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "no address, hours or 2026 content on official page"
+      },
+      {
+        "name": "Croque Madame",
+        "url": "https://www.croquemadame.com.ar/",
+        "checkedOn": "2026-10-25",
+        "reason": "no hours or 2026 content; branch addresses not given except Av Callao 1569"
+      },
+      {
+        "name": "Galerías Pacífico",
+        "url": "https://www.galeriaspacifico.com.ar/",
+        "checkedOn": "2026-10-25",
+        "reason": "mall street address not stated on page read"
+      },
+      {
+        "name": "Hipódromo de Palermo",
+        "url": "https://www.palermo.com.ar/",
+        "checkedOn": "2026-10-25",
+        "reason": "site under update; no address, hours or dates"
+      },
+      {
+        "name": "Havanna",
+        "url": "https://havanna.com.ar/nuestros-locales/1",
+        "checkedOn": "2026-10-25",
+        "reason": "no Buenos Aires branch address or hours readable"
+      },
+      {
+        "name": "Le Pain Quotidien",
+        "url": "https://www.lepainquotidien.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Argentine domain redirects to global site with no Buenos Aires branch listed"
+      },
+      {
+        "name": "Le Blé",
+        "url": "https://www.leble.com.ar/",
+        "checkedOn": "2026-10-25",
+        "reason": "no branch addresses or hours on official page"
+      },
+      {
+        "name": "Café Martínez",
+        "url": "https://www.cafemartinez.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "no branch addresses or hours on page read"
+      },
+      {
+        "name": "Museo Participativo de Ciencias (Prohibido No Tocar)",
+        "url": "https://www.mpc.org.ar/",
+        "checkedOn": "2026-10-25",
+        "reason": "no hours or 2026 content on homepage; hours page 404"
+      },
+      {
+        "name": "El Preferido de Palermo",
+        "url": "https://www.elpreferidodepalermo.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "page returned no readable content"
+      },
+      {
+        "name": "Birkin",
+        "url": "https://www.birkin.com.ar/",
+        "checkedOn": "2026-10-25",
+        "reason": "domain shows hosting placeholder page"
+      },
+      {
+        "name": "Museo Nacional de Arte Decorativo",
+        "url": "https://www.mnad.org/",
+        "checkedOn": "2026-10-25",
+        "reason": "tried domain redirects to unrelated marketing site"
+      },
+      {
+        "name": "San Telmo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Palermo parks",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Tango night",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Recoleta architecture walk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Palermo sunset park time",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Parrilla dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Cafe con leche morning",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "San Telmo market lunch",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Recoleta",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in San Telmo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Palermo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Palermo walk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Recoleta",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around San Telmo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through San Telmo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Recoleta Cemetery",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Palermo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Tango night",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Recoleta",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near San Telmo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Palermo evening",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Recoleta",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near San Telmo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Palermo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Recoleta Cemetery",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Recoleta",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near San Telmo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Palermo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Recoleta Cemetery",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Palermo cafe or market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Recoleta architecture walk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in San Telmo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of San Telmo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Palermo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Palermo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Recoleta bakery or market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Recoleta Cemetery",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through San Telmo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Palermo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near San Telmo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around San Telmo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Palermo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Recoleta",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in San Telmo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Palermo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Palermo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Recoleta",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Palermo parks",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Palermo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Recoleta morning market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Recoleta Cemetery",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near San Telmo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Palermo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Recoleta",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near San Telmo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "MALBA": {
+        "url": "https://www.malba.org.ar/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibitions: 'Belkis Ayón: Mito y desobediencia' and 'Viva Frida', each 'Continúa hasta el 15 de marzo de 2027'; permanent Colección Malba—Costantini."
+      },
+      "Teatro Colón": {
+        "url": "https://teatrocolon.org.ar/",
+        "sourceType": "operator's own site (city-run theatre)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "2026 calendar lists 'Aura' gala on 26 October and ballet 'Manon' 5–15 November; guided visits cover the Sala, Foyer Principal, Galería de Bustos and Salón Dorado."
+      },
+      "Museo Evita": {
+        "url": "https://www.museoevita.org.ar/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "'Agenda 2026 abierta para visitas educativas'; October agenda lists public guided tours 'martes a domingo, 16 hs' and Friday English tours at 15 hs; temporary exhibition 'Umbrales'."
+      },
+      "Fundación PROA": {
+        "url": "https://www.proa.org/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Thomas Demand exhibition 'el tartamudeo de la historia'; proa21 article dated 17 September 2026; participates in the XX Bienal Internacional de Arquitectura 'durante todo octubre'."
+      },
+      "Jardín Japonés": {
+        "url": "https://www.jardinjapones.org.ar/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published 2026 ticket prices: residents '$8.000', non-residents '$24.000'; 'El Jardín NO cierra por lluvias'; cultural activity flyers uploaded 2026/09."
+      },
+      "Café Tortoni": {
+        "url": "https://www.cafetortoni.com.ar/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Hours notice 'LUNES - DOMINGO 08:00 - 21:00'; footer 'Café Tortoni© 2026'."
+      },
+      "Don Julio": {
+        "url": "https://www.parrilladonjulio.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published daily service hours and a 'RESERVAS ONLINE' booking link; no dated 2026 content (footer © 2024)."
+      },
+      "Colección Amalita": {
+        "url": "https://coleccionamalita.org.ar/",
+        "sourceType": "operator's own site (formerly Colección Fortabat; old domain redirects here)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Exhibitions including 'Living' and 'Jorge Gumier Maier, la diferencia' featured, with 2026-dated exhibition pages; free guided tours 'Gratis con la compra del ticket de admisión. Sin reserva previa.'"
+      },
+      "Florería Atlántico": {
+        "url": "https://www.floreriaatlantico.com.ar/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Booking channels published (reservas@floreriaatlantico.com.ar, WhatsApp 'Quisiera hacer una reserva'); no dated 2026 content."
+      },
+      "La Biela": {
+        "url": "https://www.labiela.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Hours notice '08:00 a. m. – 01:00 a. m.' with 'Abre hoy'; footer 'Copyright © 2026 La Biela'."
+      },
+      "Cuervo Café (Recoleta)": {
+        "url": "https://www.cuervocafe.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Branch list and hours notice 'Abrimos de martes a domingo 8 hs - 20 hs'; footer '2026, © Cuervo'."
+      },
+      "La Cabrera (Palermo)": {
+        "url": "https://www.lacabrera.com.ar/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "'Abiertos todos los días' with online booking link, phone 4831-0325 and WhatsApp; no dated 2026 content."
+      },
+      "Gran Bar Danzón": {
+        "url": "https://www.granbardanzon.com.ar/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "States it is open every day; 'Reservas: (+5411) 4811.1108' and 'RESERVA AHORA' booking page; no dated 2026 content."
+      },
+      "Alvear Palace Hotel": {
+        "url": "https://www.alvearpalace.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "October 2026 offers ('Octubre en Buenos Aires' stays 1–31 October 2026); venues include L'Orangerie (buffet breakfast), Lobby Bar and Alvear Roof Bar with rooftop terrace."
+      },
+      "Museo Argentino de Ciencias Naturales": {
+        "url": "https://www.macnconicet.gob.ar/",
+        "sourceType": "official public operator (CONICET)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Homepage post dated 2026-09-29 on 'Vacaciones de Invierno 2026'; event 'Exploraciones imaginarias' listed '16/10/2026 — 30/11/2026'."
+      },
+      "Café de los Angelitos": {
+        "url": "https://www.cafedelosangelitos.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Dinner-and-show timings (dinner 20:00, show 21:45, '1.2 Hr Show') with online 'Reserva' booking; no dated 2026 content (footer 2025)."
+      },
+      "El Querandí": {
+        "url": "https://querandi.com.ar/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Bookable dinner shows with published prices; New Year's Eve '31 / 12 / 2026' programme; footer 'Copyright © 2026'."
+      },
+      "Faena Hotel Buenos Aires": {
+        "url": "https://www.faena.com/buenos-aires",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Venues listed (Bistro Sur, El Mercado, El Cabaret, The Library Lounge, Poolbar); 2026 journal item on Condé Nast Traveler 2026 Readers' Choice; reservations +54-11-4010-9070."
+      },
+      "Presidente Bar (Recoleta)": {
+        "url": "https://www.presidentebar.com.ar/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Weekly hours and 'RESERVÁ TU MESA' booking link; footer '© 2026, Presidente Bar'."
+      },
+      "Atelier Fuerza (Recoleta)": {
+        "url": "https://www.atelierfuerza.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "'Pan dulce AF 2026' preorders with December pickup dates; products include 'Medialuna de manteca clásica AF' and 'Canelé tradicional'; footer '® 2026'."
+      },
+      "Bioparque Temaikèn": {
+        "url": "https://www.temaiken.org.ar/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online ticket sales and visit-date booking via ecommerce.temaiken.org.ar; September 2026 '50% off' promotion."
+      },
+      "Rojo Tango": {
+        "url": "https://www.rojotango.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Dinner-and-show timeline with 'Reservar' booking; news item 'Inauguramos el 2026 con una nueva propuesta gastronómica'."
+      },
+      "El Cuartito": {
+        "url": "https://www.elcuartito.com.ar/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Pizzería founded 1934; hours published and 'Quilmes & El Cuartito · Mundial 2026' promotion."
+      },
+      "Teatro Nacional Cervantes": {
+        "url": "https://www.teatrocervantes.gob.ar/",
+        "sourceType": "official public operator (national theatre)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "October 2026 calendar lists 'Santos Vega' and 'Lo mucho que te amé' plus guided visits 'Historia y leyenda' at 11:00."
+      }
+    }
+  },
   "Athens, Greece": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-25",
