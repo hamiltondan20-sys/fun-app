@@ -1,0 +1,979 @@
+{
+  "city": "Budapest, Hungary",
+  "checkedOn": "2026-10-25",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Hungarian National Museum",
+      "kind": "museum",
+      "url": "https://mnm.hu/en",
+      "sourceType": "official public operator (Hungarian National Museum)",
+      "address": "1088 Budapest, Múzeum krt. 14-16., Hungary",
+      "operatingEvidence": "Exhibition 'The Treasures of King Louis I (the Great) of Hungary' runs 2026.03.05. to 12.31. The site also notes 'Some of our exhibition halls will be closed to visitors from December 2, 2025, due to renovation works' and the Coronation Mantle is 'Currently closed to visitors.'",
+      "hours": "Monday: Closed; Tuesday-Sunday: 10:00AM-6:00PM (ticket office closes 5:00 PM)",
+      "confidence": "high"
+    },
+    {
+      "name": "St. Stephen's Basilica",
+      "kind": "landmark",
+      "url": "https://www.bazilikabudapest.hu/",
+      "sourceType": "operator's own site",
+      "address": "1051 Budapest, Szent István tér 1.",
+      "operatingEvidence": "News items dated through 2026-09-04, including '2026-03-18: Húsvéti miserend és nyitvatartás'; visitor hours published for the church and the Panorama Terrace.",
+      "hours": "Church: Mon-Sat 09.00-18.00, Sun 13.00-18.00; Panorama Terrace and Treasury: daily 09.00-19.00",
+      "confidence": "high"
+    },
+    {
+      "name": "Széchenyi Thermal Bath",
+      "kind": "landmark",
+      "url": "https://www.szechenyifurdo.hu/nyitvatartas",
+      "sourceType": "official public operator (Budapest Gyógyfürdői és Hévizei Zrt.)",
+      "address": "1146 Budapest, Állatkerti körút 9-11.",
+      "operatingEvidence": "Hours notice: on 'kiemelt napok (2026. október 23-25., december 18. - 2027. január 6.)' the bath opens at 8:00; online tickets sold to 'avoid the queue'.",
+      "hours": "Mon-Thu 7:00-20:00; Fri 7:00-22:00; Sat-Sun 8:00-20:00 (pools must be vacated 20 minutes before closing)",
+      "confidence": "high"
+    },
+    {
+      "name": "Rudas Baths",
+      "kind": "landmark",
+      "url": "https://www.rudasfurdo.hu/",
+      "sourceType": "operator's own site",
+      "address": "1013 Budapest, Döbrentei tér 9.",
+      "operatingEvidence": "Links an 'Árak 2026' price page; night bathing tickets are 'kizárólag online' (online only). States 'A FÜRDŐ 14 ÉVES KOR ALATT NEM LÁTOGATHATÓ' (no visitors under 14).",
+      "hours": "Mon 6:00-22:00; Tue-Sun 6:00-20:00; Turkish bath single-sex on weekdays (Tue women, Wed men)",
+      "confidence": "high"
+    },
+    {
+      "name": "Matthias Church",
+      "kind": "landmark",
+      "url": "https://www.matyas-templom.hu/",
+      "sourceType": "operator's own site",
+      "address": "1014 Budapest, Szentháromság tér 2.",
+      "operatingEvidence": "Concert listings including '2026. november 1. 19:30 – Rutter: Requiem' and '2026. december 19. 20:00 – Bach és Charpentier'.",
+      "hours": "Daily hours vary; the day shown read 13:15-16:30, last entry 16:15 (weekly schedule not readable)",
+      "confidence": "medium"
+    },
+    {
+      "name": "House of Terror Museum",
+      "kind": "museum",
+      "url": "https://www.terrorhaza.hu/en/visitor-information",
+      "sourceType": "operator's own site",
+      "address": "1062 Budapest, Andrássy út 60.",
+      "operatingEvidence": "Homepage notices a temporary technical closure with 'Opening: September 22 at 10:00 AM' and 'From Tuesday, September 29, admission fees will once again apply' (no year stated; 29 September is a Tuesday in 2026). 'Tickets are only available for purchase at the museum.'",
+      "hours": "Open every day except Monday: 10.00 AM - 6.00 PM; cash desk closes 5.30 PM",
+      "confidence": "medium"
+    },
+    {
+      "name": "Museum of Ethnography",
+      "kind": "museum",
+      "url": "https://www.neprajz.hu/en/",
+      "sourceType": "official public operator (Museum of Ethnography)",
+      "address": "H-1146 Budapest, Dózsa György út 35.",
+      "operatingEvidence": "Temporary exhibitions 'A Soldier's Lot – Remembering Compulsory Military Service' (30 September 2026 to 29 August 2027) and 'Rituals of Beauty' (19 May 2026 to 4 January 2027).",
+      "hours": "Tuesday to Sunday 10am-6pm; ticket office closes 5:30pm; 'Closed on Mondays'",
+      "confidence": "high"
+    },
+    {
+      "name": "Ludwig Museum",
+      "kind": "museum",
+      "url": "https://www.ludwigmuseum.hu/en/opening-hours-and-ticket-prices",
+      "sourceType": "official public operator (Ludwig Museum – Museum of Contemporary Art)",
+      "address": "H-1095 Budapest, Komor Marcell utca 1.",
+      "operatingEvidence": "Exhibitions 'Walk This Way. The Art of Walking' (9 October 2026 to 31 January 2027) and 'BING BANG. Expanding Collection Horizons' (5 September 2025 to 10 January 2027).",
+      "hours": "Tuesday–Sunday 10:00–20:00 (3rd floor to 18:00); 'open to visitors every day except Monday'",
+      "confidence": "high"
+    },
+    {
+      "name": "House of Music Hungary",
+      "kind": "museum",
+      "url": "https://zenehaza.hu/en/opening-hours",
+      "sourceType": "operator's own site (Liget Budapest)",
+      "address": "1146 Budapest, Olof Palme sétány 3-5.",
+      "operatingEvidence": "Programme calendar lists events such as 'Nov 5: Cannons and Flowers, gala concert celebrating György Cziffra'; permanent exhibition 'Dimensions of Sound' and the temporary Freddie exhibition.",
+      "hours": "Closed Monday; ticket office Tue-Thu, Sun 10:00–18:00, Fri-Sat 10:00–20:00; Sound Dome also closed the first Tuesday and Wednesday of every month",
+      "confidence": "high"
+    },
+    {
+      "name": "Budapest History Museum – Castle Museum",
+      "kind": "museum",
+      "url": "https://varmuzeum.hu/en/",
+      "sourceType": "official public operator (Budapest History Museum)",
+      "address": "1014 Budapest, Szent György tér 2., Building E, Buda Castle",
+      "operatingEvidence": "Current exhibitions listed, including 'A City on the Front Line' (Buda and Pest under Ottoman rule) and 'Chronicles of Lost Buildings'; the parent BHM site lists 2026-dated exhibitions.",
+      "hours": "Daily 10:00–18:00; last entry 17:30",
+      "confidence": "medium"
+    },
+    {
+      "name": "Hospital in the Rock",
+      "kind": "museum",
+      "url": "https://www.sziklakorhaz.eu/en/information",
+      "sourceType": "operator's own site",
+      "address": "1012 Budapest, Lovas út 4/c.",
+      "operatingEvidence": "Online ticket booking live; 'The museum can only be visited as part of a guided tour.' Children under 6 may not visit.",
+      "hours": "Daily 10:00–19:00; last guided tour 18:00; closed 1 January, 1 November, 24, 25 and 31 December",
+      "confidence": "medium"
+    },
+    {
+      "name": "Hungarian State Opera",
+      "kind": "landmark",
+      "url": "https://www.opera.hu/en/services/operatour/",
+      "sourceType": "operator's own site",
+      "address": "H-1061 Budapest Andrassy ave. 22.",
+      "operatingEvidence": "Guided tours bookable: 60-minute English tour 'daily at 1:30 pm, 3:00 pm, and 4:30 pm'; tickets on sale one week ahead. 'Guided tours are not available during performances.'",
+      "hours": "English tours daily 13:30, 15:00, 16:30; box office hours not published on pages read",
+      "confidence": "medium"
+    },
+    {
+      "name": "Budapest Zoo",
+      "kind": "park",
+      "url": "https://www.zoobudapest.com/",
+      "sourceType": "operator's own site",
+      "address": "1146 Budapest, Állatkerti krt. 6-12.",
+      "operatingEvidence": "Events 'Nyugdíjas Ősz az Állatkertben 2026' (October 1 to November 30, 2026) and a Halloween evening on October 30, 2026; adult ticket 5,900 HUF, child 4,200 HUF.",
+      "hours": "Mon-Fri 09:00-17:00; Sat-Sun 09:00-17:30",
+      "confidence": "high"
+    },
+    {
+      "name": "Várkert Bazár",
+      "kind": "scenic",
+      "url": "https://varkertbazar.hu/en/",
+      "sourceType": "operator's own site",
+      "address": "1013 Budapest, Ybl Miklós square 2-6.",
+      "operatingEvidence": "News posts dated 2026 (15 May 2026 programme change; 28 April 2026 'Information on temporary closure', details not shown). Garden hours published.",
+      "hours": "Neo-renaissance Garden: every day 6:00-24:00; Information Points: Monday-Sunday 9:00-17:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Great Market Hall",
+      "kind": "market",
+      "url": "https://piaconline.hu/nagycsarnok/",
+      "sourceType": "official public operator (Budapest Vásárcsarnokai Kft.)",
+      "address": "1093 Budapest, Vámház körút 1-3.",
+      "operatingEvidence": "Operator site carries a price table dated '2026.10.16.' and the hall's weekly hours; closed ('ZÁRVA!') on official holidays.",
+      "hours": "Mon-Fri 06.00–18.00; Sat 06.00–16.00; Sun 10.00–16.00; closed on public holidays",
+      "confidence": "medium"
+    },
+    {
+      "name": "Gerbeaud",
+      "kind": "cafe",
+      "url": "https://www.gerbeaud.hu/en/",
+      "sourceType": "operator's own site",
+      "address": "1051 Budapest Vörösmarty Square 7-8.",
+      "operatingEvidence": "Current hours notice and '© 2026 Gerbeaud Confectionery'; 'In our cafe, there is no reservation system.'",
+      "hours": "Mon-Thu and Sun 9:00-20:00; Fri-Sat 9:00-21:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "New York Café",
+      "kind": "cafe",
+      "url": "https://www.newyorkcafe.hu/",
+      "sourceType": "operator's own site",
+      "address": "1073 Budapest Erzsébet krt. 9-11",
+      "operatingEvidence": "Booking rules published: table reservations 'csak 18:00 utánra és kizárólag vacsoravendégeknek' (only after 18:00, dinner guests only); walk-in seating 07:00-18:00. '© 2026 New York Café'.",
+      "hours": "Mon-Wed 07:00-24:00; Thu-Sun 07:00-01:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Espresso Embassy",
+      "kind": "cafe",
+      "url": "https://www.espressoembassy.hu/",
+      "sourceType": "operator's own site",
+      "address": "1051 Budapest, Arany János utca 15.",
+      "operatingEvidence": "Hours notice published; holidays: 'Ünnepeken általában nyitva tartunk, a részleteket jelezzük.' No dated 2026 content seen.",
+      "hours": "Mon-Fri 7:30–17:00; Sat-Sun 8:30–17:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Artizán (Hold utca)",
+      "kind": "bakery",
+      "url": "https://www.artizan.hu/lokaciok/artizan-budapest/",
+      "sourceType": "operator's own site",
+      "address": "Budapest,1054 Hold utca 3.",
+      "operatingEvidence": "Branch page with current hours; site images uploaded June-July 2026. No dated 2026 notice.",
+      "hours": "Mon-Fri 07:00-18:00; Sat 07:30-13:30; Sun closed",
+      "confidence": "medium"
+    },
+    {
+      "name": "Auguszt Cukrászda (Kossuth Lajos utca)",
+      "kind": "bakery",
+      "url": "https://www.auguszt.hu/",
+      "sourceType": "operator's own site",
+      "address": "Belvárosi Auguszt Cukrászda, V. kerület, Kossuth L. u. 14-16.",
+      "operatingEvidence": "Branch hours published ('Kedd-Szombat: 10.00-18.00', 'Vasárnap: Zárva'). No dated 2026 content seen.",
+      "hours": "Tue-Sat 10.00-18.00; Sun closed (Monday not stated)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Első Pesti Rétesház",
+      "kind": "bakery",
+      "url": "https://reteshaz.com/en",
+      "sourceType": "operator's own site",
+      "address": "1051 Budapest Október 6. u. 22.",
+      "operatingEvidence": "Online table reservation offered; footer '2007 - 2026 © Első Pesti Rétesház'; private strudel-stretching shows for a minimum of 20 people.",
+      "hours": "Every day: 10:00 - 23:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Rosenstein",
+      "kind": "meal",
+      "url": "https://www.rosenstein.hu/",
+      "sourceType": "operator's own site",
+      "address": "1087 Budapest, Mosonyi utca 3.",
+      "operatingEvidence": "Booking form live; a reservation is valid only once confirmed by email ('Amíg nem igazoltuk vissza Önnek e-mailben, addig nincs érvényes foglalása'). 'Copyright 2026 © Rosenstein Vendéglő'.",
+      "hours": "Monday – Saturday: 12.00 – 23.00 (Sunday not listed)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Menza",
+      "kind": "meal",
+      "url": "https://www.menzaetterem.hu/",
+      "sourceType": "operator's own site",
+      "address": "1061 Budapest, Liszt Ferenc tér 2.",
+      "operatingEvidence": "Current weekly offer and daily lunch menu (2,890 Ft, from 11:30 'while stocks last'); online booking for up to 4 people.",
+      "hours": "11:00–23:30; kitchen 11:30–22:30",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mazel Tov",
+      "kind": "meal",
+      "url": "https://www.mazeltov.hu/",
+      "sourceType": "operator's own site",
+      "address": "1073 Budapest, Akácfa utca 47.",
+      "operatingEvidence": "Page published Oct 22, 2026; guest-chef evening 'október 27., kedd'; blog posts dated October 2026; online booking via SevenRooms.",
+      "hours": "Mon-Thu 12:00-23:00; Fri-Sun 12:00-00:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Stand25",
+      "kind": "meal",
+      "url": "https://www.stand25.hu/",
+      "sourceType": "operator's own site",
+      "address": "1013 Budapest, Attila út 10.",
+      "operatingEvidence": "Online and phone booking; drinks list file '2026.10.-ITALLAP_WEB.pdf'; Sunday 'Zárva'.",
+      "hours": "Lunch Mon-Sat 12:00–16:00 (last arrival 14:30); dinner Mon-Sat 17:30–24:00 (last arrival 21:30); Sunday closed",
+      "confidence": "medium"
+    },
+    {
+      "name": "Gundel",
+      "kind": "meal",
+      "url": "https://www.gundel.hu/en",
+      "sourceType": "operator's own site",
+      "address": "1146 Budapest, Gundel Károly út 4.",
+      "operatingEvidence": "Advertises 'NEW YEAR'S EVE AT GUNDEL Gundel Palace | 31 December 2026, 6.30 pm'; 'Gundel Restaurant is open all year round.' 'smart casual dress is recommended.'",
+      "hours": "Lunch menu daily 11:30-18:00; dinner menu daily 18:00-22:00; kitchen closes 21:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Kollázs Brasserie & Bar",
+      "kind": "bar",
+      "url": "https://www.kollazs.hu/",
+      "sourceType": "operator's own site",
+      "address": "Széchenyi István tér 5-6. (Zrínyi utca corner), Budapest, Hungary 1051",
+      "operatingEvidence": "Live reservation form; serves breakfast, lunch, dinner, Sunday Brunch and cocktails, with live music on weekends. No dated 2026 content seen.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "360 Bar",
+      "kind": "bar",
+      "url": "https://www.360bar.hu/",
+      "sourceType": "operator's own site",
+      "address": "Budapest, Andrássy út 39, 1061",
+      "operatingEvidence": "2026 menus ('MENU2026', 'summer2026') and '360 MOOD MAY 2026'; online table booking.",
+      "hours": "Mon-Wed 14:00-00:00; Thu-Sat 14:00-02:00; Sun 14:00-00:00",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Hungarian Parliament Building (Visitor Centre)",
+      "reason": "Official site showed a CAPTCHA check ('CAPTCHA ellenőrzés'); not bypassed.",
+      "url": "https://www.parlament.hu/en/web/visitor-centre"
+    },
+    {
+      "name": "Museum of Fine Arts",
+      "reason": "Official site returned HTTP 451 to automated fetch.",
+      "url": "https://www.szepmuveszeti.hu/en/"
+    },
+    {
+      "name": "Hungarian National Gallery",
+      "reason": "Official site returned HTTP 451 to automated fetch.",
+      "url": "https://mng.hu/en/"
+    },
+    {
+      "name": "Gellért Thermal Bath",
+      "reason": "Official site says the bath is closed: 'A fürdő 2025. október 1-jétől zárva tart', reopening expected 2028.",
+      "url": "https://www.gellertfurdo.hu/"
+    },
+    {
+      "name": "Fisherman's Bastion",
+      "reason": "Only site found is run by a restaurant company (Magyar Halászbástya Étteremüzemeltető Kft.), not confirmed as the official operator; no street address.",
+      "url": "https://www.fishermansbastion.com/"
+    },
+    {
+      "name": "Dohány Street Synagogue",
+      "reason": "Community site gives address (Síp utca 12.) but no visiting hours or 2026 operating evidence; visit page returned 404.",
+      "url": "https://www.dohany-zsinagoga.hu/"
+    },
+    {
+      "name": "Liszt Academy",
+      "reason": "Concert calendar is current (October–December 2026) but no venue street address could be read on the official pages fetched.",
+      "url": "https://concert.lisztacademy.hu/"
+    },
+    {
+      "name": "Hungarian Museum of Agriculture (Vajdahunyad Castle)",
+      "reason": "No opening hours or current exhibition/2026 evidence on the page read.",
+      "url": "https://www.mezogazdasagimuzeum.hu/en"
+    },
+    {
+      "name": "Kéhli Vendéglő",
+      "reason": "Hours published but no street address on the official homepage; contact page returned 404.",
+      "url": "https://www.kehli.hu/"
+    },
+    {
+      "name": "Szimpla Kert",
+      "reason": "Official pages read showed no address, hours or dated content; English info page returned 404.",
+      "url": "https://www.szimpla.hu/info.html"
+    },
+    {
+      "name": "Costes",
+      "reason": "Group site shows no address or hours; restaurant site returned 404.",
+      "url": "https://costes.group/"
+    },
+    {
+      "name": "Ruszwurm",
+      "reason": "Official site returned HTTP 403.",
+      "url": "https://ruszwurm.hu/"
+    },
+    {
+      "name": "Central Café (Centrál Kávéház)",
+      "reason": "Certificate error ('certificate has expired'); not bypassed.",
+      "url": "https://www.centralkavehaz.hu/"
+    },
+    {
+      "name": "Boutiq'Bar",
+      "reason": "Certificate error ('self signed certificate'); not bypassed.",
+      "url": "https://www.boutiqbar.hu/"
+    },
+    {
+      "name": "My Little Melbourne",
+      "reason": "Certificate error (hostname mismatch); not bypassed.",
+      "url": "https://mylittlemelbourne.hu/"
+    },
+    {
+      "name": "High Note SkyBar",
+      "reason": "Official site returned HTTP 403.",
+      "url": "https://highnoteskybar.hu/en/"
+    },
+    {
+      "name": "Madal Café",
+      "reason": "Official site returned HTTP 403.",
+      "url": "https://madalcafe.hu/"
+    },
+    {
+      "name": "Szimply",
+      "reason": "Certificate error (hostname mismatch); not bypassed.",
+      "url": "http://szimply.com/"
+    },
+    {
+      "name": "Pékműhely",
+      "reason": "Certificate error (hostname mismatch); not bypassed.",
+      "url": "https://pekmuhely.hu/"
+    },
+    {
+      "name": "Butter Brothers",
+      "reason": "TLS error on fetch; not bypassed.",
+      "url": "https://www.butterbrothers.hu/"
+    },
+    {
+      "name": "Hopp",
+      "reason": "Certificate error (hostname mismatch); not bypassed.",
+      "url": "https://www.hopp.hu/"
+    },
+    {
+      "name": "Művész Kávéház",
+      "reason": "Certificate error ('unable to verify the first certificate'); not bypassed.",
+      "url": "https://www.muveszkavehaz.hu/"
+    },
+    {
+      "name": "Daubner Cukrászda",
+      "reason": "Connection refused on fetch.",
+      "url": "https://www.daubnercukraszda.hu/"
+    },
+    {
+      "name": "Café Kör",
+      "reason": "Official site returned no readable content.",
+      "url": "https://www.cafekor.com/"
+    },
+    {
+      "name": "Fekete",
+      "reason": "Address readable (Múzeum krt 5.) but hours conflict and the latest dated content is from 2021; no current operating evidence.",
+      "url": "https://www.feketekv.hu/"
+    },
+    {
+      "name": "Szamos (Budapest branches)",
+      "reason": "Homepage lists branch names only, no addresses or hours; footer © 2025.",
+      "url": "https://www.szamos.hu/"
+    },
+    {
+      "name": "Café Gerlóczy",
+      "reason": "Domain did not resolve (ENOTFOUND).",
+      "url": "https://www.cafegerloczy.hu/"
+    },
+    {
+      "name": "Spíler",
+      "reason": "Domain tried did not resolve (ENOTFOUND).",
+      "url": "https://www.spilerbistro.hu/"
+    },
+    {
+      "name": "Cirkusz",
+      "reason": "Domain tried did not resolve (ENOTFOUND).",
+      "url": "https://www.cirkuszbudapest.com/"
+    },
+    {
+      "name": "Belvárosi Piac (Hold utca market)",
+      "reason": "Domain tried did not resolve (ENOTFOUND).",
+      "url": "https://belvarosipiac.hu/"
+    },
+    {
+      "name": "DOBLO Wine Bar",
+      "reason": "Domain tried redirected to an unrelated site (unosek.org); not followed.",
+      "url": "https://budapestwine.com/"
+    },
+    {
+      "name": "Budapest historic center or old town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A major museum, palace, temple, or heritage site",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local market or craft district",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood walk through A nearby area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A second museum or cultural stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A nearby day trip from Budapest",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local specialties near Your main base in Budapest",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market or food hall in A nearby area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dinner that reflects Hungary",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near A flexible day-trip area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "An easy lunch between Budapest historic center or old town and A major museum, palace, temple, or heritage site",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood table away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free walking route through Your main base in Budapest",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A public square or viewpoint near A nearby area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market meal in A flexible day-trip area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided time around Budapest historic center or old town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local neighborhood afternoon",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time when available",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Budapest historic center or old town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A destination-led dinner in Your main base in Budapest",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A polished stay near A nearby area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening around A major museum, palace, temple, or heritage site",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored food or culture experience",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near A nearby area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic outing built around A major museum, palace, temple, or heritage site",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long local dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow morning in A flexible day-trip area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Your main base in Budapest",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A memorable day trip from Budapest",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "An easy first stop at Budapest historic center or old town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A family-friendly outing near A nearby area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market or food hall everyone can browse",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal close to A flexible day-trip area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic stop with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A low-pressure day around Your main base in Budapest",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "An early visit to Budapest historic center or old town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Your main base in Budapest cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through A nearby area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local class, museum, or food stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in A flexible day-trip area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible day with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of A flexible day-trip area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A less obvious side of Budapest",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A seasonal experience in Hungary",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Your main base in Budapest",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "An off-peak version of Budapest historic center or old town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Your main base in Budapest",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A nearby area bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Budapest historic center or old town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through A flexible day-trip area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual local lunch near Your main base in Budapest",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around A nearby area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Lunch between Budapest historic center or old town and A major museum, palace, temple, or heritage site",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday meal in A flexible day-trip area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local dinner in Your main base in Budapest",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty from Hungary near A nearby area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A memorable table close to A flexible day-trip area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Your main base in Budapest",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around A nearby area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near A flexible day-trip area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Your main base in Budapest",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A nearby area morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Budapest historic center or old town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Your main base in Budapest",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in A nearby area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood coffee stop in A flexible day-trip area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup before the next stop",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "St. Stephen's Basilica",
+        "Hungarian National Museum",
+        "Széchenyi Thermal Bath",
+        "Matthias Church"
+      ],
+      "bestFirstTimers": [
+        "St. Stephen's Basilica",
+        "Hungarian State Opera",
+        "Great Market Hall",
+        "Budapest History Museum – Castle Museum"
+      ],
+      "bestRestaurants": [
+        "Gundel",
+        "Stand25",
+        "Rosenstein",
+        "Mazel Tov"
+      ],
+      "bestBudget": [
+        "Great Market Hall",
+        "Menza",
+        "Várkert Bazár",
+        "Első Pesti Rétesház"
+      ],
+      "bestLuxury": [
+        "Gundel",
+        "Stand25",
+        "New York Café",
+        "Hungarian State Opera"
+      ],
+      "bestCouples": [
+        "360 Bar",
+        "Rudas Baths",
+        "Várkert Bazár",
+        "Gundel"
+      ],
+      "bestKids": [
+        "Budapest Zoo",
+        "House of Music Hungary",
+        "Museum of Ethnography",
+        "Széchenyi Thermal Bath"
+      ],
+      "bestSolo": [
+        "Ludwig Museum",
+        "Espresso Embassy",
+        "House of Terror Museum",
+        "Great Market Hall"
+      ],
+      "bestUnique": [
+        "Hospital in the Rock",
+        "Rudas Baths",
+        "House of Music Hungary",
+        "Ludwig Museum"
+      ],
+      "bestBreakfast": [
+        "New York Café",
+        "Artizán (Hold utca)",
+        "Espresso Embassy",
+        "Kollázs Brasserie & Bar"
+      ],
+      "bestLunch": [
+        "Menza",
+        "Stand25",
+        "Gundel",
+        "Rosenstein"
+      ],
+      "bestDinner": [
+        "Stand25",
+        "Rosenstein",
+        "Mazel Tov",
+        "Gundel"
+      ],
+      "bestCocktails": [
+        "360 Bar",
+        "Kollázs Brasserie & Bar",
+        "Mazel Tov"
+      ],
+      "bestBakeries": [
+        "Artizán (Hold utca)",
+        "Auguszt Cukrászda (Kossuth Lajos utca)",
+        "Első Pesti Rétesház",
+        "Gerbeaud"
+      ],
+      "bestCoffee": [
+        "Espresso Embassy",
+        "Gerbeaud",
+        "New York Café"
+      ]
+    },
+    "queries": {
+      "Hungarian National Museum": "Hungarian National Museum Múzeum körút 14-16 Budapest",
+      "St. Stephen's Basilica": "St. Stephen's Basilica Szent István tér 1 Budapest",
+      "Széchenyi Thermal Bath": "Széchenyi Thermal Bath Állatkerti körút 9-11 Budapest",
+      "Rudas Baths": "Rudas Baths Döbrentei tér 9 Budapest",
+      "Matthias Church": "Matthias Church Szentháromság tér 2 Budapest",
+      "House of Terror Museum": "House of Terror Museum Andrássy út 60 Budapest",
+      "Museum of Ethnography": "Museum of Ethnography Dózsa György út 35 Budapest",
+      "Ludwig Museum": "Ludwig Museum Komor Marcell utca 1 Budapest",
+      "House of Music Hungary": "House of Music Hungary Olof Palme sétány 3-5 Budapest",
+      "Budapest History Museum – Castle Museum": "Castle Museum Szent György tér 2 Budapest",
+      "Hospital in the Rock": "Hospital in the Rock Lovas út 4/c Budapest",
+      "Hungarian State Opera": "Hungarian State Opera Andrássy út 22 Budapest",
+      "Budapest Zoo": "Budapest Zoo Állatkerti körút 6-12 Budapest",
+      "Várkert Bazár": "Várkert Bazár Ybl Miklós tér 2-6 Budapest",
+      "Great Market Hall": "Great Market Hall Vámház körút 1-3 Budapest",
+      "Gerbeaud": "Gerbeaud Vörösmarty tér 7-8 Budapest",
+      "New York Café": "New York Café Erzsébet körút 9-11 Budapest",
+      "Espresso Embassy": "Espresso Embassy Arany János utca 15 Budapest",
+      "Artizán (Hold utca)": "Artizán Hold utca 3 Budapest",
+      "Auguszt Cukrászda (Kossuth Lajos utca)": "Auguszt Cukrászda Kossuth Lajos utca 14-16 Budapest",
+      "Első Pesti Rétesház": "Első Pesti Rétesház Október 6. utca 22 Budapest",
+      "Rosenstein": "Rosenstein Mosonyi utca 3 Budapest",
+      "Menza": "Menza Liszt Ferenc tér 2 Budapest",
+      "Mazel Tov": "Mazel Tov Akácfa utca 47 Budapest",
+      "Stand25": "Stand25 Attila út 10 Budapest",
+      "Gundel": "Gundel Gundel Károly út 4 Budapest",
+      "Kollázs Brasserie & Bar": "Kollázs Brasserie & Bar Széchenyi István tér 5-6 Budapest",
+      "360 Bar": "360 Bar Andrássy út 39 Budapest"
+    },
+    "summary": "Churches, museums, thermal baths and a market hall, with breakfast cafés, bakeries, dinners and cocktail bars checked against their own websites.",
+    "highlights": [
+      "St. Stephen's Basilica",
+      "Hungarian National Museum",
+      "Széchenyi Thermal Bath",
+      "Matthias Church"
+    ],
+    "tip": "Several museums close on Mondays, including the Hungarian National Museum, the Museum of Ethnography, the Ludwig Museum, the House of Terror Museum and House of Music Hungary, so put the baths, the Basilica or the Castle Museum on that day.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mondays",
+        "copy": "The Hungarian National Museum, Museum of Ethnography, Ludwig Museum, House of Terror Museum and House of Music Hungary are closed on Mondays. Stand25 is closed on Sundays, and Artizán (Hold utca) is closed on Sundays too."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book ahead",
+        "copy": "Hungarian State Opera English tours run daily at 13:30, 15:00 and 16:30, with tickets on sale one week in advance. Hospital in the Rock can only be visited on a guided tour, and Rudas Baths sells night-bathing entry online only."
+      },
+      {
+        "label": "Walk-ins and queues",
+        "value": "Arrival order",
+        "copy": "Gerbeaud takes no reservations and seats guests in order of arrival. New York Café seats walk-ins from 07:00 to 18:00 and takes table bookings only after 18:00, for dinner guests."
+      },
+      {
+        "label": "Rules",
+        "value": "Age and dress",
+        "copy": "Rudas Baths does not admit anyone under 14, and Hospital in the Rock does not admit children under 6. Gundel recommends smart casual dress, and the Hungarian State Opera says it has no official dress code."
+      }
+    ],
+    "dek": "Plan museum days from Tuesday to Sunday, keep Monday for the baths or the Basilica, and book dinners and Opera tours ahead.",
+    "intro": [
+      "Budapest's headline sights publish clear hours, which makes it easier for you to plan. St. Stephen's Basilica is open for visits Monday to Saturday from 09.00 to 18.00 and on Sunday from 13.00 to 18.00, while its Panorama Terrace and Treasury open daily from 09.00 to 19.00. Up on Castle Hill, the Castle Museum of the Budapest History Museum opens daily from 10:00 to 18:00, with last entry at 17:30. Matthias Church has a concert programme running into December, including Bach and Charpentier on 19 December 2026.",
+      "Many museums close on Mondays. The Hungarian National Museum opens Tuesday to Sunday from 10:00 to 18:00 and is showing The Treasures of King Louis I (the Great) of Hungary until 31 December 2026, though some halls are closed for renovation. The Museum of Ethnography has A Soldier's Lot until 29 August 2027 and Rituals of Beauty until 4 January 2027. At the Ludwig Museum, Walk This Way. The Art of Walking runs until 31 January 2027, and two floors stay open until 20:00 from Tuesday to Sunday.",
+      "For the baths, Széchenyi Thermal Bath opens from 7:00 on weekdays, stays open until 22:00 on Fridays, and opens at 8:00 on holiday days from 18 December 2026 to 6 January 2027. Rudas Baths opens at 6:00, stays open until 22:00 on Mondays, and admits no one under 14. Hospital in the Rock can only be seen on a guided tour, with the last one leaving at 18:00. If you have children with you, Budapest Zoo is open daily and runs a discounted senior autumn programme until 30 November 2026.",
+      "For food, the Great Market Hall opens at 06.00 on weekdays and is closed on public holidays. Artizán on Hold utca opens at 07:00 on weekdays, and New York Café opens at 07:00 but takes table bookings only after 18:00, for dinner guests. Stand25 serves lunch and dinner Monday to Saturday, and Rosenstein confirms reservations only by email. Gundel is open all year and is advertising a New Year's Eve dinner on 31 December 2026, and 360 Bar on Andrássy út serves until 02:00 from Thursday to Saturday."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Start at St. Stephen's Basilica and its Panorama Terrace, then take an English tour of the Hungarian State Opera at 13:30, 15:00 or 16:30."
+      ],
+      [
+        "A slower morning",
+        "Have coffee at Espresso Embassy from 7:30 on weekdays or pastries at Artizán on Hold utca, then browse the Great Market Hall."
+      ],
+      [
+        "Before booking",
+        "Remember that most major museums close on Mondays, Stand25 closes on Sundays and Rosenstein confirms tables only by email."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The Hungarian Parliament site showed a CAPTCHA; the Museum of Fine Arts and Hungarian National Gallery returned HTTP 451; Ruszwurm, High Note SkyBar and Madal Café returned 403; Central Café, Boutiq'Bar, My Little Melbourne, Szimply, Pékműhely, Hopp, Művész Kávéház and Butter Brothers had certificate or TLS errors; several other domains did not resolve. None of these failures is evidence of closure. Matthias Church's weekly schedule was not readable (only one day's hours), Kollázs published no opening hours, the Hungarian State Opera's box office hours were not shown, and the House of Terror Museum's reopening notice gives no year. Espresso Embassy, Artizán, Auguszt and Kollázs showed current hours or booking but no dated 2026 content. Gellért Thermal Bath is closed, with reopening expected in 2028.",
+  "injectionLikeText": []
+}

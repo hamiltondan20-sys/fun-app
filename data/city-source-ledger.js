@@ -5,6 +5,1245 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Mexico City, Mexico": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-25",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability, and short-term notices (such as single-day closures, weekly show listings and seasonal food festivals) were left out of the guide copy. Several well-known places could not be read and are excluded: Museo Nacional de Antropología (HTTP 468), Palacio de Bellas Artes and Fifty Mils (HTTP 403), Pujol, Buna and Almanegra (HTTP 429), Chapultepec Park, Chapultepec Zoo and Museo del Estanquillo (connection refused), and Castillo de Chapultepec, Anahuacalli, Museo Jumex and Biblioteca Vasconcelos (DNS failures). Some confirmed places publish only partial details: Rosetta and Cafebrería El Péndulo show no opening hours, Basílica de Guadalupe's visiting hours were on a separate page not read, Museo Tamayo and MIDE do not list weekly opening days, Papalote's hours are not explicitly labelled as museum hours, Templo Mayor's current exhibition has no stated dates, and Bar La Ópera's hours are written in ambiguous shorthand.",
+    "sourceUrls": [
+      "docs/content-research/mexico-city-2026-10-25.md",
+      "docs/content-research/mexico-city-2026-10-25.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Centro Historico",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (neighbourhood); covered via named Centro sites"
+      },
+      {
+        "name": "Roma and Condesa",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (neighbourhoods)"
+      },
+      {
+        "name": "Roma Norte",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (neighbourhood)"
+      },
+      {
+        "name": "Chapultepec Park",
+        "url": "https://chapultepec.cdmx.gob.mx/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site chapultepec.cdmx.gob.mx refused connection (ECONNREFUSED); not readable"
+      },
+      {
+        "name": "Chapultepec",
+        "url": "https://chapultepec.cdmx.gob.mx/",
+        "checkedOn": "2026-10-25",
+        "reason": "same as Chapultepec Park; official site not readable (ECONNREFUSED)"
+      },
+      {
+        "name": "Park day in Chapultepec",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Mercado snacks",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Roma walking day",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Tasting menu dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private anthropology guide",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "High-end boutique stay",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Condesa dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Rooftop mezcal night",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Museum and long lunch day",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Cafe in Roma",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Museum day",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market lunch and bookstore afternoon",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Lucha libre night",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (Arena México confirmed separately)"
+      },
+      {
+        "name": "Xochimilco trajinera",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (no single operator)"
+      },
+      {
+        "name": "Boat ride in Xochimilco",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (no single operator)"
+      },
+      {
+        "name": "Library and design shops",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Chapultepec Zoo",
+        "url": "https://www.sedema.cdmx.gob.mx/programas/programa/zoologico-de-chapultepec",
+        "checkedOn": "2026-10-25",
+        "reason": "official SEDEMA page refused connection (ECONNREFUSED); not readable"
+      },
+      {
+        "name": "Pujol",
+        "url": "https://pujol.com.mx/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site returned HTTP 429 Too Many Requests on three attempts; not readable"
+      },
+      {
+        "name": "Panaderia Rosetta",
+        "url": "https://rosetta.com.mx/panaderia",
+        "checkedOn": "2026-10-25",
+        "reason": "rosetta.com.mx lists no bakery address or hours; /panaderia returned only an image, no readable text"
+      },
+      {
+        "name": "Cafe Nin",
+        "url": "https://www.cafenin.com.mx/",
+        "checkedOn": "2026-10-25",
+        "reason": "official domain redirects to Instagram (social media not allowed as evidence)"
+      },
+      {
+        "name": "Lardo",
+        "url": "https://lardo.mx/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site refused connection (ECONNREFUSED)"
+      },
+      {
+        "name": "El Cardenal",
+        "url": "https://restauranteelcardenal.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site lists branches but no hours or current operating evidence (latest dated item 2024); /sucursales returned 404"
+      },
+      {
+        "name": "Expendio de Maiz",
+        "url": "https://www.expendiodemaiz.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "SSL error (WRONG_VERSION_NUMBER) on the presumed official domain; not readable"
+      },
+      {
+        "name": "Handshake Speakeasy",
+        "url": "https://handshake.bar/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site handshake.bar publishes no address or hours; handshakespeakeasy.com does not resolve"
+      },
+      {
+        "name": "Licoreria Limantour",
+        "checkedOn": "2026-10-25",
+        "reason": "no official site found; limantour.tech and limantour.mx do not resolve"
+      },
+      {
+        "name": "Baltra Bar",
+        "url": "https://baltra.bar/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site gives hours but no address"
+      },
+      {
+        "name": "Odette",
+        "checkedOn": "2026-10-25",
+        "reason": "no official website identified"
+      },
+      {
+        "name": "Marne Bread Co.",
+        "checkedOn": "2026-10-25",
+        "reason": "no official website identified (only review/guide listings)"
+      },
+      {
+        "name": "Cucurucho",
+        "url": "https://cucurucho.mx/",
+        "checkedOn": "2026-10-25",
+        "reason": "cucurucho.mx does not resolve (DNS failure); no other official site found"
+      },
+      {
+        "name": "Quentin Cafe",
+        "checkedOn": "2026-10-25",
+        "reason": "no official website identified (only directory listings)"
+      },
+      {
+        "name": "Cardinal Casa de Cafe",
+        "url": "https://casacardinal.mx/",
+        "checkedOn": "2026-10-25",
+        "reason": "casacardinal.mx returned HTTP 522; not readable"
+      },
+      {
+        "name": "Museo Nacional de Antropología",
+        "url": "https://www.mna.inah.gob.mx/",
+        "checkedOn": "2026-10-25",
+        "reason": "official INAH site returned HTTP 468 (automated access refused)"
+      },
+      {
+        "name": "Palacio de Bellas Artes",
+        "url": "https://palacio.inba.gob.mx/",
+        "checkedOn": "2026-10-25",
+        "reason": "official INBAL site returned HTTP 403 Forbidden"
+      },
+      {
+        "name": "Castillo de Chapultepec (Museo Nacional de Historia)",
+        "url": "https://www.mnh.inah.gob.mx/",
+        "checkedOn": "2026-10-25",
+        "reason": "mnh.inah.gob.mx does not resolve (DNS failure)"
+      },
+      {
+        "name": "Museo Anahuacalli",
+        "url": "https://www.anahuacallimuseo.org/",
+        "checkedOn": "2026-10-25",
+        "reason": "DNS lookup failed (EAI_AGAIN); not readable"
+      },
+      {
+        "name": "Casa Luis Barragán",
+        "url": "https://www.casaluisbarragan.org/",
+        "checkedOn": "2026-10-25",
+        "reason": "homepage gives no address or visit hours; /visitas returned 404"
+      },
+      {
+        "name": "Museo Jumex",
+        "url": "https://www.museojumex.org/",
+        "checkedOn": "2026-10-25",
+        "reason": "DNS lookup failed (EAI_AGAIN); not readable"
+      },
+      {
+        "name": "Fifty Mils (Four Seasons)",
+        "url": "https://www.fourseasons.com/mexico/dining/lounges/fifty-mils/",
+        "checkedOn": "2026-10-25",
+        "reason": "official Four Seasons page returned HTTP 403 Forbidden"
+      },
+      {
+        "name": "Sanborns Casa de los Azulejos",
+        "url": "https://www.sanborns.com.mx/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site returned HTTP 403 Forbidden"
+      },
+      {
+        "name": "Café de Tacuba",
+        "url": "https://www.cafedetacuba.com.mx/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site returned no readable content"
+      },
+      {
+        "name": "Café El Jarocho",
+        "url": "https://www.cafeeljarocho.com.mx/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site returned no readable content"
+      },
+      {
+        "name": "El Globo",
+        "url": "https://www.elglobo.com.mx/",
+        "checkedOn": "2026-10-25",
+        "reason": "homepage lists no branch address; latest dated content 2024"
+      },
+      {
+        "name": "Gran Hotel Ciudad de México (Terraza)",
+        "url": "https://www.granhoteldelaciudaddemexico.com.mx/",
+        "checkedOn": "2026-10-25",
+        "reason": "address published but no hours or current evidence for the terrace restaurant/bar"
+      },
+      {
+        "name": "Ojo de Agua",
+        "url": "https://grupoojodeagua.com.mx/sucursales/",
+        "checkedOn": "2026-10-25",
+        "reason": "branch page gives hours but no street addresses (map links only)"
+      },
+      {
+        "name": "Tlecan",
+        "url": "https://tlecan.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site gives no address, hours or reservation details"
+      },
+      {
+        "name": "Buna",
+        "url": "https://buna.mx/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site returned HTTP 429 Too Many Requests on three attempts"
+      },
+      {
+        "name": "Almanegra Café",
+        "url": "https://almanegracafe.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site returned HTTP 429 Too Many Requests on three attempts"
+      },
+      {
+        "name": "Museo del Estanquillo",
+        "url": "https://www.museodelestanquillo.cdmx.gob.mx/",
+        "checkedOn": "2026-10-25",
+        "reason": "official CDMX site refused connection (ECONNREFUSED)"
+      },
+      {
+        "name": "Biblioteca Vasconcelos",
+        "url": "https://www.bibliotecavasconcelos.gob.mx/",
+        "checkedOn": "2026-10-25",
+        "reason": "DNS lookup failed (EAI_AGAIN); not readable"
+      },
+      {
+        "name": "Museo de Arte Popular",
+        "url": "https://www.museodeartepopular.cdmx.gob.mx/",
+        "checkedOn": "2026-10-25",
+        "reason": "presumed official domain does not resolve (DNS failure)"
+      },
+      {
+        "name": "Museo Casa de León Trotsky",
+        "url": "https://www.museocasadeleontrotsky.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "presumed official domain does not resolve (DNS failure)"
+      },
+      {
+        "name": "Lalo!",
+        "url": "https://www.eat-lalo.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site contains only Instagram links; no address or hours"
+      },
+      {
+        "name": "Hanky Panky",
+        "url": "https://www.hankypankycdmx.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "presumed official domain does not resolve (DNS failure)"
+      },
+      {
+        "name": "Blend Station",
+        "url": "https://www.blendstation.mx/",
+        "checkedOn": "2026-10-25",
+        "reason": "DNS lookup failed (EAI_AGAIN)"
+      },
+      {
+        "name": "Maque",
+        "url": "https://www.maque.com.mx/",
+        "checkedOn": "2026-10-25",
+        "reason": "presumed official site returned HTTP 404"
+      }
+    ],
+    "placeSources": {
+      "Museo Frida Kahlo (Casa Azul)": {
+        "url": "https://www.museofridakahlo.org.mx/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Publishes current hours and a closure list running to \"January 1, 2027\"; tickets sold online at boletos.museofridakahlo.org.mx and at a self-service kiosk in the museum shop's Showroom-Click & Collect area."
+      },
+      "Museo del Templo Mayor": {
+        "url": "https://www.templomayor.inah.gob.mx/",
+        "sourceType": "official public operator (INAH)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Lists the temporary exhibition \"Cuauhtémoc. Historia y memoria\" (no dates shown) and states \"El museo está abierto de martes a domingo de 09:00 a 17:00 horas.\""
+      },
+      "Contramar (Roma Norte)": {
+        "url": "https://contramar.com.mx/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Reservations desk open daily 10:00-20:00 by phone/WhatsApp or OpenTable; groups over 7 book by email (\"reservaciones mayores a 7 personas\")."
+      },
+      "Quintonil": {
+        "url": "https://www.quintonil.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Tasting menu dated \"OCTUBRE 2026\" titled \"NUESTRO MÉXICO\" at $6,090 MXN; bookings only via Tock, \"no se realizan reservaciones vía correo electrónico\"."
+      },
+      "Museo Soumaya (Plaza Carso)": {
+        "url": "https://www.museosoumaya.org/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current visitor information lists daily hours and \"Entrada gratuita\" for Plaza Carso and its other three venues."
+      },
+      "Papalote Museo del Niño (Chapultepec)": {
+        "url": "https://www.papalote.org.mx/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online ticket sales (\"Compra tus boletos\") for the Chapultepec site, current film listings and group-sales contacts."
+      },
+      "Museo Tamayo": {
+        "url": "https://www.museotamayo.org/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibitions \"Tamayo, Nieto, Toledo: Los años en París\" (20 Aug 2026-15 Feb 2027) and \"Museo Tamayo: Arquitectura y cosmotécnica\" (23 Jul 2026-28 Feb 2027)."
+      },
+      "Arena México": {
+        "url": "https://cmll.com/arenas/arena-mexico/",
+        "sourceType": "operator's own site (CMLL)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "CMLL lists dated October and November 2026 lucha libre cards at Arena México, with tickets at the box office or via Ticketmaster; regular shows Tuesdays 7:30 pm, Fridays 8:30 pm, Sundays 5:00 pm."
+      },
+      "Museo Dolores Olmedo": {
+        "url": "https://www.museodoloresolmedo.org.mx/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Publishes visiting hours and a \"Boletos\" link for ticket sales; footer \"MDO © 2026\"."
+      },
+      "Máximo Bistrot": {
+        "url": "https://www.maximobistrot.com.mx/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Publishes current service hours with links to Reservaciones and Menú pages."
+      },
+      "Churrería El Moro (Centro Histórico)": {
+        "url": "https://elmoro.mx/churrerias/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Branch list gives the Centro Histórico shop as open Monday to Sunday, \"24 hrs\"; \"Churrería desde 1935\"."
+      },
+      "MUAC (Museo Universitario Arte Contemporáneo)": {
+        "url": "https://muac.unam.mx/",
+        "sourceType": "official public operator (UNAM)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibition \"Desde el umbral\" runs 13.06.2026-29.11.2026; general admission $60, free Thursdays 18:00-20:00; \"La venta de boletos termina 30 minutos antes del cierre.\""
+      },
+      "Rosetta": {
+        "url": "https://rosetta.com.mx/reservaciones",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Reservations page takes bookings, with tables of 5 to 12 handled by email/phone/WhatsApp and groups of 13+ by the events team."
+      },
+      "Bar La Ópera": {
+        "url": "https://laoperabar.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Publishes current hours and contact for \"Grupos y Eventos Especiales\"; history dates to 1876 and the present site to 1895."
+      },
+      "Azul Histórico": {
+        "url": "https://azul.rest/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Header shows \"Octubre - Noviembre 2026\" with a Oaxaca food festival; blog posts dated 2026; online reservation link for this branch."
+      },
+      "Chiquitito Café (Alfonso Reyes)": {
+        "url": "https://www.chiquititocafe.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Branch list with \"Horarios 7:30 am a 8:30 pm\" for each location; footer \"© 2026\"."
+      },
+      "Antiguo Colegio de San Ildefonso": {
+        "url": "https://www.sanildefonso.org.mx/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Exhibitions \"UNAM 475+\" (\"Octubre 2026 - Marzo 2027\") and \"Entretejidas\" (17 Sep-6 Dec 2026); admission $50 MXN, free on Sundays."
+      },
+      "Museo Kaluz": {
+        "url": "https://www.museokaluz.org/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibition \"Alphonse Mucha: La magia de la línea\" (9 Oct 2026-8 Feb 2027); \"El arte nuevo: Simbolismo y Art Nouveau en México\" opens 30 Oct 2026 to 8 Mar 2027."
+      },
+      "Museo Nacional de Arte (MUNAL)": {
+        "url": "https://www.munal.mx/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Exhibitions \"Ángel Zárraga. Los ideales del arte\" (25/09/2026-28/03/2027) and \"México: ruta y destino\" (21/05/2026-14/02/2027)."
+      },
+      "Pastelería Ideal (16 de Septiembre)": {
+        "url": "https://www.pasteleriaideal.com/sucursales",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Branch page lists daily hours and department phone extensions (Repostería, Bocadillos, Mayoreo)."
+      },
+      "Gin Gin (Polanco)": {
+        "url": "https://gingin.mx/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Branch list with daily hours for five locations; footer \"© 2026 Grupo Indiana\"."
+      },
+      "Basílica de Guadalupe": {
+        "url": "https://virgendeguadalupe.org.mx/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Dated October 2026 liturgy (Laudes and Misa Coral on 24 Oct 2026, readings for October 2026); daily Misa Coral at 9:00 h."
+      },
+      "MIDE Museo Interactivo de Economía": {
+        "url": "https://www.mide.org.mx/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Hoy abierto de 09:00 a 17:00\"; online tickets; \"Tardes con Pilón\" 2x1 general entry Tue-Fri 15:00-17:00 at the box office only; 2026 content incl. Global Money Week 2026."
+      },
+      "Zinco Jazz Club": {
+        "url": "https://www.zincojazz.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Dated October 2026 programme of nightly shows; online reservations for 2 to 10 people, larger groups via WhatsApp."
+      },
+      "Cafebrería El Péndulo (Condesa)": {
+        "url": "https://www.pendulo.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Live 2026 bookshop content (a 2026 \"Temporada de terror\" banner, 2027 calendars for sale); footer \"2026 © Cafebrería El Péndulo\"."
+      },
+      "Salón Tenampa": {
+        "url": "https://tenampa.com.mx/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Publishes current weekly hours and a seasonal menu promotion; footer \"2026 TENAMPA\"; founded \"en el año de 1925\"."
+      }
+    }
+  },
+  "Budapest, Hungary": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-25",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The Hungarian Parliament site showed a CAPTCHA; the Museum of Fine Arts and Hungarian National Gallery returned HTTP 451; Ruszwurm, High Note SkyBar and Madal Café returned 403; Central Café, Boutiq'Bar, My Little Melbourne, Szimply, Pékműhely, Hopp, Művész Kávéház and Butter Brothers had certificate or TLS errors; several other domains did not resolve. None of these failures is evidence of closure. Matthias Church's weekly schedule was not readable (only one day's hours), Kollázs published no opening hours, the Hungarian State Opera's box office hours were not shown, and the House of Terror Museum's reopening notice gives no year. Espresso Embassy, Artizán, Auguszt and Kollázs showed current hours or booking but no dated 2026 content. Gellért Thermal Bath is closed, with reopening expected in 2028.",
+    "sourceUrls": [
+      "docs/content-research/budapest-2026-10-25.md",
+      "docs/content-research/budapest-2026-10-25.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Hungarian Parliament Building (Visitor Centre)",
+        "url": "https://www.parlament.hu/en/web/visitor-centre",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site showed a CAPTCHA check ('CAPTCHA ellenőrzés'); not bypassed."
+      },
+      {
+        "name": "Museum of Fine Arts",
+        "url": "https://www.szepmuveszeti.hu/en/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site returned HTTP 451 to automated fetch."
+      },
+      {
+        "name": "Hungarian National Gallery",
+        "url": "https://mng.hu/en/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site returned HTTP 451 to automated fetch."
+      },
+      {
+        "name": "Gellért Thermal Bath",
+        "url": "https://www.gellertfurdo.hu/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site says the bath is closed: 'A fürdő 2025. október 1-jétől zárva tart', reopening expected 2028."
+      },
+      {
+        "name": "Fisherman's Bastion",
+        "url": "https://www.fishermansbastion.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Only site found is run by a restaurant company (Magyar Halászbástya Étteremüzemeltető Kft.), not confirmed as the official operator; no street address."
+      },
+      {
+        "name": "Dohány Street Synagogue",
+        "url": "https://www.dohany-zsinagoga.hu/",
+        "checkedOn": "2026-10-25",
+        "reason": "Community site gives address (Síp utca 12.) but no visiting hours or 2026 operating evidence; visit page returned 404."
+      },
+      {
+        "name": "Liszt Academy",
+        "url": "https://concert.lisztacademy.hu/",
+        "checkedOn": "2026-10-25",
+        "reason": "Concert calendar is current (October–December 2026) but no venue street address could be read on the official pages fetched."
+      },
+      {
+        "name": "Hungarian Museum of Agriculture (Vajdahunyad Castle)",
+        "url": "https://www.mezogazdasagimuzeum.hu/en",
+        "checkedOn": "2026-10-25",
+        "reason": "No opening hours or current exhibition/2026 evidence on the page read."
+      },
+      {
+        "name": "Kéhli Vendéglő",
+        "url": "https://www.kehli.hu/",
+        "checkedOn": "2026-10-25",
+        "reason": "Hours published but no street address on the official homepage; contact page returned 404."
+      },
+      {
+        "name": "Szimpla Kert",
+        "url": "https://www.szimpla.hu/info.html",
+        "checkedOn": "2026-10-25",
+        "reason": "Official pages read showed no address, hours or dated content; English info page returned 404."
+      },
+      {
+        "name": "Costes",
+        "url": "https://costes.group/",
+        "checkedOn": "2026-10-25",
+        "reason": "Group site shows no address or hours; restaurant site returned 404."
+      },
+      {
+        "name": "Ruszwurm",
+        "url": "https://ruszwurm.hu/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site returned HTTP 403."
+      },
+      {
+        "name": "Central Café (Centrál Kávéház)",
+        "url": "https://www.centralkavehaz.hu/",
+        "checkedOn": "2026-10-25",
+        "reason": "Certificate error ('certificate has expired'); not bypassed."
+      },
+      {
+        "name": "Boutiq'Bar",
+        "url": "https://www.boutiqbar.hu/",
+        "checkedOn": "2026-10-25",
+        "reason": "Certificate error ('self signed certificate'); not bypassed."
+      },
+      {
+        "name": "My Little Melbourne",
+        "url": "https://mylittlemelbourne.hu/",
+        "checkedOn": "2026-10-25",
+        "reason": "Certificate error (hostname mismatch); not bypassed."
+      },
+      {
+        "name": "High Note SkyBar",
+        "url": "https://highnoteskybar.hu/en/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site returned HTTP 403."
+      },
+      {
+        "name": "Madal Café",
+        "url": "https://madalcafe.hu/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site returned HTTP 403."
+      },
+      {
+        "name": "Szimply",
+        "url": "http://szimply.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Certificate error (hostname mismatch); not bypassed."
+      },
+      {
+        "name": "Pékműhely",
+        "url": "https://pekmuhely.hu/",
+        "checkedOn": "2026-10-25",
+        "reason": "Certificate error (hostname mismatch); not bypassed."
+      },
+      {
+        "name": "Butter Brothers",
+        "url": "https://www.butterbrothers.hu/",
+        "checkedOn": "2026-10-25",
+        "reason": "TLS error on fetch; not bypassed."
+      },
+      {
+        "name": "Hopp",
+        "url": "https://www.hopp.hu/",
+        "checkedOn": "2026-10-25",
+        "reason": "Certificate error (hostname mismatch); not bypassed."
+      },
+      {
+        "name": "Művész Kávéház",
+        "url": "https://www.muveszkavehaz.hu/",
+        "checkedOn": "2026-10-25",
+        "reason": "Certificate error ('unable to verify the first certificate'); not bypassed."
+      },
+      {
+        "name": "Daubner Cukrászda",
+        "url": "https://www.daubnercukraszda.hu/",
+        "checkedOn": "2026-10-25",
+        "reason": "Connection refused on fetch."
+      },
+      {
+        "name": "Café Kör",
+        "url": "https://www.cafekor.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site returned no readable content."
+      },
+      {
+        "name": "Fekete",
+        "url": "https://www.feketekv.hu/",
+        "checkedOn": "2026-10-25",
+        "reason": "Address readable (Múzeum krt 5.) but hours conflict and the latest dated content is from 2021; no current operating evidence."
+      },
+      {
+        "name": "Szamos (Budapest branches)",
+        "url": "https://www.szamos.hu/",
+        "checkedOn": "2026-10-25",
+        "reason": "Homepage lists branch names only, no addresses or hours; footer © 2025."
+      },
+      {
+        "name": "Café Gerlóczy",
+        "url": "https://www.cafegerloczy.hu/",
+        "checkedOn": "2026-10-25",
+        "reason": "Domain did not resolve (ENOTFOUND)."
+      },
+      {
+        "name": "Spíler",
+        "url": "https://www.spilerbistro.hu/",
+        "checkedOn": "2026-10-25",
+        "reason": "Domain tried did not resolve (ENOTFOUND)."
+      },
+      {
+        "name": "Cirkusz",
+        "url": "https://www.cirkuszbudapest.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Domain tried did not resolve (ENOTFOUND)."
+      },
+      {
+        "name": "Belvárosi Piac (Hold utca market)",
+        "url": "https://belvarosipiac.hu/",
+        "checkedOn": "2026-10-25",
+        "reason": "Domain tried did not resolve (ENOTFOUND)."
+      },
+      {
+        "name": "DOBLO Wine Bar",
+        "url": "https://budapestwine.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Domain tried redirected to an unrelated site (unosek.org); not followed."
+      },
+      {
+        "name": "Budapest historic center or old town",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A major museum, palace, temple, or heritage site",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local market or craft district",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood walk through A nearby area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A second museum or cultural stop",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A nearby day trip from Budapest",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local specialties near Your main base in Budapest",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market or food hall in A nearby area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dinner that reflects Hungary",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near A flexible day-trip area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "An easy lunch between Budapest historic center or old town and A major museum, palace, temple, or heritage site",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood table away from the busiest sights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free walking route through Your main base in Budapest",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A public square or viewpoint near A nearby area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market meal in A flexible day-trip area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided time around Budapest historic center or old town",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local neighborhood afternoon",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time when available",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Budapest historic center or old town",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A destination-led dinner in Your main base in Budapest",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A polished stay near A nearby area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening around A major museum, palace, temple, or heritage site",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored food or culture experience",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near A nearby area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic outing built around A major museum, palace, temple, or heritage site",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long local dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow morning in A flexible day-trip area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Your main base in Budapest",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A memorable day trip from Budapest",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "An easy first stop at Budapest historic center or old town",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A family-friendly outing near A nearby area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market or food hall everyone can browse",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal close to A flexible day-trip area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic stop with room to move",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A low-pressure day around Your main base in Budapest",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "An early visit to Budapest historic center or old town",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Your main base in Budapest cafe or market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through A nearby area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local class, museum, or food stop",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in A flexible day-trip area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible day with one clear anchor",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of A flexible day-trip area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A less obvious side of Budapest",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A seasonal experience in Hungary",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Your main base in Budapest",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "An off-peak version of Budapest historic center or old town",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Your main base in Budapest",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A nearby area bakery or market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Budapest historic center or old town",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through A flexible day-trip area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual local lunch near Your main base in Budapest",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around A nearby area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Lunch between Budapest historic center or old town and A major museum, palace, temple, or heritage site",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday meal in A flexible day-trip area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local dinner in Your main base in Budapest",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty from Hungary near A nearby area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A memorable table close to A flexible day-trip area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower final-night meal away from the busiest sights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Your main base in Budapest",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around A nearby area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near A flexible day-trip area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Your main base in Budapest",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A nearby area morning market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Budapest historic center or old town",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Your main base in Budapest",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in A nearby area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood coffee stop in A flexible day-trip area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup before the next stop",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Hungarian National Museum": {
+        "url": "https://mnm.hu/en",
+        "sourceType": "official public operator (Hungarian National Museum)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Exhibition 'The Treasures of King Louis I (the Great) of Hungary' runs 2026.03.05. to 12.31. The site also notes 'Some of our exhibition halls will be closed to visitors from December 2, 2025, due to renovation works' and the Coronation Mantle is 'Currently closed to visitors.'"
+      },
+      "St. Stephen's Basilica": {
+        "url": "https://www.bazilikabudapest.hu/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "News items dated through 2026-09-04, including '2026-03-18: Húsvéti miserend és nyitvatartás'; visitor hours published for the church and the Panorama Terrace."
+      },
+      "Széchenyi Thermal Bath": {
+        "url": "https://www.szechenyifurdo.hu/nyitvatartas",
+        "sourceType": "official public operator (Budapest Gyógyfürdői és Hévizei Zrt.)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Hours notice: on 'kiemelt napok (2026. október 23-25., december 18. - 2027. január 6.)' the bath opens at 8:00; online tickets sold to 'avoid the queue'."
+      },
+      "Rudas Baths": {
+        "url": "https://www.rudasfurdo.hu/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Links an 'Árak 2026' price page; night bathing tickets are 'kizárólag online' (online only). States 'A FÜRDŐ 14 ÉVES KOR ALATT NEM LÁTOGATHATÓ' (no visitors under 14)."
+      },
+      "Matthias Church": {
+        "url": "https://www.matyas-templom.hu/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Concert listings including '2026. november 1. 19:30 – Rutter: Requiem' and '2026. december 19. 20:00 – Bach és Charpentier'."
+      },
+      "House of Terror Museum": {
+        "url": "https://www.terrorhaza.hu/en/visitor-information",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Homepage notices a temporary technical closure with 'Opening: September 22 at 10:00 AM' and 'From Tuesday, September 29, admission fees will once again apply' (no year stated; 29 September is a Tuesday in 2026). 'Tickets are only available for purchase at the museum.'"
+      },
+      "Museum of Ethnography": {
+        "url": "https://www.neprajz.hu/en/",
+        "sourceType": "official public operator (Museum of Ethnography)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Temporary exhibitions 'A Soldier's Lot – Remembering Compulsory Military Service' (30 September 2026 to 29 August 2027) and 'Rituals of Beauty' (19 May 2026 to 4 January 2027)."
+      },
+      "Ludwig Museum": {
+        "url": "https://www.ludwigmuseum.hu/en/opening-hours-and-ticket-prices",
+        "sourceType": "official public operator (Ludwig Museum – Museum of Contemporary Art)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Exhibitions 'Walk This Way. The Art of Walking' (9 October 2026 to 31 January 2027) and 'BING BANG. Expanding Collection Horizons' (5 September 2025 to 10 January 2027)."
+      },
+      "House of Music Hungary": {
+        "url": "https://zenehaza.hu/en/opening-hours",
+        "sourceType": "operator's own site (Liget Budapest)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Programme calendar lists events such as 'Nov 5: Cannons and Flowers, gala concert celebrating György Cziffra'; permanent exhibition 'Dimensions of Sound' and the temporary Freddie exhibition."
+      },
+      "Budapest History Museum – Castle Museum": {
+        "url": "https://varmuzeum.hu/en/",
+        "sourceType": "official public operator (Budapest History Museum)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibitions listed, including 'A City on the Front Line' (Buda and Pest under Ottoman rule) and 'Chronicles of Lost Buildings'; the parent BHM site lists 2026-dated exhibitions."
+      },
+      "Hospital in the Rock": {
+        "url": "https://www.sziklakorhaz.eu/en/information",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online ticket booking live; 'The museum can only be visited as part of a guided tour.' Children under 6 may not visit."
+      },
+      "Hungarian State Opera": {
+        "url": "https://www.opera.hu/en/services/operatour/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Guided tours bookable: 60-minute English tour 'daily at 1:30 pm, 3:00 pm, and 4:30 pm'; tickets on sale one week ahead. 'Guided tours are not available during performances.'"
+      },
+      "Budapest Zoo": {
+        "url": "https://www.zoobudapest.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Events 'Nyugdíjas Ősz az Állatkertben 2026' (October 1 to November 30, 2026) and a Halloween evening on October 30, 2026; adult ticket 5,900 HUF, child 4,200 HUF."
+      },
+      "Várkert Bazár": {
+        "url": "https://varkertbazar.hu/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "News posts dated 2026 (15 May 2026 programme change; 28 April 2026 'Information on temporary closure', details not shown). Garden hours published."
+      },
+      "Great Market Hall": {
+        "url": "https://piaconline.hu/nagycsarnok/",
+        "sourceType": "official public operator (Budapest Vásárcsarnokai Kft.)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Operator site carries a price table dated '2026.10.16.' and the hall's weekly hours; closed ('ZÁRVA!') on official holidays."
+      },
+      "Gerbeaud": {
+        "url": "https://www.gerbeaud.hu/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current hours notice and '© 2026 Gerbeaud Confectionery'; 'In our cafe, there is no reservation system.'"
+      },
+      "New York Café": {
+        "url": "https://www.newyorkcafe.hu/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Booking rules published: table reservations 'csak 18:00 utánra és kizárólag vacsoravendégeknek' (only after 18:00, dinner guests only); walk-in seating 07:00-18:00. '© 2026 New York Café'."
+      },
+      "Espresso Embassy": {
+        "url": "https://www.espressoembassy.hu/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Hours notice published; holidays: 'Ünnepeken általában nyitva tartunk, a részleteket jelezzük.' No dated 2026 content seen."
+      },
+      "Artizán (Hold utca)": {
+        "url": "https://www.artizan.hu/lokaciok/artizan-budapest/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Branch page with current hours; site images uploaded June-July 2026. No dated 2026 notice."
+      },
+      "Auguszt Cukrászda (Kossuth Lajos utca)": {
+        "url": "https://www.auguszt.hu/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Branch hours published ('Kedd-Szombat: 10.00-18.00', 'Vasárnap: Zárva'). No dated 2026 content seen."
+      },
+      "Első Pesti Rétesház": {
+        "url": "https://reteshaz.com/en",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online table reservation offered; footer '2007 - 2026 © Első Pesti Rétesház'; private strudel-stretching shows for a minimum of 20 people."
+      },
+      "Rosenstein": {
+        "url": "https://www.rosenstein.hu/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Booking form live; a reservation is valid only once confirmed by email ('Amíg nem igazoltuk vissza Önnek e-mailben, addig nincs érvényes foglalása'). 'Copyright 2026 © Rosenstein Vendéglő'."
+      },
+      "Menza": {
+        "url": "https://www.menzaetterem.hu/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current weekly offer and daily lunch menu (2,890 Ft, from 11:30 'while stocks last'); online booking for up to 4 people."
+      },
+      "Mazel Tov": {
+        "url": "https://www.mazeltov.hu/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Page published Oct 22, 2026; guest-chef evening 'október 27., kedd'; blog posts dated October 2026; online booking via SevenRooms."
+      },
+      "Stand25": {
+        "url": "https://www.stand25.hu/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online and phone booking; drinks list file '2026.10.-ITALLAP_WEB.pdf'; Sunday 'Zárva'."
+      },
+      "Gundel": {
+        "url": "https://www.gundel.hu/en",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Advertises 'NEW YEAR'S EVE AT GUNDEL Gundel Palace | 31 December 2026, 6.30 pm'; 'Gundel Restaurant is open all year round.' 'smart casual dress is recommended.'"
+      },
+      "Kollázs Brasserie & Bar": {
+        "url": "https://www.kollazs.hu/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Live reservation form; serves breakfast, lunch, dinner, Sunday Brunch and cocktails, with live music on weekends. No dated 2026 content seen."
+      },
+      "360 Bar": {
+        "url": "https://www.360bar.hu/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "2026 menus ('MENU2026', 'summer2026') and '360 MOOD MAY 2026'; online table booking."
+      }
+    }
+  },
   "Copenhagen, Denmark": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-25",

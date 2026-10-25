@@ -1011,12 +1011,14 @@ window.HB_DATA = window.HB_DATA || {};
       "Little Collins": "Little Collins Eerste Sweelinckstraat 19f Amsterdam",
       "De Wasserette": "De Wasserette Eerste van der Helststraat 27 Amsterdam"
     };
-    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
-    if (cityGuide) {
-      cityGuide.summary = "Museums, a royal palace, a medieval church and a riverside lookout, with breakfast cafés, bakeries, a food hall, dinners and a cocktail bar checked against their own websites.";
-      cityGuide.highlights = ["Rijksmuseum","Anne Frank House","Royal Palace Amsterdam","Stedelijk Museum"];
-      cityGuide.tip = "Book the Anne Frank House early: tickets are sold only online for a set time slot, released every Tuesday at 10am for visits six weeks later, and none are sold at the door.";
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: cityKey.split(",")[0].trim() };
+      data.cityGuideData.push(cityGuide);
     }
+    cityGuide.summary = "Museums, a royal palace, a medieval church and a riverside lookout, with breakfast cafés, bakeries, a food hall, dinners and a cocktail bar checked against their own websites.";
+    cityGuide.highlights = ["Rijksmuseum","Anne Frank House","Royal Palace Amsterdam","Stedelijk Museum"];
+    cityGuide.tip = "Book the Anne Frank House early: tickets are sold only online for a set time slot, released every Tuesday at 10am for visits six weeks later, and none are sold at the door.";
     data.destinationFacts[cityKey] = "Book the Anne Frank House early: tickets are sold only online for a set time slot, released every Tuesday at 10am for visits six weeks later, and none are sold at the door.";
     if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Museums, a royal palace, a medieval church and a riverside lookout, with breakfast cafés, bakeries, a food hall, dinners and a cocktail bar checked against their own websites.";
     data.cityPlanningToolkitData[cityKey] = [
@@ -1114,12 +1116,14 @@ window.HB_DATA = window.HB_DATA || {};
       "La Cabra (SoHo)": "La Cabra 284 Lafayette St New York",
       "Devoción (Williamsburg)": "Devoción 148 Grand St Brooklyn New York"
     };
-    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
-    if (cityGuide) {
-      cityGuide.summary = "Parks, a free ferry, the tram, observation decks and museums, with breakfast spots, dinners, cocktail bars, bakeries and coffee checked against their own websites.";
-      cityGuide.highlights = ["Central Park","Empire State Building","9/11 Memorial & Museum","The High Line"];
-      cityGuide.tip = "Plan museum days around Tuesdays, when the Whitney and the Frick are both closed, and book the Empire State Building ahead because every visit needs a timed reservation.";
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: cityKey.split(",")[0].trim() };
+      data.cityGuideData.push(cityGuide);
     }
+    cityGuide.summary = "Parks, a free ferry, the tram, observation decks and museums, with breakfast spots, dinners, cocktail bars, bakeries and coffee checked against their own websites.";
+    cityGuide.highlights = ["Central Park","Empire State Building","9/11 Memorial & Museum","The High Line"];
+    cityGuide.tip = "Plan museum days around Tuesdays, when the Whitney and the Frick are both closed, and book the Empire State Building ahead because every visit needs a timed reservation.";
     data.destinationFacts[cityKey] = "Plan museum days around Tuesdays, when the Whitney and the Frick are both closed, and book the Empire State Building ahead because every visit needs a timed reservation.";
     if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Parks, a free ferry, the tram, observation decks and museums, with breakfast spots, dinners, cocktail bars, bakeries and coffee checked against their own websites.";
     data.cityPlanningToolkitData[cityKey] = [
@@ -1211,12 +1215,14 @@ window.HB_DATA = window.HB_DATA || {};
       "Ivy Place": "Ivy Place 16-15 Sarugakucho Shibuya-ku Tokyo",
       "Fuglen Tokyo (Tomigaya)": "Fuglen Tokyo 1-16-11 Tomigaya Shibuya-ku Tokyo"
     };
-    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
-    if (cityGuide) {
-      cityGuide.summary = "Temples, shrines, museums, observation decks and gardens, plus breakfast cafés, noodle lunches, dinners and cocktail bars, each checked against its own or its public operator's website.";
-      cityGuide.highlights = ["Senso-ji","Meiji Jingu","Tokyo National Museum","Tokyo Skytree"];
-      cityGuide.tip = "Watch the closing days: the Tokyo National Museum closes on Mondays, the Imperial Palace East Gardens on Mondays and Fridays, and Bar High Five on Sundays and national holidays.";
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: cityKey.split(",")[0].trim() };
+      data.cityGuideData.push(cityGuide);
     }
+    cityGuide.summary = "Temples, shrines, museums, observation decks and gardens, plus breakfast cafés, noodle lunches, dinners and cocktail bars, each checked against its own or its public operator's website.";
+    cityGuide.highlights = ["Senso-ji","Meiji Jingu","Tokyo National Museum","Tokyo Skytree"];
+    cityGuide.tip = "Watch the closing days: the Tokyo National Museum closes on Mondays, the Imperial Palace East Gardens on Mondays and Fridays, and Bar High Five on Sundays and national holidays.";
     data.destinationFacts[cityKey] = "Watch the closing days: the Tokyo National Museum closes on Mondays, the Imperial Palace East Gardens on Mondays and Fridays, and Bar High Five on Sundays and national holidays.";
     if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Temples, shrines, museums, observation decks and gardens, plus breakfast cafés, noodle lunches, dinners and cocktail bars, each checked against its own or its public operator's website.";
     data.cityPlanningToolkitData[cityKey] = [
@@ -1311,12 +1317,14 @@ window.HB_DATA = window.HB_DATA || {};
       "Hofmann Pastelería (Born)": "Hofmann Pastelería Carrer dels Flassaders 44 Barcelona",
       "Three Marks Coffee (Ausiàs Marc)": "Three Marks Coffee Carrer d'Ausiàs Marc 151 Barcelona"
     };
-    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
-    if (cityGuide) {
-      cityGuide.summary = "Gaudí landmarks, the cathedral, Picasso and Catalan art museums, a market, tapas bars, seafront rice, a cocktail bar, a pastry shop and specialty coffee, each checked against its own website.";
-      cityGuide.highlights = ["Sagrada Família","Park Güell","Casa Batlló","Museu Picasso"];
-      cityGuide.tip = "Park Güell tickets must be bought in advance online and hold for 30 minutes after your slot, while Museu Picasso and MNAC publish no Monday opening, so put the museums on other days.";
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: cityKey.split(",")[0].trim() };
+      data.cityGuideData.push(cityGuide);
     }
+    cityGuide.summary = "Gaudí landmarks, the cathedral, Picasso and Catalan art museums, a market, tapas bars, seafront rice, a cocktail bar, a pastry shop and specialty coffee, each checked against its own website.";
+    cityGuide.highlights = ["Sagrada Família","Park Güell","Casa Batlló","Museu Picasso"];
+    cityGuide.tip = "Park Güell tickets must be bought in advance online and hold for 30 minutes after your slot, while Museu Picasso and MNAC publish no Monday opening, so put the museums on other days.";
     data.destinationFacts[cityKey] = "Park Güell tickets must be bought in advance online and hold for 30 minutes after your slot, while Museu Picasso and MNAC publish no Monday opening, so put the museums on other days.";
     if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Gaudí landmarks, the cathedral, Picasso and Catalan art museums, a market, tapas bars, seafront rice, a cocktail bar, a pastry shop and specialty coffee, each checked against its own website.";
     data.cityPlanningToolkitData[cityKey] = [
@@ -1407,12 +1415,14 @@ window.HB_DATA = window.HB_DATA || {};
       "Jerry Thomas Speakeasy": "Jerry Thomas Speakeasy Vicolo Cellini 30 Rome",
       "Antico Forno Roscioli (Via dei Chiavari)": "Antico Forno Roscioli Via dei Chiavari 34 Rome"
     };
-    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
-    if (cityGuide) {
-      cityGuide.summary = "Vatican and Roman landmarks, civic museums, a park walk and the Appian Way park, with trattorias, pizza-by-the-slice, a bakery, a food hall and cocktail bars checked against their own websites.";
-      cityGuide.highlights = ["Vatican Museums","St. Peter's Basilica","Pantheon","Trevi Fountain"];
-      cityGuide.tip = "The Vatican Museums are closed on Sundays except the last Sunday of the month, when entry is free from 9:00 to 14:00 (final entry 12:30), so plan a weekday visit or arrive early on a last Sunday.";
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: cityKey.split(",")[0].trim() };
+      data.cityGuideData.push(cityGuide);
     }
+    cityGuide.summary = "Vatican and Roman landmarks, civic museums, a park walk and the Appian Way park, with trattorias, pizza-by-the-slice, a bakery, a food hall and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Vatican Museums","St. Peter's Basilica","Pantheon","Trevi Fountain"];
+    cityGuide.tip = "The Vatican Museums are closed on Sundays except the last Sunday of the month, when entry is free from 9:00 to 14:00 (final entry 12:30), so plan a weekday visit or arrive early on a last Sunday.";
     data.destinationFacts[cityKey] = "The Vatican Museums are closed on Sundays except the last Sunday of the month, when entry is free from 9:00 to 14:00 (final entry 12:30), so plan a weekday visit or arrive early on a last Sunday.";
     if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Vatican and Roman landmarks, civic museums, a park walk and the Appian Way park, with trattorias, pizza-by-the-slice, a bakery, a food hall and cocktail bars checked against their own websites.";
     data.cityPlanningToolkitData[cityKey] = [
@@ -1500,12 +1510,14 @@ window.HB_DATA = window.HB_DATA || {};
       "Hello Kristof (Poço dos Negros)": "Hello Kristof Rua do Poço dos Negros 103 Lisbon",
       "Copenhagen Coffee Lab (Madalena)": "Copenhagen Coffee Lab Rua da Madalena 96 Lisbon"
     };
-    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
-    if (cityGuide) {
-      cityGuide.summary = "Belém monuments, the castle, museums and the aquarium, with bakeries, cafés, restaurants and a cocktail bar checked against their own websites.";
-      cityGuide.highlights = ["Mosteiro dos Jerónimos","Torre de Belém","Castelo de São Jorge","Museu Calouste Gulbenkian"];
-      cityGuide.tip = "Avoid Belém on a Monday, when Mosteiro dos Jerónimos and Torre de Belém are both closed, and remember that MAAT and the Museu Calouste Gulbenkian close on Tuesdays instead.";
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: cityKey.split(",")[0].trim() };
+      data.cityGuideData.push(cityGuide);
     }
+    cityGuide.summary = "Belém monuments, the castle, museums and the aquarium, with bakeries, cafés, restaurants and a cocktail bar checked against their own websites.";
+    cityGuide.highlights = ["Mosteiro dos Jerónimos","Torre de Belém","Castelo de São Jorge","Museu Calouste Gulbenkian"];
+    cityGuide.tip = "Avoid Belém on a Monday, when Mosteiro dos Jerónimos and Torre de Belém are both closed, and remember that MAAT and the Museu Calouste Gulbenkian close on Tuesdays instead.";
     data.destinationFacts[cityKey] = "Avoid Belém on a Monday, when Mosteiro dos Jerónimos and Torre de Belém are both closed, and remember that MAAT and the Museu Calouste Gulbenkian close on Tuesdays instead.";
     if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Belém monuments, the castle, museums and the aquarium, with bakeries, cafés, restaurants and a cocktail bar checked against their own websites.";
     data.cityPlanningToolkitData[cityKey] = [
@@ -1686,12 +1698,14 @@ window.HB_DATA = window.HB_DATA || {};
       "Můj šálek kávy": "Můj šálek kávy Křižíkova 105 Prague",
       "Café Savoy": "Café Savoy Vítězná 5 Prague"
     };
-    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
-    if (cityGuide) {
-      cityGuide.summary = "Museums, the Jewish Quarter, Strahov, Vyšehrad and the zoo, with historic cafés, bakeries, Czech pubs, tasting menus and cocktail bars checked against their own websites.";
-      cityGuide.highlights = ["National Museum (Historical Building)","Jewish Museum in Prague","Strahov Monastery","Municipal House (Obecní dům)"];
-      cityGuide.tip = "Keep Mondays for the National Museum, Museum Kampa, the Mucha Museum or the zoo, because the Trade Fair Palace, the National Technical Museum and the Museum of Prague's main building close that day, and avoid Saturdays for the Jewish Museum.";
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: cityKey.split(",")[0].trim() };
+      data.cityGuideData.push(cityGuide);
     }
+    cityGuide.summary = "Museums, the Jewish Quarter, Strahov, Vyšehrad and the zoo, with historic cafés, bakeries, Czech pubs, tasting menus and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["National Museum (Historical Building)","Jewish Museum in Prague","Strahov Monastery","Municipal House (Obecní dům)"];
+    cityGuide.tip = "Keep Mondays for the National Museum, Museum Kampa, the Mucha Museum or the zoo, because the Trade Fair Palace, the National Technical Museum and the Museum of Prague's main building close that day, and avoid Saturdays for the Jewish Museum.";
     data.destinationFacts[cityKey] = "Keep Mondays for the National Museum, Museum Kampa, the Mucha Museum or the zoo, because the Trade Fair Palace, the National Technical Museum and the Museum of Prague's main building close that day, and avoid Saturdays for the Jewish Museum.";
     if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Museums, the Jewish Quarter, Strahov, Vyšehrad and the zoo, with historic cafés, bakeries, Czech pubs, tasting menus and cocktail bars checked against their own websites.";
     data.cityPlanningToolkitData[cityKey] = [
@@ -1801,12 +1815,14 @@ window.HB_DATA = window.HB_DATA || {};
       "Beyti": "Beyti Orman Sokak 6-8 Florya Bakırköy Istanbul",
       "Patisserie de Pera (Pera Palace Hotel)": "Patisserie de Pera Pera Palace Hotel Meşrutiyet Caddesi 52 Tepebaşı Istanbul"
     };
-    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
-    if (cityGuide) {
-      cityGuide.summary = "Palaces, state and private museums, the Grand Bazaar, restaurants from Karaköy to Etiler, a historic coffee house, a hotel patisserie and afternoon tea, each checked against its own or its public operator's website.";
-      cityGuide.highlights = ["Topkapı Palace Museum","Dolmabahçe Palace","Galata Tower Museum","Istanbul Archaeological Museums"];
-      cityGuide.tip = "Most closures fall on Mondays: Dolmabahçe Palace, Beylerbeyi Palace, Pera Museum, Sakıp Sabancı Museum, Rahmi M. Koç Museum, Museum of Innocence, Galata Mevlevi Lodge Museum, Miniaturk and Beyti all close then. Topkapı Palace Museum closes on Tuesdays instead.";
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: cityKey.split(",")[0].trim() };
+      data.cityGuideData.push(cityGuide);
     }
+    cityGuide.summary = "Palaces, state and private museums, the Grand Bazaar, restaurants from Karaköy to Etiler, a historic coffee house, a hotel patisserie and afternoon tea, each checked against its own or its public operator's website.";
+    cityGuide.highlights = ["Topkapı Palace Museum","Dolmabahçe Palace","Galata Tower Museum","Istanbul Archaeological Museums"];
+    cityGuide.tip = "Most closures fall on Mondays: Dolmabahçe Palace, Beylerbeyi Palace, Pera Museum, Sakıp Sabancı Museum, Rahmi M. Koç Museum, Museum of Innocence, Galata Mevlevi Lodge Museum, Miniaturk and Beyti all close then. Topkapı Palace Museum closes on Tuesdays instead.";
     data.destinationFacts[cityKey] = "Most closures fall on Mondays: Dolmabahçe Palace, Beylerbeyi Palace, Pera Museum, Sakıp Sabancı Museum, Rahmi M. Koç Museum, Museum of Innocence, Galata Mevlevi Lodge Museum, Miniaturk and Beyti all close then. Topkapı Palace Museum closes on Tuesdays instead.";
     if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Palaces, state and private museums, the Grand Bazaar, restaurants from Karaköy to Etiler, a historic coffee house, a hotel patisserie and afternoon tea, each checked against its own or its public operator's website.";
     data.cityPlanningToolkitData[cityKey] = [
@@ -1906,12 +1922,14 @@ window.HB_DATA = window.HB_DATA || {};
       "Harry's Bar Firenze": "Harry's Bar Via il Prato 54 Florence",
       "Vivoli": "Vivoli Via dell'Isola delle Stinche 7 Florence"
     };
-    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
-    if (cityGuide) {
-      cityGuide.summary = "State and civic museums, churches, gardens and a food hall, with trattorie, dinners, breakfast cafés, pastry, gelato and cocktail bars, each checked against its own website.";
-      cityGuide.highlights = ["Uffizi Gallery","Palazzo Pitti","Museo Nazionale del Bargello","Basilica di San Miniato al Monte"];
-      cityGuide.tip = "The Uffizi, Pitti, Bargello, Cappelle Medicee and Orsanmichele all close on Mondays, Palazzo Medici Riccardi closes on Wednesdays and Osteria Santo Spirito on Tuesdays, so check each closing day before you fix your plan.";
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: cityKey.split(",")[0].trim() };
+      data.cityGuideData.push(cityGuide);
     }
+    cityGuide.summary = "State and civic museums, churches, gardens and a food hall, with trattorie, dinners, breakfast cafés, pastry, gelato and cocktail bars, each checked against its own website.";
+    cityGuide.highlights = ["Uffizi Gallery","Palazzo Pitti","Museo Nazionale del Bargello","Basilica di San Miniato al Monte"];
+    cityGuide.tip = "The Uffizi, Pitti, Bargello, Cappelle Medicee and Orsanmichele all close on Mondays, Palazzo Medici Riccardi closes on Wednesdays and Osteria Santo Spirito on Tuesdays, so check each closing day before you fix your plan.";
     data.destinationFacts[cityKey] = "The Uffizi, Pitti, Bargello, Cappelle Medicee and Orsanmichele all close on Mondays, Palazzo Medici Riccardi closes on Wednesdays and Osteria Santo Spirito on Tuesdays, so check each closing day before you fix your plan.";
     if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "State and civic museums, churches, gardens and a food hall, with trattorie, dinners, breakfast cafés, pastry, gelato and cocktail bars, each checked against its own website.";
     data.cityPlanningToolkitData[cityKey] = [
@@ -2011,12 +2029,14 @@ window.HB_DATA = window.HB_DATA || {};
       "Weekenders Coffee (Shinmachi)": "Weekenders Coffee 189 Ubayanagi-cho Nakagyo-ku Kyoto",
       "Stumptown Coffee (Ace Hotel Kyoto)": "Stumptown Coffee Ace Hotel 245-2 Kurumaya-cho Nakagyo-ku Kyoto"
     };
-    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
-    if (cityGuide) {
-      cityGuide.summary = "Temples, shrines, a castle, museums, a botanical garden, Nishiki Market, kaiseki and tofu dinners, kissaten, bakeries, coffee and hotel bars, each checked against its own website.";
-      cityGuide.highlights = ["Fushimi Inari Taisha","Kiyomizu-dera","Kinkaku-ji","Kyoto National Museum"];
-      cityGuide.tip = "Check closing days before you go: Kyoto National Museum and Kyoto City KYOCERA Museum of Art close on Mondays, Tenryu-ji is closed on October 29 and 30, 2026, and Kikunoi Honten closes on the first and third Tuesdays.";
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: cityKey.split(",")[0].trim() };
+      data.cityGuideData.push(cityGuide);
     }
+    cityGuide.summary = "Temples, shrines, a castle, museums, a botanical garden, Nishiki Market, kaiseki and tofu dinners, kissaten, bakeries, coffee and hotel bars, each checked against its own website.";
+    cityGuide.highlights = ["Fushimi Inari Taisha","Kiyomizu-dera","Kinkaku-ji","Kyoto National Museum"];
+    cityGuide.tip = "Check closing days before you go: Kyoto National Museum and Kyoto City KYOCERA Museum of Art close on Mondays, Tenryu-ji is closed on October 29 and 30, 2026, and Kikunoi Honten closes on the first and third Tuesdays.";
     data.destinationFacts[cityKey] = "Check closing days before you go: Kyoto National Museum and Kyoto City KYOCERA Museum of Art close on Mondays, Tenryu-ji is closed on October 29 and 30, 2026, and Kikunoi Honten closes on the first and third Tuesdays.";
     if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Temples, shrines, a castle, museums, a botanical garden, Nishiki Market, kaiseki and tofu dinners, kissaten, bakeries, coffee and hotel bars, each checked against its own website.";
     data.cityPlanningToolkitData[cityKey] = [
@@ -2114,12 +2134,14 @@ window.HB_DATA = window.HB_DATA || {};
       "Bourke Street Bakery (Surry Hills)": "Bourke Street Bakery 633 Bourke Street Surry Hills Sydney",
       "Flour and Stone (Pantry)": "Flour and Stone 53 Riley Street Woolloomooloo Sydney"
     };
-    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
-    if (cityGuide) {
-      cityGuide.summary = "Harbour landmarks, free galleries and museums, markets and an ocean pool, with breakfast spots, bakeries, coffee, dinners and cocktail bars checked against their own websites.";
-      cityGuide.highlights = ["Sydney Opera House","Art Gallery of New South Wales","Royal Botanic Garden Sydney","Australian National Maritime Museum"];
-      cityGuide.tip = "The Art Gallery of New South Wales stays open until 10pm on Wednesdays, while Sydney Observatory opens only Thursday to Sunday, so plan those two around your week.";
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: cityKey.split(",")[0].trim() };
+      data.cityGuideData.push(cityGuide);
     }
+    cityGuide.summary = "Harbour landmarks, free galleries and museums, markets and an ocean pool, with breakfast spots, bakeries, coffee, dinners and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Sydney Opera House","Art Gallery of New South Wales","Royal Botanic Garden Sydney","Australian National Maritime Museum"];
+    cityGuide.tip = "The Art Gallery of New South Wales stays open until 10pm on Wednesdays, while Sydney Observatory opens only Thursday to Sunday, so plan those two around your week.";
     data.destinationFacts[cityKey] = "The Art Gallery of New South Wales stays open until 10pm on Wednesdays, while Sydney Observatory opens only Thursday to Sunday, so plan those two around your week.";
     if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Harbour landmarks, free galleries and museums, markets and an ocean pool, with breakfast spots, bakeries, coffee, dinners and cocktail bars checked against their own websites.";
     data.cityPlanningToolkitData[cityKey] = [
@@ -2216,12 +2238,14 @@ window.HB_DATA = window.HB_DATA || {};
       "Palazzo Mocenigo": "Palazzo Mocenigo Santa Croce 1992 Venice",
       "Trattoria Da Romano (Burano)": "Trattoria Da Romano Via Baldassarre Galuppi 221 Burano Venice"
     };
-    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
-    if (cityGuide) {
-      cityGuide.summary = "Basilica, palaces, civic museums, the 2026 Art Biennale and island trattorias, with cafés, dinners and a cocktail bar checked against their own websites.";
-      cityGuide.highlights = ["Basilica di San Marco","Palazzo Ducale","Gallerie dell'Accademia","Peggy Guggenheim Collection"];
-      cityGuide.tip = "Check closing days before you plan the day: the Peggy Guggenheim Collection is closed on Tuesdays, and the Biennale Arte is closed on Mondays except 16 November.";
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: cityKey.split(",")[0].trim() };
+      data.cityGuideData.push(cityGuide);
     }
+    cityGuide.summary = "Basilica, palaces, civic museums, the 2026 Art Biennale and island trattorias, with cafés, dinners and a cocktail bar checked against their own websites.";
+    cityGuide.highlights = ["Basilica di San Marco","Palazzo Ducale","Gallerie dell'Accademia","Peggy Guggenheim Collection"];
+    cityGuide.tip = "Check closing days before you plan the day: the Peggy Guggenheim Collection is closed on Tuesdays, and the Biennale Arte is closed on Mondays except 16 November.";
     data.destinationFacts[cityKey] = "Check closing days before you plan the day: the Peggy Guggenheim Collection is closed on Tuesdays, and the Biennale Arte is closed on Mondays except 16 November.";
     if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Basilica, palaces, civic museums, the 2026 Art Biennale and island trattorias, with cafés, dinners and a cocktail bar checked against their own websites.";
     data.cityPlanningToolkitData[cityKey] = [
@@ -2320,12 +2344,14 @@ window.HB_DATA = window.HB_DATA || {};
       "Sarnies Sukhumvit (Soi 37)": "Sarnies 1/39 Soi Sukhumvit 37 Bangkok",
       "Sarnies Sourdough (Charoen Krung 42/1)": "Sarnies Sourdough 55/14 Charoen Krung 42/1 Bangkok"
     };
-    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
-    if (cityGuide) {
-      cityGuide.summary = "Palace museums, galleries, a river mall and night market, rooftop and cocktail bars, Thai tasting menus, pad thai and Charoen Krung breakfast cafés, each checked against its own website.";
-      cityGuide.highlights = ["Grand Palace","Jim Thompson House","Bangkok National Museum","Mahanakhon SkyWalk"];
-      cityGuide.tip = "Thipsamai's Pratoopee shop closes every Tuesday and MOCA Bangkok closes on Mondays, so keep those days for the Grand Palace, which opens daily with tickets sold 8:30 AM to 3:30 PM.";
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: cityKey.split(",")[0].trim() };
+      data.cityGuideData.push(cityGuide);
     }
+    cityGuide.summary = "Palace museums, galleries, a river mall and night market, rooftop and cocktail bars, Thai tasting menus, pad thai and Charoen Krung breakfast cafés, each checked against its own website.";
+    cityGuide.highlights = ["Grand Palace","Jim Thompson House","Bangkok National Museum","Mahanakhon SkyWalk"];
+    cityGuide.tip = "Thipsamai's Pratoopee shop closes every Tuesday and MOCA Bangkok closes on Mondays, so keep those days for the Grand Palace, which opens daily with tickets sold 8:30 AM to 3:30 PM.";
     data.destinationFacts[cityKey] = "Thipsamai's Pratoopee shop closes every Tuesday and MOCA Bangkok closes on Mondays, so keep those days for the Grand Palace, which opens daily with tickets sold 8:30 AM to 3:30 PM.";
     if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Palace museums, galleries, a river mall and night market, rooftop and cocktail bars, Thai tasting menus, pad thai and Charoen Krung breakfast cafés, each checked against its own website.";
     data.cityPlanningToolkitData[cityKey] = [
@@ -2424,12 +2450,14 @@ window.HB_DATA = window.HB_DATA || {};
       "Fritz Coffee (Dohwa)": "Fritz Coffee Dohwa 17 Saechang-ro 2-gil Mapo-gu Seoul",
       "Pastry Boutique (The Shilla Seoul)": "Pastry Boutique The Shilla Seoul 249 Dongho-ro Jung-gu Seoul"
     };
-    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
-    if (cityGuide) {
-      cityGuide.summary = "Joseon palaces, national and city museums, parks and an aquarium, with hotel dining rooms, a gomtang house, cocktail lounges, a hotel bakery and coffee bars checked against their own websites.";
-      cityGuide.highlights = ["Gyeongbokgung","Changdeokgung","National Museum of Korea","Leeum Museum of Art"];
-      cityGuide.tip = "Plan museum days around closures: Seoul Museum of Art closes every Monday, Seodaemun Prison History Hall closes Mondays and moves to winter hours of 09:30–17:00 from November, and the National Palace Museum of Korea closes on the last Monday of each month.";
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: cityKey.split(",")[0].trim() };
+      data.cityGuideData.push(cityGuide);
     }
+    cityGuide.summary = "Joseon palaces, national and city museums, parks and an aquarium, with hotel dining rooms, a gomtang house, cocktail lounges, a hotel bakery and coffee bars checked against their own websites.";
+    cityGuide.highlights = ["Gyeongbokgung","Changdeokgung","National Museum of Korea","Leeum Museum of Art"];
+    cityGuide.tip = "Plan museum days around closures: Seoul Museum of Art closes every Monday, Seodaemun Prison History Hall closes Mondays and moves to winter hours of 09:30–17:00 from November, and the National Palace Museum of Korea closes on the last Monday of each month.";
     data.destinationFacts[cityKey] = "Plan museum days around closures: Seoul Museum of Art closes every Monday, Seodaemun Prison History Hall closes Mondays and moves to winter hours of 09:30–17:00 from November, and the National Palace Museum of Korea closes on the last Monday of each month.";
     if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Joseon palaces, national and city museums, parks and an aquarium, with hotel dining rooms, a gomtang house, cocktail lounges, a hotel bakery and coffee bars checked against their own websites.";
     data.cityPlanningToolkitData[cityKey] = [
@@ -2519,12 +2547,14 @@ window.HB_DATA = window.HB_DATA || {};
       "Comptoir 102": "Comptoir 102 102 Beach Road Jumeirah 1 Dubai",
       "Honeycomb Hi-Fi": "Honeycomb Hi-Fi Pullman Dubai Downtown Dubai"
     };
-    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
-    if (cityGuide) {
-      cityGuide.summary = "Dubai's Frame, art districts, gardens and safari park, with breakfast cafés, dinners and cocktail bars checked against their own websites.";
-      cityGuide.highlights = ["Dubai Frame","Jameel Arts Centre","Dubai Miracle Garden","Dubai Safari Park"];
-      cityGuide.tip = "Jameel Arts Centre is free but its site lists Tuesday as a closing day, so plan Al Jaddaf and Alserkal Avenue visits for another day.";
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: cityKey.split(",")[0].trim() };
+      data.cityGuideData.push(cityGuide);
     }
+    cityGuide.summary = "Dubai's Frame, art districts, gardens and safari park, with breakfast cafés, dinners and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Dubai Frame","Jameel Arts Centre","Dubai Miracle Garden","Dubai Safari Park"];
+    cityGuide.tip = "Jameel Arts Centre is free but its site lists Tuesday as a closing day, so plan Al Jaddaf and Alserkal Avenue visits for another day.";
     data.destinationFacts[cityKey] = "Jameel Arts Centre is free but its site lists Tuesday as a closing day, so plan Al Jaddaf and Alserkal Avenue visits for another day.";
     if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Dubai's Frame, art districts, gardens and safari park, with breakfast cafés, dinners and cocktail bars checked against their own websites.";
     data.cityPlanningToolkitData[cityKey] = [
@@ -2628,12 +2658,14 @@ window.HB_DATA = window.HB_DATA || {};
       "Ritual Coffee (Hayes Valley)": "Ritual Coffee 432b Octavia Street San Francisco",
       "Philz Coffee (Noe Valley)": "Philz Coffee 4298 24th Street San Francisco"
     };
-    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
-    if (cityGuide) {
-      cityGuide.summary = "The bridge, Alcatraz, museums and Golden Gate Park gardens, with breakfast spots, dinners, cocktail bars, bakeries and coffee checked against their own websites.";
-      cityGuide.highlights = ["Golden Gate Bridge","Alcatraz Island","SFMOMA","California Academy of Sciences"];
-      cityGuide.tip = "Book Alcatraz well ahead, since the National Park Service says it frequently sells out in advance, and avoid planning SFMOMA or the Conservatory of Flowers for a Wednesday, when both are closed.";
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: cityKey.split(",")[0].trim() };
+      data.cityGuideData.push(cityGuide);
     }
+    cityGuide.summary = "The bridge, Alcatraz, museums and Golden Gate Park gardens, with breakfast spots, dinners, cocktail bars, bakeries and coffee checked against their own websites.";
+    cityGuide.highlights = ["Golden Gate Bridge","Alcatraz Island","SFMOMA","California Academy of Sciences"];
+    cityGuide.tip = "Book Alcatraz well ahead, since the National Park Service says it frequently sells out in advance, and avoid planning SFMOMA or the Conservatory of Flowers for a Wednesday, when both are closed.";
     data.destinationFacts[cityKey] = "Book Alcatraz well ahead, since the National Park Service says it frequently sells out in advance, and avoid planning SFMOMA or the Conservatory of Flowers for a Wednesday, when both are closed.";
     if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "The bridge, Alcatraz, museums and Golden Gate Park gardens, with breakfast spots, dinners, cocktail bars, bakeries and coffee checked against their own websites.";
     data.cityPlanningToolkitData[cityKey] = [
@@ -2732,12 +2764,14 @@ window.HB_DATA = window.HB_DATA || {};
       "Café de Oriente": "Café de Oriente Plaza de Oriente 2 Madrid",
       "Salmon Guru": "Salmon Guru Calle Echegaray 21 Madrid"
     };
-    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
-    if (cityGuide) {
-      cityGuide.summary = "Royal palace, Paseo del Prado museums, smaller house museums, parks and markets, with breakfast cafés, classic Madrid dining and cocktail bars checked against their own websites.";
-      cityGuide.highlights = ["Palacio Real de Madrid","Museo Nacional Thyssen-Bornemisza","Museo Nacional Centro de Arte Reina Sofía","Jardines de El Buen Retiro"];
-      cityGuide.tip = "Check closing days before you plan museum time: the Reina Sofía is closed on Tuesdays, while the Lázaro Galdiano, Sorolla and Romanticismo museums are closed on Mondays.";
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: cityKey.split(",")[0].trim() };
+      data.cityGuideData.push(cityGuide);
     }
+    cityGuide.summary = "Royal palace, Paseo del Prado museums, smaller house museums, parks and markets, with breakfast cafés, classic Madrid dining and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Palacio Real de Madrid","Museo Nacional Thyssen-Bornemisza","Museo Nacional Centro de Arte Reina Sofía","Jardines de El Buen Retiro"];
+    cityGuide.tip = "Check closing days before you plan museum time: the Reina Sofía is closed on Tuesdays, while the Lázaro Galdiano, Sorolla and Romanticismo museums are closed on Mondays.";
     data.destinationFacts[cityKey] = "Check closing days before you plan museum time: the Reina Sofía is closed on Tuesdays, while the Lázaro Galdiano, Sorolla and Romanticismo museums are closed on Mondays.";
     if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Royal palace, Paseo del Prado museums, smaller house museums, parks and markets, with breakfast cafés, classic Madrid dining and cocktail bars checked against their own websites.";
     data.cityPlanningToolkitData[cityKey] = [
@@ -2838,12 +2872,14 @@ window.HB_DATA = window.HB_DATA || {};
       "Lidkoeb": "Lidkoeb Vesterbrogade 72B Copenhagen",
       "Andersen Bakery (Islands Brygge)": "Andersen Bakery Thorshavnsgade 26 Copenhagen"
     };
-    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
-    if (cityGuide) {
-      cityGuide.summary = "Royal castles, museums, food markets and a harbourside art district, with breakfast spots, lunch and dinner tables, bakeries, coffee and cocktail bars checked against their own websites.";
-      cityGuide.highlights = ["Tivoli Gardens","Rosenborg Castle","National Museum of Denmark","Louisiana Museum of Modern Art"];
-      cityGuide.tip = "Save Mondays for the National Museum of Denmark, which opens daily 10:00–17:00, because Ny Carlsberg Glyptotek, Louisiana, Copenhagen Contemporary and Thorvaldsens Museum close on Mondays, as does Rosenborg Castle from 2 November.";
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: cityKey.split(",")[0].trim() };
+      data.cityGuideData.push(cityGuide);
     }
+    cityGuide.summary = "Royal castles, museums, food markets and a harbourside art district, with breakfast spots, lunch and dinner tables, bakeries, coffee and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Tivoli Gardens","Rosenborg Castle","National Museum of Denmark","Louisiana Museum of Modern Art"];
+    cityGuide.tip = "Save Mondays for the National Museum of Denmark, which opens daily 10:00–17:00, because Ny Carlsberg Glyptotek, Louisiana, Copenhagen Contemporary and Thorvaldsens Museum close on Mondays, as does Rosenborg Castle from 2 November.";
     data.destinationFacts[cityKey] = "Save Mondays for the National Museum of Denmark, which opens daily 10:00–17:00, because Ny Carlsberg Glyptotek, Louisiana, Copenhagen Contemporary and Thorvaldsens Museum close on Mondays, as does Rosenborg Castle from 2 November.";
     if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Royal castles, museums, food markets and a harbourside art district, with breakfast spots, lunch and dinner tables, bakeries, coffee and cocktail bars checked against their own websites.";
     data.cityPlanningToolkitData[cityKey] = [
@@ -2892,6 +2928,222 @@ window.HB_DATA = window.HB_DATA || {};
         ]
       ],
       trust: "All 28 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
+  // Budapest, Hungary: source review of 2026-10-25 (docs/content-research/budapest-2026-10-25.md).
+  {
+    const cityKey = "Budapest, Hungary";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["St. Stephen's Basilica","Hungarian National Museum","Széchenyi Thermal Bath","Matthias Church"],
+      bestFirstTimers: ["St. Stephen's Basilica","Hungarian State Opera","Great Market Hall","Budapest History Museum – Castle Museum"],
+      bestRestaurants: ["Gundel","Stand25","Rosenstein","Mazel Tov"],
+      bestBudget: ["Great Market Hall","Menza","Várkert Bazár","Első Pesti Rétesház"],
+      bestLuxury: ["Gundel","Stand25","New York Café","Hungarian State Opera"],
+      bestCouples: ["360 Bar","Rudas Baths","Várkert Bazár","Gundel"],
+      bestKids: ["Budapest Zoo","House of Music Hungary","Museum of Ethnography","Széchenyi Thermal Bath"],
+      bestSolo: ["Ludwig Museum","Espresso Embassy","House of Terror Museum","Great Market Hall"],
+      bestUnique: ["Hospital in the Rock","Rudas Baths","House of Music Hungary","Ludwig Museum"],
+      bestBreakfast: ["New York Café","Artizán (Hold utca)","Espresso Embassy","Kollázs Brasserie & Bar"],
+      bestLunch: ["Menza","Stand25","Gundel","Rosenstein"],
+      bestDinner: ["Stand25","Rosenstein","Mazel Tov","Gundel"],
+      bestCocktails: ["360 Bar","Kollázs Brasserie & Bar","Mazel Tov"],
+      bestBakeries: ["Artizán (Hold utca)","Auguszt Cukrászda (Kossuth Lajos utca)","Első Pesti Rétesház","Gerbeaud"],
+      bestCoffee: ["Espresso Embassy","Gerbeaud","New York Café"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "St. Stephen's Basilica": "St. Stephen's Basilica Szent István tér 1 Budapest",
+      "Hungarian National Museum": "Hungarian National Museum Múzeum körút 14-16 Budapest",
+      "Széchenyi Thermal Bath": "Széchenyi Thermal Bath Állatkerti körút 9-11 Budapest",
+      "Matthias Church": "Matthias Church Szentháromság tér 2 Budapest",
+      "Hungarian State Opera": "Hungarian State Opera Andrássy út 22 Budapest",
+      "Great Market Hall": "Great Market Hall Vámház körút 1-3 Budapest",
+      "Budapest History Museum – Castle Museum": "Castle Museum Szent György tér 2 Budapest",
+      "Gundel": "Gundel Gundel Károly út 4 Budapest",
+      "Stand25": "Stand25 Attila út 10 Budapest",
+      "Rosenstein": "Rosenstein Mosonyi utca 3 Budapest",
+      "Mazel Tov": "Mazel Tov Akácfa utca 47 Budapest",
+      "Menza": "Menza Liszt Ferenc tér 2 Budapest",
+      "Várkert Bazár": "Várkert Bazár Ybl Miklós tér 2-6 Budapest",
+      "Első Pesti Rétesház": "Első Pesti Rétesház Október 6. utca 22 Budapest",
+      "New York Café": "New York Café Erzsébet körút 9-11 Budapest",
+      "360 Bar": "360 Bar Andrássy út 39 Budapest",
+      "Rudas Baths": "Rudas Baths Döbrentei tér 9 Budapest",
+      "Budapest Zoo": "Budapest Zoo Állatkerti körút 6-12 Budapest",
+      "House of Music Hungary": "House of Music Hungary Olof Palme sétány 3-5 Budapest",
+      "Museum of Ethnography": "Museum of Ethnography Dózsa György út 35 Budapest",
+      "Ludwig Museum": "Ludwig Museum Komor Marcell utca 1 Budapest",
+      "Espresso Embassy": "Espresso Embassy Arany János utca 15 Budapest",
+      "House of Terror Museum": "House of Terror Museum Andrássy út 60 Budapest",
+      "Hospital in the Rock": "Hospital in the Rock Lovas út 4/c Budapest",
+      "Artizán (Hold utca)": "Artizán Hold utca 3 Budapest",
+      "Kollázs Brasserie & Bar": "Kollázs Brasserie & Bar Széchenyi István tér 5-6 Budapest",
+      "Auguszt Cukrászda (Kossuth Lajos utca)": "Auguszt Cukrászda Kossuth Lajos utca 14-16 Budapest",
+      "Gerbeaud": "Gerbeaud Vörösmarty tér 7-8 Budapest"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Budapest" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Churches, museums, thermal baths and a market hall, with breakfast cafés, bakeries, dinners and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["St. Stephen's Basilica","Hungarian National Museum","Széchenyi Thermal Bath","Matthias Church"];
+    cityGuide.tip = "Several museums close on Mondays, including the Hungarian National Museum, the Museum of Ethnography, the Ludwig Museum, the House of Terror Museum and House of Music Hungary, so put the baths, the Basilica or the Castle Museum on that day.";
+    data.destinationFacts[cityKey] = "Several museums close on Mondays, including the Hungarian National Museum, the Museum of Ethnography, the Ludwig Museum, the House of Terror Museum and House of Music Hungary, so put the baths, the Basilica or the Castle Museum on that day.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Churches, museums, thermal baths and a market hall, with breakfast cafés, bakeries, dinners and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays",
+        "copy": "The Hungarian National Museum, Museum of Ethnography, Ludwig Museum, House of Terror Museum and House of Music Hungary are closed on Mondays. Stand25 is closed on Sundays, and Artizán (Hold utca) is closed on Sundays too."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book ahead",
+        "copy": "Hungarian State Opera English tours run daily at 13:30, 15:00 and 16:30, with tickets on sale one week in advance. Hospital in the Rock can only be visited on a guided tour, and Rudas Baths sells night-bathing entry online only."
+      },
+      {
+        "label": "Walk-ins and queues",
+        "value": "Arrival order",
+        "copy": "Gerbeaud takes no reservations and seats guests in order of arrival. New York Café seats walk-ins from 07:00 to 18:00 and takes table bookings only after 18:00, for dinner guests."
+      },
+      {
+        "label": "Rules",
+        "value": "Age and dress",
+        "copy": "Rudas Baths does not admit anyone under 14, and Hospital in the Rock does not admit children under 6. Gundel recommends smart casual dress, and the Hungarian State Opera says it has no official dress code."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Plan museum days from Tuesday to Sunday, keep Monday for the baths or the Basilica, and book dinners and Opera tours ahead.",
+      intro: [
+        "Budapest's headline sights publish clear hours, which makes it easier for you to plan. St. Stephen's Basilica is open for visits Monday to Saturday from 09.00 to 18.00 and on Sunday from 13.00 to 18.00, while its Panorama Terrace and Treasury open daily from 09.00 to 19.00. Up on Castle Hill, the Castle Museum of the Budapest History Museum opens daily from 10:00 to 18:00, with last entry at 17:30. Matthias Church has a concert programme running into December, including Bach and Charpentier on 19 December 2026.",
+        "Many museums close on Mondays. The Hungarian National Museum opens Tuesday to Sunday from 10:00 to 18:00 and is showing The Treasures of King Louis I (the Great) of Hungary until 31 December 2026, though some halls are closed for renovation. The Museum of Ethnography has A Soldier's Lot until 29 August 2027 and Rituals of Beauty until 4 January 2027. At the Ludwig Museum, Walk This Way. The Art of Walking runs until 31 January 2027, and two floors stay open until 20:00 from Tuesday to Sunday.",
+        "For the baths, Széchenyi Thermal Bath opens from 7:00 on weekdays, stays open until 22:00 on Fridays, and opens at 8:00 on holiday days from 18 December 2026 to 6 January 2027. Rudas Baths opens at 6:00, stays open until 22:00 on Mondays, and admits no one under 14. Hospital in the Rock can only be seen on a guided tour, with the last one leaving at 18:00. If you have children with you, Budapest Zoo is open daily and runs a discounted senior autumn programme until 30 November 2026.",
+        "For food, the Great Market Hall opens at 06.00 on weekdays and is closed on public holidays. Artizán on Hold utca opens at 07:00 on weekdays, and New York Café opens at 07:00 but takes table bookings only after 18:00, for dinner guests. Stand25 serves lunch and dinner Monday to Saturday, and Rosenstein confirms reservations only by email. Gundel is open all year and is advertising a New Year's Eve dinner on 31 December 2026, and 360 Bar on Andrássy út serves until 02:00 from Thursday to Saturday."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Start at St. Stephen's Basilica and its Panorama Terrace, then take an English tour of the Hungarian State Opera at 13:30, 15:00 or 16:30."
+        ],
+        [
+          "A slower morning",
+          "Have coffee at Espresso Embassy from 7:30 on weekdays or pastries at Artizán on Hold utca, then browse the Great Market Hall."
+        ],
+        [
+          "Before booking",
+          "Remember that most major museums close on Mondays, Stand25 closes on Sundays and Rosenstein confirms tables only by email."
+        ]
+      ],
+      trust: "All 28 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
+  // Mexico City, Mexico: source review of 2026-10-25 (docs/content-research/mexico-city-2026-10-25.md).
+  {
+    const cityKey = "Mexico City, Mexico";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Museo del Templo Mayor","Museo Nacional de Arte (MUNAL)","Basílica de Guadalupe","Museo Frida Kahlo (Casa Azul)"],
+      bestFirstTimers: ["Museo del Templo Mayor","Antiguo Colegio de San Ildefonso","Museo Frida Kahlo (Casa Azul)","Azul Histórico"],
+      bestRestaurants: ["Quintonil","Contramar (Roma Norte)","Rosetta","Máximo Bistrot"],
+      bestBudget: ["Museo Soumaya (Plaza Carso)","Churrería El Moro (Centro Histórico)","Pastelería Ideal (16 de Septiembre)","Antiguo Colegio de San Ildefonso"],
+      bestLuxury: ["Quintonil","Rosetta","Máximo Bistrot","Gin Gin (Polanco)"],
+      bestCouples: ["Zinco Jazz Club","Rosetta","Bar La Ópera","Museo Tamayo"],
+      bestKids: ["Papalote Museo del Niño (Chapultepec)","MIDE Museo Interactivo de Economía","Arena México","Churrería El Moro (Centro Histórico)"],
+      bestSolo: ["Cafebrería El Péndulo (Condesa)","MUAC (Museo Universitario Arte Contemporáneo)","Museo Kaluz","Chiquitito Café (Alfonso Reyes)"],
+      bestUnique: ["Arena México","Salón Tenampa","Museo Dolores Olmedo","Zinco Jazz Club"],
+      bestBreakfast: ["Azul Histórico","Chiquitito Café (Alfonso Reyes)","Pastelería Ideal (16 de Septiembre)"],
+      bestLunch: ["Contramar (Roma Norte)","Azul Histórico","Máximo Bistrot"],
+      bestDinner: ["Quintonil","Rosetta","Máximo Bistrot","Azul Histórico"],
+      bestCocktails: ["Gin Gin (Polanco)","Bar La Ópera","Salón Tenampa","Zinco Jazz Club"],
+      bestBakeries: ["Pastelería Ideal (16 de Septiembre)","Churrería El Moro (Centro Histórico)"],
+      bestCoffee: ["Chiquitito Café (Alfonso Reyes)","Cafebrería El Péndulo (Condesa)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Museo del Templo Mayor": "Museo del Templo Mayor Seminario 8 Centro Histórico Mexico City",
+      "Museo Nacional de Arte (MUNAL)": "Museo Nacional de Arte Tacuba 8 Centro Histórico Mexico City",
+      "Basílica de Guadalupe": "Basílica de Guadalupe Fray Juan de Zumárraga 2 Gustavo A. Madero Mexico City",
+      "Museo Frida Kahlo (Casa Azul)": "Museo Frida Kahlo Londres 247 Coyoacán Mexico City",
+      "Antiguo Colegio de San Ildefonso": "Antiguo Colegio de San Ildefonso Justo Sierra 16 Mexico City",
+      "Azul Histórico": "Azul Histórico Isabel la Católica 30 Centro Histórico Mexico City",
+      "Quintonil": "Quintonil Newton 55 Polanco Mexico City",
+      "Contramar (Roma Norte)": "Contramar Durango 200 Roma Norte Mexico City",
+      "Rosetta": "Rosetta Colima 166 Roma Norte Mexico City",
+      "Máximo Bistrot": "Máximo Bistrot Av. Álvaro Obregón 65 Bis Roma Norte Mexico City",
+      "Museo Soumaya (Plaza Carso)": "Museo Soumaya Bulevar Cervantes Saavedra Ampliación Granada Mexico City",
+      "Churrería El Moro (Centro Histórico)": "Churrería El Moro Eje Central Lázaro Cárdenas 42 Mexico City",
+      "Pastelería Ideal (16 de Septiembre)": "Pastelería Ideal Av. 16 de Septiembre 18 Centro Mexico City",
+      "Gin Gin (Polanco)": "Gin Gin Calderón de la Barca 72 Polanco Mexico City",
+      "Zinco Jazz Club": "Zinco Jazz Club Motolinia 20 Centro Histórico Mexico City",
+      "Bar La Ópera": "Bar La Ópera 5 de Mayo 10 Centro Histórico Mexico City",
+      "Museo Tamayo": "Museo Tamayo Paseo de la Reforma 51 Mexico City",
+      "Papalote Museo del Niño (Chapultepec)": "Papalote Museo del Niño Av. Constituyentes 268 Mexico City",
+      "MIDE Museo Interactivo de Economía": "MIDE Museo Interactivo de Economía Tacuba 17 Mexico City",
+      "Arena México": "Arena México Dr. Lavista 189 Doctores Mexico City",
+      "Cafebrería El Péndulo (Condesa)": "Cafebrería El Péndulo Nuevo León 115 Condesa Mexico City",
+      "MUAC (Museo Universitario Arte Contemporáneo)": "MUAC Insurgentes Sur 3000 Coyoacán Mexico City",
+      "Museo Kaluz": "Museo Kaluz Av. Hidalgo 85 Centro Histórico Mexico City",
+      "Chiquitito Café (Alfonso Reyes)": "Chiquitito Café Alfonso Reyes 232 Hipódromo Condesa Mexico City",
+      "Salón Tenampa": "Salón Tenampa Plaza Garibaldi 12 Centro Mexico City",
+      "Museo Dolores Olmedo": "Museo Dolores Olmedo Av. México 5843 Xochimilco Mexico City"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Mexico City" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Centro Histórico museums, Coyoacán and Chapultepec galleries, lucha libre and jazz nights, with breakfasts, dinners, bakeries and bars checked against their own websites.";
+    cityGuide.highlights = ["Museo del Templo Mayor","Museo Frida Kahlo (Casa Azul)","Museo Nacional de Arte (MUNAL)","Basílica de Guadalupe"];
+    cityGuide.tip = "Plan museums around closing days: the Frida Kahlo museum and MUAC close on Mondays, Museo Kaluz closes on Tuesdays, and Templo Mayor, MUNAL and San Ildefonso open Tuesday to Sunday.";
+    data.destinationFacts[cityKey] = "Plan museums around closing days: the Frida Kahlo museum and MUAC close on Mondays, Museo Kaluz closes on Tuesdays, and Templo Mayor, MUNAL and San Ildefonso open Tuesday to Sunday.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Centro Histórico museums, Coyoacán and Chapultepec galleries, lucha libre and jazz nights, with breakfasts, dinners, bakeries and bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays and Tuesdays",
+        "copy": "Museo Frida Kahlo and MUAC are closed on Mondays, and Templo Mayor, MUNAL, San Ildefonso and Museo Dolores Olmedo list Tuesday-to-Sunday hours. Museo Kaluz is the exception, closing on Tuesdays."
+      },
+      {
+        "label": "Tickets",
+        "value": "Buy ahead or go free",
+        "copy": "Museo Frida Kahlo sells tickets online or at a self-service kiosk in its shop, and MUAC stops selling tickets 30 minutes before closing. All four Museo Soumaya venues list free entry, and San Ildefonso is free on Sundays."
+      },
+      {
+        "label": "Dinner bookings",
+        "value": "Know each restaurant's channel",
+        "copy": "Quintonil books only through Tock and does not take email reservations; its tasting menu is per person and cannot be shared. Contramar takes bookings by phone, WhatsApp or OpenTable, with groups over seven by email."
+      },
+      {
+        "label": "Night out",
+        "value": "Fixed show nights",
+        "copy": "Arena México holds regular lucha libre on Tuesdays at 7:30 pm, Fridays at 8:30 pm and Sundays at 5:00 pm. Zinco Jazz Club opens Wednesday to Saturday from 9:00 pm and books online for 2 to 10 people."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Base yourself around the Centro Histórico museums on weekdays, save Coyoacán and Chapultepec for days they are open, and book dinners and jazz nights ahead.",
+      intro: [
+        "Mexico City rewards you for planning around opening days. In the Centro Histórico, Museo del Templo Mayor on Seminario opens Tuesday to Sunday from 09:00 to 17:00 and is showing the temporary exhibition \"Cuauhtémoc. Historia y memoria.\" A few blocks away, MUNAL on Tacuba keeps the same Tuesday-to-Sunday pattern from 10:00 to 18:00, with last entry at 17:30, and runs \"Ángel Zárraga. Los ideales del arte\" until 28 March 2027 alongside \"México: ruta y destino\" until 14 February 2027.",
+        "The Centro is dense with more to see. Antiguo Colegio de San Ildefonso on Justo Sierra opens Tuesday to Sunday from 11:00 to 17:30, charges $50 MXN and is free on Sundays; \"UNAM 475+\" runs from October 2026 to March 2027. Museo Kaluz on Avenida Hidalgo is open 10:00 to 18:00 but closed on Tuesdays, and shows \"Alphonse Mucha: La magia de la línea\" until 8 February 2027. For families, MIDE on Tacuba offers 2-for-1 general entry from Tuesday to Friday, 15:00 to 17:00, at the box office only.",
+        "Further out, Museo Frida Kahlo at Londres 247 in Coyoacán is closed on Mondays and sells tickets online or at a kiosk in its shop, with Noche Azul late openings on Thursdays until 21:00. MUAC on Insurgentes Sur is also closed on Mondays, stays open until 20:00 on Thursdays and Saturdays, and is free on Thursdays from 18:00 to 20:00. In Chapultepec, Museo Tamayo shows \"Tamayo, Nieto, Toledo: Los años en París\" until 15 February 2027, and Papalote Museo del Niño sells tickets online.",
+        "For food, Azul Histórico on Isabel la Católica serves breakfast daily from 9:00 to 12:00 and lunch and dinner from 13:00 to 23:00. Quintonil in Polanco opens Monday to Saturday, books only through Tock and lists its tasting menu at $6,090 MXN. Contramar in Roma Norte serves from midday until 20:00. After dark, Arena México stages lucha libre on Tuesdays, Fridays and Sundays, Salón Tenampa on Plaza Garibaldi opens daily from 13:00, and Churrería El Moro on Eje Central lists 24-hour opening."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Spend a Tuesday-to-Sunday day in the Centro Histórico at Templo Mayor, MUNAL and San Ildefonso, then eat at Azul Histórico."
+        ],
+        [
+          "A slower morning",
+          "Start with breakfast at Azul Histórico or Chiquitito Café, then browse Cafebrería El Péndulo in Condesa before an afternoon at Museo Tamayo."
+        ],
+        [
+          "Before booking",
+          "Book Quintonil only through Tock, buy Frida Kahlo museum tickets online, and avoid Mondays for Casa Azul and MUAC and Tuesdays for Museo Kaluz."
+        ]
+      ],
+      trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
 })();

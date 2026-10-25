@@ -123,12 +123,15 @@ ${twinKeys.length ? `    for (const twin of ${q(twinKeys)}) {
 ${CATEGORIES.map((category) => `      ${category}: ${q(detail[category] || [])}`).join(",\n")}
     };
     data.cityPlaceQueries[cityKey] = ${indent(JSON.stringify(Object.fromEntries([...used].map((name) => [name, guide.queries[name]])), null, 2), 4)};
-    const cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
-    if (cityGuide) {
-      cityGuide.summary = ${q(guide.summary)};
-      cityGuide.highlights = ${q(guide.highlights.slice(0, 4))};
-      cityGuide.tip = ${q(guide.tip)};
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: ${q(key.split(",")[0].trim())} };
+      data.cityGuideData.push(cityGuide);
     }
+    cityGuide.summary = ${q(guide.summary)};
+    cityGuide.highlights = ${q(guide.highlights.slice(0, 4))};
+    cityGuide.tip = ${q(guide.tip)};
     data.destinationFacts[cityKey] = ${q(guide.tip)};
     if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = ${q(guide.summary)};
     data.cityPlanningToolkitData[cityKey] = ${indent(JSON.stringify(guide.toolkit.map(({ label, value, copy }) => ({ label, value, copy })), null, 2), 4)};

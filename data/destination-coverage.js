@@ -423,6 +423,10 @@ window.HB_DATA = window.HB_DATA || {};
 
     if (hasDevelopedContent) {
       data.destinationCoverage[city] = { status: "developed", country, title: name };
+      // A source-reviewed city that only ever had starter content brings no areas of its own; use the starter set.
+      if (existingGuide && !(existingGuide.areas || []).length) {
+        existingGuide.areas = buildExpandedContent({ city, country, name, guide: existingGuide, hero: data.destinationHeroData[city], existingFact: existingFactFor(city, name, existingGuide) }).guide.areas;
+      }
       return;
     }
 

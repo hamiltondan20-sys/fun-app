@@ -1,0 +1,738 @@
+{
+  "city": "Mexico City, Mexico",
+  "checkedOn": "2026-10-25",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Museo Frida Kahlo (Casa Azul)",
+      "kind": "museum",
+      "url": "https://www.museofridakahlo.org.mx/",
+      "sourceType": "operator's own site",
+      "address": "Londres 247, Col. Del Carmen, Coyoacán, 04100, CDMX, México",
+      "operatingEvidence": "Publishes current hours and a closure list running to \"January 1, 2027\"; tickets sold online at boletos.museofridakahlo.org.mx and at a self-service kiosk in the museum shop's Showroom-Click & Collect area.",
+      "hours": "Mon closed; Tue 10:00-18:00; Wed 11:00-18:00; Thu-Sun 10:00-18:00; Noche Azul Thursdays 17:15-21:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Museo del Templo Mayor",
+      "kind": "museum",
+      "url": "https://www.templomayor.inah.gob.mx/",
+      "sourceType": "official public operator (INAH)",
+      "address": "Seminario Núm. 8, Centro Histórico, México D.F. CP 06060",
+      "operatingEvidence": "Lists the temporary exhibition \"Cuauhtémoc. Historia y memoria\" (no dates shown) and states \"El museo está abierto de martes a domingo de 09:00 a 17:00 horas.\"",
+      "hours": "Tue-Sun 09:00-17:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Contramar (Roma Norte)",
+      "kind": "meal",
+      "url": "https://contramar.com.mx/",
+      "sourceType": "operator's own site",
+      "address": "Durango 200, Roma Norte, Cuauhtémoc, 06700, Ciudad de México",
+      "operatingEvidence": "Reservations desk open daily 10:00-20:00 by phone/WhatsApp or OpenTable; groups over 7 book by email (\"reservaciones mayores a 7 personas\").",
+      "hours": "Mon-Fri 12:00-20:00; Sat-Sun 11:00-20:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Quintonil",
+      "kind": "meal",
+      "url": "https://www.quintonil.com/",
+      "sourceType": "operator's own site",
+      "address": "Newton 55, Polanco, Ciudad de México",
+      "operatingEvidence": "Tasting menu dated \"OCTUBRE 2026\" titled \"NUESTRO MÉXICO\" at $6,090 MXN; bookings only via Tock, \"no se realizan reservaciones vía correo electrónico\".",
+      "hours": "\"lunes a sábado 13:00 a 24:00\" (closed Sunday)",
+      "confidence": "high"
+    },
+    {
+      "name": "Museo Soumaya (Plaza Carso)",
+      "kind": "museum",
+      "url": "https://www.museosoumaya.org/",
+      "sourceType": "operator's own site",
+      "address": "Bulevar Cervantes Saavedra esquina Presa Falcón, Ampliación Granada, Miguel Hidalgo, 11529, Ciudad de México",
+      "operatingEvidence": "Current visitor information lists daily hours and \"Entrada gratuita\" for Plaza Carso and its other three venues.",
+      "hours": "Daily 10:30-18:30",
+      "confidence": "medium"
+    },
+    {
+      "name": "Papalote Museo del Niño (Chapultepec)",
+      "kind": "museum",
+      "url": "https://www.papalote.org.mx/",
+      "sourceType": "operator's own site",
+      "address": "Av. Constituyentes 268, Col. 2da Sección de Chapultepec, CDMX",
+      "operatingEvidence": "Online ticket sales (\"Compra tus boletos\") for the Chapultepec site, current film listings and group-sales contacts.",
+      "hours": "\"Martes a domingos: de 10:00 a 18:30 hrs.\" (listed under Horarios de atención; not explicitly labelled as museum hours)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Museo Tamayo",
+      "kind": "museum",
+      "url": "https://www.museotamayo.org/",
+      "sourceType": "operator's own site",
+      "address": "Paseo de la Reforma 51, Bosque de Chapultepec, Miguel Hidalgo, C.P. 11580",
+      "operatingEvidence": "Current exhibitions \"Tamayo, Nieto, Toledo: Los años en París\" (20 Aug 2026-15 Feb 2027) and \"Museo Tamayo: Arquitectura y cosmotécnica\" (23 Jul 2026-28 Feb 2027).",
+      "hours": "\"10:00 - 18:00 h\" (opening days not listed)",
+      "confidence": "high"
+    },
+    {
+      "name": "Arena México",
+      "kind": "landmark",
+      "url": "https://cmll.com/arenas/arena-mexico/",
+      "sourceType": "operator's own site (CMLL)",
+      "address": "Dr. Lavista 189, Col. Doctores, C.P. 06720, Alcaldía Cuauhtémoc, Ciudad de México",
+      "operatingEvidence": "CMLL lists dated October and November 2026 lucha libre cards at Arena México, with tickets at the box office or via Ticketmaster; regular shows Tuesdays 7:30 pm, Fridays 8:30 pm, Sundays 5:00 pm.",
+      "hours": "Shows Tue 19:30, Fri 20:30, Sun 17:00; box office hours not published",
+      "confidence": "high"
+    },
+    {
+      "name": "Museo Dolores Olmedo",
+      "kind": "museum",
+      "url": "https://www.museodoloresolmedo.org.mx/",
+      "sourceType": "operator's own site",
+      "address": "Av. México 5843, La Noria, Xochimilco, 16030 Ciudad de México, México",
+      "operatingEvidence": "Publishes visiting hours and a \"Boletos\" link for ticket sales; footer \"MDO © 2026\".",
+      "hours": "\"Martes a Domingo\" \"10:00 a 18:00 horas\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Máximo Bistrot",
+      "kind": "meal",
+      "url": "https://www.maximobistrot.com.mx/",
+      "sourceType": "operator's own site",
+      "address": "Av. Álvaro Obregón 65 Bis, Roma Nte., Cuauhtémoc, 06700, Ciudad de México, México",
+      "operatingEvidence": "Publishes current service hours with links to Reservaciones and Menú pages.",
+      "hours": "\"Lunes a sábado 1:00 p.m. a 11:00 p.m.\"; \"Domingo: cerrado\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Churrería El Moro (Centro Histórico)",
+      "kind": "bakery",
+      "url": "https://elmoro.mx/churrerias/",
+      "sourceType": "operator's own site",
+      "address": "Eje Central Lázaro Cárdenas 42, Centro Histórico, CDMX",
+      "operatingEvidence": "Branch list gives the Centro Histórico shop as open Monday to Sunday, \"24 hrs\"; \"Churrería desde 1935\".",
+      "hours": "Mon-Sun 24 hours",
+      "confidence": "medium"
+    },
+    {
+      "name": "MUAC (Museo Universitario Arte Contemporáneo)",
+      "kind": "museum",
+      "url": "https://muac.unam.mx/",
+      "sourceType": "official public operator (UNAM)",
+      "address": "Insurgentes Sur 3000, Centro Cultural Universitario, Coyoacán, C.P. 04510, Ciudad de México",
+      "operatingEvidence": "Current exhibition \"Desde el umbral\" runs 13.06.2026-29.11.2026; general admission $60, free Thursdays 18:00-20:00; \"La venta de boletos termina 30 minutos antes del cierre.\"",
+      "hours": "Tue, Wed, Fri 10:00-18:00; Thu 10:00-20:00; Sat 11:00-20:00; Sun 11:00-18:00; Mon closed",
+      "confidence": "high"
+    },
+    {
+      "name": "Rosetta",
+      "kind": "meal",
+      "url": "https://rosetta.com.mx/reservaciones",
+      "sourceType": "operator's own site",
+      "address": "Colima 166, Roma Norte, Ciudad de México",
+      "operatingEvidence": "Reservations page takes bookings, with tables of 5 to 12 handled by email/phone/WhatsApp and groups of 13+ by the events team.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bar La Ópera",
+      "kind": "bar",
+      "url": "https://laoperabar.com/",
+      "sourceType": "operator's own site",
+      "address": "Calle 5 de Mayo #10, Centro Histórico, Ciudad de México",
+      "operatingEvidence": "Publishes current hours and contact for \"Grupos y Eventos Especiales\"; history dates to 1876 and the present site to 1895.",
+      "hours": "\"Horario L-S 1:00 PM A 12:00, D 1:00 A 6:00 PM\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Azul Histórico",
+      "kind": "meal",
+      "url": "https://azul.rest/",
+      "sourceType": "operator's own site",
+      "address": "Isabel la Católica #30, Centro Histórico de la CDMX, CP 06000",
+      "operatingEvidence": "Header shows \"Octubre - Noviembre 2026\" with a Oaxaca food festival; blog posts dated 2026; online reservation link for this branch.",
+      "hours": "Breakfast daily 9:00-12:00; lunch and dinner daily 13:00-23:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Chiquitito Café (Alfonso Reyes)",
+      "kind": "cafe",
+      "url": "https://www.chiquititocafe.com/",
+      "sourceType": "operator's own site",
+      "address": "Alfonso Reyes 232 – E, Col. Hipódromo Condesa, C.P. 06140",
+      "operatingEvidence": "Branch list with \"Horarios 7:30 am a 8:30 pm\" for each location; footer \"© 2026\".",
+      "hours": "7:30-20:30 (days not specified)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Antiguo Colegio de San Ildefonso",
+      "kind": "museum",
+      "url": "https://www.sanildefonso.org.mx/",
+      "sourceType": "operator's own site",
+      "address": "Justo Sierra 16, Centro Histórico de la Ciudad de México 06020",
+      "operatingEvidence": "Exhibitions \"UNAM 475+\" (\"Octubre 2026 - Marzo 2027\") and \"Entretejidas\" (17 Sep-6 Dec 2026); admission $50 MXN, free on Sundays.",
+      "hours": "Tue-Sun 11:00-17:30",
+      "confidence": "high"
+    },
+    {
+      "name": "Museo Kaluz",
+      "kind": "museum",
+      "url": "https://www.museokaluz.org/",
+      "sourceType": "operator's own site",
+      "address": "AV. HIDALGO 85, CENTRO HISTÓRICO, 06300 CIUDAD DE MÉXICO",
+      "operatingEvidence": "Current exhibition \"Alphonse Mucha: La magia de la línea\" (9 Oct 2026-8 Feb 2027); \"El arte nuevo: Simbolismo y Art Nouveau en México\" opens 30 Oct 2026 to 8 Mar 2027.",
+      "hours": "\"10:00 a 18:00 horas\", \"martes cerrado\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Museo Nacional de Arte (MUNAL)",
+      "kind": "museum",
+      "url": "https://www.munal.mx/",
+      "sourceType": "operator's own site",
+      "address": "Tacuba 8, Centro Histórico, Ciudad de México, CP. 06010",
+      "operatingEvidence": "Exhibitions \"Ángel Zárraga. Los ideales del arte\" (25/09/2026-28/03/2027) and \"México: ruta y destino\" (21/05/2026-14/02/2027).",
+      "hours": "Tue-Sun 10:00-18:00, last entry 17:30; closed 1 Jan and 25 Dec",
+      "confidence": "high"
+    },
+    {
+      "name": "Pastelería Ideal (16 de Septiembre)",
+      "kind": "bakery",
+      "url": "https://www.pasteleriaideal.com/sucursales",
+      "sourceType": "operator's own site",
+      "address": "Av. 16 de Septiembre 18, Colonia Centro C.P 06000 Ciudad de México",
+      "operatingEvidence": "Branch page lists daily hours and department phone extensions (Repostería, Bocadillos, Mayoreo).",
+      "hours": "\"Lunes a Domingo\" \"6:00am - 9:00pm\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Gin Gin (Polanco)",
+      "kind": "bar",
+      "url": "https://gingin.mx/",
+      "sourceType": "operator's own site",
+      "address": "Calle Calderón de la Barca 72, Polanco II Secc, Miguel Hidalgo, 11560, CDMX",
+      "operatingEvidence": "Branch list with daily hours for five locations; footer \"© 2026 Grupo Indiana\".",
+      "hours": "Daily 16:00-03:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Basílica de Guadalupe",
+      "kind": "landmark",
+      "url": "https://virgendeguadalupe.org.mx/",
+      "sourceType": "operator's own site",
+      "address": "Fray Juan de Zumárraga No. 2, Colonia Villa Gustavo A. Madero, Alcaldía Gustavo A. Madero, 07050, Ciudad de México",
+      "operatingEvidence": "Dated October 2026 liturgy (Laudes and Misa Coral on 24 Oct 2026, readings for October 2026); daily Misa Coral at 9:00 h.",
+      "hours": "Visiting hours not readable (separate page); daily Laudes 8:30, Misa Coral 9:00, Novenario 18:00",
+      "confidence": "high"
+    },
+    {
+      "name": "MIDE Museo Interactivo de Economía",
+      "kind": "museum",
+      "url": "https://www.mide.org.mx/",
+      "sourceType": "operator's own site",
+      "address": "Tacuba 17, Centro histórico de la Ciudad de México, C.P. 06000",
+      "operatingEvidence": "\"Hoy abierto de 09:00 a 17:00\"; online tickets; \"Tardes con Pilón\" 2x1 general entry Tue-Fri 15:00-17:00 at the box office only; 2026 content incl. Global Money Week 2026.",
+      "hours": "\"Hoy abierto de 09:00 a 17:00\" (weekly days not listed)",
+      "confidence": "high"
+    },
+    {
+      "name": "Zinco Jazz Club",
+      "kind": "bar",
+      "url": "https://www.zincojazz.com/",
+      "sourceType": "operator's own site",
+      "address": "Calle de Motolinia 20, Centro Histórico de la Ciudad de México, C.P. 06050",
+      "operatingEvidence": "Dated October 2026 programme of nightly shows; online reservations for 2 to 10 people, larger groups via WhatsApp.",
+      "hours": "\"Abierto de Miércoles a Sábado a partir de las 9:00 PM\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Cafebrería El Péndulo (Condesa)",
+      "kind": "cafe",
+      "url": "https://www.pendulo.com/",
+      "sourceType": "operator's own site",
+      "address": "Nuevo León 115, 06140 Condesa (México)",
+      "operatingEvidence": "Live 2026 bookshop content (a 2026 \"Temporada de terror\" banner, 2027 calendars for sale); footer \"2026 © Cafebrería El Péndulo\".",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Salón Tenampa",
+      "kind": "bar",
+      "url": "https://tenampa.com.mx/",
+      "sourceType": "operator's own site",
+      "address": "Plaza Garibaldi #12, Col. Centro, CDMX",
+      "operatingEvidence": "Publishes current weekly hours and a seasonal menu promotion; footer \"2026 TENAMPA\"; founded \"en el año de 1925\".",
+      "hours": "Sun-Wed 13:00-02:00; Thu-Sat 13:00-03:00",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Centro Historico",
+      "reason": "generic, not a place (neighbourhood); covered via named Centro sites",
+      "url": ""
+    },
+    {
+      "name": "Roma and Condesa",
+      "reason": "generic, not a place (neighbourhoods)",
+      "url": ""
+    },
+    {
+      "name": "Roma Norte",
+      "reason": "generic, not a place (neighbourhood)",
+      "url": ""
+    },
+    {
+      "name": "Chapultepec Park",
+      "reason": "official site chapultepec.cdmx.gob.mx refused connection (ECONNREFUSED); not readable",
+      "url": "https://chapultepec.cdmx.gob.mx/"
+    },
+    {
+      "name": "Chapultepec",
+      "reason": "same as Chapultepec Park; official site not readable (ECONNREFUSED)",
+      "url": "https://chapultepec.cdmx.gob.mx/"
+    },
+    {
+      "name": "Park day in Chapultepec",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Mercado snacks",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Roma walking day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Tasting menu dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private anthropology guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "High-end boutique stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Condesa dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Rooftop mezcal night",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Museum and long lunch day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Cafe in Roma",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Museum day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market lunch and bookstore afternoon",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Lucha libre night",
+      "reason": "generic, not a place (Arena México confirmed separately)",
+      "url": ""
+    },
+    {
+      "name": "Xochimilco trajinera",
+      "reason": "generic, not a place (no single operator)",
+      "url": ""
+    },
+    {
+      "name": "Boat ride in Xochimilco",
+      "reason": "generic, not a place (no single operator)",
+      "url": ""
+    },
+    {
+      "name": "Library and design shops",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Chapultepec Zoo",
+      "reason": "official SEDEMA page refused connection (ECONNREFUSED); not readable",
+      "url": "https://www.sedema.cdmx.gob.mx/programas/programa/zoologico-de-chapultepec"
+    },
+    {
+      "name": "Pujol",
+      "reason": "official site returned HTTP 429 Too Many Requests on three attempts; not readable",
+      "url": "https://pujol.com.mx/"
+    },
+    {
+      "name": "Panaderia Rosetta",
+      "reason": "rosetta.com.mx lists no bakery address or hours; /panaderia returned only an image, no readable text",
+      "url": "https://rosetta.com.mx/panaderia"
+    },
+    {
+      "name": "Cafe Nin",
+      "reason": "official domain redirects to Instagram (social media not allowed as evidence)",
+      "url": "https://www.cafenin.com.mx/"
+    },
+    {
+      "name": "Lardo",
+      "reason": "official site refused connection (ECONNREFUSED)",
+      "url": "https://lardo.mx/"
+    },
+    {
+      "name": "El Cardenal",
+      "reason": "official site lists branches but no hours or current operating evidence (latest dated item 2024); /sucursales returned 404",
+      "url": "https://restauranteelcardenal.com/"
+    },
+    {
+      "name": "Expendio de Maiz",
+      "reason": "SSL error (WRONG_VERSION_NUMBER) on the presumed official domain; not readable",
+      "url": "https://www.expendiodemaiz.com/"
+    },
+    {
+      "name": "Handshake Speakeasy",
+      "reason": "official site handshake.bar publishes no address or hours; handshakespeakeasy.com does not resolve",
+      "url": "https://handshake.bar/"
+    },
+    {
+      "name": "Licoreria Limantour",
+      "reason": "no official site found; limantour.tech and limantour.mx do not resolve",
+      "url": ""
+    },
+    {
+      "name": "Baltra Bar",
+      "reason": "official site gives hours but no address",
+      "url": "https://baltra.bar/"
+    },
+    {
+      "name": "Odette",
+      "reason": "no official website identified",
+      "url": ""
+    },
+    {
+      "name": "Marne Bread Co.",
+      "reason": "no official website identified (only review/guide listings)",
+      "url": ""
+    },
+    {
+      "name": "Cucurucho",
+      "reason": "cucurucho.mx does not resolve (DNS failure); no other official site found",
+      "url": "https://cucurucho.mx/"
+    },
+    {
+      "name": "Quentin Cafe",
+      "reason": "no official website identified (only directory listings)",
+      "url": ""
+    },
+    {
+      "name": "Cardinal Casa de Cafe",
+      "reason": "casacardinal.mx returned HTTP 522; not readable",
+      "url": "https://casacardinal.mx/"
+    },
+    {
+      "name": "Museo Nacional de Antropología",
+      "reason": "official INAH site returned HTTP 468 (automated access refused)",
+      "url": "https://www.mna.inah.gob.mx/"
+    },
+    {
+      "name": "Palacio de Bellas Artes",
+      "reason": "official INBAL site returned HTTP 403 Forbidden",
+      "url": "https://palacio.inba.gob.mx/"
+    },
+    {
+      "name": "Castillo de Chapultepec (Museo Nacional de Historia)",
+      "reason": "mnh.inah.gob.mx does not resolve (DNS failure)",
+      "url": "https://www.mnh.inah.gob.mx/"
+    },
+    {
+      "name": "Museo Anahuacalli",
+      "reason": "DNS lookup failed (EAI_AGAIN); not readable",
+      "url": "https://www.anahuacallimuseo.org/"
+    },
+    {
+      "name": "Casa Luis Barragán",
+      "reason": "homepage gives no address or visit hours; /visitas returned 404",
+      "url": "https://www.casaluisbarragan.org/"
+    },
+    {
+      "name": "Museo Jumex",
+      "reason": "DNS lookup failed (EAI_AGAIN); not readable",
+      "url": "https://www.museojumex.org/"
+    },
+    {
+      "name": "Fifty Mils (Four Seasons)",
+      "reason": "official Four Seasons page returned HTTP 403 Forbidden",
+      "url": "https://www.fourseasons.com/mexico/dining/lounges/fifty-mils/"
+    },
+    {
+      "name": "Sanborns Casa de los Azulejos",
+      "reason": "official site returned HTTP 403 Forbidden",
+      "url": "https://www.sanborns.com.mx/"
+    },
+    {
+      "name": "Café de Tacuba",
+      "reason": "official site returned no readable content",
+      "url": "https://www.cafedetacuba.com.mx/"
+    },
+    {
+      "name": "Café El Jarocho",
+      "reason": "official site returned no readable content",
+      "url": "https://www.cafeeljarocho.com.mx/"
+    },
+    {
+      "name": "El Globo",
+      "reason": "homepage lists no branch address; latest dated content 2024",
+      "url": "https://www.elglobo.com.mx/"
+    },
+    {
+      "name": "Gran Hotel Ciudad de México (Terraza)",
+      "reason": "address published but no hours or current evidence for the terrace restaurant/bar",
+      "url": "https://www.granhoteldelaciudaddemexico.com.mx/"
+    },
+    {
+      "name": "Ojo de Agua",
+      "reason": "branch page gives hours but no street addresses (map links only)",
+      "url": "https://grupoojodeagua.com.mx/sucursales/"
+    },
+    {
+      "name": "Tlecan",
+      "reason": "official site gives no address, hours or reservation details",
+      "url": "https://tlecan.com/"
+    },
+    {
+      "name": "Buna",
+      "reason": "official site returned HTTP 429 Too Many Requests on three attempts",
+      "url": "https://buna.mx/"
+    },
+    {
+      "name": "Almanegra Café",
+      "reason": "official site returned HTTP 429 Too Many Requests on three attempts",
+      "url": "https://almanegracafe.com/"
+    },
+    {
+      "name": "Museo del Estanquillo",
+      "reason": "official CDMX site refused connection (ECONNREFUSED)",
+      "url": "https://www.museodelestanquillo.cdmx.gob.mx/"
+    },
+    {
+      "name": "Biblioteca Vasconcelos",
+      "reason": "DNS lookup failed (EAI_AGAIN); not readable",
+      "url": "https://www.bibliotecavasconcelos.gob.mx/"
+    },
+    {
+      "name": "Museo de Arte Popular",
+      "reason": "presumed official domain does not resolve (DNS failure)",
+      "url": "https://www.museodeartepopular.cdmx.gob.mx/"
+    },
+    {
+      "name": "Museo Casa de León Trotsky",
+      "reason": "presumed official domain does not resolve (DNS failure)",
+      "url": "https://www.museocasadeleontrotsky.com/"
+    },
+    {
+      "name": "Lalo!",
+      "reason": "official site contains only Instagram links; no address or hours",
+      "url": "https://www.eat-lalo.com/"
+    },
+    {
+      "name": "Hanky Panky",
+      "reason": "presumed official domain does not resolve (DNS failure)",
+      "url": "https://www.hankypankycdmx.com/"
+    },
+    {
+      "name": "Blend Station",
+      "reason": "DNS lookup failed (EAI_AGAIN)",
+      "url": "https://www.blendstation.mx/"
+    },
+    {
+      "name": "Maque",
+      "reason": "presumed official site returned HTTP 404",
+      "url": "https://www.maque.com.mx/"
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Museo del Templo Mayor",
+        "Museo Nacional de Arte (MUNAL)",
+        "Basílica de Guadalupe",
+        "Museo Frida Kahlo (Casa Azul)"
+      ],
+      "bestFirstTimers": [
+        "Museo del Templo Mayor",
+        "Antiguo Colegio de San Ildefonso",
+        "Museo Frida Kahlo (Casa Azul)",
+        "Azul Histórico"
+      ],
+      "bestRestaurants": [
+        "Quintonil",
+        "Contramar (Roma Norte)",
+        "Rosetta",
+        "Máximo Bistrot"
+      ],
+      "bestBudget": [
+        "Museo Soumaya (Plaza Carso)",
+        "Churrería El Moro (Centro Histórico)",
+        "Pastelería Ideal (16 de Septiembre)",
+        "Antiguo Colegio de San Ildefonso"
+      ],
+      "bestLuxury": [
+        "Quintonil",
+        "Rosetta",
+        "Máximo Bistrot",
+        "Gin Gin (Polanco)"
+      ],
+      "bestCouples": [
+        "Zinco Jazz Club",
+        "Rosetta",
+        "Bar La Ópera",
+        "Museo Tamayo"
+      ],
+      "bestKids": [
+        "Papalote Museo del Niño (Chapultepec)",
+        "MIDE Museo Interactivo de Economía",
+        "Arena México",
+        "Churrería El Moro (Centro Histórico)"
+      ],
+      "bestSolo": [
+        "Cafebrería El Péndulo (Condesa)",
+        "MUAC (Museo Universitario Arte Contemporáneo)",
+        "Museo Kaluz",
+        "Chiquitito Café (Alfonso Reyes)"
+      ],
+      "bestUnique": [
+        "Arena México",
+        "Salón Tenampa",
+        "Museo Dolores Olmedo",
+        "Zinco Jazz Club"
+      ],
+      "bestBreakfast": [
+        "Azul Histórico",
+        "Chiquitito Café (Alfonso Reyes)",
+        "Pastelería Ideal (16 de Septiembre)"
+      ],
+      "bestLunch": [
+        "Contramar (Roma Norte)",
+        "Azul Histórico",
+        "Máximo Bistrot"
+      ],
+      "bestDinner": [
+        "Quintonil",
+        "Rosetta",
+        "Máximo Bistrot",
+        "Azul Histórico"
+      ],
+      "bestCocktails": [
+        "Gin Gin (Polanco)",
+        "Bar La Ópera",
+        "Salón Tenampa",
+        "Zinco Jazz Club"
+      ],
+      "bestBakeries": [
+        "Pastelería Ideal (16 de Septiembre)",
+        "Churrería El Moro (Centro Histórico)"
+      ],
+      "bestCoffee": [
+        "Chiquitito Café (Alfonso Reyes)",
+        "Cafebrería El Péndulo (Condesa)"
+      ]
+    },
+    "queries": {
+      "Museo Frida Kahlo (Casa Azul)": "Museo Frida Kahlo Londres 247 Coyoacán Mexico City",
+      "Museo del Templo Mayor": "Museo del Templo Mayor Seminario 8 Centro Histórico Mexico City",
+      "Contramar (Roma Norte)": "Contramar Durango 200 Roma Norte Mexico City",
+      "Quintonil": "Quintonil Newton 55 Polanco Mexico City",
+      "Museo Soumaya (Plaza Carso)": "Museo Soumaya Bulevar Cervantes Saavedra Ampliación Granada Mexico City",
+      "Papalote Museo del Niño (Chapultepec)": "Papalote Museo del Niño Av. Constituyentes 268 Mexico City",
+      "Museo Tamayo": "Museo Tamayo Paseo de la Reforma 51 Mexico City",
+      "Arena México": "Arena México Dr. Lavista 189 Doctores Mexico City",
+      "Museo Dolores Olmedo": "Museo Dolores Olmedo Av. México 5843 Xochimilco Mexico City",
+      "Máximo Bistrot": "Máximo Bistrot Av. Álvaro Obregón 65 Bis Roma Norte Mexico City",
+      "Churrería El Moro (Centro Histórico)": "Churrería El Moro Eje Central Lázaro Cárdenas 42 Mexico City",
+      "MUAC (Museo Universitario Arte Contemporáneo)": "MUAC Insurgentes Sur 3000 Coyoacán Mexico City",
+      "Rosetta": "Rosetta Colima 166 Roma Norte Mexico City",
+      "Bar La Ópera": "Bar La Ópera 5 de Mayo 10 Centro Histórico Mexico City",
+      "Azul Histórico": "Azul Histórico Isabel la Católica 30 Centro Histórico Mexico City",
+      "Chiquitito Café (Alfonso Reyes)": "Chiquitito Café Alfonso Reyes 232 Hipódromo Condesa Mexico City",
+      "Antiguo Colegio de San Ildefonso": "Antiguo Colegio de San Ildefonso Justo Sierra 16 Mexico City",
+      "Museo Kaluz": "Museo Kaluz Av. Hidalgo 85 Centro Histórico Mexico City",
+      "Museo Nacional de Arte (MUNAL)": "Museo Nacional de Arte Tacuba 8 Centro Histórico Mexico City",
+      "Pastelería Ideal (16 de Septiembre)": "Pastelería Ideal Av. 16 de Septiembre 18 Centro Mexico City",
+      "Gin Gin (Polanco)": "Gin Gin Calderón de la Barca 72 Polanco Mexico City",
+      "Basílica de Guadalupe": "Basílica de Guadalupe Fray Juan de Zumárraga 2 Gustavo A. Madero Mexico City",
+      "MIDE Museo Interactivo de Economía": "MIDE Museo Interactivo de Economía Tacuba 17 Mexico City",
+      "Zinco Jazz Club": "Zinco Jazz Club Motolinia 20 Centro Histórico Mexico City",
+      "Cafebrería El Péndulo (Condesa)": "Cafebrería El Péndulo Nuevo León 115 Condesa Mexico City",
+      "Salón Tenampa": "Salón Tenampa Plaza Garibaldi 12 Centro Mexico City"
+    },
+    "summary": "Centro Histórico museums, Coyoacán and Chapultepec galleries, lucha libre and jazz nights, with breakfasts, dinners, bakeries and bars checked against their own websites.",
+    "highlights": [
+      "Museo del Templo Mayor",
+      "Museo Frida Kahlo (Casa Azul)",
+      "Museo Nacional de Arte (MUNAL)",
+      "Basílica de Guadalupe"
+    ],
+    "tip": "Plan museums around closing days: the Frida Kahlo museum and MUAC close on Mondays, Museo Kaluz closes on Tuesdays, and Templo Mayor, MUNAL and San Ildefonso open Tuesday to Sunday.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mondays and Tuesdays",
+        "copy": "Museo Frida Kahlo and MUAC are closed on Mondays, and Templo Mayor, MUNAL, San Ildefonso and Museo Dolores Olmedo list Tuesday-to-Sunday hours. Museo Kaluz is the exception, closing on Tuesdays."
+      },
+      {
+        "label": "Tickets",
+        "value": "Buy ahead or go free",
+        "copy": "Museo Frida Kahlo sells tickets online or at a self-service kiosk in its shop, and MUAC stops selling tickets 30 minutes before closing. All four Museo Soumaya venues list free entry, and San Ildefonso is free on Sundays."
+      },
+      {
+        "label": "Dinner bookings",
+        "value": "Know each restaurant's channel",
+        "copy": "Quintonil books only through Tock and does not take email reservations; its tasting menu is per person and cannot be shared. Contramar takes bookings by phone, WhatsApp or OpenTable, with groups over seven by email."
+      },
+      {
+        "label": "Night out",
+        "value": "Fixed show nights",
+        "copy": "Arena México holds regular lucha libre on Tuesdays at 7:30 pm, Fridays at 8:30 pm and Sundays at 5:00 pm. Zinco Jazz Club opens Wednesday to Saturday from 9:00 pm and books online for 2 to 10 people."
+      }
+    ],
+    "dek": "Base yourself around the Centro Histórico museums on weekdays, save Coyoacán and Chapultepec for days they are open, and book dinners and jazz nights ahead.",
+    "intro": [
+      "Mexico City rewards you for planning around opening days. In the Centro Histórico, Museo del Templo Mayor on Seminario opens Tuesday to Sunday from 09:00 to 17:00 and is showing the temporary exhibition \"Cuauhtémoc. Historia y memoria.\" A few blocks away, MUNAL on Tacuba keeps the same Tuesday-to-Sunday pattern from 10:00 to 18:00, with last entry at 17:30, and runs \"Ángel Zárraga. Los ideales del arte\" until 28 March 2027 alongside \"México: ruta y destino\" until 14 February 2027.",
+      "The Centro is dense with more to see. Antiguo Colegio de San Ildefonso on Justo Sierra opens Tuesday to Sunday from 11:00 to 17:30, charges $50 MXN and is free on Sundays; \"UNAM 475+\" runs from October 2026 to March 2027. Museo Kaluz on Avenida Hidalgo is open 10:00 to 18:00 but closed on Tuesdays, and shows \"Alphonse Mucha: La magia de la línea\" until 8 February 2027. For families, MIDE on Tacuba offers 2-for-1 general entry from Tuesday to Friday, 15:00 to 17:00, at the box office only.",
+      "Further out, Museo Frida Kahlo at Londres 247 in Coyoacán is closed on Mondays and sells tickets online or at a kiosk in its shop, with Noche Azul late openings on Thursdays until 21:00. MUAC on Insurgentes Sur is also closed on Mondays, stays open until 20:00 on Thursdays and Saturdays, and is free on Thursdays from 18:00 to 20:00. In Chapultepec, Museo Tamayo shows \"Tamayo, Nieto, Toledo: Los años en París\" until 15 February 2027, and Papalote Museo del Niño sells tickets online.",
+      "For food, Azul Histórico on Isabel la Católica serves breakfast daily from 9:00 to 12:00 and lunch and dinner from 13:00 to 23:00. Quintonil in Polanco opens Monday to Saturday, books only through Tock and lists its tasting menu at $6,090 MXN. Contramar in Roma Norte serves from midday until 20:00. After dark, Arena México stages lucha libre on Tuesdays, Fridays and Sundays, Salón Tenampa on Plaza Garibaldi opens daily from 13:00, and Churrería El Moro on Eje Central lists 24-hour opening."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Spend a Tuesday-to-Sunday day in the Centro Histórico at Templo Mayor, MUNAL and San Ildefonso, then eat at Azul Histórico."
+      ],
+      [
+        "A slower morning",
+        "Start with breakfast at Azul Histórico or Chiquitito Café, then browse Cafebrería El Péndulo in Condesa before an afternoon at Museo Tamayo."
+      ],
+      [
+        "Before booking",
+        "Book Quintonil only through Tock, buy Frida Kahlo museum tickets online, and avoid Mondays for Casa Azul and MUAC and Tuesdays for Museo Kaluz."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability, and short-term notices (such as single-day closures, weekly show listings and seasonal food festivals) were left out of the guide copy. Several well-known places could not be read and are excluded: Museo Nacional de Antropología (HTTP 468), Palacio de Bellas Artes and Fifty Mils (HTTP 403), Pujol, Buna and Almanegra (HTTP 429), Chapultepec Park, Chapultepec Zoo and Museo del Estanquillo (connection refused), and Castillo de Chapultepec, Anahuacalli, Museo Jumex and Biblioteca Vasconcelos (DNS failures). Some confirmed places publish only partial details: Rosetta and Cafebrería El Péndulo show no opening hours, Basílica de Guadalupe's visiting hours were on a separate page not read, Museo Tamayo and MIDE do not list weekly opening days, Papalote's hours are not explicitly labelled as museum hours, Templo Mayor's current exhibition has no stated dates, and Bar La Ópera's hours are written in ambiguous shorthand.",
+  "injectionLikeText": []
+}
