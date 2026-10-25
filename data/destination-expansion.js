@@ -3146,4 +3146,110 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Los Angeles, United States: source review of 2026-10-25 (docs/content-research/los-angeles-2026-10-25.md).
+  {
+    const cityKey = "Los Angeles, United States";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Griffith Observatory","LACMA","The Broad","Santa Monica Pier"],
+      bestFirstTimers: ["Griffith Observatory","Santa Monica Pier","Grand Central Market","Academy Museum of Motion Pictures"],
+      bestRestaurants: ["Bestia","Bavel","Gjelina (Venice)","République"],
+      bestBudget: ["Griffith Observatory","The Broad","Philippe The Original","Grand Central Market"],
+      bestLuxury: ["Bestia","Musso & Frank Grill","Hollywood Bowl"],
+      bestCouples: ["Hollywood Bowl","Musso & Frank Grill","Gjelina (Venice)","Thunderbolt"],
+      bestKids: ["Natural History Museum of Los Angeles County","Griffith Observatory","Santa Monica Pier"],
+      bestSolo: ["Los Angeles Central Library","The Last Bookstore","LACMA","Verve Coffee Roasters (West 3rd Street)"],
+      bestUnique: ["Hollywood Bowl","Los Angeles Central Library","The Last Bookstore","Academy Museum of Motion Pictures"],
+      bestBreakfast: ["Huckleberry Café","République","Great White (Venice)","Bub and Grandma's"],
+      bestLunch: ["Grand Central Market","Philippe The Original","Bub and Grandma's","Gjelina (Venice)"],
+      bestDinner: ["Bestia","Bavel","Musso & Frank Grill","République"],
+      bestCocktails: ["Thunderbolt","Employees Only LA","The Roger Room"],
+      bestBakeries: ["Porto's Bakery (Glendale)","République","Courage Bagels","Bub and Grandma's"],
+      bestCoffee: ["Verve Coffee Roasters (West 3rd Street)","Huckleberry Café","Great White (Venice)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Griffith Observatory": "Griffith Observatory 2800 East Observatory Road Los Angeles",
+      "LACMA": "LACMA 5905 Wilshire Blvd Los Angeles",
+      "The Broad": "The Broad 221 S Grand Avenue Los Angeles",
+      "Santa Monica Pier": "Santa Monica Pier 200 Santa Monica Pier Santa Monica",
+      "Grand Central Market": "Grand Central Market 317 South Broadway Los Angeles",
+      "Academy Museum of Motion Pictures": "Academy Museum of Motion Pictures 6067 Wilshire Boulevard Los Angeles",
+      "Bestia": "Bestia 2121 E 7th Pl Los Angeles",
+      "Bavel": "Bavel 500 Mateo St Los Angeles",
+      "Gjelina (Venice)": "Gjelina 1429 Abbot Kinney Blvd Venice Los Angeles",
+      "République": "République 624 S La Brea Ave Los Angeles",
+      "Philippe The Original": "Philippe The Original 1001 N Alameda St Los Angeles",
+      "Musso & Frank Grill": "Musso & Frank Grill 6667 Hollywood Blvd Los Angeles",
+      "Hollywood Bowl": "Hollywood Bowl 2301 N Highland Ave Los Angeles",
+      "Thunderbolt": "Thunderbolt 1263 W Temple St Los Angeles",
+      "Natural History Museum of Los Angeles County": "Natural History Museum of Los Angeles County 900 Exposition Blvd Los Angeles",
+      "Los Angeles Central Library": "Los Angeles Central Library 630 W 5th Street Los Angeles",
+      "The Last Bookstore": "The Last Bookstore 453 South Spring Street Los Angeles",
+      "Verve Coffee Roasters (West 3rd Street)": "Verve Coffee Roasters 8051 W 3rd St Los Angeles",
+      "Huckleberry Café": "Huckleberry Cafe 1014 Wilshire Blvd Santa Monica",
+      "Great White (Venice)": "Great White 1604 Pacific Ave Venice Los Angeles",
+      "Bub and Grandma's": "Bub and Grandma's 3507 Eagle Rock Boulevard Los Angeles",
+      "Employees Only LA": "Employees Only 7953 Santa Monica Blvd West Hollywood",
+      "The Roger Room": "The Roger Room 370 N La Cienega Boulevard West Hollywood",
+      "Porto's Bakery (Glendale)": "Porto's Bakery 315 N Brand Blvd Glendale",
+      "Courage Bagels": "Courage Bagels 777 N Virgil Ave Los Angeles"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Los Angeles" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Observatory, museums, the Hollywood Bowl and the Santa Monica Pier, with breakfast cafés, bakeries, dinners and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Griffith Observatory","LACMA","Hollywood Bowl","The Broad"];
+    cityGuide.tip = "Plan museum days around closing days: Griffith Observatory shuts on Mondays, The Broad on Mondays, LACMA on Wednesdays and the Academy Museum on Tuesdays.";
+    data.destinationFacts[cityKey] = "Plan museum days around closing days: Griffith Observatory shuts on Mondays, The Broad on Mondays, LACMA on Wednesdays and the Academy Museum on Tuesdays.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Observatory, museums, the Hollywood Bowl and the Santa Monica Pier, with breakfast cafés, bakeries, dinners and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mon / Tue / Wed",
+        "copy": "Griffith Observatory and The Broad close on Mondays, the Academy Museum on Tuesdays and LACMA on Wednesdays. The Natural History Museum closes on the first Tuesday of every month."
+      },
+      {
+        "label": "Tickets",
+        "value": "Free entry, book ahead",
+        "copy": "Griffith Observatory is free, and The Broad's general admission is free, with timed reservations recommended and walk-ups daily. The Broad's Infinity Mirrored Room requires an advance reservation."
+      },
+      {
+        "label": "Walk-ins",
+        "value": "Check the hour",
+        "copy": "Great White in Venice is walk-ins only from 8am to 4pm, with reservations from 4pm. Thunderbolt takes reservations for up to 9 guests and asks larger groups to email."
+      },
+      {
+        "label": "Concert rules",
+        "value": "Arrive 90 minutes early",
+        "copy": "The Hollywood Bowl asks you to arrive at least 90 minutes before your performance and to buy parking in advance. It also asks you not to park in the surrounding neighborhoods."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Group your days by area, Wilshire museums, downtown, and the coast, and check each venue's closing day before you set out.",
+      intro: [
+        "Start high above the city at Griffith Observatory, which is free to enter and open from noon on weekdays and from 10 a.m. on weekends, until 10 p.m. It closes on Mondays. The Observatory notes paid parking near the building and free parking downhill, and it says public transit is the easiest way up. For a long evening outdoors, the Hollywood Bowl on North Highland Avenue posts concerts into late November 2026, with 2027 dates already on sale; it asks you to arrive at least 90 minutes early.",
+        "Along Wilshire Boulevard, LACMA is open every day except Wednesday, with late hours until 8 PM on Fridays. You can see The Brockman Gallery: Los Angeles, 1967-1990 through January 24, 2027, and Textile Alchemy: The Art of Reiko Sudo & NUNO through March 7, 2027, and the museum says its new David Geffen Galleries are now open. A short walk away, the Academy Museum of Motion Pictures opens Wednesday to Monday, 10am-6pm. Its East Rolex Gallery on Level 3 is closed until December 12.",
+        "Downtown, The Broad offers free general admission, Tuesday to Sunday, with Thursday opening until 8 pm; you should reserve a timed ticket and book the Kusama Infinity Mirrored Room in advance. Grand Central Market on South Broadway is open 8AM-9PM daily, though vendor hours vary. Nearby, the Central Library on West 5th Street runs docent-led art and architecture tours, and The Last Bookstore on South Spring Street hosts regular evening events. Philippe The Original on North Alameda Street is open daily from 6 am to 10 pm.",
+        "For food, Huckleberry Café in Santa Monica serves every day from 7:00am to 3:00pm, and République on La Brea runs its café and bakery daily from 8am, with dinner Tuesday to Saturday. Bestia and Bavel in the Arts District both serve from 5pm nightly and take OpenTable bookings. Musso & Frank Grill, cooking in Hollywood since 1919, opens Tuesday to Sunday. Finish at Thunderbolt on West Temple Street, which closes on Tuesdays and takes reservations for up to 9 guests."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair free Griffith Observatory with LACMA and a dinner at Bestia or Musso & Frank Grill, avoiding Mondays and Wednesdays."
+        ],
+        [
+          "A slower morning",
+          "Walk in for breakfast at Great White in Venice or Huckleberry Café in Santa Monica, then browse The Last Bookstore downtown."
+        ],
+        [
+          "Before booking",
+          "Reserve a timed slot at The Broad, buy Hollywood Bowl parking in advance, and book Bestia or Bavel through OpenTable."
+        ]
+      ],
+      trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

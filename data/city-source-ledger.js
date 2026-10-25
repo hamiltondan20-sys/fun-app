@@ -5,6 +5,406 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Los Angeles, United States": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-25",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The Getty Center, California Science Center, Sqirl, Joan's on Third, Intelligentsia Silver Lake, The Huntington, Petersen Automotive Museum, Go Get Em Tiger, Hauser & Wirth and several others could not be read (403, 429 rate limits, certificate errors, 404s or empty pages) and are left out; a fetch failure is not evidence of closure. The Museum at La Brea Tar Pits reports it is temporarily closed for construction. Hours were not published or readable for the Hollywood Bowl, Santa Monica Pier, The Last Bookstore, Employees Only LA and The Roger Room (hours shown only as an image). Courage Bagels shows conflicting hours (Thursday-Monday versus a 'weekends only' banner). Several confirmed sites (Bestia, Bavel, Gjelina, Musso & Frank Grill, Santa Monica Pier, Employees Only LA, The Roger Room, Thunderbolt) carry no dated 2026 content and rest on live booking links and posted hours. The Santa Monica Pier address is the Pier Corporation's office on the pier.",
+    "sourceUrls": [
+      "docs/content-research/los-angeles-2026-10-25.md",
+      "docs/content-research/los-angeles-2026-10-25.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Santa Monica",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (a city); Santa Monica Pier confirmed instead"
+      },
+      {
+        "name": "The Getty Center",
+        "url": "https://www.getty.edu/visit/center/",
+        "checkedOn": "2026-10-25",
+        "reason": "official page returned no readable content (title only, 68 characters) on two URLs"
+      },
+      {
+        "name": "California Science Center",
+        "url": "https://californiasciencecenter.org/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 403 Forbidden"
+      },
+      {
+        "name": "Sqirl",
+        "url": "https://www.sqirlla.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests on three attempts"
+      },
+      {
+        "name": "Joan's on Third",
+        "url": "https://joansonthird.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests on three attempts"
+      },
+      {
+        "name": "Intelligentsia Silver Lake",
+        "url": "https://www.intelligentsia.com/pages/silver-lake-coffeebar",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests on three attempts"
+      },
+      {
+        "name": "Maru Coffee",
+        "url": "https://www.marucoffee.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "homepage names locations but gives no addresses or hours; locations pages returned 404 / 429"
+      },
+      {
+        "name": "Clark Street",
+        "url": "https://www.clarkstreetbread.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site gives no street addresses or hours; locations page 404"
+      },
+      {
+        "name": "Mariscos Jalisco",
+        "checkedOn": "2026-10-25",
+        "reason": "no official website identified; not checked"
+      },
+      {
+        "name": "Venice Canals",
+        "checkedOn": "2026-10-25",
+        "reason": "public neighbourhood with no single operator website; not checked"
+      },
+      {
+        "name": "Concert at the Hollywood Bowl",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place; Hollywood Bowl confirmed instead"
+      },
+      {
+        "name": "LACMA after dark",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place; LACMA confirmed instead"
+      },
+      {
+        "name": "Griffith Park views",
+        "url": "https://www.laparks.org/griffithpark",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place; laparks.org Griffith Park page returned HTTP 403"
+      },
+      {
+        "name": "Beach morning in Santa Monica",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Taco crawl in East LA or the Arts District",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private studio tour",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset canyon-to-coast driver",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "High-end tasting-menu dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Malibu sunset dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Rooftop drinks in West Hollywood",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Getty and long lunch day",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee in Silver Lake",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Museum morning",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Beach walk and food-truck stop",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Hollywood sign views",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "One museum and one great dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "La Brea Tar Pits",
+        "url": "https://tarpits.org/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site: \"The Museum at La Brea Tar Pits is temporarily closed for construction\" with no reopening date"
+      },
+      {
+        "name": "The Huntington",
+        "url": "https://www.huntington.org/visit",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests on two attempts"
+      },
+      {
+        "name": "Petersen Automotive Museum",
+        "url": "https://www.petersen.org/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests on two attempts"
+      },
+      {
+        "name": "Go Get Em Tiger",
+        "url": "https://gget.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests on two attempts"
+      },
+      {
+        "name": "Hauser & Wirth Los Angeles",
+        "url": "https://www.hauserwirth.com/locations/hauser-wirth-los-angeles/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests on two attempts"
+      },
+      {
+        "name": "Gjusta",
+        "url": "https://gjusta.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "certificate has expired"
+      },
+      {
+        "name": "Langer's Deli",
+        "url": "https://www.langersdeli.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "homepage text gives no address or hours (only a Yom Kippur closure banner); hours page 404"
+      },
+      {
+        "name": "The Original Farmers Market",
+        "url": "https://farmersmarketla.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "page returned only a heading; nothing readable"
+      },
+      {
+        "name": "Union Station",
+        "url": "https://unionstationla.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site shows 2026 events but no street address"
+      },
+      {
+        "name": "El Pueblo de Los Angeles (Olvera Street)",
+        "url": "https://elpueblo.lacity.gov/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 403 Forbidden"
+      },
+      {
+        "name": "Proof Bakery",
+        "url": "https://www.proofbakeryla.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "page returned no readable content"
+      },
+      {
+        "name": "Kismet",
+        "url": "https://www.kismetrestaurant.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "domain did not resolve (ENOTFOUND)"
+      },
+      {
+        "name": "Death & Co Los Angeles",
+        "url": "https://www.deathandcompany.com/los-angeles",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 404 Not Found"
+      },
+      {
+        "name": "The Varnish",
+        "url": "https://www.thevarnishbar.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 404 Not Found"
+      },
+      {
+        "name": "Walt Disney Concert Hall",
+        "url": "https://www.laphil.com/visit/walt-disney-concert-hall",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 404 Not Found on the tried page"
+      },
+      {
+        "name": "Clifton's",
+        "url": "https://www.cliftons.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "domain shows an unrelated Sydney events company, not the LA venue"
+      }
+    ],
+    "placeSources": {
+      "Griffith Observatory": {
+        "url": "https://griffithobservatory.lacity.gov/",
+        "sourceType": "official public operator (City of Los Angeles)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Banner dated Sunday, October 25, 2026: \"open today from 10:00 a.m. to 10:00 p.m.\"; events listed for October 28 and November 2, 2026. Admission described as free; \"paid parking near the Observatory and free parking downhill.\""
+      },
+      "LACMA": {
+        "url": "https://www.lacma.org/",
+        "sourceType": "operator's own site (Los Angeles County Museum of Art)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Exhibitions including \"The Brockman Gallery: Los Angeles, 1967-1990\" (through Jan 24, 2027) and \"Textile Alchemy: The Art of Reiko Sudo & NUNO\" (through Mar 7, 2027); \"The New David Geffen Galleries Are Now Open.\""
+      },
+      "The Broad": {
+        "url": "https://www.thebroad.org/visit",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Visit page offers free general admission with recommended timed reservations and daily walk-ups; Kusama's Infinity Mirrored Room \"requires advance reservations\"; notes Hope Street closure for expansion construction."
+      },
+      "Academy Museum of Motion Pictures": {
+        "url": "https://www.academymuseum.org/en/visit",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Visit page lists 2026 notices, including East Rolex Gallery (Level 3) closed Oct 19-Dec 12; general admission $25 for adults, free for 17 and under."
+      },
+      "Natural History Museum of Los Angeles County": {
+        "url": "https://nhm.org/visit",
+        "sourceType": "official public operator (Natural History Museums of Los Angeles County)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Ticket booking live; \"Orcas: Our Shared Future\" listed as \"Now Open\" with advance reservations; L.A. County residents free 3-5 pm Monday-Friday, onsite only."
+      },
+      "Los Angeles Central Library": {
+        "url": "https://www.lapl.org/branches/central-library",
+        "sourceType": "official public operator (Los Angeles Public Library)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Events listed for 10/25/2026, including a \"Docent-led L.A. Central Library Art & Architecture Tour\" 2:00-3:00 PM."
+      },
+      "Hollywood Bowl": {
+        "url": "https://www.hollywoodbowl.com/visit/getting-here",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Upcoming events listed, e.g. Aerosmith & Friends Oct 29-Nov 01, 2026 and Steve Lacy Nov 21, 2026, with 2027 dates posted. Advises arriving \"at least 90 minutes prior\" and to \"Purchase your parking in advance.\""
+      },
+      "Santa Monica Pier": {
+        "url": "https://santamonicapier.org/",
+        "sourceType": "official operator (Santa Monica Pier Corporation)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Recurring free programs listed: history tour \"EVERY SATURDAY & SUNDAY | 10 AM\" and Locals' Night \"Every Third Thursday | SEPTEMBER - MAY.\" No 2026-dated content; footer reads 2023."
+      },
+      "Grand Central Market": {
+        "url": "https://www.grandcentralmarket.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current vendor list (e.g. Tacos Tumbras a Tomas, Go Get Em Tiger, Lucky Bird); footer \"© 2026 Grand Central Market\"; \"Hours vary vendor to vendor.\""
+      },
+      "The Last Bookstore": {
+        "url": "https://www.lastbookstorela.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "October-November 2026 events listed, including \"13 Nights After Dark\" (Oct 19-31) and Jane Fonda in conversation (Mon, Nov 9, 7-9 PM). Some events close the store to the public."
+      },
+      "Bestia": {
+        "url": "https://www.bestiala.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "OpenTable reservations live; posted hours; notes a 4% service charge removable on request. \"Closed for most major holidays.\""
+      },
+      "Bavel": {
+        "url": "https://baveldtla.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "OpenTable booking widget with time slots 5:00-11:00pm for parties of 1-8; optional 4% \"Healthy LA\" charge. No 2026-dated content (footer 2023)."
+      },
+      "Gjelina (Venice)": {
+        "url": "https://www.gjelina.com/",
+        "sourceType": "operator's own site (Gjelina Group)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Posted service hours and SevenRooms reservations for Venice; no 2026-dated content."
+      },
+      "République": {
+        "url": "https://republiquela.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Footer \"© 2026 République\"; OpenTable \"BOOK NOW\" and online bakery pre-orders; brunch \"daily from 8am to 2pm with lunch at 11.\""
+      },
+      "Musso & Frank Grill": {
+        "url": "https://www.mussoandfrank.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Renowned Service and Cuisine Since 1919\"; current menu, OpenTable reservations and posted hours. No dated 2026 content."
+      },
+      "Philippe The Original": {
+        "url": "https://www.philippes.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Open Daily 6 am - 10 pm\"; online ordering link; footer \"©Copyright Philippe The Original 2026.\""
+      },
+      "Huckleberry Café": {
+        "url": "https://www.huckleberrycafe.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Thanksgiving catering menu with \"orders closing Thursday, November 19 at 6pm\"; footer \"©2026 - Huckleberry Café.\""
+      },
+      "Great White (Venice)": {
+        "url": "https://www.greatwhite.cafe/locations",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Location page with hours and policy: \"Walk-ins only 8am - 4pm. Reservations from 4pm onwards\"; homepage footer \"©2026 Great White.\""
+      },
+      "Bub and Grandma's": {
+        "url": "https://www.bubandgrandmas.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "BG Nites menu dated 2026/10 and October 2026 calendar; \"On Sunday nights, we feature live jazz\" with sets at 6:15pm and 7:30pm."
+      },
+      "Porto's Bakery (Glendale)": {
+        "url": "https://www.portosbakery.com/locations",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Footer ©2026; Halloween (10/31) hours 6:30 AM-5:00 PM; online pickup slots \"disappear as they hit daily capacity.\""
+      },
+      "Courage Bagels": {
+        "url": "https://www.couragebagels.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"orders taken at the walk up window Thursday - Monday 7am - 2pm!\"; a banner also says \"softly open\" \"weekends only!\", which conflicts. No dated 2026 content."
+      },
+      "Verve Coffee Roasters (West 3rd Street)": {
+        "url": "https://www.vervecoffee.com/pages/locations",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Listed as an open LA cafe with hours on the 2026 locations page (footer \"© 2026 VERVE COFFEE ROASTERS\"); Spring Street branch marked \"Permanently Closed.\""
+      },
+      "Thunderbolt": {
+        "url": "https://www.thunderboltla.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Posted weekly hours and Resy booking: \"Reservations are available for parties of up to 9 guests\"; larger groups email events."
+      },
+      "Employees Only LA": {
+        "url": "https://www.employeesonlyla.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online reservations through OpenTable and a reservation form. No dated 2026 content."
+      },
+      "The Roger Room": {
+        "url": "https://www.therogerroom.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Reservation Request\" by email; hours shown only as an image. No dated 2026 content."
+      }
+    }
+  },
   "Mexico City, Mexico": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-25",

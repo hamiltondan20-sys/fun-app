@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 32.
-- Classifier-passed (published, not fully documented in that format): 159.
+- Source-verified (complete dated evidence format): 33.
+- Classifier-passed (published, not fully documented in that format): 158.
 - Held back: 293.
 - Published destinations: 191; country hubs: 19; sitemap URLs: 219.
 
@@ -281,7 +281,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Liverpool, United Kingdom | liverpool | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Lombok, Indonesia | lombok | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
 | London, United Kingdom | london | source-verified | source-checked | 30 | 43 | 15 | 15 | None |
-| Los Angeles, United States | los-angeles | classifier-passed | not-reviewed | 0 | 33 | 15 | 14 | None |
+| Los Angeles, United States | los-angeles | source-verified | source-checked | 25 | 53 | 15 | 15 | None |
 | Los Cabos, Mexico | los-cabos | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Lucerne, Switzerland | lucerne | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
 | Luxor, Egypt | luxor | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |

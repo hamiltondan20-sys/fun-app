@@ -1,0 +1,639 @@
+{
+  "city": "Los Angeles, United States",
+  "checkedOn": "2026-10-25",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Griffith Observatory",
+      "kind": "landmark",
+      "url": "https://griffithobservatory.lacity.gov/",
+      "sourceType": "official public operator (City of Los Angeles)",
+      "address": "2800 East Observatory Road, Los Angeles, CA 90027",
+      "operatingEvidence": "Banner dated Sunday, October 25, 2026: \"open today from 10:00 a.m. to 10:00 p.m.\"; events listed for October 28 and November 2, 2026. Admission described as free; \"paid parking near the Observatory and free parking downhill.\"",
+      "hours": "Tuesday-Friday noon-10:00 p.m.; Saturday-Sunday 10:00 a.m.-10:00 p.m.; closed Mondays",
+      "confidence": "high"
+    },
+    {
+      "name": "LACMA",
+      "kind": "museum",
+      "url": "https://www.lacma.org/",
+      "sourceType": "operator's own site (Los Angeles County Museum of Art)",
+      "address": "5905 Wilshire Blvd., Los Angeles, CA 90036",
+      "operatingEvidence": "Exhibitions including \"The Brockman Gallery: Los Angeles, 1967-1990\" (through Jan 24, 2027) and \"Textile Alchemy: The Art of Reiko Sudo & NUNO\" (through Mar 7, 2027); \"The New David Geffen Galleries Are Now Open.\"",
+      "hours": "Mon-Tue 11 AM-6 PM; Wed closed; Thu 11 AM-6 PM; Fri 11 AM-8 PM; Sat-Sun 10 AM-7 PM",
+      "confidence": "high"
+    },
+    {
+      "name": "The Broad",
+      "kind": "museum",
+      "url": "https://www.thebroad.org/visit",
+      "sourceType": "operator's own site",
+      "address": "221 S. Grand Avenue, Los Angeles, CA 90012",
+      "operatingEvidence": "Visit page offers free general admission with recommended timed reservations and daily walk-ups; Kusama's Infinity Mirrored Room \"requires advance reservations\"; notes Hope Street closure for expansion construction.",
+      "hours": "Tue, Wed, Fri 11 am-5 pm; Thu 11 am-8 pm; Sat-Sun 10 am-6 pm; closed Mondays, Thanksgiving and Christmas Day",
+      "confidence": "medium"
+    },
+    {
+      "name": "Academy Museum of Motion Pictures",
+      "kind": "museum",
+      "url": "https://www.academymuseum.org/en/visit",
+      "sourceType": "operator's own site",
+      "address": "6067 Wilshire Boulevard, Los Angeles, CA 90036",
+      "operatingEvidence": "Visit page lists 2026 notices, including East Rolex Gallery (Level 3) closed Oct 19-Dec 12; general admission $25 for adults, free for 17 and under.",
+      "hours": "Wednesday-Monday 10am-6pm; closed Tuesdays",
+      "confidence": "high"
+    },
+    {
+      "name": "Natural History Museum of Los Angeles County",
+      "kind": "museum",
+      "url": "https://nhm.org/visit",
+      "sourceType": "official public operator (Natural History Museums of Los Angeles County)",
+      "address": "900 Exposition Blvd., Los Angeles, CA 90007",
+      "operatingEvidence": "Ticket booking live; \"Orcas: Our Shared Future\" listed as \"Now Open\" with advance reservations; L.A. County residents free 3-5 pm Monday-Friday, onsite only.",
+      "hours": "Daily 9:30 am-5 pm; closed the first Tuesday of every month and select holidays",
+      "confidence": "medium"
+    },
+    {
+      "name": "Los Angeles Central Library",
+      "kind": "landmark",
+      "url": "https://www.lapl.org/branches/central-library",
+      "sourceType": "official public operator (Los Angeles Public Library)",
+      "address": "630 W. 5th Street, Los Angeles, CA 90071",
+      "operatingEvidence": "Events listed for 10/25/2026, including a \"Docent-led L.A. Central Library Art & Architecture Tour\" 2:00-3:00 PM.",
+      "hours": "Sunday 1:00-5:00 pm; Monday-Thursday 10:00 am-8:00 pm; Friday-Saturday 9:30 am-5:30 pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Hollywood Bowl",
+      "kind": "landmark",
+      "url": "https://www.hollywoodbowl.com/visit/getting-here",
+      "sourceType": "operator's own site",
+      "address": "2301 N Highland Ave Los Angeles, CA 90068",
+      "operatingEvidence": "Upcoming events listed, e.g. Aerosmith & Friends Oct 29-Nov 01, 2026 and Steve Lacy Nov 21, 2026, with 2027 dates posted. Advises arriving \"at least 90 minutes prior\" and to \"Purchase your parking in advance.\"",
+      "hours": "not published (event-based)",
+      "confidence": "high"
+    },
+    {
+      "name": "Santa Monica Pier",
+      "kind": "landmark",
+      "url": "https://santamonicapier.org/",
+      "sourceType": "official operator (Santa Monica Pier Corporation)",
+      "address": "200 Santa Monica Pier, Suite A, Santa Monica, CA 90401 (Pier Corporation office)",
+      "operatingEvidence": "Recurring free programs listed: history tour \"EVERY SATURDAY & SUNDAY | 10 AM\" and Locals' Night \"Every Third Thursday | SEPTEMBER - MAY.\" No 2026-dated content; footer reads 2023.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Grand Central Market",
+      "kind": "market",
+      "url": "https://www.grandcentralmarket.com/",
+      "sourceType": "operator's own site",
+      "address": "317 South Broadway, Los Angeles, CA 90013",
+      "operatingEvidence": "Current vendor list (e.g. Tacos Tumbras a Tomas, Go Get Em Tiger, Lucky Bird); footer \"© 2026 Grand Central Market\"; \"Hours vary vendor to vendor.\"",
+      "hours": "Monday-Sunday 8AM-9PM",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Last Bookstore",
+      "kind": "landmark",
+      "url": "https://www.lastbookstorela.com/",
+      "sourceType": "operator's own site",
+      "address": "453 South Spring Street, Los Angeles, CA 90013",
+      "operatingEvidence": "October-November 2026 events listed, including \"13 Nights After Dark\" (Oct 19-31) and Jane Fonda in conversation (Mon, Nov 9, 7-9 PM). Some events close the store to the public.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bestia",
+      "kind": "meal",
+      "url": "https://www.bestiala.com/",
+      "sourceType": "operator's own site",
+      "address": "2121 E 7th Pl, Los Angeles, CA 90021",
+      "operatingEvidence": "OpenTable reservations live; posted hours; notes a 4% service charge removable on request. \"Closed for most major holidays.\"",
+      "hours": "Monday-Sunday 5pm-11pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bavel",
+      "kind": "meal",
+      "url": "https://baveldtla.com/",
+      "sourceType": "operator's own site",
+      "address": "500 Mateo St, Los Angeles, CA 90013",
+      "operatingEvidence": "OpenTable booking widget with time slots 5:00-11:00pm for parties of 1-8; optional 4% \"Healthy LA\" charge. No 2026-dated content (footer 2023).",
+      "hours": "Monday-Sunday 5pm-11pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Gjelina (Venice)",
+      "kind": "meal",
+      "url": "https://www.gjelina.com/",
+      "sourceType": "operator's own site (Gjelina Group)",
+      "address": "1429 Abbot Kinney Blvd., Venice CA 90291",
+      "operatingEvidence": "Posted service hours and SevenRooms reservations for Venice; no 2026-dated content.",
+      "hours": "Breakfast Mon-Fri 9:00-10:30am; Lunch Mon-Fri 11:30am-2:30pm; Brunch Sat-Sun 9:00am-2:30pm; Afternoon daily 2:30-4:30pm; Dinner daily 5:00-10:30pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "République",
+      "kind": "meal",
+      "url": "https://republiquela.com/",
+      "sourceType": "operator's own site",
+      "address": "624 S La Brea Ave, Los Angeles, CA 90036",
+      "operatingEvidence": "Footer \"© 2026 République\"; OpenTable \"BOOK NOW\" and online bakery pre-orders; brunch \"daily from 8am to 2pm with lunch at 11.\"",
+      "hours": "Cafe/bakery open daily 8am-2pm; dinner Tue-Fri 5:30pm-10pm, Sat 5pm-10pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Musso & Frank Grill",
+      "kind": "meal",
+      "url": "https://www.mussoandfrank.com/",
+      "sourceType": "operator's own site",
+      "address": "6667 Hollywood Blvd., Hollywood, CA 90028",
+      "operatingEvidence": "\"Renowned Service and Cuisine Since 1919\"; current menu, OpenTable reservations and posted hours. No dated 2026 content.",
+      "hours": "Tuesday-Saturday 5:00pm-11:00pm; Sunday 4:00pm-10:00pm; Monday not listed",
+      "confidence": "medium"
+    },
+    {
+      "name": "Philippe The Original",
+      "kind": "meal",
+      "url": "https://www.philippes.com/",
+      "sourceType": "operator's own site",
+      "address": "1001 N Alameda St, Los Angeles, CA 90012",
+      "operatingEvidence": "\"Open Daily 6 am - 10 pm\"; online ordering link; footer \"©Copyright Philippe The Original 2026.\"",
+      "hours": "Open daily 6 am-10 pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Huckleberry Café",
+      "kind": "cafe",
+      "url": "https://www.huckleberrycafe.com/",
+      "sourceType": "operator's own site",
+      "address": "1014 Wilshire Blvd, Santa Monica CA 90401",
+      "operatingEvidence": "Thanksgiving catering menu with \"orders closing Thursday, November 19 at 6pm\"; footer \"©2026 - Huckleberry Café.\"",
+      "hours": "Every day 7:00am-3:00pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Great White (Venice)",
+      "kind": "cafe",
+      "url": "https://www.greatwhite.cafe/locations",
+      "sourceType": "operator's own site",
+      "address": "1604 Pacific Ave, Venice, California",
+      "operatingEvidence": "Location page with hours and policy: \"Walk-ins only 8am - 4pm. Reservations from 4pm onwards\"; homepage footer \"©2026 Great White.\"",
+      "hours": "Mon-Sun 8am-10pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bub and Grandma's",
+      "kind": "bakery",
+      "url": "https://www.bubandgrandmas.com/",
+      "sourceType": "operator's own site",
+      "address": "3507 Eagle Rock Boulevard",
+      "operatingEvidence": "BG Nites menu dated 2026/10 and October 2026 calendar; \"On Sunday nights, we feature live jazz\" with sets at 6:15pm and 7:30pm.",
+      "hours": "8a-3p daily; 5p-10p Sat/Sun",
+      "confidence": "high"
+    },
+    {
+      "name": "Porto's Bakery (Glendale)",
+      "kind": "bakery",
+      "url": "https://www.portosbakery.com/locations",
+      "sourceType": "operator's own site",
+      "address": "315 N. Brand Blvd, Glendale, CA 91203",
+      "operatingEvidence": "Footer ©2026; Halloween (10/31) hours 6:30 AM-5:00 PM; online pickup slots \"disappear as they hit daily capacity.\"",
+      "hours": "Dine-in daily 6:30 AM-8:30 PM; online pickup 7:00 AM-7:30 PM (order cutoff 6:00 PM)",
+      "confidence": "high"
+    },
+    {
+      "name": "Courage Bagels",
+      "kind": "bakery",
+      "url": "https://www.couragebagels.com/",
+      "sourceType": "operator's own site",
+      "address": "777 N Virgil Ave. Los Angeles, CA 90029",
+      "operatingEvidence": "\"orders taken at the walk up window Thursday - Monday 7am - 2pm!\"; a banner also says \"softly open\" \"weekends only!\", which conflicts. No dated 2026 content.",
+      "hours": "Thursday-Monday 7am-2pm (conflicting 'weekends only' banner)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Verve Coffee Roasters (West 3rd Street)",
+      "kind": "cafe",
+      "url": "https://www.vervecoffee.com/pages/locations",
+      "sourceType": "operator's own site",
+      "address": "8051 W. 3rd St, Los Angeles, CA 90048",
+      "operatingEvidence": "Listed as an open LA cafe with hours on the 2026 locations page (footer \"© 2026 VERVE COFFEE ROASTERS\"); Spring Street branch marked \"Permanently Closed.\"",
+      "hours": "Everyday 7am-6pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Thunderbolt",
+      "kind": "bar",
+      "url": "https://www.thunderboltla.com/",
+      "sourceType": "operator's own site",
+      "address": "1263 W Temple St, Los Angeles, CA 90026",
+      "operatingEvidence": "Posted weekly hours and Resy booking: \"Reservations are available for parties of up to 9 guests\"; larger groups email events.",
+      "hours": "Mon 5p-12a; Tue closed; Wed-Thu 5p-12a; Fri-Sat 5p-1a; Sun 2p-12a",
+      "confidence": "medium"
+    },
+    {
+      "name": "Employees Only LA",
+      "kind": "bar",
+      "url": "https://www.employeesonlyla.com/",
+      "sourceType": "operator's own site",
+      "address": "7953 Santa Monica Blvd, West Hollywood, CA, 90046",
+      "operatingEvidence": "Online reservations through OpenTable and a reservation form. No dated 2026 content.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Roger Room",
+      "kind": "bar",
+      "url": "https://www.therogerroom.com/",
+      "sourceType": "operator's own site",
+      "address": "370 N. La Cienega Boulevard West Hollywood, CA 90048",
+      "operatingEvidence": "\"Reservation Request\" by email; hours shown only as an image. No dated 2026 content.",
+      "hours": "not published (image not readable)",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Santa Monica",
+      "reason": "generic, not a place (a city); Santa Monica Pier confirmed instead",
+      "url": ""
+    },
+    {
+      "name": "The Getty Center",
+      "reason": "official page returned no readable content (title only, 68 characters) on two URLs",
+      "url": "https://www.getty.edu/visit/center/"
+    },
+    {
+      "name": "California Science Center",
+      "reason": "HTTP 403 Forbidden",
+      "url": "https://californiasciencecenter.org/"
+    },
+    {
+      "name": "Sqirl",
+      "reason": "HTTP 429 Too Many Requests on three attempts",
+      "url": "https://www.sqirlla.com/"
+    },
+    {
+      "name": "Joan's on Third",
+      "reason": "HTTP 429 Too Many Requests on three attempts",
+      "url": "https://joansonthird.com/"
+    },
+    {
+      "name": "Intelligentsia Silver Lake",
+      "reason": "HTTP 429 Too Many Requests on three attempts",
+      "url": "https://www.intelligentsia.com/pages/silver-lake-coffeebar"
+    },
+    {
+      "name": "Maru Coffee",
+      "reason": "homepage names locations but gives no addresses or hours; locations pages returned 404 / 429",
+      "url": "https://www.marucoffee.com/"
+    },
+    {
+      "name": "Clark Street",
+      "reason": "official site gives no street addresses or hours; locations page 404",
+      "url": "https://www.clarkstreetbread.com/"
+    },
+    {
+      "name": "Mariscos Jalisco",
+      "reason": "no official website identified; not checked",
+      "url": ""
+    },
+    {
+      "name": "Venice Canals",
+      "reason": "public neighbourhood with no single operator website; not checked",
+      "url": ""
+    },
+    {
+      "name": "Concert at the Hollywood Bowl",
+      "reason": "generic, not a place; Hollywood Bowl confirmed instead",
+      "url": ""
+    },
+    {
+      "name": "LACMA after dark",
+      "reason": "generic, not a place; LACMA confirmed instead",
+      "url": ""
+    },
+    {
+      "name": "Griffith Park views",
+      "reason": "generic, not a place; laparks.org Griffith Park page returned HTTP 403",
+      "url": "https://www.laparks.org/griffithpark"
+    },
+    {
+      "name": "Beach morning in Santa Monica",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Taco crawl in East LA or the Arts District",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private studio tour",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset canyon-to-coast driver",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "High-end tasting-menu dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Malibu sunset dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Rooftop drinks in West Hollywood",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Getty and long lunch day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee in Silver Lake",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Museum morning",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Beach walk and food-truck stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Hollywood sign views",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "One museum and one great dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "La Brea Tar Pits",
+      "reason": "official site: \"The Museum at La Brea Tar Pits is temporarily closed for construction\" with no reopening date",
+      "url": "https://tarpits.org/"
+    },
+    {
+      "name": "The Huntington",
+      "reason": "HTTP 429 Too Many Requests on two attempts",
+      "url": "https://www.huntington.org/visit"
+    },
+    {
+      "name": "Petersen Automotive Museum",
+      "reason": "HTTP 429 Too Many Requests on two attempts",
+      "url": "https://www.petersen.org/"
+    },
+    {
+      "name": "Go Get Em Tiger",
+      "reason": "HTTP 429 Too Many Requests on two attempts",
+      "url": "https://gget.com/"
+    },
+    {
+      "name": "Hauser & Wirth Los Angeles",
+      "reason": "HTTP 429 Too Many Requests on two attempts",
+      "url": "https://www.hauserwirth.com/locations/hauser-wirth-los-angeles/"
+    },
+    {
+      "name": "Gjusta",
+      "reason": "certificate has expired",
+      "url": "https://gjusta.com/"
+    },
+    {
+      "name": "Langer's Deli",
+      "reason": "homepage text gives no address or hours (only a Yom Kippur closure banner); hours page 404",
+      "url": "https://www.langersdeli.com/"
+    },
+    {
+      "name": "The Original Farmers Market",
+      "reason": "page returned only a heading; nothing readable",
+      "url": "https://farmersmarketla.com/"
+    },
+    {
+      "name": "Union Station",
+      "reason": "official site shows 2026 events but no street address",
+      "url": "https://unionstationla.com/"
+    },
+    {
+      "name": "El Pueblo de Los Angeles (Olvera Street)",
+      "reason": "HTTP 403 Forbidden",
+      "url": "https://elpueblo.lacity.gov/"
+    },
+    {
+      "name": "Proof Bakery",
+      "reason": "page returned no readable content",
+      "url": "https://www.proofbakeryla.com/"
+    },
+    {
+      "name": "Kismet",
+      "reason": "domain did not resolve (ENOTFOUND)",
+      "url": "https://www.kismetrestaurant.com/"
+    },
+    {
+      "name": "Death & Co Los Angeles",
+      "reason": "HTTP 404 Not Found",
+      "url": "https://www.deathandcompany.com/los-angeles"
+    },
+    {
+      "name": "The Varnish",
+      "reason": "HTTP 404 Not Found",
+      "url": "https://www.thevarnishbar.com/"
+    },
+    {
+      "name": "Walt Disney Concert Hall",
+      "reason": "HTTP 404 Not Found on the tried page",
+      "url": "https://www.laphil.com/visit/walt-disney-concert-hall"
+    },
+    {
+      "name": "Clifton's",
+      "reason": "domain shows an unrelated Sydney events company, not the LA venue",
+      "url": "https://www.cliftons.com/"
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Griffith Observatory",
+        "LACMA",
+        "The Broad",
+        "Santa Monica Pier"
+      ],
+      "bestFirstTimers": [
+        "Griffith Observatory",
+        "Santa Monica Pier",
+        "Grand Central Market",
+        "Academy Museum of Motion Pictures"
+      ],
+      "bestRestaurants": [
+        "Bestia",
+        "Bavel",
+        "Gjelina (Venice)",
+        "République"
+      ],
+      "bestBudget": [
+        "Griffith Observatory",
+        "The Broad",
+        "Philippe The Original",
+        "Grand Central Market"
+      ],
+      "bestLuxury": [
+        "Bestia",
+        "Musso & Frank Grill",
+        "Hollywood Bowl"
+      ],
+      "bestCouples": [
+        "Hollywood Bowl",
+        "Musso & Frank Grill",
+        "Gjelina (Venice)",
+        "Thunderbolt"
+      ],
+      "bestKids": [
+        "Natural History Museum of Los Angeles County",
+        "Griffith Observatory",
+        "Santa Monica Pier"
+      ],
+      "bestSolo": [
+        "Los Angeles Central Library",
+        "The Last Bookstore",
+        "LACMA",
+        "Verve Coffee Roasters (West 3rd Street)"
+      ],
+      "bestUnique": [
+        "Hollywood Bowl",
+        "Los Angeles Central Library",
+        "The Last Bookstore",
+        "Academy Museum of Motion Pictures"
+      ],
+      "bestBreakfast": [
+        "Huckleberry Café",
+        "République",
+        "Great White (Venice)",
+        "Bub and Grandma's"
+      ],
+      "bestLunch": [
+        "Grand Central Market",
+        "Philippe The Original",
+        "Bub and Grandma's",
+        "Gjelina (Venice)"
+      ],
+      "bestDinner": [
+        "Bestia",
+        "Bavel",
+        "Musso & Frank Grill",
+        "République"
+      ],
+      "bestCocktails": [
+        "Thunderbolt",
+        "Employees Only LA",
+        "The Roger Room"
+      ],
+      "bestBakeries": [
+        "Porto's Bakery (Glendale)",
+        "République",
+        "Courage Bagels",
+        "Bub and Grandma's"
+      ],
+      "bestCoffee": [
+        "Verve Coffee Roasters (West 3rd Street)",
+        "Huckleberry Café",
+        "Great White (Venice)"
+      ]
+    },
+    "queries": {
+      "Griffith Observatory": "Griffith Observatory 2800 East Observatory Road Los Angeles",
+      "LACMA": "LACMA 5905 Wilshire Blvd Los Angeles",
+      "The Broad": "The Broad 221 S Grand Avenue Los Angeles",
+      "Academy Museum of Motion Pictures": "Academy Museum of Motion Pictures 6067 Wilshire Boulevard Los Angeles",
+      "Natural History Museum of Los Angeles County": "Natural History Museum of Los Angeles County 900 Exposition Blvd Los Angeles",
+      "Los Angeles Central Library": "Los Angeles Central Library 630 W 5th Street Los Angeles",
+      "Hollywood Bowl": "Hollywood Bowl 2301 N Highland Ave Los Angeles",
+      "Santa Monica Pier": "Santa Monica Pier 200 Santa Monica Pier Santa Monica",
+      "Grand Central Market": "Grand Central Market 317 South Broadway Los Angeles",
+      "The Last Bookstore": "The Last Bookstore 453 South Spring Street Los Angeles",
+      "Bestia": "Bestia 2121 E 7th Pl Los Angeles",
+      "Bavel": "Bavel 500 Mateo St Los Angeles",
+      "Gjelina (Venice)": "Gjelina 1429 Abbot Kinney Blvd Venice Los Angeles",
+      "République": "République 624 S La Brea Ave Los Angeles",
+      "Musso & Frank Grill": "Musso & Frank Grill 6667 Hollywood Blvd Los Angeles",
+      "Philippe The Original": "Philippe The Original 1001 N Alameda St Los Angeles",
+      "Huckleberry Café": "Huckleberry Cafe 1014 Wilshire Blvd Santa Monica",
+      "Great White (Venice)": "Great White 1604 Pacific Ave Venice Los Angeles",
+      "Bub and Grandma's": "Bub and Grandma's 3507 Eagle Rock Boulevard Los Angeles",
+      "Porto's Bakery (Glendale)": "Porto's Bakery 315 N Brand Blvd Glendale",
+      "Courage Bagels": "Courage Bagels 777 N Virgil Ave Los Angeles",
+      "Verve Coffee Roasters (West 3rd Street)": "Verve Coffee Roasters 8051 W 3rd St Los Angeles",
+      "Thunderbolt": "Thunderbolt 1263 W Temple St Los Angeles",
+      "Employees Only LA": "Employees Only 7953 Santa Monica Blvd West Hollywood",
+      "The Roger Room": "The Roger Room 370 N La Cienega Boulevard West Hollywood"
+    },
+    "summary": "Observatory, museums, the Hollywood Bowl and the Santa Monica Pier, with breakfast cafés, bakeries, dinners and cocktail bars checked against their own websites.",
+    "highlights": [
+      "Griffith Observatory",
+      "LACMA",
+      "Hollywood Bowl",
+      "The Broad"
+    ],
+    "tip": "Plan museum days around closing days: Griffith Observatory shuts on Mondays, The Broad on Mondays, LACMA on Wednesdays and the Academy Museum on Tuesdays.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mon / Tue / Wed",
+        "copy": "Griffith Observatory and The Broad close on Mondays, the Academy Museum on Tuesdays and LACMA on Wednesdays. The Natural History Museum closes on the first Tuesday of every month."
+      },
+      {
+        "label": "Tickets",
+        "value": "Free entry, book ahead",
+        "copy": "Griffith Observatory is free, and The Broad's general admission is free, with timed reservations recommended and walk-ups daily. The Broad's Infinity Mirrored Room requires an advance reservation."
+      },
+      {
+        "label": "Walk-ins",
+        "value": "Check the hour",
+        "copy": "Great White in Venice is walk-ins only from 8am to 4pm, with reservations from 4pm. Thunderbolt takes reservations for up to 9 guests and asks larger groups to email."
+      },
+      {
+        "label": "Concert rules",
+        "value": "Arrive 90 minutes early",
+        "copy": "The Hollywood Bowl asks you to arrive at least 90 minutes before your performance and to buy parking in advance. It also asks you not to park in the surrounding neighborhoods."
+      }
+    ],
+    "dek": "Group your days by area, Wilshire museums, downtown, and the coast, and check each venue's closing day before you set out.",
+    "intro": [
+      "Start high above the city at Griffith Observatory, which is free to enter and open from noon on weekdays and from 10 a.m. on weekends, until 10 p.m. It closes on Mondays. The Observatory notes paid parking near the building and free parking downhill, and it says public transit is the easiest way up. For a long evening outdoors, the Hollywood Bowl on North Highland Avenue posts concerts into late November 2026, with 2027 dates already on sale; it asks you to arrive at least 90 minutes early.",
+      "Along Wilshire Boulevard, LACMA is open every day except Wednesday, with late hours until 8 PM on Fridays. You can see The Brockman Gallery: Los Angeles, 1967-1990 through January 24, 2027, and Textile Alchemy: The Art of Reiko Sudo & NUNO through March 7, 2027, and the museum says its new David Geffen Galleries are now open. A short walk away, the Academy Museum of Motion Pictures opens Wednesday to Monday, 10am-6pm. Its East Rolex Gallery on Level 3 is closed until December 12.",
+      "Downtown, The Broad offers free general admission, Tuesday to Sunday, with Thursday opening until 8 pm; you should reserve a timed ticket and book the Kusama Infinity Mirrored Room in advance. Grand Central Market on South Broadway is open 8AM-9PM daily, though vendor hours vary. Nearby, the Central Library on West 5th Street runs docent-led art and architecture tours, and The Last Bookstore on South Spring Street hosts regular evening events. Philippe The Original on North Alameda Street is open daily from 6 am to 10 pm.",
+      "For food, Huckleberry Café in Santa Monica serves every day from 7:00am to 3:00pm, and République on La Brea runs its café and bakery daily from 8am, with dinner Tuesday to Saturday. Bestia and Bavel in the Arts District both serve from 5pm nightly and take OpenTable bookings. Musso & Frank Grill, cooking in Hollywood since 1919, opens Tuesday to Sunday. Finish at Thunderbolt on West Temple Street, which closes on Tuesdays and takes reservations for up to 9 guests."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair free Griffith Observatory with LACMA and a dinner at Bestia or Musso & Frank Grill, avoiding Mondays and Wednesdays."
+      ],
+      [
+        "A slower morning",
+        "Walk in for breakfast at Great White in Venice or Huckleberry Café in Santa Monica, then browse The Last Bookstore downtown."
+      ],
+      [
+        "Before booking",
+        "Reserve a timed slot at The Broad, buy Hollywood Bowl parking in advance, and book Bestia or Bavel through OpenTable."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The Getty Center, California Science Center, Sqirl, Joan's on Third, Intelligentsia Silver Lake, The Huntington, Petersen Automotive Museum, Go Get Em Tiger, Hauser & Wirth and several others could not be read (403, 429 rate limits, certificate errors, 404s or empty pages) and are left out; a fetch failure is not evidence of closure. The Museum at La Brea Tar Pits reports it is temporarily closed for construction. Hours were not published or readable for the Hollywood Bowl, Santa Monica Pier, The Last Bookstore, Employees Only LA and The Roger Room (hours shown only as an image). Courage Bagels shows conflicting hours (Thursday-Monday versus a 'weekends only' banner). Several confirmed sites (Bestia, Bavel, Gjelina, Musso & Frank Grill, Santa Monica Pier, Employees Only LA, The Roger Room, Thunderbolt) carry no dated 2026 content and rest on live booking links and posted hours. The Santa Monica Pier address is the Pier Corporation's office on the pier.",
+  "injectionLikeText": []
+}
