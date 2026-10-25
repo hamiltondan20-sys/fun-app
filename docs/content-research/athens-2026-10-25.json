@@ -1,0 +1,674 @@
+{
+  "city": "Athens, Greece",
+  "checkedOn": "2026-10-25",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Acropolis Museum",
+      "kind": "museum",
+      "url": "https://www.theacropolismuseum.gr/en",
+      "sourceType": "operator's own site",
+      "address": "Dionysiou Areopagitou 15, 11742 Athens",
+      "operatingEvidence": "Lists exhibition \"The Parthenon and Byron\" running \"26 April 2024 - 31 December 2026\" and a family programme \"01 November 2026 - 28 March 2027\"; online TICKETS link.",
+      "hours": "not published on the page read (plan-your-visit page returned HTTP 500)",
+      "confidence": "high"
+    },
+    {
+      "name": "National Archaeological Museum",
+      "kind": "museum",
+      "url": "https://www.namuseum.gr/en/",
+      "sourceType": "official public operator (Hellenic Ministry of Culture museum)",
+      "address": "44, 28th of October (Patission) str., Athens 106 82",
+      "operatingEvidence": "Exhibition \"Pylos of Nestor: A Mycenaean Kingdom Revealed\" 26 May 2026 to 31 Jan 2027, William Kentridge \"Imitate the sleep of stones\" 30 Oct 2026 to 24 Jan 2027; notice on Galleries 7, 8 and 11 dated 23 Oct 2026 (body not readable).",
+      "hours": "4 May to 15 November 2026: Wednesday to Monday 08:00-20:00, Tuesday 13:00-20:00, last admission 19:30; admission 20€",
+      "confidence": "high"
+    },
+    {
+      "name": "Museum of Cycladic Art",
+      "kind": "museum",
+      "url": "https://cycladic.gr/en/episkeftheite-to-mouseio/",
+      "sourceType": "operator's own site",
+      "address": "Vasilissis Sofias Ave. & 1 Irodotou St. (Stathatos Mansion)",
+      "operatingEvidence": "Home page banner \"OPEN TODAY UNTIL 17:00\"; Eugenia Vereli project \"OCTOBER 14 UNTIL DECEMBER 14, 2026\". Neophytou Douka entrance under construction, entry via Stathatos Mansion.",
+      "hours": "Mon, Wed, Fri, Sat 10:00-17:00; Thu 10:00-20:00; Sun 11:00-17:00; Tuesday closed; last entry 15 minutes before closing; general admission 12 euros, under-18s free",
+      "confidence": "high"
+    },
+    {
+      "name": "Byzantine and Christian Museum",
+      "kind": "museum",
+      "url": "https://www.byzantinemuseum.gr/en/",
+      "sourceType": "official public operator (Hellenic Ministry of Culture museum)",
+      "address": "22 Vasilissis Sofias Ave., Athens 10675",
+      "operatingEvidence": "Published weekly hours and 2026 \"Exhibit of the month\" for May 2026; temporary exhibition on the Otranto shipwreck (no dates given).",
+      "hours": "Monday to Sunday 8:30-15:30, \"Tuesday Closed\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Goulandris Museum of Modern Art",
+      "kind": "museum",
+      "url": "https://www.goulandris.gr/en",
+      "sourceType": "operator's own site (B&E Goulandris Foundation)",
+      "address": "13 Eratosthenous str., Athens 116 35",
+      "operatingEvidence": "Exhibition \"BELLE ÉPOQUE\" 31.10.2026 to 15.02.2027 in Athens; online ticket links for permanent collection and temporary exhibition.",
+      "hours": "not published on the page read",
+      "confidence": "high"
+    },
+    {
+      "name": "EMST National Museum of Contemporary Art",
+      "kind": "museum",
+      "url": "https://www.emst.gr/en",
+      "sourceType": "official public operator (national museum)",
+      "address": "Kallirrois Ave. & Amvr. Frantzi Str. (former FIX Factory), Athens 11743",
+      "operatingEvidence": "\"Today the museum is open 11:00 - 19:00\"; \"An Ode to Things. Niki Kanagini. Retrospective\" 2 April 2026 - 14 February 2027.",
+      "hours": "weekly hours not published; same-day notice 11:00-19:00; phone line Tuesday-Sunday",
+      "confidence": "high"
+    },
+    {
+      "name": "Jewish Museum of Greece",
+      "kind": "museum",
+      "url": "https://www.jewishmuseum.gr/en/",
+      "sourceType": "operator's own site",
+      "address": "Nikis 39, Athens 105 57",
+      "operatingEvidence": "\"Like Hunted Birds\": Greek Jews After WWII at the Bathhouse of the Winds, 8 Kyristou Street, 25 May to 30 November 2026, 9:30-16:30 daily except Tuesday.",
+      "hours": "main museum weekly hours not published; venues closed Tuesdays",
+      "confidence": "high"
+    },
+    {
+      "name": "Ilias Lalaounis Jewelry Museum",
+      "kind": "museum",
+      "url": "https://www.lalaounis-jewelrymuseum.gr/",
+      "sourceType": "operator's own site",
+      "address": "Kallisperi 12 & Karyatidon Str., Acropolis 11742, Athens",
+      "operatingEvidence": "\"ILJM Art Fair 2026\" Saturday 5 and Sunday 6 December, 11:00-19:00, free entrance; e-ticket link.",
+      "hours": "only partially readable: \"MO: 9:00-15:00\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Panathenaic Stadium",
+      "kind": "landmark",
+      "url": "https://www.panathenaicstadium.gr/en/visit/",
+      "sourceType": "operator's own site",
+      "address": "Vasileos Konstantinou Avenue (across from the statue of the Discobolus of Myron), Athens 116 35",
+      "operatingEvidence": "\"Open daily\"; 2026 notices on track closures in September and marble cleaning and conservation work; prices \"from 01.10.2025\".",
+      "hours": "March to October 8:00-19:00; November to February 8:00-17:00; general 12 euros, students 6 euros, 30-minute audio guide included",
+      "confidence": "high"
+    },
+    {
+      "name": "Spondi",
+      "kind": "meal",
+      "url": "https://www.spondi.gr/",
+      "sourceType": "operator's own site",
+      "address": "Pyrronos 5, Athens",
+      "operatingEvidence": "Online \"Reservation form\" and \"© 2026 Spondi Restaurant\".",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Varoulko Seaside",
+      "kind": "meal",
+      "url": "https://www.varoulko.gr/",
+      "sourceType": "operator's own site",
+      "address": "Koumoundourou Coast 54, 185 33 Piraeus",
+      "operatingEvidence": "\"BOOK A TABLE\" online booking and published daily hours.",
+      "hours": "Monday to Sunday 13.00-00:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Karamanlidika",
+      "kind": "meal",
+      "url": "https://www.karamanlidika.gr/kratisi/",
+      "sourceType": "operator's own site",
+      "address": "Σωκράτους 1 & Ευριπίδου, 10552 Athens (second branch Ερμού 119, 10555)",
+      "operatingEvidence": "Per-branch \"Κράτηση\" online booking; footer \"2016 - 2026\".",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Cookoovaya",
+      "kind": "meal",
+      "url": "https://www.cookoovaya.gr/",
+      "sourceType": "operator's own site",
+      "address": "Hatzigianni Mexi 2A, Athens",
+      "operatingEvidence": "\"book Athens\" online booking with published daily hours.",
+      "hours": "Monday to Sunday 13:00-00:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Hytra",
+      "kind": "meal",
+      "url": "https://www.hytra.gr/",
+      "sourceType": "operator's own site",
+      "address": "1 Petrou Kokkali Str., 115 21, Athens",
+      "operatingEvidence": "Online RESERVATION link; Valentine's menu file dated February 2026.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Klimataria",
+      "kind": "meal",
+      "url": "https://www.klimataria.gr/",
+      "sourceType": "operator's own site",
+      "address": "Platia Theatrou 2, 10552 Athens",
+      "operatingEvidence": "Published daily hours and live-music schedule; footer \"© 2026\".",
+      "hours": "\"Δευτέρα – Κυριακή: 12 μμ – 2 πμ\"; live music Tue, Wed, Thu, Sun 22:00 and Fri, Sat 22:30",
+      "confidence": "medium"
+    },
+    {
+      "name": "Feyrouz",
+      "kind": "bakery",
+      "url": "https://www.feyrouz.gr/",
+      "sourceType": "operator's own site",
+      "address": "Αγάθωνος 1, Αθήνα",
+      "operatingEvidence": "Athens menu PDF uploaded in a 2026/09 folder; handmade Levantine street food and lahmajoun.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Lukumades",
+      "kind": "bakery",
+      "url": "https://www.lukumades.com/",
+      "sourceType": "operator's own site",
+      "address": "21, Eolou & Aghias Irinis Str., 105 51 Athens",
+      "operatingEvidence": "Footer \"©LUKUMADES 2026\"; no hours or menu readable.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mokka",
+      "kind": "cafe",
+      "url": "https://mokka.coffee/",
+      "sourceType": "operator's own site",
+      "address": "Αθηνάς 44, Αθήνα",
+      "operatingEvidence": "Coffees listed with 2026 roast dates such as \"21/10/2026\"; \"FOUR GENERATIONS OF ROASTERS ARE WORKING IN THE SAME BUILDING SINCE 1923\".",
+      "hours": "not published",
+      "confidence": "high"
+    },
+    {
+      "name": "Little Kook",
+      "kind": "cafe",
+      "url": "https://www.littlekook.gr/",
+      "sourceType": "operator's own site",
+      "address": "Karaiskaki 17, Athens, 10554",
+      "operatingEvidence": "Current Halloween theme promoted: \"Shadows, smoke and strange scenes where visitors become part of the story\" (no dates).",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Clumsies",
+      "kind": "bar",
+      "url": "https://theclumsies.gr/",
+      "sourceType": "operator's own site",
+      "address": "Praxitelous 30, Athens",
+      "operatingEvidence": "\"Reservations are made through the website or via phone, and response is immediate\"; described as an all-day venue. Linked menus dated 2023.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Baba au Rum",
+      "kind": "bar",
+      "url": "https://www.babaaurum.com/",
+      "sourceType": "operator's own site",
+      "address": "Klitiou 6, Athens",
+      "operatingEvidence": "Published hours and \"© 2026 babaaurum.com\".",
+      "hours": "Monday - Sunday 19:00 - 03:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Line Athens",
+      "kind": "bar",
+      "url": "https://www.lineathens.gr/",
+      "sourceType": "operator's own site",
+      "address": "Agathodemonos 37, Athens",
+      "operatingEvidence": "Online Reservations link; no 2026-dated content.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "360 Cocktail Bar",
+      "kind": "bar",
+      "url": "https://www.three-sixty.gr/",
+      "sourceType": "operator's own site",
+      "address": "Ifaistou 2, Athens",
+      "operatingEvidence": "\"Book Your Table\" link and published hours; serves cocktails, coffee, brunch and dinner with Acropolis views.",
+      "hours": "Sun-Thu 10:00-01:30; Fri & Sat 10:00-02:30",
+      "confidence": "medium"
+    },
+    {
+      "name": "Brettos",
+      "kind": "bar",
+      "url": "https://www.brettosplaka.com/",
+      "sourceType": "operator's own site",
+      "address": "Kydathinaion 41, Athens 105 58",
+      "operatingEvidence": "Footer \"© 2026, Brettos Plaka\"; site quotes \"Brettos was established in 1909.\"",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "A for Athens",
+      "kind": "bar",
+      "url": "https://www.aforathens.com/",
+      "sourceType": "operator's own site",
+      "address": "2-4, Miaouli Str., Monastiraki, Athens",
+      "operatingEvidence": "\"Book a table\" and \"Book your room\" links; no 2026-dated content.",
+      "hours": "not published",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Acropolis",
+      "reason": "official Ministry of Culture page refused connection (ECONNREFUSED); hhticket.gr returned 403; culture.gov.gr returned 403",
+      "url": "https://odysseus.culture.gr/h/3/eh351.jsp?obj_id=2384"
+    },
+    {
+      "name": "Plaka and Anafiotika",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Acropolis views from public hills",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Monastiraki wandering",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Street-food souvlaki stops",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private Acropolis guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Rooftop tasting-menu dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Luxury stay with Acropolis views",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset at Lycabettus",
+      "reason": "generic, not a place; lycabettushill.com does not identify itself as the operator (sells tours)",
+      "url": "https://www.lycabettushill.com/"
+    },
+    {
+      "name": "Rooftop dinner in Plaka",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Evening walk through Anafiotika",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "National Garden",
+      "reason": "no official operator page readable; cityofathens.gr returned 403",
+      "url": "https://www.cityofathens.gr/"
+    },
+    {
+      "name": "Varvakios Market",
+      "reason": "no official operator page readable; cityofathens.gr returned 403",
+      "url": "https://www.cityofathens.gr/"
+    },
+    {
+      "name": "Short ruins-and-gelato day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee in Koukaki",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning at the Acropolis Museum",
+      "reason": "generic, not a place (Acropolis Museum confirmed separately)",
+      "url": ""
+    },
+    {
+      "name": "Monastiraki evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Plaka",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Monastiraki and one rooftop night",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Thissio walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset from Philopappos Hill",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Kora Bakery",
+      "reason": "no official website found (only social media, delivery apps and guides)",
+      "url": ""
+    },
+    {
+      "name": "Dope Roasting Co.",
+      "reason": "doperoasting.com failed with TLS error (TLSV1_ALERT_UNRECOGNIZED_NAME); no other official site found",
+      "url": "https://www.doperoasting.com/"
+    },
+    {
+      "name": "This is Loco",
+      "reason": "no official website found",
+      "url": ""
+    },
+    {
+      "name": "Kostas Souvlaki",
+      "reason": "no official website found",
+      "url": ""
+    },
+    {
+      "name": "Nolan",
+      "reason": "nolanrestaurant.gr now serves an online-casino page, not the restaurant; no other official site found",
+      "url": "https://www.nolanrestaurant.gr/"
+    },
+    {
+      "name": "Takis Bakery",
+      "reason": "takisbakery.gr does not resolve (ENOTFOUND); no official site found",
+      "url": "https://www.takisbakery.gr/"
+    },
+    {
+      "name": "Betty's Bakery",
+      "reason": "no official website found",
+      "url": ""
+    },
+    {
+      "name": "The Underdog",
+      "reason": "official site names Thissio flagship but publishes no street address, hours or dated content",
+      "url": "https://www.underdog.gr/locations"
+    },
+    {
+      "name": "Tailor Made",
+      "reason": "tailormade.gr did not resolve (EAI_AGAIN); no other official site found",
+      "url": "https://www.tailormade.gr/"
+    },
+    {
+      "name": "Benaki Museum",
+      "reason": "HTTP 403",
+      "url": "https://www.benaki.org/index.php?lang=en"
+    },
+    {
+      "name": "Stavros Niarchos Foundation Cultural Center",
+      "reason": "HTTP 403",
+      "url": "https://www.snfcc.org/en"
+    },
+    {
+      "name": "Kuzina",
+      "reason": "certificate error (unable to verify the first certificate)",
+      "url": "https://www.kuzina.gr/"
+    },
+    {
+      "name": "Strofi",
+      "reason": "HTTP 520",
+      "url": "https://www.strofi.gr/"
+    },
+    {
+      "name": "Eugenides Planetarium",
+      "reason": "certificate error (hostname not in certificate)",
+      "url": "https://www.eugenfound.edu.gr/en/"
+    },
+    {
+      "name": "Six d.o.g.s",
+      "reason": "sixdogs.gr now serves an offshore-betting guide, not the bar",
+      "url": "https://www.sixdogs.gr/"
+    },
+    {
+      "name": "Mind the Cup",
+      "reason": "official site lists only a Peristeri address, outside central Athens",
+      "url": "https://www.mindthecup.gr/"
+    },
+    {
+      "name": "Taf Coffee",
+      "reason": "connection refused (ECONNREFUSED)",
+      "url": "https://www.taf.gr/"
+    },
+    {
+      "name": "Le Greche",
+      "reason": "connection refused (ECONNREFUSED)",
+      "url": "https://www.legreche.gr/"
+    },
+    {
+      "name": "Ergon House",
+      "reason": "ergonhouse.gr does not resolve (ENOTFOUND)",
+      "url": "https://www.ergonhouse.gr/"
+    },
+    {
+      "name": "Kostarelos",
+      "reason": "home page readable (2026 content) but no Athens store address; stores page 404 and repeated HTTP 429",
+      "url": "https://kostarelos.gr/en/"
+    },
+    {
+      "name": "Varsos",
+      "reason": "no street address and no 2026 content on official site (footer 2019)",
+      "url": "https://www.varsos.gr/"
+    },
+    {
+      "name": "Loumidis",
+      "reason": "domain redirects to a Nestle corporate page; no café address read",
+      "url": "https://www.loumidis.gr/"
+    },
+    {
+      "name": "Samba Coffee Roasters",
+      "reason": "sambacoffee.gr does not resolve (ENOTFOUND)",
+      "url": "https://www.sambacoffee.gr/"
+    },
+    {
+      "name": "Little Tree Books & Coffee",
+      "reason": "official page shows only name and logo; no address or hours",
+      "url": "https://www.littletree.gr/"
+    },
+    {
+      "name": "Galaxy Bar (Hilton Athens)",
+      "reason": "HTTP 403",
+      "url": "https://www.hilton.com/en/hotels/athhitw-hilton-athens/dining/"
+    },
+    {
+      "name": "Ariston",
+      "reason": "no official website found",
+      "url": ""
+    },
+    {
+      "name": "Krinos",
+      "reason": "no official website found",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Acropolis Museum",
+        "National Archaeological Museum",
+        "Panathenaic Stadium",
+        "Museum of Cycladic Art"
+      ],
+      "bestFirstTimers": [
+        "Acropolis Museum",
+        "Panathenaic Stadium",
+        "Karamanlidika",
+        "360 Cocktail Bar"
+      ],
+      "bestRestaurants": [
+        "Spondi",
+        "Varoulko Seaside",
+        "Karamanlidika",
+        "Hytra"
+      ],
+      "bestBudget": [
+        "Feyrouz",
+        "Lukumades",
+        "Mokka",
+        "Byzantine and Christian Museum"
+      ],
+      "bestLuxury": [
+        "Spondi",
+        "Hytra",
+        "Varoulko Seaside",
+        "Goulandris Museum of Modern Art"
+      ],
+      "bestCouples": [
+        "360 Cocktail Bar",
+        "Klimataria",
+        "Brettos",
+        "Cookoovaya"
+      ],
+      "bestKids": [
+        "Little Kook",
+        "Panathenaic Stadium",
+        "Acropolis Museum",
+        "Lukumades"
+      ],
+      "bestSolo": [
+        "EMST National Museum of Contemporary Art",
+        "Mokka",
+        "Jewish Museum of Greece",
+        "The Clumsies"
+      ],
+      "bestUnique": [
+        "Little Kook",
+        "Ilias Lalaounis Jewelry Museum",
+        "Brettos",
+        "Jewish Museum of Greece"
+      ],
+      "bestBreakfast": [
+        "360 Cocktail Bar",
+        "Little Kook",
+        "Mokka",
+        "Lukumades"
+      ],
+      "bestLunch": [
+        "Karamanlidika",
+        "Cookoovaya",
+        "Feyrouz",
+        "Klimataria"
+      ],
+      "bestDinner": [
+        "Spondi",
+        "Varoulko Seaside",
+        "Hytra",
+        "Cookoovaya"
+      ],
+      "bestCocktails": [
+        "The Clumsies",
+        "Baba au Rum",
+        "Line Athens",
+        "A for Athens"
+      ],
+      "bestBakeries": [
+        "Lukumades"
+      ],
+      "bestCoffee": [
+        "Mokka",
+        "The Clumsies",
+        "360 Cocktail Bar",
+        "Little Kook"
+      ]
+    },
+    "queries": {
+      "Acropolis Museum": "Acropolis Museum Dionysiou Areopagitou 15 Athens",
+      "National Archaeological Museum": "National Archaeological Museum 44 Patission Athens",
+      "Museum of Cycladic Art": "Museum of Cycladic Art Vasilissis Sofias & Irodotou 1 Athens",
+      "Byzantine and Christian Museum": "Byzantine and Christian Museum 22 Vasilissis Sofias Athens",
+      "Goulandris Museum of Modern Art": "Goulandris Museum 13 Eratosthenous Athens",
+      "EMST National Museum of Contemporary Art": "EMST Kallirrois Ave & Amvrosiou Frantzi Athens",
+      "Jewish Museum of Greece": "Jewish Museum of Greece Nikis 39 Athens",
+      "Ilias Lalaounis Jewelry Museum": "Ilias Lalaounis Jewelry Museum Kallisperi 12 Athens",
+      "Panathenaic Stadium": "Panathenaic Stadium Vasileos Konstantinou Avenue Athens",
+      "Spondi": "Spondi Pyrronos 5 Athens",
+      "Varoulko Seaside": "Varoulko Seaside Akti Koumoundourou 54 Piraeus",
+      "Karamanlidika": "Karamanlidika Sokratous 1 Evripidou Athens",
+      "Cookoovaya": "Cookoovaya Hatzigianni Mexi 2A Athens",
+      "Hytra": "Hytra Petrou Kokkali 1 Athens",
+      "Klimataria": "Klimataria Platia Theatrou 2 Athens",
+      "Feyrouz": "Feyrouz Agathonos 1 Athens",
+      "Lukumades": "Lukumades Eolou 21 Athens",
+      "Mokka": "Mokka Athinas 44 Athens",
+      "Little Kook": "Little Kook Karaiskaki 17 Athens",
+      "The Clumsies": "The Clumsies Praxitelous 30 Athens",
+      "Baba au Rum": "Baba au Rum Klitiou 6 Athens",
+      "Line Athens": "Line Agathodemonos 37 Athens",
+      "360 Cocktail Bar": "360 Cocktail Bar Ifaistou 2 Athens",
+      "Brettos": "Brettos Kydathinaion 41 Athens",
+      "A for Athens": "A for Athens Miaouli 2-4 Athens"
+    },
+    "summary": "Museums, a historic stadium, tavernas, fine dining, cocktail bars, cafés and sweet shops in Athens, each checked against its own website.",
+    "highlights": [
+      "Acropolis Museum",
+      "National Archaeological Museum",
+      "Panathenaic Stadium",
+      "Museum of Cycladic Art"
+    ],
+    "tip": "Several museums shut on Tuesdays, including the Museum of Cycladic Art, the Byzantine and Christian Museum and the Jewish Museum's venues, while the National Archaeological Museum opens only at 13:00 that day.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Tuesday",
+        "copy": "The Museum of Cycladic Art and the Byzantine and Christian Museum close on Tuesdays, and the Jewish Museum's listed venues are closed Tuesdays too. The National Archaeological Museum opens on Tuesday only from 13:00 to 20:00."
+      },
+      {
+        "label": "Tickets",
+        "value": "Online e-tickets",
+        "copy": "The National Archaeological Museum sells its 20€ admission through the e-ticketing system, and the Acropolis Museum and Goulandris Museum link to online tickets. The Panathenaic Stadium charges 12 euros, with a 30-minute audio guide included."
+      },
+      {
+        "label": "Booking",
+        "value": "Reserve tables",
+        "copy": "Spondi, Varoulko Seaside, Cookoovaya, Hytra and both Karamanlidika branches take online reservations. The Clumsies says reservations by website or phone get an immediate response."
+      },
+      {
+        "label": "Rules",
+        "value": "Stadium and museum rules",
+        "copy": "The Panathenaic Stadium allows no food or drinks other than water, and only certified service animals. At the Museum of Cycladic Art, children under 18 enter free and last entry is 15 minutes before closing."
+      }
+    ],
+    "dek": "Plan museum days around Tuesday closures and book dinner tables online ahead.",
+    "intro": [
+      "Athens rewards you for planning around museum hours. The Acropolis Museum on Dionysiou Areopagitou is showing \"The Parthenon and Byron\" until 31 December 2026, and it runs a family programme from 1 November 2026 to 28 March 2027. Across town, the National Archaeological Museum on Patission opens Wednesday to Monday from 08:00 to 20:00 until 15 November 2026, with a later 13:00 start on Tuesdays. Its exhibition \"Pylos of Nestor: A Mycenaean Kingdom Revealed\" runs to 31 January 2027, and William Kentridge's \"Imitate the sleep of stones\" opens 30 October 2026.",
+      "Along Vasilissis Sofias you can pair two museums in one walk. The Museum of Cycladic Art opens 10:00 to 17:00 most days, stays open until 20:00 on Thursdays and closes on Tuesdays, while visitors currently enter through the Stathatos Mansion because the other entrance is under construction. The Byzantine and Christian Museum nearby opens 8:30 to 15:30 and also closes on Tuesdays. The Goulandris Museum on Eratosthenous opens \"BELLE ÉPOQUE\" on 31 October 2026, running to 15 February 2027, and EMST shows a Niki Kanagini retrospective until 14 February 2027.",
+      "For something open daily, the Panathenaic Stadium welcomes you from 8:00 to 19:00 through October and 8:00 to 17:00 from November to February. A general ticket costs 12 euros and includes a 30-minute audio guide, and only water is allowed inside. The Jewish Museum of Greece's exhibition \"Like Hunted Birds\" runs at the Bathhouse of the Winds in Plaka until 30 November 2026, daily except Tuesday, and the Ilias Lalaounis Jewelry Museum below the Acropolis plans a free art fair on 5 and 6 December.",
+      "Eating and drinking are easy to book ahead. Varoulko Seaside in Piraeus and Cookoovaya both serve daily from 13:00 to midnight and take online bookings, and Spondi and Hytra also reserve online. Klimataria on Platia Theatrou opens from noon to 2am with live music most evenings. For coffee, Mokka on Athinas has roasted in the same building since 1923. Baba au Rum pours from 19:00 to 03:00, and 360 Cocktail Bar on Ifaistou opens from 10:00 for brunch and stays open late."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Start at the Acropolis Museum and the Panathenaic Stadium, then book a table at Karamanlidika or Cookoovaya."
+      ],
+      [
+        "A slower morning",
+        "Pick up coffee at Mokka on Athinas, then spend the late morning at the Museum of Cycladic Art, which opens at 10:00 except on Tuesdays."
+      ],
+      [
+        "Before booking",
+        "Check Tuesday closures at the Cycladic, Byzantine and Jewish museums, and reserve Spondi, Varoulko Seaside or Hytra online."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The Acropolis archaeological site could not be confirmed because the Ministry of Culture page refused connection and hhticket.gr and culture.gov.gr returned 403; the Benaki Museum, SNFCC and the Hilton (Galaxy Bar) also returned 403, Kuzina and the Eugenides Planetarium had certificate errors, and Strofi returned HTTP 520. Several input places (Kora Bakery, Takis Bakery, Dope Roasting Co., Tailor Made, Nolan, This is Loco, Betty's Bakery, Kostas Souvlaki) had no readable official site, and the domains formerly used by Nolan and Six d.o.g.s now show gambling content. Opening hours were not published on the pages read for the Acropolis Museum, Goulandris, Spondi, Karamanlidika, Hytra, Feyrouz, Lukumades, Mokka, Little Kook, The Clumsies, Line, Brettos and A for Athens; Lalaounis hours were only partly readable. For Lukumades and Brettos, current operation rests only on a 2026 copyright notice, and Line and A for Athens on booking links without 2026 content.",
+  "injectionLikeText": [],
+  "injectionLikeTextIgnored": [
+    "three-sixty.gr (360 Cocktail Bar): the fetch tool reported the page's \"How can I help?\" panel contains instructions addressed to an AI; the exact wording could not be retrieved verbatim. Ignored.",
+    "2026-10-25: the page was opened in a browser; the panel is the site chatbot launcher (a button captioned How can I help?) and its HTML contains no AI-directed instructions."
+  ]
+}

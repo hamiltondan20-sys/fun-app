@@ -3360,4 +3360,110 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 27 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Athens, Greece: source review of 2026-10-25 (docs/content-research/athens-2026-10-25.md).
+  {
+    const cityKey = "Athens, Greece";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Acropolis Museum","National Archaeological Museum","Panathenaic Stadium","Museum of Cycladic Art"],
+      bestFirstTimers: ["Acropolis Museum","Panathenaic Stadium","Karamanlidika","360 Cocktail Bar"],
+      bestRestaurants: ["Spondi","Varoulko Seaside","Karamanlidika","Hytra"],
+      bestBudget: ["Feyrouz","Lukumades","Mokka","Byzantine and Christian Museum"],
+      bestLuxury: ["Spondi","Hytra","Varoulko Seaside","Goulandris Museum of Modern Art"],
+      bestCouples: ["360 Cocktail Bar","Klimataria","Brettos","Cookoovaya"],
+      bestKids: ["Little Kook","Panathenaic Stadium","Acropolis Museum","Lukumades"],
+      bestSolo: ["EMST National Museum of Contemporary Art","Mokka","Jewish Museum of Greece","The Clumsies"],
+      bestUnique: ["Little Kook","Ilias Lalaounis Jewelry Museum","Brettos","Jewish Museum of Greece"],
+      bestBreakfast: ["360 Cocktail Bar","Little Kook","Mokka","Lukumades"],
+      bestLunch: ["Karamanlidika","Cookoovaya","Feyrouz","Klimataria"],
+      bestDinner: ["Spondi","Varoulko Seaside","Hytra","Cookoovaya"],
+      bestCocktails: ["The Clumsies","Baba au Rum","Line Athens","A for Athens"],
+      bestBakeries: ["Lukumades"],
+      bestCoffee: ["Mokka","The Clumsies","360 Cocktail Bar","Little Kook"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Acropolis Museum": "Acropolis Museum Dionysiou Areopagitou 15 Athens",
+      "National Archaeological Museum": "National Archaeological Museum 44 Patission Athens",
+      "Panathenaic Stadium": "Panathenaic Stadium Vasileos Konstantinou Avenue Athens",
+      "Museum of Cycladic Art": "Museum of Cycladic Art Vasilissis Sofias & Irodotou 1 Athens",
+      "Karamanlidika": "Karamanlidika Sokratous 1 Evripidou Athens",
+      "360 Cocktail Bar": "360 Cocktail Bar Ifaistou 2 Athens",
+      "Spondi": "Spondi Pyrronos 5 Athens",
+      "Varoulko Seaside": "Varoulko Seaside Akti Koumoundourou 54 Piraeus",
+      "Hytra": "Hytra Petrou Kokkali 1 Athens",
+      "Feyrouz": "Feyrouz Agathonos 1 Athens",
+      "Lukumades": "Lukumades Eolou 21 Athens",
+      "Mokka": "Mokka Athinas 44 Athens",
+      "Byzantine and Christian Museum": "Byzantine and Christian Museum 22 Vasilissis Sofias Athens",
+      "Goulandris Museum of Modern Art": "Goulandris Museum 13 Eratosthenous Athens",
+      "Klimataria": "Klimataria Platia Theatrou 2 Athens",
+      "Brettos": "Brettos Kydathinaion 41 Athens",
+      "Cookoovaya": "Cookoovaya Hatzigianni Mexi 2A Athens",
+      "Little Kook": "Little Kook Karaiskaki 17 Athens",
+      "EMST National Museum of Contemporary Art": "EMST Kallirrois Ave & Amvrosiou Frantzi Athens",
+      "Jewish Museum of Greece": "Jewish Museum of Greece Nikis 39 Athens",
+      "The Clumsies": "The Clumsies Praxitelous 30 Athens",
+      "Ilias Lalaounis Jewelry Museum": "Ilias Lalaounis Jewelry Museum Kallisperi 12 Athens",
+      "Baba au Rum": "Baba au Rum Klitiou 6 Athens",
+      "Line Athens": "Line Agathodemonos 37 Athens",
+      "A for Athens": "A for Athens Miaouli 2-4 Athens"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Athens" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Museums, a historic stadium, tavernas, fine dining, cocktail bars, cafés and sweet shops in Athens, each checked against its own website.";
+    cityGuide.highlights = ["Acropolis Museum","National Archaeological Museum","Panathenaic Stadium","Museum of Cycladic Art"];
+    cityGuide.tip = "Several museums shut on Tuesdays, including the Museum of Cycladic Art, the Byzantine and Christian Museum and the Jewish Museum's venues, while the National Archaeological Museum opens only at 13:00 that day.";
+    data.destinationFacts[cityKey] = "Several museums shut on Tuesdays, including the Museum of Cycladic Art, the Byzantine and Christian Museum and the Jewish Museum's venues, while the National Archaeological Museum opens only at 13:00 that day.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Museums, a historic stadium, tavernas, fine dining, cocktail bars, cafés and sweet shops in Athens, each checked against its own website.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Tuesday",
+        "copy": "The Museum of Cycladic Art and the Byzantine and Christian Museum close on Tuesdays, and the Jewish Museum's listed venues are closed Tuesdays too. The National Archaeological Museum opens on Tuesday only from 13:00 to 20:00."
+      },
+      {
+        "label": "Tickets",
+        "value": "Online e-tickets",
+        "copy": "The National Archaeological Museum sells its 20€ admission through the e-ticketing system, and the Acropolis Museum and Goulandris Museum link to online tickets. The Panathenaic Stadium charges 12 euros, with a 30-minute audio guide included."
+      },
+      {
+        "label": "Booking",
+        "value": "Reserve tables",
+        "copy": "Spondi, Varoulko Seaside, Cookoovaya, Hytra and both Karamanlidika branches take online reservations. The Clumsies says reservations by website or phone get an immediate response."
+      },
+      {
+        "label": "Rules",
+        "value": "Stadium and museum rules",
+        "copy": "The Panathenaic Stadium allows no food or drinks other than water, and only certified service animals. At the Museum of Cycladic Art, children under 18 enter free and last entry is 15 minutes before closing."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Plan museum days around Tuesday closures and book dinner tables online ahead.",
+      intro: [
+        "Athens rewards you for planning around museum hours. The Acropolis Museum on Dionysiou Areopagitou is showing \"The Parthenon and Byron\" until 31 December 2026, and it runs a family programme from 1 November 2026 to 28 March 2027. Across town, the National Archaeological Museum on Patission opens Wednesday to Monday from 08:00 to 20:00 until 15 November 2026, with a later 13:00 start on Tuesdays. Its exhibition \"Pylos of Nestor: A Mycenaean Kingdom Revealed\" runs to 31 January 2027, and William Kentridge's \"Imitate the sleep of stones\" opens 30 October 2026.",
+        "Along Vasilissis Sofias you can pair two museums in one walk. The Museum of Cycladic Art opens 10:00 to 17:00 most days, stays open until 20:00 on Thursdays and closes on Tuesdays, while visitors currently enter through the Stathatos Mansion because the other entrance is under construction. The Byzantine and Christian Museum nearby opens 8:30 to 15:30 and also closes on Tuesdays. The Goulandris Museum on Eratosthenous opens \"BELLE ÉPOQUE\" on 31 October 2026, running to 15 February 2027, and EMST shows a Niki Kanagini retrospective until 14 February 2027.",
+        "For something open daily, the Panathenaic Stadium welcomes you from 8:00 to 19:00 through October and 8:00 to 17:00 from November to February. A general ticket costs 12 euros and includes a 30-minute audio guide, and only water is allowed inside. The Jewish Museum of Greece's exhibition \"Like Hunted Birds\" runs at the Bathhouse of the Winds in Plaka until 30 November 2026, daily except Tuesday, and the Ilias Lalaounis Jewelry Museum below the Acropolis plans a free art fair on 5 and 6 December.",
+        "Eating and drinking are easy to book ahead. Varoulko Seaside in Piraeus and Cookoovaya both serve daily from 13:00 to midnight and take online bookings, and Spondi and Hytra also reserve online. Klimataria on Platia Theatrou opens from noon to 2am with live music most evenings. For coffee, Mokka on Athinas has roasted in the same building since 1923. Baba au Rum pours from 19:00 to 03:00, and 360 Cocktail Bar on Ifaistou opens from 10:00 for brunch and stays open late."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Start at the Acropolis Museum and the Panathenaic Stadium, then book a table at Karamanlidika or Cookoovaya."
+        ],
+        [
+          "A slower morning",
+          "Pick up coffee at Mokka on Athinas, then spend the late morning at the Museum of Cycladic Art, which opens at 10:00 except on Tuesdays."
+        ],
+        [
+          "Before booking",
+          "Check Tuesday closures at the Cycladic, Byzantine and Jewish museums, and reserve Spondi, Varoulko Seaside or Hytra online."
+        ]
+      ],
+      trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

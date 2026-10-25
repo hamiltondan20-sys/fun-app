@@ -5,6 +5,437 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Athens, Greece": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-25",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The Acropolis archaeological site could not be confirmed because the Ministry of Culture page refused connection and hhticket.gr and culture.gov.gr returned 403; the Benaki Museum, SNFCC and the Hilton (Galaxy Bar) also returned 403, Kuzina and the Eugenides Planetarium had certificate errors, and Strofi returned HTTP 520. Several input places (Kora Bakery, Takis Bakery, Dope Roasting Co., Tailor Made, Nolan, This is Loco, Betty's Bakery, Kostas Souvlaki) had no readable official site, and the domains formerly used by Nolan and Six d.o.g.s now show gambling content. Opening hours were not published on the pages read for the Acropolis Museum, Goulandris, Spondi, Karamanlidika, Hytra, Feyrouz, Lukumades, Mokka, Little Kook, The Clumsies, Line, Brettos and A for Athens; Lalaounis hours were only partly readable. For Lukumades and Brettos, current operation rests only on a 2026 copyright notice, and Line and A for Athens on booking links without 2026 content.",
+    "sourceUrls": [
+      "docs/content-research/athens-2026-10-25.md",
+      "docs/content-research/athens-2026-10-25.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Acropolis",
+        "url": "https://odysseus.culture.gr/h/3/eh351.jsp?obj_id=2384",
+        "checkedOn": "2026-10-25",
+        "reason": "official Ministry of Culture page refused connection (ECONNREFUSED); hhticket.gr returned 403; culture.gov.gr returned 403"
+      },
+      {
+        "name": "Plaka and Anafiotika",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Acropolis views from public hills",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Monastiraki wandering",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Street-food souvlaki stops",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private Acropolis guide",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Rooftop tasting-menu dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Luxury stay with Acropolis views",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset at Lycabettus",
+        "url": "https://www.lycabettushill.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place; lycabettushill.com does not identify itself as the operator (sells tours)"
+      },
+      {
+        "name": "Rooftop dinner in Plaka",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Evening walk through Anafiotika",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "National Garden",
+        "url": "https://www.cityofathens.gr/",
+        "checkedOn": "2026-10-25",
+        "reason": "no official operator page readable; cityofathens.gr returned 403"
+      },
+      {
+        "name": "Varvakios Market",
+        "url": "https://www.cityofathens.gr/",
+        "checkedOn": "2026-10-25",
+        "reason": "no official operator page readable; cityofathens.gr returned 403"
+      },
+      {
+        "name": "Short ruins-and-gelato day",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee in Koukaki",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning at the Acropolis Museum",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (Acropolis Museum confirmed separately)"
+      },
+      {
+        "name": "Monastiraki evening",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Plaka",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Monastiraki and one rooftop night",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Thissio walk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset from Philopappos Hill",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Kora Bakery",
+        "checkedOn": "2026-10-25",
+        "reason": "no official website found (only social media, delivery apps and guides)"
+      },
+      {
+        "name": "Dope Roasting Co.",
+        "url": "https://www.doperoasting.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "doperoasting.com failed with TLS error (TLSV1_ALERT_UNRECOGNIZED_NAME); no other official site found"
+      },
+      {
+        "name": "This is Loco",
+        "checkedOn": "2026-10-25",
+        "reason": "no official website found"
+      },
+      {
+        "name": "Kostas Souvlaki",
+        "checkedOn": "2026-10-25",
+        "reason": "no official website found"
+      },
+      {
+        "name": "Nolan",
+        "url": "https://www.nolanrestaurant.gr/",
+        "checkedOn": "2026-10-25",
+        "reason": "nolanrestaurant.gr now serves an online-casino page, not the restaurant; no other official site found"
+      },
+      {
+        "name": "Takis Bakery",
+        "url": "https://www.takisbakery.gr/",
+        "checkedOn": "2026-10-25",
+        "reason": "takisbakery.gr does not resolve (ENOTFOUND); no official site found"
+      },
+      {
+        "name": "Betty's Bakery",
+        "checkedOn": "2026-10-25",
+        "reason": "no official website found"
+      },
+      {
+        "name": "The Underdog",
+        "url": "https://www.underdog.gr/locations",
+        "checkedOn": "2026-10-25",
+        "reason": "official site names Thissio flagship but publishes no street address, hours or dated content"
+      },
+      {
+        "name": "Tailor Made",
+        "url": "https://www.tailormade.gr/",
+        "checkedOn": "2026-10-25",
+        "reason": "tailormade.gr did not resolve (EAI_AGAIN); no other official site found"
+      },
+      {
+        "name": "Benaki Museum",
+        "url": "https://www.benaki.org/index.php?lang=en",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 403"
+      },
+      {
+        "name": "Stavros Niarchos Foundation Cultural Center",
+        "url": "https://www.snfcc.org/en",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 403"
+      },
+      {
+        "name": "Kuzina",
+        "url": "https://www.kuzina.gr/",
+        "checkedOn": "2026-10-25",
+        "reason": "certificate error (unable to verify the first certificate)"
+      },
+      {
+        "name": "Strofi",
+        "url": "https://www.strofi.gr/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 520"
+      },
+      {
+        "name": "Eugenides Planetarium",
+        "url": "https://www.eugenfound.edu.gr/en/",
+        "checkedOn": "2026-10-25",
+        "reason": "certificate error (hostname not in certificate)"
+      },
+      {
+        "name": "Six d.o.g.s",
+        "url": "https://www.sixdogs.gr/",
+        "checkedOn": "2026-10-25",
+        "reason": "sixdogs.gr now serves an offshore-betting guide, not the bar"
+      },
+      {
+        "name": "Mind the Cup",
+        "url": "https://www.mindthecup.gr/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site lists only a Peristeri address, outside central Athens"
+      },
+      {
+        "name": "Taf Coffee",
+        "url": "https://www.taf.gr/",
+        "checkedOn": "2026-10-25",
+        "reason": "connection refused (ECONNREFUSED)"
+      },
+      {
+        "name": "Le Greche",
+        "url": "https://www.legreche.gr/",
+        "checkedOn": "2026-10-25",
+        "reason": "connection refused (ECONNREFUSED)"
+      },
+      {
+        "name": "Ergon House",
+        "url": "https://www.ergonhouse.gr/",
+        "checkedOn": "2026-10-25",
+        "reason": "ergonhouse.gr does not resolve (ENOTFOUND)"
+      },
+      {
+        "name": "Kostarelos",
+        "url": "https://kostarelos.gr/en/",
+        "checkedOn": "2026-10-25",
+        "reason": "home page readable (2026 content) but no Athens store address; stores page 404 and repeated HTTP 429"
+      },
+      {
+        "name": "Varsos",
+        "url": "https://www.varsos.gr/",
+        "checkedOn": "2026-10-25",
+        "reason": "no street address and no 2026 content on official site (footer 2019)"
+      },
+      {
+        "name": "Loumidis",
+        "url": "https://www.loumidis.gr/",
+        "checkedOn": "2026-10-25",
+        "reason": "domain redirects to a Nestle corporate page; no café address read"
+      },
+      {
+        "name": "Samba Coffee Roasters",
+        "url": "https://www.sambacoffee.gr/",
+        "checkedOn": "2026-10-25",
+        "reason": "sambacoffee.gr does not resolve (ENOTFOUND)"
+      },
+      {
+        "name": "Little Tree Books & Coffee",
+        "url": "https://www.littletree.gr/",
+        "checkedOn": "2026-10-25",
+        "reason": "official page shows only name and logo; no address or hours"
+      },
+      {
+        "name": "Galaxy Bar (Hilton Athens)",
+        "url": "https://www.hilton.com/en/hotels/athhitw-hilton-athens/dining/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 403"
+      },
+      {
+        "name": "Ariston",
+        "checkedOn": "2026-10-25",
+        "reason": "no official website found"
+      },
+      {
+        "name": "Krinos",
+        "checkedOn": "2026-10-25",
+        "reason": "no official website found"
+      }
+    ],
+    "placeSources": {
+      "Acropolis Museum": {
+        "url": "https://www.theacropolismuseum.gr/en",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Lists exhibition \"The Parthenon and Byron\" running \"26 April 2024 - 31 December 2026\" and a family programme \"01 November 2026 - 28 March 2027\"; online TICKETS link."
+      },
+      "National Archaeological Museum": {
+        "url": "https://www.namuseum.gr/en/",
+        "sourceType": "official public operator (Hellenic Ministry of Culture museum)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Exhibition \"Pylos of Nestor: A Mycenaean Kingdom Revealed\" 26 May 2026 to 31 Jan 2027, William Kentridge \"Imitate the sleep of stones\" 30 Oct 2026 to 24 Jan 2027; notice on Galleries 7, 8 and 11 dated 23 Oct 2026 (body not readable)."
+      },
+      "Museum of Cycladic Art": {
+        "url": "https://cycladic.gr/en/episkeftheite-to-mouseio/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Home page banner \"OPEN TODAY UNTIL 17:00\"; Eugenia Vereli project \"OCTOBER 14 UNTIL DECEMBER 14, 2026\". Neophytou Douka entrance under construction, entry via Stathatos Mansion."
+      },
+      "Byzantine and Christian Museum": {
+        "url": "https://www.byzantinemuseum.gr/en/",
+        "sourceType": "official public operator (Hellenic Ministry of Culture museum)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published weekly hours and 2026 \"Exhibit of the month\" for May 2026; temporary exhibition on the Otranto shipwreck (no dates given)."
+      },
+      "Goulandris Museum of Modern Art": {
+        "url": "https://www.goulandris.gr/en",
+        "sourceType": "operator's own site (B&E Goulandris Foundation)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Exhibition \"BELLE ÉPOQUE\" 31.10.2026 to 15.02.2027 in Athens; online ticket links for permanent collection and temporary exhibition."
+      },
+      "EMST National Museum of Contemporary Art": {
+        "url": "https://www.emst.gr/en",
+        "sourceType": "official public operator (national museum)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Today the museum is open 11:00 - 19:00\"; \"An Ode to Things. Niki Kanagini. Retrospective\" 2 April 2026 - 14 February 2027."
+      },
+      "Jewish Museum of Greece": {
+        "url": "https://www.jewishmuseum.gr/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Like Hunted Birds\": Greek Jews After WWII at the Bathhouse of the Winds, 8 Kyristou Street, 25 May to 30 November 2026, 9:30-16:30 daily except Tuesday."
+      },
+      "Ilias Lalaounis Jewelry Museum": {
+        "url": "https://www.lalaounis-jewelrymuseum.gr/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"ILJM Art Fair 2026\" Saturday 5 and Sunday 6 December, 11:00-19:00, free entrance; e-ticket link."
+      },
+      "Panathenaic Stadium": {
+        "url": "https://www.panathenaicstadium.gr/en/visit/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Open daily\"; 2026 notices on track closures in September and marble cleaning and conservation work; prices \"from 01.10.2025\"."
+      },
+      "Spondi": {
+        "url": "https://www.spondi.gr/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online \"Reservation form\" and \"© 2026 Spondi Restaurant\"."
+      },
+      "Varoulko Seaside": {
+        "url": "https://www.varoulko.gr/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"BOOK A TABLE\" online booking and published daily hours."
+      },
+      "Karamanlidika": {
+        "url": "https://www.karamanlidika.gr/kratisi/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Per-branch \"Κράτηση\" online booking; footer \"2016 - 2026\"."
+      },
+      "Cookoovaya": {
+        "url": "https://www.cookoovaya.gr/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"book Athens\" online booking with published daily hours."
+      },
+      "Hytra": {
+        "url": "https://www.hytra.gr/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online RESERVATION link; Valentine's menu file dated February 2026."
+      },
+      "Klimataria": {
+        "url": "https://www.klimataria.gr/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published daily hours and live-music schedule; footer \"© 2026\"."
+      },
+      "Feyrouz": {
+        "url": "https://www.feyrouz.gr/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Athens menu PDF uploaded in a 2026/09 folder; handmade Levantine street food and lahmajoun."
+      },
+      "Lukumades": {
+        "url": "https://www.lukumades.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Footer \"©LUKUMADES 2026\"; no hours or menu readable."
+      },
+      "Mokka": {
+        "url": "https://mokka.coffee/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Coffees listed with 2026 roast dates such as \"21/10/2026\"; \"FOUR GENERATIONS OF ROASTERS ARE WORKING IN THE SAME BUILDING SINCE 1923\"."
+      },
+      "Little Kook": {
+        "url": "https://www.littlekook.gr/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current Halloween theme promoted: \"Shadows, smoke and strange scenes where visitors become part of the story\" (no dates)."
+      },
+      "The Clumsies": {
+        "url": "https://theclumsies.gr/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Reservations are made through the website or via phone, and response is immediate\"; described as an all-day venue. Linked menus dated 2023."
+      },
+      "Baba au Rum": {
+        "url": "https://www.babaaurum.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published hours and \"© 2026 babaaurum.com\"."
+      },
+      "Line Athens": {
+        "url": "https://www.lineathens.gr/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online Reservations link; no 2026-dated content."
+      },
+      "360 Cocktail Bar": {
+        "url": "https://www.three-sixty.gr/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Book Your Table\" link and published hours; serves cocktails, coffee, brunch and dinner with Acropolis views."
+      },
+      "Brettos": {
+        "url": "https://www.brettosplaka.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Footer \"© 2026, Brettos Plaka\"; site quotes \"Brettos was established in 1909.\""
+      },
+      "A for Athens": {
+        "url": "https://www.aforathens.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Book a table\" and \"Book your room\" links; no 2026-dated content."
+      }
+    }
+  },
   "Marrakech, Morocco": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-25",
