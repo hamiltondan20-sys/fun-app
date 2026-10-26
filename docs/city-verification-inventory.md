@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 42.
-- Classifier-passed (published, not fully documented in that format): 150.
+- Source-verified (complete dated evidence format): 44.
+- Classifier-passed (published, not fully documented in that format): 148.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -314,7 +314,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Milos, Greece | milos | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Mombasa, Kenya | mombasa | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
 | Montpellier, France | montpellier | held-back | ready-for-content-draft | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
-| Montreal, Canada | montreal | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Montreal, Canada | montreal | source-verified | source-checked | 25 | 53 | 15 | 15 | None |
 | Moscow, Russia | moscow | classifier-passed | not-reviewed | 0 | 8 | 15 | 4 | None |
 | Moshi, Tanzania | moshi | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Mount Fuji, Japan | mount-fuji | classifier-passed | not-reviewed | 0 | 8 | 15 | 4 | None |
@@ -379,7 +379,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Pittsburgh, United States | pittsburgh | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Playa del Carmen, Mexico | playa-del-carmen | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Portland, United States | portland | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Porto, Portugal | porto | classifier-passed | not-reviewed | 0 | 20 | 15 | 11 | None |
+| Porto, Portugal | porto | source-verified | source-checked | 25 | 42 | 15 | 15 | None |
 | Portsmouth, Dominica | portsmouth | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Positano, Italy | positano | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Prague, Czechia | prague | source-verified | source-checked | 28 | 50 | 15 | 15 | None |

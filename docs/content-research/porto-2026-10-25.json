@@ -1,0 +1,656 @@
+{
+  "city": "Porto, Portugal",
+  "checkedOn": "2026-10-25",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Livraria Lello",
+      "kind": "landmark",
+      "url": "https://www.livrarialello.pt/en",
+      "sourceType": "operator's own site",
+      "address": "Rua das Carmelitas, 144, 4050-161 Porto, Portugal",
+      "operatingEvidence": "Live 2026 cultural programme, e.g. a 29 Oct talk by Teolinda Gersão with free entrance; tickets sold at tickets.livrarialello.pt and usable \"toward the purchase of a book\".",
+      "hours": "\"Open daily, 9:00 AM – 7:30 PM\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Torre dos Clérigos",
+      "kind": "landmark",
+      "url": "https://www.torredosclerigos.pt/en/",
+      "sourceType": "operator's own site",
+      "address": "R. de São Filipe de Nery, 4050-546 Porto",
+      "operatingEvidence": "Dated 2026 news and events, including daily pipe organ concerts in October (posted 1 Oct 2026) and a 22 Oct 2026 article; \"Buy Tickets\" and \"Book now\" links.",
+      "hours": "\"Todos os dias 09h00 às 19h00\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Palácio da Bolsa",
+      "kind": "landmark",
+      "url": "https://palaciodabolsa.com/en/",
+      "sourceType": "operator's own site",
+      "address": "Rua Ferreira Borges, 4050-253 Porto",
+      "operatingEvidence": "Live booking link: \"Buy your tickets\" for guided tours. No dated 2026 notices found.",
+      "hours": "not published (\"confirm availability\")",
+      "confidence": "medium"
+    },
+    {
+      "name": "Fundação de Serralves",
+      "kind": "museum",
+      "url": "https://www.serralves.pt/en/",
+      "sourceType": "operator's own site",
+      "address": "Rua D. João de Castro, 210, 4150-417 Porto Portugal (from https://www.serralves.pt/en/institucional-serralves/contactos/)",
+      "operatingEvidence": "Current exhibitions including Alice Neel \"Beautifully Imperfect\" (16 Jul 2026 to 17 Jan 2027), Joan Miró \"Elective Affinities\" (16 Oct 2026 to 7 Mar 2027) and Frank Gehry \"The Century of Gehry\" (to 10 Jan 2027). Visit page lists a €24 general ticket.",
+      "hours": "not readable (visit page shows \"Hours OCT-MAR\" and \"Hours APR-SEPT\" headings without times)",
+      "confidence": "high"
+    },
+    {
+      "name": "Mercado do Bolhão",
+      "kind": "market",
+      "url": "https://mercadobolhao.pt/contactos",
+      "sourceType": "official public operator (Mercado do Bolhão, City of Porto market)",
+      "address": "Rua Formosa, 322 4000-248 Porto",
+      "operatingEvidence": "2026 news items, e.g. 22 Oct 2026 Repair Café and a 21 Sep 2026 report of 59,000 visitors for the fourth reopening anniversary.",
+      "hours": "Market \"Seg-Sex: 08h - 20h\", \"Sáb: 08h - 18h\", \"Dom: Encerrado\"; restaurants Mon–Sat 08h–00h",
+      "confidence": "high"
+    },
+    {
+      "name": "Casa da Música",
+      "kind": "landmark",
+      "url": "https://www.casadamusica.com/en/",
+      "sourceType": "operator's own site",
+      "address": "Av. da Boavista, 604-610 4149-071 Porto",
+      "operatingEvidence": "Live event listings, e.g. 30 Oct Schubert and Strauss in Sala Suggia; 27 Oct Adriana Calcanhotto marked sold out.",
+      "hours": "not published on page read (guided tours described without times)",
+      "confidence": "high"
+    },
+    {
+      "name": "Museu Nacional Soares dos Reis",
+      "kind": "museum",
+      "url": "https://museusoaresdosreis.gov.pt/visit/?lang=en",
+      "sourceType": "official public operator (national museum, .gov.pt)",
+      "address": "RUA D. MANUEL II 44, 4050-342 PORTO, PORTUGAL",
+      "operatingEvidence": "Current visit page with hours and \"General ticket: €10.00\"; long-term exhibition listed \"In Permanence\". No dated 2026 item found.",
+      "hours": "Tuesday to Sunday \"10:00 am to 18h00 (last entry at 17h30)\"; \"Closed on Mondays, 1 January, Easter Sunday, 1 May, 24 June and 25 December\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Museu do Carro Eléctrico",
+      "kind": "museum",
+      "url": "https://www.museudocarroelectrico.pt",
+      "sourceType": "official public operator (STCP, Porto public transport company)",
+      "address": "Alameda Basílio Teles, 51, 4150-127 Porto",
+      "operatingEvidence": "Page updated 20 Oct 2026 with upcoming events, including \"Guarda-freio por um século\" on 7 and 9 November and \"A Cor está na Rua!\" on 21 November.",
+      "hours": "Tuesday to Sunday 10:00–18:00, last admission 30 minutes before closing; closed 25 Dec and 1 Jan",
+      "confidence": "high"
+    },
+    {
+      "name": "SEA LIFE Porto",
+      "kind": "museum",
+      "url": "https://www.visitsealife.com/porto/encontrar/antes-de-visitar/localizacao-e-como-chegar/",
+      "sourceType": "operator's own site (Merlin Entertainments)",
+      "address": "1ª Rua Particular do Castelo do Queijo, 4100-379 Porto",
+      "operatingEvidence": "Online ticketing (Bilhete Básico 19€, annual pass 44€) and a \"Laboratório de Halloween\" event 30.10.–1.11.; footer \"© Merlin Entertainments 2026\".",
+      "hours": "\"10:00 - 19:00 (Última entrada às 18:15h)\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Taylor's Port Cellars",
+      "kind": "landmark",
+      "url": "https://www.taylor.pt/en/visit-taylors/",
+      "sourceType": "operator's own site",
+      "address": "Rua do Choupelo nº 250, 4400-088 Vila Nova de Gaia, Portugal",
+      "operatingEvidence": "Current visit page with booking (\"Book your visit and choose the experience\"), audio tour in 13 languages and daily hours.",
+      "hours": "Cellars daily 10:00–18:15; Tasting Room daily 10:00–19:30 (holiday exceptions)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Graham's 1890 Lodge",
+      "kind": "landmark",
+      "url": "https://www.grahams-port.com/1890-lodge",
+      "sourceType": "operator's own site",
+      "address": "\"Rua Rei Ramiro, 514 4400-281 Vila Nova de Gaia\" (on foot); \"Rua do Agro, 141\" (by car)",
+      "operatingEvidence": "Live \"Book now\" visits and \"Manage my booking\"; visits require reservation, shop needs no booking; footer \"© Graham's, 2026\".",
+      "hours": "Apr 1–Oct 31: visits and tastings 10:00–17:30, shop 10:00–19:30; Nov 1–Mar 31: visits 10:00–17:00, tastings 11:00–17:30, shop 9:30–18:30",
+      "confidence": "high"
+    },
+    {
+      "name": "Caves Cálem",
+      "kind": "landmark",
+      "url": "https://www.calem.pt",
+      "sourceType": "operator's own site",
+      "address": "Avenida de Diogo Leite, 344, Vila Nova de Gaia",
+      "operatingEvidence": "\"Marque já a sua visita!\" with booking via tour.calem.pt, which offers \"Tour, Taste & Fado\"; footer \"2026 ©\".",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Tapabento",
+      "kind": "meal",
+      "url": "https://www.tapabento.com",
+      "sourceType": "operator's own site",
+      "address": "Rua da Madeira, nº 221 | 4000-330 Porto | Portugal",
+      "operatingEvidence": "Current hours and booking notice: \"Todas as reservas têm 10 minutos de tolerância\"; footer \"© 2026\".",
+      "hours": "Wed, Fri–Sun lunch 12h00–17h30, dinner 19h00–22h00; Thu lunch 12h00–15h00, dinner 19h00–22h00; \"Fechamos às Segundas e Terças-feiras\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Cantinho do Avillez (Mouzinho da Silveira)",
+      "kind": "meal",
+      "url": "https://www.cantinhodoavillez.pt/pt/restaurantes/mouzinho-da-silveira.html",
+      "sourceType": "operator's own site",
+      "address": "Rua Mouzinho da Silveira, 166, 4050-416 Porto",
+      "operatingEvidence": "Live online booking (\"RESERVAR\") and current hours; no dated 2026 notice found.",
+      "hours": "Open every day, 12:30–23:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Cafeína",
+      "kind": "meal",
+      "url": "https://www.cafeina.pt",
+      "sourceType": "operator's own site",
+      "address": "Rua do Padrão, 100, 4150-557 Porto",
+      "operatingEvidence": "Full menu PDF dated 28.7.2026 and \"Grupo Cafeína 2026 ©\"; online and group booking.",
+      "hours": "Mon–Thu 12:30–15:00 | 19:30–22:30; Fri–Sat 12:30–15:30 | 19:30–23:00; Sun 12:30–15:30 | 19:30–22:30",
+      "confidence": "high"
+    },
+    {
+      "name": "Café Santiago (Passos Manuel)",
+      "kind": "meal",
+      "url": "https://www.cafesantiago.pt",
+      "sourceType": "operator's own site",
+      "address": "Rua Passos Manuel 226 4000-382 Porto, Portugal",
+      "operatingEvidence": "Hours notice listing Monday–Saturday service and Sunday closed; site copyright 2024, no 2026 content.",
+      "hours": "Monday–Saturday 12:00–22:45; Sunday closed",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Yeatman Gastronomic Restaurant",
+      "kind": "meal",
+      "url": "https://www.the-yeatman-hotel.com/en/food/restaurant/",
+      "sourceType": "operator's own site",
+      "address": "Rua do Choupelo, (Santa Marinha) 4400-088 Vila Nova de Gaia, Porto",
+      "operatingEvidence": "Booking via CoverManager; 2026 awards listed (Wine Spectator 2026 Grand Award, Repsol 2026 Three Suns); \"2 Michelin stars\".",
+      "hours": "Dinner only, \"From Tuesday to Saturday\", seatings 6:30pm, 7:30pm, 8:30pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Dick's Bar & Bistro (The Yeatman)",
+      "kind": "bar",
+      "url": "https://www.the-yeatman-hotel.com/en/food/dick-s-bar-bistro/",
+      "sourceType": "operator's own site",
+      "address": "Rua do Choupelo, (Santa Marinha) 4400-088 Vila Nova de Gaia, Porto",
+      "operatingEvidence": "Bookings by email, phone or \"BOOK NOW\"; afternoon tea \"daily ... from 15:00 to 17:00\" with advance reservation required; footer © 2026.",
+      "hours": "\"Sunday to Thursday: 10:00 - 00:00\"; \"Friday & Saturday: 10:00 - 01:00\"; piano bar Tue–Sat 18:30–21:30",
+      "confidence": "high"
+    },
+    {
+      "name": "Majestic Café",
+      "kind": "cafe",
+      "url": "https://www.cafemajestic.com",
+      "sourceType": "operator's own site",
+      "address": "Rua Santa Catarina, 112 4000-442 PORTO",
+      "operatingEvidence": "Current hours notice \"Aberto de Segunda a Sábado das 9:00h às 23:00h\"; footer \"© 2026 MAJESTIC CAFÉ\".",
+      "hours": "Monday–Saturday 9:00–23:00 (Sunday not mentioned)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Guarany Café",
+      "kind": "cafe",
+      "url": "https://www.cafeguarany.com",
+      "sourceType": "operator's own site",
+      "address": "Avenida dos Aliados, 85/89 4000-066 Porto • Portugal",
+      "operatingEvidence": "Hours notice \"Aberto de Domingo a Domingo das 9:00h às 22:00h\" and \"Reserve a sua mesa\" link (reservation page returned an error); footer \"© 2026\".",
+      "hours": "Daily 9:00–22:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Royal Cocktail Club",
+      "kind": "bar",
+      "url": "https://www.theroyalcocktailclub.pt",
+      "sourceType": "operator's own site",
+      "address": "Rua da Fábrica nº105 4050-247 Porto, Portugal",
+      "operatingEvidence": "Current hours and \"Reservas\" booking link; no explicit 2026 date in page text.",
+      "hours": "Mon–Thu 19:00–02:00; Fri–Sat 19:00–03:00; Sun 19:00–02:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Base Porto",
+      "kind": "bar",
+      "url": "https://www.baseporto.com",
+      "sourceType": "operator's own site",
+      "address": "BASE – Quiosque Jardim, Passeio dos Clérigos R. das Carmelitas 151 4050-163 Porto",
+      "operatingEvidence": "Current hours notice; footer \"© 2026 Base Porto\"; no seasonal closure notice.",
+      "hours": "\"Domingo a Quinta: 11:00 às 01:00\"; \"Sexta e Sábado e Vésperas de Feriado: 11:00 às 02:00\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Manteigaria (Bolhão)",
+      "kind": "bakery",
+      "url": "https://manteigaria.com/as-nossas-fabricas/bolhao/",
+      "sourceType": "operator's own site",
+      "address": "Rua de Alexandre Braga nº 24, 4000-049 Porto",
+      "operatingEvidence": "Branch page with current hours; no dated 2026 content.",
+      "hours": "\"Horário: 08h00 – 21h00\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Nata Lisboa (Rua das Flores)",
+      "kind": "bakery",
+      "url": "https://natalisboa.com/moradas-pt",
+      "sourceType": "operator's own site",
+      "address": "Rua das Flores, 291 4050 - 267 Porto | Portugal",
+      "operatingEvidence": "Current addresses-and-hours page listing the Flores and Santa Catarina coffee shops; no dated 2026 content.",
+      "hours": "Sunday–Thursday 9:00–20:00; Friday–Saturday 9:00–24:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Padaria Ribeiro (Baixa)",
+      "kind": "bakery",
+      "url": "https://padariaribeiro.com/contactos",
+      "sourceType": "operator's own site",
+      "address": "Praça Guilherme Gomes Fernandes, 21 4050-526 Porto",
+      "operatingEvidence": "Contacts page with current hours; footer \"©2026 Padaria Ribeiro\".",
+      "hours": "\"Segunda a Domingo 08H00 às 20H00\"",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Ribeira",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Luis I Bridge views",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Livraria Lello area",
+      "reason": "generic, not a place (Livraria Lello itself confirmed)",
+      "url": ""
+    },
+    {
+      "name": "Riverside walking",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Pastel and coffee stops",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint hopping",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Douro private boat day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Port tasting upgrade",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Luxury riverside hotel stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset at Jardim do Morro",
+      "reason": "generic activity; no operator page for the garden was read",
+      "url": ""
+    },
+    {
+      "name": "Wine-cellar evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Ribeira dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Riverside snack day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee in Cedofeita",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Ribeira wandering",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Bookshop-and-viewpoint day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Bridge views",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Port cellar and dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Foz waterfront",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Azulejo church route",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Bolhão market stop",
+      "reason": "generic, not a place (Mercado do Bolhão confirmed separately)",
+      "url": ""
+    },
+    {
+      "name": "Mercado do Bolhao grazing",
+      "reason": "generic, not a place (Mercado do Bolhão confirmed separately)",
+      "url": ""
+    },
+    {
+      "name": "Funicular ride",
+      "reason": "generic; Funicular dos Guindais operator page not found (STCP URL returned 404) and no current official timetable read",
+      "url": "https://www.stcp.pt/pt/turismo/funicular-dos-guindais/"
+    },
+    {
+      "name": "Euskalduna Studio",
+      "reason": "certificate error on official site (\"unable to verify the first certificate\"); not bypassed",
+      "url": "https://www.euskalduna.pt"
+    },
+    {
+      "name": "World of Discoveries",
+      "reason": "official site shows hours (Tue–Fri 10h–18h, weekends 10h–19h, closed Mondays) but no street address on pages read",
+      "url": "https://www.worldofdiscoveries.com"
+    },
+    {
+      "name": "Casa Guedes",
+      "reason": "official site gives no street addresses or hours (branches only as map links); latest dated content 2025",
+      "url": "https://casaguedes.pt"
+    },
+    {
+      "name": "Combi Coffee",
+      "reason": "official site (redirect target) returned HTTP 429 Too Many Requests on repeated attempts",
+      "url": "https://www.combi-coffee.com/"
+    },
+    {
+      "name": "Do Norte Cafe",
+      "reason": "no official website found; donortecafe.pt did not resolve",
+      "url": "https://www.donortecafe.pt"
+    },
+    {
+      "name": "Negra Cafe",
+      "reason": "no official website found",
+      "url": ""
+    },
+    {
+      "name": "7g Roaster",
+      "reason": "official site gives address (Rua França 52, Vila Nova de Gaia) but no hours or operating evidence beyond a copyright line",
+      "url": "https://roaster.7groaster.pt"
+    },
+    {
+      "name": "C'alma Coffee Room",
+      "reason": "no official website found",
+      "url": ""
+    },
+    {
+      "name": "17º Restaurant & Bar",
+      "reason": "no official website found; 17restaurante.pt did not resolve",
+      "url": "https://www.17restaurante.pt"
+    },
+    {
+      "name": "Fábrica da Nata",
+      "reason": "official site lists Porto shops but page is filled with unrelated gambling content and has no 2026 evidence; treated as unreliable",
+      "url": "https://fabricadanata.pt"
+    },
+    {
+      "name": "Confeitaria do Bolhão",
+      "reason": "address shown (Rua Formosa 339) but no hours or current operating evidence",
+      "url": "https://confeitariadobolhao.com"
+    },
+    {
+      "name": "Teleférico de Gaia (Gaia Cable Car)",
+      "reason": "hours shown (25 Oct–31 Dec, daily 10h–18h) but no station address, only company address",
+      "url": "https://www.gaiacablecar.com"
+    },
+    {
+      "name": "O Paparico",
+      "reason": "HTTP 403 Forbidden",
+      "url": "https://www.opaparico.com"
+    },
+    {
+      "name": "WOW Porto",
+      "reason": "HTTP 403 Forbidden",
+      "url": "https://wow.pt/en/"
+    },
+    {
+      "name": "Pedro Lemos",
+      "reason": "SSL error (WRONG_VERSION_NUMBER); not bypassed",
+      "url": "https://www.pedrolemos.net"
+    },
+    {
+      "name": "Antiqvvm",
+      "reason": "official page gives no address, hours or dated content",
+      "url": "https://www.antiqvvm.pt"
+    },
+    {
+      "name": "Zenith Brunch & Cocktails",
+      "reason": "presumed domain zenithcaffe.pt redirects to another brand's site; official site not established",
+      "url": "https://www.zenithcaffe.pt"
+    },
+    {
+      "name": "Fábrica Coffee Roasters",
+      "reason": "HTTP 429 Too Many Requests",
+      "url": "https://www.fabricacoffeeroasters.com"
+    },
+    {
+      "name": "So Coffee Roasters",
+      "reason": "certificate error; not bypassed",
+      "url": "https://socoffeeroasters.com"
+    },
+    {
+      "name": "Mercado Bom Sucesso",
+      "reason": "official page returned nothing readable",
+      "url": "https://www.mercadobomsucesso.pt"
+    },
+    {
+      "name": "Sandeman Cellars",
+      "reason": "visit page returned HTTP 404",
+      "url": "https://www.sandeman.com/visit-us/porto"
+    },
+    {
+      "name": "Igreja do Carmo",
+      "reason": "presumed domain did not resolve; no official page read",
+      "url": "https://www.igrejadocarmo.pt"
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Livraria Lello",
+        "Torre dos Clérigos",
+        "Fundação de Serralves",
+        "Palácio da Bolsa"
+      ],
+      "bestFirstTimers": [
+        "Torre dos Clérigos",
+        "Livraria Lello",
+        "Mercado do Bolhão",
+        "Taylor's Port Cellars"
+      ],
+      "bestRestaurants": [
+        "Tapabento",
+        "Cafeína",
+        "Cantinho do Avillez (Mouzinho da Silveira)",
+        "The Yeatman Gastronomic Restaurant"
+      ],
+      "bestBudget": [
+        "Mercado do Bolhão",
+        "Café Santiago (Passos Manuel)",
+        "Padaria Ribeiro (Baixa)",
+        "Museu Nacional Soares dos Reis"
+      ],
+      "bestLuxury": [
+        "The Yeatman Gastronomic Restaurant",
+        "Graham's 1890 Lodge",
+        "Dick's Bar & Bistro (The Yeatman)"
+      ],
+      "bestCouples": [
+        "Caves Cálem",
+        "Dick's Bar & Bistro (The Yeatman)",
+        "Casa da Música",
+        "Cafeína"
+      ],
+      "bestKids": [
+        "SEA LIFE Porto",
+        "Museu do Carro Eléctrico",
+        "Fundação de Serralves"
+      ],
+      "bestSolo": [
+        "Livraria Lello",
+        "Majestic Café",
+        "Casa da Música",
+        "Museu Nacional Soares dos Reis"
+      ],
+      "bestUnique": [
+        "Museu do Carro Eléctrico",
+        "Caves Cálem",
+        "Casa da Música",
+        "Mercado do Bolhão"
+      ],
+      "bestBreakfast": [
+        "Majestic Café",
+        "Guarany Café",
+        "Padaria Ribeiro (Baixa)",
+        "Nata Lisboa (Rua das Flores)"
+      ],
+      "bestLunch": [
+        "Tapabento",
+        "Café Santiago (Passos Manuel)",
+        "Mercado do Bolhão",
+        "Cantinho do Avillez (Mouzinho da Silveira)"
+      ],
+      "bestDinner": [
+        "Tapabento",
+        "Cafeína",
+        "The Yeatman Gastronomic Restaurant",
+        "Cantinho do Avillez (Mouzinho da Silveira)"
+      ],
+      "bestCocktails": [
+        "The Royal Cocktail Club",
+        "Base Porto"
+      ],
+      "bestBakeries": [
+        "Manteigaria (Bolhão)",
+        "Nata Lisboa (Rua das Flores)",
+        "Padaria Ribeiro (Baixa)"
+      ],
+      "bestCoffee": [
+        "Majestic Café",
+        "Guarany Café",
+        "Nata Lisboa (Rua das Flores)"
+      ]
+    },
+    "queries": {
+      "Livraria Lello": "Livraria Lello Rua das Carmelitas 144 Porto",
+      "Torre dos Clérigos": "Torre dos Clérigos Rua de São Filipe de Nery Porto",
+      "Palácio da Bolsa": "Palácio da Bolsa Rua Ferreira Borges Porto",
+      "Fundação de Serralves": "Fundação de Serralves Rua D. João de Castro 210 Porto",
+      "Mercado do Bolhão": "Mercado do Bolhão Rua Formosa 322 Porto",
+      "Casa da Música": "Casa da Música Avenida da Boavista 604 Porto",
+      "Museu Nacional Soares dos Reis": "Museu Nacional Soares dos Reis Rua D. Manuel II 44 Porto",
+      "Museu do Carro Eléctrico": "Museu do Carro Eléctrico Alameda Basílio Teles 51 Porto",
+      "SEA LIFE Porto": "SEA LIFE Porto 1ª Rua Particular do Castelo do Queijo Porto",
+      "Taylor's Port Cellars": "Taylor's Port Rua do Choupelo 250 Vila Nova de Gaia",
+      "Graham's 1890 Lodge": "Graham's 1890 Lodge Rua Rei Ramiro 514 Vila Nova de Gaia",
+      "Caves Cálem": "Caves Cálem Avenida de Diogo Leite 344 Vila Nova de Gaia",
+      "Tapabento": "Tapabento Rua da Madeira 221 Porto",
+      "Cantinho do Avillez (Mouzinho da Silveira)": "Cantinho do Avillez Rua Mouzinho da Silveira 166 Porto",
+      "Cafeína": "Cafeína Rua do Padrão 100 Porto",
+      "Café Santiago (Passos Manuel)": "Café Santiago Rua Passos Manuel 226 Porto",
+      "The Yeatman Gastronomic Restaurant": "The Yeatman Rua do Choupelo Vila Nova de Gaia",
+      "Dick's Bar & Bistro (The Yeatman)": "Dick's Bar The Yeatman Rua do Choupelo Vila Nova de Gaia",
+      "Majestic Café": "Majestic Café Rua Santa Catarina 112 Porto",
+      "Guarany Café": "Guarany Café Avenida dos Aliados 85 Porto",
+      "The Royal Cocktail Club": "The Royal Cocktail Club Rua da Fábrica 105 Porto",
+      "Base Porto": "Base Porto Rua das Carmelitas 151 Porto",
+      "Manteigaria (Bolhão)": "Manteigaria Rua de Alexandre Braga 24 Porto",
+      "Nata Lisboa (Rua das Flores)": "Nata Lisboa Rua das Flores 291 Porto",
+      "Padaria Ribeiro (Baixa)": "Padaria Ribeiro Praça Guilherme Gomes Fernandes 21 Porto"
+    },
+    "summary": "Bookshops, towers, museums, Gaia port cellars and the Bolhão market, with breakfast cafés, bakeries, dinners and cocktail bars checked against their own websites.",
+    "highlights": [
+      "Livraria Lello",
+      "Torre dos Clérigos",
+      "Fundação de Serralves",
+      "Mercado do Bolhão"
+    ],
+    "tip": "Plan around closures: Museu Nacional Soares dos Reis shuts on Mondays, Tapabento on Mondays and Tuesdays, and both Mercado do Bolhão and Café Santiago on Sundays.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mon, Tue, Sun",
+        "copy": "Museu Nacional Soares dos Reis and Museu do Carro Eléctrico open Tuesday to Sunday, and Tapabento closes Mondays and Tuesdays. Mercado do Bolhão and Café Santiago (Passos Manuel) are closed on Sundays."
+      },
+      {
+        "label": "Tickets",
+        "value": "Buy ahead",
+        "copy": "Livraria Lello sells tickets online, and each one can be put toward the purchase of a book. Serralves' €24 general ticket covers the museum, park, villa and House of Cinema, and children under 12 go free."
+      },
+      {
+        "label": "Booking",
+        "value": "Reserve visits",
+        "copy": "Graham's 1890 Lodge requires a reservation for visits, though its shop needs no booking. Tapabento holds reservations for 10 minutes, and afternoon tea at Dick's Bar & Bistro (The Yeatman) must be booked in advance."
+      },
+      {
+        "label": "Rules",
+        "value": "Age and access",
+        "copy": "The Yeatman Gastronomic Restaurant admits children aged 12 and over, serves dinner only from Tuesday to Saturday, and suggests Dick's Bar & Bistro for younger children. Taylor's Port Cellars allows only guide dogs inside the cellars."
+      }
+    ],
+    "dek": "Book the Gaia cellar visits and Livraria Lello tickets ahead, and check the Monday and Sunday closures before you plan each day.",
+    "intro": [
+      "Porto's old centre packs its big sights close together. Livraria Lello on Rua das Carmelitas opens daily from 9:00 to 19:30, and you buy a ticket online that you can put toward a book. Its cultural programme runs through the autumn, with free talks and launches. Nearby, Torre dos Clérigos is open every day from 9:00 to 19:00 and sells tickets and bookings online. Down by the river, Palácio da Bolsa on Rua Ferreira Borges is visited by guided tour, booked through its own site, which does not publish fixed hours.",
+      "For art, Fundação de Serralves on Rua D. João de Castro has a full autumn and winter season. Alice Neel's \"Beautifully Imperfect\" runs to 17 January 2027, Frank Gehry's \"The Century of Gehry\" to 10 January 2027, and Joan Miró's \"Elective Affinities\" in Casa de Serralves to 7 March 2027. The €24 general ticket covers the museum, park, villa and House of Cinema, and children under 12 enter free. In the centre, Museu Nacional Soares dos Reis charges €10 and closes on Mondays.",
+      "Across the river in Vila Nova de Gaia, the port houses run their own visits. Taylor's Port Cellars on Rua do Choupelo open daily, with an audio tour in 13 languages. Graham's 1890 Lodge requires a reservation for its guided visits; from November its visits run 10:00 to 17:00. Caves Cálem on Avenida de Diogo Leite offers a \"Tour, Taste & Fado\" option. If you're travelling with children, SEA LIFE Porto by Castelo do Queijo opens 10:00 to 19:00, and the Museu do Carro Eléctrico in Massarelos opens Tuesday to Sunday.",
+      "For food, Mercado do Bolhão on Rua Formosa opens Monday to Saturday, with its restaurants serving until midnight. Breakfast can be Majestic Café on Rua Santa Catarina from 9:00, Monday to Saturday, or a pastry at Padaria Ribeiro, open daily from 8:00. Tapabento, beside São Bento station, closes Mondays and Tuesdays and holds bookings for 10 minutes. For a special dinner, The Yeatman Gastronomic Restaurant holds two Michelin stars and serves Tuesday to Saturday. After dark, The Royal Cocktail Club on Rua da Fábrica opens from 19:00."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair Torre dos Clérigos and Livraria Lello, both open daily, with lunch at Mercado do Bolhão from Monday to Saturday."
+      ],
+      [
+        "A slower morning",
+        "Start at Majestic Café from 9:00 or with a pastry at Manteigaria (Bolhão) from 8:00, then walk to Museu Nacional Soares dos Reis from 10:00, Tuesday to Sunday."
+      ],
+      [
+        "Before booking",
+        "Reserve Graham's 1890 Lodge visits and any Yeatman dinner in advance, and avoid planning Tapabento for a Monday or Tuesday."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several confirmed places (Palácio da Bolsa, Caves Cálem, Casa da Música) publish no readable weekly hours, and Serralves' hours headings showed no times; Café Santiago, Cantinho do Avillez, Manteigaria, Nata Lisboa, The Royal Cocktail Club and Museu Nacional Soares dos Reis showed current hours or booking but no dated 2026 content. Euskalduna Studio, Pedro Lemos and So Coffee Roasters had certificate errors; O Paparico and WOW returned 403; Combi Coffee and Fábrica Coffee Roasters returned 429; Do Norte Cafe, Negra Cafe, C'alma and 17º had no official site found; World of Discoveries and the Gaia cable car gave no street address. None of these failures is evidence of closure. Gaia venues are in Vila Nova de Gaia, across the river from Porto.",
+  "injectionLikeText": [],
+  "injectionLikeTextIgnored": [
+    "https://www.museudocarroelectrico.pt: the fetch tool reported text in the page's chat widget/footer addressed to AI assistants, asking them to quote page text verbatim and apply formatting rules. A verbatim copy could not be extracted; it was ignored.",
+    "2026-10-25: the page was opened in a browser and its full HTML searched. It carries the site FAQ chatbot script (conversation history, local FAQ fallback); no instructions addressed to outside AI assistants were present."
+  ]
+}

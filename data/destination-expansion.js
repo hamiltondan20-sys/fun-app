@@ -4217,4 +4217,216 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 29 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Porto, Portugal: source review of 2026-10-25 (docs/content-research/porto-2026-10-25.md).
+  {
+    const cityKey = "Porto, Portugal";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Livraria Lello","Torre dos Clérigos","Fundação de Serralves","Palácio da Bolsa"],
+      bestFirstTimers: ["Torre dos Clérigos","Livraria Lello","Mercado do Bolhão","Taylor's Port Cellars"],
+      bestRestaurants: ["Tapabento","Cafeína","Cantinho do Avillez (Mouzinho da Silveira)","The Yeatman Gastronomic Restaurant"],
+      bestBudget: ["Mercado do Bolhão","Café Santiago (Passos Manuel)","Padaria Ribeiro (Baixa)","Museu Nacional Soares dos Reis"],
+      bestLuxury: ["The Yeatman Gastronomic Restaurant","Graham's 1890 Lodge","Dick's Bar & Bistro (The Yeatman)"],
+      bestCouples: ["Caves Cálem","Dick's Bar & Bistro (The Yeatman)","Casa da Música","Cafeína"],
+      bestKids: ["SEA LIFE Porto","Museu do Carro Eléctrico","Fundação de Serralves"],
+      bestSolo: ["Livraria Lello","Majestic Café","Casa da Música","Museu Nacional Soares dos Reis"],
+      bestUnique: ["Museu do Carro Eléctrico","Caves Cálem","Casa da Música","Mercado do Bolhão"],
+      bestBreakfast: ["Majestic Café","Guarany Café","Padaria Ribeiro (Baixa)","Nata Lisboa (Rua das Flores)"],
+      bestLunch: ["Tapabento","Café Santiago (Passos Manuel)","Mercado do Bolhão","Cantinho do Avillez (Mouzinho da Silveira)"],
+      bestDinner: ["Tapabento","Cafeína","The Yeatman Gastronomic Restaurant","Cantinho do Avillez (Mouzinho da Silveira)"],
+      bestCocktails: ["The Royal Cocktail Club","Base Porto"],
+      bestBakeries: ["Manteigaria (Bolhão)","Nata Lisboa (Rua das Flores)","Padaria Ribeiro (Baixa)"],
+      bestCoffee: ["Majestic Café","Guarany Café","Nata Lisboa (Rua das Flores)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Livraria Lello": "Livraria Lello Rua das Carmelitas 144 Porto",
+      "Torre dos Clérigos": "Torre dos Clérigos Rua de São Filipe de Nery Porto",
+      "Fundação de Serralves": "Fundação de Serralves Rua D. João de Castro 210 Porto",
+      "Palácio da Bolsa": "Palácio da Bolsa Rua Ferreira Borges Porto",
+      "Mercado do Bolhão": "Mercado do Bolhão Rua Formosa 322 Porto",
+      "Taylor's Port Cellars": "Taylor's Port Rua do Choupelo 250 Vila Nova de Gaia",
+      "Tapabento": "Tapabento Rua da Madeira 221 Porto",
+      "Cafeína": "Cafeína Rua do Padrão 100 Porto",
+      "Cantinho do Avillez (Mouzinho da Silveira)": "Cantinho do Avillez Rua Mouzinho da Silveira 166 Porto",
+      "The Yeatman Gastronomic Restaurant": "The Yeatman Rua do Choupelo Vila Nova de Gaia",
+      "Café Santiago (Passos Manuel)": "Café Santiago Rua Passos Manuel 226 Porto",
+      "Padaria Ribeiro (Baixa)": "Padaria Ribeiro Praça Guilherme Gomes Fernandes 21 Porto",
+      "Museu Nacional Soares dos Reis": "Museu Nacional Soares dos Reis Rua D. Manuel II 44 Porto",
+      "Graham's 1890 Lodge": "Graham's 1890 Lodge Rua Rei Ramiro 514 Vila Nova de Gaia",
+      "Dick's Bar & Bistro (The Yeatman)": "Dick's Bar The Yeatman Rua do Choupelo Vila Nova de Gaia",
+      "Caves Cálem": "Caves Cálem Avenida de Diogo Leite 344 Vila Nova de Gaia",
+      "Casa da Música": "Casa da Música Avenida da Boavista 604 Porto",
+      "SEA LIFE Porto": "SEA LIFE Porto 1ª Rua Particular do Castelo do Queijo Porto",
+      "Museu do Carro Eléctrico": "Museu do Carro Eléctrico Alameda Basílio Teles 51 Porto",
+      "Majestic Café": "Majestic Café Rua Santa Catarina 112 Porto",
+      "Guarany Café": "Guarany Café Avenida dos Aliados 85 Porto",
+      "Nata Lisboa (Rua das Flores)": "Nata Lisboa Rua das Flores 291 Porto",
+      "The Royal Cocktail Club": "The Royal Cocktail Club Rua da Fábrica 105 Porto",
+      "Base Porto": "Base Porto Rua das Carmelitas 151 Porto",
+      "Manteigaria (Bolhão)": "Manteigaria Rua de Alexandre Braga 24 Porto"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Porto" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Bookshops, towers, museums, Gaia port cellars and the Bolhão market, with breakfast cafés, bakeries, dinners and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Livraria Lello","Torre dos Clérigos","Fundação de Serralves","Mercado do Bolhão"];
+    cityGuide.tip = "Plan around closures: Museu Nacional Soares dos Reis shuts on Mondays, Tapabento on Mondays and Tuesdays, and both Mercado do Bolhão and Café Santiago on Sundays.";
+    data.destinationFacts[cityKey] = "Plan around closures: Museu Nacional Soares dos Reis shuts on Mondays, Tapabento on Mondays and Tuesdays, and both Mercado do Bolhão and Café Santiago on Sundays.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Bookshops, towers, museums, Gaia port cellars and the Bolhão market, with breakfast cafés, bakeries, dinners and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mon, Tue, Sun",
+        "copy": "Museu Nacional Soares dos Reis and Museu do Carro Eléctrico open Tuesday to Sunday, and Tapabento closes Mondays and Tuesdays. Mercado do Bolhão and Café Santiago (Passos Manuel) are closed on Sundays."
+      },
+      {
+        "label": "Tickets",
+        "value": "Buy ahead",
+        "copy": "Livraria Lello sells tickets online, and each one can be put toward the purchase of a book. Serralves' €24 general ticket covers the museum, park, villa and House of Cinema, and children under 12 go free."
+      },
+      {
+        "label": "Booking",
+        "value": "Reserve visits",
+        "copy": "Graham's 1890 Lodge requires a reservation for visits, though its shop needs no booking. Tapabento holds reservations for 10 minutes, and afternoon tea at Dick's Bar & Bistro (The Yeatman) must be booked in advance."
+      },
+      {
+        "label": "Rules",
+        "value": "Age and access",
+        "copy": "The Yeatman Gastronomic Restaurant admits children aged 12 and over, serves dinner only from Tuesday to Saturday, and suggests Dick's Bar & Bistro for younger children. Taylor's Port Cellars allows only guide dogs inside the cellars."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Book the Gaia cellar visits and Livraria Lello tickets ahead, and check the Monday and Sunday closures before you plan each day.",
+      intro: [
+        "Porto's old centre packs its big sights close together. Livraria Lello on Rua das Carmelitas opens daily from 9:00 to 19:30, and you buy a ticket online that you can put toward a book. Its cultural programme runs through the autumn, with free talks and launches. Nearby, Torre dos Clérigos is open every day from 9:00 to 19:00 and sells tickets and bookings online. Down by the river, Palácio da Bolsa on Rua Ferreira Borges is visited by guided tour, booked through its own site, which does not publish fixed hours.",
+        "For art, Fundação de Serralves on Rua D. João de Castro has a full autumn and winter season. Alice Neel's \"Beautifully Imperfect\" runs to 17 January 2027, Frank Gehry's \"The Century of Gehry\" to 10 January 2027, and Joan Miró's \"Elective Affinities\" in Casa de Serralves to 7 March 2027. The €24 general ticket covers the museum, park, villa and House of Cinema, and children under 12 enter free. In the centre, Museu Nacional Soares dos Reis charges €10 and closes on Mondays.",
+        "Across the river in Vila Nova de Gaia, the port houses run their own visits. Taylor's Port Cellars on Rua do Choupelo open daily, with an audio tour in 13 languages. Graham's 1890 Lodge requires a reservation for its guided visits; from November its visits run 10:00 to 17:00. Caves Cálem on Avenida de Diogo Leite offers a \"Tour, Taste & Fado\" option. If you're travelling with children, SEA LIFE Porto by Castelo do Queijo opens 10:00 to 19:00, and the Museu do Carro Eléctrico in Massarelos opens Tuesday to Sunday.",
+        "For food, Mercado do Bolhão on Rua Formosa opens Monday to Saturday, with its restaurants serving until midnight. Breakfast can be Majestic Café on Rua Santa Catarina from 9:00, Monday to Saturday, or a pastry at Padaria Ribeiro, open daily from 8:00. Tapabento, beside São Bento station, closes Mondays and Tuesdays and holds bookings for 10 minutes. For a special dinner, The Yeatman Gastronomic Restaurant holds two Michelin stars and serves Tuesday to Saturday. After dark, The Royal Cocktail Club on Rua da Fábrica opens from 19:00."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair Torre dos Clérigos and Livraria Lello, both open daily, with lunch at Mercado do Bolhão from Monday to Saturday."
+        ],
+        [
+          "A slower morning",
+          "Start at Majestic Café from 9:00 or with a pastry at Manteigaria (Bolhão) from 8:00, then walk to Museu Nacional Soares dos Reis from 10:00, Tuesday to Sunday."
+        ],
+        [
+          "Before booking",
+          "Reserve Graham's 1890 Lodge visits and any Yeatman dinner in advance, and avoid planning Tapabento for a Monday or Tuesday."
+        ]
+      ],
+      trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
+  // Montreal, Canada: source review of 2026-10-25 (docs/content-research/montreal-2026-10-25.md).
+  {
+    const cityKey = "Montreal, Canada";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Notre-Dame Basilica","Pointe-à-Callière","Saint Joseph's Oratory","Mount Royal Park"],
+      bestFirstTimers: ["Notre-Dame Basilica","Montreal Museum of Fine Arts","Jean-Talon Market","Mount Royal Park"],
+      bestRestaurants: ["L'Express","Le Club Chasse et Pêche","Le Vin Papillon","Beauty's Luncheonette"],
+      bestBudget: ["Mount Royal Park","Parc La Fontaine","Atwater Market","Fairmount Bagel"],
+      bestLuxury: ["Le Club Chasse et Pêche","Montreal Museum of Fine Arts","Le Vin Papillon"],
+      bestCouples: ["La Grande Roue de Montréal","Le Vin Papillon","Le Mal Nécessaire","Marguerite-Bourgeoys Museum"],
+      bestKids: ["Montreal Science Centre","Pointe-à-Callière","La Grande Roue de Montréal","Maisonneuve Market"],
+      bestSolo: ["McCord Stewart Museum","Pikolo Espresso Bar","Château Ramezay","Jean-Talon Market"],
+      bestUnique: ["Saint Joseph's Oratory","Château Ramezay","Marguerite-Bourgeoys Museum","Le Mal Nécessaire"],
+      bestBreakfast: ["Beauty's Luncheonette","Crew Collective & Café","Fairmount Bagel"],
+      bestLunch: ["Jean-Talon Market","Atwater Market","L'Express","Crew Collective & Café"],
+      bestDinner: ["L'Express","Le Club Chasse et Pêche","Le Vin Papillon","Bar Henrietta"],
+      bestCocktails: ["Le Mal Nécessaire","Bar Henrietta"],
+      bestBakeries: ["Fairmount Bagel","Mamie Clafoutis (Angus)","Rhubarbe"],
+      bestCoffee: ["Pikolo Espresso Bar","Crew Collective & Café"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Notre-Dame Basilica": "Notre-Dame Basilica 110 Notre-Dame Street West Montreal",
+      "Pointe-à-Callière": "Pointe-à-Callière 350 Place Royale Montreal",
+      "Saint Joseph's Oratory": "Saint Joseph's Oratory 3800 Queen Mary Road Montreal",
+      "Mount Royal Park": "Mount Royal Park 2000 Chemin Remembrance Montreal",
+      "Montreal Museum of Fine Arts": "Montreal Museum of Fine Arts 1380 Sherbrooke Street West Montreal",
+      "Jean-Talon Market": "Jean-Talon Market 7070 Henri-Julien Avenue Montreal",
+      "L'Express": "L'Express 3927 rue Saint-Denis Montreal",
+      "Le Club Chasse et Pêche": "Le Club Chasse et Pêche 423 rue Saint-Claude Montreal",
+      "Le Vin Papillon": "Le Vin Papillon 2519 Notre-Dame Ouest Montreal",
+      "Beauty's Luncheonette": "Beauty's Luncheonette 93 Mont-Royal West Montreal",
+      "Parc La Fontaine": "Parc La Fontaine 3819 Avenue Calixa-Lavallée Montreal",
+      "Atwater Market": "Atwater Market 155 Greene Avenue Montreal",
+      "Fairmount Bagel": "Fairmount Bagel 74 Fairmount West Montreal",
+      "La Grande Roue de Montréal": "La Grande Roue de Montréal 362 de la Commune Street East Montreal",
+      "Le Mal Nécessaire": "Le Mal Nécessaire 1015 rue Saint-Alexandre Montreal",
+      "Marguerite-Bourgeoys Museum": "Marguerite-Bourgeoys Museum 400 rue Saint-Paul Est Montreal",
+      "Montreal Science Centre": "Montreal Science Centre 2 rue de la Commune Ouest Montreal",
+      "Maisonneuve Market": "Maisonneuve Market 4445 Ontario Street East Montreal",
+      "McCord Stewart Museum": "McCord Stewart Museum 690 Sherbrooke Street West Montreal",
+      "Pikolo Espresso Bar": "Pikolo Espresso Bar 1635 Clark Street Montreal",
+      "Château Ramezay": "Château Ramezay 280 Notre-Dame Street East Montreal",
+      "Crew Collective & Café": "Crew Collective & Café 360 rue Saint-Jacques Montreal",
+      "Bar Henrietta": "Bar Henrietta 115 Avenue Laurier Ouest Montreal",
+      "Mamie Clafoutis (Angus)": "Mamie Clafoutis 4093 rue Molson Montreal",
+      "Rhubarbe": "Rhubarbe 1320 rue Charlevoix Montreal"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Montreal" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Old Montreal landmarks, Sherbrooke Street museums, parks and public markets, with bagels, brunch, dinners and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Notre-Dame Basilica","Montreal Museum of Fine Arts","Pointe-à-Callière","Mount Royal Park"];
+    cityGuide.tip = "Mondays are a weak museum day: Pointe-à-Callière lists no Monday hours, the McCord Stewart Museum is closed Mondays, and the Marguerite-Bourgeoys Museum closes Mondays from October 16 to May 14.";
+    data.destinationFacts[cityKey] = "Mondays are a weak museum day: Pointe-à-Callière lists no Monday hours, the McCord Stewart Museum is closed Mondays, and the Marguerite-Bourgeoys Museum closes Mondays from October 16 to May 14.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Old Montreal landmarks, Sherbrooke Street museums, parks and public markets, with bagels, brunch, dinners and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays and Tuesdays",
+        "copy": "Pointe-à-Callière and the McCord Stewart Museum have no Monday opening, and Beauty's Luncheonette is closed Tuesdays. Le Club Chasse et Pêche and Le Vin Papillon serve dinner Tuesday to Saturday only."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Reserve the big shows",
+        "copy": "The Montreal Museum of Fine Arts requires reservations for Chiharu Shiota: The Soul Trembles (to February 14, 2027) except for members. Pointe-à-Callière sells tickets online or at the counter until 60 minutes before closing."
+      },
+      {
+        "label": "Walk-in policy",
+        "value": "Bars fill late",
+        "copy": "Le Mal Nécessaire takes no reservations after 8 p.m. on Fridays and Saturdays and seats first come, first served. Bar Henrietta takes no reservations and opens daily at 4 p.m."
+      },
+      {
+        "label": "Rules and prices",
+        "value": "Bring ID",
+        "copy": "Pointe-à-Callière's concession rates require a valid ID, adults pay $30 and children under 5 enter free. The McCord Stewart Museum offers free admission on Wednesdays from 5 p.m."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Plan museum days for Tuesday to Sunday, book the Shiota exhibition ahead, and save the walk-in cocktail bars for early evening.",
+      intro: [
+        "Start in Old Montreal, where Notre-Dame Basilica at 110 Notre-Dame Street West lists a Choral Christmas Concert by the Metropolitan Orchestra on December 8, 2026, with tickets through TicketPro. A short walk away, Pointe-à-Callière at 350 Place Royale opens Tuesday to Sunday and runs Heroes of Greece. The Age of Troy until March 7, 2027; tickets are sold until 60 minutes before closing. Château Ramezay on Notre-Dame Street East and the Marguerite-Bourgeoys Museum on rue Saint-Paul Est add more history, though the latter closes on Mondays from October 16 to May 14.",
+        "Uptown, the Montreal Museum of Fine Arts at 1380 Sherbrooke Street West shows Chiharu Shiota: The Soul Trembles through February 14, 2027, and you need a reservation for it unless you are a member. Anne Kahane: Structures opens there on November 19, 2026. The McCord Stewart Museum at 690 Sherbrooke West is closed Mondays, stays open until 9 p.m. on Wednesdays with free admission from 5 p.m., and is renovating its ground floor. Saint Joseph's Oratory on Queen Mary Road is open from 6:30 a.m. to 9 p.m.",
+        "For open space, the city lists Mount Royal Park and Parc La Fontaine as open from 6 a.m. to midnight every day, and Mount Royal is marking its 150th anniversary with activities running from June 2026 to May 2027. The city's public markets make easy lunches: Jean-Talon opens at 8 a.m. Monday to Saturday, Atwater opens at 9 a.m., and Maisonneuve holds children's culinary workshops on November 14, 2026. Down by the river, La Grande Roue de Montréal turns from 10 a.m. to 11 p.m., with tickets sold through Fever.",
+        "For food, Fairmount Bagel bakes at 74 Fairmount West, Beauty's Luncheonette serves from 8 a.m. to 3:30 p.m. and closes Tuesdays, and Crew Collective & Café serves brunch daily from 9 a.m. to 3 p.m. in Old Montreal. L'Express on Saint-Denis is open seven days from 11:30 a.m. to 1 a.m., while Le Club Chasse et Pêche and Le Vin Papillon open for dinner Tuesday to Saturday. For drinks, Le Mal Nécessaire stops taking reservations after 8 p.m. on Fridays and Saturdays, and Bar Henrietta on Laurier West takes none."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair Notre-Dame Basilica and Pointe-à-Callière in Old Montreal, then book the Montreal Museum of Fine Arts for the Chiharu Shiota exhibition."
+        ],
+        [
+          "A slower morning",
+          "Pick up bagels at Fairmount Bagel or brunch at Crew Collective & Café, then walk Mount Royal Park, open from 6 a.m."
+        ],
+        [
+          "Before booking",
+          "Check closing days first: Pointe-à-Callière and the McCord Stewart Museum have no Monday opening and Beauty's closes Tuesdays."
+        ]
+      ],
+      trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

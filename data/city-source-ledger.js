@@ -5,6 +5,1129 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Montreal, Canada": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-25",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several operator sites could not be read: St-Viateur Bagel, Schwartz's, Olive et Gourmando, Joe Beef, Café Olimpico, Hof Kelsten and Fous Desserts returned HTTP 429, the Musée d'art contemporain returned 403, Larrys had an expired certificate and Boulangerie Guillaume failed DNS lookup. Espace pour la vie pages (Botanical Garden, Biodôme) redirect to a calendar with no address. Hours were not published on the pages read for Notre-Dame Basilica, Château Ramezay, the Montreal Science Centre and Fairmount Bagel, and several restaurants, cafés and bars show only hours or booking links without dated 2026 text, so they are marked medium confidence.",
+    "sourceUrls": [
+      "docs/content-research/montreal-2026-10-25.md",
+      "docs/content-research/montreal-2026-10-25.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Old Montreal",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (a district; its specific sites are checked individually)"
+      },
+      {
+        "name": "Mount Royal",
+        "url": "https://montreal.ca/en/places/parc-du-mont-royal",
+        "checkedOn": "2026-10-25",
+        "reason": "covered by the confirmed Mount Royal Park entry"
+      },
+      {
+        "name": "Mount Royal lookout (Kondiaronk)",
+        "url": "https://www.lemontroyal.qc.ca/en",
+        "checkedOn": "2026-10-25",
+        "reason": "not separately confirmed: Les amis de la montagne site gives no address or current hours, only a 2021 access notice; Mount Royal Park used instead"
+      },
+      {
+        "name": "Musée d'art contemporain de Montréal",
+        "url": "https://macm.org/en/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 403 Forbidden on automated fetch; not bypassed"
+      },
+      {
+        "name": "Montréal Botanical Garden",
+        "url": "https://calendrier.espacepourlavie.ca/",
+        "checkedOn": "2026-10-25",
+        "reason": "every espacepourlavie.ca page redirects to the activity calendar, which lists Gardens of Light (to November 1, 2026) but no address or hours"
+      },
+      {
+        "name": "Biodôme",
+        "url": "https://calendrier.espacepourlavie.ca/",
+        "checkedOn": "2026-10-25",
+        "reason": "espacepourlavie.ca redirects to the activity calendar; dated exhibitions shown but no address or hours readable"
+      },
+      {
+        "name": "Old Port of Montreal",
+        "url": "https://www.oldportofmontreal.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site gives hours and 2026 events but no street address"
+      },
+      {
+        "name": "St-Viateur Bagel",
+        "url": "https://stviateurbagel.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests on repeated fetches; not bypassed"
+      },
+      {
+        "name": "Schwartz's",
+        "url": "https://www.schwartzsdeli.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests on repeated fetches; not bypassed"
+      },
+      {
+        "name": "Olive et Gourmando",
+        "url": "https://www.oliveetgourmando.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests on repeated fetches; not bypassed"
+      },
+      {
+        "name": "Joe Beef",
+        "url": "https://www.joebeef.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests on repeated fetches; not bypassed"
+      },
+      {
+        "name": "Café Olimpico",
+        "url": "https://www.cafeolimpico.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests; not bypassed"
+      },
+      {
+        "name": "Hof Kelsten",
+        "url": "https://www.hofkelsten.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests on repeated fetches; not bypassed"
+      },
+      {
+        "name": "Fous Desserts",
+        "url": "https://www.fousdesserts.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests; not bypassed"
+      },
+      {
+        "name": "Boulangerie Guillaume",
+        "url": "https://www.boulangerieguillaume.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "DNS lookup failed (EAI_AGAIN) twice; nothing readable"
+      },
+      {
+        "name": "Larrys",
+        "url": "https://www.larrys.ca/",
+        "checkedOn": "2026-10-25",
+        "reason": "certificate has expired; not bypassed"
+      },
+      {
+        "name": "Toqué!",
+        "url": "https://www.restaurant-toque.com/en/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site shows hours and OpenTable booking but no street address on home or English page"
+      },
+      {
+        "name": "Le Mousso",
+        "url": "https://www.lemousso.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "site announces closure (\"complets jusqu'à la date de fermeture\", closing August 22) and shows no address"
+      },
+      {
+        "name": "La Banquise",
+        "url": "https://labanquise.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site shows no street address (only a map link)"
+      },
+      {
+        "name": "Gibbys",
+        "url": "https://www.gibbys.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site shows hours and booking but no street address"
+      },
+      {
+        "name": "Café Myriade (Mackay)",
+        "url": "https://www.cafemyriade.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "address listed but no hours or any current-operation evidence (footer © 2019)"
+      },
+      {
+        "name": "Kem Coba",
+        "url": "https://www.kemcoba.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "address listed but no hours (Facebook only) and latest posts from 2013"
+      },
+      {
+        "name": "Atwater Cocktail Club",
+        "url": "https://www.atwatercocktailclub.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "page truncated; no address, hours or current evidence readable"
+      },
+      {
+        "name": "Dispatch Coffee",
+        "url": "https://www.dispatchcoffee.ca/",
+        "checkedOn": "2026-10-25",
+        "reason": "no cafe addresses, hours or 2026 content on official page"
+      },
+      {
+        "name": "Au Sommet Place Ville Marie",
+        "url": "https://placevillemarie.com/en",
+        "checkedOn": "2026-10-25",
+        "reason": "ausommetpvm.com redirects to placevillemarie.com, which gives no observatory address, hours or tickets"
+      },
+      {
+        "name": "Grande Bibliothèque (BAnQ)",
+        "url": "https://www.banq.qc.ca/en/",
+        "checkedOn": "2026-10-25",
+        "reason": "BAnQ home page gives no Grande Bibliothèque address or hours"
+      },
+      {
+        "name": "Maison Christian Faure",
+        "url": "https://www.maisonchristianfaure.ca/",
+        "checkedOn": "2026-10-25",
+        "reason": "domain now hosts an unrelated pastry blog, not the operator's site"
+      },
+      {
+        "name": "Cloakroom Bar",
+        "url": "https://www.cloakroom.ca/",
+        "checkedOn": "2026-10-25",
+        "reason": "domain is parked/for sale; no operator site"
+      },
+      {
+        "name": "Café Saint-Henri",
+        "url": "https://www.sainthenri.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "domain redirects to a GoDaddy for-sale page"
+      },
+      {
+        "name": "Damas",
+        "url": "https://www.restaurantdamas.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "domain redirects to a GoDaddy for-sale page"
+      },
+      {
+        "name": "Café Névé",
+        "url": "https://www.cafeneve.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "domain redirects to an unrelated French site"
+      },
+      {
+        "name": "Mile End food crawl",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Festival night",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "a bagel and a late dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Montreal market or cafe",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local dinner in Old Montreal",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Mile End",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Plateau",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Old Montreal",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Old Montreal walk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Mile End",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Plateau",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Plateau",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Old Montreal",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Old Montreal",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Mount Royal lookout",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Mile End",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Mount Royal",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Old Montreal evening",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Mile End",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Plateau",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Old Montreal",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Old Montreal",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Mile End",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Plateau",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Old Montreal",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Old Montreal",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Old Montreal cafe or market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Mile End food crawl",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Plateau",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Plateau",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Old Montreal",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Old Montreal",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Mile End bakery or market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Old Montreal",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Plateau",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Old Montreal",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Mount Royal",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Plateau",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Old Montreal",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Mile End",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Plateau",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Old Montreal",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Old Montreal",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Mile End",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Jean-Talon Market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Old Montreal",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Mile End morning market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Old Montreal",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Plateau",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Old Montreal",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Mile End",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Plateau",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Notre-Dame Basilica": {
+        "url": "https://www.basiliquenotredame.ca/en",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Notice that it \"will open at 2:00 p.m. on Sunday, October 25, 2026\"; \"Choral Christmas Concert at the Basilica by the Metropolitan Orchestra\" listed for December 8, 2026, 7:30 p.m., tickets via TicketPro."
+      },
+      "Montreal Museum of Fine Arts": {
+        "url": "https://www.mbam.qc.ca/en/exhibitions/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Chiharu Shiota: The Soul Trembles\" runs through 14 February 2027 (\"Reservations are required\" except for MMFA Members); \"Anne Kahane: Structures\" runs 19 November 2026 to 4 April 2027."
+      },
+      "Pointe-à-Callière": {
+        "url": "https://pacmusee.qc.ca/en/plan-your-visit/hours-and-rates/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Heroes of Greece. The Age of Troy\" \"Until Mar 7th 2027\"; \"Alley-oop – An Interactive Adventure\" \"Until Jan 10th 2027\"; adult admission $30."
+      },
+      "McCord Stewart Museum": {
+        "url": "https://www.musee-mccord-stewart.ca/en/opening-hours/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Thanksgiving hours for \"Monday, October 12, 2026\"; \"Free admission Wednesdays starting at 5 p.m.\"; banner: \"We're renovating the ground floor\"."
+      },
+      "Saint Joseph's Oratory": {
+        "url": "https://www.saint-joseph.org/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Sessions calendar 2026-2027\" and \"The 2027 Oratory calendar has arrived\"; ongoing development project (dome, new museum, welcome centre) with no closure stated."
+      },
+      "Château Ramezay": {
+        "url": "https://www.chateauramezay.qc.ca/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibitions listed: \"The American Revolution in Quebec\", \"Our March Toward Democracy\" and outdoor \"JACQUES NADEAU, REAL-LIFE INSTINCT\"; no dates shown."
+      },
+      "Marguerite-Bourgeoys Museum": {
+        "url": "https://margueritebourgeoys.org/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Seasonal hours notice published; no 2026-dated content (page copyright 2025)."
+      },
+      "Montreal Science Centre": {
+        "url": "https://www.centredessciencesdemontreal.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Event \"L'ÉVÉNEMENT PETITS ET GRANDS COMPLICES\" listed for \"7 nov. 2026\"."
+      },
+      "La Grande Roue de Montréal": {
+        "url": "https://lagranderouedemontreal.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Halloween event \"Saturday, October 31, 2026\"; \"Holiday Tree Lighting Show on December 3, 2026\"; tickets via Fever."
+      },
+      "Mount Royal Park": {
+        "url": "https://montreal.ca/en/places/parc-du-mont-royal",
+        "sourceType": "official public operator (Ville de Montréal)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Park marking its 150th anniversary with \"a full schedule of activities (in French) running from June 2026 to May 2027\"."
+      },
+      "Parc La Fontaine": {
+        "url": "https://montreal.ca/en/places/parc-la-fontaine",
+        "sourceType": "official public operator (Ville de Montréal)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "City page publishes daily hours and facility statuses; no 2026-dated notice."
+      },
+      "Jean-Talon Market": {
+        "url": "https://www.marchespublics-mtl.com/en/marches/jean-talon-market/",
+        "sourceType": "official public operator (Société des Marchés publics de Montréal)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Culinary workshops for the little ones at Jean-Talon Market\" on \"21 November 2026\"; footer \"© Société des Marchés publics de Montréal, 2026\"."
+      },
+      "Atwater Market": {
+        "url": "https://www.marchespublics-mtl.com/en/marches/atwater-market/",
+        "sourceType": "official public operator (Société des Marchés publics de Montréal)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current hours published; footer \"© Société des Marchés publics de Montréal, 2026\"; no upcoming Atwater events."
+      },
+      "Maisonneuve Market": {
+        "url": "https://www.marchespublics-mtl.com/en/marches/maisonneuve-market/",
+        "sourceType": "official public operator (Société des Marchés publics de Montréal)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Culinary workshops for the little ones at Maisonneuve Market\" on \"14 November 2026\", 1pm to 3:30pm."
+      },
+      "Fairmount Bagel": {
+        "url": "https://fairmountbagel.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Live site with \"© 2026 Fairmount Bagel\"; no other dated notice."
+      },
+      "Mamie Clafoutis (Angus)": {
+        "url": "https://www.mamieclafoutis.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Branch list with current hours; footer \"©2026 Mamie Clafoutis\"."
+      },
+      "Rhubarbe": {
+        "url": "https://rhubarbe.ca/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Order pickup schedule published (\"Samedi entre 9h et 12h\"); 2026 appears only in image filenames."
+      },
+      "Beauty's Luncheonette": {
+        "url": "https://www.beautys.ca/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current hours published; no 2026-dated content."
+      },
+      "Crew Collective & Café": {
+        "url": "https://www.crewcollectivecafe.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Brunch servi tous les jours, de 9h à 15h, au cœur du Vieux-Montréal\"; footer \"2026 ©CC&C\"."
+      },
+      "Pikolo Espresso Bar": {
+        "url": "https://www.pikoloespresso.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current hours published; site copyright 2025, no 2026-dated content."
+      },
+      "L'Express": {
+        "url": "https://www.restaurantlexpress.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online booking (\"RÉSERVER\") and current wine list file \"CARTEVIN-22-10-26.pdf\"; an old notice reads \"fermé jusqu'au 19 septembre 2025\"."
+      },
+      "Le Club Chasse et Pêche": {
+        "url": "https://www.leclubchasseetpeche.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online booking (\"RÉSERVEZ\"); wine list uploaded under a 2026/08 path."
+      },
+      "Le Vin Papillon": {
+        "url": "https://www.vinpapillon.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Reservations link to OpenTable; no 2026-dated content."
+      },
+      "Le Mal Nécessaire": {
+        "url": "https://www.lemalnecessaire.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published hours and walk-in rule; images uploaded under a 2026/07 path."
+      },
+      "Bar Henrietta": {
+        "url": "https://www.barhenrietta.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Food menu uploaded 2026/09 and drinks menu 2026/10 (\"Henrietta-Menu-DRINKS-BIG-MENU-6.jpg\"); \"Sans réservations\"."
+      }
+    }
+  },
+  "Porto, Portugal": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-25",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several confirmed places (Palácio da Bolsa, Caves Cálem, Casa da Música) publish no readable weekly hours, and Serralves' hours headings showed no times; Café Santiago, Cantinho do Avillez, Manteigaria, Nata Lisboa, The Royal Cocktail Club and Museu Nacional Soares dos Reis showed current hours or booking but no dated 2026 content. Euskalduna Studio, Pedro Lemos and So Coffee Roasters had certificate errors; O Paparico and WOW returned 403; Combi Coffee and Fábrica Coffee Roasters returned 429; Do Norte Cafe, Negra Cafe, C'alma and 17º had no official site found; World of Discoveries and the Gaia cable car gave no street address. None of these failures is evidence of closure. Gaia venues are in Vila Nova de Gaia, across the river from Porto.",
+    "sourceUrls": [
+      "docs/content-research/porto-2026-10-25.md",
+      "docs/content-research/porto-2026-10-25.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Ribeira",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Luis I Bridge views",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Livraria Lello area",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (Livraria Lello itself confirmed)"
+      },
+      {
+        "name": "Riverside walking",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Pastel and coffee stops",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint hopping",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Douro private boat day",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Port tasting upgrade",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Luxury riverside hotel stay",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset at Jardim do Morro",
+        "checkedOn": "2026-10-25",
+        "reason": "generic activity; no operator page for the garden was read"
+      },
+      {
+        "name": "Wine-cellar evening",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Ribeira dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Riverside snack day",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee in Cedofeita",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Ribeira wandering",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Bookshop-and-viewpoint day",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Bridge views",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Port cellar and dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Foz waterfront",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Azulejo church route",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Bolhão market stop",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (Mercado do Bolhão confirmed separately)"
+      },
+      {
+        "name": "Mercado do Bolhao grazing",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (Mercado do Bolhão confirmed separately)"
+      },
+      {
+        "name": "Funicular ride",
+        "url": "https://www.stcp.pt/pt/turismo/funicular-dos-guindais/",
+        "checkedOn": "2026-10-25",
+        "reason": "generic; Funicular dos Guindais operator page not found (STCP URL returned 404) and no current official timetable read"
+      },
+      {
+        "name": "Euskalduna Studio",
+        "url": "https://www.euskalduna.pt",
+        "checkedOn": "2026-10-25",
+        "reason": "certificate error on official site (\"unable to verify the first certificate\"); not bypassed"
+      },
+      {
+        "name": "World of Discoveries",
+        "url": "https://www.worldofdiscoveries.com",
+        "checkedOn": "2026-10-25",
+        "reason": "official site shows hours (Tue–Fri 10h–18h, weekends 10h–19h, closed Mondays) but no street address on pages read"
+      },
+      {
+        "name": "Casa Guedes",
+        "url": "https://casaguedes.pt",
+        "checkedOn": "2026-10-25",
+        "reason": "official site gives no street addresses or hours (branches only as map links); latest dated content 2025"
+      },
+      {
+        "name": "Combi Coffee",
+        "url": "https://www.combi-coffee.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site (redirect target) returned HTTP 429 Too Many Requests on repeated attempts"
+      },
+      {
+        "name": "Do Norte Cafe",
+        "url": "https://www.donortecafe.pt",
+        "checkedOn": "2026-10-25",
+        "reason": "no official website found; donortecafe.pt did not resolve"
+      },
+      {
+        "name": "Negra Cafe",
+        "checkedOn": "2026-10-25",
+        "reason": "no official website found"
+      },
+      {
+        "name": "7g Roaster",
+        "url": "https://roaster.7groaster.pt",
+        "checkedOn": "2026-10-25",
+        "reason": "official site gives address (Rua França 52, Vila Nova de Gaia) but no hours or operating evidence beyond a copyright line"
+      },
+      {
+        "name": "C'alma Coffee Room",
+        "checkedOn": "2026-10-25",
+        "reason": "no official website found"
+      },
+      {
+        "name": "17º Restaurant & Bar",
+        "url": "https://www.17restaurante.pt",
+        "checkedOn": "2026-10-25",
+        "reason": "no official website found; 17restaurante.pt did not resolve"
+      },
+      {
+        "name": "Fábrica da Nata",
+        "url": "https://fabricadanata.pt",
+        "checkedOn": "2026-10-25",
+        "reason": "official site lists Porto shops but page is filled with unrelated gambling content and has no 2026 evidence; treated as unreliable"
+      },
+      {
+        "name": "Confeitaria do Bolhão",
+        "url": "https://confeitariadobolhao.com",
+        "checkedOn": "2026-10-25",
+        "reason": "address shown (Rua Formosa 339) but no hours or current operating evidence"
+      },
+      {
+        "name": "Teleférico de Gaia (Gaia Cable Car)",
+        "url": "https://www.gaiacablecar.com",
+        "checkedOn": "2026-10-25",
+        "reason": "hours shown (25 Oct–31 Dec, daily 10h–18h) but no station address, only company address"
+      },
+      {
+        "name": "O Paparico",
+        "url": "https://www.opaparico.com",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 403 Forbidden"
+      },
+      {
+        "name": "WOW Porto",
+        "url": "https://wow.pt/en/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 403 Forbidden"
+      },
+      {
+        "name": "Pedro Lemos",
+        "url": "https://www.pedrolemos.net",
+        "checkedOn": "2026-10-25",
+        "reason": "SSL error (WRONG_VERSION_NUMBER); not bypassed"
+      },
+      {
+        "name": "Antiqvvm",
+        "url": "https://www.antiqvvm.pt",
+        "checkedOn": "2026-10-25",
+        "reason": "official page gives no address, hours or dated content"
+      },
+      {
+        "name": "Zenith Brunch & Cocktails",
+        "url": "https://www.zenithcaffe.pt",
+        "checkedOn": "2026-10-25",
+        "reason": "presumed domain zenithcaffe.pt redirects to another brand's site; official site not established"
+      },
+      {
+        "name": "Fábrica Coffee Roasters",
+        "url": "https://www.fabricacoffeeroasters.com",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests"
+      },
+      {
+        "name": "So Coffee Roasters",
+        "url": "https://socoffeeroasters.com",
+        "checkedOn": "2026-10-25",
+        "reason": "certificate error; not bypassed"
+      },
+      {
+        "name": "Mercado Bom Sucesso",
+        "url": "https://www.mercadobomsucesso.pt",
+        "checkedOn": "2026-10-25",
+        "reason": "official page returned nothing readable"
+      },
+      {
+        "name": "Sandeman Cellars",
+        "url": "https://www.sandeman.com/visit-us/porto",
+        "checkedOn": "2026-10-25",
+        "reason": "visit page returned HTTP 404"
+      },
+      {
+        "name": "Igreja do Carmo",
+        "url": "https://www.igrejadocarmo.pt",
+        "checkedOn": "2026-10-25",
+        "reason": "presumed domain did not resolve; no official page read"
+      }
+    ],
+    "placeSources": {
+      "Livraria Lello": {
+        "url": "https://www.livrarialello.pt/en",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Live 2026 cultural programme, e.g. a 29 Oct talk by Teolinda Gersão with free entrance; tickets sold at tickets.livrarialello.pt and usable \"toward the purchase of a book\"."
+      },
+      "Torre dos Clérigos": {
+        "url": "https://www.torredosclerigos.pt/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Dated 2026 news and events, including daily pipe organ concerts in October (posted 1 Oct 2026) and a 22 Oct 2026 article; \"Buy Tickets\" and \"Book now\" links."
+      },
+      "Palácio da Bolsa": {
+        "url": "https://palaciodabolsa.com/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Live booking link: \"Buy your tickets\" for guided tours. No dated 2026 notices found."
+      },
+      "Fundação de Serralves": {
+        "url": "https://www.serralves.pt/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibitions including Alice Neel \"Beautifully Imperfect\" (16 Jul 2026 to 17 Jan 2027), Joan Miró \"Elective Affinities\" (16 Oct 2026 to 7 Mar 2027) and Frank Gehry \"The Century of Gehry\" (to 10 Jan 2027). Visit page lists a €24 general ticket."
+      },
+      "Mercado do Bolhão": {
+        "url": "https://mercadobolhao.pt/contactos",
+        "sourceType": "official public operator (Mercado do Bolhão, City of Porto market)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "2026 news items, e.g. 22 Oct 2026 Repair Café and a 21 Sep 2026 report of 59,000 visitors for the fourth reopening anniversary."
+      },
+      "Casa da Música": {
+        "url": "https://www.casadamusica.com/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Live event listings, e.g. 30 Oct Schubert and Strauss in Sala Suggia; 27 Oct Adriana Calcanhotto marked sold out."
+      },
+      "Museu Nacional Soares dos Reis": {
+        "url": "https://museusoaresdosreis.gov.pt/visit/?lang=en",
+        "sourceType": "official public operator (national museum, .gov.pt)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current visit page with hours and \"General ticket: €10.00\"; long-term exhibition listed \"In Permanence\". No dated 2026 item found."
+      },
+      "Museu do Carro Eléctrico": {
+        "url": "https://www.museudocarroelectrico.pt",
+        "sourceType": "official public operator (STCP, Porto public transport company)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Page updated 20 Oct 2026 with upcoming events, including \"Guarda-freio por um século\" on 7 and 9 November and \"A Cor está na Rua!\" on 21 November."
+      },
+      "SEA LIFE Porto": {
+        "url": "https://www.visitsealife.com/porto/encontrar/antes-de-visitar/localizacao-e-como-chegar/",
+        "sourceType": "operator's own site (Merlin Entertainments)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online ticketing (Bilhete Básico 19€, annual pass 44€) and a \"Laboratório de Halloween\" event 30.10.–1.11.; footer \"© Merlin Entertainments 2026\"."
+      },
+      "Taylor's Port Cellars": {
+        "url": "https://www.taylor.pt/en/visit-taylors/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current visit page with booking (\"Book your visit and choose the experience\"), audio tour in 13 languages and daily hours."
+      },
+      "Graham's 1890 Lodge": {
+        "url": "https://www.grahams-port.com/1890-lodge",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Live \"Book now\" visits and \"Manage my booking\"; visits require reservation, shop needs no booking; footer \"© Graham's, 2026\"."
+      },
+      "Caves Cálem": {
+        "url": "https://www.calem.pt",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Marque já a sua visita!\" with booking via tour.calem.pt, which offers \"Tour, Taste & Fado\"; footer \"2026 ©\"."
+      },
+      "Tapabento": {
+        "url": "https://www.tapabento.com",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current hours and booking notice: \"Todas as reservas têm 10 minutos de tolerância\"; footer \"© 2026\"."
+      },
+      "Cantinho do Avillez (Mouzinho da Silveira)": {
+        "url": "https://www.cantinhodoavillez.pt/pt/restaurantes/mouzinho-da-silveira.html",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Live online booking (\"RESERVAR\") and current hours; no dated 2026 notice found."
+      },
+      "Cafeína": {
+        "url": "https://www.cafeina.pt",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Full menu PDF dated 28.7.2026 and \"Grupo Cafeína 2026 ©\"; online and group booking."
+      },
+      "Café Santiago (Passos Manuel)": {
+        "url": "https://www.cafesantiago.pt",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Hours notice listing Monday–Saturday service and Sunday closed; site copyright 2024, no 2026 content."
+      },
+      "The Yeatman Gastronomic Restaurant": {
+        "url": "https://www.the-yeatman-hotel.com/en/food/restaurant/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Booking via CoverManager; 2026 awards listed (Wine Spectator 2026 Grand Award, Repsol 2026 Three Suns); \"2 Michelin stars\"."
+      },
+      "Dick's Bar & Bistro (The Yeatman)": {
+        "url": "https://www.the-yeatman-hotel.com/en/food/dick-s-bar-bistro/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Bookings by email, phone or \"BOOK NOW\"; afternoon tea \"daily ... from 15:00 to 17:00\" with advance reservation required; footer © 2026."
+      },
+      "Majestic Café": {
+        "url": "https://www.cafemajestic.com",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current hours notice \"Aberto de Segunda a Sábado das 9:00h às 23:00h\"; footer \"© 2026 MAJESTIC CAFÉ\"."
+      },
+      "Guarany Café": {
+        "url": "https://www.cafeguarany.com",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Hours notice \"Aberto de Domingo a Domingo das 9:00h às 22:00h\" and \"Reserve a sua mesa\" link (reservation page returned an error); footer \"© 2026\"."
+      },
+      "The Royal Cocktail Club": {
+        "url": "https://www.theroyalcocktailclub.pt",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current hours and \"Reservas\" booking link; no explicit 2026 date in page text."
+      },
+      "Base Porto": {
+        "url": "https://www.baseporto.com",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current hours notice; footer \"© 2026 Base Porto\"; no seasonal closure notice."
+      },
+      "Manteigaria (Bolhão)": {
+        "url": "https://manteigaria.com/as-nossas-fabricas/bolhao/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Branch page with current hours; no dated 2026 content."
+      },
+      "Nata Lisboa (Rua das Flores)": {
+        "url": "https://natalisboa.com/moradas-pt",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current addresses-and-hours page listing the Flores and Santa Catarina coffee shops; no dated 2026 content."
+      },
+      "Padaria Ribeiro (Baixa)": {
+        "url": "https://padariaribeiro.com/contactos",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Contacts page with current hours; footer \"©2026 Padaria Ribeiro\"."
+      }
+    }
+  },
   "Miami, United States": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-25",

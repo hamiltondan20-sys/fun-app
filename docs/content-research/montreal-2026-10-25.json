@@ -1,0 +1,941 @@
+{
+  "city": "Montreal, Canada",
+  "checkedOn": "2026-10-25",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Notre-Dame Basilica",
+      "kind": "landmark",
+      "url": "https://www.basiliquenotredame.ca/en",
+      "sourceType": "operator's own site",
+      "address": "110, Notre-Dame Street West Montréal (Quebec) H2Y 1T1",
+      "operatingEvidence": "Notice that it \"will open at 2:00 p.m. on Sunday, October 25, 2026\"; \"Choral Christmas Concert at the Basilica by the Metropolitan Orchestra\" listed for December 8, 2026, 7:30 p.m., tickets via TicketPro.",
+      "hours": "not published (only the October 25, 2026 late-opening notice)",
+      "confidence": "high"
+    },
+    {
+      "name": "Montreal Museum of Fine Arts",
+      "kind": "museum",
+      "url": "https://www.mbam.qc.ca/en/exhibitions/",
+      "sourceType": "operator's own site",
+      "address": "1380 Sherbrooke Street West, Montreal, Quebec H3G 1J5",
+      "operatingEvidence": "\"Chiharu Shiota: The Soul Trembles\" runs through 14 February 2027 (\"Reservations are required\" except for MMFA Members); \"Anne Kahane: Structures\" runs 19 November 2026 to 4 April 2027.",
+      "hours": "not published as weekly hours (daily widget only)",
+      "confidence": "high"
+    },
+    {
+      "name": "Pointe-à-Callière",
+      "kind": "museum",
+      "url": "https://pacmusee.qc.ca/en/plan-your-visit/hours-and-rates/",
+      "sourceType": "operator's own site",
+      "address": "350 Place Royale, Old Montréal (Québec) Canada H2Y 3Y5",
+      "operatingEvidence": "\"Heroes of Greece. The Age of Troy\" \"Until Mar 7th 2027\"; \"Alley-oop – An Interactive Adventure\" \"Until Jan 10th 2027\"; adult admission $30.",
+      "hours": "Tuesday to Friday 10 am to 5 pm; Saturday and Sunday 11 am to 5 pm; no Monday hours listed; \"tickets are sold until 60 minutes before the museum closes\"",
+      "confidence": "high"
+    },
+    {
+      "name": "McCord Stewart Museum",
+      "kind": "museum",
+      "url": "https://www.musee-mccord-stewart.ca/en/opening-hours/",
+      "sourceType": "operator's own site",
+      "address": "690, Sherbrooke West, Montréal (Québec) H3A 1E9",
+      "operatingEvidence": "Thanksgiving hours for \"Monday, October 12, 2026\"; \"Free admission Wednesdays starting at 5 p.m.\"; banner: \"We're renovating the ground floor\".",
+      "hours": "Monday \"Closed\"; Tuesday 10 a.m. to 5 p.m.; Wednesday 10 a.m. to 9 p.m.; Thursday to Sunday 10 a.m. to 5 p.m.",
+      "confidence": "high"
+    },
+    {
+      "name": "Saint Joseph's Oratory",
+      "kind": "landmark",
+      "url": "https://www.saint-joseph.org/en/",
+      "sourceType": "operator's own site",
+      "address": "3800 Queen Mary Road Montreal (Quebec) Canada, H3V 1H6",
+      "operatingEvidence": "\"Sessions calendar 2026-2027\" and \"The 2027 Oratory calendar has arrived\"; ongoing development project (dome, new museum, welcome centre) with no closure stated.",
+      "hours": "\"The Oratory is open from 6:30am until 9:00pm\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Château Ramezay",
+      "kind": "museum",
+      "url": "https://www.chateauramezay.qc.ca/en/",
+      "sourceType": "operator's own site",
+      "address": "280 Notre-Dame Street East, Old Montréal Quebec Canada H2Y 1C5",
+      "operatingEvidence": "Current exhibitions listed: \"The American Revolution in Quebec\", \"Our March Toward Democracy\" and outdoor \"JACQUES NADEAU, REAL-LIFE INSTINCT\"; no dates shown.",
+      "hours": "not published on the page read",
+      "confidence": "medium"
+    },
+    {
+      "name": "Marguerite-Bourgeoys Museum",
+      "kind": "museum",
+      "url": "https://margueritebourgeoys.org/en/",
+      "sourceType": "operator's own site",
+      "address": "400, rue Saint-Paul Est (Notre-Dame-de-Bon-Secours Chapel)",
+      "operatingEvidence": "Seasonal hours notice published; no 2026-dated content (page copyright 2025).",
+      "hours": "\"May 15 to October 15: Opened daily from 10 a.m. to 6 p.m.\"; \"October 16 to May 14: Monday : closed\"; Tuesday to Saturday 11 a.m. to 5 p.m.; Sundays 10 a.m. to 5 p.m.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Montreal Science Centre",
+      "kind": "museum",
+      "url": "https://www.centredessciencesdemontreal.com/",
+      "sourceType": "operator's own site",
+      "address": "2 rue de la Commune Ouest Montréal, QC H2Y 4B2",
+      "operatingEvidence": "Event \"L'ÉVÉNEMENT PETITS ET GRANDS COMPLICES\" listed for \"7 nov. 2026\".",
+      "hours": "not published on the page read",
+      "confidence": "medium"
+    },
+    {
+      "name": "La Grande Roue de Montréal",
+      "kind": "scenic",
+      "url": "https://lagranderouedemontreal.com/",
+      "sourceType": "operator's own site",
+      "address": "362 de la Commune Street East, Montreal, QC H2Y 0B4",
+      "operatingEvidence": "Halloween event \"Saturday, October 31, 2026\"; \"Holiday Tree Lighting Show on December 3, 2026\"; tickets via Fever.",
+      "hours": "\"10AM to 11PM\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Mount Royal Park",
+      "kind": "park",
+      "url": "https://montreal.ca/en/places/parc-du-mont-royal",
+      "sourceType": "official public operator (Ville de Montréal)",
+      "address": "2000 Chemin Remembrance Montréal, QC H3H 1A2",
+      "operatingEvidence": "Park marking its 150th anniversary with \"a full schedule of activities (in French) running from June 2026 to May 2027\".",
+      "hours": "6:00 am to 12:00 am daily",
+      "confidence": "high"
+    },
+    {
+      "name": "Parc La Fontaine",
+      "kind": "park",
+      "url": "https://montreal.ca/en/places/parc-la-fontaine",
+      "sourceType": "official public operator (Ville de Montréal)",
+      "address": "3819 Avenue Calixa-Lavallée Montreal, QC H2L 3A7",
+      "operatingEvidence": "City page publishes daily hours and facility statuses; no 2026-dated notice.",
+      "hours": "6:00 am to 12:00 am, Monday to Sunday",
+      "confidence": "medium"
+    },
+    {
+      "name": "Jean-Talon Market",
+      "kind": "market",
+      "url": "https://www.marchespublics-mtl.com/en/marches/jean-talon-market/",
+      "sourceType": "official public operator (Société des Marchés publics de Montréal)",
+      "address": "7070, Henri-Julien ave, Montreal (Quebec) H2S 3S3",
+      "operatingEvidence": "\"Culinary workshops for the little ones at Jean-Talon Market\" on \"21 November 2026\"; footer \"© Société des Marchés publics de Montréal, 2026\".",
+      "hours": "\"Monday to Saturday: 8am to 6pm\"; \"Sunday: 8am to 5pm\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Atwater Market",
+      "kind": "market",
+      "url": "https://www.marchespublics-mtl.com/en/marches/atwater-market/",
+      "sourceType": "official public operator (Société des Marchés publics de Montréal)",
+      "address": "155, Greene ave, Montreal (Quebec) H4C 2G3",
+      "operatingEvidence": "Current hours published; footer \"© Société des Marchés publics de Montréal, 2026\"; no upcoming Atwater events.",
+      "hours": "\"Monday to Friday: 9am to 6pm\"; \"Saturday and Sunday: 9am to 5pm\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Maisonneuve Market",
+      "kind": "market",
+      "url": "https://www.marchespublics-mtl.com/en/marches/maisonneuve-market/",
+      "sourceType": "official public operator (Société des Marchés publics de Montréal)",
+      "address": "4445, Ontario Est, Montreal (Quebec) H1V 3V3",
+      "operatingEvidence": "\"Culinary workshops for the little ones at Maisonneuve Market\" on \"14 November 2026\", 1pm to 3:30pm.",
+      "hours": "\"Monday to Saturday: 9am to 6pm\"; \"Sunday: 9am to 5pm\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Fairmount Bagel",
+      "kind": "bakery",
+      "url": "https://fairmountbagel.com/",
+      "sourceType": "operator's own site",
+      "address": "74 Fairmount West Montreal, QC H2T 2M2",
+      "operatingEvidence": "Live site with \"© 2026 Fairmount Bagel\"; no other dated notice.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mamie Clafoutis (Angus)",
+      "kind": "bakery",
+      "url": "https://www.mamieclafoutis.com/",
+      "sourceType": "operator's own site",
+      "address": "4093, rue Molson Montréal, QC H1Y 3L1",
+      "operatingEvidence": "Branch list with current hours; footer \"©2026 Mamie Clafoutis\".",
+      "hours": "\"Tous les jours : 7 h–18 h\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Rhubarbe",
+      "kind": "bakery",
+      "url": "https://rhubarbe.ca/",
+      "sourceType": "operator's own site",
+      "address": "1320 rue Charlevoix, Pointe Saint-Charles, Montréal",
+      "operatingEvidence": "Order pickup schedule published (\"Samedi entre 9h et 12h\"); 2026 appears only in image filenames.",
+      "hours": "order pickup Saturday 9h to 12h; general hours not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Beauty's Luncheonette",
+      "kind": "meal",
+      "url": "https://www.beautys.ca/",
+      "sourceType": "operator's own site",
+      "address": "93 Mont-Royal West Montreal, H2T 2S5",
+      "operatingEvidence": "Current hours published; no 2026-dated content.",
+      "hours": "\"8am–3:30pm\", \"Closed Tuesdays\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Crew Collective & Café",
+      "kind": "cafe",
+      "url": "https://www.crewcollectivecafe.com/",
+      "sourceType": "operator's own site",
+      "address": "360 Rue Saint-Jacques, Montréal",
+      "operatingEvidence": "\"Brunch servi tous les jours, de 9h à 15h, au cœur du Vieux-Montréal\"; footer \"2026 ©CC&C\".",
+      "hours": "brunch daily 9h to 15h",
+      "confidence": "medium"
+    },
+    {
+      "name": "Pikolo Espresso Bar",
+      "kind": "cafe",
+      "url": "https://www.pikoloespresso.com/",
+      "sourceType": "operator's own site",
+      "address": "1635 Clark St, Montreal, Quebec H2X 2T1",
+      "operatingEvidence": "Current hours published; site copyright 2025, no 2026-dated content.",
+      "hours": "\"Mon – Fri // 7:30 – 19:00\"; \"Sat-Sun // 8:00 – 19:00\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "L'Express",
+      "kind": "meal",
+      "url": "https://www.restaurantlexpress.com/",
+      "sourceType": "operator's own site",
+      "address": "3927 rue Saint-Denis, Montréal, QC H2W 2M4",
+      "operatingEvidence": "Online booking (\"RÉSERVER\") and current wine list file \"CARTEVIN-22-10-26.pdf\"; an old notice reads \"fermé jusqu'au 19 septembre 2025\".",
+      "hours": "\"7 JOURS SUR 7\", \"DE 11H30 À 01:00 AM\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Le Club Chasse et Pêche",
+      "kind": "meal",
+      "url": "https://www.leclubchasseetpeche.com/",
+      "sourceType": "operator's own site",
+      "address": "423 rue Saint-Claude, Montréal (Qc) H2Y 3B6",
+      "operatingEvidence": "Online booking (\"RÉSERVEZ\"); wine list uploaded under a 2026/08 path.",
+      "hours": "\"du mardi au samedi 18h – 22h30\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Le Vin Papillon",
+      "kind": "meal",
+      "url": "https://www.vinpapillon.com/",
+      "sourceType": "operator's own site",
+      "address": "2519 Notre Dame Ouest, Montréal, QC",
+      "operatingEvidence": "Reservations link to OpenTable; no 2026-dated content.",
+      "hours": "\"mardi au samedi\" \"17h à 22h30\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Le Mal Nécessaire",
+      "kind": "bar",
+      "url": "https://www.lemalnecessaire.com/",
+      "sourceType": "operator's own site",
+      "address": "1015 rue Saint-Alexandre Montréal, Québec H2Z 1N9",
+      "operatingEvidence": "Published hours and walk-in rule; images uploaded under a 2026/07 path.",
+      "hours": "\"Du dimanche au jeudi 16h30 – 2h00\"; \"Vendredi et samedi 16h30 – 3h00\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bar Henrietta",
+      "kind": "bar",
+      "url": "https://www.barhenrietta.com/",
+      "sourceType": "operator's own site",
+      "address": "115 Ave Laurier Ouest, Montréal",
+      "operatingEvidence": "Food menu uploaded 2026/09 and drinks menu 2026/10 (\"Henrietta-Menu-DRINKS-BIG-MENU-6.jpg\"); \"Sans réservations\".",
+      "hours": "\"7/7 Ouverture 16:00\"",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Old Montreal",
+      "reason": "generic, not a place (a district; its specific sites are checked individually)",
+      "url": ""
+    },
+    {
+      "name": "Mount Royal",
+      "reason": "covered by the confirmed Mount Royal Park entry",
+      "url": "https://montreal.ca/en/places/parc-du-mont-royal"
+    },
+    {
+      "name": "Mount Royal lookout (Kondiaronk)",
+      "reason": "not separately confirmed: Les amis de la montagne site gives no address or current hours, only a 2021 access notice; Mount Royal Park used instead",
+      "url": "https://www.lemontroyal.qc.ca/en"
+    },
+    {
+      "name": "Musée d'art contemporain de Montréal",
+      "reason": "HTTP 403 Forbidden on automated fetch; not bypassed",
+      "url": "https://macm.org/en/"
+    },
+    {
+      "name": "Montréal Botanical Garden",
+      "reason": "every espacepourlavie.ca page redirects to the activity calendar, which lists Gardens of Light (to November 1, 2026) but no address or hours",
+      "url": "https://calendrier.espacepourlavie.ca/"
+    },
+    {
+      "name": "Biodôme",
+      "reason": "espacepourlavie.ca redirects to the activity calendar; dated exhibitions shown but no address or hours readable",
+      "url": "https://calendrier.espacepourlavie.ca/"
+    },
+    {
+      "name": "Old Port of Montreal",
+      "reason": "official site gives hours and 2026 events but no street address",
+      "url": "https://www.oldportofmontreal.com/"
+    },
+    {
+      "name": "St-Viateur Bagel",
+      "reason": "HTTP 429 Too Many Requests on repeated fetches; not bypassed",
+      "url": "https://stviateurbagel.com/"
+    },
+    {
+      "name": "Schwartz's",
+      "reason": "HTTP 429 Too Many Requests on repeated fetches; not bypassed",
+      "url": "https://www.schwartzsdeli.com/"
+    },
+    {
+      "name": "Olive et Gourmando",
+      "reason": "HTTP 429 Too Many Requests on repeated fetches; not bypassed",
+      "url": "https://www.oliveetgourmando.com/"
+    },
+    {
+      "name": "Joe Beef",
+      "reason": "HTTP 429 Too Many Requests on repeated fetches; not bypassed",
+      "url": "https://www.joebeef.com/"
+    },
+    {
+      "name": "Café Olimpico",
+      "reason": "HTTP 429 Too Many Requests; not bypassed",
+      "url": "https://www.cafeolimpico.com/"
+    },
+    {
+      "name": "Hof Kelsten",
+      "reason": "HTTP 429 Too Many Requests on repeated fetches; not bypassed",
+      "url": "https://www.hofkelsten.com/"
+    },
+    {
+      "name": "Fous Desserts",
+      "reason": "HTTP 429 Too Many Requests; not bypassed",
+      "url": "https://www.fousdesserts.com/"
+    },
+    {
+      "name": "Boulangerie Guillaume",
+      "reason": "DNS lookup failed (EAI_AGAIN) twice; nothing readable",
+      "url": "https://www.boulangerieguillaume.com/"
+    },
+    {
+      "name": "Larrys",
+      "reason": "certificate has expired; not bypassed",
+      "url": "https://www.larrys.ca/"
+    },
+    {
+      "name": "Toqué!",
+      "reason": "official site shows hours and OpenTable booking but no street address on home or English page",
+      "url": "https://www.restaurant-toque.com/en/"
+    },
+    {
+      "name": "Le Mousso",
+      "reason": "site announces closure (\"complets jusqu'à la date de fermeture\", closing August 22) and shows no address",
+      "url": "https://www.lemousso.com/"
+    },
+    {
+      "name": "La Banquise",
+      "reason": "official site shows no street address (only a map link)",
+      "url": "https://labanquise.com/"
+    },
+    {
+      "name": "Gibbys",
+      "reason": "official site shows hours and booking but no street address",
+      "url": "https://www.gibbys.com/"
+    },
+    {
+      "name": "Café Myriade (Mackay)",
+      "reason": "address listed but no hours or any current-operation evidence (footer © 2019)",
+      "url": "https://www.cafemyriade.com/"
+    },
+    {
+      "name": "Kem Coba",
+      "reason": "address listed but no hours (Facebook only) and latest posts from 2013",
+      "url": "https://www.kemcoba.com/"
+    },
+    {
+      "name": "Atwater Cocktail Club",
+      "reason": "page truncated; no address, hours or current evidence readable",
+      "url": "https://www.atwatercocktailclub.com/"
+    },
+    {
+      "name": "Dispatch Coffee",
+      "reason": "no cafe addresses, hours or 2026 content on official page",
+      "url": "https://www.dispatchcoffee.ca/"
+    },
+    {
+      "name": "Au Sommet Place Ville Marie",
+      "reason": "ausommetpvm.com redirects to placevillemarie.com, which gives no observatory address, hours or tickets",
+      "url": "https://placevillemarie.com/en"
+    },
+    {
+      "name": "Grande Bibliothèque (BAnQ)",
+      "reason": "BAnQ home page gives no Grande Bibliothèque address or hours",
+      "url": "https://www.banq.qc.ca/en/"
+    },
+    {
+      "name": "Maison Christian Faure",
+      "reason": "domain now hosts an unrelated pastry blog, not the operator's site",
+      "url": "https://www.maisonchristianfaure.ca/"
+    },
+    {
+      "name": "Cloakroom Bar",
+      "reason": "domain is parked/for sale; no operator site",
+      "url": "https://www.cloakroom.ca/"
+    },
+    {
+      "name": "Café Saint-Henri",
+      "reason": "domain redirects to a GoDaddy for-sale page",
+      "url": "https://www.sainthenri.com/"
+    },
+    {
+      "name": "Damas",
+      "reason": "domain redirects to a GoDaddy for-sale page",
+      "url": "https://www.restaurantdamas.com/"
+    },
+    {
+      "name": "Café Névé",
+      "reason": "domain redirects to an unrelated French site",
+      "url": "https://www.cafeneve.com/"
+    },
+    {
+      "name": "Mile End food crawl",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Festival night",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "a bagel and a late dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Montreal market or cafe",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local dinner in Old Montreal",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Mile End",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Plateau",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Old Montreal",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Old Montreal walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Mile End",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Plateau",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Plateau",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Old Montreal",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Old Montreal",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Mount Royal lookout",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Mile End",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Mount Royal",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Old Montreal evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Mile End",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Plateau",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Old Montreal",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Old Montreal",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Mile End",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Plateau",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Old Montreal",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Old Montreal",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Old Montreal cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Mile End food crawl",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Plateau",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Plateau",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Old Montreal",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Old Montreal",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Mile End bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Old Montreal",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Plateau",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Old Montreal",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Mount Royal",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Plateau",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Old Montreal",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Mile End",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Plateau",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Old Montreal",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Old Montreal",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Mile End",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Jean-Talon Market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Old Montreal",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Mile End morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Old Montreal",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Plateau",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Old Montreal",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Mile End",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Plateau",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Notre-Dame Basilica",
+        "Pointe-à-Callière",
+        "Saint Joseph's Oratory",
+        "Mount Royal Park"
+      ],
+      "bestFirstTimers": [
+        "Notre-Dame Basilica",
+        "Montreal Museum of Fine Arts",
+        "Jean-Talon Market",
+        "Mount Royal Park"
+      ],
+      "bestRestaurants": [
+        "L'Express",
+        "Le Club Chasse et Pêche",
+        "Le Vin Papillon",
+        "Beauty's Luncheonette"
+      ],
+      "bestBudget": [
+        "Mount Royal Park",
+        "Parc La Fontaine",
+        "Atwater Market",
+        "Fairmount Bagel"
+      ],
+      "bestLuxury": [
+        "Le Club Chasse et Pêche",
+        "Montreal Museum of Fine Arts",
+        "Le Vin Papillon"
+      ],
+      "bestCouples": [
+        "La Grande Roue de Montréal",
+        "Le Vin Papillon",
+        "Le Mal Nécessaire",
+        "Marguerite-Bourgeoys Museum"
+      ],
+      "bestKids": [
+        "Montreal Science Centre",
+        "Pointe-à-Callière",
+        "La Grande Roue de Montréal",
+        "Maisonneuve Market"
+      ],
+      "bestSolo": [
+        "McCord Stewart Museum",
+        "Pikolo Espresso Bar",
+        "Château Ramezay",
+        "Jean-Talon Market"
+      ],
+      "bestUnique": [
+        "Saint Joseph's Oratory",
+        "Château Ramezay",
+        "Marguerite-Bourgeoys Museum",
+        "Le Mal Nécessaire"
+      ],
+      "bestBreakfast": [
+        "Beauty's Luncheonette",
+        "Crew Collective & Café",
+        "Fairmount Bagel"
+      ],
+      "bestLunch": [
+        "Jean-Talon Market",
+        "Atwater Market",
+        "L'Express",
+        "Crew Collective & Café"
+      ],
+      "bestDinner": [
+        "L'Express",
+        "Le Club Chasse et Pêche",
+        "Le Vin Papillon",
+        "Bar Henrietta"
+      ],
+      "bestCocktails": [
+        "Le Mal Nécessaire",
+        "Bar Henrietta"
+      ],
+      "bestBakeries": [
+        "Fairmount Bagel",
+        "Mamie Clafoutis (Angus)",
+        "Rhubarbe"
+      ],
+      "bestCoffee": [
+        "Pikolo Espresso Bar",
+        "Crew Collective & Café"
+      ]
+    },
+    "queries": {
+      "Notre-Dame Basilica": "Notre-Dame Basilica 110 Notre-Dame Street West Montreal",
+      "Montreal Museum of Fine Arts": "Montreal Museum of Fine Arts 1380 Sherbrooke Street West Montreal",
+      "Pointe-à-Callière": "Pointe-à-Callière 350 Place Royale Montreal",
+      "McCord Stewart Museum": "McCord Stewart Museum 690 Sherbrooke Street West Montreal",
+      "Saint Joseph's Oratory": "Saint Joseph's Oratory 3800 Queen Mary Road Montreal",
+      "Château Ramezay": "Château Ramezay 280 Notre-Dame Street East Montreal",
+      "Marguerite-Bourgeoys Museum": "Marguerite-Bourgeoys Museum 400 rue Saint-Paul Est Montreal",
+      "Montreal Science Centre": "Montreal Science Centre 2 rue de la Commune Ouest Montreal",
+      "La Grande Roue de Montréal": "La Grande Roue de Montréal 362 de la Commune Street East Montreal",
+      "Mount Royal Park": "Mount Royal Park 2000 Chemin Remembrance Montreal",
+      "Parc La Fontaine": "Parc La Fontaine 3819 Avenue Calixa-Lavallée Montreal",
+      "Jean-Talon Market": "Jean-Talon Market 7070 Henri-Julien Avenue Montreal",
+      "Atwater Market": "Atwater Market 155 Greene Avenue Montreal",
+      "Maisonneuve Market": "Maisonneuve Market 4445 Ontario Street East Montreal",
+      "Fairmount Bagel": "Fairmount Bagel 74 Fairmount West Montreal",
+      "Mamie Clafoutis (Angus)": "Mamie Clafoutis 4093 rue Molson Montreal",
+      "Rhubarbe": "Rhubarbe 1320 rue Charlevoix Montreal",
+      "Beauty's Luncheonette": "Beauty's Luncheonette 93 Mont-Royal West Montreal",
+      "Crew Collective & Café": "Crew Collective & Café 360 rue Saint-Jacques Montreal",
+      "Pikolo Espresso Bar": "Pikolo Espresso Bar 1635 Clark Street Montreal",
+      "L'Express": "L'Express 3927 rue Saint-Denis Montreal",
+      "Le Club Chasse et Pêche": "Le Club Chasse et Pêche 423 rue Saint-Claude Montreal",
+      "Le Vin Papillon": "Le Vin Papillon 2519 Notre-Dame Ouest Montreal",
+      "Le Mal Nécessaire": "Le Mal Nécessaire 1015 rue Saint-Alexandre Montreal",
+      "Bar Henrietta": "Bar Henrietta 115 Avenue Laurier Ouest Montreal"
+    },
+    "summary": "Old Montreal landmarks, Sherbrooke Street museums, parks and public markets, with bagels, brunch, dinners and cocktail bars checked against their own websites.",
+    "highlights": [
+      "Notre-Dame Basilica",
+      "Montreal Museum of Fine Arts",
+      "Pointe-à-Callière",
+      "Mount Royal Park"
+    ],
+    "tip": "Mondays are a weak museum day: Pointe-à-Callière lists no Monday hours, the McCord Stewart Museum is closed Mondays, and the Marguerite-Bourgeoys Museum closes Mondays from October 16 to May 14.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mondays and Tuesdays",
+        "copy": "Pointe-à-Callière and the McCord Stewart Museum have no Monday opening, and Beauty's Luncheonette is closed Tuesdays. Le Club Chasse et Pêche and Le Vin Papillon serve dinner Tuesday to Saturday only."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Reserve the big shows",
+        "copy": "The Montreal Museum of Fine Arts requires reservations for Chiharu Shiota: The Soul Trembles (to February 14, 2027) except for members. Pointe-à-Callière sells tickets online or at the counter until 60 minutes before closing."
+      },
+      {
+        "label": "Walk-in policy",
+        "value": "Bars fill late",
+        "copy": "Le Mal Nécessaire takes no reservations after 8 p.m. on Fridays and Saturdays and seats first come, first served. Bar Henrietta takes no reservations and opens daily at 4 p.m."
+      },
+      {
+        "label": "Rules and prices",
+        "value": "Bring ID",
+        "copy": "Pointe-à-Callière's concession rates require a valid ID, adults pay $30 and children under 5 enter free. The McCord Stewart Museum offers free admission on Wednesdays from 5 p.m."
+      }
+    ],
+    "dek": "Plan museum days for Tuesday to Sunday, book the Shiota exhibition ahead, and save the walk-in cocktail bars for early evening.",
+    "intro": [
+      "Start in Old Montreal, where Notre-Dame Basilica at 110 Notre-Dame Street West lists a Choral Christmas Concert by the Metropolitan Orchestra on December 8, 2026, with tickets through TicketPro. A short walk away, Pointe-à-Callière at 350 Place Royale opens Tuesday to Sunday and runs Heroes of Greece. The Age of Troy until March 7, 2027; tickets are sold until 60 minutes before closing. Château Ramezay on Notre-Dame Street East and the Marguerite-Bourgeoys Museum on rue Saint-Paul Est add more history, though the latter closes on Mondays from October 16 to May 14.",
+      "Uptown, the Montreal Museum of Fine Arts at 1380 Sherbrooke Street West shows Chiharu Shiota: The Soul Trembles through February 14, 2027, and you need a reservation for it unless you are a member. Anne Kahane: Structures opens there on November 19, 2026. The McCord Stewart Museum at 690 Sherbrooke West is closed Mondays, stays open until 9 p.m. on Wednesdays with free admission from 5 p.m., and is renovating its ground floor. Saint Joseph's Oratory on Queen Mary Road is open from 6:30 a.m. to 9 p.m.",
+      "For open space, the city lists Mount Royal Park and Parc La Fontaine as open from 6 a.m. to midnight every day, and Mount Royal is marking its 150th anniversary with activities running from June 2026 to May 2027. The city's public markets make easy lunches: Jean-Talon opens at 8 a.m. Monday to Saturday, Atwater opens at 9 a.m., and Maisonneuve holds children's culinary workshops on November 14, 2026. Down by the river, La Grande Roue de Montréal turns from 10 a.m. to 11 p.m., with tickets sold through Fever.",
+      "For food, Fairmount Bagel bakes at 74 Fairmount West, Beauty's Luncheonette serves from 8 a.m. to 3:30 p.m. and closes Tuesdays, and Crew Collective & Café serves brunch daily from 9 a.m. to 3 p.m. in Old Montreal. L'Express on Saint-Denis is open seven days from 11:30 a.m. to 1 a.m., while Le Club Chasse et Pêche and Le Vin Papillon open for dinner Tuesday to Saturday. For drinks, Le Mal Nécessaire stops taking reservations after 8 p.m. on Fridays and Saturdays, and Bar Henrietta on Laurier West takes none."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair Notre-Dame Basilica and Pointe-à-Callière in Old Montreal, then book the Montreal Museum of Fine Arts for the Chiharu Shiota exhibition."
+      ],
+      [
+        "A slower morning",
+        "Pick up bagels at Fairmount Bagel or brunch at Crew Collective & Café, then walk Mount Royal Park, open from 6 a.m."
+      ],
+      [
+        "Before booking",
+        "Check closing days first: Pointe-à-Callière and the McCord Stewart Museum have no Monday opening and Beauty's closes Tuesdays."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several operator sites could not be read: St-Viateur Bagel, Schwartz's, Olive et Gourmando, Joe Beef, Café Olimpico, Hof Kelsten and Fous Desserts returned HTTP 429, the Musée d'art contemporain returned 403, Larrys had an expired certificate and Boulangerie Guillaume failed DNS lookup. Espace pour la vie pages (Botanical Garden, Biodôme) redirect to a calendar with no address. Hours were not published on the pages read for Notre-Dame Basilica, Château Ramezay, the Montreal Science Centre and Fairmount Bagel, and several restaurants, cafés and bars show only hours or booking links without dated 2026 text, so they are marked medium confidence.",
+  "injectionLikeText": []
+}
