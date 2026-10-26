@@ -1,0 +1,1060 @@
+{
+  "city": "Shanghai, China",
+  "checkedOn": "2026-10-25",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Shanghai Museum (People's Square)",
+      "kind": "museum",
+      "url": "https://www.shanghaimuseum.net/mu/frontend/pg/index",
+      "sourceType": "official public operator (Shanghai Museum)",
+      "address": "上海市黄浦区人民大道201号 (201 Renmin Avenue, Huangpu District)",
+      "operatingEvidence": "Current exhibition '世界树之巅：美洲古代文明大展' (Ancient Americas) runs 2026-07-09 to 2027-11-14 on floors 1–3; visitors to it should book and buy tickets before visiting.",
+      "hours": "9:00–17:00, '15:00后停止入场' (no entry after 15:00); closed Mondays except national public holidays",
+      "confidence": "high"
+    },
+    {
+      "name": "Shanghai Museum East",
+      "kind": "museum",
+      "url": "https://www.shanghaimuseum.net/mu/frontend/pg/index",
+      "sourceType": "official public operator (Shanghai Museum)",
+      "address": "上海市浦东新区世纪大道1952号 (1952 Century Avenue, Pudong)",
+      "operatingEvidence": "Current exhibitions '金冠之下：新罗文物精华展' (Silla treasures, 2026-09-23 to 2027-01-18) and '暂得之乐' Ming and Qing porcelain (2026-06-17 to 2027-02-22). Basic exhibitions need no booking.",
+      "hours": "10:00–18:00, '17:00后停止入场' (no entry after 17:00); closed Tuesdays except national public holidays",
+      "confidence": "high"
+    },
+    {
+      "name": "Jade Buddha Temple",
+      "kind": "landmark",
+      "url": "https://www.yufotemple.com/",
+      "sourceType": "operator's own site (Shanghai Yufo Chan Temple)",
+      "address": "上海市安远路170号 (170 Anyuan Road, Putuo District)",
+      "operatingEvidence": "Dated 2026 notices, including '上海玉佛禅寺丙午新春开放通告' (2026-02-12) and a Qingming ceremony (2026-04-04).",
+      "hours": "'8:00-16:30（重大节日除外）' (8:00–16:30, except major festivals)",
+      "confidence": "high"
+    },
+    {
+      "name": "Shanghai Zoo",
+      "kind": "park",
+      "url": "https://www.shanghaizoo.cn/",
+      "sourceType": "operator's own site (Shanghai Zoo)",
+      "address": "上海市虹桥路2381号 (2381 Hongqiao Road)",
+      "operatingEvidence": "2026 programme on the homepage: the 14th butterfly exhibition '世界之翼' ran '2026年9月25日至10月25日'; ticketing link present.",
+      "hours": "not published (visitor-guide page returned an error)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Shanghai Botanical Garden",
+      "kind": "park",
+      "url": "https://www.shbg.org/",
+      "sourceType": "operator's own site (Shanghai Botanical Garden)",
+      "address": "上海市龙吴路1111号 (1111 Longwu Road)",
+      "operatingEvidence": "News dated 2026-09-29: autumn bonsai season '秋蕴盆境 艺承匠心' opened and a new café opened. '免大门票' (no main-gate ticket); specialty gardens keep their prices.",
+      "hours": "Gate 1: November–April 7:00-17:00, May–October 7:00-18:00; Gates 3 and 4 open from 6:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Memorial of the First National Congress of the CPC",
+      "kind": "museum",
+      "url": "https://www.zgyd1921.com/",
+      "sourceType": "official public operator (memorial hall)",
+      "address": "上海市黄浦区黄陂南路374号 (374 Huangpi South Road, Huangpu District)",
+      "operatingEvidence": "Current visitor notice: free Chinese-language guided tours at 9:30, 10:30, 13:30, 14:30, 15:30 and 16:00 with no booking; team tours bookable in set slots. No dated 2026 content.",
+      "hours": "'每周二至周日9:00-17:00(16:30停止入馆)'; '周一闭馆(法定节假日除外)'",
+      "confidence": "medium"
+    },
+    {
+      "name": "Rockbund Art Museum",
+      "kind": "museum",
+      "url": "https://www.rockbundartmuseum.org/",
+      "sourceType": "operator's own site",
+      "address": "20 Huqiu Road, Huangpu District, Shanghai (上海市黄浦区虎丘路20号)",
+      "operatingEvidence": "Homepage shows current hours and an October 2026 events calendar, but no exhibition titles or dates were readable.",
+      "hours": "'Wednesdays to Sundays 11:00–18:00 (last admission: 17:30), Member Tuesdays 12:00–18:00'",
+      "confidence": "medium"
+    },
+    {
+      "name": "Shanghai Jewish Refugees Museum",
+      "kind": "museum",
+      "url": "https://www.shhkjrm.com/",
+      "sourceType": "operator's own site",
+      "address": "上海市虹口区长阳路62号 (62 Changyang Road, Hongkou District; Metro Line 12 Tilanqiao exit 1)",
+      "operatingEvidence": "Current hours notice published; no dated 2026 content was readable.",
+      "hours": "'周二至周日9:00—17:00 16:00停止入场'; '周一闭馆'",
+      "confidence": "medium"
+    },
+    {
+      "name": "Shanghai Natural History Museum",
+      "kind": "museum",
+      "url": "https://www.snhm.org.cn/cgfw/cgzx.htm",
+      "sourceType": "official public operator (Shanghai Science and Technology Museum group)",
+      "address": "上海市静安区北京西路510号（静安雕塑公园内） (510 Beijing West Road, inside Jing'an Sculpture Park)",
+      "operatingEvidence": "Visitor page sets out '线上实名制购票和现场身份证检票' (online real-name tickets, ID check on site); adults 30 yuan; free for under 1.3 m or age 6 and under, and 70 and over.",
+      "hours": "'9:00-17:00（16:00停止入馆）'; closed Tuesdays except national public holidays",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mr & Mrs Bund",
+      "kind": "meal",
+      "url": "https://www.mmbund.com/contact/",
+      "sourceType": "operator's own site",
+      "address": "外滩18号6楼，上海市中山东一路18号 (6/F, 18 The Bund, 18 Zhongshan East 1st Road)",
+      "operatingEvidence": "Booking page takes reservations online; 'For same day reservations, please give us a call directly.'",
+      "hours": "'Lunch: Every Day, 11:30am – 2:30pm'; 'Dinner: Every Day, 5:30pm – 10pm'",
+      "confidence": "medium"
+    },
+    {
+      "name": "Jazz Bar (Fairmont Peace Hotel)",
+      "kind": "bar",
+      "url": "https://www.fairmont.com/peace-hotel-shanghai/dining/",
+      "sourceType": "operator's own site (Fairmont Peace Hotel)",
+      "address": "20 Nanjing Road East 200002 SHANGHAI China",
+      "operatingEvidence": "'nightly performances by the Guinness World Record-holding Old Jazz Band'; hotel offers list booking periods to 30 December 2026.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Cathay Room (Fairmont Peace Hotel)",
+      "kind": "meal",
+      "url": "https://www.fairmont.com/peace-hotel-shanghai/dining/the-cathay-room/",
+      "sourceType": "operator's own site (Fairmont Peace Hotel)",
+      "address": "9th floor, 20 Nanjing Road East, Shanghai",
+      "operatingEvidence": "'Located on the 9th floor'; serves 'afternoon tea, and a signature Sunday brunch'; 'Book a Table' via +86 021 61386881.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Victor's Café (Fairmont Peace Hotel)",
+      "kind": "cafe",
+      "url": "https://www.fairmont.com/peace-hotel-shanghai/dining/victors-cafe/",
+      "sourceType": "operator's own site (Fairmont Peace Hotel)",
+      "address": "20 Nanjing Road East, Shanghai ('On East Nanjing Road')",
+      "operatingEvidence": "'tempts you with signature Peace Hato pastries'; also handmade chocolates and meals; 'Book a Table' via +86 021 61386887.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Peace Museum (Fairmont Peace Hotel)",
+      "kind": "museum",
+      "url": "https://www.fairmont.com/peace-hotel-shanghai/",
+      "sourceType": "operator's own site (Fairmont Peace Hotel)",
+      "address": "20 Nanjing Road East 200002 SHANGHAI China",
+      "operatingEvidence": "Traces 'the century-old legacy of the former Cathay Hotel' with a 'complimentary 30-minute guided tour'.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "T'ang Court (The Langham, Shanghai, Xintiandi)",
+      "kind": "meal",
+      "url": "https://www.langhamhotels.com/en/the-langham/shanghai/dining/",
+      "sourceType": "operator's own site (The Langham, Shanghai, Xintiandi)",
+      "address": "99 Madang Road, Xintiandi, Shanghai 200021",
+      "operatingEvidence": "'Two MICHELIN Stars in the 2026 Michelin Guide'; current daily lunch and dinner hours listed.",
+      "hours": "Lunch 11:30 am – 2:00 pm daily; dinner 5:30 pm – 9 pm daily",
+      "confidence": "high"
+    },
+    {
+      "name": "Cachet (The Langham, Shanghai, Xintiandi)",
+      "kind": "meal",
+      "url": "https://www.langhamhotels.com/en/the-langham/shanghai/dining/",
+      "sourceType": "operator's own site (The Langham, Shanghai, Xintiandi)",
+      "address": "99 Madang Road, Xintiandi, Shanghai 200021",
+      "operatingEvidence": "All-day global restaurant with an al fresco café; current hours published on the 2026 dining page.",
+      "hours": "Sunday–Thursday 6:30 am to '00:00 am'; Friday–Saturday 6:30 am to 1:00 am",
+      "confidence": "medium"
+    },
+    {
+      "name": "Lobby Lounge (The Langham, Shanghai, Xintiandi)",
+      "kind": "cafe",
+      "url": "https://www.langhamhotels.com/en/the-langham/shanghai/dining/",
+      "sourceType": "operator's own site (The Langham, Shanghai, Xintiandi)",
+      "address": "99 Madang Road, Xintiandi, Shanghai 200021",
+      "operatingEvidence": "Tea, Champagne and light bites; 'The Langham Afternoon Tea' served '2 pm – 5 pm, daily'.",
+      "hours": "Same as Cachet (6:30 am daily to midnight, 1:00 am Friday–Saturday)",
+      "confidence": "medium"
+    },
+    {
+      "name": "ROOF (The Shanghai EDITION)",
+      "kind": "bar",
+      "url": "https://www.marriott.com/en-us/hotels/shaeb-the-shanghai-edition/dining",
+      "sourceType": "operator's own site (Marriott / The Shanghai EDITION)",
+      "address": "199 Nanjing Road East, Shanghai, China, 200002; 29th floor",
+      "operatingEvidence": "'Located on the 29th floor, this casual rooftop bar'; dress code casual; reservations by phone +86 21-5368 9537.",
+      "hours": "Everyday 2:30 PM-5:00 PM, 5:00 PM-12:00 AM",
+      "confidence": "medium"
+    },
+    {
+      "name": "Punch Room (The Shanghai EDITION)",
+      "kind": "bar",
+      "url": "https://www.marriott.com/en-us/hotels/shaeb-the-shanghai-edition/dining",
+      "sourceType": "operator's own site (Marriott / The Shanghai EDITION)",
+      "address": "199 Nanjing Road East, Shanghai, China, 200002",
+      "operatingEvidence": "'This reservation-only Shanghai lounge'; online booking link and phone +86 021-53689540; dress code casual.",
+      "hours": "Everyday 5:30 PM-2:00 AM",
+      "confidence": "medium"
+    },
+    {
+      "name": "Shanghai Tavern (The Shanghai EDITION)",
+      "kind": "meal",
+      "url": "https://www.marriott.com/en-us/hotels/shaeb-the-shanghai-edition/dining",
+      "sourceType": "operator's own site (Marriott / The Shanghai EDITION)",
+      "address": "199 Nanjing Road East, Shanghai, China, 200002",
+      "operatingEvidence": "'all-day dining with a focus on seasonality, tradition, and classic recipes'; online table booking; dress code casual.",
+      "hours": "Mon-Fri 6:30 AM-10:30 AM, 11:30 AM-4:30 PM, 5:30 PM-10:00 PM; Sat-Sun 6:30 AM-10:30 AM, 11:30 AM-3:00 PM, 5:30 PM-10:00 PM",
+      "confidence": "medium"
+    },
+    {
+      "name": "URBAN Café (The Sukhothai Shanghai)",
+      "kind": "meal",
+      "url": "https://shanghai.sukhothai.com/dining/",
+      "sourceType": "operator's own site (The Sukhothai Shanghai)",
+      "address": "380 Weihai Road, Jingan District, 200041 Shanghai",
+      "operatingEvidence": "Thai restaurant with current meal hours and a linked menu whose file is dated 20260930; hotel shows 2026 Michelin Keys badge.",
+      "hours": "Breakfast 6:30 AM - 10:30 AM; lunch 12:00 PM - 2:30 PM; dinner 5:30 PM - 9:30 PM",
+      "confidence": "medium"
+    },
+    {
+      "name": "Polux by Paul Pairet",
+      "kind": "meal",
+      "url": "https://www.poluxbypp.com/",
+      "sourceType": "operator's own site",
+      "address": "No. 5, Lane 181, Taicang Road, Xintiandi, Shanghai",
+      "operatingEvidence": "Current opening hours and contact (+86 21 6333 9897) published; no dated 2026 content.",
+      "hours": "'Daily 11AM to 10PM'",
+      "confidence": "medium"
+    },
+    {
+      "name": "Café Gray Deluxe (Upper House Shanghai)",
+      "kind": "cafe",
+      "url": "https://www.upperhouse.com/en/shanghai/restaurants-and-bars/cafe-gray-deluxe/",
+      "sourceType": "operator's own site (Upper House Shanghai)",
+      "address": "3/F, No. 366 Shi Men Yi Road, Jing'an District, Shanghai 200041",
+      "operatingEvidence": "'On level 3 of Upper House Shanghai'; current offer 'Café Gray Deluxe | Afternoon Tea for Two'; table booking by email or +86 21 3216 8088.",
+      "hours": "Breakfast 'Daily 6:30am - 10:30am'; lunch Mon–Fri 11:30am–2:30pm; weekend brunch 11:30am–3:00pm; afternoon tea 2:30pm–5:00pm; dinner 'Daily 5:30pm - 10:30pm'; lounge 'Daily 6:30am - 1:00am'",
+      "confidence": "high"
+    },
+    {
+      "name": "Sui Tang Li (Upper House Shanghai)",
+      "kind": "meal",
+      "url": "https://www.upperhouse.com/en/shanghai/restaurants-and-bars/sui-tang-li/",
+      "sourceType": "operator's own site (Upper House Shanghai)",
+      "address": "2F, Upper House Shanghai Apartments, No. 366 Shi Men Yi Road, Jing'an District, Shanghai",
+      "operatingEvidence": "'Playfully Contemporary Shanghai Bistro'; table booking via info@suitangli.com or +86 21 3216 8068.",
+      "hours": "Lunch 'Daily 11:30am - 2:30pm'; dinner 'Daily 5:30pm - 10:00pm'",
+      "confidence": "medium"
+    },
+    {
+      "name": "Shanghai World Financial Center",
+      "kind": "landmark",
+      "url": "https://www.swfc-shanghai.com/events.php",
+      "sourceType": "operator's own site (Shanghai World Financial Center)",
+      "address": "上海市浦东新区世纪大道100号（世纪大道、东泰路路口） (100 Century Avenue, Pudong)",
+      "operatingEvidence": "Events page lists 2026 items, e.g. '2026 SWFC SKY RUN报名启动' (2026/10/31) and a youth art exhibition 2026/06/27–07/10. Observatory details not on the pages read.",
+      "hours": "not published (observatory hours not readable)",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "The Bund",
+      "reason": "public waterfront area with no single operator site to check; covered through confirmed venues on Nanjing Road East and Zhongshan East 1st Road",
+      "url": ""
+    },
+    {
+      "name": "Yu Garden",
+      "reason": "official site https://www.yugarden.com.cn/ returned an empty page; the Yuyuan group's corporate site gives no garden address, hours or tickets",
+      "url": "https://www.yugarden.com.cn/"
+    },
+    {
+      "name": "French Concession",
+      "reason": "district, not a single place",
+      "url": ""
+    },
+    {
+      "name": "Oriental Pearl Tower",
+      "reason": "official site returned HTTP 405",
+      "url": "https://www.orientalpearltower.com/"
+    },
+    {
+      "name": "Shanghai Tower (Top of Shanghai)",
+      "reason": "homepage had no visitor details; English page returned HTTP 403",
+      "url": "https://www.shanghaitower.com/en/"
+    },
+    {
+      "name": "SWFC Observatory",
+      "reason": "observatory site refused connection (ECONNREFUSED); building confirmed separately without observatory hours",
+      "url": "https://www.swfc-observatory.com/"
+    },
+    {
+      "name": "Power Station of Art",
+      "reason": "site returned only a page title, nothing readable",
+      "url": "https://www.powerstationofart.com/"
+    },
+    {
+      "name": "Long Museum",
+      "reason": "connection refused (ECONNREFUSED)",
+      "url": "https://www.thelongmuseum.org/"
+    },
+    {
+      "name": "West Bund Museum",
+      "reason": "domain did not resolve (ENOTFOUND)",
+      "url": "https://www.westbundmuseum.com/"
+    },
+    {
+      "name": "Museum of Art Pudong",
+      "reason": "domain did not resolve (ENOTFOUND)",
+      "url": "https://www.museumofartpudong.com/"
+    },
+    {
+      "name": "Yuz Museum",
+      "reason": "certificate has expired",
+      "url": "https://www.yuzmshanghai.org/"
+    },
+    {
+      "name": "Fosun Foundation",
+      "reason": "domain did not resolve (ENOTFOUND)",
+      "url": "https://www.fosunfoundation.org.cn/"
+    },
+    {
+      "name": "TANK Shanghai",
+      "reason": "connection refused (ECONNREFUSED)",
+      "url": "https://www.tankshanghai.com/"
+    },
+    {
+      "name": "Shanghai History Museum",
+      "reason": "connection reset (ECONNRESET)",
+      "url": "https://www.historymuseum.sh.cn/"
+    },
+    {
+      "name": "Shanghai Astronomy Museum",
+      "reason": "connection refused (ECONNREFUSED)",
+      "url": "https://www.sam.org.cn/"
+    },
+    {
+      "name": "Shanghai Science and Technology Museum",
+      "reason": "site returned only a page title, nothing readable",
+      "url": "https://www.sstm.org.cn/"
+    },
+    {
+      "name": "China Art Museum",
+      "reason": "site returned an empty page",
+      "url": "https://www.artmuseumonline.org/"
+    },
+    {
+      "name": "Shanghai Ocean Aquarium",
+      "reason": "connection refused (ECONNREFUSED)",
+      "url": "https://www.sh-soa.com/"
+    },
+    {
+      "name": "Lu Xun Memorial Hall",
+      "reason": "connection refused (ECONNREFUSED)",
+      "url": "https://www.luxunmuseum.com.cn/"
+    },
+    {
+      "name": "Shanghai Film Museum",
+      "reason": "connection refused (ECONNREFUSED)",
+      "url": "https://www.shfilmmuseum.org/"
+    },
+    {
+      "name": "Shanghai Urban Planning Exhibition Center",
+      "reason": "connection refused (ECONNREFUSED)",
+      "url": "https://www.supec.org/"
+    },
+    {
+      "name": "Shanghai Library",
+      "reason": "fetch timed out",
+      "url": "https://www.library.sh.cn/"
+    },
+    {
+      "name": "Shanghai Grand Theatre",
+      "reason": "page showed only a browser-compatibility notice, nothing readable",
+      "url": "https://www.shgtheatre.com/"
+    },
+    {
+      "name": "Shanghai Symphony Hall",
+      "reason": "site returned an empty page",
+      "url": "https://www.shsymphony.cn/symphonypc/index.html"
+    },
+    {
+      "name": "Shanghai Propaganda Poster Art Centre",
+      "reason": "domain redirects to an unrelated site",
+      "url": "https://www.shanghaipropagandaart.com/"
+    },
+    {
+      "name": "Shanghai Disney Resort",
+      "reason": "homepage gave ticket prices but no address or park hours; park-hours page returned an error",
+      "url": "https://www.shanghaidisneyresort.com/en/"
+    },
+    {
+      "name": "Xintiandi",
+      "reason": "official site gave no address, hours or dated events",
+      "url": "https://www.xintiandi.com/"
+    },
+    {
+      "name": "Sinan Mansions",
+      "reason": "site returned HTTP 412",
+      "url": "https://www.sinanmansions.com/"
+    },
+    {
+      "name": "Jing'an Temple",
+      "reason": "no official website found",
+      "url": ""
+    },
+    {
+      "name": "Jean-Georges (Three on the Bund)",
+      "reason": "Three on the Bund site lists the restaurant but gives no address or hours; copyright 2020 only",
+      "url": "https://www.threeonthebund.com/"
+    },
+    {
+      "name": "Ultraviolet by Paul Pairet",
+      "reason": "certificate error (host not in certificate)",
+      "url": "https://www.uvbypp.cc/"
+    },
+    {
+      "name": "Lost Heaven",
+      "reason": "SSL error (WRONG_VERSION_NUMBER)",
+      "url": "https://www.lostheaven.com.cn/"
+    },
+    {
+      "name": "Din Tai Fung (Shanghai)",
+      "reason": "operator's store list gave no Shanghai branch addresses",
+      "url": "https://www.dintaifung.com.tw/store_world.php?cid=4"
+    },
+    {
+      "name": "Element Fresh",
+      "reason": "connection refused (ECONNREFUSED)",
+      "url": "https://www.elementfresh.com/"
+    },
+    {
+      "name": "Seesaw Coffee",
+      "reason": "connection refused (ECONNREFUSED)",
+      "url": "https://www.seesawcoffee.com/"
+    },
+    {
+      "name": "%Arabica (Shanghai)",
+      "reason": "location page returned HTTP 418",
+      "url": "https://arabica.com/en/location/"
+    },
+    {
+      "name": "Blue Bottle Coffee (Shanghai)",
+      "reason": "cafés page returned HTTP 403",
+      "url": "https://bluebottlecoffee.com/cn/zh/cafes"
+    },
+    {
+      "name": "Peet's Coffee (Shanghai)",
+      "reason": "certificate error (host not in certificate)",
+      "url": "https://www.peets.com.cn/"
+    },
+    {
+      "name": "Tims China (Shanghai)",
+      "reason": "store page lists names only, no addresses or hours",
+      "url": "https://www.timschina.com/home/mystore"
+    },
+    {
+      "name": "Starbucks Reserve Roastery Shanghai",
+      "reason": "address published (南京西路789号) but no hours or current dated content",
+      "url": "https://roastery.starbucks.com.cn/"
+    },
+    {
+      "name": "Baker & Spice / Wagas (Shanghai)",
+      "reason": "store locator listed no Shanghai stores",
+      "url": "https://www.bakerandspice.com.cn/"
+    },
+    {
+      "name": "Bar Rouge",
+      "reason": "domain is parked for sale",
+      "url": "https://www.bar-rouge-shanghai.com/"
+    },
+    {
+      "name": "Long Bar (Waldorf Astoria Shanghai on the Bund)",
+      "reason": "hotel dining page returned HTTP 403",
+      "url": "https://www.hilton.com/en/hotels/shawawa-waldorf-astoria-shanghai-on-the-bund/dining/"
+    },
+    {
+      "name": "Sir Elly's (The Peninsula Shanghai)",
+      "reason": "dining page returned HTTP 403",
+      "url": "https://www.peninsula.com/en/shanghai/hotel-fine-dining"
+    },
+    {
+      "name": "Park Hyatt Shanghai dining",
+      "reason": "dining page returned HTTP 403",
+      "url": "https://www.hyatt.com/park-hyatt/en-US/shaph-park-hyatt-shanghai/dining"
+    },
+    {
+      "name": "Four Seasons Hotel Shanghai dining",
+      "reason": "dining page returned HTTP 403",
+      "url": "https://www.fourseasons.com/shanghai/dining/"
+    },
+    {
+      "name": "Mandarin Oriental Pudong dining (Fifty 8° Grill)",
+      "reason": "pages returned navigation only, no venue details",
+      "url": "https://www.mandarinoriental.com/en/shanghai/pudong/dine/fifty-8-grill"
+    },
+    {
+      "name": "Bulgari Hotel Shanghai dining",
+      "reason": "dining page returned HTTP 403",
+      "url": "https://www.bulgarihotels.com/en_US/shanghai/dining"
+    },
+    {
+      "name": "Capella Shanghai dining",
+      "reason": "dining page returned HTTP 403",
+      "url": "https://www.capellahotels.com/en/capella-shanghai/dining"
+    },
+    {
+      "name": "Jing An Shangri-La dining",
+      "reason": "dining page returned HTTP 403",
+      "url": "https://www.shangri-la.com/shanghai/jinganshangrila/dining/"
+    },
+    {
+      "name": "Banyan Tree Shanghai On The Bund dining",
+      "reason": "dining page returned HTTP 403",
+      "url": "https://www.banyantree.com/china/shanghai-on-the-bund/dining"
+    },
+    {
+      "name": "The Long Bar / Phénix (The PuLi)",
+      "reason": "address published but no venue hours or dated venue content; dining page returned HTTP 404",
+      "url": "https://www.thepuli.com/shanghai/"
+    },
+    {
+      "name": "Amanyangyun restaurants",
+      "reason": "no venue hours; only a 2026 copyright line as dated content",
+      "url": "https://www.aman.com/resorts/amanyangyun/dining"
+    },
+    {
+      "name": "Bund skyline walk at night",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Former lane-house neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market or tea-house morning",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Xiaolongbao breakfast",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Shanghai cuisine dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A French Concession cafe",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near The Bund",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Jing'an",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in French Concession",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost French Concession walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near The Bund",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Jing'an",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Jing'an",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for The Bund",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in French Concession",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Bund skyline walk at night",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in The Bund",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Yu Garden",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "French Concession evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in The Bund",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Jing'an",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through French Concession",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly The Bund",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around The Bund",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Jing'an",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near French Concession",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to The Bund",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "French Concession cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Former lane-house neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Jing'an",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Jing'an",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond French Concession",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near French Concession",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "The Bund bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before The Bund",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Jing'an",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near French Concession",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Yu Garden",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Jing'an",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in French Concession",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in The Bund",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Jing'an",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near French Concession",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near French Concession",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around The Bund",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near French Concession",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near French Concession",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "The Bund morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before The Bund",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Jing'an",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near French Concession",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in The Bund",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Jing'an",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Shanghai Museum (People's Square)",
+        "Shanghai Museum East",
+        "Jade Buddha Temple",
+        "Shanghai World Financial Center"
+      ],
+      "bestFirstTimers": [
+        "Shanghai Museum (People's Square)",
+        "Jade Buddha Temple",
+        "Jazz Bar (Fairmont Peace Hotel)",
+        "Memorial of the First National Congress of the CPC"
+      ],
+      "bestRestaurants": [
+        "T'ang Court (The Langham, Shanghai, Xintiandi)",
+        "Mr & Mrs Bund",
+        "Polux by Paul Pairet",
+        "Sui Tang Li (Upper House Shanghai)"
+      ],
+      "bestBudget": [
+        "Shanghai Botanical Garden",
+        "Peace Museum (Fairmont Peace Hotel)",
+        "Memorial of the First National Congress of the CPC",
+        "Shanghai Natural History Museum"
+      ],
+      "bestLuxury": [
+        "T'ang Court (The Langham, Shanghai, Xintiandi)",
+        "The Cathay Room (Fairmont Peace Hotel)",
+        "Punch Room (The Shanghai EDITION)",
+        "Café Gray Deluxe (Upper House Shanghai)"
+      ],
+      "bestCouples": [
+        "Jazz Bar (Fairmont Peace Hotel)",
+        "ROOF (The Shanghai EDITION)",
+        "The Cathay Room (Fairmont Peace Hotel)",
+        "Mr & Mrs Bund"
+      ],
+      "bestKids": [
+        "Shanghai Natural History Museum",
+        "Shanghai Zoo",
+        "Shanghai Botanical Garden",
+        "Shanghai Museum East"
+      ],
+      "bestSolo": [
+        "Rockbund Art Museum",
+        "Shanghai Jewish Refugees Museum",
+        "Shanghai Museum East",
+        "Victor's Café (Fairmont Peace Hotel)"
+      ],
+      "bestUnique": [
+        "Peace Museum (Fairmont Peace Hotel)",
+        "Jazz Bar (Fairmont Peace Hotel)",
+        "Shanghai Jewish Refugees Museum",
+        "Rockbund Art Museum"
+      ],
+      "bestBreakfast": [
+        "Café Gray Deluxe (Upper House Shanghai)",
+        "URBAN Café (The Sukhothai Shanghai)",
+        "Shanghai Tavern (The Shanghai EDITION)",
+        "Cachet (The Langham, Shanghai, Xintiandi)"
+      ],
+      "bestLunch": [
+        "Sui Tang Li (Upper House Shanghai)",
+        "Mr & Mrs Bund",
+        "Polux by Paul Pairet",
+        "T'ang Court (The Langham, Shanghai, Xintiandi)"
+      ],
+      "bestDinner": [
+        "T'ang Court (The Langham, Shanghai, Xintiandi)",
+        "Mr & Mrs Bund",
+        "Sui Tang Li (Upper House Shanghai)",
+        "Polux by Paul Pairet"
+      ],
+      "bestCocktails": [
+        "Punch Room (The Shanghai EDITION)",
+        "ROOF (The Shanghai EDITION)",
+        "Jazz Bar (Fairmont Peace Hotel)",
+        "Café Gray Deluxe (Upper House Shanghai)"
+      ],
+      "bestBakeries": [
+        "Victor's Café (Fairmont Peace Hotel)"
+      ],
+      "bestCoffee": [
+        "Café Gray Deluxe (Upper House Shanghai)",
+        "Victor's Café (Fairmont Peace Hotel)",
+        "Lobby Lounge (The Langham, Shanghai, Xintiandi)",
+        "Cachet (The Langham, Shanghai, Xintiandi)"
+      ]
+    },
+    "queries": {
+      "Shanghai Museum (People's Square)": "Shanghai Museum 201 Renmin Avenue Shanghai",
+      "Shanghai Museum East": "Shanghai Museum East 1952 Century Avenue Pudong Shanghai",
+      "Jade Buddha Temple": "Jade Buddha Temple 170 Anyuan Road Shanghai",
+      "Shanghai Zoo": "Shanghai Zoo 2381 Hongqiao Road Shanghai",
+      "Shanghai Botanical Garden": "Shanghai Botanical Garden 1111 Longwu Road Shanghai",
+      "Memorial of the First National Congress of the CPC": "Memorial of the First National Congress of the CPC 374 Huangpi South Road Shanghai",
+      "Rockbund Art Museum": "Rockbund Art Museum 20 Huqiu Road Shanghai",
+      "Shanghai Jewish Refugees Museum": "Shanghai Jewish Refugees Museum 62 Changyang Road Shanghai",
+      "Shanghai Natural History Museum": "Shanghai Natural History Museum 510 Beijing West Road Shanghai",
+      "Mr & Mrs Bund": "Mr & Mrs Bund 18 Zhongshan East 1st Road Shanghai",
+      "Jazz Bar (Fairmont Peace Hotel)": "Jazz Bar Fairmont Peace Hotel 20 Nanjing Road East Shanghai",
+      "The Cathay Room (Fairmont Peace Hotel)": "Cathay Room Fairmont Peace Hotel 20 Nanjing Road East Shanghai",
+      "Victor's Café (Fairmont Peace Hotel)": "Victor's Cafe Fairmont Peace Hotel Nanjing Road East Shanghai",
+      "Peace Museum (Fairmont Peace Hotel)": "Peace Museum Fairmont Peace Hotel 20 Nanjing Road East Shanghai",
+      "T'ang Court (The Langham, Shanghai, Xintiandi)": "T'ang Court The Langham 99 Madang Road Shanghai",
+      "Cachet (The Langham, Shanghai, Xintiandi)": "Cachet The Langham 99 Madang Road Shanghai",
+      "Lobby Lounge (The Langham, Shanghai, Xintiandi)": "Lobby Lounge The Langham 99 Madang Road Shanghai",
+      "ROOF (The Shanghai EDITION)": "ROOF The Shanghai EDITION 199 Nanjing Road East Shanghai",
+      "Punch Room (The Shanghai EDITION)": "Punch Room The Shanghai EDITION 199 Nanjing Road East Shanghai",
+      "Shanghai Tavern (The Shanghai EDITION)": "Shanghai Tavern The Shanghai EDITION 199 Nanjing Road East Shanghai",
+      "URBAN Café (The Sukhothai Shanghai)": "URBAN Cafe The Sukhothai Shanghai 380 Weihai Road Shanghai",
+      "Polux by Paul Pairet": "Polux by Paul Pairet Lane 181 Taicang Road Shanghai",
+      "Café Gray Deluxe (Upper House Shanghai)": "Cafe Gray Deluxe Upper House 366 Shimen Yi Road Shanghai",
+      "Sui Tang Li (Upper House Shanghai)": "Sui Tang Li Upper House 366 Shimen Yi Road Shanghai",
+      "Shanghai World Financial Center": "Shanghai World Financial Center 100 Century Avenue Shanghai"
+    },
+    "summary": "Museums, temples, gardens and Bund landmarks, with breakfast spots, dinners and cocktail bars checked against their own websites.",
+    "highlights": [
+      "Shanghai Museum (People's Square)",
+      "Shanghai Museum East",
+      "Jade Buddha Temple",
+      "Shanghai Natural History Museum"
+    ],
+    "tip": "Plan museum days around split closures: Shanghai Museum's People's Square site shuts on Mondays, while Shanghai Museum East and the Shanghai Natural History Museum shut on Tuesdays, except on national public holidays.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mondays and Tuesdays",
+        "copy": "Shanghai Museum (People's Square), the Memorial of the First National Congress of the CPC and the Shanghai Jewish Refugees Museum close on Mondays. Shanghai Museum East and the Shanghai Natural History Museum close on Tuesdays except national public holidays."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book ahead",
+        "copy": "Shanghai Museum asks you to book and buy tickets before visiting the People's Square site while its Ancient Americas exhibition runs, though basic galleries at Shanghai Museum East need no booking. The Shanghai Natural History Museum sells real-name tickets online and checks ID on site."
+      },
+      {
+        "label": "Last entry and walk-ins",
+        "value": "Arrive early",
+        "copy": "Entry stops at 15:00 at Shanghai Museum (People's Square), at 16:00 at the Shanghai Natural History Museum and the Shanghai Jewish Refugees Museum, and at 16:30 at the CPC memorial. Mr & Mrs Bund asks you to phone for same-day tables, and Punch Room at The Shanghai EDITION is reservation-only."
+      },
+      {
+        "label": "Rules and age",
+        "value": "Casual dress, free for small children",
+        "copy": "The Shanghai EDITION lists a casual dress code for ROOF, Punch Room and Shanghai Tavern. At the Shanghai Natural History Museum, children 1.3 m or under (or aged 6 and under) and visitors aged 70 and over enter free."
+      }
+    ],
+    "dek": "Book Shanghai Museum's People's Square site before you go, and plan museum days around the Monday and Tuesday closures.",
+    "intro": [
+      "Shanghai Museum now runs two sites, and their schedules differ. The People's Square building at 201 Renmin Avenue opens from 9:00 to 17:00, stops entry at 15:00 and closes on Mondays except national public holidays. Its Ancient Americas exhibition runs from 9 July 2026 to 14 November 2027, and while it is on you need to book and buy a ticket before you go. Shanghai Museum East, at 1952 Century Avenue in Pudong, opens from 10:00 to 18:00, closes on Tuesdays, needs no booking for its basic galleries and shows treasures from the Silla kingdom until 18 January 2027.",
+      "For modern history, the Memorial of the First National Congress of the CPC on Huangpi South Road opens Tuesday to Sunday and runs free Chinese-language guided tours at set times through the day. The Shanghai Jewish Refugees Museum on Changyang Road in Hongkou also opens Tuesday to Sunday, with last entry at 16:00. With children, you can pair the Shanghai Natural History Museum, inside Jing'an Sculpture Park, which sells real-name tickets online, with the Shanghai Botanical Garden on Longwu Road, where the main gate is free and only the specialty gardens charge.",
+      "On the Bund, the Fairmont Peace Hotel at 20 Nanjing Road East keeps its Jazz Bar going with nightly sets by the Old Jazz Band. The hotel also offers a free 30-minute guided tour of its Peace Museum and serves afternoon tea and Sunday brunch in the ninth-floor Cathay Room. A short walk away, The Shanghai EDITION has ROOF, a casual 29th-floor rooftop bar, and Punch Room, a reservation-only lounge open until 2:00. Mr & Mrs Bund, on the sixth floor of 18 The Bund, serves lunch and dinner daily and asks you to phone for same-day tables.",
+      "In Jing'an, Café Gray Deluxe on the third floor of Upper House Shanghai serves breakfast from 6:30, weekend brunch and afternoon tea, and its lounge stays open until 1:00. Sui Tang Li, one floor down, describes itself as a contemporary Shanghai bistro and opens daily for lunch and dinner. URBAN Café at The Sukhothai Shanghai on Weihai Road also starts breakfast at 6:30. In Xintiandi, T'ang Court at The Langham lists two stars in the 2026 Michelin Guide, and Polux by Paul Pairet on Taicang Road opens daily from 11:00 to 22:00."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Start at Shanghai Museum (People's Square) with a ticket booked ahead, then head to the Bund for the Fairmont Peace Hotel's Jazz Bar."
+      ],
+      [
+        "A slower morning",
+        "Take breakfast from 6:30 at Café Gray Deluxe or URBAN Café, then walk to the Shanghai Natural History Museum in Jing'an Sculpture Park."
+      ],
+      [
+        "Before booking",
+        "Check closing days: Monday for the People's Square museum, and Tuesday for Shanghai Museum East and the Shanghai Natural History Museum."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Many Shanghai operators publish mainly through WeChat or mini-programs, and a large number of official sites could not be read by automated fetch (connection refused, HTTP 403/405/418, certificate or SSL errors, or empty pages), including Yu Garden, the Oriental Pearl Tower, Shanghai Tower, the Long Museum, Power Station of Art, Lost Heaven, Seesaw Coffee and several luxury hotels; none of these failures is evidence of closure. No independent bakery or coffee roaster could be confirmed, so the bakery and coffee lists rely on hotel cafés. Hours were not published for the Shanghai Zoo, the Fairmont Peace Hotel's Jazz Bar, Cathay Room, Victor's Café and Peace Museum, or the Shanghai World Financial Center observatory. Rockbund Art Museum, the CPC memorial, the Shanghai Jewish Refugees Museum and Polux by Paul Pairet showed current hours but no dated 2026 content, and Cachet's weekday closing time is printed ambiguously as '00:00 am'.",
+  "injectionLikeText": []
+}

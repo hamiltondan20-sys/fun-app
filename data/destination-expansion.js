@@ -4966,4 +4966,110 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Shanghai, China: source review of 2026-10-25 (docs/content-research/shanghai-2026-10-25.md).
+  {
+    const cityKey = "Shanghai, China";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Shanghai Museum (People's Square)","Shanghai Museum East","Jade Buddha Temple","Shanghai World Financial Center"],
+      bestFirstTimers: ["Shanghai Museum (People's Square)","Jade Buddha Temple","Jazz Bar (Fairmont Peace Hotel)","Memorial of the First National Congress of the CPC"],
+      bestRestaurants: ["T'ang Court (The Langham, Shanghai, Xintiandi)","Mr & Mrs Bund","Polux by Paul Pairet","Sui Tang Li (Upper House Shanghai)"],
+      bestBudget: ["Shanghai Botanical Garden","Peace Museum (Fairmont Peace Hotel)","Memorial of the First National Congress of the CPC","Shanghai Natural History Museum"],
+      bestLuxury: ["T'ang Court (The Langham, Shanghai, Xintiandi)","The Cathay Room (Fairmont Peace Hotel)","Punch Room (The Shanghai EDITION)","Café Gray Deluxe (Upper House Shanghai)"],
+      bestCouples: ["Jazz Bar (Fairmont Peace Hotel)","ROOF (The Shanghai EDITION)","The Cathay Room (Fairmont Peace Hotel)","Mr & Mrs Bund"],
+      bestKids: ["Shanghai Natural History Museum","Shanghai Zoo","Shanghai Botanical Garden","Shanghai Museum East"],
+      bestSolo: ["Rockbund Art Museum","Shanghai Jewish Refugees Museum","Shanghai Museum East","Victor's Café (Fairmont Peace Hotel)"],
+      bestUnique: ["Peace Museum (Fairmont Peace Hotel)","Jazz Bar (Fairmont Peace Hotel)","Shanghai Jewish Refugees Museum","Rockbund Art Museum"],
+      bestBreakfast: ["Café Gray Deluxe (Upper House Shanghai)","URBAN Café (The Sukhothai Shanghai)","Shanghai Tavern (The Shanghai EDITION)","Cachet (The Langham, Shanghai, Xintiandi)"],
+      bestLunch: ["Sui Tang Li (Upper House Shanghai)","Mr & Mrs Bund","Polux by Paul Pairet","T'ang Court (The Langham, Shanghai, Xintiandi)"],
+      bestDinner: ["T'ang Court (The Langham, Shanghai, Xintiandi)","Mr & Mrs Bund","Sui Tang Li (Upper House Shanghai)","Polux by Paul Pairet"],
+      bestCocktails: ["Punch Room (The Shanghai EDITION)","ROOF (The Shanghai EDITION)","Jazz Bar (Fairmont Peace Hotel)","Café Gray Deluxe (Upper House Shanghai)"],
+      bestBakeries: ["Victor's Café (Fairmont Peace Hotel)"],
+      bestCoffee: ["Café Gray Deluxe (Upper House Shanghai)","Victor's Café (Fairmont Peace Hotel)","Lobby Lounge (The Langham, Shanghai, Xintiandi)","Cachet (The Langham, Shanghai, Xintiandi)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Shanghai Museum (People's Square)": "Shanghai Museum 201 Renmin Avenue Shanghai",
+      "Shanghai Museum East": "Shanghai Museum East 1952 Century Avenue Pudong Shanghai",
+      "Jade Buddha Temple": "Jade Buddha Temple 170 Anyuan Road Shanghai",
+      "Shanghai World Financial Center": "Shanghai World Financial Center 100 Century Avenue Shanghai",
+      "Jazz Bar (Fairmont Peace Hotel)": "Jazz Bar Fairmont Peace Hotel 20 Nanjing Road East Shanghai",
+      "Memorial of the First National Congress of the CPC": "Memorial of the First National Congress of the CPC 374 Huangpi South Road Shanghai",
+      "T'ang Court (The Langham, Shanghai, Xintiandi)": "T'ang Court The Langham 99 Madang Road Shanghai",
+      "Mr & Mrs Bund": "Mr & Mrs Bund 18 Zhongshan East 1st Road Shanghai",
+      "Polux by Paul Pairet": "Polux by Paul Pairet Lane 181 Taicang Road Shanghai",
+      "Sui Tang Li (Upper House Shanghai)": "Sui Tang Li Upper House 366 Shimen Yi Road Shanghai",
+      "Shanghai Botanical Garden": "Shanghai Botanical Garden 1111 Longwu Road Shanghai",
+      "Peace Museum (Fairmont Peace Hotel)": "Peace Museum Fairmont Peace Hotel 20 Nanjing Road East Shanghai",
+      "Shanghai Natural History Museum": "Shanghai Natural History Museum 510 Beijing West Road Shanghai",
+      "The Cathay Room (Fairmont Peace Hotel)": "Cathay Room Fairmont Peace Hotel 20 Nanjing Road East Shanghai",
+      "Punch Room (The Shanghai EDITION)": "Punch Room The Shanghai EDITION 199 Nanjing Road East Shanghai",
+      "Café Gray Deluxe (Upper House Shanghai)": "Cafe Gray Deluxe Upper House 366 Shimen Yi Road Shanghai",
+      "ROOF (The Shanghai EDITION)": "ROOF The Shanghai EDITION 199 Nanjing Road East Shanghai",
+      "Shanghai Zoo": "Shanghai Zoo 2381 Hongqiao Road Shanghai",
+      "Rockbund Art Museum": "Rockbund Art Museum 20 Huqiu Road Shanghai",
+      "Shanghai Jewish Refugees Museum": "Shanghai Jewish Refugees Museum 62 Changyang Road Shanghai",
+      "Victor's Café (Fairmont Peace Hotel)": "Victor's Cafe Fairmont Peace Hotel Nanjing Road East Shanghai",
+      "URBAN Café (The Sukhothai Shanghai)": "URBAN Cafe The Sukhothai Shanghai 380 Weihai Road Shanghai",
+      "Shanghai Tavern (The Shanghai EDITION)": "Shanghai Tavern The Shanghai EDITION 199 Nanjing Road East Shanghai",
+      "Cachet (The Langham, Shanghai, Xintiandi)": "Cachet The Langham 99 Madang Road Shanghai",
+      "Lobby Lounge (The Langham, Shanghai, Xintiandi)": "Lobby Lounge The Langham 99 Madang Road Shanghai"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Shanghai" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Museums, temples, gardens and Bund landmarks, with breakfast spots, dinners and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Shanghai Museum (People's Square)","Shanghai Museum East","Jade Buddha Temple","Shanghai Natural History Museum"];
+    cityGuide.tip = "Plan museum days around split closures: Shanghai Museum's People's Square site shuts on Mondays, while Shanghai Museum East and the Shanghai Natural History Museum shut on Tuesdays, except on national public holidays.";
+    data.destinationFacts[cityKey] = "Plan museum days around split closures: Shanghai Museum's People's Square site shuts on Mondays, while Shanghai Museum East and the Shanghai Natural History Museum shut on Tuesdays, except on national public holidays.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Museums, temples, gardens and Bund landmarks, with breakfast spots, dinners and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays and Tuesdays",
+        "copy": "Shanghai Museum (People's Square), the Memorial of the First National Congress of the CPC and the Shanghai Jewish Refugees Museum close on Mondays. Shanghai Museum East and the Shanghai Natural History Museum close on Tuesdays except national public holidays."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book ahead",
+        "copy": "Shanghai Museum asks you to book and buy tickets before visiting the People's Square site while its Ancient Americas exhibition runs, though basic galleries at Shanghai Museum East need no booking. The Shanghai Natural History Museum sells real-name tickets online and checks ID on site."
+      },
+      {
+        "label": "Last entry and walk-ins",
+        "value": "Arrive early",
+        "copy": "Entry stops at 15:00 at Shanghai Museum (People's Square), at 16:00 at the Shanghai Natural History Museum and the Shanghai Jewish Refugees Museum, and at 16:30 at the CPC memorial. Mr & Mrs Bund asks you to phone for same-day tables, and Punch Room at The Shanghai EDITION is reservation-only."
+      },
+      {
+        "label": "Rules and age",
+        "value": "Casual dress, free for small children",
+        "copy": "The Shanghai EDITION lists a casual dress code for ROOF, Punch Room and Shanghai Tavern. At the Shanghai Natural History Museum, children 1.3 m or under (or aged 6 and under) and visitors aged 70 and over enter free."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Book Shanghai Museum's People's Square site before you go, and plan museum days around the Monday and Tuesday closures.",
+      intro: [
+        "Shanghai Museum now runs two sites, and their schedules differ. The People's Square building at 201 Renmin Avenue opens from 9:00 to 17:00, stops entry at 15:00 and closes on Mondays except national public holidays. Its Ancient Americas exhibition runs from 9 July 2026 to 14 November 2027, and while it is on you need to book and buy a ticket before you go. Shanghai Museum East, at 1952 Century Avenue in Pudong, opens from 10:00 to 18:00, closes on Tuesdays, needs no booking for its basic galleries and shows treasures from the Silla kingdom until 18 January 2027.",
+        "For modern history, the Memorial of the First National Congress of the CPC on Huangpi South Road opens Tuesday to Sunday and runs free Chinese-language guided tours at set times through the day. The Shanghai Jewish Refugees Museum on Changyang Road in Hongkou also opens Tuesday to Sunday, with last entry at 16:00. With children, you can pair the Shanghai Natural History Museum, inside Jing'an Sculpture Park, which sells real-name tickets online, with the Shanghai Botanical Garden on Longwu Road, where the main gate is free and only the specialty gardens charge.",
+        "On the Bund, the Fairmont Peace Hotel at 20 Nanjing Road East keeps its Jazz Bar going with nightly sets by the Old Jazz Band. The hotel also offers a free 30-minute guided tour of its Peace Museum and serves afternoon tea and Sunday brunch in the ninth-floor Cathay Room. A short walk away, The Shanghai EDITION has ROOF, a casual 29th-floor rooftop bar, and Punch Room, a reservation-only lounge open until 2:00. Mr & Mrs Bund, on the sixth floor of 18 The Bund, serves lunch and dinner daily and asks you to phone for same-day tables.",
+        "In Jing'an, Café Gray Deluxe on the third floor of Upper House Shanghai serves breakfast from 6:30, weekend brunch and afternoon tea, and its lounge stays open until 1:00. Sui Tang Li, one floor down, describes itself as a contemporary Shanghai bistro and opens daily for lunch and dinner. URBAN Café at The Sukhothai Shanghai on Weihai Road also starts breakfast at 6:30. In Xintiandi, T'ang Court at The Langham lists two stars in the 2026 Michelin Guide, and Polux by Paul Pairet on Taicang Road opens daily from 11:00 to 22:00."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Start at Shanghai Museum (People's Square) with a ticket booked ahead, then head to the Bund for the Fairmont Peace Hotel's Jazz Bar."
+        ],
+        [
+          "A slower morning",
+          "Take breakfast from 6:30 at Café Gray Deluxe or URBAN Café, then walk to the Shanghai Natural History Museum in Jing'an Sculpture Park."
+        ],
+        [
+          "Before booking",
+          "Check closing days: Monday for the People's Square museum, and Tuesday for Shanghai Museum East and the Shanghai Natural History Museum."
+        ]
+      ],
+      trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();
