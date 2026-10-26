@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 44.
-- Classifier-passed (published, not fully documented in that format): 148.
+- Source-verified (complete dated evidence format): 45.
+- Classifier-passed (published, not fully documented in that format): 147.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -429,7 +429,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Seoul, South Korea | seoul | source-verified | source-checked | 26 | 50 | 15 | 15 | None |
 | Sequoia National Park, United States | sequoia-national-park | classifier-passed | not-reviewed | 0 | 8 | 15 | 4 | None |
 | Serengeti, Tanzania | serengeti | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Seville, Spain | seville | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Seville, Spain | seville | source-verified | source-checked | 26 | 45 | 15 | 15 | None |
 | Shanghai, China | shanghai | classifier-passed | not-reviewed | 0 | 9 | 15 | 5 | None |
 | Sharjah, United Arab Emirates | sharjah | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Sharm El Sheikh, Egypt | sharm-el-sheikh | classifier-passed | not-reviewed | 0 | 5 | 15 | 3 | None |

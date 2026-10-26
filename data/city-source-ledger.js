@@ -5,6 +5,692 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Seville, Spain": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-25",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several sites could not be read: Plaza de España's city operator (sevilla.org, connection refused), Museo de Bellas Artes (certificate error), CaixaForum (403), Torre del Oro and Isla Mágica (domains did not resolve), Hotel Doña María and Hotel Alfonso XIII (certificate errors) and Lonja del Barranco (connection refused). Hours were not published or readable for Cañabota, El Rinconcillo, Confitería Ochoa, La Terraza del EME, Hotel Inglaterra's terrace, the Archivo General de Indias and Casa de la Memoria; the Macarena basilica publishes only a 2023-24 winter schedule; Abantal's published hours may be phone hours; and Setas de Sevilla, Palacio de Lebrija, Museo del Baile Flamenco, abba The Roof Giralda, Cervecería Giralda and Confitería Ochoa show no explicitly 2026-dated content. No specialty coffee shop or independent bakery with a readable official site was confirmed, so the coffee and bakery lists rely on one confitería.",
+    "sourceUrls": [
+      "docs/content-research/seville-2026-10-25.md",
+      "docs/content-research/seville-2026-10-25.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Plaza de Espana",
+        "url": "https://www.sevilla.org/",
+        "checkedOn": "2026-10-25",
+        "reason": "Run by the city; sevilla.org refused the connection (ECONNREFUSED), so no operator page could be read"
+      },
+      {
+        "name": "Museo de Bellas Artes de Sevilla",
+        "url": "https://www.museosdeandalucia.es/web/museodebellasartesdesevilla",
+        "checkedOn": "2026-10-25",
+        "reason": "Certificate error (unable to verify the first certificate) on museosdeandalucia.es; Junta page returned 404"
+      },
+      {
+        "name": "Palacio de las Dueñas",
+        "url": "https://www.lasduenas.es/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site shows only phone-support hours, no visiting hours and no current dated content (footer 2024)"
+      },
+      {
+        "name": "Hospital de los Venerables",
+        "url": "https://www.focus.es/venerables",
+        "checkedOn": "2026-10-25",
+        "reason": "focus.es redirected to a different domain (focus.cat); not followed as unverified"
+      },
+      {
+        "name": "Torre del Oro (Museo Naval)",
+        "url": "https://www.armada.defensa.gob.es/",
+        "checkedOn": "2026-10-25",
+        "reason": "Armada site did not resolve (DNS failure)"
+      },
+      {
+        "name": "CaixaForum Sevilla",
+        "url": "https://caixaforum.org/es/sevilla",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 403, site refused automated reading"
+      },
+      {
+        "name": "Isla Mágica",
+        "url": "https://www.isla-magica.es/",
+        "checkedOn": "2026-10-25",
+        "reason": "Domain did not resolve (DNS failure)"
+      },
+      {
+        "name": "Mercado Lonja del Barranco",
+        "url": "https://www.lonjadelbarranco.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Connection refused"
+      },
+      {
+        "name": "Hotel Doña María terrace",
+        "url": "https://www.hoteldonamaria.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Certificate error (unable to verify the first certificate)"
+      },
+      {
+        "name": "Hotel Alfonso XIII bar",
+        "url": "https://www.hotel-alfonsoxiii-seville.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Certificate hostname mismatch"
+      },
+      {
+        "name": "Espacio Eslava",
+        "url": "https://www.espacioeslava.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Page lists address but no hours or dated content and is filled with unrelated casino/betting promotions; not treated as reliable"
+      },
+      {
+        "name": "Confitería La Campana",
+        "url": "https://www.confiterialacampana.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site gives address (Calle Sierpes 1-3) but no hours or current evidence; footer 2015"
+      },
+      {
+        "name": "Restaurante Ispal",
+        "url": "https://www.restauranteispal.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site says \"Cerrado por vacaciones y reformas\" with no reopening date"
+      },
+      {
+        "name": "Robles Laredo",
+        "url": "https://www.robles-laredo.es/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site shows only an undated closure notice (\"permanecerán cerrados a partir de mañana día 15 de marzo\"), no current evidence"
+      },
+      {
+        "name": "La Brunilda",
+        "url": "https://www.labrunildatapas.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site has no address, hours or dated content"
+      },
+      {
+        "name": "Ovejas Negras",
+        "url": "https://www.ovejasnegrastapas.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site returns a WordPress/PHP error"
+      },
+      {
+        "name": "Mamarracha",
+        "url": "https://mamarracha.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 500 server error"
+      },
+      {
+        "name": "Bodeguita Antonio Romero",
+        "url": "https://www.bodeguitaantonioromero.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Domain now hosts an unrelated cooking blog"
+      },
+      {
+        "name": "Virgin Coffee",
+        "url": "https://www.virgincoffee.es/",
+        "checkedOn": "2026-10-25",
+        "reason": "No official site found (virgincoffee.es did not resolve)"
+      },
+      {
+        "name": "Parcería Café",
+        "url": "https://parceriacafe.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "No official site found (parceriacafe.com did not resolve)"
+      },
+      {
+        "name": "Café de Indias",
+        "url": "https://www.cafedeindias.es/",
+        "checkedOn": "2026-10-25",
+        "reason": "TLS error (unrecognized name)"
+      },
+      {
+        "name": "Horno de San Buenaventura",
+        "url": "https://www.hornosanbuenaventura.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "No official site found (.com and .es did not resolve)"
+      },
+      {
+        "name": "Obrador Manu Jara",
+        "url": "https://www.manujara.es/",
+        "checkedOn": "2026-10-25",
+        "reason": "Domain did not resolve"
+      },
+      {
+        "name": "Pura Vida Terraza (Hotel Los Seises)",
+        "url": "https://www.fontecruzcollection.com/es/hotel-fontecruz-sevilla-seises/",
+        "checkedOn": "2026-10-25",
+        "reason": "Hotel page returned 404 after redirect"
+      },
+      {
+        "name": "Bar El Comercio",
+        "checkedOn": "2026-10-25",
+        "reason": "No official website found; only review and guide sites"
+      },
+      {
+        "name": "Triana ceramics",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Plaza de Espana at opening",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Orange-tree neighborhood walk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Classic tapas crawl",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Triana market lunch",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late dinner in Alameda",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Triana",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Alameda",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Santa Cruz",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Santa Cruz walk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Triana",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Alameda",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Alameda",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Real Alcazar",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Santa Cruz",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Plaza de Espana at opening",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Triana",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Seville Cathedral",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Santa Cruz evening",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Triana",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Alameda",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Santa Cruz",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Real Alcazar",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Triana",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Alameda",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Santa Cruz",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Real Alcazar",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Santa Cruz cafe or market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Triana ceramics",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Alameda",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Alameda",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Santa Cruz",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Santa Cruz",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Triana bakery or market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Real Alcazar",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Alameda",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Santa Cruz",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Seville Cathedral",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Alameda",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Santa Cruz",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Triana",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Alameda",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Santa Cruz",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Santa Cruz",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Triana",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Plaza de Espana",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Santa Cruz",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Triana morning market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Real Alcazar",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Alameda",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Santa Cruz",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Triana",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Alameda",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Real Alcázar de Sevilla": {
+        "url": "https://www.alcazarsevilla.org/",
+        "sourceType": "official public operator (Patronato del Real Alcázar y Casa Consistorial de Sevilla)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Site carries October 2026 notices, including \"Cierre temporal de las tiendas del Real Alcázar\", plus a \"RESERVA TU VISITA\" booking button."
+      },
+      "Catedral de Sevilla": {
+        "url": "https://www.catedraldesevilla.es/horarios-y-tarifas/",
+        "sourceType": "operator's own site (Cabildo Catedral de Sevilla)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Prices \"vigentes desde el 1 de enero de 2026\"; online sales at tickets.catedraldesevilla.eu; 22 Oct 2026 news that Macip's \"La Adoración del Niño Jesús\" is temporarily on display, and a 23 Oct notice of a roughly four-month restoration of the Puerta de San Fernando."
+      },
+      "Casa de Pilatos": {
+        "url": "https://www.fundacionmedinaceli.org/monumentos/pilatos/",
+        "sourceType": "operator's own site (Fundación Casa Ducal de Medinaceli)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Date-stamped notice: \"Hoy, 25 de octubre de 2026 ... La casa está abierta de 9 a 18h.\" Tickets: Planta Principal 12€, Planta alta 6€."
+      },
+      "Setas de Sevilla": {
+        "url": "https://setasdesevilla.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Ticket products on sale \"from €16\" including the \"Mirador 360º\", multisensory film and Aurora light show; no explicitly 2026-dated text."
+      },
+      "Palacio de la Condesa de Lebrija": {
+        "url": "https://www.palaciodelebrija.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "States \"ABIERTO TODOS LOS DÍAS\" with an online \"COMPRAR ENTRADAS\" ticket shop and a free Friday 10:00 visit to the ground floor; footer reads 2021, so no 2026-dated content."
+      },
+      "Acuario de Sevilla": {
+        "url": "https://www.acuariosevilla.es/horarios-y-tarifas/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Home page promotes Halloween 2026 family activities, November family plans and 2026/2027 school programmes; online ticket office at entradas.acuariosevilla.es."
+      },
+      "Plaza de Toros de la Real Maestranza": {
+        "url": "https://www.visitaplazadetorosdesevilla.com/",
+        "sourceType": "operator's own site (Real Maestranza de Caballería de Sevilla visits site, linked from realmaestranza.com)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Notice: \"A partir del próximo domingo 1 de noviembre, el horario de visitas será de 9:00 h. a 19:30 h.\"; realmaestranza.com agenda items dated 16 and 23 October 2026."
+      },
+      "Archivo General de Indias": {
+        "url": "https://www.cultura.gob.es/cultura/areas/archivos/mc/archivos/agi/portada.html",
+        "sourceType": "official public operator (Ministerio de Cultura)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "2026 programme includes a 17 June 2026 book presentation with free entry until capacity and \"Una ventana al Archivo 2026\"."
+      },
+      "Museo del Baile Flamenco": {
+        "url": "https://www.museodelbaileflamenco.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Publishes current prices (museum 6 €, Puro Flamenco show 29 €) and show times \"17:00, 19:00 y 20:45\"; no explicitly 2026-dated text."
+      },
+      "Basílica de la Macarena": {
+        "url": "https://www.hermandaddelamacarena.es/",
+        "sourceType": "operator's own site (Hermandad de la Macarena)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "October 2026 worship calendar and a report on the Función Principal \"este domingo, 25 de octubre\"."
+      },
+      "Mercado de Triana": {
+        "url": "https://www.mercadodetrianasevilla.com/horarios/",
+        "sourceType": "operator's own site (Asociación de Comerciantes del Mercado de Triana)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "News items dated 16/09/26; published hours for shops and bars."
+      },
+      "Casa Robles": {
+        "url": "https://www.casarobles.es/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "2026 carta PDF and Nochebuena, Nochevieja and Navidad 2026 menus; online reservations with a no-show charge."
+      },
+      "Restaurante Becerrita": {
+        "url": "https://www.becerrita.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Promotes \"Experiencias de Almadraba 2026\" and other 2026 menus; online reservations and phone 954 41 20 57."
+      },
+      "Cañabota": {
+        "url": "https://www.canabota.es/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Shows \"Michelin 2026\" and \"1 Sol Guía Repsol 2026\" badges and \"© Cañabota 2026\"; \"Reservar\" buttons for restaurant and bar."
+      },
+      "Sobretablas": {
+        "url": "https://www.sobretablasrestaurante.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Lists 2026 special openings and closures and a \"Michelin 2026\" Bib Gourmand badge; reservations online, by phone or email."
+      },
+      "Abantal": {
+        "url": "https://www.abantalrestaurante.es/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Live reservation links and tasting-menu and wine-list pages; no 2026-dated text."
+      },
+      "El Rinconcillo": {
+        "url": "https://www.elrinconcillo.es/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "News item dated 2026-03-05 on its Semana Santa 2026 poster; \"RESERVA AHORA\" button and linked restaurant and bar menus."
+      },
+      "Placentines": {
+        "url": "https://www.placentines.es/",
+        "sourceType": "operator's own site (Grupo Robles)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Christmas 2026 menus (Nochebuena, Nochevieja, Grupos) and a \"NUEVA CARTA\"; \"Copyright 2026 © Placentines\"."
+      },
+      "Bacao": {
+        "url": "https://www.bacao.es/",
+        "sourceType": "operator's own site (Grupo Robles)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published daily hours and \"Copyright 2026 © Restaurante Bacao - Sevilla\"; no dated menu."
+      },
+      "Tía Consuelo": {
+        "url": "https://www.tiaconsuelo.es/",
+        "sourceType": "operator's own site (Grupo Robles)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"reservar mesa\" and takeaway ordering links; \"Copyright 2026 © Tía Consuelo\"."
+      },
+      "Cervecería Giralda": {
+        "url": "https://cerveceriagiralda.es/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Reservation form and published hours; copyright line reads 2023, no 2026 text."
+      },
+      "abba The Roof Giralda": {
+        "url": "https://www.abbahoteles.com/en/abba-sevilla-hotel/rooftop",
+        "sourceType": "operator's own site (abba Hoteles)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current terrace and kitchen hours published, \"Hours subject to change due to private events\"; no 2026-dated text."
+      },
+      "La Terraza del EME": {
+        "url": "https://www.emecatedralmercer.com/",
+        "sourceType": "operator's own site (EME Catedral Mercer Hotel)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Listed among the hotel's current restaurants and bars; hotel page cites its 2026 Travellers' Choice recognition."
+      },
+      "La Terraza (Hotel Inglaterra)": {
+        "url": "https://www.hotelinglaterra.es/",
+        "sourceType": "operator's own site (Hotel Inglaterra)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Hotel page promotes its rooftop: \"La azotea del Hotel Inglaterra te invita a soñar\"; links a 2026 shareholder meeting notice."
+      },
+      "Confitería Ochoa (Sierpes)": {
+        "url": "https://confiteriaochoa.com/menus/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Publishes Desayunos, Meriendas and Bebidas menus and an online shop of pastries such as \"Herradura\" and \"Savoy\"; latest uploads dated 2025, no 2026 text."
+      },
+      "Casa de la Memoria": {
+        "url": "https://www.casadelamemoria.es/calendario/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Calendar lists flamenco evenings \"1 al 16 de OCTUBRE\" and \"17 al 31 de OCTUBRE\" with a \"comprar entradas\" link; the year is not stated."
+      }
+    }
+  },
   "Montreal, Canada": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-25",

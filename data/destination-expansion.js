@@ -4429,4 +4429,111 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Seville, Spain: source review of 2026-10-25 (docs/content-research/seville-2026-10-25.md).
+  {
+    const cityKey = "Seville, Spain";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Real Alcázar de Sevilla","Catedral de Sevilla","Casa de Pilatos","Setas de Sevilla"],
+      bestFirstTimers: ["Real Alcázar de Sevilla","Catedral de Sevilla","Plaza de Toros de la Real Maestranza","Mercado de Triana"],
+      bestRestaurants: ["Sobretablas","Cañabota","Casa Robles","Restaurante Becerrita"],
+      bestBudget: ["Mercado de Triana","Palacio de la Condesa de Lebrija","Basílica de la Macarena","Archivo General de Indias"],
+      bestLuxury: ["Abantal","Cañabota","Sobretablas","abba The Roof Giralda"],
+      bestCouples: ["Setas de Sevilla","La Terraza del EME","Casa de la Memoria","Sobretablas"],
+      bestKids: ["Acuario de Sevilla","Casa de Pilatos","Setas de Sevilla","Tía Consuelo"],
+      bestSolo: ["Archivo General de Indias","Museo del Baile Flamenco","Palacio de la Condesa de Lebrija","Mercado de Triana"],
+      bestUnique: ["Museo del Baile Flamenco","Casa de la Memoria","Plaza de Toros de la Real Maestranza","Basílica de la Macarena"],
+      bestBreakfast: ["Confitería Ochoa (Sierpes)","Mercado de Triana"],
+      bestLunch: ["El Rinconcillo","Placentines","Bacao","Cervecería Giralda"],
+      bestDinner: ["Casa Robles","Restaurante Becerrita","Cañabota","Sobretablas"],
+      bestCocktails: ["abba The Roof Giralda","La Terraza del EME","La Terraza (Hotel Inglaterra)"],
+      bestBakeries: ["Confitería Ochoa (Sierpes)"],
+      bestCoffee: ["Confitería Ochoa (Sierpes)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Real Alcázar de Sevilla": "Real Alcázar de Sevilla Patio de Banderas Sevilla",
+      "Catedral de Sevilla": "Catedral de Sevilla Avenida de la Constitución Sevilla",
+      "Casa de Pilatos": "Casa de Pilatos Plaza de Pilatos 1 Sevilla",
+      "Setas de Sevilla": "Setas de Sevilla Plaza de la Encarnación Sevilla",
+      "Plaza de Toros de la Real Maestranza": "Plaza de Toros de la Real Maestranza Paseo de Cristóbal Colón 12 Sevilla",
+      "Mercado de Triana": "Mercado de Triana Plaza del Altozano Sevilla",
+      "Sobretablas": "Sobretablas Calle Colombia 7 Sevilla",
+      "Cañabota": "Cañabota Calle Orfila 1 Sevilla",
+      "Casa Robles": "Casa Robles Calle Álvarez Quintero 58 Sevilla",
+      "Restaurante Becerrita": "Restaurante Becerrita Calle Recaredo 9 Sevilla",
+      "Palacio de la Condesa de Lebrija": "Palacio de la Condesa de Lebrija Calle Cuna 8 Sevilla",
+      "Basílica de la Macarena": "Basílica de la Macarena Plaza de la Esperanza Macarena 2 Sevilla",
+      "Archivo General de Indias": "Archivo General de Indias Avenida de la Constitución Sevilla",
+      "Abantal": "Abantal Calle Alcalde José de la Bandera 7 Sevilla",
+      "abba The Roof Giralda": "abba Sevilla Hotel Plaza de la Encarnación 19 Sevilla",
+      "La Terraza del EME": "EME Catedral Mercer Hotel Calle Alemanes 27 Sevilla",
+      "Casa de la Memoria": "Casa de la Memoria Calle Cuna 6 Sevilla",
+      "Acuario de Sevilla": "Acuario de Sevilla Muelle de las Delicias Sevilla",
+      "Tía Consuelo": "Tía Consuelo Calle Argote de Molina 32 Sevilla",
+      "Museo del Baile Flamenco": "Museo del Baile Flamenco Calle Manuel Rojas Marcos 3 Sevilla",
+      "Confitería Ochoa (Sierpes)": "Confitería Ochoa Calle Sierpes 45 Sevilla",
+      "El Rinconcillo": "El Rinconcillo Calle Gerona 40 Sevilla",
+      "Placentines": "Placentines Calle Placentines 2 Sevilla",
+      "Bacao": "Bacao Calle Placentines 9 Sevilla",
+      "Cervecería Giralda": "Cervecería Giralda Calle Mateos Gago 1 Sevilla",
+      "La Terraza (Hotel Inglaterra)": "Hotel Inglaterra Plaza Nueva 7 Sevilla"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Seville" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Palaces, the cathedral, flamenco venues and Triana's market, with tapas bars, Michelin-listed dinners, rooftop terraces and a classic confitería checked against their own websites.";
+    cityGuide.highlights = ["Real Alcázar de Sevilla","Catedral de Sevilla","Casa de Pilatos","Plaza de Toros de la Real Maestranza"];
+    cityGuide.tip = "The cathedral's ticket offices close at 18:00 although the visit runs until 19:00, and tickets bought online cost 13 € against 14 € at the box office.";
+    data.destinationFacts[cityKey] = "The cathedral's ticket offices close at 18:00 although the visit runs until 19:00, and tickets bought online cost 13 € against 14 € at the box office.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Palaces, the cathedral, flamenco venues and Triana's market, with tapas bars, Michelin-listed dinners, rooftop terraces and a classic confitería checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays at Sobretablas",
+        "copy": "Sobretablas serves Tuesday to Saturday and closes Sunday and Monday. Mercado de Triana's food stalls close on Sundays and holidays, though its bars open 10:00 to 17:00."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Buy the cathedral online",
+        "copy": "Catedral de Sevilla charges 13 € online and 14 € at the box office, and online ticket holders enter by the Puerta del Lagarto. Acuario de Sevilla sells a cheaper Thursday-afternoon \"Día del esPEZtador\" ticket online only."
+      },
+      {
+        "label": "Last entry",
+        "value": "Ticket desks close early",
+        "copy": "The Acuario de Sevilla stops admitting visitors an hour before closing, and Palacio de la Condesa de Lebrija's last entry is 45 minutes before closing. From 1 November, the bullring's ticket office closes at 19:00 for visits running to 19:30."
+      },
+      {
+        "label": "Booking rules",
+        "value": "No-show charges",
+        "copy": "Casa Robles charges 20 € per person for cancellations under eight hours or no-shows. Sobretablas asks you to state allergies when booking so it can adapt its tasting menu."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Book the cathedral and dinner tables ahead, and plan sights around early ticket-desk closing times.",
+      intro: [
+        "Seville's headline sights keep different clocks, so plan them in order. The Real Alcázar de Sevilla opens at 09:30 and, from October to March, closes at 17:00. Catedral de Sevilla opens at 10:45 Monday to Saturday but only at 14:30 on Sundays, and its ticket offices shut at 18:00. Tickets cost 13 € online or 14 € at the desk, and the time on your ticket is your entry time, with no limit on how long you stay. The cathedral also runs a free Sunday visit from 17:00 at the Puerta del Príncipe, subject to the liturgical calendar.",
+        "For a quieter palace, Casa de Pilatos opens every day from 9:00 to 18:00, charging 12 € for the main floor and 6 € for the upper floor, with an audioguide or guide included and free entry for children up to 11 with an adult. Palacio de la Condesa de Lebrija on Calle Cuna opens daily from September to June, 10:00 to 18:00, and offers a free ground-floor visit on Fridays at 10:00 with limited places. Setas de Sevilla stays open until 01:00, with last entry at 00:15, so you can save its 360º viewpoint for after dinner.",
+        "Flamenco and bullfighting history sit close together. The Museo del Baile Flamenco on Manuel Rojas Marcos runs shows at 17:00, 19:00 and 20:45, and museum entry costs 6 €. Next door on Calle Cuna, Casa de la Memoria programmes evening flamenco sessions. At the Plaza de Toros de la Real Maestranza, guided visits run 9:00 to 19:30 from 1 November, with the ticket office closing at 19:00, and they finish at 15:00 on bullfighting days. With children, the Acuario de Sevilla opens daily, until 18:00 on weekdays and 19:00 at weekends.",
+        "Eat across the river and around the cathedral. Mercado de Triana's stalls trade Monday to Saturday until 14:30, while its bars serve until midnight. Casa Robles and Restaurante Becerrita both open every day for lunch and dinner, and Becerrita serves lunch only on 24 and 31 December. Sobretablas, holding a Michelin 2026 Bib Gourmand badge, seats lunch at 13:45 and dinner at 20:15. For a drink with a view, abba The Roof Giralda serves until midnight Sunday to Thursday and until 01:00 on Fridays, Saturdays and holiday eves."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Start at the Real Alcázar at 09:30, then cross to the cathedral before its 18:00 ticket cut-off."
+        ],
+        [
+          "A slower morning",
+          "Have breakfast at Confitería Ochoa on Sierpes, then browse Mercado de Triana's stalls before they close at 14:30."
+        ],
+        [
+          "Before booking",
+          "Buy cathedral tickets online to save 1 €, and cancel restaurant tables at Casa Robles at least eight hours ahead to avoid a 20 € per-person charge."
+        ]
+      ],
+      trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

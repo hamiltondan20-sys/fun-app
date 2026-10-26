@@ -1,0 +1,925 @@
+{
+  "city": "Seville, Spain",
+  "checkedOn": "2026-10-25",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Real Alcázar de Sevilla",
+      "kind": "landmark",
+      "url": "https://www.alcazarsevilla.org/",
+      "sourceType": "official public operator (Patronato del Real Alcázar y Casa Consistorial de Sevilla)",
+      "address": "Patio de Banderas, s/n, 41004 Sevilla",
+      "operatingEvidence": "Site carries October 2026 notices, including \"Cierre temporal de las tiendas del Real Alcázar\", plus a \"RESERVA TU VISITA\" booking button.",
+      "hours": "\"Octubre-Marzo: 09:30 h - 17:00 h\"; \"Abril - Septiembre: 09:30 h - 19:00 h\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Catedral de Sevilla",
+      "kind": "landmark",
+      "url": "https://www.catedraldesevilla.es/horarios-y-tarifas/",
+      "sourceType": "operator's own site (Cabildo Catedral de Sevilla)",
+      "address": "Avenida de la Constitución, s/n, 41001 Sevilla",
+      "operatingEvidence": "Prices \"vigentes desde el 1 de enero de 2026\"; online sales at tickets.catedraldesevilla.eu; 22 Oct 2026 news that Macip's \"La Adoración del Niño Jesús\" is temporarily on display, and a 23 Oct notice of a roughly four-month restoration of the Puerta de San Fernando.",
+      "hours": "Monday to Saturday \"10:45h. a 19:00h.\"; Sundays \"14:30h. a 19:00h.\"; \"Cierre de taquillas a las 18:00 horas.\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Casa de Pilatos",
+      "kind": "landmark",
+      "url": "https://www.fundacionmedinaceli.org/monumentos/pilatos/",
+      "sourceType": "operator's own site (Fundación Casa Ducal de Medinaceli)",
+      "address": "Plaza de Pilatos, 1, 41003, Sevilla",
+      "operatingEvidence": "Date-stamped notice: \"Hoy, 25 de octubre de 2026 ... La casa está abierta de 9 a 18h.\" Tickets: Planta Principal 12€, Planta alta 6€.",
+      "hours": "Every day 9:00 to 18:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Setas de Sevilla",
+      "kind": "scenic",
+      "url": "https://setasdesevilla.com/",
+      "sourceType": "operator's own site",
+      "address": "Plaza de la Encarnación, s/n, Casco Antiguo, 41003 Sevilla",
+      "operatingEvidence": "Ticket products on sale \"from €16\" including the \"Mirador 360º\", multisensory film and Aurora light show; no explicitly 2026-dated text.",
+      "hours": "09:30 to 01:00, last entry 00:15",
+      "confidence": "medium"
+    },
+    {
+      "name": "Palacio de la Condesa de Lebrija",
+      "kind": "museum",
+      "url": "https://www.palaciodelebrija.com/",
+      "sourceType": "operator's own site",
+      "address": "Calle Cuna nº8 - 41004 Sevilla (España)",
+      "operatingEvidence": "States \"ABIERTO TODOS LOS DÍAS\" with an online \"COMPRAR ENTRADAS\" ticket shop and a free Friday 10:00 visit to the ground floor; footer reads 2021, so no 2026-dated content.",
+      "hours": "September to June 10:00 to 18:00; July and August 10:00 to 15:00; \"Último pase 45 minutos antes del cierre.\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Acuario de Sevilla",
+      "kind": "museum",
+      "url": "https://www.acuariosevilla.es/horarios-y-tarifas/",
+      "sourceType": "operator's own site",
+      "address": "Muelle de las Delicias, s/n, 41012 Sevilla",
+      "operatingEvidence": "Home page promotes Halloween 2026 family activities, November family plans and 2026/2027 school programmes; online ticket office at entradas.acuariosevilla.es.",
+      "hours": "September to June: Mon-Fri 10:00-18:00, Sat-Sun 10:00-19:00; ticket office and access close one hour before closing",
+      "confidence": "high"
+    },
+    {
+      "name": "Plaza de Toros de la Real Maestranza",
+      "kind": "landmark",
+      "url": "https://www.visitaplazadetorosdesevilla.com/",
+      "sourceType": "operator's own site (Real Maestranza de Caballería de Sevilla visits site, linked from realmaestranza.com)",
+      "address": "P.º de Cristóbal Colón, 12, 41001 Sevilla",
+      "operatingEvidence": "Notice: \"A partir del próximo domingo 1 de noviembre, el horario de visitas será de 9:00 h. a 19:30 h.\"; realmaestranza.com agenda items dated 16 and 23 October 2026.",
+      "hours": "From 1 November: visits 9:00 to 19:30, ticket office closes 19:00; bullfighting days 09:30 to 15:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Archivo General de Indias",
+      "kind": "museum",
+      "url": "https://www.cultura.gob.es/cultura/areas/archivos/mc/archivos/agi/portada.html",
+      "sourceType": "official public operator (Ministerio de Cultura)",
+      "address": "Edificio de la Lonja: Av. de la Constitución, s/n, 41004 Sevilla",
+      "operatingEvidence": "2026 programme includes a 17 June 2026 book presentation with free entry until capacity and \"Una ventana al Archivo 2026\".",
+      "hours": "not published on the page read",
+      "confidence": "high"
+    },
+    {
+      "name": "Museo del Baile Flamenco",
+      "kind": "museum",
+      "url": "https://www.museodelbaileflamenco.com/",
+      "sourceType": "operator's own site",
+      "address": "c/ Manuel Rojas Marcos, nº 3. 41004 Sevilla",
+      "operatingEvidence": "Publishes current prices (museum 6 €, Puro Flamenco show 29 €) and show times \"17:00, 19:00 y 20:45\"; no explicitly 2026-dated text.",
+      "hours": "10:00 to 18:45, last entry 18:00; opens 14:30 on the first Monday of each month",
+      "confidence": "medium"
+    },
+    {
+      "name": "Basílica de la Macarena",
+      "kind": "landmark",
+      "url": "https://www.hermandaddelamacarena.es/",
+      "sourceType": "operator's own site (Hermandad de la Macarena)",
+      "address": "Plaza de la Esperanza Macarena, 2 - 41002 Sevilla",
+      "operatingEvidence": "October 2026 worship calendar and a report on the Función Principal \"este domingo, 25 de octubre\".",
+      "hours": "Only a winter schedule dated 2023-24 is published (Mon-Sat 9:00-14:00 and 17:00-21:00); museum visits stop 30 minutes before the basilica closes",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mercado de Triana",
+      "kind": "market",
+      "url": "https://www.mercadodetrianasevilla.com/horarios/",
+      "sourceType": "operator's own site (Asociación de Comerciantes del Mercado de Triana)",
+      "address": "c/ Plaza del Altozano s/n",
+      "operatingEvidence": "News items dated 16/09/26; published hours for shops and bars.",
+      "hours": "Shops Mon-Sat 9:00-14:30, closed Sundays and holidays; bars and restaurants Mon-Sat 9:00-17:00 and 18:00-midnight, Sundays and holidays 10:00-17:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Casa Robles",
+      "kind": "meal",
+      "url": "https://www.casarobles.es/",
+      "sourceType": "operator's own site",
+      "address": "Calle Álvarez Quintero, 58, 41004 Sevilla",
+      "operatingEvidence": "2026 carta PDF and Nochebuena, Nochevieja and Navidad 2026 menus; online reservations with a no-show charge.",
+      "hours": "\"Lunes a Domingo 12:30 a 24:00 h\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Restaurante Becerrita",
+      "kind": "meal",
+      "url": "https://www.becerrita.com/",
+      "sourceType": "operator's own site",
+      "address": "C. Recaredo, 9, Casco Antiguo, 41003 Sevilla",
+      "operatingEvidence": "Promotes \"Experiencias de Almadraba 2026\" and other 2026 menus; online reservations and phone 954 41 20 57.",
+      "hours": "\"De Lunes a Domingo de 13:00 a 16:30 y de 20:00 a 00:00 horas.\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Cañabota",
+      "kind": "meal",
+      "url": "https://www.canabota.es/",
+      "sourceType": "operator's own site",
+      "address": "Orfila, 1, 41003 Sevilla (La Barra at Orfila, 5)",
+      "operatingEvidence": "Shows \"Michelin 2026\" and \"1 Sol Guía Repsol 2026\" badges and \"© Cañabota 2026\"; \"Reservar\" buttons for restaurant and bar.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Sobretablas",
+      "kind": "meal",
+      "url": "https://www.sobretablasrestaurante.com/",
+      "sourceType": "operator's own site",
+      "address": "C/ Colombia, 7, 41013 Sevilla",
+      "operatingEvidence": "Lists 2026 special openings and closures and a \"Michelin 2026\" Bib Gourmand badge; reservations online, by phone or email.",
+      "hours": "Tuesday to Saturday, lunch 13:45 and dinner 20:15; closed Sunday and Monday",
+      "confidence": "high"
+    },
+    {
+      "name": "Abantal",
+      "kind": "meal",
+      "url": "https://www.abantalrestaurante.es/",
+      "sourceType": "operator's own site",
+      "address": "Calle Alcalde José de la Bandera 7 y 9, 41003 Sevilla",
+      "operatingEvidence": "Live reservation links and tasting-menu and wine-list pages; no 2026-dated text.",
+      "hours": "\"De martes a sábado de 12.00h a 14.00h y de 17.00h a 19.00h\" (as published; may be phone hours)",
+      "confidence": "medium"
+    },
+    {
+      "name": "El Rinconcillo",
+      "kind": "meal",
+      "url": "https://www.elrinconcillo.es/",
+      "sourceType": "operator's own site",
+      "address": "Calle Gerona, 40, Sevilla",
+      "operatingEvidence": "News item dated 2026-03-05 on its Semana Santa 2026 poster; \"RESERVA AHORA\" button and linked restaurant and bar menus.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Placentines",
+      "kind": "meal",
+      "url": "https://www.placentines.es/",
+      "sourceType": "operator's own site (Grupo Robles)",
+      "address": "Placentines, 2 41004, Sevilla",
+      "operatingEvidence": "Christmas 2026 menus (Nochebuena, Nochevieja, Grupos) and a \"NUEVA CARTA\"; \"Copyright 2026 © Placentines\".",
+      "hours": "\"Horario de cocina: 12.30h a 01.00h ininterrumpidamente.\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Bacao",
+      "kind": "meal",
+      "url": "https://www.bacao.es/",
+      "sourceType": "operator's own site (Grupo Robles)",
+      "address": "Placentines, 9, 41004, Sevilla",
+      "operatingEvidence": "Published daily hours and \"Copyright 2026 © Restaurante Bacao - Sevilla\"; no dated menu.",
+      "hours": "Monday to Sunday 12:00 to 00:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Tía Consuelo",
+      "kind": "meal",
+      "url": "https://www.tiaconsuelo.es/",
+      "sourceType": "operator's own site (Grupo Robles)",
+      "address": "C. Argote de Molina, 32, Casco Antiguo, 41001 Sevilla",
+      "operatingEvidence": "\"reservar mesa\" and takeaway ordering links; \"Copyright 2026 © Tía Consuelo\".",
+      "hours": "\"Lunes a Domingo 12:00 - 00:30\", open \"365 del año\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Cervecería Giralda",
+      "kind": "meal",
+      "url": "https://cerveceriagiralda.es/",
+      "sourceType": "operator's own site",
+      "address": "Calle Mateos Gago, 1. 41004 Sevilla",
+      "operatingEvidence": "Reservation form and published hours; copyright line reads 2023, no 2026 text.",
+      "hours": "\"12:00 - 00:00\" (days not stated)",
+      "confidence": "medium"
+    },
+    {
+      "name": "abba The Roof Giralda",
+      "kind": "bar",
+      "url": "https://www.abbahoteles.com/en/abba-sevilla-hotel/rooftop",
+      "sourceType": "operator's own site (abba Hoteles)",
+      "address": "Plaza de la Encarnación, 19 | 41003 Sevilla",
+      "operatingEvidence": "Current terrace and kitchen hours published, \"Hours subject to change due to private events\"; no 2026-dated text.",
+      "hours": "Sun-Thu 13:00-00:00; Fri, Sat and holiday eves 13:00-01:00; kitchen 13:00-22:30",
+      "confidence": "medium"
+    },
+    {
+      "name": "La Terraza del EME",
+      "kind": "bar",
+      "url": "https://www.emecatedralmercer.com/",
+      "sourceType": "operator's own site (EME Catedral Mercer Hotel)",
+      "address": "Calle Alemanes, 27, 41004 Seville",
+      "operatingEvidence": "Listed among the hotel's current restaurants and bars; hotel page cites its 2026 Travellers' Choice recognition.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "La Terraza (Hotel Inglaterra)",
+      "kind": "bar",
+      "url": "https://www.hotelinglaterra.es/",
+      "sourceType": "operator's own site (Hotel Inglaterra)",
+      "address": "Plaza Nueva, 7. 41001. Sevilla",
+      "operatingEvidence": "Hotel page promotes its rooftop: \"La azotea del Hotel Inglaterra te invita a soñar\"; links a 2026 shareholder meeting notice.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Confitería Ochoa (Sierpes)",
+      "kind": "bakery",
+      "url": "https://confiteriaochoa.com/menus/",
+      "sourceType": "operator's own site",
+      "address": "C. Sierpes, 45 41004 Sevilla",
+      "operatingEvidence": "Publishes Desayunos, Meriendas and Bebidas menus and an online shop of pastries such as \"Herradura\" and \"Savoy\"; latest uploads dated 2025, no 2026 text.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Casa de la Memoria",
+      "kind": "museum",
+      "url": "https://www.casadelamemoria.es/calendario/",
+      "sourceType": "operator's own site",
+      "address": "Calle Cuna nº6, 41004 Sevilla",
+      "operatingEvidence": "Calendar lists flamenco evenings \"1 al 16 de OCTUBRE\" and \"17 al 31 de OCTUBRE\" with a \"comprar entradas\" link; the year is not stated.",
+      "hours": "Evening sessions (\"TARDES\"); exact times not published",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Plaza de Espana",
+      "reason": "Run by the city; sevilla.org refused the connection (ECONNREFUSED), so no operator page could be read",
+      "url": "https://www.sevilla.org/"
+    },
+    {
+      "name": "Museo de Bellas Artes de Sevilla",
+      "reason": "Certificate error (unable to verify the first certificate) on museosdeandalucia.es; Junta page returned 404",
+      "url": "https://www.museosdeandalucia.es/web/museodebellasartesdesevilla"
+    },
+    {
+      "name": "Palacio de las Dueñas",
+      "reason": "Official site shows only phone-support hours, no visiting hours and no current dated content (footer 2024)",
+      "url": "https://www.lasduenas.es/"
+    },
+    {
+      "name": "Hospital de los Venerables",
+      "reason": "focus.es redirected to a different domain (focus.cat); not followed as unverified",
+      "url": "https://www.focus.es/venerables"
+    },
+    {
+      "name": "Torre del Oro (Museo Naval)",
+      "reason": "Armada site did not resolve (DNS failure)",
+      "url": "https://www.armada.defensa.gob.es/"
+    },
+    {
+      "name": "CaixaForum Sevilla",
+      "reason": "HTTP 403, site refused automated reading",
+      "url": "https://caixaforum.org/es/sevilla"
+    },
+    {
+      "name": "Isla Mágica",
+      "reason": "Domain did not resolve (DNS failure)",
+      "url": "https://www.isla-magica.es/"
+    },
+    {
+      "name": "Mercado Lonja del Barranco",
+      "reason": "Connection refused",
+      "url": "https://www.lonjadelbarranco.com/"
+    },
+    {
+      "name": "Hotel Doña María terrace",
+      "reason": "Certificate error (unable to verify the first certificate)",
+      "url": "https://www.hoteldonamaria.com/"
+    },
+    {
+      "name": "Hotel Alfonso XIII bar",
+      "reason": "Certificate hostname mismatch",
+      "url": "https://www.hotel-alfonsoxiii-seville.com/"
+    },
+    {
+      "name": "Espacio Eslava",
+      "reason": "Page lists address but no hours or dated content and is filled with unrelated casino/betting promotions; not treated as reliable",
+      "url": "https://www.espacioeslava.com/"
+    },
+    {
+      "name": "Confitería La Campana",
+      "reason": "Official site gives address (Calle Sierpes 1-3) but no hours or current evidence; footer 2015",
+      "url": "https://www.confiterialacampana.com/"
+    },
+    {
+      "name": "Restaurante Ispal",
+      "reason": "Official site says \"Cerrado por vacaciones y reformas\" with no reopening date",
+      "url": "https://www.restauranteispal.com/"
+    },
+    {
+      "name": "Robles Laredo",
+      "reason": "Official site shows only an undated closure notice (\"permanecerán cerrados a partir de mañana día 15 de marzo\"), no current evidence",
+      "url": "https://www.robles-laredo.es/"
+    },
+    {
+      "name": "La Brunilda",
+      "reason": "Official site has no address, hours or dated content",
+      "url": "https://www.labrunildatapas.com/"
+    },
+    {
+      "name": "Ovejas Negras",
+      "reason": "Official site returns a WordPress/PHP error",
+      "url": "https://www.ovejasnegrastapas.com/"
+    },
+    {
+      "name": "Mamarracha",
+      "reason": "HTTP 500 server error",
+      "url": "https://mamarracha.com/"
+    },
+    {
+      "name": "Bodeguita Antonio Romero",
+      "reason": "Domain now hosts an unrelated cooking blog",
+      "url": "https://www.bodeguitaantonioromero.com/"
+    },
+    {
+      "name": "Virgin Coffee",
+      "reason": "No official site found (virgincoffee.es did not resolve)",
+      "url": "https://www.virgincoffee.es/"
+    },
+    {
+      "name": "Parcería Café",
+      "reason": "No official site found (parceriacafe.com did not resolve)",
+      "url": "https://parceriacafe.com/"
+    },
+    {
+      "name": "Café de Indias",
+      "reason": "TLS error (unrecognized name)",
+      "url": "https://www.cafedeindias.es/"
+    },
+    {
+      "name": "Horno de San Buenaventura",
+      "reason": "No official site found (.com and .es did not resolve)",
+      "url": "https://www.hornosanbuenaventura.com/"
+    },
+    {
+      "name": "Obrador Manu Jara",
+      "reason": "Domain did not resolve",
+      "url": "https://www.manujara.es/"
+    },
+    {
+      "name": "Pura Vida Terraza (Hotel Los Seises)",
+      "reason": "Hotel page returned 404 after redirect",
+      "url": "https://www.fontecruzcollection.com/es/hotel-fontecruz-sevilla-seises/"
+    },
+    {
+      "name": "Bar El Comercio",
+      "reason": "No official website found; only review and guide sites",
+      "url": ""
+    },
+    {
+      "name": "Triana ceramics",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Plaza de Espana at opening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Orange-tree neighborhood walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Classic tapas crawl",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Triana market lunch",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late dinner in Alameda",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Triana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Alameda",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Santa Cruz",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Santa Cruz walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Triana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Alameda",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Alameda",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Real Alcazar",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Santa Cruz",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Plaza de Espana at opening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Triana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Seville Cathedral",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Santa Cruz evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Triana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Alameda",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Santa Cruz",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Real Alcazar",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Triana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Alameda",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Santa Cruz",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Real Alcazar",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Santa Cruz cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Triana ceramics",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Alameda",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Alameda",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Santa Cruz",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Santa Cruz",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Triana bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Real Alcazar",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Alameda",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Santa Cruz",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Seville Cathedral",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Alameda",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Santa Cruz",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Triana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Alameda",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Santa Cruz",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Santa Cruz",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Triana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Plaza de Espana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Santa Cruz",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Triana morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Real Alcazar",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Alameda",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Santa Cruz",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Triana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Alameda",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Real Alcázar de Sevilla",
+        "Catedral de Sevilla",
+        "Casa de Pilatos",
+        "Setas de Sevilla"
+      ],
+      "bestFirstTimers": [
+        "Real Alcázar de Sevilla",
+        "Catedral de Sevilla",
+        "Plaza de Toros de la Real Maestranza",
+        "Mercado de Triana"
+      ],
+      "bestRestaurants": [
+        "Sobretablas",
+        "Cañabota",
+        "Casa Robles",
+        "Restaurante Becerrita"
+      ],
+      "bestBudget": [
+        "Mercado de Triana",
+        "Palacio de la Condesa de Lebrija",
+        "Basílica de la Macarena",
+        "Archivo General de Indias"
+      ],
+      "bestLuxury": [
+        "Abantal",
+        "Cañabota",
+        "Sobretablas",
+        "abba The Roof Giralda"
+      ],
+      "bestCouples": [
+        "Setas de Sevilla",
+        "La Terraza del EME",
+        "Casa de la Memoria",
+        "Sobretablas"
+      ],
+      "bestKids": [
+        "Acuario de Sevilla",
+        "Casa de Pilatos",
+        "Setas de Sevilla",
+        "Tía Consuelo"
+      ],
+      "bestSolo": [
+        "Archivo General de Indias",
+        "Museo del Baile Flamenco",
+        "Palacio de la Condesa de Lebrija",
+        "Mercado de Triana"
+      ],
+      "bestUnique": [
+        "Museo del Baile Flamenco",
+        "Casa de la Memoria",
+        "Plaza de Toros de la Real Maestranza",
+        "Basílica de la Macarena"
+      ],
+      "bestBreakfast": [
+        "Confitería Ochoa (Sierpes)",
+        "Mercado de Triana"
+      ],
+      "bestLunch": [
+        "El Rinconcillo",
+        "Placentines",
+        "Bacao",
+        "Cervecería Giralda"
+      ],
+      "bestDinner": [
+        "Casa Robles",
+        "Restaurante Becerrita",
+        "Cañabota",
+        "Sobretablas"
+      ],
+      "bestCocktails": [
+        "abba The Roof Giralda",
+        "La Terraza del EME",
+        "La Terraza (Hotel Inglaterra)"
+      ],
+      "bestBakeries": [
+        "Confitería Ochoa (Sierpes)"
+      ],
+      "bestCoffee": [
+        "Confitería Ochoa (Sierpes)"
+      ]
+    },
+    "queries": {
+      "Real Alcázar de Sevilla": "Real Alcázar de Sevilla Patio de Banderas Sevilla",
+      "Catedral de Sevilla": "Catedral de Sevilla Avenida de la Constitución Sevilla",
+      "Casa de Pilatos": "Casa de Pilatos Plaza de Pilatos 1 Sevilla",
+      "Setas de Sevilla": "Setas de Sevilla Plaza de la Encarnación Sevilla",
+      "Palacio de la Condesa de Lebrija": "Palacio de la Condesa de Lebrija Calle Cuna 8 Sevilla",
+      "Acuario de Sevilla": "Acuario de Sevilla Muelle de las Delicias Sevilla",
+      "Plaza de Toros de la Real Maestranza": "Plaza de Toros de la Real Maestranza Paseo de Cristóbal Colón 12 Sevilla",
+      "Archivo General de Indias": "Archivo General de Indias Avenida de la Constitución Sevilla",
+      "Museo del Baile Flamenco": "Museo del Baile Flamenco Calle Manuel Rojas Marcos 3 Sevilla",
+      "Basílica de la Macarena": "Basílica de la Macarena Plaza de la Esperanza Macarena 2 Sevilla",
+      "Mercado de Triana": "Mercado de Triana Plaza del Altozano Sevilla",
+      "Casa Robles": "Casa Robles Calle Álvarez Quintero 58 Sevilla",
+      "Restaurante Becerrita": "Restaurante Becerrita Calle Recaredo 9 Sevilla",
+      "Cañabota": "Cañabota Calle Orfila 1 Sevilla",
+      "Sobretablas": "Sobretablas Calle Colombia 7 Sevilla",
+      "Abantal": "Abantal Calle Alcalde José de la Bandera 7 Sevilla",
+      "El Rinconcillo": "El Rinconcillo Calle Gerona 40 Sevilla",
+      "Placentines": "Placentines Calle Placentines 2 Sevilla",
+      "Bacao": "Bacao Calle Placentines 9 Sevilla",
+      "Tía Consuelo": "Tía Consuelo Calle Argote de Molina 32 Sevilla",
+      "Cervecería Giralda": "Cervecería Giralda Calle Mateos Gago 1 Sevilla",
+      "abba The Roof Giralda": "abba Sevilla Hotel Plaza de la Encarnación 19 Sevilla",
+      "La Terraza del EME": "EME Catedral Mercer Hotel Calle Alemanes 27 Sevilla",
+      "La Terraza (Hotel Inglaterra)": "Hotel Inglaterra Plaza Nueva 7 Sevilla",
+      "Confitería Ochoa (Sierpes)": "Confitería Ochoa Calle Sierpes 45 Sevilla",
+      "Casa de la Memoria": "Casa de la Memoria Calle Cuna 6 Sevilla"
+    },
+    "summary": "Palaces, the cathedral, flamenco venues and Triana's market, with tapas bars, Michelin-listed dinners, rooftop terraces and a classic confitería checked against their own websites.",
+    "highlights": [
+      "Real Alcázar de Sevilla",
+      "Catedral de Sevilla",
+      "Casa de Pilatos",
+      "Plaza de Toros de la Real Maestranza"
+    ],
+    "tip": "The cathedral's ticket offices close at 18:00 although the visit runs until 19:00, and tickets bought online cost 13 € against 14 € at the box office.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mondays at Sobretablas",
+        "copy": "Sobretablas serves Tuesday to Saturday and closes Sunday and Monday. Mercado de Triana's food stalls close on Sundays and holidays, though its bars open 10:00 to 17:00."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Buy the cathedral online",
+        "copy": "Catedral de Sevilla charges 13 € online and 14 € at the box office, and online ticket holders enter by the Puerta del Lagarto. Acuario de Sevilla sells a cheaper Thursday-afternoon \"Día del esPEZtador\" ticket online only."
+      },
+      {
+        "label": "Last entry",
+        "value": "Ticket desks close early",
+        "copy": "The Acuario de Sevilla stops admitting visitors an hour before closing, and Palacio de la Condesa de Lebrija's last entry is 45 minutes before closing. From 1 November, the bullring's ticket office closes at 19:00 for visits running to 19:30."
+      },
+      {
+        "label": "Booking rules",
+        "value": "No-show charges",
+        "copy": "Casa Robles charges 20 € per person for cancellations under eight hours or no-shows. Sobretablas asks you to state allergies when booking so it can adapt its tasting menu."
+      }
+    ],
+    "dek": "Book the cathedral and dinner tables ahead, and plan sights around early ticket-desk closing times.",
+    "intro": [
+      "Seville's headline sights keep different clocks, so plan them in order. The Real Alcázar de Sevilla opens at 09:30 and, from October to March, closes at 17:00. Catedral de Sevilla opens at 10:45 Monday to Saturday but only at 14:30 on Sundays, and its ticket offices shut at 18:00. Tickets cost 13 € online or 14 € at the desk, and the time on your ticket is your entry time, with no limit on how long you stay. The cathedral also runs a free Sunday visit from 17:00 at the Puerta del Príncipe, subject to the liturgical calendar.",
+      "For a quieter palace, Casa de Pilatos opens every day from 9:00 to 18:00, charging 12 € for the main floor and 6 € for the upper floor, with an audioguide or guide included and free entry for children up to 11 with an adult. Palacio de la Condesa de Lebrija on Calle Cuna opens daily from September to June, 10:00 to 18:00, and offers a free ground-floor visit on Fridays at 10:00 with limited places. Setas de Sevilla stays open until 01:00, with last entry at 00:15, so you can save its 360º viewpoint for after dinner.",
+      "Flamenco and bullfighting history sit close together. The Museo del Baile Flamenco on Manuel Rojas Marcos runs shows at 17:00, 19:00 and 20:45, and museum entry costs 6 €. Next door on Calle Cuna, Casa de la Memoria programmes evening flamenco sessions. At the Plaza de Toros de la Real Maestranza, guided visits run 9:00 to 19:30 from 1 November, with the ticket office closing at 19:00, and they finish at 15:00 on bullfighting days. With children, the Acuario de Sevilla opens daily, until 18:00 on weekdays and 19:00 at weekends.",
+      "Eat across the river and around the cathedral. Mercado de Triana's stalls trade Monday to Saturday until 14:30, while its bars serve until midnight. Casa Robles and Restaurante Becerrita both open every day for lunch and dinner, and Becerrita serves lunch only on 24 and 31 December. Sobretablas, holding a Michelin 2026 Bib Gourmand badge, seats lunch at 13:45 and dinner at 20:15. For a drink with a view, abba The Roof Giralda serves until midnight Sunday to Thursday and until 01:00 on Fridays, Saturdays and holiday eves."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Start at the Real Alcázar at 09:30, then cross to the cathedral before its 18:00 ticket cut-off."
+      ],
+      [
+        "A slower morning",
+        "Have breakfast at Confitería Ochoa on Sierpes, then browse Mercado de Triana's stalls before they close at 14:30."
+      ],
+      [
+        "Before booking",
+        "Buy cathedral tickets online to save 1 €, and cancel restaurant tables at Casa Robles at least eight hours ahead to avoid a 20 € per-person charge."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several sites could not be read: Plaza de España's city operator (sevilla.org, connection refused), Museo de Bellas Artes (certificate error), CaixaForum (403), Torre del Oro and Isla Mágica (domains did not resolve), Hotel Doña María and Hotel Alfonso XIII (certificate errors) and Lonja del Barranco (connection refused). Hours were not published or readable for Cañabota, El Rinconcillo, Confitería Ochoa, La Terraza del EME, Hotel Inglaterra's terrace, the Archivo General de Indias and Casa de la Memoria; the Macarena basilica publishes only a 2023-24 winter schedule; Abantal's published hours may be phone hours; and Setas de Sevilla, Palacio de Lebrija, Museo del Baile Flamenco, abba The Roof Giralda, Cervecería Giralda and Confitería Ochoa show no explicitly 2026-dated content. No specialty coffee shop or independent bakery with a readable official site was confirmed, so the coffee and bakery lists rely on one confitería.",
+  "injectionLikeText": []
+}
