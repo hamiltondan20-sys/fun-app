@@ -5072,4 +5072,114 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Reykjavik, Iceland: source review of 2026-10-25 (docs/content-research/reykjavik-2026-10-25.md).
+  {
+    const cityKey = "Reykjavik, Iceland";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Hallgrímskirkja","Harpa","Perlan","National Museum of Iceland"],
+      bestFirstTimers: ["Hallgrímskirkja","Harpa","National Museum of Iceland","Whales of Iceland"],
+      bestRestaurants: ["Grillmarkaðurinn","Matur og Drykkur","Fiskmarkaðurinn","Dill"],
+      bestBudget: ["Café Loki","Sundhöll Reykjavíkur","Brauð & Co (Frakkastígur)","Mokka Kaffi"],
+      bestLuxury: ["Dill","Matur og Drykkur","Grillmarkaðurinn","Apotek Kitchen + Bar"],
+      bestCouples: ["Kol","Perlan","Harpa","Slippbarinn"],
+      bestKids: ["Reykjavík Family Park and Zoo","Whales of Iceland","FlyOver Iceland","Perlan"],
+      bestSolo: ["National Gallery of Iceland","Reykjavík Art Museum - Hafnarhús","Reykjavík Art Museum - Kjarvalsstaðir","Reykjavík Museum of Photography"],
+      bestUnique: ["Sundhöll Reykjavíkur","Reykjavík Art Museum - Ásmundarsafn","Settlement Exhibition (Aðalstræti)","FlyOver Iceland"],
+      bestBreakfast: ["Sandholt","Brauð & Co (Frakkastígur)","Mokka Kaffi","Café Loki"],
+      bestLunch: ["Messinn","Café Loki","Apotek Kitchen + Bar","Snaps"],
+      bestDinner: ["Grillmarkaðurinn","Fiskmarkaðurinn","Matur og Drykkur","Messinn"],
+      bestCocktails: ["Apotek Kitchen + Bar","Kaldi Bar","Slippbarinn"],
+      bestBakeries: ["Sandholt","Brauð & Co (Frakkastígur)"],
+      bestCoffee: ["Reykjavík Roasters (Kárastígur)","Mokka Kaffi","Sandholt"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Hallgrímskirkja": "Hallgrímskirkja Hallgrímstorg 1 Reykjavík",
+      "Harpa": "Harpa Austurbakki 2 Reykjavík",
+      "Perlan": "Perlan Öskjuhlíð Reykjavík",
+      "National Museum of Iceland": "National Museum of Iceland Suðurgata 41 Reykjavík",
+      "Whales of Iceland": "Whales of Iceland Fiskislóð 23-25 Reykjavík",
+      "Grillmarkaðurinn": "Grillmarkaðurinn Lækjargata 2A Reykjavík",
+      "Matur og Drykkur": "Matur og Drykkur Mýrargata 31 Reykjavík",
+      "Fiskmarkaðurinn": "Fiskmarkaðurinn Aðalstræti 12 Reykjavík",
+      "Dill": "Dill Laugavegur 59 Reykjavík",
+      "Café Loki": "Café Loki Lokastígur 28 Reykjavík",
+      "Sundhöll Reykjavíkur": "Sundhöll Reykjavíkur Barónsstígur 45a Reykjavík",
+      "Brauð & Co (Frakkastígur)": "Brauð & Co Frakkastígur 16 Reykjavík",
+      "Mokka Kaffi": "Mokka Kaffi Skólavörðustígur 3a Reykjavík",
+      "Apotek Kitchen + Bar": "Apotek Kitchen + Bar Austurstræti 16 Reykjavík",
+      "Kol": "Kol Skólavörðustígur 40 Reykjavík",
+      "Slippbarinn": "Slippbarinn Mýrargata 2 Reykjavík",
+      "Reykjavík Family Park and Zoo": "Fjölskyldu- og húsdýragarðurinn Múlavegur 2 Reykjavík",
+      "FlyOver Iceland": "FlyOver Iceland Fiskislóð 43 Reykjavík",
+      "National Gallery of Iceland": "National Gallery of Iceland Laufásvegur 12 Reykjavík",
+      "Reykjavík Art Museum - Hafnarhús": "Hafnarhús Tryggvagata 17 Reykjavík",
+      "Reykjavík Art Museum - Kjarvalsstaðir": "Kjarvalsstaðir Flókagata 24 Reykjavík",
+      "Reykjavík Museum of Photography": "Reykjavík Museum of Photography Tryggvagata 15 Reykjavík",
+      "Reykjavík Art Museum - Ásmundarsafn": "Ásmundarsafn Sigtún 105 Reykjavík",
+      "Settlement Exhibition (Aðalstræti)": "Settlement Exhibition Aðalstræti 16 Reykjavík",
+      "Sandholt": "Sandholt Laugavegur 36 Reykjavík",
+      "Messinn": "Messinn Lækjargata 6b Reykjavík",
+      "Snaps": "Snaps Þórsgata 1 Reykjavík",
+      "Kaldi Bar": "Kaldi Bar Laugavegur 20b Reykjavík",
+      "Reykjavík Roasters (Kárastígur)": "Reykjavík Roasters Kárastígur 1 Reykjavík"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Reykjavik" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Churches, concert halls, national and city museums, family attractions and a city pool, with bakeries, cafés, dinners and bars checked against their own websites.";
+    cityGuide.highlights = ["Hallgrímskirkja","Harpa","National Museum of Iceland","National Gallery of Iceland"];
+    cityGuide.tip = "Matur og Drykkur opens only Wednesday to Sunday from 18:00, so plan a Monday or Tuesday dinner elsewhere, such as Grillmarkaðurinn, which seats from 17:30 every day.";
+    data.destinationFacts[cityKey] = "Matur og Drykkur opens only Wednesday to Sunday from 18:00, so plan a Monday or Tuesday dinner elsewhere, such as Grillmarkaðurinn, which seats from 17:30 every day.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Churches, concert halls, national and city museums, family attractions and a city pool, with bakeries, cafés, dinners and bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Most sights open daily",
+        "copy": "The National Museum of Iceland, the National Gallery of Iceland and Whales of Iceland all publish daily hours, while Matur og Drykkur opens only Wednesday to Sunday. Harpa stays open until 20:00 from Wednesday to Saturday and until 18:00 on other days."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book dinners and FlyOver ahead",
+        "copy": "Grillmarkaðurinn, Fiskmarkaðurinn and Snaps take table bookings through Dineout. FlyOver Iceland lists 5,690 ISK online against 6,250 ISK at the gate."
+      },
+      {
+        "label": "Walk-in only",
+        "value": "No reservations",
+        "copy": "Café Loki states first come, first served with no table reservations. Kaldi Bar takes neither table nor group bookings."
+      },
+      {
+        "label": "Age and height rules",
+        "value": "Check before you go",
+        "copy": "Kaldi Bar has an age limit of 22. FlyOver Iceland requires children to be at least 100cm tall, and children 13 and under must be accompanied by someone 14 or older."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Base yourself in the centre, book dinners a few days ahead, and save the museums for the darker afternoons since most keep daily daytime hours.",
+      intro: [
+        "Reykjavík's centre is compact, and Hallgrímskirkja on Hallgrímstorg is the clearest anchor. Its summer notice gave daily hours of 10:00 to 20:00 from 20 May 2026, with tower access closing at 19:45, so check its current hours; it also warns that access can be limited during services, ceremonies and concerts. Down at the waterfront, Harpa on Austurbakki opens Sunday to Tuesday from 10:00 to 18:00 and Wednesday to Saturday until 20:00, and its box office stays open longer on event nights. Perlan on Öskjuhlíð runs its exhibitions from 9:00 to 21:00, with a bar open until 21:00.",
+        "For a museum day, the National Museum of Iceland at Suðurgata 41 opens daily from 10:00 to 17:00, charges adults 3,300 ISK and lets under-18s in free. Its exhibition on the bridal costume runs until 9 May 2027. The National Gallery of Iceland at Laufásvegur 12 also opens every day from 10am to 5pm, with \"Kjarval in the East\" until 17 January 2027 and a show of Ukrainian icons until 17 October 2027. Reykjavík Art Museum spreads across three buildings: Hafnarhús on Tryggvagata stays open until 22:00 on Thursdays, while Kjarvalsstaðir and Ásmundarsafn keep daytime hours.",
+        "Eating out rewards a little planning. Grillmarkaðurinn, Fiskmarkaðurinn and Snaps take bookings through Dineout, and Matur og Drykkur on Mýrargata opens only Wednesday to Sunday from 18:00, with its food-and-drink menu listed at 24,500 ISK and no vegan, gluten-free or lactose-free menu. Café Loki, across the street from Hallgrímskirkja, takes no table reservations and serves Icelandic rye bread plates from 8am. For an early start, Brauð & Co on Frakkastígur opens at 06:30, Sandholt on Laugavegur at 07:30 and Mokka on Skólavörðustígur at 9:00.",
+        "In the evening, Kaldi Bar at Laugavegur 20b has an age limit of 22, takes no table or group bookings and runs a daily happy hour from 16:00 to 19:00 on draught beer and wine. Slippbarinn on Mýrargata has happy hour every day from 15:00 to 18:00. If you are travelling with children, the Family Park and Zoo at Múlavegur 2 opens daily from 10:00 to 17:00 with free entry for under-sixes, Whales of Iceland on Fiskislóð is open every day of the year, and FlyOver Iceland requires riders to be at least 100cm tall."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair Hallgrímskirkja, which posts its tower hours on its own site, with Harpa on the waterfront and the National Museum of Iceland on Suðurgata."
+        ],
+        [
+          "A slower morning",
+          "Start with a pastry at Brauð & Co on Frakkastígur from 06:30 or Sandholt on Laugavegur from 07:30, then coffee at Mokka from 9:00."
+        ],
+        [
+          "Before booking",
+          "Reserve Grillmarkaðurinn, Fiskmarkaðurinn or Snaps through Dineout, and remember Matur og Drykkur is closed on Mondays and Tuesdays."
+        ]
+      ],
+      trust: "All 29 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

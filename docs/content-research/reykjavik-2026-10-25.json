@@ -1,0 +1,903 @@
+{
+  "city": "Reykjavik, Iceland",
+  "checkedOn": "2026-10-25",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Hallgrímskirkja",
+      "kind": "landmark",
+      "url": "https://www.hallgrimskirkja.is/en-gb",
+      "sourceType": "operator's own site",
+      "address": "Hallgrímstorg 1 / 101 Reykjavík",
+      "operatingEvidence": "Dated 2026 notices: from 20 May 2026 the church is \"open daily from 10:00 to 20:00\"; 40th consecration anniversary festival week 18-25 October 2026. Access may be limited during services, ceremonies and concerts.",
+      "hours": "From 20 May 2026 daily 10:00-20:00; from 1 June church and tower from 9:00; shop and tower access close 19:45",
+      "confidence": "high"
+    },
+    {
+      "name": "Harpa",
+      "kind": "landmark",
+      "url": "https://www.harpa.is/en/opening-hours",
+      "sourceType": "operator's own site",
+      "address": "Austurbakka 2, 101 Reykjavík",
+      "operatingEvidence": "Event listings dated late October 2026, e.g. \"Poga Conducts Shostakovich\" on \"29th October 2026, 19:30\" and Reykjavík Opera Days 2026.",
+      "hours": "\"Sunday to Tuesday from 10:00-18:00 and Wednesday through Saturday from 10:00-20:00\"; box office daily 10:00-18:00, longer on event nights",
+      "confidence": "high"
+    },
+    {
+      "name": "National Museum of Iceland",
+      "kind": "museum",
+      "url": "https://www.thjodminjasafn.is/english",
+      "sourceType": "official public operator (National Museum of Iceland)",
+      "address": "Suðurgata 41, 102 Reykjavík",
+      "operatingEvidence": "Current exhibitions \"A Voyage in History - The Bridal Costume\" (9 May 2026 - 9 May 2027) and \"FLOW - Sólon Íslandus & Mógil\" (2 June 2026 - 15 January 2027). Café \"temporarily closed\".",
+      "hours": "Daily 10:00-17:00; adults 3,300 ISK, under-18s free",
+      "confidence": "high"
+    },
+    {
+      "name": "Perlan",
+      "kind": "museum",
+      "url": "https://www.perlan.is/",
+      "sourceType": "operator's own site",
+      "address": "Öskjuhlíð, 105 Reykjavík, Iceland",
+      "operatingEvidence": "Current hours notice per area and online ticket sales; footer \"© 2026 Perlan\".",
+      "hours": "Exhibitions 9:00-21:00; café 10:00-18:00; restaurant 11:30-18:00; bar 11:30-21:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Reykjavík Art Museum - Hafnarhús",
+      "kind": "museum",
+      "url": "https://listasafnreykjavikur.is/en",
+      "sourceType": "official public operator (Reykjavík Art Museum, City of Reykjavík)",
+      "address": "Tryggvagata 17",
+      "operatingEvidence": "Current exhibition listed: \"Erró: Remix, including a selection of Scapes\"; online ticket shop. No exhibition dates shown.",
+      "hours": "10:00-17:00, \"Thursdays 10:00-22:00\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Reykjavík Art Museum - Kjarvalsstaðir",
+      "kind": "museum",
+      "url": "https://listasafnreykjavikur.is/en",
+      "sourceType": "official public operator (Reykjavík Art Museum, City of Reykjavík)",
+      "address": "Flókagata 24",
+      "operatingEvidence": "Current exhibitions listed: \"Kjarval and the 20th Century: When Modernity Anchored\" and \"Big Little City - Reykjavík in View\". No dates shown.",
+      "hours": "10:00-17:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Reykjavík Art Museum - Ásmundarsafn",
+      "kind": "museum",
+      "url": "https://listasafnreykjavikur.is/en",
+      "sourceType": "official public operator (Reykjavík Art Museum, City of Reykjavík)",
+      "address": "Sigtún 105",
+      "operatingEvidence": "Current exhibition \"Ásmundur Sveinsson: Wonderland\" and \"Wonderland: Open workshop\". No dates shown.",
+      "hours": "13:00-17:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "National Gallery of Iceland",
+      "kind": "museum",
+      "url": "https://www.listasafn.is/en",
+      "sourceType": "official public operator (National Gallery of Iceland)",
+      "address": "Laufásvegur 12, 101 Reykjavík",
+      "operatingEvidence": "Dated exhibitions: \"Kjarval in the East\" 3.10.2026-17.1.2027; \"Where the Light Remains: Ukrainian Icons Across the Centuries\" 17.10.2026-17.10.2027; \"Veil\" 3.10.2026-3.1.2027.",
+      "hours": "\"open every day from 10am - 5pm\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Reykjavík Museum of Photography",
+      "kind": "museum",
+      "url": "https://borgarsogusafn.is/en/access",
+      "sourceType": "official public operator (Reykjavík City Museum)",
+      "address": "\"The entrance of Tryggvagata 15\"",
+      "operatingEvidence": "Current exhibition \"Black/White I Skotið in Fókus 2026\"; upcoming opening \"Water\" on 6 November.",
+      "hours": "\"Monday-Thursday 10:00-18:00, on Friday 11:00-18:00 and at the Weekend 13:00-17:00\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Settlement Exhibition (Aðalstræti)",
+      "kind": "museum",
+      "url": "https://borgarsogusafn.is/en/access",
+      "sourceType": "official public operator (Reykjavík City Museum)",
+      "address": "\"The entrance of Aðalstræti 16\"; museum shop at Aðalstræti 10",
+      "operatingEvidence": "Current autumn-break programme at the exhibition, 22-26 October (\"Where does the little yellow cat live?\").",
+      "hours": "not published on pages read",
+      "confidence": "medium"
+    },
+    {
+      "name": "Reykjavík Family Park and Zoo",
+      "kind": "park",
+      "url": "https://www.mu.is/",
+      "sourceType": "official public operator (Fjölskyldu- og húsdýragarðurinn, City of Reykjavík)",
+      "address": "Múlavegur 2, 104 Reykjavík",
+      "operatingEvidence": "News posted 13 October 2026 (Halloween events) and a play-equipment update dated 4 September 2026.",
+      "hours": "Daily \"Frá kl. 10 til 17\"; adults 2,800 ISK, ages 6-17 1,600 ISK, 0-5 free",
+      "confidence": "high"
+    },
+    {
+      "name": "Sundhöll Reykjavíkur",
+      "kind": "landmark",
+      "url": "https://reykjavik.is/sundholl-reykjavikur",
+      "sourceType": "official public operator (City of Reykjavík)",
+      "address": "Barónsstígur 45a, 101 Reykjavík",
+      "operatingEvidence": "Current winter and summer schedule published by the city, with school-swimming closures; page notes hours can change without notice.",
+      "hours": "Winter: Mon-Fri 15:00-15:45 plus evenings (Mon 20:00-21:00, other weekdays 19:00-21:00); Sat 12:00-21:00; Sun 11:00-21:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Whales of Iceland",
+      "kind": "museum",
+      "url": "https://www.whalesoficeland.is/",
+      "sourceType": "operator's own site",
+      "address": "Fiskislóð 23-25, 101 Reykjavík",
+      "operatingEvidence": "Current hours and ticket prices: \"open daily all year round, including all holidays!\"; adults 4000 ISK.",
+      "hours": "Daily 10:00-17:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "FlyOver Iceland",
+      "kind": "museum",
+      "url": "https://www.flyovericeland.com/",
+      "sourceType": "operator's own site",
+      "address": "Fiskislóð 43, 101 Reykjavík",
+      "operatingEvidence": "Online booking with prices (5690 online, 6250 at the gate); footer \"2026 Flyover\".",
+      "hours": "\"Every day: 9:00 a.m. - 6:30 p.m.\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Sandholt",
+      "kind": "bakery",
+      "url": "https://www.sandholt.is/",
+      "sourceType": "operator's own site",
+      "address": "Laugavegur 36, 101 Reykjavík, Iceland",
+      "operatingEvidence": "Hours notice on the site: \"Alla daga 07:30 - 18:00\". No 2026-dated content.",
+      "hours": "Daily 07:30-18:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Brauð & Co (Frakkastígur)",
+      "kind": "bakery",
+      "url": "https://www.braudogco.is/",
+      "sourceType": "operator's own site",
+      "address": "16 Frakkastígur, 101 Reykjavík",
+      "operatingEvidence": "Branch hours listed for eight locations; footer \"© 2026\".",
+      "hours": "Weekdays and weekends 06:30-17:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Reykjavík Roasters (Kárastígur)",
+      "kind": "cafe",
+      "url": "https://www.reykjavikroasters.is/",
+      "sourceType": "operator's own site",
+      "address": "Kárastígur 1, 101 Reykjavík",
+      "operatingEvidence": "Branch hours notice on the site. No 2026-dated content.",
+      "hours": "Daily 08:00-17:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mokka Kaffi",
+      "kind": "cafe",
+      "url": "https://www.mokka.is/",
+      "sourceType": "operator's own site",
+      "address": "Skólavörðustígur 3a, 101 Reykjavík (site footer spells \"Skólavörðusíg 3a\")",
+      "operatingEvidence": "Hours notice: \"Opið daglega | 9.00 - 18.00\". No 2026-dated content.",
+      "hours": "Daily 9:00-18:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Café Loki",
+      "kind": "meal",
+      "url": "https://www.loki.is/",
+      "sourceType": "operator's own site",
+      "address": "Lokastígur 28, 101 Reykjavik",
+      "operatingEvidence": "Current menu (Icelandic plates with rye bread; rye bread ice cream) and hours; \"First come first serve - no table reservations available.\"",
+      "hours": "Daily 8am-10pm; kitchen to 9:30pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Grillmarkaðurinn",
+      "kind": "meal",
+      "url": "https://www.grillmarkadurinn.is/en",
+      "sourceType": "operator's own site",
+      "address": "Lækjargata 2A, 101 Reykjavík",
+      "operatingEvidence": "Current menus (chef's tasting menu 16.990 kr per person, minimum two), bookings via dineout.is, and 2026 recognitions cited on the site.",
+      "hours": "\"Sunday - Thursday 17:30 · last seating 21:30\"; \"Friday - Saturday 17:30 · last seating 22:00\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Fiskmarkaðurinn",
+      "kind": "meal",
+      "url": "https://www.fiskmarkadurinn.is/",
+      "sourceType": "operator's own site",
+      "address": "Aðalstræti 12, 101 Reykjavík",
+      "operatingEvidence": "Bookings via Dineout; current menus linked (main, Christmas, Omakase).",
+      "hours": "Mon-Thu 17:00-22:00; Fri-Sat 17:00-22:30; Sun 17:00-22:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Dill",
+      "kind": "meal",
+      "url": "https://www.dillrestaurant.is/",
+      "sourceType": "operator's own site",
+      "address": "Laugavegur 59 | 101 Reykjavík",
+      "operatingEvidence": "Live \"Panta borð\" (book a table) link via noona.app. Hours and prices not shown on the page read.",
+      "hours": "not published on page read",
+      "confidence": "medium"
+    },
+    {
+      "name": "Matur og Drykkur",
+      "kind": "meal",
+      "url": "https://www.maturogdrykkur.is/",
+      "sourceType": "operator's own site",
+      "address": "Mýrargata 31, 101 Reykjavík, Iceland",
+      "operatingEvidence": "Current seasonal menu priced at 24,500 ISK and online booking; states no vegan, gluten-free or lactose-free menu.",
+      "hours": "Wednesday-Sunday 18:00-23:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Kol",
+      "kind": "meal",
+      "url": "https://www.kolrestaurant.is/",
+      "sourceType": "operator's own site",
+      "address": "Skólavörðustígur 40 · 101 Reykjavík",
+      "operatingEvidence": "\"Jól 2026\" Christmas menu page and booking button; footer \"© 2014-2026 Kol Restaurant ehf.\"",
+      "hours": "Mon-Thu 11:30-22:00; Fri-Sat 11:30-23:00; Sun 11:30-22:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Snaps",
+      "kind": "meal",
+      "url": "https://www.snaps.is/",
+      "sourceType": "operator's own site",
+      "address": "Þórsgata 1, 101 Reykjavík",
+      "operatingEvidence": "Bookings via Dineout; brunch daily 11:30-16:00 and dinner 16:00-22:00.",
+      "hours": "\"Opið alla daga til 23:30 - eldhúsið lokar kl. 22:00\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Messinn",
+      "kind": "meal",
+      "url": "https://www.messinn.com/",
+      "sourceType": "operator's own site",
+      "address": "Lækjargata 6b, 101 Reykjavík",
+      "operatingEvidence": "Seafood served at lunch and dinner \"alla daga vikunnar\"; footer \"© 2026\".",
+      "hours": "Sun-Thu 11:30-21:00; Fri-Sat 11:30-22:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Apotek Kitchen + Bar",
+      "kind": "bar",
+      "url": "https://www.apotekrestaurant.is/",
+      "sourceType": "operator's own site",
+      "address": "Austurstræti 16, 101 Reykjavík",
+      "operatingEvidence": "\"Jól 2026\" menus and menu files dated March and September 2026; cocktail menu \"Lyfseðill\" with cocktails around 3,700-3,900 kr.",
+      "hours": "Mon-Thu 11:30-22:00; Fri-Sat 11:30-23:00; Sun 11:30-22:00; brunch Sat-Sun 11:30-14:30",
+      "confidence": "high"
+    },
+    {
+      "name": "Slippbarinn",
+      "kind": "bar",
+      "url": "https://www.slippbarinn.is/",
+      "sourceType": "operator's own site",
+      "address": "Mýrargata 2, 101 Reykjavík",
+      "operatingEvidence": "Current hours and happy hour notice: \"Happy Hour er alla daga frá 15:00 - 18:00\".",
+      "hours": "Bar Sun-Thu 12:00-23:00, Fri-Sat 12:00-24:00; kitchen daily 12:00-21:30",
+      "confidence": "medium"
+    },
+    {
+      "name": "Kaldi Bar",
+      "kind": "bar",
+      "url": "https://www.kaldibar.is/",
+      "sourceType": "operator's own site",
+      "address": "\"Laugavegi 20b, 101 Reykjavík\"",
+      "operatingEvidence": "Site cites Bartenders' Choice Awards \"árin 2023, 2025 og 2026\"; age limit \"22 ára\"; no table or group bookings; happy hour daily 16:00-19:00.",
+      "hours": "Daily from 12:00; to 01:00 Sun-Thu, to 03:00 Fri-Sat",
+      "confidence": "high"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Sky Lagoon",
+      "reason": "Site returned nothing readable to automated fetch (JavaScript loading screen only)",
+      "url": "https://www.skylagoon.com/"
+    },
+    {
+      "name": "Bæjarins Beztu Pylsur",
+      "reason": "Fetch refused: HTTP 429 Too Many Requests on repeated attempts",
+      "url": "https://www.bbp.is/"
+    },
+    {
+      "name": "Kolaportið",
+      "reason": "Fetch refused: HTTP 429 Too Many Requests on repeated attempts",
+      "url": "https://www.kolaportid.is/"
+    },
+    {
+      "name": "Sægreifinn (Sea Baron)",
+      "reason": "Domain did not resolve (DNS lookup failed)",
+      "url": "https://www.saegreifinn.is/"
+    },
+    {
+      "name": "Kaffi Vínyl",
+      "reason": "Domain did not resolve (DNS lookup failed)",
+      "url": "https://www.kaffivinyl.com/"
+    },
+    {
+      "name": "Jungle Cocktail Bar",
+      "reason": "junglebar.is did not resolve and no official site found; only third-party listings",
+      "url": "https://www.junglebar.is/"
+    },
+    {
+      "name": "Hlemmur Mathöll",
+      "reason": "Certificate error (hostname not in certificate)",
+      "url": "https://www.hlemmurmatholl.is/"
+    },
+    {
+      "name": "Grandi Mathöll",
+      "reason": "Hours published but no street address on the official pages read",
+      "url": "https://www.grandimatholl.is/"
+    },
+    {
+      "name": "Reykjavík Botanic Garden",
+      "reason": "City page gives only \"í Laugardal\", no exact street address",
+      "url": "https://reykjavik.is/grasagardur"
+    },
+    {
+      "name": "Þingvellir National Park",
+      "reason": "Official site gives only \"Gestastofa Hak, 806 Selfoss\", no hours or 2026-dated content on page read",
+      "url": "https://www.thingvellir.is/en/"
+    },
+    {
+      "name": "Reykjavík Maritime Museum",
+      "reason": "No street number or opening hours on official pages read (only \"main entrance on Grandagarður\")",
+      "url": "https://borgarsogusafn.is/en/access"
+    },
+    {
+      "name": "Árbær Open Air Museum",
+      "reason": "No address or opening hours on official pages read",
+      "url": "https://borgarsogusafn.is/en/arbaer-open-air-museum"
+    },
+    {
+      "name": "Golden Circle",
+      "reason": "generic, not a place (a touring route/region)",
+      "url": ""
+    },
+    {
+      "name": "Golden Circle with a flexible operator",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Geothermal pool evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Harbor walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Icelandic seafood",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Rye bread and soup lunch",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A modern Nordic dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Old Harbor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Vesturbaer",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Midborg",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Midborg walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Old Harbor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Vesturbaer",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Vesturbaer",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Hallgrimskirkja",
+      "reason": "generic, not a place (Hallgrímskirkja itself checked separately)",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Midborg",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Geothermal pool evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Old Harbor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Harpa Concert Hall",
+      "reason": "generic, not a place (Harpa itself checked separately)",
+      "url": ""
+    },
+    {
+      "name": "Midborg evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Old Harbor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Vesturbaer",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Midborg",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Hallgrimskirkja",
+      "reason": "generic, not a place (Hallgrímskirkja itself checked separately)",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Old Harbor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Vesturbaer",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Midborg",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Hallgrimskirkja",
+      "reason": "generic, not a place (Hallgrímskirkja itself checked separately)",
+      "url": ""
+    },
+    {
+      "name": "Midborg cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Harbor walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Vesturbaer",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Vesturbaer",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Midborg",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Midborg",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Old Harbor bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Hallgrimskirkja",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Vesturbaer",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Midborg",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Harpa Concert Hall",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Vesturbaer",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Midborg",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Old Harbor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Vesturbaer",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Midborg",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Midborg",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Old Harbor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Golden Circle",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Midborg",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Old Harbor morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Hallgrimskirkja",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Vesturbaer",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Midborg",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Old Harbor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Vesturbaer",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Hallgrímskirkja",
+        "Harpa",
+        "Perlan",
+        "National Museum of Iceland"
+      ],
+      "bestFirstTimers": [
+        "Hallgrímskirkja",
+        "Harpa",
+        "National Museum of Iceland",
+        "Whales of Iceland"
+      ],
+      "bestRestaurants": [
+        "Grillmarkaðurinn",
+        "Matur og Drykkur",
+        "Fiskmarkaðurinn",
+        "Dill"
+      ],
+      "bestBudget": [
+        "Café Loki",
+        "Sundhöll Reykjavíkur",
+        "Brauð & Co (Frakkastígur)",
+        "Mokka Kaffi"
+      ],
+      "bestLuxury": [
+        "Dill",
+        "Matur og Drykkur",
+        "Grillmarkaðurinn",
+        "Apotek Kitchen + Bar"
+      ],
+      "bestCouples": [
+        "Kol",
+        "Perlan",
+        "Harpa",
+        "Slippbarinn"
+      ],
+      "bestKids": [
+        "Reykjavík Family Park and Zoo",
+        "Whales of Iceland",
+        "FlyOver Iceland",
+        "Perlan"
+      ],
+      "bestSolo": [
+        "National Gallery of Iceland",
+        "Reykjavík Art Museum - Hafnarhús",
+        "Reykjavík Art Museum - Kjarvalsstaðir",
+        "Reykjavík Museum of Photography"
+      ],
+      "bestUnique": [
+        "Sundhöll Reykjavíkur",
+        "Reykjavík Art Museum - Ásmundarsafn",
+        "Settlement Exhibition (Aðalstræti)",
+        "FlyOver Iceland"
+      ],
+      "bestBreakfast": [
+        "Sandholt",
+        "Brauð & Co (Frakkastígur)",
+        "Mokka Kaffi",
+        "Café Loki"
+      ],
+      "bestLunch": [
+        "Messinn",
+        "Café Loki",
+        "Apotek Kitchen + Bar",
+        "Snaps"
+      ],
+      "bestDinner": [
+        "Grillmarkaðurinn",
+        "Fiskmarkaðurinn",
+        "Matur og Drykkur",
+        "Messinn"
+      ],
+      "bestCocktails": [
+        "Apotek Kitchen + Bar",
+        "Kaldi Bar",
+        "Slippbarinn"
+      ],
+      "bestBakeries": [
+        "Sandholt",
+        "Brauð & Co (Frakkastígur)"
+      ],
+      "bestCoffee": [
+        "Reykjavík Roasters (Kárastígur)",
+        "Mokka Kaffi",
+        "Sandholt"
+      ]
+    },
+    "queries": {
+      "Hallgrímskirkja": "Hallgrímskirkja Hallgrímstorg 1 Reykjavík",
+      "Harpa": "Harpa Austurbakki 2 Reykjavík",
+      "National Museum of Iceland": "National Museum of Iceland Suðurgata 41 Reykjavík",
+      "Perlan": "Perlan Öskjuhlíð Reykjavík",
+      "Reykjavík Art Museum - Hafnarhús": "Hafnarhús Tryggvagata 17 Reykjavík",
+      "Reykjavík Art Museum - Kjarvalsstaðir": "Kjarvalsstaðir Flókagata 24 Reykjavík",
+      "Reykjavík Art Museum - Ásmundarsafn": "Ásmundarsafn Sigtún 105 Reykjavík",
+      "National Gallery of Iceland": "National Gallery of Iceland Laufásvegur 12 Reykjavík",
+      "Reykjavík Museum of Photography": "Reykjavík Museum of Photography Tryggvagata 15 Reykjavík",
+      "Settlement Exhibition (Aðalstræti)": "Settlement Exhibition Aðalstræti 16 Reykjavík",
+      "Reykjavík Family Park and Zoo": "Fjölskyldu- og húsdýragarðurinn Múlavegur 2 Reykjavík",
+      "Sundhöll Reykjavíkur": "Sundhöll Reykjavíkur Barónsstígur 45a Reykjavík",
+      "Whales of Iceland": "Whales of Iceland Fiskislóð 23-25 Reykjavík",
+      "FlyOver Iceland": "FlyOver Iceland Fiskislóð 43 Reykjavík",
+      "Sandholt": "Sandholt Laugavegur 36 Reykjavík",
+      "Brauð & Co (Frakkastígur)": "Brauð & Co Frakkastígur 16 Reykjavík",
+      "Reykjavík Roasters (Kárastígur)": "Reykjavík Roasters Kárastígur 1 Reykjavík",
+      "Mokka Kaffi": "Mokka Kaffi Skólavörðustígur 3a Reykjavík",
+      "Café Loki": "Café Loki Lokastígur 28 Reykjavík",
+      "Grillmarkaðurinn": "Grillmarkaðurinn Lækjargata 2A Reykjavík",
+      "Fiskmarkaðurinn": "Fiskmarkaðurinn Aðalstræti 12 Reykjavík",
+      "Dill": "Dill Laugavegur 59 Reykjavík",
+      "Matur og Drykkur": "Matur og Drykkur Mýrargata 31 Reykjavík",
+      "Kol": "Kol Skólavörðustígur 40 Reykjavík",
+      "Snaps": "Snaps Þórsgata 1 Reykjavík",
+      "Messinn": "Messinn Lækjargata 6b Reykjavík",
+      "Apotek Kitchen + Bar": "Apotek Kitchen + Bar Austurstræti 16 Reykjavík",
+      "Slippbarinn": "Slippbarinn Mýrargata 2 Reykjavík",
+      "Kaldi Bar": "Kaldi Bar Laugavegur 20b Reykjavík"
+    },
+    "summary": "Churches, concert halls, national and city museums, family attractions and a city pool, with bakeries, cafés, dinners and bars checked against their own websites.",
+    "highlights": [
+      "Hallgrímskirkja",
+      "Harpa",
+      "National Museum of Iceland",
+      "National Gallery of Iceland"
+    ],
+    "tip": "Matur og Drykkur opens only Wednesday to Sunday from 18:00, so plan a Monday or Tuesday dinner elsewhere, such as Grillmarkaðurinn, which seats from 17:30 every day.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Most sights open daily",
+        "copy": "The National Museum of Iceland, the National Gallery of Iceland and Whales of Iceland all publish daily hours, while Matur og Drykkur opens only Wednesday to Sunday. Harpa stays open until 20:00 from Wednesday to Saturday and until 18:00 on other days."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book dinners and FlyOver ahead",
+        "copy": "Grillmarkaðurinn, Fiskmarkaðurinn and Snaps take table bookings through Dineout. FlyOver Iceland lists 5,690 ISK online against 6,250 ISK at the gate."
+      },
+      {
+        "label": "Walk-in only",
+        "value": "No reservations",
+        "copy": "Café Loki states first come, first served with no table reservations. Kaldi Bar takes neither table nor group bookings."
+      },
+      {
+        "label": "Age and height rules",
+        "value": "Check before you go",
+        "copy": "Kaldi Bar has an age limit of 22. FlyOver Iceland requires children to be at least 100cm tall, and children 13 and under must be accompanied by someone 14 or older."
+      }
+    ],
+    "dek": "Base yourself in the centre, book dinners a few days ahead, and save the museums for the darker afternoons since most keep daily daytime hours.",
+    "intro": [
+      "Reykjavík's centre is compact, and Hallgrímskirkja on Hallgrímstorg is the clearest anchor. Its summer notice gave daily hours of 10:00 to 20:00 from 20 May 2026, with tower access closing at 19:45, so check its current hours; it also warns that access can be limited during services, ceremonies and concerts. Down at the waterfront, Harpa on Austurbakki opens Sunday to Tuesday from 10:00 to 18:00 and Wednesday to Saturday until 20:00, and its box office stays open longer on event nights. Perlan on Öskjuhlíð runs its exhibitions from 9:00 to 21:00, with a bar open until 21:00.",
+      "For a museum day, the National Museum of Iceland at Suðurgata 41 opens daily from 10:00 to 17:00, charges adults 3,300 ISK and lets under-18s in free. Its exhibition on the bridal costume runs until 9 May 2027. The National Gallery of Iceland at Laufásvegur 12 also opens every day from 10am to 5pm, with \"Kjarval in the East\" until 17 January 2027 and a show of Ukrainian icons until 17 October 2027. Reykjavík Art Museum spreads across three buildings: Hafnarhús on Tryggvagata stays open until 22:00 on Thursdays, while Kjarvalsstaðir and Ásmundarsafn keep daytime hours.",
+      "Eating out rewards a little planning. Grillmarkaðurinn, Fiskmarkaðurinn and Snaps take bookings through Dineout, and Matur og Drykkur on Mýrargata opens only Wednesday to Sunday from 18:00, with its food-and-drink menu listed at 24,500 ISK and no vegan, gluten-free or lactose-free menu. Café Loki, across the street from Hallgrímskirkja, takes no table reservations and serves Icelandic rye bread plates from 8am. For an early start, Brauð & Co on Frakkastígur opens at 06:30, Sandholt on Laugavegur at 07:30 and Mokka on Skólavörðustígur at 9:00.",
+      "In the evening, Kaldi Bar at Laugavegur 20b has an age limit of 22, takes no table or group bookings and runs a daily happy hour from 16:00 to 19:00 on draught beer and wine. Slippbarinn on Mýrargata has happy hour every day from 15:00 to 18:00. If you are travelling with children, the Family Park and Zoo at Múlavegur 2 opens daily from 10:00 to 17:00 with free entry for under-sixes, Whales of Iceland on Fiskislóð is open every day of the year, and FlyOver Iceland requires riders to be at least 100cm tall."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair Hallgrímskirkja, which posts its tower hours on its own site, with Harpa on the waterfront and the National Museum of Iceland on Suðurgata."
+      ],
+      [
+        "A slower morning",
+        "Start with a pastry at Brauð & Co on Frakkastígur from 06:30 or Sandholt on Laugavegur from 07:30, then coffee at Mokka from 9:00."
+      ],
+      [
+        "Before booking",
+        "Reserve Grillmarkaðurinn, Fiskmarkaðurinn or Snaps through Dineout, and remember Matur og Drykkur is closed on Mondays and Tuesdays."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several sites could not be read: Sky Lagoon (JavaScript loading screen only), Bæjarins Beztu Pylsur and Kolaportið (HTTP 429), Sægreifinn, Kaffi Vínyl and junglebar.is (domains did not resolve), and Hlemmur Mathöll (certificate error); none of these failures is evidence of closure. Grandi Mathöll, the Botanic Garden, Þingvellir, the Maritime Museum and Árbær Open Air Museum were left out because their pages showed no exact address or hours. Dill and the Settlement Exhibition did not publish readable hours; Reykjavík Art Museum showed no exhibition dates; Hallgrímskirkja's readable hours date from its May 2026 summer notice and may differ in winter. Sandholt, Mokka, Reykjavík Roasters, Whales of Iceland and Slippbarinn showed current hours but no 2026-dated content.",
+  "injectionLikeText": []
+}

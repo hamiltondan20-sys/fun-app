@@ -5,6 +5,638 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Reykjavik, Iceland": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-25",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several sites could not be read: Sky Lagoon (JavaScript loading screen only), Bæjarins Beztu Pylsur and Kolaportið (HTTP 429), Sægreifinn, Kaffi Vínyl and junglebar.is (domains did not resolve), and Hlemmur Mathöll (certificate error); none of these failures is evidence of closure. Grandi Mathöll, the Botanic Garden, Þingvellir, the Maritime Museum and Árbær Open Air Museum were left out because their pages showed no exact address or hours. Dill and the Settlement Exhibition did not publish readable hours; Reykjavík Art Museum showed no exhibition dates; Hallgrímskirkja's readable hours date from its May 2026 summer notice and may differ in winter. Sandholt, Mokka, Reykjavík Roasters, Whales of Iceland and Slippbarinn showed current hours but no 2026-dated content.",
+    "sourceUrls": [
+      "docs/content-research/reykjavik-2026-10-25.md",
+      "docs/content-research/reykjavik-2026-10-25.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Sky Lagoon",
+        "url": "https://www.skylagoon.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Site returned nothing readable to automated fetch (JavaScript loading screen only)"
+      },
+      {
+        "name": "Bæjarins Beztu Pylsur",
+        "url": "https://www.bbp.is/",
+        "checkedOn": "2026-10-25",
+        "reason": "Fetch refused: HTTP 429 Too Many Requests on repeated attempts"
+      },
+      {
+        "name": "Kolaportið",
+        "url": "https://www.kolaportid.is/",
+        "checkedOn": "2026-10-25",
+        "reason": "Fetch refused: HTTP 429 Too Many Requests on repeated attempts"
+      },
+      {
+        "name": "Sægreifinn (Sea Baron)",
+        "url": "https://www.saegreifinn.is/",
+        "checkedOn": "2026-10-25",
+        "reason": "Domain did not resolve (DNS lookup failed)"
+      },
+      {
+        "name": "Kaffi Vínyl",
+        "url": "https://www.kaffivinyl.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Domain did not resolve (DNS lookup failed)"
+      },
+      {
+        "name": "Jungle Cocktail Bar",
+        "url": "https://www.junglebar.is/",
+        "checkedOn": "2026-10-25",
+        "reason": "junglebar.is did not resolve and no official site found; only third-party listings"
+      },
+      {
+        "name": "Hlemmur Mathöll",
+        "url": "https://www.hlemmurmatholl.is/",
+        "checkedOn": "2026-10-25",
+        "reason": "Certificate error (hostname not in certificate)"
+      },
+      {
+        "name": "Grandi Mathöll",
+        "url": "https://www.grandimatholl.is/",
+        "checkedOn": "2026-10-25",
+        "reason": "Hours published but no street address on the official pages read"
+      },
+      {
+        "name": "Reykjavík Botanic Garden",
+        "url": "https://reykjavik.is/grasagardur",
+        "checkedOn": "2026-10-25",
+        "reason": "City page gives only \"í Laugardal\", no exact street address"
+      },
+      {
+        "name": "Þingvellir National Park",
+        "url": "https://www.thingvellir.is/en/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site gives only \"Gestastofa Hak, 806 Selfoss\", no hours or 2026-dated content on page read"
+      },
+      {
+        "name": "Reykjavík Maritime Museum",
+        "url": "https://borgarsogusafn.is/en/access",
+        "checkedOn": "2026-10-25",
+        "reason": "No street number or opening hours on official pages read (only \"main entrance on Grandagarður\")"
+      },
+      {
+        "name": "Árbær Open Air Museum",
+        "url": "https://borgarsogusafn.is/en/arbaer-open-air-museum",
+        "checkedOn": "2026-10-25",
+        "reason": "No address or opening hours on official pages read"
+      },
+      {
+        "name": "Golden Circle",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (a touring route/region)"
+      },
+      {
+        "name": "Golden Circle with a flexible operator",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Geothermal pool evening",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Harbor walk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Icelandic seafood",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Rye bread and soup lunch",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A modern Nordic dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Old Harbor",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Vesturbaer",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Midborg",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Midborg walk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Old Harbor",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Vesturbaer",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Vesturbaer",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Hallgrimskirkja",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (Hallgrímskirkja itself checked separately)"
+      },
+      {
+        "name": "A signature meal in Midborg",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Geothermal pool evening",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Old Harbor",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Harpa Concert Hall",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (Harpa itself checked separately)"
+      },
+      {
+        "name": "Midborg evening",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Old Harbor",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Vesturbaer",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Midborg",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Hallgrimskirkja",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (Hallgrímskirkja itself checked separately)"
+      },
+      {
+        "name": "Easy outing around Old Harbor",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Vesturbaer",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Midborg",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Hallgrimskirkja",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (Hallgrímskirkja itself checked separately)"
+      },
+      {
+        "name": "Midborg cafe or market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Harbor walk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Vesturbaer",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Vesturbaer",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Midborg",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Midborg",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Old Harbor bakery or market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Hallgrimskirkja",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Vesturbaer",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Midborg",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Harpa Concert Hall",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Vesturbaer",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Midborg",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Old Harbor",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Vesturbaer",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Midborg",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Midborg",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Old Harbor",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Golden Circle",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Midborg",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Old Harbor morning market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Hallgrimskirkja",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Vesturbaer",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Midborg",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Old Harbor",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Vesturbaer",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Hallgrímskirkja": {
+        "url": "https://www.hallgrimskirkja.is/en-gb",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Dated 2026 notices: from 20 May 2026 the church is \"open daily from 10:00 to 20:00\"; 40th consecration anniversary festival week 18-25 October 2026. Access may be limited during services, ceremonies and concerts."
+      },
+      "Harpa": {
+        "url": "https://www.harpa.is/en/opening-hours",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Event listings dated late October 2026, e.g. \"Poga Conducts Shostakovich\" on \"29th October 2026, 19:30\" and Reykjavík Opera Days 2026."
+      },
+      "National Museum of Iceland": {
+        "url": "https://www.thjodminjasafn.is/english",
+        "sourceType": "official public operator (National Museum of Iceland)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibitions \"A Voyage in History - The Bridal Costume\" (9 May 2026 - 9 May 2027) and \"FLOW - Sólon Íslandus & Mógil\" (2 June 2026 - 15 January 2027). Café \"temporarily closed\"."
+      },
+      "Perlan": {
+        "url": "https://www.perlan.is/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current hours notice per area and online ticket sales; footer \"© 2026 Perlan\"."
+      },
+      "Reykjavík Art Museum - Hafnarhús": {
+        "url": "https://listasafnreykjavikur.is/en",
+        "sourceType": "official public operator (Reykjavík Art Museum, City of Reykjavík)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibition listed: \"Erró: Remix, including a selection of Scapes\"; online ticket shop. No exhibition dates shown."
+      },
+      "Reykjavík Art Museum - Kjarvalsstaðir": {
+        "url": "https://listasafnreykjavikur.is/en",
+        "sourceType": "official public operator (Reykjavík Art Museum, City of Reykjavík)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibitions listed: \"Kjarval and the 20th Century: When Modernity Anchored\" and \"Big Little City - Reykjavík in View\". No dates shown."
+      },
+      "Reykjavík Art Museum - Ásmundarsafn": {
+        "url": "https://listasafnreykjavikur.is/en",
+        "sourceType": "official public operator (Reykjavík Art Museum, City of Reykjavík)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibition \"Ásmundur Sveinsson: Wonderland\" and \"Wonderland: Open workshop\". No dates shown."
+      },
+      "National Gallery of Iceland": {
+        "url": "https://www.listasafn.is/en",
+        "sourceType": "official public operator (National Gallery of Iceland)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Dated exhibitions: \"Kjarval in the East\" 3.10.2026-17.1.2027; \"Where the Light Remains: Ukrainian Icons Across the Centuries\" 17.10.2026-17.10.2027; \"Veil\" 3.10.2026-3.1.2027."
+      },
+      "Reykjavík Museum of Photography": {
+        "url": "https://borgarsogusafn.is/en/access",
+        "sourceType": "official public operator (Reykjavík City Museum)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibition \"Black/White I Skotið in Fókus 2026\"; upcoming opening \"Water\" on 6 November."
+      },
+      "Settlement Exhibition (Aðalstræti)": {
+        "url": "https://borgarsogusafn.is/en/access",
+        "sourceType": "official public operator (Reykjavík City Museum)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current autumn-break programme at the exhibition, 22-26 October (\"Where does the little yellow cat live?\")."
+      },
+      "Reykjavík Family Park and Zoo": {
+        "url": "https://www.mu.is/",
+        "sourceType": "official public operator (Fjölskyldu- og húsdýragarðurinn, City of Reykjavík)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "News posted 13 October 2026 (Halloween events) and a play-equipment update dated 4 September 2026."
+      },
+      "Sundhöll Reykjavíkur": {
+        "url": "https://reykjavik.is/sundholl-reykjavikur",
+        "sourceType": "official public operator (City of Reykjavík)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current winter and summer schedule published by the city, with school-swimming closures; page notes hours can change without notice."
+      },
+      "Whales of Iceland": {
+        "url": "https://www.whalesoficeland.is/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current hours and ticket prices: \"open daily all year round, including all holidays!\"; adults 4000 ISK."
+      },
+      "FlyOver Iceland": {
+        "url": "https://www.flyovericeland.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online booking with prices (5690 online, 6250 at the gate); footer \"2026 Flyover\"."
+      },
+      "Sandholt": {
+        "url": "https://www.sandholt.is/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Hours notice on the site: \"Alla daga 07:30 - 18:00\". No 2026-dated content."
+      },
+      "Brauð & Co (Frakkastígur)": {
+        "url": "https://www.braudogco.is/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Branch hours listed for eight locations; footer \"© 2026\"."
+      },
+      "Reykjavík Roasters (Kárastígur)": {
+        "url": "https://www.reykjavikroasters.is/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Branch hours notice on the site. No 2026-dated content."
+      },
+      "Mokka Kaffi": {
+        "url": "https://www.mokka.is/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Hours notice: \"Opið daglega | 9.00 - 18.00\". No 2026-dated content."
+      },
+      "Café Loki": {
+        "url": "https://www.loki.is/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current menu (Icelandic plates with rye bread; rye bread ice cream) and hours; \"First come first serve - no table reservations available.\""
+      },
+      "Grillmarkaðurinn": {
+        "url": "https://www.grillmarkadurinn.is/en",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current menus (chef's tasting menu 16.990 kr per person, minimum two), bookings via dineout.is, and 2026 recognitions cited on the site."
+      },
+      "Fiskmarkaðurinn": {
+        "url": "https://www.fiskmarkadurinn.is/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Bookings via Dineout; current menus linked (main, Christmas, Omakase)."
+      },
+      "Dill": {
+        "url": "https://www.dillrestaurant.is/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Live \"Panta borð\" (book a table) link via noona.app. Hours and prices not shown on the page read."
+      },
+      "Matur og Drykkur": {
+        "url": "https://www.maturogdrykkur.is/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current seasonal menu priced at 24,500 ISK and online booking; states no vegan, gluten-free or lactose-free menu."
+      },
+      "Kol": {
+        "url": "https://www.kolrestaurant.is/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Jól 2026\" Christmas menu page and booking button; footer \"© 2014-2026 Kol Restaurant ehf.\""
+      },
+      "Snaps": {
+        "url": "https://www.snaps.is/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Bookings via Dineout; brunch daily 11:30-16:00 and dinner 16:00-22:00."
+      },
+      "Messinn": {
+        "url": "https://www.messinn.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Seafood served at lunch and dinner \"alla daga vikunnar\"; footer \"© 2026\"."
+      },
+      "Apotek Kitchen + Bar": {
+        "url": "https://www.apotekrestaurant.is/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Jól 2026\" menus and menu files dated March and September 2026; cocktail menu \"Lyfseðill\" with cocktails around 3,700-3,900 kr."
+      },
+      "Slippbarinn": {
+        "url": "https://www.slippbarinn.is/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current hours and happy hour notice: \"Happy Hour er alla daga frá 15:00 - 18:00\"."
+      },
+      "Kaldi Bar": {
+        "url": "https://www.kaldibar.is/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Site cites Bartenders' Choice Awards \"árin 2023, 2025 og 2026\"; age limit \"22 ára\"; no table or group bookings; happy hour daily 16:00-19:00."
+      }
+    }
+  },
   "Shanghai, China": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-25",
