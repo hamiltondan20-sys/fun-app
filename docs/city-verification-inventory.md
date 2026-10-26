@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 45.
-- Classifier-passed (published, not fully documented in that format): 147.
+- Source-verified (complete dated evidence format): 46.
+- Classifier-passed (published, not fully documented in that format): 146.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -270,7 +270,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Lagos, Portugal | lagos | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Lake Baikal, Russia | lake-baikal | classifier-passed | not-reviewed | 0 | 8 | 15 | 4 | None |
 | Lake Como, Italy | lake-como | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Las Vegas, United States | las-vegas | classifier-passed | not-reviewed | 0 | 23 | 15 | 11 | None |
+| Las Vegas, United States | las-vegas | source-verified | source-checked | 29 | 46 | 15 | 15 | None |
 | Lausanne, Switzerland | lausanne | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Leipzig, Germany | leipzig | held-back | not-reviewed | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Lena Pillars, Russia | lena-pillars | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |

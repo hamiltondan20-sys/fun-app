@@ -4536,4 +4536,114 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Las Vegas, United States: source review of 2026-10-25 (docs/content-research/las-vegas-2026-10-25.md).
+  {
+    const cityKey = "Las Vegas, United States";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Red Rock Canyon National Conservation Area","Hoover Dam","Sphere","The Mob Museum"],
+      bestFirstTimers: ["Fremont Street Experience","Neon Museum","Sphere","Hoover Dam"],
+      bestRestaurants: ["é by José Andrés (The Cosmopolitan)","Lotus of Siam (Flamingo Road)","Esther's Kitchen","SW Steakhouse (Wynn Las Vegas)"],
+      bestBudget: ["Fremont Street Experience","Downtown Container Park","Pinball Hall of Fame","Eggslut (The Cosmopolitan)"],
+      bestLuxury: ["é by José Andrés (The Cosmopolitan)","SW Steakhouse (Wynn Las Vegas)","Legacy Club (Circa)"],
+      bestCouples: ["Legacy Club (Circa)","SW Steakhouse (Wynn Las Vegas)","Neon Museum","Herbs & Rye"],
+      bestKids: ["Discovery Children's Museum","Springs Preserve","Pinball Hall of Fame","AREA15"],
+      bestSolo: ["The Mob Museum","Atomic Liquors","Bungalow Coffee Co.","Peppermill Restaurant & Fireside Lounge"],
+      bestUnique: ["Neon Museum","AREA15","Sphere","The Underground (The Mob Museum)"],
+      bestBreakfast: ["Peppermill Restaurant & Fireside Lounge","Mon Ami Gabi (Paris Las Vegas)","Eggslut (The Cosmopolitan)","Bouchon (The Venetian)"],
+      bestLunch: ["Lotus of Siam (Flamingo Road)","Mon Ami Gabi (Paris Las Vegas)","Esther's Kitchen","District Deli & Coffee"],
+      bestDinner: ["é by José Andrés (The Cosmopolitan)","SW Steakhouse (Wynn Las Vegas)","Esther's Kitchen","Bouchon (The Venetian)"],
+      bestCocktails: ["Legacy Club (Circa)","Herbs & Rye","The Golden Tiki","The Underground (The Mob Museum)"],
+      bestBakeries: ["Dominique Ansel Las Vegas (Caesars Palace)","Dominique Ansel Marché (Paris Las Vegas)","Bouchon Bakery (The Venetian)"],
+      bestCoffee: ["Bungalow Coffee Co.","District Deli & Coffee"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Red Rock Canyon National Conservation Area": "Red Rock Canyon Visitor Center 3205 State Highway 159 Las Vegas",
+      "Hoover Dam": "Hoover Dam Visitor Center Boulder City Nevada",
+      "Sphere": "Sphere 255 Sands Ave Las Vegas",
+      "The Mob Museum": "The Mob Museum 300 Stewart Avenue Las Vegas",
+      "Fremont Street Experience": "Fremont Street Experience Fremont Street Las Vegas",
+      "Neon Museum": "Neon Museum 770 Las Vegas Blvd N Las Vegas",
+      "é by José Andrés (The Cosmopolitan)": "é by José Andrés The Cosmopolitan 3708 Las Vegas Blvd South Las Vegas",
+      "Lotus of Siam (Flamingo Road)": "Lotus of Siam 620 E Flamingo Rd Las Vegas",
+      "Esther's Kitchen": "Esther's Kitchen 1131 S Main Street Las Vegas",
+      "SW Steakhouse (Wynn Las Vegas)": "SW Steakhouse Wynn 3131 Las Vegas Blvd Las Vegas",
+      "Downtown Container Park": "Downtown Container Park 707 Fremont Street Las Vegas",
+      "Pinball Hall of Fame": "Pinball Hall of Fame 4925 Las Vegas Blvd South Las Vegas",
+      "Eggslut (The Cosmopolitan)": "Eggslut The Cosmopolitan 3708 Las Vegas Blvd South Las Vegas",
+      "Legacy Club (Circa)": "Legacy Club Circa 8 Fremont St Las Vegas",
+      "Herbs & Rye": "Herbs & Rye 3713 W Sahara Avenue Las Vegas",
+      "Discovery Children's Museum": "Discovery Children's Museum 360 Promenade Place Las Vegas",
+      "Springs Preserve": "Springs Preserve 333 S Valley View Blvd Las Vegas",
+      "AREA15": "AREA15 3215 S Rancho Dr Las Vegas",
+      "Atomic Liquors": "Atomic Liquors 917 E Fremont St Las Vegas",
+      "Bungalow Coffee Co.": "Bungalow Coffee Co 201 E Charleston Blvd Las Vegas",
+      "Peppermill Restaurant & Fireside Lounge": "Peppermill 2985 Las Vegas Blvd S Las Vegas",
+      "The Underground (The Mob Museum)": "The Underground Mob Museum 300 Stewart Avenue Las Vegas",
+      "Mon Ami Gabi (Paris Las Vegas)": "Mon Ami Gabi Paris Las Vegas 3655 S Las Vegas Blvd Las Vegas",
+      "Bouchon (The Venetian)": "Bouchon The Venetian 3355 Las Vegas Blvd South Las Vegas",
+      "District Deli & Coffee": "District Deli & Coffee 1504 S Main Street Las Vegas",
+      "The Golden Tiki": "The Golden Tiki 3939 Spring Mountain Rd Las Vegas",
+      "Dominique Ansel Las Vegas (Caesars Palace)": "Dominique Ansel Caesars Palace 3570 Las Vegas Blvd South Las Vegas",
+      "Dominique Ansel Marché (Paris Las Vegas)": "Dominique Ansel Marché Paris Las Vegas 3655 Las Vegas Blvd South Las Vegas",
+      "Bouchon Bakery (The Venetian)": "Bouchon Bakery The Venetian 3355 Las Vegas Blvd South Las Vegas"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Las Vegas" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Desert parks, the dam, museums and downtown attractions, with Strip and Arts District breakfasts, dinners, cocktail bars, bakeries and coffee checked against their own websites.";
+    cityGuide.highlights = ["Red Rock Canyon National Conservation Area","Hoover Dam","Neon Museum","The Mob Museum"];
+    cityGuide.tip = "Reserve a timed-entry slot before driving to Red Rock Canyon: from October 1 to May 31 the Scenic Drive requires one for entry between 8 a.m. and 5 p.m.";
+    data.destinationFacts[cityKey] = "Reserve a timed-entry slot before driving to Red Rock Canyon: from October 1 to May 31 the Scenic Drive requires one for entry between 8 a.m. and 5 p.m.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Desert parks, the dam, museums and downtown attractions, with Strip and Arts District breakfasts, dinners, cocktail bars, bakeries and coffee checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays",
+        "copy": "é by José Andrés (The Cosmopolitan) serves Tuesday through Sunday only, and Discovery Children's Museum is closed Mondays except during holidays and school breaks. Hoover Dam's Visitor Center and tours close on Thanksgiving and Christmas Day."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book ahead",
+        "copy": "é releases tickets three months in advance on a rolling basis, with a waitlist. Red Rock Canyon needs a timed-entry reservation from October 1 to May 31, and the Neon Museum sells separate 2026 daytime (from $25) and evening (from $35) admission."
+      },
+      {
+        "label": "Walk-in and queues",
+        "value": "On-site only",
+        "copy": "Hoover Dam's Guided Dam Tour ($40) is sold only on-site, first come, first served, and often sells out; the last tour leaves at 4:10 p.m. Fremont Street Experience is listed as open 24 hours, with Music Reels on the canopy at the top of each hour from 6pm."
+      },
+      {
+        "label": "Rules",
+        "value": "ID and dress codes",
+        "copy": "Downtown Container Park is 21+ after 9 pm, and The Golden Tiki requires a physical, valid ID for its 21+ entry. SW Steakhouse (Wynn Las Vegas) asks for upscale casual chic dress and does not admit children under 5, while Legacy Club (Circa) bars sports attire, athleisure and swimwear."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Book your timed or ticketed slots first, then fill the gaps with walk-in downtown bars and cafés.",
+      intro: [
+        "Las Vegas reaches well past the casino floor, and the strongest day trips start with a booking. At Red Rock Canyon National Conservation Area, run by the Bureau of Land Management, you need a timed-entry reservation for the Scenic Drive between October 1 and May 31 for entry from 8 a.m. to 5 p.m. The drive opens at 6 a.m. and closes at 5 p.m. from November through February. At Hoover Dam, the Visitor Center and tours run daily from 9 a.m. to 5 p.m., except Thanksgiving and Christmas Day, and the $40 Guided Dam Tour is sold only on-site.",
+        "Downtown rewards an evening. The Neon Museum on Las Vegas Boulevard North opens from 3 p.m. to 11 p.m. between September and May, with 2026 daytime admission from $25 and evening admission from $35. The Mob Museum on Stewart Avenue opens daily from 9 a.m. to 9 p.m., and its basement speakeasy, The Underground, pours until midnight on Fridays and Saturdays. A short walk away, Fremont Street Experience says it is open 24 hours, with Music Reels playing on the canopy at the top of each hour from 6pm.",
+        "For dinner, é by José Andrés at The Cosmopolitan seats two shows a night, at 5:30 PM and 8:30 PM, Tuesday through Sunday, and releases tickets three months ahead. SW Steakhouse at Wynn Las Vegas faces the Lake of Dreams, takes SevenRooms bookings and asks for upscale casual chic dress. Off the Strip, Lotus of Siam on Flamingo Road and Esther's Kitchen on South Main Street both take online reservations. Mornings are easier: Peppermill is open 24 hours from Thursday to Sunday, and Mon Ami Gabi at Paris Las Vegas serves breakfast from 7:00 AM.",
+        "If you travel with children, Discovery Children's Museum opens Tuesday to Saturday from 10am and Sunday from noon, and Pinball Hall of Fame charges per game rather than for entry. For a nightcap, Legacy Club sits on Circa's 60th floor and opens from 4pm, while The Golden Tiki on Spring Mountain Road is open 24 hours for guests 21 and over. Sweet stops include Bouchon Bakery at The Venetian, open daily from 6am to 5pm, and Dominique Ansel Las Vegas at Caesars Palace, open daily from 7AM to 9PM."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair an evening at the Neon Museum with a walk to The Mob Museum and Fremont Street Experience, all downtown."
+        ],
+        [
+          "A slower morning",
+          "Start at Bouchon Bakery at The Venetian, which opens at 6am, or Bungalow Coffee Co. on East Charleston, which opens at 7AM on weekdays."
+        ],
+        [
+          "Before booking",
+          "Reserve Red Rock Canyon's timed entry and é by José Andrés tickets early; é releases seats three months in advance and is closed Mondays."
+        ]
+      ],
+      trust: "All 29 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

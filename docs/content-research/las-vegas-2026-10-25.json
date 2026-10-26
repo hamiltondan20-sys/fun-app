@@ -1,0 +1,633 @@
+{
+  "city": "Las Vegas, United States",
+  "checkedOn": "2026-10-25",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Red Rock Canyon National Conservation Area",
+      "kind": "park",
+      "url": "https://www.blm.gov/programs/national-conservation-lands/nevada/red-rock-canyon",
+      "sourceType": "official public operator (U.S. Bureau of Land Management)",
+      "address": "Visitor Center: \"3205 State Highway 159, Las Vegas, NV 89161\"",
+      "operatingEvidence": "Current hours and booking rules: \"Timed entry reservations are required for the Scenic Drive between October 1 - May 31 for entry between 8 a.m. - 5 p.m.\" Page also announces permit applications \"From Oct. 1 - Dec. 31, 2026\".",
+      "hours": "Scenic Drive 6 a.m.-7 p.m. in October, 6 a.m.-5 p.m. November-February; Visitor Center daily 8 a.m.-4:30 p.m. (shorter on Thanksgiving and Christmas Day)",
+      "confidence": "high"
+    },
+    {
+      "name": "Hoover Dam",
+      "kind": "landmark",
+      "url": "https://www.usbr.gov/lc/hooverdam/service/index.html",
+      "sourceType": "official public operator (U.S. Bureau of Reclamation)",
+      "address": "Nevada-side Visitor Center and parking garage via the Nevada Security Checkpoint (no street address published)",
+      "operatingEvidence": "Current tour and ticket details (Guided Dam Tour $40, sold only on-site, \"first come, first served\"); page \"Last Updated: 7/29/26\".",
+      "hours": "Dam open daily 5:00 a.m.-9:00 p.m.; Visitor Center and tours daily 9:00 a.m.-5:00 p.m. except Thanksgiving and Christmas Day, last tour 4:10 p.m.",
+      "confidence": "high"
+    },
+    {
+      "name": "Neon Museum",
+      "kind": "museum",
+      "url": "https://www.neonmuseum.org",
+      "sourceType": "operator's own site",
+      "address": "\"770 Las Vegas Blvd. N, Las Vegas, NV 89101\"",
+      "operatingEvidence": "Sells \"2026 Daytime Admission\" (3-5 p.m., from $25) and \"2026 Evening Admission\" (6-11 p.m., from $35), valid through December 31, 2026; Brilliant! audiovisual show in the North Gallery.",
+      "hours": "\"SEPT - MAY: 3 p.m. to 11 p.m., last entry at 10 p.m.\"; \"JUN - AUG 8 p.m. to MIDNIGHT\" (listed summer hours conflict with weekly listing)",
+      "confidence": "high"
+    },
+    {
+      "name": "The Mob Museum",
+      "kind": "museum",
+      "url": "https://themobmuseum.org",
+      "sourceType": "operator's own site",
+      "address": "\"300 Stewart Avenue,\" \"Las Vegas, NV 89101\"",
+      "operatingEvidence": "Current hours and online tickets (\"BUY ONLINE TO SAVE UP TO 20% OFF\"); \"© 2026 The Mob Museum\".",
+      "hours": "\"Daily: 9 a.m. to 9 p.m.\" (\"Hours are subject to change\")",
+      "confidence": "high"
+    },
+    {
+      "name": "The Underground (The Mob Museum)",
+      "kind": "bar",
+      "url": "https://themobmuseum.org",
+      "sourceType": "operator's own site",
+      "address": "\"300 Stewart Avenue,\" \"Las Vegas, NV 89101\" (speakeasy and distillery inside The Mob Museum)",
+      "operatingEvidence": "Hours published on the museum's current 2026 site; free live music advertised in the Underground.",
+      "hours": "\"Sunday–Thursday: 11 a.m. to 11 p.m.\"; \"Friday and Saturday: 11 a.m. to midnight\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Sphere",
+      "kind": "landmark",
+      "url": "https://www.thesphere.com/",
+      "sourceType": "operator's own site",
+      "address": "\"255 Sands Ave., Las Vegas, NV 89169\"",
+      "operatingEvidence": "Ticket sales for The Wizard of Oz at Sphere and concert residencies (Eagles, Backstreet Boys, Metallica and others); \"Event content, dates, times, prices and availability subject to change.\"",
+      "hours": "not published (by event)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Fremont Street Experience",
+      "kind": "landmark",
+      "url": "https://fremontstreetexperience.com/",
+      "sourceType": "operator's own site",
+      "address": "\"Fremont Street Las Vegas, NV 89101\"",
+      "operatingEvidence": "October 2026 calendar; \"Catch Music Reels on The Canopy at the top of the hour nightly starting at 6pm\"; \"FREE Concerts & Live Music\".",
+      "hours": "\"Open 24 Hours\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "AREA15",
+      "kind": "landmark",
+      "url": "https://area15.com",
+      "sourceType": "operator's own site",
+      "address": "\"3215 South Rancho Dr., Las Vegas, NV\"",
+      "operatingEvidence": "Current weekly hours and Halloween/October event listings; \"© 2026 AREA15 Las Vegas\".",
+      "hours": "Sunday-Thursday \"12PM-8PM\"; Friday & Saturday \"12PM-10PM\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Springs Preserve",
+      "kind": "park",
+      "url": "https://www.springspreserve.org",
+      "sourceType": "operator's own site",
+      "address": "\"333 S. Valley View Blvd.\" Las Vegas, Nevada 89107",
+      "operatingEvidence": "Upcoming events listed: Haunted Harvest \"OCT. 22-25\" and Día de Muertos \"NOV. 6-8\"; \"Copyright © 2026\".",
+      "hours": "not published (hours page not readable)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Discovery Children's Museum",
+      "kind": "museum",
+      "url": "https://www.discoverykidslv.org",
+      "sourceType": "operator's own site",
+      "address": "\"360 Promenade Place, Las Vegas, NV 89106\"",
+      "operatingEvidence": "Dated 2026 programme: Desert Harvest \"November 1-6\", Big Day of Play November 7-8; part of the Summit under construction for \"Desert to the Stars\" (opening Spring 2028).",
+      "hours": "Tuesday-Saturday 10am-5pm; Sundays 12pm-5pm; \"Open on Mondays during holidays, summer, winter, and spring break\"; closed Easter, Thanksgiving, Christmas Eve, Christmas and New Year's Day",
+      "confidence": "high"
+    },
+    {
+      "name": "Pinball Hall of Fame",
+      "kind": "museum",
+      "url": "https://www.pinballmuseum.org",
+      "sourceType": "operator's own site",
+      "address": "\"4925 Las Vegas Blvd South, Las Vegas NV 89119\"",
+      "operatingEvidence": "Published daily hours; pay-per-play (25 or 50 cents per game). No 2026-dated content.",
+      "hours": "\"Sunday to Thursday 10am till 9pm. Friday and Saturday 10am till 10pm.\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Downtown Container Park",
+      "kind": "market",
+      "url": "https://downtowncontainerpark.com",
+      "sourceType": "operator's own site",
+      "address": "\"707 Fremont Street Las Vegas, NV 89101\"",
+      "operatingEvidence": "Event calendar for late October 2026 (The Mantis fire show, Whiskey & Wine Wednesday on October 28).",
+      "hours": "Retail Mon-Thu 11:30a-8:00p, Fri-Sat 11:00a-9:00p, Sun 11:00a-8:00p; restaurants & bars Mon-Thu 11:30a-11:00p, Fri-Sat 11:00a-1:00a, Sun 11:00a-8:00p",
+      "confidence": "high"
+    },
+    {
+      "name": "é by José Andrés (The Cosmopolitan)",
+      "kind": "meal",
+      "url": "https://www.ebyjoseandres.com",
+      "sourceType": "operator's own site",
+      "address": "\"3708 Las Vegas Boulevard South, Las Vegas, NV 89109\" at The Cosmopolitan of Las Vegas",
+      "operatingEvidence": "Ticketed booking: \"Tickets to é by José Andrés become available three months in advance\" with a waitlist; \"© 2026 José Andrés Group\".",
+      "hours": "\"Open Tuesday through Sunday with two shows per night, at 5:30 PM and 8:30 PM\"; closed Mondays",
+      "confidence": "high"
+    },
+    {
+      "name": "SW Steakhouse (Wynn Las Vegas)",
+      "kind": "meal",
+      "url": "https://www.wynnlasvegas.com/dining/fine-dining/sw-steakhouse",
+      "sourceType": "operator's own site (Wynn Las Vegas)",
+      "address": "\"3131 Las Vegas Blvd., Las Vegas, NV 89109\"; \"Next to PISCES and Bar Parasol\" facing the Lake of Dreams",
+      "operatingEvidence": "Online booking via SevenRooms and current dress-code FAQ (\"Upscale casual chic\"; no athletic apparel or flip-flops; children under 5 not permitted).",
+      "hours": "Sunday-Thursday 5:30-10 p.m.; Friday-Saturday 5:30-10:30 p.m.",
+      "confidence": "high"
+    },
+    {
+      "name": "Mon Ami Gabi (Paris Las Vegas)",
+      "kind": "meal",
+      "url": "https://www.monamigabi.com/las-vegas",
+      "sourceType": "operator's own site",
+      "address": "3655 S Las Vegas Blvd, Las Vegas, NV, inside Paris Las Vegas Hotel & Casino",
+      "operatingEvidence": "OpenTable booking, Thanksgiving prix fixe reservations and a patio promotion; \"©2026\".",
+      "hours": "Sun-Thu 7:00 AM-10:00 PM; Fri-Sat 7:00 AM-11:00 PM; breakfast 7-11 AM; weekend brunch \"Friday, Saturday, and Sunday, 11:00 AM - 2:00 PM\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Lotus of Siam (Flamingo Road)",
+      "kind": "meal",
+      "url": "https://www.lotusofsiamlv.com",
+      "sourceType": "operator's own site",
+      "address": "\"620 E Flamingo Rd, Las Vegas, NV 89119\"",
+      "operatingEvidence": "OpenTable reservations and online pickup ordering; page announces \"GRAND OPENING MAY 10, 2026\" (location not stated).",
+      "hours": "Partially published and inconsistent: cards say \"Closes 4:30 pm\", hero says opens at 12 pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Esther's Kitchen",
+      "kind": "meal",
+      "url": "https://www.estherslv.com",
+      "sourceType": "operator's own site",
+      "address": "\"1131 S. Main Street, Las Vegas, NV 89104\"",
+      "operatingEvidence": "Live reservation form (\"Find A Table\", \"Book Now\"). No 2026-dated content.",
+      "hours": "not published (hours page not readable)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bouchon (The Venetian)",
+      "kind": "meal",
+      "url": "https://www.thomaskeller.com/las-vegas-nevada/bouchon-bistro/info-directions",
+      "sourceType": "operator's own site (Thomas Keller Restaurant Group)",
+      "address": "\"3355 Las Vegas Boulevard South, The Venetian South Tower, 10th Floor Las Vegas, NV 89109\"",
+      "operatingEvidence": "Operator site carries reservations and menus links and phone 702.414.6200; The Venetian's 2026 dining page lists Bouchon and its weekend brunch.",
+      "hours": "not published on pages read",
+      "confidence": "medium"
+    },
+    {
+      "name": "Eggslut (The Cosmopolitan)",
+      "kind": "meal",
+      "url": "https://www.eggslut.com/locations",
+      "sourceType": "operator's own site",
+      "address": "\"3708 Las Vegas Blvd.South, Las Vegas, NV 89109\", \"Inside The Cosmopolitan of Las Vegas\"",
+      "operatingEvidence": "Listed on the operator's current locations page with hours. No 2026-dated content.",
+      "hours": "\"Mon-Thurs: 7AM - 2PM\"; \"Fri-Sun: 7AM - 3PM\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Peppermill Restaurant & Fireside Lounge",
+      "kind": "meal",
+      "url": "https://www.peppermilllasvegas.com",
+      "sourceType": "operator's own site",
+      "address": "\"2985 Las Vegas Blvd. S, Las Vegas, 89109\"",
+      "operatingEvidence": "Current hours notice published. No 2026-dated content.",
+      "hours": "\"Monday - Wednesday: 7am - 2am, with last seating at 1:15am\"; \"Thursday - Sunday - OPEN 24 HOURS\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Herbs & Rye",
+      "kind": "bar",
+      "url": "https://www.herbsandrye.com",
+      "sourceType": "operator's own site",
+      "address": "\"3713 W Sahara Avenue Las Vegas, NV 89102\"",
+      "operatingEvidence": "SevenRooms reservations link and published hours. No 2026-dated content.",
+      "hours": "\"Open Monday - Saturday, 5 pm to 3 am\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Legacy Club (Circa)",
+      "kind": "bar",
+      "url": "https://www.circalasvegas.com/drink-dine/legacy-club/",
+      "sourceType": "operator's own site (Circa Resort & Casino)",
+      "address": "60th floor, Circa Resort & Casino, 8 Fremont St., Las Vegas, NV 89101",
+      "operatingEvidence": "Week of Oct 19-25 schedule with DJs and private buyouts; December events including \"Countdown In the Clouds\" to \"Ring in 2027\".",
+      "hours": "Sunday-Thursday 4pm-2am; Friday-Saturday 4pm-3am",
+      "confidence": "high"
+    },
+    {
+      "name": "Atomic Liquors",
+      "kind": "bar",
+      "url": "https://atomic.vegas",
+      "sourceType": "operator's own site",
+      "address": "\"917 E Fremont St, Las Vegas, NV 89101\"",
+      "operatingEvidence": "Published \"CURRENT HOURS\". No 2026-dated content.",
+      "hours": "Mon-Thu 12p-2a; Fri-Sat 12p-3a; Sun 12p-2a",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Golden Tiki",
+      "kind": "bar",
+      "url": "https://www.thegoldentiki.com",
+      "sourceType": "operator's own site",
+      "address": "\"3939 Spring Mountain Rd, Las Vegas, NV 89102\"",
+      "operatingEvidence": "Current happy hour (\"4pm-7pm Daily\") and links to August 2026 press; \"21+\", \"Must bring physical, valid ID for entry.\"",
+      "hours": "\"OPEN 24 HOURS\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Dominique Ansel Las Vegas (Caesars Palace)",
+      "kind": "bakery",
+      "url": "https://dominiqueanselny.com/dab-world-wide/",
+      "sourceType": "operator's own site (Dominique Ansel Bakery)",
+      "address": "Branch \"at the heart of the Strip at Caesars Palace Las Vegas\" (no street address published)",
+      "operatingEvidence": "Listed with daily hours on the operator's current shops page, which carries 2026 seasonal hours for other shops.",
+      "hours": "\"MON-SUN 7AM-9PM\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Dominique Ansel Marché (Paris Las Vegas)",
+      "kind": "bakery",
+      "url": "https://dominiqueanselny.com/dab-world-wide/",
+      "sourceType": "operator's own site (Dominique Ansel Bakery)",
+      "address": "Branch \"located at the heart of the Las Vegas Strip at the Paris Las Vegas\" (no street address published)",
+      "operatingEvidence": "Listed with daily hours on the operator's current shops page.",
+      "hours": "\"MON-SUN 7AM-11PM\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bouchon Bakery (The Venetian)",
+      "kind": "bakery",
+      "url": "https://www.thomaskeller.com/las-vegas-nevada/bouchon-bakery/info-directions",
+      "sourceType": "operator's own site (Thomas Keller Restaurant Group)",
+      "address": "\"3355 Las Vegas Boulevard South\", The Venetian Resort Hotel & Casino, Las Vegas, NV 89109",
+      "operatingEvidence": "Published daily hours and phone (702) 414-6203. No 2026-dated content.",
+      "hours": "\"Open daily from 6am-5pm\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "District Deli & Coffee",
+      "kind": "cafe",
+      "url": "https://www.districtdeliandcoffee.com",
+      "sourceType": "operator's own site",
+      "address": "1504 South Main Street, Las Vegas, Nevada 89104",
+      "operatingEvidence": "\"Open today\" notice with online ordering for pickup and delivery. Latest date on site is 2025.",
+      "hours": "08:00 am-05:00 pm (today only; other days not shown)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bungalow Coffee Co.",
+      "kind": "cafe",
+      "url": "https://www.bungalowcoffeeco.com",
+      "sourceType": "operator's own site",
+      "address": "\"201 E CHARLESTON BLVD STE 180, LAS VEGAS, NV 89104\"",
+      "operatingEvidence": "Published weekly hours. No 2026-dated content (footer © 2024).",
+      "hours": "\"MON TO FRI 7AM - 4PM\"; \"SAT TO SUN 8AM - 4PM\"",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "The Strip",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casino wandering",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Fountain shows",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Downtown Fremont time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "VIP show night",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Spa day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Chef tasting-menu dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Strip-view dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Late cocktail lounge",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Desert sunset outing",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Pool-focused resort day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and casino people-watching",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Downtown bar hop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "One big dinner reservation",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "One standout show",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Fremont at night",
+      "reason": "generic, not a place (Fremont Street Experience confirmed separately)",
+      "url": ""
+    },
+    {
+      "name": "Desert art stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Fountains of Bellagio (Bellagio)",
+      "reason": "official MGM Resorts site could not be fetched (fetch tool refused the mgmresorts.com domain); not evidence of closure",
+      "url": "https://bellagio.mgmresorts.com/en/entertainment/fountains-of-bellagio.html"
+    },
+    {
+      "name": "Bardot Brasserie (ARIA)",
+      "reason": "official MGM Resorts site could not be fetched (domain refused by fetch tool)",
+      "url": "https://aria.mgmresorts.com/en/restaurants/bardot-brasserie.html"
+    },
+    {
+      "name": "Shark Reef Aquarium (Mandalay Bay)",
+      "reason": "official MGM Resorts site could not be fetched (domain refused by fetch tool)",
+      "url": "https://mandalaybay.mgmresorts.com/en/entertainment/shark-reef-aquarium.html"
+    },
+    {
+      "name": "Best Friend (Park MGM)",
+      "reason": "official MGM Resorts site could not be fetched (domain refused by fetch tool)",
+      "url": "https://parkmgm.mgmresorts.com/en/restaurants/best-friend.html"
+    },
+    {
+      "name": "The Chandelier (The Cosmopolitan)",
+      "reason": "official MGM Resorts site could not be fetched (domain refused by fetch tool)",
+      "url": "https://cosmopolitanlasvegas.mgmresorts.com/en/nightlife/the-chandelier.html"
+    },
+    {
+      "name": "Secret Pizza (The Cosmopolitan)",
+      "reason": "official site is on the same MGM Resorts domain that could not be fetched",
+      "url": "https://cosmopolitanlasvegas.mgmresorts.com/"
+    },
+    {
+      "name": "Velveteen Rabbit",
+      "reason": "official site shows address (1218 S Main St) but no hours, bookings, menu or dated content; operation not evidenced",
+      "url": "https://www.velveteenrabbitlv.com"
+    },
+    {
+      "name": "Freed's Bakery",
+      "reason": "HTTP 429 Too Many Requests on repeated fetches",
+      "url": "https://www.freedsbakery.com"
+    },
+    {
+      "name": "Carlo's Bakery (The Venetian)",
+      "reason": "operator ordering site has an expired certificate; The Venetian's page lists it but gives no address or hours",
+      "url": "https://www.venetianlasvegas.com/restaurants/carlos-bakery.html"
+    },
+    {
+      "name": "Vesta Coffee",
+      "reason": "HTTP 429 Too Many Requests on repeated fetches",
+      "url": "https://www.vestacoffee.com"
+    },
+    {
+      "name": "PublicUs",
+      "reason": "certificate error (hostname not in certificate)",
+      "url": "https://www.publicuslv.com"
+    },
+    {
+      "name": "Mothership Coffee Roasters",
+      "reason": "HTTP 429 Too Many Requests on repeated fetches",
+      "url": "https://www.mothershipcoffee.com"
+    },
+    {
+      "name": "Makers & Finders",
+      "reason": "official domain redirects to a domain-for-sale parking page; no readable official site",
+      "url": "https://www.makersandfinders.com"
+    },
+    {
+      "name": "Golden Steer Steakhouse",
+      "reason": "fetch failed (connection reset)",
+      "url": "https://www.goldensteerlv.com"
+    },
+    {
+      "name": "High Roller (The LINQ)",
+      "reason": "official page returned only a title; no address, hours or operating details readable",
+      "url": "https://www.caesars.com/linq/things-to-do/attractions/high-roller"
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Red Rock Canyon National Conservation Area",
+        "Hoover Dam",
+        "Sphere",
+        "The Mob Museum"
+      ],
+      "bestFirstTimers": [
+        "Fremont Street Experience",
+        "Neon Museum",
+        "Sphere",
+        "Hoover Dam"
+      ],
+      "bestRestaurants": [
+        "é by José Andrés (The Cosmopolitan)",
+        "Lotus of Siam (Flamingo Road)",
+        "Esther's Kitchen",
+        "SW Steakhouse (Wynn Las Vegas)"
+      ],
+      "bestBudget": [
+        "Fremont Street Experience",
+        "Downtown Container Park",
+        "Pinball Hall of Fame",
+        "Eggslut (The Cosmopolitan)"
+      ],
+      "bestLuxury": [
+        "é by José Andrés (The Cosmopolitan)",
+        "SW Steakhouse (Wynn Las Vegas)",
+        "Legacy Club (Circa)"
+      ],
+      "bestCouples": [
+        "Legacy Club (Circa)",
+        "SW Steakhouse (Wynn Las Vegas)",
+        "Neon Museum",
+        "Herbs & Rye"
+      ],
+      "bestKids": [
+        "Discovery Children's Museum",
+        "Springs Preserve",
+        "Pinball Hall of Fame",
+        "AREA15"
+      ],
+      "bestSolo": [
+        "The Mob Museum",
+        "Atomic Liquors",
+        "Bungalow Coffee Co.",
+        "Peppermill Restaurant & Fireside Lounge"
+      ],
+      "bestUnique": [
+        "Neon Museum",
+        "AREA15",
+        "Sphere",
+        "The Underground (The Mob Museum)"
+      ],
+      "bestBreakfast": [
+        "Peppermill Restaurant & Fireside Lounge",
+        "Mon Ami Gabi (Paris Las Vegas)",
+        "Eggslut (The Cosmopolitan)",
+        "Bouchon (The Venetian)"
+      ],
+      "bestLunch": [
+        "Lotus of Siam (Flamingo Road)",
+        "Mon Ami Gabi (Paris Las Vegas)",
+        "Esther's Kitchen",
+        "District Deli & Coffee"
+      ],
+      "bestDinner": [
+        "é by José Andrés (The Cosmopolitan)",
+        "SW Steakhouse (Wynn Las Vegas)",
+        "Esther's Kitchen",
+        "Bouchon (The Venetian)"
+      ],
+      "bestCocktails": [
+        "Legacy Club (Circa)",
+        "Herbs & Rye",
+        "The Golden Tiki",
+        "The Underground (The Mob Museum)"
+      ],
+      "bestBakeries": [
+        "Dominique Ansel Las Vegas (Caesars Palace)",
+        "Dominique Ansel Marché (Paris Las Vegas)",
+        "Bouchon Bakery (The Venetian)"
+      ],
+      "bestCoffee": [
+        "Bungalow Coffee Co.",
+        "District Deli & Coffee"
+      ]
+    },
+    "queries": {
+      "Red Rock Canyon National Conservation Area": "Red Rock Canyon Visitor Center 3205 State Highway 159 Las Vegas",
+      "Hoover Dam": "Hoover Dam Visitor Center Boulder City Nevada",
+      "Neon Museum": "Neon Museum 770 Las Vegas Blvd N Las Vegas",
+      "The Mob Museum": "The Mob Museum 300 Stewart Avenue Las Vegas",
+      "The Underground (The Mob Museum)": "The Underground Mob Museum 300 Stewart Avenue Las Vegas",
+      "Sphere": "Sphere 255 Sands Ave Las Vegas",
+      "Fremont Street Experience": "Fremont Street Experience Fremont Street Las Vegas",
+      "AREA15": "AREA15 3215 S Rancho Dr Las Vegas",
+      "Springs Preserve": "Springs Preserve 333 S Valley View Blvd Las Vegas",
+      "Discovery Children's Museum": "Discovery Children's Museum 360 Promenade Place Las Vegas",
+      "Pinball Hall of Fame": "Pinball Hall of Fame 4925 Las Vegas Blvd South Las Vegas",
+      "Downtown Container Park": "Downtown Container Park 707 Fremont Street Las Vegas",
+      "é by José Andrés (The Cosmopolitan)": "é by José Andrés The Cosmopolitan 3708 Las Vegas Blvd South Las Vegas",
+      "SW Steakhouse (Wynn Las Vegas)": "SW Steakhouse Wynn 3131 Las Vegas Blvd Las Vegas",
+      "Mon Ami Gabi (Paris Las Vegas)": "Mon Ami Gabi Paris Las Vegas 3655 S Las Vegas Blvd Las Vegas",
+      "Lotus of Siam (Flamingo Road)": "Lotus of Siam 620 E Flamingo Rd Las Vegas",
+      "Esther's Kitchen": "Esther's Kitchen 1131 S Main Street Las Vegas",
+      "Bouchon (The Venetian)": "Bouchon The Venetian 3355 Las Vegas Blvd South Las Vegas",
+      "Eggslut (The Cosmopolitan)": "Eggslut The Cosmopolitan 3708 Las Vegas Blvd South Las Vegas",
+      "Peppermill Restaurant & Fireside Lounge": "Peppermill 2985 Las Vegas Blvd S Las Vegas",
+      "Herbs & Rye": "Herbs & Rye 3713 W Sahara Avenue Las Vegas",
+      "Legacy Club (Circa)": "Legacy Club Circa 8 Fremont St Las Vegas",
+      "Atomic Liquors": "Atomic Liquors 917 E Fremont St Las Vegas",
+      "The Golden Tiki": "The Golden Tiki 3939 Spring Mountain Rd Las Vegas",
+      "Dominique Ansel Las Vegas (Caesars Palace)": "Dominique Ansel Caesars Palace 3570 Las Vegas Blvd South Las Vegas",
+      "Dominique Ansel Marché (Paris Las Vegas)": "Dominique Ansel Marché Paris Las Vegas 3655 Las Vegas Blvd South Las Vegas",
+      "Bouchon Bakery (The Venetian)": "Bouchon Bakery The Venetian 3355 Las Vegas Blvd South Las Vegas",
+      "District Deli & Coffee": "District Deli & Coffee 1504 S Main Street Las Vegas",
+      "Bungalow Coffee Co.": "Bungalow Coffee Co 201 E Charleston Blvd Las Vegas"
+    },
+    "summary": "Desert parks, the dam, museums and downtown attractions, with Strip and Arts District breakfasts, dinners, cocktail bars, bakeries and coffee checked against their own websites.",
+    "highlights": [
+      "Red Rock Canyon National Conservation Area",
+      "Hoover Dam",
+      "Neon Museum",
+      "The Mob Museum"
+    ],
+    "tip": "Reserve a timed-entry slot before driving to Red Rock Canyon: from October 1 to May 31 the Scenic Drive requires one for entry between 8 a.m. and 5 p.m.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mondays",
+        "copy": "é by José Andrés (The Cosmopolitan) serves Tuesday through Sunday only, and Discovery Children's Museum is closed Mondays except during holidays and school breaks. Hoover Dam's Visitor Center and tours close on Thanksgiving and Christmas Day."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book ahead",
+        "copy": "é releases tickets three months in advance on a rolling basis, with a waitlist. Red Rock Canyon needs a timed-entry reservation from October 1 to May 31, and the Neon Museum sells separate 2026 daytime (from $25) and evening (from $35) admission."
+      },
+      {
+        "label": "Walk-in and queues",
+        "value": "On-site only",
+        "copy": "Hoover Dam's Guided Dam Tour ($40) is sold only on-site, first come, first served, and often sells out; the last tour leaves at 4:10 p.m. Fremont Street Experience is listed as open 24 hours, with Music Reels on the canopy at the top of each hour from 6pm."
+      },
+      {
+        "label": "Rules",
+        "value": "ID and dress codes",
+        "copy": "Downtown Container Park is 21+ after 9 pm, and The Golden Tiki requires a physical, valid ID for its 21+ entry. SW Steakhouse (Wynn Las Vegas) asks for upscale casual chic dress and does not admit children under 5, while Legacy Club (Circa) bars sports attire, athleisure and swimwear."
+      }
+    ],
+    "dek": "Book your timed or ticketed slots first, then fill the gaps with walk-in downtown bars and cafés.",
+    "intro": [
+      "Las Vegas reaches well past the casino floor, and the strongest day trips start with a booking. At Red Rock Canyon National Conservation Area, run by the Bureau of Land Management, you need a timed-entry reservation for the Scenic Drive between October 1 and May 31 for entry from 8 a.m. to 5 p.m. The drive opens at 6 a.m. and closes at 5 p.m. from November through February. At Hoover Dam, the Visitor Center and tours run daily from 9 a.m. to 5 p.m., except Thanksgiving and Christmas Day, and the $40 Guided Dam Tour is sold only on-site.",
+      "Downtown rewards an evening. The Neon Museum on Las Vegas Boulevard North opens from 3 p.m. to 11 p.m. between September and May, with 2026 daytime admission from $25 and evening admission from $35. The Mob Museum on Stewart Avenue opens daily from 9 a.m. to 9 p.m., and its basement speakeasy, The Underground, pours until midnight on Fridays and Saturdays. A short walk away, Fremont Street Experience says it is open 24 hours, with Music Reels playing on the canopy at the top of each hour from 6pm.",
+      "For dinner, é by José Andrés at The Cosmopolitan seats two shows a night, at 5:30 PM and 8:30 PM, Tuesday through Sunday, and releases tickets three months ahead. SW Steakhouse at Wynn Las Vegas faces the Lake of Dreams, takes SevenRooms bookings and asks for upscale casual chic dress. Off the Strip, Lotus of Siam on Flamingo Road and Esther's Kitchen on South Main Street both take online reservations. Mornings are easier: Peppermill is open 24 hours from Thursday to Sunday, and Mon Ami Gabi at Paris Las Vegas serves breakfast from 7:00 AM.",
+      "If you travel with children, Discovery Children's Museum opens Tuesday to Saturday from 10am and Sunday from noon, and Pinball Hall of Fame charges per game rather than for entry. For a nightcap, Legacy Club sits on Circa's 60th floor and opens from 4pm, while The Golden Tiki on Spring Mountain Road is open 24 hours for guests 21 and over. Sweet stops include Bouchon Bakery at The Venetian, open daily from 6am to 5pm, and Dominique Ansel Las Vegas at Caesars Palace, open daily from 7AM to 9PM."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair an evening at the Neon Museum with a walk to The Mob Museum and Fremont Street Experience, all downtown."
+      ],
+      [
+        "A slower morning",
+        "Start at Bouchon Bakery at The Venetian, which opens at 6am, or Bungalow Coffee Co. on East Charleston, which opens at 7AM on weekdays."
+      ],
+      [
+        "Before booking",
+        "Reserve Red Rock Canyon's timed entry and é by José Andrés tickets early; é releases seats three months in advance and is closed Mondays."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Every MGM Resorts property page (Bellagio, ARIA, Mandalay Bay, Park MGM and The Cosmopolitan venues) could not be fetched, so the Bellagio fountains, Bardot Brasserie, Shark Reef Aquarium, Best Friend, The Chandelier and Secret Pizza are left out; Freed's Bakery, Vesta Coffee and Mothership Coffee returned rate-limit errors, PublicUs had a certificate error, Golden Steer's site failed to load, and The LINQ's High Roller page had no readable content. None of these failures is evidence of closure. Hours were not published on the pages read for Springs Preserve, Esther's Kitchen, Bouchon (The Venetian) and Sphere; Lotus of Siam's hours were inconsistent; District Deli & Coffee showed only the current day's hours; and the Dominique Ansel shops are listed by resort without a street address. Several confirmed bars, cafés and restaurants showed current hours or booking but no 2026-dated content.",
+  "injectionLikeText": []
+}

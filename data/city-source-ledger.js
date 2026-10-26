@@ -5,6 +5,371 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Las Vegas, United States": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-25",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Every MGM Resorts property page (Bellagio, ARIA, Mandalay Bay, Park MGM and The Cosmopolitan venues) could not be fetched, so the Bellagio fountains, Bardot Brasserie, Shark Reef Aquarium, Best Friend, The Chandelier and Secret Pizza are left out; Freed's Bakery, Vesta Coffee and Mothership Coffee returned rate-limit errors, PublicUs had a certificate error, Golden Steer's site failed to load, and The LINQ's High Roller page had no readable content. None of these failures is evidence of closure. Hours were not published on the pages read for Springs Preserve, Esther's Kitchen, Bouchon (The Venetian) and Sphere; Lotus of Siam's hours were inconsistent; District Deli & Coffee showed only the current day's hours; and the Dominique Ansel shops are listed by resort without a street address. Several confirmed bars, cafés and restaurants showed current hours or booking but no 2026-dated content.",
+    "sourceUrls": [
+      "docs/content-research/las-vegas-2026-10-25.md",
+      "docs/content-research/las-vegas-2026-10-25.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "The Strip",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casino wandering",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Fountain shows",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Downtown Fremont time",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "VIP show night",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Spa day",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Chef tasting-menu dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Strip-view dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Late cocktail lounge",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Desert sunset outing",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Pool-focused resort day",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and casino people-watching",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Downtown bar hop",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "One big dinner reservation",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "One standout show",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Fremont at night",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (Fremont Street Experience confirmed separately)"
+      },
+      {
+        "name": "Desert art stop",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Fountains of Bellagio (Bellagio)",
+        "url": "https://bellagio.mgmresorts.com/en/entertainment/fountains-of-bellagio.html",
+        "checkedOn": "2026-10-25",
+        "reason": "official MGM Resorts site could not be fetched (fetch tool refused the mgmresorts.com domain); not evidence of closure"
+      },
+      {
+        "name": "Bardot Brasserie (ARIA)",
+        "url": "https://aria.mgmresorts.com/en/restaurants/bardot-brasserie.html",
+        "checkedOn": "2026-10-25",
+        "reason": "official MGM Resorts site could not be fetched (domain refused by fetch tool)"
+      },
+      {
+        "name": "Shark Reef Aquarium (Mandalay Bay)",
+        "url": "https://mandalaybay.mgmresorts.com/en/entertainment/shark-reef-aquarium.html",
+        "checkedOn": "2026-10-25",
+        "reason": "official MGM Resorts site could not be fetched (domain refused by fetch tool)"
+      },
+      {
+        "name": "Best Friend (Park MGM)",
+        "url": "https://parkmgm.mgmresorts.com/en/restaurants/best-friend.html",
+        "checkedOn": "2026-10-25",
+        "reason": "official MGM Resorts site could not be fetched (domain refused by fetch tool)"
+      },
+      {
+        "name": "The Chandelier (The Cosmopolitan)",
+        "url": "https://cosmopolitanlasvegas.mgmresorts.com/en/nightlife/the-chandelier.html",
+        "checkedOn": "2026-10-25",
+        "reason": "official MGM Resorts site could not be fetched (domain refused by fetch tool)"
+      },
+      {
+        "name": "Secret Pizza (The Cosmopolitan)",
+        "url": "https://cosmopolitanlasvegas.mgmresorts.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site is on the same MGM Resorts domain that could not be fetched"
+      },
+      {
+        "name": "Velveteen Rabbit",
+        "url": "https://www.velveteenrabbitlv.com",
+        "checkedOn": "2026-10-25",
+        "reason": "official site shows address (1218 S Main St) but no hours, bookings, menu or dated content; operation not evidenced"
+      },
+      {
+        "name": "Freed's Bakery",
+        "url": "https://www.freedsbakery.com",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests on repeated fetches"
+      },
+      {
+        "name": "Carlo's Bakery (The Venetian)",
+        "url": "https://www.venetianlasvegas.com/restaurants/carlos-bakery.html",
+        "checkedOn": "2026-10-25",
+        "reason": "operator ordering site has an expired certificate; The Venetian's page lists it but gives no address or hours"
+      },
+      {
+        "name": "Vesta Coffee",
+        "url": "https://www.vestacoffee.com",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests on repeated fetches"
+      },
+      {
+        "name": "PublicUs",
+        "url": "https://www.publicuslv.com",
+        "checkedOn": "2026-10-25",
+        "reason": "certificate error (hostname not in certificate)"
+      },
+      {
+        "name": "Mothership Coffee Roasters",
+        "url": "https://www.mothershipcoffee.com",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests on repeated fetches"
+      },
+      {
+        "name": "Makers & Finders",
+        "url": "https://www.makersandfinders.com",
+        "checkedOn": "2026-10-25",
+        "reason": "official domain redirects to a domain-for-sale parking page; no readable official site"
+      },
+      {
+        "name": "Golden Steer Steakhouse",
+        "url": "https://www.goldensteerlv.com",
+        "checkedOn": "2026-10-25",
+        "reason": "fetch failed (connection reset)"
+      },
+      {
+        "name": "High Roller (The LINQ)",
+        "url": "https://www.caesars.com/linq/things-to-do/attractions/high-roller",
+        "checkedOn": "2026-10-25",
+        "reason": "official page returned only a title; no address, hours or operating details readable"
+      }
+    ],
+    "placeSources": {
+      "Red Rock Canyon National Conservation Area": {
+        "url": "https://www.blm.gov/programs/national-conservation-lands/nevada/red-rock-canyon",
+        "sourceType": "official public operator (U.S. Bureau of Land Management)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current hours and booking rules: \"Timed entry reservations are required for the Scenic Drive between October 1 - May 31 for entry between 8 a.m. - 5 p.m.\" Page also announces permit applications \"From Oct. 1 - Dec. 31, 2026\"."
+      },
+      "Hoover Dam": {
+        "url": "https://www.usbr.gov/lc/hooverdam/service/index.html",
+        "sourceType": "official public operator (U.S. Bureau of Reclamation)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current tour and ticket details (Guided Dam Tour $40, sold only on-site, \"first come, first served\"); page \"Last Updated: 7/29/26\"."
+      },
+      "Neon Museum": {
+        "url": "https://www.neonmuseum.org",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Sells \"2026 Daytime Admission\" (3-5 p.m., from $25) and \"2026 Evening Admission\" (6-11 p.m., from $35), valid through December 31, 2026; Brilliant! audiovisual show in the North Gallery."
+      },
+      "The Mob Museum": {
+        "url": "https://themobmuseum.org",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current hours and online tickets (\"BUY ONLINE TO SAVE UP TO 20% OFF\"); \"© 2026 The Mob Museum\"."
+      },
+      "The Underground (The Mob Museum)": {
+        "url": "https://themobmuseum.org",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Hours published on the museum's current 2026 site; free live music advertised in the Underground."
+      },
+      "Sphere": {
+        "url": "https://www.thesphere.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Ticket sales for The Wizard of Oz at Sphere and concert residencies (Eagles, Backstreet Boys, Metallica and others); \"Event content, dates, times, prices and availability subject to change.\""
+      },
+      "Fremont Street Experience": {
+        "url": "https://fremontstreetexperience.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "October 2026 calendar; \"Catch Music Reels on The Canopy at the top of the hour nightly starting at 6pm\"; \"FREE Concerts & Live Music\"."
+      },
+      "AREA15": {
+        "url": "https://area15.com",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current weekly hours and Halloween/October event listings; \"© 2026 AREA15 Las Vegas\"."
+      },
+      "Springs Preserve": {
+        "url": "https://www.springspreserve.org",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Upcoming events listed: Haunted Harvest \"OCT. 22-25\" and Día de Muertos \"NOV. 6-8\"; \"Copyright © 2026\"."
+      },
+      "Discovery Children's Museum": {
+        "url": "https://www.discoverykidslv.org",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Dated 2026 programme: Desert Harvest \"November 1-6\", Big Day of Play November 7-8; part of the Summit under construction for \"Desert to the Stars\" (opening Spring 2028)."
+      },
+      "Pinball Hall of Fame": {
+        "url": "https://www.pinballmuseum.org",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published daily hours; pay-per-play (25 or 50 cents per game). No 2026-dated content."
+      },
+      "Downtown Container Park": {
+        "url": "https://downtowncontainerpark.com",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Event calendar for late October 2026 (The Mantis fire show, Whiskey & Wine Wednesday on October 28)."
+      },
+      "é by José Andrés (The Cosmopolitan)": {
+        "url": "https://www.ebyjoseandres.com",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Ticketed booking: \"Tickets to é by José Andrés become available three months in advance\" with a waitlist; \"© 2026 José Andrés Group\"."
+      },
+      "SW Steakhouse (Wynn Las Vegas)": {
+        "url": "https://www.wynnlasvegas.com/dining/fine-dining/sw-steakhouse",
+        "sourceType": "operator's own site (Wynn Las Vegas)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online booking via SevenRooms and current dress-code FAQ (\"Upscale casual chic\"; no athletic apparel or flip-flops; children under 5 not permitted)."
+      },
+      "Mon Ami Gabi (Paris Las Vegas)": {
+        "url": "https://www.monamigabi.com/las-vegas",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "OpenTable booking, Thanksgiving prix fixe reservations and a patio promotion; \"©2026\"."
+      },
+      "Lotus of Siam (Flamingo Road)": {
+        "url": "https://www.lotusofsiamlv.com",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "OpenTable reservations and online pickup ordering; page announces \"GRAND OPENING MAY 10, 2026\" (location not stated)."
+      },
+      "Esther's Kitchen": {
+        "url": "https://www.estherslv.com",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Live reservation form (\"Find A Table\", \"Book Now\"). No 2026-dated content."
+      },
+      "Bouchon (The Venetian)": {
+        "url": "https://www.thomaskeller.com/las-vegas-nevada/bouchon-bistro/info-directions",
+        "sourceType": "operator's own site (Thomas Keller Restaurant Group)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Operator site carries reservations and menus links and phone 702.414.6200; The Venetian's 2026 dining page lists Bouchon and its weekend brunch."
+      },
+      "Eggslut (The Cosmopolitan)": {
+        "url": "https://www.eggslut.com/locations",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Listed on the operator's current locations page with hours. No 2026-dated content."
+      },
+      "Peppermill Restaurant & Fireside Lounge": {
+        "url": "https://www.peppermilllasvegas.com",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current hours notice published. No 2026-dated content."
+      },
+      "Herbs & Rye": {
+        "url": "https://www.herbsandrye.com",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "SevenRooms reservations link and published hours. No 2026-dated content."
+      },
+      "Legacy Club (Circa)": {
+        "url": "https://www.circalasvegas.com/drink-dine/legacy-club/",
+        "sourceType": "operator's own site (Circa Resort & Casino)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Week of Oct 19-25 schedule with DJs and private buyouts; December events including \"Countdown In the Clouds\" to \"Ring in 2027\"."
+      },
+      "Atomic Liquors": {
+        "url": "https://atomic.vegas",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published \"CURRENT HOURS\". No 2026-dated content."
+      },
+      "The Golden Tiki": {
+        "url": "https://www.thegoldentiki.com",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current happy hour (\"4pm-7pm Daily\") and links to August 2026 press; \"21+\", \"Must bring physical, valid ID for entry.\""
+      },
+      "Dominique Ansel Las Vegas (Caesars Palace)": {
+        "url": "https://dominiqueanselny.com/dab-world-wide/",
+        "sourceType": "operator's own site (Dominique Ansel Bakery)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Listed with daily hours on the operator's current shops page, which carries 2026 seasonal hours for other shops."
+      },
+      "Dominique Ansel Marché (Paris Las Vegas)": {
+        "url": "https://dominiqueanselny.com/dab-world-wide/",
+        "sourceType": "operator's own site (Dominique Ansel Bakery)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Listed with daily hours on the operator's current shops page."
+      },
+      "Bouchon Bakery (The Venetian)": {
+        "url": "https://www.thomaskeller.com/las-vegas-nevada/bouchon-bakery/info-directions",
+        "sourceType": "operator's own site (Thomas Keller Restaurant Group)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published daily hours and phone (702) 414-6203. No 2026-dated content."
+      },
+      "District Deli & Coffee": {
+        "url": "https://www.districtdeliandcoffee.com",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Open today\" notice with online ordering for pickup and delivery. Latest date on site is 2025."
+      },
+      "Bungalow Coffee Co.": {
+        "url": "https://www.bungalowcoffeeco.com",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published weekly hours. No 2026-dated content (footer © 2024)."
+      }
+    }
+  },
   "Seville, Spain": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-25",
