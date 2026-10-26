@@ -1,0 +1,656 @@
+{
+  "city": "Krakow, Poland",
+  "checkedOn": "2026-10-25",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Wawel Royal Castle",
+      "kind": "landmark",
+      "url": "https://wawel.krakow.pl/en/free-november-2026",
+      "sourceType": "official public operator (Wawel Royal Castle state art collection)",
+      "address": "31-001 Kraków, Wawel 5",
+      "operatingEvidence": "Runs its \"Free November 2026\" campaign with free passes at the ticket offices or online up to a week ahead; temporary exhibition \"Lares and penates\" runs \"24 September 2026 – 6 January 2027\".",
+      "hours": "November 2026: Mondays 10:00–16:00 (Castle First Floor only); Tuesday–Sunday 9:00–17:00 (Second Floor and Underground); closed 1 November",
+      "confidence": "high"
+    },
+    {
+      "name": "Wieliczka Salt Mine",
+      "kind": "landmark",
+      "url": "https://www.wieliczka-saltmine.com/visiting/tourist-route",
+      "sourceType": "operator's own site",
+      "address": "Tourist Route (Daniłowicz Shaft), Daniłowicza 10, 32-020 Wieliczka",
+      "operatingEvidence": "Tourist Route page states \"The route is open from 09:00 am to 05:00 pm\", with online ticket sales from 121 PLN; tour takes \"2 - 3 h\". No 2026-dated notice found.",
+      "hours": "Tourist Route 09:00–17:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Rynek Underground",
+      "kind": "museum",
+      "url": "https://muzeumkrakowa.pl/en/branches/rynek-underground",
+      "sourceType": "official public operator (Museum of Krakow)",
+      "address": "Rynek Główny 1, 31-042 Kraków",
+      "operatingEvidence": "Branch page lists current hours, prices and online booking at bilety.mhk.pl, plus a Museum news item on Easter 2026 hours.",
+      "hours": "Mon 10:00–19:00; Tue 10:00–15:00; Wed–Thu 10:00–19:00; Fri–Sun 10:00–20:00; closed second Monday of the month; last entry 75 min before closing",
+      "confidence": "high"
+    },
+    {
+      "name": "Oskar Schindler's Enamel Factory",
+      "kind": "museum",
+      "url": "https://muzeumkrakowa.pl/en/branches/oskar-schindlers-enamel-factory",
+      "sourceType": "official public operator (Museum of Krakow)",
+      "address": "ul. Lipowa 4, 30-702 Kraków",
+      "operatingEvidence": "Online tickets on sale 90 days ahead; news items dated 27.03.2026 (Easter hours) and 04.05.2026 (conference call for papers).",
+      "hours": "Mon 10:00–15:00; Tue–Sun 9:00–20:00; closed first Tuesday of the month; last entry 1.5 h before closing",
+      "confidence": "high"
+    },
+    {
+      "name": "Town Hall Tower",
+      "kind": "landmark",
+      "url": "https://muzeumkrakowa.pl/en/branches/town-hall-tower",
+      "sourceType": "official public operator (Museum of Krakow)",
+      "address": "Rynek Główny 1, 31-001 Kraków",
+      "operatingEvidence": "Branch page lists current prices (normal 22 PLN) and online booking; news item dated 27.03.2026.",
+      "hours": "Mon 11:00–16:00; Tue–Sun 10:00–18:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Eagle Pharmacy",
+      "kind": "museum",
+      "url": "https://muzeumkrakowa.pl/en/branches/eagle-pharmacy",
+      "sourceType": "official public operator (Museum of Krakow)",
+      "address": "plac Bohaterów Getta 18, 30-547 Kraków",
+      "operatingEvidence": "Branch page lists current hours, prices and online booking; news item dated 27.03.2026. A Schindler Factory ticket also covers entry within 7 days.",
+      "hours": "Wed–Sun 9:00–17:00; closed Mondays and Tuesdays",
+      "confidence": "high"
+    },
+    {
+      "name": "National Museum in Krakow (Main Building)",
+      "kind": "museum",
+      "url": "https://mnk.pl/en/branch/mnk-main-building",
+      "sourceType": "official public operator (National Museum in Krakow)",
+      "address": "al. 3 Maja 1, 30-062 Kraków",
+      "operatingEvidence": "Current exhibitions \"Citizen Cepelia\" (09.10.2026–21.02.2027), \"The Faces of Czapski\" (18.09.2026–31.01.2027) and Van Gogh's \"Country Cottages Among the Trees\" (29.01.2026–31.12.2026).",
+      "hours": "Tue–Sun 10:00–18:00; closed Mondays; last admission 20 min before closing",
+      "confidence": "high"
+    },
+    {
+      "name": "Czartoryski Museum",
+      "kind": "museum",
+      "url": "https://mnk.pl/en/branch/mnk-czartoryski-museum",
+      "sourceType": "official public operator (National Museum in Krakow)",
+      "address": "ul. Pijarska 15, 31-015 Kraków",
+      "operatingEvidence": "Shows Leonardo's \"Lady with an Ermine\" on the second floor; 2026 temporary exhibitions listed; tickets 65 PLN normal via bilety.mnk.pl.",
+      "hours": "Tue–Sun 10:00–18:00; closed Mondays (per MNK opening-hours page)",
+      "confidence": "high"
+    },
+    {
+      "name": "St. Mary's Basilica",
+      "kind": "landmark",
+      "url": "https://mariacki.com/en/tourist",
+      "sourceType": "operator's own site (parish)",
+      "address": "Plac Mariacki 5, 31-042 Kraków (tower desk at 7 Mariacki Square)",
+      "operatingEvidence": "Tourist page lists 2026 Holy Week exceptions and current ticket prices (regular 20 PLN); site footer \"© 2026\".",
+      "hours": "Mon–Sat 11:30–18:00; Sundays and holidays 14:00–18:00; altar opens 11:50 (Sun 14:10); Bugle Tower Tue–Sat 10:00–17:30, Sun 13:00–17:30, closed November to April",
+      "confidence": "high"
+    },
+    {
+      "name": "MOCAK",
+      "kind": "museum",
+      "url": "https://en.mocak.pl/",
+      "sourceType": "operator's own site (municipal museum)",
+      "address": "ul. Lipowa 4, Kraków",
+      "operatingEvidence": "Lists \"Eleanor Antin: A Retrospective\" 05.12.2026–21.03.2027 and \"The Collection around MOCAK 2026\".",
+      "hours": "\"Open thusday-sunday, 11:00-19:00\" (Thursday–Sunday)",
+      "confidence": "high"
+    },
+    {
+      "name": "Manggha Museum",
+      "kind": "museum",
+      "url": "https://manggha.pl/en/access-admission",
+      "sourceType": "operator's own site (state cultural institution)",
+      "address": "ul. M. Konopnickiej 26, 30-302 Kraków",
+      "operatingEvidence": "Admission page lists 2026 special hours; exhibitions \"Akitsushima\" and \"Warrior Women\" run 19 July–11 November 2026.",
+      "hours": "Daily except Mondays 10:00–18:00; free entry Tuesdays",
+      "confidence": "high"
+    },
+    {
+      "name": "Galicia Jewish Museum",
+      "kind": "museum",
+      "url": "https://galiciajewishmuseum.org/en/",
+      "sourceType": "operator's own site",
+      "address": "ul. Dajwór 18, 31-052 Kraków",
+      "operatingEvidence": "Homepage carries 2026 news (an exhibition opening 1 October 2026 elsewhere, a July 2026 screening at the museum) and online tickets (adult 35 PLN).",
+      "hours": "Every day 10:00–18:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Kościuszko Mound",
+      "kind": "scenic",
+      "url": "https://www.kopieckosciuszki.pl/",
+      "sourceType": "operator's own site (Kościuszko Mound Committee)",
+      "address": "al. Waszyngtona 1, Kraków",
+      "operatingEvidence": "2026 news items (recitation contest, My Kraków Tourist Card listing, free PDF book).",
+      "hours": "Daily 9:00–16:30",
+      "confidence": "medium"
+    },
+    {
+      "name": "Stary Kleparz",
+      "kind": "market",
+      "url": "https://www.starykleparz.com/",
+      "sourceType": "operator's own site (Spółka Kupiecka Stary Kleparz)",
+      "address": "Rynek Kleparski 20, 31-150 Kraków",
+      "operatingEvidence": "Page headed \"Świeże zakupy przez cały rok\" (2026); \"Zapraszamy od poniedziałku do soboty na zakupy\"; Art & Food Bazar on selected Sundays March–December.",
+      "hours": "Monday–Saturday (times not stated); Sunday only selected stalls and cafés",
+      "confidence": "medium"
+    },
+    {
+      "name": "Park Wodny",
+      "kind": "park",
+      "url": "https://parkwodny.pl/",
+      "sourceType": "operator's own site (Park Wodny w Krakowie S.A.)",
+      "address": "ul. Dobrego Pasterza 126, 31-416 Kraków",
+      "operatingEvidence": "News items dated October 2026; children's pool with Pirate Island and kids' slides described.",
+      "hours": "Daily 8:00–22:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Wierzynek",
+      "kind": "meal",
+      "url": "https://www.wierzynek.pl/en/",
+      "sourceType": "operator's own site",
+      "address": "Rynek Główny 16, Kraków",
+      "operatingEvidence": "Current food menu PDF uploaded May 2026; online \"Book a table\" page.",
+      "hours": "Mon closed; Tue–Thu 17:00–22:00; Fri–Sat 13:00–23:00; Sun 13:00–22:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Starka",
+      "kind": "meal",
+      "url": "https://starka-restauracja.pl/en/",
+      "sourceType": "operator's own site",
+      "address": "ul. Józefa 14, Kraków",
+      "operatingEvidence": "2026 group set menu (SET-MENU-2026-WEB.pdf); online booking; tables held 15 minutes; \"All e-mail reservations require RETURN CONFIRMATION BY E-MAIL\".",
+      "hours": "not published (phone lines open from 12:15)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Pod Aniołami",
+      "kind": "meal",
+      "url": "https://www.podaniolami.pl/en/",
+      "sourceType": "operator's own site",
+      "address": "35 Grodzka Street, 31-001 Kraków",
+      "operatingEvidence": "Live \"Book a table\" reservations page and published daily hours; no explicitly dated 2026 notice.",
+      "hours": "Daily 13:00–23:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Szara Gęś",
+      "kind": "meal",
+      "url": "https://www.szarages.com/",
+      "sourceType": "operator's own site",
+      "address": "Rynek Główny 17, 31-008 Kraków",
+      "operatingEvidence": "Footer \"Copyright © 2016-2026\"; Gault&Millau badge uploaded August 2026; reservation section.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Pod Wawelem",
+      "kind": "meal",
+      "url": "https://www.podwawelem.eu/",
+      "sourceType": "operator's own site",
+      "address": "ul. Św. Gertrudy 26-29, 31-048 Kraków",
+      "operatingEvidence": "Footer \"Copyright © 2026\"; online booking via mojstolik.pl and group dining offer.",
+      "hours": "Daily 12:00–23:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Pimiento (Stolarska)",
+      "kind": "meal",
+      "url": "https://www.pimiento.pl/",
+      "sourceType": "operator's own site",
+      "address": "ul. Stolarska 13, Kraków",
+      "operatingEvidence": "Menus uploaded June 2026; SevenRooms booking where a table is secured only once the confirmation email arrives.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mercy Brown",
+      "kind": "bar",
+      "url": "https://www.mercybrown.pl/",
+      "sourceType": "operator's own site",
+      "address": "ul. Straszewskiego 28, 31-113 Kraków",
+      "operatingEvidence": "Live-music programme running from 27 October to December 2026, mostly free entry; unsigned door, adults only (\"Wstęp do lokalu wyłącznie dla osób pełnoletnich\").",
+      "hours": "Mon closed; Tue–Thu 18:00–24:00; Fri–Sat 18:00–01:00; Sun 18:00–23:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Alchemia",
+      "kind": "bar",
+      "url": "https://alchemia.com.pl/",
+      "sourceType": "operator's own site",
+      "address": "ul. Estery 5 (corner of Plac Nowy), 31-056 Kraków",
+      "operatingEvidence": "Concert listings for late October and November 2026, including the 21st Kraków Autumn Jazz Festival from 28 October.",
+      "hours": "not published",
+      "confidence": "high"
+    },
+    {
+      "name": "Charlotte (Plac Szczepański)",
+      "kind": "bakery",
+      "url": "https://bistrocharlotte.com/pl/lokale/charlotte-plac-szczepanski-krakow/",
+      "sourceType": "operator's own site",
+      "address": "Pl. Szczepański 2, 31-011 Kraków",
+      "operatingEvidence": "Bistro with its own bakery in the basement; breakfast served until closing; walk-ins without reservation until 16:00; site footer \"© 2026\" and Christmas offer uploaded October 2026.",
+      "hours": "Mon–Thu 7:00–24:00; Fri 7:00–01:00; Sat 8:00–01:00; Sun 8:00–22:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Good Lood (Kazimierz)",
+      "kind": "cafe",
+      "url": "https://www.goodlood.com/loodspoty",
+      "sourceType": "operator's own site",
+      "address": "Plac Wolnica 11, 31-060 Kraków",
+      "operatingEvidence": "Branch listed with weekly hours; homepage shows a current \"Smak dnia\" (flavour of the day) and \"© 2026\".",
+      "hours": "Mon–Thu and Sun 12:00–21:00; Fri–Sat 11:30–22:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Wesoła Café",
+      "kind": "cafe",
+      "url": "https://wesolacafe.pl/",
+      "sourceType": "operator's own site",
+      "address": "Rakowicka 17, Kraków",
+      "operatingEvidence": "Autumn menu from October, menu link versioned 2026-10-14; breakfasts and a lunch menu \"między 12:00 a 18:00\".",
+      "hours": "not published (lunch menu 12:00–18:00)",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Main Market Square",
+      "reason": "public square with no operator page; covered through Rynek Underground, Town Hall Tower and venues on Rynek Główny",
+      "url": ""
+    },
+    {
+      "name": "Kazimierz",
+      "reason": "district, not a single place; covered through named Kazimierz venues",
+      "url": ""
+    },
+    {
+      "name": "Kraków Zoo",
+      "reason": "certificate error (\"unable to verify the first certificate\"); not bypassed",
+      "url": "https://zoo-krakow.pl/en/"
+    },
+    {
+      "name": "Massolit Books & Cafe",
+      "reason": "SSL handshake failure; not bypassed",
+      "url": "https://www.massolit.com/"
+    },
+    {
+      "name": "Café Noworolski",
+      "reason": "certificate does not match host; not bypassed",
+      "url": "https://www.noworolski.com.pl/"
+    },
+    {
+      "name": "Hamsa",
+      "reason": "certificate does not match host; not bypassed",
+      "url": "https://hamsa.pl/"
+    },
+    {
+      "name": "Hotel Stary (rooftop bar)",
+      "reason": "certificate does not match host; not bypassed",
+      "url": "https://www.stary.hotel.com.pl/en/"
+    },
+    {
+      "name": "Pochlebstwo bakery",
+      "reason": "certificate does not match host; not bypassed",
+      "url": "https://pochlebstwo.pl/"
+    },
+    {
+      "name": "Zmączeni bakery",
+      "reason": "403 Forbidden",
+      "url": "https://zmaczeni.pl/"
+    },
+    {
+      "name": "Cupcake Corner",
+      "reason": "403 Forbidden",
+      "url": "https://www.cupcake.pl/"
+    },
+    {
+      "name": "Bottiglieria 1881",
+      "reason": "official domain did not resolve (DNS failure)",
+      "url": "https://bottiglieria1881.pl/"
+    },
+    {
+      "name": "Karma Coffee Roastery",
+      "reason": "official domain did not resolve (DNS failure)",
+      "url": "https://www.karmakrakow.pl/"
+    },
+    {
+      "name": "Milkbar Tomasza",
+      "reason": "official domain did not resolve (DNS failure)",
+      "url": "https://www.milkbartomasza.pl/"
+    },
+    {
+      "name": "Cukiernia Michalscy",
+      "reason": "guessed domain did not resolve; official site not found",
+      "url": "https://www.michalscy.com.pl/"
+    },
+    {
+      "name": "Café Camelot",
+      "reason": "guessed domain is parked for sale; official site not found",
+      "url": "https://www.cafecamelot.com/"
+    },
+    {
+      "name": "Cafe Hafuch (JCC Krakow)",
+      "reason": "JCC site returned truncated content; no address or hours readable",
+      "url": "https://www.jcckrakow.info/"
+    },
+    {
+      "name": "Hevre",
+      "reason": "official domain redirects to Facebook; social pages not accepted",
+      "url": "https://hevre.pl/"
+    },
+    {
+      "name": "Bunkier Café",
+      "reason": "official domain redirects to Facebook; social pages not accepted",
+      "url": "https://bunkiercafe.pl/"
+    },
+    {
+      "name": "Jama Michalika",
+      "reason": "address read (ul. Floriańska 45) but no 2026 or other current operating evidence; footer © 2024",
+      "url": "https://jamamichalika.pl/"
+    },
+    {
+      "name": "Cafe Botanica",
+      "reason": "address and hours read (Bracka 9) but page carries no date or current notice",
+      "url": "https://www.cafebotanica.pl/"
+    },
+    {
+      "name": "Wódka Café Bar",
+      "reason": "address read (Mikołajska 5) but no hours and no dated content",
+      "url": "https://www.wodkabar.pl/"
+    },
+    {
+      "name": "Cukiernia Cichowscy",
+      "reason": "address read (Starowiślna 21) but no hours; latest date 2025",
+      "url": "https://www.cichowscy.pl/"
+    },
+    {
+      "name": "Museum of Engineering and Technology",
+      "reason": "no public opening hours on page and no 2026 content (copyright 2021)",
+      "url": "https://mit.krakow.pl/en/"
+    },
+    {
+      "name": "Sukiennice Gallery (National Museum)",
+      "reason": "branch page returned 404",
+      "url": "https://mnk.pl/en/branch/mnk-gallery-of-19th-century-polish-art-in-sukiennice"
+    },
+    {
+      "name": "Słodki Wentzl",
+      "reason": "site gave no address, hours or dated content for the café",
+      "url": "https://www.wentzl.pl/"
+    },
+    {
+      "name": "Lajkonik",
+      "reason": "site belongs to a snack manufacturer in Skawina, not a Kraków café",
+      "url": "https://lajkonik.pl/"
+    },
+    {
+      "name": "Hala Targowa",
+      "reason": "hala-targowa.pl is the Wrocław market hall; no official Kraków site found",
+      "url": "https://hala-targowa.pl/"
+    },
+    {
+      "name": "Jagiellonian University Botanic Garden",
+      "reason": "official page returned 404",
+      "url": "https://ogrod.uj.edu.pl/en"
+    },
+    {
+      "name": "Wawel at opening / Wieliczka Salt Mine day",
+      "reason": "phrasing variants of confirmed Wawel Royal Castle and Wieliczka Salt Mine; not separate places",
+      "url": ""
+    },
+    {
+      "name": "Kazimierz evening; Sunset near Wawel Castle; Old Town evening; Wawel at opening (luxury/couples variants)",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "a Polish dinner and market snack; Krakow market or cafe; A local dinner in Old Town; A cafe near Kazimierz; A market breakfast in Podgorze; A dessert stop in Old Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Old Town walk; Public viewpoint near Kazimierz; Market meal around Podgorze; A self-guided walk through Podgorze; Free museum or public garden time; A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Main Market Square; A signature meal in Old Town; A tailored day around Wawel at opening; A private transfer between highlights; A special evening in Kazimierz; A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Kazimierz; A scenic morning near Podgorze; A photo-friendly walk through Old Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Main Market Square; Easy outing around Kazimierz; A relaxed meal near Podgorze; A hands-on stop near Old Town; A short scenic outing with room to move; A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Main Market Square; Old Town cafe or market; Self-guided Kazimierz evening; A museum or gallery at your own pace; A people-watching break in Podgorze; A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Podgorze; A local recommendation beyond the headline sights; A short detour beyond Old Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Old Town; Kazimierz bakery or market; Slow breakfast before Main Market Square; A local pastry to take on the road; Coffee and a walk through Podgorze; A relaxed brunch near Old Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Wawel Castle; Local stop around Podgorze; A market lunch in Old Town; A quick meal between sights; A long midday table in Kazimierz",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Podgorze; A local specialty near Old Town; A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Old Town; A local bar around Kazimierz; A view-led evening near Kazimierz; A relaxed night close to the stay; A late drink after dinner; A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Old Town; Kazimierz morning market; Coffee and pastry before Main Market Square; A regional sweet to take on the road; A fresh bake near Podgorze; A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Old Town; A slow cafe in Kazimierz; A final cup near Podgorze; A coffee stop before the first sight; A neighborhood cafe break; A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Wawel Royal Castle",
+        "St. Mary's Basilica",
+        "Rynek Underground",
+        "Wieliczka Salt Mine"
+      ],
+      "bestFirstTimers": [
+        "Wawel Royal Castle",
+        "St. Mary's Basilica",
+        "Oskar Schindler's Enamel Factory",
+        "Town Hall Tower"
+      ],
+      "bestRestaurants": [
+        "Wierzynek",
+        "Starka",
+        "Pod Aniołami",
+        "Szara Gęś"
+      ],
+      "bestBudget": [
+        "Stary Kleparz",
+        "Kościuszko Mound",
+        "Eagle Pharmacy",
+        "Good Lood (Kazimierz)"
+      ],
+      "bestLuxury": [
+        "Szara Gęś",
+        "Wierzynek",
+        "Czartoryski Museum",
+        "Mercy Brown"
+      ],
+      "bestCouples": [
+        "Kościuszko Mound",
+        "Mercy Brown",
+        "Pod Aniołami",
+        "Manggha Museum"
+      ],
+      "bestKids": [
+        "Park Wodny",
+        "Wieliczka Salt Mine",
+        "Galicia Jewish Museum",
+        "Good Lood (Kazimierz)"
+      ],
+      "bestSolo": [
+        "National Museum in Krakow (Main Building)",
+        "MOCAK",
+        "Galicia Jewish Museum",
+        "Charlotte (Plac Szczepański)"
+      ],
+      "bestUnique": [
+        "Rynek Underground",
+        "Manggha Museum",
+        "Alchemia",
+        "Eagle Pharmacy"
+      ],
+      "bestBreakfast": [
+        "Charlotte (Plac Szczepański)",
+        "Wesoła Café"
+      ],
+      "bestLunch": [
+        "Pod Wawelem",
+        "Wesoła Café",
+        "Starka",
+        "Pimiento (Stolarska)"
+      ],
+      "bestDinner": [
+        "Wierzynek",
+        "Szara Gęś",
+        "Pimiento (Stolarska)",
+        "Pod Aniołami"
+      ],
+      "bestCocktails": [
+        "Mercy Brown",
+        "Alchemia"
+      ],
+      "bestBakeries": [
+        "Charlotte (Plac Szczepański)",
+        "Stary Kleparz"
+      ],
+      "bestCoffee": [
+        "Wesoła Café",
+        "Charlotte (Plac Szczepański)",
+        "Good Lood (Kazimierz)"
+      ]
+    },
+    "queries": {
+      "Wawel Royal Castle": "Wawel Royal Castle Wawel 5 Krakow",
+      "Wieliczka Salt Mine": "Wieliczka Salt Mine Daniłowicza 10 Wieliczka",
+      "Rynek Underground": "Rynek Underground Rynek Główny 1 Krakow",
+      "Oskar Schindler's Enamel Factory": "Oskar Schindler's Enamel Factory Lipowa 4 Krakow",
+      "Town Hall Tower": "Town Hall Tower Rynek Główny 1 Krakow",
+      "Eagle Pharmacy": "Eagle Pharmacy plac Bohaterów Getta 18 Krakow",
+      "National Museum in Krakow (Main Building)": "National Museum in Krakow Main Building al. 3 Maja 1 Krakow",
+      "Czartoryski Museum": "Czartoryski Museum Pijarska 15 Krakow",
+      "St. Mary's Basilica": "St. Mary's Basilica Plac Mariacki 5 Krakow",
+      "MOCAK": "MOCAK Lipowa 4 Krakow",
+      "Manggha Museum": "Manggha Museum Konopnickiej 26 Krakow",
+      "Galicia Jewish Museum": "Galicia Jewish Museum Dajwór 18 Krakow",
+      "Kościuszko Mound": "Kościuszko Mound al. Waszyngtona 1 Krakow",
+      "Stary Kleparz": "Stary Kleparz Rynek Kleparski 20 Krakow",
+      "Park Wodny": "Park Wodny Dobrego Pasterza 126 Krakow",
+      "Wierzynek": "Wierzynek Rynek Główny 16 Krakow",
+      "Starka": "Starka Józefa 14 Krakow",
+      "Pod Aniołami": "Pod Aniołami Grodzka 35 Krakow",
+      "Szara Gęś": "Szara Gęś Rynek Główny 17 Krakow",
+      "Pod Wawelem": "Pod Wawelem Świętej Gertrudy 26 Krakow",
+      "Pimiento (Stolarska)": "Pimiento Stolarska 13 Krakow",
+      "Mercy Brown": "Mercy Brown Straszewskiego 28 Krakow",
+      "Alchemia": "Alchemia Estery 5 Krakow",
+      "Charlotte (Plac Szczepański)": "Charlotte Plac Szczepański 2 Krakow",
+      "Good Lood (Kazimierz)": "Good Lood Plac Wolnica 11 Krakow",
+      "Wesoła Café": "Wesoła Café Rakowicka 17 Krakow"
+    },
+    "summary": "Wawel, the Market Square museums, Kazimierz and the Wieliczka mine, with restaurants, breakfast cafés and cocktail bars checked against their own websites.",
+    "highlights": [
+      "Wawel Royal Castle",
+      "St. Mary's Basilica",
+      "Rynek Underground",
+      "Oskar Schindler's Enamel Factory"
+    ],
+    "tip": "Plan museum days around closures: the National Museum and Manggha shut on Mondays, MOCAK opens only Thursday to Sunday, and the Eagle Pharmacy is closed Mondays and Tuesdays.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mondays and midweek",
+        "copy": "The National Museum's Main Building and Czartoryski Museum and the Manggha Museum close on Mondays. MOCAK opens Thursday to Sunday only, and the Eagle Pharmacy is closed Mondays and Tuesdays."
+      },
+      {
+        "label": "Free days",
+        "value": "Varies by museum",
+        "copy": "Tuesday is free for the National Museum's permanent exhibitions, Manggha and Rynek Underground; Monday is free at Schindler's Factory and the Town Hall Tower, and Wednesday at the Eagle Pharmacy. Museum of Krakow free tickets are sold only at the box office on the day."
+      },
+      {
+        "label": "Timed tickets",
+        "value": "Book Schindler early",
+        "copy": "Oskar Schindler's Enamel Factory sells online tickets 90 days ahead, stops online sales 6 hours before a visit, and asks for original ID with personal tickets. Its ticket office sells only same-day tickets for the next available slot, up to 5 per person."
+      },
+      {
+        "label": "Rules",
+        "value": "Age and walk-ins",
+        "copy": "St. Mary's Bugle Tower is closed November to April, sells tickets only on the day, and does not admit children under 8. Mercy Brown admits adults only, and Charlotte takes walk-ins without reservations until 16:00."
+      }
+    ],
+    "dek": "Book Schindler's Factory and Wawel ahead, then fit the smaller museums around their closing and free days.",
+    "intro": [
+      "Wawel Royal Castle is at its most generous in November: its \"Free November 2026\" campaign gives you free passes to the free exhibitions, collected at the ticket offices or online up to a week ahead, with up to 5 tickets per person. During the month the State Rooms and Castle Underground open Tuesday to Sunday from 9:00 to 17:00, while Mondays open only the first-floor Royal Private Apartments, from 10:00 to 16:00. The temporary exhibition \"Lares and penates\", on security in architecture, runs until 6 January 2027. Groups must book guided tours in advance.",
+      "On the Main Market Square, Rynek Underground at Rynek Główny 1 opens until 20:00 from Friday to Sunday and closes on the second Monday of the month; Tuesday entry is free but sold only at the box office on the day. The Town Hall Tower opens Tuesday to Sunday from 10:00 to 18:00. At St. Mary's Basilica, visiting runs from 11:30 on weekdays and 14:00 on Sundays, and the Veit Stoss altar opens at 11:50 on weekdays. Its Bugle Tower is closed from November to April.",
+      "Across the river, Oskar Schindler's Enamel Factory on Lipowa Street opens until 20:00 from Tuesday to Sunday and closes on the first Tuesday of the month. Online tickets go on sale 90 days ahead, and a Schindler ticket also gets you into the Eagle Pharmacy within 7 days. MOCAK, next door, opens Thursday to Sunday and shows Eleanor Antin's retrospective from 5 December 2026 to 21 March 2027. The National Museum's Main Building has \"Citizen Cepelia\" until 21 February 2027 and \"The Faces of Czapski\" until 31 January 2027.",
+      "For meals, Charlotte on Plac Szczepański bakes its own bread in the basement, serves breakfast until closing and takes walk-ins until 16:00. Starka in Kazimierz holds booked tables for 15 minutes, and Wierzynek on the square closes on Mondays. For a later evening, Mercy Brown on Straszewskiego has no sign on the door, admits adults only and hosts mostly free live music, while Alchemia on Plac Nowy runs a busy concert programme. At Wieliczka the Tourist Route is open 09:00 to 17:00 and takes 2 to 3 hours."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair Wawel Royal Castle in the morning with St. Mary's Basilica and Rynek Underground on the Market Square in the afternoon."
+      ],
+      [
+        "A slower morning",
+        "Start with breakfast at Charlotte on Plac Szczepański, then browse Stary Kleparz, which trades Monday to Saturday."
+      ],
+      [
+        "Before booking",
+        "Reserve Schindler's Factory online up to 90 days ahead, and check each museum's closing and free days before you fix your route."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability, and seasonal or holiday hours may differ from the weekly hours quoted. Several sites could not be read because of certificate or SSL errors, 403 responses, DNS failures or redirects to social media (including Kraków Zoo, Massolit, Café Noworolski, Hamsa, Hotel Stary, Pochlebstwo, Zmączeni, Bottiglieria 1881 and Karma Coffee), so those places were left out rather than treated as closed. Opening hours were not published on the pages read for Starka, Szara Gęś, Pimiento (Stolarska), Alchemia and Wesoła Café, and Stary Kleparz gives days but not times. Wieliczka Salt Mine, Pod Aniołami and several restaurants were confirmed from current hours, menus or booking pages without an explicitly dated 2026 notice. The Wawel hours quoted apply to November 2026.",
+  "injectionLikeText": [],
+  "injectionLikeTextIgnored": [
+    "WebFetch summaries for kopieckosciuszki.pl and galiciajewishmuseum.org said the page 'included an instruction to quote any text addressed to an AI'. That wording matches the fetch prompt itself, and neither summary quoted page text, so it was treated as a false flag. Not verified in a browser.",
+    "2026-10-25: both pages were opened in a browser and their full HTML searched; no AI-directed text was present."
+  ]
+}

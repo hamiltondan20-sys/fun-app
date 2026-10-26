@@ -4753,4 +4753,111 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Krakow, Poland: source review of 2026-10-25 (docs/content-research/krakow-2026-10-25.md).
+  {
+    const cityKey = "Krakow, Poland";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Wawel Royal Castle","St. Mary's Basilica","Rynek Underground","Wieliczka Salt Mine"],
+      bestFirstTimers: ["Wawel Royal Castle","St. Mary's Basilica","Oskar Schindler's Enamel Factory","Town Hall Tower"],
+      bestRestaurants: ["Wierzynek","Starka","Pod Aniołami","Szara Gęś"],
+      bestBudget: ["Stary Kleparz","Kościuszko Mound","Eagle Pharmacy","Good Lood (Kazimierz)"],
+      bestLuxury: ["Szara Gęś","Wierzynek","Czartoryski Museum","Mercy Brown"],
+      bestCouples: ["Kościuszko Mound","Mercy Brown","Pod Aniołami","Manggha Museum"],
+      bestKids: ["Park Wodny","Wieliczka Salt Mine","Galicia Jewish Museum","Good Lood (Kazimierz)"],
+      bestSolo: ["National Museum in Krakow (Main Building)","MOCAK","Galicia Jewish Museum","Charlotte (Plac Szczepański)"],
+      bestUnique: ["Rynek Underground","Manggha Museum","Alchemia","Eagle Pharmacy"],
+      bestBreakfast: ["Charlotte (Plac Szczepański)","Wesoła Café"],
+      bestLunch: ["Pod Wawelem","Wesoła Café","Starka","Pimiento (Stolarska)"],
+      bestDinner: ["Wierzynek","Szara Gęś","Pimiento (Stolarska)","Pod Aniołami"],
+      bestCocktails: ["Mercy Brown","Alchemia"],
+      bestBakeries: ["Charlotte (Plac Szczepański)","Stary Kleparz"],
+      bestCoffee: ["Wesoła Café","Charlotte (Plac Szczepański)","Good Lood (Kazimierz)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Wawel Royal Castle": "Wawel Royal Castle Wawel 5 Krakow",
+      "St. Mary's Basilica": "St. Mary's Basilica Plac Mariacki 5 Krakow",
+      "Rynek Underground": "Rynek Underground Rynek Główny 1 Krakow",
+      "Wieliczka Salt Mine": "Wieliczka Salt Mine Daniłowicza 10 Wieliczka",
+      "Oskar Schindler's Enamel Factory": "Oskar Schindler's Enamel Factory Lipowa 4 Krakow",
+      "Town Hall Tower": "Town Hall Tower Rynek Główny 1 Krakow",
+      "Wierzynek": "Wierzynek Rynek Główny 16 Krakow",
+      "Starka": "Starka Józefa 14 Krakow",
+      "Pod Aniołami": "Pod Aniołami Grodzka 35 Krakow",
+      "Szara Gęś": "Szara Gęś Rynek Główny 17 Krakow",
+      "Stary Kleparz": "Stary Kleparz Rynek Kleparski 20 Krakow",
+      "Kościuszko Mound": "Kościuszko Mound al. Waszyngtona 1 Krakow",
+      "Eagle Pharmacy": "Eagle Pharmacy plac Bohaterów Getta 18 Krakow",
+      "Good Lood (Kazimierz)": "Good Lood Plac Wolnica 11 Krakow",
+      "Czartoryski Museum": "Czartoryski Museum Pijarska 15 Krakow",
+      "Mercy Brown": "Mercy Brown Straszewskiego 28 Krakow",
+      "Manggha Museum": "Manggha Museum Konopnickiej 26 Krakow",
+      "Park Wodny": "Park Wodny Dobrego Pasterza 126 Krakow",
+      "Galicia Jewish Museum": "Galicia Jewish Museum Dajwór 18 Krakow",
+      "National Museum in Krakow (Main Building)": "National Museum in Krakow Main Building al. 3 Maja 1 Krakow",
+      "MOCAK": "MOCAK Lipowa 4 Krakow",
+      "Charlotte (Plac Szczepański)": "Charlotte Plac Szczepański 2 Krakow",
+      "Alchemia": "Alchemia Estery 5 Krakow",
+      "Wesoła Café": "Wesoła Café Rakowicka 17 Krakow",
+      "Pod Wawelem": "Pod Wawelem Świętej Gertrudy 26 Krakow",
+      "Pimiento (Stolarska)": "Pimiento Stolarska 13 Krakow"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Krakow" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Wawel, the Market Square museums, Kazimierz and the Wieliczka mine, with restaurants, breakfast cafés and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Wawel Royal Castle","St. Mary's Basilica","Rynek Underground","Oskar Schindler's Enamel Factory"];
+    cityGuide.tip = "Plan museum days around closures: the National Museum and Manggha shut on Mondays, MOCAK opens only Thursday to Sunday, and the Eagle Pharmacy is closed Mondays and Tuesdays.";
+    data.destinationFacts[cityKey] = "Plan museum days around closures: the National Museum and Manggha shut on Mondays, MOCAK opens only Thursday to Sunday, and the Eagle Pharmacy is closed Mondays and Tuesdays.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Wawel, the Market Square museums, Kazimierz and the Wieliczka mine, with restaurants, breakfast cafés and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays and midweek",
+        "copy": "The National Museum's Main Building and Czartoryski Museum and the Manggha Museum close on Mondays. MOCAK opens Thursday to Sunday only, and the Eagle Pharmacy is closed Mondays and Tuesdays."
+      },
+      {
+        "label": "Free days",
+        "value": "Varies by museum",
+        "copy": "Tuesday is free for the National Museum's permanent exhibitions, Manggha and Rynek Underground; Monday is free at Schindler's Factory and the Town Hall Tower, and Wednesday at the Eagle Pharmacy. Museum of Krakow free tickets are sold only at the box office on the day."
+      },
+      {
+        "label": "Timed tickets",
+        "value": "Book Schindler early",
+        "copy": "Oskar Schindler's Enamel Factory sells online tickets 90 days ahead, stops online sales 6 hours before a visit, and asks for original ID with personal tickets. Its ticket office sells only same-day tickets for the next available slot, up to 5 per person."
+      },
+      {
+        "label": "Rules",
+        "value": "Age and walk-ins",
+        "copy": "St. Mary's Bugle Tower is closed November to April, sells tickets only on the day, and does not admit children under 8. Mercy Brown admits adults only, and Charlotte takes walk-ins without reservations until 16:00."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Book Schindler's Factory and Wawel ahead, then fit the smaller museums around their closing and free days.",
+      intro: [
+        "Wawel Royal Castle is at its most generous in November: its \"Free November 2026\" campaign gives you free passes to the free exhibitions, collected at the ticket offices or online up to a week ahead, with up to 5 tickets per person. During the month the State Rooms and Castle Underground open Tuesday to Sunday from 9:00 to 17:00, while Mondays open only the first-floor Royal Private Apartments, from 10:00 to 16:00. The temporary exhibition \"Lares and penates\", on security in architecture, runs until 6 January 2027. Groups must book guided tours in advance.",
+        "On the Main Market Square, Rynek Underground at Rynek Główny 1 opens until 20:00 from Friday to Sunday and closes on the second Monday of the month; Tuesday entry is free but sold only at the box office on the day. The Town Hall Tower opens Tuesday to Sunday from 10:00 to 18:00. At St. Mary's Basilica, visiting runs from 11:30 on weekdays and 14:00 on Sundays, and the Veit Stoss altar opens at 11:50 on weekdays. Its Bugle Tower is closed from November to April.",
+        "Across the river, Oskar Schindler's Enamel Factory on Lipowa Street opens until 20:00 from Tuesday to Sunday and closes on the first Tuesday of the month. Online tickets go on sale 90 days ahead, and a Schindler ticket also gets you into the Eagle Pharmacy within 7 days. MOCAK, next door, opens Thursday to Sunday and shows Eleanor Antin's retrospective from 5 December 2026 to 21 March 2027. The National Museum's Main Building has \"Citizen Cepelia\" until 21 February 2027 and \"The Faces of Czapski\" until 31 January 2027.",
+        "For meals, Charlotte on Plac Szczepański bakes its own bread in the basement, serves breakfast until closing and takes walk-ins until 16:00. Starka in Kazimierz holds booked tables for 15 minutes, and Wierzynek on the square closes on Mondays. For a later evening, Mercy Brown on Straszewskiego has no sign on the door, admits adults only and hosts mostly free live music, while Alchemia on Plac Nowy runs a busy concert programme. At Wieliczka the Tourist Route is open 09:00 to 17:00 and takes 2 to 3 hours."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair Wawel Royal Castle in the morning with St. Mary's Basilica and Rynek Underground on the Market Square in the afternoon."
+        ],
+        [
+          "A slower morning",
+          "Start with breakfast at Charlotte on Plac Szczepański, then browse Stary Kleparz, which trades Monday to Saturday."
+        ],
+        [
+          "Before booking",
+          "Reserve Schindler's Factory online up to 90 days ahead, and check each museum's closing and free days before you fix your route."
+        ]
+      ],
+      trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 47.
-- Classifier-passed (published, not fully documented in that format): 145.
+- Source-verified (complete dated evidence format): 48.
+- Classifier-passed (published, not fully documented in that format): 144.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -264,7 +264,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Kolkata, India | kolkata | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Komodo, Indonesia | komodo | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Krabi, Thailand | krabi | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
-| Krakow, Poland | krakow | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Krakow, Poland | krakow | source-verified | source-checked | 26 | 52 | 15 | 15 | None |
 | Kruger National Park, South Africa | kruger-national-park | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Kyoto, Japan | kyoto | source-verified | source-checked | 27 | 47 | 15 | 14 | None |
 | Lagos, Portugal | lagos | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |

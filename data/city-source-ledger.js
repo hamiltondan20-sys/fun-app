@@ -5,6 +5,419 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Krakow, Poland": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-25",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability, and seasonal or holiday hours may differ from the weekly hours quoted. Several sites could not be read because of certificate or SSL errors, 403 responses, DNS failures or redirects to social media (including Kraków Zoo, Massolit, Café Noworolski, Hamsa, Hotel Stary, Pochlebstwo, Zmączeni, Bottiglieria 1881 and Karma Coffee), so those places were left out rather than treated as closed. Opening hours were not published on the pages read for Starka, Szara Gęś, Pimiento (Stolarska), Alchemia and Wesoła Café, and Stary Kleparz gives days but not times. Wieliczka Salt Mine, Pod Aniołami and several restaurants were confirmed from current hours, menus or booking pages without an explicitly dated 2026 notice. The Wawel hours quoted apply to November 2026.",
+    "sourceUrls": [
+      "docs/content-research/krakow-2026-10-25.md",
+      "docs/content-research/krakow-2026-10-25.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Main Market Square",
+        "checkedOn": "2026-10-25",
+        "reason": "public square with no operator page; covered through Rynek Underground, Town Hall Tower and venues on Rynek Główny"
+      },
+      {
+        "name": "Kazimierz",
+        "checkedOn": "2026-10-25",
+        "reason": "district, not a single place; covered through named Kazimierz venues"
+      },
+      {
+        "name": "Kraków Zoo",
+        "url": "https://zoo-krakow.pl/en/",
+        "checkedOn": "2026-10-25",
+        "reason": "certificate error (\"unable to verify the first certificate\"); not bypassed"
+      },
+      {
+        "name": "Massolit Books & Cafe",
+        "url": "https://www.massolit.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "SSL handshake failure; not bypassed"
+      },
+      {
+        "name": "Café Noworolski",
+        "url": "https://www.noworolski.com.pl/",
+        "checkedOn": "2026-10-25",
+        "reason": "certificate does not match host; not bypassed"
+      },
+      {
+        "name": "Hamsa",
+        "url": "https://hamsa.pl/",
+        "checkedOn": "2026-10-25",
+        "reason": "certificate does not match host; not bypassed"
+      },
+      {
+        "name": "Hotel Stary (rooftop bar)",
+        "url": "https://www.stary.hotel.com.pl/en/",
+        "checkedOn": "2026-10-25",
+        "reason": "certificate does not match host; not bypassed"
+      },
+      {
+        "name": "Pochlebstwo bakery",
+        "url": "https://pochlebstwo.pl/",
+        "checkedOn": "2026-10-25",
+        "reason": "certificate does not match host; not bypassed"
+      },
+      {
+        "name": "Zmączeni bakery",
+        "url": "https://zmaczeni.pl/",
+        "checkedOn": "2026-10-25",
+        "reason": "403 Forbidden"
+      },
+      {
+        "name": "Cupcake Corner",
+        "url": "https://www.cupcake.pl/",
+        "checkedOn": "2026-10-25",
+        "reason": "403 Forbidden"
+      },
+      {
+        "name": "Bottiglieria 1881",
+        "url": "https://bottiglieria1881.pl/",
+        "checkedOn": "2026-10-25",
+        "reason": "official domain did not resolve (DNS failure)"
+      },
+      {
+        "name": "Karma Coffee Roastery",
+        "url": "https://www.karmakrakow.pl/",
+        "checkedOn": "2026-10-25",
+        "reason": "official domain did not resolve (DNS failure)"
+      },
+      {
+        "name": "Milkbar Tomasza",
+        "url": "https://www.milkbartomasza.pl/",
+        "checkedOn": "2026-10-25",
+        "reason": "official domain did not resolve (DNS failure)"
+      },
+      {
+        "name": "Cukiernia Michalscy",
+        "url": "https://www.michalscy.com.pl/",
+        "checkedOn": "2026-10-25",
+        "reason": "guessed domain did not resolve; official site not found"
+      },
+      {
+        "name": "Café Camelot",
+        "url": "https://www.cafecamelot.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "guessed domain is parked for sale; official site not found"
+      },
+      {
+        "name": "Cafe Hafuch (JCC Krakow)",
+        "url": "https://www.jcckrakow.info/",
+        "checkedOn": "2026-10-25",
+        "reason": "JCC site returned truncated content; no address or hours readable"
+      },
+      {
+        "name": "Hevre",
+        "url": "https://hevre.pl/",
+        "checkedOn": "2026-10-25",
+        "reason": "official domain redirects to Facebook; social pages not accepted"
+      },
+      {
+        "name": "Bunkier Café",
+        "url": "https://bunkiercafe.pl/",
+        "checkedOn": "2026-10-25",
+        "reason": "official domain redirects to Facebook; social pages not accepted"
+      },
+      {
+        "name": "Jama Michalika",
+        "url": "https://jamamichalika.pl/",
+        "checkedOn": "2026-10-25",
+        "reason": "address read (ul. Floriańska 45) but no 2026 or other current operating evidence; footer © 2024"
+      },
+      {
+        "name": "Cafe Botanica",
+        "url": "https://www.cafebotanica.pl/",
+        "checkedOn": "2026-10-25",
+        "reason": "address and hours read (Bracka 9) but page carries no date or current notice"
+      },
+      {
+        "name": "Wódka Café Bar",
+        "url": "https://www.wodkabar.pl/",
+        "checkedOn": "2026-10-25",
+        "reason": "address read (Mikołajska 5) but no hours and no dated content"
+      },
+      {
+        "name": "Cukiernia Cichowscy",
+        "url": "https://www.cichowscy.pl/",
+        "checkedOn": "2026-10-25",
+        "reason": "address read (Starowiślna 21) but no hours; latest date 2025"
+      },
+      {
+        "name": "Museum of Engineering and Technology",
+        "url": "https://mit.krakow.pl/en/",
+        "checkedOn": "2026-10-25",
+        "reason": "no public opening hours on page and no 2026 content (copyright 2021)"
+      },
+      {
+        "name": "Sukiennice Gallery (National Museum)",
+        "url": "https://mnk.pl/en/branch/mnk-gallery-of-19th-century-polish-art-in-sukiennice",
+        "checkedOn": "2026-10-25",
+        "reason": "branch page returned 404"
+      },
+      {
+        "name": "Słodki Wentzl",
+        "url": "https://www.wentzl.pl/",
+        "checkedOn": "2026-10-25",
+        "reason": "site gave no address, hours or dated content for the café"
+      },
+      {
+        "name": "Lajkonik",
+        "url": "https://lajkonik.pl/",
+        "checkedOn": "2026-10-25",
+        "reason": "site belongs to a snack manufacturer in Skawina, not a Kraków café"
+      },
+      {
+        "name": "Hala Targowa",
+        "url": "https://hala-targowa.pl/",
+        "checkedOn": "2026-10-25",
+        "reason": "hala-targowa.pl is the Wrocław market hall; no official Kraków site found"
+      },
+      {
+        "name": "Jagiellonian University Botanic Garden",
+        "url": "https://ogrod.uj.edu.pl/en",
+        "checkedOn": "2026-10-25",
+        "reason": "official page returned 404"
+      },
+      {
+        "name": "Wawel at opening / Wieliczka Salt Mine day",
+        "checkedOn": "2026-10-25",
+        "reason": "phrasing variants of confirmed Wawel Royal Castle and Wieliczka Salt Mine; not separate places"
+      },
+      {
+        "name": "Kazimierz evening; Sunset near Wawel Castle; Old Town evening; Wawel at opening (luxury/couples variants)",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "a Polish dinner and market snack; Krakow market or cafe; A local dinner in Old Town; A cafe near Kazimierz; A market breakfast in Podgorze; A dessert stop in Old Town",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Old Town walk; Public viewpoint near Kazimierz; Market meal around Podgorze; A self-guided walk through Podgorze; Free museum or public garden time; A neighborhood market stop",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Main Market Square; A signature meal in Old Town; A tailored day around Wawel at opening; A private transfer between highlights; A special evening in Kazimierz; A slower day with a local guide",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Kazimierz; A scenic morning near Podgorze; A photo-friendly walk through Old Town",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Main Market Square; Easy outing around Kazimierz; A relaxed meal near Podgorze; A hands-on stop near Old Town; A short scenic outing with room to move; A treat everyone can agree on",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Main Market Square; Old Town cafe or market; Self-guided Kazimierz evening; A museum or gallery at your own pace; A people-watching break in Podgorze; A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Podgorze; A local recommendation beyond the headline sights; A short detour beyond Old Town",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Old Town; Kazimierz bakery or market; Slow breakfast before Main Market Square; A local pastry to take on the road; Coffee and a walk through Podgorze; A relaxed brunch near Old Town",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Wawel Castle; Local stop around Podgorze; A market lunch in Old Town; A quick meal between sights; A long midday table in Kazimierz",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Podgorze; A local specialty near Old Town; A final-night meal away from the busiest sights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Old Town; A local bar around Kazimierz; A view-led evening near Kazimierz; A relaxed night close to the stay; A late drink after dinner; A rooftop or waterfront evening",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Old Town; Kazimierz morning market; Coffee and pastry before Main Market Square; A regional sweet to take on the road; A fresh bake near Podgorze; A pastry stop between neighborhoods",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Old Town; A slow cafe in Kazimierz; A final cup near Podgorze; A coffee stop before the first sight; A neighborhood cafe break; A view with your morning coffee",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Wawel Royal Castle": {
+        "url": "https://wawel.krakow.pl/en/free-november-2026",
+        "sourceType": "official public operator (Wawel Royal Castle state art collection)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Runs its \"Free November 2026\" campaign with free passes at the ticket offices or online up to a week ahead; temporary exhibition \"Lares and penates\" runs \"24 September 2026 – 6 January 2027\"."
+      },
+      "Wieliczka Salt Mine": {
+        "url": "https://www.wieliczka-saltmine.com/visiting/tourist-route",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Tourist Route page states \"The route is open from 09:00 am to 05:00 pm\", with online ticket sales from 121 PLN; tour takes \"2 - 3 h\". No 2026-dated notice found."
+      },
+      "Rynek Underground": {
+        "url": "https://muzeumkrakowa.pl/en/branches/rynek-underground",
+        "sourceType": "official public operator (Museum of Krakow)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Branch page lists current hours, prices and online booking at bilety.mhk.pl, plus a Museum news item on Easter 2026 hours."
+      },
+      "Oskar Schindler's Enamel Factory": {
+        "url": "https://muzeumkrakowa.pl/en/branches/oskar-schindlers-enamel-factory",
+        "sourceType": "official public operator (Museum of Krakow)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online tickets on sale 90 days ahead; news items dated 27.03.2026 (Easter hours) and 04.05.2026 (conference call for papers)."
+      },
+      "Town Hall Tower": {
+        "url": "https://muzeumkrakowa.pl/en/branches/town-hall-tower",
+        "sourceType": "official public operator (Museum of Krakow)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Branch page lists current prices (normal 22 PLN) and online booking; news item dated 27.03.2026."
+      },
+      "Eagle Pharmacy": {
+        "url": "https://muzeumkrakowa.pl/en/branches/eagle-pharmacy",
+        "sourceType": "official public operator (Museum of Krakow)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Branch page lists current hours, prices and online booking; news item dated 27.03.2026. A Schindler Factory ticket also covers entry within 7 days."
+      },
+      "National Museum in Krakow (Main Building)": {
+        "url": "https://mnk.pl/en/branch/mnk-main-building",
+        "sourceType": "official public operator (National Museum in Krakow)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibitions \"Citizen Cepelia\" (09.10.2026–21.02.2027), \"The Faces of Czapski\" (18.09.2026–31.01.2027) and Van Gogh's \"Country Cottages Among the Trees\" (29.01.2026–31.12.2026)."
+      },
+      "Czartoryski Museum": {
+        "url": "https://mnk.pl/en/branch/mnk-czartoryski-museum",
+        "sourceType": "official public operator (National Museum in Krakow)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Shows Leonardo's \"Lady with an Ermine\" on the second floor; 2026 temporary exhibitions listed; tickets 65 PLN normal via bilety.mnk.pl."
+      },
+      "St. Mary's Basilica": {
+        "url": "https://mariacki.com/en/tourist",
+        "sourceType": "operator's own site (parish)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Tourist page lists 2026 Holy Week exceptions and current ticket prices (regular 20 PLN); site footer \"© 2026\"."
+      },
+      "MOCAK": {
+        "url": "https://en.mocak.pl/",
+        "sourceType": "operator's own site (municipal museum)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Lists \"Eleanor Antin: A Retrospective\" 05.12.2026–21.03.2027 and \"The Collection around MOCAK 2026\"."
+      },
+      "Manggha Museum": {
+        "url": "https://manggha.pl/en/access-admission",
+        "sourceType": "operator's own site (state cultural institution)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Admission page lists 2026 special hours; exhibitions \"Akitsushima\" and \"Warrior Women\" run 19 July–11 November 2026."
+      },
+      "Galicia Jewish Museum": {
+        "url": "https://galiciajewishmuseum.org/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Homepage carries 2026 news (an exhibition opening 1 October 2026 elsewhere, a July 2026 screening at the museum) and online tickets (adult 35 PLN)."
+      },
+      "Kościuszko Mound": {
+        "url": "https://www.kopieckosciuszki.pl/",
+        "sourceType": "operator's own site (Kościuszko Mound Committee)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "2026 news items (recitation contest, My Kraków Tourist Card listing, free PDF book)."
+      },
+      "Stary Kleparz": {
+        "url": "https://www.starykleparz.com/",
+        "sourceType": "operator's own site (Spółka Kupiecka Stary Kleparz)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Page headed \"Świeże zakupy przez cały rok\" (2026); \"Zapraszamy od poniedziałku do soboty na zakupy\"; Art & Food Bazar on selected Sundays March–December."
+      },
+      "Park Wodny": {
+        "url": "https://parkwodny.pl/",
+        "sourceType": "operator's own site (Park Wodny w Krakowie S.A.)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "News items dated October 2026; children's pool with Pirate Island and kids' slides described."
+      },
+      "Wierzynek": {
+        "url": "https://www.wierzynek.pl/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current food menu PDF uploaded May 2026; online \"Book a table\" page."
+      },
+      "Starka": {
+        "url": "https://starka-restauracja.pl/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "2026 group set menu (SET-MENU-2026-WEB.pdf); online booking; tables held 15 minutes; \"All e-mail reservations require RETURN CONFIRMATION BY E-MAIL\"."
+      },
+      "Pod Aniołami": {
+        "url": "https://www.podaniolami.pl/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Live \"Book a table\" reservations page and published daily hours; no explicitly dated 2026 notice."
+      },
+      "Szara Gęś": {
+        "url": "https://www.szarages.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Footer \"Copyright © 2016-2026\"; Gault&Millau badge uploaded August 2026; reservation section."
+      },
+      "Pod Wawelem": {
+        "url": "https://www.podwawelem.eu/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Footer \"Copyright © 2026\"; online booking via mojstolik.pl and group dining offer."
+      },
+      "Pimiento (Stolarska)": {
+        "url": "https://www.pimiento.pl/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Menus uploaded June 2026; SevenRooms booking where a table is secured only once the confirmation email arrives."
+      },
+      "Mercy Brown": {
+        "url": "https://www.mercybrown.pl/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Live-music programme running from 27 October to December 2026, mostly free entry; unsigned door, adults only (\"Wstęp do lokalu wyłącznie dla osób pełnoletnich\")."
+      },
+      "Alchemia": {
+        "url": "https://alchemia.com.pl/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Concert listings for late October and November 2026, including the 21st Kraków Autumn Jazz Festival from 28 October."
+      },
+      "Charlotte (Plac Szczepański)": {
+        "url": "https://bistrocharlotte.com/pl/lokale/charlotte-plac-szczepanski-krakow/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Bistro with its own bakery in the basement; breakfast served until closing; walk-ins without reservation until 16:00; site footer \"© 2026\" and Christmas offer uploaded October 2026."
+      },
+      "Good Lood (Kazimierz)": {
+        "url": "https://www.goodlood.com/loodspoty",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Branch listed with weekly hours; homepage shows a current \"Smak dnia\" (flavour of the day) and \"© 2026\"."
+      },
+      "Wesoła Café": {
+        "url": "https://wesolacafe.pl/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Autumn menu from October, menu link versioned 2026-10-14; breakfasts and a lunch menu \"między 12:00 a 18:00\"."
+      }
+    }
+  },
   "Osaka, Japan": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-25",
