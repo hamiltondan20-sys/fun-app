@@ -1,0 +1,943 @@
+{
+  "city": "Auckland, New Zealand",
+  "checkedOn": "2026-10-25",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Auckland War Memorial Museum",
+      "kind": "museum",
+      "url": "https://www.aucklandmuseum.com/",
+      "sourceType": "operator's own site",
+      "address": "\"Auckland Domain Parnell Auckland 1010 New Zealand\" (from https://www.aucklandmuseum.com/contact-us)",
+      "operatingEvidence": "Visit page \"Last updated: 23 Oct 2026\"; Twilight Tuesday: \"open late every Tuesday evening until 8.30pm\"; current displays include March of the Triceratops and Titanic: The Human Story at the Smith & Caughey's building on Queen Street.",
+      "hours": "Regular weekly hours not shown on pages read; open late every Tuesday until 8.30pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Auckland Art Gallery Toi o Tāmaki",
+      "kind": "museum",
+      "url": "https://www.aucklandartgallery.com/visit",
+      "sourceType": "operator's own site",
+      "address": "\"Corner of Wellesley Street East and Kitchener Street, Auckland ... 1010\"; main doors at 1 Kitchener Street",
+      "operatingEvidence": "Exhibitions page lists \"Picasso: Designed by Paul Smith\" 10 Oct 2026 – 1 Feb 2027 (tickets required) and free shows such as \"Giacometti without End\" to 16 Jan 2028.",
+      "hours": "\"Open every day from 10am to 5pm\"; closed Christmas Day",
+      "confidence": "high"
+    },
+    {
+      "name": "New Zealand Maritime Museum",
+      "kind": "museum",
+      "url": "https://www.maritimemuseum.co.nz/visit",
+      "sourceType": "official public operator (Tātaki Auckland Unlimited)",
+      "address": "\"Corner Quay and Hobson Streets, Viaduct Harbour, Auckland\" (Hobson's Wharf)",
+      "operatingEvidence": "Home page shows \"Our Ocean of Islands\" as \"Exhibition on now\" and heritage sailings (Ted Ashby, SS Puke); visitor adult ticket $24, free for Auckland residents with proof of address.",
+      "hours": "Daily 10:00am–5:00pm, last entry 4:00pm; closed Christmas Day",
+      "confidence": "high"
+    },
+    {
+      "name": "Auckland Zoo",
+      "kind": "park",
+      "url": "https://www.aucklandzoo.co.nz/tickets",
+      "sourceType": "operator's own site",
+      "address": "\"Auckland Zoo is located at 99 Motions Road\" (from /visit/getting-here)",
+      "operatingEvidence": "Ticket page sells pre-booked and flexible tickets; non-Aucklander adult $39; \"Pre-booked prices apply to tickets booked before midnight the day prior\" (Auckland resident tickets).",
+      "hours": "9:30am–5:30pm, last entry 4:30pm; open every day except Christmas",
+      "confidence": "high"
+    },
+    {
+      "name": "MOTAT",
+      "kind": "museum",
+      "url": "https://www.motat.nz/visit",
+      "sourceType": "operator's own site",
+      "address": "\"805 Great North Road & 98 Motions Road, Western Springs, Auckland 1022\"",
+      "operatingEvidence": "Visit page: \"Open daily, 10am - 4pm\", tickets online or at the entrance, Family Pass $45; exhibits include the Aviation Hall and Te Kōtiu immersive experience.",
+      "hours": "\"Open daily, 10am - 4pm\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Torpedo Bay Navy Museum",
+      "kind": "museum",
+      "url": "https://www.navymuseum.co.nz/",
+      "sourceType": "operator's own site (Royal New Zealand Navy museum)",
+      "address": "\"64 King Edward Parade, Torpedo Bay, Devonport, Auckland\"",
+      "operatingEvidence": "Hours notice and admission (free for NZ residents; international visitors 18+ $15); workshop listings for July and August dates; Torpedo Bay Café table bookings.",
+      "hours": "10am–5pm seven days; \"closed on Good Friday, Christmas Day and Boxing Day\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Auckland Botanic Gardens",
+      "kind": "park",
+      "url": "https://www.aucklandbotanicgardens.co.nz/",
+      "sourceType": "official public operator (Auckland Council)",
+      "address": "\"102 Hill Road, Manurewa\"",
+      "operatingEvidence": "\"Free entry Open every day\"; event \"Sculpture in the Gardens\" Nov 14 2026 – Feb 28 2027.",
+      "hours": "Gardens 8.00am–8.00pm (summer hours); Visitor Centre 8.00am–4.30pm, closed Christmas Day only",
+      "confidence": "high"
+    },
+    {
+      "name": "Maungawhau / Mount Eden",
+      "kind": "scenic",
+      "url": "https://www.maunga.nz/maunga/maungawhau",
+      "sourceType": "official public operator (Tūpuna Maunga Authority)",
+      "address": "\"250 Mount Eden Road, Mount Eden, Auckland\"",
+      "operatingEvidence": "2026 Batger Quarry stabilisation notice; \"The Maunga, including the tihi (summit), will remain open throughout the project.\" Summit road \"permanently closed to private motor vehicles\".",
+      "hours": "Summer 7am–8.30pm; winter 7am–7pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Ponsonby Central",
+      "kind": "market",
+      "url": "https://www.ponsonbycentral.co.nz/",
+      "sourceType": "operator's own site",
+      "address": "\"136 Ponsonby Road, Auckland 1011\"",
+      "operatingEvidence": "\"Open 7am - 12.00am, 7 days a week\"; over 20 eateries incl. Coffee & Cafes and Sweet Treats (Eat & Drink page lists Foxtrot Parlour, Grown Up Donuts, Bedford and others).",
+      "hours": "7am–12am, 7 days",
+      "confidence": "medium"
+    },
+    {
+      "name": "Depot Eatery",
+      "kind": "meal",
+      "url": "https://depoteatery.co.nz/",
+      "sourceType": "operator's own site",
+      "address": "\"86 Federal Street, Auckland 1010, NZ\"",
+      "operatingEvidence": "Drinks menu file dated \"august-2026\"; notice that Depot \"will only be doing walk ins\"; breakfast menu 7–11am.",
+      "hours": "Mon–Fri 7am–9pm; Sat 11am–9.30pm; Sun 11am–9pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Cassia",
+      "kind": "meal",
+      "url": "https://www.cassiarestaurant.co.nz/",
+      "sourceType": "operator's own site",
+      "address": "\"58 Albert Street, Auckland CBD\"",
+      "operatingEvidence": "Online booking plus \"WALK-INS ALWAYS WELCOME\"; current Sunday Biryani menu ($60 for two) and Cocktail Lounge prices.",
+      "hours": "Dinner seven nights from 5pm; lunch Wed–Fri from 12 noon; Cocktail Lounge Thu–Fri 3–5pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Amano",
+      "kind": "meal",
+      "url": "https://savor.co.nz/amano",
+      "sourceType": "operator's own site (Savor Group)",
+      "address": "\"68 Tyler Street, Auckland CBD\"",
+      "operatingEvidence": "Online booking, current menu with \"Breakfast (served untill 11:30am)\" and lunch & dinner; set menus for groups of 16+.",
+      "hours": "\"Monday to Sunday – 7am - Late\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Amano Bakery",
+      "kind": "bakery",
+      "url": "https://savor.co.nz/amano-bakery",
+      "sourceType": "operator's own site (Savor Group)",
+      "address": "\"68 Tyler Street, Auckland CBD\"",
+      "operatingEvidence": "Sells sourdough, ciabatta, pastries and lunchtime pizza by the slice; online ordering app.",
+      "hours": "\"Monday to Sunday 7am – 4pm\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Ebisu",
+      "kind": "meal",
+      "url": "https://savor.co.nz/ebisu",
+      "sourceType": "operator's own site (Savor Group)",
+      "address": "\"116 Quay Street, Auckland CBD\"",
+      "operatingEvidence": "Booking button and Sharing Style Menu Mon–Fri 12–1:30pm; Father's Day (Sunday 6 September) hours notice.",
+      "hours": "Mon–Fri 12–2pm and 5pm–late; Sat–Sun 5pm–late",
+      "confidence": "high"
+    },
+    {
+      "name": "Bivacco",
+      "kind": "bar",
+      "url": "https://savor.co.nz/bivacco",
+      "sourceType": "operator's own site (Savor Group)",
+      "address": "\"115 Customs Street West, Auckland CBD\"",
+      "operatingEvidence": "\"Bookings and walk-ins welcome\"; current cocktail list (martinis, margaritas, spritzes, negronis).",
+      "hours": "\"Monday to Sunday – 11am - Late\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Soul Bar & Bistro",
+      "kind": "meal",
+      "url": "https://www.soulbar.co.nz/",
+      "sourceType": "operator's own site",
+      "address": "\"18 lower hobson street, auckland central, 1010\"",
+      "operatingEvidence": "Online bookings; à la carte \"finishes at 10pm, bar snacks menu available until close\"; hiring notice.",
+      "hours": "\"monday to sunday 11am - late\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Azabu Ponsonby",
+      "kind": "meal",
+      "url": "https://savor.co.nz/azabu-ponsonby",
+      "sourceType": "operator's own site (Savor Group)",
+      "address": "\"26 Ponsonby Road, Grey Lynn, Auckland\"",
+      "operatingEvidence": "Online booking and published weekly hours.",
+      "hours": "Sat–Wed 5pm–late; Thu–Fri 12pm–late",
+      "confidence": "medium"
+    },
+    {
+      "name": "Non Solo Pizza",
+      "kind": "meal",
+      "url": "https://savor.co.nz/non-solo-pizza",
+      "sourceType": "operator's own site (Savor Group)",
+      "address": "\"259 Parnell Road, Parnell, Auckland\"",
+      "operatingEvidence": "Online booking; set menu option for groups of 14–20.",
+      "hours": "\"Monday to Sunday - 12pm - Late\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Market Galley",
+      "kind": "meal",
+      "url": "https://savor.co.nz/market-galley",
+      "sourceType": "operator's own site (Savor Group)",
+      "address": "\"22 Jellicoe Street, Freeman's Bay, Auckland 1010\" (courtyard at Auckland Fish Market)",
+      "operatingEvidence": "Published hours and description as \"a classic fish and chippery\".",
+      "hours": "Sun–Thu 11am–6pm; Fri–Sat 11am–7pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Wreck",
+      "kind": "bar",
+      "url": "https://savor.co.nz/the-wreck",
+      "sourceType": "operator's own site (Savor Group)",
+      "address": "\"22 Jellicoe Street, Freeman's Bay, Auckland 1010\" (Auckland Fish Market courtyard)",
+      "operatingEvidence": "Published hours; serves tap and bottled beer, cocktails, hard sodas and NZ wines.",
+      "hours": "\"Sun - Thurs 11am -6pm\"; \"Fri & Sat 11am - 7pm\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bang Bang",
+      "kind": "meal",
+      "url": "https://savor.co.nz/bang-bang-kitchen",
+      "sourceType": "operator's own site (Savor Group)",
+      "address": "\"22 Jellicoe Street, Freeman's Bay, Auckland 1010\"",
+      "operatingEvidence": "Online booking and published hours.",
+      "hours": "Sun–Thu 11am–6pm; Fri–Sat 11am–7pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Flush Urban Golf + Bar",
+      "kind": "bar",
+      "url": "https://savor.co.nz/flush-golf",
+      "sourceType": "operator's own site (Savor Group)",
+      "address": "\"48 Custom Street East, Auckland CBD\"",
+      "operatingEvidence": "\"Book A Bay\" booking link; \"Walk-ins are always welcome.\"",
+      "hours": "Mon–Fri 7am–11pm; Sat–Sun 9am–11pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Dr Rudi's Rooftop Brewing Co.",
+      "kind": "bar",
+      "url": "https://www.drrudis.co.nz/",
+      "sourceType": "operator's own site",
+      "address": "\"Level 2/204 Quay St, Viaduct Harbour, Auckland 1010\"",
+      "operatingEvidence": "Labour Day long weekend notice (23–26 October) and \"The Dr's 10th birthday, Sunday 15 November\"; online table booking.",
+      "hours": "\"Monday - Sunday: 11:00am - Late\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Cable Bay",
+      "kind": "meal",
+      "url": "https://www.cablebay.nz/",
+      "sourceType": "operator's own site",
+      "address": "\"12 Nick Johnstone Drive, Oneroa, Waiheke Island, New Zealand\"",
+      "operatingEvidence": "Reservations link; liquor licence valid to 20/11/2027; published cellar door and Verandah hours.",
+      "hours": "Cellar Door Mon–Sun 11am–5pm; Verandah Mon–Thu 12–6pm, Fri 12pm–late, Sat 11am–late, Sun 11am–6pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mudbrick",
+      "kind": "meal",
+      "url": "https://www.mudbrick.co.nz/",
+      "sourceType": "operator's own site",
+      "address": "\"126 Church Bay Road, Oneroa, Waiheke, New Zealand\"",
+      "operatingEvidence": "\"Book a Table\" online booking; MICHELIN Star 2026 logo on site.",
+      "hours": "not published on pages read",
+      "confidence": "medium"
+    },
+    {
+      "name": "Prego",
+      "kind": "meal",
+      "url": "https://www.prego.co.nz/",
+      "sourceType": "operator's own site",
+      "address": "\"226 Ponsonby Road, Ponsonby, Auckland\"",
+      "operatingEvidence": "\"Open 7 Days\" with a reservations link and an all-day menu; no 2026-dated notice.",
+      "hours": "\"Open 7 Days\" (times not published); closed Christmas Day and Boxing Day",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Sky Tower",
+      "reason": "Official site redirected to a Radware bot check (validate.perfdrive.com); not bypassed. Not evidence of closure.",
+      "url": "https://www.skycityauckland.co.nz/sky-tower/"
+    },
+    {
+      "name": "Fullers360 ferries (Devonport ferry / Waiheke)",
+      "reason": "Home page read but gave no terminal address; Devonport page redirected to a Radware bot check; not bypassed.",
+      "url": "https://www.fullers.co.nz/"
+    },
+    {
+      "name": "SEA LIFE Kelly Tarlton's Aquarium",
+      "reason": "Official page gives hours and prices but no street address; directions page returned 404.",
+      "url": "https://www.visitsealife.com/auckland/"
+    },
+    {
+      "name": "The Grove",
+      "reason": "Fetch failed twice with no output.",
+      "url": "https://www.thegroverestaurant.co.nz/"
+    },
+    {
+      "name": "La Cigale French Market",
+      "reason": "Certificate error (cert issued for vps2.primaldrive.net); not bypassed.",
+      "url": "https://lacigale.co.nz/"
+    },
+    {
+      "name": "Man O' War",
+      "reason": "Certificate error (cert for dnspackage.com); not bypassed.",
+      "url": "https://www.manowarvineyards.co.nz/"
+    },
+    {
+      "name": "Hello Beautiful",
+      "reason": "Certificate error (cert for *.ds.network); not bypassed.",
+      "url": "https://www.hellobeautiful.co.nz/"
+    },
+    {
+      "name": "Ahi",
+      "reason": "Guessed domain did not resolve (DNS not found); official site not located.",
+      "url": "https://www.ahirestaurant.com/"
+    },
+    {
+      "name": "Ortolana",
+      "reason": "Domain redirected to savor.co.nz/ortolana, which returned 404; only landlord/directory listings found.",
+      "url": "https://savor.co.nz/ortolana"
+    },
+    {
+      "name": "Daily Bread",
+      "reason": "HTTP 429 Too Many Requests on repeated attempts.",
+      "url": "https://www.dailybread.co.nz/"
+    },
+    {
+      "name": "Kōkako",
+      "reason": "HTTP 429 Too Many Requests.",
+      "url": "https://www.kokako.co.nz/"
+    },
+    {
+      "name": "Eighthirty",
+      "reason": "HTTP 429 Too Many Requests.",
+      "url": "https://www.eighthirty.co.nz/"
+    },
+    {
+      "name": "Espresso Workshop",
+      "reason": "HTTP 429 Too Many Requests.",
+      "url": "https://www.espressoworkshop.co.nz/"
+    },
+    {
+      "name": "Devonport Chocolates",
+      "reason": "HTTP 429 Too Many Requests.",
+      "url": "https://www.devonportchocolates.co.nz/"
+    },
+    {
+      "name": "Atomic Coffee Roasters (Rocket Store)",
+      "reason": "SSL handshake failure; not bypassed.",
+      "url": "https://www.atomiccoffee.co.nz/"
+    },
+    {
+      "name": "Allpress Auckland Roastery",
+      "reason": "Café finder page content did not include the Auckland Roastery entry; address and hours unconfirmed.",
+      "url": "https://allpress.com/cafes"
+    },
+    {
+      "name": "Coffee Supreme",
+      "reason": "Home page lists no Auckland café address or hours.",
+      "url": "https://coffeesupreme.com/"
+    },
+    {
+      "name": "Caretaker",
+      "reason": "Guessed official domain returned 404; only precinct/directory listings found (not acceptable evidence).",
+      "url": "https://www.caretaker.net.nz/"
+    },
+    {
+      "name": "Deadshot",
+      "reason": "Official page gives no written address or hours (only an email and Instagram/map links).",
+      "url": "https://www.deadshot.co.nz/"
+    },
+    {
+      "name": "Bread & Butter (Grey Lynn)",
+      "reason": "Official site is a wholesale/shop page with no café address or hours.",
+      "url": "https://www.breadnbutter.co.nz/"
+    },
+    {
+      "name": "Commercial Bay",
+      "reason": "Address given but no hours or current operating evidence on page read.",
+      "url": "https://www.commercialbay.co.nz/"
+    },
+    {
+      "name": "Parnell Farmers Market",
+      "reason": "Guessed domain did not resolve; official site not located.",
+      "url": "https://www.parnellfarmersmarket.co.nz/"
+    },
+    {
+      "name": "Devonport Stone Oven Bakery",
+      "reason": "Guessed domain did not resolve; only tourism listing found.",
+      "url": "https://www.stoneovenbakery.co.nz/"
+    },
+    {
+      "name": "Maungauika / North Head",
+      "reason": "Official page too large to fetch (over 10 MB).",
+      "url": "https://www.maunga.nz/maunga/maungauika"
+    },
+    {
+      "name": "Auckland Domain Wintergardens / Arataki Visitor Centre",
+      "reason": "Auckland Council site returned HTTP 406; not read.",
+      "url": "https://www.aucklandcouncil.govt.nz/"
+    },
+    {
+      "name": "Waiheke Island",
+      "reason": "An island/area, not a single operator; covered through Cable Bay and Mudbrick.",
+      "url": ""
+    },
+    {
+      "name": "Auckland waterfront",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Waiheke wine day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "West Coast beach outing",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Devonport ferry",
+      "reason": "generic, not a place (operator site blocked by bot check; see Fullers360)",
+      "url": ""
+    },
+    {
+      "name": "a waterfront dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Auckland market or cafe",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local dinner in Viaduct",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Ponsonby",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Devonport",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Viaduct",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Viaduct walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Ponsonby",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Devonport",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Devonport",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Waiheke Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Viaduct",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Waiheke wine day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Ponsonby",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Sky Tower",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Viaduct evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Ponsonby",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Devonport",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Viaduct",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Waiheke Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Ponsonby",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Devonport",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Viaduct",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Waiheke Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Viaduct cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided West Coast beach outing",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Devonport",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Devonport",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Viaduct",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Viaduct",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Ponsonby bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Waiheke Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Devonport",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Viaduct",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Sky Tower",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Devonport",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Viaduct",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Ponsonby",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Devonport",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Viaduct",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Viaduct",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Ponsonby",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Auckland waterfront",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Viaduct",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Ponsonby morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Waiheke Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Devonport",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Viaduct",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Ponsonby",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Devonport",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Auckland War Memorial Museum",
+        "Auckland Art Gallery Toi o Tāmaki",
+        "New Zealand Maritime Museum",
+        "Maungawhau / Mount Eden"
+      ],
+      "bestFirstTimers": [
+        "Auckland War Memorial Museum",
+        "Maungawhau / Mount Eden",
+        "New Zealand Maritime Museum",
+        "Ponsonby Central"
+      ],
+      "bestRestaurants": [
+        "Cassia",
+        "Depot Eatery",
+        "Ebisu",
+        "Amano"
+      ],
+      "bestBudget": [
+        "Auckland Art Gallery Toi o Tāmaki",
+        "Auckland Botanic Gardens",
+        "Maungawhau / Mount Eden",
+        "Ponsonby Central"
+      ],
+      "bestLuxury": [
+        "Mudbrick",
+        "Cable Bay",
+        "Ebisu",
+        "Azabu Ponsonby"
+      ],
+      "bestCouples": [
+        "Cable Bay",
+        "Mudbrick",
+        "Dr Rudi's Rooftop Brewing Co.",
+        "Azabu Ponsonby"
+      ],
+      "bestKids": [
+        "Auckland Zoo",
+        "MOTAT",
+        "Torpedo Bay Navy Museum",
+        "Auckland Botanic Gardens"
+      ],
+      "bestSolo": [
+        "Auckland Art Gallery Toi o Tāmaki",
+        "Auckland War Memorial Museum",
+        "Ponsonby Central",
+        "Torpedo Bay Navy Museum"
+      ],
+      "bestUnique": [
+        "Flush Urban Golf + Bar",
+        "Torpedo Bay Navy Museum",
+        "MOTAT",
+        "The Wreck"
+      ],
+      "bestBreakfast": [
+        "Amano",
+        "Depot Eatery",
+        "Amano Bakery",
+        "Ponsonby Central"
+      ],
+      "bestLunch": [
+        "Market Galley",
+        "Ebisu",
+        "Bang Bang",
+        "Prego"
+      ],
+      "bestDinner": [
+        "Cassia",
+        "Azabu Ponsonby",
+        "Non Solo Pizza",
+        "Soul Bar & Bistro"
+      ],
+      "bestCocktails": [
+        "Bivacco",
+        "Cassia",
+        "Dr Rudi's Rooftop Brewing Co.",
+        "Soul Bar & Bistro"
+      ],
+      "bestBakeries": [
+        "Amano Bakery",
+        "Ponsonby Central"
+      ],
+      "bestCoffee": [
+        "Ponsonby Central"
+      ]
+    },
+    "queries": {
+      "Auckland War Memorial Museum": "Auckland War Memorial Museum Auckland Domain Parnell Auckland",
+      "Auckland Art Gallery Toi o Tāmaki": "Auckland Art Gallery Toi o Tāmaki 1 Kitchener Street Auckland",
+      "New Zealand Maritime Museum": "New Zealand Maritime Museum Quay Street Hobson Street Auckland",
+      "Auckland Zoo": "Auckland Zoo 99 Motions Road Auckland",
+      "MOTAT": "MOTAT 805 Great North Road Auckland",
+      "Torpedo Bay Navy Museum": "Torpedo Bay Navy Museum 64 King Edward Parade Devonport Auckland",
+      "Auckland Botanic Gardens": "Auckland Botanic Gardens 102 Hill Road Manurewa Auckland",
+      "Maungawhau / Mount Eden": "Maungawhau Mount Eden 250 Mount Eden Road Auckland",
+      "Ponsonby Central": "Ponsonby Central 136 Ponsonby Road Auckland",
+      "Depot Eatery": "Depot Eatery 86 Federal Street Auckland",
+      "Cassia": "Cassia 58 Albert Street Auckland",
+      "Amano": "Amano 68 Tyler Street Auckland",
+      "Amano Bakery": "Amano Bakery 68 Tyler Street Auckland",
+      "Ebisu": "Ebisu 116 Quay Street Auckland",
+      "Bivacco": "Bivacco 115 Customs Street West Auckland",
+      "Soul Bar & Bistro": "Soul Bar & Bistro 18 Lower Hobson Street Auckland",
+      "Azabu Ponsonby": "Azabu Ponsonby 26 Ponsonby Road Auckland",
+      "Non Solo Pizza": "Non Solo Pizza 259 Parnell Road Auckland",
+      "Market Galley": "Market Galley 22 Jellicoe Street Auckland",
+      "The Wreck": "The Wreck 22 Jellicoe Street Auckland",
+      "Bang Bang": "Bang Bang 22 Jellicoe Street Auckland",
+      "Flush Urban Golf + Bar": "Flush Urban Golf + Bar 48 Customs Street East Auckland",
+      "Dr Rudi's Rooftop Brewing Co.": "Dr Rudi's Rooftop Brewing Co 204 Quay Street Auckland",
+      "Cable Bay": "Cable Bay 12 Nick Johnstone Drive Oneroa Waiheke Island",
+      "Mudbrick": "Mudbrick 126 Church Bay Road Oneroa Waiheke Island",
+      "Prego": "Prego 226 Ponsonby Road Auckland"
+    },
+    "summary": "Museums, volcanic viewpoints, gardens and Waiheke vineyards, with breakfasts, dinners and cocktail bars checked against their own websites.",
+    "highlights": [
+      "Auckland War Memorial Museum",
+      "Auckland Art Gallery Toi o Tāmaki",
+      "Maungawhau / Mount Eden",
+      "Cable Bay"
+    ],
+    "tip": "Auckland War Memorial Museum stays open until 8.30pm every Tuesday, so you can save it for an evening and keep the daytime for outdoor sights.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mostly open daily",
+        "copy": "Torpedo Bay Navy Museum closes on Good Friday, Christmas Day and Boxing Day. Auckland Art Gallery, the New Zealand Maritime Museum and Auckland Zoo close only on Christmas Day."
+      },
+      {
+        "label": "Tickets",
+        "value": "Book ahead to save",
+        "copy": "Auckland Zoo's pre-booked prices for Auckland residents apply to tickets booked before midnight the day before. At Auckland Art Gallery, general collection exhibitions are free but Picasso: Designed by Paul Smith needs a ticket."
+      },
+      {
+        "label": "Walk-ins",
+        "value": "Some tables can't be booked",
+        "copy": "Depot Eatery takes walk-ins only and applies a one-bill policy to groups of four or more. Cassia and Bivacco take bookings but also welcome walk-ins."
+      },
+      {
+        "label": "Rules",
+        "value": "Children and dogs",
+        "copy": "At Auckland Zoo, children 14 and under must be with an adult, and Auckland Art Gallery asks the same for under-14s. On Maungawhau / Mount Eden, dogs must be on a leash outside the two fenced off-leash areas."
+      }
+    ],
+    "dek": "Pair one museum or volcanic summit with a waterfront meal each day, and give Waiheke a full day of its own.",
+    "intro": [
+      "Start in the city centre at Auckland Art Gallery Toi o Tāmaki, on the corner of Wellesley Street East and Kitchener Street, open daily from 10am to 5pm except Christmas Day. Its general collection exhibitions are free, but Picasso: Designed by Paul Smith, running from 10 October 2026 to 1 February 2027, needs a ticket. In the Auckland Domain, Auckland War Memorial Museum stays open until 8.30pm every Tuesday. On the waterfront, the New Zealand Maritime Museum on Hobson's Wharf opens from 10am to 5pm with last entry at 4pm, and it's free for Auckland residents.",
+      "For a family day in Western Springs, Auckland Zoo at 99 Motions Road opens from 9.30am to 5.30pm with last entry at 4.30pm. Auckland residents pay less if they book before midnight the day before. MOTAT, at 805 Great North Road, opens daily from 10am to 4pm. You can only reach the top of Maungawhau / Mount Eden on foot, because its summit road is permanently closed to private vehicles, and summer hours run from 7am to 8.30pm. Further south, Auckland Botanic Gardens in Manurewa is free to enter, and Sculpture in the Gardens runs from 14 November 2026 to 28 February 2027.",
+      "Across the harbour, Torpedo Bay Navy Museum at 64 King Edward Parade in Devonport opens from 10am to 5pm every day except Good Friday, Christmas Day and Boxing Day. It's free for New Zealand residents, and international visitors aged 18 and over pay $15. On Waiheke Island, Cable Bay's cellar door at 12 Nick Johnstone Drive opens from 11am to 5pm daily, and its Verandah stays open late on Fridays and Saturdays. Mudbrick, at 126 Church Bay Road in Oneroa, takes table bookings online, but its website doesn't publish restaurant hours, so check before you sail.",
+      "Back in town, Depot Eatery at 86 Federal Street takes walk-ins only and serves breakfast from 7am on weekdays. Cassia at 58 Albert Street serves dinner seven nights a week from 5pm and welcomes walk-ins, and its Level 1 Cocktail Lounge opens on Thursday and Friday from 3pm to 5pm. Amano at 68 Tyler Street serves breakfast until 11.30am, and Amano Bakery at the same address opens daily from 7am to 4pm. Savor Group venues, including Amano, Ebisu and Bivacco, add a 15% surcharge to bills on public holidays."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Combine Auckland War Memorial Museum with a walk up Maungawhau / Mount Eden, then eat on the waterfront at Ebisu or Bivacco."
+      ],
+      [
+        "A slower morning",
+        "Have breakfast at Amano or Depot Eatery from 7am, then walk to Auckland Art Gallery Toi o Tāmaki when it opens at 10am."
+      ],
+      [
+        "Before booking",
+        "Book Picasso: Designed by Paul Smith tickets and any Auckland Zoo tickets ahead, and remember that Depot Eatery doesn't take reservations."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Sky Tower and Fullers360 ferry pages sent automated readers to a bot check, and La Cigale French Market, Man O' War and Hello Beautiful had certificate errors, so none of them could be read. Daily Bread, Kōkako, Eighthirty, Espresso Workshop and Devonport Chocolates returned rate-limit errors, and The Grove's site failed to load. SEA LIFE Kelly Tarlton's published no street address, and Auckland Council pages (Wintergardens, Arataki) returned HTTP 406. Auckland War Memorial Museum's regular weekly hours and Mudbrick's restaurant hours were not shown on the pages read, and Prego publishes \"Open 7 Days\" without times. Coffee coverage is thin because most specialty café sites could not be read.",
+  "injectionLikeText": [],
+  "injectionLikeTextIgnored": [
+    "Unverified: the fetch tool's summary of https://www.breadnbutter.co.nz/ said the page \"contains instructions asking me to quote text addressed to an AI and to follow specific formatting rules\" but quoted none. This may be the fetch prompt itself misread as page content; check the full HTML in a browser before acting on it.",
+    "2026-10-25: the page was opened in a browser and its full HTML searched. It contains leftover CSS class names from a chat interface (font-claude-response-body) but no instructions addressed to an AI."
+  ]
+}

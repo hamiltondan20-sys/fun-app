@@ -5397,4 +5397,111 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 27 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Auckland, New Zealand: source review of 2026-10-25 (docs/content-research/auckland-2026-10-25.md).
+  {
+    const cityKey = "Auckland, New Zealand";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Auckland War Memorial Museum","Auckland Art Gallery Toi o Tāmaki","New Zealand Maritime Museum","Maungawhau / Mount Eden"],
+      bestFirstTimers: ["Auckland War Memorial Museum","Maungawhau / Mount Eden","New Zealand Maritime Museum","Ponsonby Central"],
+      bestRestaurants: ["Cassia","Depot Eatery","Ebisu","Amano"],
+      bestBudget: ["Auckland Art Gallery Toi o Tāmaki","Auckland Botanic Gardens","Maungawhau / Mount Eden","Ponsonby Central"],
+      bestLuxury: ["Mudbrick","Cable Bay","Ebisu","Azabu Ponsonby"],
+      bestCouples: ["Cable Bay","Mudbrick","Dr Rudi's Rooftop Brewing Co.","Azabu Ponsonby"],
+      bestKids: ["Auckland Zoo","MOTAT","Torpedo Bay Navy Museum","Auckland Botanic Gardens"],
+      bestSolo: ["Auckland Art Gallery Toi o Tāmaki","Auckland War Memorial Museum","Ponsonby Central","Torpedo Bay Navy Museum"],
+      bestUnique: ["Flush Urban Golf + Bar","Torpedo Bay Navy Museum","MOTAT","The Wreck"],
+      bestBreakfast: ["Amano","Depot Eatery","Amano Bakery","Ponsonby Central"],
+      bestLunch: ["Market Galley","Ebisu","Bang Bang","Prego"],
+      bestDinner: ["Cassia","Azabu Ponsonby","Non Solo Pizza","Soul Bar & Bistro"],
+      bestCocktails: ["Bivacco","Cassia","Dr Rudi's Rooftop Brewing Co.","Soul Bar & Bistro"],
+      bestBakeries: ["Amano Bakery","Ponsonby Central"],
+      bestCoffee: ["Ponsonby Central"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Auckland War Memorial Museum": "Auckland War Memorial Museum Auckland Domain Parnell Auckland",
+      "Auckland Art Gallery Toi o Tāmaki": "Auckland Art Gallery Toi o Tāmaki 1 Kitchener Street Auckland",
+      "New Zealand Maritime Museum": "New Zealand Maritime Museum Quay Street Hobson Street Auckland",
+      "Maungawhau / Mount Eden": "Maungawhau Mount Eden 250 Mount Eden Road Auckland",
+      "Ponsonby Central": "Ponsonby Central 136 Ponsonby Road Auckland",
+      "Cassia": "Cassia 58 Albert Street Auckland",
+      "Depot Eatery": "Depot Eatery 86 Federal Street Auckland",
+      "Ebisu": "Ebisu 116 Quay Street Auckland",
+      "Amano": "Amano 68 Tyler Street Auckland",
+      "Auckland Botanic Gardens": "Auckland Botanic Gardens 102 Hill Road Manurewa Auckland",
+      "Mudbrick": "Mudbrick 126 Church Bay Road Oneroa Waiheke Island",
+      "Cable Bay": "Cable Bay 12 Nick Johnstone Drive Oneroa Waiheke Island",
+      "Azabu Ponsonby": "Azabu Ponsonby 26 Ponsonby Road Auckland",
+      "Dr Rudi's Rooftop Brewing Co.": "Dr Rudi's Rooftop Brewing Co 204 Quay Street Auckland",
+      "Auckland Zoo": "Auckland Zoo 99 Motions Road Auckland",
+      "MOTAT": "MOTAT 805 Great North Road Auckland",
+      "Torpedo Bay Navy Museum": "Torpedo Bay Navy Museum 64 King Edward Parade Devonport Auckland",
+      "Flush Urban Golf + Bar": "Flush Urban Golf + Bar 48 Customs Street East Auckland",
+      "The Wreck": "The Wreck 22 Jellicoe Street Auckland",
+      "Amano Bakery": "Amano Bakery 68 Tyler Street Auckland",
+      "Market Galley": "Market Galley 22 Jellicoe Street Auckland",
+      "Bang Bang": "Bang Bang 22 Jellicoe Street Auckland",
+      "Prego": "Prego 226 Ponsonby Road Auckland",
+      "Non Solo Pizza": "Non Solo Pizza 259 Parnell Road Auckland",
+      "Soul Bar & Bistro": "Soul Bar & Bistro 18 Lower Hobson Street Auckland",
+      "Bivacco": "Bivacco 115 Customs Street West Auckland"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Auckland" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Museums, volcanic viewpoints, gardens and Waiheke vineyards, with breakfasts, dinners and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Auckland War Memorial Museum","Auckland Art Gallery Toi o Tāmaki","Maungawhau / Mount Eden","Cable Bay"];
+    cityGuide.tip = "Auckland War Memorial Museum stays open until 8.30pm every Tuesday, so you can save it for an evening and keep the daytime for outdoor sights.";
+    data.destinationFacts[cityKey] = "Auckland War Memorial Museum stays open until 8.30pm every Tuesday, so you can save it for an evening and keep the daytime for outdoor sights.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Museums, volcanic viewpoints, gardens and Waiheke vineyards, with breakfasts, dinners and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mostly open daily",
+        "copy": "Torpedo Bay Navy Museum closes on Good Friday, Christmas Day and Boxing Day. Auckland Art Gallery, the New Zealand Maritime Museum and Auckland Zoo close only on Christmas Day."
+      },
+      {
+        "label": "Tickets",
+        "value": "Book ahead to save",
+        "copy": "Auckland Zoo's pre-booked prices for Auckland residents apply to tickets booked before midnight the day before. At Auckland Art Gallery, general collection exhibitions are free but Picasso: Designed by Paul Smith needs a ticket."
+      },
+      {
+        "label": "Walk-ins",
+        "value": "Some tables can't be booked",
+        "copy": "Depot Eatery takes walk-ins only and applies a one-bill policy to groups of four or more. Cassia and Bivacco take bookings but also welcome walk-ins."
+      },
+      {
+        "label": "Rules",
+        "value": "Children and dogs",
+        "copy": "At Auckland Zoo, children 14 and under must be with an adult, and Auckland Art Gallery asks the same for under-14s. On Maungawhau / Mount Eden, dogs must be on a leash outside the two fenced off-leash areas."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Pair one museum or volcanic summit with a waterfront meal each day, and give Waiheke a full day of its own.",
+      intro: [
+        "Start in the city centre at Auckland Art Gallery Toi o Tāmaki, on the corner of Wellesley Street East and Kitchener Street, open daily from 10am to 5pm except Christmas Day. Its general collection exhibitions are free, but Picasso: Designed by Paul Smith, running from 10 October 2026 to 1 February 2027, needs a ticket. In the Auckland Domain, Auckland War Memorial Museum stays open until 8.30pm every Tuesday. On the waterfront, the New Zealand Maritime Museum on Hobson's Wharf opens from 10am to 5pm with last entry at 4pm, and it's free for Auckland residents.",
+        "For a family day in Western Springs, Auckland Zoo at 99 Motions Road opens from 9.30am to 5.30pm with last entry at 4.30pm. Auckland residents pay less if they book before midnight the day before. MOTAT, at 805 Great North Road, opens daily from 10am to 4pm. You can only reach the top of Maungawhau / Mount Eden on foot, because its summit road is permanently closed to private vehicles, and summer hours run from 7am to 8.30pm. Further south, Auckland Botanic Gardens in Manurewa is free to enter, and Sculpture in the Gardens runs from 14 November 2026 to 28 February 2027.",
+        "Across the harbour, Torpedo Bay Navy Museum at 64 King Edward Parade in Devonport opens from 10am to 5pm every day except Good Friday, Christmas Day and Boxing Day. It's free for New Zealand residents, and international visitors aged 18 and over pay $15. On Waiheke Island, Cable Bay's cellar door at 12 Nick Johnstone Drive opens from 11am to 5pm daily, and its Verandah stays open late on Fridays and Saturdays. Mudbrick, at 126 Church Bay Road in Oneroa, takes table bookings online, but its website doesn't publish restaurant hours, so check before you sail.",
+        "Back in town, Depot Eatery at 86 Federal Street takes walk-ins only and serves breakfast from 7am on weekdays. Cassia at 58 Albert Street serves dinner seven nights a week from 5pm and welcomes walk-ins, and its Level 1 Cocktail Lounge opens on Thursday and Friday from 3pm to 5pm. Amano at 68 Tyler Street serves breakfast until 11.30am, and Amano Bakery at the same address opens daily from 7am to 4pm. Savor Group venues, including Amano, Ebisu and Bivacco, add a 15% surcharge to bills on public holidays."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Combine Auckland War Memorial Museum with a walk up Maungawhau / Mount Eden, then eat on the waterfront at Ebisu or Bivacco."
+        ],
+        [
+          "A slower morning",
+          "Have breakfast at Amano or Depot Eatery from 7am, then walk to Auckland Art Gallery Toi o Tāmaki when it opens at 10am."
+        ],
+        [
+          "Before booking",
+          "Book Picasso: Designed by Paul Smith tickets and any Auckland Zoo tickets ahead, and remember that Depot Eatery doesn't take reservations."
+        ]
+      ],
+      trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 53.
-- Classifier-passed (published, not fully documented in that format): 139.
+- Source-verified (complete dated evidence format): 54.
+- Classifier-passed (published, not fully documented in that format): 138.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -61,7 +61,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Atacama Desert, Chile | atacama-desert | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Athens, Greece | athens | source-verified | source-checked | 25 | 50 | 15 | 15 | None |
 | Atlanta, United States | atlanta | held-back | ready-for-content-draft | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
-| Auckland, New Zealand | auckland | classifier-passed | not-reviewed | 0 | 5 | 15 | 3 | None |
+| Auckland, New Zealand | auckland | source-verified | source-checked | 26 | 52 | 15 | 15 | None |
 | Austin, United States | austin | classifier-passed | prior-source-review | 0 | 41 | 15 | 15 | None |
 | Aveiro, Portugal | aveiro | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Avignon, France | avignon | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |

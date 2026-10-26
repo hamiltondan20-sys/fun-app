@@ -5,6 +5,703 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Auckland, New Zealand": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-25",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Sky Tower and Fullers360 ferry pages sent automated readers to a bot check, and La Cigale French Market, Man O' War and Hello Beautiful had certificate errors, so none of them could be read. Daily Bread, Kōkako, Eighthirty, Espresso Workshop and Devonport Chocolates returned rate-limit errors, and The Grove's site failed to load. SEA LIFE Kelly Tarlton's published no street address, and Auckland Council pages (Wintergardens, Arataki) returned HTTP 406. Auckland War Memorial Museum's regular weekly hours and Mudbrick's restaurant hours were not shown on the pages read, and Prego publishes \"Open 7 Days\" without times. Coffee coverage is thin because most specialty café sites could not be read.",
+    "sourceUrls": [
+      "docs/content-research/auckland-2026-10-25.md",
+      "docs/content-research/auckland-2026-10-25.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Sky Tower",
+        "url": "https://www.skycityauckland.co.nz/sky-tower/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site redirected to a Radware bot check (validate.perfdrive.com); not bypassed. Not evidence of closure."
+      },
+      {
+        "name": "Fullers360 ferries (Devonport ferry / Waiheke)",
+        "url": "https://www.fullers.co.nz/",
+        "checkedOn": "2026-10-25",
+        "reason": "Home page read but gave no terminal address; Devonport page redirected to a Radware bot check; not bypassed."
+      },
+      {
+        "name": "SEA LIFE Kelly Tarlton's Aquarium",
+        "url": "https://www.visitsealife.com/auckland/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official page gives hours and prices but no street address; directions page returned 404."
+      },
+      {
+        "name": "The Grove",
+        "url": "https://www.thegroverestaurant.co.nz/",
+        "checkedOn": "2026-10-25",
+        "reason": "Fetch failed twice with no output."
+      },
+      {
+        "name": "La Cigale French Market",
+        "url": "https://lacigale.co.nz/",
+        "checkedOn": "2026-10-25",
+        "reason": "Certificate error (cert issued for vps2.primaldrive.net); not bypassed."
+      },
+      {
+        "name": "Man O' War",
+        "url": "https://www.manowarvineyards.co.nz/",
+        "checkedOn": "2026-10-25",
+        "reason": "Certificate error (cert for dnspackage.com); not bypassed."
+      },
+      {
+        "name": "Hello Beautiful",
+        "url": "https://www.hellobeautiful.co.nz/",
+        "checkedOn": "2026-10-25",
+        "reason": "Certificate error (cert for *.ds.network); not bypassed."
+      },
+      {
+        "name": "Ahi",
+        "url": "https://www.ahirestaurant.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Guessed domain did not resolve (DNS not found); official site not located."
+      },
+      {
+        "name": "Ortolana",
+        "url": "https://savor.co.nz/ortolana",
+        "checkedOn": "2026-10-25",
+        "reason": "Domain redirected to savor.co.nz/ortolana, which returned 404; only landlord/directory listings found."
+      },
+      {
+        "name": "Daily Bread",
+        "url": "https://www.dailybread.co.nz/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests on repeated attempts."
+      },
+      {
+        "name": "Kōkako",
+        "url": "https://www.kokako.co.nz/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests."
+      },
+      {
+        "name": "Eighthirty",
+        "url": "https://www.eighthirty.co.nz/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests."
+      },
+      {
+        "name": "Espresso Workshop",
+        "url": "https://www.espressoworkshop.co.nz/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests."
+      },
+      {
+        "name": "Devonport Chocolates",
+        "url": "https://www.devonportchocolates.co.nz/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests."
+      },
+      {
+        "name": "Atomic Coffee Roasters (Rocket Store)",
+        "url": "https://www.atomiccoffee.co.nz/",
+        "checkedOn": "2026-10-25",
+        "reason": "SSL handshake failure; not bypassed."
+      },
+      {
+        "name": "Allpress Auckland Roastery",
+        "url": "https://allpress.com/cafes",
+        "checkedOn": "2026-10-25",
+        "reason": "Café finder page content did not include the Auckland Roastery entry; address and hours unconfirmed."
+      },
+      {
+        "name": "Coffee Supreme",
+        "url": "https://coffeesupreme.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Home page lists no Auckland café address or hours."
+      },
+      {
+        "name": "Caretaker",
+        "url": "https://www.caretaker.net.nz/",
+        "checkedOn": "2026-10-25",
+        "reason": "Guessed official domain returned 404; only precinct/directory listings found (not acceptable evidence)."
+      },
+      {
+        "name": "Deadshot",
+        "url": "https://www.deadshot.co.nz/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official page gives no written address or hours (only an email and Instagram/map links)."
+      },
+      {
+        "name": "Bread & Butter (Grey Lynn)",
+        "url": "https://www.breadnbutter.co.nz/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site is a wholesale/shop page with no café address or hours."
+      },
+      {
+        "name": "Commercial Bay",
+        "url": "https://www.commercialbay.co.nz/",
+        "checkedOn": "2026-10-25",
+        "reason": "Address given but no hours or current operating evidence on page read."
+      },
+      {
+        "name": "Parnell Farmers Market",
+        "url": "https://www.parnellfarmersmarket.co.nz/",
+        "checkedOn": "2026-10-25",
+        "reason": "Guessed domain did not resolve; official site not located."
+      },
+      {
+        "name": "Devonport Stone Oven Bakery",
+        "url": "https://www.stoneovenbakery.co.nz/",
+        "checkedOn": "2026-10-25",
+        "reason": "Guessed domain did not resolve; only tourism listing found."
+      },
+      {
+        "name": "Maungauika / North Head",
+        "url": "https://www.maunga.nz/maunga/maungauika",
+        "checkedOn": "2026-10-25",
+        "reason": "Official page too large to fetch (over 10 MB)."
+      },
+      {
+        "name": "Auckland Domain Wintergardens / Arataki Visitor Centre",
+        "url": "https://www.aucklandcouncil.govt.nz/",
+        "checkedOn": "2026-10-25",
+        "reason": "Auckland Council site returned HTTP 406; not read."
+      },
+      {
+        "name": "Waiheke Island",
+        "checkedOn": "2026-10-25",
+        "reason": "An island/area, not a single operator; covered through Cable Bay and Mudbrick."
+      },
+      {
+        "name": "Auckland waterfront",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Waiheke wine day",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "West Coast beach outing",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Devonport ferry",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (operator site blocked by bot check; see Fullers360)"
+      },
+      {
+        "name": "a waterfront dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Auckland market or cafe",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local dinner in Viaduct",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Ponsonby",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Devonport",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Viaduct",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Viaduct walk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Ponsonby",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Devonport",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Devonport",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Waiheke Island",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Viaduct",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Waiheke wine day",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Ponsonby",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Sky Tower",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Viaduct evening",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Ponsonby",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Devonport",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Viaduct",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Waiheke Island",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Ponsonby",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Devonport",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Viaduct",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Waiheke Island",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Viaduct cafe or market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided West Coast beach outing",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Devonport",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Devonport",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Viaduct",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Viaduct",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Ponsonby bakery or market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Waiheke Island",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Devonport",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Viaduct",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Sky Tower",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Devonport",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Viaduct",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Ponsonby",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Devonport",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Viaduct",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Viaduct",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Ponsonby",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Auckland waterfront",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Viaduct",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Ponsonby morning market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Waiheke Island",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Devonport",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Viaduct",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Ponsonby",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Devonport",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Auckland War Memorial Museum": {
+        "url": "https://www.aucklandmuseum.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Visit page \"Last updated: 23 Oct 2026\"; Twilight Tuesday: \"open late every Tuesday evening until 8.30pm\"; current displays include March of the Triceratops and Titanic: The Human Story at the Smith & Caughey's building on Queen Street."
+      },
+      "Auckland Art Gallery Toi o Tāmaki": {
+        "url": "https://www.aucklandartgallery.com/visit",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Exhibitions page lists \"Picasso: Designed by Paul Smith\" 10 Oct 2026 – 1 Feb 2027 (tickets required) and free shows such as \"Giacometti without End\" to 16 Jan 2028."
+      },
+      "New Zealand Maritime Museum": {
+        "url": "https://www.maritimemuseum.co.nz/visit",
+        "sourceType": "official public operator (Tātaki Auckland Unlimited)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Home page shows \"Our Ocean of Islands\" as \"Exhibition on now\" and heritage sailings (Ted Ashby, SS Puke); visitor adult ticket $24, free for Auckland residents with proof of address."
+      },
+      "Auckland Zoo": {
+        "url": "https://www.aucklandzoo.co.nz/tickets",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Ticket page sells pre-booked and flexible tickets; non-Aucklander adult $39; \"Pre-booked prices apply to tickets booked before midnight the day prior\" (Auckland resident tickets)."
+      },
+      "MOTAT": {
+        "url": "https://www.motat.nz/visit",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Visit page: \"Open daily, 10am - 4pm\", tickets online or at the entrance, Family Pass $45; exhibits include the Aviation Hall and Te Kōtiu immersive experience."
+      },
+      "Torpedo Bay Navy Museum": {
+        "url": "https://www.navymuseum.co.nz/",
+        "sourceType": "operator's own site (Royal New Zealand Navy museum)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Hours notice and admission (free for NZ residents; international visitors 18+ $15); workshop listings for July and August dates; Torpedo Bay Café table bookings."
+      },
+      "Auckland Botanic Gardens": {
+        "url": "https://www.aucklandbotanicgardens.co.nz/",
+        "sourceType": "official public operator (Auckland Council)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Free entry Open every day\"; event \"Sculpture in the Gardens\" Nov 14 2026 – Feb 28 2027."
+      },
+      "Maungawhau / Mount Eden": {
+        "url": "https://www.maunga.nz/maunga/maungawhau",
+        "sourceType": "official public operator (Tūpuna Maunga Authority)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "2026 Batger Quarry stabilisation notice; \"The Maunga, including the tihi (summit), will remain open throughout the project.\" Summit road \"permanently closed to private motor vehicles\"."
+      },
+      "Ponsonby Central": {
+        "url": "https://www.ponsonbycentral.co.nz/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Open 7am - 12.00am, 7 days a week\"; over 20 eateries incl. Coffee & Cafes and Sweet Treats (Eat & Drink page lists Foxtrot Parlour, Grown Up Donuts, Bedford and others)."
+      },
+      "Depot Eatery": {
+        "url": "https://depoteatery.co.nz/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Drinks menu file dated \"august-2026\"; notice that Depot \"will only be doing walk ins\"; breakfast menu 7–11am."
+      },
+      "Cassia": {
+        "url": "https://www.cassiarestaurant.co.nz/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online booking plus \"WALK-INS ALWAYS WELCOME\"; current Sunday Biryani menu ($60 for two) and Cocktail Lounge prices."
+      },
+      "Amano": {
+        "url": "https://savor.co.nz/amano",
+        "sourceType": "operator's own site (Savor Group)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online booking, current menu with \"Breakfast (served untill 11:30am)\" and lunch & dinner; set menus for groups of 16+."
+      },
+      "Amano Bakery": {
+        "url": "https://savor.co.nz/amano-bakery",
+        "sourceType": "operator's own site (Savor Group)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Sells sourdough, ciabatta, pastries and lunchtime pizza by the slice; online ordering app."
+      },
+      "Ebisu": {
+        "url": "https://savor.co.nz/ebisu",
+        "sourceType": "operator's own site (Savor Group)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Booking button and Sharing Style Menu Mon–Fri 12–1:30pm; Father's Day (Sunday 6 September) hours notice."
+      },
+      "Bivacco": {
+        "url": "https://savor.co.nz/bivacco",
+        "sourceType": "operator's own site (Savor Group)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Bookings and walk-ins welcome\"; current cocktail list (martinis, margaritas, spritzes, negronis)."
+      },
+      "Soul Bar & Bistro": {
+        "url": "https://www.soulbar.co.nz/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online bookings; à la carte \"finishes at 10pm, bar snacks menu available until close\"; hiring notice."
+      },
+      "Azabu Ponsonby": {
+        "url": "https://savor.co.nz/azabu-ponsonby",
+        "sourceType": "operator's own site (Savor Group)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online booking and published weekly hours."
+      },
+      "Non Solo Pizza": {
+        "url": "https://savor.co.nz/non-solo-pizza",
+        "sourceType": "operator's own site (Savor Group)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online booking; set menu option for groups of 14–20."
+      },
+      "Market Galley": {
+        "url": "https://savor.co.nz/market-galley",
+        "sourceType": "operator's own site (Savor Group)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published hours and description as \"a classic fish and chippery\"."
+      },
+      "The Wreck": {
+        "url": "https://savor.co.nz/the-wreck",
+        "sourceType": "operator's own site (Savor Group)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published hours; serves tap and bottled beer, cocktails, hard sodas and NZ wines."
+      },
+      "Bang Bang": {
+        "url": "https://savor.co.nz/bang-bang-kitchen",
+        "sourceType": "operator's own site (Savor Group)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online booking and published hours."
+      },
+      "Flush Urban Golf + Bar": {
+        "url": "https://savor.co.nz/flush-golf",
+        "sourceType": "operator's own site (Savor Group)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Book A Bay\" booking link; \"Walk-ins are always welcome.\""
+      },
+      "Dr Rudi's Rooftop Brewing Co.": {
+        "url": "https://www.drrudis.co.nz/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Labour Day long weekend notice (23–26 October) and \"The Dr's 10th birthday, Sunday 15 November\"; online table booking."
+      },
+      "Cable Bay": {
+        "url": "https://www.cablebay.nz/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Reservations link; liquor licence valid to 20/11/2027; published cellar door and Verandah hours."
+      },
+      "Mudbrick": {
+        "url": "https://www.mudbrick.co.nz/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Book a Table\" online booking; MICHELIN Star 2026 logo on site."
+      },
+      "Prego": {
+        "url": "https://www.prego.co.nz/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Open 7 Days\" with a reservations link and an all-day menu; no 2026-dated notice."
+      }
+    }
+  },
   "Milan, Italy": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-25",
