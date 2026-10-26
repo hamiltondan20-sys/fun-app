@@ -5,6 +5,746 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Milan, Italy": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-25",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several major sites could not be read by automated fetch (HTTP 403 for Castello Sforzesco, Museo del Novecento, Fondazione Prada, Palazzo Reale, Triennale, GAM and the City of Milan's Parco Sempione page; certificate or TLS errors for Bar Basso, Pizzeria Spontini, Princi and Cova; repeated HTTP 429 for Pasticceria Cucchi, Iginio Massari and Cafezal; timeout for Pasticceria Marchesi), so they are left out rather than judged closed. The Duomo's ticket site sits behind a queue system that was not bypassed, so cathedral and terrace opening hours and dress rules were not confirmed; the main site's weekday hours may refer to the office. Weekly hours were not published on the pages read for Pinacoteca Ambrosiana, Villa Necchi Campiglio, Museo Diocesano, MUBA, Peck and Langosteria (Via Savona), and Museo Poldi Pezzoli showed only today's hours. Camparino, Dry Milano, Moebius, Luini, Antica Trattoria della Pesa, Masuelli and Biffi showed current hours or booking but no 2026-dated content. Two fetch summaries (museoscienza.org and trattoriamilanese.it) reported text addressed to an AI that could not be quoted and appeared to echo the review prompt; neither place is used.",
+    "sourceUrls": [
+      "docs/content-research/milan-2026-10-25.md",
+      "docs/content-research/milan-2026-10-25.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Brera",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (district; Pinacoteca di Brera checked instead)"
+      },
+      {
+        "name": "Brera gallery morning",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Navigli canal evening",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Lake Como day trip",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (outside Milan)"
+      },
+      {
+        "name": "Aperitivo in Navigli",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A Milanese trattoria",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A polished Brera dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Duomo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Navigli",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Brera",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Brera walk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Duomo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Navigli",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Navigli",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Duomo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Brera",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Brera gallery morning",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Duomo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Brera",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Brera evening",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Duomo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Navigli",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Brera",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Duomo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Duomo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Navigli",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Brera",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Duomo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Brera cafe or market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Navigli canal evening",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Navigli",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Navigli",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Brera",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Brera",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Duomo bakery or market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Duomo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Navigli",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Brera",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Brera",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Navigli",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Brera",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Duomo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Navigli",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Brera",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Brera",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Duomo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near The Last Supper",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Brera",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Duomo morning market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Duomo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Navigli",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Brera",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Duomo",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Navigli",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Castello Sforzesco",
+        "url": "https://www.milanocastello.it/en",
+        "checkedOn": "2026-10-25",
+        "reason": "official site returned HTTP 403 Forbidden; not bypassed"
+      },
+      {
+        "name": "Museo del Novecento",
+        "url": "https://www.museodelnovecento.org/en/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site returned HTTP 403 Forbidden; not bypassed"
+      },
+      {
+        "name": "Fondazione Prada (incl. Bar Luce)",
+        "url": "https://www.fondazioneprada.org/visit/milano/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site returned HTTP 403 Forbidden; not bypassed"
+      },
+      {
+        "name": "Palazzo Reale",
+        "url": "https://www.palazzorealemilano.it/en",
+        "checkedOn": "2026-10-25",
+        "reason": "official site returned HTTP 403 Forbidden; not bypassed"
+      },
+      {
+        "name": "Triennale Milano",
+        "url": "https://triennale.org/en",
+        "checkedOn": "2026-10-25",
+        "reason": "official site returned HTTP 403 Forbidden; not bypassed"
+      },
+      {
+        "name": "GAM Galleria d'Arte Moderna",
+        "url": "https://www.gam-milano.com/en/home/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site returned HTTP 403 Forbidden; not bypassed"
+      },
+      {
+        "name": "Parco Sempione",
+        "url": "https://www.comune.milano.it/aree-tematiche/verde/parchi-e-giardini/parco-sempione",
+        "checkedOn": "2026-10-25",
+        "reason": "City of Milan page returned HTTP 403 Forbidden; not bypassed"
+      },
+      {
+        "name": "Museo Nazionale della Scienza e della Tecnologia",
+        "url": "https://www.museoscienza.org/en",
+        "checkedOn": "2026-10-25",
+        "reason": "official pages returned nothing readable beyond the museum name"
+      },
+      {
+        "name": "Museo Teatrale alla Scala",
+        "url": "https://www.museoscala.org/en/",
+        "checkedOn": "2026-10-25",
+        "reason": "official home page gave no address or hours; timetable page returned 404"
+      },
+      {
+        "name": "Bar Basso",
+        "url": "https://www.barbasso.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "certificate error (hostname does not match certificate); not bypassed"
+      },
+      {
+        "name": "Pizzeria Spontini",
+        "url": "https://www.pizzeriaspontini.it/",
+        "checkedOn": "2026-10-25",
+        "reason": "certificate error (unable to verify the first certificate); not bypassed"
+      },
+      {
+        "name": "Princi",
+        "url": "https://www.princi.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "TLS error (unrecognized name); not bypassed"
+      },
+      {
+        "name": "Caffè Cova (Montenapoleone)",
+        "url": "https://www.cova.it/",
+        "checkedOn": "2026-10-25",
+        "reason": "TLS error (wrong version number); not bypassed"
+      },
+      {
+        "name": "Pasticceria Marchesi",
+        "url": "https://www.pasticceriamarchesi.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "fetch timed out twice; nothing readable"
+      },
+      {
+        "name": "Pasticceria Cucchi",
+        "url": "https://www.pasticceriacucchi.it/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests on repeated attempts"
+      },
+      {
+        "name": "Iginio Massari (Milan)",
+        "url": "https://www.iginiomassari.it/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests on repeated attempts"
+      },
+      {
+        "name": "Cafezal",
+        "url": "https://www.cafezal.it/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests on repeated attempts"
+      },
+      {
+        "name": "Nottingham Forest (cocktail bar)",
+        "url": "https://www.nottingham-forest.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site is a digital menu only; no address or hours published"
+      },
+      {
+        "name": "Ceresio 7",
+        "url": "https://www.ceresio7.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "official home page gave no address or opening hours"
+      },
+      {
+        "name": "Da Giacomo (Milan)",
+        "url": "https://www.giacomomilano.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "official home page gave no Milan address or hours"
+      },
+      {
+        "name": "Panificio Davide Longoni",
+        "url": "https://www.davidelongoni.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "addresses listed but no hours and no current-operation evidence (content dated 2024)"
+      },
+      {
+        "name": "Pasticceria Gattullo",
+        "url": "https://www.gattullo.it/",
+        "checkedOn": "2026-10-25",
+        "reason": "address only; no hours or current-operation evidence (latest item Easter 2025)"
+      },
+      {
+        "name": "Pandenus (Via Mercato)",
+        "url": "https://www.pandenus.it/",
+        "checkedOn": "2026-10-25",
+        "reason": "official page gave no street address or hours; latest dates 2021-2024"
+      },
+      {
+        "name": "Cioccolatitaliani (San Raffaele)",
+        "url": "https://www.cioccolatitaliani.it/store-locator/",
+        "checkedOn": "2026-10-25",
+        "reason": "store locator returned no stores; no branch address published"
+      },
+      {
+        "name": "BAM Biblioteca degli Alberi Milano",
+        "url": "https://bam.milano.it/en/",
+        "checkedOn": "2026-10-25",
+        "reason": "official page gave no park address or opening hours (only the managing foundation's office)"
+      },
+      {
+        "name": "Orsonero Coffee",
+        "url": "https://www.orsonerocoffee.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "domain did not resolve (DNS failure)"
+      },
+      {
+        "name": "Sant Ambroeus",
+        "url": "https://www.santambroeusmilano.it/",
+        "checkedOn": "2026-10-25",
+        "reason": "domain did not resolve (DNS failure)"
+      },
+      {
+        "name": "Al Fresco",
+        "url": "https://www.alfresco.cool/",
+        "checkedOn": "2026-10-25",
+        "reason": "domain did not resolve (DNS failure)"
+      },
+      {
+        "name": "Panificio Pattini",
+        "url": "https://www.panificiopattini.it/",
+        "checkedOn": "2026-10-25",
+        "reason": "domain did not resolve (DNS failure)"
+      },
+      {
+        "name": "Pasticceria Taveggia",
+        "url": "https://www.taveggia.it/",
+        "checkedOn": "2026-10-25",
+        "reason": "domain serves unrelated content, not the pastry shop"
+      },
+      {
+        "name": "Acquario Civico di Milano",
+        "url": "https://www.acquariocivicomilano.eu/",
+        "checkedOn": "2026-10-25",
+        "reason": "domain tried is a parked page; official page not found"
+      },
+      {
+        "name": "Terrazza Aperol",
+        "url": "https://www.terrazzaaperol.it/",
+        "checkedOn": "2026-10-25",
+        "reason": "site redirects to a non-https brand site; no venue page read"
+      }
+    ],
+    "placeSources": {
+      "Duomo di Milano": {
+        "url": "https://www.duomomilano.it/en/",
+        "sourceType": "official operator (Veneranda Fabbrica del Duomo di Milano)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Dated October 2026 news on the cathedral's own site, including \"Scintille di Musica returns to Milan Cathedral with the Cameristi della Scala\" (22 October) and an organ music event on Friday 16 October. Tickets are sold via ticket.duomomilano.it."
+      },
+      "Pinacoteca di Brera": {
+        "url": "https://pinacotecabrera.org/en/visit/orari/",
+        "sourceType": "official public operator (Pinacoteca di Brera, Italian Ministry of Culture)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibition \"100 YEARS FOR BRERA. Gifts and Acquisitions from the Friends\", \"From October 6, 2026, to February 14, 2027\"; reservations required through Brera Booking; \"Free admission with reservation every first Sunday of the month.\""
+      },
+      "The Last Supper (Cenacolo Vinciano)": {
+        "url": "https://cenacolovinciano.org/en/",
+        "sourceType": "official public operator (Museo del Cenacolo Vinciano)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "News dated 22 June 2026: tickets for September to December 2026 on sale from 23 June; banner says the museum is open Sunday 25 October 2026. \"RESERVATIONS ARE COMPULSORY FOR ALL TYPES OF TICKETS\"; visits last 15 minutes, maximum 40 people."
+      },
+      "Pirelli HangarBicocca": {
+        "url": "https://pirellihangarbicocca.org/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibitions: Aki Sasamoto \"XYZ\", 17 September 2026 to 17 January 2027; Luciano Fabro, \"Abitare lo spazio. Inhabiting Space\", 8 October 2026 to 21 February 2027. Admission free: \"Book your free admission.\""
+      },
+      "Museo Poldi Pezzoli": {
+        "url": "https://www.museopoldipezzoli.it/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Live banner: \"Oggi il museo è aperto dalle 10.00 alle 18.00\"; site lists European Heritage Days 2026 opening (26-27 September 2026) including the restored Golden Room."
+      },
+      "Pinacoteca Ambrosiana": {
+        "url": "https://www.ambrosiana.it/en/",
+        "sourceType": "operator's own site (Veneranda Biblioteca Ambrosiana)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibition \"The 'Sign' of Saint Francis: Images of a Life\", 1 October 2026 to 12 January 2027; post titled \"New admission fares from October 1\"."
+      },
+      "Villa Necchi Campiglio": {
+        "url": "https://fondoambiente.it/luoghi/villa-necchi-campiglio",
+        "sourceType": "official operator (FAI - Fondo per l'Ambiente Italiano)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Bene aperto al pubblico\"; news dated 14 October 2026 says the Piero Portaluppi drawing exhibition is extended to 29 November; ticket purchase link (\"ACQUISTA IL BIGLIETTO\")."
+      },
+      "Museo Bagatti Valsecchi": {
+        "url": "https://www.museobagattivalsecchi.org/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Events listed for 31 October, 8 November and 11 November 2026; tickets full EUR 14, reduced EUR 10, \"Online booking is recommended\"."
+      },
+      "Museo Diocesano Carlo Maria Martini": {
+        "url": "https://www.chiostrisanteustorgio.it/en/",
+        "sourceType": "operator's own site (Chiostri di Sant'Eustorgio)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Un Capolavoro per Milano 2026\": Artemisia Gentileschi's \"Annunciazione\", 27 October 2026 to 31 January 2027; permanent collection and Cappella Portinari."
+      },
+      "MUBA Museo dei Bambini": {
+        "url": "https://www.muba.it/en",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Promotes the exhibition-game CONNESSIONI, a \"2026/2027 programme\" for schools, and ticket sales: \"Buy tickets here for the activities you'd like to take part in!\""
+      },
+      "Mercato Centrale Milano": {
+        "url": "https://www.mercatocentrale.it/milano/info/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Two floors and 32 shops; current events listed including \"L'Aperitivo di Mercato Centrale Milano\" and a Korean festival."
+      },
+      "Eataly Milano Smeraldo": {
+        "url": "https://www.eataly.it/negozi/milano-smeraldo-store.html",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Store page lists counters including Food & Pizza Theatre, Bar Lavazza and Terra Gelato, current promotions, and \"Copyright © 2012 - 2026\"."
+      },
+      "Peck (Via Spadari)": {
+        "url": "https://www.peck.it/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Peck Christmas 2026\" catalogue and Christmas gift-box ordering; links to Bistrot Piccolo Peck at Via Spadari."
+      },
+      "Camparino in Galleria": {
+        "url": "https://www.camparino.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Booking via \"Book Now\" and a reservations page; serves breakfast, lunch, aperitivo and dinner. Sala Gaspare Campari is reservation only. No 2026-dated content seen."
+      },
+      "Ally's Bar (Langosteria Montenapoleone)": {
+        "url": "https://www.langosteria.com/",
+        "sourceType": "operator's own site (Langosteria)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Bookable via SevenRooms link on the operator's site; group promotes New Year's Eve dinners in Milan."
+      },
+      "Dry Milano (Solferino)": {
+        "url": "https://www.drymilano.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online reservation form (\"BOOK NOW\") and published weekly hours; no 2026-dated content (footer \"© Dry Milano 2023\")."
+      },
+      "Moebius": {
+        "url": "https://www.moebiusmilano.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online booking (\"Prenota\"), phone and email reservations; Tapa Bistrot and Sperimentale restaurant hours published. No 2026-dated content seen."
+      },
+      "Luini (Via Santa Radegonda)": {
+        "url": "https://www.luini.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published hours and a notice of \"APERTURE STRAORDINARIE di novembre e dicembre\" with a calendar PDF (year not stated)."
+      },
+      "Ratanà": {
+        "url": "https://www.ratana.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"APERTO TUTTI I GIORNI PRANZO E CENA\"; online booking for up to 8, valid only after a confirmation email; menu changes monthly with \"evergreen\" traditional dishes."
+      },
+      "Antica Trattoria della Pesa": {
+        "url": "https://www.anticatrattoriadellapesa.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published lunch and dinner hours, booking phone and email, menu link. No 2026-dated content seen."
+      },
+      "Masuelli Trattoria (Viale Umbria)": {
+        "url": "https://www.masuellitrattoria.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online booking link (\"PRENOTA\"), \"Gradita prenotazione\", published lunch and dinner hours. No 2026-dated content seen."
+      },
+      "Langosteria (Via Savona)": {
+        "url": "https://www.langosteria.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "SevenRooms booking link for the Via Savona restaurant; New Year's Eve dinner bookings promoted for Milan."
+      },
+      "Ristorante Cracco": {
+        "url": "https://www.ristorantecracco.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "SevenRooms booking and email reservations; current menu PDF dated July 2026 (\"Menu-ita-lug-26.pdf\")."
+      },
+      "Café Cracco": {
+        "url": "https://www.ristorantecracco.it/",
+        "sourceType": "operator's own site (Cracco)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Breakfast, pastries and monoporzioni made \"esclusivamente\" in the laboratory upstairs; \"non si effettuano prenotazioni\" (no reservations)."
+      },
+      "Pavè (Casati)": {
+        "url": "https://www.pavemilano.com/negozi/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Shop page lists four current branches with phone numbers and weekly hours."
+      },
+      "Pasticceria Martesana (Sant'Agostino)": {
+        "url": "https://www.martesanamilano.com/le-pasticcerie/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "2026 site content including a limited-edition Halloween panettone post and \"© 2026\"; published hours per shop."
+      },
+      "Biffi Pasticceria (Corso Magenta)": {
+        "url": "https://www.biffipasticceria.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published daily hours \"Aperti tutti i giorni 7.00 - 20.30\"; 2026 logo asset only, no dated notices."
+      }
+    }
+  },
   "Beijing, China": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-25",

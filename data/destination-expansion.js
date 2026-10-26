@@ -5289,4 +5289,112 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Milan, Italy: source review of 2026-10-25 (docs/content-research/milan-2026-10-25.md).
+  {
+    const cityKey = "Milan, Italy";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Duomo di Milano","The Last Supper (Cenacolo Vinciano)","Pinacoteca di Brera","Pinacoteca Ambrosiana"],
+      bestFirstTimers: ["Duomo di Milano","The Last Supper (Cenacolo Vinciano)","Pinacoteca di Brera","Camparino in Galleria"],
+      bestRestaurants: ["Ratanà","Antica Trattoria della Pesa","Langosteria (Via Savona)","Ristorante Cracco"],
+      bestBudget: ["Pirelli HangarBicocca","Luini (Via Santa Radegonda)","Mercato Centrale Milano","Pinacoteca di Brera"],
+      bestLuxury: ["Ristorante Cracco","Langosteria (Via Savona)","Ally's Bar (Langosteria Montenapoleone)","Villa Necchi Campiglio"],
+      bestCouples: ["Villa Necchi Campiglio","Ally's Bar (Langosteria Montenapoleone)","Moebius","Museo Bagatti Valsecchi"],
+      bestKids: ["MUBA Museo dei Bambini","Pirelli HangarBicocca","Eataly Milano Smeraldo","Pavè (Casati)"],
+      bestSolo: ["Museo Poldi Pezzoli","Museo Diocesano Carlo Maria Martini","Peck (Via Spadari)","Mercato Centrale Milano"],
+      bestUnique: ["Pirelli HangarBicocca","Villa Necchi Campiglio","Museo Bagatti Valsecchi","Museo Diocesano Carlo Maria Martini"],
+      bestBreakfast: ["Café Cracco","Pasticceria Martesana (Sant'Agostino)","Biffi Pasticceria (Corso Magenta)","Pavè (Casati)"],
+      bestLunch: ["Luini (Via Santa Radegonda)","Mercato Centrale Milano","Ratanà","Peck (Via Spadari)"],
+      bestDinner: ["Antica Trattoria della Pesa","Masuelli Trattoria (Viale Umbria)","Langosteria (Via Savona)","Moebius"],
+      bestCocktails: ["Camparino in Galleria","Ally's Bar (Langosteria Montenapoleone)","Dry Milano (Solferino)","Moebius"],
+      bestBakeries: ["Pavè (Casati)","Pasticceria Martesana (Sant'Agostino)","Biffi Pasticceria (Corso Magenta)","Café Cracco"],
+      bestCoffee: ["Café Cracco","Camparino in Galleria","Biffi Pasticceria (Corso Magenta)","Eataly Milano Smeraldo"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Duomo di Milano": "Duomo di Milano Piazza del Duomo Milan",
+      "The Last Supper (Cenacolo Vinciano)": "Cenacolo Vinciano Piazza di Santa Maria delle Grazie 2 Milan",
+      "Pinacoteca di Brera": "Pinacoteca di Brera Via Brera 28 Milan",
+      "Pinacoteca Ambrosiana": "Pinacoteca Ambrosiana Piazza Pio XI 2 Milan",
+      "Camparino in Galleria": "Camparino in Galleria Piazza Duomo 21 Milan",
+      "Ratanà": "Ratanà Via Gaetano de Castillia 28 Milan",
+      "Antica Trattoria della Pesa": "Antica Trattoria della Pesa Viale Pasubio 10 Milan",
+      "Langosteria (Via Savona)": "Langosteria Via Savona 10 Milan",
+      "Ristorante Cracco": "Ristorante Cracco Galleria Vittorio Emanuele II Milan",
+      "Pirelli HangarBicocca": "Pirelli HangarBicocca Via Chiese 2 Milan",
+      "Luini (Via Santa Radegonda)": "Luini Via Santa Radegonda 16 Milan",
+      "Mercato Centrale Milano": "Mercato Centrale Milano Via Sammartini Milan",
+      "Ally's Bar (Langosteria Montenapoleone)": "Ally's Bar Langosteria Corso Giacomo Matteotti 9 Milan",
+      "Villa Necchi Campiglio": "Villa Necchi Campiglio Via Mozart 14 Milan",
+      "Moebius": "Moebius Via Alfredo Cappellini 25 Milan",
+      "Museo Bagatti Valsecchi": "Museo Bagatti Valsecchi Via Gesù 5 Milan",
+      "MUBA Museo dei Bambini": "MUBA Museo dei Bambini Via Enrico Besana 12 Milan",
+      "Eataly Milano Smeraldo": "Eataly Smeraldo Piazza XXV Aprile Milan",
+      "Pavè (Casati)": "Pavè Via Felice Casati 27 Milan",
+      "Museo Poldi Pezzoli": "Museo Poldi Pezzoli Via Manzoni 12 Milan",
+      "Museo Diocesano Carlo Maria Martini": "Museo Diocesano Carlo Maria Martini Piazza Sant'Eustorgio 3 Milan",
+      "Peck (Via Spadari)": "Peck Via Spadari 9 Milan",
+      "Café Cracco": "Café Cracco Galleria Vittorio Emanuele II Milan",
+      "Pasticceria Martesana (Sant'Agostino)": "Pasticceria Martesana Piazza Sant'Agostino 7 Milan",
+      "Biffi Pasticceria (Corso Magenta)": "Biffi Pasticceria Corso Magenta 87 Milan",
+      "Masuelli Trattoria (Viale Umbria)": "Masuelli Trattoria Viale Umbria 80 Milan",
+      "Dry Milano (Solferino)": "Dry Milano Via Solferino 33 Milan"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Milan" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "The Duomo, Leonardo's Last Supper and Milan's picture galleries and house museums, with breakfast pastry shops, trattorias, markets and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Duomo di Milano","The Last Supper (Cenacolo Vinciano)","Pinacoteca di Brera","Pirelli HangarBicocca"];
+    cityGuide.tip = "The Last Supper and Pinacoteca di Brera both close on Mondays and both require a reservation, so book them for Tuesday to Sunday before you fix the rest of your days.";
+    data.destinationFacts[cityKey] = "The Last Supper and Pinacoteca di Brera both close on Mondays and both require a reservation, so book them for Tuesday to Sunday before you fix the rest of your days.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "The Duomo, Leonardo's Last Supper and Milan's picture galleries and house museums, with breakfast pastry shops, trattorias, markets and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays and early week",
+        "copy": "Pinacoteca di Brera closes every Monday and The Last Supper opens Tuesday to Sunday only. Pirelli HangarBicocca's exhibitions are closed Monday to Wednesday, and Museo Bagatti Valsecchi opens Wednesday to Sunday."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Reserve the big two",
+        "copy": "The Last Supper says reservations are compulsory for all ticket types, with 15-minute visits for up to 40 people, and releases tickets three months at a time. Pinacoteca di Brera also requires a reservation, including on its free first Sunday of the month."
+      },
+      {
+        "label": "Walk-in or book",
+        "value": "Know which ones take bookings",
+        "copy": "Café Cracco in the Galleria does not take reservations and opens daily 8am to midnight. Ratanà books online for up to eight people, and a booking only counts once you receive the confirmation email."
+      },
+      {
+        "label": "Free entry rules",
+        "value": "Free, but booked",
+        "copy": "Pirelli HangarBicocca is free but asks you to book your admission online. Brera's first-Sunday free entry also needs a reservation."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Book The Last Supper and Brera first, keep Mondays for markets, pastry shops and Thursday-to-Sunday spaces like HangarBicocca, and reserve dinners ahead.",
+      intro: [
+        "Milan's headline sights reward a little planning. At The Last Supper in Santa Maria delle Grazie, reservations are compulsory for every ticket type, visits last 15 minutes with up to 40 people, and the museum opens Tuesday to Sunday from 8.15am to 7pm. Tickets are released three months at a time, so check the sales calendar early. Pinacoteca di Brera, on Via Brera, also asks you to reserve, opens Tuesday to Sunday from 8.30am to 7.15pm with last entry at 6pm, and is free with a reservation on the first Sunday of each month.",
+        "Several exhibitions run well into winter. Brera's \"100 Years for Brera\", on gifts and acquisitions from its Friends, runs from 6 October 2026 to 14 February 2027. The Pinacoteca Ambrosiana on Piazza Pio XI shows \"The 'Sign' of Saint Francis: Images of a Life\" until 12 January 2027, and the Museo Diocesano at Piazza Sant'Eustorgio shows Artemisia Gentileschi's \"Annunciazione\" from 27 October 2026 to 31 January 2027. Further out, Pirelli HangarBicocca on Via Chiese is free with booking, opens Thursday to Sunday from 10.30am to 8.30pm, and shows Aki Sasamoto until 17 January 2027 and Luciano Fabro until 21 February 2027.",
+        "For a quieter day, Museo Bagatti Valsecchi on Via Gesù opens Wednesday to Sunday from 10am to 6pm and recommends booking online, while FAI's Villa Necchi Campiglio on Via Mozart says its Piero Portaluppi drawing exhibition has been extended to 29 November. Mornings start easily: Café Cracco in the Galleria Vittorio Emanuele II opens daily from 8am and takes no reservations, Pasticceria Martesana in Piazza Sant'Agostino opens from 7.30am on weekdays, and Biffi on Corso Magenta opens every day from 7am. Luini on Via Santa Radegonda serves Monday to Saturday, 10am to 8pm.",
+        "Evenings need more booking. Ratanà on Via de Castillia is open every day for lunch and dinner, takes online bookings for up to eight, and treats a booking as valid only once you receive a confirmation email. Antica Trattoria della Pesa on Viale Pasubio is closed on Sundays, and Ristorante Cracco serves dinner Monday to Saturday and lunch Tuesday to Friday. For drinks, Camparino in Galleria's Bar di Passo opens from 9.30am, Dry Milano on Via Solferino opens Tuesday to Sunday from 6pm to 2am, and Ally's Bar, on the sixth floor of Langosteria Montenapoleone, runs from noon to 1am."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair the Duomo with a reserved Tuesday-to-Sunday slot at The Last Supper and a booked visit to Pinacoteca di Brera."
+        ],
+        [
+          "A slower morning",
+          "Start with pastries at Pasticceria Martesana or Biffi, then spend the late morning at Museo Bagatti Valsecchi or Museo Poldi Pezzoli."
+        ],
+        [
+          "Before booking",
+          "Remember that Brera and The Last Supper close on Mondays and HangarBicocca's exhibitions open only Thursday to Sunday."
+        ]
+      ],
+      trust: "All 27 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();
