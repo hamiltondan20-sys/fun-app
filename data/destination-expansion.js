@@ -4000,4 +4000,111 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 27 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Melbourne, Australia: source review of 2026-10-25 (docs/content-research/melbourne-2026-10-25.md).
+  {
+    const cityKey = "Melbourne, Australia";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Federation Square","NGV International","State Library Victoria","Royal Botanic Gardens Victoria – Melbourne Gardens"],
+      bestFirstTimers: ["Federation Square","Queen Victoria Market","Melbourne Skydeck","ACMI"],
+      bestRestaurants: ["Flower Drum","Florentino","Chin Chin","Supernormal"],
+      bestBudget: ["ACMI","NGV International","State Library Victoria","Federation Square"],
+      bestLuxury: ["Vue de monde","Attica","Flower Drum","Florentino"],
+      bestCouples: ["Royal Botanic Gardens Victoria – Melbourne Gardens","Eau de Vie","Vue de monde","Heide Museum of Modern Art"],
+      bestKids: ["Collingwood Children's Farm","Melbourne Skydeck","ACMI","Royal Botanic Gardens Victoria – Melbourne Gardens"],
+      bestSolo: ["State Library Victoria","The Ian Potter Centre: NGV Australia","Higher Ground","Cumulus Inc."],
+      bestUnique: ["Old Melbourne Gaol","Heide Museum of Modern Art","Siglo","Black Pearl"],
+      bestBreakfast: ["Higher Ground","Tivoli Road Bakery","Baker Bleu (Cremorne)","Lune Croissanterie (Fitzroy)"],
+      bestLunch: ["Cumulus Inc.","Chin Chin","Queen Victoria Market","Florentino"],
+      bestDinner: ["Flower Drum","Attica","Supernormal","Cumulus Inc."],
+      bestCocktails: ["Black Pearl","Siglo","Eau de Vie","Florentino"],
+      bestBakeries: ["Lune Croissanterie (Fitzroy)","Baker Bleu (Cremorne)","Tivoli Road Bakery","Brunetti Classico (Carlton)"],
+      bestCoffee: ["Higher Ground","Lune Croissanterie (Fitzroy)","ACMI"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Federation Square": "Federation Square Swanston St & Flinders St Melbourne",
+      "NGV International": "NGV International 180 St Kilda Road Melbourne",
+      "State Library Victoria": "State Library Victoria 328 Swanston Street Melbourne",
+      "Royal Botanic Gardens Victoria – Melbourne Gardens": "Royal Botanic Gardens Birdwood Avenue Melbourne",
+      "Queen Victoria Market": "Queen Victoria Market Queen Street Melbourne",
+      "Melbourne Skydeck": "Melbourne Skydeck Riverside Quay Southbank Melbourne",
+      "ACMI": "ACMI Federation Square Flinders St Melbourne",
+      "Flower Drum": "Flower Drum 17 Market Lane Melbourne",
+      "Florentino": "Florentino 80 Bourke Street Melbourne",
+      "Chin Chin": "Chin Chin 125 Flinders Lane Melbourne",
+      "Supernormal": "Supernormal 180 Flinders Lane Melbourne",
+      "Vue de monde": "Vue de monde 525 Collins Street Melbourne",
+      "Attica": "Attica 74 Glen Eira Road Ripponlea Melbourne",
+      "Eau de Vie": "Eau de Vie 1 Malthouse Lane Melbourne",
+      "Heide Museum of Modern Art": "Heide Museum of Modern Art 7 Templestowe Road Bulleen Melbourne",
+      "Collingwood Children's Farm": "Collingwood Children's Farm St Heliers St Abbotsford Melbourne",
+      "The Ian Potter Centre: NGV Australia": "The Ian Potter Centre NGV Australia Federation Square Flinders St Melbourne",
+      "Higher Ground": "Higher Ground 650 Little Bourke St Melbourne",
+      "Cumulus Inc.": "Cumulus Inc 45 Flinders Lane Melbourne",
+      "Old Melbourne Gaol": "Old Melbourne Gaol 377 Russell Street Melbourne",
+      "Siglo": "Siglo 161 Spring Street Melbourne",
+      "Black Pearl": "Black Pearl 304 Brunswick St Fitzroy Melbourne",
+      "Tivoli Road Bakery": "Tivoli Road Bakery 3 Tivoli Road South Yarra Melbourne",
+      "Baker Bleu (Cremorne)": "Baker Bleu 65 Dover Street Cremorne Melbourne",
+      "Lune Croissanterie (Fitzroy)": "Lune Croissanterie 119 Rose St Fitzroy Melbourne",
+      "Brunetti Classico (Carlton)": "Brunetti Classico 380 Lygon Street Carlton Melbourne"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Melbourne" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Galleries, gardens, markets and landmarks around Federation Square and the CBD, with bakeries, cafés, restaurants and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Federation Square","NGV International","State Library Victoria","Queen Victoria Market"];
+    cityGuide.tip = "Queen Victoria Market lists no Monday or Wednesday trading, and Heide is closed on Mondays except public holidays, so put them on other days.";
+    data.destinationFacts[cityKey] = "Queen Victoria Market lists no Monday or Wednesday trading, and Heide is closed on Mondays except public holidays, so put them on other days.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Galleries, gardens, markets and landmarks around Federation Square and the CBD, with bakeries, cafés, restaurants and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mon/Wed market gap",
+        "copy": "Queen Victoria Market trades Tuesday, Thursday, Friday and weekends only. Heide closes on Mondays (except public holidays), and Eau de Vie is closed Sunday and Monday."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book ahead for fine dining",
+        "copy": "Flower Drum takes online bookings only up to 12 weeks ahead, with a $50-per-person fee for changes inside 24 hours. Melbourne Skydeck says booking online saves up to 15%."
+      },
+      {
+        "label": "Walk-ins",
+        "value": "No-booking bars",
+        "copy": "Black Pearl is walk-in only (reservations recommended for The Attic), and Siglo states \"No bookings, no time limits\". Cumulus Inc. welcomes walk-ins at any time."
+      },
+      {
+        "label": "Rules",
+        "value": "Bags and dress",
+        "copy": "At the NGV, backpacks, large bags and umbrellas must be cloaked (free) before entering gallery spaces. Flower Drum asks for smart business casual, with no shorts or thongs."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Base your first day around Federation Square, where the NGV's Ian Potter Centre and ACMI are both free to enter, and book dinners well ahead.",
+      intro: [
+        "Federation Square, on the corner of Swanston and Flinders Streets, is open 24 hours and free to enter, which makes it an easy first stop. You'll find two free museums there. ACMI, the museum of screen culture, opens daily from 10am to 5pm, with its long-running exhibition The Story of the Moving Image and Lifelike from 20 November to 18 April. The Ian Potter Centre: NGV Australia keeps the same hours and shows Margaret Preston from 4 September to 31 January.",
+        "Across the river, NGV International at 180 St Kilda Road is also free for general entry, open daily from 10am to 5pm. It warns that selected gallery spaces may be closed until 13 December while it installs NGV Triennial, so check before you go. For a quieter morning, State Library Victoria at 328 Swanston Street opens 10am to 6pm daily, with Ned Kelly's armour and World of the Book on show. Old Melbourne Gaol on Russell Street opens daily from 10am, apart from Christmas Day and Good Friday.",
+        "The Royal Botanic Gardens' Melbourne Gardens on Birdwood Avenue are free and open from 7:30am to 7:30pm every day. Punting on the Lake runs until 31 May 2027, and the Children's Garden opens Wednesday to Sunday, daily in Victorian school holidays. Queen Victoria Market trades Tuesday, Thursday, Friday and weekends, from 6am on weekdays and Saturdays and 9am on Sundays. If you have children with you, Collingwood Children's Farm in Abbotsford opens from 9:30am daily, and Melbourne Skydeck in Southbank offers savings for online bookings.",
+        "Plan dining around booking rules. Flower Drum on Market Lane takes online bookings up to 12 weeks ahead and asks for smart business casual. Attica in Ripponlea serves dinner Tuesday to Saturday, while Florentino on Bourke Street holds two hats in The Age Good Food Guide 2026. For drinks, Black Pearl in Fitzroy is walk-in only from Wednesday to Sunday, Siglo on Spring Street takes no bookings, and Eau de Vie requires a credit card to secure a table. For breakfast, Lune in Fitzroy and Tivoli Road Bakery in South Yarra both open early."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Start at Federation Square, where ACMI and The Ian Potter Centre: NGV Australia are free and open daily from 10am to 5pm."
+        ],
+        [
+          "A slower morning",
+          "Take a croissant at Lune in Fitzroy, which opens at 7.30am on weekdays, then walk the Royal Botanic Gardens, open from 7:30am."
+        ],
+        [
+          "Before booking",
+          "Flower Drum releases online tables only 12 weeks ahead, and Eau de Vie needs card details to hold a reservation."
+        ]
+      ],
+      trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

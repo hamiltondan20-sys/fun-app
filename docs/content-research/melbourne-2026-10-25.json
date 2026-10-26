@@ -1,0 +1,603 @@
+{
+  "city": "Melbourne, Australia",
+  "checkedOn": "2026-10-25",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Federation Square",
+      "kind": "landmark",
+      "url": "https://fedsquare.com/getting-here",
+      "sourceType": "operator's own site (Fed Square)",
+      "address": "Swanston St & Flinders St, Melbourne VIC 3000",
+      "operatingEvidence": "Homepage lists upcoming events including \"Victorian Festival of Diwali 2026\" (31 Oct) and \"African Music and Cultural Festival 2026\" (20–22 Nov, free).",
+      "hours": "\"Fed Square is open 24 hrs a day, and is always free to enter.\"",
+      "confidence": "high"
+    },
+    {
+      "name": "NGV International",
+      "kind": "museum",
+      "url": "https://www.ngv.vic.gov.au/visit/",
+      "sourceType": "official public operator (National Gallery of Victoria)",
+      "address": "180 St Kilda Road, Melbourne",
+      "operatingEvidence": "Visit page notes \"selected Gallery spaces may be temporarily closed from 7 Sep – 13 Dec 26 to install NGV Triennial\"; general entry free, \"Entry fees may apply to special exhibitions\".",
+      "hours": "Daily 10am–5pm; from 1pm on ANZAC Day; closed Christmas Day",
+      "confidence": "high"
+    },
+    {
+      "name": "The Ian Potter Centre: NGV Australia",
+      "kind": "museum",
+      "url": "https://www.ngv.vic.gov.au/visit/",
+      "sourceType": "official public operator (National Gallery of Victoria)",
+      "address": "Fed Square, Melbourne",
+      "operatingEvidence": "Visit page gives current hours and free general entry; Fed Square's listings show \"Margaret Preston at The Ian Potter Centre: NGV Australia\" running 4 Sep–31 Jan.",
+      "hours": "Daily 10am–5pm; from 1pm on ANZAC Day; closed Christmas Day",
+      "confidence": "high"
+    },
+    {
+      "name": "ACMI",
+      "kind": "museum",
+      "url": "https://www.acmi.net.au/visit/",
+      "sourceType": "operator's own site",
+      "address": "Fed Square, Naarm/Melbourne, \"on Flinders St between Swanston St and Russell St\"",
+      "operatingEvidence": "Visit page \"Last modified: 16 September 2026\"; free museum entry with the ongoing exhibition The Story of the Moving Image; Fed Square lists \"Lifelike at ACMI\" 20 Nov–18 Apr.",
+      "hours": "Museum daily 10am–5pm (1–5pm ANZAC Day, closed Christmas Day); Cafe + Bar Mon–Fri 8.30am–4.30pm, Sat–Sun 10am–4.30pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Royal Botanic Gardens Victoria – Melbourne Gardens",
+      "kind": "park",
+      "url": "https://www.rbg.vic.gov.au/melbourne-gardens/",
+      "sourceType": "official public operator (Royal Botanic Gardens Victoria)",
+      "address": "Birdwood Avenue, Melbourne",
+      "operatingEvidence": "Lists 2026 programs including \"Punting on the Lake\" (1 Sep 2026 to 31 May 2027) and a notice that The Explorer departs from Oak Lawn from 26 October 2026 \"until further notice\".",
+      "hours": "Gardens daily 7:30am–7:30pm; Visitor Centre 9:30am–5pm; Children's Garden 10am–7:30pm Wed–Sun and daily in Victorian school holidays",
+      "confidence": "high"
+    },
+    {
+      "name": "Queen Victoria Market",
+      "kind": "market",
+      "url": "https://qvm.com.au/getting-here/",
+      "sourceType": "operator's own site",
+      "address": "Bounded by Peel, Franklin, Victoria and Elizabeth Streets; Information Hub on the corner of F Shed and Queen Street (no single street number published)",
+      "operatingEvidence": "Homepage lists events such as \"Melbourne International Dumpling Festival\" (Monday 2 November) and \"Stock Up Vintage Market\" (Sunday 15 November).",
+      "hours": "Tue, Thu, Fri 6am–3pm; Sat 6am–4pm; Sun 9am–4pm; specialty shopping from 9am; no Monday or Wednesday trading listed",
+      "confidence": "medium"
+    },
+    {
+      "name": "State Library Victoria",
+      "kind": "museum",
+      "url": "https://www.slv.vic.gov.au/visit",
+      "sourceType": "official public operator (State Library Victoria)",
+      "address": "328 Swanston Street, Melbourne 3000",
+      "operatingEvidence": "Current exhibitions listed include World of the Book and You Have A New Memory (2026 pages) plus Ned Kelly's armour; \"©2026 State Library Victoria\".",
+      "hours": "10am–6pm daily; \"Closed on New Year's Day, Good Friday, Christmas Day and Boxing Day\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Melbourne Skydeck",
+      "kind": "scenic",
+      "url": "https://www.melbourneskydeck.com.au/",
+      "sourceType": "operator's own site",
+      "address": "Riverside Quay, Southbank Melbourne, 3006",
+      "operatingEvidence": "Offers dated 2026, including Love Locals ($25) \"until 30 Nov, 2026\" and a Halloween weekend \"Friday 30 October – Sunday 1 November\"; \"book online and save up to 15% off\".",
+      "hours": "not published on page read",
+      "confidence": "medium"
+    },
+    {
+      "name": "Old Melbourne Gaol",
+      "kind": "museum",
+      "url": "https://www.oldmelbournegaol.com.au/",
+      "sourceType": "operator's own site (National Trust)",
+      "address": "377 Russell Street, between Victoria & La Trobe St, Melbourne Victoria 3000",
+      "operatingEvidence": "Tickets on sale (adult $38, child $22, family $90); events dated Saturday 31 October 2026 and Saturday 7 November 2026.",
+      "hours": "Open 7 days, 10am–5pm; \"Closed Christmas Day and Good Friday\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Heide Museum of Modern Art",
+      "kind": "museum",
+      "url": "https://www.heide.com.au/visit",
+      "sourceType": "operator's own site",
+      "address": "7 Templestowe Road, Bulleen, Victoria",
+      "operatingEvidence": "Tickets bookable via Humanitix (adult $27, under 16 free); current notice that \"Your journey to Heide may be impacted\" by North East Link works.",
+      "hours": "Mon closed (except public holidays); Tue–Fri 10am–4pm; Sat–Sun 10am–5pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Collingwood Children's Farm",
+      "kind": "park",
+      "url": "https://www.farm.org.au/",
+      "sourceType": "operator's own site",
+      "address": "St Heliers St, Abbotsford (no street number published)",
+      "operatingEvidence": "\"© 2026 Collingwood Children's Farm\"; entry prices published (adults $20, children $10, under-2s free); school tours bookable \"for Term 3\".",
+      "hours": "\"Open from 9:30am, 7 days\" (closing time not published)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Flower Drum",
+      "kind": "meal",
+      "url": "https://www.flowerdrum.melbourne/bookings/",
+      "sourceType": "operator's own site",
+      "address": "17 Market Lane, Melbourne 3000 VIC",
+      "operatingEvidence": "Bookings page: \"closed for our annual Christmas & New Year break from Sunday December 20th 2026\", re-opening \"Tuesday January 5th 2027\"; Wine-List-2026 published.",
+      "hours": "Dinner sittings for groups of 4 or fewer from 6:00pm (finishing 7:30pm) and from 8:00pm; weekly hours not published",
+      "confidence": "high"
+    },
+    {
+      "name": "Florentino",
+      "kind": "meal",
+      "url": "https://florentino.melbourne/",
+      "sourceType": "operator's own site",
+      "address": "80 Bourke Street, Melbourne",
+      "operatingEvidence": "\"THE AGE GOOD FOOD GUIDE 2026 – TWO HATS\"; reservations link and current dining room, café and Cellar Bar hours.",
+      "hours": "Dining Room lunch Fri–Sun from 12:00, dinner Mon–Sun from 17:30; Café Florentino daily lunch from 12:00, dinner from 17:00; Cellar Bar daily from 11:00 until late",
+      "confidence": "high"
+    },
+    {
+      "name": "Chin Chin",
+      "kind": "meal",
+      "url": "https://www.chinchin.melbourne/",
+      "sourceType": "operator's own site",
+      "address": "125 Flinders Lane, Melbourne",
+      "operatingEvidence": "\"Open from 11am 'til late\" with a \"Book now\" link; current main menu PDF dated 2026 in its file path.",
+      "hours": "\"Open from 11am 'til late\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Supernormal",
+      "kind": "meal",
+      "url": "https://www.supernormal.net.au/contact",
+      "sourceType": "operator's own site",
+      "address": "180 Flinders Lane, Melbourne",
+      "operatingEvidence": "Contact page publishes current hours and a booking link; no dated 2026 content found.",
+      "hours": "\"Monday to Sunday 11.30am - late\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Cumulus Inc.",
+      "kind": "meal",
+      "url": "https://www.cumulusinc.com.au/",
+      "sourceType": "operator's own site",
+      "address": "45 Flinders Lane, Melbourne",
+      "operatingEvidence": "Open seven days; walk-ins welcome, reservations online via SevenRooms or by phone; no dated 2026 content.",
+      "hours": "Open seven days \"From Noon\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Attica",
+      "kind": "meal",
+      "url": "https://www.attica.com.au/",
+      "sourceType": "operator's own site",
+      "address": "74 Glen Eira Road, Ripponlea, Vic 3185",
+      "operatingEvidence": "\"Attica is open for dinner from Tuesday to Saturday\"; online booking with waiting list; Friday and Saturday lunch from 12noon in November–December; \"©Attica 2026\".",
+      "hours": "Dinner Tue–Sat, seated 6pm–8pm; lunch Fri–Sat from 12noon in Nov–Dec",
+      "confidence": "high"
+    },
+    {
+      "name": "Vue de monde",
+      "kind": "meal",
+      "url": "https://www.vuedemonde.com.au/contact",
+      "sourceType": "operator's own site",
+      "address": "Level 55 Rialto Towers 525 Collins Street, Melbourne, VIC 3000",
+      "operatingEvidence": "Reservations links and contact details current; only 2026 item is a 2026 privacy-policy file.",
+      "hours": "not published on pages read",
+      "confidence": "medium"
+    },
+    {
+      "name": "Higher Ground",
+      "kind": "cafe",
+      "url": "https://www.highergroundmelbourne.com.au/",
+      "sourceType": "operator's own site",
+      "address": "650 Little Bourke St, Melbourne VIC 3000",
+      "operatingEvidence": "Bookings via SevenRooms, \"reservations are strongly recommended\"; \"© 2026 Darling Group\".",
+      "hours": "Mon–Fri 7am–5pm; Sat–Sun 7:30am–5pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Black Pearl",
+      "kind": "bar",
+      "url": "https://www.blackpearlbar.com.au/",
+      "sourceType": "operator's own site",
+      "address": "304 Brunswick St, Fitzroy, Vic, 3065",
+      "operatingEvidence": "\"Black Pearl is walk-in only, with reservations recommended for The Attic\"; no dated 2026 content.",
+      "hours": "Wednesday to Sunday, 5pm to 3am",
+      "confidence": "medium"
+    },
+    {
+      "name": "Siglo",
+      "kind": "bar",
+      "url": "https://www.siglobar.com.au/",
+      "sourceType": "operator's own site",
+      "address": "2/161 Spring Street Melbourne Victoria 3000",
+      "operatingEvidence": "\"No bookings, no time limits. Service at table.\"; no dated 2026 content.",
+      "hours": "\"Tuesday - Saturday, 5pm - 3am\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Eau de Vie",
+      "kind": "bar",
+      "url": "https://www.eaudevie.com.au/melbourne",
+      "sourceType": "operator's own site",
+      "address": "1 Malthouse Lane, Melbourne VIC 3000",
+      "operatingEvidence": "Online reservations up to 3 months ahead; \"Eau-De-Vie requires credit card details to secure your reservation\"; bookings held for 90 minutes.",
+      "hours": "Mon closed; Tue–Thu 5pm–late; Fri–Sat 4pm–1am; Sun closed",
+      "confidence": "medium"
+    },
+    {
+      "name": "Lune Croissanterie (Fitzroy)",
+      "kind": "bakery",
+      "url": "https://www.lunecroissanterie.com/",
+      "sourceType": "operator's own site",
+      "address": "119 Rose St, Fitzroy",
+      "operatingEvidence": "Current Fitzroy specials and drinks menu; FAQ says counter service is \"first-come, first-served\" and pre-orders are available \"at all Lune venues except Russell St\".",
+      "hours": "FAQ: \"we open at 7.30am on weekdays and 8am on weekends\" (closing times not published)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Baker Bleu (Cremorne)",
+      "kind": "bakery",
+      "url": "https://www.bakerbleu.com.au/locations",
+      "sourceType": "operator's own site",
+      "address": "65 Dover Street, Cremorne VIC 3121",
+      "operatingEvidence": "Homepage posts dated October 2026 (\"Ten years of dark crust\", \"Celebrate Harvest\").",
+      "hours": "Mon–Fri 7:00am–4:30pm; Sat–Sun 7:00am–3:00pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Tivoli Road Bakery",
+      "kind": "bakery",
+      "url": "https://www.tivoliroad.com.au/",
+      "sourceType": "operator's own site",
+      "address": "3 Tivoli Road, South Yarra 3141",
+      "operatingEvidence": "Current trading hours published; \"© 2026 Tivoli Road Bakery\".",
+      "hours": "Seven days, 7:30am–3pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Brunetti Classico (Carlton)",
+      "kind": "bakery",
+      "url": "https://brunetticlassico.com.au/",
+      "sourceType": "operator's own site",
+      "address": "380 Lygon Street, Carlton 3053",
+      "operatingEvidence": "\"© 2026 Brunetti classico\"; current Carlton offers, with Pizza Thursdays \"now available at our Carlton location\".",
+      "hours": "not published on page read",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Laneways",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Street-art walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Yarra River evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Great Ocean Road / Great Ocean Road extension",
+      "reason": "a region and day trip, not a single place with an operator; not checked",
+      "url": ""
+    },
+    {
+      "name": "All other input entries (e.g. \"a laneway coffee and dinner\", \"A cafe near Fitzroy\", \"Free museum or public garden time\", \"A rooftop or waterfront evening\")",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Melbourne Museum",
+      "reason": "HTTP 403 Forbidden on automated fetch; not bypassed",
+      "url": "https://museumsvictoria.com.au/melbournemuseum/"
+    },
+    {
+      "name": "Melbourne Zoo",
+      "reason": "No exact street address on pages read (only \"at Royal Park\"); site otherwise active",
+      "url": "https://www.zoo.org.au/melbourne/getting-here/"
+    },
+    {
+      "name": "Shrine of Remembrance",
+      "reason": "No street address on pages read (only postal GPO Box); hours and 'Updated 5 October 2026' seen",
+      "url": "https://www.shrine.org.au/"
+    },
+    {
+      "name": "Melbourne Cricket Ground (MCG)",
+      "reason": "No street address on homepage; contact page returned 404",
+      "url": "https://www.mcg.org.au/"
+    },
+    {
+      "name": "SEA LIFE Melbourne Aquarium",
+      "reason": "No street address on homepage; getting-here page returned 404",
+      "url": "https://www.visitsealife.com/melbourne/"
+    },
+    {
+      "name": "Prahran Market",
+      "reason": "No street address on homepage and inconsistent hours; visit page timed out",
+      "url": "https://www.prahranmarket.com.au/"
+    },
+    {
+      "name": "Arts Centre Melbourne",
+      "reason": "Fetch returned no readable content",
+      "url": "https://www.artscentremelbourne.com.au/"
+    },
+    {
+      "name": "South Melbourne Market",
+      "reason": "HTTP 429 Too Many Requests; not bypassed",
+      "url": "https://www.southmelbournemarket.com.au/"
+    },
+    {
+      "name": "MoVida",
+      "reason": "HTTP 429 Too Many Requests; not bypassed",
+      "url": "https://www.movida.com.au/"
+    },
+    {
+      "name": "Market Lane Coffee",
+      "reason": "HTTP 429 Too Many Requests; not bypassed",
+      "url": "https://www.marketlane.com.au/"
+    },
+    {
+      "name": "Seven Seeds",
+      "reason": "HTTP 429 Too Many Requests; not bypassed",
+      "url": "https://www.sevenseeds.com.au/"
+    },
+    {
+      "name": "Patricia Coffee Brewers",
+      "reason": "HTTP 429 Too Many Requests; not bypassed",
+      "url": "https://www.patriciacoffee.com.au/"
+    },
+    {
+      "name": "Proud Mary",
+      "reason": "HTTP 429 Too Many Requests; not bypassed",
+      "url": "https://www.proudmarycoffee.com.au/"
+    },
+    {
+      "name": "Industry Beans",
+      "reason": "HTTP 429 Too Many Requests; not bypassed",
+      "url": "https://www.industrybeans.com/"
+    },
+    {
+      "name": "Dukes Coffee Roasters",
+      "reason": "HTTP 429 Too Many Requests; not bypassed",
+      "url": "https://www.dukescoffee.com.au/"
+    },
+    {
+      "name": "ST. ALi",
+      "reason": "HTTP 429 Too Many Requests; not bypassed",
+      "url": "https://stali.com.au/"
+    },
+    {
+      "name": "Axil Coffee Roasters",
+      "reason": "HTTP 429 Too Many Requests; not bypassed",
+      "url": "https://www.axilcoffee.com.au/"
+    },
+    {
+      "name": "Code Black Coffee",
+      "reason": "HTTP 429 Too Many Requests; not bypassed",
+      "url": "https://www.codeblackcoffee.com.au/"
+    },
+    {
+      "name": "Gimlet at Cavendish House",
+      "reason": "No street address on homepage or visit page",
+      "url": "https://www.gimlet.melbourne/visit"
+    },
+    {
+      "name": "Lui Bar",
+      "reason": "Address shown but no hours, dates or other operating evidence on page read",
+      "url": "https://www.luibar.com/"
+    },
+    {
+      "name": "Hardware Société",
+      "reason": "Page read showed no address, hours or operating evidence",
+      "url": "https://www.hardwaresociete.com/"
+    },
+    {
+      "name": "Pellegrini's Espresso Bar",
+      "reason": "pellegrinis.com.au is a different business (Chatswood and Orange, NSW); no official Melbourne site found",
+      "url": "https://www.pellegrinis.com.au/"
+    },
+    {
+      "name": "Ombra (Bourke St)",
+      "reason": "Operator's site lists it as \"Permanently Closed\"",
+      "url": "https://florentino.melbourne/"
+    },
+    {
+      "name": "Arlechin",
+      "reason": "Operator's site lists it as \"Temporarily Closed\" with no reopening date",
+      "url": "https://florentino.melbourne/"
+    },
+    {
+      "name": "Bar Americano",
+      "reason": "Domain did not resolve (DNS error); no official page read",
+      "url": "https://www.baramericano.com.au/"
+    },
+    {
+      "name": "Pidapipo",
+      "reason": "Domain did not resolve (DNS error); no official page read",
+      "url": "https://www.pidapipo.com.au/"
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Federation Square",
+        "NGV International",
+        "State Library Victoria",
+        "Royal Botanic Gardens Victoria – Melbourne Gardens"
+      ],
+      "bestFirstTimers": [
+        "Federation Square",
+        "Queen Victoria Market",
+        "Melbourne Skydeck",
+        "ACMI"
+      ],
+      "bestRestaurants": [
+        "Flower Drum",
+        "Florentino",
+        "Chin Chin",
+        "Supernormal"
+      ],
+      "bestBudget": [
+        "ACMI",
+        "NGV International",
+        "State Library Victoria",
+        "Federation Square"
+      ],
+      "bestLuxury": [
+        "Vue de monde",
+        "Attica",
+        "Flower Drum",
+        "Florentino"
+      ],
+      "bestCouples": [
+        "Royal Botanic Gardens Victoria – Melbourne Gardens",
+        "Eau de Vie",
+        "Vue de monde",
+        "Heide Museum of Modern Art"
+      ],
+      "bestKids": [
+        "Collingwood Children's Farm",
+        "Melbourne Skydeck",
+        "ACMI",
+        "Royal Botanic Gardens Victoria – Melbourne Gardens"
+      ],
+      "bestSolo": [
+        "State Library Victoria",
+        "The Ian Potter Centre: NGV Australia",
+        "Higher Ground",
+        "Cumulus Inc."
+      ],
+      "bestUnique": [
+        "Old Melbourne Gaol",
+        "Heide Museum of Modern Art",
+        "Siglo",
+        "Black Pearl"
+      ],
+      "bestBreakfast": [
+        "Higher Ground",
+        "Tivoli Road Bakery",
+        "Baker Bleu (Cremorne)",
+        "Lune Croissanterie (Fitzroy)"
+      ],
+      "bestLunch": [
+        "Cumulus Inc.",
+        "Chin Chin",
+        "Queen Victoria Market",
+        "Florentino"
+      ],
+      "bestDinner": [
+        "Flower Drum",
+        "Attica",
+        "Supernormal",
+        "Cumulus Inc."
+      ],
+      "bestCocktails": [
+        "Black Pearl",
+        "Siglo",
+        "Eau de Vie",
+        "Florentino"
+      ],
+      "bestBakeries": [
+        "Lune Croissanterie (Fitzroy)",
+        "Baker Bleu (Cremorne)",
+        "Tivoli Road Bakery",
+        "Brunetti Classico (Carlton)"
+      ],
+      "bestCoffee": [
+        "Higher Ground",
+        "Lune Croissanterie (Fitzroy)",
+        "ACMI"
+      ]
+    },
+    "queries": {
+      "Federation Square": "Federation Square Swanston St & Flinders St Melbourne",
+      "NGV International": "NGV International 180 St Kilda Road Melbourne",
+      "The Ian Potter Centre: NGV Australia": "The Ian Potter Centre NGV Australia Federation Square Flinders St Melbourne",
+      "ACMI": "ACMI Federation Square Flinders St Melbourne",
+      "Royal Botanic Gardens Victoria – Melbourne Gardens": "Royal Botanic Gardens Birdwood Avenue Melbourne",
+      "Queen Victoria Market": "Queen Victoria Market Queen Street Melbourne",
+      "State Library Victoria": "State Library Victoria 328 Swanston Street Melbourne",
+      "Melbourne Skydeck": "Melbourne Skydeck Riverside Quay Southbank Melbourne",
+      "Old Melbourne Gaol": "Old Melbourne Gaol 377 Russell Street Melbourne",
+      "Heide Museum of Modern Art": "Heide Museum of Modern Art 7 Templestowe Road Bulleen Melbourne",
+      "Collingwood Children's Farm": "Collingwood Children's Farm St Heliers St Abbotsford Melbourne",
+      "Flower Drum": "Flower Drum 17 Market Lane Melbourne",
+      "Florentino": "Florentino 80 Bourke Street Melbourne",
+      "Chin Chin": "Chin Chin 125 Flinders Lane Melbourne",
+      "Supernormal": "Supernormal 180 Flinders Lane Melbourne",
+      "Cumulus Inc.": "Cumulus Inc 45 Flinders Lane Melbourne",
+      "Attica": "Attica 74 Glen Eira Road Ripponlea Melbourne",
+      "Vue de monde": "Vue de monde 525 Collins Street Melbourne",
+      "Higher Ground": "Higher Ground 650 Little Bourke St Melbourne",
+      "Black Pearl": "Black Pearl 304 Brunswick St Fitzroy Melbourne",
+      "Siglo": "Siglo 161 Spring Street Melbourne",
+      "Eau de Vie": "Eau de Vie 1 Malthouse Lane Melbourne",
+      "Lune Croissanterie (Fitzroy)": "Lune Croissanterie 119 Rose St Fitzroy Melbourne",
+      "Baker Bleu (Cremorne)": "Baker Bleu 65 Dover Street Cremorne Melbourne",
+      "Tivoli Road Bakery": "Tivoli Road Bakery 3 Tivoli Road South Yarra Melbourne",
+      "Brunetti Classico (Carlton)": "Brunetti Classico 380 Lygon Street Carlton Melbourne"
+    },
+    "summary": "Galleries, gardens, markets and landmarks around Federation Square and the CBD, with bakeries, cafés, restaurants and cocktail bars checked against their own websites.",
+    "highlights": [
+      "Federation Square",
+      "NGV International",
+      "State Library Victoria",
+      "Queen Victoria Market"
+    ],
+    "tip": "Queen Victoria Market lists no Monday or Wednesday trading, and Heide is closed on Mondays except public holidays, so put them on other days.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mon/Wed market gap",
+        "copy": "Queen Victoria Market trades Tuesday, Thursday, Friday and weekends only. Heide closes on Mondays (except public holidays), and Eau de Vie is closed Sunday and Monday."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book ahead for fine dining",
+        "copy": "Flower Drum takes online bookings only up to 12 weeks ahead, with a $50-per-person fee for changes inside 24 hours. Melbourne Skydeck says booking online saves up to 15%."
+      },
+      {
+        "label": "Walk-ins",
+        "value": "No-booking bars",
+        "copy": "Black Pearl is walk-in only (reservations recommended for The Attic), and Siglo states \"No bookings, no time limits\". Cumulus Inc. welcomes walk-ins at any time."
+      },
+      {
+        "label": "Rules",
+        "value": "Bags and dress",
+        "copy": "At the NGV, backpacks, large bags and umbrellas must be cloaked (free) before entering gallery spaces. Flower Drum asks for smart business casual, with no shorts or thongs."
+      }
+    ],
+    "dek": "Base your first day around Federation Square, where the NGV's Ian Potter Centre and ACMI are both free to enter, and book dinners well ahead.",
+    "intro": [
+      "Federation Square, on the corner of Swanston and Flinders Streets, is open 24 hours and free to enter, which makes it an easy first stop. You'll find two free museums there. ACMI, the museum of screen culture, opens daily from 10am to 5pm, with its long-running exhibition The Story of the Moving Image and Lifelike from 20 November to 18 April. The Ian Potter Centre: NGV Australia keeps the same hours and shows Margaret Preston from 4 September to 31 January.",
+      "Across the river, NGV International at 180 St Kilda Road is also free for general entry, open daily from 10am to 5pm. It warns that selected gallery spaces may be closed until 13 December while it installs NGV Triennial, so check before you go. For a quieter morning, State Library Victoria at 328 Swanston Street opens 10am to 6pm daily, with Ned Kelly's armour and World of the Book on show. Old Melbourne Gaol on Russell Street opens daily from 10am, apart from Christmas Day and Good Friday.",
+      "The Royal Botanic Gardens' Melbourne Gardens on Birdwood Avenue are free and open from 7:30am to 7:30pm every day. Punting on the Lake runs until 31 May 2027, and the Children's Garden opens Wednesday to Sunday, daily in Victorian school holidays. Queen Victoria Market trades Tuesday, Thursday, Friday and weekends, from 6am on weekdays and Saturdays and 9am on Sundays. If you have children with you, Collingwood Children's Farm in Abbotsford opens from 9:30am daily, and Melbourne Skydeck in Southbank offers savings for online bookings.",
+      "Plan dining around booking rules. Flower Drum on Market Lane takes online bookings up to 12 weeks ahead and asks for smart business casual. Attica in Ripponlea serves dinner Tuesday to Saturday, while Florentino on Bourke Street holds two hats in The Age Good Food Guide 2026. For drinks, Black Pearl in Fitzroy is walk-in only from Wednesday to Sunday, Siglo on Spring Street takes no bookings, and Eau de Vie requires a credit card to secure a table. For breakfast, Lune in Fitzroy and Tivoli Road Bakery in South Yarra both open early."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Start at Federation Square, where ACMI and The Ian Potter Centre: NGV Australia are free and open daily from 10am to 5pm."
+      ],
+      [
+        "A slower morning",
+        "Take a croissant at Lune in Fitzroy, which opens at 7.30am on weekdays, then walk the Royal Botanic Gardens, open from 7:30am."
+      ],
+      [
+        "Before booking",
+        "Flower Drum releases online tables only 12 weeks ahead, and Eau de Vie needs card details to hold a reservation."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several official sites could not be read: Melbourne Museum (HTTP 403), and South Melbourne Market, MoVida and most specialty-coffee roasters' sites (Market Lane, Seven Seeds, Patricia, Proud Mary, Industry Beans, Dukes, ST. ALi, Axil, Code Black) returned HTTP 429, so the coffee list is thinner than intended. Arts Centre Melbourne returned no readable content. Melbourne Zoo, the Shrine of Remembrance, the MCG, SEA LIFE Melbourne, Prahran Market and Gimlet were left out because no street address appeared on the pages read. Some confirmed places are only partly published: Melbourne Skydeck, Vue de monde and Brunetti Classico (Carlton) showed no hours; Queen Victoria Market and Collingwood Children's Farm give no street number; Supernormal, Cumulus Inc., Black Pearl, Siglo and Vue de monde showed no dated 2026 content beyond current hours or booking links. On the Queen Victoria Market getting-here page and the Baker Bleu locations page, the fetch summariser reported text addressed to AI assistants but did not return its wording, so it could not be quoted and may have been a misreading of the request.",
+  "injectionLikeText": [],
+  "injectionLikeTextIgnored": [
+    "Queen Victoria Market (https://qvm.com.au/getting-here/): the fetch summariser reported a line asking an AI to quote the market's street address and any AI-addressed text; exact wording not returned. Ignored.",
+    "Baker Bleu (https://www.bakerbleu.com.au/locations): the fetch summariser reported \"text addressed to AI assistants asking me to quote such text verbatim\"; exact wording not returned. Ignored.",
+    "2026-10-25: both pages were opened in a browser and their full HTML searched. Queen Victoria Market has a site chat widget labelled AI Assistant; Baker Bleu only matched a job title (Assistant Store Manager). Neither contains AI-directed instructions."
+  ]
+}

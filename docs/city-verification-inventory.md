@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 40.
-- Classifier-passed (published, not fully documented in that format): 152.
+- Source-verified (complete dated evidence format): 41.
+- Classifier-passed (published, not fully documented in that format): 151.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -304,7 +304,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Maui, United States | maui | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Medellin, Colombia | medellin | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Medora, United States | medora | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Melbourne, Australia | melbourne | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Melbourne, Australia | melbourne | source-verified | source-checked | 26 | 53 | 15 | 15 | None |
 | Mendoza, Argentina | mendoza | held-back | not-reviewed | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Merida, Mexico | merida | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Mexico City, Mexico | mexico-city | source-verified | source-checked | 26 | 49 | 15 | 15 | None |

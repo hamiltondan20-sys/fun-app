@@ -5,6 +5,359 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Melbourne, Australia": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-25",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several official sites could not be read: Melbourne Museum (HTTP 403), and South Melbourne Market, MoVida and most specialty-coffee roasters' sites (Market Lane, Seven Seeds, Patricia, Proud Mary, Industry Beans, Dukes, ST. ALi, Axil, Code Black) returned HTTP 429, so the coffee list is thinner than intended. Arts Centre Melbourne returned no readable content. Melbourne Zoo, the Shrine of Remembrance, the MCG, SEA LIFE Melbourne, Prahran Market and Gimlet were left out because no street address appeared on the pages read. Some confirmed places are only partly published: Melbourne Skydeck, Vue de monde and Brunetti Classico (Carlton) showed no hours; Queen Victoria Market and Collingwood Children's Farm give no street number; Supernormal, Cumulus Inc., Black Pearl, Siglo and Vue de monde showed no dated 2026 content beyond current hours or booking links. On the Queen Victoria Market getting-here page and the Baker Bleu locations page, the fetch summariser reported text addressed to AI assistants but did not return its wording, so it could not be quoted and may have been a misreading of the request.",
+    "sourceUrls": [
+      "docs/content-research/melbourne-2026-10-25.md",
+      "docs/content-research/melbourne-2026-10-25.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Laneways",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Street-art walk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Yarra River evening",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Great Ocean Road / Great Ocean Road extension",
+        "checkedOn": "2026-10-25",
+        "reason": "a region and day trip, not a single place with an operator; not checked"
+      },
+      {
+        "name": "All other input entries (e.g. \"a laneway coffee and dinner\", \"A cafe near Fitzroy\", \"Free museum or public garden time\", \"A rooftop or waterfront evening\")",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Melbourne Museum",
+        "url": "https://museumsvictoria.com.au/melbournemuseum/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 403 Forbidden on automated fetch; not bypassed"
+      },
+      {
+        "name": "Melbourne Zoo",
+        "url": "https://www.zoo.org.au/melbourne/getting-here/",
+        "checkedOn": "2026-10-25",
+        "reason": "No exact street address on pages read (only \"at Royal Park\"); site otherwise active"
+      },
+      {
+        "name": "Shrine of Remembrance",
+        "url": "https://www.shrine.org.au/",
+        "checkedOn": "2026-10-25",
+        "reason": "No street address on pages read (only postal GPO Box); hours and 'Updated 5 October 2026' seen"
+      },
+      {
+        "name": "Melbourne Cricket Ground (MCG)",
+        "url": "https://www.mcg.org.au/",
+        "checkedOn": "2026-10-25",
+        "reason": "No street address on homepage; contact page returned 404"
+      },
+      {
+        "name": "SEA LIFE Melbourne Aquarium",
+        "url": "https://www.visitsealife.com/melbourne/",
+        "checkedOn": "2026-10-25",
+        "reason": "No street address on homepage; getting-here page returned 404"
+      },
+      {
+        "name": "Prahran Market",
+        "url": "https://www.prahranmarket.com.au/",
+        "checkedOn": "2026-10-25",
+        "reason": "No street address on homepage and inconsistent hours; visit page timed out"
+      },
+      {
+        "name": "Arts Centre Melbourne",
+        "url": "https://www.artscentremelbourne.com.au/",
+        "checkedOn": "2026-10-25",
+        "reason": "Fetch returned no readable content"
+      },
+      {
+        "name": "South Melbourne Market",
+        "url": "https://www.southmelbournemarket.com.au/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests; not bypassed"
+      },
+      {
+        "name": "MoVida",
+        "url": "https://www.movida.com.au/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests; not bypassed"
+      },
+      {
+        "name": "Market Lane Coffee",
+        "url": "https://www.marketlane.com.au/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests; not bypassed"
+      },
+      {
+        "name": "Seven Seeds",
+        "url": "https://www.sevenseeds.com.au/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests; not bypassed"
+      },
+      {
+        "name": "Patricia Coffee Brewers",
+        "url": "https://www.patriciacoffee.com.au/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests; not bypassed"
+      },
+      {
+        "name": "Proud Mary",
+        "url": "https://www.proudmarycoffee.com.au/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests; not bypassed"
+      },
+      {
+        "name": "Industry Beans",
+        "url": "https://www.industrybeans.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests; not bypassed"
+      },
+      {
+        "name": "Dukes Coffee Roasters",
+        "url": "https://www.dukescoffee.com.au/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests; not bypassed"
+      },
+      {
+        "name": "ST. ALi",
+        "url": "https://stali.com.au/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests; not bypassed"
+      },
+      {
+        "name": "Axil Coffee Roasters",
+        "url": "https://www.axilcoffee.com.au/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests; not bypassed"
+      },
+      {
+        "name": "Code Black Coffee",
+        "url": "https://www.codeblackcoffee.com.au/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 429 Too Many Requests; not bypassed"
+      },
+      {
+        "name": "Gimlet at Cavendish House",
+        "url": "https://www.gimlet.melbourne/visit",
+        "checkedOn": "2026-10-25",
+        "reason": "No street address on homepage or visit page"
+      },
+      {
+        "name": "Lui Bar",
+        "url": "https://www.luibar.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Address shown but no hours, dates or other operating evidence on page read"
+      },
+      {
+        "name": "Hardware Société",
+        "url": "https://www.hardwaresociete.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Page read showed no address, hours or operating evidence"
+      },
+      {
+        "name": "Pellegrini's Espresso Bar",
+        "url": "https://www.pellegrinis.com.au/",
+        "checkedOn": "2026-10-25",
+        "reason": "pellegrinis.com.au is a different business (Chatswood and Orange, NSW); no official Melbourne site found"
+      },
+      {
+        "name": "Ombra (Bourke St)",
+        "url": "https://florentino.melbourne/",
+        "checkedOn": "2026-10-25",
+        "reason": "Operator's site lists it as \"Permanently Closed\""
+      },
+      {
+        "name": "Arlechin",
+        "url": "https://florentino.melbourne/",
+        "checkedOn": "2026-10-25",
+        "reason": "Operator's site lists it as \"Temporarily Closed\" with no reopening date"
+      },
+      {
+        "name": "Bar Americano",
+        "url": "https://www.baramericano.com.au/",
+        "checkedOn": "2026-10-25",
+        "reason": "Domain did not resolve (DNS error); no official page read"
+      },
+      {
+        "name": "Pidapipo",
+        "url": "https://www.pidapipo.com.au/",
+        "checkedOn": "2026-10-25",
+        "reason": "Domain did not resolve (DNS error); no official page read"
+      }
+    ],
+    "placeSources": {
+      "Federation Square": {
+        "url": "https://fedsquare.com/getting-here",
+        "sourceType": "operator's own site (Fed Square)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Homepage lists upcoming events including \"Victorian Festival of Diwali 2026\" (31 Oct) and \"African Music and Cultural Festival 2026\" (20–22 Nov, free)."
+      },
+      "NGV International": {
+        "url": "https://www.ngv.vic.gov.au/visit/",
+        "sourceType": "official public operator (National Gallery of Victoria)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Visit page notes \"selected Gallery spaces may be temporarily closed from 7 Sep – 13 Dec 26 to install NGV Triennial\"; general entry free, \"Entry fees may apply to special exhibitions\"."
+      },
+      "The Ian Potter Centre: NGV Australia": {
+        "url": "https://www.ngv.vic.gov.au/visit/",
+        "sourceType": "official public operator (National Gallery of Victoria)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Visit page gives current hours and free general entry; Fed Square's listings show \"Margaret Preston at The Ian Potter Centre: NGV Australia\" running 4 Sep–31 Jan."
+      },
+      "ACMI": {
+        "url": "https://www.acmi.net.au/visit/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Visit page \"Last modified: 16 September 2026\"; free museum entry with the ongoing exhibition The Story of the Moving Image; Fed Square lists \"Lifelike at ACMI\" 20 Nov–18 Apr."
+      },
+      "Royal Botanic Gardens Victoria – Melbourne Gardens": {
+        "url": "https://www.rbg.vic.gov.au/melbourne-gardens/",
+        "sourceType": "official public operator (Royal Botanic Gardens Victoria)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Lists 2026 programs including \"Punting on the Lake\" (1 Sep 2026 to 31 May 2027) and a notice that The Explorer departs from Oak Lawn from 26 October 2026 \"until further notice\"."
+      },
+      "Queen Victoria Market": {
+        "url": "https://qvm.com.au/getting-here/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Homepage lists events such as \"Melbourne International Dumpling Festival\" (Monday 2 November) and \"Stock Up Vintage Market\" (Sunday 15 November)."
+      },
+      "State Library Victoria": {
+        "url": "https://www.slv.vic.gov.au/visit",
+        "sourceType": "official public operator (State Library Victoria)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibitions listed include World of the Book and You Have A New Memory (2026 pages) plus Ned Kelly's armour; \"©2026 State Library Victoria\"."
+      },
+      "Melbourne Skydeck": {
+        "url": "https://www.melbourneskydeck.com.au/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Offers dated 2026, including Love Locals ($25) \"until 30 Nov, 2026\" and a Halloween weekend \"Friday 30 October – Sunday 1 November\"; \"book online and save up to 15% off\"."
+      },
+      "Old Melbourne Gaol": {
+        "url": "https://www.oldmelbournegaol.com.au/",
+        "sourceType": "operator's own site (National Trust)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Tickets on sale (adult $38, child $22, family $90); events dated Saturday 31 October 2026 and Saturday 7 November 2026."
+      },
+      "Heide Museum of Modern Art": {
+        "url": "https://www.heide.com.au/visit",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Tickets bookable via Humanitix (adult $27, under 16 free); current notice that \"Your journey to Heide may be impacted\" by North East Link works."
+      },
+      "Collingwood Children's Farm": {
+        "url": "https://www.farm.org.au/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"© 2026 Collingwood Children's Farm\"; entry prices published (adults $20, children $10, under-2s free); school tours bookable \"for Term 3\"."
+      },
+      "Flower Drum": {
+        "url": "https://www.flowerdrum.melbourne/bookings/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Bookings page: \"closed for our annual Christmas & New Year break from Sunday December 20th 2026\", re-opening \"Tuesday January 5th 2027\"; Wine-List-2026 published."
+      },
+      "Florentino": {
+        "url": "https://florentino.melbourne/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"THE AGE GOOD FOOD GUIDE 2026 – TWO HATS\"; reservations link and current dining room, café and Cellar Bar hours."
+      },
+      "Chin Chin": {
+        "url": "https://www.chinchin.melbourne/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Open from 11am 'til late\" with a \"Book now\" link; current main menu PDF dated 2026 in its file path."
+      },
+      "Supernormal": {
+        "url": "https://www.supernormal.net.au/contact",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Contact page publishes current hours and a booking link; no dated 2026 content found."
+      },
+      "Cumulus Inc.": {
+        "url": "https://www.cumulusinc.com.au/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Open seven days; walk-ins welcome, reservations online via SevenRooms or by phone; no dated 2026 content."
+      },
+      "Attica": {
+        "url": "https://www.attica.com.au/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Attica is open for dinner from Tuesday to Saturday\"; online booking with waiting list; Friday and Saturday lunch from 12noon in November–December; \"©Attica 2026\"."
+      },
+      "Vue de monde": {
+        "url": "https://www.vuedemonde.com.au/contact",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Reservations links and contact details current; only 2026 item is a 2026 privacy-policy file."
+      },
+      "Higher Ground": {
+        "url": "https://www.highergroundmelbourne.com.au/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Bookings via SevenRooms, \"reservations are strongly recommended\"; \"© 2026 Darling Group\"."
+      },
+      "Black Pearl": {
+        "url": "https://www.blackpearlbar.com.au/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Black Pearl is walk-in only, with reservations recommended for The Attic\"; no dated 2026 content."
+      },
+      "Siglo": {
+        "url": "https://www.siglobar.com.au/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"No bookings, no time limits. Service at table.\"; no dated 2026 content."
+      },
+      "Eau de Vie": {
+        "url": "https://www.eaudevie.com.au/melbourne",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online reservations up to 3 months ahead; \"Eau-De-Vie requires credit card details to secure your reservation\"; bookings held for 90 minutes."
+      },
+      "Lune Croissanterie (Fitzroy)": {
+        "url": "https://www.lunecroissanterie.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current Fitzroy specials and drinks menu; FAQ says counter service is \"first-come, first-served\" and pre-orders are available \"at all Lune venues except Russell St\"."
+      },
+      "Baker Bleu (Cremorne)": {
+        "url": "https://www.bakerbleu.com.au/locations",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Homepage posts dated October 2026 (\"Ten years of dark crust\", \"Celebrate Harvest\")."
+      },
+      "Tivoli Road Bakery": {
+        "url": "https://www.tivoliroad.com.au/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current trading hours published; \"© 2026 Tivoli Road Bakery\"."
+      },
+      "Brunetti Classico (Carlton)": {
+        "url": "https://brunetticlassico.com.au/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"© 2026 Brunetti classico\"; current Carlton offers, with Pizza Thursdays \"now available at our Carlton location\"."
+      }
+    }
+  },
   "Rio de Janeiro, Brazil": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-25",
