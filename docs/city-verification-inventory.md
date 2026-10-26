@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 46.
-- Classifier-passed (published, not fully documented in that format): 146.
+- Source-verified (complete dated evidence format): 47.
+- Classifier-passed (published, not fully documented in that format): 145.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -352,7 +352,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Okinawa, Japan | okinawa | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Oklahoma City, United States | oklahoma-city | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Orlando, United States | orlando | classifier-passed | not-reviewed | 0 | 24 | 15 | 10 | None |
-| Osaka, Japan | osaka | classifier-passed | not-reviewed | 0 | 11 | 15 | 5 | None |
+| Osaka, Japan | osaka | source-verified | source-checked | 26 | 35 | 15 | 14 | None |
 | Oslo, Norway | oslo | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Ottawa, Canada | ottawa | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Oulu, Finland | oulu | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |

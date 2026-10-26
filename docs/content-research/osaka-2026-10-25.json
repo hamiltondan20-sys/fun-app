@@ -1,0 +1,893 @@
+{
+  "city": "Osaka, Japan",
+  "checkedOn": "2026-10-25",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Osaka Castle Main Tower",
+      "kind": "landmark",
+      "url": "https://www.osakacastle.net/access/",
+      "sourceType": "operator's own site (Osaka Castle Main Tower)",
+      "address": "〒540-0002 大阪市中央区大阪城1-1",
+      "operatingEvidence": "Official site offers advance admission: \"予約サイトを通じて入館券の事前購入が可能です\". Exhibition page says displays change about every two months; no dated 2026 item was readable.",
+      "hours": "not published on pages read",
+      "confidence": "medium"
+    },
+    {
+      "name": "Tsutenkaku",
+      "kind": "landmark",
+      "url": "https://www.tsutenkaku.co.jp/annai/index.html",
+      "sourceType": "operator's own site (Tsutenkaku Kanko Co.)",
+      "address": "〒556-0002 大阪市浪速区恵美須東1-18-6",
+      "operatingEvidence": "Dated 2026 news (e.g. 21 Oct notice on the tower's 70th anniversary on 28 Oct 2026); hours changed from March 2026 and fees from April 2026. Advance tickets bought \"前日までに\" give a set entry time.",
+      "hours": "General observation deck 9:00-21:45 (last entry 21:15); adult 1,500 yen (1,800 yen 30 Dec 2026-3 Jan 2027)",
+      "confidence": "high"
+    },
+    {
+      "name": "Osaka Museum of History",
+      "kind": "museum",
+      "url": "https://www.osakamushis.jp/",
+      "sourceType": "operator's own site (Osaka Museum of History)",
+      "address": "〒540-0008 大阪市中央区大手前4丁目1-32",
+      "operatingEvidence": "Feature displays \"新発見！なにわの考古学2026\" (9 Sep-23 Nov 2026) and \"千日前の興行師・奥田辨次郎\" (25 Nov 2026-1 Feb 2027).",
+      "hours": "9:30-17:00 (entry until 30 min before closing); closed Tuesdays (next day if holiday) and 28 Dec-4 Jan",
+      "confidence": "high"
+    },
+    {
+      "name": "Shitennoji",
+      "kind": "landmark",
+      "url": "https://www.shitennoji.or.jp/",
+      "sourceType": "operator's own site (Shitennoji temple)",
+      "address": "〒543-0051 大阪市天王寺区四天王寺1丁目11番18号",
+      "operatingEvidence": "Reiwa 8 (2026) notices: Autumn University on 31 Oct; Shichi-Go-San bookings \"9/1より予約開始\"; general visitors' cars no longer allowed into the grounds.",
+      "hours": "not published on page read",
+      "confidence": "high"
+    },
+    {
+      "name": "Sumiyoshi Taisha",
+      "kind": "landmark",
+      "url": "https://www.sumiyoshitaisha.net/",
+      "sourceType": "operator's own site (Sumiyoshi Taisha shrine)",
+      "address": "〒558-0045 大阪府大阪市住吉区住吉2丁目 9-89",
+      "operatingEvidence": "2026 notices including \"令和8年 住吉祭（夏祭）について\" (1 Jul 2026) and a newsletter notice dated 7 Sep 2026.",
+      "hours": "not published on page read",
+      "confidence": "high"
+    },
+    {
+      "name": "Nakanoshima Museum of Art, Osaka",
+      "kind": "museum",
+      "url": "https://nakka-art.jp/en/",
+      "sourceType": "operator's own site (Nakanoshima Museum of Art, Osaka)",
+      "address": "4-3-1 Nakanoshima, Kita-ku, Osaka",
+      "operatingEvidence": "Current: NHK Sunday Museum 50th Anniversary Exhibition, 2026-10-10 to 2026-12-20. Upcoming: British Museum Japanese art collection show, 2026-10-31 to 2027-01-31.",
+      "hours": "10:00-17:00 (entry until 30 min before closing); closed Mondays (next weekday if Monday is a holiday)",
+      "confidence": "high"
+    },
+    {
+      "name": "National Museum of Art, Osaka",
+      "kind": "museum",
+      "url": "https://www.nmao.go.jp/en/visit/hours_admission/?lang=en",
+      "sourceType": "official public operator (national museum)",
+      "address": "4-2-55 Nakanoshima, Kita-ku, Osaka, 530-0005, Japan",
+      "operatingEvidence": "Current shows to 3 Nov 2026; upcoming \"Stratified Languages: Images from Contact Zones\" 1 Dec 2026-14 Mar 2027. 2026 holiday-Monday schedule published.",
+      "hours": "10:00-17:00 (last admission 16:30); Fridays until 20:00 (last admission 19:30); closed Mondays and 28 Dec 2026-4 Jan 2027",
+      "confidence": "high"
+    },
+    {
+      "name": "Osaka City Museum of Fine Arts",
+      "kind": "museum",
+      "url": "https://www.osaka-art-museum.jp/",
+      "sourceType": "operator's own site (Osaka City Museum of Fine Arts)",
+      "address": "〒543-0063 大阪府大阪市天王寺区茶臼山町1-82（天王寺公園内）",
+      "operatingEvidence": "Special exhibition \"躍動する明代の書－台北・何創時コレクションの至宝\", 2026.10.09-12.20, plus three planned exhibitions over the same dates.",
+      "hours": "\"午前9時30分～午後5時\" (entry until 16:30); closed Mondays (next weekday if holiday) and 28 Dec-4 Jan",
+      "confidence": "high"
+    },
+    {
+      "name": "Osaka Science Museum",
+      "kind": "museum",
+      "url": "https://www.sci-museum.jp/info/guide/",
+      "sourceType": "operator's own site (Osaka Science Museum)",
+      "address": "〒530-0005 大阪市北区中之島4-2-1",
+      "operatingEvidence": "2026 news including a 23 Oct notice that the web ticket site was restored and a press release for the special exhibition \"月から火星へ 宇宙探査におけるイタリア\".",
+      "hours": "\"9時30分～17時\"; exhibit entry until 16:30, last planetarium show 16:00; closing days shown only on a calendar not readable",
+      "confidence": "high"
+    },
+    {
+      "name": "Kids Plaza Osaka",
+      "kind": "museum",
+      "url": "https://www.kidsplaza.or.jp/access/",
+      "sourceType": "operator's own site (Kids Plaza Osaka)",
+      "address": "〒530-0025 大阪府大阪市北区扇町2-1-7",
+      "operatingEvidence": "2026 news: event \"出発進行スキマモリinキッズプラザ大阪\" on 22-23 Nov; some elevators out of service 3 Nov-23 Dec for works.",
+      "hours": "9:30-17:00 (last entry 16:15); closed 2nd and 3rd Monday (4th Monday in August), 28 Dec-2 Jan",
+      "confidence": "high"
+    },
+    {
+      "name": "Expo '70 Commemorative Park",
+      "kind": "park",
+      "url": "https://www.expo70-park.jp/guide/",
+      "sourceType": "official public operator (Osaka Prefecture Expo Commemorative Park Office)",
+      "address": "〒565-0826 大阪府吹田市千里万博公園",
+      "operatingEvidence": "October 2026 notices on Nature Culture Park and Japanese Garden opening schedule and cashless payment at gates from 1 Oct.",
+      "hours": "9:30-17:00 (last entry 30 min before); closed Wednesdays (next weekday if holiday) and New Year; no regular closing days 1 Apr-2 May and in October and November",
+      "confidence": "high"
+    },
+    {
+      "name": "Nagai Botanical Garden",
+      "kind": "park",
+      "url": "https://botanical-garden.nagai-park.jp/guide/information",
+      "sourceType": "operator's own site (Osaka Sports & Greenery Foundation)",
+      "address": "〒546-0034 大阪市東住吉区長居公園1-23",
+      "operatingEvidence": "2026 notices dated 15-25 Oct (flowering updates, guided autumn tours on 15 and 21 Nov 2026). Entry needs an electronic QR ticket.",
+      "hours": "Mar-Oct 9:30-17:00 (entry to 16:30); Nov-Feb 9:30-16:30 (entry to 16:00); closed Mondays (next weekday if holiday) and 28 Dec-4 Jan; adult 300 yen",
+      "confidence": "high"
+    },
+    {
+      "name": "Kizu Market",
+      "kind": "market",
+      "url": "https://kizu-ichiba.com/",
+      "sourceType": "operator's own site (Kizu Market)",
+      "address": "〒556-0012 大阪市浪速区敷津東2丁目2-8",
+      "operatingEvidence": "Store map updated 7 Sep 2026; 2026 market calendar published; osechi pre-orders from 12 Aug 2026.",
+      "hours": "Shops open from about 6:00 (\"早朝の午前６時頃から\"), most close around 11:00; suggested visit 8:30-10:30; closed Sundays, holidays and some Wednesdays",
+      "confidence": "high"
+    },
+    {
+      "name": "Cupnoodles Museum Osaka Ikeda",
+      "kind": "museum",
+      "url": "https://www.cupnoodles-museum.jp/ja/osaka_ikeda/",
+      "sourceType": "operator's own site (Cupnoodles Museum)",
+      "address": "〒563-0041 大阪府池田市満寿美町8-25",
+      "operatingEvidence": "Notice of 19 Oct 2026: heart-shaped Chicken Ramen workshop 30 Jan-28 Feb 2027; Chicken Ramen Factory bookings open 3 months ahead at 10:00.",
+      "hours": "9:30-16:30 (last entry 15:30); year-end closure from 28 Dec and maintenance closure 12-15 Jan 2027",
+      "confidence": "high"
+    },
+    {
+      "name": "Mizuno (Dotonbori)",
+      "kind": "meal",
+      "url": "https://www.mizuno-osaka.com/",
+      "sourceType": "operator's own site",
+      "address": "〒542-0071 大阪府大阪市中央区道頓堀1-4-15",
+      "operatingEvidence": "Notice: \"2026年2月より、木曜日の定休日は無くなり通常営業します。\"",
+      "hours": "11:00-22:00 (last order 21:00); open daily (無休)",
+      "confidence": "high"
+    },
+    {
+      "name": "Dotonbori Imai (Honten)",
+      "kind": "meal",
+      "url": "https://www.d-imai.com/shops/honten/",
+      "sourceType": "operator's own site",
+      "address": "大阪市中央区道頓堀1丁目7番22号",
+      "operatingEvidence": "Main-store post dated 2026.10.20 (\"『りんごのワイン煮』出来ました！\"). Reservations by phone only.",
+      "hours": "11:30-21:30 (last order 21:00); closed Wednesdays (open on holidays) and the fourth Tuesday except December",
+      "confidence": "high"
+    },
+    {
+      "name": "Mimiu (Honten megumi)",
+      "kind": "meal",
+      "url": "https://www.mimiu.co.jp/pages/honten",
+      "sourceType": "operator's own site",
+      "address": "大阪府大阪市中央区平野町4-6-18",
+      "operatingEvidence": "Store page lists current lunch and dinner service and phone booking; dinner \"完全予約制\". Site notice dated 2026.10.22.",
+      "hours": "Lunch 11:30-15:00 (LO 14:30); dinner 17:00-21:00 (last entry 19:00); closed Saturdays, Sundays and holidays",
+      "confidence": "medium"
+    },
+    {
+      "name": "Rikuro Ojisan no Mise (Namba Honten)",
+      "kind": "bakery",
+      "url": "https://www.rikuro.co.jp/shoplist/134.html",
+      "sourceType": "operator's own site",
+      "address": "〒542-0076 大阪市中央区難波3-2-28",
+      "operatingEvidence": "Brand site has news through October 2026 (e.g. 2026/10/22 maintenance, 2026/09/11 new store); store page gives current hours.",
+      "hours": "Shop 9:00-20:00; 2F cafe 11:00-17:30 (LO 16:30); closing days not listed",
+      "confidence": "medium"
+    },
+    {
+      "name": "PABLO (Shinsaibashi Honten)",
+      "kind": "bakery",
+      "url": "https://www.pablo3.com/shop/",
+      "sourceType": "operator's own site",
+      "address": "〒542-0085 大阪市中央区心斎橋筋2-8-1 心斎橋ゼロワンビル1F",
+      "operatingEvidence": "Brand news dated 2026 (e.g. 2026.03.16 gift assortment, 2026.02.25 \"ブリュレクリームブレッド\"); store listed with hours.",
+      "hours": "10:00-21:00; irregular holidays",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bar Castle (Hotel New Otani Osaka)",
+      "kind": "bar",
+      "url": "https://www.newotani.co.jp/osaka/restaurant/castle/",
+      "sourceType": "operator's own site (Hotel New Otani Osaka)",
+      "address": "〒540-8578 大阪市中央区城見1-4-1 (1F)",
+      "operatingEvidence": "Super Osaka Cocktail Collection runs 28 Oct-29 Nov 2026; age rule \"ご利用は20歳以上に限らせていただいております\".",
+      "hours": "17:00-24:00 (LO 23:30); closed Mondays and Tuesdays",
+      "confidence": "high"
+    },
+    {
+      "name": "SATSUKI (Hotel New Otani Osaka)",
+      "kind": "meal",
+      "url": "https://www.newotani.co.jp/osaka/restaurant/satsuki/",
+      "sourceType": "operator's own site (Hotel New Otani Osaka)",
+      "address": "〒540-8578 大阪市中央区城見1-4-1 (1F)",
+      "operatingEvidence": "Autumn lunch and dinner weekdays 1 Sep-30 Nov 2026; weekend Sweets & Delicious Buffet 7-29 Nov 2026; morning buffet.",
+      "hours": "\"7:00～22:00（LO 21:30）\"; no closing days listed",
+      "confidence": "high"
+    },
+    {
+      "name": "Patisserie SATSUKI (Hotel New Otani Osaka)",
+      "kind": "bakery",
+      "url": "https://www.newotani.co.jp/osaka/restaurant/p-satsuki/",
+      "sourceType": "operator's own site (Hotel New Otani Osaka)",
+      "address": "〒540-8578 大阪市中央区城見1-4-1 (1F)",
+      "operatingEvidence": "Chestnut & Grape Sweets Fair 2026/9/1-11/30; new baguette from 2026/6/11 and salt bread from 2026/7/20.",
+      "hours": "10:00-20:00; no closing days listed",
+      "confidence": "high"
+    },
+    {
+      "name": "Cafe Couvert (Imperial Hotel Osaka)",
+      "kind": "meal",
+      "url": "https://www.imperialhotel.co.jp/osaka/restaurant/couvert/plan/seasonal-parfait",
+      "sourceType": "operator's own site (Imperial Hotel Osaka)",
+      "address": "〒530-0042 大阪市北区天満橋1-8-50 (2階)",
+      "operatingEvidence": "Seasonal parfait \"doux joyaux\" 1 Nov-31 Dec 2026 (3,800 yen); price revision notice effective 1 Nov 2026.",
+      "hours": "Breakfast 6:30-11:00 (buffet until 10:00); weekdays lunch 11:00-14:00, dinner 17:00-22:00 (LO 21:00); weekends and holidays 11:00-22:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Main Bar Vol de Nuit (Hotel Nikko Osaka)",
+      "kind": "bar",
+      "url": "https://www.hno.co.jp/restaurant/yakanhiko.html",
+      "sourceType": "operator's own site (Hotel Nikko Osaka)",
+      "address": "〒542-0086 大阪府大阪市中央区西心斎橋1丁目3-3 (2F)",
+      "operatingEvidence": "\"Starry Night\" 2026 seasonal cocktail series, 1 Sep-31 Oct 2026, 2,950 yen; piano music fee 990 yen from 20:00 to 22:30.",
+      "hours": "Weekdays 17:00-23:00 (LO 22:30); Fridays and eves of holidays until 24:00; weekends and holidays from 14:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Mondial Kaffee 328 (Club Ace, Shinsaibashi)",
+      "kind": "cafe",
+      "url": "https://www.mondial-kaffee328.com/",
+      "sourceType": "operator's own site",
+      "address": "〒542-0086 大阪府大阪市中央区西心斎橋1-10-4エースビル1階 A号室",
+      "operatingEvidence": "Blog post dated 2026/01/08 on new sweet \"カッテーナ\"; branch list with current hours.",
+      "hours": "Listed as 8:00-20:30 in one place and 8:00-18:30 in another; irregular holidays",
+      "confidence": "medium"
+    },
+    {
+      "name": "Hiro Coffee (Ekimarche Osaka)",
+      "kind": "cafe",
+      "url": "https://www.hirocoffee.co.jp/shop/",
+      "sourceType": "operator's own site",
+      "address": "〒530-0001 大阪府大阪市北区梅田3-1-1 エキマルシェ大阪内",
+      "operatingEvidence": "Shop list updated in 2026 (notes Daimaru Umeda store closed 23 Feb 2026); October 2026 news on autumn menu and bean sales at direct stores.",
+      "hours": "11:00-23:00 (last order 22:00)",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Kuromon Market",
+      "reason": "Official site kuromon.com returned an SSL error (WRONG_VERSION_NUMBER) on both hosts; not bypassed.",
+      "url": "https://www.kuromon.com/"
+    },
+    {
+      "name": "teamLab Botanical Garden Osaka",
+      "reason": "Official page returned only its title; address, hours and session dates not readable.",
+      "url": "https://www.teamlab.art/jp/e/botanicalgarden/"
+    },
+    {
+      "name": "Umeda Sky Building Kuchu Teien Observatory",
+      "reason": "Hours and prices published, but no exact street address on pages read and latest dated notice is from 2025.",
+      "url": "https://www.skybldg.co.jp/en/"
+    },
+    {
+      "name": "Abeno Harukas 300",
+      "reason": "Official site returned HTTP 403.",
+      "url": "https://www.abenoharukas-300.jp/en/"
+    },
+    {
+      "name": "Kaiyukan",
+      "reason": "Hours calendar and notices did not load; ticket page shows 2024 data; no current-dated operating evidence readable.",
+      "url": "https://www.kaiyukan.com/info/hours/"
+    },
+    {
+      "name": "Museum of Oriental Ceramics, Osaka",
+      "reason": "Closed: \"closed for repair work from Monday, August 3, 2026, until its scheduled reopening in spring 2027\".",
+      "url": "https://www.moco.or.jp/en/whatsnew/newarrival/3943"
+    },
+    {
+      "name": "Osaka Museum of Housing and Living",
+      "reason": "Temporarily closed 1 Sep 2026 to 5 Jan 2027 per official notice.",
+      "url": "https://www.osaka-angenet.jp/konjyakukan/"
+    },
+    {
+      "name": "Tennoji Zoo",
+      "reason": "Official site returned HTTP 503.",
+      "url": "https://www.tennojizoo.jp/"
+    },
+    {
+      "name": "Universal Studios Japan",
+      "reason": "Official page returned only its title; nothing readable.",
+      "url": "https://www.usj.co.jp/web/en/us"
+    },
+    {
+      "name": "Kani Doraku (Dotonbori Honten)",
+      "reason": "Official site gave no store address; notices feed failed to load; store-search domain did not resolve.",
+      "url": "https://douraku.co.jp/"
+    },
+    {
+      "name": "551 Horai (Honten)",
+      "reason": "Official store finder did not show the main store's address or hours.",
+      "url": "https://www.551horai.co.jp/shop/"
+    },
+    {
+      "name": "Endo Sushi (Honten)",
+      "reason": "Official page read did not give the main store's address, hours or closing days.",
+      "url": "https://www.endo-sushi.com/"
+    },
+    {
+      "name": "Kushikatsu Daruma (Shinsekai Sohonten)",
+      "reason": "Official website could not be identified (guessed domain did not resolve).",
+      "url": ""
+    },
+    {
+      "name": "Kitahama Retro",
+      "reason": "Official website could not be identified (guessed domain did not resolve).",
+      "url": ""
+    },
+    {
+      "name": "Brooklyn Roasting Company (Kitahama)",
+      "reason": "Official site returned a TLS error; not bypassed.",
+      "url": "https://www.brooklynroasting.jp/"
+    },
+    {
+      "name": "Takamura Wine & Coffee Roasters",
+      "reason": "Official site returned HTTP 403.",
+      "url": "https://www.takamura.net/"
+    },
+    {
+      "name": "LiLo Coffee Roasters",
+      "reason": "Official site not confirmed; candidate URL returned HTTP 404.",
+      "url": "https://liloinveve.com/coffee"
+    },
+    {
+      "name": "RIHGA Royal Hotel Osaka bars",
+      "reason": "Bar list and hours not readable on official pages.",
+      "url": "https://www.rihga.co.jp/osaka/restaurant/information"
+    },
+    {
+      "name": "Dotonbori",
+      "reason": "generic, not a place (district with no single operator)",
+      "url": ""
+    },
+    {
+      "name": "Shinsekai evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Day trip to Nara",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided TeamLab Botanical Garden",
+      "reason": "generic, not a place (see teamLab Botanical Garden Osaka)",
+      "url": ""
+    },
+    {
+      "name": "Takoyaki and okonomiyaki crawl",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Kuromon Market lunch",
+      "reason": "generic, not a place (see Kuromon Market)",
+      "url": ""
+    },
+    {
+      "name": "A late-night izakaya",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Umeda",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Osaka Castle",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Namba",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Namba walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Umeda",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Osaka Castle",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Osaka Castle",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Dotonbori",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Namba",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Shinsekai evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Umeda",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Osaka Castle",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Namba evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Umeda",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Osaka Castle",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Namba",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Dotonbori",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Umeda",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Osaka Castle",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Namba",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Dotonbori",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Namba cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Osaka Castle",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Osaka Castle",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Namba",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Namba",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Umeda bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Dotonbori",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Osaka Castle",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Namba",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Osaka Castle",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Osaka Castle",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Namba",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Umeda",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Osaka Castle",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Namba",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Namba",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Umeda",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Kuromon Market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Namba",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Umeda morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Dotonbori",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Osaka Castle",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Namba",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Umeda",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Osaka Castle",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Osaka Castle Main Tower",
+        "Tsutenkaku",
+        "Osaka Museum of History",
+        "Shitennoji"
+      ],
+      "bestFirstTimers": [
+        "Osaka Castle Main Tower",
+        "Tsutenkaku",
+        "Mizuno (Dotonbori)",
+        "Sumiyoshi Taisha"
+      ],
+      "bestRestaurants": [
+        "Mizuno (Dotonbori)",
+        "Dotonbori Imai (Honten)",
+        "Mimiu (Honten megumi)",
+        "Cafe Couvert (Imperial Hotel Osaka)"
+      ],
+      "bestBudget": [
+        "Kizu Market",
+        "Nagai Botanical Garden",
+        "Osaka Science Museum",
+        "Rikuro Ojisan no Mise (Namba Honten)"
+      ],
+      "bestLuxury": [
+        "Bar Castle (Hotel New Otani Osaka)",
+        "Main Bar Vol de Nuit (Hotel Nikko Osaka)",
+        "Cafe Couvert (Imperial Hotel Osaka)",
+        "Patisserie SATSUKI (Hotel New Otani Osaka)"
+      ],
+      "bestCouples": [
+        "Nakanoshima Museum of Art, Osaka",
+        "Main Bar Vol de Nuit (Hotel Nikko Osaka)",
+        "Expo '70 Commemorative Park",
+        "Bar Castle (Hotel New Otani Osaka)"
+      ],
+      "bestKids": [
+        "Kids Plaza Osaka",
+        "Osaka Science Museum",
+        "Cupnoodles Museum Osaka Ikeda",
+        "Expo '70 Commemorative Park"
+      ],
+      "bestSolo": [
+        "Nakanoshima Museum of Art, Osaka",
+        "National Museum of Art, Osaka",
+        "Osaka City Museum of Fine Arts",
+        "Mondial Kaffee 328 (Club Ace, Shinsaibashi)"
+      ],
+      "bestUnique": [
+        "Kizu Market",
+        "Cupnoodles Museum Osaka Ikeda",
+        "Sumiyoshi Taisha",
+        "Shitennoji"
+      ],
+      "bestBreakfast": [
+        "SATSUKI (Hotel New Otani Osaka)",
+        "Cafe Couvert (Imperial Hotel Osaka)",
+        "Mondial Kaffee 328 (Club Ace, Shinsaibashi)",
+        "Kizu Market"
+      ],
+      "bestLunch": [
+        "Mimiu (Honten megumi)",
+        "Dotonbori Imai (Honten)",
+        "Mizuno (Dotonbori)"
+      ],
+      "bestDinner": [
+        "Mizuno (Dotonbori)",
+        "Dotonbori Imai (Honten)",
+        "Mimiu (Honten megumi)",
+        "SATSUKI (Hotel New Otani Osaka)"
+      ],
+      "bestCocktails": [
+        "Bar Castle (Hotel New Otani Osaka)",
+        "Main Bar Vol de Nuit (Hotel Nikko Osaka)"
+      ],
+      "bestBakeries": [
+        "Patisserie SATSUKI (Hotel New Otani Osaka)",
+        "Rikuro Ojisan no Mise (Namba Honten)",
+        "PABLO (Shinsaibashi Honten)"
+      ],
+      "bestCoffee": [
+        "Mondial Kaffee 328 (Club Ace, Shinsaibashi)",
+        "Hiro Coffee (Ekimarche Osaka)"
+      ]
+    },
+    "queries": {
+      "Osaka Castle Main Tower": "Osaka Castle Main Tower 1-1 Osakajo Chuo-ku Osaka",
+      "Tsutenkaku": "Tsutenkaku 1-18-6 Ebisuhigashi Naniwa-ku Osaka",
+      "Osaka Museum of History": "Osaka Museum of History 4-1-32 Otemae Chuo-ku Osaka",
+      "Shitennoji": "Shitennoji 1-11-18 Shitennoji Tennoji-ku Osaka",
+      "Sumiyoshi Taisha": "Sumiyoshi Taisha 2-9-89 Sumiyoshi Sumiyoshi-ku Osaka",
+      "Nakanoshima Museum of Art, Osaka": "Nakanoshima Museum of Art 4-3-1 Nakanoshima Kita-ku Osaka",
+      "National Museum of Art, Osaka": "National Museum of Art Osaka 4-2-55 Nakanoshima Kita-ku Osaka",
+      "Osaka City Museum of Fine Arts": "Osaka City Museum of Fine Arts 1-82 Chausuyamacho Tennoji-ku Osaka",
+      "Osaka Science Museum": "Osaka Science Museum 4-2-1 Nakanoshima Kita-ku Osaka",
+      "Kids Plaza Osaka": "Kids Plaza Osaka 2-1-7 Ogimachi Kita-ku Osaka",
+      "Expo '70 Commemorative Park": "Expo '70 Commemorative Park Senri Banpaku Koen Suita Osaka",
+      "Nagai Botanical Garden": "Nagai Botanical Garden 1-23 Nagai Koen Higashisumiyoshi-ku Osaka",
+      "Kizu Market": "Kizu Market 2-2-8 Shikitsuhigashi Naniwa-ku Osaka",
+      "Cupnoodles Museum Osaka Ikeda": "Cupnoodles Museum Osaka Ikeda 8-25 Masumicho Ikeda Osaka",
+      "Mizuno (Dotonbori)": "Mizuno okonomiyaki 1-4-15 Dotonbori Chuo-ku Osaka",
+      "Dotonbori Imai (Honten)": "Dotonbori Imai Honten 1-7-22 Dotonbori Chuo-ku Osaka",
+      "Mimiu (Honten megumi)": "Mimiu Honten 4-6-18 Hiranomachi Chuo-ku Osaka",
+      "Rikuro Ojisan no Mise (Namba Honten)": "Rikuro Ojisan no Mise Namba Honten 3-2-28 Namba Chuo-ku Osaka",
+      "PABLO (Shinsaibashi Honten)": "PABLO Shinsaibashi Honten 2-8-1 Shinsaibashisuji Chuo-ku Osaka",
+      "Bar Castle (Hotel New Otani Osaka)": "Bar Castle Hotel New Otani Osaka 1-4-1 Shiromi Chuo-ku Osaka",
+      "SATSUKI (Hotel New Otani Osaka)": "SATSUKI Hotel New Otani Osaka 1-4-1 Shiromi Chuo-ku Osaka",
+      "Patisserie SATSUKI (Hotel New Otani Osaka)": "Patisserie SATSUKI Hotel New Otani Osaka 1-4-1 Shiromi Chuo-ku Osaka",
+      "Cafe Couvert (Imperial Hotel Osaka)": "Cafe Couvert Imperial Hotel Osaka 1-8-50 Tenmabashi Kita-ku Osaka",
+      "Main Bar Vol de Nuit (Hotel Nikko Osaka)": "Vol de Nuit Hotel Nikko Osaka 1-3-3 Nishishinsaibashi Chuo-ku Osaka",
+      "Mondial Kaffee 328 (Club Ace, Shinsaibashi)": "Mondial Kaffee 328 Club Ace 1-10-4 Nishishinsaibashi Chuo-ku Osaka",
+      "Hiro Coffee (Ekimarche Osaka)": "Hiro Coffee Ekimarche Osaka 3-1-1 Umeda Kita-ku Osaka"
+    },
+    "summary": "Castle, temples, Nakanoshima museums and family science stops, with okonomiyaki, udon, hotel breakfasts, bakeries and cocktail bars checked against their own websites.",
+    "highlights": [
+      "Osaka Castle Main Tower",
+      "Tsutenkaku",
+      "Nakanoshima Museum of Art, Osaka",
+      "Shitennoji"
+    ],
+    "tip": "Plan museum days around closures: the Nakanoshima Museum of Art, the National Museum of Art and the Osaka City Museum of Fine Arts close on Mondays, while the Osaka Museum of History closes on Tuesdays.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mondays and Tuesdays",
+        "copy": "The Nakanoshima Museum of Art, National Museum of Art, Osaka City Museum of Fine Arts and Nagai Botanical Garden close on Mondays (next weekday after a holiday Monday). The Osaka Museum of History closes on Tuesdays, and Bar Castle at Hotel New Otani Osaka closes Mondays and Tuesdays."
+      },
+      {
+        "label": "Tickets",
+        "value": "Book ahead",
+        "copy": "Tsutenkaku says tickets bought by the day before let you enter at a set time, and Osaka Castle Main Tower sells advance admission through its booking site. Nagai Botanical Garden requires an electronic QR ticket at the North-East Gate."
+      },
+      {
+        "label": "Reservations",
+        "value": "Phone only",
+        "copy": "Mimiu's main store takes dinner by reservation only, by phone on weekdays, and is closed Saturdays, Sundays and holidays. Dotonbori Imai takes reservations by phone only, not by email."
+      },
+      {
+        "label": "Bar rules",
+        "value": "20+ and dress",
+        "copy": "Bar Castle admits guests aged 20 and over only and does not allow beach sandals or tank tops. Main Bar Vol de Nuit at Hotel Nikko Osaka adds a 990 yen music fee from 20:00 to 22:30."
+      }
+    ],
+    "dek": "Anchor each day on one district, check Monday and Tuesday museum closures, and book Tsutenkaku and any dinner reservations a day ahead.",
+    "intro": [
+      "Start where Osaka began. Osaka Castle Main Tower stands at 1-1 Osakajo, and its own site says you can buy admission tickets in advance through its booking site; its displays on Toyotomi Hideyoshi change about every two months. A short walk away, the Osaka Museum of History opens 9:30 to 17:00 and closes on Tuesdays. From 25 November 2026 to 1 February 2027 its feature display covers Okuda Benjiro, an entertainment impresario of Sennichimae. Further south, Shitennoji and Sumiyoshi Taisha are both active places of worship that keep publishing 2026 notices and seasonal events.",
+      "Nakanoshima gathers several museums within a few blocks. The Nakanoshima Museum of Art opens 10:00 to 17:00, closes on Mondays, and runs its NHK Sunday Museum 50th anniversary exhibition until 20 December 2026, alongside Edo painting from the British Museum's Japanese collection from 31 October 2026 to 31 January 2027. Next door, the National Museum of Art stays open until 20:00 on Fridays and opens \"Stratified Languages\" on 1 December. The Osaka Science Museum charges adults 400 yen for its exhibits, and its last planetarium show starts at 16:00.",
+      "For food, Mizuno in Dotonbori serves okonomiyaki from 11:00 to 22:00, and since February 2026 it no longer closes on Thursdays. Dotonbori Imai's main store serves udon from 11:30 to 21:30, closes on Wednesdays and the fourth Tuesday of most months, and takes reservations by phone. Mimiu's main store near Yodoyabashi opens on weekdays only, and dinner there is reservation-only. If you're up early, Kizu Market's shops open from about 6:00, and the market suggests coming between 8:30 and 10:30. It closes on Sundays, holidays and some Wednesdays.",
+      "Evenings can be quieter in the hotels. Bar Castle at Hotel New Otani Osaka opens 17:00 to midnight, closes Mondays and Tuesdays, admits only guests 20 and over, and runs the Super Osaka Cocktail Collection from 28 October to 29 November 2026. Main Bar Vol de Nuit at Hotel Nikko Osaka opens from 17:00 on weekdays, with live piano and a music fee from 20:00. For breakfast, SATSUKI opens at 7:00 with a morning buffet, and Cafe Couvert at Imperial Hotel Osaka serves breakfast from 6:30 to 11:00."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair Osaka Castle Main Tower with the Osaka Museum of History, then head south to Tsutenkaku, where advance tickets give you a set entry time."
+      ],
+      [
+        "A slower morning",
+        "Browse Kizu Market between 8:30 and 10:30, or take the 7:00 buffet at SATSUKI before a Nakanoshima museum opens at 10:00."
+      ],
+      [
+        "Before booking",
+        "Call ahead for Mimiu's reservation-only weekday dinners and Dotonbori Imai, and avoid Monday museum days on Nakanoshima."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability, and several hotel and museum sites note that hours may change. Kuromon Market and Brooklyn Roasting Company returned TLS errors; Abeno Harukas 300 and Takamura returned HTTP 403; Tennoji Zoo returned HTTP 503; teamLab Botanical Garden Osaka and Universal Studios Japan returned only page titles; and Kaiyukan's hours calendar did not load, so these are not included. Osaka Castle Main Tower is included with medium confidence: its address and advance booking were readable, but its opening hours and any dated 2026 notice were not. Hours were not published on the pages read for Shitennoji and Sumiyoshi Taisha. The Osaka Science Museum's closing-day calendar did not load, Rikuro's closing days are not listed, and Mondial Kaffee 328 lists two different closing times for its Club Ace branch. The Museum of Oriental Ceramics and the Osaka Museum of Housing and Living are closed for works.",
+  "injectionLikeText": []
+}

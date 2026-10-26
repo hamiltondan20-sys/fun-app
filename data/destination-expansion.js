@@ -4646,4 +4646,111 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 29 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Osaka, Japan: source review of 2026-10-25 (docs/content-research/osaka-2026-10-25.md).
+  {
+    const cityKey = "Osaka, Japan";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Osaka Castle Main Tower","Tsutenkaku","Osaka Museum of History","Shitennoji"],
+      bestFirstTimers: ["Osaka Castle Main Tower","Tsutenkaku","Mizuno (Dotonbori)","Sumiyoshi Taisha"],
+      bestRestaurants: ["Mizuno (Dotonbori)","Dotonbori Imai (Honten)","Mimiu (Honten megumi)","Cafe Couvert (Imperial Hotel Osaka)"],
+      bestBudget: ["Kizu Market","Nagai Botanical Garden","Osaka Science Museum","Rikuro Ojisan no Mise (Namba Honten)"],
+      bestLuxury: ["Bar Castle (Hotel New Otani Osaka)","Main Bar Vol de Nuit (Hotel Nikko Osaka)","Cafe Couvert (Imperial Hotel Osaka)","Patisserie SATSUKI (Hotel New Otani Osaka)"],
+      bestCouples: ["Nakanoshima Museum of Art, Osaka","Main Bar Vol de Nuit (Hotel Nikko Osaka)","Expo '70 Commemorative Park","Bar Castle (Hotel New Otani Osaka)"],
+      bestKids: ["Kids Plaza Osaka","Osaka Science Museum","Cupnoodles Museum Osaka Ikeda","Expo '70 Commemorative Park"],
+      bestSolo: ["Nakanoshima Museum of Art, Osaka","National Museum of Art, Osaka","Osaka City Museum of Fine Arts","Mondial Kaffee 328 (Club Ace, Shinsaibashi)"],
+      bestUnique: ["Kizu Market","Cupnoodles Museum Osaka Ikeda","Sumiyoshi Taisha","Shitennoji"],
+      bestBreakfast: ["SATSUKI (Hotel New Otani Osaka)","Cafe Couvert (Imperial Hotel Osaka)","Mondial Kaffee 328 (Club Ace, Shinsaibashi)","Kizu Market"],
+      bestLunch: ["Mimiu (Honten megumi)","Dotonbori Imai (Honten)","Mizuno (Dotonbori)"],
+      bestDinner: ["Mizuno (Dotonbori)","Dotonbori Imai (Honten)","Mimiu (Honten megumi)","SATSUKI (Hotel New Otani Osaka)"],
+      bestCocktails: ["Bar Castle (Hotel New Otani Osaka)","Main Bar Vol de Nuit (Hotel Nikko Osaka)"],
+      bestBakeries: ["Patisserie SATSUKI (Hotel New Otani Osaka)","Rikuro Ojisan no Mise (Namba Honten)","PABLO (Shinsaibashi Honten)"],
+      bestCoffee: ["Mondial Kaffee 328 (Club Ace, Shinsaibashi)","Hiro Coffee (Ekimarche Osaka)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Osaka Castle Main Tower": "Osaka Castle Main Tower 1-1 Osakajo Chuo-ku Osaka",
+      "Tsutenkaku": "Tsutenkaku 1-18-6 Ebisuhigashi Naniwa-ku Osaka",
+      "Osaka Museum of History": "Osaka Museum of History 4-1-32 Otemae Chuo-ku Osaka",
+      "Shitennoji": "Shitennoji 1-11-18 Shitennoji Tennoji-ku Osaka",
+      "Mizuno (Dotonbori)": "Mizuno okonomiyaki 1-4-15 Dotonbori Chuo-ku Osaka",
+      "Sumiyoshi Taisha": "Sumiyoshi Taisha 2-9-89 Sumiyoshi Sumiyoshi-ku Osaka",
+      "Dotonbori Imai (Honten)": "Dotonbori Imai Honten 1-7-22 Dotonbori Chuo-ku Osaka",
+      "Mimiu (Honten megumi)": "Mimiu Honten 4-6-18 Hiranomachi Chuo-ku Osaka",
+      "Cafe Couvert (Imperial Hotel Osaka)": "Cafe Couvert Imperial Hotel Osaka 1-8-50 Tenmabashi Kita-ku Osaka",
+      "Kizu Market": "Kizu Market 2-2-8 Shikitsuhigashi Naniwa-ku Osaka",
+      "Nagai Botanical Garden": "Nagai Botanical Garden 1-23 Nagai Koen Higashisumiyoshi-ku Osaka",
+      "Osaka Science Museum": "Osaka Science Museum 4-2-1 Nakanoshima Kita-ku Osaka",
+      "Rikuro Ojisan no Mise (Namba Honten)": "Rikuro Ojisan no Mise Namba Honten 3-2-28 Namba Chuo-ku Osaka",
+      "Bar Castle (Hotel New Otani Osaka)": "Bar Castle Hotel New Otani Osaka 1-4-1 Shiromi Chuo-ku Osaka",
+      "Main Bar Vol de Nuit (Hotel Nikko Osaka)": "Vol de Nuit Hotel Nikko Osaka 1-3-3 Nishishinsaibashi Chuo-ku Osaka",
+      "Patisserie SATSUKI (Hotel New Otani Osaka)": "Patisserie SATSUKI Hotel New Otani Osaka 1-4-1 Shiromi Chuo-ku Osaka",
+      "Nakanoshima Museum of Art, Osaka": "Nakanoshima Museum of Art 4-3-1 Nakanoshima Kita-ku Osaka",
+      "Expo '70 Commemorative Park": "Expo '70 Commemorative Park Senri Banpaku Koen Suita Osaka",
+      "Kids Plaza Osaka": "Kids Plaza Osaka 2-1-7 Ogimachi Kita-ku Osaka",
+      "Cupnoodles Museum Osaka Ikeda": "Cupnoodles Museum Osaka Ikeda 8-25 Masumicho Ikeda Osaka",
+      "National Museum of Art, Osaka": "National Museum of Art Osaka 4-2-55 Nakanoshima Kita-ku Osaka",
+      "Osaka City Museum of Fine Arts": "Osaka City Museum of Fine Arts 1-82 Chausuyamacho Tennoji-ku Osaka",
+      "Mondial Kaffee 328 (Club Ace, Shinsaibashi)": "Mondial Kaffee 328 Club Ace 1-10-4 Nishishinsaibashi Chuo-ku Osaka",
+      "SATSUKI (Hotel New Otani Osaka)": "SATSUKI Hotel New Otani Osaka 1-4-1 Shiromi Chuo-ku Osaka",
+      "PABLO (Shinsaibashi Honten)": "PABLO Shinsaibashi Honten 2-8-1 Shinsaibashisuji Chuo-ku Osaka",
+      "Hiro Coffee (Ekimarche Osaka)": "Hiro Coffee Ekimarche Osaka 3-1-1 Umeda Kita-ku Osaka"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Osaka" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Castle, temples, Nakanoshima museums and family science stops, with okonomiyaki, udon, hotel breakfasts, bakeries and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Osaka Castle Main Tower","Tsutenkaku","Nakanoshima Museum of Art, Osaka","Shitennoji"];
+    cityGuide.tip = "Plan museum days around closures: the Nakanoshima Museum of Art, the National Museum of Art and the Osaka City Museum of Fine Arts close on Mondays, while the Osaka Museum of History closes on Tuesdays.";
+    data.destinationFacts[cityKey] = "Plan museum days around closures: the Nakanoshima Museum of Art, the National Museum of Art and the Osaka City Museum of Fine Arts close on Mondays, while the Osaka Museum of History closes on Tuesdays.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Castle, temples, Nakanoshima museums and family science stops, with okonomiyaki, udon, hotel breakfasts, bakeries and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays and Tuesdays",
+        "copy": "The Nakanoshima Museum of Art, National Museum of Art, Osaka City Museum of Fine Arts and Nagai Botanical Garden close on Mondays (next weekday after a holiday Monday). The Osaka Museum of History closes on Tuesdays, and Bar Castle at Hotel New Otani Osaka closes Mondays and Tuesdays."
+      },
+      {
+        "label": "Tickets",
+        "value": "Book ahead",
+        "copy": "Tsutenkaku says tickets bought by the day before let you enter at a set time, and Osaka Castle Main Tower sells advance admission through its booking site. Nagai Botanical Garden requires an electronic QR ticket at the North-East Gate."
+      },
+      {
+        "label": "Reservations",
+        "value": "Phone only",
+        "copy": "Mimiu's main store takes dinner by reservation only, by phone on weekdays, and is closed Saturdays, Sundays and holidays. Dotonbori Imai takes reservations by phone only, not by email."
+      },
+      {
+        "label": "Bar rules",
+        "value": "20+ and dress",
+        "copy": "Bar Castle admits guests aged 20 and over only and does not allow beach sandals or tank tops. Main Bar Vol de Nuit at Hotel Nikko Osaka adds a 990 yen music fee from 20:00 to 22:30."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Anchor each day on one district, check Monday and Tuesday museum closures, and book Tsutenkaku and any dinner reservations a day ahead.",
+      intro: [
+        "Start where Osaka began. Osaka Castle Main Tower stands at 1-1 Osakajo, and its own site says you can buy admission tickets in advance through its booking site; its displays on Toyotomi Hideyoshi change about every two months. A short walk away, the Osaka Museum of History opens 9:30 to 17:00 and closes on Tuesdays. From 25 November 2026 to 1 February 2027 its feature display covers Okuda Benjiro, an entertainment impresario of Sennichimae. Further south, Shitennoji and Sumiyoshi Taisha are both active places of worship that keep publishing 2026 notices and seasonal events.",
+        "Nakanoshima gathers several museums within a few blocks. The Nakanoshima Museum of Art opens 10:00 to 17:00, closes on Mondays, and runs its NHK Sunday Museum 50th anniversary exhibition until 20 December 2026, alongside Edo painting from the British Museum's Japanese collection from 31 October 2026 to 31 January 2027. Next door, the National Museum of Art stays open until 20:00 on Fridays and opens \"Stratified Languages\" on 1 December. The Osaka Science Museum charges adults 400 yen for its exhibits, and its last planetarium show starts at 16:00.",
+        "For food, Mizuno in Dotonbori serves okonomiyaki from 11:00 to 22:00, and since February 2026 it no longer closes on Thursdays. Dotonbori Imai's main store serves udon from 11:30 to 21:30, closes on Wednesdays and the fourth Tuesday of most months, and takes reservations by phone. Mimiu's main store near Yodoyabashi opens on weekdays only, and dinner there is reservation-only. If you're up early, Kizu Market's shops open from about 6:00, and the market suggests coming between 8:30 and 10:30. It closes on Sundays, holidays and some Wednesdays.",
+        "Evenings can be quieter in the hotels. Bar Castle at Hotel New Otani Osaka opens 17:00 to midnight, closes Mondays and Tuesdays, admits only guests 20 and over, and runs the Super Osaka Cocktail Collection from 28 October to 29 November 2026. Main Bar Vol de Nuit at Hotel Nikko Osaka opens from 17:00 on weekdays, with live piano and a music fee from 20:00. For breakfast, SATSUKI opens at 7:00 with a morning buffet, and Cafe Couvert at Imperial Hotel Osaka serves breakfast from 6:30 to 11:00."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair Osaka Castle Main Tower with the Osaka Museum of History, then head south to Tsutenkaku, where advance tickets give you a set entry time."
+        ],
+        [
+          "A slower morning",
+          "Browse Kizu Market between 8:30 and 10:30, or take the 7:00 buffet at SATSUKI before a Nakanoshima museum opens at 10:00."
+        ],
+        [
+          "Before booking",
+          "Call ahead for Mimiu's reservation-only weekday dinners and Dotonbori Imai, and avoid Monday museum days on Nakanoshima."
+        ]
+      ],
+      trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();
