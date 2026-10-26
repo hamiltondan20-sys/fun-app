@@ -5,6 +5,637 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Lyon, France": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-25",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The Basilique Notre-Dame de Fourvière was left out only because its official site publishes no street address; its site was active and showed its gardens closed to 30 October 2026 for tower works. Sites that could not be read: Café des Fédérations (expired certificate), Le Bouchon des Filles (connection reset), Pralus (rate-limited), Cour des Loges (403), and Food Traboule (domain redirects elsewhere). Partially published: Institut Lumière, Villa Florentine, Fourvière Hôtel and Brasserie Georges show no hours on the pages read; Les Halles publishes stall hours rather than market hours; Le Sucre's hours vary by event. Several restaurants (La Mère Brazier, Takao Takano, Paul Bocuse, Bernachon, Slake) were confirmed by live booking or current hours rather than dated 2026 content.",
+    "sourceUrls": [
+      "docs/content-research/lyon-2026-10-25.md",
+      "docs/content-research/lyon-2026-10-25.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Fourviere Basilica (Basilique Notre-Dame de Fourvière)",
+        "url": "https://www.fourviere.org/fr/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site fourviere.org (home, access, hours, contact, legal pages) publishes no street address for the basilica, so it fails the address rule; site is active (2026 programme, basilica 7:00-20:00) but gardens are closed to 30 Oct 2026 for tower restoration."
+      },
+      {
+        "name": "Vieux Lyon",
+        "checkedOn": "2026-10-25",
+        "reason": "district, not a single place"
+      },
+      {
+        "name": "Musée des Tissus",
+        "url": "https://www.museedestissus.fr/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site says the museum is closed for renovation (\"continuing its transformation\"), with only Biennale use until 13 December; not used."
+      },
+      {
+        "name": "Musée Miniature et Cinéma",
+        "url": "https://www.museeminiatureetcinema.fr/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site shows no 2026 content or current hours; latest items date from 2023-2025, so current operation not confirmed."
+      },
+      {
+        "name": "Musée d'art contemporain de Lyon (MAC)",
+        "url": "https://www.mac-lyon.com/fr",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site gives only \"Cité Internationale, Lyon 6e\", no exact street address (Biennale running to 13 Dec 2026)."
+      },
+      {
+        "name": "CHRD (Centre d'histoire de la résistance et de la déportation)",
+        "url": "https://www.chrd.lyon.fr/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official home page shows no street address or hours; practical-info page returned 404."
+      },
+      {
+        "name": "Brasserie Le Nord (Bocuse)",
+        "url": "https://www.maisons-bocuse.com/reservation-restaurant/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official maisons-bocuse.com pages give hours but no street address; addresses found only on tourism/review sites, not usable."
+      },
+      {
+        "name": "Daniel et Denise",
+        "url": "https://www.danieletdenise.fr/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site gives no street addresses or hours for any branch and no 2026 content."
+      },
+      {
+        "name": "Café des Fédérations",
+        "url": "https://www.lesfedeslyon.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Fetch failed: certificate has expired."
+      },
+      {
+        "name": "Le Bouchon des Filles",
+        "url": "https://www.lebouchondesfilles.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Fetch failed: connection reset (ECONNRESET)."
+      },
+      {
+        "name": "Pralus",
+        "url": "https://www.chocolats-pralus.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Fetch refused: HTTP 429 Too Many Requests (three attempts); boutique page 404."
+      },
+      {
+        "name": "Food Traboule",
+        "url": "https://www.foodtraboule.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Domain redirects to an unrelated site (fhahermiston.com); no official page found."
+      },
+      {
+        "name": "Mokxa",
+        "url": "https://www.mokxa.fr/",
+        "checkedOn": "2026-10-25",
+        "reason": "mokxa.fr does not resolve; mokxa.com is an unrelated tech company."
+      },
+      {
+        "name": "Cour des Loges bar",
+        "url": "https://www.radissonhotels.com/fr-fr/hotels/radisson-collection-cour-des-loges-lyon/bar-restaurant/bar-lounge",
+        "checkedOn": "2026-10-25",
+        "reason": "Official Radisson page returned HTTP 403; cour-des-loges.com does not resolve."
+      },
+      {
+        "name": "Ninkasi (Saint-Paul)",
+        "url": "https://www.ninkasi.fr/lieux/ninkasi-saint-paul-2/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official venue page shows no street address or hours."
+      },
+      {
+        "name": "L'Antiquaire",
+        "checkedOn": "2026-10-25",
+        "reason": "No official website found; only listings and press, which are not usable."
+      },
+      {
+        "name": "Le Kitchen Café",
+        "url": "https://www.lekitchencafe.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Guessed official URL returned 404; no official page confirmed."
+      },
+      {
+        "name": "Traboule passages",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A Croix-Rousse silk history walk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Rhone and Saone river paths",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A traditional bouchon",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Les Halles food stalls",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A modern tasting menu",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Presqu'ile",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Croix-Rousse",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Vieux Lyon",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Vieux Lyon walk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Presqu'ile",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Croix-Rousse",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Croix-Rousse",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Vieux Lyon",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Vieux Lyon",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Traboule passages",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Presqu'ile",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Fourviere Basilica",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Vieux Lyon evening",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Presqu'ile",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Croix-Rousse",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Vieux Lyon",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Vieux Lyon",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Presqu'ile",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Croix-Rousse",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Vieux Lyon",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Vieux Lyon",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Vieux Lyon cafe or market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided A Croix-Rousse silk history walk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Croix-Rousse",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Croix-Rousse",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Vieux Lyon",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Vieux Lyon",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Presqu'ile bakery or market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Vieux Lyon",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Croix-Rousse",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Vieux Lyon",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Fourviere Basilica",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Croix-Rousse",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Vieux Lyon",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Presqu'ile",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Croix-Rousse",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Vieux Lyon",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Vieux Lyon",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Presqu'ile",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Les Halles de Lyon",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Vieux Lyon",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Presqu'ile morning market",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Vieux Lyon",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Croix-Rousse",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Vieux Lyon",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Presqu'ile",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Croix-Rousse",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Musée des Beaux-Arts de Lyon": {
+        "url": "https://www.mba-lyon.fr/fr",
+        "sourceType": "official public operator (Ville de Lyon museum site)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibitions \"Musée sentimental\" (11 Sept 2026 to 14 March 2027) and \"Musée-à-brac\" (23 Sept 2026 to 14 March 2027); also hosts the Biennale de Lyon to 13 Dec 2026. Modern collections currently not on view."
+      },
+      "Musée des Confluences": {
+        "url": "https://www.museedesconfluences.fr/fr",
+        "sourceType": "official public operator (Métropole de Lyon museum site)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Exhibitions \"Animal culte\" (16 Oct 2026 to 15 Aug 2027) and \"Corée du Nord\" (12 June 2026 to 2 Jan 2028); \"Fermeture exceptionnelle le sam. 24 oct. 2026\"."
+      },
+      "Musées Gadagne": {
+        "url": "https://www.gadagne-lyon.fr/",
+        "sourceType": "official public operator (Ville de Lyon museum site)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Lyon history museum and puppet museum; \"Merveilleux Moyen Âge\" shown \"jusqu'au dimanche 1er novembre 2026\", with a free event on 31 Oct."
+      },
+      "Lugdunum Musée et théâtres romains": {
+        "url": "https://lugdunum.grandlyon.com/fr/",
+        "sourceType": "official public operator (Métropole de Lyon)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Exhibitions \"Passé antérieur\" (2 Oct 2026 to 6 June 2027) and \"Théâtres romains - Quand l'Histoire façonne les destins\" (15 Oct 2026 to 15 April 2027); online ticketing."
+      },
+      "Maison des Canuts": {
+        "url": "https://www.maisondescanuts.fr/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Guided workshop tours \"du mardi au samedi à 11h et 15h30\"; Toussaint family silk workshops on 21, 23, 28 and 30 October (weekdays match 2026), booking required."
+      },
+      "Institut Lumière": {
+        "url": "https://www.institut-lumiere.org/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current programme \"Festival Lumière: Prolongations !\" \"Du mercredi 21 octobre au jeudi 19 novembre 2026\"; Musée Lumière Toussaint holiday activities."
+      },
+      "Les Halles de Lyon Paul Bocuse": {
+        "url": "https://www.lyon.fr/lieu/halles/halles-de-lyon-paul-bocuse",
+        "sourceType": "official public operator (Ville de Lyon) plus the market's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Market site article dated 28 avril 2026 on the Halles being ranked third-best market in the world; stall hours published (e.g. Giraudet Tue-Sat 8h30-19h, Sun 8h30-13h). City page: \"les lundis sont jours de repos pour de nombreux commerçants\"."
+      },
+      "Cathédrale Saint-Jean-Baptiste": {
+        "url": "https://www.cathedrale-lyon.fr/",
+        "sourceType": "operator's own site (cathedral parish)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Posts dated 6, 15 and 16 October 2026, including a Mass for the feast of the cathedral's dedication; regular Mass times published."
+      },
+      "Parc de la Tête d'Or": {
+        "url": "https://www.lyon.fr/lieu/parcs/parc-de-la-tete-dor",
+        "sourceType": "official public operator (Ville de Lyon)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "City page carries notices dated 23 and 25 October 2026 and current seasonal hours; entry barred a quarter-hour before closing and large parks close in winds above 70 km/h."
+      },
+      "Aquarium de Lyon": {
+        "url": "https://www.aquariumlyon.fr/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"NOUVEAUTES 2026 : Lueurs marines et Océan 360°\"; open on 1 and 11 November; \"PAS DE RESERVATION NECESSAIRE\" for general visits."
+      },
+      "Grand Hôtel-Dieu": {
+        "url": "https://www.grand-hotel-dieu.com/fr/informations",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Alphonse Mucha exhibition \"du 4 septembre 2026 au 24 janvier 2027\"; shops, Cité internationale de la gastronomie and restaurants on site."
+      },
+      "La Mère Brazier": {
+        "url": "https://www.lamerebrazier.fr/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online table booking for up to 5 people via TheFork widget; larger groups via the contact form."
+      },
+      "Brasserie Georges": {
+        "url": "https://www.brasseriegeorges.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Ouvert 7jours/7\" with live online reservation via Zenchef."
+      },
+      "Paul Bocuse (L'Auberge du Pont de Collonges)": {
+        "url": "https://www.bocuse.fr/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online table booking and published service times; \"tenue correcte est souhaitée\"."
+      },
+      "Takao Takano": {
+        "url": "https://www.takaotakano.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online reservation and gift vouchers via the site's booking page."
+      },
+      "Têtedoie": {
+        "url": "https://tetedoie.fr/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Three restaurants (Gastronomique, Bistrot, Rooftop) each with a TheFork booking widget; current menus Découverte 98 €, Inspiration 126 €, Signature 155 €; footer \"© 2026\"."
+      },
+      "Bernachon": {
+        "url": "https://www.bernachon.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Shop and tea room hours published, with a notice on December hours."
+      },
+      "Sébastien Bouillet (Croix-Rousse)": {
+        "url": "https://www.chocolatier-bouillet.com/nos-adresses-et-horaires",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Special hours published for \"Le dimanche 1er novembre : 8h30-13h\" and \"Le mercredi 11 novembre : 9h-19h\"; the house says it opened in Croix-Rousse in 1977."
+      },
+      "Boulangerie du Palais": {
+        "url": "https://www.chocolatier-bouillet.com/nos-adresses-et-horaires",
+        "sourceType": "operator's own site (Sébastien Bouillet)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Listed with special hours for 1 and 11 November: \"7h-19h\"."
+      },
+      "Café Bouillet": {
+        "url": "https://www.chocolatier-bouillet.com/nos-adresses-et-horaires",
+        "sourceType": "operator's own site (Sébastien Bouillet)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Listed with special hours for 1 November (8h-18h) and 11 November (8h-19h)."
+      },
+      "Slake (Jacobins)": {
+        "url": "https://www.slake-coffee.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Coffee shop with kitchen; current daily hours published (no dated content)."
+      },
+      "Slake (Terreaux)": {
+        "url": "https://www.slake-coffee.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Coffee shop with kitchen; current hours published (no dated content)."
+      },
+      "Le Sucre": {
+        "url": "https://www.le-sucre.eu/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Club and cultural venue \"situé sur le toit de la Sucrière\"; programme listed for 27 Oct to 6 Nov (2026 images/URLs), tickets via Shotgun."
+      },
+      "Villa Florentine": {
+        "url": "https://www.beauvallon.com/villa-florentine-lyon",
+        "sourceType": "operator's own site (hotel group)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Hotel with La Table (panoramic gastronomic restaurant), Le Comptoir and the speakeasy-style bar Segreto; online table booking offered."
+      },
+      "Fourvière Hôtel (Les Collections Bar)": {
+        "url": "https://www.fourviere-hotel.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Hotel bar Les Collections alongside Les Telephones restaurant; site says the restaurant has been in the Toques Blanches Lyonnaises \"since January 2026\"."
+      }
+    }
+  },
   "Zurich, Switzerland": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-25",

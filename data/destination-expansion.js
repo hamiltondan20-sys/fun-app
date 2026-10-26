@@ -5614,4 +5614,110 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 29 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Lyon, France: source review of 2026-10-25 (docs/content-research/lyon-2026-10-25.md).
+  {
+    const cityKey = "Lyon, France";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Musée des Confluences","Cathédrale Saint-Jean-Baptiste","Lugdunum Musée et théâtres romains","Musée des Beaux-Arts de Lyon"],
+      bestFirstTimers: ["Cathédrale Saint-Jean-Baptiste","Les Halles de Lyon Paul Bocuse","Musée des Beaux-Arts de Lyon","Grand Hôtel-Dieu"],
+      bestRestaurants: ["La Mère Brazier","Têtedoie","Paul Bocuse (L'Auberge du Pont de Collonges)","Takao Takano"],
+      bestBudget: ["Parc de la Tête d'Or","Maison des Canuts","Lugdunum Musée et théâtres romains","Boulangerie du Palais"],
+      bestLuxury: ["Paul Bocuse (L'Auberge du Pont de Collonges)","La Mère Brazier","Villa Florentine","Takao Takano"],
+      bestCouples: ["Têtedoie","Villa Florentine","Fourvière Hôtel (Les Collections Bar)","Grand Hôtel-Dieu"],
+      bestKids: ["Aquarium de Lyon","Parc de la Tête d'Or","Musée des Confluences","Musées Gadagne"],
+      bestSolo: ["Musées Gadagne","Institut Lumière","Slake (Jacobins)","Les Halles de Lyon Paul Bocuse"],
+      bestUnique: ["Maison des Canuts","Institut Lumière","Lugdunum Musée et théâtres romains","Le Sucre"],
+      bestBreakfast: ["Café Bouillet","Slake (Terreaux)","Boulangerie du Palais","Bernachon"],
+      bestLunch: ["Les Halles de Lyon Paul Bocuse","Brasserie Georges","Bernachon","Têtedoie"],
+      bestDinner: ["La Mère Brazier","Brasserie Georges","Têtedoie","Takao Takano"],
+      bestCocktails: ["Fourvière Hôtel (Les Collections Bar)","Villa Florentine","Le Sucre"],
+      bestBakeries: ["Sébastien Bouillet (Croix-Rousse)","Boulangerie du Palais","Bernachon"],
+      bestCoffee: ["Slake (Jacobins)","Slake (Terreaux)","Café Bouillet"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Musée des Confluences": "Musée des Confluences 86 quai Perrache Lyon",
+      "Cathédrale Saint-Jean-Baptiste": "Cathédrale Saint-Jean-Baptiste Place Saint-Jean Lyon",
+      "Lugdunum Musée et théâtres romains": "Lugdunum Musée et théâtres romains 17 rue Cléberg Lyon",
+      "Musée des Beaux-Arts de Lyon": "Musée des Beaux-Arts de Lyon 20 place des Terreaux Lyon",
+      "Les Halles de Lyon Paul Bocuse": "Les Halles de Lyon Paul Bocuse 102 cours Lafayette Lyon",
+      "Grand Hôtel-Dieu": "Grand Hôtel-Dieu 7 rue de la Barre Lyon",
+      "La Mère Brazier": "La Mère Brazier 12 Rue Royale Lyon",
+      "Têtedoie": "Têtedoie 4 Rue Pierre Marion Lyon",
+      "Paul Bocuse (L'Auberge du Pont de Collonges)": "Paul Bocuse L'Auberge du Pont de Collonges 40 Rue de la Plage Collonges-au-Mont-d'Or",
+      "Takao Takano": "Takao Takano 33 Rue Malesherbes Lyon",
+      "Parc de la Tête d'Or": "Parc de la Tête d'Or Place Général Leclerc Lyon",
+      "Maison des Canuts": "Maison des Canuts 10 rue d'Ivry Lyon",
+      "Boulangerie du Palais": "Boulangerie du Palais 8 rue du Palais de Justice Lyon",
+      "Villa Florentine": "Villa Florentine 25 montée Saint-Barthélémy Lyon",
+      "Fourvière Hôtel (Les Collections Bar)": "Fourvière Hôtel 23 Rue Roger Radisson Lyon",
+      "Aquarium de Lyon": "Aquarium de Lyon 7 rue Stéphane Déchant La Mulatière",
+      "Musées Gadagne": "Musées Gadagne 1 place du Petit Collège Lyon",
+      "Institut Lumière": "Institut Lumière 25 rue du Premier-Film Lyon",
+      "Slake (Jacobins)": "Slake 9 rue de l'Ancienne Préfecture Lyon",
+      "Le Sucre": "Le Sucre 50 quai Rambaud Lyon",
+      "Café Bouillet": "Café Bouillet 161 Boulevard de la Croix-Rousse Lyon",
+      "Slake (Terreaux)": "Slake 18 rue de la Platière Lyon",
+      "Bernachon": "Bernachon 42 Cours Franklin Roosevelt Lyon",
+      "Brasserie Georges": "Brasserie Georges 30 Cours de Verdun Lyon",
+      "Sébastien Bouillet (Croix-Rousse)": "Sébastien Bouillet 15 place de la Croix-Rousse Lyon"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Lyon" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Roman, art and science museums, a cathedral, a covered market and a city park, with bouchon-era tables, bakeries, cafés and bars checked against their own websites.";
+    cityGuide.highlights = ["Musée des Confluences","Cathédrale Saint-Jean-Baptiste","Lugdunum Musée et théâtres romains","Les Halles de Lyon Paul Bocuse"];
+    cityGuide.tip = "Plan around closing days: the Musée des Beaux-Arts shuts on Tuesdays and public holidays, Gadagne opens only Wednesday to Sunday, and La Mère Brazier serves only Monday to Friday.";
+    data.destinationFacts[cityKey] = "Plan around closing days: the Musée des Beaux-Arts shuts on Tuesdays and public holidays, Gadagne opens only Wednesday to Sunday, and La Mère Brazier serves only Monday to Friday.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Roman, art and science museums, a cathedral, a covered market and a city park, with bouchon-era tables, bakeries, cafés and bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Check before you go",
+        "copy": "The Musée des Beaux-Arts de Lyon is closed on Tuesdays and public holidays, and Musées Gadagne opens Wednesday to Sunday only. The Maison des Canuts opens Tuesday to Saturday and closes on public holidays."
+      },
+      {
+        "label": "Tickets",
+        "value": "Book online for big museums",
+        "copy": "The Musée des Confluences recommends buying tickets online to avoid queues and stays open until 22:00 on the first Thursday of the month. The Aquarium de Lyon says no booking is needed for general visits."
+      },
+      {
+        "label": "Restaurant days",
+        "value": "Weekday-only tables",
+        "copy": "La Mère Brazier serves Monday to Friday only, and Takao Takano opens Monday evening and Tuesday to Friday. Paul Bocuse at Collonges serves Wednesday to Sunday."
+      },
+      {
+        "label": "Dress and rules",
+        "value": "Smart dress for fine dining",
+        "copy": "Têtedoie's gastronomic room asks men to wear trousers and closed shoes, and Paul Bocuse asks for smart dress. At Parc de la Tête d'Or, entry is barred a quarter-hour before closing."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Anchor each day on one museum with fixed closing days, then book the weekday-only restaurants first.",
+      intro: [
+        "Lyon rewards you for planning around opening days. The Musée des Beaux-Arts de Lyon on place des Terreaux opens Wednesday to Monday and closes on Tuesdays and public holidays, while Musées Gadagne in Vieux Lyon, home to the city history and puppet museums, opens Wednesday to Sunday from 10:30 to 18:00. Across the Saône, the Cathédrale Saint-Jean-Baptiste opens every day, from 14:00 on Mondays. Up the hill, Lugdunum's museum opens Tuesday to Sunday, and its Roman theatres open from 7:00 to 19:00 through the winter season.",
+        "Several exhibitions run well into next year. At the Musée des Beaux-Arts, Musée sentimental runs from 11 September 2026 to 14 March 2027, and the Biennale de Lyon is on until 13 December 2026. The Musée des Confluences shows Animal culte until 15 August 2027 and Corée du Nord until 2 January 2028, with a late opening to 22:00 on the first Thursday of each month. At the Grand Hôtel-Dieu, an Alphonse Mucha exhibition runs to 24 January 2027, and the courtyards and gardens open daily from 7:30.",
+        "For food, start at Les Halles de Lyon Paul Bocuse on cours Lafayette, but note its warning that Mondays are a rest day for many traders. Book the classic tables early: La Mère Brazier on rue Royale serves Monday to Friday only, Paul Bocuse at Collonges serves Wednesday to Sunday, and Têtedoie on rue Pierre Marion runs a gastronomic room, closed Tuesdays, beside a bistrot open daily. Brasserie Georges by Perrache opens seven days a week and takes online bookings.",
+        "Mornings are easy. Sébastien Bouillet's Boulangerie du Palais in Vieux Lyon opens daily from 7:00, and Café Bouillet on boulevard de la Croix-Rousse opens from 8:00. Slake runs coffee shops in the Jacobins and Terreaux areas from 8:00. In Croix-Rousse, the Maison des Canuts runs guided silk-workshop tours Tuesday to Saturday at 11:00 and 15:30. With children, the Aquarium de Lyon opens daily from 10:30 without booking, and Parc de la Tête d'Or keeps winter hours of 6:30 to 20:30."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair the Cathédrale Saint-Jean-Baptiste and Musées Gadagne in Vieux Lyon with an afternoon at the Musée des Confluences."
+        ],
+        [
+          "A slower morning",
+          "Start with a coffee at Café Bouillet, then take the 11:00 guided tour at the Maison des Canuts, Tuesday to Saturday."
+        ],
+        [
+          "Before booking",
+          "La Mère Brazier closes at weekends and the Musée des Beaux-Arts closes on Tuesdays, so set those days first."
+        ]
+      ],
+      trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

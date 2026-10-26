@@ -1,0 +1,880 @@
+{
+  "city": "Lyon, France",
+  "checkedOn": "2026-10-25",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Musée des Beaux-Arts de Lyon",
+      "kind": "museum",
+      "url": "https://www.mba-lyon.fr/fr",
+      "sourceType": "official public operator (Ville de Lyon museum site)",
+      "address": "20, place des Terreaux, 69001 Lyon",
+      "operatingEvidence": "Current exhibitions \"Musée sentimental\" (11 Sept 2026 to 14 March 2027) and \"Musée-à-brac\" (23 Sept 2026 to 14 March 2027); also hosts the Biennale de Lyon to 13 Dec 2026. Modern collections currently not on view.",
+      "hours": "Wed-Mon 10:00-18:00 (Fri 10:30-18:00); \"Musée fermé les mardis et jours fériés\"; ticket desks close 17:30",
+      "confidence": "high"
+    },
+    {
+      "name": "Musée des Confluences",
+      "kind": "museum",
+      "url": "https://www.museedesconfluences.fr/fr",
+      "sourceType": "official public operator (Métropole de Lyon museum site)",
+      "address": "86 quai Perrache, 69002 Lyon",
+      "operatingEvidence": "Exhibitions \"Animal culte\" (16 Oct 2026 to 15 Aug 2027) and \"Corée du Nord\" (12 June 2026 to 2 Jan 2028); \"Fermeture exceptionnelle le sam. 24 oct. 2026\".",
+      "hours": "\"Mardi à dimanche de 10h30 à 18h30 (période scolaire & été)\"; daily in zone A school holidays except summer; \"Nocturne jusqu'à 22h le 1er jeudi du mois\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Musées Gadagne",
+      "kind": "museum",
+      "url": "https://www.gadagne-lyon.fr/",
+      "sourceType": "official public operator (Ville de Lyon museum site)",
+      "address": "1 place du Petit Collège, 69005 Lyon",
+      "operatingEvidence": "Lyon history museum and puppet museum; \"Merveilleux Moyen Âge\" shown \"jusqu'au dimanche 1er novembre 2026\", with a free event on 31 Oct.",
+      "hours": "\"Ouvert du mercredi au dimanche de 10h30 à 18h\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Lugdunum Musée et théâtres romains",
+      "kind": "museum",
+      "url": "https://lugdunum.grandlyon.com/fr/",
+      "sourceType": "official public operator (Métropole de Lyon)",
+      "address": "17 rue Cléberg, 69005 Lyon",
+      "operatingEvidence": "Exhibitions \"Passé antérieur\" (2 Oct 2026 to 6 June 2027) and \"Théâtres romains - Quand l'Histoire façonne les destins\" (15 Oct 2026 to 15 April 2027); online ticketing.",
+      "hours": "Museum Tue-Fri 11:00-18:00, Sat-Sun 10:00-18:00; Roman theatres 7:00-19:00 from 1 Oct to 30 April, 7:00-21:00 from 2 May to 30 Sept",
+      "confidence": "high"
+    },
+    {
+      "name": "Maison des Canuts",
+      "kind": "museum",
+      "url": "https://www.maisondescanuts.fr/",
+      "sourceType": "operator's own site",
+      "address": "10/12 rue d'Ivry, 69004 Lyon",
+      "operatingEvidence": "Guided workshop tours \"du mardi au samedi à 11h et 15h30\"; Toussaint family silk workshops on 21, 23, 28 and 30 October (weekdays match 2026), booking required.",
+      "hours": "Tue-Fri 10:00-13:00 and 14:00-18:00; Sat 10:00-18:00; \"Fermeture les jours fériés\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Institut Lumière",
+      "kind": "museum",
+      "url": "https://www.institut-lumiere.org/",
+      "sourceType": "operator's own site",
+      "address": "25 rue du Premier-Film, Lyon 8e",
+      "operatingEvidence": "Current programme \"Festival Lumière: Prolongations !\" \"Du mercredi 21 octobre au jeudi 19 novembre 2026\"; Musée Lumière Toussaint holiday activities.",
+      "hours": "not published (on the page read)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Les Halles de Lyon Paul Bocuse",
+      "kind": "market",
+      "url": "https://www.lyon.fr/lieu/halles/halles-de-lyon-paul-bocuse",
+      "sourceType": "official public operator (Ville de Lyon) plus the market's own site",
+      "address": "102 cours Lafayette, 69003 Lyon",
+      "operatingEvidence": "Market site article dated 28 avril 2026 on the Halles being ranked third-best market in the world; stall hours published (e.g. Giraudet Tue-Sat 8h30-19h, Sun 8h30-13h). City page: \"les lundis sont jours de repos pour de nombreux commerçants\".",
+      "hours": "not published for the market as a whole; individual stalls set their own hours",
+      "confidence": "high"
+    },
+    {
+      "name": "Cathédrale Saint-Jean-Baptiste",
+      "kind": "landmark",
+      "url": "https://www.cathedrale-lyon.fr/",
+      "sourceType": "operator's own site (cathedral parish)",
+      "address": "Place Saint-Jean, 69005 Lyon",
+      "operatingEvidence": "Posts dated 6, 15 and 16 October 2026, including a Mass for the feast of the cathedral's dedication; regular Mass times published.",
+      "hours": "Mon 14:00-19:00; Tue-Fri 8:30-19:00 (Wed to 19:30); Sat 8:30-19:30; Sun 8:00-19:30",
+      "confidence": "high"
+    },
+    {
+      "name": "Parc de la Tête d'Or",
+      "kind": "park",
+      "url": "https://www.lyon.fr/lieu/parcs/parc-de-la-tete-dor",
+      "sourceType": "official public operator (Ville de Lyon)",
+      "address": "Place Général Leclerc, 69006 Lyon",
+      "operatingEvidence": "City page carries notices dated 23 and 25 October 2026 and current seasonal hours; entry barred a quarter-hour before closing and large parks close in winds above 70 km/h.",
+      "hours": "Winter (15 Oct-14 April) 6:30-20:30; summer (15 April-14 Oct) 6:30-22:30",
+      "confidence": "high"
+    },
+    {
+      "name": "Aquarium de Lyon",
+      "kind": "museum",
+      "url": "https://www.aquariumlyon.fr/",
+      "sourceType": "operator's own site",
+      "address": "7 rue Stéphane Déchant, La Mulatière, 69350",
+      "operatingEvidence": "\"NOUVEAUTES 2026 : Lueurs marines et Océan 360°\"; open on 1 and 11 November; \"PAS DE RESERVATION NECESSAIRE\" for general visits.",
+      "hours": "\"OUVERT TOUS LES JOURS DE 10H30 A 18H30\", last entry 17:30",
+      "confidence": "high"
+    },
+    {
+      "name": "Grand Hôtel-Dieu",
+      "kind": "landmark",
+      "url": "https://www.grand-hotel-dieu.com/fr/informations",
+      "sourceType": "operator's own site",
+      "address": "7 rue de la Barre, 69002 Lyon (Bellecour side); 11 place de l'Hôpital, 69002 Lyon (République side)",
+      "operatingEvidence": "Alphonse Mucha exhibition \"du 4 septembre 2026 au 24 janvier 2027\"; shops, Cité internationale de la gastronomie and restaurants on site.",
+      "hours": "Courtyards and gardens \"tous les jours de 7h30 à 1h00\"; shops Mon-Sat 11:00-19:00",
+      "confidence": "high"
+    },
+    {
+      "name": "La Mère Brazier",
+      "kind": "meal",
+      "url": "https://www.lamerebrazier.fr/",
+      "sourceType": "operator's own site",
+      "address": "12 Rue Royale, 69001 Lyon",
+      "operatingEvidence": "Online table booking for up to 5 people via TheFork widget; larger groups via the contact form.",
+      "hours": "\"Ouvert du lundi au vendredi\": lunch 12:00-13:15, dinner 19:45-21:15; closed Sat-Sun",
+      "confidence": "medium"
+    },
+    {
+      "name": "Brasserie Georges",
+      "kind": "meal",
+      "url": "https://www.brasseriegeorges.com/",
+      "sourceType": "operator's own site",
+      "address": "30 Cours de Verdun, 69002 Lyon Perrache",
+      "operatingEvidence": "\"Ouvert 7jours/7\" with live online reservation via Zenchef.",
+      "hours": "\"Ouvert 7jours/7\" (times not published on the page read)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Paul Bocuse (L'Auberge du Pont de Collonges)",
+      "kind": "meal",
+      "url": "https://www.bocuse.fr/",
+      "sourceType": "operator's own site",
+      "address": "40 Rue de la Plage, 69660 Collonges-au-Mont-d'Or",
+      "operatingEvidence": "Online table booking and published service times; \"tenue correcte est souhaitée\".",
+      "hours": "Wed-Sun, lunch 12:00-13:15, dinner 20:00-21:15",
+      "confidence": "medium"
+    },
+    {
+      "name": "Takao Takano",
+      "kind": "meal",
+      "url": "https://www.takaotakano.com/",
+      "sourceType": "operator's own site",
+      "address": "33 Rue Malesherbes, 69006 Lyon",
+      "operatingEvidence": "Online reservation and gift vouchers via the site's booking page.",
+      "hours": "\"Lundi soir et du mardi au vendredi, midi et soir\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Têtedoie",
+      "kind": "meal",
+      "url": "https://tetedoie.fr/",
+      "sourceType": "operator's own site",
+      "address": "4, Rue Pierre Marion, 69005 Lyon",
+      "operatingEvidence": "Three restaurants (Gastronomique, Bistrot, Rooftop) each with a TheFork booking widget; current menus Découverte 98 €, Inspiration 126 €, Signature 155 €; footer \"© 2026\".",
+      "hours": "Gastronomique daily except Tuesday, 12:00-13:30 and 19:30-21:30; Bistrot daily 12:00-13:30 and 19:00-21:30",
+      "confidence": "high"
+    },
+    {
+      "name": "Bernachon",
+      "kind": "bakery",
+      "url": "https://www.bernachon.com/",
+      "sourceType": "operator's own site",
+      "address": "42 Cours Franklin Roosevelt, 69006 Lyon",
+      "operatingEvidence": "Shop and tea room hours published, with a notice on December hours.",
+      "hours": "Shop Tue-Sat 8:30-19:00, Sun 8:30-17:00; tea room Tue-Sat 9:00-18:30, lunch 12:00-14:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Sébastien Bouillet (Croix-Rousse)",
+      "kind": "bakery",
+      "url": "https://www.chocolatier-bouillet.com/nos-adresses-et-horaires",
+      "sourceType": "operator's own site",
+      "address": "15 place de la Croix-Rousse, 69004 Lyon",
+      "operatingEvidence": "Special hours published for \"Le dimanche 1er novembre : 8h30-13h\" and \"Le mercredi 11 novembre : 9h-19h\"; the house says it opened in Croix-Rousse in 1977.",
+      "hours": "Mon 9:30-13:00/14:00-19:00; Tue 9:00-13:00/14:00-19:00; Wed-Thu 9:00-19:00; Fri 9:00-19:30; Sat 8:30-19:30; Sun 8:30-13:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Boulangerie du Palais",
+      "kind": "bakery",
+      "url": "https://www.chocolatier-bouillet.com/nos-adresses-et-horaires",
+      "sourceType": "operator's own site (Sébastien Bouillet)",
+      "address": "8 rue du Palais de Justice, 69005 Lyon",
+      "operatingEvidence": "Listed with special hours for 1 and 11 November: \"7h-19h\".",
+      "hours": "\"Du lundi au dimanche : 7h-19h\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Café Bouillet",
+      "kind": "cafe",
+      "url": "https://www.chocolatier-bouillet.com/nos-adresses-et-horaires",
+      "sourceType": "operator's own site (Sébastien Bouillet)",
+      "address": "161 Boulevard de la Croix-Rousse, 69004 Lyon",
+      "operatingEvidence": "Listed with special hours for 1 November (8h-18h) and 11 November (8h-19h).",
+      "hours": "\"Du lundi au samedi : 8h-19h\"; \"Le dimanche : 8h-18h\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Slake (Jacobins)",
+      "kind": "cafe",
+      "url": "https://www.slake-coffee.com/",
+      "sourceType": "operator's own site",
+      "address": "9 rue de l'Ancienne Préfecture, 69002 Lyon",
+      "operatingEvidence": "Coffee shop with kitchen; current daily hours published (no dated content).",
+      "hours": "Daily 8:00-18:00; kitchen 8:00-14:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Slake (Terreaux)",
+      "kind": "cafe",
+      "url": "https://www.slake-coffee.com/",
+      "sourceType": "operator's own site",
+      "address": "18 rue de la Platière, 69001 Lyon",
+      "operatingEvidence": "Coffee shop with kitchen; current hours published (no dated content).",
+      "hours": "Daily 8:00-16:30, Sat 8:00-18:00; kitchen Mon-Fri 8:00-14:00, weekends 8:00-15:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Le Sucre",
+      "kind": "bar",
+      "url": "https://www.le-sucre.eu/",
+      "sourceType": "operator's own site",
+      "address": "50, quai Rambaud, Lyon",
+      "operatingEvidence": "Club and cultural venue \"situé sur le toit de la Sucrière\"; programme listed for 27 Oct to 6 Nov (2026 images/URLs), tickets via Shotgun.",
+      "hours": "Varies by event (ranges shown 18:00-01:00, 23:00-05:00); not clearly published by day",
+      "confidence": "medium"
+    },
+    {
+      "name": "Villa Florentine",
+      "kind": "meal",
+      "url": "https://www.beauvallon.com/villa-florentine-lyon",
+      "sourceType": "operator's own site (hotel group)",
+      "address": "25 montée Saint-Barthélémy, 69005 Lyon",
+      "operatingEvidence": "Hotel with La Table (panoramic gastronomic restaurant), Le Comptoir and the speakeasy-style bar Segreto; online table booking offered.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Fourvière Hôtel (Les Collections Bar)",
+      "kind": "bar",
+      "url": "https://www.fourviere-hotel.com/",
+      "sourceType": "operator's own site",
+      "address": "23 Rue Roger Radisson, 69005 Lyon",
+      "operatingEvidence": "Hotel bar Les Collections alongside Les Telephones restaurant; site says the restaurant has been in the Toques Blanches Lyonnaises \"since January 2026\".",
+      "hours": "not published",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Fourviere Basilica (Basilique Notre-Dame de Fourvière)",
+      "reason": "Official site fourviere.org (home, access, hours, contact, legal pages) publishes no street address for the basilica, so it fails the address rule; site is active (2026 programme, basilica 7:00-20:00) but gardens are closed to 30 Oct 2026 for tower restoration.",
+      "url": "https://www.fourviere.org/fr/"
+    },
+    {
+      "name": "Vieux Lyon",
+      "reason": "district, not a single place",
+      "url": ""
+    },
+    {
+      "name": "Musée des Tissus",
+      "reason": "Official site says the museum is closed for renovation (\"continuing its transformation\"), with only Biennale use until 13 December; not used.",
+      "url": "https://www.museedestissus.fr/"
+    },
+    {
+      "name": "Musée Miniature et Cinéma",
+      "reason": "Official site shows no 2026 content or current hours; latest items date from 2023-2025, so current operation not confirmed.",
+      "url": "https://www.museeminiatureetcinema.fr/"
+    },
+    {
+      "name": "Musée d'art contemporain de Lyon (MAC)",
+      "reason": "Official site gives only \"Cité Internationale, Lyon 6e\", no exact street address (Biennale running to 13 Dec 2026).",
+      "url": "https://www.mac-lyon.com/fr"
+    },
+    {
+      "name": "CHRD (Centre d'histoire de la résistance et de la déportation)",
+      "reason": "Official home page shows no street address or hours; practical-info page returned 404.",
+      "url": "https://www.chrd.lyon.fr/"
+    },
+    {
+      "name": "Brasserie Le Nord (Bocuse)",
+      "reason": "Official maisons-bocuse.com pages give hours but no street address; addresses found only on tourism/review sites, not usable.",
+      "url": "https://www.maisons-bocuse.com/reservation-restaurant/"
+    },
+    {
+      "name": "Daniel et Denise",
+      "reason": "Official site gives no street addresses or hours for any branch and no 2026 content.",
+      "url": "https://www.danieletdenise.fr/"
+    },
+    {
+      "name": "Café des Fédérations",
+      "reason": "Fetch failed: certificate has expired.",
+      "url": "https://www.lesfedeslyon.com/"
+    },
+    {
+      "name": "Le Bouchon des Filles",
+      "reason": "Fetch failed: connection reset (ECONNRESET).",
+      "url": "https://www.lebouchondesfilles.com/"
+    },
+    {
+      "name": "Pralus",
+      "reason": "Fetch refused: HTTP 429 Too Many Requests (three attempts); boutique page 404.",
+      "url": "https://www.chocolats-pralus.com/"
+    },
+    {
+      "name": "Food Traboule",
+      "reason": "Domain redirects to an unrelated site (fhahermiston.com); no official page found.",
+      "url": "https://www.foodtraboule.com/"
+    },
+    {
+      "name": "Mokxa",
+      "reason": "mokxa.fr does not resolve; mokxa.com is an unrelated tech company.",
+      "url": "https://www.mokxa.fr/"
+    },
+    {
+      "name": "Cour des Loges bar",
+      "reason": "Official Radisson page returned HTTP 403; cour-des-loges.com does not resolve.",
+      "url": "https://www.radissonhotels.com/fr-fr/hotels/radisson-collection-cour-des-loges-lyon/bar-restaurant/bar-lounge"
+    },
+    {
+      "name": "Ninkasi (Saint-Paul)",
+      "reason": "Official venue page shows no street address or hours.",
+      "url": "https://www.ninkasi.fr/lieux/ninkasi-saint-paul-2/"
+    },
+    {
+      "name": "L'Antiquaire",
+      "reason": "No official website found; only listings and press, which are not usable.",
+      "url": ""
+    },
+    {
+      "name": "Le Kitchen Café",
+      "reason": "Guessed official URL returned 404; no official page confirmed.",
+      "url": "https://www.lekitchencafe.com/"
+    },
+    {
+      "name": "Traboule passages",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A Croix-Rousse silk history walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Rhone and Saone river paths",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A traditional bouchon",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Les Halles food stalls",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A modern tasting menu",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Presqu'ile",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Croix-Rousse",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Vieux Lyon",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Vieux Lyon walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Presqu'ile",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Croix-Rousse",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Croix-Rousse",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Vieux Lyon",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Vieux Lyon",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Traboule passages",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Presqu'ile",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Fourviere Basilica",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Vieux Lyon evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Presqu'ile",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Croix-Rousse",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Vieux Lyon",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Vieux Lyon",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Presqu'ile",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Croix-Rousse",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Vieux Lyon",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Vieux Lyon",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Vieux Lyon cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided A Croix-Rousse silk history walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Croix-Rousse",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Croix-Rousse",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Vieux Lyon",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Vieux Lyon",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Presqu'ile bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Vieux Lyon",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Croix-Rousse",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Vieux Lyon",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Fourviere Basilica",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Croix-Rousse",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Vieux Lyon",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Presqu'ile",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Croix-Rousse",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Vieux Lyon",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Vieux Lyon",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Presqu'ile",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Les Halles de Lyon",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Vieux Lyon",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Presqu'ile morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Vieux Lyon",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Croix-Rousse",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Vieux Lyon",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Presqu'ile",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Croix-Rousse",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Musée des Confluences",
+        "Cathédrale Saint-Jean-Baptiste",
+        "Lugdunum Musée et théâtres romains",
+        "Musée des Beaux-Arts de Lyon"
+      ],
+      "bestFirstTimers": [
+        "Cathédrale Saint-Jean-Baptiste",
+        "Les Halles de Lyon Paul Bocuse",
+        "Musée des Beaux-Arts de Lyon",
+        "Grand Hôtel-Dieu"
+      ],
+      "bestRestaurants": [
+        "La Mère Brazier",
+        "Têtedoie",
+        "Paul Bocuse (L'Auberge du Pont de Collonges)",
+        "Takao Takano"
+      ],
+      "bestBudget": [
+        "Parc de la Tête d'Or",
+        "Maison des Canuts",
+        "Lugdunum Musée et théâtres romains",
+        "Boulangerie du Palais"
+      ],
+      "bestLuxury": [
+        "Paul Bocuse (L'Auberge du Pont de Collonges)",
+        "La Mère Brazier",
+        "Villa Florentine",
+        "Takao Takano"
+      ],
+      "bestCouples": [
+        "Têtedoie",
+        "Villa Florentine",
+        "Fourvière Hôtel (Les Collections Bar)",
+        "Grand Hôtel-Dieu"
+      ],
+      "bestKids": [
+        "Aquarium de Lyon",
+        "Parc de la Tête d'Or",
+        "Musée des Confluences",
+        "Musées Gadagne"
+      ],
+      "bestSolo": [
+        "Musées Gadagne",
+        "Institut Lumière",
+        "Slake (Jacobins)",
+        "Les Halles de Lyon Paul Bocuse"
+      ],
+      "bestUnique": [
+        "Maison des Canuts",
+        "Institut Lumière",
+        "Lugdunum Musée et théâtres romains",
+        "Le Sucre"
+      ],
+      "bestBreakfast": [
+        "Café Bouillet",
+        "Slake (Terreaux)",
+        "Boulangerie du Palais",
+        "Bernachon"
+      ],
+      "bestLunch": [
+        "Les Halles de Lyon Paul Bocuse",
+        "Brasserie Georges",
+        "Bernachon",
+        "Têtedoie"
+      ],
+      "bestDinner": [
+        "La Mère Brazier",
+        "Brasserie Georges",
+        "Têtedoie",
+        "Takao Takano"
+      ],
+      "bestCocktails": [
+        "Fourvière Hôtel (Les Collections Bar)",
+        "Villa Florentine",
+        "Le Sucre"
+      ],
+      "bestBakeries": [
+        "Sébastien Bouillet (Croix-Rousse)",
+        "Boulangerie du Palais",
+        "Bernachon"
+      ],
+      "bestCoffee": [
+        "Slake (Jacobins)",
+        "Slake (Terreaux)",
+        "Café Bouillet"
+      ]
+    },
+    "queries": {
+      "Musée des Beaux-Arts de Lyon": "Musée des Beaux-Arts de Lyon 20 place des Terreaux Lyon",
+      "Musée des Confluences": "Musée des Confluences 86 quai Perrache Lyon",
+      "Musées Gadagne": "Musées Gadagne 1 place du Petit Collège Lyon",
+      "Lugdunum Musée et théâtres romains": "Lugdunum Musée et théâtres romains 17 rue Cléberg Lyon",
+      "Maison des Canuts": "Maison des Canuts 10 rue d'Ivry Lyon",
+      "Institut Lumière": "Institut Lumière 25 rue du Premier-Film Lyon",
+      "Les Halles de Lyon Paul Bocuse": "Les Halles de Lyon Paul Bocuse 102 cours Lafayette Lyon",
+      "Cathédrale Saint-Jean-Baptiste": "Cathédrale Saint-Jean-Baptiste Place Saint-Jean Lyon",
+      "Parc de la Tête d'Or": "Parc de la Tête d'Or Place Général Leclerc Lyon",
+      "Aquarium de Lyon": "Aquarium de Lyon 7 rue Stéphane Déchant La Mulatière",
+      "Grand Hôtel-Dieu": "Grand Hôtel-Dieu 7 rue de la Barre Lyon",
+      "La Mère Brazier": "La Mère Brazier 12 Rue Royale Lyon",
+      "Brasserie Georges": "Brasserie Georges 30 Cours de Verdun Lyon",
+      "Paul Bocuse (L'Auberge du Pont de Collonges)": "Paul Bocuse L'Auberge du Pont de Collonges 40 Rue de la Plage Collonges-au-Mont-d'Or",
+      "Takao Takano": "Takao Takano 33 Rue Malesherbes Lyon",
+      "Têtedoie": "Têtedoie 4 Rue Pierre Marion Lyon",
+      "Bernachon": "Bernachon 42 Cours Franklin Roosevelt Lyon",
+      "Sébastien Bouillet (Croix-Rousse)": "Sébastien Bouillet 15 place de la Croix-Rousse Lyon",
+      "Boulangerie du Palais": "Boulangerie du Palais 8 rue du Palais de Justice Lyon",
+      "Café Bouillet": "Café Bouillet 161 Boulevard de la Croix-Rousse Lyon",
+      "Slake (Jacobins)": "Slake 9 rue de l'Ancienne Préfecture Lyon",
+      "Slake (Terreaux)": "Slake 18 rue de la Platière Lyon",
+      "Le Sucre": "Le Sucre 50 quai Rambaud Lyon",
+      "Villa Florentine": "Villa Florentine 25 montée Saint-Barthélémy Lyon",
+      "Fourvière Hôtel (Les Collections Bar)": "Fourvière Hôtel 23 Rue Roger Radisson Lyon"
+    },
+    "summary": "Roman, art and science museums, a cathedral, a covered market and a city park, with bouchon-era tables, bakeries, cafés and bars checked against their own websites.",
+    "highlights": [
+      "Musée des Confluences",
+      "Cathédrale Saint-Jean-Baptiste",
+      "Lugdunum Musée et théâtres romains",
+      "Les Halles de Lyon Paul Bocuse"
+    ],
+    "tip": "Plan around closing days: the Musée des Beaux-Arts shuts on Tuesdays and public holidays, Gadagne opens only Wednesday to Sunday, and La Mère Brazier serves only Monday to Friday.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Check before you go",
+        "copy": "The Musée des Beaux-Arts de Lyon is closed on Tuesdays and public holidays, and Musées Gadagne opens Wednesday to Sunday only. The Maison des Canuts opens Tuesday to Saturday and closes on public holidays."
+      },
+      {
+        "label": "Tickets",
+        "value": "Book online for big museums",
+        "copy": "The Musée des Confluences recommends buying tickets online to avoid queues and stays open until 22:00 on the first Thursday of the month. The Aquarium de Lyon says no booking is needed for general visits."
+      },
+      {
+        "label": "Restaurant days",
+        "value": "Weekday-only tables",
+        "copy": "La Mère Brazier serves Monday to Friday only, and Takao Takano opens Monday evening and Tuesday to Friday. Paul Bocuse at Collonges serves Wednesday to Sunday."
+      },
+      {
+        "label": "Dress and rules",
+        "value": "Smart dress for fine dining",
+        "copy": "Têtedoie's gastronomic room asks men to wear trousers and closed shoes, and Paul Bocuse asks for smart dress. At Parc de la Tête d'Or, entry is barred a quarter-hour before closing."
+      }
+    ],
+    "dek": "Anchor each day on one museum with fixed closing days, then book the weekday-only restaurants first.",
+    "intro": [
+      "Lyon rewards you for planning around opening days. The Musée des Beaux-Arts de Lyon on place des Terreaux opens Wednesday to Monday and closes on Tuesdays and public holidays, while Musées Gadagne in Vieux Lyon, home to the city history and puppet museums, opens Wednesday to Sunday from 10:30 to 18:00. Across the Saône, the Cathédrale Saint-Jean-Baptiste opens every day, from 14:00 on Mondays. Up the hill, Lugdunum's museum opens Tuesday to Sunday, and its Roman theatres open from 7:00 to 19:00 through the winter season.",
+      "Several exhibitions run well into next year. At the Musée des Beaux-Arts, Musée sentimental runs from 11 September 2026 to 14 March 2027, and the Biennale de Lyon is on until 13 December 2026. The Musée des Confluences shows Animal culte until 15 August 2027 and Corée du Nord until 2 January 2028, with a late opening to 22:00 on the first Thursday of each month. At the Grand Hôtel-Dieu, an Alphonse Mucha exhibition runs to 24 January 2027, and the courtyards and gardens open daily from 7:30.",
+      "For food, start at Les Halles de Lyon Paul Bocuse on cours Lafayette, but note its warning that Mondays are a rest day for many traders. Book the classic tables early: La Mère Brazier on rue Royale serves Monday to Friday only, Paul Bocuse at Collonges serves Wednesday to Sunday, and Têtedoie on rue Pierre Marion runs a gastronomic room, closed Tuesdays, beside a bistrot open daily. Brasserie Georges by Perrache opens seven days a week and takes online bookings.",
+      "Mornings are easy. Sébastien Bouillet's Boulangerie du Palais in Vieux Lyon opens daily from 7:00, and Café Bouillet on boulevard de la Croix-Rousse opens from 8:00. Slake runs coffee shops in the Jacobins and Terreaux areas from 8:00. In Croix-Rousse, the Maison des Canuts runs guided silk-workshop tours Tuesday to Saturday at 11:00 and 15:30. With children, the Aquarium de Lyon opens daily from 10:30 without booking, and Parc de la Tête d'Or keeps winter hours of 6:30 to 20:30."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair the Cathédrale Saint-Jean-Baptiste and Musées Gadagne in Vieux Lyon with an afternoon at the Musée des Confluences."
+      ],
+      [
+        "A slower morning",
+        "Start with a coffee at Café Bouillet, then take the 11:00 guided tour at the Maison des Canuts, Tuesday to Saturday."
+      ],
+      [
+        "Before booking",
+        "La Mère Brazier closes at weekends and the Musée des Beaux-Arts closes on Tuesdays, so set those days first."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The Basilique Notre-Dame de Fourvière was left out only because its official site publishes no street address; its site was active and showed its gardens closed to 30 October 2026 for tower works. Sites that could not be read: Café des Fédérations (expired certificate), Le Bouchon des Filles (connection reset), Pralus (rate-limited), Cour des Loges (403), and Food Traboule (domain redirects elsewhere). Partially published: Institut Lumière, Villa Florentine, Fourvière Hôtel and Brasserie Georges show no hours on the pages read; Les Halles publishes stall hours rather than market hours; Le Sucre's hours vary by event. Several restaurants (La Mère Brazier, Takao Takano, Paul Bocuse, Bernachon, Slake) were confirmed by live booking or current hours rather than dated 2026 content.",
+  "injectionLikeText": []
+}

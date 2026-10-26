@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 55.
-- Classifier-passed (published, not fully documented in that format): 137.
+- Source-verified (complete dated evidence format): 56.
+- Classifier-passed (published, not fully documented in that format): 136.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -285,7 +285,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Los Cabos, Mexico | los-cabos | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Lucerne, Switzerland | lucerne | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
 | Luxor, Egypt | luxor | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
-| Lyon, France | lyon | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Lyon, France | lyon | source-verified | source-checked | 25 | 47 | 15 | 15 | None |
 | Maasai Mara, Kenya | maasai-mara | held-back | not-reviewed | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Macau, China | macau | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Machu Picchu, Peru | machu-picchu | classifier-passed | not-reviewed | 0 | 8 | 15 | 4 | None |
