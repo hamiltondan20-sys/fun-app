@@ -1,0 +1,636 @@
+{
+  "city": "Miami, United States",
+  "checkedOn": "2026-10-25",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Vizcaya Museum and Gardens",
+      "kind": "museum",
+      "url": "https://vizcaya.org/",
+      "sourceType": "operator's own site",
+      "address": "3251 South Miami Ave., Miami Fl. 33129",
+      "operatingEvidence": "Weekly hours block plus dated programming, e.g. the Halloween Harvest Farmers Market on Sunday, October 25 and Vizcaya Village After Hours tours on Thursday, November 12; site also notes ongoing Main House conservation work.",
+      "hours": "\"Open daily, except Tuesdays, from 9:30 a.m. to 4:30 p.m.\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Wynwood Walls",
+      "kind": "landmark",
+      "url": "https://thewynwoodwalls.com/info",
+      "sourceType": "operator's own site",
+      "address": "2516 NW 2nd Ave, Miami, FL 33127",
+      "operatingEvidence": "Current hours and ticketing pages, a \"General Admission\" ticket option and \"Free for Locals\" offer; footer \"© 2026 Wynwood Walls\".",
+      "hours": "\"Mon–Wed & Sun 10:30 AM–6:30 PM\", \"Thu–Sat 10:30 AM–6:30 PM\"; \"Doors close 30 minutes before closing.\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Joe's Stone Crab",
+      "kind": "meal",
+      "url": "https://www.joesstonecrab.com/location/joes-stone-crab/",
+      "sourceType": "operator's own site",
+      "address": "11 WASHINGTON AVE, Miami Beach, FL 33139",
+      "operatingEvidence": "Published lunch, dinner and bar hours with an online \"Find A Table\" reservation form via OpenTable and a Joe's Take Away ordering section; no dated 2026 content seen.",
+      "hours": "Lunch \"Wednesday - Sunday • 11:30am - 2:30pm\"; dinner \"Sunday - Thursday • 5:00pm - 10:00pm\", \"Friday & Saturday • 5:00pm - 11:00pm\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Boia De",
+      "kind": "meal",
+      "url": "https://www.boiaderestaurant.com/location/boia-de/",
+      "sourceType": "operator's own site",
+      "address": "5205 NE 2nd Ave, Miami, FL 33137",
+      "operatingEvidence": "Hours notice \"7 days a week\" with online reservations via a Resy-linked form; no dated 2026 content seen.",
+      "hours": "\"7 days a week\", \"5:30 - 10:30\" (AM/PM not stated)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mandolin Aegean Bistro",
+      "kind": "meal",
+      "url": "https://www.mandolinrestaurant.com/location/mandolin-aegean-bistro/",
+      "sourceType": "operator's own site",
+      "address": "4312 NE 2nd Ave, Miami, FL 33137",
+      "operatingEvidence": "Daily hours and a \"Book a Table\" link to Resy, plus reservations phone and email; no dated 2026 content seen.",
+      "hours": "\"Monday - Sunday 12pm - 11pm\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Phillip and Patricia Frost Museum of Science",
+      "kind": "museum",
+      "url": "https://www.frostscience.org/plan-your-day/",
+      "sourceType": "operator's own site",
+      "address": "1101 Biscayne Blvd, Miami, FL 33132",
+      "operatingEvidence": "\"The Science Behind Pixar\" marked \"NOW OPEN\" and \"included with museum admission\"; dated tickets (\"Ticket good for admission only on date indicated\").",
+      "hours": "Sun and Fri–Sat 10:00 am–6:00 pm; Mon–Thu 10:00 am–5:00 pm; \"open every day of the year\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Miami Children's Museum",
+      "kind": "museum",
+      "url": "https://www.miamichildrensmuseum.org/",
+      "sourceType": "operator's own site",
+      "address": "980 MacArthur Causeway Miami, FL 33132",
+      "operatingEvidence": "October 2026 Halloween programming and \"Paws and Play Weekend\" Nov 7–8, 2026; new Planet Soccer exhibit (\"Weather permitting\"); notes construction of a new outdoor play space.",
+      "hours": "\"Open Daily: 10AM–6PM\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Zak the Baker",
+      "kind": "bakery",
+      "url": "https://www.zakthebaker.com/",
+      "sourceType": "operator's own site",
+      "address": "295 NW 26th St, Miami, Florida 33127",
+      "operatingEvidence": "Current hours, Toast pickup/delivery ordering and SevenRooms reservations; no dated 2026 text seen.",
+      "hours": "\"Sunday–Friday: 7am–5pm\", \"Saturday: Closed\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "La Sandwicherie (South Beach)",
+      "kind": "meal",
+      "url": "https://www.lasandwicherie.com/",
+      "sourceType": "operator's own site",
+      "address": "229 14th Street, Miami Beach, FL 33139",
+      "operatingEvidence": "Location list with daily hours; 2026 notice that the Brickell branch moved to 60 SW 10th Street and \"is no longer operating at our former Brickell address\"; footer \"COPYRIGHT 2026\".",
+      "hours": "Every day, 7am to 5am",
+      "confidence": "high"
+    },
+    {
+      "name": "Versailles",
+      "kind": "meal",
+      "url": "https://www.versaillesrestaurant.com/",
+      "sourceType": "operator's own site",
+      "address": "3555 SW 8TH Street Miami, FL 33135",
+      "operatingEvidence": "Published \"Operating hours\" and La Ventanita walk-up window described as \"The go-to hub for conversation within Miami's Cuban community\"; no dated 2026 content seen.",
+      "hours": "\"Mon - Thu 8:00 am - 12:00 am\", \"Fri - Sat 8:00 am - 1:00 am\", \"Sunday 9:00 am - 12:00 am\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "COTE Miami",
+      "kind": "meal",
+      "url": "https://www.cotekoreansteakhouse.com/",
+      "sourceType": "operator's own site",
+      "address": "3900 NE 2nd Ave. Miami, FL 33137",
+      "operatingEvidence": "Miami hours and phone reservation desk (\"available from 12:00 pm - 10:00 pm daily\"); 2026 reservation links and footer \"© COTE 2026\".",
+      "hours": "Lunch \"12 PM – 2:45PM Daily\"; dinner \"Sunday - Wednesday: 5PM – 11PM\", \"Thursday - Saturday: 5PM – 12AM\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Sweet Liberty",
+      "kind": "bar",
+      "url": "https://www.mysweetliberty.com/",
+      "sourceType": "operator's own site",
+      "address": "237-B 20th Street, Miami Beach • FL • 33139",
+      "operatingEvidence": "Daily hours, happy hour and Sunday brunch times, OpenTable reservations and a group form for 8+; footer still reads \"© 2024\".",
+      "hours": "\"Everyday: 4 PM – 5 AM\"; happy hour 4–8 PM; Sunday brunch 12–5 PM",
+      "confidence": "medium"
+    },
+    {
+      "name": "Broken Shaker (Freehand Miami)",
+      "kind": "bar",
+      "url": "https://freehandhotels.com/miami/broken-shaker/",
+      "sourceType": "operator's own site",
+      "address": "2727 Indian Creek Dr., Miami Beach, FL 33140",
+      "operatingEvidence": "Weekly hours and \"Please make a reservation\" via Resy; page timestamp July 22, 2026.",
+      "hours": "Mon–Wed closed; Thu 5pm–12am; Fri–Sat 5pm–1am; Sun 5–11pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Pérez Art Museum Miami (PAMM)",
+      "kind": "museum",
+      "url": "https://www.pamm.org/en/exhibitions/",
+      "sourceType": "operator's own site",
+      "address": "1103 Biscayne Blvd., Miami, FL 33132",
+      "operatingEvidence": "\"We are open!\"; current shows include \"Basquiat: Figures, Signs, Symbols\" through June 6, 2027 and \"John Baldessari: The End of the Line\" through May 9, 2027; \"Picasso–Klee–Matisse\" opens October 29, 2026.",
+      "hours": "Mon 11am-6pm; Tue–Wed closed; Thu 11am-9pm; Fri–Sun 11am-6pm",
+      "confidence": "high"
+    },
+    {
+      "name": "The Bass",
+      "kind": "museum",
+      "url": "https://thebass.org/visit/",
+      "sourceType": "operator's own site",
+      "address": "2100 Collins Avenue, Miami Beach, FL 33139",
+      "operatingEvidence": "Current exhibitions incl. \"Yuko Mohri: Unviolated Imperfection\" SEP 17, 2026 – MAY 30, 2027 and \"Sarah Zapata\" through February 28, 2027; holiday closures \"THU NOV 26\" and \"FRI DEC 25\".",
+      "hours": "Mon–Tue closed; Wed–Sun 12–5 PM; Third Thursdays 6–9 PM",
+      "confidence": "high"
+    },
+    {
+      "name": "The Wolfsonian–FIU",
+      "kind": "museum",
+      "url": "https://wolfsonian.org/visit/",
+      "sourceType": "operator's own site",
+      "address": "1001 Washington Avenue, Miami Beach, FL 33139",
+      "operatingEvidence": "\"Foot Notes\" exhibition marked \"Now Open\"; November–December 2026 events listed; footer \"© 2026\".",
+      "hours": "\"Monday–Tuesday | Closed\", \"Wednesday–Thursday | 10am–6pm\", \"Friday | 10am–9pm\", \"Saturday–Sunday | 10am–6pm\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Fairchild Tropical Botanic Garden",
+      "kind": "park",
+      "url": "https://fairchildgarden.org/hours-admission/",
+      "sourceType": "operator's own site",
+      "address": "10901 Old Cutler Road Miami, Florida 33156",
+      "operatingEvidence": "Current admission page with online pricing and \"Flex Tickets\"; 2026 \"Orchids in October\" vendor sign-up.",
+      "hours": "Open daily \"10:00 a.m. – 5:00 p.m.\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Ball & Chain",
+      "kind": "bar",
+      "url": "https://ballandchainmiami.com/",
+      "sourceType": "operator's own site",
+      "address": "1513 SW 8th Street, Little Havana, Miami FL 33135",
+      "operatingEvidence": "Live music calendar for October 25–26 (e.g. \"The Ball & Chain Trio\", \"Salsero Sunday\") and recurring nightly events; footer \"©2015 – 2026\".",
+      "hours": "Mon 11am–12am; Tue–Thu 11am–1am; Fri–Sat 11am–3am; Sun 11am–1am",
+      "confidence": "high"
+    },
+    {
+      "name": "Café La Trova",
+      "kind": "bar",
+      "url": "https://www.cafelatrova.com/location/cafe-la-trova/",
+      "sourceType": "operator's own site",
+      "address": "971 SW 8th Street, Miami, FL 33130",
+      "operatingEvidence": "Bar and dinner hours with a reservations link; homepage cites \"NORTH AMERICA'S 50 BEST BARS, 2024, 2025, 2026\".",
+      "hours": "Bar \"Sunday - Thursday: 4pm - 12am\", \"Friday & Saturday: 4pm - 2am\"; dinner from 5pm daily",
+      "confidence": "high"
+    },
+    {
+      "name": "South Pointe Park",
+      "kind": "park",
+      "url": "https://www.miamibeachfl.gov/city-hall/parks-and-recreation/parks-facilities-directory/south-pointe-park/",
+      "sourceType": "official public operator (City of Miami Beach)",
+      "address": "1 Washington Avenue, South Beach",
+      "operatingEvidence": "City parks directory lists current hours, playgrounds, bark park, water feature and seasonal programs.",
+      "hours": "\"Open Monday – Sunday; Sunrise to Sunset.\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "ICA Miami",
+      "kind": "museum",
+      "url": "https://www.icamiami.org/visit/",
+      "sourceType": "operator's own site",
+      "address": "61 NE 41st Street, Miami, FL 33137",
+      "operatingEvidence": "\"Admission ... is free of charge\"; \"Advance tickets are highly recommended for guaranteed entry\"; free daily 12 pm tours.",
+      "hours": "\"Wed-Sun: 11 AM - 6 PM\", \"Mon-Tue: Closed\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Rubell Museum",
+      "kind": "museum",
+      "url": "https://rubellmuseum.org/miami",
+      "sourceType": "operator's own site",
+      "address": "1100 NW 23 ST, Miami, FL 33127",
+      "operatingEvidence": "Current exhibitions incl. \"Thomas Houseago: First Light\" and Yayoi Kusama; \"Complimentary guided tours at 3pm from Wednesday to Sunday\"; ticket link.",
+      "hours": "not published on page read",
+      "confidence": "medium"
+    },
+    {
+      "name": "Zoo Miami",
+      "kind": "park",
+      "url": "https://www.zoomiami.org/",
+      "sourceType": "operator's own site",
+      "address": "12400 SW 152 St. Miami, FL 33177",
+      "operatingEvidence": "2026 programming: Zoo Run 2026 on November 14, 2026 and Zoo Lights on select nights from November 27, 2026.",
+      "hours": "not published on page read",
+      "confidence": "high"
+    },
+    {
+      "name": "Bayfront Park",
+      "kind": "park",
+      "url": "https://www.bayfrontparkmiami.com/",
+      "sourceType": "official public operator (Bayfront Park Management Trust)",
+      "address": "301 Biscayne Blvd, Miami, FL 33132",
+      "operatingEvidence": "Daily park hours and an events calendar running into December (\"Race for Champions 2026\", Dec 12).",
+      "hours": "Daily 7:00 AM to 11:00 PM",
+      "confidence": "high"
+    },
+    {
+      "name": "Venetian Pool",
+      "kind": "scenic",
+      "url": "https://www.coralgables.com/venetian-pool",
+      "sourceType": "official public operator (City of Coral Gables)",
+      "address": "2701 De Soto Boulevard, Coral Gables, FL 33134",
+      "operatingEvidence": "City page with current hours, online booking and rates; \"Sale of admission tickets will cease for the day once the pool has reached maximum capacity\"; 2026 copyright.",
+      "hours": "Tue–Fri 11 a.m.–5:30 p.m.; Sat–Sun 10 a.m.–4:30 p.m.; Monday closed",
+      "confidence": "medium"
+    },
+    {
+      "name": "11th Street Diner",
+      "kind": "meal",
+      "url": "https://www.eleventhstreetdiner.com/",
+      "sourceType": "operator's own site",
+      "address": "1065 Washington Avenue, Miami Beach, FL 33139",
+      "operatingEvidence": "Current hours and a September 2026 menu file (\"menu-sept-2026.pdf\").",
+      "hours": "\"Sun - Thu: 7:30 AM - 11:55 PM\"; \"Fri and Sat: Open 24 Hours.\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Greenstreet Cafe",
+      "kind": "meal",
+      "url": "https://www.greenstreetcafe.net/contact",
+      "sourceType": "operator's own site",
+      "address": "3468 MAIN HWY | COCONUT GROVE | FL 33133",
+      "operatingEvidence": "Breakfast and weekend brunch times; \"RESERVATIONS ARE NOT AVAILABLE DURING BRUNCH SATURDAYS, SUNDAYS AND HOLIDAYS TILL 4 PM\"; \"Copyright © 2026\".",
+      "hours": "\"BREAKFAST (MON TO FRI) 7AM – 3PM\"; \"BRUNCH (SAT & SUN) 7AM – 3PM\"; closing time not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Threefold Cafe",
+      "kind": "cafe",
+      "url": "https://www.threefoldcafe.com/",
+      "sourceType": "operator's own site",
+      "address": "141 Giralda Ave, Coral Gables, FL 33134",
+      "operatingEvidence": "Published weekly hours and contact details; latest dated content is \"© Threefold Cafe 2025\".",
+      "hours": "Mon–Thu 7:30am–3pm; Fri–Sun 7:30am–4pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Café Demetrio",
+      "kind": "cafe",
+      "url": "https://www.cafedemetrio.com/",
+      "sourceType": "operator's own site",
+      "address": "300 Alhambra Circle | Coral Gables, FL 33134",
+      "operatingEvidence": "Published weekly hours; no dated 2026 content seen.",
+      "hours": "\"Monday - Saturday\" \"9:00am - 3pm\"; \"Sunday\" \"Closed\"",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "South Beach",
+      "reason": "neighborhood/beach area, not a single operated place",
+      "url": ""
+    },
+    {
+      "name": "Little Havana",
+      "reason": "neighborhood, not a specific place (Versailles, Ball & Chain and Café La Trova checked instead)",
+      "url": ""
+    },
+    {
+      "name": "Beach day and boardwalk walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Little Havana wandering",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset at South Pointe Park",
+      "reason": "generic, not a place (South Pointe Park itself confirmed)",
+      "url": ""
+    },
+    {
+      "name": "Private boat day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "High-end spa afternoon",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Chef-driven dinner in Brickell or the Design District",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "South Beach sunset",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Design District dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Cocktails in a rooftop lounge",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Calmer beach afternoon",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee in Wynwood",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Beach morning",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Little Havana food stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Wynwood and one standout dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Art Deco evening walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Little Havana live music stop",
+      "reason": "generic, not a place (Ball & Chain confirmed instead)",
+      "url": ""
+    },
+    {
+      "name": "Oleta River kayaking (Oleta River State Park)",
+      "reason": "official Florida State Parks page returned HTTP 403 Forbidden; not bypassed",
+      "url": "https://www.floridastateparks.org/parks-and-trails/oleta-river-state-park"
+    },
+    {
+      "name": "All Day",
+      "reason": "official site shows \"TEMPORARILY CLOSED\" / \"WE MISS YOU\" with no reopening date",
+      "url": "https://www.alldaymia.com/"
+    },
+    {
+      "name": "Panther Coffee",
+      "reason": "official site returned HTTP 429 Too Many Requests on repeated attempts; not read",
+      "url": "https://www.panthercoffee.com/pages/locations"
+    },
+    {
+      "name": "Vice City Bean",
+      "reason": "official site returned HTTP 429 Too Many Requests on repeated attempts; not read",
+      "url": "https://www.vicecitybean.com/"
+    },
+    {
+      "name": "The Front Porch Cafe",
+      "reason": "official page gives conflicting addresses (\"918 Ocean Drive\" in text vs 1458 Ocean Drive in its map link); address not confirmable",
+      "url": "https://www.frontporchoceandrive.com/"
+    },
+    {
+      "name": "Rosetta Bakery",
+      "reason": "store locator content did not load in automated fetch; no address or hours readable",
+      "url": "https://www.rosettabakery.com/stores/"
+    },
+    {
+      "name": "B Bistro + Bakery",
+      "reason": "official domain did not resolve (DNS ENOTFOUND)",
+      "url": "https://www.bbistrobakery.com/"
+    },
+    {
+      "name": "The ScapeGoat",
+      "reason": "official homepage shows no address or hours; contact page returned 404",
+      "url": "https://www.thescapegoatmiami.com/"
+    },
+    {
+      "name": "Versailles Bakery",
+      "reason": "official site shows only \"Coming soon\"",
+      "url": "https://www.versaillesbakery.com/"
+    },
+    {
+      "name": "The Salty Donut (Wynwood)",
+      "reason": "official locations page lists Miami branches as \"coming soon!\" with no hours",
+      "url": "https://saltydonut.com/locations"
+    },
+    {
+      "name": "Bachour",
+      "reason": "official site says \"We're under construction\"; no locations or hours",
+      "url": "https://www.bachour.com/"
+    },
+    {
+      "name": "Fireman Derek's Bake Shop (Wynwood)",
+      "reason": "address published but no hours or current operating evidence (copyright 2022)",
+      "url": "https://www.firemandereks.com/locations"
+    },
+    {
+      "name": "Tinta y Café",
+      "reason": "domain redirected to an unrelated third-party site; not followed",
+      "url": "https://www.tintaycafe.com/"
+    },
+    {
+      "name": "Eternity Coffee Roasters",
+      "reason": "SSL handshake failure on official site",
+      "url": "https://www.eternitycoffeeroasters.com/"
+    },
+    {
+      "name": "Per'La Specialty Roasters",
+      "reason": "fetch failed with no readable output",
+      "url": "https://www.perlacoffee.com/"
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Vizcaya Museum and Gardens",
+        "Wynwood Walls",
+        "Pérez Art Museum Miami (PAMM)",
+        "Fairchild Tropical Botanic Garden"
+      ],
+      "bestFirstTimers": [
+        "Vizcaya Museum and Gardens",
+        "Wynwood Walls",
+        "Versailles",
+        "South Pointe Park"
+      ],
+      "bestRestaurants": [
+        "Joe's Stone Crab",
+        "Boia De",
+        "Mandolin Aegean Bistro",
+        "COTE Miami"
+      ],
+      "bestBudget": [
+        "ICA Miami",
+        "South Pointe Park",
+        "Bayfront Park",
+        "La Sandwicherie (South Beach)"
+      ],
+      "bestLuxury": [
+        "COTE Miami",
+        "Joe's Stone Crab",
+        "Vizcaya Museum and Gardens"
+      ],
+      "bestCouples": [
+        "Vizcaya Museum and Gardens",
+        "Boia De",
+        "Café La Trova",
+        "Venetian Pool"
+      ],
+      "bestKids": [
+        "Phillip and Patricia Frost Museum of Science",
+        "Miami Children's Museum",
+        "Zoo Miami",
+        "South Pointe Park"
+      ],
+      "bestSolo": [
+        "The Wolfsonian–FIU",
+        "ICA Miami",
+        "Café Demetrio",
+        "Rubell Museum"
+      ],
+      "bestUnique": [
+        "Venetian Pool",
+        "Ball & Chain",
+        "The Bass",
+        "Fairchild Tropical Botanic Garden"
+      ],
+      "bestBreakfast": [
+        "Zak the Baker",
+        "Greenstreet Cafe",
+        "11th Street Diner",
+        "Threefold Cafe"
+      ],
+      "bestLunch": [
+        "Mandolin Aegean Bistro",
+        "La Sandwicherie (South Beach)",
+        "Versailles",
+        "Joe's Stone Crab"
+      ],
+      "bestDinner": [
+        "Joe's Stone Crab",
+        "Boia De",
+        "COTE Miami",
+        "Café La Trova"
+      ],
+      "bestCocktails": [
+        "Sweet Liberty",
+        "Broken Shaker (Freehand Miami)",
+        "Café La Trova",
+        "Ball & Chain"
+      ],
+      "bestBakeries": [
+        "Zak the Baker"
+      ],
+      "bestCoffee": [
+        "Café Demetrio",
+        "Threefold Cafe"
+      ]
+    },
+    "queries": {
+      "Vizcaya Museum and Gardens": "Vizcaya Museum and Gardens 3251 South Miami Ave Miami",
+      "Wynwood Walls": "Wynwood Walls 2516 NW 2nd Ave Miami",
+      "Joe's Stone Crab": "Joe's Stone Crab 11 Washington Ave Miami Beach",
+      "Boia De": "Boia De 5205 NE 2nd Ave Miami",
+      "Mandolin Aegean Bistro": "Mandolin Aegean Bistro 4312 NE 2nd Ave Miami",
+      "Phillip and Patricia Frost Museum of Science": "Frost Museum of Science 1101 Biscayne Blvd Miami",
+      "Miami Children's Museum": "Miami Children's Museum 980 MacArthur Causeway Miami",
+      "Zak the Baker": "Zak the Baker 295 NW 26th St Miami",
+      "La Sandwicherie (South Beach)": "La Sandwicherie 229 14th Street Miami Beach",
+      "Versailles": "Versailles 3555 SW 8th Street Miami",
+      "COTE Miami": "COTE Miami 3900 NE 2nd Ave Miami",
+      "Sweet Liberty": "Sweet Liberty 237 20th Street Miami Beach",
+      "Broken Shaker (Freehand Miami)": "Broken Shaker Freehand 2727 Indian Creek Dr Miami Beach",
+      "Pérez Art Museum Miami (PAMM)": "Perez Art Museum Miami 1103 Biscayne Blvd Miami",
+      "The Bass": "The Bass 2100 Collins Avenue Miami Beach",
+      "The Wolfsonian–FIU": "The Wolfsonian FIU 1001 Washington Avenue Miami Beach",
+      "Fairchild Tropical Botanic Garden": "Fairchild Tropical Botanic Garden 10901 Old Cutler Road Miami",
+      "Ball & Chain": "Ball & Chain 1513 SW 8th Street Miami",
+      "Café La Trova": "Cafe La Trova 971 SW 8th Street Miami",
+      "South Pointe Park": "South Pointe Park 1 Washington Avenue Miami Beach",
+      "ICA Miami": "ICA Miami 61 NE 41st Street Miami",
+      "Rubell Museum": "Rubell Museum 1100 NW 23rd St Miami",
+      "Zoo Miami": "Zoo Miami 12400 SW 152nd St Miami",
+      "Bayfront Park": "Bayfront Park 301 Biscayne Blvd Miami",
+      "Venetian Pool": "Venetian Pool 2701 De Soto Boulevard Coral Gables",
+      "11th Street Diner": "11th Street Diner 1065 Washington Avenue Miami Beach",
+      "Greenstreet Cafe": "Greenstreet Cafe 3468 Main Hwy Coconut Grove Miami",
+      "Threefold Cafe": "Threefold Cafe 141 Giralda Ave Coral Gables",
+      "Café Demetrio": "Cafe Demetrio 300 Alhambra Circle Coral Gables"
+    },
+    "summary": "Bayside estates, art museums, gardens and Little Havana bars, with breakfast spots, dinners and cocktail bars checked against their own websites.",
+    "highlights": [
+      "Vizcaya Museum and Gardens",
+      "Pérez Art Museum Miami (PAMM)",
+      "Wynwood Walls",
+      "The Bass"
+    ],
+    "tip": "Plan museum days around closures: Vizcaya shuts on Tuesdays, PAMM on Tuesdays and Wednesdays, and The Bass, The Wolfsonian–FIU and ICA Miami on Mondays and Tuesdays.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Tue is the tricky day",
+        "copy": "Vizcaya Museum and Gardens is closed on Tuesdays and PAMM on Tuesdays and Wednesdays. The Bass, The Wolfsonian–FIU and ICA Miami close Mondays and Tuesdays, and Zak the Baker is closed on Saturdays."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Buy ahead for museums",
+        "copy": "PAMM says tickets are capacity-limited and stop selling 30 minutes before closing, and Frost Science tickets are good only on the date shown. ICA Miami is free but recommends advance tickets for guaranteed entry."
+      },
+      {
+        "label": "Free and late entry",
+        "value": "Evenings save money",
+        "copy": "PAMM is free on Thursdays after 5pm and stays open to 9pm that day. The Wolfsonian–FIU runs Free Fridays from 6pm to 9pm, and The Bass is free on Third Thursdays, 6–9 PM."
+      },
+      {
+        "label": "Rules and walk-ins",
+        "value": "Check ages and brunch policy",
+        "copy": "Venetian Pool requires children to be at least 3 years old and 38 inches tall and stops selling tickets once at capacity. Greenstreet Cafe takes no reservations for weekend and holiday brunch until 4 PM."
+      }
+    ],
+    "dek": "Put Vizcaya and the museums on days they are open, book dinners ahead, and leave evenings for Little Havana music.",
+    "intro": [
+      "You can build a first Miami day around Vizcaya Museum and Gardens at 3251 South Miami Ave., which opens 9:30 a.m. to 4:30 p.m. every day except Tuesday; its site notes ongoing conservation work in the Main House. Downtown, Pérez Art Museum Miami on Biscayne Blvd. runs \"Basquiat: Figures, Signs, Symbols\" through June 6, 2027 and opens \"Picasso–Klee–Matisse: Masterpieces from the Museum Berggruen\" on October 29, 2026. PAMM closes Tuesdays and Wednesdays, stays open to 9pm on Thursdays and is free after 5pm that evening.",
+      "Across the bay, The Bass on Collins Avenue shows \"Yuko Mohri: Unviolated Imperfection\" from September 17, 2026 to May 30, 2027 and opens Wednesday to Sunday, noon to 5 PM, closing for Thanksgiving on November 26. The Wolfsonian–FIU on Washington Avenue has its new \"Foot Notes\" exhibition and Free Fridays from 6pm to 9pm. In Wynwood and the Design District, the Wynwood Walls open daily from 10:30 AM to 6:30 PM with doors closing 30 minutes early, ICA Miami is free with advance tickets recommended, and the Rubell Museum offers free 3pm tours Wednesday to Sunday.",
+      "If you are travelling with children, Frost Science is open every day of the year and its tickets are valid only on the date shown; \"The Science Behind Pixar\" is included with admission. Miami Children's Museum on MacArthur Causeway opens daily from 10AM to 6PM and has its new Planet Soccer area. Zoo Miami lists Zoo Lights on select nights from November 27, 2026. For a slower outdoor day, Fairchild Tropical Botanic Garden opens 10:00 a.m. to 5:00 p.m. daily with $5 off online tickets, and Coral Gables' Venetian Pool closes on Mondays.",
+      "For food, Zak the Baker in Wynwood bakes Sunday to Friday from 7am and closes on Saturdays, while Greenstreet Cafe in Coconut Grove serves breakfast from 7AM. Versailles on SW 8th Street opens from 8:00 am with its walk-up ventanita, and Joe's Stone Crab takes reservations through OpenTable. In the evening, Boia De and COTE Miami both take bookings, Café La Trova serves dinner from 5pm, and Ball & Chain in Little Havana lists live music through the week. Broken Shaker is closed Monday to Wednesday and asks you to reserve."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair Vizcaya (closed Tuesdays) with PAMM (closed Tuesdays and Wednesdays) and an evening on SW 8th Street at Versailles, Café La Trova or Ball & Chain."
+      ],
+      [
+        "A slower morning",
+        "Start at Zak the Baker (closed Saturdays) or Greenstreet Cafe, then walk the Wynwood Walls when they open at 10:30 AM."
+      ],
+      [
+        "Before booking",
+        "Book dated tickets for Frost Science and PAMM online, reserve dinners at Boia De, COTE Miami or Joe's Stone Crab, and check that Broken Shaker is open (Thursday to Sunday only)."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Panther Coffee and Vice City Bean returned rate-limit errors, Oleta River State Park's state page refused automated reading (403), B Bistro + Bakery's domain did not resolve, Eternity Coffee Roasters had an SSL failure, Rosetta Bakery's store locator did not load, and The ScapeGoat's site gave no address, so none of these were used. All Day shows a temporary closure. Rubell Museum and Zoo Miami hours, and Greenstreet Cafe's closing time, were not published on the pages read; Boia De's hours lack AM/PM; several restaurant sites (Joe's Stone Crab, Boia De, Mandolin, Versailles, Café Demetrio, Threefold Cafe, Sweet Liberty) showed hours and booking tools but no dated 2026 content. Venetian Pool and the Coral Gables cafés are in neighbouring Coral Gables.",
+  "injectionLikeText": []
+}

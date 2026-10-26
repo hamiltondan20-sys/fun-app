@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 41.
-- Classifier-passed (published, not fully documented in that format): 151.
+- Source-verified (complete dated evidence format): 42.
+- Classifier-passed (published, not fully documented in that format): 150.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -308,7 +308,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Mendoza, Argentina | mendoza | held-back | not-reviewed | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Merida, Mexico | merida | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Mexico City, Mexico | mexico-city | source-verified | source-checked | 26 | 49 | 15 | 15 | None |
-| Miami, United States | miami | classifier-passed | not-reviewed | 0 | 29 | 15 | 12 | None |
+| Miami, United States | miami | source-verified | source-checked | 29 | 52 | 15 | 15 | None |
 | Milan, Italy | milan | classifier-passed | not-reviewed | 0 | 10 | 15 | 6 | None |
 | Milford Sound, New Zealand | milford-sound | held-back | not-reviewed | 0 | 4 | 15 | 4 | has 4 named places across 4 categories; needs at least 5 named places across 3 categories |
 | Milos, Greece | milos | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |

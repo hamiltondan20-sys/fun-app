@@ -4107,4 +4107,114 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Miami, United States: source review of 2026-10-25 (docs/content-research/miami-2026-10-25.md).
+  {
+    const cityKey = "Miami, United States";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Vizcaya Museum and Gardens","Wynwood Walls","Pérez Art Museum Miami (PAMM)","Fairchild Tropical Botanic Garden"],
+      bestFirstTimers: ["Vizcaya Museum and Gardens","Wynwood Walls","Versailles","South Pointe Park"],
+      bestRestaurants: ["Joe's Stone Crab","Boia De","Mandolin Aegean Bistro","COTE Miami"],
+      bestBudget: ["ICA Miami","South Pointe Park","Bayfront Park","La Sandwicherie (South Beach)"],
+      bestLuxury: ["COTE Miami","Joe's Stone Crab","Vizcaya Museum and Gardens"],
+      bestCouples: ["Vizcaya Museum and Gardens","Boia De","Café La Trova","Venetian Pool"],
+      bestKids: ["Phillip and Patricia Frost Museum of Science","Miami Children's Museum","Zoo Miami","South Pointe Park"],
+      bestSolo: ["The Wolfsonian–FIU","ICA Miami","Café Demetrio","Rubell Museum"],
+      bestUnique: ["Venetian Pool","Ball & Chain","The Bass","Fairchild Tropical Botanic Garden"],
+      bestBreakfast: ["Zak the Baker","Greenstreet Cafe","11th Street Diner","Threefold Cafe"],
+      bestLunch: ["Mandolin Aegean Bistro","La Sandwicherie (South Beach)","Versailles","Joe's Stone Crab"],
+      bestDinner: ["Joe's Stone Crab","Boia De","COTE Miami","Café La Trova"],
+      bestCocktails: ["Sweet Liberty","Broken Shaker (Freehand Miami)","Café La Trova","Ball & Chain"],
+      bestBakeries: ["Zak the Baker"],
+      bestCoffee: ["Café Demetrio","Threefold Cafe"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Vizcaya Museum and Gardens": "Vizcaya Museum and Gardens 3251 South Miami Ave Miami",
+      "Wynwood Walls": "Wynwood Walls 2516 NW 2nd Ave Miami",
+      "Pérez Art Museum Miami (PAMM)": "Perez Art Museum Miami 1103 Biscayne Blvd Miami",
+      "Fairchild Tropical Botanic Garden": "Fairchild Tropical Botanic Garden 10901 Old Cutler Road Miami",
+      "Versailles": "Versailles 3555 SW 8th Street Miami",
+      "South Pointe Park": "South Pointe Park 1 Washington Avenue Miami Beach",
+      "Joe's Stone Crab": "Joe's Stone Crab 11 Washington Ave Miami Beach",
+      "Boia De": "Boia De 5205 NE 2nd Ave Miami",
+      "Mandolin Aegean Bistro": "Mandolin Aegean Bistro 4312 NE 2nd Ave Miami",
+      "COTE Miami": "COTE Miami 3900 NE 2nd Ave Miami",
+      "ICA Miami": "ICA Miami 61 NE 41st Street Miami",
+      "Bayfront Park": "Bayfront Park 301 Biscayne Blvd Miami",
+      "La Sandwicherie (South Beach)": "La Sandwicherie 229 14th Street Miami Beach",
+      "Café La Trova": "Cafe La Trova 971 SW 8th Street Miami",
+      "Venetian Pool": "Venetian Pool 2701 De Soto Boulevard Coral Gables",
+      "Phillip and Patricia Frost Museum of Science": "Frost Museum of Science 1101 Biscayne Blvd Miami",
+      "Miami Children's Museum": "Miami Children's Museum 980 MacArthur Causeway Miami",
+      "Zoo Miami": "Zoo Miami 12400 SW 152nd St Miami",
+      "The Wolfsonian–FIU": "The Wolfsonian FIU 1001 Washington Avenue Miami Beach",
+      "Café Demetrio": "Cafe Demetrio 300 Alhambra Circle Coral Gables",
+      "Rubell Museum": "Rubell Museum 1100 NW 23rd St Miami",
+      "Ball & Chain": "Ball & Chain 1513 SW 8th Street Miami",
+      "The Bass": "The Bass 2100 Collins Avenue Miami Beach",
+      "Zak the Baker": "Zak the Baker 295 NW 26th St Miami",
+      "Greenstreet Cafe": "Greenstreet Cafe 3468 Main Hwy Coconut Grove Miami",
+      "11th Street Diner": "11th Street Diner 1065 Washington Avenue Miami Beach",
+      "Threefold Cafe": "Threefold Cafe 141 Giralda Ave Coral Gables",
+      "Sweet Liberty": "Sweet Liberty 237 20th Street Miami Beach",
+      "Broken Shaker (Freehand Miami)": "Broken Shaker Freehand 2727 Indian Creek Dr Miami Beach"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Miami" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Bayside estates, art museums, gardens and Little Havana bars, with breakfast spots, dinners and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Vizcaya Museum and Gardens","Pérez Art Museum Miami (PAMM)","Wynwood Walls","The Bass"];
+    cityGuide.tip = "Plan museum days around closures: Vizcaya shuts on Tuesdays, PAMM on Tuesdays and Wednesdays, and The Bass, The Wolfsonian–FIU and ICA Miami on Mondays and Tuesdays.";
+    data.destinationFacts[cityKey] = "Plan museum days around closures: Vizcaya shuts on Tuesdays, PAMM on Tuesdays and Wednesdays, and The Bass, The Wolfsonian–FIU and ICA Miami on Mondays and Tuesdays.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Bayside estates, art museums, gardens and Little Havana bars, with breakfast spots, dinners and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Tue is the tricky day",
+        "copy": "Vizcaya Museum and Gardens is closed on Tuesdays and PAMM on Tuesdays and Wednesdays. The Bass, The Wolfsonian–FIU and ICA Miami close Mondays and Tuesdays, and Zak the Baker is closed on Saturdays."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Buy ahead for museums",
+        "copy": "PAMM says tickets are capacity-limited and stop selling 30 minutes before closing, and Frost Science tickets are good only on the date shown. ICA Miami is free but recommends advance tickets for guaranteed entry."
+      },
+      {
+        "label": "Free and late entry",
+        "value": "Evenings save money",
+        "copy": "PAMM is free on Thursdays after 5pm and stays open to 9pm that day. The Wolfsonian–FIU runs Free Fridays from 6pm to 9pm, and The Bass is free on Third Thursdays, 6–9 PM."
+      },
+      {
+        "label": "Rules and walk-ins",
+        "value": "Check ages and brunch policy",
+        "copy": "Venetian Pool requires children to be at least 3 years old and 38 inches tall and stops selling tickets once at capacity. Greenstreet Cafe takes no reservations for weekend and holiday brunch until 4 PM."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Put Vizcaya and the museums on days they are open, book dinners ahead, and leave evenings for Little Havana music.",
+      intro: [
+        "You can build a first Miami day around Vizcaya Museum and Gardens at 3251 South Miami Ave., which opens 9:30 a.m. to 4:30 p.m. every day except Tuesday; its site notes ongoing conservation work in the Main House. Downtown, Pérez Art Museum Miami on Biscayne Blvd. runs \"Basquiat: Figures, Signs, Symbols\" through June 6, 2027 and opens \"Picasso–Klee–Matisse: Masterpieces from the Museum Berggruen\" on October 29, 2026. PAMM closes Tuesdays and Wednesdays, stays open to 9pm on Thursdays and is free after 5pm that evening.",
+        "Across the bay, The Bass on Collins Avenue shows \"Yuko Mohri: Unviolated Imperfection\" from September 17, 2026 to May 30, 2027 and opens Wednesday to Sunday, noon to 5 PM, closing for Thanksgiving on November 26. The Wolfsonian–FIU on Washington Avenue has its new \"Foot Notes\" exhibition and Free Fridays from 6pm to 9pm. In Wynwood and the Design District, the Wynwood Walls open daily from 10:30 AM to 6:30 PM with doors closing 30 minutes early, ICA Miami is free with advance tickets recommended, and the Rubell Museum offers free 3pm tours Wednesday to Sunday.",
+        "If you are travelling with children, Frost Science is open every day of the year and its tickets are valid only on the date shown; \"The Science Behind Pixar\" is included with admission. Miami Children's Museum on MacArthur Causeway opens daily from 10AM to 6PM and has its new Planet Soccer area. Zoo Miami lists Zoo Lights on select nights from November 27, 2026. For a slower outdoor day, Fairchild Tropical Botanic Garden opens 10:00 a.m. to 5:00 p.m. daily with $5 off online tickets, and Coral Gables' Venetian Pool closes on Mondays.",
+        "For food, Zak the Baker in Wynwood bakes Sunday to Friday from 7am and closes on Saturdays, while Greenstreet Cafe in Coconut Grove serves breakfast from 7AM. Versailles on SW 8th Street opens from 8:00 am with its walk-up ventanita, and Joe's Stone Crab takes reservations through OpenTable. In the evening, Boia De and COTE Miami both take bookings, Café La Trova serves dinner from 5pm, and Ball & Chain in Little Havana lists live music through the week. Broken Shaker is closed Monday to Wednesday and asks you to reserve."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair Vizcaya (closed Tuesdays) with PAMM (closed Tuesdays and Wednesdays) and an evening on SW 8th Street at Versailles, Café La Trova or Ball & Chain."
+        ],
+        [
+          "A slower morning",
+          "Start at Zak the Baker (closed Saturdays) or Greenstreet Cafe, then walk the Wynwood Walls when they open at 10:30 AM."
+        ],
+        [
+          "Before booking",
+          "Book dated tickets for Frost Science and PAMM online, reserve dinners at Boia De, COTE Miami or Joe's Stone Crab, and check that Broken Shaker is open (Thursday to Sunday only)."
+        ]
+      ],
+      trust: "All 29 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

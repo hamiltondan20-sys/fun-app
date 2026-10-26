@@ -5,6 +5,376 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Miami, United States": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-25",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Panther Coffee and Vice City Bean returned rate-limit errors, Oleta River State Park's state page refused automated reading (403), B Bistro + Bakery's domain did not resolve, Eternity Coffee Roasters had an SSL failure, Rosetta Bakery's store locator did not load, and The ScapeGoat's site gave no address, so none of these were used. All Day shows a temporary closure. Rubell Museum and Zoo Miami hours, and Greenstreet Cafe's closing time, were not published on the pages read; Boia De's hours lack AM/PM; several restaurant sites (Joe's Stone Crab, Boia De, Mandolin, Versailles, Café Demetrio, Threefold Cafe, Sweet Liberty) showed hours and booking tools but no dated 2026 content. Venetian Pool and the Coral Gables cafés are in neighbouring Coral Gables.",
+    "sourceUrls": [
+      "docs/content-research/miami-2026-10-25.md",
+      "docs/content-research/miami-2026-10-25.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "South Beach",
+        "checkedOn": "2026-10-25",
+        "reason": "neighborhood/beach area, not a single operated place"
+      },
+      {
+        "name": "Little Havana",
+        "checkedOn": "2026-10-25",
+        "reason": "neighborhood, not a specific place (Versailles, Ball & Chain and Café La Trova checked instead)"
+      },
+      {
+        "name": "Beach day and boardwalk walk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Little Havana wandering",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset at South Pointe Park",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (South Pointe Park itself confirmed)"
+      },
+      {
+        "name": "Private boat day",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "High-end spa afternoon",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Chef-driven dinner in Brickell or the Design District",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "South Beach sunset",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Design District dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Cocktails in a rooftop lounge",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Calmer beach afternoon",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee in Wynwood",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Beach morning",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Little Havana food stop",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Wynwood and one standout dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Art Deco evening walk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Little Havana live music stop",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (Ball & Chain confirmed instead)"
+      },
+      {
+        "name": "Oleta River kayaking (Oleta River State Park)",
+        "url": "https://www.floridastateparks.org/parks-and-trails/oleta-river-state-park",
+        "checkedOn": "2026-10-25",
+        "reason": "official Florida State Parks page returned HTTP 403 Forbidden; not bypassed"
+      },
+      {
+        "name": "All Day",
+        "url": "https://www.alldaymia.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site shows \"TEMPORARILY CLOSED\" / \"WE MISS YOU\" with no reopening date"
+      },
+      {
+        "name": "Panther Coffee",
+        "url": "https://www.panthercoffee.com/pages/locations",
+        "checkedOn": "2026-10-25",
+        "reason": "official site returned HTTP 429 Too Many Requests on repeated attempts; not read"
+      },
+      {
+        "name": "Vice City Bean",
+        "url": "https://www.vicecitybean.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site returned HTTP 429 Too Many Requests on repeated attempts; not read"
+      },
+      {
+        "name": "The Front Porch Cafe",
+        "url": "https://www.frontporchoceandrive.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "official page gives conflicting addresses (\"918 Ocean Drive\" in text vs 1458 Ocean Drive in its map link); address not confirmable"
+      },
+      {
+        "name": "Rosetta Bakery",
+        "url": "https://www.rosettabakery.com/stores/",
+        "checkedOn": "2026-10-25",
+        "reason": "store locator content did not load in automated fetch; no address or hours readable"
+      },
+      {
+        "name": "B Bistro + Bakery",
+        "url": "https://www.bbistrobakery.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "official domain did not resolve (DNS ENOTFOUND)"
+      },
+      {
+        "name": "The ScapeGoat",
+        "url": "https://www.thescapegoatmiami.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "official homepage shows no address or hours; contact page returned 404"
+      },
+      {
+        "name": "Versailles Bakery",
+        "url": "https://www.versaillesbakery.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site shows only \"Coming soon\""
+      },
+      {
+        "name": "The Salty Donut (Wynwood)",
+        "url": "https://saltydonut.com/locations",
+        "checkedOn": "2026-10-25",
+        "reason": "official locations page lists Miami branches as \"coming soon!\" with no hours"
+      },
+      {
+        "name": "Bachour",
+        "url": "https://www.bachour.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site says \"We're under construction\"; no locations or hours"
+      },
+      {
+        "name": "Fireman Derek's Bake Shop (Wynwood)",
+        "url": "https://www.firemandereks.com/locations",
+        "checkedOn": "2026-10-25",
+        "reason": "address published but no hours or current operating evidence (copyright 2022)"
+      },
+      {
+        "name": "Tinta y Café",
+        "url": "https://www.tintaycafe.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "domain redirected to an unrelated third-party site; not followed"
+      },
+      {
+        "name": "Eternity Coffee Roasters",
+        "url": "https://www.eternitycoffeeroasters.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "SSL handshake failure on official site"
+      },
+      {
+        "name": "Per'La Specialty Roasters",
+        "url": "https://www.perlacoffee.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "fetch failed with no readable output"
+      }
+    ],
+    "placeSources": {
+      "Vizcaya Museum and Gardens": {
+        "url": "https://vizcaya.org/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Weekly hours block plus dated programming, e.g. the Halloween Harvest Farmers Market on Sunday, October 25 and Vizcaya Village After Hours tours on Thursday, November 12; site also notes ongoing Main House conservation work."
+      },
+      "Wynwood Walls": {
+        "url": "https://thewynwoodwalls.com/info",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current hours and ticketing pages, a \"General Admission\" ticket option and \"Free for Locals\" offer; footer \"© 2026 Wynwood Walls\"."
+      },
+      "Joe's Stone Crab": {
+        "url": "https://www.joesstonecrab.com/location/joes-stone-crab/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published lunch, dinner and bar hours with an online \"Find A Table\" reservation form via OpenTable and a Joe's Take Away ordering section; no dated 2026 content seen."
+      },
+      "Boia De": {
+        "url": "https://www.boiaderestaurant.com/location/boia-de/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Hours notice \"7 days a week\" with online reservations via a Resy-linked form; no dated 2026 content seen."
+      },
+      "Mandolin Aegean Bistro": {
+        "url": "https://www.mandolinrestaurant.com/location/mandolin-aegean-bistro/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Daily hours and a \"Book a Table\" link to Resy, plus reservations phone and email; no dated 2026 content seen."
+      },
+      "Phillip and Patricia Frost Museum of Science": {
+        "url": "https://www.frostscience.org/plan-your-day/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"The Science Behind Pixar\" marked \"NOW OPEN\" and \"included with museum admission\"; dated tickets (\"Ticket good for admission only on date indicated\")."
+      },
+      "Miami Children's Museum": {
+        "url": "https://www.miamichildrensmuseum.org/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "October 2026 Halloween programming and \"Paws and Play Weekend\" Nov 7–8, 2026; new Planet Soccer exhibit (\"Weather permitting\"); notes construction of a new outdoor play space."
+      },
+      "Zak the Baker": {
+        "url": "https://www.zakthebaker.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current hours, Toast pickup/delivery ordering and SevenRooms reservations; no dated 2026 text seen."
+      },
+      "La Sandwicherie (South Beach)": {
+        "url": "https://www.lasandwicherie.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Location list with daily hours; 2026 notice that the Brickell branch moved to 60 SW 10th Street and \"is no longer operating at our former Brickell address\"; footer \"COPYRIGHT 2026\"."
+      },
+      "Versailles": {
+        "url": "https://www.versaillesrestaurant.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published \"Operating hours\" and La Ventanita walk-up window described as \"The go-to hub for conversation within Miami's Cuban community\"; no dated 2026 content seen."
+      },
+      "COTE Miami": {
+        "url": "https://www.cotekoreansteakhouse.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Miami hours and phone reservation desk (\"available from 12:00 pm - 10:00 pm daily\"); 2026 reservation links and footer \"© COTE 2026\"."
+      },
+      "Sweet Liberty": {
+        "url": "https://www.mysweetliberty.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Daily hours, happy hour and Sunday brunch times, OpenTable reservations and a group form for 8+; footer still reads \"© 2024\"."
+      },
+      "Broken Shaker (Freehand Miami)": {
+        "url": "https://freehandhotels.com/miami/broken-shaker/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Weekly hours and \"Please make a reservation\" via Resy; page timestamp July 22, 2026."
+      },
+      "Pérez Art Museum Miami (PAMM)": {
+        "url": "https://www.pamm.org/en/exhibitions/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"We are open!\"; current shows include \"Basquiat: Figures, Signs, Symbols\" through June 6, 2027 and \"John Baldessari: The End of the Line\" through May 9, 2027; \"Picasso–Klee–Matisse\" opens October 29, 2026."
+      },
+      "The Bass": {
+        "url": "https://thebass.org/visit/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibitions incl. \"Yuko Mohri: Unviolated Imperfection\" SEP 17, 2026 – MAY 30, 2027 and \"Sarah Zapata\" through February 28, 2027; holiday closures \"THU NOV 26\" and \"FRI DEC 25\"."
+      },
+      "The Wolfsonian–FIU": {
+        "url": "https://wolfsonian.org/visit/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Foot Notes\" exhibition marked \"Now Open\"; November–December 2026 events listed; footer \"© 2026\"."
+      },
+      "Fairchild Tropical Botanic Garden": {
+        "url": "https://fairchildgarden.org/hours-admission/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current admission page with online pricing and \"Flex Tickets\"; 2026 \"Orchids in October\" vendor sign-up."
+      },
+      "Ball & Chain": {
+        "url": "https://ballandchainmiami.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Live music calendar for October 25–26 (e.g. \"The Ball & Chain Trio\", \"Salsero Sunday\") and recurring nightly events; footer \"©2015 – 2026\"."
+      },
+      "Café La Trova": {
+        "url": "https://www.cafelatrova.com/location/cafe-la-trova/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Bar and dinner hours with a reservations link; homepage cites \"NORTH AMERICA'S 50 BEST BARS, 2024, 2025, 2026\"."
+      },
+      "South Pointe Park": {
+        "url": "https://www.miamibeachfl.gov/city-hall/parks-and-recreation/parks-facilities-directory/south-pointe-park/",
+        "sourceType": "official public operator (City of Miami Beach)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "City parks directory lists current hours, playgrounds, bark park, water feature and seasonal programs."
+      },
+      "ICA Miami": {
+        "url": "https://www.icamiami.org/visit/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Admission ... is free of charge\"; \"Advance tickets are highly recommended for guaranteed entry\"; free daily 12 pm tours."
+      },
+      "Rubell Museum": {
+        "url": "https://rubellmuseum.org/miami",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibitions incl. \"Thomas Houseago: First Light\" and Yayoi Kusama; \"Complimentary guided tours at 3pm from Wednesday to Sunday\"; ticket link."
+      },
+      "Zoo Miami": {
+        "url": "https://www.zoomiami.org/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "2026 programming: Zoo Run 2026 on November 14, 2026 and Zoo Lights on select nights from November 27, 2026."
+      },
+      "Bayfront Park": {
+        "url": "https://www.bayfrontparkmiami.com/",
+        "sourceType": "official public operator (Bayfront Park Management Trust)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Daily park hours and an events calendar running into December (\"Race for Champions 2026\", Dec 12)."
+      },
+      "Venetian Pool": {
+        "url": "https://www.coralgables.com/venetian-pool",
+        "sourceType": "official public operator (City of Coral Gables)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "City page with current hours, online booking and rates; \"Sale of admission tickets will cease for the day once the pool has reached maximum capacity\"; 2026 copyright."
+      },
+      "11th Street Diner": {
+        "url": "https://www.eleventhstreetdiner.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current hours and a September 2026 menu file (\"menu-sept-2026.pdf\")."
+      },
+      "Greenstreet Cafe": {
+        "url": "https://www.greenstreetcafe.net/contact",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Breakfast and weekend brunch times; \"RESERVATIONS ARE NOT AVAILABLE DURING BRUNCH SATURDAYS, SUNDAYS AND HOLIDAYS TILL 4 PM\"; \"Copyright © 2026\"."
+      },
+      "Threefold Cafe": {
+        "url": "https://www.threefoldcafe.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published weekly hours and contact details; latest dated content is \"© Threefold Cafe 2025\"."
+      },
+      "Café Demetrio": {
+        "url": "https://www.cafedemetrio.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published weekly hours; no dated 2026 content seen."
+      }
+    }
+  },
   "Melbourne, Australia": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-25",
