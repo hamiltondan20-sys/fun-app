@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 51.
-- Classifier-passed (published, not fully documented in that format): 141.
+- Source-verified (complete dated evidence format): 52.
+- Classifier-passed (published, not fully documented in that format): 140.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -76,7 +76,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Barcelona, Spain | barcelona | source-verified | source-checked | 24 | 46 | 15 | 15 | None |
 | Bariloche, Argentina | bariloche | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Bath, United Kingdom | bath | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
-| Beijing, China | beijing | classifier-passed | not-reviewed | 0 | 22 | 15 | 10 | None |
+| Beijing, China | beijing | source-verified | source-checked | 26 | 43 | 15 | 15 | None |
 | Belfast, United Kingdom | belfast | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Bengaluru, India | bengaluru | held-back | not-reviewed | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Bergen, Norway | bergen | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |

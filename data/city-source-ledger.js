@@ -5,6 +5,537 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Beijing, China": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-25",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The Temple of Heaven, Summer Palace, Beihai Park and Beijing Zoo were confirmed through the Beijing Municipal Administration Center of Parks, which gives management-office addresses and recent 2026 activity notices but not public opening hours; their own sites could not be read (connection refused or certificate errors). The Palace Museum publishes its entrance gate but no street address on the pages read, and its English site returned HTTP 502. Mutianyu Great Wall and the National Stadium are clearly operating but published no address on the pages read, so they are not used. Restaurant hours were not published for Quanjude, Bianyifang or Donglaishun, and their operating evidence is group-level 2026 content. Universal Beijing Resort's park schedule page returned no readable hours. Butterfly Patisserie's only dated marker is a 2026 page footer. Several hotel and café sites (Peninsula, Bulgari, Four Seasons, Park Hyatt, Shangri-La, Lama Temple, % Arabica) blocked automated reading, and TRB Hutong and Da Dong had certificate errors, so there are few confirmed coffee, bakery and cocktail options. Capital Museum's hours are described as provisional (\"暂定\").",
+    "sourceUrls": [
+      "docs/content-research/beijing-2026-10-25.md",
+      "docs/content-research/beijing-2026-10-25.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Forbidden City",
+        "url": "https://en.dpm.org.cn/",
+        "checkedOn": "2026-10-25",
+        "reason": "Merged into Palace Museum (Forbidden City); en.dpm.org.cn returned HTTP 502, Chinese site used"
+      },
+      {
+        "name": "Great Wall access",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Great Wall",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (no single section named)"
+      },
+      {
+        "name": "Mutianyu Great Wall",
+        "url": "https://www.mutianyugreatwall.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official site operating (page dated 2026-10-26, real-name booking up to 30 days ahead, peak hours 07:30–18:00 weekdays to 15 Nov) but no address or location text on any page read (home, transport, contact, profile)"
+      },
+      {
+        "name": "Badaling Great Wall",
+        "url": "https://www.badaling.cn/",
+        "checkedOn": "2026-10-25",
+        "reason": "Official page returned only the title \"八达岭\"; nothing readable"
+      },
+      {
+        "name": "TRB Hutong",
+        "url": "https://www.trb-cn.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Certificate error (hostname does not match certificate); not bypassed"
+      },
+      {
+        "name": "Da Dong",
+        "url": "https://www.dadongdadong.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Certificate expired; not bypassed"
+      },
+      {
+        "name": "Jing Yaa Tang",
+        "url": "https://www.theoppositehouse.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "theoppositehouse.com redirects (302) to the Upper House brand homepage, which does not mention Beijing, The Opposite House or Jing Yaa Tang"
+      },
+      {
+        "name": "Capital Spirits",
+        "url": "https://www.capitalspiritsbj.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "capitalspirits.com is an unrelated US liquor store (Monroe, CT); capitalspiritsbj.com lists \"No.95 Longfusi Street\" and Tue–Sun 8pm–1am but newest dated post is from 2019 (only a 2026 copyright line), so no current operating evidence"
+      },
+      {
+        "name": "Jing Bar",
+        "url": "https://www.peninsula.com/en/beijing/hotel-fine-dining",
+        "checkedOn": "2026-10-25",
+        "reason": "Official page not identified; candidate operator site peninsula.com returned HTTP 403"
+      },
+      {
+        "name": "A Bar with Shapes for a Name Beijing style",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Wagas bakery counters",
+        "url": "https://www.wagas.com.cn/",
+        "checkedOn": "2026-10-25",
+        "reason": "wagas.com.cn lists only Shanghai, Chengdu and Guangzhou stores; no Beijing branch"
+      },
+      {
+        "name": "Baker & Spice",
+        "url": "https://www.bakerandspice.com.cn/",
+        "checkedOn": "2026-10-25",
+        "reason": "Beijing store listed (三元桥东方东路19号院5号楼一层F111) but no hours and no dated or current operating evidence"
+      },
+      {
+        "name": "Maki Cake",
+        "checkedOn": "2026-10-25",
+        "reason": "No official website identified"
+      },
+      {
+        "name": "Manner Coffee",
+        "url": "https://www.manner.com.cn/",
+        "checkedOn": "2026-10-25",
+        "reason": "Connection refused"
+      },
+      {
+        "name": "Soloist Coffee Co.",
+        "checkedOn": "2026-10-25",
+        "reason": "No official website identified (only third-party listings)"
+      },
+      {
+        "name": "Metal Hands",
+        "url": "https://www.metalhands.cn/",
+        "checkedOn": "2026-10-25",
+        "reason": "No official website identified; metalhands.cn does not resolve"
+      },
+      {
+        "name": "798 Art District",
+        "url": "https://www.798art.org/",
+        "checkedOn": "2026-10-25",
+        "reason": "798art.org does not resolve (DNS failure); UCCA Beijing inside 798 confirmed instead"
+      },
+      {
+        "name": "Summer Palace (own site)",
+        "url": "https://www.summerpalace-china.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "summerpalace-china.com refused connection; confirmed via Beijing parks administration instead"
+      },
+      {
+        "name": "Temple of Heaven (own site)",
+        "url": "https://www.tiantanpark.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "tiantanpark.com self-signed certificate; confirmed via Beijing parks administration instead"
+      },
+      {
+        "name": "Lama Temple (Yonghegong)",
+        "url": "https://www.yonghegong.cn/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 403"
+      },
+      {
+        "name": "Jingshan Park",
+        "url": "https://gygl.beijing.gov.cn/dwjj/dwjj_zsdw/201911/t20191129_728913.html",
+        "checkedOn": "2026-10-25",
+        "reason": "Parks administration page gives office address only; no 2026 operating evidence found"
+      },
+      {
+        "name": "National Stadium (Bird's Nest)",
+        "url": "https://www.n-s.cn/",
+        "checkedOn": "2026-10-25",
+        "reason": "Operating (tours \"恢复全天开放\" from 19 Oct 2026, 10:00–22:00) but no address on any page read"
+      },
+      {
+        "name": "Lao She Teahouse",
+        "url": "https://www.laosheteahouse.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "No street address and no 2026 content (latest items November 2023)"
+      },
+      {
+        "name": "Beijing Happy Valley",
+        "url": "https://bj.happyvalley.cn/",
+        "checkedOn": "2026-10-25",
+        "reason": "No address, hours or dated content readable"
+      },
+      {
+        "name": "Beijing Aquarium",
+        "url": "https://www.bj-sea.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Connection refused"
+      },
+      {
+        "name": "Beijing Lu Xun Museum",
+        "url": "https://www.luxunmuseum.com.cn/",
+        "checkedOn": "2026-10-25",
+        "reason": "Connection refused"
+      },
+      {
+        "name": "Beijing Museum of Natural History",
+        "url": "https://www.bmnh.org.cn/",
+        "checkedOn": "2026-10-25",
+        "reason": "Domain does not resolve"
+      },
+      {
+        "name": "The Peninsula Beijing",
+        "url": "https://www.peninsula.com/en/beijing/5-star-luxury-hotel-wangfujing",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 403"
+      },
+      {
+        "name": "Bulgari Hotel Beijing",
+        "url": "https://www.bulgarihotels.com/en_US/beijing",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 403"
+      },
+      {
+        "name": "Four Seasons Hotel Beijing",
+        "url": "https://www.fourseasons.com/beijing/dining/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 403"
+      },
+      {
+        "name": "Park Hyatt Beijing",
+        "url": "https://www.hyatt.com/park-hyatt/en-US/bjsph-park-hyatt-beijing/dining",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 403"
+      },
+      {
+        "name": "Shangri-La Beijing",
+        "url": "https://www.shangri-la.com/beijing/shangrila/dining/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 403"
+      },
+      {
+        "name": "Mandarin Oriental Wangfujing",
+        "url": "https://www.mandarinoriental.com/en/beijing/wangfujing/dine",
+        "checkedOn": "2026-10-25",
+        "reason": "Page text truncated (980 characters, navigation only); no address or venues readable"
+      },
+      {
+        "name": "Aman Summer Palace",
+        "url": "https://www.aman.com/hotels/aman-summer-palace-beijing",
+        "checkedOn": "2026-10-25",
+        "reason": "No address on hotel or contact pages read"
+      },
+      {
+        "name": "Writers Bar (Beijing Hotel NUO)",
+        "url": "https://www.nuohotel.com/en/beijing-hotel-nuo/dining",
+        "checkedOn": "2026-10-25",
+        "reason": "No street address or hours on hotel pages read"
+      },
+      {
+        "name": "Daoxiangcun",
+        "url": "https://www.daoxiangcun.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Self-signed certificate; not bypassed"
+      },
+      {
+        "name": "Holiland",
+        "url": "https://www.holiland.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Nothing readable beyond site name"
+      },
+      {
+        "name": "Seesaw Coffee",
+        "url": "https://www.seesawcoffee.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Connection refused"
+      },
+      {
+        "name": "% Arabica",
+        "url": "https://arabica.com/en/locations/",
+        "checkedOn": "2026-10-25",
+        "reason": "HTTP 418 on locations page"
+      },
+      {
+        "name": "Bacha Coffee",
+        "url": "https://bachacoffee.com/en/locations",
+        "checkedOn": "2026-10-25",
+        "reason": "Locations page shows no Beijing boutique details"
+      },
+      {
+        "name": "Great Leap Brewing",
+        "url": "https://www.greatleapbrewing.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "TLS error"
+      },
+      {
+        "name": "Jing-A Brewing",
+        "url": "https://www.jingabrewing.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "TLS error"
+      },
+      {
+        "name": "Slow Boat Brewery",
+        "url": "https://www.slowboatbrewery.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "Certificate error (hostname mismatch)"
+      },
+      {
+        "name": "Park and hutong walking",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Street snacks",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Temple and old city exploration",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private Great Wall day",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Fine dining in a courtyard setting",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Luxury hotel afternoon tea",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Hutong evening walk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Temple sunrise feel",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Courtyard dinner",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Great Wall family day",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Panda or science museum style outings",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Hutong coffee stop",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Temple and park morning",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Museum and old city walk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Hutong rickshaw lane",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Peking duck tradition night",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Fangjia Hutong cafes",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Little Yunnan breakfast spots",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Hotel breakfast with city start",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Hutong noodle shops",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Palace Museum (Forbidden City)": {
+        "url": "https://www.dpm.org.cn/Visit.html",
+        "sourceType": "official public operator (Palace Museum)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Homepage (dpm.org.cn) carries dated 2026 notices, e.g. 2026-10-12 Wuyingdian \"stopped opening\" and 2026-08-27 Yanxi Palace temporarily closed; advance booking \"up to 7 days before your visit, starting at 20:00\" with entry by ID scan."
+      },
+      "National Museum of China": {
+        "url": "https://www.chnmuseum.cn/cg/",
+        "sourceType": "official public operator (National Museum of China)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Real-name free reservation in force (\"每个账号每周最多预约1次，每次最多预约5人\"); homepage lists the painting and calligraphy exhibition \"宋元至明清书画中的诗意栖居\", opened 4 September 2026 in South Hall 12."
+      },
+      "Capital Museum": {
+        "url": "https://www.capitalmuseum.org.cn/contact-us",
+        "sourceType": "official public operator (Capital Museum)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Homepage news dated 15 October 2026 on night sessions for the Maya and Andean civilisations exhibition; \"今日开馆\" module with online reservation link."
+      },
+      "National Art Museum of China": {
+        "url": "https://www.namoc.cn/",
+        "sourceType": "official public operator (National Art Museum of China)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibitions with dates, including \"致敬巨匠——尼古拉·费欣绘画精品展\" 2026-09-29 to 2027-02-14; online reservation page."
+      },
+      "UCCA Beijing": {
+        "url": "https://www.ucca.org.cn/en/visit/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibition \"Carsten Höller: Two\", 14 July 2026 to 31 January 2027; ticket rules published."
+      },
+      "Prince Gong Mansion": {
+        "url": "https://www.pgm.org.cn/",
+        "sourceType": "official public operator (Prince Gong Mansion Museum)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "2026 notices (Mid-Autumn/National Day hours, 09/15) and exhibition \"溥心畬张大千会面百年特展\" running 15 September to 13 December; tickets sold online at 40 yuan."
+      },
+      "Temple of Heaven": {
+        "url": "https://gygl.beijing.gov.cn/dwjj/dwjj_zsdw/201911/t20191129_728918.html",
+        "sourceType": "official public operator (Beijing Municipal Administration Center of Parks)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Park-administration activity notice for \"天坛菊韵 翰墨传香\" on \"2026年10月17日（星期六）上午9:00-10:00\" at the Tiantan Science Popularization Garden; park covers \"总面积273公顷\"."
+      },
+      "Summer Palace": {
+        "url": "https://gygl.beijing.gov.cn/dwjj/dwjj_zsdw/201911/t20191129_728828.html",
+        "sourceType": "official public operator (Beijing Municipal Administration Center of Parks)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "News published 21 October 2026 on the 25th osmanthus event at Renshou Hall, Foxiang Pavilion and Dehe Garden, which drew \"161.38万人次\"; a 2026-10-19 item on a Double Ninth science activity."
+      },
+      "Beihai Park": {
+        "url": "https://gygl.beijing.gov.cn/dwjj/dwjj_zsdw/201911/t20191129_728837.html",
+        "sourceType": "official public operator (Beijing Municipal Administration Center of Parks)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Notice dated 2026-10-16: \"关于北海公园万佛楼遗址及阐福寺景区暂停开放的温馨提示\" (Wanfolou ruins and Chanfu Temple area temporarily closed; rest of park not mentioned as closed)."
+      },
+      "Beijing Zoo": {
+        "url": "https://gygl.beijing.gov.cn/dwjj/dwjj_zsdw/201911/t20191129_728906.html",
+        "sourceType": "official public operator (Beijing Municipal Administration Center of Parks)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Beijing Zoo science article published 1 April 2026 on its Baer's pochard breeding programme; intro page describes the zoo's giant panda house."
+      },
+      "China Science and Technology Museum": {
+        "url": "https://www.cstm.org.cn/",
+        "sourceType": "official public operator (China Science and Technology Museum)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online real-name ticketing, bookings open \"7 days before the visit, starting at 18:00\"; programme lists \"太空秀场\" science shows 20–25 October (year not shown)."
+      },
+      "Beijing Planetarium": {
+        "url": "https://www.bjp.org.cn/",
+        "sourceType": "official public operator (Beijing Planetarium)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "2026 notices including a closure 31 August–4 September 2026 for maintenance with \"9月5日（周六）起恢复正常对外开放\"; tickets via WeChat."
+      },
+      "Beijing Ancient Observatory": {
+        "url": "https://www.bjp.org.cn/ggxt/index.shtml",
+        "sourceType": "official public operator (Beijing Planetarium)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Hours published jointly with the planetarium (\"北京天文馆、北京古观象台\") on the parent site, which carries 2026 notices; tickets via the planetarium's WeChat account."
+      },
+      "National Centre for the Performing Arts": {
+        "url": "https://www.chncpa.org/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Performance calendar for late October and November 2026, e.g. Mariinsky Orchestra and Chorus with Gergiev on 3–4 November and Puccini's Tosca 6–8 November."
+      },
+      "Universal Beijing Resort": {
+        "url": "https://www.universalbeijingresort.com/en/contact/contactus",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Homepage promotes \"Scares @ Universal\" with a scares2026 page and membership offers; Getting Here page describes Universal Resort Station on Metro Line 7 and the Batong Line."
+      },
+      "Quanjude (Qianmen)": {
+        "url": "https://www.quanjude.com.cn/article/df495d582c324ac49bd1fb719b201d36.html",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Group homepage states \"截止2026年上半年……开业门店已超过90家\"; brand page lists the Qianmen store with phone 6701-1379/6511-2418."
+      },
+      "Bianyifang (Xianyukou)": {
+        "url": "https://www.bianyifang.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current store directory lists the Xianyukou branch (010-67132536); site carries a group news item dated 2026.01.09."
+      },
+      "Donglaishun (Wangfujing)": {
+        "url": "https://www.donglaishun.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Store directory lists the Wangfujing branch (010-65139661, 270 seats, services \"爆 烤 炒 涮\"); site headline \"2026年，东来顺·宴 盛大启幕\"."
+      },
+      "Country Kitchen (Rosewood Beijing)": {
+        "url": "https://www.rosewoodhotels.com/en/beijing/dining/country-kitchen",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Listed as \"MICHELIN-selected restaurant 2026\"; reservations by phone +86 10 6536 0066 or email; dress code business casual."
+      },
+      "The House of Dynasties (Rosewood Beijing)": {
+        "url": "https://www.rosewoodhotels.com/en/beijing/dining/the-house-of-dynasties",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Cantonese restaurant citing the \"Michelin Guide Beijing 2025–2026\"; notice \"will be closed and unavailable for service on October 1–3, 2026\"; dress code business casual."
+      },
+      "LIQĀ (Rosewood Beijing)": {
+        "url": "https://www.rosewoodhotels.com/en/beijing/dining/liqa",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Levantine sharing menu; 2026 notice: \"LIQĀ will be closed and unavailable for service on September 19 and 25, and October 1–3, 2026.\""
+      },
+      "Red Bowl (Rosewood Beijing)": {
+        "url": "https://www.rosewoodhotels.com/en/beijing/dining/red-bowl",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Hot-pot restaurant; 2026 notice: \"Red Bowl service hours will be revised to 6:00 pm - 10:30 pm on October 1–3, 2026.\""
+      },
+      "Mei (Rosewood Beijing)": {
+        "url": "https://www.rosewoodhotels.com/en/beijing/dining/mei",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Cocktail bar with outdoor lounge; 2026 notice \"MEI will only open Whisky Lounge from September 27 to October 6, 2026\"; dress code business casual."
+      },
+      "Butterfly Patisserie (Rosewood Beijing)": {
+        "url": "https://www.rosewoodhotels.com/en/beijing/dining/butterfly-patisserie",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Pastries and cakes by day; current page with \"ROSEWOOD HOTEL GROUP © 2026\" and published daily hours."
+      },
+      "Café Zarah": {
+        "url": "https://www.cafezarah.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Dated 2026 events: Halloween Party 31.10.2026 and Halloween Brunch 01.11.2026; serves \"authentic north European breakfast\" plus coffee, lunch and dinner. Header: \"MONDAYS CLOSED 暂时周一不营业!\""
+      },
+      "Toast (The Orchid)": {
+        "url": "https://www.theorchidbeijing.com/toast",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Page published 6 October 2026: \"Toast is open to everyone, whether you're staying at The Orchid or coming just for a meal\"; Middle Eastern and Mediterranean cooking."
+      }
+    }
+  },
   "Reykjavik, Iceland": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-25",

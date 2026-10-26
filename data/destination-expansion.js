@@ -5182,4 +5182,111 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 29 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Beijing, China: source review of 2026-10-25 (docs/content-research/beijing-2026-10-25.md).
+  {
+    const cityKey = "Beijing, China";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Palace Museum (Forbidden City)","Temple of Heaven","Summer Palace","National Museum of China"],
+      bestFirstTimers: ["Palace Museum (Forbidden City)","Temple of Heaven","National Museum of China","Beihai Park"],
+      bestRestaurants: ["The House of Dynasties (Rosewood Beijing)","Country Kitchen (Rosewood Beijing)","Quanjude (Qianmen)","Toast (The Orchid)"],
+      bestBudget: ["National Museum of China","Beihai Park","Temple of Heaven","Prince Gong Mansion"],
+      bestLuxury: ["The House of Dynasties (Rosewood Beijing)","Mei (Rosewood Beijing)","Country Kitchen (Rosewood Beijing)","National Centre for the Performing Arts"],
+      bestCouples: ["Mei (Rosewood Beijing)","Toast (The Orchid)","National Centre for the Performing Arts","Beihai Park"],
+      bestKids: ["China Science and Technology Museum","Beijing Planetarium","Beijing Zoo","Universal Beijing Resort"],
+      bestSolo: ["UCCA Beijing","National Art Museum of China","Café Zarah","Capital Museum"],
+      bestUnique: ["Beijing Ancient Observatory","Prince Gong Mansion","UCCA Beijing","National Centre for the Performing Arts"],
+      bestBreakfast: ["LIQĀ (Rosewood Beijing)","Café Zarah"],
+      bestLunch: ["Country Kitchen (Rosewood Beijing)","The House of Dynasties (Rosewood Beijing)","Toast (The Orchid)","Donglaishun (Wangfujing)"],
+      bestDinner: ["Quanjude (Qianmen)","Bianyifang (Xianyukou)","Red Bowl (Rosewood Beijing)","Donglaishun (Wangfujing)"],
+      bestCocktails: ["Mei (Rosewood Beijing)"],
+      bestBakeries: ["Butterfly Patisserie (Rosewood Beijing)"],
+      bestCoffee: ["Café Zarah"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Palace Museum (Forbidden City)": "Palace Museum 4 Jingshan Qianjie Beijing",
+      "Temple of Heaven": "Temple of Heaven 7 Tiantan Neidongli Beijing",
+      "Summer Palace": "Summer Palace Gongmenqian Jie Beijing",
+      "National Museum of China": "National Museum of China 16 East Chang'an Avenue Beijing",
+      "Beihai Park": "Beihai Park 1 Wenjin Jie Beijing",
+      "The House of Dynasties (Rosewood Beijing)": "The House of Dynasties Rosewood Jing Guang Centre Hujialou Beijing",
+      "Country Kitchen (Rosewood Beijing)": "Country Kitchen Rosewood Jing Guang Centre Hujialou Beijing",
+      "Quanjude (Qianmen)": "Quanjude 30 Qianmen Dajie Beijing",
+      "Toast (The Orchid)": "Toast The Orchid 65 Baochao Hutong Beijing",
+      "Prince Gong Mansion": "Prince Gong Mansion 17 Qianhai Xijie Beijing",
+      "Mei (Rosewood Beijing)": "Mei bar Rosewood Jing Guang Centre Hujialou Beijing",
+      "National Centre for the Performing Arts": "National Centre for the Performing Arts 2 West Chang'an Avenue Beijing",
+      "China Science and Technology Museum": "China Science and Technology Museum 5 Beichen East Road Beijing",
+      "Beijing Planetarium": "Beijing Planetarium 138 Xizhimenwai Dajie Beijing",
+      "Beijing Zoo": "Beijing Zoo 137 Xizhimenwai Dajie Beijing",
+      "Universal Beijing Resort": "Universal Beijing Resort Liyuan Tongzhou Beijing",
+      "UCCA Beijing": "UCCA Center for Contemporary Art 4 Jiuxianqiao Road Beijing",
+      "National Art Museum of China": "National Art Museum of China 1 Wusi Dajie Beijing",
+      "Café Zarah": "Cafe Zarah 46 Gulou Dongdajie Beijing",
+      "Capital Museum": "Capital Museum 16 Fuxingmenwai Dajie Beijing",
+      "Beijing Ancient Observatory": "Beijing Ancient Observatory 2 Dongbiaobei Hutong Jianguomennei Dajie Beijing",
+      "LIQĀ (Rosewood Beijing)": "LIQA Rosewood Jing Guang Centre Hujialou Beijing",
+      "Donglaishun (Wangfujing)": "Donglaishun 198 Wangfujing Dajie Beijing",
+      "Bianyifang (Xianyukou)": "Bianyifang 65 Xianyukou Jie Beijing",
+      "Red Bowl (Rosewood Beijing)": "Red Bowl Rosewood Jing Guang Centre Hujialou Beijing",
+      "Butterfly Patisserie (Rosewood Beijing)": "Butterfly Patisserie Rosewood Jing Guang Centre Hujialou Beijing"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Beijing" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Imperial palaces, parks, national museums and contemporary art, with duck restaurants, hotel dining, breakfast, a cocktail bar, a patisserie and a hutong café checked against their own or their public operators' websites.";
+    cityGuide.highlights = ["Palace Museum (Forbidden City)","Temple of Heaven","Summer Palace","National Museum of China"];
+    cityGuide.tip = "Book the Palace Museum ahead (reservations open up to seven days before at 20:00) and avoid Mondays, when it, the National Museum of China and the National Art Museum of China are closed; the Capital Museum and Beijing Planetarium close on Tuesdays instead.";
+    data.destinationFacts[cityKey] = "Book the Palace Museum ahead (reservations open up to seven days before at 20:00) and avoid Mondays, when it, the National Museum of China and the National Art Museum of China are closed; the Capital Museum and Beijing Planetarium close on Tuesdays instead.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Imperial palaces, parks, national museums and contemporary art, with duck restaurants, hotel dining, breakfast, a cocktail bar, a patisserie and a hutong café checked against their own or their public operators' websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays and Tuesdays",
+        "copy": "The Palace Museum, National Museum of China, National Art Museum of China, Prince Gong Mansion and China Science and Technology Museum close on Mondays except public holidays. The Capital Museum, Beijing Planetarium and Beijing Ancient Observatory close on Tuesdays instead."
+      },
+      {
+        "label": "Booking",
+        "value": "Real-name, ID required",
+        "copy": "Palace Museum reservations open up to 7 days ahead from 20:00 and entry is by ID scan. The National Museum of China is free but needs a real-name booking, limited to one booking a week for up to five people per account."
+      },
+      {
+        "label": "Entry and queues",
+        "value": "Fixed gates",
+        "copy": "At the Palace Museum you can only enter through the Meridian Gate (Wumen, south) and leave by the Shenwu or Donghua gates. At the National Museum of China you queue at the north gate during your booked slot with the original ID used to book."
+      },
+      {
+        "label": "Rules",
+        "value": "Bags, dress, kids",
+        "copy": "UCCA Beijing bars food, drinks, tripods, selfie sticks, suitcases and bags longer than 40 cm from galleries, offers free lockers, and admits children under 1.2 m free with an adult. Country Kitchen, The House of Dynasties and Mei at Rosewood Beijing ask for business casual."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Book the big museums a week out, plan around Monday and Tuesday closures, and keep the hutong cafés and hotel dining rooms for the gaps.",
+      intro: [
+        "Start with the Palace Museum, where you must book ahead: reservations open up to seven days before your visit at 20:00, and entry is by scanning your ID. You go in only through the Meridian Gate on the south side and leave by the Shenwu or Donghua gates. Admission runs from 08:30 to a last entry at 16:00, and the palace is closed on Mondays except public holidays. Some halls are shut, including Yanxi Palace, and the Wuyingdian has stopped opening.",
+        "The National Museum of China, on the east side of Tiananmen Square at 16 East Chang'an Avenue, is free but needs a real-name booking, and accounts are limited to one booking a week for up to five people. Its painting and calligraphy exhibition on poetic dwelling opened on 4 September 2026 in South Hall 12. Nearby, the National Art Museum of China shows Nikolai Fechin paintings until 14 February 2027. At Prince Gong Mansion, a centenary exhibition on Pu Xinyu and Zhang Daqian runs until 13 December.",
+        "For contemporary art, UCCA Beijing in the 798 district has Carsten Höller: Two until 31 January 2027 and opens Tuesday to Sunday, 10:00 to 19:00. With children, you can head to the China Science and Technology Museum, where tickets open seven days ahead at 18:00. The Beijing Planetarium and the Ancient Observatory share 09:00 to 16:30 hours and close on Tuesdays. For an evening, the National Centre for the Performing Arts lists Tosca from 6 to 8 November.",
+        "For food, Quanjude's Qianmen branch is at 30 Qianmen Street and Bianyifang has a branch on Xianyukou Street. Donglaishun serves at 198 Wangfujing Street. At Rosewood Beijing, LIQĀ serves breakfast from 6:30. Country Kitchen and The House of Dynasties serve lunch and dinner daily, and Mei pours cocktails from 7 pm. In the Gulou area, Café Zarah serves north European breakfast and closes on Mondays. Toast at The Orchid is open to non-guests from 10:00 to 21:30."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Book the Palace Museum up to seven days ahead, enter by the Meridian Gate, and pair it with the free, pre-booked National Museum of China on any day but Monday."
+        ],
+        [
+          "A slower morning",
+          "Start with breakfast at LIQĀ or Café Zarah, then walk in Beihai Park or visit Prince Gong Mansion, which opens at 8:30."
+        ],
+        [
+          "Before booking",
+          "Bring the original ID you booked with, since the Palace Museum and National Museum of China check it at entry, and note that the Capital Museum and Planetarium close on Tuesdays."
+        ]
+      ],
+      trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();
