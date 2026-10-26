@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 54.
-- Classifier-passed (published, not fully documented in that format): 138.
+- Source-verified (complete dated evidence format): 55.
+- Classifier-passed (published, not fully documented in that format): 137.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -509,4 +509,4 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Zanzibar, Tanzania | zanzibar | held-back | not-reviewed | 0 | 3 | 15 | 3 | has 3 named places across 3 categories; needs at least 5 named places across 3 categories |
 | Zermatt, Switzerland | zermatt | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Zipolite, Mexico | zipolite | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Zurich, Switzerland | zurich | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Zurich, Switzerland | zurich | source-verified | source-checked | 29 | 50 | 15 | 15 | None |

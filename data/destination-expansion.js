@@ -5504,4 +5504,114 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Zurich, Switzerland: source review of 2026-10-25 (docs/content-research/zurich-2026-10-25.md).
+  {
+    const cityKey = "Zurich, Switzerland";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Grossmünster","Swiss National Museum (Landesmuseum Zürich)","Kunsthaus Zürich","Fraumünster"],
+      bestFirstTimers: ["Grossmünster","Fraumünster","Zürichsee-Schifffahrtsgesellschaft (ZSG) lake boats","Polybahn"],
+      bestRestaurants: ["Kronenhalle","Zunfthaus zur Waag","Haus Hiltl","Zeughauskeller"],
+      bestBudget: ["Polybahn","Botanical Garden University of Zurich","Markthalle Im Viadukt","Museum für Gestaltung (Ausstellungsstrasse)"],
+      bestLuxury: ["Baur au Lac","The Dolder Grand","Kronenhalle","Clouds (Prime Tower)"],
+      bestCouples: ["Jules Verne Panoramabar","Zürichsee-Schifffahrtsgesellschaft (ZSG) lake boats","Frau Gerolds Garten","Widder Bar"],
+      bestKids: ["Zoo Zürich","Lindt Home of Chocolate","FIFA Museum","Botanical Garden University of Zurich"],
+      bestSolo: ["Kunsthalle Zürich","Museum für Gestaltung (Ausstellungsstrasse)","Café Henrici","Old Crow"],
+      bestUnique: ["Lindt Home of Chocolate","Frau Gerolds Garten","Polybahn","Markthalle Im Viadukt"],
+      bestBreakfast: ["Café Henrici","Clouds (Prime Tower)","Baur au Lac","John Baker (Stadelhofen)"],
+      bestLunch: ["Zeughauskeller","Les Halles","Haus Hiltl","Markthalle Im Viadukt"],
+      bestDinner: ["Kronenhalle","Swiss Chuchi","Les Halles","Zunfthaus zur Waag"],
+      bestCocktails: ["Widder Bar","Old Crow","Jules Verne Panoramabar","Baur au Lac"],
+      bestBakeries: ["Sprüngli (Paradeplatz)","John Baker (Stadelhofen)","Markthalle Im Viadukt"],
+      bestCoffee: ["Café Henrici","Sprüngli (Paradeplatz)","Lindt Home of Chocolate","John Baker (Stadelhofen)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Grossmünster": "Grossmünster Zwingliplatz 7 Zurich",
+      "Swiss National Museum (Landesmuseum Zürich)": "Landesmuseum Zürich Museumstrasse 2 Zurich",
+      "Kunsthaus Zürich": "Kunsthaus Zürich Heimplatz Zurich",
+      "Fraumünster": "Fraumünster Münsterhof 2 Zurich",
+      "Zürichsee-Schifffahrtsgesellschaft (ZSG) lake boats": "ZSG Schiffstation Bürkliplatz Zurich",
+      "Polybahn": "Polybahn Central Limmatquai Zurich",
+      "Kronenhalle": "Kronenhalle Rämistrasse 4 Zurich",
+      "Zunfthaus zur Waag": "Zunfthaus zur Waag Münsterhof 8 Zurich",
+      "Haus Hiltl": "Haus Hiltl Sihlstrasse 28 Zurich",
+      "Zeughauskeller": "Zeughauskeller Bahnhofstrasse 28a Zurich",
+      "Botanical Garden University of Zurich": "Botanischer Garten Universität Zürich Zollikerstrasse 107 Zurich",
+      "Markthalle Im Viadukt": "Markthalle Im Viadukt Viaduktstrasse Zurich",
+      "Museum für Gestaltung (Ausstellungsstrasse)": "Museum für Gestaltung Ausstellungsstrasse 60 Zurich",
+      "Baur au Lac": "Baur au Lac Talstrasse 1 Zurich",
+      "The Dolder Grand": "The Dolder Grand Kurhausstrasse 65 Zurich",
+      "Clouds (Prime Tower)": "Clouds Prime Tower Maagplatz 5 Zurich",
+      "Jules Verne Panoramabar": "Jules Verne Panoramabar Uraniastrasse 9 Zurich",
+      "Frau Gerolds Garten": "Frau Gerolds Garten Geroldstrasse 23 Zurich",
+      "Widder Bar": "Widder Bar Rennweg 7 Zurich",
+      "Zoo Zürich": "Zoo Zürich Zürichbergstrasse 221 Zurich",
+      "Lindt Home of Chocolate": "Lindt Home of Chocolate Schokoladenplatz 1 Kilchberg",
+      "FIFA Museum": "FIFA Museum Seestrasse 27 Zurich",
+      "Kunsthalle Zürich": "Kunsthalle Zürich Limmatstrasse 270 Zurich",
+      "Café Henrici": "Café Henrici Niederdorfstrasse 1 Zurich",
+      "Old Crow": "Old Crow Schwanengasse 4 Zurich",
+      "John Baker (Stadelhofen)": "John Baker Stadelhoferstrasse 28 Zurich",
+      "Les Halles": "Les Halles Pfingstweidstrasse 6 Zurich",
+      "Swiss Chuchi": "Swiss Chuchi Rosengasse 10 Zurich",
+      "Sprüngli (Paradeplatz)": "Sprüngli Bahnhofstrasse 21 Paradeplatz Zurich"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Zurich" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Old Town churches, museums, the zoo and lake boats, with breakfast cafés, bakeries, dinners and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Grossmünster","Fraumünster","Swiss National Museum (Landesmuseum Zürich)","Kunsthaus Zürich"];
+    cityGuide.tip = "Plan around Mondays, when the Swiss National Museum, Kunsthaus Zürich, FIFA Museum and Museum für Gestaltung are all closed, and note that the Grossmünster church is closed on Tuesdays.";
+    data.destinationFacts[cityKey] = "Plan around Mondays, when the Swiss National Museum, Kunsthaus Zürich, FIFA Museum and Museum für Gestaltung are all closed, and note that the Grossmünster church is closed on Tuesdays.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Old Town churches, museums, the zoo and lake boats, with breakfast cafés, bakeries, dinners and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays and Tuesdays",
+        "copy": "The Swiss National Museum, Kunsthaus Zürich, FIFA Museum and Museum für Gestaltung close on Mondays. The Grossmünster closes on Tuesdays, and since 3 August 2026 its Karlsturm tower opens only Friday to Sunday."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book Lindt ahead; buy on site elsewhere",
+        "copy": "Lindt Home of Chocolate asks you to book your ticket online in advance and can sell out on the day. The Fraumünster (CHF 5) and Museum für Gestaltung sell tickets only on site."
+      },
+      {
+        "label": "Walk-in bars",
+        "value": "No reservations",
+        "copy": "Widder Bar and Old Crow both state they take no reservations. At Kronenhalle, reservations are for the restaurant only, not the bar."
+      },
+      {
+        "label": "Rules",
+        "value": "Photos and audio",
+        "copy": "At the Fraumünster, private photos without flash or tripod are allowed outside services, but the Chagall windows are copyright protected. The audio tour needs headphones and devices are not given to children under 6."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Start early at the Old Town churches, which open to visitors at 12 on Sundays, and save museum days for Tuesday to Sunday.",
+      intro: [
+        "Zurich's Old Town centres on two churches facing each other across the Limmat. The Grossmünster on Zwingliplatz opens Monday to Saturday from 10, with Sunday visiting from 12 after the morning service, and it is closed on Tuesdays. From 1 November winter hours run to 17:00. Its Karlsturm tower costs CHF 5 for adults and, since 3 August 2026, opens only Friday to Sunday. Across the river, the Fraumünster on Münsterhof charges CHF 5, sold on site only, and its entry includes a CHF 5 reduction on the Kunsthaus collection.",
+        "For museums, you should avoid Mondays. The Swiss National Museum beside the main station opens Tuesday to Sunday, 10:00 to 17:00, with \"Wars and us\" running until 17 January 2027 and \"Graphics: Designing the everyday\" until 4 April 2027. Kunsthaus Zürich on Heimplatz stays open until 20:00 on Thursdays and shows \"Maria Lassnig and Edvard Munch\" until 21 February 2027. In Zurich West, the Museum für Gestaltung shows \"Avant-Garde—Graphic Design on the Rise\" until 21 February 2027, with free entry on Thursdays from 5pm, while Kunsthalle Zürich runs two shows until 10 January 2027.",
+        "With children, Zoo Zürich switches to winter hours from November, 9 a.m. to 5 p.m., with the Masoala Rainforest opening at 10. Lindt Home of Chocolate in Kilchberg opens daily from 10 am to 7 pm but asks you to book online in advance, as same-day slots can sell out. The FIFA Museum on Seestrasse opens Tuesday to Sunday, 10:00 to 18:00. For a short ride, the Polybahn runs every five minutes from Central up to the ETH terrace, with fares included in ZVV zone 110.",
+        "For food, Café Henrici on Niederdorfstrasse opens at 8 every day and adds brunch at weekends. Haus Hiltl on Sihlstrasse runs its vegetarian buffet until 30 minutes before closing, and Les Halles serves moules et frites year-round. Kronenhalle takes online bookings for the restaurant only. In the evening, Widder Bar and Old Crow take no reservations, and Jules Verne Panoramabar on Uraniastrasse is closed Sundays and Mondays. Frau Gerolds Garten is in its winter season until 5 March 2027."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair the Grossmünster and Fraumünster in the morning with the Swiss National Museum, avoiding Tuesdays at the Grossmünster and Mondays at the museum."
+        ],
+        [
+          "A slower morning",
+          "Start with breakfast at Café Henrici from 8, then ride the Polybahn up to the ETH terrace."
+        ],
+        [
+          "Before booking",
+          "Book Lindt Home of Chocolate online ahead, and plan walk-in time for Widder Bar and Old Crow, which take no reservations."
+        ]
+      ],
+      trust: "All 29 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

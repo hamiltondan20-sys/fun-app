@@ -1,0 +1,571 @@
+{
+  "city": "Zurich, Switzerland",
+  "checkedOn": "2026-10-25",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Swiss National Museum (Landesmuseum Zürich)",
+      "kind": "museum",
+      "url": "https://www.landesmuseum.ch/en",
+      "sourceType": "official public operator (Swiss National Museum)",
+      "address": "Museumstrasse 2 8001 Zürich",
+      "operatingEvidence": "Current exhibitions listed, including \"Wars and us\" (17 April 2026 to 17 January 2027) and \"Graphics: Designing the everyday\" (17 July 2026 to 4 April 2027).",
+      "hours": "Museum: \"Tuesday till Sunday 10:00 - 17:00\"; closed Mondays and \"Closed on public holidays.\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Kunsthaus Zürich",
+      "kind": "museum",
+      "url": "https://www.kunsthaus.ch/en/",
+      "sourceType": "operator's own site",
+      "address": "Heimplatz, 8001 Zürich",
+      "operatingEvidence": "Current exhibitions include \"Maria Lassnig and Edvard Munch\" (until 21.02.2027) and \"Evergreens. Selected Works from the Collection\" (until 10.01.2027); tickets sold via tickets.kunsthaus.ch.",
+      "hours": "Tue, Wed, Fri-Sun 10:00-18:00; Thu 10:00-20:00; closed Mondays. \"Exhibition and collection galleries close appr. 10 minutes prior to Museum closing.\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Grossmünster",
+      "kind": "landmark",
+      "url": "https://reformiert-zuerich.ch/kirchgemeinde/kirchen/grossmuenster/besuch/",
+      "sourceType": "official public operator (Reformierte Kirche Zürich)",
+      "address": "Zwingliplatz 7, 8001 Zürich",
+      "operatingEvidence": "Visitor page lists 2026 hours and tower (Karlsturm) fees; from \"3. August 2026\" the tower is \"Montag - Donnerstag geschlossen\", \"Freitag - Sonntag geöffnet\". Events dated October-November 2026.",
+      "hours": "Summer (1 Mar-31 Oct): Mon-Sat 10-18, Sun visitors 12-18; winter (1 Nov-28 Feb): Mon-Sat 10-17, Sun 12-17; \"jeweils dienstags geschlossen\". Tower adults CHF 5.",
+      "confidence": "high"
+    },
+    {
+      "name": "Fraumünster",
+      "kind": "landmark",
+      "url": "https://reformiert-zuerich.ch/kirchgemeinde/kirchen/fraumuenster/besuch/",
+      "sourceType": "official public operator (Reformierte Kirche Zürich)",
+      "address": "Münsterhof 2, 8001 Zürich",
+      "operatingEvidence": "Visitor page gives entry \"CHF 5.-\" with \"Ticketverkauf nur vor Ort, kein Online Ticketvorverkauf möglich\"; events dated \"DI27.10.2026\".",
+      "hours": "Summer (1 Mar-31 Oct): Mon-Sat 10-18, Sun visitors 12-18; winter (1 Nov-28 Feb): Mon-Sat 10-17, Sun 12-17; last entry 15 minutes before closing.",
+      "confidence": "high"
+    },
+    {
+      "name": "Zoo Zürich",
+      "kind": "park",
+      "url": "https://zoo.ch/en/plan-your-visit/opening-hours",
+      "sourceType": "operator's own site",
+      "address": "Zürichbergstrasse 221, 8044 Zurich (legal notice)",
+      "operatingEvidence": "News dated 20.09.2026 (\"First gorilla offspring\") and a notice: \"We are building the zoo of the future – please take note of our construction site information.\"",
+      "hours": "Summer (March-October) \"9 a.m.–6 p.m., Masoala Rainforest 10 a.m.–6 p.m.\"; winter (November-February) \"9 a.m.–5 p.m., Masoala Rainforest 10 a.m.–5 p.m.\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Lindt Home of Chocolate",
+      "kind": "museum",
+      "url": "https://www.lindt-home-of-chocolate.com/en/",
+      "sourceType": "operator's own site",
+      "address": "Schokoladenplatz 1, 8802 Kilchberg, Switzerland",
+      "operatingEvidence": "Same-day notice \"Museum admissions for today are fully booked\" and \"we kindly ask you to book your ticket online in advance\"; 2026 special opening hours listed.",
+      "hours": "Museum \"Mon – Sun: 10 am – 7 pm\" (last slot 5:30 pm); shop and café 10:00-19:00 daily.",
+      "confidence": "high"
+    },
+    {
+      "name": "FIFA Museum",
+      "kind": "museum",
+      "url": "https://www.fifamuseum.com/en/zurich/plan-your-visit/opening-hours-and-directions",
+      "sourceType": "operator's own site",
+      "address": "Seestrasse 27, 8002 Zürich, Switzerland",
+      "operatingEvidence": "Homepage lists the special exhibition \"World Cup Fever: Skills Zone\" and the original World Cup trophy \"back on display\"; closing days listed for 25 December 2026.",
+      "hours": "\"Tuesday-Sunday\" 10:00-18:00, last admission 17:30; \"CLOSED ON MONDAYS\".",
+      "confidence": "high"
+    },
+    {
+      "name": "Museum für Gestaltung (Ausstellungsstrasse)",
+      "kind": "museum",
+      "url": "https://museum-gestaltung.ch/en/visit/ausstellungsstrasse",
+      "sourceType": "operator's own site",
+      "address": "Ausstellungsstrasse 60, 8005 Zurich",
+      "operatingEvidence": "\"Avant-Garde—Graphic Design on the Rise\" (3 September 2026 to 21 February 2027) and \"Christoph Hefti—The Missing Cat and Other Textile Stories\" (until 3 January 2027). Free admission \"every Thursday from 5pm\"; \"we do not offer online tickets.\"",
+      "hours": "\"Tuesday to Sunday 10:00–17:00\", \"Thursday 10:00–20:00\", \"Closed on Monday\". Day ticket CHF 15.",
+      "confidence": "high"
+    },
+    {
+      "name": "Kunsthalle Zürich",
+      "kind": "museum",
+      "url": "https://www.kunsthallezurich.ch/en",
+      "sourceType": "operator's own site",
+      "address": "Limmatstrasse 270, CH-8005 Zürich",
+      "operatingEvidence": "Current exhibitions: Ayo Akingbade \"Crossing\" and Caspar Heinemann \"Tempting Fate\", both 26.09.2026 to 10.01.2027.",
+      "hours": "\"Tuesday–Sunday and public holidays 11 am–6 pm\", \"Thursday 11 am–8 pm\".",
+      "confidence": "high"
+    },
+    {
+      "name": "Botanical Garden University of Zurich",
+      "kind": "park",
+      "url": "https://www.bg.uzh.ch/en.html",
+      "sourceType": "official public operator (University of Zurich)",
+      "address": "Zollikerstr. 107, 8008 Zurich",
+      "operatingEvidence": "Agenda lists talks on 10.11.2026 and 19.11.2026 and a new focus exhibition opening 8.12.2026 (\"Durian, Rambutan & Co: Früchte aus Borneo\").",
+      "hours": "\"Apr-Oct: Mo-Fr: 7 am-7 pm\", \"Sa-Su: 8 am-6 pm\", \"Greenhouses: 9.30-16.45h\"; November-March hours not shown.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Zürichsee-Schifffahrtsgesellschaft (ZSG) lake boats",
+      "kind": "scenic",
+      "url": "https://www.zsg.ch/en",
+      "sourceType": "operator's own site",
+      "address": "Departure stop \"Zürich Bürkliplatz\"; company office \"Mythenquai 333 8038 Zürich\"",
+      "operatingEvidence": "Booking widget for \"Table reservations for today, 25 October 2026\" and timetable \"from 14.12.2025\" (2026 Fahrplan); notices on line cancellations and \"Service restrictions due to low water levels\".",
+      "hours": "not published on the page read (timetable PDF only)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Polybahn",
+      "kind": "scenic",
+      "url": "https://www.polybahn.ch/",
+      "sourceType": "operator's own site",
+      "address": "Runs \"vom Central zur Polyterrasse der ETH\"; company address Limmatquai 144, 8001 Zürich",
+      "operatingEvidence": "Blog post dated \"21. September 2026\" (140th anniversary) and 2026 maintenance stoppages, e.g. \"Donnerstag, 12. November 2026\" from 6.30 to about 17.00.",
+      "hours": "\"Montag bis Freitag: 06.30 – 21.00 Uhr\", \"Samstag: 07.30 – 21.00 Uhr\", \"Sonntag & Feiertage: 09.00 – 21.00 Uhr\"; every 5 minutes; single CHF 1.20, included in ZVV zone 110.",
+      "confidence": "high"
+    },
+    {
+      "name": "Markthalle Im Viadukt",
+      "kind": "market",
+      "url": "https://www.im-viadukt.ch/infos",
+      "sourceType": "operator's own site",
+      "address": "Viaduktstrasse 21/97, 8005 Zürich",
+      "operatingEvidence": "2026 holiday schedule, including Sunday sales days on 29 November, 6 and 20 December 2026 (11:00-18:00) and \"Winterzauber\" 19.11.-23.12.2026.",
+      "hours": "\"Mo. bis Sa. 9:00 bis 20:00 Uhr\"; St. Jakob Beck stall opens 7:00 on weekdays.",
+      "confidence": "high"
+    },
+    {
+      "name": "Frau Gerolds Garten",
+      "kind": "meal",
+      "url": "https://www.fraugerold.ch/",
+      "sourceType": "operator's own site",
+      "address": "Geroldstrasse 23, 8005 Zürich",
+      "operatingEvidence": "Winter season \"vom 09.10.2026 bis 05.03.2027\"; dated notices such as \"FR, 11.12.2026: Geschlossene Gesellschaft\" and Christmas closure 24.12-26.12.2026.",
+      "hours": "Winter-Garten 09.10.-31.12.2026: \"MO - MI: 17:00 - ca. 22:00 Uhr\", \"DO & FR: 17:00 - ca. 23:00 Uhr\"; Winterstube from 09.11.2026 \"MO - SA: 18:00 - ca. 24:00 Uhr\".",
+      "confidence": "high"
+    },
+    {
+      "name": "Kronenhalle",
+      "kind": "meal",
+      "url": "https://www.kronenhalle.com/",
+      "sourceType": "operator's own site",
+      "address": "Rämistrasse 4, 8001 Zürich",
+      "operatingEvidence": "Online table booking (\"Online reservieren\"), reservations \"(nur Restaurant)\"; published restaurant and bar hours. No dated 2026 content.",
+      "hours": "Restaurant \"Mo - So 12:00 – 00:00\", kitchen daily 12:00-22:30; Bar \"So - Do: 11:30 - 00:00\", \"Fr - Sa: 11:30 - 00:30\".",
+      "confidence": "medium"
+    },
+    {
+      "name": "Zunfthaus zur Waag",
+      "kind": "meal",
+      "url": "https://www.zunfthaus-zur-waag.ch/kontakt-contact",
+      "sourceType": "operator's own site",
+      "address": "Münsterhof 8, 8001 Zürich",
+      "operatingEvidence": "Online table booking and 2026 closure dates, including \"24.12.2026-03.01.2027\".",
+      "hours": "\"Montag bis Samstag\" 11:30-14:00 and 18:00-22:00; a separate restaurant listing shows \"Montag bis Sonntag\" 08:00-17:00.",
+      "confidence": "high"
+    },
+    {
+      "name": "Zeughauskeller",
+      "kind": "meal",
+      "url": "https://www.zeughauskeller.ch/en/",
+      "sourceType": "operator's own site",
+      "address": "Bahnhofstrasse 28 a Beim Paradeplatz CH-8001 Zürich",
+      "operatingEvidence": "Hours notice \"open daily from 11.30-23.00h\" with \"hot meals all day\"; menu lists Wienerschnitzel, Cordon bleu and Kalbsgeschnetzeltes. No dated 2026 content.",
+      "hours": "\"open daily from 11.30-23.00h\"; \"hot meals all day from 11.30-22.00h!\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Haus Hiltl",
+      "kind": "meal",
+      "url": "https://hiltl.ch/en/locations/hiltl-a-la-carte-restaurant/",
+      "sourceType": "operator's own site",
+      "address": "Sihlstrasse 28, 8001 Zürich",
+      "operatingEvidence": "À la carte restaurant and Hiltl Buffet; \"The buffet is open until 30 minutes before the restaurant closes.\" No dated 2026 content.",
+      "hours": "\"Monday to Wednesday 11 to 22\", \"Thursday to Saturday 11 to 23\", \"Sunday 10 to 22\".",
+      "confidence": "medium"
+    },
+    {
+      "name": "Les Halles",
+      "kind": "meal",
+      "url": "https://www.les-halles.ch/",
+      "sourceType": "operator's own site",
+      "address": "Pfingstweidstrasse 6 8005 Zürich",
+      "operatingEvidence": "Current menu file \"Speisekarte_2026.pdf\"; \"Moules et Frites\" served \"täglich und das ganze Jahr durch.\"",
+      "hours": "\"MO-MI -> 11:00-24:00\", \"DO und FR -> 11:00- till late\", \"SA 16:00- till late\"; kitchen Mon-Fri 11:45-13:45 / 18:00-22:00, Sat 18:00-22:00.",
+      "confidence": "high"
+    },
+    {
+      "name": "Swiss Chuchi",
+      "kind": "meal",
+      "url": "https://hotel-adler.ch/",
+      "sourceType": "operator's own site (Hotel Adler)",
+      "address": "Rosengasse 10 CH-8001 Zürich",
+      "operatingEvidence": "Published opening hours; describes itself as from \"der ersten Fonduestube der Zürcher Altstadt\" serving Swiss cheese and meat dishes. No dated 2026 content.",
+      "hours": "\"Montag bis Freitag: 11:30 bis 23:15\", \"Samstag und Sonntag: 12:00 bis 23:15\".",
+      "confidence": "medium"
+    },
+    {
+      "name": "Clouds (Prime Tower)",
+      "kind": "meal",
+      "url": "https://www.clouds.ch/",
+      "sourceType": "operator's own site",
+      "address": "Maagplatz 5, 8005 Zürich",
+      "operatingEvidence": "Online table booking and a New Year's Eve gala \"Donnerstag, 31.12.2026 18.00 Uhr\"; restaurant at 120 metres \"im Prime Tower\".",
+      "hours": "General hours not published; brunch \"Jeden Samstag & Sonntag ab 10 bis 15 Uhr\"; business lunch Monday to Friday.",
+      "confidence": "high"
+    },
+    {
+      "name": "Baur au Lac",
+      "kind": "bar",
+      "url": "https://www.bauraulac.ch/en/",
+      "sourceType": "operator's own site",
+      "address": "Talstrasse 1, 8001, Zurich, Switzerland",
+      "operatingEvidence": "Restaurant and bar hours published; Chalet au Lac open \"1. - 31. December 2026\".",
+      "hours": "Baur's Bar \"Mon – Thur 3pm – 12am\", \"Fri – Sat 3pm – 1am\"; Le Hall \"Mon - Fri 8.30am - 11pm\", \"Sat - Sun 9.00am - 11pm\"; Baur's Brasserie Mon-Sat 12pm-2.30pm and 6pm-10.30pm.",
+      "confidence": "high"
+    },
+    {
+      "name": "The Dolder Grand",
+      "kind": "meal",
+      "url": "https://www.thedoldergrand.com/en/",
+      "sourceType": "operator's own site",
+      "address": "Kurhausstrasse 65, 8032 Zurich",
+      "operatingEvidence": "Restaurants include Saltz, Mikuriya and blooms plus Canvas Bar; dated offers such as \"Bye Bye 2026\" New Year's Eve.",
+      "hours": "not published on the page read",
+      "confidence": "medium"
+    },
+    {
+      "name": "Widder Bar",
+      "kind": "bar",
+      "url": "https://www.widderhotel.com/en/eat-drink/widder-bar/",
+      "sourceType": "operator's own site (Widder Hotel)",
+      "address": "Rennweg 7, CH – 8001 Zürich",
+      "operatingEvidence": "Current menus \"Barkarte Oktober 2026\" and \"Whiskykarte Oktober 2026\"; \"We do not accept reservations for the Widder Bar.\"",
+      "hours": "\"Monday to Thursday 12 PM to 1 AM\", \"Friday to Saturday 12 PM to 2 AM\", \"Sunday 12 PM to 12 AM\".",
+      "confidence": "high"
+    },
+    {
+      "name": "Jules Verne Panoramabar",
+      "kind": "bar",
+      "url": "https://www.jules-verne.ch/",
+      "sourceType": "operator's own site",
+      "address": "Uraniastrasse 9, 8001 Zürich",
+      "operatingEvidence": "Cocktail menu dated August 2026 (\"Jules_Verne_Barkarte_0826.pdf\"); hours published.",
+      "hours": "Tue-Thu 17-23; Fri 17-24 and Sat 14-24 (\"Einlass bis 23:00 Uhr\"); \"Sonntag – Montag\" \"Geschlossen\".",
+      "confidence": "high"
+    },
+    {
+      "name": "Old Crow",
+      "kind": "bar",
+      "url": "https://www.oldcrow.ch/",
+      "sourceType": "operator's own site",
+      "address": "Schwanengasse 4 8001 Zürich",
+      "operatingEvidence": "Published hours and \"keine Reservationen / no reservations\". No dated 2026 content.",
+      "hours": "\"Tuesday - Saturday 5pm until 0.30am\".",
+      "confidence": "medium"
+    },
+    {
+      "name": "Café Henrici",
+      "kind": "cafe",
+      "url": "https://www.cafe-henrici.ch/",
+      "sourceType": "operator's own site",
+      "address": "Niederdorfstrasse 1, 8001 Zürich",
+      "operatingEvidence": "Breakfast and brunch menus uploaded September 2026 (\"26.09.17-Fruehstueck-D.pdf\"); \"Am Wochenende wirds mit Brunchangeboten noch reichhaltiger.\"",
+      "hours": "Mon 8-22; Tue-Thu 8-23; Fri-Sat 8-24; Sun 8-22.",
+      "confidence": "high"
+    },
+    {
+      "name": "Sprüngli (Paradeplatz)",
+      "kind": "bakery",
+      "url": "https://spruengli.ch/en",
+      "sourceType": "operator's own site",
+      "address": "Bahnhofstrasse 21, 8001, Zürich (\"Zurich, Paradeplatz (Headquarter)\")",
+      "operatingEvidence": "\"celebrating its 190th anniversary in 2026\"; limited-edition Luxemburgerli in all stores, with 2026 shipping dates.",
+      "hours": "not published for the Paradeplatz store on the page read",
+      "confidence": "medium"
+    },
+    {
+      "name": "John Baker (Stadelhofen)",
+      "kind": "bakery",
+      "url": "https://johnbaker.ch/bakeries/",
+      "sourceType": "operator's own site",
+      "address": "Stadelhoferstr 28 Zurich 1",
+      "operatingEvidence": "Stadelhofen order form uploaded August 2026 (\"0926_johnbaker_order_stadelhofen.pdf\"); branch hours listed.",
+      "hours": "\"Mon to Fri 6.30-18.30 Sat 7.30-16\"; no Sunday hours listed.",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Old Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Lake Zurich",
+      "reason": "generic, not a place (lake boats covered via ZSG)",
+      "url": ""
+    },
+    {
+      "name": "Uetliberg / Uetliberg view",
+      "reason": "generic, not a place; operator Uto Kulm checked separately",
+      "url": ""
+    },
+    {
+      "name": "Lake boat ride",
+      "reason": "generic, not a place (replaced by ZSG lake boats)",
+      "url": ""
+    },
+    {
+      "name": "Design district walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "All remaining input entries (e.g. \"a Swiss cafe and dinner\", \"Market meal around Enge\", \"Private guide for Old Town\", \"Sunset drinks near Old Town\", \"Local bakery near Old Town\", \"Coffee near Old Town\")",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Uto Kulm (Uetliberg)",
+      "reason": "official site readable but gives no street address and no hours or dated operating evidence",
+      "url": "https://www.utokulm.ch/en/"
+    },
+    {
+      "name": "Museum Rietberg",
+      "reason": "official pages read showed only address and copyright; no hours, exhibitions or operating evidence; city page returned 404",
+      "url": "https://rietberg.ch/en/"
+    },
+    {
+      "name": "Chinagarten",
+      "reason": "city page gives no exact street address (\"bei der Blatterwiese\")",
+      "url": "https://www.stadt-zuerich.ch/de/stadtleben/sport-und-erholung/park-und-gruenanlagen/chinagarten.html"
+    },
+    {
+      "name": "Lindenhof",
+      "reason": "city page gives no address, hours or dated content",
+      "url": "https://www.stadt-zuerich.ch/de/stadtleben/sport-und-erholung/park-und-gruenanlagen/lindenhof.html"
+    },
+    {
+      "name": "Babu's Bakery",
+      "reason": "fetch failed: HTTP 429 Too Many Requests on repeated attempts",
+      "url": "https://www.babus.ch/"
+    },
+    {
+      "name": "Vicafe",
+      "reason": "fetch failed: HTTP 429 Too Many Requests on repeated attempts",
+      "url": "https://www.vicafe.ch/"
+    },
+    {
+      "name": "Max Chocolatier",
+      "reason": "fetch failed: HTTP 429 Too Many Requests",
+      "url": "https://www.maxchocolatier.com/en/"
+    },
+    {
+      "name": "MAME coffee",
+      "reason": "fetch failed: HTTP 429 Too Many Requests",
+      "url": "https://www.mame.coffee/"
+    },
+    {
+      "name": "Kafi Schoffel",
+      "reason": "certificate error (self signed certificate); not bypassed",
+      "url": "https://www.kafischoffel.ch/"
+    },
+    {
+      "name": "Bauschänzli",
+      "reason": "fetch failed: DNS error (EAI_AGAIN)",
+      "url": "https://www.bauschaenzli.ch/"
+    },
+    {
+      "name": "Rheinfelder Bierhalle",
+      "reason": "fetch failed: domain not found (ENOTFOUND)",
+      "url": "https://www.bierhalle-rheinfelder.ch/"
+    },
+    {
+      "name": "Café Schober / Péclard im Schober",
+      "reason": "cafeschober.ch not found; peclard.com page shows no Zurich café address or hours",
+      "url": "https://www.peclard.com/"
+    },
+    {
+      "name": "St. Jakob Beck",
+      "reason": "own domain not found (ENOTFOUND); only referenced as a stall in Markthalle Im Viadukt",
+      "url": "https://www.stjakob-beck.ch/"
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Grossmünster",
+        "Swiss National Museum (Landesmuseum Zürich)",
+        "Kunsthaus Zürich",
+        "Fraumünster"
+      ],
+      "bestFirstTimers": [
+        "Grossmünster",
+        "Fraumünster",
+        "Zürichsee-Schifffahrtsgesellschaft (ZSG) lake boats",
+        "Polybahn"
+      ],
+      "bestRestaurants": [
+        "Kronenhalle",
+        "Zunfthaus zur Waag",
+        "Haus Hiltl",
+        "Zeughauskeller"
+      ],
+      "bestBudget": [
+        "Polybahn",
+        "Botanical Garden University of Zurich",
+        "Markthalle Im Viadukt",
+        "Museum für Gestaltung (Ausstellungsstrasse)"
+      ],
+      "bestLuxury": [
+        "Baur au Lac",
+        "The Dolder Grand",
+        "Kronenhalle",
+        "Clouds (Prime Tower)"
+      ],
+      "bestCouples": [
+        "Jules Verne Panoramabar",
+        "Zürichsee-Schifffahrtsgesellschaft (ZSG) lake boats",
+        "Frau Gerolds Garten",
+        "Widder Bar"
+      ],
+      "bestKids": [
+        "Zoo Zürich",
+        "Lindt Home of Chocolate",
+        "FIFA Museum",
+        "Botanical Garden University of Zurich"
+      ],
+      "bestSolo": [
+        "Kunsthalle Zürich",
+        "Museum für Gestaltung (Ausstellungsstrasse)",
+        "Café Henrici",
+        "Old Crow"
+      ],
+      "bestUnique": [
+        "Lindt Home of Chocolate",
+        "Frau Gerolds Garten",
+        "Polybahn",
+        "Markthalle Im Viadukt"
+      ],
+      "bestBreakfast": [
+        "Café Henrici",
+        "Clouds (Prime Tower)",
+        "Baur au Lac",
+        "John Baker (Stadelhofen)"
+      ],
+      "bestLunch": [
+        "Zeughauskeller",
+        "Les Halles",
+        "Haus Hiltl",
+        "Markthalle Im Viadukt"
+      ],
+      "bestDinner": [
+        "Kronenhalle",
+        "Swiss Chuchi",
+        "Les Halles",
+        "Zunfthaus zur Waag"
+      ],
+      "bestCocktails": [
+        "Widder Bar",
+        "Old Crow",
+        "Jules Verne Panoramabar",
+        "Baur au Lac"
+      ],
+      "bestBakeries": [
+        "Sprüngli (Paradeplatz)",
+        "John Baker (Stadelhofen)",
+        "Markthalle Im Viadukt"
+      ],
+      "bestCoffee": [
+        "Café Henrici",
+        "Sprüngli (Paradeplatz)",
+        "Lindt Home of Chocolate",
+        "John Baker (Stadelhofen)"
+      ]
+    },
+    "queries": {
+      "Swiss National Museum (Landesmuseum Zürich)": "Landesmuseum Zürich Museumstrasse 2 Zurich",
+      "Kunsthaus Zürich": "Kunsthaus Zürich Heimplatz Zurich",
+      "Grossmünster": "Grossmünster Zwingliplatz 7 Zurich",
+      "Fraumünster": "Fraumünster Münsterhof 2 Zurich",
+      "Zoo Zürich": "Zoo Zürich Zürichbergstrasse 221 Zurich",
+      "Lindt Home of Chocolate": "Lindt Home of Chocolate Schokoladenplatz 1 Kilchberg",
+      "FIFA Museum": "FIFA Museum Seestrasse 27 Zurich",
+      "Museum für Gestaltung (Ausstellungsstrasse)": "Museum für Gestaltung Ausstellungsstrasse 60 Zurich",
+      "Kunsthalle Zürich": "Kunsthalle Zürich Limmatstrasse 270 Zurich",
+      "Botanical Garden University of Zurich": "Botanischer Garten Universität Zürich Zollikerstrasse 107 Zurich",
+      "Zürichsee-Schifffahrtsgesellschaft (ZSG) lake boats": "ZSG Schiffstation Bürkliplatz Zurich",
+      "Polybahn": "Polybahn Central Limmatquai Zurich",
+      "Markthalle Im Viadukt": "Markthalle Im Viadukt Viaduktstrasse Zurich",
+      "Frau Gerolds Garten": "Frau Gerolds Garten Geroldstrasse 23 Zurich",
+      "Kronenhalle": "Kronenhalle Rämistrasse 4 Zurich",
+      "Zunfthaus zur Waag": "Zunfthaus zur Waag Münsterhof 8 Zurich",
+      "Zeughauskeller": "Zeughauskeller Bahnhofstrasse 28a Zurich",
+      "Haus Hiltl": "Haus Hiltl Sihlstrasse 28 Zurich",
+      "Les Halles": "Les Halles Pfingstweidstrasse 6 Zurich",
+      "Swiss Chuchi": "Swiss Chuchi Rosengasse 10 Zurich",
+      "Clouds (Prime Tower)": "Clouds Prime Tower Maagplatz 5 Zurich",
+      "Baur au Lac": "Baur au Lac Talstrasse 1 Zurich",
+      "The Dolder Grand": "The Dolder Grand Kurhausstrasse 65 Zurich",
+      "Widder Bar": "Widder Bar Rennweg 7 Zurich",
+      "Jules Verne Panoramabar": "Jules Verne Panoramabar Uraniastrasse 9 Zurich",
+      "Old Crow": "Old Crow Schwanengasse 4 Zurich",
+      "Café Henrici": "Café Henrici Niederdorfstrasse 1 Zurich",
+      "Sprüngli (Paradeplatz)": "Sprüngli Bahnhofstrasse 21 Paradeplatz Zurich",
+      "John Baker (Stadelhofen)": "John Baker Stadelhoferstrasse 28 Zurich"
+    },
+    "summary": "Old Town churches, museums, the zoo and lake boats, with breakfast cafés, bakeries, dinners and cocktail bars checked against their own websites.",
+    "highlights": [
+      "Grossmünster",
+      "Fraumünster",
+      "Swiss National Museum (Landesmuseum Zürich)",
+      "Kunsthaus Zürich"
+    ],
+    "tip": "Plan around Mondays, when the Swiss National Museum, Kunsthaus Zürich, FIFA Museum and Museum für Gestaltung are all closed, and note that the Grossmünster church is closed on Tuesdays.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mondays and Tuesdays",
+        "copy": "The Swiss National Museum, Kunsthaus Zürich, FIFA Museum and Museum für Gestaltung close on Mondays. The Grossmünster closes on Tuesdays, and since 3 August 2026 its Karlsturm tower opens only Friday to Sunday."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book Lindt ahead; buy on site elsewhere",
+        "copy": "Lindt Home of Chocolate asks you to book your ticket online in advance and can sell out on the day. The Fraumünster (CHF 5) and Museum für Gestaltung sell tickets only on site."
+      },
+      {
+        "label": "Walk-in bars",
+        "value": "No reservations",
+        "copy": "Widder Bar and Old Crow both state they take no reservations. At Kronenhalle, reservations are for the restaurant only, not the bar."
+      },
+      {
+        "label": "Rules",
+        "value": "Photos and audio",
+        "copy": "At the Fraumünster, private photos without flash or tripod are allowed outside services, but the Chagall windows are copyright protected. The audio tour needs headphones and devices are not given to children under 6."
+      }
+    ],
+    "dek": "Start early at the Old Town churches, which open to visitors at 12 on Sundays, and save museum days for Tuesday to Sunday.",
+    "intro": [
+      "Zurich's Old Town centres on two churches facing each other across the Limmat. The Grossmünster on Zwingliplatz opens Monday to Saturday from 10, with Sunday visiting from 12 after the morning service, and it is closed on Tuesdays. From 1 November winter hours run to 17:00. Its Karlsturm tower costs CHF 5 for adults and, since 3 August 2026, opens only Friday to Sunday. Across the river, the Fraumünster on Münsterhof charges CHF 5, sold on site only, and its entry includes a CHF 5 reduction on the Kunsthaus collection.",
+      "For museums, you should avoid Mondays. The Swiss National Museum beside the main station opens Tuesday to Sunday, 10:00 to 17:00, with \"Wars and us\" running until 17 January 2027 and \"Graphics: Designing the everyday\" until 4 April 2027. Kunsthaus Zürich on Heimplatz stays open until 20:00 on Thursdays and shows \"Maria Lassnig and Edvard Munch\" until 21 February 2027. In Zurich West, the Museum für Gestaltung shows \"Avant-Garde—Graphic Design on the Rise\" until 21 February 2027, with free entry on Thursdays from 5pm, while Kunsthalle Zürich runs two shows until 10 January 2027.",
+      "With children, Zoo Zürich switches to winter hours from November, 9 a.m. to 5 p.m., with the Masoala Rainforest opening at 10. Lindt Home of Chocolate in Kilchberg opens daily from 10 am to 7 pm but asks you to book online in advance, as same-day slots can sell out. The FIFA Museum on Seestrasse opens Tuesday to Sunday, 10:00 to 18:00. For a short ride, the Polybahn runs every five minutes from Central up to the ETH terrace, with fares included in ZVV zone 110.",
+      "For food, Café Henrici on Niederdorfstrasse opens at 8 every day and adds brunch at weekends. Haus Hiltl on Sihlstrasse runs its vegetarian buffet until 30 minutes before closing, and Les Halles serves moules et frites year-round. Kronenhalle takes online bookings for the restaurant only. In the evening, Widder Bar and Old Crow take no reservations, and Jules Verne Panoramabar on Uraniastrasse is closed Sundays and Mondays. Frau Gerolds Garten is in its winter season until 5 March 2027."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair the Grossmünster and Fraumünster in the morning with the Swiss National Museum, avoiding Tuesdays at the Grossmünster and Mondays at the museum."
+      ],
+      [
+        "A slower morning",
+        "Start with breakfast at Café Henrici from 8, then ride the Polybahn up to the ETH terrace."
+      ],
+      [
+        "Before booking",
+        "Book Lindt Home of Chocolate online ahead, and plan walk-in time for Widder Bar and Old Crow, which take no reservations."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Babu's Bakery, Vicafe, Max Chocolatier and MAME returned HTTP 429 errors; Kafi Schoffel had a certificate error; Bauschänzli, Rheinfelder Bierhalle, Café Schober and St. Jakob Beck domains did not resolve; Museum Rietberg and Uto Kulm pages were readable but lacked hours or operating evidence, so all of these were left out. Published only partially: Sprüngli (Paradeplatz) and The Dolder Grand did not show hours on the pages read, ZSG lake boats showed a timetable PDF but no hours on the page, the Botanical Garden showed no November-March hours, and Kronenhalle, Zeughauskeller, Haus Hiltl, Swiss Chuchi and Old Crow showed hours and booking details but no dated 2026 content. The Kronenhalle homepage also contained an unrelated promotional paragraph linking to a medication site, which may indicate the page has been tampered with.",
+  "injectionLikeText": []
+}

@@ -5,6 +5,304 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Zurich, Switzerland": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-25",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Babu's Bakery, Vicafe, Max Chocolatier and MAME returned HTTP 429 errors; Kafi Schoffel had a certificate error; Bauschänzli, Rheinfelder Bierhalle, Café Schober and St. Jakob Beck domains did not resolve; Museum Rietberg and Uto Kulm pages were readable but lacked hours or operating evidence, so all of these were left out. Published only partially: Sprüngli (Paradeplatz) and The Dolder Grand did not show hours on the pages read, ZSG lake boats showed a timetable PDF but no hours on the page, the Botanical Garden showed no November-March hours, and Kronenhalle, Zeughauskeller, Haus Hiltl, Swiss Chuchi and Old Crow showed hours and booking details but no dated 2026 content. The Kronenhalle homepage also contained an unrelated promotional paragraph linking to a medication site, which may indicate the page has been tampered with.",
+    "sourceUrls": [
+      "docs/content-research/zurich-2026-10-25.md",
+      "docs/content-research/zurich-2026-10-25.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Old Town",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Lake Zurich",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (lake boats covered via ZSG)"
+      },
+      {
+        "name": "Uetliberg / Uetliberg view",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place; operator Uto Kulm checked separately"
+      },
+      {
+        "name": "Lake boat ride",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place (replaced by ZSG lake boats)"
+      },
+      {
+        "name": "Design district walk",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "All remaining input entries (e.g. \"a Swiss cafe and dinner\", \"Market meal around Enge\", \"Private guide for Old Town\", \"Sunset drinks near Old Town\", \"Local bakery near Old Town\", \"Coffee near Old Town\")",
+        "checkedOn": "2026-10-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Uto Kulm (Uetliberg)",
+        "url": "https://www.utokulm.ch/en/",
+        "checkedOn": "2026-10-25",
+        "reason": "official site readable but gives no street address and no hours or dated operating evidence"
+      },
+      {
+        "name": "Museum Rietberg",
+        "url": "https://rietberg.ch/en/",
+        "checkedOn": "2026-10-25",
+        "reason": "official pages read showed only address and copyright; no hours, exhibitions or operating evidence; city page returned 404"
+      },
+      {
+        "name": "Chinagarten",
+        "url": "https://www.stadt-zuerich.ch/de/stadtleben/sport-und-erholung/park-und-gruenanlagen/chinagarten.html",
+        "checkedOn": "2026-10-25",
+        "reason": "city page gives no exact street address (\"bei der Blatterwiese\")"
+      },
+      {
+        "name": "Lindenhof",
+        "url": "https://www.stadt-zuerich.ch/de/stadtleben/sport-und-erholung/park-und-gruenanlagen/lindenhof.html",
+        "checkedOn": "2026-10-25",
+        "reason": "city page gives no address, hours or dated content"
+      },
+      {
+        "name": "Babu's Bakery",
+        "url": "https://www.babus.ch/",
+        "checkedOn": "2026-10-25",
+        "reason": "fetch failed: HTTP 429 Too Many Requests on repeated attempts"
+      },
+      {
+        "name": "Vicafe",
+        "url": "https://www.vicafe.ch/",
+        "checkedOn": "2026-10-25",
+        "reason": "fetch failed: HTTP 429 Too Many Requests on repeated attempts"
+      },
+      {
+        "name": "Max Chocolatier",
+        "url": "https://www.maxchocolatier.com/en/",
+        "checkedOn": "2026-10-25",
+        "reason": "fetch failed: HTTP 429 Too Many Requests"
+      },
+      {
+        "name": "MAME coffee",
+        "url": "https://www.mame.coffee/",
+        "checkedOn": "2026-10-25",
+        "reason": "fetch failed: HTTP 429 Too Many Requests"
+      },
+      {
+        "name": "Kafi Schoffel",
+        "url": "https://www.kafischoffel.ch/",
+        "checkedOn": "2026-10-25",
+        "reason": "certificate error (self signed certificate); not bypassed"
+      },
+      {
+        "name": "Bauschänzli",
+        "url": "https://www.bauschaenzli.ch/",
+        "checkedOn": "2026-10-25",
+        "reason": "fetch failed: DNS error (EAI_AGAIN)"
+      },
+      {
+        "name": "Rheinfelder Bierhalle",
+        "url": "https://www.bierhalle-rheinfelder.ch/",
+        "checkedOn": "2026-10-25",
+        "reason": "fetch failed: domain not found (ENOTFOUND)"
+      },
+      {
+        "name": "Café Schober / Péclard im Schober",
+        "url": "https://www.peclard.com/",
+        "checkedOn": "2026-10-25",
+        "reason": "cafeschober.ch not found; peclard.com page shows no Zurich café address or hours"
+      },
+      {
+        "name": "St. Jakob Beck",
+        "url": "https://www.stjakob-beck.ch/",
+        "checkedOn": "2026-10-25",
+        "reason": "own domain not found (ENOTFOUND); only referenced as a stall in Markthalle Im Viadukt"
+      }
+    ],
+    "placeSources": {
+      "Swiss National Museum (Landesmuseum Zürich)": {
+        "url": "https://www.landesmuseum.ch/en",
+        "sourceType": "official public operator (Swiss National Museum)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibitions listed, including \"Wars and us\" (17 April 2026 to 17 January 2027) and \"Graphics: Designing the everyday\" (17 July 2026 to 4 April 2027)."
+      },
+      "Kunsthaus Zürich": {
+        "url": "https://www.kunsthaus.ch/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibitions include \"Maria Lassnig and Edvard Munch\" (until 21.02.2027) and \"Evergreens. Selected Works from the Collection\" (until 10.01.2027); tickets sold via tickets.kunsthaus.ch."
+      },
+      "Grossmünster": {
+        "url": "https://reformiert-zuerich.ch/kirchgemeinde/kirchen/grossmuenster/besuch/",
+        "sourceType": "official public operator (Reformierte Kirche Zürich)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Visitor page lists 2026 hours and tower (Karlsturm) fees; from \"3. August 2026\" the tower is \"Montag - Donnerstag geschlossen\", \"Freitag - Sonntag geöffnet\". Events dated October-November 2026."
+      },
+      "Fraumünster": {
+        "url": "https://reformiert-zuerich.ch/kirchgemeinde/kirchen/fraumuenster/besuch/",
+        "sourceType": "official public operator (Reformierte Kirche Zürich)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Visitor page gives entry \"CHF 5.-\" with \"Ticketverkauf nur vor Ort, kein Online Ticketvorverkauf möglich\"; events dated \"DI27.10.2026\"."
+      },
+      "Zoo Zürich": {
+        "url": "https://zoo.ch/en/plan-your-visit/opening-hours",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "News dated 20.09.2026 (\"First gorilla offspring\") and a notice: \"We are building the zoo of the future – please take note of our construction site information.\""
+      },
+      "Lindt Home of Chocolate": {
+        "url": "https://www.lindt-home-of-chocolate.com/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Same-day notice \"Museum admissions for today are fully booked\" and \"we kindly ask you to book your ticket online in advance\"; 2026 special opening hours listed."
+      },
+      "FIFA Museum": {
+        "url": "https://www.fifamuseum.com/en/zurich/plan-your-visit/opening-hours-and-directions",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Homepage lists the special exhibition \"World Cup Fever: Skills Zone\" and the original World Cup trophy \"back on display\"; closing days listed for 25 December 2026."
+      },
+      "Museum für Gestaltung (Ausstellungsstrasse)": {
+        "url": "https://museum-gestaltung.ch/en/visit/ausstellungsstrasse",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"Avant-Garde—Graphic Design on the Rise\" (3 September 2026 to 21 February 2027) and \"Christoph Hefti—The Missing Cat and Other Textile Stories\" (until 3 January 2027). Free admission \"every Thursday from 5pm\"; \"we do not offer online tickets.\""
+      },
+      "Kunsthalle Zürich": {
+        "url": "https://www.kunsthallezurich.ch/en",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current exhibitions: Ayo Akingbade \"Crossing\" and Caspar Heinemann \"Tempting Fate\", both 26.09.2026 to 10.01.2027."
+      },
+      "Botanical Garden University of Zurich": {
+        "url": "https://www.bg.uzh.ch/en.html",
+        "sourceType": "official public operator (University of Zurich)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Agenda lists talks on 10.11.2026 and 19.11.2026 and a new focus exhibition opening 8.12.2026 (\"Durian, Rambutan & Co: Früchte aus Borneo\")."
+      },
+      "Zürichsee-Schifffahrtsgesellschaft (ZSG) lake boats": {
+        "url": "https://www.zsg.ch/en",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Booking widget for \"Table reservations for today, 25 October 2026\" and timetable \"from 14.12.2025\" (2026 Fahrplan); notices on line cancellations and \"Service restrictions due to low water levels\"."
+      },
+      "Polybahn": {
+        "url": "https://www.polybahn.ch/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Blog post dated \"21. September 2026\" (140th anniversary) and 2026 maintenance stoppages, e.g. \"Donnerstag, 12. November 2026\" from 6.30 to about 17.00."
+      },
+      "Markthalle Im Viadukt": {
+        "url": "https://www.im-viadukt.ch/infos",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "2026 holiday schedule, including Sunday sales days on 29 November, 6 and 20 December 2026 (11:00-18:00) and \"Winterzauber\" 19.11.-23.12.2026."
+      },
+      "Frau Gerolds Garten": {
+        "url": "https://www.fraugerold.ch/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Winter season \"vom 09.10.2026 bis 05.03.2027\"; dated notices such as \"FR, 11.12.2026: Geschlossene Gesellschaft\" and Christmas closure 24.12-26.12.2026."
+      },
+      "Kronenhalle": {
+        "url": "https://www.kronenhalle.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online table booking (\"Online reservieren\"), reservations \"(nur Restaurant)\"; published restaurant and bar hours. No dated 2026 content."
+      },
+      "Zunfthaus zur Waag": {
+        "url": "https://www.zunfthaus-zur-waag.ch/kontakt-contact",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online table booking and 2026 closure dates, including \"24.12.2026-03.01.2027\"."
+      },
+      "Zeughauskeller": {
+        "url": "https://www.zeughauskeller.ch/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Hours notice \"open daily from 11.30-23.00h\" with \"hot meals all day\"; menu lists Wienerschnitzel, Cordon bleu and Kalbsgeschnetzeltes. No dated 2026 content."
+      },
+      "Haus Hiltl": {
+        "url": "https://hiltl.ch/en/locations/hiltl-a-la-carte-restaurant/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "À la carte restaurant and Hiltl Buffet; \"The buffet is open until 30 minutes before the restaurant closes.\" No dated 2026 content."
+      },
+      "Les Halles": {
+        "url": "https://www.les-halles.ch/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current menu file \"Speisekarte_2026.pdf\"; \"Moules et Frites\" served \"täglich und das ganze Jahr durch.\""
+      },
+      "Swiss Chuchi": {
+        "url": "https://hotel-adler.ch/",
+        "sourceType": "operator's own site (Hotel Adler)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published opening hours; describes itself as from \"der ersten Fonduestube der Zürcher Altstadt\" serving Swiss cheese and meat dishes. No dated 2026 content."
+      },
+      "Clouds (Prime Tower)": {
+        "url": "https://www.clouds.ch/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Online table booking and a New Year's Eve gala \"Donnerstag, 31.12.2026 18.00 Uhr\"; restaurant at 120 metres \"im Prime Tower\"."
+      },
+      "Baur au Lac": {
+        "url": "https://www.bauraulac.ch/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Restaurant and bar hours published; Chalet au Lac open \"1. - 31. December 2026\"."
+      },
+      "The Dolder Grand": {
+        "url": "https://www.thedoldergrand.com/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Restaurants include Saltz, Mikuriya and blooms plus Canvas Bar; dated offers such as \"Bye Bye 2026\" New Year's Eve."
+      },
+      "Widder Bar": {
+        "url": "https://www.widderhotel.com/en/eat-drink/widder-bar/",
+        "sourceType": "operator's own site (Widder Hotel)",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Current menus \"Barkarte Oktober 2026\" and \"Whiskykarte Oktober 2026\"; \"We do not accept reservations for the Widder Bar.\""
+      },
+      "Jules Verne Panoramabar": {
+        "url": "https://www.jules-verne.ch/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Cocktail menu dated August 2026 (\"Jules_Verne_Barkarte_0826.pdf\"); hours published."
+      },
+      "Old Crow": {
+        "url": "https://www.oldcrow.ch/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Published hours and \"keine Reservationen / no reservations\". No dated 2026 content."
+      },
+      "Café Henrici": {
+        "url": "https://www.cafe-henrici.ch/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Breakfast and brunch menus uploaded September 2026 (\"26.09.17-Fruehstueck-D.pdf\"); \"Am Wochenende wirds mit Brunchangeboten noch reichhaltiger.\""
+      },
+      "Sprüngli (Paradeplatz)": {
+        "url": "https://spruengli.ch/en",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "\"celebrating its 190th anniversary in 2026\"; limited-edition Luxemburgerli in all stores, with 2026 shipping dates."
+      },
+      "John Baker (Stadelhofen)": {
+        "url": "https://johnbaker.ch/bakeries/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-25",
+        "operatingEvidence": "Stadelhofen order form uploaded August 2026 (\"0926_johnbaker_order_stadelhofen.pdf\"); branch hours listed."
+      }
+    }
+  },
   "Auckland, New Zealand": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-25",
