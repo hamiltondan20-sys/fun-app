@@ -4860,4 +4860,110 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Naples, Italy: source review of 2026-10-25 (docs/content-research/naples-2026-10-25.md).
+  {
+    const cityKey = "Naples, Italy";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Pompeii Archaeological Park","Museo Cappella Sansevero","Palazzo Reale di Napoli","Catacombe di San Gennaro"],
+      bestFirstTimers: ["Pompeii Archaeological Park","Museo Cappella Sansevero","Napoli Sotterranea","L'Antica Pizzeria da Michele (Via Cesare Sersale)"],
+      bestRestaurants: ["Mimì alla Ferrovia","Palazzo Petrucci (Via Posillipo)","Pizzeria Brandi","Antica Pizzeria Di Matteo"],
+      bestBudget: ["Antica Pizzeria Di Matteo","L'Antica Pizzeria da Michele (Via Cesare Sersale)","Complesso Monumentale di Santa Chiara","Gallerie d'Italia (Napoli)"],
+      bestLuxury: ["George Restaurant (Grand Hotel Parker's)","Caruso Roof Garden (Grand Hotel Vesuvio)","Palazzo Petrucci (Via Posillipo)"],
+      bestCouples: ["Caruso Roof Garden (Grand Hotel Vesuvio)","Sky Lounge Bar (Grand Hotel Vesuvio)","Bidder Terrace (Grand Hotel Parker's)","Complesso Monumentale di Santa Chiara"],
+      bestKids: ["Città della Scienza","Catacombe di San Gennaro","Palazzo Reale di Napoli","Napoli Sotterranea"],
+      bestSolo: ["Gallerie d'Italia (Napoli)","Museo MADRE","Pio Monte della Misericordia","Gran Caffè La Caffettiera (Piazza dei Martiri)"],
+      bestUnique: ["Napoli Sotterranea","Catacombe di San Gennaro","Museo Pignatelli (Villa Pignatelli)","Pio Monte della Misericordia"],
+      bestBreakfast: ["Gran Caffè Gambrinus","Gran Caffè La Caffettiera (Piazza dei Martiri)","Bidder Terrace (Grand Hotel Parker's)","Scaturchio (Piazza San Domenico Maggiore)"],
+      bestLunch: ["L'Antica Pizzeria da Michele (Via Cesare Sersale)","Pizzeria Brandi","Antica Pizzeria Di Matteo","Mimì alla Ferrovia"],
+      bestDinner: ["George Restaurant (Grand Hotel Parker's)","Caruso Roof Garden (Grand Hotel Vesuvio)","Palazzo Petrucci (Via Posillipo)","Mimì alla Ferrovia"],
+      bestCocktails: ["Sky Lounge Bar (Grand Hotel Vesuvio)","Bidder Terrace (Grand Hotel Parker's)","Il Malandrino (Palazzo Petrucci)"],
+      bestBakeries: ["Scaturchio (Piazza San Domenico Maggiore)","Pasticceria Mennella (Via Carducci)"],
+      bestCoffee: ["Gran Caffè Gambrinus","Gran Caffè La Caffettiera (Piazza dei Martiri)","Sky Lounge Bar (Grand Hotel Vesuvio)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Pompeii Archaeological Park": "Pompeii Archaeological Park Piazza Esedra Pompei",
+      "Museo Cappella Sansevero": "Museo Cappella Sansevero Via Francesco De Sanctis 19 Naples",
+      "Palazzo Reale di Napoli": "Palazzo Reale di Napoli Piazza del Plebiscito 1 Naples",
+      "Catacombe di San Gennaro": "Catacombe di San Gennaro Via Capodimonte 13 Naples",
+      "Napoli Sotterranea": "Napoli Sotterranea Piazza San Gaetano 69 Naples",
+      "L'Antica Pizzeria da Michele (Via Cesare Sersale)": "L'Antica Pizzeria da Michele Via Cesare Sersale 1 Naples",
+      "Mimì alla Ferrovia": "Mimì alla Ferrovia Via Alfonso D'Aragona 19 Naples",
+      "Palazzo Petrucci (Via Posillipo)": "Palazzo Petrucci Via Posillipo 16c Naples",
+      "Pizzeria Brandi": "Pizzeria Brandi Salita Sant'Anna di Palazzo 1 Naples",
+      "Antica Pizzeria Di Matteo": "Antica Pizzeria Di Matteo Via dei Tribunali 94 Naples",
+      "Complesso Monumentale di Santa Chiara": "Complesso Monumentale di Santa Chiara Via Santa Chiara 49c Naples",
+      "Gallerie d'Italia (Napoli)": "Gallerie d'Italia Via Toledo 177 Naples",
+      "George Restaurant (Grand Hotel Parker's)": "George Restaurant Grand Hotel Parker's Corso Vittorio Emanuele 135 Naples",
+      "Caruso Roof Garden (Grand Hotel Vesuvio)": "Grand Hotel Vesuvio Via Partenope 45 Naples",
+      "Sky Lounge Bar (Grand Hotel Vesuvio)": "Grand Hotel Vesuvio Via Partenope 45 Naples",
+      "Bidder Terrace (Grand Hotel Parker's)": "Grand Hotel Parker's Corso Vittorio Emanuele 135 Naples",
+      "Città della Scienza": "Città della Scienza Via Coroglio 57 Naples",
+      "Museo MADRE": "Museo MADRE Via Settembrini 79 Naples",
+      "Pio Monte della Misericordia": "Pio Monte della Misericordia Via dei Tribunali 253 Naples",
+      "Gran Caffè La Caffettiera (Piazza dei Martiri)": "Gran Caffè La Caffettiera Piazza dei Martiri 26 Naples",
+      "Museo Pignatelli (Villa Pignatelli)": "Villa Pignatelli Riviera di Chiaia 200 Naples",
+      "Gran Caffè Gambrinus": "Gran Caffè Gambrinus Via Chiaia 1 Naples",
+      "Scaturchio (Piazza San Domenico Maggiore)": "Scaturchio Piazza San Domenico Maggiore 19 Naples",
+      "Il Malandrino (Palazzo Petrucci)": "Il Malandrino Palazzo Petrucci Via Posillipo 16c Naples",
+      "Pasticceria Mennella (Via Carducci)": "Pasticceria Mennella Via Carducci 50 Naples"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Naples" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Archaeology, chapels, catacombs and museums, with pizzerias, historic cafés, pastry shops and hotel rooftop bars checked against their own websites.";
+    cityGuide.highlights = ["Pompeii Archaeological Park","Museo Cappella Sansevero","Palazzo Reale di Napoli","Catacombe di San Gennaro"];
+    cityGuide.tip = "Book the Cappella Sansevero before you go: reservations are mandatory, online tickets go on sale 60 days ahead, and the chapel is closed on Tuesdays.";
+    data.destinationFacts[cityKey] = "Book the Cappella Sansevero before you go: reservations are mandatory, online tickets go on sale 60 days ahead, and the chapel is closed on Tuesdays.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Archaeology, chapels, catacombs and museums, with pizzerias, historic cafés, pastry shops and hotel rooftop bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mon, Tue, Wed",
+        "copy": "Gallerie d'Italia and Pizzeria Brandi are closed on Mondays, Cappella Sansevero and MADRE on Tuesdays, and the Catacombe di San Gennaro on Wednesdays."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book ahead",
+        "copy": "Cappella Sansevero and the Catacombe di San Gennaro both require booking, and Sansevero releases tickets 60 days ahead. Pompeii tickets carry your name, with a cap of 20,000 entries a day."
+      },
+      {
+        "label": "Walk-in policies",
+        "value": "No reservations",
+        "copy": "L'Antica Pizzeria da Michele and the Sky Lounge Bar at the Grand Hotel Vesuvio take no reservations. Mimì alla Ferrovia seats parties of one to three in arrival order and books groups of four to ten online."
+      },
+      {
+        "label": "Rules",
+        "value": "Bags, photos, dress",
+        "copy": "Pompeii admits only small bags up to 30x30x15 cm, and Cappella Sansevero bans photos, video and phone use. Caruso Roof Garden and George Restaurant ask for smart casual, and George welcomes children over 5."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Book Sansevero, the catacombs and Pompeii ahead, then leave room for walk-in pizza and a rooftop drink.",
+      intro: [
+        "In Naples, a good plan starts with booking rules. At the Museo Cappella Sansevero on Via Francesco De Sanctis, booking is mandatory, online tickets go on sale 60 days ahead, and the chapel opens 9:00–19:00 every day except Tuesday, with a standard ticket of €12. Photos and phone use are not allowed inside. Nearby, Pio Monte della Misericordia on Via dei Tribunali shows Caravaggio's Seven Works of Mercy, open Monday to Saturday 10:00–18:00. Napoli Sotterranea, at Piazza San Gaetano 69, runs underground tours from 10:00, plus a Thursday 21:00 tour by reservation.",
+        "For Pompeii, the winter timetable runs from 15 October to 15 March: gates open at 9:00, last entry is 15:30 and the site closes at 17:00. Tickets carry your name, entries are capped at 20,000 a day, and you may bring only small bags up to 30x30x15 cm. Pompeii Express costs €20 for the ancient city alone, while Pompeii + adds the suburban villas and a shuttle for €25. Entry is free on the first Sunday of each month, and you can enter at Piazza Esedra, Piazza Anfiteatro or Porta Marina.",
+        "Back in the city, the Gallerie d'Italia on Via Toledo opens Tuesday to Friday 10:00–19:00 and weekends until 20:00, and shows Caravaggio's Martyrdom of Saint Ursula. Its exhibition Angelica e Élisabeth. L'età delle donne pittrici runs from 6 November 2026 to 7 March 2027. MADRE, on Via Settembrini, is closed on Tuesdays. In Chiaia, Villa Pignatelli hosts Crochet Coral Reef by Margaret and Christine Wertheim until 12 April 2027, and Città della Scienza on Via Coroglio runs its immersive Dante Inferno exhibition until the end of December 2026.",
+        "For food, L'Antica Pizzeria da Michele on Via Cesare Sersale opens daily 11:00–23:00 and takes no reservations, while Pizzeria Brandi is closed on Mondays. Mimì alla Ferrovia seats small parties in arrival order and books groups of four to ten online. For an evening view, the Grand Hotel Vesuvio's Sky Lounge Bar on Via Partenope serves cocktails daily 10:30–23:00 without reservations, and its Caruso Roof Garden requires booking and smart casual dress. George Restaurant at Grand Hotel Parker's serves dinner Tuesday to Saturday."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair a booked slot at the Cappella Sansevero with an underground tour at Napoli Sotterranea and a walk-in pizza at da Michele."
+        ],
+        [
+          "A slower morning",
+          "Start with coffee at Gran Caffè La Caffettiera, open from 7:00, then visit the Santa Chiara cloister, which opens at 9:30 Monday to Saturday."
+        ],
+        [
+          "Before booking",
+          "Check closing days: Gallerie d'Italia shuts on Mondays, Sansevero and MADRE on Tuesdays, and the catacombs on Wednesdays."
+        ]
+      ],
+      trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

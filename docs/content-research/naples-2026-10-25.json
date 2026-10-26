@@ -1,0 +1,933 @@
+{
+  "city": "Naples, Italy",
+  "checkedOn": "2026-10-25",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Pompeii Archaeological Park",
+      "kind": "landmark",
+      "url": "https://pompeiisites.org/en/visiting-info/timetables-and-tickets/",
+      "sourceType": "official public operator (Parco Archeologico di Pompei, Ministry of Culture)",
+      "address": "Entrances and ticket points: \"Piazza Esedra, Piazza Anfiteatro, Porta Marina\" (Pompei)",
+      "operatingEvidence": "Ticket prices \"from 12 January 2026\" (Pompeii Express €20, Pompeii + €25); 2026 notices including Terme Stabiane room closed from 19 October 2026 and \"Dal 15 ottobre a partire dalle ore 16:00 riduzione d'accesso in alcune domus\". Tickets are nominative with a daily limit of 20,000; only small bags \"max 30x30x15 cm\".",
+      "hours": "16 March–14 October: 9:00–19:00, last entry 17:30; 15 October–15 March: 9:00–17:00, last entry 15:30. Closed 25 December and 1 January.",
+      "confidence": "high"
+    },
+    {
+      "name": "Napoli Sotterranea",
+      "kind": "landmark",
+      "url": "https://www.napolisotterranea.org/orari/",
+      "sourceType": "operator's own site",
+      "address": "\"Piazza San Gaetano, 69 – Napoli (su via dei Tribunali), adiacente la Basilica di San Paolo Maggiore\"",
+      "operatingEvidence": "Live tour timetable and a bookable \"Biglietto saltacoda\" (skip-the-queue ticket) via booking.napolisotterranea.org; groups under 10 need no reservation. No 2026-dated content seen.",
+      "hours": "Tours (Italian and English) 10:00, 12:00, 14:00, 16:00, 17:00; Thursday 21:00 \"solo su prenotazione\" with a minimum of 10 people.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Museo Cappella Sansevero",
+      "kind": "museum",
+      "url": "https://www.museosansevero.it/organizza-la-tua-visita/modalita-di-accesso",
+      "sourceType": "operator's own site",
+      "address": "\"Via Francesco De Sanctis, 19/21 80134 – Napoli\"",
+      "operatingEvidence": "2026 news and events (ticket office relocation, 2 February 2026; touch tour, 17 March 2026). Booking is mandatory; online tickets go on sale 60 days ahead. Photography, video and phone use are prohibited.",
+      "hours": "\"Tutti i giorni 9.00-19.00 / Chiuso martedì\"; last entry 18:30.",
+      "confidence": "high"
+    },
+    {
+      "name": "Palazzo Reale di Napoli",
+      "kind": "museum",
+      "url": "https://palazzorealedinapoli.org",
+      "sourceType": "official public operator (Ministry of Culture museum)",
+      "address": "\"Piazza Plebiscito, 1, 80132 Napoli\"",
+      "operatingEvidence": "2026 notices: restoration of the Salone d'Ercole furnishings from 30 September and a changed Appartamento di Etichetta route from 1 October; exhibition \"Giro Giro Napoli. La città raccontata ai bambini\" until 19 December 2026; Throne of Naples back on display after restoration from 10 February 2026.",
+      "hours": "not published on the page read",
+      "confidence": "high"
+    },
+    {
+      "name": "Museo Pignatelli (Villa Pignatelli)",
+      "kind": "museum",
+      "url": "https://palazzorealedinapoli.org",
+      "sourceType": "official public operator (Palazzo Reale di Napoli, Ministry of Culture)",
+      "address": "\"Riviera di Chiaia, 200, 80121 Napoli\"",
+      "operatingEvidence": "\"riaperto dal 26 luglio 2026 nei consueti orari\"; exhibition \"Crochet Coral Reef\" by Margaret and Christine Wertheim (Casa della Fotografia) until 12 April 2027; \"Musica in Villa 2026\" until 13 December 2026.",
+      "hours": "9:30–17:00 (weekly closing day Tuesday, implied by the one-off move \"da martedì 2 a mercoledì 3 giugno 2026\").",
+      "confidence": "high"
+    },
+    {
+      "name": "Complesso Monumentale di Santa Chiara",
+      "kind": "museum",
+      "url": "https://www.monasterodisantachiara.it/orari/",
+      "sourceType": "operator's own site",
+      "address": "\"Via Santa Chiara 49c 80134, Napoli\"",
+      "operatingEvidence": "2026 posts including \"Concorso Corale\" (2 October 2026); published prices (€7 standard, €5 reduced, €4 ages 7–17, under-7s free) covering cloister, museum, archaeological area and 18th-century nativity scene. An \"Avviso Chiusura\" notice of 14 September 2026 is an image whose dates could not be read.",
+      "hours": "Cloister: Mon–Sat 9:30–17:00, Sun 10:00–14:00. Church: daily 7:45–12:45 and 16:40–20:00.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Catacombe di San Gennaro",
+      "kind": "landmark",
+      "url": "https://www.catacombedinapoli.it",
+      "sourceType": "operator's own site (La Paranza Coop. Soc.)",
+      "address": "\"Catacombe di San Gennaro, Via Capodimonte 13, Napoli - 80136 - NA\"",
+      "operatingEvidence": "Live daily status (\"lunedì 26 ottobre\", open 10:00–17:00); children's workshop \"Archeologi per un giorno\" on October–November 2026 Saturdays; \"Prenotazione obbligatoria – Chiusi il mercoledì e il 25 dicembre\".",
+      "hours": "Guided tours every hour, last entry 17:00; closed Wednesdays and 25 December.",
+      "confidence": "high"
+    },
+    {
+      "name": "Pio Monte della Misericordia",
+      "kind": "museum",
+      "url": "https://www.piomontedellamisericordia.it",
+      "sourceType": "operator's own site",
+      "address": "\"Via dei Tribunali, 253, 80139 Napoli\"",
+      "operatingEvidence": "Online ticketing with published prices (€10 full, €8 reduced) and combined tickets with the Tesoro di San Gennaro and Ipogeo dei Cristallini; Caravaggio's \"Sette opere di Misericordia\" on display. No 2026-dated content seen.",
+      "hours": "Mon–Sat 10:00–18:00 (last entry 17:30); Sun 9:00–14:30 (last entry 14:00); closed 25 December and Easter Day.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Città della Scienza",
+      "kind": "museum",
+      "url": "https://www.cittadellascienza.it",
+      "sourceType": "operator's own site",
+      "address": "\"Via Coroglio, 57/104, 80124, Napoli\"",
+      "operatingEvidence": "New planetarium shows \"Dal 1° ottobre 2026\"; Dante Inferno immersive exhibition from 22 October 2026 \"fino alla fine di dicembre 2026, con possibilità di proroga\"; interactive physics exhibition \"Fisica - Vietato non toccare!\". Science Centre ticket €10 full, €8 reduced.",
+      "hours": "not published on the pages read",
+      "confidence": "high"
+    },
+    {
+      "name": "Museo MADRE",
+      "kind": "museum",
+      "url": "https://www.madrenapoli.it",
+      "sourceType": "official public operator (Fondazione Donnaregina, Regione Campania)",
+      "address": "\"Via Settembrini 79, 80139 Napoli\"",
+      "operatingEvidence": "2026 exhibitions including \"Living Collapse\" (25 June–16 November) and \"POST\" (10 October–23 November); permanent collection always on view.",
+      "hours": "Mon, Wed–Sat 10:00–19:30; Sun 10:00–20:00; closed Tuesday. Ticket office closes one hour before the museum.",
+      "confidence": "high"
+    },
+    {
+      "name": "Gallerie d'Italia (Napoli)",
+      "kind": "museum",
+      "url": "https://www.gallerieditalia.com/it/napoli/mostre-e-iniziative/",
+      "sourceType": "operator's own site (Intesa Sanpaolo)",
+      "address": "\"Via Toledo, 177, 80134 Napoli\"",
+      "operatingEvidence": "Exhibition \"Angelica e Élisabeth. L'età delle donne pittrici\" 6 November 2026–7 March 2027; music series to 26 November 2026; Caravaggio's \"Martirio di sant'Orsola\" on display. Tickets €8 full, €4 reduced; free on the first Sunday of each month.",
+      "hours": "Tue–Fri 10:00–19:00; Sat–Sun 10:00–20:00; closed Monday; last entry one hour before closing.",
+      "confidence": "high"
+    },
+    {
+      "name": "L'Antica Pizzeria da Michele (Via Cesare Sersale)",
+      "kind": "meal",
+      "url": "https://www.damichele.net/sede-di-napoli/",
+      "sourceType": "operator's own site",
+      "address": "\"Via Cesare Sersale, 1, 80139 Napoli\"",
+      "operatingEvidence": "Branch page with hours and a menu PDF; \"Non si accettano prenotazioni, il delivery è gestito tramite app Just Eat.\" No 2026-dated content seen.",
+      "hours": "Monday–Sunday 11:00–23:00.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Pizzeria Brandi",
+      "kind": "meal",
+      "url": "https://pizzeriabrandi.com/",
+      "sourceType": "operator's own site",
+      "address": "\"Salita S. Anna di Palazzo, 1/2, 80132\" Naples",
+      "operatingEvidence": "Published hours and highlighted pizzas (Margherita, Marinara, Quattro Stagioni, Salsiccia e Friarielli); footer \"© 2026 Pizzeria Brandi\".",
+      "hours": "Tuesday–Sunday 12:30–15:30 and 19:30–23:30; closed Monday.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Antica Pizzeria Di Matteo",
+      "kind": "meal",
+      "url": "https://www.anticapizzeriadimatteo.it",
+      "sourceType": "operator's own site",
+      "address": "\"Via dei Tribunali, 94, 80138, Napoli (NA)\"",
+      "operatingEvidence": "Published opening hours and an online menu PDF (uploaded 2022). No 2026-dated content seen.",
+      "hours": "\"Dal Lunedì al Sabato 10.00 – 23.30\" (Sunday not listed).",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mimì alla Ferrovia",
+      "kind": "meal",
+      "url": "https://www.mimiallaferrovia.it",
+      "sourceType": "operator's own site",
+      "address": "\"Via Alfonso D'Aragona, 19-21, 80139 Napoli\"",
+      "operatingEvidence": "News post of 18 March 2026 on Easter lunch; online booking (\"PRENOTA ORA\") for parties of 4–10, while parties of 1–3 are seated in arrival order with a waiting list at reception.",
+      "hours": "not published",
+      "confidence": "high"
+    },
+    {
+      "name": "Palazzo Petrucci (Via Posillipo)",
+      "kind": "meal",
+      "url": "https://palazzopetrucci.it/menu-e-prezzi-ristorante/",
+      "sourceType": "operator's own site",
+      "address": "\"Via Posillipo, 16/c\", 80123 Napoli",
+      "operatingEvidence": "Current menus with prices: Signature 5 courses €120, Posillipo 6 courses €150, \"Lino Fai Tu\" from €100; online table booking. No 2026-dated content seen.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Il Malandrino (Palazzo Petrucci)",
+      "kind": "bar",
+      "url": "https://palazzopetrucci.it/il-malandrino/",
+      "sourceType": "operator's own site",
+      "address": "\"Via Posillipo, 16/c.\" \"80123 Napoli\"",
+      "operatingEvidence": "Cocktail menu at €15 (e.g. Negroni Palazzo Petrucci, Spiced Sour, Costiera Spritz) with food pairings; table booking link and WhatsApp number. No 2026-dated content seen.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "George Restaurant (Grand Hotel Parker's)",
+      "kind": "meal",
+      "url": "https://www.grandhotelparkers.it/ristoranti-e-bar-napoli/george-restaurant-napoli",
+      "sourceType": "operator's own site",
+      "address": "Grand Hotel Parker's, \"C.so Vittorio Emanuele 135, 80121 Napoli\"",
+      "operatingEvidence": "Summer closure \"dal 9 Agosto al 3 Settembre 2026\"; online booking; dress code \"smart casual\"; children welcome over 5; no animals.",
+      "hours": "\"Aperto dal martedì al sabato dalle 19.45 alle ore 21.45\".",
+      "confidence": "high"
+    },
+    {
+      "name": "Bidder Terrace (Grand Hotel Parker's)",
+      "kind": "bar",
+      "url": "https://www.grandhotelparkers.it/ristoranti-e-bar-napoli/vi-piano-lounge-terrace",
+      "sourceType": "operator's own site",
+      "address": "Grand Hotel Parker's, \"C.so Vittorio Emanuele 135, 80121 Napoli\"",
+      "operatingEvidence": "Published daily hours, bookable via \"Prenota ora\" and online form; rooftop terrace breakfast (\"Colazione in terrazza\") and drink menu PDFs.",
+      "hours": "Daily: All Day Dining 12:00–23:00; \"Bidder Bar: 18:30 – 24:00\". Breakfast hours not published.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Caruso Roof Garden (Grand Hotel Vesuvio)",
+      "kind": "meal",
+      "url": "https://www.vesuvio.it/caruso/",
+      "sourceType": "operator's own site",
+      "address": "Grand Hotel Vesuvio, ninth floor, \"Via Partenope 45 - 80121 Napoli\"",
+      "operatingEvidence": "Booking required, up to 30 days ahead with a credit-card guarantee; dress code minimum smart casual, no beachwear or flip-flops; seasonal menu by chef Emanuele Petrosino.",
+      "hours": "Daily 19:30–22:30; Saturday and Sunday lunch 13:00–15:00.",
+      "confidence": "high"
+    },
+    {
+      "name": "Sky Lounge Bar (Grand Hotel Vesuvio)",
+      "kind": "bar",
+      "url": "https://www.vesuvio.it/bar/",
+      "sourceType": "operator's own site",
+      "address": "Grand Hotel Vesuvio, 10th floor, \"Via Partenope 45 - 80121 Napoli\"",
+      "operatingEvidence": "Menu PDF in a 2026/09 upload folder; coffee with traditional pastries through to signature cocktails. \"Per lo Sky Lounge Bar non si accettano prenotazioni\"; non-guest access restricted on weekends and holidays; opening depends on weather and private events.",
+      "hours": "Cocktail bar daily 10:30–23:00.",
+      "confidence": "high"
+    },
+    {
+      "name": "Gran Caffè Gambrinus",
+      "kind": "cafe",
+      "url": "https://grancaffegambrinus.com",
+      "sourceType": "operator's own site",
+      "address": "\"Via Chiaia n. 1 | Piazza Trieste e Trento, 42 80121 Napoli\"",
+      "operatingEvidence": "Current site with Caffetteria, Pasticceria and Gelateria sections and \"© 2026\" footer; no dated notices.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Gran Caffè La Caffettiera (Piazza dei Martiri)",
+      "kind": "cafe",
+      "url": "https://www.grancaffelacaffettiera.com",
+      "sourceType": "operator's own site",
+      "address": "\"Piazza dei Martiri 26 – 80121 Napoli\"",
+      "operatingEvidence": "Published opening hours for the Naples café; no 2026-dated content seen.",
+      "hours": "\"Lunedì–Domenica 07:00–23:00\".",
+      "confidence": "medium"
+    },
+    {
+      "name": "Scaturchio (Piazza San Domenico Maggiore)",
+      "kind": "bakery",
+      "url": "https://scaturchio.it/sedi/",
+      "sourceType": "operator's own site",
+      "address": "Sede Storica: \"Piazza San Domenico Maggiore, 19, 80134 Napoli\"",
+      "operatingEvidence": "Current branch list and online shop; product range includes the patented Ministeriale, sfogliatella riccia and frolla, and babà. No 2026-dated content seen.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Pasticceria Mennella (Via Carducci)",
+      "kind": "bakery",
+      "url": "https://www.pasticceriamennella.it/punti-vendita/",
+      "sourceType": "operator's own site",
+      "address": "Pasticceria: \"Via G. Carducci, 50/52\" Napoli (Tel. 081 403985)",
+      "operatingEvidence": "Current store list (one pasticceria and nine gelaterie in Naples) and an active online shop with products marked in or out of stock. No 2026-dated content seen.",
+      "hours": "not published",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "National Archaeological Museum (MANN)",
+      "reason": "fetch failed: certificate has expired (mann-napoli.it and www.mann-napoli.it)",
+      "url": "https://www.mann-napoli.it"
+    },
+    {
+      "name": "Museo e Real Bosco di Capodimonte",
+      "reason": "fetch failed: connection refused",
+      "url": "https://capodimonte.cultura.gov.it"
+    },
+    {
+      "name": "Museo del Tesoro di San Gennaro",
+      "reason": "fetch failed: certificate has expired",
+      "url": "https://www.museosangennaro.it"
+    },
+    {
+      "name": "Teatro di San Carlo",
+      "reason": "site showed a security check (bot check); not bypassed",
+      "url": "https://www.teatrosancarlo.it"
+    },
+    {
+      "name": "Galleria Borbonica",
+      "reason": "home pages readable but contain no address, hours or operating details",
+      "url": "https://www.galleriaborbonica.com/en/home/"
+    },
+    {
+      "name": "Ipogeo dei Cristallini",
+      "reason": "fetch failed: unable to verify the first certificate",
+      "url": "https://www.ipogeodeicristallini.com/"
+    },
+    {
+      "name": "Darwin-Dohrn Museum",
+      "reason": "fetch failed: unable to verify the first certificate",
+      "url": "https://www.szn.it/index.php/it/darwin-dohrn-museum"
+    },
+    {
+      "name": "Castel Sant'Elmo / Certosa e Museo di San Martino",
+      "reason": "operator site for regional state museums could not be reached (DNS not found at guessed domains)",
+      "url": "https://musei.campania.cultura.gov.it/"
+    },
+    {
+      "name": "Duomo di Napoli",
+      "reason": "official site gives only the parish office address; no hours or current-operating content (footer 2025)",
+      "url": "https://duomonapoli.it/"
+    },
+    {
+      "name": "Lo Zoo di Napoli",
+      "reason": "fetch failed: connection refused",
+      "url": "https://www.lozoodinapoli.it"
+    },
+    {
+      "name": "Museo Nazionale Ferroviario di Pietrarsa",
+      "reason": "pages tried returned 404",
+      "url": "https://www.fondazionefs.it/content/fondazionefs/it/musei.html"
+    },
+    {
+      "name": "Funicolari ANM",
+      "reason": "site returned a CSS error page with no readable content",
+      "url": "https://www.anm.it"
+    },
+    {
+      "name": "Gino e Toto Sorbillo (Via dei Tribunali)",
+      "reason": "official site gives no street number for the Via dei Tribunali branch and no hours",
+      "url": "https://www.sorbillo.it/contatti/"
+    },
+    {
+      "name": "50 Kalò",
+      "reason": "address only (Piazza Sannazaro 201/b); no menu, hours, booking or dated content readable",
+      "url": "https://www.50kalo.it"
+    },
+    {
+      "name": "Pizzeria Starita (Materdei)",
+      "reason": "address only (Via Materdei 27/28); no hours, booking or dated content for Naples",
+      "url": "https://www.pizzeriestarita.it"
+    },
+    {
+      "name": "Concettina ai Tre Santi",
+      "reason": "address and booking button only; hours block appears to be a template placeholder and no current dated content",
+      "url": "https://www.concettinaaitresanti.com"
+    },
+    {
+      "name": "Tandem (ragù)",
+      "reason": "site lists branch names but no street addresses or hours",
+      "url": "https://www.tandemnapoli.it"
+    },
+    {
+      "name": "Gay-Odin",
+      "reason": "only a head-office address (Via Vetriera 12), no shop hours or current content (copyright 2025)",
+      "url": "https://www.gay-odin.it"
+    },
+    {
+      "name": "Caffè Mexico",
+      "reason": "site is a shop shell with no addresses or hours",
+      "url": "https://www.caffemexico.it"
+    },
+    {
+      "name": "ROMEO Napoli (Il Bar)",
+      "reason": "bar listed with no hours, menu or current content",
+      "url": "https://theromeocollection.com/en/romeo-napoli/"
+    },
+    {
+      "name": "Grand Hotel Excelsior Napoli rooftop",
+      "reason": "fetch failed: certificate name mismatch",
+      "url": "https://www.excelsior.it"
+    },
+    {
+      "name": "Sfogliatelle Attanasio",
+      "reason": "fetch failed: certificate has expired",
+      "url": "https://www.sfogliatelleattanasio.it"
+    },
+    {
+      "name": "Pasticceria Poppella",
+      "reason": "fetch failed: domain not found",
+      "url": "https://www.pasticceriapoppella.it"
+    },
+    {
+      "name": "L'Antiquario",
+      "reason": "fetch failed: domain not found",
+      "url": "https://www.lantiquarionapoli.it"
+    },
+    {
+      "name": "Archivio Storico",
+      "reason": "fetch failed: domain not found",
+      "url": "https://www.archiviostorico.eu"
+    },
+    {
+      "name": "Barril",
+      "reason": "fetch failed: domain not found",
+      "url": "https://www.barrilnapoli.it"
+    },
+    {
+      "name": "La Sfogliatella Mary",
+      "reason": "fetch failed: domain not found",
+      "url": "https://www.sfogliatellamary.it"
+    },
+    {
+      "name": "Antica Pizzeria Port'Alba",
+      "reason": "fetch failed: DNS lookup error (EAI_AGAIN)",
+      "url": "https://www.anticapizzeriaportalba.it"
+    },
+    {
+      "name": "Historic Center",
+      "reason": "generic, not a place (a district, not a single operated site)",
+      "url": ""
+    },
+    {
+      "name": "Vomero sunset view",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A classic Neapolitan pizzeria",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A seafood dinner in Santa Lucia",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Chiaia",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Vomero",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Centro Storico",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Centro Storico walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Chiaia",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Vomero",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Vomero",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Historic Center",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Centro Storico",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Underground Naples",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Chiaia",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Pompeii",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Centro Storico evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Chiaia",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Vomero",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Centro Storico",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Historic Center",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Chiaia",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Vomero",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Centro Storico",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Historic Center",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Centro Storico cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Vomero sunset view",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Vomero",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Vomero",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Centro Storico",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Centro Storico",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Chiaia bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Historic Center",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Vomero",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Centro Storico",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Pompeii",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Vomero",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Centro Storico",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Chiaia",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Vomero",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Centro Storico",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Centro Storico",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Chiaia",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near National Archaeological Museum",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Centro Storico",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Chiaia morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Historic Center",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Vomero",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Centro Storico",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Chiaia",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Vomero",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Pompeii Archaeological Park",
+        "Museo Cappella Sansevero",
+        "Palazzo Reale di Napoli",
+        "Catacombe di San Gennaro"
+      ],
+      "bestFirstTimers": [
+        "Pompeii Archaeological Park",
+        "Museo Cappella Sansevero",
+        "Napoli Sotterranea",
+        "L'Antica Pizzeria da Michele (Via Cesare Sersale)"
+      ],
+      "bestRestaurants": [
+        "Mimì alla Ferrovia",
+        "Palazzo Petrucci (Via Posillipo)",
+        "Pizzeria Brandi",
+        "Antica Pizzeria Di Matteo"
+      ],
+      "bestBudget": [
+        "Antica Pizzeria Di Matteo",
+        "L'Antica Pizzeria da Michele (Via Cesare Sersale)",
+        "Complesso Monumentale di Santa Chiara",
+        "Gallerie d'Italia (Napoli)"
+      ],
+      "bestLuxury": [
+        "George Restaurant (Grand Hotel Parker's)",
+        "Caruso Roof Garden (Grand Hotel Vesuvio)",
+        "Palazzo Petrucci (Via Posillipo)"
+      ],
+      "bestCouples": [
+        "Caruso Roof Garden (Grand Hotel Vesuvio)",
+        "Sky Lounge Bar (Grand Hotel Vesuvio)",
+        "Bidder Terrace (Grand Hotel Parker's)",
+        "Complesso Monumentale di Santa Chiara"
+      ],
+      "bestKids": [
+        "Città della Scienza",
+        "Catacombe di San Gennaro",
+        "Palazzo Reale di Napoli",
+        "Napoli Sotterranea"
+      ],
+      "bestSolo": [
+        "Gallerie d'Italia (Napoli)",
+        "Museo MADRE",
+        "Pio Monte della Misericordia",
+        "Gran Caffè La Caffettiera (Piazza dei Martiri)"
+      ],
+      "bestUnique": [
+        "Napoli Sotterranea",
+        "Catacombe di San Gennaro",
+        "Museo Pignatelli (Villa Pignatelli)",
+        "Pio Monte della Misericordia"
+      ],
+      "bestBreakfast": [
+        "Gran Caffè Gambrinus",
+        "Gran Caffè La Caffettiera (Piazza dei Martiri)",
+        "Bidder Terrace (Grand Hotel Parker's)",
+        "Scaturchio (Piazza San Domenico Maggiore)"
+      ],
+      "bestLunch": [
+        "L'Antica Pizzeria da Michele (Via Cesare Sersale)",
+        "Pizzeria Brandi",
+        "Antica Pizzeria Di Matteo",
+        "Mimì alla Ferrovia"
+      ],
+      "bestDinner": [
+        "George Restaurant (Grand Hotel Parker's)",
+        "Caruso Roof Garden (Grand Hotel Vesuvio)",
+        "Palazzo Petrucci (Via Posillipo)",
+        "Mimì alla Ferrovia"
+      ],
+      "bestCocktails": [
+        "Sky Lounge Bar (Grand Hotel Vesuvio)",
+        "Bidder Terrace (Grand Hotel Parker's)",
+        "Il Malandrino (Palazzo Petrucci)"
+      ],
+      "bestBakeries": [
+        "Scaturchio (Piazza San Domenico Maggiore)",
+        "Pasticceria Mennella (Via Carducci)"
+      ],
+      "bestCoffee": [
+        "Gran Caffè Gambrinus",
+        "Gran Caffè La Caffettiera (Piazza dei Martiri)",
+        "Sky Lounge Bar (Grand Hotel Vesuvio)"
+      ]
+    },
+    "queries": {
+      "Pompeii Archaeological Park": "Pompeii Archaeological Park Piazza Esedra Pompei",
+      "Napoli Sotterranea": "Napoli Sotterranea Piazza San Gaetano 69 Naples",
+      "Museo Cappella Sansevero": "Museo Cappella Sansevero Via Francesco De Sanctis 19 Naples",
+      "Palazzo Reale di Napoli": "Palazzo Reale di Napoli Piazza del Plebiscito 1 Naples",
+      "Museo Pignatelli (Villa Pignatelli)": "Villa Pignatelli Riviera di Chiaia 200 Naples",
+      "Complesso Monumentale di Santa Chiara": "Complesso Monumentale di Santa Chiara Via Santa Chiara 49c Naples",
+      "Catacombe di San Gennaro": "Catacombe di San Gennaro Via Capodimonte 13 Naples",
+      "Pio Monte della Misericordia": "Pio Monte della Misericordia Via dei Tribunali 253 Naples",
+      "Città della Scienza": "Città della Scienza Via Coroglio 57 Naples",
+      "Museo MADRE": "Museo MADRE Via Settembrini 79 Naples",
+      "Gallerie d'Italia (Napoli)": "Gallerie d'Italia Via Toledo 177 Naples",
+      "L'Antica Pizzeria da Michele (Via Cesare Sersale)": "L'Antica Pizzeria da Michele Via Cesare Sersale 1 Naples",
+      "Pizzeria Brandi": "Pizzeria Brandi Salita Sant'Anna di Palazzo 1 Naples",
+      "Antica Pizzeria Di Matteo": "Antica Pizzeria Di Matteo Via dei Tribunali 94 Naples",
+      "Mimì alla Ferrovia": "Mimì alla Ferrovia Via Alfonso D'Aragona 19 Naples",
+      "Palazzo Petrucci (Via Posillipo)": "Palazzo Petrucci Via Posillipo 16c Naples",
+      "Il Malandrino (Palazzo Petrucci)": "Il Malandrino Palazzo Petrucci Via Posillipo 16c Naples",
+      "George Restaurant (Grand Hotel Parker's)": "George Restaurant Grand Hotel Parker's Corso Vittorio Emanuele 135 Naples",
+      "Bidder Terrace (Grand Hotel Parker's)": "Grand Hotel Parker's Corso Vittorio Emanuele 135 Naples",
+      "Caruso Roof Garden (Grand Hotel Vesuvio)": "Grand Hotel Vesuvio Via Partenope 45 Naples",
+      "Sky Lounge Bar (Grand Hotel Vesuvio)": "Grand Hotel Vesuvio Via Partenope 45 Naples",
+      "Gran Caffè Gambrinus": "Gran Caffè Gambrinus Via Chiaia 1 Naples",
+      "Gran Caffè La Caffettiera (Piazza dei Martiri)": "Gran Caffè La Caffettiera Piazza dei Martiri 26 Naples",
+      "Scaturchio (Piazza San Domenico Maggiore)": "Scaturchio Piazza San Domenico Maggiore 19 Naples",
+      "Pasticceria Mennella (Via Carducci)": "Pasticceria Mennella Via Carducci 50 Naples"
+    },
+    "summary": "Archaeology, chapels, catacombs and museums, with pizzerias, historic cafés, pastry shops and hotel rooftop bars checked against their own websites.",
+    "highlights": [
+      "Pompeii Archaeological Park",
+      "Museo Cappella Sansevero",
+      "Palazzo Reale di Napoli",
+      "Catacombe di San Gennaro"
+    ],
+    "tip": "Book the Cappella Sansevero before you go: reservations are mandatory, online tickets go on sale 60 days ahead, and the chapel is closed on Tuesdays.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mon, Tue, Wed",
+        "copy": "Gallerie d'Italia and Pizzeria Brandi are closed on Mondays, Cappella Sansevero and MADRE on Tuesdays, and the Catacombe di San Gennaro on Wednesdays."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book ahead",
+        "copy": "Cappella Sansevero and the Catacombe di San Gennaro both require booking, and Sansevero releases tickets 60 days ahead. Pompeii tickets carry your name, with a cap of 20,000 entries a day."
+      },
+      {
+        "label": "Walk-in policies",
+        "value": "No reservations",
+        "copy": "L'Antica Pizzeria da Michele and the Sky Lounge Bar at the Grand Hotel Vesuvio take no reservations. Mimì alla Ferrovia seats parties of one to three in arrival order and books groups of four to ten online."
+      },
+      {
+        "label": "Rules",
+        "value": "Bags, photos, dress",
+        "copy": "Pompeii admits only small bags up to 30x30x15 cm, and Cappella Sansevero bans photos, video and phone use. Caruso Roof Garden and George Restaurant ask for smart casual, and George welcomes children over 5."
+      }
+    ],
+    "dek": "Book Sansevero, the catacombs and Pompeii ahead, then leave room for walk-in pizza and a rooftop drink.",
+    "intro": [
+      "In Naples, a good plan starts with booking rules. At the Museo Cappella Sansevero on Via Francesco De Sanctis, booking is mandatory, online tickets go on sale 60 days ahead, and the chapel opens 9:00–19:00 every day except Tuesday, with a standard ticket of €12. Photos and phone use are not allowed inside. Nearby, Pio Monte della Misericordia on Via dei Tribunali shows Caravaggio's Seven Works of Mercy, open Monday to Saturday 10:00–18:00. Napoli Sotterranea, at Piazza San Gaetano 69, runs underground tours from 10:00, plus a Thursday 21:00 tour by reservation.",
+      "For Pompeii, the winter timetable runs from 15 October to 15 March: gates open at 9:00, last entry is 15:30 and the site closes at 17:00. Tickets carry your name, entries are capped at 20,000 a day, and you may bring only small bags up to 30x30x15 cm. Pompeii Express costs €20 for the ancient city alone, while Pompeii + adds the suburban villas and a shuttle for €25. Entry is free on the first Sunday of each month, and you can enter at Piazza Esedra, Piazza Anfiteatro or Porta Marina.",
+      "Back in the city, the Gallerie d'Italia on Via Toledo opens Tuesday to Friday 10:00–19:00 and weekends until 20:00, and shows Caravaggio's Martyrdom of Saint Ursula. Its exhibition Angelica e Élisabeth. L'età delle donne pittrici runs from 6 November 2026 to 7 March 2027. MADRE, on Via Settembrini, is closed on Tuesdays. In Chiaia, Villa Pignatelli hosts Crochet Coral Reef by Margaret and Christine Wertheim until 12 April 2027, and Città della Scienza on Via Coroglio runs its immersive Dante Inferno exhibition until the end of December 2026.",
+      "For food, L'Antica Pizzeria da Michele on Via Cesare Sersale opens daily 11:00–23:00 and takes no reservations, while Pizzeria Brandi is closed on Mondays. Mimì alla Ferrovia seats small parties in arrival order and books groups of four to ten online. For an evening view, the Grand Hotel Vesuvio's Sky Lounge Bar on Via Partenope serves cocktails daily 10:30–23:00 without reservations, and its Caruso Roof Garden requires booking and smart casual dress. George Restaurant at Grand Hotel Parker's serves dinner Tuesday to Saturday."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair a booked slot at the Cappella Sansevero with an underground tour at Napoli Sotterranea and a walk-in pizza at da Michele."
+      ],
+      [
+        "A slower morning",
+        "Start with coffee at Gran Caffè La Caffettiera, open from 7:00, then visit the Santa Chiara cloister, which opens at 9:30 Monday to Saturday."
+      ],
+      [
+        "Before booking",
+        "Check closing days: Gallerie d'Italia shuts on Mondays, Sansevero and MADRE on Tuesdays, and the catacombs on Wednesdays."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several major sites could not be read and are not included: the National Archaeological Museum (MANN), the Tesoro di San Gennaro, Sfogliatelle Attanasio and the Darwin-Dohrn Museum had certificate errors; Capodimonte and the Naples zoo refused connections; Teatro di San Carlo showed a bot check; and several bars, bakeries and pizzerias had domains that did not resolve. Hours were not published for Palazzo Reale, Città della Scienza, Mimì alla Ferrovia, Palazzo Petrucci, Il Malandrino, Gambrinus, Scaturchio and Mennella. Santa Chiara's September 2026 closure notice is an image whose dates could not be read. Several places, including Napoli Sotterranea, da Michele, Di Matteo, Pio Monte, Scaturchio and Mennella, showed no 2026-dated content and are marked medium confidence.",
+  "injectionLikeText": []
+}
