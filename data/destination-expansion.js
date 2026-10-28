@@ -8819,4 +8819,105 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 28, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Cartagena, Colombia: source review of 2026-10-28 (docs/content-research/cartagena-2026-10-28.md).
+  {
+    const cityKey = "Cartagena, Colombia";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Castillo de San Felipe de Barajas","Santuario y Museo San Pedro Claver","Museo Histórico de Cartagena","Teatro Adolfo Mejía"],
+      bestFirstTimers: ["Castillo de San Felipe de Barajas","Museo Histórico de Cartagena","Santuario y Museo San Pedro Claver","La Vitrola"],
+      bestRestaurants: ["Celele","Alma (Casa San Agustín)","Restaurante Don Juan","La Vitrola"],
+      bestBudget: ["Castillo de San Felipe de Barajas","Museo Histórico de Cartagena","Ábaco Libros y Café","Juan del Mar"],
+      bestLuxury: ["Alma (Casa San Agustín)","Erre de Ramón Freixa (Hotel Las Américas)","AniMare (Casa Pestagua)","Celele"],
+      bestCouples: ["AniMare (Casa Pestagua)","La Vitrola","Townhouse Cartagena","El Barón"],
+      bestKids: ["Oceanario Islas del Rosario","Castillo de San Felipe de Barajas","Museo Histórico de Cartagena","Juan del Mar"],
+      bestSolo: ["Ábaco Libros y Café","Museo de Arte Moderno de Cartagena","Café San Alberto (Plaza Santo Domingo)","El Barón"],
+      bestUnique: ["Oceanario Islas del Rosario","Teatro Adolfo Mejía","Alquímico","Santuario y Museo San Pedro Claver"],
+      bestBreakfast: ["Di Silvio Trattoria (Getsemaní)","Ábaco Libros y Café"],
+      bestLunch: ["La Cevichería","Juan del Mar","Restaurante Don Juan","La Vitrola"],
+      bestDinner: ["Celele","Alma (Casa San Agustín)","Erre de Ramón Freixa (Hotel Las Américas)","Restaurante Don Juan"],
+      bestCocktails: ["Alquímico","El Barón","Townhouse Cartagena","AniMare (Casa Pestagua)"],
+      bestBakeries: [],
+      bestCoffee: ["Ábaco Libros y Café","Café San Alberto (Plaza Santo Domingo)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Castillo de San Felipe de Barajas": "Castillo de San Felipe de Barajas Avenida Antonio Arévalo Cartagena",
+      "Santuario y Museo San Pedro Claver": "Santuario y Museo San Pedro Claver Carrera 4 30-01 Cartagena",
+      "Museo Histórico de Cartagena": "Museo Histórico de Cartagena Palacio de la Inquisición Plaza de Bolívar Cartagena",
+      "Teatro Adolfo Mejía": "Teatro Adolfo Mejía Plaza de la Merced 38-10 Cartagena",
+      "La Vitrola": "La Vitrola Carrera 2 33-66 Cartagena",
+      "Celele": "Celele Calle del Espíritu Santo Carrera 10c 29-200 Cartagena",
+      "Alma (Casa San Agustín)": "Alma Casa San Agustín Calle de la Universidad 36-44 Cartagena",
+      "Restaurante Don Juan": "Restaurante Don Juan Carrera 8 34-01 Avenida Carlos Escallón Cartagena",
+      "Ábaco Libros y Café": "Ábaco Libros y Café Calle 36 3-86 Cartagena",
+      "Juan del Mar": "Juan del Mar Plaza de San Diego 8-12 Cartagena",
+      "Erre de Ramón Freixa (Hotel Las Américas)": "Erre de Ramón Freixa Hotel Las Américas Anillo Vial Cielo Mar Cartagena",
+      "AniMare (Casa Pestagua)": "AniMare Casa Pestagua Calle Santo Domingo 33-63 Cartagena",
+      "Townhouse Cartagena": "Townhouse Carrera 7 36-88 Cartagena",
+      "El Barón": "El Barón Carrera 4 31-7 Plaza San Pedro Claver Cartagena",
+      "Oceanario Islas del Rosario": "Oceanario Islas del Rosario Isla San Martín de Pajarales Cartagena",
+      "Museo de Arte Moderno de Cartagena": "Museo de Arte Moderno Plaza San Pedro Claver Cartagena",
+      "Café San Alberto (Plaza Santo Domingo)": "Café San Alberto Carrera 3 35-18 Plaza Santo Domingo Cartagena",
+      "Alquímico": "Alquímico Calle del Colegio 34-24 Cartagena",
+      "Di Silvio Trattoria (Getsemaní)": "Di Silvio Trattoria Calle 29 9-72 Getsemaní Cartagena",
+      "La Cevichería": "La Cevichería Calle Stuart 7-14 San Diego Cartagena"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Cartagena" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "A fort, museums, a theatre and an island aquarium, with breakfast cafés, Caribbean dinners and cocktail bars in the walled city and Getsemaní, checked against their own websites.";
+    cityGuide.highlights = ["Castillo de San Felipe de Barajas","Santuario y Museo San Pedro Claver","Museo Histórico de Cartagena","Museo de Arte Moderno de Cartagena"];
+    cityGuide.tip = "The Museo de Arte Moderno is closed on Mondays and Restaurante Don Juan is closed on Sundays, while the Museo Histórico and the San Pedro Claver museum list opening hours every day of the week.";
+    data.destinationFacts[cityKey] = "The Museo de Arte Moderno is closed on Mondays and Restaurante Don Juan is closed on Sundays, while the Museo Histórico and the San Pedro Claver museum list opening hours every day of the week.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "A fort, museums, a theatre and an island aquarium, with breakfast cafés, Caribbean dinners and cocktail bars in the walled city and Getsemaní, checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Museo de Arte Moderno: Mondays; Restaurante Don Juan: Sundays",
+        "copy": "The Museo de Arte Moderno lists \"Lunes: Cerrado\", and Restaurante Don Juan says the house rests on Sundays. The Museo Histórico de Cartagena and the Santuario y Museo San Pedro Claver both list hours for Sundays and holidays."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Castillo tickets online; museum tariffs published",
+        "copy": "The fort operator sells Castillo de San Felipe de Barajas tickets online and lists a full rate of COP 25,000, with free entry for Colombians on the last Sunday of each month except January and December. The Museo Histórico lists adults at COP 24,000 and free entry for under-fives."
+      },
+      {
+        "label": "Walk-ins",
+        "value": "Alquímico: no reservations",
+        "copy": "Alquímico says it takes no reservations and recommends arriving before 8 p.m. to get in. Celele, La Vitrola, Juan del Mar and Restaurante Don Juan all link to online booking from their own sites."
+      },
+      {
+        "label": "Rules",
+        "value": "Dress code, no minors, no pets at the fort",
+        "copy": "Alquímico admits no minors and asks for casual-formal dress, with no beachwear or sportswear. At the Castillo, animals other than guide dogs are not allowed, and the operator advises comfortable shoes because of steep ramps and slippery tunnels."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Book the Castillo and your dinners online, keep Mondays for sights other than the Museo de Arte Moderno, and arrive early for walk-in bars.",
+      intro: [
+        "Every place in this guide was checked against its own website or the public body that runs it. Start with the Castillo de San Felipe de Barajas on Avenida Antonio Arévalo, where the operator, Escuela Taller Cartagena de Indias, sells entry online with the promise of no queues. Its English page lists a full rate of COP 25,000 and free entry for Colombians on the last Sunday of each month, except January and December. Bring comfortable shoes and water: the operator warns of steep ramps, slippery tunnels and midday heat, and only guide dogs are allowed inside.",
+        "Inside the walls, the Santuario y Museo San Pedro Claver at Carrera 4 #30-01 lists hours every day, from 9 a.m. on weekdays and 10 a.m. at weekends and on holidays. The Museo Histórico de Cartagena, in the Palacio de la Inquisición on Plaza de Bolívar, lists adult tickets at COP 24,000, with under-fives free. Plan around Mondays for the Museo de Arte Moderno on Plaza San Pedro Claver, which says it is closed that day. For an evening out, the city's heritage institute runs the Teatro Adolfo Mejía on Plaza de la Merced and has announced its 2026 season.",
+        "For dinner, Celele on Calle del Espíritu Santo in Getsemaní describes contemporary Caribbean cooking built on the region's produce, and Alma sits inside Casa San Agustín, which calls itself a 2026 two Michelin Keys winner. Restaurante Don Juan on Avenida Carlos Escallón lists weekday lunches and dinners from Monday to Saturday and is closed on Sundays. La Vitrola lists live Cuban son every night from 8 p.m., while La Cevichería in San Diego lists service from noon to 11 p.m. daily. Juan del Mar, a restaurant and pizzeria on Plaza de San Diego, takes bookings online.",
+        "For drinks, Alquímico on Calle del Colegio opens nightly from 7 p.m. but takes no reservations, admits no minors and asks for casual-formal dress, so you should aim to arrive before 8 p.m. El Barón on Plaza San Pedro Claver opens from 4 p.m. Monday to Thursday and from noon at weekends. For a quieter coffee, Ábaco Libros y Café pairs books and coffee from 8 a.m. Monday to Saturday. Further out, the Oceanario Islas del Rosario on Isla San Martín de Pajarales lists daily hours of 9 a.m. to 1:30 p.m., so it suits a morning boat trip."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Book the Castillo de San Felipe de Barajas online, then walk into the walled city for the Museo Histórico de Cartagena and the Santuario y Museo San Pedro Claver."
+        ],
+        [
+          "A slower morning",
+          "Have breakfast at Di Silvio Trattoria's Getsemaní branch, browse Ábaco Libros y Café, and reach the Museo de Arte Moderno once it opens at 11 a.m. on any day except Monday, when it is closed."
+        ],
+        [
+          "Before booking",
+          "Reserve Celele, La Vitrola or Restaurante Don Juan online, remembering that Don Juan is closed on Sundays, but plan to queue early for Alquímico, which takes walk-ins only."
+        ]
+      ],
+      trust: "All 20 distinct recommendations in this guide were checked against their operators' own websites on October 28, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

@@ -1,0 +1,874 @@
+{
+  "city": "Cartagena, Colombia",
+  "checkedOn": "2026-10-28",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Castillo de San Felipe de Barajas",
+      "kind": "landmark",
+      "url": "https://fortificacionescartagena.com.co/en/castle-of-san-felipe-de-barajas/",
+      "sourceType": "official public operator (Escuela Taller Cartagena de Indias, appointed by the Ministerio de las Culturas)",
+      "address": "\"located on Avenida Antonio Arévalo in the sector pie del Cerro\"",
+      "operatingEvidence": "Operator homepage sells online entry: \"Sin filas, reserva tu entrada al Castillo San Felipe\". Undated English page lists rates (full rate $25.000) and free entry on the \"Last Sunday of each month, except for January and December\".",
+      "hours": "\"Monday to Sunday from 8 a.m. to 6 p.m.\" (undated English page; an older 2023 news item on the same site gives 7:00 a.m. to 6:00 p.m.)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Santuario y Museo San Pedro Claver",
+      "kind": "museum",
+      "url": "https://sanpedroclaver.co/",
+      "sourceType": "operator's own site (Jesuit sanctuary)",
+      "address": "\"Centro histórico, carrera 4 #30-01\"",
+      "operatingEvidence": "Site carries a news item dated \"septiembre 15, 2026\" on a seminar held 10–11 September 2026, plus a \"Tarifas y Horarios\" section.",
+      "hours": "\"Lunes a viernes: 9 am a 4:30 pm\"; \"Sábados, domingos y festivos 10 am a 4 pm\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Museo Histórico de Cartagena",
+      "kind": "museum",
+      "url": "https://www.muhca.gov.co/visita",
+      "sourceType": "official public operator (museum site on muhca.gov.co)",
+      "address": "\"Palacio de la Inquisición / Plaza de Bolívar\"",
+      "operatingEvidence": "Visit page publishes current ticket tariffs (\"Adultos: $24.000\"; \"Menores de 5 años ingresan gratis\") and a weekly hours notice; no 2026-dated content found.",
+      "hours": "\"Lunes a sábado: 9:00 a 18:00\"; \"Domingos y festivos: 10:00 a 16:00\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Museo de Arte Moderno de Cartagena",
+      "kind": "museum",
+      "url": "https://www.mamcartagena.org/",
+      "sourceType": "operator's own site",
+      "address": "\"en la plaza San Pedro Claver\", \"con el baluarte San Ignacio a un costado\", Centro histórico",
+      "operatingEvidence": "Homepage posts ticket prices and an article \"La obra de Nessim Bassan\" dated \"enero 10, 2026\" (exhibition dates not stated).",
+      "hours": "\"Martes a Viernes: de 11am a 6pm\"; \"Sábados y Domingos: de 11am a 5pm\"; \"Lunes: Cerrado\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Teatro Adolfo Mejía",
+      "kind": "landmark",
+      "url": "https://www.ipcc.gov.co/teatro-adolfo-mejia",
+      "sourceType": "official public operator (Instituto de Patrimonio y Cultura de Cartagena, IPCC)",
+      "address": "\"Plaza de la merced No. 38-10 – Cartagena de Indias, Colombia\"",
+      "operatingEvidence": "IPCC homepage news dated 7 October 2026 on the \"Temporada TAM 2026\" with six winning proposals, and Escuela Festiva sessions at the theatre on 22 October 2026.",
+      "hours": "not published (only IPCC office hours shown)",
+      "confidence": "high"
+    },
+    {
+      "name": "Oceanario Islas del Rosario",
+      "kind": "scenic",
+      "url": "https://oceanario.co/",
+      "sourceType": "operator's own site (CEINER)",
+      "address": "\"Isla San Martin de Pajarales, Islas del Rosario, Bolivar, Colombia\"",
+      "operatingEvidence": "Operator site with a daily hours notice and \"© 2026 Oceanario Islas del Rosario\"; says it sits within the Parque Nacional Natural Corales del Rosario y de San Bernardo.",
+      "hours": "\"Todos los días: 9:00AM–1:30PM\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Alquímico",
+      "kind": "bar",
+      "url": "https://www.alquimico.com/politicas/",
+      "sourceType": "operator's own site",
+      "address": "\"CL. DEL COLEGIO #34-24\", Centro Histórico, Cartagena de Indias",
+      "operatingEvidence": "Hours notice and house policies: \"NO HACEMOS RESERVAS\" / \"WALK-IN ONLY\", recommends arriving before 8pm; homepage images uploaded March 2026.",
+      "hours": "Sunday–Wednesday 7pm–2am; Thursday–Saturday 7pm–3am (policies page)",
+      "confidence": "medium"
+    },
+    {
+      "name": "El Barón",
+      "kind": "bar",
+      "url": "https://elbaron.co/visitanos",
+      "sourceType": "operator's own site",
+      "address": "\"Plaza San Pedro Claver, Cra. 4 #31-7\"",
+      "operatingEvidence": "Reservation button (\"Hacer una Reserva\"), current menus as PDFs (file codes such as \"BAR261001\") and a table-service hours notice.",
+      "hours": "Mon–Thu 4:00 pm–12:00 am; Fri–Sat 12:00 pm–1:00 am; Sun 12:00 pm–12:00 am",
+      "confidence": "medium"
+    },
+    {
+      "name": "La Cevichería",
+      "kind": "meal",
+      "url": "https://www.lacevicheriacartagena.com/",
+      "sourceType": "operator's own site",
+      "address": "\"Calle Stuart No. 7-14, Barrio San Diego\"",
+      "operatingEvidence": "Hours notice marked \"ABIERTO\"; site images uploaded January 2026.",
+      "hours": "\"LUNES – DOMINGO\" \"12:00 M – 11:00 PM\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "La Vitrola",
+      "kind": "meal",
+      "url": "https://www.lavitrolarestaurante.com/",
+      "sourceType": "operator's own site",
+      "address": "\"CRA. 2 #33-66, EL CENTRO\"",
+      "operatingEvidence": "Online booking (\"RESERVAR AHORA\"), menu and events PDFs uploaded in 2026, and service hours.",
+      "hours": "\"Almuerzo 12:00 – 15:00\"; \"Cena 19:00 – 23:00\"; \"Son Cubano en vivo\" nightly from 20:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Celele",
+      "kind": "meal",
+      "url": "https://www.celelerestaurante.com/",
+      "sourceType": "operator's own site",
+      "address": "\"Cra. 10c # 29 -200, Calle del Espíritu Santo\"",
+      "operatingEvidence": "Live \"Reservas\" booking link and seasonal menu: \"Cocina caribeña contemporánea basada en la cultura gastronómica y biodiversidad del territorio del Caribe Colombiano\". Footer reads © 2025.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Alma (Casa San Agustín)",
+      "kind": "meal",
+      "url": "https://www.hotelcasasanagustin.com/",
+      "sourceType": "operator's own site (Hotel Casa San Agustín)",
+      "address": "\"Centro, Calle de la Universidad No. 36 - 44\"",
+      "operatingEvidence": "Hotel states \"2026 two Michelin Keys Winner\"; contact page lists an Alma Maître d' email for restaurant enquiries.",
+      "hours": "not published",
+      "confidence": "high"
+    },
+    {
+      "name": "AniMare (Casa Pestagua)",
+      "kind": "meal",
+      "url": "https://www.casapestagua.com/",
+      "sourceType": "operator's own site (Casa Pestagua hotel)",
+      "address": "\"Centro Histórico, Calle Santo Domingo #33-63\"",
+      "operatingEvidence": "Describes AniMare: \"brings together the culinary heritage of Colombia's Pacific and Caribbean coasts\"; weekly Wine O'Clock at AniMare Bar; footer \"© 2026 Casa Pestagua\".",
+      "hours": "Restaurant hours not published; Wine O'Clock at AniMare Bar Thursday–Saturday 5:00–7:00 PM",
+      "confidence": "medium"
+    },
+    {
+      "name": "Di Silvio Trattoria (Getsemaní)",
+      "kind": "meal",
+      "url": "https://www.disilviotrattoria.com/getsemani",
+      "sourceType": "operator's own site",
+      "address": "\"Cl. 29 #9 – 72, Getsemaní, Cartagena de Indias\"",
+      "operatingEvidence": "Branch page and FAQ: Getsemaní branch serves from the morning \"incluyendo opciones de desayuno y brunch\"; online booking link; footer © 2026.",
+      "hours": "Conflicting on the site: FAQ says Getsemaní opens \"desde las 8:00 a.m. (y desde las 7:30 a.m. los fines de semana)\"; branch page lists 7:30 a.m.–10:30 p.m. (Mon–Thu, Sun) and 7:30 a.m.–11 p.m. (Fri–Sat)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Ábaco Libros y Café",
+      "kind": "cafe",
+      "url": "https://www.abacolibros.com/",
+      "sourceType": "operator's own site",
+      "address": "\"Calle 36 #3-86\", corner of \"Calle de La Iglesia con Calle de La Mantilla\"",
+      "operatingEvidence": "Bookshop-café site with promotional banners uploaded February 2026, a café menu and an hours notice.",
+      "hours": "\"Lunes a Sábado 8:00am a 9:00pm\"; \"Domingos & Festivos 9:00am a 9:00pm\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Café San Alberto (Plaza Santo Domingo)",
+      "kind": "cafe",
+      "url": "https://www.cafesanalbertoint.com/",
+      "sourceType": "operator's own site",
+      "address": "\"Cra 3 # 35 – 18 Cuesta Local Building 1. Cartagena\" (Plaza Santo Domingo)",
+      "operatingEvidence": "Store listing with an hours notice; site banners uploaded October 2026.",
+      "hours": "\"Monday to Sunday from 9 am to 9 pm\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Juan del Mar",
+      "kind": "meal",
+      "url": "https://www.juandelmar.com/",
+      "sourceType": "operator's own site",
+      "address": "\"Plaza de San Diego N° 8 – 12\"",
+      "operatingEvidence": "Restaurant/pizzeria with online booking links and a daily service notice; footer © 2026.",
+      "hours": "Daily 12:30–3:30 p.m. and 6:30–11:00 p.m. (menu section says lunch to 3:00 pm)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Restaurante Don Juan",
+      "kind": "meal",
+      "url": "https://restaurantedonjuan.co/",
+      "sourceType": "operator's own site",
+      "address": "\"Av Carlos Escallón Cra 8 # 34-01\", Centro histórico",
+      "operatingEvidence": "Online booking (donjuan.precompro.com) and weekly hours notice; booking banners uploaded in 2026.",
+      "hours": "Mon–Fri 12:00–3:00 pm and 6:30–10:00 pm; Sat 6:30–10:00 pm; Sunday \"La casa descansa\" (closed)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Erre de Ramón Freixa (Hotel Las Américas)",
+      "kind": "meal",
+      "url": "https://www.hotellasamericas.com.co/",
+      "sourceType": "operator's own site (Hotel Las Américas)",
+      "address": "\"Anillo Vial, Sector, Cielo mar, Cartagena de Indias, La Boquilla\"",
+      "operatingEvidence": "Hotel site describes Erre on the 10th floor of Torre del Mar and carries 2026 content (\"Gran Cena San Silvestre 2026\", nomination for \"Colombia's Best MICE Hotel 2026\").",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Townhouse Cartagena",
+      "kind": "bar",
+      "url": "https://www.townhousecartagena.com/",
+      "sourceType": "operator's own site",
+      "address": "\"36-88 Carrera 7, Cartagena, Bolívar, 130001\"",
+      "operatingEvidence": "Current booking terms (deposit, cancellation, late checkout 100,000 pesos) and a rooftop described as a cocktail bar and diner with pools; no dated content.",
+      "hours": "not published",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Walled City",
+      "reason": "generic, not a place (district, no single operator)",
+      "url": ""
+    },
+    {
+      "name": "Getsemani",
+      "reason": "generic, not a place (neighbourhood)",
+      "url": ""
+    },
+    {
+      "name": "Rosario Islands",
+      "reason": "generic, not a place (archipelago); national park page not readable, see below",
+      "url": ""
+    },
+    {
+      "name": "Old city at sunrise",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Rosario beach day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Getsemani evening music",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Caribbean seafood",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Getsemani street food",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Getsemani",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Bocagrande",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Walled City",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Walled City walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Getsemani",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Bocagrande",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Bocagrande",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Walled City",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Walled City",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Old city at sunrise",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Getsemani",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Getsemani",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Walled City evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Getsemani",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Bocagrande",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Walled City",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Walled City",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Getsemani",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Bocagrande",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Walled City",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Walled City",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Walled City cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Rosario beach day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Bocagrande",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Bocagrande",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Walled City",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Walled City",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Getsemani bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Walled City",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Bocagrande",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Walled City",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Getsemani",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Bocagrande",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Walled City",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Getsemani",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Bocagrande",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Walled City",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Walled City",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Getsemani",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Rosario Islands",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Walled City",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Getsemani morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Walled City",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Bocagrande",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Walled City",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Getsemani",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Bocagrande",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Museo del Oro Zenú",
+      "reason": "Banco de la República site redirected to a bot check (validate.perfdrive.com / ShieldSquare); not bypassed. Not evidence of closure.",
+      "url": "https://www.banrepcultural.org/cartagena/museo-del-oro-zenu"
+    },
+    {
+      "name": "Carmen",
+      "reason": "Official domain carmenrestaurante.com.co now 301-redirects to an unrelated site; no official page readable.",
+      "url": "https://carmenrestaurante.com.co/"
+    },
+    {
+      "name": "Restaurante Interno",
+      "reason": "Certificate error (\"certificate has expired\"); not bypassed.",
+      "url": "https://www.restauranteinterno.com/"
+    },
+    {
+      "name": "Café Havana",
+      "reason": "Repeated DNS failure (EAI_AGAIN) on official domain; not read.",
+      "url": "https://www.cafehavanacartagena.com/"
+    },
+    {
+      "name": "Museo Naval del Caribe",
+      "reason": "Official domain shows only a blank WordPress template; no address or operating evidence.",
+      "url": "https://www.museonavaldelcaribe.com/"
+    },
+    {
+      "name": "Pastelería Mila",
+      "reason": "Official site lists only one address (Claustro de Santo Toribio, Cl. 38 #6-107 local 01) marked \"COMING SOON\"; no confirmation it is open.",
+      "url": "https://mila.com.co/"
+    },
+    {
+      "name": "Época Espresso Bar",
+      "reason": "Fetch refused repeatedly (HTTP 429, then 402); not read.",
+      "url": "https://www.epocacafe.com/"
+    },
+    {
+      "name": "Libertario Coffee Roasters (Cartagena)",
+      "reason": "Homepage gives no Cartagena address; location page returned HTTP 429 on three attempts.",
+      "url": "https://www.libertariocoffee.com/pages/coffee-shops-cartagena"
+    },
+    {
+      "name": "Parque Nacional Natural Corales del Rosario y de San Bernardo",
+      "reason": "Park page redirected to old.parquesnacionales.gov.co and returned 404; the new site's page read showed only Bogotá HQ details.",
+      "url": "https://www.parquesnacionales.gov.co/parque-nacional-natural-corales-del-rosario-y-de-san-bernardo/"
+    },
+    {
+      "name": "Restaurante Fuerte del Pastelillo (Club de Pesca)",
+      "reason": "Official site shows hours and booking but no street address or exact location; last dated media October 2025.",
+      "url": "https://www.restaurantefuertedelpastelillo.com/"
+    },
+    {
+      "name": "Candé",
+      "reason": "Official site gives no street address (only \"en el corazón del Centro Histórico\").",
+      "url": "https://www.restaurantecande.com/"
+    },
+    {
+      "name": "Bazurto Social Club",
+      "reason": "Site shows address but no hours, footer dated 2011 and injected gambling spam; no operating evidence.",
+      "url": "https://www.bazurtosocialclub.com/"
+    },
+    {
+      "name": "Harry's Cartagena / Plaza Santa Teresa (Hotel Charleston Santa Teresa)",
+      "reason": "Hotel pages read give no street address or hours; contact and about pages 404; harryscartagena.com does not resolve.",
+      "url": "https://www.hotelcharlestonsantateresa.com/dining"
+    },
+    {
+      "name": "Sofitel Legend Santa Clara (1621, El Coro)",
+      "reason": "Official hotel page not found (guessed domain did not resolve; Accor URL tried was a different hotel).",
+      "url": "https://www.sofitel-legend-santaclara.com/"
+    },
+    {
+      "name": "Juan Valdez Café (Cartagena)",
+      "reason": "Store pages failed (TLS error) and homepage lists no Cartagena stores.",
+      "url": "https://www.juanvaldezcafe.com/es-co/tiendas"
+    },
+    {
+      "name": "Crepes & Waffles (Cartagena)",
+      "reason": "Homepage returned no readable content; restaurant page 404.",
+      "url": "https://www.crepesywaffles.com/"
+    },
+    {
+      "name": "Café del Mar",
+      "reason": "Official domain tried returned HTTP 404.",
+      "url": "https://www.cafedelmarcartagena.com.co/"
+    },
+    {
+      "name": "Lunático",
+      "reason": "Domain did not resolve (ENOTFOUND).",
+      "url": "https://www.lunaticocartagena.com/"
+    },
+    {
+      "name": "Doña Lola (Casa Lola)",
+      "reason": "Hotel domain did not resolve; no official page found.",
+      "url": "https://www.casalola.com.co/"
+    },
+    {
+      "name": "La Petite Gourmande",
+      "reason": "Official site shows only \"Próximo lanzamiento\"; no address.",
+      "url": "https://www.lapetitegourmande.co/"
+    },
+    {
+      "name": "Marea by Rausch",
+      "reason": "Official page returned no readable content.",
+      "url": "https://www.mareabyrausch.com/"
+    },
+    {
+      "name": "Moshi",
+      "reason": "Official page returned no readable content.",
+      "url": "https://www.moshi.com.co/"
+    },
+    {
+      "name": "María",
+      "reason": "Domain now redirects to an unrelated site.",
+      "url": "https://www.mariacartagena.com/"
+    },
+    {
+      "name": "Jardín Botánico Guillermo Piñeres",
+      "reason": "Domain redirects to an unrelated http-only domain; not followed.",
+      "url": "https://www.jbgp.org/"
+    },
+    {
+      "name": "Murallas de Cartagena",
+      "reason": "Operator page returned HTTP 429; not read.",
+      "url": "https://fortificacionescartagena.com.co/en/walls-of-cartagena/"
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Castillo de San Felipe de Barajas",
+        "Santuario y Museo San Pedro Claver",
+        "Museo Histórico de Cartagena",
+        "Teatro Adolfo Mejía"
+      ],
+      "bestFirstTimers": [
+        "Castillo de San Felipe de Barajas",
+        "Museo Histórico de Cartagena",
+        "Santuario y Museo San Pedro Claver",
+        "La Vitrola"
+      ],
+      "bestRestaurants": [
+        "Celele",
+        "Alma (Casa San Agustín)",
+        "Restaurante Don Juan",
+        "La Vitrola"
+      ],
+      "bestBudget": [
+        "Castillo de San Felipe de Barajas",
+        "Museo Histórico de Cartagena",
+        "Ábaco Libros y Café",
+        "Juan del Mar"
+      ],
+      "bestLuxury": [
+        "Alma (Casa San Agustín)",
+        "Erre de Ramón Freixa (Hotel Las Américas)",
+        "AniMare (Casa Pestagua)",
+        "Celele"
+      ],
+      "bestCouples": [
+        "AniMare (Casa Pestagua)",
+        "La Vitrola",
+        "Townhouse Cartagena",
+        "El Barón"
+      ],
+      "bestKids": [
+        "Oceanario Islas del Rosario",
+        "Castillo de San Felipe de Barajas",
+        "Museo Histórico de Cartagena",
+        "Juan del Mar"
+      ],
+      "bestSolo": [
+        "Ábaco Libros y Café",
+        "Museo de Arte Moderno de Cartagena",
+        "Café San Alberto (Plaza Santo Domingo)",
+        "El Barón"
+      ],
+      "bestUnique": [
+        "Oceanario Islas del Rosario",
+        "Teatro Adolfo Mejía",
+        "Alquímico",
+        "Santuario y Museo San Pedro Claver"
+      ],
+      "bestBreakfast": [
+        "Di Silvio Trattoria (Getsemaní)",
+        "Ábaco Libros y Café"
+      ],
+      "bestLunch": [
+        "La Cevichería",
+        "Juan del Mar",
+        "Restaurante Don Juan",
+        "La Vitrola"
+      ],
+      "bestDinner": [
+        "Celele",
+        "Alma (Casa San Agustín)",
+        "Erre de Ramón Freixa (Hotel Las Américas)",
+        "Restaurante Don Juan"
+      ],
+      "bestCocktails": [
+        "Alquímico",
+        "El Barón",
+        "Townhouse Cartagena",
+        "AniMare (Casa Pestagua)"
+      ],
+      "bestBakeries": [],
+      "bestCoffee": [
+        "Ábaco Libros y Café",
+        "Café San Alberto (Plaza Santo Domingo)"
+      ]
+    },
+    "queries": {
+      "Castillo de San Felipe de Barajas": "Castillo de San Felipe de Barajas Avenida Antonio Arévalo Cartagena",
+      "Santuario y Museo San Pedro Claver": "Santuario y Museo San Pedro Claver Carrera 4 30-01 Cartagena",
+      "Museo Histórico de Cartagena": "Museo Histórico de Cartagena Palacio de la Inquisición Plaza de Bolívar Cartagena",
+      "Museo de Arte Moderno de Cartagena": "Museo de Arte Moderno Plaza San Pedro Claver Cartagena",
+      "Teatro Adolfo Mejía": "Teatro Adolfo Mejía Plaza de la Merced 38-10 Cartagena",
+      "Oceanario Islas del Rosario": "Oceanario Islas del Rosario Isla San Martín de Pajarales Cartagena",
+      "Alquímico": "Alquímico Calle del Colegio 34-24 Cartagena",
+      "El Barón": "El Barón Carrera 4 31-7 Plaza San Pedro Claver Cartagena",
+      "La Cevichería": "La Cevichería Calle Stuart 7-14 San Diego Cartagena",
+      "La Vitrola": "La Vitrola Carrera 2 33-66 Cartagena",
+      "Celele": "Celele Calle del Espíritu Santo Carrera 10c 29-200 Cartagena",
+      "Alma (Casa San Agustín)": "Alma Casa San Agustín Calle de la Universidad 36-44 Cartagena",
+      "AniMare (Casa Pestagua)": "AniMare Casa Pestagua Calle Santo Domingo 33-63 Cartagena",
+      "Di Silvio Trattoria (Getsemaní)": "Di Silvio Trattoria Calle 29 9-72 Getsemaní Cartagena",
+      "Ábaco Libros y Café": "Ábaco Libros y Café Calle 36 3-86 Cartagena",
+      "Café San Alberto (Plaza Santo Domingo)": "Café San Alberto Carrera 3 35-18 Plaza Santo Domingo Cartagena",
+      "Juan del Mar": "Juan del Mar Plaza de San Diego 8-12 Cartagena",
+      "Restaurante Don Juan": "Restaurante Don Juan Carrera 8 34-01 Avenida Carlos Escallón Cartagena",
+      "Erre de Ramón Freixa (Hotel Las Américas)": "Erre de Ramón Freixa Hotel Las Américas Anillo Vial Cielo Mar Cartagena",
+      "Townhouse Cartagena": "Townhouse Carrera 7 36-88 Cartagena"
+    },
+    "summary": "A fort, museums, a theatre and an island aquarium, with breakfast cafés, Caribbean dinners and cocktail bars in the walled city and Getsemaní, checked against their own websites.",
+    "highlights": [
+      "Castillo de San Felipe de Barajas",
+      "Santuario y Museo San Pedro Claver",
+      "Museo Histórico de Cartagena",
+      "Museo de Arte Moderno de Cartagena"
+    ],
+    "tip": "The Museo de Arte Moderno is closed on Mondays and Restaurante Don Juan is closed on Sundays, while the Museo Histórico and the San Pedro Claver museum list opening hours every day of the week.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Museo de Arte Moderno: Mondays; Restaurante Don Juan: Sundays",
+        "copy": "The Museo de Arte Moderno lists \"Lunes: Cerrado\", and Restaurante Don Juan says the house rests on Sundays. The Museo Histórico de Cartagena and the Santuario y Museo San Pedro Claver both list hours for Sundays and holidays."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Castillo tickets online; museum tariffs published",
+        "copy": "The fort operator sells Castillo de San Felipe de Barajas tickets online and lists a full rate of COP 25,000, with free entry for Colombians on the last Sunday of each month except January and December. The Museo Histórico lists adults at COP 24,000 and free entry for under-fives."
+      },
+      {
+        "label": "Walk-ins",
+        "value": "Alquímico: no reservations",
+        "copy": "Alquímico says it takes no reservations and recommends arriving before 8 p.m. to get in. Celele, La Vitrola, Juan del Mar and Restaurante Don Juan all link to online booking from their own sites."
+      },
+      {
+        "label": "Rules",
+        "value": "Dress code, no minors, no pets at the fort",
+        "copy": "Alquímico admits no minors and asks for casual-formal dress, with no beachwear or sportswear. At the Castillo, animals other than guide dogs are not allowed, and the operator advises comfortable shoes because of steep ramps and slippery tunnels."
+      }
+    ],
+    "dek": "Book the Castillo and your dinners online, keep Mondays for sights other than the Museo de Arte Moderno, and arrive early for walk-in bars.",
+    "intro": [
+      "Every place in this guide was checked against its own website or the public body that runs it. Start with the Castillo de San Felipe de Barajas on Avenida Antonio Arévalo, where the operator, Escuela Taller Cartagena de Indias, sells entry online with the promise of no queues. Its English page lists a full rate of COP 25,000 and free entry for Colombians on the last Sunday of each month, except January and December. Bring comfortable shoes and water: the operator warns of steep ramps, slippery tunnels and midday heat, and only guide dogs are allowed inside.",
+      "Inside the walls, the Santuario y Museo San Pedro Claver at Carrera 4 #30-01 lists hours every day, from 9 a.m. on weekdays and 10 a.m. at weekends and on holidays. The Museo Histórico de Cartagena, in the Palacio de la Inquisición on Plaza de Bolívar, lists adult tickets at COP 24,000, with under-fives free. Plan around Mondays for the Museo de Arte Moderno on Plaza San Pedro Claver, which says it is closed that day. For an evening out, the city's heritage institute runs the Teatro Adolfo Mejía on Plaza de la Merced and has announced its 2026 season.",
+      "For dinner, Celele on Calle del Espíritu Santo in Getsemaní describes contemporary Caribbean cooking built on the region's produce, and Alma sits inside Casa San Agustín, which calls itself a 2026 two Michelin Keys winner. Restaurante Don Juan on Avenida Carlos Escallón lists weekday lunches and dinners from Monday to Saturday and is closed on Sundays. La Vitrola lists live Cuban son every night from 8 p.m., while La Cevichería in San Diego lists service from noon to 11 p.m. daily. Juan del Mar, a restaurant and pizzeria on Plaza de San Diego, takes bookings online.",
+      "For drinks, Alquímico on Calle del Colegio opens nightly from 7 p.m. but takes no reservations, admits no minors and asks for casual-formal dress, so you should aim to arrive before 8 p.m. El Barón on Plaza San Pedro Claver opens from 4 p.m. Monday to Thursday and from noon at weekends. For a quieter coffee, Ábaco Libros y Café pairs books and coffee from 8 a.m. Monday to Saturday. Further out, the Oceanario Islas del Rosario on Isla San Martín de Pajarales lists daily hours of 9 a.m. to 1:30 p.m., so it suits a morning boat trip."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Book the Castillo de San Felipe de Barajas online, then walk into the walled city for the Museo Histórico de Cartagena and the Santuario y Museo San Pedro Claver."
+      ],
+      [
+        "A slower morning",
+        "Have breakfast at Di Silvio Trattoria's Getsemaní branch, browse Ábaco Libros y Café, and reach the Museo de Arte Moderno once it opens at 11 a.m. on any day except Monday, when it is closed."
+      ],
+      [
+        "Before booking",
+        "Reserve Celele, La Vitrola or Restaurante Don Juan online, remembering that Don Juan is closed on Sundays, but plan to queue early for Alquímico, which takes walk-ins only."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability, and most sites read carry no dated 2026 hours notice, so hours are reported as each site lists them. The Castillo's hours come from an undated operator page that conflicts with an older 2023 notice (7 a.m. versus 8 a.m. opening), and Di Silvio's Getsemaní opening time differs between its branch page and FAQ. Celele, Alma, Erre, Townhouse and the Teatro Adolfo Mejía publish no opening hours. Sites that could not be read include the Museo del Oro Zenú (bot check), Restaurante Interno (expired certificate), Café Havana (DNS failure), Época and Libertario (rate-limited), Carmen and María (domains now redirect elsewhere) and the national park page for Corales del Rosario (404). No bakery could be confirmed: Pastelería Mila's only listed address is marked \"coming soon\", so the bakery list is empty.",
+  "injectionLikeText": []
+}

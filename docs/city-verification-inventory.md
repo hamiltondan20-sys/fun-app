@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 85.
-- Classifier-passed (published, not fully documented in that format): 107.
+- Source-verified (complete dated evidence format): 86.
+- Classifier-passed (published, not fully documented in that format): 106.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -117,7 +117,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Cappadocia, Turkey | cappadocia | held-back | not-reviewed | 0 | 3 | 15 | 3 | has 3 named places across 3 categories; needs at least 5 named places across 3 categories |
 | Capri and Neapolitan Islands, Italy | capri | held-back | not-reviewed | 0 | 3 | 15 | 3 | has 3 named places across 3 categories; needs at least 5 named places across 3 categories |
 | Cardiff, United Kingdom | cardiff | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Cartagena, Colombia | cartagena | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Cartagena, Colombia | cartagena | source-verified | source-checked | 20 | 36 | 14 | 13 | None |
 | Casablanca, Morocco | casablanca | classifier-passed | not-reviewed | 0 | 8 | 15 | 6 | None |
 | Cascais, Portugal | cascais | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Cebu, Philippines | cebu | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |

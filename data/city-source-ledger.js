@@ -5,6 +5,672 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Cartagena, Colombia": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-28",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability, and most sites read carry no dated 2026 hours notice, so hours are reported as each site lists them. The Castillo's hours come from an undated operator page that conflicts with an older 2023 notice (7 a.m. versus 8 a.m. opening), and Di Silvio's Getsemaní opening time differs between its branch page and FAQ. Celele, Alma, Erre, Townhouse and the Teatro Adolfo Mejía publish no opening hours. Sites that could not be read include the Museo del Oro Zenú (bot check), Restaurante Interno (expired certificate), Café Havana (DNS failure), Época and Libertario (rate-limited), Carmen and María (domains now redirect elsewhere) and the national park page for Corales del Rosario (404). No bakery could be confirmed: Pastelería Mila's only listed address is marked \"coming soon\", so the bakery list is empty.",
+    "sourceUrls": [
+      "docs/content-research/cartagena-2026-10-28.md",
+      "docs/content-research/cartagena-2026-10-28.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Walled City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place (district, no single operator)"
+      },
+      {
+        "name": "Getsemani",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place (neighbourhood)"
+      },
+      {
+        "name": "Rosario Islands",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place (archipelago); national park page not readable, see below"
+      },
+      {
+        "name": "Old city at sunrise",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Rosario beach day",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Getsemani evening music",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Caribbean seafood",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Getsemani street food",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop dinner",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Getsemani",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Bocagrande",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Walled City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Walled City walk",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Getsemani",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Bocagrande",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Bocagrande",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Walled City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Walled City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Old city at sunrise",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Getsemani",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Getsemani",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Walled City evening",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Getsemani",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Bocagrande",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Walled City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Walled City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Getsemani",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Bocagrande",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Walled City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Walled City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Walled City cafe or market",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Rosario beach day",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Bocagrande",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Bocagrande",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Walled City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Walled City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Getsemani bakery or market",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Walled City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Bocagrande",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Walled City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Getsemani",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Bocagrande",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Walled City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Getsemani",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Bocagrande",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Walled City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Walled City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Getsemani",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Rosario Islands",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Walled City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Getsemani morning market",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Walled City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Bocagrande",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Walled City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Getsemani",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Bocagrande",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Museo del Oro Zenú",
+        "url": "https://www.banrepcultural.org/cartagena/museo-del-oro-zenu",
+        "checkedOn": "2026-10-28",
+        "reason": "Banco de la República site redirected to a bot check (validate.perfdrive.com / ShieldSquare); not bypassed. Not evidence of closure."
+      },
+      {
+        "name": "Carmen",
+        "url": "https://carmenrestaurante.com.co/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official domain carmenrestaurante.com.co now 301-redirects to an unrelated site; no official page readable."
+      },
+      {
+        "name": "Restaurante Interno",
+        "url": "https://www.restauranteinterno.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Certificate error (\"certificate has expired\"); not bypassed."
+      },
+      {
+        "name": "Café Havana",
+        "url": "https://www.cafehavanacartagena.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Repeated DNS failure (EAI_AGAIN) on official domain; not read."
+      },
+      {
+        "name": "Museo Naval del Caribe",
+        "url": "https://www.museonavaldelcaribe.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official domain shows only a blank WordPress template; no address or operating evidence."
+      },
+      {
+        "name": "Pastelería Mila",
+        "url": "https://mila.com.co/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site lists only one address (Claustro de Santo Toribio, Cl. 38 #6-107 local 01) marked \"COMING SOON\"; no confirmation it is open."
+      },
+      {
+        "name": "Época Espresso Bar",
+        "url": "https://www.epocacafe.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Fetch refused repeatedly (HTTP 429, then 402); not read."
+      },
+      {
+        "name": "Libertario Coffee Roasters (Cartagena)",
+        "url": "https://www.libertariocoffee.com/pages/coffee-shops-cartagena",
+        "checkedOn": "2026-10-28",
+        "reason": "Homepage gives no Cartagena address; location page returned HTTP 429 on three attempts."
+      },
+      {
+        "name": "Parque Nacional Natural Corales del Rosario y de San Bernardo",
+        "url": "https://www.parquesnacionales.gov.co/parque-nacional-natural-corales-del-rosario-y-de-san-bernardo/",
+        "checkedOn": "2026-10-28",
+        "reason": "Park page redirected to old.parquesnacionales.gov.co and returned 404; the new site's page read showed only Bogotá HQ details."
+      },
+      {
+        "name": "Restaurante Fuerte del Pastelillo (Club de Pesca)",
+        "url": "https://www.restaurantefuertedelpastelillo.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site shows hours and booking but no street address or exact location; last dated media October 2025."
+      },
+      {
+        "name": "Candé",
+        "url": "https://www.restaurantecande.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site gives no street address (only \"en el corazón del Centro Histórico\")."
+      },
+      {
+        "name": "Bazurto Social Club",
+        "url": "https://www.bazurtosocialclub.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Site shows address but no hours, footer dated 2011 and injected gambling spam; no operating evidence."
+      },
+      {
+        "name": "Harry's Cartagena / Plaza Santa Teresa (Hotel Charleston Santa Teresa)",
+        "url": "https://www.hotelcharlestonsantateresa.com/dining",
+        "checkedOn": "2026-10-28",
+        "reason": "Hotel pages read give no street address or hours; contact and about pages 404; harryscartagena.com does not resolve."
+      },
+      {
+        "name": "Sofitel Legend Santa Clara (1621, El Coro)",
+        "url": "https://www.sofitel-legend-santaclara.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official hotel page not found (guessed domain did not resolve; Accor URL tried was a different hotel)."
+      },
+      {
+        "name": "Juan Valdez Café (Cartagena)",
+        "url": "https://www.juanvaldezcafe.com/es-co/tiendas",
+        "checkedOn": "2026-10-28",
+        "reason": "Store pages failed (TLS error) and homepage lists no Cartagena stores."
+      },
+      {
+        "name": "Crepes & Waffles (Cartagena)",
+        "url": "https://www.crepesywaffles.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Homepage returned no readable content; restaurant page 404."
+      },
+      {
+        "name": "Café del Mar",
+        "url": "https://www.cafedelmarcartagena.com.co/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official domain tried returned HTTP 404."
+      },
+      {
+        "name": "Lunático",
+        "url": "https://www.lunaticocartagena.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Domain did not resolve (ENOTFOUND)."
+      },
+      {
+        "name": "Doña Lola (Casa Lola)",
+        "url": "https://www.casalola.com.co/",
+        "checkedOn": "2026-10-28",
+        "reason": "Hotel domain did not resolve; no official page found."
+      },
+      {
+        "name": "La Petite Gourmande",
+        "url": "https://www.lapetitegourmande.co/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site shows only \"Próximo lanzamiento\"; no address."
+      },
+      {
+        "name": "Marea by Rausch",
+        "url": "https://www.mareabyrausch.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official page returned no readable content."
+      },
+      {
+        "name": "Moshi",
+        "url": "https://www.moshi.com.co/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official page returned no readable content."
+      },
+      {
+        "name": "María",
+        "url": "https://www.mariacartagena.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Domain now redirects to an unrelated site."
+      },
+      {
+        "name": "Jardín Botánico Guillermo Piñeres",
+        "url": "https://www.jbgp.org/",
+        "checkedOn": "2026-10-28",
+        "reason": "Domain redirects to an unrelated http-only domain; not followed."
+      },
+      {
+        "name": "Murallas de Cartagena",
+        "url": "https://fortificacionescartagena.com.co/en/walls-of-cartagena/",
+        "checkedOn": "2026-10-28",
+        "reason": "Operator page returned HTTP 429; not read."
+      }
+    ],
+    "placeSources": {
+      "Castillo de San Felipe de Barajas": {
+        "url": "https://fortificacionescartagena.com.co/en/castle-of-san-felipe-de-barajas/",
+        "sourceType": "official public operator (Escuela Taller Cartagena de Indias, appointed by the Ministerio de las Culturas)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Operator homepage sells online entry: \"Sin filas, reserva tu entrada al Castillo San Felipe\". Undated English page lists rates (full rate $25.000) and free entry on the \"Last Sunday of each month, except for January and December\"."
+      },
+      "Santuario y Museo San Pedro Claver": {
+        "url": "https://sanpedroclaver.co/",
+        "sourceType": "operator's own site (Jesuit sanctuary)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Site carries a news item dated \"septiembre 15, 2026\" on a seminar held 10–11 September 2026, plus a \"Tarifas y Horarios\" section."
+      },
+      "Museo Histórico de Cartagena": {
+        "url": "https://www.muhca.gov.co/visita",
+        "sourceType": "official public operator (museum site on muhca.gov.co)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Visit page publishes current ticket tariffs (\"Adultos: $24.000\"; \"Menores de 5 años ingresan gratis\") and a weekly hours notice; no 2026-dated content found."
+      },
+      "Museo de Arte Moderno de Cartagena": {
+        "url": "https://www.mamcartagena.org/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Homepage posts ticket prices and an article \"La obra de Nessim Bassan\" dated \"enero 10, 2026\" (exhibition dates not stated)."
+      },
+      "Teatro Adolfo Mejía": {
+        "url": "https://www.ipcc.gov.co/teatro-adolfo-mejia",
+        "sourceType": "official public operator (Instituto de Patrimonio y Cultura de Cartagena, IPCC)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "IPCC homepage news dated 7 October 2026 on the \"Temporada TAM 2026\" with six winning proposals, and Escuela Festiva sessions at the theatre on 22 October 2026."
+      },
+      "Oceanario Islas del Rosario": {
+        "url": "https://oceanario.co/",
+        "sourceType": "operator's own site (CEINER)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Operator site with a daily hours notice and \"© 2026 Oceanario Islas del Rosario\"; says it sits within the Parque Nacional Natural Corales del Rosario y de San Bernardo."
+      },
+      "Alquímico": {
+        "url": "https://www.alquimico.com/politicas/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Hours notice and house policies: \"NO HACEMOS RESERVAS\" / \"WALK-IN ONLY\", recommends arriving before 8pm; homepage images uploaded March 2026."
+      },
+      "El Barón": {
+        "url": "https://elbaron.co/visitanos",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Reservation button (\"Hacer una Reserva\"), current menus as PDFs (file codes such as \"BAR261001\") and a table-service hours notice."
+      },
+      "La Cevichería": {
+        "url": "https://www.lacevicheriacartagena.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Hours notice marked \"ABIERTO\"; site images uploaded January 2026."
+      },
+      "La Vitrola": {
+        "url": "https://www.lavitrolarestaurante.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Online booking (\"RESERVAR AHORA\"), menu and events PDFs uploaded in 2026, and service hours."
+      },
+      "Celele": {
+        "url": "https://www.celelerestaurante.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Live \"Reservas\" booking link and seasonal menu: \"Cocina caribeña contemporánea basada en la cultura gastronómica y biodiversidad del territorio del Caribe Colombiano\". Footer reads © 2025."
+      },
+      "Alma (Casa San Agustín)": {
+        "url": "https://www.hotelcasasanagustin.com/",
+        "sourceType": "operator's own site (Hotel Casa San Agustín)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Hotel states \"2026 two Michelin Keys Winner\"; contact page lists an Alma Maître d' email for restaurant enquiries."
+      },
+      "AniMare (Casa Pestagua)": {
+        "url": "https://www.casapestagua.com/",
+        "sourceType": "operator's own site (Casa Pestagua hotel)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Describes AniMare: \"brings together the culinary heritage of Colombia's Pacific and Caribbean coasts\"; weekly Wine O'Clock at AniMare Bar; footer \"© 2026 Casa Pestagua\"."
+      },
+      "Di Silvio Trattoria (Getsemaní)": {
+        "url": "https://www.disilviotrattoria.com/getsemani",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Branch page and FAQ: Getsemaní branch serves from the morning \"incluyendo opciones de desayuno y brunch\"; online booking link; footer © 2026."
+      },
+      "Ábaco Libros y Café": {
+        "url": "https://www.abacolibros.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Bookshop-café site with promotional banners uploaded February 2026, a café menu and an hours notice."
+      },
+      "Café San Alberto (Plaza Santo Domingo)": {
+        "url": "https://www.cafesanalbertoint.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Store listing with an hours notice; site banners uploaded October 2026."
+      },
+      "Juan del Mar": {
+        "url": "https://www.juandelmar.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Restaurant/pizzeria with online booking links and a daily service notice; footer © 2026."
+      },
+      "Restaurante Don Juan": {
+        "url": "https://restaurantedonjuan.co/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Online booking (donjuan.precompro.com) and weekly hours notice; booking banners uploaded in 2026."
+      },
+      "Erre de Ramón Freixa (Hotel Las Américas)": {
+        "url": "https://www.hotellasamericas.com.co/",
+        "sourceType": "operator's own site (Hotel Las Américas)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Hotel site describes Erre on the 10th floor of Torre del Mar and carries 2026 content (\"Gran Cena San Silvestre 2026\", nomination for \"Colombia's Best MICE Hotel 2026\")."
+      },
+      "Townhouse Cartagena": {
+        "url": "https://www.townhousecartagena.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Current booking terms (deposit, cancellation, late checkout 100,000 pesos) and a rooftop described as a cocktail bar and diner with pools; no dated content."
+      }
+    }
+  },
   "Santiago, Chile": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-28",
