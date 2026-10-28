@@ -8067,4 +8067,113 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 28, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Busan, South Korea: source review of 2026-10-28 (docs/content-research/busan-2026-10-28.md).
+  {
+    const cityKey = "Busan, South Korea";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Haeundae Beach","Busan Museum of Art","F1963","Busan Air Cruise"],
+      bestFirstTimers: ["Haeundae Beach","Haeundae Blue Line Park","Busan Air Cruise","Busan Modern and Contemporary History Museum"],
+      bestRestaurants: ["Palais de Chine (Grand Josun Busan)","Momoyama (Lotte Hotel Busan)","Michael's Urban Farm Table (F1963)","Sheobul (The Westin Josun Busan)"],
+      bestBudget: ["Busan Museum of Art","Museum of Contemporary Art Busan","Busan Modern and Contemporary History Museum","Busan Citizens Park History Museum"],
+      bestLuxury: ["The View (Signiel Busan)","Aria (Grand Josun Busan)","La Seine (Lotte Hotel Busan)","The Lounge (Signiel Busan)"],
+      bestCouples: ["Busan Air Cruise","Panorama Lounge (The Westin Josun Busan)","Lounge & Bar Terrace 292 (Grand Josun Busan)","The View (Signiel Busan)"],
+      bestKids: ["SEA LIFE Busan Aquarium","Haeundae Blue Line Park","Busan Air Cruise","Haeundae Beach"],
+      bestSolo: ["F1963","Kukje Gallery Busan (F1963)","Busan Museum of Art","Terarosa (F1963)"],
+      bestUnique: ["F1963","Haeundae Blue Line Park","Praha993 (F1963)","Eobo Jechulso (F1963)"],
+      bestBreakfast: ["Camellia (The Westin Josun Busan)","Terarosa (F1963)","Josun Deli (The Westin Josun Busan)"],
+      bestLunch: ["Michael's Urban Farm Table (F1963)","Eobo Jechulso (F1963)","Sheobul (The Westin Josun Busan)","Palais de Chine (Grand Josun Busan)"],
+      bestDinner: ["Momoyama (Lotte Hotel Busan)","Aria (Grand Josun Busan)","Palais de Chine (Grand Josun Busan)","The View (Signiel Busan)"],
+      bestCocktails: ["Panorama Lounge (The Westin Josun Busan)","The Lounge & Bar (Lotte Hotel Busan)","Lounge & Bar Terrace 292 (Grand Josun Busan)","The Lounge (Signiel Busan)"],
+      bestBakeries: ["Terarosa (F1963)","Delica Hans (Lotte Hotel Busan)","Pastry Salon (Signiel Busan)","Josun Deli (The Westin Josun Busan)"],
+      bestCoffee: ["Terarosa (F1963)","Pastry Salon (Signiel Busan)","Delica Hans (Lotte Hotel Busan)","Josun Deli (The Westin Josun Busan)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Haeundae Beach": "Haeundae Beach Haeundaehaebyeon-ro Busan",
+      "Busan Museum of Art": "Busan Museum of Art 58 APEC-ro Busan",
+      "F1963": "F1963 20 Gurak-ro 123beon-gil Busan",
+      "Busan Air Cruise": "Busan Air Cruise 171 Songdohaebyeon-ro Busan",
+      "Haeundae Blue Line Park": "Haeundae Blue Line Park Mipo Station 13 Dalmaji-gil 62beon-gil Busan",
+      "Busan Modern and Contemporary History Museum": "Busan Modern and Contemporary History Museum 104 Daecheong-ro Busan",
+      "Palais de Chine (Grand Josun Busan)": "Palais de Chine Grand Josun Busan 292 Haeundaehaebyeon-ro Busan",
+      "Momoyama (Lotte Hotel Busan)": "Momoyama Lotte Hotel Busan 772 Gaya-daero Busan",
+      "Michael's Urban Farm Table (F1963)": "Michael's Urban Farm Table F1963 20 Gurak-ro 123beon-gil Busan",
+      "Sheobul (The Westin Josun Busan)": "Sheobul Westin Josun Busan 67 Dongbaek-ro Busan",
+      "Museum of Contemporary Art Busan": "Museum of Contemporary Art Busan 1191 Nakdongnam-ro Busan",
+      "Busan Citizens Park History Museum": "Busan Citizens Park History Museum 73 Simingongwon-ro Busan",
+      "The View (Signiel Busan)": "Signiel Busan 30 Dalmaji-gil Busan",
+      "Aria (Grand Josun Busan)": "Aria Grand Josun Busan 292 Haeundaehaebyeon-ro Busan",
+      "La Seine (Lotte Hotel Busan)": "La Seine Lotte Hotel Busan 772 Gaya-daero Busan",
+      "The Lounge (Signiel Busan)": "The Lounge Signiel Busan 30 Dalmaji-gil Busan",
+      "Panorama Lounge (The Westin Josun Busan)": "Panorama Lounge Westin Josun Busan 67 Dongbaek-ro Busan",
+      "Lounge & Bar Terrace 292 (Grand Josun Busan)": "Terrace 292 Grand Josun Busan 292 Haeundaehaebyeon-ro Busan",
+      "SEA LIFE Busan Aquarium": "SEA LIFE Busan Aquarium 266 Haeundaehaebyeon-ro Busan",
+      "Kukje Gallery Busan (F1963)": "Kukje Gallery Busan F1963 20 Gurak-ro 123beon-gil Busan",
+      "Terarosa (F1963)": "Terarosa F1963 20 Gurak-ro 123beon-gil Busan",
+      "Praha993 (F1963)": "Praha993 F1963 20 Gurak-ro 123beon-gil Busan",
+      "Eobo Jechulso (F1963)": "Eobo Jechulso F1963 20 Gurak-ro 123beon-gil Busan",
+      "Camellia (The Westin Josun Busan)": "Camellia Westin Josun Busan 67 Dongbaek-ro Busan",
+      "Josun Deli (The Westin Josun Busan)": "Josun Deli Westin Josun Busan 67 Dongbaek-ro Busan",
+      "The Lounge & Bar (Lotte Hotel Busan)": "The Lounge & Bar Lotte Hotel Busan 772 Gaya-daero Busan",
+      "Delica Hans (Lotte Hotel Busan)": "Delica Hans Lotte Hotel Busan 772 Gaya-daero Busan",
+      "Pastry Salon (Signiel Busan)": "Pastry Salon Signiel Busan 30 Dalmaji-gil Busan"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Busan" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Beaches, a cable car, city museums and a converted factory complex, with breakfast buffets, bakeries, hotel dinners and cocktail lounges checked against their own websites.";
+    cityGuide.highlights = ["Haeundae Beach","Busan Museum of Art","F1963","Busan Air Cruise"];
+    cityGuide.tip = "The Busan Museum of Art, the Museum of Contemporary Art Busan and the Busan Modern and Contemporary History Museum all close on Mondays and 1 January, and on the next day when a Monday is a public holiday, so plan museum days for Tuesday to Sunday.";
+    data.destinationFacts[cityKey] = "The Busan Museum of Art, the Museum of Contemporary Art Busan and the Busan Modern and Contemporary History Museum all close on Mondays and 1 January, and on the next day when a Monday is a public holiday, so plan museum days for Tuesday to Sunday.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Beaches, a cable car, city museums and a converted factory complex, with breakfast buffets, bakeries, hotel dinners and cocktail lounges checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays and 1 January",
+        "copy": "The Busan Museum of Art, the Museum of Contemporary Art Busan and the Busan Modern and Contemporary History Museum close on Mondays and 1 January, and on the next day when a Monday is a public holiday. At F1963, Kukje Gallery Busan and Eobo Jechulso also close on Mondays."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book rides online",
+        "copy": "Busan Air Cruise lists an adult Air Cruise round trip at 19,000 won and stops selling tickets 30 minutes before closing. Haeundae Blue Line Park and SEA LIFE Busan Aquarium both sell tickets on their own sites, and SEA LIFE offers up to 31% off when you book online in advance."
+      },
+      {
+        "label": "Queues and tours",
+        "value": "Pay to skip, register to join",
+        "copy": "Busan Air Cruise sells a no-wait Speedy Cruise at 45,000 won (Air) or 55,000 won (Crystal) per person. The Busan Modern and Contemporary History Museum's permanent-exhibition tours need online registration and take 15 people per session."
+      },
+      {
+        "label": "Rules",
+        "value": "Free entry, documents for exemptions",
+        "copy": "General admission at the Museum of Contemporary Art Busan is free, but some special exhibitions charge, and exemptions for under-7s with a guardian or visitors 65 and over apply only with documents. At Haeundae Beach, between 1 September and 31 May you may not enter the water from 30 minutes after sunset until 30 minutes before sunrise."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Keep museum days to Tuesday through Sunday, and save Haeundae for the beach train, the aquarium and an evening drink.",
+      intro: [
+        "This Busan guide is built around the sea and the city's public museums, each checked on its own website. Haeundae Beach is run by the Haeundae-gu Office, whose directions page puts it an eight-minute walk from Exit 5 of Haeundae Station on Line 2. During the non-opening period, from 1 September to 31 May the following year, you may not enter the water from 30 minutes after sunset until 30 minutes before sunrise. East of the beach, Haeundae Blue Line Park runs its beach train from Mipo Station and takes bookings online.",
+        "The Busan Museum of Art on APEC-ro opens Tuesday to Sunday, 10:00 to 18:00, with last entry to the main building at 17:00. Busan city lists its collection exhibition \"Dear All The Yesterdays\" from 17 September 2026 to 14 March 2027, with free admission. The Museum of Contemporary Art Busan in Saha-gu keeps the same hours and makes general admission free, though some special exhibitions charge. In Jung-gu, the free Busan Modern and Contemporary History Museum opens 09:00 to 18:00 and runs permanent-exhibition tours that need online registration and take 15 people.",
+        "F1963, a converted factory complex in Suyeong-gu, gathers several stops at one address. Terarosa there opens daily from 09:00 to 21:00 and bakes naturally leavened bread each day, Praha993 brews Czech-style beer until 22:30, and Michael's Urban Farm Table serves on the fourth-floor rooftop with a break from 14:30 to 17:00. Kukje Gallery Busan and Eobo Jechulso close on Mondays. The complex lists Jean-Michel Othoniel's \"In the Labyrinth of Love\" from 28 August to 31 December 2026.",
+        "For dinners and cocktails, hotel outlets publish the clearest details. The Westin Josun Busan on Dongbaek-ro lists Panorama Lounge daily from 08:00 to midnight, Camellia's buffet breakfast from 06:30 to 10:00, and Josun Deli from 08:00 to 22:00. Grand Josun Busan serves an autumn Chinese course at Palais de Chine until 30 November 2026, and its outdoor lawn is being improved until 30 December 2026. Lotte Hotel Busan pairs La Seine's buffet of more than 140 dishes with Delica Hans, which sells bread and cakes baked the same day."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair Haeundae Beach with the Blue Line Park beach train from Mipo Station, then finish at Panorama Lounge in The Westin Josun Busan."
+        ],
+        [
+          "A slower morning",
+          "Start with breakfast at Camellia or bread at Terarosa (F1963), which opens at 09:00, before an unhurried look round F1963."
+        ],
+        [
+          "Before booking",
+          "Keep museum visits to Tuesday through Sunday, because the Busan Museum of Art, the Museum of Contemporary Art Busan and the Busan Modern and Contemporary History Museum close on Mondays and 1 January."
+        ]
+      ],
+      trust: "All 28 distinct recommendations in this guide were checked against their operators' own websites on October 28, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

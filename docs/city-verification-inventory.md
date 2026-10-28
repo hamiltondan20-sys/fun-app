@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 78.
-- Classifier-passed (published, not fully documented in that format): 114.
+- Source-verified (complete dated evidence format): 79.
+- Classifier-passed (published, not fully documented in that format): 113.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -103,7 +103,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Budapest, Hungary | budapest | source-verified | source-checked | 28 | 53 | 15 | 15 | None |
 | Buenos Aires, Argentina | buenos-aires | source-verified | source-checked | 24 | 52 | 15 | 15 | None |
 | Bukhara, Uzbekistan | bukhara | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Busan, South Korea | busan | classifier-passed | not-reviewed | 0 | 11 | 15 | 5 | None |
+| Busan, South Korea | busan | source-verified | source-checked | 28 | 41 | 15 | 14 | None |
 | Byron Bay, Australia | byron-bay | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Cairns, Australia | cairns | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
 | Cairo, Egypt | cairo | source-verified | source-checked | 21 | 45 | 15 | 15 | None |

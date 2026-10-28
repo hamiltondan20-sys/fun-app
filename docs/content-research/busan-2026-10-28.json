@@ -1,0 +1,885 @@
+{
+  "city": "Busan, South Korea",
+  "checkedOn": "2026-10-28",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Haeundae Beach",
+      "kind": "scenic",
+      "url": "https://www.haeundae.go.kr/tour/index.do?menuCd=DOM_000000302001003000",
+      "sourceType": "official public operator (Haeundae-gu Office)",
+      "address": "No street address published; directions page: Busan Subway Line 2 Haeundae Station Exit 5, eight-minute walk; buses 139, 307, 1003 to the 'Haeundae Beach' stop",
+      "operatingEvidence": "District tour page dated 2026-10-29 lists 물놀이 as \"가능\"; usage page gives the 2026 season \"2026.6.26.~9.15.(82일간)\" and the off-season rule \"해수욕장 비개장기간(09.01 ~ 익년 05.31.)\" with no swimming from 30 minutes after sunset to 30 minutes before sunrise.",
+      "hours": "Swimming season 09:00–18:00 (2026 season ended 15 September); open public beach otherwise",
+      "confidence": "medium"
+    },
+    {
+      "name": "Haeundae Blue Line Park",
+      "kind": "scenic",
+      "url": "https://www.bluelinepark.com/tourFacilityList.do",
+      "sourceType": "operator's own site",
+      "address": "Mipo Station: \"부산광역시 해운대구 달맞이길62번길 13\" (also Cheongsapo Station \"청사포로 116\", Songjeong Station \"송정중앙로8번길 70\")",
+      "operatingEvidence": "Homepage shows \"정상운행중\" with an online \"예매하기\" booking link; notices dated 2026-10-13 (extended night running of the beach train and sky capsule for the Busan Fireworks Festival) and 2026-10-28.",
+      "hours": "not published on pages read",
+      "confidence": "high"
+    },
+    {
+      "name": "Busan Air Cruise",
+      "kind": "scenic",
+      "url": "https://www.busanaircruise.co.kr/",
+      "sourceType": "operator's own site",
+      "address": "\"부산광역시 서구 송도해변로 171\"",
+      "operatingEvidence": "Live hours and fares on the homepage, plus notices dated 2026-10-20 (parking restrictions on 1 November) and 2026-09-16 (Chuseok extended hours). Round trip Air Cruise 19,000 won adult; Crystal Cruise 24,000 won adult.",
+      "hours": "\"09:00–21:00\" on the day checked; ticket sales close 30 minutes before closing; may close early for weather",
+      "confidence": "high"
+    },
+    {
+      "name": "SEA LIFE Busan Aquarium",
+      "kind": "museum",
+      "url": "https://www.visitsealife.com/busan/",
+      "sourceType": "operator's own site (Merlin Entertainments Korea)",
+      "address": "\"48100 부산광역시 해운대구 해운대해변로 266(중동)\"",
+      "operatingEvidence": "Homepage shows \"금일 운영시간: 10:00 - 19:00 (마지막 입장 6시)\" and online advance tickets with up to 31% off; no closure notice.",
+      "hours": "\"10:00 - 19:00 (마지막 입장 6시)\" on the day checked",
+      "confidence": "medium"
+    },
+    {
+      "name": "F1963",
+      "kind": "landmark",
+      "url": "https://www.f1963.org/",
+      "sourceType": "operator's own site",
+      "address": "\"부산광역시 수영구 구락로 123번길 20, F1963 (48212)\"",
+      "operatingEvidence": "Lists Jean-Michel Othoniel \"In the Labyrinth of Love\" \"2026.08.28~2026.12.31\" and a 2026 Chuseok hours notice.",
+      "hours": "Varies by tenant (see individual entries)",
+      "confidence": "high"
+    },
+    {
+      "name": "Terarosa (F1963)",
+      "kind": "cafe",
+      "url": "https://www.f1963.org/",
+      "sourceType": "official site of the F1963 complex that houses it",
+      "address": "\"부산광역시 수영구 구락로 123번길 20, F1963\"",
+      "operatingEvidence": "F1963 lists Terarosa for single-origin coffee and desserts and \"매일 굽는 천연발효빵\" (naturally leavened bread baked daily), alongside 2026-dated complex notices.",
+      "hours": "\"매일 9:00~21:00 (라스트오더 20:30)\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Michael's Urban Farm Table (F1963)",
+      "kind": "meal",
+      "url": "https://www.f1963.org/",
+      "sourceType": "official site of the F1963 complex that houses it",
+      "address": "\"부산광역시 수영구 구락로 123번길 20, F1963\" (4th-floor rooftop)",
+      "operatingEvidence": "Listed as a current F1963 tenant with hours and a break time; closed New Year's Day and Seollal/Chuseok day and the day after.",
+      "hours": "\"평일 11:30~22:00, 주말 11:00~22:00 (라스트오더 21:00)\", break 14:30–17:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Praha993 (F1963)",
+      "kind": "bar",
+      "url": "https://www.f1963.org/",
+      "sourceType": "official site of the F1963 complex that houses it",
+      "address": "\"부산광역시 수영구 구락로 123번길 20, F1963\"",
+      "operatingEvidence": "Listed as a current F1963 tenant, a Czech-style brewery and pub, with daily hours.",
+      "hours": "\"매일 11:00~22:30 (라스트오더 21:30)\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Kukje Gallery Busan (F1963)",
+      "kind": "museum",
+      "url": "https://www.f1963.org/",
+      "sourceType": "official site of the F1963 complex that houses it",
+      "address": "\"부산광역시 수영구 구락로 123번길 20, F1963\"",
+      "operatingEvidence": "Listed as a current F1963 tenant with hours; Monday closing stated.",
+      "hours": "\"화~일 10:00~18:00, 월요일 휴무\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Eobo Jechulso (F1963)",
+      "kind": "meal",
+      "url": "https://www.f1963.org/",
+      "sourceType": "official site of the F1963 complex that houses it",
+      "address": "\"부산광역시 수영구 구락로 123번길 20, F1963\"",
+      "operatingEvidence": "Listed as a current F1963 tenant focused on marinated seafood (해물장), with hours and closing days.",
+      "hours": "\"화~일 11:30~21:00 (라스트오더 19:30)\"; closed Mondays and Seollal/Chuseok day and the day after",
+      "confidence": "medium"
+    },
+    {
+      "name": "Busan Museum of Art",
+      "kind": "museum",
+      "url": "https://art.busan.go.kr/index.nm",
+      "sourceType": "official public operator (Busan Metropolitan City)",
+      "address": "\"부산광역시 해운대구 APEC로 58\"",
+      "operatingEvidence": "Current exhibitions \"안전기지\" and \"이 모든 어제의 미술관에게\"; Busan city's event page (https://www.busan.go.kr/eng/bsevents/1752391) gives the latter \"September 17, 2026-March 14, 2027\" with \"Free admission\".",
+      "hours": "Tuesday–Sunday 10:00–18:00, last entry to main building 17:00; closed Mondays and 1 January (next day if Monday is a holiday)",
+      "confidence": "high"
+    },
+    {
+      "name": "Museum of Contemporary Art Busan",
+      "kind": "museum",
+      "url": "https://www.busan.go.kr/moca/show01",
+      "sourceType": "official public operator (Busan Metropolitan City)",
+      "address": "\"부산광역시 사하구 낙동남로 1191 (하단동)\"",
+      "operatingEvidence": "Homepage shows Sim Jun Seub \"The Circulation of Organs\" \"2026.8.29 ~ 2026.11.1\"; visitor page gives hours and free general admission.",
+      "hours": "\"화-일 10:00-18:00 (17:30 입장마감)\"; closed Mondays and 1 January (next day if Monday is a holiday)",
+      "confidence": "high"
+    },
+    {
+      "name": "Busan Modern and Contemporary History Museum",
+      "kind": "museum",
+      "url": "https://www.busan.go.kr/mmch/index",
+      "sourceType": "official public operator (Busan Metropolitan City)",
+      "address": "\"부산광역시 중구 대청로 104 (대청동 2가)\"",
+      "operatingEvidence": "Permanent-exhibition guided tours from 4 March 2026, Tuesday–Sunday, online registration required, 15 people per session; notice dated 2026-10-28 on limited use of the annex ground floor on 31 October.",
+      "hours": "Tuesday–Sunday 9:00–18:00, last entry 17:00; closed Mondays and 1 January (next day if Monday is a holiday); free",
+      "confidence": "high"
+    },
+    {
+      "name": "Busan Citizens Park History Museum",
+      "kind": "museum",
+      "url": "https://www.busan.go.kr/citizenpark/index",
+      "sourceType": "official public operator (Busan Metropolitan City)",
+      "address": "\"부산광역시 부산진구 시민공원로 73(범전동), 부산시민공원역사관\"",
+      "operatingEvidence": "Notices dated 2026-10-24 and 2026-09-21; a 2026-09-18 notice closes the museum 2–16 November 2026 to install the 2026 special exhibition.",
+      "hours": "Tuesday–Sunday 9:00–18:00; closed Mondays and 1 January; free",
+      "confidence": "high"
+    },
+    {
+      "name": "The View (Signiel Busan)",
+      "kind": "meal",
+      "url": "https://www.lottehotel.com/busan-signiel/ko.html",
+      "sourceType": "operator's own site (Lotte Hotels & Resorts)",
+      "address": "\"부산광역시 해운대구 달맞이길 30\"",
+      "operatingEvidence": "Listed among the hotel's restaurants; hotel promotions dated 2026 such as \"Taste of Autumn\" (stay 2026.09.14–2026.12.01).",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Pastry Salon (Signiel Busan)",
+      "kind": "bakery",
+      "url": "https://www.lottehotel.com/busan-signiel/ko.html",
+      "sourceType": "operator's own site (Lotte Hotels & Resorts)",
+      "address": "\"부산광역시 해운대구 달맞이길 30\"",
+      "operatingEvidence": "Listed as the hotel's bakery and café; 2026-dated promotions on the same page.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Lounge (Signiel Busan)",
+      "kind": "bar",
+      "url": "https://www.lottehotel.com/busan-signiel/ko.html",
+      "sourceType": "operator's own site (Lotte Hotels & Resorts)",
+      "address": "\"부산광역시 해운대구 달맞이길 30\"",
+      "operatingEvidence": "Listed under lounge and bar; 2026-dated promotions on the same page.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "La Seine (Lotte Hotel Busan)",
+      "kind": "meal",
+      "url": "https://www.lottehotel.com/busan-hotel/ko.html",
+      "sourceType": "operator's own site (Lotte Hotels & Resorts)",
+      "address": "\"부산광역시 부산진구 가야대로 772\"",
+      "operatingEvidence": "Described as a buffet with 140+ international dishes; hotel promotions dated 2026 (e.g. NCSI award promotion, stay Oct 7–Dec 20, 2026).",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Momoyama (Lotte Hotel Busan)",
+      "kind": "meal",
+      "url": "https://www.lottehotel.com/busan-hotel/ko.html",
+      "sourceType": "operator's own site (Lotte Hotels & Resorts)",
+      "address": "\"부산광역시 부산진구 가야대로 772\"",
+      "operatingEvidence": "Featured in the \"Fine Omakase Stay\" package (booking Sep 7–Dec 31, 2026) with two Momoyama omakase meals.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Delica Hans (Lotte Hotel Busan)",
+      "kind": "bakery",
+      "url": "https://www.lottehotel.com/busan-hotel/ko.html",
+      "sourceType": "operator's own site (Lotte Hotels & Resorts)",
+      "address": "\"부산광역시 부산진구 가야대로 772\"",
+      "operatingEvidence": "Listed as the hotel's bakery and café selling bread and cakes baked the same day; 2026-dated promotions on the same page.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Lounge & Bar (Lotte Hotel Busan)",
+      "kind": "bar",
+      "url": "https://www.lottehotel.com/busan-hotel/ko.html",
+      "sourceType": "operator's own site (Lotte Hotels & Resorts)",
+      "address": "\"부산광역시 부산진구 가야대로 772\"",
+      "operatingEvidence": "Listed with about 60 drinks, light snacks and two private rooms; open \"from morning until late at night\".",
+      "hours": "\"from morning until late at night\" (no times given)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Aria (Grand Josun Busan)",
+      "kind": "meal",
+      "url": "https://gjb.josunhotel.com/main.do",
+      "sourceType": "operator's own site (Josun Hotels & Resorts)",
+      "address": "\"부산광역시 해운대구 중동 해운대해변로 292\"",
+      "operatingEvidence": "\"Autumn Special with ARIA\" runs 1 September to 30 November 2026.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Palais de Chine (Grand Josun Busan)",
+      "kind": "meal",
+      "url": "https://gjb.josunhotel.com/main.do",
+      "sourceType": "operator's own site (Josun Hotels & Resorts)",
+      "address": "\"부산광역시 해운대구 중동 해운대해변로 292\", 5th floor",
+      "operatingEvidence": "Modern Chinese restaurant, 100 seats, 051-922-5100; autumn course \"금풍옥로\" runs 1 October to 30 November 2026.",
+      "hours": "not published",
+      "confidence": "high"
+    },
+    {
+      "name": "Lounge & Bar Terrace 292 (Grand Josun Busan)",
+      "kind": "bar",
+      "url": "https://gjb.josunhotel.com/main.do",
+      "sourceType": "operator's own site (Josun Hotels & Resorts)",
+      "address": "\"부산광역시 해운대구 중동 해운대해변로 292\"",
+      "operatingEvidence": "Listed among the hotel's current outlets; hotel page carries 2026 notices including lawn works from 20 October to 30 December 2026.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Camellia (The Westin Josun Busan)",
+      "kind": "meal",
+      "url": "https://www.marriott.com/en-us/hotels/puswi-the-westin-josun-busan/dining/",
+      "sourceType": "operator's own site (Marriott International, Westin brand)",
+      "address": "\"67 Dongbaek-Ro, Haeundae, Busan, South Korea, 48100\"",
+      "operatingEvidence": "Hotel dining page lists the international buffet with current meal times for breakfast, lunch and dinner.",
+      "hours": "\"Mon–Fri: 6:30–10:00 AM, 11:30 AM–2:30 PM, 5:30–9:30 PM\"; Sat–Sun breakfast 6:30–10:00 AM plus split lunch and dinner sittings",
+      "confidence": "medium"
+    },
+    {
+      "name": "Panorama Lounge (The Westin Josun Busan)",
+      "kind": "bar",
+      "url": "https://www.marriott.com/en-us/hotels/puswi-the-westin-josun-busan/dining/",
+      "sourceType": "operator's own site (Marriott International, Westin brand)",
+      "address": "\"67 Dongbaek-Ro, Haeundae, Busan, South Korea, 48100\"",
+      "operatingEvidence": "Hotel dining page lists the bar lounge with daily hours.",
+      "hours": "\"Every day, 8:00 AM–12:00 AM\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Josun Deli (The Westin Josun Busan)",
+      "kind": "bakery",
+      "url": "https://www.marriott.com/en-us/hotels/puswi-the-westin-josun-busan/dining/",
+      "sourceType": "operator's own site (Marriott International, Westin brand)",
+      "address": "\"67 Dongbaek-Ro, Haeundae, Busan, South Korea, 48100\"",
+      "operatingEvidence": "Hotel dining page lists it as a bakery and snack shop with daily hours; breakfast offered for a fee.",
+      "hours": "\"Every day, 8:00 AM–10:00 PM\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Sheobul (The Westin Josun Busan)",
+      "kind": "meal",
+      "url": "https://www.marriott.com/en-us/hotels/puswi-the-westin-josun-busan/dining/",
+      "sourceType": "operator's own site (Marriott International, Westin brand)",
+      "address": "\"67 Dongbaek-Ro, Haeundae, Busan, South Korea, 48100\"",
+      "operatingEvidence": "Hotel dining page lists the Korean restaurant with daily hours and an online booking link.",
+      "hours": "\"Every day, 11:30 AM–9:00 PM\"",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Haedong Yonggungsa Temple",
+      "reason": "Official site refused connection (ECONNREFUSED) on two attempts; not bypassed. Not evidence of closure.",
+      "url": "https://www.yongkungsa.or.kr/"
+    },
+    {
+      "name": "Jagalchi Market",
+      "reason": "Official site returned HTTP 520; not bypassed. Not evidence of closure.",
+      "url": "https://www.jagalchimarket.org/"
+    },
+    {
+      "name": "Gamcheon Culture Village",
+      "reason": "Address published (\"사하구 감내2로 203\") but no current operating evidence: latest notices dated 2022.",
+      "url": "https://www.gamcheon.or.kr/"
+    },
+    {
+      "name": "Gwangalli bridge at night",
+      "reason": "A viewpoint activity on a road bridge; no operator visitor page with address and current notice found.",
+      "url": ""
+    },
+    {
+      "name": "National Maritime Museum of Korea",
+      "reason": "Hours published but no street address on the pages read; site states its web service is suspended 26 October–28 December 2026 (website only, not a museum closure).",
+      "url": "https://www.mmk.or.kr/"
+    },
+    {
+      "name": "Busan Museum",
+      "reason": "Fetch failed (connection reset); not bypassed.",
+      "url": "https://museum.busan.go.kr/"
+    },
+    {
+      "name": "Busan X the Sky",
+      "reason": "Page returned no readable content beyond its title.",
+      "url": "https://www.busanxthesky.com/"
+    },
+    {
+      "name": "Busan Cinema Center",
+      "reason": "Page returned no readable content beyond its title.",
+      "url": "https://www.dureraum.org/"
+    },
+    {
+      "name": "Momos Coffee",
+      "reason": "Official site returned HTTP 403; not bypassed.",
+      "url": "https://www.momos.co.kr/"
+    },
+    {
+      "name": "Blackup Coffee",
+      "reason": "Official site shows no branch addresses or store hours; latest notice 2022.",
+      "url": "https://www.blackupcoffee.com/"
+    },
+    {
+      "name": "Park Hyatt Busan (Living Room Bar, Dining Room)",
+      "reason": "Official Hyatt page returned HTTP 403; not bypassed.",
+      "url": "https://www.hyatt.com/park-hyatt/en-US/busph-park-hyatt-busan/dining"
+    },
+    {
+      "name": "Paradise Hotel Busan",
+      "reason": "Page returned no readable content.",
+      "url": "https://www.busanparadisehotel.co.kr/"
+    },
+    {
+      "name": "Busan Tower / Yongdusan Park / Taejongdae",
+      "reason": "Operator site (Busan Facilities Corporation) failed with connection reset; not bypassed.",
+      "url": "https://www.bisco.or.kr/"
+    },
+    {
+      "name": "Coastal walking route",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Jagalchi seafood lunch",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Gwangalli barbecue",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market snacks",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Nampo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Gwangalli",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Haeundae",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Haeundae walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Nampo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Gwangalli",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Gwangalli",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Haeundae Beach",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Haeundae",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Gwangalli bridge at night",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Nampo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Gamcheon Culture Village",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Haeundae evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Nampo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Gwangalli",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Haeundae",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Haeundae Beach",
+      "reason": "generic, not a place (duplicate of Haeundae Beach)",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Nampo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Gwangalli",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Haeundae",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Haeundae Beach",
+      "reason": "generic, not a place (duplicate of Haeundae Beach)",
+      "url": ""
+    },
+    {
+      "name": "Haeundae cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Haedong Yonggungsa Temple",
+      "reason": "generic, not a place (duplicate of Haedong Yonggungsa Temple)",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Gwangalli",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Gwangalli",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Haeundae",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Haeundae",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Nampo bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Haeundae Beach",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Gwangalli",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Haeundae",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Gamcheon Culture Village",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Gwangalli",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Haeundae",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Nampo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Gwangalli",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Haeundae",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Haeundae",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Nampo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Jagalchi Market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Haeundae",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Nampo morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Haeundae Beach",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Gwangalli",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Haeundae",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Nampo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Gwangalli",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Haeundae Beach",
+        "Busan Museum of Art",
+        "F1963",
+        "Busan Air Cruise"
+      ],
+      "bestFirstTimers": [
+        "Haeundae Beach",
+        "Haeundae Blue Line Park",
+        "Busan Air Cruise",
+        "Busan Modern and Contemporary History Museum"
+      ],
+      "bestRestaurants": [
+        "Palais de Chine (Grand Josun Busan)",
+        "Momoyama (Lotte Hotel Busan)",
+        "Michael's Urban Farm Table (F1963)",
+        "Sheobul (The Westin Josun Busan)"
+      ],
+      "bestBudget": [
+        "Busan Museum of Art",
+        "Museum of Contemporary Art Busan",
+        "Busan Modern and Contemporary History Museum",
+        "Busan Citizens Park History Museum"
+      ],
+      "bestLuxury": [
+        "The View (Signiel Busan)",
+        "Aria (Grand Josun Busan)",
+        "La Seine (Lotte Hotel Busan)",
+        "The Lounge (Signiel Busan)"
+      ],
+      "bestCouples": [
+        "Busan Air Cruise",
+        "Panorama Lounge (The Westin Josun Busan)",
+        "Lounge & Bar Terrace 292 (Grand Josun Busan)",
+        "The View (Signiel Busan)"
+      ],
+      "bestKids": [
+        "SEA LIFE Busan Aquarium",
+        "Haeundae Blue Line Park",
+        "Busan Air Cruise",
+        "Haeundae Beach"
+      ],
+      "bestSolo": [
+        "F1963",
+        "Kukje Gallery Busan (F1963)",
+        "Busan Museum of Art",
+        "Terarosa (F1963)"
+      ],
+      "bestUnique": [
+        "F1963",
+        "Haeundae Blue Line Park",
+        "Praha993 (F1963)",
+        "Eobo Jechulso (F1963)"
+      ],
+      "bestBreakfast": [
+        "Camellia (The Westin Josun Busan)",
+        "Terarosa (F1963)",
+        "Josun Deli (The Westin Josun Busan)"
+      ],
+      "bestLunch": [
+        "Michael's Urban Farm Table (F1963)",
+        "Eobo Jechulso (F1963)",
+        "Sheobul (The Westin Josun Busan)",
+        "Palais de Chine (Grand Josun Busan)"
+      ],
+      "bestDinner": [
+        "Momoyama (Lotte Hotel Busan)",
+        "Aria (Grand Josun Busan)",
+        "Palais de Chine (Grand Josun Busan)",
+        "The View (Signiel Busan)"
+      ],
+      "bestCocktails": [
+        "Panorama Lounge (The Westin Josun Busan)",
+        "The Lounge & Bar (Lotte Hotel Busan)",
+        "Lounge & Bar Terrace 292 (Grand Josun Busan)",
+        "The Lounge (Signiel Busan)"
+      ],
+      "bestBakeries": [
+        "Terarosa (F1963)",
+        "Delica Hans (Lotte Hotel Busan)",
+        "Pastry Salon (Signiel Busan)",
+        "Josun Deli (The Westin Josun Busan)"
+      ],
+      "bestCoffee": [
+        "Terarosa (F1963)",
+        "Pastry Salon (Signiel Busan)",
+        "Delica Hans (Lotte Hotel Busan)",
+        "Josun Deli (The Westin Josun Busan)"
+      ]
+    },
+    "queries": {
+      "Haeundae Beach": "Haeundae Beach Haeundaehaebyeon-ro Busan",
+      "Haeundae Blue Line Park": "Haeundae Blue Line Park Mipo Station 13 Dalmaji-gil 62beon-gil Busan",
+      "Busan Air Cruise": "Busan Air Cruise 171 Songdohaebyeon-ro Busan",
+      "SEA LIFE Busan Aquarium": "SEA LIFE Busan Aquarium 266 Haeundaehaebyeon-ro Busan",
+      "F1963": "F1963 20 Gurak-ro 123beon-gil Busan",
+      "Terarosa (F1963)": "Terarosa F1963 20 Gurak-ro 123beon-gil Busan",
+      "Michael's Urban Farm Table (F1963)": "Michael's Urban Farm Table F1963 20 Gurak-ro 123beon-gil Busan",
+      "Praha993 (F1963)": "Praha993 F1963 20 Gurak-ro 123beon-gil Busan",
+      "Kukje Gallery Busan (F1963)": "Kukje Gallery Busan F1963 20 Gurak-ro 123beon-gil Busan",
+      "Eobo Jechulso (F1963)": "Eobo Jechulso F1963 20 Gurak-ro 123beon-gil Busan",
+      "Busan Museum of Art": "Busan Museum of Art 58 APEC-ro Busan",
+      "Museum of Contemporary Art Busan": "Museum of Contemporary Art Busan 1191 Nakdongnam-ro Busan",
+      "Busan Modern and Contemporary History Museum": "Busan Modern and Contemporary History Museum 104 Daecheong-ro Busan",
+      "Busan Citizens Park History Museum": "Busan Citizens Park History Museum 73 Simingongwon-ro Busan",
+      "The View (Signiel Busan)": "Signiel Busan 30 Dalmaji-gil Busan",
+      "Pastry Salon (Signiel Busan)": "Pastry Salon Signiel Busan 30 Dalmaji-gil Busan",
+      "The Lounge (Signiel Busan)": "The Lounge Signiel Busan 30 Dalmaji-gil Busan",
+      "La Seine (Lotte Hotel Busan)": "La Seine Lotte Hotel Busan 772 Gaya-daero Busan",
+      "Momoyama (Lotte Hotel Busan)": "Momoyama Lotte Hotel Busan 772 Gaya-daero Busan",
+      "Delica Hans (Lotte Hotel Busan)": "Delica Hans Lotte Hotel Busan 772 Gaya-daero Busan",
+      "The Lounge & Bar (Lotte Hotel Busan)": "The Lounge & Bar Lotte Hotel Busan 772 Gaya-daero Busan",
+      "Aria (Grand Josun Busan)": "Aria Grand Josun Busan 292 Haeundaehaebyeon-ro Busan",
+      "Palais de Chine (Grand Josun Busan)": "Palais de Chine Grand Josun Busan 292 Haeundaehaebyeon-ro Busan",
+      "Lounge & Bar Terrace 292 (Grand Josun Busan)": "Terrace 292 Grand Josun Busan 292 Haeundaehaebyeon-ro Busan",
+      "Camellia (The Westin Josun Busan)": "Camellia Westin Josun Busan 67 Dongbaek-ro Busan",
+      "Panorama Lounge (The Westin Josun Busan)": "Panorama Lounge Westin Josun Busan 67 Dongbaek-ro Busan",
+      "Josun Deli (The Westin Josun Busan)": "Josun Deli Westin Josun Busan 67 Dongbaek-ro Busan",
+      "Sheobul (The Westin Josun Busan)": "Sheobul Westin Josun Busan 67 Dongbaek-ro Busan"
+    },
+    "summary": "Beaches, a cable car, city museums and a converted factory complex, with breakfast buffets, bakeries, hotel dinners and cocktail lounges checked against their own websites.",
+    "highlights": [
+      "Haeundae Beach",
+      "Busan Museum of Art",
+      "F1963",
+      "Busan Air Cruise"
+    ],
+    "tip": "The Busan Museum of Art, the Museum of Contemporary Art Busan and the Busan Modern and Contemporary History Museum all close on Mondays and 1 January, and on the next day when a Monday is a public holiday, so plan museum days for Tuesday to Sunday.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mondays and 1 January",
+        "copy": "The Busan Museum of Art, the Museum of Contemporary Art Busan and the Busan Modern and Contemporary History Museum close on Mondays and 1 January, and on the next day when a Monday is a public holiday. At F1963, Kukje Gallery Busan and Eobo Jechulso also close on Mondays."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book rides online",
+        "copy": "Busan Air Cruise lists an adult Air Cruise round trip at 19,000 won and stops selling tickets 30 minutes before closing. Haeundae Blue Line Park and SEA LIFE Busan Aquarium both sell tickets on their own sites, and SEA LIFE offers up to 31% off when you book online in advance."
+      },
+      {
+        "label": "Queues and tours",
+        "value": "Pay to skip, register to join",
+        "copy": "Busan Air Cruise sells a no-wait Speedy Cruise at 45,000 won (Air) or 55,000 won (Crystal) per person. The Busan Modern and Contemporary History Museum's permanent-exhibition tours need online registration and take 15 people per session."
+      },
+      {
+        "label": "Rules",
+        "value": "Free entry, documents for exemptions",
+        "copy": "General admission at the Museum of Contemporary Art Busan is free, but some special exhibitions charge, and exemptions for under-7s with a guardian or visitors 65 and over apply only with documents. At Haeundae Beach, between 1 September and 31 May you may not enter the water from 30 minutes after sunset until 30 minutes before sunrise."
+      }
+    ],
+    "dek": "Keep museum days to Tuesday through Sunday, and save Haeundae for the beach train, the aquarium and an evening drink.",
+    "intro": [
+      "This Busan guide is built around the sea and the city's public museums, each checked on its own website. Haeundae Beach is run by the Haeundae-gu Office, whose directions page puts it an eight-minute walk from Exit 5 of Haeundae Station on Line 2. During the non-opening period, from 1 September to 31 May the following year, you may not enter the water from 30 minutes after sunset until 30 minutes before sunrise. East of the beach, Haeundae Blue Line Park runs its beach train from Mipo Station and takes bookings online.",
+      "The Busan Museum of Art on APEC-ro opens Tuesday to Sunday, 10:00 to 18:00, with last entry to the main building at 17:00. Busan city lists its collection exhibition \"Dear All The Yesterdays\" from 17 September 2026 to 14 March 2027, with free admission. The Museum of Contemporary Art Busan in Saha-gu keeps the same hours and makes general admission free, though some special exhibitions charge. In Jung-gu, the free Busan Modern and Contemporary History Museum opens 09:00 to 18:00 and runs permanent-exhibition tours that need online registration and take 15 people.",
+      "F1963, a converted factory complex in Suyeong-gu, gathers several stops at one address. Terarosa there opens daily from 09:00 to 21:00 and bakes naturally leavened bread each day, Praha993 brews Czech-style beer until 22:30, and Michael's Urban Farm Table serves on the fourth-floor rooftop with a break from 14:30 to 17:00. Kukje Gallery Busan and Eobo Jechulso close on Mondays. The complex lists Jean-Michel Othoniel's \"In the Labyrinth of Love\" from 28 August to 31 December 2026.",
+      "For dinners and cocktails, hotel outlets publish the clearest details. The Westin Josun Busan on Dongbaek-ro lists Panorama Lounge daily from 08:00 to midnight, Camellia's buffet breakfast from 06:30 to 10:00, and Josun Deli from 08:00 to 22:00. Grand Josun Busan serves an autumn Chinese course at Palais de Chine until 30 November 2026, and its outdoor lawn is being improved until 30 December 2026. Lotte Hotel Busan pairs La Seine's buffet of more than 140 dishes with Delica Hans, which sells bread and cakes baked the same day."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair Haeundae Beach with the Blue Line Park beach train from Mipo Station, then finish at Panorama Lounge in The Westin Josun Busan."
+      ],
+      [
+        "A slower morning",
+        "Start with breakfast at Camellia or bread at Terarosa (F1963), which opens at 09:00, before an unhurried look round F1963."
+      ],
+      [
+        "Before booking",
+        "Keep museum visits to Tuesday through Sunday, because the Busan Museum of Art, the Museum of Contemporary Art Busan and the Busan Modern and Contemporary History Museum close on Mondays and 1 January."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Haedong Yonggungsa (connection refused), Jagalchi Market (HTTP 520), Busan Museum and the Busan Facilities Corporation site for Busan Tower and Taejongdae (connection reset), Momos Coffee and Park Hyatt Busan (HTTP 403), and Busan X the Sky, Busan Cinema Center and Paradise Hotel Busan (no readable content) could not be read, so they are left out; none of this is evidence of closure. Gamcheon Culture Village showed no notices newer than 2022, and the National Maritime Museum's pages gave hours but no street address while its website is suspended from 26 October to 28 December 2026. Haeundae Beach has directions but no street address on its official page. Hours were not published for Haeundae Blue Line Park or the Signiel Busan, Lotte Hotel Busan and Grand Josun Busan outlets; Busan Air Cruise and SEA LIFE showed only that day's hours. F1963 tenants were confirmed through the complex's own site, and The Westin Josun Busan outlets through Marriott's hotel page, which carried no dated 2026 notices. The Busan Citizens Park History Museum is closed from 2 to 16 November 2026 to install a new exhibition.",
+  "injectionLikeText": []
+}

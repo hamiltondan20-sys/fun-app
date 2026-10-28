@@ -5,6 +5,622 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Busan, South Korea": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-28",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Haedong Yonggungsa (connection refused), Jagalchi Market (HTTP 520), Busan Museum and the Busan Facilities Corporation site for Busan Tower and Taejongdae (connection reset), Momos Coffee and Park Hyatt Busan (HTTP 403), and Busan X the Sky, Busan Cinema Center and Paradise Hotel Busan (no readable content) could not be read, so they are left out; none of this is evidence of closure. Gamcheon Culture Village showed no notices newer than 2022, and the National Maritime Museum's pages gave hours but no street address while its website is suspended from 26 October to 28 December 2026. Haeundae Beach has directions but no street address on its official page. Hours were not published for Haeundae Blue Line Park or the Signiel Busan, Lotte Hotel Busan and Grand Josun Busan outlets; Busan Air Cruise and SEA LIFE showed only that day's hours. F1963 tenants were confirmed through the complex's own site, and The Westin Josun Busan outlets through Marriott's hotel page, which carried no dated 2026 notices. The Busan Citizens Park History Museum is closed from 2 to 16 November 2026 to install a new exhibition.",
+    "sourceUrls": [
+      "docs/content-research/busan-2026-10-28.md",
+      "docs/content-research/busan-2026-10-28.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Haedong Yonggungsa Temple",
+        "url": "https://www.yongkungsa.or.kr/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site refused connection (ECONNREFUSED) on two attempts; not bypassed. Not evidence of closure."
+      },
+      {
+        "name": "Jagalchi Market",
+        "url": "https://www.jagalchimarket.org/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site returned HTTP 520; not bypassed. Not evidence of closure."
+      },
+      {
+        "name": "Gamcheon Culture Village",
+        "url": "https://www.gamcheon.or.kr/",
+        "checkedOn": "2026-10-28",
+        "reason": "Address published (\"사하구 감내2로 203\") but no current operating evidence: latest notices dated 2022."
+      },
+      {
+        "name": "Gwangalli bridge at night",
+        "checkedOn": "2026-10-28",
+        "reason": "A viewpoint activity on a road bridge; no operator visitor page with address and current notice found."
+      },
+      {
+        "name": "National Maritime Museum of Korea",
+        "url": "https://www.mmk.or.kr/",
+        "checkedOn": "2026-10-28",
+        "reason": "Hours published but no street address on the pages read; site states its web service is suspended 26 October–28 December 2026 (website only, not a museum closure)."
+      },
+      {
+        "name": "Busan Museum",
+        "url": "https://museum.busan.go.kr/",
+        "checkedOn": "2026-10-28",
+        "reason": "Fetch failed (connection reset); not bypassed."
+      },
+      {
+        "name": "Busan X the Sky",
+        "url": "https://www.busanxthesky.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Page returned no readable content beyond its title."
+      },
+      {
+        "name": "Busan Cinema Center",
+        "url": "https://www.dureraum.org/",
+        "checkedOn": "2026-10-28",
+        "reason": "Page returned no readable content beyond its title."
+      },
+      {
+        "name": "Momos Coffee",
+        "url": "https://www.momos.co.kr/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site returned HTTP 403; not bypassed."
+      },
+      {
+        "name": "Blackup Coffee",
+        "url": "https://www.blackupcoffee.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site shows no branch addresses or store hours; latest notice 2022."
+      },
+      {
+        "name": "Park Hyatt Busan (Living Room Bar, Dining Room)",
+        "url": "https://www.hyatt.com/park-hyatt/en-US/busph-park-hyatt-busan/dining",
+        "checkedOn": "2026-10-28",
+        "reason": "Official Hyatt page returned HTTP 403; not bypassed."
+      },
+      {
+        "name": "Paradise Hotel Busan",
+        "url": "https://www.busanparadisehotel.co.kr/",
+        "checkedOn": "2026-10-28",
+        "reason": "Page returned no readable content."
+      },
+      {
+        "name": "Busan Tower / Yongdusan Park / Taejongdae",
+        "url": "https://www.bisco.or.kr/",
+        "checkedOn": "2026-10-28",
+        "reason": "Operator site (Busan Facilities Corporation) failed with connection reset; not bypassed."
+      },
+      {
+        "name": "Coastal walking route",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Jagalchi seafood lunch",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Gwangalli barbecue",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market snacks",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Nampo",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Gwangalli",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Haeundae",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Haeundae walk",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Nampo",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Gwangalli",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Gwangalli",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Haeundae Beach",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Haeundae",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Gwangalli bridge at night",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Nampo",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Gamcheon Culture Village",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Haeundae evening",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Nampo",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Gwangalli",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Haeundae",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Haeundae Beach",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place (duplicate of Haeundae Beach)"
+      },
+      {
+        "name": "Easy outing around Nampo",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Gwangalli",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Haeundae",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Haeundae Beach",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place (duplicate of Haeundae Beach)"
+      },
+      {
+        "name": "Haeundae cafe or market",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Haedong Yonggungsa Temple",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place (duplicate of Haedong Yonggungsa Temple)"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Gwangalli",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Gwangalli",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Haeundae",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Haeundae",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Nampo bakery or market",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Haeundae Beach",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Gwangalli",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Haeundae",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Gamcheon Culture Village",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Gwangalli",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Haeundae",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Nampo",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Gwangalli",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Haeundae",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Haeundae",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Nampo",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Jagalchi Market",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Haeundae",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Nampo morning market",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Haeundae Beach",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Gwangalli",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Haeundae",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Nampo",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Gwangalli",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Haeundae Beach": {
+        "url": "https://www.haeundae.go.kr/tour/index.do?menuCd=DOM_000000302001003000",
+        "sourceType": "official public operator (Haeundae-gu Office)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "District tour page dated 2026-10-29 lists 물놀이 as \"가능\"; usage page gives the 2026 season \"2026.6.26.~9.15.(82일간)\" and the off-season rule \"해수욕장 비개장기간(09.01 ~ 익년 05.31.)\" with no swimming from 30 minutes after sunset to 30 minutes before sunrise."
+      },
+      "Haeundae Blue Line Park": {
+        "url": "https://www.bluelinepark.com/tourFacilityList.do",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Homepage shows \"정상운행중\" with an online \"예매하기\" booking link; notices dated 2026-10-13 (extended night running of the beach train and sky capsule for the Busan Fireworks Festival) and 2026-10-28."
+      },
+      "Busan Air Cruise": {
+        "url": "https://www.busanaircruise.co.kr/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Live hours and fares on the homepage, plus notices dated 2026-10-20 (parking restrictions on 1 November) and 2026-09-16 (Chuseok extended hours). Round trip Air Cruise 19,000 won adult; Crystal Cruise 24,000 won adult."
+      },
+      "SEA LIFE Busan Aquarium": {
+        "url": "https://www.visitsealife.com/busan/",
+        "sourceType": "operator's own site (Merlin Entertainments Korea)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Homepage shows \"금일 운영시간: 10:00 - 19:00 (마지막 입장 6시)\" and online advance tickets with up to 31% off; no closure notice."
+      },
+      "F1963": {
+        "url": "https://www.f1963.org/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Lists Jean-Michel Othoniel \"In the Labyrinth of Love\" \"2026.08.28~2026.12.31\" and a 2026 Chuseok hours notice."
+      },
+      "Terarosa (F1963)": {
+        "url": "https://www.f1963.org/",
+        "sourceType": "official site of the F1963 complex that houses it",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "F1963 lists Terarosa for single-origin coffee and desserts and \"매일 굽는 천연발효빵\" (naturally leavened bread baked daily), alongside 2026-dated complex notices."
+      },
+      "Michael's Urban Farm Table (F1963)": {
+        "url": "https://www.f1963.org/",
+        "sourceType": "official site of the F1963 complex that houses it",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Listed as a current F1963 tenant with hours and a break time; closed New Year's Day and Seollal/Chuseok day and the day after."
+      },
+      "Praha993 (F1963)": {
+        "url": "https://www.f1963.org/",
+        "sourceType": "official site of the F1963 complex that houses it",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Listed as a current F1963 tenant, a Czech-style brewery and pub, with daily hours."
+      },
+      "Kukje Gallery Busan (F1963)": {
+        "url": "https://www.f1963.org/",
+        "sourceType": "official site of the F1963 complex that houses it",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Listed as a current F1963 tenant with hours; Monday closing stated."
+      },
+      "Eobo Jechulso (F1963)": {
+        "url": "https://www.f1963.org/",
+        "sourceType": "official site of the F1963 complex that houses it",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Listed as a current F1963 tenant focused on marinated seafood (해물장), with hours and closing days."
+      },
+      "Busan Museum of Art": {
+        "url": "https://art.busan.go.kr/index.nm",
+        "sourceType": "official public operator (Busan Metropolitan City)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Current exhibitions \"안전기지\" and \"이 모든 어제의 미술관에게\"; Busan city's event page (https://www.busan.go.kr/eng/bsevents/1752391) gives the latter \"September 17, 2026-March 14, 2027\" with \"Free admission\"."
+      },
+      "Museum of Contemporary Art Busan": {
+        "url": "https://www.busan.go.kr/moca/show01",
+        "sourceType": "official public operator (Busan Metropolitan City)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Homepage shows Sim Jun Seub \"The Circulation of Organs\" \"2026.8.29 ~ 2026.11.1\"; visitor page gives hours and free general admission."
+      },
+      "Busan Modern and Contemporary History Museum": {
+        "url": "https://www.busan.go.kr/mmch/index",
+        "sourceType": "official public operator (Busan Metropolitan City)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Permanent-exhibition guided tours from 4 March 2026, Tuesday–Sunday, online registration required, 15 people per session; notice dated 2026-10-28 on limited use of the annex ground floor on 31 October."
+      },
+      "Busan Citizens Park History Museum": {
+        "url": "https://www.busan.go.kr/citizenpark/index",
+        "sourceType": "official public operator (Busan Metropolitan City)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Notices dated 2026-10-24 and 2026-09-21; a 2026-09-18 notice closes the museum 2–16 November 2026 to install the 2026 special exhibition."
+      },
+      "The View (Signiel Busan)": {
+        "url": "https://www.lottehotel.com/busan-signiel/ko.html",
+        "sourceType": "operator's own site (Lotte Hotels & Resorts)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Listed among the hotel's restaurants; hotel promotions dated 2026 such as \"Taste of Autumn\" (stay 2026.09.14–2026.12.01)."
+      },
+      "Pastry Salon (Signiel Busan)": {
+        "url": "https://www.lottehotel.com/busan-signiel/ko.html",
+        "sourceType": "operator's own site (Lotte Hotels & Resorts)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Listed as the hotel's bakery and café; 2026-dated promotions on the same page."
+      },
+      "The Lounge (Signiel Busan)": {
+        "url": "https://www.lottehotel.com/busan-signiel/ko.html",
+        "sourceType": "operator's own site (Lotte Hotels & Resorts)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Listed under lounge and bar; 2026-dated promotions on the same page."
+      },
+      "La Seine (Lotte Hotel Busan)": {
+        "url": "https://www.lottehotel.com/busan-hotel/ko.html",
+        "sourceType": "operator's own site (Lotte Hotels & Resorts)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Described as a buffet with 140+ international dishes; hotel promotions dated 2026 (e.g. NCSI award promotion, stay Oct 7–Dec 20, 2026)."
+      },
+      "Momoyama (Lotte Hotel Busan)": {
+        "url": "https://www.lottehotel.com/busan-hotel/ko.html",
+        "sourceType": "operator's own site (Lotte Hotels & Resorts)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Featured in the \"Fine Omakase Stay\" package (booking Sep 7–Dec 31, 2026) with two Momoyama omakase meals."
+      },
+      "Delica Hans (Lotte Hotel Busan)": {
+        "url": "https://www.lottehotel.com/busan-hotel/ko.html",
+        "sourceType": "operator's own site (Lotte Hotels & Resorts)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Listed as the hotel's bakery and café selling bread and cakes baked the same day; 2026-dated promotions on the same page."
+      },
+      "The Lounge & Bar (Lotte Hotel Busan)": {
+        "url": "https://www.lottehotel.com/busan-hotel/ko.html",
+        "sourceType": "operator's own site (Lotte Hotels & Resorts)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Listed with about 60 drinks, light snacks and two private rooms; open \"from morning until late at night\"."
+      },
+      "Aria (Grand Josun Busan)": {
+        "url": "https://gjb.josunhotel.com/main.do",
+        "sourceType": "operator's own site (Josun Hotels & Resorts)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "\"Autumn Special with ARIA\" runs 1 September to 30 November 2026."
+      },
+      "Palais de Chine (Grand Josun Busan)": {
+        "url": "https://gjb.josunhotel.com/main.do",
+        "sourceType": "operator's own site (Josun Hotels & Resorts)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Modern Chinese restaurant, 100 seats, 051-922-5100; autumn course \"금풍옥로\" runs 1 October to 30 November 2026."
+      },
+      "Lounge & Bar Terrace 292 (Grand Josun Busan)": {
+        "url": "https://gjb.josunhotel.com/main.do",
+        "sourceType": "operator's own site (Josun Hotels & Resorts)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Listed among the hotel's current outlets; hotel page carries 2026 notices including lawn works from 20 October to 30 December 2026."
+      },
+      "Camellia (The Westin Josun Busan)": {
+        "url": "https://www.marriott.com/en-us/hotels/puswi-the-westin-josun-busan/dining/",
+        "sourceType": "operator's own site (Marriott International, Westin brand)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Hotel dining page lists the international buffet with current meal times for breakfast, lunch and dinner."
+      },
+      "Panorama Lounge (The Westin Josun Busan)": {
+        "url": "https://www.marriott.com/en-us/hotels/puswi-the-westin-josun-busan/dining/",
+        "sourceType": "operator's own site (Marriott International, Westin brand)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Hotel dining page lists the bar lounge with daily hours."
+      },
+      "Josun Deli (The Westin Josun Busan)": {
+        "url": "https://www.marriott.com/en-us/hotels/puswi-the-westin-josun-busan/dining/",
+        "sourceType": "operator's own site (Marriott International, Westin brand)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Hotel dining page lists it as a bakery and snack shop with daily hours; breakfast offered for a fee."
+      },
+      "Sheobul (The Westin Josun Busan)": {
+        "url": "https://www.marriott.com/en-us/hotels/puswi-the-westin-josun-busan/dining/",
+        "sourceType": "operator's own site (Marriott International, Westin brand)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Hotel dining page lists the Korean restaurant with daily hours and an online booking link."
+      }
+    }
+  },
   "Mumbai, India": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-28",
