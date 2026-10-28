@@ -6791,4 +6791,111 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 27, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Granada, Spain: source review of 2026-10-27 (docs/content-research/granada-2026-10-27.md).
+  {
+    const cityKey = "Granada, Spain";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Alhambra","Capilla Real","Catedral de Granada","Museo Cuevas del Sacromonte"],
+      bestFirstTimers: ["Alhambra","Catedral de Granada","Capilla Real","Jardines de Zoraya"],
+      bestRestaurants: ["Carmen de San Miguel","Damasqueros","Restaurante El Agua","Chikito"],
+      bestBudget: ["Los Manueles (Reyes Católicos)","Museo CajaGranada Memoria de Andalucía","Museo Cuevas del Sacromonte","Palacio de la Madraza"],
+      bestLuxury: ["Carmen de San Miguel","Damasqueros","Hammam Al Ándalus (Granada)","Fundación Rodríguez-Acosta"],
+      bestCouples: ["Mirador de Morayma","Hammam Al Ándalus (Granada)","Restaurante El Agua","B-Heaven (Barceló Carmen Granada)"],
+      bestKids: ["Parque de las Ciencias","Alhambra","Museo Cuevas del Sacromonte","Café Futbol"],
+      bestSolo: ["Palacio de la Madraza","Centro Federico García Lorca","Despiertoo (Jáudenes)","Monasterio de la Cartuja"],
+      bestUnique: ["Hammam Al Ándalus (Granada)","Cueva de la Rocío","Fundación Rodríguez-Acosta","Basílica de San Juan de Dios"],
+      bestBreakfast: ["Café Futbol","Malamiga (San Antón)","Despiertoo (Jáudenes)"],
+      bestLunch: ["Los Manueles (Reyes Católicos)","Chikito","Mirador de Morayma","El Huerto de Juan Ranas"],
+      bestDinner: ["Restaurante El Agua","Mirador de Morayma","Damasqueros","Jardines de Zoraya"],
+      bestCocktails: ["B-Heaven (Barceló Carmen Granada)","Bohemia Jazz Café","El Huerto de Juan Ranas"],
+      bestBakeries: ["Malamiga (San Antón)"],
+      bestCoffee: ["Despiertoo (Jáudenes)","Malamiga (San Antón)","Café Futbol"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Alhambra": "Alhambra Calle Real de la Alhambra Granada",
+      "Capilla Real": "Capilla Real Calle Oficios Granada",
+      "Catedral de Granada": "Catedral de Granada Gran Vía de Colón 5 Granada",
+      "Museo Cuevas del Sacromonte": "Museo Cuevas del Sacromonte Barranco de los Negros Granada",
+      "Jardines de Zoraya": "Jardines de Zoraya Calle Panaderos 32 Granada",
+      "Carmen de San Miguel": "Carmen de San Miguel Plaza Torres Bermejas 3 Granada",
+      "Damasqueros": "Damasqueros Calle Damasqueros 3 Granada",
+      "Restaurante El Agua": "Restaurante El Agua Placeta del Aljibe de Trillo 7 Granada",
+      "Chikito": "Chikito Plaza del Campillo 9 Granada",
+      "Los Manueles (Reyes Católicos)": "Los Manueles Calle Reyes Católicos 61 Granada",
+      "Museo CajaGranada Memoria de Andalucía": "Museo CajaGranada Avenida de la Ciencia 2 Granada",
+      "Palacio de la Madraza": "Palacio de la Madraza Calle Oficios 14 Granada",
+      "Hammam Al Ándalus (Granada)": "Hammam Al Ándalus Calle Santa Ana 16 Granada",
+      "Fundación Rodríguez-Acosta": "Fundación Rodríguez-Acosta Callejón Niños del Rollo 8 Granada",
+      "Mirador de Morayma": "Mirador de Morayma Calle Pianista García Carillo 2 Granada",
+      "B-Heaven (Barceló Carmen Granada)": "B-Heaven Barceló Carmen Acera del Darro 62 Granada",
+      "Parque de las Ciencias": "Parque de las Ciencias Avenida de la Ciencia Granada",
+      "Café Futbol": "Café Futbol Plaza de Mariana Pineda 6 Granada",
+      "Centro Federico García Lorca": "Centro Federico García Lorca Plaza de la Romanilla Granada",
+      "Despiertoo (Jáudenes)": "Despiertoo Calle Jáudenes 4 Granada",
+      "Monasterio de la Cartuja": "Monasterio de la Cartuja Paseo de Cartuja Granada",
+      "Cueva de la Rocío": "Cueva de la Rocío Camino del Sacromonte 70 Granada",
+      "Basílica de San Juan de Dios": "Basílica de San Juan de Dios Calle San Juan de Dios 17 Granada",
+      "Malamiga (San Antón)": "Malamiga Calle San Antón 16 Granada",
+      "El Huerto de Juan Ranas": "El Huerto de Juan Ranas Calle Atarazana Vieja 6 Granada",
+      "Bohemia Jazz Café": "Bohemia Jazz Café Plaza de los Lobos 11 Granada"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Granada" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "The Alhambra, the cathedral quarter, Sacromonte caves and Albaicín flamenco, with restaurants, cafés, a bakery and drinks terraces checked against their own websites.";
+    cityGuide.highlights = ["Alhambra","Capilla Real","Catedral de Granada","Museo Cuevas del Sacromonte"];
+    cityGuide.tip = "Buy Alhambra tickets in advance and collect them at least an hour before the Nasrid Palaces time printed on your ticket, because entry is only allowed at that time.";
+    data.destinationFacts[cityKey] = "Buy Alhambra tickets in advance and collect them at least an hour before the Nasrid Palaces time printed on your ticket, because entry is only allowed at that time.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "The Alhambra, the cathedral quarter, Sacromonte caves and Albaicín flamenco, with restaurants, cafés, a bakery and drinks terraces checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays and Sundays",
+        "copy": "Parque de las Ciencias and the Centro Federico García Lorca close on Mondays, and Mirador de Morayma and Carmen de San Miguel close on both Sundays and Mondays. Chikito closes on Wednesdays."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Timed Alhambra entry",
+        "copy": "The Alhambra limits advance sales to 10 tickets per person and card per month, and you must enter the Nasrid Palaces at the time on your ticket. Fundación Rodríguez-Acosta tickets are also for a set time and are not valid once that time has passed."
+      },
+      {
+        "label": "Walk-in policies",
+        "value": "Book ahead",
+        "copy": "Hammam Al Ándalus requires advance booking, recommends 2 to 3 days' notice, and charges in full for changes made less than 48 hours ahead. El Huerto de Juan Ranas takes reservations for its terrace online only."
+      },
+      {
+        "label": "Rules",
+        "value": "Bags, swimwear, ID",
+        "copy": "At Fundación Rodríguez-Acosta you leave backpacks and large bags at reception, and interior photography is not allowed. Hammam Al Ándalus requires a swimsuit, and at the Alhambra the person who booked collects machine tickets with their ID and the card used to pay."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Fix your Alhambra slot first, then plan the cathedral quarter and the Albaicín around the Monday and Sunday closures.",
+      intro: [
+        "The Alhambra shapes most visits to Granada, and its own site sets out the rules. In the winter period, from 15 October to 31 March, daytime visits run every day from 08:30 to 18:00, and evening visits run on Friday and Saturday from 20:00 to 21:30. You must enter the Nasrid Palaces at the time printed on your ticket, and the Patronato recommends buying early because demand is high. Children under 12 go free, but their tickets must be bought at the same time as everyone else's. The site closes only on 25 December and 1 January.",
+        "In the centre, the Cathedral and the Capilla Real stand side by side, and both sites ask you to confirm hours before you go. The Capilla Real opens daily except Good Friday, 25 December and 1 January. On the same street, the Palacio de la Madraza is open Monday to Friday from 09:00 to 21:00, and its exhibition on Arab and Islamic scientific heritage, La casa de la ciencia, runs until 22 December 2026. Near the Alhambra, Fundación Rodríguez-Acosta sells timed tickets, asks you to leave large bags at reception and does not allow photography indoors.",
+        "In Sacromonte, the Museo Cuevas del Sacromonte keeps winter hours from 26 October, opening every day from 10:00 to 18:00, with general entry at 6 euros. Hammam Al Ándalus on Calle Santa Ana requires advance booking and a swimsuit, and its sessions last 90 minutes including massage time. For flamenco, Jardines de Zoraya in the Albaicín stages shows at 18:00, 20:00 and 22:30, and children under seven go free. Cueva de la Rocío on Camino del Sacromonte offers shows with a drink or with dinner. If you are travelling with children, Parque de las Ciencias is closed on Mondays.",
+        "Plan your meals around closing days. Carmen de San Miguel and Mirador de Morayma close on Sundays and Mondays, Chikito closes on Wednesdays, and Damasqueros serves only lunch on Sundays and closes on Mondays. Restaurante El Agua in the Albaicín serves lunch and dinner every day, and Los Manueles on Reyes Católicos keeps its kitchen open from noon to midnight. For mornings, Café Futbol opens at 08:00, Despiertoo has cafés on Calle Jáudenes and Gran Vía, and Malamiga bakes sourdough and croissants. B-Heaven, the rooftop at Barceló Carmen, serves cocktails from 15:00 to 21:00."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Book a timed Alhambra ticket, then spend a second day on the Cathedral, the Capilla Real and the Palacio de la Madraza on Calle Oficios."
+        ],
+        [
+          "A slower morning",
+          "Start with coffee at Despiertoo or a croissant at Malamiga, then walk up to the Museo Cuevas del Sacromonte, which opens at 10:00."
+        ],
+        [
+          "Before booking",
+          "Check closing days: Parque de las Ciencias closes on Mondays, and Carmen de San Miguel and Mirador de Morayma close on Sundays and Mondays."
+        ]
+      ],
+      trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on October 27, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

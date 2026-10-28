@@ -5,6 +5,711 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Granada, Spain": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-27",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several confirmed places published only partial information: the Catedral, Capilla Real and Basílica de San Juan de Dios showed only special or holiday hours, Monasterio de la Cartuja, Hammam Al Ándalus and Fundación Rodríguez-Acosta published no weekly hours, and Café Futbol, Malamiga, Bohemia Jazz Café, El Huerto de Juan Ranas and Cueva de la Rocío showed no 2026-dated content beyond published hours or bookings. The Museo Cuevas del Sacromonte gives its location only as Barranco de los Negros, and its www host had a certificate error, so the apex domain was read. The Centro Federico García Lorca homepage carries an unrelated gambling-app link, which suggests third-party spam on the site. Sites that could not be read include the Museo de Bellas Artes (Junta de Andalucía), Parador de Granada, Hotel Alhambra Palace, Casa Ysla, La Fábula, Puesto 43, Ruta del Azafrán and the Ayuntamiento de Granada monuments pages. The Generalife gardens exhibition at the Palacio de Carlos V ended on 24 May 2026.",
+    "sourceUrls": [
+      "docs/content-research/granada-2026-10-27.md",
+      "docs/content-research/granada-2026-10-27.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Albaicin",
+        "checkedOn": "2026-10-27",
+        "reason": "district, not a single operated place; covered through specific Albaicín venues"
+      },
+      {
+        "name": "Mirador de San Nicolas",
+        "url": "https://www.granada.org/inet/wmonumentos.nsf",
+        "checkedOn": "2026-10-27",
+        "reason": "public viewpoint with no operator page; Ayuntamiento de Granada site (granada.org) returned HTTP 403"
+      },
+      {
+        "name": "Alhambra timed visit",
+        "checkedOn": "2026-10-27",
+        "reason": "duplicate of Alhambra (confirmed)"
+      },
+      {
+        "name": "Huerta de San Vicente",
+        "url": "https://huertadesanvicente.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "www host had a certificate error; the apex site publishes winter hours but no address"
+      },
+      {
+        "name": "Abadía del Sacromonte",
+        "url": "https://www.abadiasacromonte.org/",
+        "checkedOn": "2026-10-27",
+        "reason": "address published but no current operating evidence (newest news 2023; only footer © 2026)"
+      },
+      {
+        "name": "Corral del Carbón",
+        "url": "https://www.alhambra-patronato.es/descubrir/monumentos-andalusies/corral-del-carbon",
+        "checkedOn": "2026-10-27",
+        "reason": "Patronato page gives hours but no street address for the monument itself"
+      },
+      {
+        "name": "El Bañuelo",
+        "url": "https://www.alhambra-patronato.es/descubrir/monumentos-andalusies/el-banuelo",
+        "checkedOn": "2026-10-27",
+        "reason": "Patronato page gives hours but no street address for the monument itself"
+      },
+      {
+        "name": "Palacio de Dar al-Horra",
+        "url": "https://www.alhambra-patronato.es/descubrir/monumentos-andalusies/palacio-de-dar-al-horra",
+        "checkedOn": "2026-10-27",
+        "reason": "Patronato page gives hours but no street address (map only)"
+      },
+      {
+        "name": "Museo de Bellas Artes de Granada",
+        "url": "https://www.museosdeandalucia.es/web/museodebellasartesdegranada",
+        "checkedOn": "2026-10-27",
+        "reason": "official Junta de Andalucía site: certificate error (unable to verify the first certificate)"
+      },
+      {
+        "name": "Parador de Granada",
+        "url": "https://paradores.es/es/paradores/parador-de-granada",
+        "checkedOn": "2026-10-27",
+        "reason": "official site: certificate error (unable to verify the first certificate)"
+      },
+      {
+        "name": "Hotel Alhambra Palace",
+        "url": "https://www.h-alhambrapalace.es/",
+        "checkedOn": "2026-10-27",
+        "reason": "official site did not resolve (DNS EAI_AGAIN) on three attempts"
+      },
+      {
+        "name": "Los Diamantes",
+        "url": "https://losdiamantes.es/",
+        "checkedOn": "2026-10-27",
+        "reason": "official site lists branches but no branch addresses or hours"
+      },
+      {
+        "name": "Rey Fernando (Reyes Católicos)",
+        "url": "https://pionono.eu/",
+        "checkedOn": "2026-10-27",
+        "reason": "address published but no current operating evidence (site copyright 2016)"
+      },
+      {
+        "name": "Casa Ysla",
+        "url": "https://www.casaysla.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "official site: TLS error (TLSV1_ALERT_INTERNAL_ERROR)"
+      },
+      {
+        "name": "Casa Pasteles",
+        "url": "https://www.casapasteles.es/",
+        "checkedOn": "2026-10-27",
+        "reason": "official site shows no address or hours in readable text; contact page 404"
+      },
+      {
+        "name": "Estapallorarle",
+        "url": "https://estapallorarle.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "made-to-order shop; no hours or current dated content"
+      },
+      {
+        "name": "Pastelería López-Mezquita",
+        "checkedOn": "2026-10-27",
+        "reason": "no official website found (guessed domains did not resolve)"
+      },
+      {
+        "name": "Ruta del Azafrán",
+        "url": "https://www.rutadelazafran.es/",
+        "checkedOn": "2026-10-27",
+        "reason": "official site: connection refused"
+      },
+      {
+        "name": "La Fábula Restaurante",
+        "url": "https://www.restaurantelafabula.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "official site: TLS error (TLSV1_ALERT_UNRECOGNIZED_NAME)"
+      },
+      {
+        "name": "Restaurante Arrayanes",
+        "url": "https://www.rest-arrayanes.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "official site returned nothing readable"
+      },
+      {
+        "name": "Puesto 43",
+        "url": "https://www.puesto43.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "official site: certificate has expired"
+      },
+      {
+        "name": "Restaurante Oliver",
+        "url": "https://www.restauranteoliver.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "domain redirects to an unrelated travel blog"
+      },
+      {
+        "name": "Carmen de Aben Humeya",
+        "url": "https://www.carmenabenhumeya.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "official domain did not resolve (ENOTFOUND)"
+      },
+      {
+        "name": "Bodegas Castañeda",
+        "checkedOn": "2026-10-27",
+        "reason": "no official website found"
+      },
+      {
+        "name": "Gran Café Bib-Rambla",
+        "checkedOn": "2026-10-27",
+        "reason": "no official website found"
+      },
+      {
+        "name": "La Finca Coffee",
+        "url": "https://lafincacoffee.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "lafincacoffee.com redirects to a domain-sale page; other domain returned HTTP 429"
+      },
+      {
+        "name": "Noat Coffee",
+        "url": "https://www.noatcoffee.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "official domain did not resolve (ENOTFOUND)"
+      },
+      {
+        "name": "Monasterio de San Jerónimo",
+        "checkedOn": "2026-10-27",
+        "reason": "official site not found (guessed domain did not resolve)"
+      },
+      {
+        "name": "Palacio de los Olvidados",
+        "url": "https://palaciodelosolvidados.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "official site: certificate hostname mismatch"
+      },
+      {
+        "name": "Mercado de San Agustín",
+        "checkedOn": "2026-10-27",
+        "reason": "no official operator page found; municipal site returned HTTP 403"
+      },
+      {
+        "name": "Sacromonte sunset",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Hammam afternoon",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "a tapas evening",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Granada market or cafe",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local dinner in Albaicin",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Realejo",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Centro",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Albaicin",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Albaicin walk",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Realejo",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Centro",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Centro",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Alhambra",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Albaicin",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Alhambra timed visit",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Realejo",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Albaicin",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Albaicin evening",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Realejo",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Centro",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Albaicin",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Alhambra",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Realejo",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Centro",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Albaicin",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Alhambra",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Albaicin cafe or market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Sacromonte sunset",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Centro",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Centro",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Albaicin",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Albaicin",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Realejo bakery or market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Alhambra",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Centro",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Albaicin",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Albaicin",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Centro",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Albaicin",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Realejo",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Centro",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Albaicin",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Albaicin",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Realejo",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Mirador de San Nicolas",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Albaicin",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Realejo morning market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Alhambra",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Centro",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Albaicin",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Realejo",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Centro",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Alhambra": {
+        "url": "https://www.alhambra-patronato.es/visitar/horarios",
+        "sourceType": "official public operator (Patronato de la Alhambra y Generalife)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Current notices: the Alcazaba “reabrirá al público” from 23 September with an adapted itinerary; Dar al-Horra and Horno de Oro reopen from Saturday 24 October. Online ticket sales and advance sale are live; the tariff page cites the Orden de 17 de julio de 2025 (Visita Diurna General 22.27 €)."
+      },
+      "Catedral de Granada": {
+        "url": "https://catedraldegranada.com/precios-horarios-de-la-visita/",
+        "sourceType": "operator's own site (Santa Iglesia Catedral Metropolitana de la Encarnación)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Ticket purchase and free-entry booking links are live; the hours page lists special hours for 4 Dec–6 Jan and asks “ROGAMOS QUE CONFIRMEN HORARIOS PREVIAMENTE A LA VISITA”; footer © 2026."
+      },
+      "Capilla Real": {
+        "url": "https://capillarealgranada.com/",
+        "sourceType": "operator's own site (Capilla Real de Granada)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "News dated October 2026, including a 24 Oct visit and a 9 Oct MUSAG concert; online tickets via ticketsgranadacristiana.com. Visits run “diaria, excepto tres días”."
+      },
+      "Parque de las Ciencias": {
+        "url": "https://www.parqueciencias.com/",
+        "sourceType": "operator's own site (public science museum consortium)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Current temporary exhibitions listed (“Frío y calor”, “BioInspiración”, “Cazadores de dragones”); a 2026 notice on the BioDomo renovation and a July 2026 press item. Museo ticket 10,00 €, reduced 8,00 € for under-18s and over-65s."
+      },
+      "Hammam Al Ándalus (Granada)": {
+        "url": "https://granada.hammamalandalus.com/faqs/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Live online booking system; FAQ says “Es necesario realizar reserva previa, ya que las plazas son limitadas” and rules page says sessions last “90 minutos, incluyendo el tiempo de masaje”."
+      },
+      "Museo Cuevas del Sacromonte": {
+        "url": "https://sacromontegranada.com/horarios-tipos-visita/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Hours page gives a winter season from 26 Oct to 28 Mar; general entry “6€” bookable online; menu lists “II edicion cine flamenco 2026”; footer © 2026."
+      },
+      "Centro Federico García Lorca": {
+        "url": "https://www.centrofedericogarcialorca.es/es/el-centro/informacion-practica",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Publications list includes the exhibition catalogue “Ríos” dated Octubre 2026; practical-information page publishes seasonal hours."
+      },
+      "Monasterio de la Cartuja": {
+        "url": "https://cartujadegranada.com/visita-cultural/",
+        "sourceType": "operator's own site (Monasterio de Nuestra Señora de la Asunción de la Cartuja)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "“VISITAS CULTURALES DURANTE TODO EL AÑO, EXCEPTO EN HORARIO DE CULTO”; ticket purchase link live; footer © 2026."
+      },
+      "Basílica de San Juan de Dios": {
+        "url": "https://www.basilicasanjuandedios.es/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Ticket sales link and October special-hours notice (“Sábado 24 – de 9:30 a 16:00h”), with weekdays matching October 2026; footer reads 2024."
+      },
+      "Fundación Rodríguez-Acosta": {
+        "url": "https://www.fundacionrodriguezacosta.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "News dated 18 and 24 October 2026; ticket sales via entradasfra.com. Visit rules: tickets are for a set time and “no será válida pasada la hora indicada”."
+      },
+      "Palacio de la Madraza": {
+        "url": "https://lamadraza.ugr.es/",
+        "sourceType": "official public operator (Universidad de Granada)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Exhibition “La casa de la ciencia. Patrimonio cultural árabe e islámico” runs 19 May–22 December 2026; calls open to November 2026."
+      },
+      "Museo CajaGranada Memoria de Andalucía": {
+        "url": "https://www.cajagranadafundacion.es/museo-cgf/planifica-visita/",
+        "sourceType": "operator's own site (Fundación CajaGranada)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Visit page lists 2026 closing days (including 8, 24, 25 and 31 December) and prices: “Entrada general: 5 €”."
+      },
+      "Mirador de Morayma": {
+        "url": "https://www.miradordemorayma.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Hours and reservation phone published; footer “Copyright © 2026 Mirador de Morayma”."
+      },
+      "Carmen de San Miguel": {
+        "url": "https://www.carmensanmiguel.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Publishes “CARTA 2026” and a “Menú Gastronómico Primavera - Verano 2026”, plus 2026 event news."
+      },
+      "Chikito": {
+        "url": "https://www.restaurantechikito.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Online menu (with an image uploaded October 2026) and published kitchen hours; “Los miércoles Chikito permanecerá cerrado”."
+      },
+      "Damasqueros": {
+        "url": "https://www.damasqueros.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Seasonal “Menú Degustación” that “va cambiando con la naturaleza”, page updated 9 July 2026."
+      },
+      "Restaurante El Agua": {
+        "url": "https://www.restauranteelagua.es/es",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Booking online, by phone and email; current “Menús Parejas 2026”, “Menú Nochevieja 2026” and Christmas group menus."
+      },
+      "Los Manueles (Reyes Católicos)": {
+        "url": "https://losmanueles.es/mejores-restaurantes-de-granada-centro/reyes-catolicos/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Branch page with daily hours, “cocina non stop”, a menú del día PDF uploaded May 2026; footer © Los Manueles 2026."
+      },
+      "Café Futbol": {
+        "url": "https://www.cafefutbol.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Publishes daily hours and its cafetería/heladería with “Churros con Chocolate”; menu PDF labelled 2024, no 2026-dated text."
+      },
+      "Despiertoo (Jáudenes)": {
+        "url": "https://www.despiertoo.com/contacto",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Online coffee shop with priced beans; events page lists “Producer Series: Carlos Arango Cosecha 2026” at despiertoo Gran Vía."
+      },
+      "Malamiga (San Antón)": {
+        "url": "https://malamiga.com/en/home/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Sourdough bread, croissants and specialty coffee with an order option and published daily hours; footer © 2024, no 2026-dated text."
+      },
+      "Bohemia Jazz Café": {
+        "url": "https://www.bohemiajazzcafe.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Published hours and a “carta de cafés, batidos, chocolates, y cócteles” with live music; no dated content."
+      },
+      "B-Heaven (Barceló Carmen Granada)": {
+        "url": "https://www.barcelo.com/es-es/barcelo-carmen-granada/gastronomia/b-heaven-granada/",
+        "sourceType": "operator's own site (Barceló Hotel Group)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Rooftop with “cócteles de autor” and mocktails, “Abierto tanto para huéspedes como para clientes que no se hospedan en el hotel”; hours “pueden variar según temporada”; footer © 2026."
+      },
+      "El Huerto de Juan Ranas": {
+        "url": "https://www.elhuertodejuanranas.com/la-terraza/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Terrace page publishes hours and “EXCLUSIVAMENTE RESERVAS ONLINE”, with a note of “POSIBLES CAMBIO DE HORARIOS SEGUN TEMPORADA”; no dated content."
+      },
+      "Jardines de Zoraya": {
+        "url": "https://flamencogranada.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Programme listed for 26 Oct–1 Nov with online booking; blog posts dated August–September 2026. Entry 20 €, 15 € ages 7–12, under-7s free; dinner menus extra."
+      },
+      "Cueva de la Rocío": {
+        "url": "https://www.cuevalarocio.es/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Online reservations for flamenco with a drink or with dinner; no 2026-dated text."
+      }
+    }
+  },
   "Bilbao, Spain": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-27",

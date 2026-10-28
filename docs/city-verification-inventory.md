@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 66.
-- Classifier-passed (published, not fully documented in that format): 126.
+- Source-verified (complete dated evidence format): 67.
+- Classifier-passed (published, not fully documented in that format): 125.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -194,7 +194,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Goa, India | goa | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Gold Coast, Australia | gold-coast | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Gothenburg, Sweden | gothenburg | held-back | not-reviewed | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
-| Granada, Spain | granada | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Granada, Spain | granada | source-verified | source-checked | 26 | 49 | 15 | 15 | None |
 | Grand Canyon, United States | grand-canyon | classifier-passed | not-reviewed | 0 | 6 | 15 | 4 | None |
 | Great Barrier Reef, Australia | great-barrier-reef | held-back | not-reviewed | 0 | 4 | 15 | 2 | has 4 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Great Ocean Road, Australia | great-ocean-road | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |

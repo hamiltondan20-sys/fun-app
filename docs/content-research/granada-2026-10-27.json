@@ -1,0 +1,948 @@
+{
+  "city": "Granada, Spain",
+  "checkedOn": "2026-10-27",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Alhambra",
+      "kind": "landmark",
+      "url": "https://www.alhambra-patronato.es/visitar/horarios",
+      "sourceType": "official public operator (Patronato de la Alhambra y Generalife)",
+      "address": "C/ Real de la Alhambra s/n, 18009 Granada",
+      "operatingEvidence": "Current notices: the Alcazaba “reabrirá al público” from 23 September with an adapted itinerary; Dar al-Horra and Horno de Oro reopen from Saturday 24 October. Online ticket sales and advance sale are live; the tariff page cites the Orden de 17 de julio de 2025 (Visita Diurna General 22.27 €).",
+      "hours": "Winter (15 Oct–31 Mar): daytime visit every day 08:30–18:00; evening visit Fri–Sat 20:00–21:30. Summer (1 Apr–14 Oct): 08:30–20:00; evening Tue–Sat 22:00–23:30. Closed 25 Dec and 1 Jan.",
+      "confidence": "high"
+    },
+    {
+      "name": "Catedral de Granada",
+      "kind": "landmark",
+      "url": "https://catedraldegranada.com/precios-horarios-de-la-visita/",
+      "sourceType": "operator's own site (Santa Iglesia Catedral Metropolitana de la Encarnación)",
+      "address": "Gran Vía de Colón nº5 - 18001 Granada (footer also gives Plaza de las Pasiegas, 18001 Granada)",
+      "operatingEvidence": "Ticket purchase and free-entry booking links are live; the hours page lists special hours for 4 Dec–6 Jan and asks “ROGAMOS QUE CONFIRMEN HORARIOS PREVIAMENTE A LA VISITA”; footer © 2026.",
+      "hours": "Regular weekly hours not published in readable text; special dates only (e.g. 6 Dec 10:00–18:30; 25 Dec and 1 Jan closed).",
+      "confidence": "medium"
+    },
+    {
+      "name": "Capilla Real",
+      "kind": "landmark",
+      "url": "https://capillarealgranada.com/",
+      "sourceType": "operator's own site (Capilla Real de Granada)",
+      "address": "Calle Oficios s/n, 18001 Granada (España)",
+      "operatingEvidence": "News dated October 2026, including a 24 Oct visit and a 9 Oct MUSAG concert; online tickets via ticketsgranadacristiana.com. Visits run “diaria, excepto tres días”.",
+      "hours": "Daily except Good Friday, 25 Dec and 1 Jan; regular times not readable on the page (holiday table only).",
+      "confidence": "high"
+    },
+    {
+      "name": "Parque de las Ciencias",
+      "kind": "museum",
+      "url": "https://www.parqueciencias.com/",
+      "sourceType": "operator's own site (public science museum consortium)",
+      "address": "Avda. de la Ciencia s/n 18006 Granada",
+      "operatingEvidence": "Current temporary exhibitions listed (“Frío y calor”, “BioInspiración”, “Cazadores de dragones”); a 2026 notice on the BioDomo renovation and a July 2026 press item. Museo ticket 10,00 €, reduced 8,00 € for under-18s and over-65s.",
+      "hours": "Tue–Sat 10:00–19:00; Sundays and holidays 10:00–15:00; closed Mondays except holidays and some eves of holidays.",
+      "confidence": "high"
+    },
+    {
+      "name": "Hammam Al Ándalus (Granada)",
+      "kind": "scenic",
+      "url": "https://granada.hammamalandalus.com/faqs/",
+      "sourceType": "operator's own site",
+      "address": "C/ Santa Ana, 16. Granada",
+      "operatingEvidence": "Live online booking system; FAQ says “Es necesario realizar reserva previa, ya que las plazas son limitadas” and rules page says sessions last “90 minutos, incluyendo el tiempo de masaje”.",
+      "hours": "not published (shift-based sessions)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Museo Cuevas del Sacromonte",
+      "kind": "museum",
+      "url": "https://sacromontegranada.com/horarios-tipos-visita/",
+      "sourceType": "operator's own site",
+      "address": "Barranco de los Negros, Granada",
+      "operatingEvidence": "Hours page gives a winter season from 26 Oct to 28 Mar; general entry “6€” bookable online; menu lists “II edicion cine flamenco 2026”; footer © 2026.",
+      "hours": "Winter (26 Oct–28 Mar) 10:00–18:00 every day, last entry 17:40; summer (29 Mar–25 Oct) 10:00–20:00. Closed 25 Dec and 1 Jan.",
+      "confidence": "high"
+    },
+    {
+      "name": "Centro Federico García Lorca",
+      "kind": "museum",
+      "url": "https://www.centrofedericogarcialorca.es/es/el-centro/informacion-practica",
+      "sourceType": "operator's own site",
+      "address": "Plaza de la Romanilla, s/n, 18001 Granada",
+      "operatingEvidence": "Publications list includes the exhibition catalogue “Ríos” dated Octubre 2026; practical-information page publishes seasonal hours.",
+      "hours": "Winter (15 Sep–14 Mar): Tue–Sat 11:00–14:00 and 17:00–20:00; Sundays and holidays 11:00–14:00; Mondays closed.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Monasterio de la Cartuja",
+      "kind": "landmark",
+      "url": "https://cartujadegranada.com/visita-cultural/",
+      "sourceType": "operator's own site (Monasterio de Nuestra Señora de la Asunción de la Cartuja)",
+      "address": "Paseo de Cartuja, s/n - 18011 Granada (España)",
+      "operatingEvidence": "“VISITAS CULTURALES DURANTE TODO EL AÑO, EXCEPTO EN HORARIO DE CULTO”; ticket purchase link live; footer © 2026.",
+      "hours": "not published in readable text; visits year-round except during worship.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Basílica de San Juan de Dios",
+      "kind": "landmark",
+      "url": "https://www.basilicasanjuandedios.es/",
+      "sourceType": "operator's own site",
+      "address": "Calle San Juan de Dios, 17, 18001 Granada (España)",
+      "operatingEvidence": "Ticket sales link and October special-hours notice (“Sábado 24 – de 9:30 a 16:00h”), with weekdays matching October 2026; footer reads 2024.",
+      "hours": "Regular hours not published; October special hours only.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Fundación Rodríguez-Acosta",
+      "kind": "museum",
+      "url": "https://www.fundacionrodriguezacosta.com/",
+      "sourceType": "operator's own site",
+      "address": "Callejón Niños del Rollo, 8 - 18009 Granada",
+      "operatingEvidence": "News dated 18 and 24 October 2026; ticket sales via entradasfra.com. Visit rules: tickets are for a set time and “no será válida pasada la hora indicada”.",
+      "hours": "not published (timed tickets)",
+      "confidence": "high"
+    },
+    {
+      "name": "Palacio de la Madraza",
+      "kind": "museum",
+      "url": "https://lamadraza.ugr.es/",
+      "sourceType": "official public operator (Universidad de Granada)",
+      "address": "C/ Oficios, 14, 18071 Granada",
+      "operatingEvidence": "Exhibition “La casa de la ciencia. Patrimonio cultural árabe e islámico” runs 19 May–22 December 2026; calls open to November 2026.",
+      "hours": "Mon–Fri 9:00–21:00; exhibitions Mon–Sat 11:00–14:00 and 17:30–20:30. “Cerrado domingos, festivos, Semana Santa, Navidad y agosto.”",
+      "confidence": "high"
+    },
+    {
+      "name": "Museo CajaGranada Memoria de Andalucía",
+      "kind": "museum",
+      "url": "https://www.cajagranadafundacion.es/museo-cgf/planifica-visita/",
+      "sourceType": "operator's own site (Fundación CajaGranada)",
+      "address": "Avenida de la Ciencia, 2 / 18006 · Granada",
+      "operatingEvidence": "Visit page lists 2026 closing days (including 8, 24, 25 and 31 December) and prices: “Entrada general: 5 €”.",
+      "hours": "Tue–Thu 9:30–14:00; Fri 9:30–14:00 and 17:00–19:00; Sat 10:30–14:00; closed Sundays, Mondays and holidays.",
+      "confidence": "high"
+    },
+    {
+      "name": "Mirador de Morayma",
+      "kind": "meal",
+      "url": "https://www.miradordemorayma.com/",
+      "sourceType": "operator's own site",
+      "address": "C/ Pianista García Carillo, 2, Granada 18010",
+      "operatingEvidence": "Hours and reservation phone published; footer “Copyright © 2026 Mirador de Morayma”.",
+      "hours": "Tue–Sat 13:30–22:30, uninterrupted kitchen; “Domingos y Lunes cerrado”.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Carmen de San Miguel",
+      "kind": "meal",
+      "url": "https://www.carmensanmiguel.com/",
+      "sourceType": "operator's own site",
+      "address": "Plaza Torres Bermejas, 3, 18009 Granada",
+      "operatingEvidence": "Publishes “CARTA 2026” and a “Menú Gastronómico Primavera - Verano 2026”, plus 2026 event news.",
+      "hours": "Tue–Sat 12:30–17:00 and 20:00–00:30; closed Mondays and Sundays.",
+      "confidence": "high"
+    },
+    {
+      "name": "Chikito",
+      "kind": "meal",
+      "url": "https://www.restaurantechikito.com/",
+      "sourceType": "operator's own site",
+      "address": "Plaza del Campillo, 9, 18009 GRANADA (ESPAÑA)",
+      "operatingEvidence": "Online menu (with an image uploaded October 2026) and published kitchen hours; “Los miércoles Chikito permanecerá cerrado”.",
+      "hours": "Kitchen 13:00–16:00 and 20:00–23:30; closed Wednesdays.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Damasqueros",
+      "kind": "meal",
+      "url": "https://www.damasqueros.com/",
+      "sourceType": "operator's own site",
+      "address": "C/ Damasqueros, 3 – 18009 – El Realejo – Granada",
+      "operatingEvidence": "Seasonal “Menú Degustación” that “va cambiando con la naturaleza”, page updated 9 July 2026.",
+      "hours": "Tue–Sat lunch and dinner; Sunday lunch only; closed Monday and Sunday dinner.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Restaurante El Agua",
+      "kind": "meal",
+      "url": "https://www.restauranteelagua.es/es",
+      "sourceType": "operator's own site",
+      "address": "Placeta del Aljibe de Trillo, 7, 18010 Granada",
+      "operatingEvidence": "Booking online, by phone and email; current “Menús Parejas 2026”, “Menú Nochevieja 2026” and Christmas group menus.",
+      "hours": "Every day: lunch 13:00–16:00, dinner 20:00–23:30.",
+      "confidence": "high"
+    },
+    {
+      "name": "Los Manueles (Reyes Católicos)",
+      "kind": "meal",
+      "url": "https://losmanueles.es/mejores-restaurantes-de-granada-centro/reyes-catolicos/",
+      "sourceType": "operator's own site",
+      "address": "Reyes Católicos, 61, Centro, 18010 Granada",
+      "operatingEvidence": "Branch page with daily hours, “cocina non stop”, a menú del día PDF uploaded May 2026; footer © Los Manueles 2026.",
+      "hours": "Lunes a Domingo 12:00–24:00.",
+      "confidence": "high"
+    },
+    {
+      "name": "Café Futbol",
+      "kind": "cafe",
+      "url": "https://www.cafefutbol.com/",
+      "sourceType": "operator's own site",
+      "address": "Plaza de Mariana Pineda, nº 6, 18009 Granada",
+      "operatingEvidence": "Publishes daily hours and its cafetería/heladería with “Churros con Chocolate”; menu PDF labelled 2024, no 2026-dated text.",
+      "hours": "Every day 8:00–00:00; Fridays and Saturdays 8:00–01:00.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Despiertoo (Jáudenes)",
+      "kind": "cafe",
+      "url": "https://www.despiertoo.com/contacto",
+      "sourceType": "operator's own site",
+      "address": "Calle Jáudenes 4, 18001, Granada (second café: Gran Vía de Colón 7)",
+      "operatingEvidence": "Online coffee shop with priced beans; events page lists “Producer Series: Carlos Arango Cosecha 2026” at despiertoo Gran Vía.",
+      "hours": "Jáudenes: Mon–Fri 9:00–20:00, Sat–Sun 10:00–20:00. Gran Vía: Mon–Fri 8:30–20:00, Sat–Sun 9:00–20:00.",
+      "confidence": "high"
+    },
+    {
+      "name": "Malamiga (San Antón)",
+      "kind": "bakery",
+      "url": "https://malamiga.com/en/home/",
+      "sourceType": "operator's own site",
+      "address": "C. San Antón, 16, Centro, 18005 (Granada) (second shop: C. San Juan de Dios, 52)",
+      "operatingEvidence": "Sourdough bread, croissants and specialty coffee with an order option and published daily hours; footer © 2024, no 2026-dated text.",
+      "hours": "Monday to Sunday 09:00–21:00.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bohemia Jazz Café",
+      "kind": "bar",
+      "url": "https://www.bohemiajazzcafe.com/",
+      "sourceType": "operator's own site",
+      "address": "Plaza de los Lobos 11, 18002, Granada, España",
+      "operatingEvidence": "Published hours and a “carta de cafés, batidos, chocolates, y cócteles” with live music; no dated content.",
+      "hours": "Mon–Fri 15:00–01:00; Sat–Sun 15:00–02:00.",
+      "confidence": "medium"
+    },
+    {
+      "name": "B-Heaven (Barceló Carmen Granada)",
+      "kind": "bar",
+      "url": "https://www.barcelo.com/es-es/barcelo-carmen-granada/gastronomia/b-heaven-granada/",
+      "sourceType": "operator's own site (Barceló Hotel Group)",
+      "address": "Acera del Darro 62, 18005, Granada (hotel page https://www.barcelo.com/es-es/barcelo-carmen-granada/)",
+      "operatingEvidence": "Rooftop with “cócteles de autor” and mocktails, “Abierto tanto para huéspedes como para clientes que no se hospedan en el hotel”; hours “pueden variar según temporada”; footer © 2026.",
+      "hours": "Lunes a domingo 15:00–21:00 (solo carta bebida).",
+      "confidence": "medium"
+    },
+    {
+      "name": "El Huerto de Juan Ranas",
+      "kind": "bar",
+      "url": "https://www.elhuertodejuanranas.com/la-terraza/",
+      "sourceType": "operator's own site",
+      "address": "C. Atarazana Vieja, 6 (San Nicolás), 18010 Granada",
+      "operatingEvidence": "Terrace page publishes hours and “EXCLUSIVAMENTE RESERVAS ONLINE”, with a note of “POSIBLES CAMBIO DE HORARIOS SEGUN TEMPORADA”; no dated content.",
+      "hours": "Every day 13:00–19:00 (may change by season).",
+      "confidence": "medium"
+    },
+    {
+      "name": "Jardines de Zoraya",
+      "kind": "meal",
+      "url": "https://flamencogranada.com/",
+      "sourceType": "operator's own site",
+      "address": "Calle Panaderos, 32, 18010 Granada",
+      "operatingEvidence": "Programme listed for 26 Oct–1 Nov with online booking; blog posts dated August–September 2026. Entry 20 €, 15 € ages 7–12, under-7s free; dinner menus extra.",
+      "hours": "Shows daily at 18:00, 20:00 and 22:30 (about 60 minutes).",
+      "confidence": "high"
+    },
+    {
+      "name": "Cueva de la Rocío",
+      "kind": "meal",
+      "url": "https://www.cuevalarocio.es/",
+      "sourceType": "operator's own site",
+      "address": "Camino Sacromonte nº 70, C.P. 18010, Granada",
+      "operatingEvidence": "Online reservations for flamenco with a drink or with dinner; no 2026-dated text.",
+      "hours": "Shows at 20:00, 21:00, 22:00 and 23:00; dinner from 19:00.",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Albaicin",
+      "reason": "district, not a single operated place; covered through specific Albaicín venues",
+      "url": ""
+    },
+    {
+      "name": "Mirador de San Nicolas",
+      "reason": "public viewpoint with no operator page; Ayuntamiento de Granada site (granada.org) returned HTTP 403",
+      "url": "https://www.granada.org/inet/wmonumentos.nsf"
+    },
+    {
+      "name": "Alhambra timed visit",
+      "reason": "duplicate of Alhambra (confirmed)",
+      "url": ""
+    },
+    {
+      "name": "Huerta de San Vicente",
+      "reason": "www host had a certificate error; the apex site publishes winter hours but no address",
+      "url": "https://huertadesanvicente.com/"
+    },
+    {
+      "name": "Abadía del Sacromonte",
+      "reason": "address published but no current operating evidence (newest news 2023; only footer © 2026)",
+      "url": "https://www.abadiasacromonte.org/"
+    },
+    {
+      "name": "Corral del Carbón",
+      "reason": "Patronato page gives hours but no street address for the monument itself",
+      "url": "https://www.alhambra-patronato.es/descubrir/monumentos-andalusies/corral-del-carbon"
+    },
+    {
+      "name": "El Bañuelo",
+      "reason": "Patronato page gives hours but no street address for the monument itself",
+      "url": "https://www.alhambra-patronato.es/descubrir/monumentos-andalusies/el-banuelo"
+    },
+    {
+      "name": "Palacio de Dar al-Horra",
+      "reason": "Patronato page gives hours but no street address (map only)",
+      "url": "https://www.alhambra-patronato.es/descubrir/monumentos-andalusies/palacio-de-dar-al-horra"
+    },
+    {
+      "name": "Museo de Bellas Artes de Granada",
+      "reason": "official Junta de Andalucía site: certificate error (unable to verify the first certificate)",
+      "url": "https://www.museosdeandalucia.es/web/museodebellasartesdegranada"
+    },
+    {
+      "name": "Parador de Granada",
+      "reason": "official site: certificate error (unable to verify the first certificate)",
+      "url": "https://paradores.es/es/paradores/parador-de-granada"
+    },
+    {
+      "name": "Hotel Alhambra Palace",
+      "reason": "official site did not resolve (DNS EAI_AGAIN) on three attempts",
+      "url": "https://www.h-alhambrapalace.es/"
+    },
+    {
+      "name": "Los Diamantes",
+      "reason": "official site lists branches but no branch addresses or hours",
+      "url": "https://losdiamantes.es/"
+    },
+    {
+      "name": "Rey Fernando (Reyes Católicos)",
+      "reason": "address published but no current operating evidence (site copyright 2016)",
+      "url": "https://pionono.eu/"
+    },
+    {
+      "name": "Casa Ysla",
+      "reason": "official site: TLS error (TLSV1_ALERT_INTERNAL_ERROR)",
+      "url": "https://www.casaysla.com/"
+    },
+    {
+      "name": "Casa Pasteles",
+      "reason": "official site shows no address or hours in readable text; contact page 404",
+      "url": "https://www.casapasteles.es/"
+    },
+    {
+      "name": "Estapallorarle",
+      "reason": "made-to-order shop; no hours or current dated content",
+      "url": "https://estapallorarle.com/"
+    },
+    {
+      "name": "Pastelería López-Mezquita",
+      "reason": "no official website found (guessed domains did not resolve)",
+      "url": ""
+    },
+    {
+      "name": "Ruta del Azafrán",
+      "reason": "official site: connection refused",
+      "url": "https://www.rutadelazafran.es/"
+    },
+    {
+      "name": "La Fábula Restaurante",
+      "reason": "official site: TLS error (TLSV1_ALERT_UNRECOGNIZED_NAME)",
+      "url": "https://www.restaurantelafabula.com/"
+    },
+    {
+      "name": "Restaurante Arrayanes",
+      "reason": "official site returned nothing readable",
+      "url": "https://www.rest-arrayanes.com/"
+    },
+    {
+      "name": "Puesto 43",
+      "reason": "official site: certificate has expired",
+      "url": "https://www.puesto43.com/"
+    },
+    {
+      "name": "Restaurante Oliver",
+      "reason": "domain redirects to an unrelated travel blog",
+      "url": "https://www.restauranteoliver.com/"
+    },
+    {
+      "name": "Carmen de Aben Humeya",
+      "reason": "official domain did not resolve (ENOTFOUND)",
+      "url": "https://www.carmenabenhumeya.com/"
+    },
+    {
+      "name": "Bodegas Castañeda",
+      "reason": "no official website found",
+      "url": ""
+    },
+    {
+      "name": "Gran Café Bib-Rambla",
+      "reason": "no official website found",
+      "url": ""
+    },
+    {
+      "name": "La Finca Coffee",
+      "reason": "lafincacoffee.com redirects to a domain-sale page; other domain returned HTTP 429",
+      "url": "https://lafincacoffee.com/"
+    },
+    {
+      "name": "Noat Coffee",
+      "reason": "official domain did not resolve (ENOTFOUND)",
+      "url": "https://www.noatcoffee.com/"
+    },
+    {
+      "name": "Monasterio de San Jerónimo",
+      "reason": "official site not found (guessed domain did not resolve)",
+      "url": ""
+    },
+    {
+      "name": "Palacio de los Olvidados",
+      "reason": "official site: certificate hostname mismatch",
+      "url": "https://palaciodelosolvidados.com/"
+    },
+    {
+      "name": "Mercado de San Agustín",
+      "reason": "no official operator page found; municipal site returned HTTP 403",
+      "url": ""
+    },
+    {
+      "name": "Sacromonte sunset",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Hammam afternoon",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "a tapas evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Granada market or cafe",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local dinner in Albaicin",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Realejo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Centro",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Albaicin",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Albaicin walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Realejo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Centro",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Centro",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Alhambra",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Albaicin",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Alhambra timed visit",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Realejo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Albaicin",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Albaicin evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Realejo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Centro",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Albaicin",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Alhambra",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Realejo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Centro",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Albaicin",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Alhambra",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Albaicin cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Sacromonte sunset",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Centro",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Centro",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Albaicin",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Albaicin",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Realejo bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Alhambra",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Centro",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Albaicin",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Albaicin",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Centro",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Albaicin",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Realejo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Centro",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Albaicin",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Albaicin",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Realejo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Mirador de San Nicolas",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Albaicin",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Realejo morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Alhambra",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Centro",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Albaicin",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Realejo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Centro",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Alhambra",
+        "Capilla Real",
+        "Catedral de Granada",
+        "Museo Cuevas del Sacromonte"
+      ],
+      "bestFirstTimers": [
+        "Alhambra",
+        "Catedral de Granada",
+        "Capilla Real",
+        "Jardines de Zoraya"
+      ],
+      "bestRestaurants": [
+        "Carmen de San Miguel",
+        "Damasqueros",
+        "Restaurante El Agua",
+        "Chikito"
+      ],
+      "bestBudget": [
+        "Los Manueles (Reyes Católicos)",
+        "Museo CajaGranada Memoria de Andalucía",
+        "Museo Cuevas del Sacromonte",
+        "Palacio de la Madraza"
+      ],
+      "bestLuxury": [
+        "Carmen de San Miguel",
+        "Damasqueros",
+        "Hammam Al Ándalus (Granada)",
+        "Fundación Rodríguez-Acosta"
+      ],
+      "bestCouples": [
+        "Mirador de Morayma",
+        "Hammam Al Ándalus (Granada)",
+        "Restaurante El Agua",
+        "B-Heaven (Barceló Carmen Granada)"
+      ],
+      "bestKids": [
+        "Parque de las Ciencias",
+        "Alhambra",
+        "Museo Cuevas del Sacromonte",
+        "Café Futbol"
+      ],
+      "bestSolo": [
+        "Palacio de la Madraza",
+        "Centro Federico García Lorca",
+        "Despiertoo (Jáudenes)",
+        "Monasterio de la Cartuja"
+      ],
+      "bestUnique": [
+        "Hammam Al Ándalus (Granada)",
+        "Cueva de la Rocío",
+        "Fundación Rodríguez-Acosta",
+        "Basílica de San Juan de Dios"
+      ],
+      "bestBreakfast": [
+        "Café Futbol",
+        "Malamiga (San Antón)",
+        "Despiertoo (Jáudenes)"
+      ],
+      "bestLunch": [
+        "Los Manueles (Reyes Católicos)",
+        "Chikito",
+        "Mirador de Morayma",
+        "El Huerto de Juan Ranas"
+      ],
+      "bestDinner": [
+        "Restaurante El Agua",
+        "Mirador de Morayma",
+        "Damasqueros",
+        "Jardines de Zoraya"
+      ],
+      "bestCocktails": [
+        "B-Heaven (Barceló Carmen Granada)",
+        "Bohemia Jazz Café",
+        "El Huerto de Juan Ranas"
+      ],
+      "bestBakeries": [
+        "Malamiga (San Antón)"
+      ],
+      "bestCoffee": [
+        "Despiertoo (Jáudenes)",
+        "Malamiga (San Antón)",
+        "Café Futbol"
+      ]
+    },
+    "queries": {
+      "Alhambra": "Alhambra Calle Real de la Alhambra Granada",
+      "Catedral de Granada": "Catedral de Granada Gran Vía de Colón 5 Granada",
+      "Capilla Real": "Capilla Real Calle Oficios Granada",
+      "Parque de las Ciencias": "Parque de las Ciencias Avenida de la Ciencia Granada",
+      "Hammam Al Ándalus (Granada)": "Hammam Al Ándalus Calle Santa Ana 16 Granada",
+      "Museo Cuevas del Sacromonte": "Museo Cuevas del Sacromonte Barranco de los Negros Granada",
+      "Centro Federico García Lorca": "Centro Federico García Lorca Plaza de la Romanilla Granada",
+      "Monasterio de la Cartuja": "Monasterio de la Cartuja Paseo de Cartuja Granada",
+      "Basílica de San Juan de Dios": "Basílica de San Juan de Dios Calle San Juan de Dios 17 Granada",
+      "Fundación Rodríguez-Acosta": "Fundación Rodríguez-Acosta Callejón Niños del Rollo 8 Granada",
+      "Palacio de la Madraza": "Palacio de la Madraza Calle Oficios 14 Granada",
+      "Museo CajaGranada Memoria de Andalucía": "Museo CajaGranada Avenida de la Ciencia 2 Granada",
+      "Mirador de Morayma": "Mirador de Morayma Calle Pianista García Carillo 2 Granada",
+      "Carmen de San Miguel": "Carmen de San Miguel Plaza Torres Bermejas 3 Granada",
+      "Chikito": "Chikito Plaza del Campillo 9 Granada",
+      "Damasqueros": "Damasqueros Calle Damasqueros 3 Granada",
+      "Restaurante El Agua": "Restaurante El Agua Placeta del Aljibe de Trillo 7 Granada",
+      "Los Manueles (Reyes Católicos)": "Los Manueles Calle Reyes Católicos 61 Granada",
+      "Café Futbol": "Café Futbol Plaza de Mariana Pineda 6 Granada",
+      "Despiertoo (Jáudenes)": "Despiertoo Calle Jáudenes 4 Granada",
+      "Malamiga (San Antón)": "Malamiga Calle San Antón 16 Granada",
+      "Bohemia Jazz Café": "Bohemia Jazz Café Plaza de los Lobos 11 Granada",
+      "B-Heaven (Barceló Carmen Granada)": "B-Heaven Barceló Carmen Acera del Darro 62 Granada",
+      "El Huerto de Juan Ranas": "El Huerto de Juan Ranas Calle Atarazana Vieja 6 Granada",
+      "Jardines de Zoraya": "Jardines de Zoraya Calle Panaderos 32 Granada",
+      "Cueva de la Rocío": "Cueva de la Rocío Camino del Sacromonte 70 Granada"
+    },
+    "summary": "The Alhambra, the cathedral quarter, Sacromonte caves and Albaicín flamenco, with restaurants, cafés, a bakery and drinks terraces checked against their own websites.",
+    "highlights": [
+      "Alhambra",
+      "Capilla Real",
+      "Catedral de Granada",
+      "Museo Cuevas del Sacromonte"
+    ],
+    "tip": "Buy Alhambra tickets in advance and collect them at least an hour before the Nasrid Palaces time printed on your ticket, because entry is only allowed at that time.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mondays and Sundays",
+        "copy": "Parque de las Ciencias and the Centro Federico García Lorca close on Mondays, and Mirador de Morayma and Carmen de San Miguel close on both Sundays and Mondays. Chikito closes on Wednesdays."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Timed Alhambra entry",
+        "copy": "The Alhambra limits advance sales to 10 tickets per person and card per month, and you must enter the Nasrid Palaces at the time on your ticket. Fundación Rodríguez-Acosta tickets are also for a set time and are not valid once that time has passed."
+      },
+      {
+        "label": "Walk-in policies",
+        "value": "Book ahead",
+        "copy": "Hammam Al Ándalus requires advance booking, recommends 2 to 3 days' notice, and charges in full for changes made less than 48 hours ahead. El Huerto de Juan Ranas takes reservations for its terrace online only."
+      },
+      {
+        "label": "Rules",
+        "value": "Bags, swimwear, ID",
+        "copy": "At Fundación Rodríguez-Acosta you leave backpacks and large bags at reception, and interior photography is not allowed. Hammam Al Ándalus requires a swimsuit, and at the Alhambra the person who booked collects machine tickets with their ID and the card used to pay."
+      }
+    ],
+    "dek": "Fix your Alhambra slot first, then plan the cathedral quarter and the Albaicín around the Monday and Sunday closures.",
+    "intro": [
+      "The Alhambra shapes most visits to Granada, and its own site sets out the rules. In the winter period, from 15 October to 31 March, daytime visits run every day from 08:30 to 18:00, and evening visits run on Friday and Saturday from 20:00 to 21:30. You must enter the Nasrid Palaces at the time printed on your ticket, and the Patronato recommends buying early because demand is high. Children under 12 go free, but their tickets must be bought at the same time as everyone else's. The site closes only on 25 December and 1 January.",
+      "In the centre, the Cathedral and the Capilla Real stand side by side, and both sites ask you to confirm hours before you go. The Capilla Real opens daily except Good Friday, 25 December and 1 January. On the same street, the Palacio de la Madraza is open Monday to Friday from 09:00 to 21:00, and its exhibition on Arab and Islamic scientific heritage, La casa de la ciencia, runs until 22 December 2026. Near the Alhambra, Fundación Rodríguez-Acosta sells timed tickets, asks you to leave large bags at reception and does not allow photography indoors.",
+      "In Sacromonte, the Museo Cuevas del Sacromonte keeps winter hours from 26 October, opening every day from 10:00 to 18:00, with general entry at 6 euros. Hammam Al Ándalus on Calle Santa Ana requires advance booking and a swimsuit, and its sessions last 90 minutes including massage time. For flamenco, Jardines de Zoraya in the Albaicín stages shows at 18:00, 20:00 and 22:30, and children under seven go free. Cueva de la Rocío on Camino del Sacromonte offers shows with a drink or with dinner. If you are travelling with children, Parque de las Ciencias is closed on Mondays.",
+      "Plan your meals around closing days. Carmen de San Miguel and Mirador de Morayma close on Sundays and Mondays, Chikito closes on Wednesdays, and Damasqueros serves only lunch on Sundays and closes on Mondays. Restaurante El Agua in the Albaicín serves lunch and dinner every day, and Los Manueles on Reyes Católicos keeps its kitchen open from noon to midnight. For mornings, Café Futbol opens at 08:00, Despiertoo has cafés on Calle Jáudenes and Gran Vía, and Malamiga bakes sourdough and croissants. B-Heaven, the rooftop at Barceló Carmen, serves cocktails from 15:00 to 21:00."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Book a timed Alhambra ticket, then spend a second day on the Cathedral, the Capilla Real and the Palacio de la Madraza on Calle Oficios."
+      ],
+      [
+        "A slower morning",
+        "Start with coffee at Despiertoo or a croissant at Malamiga, then walk up to the Museo Cuevas del Sacromonte, which opens at 10:00."
+      ],
+      [
+        "Before booking",
+        "Check closing days: Parque de las Ciencias closes on Mondays, and Carmen de San Miguel and Mirador de Morayma close on Sundays and Mondays."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several confirmed places published only partial information: the Catedral, Capilla Real and Basílica de San Juan de Dios showed only special or holiday hours, Monasterio de la Cartuja, Hammam Al Ándalus and Fundación Rodríguez-Acosta published no weekly hours, and Café Futbol, Malamiga, Bohemia Jazz Café, El Huerto de Juan Ranas and Cueva de la Rocío showed no 2026-dated content beyond published hours or bookings. The Museo Cuevas del Sacromonte gives its location only as Barranco de los Negros, and its www host had a certificate error, so the apex domain was read. The Centro Federico García Lorca homepage carries an unrelated gambling-app link, which suggests third-party spam on the site. Sites that could not be read include the Museo de Bellas Artes (Junta de Andalucía), Parador de Granada, Hotel Alhambra Palace, Casa Ysla, La Fábula, Puesto 43, Ruta del Azafrán and the Ayuntamiento de Granada monuments pages. The Generalife gardens exhibition at the Palacio de Carlos V ended on 24 May 2026.",
+  "injectionLikeText": []
+}
