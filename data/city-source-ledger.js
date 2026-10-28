@@ -5,6 +5,714 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Jaipur, India": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-28",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Jaipur's state-run monuments (Amber Fort, Hawa Mahal, Albert Hall Museum, Jantar Mantar, Nahargarh Fort) and Jawahar Kala Kendra could not be confirmed because their government websites failed DNS lookup or, for the obms-tourist.rajasthan.gov.in ticketing site, returned a certificate error; these failures are not evidence of closure. Taj (Rambagh Palace), Hilton and Jaipur Rugs returned HTTP 403, Blue Tokai and Bikanervala returned HTTP 429, and Bar Palladio, LMB, 1135 AD, Curious Life, The Johri, SUJAN Rajmahal and Raj Mandir could not be reached. Several confirmed places were published only partially: City Palace gives gate locations rather than a street address; Niros, Chokhi Dhani, Anokhi Café, Peshawri, Jal Mahal and the Fairmont Jaipur venues publish no exact hours; Anokhi Café's page gives the Anokhi Farm address; Theobroma (C Scheme) shows conflicting hours; ISKCON Jaipur's darshan times overlap on its page; Amrapali Museum's Sunday closure is inferred from Monday–Saturday hours. The Leela, Fairmont and Oberoi Rajvilas venues are outside the old city at Kukas and Goner Road. Only 22 places were confirmed, below the 25–35 target.",
+    "sourceUrls": [
+      "docs/content-research/jaipur-2026-10-28.md",
+      "docs/content-research/jaipur-2026-10-28.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Amber Fort",
+        "url": "https://amerfort.rajasthan.gov.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site could not be read: DNS lookup failed (ENOTFOUND); no other official operator page reachable. Not evidence of closure."
+      },
+      {
+        "name": "Hawa Mahal",
+        "url": "https://hawamahal.rajasthan.gov.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site DNS lookup failed (ENOTFOUND); government ticketing page obms-tourist.rajasthan.gov.in returned a certificate error (\"unable to verify the first certificate\") and was not bypassed."
+      },
+      {
+        "name": "Albert Hall Museum",
+        "url": "https://alberthalljaipur.gov.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site could not be read: repeated DNS failure (EAI_AGAIN)."
+      },
+      {
+        "name": "Jantar Mantar",
+        "url": "https://dam.rajasthan.gov.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "No readable official page: Department of Archaeology and Museums domains tried (dam.rajasthan.gov.in, archaeology.rajasthan.gov.in) failed DNS lookup."
+      },
+      {
+        "name": "Nahargarh Fort",
+        "checkedOn": "2026-10-28",
+        "reason": "No readable official page found (same government domains failed DNS lookup)."
+      },
+      {
+        "name": "Jaigarh Fort",
+        "url": "https://citypalace.org/visit",
+        "checkedOn": "2026-10-28",
+        "reason": "Only mentioned in City Palace's composite ticket; no official page with an address found."
+      },
+      {
+        "name": "Jawahar Kala Kendra",
+        "url": "https://jkk.rajasthan.gov.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site could not be read: DNS lookup failed (ENOTFOUND)."
+      },
+      {
+        "name": "Bar Palladio (Narain Niwas Palace)",
+        "url": "https://www.barpalladio.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official sites could not be read: DNS lookup failed for barpalladio.com and narainniwas.com."
+      },
+      {
+        "name": "Laxmi Misthan Bhandar (LMB)",
+        "url": "https://www.lmbhotel.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "No official site found; lmbhotel.com failed DNS lookup."
+      },
+      {
+        "name": "Rawat Mishthan Bhandar",
+        "checkedOn": "2026-10-28",
+        "reason": "No official website found."
+      },
+      {
+        "name": "1135 AD (Amber Fort)",
+        "url": "https://www.1135ad.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site could not be read: DNS lookup failed."
+      },
+      {
+        "name": "Tapri Central",
+        "url": "https://www.tapri.net/index.php?route=information/contact&type=2",
+        "checkedOn": "2026-10-28",
+        "reason": "Address published on official site, but no current operating evidence (no hours, no dated content; menu only via Zomato link)."
+      },
+      {
+        "name": "Peacock Restaurant (Hotel Pearl Palace)",
+        "url": "https://www.hotelpearlpalace.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "No current operating evidence: no 2026 content (latest dates June 2023 post, 2024 copyright), no hours."
+      },
+      {
+        "name": "Raj Mandir Cinema",
+        "url": "https://www.therajmandir.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site returned an SSL error (WRONG_VERSION_NUMBER); not bypassed."
+      },
+      {
+        "name": "The Johri",
+        "url": "https://www.thejohri.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site refused connection (ECONNREFUSED)."
+      },
+      {
+        "name": "Curious Life Coffee Roasters",
+        "url": "https://www.curiouslife.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site could not be read: DNS lookup failed."
+      },
+      {
+        "name": "Rambagh Palace (Suvarna Mahal, Polo Bar, Steam)",
+        "url": "https://www.tajhotels.com/en-in/hotels/rambagh-palace-jaipur",
+        "checkedOn": "2026-10-28",
+        "reason": "Official Taj site refused automated reading (HTTP 403)."
+      },
+      {
+        "name": "SUJAN Rajmahal Palace",
+        "url": "https://www.sujanluxury.com/raj-mahal/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site refused connection (ECONNREFUSED)."
+      },
+      {
+        "name": "Trident Jaipur",
+        "url": "https://www.tridenthotels.com/hotels-in-jaipur",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site says \"Trident, Jaipur is currently temporarily closed for upgradation and will soon reopen.\""
+      },
+      {
+        "name": "Samode Haveli",
+        "url": "https://www.samode.com/samode-haveli/dining/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official pages give no street address or dining details."
+      },
+      {
+        "name": "Alsisar Haveli",
+        "url": "https://www.alsisarhaveli.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "No current operating evidence (footer © 2020) and no restaurant details."
+      },
+      {
+        "name": "Shahpura House",
+        "url": "https://www.shahpura.com/hotel/shahpura-house/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official page gives no address, dining details or dated content."
+      },
+      {
+        "name": "Hotel Diggi Palace",
+        "url": "https://www.hoteldiggipalace.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Address published but no named restaurant, bar or hours to recommend."
+      },
+      {
+        "name": "Govind Dev Ji Temple",
+        "url": "https://www.govinddevji.net/",
+        "checkedOn": "2026-10-28",
+        "reason": "Address and timings published only as images; text timetable marked \"Under Construction\"."
+      },
+      {
+        "name": "Elefantastic",
+        "url": "https://www.elefantastic.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "Exact location withheld: \"shared with you once your visit is confirmed\"."
+      },
+      {
+        "name": "Rajasthan Studio block-printing experience",
+        "url": "https://rajasthanstudio.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Workshop venue not named on official site; only a company office address."
+      },
+      {
+        "name": "Museum of Legacies",
+        "checkedOn": "2026-10-28",
+        "reason": "No official website found."
+      },
+      {
+        "name": "Baradari (City Palace)",
+        "url": "https://www.baradari.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site shows only \"Launching Soon\" with no address, hours or menu."
+      },
+      {
+        "name": "Blue Tokai (Jaipur)",
+        "url": "https://bluetokaicoffee.com/pages/cafes",
+        "checkedOn": "2026-10-28",
+        "reason": "Official cafe locator returned HTTP 429 Too Many Requests on repeated attempts."
+      },
+      {
+        "name": "Bikanervala (Jaipur)",
+        "url": "https://www.bikanervala.com/pages/store-locator",
+        "checkedOn": "2026-10-28",
+        "reason": "Official store locator returned HTTP 429 Too Many Requests."
+      },
+      {
+        "name": "Jaipur Rugs",
+        "url": "https://www.jaipurrugs.com/in/stores",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site refused automated reading (HTTP 403)."
+      },
+      {
+        "name": "Hilton Jaipur",
+        "url": "https://www.hilton.com/en/hotels/jaihihi-hilton-jaipur/dining/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site refused automated reading (HTTP 403)."
+      },
+      {
+        "name": "Zia (Fairmont Jaipur)",
+        "url": "https://www.fairmont.com/jaipur/dining/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official page says \"Restaurant is operational only during winters\" with no dates; not confirmed as open now."
+      },
+      {
+        "name": "Amber Fort before crowds",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Block-print workshop",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Pink City evening walk",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Rajasthani thali",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Rooftop dinner",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local sweets stop",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Amer",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Civil Lines",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Pink City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Pink City walk",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Amer",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Civil Lines",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Civil Lines",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Amber Fort",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Pink City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Amber Fort before crowds",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Amer",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near City Palace",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Pink City evening",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Amer",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Civil Lines",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Pink City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Amber Fort",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Amer",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Civil Lines",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Pink City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Amber Fort",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Pink City cafe or market",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Block-print workshop",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Civil Lines",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Civil Lines",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Pink City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Pink City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Amer bakery or market",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Amber Fort",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Civil Lines",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Pink City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near City Palace",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Civil Lines",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Pink City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Amer",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Civil Lines",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Pink City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Pink City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Amer",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Hawa Mahal",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Pink City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Amer morning market",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Amber Fort",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Civil Lines",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Pink City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Amer",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Civil Lines",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "City Palace": {
+        "url": "https://citypalace.org/visit",
+        "sourceType": "operator's own site (City Palace Museum, Jaipur; royaljaipur.in redirects here)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Visit page carries a dated 2026 notice: \"The Textile Gallery, in Mubarak Mahal, will temporarily be closed from the 27th of March, 2026, for restoration.\" It also states \"Museum at Night is temporarily closed.\" Adult museum ticket ₹400; composite ₹500 adds Jaigarh and the Royal Cenotaphs; Chandra Mahal Royal Tour ₹4,000, sold only at the counter; children under 5 don't need a ticket."
+      },
+      "Anokhi Museum of Hand Printing": {
+        "url": "https://www.anokhimuseum.com/opening-times",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Opening-times page carries a dated 2026 notice that the museum was \"closed for the summer and will reopen on July 15th, 2026.\" Block carving and printing demonstrations run all day except 1:30-2pm daily and 1-2:30pm on Fridays; galleries close annually for maintenance from May 31 to July 15."
+      },
+      "Amrapali Museum": {
+        "url": "https://www.amrapalimuseum.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Site lists 2026 events, including the book launch \"Silver and Gold: Visions of Arcadia\" (February 26, 2026), and an \"Object of the month\" (a coco de mer water flask)."
+      },
+      "ISKCON Jaipur": {
+        "url": "https://www.iskconjaipur.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Homepage publishes a daily darshan schedule and an events calendar headed August 2026."
+      },
+      "Niros": {
+        "url": "https://www.nirosindia.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Current site with Main Menu and Outdoor Catering Menu, describing \"a range of the choicest Continental, Tandoori, Mughlai, Chinese, Desserts and Snacks\"; footer \"© 2026 Niros Restaurant.\""
+      },
+      "Chokhi Dhani Village Fair & Restaurant": {
+        "url": "https://www.chokhidhani.com/village-fair-restaurant-jaipur",
+        "sourceType": "operator's own site (Chokhi Dhani Resorts Pvt. Ltd.)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Dedicated venue page on a current site; footer \"All Rights Reserved © 2026 Chokhi Dhani Resorts Pvt. Ltd.\" Hours and prices are not given; the page directs visitors to call +91-141-312 6000."
+      },
+      "Anokhi Café": {
+        "url": "https://www.anokhi.com/anokhi-cafe/",
+        "sourceType": "operator's own site (Anokhi)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Café page publishes a current vegetarian menu (hot drinks, juices, breads and sandwiches, salads, savouries, cakes) with food \"prepared daily at the Anokhi Farm\"; no dated content."
+      },
+      "Theobroma (C Scheme)": {
+        "url": "https://www.theobroma.in/store-locator/jaipur/c-scheme-jaipur",
+        "sourceType": "operator's own site (store locator)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Live store-locator page lists the branch with phone, map pin and a weekly hours schedule."
+      },
+      "Surya Mahal (The Oberoi Rajvilas)": {
+        "url": "https://www.oberoihotels.com/hotels-in-jaipur-rajvilas-resort/restaurants/",
+        "sourceType": "operator's own site (Oberoi Hotels & Resorts)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Restaurant page takes reservation requests online for 1-8 guests; footer \"© 2026 Oberoi Hotels & Resorts\". International and Indian cuisine."
+      },
+      "Rajwada Library Bar (The Oberoi Rajvilas)": {
+        "url": "https://www.oberoihotels.com/hotels-in-jaipur-rajvilas-resort/restaurants/",
+        "sourceType": "operator's own site (Oberoi Hotels & Resorts)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Listed with hours and phone on the current dining page; footer \"© 2026 Oberoi Hotels & Resorts\"."
+      },
+      "Zoya (Fairmont Jaipur)": {
+        "url": "https://www.fairmont.com/jaipur/dining/",
+        "sourceType": "operator's own site (Fairmont)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "All-day dining \"with five distinct dining experiences\", bookable at +911426420000; site lists 2026 offers valid through December 29, 2026 and bookings from October 15, 2026."
+      },
+      "AZA (Fairmont Jaipur)": {
+        "url": "https://www.fairmont.com/jaipur/dining/",
+        "sourceType": "operator's own site (Fairmont)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Regency-style library bar with \"vintage cognacs, rare single malts, and a wine cellar\" listed on the current dining page alongside 2026 offers."
+      },
+      "Anjum (Fairmont Jaipur)": {
+        "url": "https://www.fairmont.com/jaipur/dining/",
+        "sourceType": "operator's own site (Fairmont)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Tea lounge and day bar \"serving coffee and cocktails\" listed on the current dining page alongside 2026 offers."
+      },
+      "Peshawri (ITC Rajputana)": {
+        "url": "https://www.itchotels.com/in/en/itcrajputana-jaipur",
+        "sourceType": "operator's own site (ITC Hotels)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Listed for lunch and dinner on the hotel's current site; footer \"Copyright © ITC Hotels Limited 2026.\""
+      },
+      "Jaipur Pavilion (ITC Rajputana)": {
+        "url": "https://www.itchotels.com/in/en/itcrajputana-jaipur",
+        "sourceType": "operator's own site (ITC Hotels)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "All-day dining listed with hours on the hotel's current site; footer copyright 2026."
+      },
+      "Jal Mahal (ITC Rajputana)": {
+        "url": "https://www.itchotels.com/in/en/itcrajputana-jaipur",
+        "sourceType": "operator's own site (ITC Hotels)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Listed for breakfast and dinner on the hotel's current site; footer copyright 2026."
+      },
+      "Sheesh Mahal (ITC Rajputana)": {
+        "url": "https://www.itchotels.com/in/en/itcrajputana-jaipur",
+        "sourceType": "operator's own site (ITC Hotels)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Bar listed with hours on the hotel's current site; footer copyright 2026."
+      },
+      "Jamavar (The Leela Palace Jaipur)": {
+        "url": "https://www.theleela.com/the-leela-palace-jaipur/restaurants/jamavar",
+        "sourceType": "operator's own site (The Leela)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Restaurant page publishes sittings, booking phone/email and an enquiry form; hotel factsheet dated May 2026. Children under 12 aren't accommodated as the restaurant is entirely candlelit."
+      },
+      "Aravalli Dining Room (The Leela Palace Jaipur)": {
+        "url": "https://www.theleela.com/the-leela-palace-jaipur/restaurants/Aravalli-Dining-Room",
+        "sourceType": "operator's own site (The Leela)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Page publishes current buffet prices (breakfast INR 2,000 per adult, INR 1,000 per child plus taxes) and booking contacts."
+      },
+      "The Peacock Lounge (The Leela Palace Jaipur)": {
+        "url": "https://www.theleela.com/the-leela-palace-jaipur/restaurants/the-peacock-lounge",
+        "sourceType": "operator's own site (The Leela)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Page publishes service times and an enquiry form for breakfast, lunch or dinner; Mediterranean-inspired à la carte menu."
+      },
+      "The Amber Terrace (The Leela Palace Jaipur)": {
+        "url": "https://www.theleela.com/the-leela-palace-jaipur/restaurants/the-amber-terrace",
+        "sourceType": "operator's own site (The Leela)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Page publishes hours, booking contacts and the rule \"This is an adults-only dining experience. No children permitted.\" Botanically inspired cocktails and Asian-style small plates."
+      },
+      "Jharokha Bar (The Leela Palace Jaipur)": {
+        "url": "https://www.theleela.com/the-leela-palace-jaipur/restaurants/jharokha-bar",
+        "sourceType": "operator's own site (The Leela)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Page publishes bar timings, a food and beverage menu (cocktails, rare malts, cognacs) and reservation contacts."
+      }
+    }
+  },
   "Delhi, India": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-28",

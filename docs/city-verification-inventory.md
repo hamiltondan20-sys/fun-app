@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 74.
-- Classifier-passed (published, not fully documented in that format): 118.
+- Source-verified (complete dated evidence format): 75.
+- Classifier-passed (published, not fully documented in that format): 117.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -243,7 +243,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Istanbul, Turkey | istanbul | source-verified | source-checked | 25 | 43 | 15 | 13 | None |
 | Izmir, Turkey | izmir | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Jackson Hole, United States | jackson-hole | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Jaipur, India | jaipur | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Jaipur, India | jaipur | source-verified | source-checked | 22 | 46 | 15 | 15 | None |
 | Jakarta, Indonesia | jakarta | classifier-passed | not-reviewed | 0 | 9 | 15 | 5 | None |
 | Jeddah, Saudi Arabia | jeddah | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Jeju, South Korea | jeju | classifier-passed | not-reviewed | 0 | 5 | 15 | 3 | None |

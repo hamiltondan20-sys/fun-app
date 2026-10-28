@@ -7646,4 +7646,107 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 28, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Jaipur, India: source review of 2026-10-28 (docs/content-research/jaipur-2026-10-28.md).
+  {
+    const cityKey = "Jaipur, India";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["City Palace","Anokhi Museum of Hand Printing","Amrapali Museum","ISKCON Jaipur"],
+      bestFirstTimers: ["City Palace","Chokhi Dhani Village Fair & Restaurant","Niros","Anokhi Museum of Hand Printing"],
+      bestRestaurants: ["Jamavar (The Leela Palace Jaipur)","Peshawri (ITC Rajputana)","Niros","Surya Mahal (The Oberoi Rajvilas)"],
+      bestBudget: ["ISKCON Jaipur","Theobroma (C Scheme)"],
+      bestLuxury: ["Surya Mahal (The Oberoi Rajvilas)","Jamavar (The Leela Palace Jaipur)","AZA (Fairmont Jaipur)","City Palace"],
+      bestCouples: ["The Amber Terrace (The Leela Palace Jaipur)","Jamavar (The Leela Palace Jaipur)","Rajwada Library Bar (The Oberoi Rajvilas)"],
+      bestKids: ["Chokhi Dhani Village Fair & Restaurant","City Palace","Aravalli Dining Room (The Leela Palace Jaipur)","Theobroma (C Scheme)"],
+      bestSolo: ["Anokhi Museum of Hand Printing","Amrapali Museum","Anokhi Café","Anjum (Fairmont Jaipur)"],
+      bestUnique: ["Anokhi Museum of Hand Printing","Chokhi Dhani Village Fair & Restaurant","ISKCON Jaipur","Amrapali Museum"],
+      bestBreakfast: ["The Peacock Lounge (The Leela Palace Jaipur)","Aravalli Dining Room (The Leela Palace Jaipur)","Surya Mahal (The Oberoi Rajvilas)","Jal Mahal (ITC Rajputana)"],
+      bestLunch: ["Jaipur Pavilion (ITC Rajputana)","Anokhi Café","Niros","Jamavar (The Leela Palace Jaipur)"],
+      bestDinner: ["Jamavar (The Leela Palace Jaipur)","Peshawri (ITC Rajputana)","Zoya (Fairmont Jaipur)","The Amber Terrace (The Leela Palace Jaipur)"],
+      bestCocktails: ["Jharokha Bar (The Leela Palace Jaipur)","AZA (Fairmont Jaipur)","Rajwada Library Bar (The Oberoi Rajvilas)","Sheesh Mahal (ITC Rajputana)"],
+      bestBakeries: ["Theobroma (C Scheme)","Anokhi Café"],
+      bestCoffee: ["Anjum (Fairmont Jaipur)","Anokhi Café","The Peacock Lounge (The Leela Palace Jaipur)","Theobroma (C Scheme)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "City Palace": "City Palace Jaleb Chowk Jaipur",
+      "Anokhi Museum of Hand Printing": "Anokhi Museum of Hand Printing Keri Gate Amber Jaipur",
+      "Amrapali Museum": "Amrapali Museum K-14/B Ashok Marg C Scheme Jaipur",
+      "ISKCON Jaipur": "ISKCON Jaipur New Sanganer Road Mansarovar Jaipur",
+      "Chokhi Dhani Village Fair & Restaurant": "Chokhi Dhani 12 Miles Tonk Road Jaipur",
+      "Niros": "Niros Mirza Ismail Road Jaipur",
+      "Jamavar (The Leela Palace Jaipur)": "The Leela Palace Jaipur Jaipur-Delhi Highway Kukas Jaipur",
+      "Peshawri (ITC Rajputana)": "ITC Rajputana Palace Road Jaipur",
+      "Surya Mahal (The Oberoi Rajvilas)": "The Oberoi Rajvilas Goner Road Jaipur",
+      "Theobroma (C Scheme)": "Theobroma City Mall Bhagwan Das Road C-Scheme Jaipur",
+      "AZA (Fairmont Jaipur)": "Fairmont Jaipur 2 Riico Kukas Jaipur",
+      "The Amber Terrace (The Leela Palace Jaipur)": "The Leela Palace Jaipur Jaipur-Delhi Highway Kukas Jaipur",
+      "Rajwada Library Bar (The Oberoi Rajvilas)": "The Oberoi Rajvilas Goner Road Jaipur",
+      "Aravalli Dining Room (The Leela Palace Jaipur)": "The Leela Palace Jaipur Jaipur-Delhi Highway Kukas Jaipur",
+      "Anokhi Café": "Anokhi Café Todi Ramzanipura Jagatpura Jaipur",
+      "Anjum (Fairmont Jaipur)": "Fairmont Jaipur 2 Riico Kukas Jaipur",
+      "The Peacock Lounge (The Leela Palace Jaipur)": "The Leela Palace Jaipur Jaipur-Delhi Highway Kukas Jaipur",
+      "Jal Mahal (ITC Rajputana)": "ITC Rajputana Palace Road Jaipur",
+      "Jaipur Pavilion (ITC Rajputana)": "ITC Rajputana Palace Road Jaipur",
+      "Zoya (Fairmont Jaipur)": "Fairmont Jaipur 2 Riico Kukas Jaipur",
+      "Jharokha Bar (The Leela Palace Jaipur)": "The Leela Palace Jaipur Jaipur-Delhi Highway Kukas Jaipur",
+      "Sheesh Mahal (ITC Rajputana)": "ITC Rajputana Palace Road Jaipur"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Jaipur" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "City Palace, two private museums and a temple, with breakfast spots, dinners, cocktail bars and a bakery, each checked against its own website.";
+    cityGuide.highlights = ["City Palace","Anokhi Museum of Hand Printing","Amrapali Museum","Chokhi Dhani Village Fair & Restaurant"];
+    cityGuide.tip = "City Palace is open seven days a week and closes only on Dhulandi, but the Anokhi Museum of Hand Printing and The Amber Terrace are closed on Mondays, so plan those for another day.";
+    data.destinationFacts[cityKey] = "City Palace is open seven days a week and closes only on Dhulandi, but the Anokhi Museum of Hand Printing and The Amber Terrace are closed on Mondays, so plan those for another day.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "City Palace, two private museums and a temple, with breakfast spots, dinners, cocktail bars and a bakery, each checked against its own website.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Dhulandi; Mondays",
+        "copy": "City Palace is open seven days a week and closes only on Dhulandi, the second day of Holi. The Anokhi Museum of Hand Printing and The Amber Terrace at The Leela Palace Jaipur are closed on Mondays."
+      },
+      {
+        "label": "City Palace tickets",
+        "value": "₹400 adult",
+        "copy": "City Palace sells tickets at both Gate 1 and Gate 2; an adult museum ticket is ₹400 and the ₹500 composite adds Jaigarh and the Royal Cenotaphs. The ₹4,000 Chandra Mahal Royal Tour is sold only at the counter."
+      },
+      {
+        "label": "Dinner sittings",
+        "value": "Two sittings",
+        "copy": "Jamavar at The Leela Palace Jaipur serves dinner in two sittings, 7–9 pm and 9–11 pm, and lunch on Friday to Sunday only. The Oberoi Rajvilas takes online reservation requests for up to 8 guests at Surya Mahal."
+      },
+      {
+        "label": "Age rules",
+        "value": "Under-12s, adults only",
+        "copy": "Jamavar does not accommodate children under 12 because it is entirely candlelit, and The Amber Terrace is an adults-only dining experience. At City Palace, children under 5 don't need a ticket."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Give City Palace any day but Dhulandi, keep Mondays clear of the Anokhi Museum and The Amber Terrace, and book hotel dining ahead.",
+      intro: [
+        "City Palace is the natural first stop. Its own site says the museum is open 9:30 AM to 6:30 PM, seven days a week, with last tickets at 6:00 PM, and that it closes only on Dhulandi, the second day of Holi. You can enter through Gate 1 near the Jantar Mantar ticket counter or Gate 2 at Jaleb Chowk, and an adult museum ticket is ₹400. The Textile Gallery in Mubarak Mahal has been temporarily closed for restoration since March 27, 2026, and the Museum at Night is also temporarily closed.",
+        "Out at Amber, the Anokhi Museum of Hand Printing occupies Anokhi Haveli near Keri Gate. It opens Tuesday to Saturday, 10:30am to 5pm, and Sunday, 11am to 4:30pm, and is closed on Mondays and on listed holidays such as Deepawali. Block carving and printing demonstrations run through the day apart from a lunch break, and the galleries close every year for maintenance from May 31 to July 15. Back in C Scheme, the Amrapali Museum on Ashok Marg publishes hours of Monday to Saturday, 11 am to 6 pm, and features an object of the month.",
+        "For dining in town, Niros on Mirza Ismail Road lists Continental, Tandoori, Mughlai and Chinese dishes, and Chokhi Dhani's village fair and restaurant sits on Tonk Road. At ITC Rajputana on Palace Road, Jaipur Pavilion serves all day from 11:00 to 23:00 and the Sheesh Mahal bar keeps the same hours. Further out at Kukas, Jamavar at The Leela Palace Jaipur serves dinner in two sittings, 7–9 pm and 9–11 pm, offers lunch Friday to Sunday only, and does not take children under 12.",
+        "For a slower morning, The Peacock Lounge at The Leela serves breakfast from 7:00 to 10:30 am, and Surya Mahal at The Oberoi Rajvilas on Goner Road opens at 7:00 am. In the evening, The Amber Terrace at The Leela opens 4:00 to 11:00 pm, is adults-only and is closed on Mondays, while Rajwada Library Bar at The Oberoi Rajvilas opens 5:00 to 11:00 pm. Closer to the centre, you'll find Theobroma's C Scheme branch at City Mall on Bhagwan Das Road."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Start at City Palace, open 9:30 AM to 6:30 PM and closed only on Dhulandi, entering by Gate 1 near the Jantar Mantar ticket counter or Gate 2 at Jaleb Chowk."
+        ],
+        [
+          "A slower morning",
+          "Take breakfast at The Peacock Lounge from 7:00 am, then visit the Anokhi Museum of Hand Printing in Amber on any day except Monday, when it is closed."
+        ],
+        [
+          "Before booking",
+          "Check closing days: City Palace closes only on Dhulandi, while the Anokhi Museum of Hand Printing and The Amber Terrace are closed on Mondays."
+        ]
+      ],
+      trust: "All 22 distinct recommendations in this guide were checked against their operators' own websites on October 28, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();
