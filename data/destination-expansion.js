@@ -7225,4 +7225,111 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 31 distinct recommendations in this guide were checked against their operators' own websites on October 27, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // York, United Kingdom: source review of 2026-10-27 (docs/content-research/york-2026-10-27.md).
+  {
+    const cityKey = "York, United Kingdom";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["York Minster","National Railway Museum","York City Walls","Clifford's Tower"],
+      bestFirstTimers: ["York Minster","York City Walls","York Castle Museum","Yorkshire Museum"],
+      bestRestaurants: ["Skosh","Roots York","The Star Inn the City","Ambiente Tapas (Fossgate)"],
+      bestBudget: ["National Railway Museum","York Museum Gardens","York City Walls","Bluebird Bakery (Little Shambles)"],
+      bestLuxury: ["The Bow Room at Grays Court","Middlethorpe Hall","The Grand, York","Roots York"],
+      bestCouples: ["The Bow Room at Grays Court","Fairfax House","Ate O'Clock","Café No.8 Bistro"],
+      bestKids: ["National Railway Museum","York's Chocolate Story","York Castle Museum","Yorkshire Museum"],
+      bestSolo: ["York Art Gallery","York Museum Gardens","Spring Espresso (Lendal)","Partisan"],
+      bestUnique: ["York Cold War Bunker","York's Chocolate Story","Fairfax House","Clifford's Tower"],
+      bestBreakfast: ["Partisan","The Star Inn the City","Spring Espresso (Fossgate)"],
+      bestLunch: ["The Bow Room at Grays Court","Ambiente Tapas (Fossgate)","Partisan","The Botanist York (Stonegate)"],
+      bestDinner: ["Skosh","Roots York","Ate O'Clock","Café No.8 Bistro"],
+      bestCocktails: ["Evil Eye","The Botanist York (Stonegate)","The Star Inn the City"],
+      bestBakeries: ["Bluebird Bakery (Little Shambles)"],
+      bestCoffee: ["Spring Espresso (Fossgate)","Spring Espresso (Lendal)","Partisan"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "York Minster": "York Minster Deangate York",
+      "National Railway Museum": "National Railway Museum Leeman Road York",
+      "York City Walls": "York City Walls Bootham Bar York",
+      "Clifford's Tower": "Clifford's Tower Tower Street York",
+      "York Castle Museum": "York Castle Museum Eye of York York",
+      "Yorkshire Museum": "Yorkshire Museum Museum Street York",
+      "Skosh": "Skosh 98 Micklegate York",
+      "Roots York": "Roots 68 Marygate York",
+      "The Star Inn the City": "The Star Inn the City Lendal Engine House Museum Street York",
+      "Ambiente Tapas (Fossgate)": "Ambiente Tapas 31 Fossgate York",
+      "York Museum Gardens": "York Museum Gardens Museum Street York",
+      "Bluebird Bakery (Little Shambles)": "Bluebird Bakery Little Shambles York",
+      "The Bow Room at Grays Court": "The Bow Room Grays Court Chapter House Street York",
+      "Middlethorpe Hall": "Middlethorpe Hall Bishopthorpe Road York",
+      "The Grand, York": "The Grand Station Rise York",
+      "Fairfax House": "Fairfax House Castlegate York",
+      "Ate O'Clock": "Ate O'Clock 13a High Ousegate York",
+      "Café No.8 Bistro": "Cafe No.8 Bistro 8 Gillygate York",
+      "York's Chocolate Story": "York's Chocolate Story King's Square York",
+      "York Art Gallery": "York Art Gallery Exhibition Square York",
+      "Spring Espresso (Lendal)": "Spring Espresso 21 Lendal York",
+      "Partisan": "Partisan 112 Micklegate York",
+      "York Cold War Bunker": "York Cold War Bunker Monument Close York",
+      "Spring Espresso (Fossgate)": "Spring Espresso 45 Fossgate York",
+      "The Botanist York (Stonegate)": "The Botanist 15-19 Stonegate York",
+      "Evil Eye": "Evil Eye 42 Stonegate York"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "York" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "The Minster, city walls and museums of York, with breakfast cafés, a bakery, dinners and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["York Minster","National Railway Museum","York City Walls","York Castle Museum"];
+    cityGuide.tip = "York Art Gallery opens Wednesday to Sunday only, with entry in 30-minute slots, Skosh is closed Sunday to Tuesday and Roots York on Mondays and Tuesdays, so plan early-week dinners elsewhere.";
+    data.destinationFacts[cityKey] = "York Art Gallery opens Wednesday to Sunday only, with entry in 30-minute slots, Skosh is closed Sunday to Tuesday and Roots York on Mondays and Tuesdays, so plan early-week dinners elsewhere.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "The Minster, city walls and museums of York, with breakfast cafés, a bakery, dinners and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Check midweek",
+        "copy": "York Art Gallery opens Wednesday to Sunday, Skosh is closed Sunday to Tuesday and Roots York is closed Monday and Tuesday. York Cold War Bunker opens Friday to Sunday and bank holidays only."
+      },
+      {
+        "label": "Tickets",
+        "value": "Pay once, return",
+        "copy": "A York Minster sightseeing ticket is valid for a whole calendar year and includes four children aged 17 and under, and York Castle Museum tickets give entry for 12 months. Clifford's Tower's online discount is available until midnight the day before your visit."
+      },
+      {
+        "label": "Booking and walk-ins",
+        "value": "Book busy days",
+        "copy": "The National Railway Museum is free but recommends booking in busy periods, and York Castle Museum advises pre-booking on Saturdays and in school holidays. The Star Inn the City takes no reservations for drinks only, while Skosh offers walk-in seating in its bar area."
+      },
+      {
+        "label": "Rules",
+        "value": "Cards and tours",
+        "copy": "Station Hall at the National Railway Museum is card only, and York Cold War Bunker is visited by pre-booked guided tour only. Skosh asks for card details to secure a table and charges £20 per person for cancellations with less than 24 hours' notice."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Book the Minster and the Castle Museum first, then plan dinners around restaurants that close early in the week.",
+      intro: [
+        "York Minster on Deangate is the anchor of most visits. Its own site gives first admission at 9:30am and last admission at 4pm, and says it is open every day of the year but may close occasionally for services, so you should check its calendar. A sightseeing ticket is valid for a whole calendar year and includes four children aged 17 and under. From 28 November the Minster lists a Christmas Tree Festival running to 5 January 2027. The City of York Council says you can walk the city walls on foot, for free, throughout the year.",
+        "The National Railway Museum on Leeman Road is free and opens daily from 10am to 5pm except 24 to 26 December. It recommends booking in busy periods, and building work continues as part of its Masterplan; Station Hall is card only. York Castle Museum at the Eye of York sells tickets valid for 12 months and advises pre-booking on Saturdays and in school holidays. York Art Gallery on Exhibition Square opens Wednesday to Sunday in 30-minute entry slots and is showing Turner, Wedgwood & Beyond: Inspired by Flaxman. The Yorkshire Museum sits in the free Museum Gardens.",
+        "Smaller sites reward a slower day. Fairfax House on Castlegate is closed from 2 to 13 November 2026 to install its Christmas exhibition, A Christmas Tail, which opens on 14 November. York's Chocolate Story on King's Square lists Christmas tours and masterclasses from 28 November to 23 December 2026. Clifford's Tower on Tower Street opens daily from 10am to 4pm, with last entry at 3:30pm. Out of the centre, York Cold War Bunker on Monument Close opens Friday to Sunday and bank holidays, by pre-booked guided tour only.",
+        "For breakfast, Partisan on Micklegate serves an all-day breakfast and brunch menu from 9am to 3pm daily, and The Star Inn the City in the Lendal Engine House opens at 9.30am on Fridays to Sundays. For dinner, Skosh on Micklegate takes bookings Wednesday to Saturday, Roots York on Marygate offers set menus from £110, and The Bow Room at Grays Court serves its tasting menu Wednesday to Saturday at 7pm. Evil Eye and The Botanist share Stonegate for drinks, and The Botanist runs a weekday happy hour from 4pm to 7pm."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair York Minster with a walk on the free city walls and an afternoon at the free National Railway Museum."
+        ],
+        [
+          "A slower morning",
+          "Start with breakfast at Partisan or Spring Espresso, then walk through the Museum Gardens to the Yorkshire Museum."
+        ],
+        [
+          "Before booking",
+          "Check closing days, since York Art Gallery opens Wednesday to Sunday Skosh closes Sunday to Tuesday and Roots York closes Mondays and Tuesdays."
+        ]
+      ],
+      trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on October 27, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

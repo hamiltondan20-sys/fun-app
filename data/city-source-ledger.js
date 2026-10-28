@@ -5,6 +5,742 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "York, United Kingdom": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-27",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several sites could not be read: Jorvik Viking Centre and Barley Hall returned 403, Treasurer's House showed a bot check, Bettys and Merchant Adventurers' Hall returned empty pages, and several smaller cafés and bars failed on DNS, certificate or connection errors; none of these failures is evidence of closure. Weekly hours were not published on the pages read for Middlethorpe Hall, The Grand, York and Ate O'Clock, and the City Walls opening-times page returned 404. Spring Espresso, Bluebird Bakery and Partisan showed current hours and menus but no dated 2026 content. The National Railway Museum is mid-redevelopment, so gallery access may change.",
+    "sourceUrls": [
+      "docs/content-research/york-2026-10-27.md",
+      "docs/content-research/york-2026-10-27.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "The Shambles",
+        "url": "https://www.shamblesmarket.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "a public street, not an operator-run place; the Shambles Market site (shamblesmarket.co.uk) does not name its operator, so it was not treated as official"
+      },
+      {
+        "name": "Shambles Market",
+        "url": "https://www.shamblesmarket.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "site lists 5 Silver Street and hours but does not identify its operator; council page for the market returned 404"
+      },
+      {
+        "name": "Ghost history tour",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Railway Museum afternoon",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place (National Railway Museum confirmed separately)"
+      },
+      {
+        "name": "Jorvik Viking Centre",
+        "url": "https://www.jorvikvikingcentre.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "official site returned HTTP 403 Forbidden; not bypassed"
+      },
+      {
+        "name": "Barley Hall",
+        "url": "https://www.barleyhall.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "official site returned HTTP 403 Forbidden; not bypassed"
+      },
+      {
+        "name": "Treasurer's House",
+        "url": "https://www.nationaltrust.org.uk/visit/yorkshire/treasurers-house-york",
+        "checkedOn": "2026-10-27",
+        "reason": "National Trust page showed a Radware browser-verification (bot check) screen; not bypassed"
+      },
+      {
+        "name": "Merchant Adventurers' Hall",
+        "url": "https://www.merchantshall.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "official site returned no readable content (homepage and visit pages empty)"
+      },
+      {
+        "name": "Bettys (St Helen's Square)",
+        "url": "https://www.bettys.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "official Bettys pages returned no readable content on three attempts"
+      },
+      {
+        "name": "Mannion & Co",
+        "url": "https://www.mannionandco.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "homepage gives 1 Blake Street address and walk-in policy but no hours, menu or dated content was readable; menu page 404"
+      },
+      {
+        "name": "House of the Trembling Madness",
+        "url": "https://www.tremblingmadness.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "homepage shows no venue address or hours; opening-hours page 404"
+      },
+      {
+        "name": "The York Dungeon",
+        "url": "https://www.thedungeons.com/york/",
+        "checkedOn": "2026-10-27",
+        "reason": "pages read show 2026 content but no street address; travel page 404"
+      },
+      {
+        "name": "Mansion House York",
+        "url": "https://www.mansionhouseyork.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "homepage read shows no address, hours or dated content"
+      },
+      {
+        "name": "Bar Convent",
+        "url": "https://www.bar-convent.org.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "fetch failed with no output"
+      },
+      {
+        "name": "Holy Trinity Goodramgate",
+        "url": "https://www.visitchurches.org.uk/visit/church-listing/holy-trinity-york-goodramgate.html",
+        "checkedOn": "2026-10-27",
+        "reason": "Churches Conservation Trust page returned 404"
+      },
+      {
+        "name": "St Mary's Abbey",
+        "url": "https://www.english-heritage.org.uk/visit/places/st-marys-abbey-york/",
+        "checkedOn": "2026-10-27",
+        "reason": "English Heritage page returned 404"
+      },
+      {
+        "name": "York River Cruises",
+        "url": "https://www.yorkboat.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "connection refused"
+      },
+      {
+        "name": "Brew & Brownie",
+        "url": "https://www.brewandbrownie.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "connection refused"
+      },
+      {
+        "name": "Dyl's",
+        "url": "https://www.dyls.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "connection refused"
+      },
+      {
+        "name": "Fossgate Social",
+        "url": "https://www.fossgatesocial.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "certificate error (hostname not in certificate); not bypassed"
+      },
+      {
+        "name": "The Blind Swine",
+        "url": "https://www.theblindswine.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "domain did not resolve (DNS failure); not evidence of closure"
+      },
+      {
+        "name": "Los Moros",
+        "url": "https://www.losmoros.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "domain did not resolve (DNS failure); not evidence of closure"
+      },
+      {
+        "name": "Cave du Cochon",
+        "url": "https://www.cavecochon.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "domain tried did not resolve (DNS failure); official URL not confirmed"
+      },
+      {
+        "name": "Sotano",
+        "url": "https://www.sotanoyork.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "domain tried did not resolve (DNS failure); official URL not confirmed"
+      },
+      {
+        "name": "Ye Olde Starre Inne",
+        "url": "https://www.taylor-walker.co.uk/pub/york-ye-olde-starre-inne/s3445/",
+        "checkedOn": "2026-10-27",
+        "reason": "operator page domain did not resolve (DNS failure)"
+      },
+      {
+        "name": "Gatehouse Coffee",
+        "url": "https://www.gatehousecoffee.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "domain tried did not resolve (DNS failure)"
+      },
+      {
+        "name": "Forty Five Vinyl Café",
+        "url": "https://www.fortyfivevinylcafe.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "domain tried did not resolve (DNS failure)"
+      },
+      {
+        "name": "Perky Peacock",
+        "url": "https://perkypeacockcoffee.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "domain now serves unrelated content (a manga reading site); no official page found"
+      },
+      {
+        "name": "Melton's",
+        "url": "https://www.meltonsrestaurant.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "server returned HTTP 425 Too Early"
+      },
+      {
+        "name": "Pairings Wine Bar",
+        "url": "https://www.pairingswinebar.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "page returned no readable content"
+      },
+      {
+        "name": "The Cornish Bakery (York)",
+        "url": "https://www.thecornishbakery.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "server returned HTTP 429 Too Many Requests"
+      },
+      {
+        "name": "Haxby Bakehouse",
+        "url": "https://www.haxbybakehouse.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "no street address published on the page; outlets are outside the city centre"
+      },
+      {
+        "name": "Thomas the Baker (York)",
+        "url": "https://www.thomasthebaker.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "homepage gives no York shop address; store locator not read"
+      },
+      {
+        "name": "Pig & Pastry",
+        "url": "https://www.pigandpastry.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "site is an online/pop-up sausage-roll seller with no shop address"
+      },
+      {
+        "name": "Brew York Beer Hall & Tap Room",
+        "url": "https://www.brewyork.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "homepage names Walmgate only, no street number; hours not published"
+      },
+      {
+        "name": "Cut and Craft",
+        "url": "https://www.cutandcraft.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "domain tried is an unrelated template shop; official restaurant URL not found"
+      },
+      {
+        "name": "a cozy pub dinner",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "York market or cafe",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local dinner in City Centre",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Shambles",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Bishopthorpe Road",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in City Centre",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost City Centre walk",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Shambles",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Bishopthorpe Road",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Bishopthorpe Road",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for York Minster",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in City Centre",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around City wall walk",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Shambles",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near The Shambles",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "City Centre evening",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Shambles",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Bishopthorpe Road",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through City Centre",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly York Minster",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place (York Minster confirmed separately)"
+      },
+      {
+        "name": "Easy outing around Shambles",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Bishopthorpe Road",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near City Centre",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to York Minster",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place (York Minster confirmed separately)"
+      },
+      {
+        "name": "City Centre cafe or market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Ghost history tour",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Bishopthorpe Road",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Bishopthorpe Road",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond City Centre",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near City Centre",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Shambles bakery or market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before York Minster",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Bishopthorpe Road",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near City Centre",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near The Shambles",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Bishopthorpe Road",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in City Centre",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Shambles",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Bishopthorpe Road",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near City Centre",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near City Centre",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Shambles",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near National Railway Museum",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near City Centre",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Shambles morning market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before York Minster",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Bishopthorpe Road",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near City Centre",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Shambles",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Bishopthorpe Road",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "York Minster": {
+        "url": "https://yorkminster.org/visit/",
+        "sourceType": "operator's own site (Chapter of York)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Visit page sells tickets (£13 to £28); sightseeing ticket \"valid for a whole calendar year\". What's On lists a Christmas Tree Festival from 28 Nov 2026 to 5 Jan 2027."
+      },
+      "National Railway Museum": {
+        "url": "https://www.railwaymuseum.org.uk/visit",
+        "sourceType": "operator's own site (Science Museum Group)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Free admission with booking \"recommended\"; Masterplan works ongoing, Station Hall \"has reopened\" and is card only; map labelled June 2026."
+      },
+      "York Castle Museum": {
+        "url": "https://www.yorkcastlemuseum.org.uk/visitor-information/",
+        "sourceType": "official operator (York Museums Trust)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Homepage promotes \"October Half-Term 2026\" and \"Christmas at York Castle Museum 2026\"; tickets page sells adult entry at £18, valid 12 months."
+      },
+      "York Art Gallery": {
+        "url": "https://www.yorkartgallery.org.uk/visitor-information/",
+        "sourceType": "official operator (York Museums Trust)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Exhibition \"Turner, Wedgwood & Beyond: Inspired by Flaxman\" listed as \"Now open\"; leaflet covers \"December 2025 – August 2026\"; entry booked in 30-minute slots."
+      },
+      "Yorkshire Museum": {
+        "url": "https://www.yorkshiremuseum.org.uk/visitor-information/",
+        "sourceType": "official operator (York Museums Trust)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Homepage promotes \"October Half-Term 2026\" and current displays including \"Viking North\" and \"Chariots, Treasure and Power: Secrets of the Melsonby Hoard\"; online ticket booking."
+      },
+      "York Museum Gardens": {
+        "url": "https://www.yorkmuseumgardens.org.uk/",
+        "sourceType": "official operator (York Museums Trust)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Current notices: gardens close at 4pm on 4-8 November for Ghosts After Dark; York Dog Show 2026 trader call. Entry \"free and open daily (except 25 and 26 December and 1 January)\"."
+      },
+      "York City Walls": {
+        "url": "https://www.york.gov.uk/CityWalls",
+        "sourceType": "official public operator (City of York Council)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Council page says the walkway can be accessed \"on foot, for free, throughout the year\" and posts a dated maintenance closure for the Bootham Bar to Monk Bar section (19-30 October)."
+      },
+      "Clifford's Tower": {
+        "url": "https://www.english-heritage.org.uk/visit/places/cliffords-tower-york/",
+        "sourceType": "official operator (English Heritage)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Online booking open with a date selector; \"Book early to save up to 15%\", discount available online until midnight the day before."
+      },
+      "Fairfax House": {
+        "url": "https://www.fairfaxhouse.co.uk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "\"The mice are back at Fairfax House for Christmas from Saturday 14 November 2026\"; closed 2-13 November 2026 to install it; current event Sine Dominis to 1 November."
+      },
+      "York's Chocolate Story": {
+        "url": "https://www.yorkschocolatestory.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Lists Halloween tours 24 Oct-1 Nov 2026 and Christmas tours and masterclasses 28 Nov-23 Dec 2026; tickets bookable online."
+      },
+      "York Cold War Bunker": {
+        "url": "https://www.english-heritage.org.uk/visit/places/york-cold-war-bunker/",
+        "sourceType": "official operator (English Heritage)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "\"Visits are by pre-booked guided tour only\" with Book a tour buttons; dated closure notice for Saturday 31 October and Sunday 1 November."
+      },
+      "Skosh": {
+        "url": "https://www.skoshyork.co.uk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Current menu PDF \"Menus-24-10-26.pdf\"; online booking with card details required and a £20 per person fee without 24 hours' notice."
+      },
+      "Roots York": {
+        "url": "https://www.rootsyork.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Symington Estate Portfolio Dinner on Thursday 5 November (£195); Autumn Sunday Feast for October and November; Core Menu £110, Signature Menu £165."
+      },
+      "The Star Inn the City": {
+        "url": "https://www.starinnthecity.co.uk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Links an \"A La Carte Menu (Autumn 2026)\" and \"Group Dining (Autumn 2026)\"; does \"not take any reservations for drinks only\"."
+      },
+      "The Bow Room at Grays Court": {
+        "url": "https://www.thebowroomyork.com/",
+        "sourceType": "operator's own site (Grays Court Hotel)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Sample tasting, à la carte and lunch menus dated 2026 and a Spring 2026 wine list; hotel site cites \"our place in the Michelin Guide 2026\"; Book a Table link."
+      },
+      "Middlethorpe Hall": {
+        "url": "https://www.middlethorpe.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Restaurant \"Book a table\" or phone 01904 641241; lists \"Christmas House Party 2026\" and \"New Year's Eve House Party 2026/27\"."
+      },
+      "The Grand, York": {
+        "url": "https://www.thegrandyork.co.uk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Sunday Lunch at The Rise listed for 2026 and bookable; Legacy fine dining and the 1906 bar listed; Wizarding Afternoon Tea \"available until 12th November\"."
+      },
+      "Ambiente Tapas (Fossgate)": {
+        "url": "https://www.ambiente-tapas.co.uk/fossgate",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Bookable online or on 01904 638252; group's homepage lists a \"Five-Course Sherry Paired Tasting Experience\" on 4-6 November 2026 including York."
+      },
+      "Ate O'Clock": {
+        "url": "https://www.ateoclock.co.uk/bookings",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Links A La Carte and Set menus dated January 2026 and a 2026 Festive Set; \"Bookings are available everyday from 12:00\" with some tables kept for walk-ins."
+      },
+      "Café No.8 Bistro": {
+        "url": "https://www.cafeno8.co.uk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Reservations link, phone 01904 653 074, and current Evening Menu and Sunday Lunch pages; footer ©2026."
+      },
+      "Partisan": {
+        "url": "https://www.partisanuk.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Book a Table link; menu \"changes seasonally\" with an all-day breakfast/brunch menu and daily specials."
+      },
+      "Spring Espresso (Fossgate)": {
+        "url": "https://www.springespresso.co.uk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Publishes current hours and a new winter seasonal menu; no dated 2026 content seen."
+      },
+      "Spring Espresso (Lendal)": {
+        "url": "https://www.springespresso.co.uk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Listed as a current branch with hours and a new winter seasonal menu; no dated 2026 content seen."
+      },
+      "Bluebird Bakery (Little Shambles)": {
+        "url": "https://www.bluebirdbakery.co.uk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Lists the Little Shambles shop with phone 01904 627706 and current hours; no dated 2026 content seen."
+      },
+      "Evil Eye": {
+        "url": "https://www.evileyelounge.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Event listings for Wed 28 Oct 2026 and Wed 4 Nov 2026 (Evil Quiz Wednesdays) and Karaoke Tuesdays on Tue 3 Nov 2026; Book a Table link."
+      },
+      "The Botanist York (Stonegate)": {
+        "url": "https://www.thebotanist.uk.com/locations/york",
+        "sourceType": "operator's own site (chain branch page)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Live music performances listed from late October through December 2026; Christmas Dining Menu from £28.95; weekday happy hour 4-7pm with classic cocktails at £8.95."
+      }
+    }
+  },
   "Oxford, United Kingdom": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-27",
