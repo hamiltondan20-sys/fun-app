@@ -5,6 +5,329 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Malaga, Spain": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-27",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several places publish hours but no dated 2026 content (Antigua Casa de Guardia, El Mesón de Cervantes, Casa Lola and Pez Lola, Santa Coffee, Museo Revello de Toro), and the cathedral's hours table carries no year. Kaleja, Chester & Punk and La Terraza at the Catalonia Molina Lario publish no opening hours; Palodú publishes only closing days; La Canasta gives hours only for its Avenida de la Aurora shop. Playa de la Malagueta has no street address, only coordinates on the city page. The Mercado Central de Atarazanas is left out because no official page could be found. The Museo de Málaga, CAC Málaga, Casa Aranda, La Recova, the Museo Automovilístico, Museo Alborania, Café Central, Los Mellizos and the Hotel Larios terrace could not be read because of certificate errors, 403/520 responses or timeouts. Those failures are not evidence of closure.",
+    "sourceUrls": [
+      "docs/content-research/malaga-2026-10-27.md",
+      "docs/content-research/malaga-2026-10-27.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Malagueta Beach",
+        "url": "https://www.malaga.eu/la-ciudad/playas/la-malagueta/",
+        "checkedOn": "2026-10-27",
+        "reason": "merged into Playa de la Malagueta (same place)"
+      },
+      {
+        "name": "Gibralfaro sunset",
+        "checkedOn": "2026-10-27",
+        "reason": "experience, used as Castillo de Gibralfaro"
+      },
+      {
+        "name": "Atarazanas Market (Mercado Central de Atarazanas)",
+        "url": "https://comercio.malaga.eu/es/mercados/",
+        "checkedOn": "2026-10-27",
+        "reason": "no official operator page found (comercio.malaga.eu returns an undeclared-domain error; malaga.eu market path 404); only aggregators and blogs gave hours"
+      },
+      {
+        "name": "Museo de Málaga",
+        "url": "https://www.museosdeandalucia.es/web/museodemalaga",
+        "checkedOn": "2026-10-27",
+        "reason": "official Junta de Andalucía page failed with a certificate error (unable to verify the first certificate); not bypassed"
+      },
+      {
+        "name": "CAC Málaga",
+        "url": "https://cacmalaga.eu/",
+        "checkedOn": "2026-10-27",
+        "reason": "site returned HTTP 403 Forbidden"
+      },
+      {
+        "name": "Casa Aranda",
+        "url": "https://www.casa-aranda.net/",
+        "checkedOn": "2026-10-27",
+        "reason": "official site failed with a self-signed certificate error; not bypassed"
+      },
+      {
+        "name": "Museo Automovilístico y de la Moda",
+        "url": "https://www.museoautomovilmalaga.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "TLS error on fetch (TLSV1_ALERT_INTERNAL_ERROR)"
+      },
+      {
+        "name": "La Recova",
+        "url": "https://www.larecova.es/",
+        "checkedOn": "2026-10-27",
+        "reason": "TLS error on fetch (TLSV1_ALERT_INTERNAL_ERROR)"
+      },
+      {
+        "name": "Museo Alborania",
+        "url": "https://www.museoalborania.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "fetch timed out"
+      },
+      {
+        "name": "Café Central",
+        "url": "https://www.cafecentralmalaga.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "site returned HTTP 520"
+      },
+      {
+        "name": "Los Mellizos",
+        "url": "https://www.losmellizos.net/",
+        "checkedOn": "2026-10-27",
+        "reason": "site returned HTTP 403 Forbidden"
+      },
+      {
+        "name": "Óleo",
+        "url": "https://www.oleorestaurante.es/",
+        "checkedOn": "2026-10-27",
+        "reason": "official site gives address (Calle Casas de Campos, 4) but no hours, menu, booking or dated content"
+      },
+      {
+        "name": "Muelle Uno",
+        "url": "https://www.muelleuno.com/contacto-muelle-uno/",
+        "checkedOn": "2026-10-27",
+        "reason": "official site gives only 'Puerto de Málaga', no exact address"
+      },
+      {
+        "name": "Gran Hotel Miramar (bar)",
+        "url": "https://www.granhotelmiramarmalaga.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "hotel site names no bar open to non-guests and gives no hours"
+      },
+      {
+        "name": "La Terraza de Larios (Hotel Larios)",
+        "url": "https://www.hotel-larios.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "TLS error on fetch (WRONG_VERSION_NUMBER)"
+      },
+      {
+        "name": "El Tintero",
+        "url": "https://www.restauranteeltintero.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "domain tried shows unrelated blog content; no official page found"
+      },
+      {
+        "name": "Renard Cocktail Club",
+        "checkedOn": "2026-10-27",
+        "reason": "official domain not found (DNS failure on guessed domain)"
+      },
+      {
+        "name": "Confitería Aparicio",
+        "checkedOn": "2026-10-27",
+        "reason": "no official site found; only aggregators"
+      },
+      {
+        "name": "Lepanto",
+        "url": "https://www.lepanto.es/",
+        "checkedOn": "2026-10-27",
+        "reason": "lepanto.es is an unrelated Elche company; no Málaga shop found"
+      },
+      {
+        "name": "Beach-to-old-town walk",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "espeto and market seafood",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Malaga market or cafe",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local dinner in Historic Center",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Soho",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Alcazaba",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Historic Center walk",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Remaining descriptive entries in all 15 lists (e.g. 'Sunset drinks near Historic Center', 'Local bakery near Historic Center', 'Coffee near Historic Center', 'A rooftop or waterfront evening')",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Alcazaba": {
+        "url": "https://alcazabaygibralfaro.malaga.eu/es/visitas/horarios-y-tarifas/",
+        "sourceType": "official public operator (Ayuntamiento de Málaga)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "City-run site publishes current hours and rates (general €7.00, combined Alcazaba + Gibralfaro €10.00) with free entry \"todos los domingos a partir de las 14:00\"; online ticket sales linked."
+      },
+      "Castillo de Gibralfaro": {
+        "url": "https://alcazabaygibralfaro.malaga.eu/es/castillo-de-gibralfaro/donde-estamos",
+        "sourceType": "official public operator (Ayuntamiento de Málaga)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Same city rate sheet covers Gibralfaro (€7.00, or €10.00 combined with the Alcazaba); location page gives EMT bus line 35 or a roughly 20-minute walk up Paseo de Don Juan Temboury."
+      },
+      "Museo Picasso Málaga": {
+        "url": "https://www.museopicassomalaga.org/visita",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Collection display \"Pablo Picasso: estructuras de la invención\" on view; \"Munch-Picasso\" listed from 30/10/2026 to 28/02/2027. Tickets €13 general, €11 reduced; free in the last two hours every Sunday."
+      },
+      "Catedral de Málaga": {
+        "url": "https://malagacatedral.com/visita-cultural/tarifas-y-horarios/",
+        "sourceType": "operator's own site (Cathedral of Málaga)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Online ticket sales with audioguide (general €10, Málaga residents free); daily guided roof visits advertised. Page notes \"Sábados y domingos durante la celebración litúrgica no se permitirá la visita turística\" and asks visitors to \"VESTIR CON DECORO\"."
+      },
+      "Centre Pompidou Málaga": {
+        "url": "https://centrepompidou-malaga.eu/horario/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Current programme includes \"TO OPEN EYES\" (03.07.2025-17.01.2027) and \"La Casa Mágica + Juego de volúmenes\" (20.02.2026-02.2027)."
+      },
+      "Museo Carmen Thyssen Málaga": {
+        "url": "https://carmenthyssenmalaga.org/horarios-tarifas-ubicacion",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "\"¡Olé! El mito de lo español a través de Andalucía\" runs 3 October 2026-21 February 2027 and \"Julio González, pintor y dibujante\" 22 October 2026-17 January 2027; rates stated as valid from 2026 (€12 single)."
+      },
+      "Museo Casa Natal Picasso": {
+        "url": "https://museocasanatalpicasso.malaga.eu/Visita/horarios-y-tarifas/",
+        "sourceType": "official public operator (Fundación Picasso, Ayuntamiento de Málaga)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "News item dated 7 October 2026 on the exhibition \"Picasso. Propaganda y activismo político\"; tickets €3 general, combined €4; \"La entrada es gratuita todos los domingos de 16:00 a 20:00 h.\""
+      },
+      "Colección del Museo Ruso": {
+        "url": "https://www.coleccionmuseoruso.es/visita/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Exhibition \"Mijaíl Glinka\" 03/08/2026-31/01/2027; tickets €4 general, free on Sundays from 16:00 until closing."
+      },
+      "Jardín Botánico-Histórico La Concepción": {
+        "url": "https://laconcepcion.malaga.eu/",
+        "sourceType": "official public operator (Ayuntamiento de Málaga)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Notices dated 29 and 30 September 2026 announce October events; \"El Jardín se puede visitar de forma libre\" with an optional guided visit."
+      },
+      "Teatro Romano de Málaga": {
+        "url": "https://www.juntadeandalucia.es/cultura/enclaves/enclave-arqueologico-teatro-romano-de-malaga",
+        "sourceType": "official public operator (Junta de Andalucía, Consejería de Cultura)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Regional culture ministry page lists free entry \"hasta límite de aforo\" and a news item dated 28/04/2026; the site may close during AEMET orange or red heat alerts."
+      },
+      "MIMMA Museo Interactivo de la Música": {
+        "url": "https://www.musicaenaccion.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Agenda lists JALEO flamenco show sessions on Tuesday 27 and Wednesday 28 October plus a 2026 school-visit programme; adults €6, reduced €4, under-6s free."
+      },
+      "Museo Revello de Toro": {
+        "url": "https://museorevellodetoro.net/informacion-general/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Published admission (€4 general, €2 temporary exhibition only) and free entry for everyone on Sundays; temporary exhibition \"Revello de Toro y la aristocracia española\" listed without dates."
+      },
+      "Playa de la Malagueta": {
+        "url": "https://www.malaga.eu/la-ciudad/playas/la-malagueta/",
+        "sourceType": "official public operator (Ayuntamiento de Málaga)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "City page (© 2026 Ayuntamiento de Málaga) describes a Blue Flag beach about 1,200 m long with lifeguards, showers, toilets, children's play areas and accessible entrances; bathing season 15 June-15 September."
+      },
+      "El Pimpi": {
+        "url": "https://www.elpimpi.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "News dated 2, 15 and 21 October 2026; \"Fundado en 1971\"; reservations by phone 952 22 54 03 or reservas@elpimpi.com for the Bodega-Bar and La Sole del Pimpi."
+      },
+      "Antigua Casa de Guardia": {
+        "url": "https://www.antiguacasadeguardia.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Site publishes current weekly hours and describes the bodega as \"fundada en 1840\"; no dated 2026 content."
+      },
+      "Restaurante José Carlos García": {
+        "url": "https://restaurantejcg.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Booking link and seasonal hours published; site says the restaurant moved from the Port to La Malagueta, near the Centre Pompidou; footer © 2026."
+      },
+      "Kaleja": {
+        "url": "https://restaurantekaleja.com/reservas",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Live booking page and current menus (\"Guisa que te guisa\" and \"Menú Cosmopolita\"); a card secures the booking, with a €100 per-guest charge for no-shows or cancellations under 24 hours; tables held 15 minutes."
+      },
+      "Palodú": {
+        "url": "https://www.palodurestaurante.es/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Current tasting menus \"Menú Palodú: 135€ p.p.\" and \"Menú Alcazul: 115€ p.p.\"; photo dated 2026-04-08."
+      },
+      "Casa Lola (Calle Granada)": {
+        "url": "https://grupocasalola.com/",
+        "sourceType": "operator's own site (Grupo Casa Lola)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Group site lists this original branch with current daily hours; latest dates on the site are 2025."
+      },
+      "Pez Lola (Calle Granada)": {
+        "url": "https://grupocasalola.com/",
+        "sourceType": "operator's own site (Grupo Casa Lola)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Listed on the group site among current branches with daily hours; latest dates on the site are 2025."
+      },
+      "El Mesón de Cervantes": {
+        "url": "https://www.elmesondecervantes.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Site publishes current evening service hours; no dated 2026 content."
+      },
+      "Santa Coffee (Soho)": {
+        "url": "https://www.santacoffee.es/cafeterias",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Café list with branch hours; the company says \"Seleccionamos, tostamos y catamos\" its own coffee, and customer quotes on its site mention in-house cakes and croissants."
+      },
+      "Santa Coffee (Catedral)": {
+        "url": "https://www.santacoffee.es/cafeterias",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Listed with daily hours on the operator's café page; same street as the Museo Picasso Málaga."
+      },
+      "La Terraza (Catalonia Molina Lario)": {
+        "url": "https://www.cataloniahotels.com/es/hotel/catalonia-molina-lario",
+        "sourceType": "operator's own site (Catalonia Hotels)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Hotel page with a 2026 booking offer describes its rooftop La Terraza as \"Abierto todo el año\" and a spot that \"enamora a viajeros y locales\"."
+      },
+      "Chester & Punk": {
+        "url": "https://www.chesterandpunk.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "\"BOOK NOW\" reservation link and group masterclass bookings via WhatsApp; latest dated item is an October 2025 press link."
+      },
+      "La Canasta (Tienda Central)": {
+        "url": "https://www.lacanasta.es/tiendas/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Describes itself as \"Panadería Pastelería Restaurante Cafetería desde 1983\"; shop list gives Tienda Central hours and also lists city-centre shops (Larios, Atarazanas, Malagueta-Farola) without hours."
+      }
+    }
+  },
   "Granada, Spain": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-27",

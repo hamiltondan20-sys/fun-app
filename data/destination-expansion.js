@@ -6898,4 +6898,111 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on October 27, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Malaga, Spain: source review of 2026-10-27 (docs/content-research/malaga-2026-10-27.md).
+  {
+    const cityKey = "Malaga, Spain";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Alcazaba","Castillo de Gibralfaro","Museo Picasso Málaga","Catedral de Málaga"],
+      bestFirstTimers: ["Alcazaba","Museo Picasso Málaga","Catedral de Málaga","Teatro Romano de Málaga"],
+      bestRestaurants: ["El Pimpi","Kaleja","Palodú","Restaurante José Carlos García"],
+      bestBudget: ["Teatro Romano de Málaga","Museo Casa Natal Picasso","Colección del Museo Ruso","Playa de la Malagueta"],
+      bestLuxury: ["Restaurante José Carlos García","Kaleja","Palodú","La Terraza (Catalonia Molina Lario)"],
+      bestCouples: ["Castillo de Gibralfaro","La Terraza (Catalonia Molina Lario)","El Mesón de Cervantes","Jardín Botánico-Histórico La Concepción"],
+      bestKids: ["MIMMA Museo Interactivo de la Música","Playa de la Malagueta","Jardín Botánico-Histórico La Concepción","Centre Pompidou Málaga"],
+      bestSolo: ["Museo Carmen Thyssen Málaga","Centre Pompidou Málaga","Santa Coffee (Soho)","Antigua Casa de Guardia"],
+      bestUnique: ["Antigua Casa de Guardia","Colección del Museo Ruso","Museo Revello de Toro","Jardín Botánico-Histórico La Concepción"],
+      bestBreakfast: ["Santa Coffee (Soho)","Pez Lola (Calle Granada)","La Canasta (Tienda Central)"],
+      bestLunch: ["El Pimpi","Casa Lola (Calle Granada)","Pez Lola (Calle Granada)","Restaurante José Carlos García"],
+      bestDinner: ["Kaleja","Palodú","El Mesón de Cervantes","El Pimpi"],
+      bestCocktails: ["Chester & Punk","La Terraza (Catalonia Molina Lario)","El Pimpi"],
+      bestBakeries: ["La Canasta (Tienda Central)","Santa Coffee (Soho)"],
+      bestCoffee: ["Santa Coffee (Soho)","Santa Coffee (Catedral)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Alcazaba": "Alcazaba Calle Alcazabilla 2 Malaga",
+      "Castillo de Gibralfaro": "Castillo de Gibralfaro Camino de Gibralfaro 11 Malaga",
+      "Museo Picasso Málaga": "Museo Picasso Malaga Calle San Agustin 8 Malaga",
+      "Catedral de Málaga": "Catedral de Malaga Calle Molina Lario 9 Malaga",
+      "Teatro Romano de Málaga": "Teatro Romano Calle Alcazabilla Malaga",
+      "El Pimpi": "El Pimpi Calle Granada 62 Malaga",
+      "Kaleja": "Kaleja Calle Marquesa de Moya 5 Malaga",
+      "Palodú": "Palodu Calle Sebastian Souviron 7 Malaga",
+      "Restaurante José Carlos García": "Restaurante Jose Carlos Garcia Calle Velez Malaga 8 Malaga",
+      "Museo Casa Natal Picasso": "Museo Casa Natal Picasso Plaza de la Merced 15 Malaga",
+      "Colección del Museo Ruso": "Coleccion del Museo Ruso Avenida Sor Teresa Prat 15 Malaga",
+      "Playa de la Malagueta": "Playa de la Malagueta Paseo Maritimo Pablo Ruiz Picasso Malaga",
+      "La Terraza (Catalonia Molina Lario)": "Catalonia Molina Lario Calle Molina Lario 20 Malaga",
+      "El Mesón de Cervantes": "El Meson de Cervantes Calle Alamos 11 Malaga",
+      "Jardín Botánico-Histórico La Concepción": "Jardin Botanico La Concepcion Camino del Jardin Botanico 3 Malaga",
+      "MIMMA Museo Interactivo de la Música": "MIMMA Museo Interactivo de la Musica Calle Beatas 15 Malaga",
+      "Centre Pompidou Málaga": "Centre Pompidou Malaga Pasaje Doctor Carrillo Casaux Muelle Uno Malaga",
+      "Museo Carmen Thyssen Málaga": "Museo Carmen Thyssen Calle Compania 10 Malaga",
+      "Santa Coffee (Soho)": "Santa Coffee Calle Tomas Heredia 5 Malaga",
+      "Antigua Casa de Guardia": "Antigua Casa de Guardia Alameda Principal 18 Malaga",
+      "Museo Revello de Toro": "Museo Revello de Toro Calle Afligidos 5 Malaga",
+      "Pez Lola (Calle Granada)": "Pez Lola Calle Granada 42 Malaga",
+      "La Canasta (Tienda Central)": "La Canasta Avenida de la Aurora Malaga",
+      "Casa Lola (Calle Granada)": "Casa Lola Calle Granada 46 Malaga",
+      "Chester & Punk": "Chester & Punk Calle Mendez Nunez 4 Malaga",
+      "Santa Coffee (Catedral)": "Santa Coffee Calle San Agustin 5 Malaga"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Malaga" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Moorish fortresses, the cathedral and Picasso, Pompidou and Thyssen museums, plus tapas bars, tasting-menu dinners, coffee, a bakery and cocktail terraces, all checked against their own websites.";
+    cityGuide.highlights = ["Alcazaba","Castillo de Gibralfaro","Museo Picasso Málaga","Catedral de Málaga"];
+    cityGuide.tip = "Several sights are free on Sunday afternoons: the Alcazaba and Gibralfaro from 14:00, the Carmen Thyssen, Museo Ruso and Casa Natal Picasso from 16:00, and the Museo Picasso Málaga in its last two hours.";
+    data.destinationFacts[cityKey] = "Several sights are free on Sunday afternoons: the Alcazaba and Gibralfaro from 14:00, the Carmen Thyssen, Museo Ruso and Casa Natal Picasso from 16:00, and the Museo Picasso Málaga in its last two hours.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Moorish fortresses, the cathedral and Picasso, Pompidou and Thyssen museums, plus tapas bars, tasting-menu dinners, coffee, a bakery and cocktail terraces, all checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays and Tuesdays",
+        "copy": "The Museo Carmen Thyssen, Colección del Museo Ruso and Museo Revello de Toro close on Mondays, and the Centre Pompidou Málaga closes on Tuesdays. Palodú is closed Sunday to Tuesday, and El Mesón de Cervantes lists service only Wednesday to Monday."
+      },
+      {
+        "label": "Tickets",
+        "value": "Combined fortress ticket €10",
+        "copy": "One combined ticket covers the Alcazaba and Castillo de Gibralfaro for €10.00 (€7.00 each separately). From 1 November both run 9:00-18:00, with last entry at 17:00."
+      },
+      {
+        "label": "Booking rules",
+        "value": "Card guarantee at Kaleja",
+        "copy": "Kaleja asks for a card to confirm a booking and charges €100 per guest for no-shows or cancellations under 24 hours, holding tables for 15 minutes. El Pimpi takes reservation requests by phone or at reservas@elpimpi.com."
+      },
+      {
+        "label": "Rules",
+        "value": "Cathedral dress and roof limits",
+        "copy": "The Catedral de Málaga asks visitors to dress with decorum and suspends tourist visits during weekend liturgies. Its roof visit means about 200 steps on a narrow spiral stair, with tripods, backpacks and food not allowed."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Do the hilltop fortresses in the morning, keep Sunday afternoons for free museum entry, and check closing days before you book dinner.",
+      intro: [
+        "Start at the top. The Alcazaba, at Calle Alcazabilla 2, and the Castillo de Gibralfaro above it are run by the city on one combined ticket of €10.00. From 1 November to 31 March both open 9:00 to 18:00, with last entry an hour before closing, and both are free every Sunday from 14:00. To reach Gibralfaro you can take EMT bus line 35 or walk up Paseo de Don Juan Temboury in about 20 minutes. At the foot of the Alcazaba, the Junta de Andalucía runs the Teatro Romano free of charge, closed on Mondays.",
+        "Picasso runs through the old town. The Museo Picasso Málaga on Calle San Agustín opens every day; from November to February it closes at 18:00, and it opens \"Munch-Picasso\" from 30 October 2026 to 28 February 2027. Entry is €13, free in the last two hours on Sundays. A few streets away, the Museo Casa Natal Picasso on Plaza de la Merced opens daily 9:30 to 20:00 for €3, with free entry on Sundays from 16:00. The Catedral de Málaga on Calle Molina Lario sells audioguide tickets for €10 and offers daily guided visits to its roof.",
+        "For modern art, the Centre Pompidou Málaga on Muelle Uno opens 9:30 to 20:00 but closes on Tuesdays; \"TO OPEN EYES\" runs until 17 January 2027. The Museo Carmen Thyssen Málaga closes on Mondays and shows \"¡Olé! El mito de lo español a través de Andalucía\" until 21 February 2027. Out at Tabacalera, the Colección del Museo Ruso charges €4 and shows Mijaíl Glinka until 31 January 2027. With children, the MIMMA music museum on Calle Beatas charges €6 for adults, and La Concepción botanical garden opens Tuesday to Sunday, closing at 17:30 from October to March.",
+        "Eat and drink around Calle Granada. El Pimpi, founded in 1971, serves non-stop from noon until midnight, and until 00:30 on Fridays and Saturdays. Antigua Casa de Guardia on the Alameda Principal, founded in 1840, closes at 15:00 on Sundays. For a set-piece dinner, Palodú offers menus at €115 and €135 per person and closes Sunday to Tuesday, while Kaleja requires a card to confirm a booking. Morning coffee is easy at Santa Coffee in Soho, which roasts its own beans and opens at 8:00 on weekdays."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Buy the €10 combined Alcazaba and Gibralfaro ticket, then walk down to the Teatro Romano and the Museo Picasso Málaga."
+        ],
+        [
+          "A slower morning",
+          "Have coffee at Santa Coffee in Soho from 8:00 on weekdays, then spend a few hours in La Concepción botanical garden, open Tuesday to Sunday."
+        ],
+        [
+          "Before booking",
+          "Check closing days: the Centre Pompidou shuts on Tuesdays, several museums on Mondays, Palodú Sunday to Tuesday, and Kaleja charges €100 per guest for late cancellations."
+        ]
+      ],
+      trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on October 27, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();
