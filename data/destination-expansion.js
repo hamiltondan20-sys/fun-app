@@ -6465,4 +6465,112 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 28 distinct recommendations in this guide were checked against their operators' own websites on October 27, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Cologne, Germany: source review of 2026-10-27 (docs/content-research/cologne-2026-10-27.md).
+  {
+    const cityKey = "Cologne, Germany";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Cologne Cathedral","Museum Ludwig","Kolumba","Kölner Seilbahn"],
+      bestFirstTimers: ["Cologne Cathedral","Museum Ludwig","Schokoladenmuseum","Früh am Dom"],
+      bestRestaurants: ["taku","Ox & Klee","Hanse Stube","Brauhaus Sion"],
+      bestBudget: ["Päffgen (Friesenstraße)","Kölner Seilbahn","Museum für Ostasiatische Kunst","NS-Dokumentationszentrum (EL-DE-Haus)"],
+      bestLuxury: ["taku","Hanse Stube","Charles Bar","Ox & Klee"],
+      bestCouples: ["Kolumba","Ox & Klee","Charles Bar","Kölner Seilbahn"],
+      bestKids: ["Kölner Zoo","Schokoladenmuseum","Kölner Seilbahn","Deutsches Sport & Olympia Museum"],
+      bestSolo: ["Museum Ludwig","Käthe Kollwitz Museum Köln","Museum Schnütgen","Café Reichard"],
+      bestUnique: ["Farina Fragrance Museum","Rautenstrauch-Joest-Museum","MAKK – Museum für Angewandte Kunst Köln","Römisch-Germanisches Museum (Belgisches Haus)"],
+      bestBreakfast: ["Café Reichard","Gaffel am Dom"],
+      bestLunch: ["Gaffel am Dom","Hanse Stube","Peters Brauhaus (Mühlengasse)","Früh am Dom"],
+      bestDinner: ["Brauhaus Sion","Päffgen (Friesenstraße)","taku","Ox & Klee"],
+      bestCocktails: ["Charles Bar"],
+      bestBakeries: ["Café Konditorei Wahlen","Törtchen Törtchen (Apostelnstraße)"],
+      bestCoffee: ["Café Reichard","Café Konditorei Wahlen"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Cologne Cathedral": "Kölner Dom Domkloster 4 Köln",
+      "Museum Ludwig": "Museum Ludwig Heinrich-Böll-Platz Köln",
+      "Kolumba": "Kolumba Kolumbastraße 4 Köln",
+      "Kölner Seilbahn": "Kölner Seilbahn Riehler Straße 180 Köln",
+      "Schokoladenmuseum": "Schokoladenmuseum Am Schokoladenmuseum 1a Köln",
+      "Früh am Dom": "Früh am Dom Am Hof 12-18 Köln",
+      "taku": "taku Excelsior Hotel Ernst Trankgasse 1-5 Köln",
+      "Ox & Klee": "Ox & Klee Im Zollhafen 18 Köln",
+      "Hanse Stube": "Hanse Stube Excelsior Hotel Ernst Trankgasse 1-5 Köln",
+      "Brauhaus Sion": "Brauhaus Sion Unter Taschenmacher 5-7 Köln",
+      "Päffgen (Friesenstraße)": "Päffgen Friesenstraße 64-66 Köln",
+      "Museum für Ostasiatische Kunst": "Museum für Ostasiatische Kunst Universitätsstraße 100 Köln",
+      "NS-Dokumentationszentrum (EL-DE-Haus)": "NS-Dokumentationszentrum Appellhofplatz 23-25 Köln",
+      "Charles Bar": "Charles Bar Excelsior Hotel Ernst Trankgasse 1-5 Köln",
+      "Kölner Zoo": "Kölner Zoo Riehler Straße 173 Köln",
+      "Deutsches Sport & Olympia Museum": "Deutsches Sport & Olympia Museum Im Zollhafen 1 Köln",
+      "Käthe Kollwitz Museum Köln": "Käthe Kollwitz Museum Neumarkt 18-24 Köln",
+      "Museum Schnütgen": "Museum Schnütgen Cäcilienstraße 29-33 Köln",
+      "Café Reichard": "Café Reichard Unter Fettenhennen 11 Köln",
+      "Farina Fragrance Museum": "Farina Duftmuseum Obenmarspforten 21 Köln",
+      "Rautenstrauch-Joest-Museum": "Rautenstrauch-Joest-Museum Cäcilienstraße 29-33 Köln",
+      "MAKK – Museum für Angewandte Kunst Köln": "Museum für Angewandte Kunst An der Rechtschule 7 Köln",
+      "Römisch-Germanisches Museum (Belgisches Haus)": "Römisch-Germanisches Museum Belgisches Haus Cäcilienstraße 46 Köln",
+      "Gaffel am Dom": "Gaffel am Dom Bahnhofsvorplatz 1 Köln",
+      "Peters Brauhaus (Mühlengasse)": "Peters Brauhaus Mühlengasse 1 Köln",
+      "Café Konditorei Wahlen": "Café Wahlen Hohenstaufenring 64 Köln",
+      "Törtchen Törtchen (Apostelnstraße)": "Törtchen Törtchen Apostelnstraße 19 Köln"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Cologne" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "The cathedral, city museums, the zoo and cable car, with Kölsch brewhouses, fine dining, cafés and a hotel bar checked against their own websites.";
+    cityGuide.highlights = ["Cologne Cathedral","Museum Ludwig","Kolumba","Schokoladenmuseum"];
+    cityGuide.tip = "Sightseeing inside Cologne Cathedral has required a ticket since 1 July 2026, while the north transept entrance stays free for prayer.";
+    data.destinationFacts[cityKey] = "Sightseeing inside Cologne Cathedral has required a ticket since 1 July 2026, while the north transept entrance stays free for prayer.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "The cathedral, city museums, the zoo and cable car, with Kölsch brewhouses, fine dining, cafés and a hotel bar checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays and Tuesdays",
+        "copy": "MAKK, Museum Schnütgen, the Rautenstrauch-Joest-Museum, the Käthe Kollwitz Museum and the Museum für Ostasiatische Kunst close on Mondays. Kolumba closes on Tuesdays instead, and Café Konditorei Wahlen is shut on Mondays."
+      },
+      {
+        "label": "Tickets",
+        "value": "Book ahead online",
+        "copy": "Cologne Cathedral sells sightseeing tickets online and the Schokoladenmuseum suggests buying in its webshop to skip the box-office wait. Kölner Zoo day tickets bought online are cheaper and include VRS public transport."
+      },
+      {
+        "label": "Walk-in or booking",
+        "value": "Rules vary",
+        "copy": "The Kölner Seilbahn sells tickets only at the counter and takes no reservations. Päffgen takes table reservations only by phone from 12:00, and taku strongly recommends booking early."
+      },
+      {
+        "label": "Guided entry",
+        "value": "Tour only",
+        "copy": "The Farina Fragrance Museum can only be seen on a guided tour, offered in English, German, Chinese and French, and online booking is recommended."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Start with the cathedral and the museums around it, and book Altstadt dinners and timed tours before you arrive.",
+      intro: [
+        "Cologne Cathedral is the obvious place to start, but plan for the change made on 1 July 2026: sightseeing inside is now ticketed. You can see the interior daily from about 10:00 to 17:45, with shorter afternoon hours on Sundays and church holidays, and the north transept entrance stays free for prayer. The tower is open from 09:00, until 16:00 from November to February. Museum Ludwig is next door and keeps late hours until 22:00 on the first Thursday of each month.",
+        "This winter Museum Ludwig opens two new shows: Lee Ufan, winner of the Wolfgang-Hahn-Preis 2026, from 7 November to 4 April 2027, and Man Ray's Kiki in the photography rooms from 31 October to 13 June 2027. Kolumba's annual exhibition on norm and deviation runs until 1 August 2027, daily from 12:00 to 17:00 except Tuesdays. MAKK shows Hans Georg Esch's architectural photography until 17 January 2027, and the Museum für Ostasiatische Kunst has temporarily lowered its admission to €7.50.",
+        "The Römisch-Germanisches Museum's building on Roncalliplatz is closed for renovation, so you'll find its collection in the Belgisches Haus on Cäcilienstraße, a short walk from the Rautenstrauch-Joest-Museum and Museum Schnütgen. The Wallraf-Richartz-Museum is closed until the end of 2028. With children, Kölner Zoo is open every day of the year, and its China Lights run from 11 December to 31 January. The Schokoladenmuseum opens daily from 10:00 to 18:00.",
+        "For food, Kölsch brewhouses fill the Altstadt. Brauhaus Sion opens daily from noon, Gaffel am Dom serves breakfast from 10:00 to 11:30, and Päffgen on Friesenstraße takes bookings only by phone. For a special evening, taku and the Hanse Stube are both in the Excelsior Hotel Ernst, where the Charles Bar opens daily from noon. Ox & Klee serves dinner Wednesday to Saturday. Café Reichard by the cathedral opens daily from 8:30 and lays out a breakfast buffet at weekends."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Buy your Cologne Cathedral sightseeing ticket online, then cross to Museum Ludwig and finish with a Kölsch at Früh am Dom or Brauhaus Sion."
+        ],
+        [
+          "A slower morning",
+          "Café Reichard opens at 8:30 every day and serves a breakfast buffet on Saturdays, Sundays and holidays until 11:30."
+        ],
+        [
+          "Before booking",
+          "Many city museums close on Mondays and Kolumba on Tuesdays, while Päffgen takes table bookings only by phone from noon."
+        ]
+      ],
+      trust: "All 27 distinct recommendations in this guide were checked against their operators' own websites on October 27, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

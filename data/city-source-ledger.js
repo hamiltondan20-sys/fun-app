@@ -5,6 +5,656 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Cologne, Germany": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-27",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Museum Ludwig, the Römisch-Germanisches Museum interim site, Früh am Dom and the NS-Dokumentationszentrum did not publish full weekly hours on the pages read; taku's hours were stated only for its October 2026 anniversary menu, and the Hanse Stube's only for goose season (30 Oct-23 Dec 2026). Peters Brauhaus, Päffgen, Café Reichard and Café Konditorei Wahlen showed no 2026-dated item beyond hours, menus or copyright lines. The Kölner Seilbahn goes into winter break after 8 November apart from Advent weekends. KölnTriangle, Odysseum, Little Link, Suderman, Van Dyck, Heilandt, Hallmackenreuther and Monkey Bar Köln could not be read (connection, DNS, TLS, 403 or 429 errors), Le Moissonnier's address and ERNST Kaffeeröster's house numbers were not readable, and City of Cologne pages for the Flora and the weekly markets returned HTTP 410, so no market, park or dedicated coffee roaster is included.",
+    "sourceUrls": [
+      "docs/content-research/cologne-2026-10-27.md",
+      "docs/content-research/cologne-2026-10-27.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Hohenzollern Bridge",
+        "checkedOn": "2026-10-27",
+        "reason": "no operator or public-body page read giving an address and current status; railway bridge not checkable under the evidence rules"
+      },
+      {
+        "name": "Wallraf-Richartz-Museum",
+        "url": "https://www.wallraf.museum/aktuell/voruebergehend-geschlossen/",
+        "checkedOn": "2026-10-27",
+        "reason": "official site: closed \"bis Ende 2028 für eine zweijährige Generalinstandsetzung\""
+      },
+      {
+        "name": "KölnTriangle viewing platform",
+        "url": "https://www.koelntriangle.de/",
+        "checkedOn": "2026-10-27",
+        "reason": "fetch failed: connection refused"
+      },
+      {
+        "name": "Le Moissonnier",
+        "url": "https://www.lemoissonnier.de/",
+        "checkedOn": "2026-10-27",
+        "reason": "operating (October 2026 dated content, Tue-Sat hours) but street address not readable on fetched pages; contact/impressum URLs returned 404"
+      },
+      {
+        "name": "ERNST Kaffeeröster",
+        "url": "https://www.ernst-kaffee.de/pages/kaffeebars",
+        "checkedOn": "2026-10-27",
+        "reason": "coffee bars named only by street (Bonner Straße, Weyertal) with no house numbers or hours; repeated HTTP 429"
+      },
+      {
+        "name": "Van Dyck Kaffee",
+        "url": "https://www.vandyck.de/",
+        "checkedOn": "2026-10-27",
+        "reason": "fetch failed: certificate error (vandyck.de); van-dyck-kaffee.de did not resolve"
+      },
+      {
+        "name": "Heilandt Kaffee",
+        "url": "https://www.heilandt.de/",
+        "checkedOn": "2026-10-27",
+        "reason": "fetch failed: HTTP 429"
+      },
+      {
+        "name": "Little Link",
+        "url": "https://www.little-link.de/",
+        "checkedOn": "2026-10-27",
+        "reason": "fetch failed: domain did not resolve"
+      },
+      {
+        "name": "Suderman",
+        "url": "https://www.suderman.de/",
+        "checkedOn": "2026-10-27",
+        "reason": "fetch failed: TLS error"
+      },
+      {
+        "name": "Monkey Bar Köln (25hours The Circle)",
+        "url": "https://www.25hours-hotels.com/hotels/koeln/the-circle",
+        "checkedOn": "2026-10-27",
+        "reason": "bar page returned HTTP 403; hotel page gave address but no bar hours"
+      },
+      {
+        "name": "Brauhaus zur Malzmühle",
+        "url": "https://www.muehlenkoelsch.de/",
+        "checkedOn": "2026-10-27",
+        "reason": "site gives \"am Heumarkt 6\" but no hours, menu or dated operating evidence for the Brauhaus"
+      },
+      {
+        "name": "Salon Schmitz",
+        "url": "https://www.salonschmitz.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "pages read showed no address or hours"
+      },
+      {
+        "name": "Hallmackenreuther",
+        "url": "https://www.hallmackenreuther.de/",
+        "checkedOn": "2026-10-27",
+        "reason": "fetch failed: domain did not resolve"
+      },
+      {
+        "name": "Zeit für Brot",
+        "url": "https://www.zeitfuerbrot.com/baeckereien",
+        "checkedOn": "2026-10-27",
+        "reason": "official branch list shows no Cologne branch"
+      },
+      {
+        "name": "Merzenich",
+        "url": "https://www.merzenich.de/",
+        "checkedOn": "2026-10-27",
+        "reason": "homepage gave only company address, no branch address or hours"
+      },
+      {
+        "name": "Flora und Botanischer Garten",
+        "url": "https://www.stadt-koeln.de/leben-in-koeln/freizeit-natur-sport/flora-und-botanischer-garten/",
+        "checkedOn": "2026-10-27",
+        "reason": "City of Cologne page returned HTTP 410"
+      },
+      {
+        "name": "Cologne weekly markets",
+        "url": "https://www.stadt-koeln.de/leben-in-koeln/freizeit-natur-sport/wochenmaerkte/",
+        "checkedOn": "2026-10-27",
+        "reason": "City of Cologne page returned HTTP 410"
+      },
+      {
+        "name": "Odysseum",
+        "url": "https://www.odysseum.de/",
+        "checkedOn": "2026-10-27",
+        "reason": "fetch failed: connection refused"
+      },
+      {
+        "name": "Cathedral at opening",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Rhine sunset walk",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Rhine sunset walk",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Ehrenfeld street art",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "a traditional brewery meal",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Cologne market or cafe",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local dinner in Altstadt",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Belgisches Viertel",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Ehrenfeld",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Altstadt",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Altstadt walk",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Belgisches Viertel",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Ehrenfeld",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Ehrenfeld",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Cologne Cathedral",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Altstadt",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Cathedral at opening",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Belgisches Viertel",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Museum Ludwig",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Altstadt evening",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Belgisches Viertel",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Ehrenfeld",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Altstadt",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Cologne Cathedral",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Belgisches Viertel",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Ehrenfeld",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Altstadt",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Cologne Cathedral",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Altstadt cafe or market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Ehrenfeld",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Ehrenfeld",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Altstadt",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Altstadt",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Belgisches Viertel bakery or market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Cologne Cathedral",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Ehrenfeld",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Altstadt",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Museum Ludwig",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Ehrenfeld",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Altstadt",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Belgisches Viertel",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Ehrenfeld",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Altstadt",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Altstadt",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Belgisches Viertel",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Hohenzollern Bridge",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Altstadt",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Belgisches Viertel morning market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Cologne Cathedral",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Ehrenfeld",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Altstadt",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Belgisches Viertel",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Ehrenfeld",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Cologne Cathedral": {
+        "url": "https://www.koelner-dom.de/besuchen/oeffnungszeiten",
+        "sourceType": "operator's own site (Kölner Dom)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Hours page states \"Seit 1.7.2026 ist die Besichtigung des Kölner Domes kostenpflichtig\" and links online tickets; warns of short-notice restrictions due to construction or events."
+      },
+      "Museum Ludwig": {
+        "url": "https://www.museum-ludwig.de/",
+        "sourceType": "operator's own site (City of Cologne museum)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Current and upcoming exhibitions listed: \"Lee Ufan - Wolfgang-Hahn-Preis 2026\" 7.11.2026-4.4.2027, \"Man Ray: Kiki\" 31.10.2026-13.6.2027, \"Schultze Projects #5: Jana Euler\" 18.7.2026-July 2028; online ticket shop."
+      },
+      "Schokoladenmuseum": {
+        "url": "https://www.schokoladenmuseum.de/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "News dated 02.10.2026 (autumn-holiday family programme) and 12.10.2026; takes part in the Kölner Museumsnacht on 7 Nov 2026; advance tickets in webshop."
+      },
+      "Kölner Zoo": {
+        "url": "https://www.koelnerzoo.de/",
+        "sourceType": "operator's own site (Aktiengesellschaft Zoologischer Garten Köln)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "\"China Lights\" 11 Dec 2026-31 Jan 2027 advertised; online day tickets from 22.50 EUR include VRS public transport; weekly Friday 18:30 aquarium torch tour."
+      },
+      "Kölner Seilbahn": {
+        "url": "https://www.koelner-seilbahn.de/fahrten.html",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "2026 schedule and price list: one way 5.50 EUR / round trip 9.50 EUR adult; Advent rides 28/29.11-19/20.12.2026; \"Eine Reservierung ist nicht erforderlich bzw. möglich.\""
+      },
+      "Römisch-Germanisches Museum (Belgisches Haus)": {
+        "url": "https://www.roemisch-germanisches-museum.de/",
+        "sourceType": "official public operator (City of Cologne museum)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "\"Sie finden uns jetzt im Belgischen Haus\"; \"Das Museum am Roncalliplatz ist wegen Sanierungsarbeiten geschlossen\"; construction notice around Belgisches Haus \"noch bis Oktober 2026\"."
+      },
+      "MAKK – Museum für Angewandte Kunst Köln": {
+        "url": "https://www.makk.de/",
+        "sourceType": "operator's own site (City of Cologne museum)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Exhibition \"Hans Georg Esch · Der architektonische Blick\" 11 June 2026-17 January 2027; collection presentation \"Faszination Schmuck\"."
+      },
+      "Museum Schnütgen": {
+        "url": "https://www.museum-schnuetgen.de/",
+        "sourceType": "operator's own site (City of Cologne museum)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Current exhibitions \"Licht in dunklen Zeiten\" and collection presentation marked \"Aktuell\"; preview \"Drachen. Mythos und Wirklichkeit\" (dates not shown)."
+      },
+      "Rautenstrauch-Joest-Museum": {
+        "url": "https://www.rautenstrauch-joest-museum.de/",
+        "sourceType": "operator's own site (City of Cologne museum)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Special exhibition \"r e t u r n\" 17.9.-6.12.26."
+      },
+      "Museum für Ostasiatische Kunst": {
+        "url": "https://www.museum-fuer-ostasiatische-kunst.de/",
+        "sourceType": "operator's own site (City of Cologne museum)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Exhibitions \"Schichten und Schnitte\" 18 June 2026-31 January 2027 and \"Zum Mondjahr des Pferdes\" to 31 January 2027; admission temporarily reduced to 7.50 EUR because of climate-control noise."
+      },
+      "Kolumba": {
+        "url": "https://www.kolumba.de/?language=eng",
+        "sourceType": "operator's own site (Archdiocese of Cologne art museum)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Annual exhibition \"»Have you ever fallen in love with a clock?« About norm and deviation\" 19 September 2026-1 August 2027."
+      },
+      "Käthe Kollwitz Museum Köln": {
+        "url": "https://www.kollwitz.de/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Exhibitions \"KOLLWITZ Ausgewählt\" 8 July-15 November 2026 and \"RE: Kollwitz, Bildstörung #2\" 29 September-15 November 2026."
+      },
+      "NS-Dokumentationszentrum (EL-DE-Haus)": {
+        "url": "https://www.nsdok.de/",
+        "sourceType": "operator's own site (City of Cologne)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Notice that the centre reopened on Tuesday 20 October, \"regulär ab 10 Uhr\", after closing for cleaning following an attack on Friday 16 October (year not stated on page)."
+      },
+      "Deutsches Sport & Olympia Museum": {
+        "url": "https://www.sportmuseum.de/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Autumn-holiday family programme and \"Museumsnacht 2026\" on 7 November."
+      },
+      "Farina Fragrance Museum": {
+        "url": "https://www.farina.org/",
+        "sourceType": "operator's own site (Farina House)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Live tour calendar for 28-29 October 2026 with English, German, Chinese and French slots; \"The tour is only possible as part of a guided tour.\""
+      },
+      "Früh am Dom": {
+        "url": "https://www.frueh-am-dom.de/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Event \"Bunt em FRÜH\" 31.10.2026 and notice on opening hours for 10-11 November 2026; table reservations online or via OpenTable."
+      },
+      "Gaffel am Dom": {
+        "url": "https://www.gaffelamdom.de/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "News \"BRINGS BRAUHAUSROCK\" dated 15 October 2026 and \"Konzerte im Fassbierkeller 2026/27\"; breakfast menu \"10.00 – 11.30 Uhr\" and a Mittagstisch."
+      },
+      "Brauhaus Sion": {
+        "url": "https://www.brauhaus-sion.de/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Pub quiz dates 23 November and 14 December 2026; \"Jeck em Sion\" on 11 November 2026; reservations by phone, email or website, groups of 10+ as enquiry."
+      },
+      "Peters Brauhaus (Mühlengasse)": {
+        "url": "https://www.peters-brauhaus.de/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Weekly menu labelled \"KW 43\" and table reservation link; no 2026-dated item found."
+      },
+      "Päffgen (Friesenstraße)": {
+        "url": "https://www.paeffgen-koelsch.de/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Published Brauhaus hours and reservation policy: \"wir nehmen Reservierungen nur telefonisch ab 12 Uhr an\"; © 2026."
+      },
+      "Hanse Stube": {
+        "url": "https://www.excelsiorhotelernst.com/kulinarik/hanse-stube/",
+        "sourceType": "operator's own site (Excelsior Hotel Ernst)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Goose season 30 Oct-23 Dec 2026 with lunch and dinner menus; 50th anniversary year; reservations at least 24 hours ahead during goose season."
+      },
+      "taku": {
+        "url": "https://www.excelsiorhotelernst.com/kulinarik/taku/",
+        "sourceType": "operator's own site (Excelsior Hotel Ernst)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "\"25 Jahre taku\" anniversary menu (4 courses 121 EUR, 6 courses 165 EUR); Four-Hands Dinner 7 November and Winzer Dinner 13 November 2026; \"eine frühzeitige Reservierung wird dringend empfohlen\"."
+      },
+      "Ox & Klee": {
+        "url": "https://www.oxundklee.de/kontakt",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Online booking requires choosing a menu per guest, with waitlist form; site lists \"Events 2026\"."
+      },
+      "Charles Bar": {
+        "url": "https://www.excelsiorhotelernst.com/kulinarik/charles-bar/",
+        "sourceType": "operator's own site (Excelsior Hotel Ernst)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Piano Nights 19 November and 17 December 2026 from 19:00, \"Eintritt frei, keine Reservierung erforderlich\"."
+      },
+      "Café Reichard": {
+        "url": "https://www.cafe-reichard.de/index.html",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Published daily hours and breakfast buffet \"Samstag, Sonntag und an Feiertagen von 08:30 bis 11:30 Uhr\"; no 2026-dated item found."
+      },
+      "Café Konditorei Wahlen": {
+        "url": "https://www.cafe-wahlen.de/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Published weekly hours and contact details; no 2026-dated text (only a 2026 upload path)."
+      },
+      "Törtchen Törtchen (Apostelnstraße)": {
+        "url": "https://www.toertchentoertchen.de/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Store listed with \"Volles Sortiment, Geschenke, Backzubehör, Pick up\"; recruiting for the Weihnachtsmarkt am Dom stand 16 November-23 December; Nippes and Braunsfeld cafés closed."
+      }
+    }
+  },
   "Strasbourg, France": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-27",

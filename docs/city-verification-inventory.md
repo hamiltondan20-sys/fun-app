@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 63.
-- Classifier-passed (published, not fully documented in that format): 129.
+- Source-verified (complete dated evidence format): 64.
+- Classifier-passed (published, not fully documented in that format): 128.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -136,7 +136,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Cinque Terre, Italy | cinque-terre | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Coimbra, Portugal | coimbra | classifier-passed | not-reviewed | 0 | 11 | 15 | 5 | None |
 | Colmar, France | colmar | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Cologne, Germany | cologne | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Cologne, Germany | cologne | source-verified | source-checked | 27 | 46 | 15 | 15 | None |
 | Como, Italy | como | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Copenhagen, Denmark | copenhagen | source-verified | source-checked | 28 | 51 | 15 | 15 | None |
 | Coral Coast, Fiji | coral-coast | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
