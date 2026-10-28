@@ -6685,4 +6685,110 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 31 distinct recommendations in this guide were checked against their operators' own websites on October 27, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Bilbao, Spain: source review of 2026-10-27 (docs/content-research/bilbao-2026-10-27.md).
+  {
+    const cityKey = "Bilbao, Spain";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Guggenheim Museum Bilbao","Bilbao Fine Arts Museum","Puente Bizkaia","Catedral de Santiago"],
+      bestFirstTimers: ["Guggenheim Museum Bilbao","Bilboats","Catedral de Santiago","Sorginzulo (Plaza Nueva 10)"],
+      bestRestaurants: ["Nerua Guggenheim Bilbao","Mina","La Viña del Ensanche","Casa Rufo"],
+      bestBudget: ["Bilbao Fine Arts Museum","Itsasmuseum Bilbao","Gure Toki","Sorginzulo (Plaza Nueva 10)"],
+      bestLuxury: ["Nerua Guggenheim Bilbao","Mina","Zortziko","Etxanobe"],
+      bestCouples: ["Bilboats","Puente Bizkaia","La Mula de Moscú","Zortziko"],
+      bestKids: ["Itsasmuseum Bilbao","Bilboats","Puente Bizkaia","Guggenheim Museum Bilbao"],
+      bestSolo: ["Bilbao Fine Arts Museum","ARVO Specialty Coffee (Guggenheim)","Teatro Arriaga","Gin Fizz"],
+      bestUnique: ["Puente Bizkaia","Teatro Arriaga","Itsasmuseum Bilbao","Bilboats"],
+      bestBreakfast: ["Kafe Museoa","Café Iruña","ARVO Specialty Coffee (Guggenheim)","Gure Toki"],
+      bestLunch: ["Bascook","Casa Rufo","Café Iruña","Bar El Globo (Diputación)"],
+      bestDinner: ["La Viña del Ensanche","Mina","Casa Rufo","Bascook"],
+      bestCocktails: ["La Mula de Moscú","Gin Fizz","MOA Lounge Bar"],
+      bestBakeries: ["Arrese (Gran Vía)","Pastelería California"],
+      bestCoffee: ["ARVO Specialty Coffee (Guggenheim)","Kafe Museoa","Café Iruña"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Guggenheim Museum Bilbao": "Guggenheim Museum Bilbao Avenida Abandoibarra 2 Bilbao",
+      "Bilbao Fine Arts Museum": "Bilbao Fine Arts Museum Plaza Eduardo Chillida Bilbao",
+      "Puente Bizkaia": "Puente Bizkaia Calle Barria 3 Las Arenas Getxo",
+      "Catedral de Santiago": "Catedral de Santiago Plaza de Santiago 1 Bilbao",
+      "Bilboats": "Bilboats Plaza Pio Baroja 1 Bilbao",
+      "Sorginzulo (Plaza Nueva 10)": "Sorginzulo Plaza Nueva 10 Bilbao",
+      "Nerua Guggenheim Bilbao": "Nerua Avenida Abandoibarra 2 Bilbao",
+      "Mina": "Restaurante Mina Calle Ercilla 37 Bilbao",
+      "La Viña del Ensanche": "La Viña del Ensanche Diputación 10 Bilbao",
+      "Casa Rufo": "Casa Rufo Hurtado de Amezaga 5 Bilbao",
+      "Itsasmuseum Bilbao": "Itsasmuseum Muelle Ramon de la Sota 1 Bilbao",
+      "Gure Toki": "Gure Toki Plaza Nueva 12 Bilbao",
+      "Zortziko": "Zortziko Alameda Mazarredo 17 Bilbao",
+      "Etxanobe": "Etxanobe Calle Juan Ajuriaguerra 8 Bilbao",
+      "La Mula de Moscú": "La Mula de Moscú Alameda Rekalde 15 Bilbao",
+      "ARVO Specialty Coffee (Guggenheim)": "ARVO Specialty Coffee Barraincúa 9 Bilbao",
+      "Teatro Arriaga": "Teatro Arriaga Plaza Arriaga 1 Bilbao",
+      "Gin Fizz": "Gin Fizz Lersundi 1 Bilbao",
+      "Kafe Museoa": "Kafe Museoa Plaza Eduardo Chillida Bilbao",
+      "Café Iruña": "Café Iruña Jardines de Albia Bilbao",
+      "Bascook": "Bascook Calle Barroeta Aldamar 8 Bilbao",
+      "Bar El Globo (Diputación)": "Bar El Globo Calle Diputación 8 Bilbao",
+      "MOA Lounge Bar": "MOA Lounge Bar Rodríguez Arias 28 Bilbao",
+      "Arrese (Gran Vía)": "Arrese Gran Vía 24 Bilbao",
+      "Pastelería California": "Pastelería California Madariaga Etorbidea 9 Bilbao"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Bilbao" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Riverside museums, a transporter bridge, river cruises and Casco Viejo pintxo bars, with breakfast cafés, booked dinners and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Guggenheim Museum Bilbao","Bilbao Fine Arts Museum","Puente Bizkaia","Itsasmuseum Bilbao"];
+    cityGuide.tip = "Mondays are the main closing day: the Guggenheim (apart from listed dates such as December 7 and 28), the Itsasmuseum, Nerua and Gin Fizz all close, while the Bilbao Fine Arts Museum opens Mondays and is free on Tuesdays from 10:00 to 18:00.";
+    data.destinationFacts[cityKey] = "Mondays are the main closing day: the Guggenheim (apart from listed dates such as December 7 and 28), the Itsasmuseum, Nerua and Gin Fizz all close, while the Bilbao Fine Arts Museum opens Mondays and is free on Tuesdays from 10:00 to 18:00.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Riverside museums, a transporter bridge, river cruises and Casco Viejo pintxo bars, with breakfast cafés, booked dinners and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays and Sundays",
+        "copy": "The Guggenheim Museum Bilbao and Itsasmuseum Bilbao list Tuesday-to-Sunday hours, and Nerua and Gin Fizz close on Mondays. La Viña del Ensanche closes Sundays, Mondays and holidays, Mina rests Mondays and Tuesdays, and Bascook closes Sunday and Monday."
+      },
+      {
+        "label": "Tickets",
+        "value": "Buy direct",
+        "copy": "The Guggenheim advises buying tickets only on its official website, includes an audio guide with every ticket and gives no refunds. Puente Bizkaia sells walkway tickets online, and Bilboats publishes 2026 fares from €15 for the 60-minute Navegando Bilbao cruise."
+      },
+      {
+        "label": "Booking rules",
+        "value": "Book ahead for dinner",
+        "copy": "Nerua charges €50 per person for no-shows or cancellations within 24 hours, and La Viña del Ensanche takes 2–8 people from 24 hours to three months ahead, holding tables for 15 minutes. La Mula de Moscú takes cocktail bookings Monday to Thursday only, not on Fridays or Saturdays."
+      },
+      {
+        "label": "Free entry and ages",
+        "value": "Under 18 free",
+        "copy": "Under-18s enter free at the Guggenheim, the Bilbao Fine Arts Museum and the Itsasmuseum, which is also free to everyone on Sundays from 5 pm. On Bilboats, babies under 4 pay €2, and Kafe Museoa has its own entrance, so you need no museum ticket."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Plan your museum days for Tuesday to Sunday, keep a Monday for the Bilbao Fine Arts Museum or a river cruise, and book dinners well ahead.",
+      intro: [
+        "Bilbao's riverside museums anchor this guide. The Guggenheim Museum Bilbao, at Avenida Abandoibarra 2, opens Tuesday to Sunday from 10 am to 7 pm and closes on Mondays except listed dates such as December 7 and 28. Its programme lists Steve McQueen: 66–76–26 and Pipilotti Rist's Ever is Over All, both running into 2027, and every ticket includes an audio guide. A short walk away on Plaza Eduardo Chillida, the Bilbao Fine Arts Museum is free on Tuesdays from 10:00 to 18:00 and shows Balerdi. The Infinite Line until February 14, 2027.",
+        "Further down the river, the Itsasmuseum on Muelle Ramón de la Sota opens Tuesday to Sunday from 11:00 to 19:00, with free entry for under-18s, and for everyone on Sundays from 5 pm. Bilboats runs 60-minute Navegando Bilbao cruises from the Pio Baroja pier, with daily departures at 13:00, 15:45 and 17:00 in November and December, and no sailings in January or February. At the river mouth in Getxo, Puente Bizkaia sells walkway tickets online and currently posts a temporary lift timetable, so check its site before you go.",
+        "In the Casco Viejo, the Catedral de Santiago on Plaza de Santiago opens Monday to Saturday from 10:00 and Sundays from 13:00, with last entry 45 minutes before closing and a combined visit with San Antón church. Plaza Nueva gathers pintxo bars: Sorginzulo lists 2026 prizes in the Casco Viejo cod pintxo contest, and Gure Toki opens from 9:00 most days. Teatro Arriaga's box office on Plaza Arriaga opens daily from 11:30. For breakfast, Kafe Museoa serves breakfast and brunch from 10:00 without a museum ticket, and ARVO opens at 8:30 near the Guggenheim.",
+        "For dinner, you will need to book. Nerua at the Guggenheim closes on Mondays outside summer and charges €50 per person for no-shows or cancellations within 24 hours. Mina, now at Ercilla 37, rests on Mondays and Tuesdays, and La Viña del Ensanche takes bookings for 2–8 people from 24 hours to three months ahead. Café Iruña offers a weekday menu at €23.80. For cocktails, La Mula de Moscú on Alameda Rekalde takes cocktail bookings Monday to Thursday only, and Gin Fizz on Lersundi closes on Mondays."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Start at the Guggenheim Museum Bilbao (Tuesday to Sunday, 10 am to 7 pm), then take a 60-minute Bilboats cruise from the nearby Pio Baroja pier."
+        ],
+        [
+          "A slower morning",
+          "Have breakfast at ARVO from 8:30 or Kafe Museoa from 10:00, then walk into the Bilbao Fine Arts Museum, which is free on Tuesdays."
+        ],
+        [
+          "Before booking",
+          "Nerua charges €50 per person for late cancellations, and La Viña del Ensanche books from 24 hours to three months ahead and closes Sundays and Mondays."
+        ]
+      ],
+      trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 27, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

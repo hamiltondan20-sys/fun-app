@@ -1,0 +1,949 @@
+{
+  "city": "Bilbao, Spain",
+  "checkedOn": "2026-10-27",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Guggenheim Museum Bilbao",
+      "kind": "museum",
+      "url": "https://www.guggenheim-bilbao.eus/en/plan-your-visit",
+      "sourceType": "operator's own site",
+      "address": "Avenida Abandoibarra, 2 - 48009 Bilbao, Spain (from https://www.guggenheim-bilbao.eus/en/useful-information/getting-here)",
+      "operatingEvidence": "Current exhibitions listed: 'Steve McQueen: 66–76–26, 10.09.2026 – 02.21.2027' and 'Ever is Over All. Pipilotti Rist, 10.01.2026 – 01.17.2027'. 'All tickets include audio guide.'",
+      "hours": "'Tuesday through Sunday, from 10 am to 7 pm'; closed Mondays except listed dates (October 12, December 7 and 28 among them); closed December 25 and January 1; closes 5 pm on December 24 and 31.",
+      "confidence": "high"
+    },
+    {
+      "name": "Bilbao Fine Arts Museum",
+      "kind": "museum",
+      "url": "https://bilbaomuseoa.eus/visita/planifica-tu-visita",
+      "sourceType": "operator's own site",
+      "address": "Plaza Eduardo Chillida, 48009 Bilbao, Bizkaia",
+      "operatingEvidence": "Exhibitions 'Balerdi' (The Infinite Line) October 6, 2026 to February 14, 2027 and 'Visions from Overseas' October 6, 2026 to January 24, 2027; page announces the 'New Bilbao Fine Arts Museum', dated October 7, 2026.",
+      "hours": "Monday to Saturday (except Tuesday) 10:00–19:00, collections until 18:00; Tuesday 10:00–18:00 'Entrada gratuita'; Sunday 10:00–15:00; closed 25 December, 1 and 6 January.",
+      "confidence": "high"
+    },
+    {
+      "name": "Kafe Museoa",
+      "kind": "cafe",
+      "url": "https://www.bilbaomuseoa.eus/museo/cafeteria",
+      "sourceType": "official public operator (Bilbao Fine Arts Museum)",
+      "address": "Plaza Eduardo Chillida, 48009 Bilbao, Bizkaia (inside the museum, own entrance)",
+      "operatingEvidence": "Serves breakfast, brunch and à la carte; menu and brunch-menu PDFs posted; own entrance, no museum ticket needed; footer '© 2026 Museo de Bellas Artes de Bilbao'.",
+      "hours": "Monday to Saturday 10:00–20:00; Sunday 10:00–16:30 (the museum's visit page gives 10:00–19:00 Mon–Sat and 10:00–15:00 Sun for the shop and café).",
+      "confidence": "medium"
+    },
+    {
+      "name": "Itsasmuseum Bilbao",
+      "kind": "museum",
+      "url": "https://www.itsasmuseum.eus/en/visit/tickets/",
+      "sourceType": "operator's own site",
+      "address": "Muelle Ramon de la Sota Kaia, 1 48013 Bilbao (Bizkaia)",
+      "operatingEvidence": "Temporary exhibitions listed including 'Bilbao 1700. Four Perspectives' and 'La Naval. A Forge of Titans'; ticket prices published (general 10 €); '©2026 - Itsasmuseum Bilbao'.",
+      "hours": "'Horario de martes a domingo de 11:00 a 19:00' (Monday not listed).",
+      "confidence": "high"
+    },
+    {
+      "name": "Puente Bizkaia",
+      "kind": "landmark",
+      "url": "https://puente-colgante.com/en/",
+      "sourceType": "operator's own site",
+      "address": "C/ Barria, Nº 3 – Bajo 48.930 Las Arenas (Getxo) – Bizkaia",
+      "operatingEvidence": "Walkway tickets bookable online; temporary notice that the lift runs 'de 10:00h a 14:00h y de 16:00h a 20:00h' with capacity limited to 50%; '© Puente Bizkaia 2026'.",
+      "hours": "Regular hours not published; temporary lift schedule 10:00–14:00 and 16:00–20:00.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Catedral de Santiago",
+      "kind": "landmark",
+      "url": "https://www.catedralbilbao.com/visita/",
+      "sourceType": "operator's own site",
+      "address": "Plaza de Santiago, 1 48005 Bilbao, Vizcaya (España)",
+      "operatingEvidence": "Visit prices published (general 10,00 €) and a combined visit with Iglesia de San Antón offered; '2026 © Catedral de Bilbao'.",
+      "hours": "Monday to Saturday 10:00–18:00 (another block says 18:30); Sunday 13:00–18:00/18:30; 'Último acceso 45 minutos antes del cierre'; 'Horarios sujetos a modificaciones por motivos de culto'.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Teatro Arriaga",
+      "kind": "landmark",
+      "url": "https://www.teatroarriaga.eus/horarios-y-contacto/",
+      "sourceType": "official public operator (Bilbao municipal theatre)",
+      "address": "Pza. Arriaga,1 48005 Bilbao",
+      "operatingEvidence": "Programme lists performances on 29 October 2026 (Banda Municipal de Bilbao), 30–31 October 2026 ('Panorama desde el puente') and 1 November 2026 ('Pasión Almodóvar').",
+      "hours": "Box office: Mon, Tue, Sat, Sun 11:30–14:00 and 17:00–19:00; Wed–Fri 11:30–14:00 and 17:00–20:00.",
+      "confidence": "high"
+    },
+    {
+      "name": "Bilboats",
+      "kind": "scenic",
+      "url": "https://www.bilboats.com/",
+      "sourceType": "operator's own site",
+      "address": "Pantalan Pio Baroja • 48001 Bilbao (shop at Plaza Pio Baroja 1)",
+      "operatingEvidence": "2026 schedules and prices published: 'Navegando Bilbao' (60 min) general €15; November–December daily at 13:00, 15:45 and 17:00; closed January and February; 'Copyright 2026 Bilboats'.",
+      "hours": "Navegando Bilbao Nov–Dec 13:00, 15:45, 17:00; Navegando al Mar Oct–Dec weekends and holidays at 10:30; closed Jan–Feb.",
+      "confidence": "high"
+    },
+    {
+      "name": "Café Iruña",
+      "kind": "cafe",
+      "url": "https://www.cafeirunabilbao.com/",
+      "sourceType": "operator's own site",
+      "address": "BILBAO, JARDINES DE ALBIA – BIZKAIA, 48001",
+      "operatingEvidence": "Weekday daily menu at '23,80€' offered 'from Monday to Friday', with menu PDF linked; weekly hours published. No 2026-dated content seen.",
+      "hours": "Mon–Thu 09:00–23:00; Fri 09:00–24:00; Sat 11:00–24:00; Sun 11:00–23:00.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Nerua Guggenheim Bilbao",
+      "kind": "meal",
+      "url": "https://www.neruaguggenheimbilbao.com/reservas/",
+      "sourceType": "operator's own site",
+      "address": "Av. Abandoibarra, 2. 48001 Bilbao, Bizkaia.",
+      "operatingEvidence": "Online reservations with cancellation rule: free 'hasta 24 horas antes', otherwise '50 € por comensal'; homepage shows 2026 Michelin star badge and a post dated July 2026.",
+      "hours": "Kitchen Tue, Wed, Sun 13:00–14:30; Thu–Sat 13:00–14:30 and 20:00–21:00; 'Lunes cerrado'; open daily lunch and dinner 15 June–27 September.",
+      "confidence": "high"
+    },
+    {
+      "name": "Mina",
+      "kind": "meal",
+      "url": "https://www.restaurantemina.es/",
+      "sourceType": "operator's own site",
+      "address": "Calle Ercilla, 37 48011 Bilbao ('NUEVA DIRECCIÓN')",
+      "operatingEvidence": "'RESERVA ONLINE' link, published kitchen times and weekly rest days; site flags a new address. No 2026-dated content seen.",
+      "hours": "Kitchen 14:00–14:45 and 21:00–21:45; 'Descanso semanal: lunes y martes'.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Zortziko",
+      "kind": "meal",
+      "url": "https://www.zortziko.es/",
+      "sourceType": "operator's own site",
+      "address": "Alameda Mazarredo 17 48001 Bilbao (Bizkaia)",
+      "operatingEvidence": "'Reservar mesa ahora' online booking plus phone and WhatsApp booking lines. No 2026-dated content seen.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Etxanobe",
+      "kind": "meal",
+      "url": "https://www.etxanobe.com/",
+      "sourceType": "operator's own site",
+      "address": "Calle Juan Ajuriaguerra,8 48009 Bilbao. Vizcaya.",
+      "operatingEvidence": "Active ordering for its take-away 'Etxanobe en Casa' and booking phone; footer '© 2026 Etxanobe'.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "La Viña del Ensanche",
+      "kind": "meal",
+      "url": "https://www.lavinadelensanche.com/reservas/",
+      "sourceType": "operator's own site",
+      "address": "Diputación, 10 - 48008 Bilbao (from https://www.lavinadelensanche.com/contacto/)",
+      "operatingEvidence": "Online booking for 2–8 people, at least 24 hours and no more than three months ahead; 2026 photos and '©2026 La Viña del Ensanche'.",
+      "hours": "Bar Tue–Thu 10:00–22:30, Fri 10:00–23:00, Sat 13:00–23:00; restaurant Tue–Sat 13:00–15:30 and 20:00–21:30; 'Lunes, domingos y festivos: cerrado'.",
+      "confidence": "high"
+    },
+    {
+      "name": "Casa Rufo",
+      "kind": "meal",
+      "url": "https://www.casarufo.com/",
+      "sourceType": "operator's own site",
+      "address": "Hurtado de Amezaga 5, 48008 Bilbao.",
+      "operatingEvidence": "'RESERVAR MESA' booking link and published restaurant and shop hours. No 2026-dated content seen.",
+      "hours": "Restaurant 'Lunes-Sábado: 13:30h a 16:00h y 20:30h a 23:00h'; shop Mon–Sat 09:30–13:30.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bascook",
+      "kind": "meal",
+      "url": "https://www.bascook.com/",
+      "sourceType": "operator's own site",
+      "address": "C. Barroeta Aldamar, 8, 48001 Bilbao, Vizcaya",
+      "operatingEvidence": "Bookings by WhatsApp, phone and an online reservations page; weekly hours published. No 2026-dated content seen.",
+      "hours": "Lunch Tue–Sat 13:00–15:30; dinner Thu–Sat 20:30–23:00; 'Domingo y lunes cerrado'.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Sorginzulo (Plaza Nueva 10)",
+      "kind": "meal",
+      "url": "https://www.sorginzulo.com/",
+      "sourceType": "operator's own site",
+      "address": "Plaza Nueva, 10 – Casco Viejo, Bilbao",
+      "operatingEvidence": "Lists 2026 awards: 'Concurso de Pintxos de Bacalao del Casco Viejo: 1º Premio (2026)' and 'Concurso Pintxo Burger (Zazpikaleak): 2º Premio (2026)'.",
+      "hours": "not published",
+      "confidence": "high"
+    },
+    {
+      "name": "Gure Toki",
+      "kind": "meal",
+      "url": "https://www.guretoki.com/donde-estamos",
+      "sourceType": "operator's own site",
+      "address": "c/ Plaza Nueva, 12 48005, Bilbao",
+      "operatingEvidence": "Weekly hours published on its location page. No 2026-dated content seen.",
+      "hours": "'Lun-Mar: 9:00-23:30', 'Jue-Sáb: 9:00-23:30', 'Dom: 9:30-16:00' (Wednesday not listed).",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bar El Globo (Diputación)",
+      "kind": "meal",
+      "url": "https://www.barelglobo.es/",
+      "sourceType": "operator's own site",
+      "address": "Calle Diputación 8 48008 Bilbao (Bizkaia)",
+      "operatingEvidence": "Group menus offered; Basque government innovation recognition '(EMET 2026)'; '© 2026 Bar El Globo'.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Arrese (Gran Vía)",
+      "kind": "bakery",
+      "url": "https://www.arrese.biz/nuestras-tiendas/",
+      "sourceType": "operator's own site",
+      "address": "Gran Vía 24, 48001 Bilbao",
+      "operatingEvidence": "Shop list with current hours and Bilbao delivery service 9:00–13:00; footer '© 2026 Arrese'.",
+      "hours": "Mon–Sat 9:00–21:00; Sun 9:00–15:00 and 17:00–20:30; closed Sundays and holidays in summer.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Pastelería California",
+      "kind": "bakery",
+      "url": "https://pasteleriacalifornia.com/",
+      "sourceType": "operator's own site",
+      "address": "Madariaga Etorbidea, 9, 48014 Bilbao",
+      "operatingEvidence": "Weekly hours and phone published; founded 1972. No 2026-dated content seen.",
+      "hours": "Monday closed; Tuesday to Saturday morning and afternoon opening, closing 20:30 (morning times not fully readable); Sunday 08:00–15:15.",
+      "confidence": "medium"
+    },
+    {
+      "name": "ARVO Specialty Coffee (Guggenheim)",
+      "kind": "cafe",
+      "url": "https://arvobilbao.es/",
+      "sourceType": "operator's own site",
+      "address": "Barraincúa Kalea, 9 / Abando, Bilbao 48009",
+      "operatingEvidence": "Branch hours published for Guggenheim and Deusto shops; '© 2026 ARVO Specialty Coffee'.",
+      "hours": "'Lun–Jue & Dom: 8:30–16:00'; 'Vie–Sáb: 8:30–19:00'.",
+      "confidence": "medium"
+    },
+    {
+      "name": "La Mula de Moscú",
+      "kind": "bar",
+      "url": "https://lamulademoscu.com/reservas",
+      "sourceType": "operator's own site",
+      "address": "Alameda Rekalde 15, Bilbao",
+      "operatingEvidence": "Online booking: cocktail tables 'De Lunes a Jueves de 16:00 a 00:00', no cocktail bookings Friday or Saturday; confirmation within 48 hours. No 2026-dated content seen.",
+      "hours": "Mon–Thu 16:00–01:00; Fri–Sat 16:00–02:30; Sun 13:00–21:00.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Gin Fizz",
+      "kind": "bar",
+      "url": "https://ginfizzbilbaococktail.com/",
+      "sourceType": "operator's own site",
+      "address": "Lersundi 1, 48009 Bilbao, Bizkaia.",
+      "operatingEvidence": "Weekly hours and closing day published with cocktail menu. No 2026-dated content seen (menu PDF dated 2024).",
+      "hours": "Tue, Wed, Thu, Sun 16:00–1:00 (1:30 in summer); Fri–Sat 16:00–2:30 (3:00 in summer); Monday 'CERRADO'.",
+      "confidence": "medium"
+    },
+    {
+      "name": "MOA Lounge Bar",
+      "kind": "bar",
+      "url": "https://moaloungebar.com/",
+      "sourceType": "operator's own site",
+      "address": "Rodríguez Arias K., 28, Bilbao",
+      "operatingEvidence": "Weekly hours, menu download and table reservations ('Reserva tu mesa'); '© 2026 Moa Lounge Bar'.",
+      "hours": "Mon–Wed 10:00–23:00; Thu 10:00–1:30; Fri 10:00–3:00; Sat 11:00–3:00; Sun 12:00–23:00.",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Casco Viejo",
+      "reason": "district, not a single place with an operator; its individual venues were checked instead",
+      "url": ""
+    },
+    {
+      "name": "Mount Artxanda (Artxanda Funicular)",
+      "reason": "city site https://www.bilbao.eus/funicular returned HTTP 403; not bypassed. No other official operator page found",
+      "url": "https://www.bilbao.eus/funicular"
+    },
+    {
+      "name": "Euskal Museoa (Basque Museum)",
+      "reason": "official domain redirected (301) to an unrelated domain (filosofiaderecho-ugr.es); not followed",
+      "url": "https://www.euskal-museoa.eus/en/home"
+    },
+    {
+      "name": "Azkuna Zentroa",
+      "reason": "address read (Plaza Arriquibar, 4, 48010 Bilbao) but no opening hours or dated programme readable; agenda pages truncated or 404",
+      "url": "https://www.azkunazentroa.eus/es/contacto/"
+    },
+    {
+      "name": "Mercado de la Ribera",
+      "reason": "official site shows no street address, no hours and no 2026 content (footer © 2024); city page not readable",
+      "url": "https://www.mercadodelaribera.biz/"
+    },
+    {
+      "name": "Athletic Club Museum (San Mamés)",
+      "reason": "HTTP 403; not bypassed",
+      "url": "https://www.athletic-club.eus/en/museum/"
+    },
+    {
+      "name": "Basílica de Begoña",
+      "reason": "connection refused",
+      "url": "https://www.basilicadebegona.com/"
+    },
+    {
+      "name": "Museo de Reproducciones de Bilbao",
+      "reason": "domain now hosts unrelated content (Australian address); not an official museum page",
+      "url": "https://www.museoreproduccionesbilbao.org/"
+    },
+    {
+      "name": "Museo Diocesano de Arte Sacro (Eleiz Museoa)",
+      "reason": "domain did not resolve (DNS failure)",
+      "url": "https://www.eleizmuseoa.eus/"
+    },
+    {
+      "name": "Gran Hotel Domine (bar/terrace)",
+      "reason": "certificate has expired; not bypassed",
+      "url": "https://www.granhoteldominebilbao.com/en/"
+    },
+    {
+      "name": "Hotel Ercilla (terrace)",
+      "reason": "certificate hostname mismatch; not bypassed",
+      "url": "https://www.hotelercilla.com/"
+    },
+    {
+      "name": "Collection Rooftop Bar (Radisson Collection Gran Vía)",
+      "reason": "HTTP 403; not bypassed",
+      "url": "https://www.radissonhotels.com/en-us/hotels/radisson-collection-gran-via-bilbao/restaurants-and-bars/collection-rooftop-bar"
+    },
+    {
+      "name": "Meliá Bilbao (bars)",
+      "reason": "HTTP 403; not bypassed",
+      "url": "https://www.melia.com/en/hotels/spain/bilbao/melia-bilbao"
+    },
+    {
+      "name": "Hotel Carlton (bar)",
+      "reason": "hotel site read (Plaza Elíptica 2) but no bar or cocktail venue named; only restaurant Artagan without hours",
+      "url": "https://www.hotelcarlton.es/"
+    },
+    {
+      "name": "Hotel Miró (bar)",
+      "reason": "bar mentioned but unnamed, no hours",
+      "url": "https://www.mirohotelbilbao.com/en/"
+    },
+    {
+      "name": "Ola Martín Berasategui (Tayko Bilbao)",
+      "reason": "no Bilbao street address on the page read",
+      "url": "https://www.taykohotels.com/"
+    },
+    {
+      "name": "Víctor Montes",
+      "reason": "SSL error (WRONG_VERSION_NUMBER); not bypassed",
+      "url": "https://www.victormontesbilbao.com/"
+    },
+    {
+      "name": "Zarate",
+      "reason": "domain now hosts an unrelated betting site",
+      "url": "https://www.zaratejatetxea.com/"
+    },
+    {
+      "name": "Martina de Zuricalday",
+      "reason": "official site lists four shops (e.g. Plaza San José, 3) but publishes no hours and no 2026-dated content, so no operating evidence; zuricalday.com redirects to a parking page",
+      "url": "https://www.martinazuricalday.com/"
+    },
+    {
+      "name": "Pastelería Don Manuel",
+      "reason": "address read (Alameda Urquijo 39) but no operating evidence: no hours, footer © 2015",
+      "url": "https://www.pasteleriadonmanuel.com/"
+    },
+    {
+      "name": "La Ribera Bilbao",
+      "reason": "no address or hours on the page read",
+      "url": "https://www.lariberabilbao.com/en/"
+    },
+    {
+      "name": "Malaespera",
+      "reason": "domain shows a parking frame only",
+      "url": "https://www.malaespera.com/"
+    },
+    {
+      "name": "Café La Granja",
+      "reason": "domain belongs to an unrelated business (Guatemala)",
+      "url": "https://www.cafelagranja.com/"
+    },
+    {
+      "name": "Mok Coffee",
+      "reason": "domain did not resolve",
+      "url": "https://www.mokcoffee.com/"
+    },
+    {
+      "name": "Bihotz Café",
+      "reason": "domain did not resolve; no other official site found",
+      "url": "https://www.bihotzcafe.com/"
+    },
+    {
+      "name": "Café Boulevard",
+      "reason": "domain did not resolve",
+      "url": "https://www.cafeboulevard.net/"
+    },
+    {
+      "name": "Café Bilbao",
+      "reason": "domain did not resolve",
+      "url": "https://www.cafebilbao.es/"
+    },
+    {
+      "name": "Kate Zaharra",
+      "reason": "domain did not resolve",
+      "url": "https://www.katezaharra.com/"
+    },
+    {
+      "name": "Txakoli Artxanda",
+      "reason": "domain did not resolve",
+      "url": "https://www.txakoliartxanda.com/"
+    },
+    {
+      "name": "Los Fueros",
+      "reason": "domain did not resolve",
+      "url": "https://www.restaurantelosfueros.com/"
+    },
+    {
+      "name": "Guggenheim morning",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Pintxos crawl",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Pintxos crawl",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coastal day to Getxo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "pintxos along the old town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Bilbao market or cafe",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local dinner in Casco Viejo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Ensanche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Ribera",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Casco Viejo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Casco Viejo walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Ensanche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Ribera",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Ribera",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Guggenheim Museum",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Casco Viejo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Guggenheim morning",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Ensanche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Casco Viejo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casco Viejo evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Ensanche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Ribera",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Casco Viejo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Guggenheim Museum",
+      "reason": "generic, not a place (the museum itself is confirmed)",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Guggenheim Museum",
+      "reason": "generic, not a place (the museum itself is confirmed)",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Ensanche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Ribera",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Casco Viejo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casco Viejo cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Ribera",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Ribera",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Casco Viejo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Casco Viejo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Ensanche bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Guggenheim Museum",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Ribera",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Casco Viejo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Casco Viejo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Ribera",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Casco Viejo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Ensanche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Ribera",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Casco Viejo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Casco Viejo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Ensanche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Mount Artxanda",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Casco Viejo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Ensanche morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Guggenheim Museum",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Ribera",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Casco Viejo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Ensanche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Ribera",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Guggenheim Museum Bilbao",
+        "Bilbao Fine Arts Museum",
+        "Puente Bizkaia",
+        "Catedral de Santiago"
+      ],
+      "bestFirstTimers": [
+        "Guggenheim Museum Bilbao",
+        "Bilboats",
+        "Catedral de Santiago",
+        "Sorginzulo (Plaza Nueva 10)"
+      ],
+      "bestRestaurants": [
+        "Nerua Guggenheim Bilbao",
+        "Mina",
+        "La Viña del Ensanche",
+        "Casa Rufo"
+      ],
+      "bestBudget": [
+        "Bilbao Fine Arts Museum",
+        "Itsasmuseum Bilbao",
+        "Gure Toki",
+        "Sorginzulo (Plaza Nueva 10)"
+      ],
+      "bestLuxury": [
+        "Nerua Guggenheim Bilbao",
+        "Mina",
+        "Zortziko",
+        "Etxanobe"
+      ],
+      "bestCouples": [
+        "Bilboats",
+        "Puente Bizkaia",
+        "La Mula de Moscú",
+        "Zortziko"
+      ],
+      "bestKids": [
+        "Itsasmuseum Bilbao",
+        "Bilboats",
+        "Puente Bizkaia",
+        "Guggenheim Museum Bilbao"
+      ],
+      "bestSolo": [
+        "Bilbao Fine Arts Museum",
+        "ARVO Specialty Coffee (Guggenheim)",
+        "Teatro Arriaga",
+        "Gin Fizz"
+      ],
+      "bestUnique": [
+        "Puente Bizkaia",
+        "Teatro Arriaga",
+        "Itsasmuseum Bilbao",
+        "Bilboats"
+      ],
+      "bestBreakfast": [
+        "Kafe Museoa",
+        "Café Iruña",
+        "ARVO Specialty Coffee (Guggenheim)",
+        "Gure Toki"
+      ],
+      "bestLunch": [
+        "Bascook",
+        "Casa Rufo",
+        "Café Iruña",
+        "Bar El Globo (Diputación)"
+      ],
+      "bestDinner": [
+        "La Viña del Ensanche",
+        "Mina",
+        "Casa Rufo",
+        "Bascook"
+      ],
+      "bestCocktails": [
+        "La Mula de Moscú",
+        "Gin Fizz",
+        "MOA Lounge Bar"
+      ],
+      "bestBakeries": [
+        "Arrese (Gran Vía)",
+        "Pastelería California"
+      ],
+      "bestCoffee": [
+        "ARVO Specialty Coffee (Guggenheim)",
+        "Kafe Museoa",
+        "Café Iruña"
+      ]
+    },
+    "queries": {
+      "Guggenheim Museum Bilbao": "Guggenheim Museum Bilbao Avenida Abandoibarra 2 Bilbao",
+      "Bilbao Fine Arts Museum": "Bilbao Fine Arts Museum Plaza Eduardo Chillida Bilbao",
+      "Kafe Museoa": "Kafe Museoa Plaza Eduardo Chillida Bilbao",
+      "Itsasmuseum Bilbao": "Itsasmuseum Muelle Ramon de la Sota 1 Bilbao",
+      "Puente Bizkaia": "Puente Bizkaia Calle Barria 3 Las Arenas Getxo",
+      "Catedral de Santiago": "Catedral de Santiago Plaza de Santiago 1 Bilbao",
+      "Teatro Arriaga": "Teatro Arriaga Plaza Arriaga 1 Bilbao",
+      "Bilboats": "Bilboats Plaza Pio Baroja 1 Bilbao",
+      "Café Iruña": "Café Iruña Jardines de Albia Bilbao",
+      "Nerua Guggenheim Bilbao": "Nerua Avenida Abandoibarra 2 Bilbao",
+      "Mina": "Restaurante Mina Calle Ercilla 37 Bilbao",
+      "Zortziko": "Zortziko Alameda Mazarredo 17 Bilbao",
+      "Etxanobe": "Etxanobe Calle Juan Ajuriaguerra 8 Bilbao",
+      "La Viña del Ensanche": "La Viña del Ensanche Diputación 10 Bilbao",
+      "Casa Rufo": "Casa Rufo Hurtado de Amezaga 5 Bilbao",
+      "Bascook": "Bascook Calle Barroeta Aldamar 8 Bilbao",
+      "Sorginzulo (Plaza Nueva 10)": "Sorginzulo Plaza Nueva 10 Bilbao",
+      "Gure Toki": "Gure Toki Plaza Nueva 12 Bilbao",
+      "Bar El Globo (Diputación)": "Bar El Globo Calle Diputación 8 Bilbao",
+      "Arrese (Gran Vía)": "Arrese Gran Vía 24 Bilbao",
+      "Pastelería California": "Pastelería California Madariaga Etorbidea 9 Bilbao",
+      "ARVO Specialty Coffee (Guggenheim)": "ARVO Specialty Coffee Barraincúa 9 Bilbao",
+      "La Mula de Moscú": "La Mula de Moscú Alameda Rekalde 15 Bilbao",
+      "Gin Fizz": "Gin Fizz Lersundi 1 Bilbao",
+      "MOA Lounge Bar": "MOA Lounge Bar Rodríguez Arias 28 Bilbao"
+    },
+    "summary": "Riverside museums, a transporter bridge, river cruises and Casco Viejo pintxo bars, with breakfast cafés, booked dinners and cocktail bars checked against their own websites.",
+    "highlights": [
+      "Guggenheim Museum Bilbao",
+      "Bilbao Fine Arts Museum",
+      "Puente Bizkaia",
+      "Itsasmuseum Bilbao"
+    ],
+    "tip": "Mondays are the main closing day: the Guggenheim (apart from listed dates such as December 7 and 28), the Itsasmuseum, Nerua and Gin Fizz all close, while the Bilbao Fine Arts Museum opens Mondays and is free on Tuesdays from 10:00 to 18:00.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mondays and Sundays",
+        "copy": "The Guggenheim Museum Bilbao and Itsasmuseum Bilbao list Tuesday-to-Sunday hours, and Nerua and Gin Fizz close on Mondays. La Viña del Ensanche closes Sundays, Mondays and holidays, Mina rests Mondays and Tuesdays, and Bascook closes Sunday and Monday."
+      },
+      {
+        "label": "Tickets",
+        "value": "Buy direct",
+        "copy": "The Guggenheim advises buying tickets only on its official website, includes an audio guide with every ticket and gives no refunds. Puente Bizkaia sells walkway tickets online, and Bilboats publishes 2026 fares from €15 for the 60-minute Navegando Bilbao cruise."
+      },
+      {
+        "label": "Booking rules",
+        "value": "Book ahead for dinner",
+        "copy": "Nerua charges €50 per person for no-shows or cancellations within 24 hours, and La Viña del Ensanche takes 2–8 people from 24 hours to three months ahead, holding tables for 15 minutes. La Mula de Moscú takes cocktail bookings Monday to Thursday only, not on Fridays or Saturdays."
+      },
+      {
+        "label": "Free entry and ages",
+        "value": "Under 18 free",
+        "copy": "Under-18s enter free at the Guggenheim, the Bilbao Fine Arts Museum and the Itsasmuseum, which is also free to everyone on Sundays from 5 pm. On Bilboats, babies under 4 pay €2, and Kafe Museoa has its own entrance, so you need no museum ticket."
+      }
+    ],
+    "dek": "Plan your museum days for Tuesday to Sunday, keep a Monday for the Bilbao Fine Arts Museum or a river cruise, and book dinners well ahead.",
+    "intro": [
+      "Bilbao's riverside museums anchor this guide. The Guggenheim Museum Bilbao, at Avenida Abandoibarra 2, opens Tuesday to Sunday from 10 am to 7 pm and closes on Mondays except listed dates such as December 7 and 28. Its programme lists Steve McQueen: 66–76–26 and Pipilotti Rist's Ever is Over All, both running into 2027, and every ticket includes an audio guide. A short walk away on Plaza Eduardo Chillida, the Bilbao Fine Arts Museum is free on Tuesdays from 10:00 to 18:00 and shows Balerdi. The Infinite Line until February 14, 2027.",
+      "Further down the river, the Itsasmuseum on Muelle Ramón de la Sota opens Tuesday to Sunday from 11:00 to 19:00, with free entry for under-18s, and for everyone on Sundays from 5 pm. Bilboats runs 60-minute Navegando Bilbao cruises from the Pio Baroja pier, with daily departures at 13:00, 15:45 and 17:00 in November and December, and no sailings in January or February. At the river mouth in Getxo, Puente Bizkaia sells walkway tickets online and currently posts a temporary lift timetable, so check its site before you go.",
+      "In the Casco Viejo, the Catedral de Santiago on Plaza de Santiago opens Monday to Saturday from 10:00 and Sundays from 13:00, with last entry 45 minutes before closing and a combined visit with San Antón church. Plaza Nueva gathers pintxo bars: Sorginzulo lists 2026 prizes in the Casco Viejo cod pintxo contest, and Gure Toki opens from 9:00 most days. Teatro Arriaga's box office on Plaza Arriaga opens daily from 11:30. For breakfast, Kafe Museoa serves breakfast and brunch from 10:00 without a museum ticket, and ARVO opens at 8:30 near the Guggenheim.",
+      "For dinner, you will need to book. Nerua at the Guggenheim closes on Mondays outside summer and charges €50 per person for no-shows or cancellations within 24 hours. Mina, now at Ercilla 37, rests on Mondays and Tuesdays, and La Viña del Ensanche takes bookings for 2–8 people from 24 hours to three months ahead. Café Iruña offers a weekday menu at €23.80. For cocktails, La Mula de Moscú on Alameda Rekalde takes cocktail bookings Monday to Thursday only, and Gin Fizz on Lersundi closes on Mondays."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Start at the Guggenheim Museum Bilbao (Tuesday to Sunday, 10 am to 7 pm), then take a 60-minute Bilboats cruise from the nearby Pio Baroja pier."
+      ],
+      [
+        "A slower morning",
+        "Have breakfast at ARVO from 8:30 or Kafe Museoa from 10:00, then walk into the Bilbao Fine Arts Museum, which is free on Tuesdays."
+      ],
+      [
+        "Before booking",
+        "Nerua charges €50 per person for late cancellations, and La Viña del Ensanche books from 24 hours to three months ahead and closes Sundays and Mondays."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several confirmed places (Zortziko, Etxanobe, Sorginzulo, Bar El Globo) publish no opening hours, and Café Iruña, Mina, Casa Rufo, Bascook, Gure Toki, La Mula de Moscú and Gin Fizz showed no 2026-dated content, so they rest on booking links or published hours (medium confidence). Puente Bizkaia's regular hours were not published, only a temporary lift notice, and its listed address is the operator's office in Las Arenas (Getxo). The Catedral de Santiago page shows two slightly different closing times. The Guggenheim's exhibition dates use an ambiguous date format and were read as month.day. Sites that could not be read: the Artxanda funicular (bilbao.eus, 403), Athletic Club museum (403), Radisson and Meliá (403), Gran Hotel Domine (expired certificate), Hotel Ercilla (certificate mismatch), Víctor Montes (SSL error) and Basílica de Begoña (connection refused). Euskal Museoa's domain redirected to an unrelated site, and Azkuna Zentroa's hours and programme were not readable. Pastelería California's morning hours were only partly readable, and Martina de Zuricalday publishes no hours or dated content.",
+  "injectionLikeText": [],
+  "injectionLikeTextIgnored": [
+    "Bilbao Fine Arts Museum pages (https://www.bilbaomuseoa.eus/en/ and https://www.bilbaomuseoa.eus/museo/cafeteria): a 'How to Cite' / 'Cómo citar' section addressed to AI systems, asking for verbatim quotation and formatting rules. The fetch tool reported it but did not return the exact wording; it was ignored.",
+    "Hotel Carlton (https://www.hotelcarlton.es/en/): the fetch tool reported text on the page asking it to quote the address, bar details and 2026 content and any AI-addressed text; exact wording not returned, possibly the tool echoing the request. Ignored.",
+    "2026-10-27: bilbaomuseoa.eus was opened in a browser. Its How to Cite element is an empty modal title used by the collection site; no text addressed to AI systems is present. The Hotel Carlton flag repeats the fetch prompt."
+  ]
+}

@@ -5,6 +5,716 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Bilbao, Spain": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-27",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several confirmed places (Zortziko, Etxanobe, Sorginzulo, Bar El Globo) publish no opening hours, and Café Iruña, Mina, Casa Rufo, Bascook, Gure Toki, La Mula de Moscú and Gin Fizz showed no 2026-dated content, so they rest on booking links or published hours (medium confidence). Puente Bizkaia's regular hours were not published, only a temporary lift notice, and its listed address is the operator's office in Las Arenas (Getxo). The Catedral de Santiago page shows two slightly different closing times. The Guggenheim's exhibition dates use an ambiguous date format and were read as month.day. Sites that could not be read: the Artxanda funicular (bilbao.eus, 403), Athletic Club museum (403), Radisson and Meliá (403), Gran Hotel Domine (expired certificate), Hotel Ercilla (certificate mismatch), Víctor Montes (SSL error) and Basílica de Begoña (connection refused). Euskal Museoa's domain redirected to an unrelated site, and Azkuna Zentroa's hours and programme were not readable. Pastelería California's morning hours were only partly readable, and Martina de Zuricalday publishes no hours or dated content.",
+    "sourceUrls": [
+      "docs/content-research/bilbao-2026-10-27.md",
+      "docs/content-research/bilbao-2026-10-27.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Casco Viejo",
+        "checkedOn": "2026-10-27",
+        "reason": "district, not a single place with an operator; its individual venues were checked instead"
+      },
+      {
+        "name": "Mount Artxanda (Artxanda Funicular)",
+        "url": "https://www.bilbao.eus/funicular",
+        "checkedOn": "2026-10-27",
+        "reason": "city site https://www.bilbao.eus/funicular returned HTTP 403; not bypassed. No other official operator page found"
+      },
+      {
+        "name": "Euskal Museoa (Basque Museum)",
+        "url": "https://www.euskal-museoa.eus/en/home",
+        "checkedOn": "2026-10-27",
+        "reason": "official domain redirected (301) to an unrelated domain (filosofiaderecho-ugr.es); not followed"
+      },
+      {
+        "name": "Azkuna Zentroa",
+        "url": "https://www.azkunazentroa.eus/es/contacto/",
+        "checkedOn": "2026-10-27",
+        "reason": "address read (Plaza Arriquibar, 4, 48010 Bilbao) but no opening hours or dated programme readable; agenda pages truncated or 404"
+      },
+      {
+        "name": "Mercado de la Ribera",
+        "url": "https://www.mercadodelaribera.biz/",
+        "checkedOn": "2026-10-27",
+        "reason": "official site shows no street address, no hours and no 2026 content (footer © 2024); city page not readable"
+      },
+      {
+        "name": "Athletic Club Museum (San Mamés)",
+        "url": "https://www.athletic-club.eus/en/museum/",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 403; not bypassed"
+      },
+      {
+        "name": "Basílica de Begoña",
+        "url": "https://www.basilicadebegona.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "connection refused"
+      },
+      {
+        "name": "Museo de Reproducciones de Bilbao",
+        "url": "https://www.museoreproduccionesbilbao.org/",
+        "checkedOn": "2026-10-27",
+        "reason": "domain now hosts unrelated content (Australian address); not an official museum page"
+      },
+      {
+        "name": "Museo Diocesano de Arte Sacro (Eleiz Museoa)",
+        "url": "https://www.eleizmuseoa.eus/",
+        "checkedOn": "2026-10-27",
+        "reason": "domain did not resolve (DNS failure)"
+      },
+      {
+        "name": "Gran Hotel Domine (bar/terrace)",
+        "url": "https://www.granhoteldominebilbao.com/en/",
+        "checkedOn": "2026-10-27",
+        "reason": "certificate has expired; not bypassed"
+      },
+      {
+        "name": "Hotel Ercilla (terrace)",
+        "url": "https://www.hotelercilla.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "certificate hostname mismatch; not bypassed"
+      },
+      {
+        "name": "Collection Rooftop Bar (Radisson Collection Gran Vía)",
+        "url": "https://www.radissonhotels.com/en-us/hotels/radisson-collection-gran-via-bilbao/restaurants-and-bars/collection-rooftop-bar",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 403; not bypassed"
+      },
+      {
+        "name": "Meliá Bilbao (bars)",
+        "url": "https://www.melia.com/en/hotels/spain/bilbao/melia-bilbao",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 403; not bypassed"
+      },
+      {
+        "name": "Hotel Carlton (bar)",
+        "url": "https://www.hotelcarlton.es/",
+        "checkedOn": "2026-10-27",
+        "reason": "hotel site read (Plaza Elíptica 2) but no bar or cocktail venue named; only restaurant Artagan without hours"
+      },
+      {
+        "name": "Hotel Miró (bar)",
+        "url": "https://www.mirohotelbilbao.com/en/",
+        "checkedOn": "2026-10-27",
+        "reason": "bar mentioned but unnamed, no hours"
+      },
+      {
+        "name": "Ola Martín Berasategui (Tayko Bilbao)",
+        "url": "https://www.taykohotels.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "no Bilbao street address on the page read"
+      },
+      {
+        "name": "Víctor Montes",
+        "url": "https://www.victormontesbilbao.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "SSL error (WRONG_VERSION_NUMBER); not bypassed"
+      },
+      {
+        "name": "Zarate",
+        "url": "https://www.zaratejatetxea.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "domain now hosts an unrelated betting site"
+      },
+      {
+        "name": "Martina de Zuricalday",
+        "url": "https://www.martinazuricalday.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "official site lists four shops (e.g. Plaza San José, 3) but publishes no hours and no 2026-dated content, so no operating evidence; zuricalday.com redirects to a parking page"
+      },
+      {
+        "name": "Pastelería Don Manuel",
+        "url": "https://www.pasteleriadonmanuel.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "address read (Alameda Urquijo 39) but no operating evidence: no hours, footer © 2015"
+      },
+      {
+        "name": "La Ribera Bilbao",
+        "url": "https://www.lariberabilbao.com/en/",
+        "checkedOn": "2026-10-27",
+        "reason": "no address or hours on the page read"
+      },
+      {
+        "name": "Malaespera",
+        "url": "https://www.malaespera.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "domain shows a parking frame only"
+      },
+      {
+        "name": "Café La Granja",
+        "url": "https://www.cafelagranja.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "domain belongs to an unrelated business (Guatemala)"
+      },
+      {
+        "name": "Mok Coffee",
+        "url": "https://www.mokcoffee.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "domain did not resolve"
+      },
+      {
+        "name": "Bihotz Café",
+        "url": "https://www.bihotzcafe.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "domain did not resolve; no other official site found"
+      },
+      {
+        "name": "Café Boulevard",
+        "url": "https://www.cafeboulevard.net/",
+        "checkedOn": "2026-10-27",
+        "reason": "domain did not resolve"
+      },
+      {
+        "name": "Café Bilbao",
+        "url": "https://www.cafebilbao.es/",
+        "checkedOn": "2026-10-27",
+        "reason": "domain did not resolve"
+      },
+      {
+        "name": "Kate Zaharra",
+        "url": "https://www.katezaharra.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "domain did not resolve"
+      },
+      {
+        "name": "Txakoli Artxanda",
+        "url": "https://www.txakoliartxanda.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "domain did not resolve"
+      },
+      {
+        "name": "Los Fueros",
+        "url": "https://www.restaurantelosfueros.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "domain did not resolve"
+      },
+      {
+        "name": "Guggenheim morning",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Pintxos crawl",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Pintxos crawl",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coastal day to Getxo",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "pintxos along the old town",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Bilbao market or cafe",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local dinner in Casco Viejo",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Ensanche",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Ribera",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Casco Viejo",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Casco Viejo walk",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Ensanche",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Ribera",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Ribera",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Guggenheim Museum",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Casco Viejo",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Guggenheim morning",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Ensanche",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Casco Viejo",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casco Viejo evening",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Ensanche",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Ribera",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Casco Viejo",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Guggenheim Museum",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place (the museum itself is confirmed)"
+      },
+      {
+        "name": "Early visit to Guggenheim Museum",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place (the museum itself is confirmed)"
+      },
+      {
+        "name": "Easy outing around Ensanche",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Ribera",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Casco Viejo",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casco Viejo cafe or market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Ribera",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Ribera",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Casco Viejo",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Casco Viejo",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Ensanche bakery or market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Guggenheim Museum",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Ribera",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Casco Viejo",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Casco Viejo",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Ribera",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Casco Viejo",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Ensanche",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Ribera",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Casco Viejo",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Casco Viejo",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Ensanche",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Mount Artxanda",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Casco Viejo",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Ensanche morning market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Guggenheim Museum",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Ribera",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Casco Viejo",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Ensanche",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Ribera",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Guggenheim Museum Bilbao": {
+        "url": "https://www.guggenheim-bilbao.eus/en/plan-your-visit",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Current exhibitions listed: 'Steve McQueen: 66–76–26, 10.09.2026 – 02.21.2027' and 'Ever is Over All. Pipilotti Rist, 10.01.2026 – 01.17.2027'. 'All tickets include audio guide.'"
+      },
+      "Bilbao Fine Arts Museum": {
+        "url": "https://bilbaomuseoa.eus/visita/planifica-tu-visita",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Exhibitions 'Balerdi' (The Infinite Line) October 6, 2026 to February 14, 2027 and 'Visions from Overseas' October 6, 2026 to January 24, 2027; page announces the 'New Bilbao Fine Arts Museum', dated October 7, 2026."
+      },
+      "Kafe Museoa": {
+        "url": "https://www.bilbaomuseoa.eus/museo/cafeteria",
+        "sourceType": "official public operator (Bilbao Fine Arts Museum)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Serves breakfast, brunch and à la carte; menu and brunch-menu PDFs posted; own entrance, no museum ticket needed; footer '© 2026 Museo de Bellas Artes de Bilbao'."
+      },
+      "Itsasmuseum Bilbao": {
+        "url": "https://www.itsasmuseum.eus/en/visit/tickets/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Temporary exhibitions listed including 'Bilbao 1700. Four Perspectives' and 'La Naval. A Forge of Titans'; ticket prices published (general 10 €); '©2026 - Itsasmuseum Bilbao'."
+      },
+      "Puente Bizkaia": {
+        "url": "https://puente-colgante.com/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Walkway tickets bookable online; temporary notice that the lift runs 'de 10:00h a 14:00h y de 16:00h a 20:00h' with capacity limited to 50%; '© Puente Bizkaia 2026'."
+      },
+      "Catedral de Santiago": {
+        "url": "https://www.catedralbilbao.com/visita/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Visit prices published (general 10,00 €) and a combined visit with Iglesia de San Antón offered; '2026 © Catedral de Bilbao'."
+      },
+      "Teatro Arriaga": {
+        "url": "https://www.teatroarriaga.eus/horarios-y-contacto/",
+        "sourceType": "official public operator (Bilbao municipal theatre)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Programme lists performances on 29 October 2026 (Banda Municipal de Bilbao), 30–31 October 2026 ('Panorama desde el puente') and 1 November 2026 ('Pasión Almodóvar')."
+      },
+      "Bilboats": {
+        "url": "https://www.bilboats.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "2026 schedules and prices published: 'Navegando Bilbao' (60 min) general €15; November–December daily at 13:00, 15:45 and 17:00; closed January and February; 'Copyright 2026 Bilboats'."
+      },
+      "Café Iruña": {
+        "url": "https://www.cafeirunabilbao.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Weekday daily menu at '23,80€' offered 'from Monday to Friday', with menu PDF linked; weekly hours published. No 2026-dated content seen."
+      },
+      "Nerua Guggenheim Bilbao": {
+        "url": "https://www.neruaguggenheimbilbao.com/reservas/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Online reservations with cancellation rule: free 'hasta 24 horas antes', otherwise '50 € por comensal'; homepage shows 2026 Michelin star badge and a post dated July 2026."
+      },
+      "Mina": {
+        "url": "https://www.restaurantemina.es/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "'RESERVA ONLINE' link, published kitchen times and weekly rest days; site flags a new address. No 2026-dated content seen."
+      },
+      "Zortziko": {
+        "url": "https://www.zortziko.es/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "'Reservar mesa ahora' online booking plus phone and WhatsApp booking lines. No 2026-dated content seen."
+      },
+      "Etxanobe": {
+        "url": "https://www.etxanobe.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Active ordering for its take-away 'Etxanobe en Casa' and booking phone; footer '© 2026 Etxanobe'."
+      },
+      "La Viña del Ensanche": {
+        "url": "https://www.lavinadelensanche.com/reservas/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Online booking for 2–8 people, at least 24 hours and no more than three months ahead; 2026 photos and '©2026 La Viña del Ensanche'."
+      },
+      "Casa Rufo": {
+        "url": "https://www.casarufo.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "'RESERVAR MESA' booking link and published restaurant and shop hours. No 2026-dated content seen."
+      },
+      "Bascook": {
+        "url": "https://www.bascook.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Bookings by WhatsApp, phone and an online reservations page; weekly hours published. No 2026-dated content seen."
+      },
+      "Sorginzulo (Plaza Nueva 10)": {
+        "url": "https://www.sorginzulo.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Lists 2026 awards: 'Concurso de Pintxos de Bacalao del Casco Viejo: 1º Premio (2026)' and 'Concurso Pintxo Burger (Zazpikaleak): 2º Premio (2026)'."
+      },
+      "Gure Toki": {
+        "url": "https://www.guretoki.com/donde-estamos",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Weekly hours published on its location page. No 2026-dated content seen."
+      },
+      "Bar El Globo (Diputación)": {
+        "url": "https://www.barelglobo.es/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Group menus offered; Basque government innovation recognition '(EMET 2026)'; '© 2026 Bar El Globo'."
+      },
+      "Arrese (Gran Vía)": {
+        "url": "https://www.arrese.biz/nuestras-tiendas/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Shop list with current hours and Bilbao delivery service 9:00–13:00; footer '© 2026 Arrese'."
+      },
+      "Pastelería California": {
+        "url": "https://pasteleriacalifornia.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Weekly hours and phone published; founded 1972. No 2026-dated content seen."
+      },
+      "ARVO Specialty Coffee (Guggenheim)": {
+        "url": "https://arvobilbao.es/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Branch hours published for Guggenheim and Deusto shops; '© 2026 ARVO Specialty Coffee'."
+      },
+      "La Mula de Moscú": {
+        "url": "https://lamulademoscu.com/reservas",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Online booking: cocktail tables 'De Lunes a Jueves de 16:00 a 00:00', no cocktail bookings Friday or Saturday; confirmation within 48 hours. No 2026-dated content seen."
+      },
+      "Gin Fizz": {
+        "url": "https://ginfizzbilbaococktail.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Weekly hours and closing day published with cocktail menu. No 2026-dated content seen (menu PDF dated 2024)."
+      },
+      "MOA Lounge Bar": {
+        "url": "https://moaloungebar.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Weekly hours, menu download and table reservations ('Reserva tu mesa'); '© 2026 Moa Lounge Bar'."
+      }
+    }
+  },
   "Hamburg, Germany": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-27",
