@@ -8607,4 +8607,110 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 28, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Lima, Peru: source review of 2026-10-28 (docs/content-research/lima-2026-10-28.md).
+  {
+    const cityKey = "Lima, Peru";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Museo Larco","MALI (Museo de Arte de Lima)","LUM (Lugar de la Memoria)","Larcomar"],
+      bestFirstTimers: ["Museo Larco","MALI (Museo de Arte de Lima)","Museo Pedro de Osma","Larcomar"],
+      bestRestaurants: ["Maido","Central","Isolina (Barranco)","Rafael"],
+      bestBudget: ["LUM (Lugar de la Memoria)","El Chinito (Jr. Chancay)","El Pan de la Chola"],
+      bestLuxury: ["Central","Maido","Belmond Miraflores Park","Hotel B"],
+      bestCouples: ["Restaurante Huaca Pucllana","Belmond Miraflores Park","Cosme","Rafael"],
+      bestKids: ["Museo Larco","Museo Oro del Perú","Café del Museo Larco","Larcomar"],
+      bestSolo: ["MAC Lima","Museo Amano","LUM (Lugar de la Memoria)","El Pan de la Chola"],
+      bestUnique: ["Restaurante Huaca Pucllana","Museo Amano","Museo Oro del Perú","LUM (Lugar de la Memoria)"],
+      bestBreakfast: ["Café del Museo Larco","Isolina (Barranco)","Hotel B","El Pan de la Chola"],
+      bestLunch: ["La Mar (Miraflores)","Pescados Capitales (Miraflores)","Isolina (Barranco)","El Mercado"],
+      bestDinner: ["Maido","Central","Chifa Titi (San Isidro)","Cosme"],
+      bestCocktails: ["Ayahuasca Restobar","Belmond Miraflores Park","Hotel B"],
+      bestBakeries: ["El Pan de la Chola","Pastelería San Antonio (Angamos)"],
+      bestCoffee: ["El Pan de la Chola","Café del Museo Larco","Hotel B"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Museo Larco": "Museo Larco Av. Simón Bolívar 1515 Pueblo Libre Lima",
+      "MALI (Museo de Arte de Lima)": "MALI Museo de Arte de Lima Av. 9 de Diciembre 125 Lima",
+      "LUM (Lugar de la Memoria)": "Lugar de la Memoria Bajada San Martín 151 Miraflores Lima",
+      "Larcomar": "Larcomar Malecón de la Reserva 610 Miraflores Lima",
+      "Museo Pedro de Osma": "Museo Pedro de Osma Av. Pedro de Osma 421 Barranco Lima",
+      "Maido": "Maido Calle San Martín 399 Miraflores Lima",
+      "Central": "Central Av. Pedro de Osma 301 Barranco Lima",
+      "Isolina (Barranco)": "Isolina Av. San Martín 101 Barranco Lima",
+      "Rafael": "Rafael Calle San Martín 300 Miraflores Lima",
+      "El Chinito (Jr. Chancay)": "El Chinito Jr. Chancay 894 Lima",
+      "El Pan de la Chola": "El Pan de la Chola Av. Mariscal La Mar 918 Miraflores Lima",
+      "Belmond Miraflores Park": "Belmond Miraflores Park Malecón de la Reserva 1035 Miraflores Lima",
+      "Hotel B": "Hotel B Av. Sáenz Peña 204 Barranco Lima",
+      "Restaurante Huaca Pucllana": "Restaurante Huaca Pucllana General Borgoño cuadra 8 Miraflores Lima",
+      "Cosme": "Cosme Tudela y Varela 160 San Isidro Lima",
+      "Museo Oro del Perú": "Museo Oro del Perú Alonso de Molina 1100 Surco Lima",
+      "Café del Museo Larco": "Café del Museo Larco Av. Simón Bolívar 1515 Pueblo Libre Lima",
+      "MAC Lima": "MAC Lima Av. Grau 1511 Barranco Lima",
+      "Museo Amano": "Museo Amano Calle Retiro 160 Miraflores Lima",
+      "La Mar (Miraflores)": "La Mar Av. La Mar 770 Miraflores Lima",
+      "Pescados Capitales (Miraflores)": "Pescados Capitales Av. Mariscal La Mar 1337 Miraflores Lima",
+      "El Mercado": "El Mercado Av. Hipólito Unanue 203 Miraflores Lima",
+      "Chifa Titi (San Isidro)": "Chifa Titi Av. Javier Prado Este 1212 San Isidro Lima",
+      "Ayahuasca Restobar": "Ayahuasca Restobar Av. San Martín 130 Barranco Lima",
+      "Pastelería San Antonio (Angamos)": "Pastelería San Antonio Av. Angamos Oeste 1494 Miraflores Lima"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Lima" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Pre-Columbian and contemporary art museums, Barranco galleries and clifftop Miraflores, with tasting menus, cevicherías, bakeries and bars checked against their own websites.";
+    cityGuide.highlights = ["Museo Larco","MALI (Museo de Arte de Lima)","MAC Lima","Museo Pedro de Osma"];
+    cityGuide.tip = "MALI, MAC Lima, Museo Pedro de Osma and LUM all list Tuesday-to-Sunday hours and are closed on Mondays, so make Monday your Museo Larco day, since it says it opens every day, including holidays.";
+    data.destinationFacts[cityKey] = "MALI, MAC Lima, Museo Pedro de Osma and LUM all list Tuesday-to-Sunday hours and are closed on Mondays, so make Monday your Museo Larco day, since it says it opens every day, including holidays.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Pre-Columbian and contemporary art museums, Barranco galleries and clifftop Miraflores, with tasting menus, cevicherías, bakeries and bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Most museums closed Mondays",
+        "copy": "MALI, MAC Lima, Museo Pedro de Osma and LUM publish Tuesday-to-Sunday hours, so they are closed on Mondays. Museo Larco says it opens every day, including holidays, from 9am to 7pm."
+      },
+      {
+        "label": "Tickets",
+        "value": "Buy Museo Larco online",
+        "copy": "Museo Larco charges S/ 50 general admission and says buying online gives a special discount and preferential access. LUM's own site says entry is free with a DNI (Peru's national ID)."
+      },
+      {
+        "label": "Restaurant booking",
+        "value": "Maido opens two months ahead",
+        "copy": "Maido releases reservations two months in advance on the first day of each month, online for 1 to 10 people, and is closed on Sundays. Central lists lunch and dinner sittings Monday to Saturday only."
+      },
+      {
+        "label": "House rules",
+        "value": "No pets or outside food",
+        "copy": "Café del Museo Larco does not allow pets, outside food such as cakes, or decorations, and charges S/ 60 corkage per bottle of wine. Groups of more than six are seated once 70% of the party has arrived."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Plan museums for Tuesday to Sunday, keep Monday for Museo Larco, and book tasting menus such as Maido well before you fly.",
+      intro: [
+        "This guide is built around places that publish their own schedules. Museo Larco in Pueblo Libre says it opens every day, including holidays, from 9am to 7pm, with general admission at S/ 50 and a discount plus preferential access when you buy online. Its Café del Museo Larco serves lunch and dinner daily and opens at 9am on Sundays for brunch, though it asks you not to bring pets or outside food. In central Lima, MALI sits in the Parque de la Exposición and lists Tuesday-to-Sunday hours from 10am to 6pm, closing at 5pm on Saturdays.",
+        "Barranco rewards a slower afternoon. MAC Lima on Av. Grau is closed on Mondays and open 10am to 7pm Tuesday to Sunday, and its \"Contemporáneo 1\" display in Sala 3 runs until 31 December 2026. A short walk away, Museo Pedro de Osma opens Tuesday to Sunday from 10am to 6pm and offers S/ 10 entry on the first Sunday of the month for Peruvians and residents only. In Miraflores, LUM (Lugar de la Memoria) on Bajada San Martín is free with a DNI and shows Erika Humala's \"Sobreviviendo en azul y tierra\" until 15 February 2027.",
+        "For tasting menus, book early. Maido, at Calle San Martín 399 in Miraflores, releases reservations two months ahead on the first day of each month and serves Monday to Saturday only. Central, on Av. Pedro de Osma in Barranco, lists lunch and dinner sittings Monday to Saturday. For a simpler seafood lunch, La Mar on Av. La Mar keeps daytime hours, closing at 5pm Monday to Thursday, while Pescados Capitales, further along Av. Mariscal La Mar, serves until 11pm Monday to Saturday. Chifa Titi in San Isidro is closed on Mondays.",
+        "Mornings can start at El Pan de la Chola on Av. Mariscal La Mar, whose Pan & Café branch lists daily hours from 7am to 9pm, or at Isolina in Barranco, which serves breakfast from 9am to 11am on Saturdays and Sundays. For an evening drink, Hotel B in Barranco describes a ground-floor bar beside reception, and Belmond Miraflores Park lists Belo Bar among its venues. Ayahuasca Restobar on Av. San Martín in Barranco publishes late hours, but on a page last dated 2023, so check before you go."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair Museo Larco, open every day, with MALI or MAC Lima, remembering that MALI, MAC Lima, Museo Pedro de Osma and LUM are closed on Mondays."
+        ],
+        [
+          "A slower morning",
+          "Start with Sunday brunch at Café del Museo Larco from 9am, or a weekend breakfast at Isolina in Barranco, served 9am to 11am on Saturdays and Sundays."
+        ],
+        [
+          "Before booking",
+          "Maido opens reservations two months ahead on the first day of each month, and both Maido and Central list Monday-to-Saturday service only."
+        ]
+      ],
+      trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 28, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

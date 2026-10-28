@@ -1,0 +1,1029 @@
+{
+  "city": "Lima, Peru",
+  "checkedOn": "2026-10-28",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Museo Larco",
+      "kind": "museum",
+      "url": "https://www.museolarco.org/",
+      "sourceType": "operator's own site",
+      "address": "Av. Simón Bolívar 1515, Pueblo Libre, Lima 21, Perú. Ingreso por la calle Navarra 169 (frente al Parque Larco).",
+      "operatingEvidence": "Site promotes the museum's centenary miniseries (\"a cien años de su fundación\") with 2026 media uploads, current ticket prices and a live \"COMPRAR ENTRADAS\" link; \"La compra en línea ofrece un descuento especial y acceso preferencial.\"",
+      "hours": "\"Lunes a domingo, de 9:00 a.m. a 7:00 p.m.\"; \"ABRIMOS TODOS LOS DÍAS, INCLUIDO FERIADOS\"; reduced 9:00 a.m.–6:00 p.m. on 24, 25 and 31 December and 1 January. General admission S/ 50.",
+      "confidence": "high"
+    },
+    {
+      "name": "Café del Museo Larco",
+      "kind": "meal",
+      "url": "https://cafe.museolarco.org/",
+      "sourceType": "operator's own site (Museo Larco)",
+      "address": "Av. Bolívar 1515 (ingreso por la calle Navarra 169, frente al Parque Larco), Pueblo Libre, Lima 21, Perú.",
+      "operatingEvidence": "Menu PDFs dated 2026-10, including a breakfast & brunch menu and Sunday brunch menu; online reservations via Meitre.",
+      "hours": "Monday–Saturday 12:00–22:00 (last reservation 20:30); Sunday 9:00–22:00 (last reservation 20:00); page says hours subject to change.",
+      "confidence": "high"
+    },
+    {
+      "name": "MALI (Museo de Arte de Lima)",
+      "kind": "museum",
+      "url": "https://mali.pe/",
+      "sourceType": "operator's own site",
+      "address": "Av. 9 de diciembre 125, Parque de la Exposición. Lima 15046, Perú.",
+      "operatingEvidence": "Exhibition listings dated through 2026, including \"Pacchas: agua, ritual y ofrenda en los Andes\" (27/10/2026) and \"El tejido como memoria\" (30/10/2026); \"Entradas en boletería o Joinnus.\"",
+      "hours": "\"Martes a domingo de 10 a.m. a 6 p.m. (Sábados 5 p.m.)\" (Monday not listed).",
+      "confidence": "high"
+    },
+    {
+      "name": "MAC Lima",
+      "kind": "museum",
+      "url": "https://www.maclima.pe/",
+      "sourceType": "operator's own site",
+      "address": "Av. Grau 1511, Barranco (Lima – Perú), Lima 15063.",
+      "operatingEvidence": "\"Contemporáneo 1\" in Sala 3 \"Del 1 de diciembre de 2024 al 31 de diciembre de 2026\"; news dated 16 September 2026; \"MAC Lima © 2026.\"",
+      "hours": "\"Lunes: cerrado Martes a domingo: 10 a.m. a 7 p.m.\" (\"Sujeto a cambios sin previo aviso\").",
+      "confidence": "high"
+    },
+    {
+      "name": "Museo Pedro de Osma",
+      "kind": "museum",
+      "url": "https://www.museopedrodeosma.org/planea-tu-visita",
+      "sourceType": "operator's own site",
+      "address": "Av. Pedro de Osma 421, Barranco, Lima 15063.",
+      "operatingEvidence": "Visit page published October 2026 with current exhibitions \"María, Materialidad Divina\" (Sala 10) and ticket/closing-day details.",
+      "hours": "\"Martes a Domingo de 10am a 6pm\"; also closed on listed holiday dates. First Sunday of the month S/ 10 for Peruvians and residents only.",
+      "confidence": "high"
+    },
+    {
+      "name": "LUM (Lugar de la Memoria)",
+      "kind": "museum",
+      "url": "https://lum.cultura.pe/",
+      "sourceType": "official public operator (Ministerio de Cultura)",
+      "address": "Bajada San Martín 151, Miraflores.",
+      "operatingEvidence": "Erika Humala's \"Sobreviviendo en azul y tierra\" runs 18 May 2026 to 15 February 2027; September 2026 agenda published.",
+      "hours": "\"De Martes a Domingos\", 10:00 a.m.–6:00 p.m.; \"Ingreso libre con DNI.\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Museo Amano",
+      "kind": "museum",
+      "url": "https://www.museoamano.org/",
+      "sourceType": "operator's own site (Fundación Museo Amano)",
+      "address": "Calle Retiro 160, Miraflores, Lima (\"Altura de la cuadra 11 de la Av. Angamos Oeste\").",
+      "operatingEvidence": "Site publishes visiting hours, prices (general S/. 35) and group-booking rules, but its copyright reads \"Lima 2021\"; no 2026 content.",
+      "hours": "\"Martes a domingo de 10:00 am a 5:00 pm\"; \"Lunes con previa cita\" (from a page last dated 2021).",
+      "confidence": "medium"
+    },
+    {
+      "name": "Museo Oro del Perú",
+      "kind": "museum",
+      "url": "https://www.museoroperu.com.pe/",
+      "sourceType": "operator's own site",
+      "address": "Alonso de Molina 1100, Monterrico, Surco, Lima, Perú.",
+      "operatingEvidence": "Site publishes daily hours and admission prices (adults S/. 40, children under 5 free), but its only date is \"Copyright 2018\".",
+      "hours": "Every day 10:00 am–5:00 pm; closed 1 January, 1 May and 25 December (from a page dated 2018).",
+      "confidence": "medium"
+    },
+    {
+      "name": "Larcomar",
+      "kind": "scenic",
+      "url": "https://www.larcomar.com/",
+      "sourceType": "operator's own site",
+      "address": "Mal. de la Reserva 610, Miraflores, Lima.",
+      "operatingEvidence": "Home page promotes a current \"Bazar Gourmet\" offer, \"de lunes a viernes de 12 pm a 10 pm\"; no dated 2026 text.",
+      "hours": "not published (only promotion hours shown)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Restaurante Huaca Pucllana",
+      "kind": "meal",
+      "url": "https://www.resthuacapucllana.com/",
+      "sourceType": "operator's own site",
+      "address": "General Borgoño Cdra 8, Huaca Pucllana, Miraflores.",
+      "operatingEvidence": "Live \"Reserva Aquí\" booking link and published hours; footer reads \"©2020\", so the page is not clearly current.",
+      "hours": "\"Lunes a Sábado 12:00pm - 10:00pm\", \"Domingos 12:00pm - 8:00pm\" (from a page footed ©2020).",
+      "confidence": "medium"
+    },
+    {
+      "name": "Central",
+      "kind": "meal",
+      "url": "https://centralrestaurante.com.pe/",
+      "sourceType": "operator's own site",
+      "address": "AV. PEDRO DE OSMA 301, BARRANCO - LIMA, PERU",
+      "operatingEvidence": "Page published September 2026 with service times and \"RESERVAS\" link (reservas@centralrestaurante.com).",
+      "hours": "\"Lunes a Sábado\"; \"Almuerzo 12:45 - 13:30\"; \"Cena 19:00 - 20:30\".",
+      "confidence": "medium"
+    },
+    {
+      "name": "Kjolle",
+      "kind": "meal",
+      "url": "https://www.kjolle.com/reservaciones",
+      "sourceType": "operator's own site",
+      "address": "AV. PEDRO DE OSMA 301, BARRANCO",
+      "operatingEvidence": "Page published October 2026; online bookings \"para 1 a 6 personas con hasta 4 meses de anticipación\", but also \"Reservas disponibles hasta finales de Octubre.\"",
+      "hours": "\"MARTES A SÁBADO\"; lunch 12:45–14:00, dinner 19:00–20:30.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Maido",
+      "kind": "meal",
+      "url": "https://maido.pe/",
+      "sourceType": "operator's own site",
+      "address": "Calle San Martín 399 (esquina con Calle Colón), Miraflores, Lima, Perú.",
+      "operatingEvidence": "Live booking rules: reservations open \"2 meses de anticipación, el primer día de cada mes\", online for 1–10 people; footer \"Restaurante Maido 2026\".",
+      "hours": "Monday–Saturday 1:00 p.m.–10:00 p.m.; closed Sundays; tasting experiences Monday–Saturday 1:00–9:00 p.m.",
+      "confidence": "high"
+    },
+    {
+      "name": "Isolina (Barranco)",
+      "kind": "meal",
+      "url": "https://www.isolina.pe/",
+      "sourceType": "operator's own site",
+      "address": "Av. San Martín 101, Barranco.",
+      "operatingEvidence": "Branch hours and reservation links published; footer \"Restaurante Isolina 2026\".",
+      "hours": "Mon–Wed 12:00–22:00; Thu–Fri 12:00–23:00; Sat 9:00–11:00 and 12:00–23:00; Sun 9:00–11:00 and 12:00–19:00.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Rafael",
+      "kind": "meal",
+      "url": "https://www.rafaelosterling.pe/",
+      "sourceType": "operator's own site (Rafael Osterling group)",
+      "address": "Calle San Martín 300, Miraflores, Lima, Péru.",
+      "operatingEvidence": "Listed among current restaurants on a site footed \"© Rafael Osterling 2026\", which separately lists closed ventures (Bogotá) with 2026 end dates.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "El Mercado",
+      "kind": "meal",
+      "url": "https://www.rafaelosterling.pe/",
+      "sourceType": "operator's own site (Rafael Osterling group)",
+      "address": "Av. Hipólito Unanue 203; Miraflores, Lima, Péru.",
+      "operatingEvidence": "Listed among current restaurants with phone +51 974 779 517 on a site footed \"© Rafael Osterling 2026\".",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Cosme",
+      "kind": "meal",
+      "url": "https://cosme.com.pe/reservas/",
+      "sourceType": "operator's own site",
+      "address": "Tudela y Varela 160-162, San Isidro.",
+      "operatingEvidence": "Reservations page with live \"RESERVA AQUÍ\" booking link (Meitre) and published service hours; no dated 2026 text.",
+      "hours": "\"Lunes – Sábado 12:30 – 22:45\"; \"Domingos 12:00 – 16:00\" (page undated).",
+      "confidence": "medium"
+    },
+    {
+      "name": "La Mar (Miraflores)",
+      "kind": "meal",
+      "url": "https://www.lamarcebicheria.com/peru/",
+      "sourceType": "operator's own site (Acurio Restaurantes)",
+      "address": "Av. La Mar 770, Miraflores, Lima.",
+      "operatingEvidence": "Lima page publishes hours and a reservations link; footer \"© 2026 ... Acurio Restaurantes\".",
+      "hours": "\"Lunes a Jueves de 12m. a 5 p.m, Viernes 12m. a 7 p.m\"; \"Sábado, Domingo y feriados de 11:30 a. m. a 5:30 p.m.\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Pescados Capitales (Miraflores)",
+      "kind": "meal",
+      "url": "https://www.pescadoscapitales.com/",
+      "sourceType": "operator's own site",
+      "address": "Av. Mariscal La Mar 1337, Miraflores, Lima.",
+      "operatingEvidence": "Reservation links and 2026 media uploads; footer \"© 2026 Pescados Capitales\".",
+      "hours": "Monday–Saturday 12:00–23:00; Sunday 12:00–18:00.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Chifa Titi (San Isidro)",
+      "kind": "meal",
+      "url": "https://www.chifatiti.com/",
+      "sourceType": "operator's own site",
+      "address": "Av Javier Prado Este 1212, San Isidro.",
+      "operatingEvidence": "Branch hours published; footer \"Restaurante Chifa Titi 2026\".",
+      "hours": "Monday closed; Tuesday–Saturday 12:30–14:45 and 18:45–20:30; Sunday 12:45–15:45.",
+      "confidence": "medium"
+    },
+    {
+      "name": "El Chinito (Jr. Chancay)",
+      "kind": "meal",
+      "url": "https://www.elchinito.com.pe/",
+      "sourceType": "operator's own site",
+      "address": "Jr. Chancay 894 (Chancay con Zepita), Lima.",
+      "operatingEvidence": "Lists 15 branches including two marked \"NUEVO LOCAL\" and a service notice (\"Solo hasta 30 minutos antes del cierre de cada local\"); footer \"Copyright © 2025\".",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Ayahuasca Restobar",
+      "kind": "bar",
+      "url": "https://www.ayahuascarestobar.com/",
+      "sourceType": "operator's own site",
+      "address": "Av. San Martin 130, Barranco, Lima, Perú.",
+      "operatingEvidence": "Site publishes weekly hours and a WhatsApp reservations button; only date shown is a 2023 copyright.",
+      "hours": "Mon–Wed and Sun 12:00 PM–2:00 AM; Thu–Sat 12:00 PM–3:00 AM (from a page footed 2023).",
+      "confidence": "medium"
+    },
+    {
+      "name": "Hotel B",
+      "kind": "bar",
+      "url": "https://www.hotelb.pe/",
+      "sourceType": "operator's own site",
+      "address": "Avenida Sáenz Peña 204, Barranco 15063 (Lima – Perú).",
+      "operatingEvidence": "Dining section describes the ground-floor bar (\"Situado en la planta baja junto a la recepción\"), breakfast buffet and Tea Time \"by reservation\"; no dated 2026 text and some offers marked as older.",
+      "hours": "Breakfast buffet Mon–Thu 7:00–11:00, Fri–Sun and holidays 7:00–12:00; Tea Time daily 4:30–7:00 PM (page undated); bar hours not published.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Belmond Miraflores Park",
+      "kind": "bar",
+      "url": "https://www.belmond.com/hotels/south-america/peru/lima/belmond-miraflores-park/",
+      "sourceType": "operator's own site (Belmond)",
+      "address": "Av. Malecón de la Reserva, 1035 Miraflores, Lima 18, Peru.",
+      "operatingEvidence": "Dining page lists Tragaluz, The Observatory (11th-floor breakfast) and Belo Bar cocktail bar with menus; \"Copyright Belmond Management Limited 2026\".",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "El Pan de la Chola",
+      "kind": "bakery",
+      "url": "https://www.elpandelachola.com/",
+      "sourceType": "operator's own site",
+      "address": "Pan & Café: Av. Mariscal La Mar 918, Miraflores.",
+      "operatingEvidence": "Branch list with hours, delivery zones and products (baguette, focaccia, espresso blend); media uploaded in January and May 2026.",
+      "hours": "Pan & Café (Mariscal La Mar 918): open daily 7am–9pm.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Pastelería San Antonio (Angamos)",
+      "kind": "bakery",
+      "url": "https://www.pasteleriasanantonio.com/",
+      "sourceType": "operator's own site",
+      "address": "Angamos: Av. Angamos Oste 1494, Miraflores.",
+      "operatingEvidence": "Store list and contact-centre hours published; latest visible dates are 2024 and 2025, no 2026 content.",
+      "hours": "Store hours not readable; contact centre \"De Lunes a Domingo de 7 am a 10 pm\".",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Miraflores",
+      "reason": "generic, not a place (district)",
+      "url": ""
+    },
+    {
+      "name": "Barranco",
+      "reason": "generic, not a place (district)",
+      "url": ""
+    },
+    {
+      "name": "Historic Center",
+      "reason": "generic, not a place (district)",
+      "url": ""
+    },
+    {
+      "name": "Cliffside sunset",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Barranco art walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Barranco art walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A serious market or food tour",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Ceviche lunch",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Modern Peruvian tasting menu",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Barranco cafe evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Barranco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Historic Center",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Miraflores",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Miraflores walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Barranco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Historic Center",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Historic Center",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Miraflores",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Miraflores",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Cliffside sunset",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Barranco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Barranco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Miraflores evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Barranco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Historic Center",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Miraflores",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Miraflores",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Barranco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Historic Center",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Miraflores",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Miraflores",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Miraflores cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Historic Center",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Historic Center",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Miraflores",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Miraflores",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Barranco bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Miraflores",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Historic Center",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Miraflores",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Barranco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Historic Center",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Miraflores",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Barranco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Historic Center",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Miraflores",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Miraflores",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Barranco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Historic Center",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Miraflores",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Barranco morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Miraflores",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Historic Center",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Miraflores",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Barranco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Historic Center",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "MATE – Museo Mario Testino",
+      "reason": "fetch failed: connection refused (ECONNREFUSED) on both www.mate.pe and mate.pe",
+      "url": "https://mate.pe/"
+    },
+    {
+      "name": "Circuito Mágico del Agua",
+      "reason": "fetch failed: TLS error (TLSV1_ALERT_UNRECOGNIZED_NAME)",
+      "url": "https://www.circuitomagicodelagua.com.pe/"
+    },
+    {
+      "name": "Parque de las Leyendas",
+      "reason": "official page refused automated reading (HTTP 418) after redirect to gob.pe",
+      "url": "https://www.gob.pe/leyendas/"
+    },
+    {
+      "name": "Casa de Aliaga",
+      "reason": "official site shows no address, hours or visit details, only a 2026 footer, and carries unrelated gambling links (possible compromise)",
+      "url": "https://www.casadealiaga.com/"
+    },
+    {
+      "name": "Museo Andrés del Castillo",
+      "reason": "domain redirects to an unrelated casino site; no official page readable",
+      "url": "https://www.madc.com.pe/"
+    },
+    {
+      "name": "Museo Convento de San Francisco (catacombs)",
+      "reason": "domain redirects to an unrelated site; no official page readable",
+      "url": "https://www.museocatacumbas.com/"
+    },
+    {
+      "name": "Catedral de Lima museum",
+      "reason": "fetch failed: domain not found (ENOTFOUND)",
+      "url": "https://www.museocatedrallima.org.pe/"
+    },
+    {
+      "name": "Museo Central (BCRP)",
+      "reason": "bot check (\"Pardon Our Interruption\"); not bypassed",
+      "url": "https://www.bcrp.gob.pe/museocentral.html"
+    },
+    {
+      "name": "Casa de la Literatura Peruana",
+      "reason": "HTTP 403 Forbidden",
+      "url": "https://www.casadelaliteratura.gob.pe/"
+    },
+    {
+      "name": "Museo de Historia Natural (UNMSM)",
+      "reason": "certificate error (unable to verify the first certificate)",
+      "url": "https://museohn.unmsm.edu.pe/"
+    },
+    {
+      "name": "Astrid y Gastón",
+      "reason": "official homepage gives hours but no current address (only its 1994 origin on calle Cantuarias); contact and booking pages 404",
+      "url": "https://www.astridygaston.com/"
+    },
+    {
+      "name": "Gran Hotel Bolívar (bar)",
+      "reason": "fetch failed: SSL error (WRONG_VERSION_NUMBER) after redirect",
+      "url": "https://granhotelbolivar.pe/"
+    },
+    {
+      "name": "Country Club Lima Hotel (Bar Inglés)",
+      "reason": "HTTP 403 Forbidden / socket closed",
+      "url": "https://www.hotelcountry.com/"
+    },
+    {
+      "name": "Carnaval (bar)",
+      "reason": "no official website found; guessed domain not found (ENOTFOUND); third-party listings not usable",
+      "url": "https://www.carnavalbar.pe/"
+    },
+    {
+      "name": "Lady Bee (bar)",
+      "reason": "no official site readable (domain not found)",
+      "url": "https://www.ladybee.pe/"
+    },
+    {
+      "name": "Sastrería Martínez (bar)",
+      "reason": "no official site readable (domain not found)",
+      "url": "https://www.sastreriamartinez.pe/"
+    },
+    {
+      "name": "Brujas de Cachiche (Huaringas bar)",
+      "reason": "site shows only a server placeholder (\"webserver is functioning normally\")",
+      "url": "https://www.brujasdecachiche.com.pe/"
+    },
+    {
+      "name": "La Rosa Náutica",
+      "reason": "HTTP 429 Too Many Requests on repeated attempts",
+      "url": "https://www.larosanautica.com/"
+    },
+    {
+      "name": "Puku Puku (café)",
+      "reason": "HTTP 429 Too Many Requests on repeated attempts",
+      "url": "https://www.pukupuku.pe/"
+    },
+    {
+      "name": "Café Bisetti / Tostaduría Bisetti",
+      "reason": "official site gives no address or hours; tostaduriabisetti.com not found",
+      "url": "https://www.cafebisetti.com/"
+    },
+    {
+      "name": "Neira Café Lab",
+      "reason": "site is a pre-launch placeholder (\"Próximo lanzamiento\"); no address",
+      "url": "https://www.neiracafelab.com/"
+    },
+    {
+      "name": "Arabica Espresso Bar",
+      "reason": "domain is parked; no official page",
+      "url": "https://www.arabicaespresso.com/"
+    },
+    {
+      "name": "Origen Tostadores",
+      "reason": "fetch failed: domain not found",
+      "url": "https://www.origentostadores.com/"
+    },
+    {
+      "name": "Panadería Cultivo",
+      "reason": "fetch failed: domain not found",
+      "url": "https://www.cafecultivo.pe/"
+    },
+    {
+      "name": "Sienna Bakery",
+      "reason": "fetch failed: connection refused",
+      "url": "https://www.siennabakery.com/"
+    },
+    {
+      "name": "La Baguette",
+      "reason": "site under maintenance (\"SITIO WEB EN MANTENIMIENTO\"); no addresses",
+      "url": "https://www.labaguette.pe/"
+    },
+    {
+      "name": "Don Mamino",
+      "reason": "site lists branches by name and hours only, no street addresses",
+      "url": "https://www.donmamino.com/"
+    },
+    {
+      "name": "La Lucha Sanguchería",
+      "reason": "site shows only \"PRÓXIMAMENTE\"; no addresses or hours",
+      "url": "https://www.lalucha.com.pe/"
+    },
+    {
+      "name": "Siete Sopas",
+      "reason": "site shows only \"Próximamente\"; no addresses or hours",
+      "url": "https://www.sietesopas.com/"
+    },
+    {
+      "name": "Mayta",
+      "reason": "official site has booking link but no address or hours",
+      "url": "https://www.maytalima.com.pe/"
+    },
+    {
+      "name": "Panchita (Miraflores)",
+      "reason": "official site has booking links but no branch address or hours",
+      "url": "https://www.panchita.pe/"
+    },
+    {
+      "name": "Tanta",
+      "reason": "homepage and locales page give no branch addresses",
+      "url": "https://www.tantaperu.com/locales/"
+    },
+    {
+      "name": "Mérito",
+      "reason": "official site has phone and booking link but no address",
+      "url": "https://www.meritorestaurante.com/"
+    },
+    {
+      "name": "Amaz",
+      "reason": "official domain returns no readable content",
+      "url": "https://www.amaz.com.pe/"
+    },
+    {
+      "name": "Osaka (Lima)",
+      "reason": "group site gives no Lima address or hours",
+      "url": "https://www.osakanikkei.com/"
+    },
+    {
+      "name": "ChocoMuseo (Lima)",
+      "reason": "official site names Lima Miraflores and Historic Center locations but gives no addresses",
+      "url": "https://www.chocomuseo.com/"
+    },
+    {
+      "name": "Bodega Queirolo",
+      "reason": "domain serves unrelated content; no official page",
+      "url": "https://www.bodegaqueirolo.com/"
+    },
+    {
+      "name": "Cala",
+      "reason": "official site returned no readable content",
+      "url": "https://www.calarestaurante.com/"
+    },
+    {
+      "name": "Punto Azul",
+      "reason": "fetch failed: domain not found",
+      "url": "https://www.puntoazul.com.pe/"
+    },
+    {
+      "name": "Barra Chalaca",
+      "reason": "fetch failed: domain not found",
+      "url": "https://www.barrachalaca.com/"
+    },
+    {
+      "name": "Fiesta (Lima)",
+      "reason": "fetch failed: DNS error (EAI_AGAIN)",
+      "url": "https://www.restaurantfiestagourmet.com/"
+    },
+    {
+      "name": "Parque Kennedy / Parque del Amor / Malecón",
+      "reason": "Municipalidad de Miraflores homepage has no page content on these parks; no official address or notice read",
+      "url": "https://www.miraflores.gob.pe/"
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Museo Larco",
+        "MALI (Museo de Arte de Lima)",
+        "LUM (Lugar de la Memoria)",
+        "Larcomar"
+      ],
+      "bestFirstTimers": [
+        "Museo Larco",
+        "MALI (Museo de Arte de Lima)",
+        "Museo Pedro de Osma",
+        "Larcomar"
+      ],
+      "bestRestaurants": [
+        "Maido",
+        "Central",
+        "Isolina (Barranco)",
+        "Rafael"
+      ],
+      "bestBudget": [
+        "LUM (Lugar de la Memoria)",
+        "El Chinito (Jr. Chancay)",
+        "El Pan de la Chola"
+      ],
+      "bestLuxury": [
+        "Central",
+        "Maido",
+        "Belmond Miraflores Park",
+        "Hotel B"
+      ],
+      "bestCouples": [
+        "Restaurante Huaca Pucllana",
+        "Belmond Miraflores Park",
+        "Cosme",
+        "Rafael"
+      ],
+      "bestKids": [
+        "Museo Larco",
+        "Museo Oro del Perú",
+        "Café del Museo Larco",
+        "Larcomar"
+      ],
+      "bestSolo": [
+        "MAC Lima",
+        "Museo Amano",
+        "LUM (Lugar de la Memoria)",
+        "El Pan de la Chola"
+      ],
+      "bestUnique": [
+        "Restaurante Huaca Pucllana",
+        "Museo Amano",
+        "Museo Oro del Perú",
+        "LUM (Lugar de la Memoria)"
+      ],
+      "bestBreakfast": [
+        "Café del Museo Larco",
+        "Isolina (Barranco)",
+        "Hotel B",
+        "El Pan de la Chola"
+      ],
+      "bestLunch": [
+        "La Mar (Miraflores)",
+        "Pescados Capitales (Miraflores)",
+        "Isolina (Barranco)",
+        "El Mercado"
+      ],
+      "bestDinner": [
+        "Maido",
+        "Central",
+        "Chifa Titi (San Isidro)",
+        "Cosme"
+      ],
+      "bestCocktails": [
+        "Ayahuasca Restobar",
+        "Belmond Miraflores Park",
+        "Hotel B"
+      ],
+      "bestBakeries": [
+        "El Pan de la Chola",
+        "Pastelería San Antonio (Angamos)"
+      ],
+      "bestCoffee": [
+        "El Pan de la Chola",
+        "Café del Museo Larco",
+        "Hotel B"
+      ]
+    },
+    "queries": {
+      "Museo Larco": "Museo Larco Av. Simón Bolívar 1515 Pueblo Libre Lima",
+      "Café del Museo Larco": "Café del Museo Larco Av. Simón Bolívar 1515 Pueblo Libre Lima",
+      "MALI (Museo de Arte de Lima)": "MALI Museo de Arte de Lima Av. 9 de Diciembre 125 Lima",
+      "MAC Lima": "MAC Lima Av. Grau 1511 Barranco Lima",
+      "Museo Pedro de Osma": "Museo Pedro de Osma Av. Pedro de Osma 421 Barranco Lima",
+      "LUM (Lugar de la Memoria)": "Lugar de la Memoria Bajada San Martín 151 Miraflores Lima",
+      "Museo Amano": "Museo Amano Calle Retiro 160 Miraflores Lima",
+      "Museo Oro del Perú": "Museo Oro del Perú Alonso de Molina 1100 Surco Lima",
+      "Larcomar": "Larcomar Malecón de la Reserva 610 Miraflores Lima",
+      "Restaurante Huaca Pucllana": "Restaurante Huaca Pucllana General Borgoño cuadra 8 Miraflores Lima",
+      "Central": "Central Av. Pedro de Osma 301 Barranco Lima",
+      "Kjolle": "Kjolle Av. Pedro de Osma 301 Barranco Lima",
+      "Maido": "Maido Calle San Martín 399 Miraflores Lima",
+      "Isolina (Barranco)": "Isolina Av. San Martín 101 Barranco Lima",
+      "Rafael": "Rafael Calle San Martín 300 Miraflores Lima",
+      "El Mercado": "El Mercado Av. Hipólito Unanue 203 Miraflores Lima",
+      "Cosme": "Cosme Tudela y Varela 160 San Isidro Lima",
+      "La Mar (Miraflores)": "La Mar Av. La Mar 770 Miraflores Lima",
+      "Pescados Capitales (Miraflores)": "Pescados Capitales Av. Mariscal La Mar 1337 Miraflores Lima",
+      "Chifa Titi (San Isidro)": "Chifa Titi Av. Javier Prado Este 1212 San Isidro Lima",
+      "El Chinito (Jr. Chancay)": "El Chinito Jr. Chancay 894 Lima",
+      "Ayahuasca Restobar": "Ayahuasca Restobar Av. San Martín 130 Barranco Lima",
+      "Hotel B": "Hotel B Av. Sáenz Peña 204 Barranco Lima",
+      "Belmond Miraflores Park": "Belmond Miraflores Park Malecón de la Reserva 1035 Miraflores Lima",
+      "El Pan de la Chola": "El Pan de la Chola Av. Mariscal La Mar 918 Miraflores Lima",
+      "Pastelería San Antonio (Angamos)": "Pastelería San Antonio Av. Angamos Oeste 1494 Miraflores Lima"
+    },
+    "summary": "Pre-Columbian and contemporary art museums, Barranco galleries and clifftop Miraflores, with tasting menus, cevicherías, bakeries and bars checked against their own websites.",
+    "highlights": [
+      "Museo Larco",
+      "MALI (Museo de Arte de Lima)",
+      "MAC Lima",
+      "Museo Pedro de Osma"
+    ],
+    "tip": "MALI, MAC Lima, Museo Pedro de Osma and LUM all list Tuesday-to-Sunday hours and are closed on Mondays, so make Monday your Museo Larco day, since it says it opens every day, including holidays.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Most museums closed Mondays",
+        "copy": "MALI, MAC Lima, Museo Pedro de Osma and LUM publish Tuesday-to-Sunday hours, so they are closed on Mondays. Museo Larco says it opens every day, including holidays, from 9am to 7pm."
+      },
+      {
+        "label": "Tickets",
+        "value": "Buy Museo Larco online",
+        "copy": "Museo Larco charges S/ 50 general admission and says buying online gives a special discount and preferential access. LUM's own site says entry is free with a DNI (Peru's national ID)."
+      },
+      {
+        "label": "Restaurant booking",
+        "value": "Maido opens two months ahead",
+        "copy": "Maido releases reservations two months in advance on the first day of each month, online for 1 to 10 people, and is closed on Sundays. Central lists lunch and dinner sittings Monday to Saturday only."
+      },
+      {
+        "label": "House rules",
+        "value": "No pets or outside food",
+        "copy": "Café del Museo Larco does not allow pets, outside food such as cakes, or decorations, and charges S/ 60 corkage per bottle of wine. Groups of more than six are seated once 70% of the party has arrived."
+      }
+    ],
+    "dek": "Plan museums for Tuesday to Sunday, keep Monday for Museo Larco, and book tasting menus such as Maido well before you fly.",
+    "intro": [
+      "This guide is built around places that publish their own schedules. Museo Larco in Pueblo Libre says it opens every day, including holidays, from 9am to 7pm, with general admission at S/ 50 and a discount plus preferential access when you buy online. Its Café del Museo Larco serves lunch and dinner daily and opens at 9am on Sundays for brunch, though it asks you not to bring pets or outside food. In central Lima, MALI sits in the Parque de la Exposición and lists Tuesday-to-Sunday hours from 10am to 6pm, closing at 5pm on Saturdays.",
+      "Barranco rewards a slower afternoon. MAC Lima on Av. Grau is closed on Mondays and open 10am to 7pm Tuesday to Sunday, and its \"Contemporáneo 1\" display in Sala 3 runs until 31 December 2026. A short walk away, Museo Pedro de Osma opens Tuesday to Sunday from 10am to 6pm and offers S/ 10 entry on the first Sunday of the month for Peruvians and residents only. In Miraflores, LUM (Lugar de la Memoria) on Bajada San Martín is free with a DNI and shows Erika Humala's \"Sobreviviendo en azul y tierra\" until 15 February 2027.",
+      "For tasting menus, book early. Maido, at Calle San Martín 399 in Miraflores, releases reservations two months ahead on the first day of each month and serves Monday to Saturday only. Central, on Av. Pedro de Osma in Barranco, lists lunch and dinner sittings Monday to Saturday. For a simpler seafood lunch, La Mar on Av. La Mar keeps daytime hours, closing at 5pm Monday to Thursday, while Pescados Capitales, further along Av. Mariscal La Mar, serves until 11pm Monday to Saturday. Chifa Titi in San Isidro is closed on Mondays.",
+      "Mornings can start at El Pan de la Chola on Av. Mariscal La Mar, whose Pan & Café branch lists daily hours from 7am to 9pm, or at Isolina in Barranco, which serves breakfast from 9am to 11am on Saturdays and Sundays. For an evening drink, Hotel B in Barranco describes a ground-floor bar beside reception, and Belmond Miraflores Park lists Belo Bar among its venues. Ayahuasca Restobar on Av. San Martín in Barranco publishes late hours, but on a page last dated 2023, so check before you go."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair Museo Larco, open every day, with MALI or MAC Lima, remembering that MALI, MAC Lima, Museo Pedro de Osma and LUM are closed on Mondays."
+      ],
+      [
+        "A slower morning",
+        "Start with Sunday brunch at Café del Museo Larco from 9am, or a weekend breakfast at Isolina in Barranco, served 9am to 11am on Saturdays and Sundays."
+      ],
+      [
+        "Before booking",
+        "Maido opens reservations two months ahead on the first day of each month, and both Maido and Central list Monday-to-Saturday service only."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The input guide contained only generic entries, so every place here was added and checked separately. Several confirmed places publish hours only on undated or older pages: Museo Amano (copyright 2021), Museo Oro del Perú (2018), Restaurante Huaca Pucllana (2020), Ayahuasca Restobar (2023), El Chinito (2025) and Pastelería San Antonio (latest dates 2024–2025); Hotel B, Cosme and Larcomar pages are undated, and Larcomar, Rafael, El Mercado, El Chinito and Belmond Miraflores Park publish no regular hours. MALI lists exhibitions by single dates, not ranges, so run lengths are unclear. Kjolle's booking page says \"Reservas disponibles hasta finales de Octubre\", so it is left out of the guide lists until the position after October is clear. Sites that could not be read include MATE (connection refused), Circuito Mágico del Agua (TLS error), Parque de las Leyendas (HTTP 418), Museo Central (bot check), Casa de la Literatura and Country Club Lima Hotel (HTTP 403), Puku Puku and La Rosa Náutica (HTTP 429), and Gran Hotel Bolívar (SSL error). Casa de Aliaga's site carries unrelated gambling links, and the Museo Andrés del Castillo and Convento de San Francisco catacomb domains redirect to unrelated sites. Astrid y Gastón, Mayta, Panchita, Tanta and ChocoMuseo publish no usable address on the pages read.",
+  "injectionLikeText": []
+}

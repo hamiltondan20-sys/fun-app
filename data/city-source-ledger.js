@@ -5,6 +5,804 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Lima, Peru": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-28",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The input guide contained only generic entries, so every place here was added and checked separately. Several confirmed places publish hours only on undated or older pages: Museo Amano (copyright 2021), Museo Oro del Perú (2018), Restaurante Huaca Pucllana (2020), Ayahuasca Restobar (2023), El Chinito (2025) and Pastelería San Antonio (latest dates 2024–2025); Hotel B, Cosme and Larcomar pages are undated, and Larcomar, Rafael, El Mercado, El Chinito and Belmond Miraflores Park publish no regular hours. MALI lists exhibitions by single dates, not ranges, so run lengths are unclear. Kjolle's booking page says \"Reservas disponibles hasta finales de Octubre\", so it is left out of the guide lists until the position after October is clear. Sites that could not be read include MATE (connection refused), Circuito Mágico del Agua (TLS error), Parque de las Leyendas (HTTP 418), Museo Central (bot check), Casa de la Literatura and Country Club Lima Hotel (HTTP 403), Puku Puku and La Rosa Náutica (HTTP 429), and Gran Hotel Bolívar (SSL error). Casa de Aliaga's site carries unrelated gambling links, and the Museo Andrés del Castillo and Convento de San Francisco catacomb domains redirect to unrelated sites. Astrid y Gastón, Mayta, Panchita, Tanta and ChocoMuseo publish no usable address on the pages read.",
+    "sourceUrls": [
+      "docs/content-research/lima-2026-10-28.md",
+      "docs/content-research/lima-2026-10-28.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Miraflores",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place (district)"
+      },
+      {
+        "name": "Barranco",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place (district)"
+      },
+      {
+        "name": "Historic Center",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place (district)"
+      },
+      {
+        "name": "Cliffside sunset",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Barranco art walk",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Barranco art walk",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A serious market or food tour",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Ceviche lunch",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Modern Peruvian tasting menu",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Barranco cafe evening",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Barranco",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Historic Center",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Miraflores",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Miraflores walk",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Barranco",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Historic Center",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Historic Center",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Miraflores",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Miraflores",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Cliffside sunset",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Barranco",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Barranco",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Miraflores evening",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Barranco",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Historic Center",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Miraflores",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Miraflores",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Barranco",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Historic Center",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Miraflores",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Miraflores",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Miraflores cafe or market",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Historic Center",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Historic Center",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Miraflores",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Miraflores",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Barranco bakery or market",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Miraflores",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Historic Center",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Miraflores",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Barranco",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Historic Center",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Miraflores",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Barranco",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Historic Center",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Miraflores",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Miraflores",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Barranco",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Historic Center",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Miraflores",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Barranco morning market",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Miraflores",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Historic Center",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Miraflores",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Barranco",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Historic Center",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "MATE – Museo Mario Testino",
+        "url": "https://mate.pe/",
+        "checkedOn": "2026-10-28",
+        "reason": "fetch failed: connection refused (ECONNREFUSED) on both www.mate.pe and mate.pe"
+      },
+      {
+        "name": "Circuito Mágico del Agua",
+        "url": "https://www.circuitomagicodelagua.com.pe/",
+        "checkedOn": "2026-10-28",
+        "reason": "fetch failed: TLS error (TLSV1_ALERT_UNRECOGNIZED_NAME)"
+      },
+      {
+        "name": "Parque de las Leyendas",
+        "url": "https://www.gob.pe/leyendas/",
+        "checkedOn": "2026-10-28",
+        "reason": "official page refused automated reading (HTTP 418) after redirect to gob.pe"
+      },
+      {
+        "name": "Casa de Aliaga",
+        "url": "https://www.casadealiaga.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "official site shows no address, hours or visit details, only a 2026 footer, and carries unrelated gambling links (possible compromise)"
+      },
+      {
+        "name": "Museo Andrés del Castillo",
+        "url": "https://www.madc.com.pe/",
+        "checkedOn": "2026-10-28",
+        "reason": "domain redirects to an unrelated casino site; no official page readable"
+      },
+      {
+        "name": "Museo Convento de San Francisco (catacombs)",
+        "url": "https://www.museocatacumbas.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "domain redirects to an unrelated site; no official page readable"
+      },
+      {
+        "name": "Catedral de Lima museum",
+        "url": "https://www.museocatedrallima.org.pe/",
+        "checkedOn": "2026-10-28",
+        "reason": "fetch failed: domain not found (ENOTFOUND)"
+      },
+      {
+        "name": "Museo Central (BCRP)",
+        "url": "https://www.bcrp.gob.pe/museocentral.html",
+        "checkedOn": "2026-10-28",
+        "reason": "bot check (\"Pardon Our Interruption\"); not bypassed"
+      },
+      {
+        "name": "Casa de la Literatura Peruana",
+        "url": "https://www.casadelaliteratura.gob.pe/",
+        "checkedOn": "2026-10-28",
+        "reason": "HTTP 403 Forbidden"
+      },
+      {
+        "name": "Museo de Historia Natural (UNMSM)",
+        "url": "https://museohn.unmsm.edu.pe/",
+        "checkedOn": "2026-10-28",
+        "reason": "certificate error (unable to verify the first certificate)"
+      },
+      {
+        "name": "Astrid y Gastón",
+        "url": "https://www.astridygaston.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "official homepage gives hours but no current address (only its 1994 origin on calle Cantuarias); contact and booking pages 404"
+      },
+      {
+        "name": "Gran Hotel Bolívar (bar)",
+        "url": "https://granhotelbolivar.pe/",
+        "checkedOn": "2026-10-28",
+        "reason": "fetch failed: SSL error (WRONG_VERSION_NUMBER) after redirect"
+      },
+      {
+        "name": "Country Club Lima Hotel (Bar Inglés)",
+        "url": "https://www.hotelcountry.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "HTTP 403 Forbidden / socket closed"
+      },
+      {
+        "name": "Carnaval (bar)",
+        "url": "https://www.carnavalbar.pe/",
+        "checkedOn": "2026-10-28",
+        "reason": "no official website found; guessed domain not found (ENOTFOUND); third-party listings not usable"
+      },
+      {
+        "name": "Lady Bee (bar)",
+        "url": "https://www.ladybee.pe/",
+        "checkedOn": "2026-10-28",
+        "reason": "no official site readable (domain not found)"
+      },
+      {
+        "name": "Sastrería Martínez (bar)",
+        "url": "https://www.sastreriamartinez.pe/",
+        "checkedOn": "2026-10-28",
+        "reason": "no official site readable (domain not found)"
+      },
+      {
+        "name": "Brujas de Cachiche (Huaringas bar)",
+        "url": "https://www.brujasdecachiche.com.pe/",
+        "checkedOn": "2026-10-28",
+        "reason": "site shows only a server placeholder (\"webserver is functioning normally\")"
+      },
+      {
+        "name": "La Rosa Náutica",
+        "url": "https://www.larosanautica.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "HTTP 429 Too Many Requests on repeated attempts"
+      },
+      {
+        "name": "Puku Puku (café)",
+        "url": "https://www.pukupuku.pe/",
+        "checkedOn": "2026-10-28",
+        "reason": "HTTP 429 Too Many Requests on repeated attempts"
+      },
+      {
+        "name": "Café Bisetti / Tostaduría Bisetti",
+        "url": "https://www.cafebisetti.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "official site gives no address or hours; tostaduriabisetti.com not found"
+      },
+      {
+        "name": "Neira Café Lab",
+        "url": "https://www.neiracafelab.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "site is a pre-launch placeholder (\"Próximo lanzamiento\"); no address"
+      },
+      {
+        "name": "Arabica Espresso Bar",
+        "url": "https://www.arabicaespresso.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "domain is parked; no official page"
+      },
+      {
+        "name": "Origen Tostadores",
+        "url": "https://www.origentostadores.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "fetch failed: domain not found"
+      },
+      {
+        "name": "Panadería Cultivo",
+        "url": "https://www.cafecultivo.pe/",
+        "checkedOn": "2026-10-28",
+        "reason": "fetch failed: domain not found"
+      },
+      {
+        "name": "Sienna Bakery",
+        "url": "https://www.siennabakery.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "fetch failed: connection refused"
+      },
+      {
+        "name": "La Baguette",
+        "url": "https://www.labaguette.pe/",
+        "checkedOn": "2026-10-28",
+        "reason": "site under maintenance (\"SITIO WEB EN MANTENIMIENTO\"); no addresses"
+      },
+      {
+        "name": "Don Mamino",
+        "url": "https://www.donmamino.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "site lists branches by name and hours only, no street addresses"
+      },
+      {
+        "name": "La Lucha Sanguchería",
+        "url": "https://www.lalucha.com.pe/",
+        "checkedOn": "2026-10-28",
+        "reason": "site shows only \"PRÓXIMAMENTE\"; no addresses or hours"
+      },
+      {
+        "name": "Siete Sopas",
+        "url": "https://www.sietesopas.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "site shows only \"Próximamente\"; no addresses or hours"
+      },
+      {
+        "name": "Mayta",
+        "url": "https://www.maytalima.com.pe/",
+        "checkedOn": "2026-10-28",
+        "reason": "official site has booking link but no address or hours"
+      },
+      {
+        "name": "Panchita (Miraflores)",
+        "url": "https://www.panchita.pe/",
+        "checkedOn": "2026-10-28",
+        "reason": "official site has booking links but no branch address or hours"
+      },
+      {
+        "name": "Tanta",
+        "url": "https://www.tantaperu.com/locales/",
+        "checkedOn": "2026-10-28",
+        "reason": "homepage and locales page give no branch addresses"
+      },
+      {
+        "name": "Mérito",
+        "url": "https://www.meritorestaurante.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "official site has phone and booking link but no address"
+      },
+      {
+        "name": "Amaz",
+        "url": "https://www.amaz.com.pe/",
+        "checkedOn": "2026-10-28",
+        "reason": "official domain returns no readable content"
+      },
+      {
+        "name": "Osaka (Lima)",
+        "url": "https://www.osakanikkei.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "group site gives no Lima address or hours"
+      },
+      {
+        "name": "ChocoMuseo (Lima)",
+        "url": "https://www.chocomuseo.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "official site names Lima Miraflores and Historic Center locations but gives no addresses"
+      },
+      {
+        "name": "Bodega Queirolo",
+        "url": "https://www.bodegaqueirolo.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "domain serves unrelated content; no official page"
+      },
+      {
+        "name": "Cala",
+        "url": "https://www.calarestaurante.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "official site returned no readable content"
+      },
+      {
+        "name": "Punto Azul",
+        "url": "https://www.puntoazul.com.pe/",
+        "checkedOn": "2026-10-28",
+        "reason": "fetch failed: domain not found"
+      },
+      {
+        "name": "Barra Chalaca",
+        "url": "https://www.barrachalaca.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "fetch failed: domain not found"
+      },
+      {
+        "name": "Fiesta (Lima)",
+        "url": "https://www.restaurantfiestagourmet.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "fetch failed: DNS error (EAI_AGAIN)"
+      },
+      {
+        "name": "Parque Kennedy / Parque del Amor / Malecón",
+        "url": "https://www.miraflores.gob.pe/",
+        "checkedOn": "2026-10-28",
+        "reason": "Municipalidad de Miraflores homepage has no page content on these parks; no official address or notice read"
+      }
+    ],
+    "placeSources": {
+      "Museo Larco": {
+        "url": "https://www.museolarco.org/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Site promotes the museum's centenary miniseries (\"a cien años de su fundación\") with 2026 media uploads, current ticket prices and a live \"COMPRAR ENTRADAS\" link; \"La compra en línea ofrece un descuento especial y acceso preferencial.\""
+      },
+      "Café del Museo Larco": {
+        "url": "https://cafe.museolarco.org/",
+        "sourceType": "operator's own site (Museo Larco)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Menu PDFs dated 2026-10, including a breakfast & brunch menu and Sunday brunch menu; online reservations via Meitre."
+      },
+      "MALI (Museo de Arte de Lima)": {
+        "url": "https://mali.pe/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Exhibition listings dated through 2026, including \"Pacchas: agua, ritual y ofrenda en los Andes\" (27/10/2026) and \"El tejido como memoria\" (30/10/2026); \"Entradas en boletería o Joinnus.\""
+      },
+      "MAC Lima": {
+        "url": "https://www.maclima.pe/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "\"Contemporáneo 1\" in Sala 3 \"Del 1 de diciembre de 2024 al 31 de diciembre de 2026\"; news dated 16 September 2026; \"MAC Lima © 2026.\""
+      },
+      "Museo Pedro de Osma": {
+        "url": "https://www.museopedrodeosma.org/planea-tu-visita",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Visit page published October 2026 with current exhibitions \"María, Materialidad Divina\" (Sala 10) and ticket/closing-day details."
+      },
+      "LUM (Lugar de la Memoria)": {
+        "url": "https://lum.cultura.pe/",
+        "sourceType": "official public operator (Ministerio de Cultura)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Erika Humala's \"Sobreviviendo en azul y tierra\" runs 18 May 2026 to 15 February 2027; September 2026 agenda published."
+      },
+      "Museo Amano": {
+        "url": "https://www.museoamano.org/",
+        "sourceType": "operator's own site (Fundación Museo Amano)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Site publishes visiting hours, prices (general S/. 35) and group-booking rules, but its copyright reads \"Lima 2021\"; no 2026 content."
+      },
+      "Museo Oro del Perú": {
+        "url": "https://www.museoroperu.com.pe/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Site publishes daily hours and admission prices (adults S/. 40, children under 5 free), but its only date is \"Copyright 2018\"."
+      },
+      "Larcomar": {
+        "url": "https://www.larcomar.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Home page promotes a current \"Bazar Gourmet\" offer, \"de lunes a viernes de 12 pm a 10 pm\"; no dated 2026 text."
+      },
+      "Restaurante Huaca Pucllana": {
+        "url": "https://www.resthuacapucllana.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Live \"Reserva Aquí\" booking link and published hours; footer reads \"©2020\", so the page is not clearly current."
+      },
+      "Central": {
+        "url": "https://centralrestaurante.com.pe/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Page published September 2026 with service times and \"RESERVAS\" link (reservas@centralrestaurante.com)."
+      },
+      "Maido": {
+        "url": "https://maido.pe/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Live booking rules: reservations open \"2 meses de anticipación, el primer día de cada mes\", online for 1–10 people; footer \"Restaurante Maido 2026\"."
+      },
+      "Isolina (Barranco)": {
+        "url": "https://www.isolina.pe/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Branch hours and reservation links published; footer \"Restaurante Isolina 2026\"."
+      },
+      "Rafael": {
+        "url": "https://www.rafaelosterling.pe/",
+        "sourceType": "operator's own site (Rafael Osterling group)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Listed among current restaurants on a site footed \"© Rafael Osterling 2026\", which separately lists closed ventures (Bogotá) with 2026 end dates."
+      },
+      "El Mercado": {
+        "url": "https://www.rafaelosterling.pe/",
+        "sourceType": "operator's own site (Rafael Osterling group)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Listed among current restaurants with phone +51 974 779 517 on a site footed \"© Rafael Osterling 2026\"."
+      },
+      "Cosme": {
+        "url": "https://cosme.com.pe/reservas/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Reservations page with live \"RESERVA AQUÍ\" booking link (Meitre) and published service hours; no dated 2026 text."
+      },
+      "La Mar (Miraflores)": {
+        "url": "https://www.lamarcebicheria.com/peru/",
+        "sourceType": "operator's own site (Acurio Restaurantes)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Lima page publishes hours and a reservations link; footer \"© 2026 ... Acurio Restaurantes\"."
+      },
+      "Pescados Capitales (Miraflores)": {
+        "url": "https://www.pescadoscapitales.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Reservation links and 2026 media uploads; footer \"© 2026 Pescados Capitales\"."
+      },
+      "Chifa Titi (San Isidro)": {
+        "url": "https://www.chifatiti.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Branch hours published; footer \"Restaurante Chifa Titi 2026\"."
+      },
+      "El Chinito (Jr. Chancay)": {
+        "url": "https://www.elchinito.com.pe/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Lists 15 branches including two marked \"NUEVO LOCAL\" and a service notice (\"Solo hasta 30 minutos antes del cierre de cada local\"); footer \"Copyright © 2025\"."
+      },
+      "Ayahuasca Restobar": {
+        "url": "https://www.ayahuascarestobar.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Site publishes weekly hours and a WhatsApp reservations button; only date shown is a 2023 copyright."
+      },
+      "Hotel B": {
+        "url": "https://www.hotelb.pe/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Dining section describes the ground-floor bar (\"Situado en la planta baja junto a la recepción\"), breakfast buffet and Tea Time \"by reservation\"; no dated 2026 text and some offers marked as older."
+      },
+      "Belmond Miraflores Park": {
+        "url": "https://www.belmond.com/hotels/south-america/peru/lima/belmond-miraflores-park/",
+        "sourceType": "operator's own site (Belmond)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Dining page lists Tragaluz, The Observatory (11th-floor breakfast) and Belo Bar cocktail bar with menus; \"Copyright Belmond Management Limited 2026\"."
+      },
+      "El Pan de la Chola": {
+        "url": "https://www.elpandelachola.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Branch list with hours, delivery zones and products (baguette, focaccia, espresso blend); media uploaded in January and May 2026."
+      },
+      "Pastelería San Antonio (Angamos)": {
+        "url": "https://www.pasteleriasanantonio.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Store list and contact-centre hours published; latest visible dates are 2024 and 2025, no 2026 content."
+      }
+    }
+  },
   "Nara, Japan": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-28",
