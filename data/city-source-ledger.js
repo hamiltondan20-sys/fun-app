@@ -5,6 +5,358 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Bath, United Kingdom": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-27",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The National Trust's Bath Assembly Rooms and Prior Park pages showed a bot check, Victoria Art Gallery's visit and contact pages refused automated reading (so its address could not be confirmed), and Colonna Coffee, Picnic Coffee, Comins Tea House, The Raven and GAIL's returned rate-limit errors; none of these failures is evidence of closure. Several confirmed places publish hours only partially or not at all (No.1 Royal Crescent, The Circus Restaurant, The Royal Crescent Hotel & Spa, The Gainsborough Bath Spa, The Bath Priory, Clayton's Kitchen, Green Park Station), Landrace and Noya's Kitchen show conflicting restaurant hours, and Bath Abbey's address is its published postal address. No standalone coffee shop could be confirmed, so the coffee list uses cafés and tea rooms.",
+    "sourceUrls": [
+      "docs/content-research/bath-2026-10-27.md",
+      "docs/content-research/bath-2026-10-27.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Thermal spa session",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place (Thermae Bath Spa checked separately)"
+      },
+      {
+        "name": "Royal Crescent walk",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Cotswolds add-on",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Royal Crescent",
+        "checkedOn": "2026-10-27",
+        "reason": "public street with no operator page; covered via No.1 Royal Crescent and The Royal Crescent Hotel & Spa"
+      },
+      {
+        "name": "Pulteney Bridge and City Centre references (all lists)",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "All other input entries (e.g. \"a classic English tea\", \"Bath market or cafe\", \"A local dinner in City Centre\", \"Sunset drinks near City Centre\", \"Local bakery near City Centre\", \"Coffee near City Centre\")",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Victoria Art Gallery",
+        "url": "https://www.victoriagal.org.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "homepage readable with current exhibitions, but no address on it; /visit and /contact-us returned HTTP 403, /plan-your-visit 404"
+      },
+      {
+        "name": "Bath Assembly Rooms (National Trust)",
+        "url": "https://www.nationaltrust.org.uk/visit/bath-bristol/bath-assembly-rooms",
+        "checkedOn": "2026-10-27",
+        "reason": "Radware bot-check page (\"Verifying your browser before proceeding\"); not bypassed"
+      },
+      {
+        "name": "Prior Park Landscape Garden (National Trust)",
+        "url": "https://www.nationaltrust.org.uk/visit/bath-bristol/prior-park-landscape-garden",
+        "checkedOn": "2026-10-27",
+        "reason": "Radware bot-check page; not bypassed"
+      },
+      {
+        "name": "The Elder",
+        "url": "https://www.theelder.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "site says \"The Elder has now closed and we are no longer taking reservations\""
+      },
+      {
+        "name": "Bath Postal Museum",
+        "url": "https://bathpostalmuseum.org/",
+        "checkedOn": "2026-10-27",
+        "reason": "site says museum \"is now permanently closed\""
+      },
+      {
+        "name": "Museum of Bath Architecture",
+        "url": "https://www.museumofbatharchitecture.org.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "site says \"the museum is now closed until further notice\" (closed for repairs)"
+      },
+      {
+        "name": "Bath Boating Station",
+        "url": "https://www.bathboating.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "no address on page; \"Boat Hire closed for winter until April 2027\""
+      },
+      {
+        "name": "Colonna & Small's",
+        "url": "https://www.colonnaandsmalls.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "domain redirects to an unrelated third-party site (poptop.uk.com); no official page readable"
+      },
+      {
+        "name": "Colonna Coffee",
+        "url": "https://www.colonnacoffee.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 429 Too Many Requests on two attempts"
+      },
+      {
+        "name": "Society Café",
+        "url": "https://www.thesocietycafe.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "thesocietycafe.com connection refused; societycafe.co.uk domain not found"
+      },
+      {
+        "name": "Mokoko Coffee & Bakery",
+        "url": "https://mokokobakery.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "no branch address published (only a registered address); hours deferred to Google"
+      },
+      {
+        "name": "Picnic Coffee",
+        "url": "https://www.picniccoffee.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 429 Too Many Requests on two attempts"
+      },
+      {
+        "name": "Comins Tea House",
+        "url": "https://www.cominstea.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 429 Too Many Requests on two attempts"
+      },
+      {
+        "name": "The Raven",
+        "url": "https://www.theravenofbath.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 429 Too Many Requests on two attempts"
+      },
+      {
+        "name": "GAIL's (Bath)",
+        "url": "https://www.gails.com/pages/bath",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 429 Too Many Requests"
+      },
+      {
+        "name": "Wild Café",
+        "url": "https://www.wildcafe.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "TLS/certificate error on fetch"
+      },
+      {
+        "name": "Menu Gordon Jones",
+        "url": "https://www.menu-gordonjones.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "domain not found (DNS failure)"
+      },
+      {
+        "name": "Museum of Bath at Work",
+        "url": "https://www.museumofbathatwork.org.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "domain not found (DNS failure)"
+      },
+      {
+        "name": "Boston Tea Party (Bath)",
+        "url": "https://www.bostonteaparty.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "homepage lists no Bath branch address or hours"
+      },
+      {
+        "name": "Café Lucca",
+        "url": "https://www.cafelucca.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "homepage has no address, hours or dated content"
+      },
+      {
+        "name": "Bertinet Bakery",
+        "url": "https://www.bertinet.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "site gives only The Bertinet Kitchen cookery-school address; no bakery shop address or hours"
+      },
+      {
+        "name": "The Canary Gin Bar",
+        "url": "https://www.thebathgincompany.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "Bath Gin Company page gives only the distillery address, not the bar's; no hours"
+      },
+      {
+        "name": "Thoughtful Bread Company",
+        "url": "https://www.thoughtfulbread.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "domain now belongs to an unrelated game studio"
+      },
+      {
+        "name": "Royal Victoria Park",
+        "url": "https://www.bathnes.gov.uk/royal-victoria-park",
+        "checkedOn": "2026-10-27",
+        "reason": "council page returned HTTP 404; no official page read"
+      }
+    ],
+    "placeSources": {
+      "Roman Baths": {
+        "url": "https://www.romanbaths.co.uk/visit",
+        "sourceType": "official public operator (Bath & North East Somerset Council site)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Visit page has current autumn hours and online ticketing: tickets \"only available from romanbaths.co.uk\"; guided tours should be pre-booked. Notes that \"the human skeletal remains have been temporarily removed for analysis.\""
+      },
+      "Bath Abbey": {
+        "url": "https://www.bathabbey.org/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Published opening hours valid \"June 1, 2020 – March 1, 2027\"; \"Last entry to the Abbey is 30 minutes before the closing time on any given day.\""
+      },
+      "No.1 Royal Crescent": {
+        "url": "https://www.no1royalcrescent.org.uk/",
+        "sourceType": "operator's own site (Bath Preservation Trust museum)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Homepage has live \"Book Tickets\" links and a 2026 exhibition listing (\"Glenn Brown in Bath: Grottoesque\", 22 May – 6 September 2026, now ended); footer \"© No.1 Royal Crescent 2026\"."
+      },
+      "Thermae Bath Spa": {
+        "url": "https://www.thermaebathspa.com/opening-times",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Homepage offer dated 27-10-2026 and \"Book Now\" slot booking; \"The minimum age of admission is 16 years old\" (18 for treatments), proof of age required."
+      },
+      "Holburne Museum": {
+        "url": "https://www.holburne.org/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "News dated 26 October 2026 (\"What's On in 2027\"); current exhibitions \"Ancient Landscape, Modern Times: Eric Ravilious and the Artists of the Chalk Downs\" (3 October 2026 – 10 January 2027) and \"Richard Slee: Sunlit Uplands and Withdrawing Rooms\" (25 September 2026 – 10 January 2027)."
+      },
+      "Herschel Museum of Astronomy": {
+        "url": "https://www.herschelmuseum.org.uk/visit/",
+        "sourceType": "operator's own site (Bath Preservation Trust museum)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "\"Open Saturday 31 January 2026 to Sunday 3 January 2027 (Tuesday to Sunday)\"; exhibition \"Photology: John Herschel, Henry Talbot and Early Photography\" runs 5 September 2026 – 3 January 2027. Adult £12.50, under 18 free with an accompanying adult."
+      },
+      "American Museum & Gardens": {
+        "url": "https://www.americanmuseum.org/visit/opening-times-admission/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "\"We are open Tuesday to Sunday each week from mid-February to 3 January 2027\"; prices apply \"from 2nd September 2026\"; tickets bookable online or at the ticket office."
+      },
+      "Beckford's Tower": {
+        "url": "https://beckfordstower.org.uk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Dated 2026 opening periods published, including \"31 October to 13 December 2026\"; \"AABC Conservation Awards 2026 – Finalist\"."
+      },
+      "Jane Austen Centre": {
+        "url": "https://www.janeausten.co.uk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Lists \"Yuletide Ball - December 2026\" and a \"2026 Full Events Programme\"; booking links for Bath tickets and the Regency Tea Room (\"real leaf tea and a tasty light lunch\")."
+      },
+      "Mary Shelley's House of Frankenstein": {
+        "url": "https://www.houseoffrankenstein.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "\"AFTER DARK 2026 HORROR NIGHTS\" listing with 2026 booking link; museum tickets \"from £10.94 per person\"; \"© 2026 Bath Attractions Ltd\"."
+      },
+      "Guildhall Market": {
+        "url": "https://www.bathguildhallmarket.co.uk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Published hours notice \"Open: Mon to Sat, 8am to 5pm\" with \"*Shops have their own opening hours.\" No dated 2026 content seen."
+      },
+      "Green Park Station": {
+        "url": "https://www.greenparkstation.co.uk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Says Bath Farmers' Market is held \"every weekend\"; current notice that South Vaults workspace is unavailable \"Due to fire damage\". No dated 2026 content seen."
+      },
+      "Sally Lunn's": {
+        "url": "https://www.sallylunns.co.uk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "\"We Are Open Every Day\"; menus \"from breakfasts to evening dinner\"; new \"Jane Austen High Tea\" bookable for the 3:30pm sitting; footer \"© Sally Lunn's 2026\"."
+      },
+      "The Pump Room": {
+        "url": "https://www.thepumproombath.co.uk/contact-us/",
+        "sourceType": "operator's own site (Searcys)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Afternoon tea bookable online, \"Served in sessions daily at 12.00pm, 2.00pm\"; homepage notes \"The Pump Room Fountain is undergoing essential maintenance work\"."
+      },
+      "Landrace": {
+        "url": "https://www.landrace.co.uk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Publishes current hours for the bakery shop and cafe, La Pizzeria and upstairs restaurant, with reservations section. No dated 2026 content seen; restaurant hours shown inconsistently."
+      },
+      "The Circus Restaurant": {
+        "url": "https://thecircusrestaurant.co.uk/menus/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Menus page links autumn 2026 menus, including \"Circus-Autumn-Lunch-Set-Menu-2026\" and \"Autumn-Pre-Theatre-Set-Menu-2026\"; online booking page."
+      },
+      "Sotto Sotto": {
+        "url": "https://www.sottosotto.co.uk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Hours notice and booking guidance: \"a very small restaurant and booking is strongly recommended\". No dated 2026 content seen."
+      },
+      "The Scallop Shell": {
+        "url": "https://www.thescallopshell.co.uk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Published hours with online booking and gift vouchers; award images with 2026 file paths."
+      },
+      "Corkage": {
+        "url": "https://www.corkagebath.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Christmas menus \"24 Nov–23 Dec 2026\"; set lunch \"12:00–15:00\" Wednesday to Saturday; \"For group bookings of 7 or more people, please contact us\"."
+      },
+      "The Olive Tree": {
+        "url": "https://www.olivetreebath.co.uk/",
+        "sourceType": "operator's own site (The Queensberry Hotel)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "\"Our 2026 Closure Dates are 24-27th August\" and \"2-8th November\"; bookings by email or phone with \"48 hours' notice\" to change or cancel, otherwise \"£75 per person\"."
+      },
+      "The Royal Crescent Hotel & Spa": {
+        "url": "https://www.royalcrescent.co.uk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "\"Book a Table\" and \"Book a Spa Day\" live; Montagu's Mews described as a \"3 AA Rosette restaurant\"; \"live jazz music every other Wednesday evening\". Only 2026 references are image file names."
+      },
+      "The Gainsborough Bath Spa": {
+        "url": "https://www.thegainsboroughbathspa.co.uk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Live reservation links; offer cocktail \"served between 4pm & 6pm in the Gainsborough Bar\". No dated 2026 content seen."
+      },
+      "The Dark Horse": {
+        "url": "https://www.darkhorsebar.co.uk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Weekly hours and booking rules: \"frequently fully booked and would always recommend reservation\"; \"we are 21s and over, and do not allow fancy dress (including hen party attire)\". No dated 2026 content seen."
+      },
+      "Sub 13": {
+        "url": "https://www.sub13.net/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "\"Bottomless Brunch\" \"every Saturday from 12 till 3\"; cocktail classes \"From just £25 per head\"; \"Copyright © 2026 Sub13\"."
+      },
+      "The Bath Priory": {
+        "url": "https://www.thebathpriory.co.uk/",
+        "sourceType": "operator's own site (Andrew Brownsword Hotels)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "\"View Menus & Reserve a Table\" live; restaurant serves \"from breakfast through to supper\"; \"© 2026 Andrew Brownsword Hotels\"."
+      },
+      "Clayton's Kitchen": {
+        "url": "https://www.claytonskitchen.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Menu links \"Christmas Menu 2026\" and \"New Year's Eve Menu 2026\"; \"RESERVE A TABLE\" booking link."
+      },
+      "Noya's Kitchen": {
+        "url": "https://www.noyaskitchen.co.uk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "\"Book Now\" booking page; Supper Club \"Selected Fridays from 7:00pm\". Header and footer hours conflict; both list Monday closed. No dated 2026 content seen."
+      }
+    }
+  },
   "Malaga, Spain": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-27",

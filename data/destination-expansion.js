@@ -7005,4 +7005,112 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on October 27, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Bath, United Kingdom: source review of 2026-10-27 (docs/content-research/bath-2026-10-27.md).
+  {
+    const cityKey = "Bath, United Kingdom";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Roman Baths","Bath Abbey","No.1 Royal Crescent","Holburne Museum"],
+      bestFirstTimers: ["Roman Baths","Bath Abbey","Jane Austen Centre","Thermae Bath Spa"],
+      bestRestaurants: ["Corkage","The Circus Restaurant","Sotto Sotto","The Olive Tree"],
+      bestBudget: ["Guildhall Market","Green Park Station","Sally Lunn's","Landrace"],
+      bestLuxury: ["The Royal Crescent Hotel & Spa","The Gainsborough Bath Spa","The Bath Priory","The Olive Tree"],
+      bestCouples: ["Thermae Bath Spa","Sotto Sotto","The Dark Horse","The Royal Crescent Hotel & Spa"],
+      bestKids: ["American Museum & Gardens","Herschel Museum of Astronomy","Roman Baths","Holburne Museum"],
+      bestSolo: ["Holburne Museum","Beckford's Tower","Guildhall Market","Landrace"],
+      bestUnique: ["Mary Shelley's House of Frankenstein","Beckford's Tower","Thermae Bath Spa","Herschel Museum of Astronomy"],
+      bestBreakfast: ["The Pump Room","Sally Lunn's","The Bath Priory","Landrace"],
+      bestLunch: ["The Scallop Shell","Corkage","The Circus Restaurant","Jane Austen Centre"],
+      bestDinner: ["Clayton's Kitchen","The Olive Tree","Noya's Kitchen","The Scallop Shell"],
+      bestCocktails: ["The Dark Horse","Sub 13","The Gainsborough Bath Spa","The Royal Crescent Hotel & Spa"],
+      bestBakeries: ["Landrace","Sally Lunn's","The Pump Room"],
+      bestCoffee: ["Landrace","Sally Lunn's","The Pump Room"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Roman Baths": "Roman Baths Abbey Church Yard Bath",
+      "Bath Abbey": "Bath Abbey Kingston Buildings Bath",
+      "No.1 Royal Crescent": "No.1 Royal Crescent Royal Crescent Bath",
+      "Holburne Museum": "Holburne Museum Great Pulteney Street Bath",
+      "Jane Austen Centre": "Jane Austen Centre 40 Gay Street Bath",
+      "Thermae Bath Spa": "Thermae Bath Spa Hot Bath Street Bath",
+      "Corkage": "Corkage 5 Chapel Row Bath",
+      "The Circus Restaurant": "The Circus Restaurant 34 Brock Street Bath",
+      "Sotto Sotto": "Sotto Sotto 12a North Parade Bath",
+      "The Olive Tree": "The Olive Tree Queensberry Hotel Russel Street Bath",
+      "Guildhall Market": "Guildhall Market 33 High Street Bath",
+      "Green Park Station": "Green Park Station Green Park Road Bath",
+      "Sally Lunn's": "Sally Lunn's 4 North Parade Passage Bath",
+      "Landrace": "Landrace 59 Walcot Street Bath",
+      "The Royal Crescent Hotel & Spa": "The Royal Crescent Hotel 16 Royal Crescent Bath",
+      "The Gainsborough Bath Spa": "The Gainsborough Bath Spa Beau Street Bath",
+      "The Bath Priory": "The Bath Priory Weston Road Bath",
+      "The Dark Horse": "The Dark Horse 7a Kingsmead Square Bath",
+      "American Museum & Gardens": "American Museum & Gardens Claverton Manor Bath",
+      "Herschel Museum of Astronomy": "Herschel Museum of Astronomy 19 New King Street Bath",
+      "Beckford's Tower": "Beckford's Tower Lansdown Road Bath",
+      "Mary Shelley's House of Frankenstein": "Mary Shelley's House of Frankenstein 37 Gay Street Bath",
+      "The Pump Room": "The Pump Room Stall Street Bath",
+      "The Scallop Shell": "The Scallop Shell 22 Monmouth Place Bath",
+      "Clayton's Kitchen": "Clayton's Kitchen 15 George Street Bath",
+      "Noya's Kitchen": "Noya's Kitchen 7 St James's Parade Bath",
+      "Sub 13": "Sub 13 4 Edgar Buildings Bath"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Bath" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Roman remains, Georgian museums and a thermal spa, with markets, bakeries, dinners and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Roman Baths","Bath Abbey","Holburne Museum","Thermae Bath Spa"];
+    cityGuide.tip = "Several museums keep to a Tuesday-to-Sunday pattern: the Herschel Museum of Astronomy is closed on Mondays outside local school and bank holidays, and the American Museum & Gardens also opens Tuesday to Sunday until 3 January 2027.";
+    data.destinationFacts[cityKey] = "Several museums keep to a Tuesday-to-Sunday pattern: the Herschel Museum of Astronomy is closed on Mondays outside local school and bank holidays, and the American Museum & Gardens also opens Tuesday to Sunday until 3 January 2027.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Roman remains, Georgian museums and a thermal spa, with markets, bakeries, dinners and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays and Sundays",
+        "copy": "Sotto Sotto is closed on Mondays and Sundays, Sub 13 on Sundays and Mondays, and Corkage on Sundays. The Herschel Museum of Astronomy closes on Mondays except during local school holidays and bank holidays."
+      },
+      {
+        "label": "Tickets",
+        "value": "Book ahead online",
+        "copy": "Roman Baths tickets are sold only through romanbaths.co.uk, and guided tours should be pre-booked. At the Herschel Museum of Astronomy you can pay on the door, but booking online is recommended."
+      },
+      {
+        "label": "Walk-ins",
+        "value": "Daytime first come",
+        "copy": "Sally Lunn's takes no daytime reservations except for its set afternoon tea at 15.30; book for evening dinner. The Dark Horse accepts walk-ins when possible but says it is frequently fully booked."
+      },
+      {
+        "label": "Age and dress",
+        "value": "16+ spa, 21+ bar",
+        "copy": "Thermae Bath Spa admits guests aged 16 and over, 18 for treatments, with proof of age required. The Dark Horse is 21s and over and does not allow fancy dress, including hen party attire."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Book the Roman Baths and Thermae Bath Spa online, then plan museum days around Monday closures.",
+      intro: [
+        "Bath packs its headline sights into a few walkable streets. The Roman Baths on Abbey Church Yard sell tickets only through their own website, and you should pre-book any guided tour. Next door, Bath Abbey opens from 10am Monday to Saturday and from 1pm to 3:30pm on Sunday, with last entry 30 minutes before closing. For a soak in the hot springs, Thermae Bath Spa on Hot Bath Street opens 09:00 to 21:30, with pools closing at 21:00; you must be 16 or over, and 18 for treatments.",
+        "For a gallery day, the Holburne Museum on Great Pulteney Street opens Monday to Saturday from 10am and Sunday from 11am, and its Eric Ravilious exhibition on the artists of the chalk downs runs from 3 October 2026 to 10 January 2027. The Herschel Museum of Astronomy on New King Street shows Photology, on John Herschel, Henry Talbot and early photography, until 3 January 2027; under-18s go free with an adult. On Gay Street, the Jane Austen Centre opens daily 10am to 5:30pm and has its Regency Tea Room.",
+        "Further out, Beckford's Tower on Lansdown Road opens on Saturdays and Sundays from 31 October to 13 December 2026, 10am to 4pm. The American Museum & Gardens at Claverton Manor opens Tuesday to Sunday until 3 January 2027, and its car park is free for visitors. For food shopping, the Guildhall Market on High Street opens Monday to Saturday, 8am to 5pm, and Green Park Station hosts Bath Farmers' Market every weekend. Sally Lunn's on North Parade Passage opens every day from 10:00, and Landrace on Walcot Street runs a bakery shop and cafe from 8:30am on weekdays.",
+        "In the evening, book ahead where you can. Sotto Sotto on North Parade calls itself very small and strongly recommends booking. Corkage on Chapel Row serves Christmas menus from 24 November to 23 December 2026. At The Olive Tree, in The Queensberry Hotel, a change or cancellation needs 48 hours' notice. For a drink, The Dark Horse on Kingsmead Square admits only over-21s and recommends a reservation, while Sub 13 on Edgar Buildings opens until 3am on Fridays and Saturdays."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair the Roman Baths, booked online, with Bath Abbey next door, then end the day at Thermae Bath Spa."
+        ],
+        [
+          "A slower morning",
+          "Start with brunch at The Pump Room or a loaf from Landrace, then browse the Guildhall Market before the Holburne Museum opens."
+        ],
+        [
+          "Before booking",
+          "Check closing days: Sotto Sotto and Sub 13 shut on Mondays and Sundays, and the Herschel Museum of Astronomy is closed most Mondays."
+        ]
+      ],
+      trust: "All 27 distinct recommendations in this guide were checked against their operators' own websites on October 27, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

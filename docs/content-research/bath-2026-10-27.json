@@ -1,0 +1,603 @@
+{
+  "city": "Bath, United Kingdom",
+  "checkedOn": "2026-10-27",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Roman Baths",
+      "kind": "museum",
+      "url": "https://www.romanbaths.co.uk/visit",
+      "sourceType": "official public operator (Bath & North East Somerset Council site)",
+      "address": "The Roman Baths, Abbey Church Yard, Bath, BA1 1LZ",
+      "operatingEvidence": "Visit page has current autumn hours and online ticketing: tickets \"only available from romanbaths.co.uk\"; guided tours should be pre-booked. Notes that \"the human skeletal remains have been temporarily removed for analysis.\"",
+      "hours": "Autumn Opening Hours: 1 September - 31 October, daily 9am to 6pm, last admission 5pm; closing early on 24 December with last entry at 4.15pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Bath Abbey",
+      "kind": "landmark",
+      "url": "https://www.bathabbey.org/",
+      "sourceType": "operator's own site",
+      "address": "9 Kingston Buildings, Bath, BA1 1LT (postal address, from https://www.bathabbey.org/contact-us/)",
+      "operatingEvidence": "Published opening hours valid \"June 1, 2020 – March 1, 2027\"; \"Last entry to the Abbey is 30 minutes before the closing time on any given day.\"",
+      "hours": "Mon-Fri 10:00am-5:30pm; Sat 10:00am-6:00pm; Sun 1:00pm-3:30pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "No.1 Royal Crescent",
+      "kind": "museum",
+      "url": "https://www.no1royalcrescent.org.uk/",
+      "sourceType": "operator's own site (Bath Preservation Trust museum)",
+      "address": "No 1 Royal Crescent, Bath, BA1 2LR",
+      "operatingEvidence": "Homepage has live \"Book Tickets\" links and a 2026 exhibition listing (\"Glenn Brown in Bath: Grottoesque\", 22 May – 6 September 2026, now ended); footer \"© No.1 Royal Crescent 2026\".",
+      "hours": "not published (opening-times page returned 404)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Thermae Bath Spa",
+      "kind": "landmark",
+      "url": "https://www.thermaebathspa.com/opening-times",
+      "sourceType": "operator's own site",
+      "address": "Thermae Bath Spa, The Hetling Pump Room, Hot Bath Street, Bath, BA1 1SJ",
+      "operatingEvidence": "Homepage offer dated 27-10-2026 and \"Book Now\" slot booking; \"The minimum age of admission is 16 years old\" (18 for treatments), proof of age required.",
+      "hours": "New Royal Bath: 09:00 - 21.30 (Pools and Wellness Suite close at 21.00), excluding Christmas Day, Boxing Day and New Year's Day; 09.00-20.00 on Christmas Eve and New Year's Eve",
+      "confidence": "high"
+    },
+    {
+      "name": "Holburne Museum",
+      "kind": "museum",
+      "url": "https://www.holburne.org/",
+      "sourceType": "operator's own site",
+      "address": "Great Pulteney Street, Bath BA2 4DB",
+      "operatingEvidence": "News dated 26 October 2026 (\"What's On in 2027\"); current exhibitions \"Ancient Landscape, Modern Times: Eric Ravilious and the Artists of the Chalk Downs\" (3 October 2026 – 10 January 2027) and \"Richard Slee: Sunlit Uplands and Withdrawing Rooms\" (25 September 2026 – 10 January 2027).",
+      "hours": "Mon-Sat 10am to 5pm; Sun (& Bank Holidays) 11am to 5pm; last admissions 4.30pm; closed 24 to 26 December and 1 January",
+      "confidence": "high"
+    },
+    {
+      "name": "Herschel Museum of Astronomy",
+      "kind": "museum",
+      "url": "https://www.herschelmuseum.org.uk/visit/",
+      "sourceType": "operator's own site (Bath Preservation Trust museum)",
+      "address": "19 New King Street, Bath, BA1 2BL",
+      "operatingEvidence": "\"Open Saturday 31 January 2026 to Sunday 3 January 2027 (Tuesday to Sunday)\"; exhibition \"Photology: John Herschel, Henry Talbot and Early Photography\" runs 5 September 2026 – 3 January 2027. Adult £12.50, under 18 free with an accompanying adult.",
+      "hours": "Tuesday to Sunday 10am to 5pm, last entry 4pm; closed on Mondays except local school holidays and bank holidays; closed 25th and 26th December",
+      "confidence": "high"
+    },
+    {
+      "name": "American Museum & Gardens",
+      "kind": "museum",
+      "url": "https://www.americanmuseum.org/visit/opening-times-admission/",
+      "sourceType": "operator's own site",
+      "address": "Claverton Manor, Bath BA2 7BD",
+      "operatingEvidence": "\"We are open Tuesday to Sunday each week from mid-February to 3 January 2027\"; prices apply \"from 2nd September 2026\"; tickets bookable online or at the ticket office.",
+      "hours": "Tuesday to Sunday; gardens, exhibition gallery and shop 10am-5pm (last entry 4.30pm); museum 11am-4pm (last entry 3pm); closed Christmas Eve, Christmas Day and Boxing Day",
+      "confidence": "high"
+    },
+    {
+      "name": "Beckford's Tower",
+      "kind": "museum",
+      "url": "https://beckfordstower.org.uk/",
+      "sourceType": "operator's own site",
+      "address": "Beckford's Tower and Museum, Lansdown Road, Bath, BA1 9BH",
+      "operatingEvidence": "Dated 2026 opening periods published, including \"31 October to 13 December 2026\"; \"AABC Conservation Awards 2026 – Finalist\".",
+      "hours": "31 October to 13 December 2026: Saturdays and Sundays 10am to 4pm, last admission 3.30pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Jane Austen Centre",
+      "kind": "museum",
+      "url": "https://www.janeausten.co.uk/",
+      "sourceType": "operator's own site",
+      "address": "40 Gay Street, Bath, England, BA1 2NT",
+      "operatingEvidence": "Lists \"Yuletide Ball - December 2026\" and a \"2026 Full Events Programme\"; booking links for Bath tickets and the Regency Tea Room (\"real leaf tea and a tasty light lunch\").",
+      "hours": "Daily 10am - 5:30pm; last exhibition entry one hour before closing",
+      "confidence": "high"
+    },
+    {
+      "name": "Mary Shelley's House of Frankenstein",
+      "kind": "museum",
+      "url": "https://www.houseoffrankenstein.com/",
+      "sourceType": "operator's own site",
+      "address": "37 Gay Street, Bath, Somerset, BA1 2NT",
+      "operatingEvidence": "\"AFTER DARK 2026 HORROR NIGHTS\" listing with 2026 booking link; museum tickets \"from £10.94 per person\"; \"© 2026 Bath Attractions Ltd\".",
+      "hours": "Monday - Friday 11am - 5.30pm, Saturday 10am - 5.30pm, Sunday 11am - 5.30pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Guildhall Market",
+      "kind": "market",
+      "url": "https://www.bathguildhallmarket.co.uk/",
+      "sourceType": "operator's own site",
+      "address": "33 High Street Bath BA2 4AW",
+      "operatingEvidence": "Published hours notice \"Open: Mon to Sat, 8am to 5pm\" with \"*Shops have their own opening hours.\" No dated 2026 content seen.",
+      "hours": "Mon to Sat, 8am to 5pm (individual shops vary)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Green Park Station",
+      "kind": "market",
+      "url": "https://www.greenparkstation.co.uk/",
+      "sourceType": "operator's own site",
+      "address": "Green Park Station, Bath, BA1 1JB",
+      "operatingEvidence": "Says Bath Farmers' Market is held \"every weekend\"; current notice that South Vaults workspace is unavailable \"Due to fire damage\". No dated 2026 content seen.",
+      "hours": "not published (farmers' market \"every weekend\")",
+      "confidence": "medium"
+    },
+    {
+      "name": "Sally Lunn's",
+      "kind": "bakery",
+      "url": "https://www.sallylunns.co.uk/",
+      "sourceType": "operator's own site",
+      "address": "Sally Lunn's, 4 North Parade Passage, Bath BA1 1NX",
+      "operatingEvidence": "\"We Are Open Every Day\"; menus \"from breakfasts to evening dinner\"; new \"Jane Austen High Tea\" bookable for the 3:30pm sitting; footer \"© Sally Lunn's 2026\".",
+      "hours": "Every day 10:00 – 21:00",
+      "confidence": "high"
+    },
+    {
+      "name": "The Pump Room",
+      "kind": "meal",
+      "url": "https://www.thepumproombath.co.uk/contact-us/",
+      "sourceType": "operator's own site (Searcys)",
+      "address": "Searcys at the Roman Baths and Pump Room, Stall Street, Bath, BA1 1LZ",
+      "operatingEvidence": "Afternoon tea bookable online, \"Served in sessions daily at 12.00pm, 2.00pm\"; homepage notes \"The Pump Room Fountain is undergoing essential maintenance work\".",
+      "hours": "Morning brunch and bakery: 10am – midday; afternoon tea sessions daily at 12.00pm and 2.00pm (4.00pm at select times of year)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Landrace",
+      "kind": "bakery",
+      "url": "https://www.landrace.co.uk/",
+      "sourceType": "operator's own site",
+      "address": "59 Walcot Street, Bath, BA1 5BN",
+      "operatingEvidence": "Publishes current hours for the bakery shop and cafe, La Pizzeria and upstairs restaurant, with reservations section. No dated 2026 content seen; restaurant hours shown inconsistently.",
+      "hours": "Bakery shop and cafe: Mon-Fri 8:30am - 3:30pm, Saturday 9:00am - 3:00pm, Sunday 9:00am - 1:00pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Circus Restaurant",
+      "kind": "meal",
+      "url": "https://thecircusrestaurant.co.uk/menus/",
+      "sourceType": "operator's own site",
+      "address": "34 Brock Street, Bath, BA1 2LN (from https://thecircusrestaurant.co.uk/contact)",
+      "operatingEvidence": "Menus page links autumn 2026 menus, including \"Circus-Autumn-Lunch-Set-Menu-2026\" and \"Autumn-Pre-Theatre-Set-Menu-2026\"; online booking page.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Sotto Sotto",
+      "kind": "meal",
+      "url": "https://www.sottosotto.co.uk/",
+      "sourceType": "operator's own site",
+      "address": "Sotto Sotto, 12a North Parade, Bath, BA2 4AL",
+      "operatingEvidence": "Hours notice and booking guidance: \"a very small restaurant and booking is strongly recommended\". No dated 2026 content seen.",
+      "hours": "Open 5 days a week 12 pm to 2 pm & 5 pm to 10 pm; closed on Mondays and Sundays, Christmas Day & from 1st - 14th January",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Scallop Shell",
+      "kind": "meal",
+      "url": "https://www.thescallopshell.co.uk/",
+      "sourceType": "operator's own site",
+      "address": "22 Monmouth Place, Bath BA1 2AY",
+      "operatingEvidence": "Published hours with online booking and gift vouchers; award images with 2026 file paths.",
+      "hours": "Monday – Saturday 12 – 2.30pm & 4.30pm – 9.30pm; Sunday 12 – 3.00pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Corkage",
+      "kind": "meal",
+      "url": "https://www.corkagebath.com/",
+      "sourceType": "operator's own site",
+      "address": "5 Chapel Row – Bath – BA1 1HN",
+      "operatingEvidence": "Christmas menus \"24 Nov–23 Dec 2026\"; set lunch \"12:00–15:00\" Wednesday to Saturday; \"For group bookings of 7 or more people, please contact us\".",
+      "hours": "Monday – Tuesday 5:00pm – Midnight; Wednesday – Saturday 12:00pm – Midnight; Sunday closed (open bank holidays 4pm til late)",
+      "confidence": "high"
+    },
+    {
+      "name": "The Olive Tree",
+      "kind": "meal",
+      "url": "https://www.olivetreebath.co.uk/",
+      "sourceType": "operator's own site (The Queensberry Hotel)",
+      "address": "The Queensberry Hotel, Russel Street, Bath, BA1 2QF",
+      "operatingEvidence": "\"Our 2026 Closure Dates are 24-27th August\" and \"2-8th November\"; bookings by email or phone with \"48 hours' notice\" to change or cancel, otherwise \"£75 per person\".",
+      "hours": "not published as weekly hours",
+      "confidence": "high"
+    },
+    {
+      "name": "The Royal Crescent Hotel & Spa",
+      "kind": "meal",
+      "url": "https://www.royalcrescent.co.uk/",
+      "sourceType": "operator's own site",
+      "address": "16 Royal Crescent, Bath, BA1 2LS United Kingdom",
+      "operatingEvidence": "\"Book a Table\" and \"Book a Spa Day\" live; Montagu's Mews described as a \"3 AA Rosette restaurant\"; \"live jazz music every other Wednesday evening\". Only 2026 references are image file names.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Gainsborough Bath Spa",
+      "kind": "bar",
+      "url": "https://www.thegainsboroughbathspa.co.uk/",
+      "sourceType": "operator's own site",
+      "address": "Beau Street, Bath BA1 1QY, England",
+      "operatingEvidence": "Live reservation links; offer cocktail \"served between 4pm & 6pm in the Gainsborough Bar\". No dated 2026 content seen.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Dark Horse",
+      "kind": "bar",
+      "url": "https://www.darkhorsebar.co.uk/",
+      "sourceType": "operator's own site",
+      "address": "7a Kingsmead Square, Bath, BA1 2AB",
+      "operatingEvidence": "Weekly hours and booking rules: \"frequently fully booked and would always recommend reservation\"; \"we are 21s and over, and do not allow fancy dress (including hen party attire)\". No dated 2026 content seen.",
+      "hours": "Mon-Thu 5:00pm – 12:30am; Fri 5:00pm – 1:00am; Sat 4:00pm – 1:00am; Sun 5.00pm – 11.30pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Sub 13",
+      "kind": "bar",
+      "url": "https://www.sub13.net/",
+      "sourceType": "operator's own site",
+      "address": "4 Edgar Buildings, Bath",
+      "operatingEvidence": "\"Bottomless Brunch\" \"every Saturday from 12 till 3\"; cocktail classes \"From just £25 per head\"; \"Copyright © 2026 Sub13\".",
+      "hours": "Tuesday to Thursday 6pm - 2am; Friday 5pm - 3am; Saturday 1pm - 3am; Sunday & Monday closed",
+      "confidence": "high"
+    },
+    {
+      "name": "The Bath Priory",
+      "kind": "meal",
+      "url": "https://www.thebathpriory.co.uk/",
+      "sourceType": "operator's own site (Andrew Brownsword Hotels)",
+      "address": "The Bath Priory, Weston Road, Bath, BA1 2XT",
+      "operatingEvidence": "\"View Menus & Reserve a Table\" live; restaurant serves \"from breakfast through to supper\"; \"© 2026 Andrew Brownsword Hotels\".",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Clayton's Kitchen",
+      "kind": "meal",
+      "url": "https://www.claytonskitchen.com/",
+      "sourceType": "operator's own site",
+      "address": "15 George Street, Bath, BA1 2EN",
+      "operatingEvidence": "Menu links \"Christmas Menu 2026\" and \"New Year's Eve Menu 2026\"; \"RESERVE A TABLE\" booking link.",
+      "hours": "not published",
+      "confidence": "high"
+    },
+    {
+      "name": "Noya's Kitchen",
+      "kind": "meal",
+      "url": "https://www.noyaskitchen.co.uk/",
+      "sourceType": "operator's own site",
+      "address": "NOYA'S KITCHEN, 7 ST JAMES'S PARADE, BATH, BA1 1UL (footer gives postcode BA2 3AT)",
+      "operatingEvidence": "\"Book Now\" booking page; Supper Club \"Selected Fridays from 7:00pm\". Header and footer hours conflict; both list Monday closed. No dated 2026 content seen.",
+      "hours": "Header: lunch Tuesday to Sunday 12-3:00pm; dinner Tuesday to Saturday 5:00-8:30pm (last table); footer differs",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Thermal spa session",
+      "reason": "generic, not a place (Thermae Bath Spa checked separately)",
+      "url": ""
+    },
+    {
+      "name": "Royal Crescent walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Cotswolds add-on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Royal Crescent",
+      "reason": "public street with no operator page; covered via No.1 Royal Crescent and The Royal Crescent Hotel & Spa",
+      "url": ""
+    },
+    {
+      "name": "Pulteney Bridge and City Centre references (all lists)",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "All other input entries (e.g. \"a classic English tea\", \"Bath market or cafe\", \"A local dinner in City Centre\", \"Sunset drinks near City Centre\", \"Local bakery near City Centre\", \"Coffee near City Centre\")",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Victoria Art Gallery",
+      "reason": "homepage readable with current exhibitions, but no address on it; /visit and /contact-us returned HTTP 403, /plan-your-visit 404",
+      "url": "https://www.victoriagal.org.uk/"
+    },
+    {
+      "name": "Bath Assembly Rooms (National Trust)",
+      "reason": "Radware bot-check page (\"Verifying your browser before proceeding\"); not bypassed",
+      "url": "https://www.nationaltrust.org.uk/visit/bath-bristol/bath-assembly-rooms"
+    },
+    {
+      "name": "Prior Park Landscape Garden (National Trust)",
+      "reason": "Radware bot-check page; not bypassed",
+      "url": "https://www.nationaltrust.org.uk/visit/bath-bristol/prior-park-landscape-garden"
+    },
+    {
+      "name": "The Elder",
+      "reason": "site says \"The Elder has now closed and we are no longer taking reservations\"",
+      "url": "https://www.theelder.co.uk/"
+    },
+    {
+      "name": "Bath Postal Museum",
+      "reason": "site says museum \"is now permanently closed\"",
+      "url": "https://bathpostalmuseum.org/"
+    },
+    {
+      "name": "Museum of Bath Architecture",
+      "reason": "site says \"the museum is now closed until further notice\" (closed for repairs)",
+      "url": "https://www.museumofbatharchitecture.org.uk/"
+    },
+    {
+      "name": "Bath Boating Station",
+      "reason": "no address on page; \"Boat Hire closed for winter until April 2027\"",
+      "url": "https://www.bathboating.co.uk/"
+    },
+    {
+      "name": "Colonna & Small's",
+      "reason": "domain redirects to an unrelated third-party site (poptop.uk.com); no official page readable",
+      "url": "https://www.colonnaandsmalls.co.uk/"
+    },
+    {
+      "name": "Colonna Coffee",
+      "reason": "HTTP 429 Too Many Requests on two attempts",
+      "url": "https://www.colonnacoffee.com/"
+    },
+    {
+      "name": "Society Café",
+      "reason": "thesocietycafe.com connection refused; societycafe.co.uk domain not found",
+      "url": "https://www.thesocietycafe.com/"
+    },
+    {
+      "name": "Mokoko Coffee & Bakery",
+      "reason": "no branch address published (only a registered address); hours deferred to Google",
+      "url": "https://mokokobakery.com/"
+    },
+    {
+      "name": "Picnic Coffee",
+      "reason": "HTTP 429 Too Many Requests on two attempts",
+      "url": "https://www.picniccoffee.co.uk/"
+    },
+    {
+      "name": "Comins Tea House",
+      "reason": "HTTP 429 Too Many Requests on two attempts",
+      "url": "https://www.cominstea.com/"
+    },
+    {
+      "name": "The Raven",
+      "reason": "HTTP 429 Too Many Requests on two attempts",
+      "url": "https://www.theravenofbath.co.uk/"
+    },
+    {
+      "name": "GAIL's (Bath)",
+      "reason": "HTTP 429 Too Many Requests",
+      "url": "https://www.gails.com/pages/bath"
+    },
+    {
+      "name": "Wild Café",
+      "reason": "TLS/certificate error on fetch",
+      "url": "https://www.wildcafe.co.uk/"
+    },
+    {
+      "name": "Menu Gordon Jones",
+      "reason": "domain not found (DNS failure)",
+      "url": "https://www.menu-gordonjones.co.uk/"
+    },
+    {
+      "name": "Museum of Bath at Work",
+      "reason": "domain not found (DNS failure)",
+      "url": "https://www.museumofbathatwork.org.uk/"
+    },
+    {
+      "name": "Boston Tea Party (Bath)",
+      "reason": "homepage lists no Bath branch address or hours",
+      "url": "https://www.bostonteaparty.co.uk/"
+    },
+    {
+      "name": "Café Lucca",
+      "reason": "homepage has no address, hours or dated content",
+      "url": "https://www.cafelucca.co.uk/"
+    },
+    {
+      "name": "Bertinet Bakery",
+      "reason": "site gives only The Bertinet Kitchen cookery-school address; no bakery shop address or hours",
+      "url": "https://www.bertinet.com/"
+    },
+    {
+      "name": "The Canary Gin Bar",
+      "reason": "Bath Gin Company page gives only the distillery address, not the bar's; no hours",
+      "url": "https://www.thebathgincompany.co.uk/"
+    },
+    {
+      "name": "Thoughtful Bread Company",
+      "reason": "domain now belongs to an unrelated game studio",
+      "url": "https://www.thoughtfulbread.com/"
+    },
+    {
+      "name": "Royal Victoria Park",
+      "reason": "council page returned HTTP 404; no official page read",
+      "url": "https://www.bathnes.gov.uk/royal-victoria-park"
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Roman Baths",
+        "Bath Abbey",
+        "No.1 Royal Crescent",
+        "Holburne Museum"
+      ],
+      "bestFirstTimers": [
+        "Roman Baths",
+        "Bath Abbey",
+        "Jane Austen Centre",
+        "Thermae Bath Spa"
+      ],
+      "bestRestaurants": [
+        "Corkage",
+        "The Circus Restaurant",
+        "Sotto Sotto",
+        "The Olive Tree"
+      ],
+      "bestBudget": [
+        "Guildhall Market",
+        "Green Park Station",
+        "Sally Lunn's",
+        "Landrace"
+      ],
+      "bestLuxury": [
+        "The Royal Crescent Hotel & Spa",
+        "The Gainsborough Bath Spa",
+        "The Bath Priory",
+        "The Olive Tree"
+      ],
+      "bestCouples": [
+        "Thermae Bath Spa",
+        "Sotto Sotto",
+        "The Dark Horse",
+        "The Royal Crescent Hotel & Spa"
+      ],
+      "bestKids": [
+        "American Museum & Gardens",
+        "Herschel Museum of Astronomy",
+        "Roman Baths",
+        "Holburne Museum"
+      ],
+      "bestSolo": [
+        "Holburne Museum",
+        "Beckford's Tower",
+        "Guildhall Market",
+        "Landrace"
+      ],
+      "bestUnique": [
+        "Mary Shelley's House of Frankenstein",
+        "Beckford's Tower",
+        "Thermae Bath Spa",
+        "Herschel Museum of Astronomy"
+      ],
+      "bestBreakfast": [
+        "The Pump Room",
+        "Sally Lunn's",
+        "The Bath Priory",
+        "Landrace"
+      ],
+      "bestLunch": [
+        "The Scallop Shell",
+        "Corkage",
+        "The Circus Restaurant",
+        "Jane Austen Centre"
+      ],
+      "bestDinner": [
+        "Clayton's Kitchen",
+        "The Olive Tree",
+        "Noya's Kitchen",
+        "The Scallop Shell"
+      ],
+      "bestCocktails": [
+        "The Dark Horse",
+        "Sub 13",
+        "The Gainsborough Bath Spa",
+        "The Royal Crescent Hotel & Spa"
+      ],
+      "bestBakeries": [
+        "Landrace",
+        "Sally Lunn's",
+        "The Pump Room"
+      ],
+      "bestCoffee": [
+        "Landrace",
+        "Sally Lunn's",
+        "The Pump Room"
+      ]
+    },
+    "queries": {
+      "Roman Baths": "Roman Baths Abbey Church Yard Bath",
+      "Bath Abbey": "Bath Abbey Kingston Buildings Bath",
+      "No.1 Royal Crescent": "No.1 Royal Crescent Royal Crescent Bath",
+      "Thermae Bath Spa": "Thermae Bath Spa Hot Bath Street Bath",
+      "Holburne Museum": "Holburne Museum Great Pulteney Street Bath",
+      "Herschel Museum of Astronomy": "Herschel Museum of Astronomy 19 New King Street Bath",
+      "American Museum & Gardens": "American Museum & Gardens Claverton Manor Bath",
+      "Beckford's Tower": "Beckford's Tower Lansdown Road Bath",
+      "Jane Austen Centre": "Jane Austen Centre 40 Gay Street Bath",
+      "Mary Shelley's House of Frankenstein": "Mary Shelley's House of Frankenstein 37 Gay Street Bath",
+      "Guildhall Market": "Guildhall Market 33 High Street Bath",
+      "Green Park Station": "Green Park Station Green Park Road Bath",
+      "Sally Lunn's": "Sally Lunn's 4 North Parade Passage Bath",
+      "The Pump Room": "The Pump Room Stall Street Bath",
+      "Landrace": "Landrace 59 Walcot Street Bath",
+      "The Circus Restaurant": "The Circus Restaurant 34 Brock Street Bath",
+      "Sotto Sotto": "Sotto Sotto 12a North Parade Bath",
+      "The Scallop Shell": "The Scallop Shell 22 Monmouth Place Bath",
+      "Corkage": "Corkage 5 Chapel Row Bath",
+      "The Olive Tree": "The Olive Tree Queensberry Hotel Russel Street Bath",
+      "The Royal Crescent Hotel & Spa": "The Royal Crescent Hotel 16 Royal Crescent Bath",
+      "The Gainsborough Bath Spa": "The Gainsborough Bath Spa Beau Street Bath",
+      "The Dark Horse": "The Dark Horse 7a Kingsmead Square Bath",
+      "Sub 13": "Sub 13 4 Edgar Buildings Bath",
+      "The Bath Priory": "The Bath Priory Weston Road Bath",
+      "Clayton's Kitchen": "Clayton's Kitchen 15 George Street Bath",
+      "Noya's Kitchen": "Noya's Kitchen 7 St James's Parade Bath"
+    },
+    "summary": "Roman remains, Georgian museums and a thermal spa, with markets, bakeries, dinners and cocktail bars checked against their own websites.",
+    "highlights": [
+      "Roman Baths",
+      "Bath Abbey",
+      "Holburne Museum",
+      "Thermae Bath Spa"
+    ],
+    "tip": "Several museums keep to a Tuesday-to-Sunday pattern: the Herschel Museum of Astronomy is closed on Mondays outside local school and bank holidays, and the American Museum & Gardens also opens Tuesday to Sunday until 3 January 2027.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mondays and Sundays",
+        "copy": "Sotto Sotto is closed on Mondays and Sundays, Sub 13 on Sundays and Mondays, and Corkage on Sundays. The Herschel Museum of Astronomy closes on Mondays except during local school holidays and bank holidays."
+      },
+      {
+        "label": "Tickets",
+        "value": "Book ahead online",
+        "copy": "Roman Baths tickets are sold only through romanbaths.co.uk, and guided tours should be pre-booked. At the Herschel Museum of Astronomy you can pay on the door, but booking online is recommended."
+      },
+      {
+        "label": "Walk-ins",
+        "value": "Daytime first come",
+        "copy": "Sally Lunn's takes no daytime reservations except for its set afternoon tea at 15.30; book for evening dinner. The Dark Horse accepts walk-ins when possible but says it is frequently fully booked."
+      },
+      {
+        "label": "Age and dress",
+        "value": "16+ spa, 21+ bar",
+        "copy": "Thermae Bath Spa admits guests aged 16 and over, 18 for treatments, with proof of age required. The Dark Horse is 21s and over and does not allow fancy dress, including hen party attire."
+      }
+    ],
+    "dek": "Book the Roman Baths and Thermae Bath Spa online, then plan museum days around Monday closures.",
+    "intro": [
+      "Bath packs its headline sights into a few walkable streets. The Roman Baths on Abbey Church Yard sell tickets only through their own website, and you should pre-book any guided tour. Next door, Bath Abbey opens from 10am Monday to Saturday and from 1pm to 3:30pm on Sunday, with last entry 30 minutes before closing. For a soak in the hot springs, Thermae Bath Spa on Hot Bath Street opens 09:00 to 21:30, with pools closing at 21:00; you must be 16 or over, and 18 for treatments.",
+      "For a gallery day, the Holburne Museum on Great Pulteney Street opens Monday to Saturday from 10am and Sunday from 11am, and its Eric Ravilious exhibition on the artists of the chalk downs runs from 3 October 2026 to 10 January 2027. The Herschel Museum of Astronomy on New King Street shows Photology, on John Herschel, Henry Talbot and early photography, until 3 January 2027; under-18s go free with an adult. On Gay Street, the Jane Austen Centre opens daily 10am to 5:30pm and has its Regency Tea Room.",
+      "Further out, Beckford's Tower on Lansdown Road opens on Saturdays and Sundays from 31 October to 13 December 2026, 10am to 4pm. The American Museum & Gardens at Claverton Manor opens Tuesday to Sunday until 3 January 2027, and its car park is free for visitors. For food shopping, the Guildhall Market on High Street opens Monday to Saturday, 8am to 5pm, and Green Park Station hosts Bath Farmers' Market every weekend. Sally Lunn's on North Parade Passage opens every day from 10:00, and Landrace on Walcot Street runs a bakery shop and cafe from 8:30am on weekdays.",
+      "In the evening, book ahead where you can. Sotto Sotto on North Parade calls itself very small and strongly recommends booking. Corkage on Chapel Row serves Christmas menus from 24 November to 23 December 2026. At The Olive Tree, in The Queensberry Hotel, a change or cancellation needs 48 hours' notice. For a drink, The Dark Horse on Kingsmead Square admits only over-21s and recommends a reservation, while Sub 13 on Edgar Buildings opens until 3am on Fridays and Saturdays."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair the Roman Baths, booked online, with Bath Abbey next door, then end the day at Thermae Bath Spa."
+      ],
+      [
+        "A slower morning",
+        "Start with brunch at The Pump Room or a loaf from Landrace, then browse the Guildhall Market before the Holburne Museum opens."
+      ],
+      [
+        "Before booking",
+        "Check closing days: Sotto Sotto and Sub 13 shut on Mondays and Sundays, and the Herschel Museum of Astronomy is closed most Mondays."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The National Trust's Bath Assembly Rooms and Prior Park pages showed a bot check, Victoria Art Gallery's visit and contact pages refused automated reading (so its address could not be confirmed), and Colonna Coffee, Picnic Coffee, Comins Tea House, The Raven and GAIL's returned rate-limit errors; none of these failures is evidence of closure. Several confirmed places publish hours only partially or not at all (No.1 Royal Crescent, The Circus Restaurant, The Royal Crescent Hotel & Spa, The Gainsborough Bath Spa, The Bath Priory, Clayton's Kitchen, Green Park Station), Landrace and Noya's Kitchen show conflicting restaurant hours, and Bath Abbey's address is its published postal address. No standalone coffee shop could be confirmed, so the coffee list uses cafés and tea rooms.",
+  "injectionLikeText": []
+}
