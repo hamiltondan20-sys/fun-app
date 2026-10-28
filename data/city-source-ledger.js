@@ -5,6 +5,955 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Mumbai, India": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-28",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The input lists were almost entirely generic, so every confirmed place was added as a gap candidate. Several major sites could not be read: CSMVS (no readable content), Dr. Bhau Daji Lad Museum (access denied), NMACC (reCAPTCHA), The Taj Mahal Palace and Four Seasons outlets (HTTP 403), and The Bombay Canteen, Subko, Blue Tokai and Bombay Sweet Shop (HTTP 429). NCPA publishes a current events calendar but no postal address on the pages read, and the Nehru Planetarium page carries an ambiguous 'remains closed in the year 2026' notice, so both were left out. Jehangir Art Gallery and DAG publish no opening hours; Jehangir shows two slightly different addresses. Oberoi outlets give only 'Nariman Point, Mumbai 400021' as the address, Peshawri lists 'Lunch & Dinner' without times, and several hotel and restaurant listings rely on hours notices rather than dated 2026 content. Haji Ali Dargah gives a location description rather than a postal address.",
+    "sourceUrls": [
+      "docs/content-research/mumbai-2026-10-28.md",
+      "docs/content-research/mumbai-2026-10-28.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Gateway of India",
+        "url": "https://www.gatewayofindia.org/",
+        "checkedOn": "2026-10-28",
+        "reason": "No official operator page could be read; gatewayofindia.org failed with an SSL error and is not shown to be an official body"
+      },
+      {
+        "name": "Marine Drive",
+        "checkedOn": "2026-10-28",
+        "reason": "Public promenade with no operator website located; nothing to read"
+      },
+      {
+        "name": "Kala Ghoda",
+        "url": "https://kalaghodaassociation.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Neighbourhood, not a single place; the Kala Ghoda Association site lists only the past 2026 festival (31 January to 8 February 2026). Individual Kala Ghoda galleries were checked instead"
+      },
+      {
+        "name": "Marine Drive sunset",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Kala Ghoda galleries",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Bandra neighborhood walk",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Street food with a guide",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Seafood in Colaba",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A modern Indian dinner",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Fort",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Bandra",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Colaba",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Colaba walk",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Fort",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Bandra",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Bandra",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Gateway of India",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Colaba",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Marine Drive sunset",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Fort",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Marine Drive",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Colaba evening",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Fort",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Bandra",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Colaba",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Gateway of India",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Fort",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Bandra",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Colaba",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Gateway of India",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Colaba cafe or market",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Kala Ghoda galleries",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Bandra",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Bandra",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Colaba",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Colaba",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Fort bakery or market",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Gateway of India",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Bandra",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Colaba",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Marine Drive",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Bandra",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Colaba",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Fort",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Bandra",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Colaba",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Colaba",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Fort",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Kala Ghoda",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Colaba",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Fort morning market",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Gateway of India",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Bandra",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Colaba",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Fort",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Bandra",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Chhatrapati Shivaji Maharaj Vastu Sangrahalaya (CSMVS)",
+        "url": "https://csmvs.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "Homepage returned only the title and a 'Back to Top' link; /visit and /visit-us returned 404. No address or operating evidence readable"
+      },
+      {
+        "name": "Dr. Bhau Daji Lad Museum",
+        "url": "https://www.bdlmuseum.org/",
+        "checkedOn": "2026-10-28",
+        "reason": "Site returned 'Access Denied' (error code 9e4edb5b6b850c41); not bypassed"
+      },
+      {
+        "name": "National Gallery of Modern Art, Mumbai",
+        "url": "https://ngmaindia.gov.in/ngma_mumbai.asp",
+        "checkedOn": "2026-10-28",
+        "reason": "Page read gives no street address, hours or dated exhibitions; hours subpage returned 404"
+      },
+      {
+        "name": "NCPA (National Centre for the Performing Arts)",
+        "url": "https://www.ncpamumbai.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Event calendar shows October to December 2026 programmes, but no postal address was published on the homepage, contact or about pages read; plan-a-visit pages returned 404"
+      },
+      {
+        "name": "Nita Mukesh Ambani Cultural Centre",
+        "url": "https://www.nmacc.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Page showed only 'Loading...' placeholders behind reCAPTCHA; not bypassed"
+      },
+      {
+        "name": "Nehru Planetarium (Nehru Centre)",
+        "url": "https://www.nehrucentremumbai.in/planetarium-shows",
+        "checkedOn": "2026-10-28",
+        "reason": "Shows page states 'Nehru Planetarium remains closed in the year 2026' alongside a list of holiday closures; ambiguous closure notice, so not used. Nehru Centre homepage gave address and admin hours only"
+      },
+      {
+        "name": "Nehru Science Centre",
+        "url": "https://www.nehrusciencecentre.gov.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official domain did not resolve (DNS ENOTFOUND)"
+      },
+      {
+        "name": "Mani Bhavan Gandhi Sangrahalaya",
+        "url": "https://www.manibhavan.org/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official domain did not resolve (DNS ENOTFOUND)"
+      },
+      {
+        "name": "Elephanta Caves",
+        "url": "https://asi.nic.in/elephanta-caves/",
+        "checkedOn": "2026-10-28",
+        "reason": "ASI page read contained no site address, hours or fees for Elephanta"
+      },
+      {
+        "name": "Sanjay Gandhi National Park",
+        "url": "https://sgnp.maharashtra.gov.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "Connection refused (ECONNREFUSED)"
+      },
+      {
+        "name": "Veermata Jijabai Bhosale Udyan (Byculla Zoo)",
+        "checkedOn": "2026-10-28",
+        "reason": "No official operator website found to read"
+      },
+      {
+        "name": "KidZania Mumbai",
+        "url": "https://www.kidzania.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "Connection reset on repeated fetches (ECONNRESET)"
+      },
+      {
+        "name": "EsselWorld",
+        "url": "https://www.esselworld.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "Domain redirects to waterkingdom.in; status not confirmed on a page read"
+      },
+      {
+        "name": "Prithvi Theatre",
+        "url": "https://prithvitheatre.org/",
+        "checkedOn": "2026-10-28",
+        "reason": "Homepage gives hours ('1pm to 9 pm (closed on Mondays)') but no street address; contact and about pages returned 404"
+      },
+      {
+        "name": "Kitab Khana",
+        "url": "https://www.kitabkhana.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "HTTP 403 Forbidden"
+      },
+      {
+        "name": "Bombay Natural History Society (Hornbill House)",
+        "url": "https://www.bnhs.org/",
+        "checkedOn": "2026-10-28",
+        "reason": "No address or visitor hours on page read"
+      },
+      {
+        "name": "Asiatic Society of Mumbai",
+        "url": "https://www.asiaticsociety.org.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "HTTP 404"
+      },
+      {
+        "name": "Chhatrapati Shivaji Maharaj Terminus heritage gallery",
+        "url": "https://www.cr.indianrailways.gov.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "Certificate error (hostname mismatch); not bypassed"
+      },
+      {
+        "name": "Mount Mary Basilica",
+        "url": "https://www.mountmarybasilica.org/",
+        "checkedOn": "2026-10-28",
+        "reason": "Domain did not resolve (DNS ENOTFOUND)"
+      },
+      {
+        "name": "Chatterjee & Lal",
+        "url": "https://www.chatterjeeandlal.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "No address, hours or dated exhibitions on page read"
+      },
+      {
+        "name": "Jhaveri Contemporary",
+        "url": "https://www.jhavericontemporary.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "No Mumbai address on page read (only Frieze Sculpture 2026 listing)"
+      },
+      {
+        "name": "Trishna",
+        "url": "https://www.trishnamumbai.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Domain did not resolve (DNS ENOTFOUND)"
+      },
+      {
+        "name": "The Bombay Canteen",
+        "url": "https://www.thebombaycanteen.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "HTTP 429 Too Many Requests on four attempts"
+      },
+      {
+        "name": "Leopold Cafe",
+        "url": "https://www.leopoldcafe.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Homepage and /menu returned no readable content beyond the domain name"
+      },
+      {
+        "name": "Cafe Mondegar",
+        "url": "https://www.cafemondegar.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "HTTP 403 Forbidden"
+      },
+      {
+        "name": "Harbour Bar (The Taj Mahal Palace)",
+        "url": "https://www.tajhotels.com/en-in/hotels/taj-mahal-palace-mumbai/restaurants/harbour-bar",
+        "checkedOn": "2026-10-28",
+        "reason": "HTTP 403 Forbidden on tajhotels.com (also blocked the hotel page, so Sea Lounge could not be checked)"
+      },
+      {
+        "name": "Aer (Four Seasons Mumbai)",
+        "url": "https://www.fourseasons.com/mumbai/dining/lounges/aer/",
+        "checkedOn": "2026-10-28",
+        "reason": "HTTP 403 Forbidden"
+      },
+      {
+        "name": "Mahesh Lunch Home",
+        "url": "https://www.maheshlunchhome.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site is a 'Launching Soon' placeholder (copyright 2024) with no branch address or hours; not evidence of closure"
+      },
+      {
+        "name": "Gajalee",
+        "url": "https://www.gajalee.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Page returned no readable content"
+      },
+      {
+        "name": "Soam",
+        "url": "https://www.soamrestaurant.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "DNS lookup failed (EAI_AGAIN)"
+      },
+      {
+        "name": "Smoke House Deli (Colaba)",
+        "url": "https://www.smokehousedeli.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "Address published (24 B K Boman Behram Marg, Apollo Bandar) but no hours, menu or dated notice for the branch"
+      },
+      {
+        "name": "Yauatcha Mumbai",
+        "url": "https://hakkasangroup.com/venues/yauatcha-mumbai/",
+        "checkedOn": "2026-10-28",
+        "reason": "Operator page gives only 'located in the fashionable Bandra district'; no street address or hours"
+      },
+      {
+        "name": "Trèsind Mumbai",
+        "url": "https://www.tresind.com/mumbai",
+        "checkedOn": "2026-10-28",
+        "reason": "Hours published (open all days) but no street address beyond 'BKC'"
+      },
+      {
+        "name": "Comorin (Mumbai)",
+        "url": "https://www.comorin.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "No Mumbai address or hours on page read"
+      },
+      {
+        "name": "Masala Library",
+        "url": "https://www.masalalibrary.co.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "No address, hours or dated content on page read"
+      },
+      {
+        "name": "Bastian",
+        "url": "https://www.bastianhospitality.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Page contained only a title and tracking pixel"
+      },
+      {
+        "name": "The Table",
+        "url": "https://www.thetable.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "Domain did not resolve (DNS ENOTFOUND)"
+      },
+      {
+        "name": "O Pedro",
+        "url": "https://www.opedro.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "Domain did not resolve (DNS ENOTFOUND)"
+      },
+      {
+        "name": "Ekaa",
+        "url": "https://www.ekaa.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "Domain did not resolve (DNS ENOTFOUND)"
+      },
+      {
+        "name": "Ishaara",
+        "url": "https://www.ishaara.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "Domain did not resolve (DNS ENOTFOUND)"
+      },
+      {
+        "name": "Khyber",
+        "url": "https://www.khyberrestaurant.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Certificate expired; not bypassed"
+      },
+      {
+        "name": "SodaBottleOpenerWala",
+        "url": "https://www.sodabottleopenerwala.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "Certificate hostname mismatch; not bypassed"
+      },
+      {
+        "name": "Colaba Social",
+        "url": "https://www.socialoffline.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "Homepage lists the outlet but no address or hours; outlet page returned 404"
+      },
+      {
+        "name": "Bayroute",
+        "url": "https://www.bayroute.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "Outlet names and phone numbers only; no addresses or hours"
+      },
+      {
+        "name": "The Sassy Spoon",
+        "url": "https://www.thesassyspoon.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Connection failed (socket closed)"
+      },
+      {
+        "name": "Suzette",
+        "url": "https://www.suzette.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "No Mumbai outlet addresses on page read"
+      },
+      {
+        "name": "The Pantry",
+        "url": "https://www.thepantry.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "Certificate hostname mismatch; not bypassed"
+      },
+      {
+        "name": "Cafe Madras",
+        "url": "https://www.cafemadras.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Domain redirects to a third-party retailer (cornucopiafoodstore.com); not an operator page"
+      },
+      {
+        "name": "Cafe Mysore",
+        "url": "https://cafemysore.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "No address or hours on page read (copyright 2023 only)"
+      },
+      {
+        "name": "Ness (Trident, Nariman Point)",
+        "url": "https://www.tridenthotels.com/hotels-in-mumbai-nariman-point/restaurant-in-nariman-point-mumbai/Ness/",
+        "checkedOn": "2026-10-28",
+        "reason": "Hours published but no street address on the outlet or hotel page (only 'Mumbai 400 021')"
+      },
+      {
+        "name": "The Verandah (Trident, Nariman Point)",
+        "url": "https://www.tridenthotels.com/hotels-in-mumbai-nariman-point/restaurant-in-nariman-point-mumbai/the-verandah/",
+        "checkedOn": "2026-10-28",
+        "reason": "No street address on the outlet page"
+      },
+      {
+        "name": "Slink & Bardot",
+        "url": "https://www.slinkandbardot.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official domain redirects to a GoDaddy for-sale page; not evidence of closure"
+      },
+      {
+        "name": "Woodside Inn (Colaba)",
+        "url": "https://www.woodsideinn.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "Connection refused (ECONNREFUSED)"
+      },
+      {
+        "name": "Doolally Taproom",
+        "url": "https://www.doolally.in/web/venues",
+        "checkedOn": "2026-10-28",
+        "reason": "Taproom list showed only 'Loading taprooms...'; no addresses readable"
+      },
+      {
+        "name": "Americano",
+        "url": "https://www.americano.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "SSL error (wrong version number); not bypassed"
+      },
+      {
+        "name": "Toast & Tonic",
+        "url": "https://www.toastandtonic.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Page shows only 'webserver is functioning normally'"
+      },
+      {
+        "name": "Theobroma (Colaba)",
+        "url": "https://www.theobroma.in/store-locator/mumbai",
+        "checkedOn": "2026-10-28",
+        "reason": "Store locator gives locality, hours (9:00 AM to 11:00 PM) and map coordinates only; no street address"
+      },
+      {
+        "name": "Bombay Sweet Shop",
+        "url": "https://www.bombaysweetshop.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "HTTP 429 Too Many Requests on repeated attempts"
+      },
+      {
+        "name": "Le15 Patisserie",
+        "url": "https://www.le15.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "HTTP 429, then 404 on stores page"
+      },
+      {
+        "name": "Candies (Bandra)",
+        "url": "https://www.candies.co.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "Page returned no readable content"
+      },
+      {
+        "name": "Kala Ghoda Cafe",
+        "url": "https://www.kalaghodacafe.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Domain did not resolve (DNS ENOTFOUND)"
+      },
+      {
+        "name": "Blue Tokai Coffee Roasters",
+        "url": "https://bluetokaicoffee.com/pages/cafes",
+        "checkedOn": "2026-10-28",
+        "reason": "HTTP 429, then 404 on cafes page"
+      },
+      {
+        "name": "Subko",
+        "url": "https://subko.coffee/",
+        "checkedOn": "2026-10-28",
+        "reason": "HTTP 429 Too Many Requests on repeated attempts"
+      },
+      {
+        "name": "Koinonia Coffee Roasters",
+        "url": "https://www.koinoniacoffee.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Connection failed (socket closed) twice"
+      },
+      {
+        "name": "Third Wave Coffee",
+        "url": "https://www.thirdwavecoffee.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "HTTP 429 Too Many Requests"
+      },
+      {
+        "name": "Boojee Cafe",
+        "url": "https://www.boojeecafe.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "HTTP 429 Too Many Requests"
+      },
+      {
+        "name": "Starbucks (Horniman Circle)",
+        "url": "https://www.starbucks.in/store-locator",
+        "checkedOn": "2026-10-28",
+        "reason": "Certificate could not be verified; not bypassed"
+      }
+    ],
+    "placeSources": {
+      "Jehangir Art Gallery": {
+        "url": "https://www.jehangirartgallery.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Lists five ongoing exhibitions by hall (e.g. \"Advait\" in the Hirji Jehangir Art Gallery) and an upcoming group show, \"Echoes of Earth\", dated Nov 3, 2026 to Nov 9, 2026."
+      },
+      "Gallery Chemould Prescott Road": {
+        "url": "https://www.gallerychemould.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Upcoming \"Spectral Frequencies\" by Reena Saini Kallat, 24 October to 21 November 2026; earlier 2026 shows include \"Asymmetrical Synthesis\" (9 July to 29 August 2026)."
+      },
+      "TARQ": {
+        "url": "https://www.tarq.in/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Current listing \"Home-sick: Garima Gupta\", 29 October to 19 December 2026."
+      },
+      "Project 88": {
+        "url": "https://www.project88.in/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Lists \"Badly Remembered Things : Sarnath Banerjee\", 1 October to 29 October 2026, and earlier 2026 shows such as \"Stories that never end\" (13 August to 19 September 2026)."
+      },
+      "Sakshi Gallery": {
+        "url": "https://www.sakshigallery.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "2026 programme includes \"Of Being and Becoming: 40 Years of Sakshi Gallery\" (Sep 11 to Sep 20, 2026) and \"Nunc Stans\" by Ankush Safaya (Sep 3 to Oct 1, 2026)."
+      },
+      "DAG Gallery 2 (The Taj Mahal Palace)": {
+        "url": "https://dagworld.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "\"Faces and Facets: Satyajit Ray in Colour\" listed at DAG Gallery 2, Mumbai, marked \"Ongoing\" (no dates given)."
+      },
+      "Royal Opera House": {
+        "url": "https://www.royaloperahouse.in/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Booking listings for \"Aladdin\" (Sat, 21 Nov 2026 and Sun, 22 Nov 2026), \"ABBA\" (Sun, 22 Nov 2026) and \"Tom-Jerry\" (Sun, 29 Nov 2026). Visit page (https://www.royaloperahouse.in/visit): \"not allowed to film, photograph or record sound during the performance\"; no strict dress code."
+      },
+      "Global Vipassana Pagoda": {
+        "url": "https://www.globalpagoda.org/",
+        "sourceType": "operator's own site (Global Vipassana Foundation)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Hours notice: \"Open on all days from 9am to 7pm\"; no entry fee; outside food not permitted from 1 March 2024; revealing clothing (shorts or skirts above the knee, bare shoulders) not allowed; ID mandatory for foreign visitors."
+      },
+      "Shree Siddhivinayak Temple": {
+        "url": "https://www.siddhivinayak.org/temple-schedule",
+        "sourceType": "operator's own site (temple trust)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Published darshan schedule (Wednesday to Monday Shejaarti at 9:50 p.m.; Tuesday early darshan from 3:15 a.m. and darshan to 11:30 p.m.); notice asks devotees to switch off phones, avoid revealing dress and leave footwear at the stand."
+      },
+      "Haji Ali Dargah": {
+        "url": "https://www.hajialidargah.in/",
+        "sourceType": "operator's own site (Haji Ali Dargah Trust)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Hours notice \"Dargah Ziyarat Timings 5:30 a.m. to 10:00 p.m.\"; warns of \"imposters posing as official representatives\"; footer \"Copyright © 2026 Haji Ali Dargah Trust\"."
+      },
+      "Masque": {
+        "url": "https://www.masquerestaurant.com/reservations",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "\"Effective October 1, 2026, our 10-course tasting menu will be priced at Rs. 9999*\"; advance deposit required to confirm all tables; guests must be 12 or older."
+      },
+      "Indian Accent (Jio World Centre)": {
+        "url": "https://www.indianaccent.com/mumbai/iam-reservations",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Reservation notice: open 7 days; Rs.1000 per guest to confirm, forfeited for cancellations under 24 hours or no-shows; tables held 30 minutes; children aged 10 and above only; walk-ins accommodated when possible."
+      },
+      "Ziya (The Oberoi)": {
+        "url": "https://www.oberoihotels.com/hotels-in-mumbai/restaurants/ziya/",
+        "sourceType": "operator's own site (Oberoi Hotels & Resorts)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Hours and seating notice: lunch 12:30 pm to 3:00 pm, dinner \"First Seating at 7:00 pm\" and \"Second Seating at 9:30 pm\"; dress code \"gentlemen wear full length trousers and closed shoes\"."
+      },
+      "Fenix (The Oberoi)": {
+        "url": "https://www.oberoihotels.com/hotels-in-mumbai/dining/fenix",
+        "sourceType": "operator's own site (Oberoi Hotels & Resorts)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Hours notice \"6:30 am - 11:30 pm\"; weekend brunch slot 12:30 pm to 3:30 pm; page footer \"© 2026 Oberoi Hotels & Resorts\"."
+      },
+      "The Champagne Lounge (The Oberoi)": {
+        "url": "https://www.oberoihotels.com/hotels-in-mumbai/dining/the-champagne-lounge",
+        "sourceType": "operator's own site (Oberoi Hotels & Resorts)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Hours notice \"8:00 am to 11:30 pm everyday\"; serves \"freshly ground single origin coffee or loose leaf tea\" with scones."
+      },
+      "The Eau Bar (The Oberoi)": {
+        "url": "https://www.oberoihotels.com/hotels-in-mumbai/dining/the-eau-bar",
+        "sourceType": "operator's own site (Oberoi Hotels & Resorts)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Hours notice 5:00 pm to 1:30 am; \"DJ on Saturday and Sunday\"."
+      },
+      "The Oberoi Patisserie & Delicatessen": {
+        "url": "https://www.oberoihotels.com/hotels-in-mumbai/dining/the-oberoi-patisserie",
+        "sourceType": "operator's own site (Oberoi Hotels & Resorts)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Hours notice 10:00 am to 8:00 pm; \"breads, brioches and pastries baked fresh throughout the day\"."
+      },
+      "Hakkasan Mumbai (Bandra)": {
+        "url": "https://hakkasangroup.com/venues/hakkasan-mumbai/",
+        "sourceType": "operator's own site (Hakkasan Group)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Hours notice: lunch \"Monday – Sunday, 12pm – 4pm\", dinner \"Monday – Sunday, 7pm – 1am\"; footer \"Copyright © 2026 Hakkasan Group\"."
+      },
+      "Burma Burma (Fort)": {
+        "url": "https://www.burmaburma.in/locations",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Locations page lists branch hours; homepage marked published \"Oct 27, 2026\"."
+      },
+      "Swati Snacks (Tardeo)": {
+        "url": "https://www.swatisnacks.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Hours notice for Mumbai branches: dine-in opens 11:45 am, last entry 10:00 pm, last order 10:15 pm, closing 10:30 pm."
+      },
+      "Swati Snacks (Nariman Point)": {
+        "url": "https://www.swatisnacks.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Hours notice for Mumbai branches: dine-in opens 11:45 am, last entry 10:00 pm, last order 10:15 pm, closing 10:30 pm."
+      },
+      "American Express Bakery (Bandra)": {
+        "url": "https://www.americanexpressbakery.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Hours notice: open Monday through Saturday 9:00 am to 8:30 pm, closed on Sundays; lists three outlets including Hill Road."
+      },
+      "Avartana (ITC Maratha)": {
+        "url": "https://www.itchotels.com/in/en/itcmaratha-mumbai/fine-dine/avartana",
+        "sourceType": "operator's own site (ITC Hotels)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Table reservation form; lunch on Sundays only 12:00–15:00, dinner 19:00–23:00; dress code \"Smart casuals with formal footwear\"; recommended for over-10s."
+      },
+      "Peshawri (ITC Maratha)": {
+        "url": "https://www.itchotels.com/in/en/itcmaratha-mumbai",
+        "sourceType": "operator's own site (ITC Hotels)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Listed on the hotel's dining section as Northwest Frontier casual dining serving \"Lunch & Dinner\"."
+      },
+      "Bombay High (ITC Maratha)": {
+        "url": "https://www.itchotels.com/in/en/itcmaratha-mumbai",
+        "sourceType": "operator's own site (ITC Hotels)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Listed on the hotel's dining section as a bar with club cuisine and finger food, hours 11:00–00:00."
+      }
+    }
+  },
   "Hoi An, Vietnam": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-28",

@@ -7961,4 +7961,110 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 28, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Mumbai, India: source review of 2026-10-28 (docs/content-research/mumbai-2026-10-28.md).
+  {
+    const cityKey = "Mumbai, India";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Shree Siddhivinayak Temple","Haji Ali Dargah","Royal Opera House","Gallery Chemould Prescott Road"],
+      bestFirstTimers: ["Haji Ali Dargah","Shree Siddhivinayak Temple","Jehangir Art Gallery","Royal Opera House"],
+      bestRestaurants: ["Masque","Indian Accent (Jio World Centre)","Ziya (The Oberoi)","Burma Burma (Fort)"],
+      bestBudget: ["Swati Snacks (Tardeo)","Swati Snacks (Nariman Point)","Global Vipassana Pagoda","American Express Bakery (Bandra)"],
+      bestLuxury: ["Masque","Avartana (ITC Maratha)","Ziya (The Oberoi)","The Champagne Lounge (The Oberoi)"],
+      bestCouples: ["The Eau Bar (The Oberoi)","Ziya (The Oberoi)","Royal Opera House","Hakkasan Mumbai (Bandra)"],
+      bestKids: ["Global Vipassana Pagoda","Royal Opera House","The Oberoi Patisserie & Delicatessen","American Express Bakery (Bandra)"],
+      bestSolo: ["TARQ","Project 88","Sakshi Gallery","Gallery Chemould Prescott Road"],
+      bestUnique: ["Global Vipassana Pagoda","Haji Ali Dargah","DAG Gallery 2 (The Taj Mahal Palace)","Masque"],
+      bestBreakfast: ["Fenix (The Oberoi)","The Champagne Lounge (The Oberoi)","American Express Bakery (Bandra)"],
+      bestLunch: ["Swati Snacks (Tardeo)","Burma Burma (Fort)","Peshawri (ITC Maratha)","Hakkasan Mumbai (Bandra)"],
+      bestDinner: ["Masque","Indian Accent (Jio World Centre)","Avartana (ITC Maratha)","Peshawri (ITC Maratha)"],
+      bestCocktails: ["The Eau Bar (The Oberoi)","Bombay High (ITC Maratha)"],
+      bestBakeries: ["The Oberoi Patisserie & Delicatessen","American Express Bakery (Bandra)"],
+      bestCoffee: ["The Champagne Lounge (The Oberoi)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Shree Siddhivinayak Temple": "Shree Siddhivinayak Temple S.K. Bole Marg Prabhadevi Mumbai",
+      "Haji Ali Dargah": "Haji Ali Dargah Lala Lajpatrai Marg Mumbai",
+      "Royal Opera House": "Royal Opera House Mama Parmanand Marg Mumbai",
+      "Gallery Chemould Prescott Road": "Gallery Chemould Prescott Road Queens Mansion G Talwatkar Marg Fort Mumbai",
+      "Jehangir Art Gallery": "Jehangir Art Gallery 161B Mahatma Gandhi Road Kala Ghoda Mumbai",
+      "Masque": "Masque Laxmi Woollen Mills Shakti Mills Lane Mahalaxmi Mumbai",
+      "Indian Accent (Jio World Centre)": "Indian Accent Jio World Centre Bandra Kurla Complex Mumbai",
+      "Ziya (The Oberoi)": "Ziya The Oberoi Nariman Point Mumbai",
+      "Burma Burma (Fort)": "Burma Burma Kothari House Allana Centre Lane Kala Ghoda Mumbai",
+      "Swati Snacks (Tardeo)": "Swati Snacks Karai Estate Tardeo Mumbai",
+      "Swati Snacks (Nariman Point)": "Swati Snacks Dalamal Tower Nariman Point Mumbai",
+      "Global Vipassana Pagoda": "Global Vipassana Pagoda Gorai Village Borivali West Mumbai",
+      "American Express Bakery (Bandra)": "American Express Bakery 87 Hill Road Bandra West Mumbai",
+      "Avartana (ITC Maratha)": "Avartana ITC Maratha Sahar Andheri East Mumbai",
+      "The Champagne Lounge (The Oberoi)": "The Champagne Lounge The Oberoi Nariman Point Mumbai",
+      "The Eau Bar (The Oberoi)": "The Eau Bar The Oberoi Nariman Point Mumbai",
+      "Hakkasan Mumbai (Bandra)": "Hakkasan 206 Krystal Waterfield Road Bandra Mumbai",
+      "The Oberoi Patisserie & Delicatessen": "The Oberoi Patisserie & Delicatessen Nariman Point Mumbai",
+      "TARQ": "TARQ KK Navsari Chambers 39 AK Nayak Marg Fort Mumbai",
+      "Project 88": "Project 88 BMP Building N.A. Sawant Road Colaba Mumbai",
+      "Sakshi Gallery": "Sakshi Gallery 3rd Pasta Lane Colaba Mumbai",
+      "DAG Gallery 2 (The Taj Mahal Palace)": "DAG Gallery 2 The Taj Mahal Palace Apollo Bunder Mumbai",
+      "Fenix (The Oberoi)": "Fenix The Oberoi Nariman Point Mumbai",
+      "Peshawri (ITC Maratha)": "Peshawri ITC Maratha Sahar Andheri East Mumbai",
+      "Bombay High (ITC Maratha)": "Bombay High ITC Maratha Sahar Andheri East Mumbai"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Mumbai" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Temples, a heritage opera house and Fort and Colaba galleries, with breakfast spots, dinners, bakeries and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Shree Siddhivinayak Temple","Haji Ali Dargah","Royal Opera House","Global Vipassana Pagoda"];
+    cityGuide.tip = "Check closing days before you cross town: TARQ and Project 88 open Tuesday to Saturday, Masque serves dinner Tuesday to Sunday, and Sakshi Gallery, Gallery Chemould Prescott Road and American Express Bakery close on Sundays.";
+    data.destinationFacts[cityKey] = "Check closing days before you cross town: TARQ and Project 88 open Tuesday to Saturday, Masque serves dinner Tuesday to Sunday, and Sakshi Gallery, Gallery Chemould Prescott Road and American Express Bakery close on Sundays.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Temples, a heritage opera house and Fort and Colaba galleries, with breakfast spots, dinners, bakeries and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Sundays and Mondays",
+        "copy": "TARQ and Project 88 open Tuesday to Saturday, and Masque serves dinner Tuesday to Sunday. Sakshi Gallery, Gallery Chemould Prescott Road and American Express Bakery close on Sundays."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Deposits for tasting menus",
+        "copy": "Masque takes an advance deposit to confirm every table, and Indian Accent asks Rs 1000 per guest, forfeited for cancellations under 24 hours or no-shows. Royal Opera House phone booking runs 10am to 5pm, Monday to Saturday."
+      },
+      {
+        "label": "Walk-ins and queues",
+        "value": "Arrive early",
+        "copy": "Indian Accent accommodates walk-ins when possible and holds booked tables for only 30 minutes. Swati Snacks in Tardeo takes last entry at 10pm, and the Global Vipassana Pagoda is free with no booking, open daily 9am to 7pm."
+      },
+      {
+        "label": "Dress, age and bags",
+        "value": "Check before you go",
+        "copy": "Masque admits guests 12 and over and Indian Accent children 10 and above, while Ziya asks gentlemen for full-length trousers and closed shoes. Shree Siddhivinayak Temple and the Global Vipassana Pagoda ask for modest dress, and the Pagoda bans outside food."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Plan galleries for Tuesday to Saturday, book tasting menus well ahead, and keep Sunday for temples, the Pagoda and hotel cafés.",
+      intro: [
+        "Fort and Colaba reward you with small galleries that publish their own hours. TARQ, in KK (Navsari) Chambers on AK Nayak Marg, opens Tuesday to Saturday from 11am to 6:30pm and lists Garima Gupta's Home-sick from 29 October to 19 December 2026. Project 88 on N.A. Sawant Road keeps Tuesday to Saturday hours, 11am to 7pm, and Sakshi Gallery on 3rd Pasta Lane opens 11am to 6pm, closing on Sundays and public holidays. Gallery Chemould Prescott Road, in Queens Mansion, opens Monday to Saturday, 10am to 6pm, and DAG lists Faces and Facets: Satyajit Ray in Colour as ongoing at its gallery inside The Taj Mahal Palace.",
+        "For landmarks, Shree Siddhivinayak Temple on S.K. Bole Marg in Prabhadevi publishes a full darshan schedule: on most days the last aarti is at 9:50pm, while Tuesday runs from early darshan at 3:15am to 11:30pm. The temple asks you to switch off your phone, avoid revealing dress and leave footwear at the stand. Haji Ali Dargah, set offshore off Lala Lajpatrai Marg, lists ziyarat timings of 5:30am to 10pm and says non-Muslims may visit. Further north at Gorai, the Global Vipassana Pagoda opens daily from 9am to 7pm with no entry fee, no outside food and a dress code covering knees and shoulders.",
+        "Meals range from Swati Snacks in Tardeo, which opens at 11:45am with last entry at 10pm, to Burma Burma in Kothari House near Kala Ghoda, serving lunch and dinner in two windows. For a big night, Masque in Mahalaxmi serves a 10-course tasting menu, priced at Rs 9999 from 1 October 2026, at dinner Tuesday to Sunday from 7pm; it needs a deposit and admits guests 12 and over. Indian Accent at Jio World Centre opens seven days and asks Rs 1000 per guest to confirm. At ITC Maratha in Andheri East, Avartana serves dinner from 7pm and lunch on Sundays only, with smart casuals and formal footwear expected.",
+        "The Oberoi at Nariman Point can carry a whole day: Fenix opens at 6:30am, The Champagne Lounge serves single-origin coffee from 8am, The Oberoi Patisserie & Delicatessen sells breads and pastries from 10am to 8pm, and The Eau Bar pours from 5pm to 1:30am with a DJ on Saturday and Sunday. Ziya there asks gentlemen to wear full-length trousers and closed shoes. In Bandra, American Express Bakery on Hill Road opens Monday to Saturday from 9am, and Hakkasan on Waterfield Road serves dinner until 1am. For an evening show, the Royal Opera House lists performances into November 2026 and forbids filming or recording during performances."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair Shree Siddhivinayak Temple in Prabhadevi with Haji Ali Dargah, then spend a Tuesday to Saturday afternoon in Fort and Colaba, when TARQ and Project 88 are both open."
+        ],
+        [
+          "A slower morning",
+          "Start with breakfast at Fenix from 6:30am or single-origin coffee at The Champagne Lounge from 8am, then pick up pastries at The Oberoi Patisserie & Delicatessen from 10am."
+        ],
+        [
+          "Before booking",
+          "Masque needs a deposit and serves dinner Tuesday to Sunday, Indian Accent asks Rs 1000 per guest, and Sakshi Gallery, Gallery Chemould Prescott Road and American Express Bakery close on Sundays."
+        ]
+      ],
+      trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 28, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

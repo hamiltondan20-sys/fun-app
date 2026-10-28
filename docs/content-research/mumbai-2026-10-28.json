@@ -1,0 +1,1143 @@
+{
+  "city": "Mumbai, India",
+  "checkedOn": "2026-10-28",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Jehangir Art Gallery",
+      "kind": "museum",
+      "url": "https://www.jehangirartgallery.com/",
+      "sourceType": "operator's own site",
+      "address": "Jehangir Art Gallery, 161B, Mahatma Gandhi Road, Kala Ghoda, Fort, Mumbai, Maharashtra 400021 (footer also gives \"161-Kala Ghoda, Mumbai-400001\")",
+      "operatingEvidence": "Lists five ongoing exhibitions by hall (e.g. \"Advait\" in the Hirji Jehangir Art Gallery) and an upcoming group show, \"Echoes of Earth\", dated Nov 3, 2026 to Nov 9, 2026.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Gallery Chemould Prescott Road",
+      "kind": "museum",
+      "url": "https://www.gallerychemould.com/",
+      "sourceType": "operator's own site",
+      "address": "3rd Floor, Queens Mansion, G Talwatkar Marg, Fort, Mumbai 400001",
+      "operatingEvidence": "Upcoming \"Spectral Frequencies\" by Reena Saini Kallat, 24 October to 21 November 2026; earlier 2026 shows include \"Asymmetrical Synthesis\" (9 July to 29 August 2026).",
+      "hours": "Monday—Saturday, 10.00 am—6.00 pm",
+      "confidence": "high"
+    },
+    {
+      "name": "TARQ",
+      "kind": "museum",
+      "url": "https://www.tarq.in/",
+      "sourceType": "operator's own site",
+      "address": "TARQ, KK (Navsari) Chambers, Ground Floor, 39 AK Nayak Marg, Fort, Mumbai 400001 (contact page: 39B AK Nayak Marg)",
+      "operatingEvidence": "Current listing \"Home-sick: Garima Gupta\", 29 October to 19 December 2026.",
+      "hours": "Tuesday - Saturday: 11:00am - 6:30pm (contact page, https://www.tarq.in/contact); closed Sundays and Mondays",
+      "confidence": "high"
+    },
+    {
+      "name": "Project 88",
+      "kind": "museum",
+      "url": "https://www.project88.in/",
+      "sourceType": "operator's own site",
+      "address": "Ground Floor, BMP Building, N.A. Sawant Road, Colaba, Mumbai - 400005",
+      "operatingEvidence": "Lists \"Badly Remembered Things : Sarnath Banerjee\", 1 October to 29 October 2026, and earlier 2026 shows such as \"Stories that never end\" (13 August to 19 September 2026).",
+      "hours": "Tuesday - Saturday, 11am - 7 pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Sakshi Gallery",
+      "kind": "museum",
+      "url": "https://www.sakshigallery.com/",
+      "sourceType": "operator's own site",
+      "address": "3rd Pasta Lane Colaba, Mumbai 400005, India",
+      "operatingEvidence": "2026 programme includes \"Of Being and Becoming: 40 Years of Sakshi Gallery\" (Sep 11 to Sep 20, 2026) and \"Nunc Stans\" by Ankush Safaya (Sep 3 to Oct 1, 2026).",
+      "hours": "11am to 6pm (Closed on Sundays & public holidays)",
+      "confidence": "high"
+    },
+    {
+      "name": "DAG Gallery 2 (The Taj Mahal Palace)",
+      "kind": "museum",
+      "url": "https://dagworld.com/",
+      "sourceType": "operator's own site",
+      "address": "DAG Gallery 2, The Taj Mahal Palace, Apollo Bunder, Mumbai",
+      "operatingEvidence": "\"Faces and Facets: Satyajit Ray in Colour\" listed at DAG Gallery 2, Mumbai, marked \"Ongoing\" (no dates given).",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Royal Opera House",
+      "kind": "landmark",
+      "url": "https://www.royaloperahouse.in/",
+      "sourceType": "operator's own site",
+      "address": "Mama Parmanand Marg, Mumbai 400004, Maharashtra, India",
+      "operatingEvidence": "Booking listings for \"Aladdin\" (Sat, 21 Nov 2026 and Sun, 22 Nov 2026), \"ABBA\" (Sun, 22 Nov 2026) and \"Tom-Jerry\" (Sun, 29 Nov 2026). Visit page (https://www.royaloperahouse.in/visit): \"not allowed to film, photograph or record sound during the performance\"; no strict dress code.",
+      "hours": "Building hours not published; phone lines 10:00 am to 5:00 pm, Monday to Saturday; office closed Sundays and bank holidays",
+      "confidence": "high"
+    },
+    {
+      "name": "Global Vipassana Pagoda",
+      "kind": "landmark",
+      "url": "https://www.globalpagoda.org/",
+      "sourceType": "operator's own site (Global Vipassana Foundation)",
+      "address": "Next to Esselworld, Gorai Village, Borivali (West), Mumbai 400091 (contact page, https://www.globalpagoda.org/contact-us)",
+      "operatingEvidence": "Hours notice: \"Open on all days from 9am to 7pm\"; no entry fee; outside food not permitted from 1 March 2024; revealing clothing (shorts or skirts above the knee, bare shoulders) not allowed; ID mandatory for foreign visitors.",
+      "hours": "Open on all days from 9am to 7pm; Journey of Dhamma gallery weekends and holidays 1 p.m. to 5 p.m.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Shree Siddhivinayak Temple",
+      "kind": "landmark",
+      "url": "https://www.siddhivinayak.org/temple-schedule",
+      "sourceType": "operator's own site (temple trust)",
+      "address": "S.K. Bole Marg, Prabhadevi, Mumbai 400028",
+      "operatingEvidence": "Published darshan schedule (Wednesday to Monday Shejaarti at 9:50 p.m.; Tuesday early darshan from 3:15 a.m. and darshan to 11:30 p.m.); notice asks devotees to switch off phones, avoid revealing dress and leave footwear at the stand.",
+      "hours": "Wednesday to Monday: darshan 6:00 a.m. to 9:50 p.m. with aarti breaks; Tuesday: 3:15 a.m. to 11:30 p.m. with breaks",
+      "confidence": "medium"
+    },
+    {
+      "name": "Haji Ali Dargah",
+      "kind": "landmark",
+      "url": "https://www.hajialidargah.in/",
+      "sourceType": "operator's own site (Haji Ali Dargah Trust)",
+      "address": "\"about 500 yards from the Mumbai shoreline in the middle of the Arabian Sea off Lala Lajpatrai Marg\"",
+      "operatingEvidence": "Hours notice \"Dargah Ziyarat Timings 5:30 a.m. to 10:00 p.m.\"; warns of \"imposters posing as official representatives\"; footer \"Copyright © 2026 Haji Ali Dargah Trust\".",
+      "hours": "5:30 a.m. to 10:00 p.m.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Masque",
+      "kind": "meal",
+      "url": "https://www.masquerestaurant.com/reservations",
+      "sourceType": "operator's own site",
+      "address": "Unit G2, Laxmi Woollen Mills, Shakti Mills Lane, off Dr. E. Moses Road, Mahalaxmi, Mumbai 400 011 (https://www.masquerestaurant.com/hours-location)",
+      "operatingEvidence": "\"Effective October 1, 2026, our 10-course tasting menu will be priced at Rs. 9999*\"; advance deposit required to confirm all tables; guests must be 12 or older.",
+      "hours": "Dinner Tuesday to Sunday from 7 pm; Sunday lunch 12:30 to 2:30 pm; closed Mondays",
+      "confidence": "high"
+    },
+    {
+      "name": "Indian Accent (Jio World Centre)",
+      "kind": "meal",
+      "url": "https://www.indianaccent.com/mumbai/iam-reservations",
+      "sourceType": "operator's own site",
+      "address": "Indian Accent, Ground Floor, Nita Mukesh Ambani Cultural Centre, Jio World Centre, BKC, Mumbai 400098 (https://www.indianaccent.com/mumbai)",
+      "operatingEvidence": "Reservation notice: open 7 days; Rs.1000 per guest to confirm, forfeited for cancellations under 24 hours or no-shows; tables held 30 minutes; children aged 10 and above only; walk-ins accommodated when possible.",
+      "hours": "Lunch 12:00 pm to 2:45 pm; dinner seatings 6:45/7:00 pm to 9:00 pm and 9:45 pm to 12:00 am; open 7 days",
+      "confidence": "medium"
+    },
+    {
+      "name": "Ziya (The Oberoi)",
+      "kind": "meal",
+      "url": "https://www.oberoihotels.com/hotels-in-mumbai/restaurants/ziya/",
+      "sourceType": "operator's own site (Oberoi Hotels & Resorts)",
+      "address": "Nariman Point, Mumbai 400021, India",
+      "operatingEvidence": "Hours and seating notice: lunch 12:30 pm to 3:00 pm, dinner \"First Seating at 7:00 pm\" and \"Second Seating at 9:30 pm\"; dress code \"gentlemen wear full length trousers and closed shoes\".",
+      "hours": "Lunch 12:30 pm to 3:00 pm; dinner seatings 7:00 pm and 9:30 pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Fenix (The Oberoi)",
+      "kind": "meal",
+      "url": "https://www.oberoihotels.com/hotels-in-mumbai/dining/fenix",
+      "sourceType": "operator's own site (Oberoi Hotels & Resorts)",
+      "address": "Nariman Point, Mumbai 400021, India",
+      "operatingEvidence": "Hours notice \"6:30 am - 11:30 pm\"; weekend brunch slot 12:30 pm to 3:30 pm; page footer \"© 2026 Oberoi Hotels & Resorts\".",
+      "hours": "6:30 am - 11:30 pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Champagne Lounge (The Oberoi)",
+      "kind": "cafe",
+      "url": "https://www.oberoihotels.com/hotels-in-mumbai/dining/the-champagne-lounge",
+      "sourceType": "operator's own site (Oberoi Hotels & Resorts)",
+      "address": "Nariman Point, Mumbai 400021, India",
+      "operatingEvidence": "Hours notice \"8:00 am to 11:30 pm everyday\"; serves \"freshly ground single origin coffee or loose leaf tea\" with scones.",
+      "hours": "8:00 am to 11:30 pm everyday",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Eau Bar (The Oberoi)",
+      "kind": "bar",
+      "url": "https://www.oberoihotels.com/hotels-in-mumbai/dining/the-eau-bar",
+      "sourceType": "operator's own site (Oberoi Hotels & Resorts)",
+      "address": "Nariman Point, Mumbai 400021, India",
+      "operatingEvidence": "Hours notice 5:00 pm to 1:30 am; \"DJ on Saturday and Sunday\".",
+      "hours": "5:00 pm to 1:30 am",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Oberoi Patisserie & Delicatessen",
+      "kind": "bakery",
+      "url": "https://www.oberoihotels.com/hotels-in-mumbai/dining/the-oberoi-patisserie",
+      "sourceType": "operator's own site (Oberoi Hotels & Resorts)",
+      "address": "Nariman Point, Mumbai 400021, India",
+      "operatingEvidence": "Hours notice 10:00 am to 8:00 pm; \"breads, brioches and pastries baked fresh throughout the day\".",
+      "hours": "10:00 am to 8:00 pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Hakkasan Mumbai (Bandra)",
+      "kind": "meal",
+      "url": "https://hakkasangroup.com/venues/hakkasan-mumbai/",
+      "sourceType": "operator's own site (Hakkasan Group)",
+      "address": "206 Krystal, Waterfield Road, Bandra, Mumbai, 400050",
+      "operatingEvidence": "Hours notice: lunch \"Monday – Sunday, 12pm – 4pm\", dinner \"Monday – Sunday, 7pm – 1am\"; footer \"Copyright © 2026 Hakkasan Group\".",
+      "hours": "Lunch Monday – Sunday 12pm – 4pm; dinner Monday – Sunday 7pm – 1am",
+      "confidence": "medium"
+    },
+    {
+      "name": "Burma Burma (Fort)",
+      "kind": "meal",
+      "url": "https://www.burmaburma.in/locations",
+      "sourceType": "operator's own site",
+      "address": "Kothari House, Allana Centre Lane, opposite Mumbai University, Kala Ghoda, Fort 400001",
+      "operatingEvidence": "Locations page lists branch hours; homepage marked published \"Oct 27, 2026\".",
+      "hours": "Weekdays 12:30–3:30 pm and 6:30–10:30 pm; weekends 12:00–4:00 pm and 6:30–10:30 pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Swati Snacks (Tardeo)",
+      "kind": "meal",
+      "url": "https://www.swatisnacks.com/",
+      "sourceType": "operator's own site",
+      "address": "Karai Estate, Opp Bhatia Hospital, Tardeo, Mumbai - 400007",
+      "operatingEvidence": "Hours notice for Mumbai branches: dine-in opens 11:45 am, last entry 10:00 pm, last order 10:15 pm, closing 10:30 pm.",
+      "hours": "11:45 am to 10:30 pm (last entry 10:00 pm)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Swati Snacks (Nariman Point)",
+      "kind": "meal",
+      "url": "https://www.swatisnacks.com/",
+      "sourceType": "operator's own site",
+      "address": "Dalamal Tower, Nariman Point, Mumbai - 400021",
+      "operatingEvidence": "Hours notice for Mumbai branches: dine-in opens 11:45 am, last entry 10:00 pm, last order 10:15 pm, closing 10:30 pm.",
+      "hours": "11:45 am to 10:30 pm (last entry 10:00 pm)",
+      "confidence": "medium"
+    },
+    {
+      "name": "American Express Bakery (Bandra)",
+      "kind": "bakery",
+      "url": "https://www.americanexpressbakery.com/",
+      "sourceType": "operator's own site",
+      "address": "Villa Sushma, 87 Hill Road, Bandra West",
+      "operatingEvidence": "Hours notice: open Monday through Saturday 9:00 am to 8:30 pm, closed on Sundays; lists three outlets including Hill Road.",
+      "hours": "Monday to Saturday 9:00 am to 8:30 pm; closed Sundays",
+      "confidence": "medium"
+    },
+    {
+      "name": "Avartana (ITC Maratha)",
+      "kind": "meal",
+      "url": "https://www.itchotels.com/in/en/itcmaratha-mumbai/fine-dine/avartana",
+      "sourceType": "operator's own site (ITC Hotels)",
+      "address": "Ashok Nagar, Sahar, Andheri East, 400099 (hotel page: \"Sahar, Andheri (E), Mumbai - 400099\")",
+      "operatingEvidence": "Table reservation form; lunch on Sundays only 12:00–15:00, dinner 19:00–23:00; dress code \"Smart casuals with formal footwear\"; recommended for over-10s.",
+      "hours": "Dinner 19:00–23:00; lunch Sundays only 12:00–15:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Peshawri (ITC Maratha)",
+      "kind": "meal",
+      "url": "https://www.itchotels.com/in/en/itcmaratha-mumbai",
+      "sourceType": "operator's own site (ITC Hotels)",
+      "address": "ITC Maratha, Sahar, Andheri (E), Mumbai - 400099",
+      "operatingEvidence": "Listed on the hotel's dining section as Northwest Frontier casual dining serving \"Lunch & Dinner\".",
+      "hours": "Lunch & Dinner (times not published)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bombay High (ITC Maratha)",
+      "kind": "bar",
+      "url": "https://www.itchotels.com/in/en/itcmaratha-mumbai",
+      "sourceType": "operator's own site (ITC Hotels)",
+      "address": "ITC Maratha, Sahar, Andheri (E), Mumbai - 400099",
+      "operatingEvidence": "Listed on the hotel's dining section as a bar with club cuisine and finger food, hours 11:00–00:00.",
+      "hours": "11:00–00:00",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Gateway of India",
+      "reason": "No official operator page could be read; gatewayofindia.org failed with an SSL error and is not shown to be an official body",
+      "url": "https://www.gatewayofindia.org/"
+    },
+    {
+      "name": "Marine Drive",
+      "reason": "Public promenade with no operator website located; nothing to read",
+      "url": ""
+    },
+    {
+      "name": "Kala Ghoda",
+      "reason": "Neighbourhood, not a single place; the Kala Ghoda Association site lists only the past 2026 festival (31 January to 8 February 2026). Individual Kala Ghoda galleries were checked instead",
+      "url": "https://kalaghodaassociation.com/"
+    },
+    {
+      "name": "Marine Drive sunset",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Kala Ghoda galleries",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Bandra neighborhood walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Street food with a guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Seafood in Colaba",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A modern Indian dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Fort",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Bandra",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Colaba",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Colaba walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Fort",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Bandra",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Bandra",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Gateway of India",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Colaba",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Marine Drive sunset",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Fort",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Marine Drive",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Colaba evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Fort",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Bandra",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Colaba",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Gateway of India",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Fort",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Bandra",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Colaba",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Gateway of India",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Colaba cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Kala Ghoda galleries",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Bandra",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Bandra",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Colaba",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Colaba",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Fort bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Gateway of India",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Bandra",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Colaba",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Marine Drive",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Bandra",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Colaba",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Fort",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Bandra",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Colaba",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Colaba",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Fort",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Kala Ghoda",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Colaba",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Fort morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Gateway of India",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Bandra",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Colaba",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Fort",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Bandra",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Chhatrapati Shivaji Maharaj Vastu Sangrahalaya (CSMVS)",
+      "reason": "Homepage returned only the title and a 'Back to Top' link; /visit and /visit-us returned 404. No address or operating evidence readable",
+      "url": "https://csmvs.in/"
+    },
+    {
+      "name": "Dr. Bhau Daji Lad Museum",
+      "reason": "Site returned 'Access Denied' (error code 9e4edb5b6b850c41); not bypassed",
+      "url": "https://www.bdlmuseum.org/"
+    },
+    {
+      "name": "National Gallery of Modern Art, Mumbai",
+      "reason": "Page read gives no street address, hours or dated exhibitions; hours subpage returned 404",
+      "url": "https://ngmaindia.gov.in/ngma_mumbai.asp"
+    },
+    {
+      "name": "NCPA (National Centre for the Performing Arts)",
+      "reason": "Event calendar shows October to December 2026 programmes, but no postal address was published on the homepage, contact or about pages read; plan-a-visit pages returned 404",
+      "url": "https://www.ncpamumbai.com/"
+    },
+    {
+      "name": "Nita Mukesh Ambani Cultural Centre",
+      "reason": "Page showed only 'Loading...' placeholders behind reCAPTCHA; not bypassed",
+      "url": "https://www.nmacc.com/"
+    },
+    {
+      "name": "Nehru Planetarium (Nehru Centre)",
+      "reason": "Shows page states 'Nehru Planetarium remains closed in the year 2026' alongside a list of holiday closures; ambiguous closure notice, so not used. Nehru Centre homepage gave address and admin hours only",
+      "url": "https://www.nehrucentremumbai.in/planetarium-shows"
+    },
+    {
+      "name": "Nehru Science Centre",
+      "reason": "Official domain did not resolve (DNS ENOTFOUND)",
+      "url": "https://www.nehrusciencecentre.gov.in/"
+    },
+    {
+      "name": "Mani Bhavan Gandhi Sangrahalaya",
+      "reason": "Official domain did not resolve (DNS ENOTFOUND)",
+      "url": "https://www.manibhavan.org/"
+    },
+    {
+      "name": "Elephanta Caves",
+      "reason": "ASI page read contained no site address, hours or fees for Elephanta",
+      "url": "https://asi.nic.in/elephanta-caves/"
+    },
+    {
+      "name": "Sanjay Gandhi National Park",
+      "reason": "Connection refused (ECONNREFUSED)",
+      "url": "https://sgnp.maharashtra.gov.in/"
+    },
+    {
+      "name": "Veermata Jijabai Bhosale Udyan (Byculla Zoo)",
+      "reason": "No official operator website found to read",
+      "url": ""
+    },
+    {
+      "name": "KidZania Mumbai",
+      "reason": "Connection reset on repeated fetches (ECONNRESET)",
+      "url": "https://www.kidzania.in/"
+    },
+    {
+      "name": "EsselWorld",
+      "reason": "Domain redirects to waterkingdom.in; status not confirmed on a page read",
+      "url": "https://www.esselworld.in/"
+    },
+    {
+      "name": "Prithvi Theatre",
+      "reason": "Homepage gives hours ('1pm to 9 pm (closed on Mondays)') but no street address; contact and about pages returned 404",
+      "url": "https://prithvitheatre.org/"
+    },
+    {
+      "name": "Kitab Khana",
+      "reason": "HTTP 403 Forbidden",
+      "url": "https://www.kitabkhana.in/"
+    },
+    {
+      "name": "Bombay Natural History Society (Hornbill House)",
+      "reason": "No address or visitor hours on page read",
+      "url": "https://www.bnhs.org/"
+    },
+    {
+      "name": "Asiatic Society of Mumbai",
+      "reason": "HTTP 404",
+      "url": "https://www.asiaticsociety.org.in/"
+    },
+    {
+      "name": "Chhatrapati Shivaji Maharaj Terminus heritage gallery",
+      "reason": "Certificate error (hostname mismatch); not bypassed",
+      "url": "https://www.cr.indianrailways.gov.in/"
+    },
+    {
+      "name": "Mount Mary Basilica",
+      "reason": "Domain did not resolve (DNS ENOTFOUND)",
+      "url": "https://www.mountmarybasilica.org/"
+    },
+    {
+      "name": "Chatterjee & Lal",
+      "reason": "No address, hours or dated exhibitions on page read",
+      "url": "https://www.chatterjeeandlal.com/"
+    },
+    {
+      "name": "Jhaveri Contemporary",
+      "reason": "No Mumbai address on page read (only Frieze Sculpture 2026 listing)",
+      "url": "https://www.jhavericontemporary.com/"
+    },
+    {
+      "name": "Trishna",
+      "reason": "Domain did not resolve (DNS ENOTFOUND)",
+      "url": "https://www.trishnamumbai.com/"
+    },
+    {
+      "name": "The Bombay Canteen",
+      "reason": "HTTP 429 Too Many Requests on four attempts",
+      "url": "https://www.thebombaycanteen.com/"
+    },
+    {
+      "name": "Leopold Cafe",
+      "reason": "Homepage and /menu returned no readable content beyond the domain name",
+      "url": "https://www.leopoldcafe.com/"
+    },
+    {
+      "name": "Cafe Mondegar",
+      "reason": "HTTP 403 Forbidden",
+      "url": "https://www.cafemondegar.com/"
+    },
+    {
+      "name": "Harbour Bar (The Taj Mahal Palace)",
+      "reason": "HTTP 403 Forbidden on tajhotels.com (also blocked the hotel page, so Sea Lounge could not be checked)",
+      "url": "https://www.tajhotels.com/en-in/hotels/taj-mahal-palace-mumbai/restaurants/harbour-bar"
+    },
+    {
+      "name": "Aer (Four Seasons Mumbai)",
+      "reason": "HTTP 403 Forbidden",
+      "url": "https://www.fourseasons.com/mumbai/dining/lounges/aer/"
+    },
+    {
+      "name": "Mahesh Lunch Home",
+      "reason": "Official site is a 'Launching Soon' placeholder (copyright 2024) with no branch address or hours; not evidence of closure",
+      "url": "https://www.maheshlunchhome.com/"
+    },
+    {
+      "name": "Gajalee",
+      "reason": "Page returned no readable content",
+      "url": "https://www.gajalee.com/"
+    },
+    {
+      "name": "Soam",
+      "reason": "DNS lookup failed (EAI_AGAIN)",
+      "url": "https://www.soamrestaurant.com/"
+    },
+    {
+      "name": "Smoke House Deli (Colaba)",
+      "reason": "Address published (24 B K Boman Behram Marg, Apollo Bandar) but no hours, menu or dated notice for the branch",
+      "url": "https://www.smokehousedeli.in/"
+    },
+    {
+      "name": "Yauatcha Mumbai",
+      "reason": "Operator page gives only 'located in the fashionable Bandra district'; no street address or hours",
+      "url": "https://hakkasangroup.com/venues/yauatcha-mumbai/"
+    },
+    {
+      "name": "Trèsind Mumbai",
+      "reason": "Hours published (open all days) but no street address beyond 'BKC'",
+      "url": "https://www.tresind.com/mumbai"
+    },
+    {
+      "name": "Comorin (Mumbai)",
+      "reason": "No Mumbai address or hours on page read",
+      "url": "https://www.comorin.in/"
+    },
+    {
+      "name": "Masala Library",
+      "reason": "No address, hours or dated content on page read",
+      "url": "https://www.masalalibrary.co.in/"
+    },
+    {
+      "name": "Bastian",
+      "reason": "Page contained only a title and tracking pixel",
+      "url": "https://www.bastianhospitality.com/"
+    },
+    {
+      "name": "The Table",
+      "reason": "Domain did not resolve (DNS ENOTFOUND)",
+      "url": "https://www.thetable.in/"
+    },
+    {
+      "name": "O Pedro",
+      "reason": "Domain did not resolve (DNS ENOTFOUND)",
+      "url": "https://www.opedro.in/"
+    },
+    {
+      "name": "Ekaa",
+      "reason": "Domain did not resolve (DNS ENOTFOUND)",
+      "url": "https://www.ekaa.in/"
+    },
+    {
+      "name": "Ishaara",
+      "reason": "Domain did not resolve (DNS ENOTFOUND)",
+      "url": "https://www.ishaara.in/"
+    },
+    {
+      "name": "Khyber",
+      "reason": "Certificate expired; not bypassed",
+      "url": "https://www.khyberrestaurant.com/"
+    },
+    {
+      "name": "SodaBottleOpenerWala",
+      "reason": "Certificate hostname mismatch; not bypassed",
+      "url": "https://www.sodabottleopenerwala.in/"
+    },
+    {
+      "name": "Colaba Social",
+      "reason": "Homepage lists the outlet but no address or hours; outlet page returned 404",
+      "url": "https://www.socialoffline.in/"
+    },
+    {
+      "name": "Bayroute",
+      "reason": "Outlet names and phone numbers only; no addresses or hours",
+      "url": "https://www.bayroute.in/"
+    },
+    {
+      "name": "The Sassy Spoon",
+      "reason": "Connection failed (socket closed)",
+      "url": "https://www.thesassyspoon.com/"
+    },
+    {
+      "name": "Suzette",
+      "reason": "No Mumbai outlet addresses on page read",
+      "url": "https://www.suzette.in/"
+    },
+    {
+      "name": "The Pantry",
+      "reason": "Certificate hostname mismatch; not bypassed",
+      "url": "https://www.thepantry.in/"
+    },
+    {
+      "name": "Cafe Madras",
+      "reason": "Domain redirects to a third-party retailer (cornucopiafoodstore.com); not an operator page",
+      "url": "https://www.cafemadras.com/"
+    },
+    {
+      "name": "Cafe Mysore",
+      "reason": "No address or hours on page read (copyright 2023 only)",
+      "url": "https://cafemysore.com/"
+    },
+    {
+      "name": "Ness (Trident, Nariman Point)",
+      "reason": "Hours published but no street address on the outlet or hotel page (only 'Mumbai 400 021')",
+      "url": "https://www.tridenthotels.com/hotels-in-mumbai-nariman-point/restaurant-in-nariman-point-mumbai/Ness/"
+    },
+    {
+      "name": "The Verandah (Trident, Nariman Point)",
+      "reason": "No street address on the outlet page",
+      "url": "https://www.tridenthotels.com/hotels-in-mumbai-nariman-point/restaurant-in-nariman-point-mumbai/the-verandah/"
+    },
+    {
+      "name": "Slink & Bardot",
+      "reason": "Official domain redirects to a GoDaddy for-sale page; not evidence of closure",
+      "url": "https://www.slinkandbardot.com/"
+    },
+    {
+      "name": "Woodside Inn (Colaba)",
+      "reason": "Connection refused (ECONNREFUSED)",
+      "url": "https://www.woodsideinn.in/"
+    },
+    {
+      "name": "Doolally Taproom",
+      "reason": "Taproom list showed only 'Loading taprooms...'; no addresses readable",
+      "url": "https://www.doolally.in/web/venues"
+    },
+    {
+      "name": "Americano",
+      "reason": "SSL error (wrong version number); not bypassed",
+      "url": "https://www.americano.in/"
+    },
+    {
+      "name": "Toast & Tonic",
+      "reason": "Page shows only 'webserver is functioning normally'",
+      "url": "https://www.toastandtonic.com/"
+    },
+    {
+      "name": "Theobroma (Colaba)",
+      "reason": "Store locator gives locality, hours (9:00 AM to 11:00 PM) and map coordinates only; no street address",
+      "url": "https://www.theobroma.in/store-locator/mumbai"
+    },
+    {
+      "name": "Bombay Sweet Shop",
+      "reason": "HTTP 429 Too Many Requests on repeated attempts",
+      "url": "https://www.bombaysweetshop.com/"
+    },
+    {
+      "name": "Le15 Patisserie",
+      "reason": "HTTP 429, then 404 on stores page",
+      "url": "https://www.le15.com/"
+    },
+    {
+      "name": "Candies (Bandra)",
+      "reason": "Page returned no readable content",
+      "url": "https://www.candies.co.in/"
+    },
+    {
+      "name": "Kala Ghoda Cafe",
+      "reason": "Domain did not resolve (DNS ENOTFOUND)",
+      "url": "https://www.kalaghodacafe.com/"
+    },
+    {
+      "name": "Blue Tokai Coffee Roasters",
+      "reason": "HTTP 429, then 404 on cafes page",
+      "url": "https://bluetokaicoffee.com/pages/cafes"
+    },
+    {
+      "name": "Subko",
+      "reason": "HTTP 429 Too Many Requests on repeated attempts",
+      "url": "https://subko.coffee/"
+    },
+    {
+      "name": "Koinonia Coffee Roasters",
+      "reason": "Connection failed (socket closed) twice",
+      "url": "https://www.koinoniacoffee.com/"
+    },
+    {
+      "name": "Third Wave Coffee",
+      "reason": "HTTP 429 Too Many Requests",
+      "url": "https://www.thirdwavecoffee.in/"
+    },
+    {
+      "name": "Boojee Cafe",
+      "reason": "HTTP 429 Too Many Requests",
+      "url": "https://www.boojeecafe.com/"
+    },
+    {
+      "name": "Starbucks (Horniman Circle)",
+      "reason": "Certificate could not be verified; not bypassed",
+      "url": "https://www.starbucks.in/store-locator"
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Shree Siddhivinayak Temple",
+        "Haji Ali Dargah",
+        "Royal Opera House",
+        "Gallery Chemould Prescott Road"
+      ],
+      "bestFirstTimers": [
+        "Haji Ali Dargah",
+        "Shree Siddhivinayak Temple",
+        "Jehangir Art Gallery",
+        "Royal Opera House"
+      ],
+      "bestRestaurants": [
+        "Masque",
+        "Indian Accent (Jio World Centre)",
+        "Ziya (The Oberoi)",
+        "Burma Burma (Fort)"
+      ],
+      "bestBudget": [
+        "Swati Snacks (Tardeo)",
+        "Swati Snacks (Nariman Point)",
+        "Global Vipassana Pagoda",
+        "American Express Bakery (Bandra)"
+      ],
+      "bestLuxury": [
+        "Masque",
+        "Avartana (ITC Maratha)",
+        "Ziya (The Oberoi)",
+        "The Champagne Lounge (The Oberoi)"
+      ],
+      "bestCouples": [
+        "The Eau Bar (The Oberoi)",
+        "Ziya (The Oberoi)",
+        "Royal Opera House",
+        "Hakkasan Mumbai (Bandra)"
+      ],
+      "bestKids": [
+        "Global Vipassana Pagoda",
+        "Royal Opera House",
+        "The Oberoi Patisserie & Delicatessen",
+        "American Express Bakery (Bandra)"
+      ],
+      "bestSolo": [
+        "TARQ",
+        "Project 88",
+        "Sakshi Gallery",
+        "Gallery Chemould Prescott Road"
+      ],
+      "bestUnique": [
+        "Global Vipassana Pagoda",
+        "Haji Ali Dargah",
+        "DAG Gallery 2 (The Taj Mahal Palace)",
+        "Masque"
+      ],
+      "bestBreakfast": [
+        "Fenix (The Oberoi)",
+        "The Champagne Lounge (The Oberoi)",
+        "American Express Bakery (Bandra)"
+      ],
+      "bestLunch": [
+        "Swati Snacks (Tardeo)",
+        "Burma Burma (Fort)",
+        "Peshawri (ITC Maratha)",
+        "Hakkasan Mumbai (Bandra)"
+      ],
+      "bestDinner": [
+        "Masque",
+        "Indian Accent (Jio World Centre)",
+        "Avartana (ITC Maratha)",
+        "Peshawri (ITC Maratha)"
+      ],
+      "bestCocktails": [
+        "The Eau Bar (The Oberoi)",
+        "Bombay High (ITC Maratha)"
+      ],
+      "bestBakeries": [
+        "The Oberoi Patisserie & Delicatessen",
+        "American Express Bakery (Bandra)"
+      ],
+      "bestCoffee": [
+        "The Champagne Lounge (The Oberoi)"
+      ]
+    },
+    "queries": {
+      "Jehangir Art Gallery": "Jehangir Art Gallery 161B Mahatma Gandhi Road Kala Ghoda Mumbai",
+      "Gallery Chemould Prescott Road": "Gallery Chemould Prescott Road Queens Mansion G Talwatkar Marg Fort Mumbai",
+      "TARQ": "TARQ KK Navsari Chambers 39 AK Nayak Marg Fort Mumbai",
+      "Project 88": "Project 88 BMP Building N.A. Sawant Road Colaba Mumbai",
+      "Sakshi Gallery": "Sakshi Gallery 3rd Pasta Lane Colaba Mumbai",
+      "DAG Gallery 2 (The Taj Mahal Palace)": "DAG Gallery 2 The Taj Mahal Palace Apollo Bunder Mumbai",
+      "Royal Opera House": "Royal Opera House Mama Parmanand Marg Mumbai",
+      "Global Vipassana Pagoda": "Global Vipassana Pagoda Gorai Village Borivali West Mumbai",
+      "Shree Siddhivinayak Temple": "Shree Siddhivinayak Temple S.K. Bole Marg Prabhadevi Mumbai",
+      "Haji Ali Dargah": "Haji Ali Dargah Lala Lajpatrai Marg Mumbai",
+      "Masque": "Masque Laxmi Woollen Mills Shakti Mills Lane Mahalaxmi Mumbai",
+      "Indian Accent (Jio World Centre)": "Indian Accent Jio World Centre Bandra Kurla Complex Mumbai",
+      "Ziya (The Oberoi)": "Ziya The Oberoi Nariman Point Mumbai",
+      "Fenix (The Oberoi)": "Fenix The Oberoi Nariman Point Mumbai",
+      "The Champagne Lounge (The Oberoi)": "The Champagne Lounge The Oberoi Nariman Point Mumbai",
+      "The Eau Bar (The Oberoi)": "The Eau Bar The Oberoi Nariman Point Mumbai",
+      "The Oberoi Patisserie & Delicatessen": "The Oberoi Patisserie & Delicatessen Nariman Point Mumbai",
+      "Hakkasan Mumbai (Bandra)": "Hakkasan 206 Krystal Waterfield Road Bandra Mumbai",
+      "Burma Burma (Fort)": "Burma Burma Kothari House Allana Centre Lane Kala Ghoda Mumbai",
+      "Swati Snacks (Tardeo)": "Swati Snacks Karai Estate Tardeo Mumbai",
+      "Swati Snacks (Nariman Point)": "Swati Snacks Dalamal Tower Nariman Point Mumbai",
+      "American Express Bakery (Bandra)": "American Express Bakery 87 Hill Road Bandra West Mumbai",
+      "Avartana (ITC Maratha)": "Avartana ITC Maratha Sahar Andheri East Mumbai",
+      "Peshawri (ITC Maratha)": "Peshawri ITC Maratha Sahar Andheri East Mumbai",
+      "Bombay High (ITC Maratha)": "Bombay High ITC Maratha Sahar Andheri East Mumbai"
+    },
+    "summary": "Temples, a heritage opera house and Fort and Colaba galleries, with breakfast spots, dinners, bakeries and cocktail bars checked against their own websites.",
+    "highlights": [
+      "Shree Siddhivinayak Temple",
+      "Haji Ali Dargah",
+      "Royal Opera House",
+      "Global Vipassana Pagoda"
+    ],
+    "tip": "Check closing days before you cross town: TARQ and Project 88 open Tuesday to Saturday, Masque serves dinner Tuesday to Sunday, and Sakshi Gallery, Gallery Chemould Prescott Road and American Express Bakery close on Sundays.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Sundays and Mondays",
+        "copy": "TARQ and Project 88 open Tuesday to Saturday, and Masque serves dinner Tuesday to Sunday. Sakshi Gallery, Gallery Chemould Prescott Road and American Express Bakery close on Sundays."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Deposits for tasting menus",
+        "copy": "Masque takes an advance deposit to confirm every table, and Indian Accent asks Rs 1000 per guest, forfeited for cancellations under 24 hours or no-shows. Royal Opera House phone booking runs 10am to 5pm, Monday to Saturday."
+      },
+      {
+        "label": "Walk-ins and queues",
+        "value": "Arrive early",
+        "copy": "Indian Accent accommodates walk-ins when possible and holds booked tables for only 30 minutes. Swati Snacks in Tardeo takes last entry at 10pm, and the Global Vipassana Pagoda is free with no booking, open daily 9am to 7pm."
+      },
+      {
+        "label": "Dress, age and bags",
+        "value": "Check before you go",
+        "copy": "Masque admits guests 12 and over and Indian Accent children 10 and above, while Ziya asks gentlemen for full-length trousers and closed shoes. Shree Siddhivinayak Temple and the Global Vipassana Pagoda ask for modest dress, and the Pagoda bans outside food."
+      }
+    ],
+    "dek": "Plan galleries for Tuesday to Saturday, book tasting menus well ahead, and keep Sunday for temples, the Pagoda and hotel cafés.",
+    "intro": [
+      "Fort and Colaba reward you with small galleries that publish their own hours. TARQ, in KK (Navsari) Chambers on AK Nayak Marg, opens Tuesday to Saturday from 11am to 6:30pm and lists Garima Gupta's Home-sick from 29 October to 19 December 2026. Project 88 on N.A. Sawant Road keeps Tuesday to Saturday hours, 11am to 7pm, and Sakshi Gallery on 3rd Pasta Lane opens 11am to 6pm, closing on Sundays and public holidays. Gallery Chemould Prescott Road, in Queens Mansion, opens Monday to Saturday, 10am to 6pm, and DAG lists Faces and Facets: Satyajit Ray in Colour as ongoing at its gallery inside The Taj Mahal Palace.",
+      "For landmarks, Shree Siddhivinayak Temple on S.K. Bole Marg in Prabhadevi publishes a full darshan schedule: on most days the last aarti is at 9:50pm, while Tuesday runs from early darshan at 3:15am to 11:30pm. The temple asks you to switch off your phone, avoid revealing dress and leave footwear at the stand. Haji Ali Dargah, set offshore off Lala Lajpatrai Marg, lists ziyarat timings of 5:30am to 10pm and says non-Muslims may visit. Further north at Gorai, the Global Vipassana Pagoda opens daily from 9am to 7pm with no entry fee, no outside food and a dress code covering knees and shoulders.",
+      "Meals range from Swati Snacks in Tardeo, which opens at 11:45am with last entry at 10pm, to Burma Burma in Kothari House near Kala Ghoda, serving lunch and dinner in two windows. For a big night, Masque in Mahalaxmi serves a 10-course tasting menu, priced at Rs 9999 from 1 October 2026, at dinner Tuesday to Sunday from 7pm; it needs a deposit and admits guests 12 and over. Indian Accent at Jio World Centre opens seven days and asks Rs 1000 per guest to confirm. At ITC Maratha in Andheri East, Avartana serves dinner from 7pm and lunch on Sundays only, with smart casuals and formal footwear expected.",
+      "The Oberoi at Nariman Point can carry a whole day: Fenix opens at 6:30am, The Champagne Lounge serves single-origin coffee from 8am, The Oberoi Patisserie & Delicatessen sells breads and pastries from 10am to 8pm, and The Eau Bar pours from 5pm to 1:30am with a DJ on Saturday and Sunday. Ziya there asks gentlemen to wear full-length trousers and closed shoes. In Bandra, American Express Bakery on Hill Road opens Monday to Saturday from 9am, and Hakkasan on Waterfield Road serves dinner until 1am. For an evening show, the Royal Opera House lists performances into November 2026 and forbids filming or recording during performances."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair Shree Siddhivinayak Temple in Prabhadevi with Haji Ali Dargah, then spend a Tuesday to Saturday afternoon in Fort and Colaba, when TARQ and Project 88 are both open."
+      ],
+      [
+        "A slower morning",
+        "Start with breakfast at Fenix from 6:30am or single-origin coffee at The Champagne Lounge from 8am, then pick up pastries at The Oberoi Patisserie & Delicatessen from 10am."
+      ],
+      [
+        "Before booking",
+        "Masque needs a deposit and serves dinner Tuesday to Sunday, Indian Accent asks Rs 1000 per guest, and Sakshi Gallery, Gallery Chemould Prescott Road and American Express Bakery close on Sundays."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The input lists were almost entirely generic, so every confirmed place was added as a gap candidate. Several major sites could not be read: CSMVS (no readable content), Dr. Bhau Daji Lad Museum (access denied), NMACC (reCAPTCHA), The Taj Mahal Palace and Four Seasons outlets (HTTP 403), and The Bombay Canteen, Subko, Blue Tokai and Bombay Sweet Shop (HTTP 429). NCPA publishes a current events calendar but no postal address on the pages read, and the Nehru Planetarium page carries an ambiguous 'remains closed in the year 2026' notice, so both were left out. Jehangir Art Gallery and DAG publish no opening hours; Jehangir shows two slightly different addresses. Oberoi outlets give only 'Nariman Point, Mumbai 400021' as the address, Peshawri lists 'Lunch & Dinner' without times, and several hotel and restaurant listings rely on hours notices rather than dated 2026 content. Haji Ali Dargah gives a location description rather than a postal address.",
+  "injectionLikeText": [],
+  "injectionLikeTextIgnored": [
+    "theobroma.in homepage: a 'Summarise Theobroma with AI' section ('Menu, bestsellers, offers and nearest store in one answer.') with buttons that open ChatGPT, Claude, Perplexity and Google AI with a prefilled 'Summarize this page' query. A sharing feature, not acted on."
+  ]
+}

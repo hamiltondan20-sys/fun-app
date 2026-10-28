@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 77.
-- Classifier-passed (published, not fully documented in that format): 115.
+- Source-verified (complete dated evidence format): 78.
+- Classifier-passed (published, not fully documented in that format): 114.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -319,7 +319,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Moshi, Tanzania | moshi | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Mount Fuji, Japan | mount-fuji | classifier-passed | not-reviewed | 0 | 8 | 15 | 4 | None |
 | Mount Kailash, China | mount-kailash | classifier-passed | not-reviewed | 0 | 5 | 15 | 3 | None |
-| Mumbai, India | mumbai | classifier-passed | not-reviewed | 0 | 9 | 15 | 5 | None |
+| Mumbai, India | mumbai | source-verified | source-checked | 25 | 50 | 15 | 15 | None |
 | Munich, Germany | munich | source-verified | source-checked | 15 | 25 | 15 | 15 | None |
 | Muscat, Oman | muscat | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Mykonos, Greece | mykonos | classifier-passed | not-reviewed | 0 | 5 | 15 | 3 | None |
