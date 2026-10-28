@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 64.
-- Classifier-passed (published, not fully documented in that format): 128.
+- Source-verified (complete dated evidence format): 65.
+- Classifier-passed (published, not fully documented in that format): 127.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -209,7 +209,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Haiphong, Vietnam | haiphong | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Hakone, Japan | hakone | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Halifax, Canada | halifax | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Hamburg, Germany | hamburg | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Hamburg, Germany | hamburg | source-verified | source-checked | 31 | 49 | 15 | 15 | None |
 | Hamilton, Bermuda | hamilton | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Hangzhou, China | hangzhou | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
 | Hanoi, Vietnam | hanoi | source-verified | source-checked | 8 | 18 | 13 | 12 | None |

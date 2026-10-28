@@ -6573,4 +6573,116 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 27 distinct recommendations in this guide were checked against their operators' own websites on October 27, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Hamburg, Germany: source review of 2026-10-27 (docs/content-research/hamburg-2026-10-27.md).
+  {
+    const cityKey = "Hamburg, Germany";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Elbphilharmonie Plaza","Miniatur Wunderland","Hauptkirche St. Michaelis","Internationales Maritimes Museum"],
+      bestFirstTimers: ["Elbphilharmonie Plaza","Miniatur Wunderland","HADAG ferry line 62 (Landungsbrücken)","Speicherstadtmuseum"],
+      bestRestaurants: ["Bullerei","Old Commercial Room","Fischereihafen Restaurant","Café Paris"],
+      bestBudget: ["HADAG ferry line 62 (Landungsbrücken)","Fischauktionshalle (Hamburger Fischmarkt)","Alster-Touristik (Anleger Jungfernstieg)","Speicherstadt Kaffeerösterei"],
+      bestLuxury: ["Restaurant Haerlin (Hotel Vier Jahreszeiten)","Jahreszeiten Bar (Hotel Vier Jahreszeiten)","Café Condi (Hotel Vier Jahreszeiten)","Skyline Bar 20up (Empire Riverside Hotel)"],
+      bestCouples: ["Alster-Touristik (Anleger Jungfernstieg)","Tower Bar (Hotel Hafen Hamburg)","Restaurant Haerlin (Hotel Vier Jahreszeiten)","Elbphilharmonie Plaza"],
+      bestKids: ["Miniatur Wunderland","Tierpark Hagenbeck","Chocoversum","Internationales Maritimes Museum"],
+      bestSolo: ["Hamburger Kunsthalle","Bucerius Kunst Forum","Museum für Kunst und Gewerbe Hamburg","Nord Coast Coffee Roastery (Deichstraße)"],
+      bestUnique: ["Rickmer Rickmers","Cap San Diego","BallinStadt","Spicy's Gewürzmuseum"],
+      bestBreakfast: ["Café Paris","Café Condi (Hotel Vier Jahreszeiten)","Zeit für Brot (Ottensen)"],
+      bestLunch: ["Bullerei","Old Commercial Room","Fischereihafen Restaurant","Café Paris"],
+      bestDinner: ["Bullerei","Old Commercial Room","Fischereihafen Restaurant","Restaurant Haerlin (Hotel Vier Jahreszeiten)"],
+      bestCocktails: ["Jahreszeiten Bar (Hotel Vier Jahreszeiten)","Tower Bar (Hotel Hafen Hamburg)","Skyline Bar 20up (Empire Riverside Hotel)","clouds – Bar & Kitchen"],
+      bestBakeries: ["Zeit für Brot (Ottensen)","Herr Max","Café Condi (Hotel Vier Jahreszeiten)"],
+      bestCoffee: ["Speicherstadt Kaffeerösterei","Nord Coast Coffee Roastery (Deichstraße)","Café Condi (Hotel Vier Jahreszeiten)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Elbphilharmonie Plaza": "Elbphilharmonie Platz der Deutschen Einheit Hamburg",
+      "Miniatur Wunderland": "Miniatur Wunderland Kehrwieder 2 Hamburg",
+      "Hauptkirche St. Michaelis": "Hauptkirche St. Michaelis Englische Planke 1 Hamburg",
+      "Internationales Maritimes Museum": "Internationales Maritimes Museum Koreastraße 1 Hamburg",
+      "HADAG ferry line 62 (Landungsbrücken)": "HADAG Fähre 62 St. Pauli Landungsbrücken Hamburg",
+      "Speicherstadtmuseum": "Speicherstadtmuseum Am Sandtorkai 36 Hamburg",
+      "Bullerei": "Bullerei Lagerstraße 34b Hamburg",
+      "Old Commercial Room": "Old Commercial Room Englische Planke 10 Hamburg",
+      "Fischereihafen Restaurant": "Fischereihafen Restaurant Große Elbstraße 143 Hamburg",
+      "Café Paris": "Café Paris Rathausstraße 4 Hamburg",
+      "Fischauktionshalle (Hamburger Fischmarkt)": "Fischauktionshalle Große Elbstraße 9 Hamburg",
+      "Alster-Touristik (Anleger Jungfernstieg)": "Alster-Touristik Anleger Jungfernstieg Hamburg",
+      "Speicherstadt Kaffeerösterei": "Speicherstadt Kaffeerösterei Kehrwieder 5 Hamburg",
+      "Restaurant Haerlin (Hotel Vier Jahreszeiten)": "Restaurant Haerlin Neuer Jungfernstieg 9 Hamburg",
+      "Jahreszeiten Bar (Hotel Vier Jahreszeiten)": "Jahreszeiten Bar Neuer Jungfernstieg 9 Hamburg",
+      "Café Condi (Hotel Vier Jahreszeiten)": "Café Condi Neuer Jungfernstieg 9 Hamburg",
+      "Skyline Bar 20up (Empire Riverside Hotel)": "Skyline Bar 20up Bernhard-Nocht-Straße 97 Hamburg",
+      "Tower Bar (Hotel Hafen Hamburg)": "Tower Bar Hotel Hafen Seewartenstraße 9 Hamburg",
+      "Tierpark Hagenbeck": "Tierpark Hagenbeck Lokstedter Grenzstraße 2 Hamburg",
+      "Chocoversum": "Chocoversum Meßberg 1 Hamburg",
+      "Hamburger Kunsthalle": "Hamburger Kunsthalle Glockengießerwall 5 Hamburg",
+      "Bucerius Kunst Forum": "Bucerius Kunst Forum Alter Wall 12 Hamburg",
+      "Museum für Kunst und Gewerbe Hamburg": "Museum für Kunst und Gewerbe Steintorplatz Hamburg",
+      "Nord Coast Coffee Roastery (Deichstraße)": "Nord Coast Coffee Roastery Deichstraße 9 Hamburg",
+      "Rickmer Rickmers": "Rickmer Rickmers Landungsbrücken Ponton 1a Hamburg",
+      "Cap San Diego": "Cap San Diego Überseebrücke Hamburg",
+      "BallinStadt": "BallinStadt Veddeler Bogen 2 Hamburg",
+      "Spicy's Gewürzmuseum": "Spicy's Gewürzmuseum Am Sandtorkai 34 Hamburg",
+      "Zeit für Brot (Ottensen)": "Zeit für Brot Ottenser Hauptstraße 41 Hamburg",
+      "clouds – Bar & Kitchen": "clouds Bar & Kitchen Reeperbahn 1 Hamburg",
+      "Herr Max": "Herr Max Hegestraße 44 Hamburg"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Hamburg" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Harbourfront sights, Speicherstadt museums, art collections, restaurants, bakeries, coffee roasters and cocktail bars in Hamburg, each checked against its own website.";
+    cityGuide.highlights = ["Elbphilharmonie Plaza","Miniatur Wunderland","Hauptkirche St. Michaelis","Hamburger Kunsthalle"];
+    cityGuide.tip = "Buy Miniatur Wunderland tickets online in advance, as its own site advises, and pre-book an Elbphilharmonie Plaza slot if you want guaranteed entry at a set time (€5 booking fee).";
+    data.destinationFacts[cityKey] = "Buy Miniatur Wunderland tickets online in advance, as its own site advises, and pre-book an Elbphilharmonie Plaza slot if you want guaranteed entry at a set time (€5 booking fee).";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Harbourfront sights, Speicherstadt museums, art collections, restaurants, bakeries, coffee roasters and cocktail bars in Hamburg, each checked against its own website.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Check before you go",
+        "copy": "BallinStadt opens Tuesday to Sunday only, and Restaurant Haerlin serves dinner Tuesday to Saturday. The Fischauktionshalle market runs on Sundays from 06:00 to 12:00."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book ahead",
+        "copy": "Miniatur Wunderland advises buying tickets online in advance to avoid long waits. Elbphilharmonie Plaza pre-booking costs €5 per ticket and guarantees your chosen entry time."
+      },
+      {
+        "label": "Walk-in policies",
+        "value": "Some no-booking spots",
+        "copy": "The Bullerei Deli takes no reservations, while its restaurant takes bookings 60 days ahead. Groups of five or more at Restaurant Haerlin must book by email."
+      },
+      {
+        "label": "Rules",
+        "value": "Bags and dress",
+        "copy": "At the Elbphilharmonie, bags A3 size or larger, luggage and walking-stick umbrellas go in ground-floor lockers. Restaurant Haerlin asks for smart casual dress."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Group the harbour and Speicherstadt sights into one day, and book Miniatur Wunderland and an Elbphilharmonie Plaza slot before you go.",
+      intro: [
+        "Start at the Elbphilharmonie Plaza, the public viewing level on the 8th floor, open daily from 10:00 to 24:00 with last admission at 23:30. Capacity is controlled with Plaza tickets, and if you pre-book online or on site you pay a €5 booking fee per ticket, which guarantees entry at your chosen time. A concert ticket also gets you onto the Plaza from two hours before the performance. From there it is a short walk into the Speicherstadt, where the Speicherstadtmuseum on Am Sandtorkai has extended its exhibition on the pre-war warehouse district until 10 January 2027.",
+        "Miniatur Wunderland, at Kehrwieder 2 in the Speicherstadt, opens every day, always at least from 09:30 to 18:00, and often later at weekends, on Tuesdays and in school holidays. Its own admission page advises buying tickets online in advance to avoid long waits; adults pay 22.00 € and children under 1 m go free. Nearby, the Internationales Maritimes Museum in Kaispeicher B opens daily from 10:00 to 18:00, with \"Heroes of the Sea\" running until 31 December 2026 and a cheaper Störtebeker Ticket from 16:30.",
+        "For art, the Bucerius Kunst Forum on Alter Wall opens daily from 11:00 to 19:00 and until 21:00 on Thursdays, and its exhibition \"Von Monet bis Picasso\" runs until 29 March 2027. The Museum für Kunst und Gewerbe on Steintorplatz shows \"Hella Jongerius: Whispering Things\" until 13 June 2027. The Hamburger Kunsthalle offers free entry from 6 to 9 pm on the first Thursday of the month. At Hauptkirche St. Michaelis the tower is open from 09:00 to 19:00, and the church hosts its Bach-Wochen until 22 November.",
+        "Plan meals around the clock. Café Paris on Rathausstraße serves breakfast from 9.00 (9.30 on Sundays), and Café Condi at Hotel Vier Jahreszeiten runs its breakfast buffet until 11:00 on weekdays. At the Bullerei near Sternschanze the Deli takes no reservations, while restaurant tables open for booking 60 days ahead. Restaurant Haerlin opens Tuesday to Saturday with a smart casual dress code. For a drink with a harbour view, the Tower Bar at Hotel Hafen Hamburg opens from 18:00."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair the Elbphilharmonie Plaza (daily 10:00–24:00) with Miniatur Wunderland and the Speicherstadtmuseum, all in or beside the Speicherstadt."
+        ],
+        [
+          "A slower morning",
+          "Take the Café Condi breakfast buffet or breakfast at Café Paris, then coffee at Speicherstadt Kaffeerösterei, open daily 10.00–18.00."
+        ],
+        [
+          "Before booking",
+          "Bullerei restaurant tables open 60 days ahead, and Miniatur Wunderland recommends buying tickets online in advance."
+        ]
+      ],
+      trust: "All 31 distinct recommendations in this guide were checked against their operators' own websites on October 27, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

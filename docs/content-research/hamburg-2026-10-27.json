@@ -1,0 +1,981 @@
+{
+  "city": "Hamburg, Germany",
+  "checkedOn": "2026-10-27",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Elbphilharmonie Plaza",
+      "kind": "landmark",
+      "url": "https://www.elbphilharmonie.de/en/plaza",
+      "sourceType": "operator's own site",
+      "address": "\"Elbphilharmonie Hamburg, Platz der Deutschen Einheit, 20457 Hamburg\" (plan-your-visit page); Visitor Center \"Am Kaiserkai 62\"",
+      "operatingEvidence": "Plaza ticket page is live with booking: pre-booking online or on site costs a \"€5 booking fee per ticket\" and guarantees \"access at the desired time\"; links to the 2026/27 season.",
+      "hours": "\"Plaza: 10:00–24:00 daily (last admission 23:30)\"; 24 December closed; 31 December 10:00–18:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Miniatur Wunderland",
+      "kind": "museum",
+      "url": "https://www.miniatur-wunderland.de/",
+      "sourceType": "operator's own site",
+      "address": "\"Kehrwieder 2, Block D 20457 Hamburg - Speicherstadt\"",
+      "operatingEvidence": "Posts dated October 2026 count down to the new Rainforest section opening on 9 November; admission page advises \"buy tickets online in advance\" (adults 22.00 €, children under 16 13.00 €, under 1 m free).",
+      "hours": "Open every day, \"always at least from 09:30 – 18:00 h\", often later at weekends, on Tuesdays, holidays and school holidays",
+      "confidence": "high"
+    },
+    {
+      "name": "Hamburger Kunsthalle",
+      "kind": "museum",
+      "url": "https://www.hamburger-kunsthalle.de/en",
+      "sourceType": "operator's own site",
+      "address": "\"Hamburger Kunsthalle, Glockengießerwall 5, 20095 Hamburg\"",
+      "operatingEvidence": "Promotes the Philipp Otto Runge exhibition (\"Book your ticket now!\", Flex Ticket) and free entry on the first Thursday of the month from 6 to 9 pm, next on 05.11.2026; notes \"Partial closures in the Lichtwark Gallery\".",
+      "hours": "Only today's hours shown (\"Open 10:00-18:00\"); weekly hours and closing day not read",
+      "confidence": "medium"
+    },
+    {
+      "name": "Internationales Maritimes Museum",
+      "kind": "museum",
+      "url": "https://www.imm-hamburg.de/",
+      "sourceType": "operator's own site",
+      "address": "\"Kaispeicher B, Koreastraße 1, 20457 Hamburg\"",
+      "operatingEvidence": "Exhibition \"Heroes of the Sea – die Meere schützen\" runs 6 August–31 December 2026; adults €18.00, \"Störtebeker Ticket\" from 16:30 €9.00.",
+      "hours": "Daily 10:00–18:00 (shop until 18:30)",
+      "confidence": "high"
+    },
+    {
+      "name": "Hauptkirche St. Michaelis",
+      "kind": "landmark",
+      "url": "https://www.st-michaelis.de/",
+      "sourceType": "operator's own site",
+      "address": "\"Englische Planke 1\", \"20459 Hamburg\"",
+      "operatingEvidence": "Bach-Wochen 2026 run 31 October–22 November; tower, crypt and combination tickets sold online.",
+      "hours": "Tower 09:00–19:00; church 09:00–11:45 and 12:30–19:00; crypt 09:00–19:00 (\"Änderungen vorbehalten\")",
+      "confidence": "high"
+    },
+    {
+      "name": "HADAG ferry line 62 (Landungsbrücken)",
+      "kind": "scenic",
+      "url": "https://www.hadag.de/",
+      "sourceType": "operator's own site",
+      "address": "Line \"62: Landungsbrücken – Finkenwerder\"; company address \"St. Pauli Fischmarkt 28 20359 Hamburg\" (Impressum, https://www.hadag.de/impressum/)",
+      "operatingEvidence": "Site lists its current harbour ferry lines (61–75, HBEL) and says the boats run within the HVV network, linking to HVV for timetables and disruption notices. No dated 2026 item read.",
+      "hours": "not published on page (timetables via HVV)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Museum für Kunst und Gewerbe Hamburg",
+      "kind": "museum",
+      "url": "https://www.mkg-hamburg.de/en/",
+      "sourceType": "operator's own site",
+      "address": "\"Museum für Kunst und Gewerbe Hamburg, Steintorplatz, 20099 Hamburg\"",
+      "operatingEvidence": "\"Hella Jongerius: Whispering Things\" runs 23.10.26–13.6.27; \"Photo: Hans Hansen\" extended until 10.1.27; online ticket shop.",
+      "hours": "Only today's hours shown (10:00–18:00); closing day not read",
+      "confidence": "high"
+    },
+    {
+      "name": "Speicherstadtmuseum",
+      "kind": "museum",
+      "url": "https://www.speicherstadtmuseum.de/",
+      "sourceType": "operator's own site",
+      "address": "\"Am Sandtorkai 36, 20457 Hamburg\"",
+      "operatingEvidence": "Special exhibition \"Verloren und Vergessen – Wie die Speicherstadt vor dem Krieg war\" extended until 10.01.2027; tours and tea tastings listed for October–November 2026, some \"ausgebucht\".",
+      "hours": "Mon–Fri 10–17 h; Sat, Sun and holidays 10–18 h; November–February Mon–Sun 10–17 h",
+      "confidence": "high"
+    },
+    {
+      "name": "Tierpark Hagenbeck",
+      "kind": "park",
+      "url": "https://www.hagenbeck.de/",
+      "sourceType": "operator's own site",
+      "address": "\"Lokstedter Grenzstraße 2, 22527 Hamburg\"",
+      "operatingEvidence": "2026 main-season map and prices (Tierpark adults 29,00 €, children 4–16 19,00 €); botanical tour \"Grüne Exoten\" on 27.11.2026; online shop.",
+      "hours": "Weekly hours not shown; last entry 17:00; ticket counters close one hour before closing",
+      "confidence": "high"
+    },
+    {
+      "name": "Café Paris",
+      "kind": "meal",
+      "url": "https://www.cafeparis.net/",
+      "sourceType": "operator's own site",
+      "address": "\"Rathausstraße 4, 20095 Hamburg\"",
+      "operatingEvidence": "Offers \"Frühstück, Brunch & Dinner\" with online reservation; 2026 holiday hours published, including Silvester \"09:00 – 23:00 Uhr\".",
+      "hours": "Mo–Sa 9.00–0.00 Uhr (kitchen until 22:30); Sonntag 9.30–23.00 Uhr (kitchen until 21:30)",
+      "confidence": "high"
+    },
+    {
+      "name": "Bullerei",
+      "kind": "meal",
+      "url": "https://www.bullerei.com/",
+      "sourceType": "operator's own site",
+      "address": "\"Bullerei, Lagerstraße 34b, 20357 Hamburg\", \"direkt gegenüber dem S- & U-Bahnhof Sternschanze\"",
+      "operatingEvidence": "Grünkohl Satt at the Bullerei Studio on 6 and 7 November 2026; restaurant reservations \"immer 60 Tage (1.440 Stunden) im Voraus\"; Deli \"OHNE RESERVIERUNGEN\".",
+      "hours": "Deli daily 12:00–21:30; restaurant daily from 17:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Old Commercial Room",
+      "kind": "meal",
+      "url": "https://www.oldcommercialroom.de/",
+      "sourceType": "operator's own site",
+      "address": "\"Englische Planke 10, 20459 Hamburg\"",
+      "operatingEvidence": "Menu highlights \"Labskaus, Hummersuppe oder zarte Rinderroulade\"; phone reservations; footer \"© 2026\".",
+      "hours": "\"Täglich 12:00 - 23:00 Uhr\" (kitchen)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Fischereihafen Restaurant",
+      "kind": "meal",
+      "url": "https://www.fischereihafenrestaurant.de/",
+      "sourceType": "operator's own site",
+      "address": "\"Große Elbstraße 143, 22767 Hamburg\"",
+      "operatingEvidence": "Reports the Genuss-Michel 2026 award as \"Restaurant des Jahres\"; online table reservation page and reservation email.",
+      "hours": "not published on page read",
+      "confidence": "medium"
+    },
+    {
+      "name": "clouds – Bar & Kitchen",
+      "kind": "bar",
+      "url": "https://www.clouds-hamburg.de/",
+      "sourceType": "operator's own site",
+      "address": "\"Reeperbahn 1 20359 Hamburg\"",
+      "operatingEvidence": "Live table reservation link; Heaven's Nest rooftop terrace described. Only 2026 signal is an image dated 11.06.2026.",
+      "hours": "not published on page read",
+      "confidence": "medium"
+    },
+    {
+      "name": "Speicherstadt Kaffeerösterei",
+      "kind": "cafe",
+      "url": "https://www.speicherstadt-kaffee.de/",
+      "sourceType": "operator's own site",
+      "address": "Stammhaus \"am Kehrwieder 5\", Hamburg",
+      "operatingEvidence": "From 02.01.2026 open \"täglich von 10.00 – 18.00 Uhr\"; notice of an all-day closure on 25.08.26.",
+      "hours": "Daily 10.00–18.00",
+      "confidence": "high"
+    },
+    {
+      "name": "Rickmer Rickmers",
+      "kind": "museum",
+      "url": "https://www.rickmer-rickmers.de/",
+      "sourceType": "operator's own site",
+      "address": "\"Landungsbrücken, Ponton 1a\", 20359 Hamburg",
+      "operatingEvidence": "Exhibition by ARTDUO GAGAT runs 23 October–6 December 2026; \"Tickets bequem online buchen\".",
+      "hours": "not published on page read",
+      "confidence": "high"
+    },
+    {
+      "name": "Cap San Diego",
+      "kind": "museum",
+      "url": "https://www.capsandiego.de/",
+      "sourceType": "operator's own site",
+      "address": "\"Überseebrücke, 20459 Hamburg\"",
+      "operatingEvidence": "Museum ship with self-guided visits and audio guide; 2027 trips on sale (\"Tickets kaufen\") and hotel cabins bookable.",
+      "hours": "not published on page read",
+      "confidence": "medium"
+    },
+    {
+      "name": "Chocoversum",
+      "kind": "museum",
+      "url": "https://www.chocoversum.de/",
+      "sourceType": "operator's own site",
+      "address": "\"Meßberg 1, 20095 Hamburg\"",
+      "operatingEvidence": "90-minute Schokotour, tickets \"ab 23 €\" via online ticket shop; XXL Weihnachtswerkstatt bookable (image dated October 2026).",
+      "hours": "Museum hours not shown; shop open \"jeden Tag\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Restaurant Haerlin (Hotel Vier Jahreszeiten)",
+      "kind": "meal",
+      "url": "https://hvj.de/en/restaurant-haerlin.html",
+      "sourceType": "operator's own site",
+      "address": "Hotel Vier Jahreszeiten, \"Neuer Jungfernstieg 9 - 14, 20354 Hamburg\"",
+      "operatingEvidence": "Three Michelin stars; online reservation, groups of five or more by email; 2027 closing dates already published; dress code \"Smart casual\".",
+      "hours": "Tuesday–Saturday 6:30 p.m.–11:00 p.m.",
+      "confidence": "high"
+    },
+    {
+      "name": "Café Condi (Hotel Vier Jahreszeiten)",
+      "kind": "cafe",
+      "url": "https://hvj.de/en/cafe-condi.html",
+      "sourceType": "operator's own site",
+      "address": "Hotel Vier Jahreszeiten, \"Neuer Jungfernstieg 9 - 14, 20354 Hamburg\"",
+      "operatingEvidence": "Breakfast and brunch buffet with \"freshly baked goods ... omelettes, pancakes\"; seasonal Heuboden schedule from 2 October to around 4 January; OpenTable booking.",
+      "hours": "Breakfast \"Monday – Friday: 06:30 a.m. – 11:00 a.m.\", weekends/holidays 07:00–11:30; Heuboden Fri–Sun 12:00–18:00 until 20 Nov, then daily",
+      "confidence": "high"
+    },
+    {
+      "name": "Jahreszeiten Bar (Hotel Vier Jahreszeiten)",
+      "kind": "bar",
+      "url": "https://hvj.de/en/jahreszeiten-bar.html",
+      "sourceType": "operator's own site",
+      "address": "Hotel Vier Jahreszeiten, \"Neuer Jungfernstieg 9 - 14, 20354 Hamburg\"",
+      "operatingEvidence": "October and November hours published; cocktails plus 70 whiskeys and 25 gins; drinks menu online.",
+      "hours": "October: Thu–Sat 15:00–01:00, Sun–Wed 17:00–01:00; November: daily 15:00–01:00 (last orders 00:30)",
+      "confidence": "high"
+    },
+    {
+      "name": "Skyline Bar 20up (Empire Riverside Hotel)",
+      "kind": "bar",
+      "url": "https://www.empire-riverside.de/",
+      "sourceType": "operator's own site",
+      "address": "\"Bernhard-Nocht-Straße 97 20359 Hamburg\"",
+      "operatingEvidence": "OpenTable reservation for Skyline Bar 20up; RIVERstyle Candlelight package \"01.10.2026 - 31.12.2026\" includes a cocktail at the bar.",
+      "hours": "not published on page read",
+      "confidence": "medium"
+    },
+    {
+      "name": "BallinStadt",
+      "kind": "museum",
+      "url": "https://www.ballinstadt.de/",
+      "sourceType": "operator's own site",
+      "address": "\"Veddeler Bogen 2, 20539 Hamburg\"",
+      "operatingEvidence": "News of the \"125 Jahre Auswandererstadt\" celebration in November 2026 and a Thanksgiving Dinner 2026; online ticket shop.",
+      "hours": "\"dienstags bis sonntags von 10 – 18:00 Uhr\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Zeit für Brot (Ottensen)",
+      "kind": "bakery",
+      "url": "https://www.zeitfuerbrot.com/baeckereien",
+      "sourceType": "operator's own site",
+      "address": "\"Ottenser Hauptstraße 41\", \"22765 Hamburg / Ottensen\"",
+      "operatingEvidence": "Branch listed with current hours on the bakery's own branch page; footer \"© 2026, Zeit für Brot\".",
+      "hours": "Mon–Fri 07:00–20:00; Sat 07:30–19:00; Sun 08:00–19:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Alster-Touristik (Anleger Jungfernstieg)",
+      "kind": "scenic",
+      "url": "https://www.alstertouristik.de/",
+      "sourceType": "operator's own site",
+      "address": "ATG Alster-Touristik GmbH, \"Anleger Jungfernstieg\", 20354 Hamburg",
+      "operatingEvidence": "Bookable tours with current prices: Alsterrundfahrt 50 minutes from €10; Lichterfahrt 2 hours from €17.50. No dated 2026 timetable read.",
+      "hours": "not published on page read",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bucerius Kunst Forum",
+      "kind": "museum",
+      "url": "https://www.buceriuskunstforum.de/",
+      "sourceType": "operator's own site",
+      "address": "\"Alter Wall 12, 20457 Hamburg\"",
+      "operatingEvidence": "\"Von Monet bis Picasso. Jüdische Kunstsammler:innen in Deutschland\" runs 11.9.2026–29.3.2027.",
+      "hours": "\"täglich 11:00 — 19:00 Uhr\"; \"donnerstags 11:00 — 21:00 Uhr\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Spicy's Gewürzmuseum",
+      "kind": "museum",
+      "url": "https://www.spicys.de/",
+      "sourceType": "operator's own site",
+      "address": "\"Am Sandtorkai 34\", Speicherstadt, Hamburg",
+      "operatingEvidence": "Events listed for 28 November and 12 December (2026 in event URLs); free audio guide.",
+      "hours": "\"Täglich 10:00 - 17:00 Uhr geöffnet!\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Tower Bar (Hotel Hafen Hamburg)",
+      "kind": "bar",
+      "url": "https://www.hotel-hafen-hamburg.de/",
+      "sourceType": "operator's own site",
+      "address": "\"Seewartenstraße 9, 20459 Hamburg\"",
+      "operatingEvidence": "Dated notices: closed 28.11.2026 for a private event and on 24.12.2026; New Year's Eve event \"360° über der Stadt\".",
+      "hours": "Fri–Sat 18:00–02:00 (last order 01:30); Sun–Thu 18:00–01:00 (last order 00:30)",
+      "confidence": "high"
+    },
+    {
+      "name": "Fischauktionshalle (Hamburger Fischmarkt)",
+      "kind": "market",
+      "url": "https://www.fischauktionshalle.com/",
+      "sourceType": "operator's own site",
+      "address": "\"Große Elbstraße 9\", 22767 Hamburg",
+      "operatingEvidence": "States the Sunday market hours \"IMMER SONNTAGS 06:00 – 12:00 UHR\" and \"KEIN BRUNCH ANGEBOT\". No dated 2026 item.",
+      "hours": "Sundays 06:00–12:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Herr Max",
+      "kind": "bakery",
+      "url": "https://shop.herrmax.de/",
+      "sourceType": "operator's own site",
+      "address": "Herr Max – Patisserie & Konditorei, \"Hegestrasse 44\", \"20251 Hamburg\"",
+      "operatingEvidence": "Current cake range with prices and lead times for pickup; product images uploaded January and April 2026.",
+      "hours": "\"Montag bis Sonntag 12-17 Uhr\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Nord Coast Coffee Roastery (Deichstraße)",
+      "kind": "cafe",
+      "url": "https://www.nordcoast-coffee.de/",
+      "sourceType": "operator's own site",
+      "address": "\"Deichstraße 9, 20459 Hamburg\"",
+      "operatingEvidence": "Hours published for three cafés with a breakfast menu linked. No dated 2026 item.",
+      "hours": "Mon–Fri 9:00–17:00; Sat–Sun 9:00–17:00",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Elbphilharmonie",
+      "reason": "replaced by confirmed entry 'Elbphilharmonie Plaza'",
+      "url": "https://www.elbphilharmonie.de/en/plaza"
+    },
+    {
+      "name": "Speicherstadt",
+      "reason": "district, not a single operated place; covered via places inside it",
+      "url": ""
+    },
+    {
+      "name": "St. Pauli",
+      "reason": "district, not a single operated place; covered via places inside it",
+      "url": ""
+    },
+    {
+      "name": "Harbor ferry ride",
+      "reason": "generic, not a place; replaced by 'HADAG ferry line 62 (Landungsbrücken)'",
+      "url": ""
+    },
+    {
+      "name": "Elbphilharmonie view",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Schanze neighborhood evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "a fish market breakfast",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Hamburg market or cafe",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local dinner in HafenCity",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Schanze",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in St. Pauli",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in HafenCity",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost HafenCity walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Schanze",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around St. Pauli",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through St. Pauli",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Elbphilharmonie",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in HafenCity",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Harbor ferry ride",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Schanze",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Speicherstadt",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "HafenCity evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Schanze",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near St. Pauli",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through HafenCity",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Elbphilharmonie",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Schanze",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near St. Pauli",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near HafenCity",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Elbphilharmonie",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "HafenCity cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Elbphilharmonie view",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in St. Pauli",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of St. Pauli",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond HafenCity",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near HafenCity",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Schanze bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Elbphilharmonie",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through St. Pauli",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near HafenCity",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Speicherstadt",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around St. Pauli",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in HafenCity",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Schanze",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in St. Pauli",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near HafenCity",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near HafenCity",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Schanze",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near St. Pauli",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near HafenCity",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Schanze morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Elbphilharmonie",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near St. Pauli",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near HafenCity",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Schanze",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near St. Pauli",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Rindermarkthalle St. Pauli",
+      "reason": "fetch failed: TLS error (TLSV1_ALERT_UNRECOGNIZED_NAME)",
+      "url": "https://www.rindermarkthalle-st-pauli.de/"
+    },
+    {
+      "name": "Brücke 10",
+      "reason": "fetch failed: TLS error (TLSV1_ALERT_INTERNAL_ERROR)",
+      "url": "https://www.bruecke10.de/"
+    },
+    {
+      "name": "Bäckerei Junge",
+      "reason": "fetch failed: TLS error (TLSV1_ALERT_INTERNAL_ERROR)",
+      "url": "https://www.baeckerei-junge.de/"
+    },
+    {
+      "name": "Isemarkt",
+      "reason": "official domain redirects to a domain-for-sale page; no official source read",
+      "url": "https://www.isemarkt.com/"
+    },
+    {
+      "name": "Le Lion Bar de Paris",
+      "reason": "HTTP 429 Too Many Requests on every attempt",
+      "url": "https://www.lelion.net/"
+    },
+    {
+      "name": "Elbgold",
+      "reason": "HTTP 429 Too Many Requests on every attempt",
+      "url": "https://www.elbgold.com/"
+    },
+    {
+      "name": "Mutterland",
+      "reason": "official locations page shows no street address or hours",
+      "url": "https://www.mutterland.de/standorte.html"
+    },
+    {
+      "name": "Planten un Blomen",
+      "reason": "official city park site publishes hours (October–December 7–20) but no street address",
+      "url": "https://plantenunblomen.hamburg.de/park-service/oeffnungszeiten-artikel-622236"
+    },
+    {
+      "name": "Public Coffee Roasters",
+      "reason": "fetch failed: DNS not found",
+      "url": "https://www.public-coffee-roasters.com/"
+    },
+    {
+      "name": "Daniel Wischer",
+      "reason": "fetch failed: DNS not found",
+      "url": "https://www.daniel-wischer.de/"
+    },
+    {
+      "name": "The Chug Club",
+      "reason": "fetch failed: DNS not found",
+      "url": "https://www.thechugclub.de/"
+    },
+    {
+      "name": "Boilerman Bar",
+      "reason": "certificate error (hostname mismatch)",
+      "url": "https://www.boilerman-bar.de/"
+    },
+    {
+      "name": "Kaffeerösterei Burg",
+      "reason": "https URL redirects to http only; not used",
+      "url": "https://www.kaffeeroesterei-burg.de/"
+    },
+    {
+      "name": "Dat Backhus",
+      "reason": "fetch failed: connection refused",
+      "url": "https://www.dat-backhus.de/"
+    },
+    {
+      "name": "Museum der Arbeit",
+      "reason": "fetch failed: connection refused",
+      "url": "https://www.museum-der-arbeit.de/"
+    },
+    {
+      "name": "Deichtorhallen",
+      "reason": "homepage gives no street address; Halle für aktuelle Kunst closed for rebuilding until 30 October 2026",
+      "url": "https://www.deichtorhallen.de/"
+    },
+    {
+      "name": "Dialog im Dunkeln",
+      "reason": "no street address on official page",
+      "url": "https://www.dialog-in-hamburg.de/"
+    },
+    {
+      "name": "Hamburg Dungeon",
+      "reason": "no street address on page read",
+      "url": "https://www.thedungeons.com/hamburg/"
+    },
+    {
+      "name": "Hamburger Rathaus",
+      "reason": "Bürgerschaft pages give no address or public tour times",
+      "url": "https://www.hamburgische-buergerschaft.de/besuch-im-rathaus"
+    },
+    {
+      "name": "Café Koppel",
+      "reason": "site redirects to a third-party host (cafe-koppel.geo.io); not followed",
+      "url": "https://www.cafe-koppel.de/"
+    },
+    {
+      "name": "Effenberger Vollkornbäckerei",
+      "reason": "branch page returned 404; homepage lists only the head office",
+      "url": "https://www.effenberger-vollkornbaeckerei.de/"
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Elbphilharmonie Plaza",
+        "Miniatur Wunderland",
+        "Hauptkirche St. Michaelis",
+        "Internationales Maritimes Museum"
+      ],
+      "bestFirstTimers": [
+        "Elbphilharmonie Plaza",
+        "Miniatur Wunderland",
+        "HADAG ferry line 62 (Landungsbrücken)",
+        "Speicherstadtmuseum"
+      ],
+      "bestRestaurants": [
+        "Bullerei",
+        "Old Commercial Room",
+        "Fischereihafen Restaurant",
+        "Café Paris"
+      ],
+      "bestBudget": [
+        "HADAG ferry line 62 (Landungsbrücken)",
+        "Fischauktionshalle (Hamburger Fischmarkt)",
+        "Alster-Touristik (Anleger Jungfernstieg)",
+        "Speicherstadt Kaffeerösterei"
+      ],
+      "bestLuxury": [
+        "Restaurant Haerlin (Hotel Vier Jahreszeiten)",
+        "Jahreszeiten Bar (Hotel Vier Jahreszeiten)",
+        "Café Condi (Hotel Vier Jahreszeiten)",
+        "Skyline Bar 20up (Empire Riverside Hotel)"
+      ],
+      "bestCouples": [
+        "Alster-Touristik (Anleger Jungfernstieg)",
+        "Tower Bar (Hotel Hafen Hamburg)",
+        "Restaurant Haerlin (Hotel Vier Jahreszeiten)",
+        "Elbphilharmonie Plaza"
+      ],
+      "bestKids": [
+        "Miniatur Wunderland",
+        "Tierpark Hagenbeck",
+        "Chocoversum",
+        "Internationales Maritimes Museum"
+      ],
+      "bestSolo": [
+        "Hamburger Kunsthalle",
+        "Bucerius Kunst Forum",
+        "Museum für Kunst und Gewerbe Hamburg",
+        "Nord Coast Coffee Roastery (Deichstraße)"
+      ],
+      "bestUnique": [
+        "Rickmer Rickmers",
+        "Cap San Diego",
+        "BallinStadt",
+        "Spicy's Gewürzmuseum"
+      ],
+      "bestBreakfast": [
+        "Café Paris",
+        "Café Condi (Hotel Vier Jahreszeiten)",
+        "Zeit für Brot (Ottensen)"
+      ],
+      "bestLunch": [
+        "Bullerei",
+        "Old Commercial Room",
+        "Fischereihafen Restaurant",
+        "Café Paris"
+      ],
+      "bestDinner": [
+        "Bullerei",
+        "Old Commercial Room",
+        "Fischereihafen Restaurant",
+        "Restaurant Haerlin (Hotel Vier Jahreszeiten)"
+      ],
+      "bestCocktails": [
+        "Jahreszeiten Bar (Hotel Vier Jahreszeiten)",
+        "Tower Bar (Hotel Hafen Hamburg)",
+        "Skyline Bar 20up (Empire Riverside Hotel)",
+        "clouds – Bar & Kitchen"
+      ],
+      "bestBakeries": [
+        "Zeit für Brot (Ottensen)",
+        "Herr Max",
+        "Café Condi (Hotel Vier Jahreszeiten)"
+      ],
+      "bestCoffee": [
+        "Speicherstadt Kaffeerösterei",
+        "Nord Coast Coffee Roastery (Deichstraße)",
+        "Café Condi (Hotel Vier Jahreszeiten)"
+      ]
+    },
+    "queries": {
+      "Elbphilharmonie Plaza": "Elbphilharmonie Platz der Deutschen Einheit Hamburg",
+      "Miniatur Wunderland": "Miniatur Wunderland Kehrwieder 2 Hamburg",
+      "Hamburger Kunsthalle": "Hamburger Kunsthalle Glockengießerwall 5 Hamburg",
+      "Internationales Maritimes Museum": "Internationales Maritimes Museum Koreastraße 1 Hamburg",
+      "Hauptkirche St. Michaelis": "Hauptkirche St. Michaelis Englische Planke 1 Hamburg",
+      "HADAG ferry line 62 (Landungsbrücken)": "HADAG Fähre 62 St. Pauli Landungsbrücken Hamburg",
+      "Museum für Kunst und Gewerbe Hamburg": "Museum für Kunst und Gewerbe Steintorplatz Hamburg",
+      "Speicherstadtmuseum": "Speicherstadtmuseum Am Sandtorkai 36 Hamburg",
+      "Tierpark Hagenbeck": "Tierpark Hagenbeck Lokstedter Grenzstraße 2 Hamburg",
+      "Café Paris": "Café Paris Rathausstraße 4 Hamburg",
+      "Bullerei": "Bullerei Lagerstraße 34b Hamburg",
+      "Old Commercial Room": "Old Commercial Room Englische Planke 10 Hamburg",
+      "Fischereihafen Restaurant": "Fischereihafen Restaurant Große Elbstraße 143 Hamburg",
+      "clouds – Bar & Kitchen": "clouds Bar & Kitchen Reeperbahn 1 Hamburg",
+      "Speicherstadt Kaffeerösterei": "Speicherstadt Kaffeerösterei Kehrwieder 5 Hamburg",
+      "Rickmer Rickmers": "Rickmer Rickmers Landungsbrücken Ponton 1a Hamburg",
+      "Cap San Diego": "Cap San Diego Überseebrücke Hamburg",
+      "Chocoversum": "Chocoversum Meßberg 1 Hamburg",
+      "Restaurant Haerlin (Hotel Vier Jahreszeiten)": "Restaurant Haerlin Neuer Jungfernstieg 9 Hamburg",
+      "Café Condi (Hotel Vier Jahreszeiten)": "Café Condi Neuer Jungfernstieg 9 Hamburg",
+      "Jahreszeiten Bar (Hotel Vier Jahreszeiten)": "Jahreszeiten Bar Neuer Jungfernstieg 9 Hamburg",
+      "Skyline Bar 20up (Empire Riverside Hotel)": "Skyline Bar 20up Bernhard-Nocht-Straße 97 Hamburg",
+      "BallinStadt": "BallinStadt Veddeler Bogen 2 Hamburg",
+      "Zeit für Brot (Ottensen)": "Zeit für Brot Ottenser Hauptstraße 41 Hamburg",
+      "Alster-Touristik (Anleger Jungfernstieg)": "Alster-Touristik Anleger Jungfernstieg Hamburg",
+      "Bucerius Kunst Forum": "Bucerius Kunst Forum Alter Wall 12 Hamburg",
+      "Spicy's Gewürzmuseum": "Spicy's Gewürzmuseum Am Sandtorkai 34 Hamburg",
+      "Tower Bar (Hotel Hafen Hamburg)": "Tower Bar Hotel Hafen Seewartenstraße 9 Hamburg",
+      "Fischauktionshalle (Hamburger Fischmarkt)": "Fischauktionshalle Große Elbstraße 9 Hamburg",
+      "Herr Max": "Herr Max Hegestraße 44 Hamburg",
+      "Nord Coast Coffee Roastery (Deichstraße)": "Nord Coast Coffee Roastery Deichstraße 9 Hamburg"
+    },
+    "summary": "Harbourfront sights, Speicherstadt museums, art collections, restaurants, bakeries, coffee roasters and cocktail bars in Hamburg, each checked against its own website.",
+    "highlights": [
+      "Elbphilharmonie Plaza",
+      "Miniatur Wunderland",
+      "Hauptkirche St. Michaelis",
+      "Hamburger Kunsthalle"
+    ],
+    "tip": "Buy Miniatur Wunderland tickets online in advance, as its own site advises, and pre-book an Elbphilharmonie Plaza slot if you want guaranteed entry at a set time (€5 booking fee).",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Check before you go",
+        "copy": "BallinStadt opens Tuesday to Sunday only, and Restaurant Haerlin serves dinner Tuesday to Saturday. The Fischauktionshalle market runs on Sundays from 06:00 to 12:00."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book ahead",
+        "copy": "Miniatur Wunderland advises buying tickets online in advance to avoid long waits. Elbphilharmonie Plaza pre-booking costs €5 per ticket and guarantees your chosen entry time."
+      },
+      {
+        "label": "Walk-in policies",
+        "value": "Some no-booking spots",
+        "copy": "The Bullerei Deli takes no reservations, while its restaurant takes bookings 60 days ahead. Groups of five or more at Restaurant Haerlin must book by email."
+      },
+      {
+        "label": "Rules",
+        "value": "Bags and dress",
+        "copy": "At the Elbphilharmonie, bags A3 size or larger, luggage and walking-stick umbrellas go in ground-floor lockers. Restaurant Haerlin asks for smart casual dress."
+      }
+    ],
+    "dek": "Group the harbour and Speicherstadt sights into one day, and book Miniatur Wunderland and an Elbphilharmonie Plaza slot before you go.",
+    "intro": [
+      "Start at the Elbphilharmonie Plaza, the public viewing level on the 8th floor, open daily from 10:00 to 24:00 with last admission at 23:30. Capacity is controlled with Plaza tickets, and if you pre-book online or on site you pay a €5 booking fee per ticket, which guarantees entry at your chosen time. A concert ticket also gets you onto the Plaza from two hours before the performance. From there it is a short walk into the Speicherstadt, where the Speicherstadtmuseum on Am Sandtorkai has extended its exhibition on the pre-war warehouse district until 10 January 2027.",
+      "Miniatur Wunderland, at Kehrwieder 2 in the Speicherstadt, opens every day, always at least from 09:30 to 18:00, and often later at weekends, on Tuesdays and in school holidays. Its own admission page advises buying tickets online in advance to avoid long waits; adults pay 22.00 € and children under 1 m go free. Nearby, the Internationales Maritimes Museum in Kaispeicher B opens daily from 10:00 to 18:00, with \"Heroes of the Sea\" running until 31 December 2026 and a cheaper Störtebeker Ticket from 16:30.",
+      "For art, the Bucerius Kunst Forum on Alter Wall opens daily from 11:00 to 19:00 and until 21:00 on Thursdays, and its exhibition \"Von Monet bis Picasso\" runs until 29 March 2027. The Museum für Kunst und Gewerbe on Steintorplatz shows \"Hella Jongerius: Whispering Things\" until 13 June 2027. The Hamburger Kunsthalle offers free entry from 6 to 9 pm on the first Thursday of the month. At Hauptkirche St. Michaelis the tower is open from 09:00 to 19:00, and the church hosts its Bach-Wochen until 22 November.",
+      "Plan meals around the clock. Café Paris on Rathausstraße serves breakfast from 9.00 (9.30 on Sundays), and Café Condi at Hotel Vier Jahreszeiten runs its breakfast buffet until 11:00 on weekdays. At the Bullerei near Sternschanze the Deli takes no reservations, while restaurant tables open for booking 60 days ahead. Restaurant Haerlin opens Tuesday to Saturday with a smart casual dress code. For a drink with a harbour view, the Tower Bar at Hotel Hafen Hamburg opens from 18:00."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair the Elbphilharmonie Plaza (daily 10:00–24:00) with Miniatur Wunderland and the Speicherstadtmuseum, all in or beside the Speicherstadt."
+      ],
+      [
+        "A slower morning",
+        "Take the Café Condi breakfast buffet or breakfast at Café Paris, then coffee at Speicherstadt Kaffeerösterei, open daily 10.00–18.00."
+      ],
+      [
+        "Before booking",
+        "Bullerei restaurant tables open 60 days ahead, and Miniatur Wunderland recommends buying tickets online in advance."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Le Lion and Elbgold returned HTTP 429 on every attempt; Rindermarkthalle St. Pauli, Brücke 10 and Bäckerei Junge failed with TLS errors; Boilerman Bar had a certificate mismatch; Dat Backhus and Museum der Arbeit refused connections; Public Coffee Roasters, Daniel Wischer and The Chug Club domains did not resolve. Mutterland, Planten un Blomen, Deichtorhallen, Dialog im Dunkeln and the Hamburg Dungeon published no street address on the pages read. Weekly hours were not readable for Hamburger Kunsthalle, Museum für Kunst und Gewerbe, Tierpark Hagenbeck, Fischereihafen Restaurant, clouds, Skyline Bar 20up, Rickmer Rickmers, Cap San Diego, Chocoversum (museum), Alster-Touristik and the HADAG ferries (timetables via HVV). Old Commercial Room, Zeit für Brot, Nord Coast, Fischauktionshalle, HADAG and Cap San Diego showed no dated 2026 item beyond hours, bookings or copyright lines, so they are marked medium confidence.",
+  "injectionLikeText": []
+}
