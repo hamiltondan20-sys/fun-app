@@ -5,6 +5,675 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Delhi, India": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-28",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The ASI pages for Humayun's Tomb, Qutub Minar and Red Fort were readable but gave no address, so those monuments are left out. Sites that could not be read: National Museum (certificate error), NGMA New Delhi (404/no content), Lotus Temple and Pradhanmantri Sangrahalaya (403), Gandhi Smriti (expired certificate), National Rail Museum (connection refused), Karim's (fetch failed), Blue Tokai (429), Taj Mahal New Delhi (403), The Big Chill Cafe and L'Opera (domains did not resolve). The nscdelhi.org domain no longer serves the National Science Centre. Indian Accent, Safari Lounge and Lodhi Bakery publish no opening hours; Rashtrapati Bhavan's hours come from its contact page, not individual circuit pages; Baoshuan's hours come from the hotel's dining list, which differs slightly from Dhilli's own page on weekend lunch times. Lodhi Garden opening times vary by season on the NDMC page.",
+    "sourceUrls": [
+      "docs/content-research/delhi-2026-10-28.md",
+      "docs/content-research/delhi-2026-10-28.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Humayun's Tomb",
+        "url": "https://asi.nic.in/pages/WorldHeritageHumayunTomb",
+        "checkedOn": "2026-10-28",
+        "reason": "Official ASI page read (hours \"sunrise to 9.00 p.m.\", fees) but gives no street address or exact location, and no current dated notice"
+      },
+      {
+        "name": "Humayun's Tomb at opening",
+        "url": "https://asi.nic.in/pages/WorldHeritageHumayunTomb",
+        "checkedOn": "2026-10-28",
+        "reason": "Same site as Humayun's Tomb; ASI page gives no address"
+      },
+      {
+        "name": "Qutub Minar",
+        "url": "https://asi.nic.in/pages/WorldHeritageQutbMinar",
+        "checkedOn": "2026-10-28",
+        "reason": "Official ASI page read (\"Open from Sunrise to 08:00pm\") but gives no street address or exact location"
+      },
+      {
+        "name": "Red Fort",
+        "url": "https://asi.nic.in/pages/WorldHeritageRedFort",
+        "checkedOn": "2026-10-28",
+        "reason": "Official ASI page read (\"Open from sunrise to 9.00 p.m.\") but describes location only generally, no address"
+      },
+      {
+        "name": "Old Delhi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place (neighbourhood)"
+      },
+      {
+        "name": "Spice Market with a guide",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place (guided activity; no operator named)"
+      },
+      {
+        "name": "Lodhi Garden morning",
+        "url": "https://www.ndmc.gov.in/services/ndmc_parks.aspx",
+        "checkedOn": "2026-10-28",
+        "reason": "Covered as the confirmed place Lodhi Garden"
+      },
+      {
+        "name": "National Museum",
+        "url": "https://www.nationalmuseumindia.gov.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "Certificate error on official site (\"unable to verify the first certificate\"); not bypassed"
+      },
+      {
+        "name": "National Gallery of Modern Art, New Delhi",
+        "url": "https://ngmaindia.gov.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official Delhi page returned 404; home page had no readable content; ngmadelhi.gov.in did not resolve"
+      },
+      {
+        "name": "Lotus Temple (Bahá'í House of Worship)",
+        "url": "https://www.bahaihouseofworship.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site returned 403 Forbidden"
+      },
+      {
+        "name": "Pradhanmantri Sangrahalaya",
+        "url": "https://www.pmsangrahalaya.gov.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site returned 403 Forbidden"
+      },
+      {
+        "name": "Gandhi Smriti",
+        "url": "https://www.gandhismriti.gov.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site certificate expired; not bypassed"
+      },
+      {
+        "name": "National Rail Museum",
+        "url": "https://nrm.indianrailways.gov.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "Connection refused on official site"
+      },
+      {
+        "name": "National Science Centre",
+        "url": "https://www.nscdelhi.org/",
+        "checkedOn": "2026-10-28",
+        "reason": "Domain nscdelhi.org now serves unrelated gambling content; no official page found"
+      },
+      {
+        "name": "Gurdwara Bangla Sahib",
+        "url": "https://www.dsgmc.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "DSGMC site lists 2026 programmes at the gurdwara but no address, visiting hours or langar times"
+      },
+      {
+        "name": "Karim's (Jama Masjid)",
+        "url": "https://www.karimhoteldelhi.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Fetch of official site failed with no output"
+      },
+      {
+        "name": "Saravanaa Bhavan (Janpath)",
+        "url": "https://www.saravanabhavan.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site lists no Delhi branch address or hours"
+      },
+      {
+        "name": "Blue Tokai Coffee Roasters (Saket)",
+        "url": "https://bluetokaicoffee.com/pages/blue-tokai-coffee-roasters-saket",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site returned 429 Too Many Requests on three attempts"
+      },
+      {
+        "name": "The Big Chill Cafe",
+        "url": "https://www.thebigchillcafe.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official domain did not resolve (ENOTFOUND)"
+      },
+      {
+        "name": "L'Opera",
+        "url": "https://www.lopera.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official domain did not resolve (ENOTFOUND)"
+      },
+      {
+        "name": "Theobroma",
+        "url": "https://www.theobroma.in/",
+        "checkedOn": "2026-10-28",
+        "reason": "Home page lists no Delhi outlet address; store locator not read"
+      },
+      {
+        "name": "Haldiram's (Chandni Chowk)",
+        "url": "https://www.haldirams.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Home page lists no Delhi outlet address; store locator not read"
+      },
+      {
+        "name": "Olive Bar & Kitchen (Mehrauli)",
+        "url": "https://www.olivebarandkitchen.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Group page gives no Delhi address, hours or current content"
+      },
+      {
+        "name": "Taj Mahal, New Delhi restaurants (Varq, Machan)",
+        "url": "https://www.tajhotels.com/en-in/hotels/taj-mahal-new-delhi/restaurants",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site returned 403 Forbidden"
+      },
+      {
+        "name": "Fabelle (ITC Maurya)",
+        "url": "https://www.itchotels.com/in/en/itchotels/hotels/itcmaurya-new-delhi/fine-dine/fabelle.html",
+        "checkedOn": "2026-10-28",
+        "reason": "Official page gives no hours or description; \"All outlets may not be operational across all time slots\""
+      },
+      {
+        "name": "Wenger's (Connaught Place)",
+        "checkedOn": "2026-10-28",
+        "reason": "No official website found; only third-party listings"
+      },
+      {
+        "name": "Old Delhi food walk",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "North Indian dinner",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A South Delhi cafe",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Old Delhi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Hauz Khas",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in New Delhi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost New Delhi walk",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Old Delhi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Hauz Khas",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Hauz Khas",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Old Delhi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in New Delhi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Lodhi Garden morning",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Old Delhi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Humayun's Tomb",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "New Delhi evening",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Old Delhi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Hauz Khas",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through New Delhi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Old Delhi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Old Delhi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Hauz Khas",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near New Delhi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Old Delhi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "New Delhi cafe or market",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Spice Market with a guide",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Hauz Khas",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Hauz Khas",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond New Delhi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near New Delhi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Old Delhi bakery or market",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Old Delhi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Hauz Khas",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near New Delhi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Humayun's Tomb",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Hauz Khas",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in New Delhi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Old Delhi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Hauz Khas",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near New Delhi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near New Delhi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Old Delhi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Qutub Minar",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near New Delhi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Old Delhi morning market",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Old Delhi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Hauz Khas",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near New Delhi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Old Delhi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Hauz Khas",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Swaminarayan Akshardham": {
+        "url": "https://akshardham.com/visitor-info",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Current visitor-info page publishes entry times, ticket prices and security rules: \"Mandir entry and darshan are free\"; exhibitions ticket Rs 260 adults; site footer \"© 1999-2026\"."
+      },
+      "Kiran Nadar Museum of Art (Saket)": {
+        "url": "https://knma.org/visit/saket/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Current exhibitions at KNMA New Delhi: \"Inheritors of Earth\" and \"In-Rhythm\" (Bice Lazzari & Nasreen Mohamedi), both 9 Sep to 22 Dec 2026 (knma.org home page). \"Admission is free for all\"."
+      },
+      "Rashtrapati Bhavan": {
+        "url": "https://visit.rashtrapatibhavan.gov.in/contact-us",
+        "sourceType": "official public operator (President's Secretariat)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Visit site (visit.rashtrapatibhavan.gov.in) notice: Change of Guard \"will be conducted from 0730 hours to 0830 hours\" from Saturday 10 October 2026; also \"RB Museum Phase II will remain closed to the public from 6th October 2025 until further notice.\""
+      },
+      "Sunder Nursery": {
+        "url": "https://sundernursery.org/timing.php",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Timing page: \"Sunder Nursery Park opens seven days a week\"; notes \"The areas under construction like the Garden House, Museum, Restaurant blocks will not be accessible.\" No dated notice."
+      },
+      "Lodhi Garden": {
+        "url": "https://www.ndmc.gov.in/services/ndmc_parks.aspx",
+        "sourceType": "official public operator (New Delhi Municipal Council)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "NDMC parks page lists Lodhi Garden with seasonal opening times and a named horticulture officer in charge; NDMC site carries October 2026 notices. No garden-specific dated notice."
+      },
+      "1911 Restaurant (The Imperial)": {
+        "url": "https://www.theimperialindia.com/restaurants-and-bars/1911-restaurant",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Page lists daily timings and a Friday lunch buffet (12:30 pm to 3:30 pm, INR 2,800); \"Tatler Best 2026\" badge and \"Copyright © 2026\"."
+      },
+      "The Spice Route (The Imperial)": {
+        "url": "https://www.theimperialindia.com/restaurants-and-bars/the-spice-route",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Reservation email and phone published with meal times; Robb Report \"Best of The Best 2026\" badge."
+      },
+      "1911 Bar (The Imperial)": {
+        "url": "https://www.theimperialindia.com/restaurants-and-bars/1911-bar",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "\"For reservations, email us at 1911bar@theimperialindia.com\"; \"DISCOVER OUR NEW MENU\" link; \"Copyright © 2026 The Imperial India.\""
+      },
+      "Patiala Peg (The Imperial)": {
+        "url": "https://www.theimperialindia.com/restaurants-and-bars/patiala-peg",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Reservation email ppeg@theimperialindia.com and phone published; \"Tatler Best 2026\" listing and 2026 copyright."
+      },
+      "Haute Pâtisserie (The Imperial)": {
+        "url": "https://hautepatisserie.theimperialindia.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "\"The Imperial unveils its inaugural Signature Diwali Collection\"; online pre-orders open; Apfelstrudel \"only on Sundays\"."
+      },
+      "360° (The Oberoi, New Delhi)": {
+        "url": "https://www.oberoihotels.com/hotels-in-delhi/restaurants/360/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Booking form live (\"You will hear from us in the next 12 hours\"); weekend buffet 12:30 pm to 3:30 pm; \"© 2026 Oberoi Hotels & Resorts\"."
+      },
+      "Dhilli (The Oberoi, New Delhi)": {
+        "url": "https://www.oberoihotels.com/hotels-in-delhi/restaurants/dhilli/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Reservation form live; advance reservations recommended; children under 13 not allowed after 9:00 pm; 2026 copyright."
+      },
+      "Baoshuan (The Oberoi, New Delhi)": {
+        "url": "https://www.oberoihotels.com/hotels-in-delhi/restaurants/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Listed with current hours on the hotel's dining page, which also lists a Connaught Bar event at Cirrus 9 on 31 October 2026."
+      },
+      "The Oberoi Patisserie (The Oberoi, New Delhi)": {
+        "url": "https://www.oberoihotels.com/hotels-in-delhi/restaurants/the-oberoi-patisserie/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Page lists cakes and pastries, \"sweet nothings and savoury treats\", with daily hours; 2026 copyright."
+      },
+      "Cirrus 9 (The Oberoi, New Delhi)": {
+        "url": "https://www.oberoihotels.com/hotels-in-delhi/restaurants/cirrus-9/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Reservation form live; dining page lists a Connaught Bar event at Cirrus 9 on 31 October 2026; \"Guests below the age of 25 years are permitted till 8.00 pm.\""
+      },
+      "The Library Bar (The Leela Palace New Delhi)": {
+        "url": "https://www.theleela.com/the-leela-palace-new-delhi/restaurants/the-library-bar",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Reservation phone and email published; \"All patrons must be over 25 years of age\"; dress code \"Smart Casuals\"; ©2026 footer."
+      },
+      "Jamavar (The Leela Palace New Delhi)": {
+        "url": "https://www.theleela.com/the-leela-palace-new-delhi/restaurants/jamavar",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "\"Advance reservations are recommended, particularly for preferred dining times and the Maharaja Table.\" ©2026 footer."
+      },
+      "Le Cirque (The Leela Palace New Delhi)": {
+        "url": "https://www.theleela.com/the-leela-palace-new-delhi/restaurants/le-cirque",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Restaurant page shows current hours with an à la carte menu file dated August 2026 and no closure notice. (A search snippet mentioned a past temporary closure; the current page shows none.)"
+      },
+      "The Qube (The Leela Palace New Delhi)": {
+        "url": "https://www.theleela.com/the-leela-palace-new-delhi/restaurants/the-qube",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Page announces a \"newly launched\" Thai dining studio and newer à la carte dinner menu; reservation phone and email published."
+      },
+      "Bukhara (ITC Maurya)": {
+        "url": "https://www.itchotels.com/in/en/itcmaurya-new-delhi",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Hotel page lists Bukhara with current lunch and dinner hours; \"Copyright © ITC Hotels Limited 2026\"."
+      },
+      "Dum Pukht (ITC Maurya)": {
+        "url": "https://www.itchotels.com/in/en/itcmaurya-new-delhi",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Hotel page lists Dum Pukht with current hours and \"Children above the age of 8 are allowed during dinner hours\"; 2026 copyright."
+      },
+      "Indian Accent (The Lodhi)": {
+        "url": "https://www.indianaccent.com/newdelhi/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Reservations link with email reservations.del@indianaccent.com and phone; à la carte menu \"for lunch and dinner\". No 2026-dated content on the restaurant page; The Lodhi's 2026 site also lists its reservation numbers."
+      },
+      "Safari Lounge (The Lodhi)": {
+        "url": "https://www.thelodhi.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Listed among the hotel's bars with a reservation number on the hotel's 2026 site (\"2026 © All Rights Reserved\")."
+      },
+      "Lodhi Bakery (The Lodhi)": {
+        "url": "https://www.thelodhi.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Listed among the hotel's outlets with a contact number on the hotel's 2026 site."
+      },
+      "Third Wave Coffee (DLF Midtown Plaza)": {
+        "url": "https://stores.thirdwavecoffeeroasters.com/store-pages/third-wave-coffee-dlf-midtown-plaza-new-delhi",
+        "sourceType": "operator's own site (store locator)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Official store page lists daily hours; \"Copyright 2026 Third Wave Coffee\"."
+      }
+    }
+  },
   "Galway, Ireland": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-27",

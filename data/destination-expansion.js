@@ -7540,4 +7540,110 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 23 distinct recommendations in this guide were checked against their operators' own websites on October 27, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Delhi, India: source review of 2026-10-28 (docs/content-research/delhi-2026-10-28.md).
+  {
+    const cityKey = "Delhi, India";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Swaminarayan Akshardham","Rashtrapati Bhavan","Kiran Nadar Museum of Art (Saket)","Sunder Nursery"],
+      bestFirstTimers: ["Swaminarayan Akshardham","Rashtrapati Bhavan","Lodhi Garden","1911 Restaurant (The Imperial)"],
+      bestRestaurants: ["Indian Accent (The Lodhi)","Bukhara (ITC Maurya)","Dhilli (The Oberoi, New Delhi)","The Spice Route (The Imperial)"],
+      bestBudget: ["Lodhi Garden","Kiran Nadar Museum of Art (Saket)","Sunder Nursery","Swaminarayan Akshardham"],
+      bestLuxury: ["Le Cirque (The Leela Palace New Delhi)","Dum Pukht (ITC Maurya)","Jamavar (The Leela Palace New Delhi)","Indian Accent (The Lodhi)"],
+      bestCouples: ["The Library Bar (The Leela Palace New Delhi)","Cirrus 9 (The Oberoi, New Delhi)","Lodhi Garden","Le Cirque (The Leela Palace New Delhi)"],
+      bestKids: ["Swaminarayan Akshardham","Sunder Nursery","Lodhi Garden","The Oberoi Patisserie (The Oberoi, New Delhi)"],
+      bestSolo: ["Kiran Nadar Museum of Art (Saket)","Third Wave Coffee (DLF Midtown Plaza)","Lodhi Garden","Haute Pâtisserie (The Imperial)"],
+      bestUnique: ["Rashtrapati Bhavan","The Library Bar (The Leela Palace New Delhi)","Patiala Peg (The Imperial)","Dhilli (The Oberoi, New Delhi)"],
+      bestBreakfast: ["The Qube (The Leela Palace New Delhi)","1911 Restaurant (The Imperial)","360° (The Oberoi, New Delhi)"],
+      bestLunch: ["The Spice Route (The Imperial)","Bukhara (ITC Maurya)","The Qube (The Leela Palace New Delhi)","Baoshuan (The Oberoi, New Delhi)"],
+      bestDinner: ["Indian Accent (The Lodhi)","Bukhara (ITC Maurya)","Dum Pukht (ITC Maurya)","Dhilli (The Oberoi, New Delhi)"],
+      bestCocktails: ["1911 Bar (The Imperial)","The Library Bar (The Leela Palace New Delhi)","Cirrus 9 (The Oberoi, New Delhi)","Safari Lounge (The Lodhi)"],
+      bestBakeries: ["Haute Pâtisserie (The Imperial)","The Oberoi Patisserie (The Oberoi, New Delhi)","Lodhi Bakery (The Lodhi)"],
+      bestCoffee: ["Third Wave Coffee (DLF Midtown Plaza)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Swaminarayan Akshardham": "Swaminarayan Akshardham NH 24 Pramukh Swami Maharaj Marg New Delhi",
+      "Rashtrapati Bhavan": "Rashtrapati Bhavan President's Estate New Delhi",
+      "Kiran Nadar Museum of Art (Saket)": "Kiran Nadar Museum of Art DLF South Court Mall Saket New Delhi",
+      "Sunder Nursery": "Sunder Nursery Nizamuddin New Delhi",
+      "Lodhi Garden": "Lodhi Garden Lodhi Road New Delhi",
+      "1911 Restaurant (The Imperial)": "1911 Restaurant The Imperial Janpath New Delhi",
+      "Indian Accent (The Lodhi)": "Indian Accent The Lodhi Lodhi Road New Delhi",
+      "Bukhara (ITC Maurya)": "Bukhara ITC Maurya Sardar Patel Marg New Delhi",
+      "Dhilli (The Oberoi, New Delhi)": "Dhilli The Oberoi Dr Zakir Hussain Marg New Delhi",
+      "The Spice Route (The Imperial)": "The Spice Route The Imperial Janpath New Delhi",
+      "Le Cirque (The Leela Palace New Delhi)": "Le Cirque The Leela Palace Diplomatic Enclave Chanakyapuri New Delhi",
+      "Dum Pukht (ITC Maurya)": "Dum Pukht ITC Maurya Sardar Patel Marg New Delhi",
+      "Jamavar (The Leela Palace New Delhi)": "Jamavar The Leela Palace Diplomatic Enclave Chanakyapuri New Delhi",
+      "The Library Bar (The Leela Palace New Delhi)": "The Library Bar The Leela Palace Diplomatic Enclave Chanakyapuri New Delhi",
+      "Cirrus 9 (The Oberoi, New Delhi)": "Cirrus 9 The Oberoi Dr Zakir Hussain Marg New Delhi",
+      "The Oberoi Patisserie (The Oberoi, New Delhi)": "The Oberoi Patisserie Dr Zakir Hussain Marg New Delhi",
+      "Third Wave Coffee (DLF Midtown Plaza)": "Third Wave Coffee DLF Midtown Plaza Shivaji Marg Moti Nagar New Delhi",
+      "Haute Pâtisserie (The Imperial)": "Haute Patisserie The Imperial Janpath New Delhi",
+      "Patiala Peg (The Imperial)": "Patiala Peg The Imperial Janpath New Delhi",
+      "The Qube (The Leela Palace New Delhi)": "The Qube The Leela Palace Diplomatic Enclave Chanakyapuri New Delhi",
+      "360° (The Oberoi, New Delhi)": "360 The Oberoi Dr Zakir Hussain Marg New Delhi",
+      "Baoshuan (The Oberoi, New Delhi)": "Baoshuan The Oberoi Dr Zakir Hussain Marg New Delhi",
+      "1911 Bar (The Imperial)": "1911 Bar The Imperial Janpath New Delhi",
+      "Safari Lounge (The Lodhi)": "Safari Lounge The Lodhi Lodhi Road New Delhi",
+      "Lodhi Bakery (The Lodhi)": "Lodhi Bakery The Lodhi Lodhi Road New Delhi"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Delhi" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Temples, gardens, a free art museum and New Delhi's hotel restaurants, bars and patisseries, checked against their own websites.";
+    cityGuide.highlights = ["Swaminarayan Akshardham","Rashtrapati Bhavan","Kiran Nadar Museum of Art (Saket)","Sunder Nursery"];
+    cityGuide.tip = "Swaminarayan Akshardham and the Kiran Nadar Museum of Art (Saket) are both closed on Mondays, and Akshardham does not allow phones, cameras or bags inside, so use its free cloakroom before the security queue.";
+    data.destinationFacts[cityKey] = "Swaminarayan Akshardham and the Kiran Nadar Museum of Art (Saket) are both closed on Mondays, and Akshardham does not allow phones, cameras or bags inside, so use its free cloakroom before the security queue.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Temples, gardens, a free art museum and New Delhi's hotel restaurants, bars and patisseries, checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays",
+        "copy": "Swaminarayan Akshardham and the Kiran Nadar Museum of Art (Saket) are both closed on Mondays. Sunder Nursery says it opens seven days a week."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Free entry at KNMA",
+        "copy": "Kiran Nadar Museum of Art admission is free, but you register at reception; Akshardham's mandir is free and its exhibitions cost ₹260 for adults. Jamavar at The Leela Palace and Dhilli at The Oberoi both recommend advance reservations."
+      },
+      {
+        "label": "Bags and security",
+        "value": "Cloakroom first",
+        "copy": "Akshardham bans phones, cameras, bags, food and umbrellas and offers a free cloakroom. At KNMA, large bags are left at reception against a token."
+      },
+      {
+        "label": "Dress and age rules",
+        "value": "25+ at bars",
+        "copy": "The Library Bar admits only patrons over 25 and asks for smart casuals, while Cirrus 9 allows under-25s until 8.00 pm and requires full-length trousers and closed shoes for men. At Akshardham, clothing must cover shoulders and upper arms and reach below the knees."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Plan around the Monday closures at Akshardham and KNMA, start early in the gardens, and book hotel dining rooms ahead for the evening.",
+      intro: [
+        "This Delhi guide is built around places whose own websites you can check before you go. Swaminarayan Akshardham on NH 24 is open Tuesday to Sunday, with first entry at 10:00 am and last entry at 6:30 pm, and it is closed every Monday. Mandir entry and darshan are free, while the three exhibitions cost ₹260 for adults. Security is strict: phones, cameras, bags and food are not allowed, so you leave them in the free cloakroom, and your clothing must cover your upper arms and reach below the knee.",
+        "For art, the Kiran Nadar Museum of Art in DLF South Court Mall, Saket, is free, open Tuesday to Sunday from 11:00 AM to 8:00 PM and closed on Mondays. You register at reception, and large bags stay there. Two exhibitions, Inheritors of Earth and In-Rhythm, which pairs Bice Lazzari and Nasreen Mohamedi, run from 9 September to 22 December 2026. At Rashtrapati Bhavan, the visit website lists working hours of Tuesday to Sunday, 9:00 to 16:00, and notes that Museum Phase II remains closed until further notice.",
+        "Green space is easy to fit in. Sunder Nursery in Nizamuddin opens from 7am to 10pm, seven days a week, with last entry at 9:00 pm, though its Garden House, Museum and Restaurant blocks are under construction and not accessible. NDMC lists Lodhi Garden on Lodhi Road as closing at 8.00 PM. For breakfast, The Qube at The Leela Palace runs a buffet from 6:30 am to 10:30 am, and 1911 Restaurant at The Imperial opens at 6:30am. Third Wave Coffee at DLF Midtown Plaza serves from 9:30 AM daily.",
+        "Evenings centre on hotel dining rooms and bars. Bukhara and Dum Pukht at ITC Maurya serve lunch from 12:30 and dinner from 19:00, and Dum Pukht admits children above the age of 8 at dinner. Jamavar at The Leela Palace recommends booking ahead, while Dhilli at The Oberoi does not allow children under 13 after 9:00 pm. For drinks, The Library Bar admits only patrons over 25, and Cirrus 9 lets under-25s in until 8.00 pm, with full-length trousers and closed shoes required for men."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Start at Swaminarayan Akshardham on any day but Monday, leaving your phone in its free cloakroom, and finish with dinner at Bukhara or Indian Accent."
+        ],
+        [
+          "A slower morning",
+          "Walk Lodhi Garden or Sunder Nursery, which opens at 7am, then take the 6:30 am to 10:30 am breakfast buffet at The Qube."
+        ],
+        [
+          "Before booking",
+          "Akshardham and the Kiran Nadar Museum of Art are closed on Mondays, and Jamavar and Dhilli recommend reserving ahead."
+        ]
+      ],
+      trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 28, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

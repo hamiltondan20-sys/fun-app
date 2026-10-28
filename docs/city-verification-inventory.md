@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 73.
-- Classifier-passed (published, not fully documented in that format): 119.
+- Source-verified (complete dated evidence format): 74.
+- Classifier-passed (published, not fully documented in that format): 118.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -155,7 +155,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Dar es Salaam, Tanzania | dar-es-salaam | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Davao, Philippines | davao | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Dead Sea, Jordan | dead-sea | held-back | not-reviewed | 0 | 4 | 15 | 2 | has 4 named places across 2 categories; needs at least 5 named places across 3 categories |
-| Delhi, India | delhi | classifier-passed | not-reviewed | 0 | 9 | 15 | 5 | None |
+| Delhi, India | delhi | source-verified | source-checked | 25 | 34 | 15 | 13 | None |
 | Denarau Island, Fiji | denarau-island | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Denver, United States | denver | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Diani Beach, Kenya | diani-beach | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
