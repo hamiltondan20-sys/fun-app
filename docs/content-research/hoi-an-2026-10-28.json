@@ -1,0 +1,575 @@
+{
+  "city": "Hoi An, Vietnam",
+  "checkedOn": "2026-10-28",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Hoi An Museum of History and Culture",
+      "kind": "museum",
+      "url": "https://hoianheritage.net/baotang/Lich-su-Van-hoa/BAO-TANG-LICH-SU-VAN-HOA-33.html",
+      "sourceType": "official public operator (Hội An World Cultural Heritage Conservation Center)",
+      "address": "\"nằm tại số 10B Trần Hưng Đạo\"; centre contact: \"10b Trần Hưng Đạo, Hội An, Thành phố Đà Nẵng, Việt Nam\"",
+      "operatingEvidence": "Listed in the centre's museum section on a site carrying 2026 news (page dated \"28/10/2026\"). The centre's older page says \"Bảo tàng mở cửa tất cả các ngày trong tuần\" but \"riêng ngày 25 hàng tháng đóng cửa\".",
+      "hours": "Open every day except the 25th of each month (https://www.hoianworldheritage.org.vn/vi/news/Bao-tang/Bao-tang-lich-su-van-hoa-Hoi-An-347.hwh, 2011 page); times not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Museum of Trade Ceramics",
+      "kind": "museum",
+      "url": "https://hoianheritage.net/baotang/Gom-su-mau-dich/BAO-TANG-GOM-SU-MAU-DICH-36.html",
+      "sourceType": "official public operator (Hội An World Cultural Heritage Conservation Center)",
+      "address": "\"Số 80 đường Trần Phú - TP Hội An - Quảng Nam\"",
+      "operatingEvidence": "Museum page in the centre's current museum section (site shows 2026 news) gives visitor rules including \"Có vé tham quan\" (ticket required).",
+      "hours": "\"mở cửa từ 7h00 đến 21h00 tất cả các ngày trong tuần\"; \"Riêng ngày 15 hàng tháng Bảo tàng đóng cửa\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Sa Huynh Culture Museum",
+      "kind": "museum",
+      "url": "https://hoianheritage.net/baotang/Van-hoa-Sa-Huynh/BAO-TANG-VAN-HOA-SA-HUYNH-O-HOI-AN-35.html",
+      "sourceType": "official public operator (Hội An World Cultural Heritage Conservation Center)",
+      "address": "\"Số 149 đường Trần Phú – TP Hội An – Quảng Nam\"",
+      "operatingEvidence": "Museum page in the centre's current museum section (site shows 2026 news) lists visitor rules including \"Có vé tham quan\".",
+      "hours": "\"mở cửa từ 7h00 đến 21h00 tất cả các ngày trong tuần\"; \"Riêng ngày 10 hàng tháng Bảo tàng đóng cửa\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Museum of Folk Culture",
+      "kind": "museum",
+      "url": "https://www.hoianworldheritage.org.vn/vi/news/Bao-tang/Bao-tang-Van-hoa-dan-gian-326.hwh",
+      "sourceType": "official public operator (Hội An World Heritage Conservation Centre)",
+      "address": "\"nằm tại số 33 Nguyễn Thái Học\"",
+      "operatingEvidence": "Listed in the centre's current museum menu on hoianheritage.net (site shows 2026 news); the page with address and hours is dated 2011.",
+      "hours": "\"mở cửa tất cả các ngày trong tuần\", \"ngày 20 hàng tháng đóng cửa\"; times not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Japanese Covered Bridge (Chùa Cầu)",
+      "kind": "landmark",
+      "url": "https://www.hoianworldheritage.org.vn/vi/news/Diem-di-tich/Chua-Cau-8.hwh",
+      "sourceType": "official public operator (Hội An World Heritage Conservation Centre)",
+      "address": "\"Nằm ở đoạn tiếp giáp đường Nguyễn Thị Minh Khai và Trần Phú\"",
+      "operatingEvidence": "Listed among the centre's sights on its current site, which carries 2026 notices (e.g. Thanh Ha festival, 20/08/2026). Page notes \"Chùa Cầu đã trải qua ít nhất sáu lần trùng tu\".",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Tra Que Vegetable Village",
+      "kind": "scenic",
+      "url": "https://www.hoianworldheritage.org.vn/vi/news/Lang-nghe/diem-tham-quan-lang-rau-tra-que-1902.hwh",
+      "sourceType": "official public operator (Hội An World Heritage Conservation Centre)",
+      "address": "\"Làng rau Trà Quế thuộc xã Cẩm Hà, thành phố Hội An, cách trung tâm Khu phố cổ Hội An khoảng 2,5 km về phía Bắc\"",
+      "operatingEvidence": "Centre page (2020) invites \"Mua vé tham quan để góp phần bảo tồn làng nghề truyền thống!\" and lists \"Trải nghiệm làm nông dân trồng rau\"; Red Bean Hoi An's current cooking class page includes \"a visit to Tra Que herb village\".",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Thanh Ha Pottery Village",
+      "kind": "scenic",
+      "url": "https://www.hoianworldheritage.org.vn/vi/news/Le-hoi-su-kien/thong-tin-le-hoi-gio-to-nghe-gom-thanh-ha-2026-3058.hwh",
+      "sourceType": "official public operator (Hội An World Heritage Conservation Centre)",
+      "address": "\"Tổ dân phố Nam Diêu, phường Hội An Tây, thành phố Đà Nẵng\"",
+      "operatingEvidence": "Notice dated 20/08/2026 for the village's pottery ancestor festival \"Trong 2 ngày 21 & 22/8/2026\"; the centre's village page asks visitors to buy a visit ticket.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Hoi An Memories Land",
+      "kind": "landmark",
+      "url": "https://hoianmemoriesland.com/",
+      "sourceType": "operator's own site",
+      "address": "\"88 Trần Quang Khải, phường Hội An Đông, Thành phố Đà Nẵng\"",
+      "operatingEvidence": "Online ticketing via booking.hoianmemoriesland.com and a banner: \"Show biểu diễn kể cả trời mưa - Miễn phí áo mưa\" (show runs in rain, free raincoat).",
+      "hours": "not published (schedule section not readable)",
+      "confidence": "medium"
+    },
+    {
+      "name": "VinWonders Nam Hoi An",
+      "kind": "landmark",
+      "url": "https://vinwonders.com/en/vinwonders-nam-hoi-an/",
+      "sourceType": "operator's own site",
+      "address": "\"đường Võ Chí Công, Bình Minh, Thăng Bình, Quảng Nam\" (contact page)",
+      "operatingEvidence": "Operational notice dated 19/10/2026, online ticket booking, and current offers such as \"Flash Sale – 15% VinWonders Combo Tickets\".",
+      "hours": "\"Monday – Friday: 9:00 AM – 6:00 PM\"; \"Saturday – Sunday: 9:00 AM – 7:00 PM\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Reaching Out Teahouse",
+      "kind": "cafe",
+      "url": "https://www.reachingoutvietnam.com/teahouse/location/",
+      "sourceType": "operator's own site",
+      "address": "\"131 Tran Phu Street, Hoi An, Quang nam 560000, Vietnam\"",
+      "operatingEvidence": "Current menu with prices (e.g. \"Vietnamese Tea Tasting Set\" 155,000 VND), footer \"© 2026 Reaching Out Vietnam\"; describes a space that \"invites quiet contemplation\" and a children's quiet play room.",
+      "hours": "\"Daily: 8:00 am – 8:00 pm\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Reaching Out Arts & Crafts",
+      "kind": "landmark",
+      "url": "https://www.reachingoutvietnam.com/art-craft-shop/location/",
+      "sourceType": "operator's own site",
+      "address": "\"131 Tran Phu Street, Hoi An, Quang nam 560000, Vietnam\"",
+      "operatingEvidence": "Published daily hours and a Tours & Workshops section; site footer \"© 2026 Reaching Out Vietnam\".",
+      "hours": "\"Daily: 8 am – 6:30 pm\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Hoi An Roastery (135 Tran Phu)",
+      "kind": "cafe",
+      "url": "https://www.hoianroastery.com/",
+      "sourceType": "operator's own site",
+      "address": "\"135 Tran Phu, Minh An, Hoi An\"",
+      "operatingEvidence": "Published daily hours and a current menu, including a \"Homemade buttery croissant\" (Ham & Cheese Croissant, 79,000 ₫); footer \"© 2026 Hoi An Roastery\".",
+      "hours": "\"Open 07:00–21:00 daily\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Hoi An Roastery (84 Tran Cao Van)",
+      "kind": "cafe",
+      "url": "https://www.hoianroastery.com/",
+      "sourceType": "operator's own site",
+      "address": "\"84 Tran Cao Van, Cam Pho, Hoi An\"",
+      "operatingEvidence": "Listed as \"Hoi An Roastery 3\" on the operator's site, footer \"© 2026 Hoi An Roastery\".",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Little Faifo",
+      "kind": "meal",
+      "url": "https://lhaghotels.com/dining/littlefaifo/",
+      "sourceType": "operator's own site (Little Hoi An Group)",
+      "address": "\"66 Nguyen Thai Hoc Street, Hoi An, Danang\"",
+      "operatingEvidence": "\"Book table\" booking page and menu of \"100+ dishes\"; footer \"Copyright © 2026 · Little Faifo\".",
+      "hours": "\"Daily Open: 11:00 AM - 22:00 PM\", \"Last Order: 21:30 PM\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Secret Garden",
+      "kind": "meal",
+      "url": "https://www.secretgardenhoian.com/",
+      "sourceType": "operator's own site",
+      "address": "\"132/2 Trần Phu Str., Minh An ward, Hoi An city\"; \"At the end of the alley next to the house No.132 Tran Phu street\"",
+      "operatingEvidence": "\"Make a reservation\" form (\"Your booking will be confirmed shortly\"), lunch, dinner and wine menus and cooking-class programmes; no dated 2026 content.",
+      "hours": "\"Mon - Sun | From 8 AM to 11:00 PM\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mango Mango",
+      "kind": "meal",
+      "url": "https://www.mangomangohoian.com/",
+      "sourceType": "operator's own site",
+      "address": "45 Nguyễn Phúc Chu (as listed on the site)",
+      "operatingEvidence": "Hours notice and bookings page (mangomangohoian.com/bookings); footer dated 2023.",
+      "hours": "Open daily 8:00am to 11:00pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mai Fish",
+      "kind": "meal",
+      "url": "https://www.mangomangohoian.com/",
+      "sourceType": "operator's own site (Mango Hoi An)",
+      "address": "45 Nguyễn Thị Minh Khai (as listed on the site)",
+      "operatingEvidence": "Hours notice and bookings page on the group site; footer dated 2023.",
+      "hours": "Open daily 8:00am to 10:00pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mango Rooms",
+      "kind": "meal",
+      "url": "https://www.mangomangohoian.com/",
+      "sourceType": "operator's own site (Mango Hoi An)",
+      "address": "37 Phan Bội Châu (as listed on the site)",
+      "operatingEvidence": "Hours notice, menu link and bookings page on the group site; footer dated 2023.",
+      "hours": "Open daily 8:00am to 11:00pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Temple Restaurant & Lounge",
+      "kind": "meal",
+      "url": "https://thetemplerestaurant.com/",
+      "sourceType": "operator's own site (La Siesta Hoi An Resort & Spa)",
+      "address": "\"No. 132 Hung Vuong, Block 7, Hoi An Tay Ward, Da Nang City, Vietnam\"",
+      "operatingEvidence": "\"Book a table\" form and 2026 set menus: Christmas Eve 24 December 2026 at \"VND1,990,000/Set/Person\" and New Year's Eve 31 December 2026 at VND2,490,000.",
+      "hours": "Breakfast 06:30–10:00; lunch and dinner \"11:30-22:00\" (last orders 21:45); bar 11:00–midnight; happy hour 16:00–17:30 and 20:30–22:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Red Bean Hoi An Restaurant",
+      "kind": "meal",
+      "url": "https://hoian.redbeanrestaurants.com/",
+      "sourceType": "operator's own site (La Siesta Hoi An Resort & Spa)",
+      "address": "\"No. 132 Hung Vuong, Block 7, Hoi An Tay Ward, Da Nang City, Vietnam\"",
+      "operatingEvidence": "\"Christmas BBQ Buffet\" on \"December 24th, 2026 | VND1,790,000/Set/Person\"; Tuesday \"STREETFOOD BUFFET\" 18:00–21:00 at 450,000đ \"Accompanied by a live traditional music performance\"; cooking classes from VND 625,000 (Class 1, 09:00–14:00, VND 785,000, includes Tra Que herb village).",
+      "hours": "Breakfast \"06:30-10:00\"; \"From 11:30am to 10:00pm\" (last orders 21:45)",
+      "confidence": "high"
+    },
+    {
+      "name": "Infinity Bar",
+      "kind": "bar",
+      "url": "https://lasiestaresorts.com/wine-dine/infinity-bar",
+      "sourceType": "operator's own site (La Siesta Hoi An Resort & Spa)",
+      "address": "\"132 Hùng Vương, Thanh Hà, Hội An, Vietnam\"",
+      "operatingEvidence": "Bar page with hours and happy hour; the resort site carries offers \"Valid for stays until 18 December 2026\".",
+      "hours": "\"Open daily 11:00- 18:00\"; \"Happy Hour drinks: 15:30 -17:00\"",
+      "confidence": "high"
+    },
+    {
+      "name": "La Siesta Coffee",
+      "kind": "cafe",
+      "url": "https://lasiestaresorts.com/wine-dine/la-siesta-coffee",
+      "sourceType": "operator's own site (La Siesta Hoi An Resort & Spa)",
+      "address": "\"132 Hùng Vương, Thanh Hà, Hội An, Vietnam\" (front side of the resort's ground floor)",
+      "operatingEvidence": "Outlet page with all-day hours and menu link (\"wholesome nourish bowls, clean wood-fired pizzas, and rich artisan coffee\"); resort site carries 2026 offers.",
+      "hours": "\"06:30 – 22:00\" daily, last orders 21:45",
+      "confidence": "high"
+    },
+    {
+      "name": "L'Annam Restaurant",
+      "kind": "meal",
+      "url": "https://www.victoriahotels.asia/en/victoria-hoi-an-beach-resort/",
+      "sourceType": "operator's own site (Victoria Hotels & Resorts)",
+      "address": "\"Cua Dai Beach, Au Co Street, Hoi An Dong Ward, Da Nang City, Viet Nam\"",
+      "operatingEvidence": "Operator article dated \"29 January 2026\"; resort offers such as \"Hoi An Christmas Brunch 2026\". Operator group article (2023) calls its croissants a best-selling breakfast item.",
+      "hours": "6:00 AM - 10:00 PM",
+      "confidence": "high"
+    },
+    {
+      "name": "Faifo Bar",
+      "kind": "bar",
+      "url": "https://www.victoriahotels.asia/en/victoria-hoi-an-beach-resort/",
+      "sourceType": "operator's own site (Victoria Hotels & Resorts)",
+      "address": "\"Cua Dai Beach, Au Co Street, Hoi An Dong Ward, Da Nang City, Viet Nam\"",
+      "operatingEvidence": "\"Relax at Faifo Bar with a refreshing drink and panoramic views across the sea\"; resort offers valid to 31 December 2026.",
+      "hours": "06:00 AM - 10:00 PM",
+      "confidence": "high"
+    },
+    {
+      "name": "Elephant Bar",
+      "kind": "bar",
+      "url": "https://www.victoriahotels.asia/en/victoria-hoi-an-beach-resort/",
+      "sourceType": "operator's own site (Victoria Hotels & Resorts)",
+      "address": "\"Cua Dai Beach, Au Co Street, Hoi An Dong Ward, Da Nang City, Viet Nam\"",
+      "operatingEvidence": "\"Unwind at Elephant Bar with drinks, games and a relaxed social atmosphere\"; resort offers valid to 31 December 2026.",
+      "hours": "06:00 AM - 10:00 PM",
+      "confidence": "high"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Old Town",
+      "reason": "area, not a single place; covered through individual museums and the Japanese Covered Bridge",
+      "url": ""
+    },
+    {
+      "name": "An Bang Beach",
+      "reason": "official page (2013) gives only a relative location (about 4 km north of the Ancient Town), no exact location or current evidence",
+      "url": "https://hoianheritage.net/vi/di-san-van-hoa/Danh-thang/Bai-tam-An-Bang-137.html"
+    },
+    {
+      "name": "Lantern evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Tailoring appointment",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Tra Que cooking class",
+      "reason": "generic, not a place (a Tra Que class is covered under Red Bean Hoi An Restaurant)",
+      "url": ""
+    },
+    {
+      "name": "cao lau and banh mi",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "All other input entries (e.g. \"Hoi An market or cafe\", \"A local dinner in Old Town\", \"Cam Pho morning market\", \"Coffee near Old Town\", \"Sunset drinks near Old Town\", \"Private guide for Old Town\")",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning Glory / Cargo Club / Vy's Market (Ms Vy)",
+      "reason": "site refused automated reading (HTTP 403); Cargo Club page 404",
+      "url": "https://msvy-tastevietnam.com/"
+    },
+    {
+      "name": "Four Seasons Resort The Nam Hai",
+      "reason": "site refused automated reading (HTTP 403)",
+      "url": "https://www.fourseasons.com/hoian/dining/"
+    },
+    {
+      "name": "Anantara Hoi An Resort",
+      "reason": "site refused automated reading (HTTP 403)",
+      "url": "https://www.anantara.com/en/hoi-an"
+    },
+    {
+      "name": "Hotel Royal Hoi An",
+      "reason": "domain did not resolve (DNS failure)",
+      "url": "https://www.hotelroyalhoian.com/"
+    },
+    {
+      "name": "Cocobox",
+      "reason": "domain did not resolve (DNS failure)",
+      "url": "https://www.cocobox.vn/"
+    },
+    {
+      "name": "Dingo Deli",
+      "reason": "redirect target domain did not resolve (DNS failure)",
+      "url": "https://dingodelihoian.com/"
+    },
+    {
+      "name": "Bánh Mì Phượng",
+      "reason": "no official website found; guessed domain did not resolve",
+      "url": "https://banhmiphuong.vn/"
+    },
+    {
+      "name": "Madam Khanh – The Banh Mi Queen",
+      "reason": "no official website found (only third-party listings)",
+      "url": ""
+    },
+    {
+      "name": "Phi Banh Mi",
+      "reason": "no official website found (only third-party listings)",
+      "url": ""
+    },
+    {
+      "name": "Precious Heritage Museum",
+      "reason": "no official website located; only third-party sources",
+      "url": ""
+    },
+    {
+      "name": "Market Bar / Soul Kitchen / Shore Club / Deck House An Bang",
+      "reason": "no official websites found in search; only blogs and aggregators",
+      "url": ""
+    },
+    {
+      "name": "Lune Center Hoi An (Teh Dar)",
+      "reason": "operator page lists Teh Dar \"From Date 29/10/2026\" but publishes no venue address",
+      "url": "https://www.luneproduction.com/teh-dar"
+    },
+    {
+      "name": "Yaly Couture (47 Tran Phu)",
+      "reason": "address published but no hours, booking notice or 2026 content (latest \"FASHION SHOW 2025\")",
+      "url": "https://www.yalycouture.com/en/about-us/store-location"
+    },
+    {
+      "name": "BeBe Tailor",
+      "reason": "addresses published but no hours or current content (footer \"Copyright © 2020\")",
+      "url": "https://www.bebetailor.com/"
+    },
+    {
+      "name": "Almanity Hoi An (Four Plates)",
+      "reason": "address published but no outlet hours or dated content",
+      "url": "https://www.almanityhoian.com/en/"
+    },
+    {
+      "name": "Red Bridge Cooking School / Hai Cafe",
+      "reason": "no street address or hours; newest dated items from 2022",
+      "url": "https://visithoian.com/"
+    },
+    {
+      "name": "Tra Que Water Wheel",
+      "reason": "no street address; latest content 2021–2022",
+      "url": "https://www.traquewaterwheel.com/"
+    },
+    {
+      "name": "Jack Tran Tours",
+      "reason": "redirect loop between https and http; no readable content",
+      "url": "https://www.jacktrantours.com/"
+    },
+    {
+      "name": "Grain cooking school",
+      "reason": "official site lists only a Bangkok address; no Hoi An details",
+      "url": "https://www.grainvietnam.com/"
+    },
+    {
+      "name": "The Espresso Station",
+      "reason": "guessed official URL returned HTTP 404",
+      "url": "https://www.theespressostation.com/"
+    },
+    {
+      "name": "Bay Mau Coconut Forest",
+      "reason": "official page (2022) gives only the commune office address, no exact location or hours",
+      "url": "https://www.hoianworldheritage.org.vn/vi/news/Tours-du-lich/khu-di-tich-lich-su-van-hoa-rung-dua-bay-mau-cam-thanh-hoi-an-2101.hwh"
+    },
+    {
+      "name": "Kim Bong Carpentry Village",
+      "reason": "official page (2011) gives only commune-level location, no current evidence",
+      "url": "https://www.hoianworldheritage.org.vn/vi/news/Lang-nghe/Lang-moc-Kim-Bong-91.hwh"
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Japanese Covered Bridge (Chùa Cầu)",
+        "Museum of Trade Ceramics",
+        "Thanh Ha Pottery Village",
+        "Hoi An Memories Land"
+      ],
+      "bestFirstTimers": [
+        "Japanese Covered Bridge (Chùa Cầu)",
+        "Hoi An Museum of History and Culture",
+        "Reaching Out Teahouse",
+        "Little Faifo"
+      ],
+      "bestRestaurants": [
+        "Little Faifo",
+        "Secret Garden",
+        "Mango Rooms",
+        "The Temple Restaurant & Lounge"
+      ],
+      "bestBudget": [
+        "Reaching Out Teahouse",
+        "Hoi An Roastery (135 Tran Phu)",
+        "Tra Que Vegetable Village"
+      ],
+      "bestLuxury": [
+        "The Temple Restaurant & Lounge",
+        "L'Annam Restaurant",
+        "Infinity Bar",
+        "Faifo Bar"
+      ],
+      "bestCouples": [
+        "Secret Garden",
+        "Faifo Bar",
+        "Mango Rooms",
+        "Hoi An Memories Land"
+      ],
+      "bestKids": [
+        "VinWonders Nam Hoi An",
+        "Hoi An Memories Land",
+        "Tra Que Vegetable Village",
+        "Reaching Out Teahouse"
+      ],
+      "bestSolo": [
+        "Reaching Out Teahouse",
+        "Museum of Folk Culture",
+        "Hoi An Roastery (84 Tran Cao Van)",
+        "Reaching Out Arts & Crafts"
+      ],
+      "bestUnique": [
+        "Thanh Ha Pottery Village",
+        "Red Bean Hoi An Restaurant",
+        "Reaching Out Arts & Crafts",
+        "Sa Huynh Culture Museum"
+      ],
+      "bestBreakfast": [
+        "La Siesta Coffee",
+        "L'Annam Restaurant",
+        "The Temple Restaurant & Lounge",
+        "Hoi An Roastery (135 Tran Phu)"
+      ],
+      "bestLunch": [
+        "Mango Mango",
+        "Mai Fish",
+        "Little Faifo",
+        "Secret Garden"
+      ],
+      "bestDinner": [
+        "Red Bean Hoi An Restaurant",
+        "Little Faifo",
+        "Mango Rooms",
+        "L'Annam Restaurant"
+      ],
+      "bestCocktails": [
+        "The Temple Restaurant & Lounge",
+        "Faifo Bar",
+        "Elephant Bar",
+        "Infinity Bar"
+      ],
+      "bestBakeries": [
+        "Hoi An Roastery (135 Tran Phu)",
+        "L'Annam Restaurant"
+      ],
+      "bestCoffee": [
+        "Hoi An Roastery (135 Tran Phu)",
+        "Hoi An Roastery (84 Tran Cao Van)",
+        "Reaching Out Teahouse",
+        "La Siesta Coffee"
+      ]
+    },
+    "queries": {
+      "Hoi An Museum of History and Culture": "Hoi An Museum of History and Culture 10B Tran Hung Dao Hoi An",
+      "Museum of Trade Ceramics": "Museum of Trade Ceramics 80 Tran Phu Hoi An",
+      "Sa Huynh Culture Museum": "Sa Huynh Culture Museum 149 Tran Phu Hoi An",
+      "Museum of Folk Culture": "Museum of Folk Culture 33 Nguyen Thai Hoc Hoi An",
+      "Japanese Covered Bridge (Chùa Cầu)": "Chua Cau Japanese Covered Bridge Tran Phu Nguyen Thi Minh Khai Hoi An",
+      "Tra Que Vegetable Village": "Tra Que Vegetable Village Cam Ha Hoi An",
+      "Thanh Ha Pottery Village": "Thanh Ha Pottery Village Nam Dieu Hoi An",
+      "Hoi An Memories Land": "Hoi An Memories Land 88 Tran Quang Khai Hoi An",
+      "VinWonders Nam Hoi An": "VinWonders Nam Hoi An Vo Chi Cong Thang Binh",
+      "Reaching Out Teahouse": "Reaching Out Teahouse 131 Tran Phu Hoi An",
+      "Reaching Out Arts & Crafts": "Reaching Out Arts & Crafts 131 Tran Phu Hoi An",
+      "Hoi An Roastery (135 Tran Phu)": "Hoi An Roastery 135 Tran Phu Hoi An",
+      "Hoi An Roastery (84 Tran Cao Van)": "Hoi An Roastery 84 Tran Cao Van Hoi An",
+      "Little Faifo": "Little Faifo 66 Nguyen Thai Hoc Hoi An",
+      "Secret Garden": "Secret Garden 132/2 Tran Phu Hoi An",
+      "Mango Mango": "Mango Mango 45 Nguyen Phuc Chu Hoi An",
+      "Mai Fish": "Mai Fish 45 Nguyen Thi Minh Khai Hoi An",
+      "Mango Rooms": "Mango Rooms 37 Phan Boi Chau Hoi An",
+      "The Temple Restaurant & Lounge": "The Temple Restaurant & Lounge 132 Hung Vuong Hoi An",
+      "Red Bean Hoi An Restaurant": "Red Bean Hoi An Restaurant 132 Hung Vuong Hoi An",
+      "Infinity Bar": "Infinity Bar La Siesta 132 Hung Vuong Hoi An",
+      "La Siesta Coffee": "La Siesta Coffee 132 Hung Vuong Hoi An",
+      "L'Annam Restaurant": "L'Annam Restaurant Victoria Hoi An Au Co Cua Dai Hoi An",
+      "Faifo Bar": "Faifo Bar Victoria Hoi An Au Co Cua Dai Hoi An",
+      "Elephant Bar": "Elephant Bar Victoria Hoi An Au Co Cua Dai Hoi An"
+    },
+    "summary": "Heritage museums, the Japanese Covered Bridge and craft villages, with breakfast cafés, dinners and resort bars checked against their own websites or Hoi An's heritage conservation centre.",
+    "highlights": [
+      "Japanese Covered Bridge (Chùa Cầu)",
+      "Museum of Trade Ceramics",
+      "Sa Huynh Culture Museum",
+      "Thanh Ha Pottery Village"
+    ],
+    "tip": "The heritage centre's older museum pages list one closing day a month for each public museum (the 10th at Sa Huynh, the 15th at Trade Ceramics, the 20th at Folk Culture and the 25th at History and Culture), so confirm the current schedule before planning a museum morning.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Monthly museum closures",
+        "copy": "The heritage centre's older museum pages list a monthly closing day for each museum: the 10th at Sa Huynh Culture Museum, the 15th at the Museum of Trade Ceramics, the 20th at the Museum of Folk Culture and the 25th at the Hoi An Museum of History and Culture. Confirm these with the centre before you go."
+      },
+      {
+        "label": "Tickets",
+        "value": "Heritage ticket required",
+        "copy": "The Museum of Trade Ceramics and Sa Huynh Culture Museum list a visit ticket among their rules, and the heritage centre asks you to buy a ticket for Tra Que Vegetable Village and Thanh Ha Pottery Village. Prices are not published on these pages."
+      },
+      {
+        "label": "Booking",
+        "value": "Online forms and set times",
+        "copy": "Little Faifo, Secret Garden and The Temple Restaurant & Lounge take table bookings through their own sites. Red Bean Hoi An's cooking classes take 2 to 10 guests, and its street-food buffet runs on Tuesdays only, 18:00 to 21:00."
+      },
+      {
+        "label": "Rules",
+        "value": "Height-based tickets, rain-proof show",
+        "copy": "VinWonders Nam Hoi An prices adults from 140 cm in height, with child categories below that. Hoi An Memories Land says its show goes ahead in the rain and hands out free raincoats."
+      }
+    ],
+    "dek": "Confirm museum closing days with the heritage centre before you plan, and book dinners at Little Faifo or The Temple ahead through their own forms.",
+    "intro": [
+      "Hoi An's public museums are run by the Hội An World Cultural Heritage Conservation Center, whose office shares 10B Tran Hung Dao with the Hoi An Museum of History and Culture. On Tran Phu, the Museum of Trade Ceramics at No. 80 and the Sa Huynh Culture Museum at No. 149 both say you need a visit ticket. The centre's older museum pages give hours of 7:00 to 21:00 and one closing day a month for each museum, the 10th at Sa Huynh, the 15th at Trade Ceramics, the 20th at Folk Culture and the 25th at History and Culture, so check the current schedule with the centre. The Japanese Covered Bridge stands where Nguyen Thi Minh Khai meets Tran Phu.",
+      "Beyond the old streets, the centre asks you to buy a visit ticket for Tra Que Vegetable Village, about 2.5 km north of the Ancient Town, and Thanh Ha Pottery Village in the Nam Dieu area. Red Bean Hoi An Restaurant runs a 09:00 to 14:00 cooking class that visits Tra Que and a local market for VND 785,000 per person; shorter market classes cost VND 625,000, for 2 to 10 guests. Hoi An Memories Land at 88 Tran Quang Khai says its show goes ahead in the rain, with free raincoats. VinWonders Nam Hoi An in Thang Binh opens 9:00 to 18:00 on weekdays, 19:00 at weekends.",
+      "For a slower morning, Reaching Out Teahouse at 131 Tran Phu opens from 8:00 to 20:00 daily and describes a space that invites quiet contemplation; its Vietnamese tea tasting set costs 155,000 VND. Hoi An Roastery's main branch at 135 Tran Phu opens 07:00 to 21:00 daily and lists a homemade buttery croissant, and a third branch sits at 84 Tran Cao Van in Cam Pho. At La Siesta Hoi An Resort, 132 Hung Vuong, La Siesta Coffee serves from 06:30. For lunch, Mango Mango at 45 Nguyen Phuc Chu and Mai Fish at 45 Nguyen Thi Minh Khai both open daily from 8:00.",
+      "Little Faifo at 66 Nguyen Thai Hoc serves from 11:00 to 22:00, with last orders at 21:30, and you can book a table online. Secret Garden, at the end of the alley beside 132 Tran Phu, opens from 8:00 to 23:00 and has its own reservation form. On Tuesdays, Red Bean Hoi An holds a street-food buffet from 18:00 to 21:00 at VND 450,000 with live traditional music. The Temple Restaurant & Lounge keeps its bar open from 11:00 to midnight. By Cua Dai Beach, Victoria Hoi An's L'Annam Restaurant and sea-view Faifo Bar open from 06:00 to 22:00."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Start at the Japanese Covered Bridge, then walk to the Museum of Trade Ceramics at 80 Tran Phu, after checking its current hours with the heritage centre."
+      ],
+      [
+        "A slower morning",
+        "Take tea at Reaching Out Teahouse from 8:00 or coffee at Hoi An Roastery on Tran Phu from 07:00, then browse Reaching Out Arts & Crafts next door."
+      ],
+      [
+        "Before booking",
+        "Confirm the museums' monthly closing days with the heritage centre, and note that Red Bean's street-food buffet runs on Tuesdays only."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Museum hours and monthly closing days come from the heritage conservation centre's own pages, which date from 2011 to 2015; the Museum of Folk Culture and History and Culture museum pages give closing days but no times, and no heritage ticket prices were published on the pages read. Tra Que and Thanh Ha are located only at village level. Hours were not published for Hoi An Memories Land, the Japanese Covered Bridge, Hoi An Roastery (84 Tran Cao Van) or the Tra Que and Thanh Ha villages; the Mango Hoi An and Secret Garden sites carry no 2026-dated content. VinWonders Nam Hoi An posted an operational notice dated 19 October 2026 that could not be read in full, and the park is in Thang Binh, outside Hoi An. The bakery list is thin: no stand-alone Hoi An bakery with a readable official site was found, so it rests on Hoi An Roastery's homemade croissant and a 2023 operator article on L'Annam's breakfast croissants. Sites that could not be read: Ms Vy's group (Morning Glory, Cargo Club) and Four Seasons The Nam Hai and Anantara (HTTP 403), Hotel Royal Hoi An, Cocobox and Dingo Deli (domains did not resolve), and Jack Tran Tours (redirect loop). Lune Center Hoi An published no venue address.",
+  "injectionLikeText": []
+}

@@ -5,6 +5,927 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Hoi An, Vietnam": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-28",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Museum hours and monthly closing days come from the heritage conservation centre's own pages, which date from 2011 to 2015; the Museum of Folk Culture and History and Culture museum pages give closing days but no times, and no heritage ticket prices were published on the pages read. Tra Que and Thanh Ha are located only at village level. Hours were not published for Hoi An Memories Land, the Japanese Covered Bridge, Hoi An Roastery (84 Tran Cao Van) or the Tra Que and Thanh Ha villages; the Mango Hoi An and Secret Garden sites carry no 2026-dated content. VinWonders Nam Hoi An posted an operational notice dated 19 October 2026 that could not be read in full, and the park is in Thang Binh, outside Hoi An. The bakery list is thin: no stand-alone Hoi An bakery with a readable official site was found, so it rests on Hoi An Roastery's homemade croissant and a 2023 operator article on L'Annam's breakfast croissants. Sites that could not be read: Ms Vy's group (Morning Glory, Cargo Club) and Four Seasons The Nam Hai and Anantara (HTTP 403), Hotel Royal Hoi An, Cocobox and Dingo Deli (domains did not resolve), and Jack Tran Tours (redirect loop). Lune Center Hoi An published no venue address.",
+    "sourceUrls": [
+      "docs/content-research/hoi-an-2026-10-28.md",
+      "docs/content-research/hoi-an-2026-10-28.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Old Town",
+        "checkedOn": "2026-10-28",
+        "reason": "area, not a single place; covered through individual museums and the Japanese Covered Bridge"
+      },
+      {
+        "name": "An Bang Beach",
+        "url": "https://hoianheritage.net/vi/di-san-van-hoa/Danh-thang/Bai-tam-An-Bang-137.html",
+        "checkedOn": "2026-10-28",
+        "reason": "official page (2013) gives only a relative location (about 4 km north of the Ancient Town), no exact location or current evidence"
+      },
+      {
+        "name": "Lantern evening",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Tailoring appointment",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Tra Que cooking class",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place (a Tra Que class is covered under Red Bean Hoi An Restaurant)"
+      },
+      {
+        "name": "cao lau and banh mi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "All other input entries (e.g. \"Hoi An market or cafe\", \"A local dinner in Old Town\", \"Cam Pho morning market\", \"Coffee near Old Town\", \"Sunset drinks near Old Town\", \"Private guide for Old Town\")",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning Glory / Cargo Club / Vy's Market (Ms Vy)",
+        "url": "https://msvy-tastevietnam.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "site refused automated reading (HTTP 403); Cargo Club page 404"
+      },
+      {
+        "name": "Four Seasons Resort The Nam Hai",
+        "url": "https://www.fourseasons.com/hoian/dining/",
+        "checkedOn": "2026-10-28",
+        "reason": "site refused automated reading (HTTP 403)"
+      },
+      {
+        "name": "Anantara Hoi An Resort",
+        "url": "https://www.anantara.com/en/hoi-an",
+        "checkedOn": "2026-10-28",
+        "reason": "site refused automated reading (HTTP 403)"
+      },
+      {
+        "name": "Hotel Royal Hoi An",
+        "url": "https://www.hotelroyalhoian.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "domain did not resolve (DNS failure)"
+      },
+      {
+        "name": "Cocobox",
+        "url": "https://www.cocobox.vn/",
+        "checkedOn": "2026-10-28",
+        "reason": "domain did not resolve (DNS failure)"
+      },
+      {
+        "name": "Dingo Deli",
+        "url": "https://dingodelihoian.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "redirect target domain did not resolve (DNS failure)"
+      },
+      {
+        "name": "Bánh Mì Phượng",
+        "url": "https://banhmiphuong.vn/",
+        "checkedOn": "2026-10-28",
+        "reason": "no official website found; guessed domain did not resolve"
+      },
+      {
+        "name": "Madam Khanh – The Banh Mi Queen",
+        "checkedOn": "2026-10-28",
+        "reason": "no official website found (only third-party listings)"
+      },
+      {
+        "name": "Phi Banh Mi",
+        "checkedOn": "2026-10-28",
+        "reason": "no official website found (only third-party listings)"
+      },
+      {
+        "name": "Precious Heritage Museum",
+        "checkedOn": "2026-10-28",
+        "reason": "no official website located; only third-party sources"
+      },
+      {
+        "name": "Market Bar / Soul Kitchen / Shore Club / Deck House An Bang",
+        "checkedOn": "2026-10-28",
+        "reason": "no official websites found in search; only blogs and aggregators"
+      },
+      {
+        "name": "Lune Center Hoi An (Teh Dar)",
+        "url": "https://www.luneproduction.com/teh-dar",
+        "checkedOn": "2026-10-28",
+        "reason": "operator page lists Teh Dar \"From Date 29/10/2026\" but publishes no venue address"
+      },
+      {
+        "name": "Yaly Couture (47 Tran Phu)",
+        "url": "https://www.yalycouture.com/en/about-us/store-location",
+        "checkedOn": "2026-10-28",
+        "reason": "address published but no hours, booking notice or 2026 content (latest \"FASHION SHOW 2025\")"
+      },
+      {
+        "name": "BeBe Tailor",
+        "url": "https://www.bebetailor.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "addresses published but no hours or current content (footer \"Copyright © 2020\")"
+      },
+      {
+        "name": "Almanity Hoi An (Four Plates)",
+        "url": "https://www.almanityhoian.com/en/",
+        "checkedOn": "2026-10-28",
+        "reason": "address published but no outlet hours or dated content"
+      },
+      {
+        "name": "Red Bridge Cooking School / Hai Cafe",
+        "url": "https://visithoian.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "no street address or hours; newest dated items from 2022"
+      },
+      {
+        "name": "Tra Que Water Wheel",
+        "url": "https://www.traquewaterwheel.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "no street address; latest content 2021–2022"
+      },
+      {
+        "name": "Jack Tran Tours",
+        "url": "https://www.jacktrantours.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "redirect loop between https and http; no readable content"
+      },
+      {
+        "name": "Grain cooking school",
+        "url": "https://www.grainvietnam.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "official site lists only a Bangkok address; no Hoi An details"
+      },
+      {
+        "name": "The Espresso Station",
+        "url": "https://www.theespressostation.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "guessed official URL returned HTTP 404"
+      },
+      {
+        "name": "Bay Mau Coconut Forest",
+        "url": "https://www.hoianworldheritage.org.vn/vi/news/Tours-du-lich/khu-di-tich-lich-su-van-hoa-rung-dua-bay-mau-cam-thanh-hoi-an-2101.hwh",
+        "checkedOn": "2026-10-28",
+        "reason": "official page (2022) gives only the commune office address, no exact location or hours"
+      },
+      {
+        "name": "Kim Bong Carpentry Village",
+        "url": "https://www.hoianworldheritage.org.vn/vi/news/Lang-nghe/Lang-moc-Kim-Bong-91.hwh",
+        "checkedOn": "2026-10-28",
+        "reason": "official page (2011) gives only commune-level location, no current evidence"
+      }
+    ],
+    "placeSources": {
+      "Hoi An Museum of History and Culture": {
+        "url": "https://hoianheritage.net/baotang/Lich-su-Van-hoa/BAO-TANG-LICH-SU-VAN-HOA-33.html",
+        "sourceType": "official public operator (Hội An World Cultural Heritage Conservation Center)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Listed in the centre's museum section on a site carrying 2026 news (page dated \"28/10/2026\"). The centre's older page says \"Bảo tàng mở cửa tất cả các ngày trong tuần\" but \"riêng ngày 25 hàng tháng đóng cửa\"."
+      },
+      "Museum of Trade Ceramics": {
+        "url": "https://hoianheritage.net/baotang/Gom-su-mau-dich/BAO-TANG-GOM-SU-MAU-DICH-36.html",
+        "sourceType": "official public operator (Hội An World Cultural Heritage Conservation Center)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Museum page in the centre's current museum section (site shows 2026 news) gives visitor rules including \"Có vé tham quan\" (ticket required)."
+      },
+      "Sa Huynh Culture Museum": {
+        "url": "https://hoianheritage.net/baotang/Van-hoa-Sa-Huynh/BAO-TANG-VAN-HOA-SA-HUYNH-O-HOI-AN-35.html",
+        "sourceType": "official public operator (Hội An World Cultural Heritage Conservation Center)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Museum page in the centre's current museum section (site shows 2026 news) lists visitor rules including \"Có vé tham quan\"."
+      },
+      "Museum of Folk Culture": {
+        "url": "https://www.hoianworldheritage.org.vn/vi/news/Bao-tang/Bao-tang-Van-hoa-dan-gian-326.hwh",
+        "sourceType": "official public operator (Hội An World Heritage Conservation Centre)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Listed in the centre's current museum menu on hoianheritage.net (site shows 2026 news); the page with address and hours is dated 2011."
+      },
+      "Japanese Covered Bridge (Chùa Cầu)": {
+        "url": "https://www.hoianworldheritage.org.vn/vi/news/Diem-di-tich/Chua-Cau-8.hwh",
+        "sourceType": "official public operator (Hội An World Heritage Conservation Centre)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Listed among the centre's sights on its current site, which carries 2026 notices (e.g. Thanh Ha festival, 20/08/2026). Page notes \"Chùa Cầu đã trải qua ít nhất sáu lần trùng tu\"."
+      },
+      "Tra Que Vegetable Village": {
+        "url": "https://www.hoianworldheritage.org.vn/vi/news/Lang-nghe/diem-tham-quan-lang-rau-tra-que-1902.hwh",
+        "sourceType": "official public operator (Hội An World Heritage Conservation Centre)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Centre page (2020) invites \"Mua vé tham quan để góp phần bảo tồn làng nghề truyền thống!\" and lists \"Trải nghiệm làm nông dân trồng rau\"; Red Bean Hoi An's current cooking class page includes \"a visit to Tra Que herb village\"."
+      },
+      "Thanh Ha Pottery Village": {
+        "url": "https://www.hoianworldheritage.org.vn/vi/news/Le-hoi-su-kien/thong-tin-le-hoi-gio-to-nghe-gom-thanh-ha-2026-3058.hwh",
+        "sourceType": "official public operator (Hội An World Heritage Conservation Centre)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Notice dated 20/08/2026 for the village's pottery ancestor festival \"Trong 2 ngày 21 & 22/8/2026\"; the centre's village page asks visitors to buy a visit ticket."
+      },
+      "Hoi An Memories Land": {
+        "url": "https://hoianmemoriesland.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Online ticketing via booking.hoianmemoriesland.com and a banner: \"Show biểu diễn kể cả trời mưa - Miễn phí áo mưa\" (show runs in rain, free raincoat)."
+      },
+      "VinWonders Nam Hoi An": {
+        "url": "https://vinwonders.com/en/vinwonders-nam-hoi-an/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Operational notice dated 19/10/2026, online ticket booking, and current offers such as \"Flash Sale – 15% VinWonders Combo Tickets\"."
+      },
+      "Reaching Out Teahouse": {
+        "url": "https://www.reachingoutvietnam.com/teahouse/location/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Current menu with prices (e.g. \"Vietnamese Tea Tasting Set\" 155,000 VND), footer \"© 2026 Reaching Out Vietnam\"; describes a space that \"invites quiet contemplation\" and a children's quiet play room."
+      },
+      "Reaching Out Arts & Crafts": {
+        "url": "https://www.reachingoutvietnam.com/art-craft-shop/location/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Published daily hours and a Tours & Workshops section; site footer \"© 2026 Reaching Out Vietnam\"."
+      },
+      "Hoi An Roastery (135 Tran Phu)": {
+        "url": "https://www.hoianroastery.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Published daily hours and a current menu, including a \"Homemade buttery croissant\" (Ham & Cheese Croissant, 79,000 ₫); footer \"© 2026 Hoi An Roastery\"."
+      },
+      "Hoi An Roastery (84 Tran Cao Van)": {
+        "url": "https://www.hoianroastery.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Listed as \"Hoi An Roastery 3\" on the operator's site, footer \"© 2026 Hoi An Roastery\"."
+      },
+      "Little Faifo": {
+        "url": "https://lhaghotels.com/dining/littlefaifo/",
+        "sourceType": "operator's own site (Little Hoi An Group)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "\"Book table\" booking page and menu of \"100+ dishes\"; footer \"Copyright © 2026 · Little Faifo\"."
+      },
+      "Secret Garden": {
+        "url": "https://www.secretgardenhoian.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "\"Make a reservation\" form (\"Your booking will be confirmed shortly\"), lunch, dinner and wine menus and cooking-class programmes; no dated 2026 content."
+      },
+      "Mango Mango": {
+        "url": "https://www.mangomangohoian.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Hours notice and bookings page (mangomangohoian.com/bookings); footer dated 2023."
+      },
+      "Mai Fish": {
+        "url": "https://www.mangomangohoian.com/",
+        "sourceType": "operator's own site (Mango Hoi An)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Hours notice and bookings page on the group site; footer dated 2023."
+      },
+      "Mango Rooms": {
+        "url": "https://www.mangomangohoian.com/",
+        "sourceType": "operator's own site (Mango Hoi An)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Hours notice, menu link and bookings page on the group site; footer dated 2023."
+      },
+      "The Temple Restaurant & Lounge": {
+        "url": "https://thetemplerestaurant.com/",
+        "sourceType": "operator's own site (La Siesta Hoi An Resort & Spa)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "\"Book a table\" form and 2026 set menus: Christmas Eve 24 December 2026 at \"VND1,990,000/Set/Person\" and New Year's Eve 31 December 2026 at VND2,490,000."
+      },
+      "Red Bean Hoi An Restaurant": {
+        "url": "https://hoian.redbeanrestaurants.com/",
+        "sourceType": "operator's own site (La Siesta Hoi An Resort & Spa)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "\"Christmas BBQ Buffet\" on \"December 24th, 2026 | VND1,790,000/Set/Person\"; Tuesday \"STREETFOOD BUFFET\" 18:00–21:00 at 450,000đ \"Accompanied by a live traditional music performance\"; cooking classes from VND 625,000 (Class 1, 09:00–14:00, VND 785,000, includes Tra Que herb village)."
+      },
+      "Infinity Bar": {
+        "url": "https://lasiestaresorts.com/wine-dine/infinity-bar",
+        "sourceType": "operator's own site (La Siesta Hoi An Resort & Spa)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Bar page with hours and happy hour; the resort site carries offers \"Valid for stays until 18 December 2026\"."
+      },
+      "La Siesta Coffee": {
+        "url": "https://lasiestaresorts.com/wine-dine/la-siesta-coffee",
+        "sourceType": "operator's own site (La Siesta Hoi An Resort & Spa)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Outlet page with all-day hours and menu link (\"wholesome nourish bowls, clean wood-fired pizzas, and rich artisan coffee\"); resort site carries 2026 offers."
+      },
+      "L'Annam Restaurant": {
+        "url": "https://www.victoriahotels.asia/en/victoria-hoi-an-beach-resort/",
+        "sourceType": "operator's own site (Victoria Hotels & Resorts)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Operator article dated \"29 January 2026\"; resort offers such as \"Hoi An Christmas Brunch 2026\". Operator group article (2023) calls its croissants a best-selling breakfast item."
+      },
+      "Faifo Bar": {
+        "url": "https://www.victoriahotels.asia/en/victoria-hoi-an-beach-resort/",
+        "sourceType": "operator's own site (Victoria Hotels & Resorts)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "\"Relax at Faifo Bar with a refreshing drink and panoramic views across the sea\"; resort offers valid to 31 December 2026."
+      },
+      "Elephant Bar": {
+        "url": "https://www.victoriahotels.asia/en/victoria-hoi-an-beach-resort/",
+        "sourceType": "operator's own site (Victoria Hotels & Resorts)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "\"Unwind at Elephant Bar with drinks, games and a relaxed social atmosphere\"; resort offers valid to 31 December 2026."
+      }
+    }
+  },
+  "Jerusalem, Israel": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-28",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability, and many venues change hours around Shabbat and Jewish holidays. Several major sites could not be read by automated fetch and are left out: the Israel Museum (certificate error), Tower of David Museum, Yad Vashem, the Biblical Zoo and the Ramparts Walk (HTTP 403), and the Knesset (blocked by location). Some places were published only partially: the Western Wall has no street address (the Prayer Plaza is the location named); the Begin Heritage Center's hours appear reversed on its page; the Museum on the Seam's English and Hebrew hours conflict; Bloomfield Science Museum, Neeman Bakery branches, the King David Hotel and the Jerusalem Cinematheque publish no weekly hours on the pages read; Caffit (German Colony) omits Thursday and Hasadna omits Sunday and Monday. Gethsemane, the Austrian Hospice, Café Hillel, Friends of Zion Museum and the Hebrew Music Museum showed no 2026-dated content, so they rest on published hours notices.",
+    "sourceUrls": [
+      "docs/content-research/jerusalem-2026-10-28.md",
+      "docs/content-research/jerusalem-2026-10-28.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Old City",
+        "checkedOn": "2026-10-28",
+        "reason": "district rather than a single operated place; sites inside it checked individually"
+      },
+      {
+        "name": "Mount of Olives",
+        "checkedOn": "2026-10-28",
+        "reason": "area rather than a single operated place; covered via Basilica of the Agony (Gethsemane)"
+      },
+      {
+        "name": "a market dinner with Middle Eastern specialties",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Old City local table",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Jerusalem signature dinner",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Old City walk",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Mamilla public viewpoint",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market or picnic near German Colony",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Old City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "an early walk through the Old City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Destination dinner near German Colony",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset around Western Wall",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Old City dinner",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Old City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Mamilla",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near German Colony",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Old City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Old City cafe or market",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Mamilla route",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Mamilla at a quieter hour",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "German Colony local rhythm",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Old City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Mamilla bakery or market",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Old City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "a market lunch with Middle Eastern specialties",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Western Wall",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around German Colony",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Evening table in Old City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Old City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Mamilla",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Mount of Olives",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Old City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Mamilla morning market",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Old City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Old City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Mamilla",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near German Colony",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Israel Museum",
+        "url": "https://www.imj.org.il/en/visit",
+        "checkedOn": "2026-10-28",
+        "reason": "certificate error (\"unable to verify the first certificate\") on www.imj.org.il and imj.org.il; not bypassed"
+      },
+      {
+        "name": "Tower of David Museum",
+        "url": "https://www.tod.org.il/en/",
+        "checkedOn": "2026-10-28",
+        "reason": "HTTP 403 Forbidden on automated fetch"
+      },
+      {
+        "name": "Yad Vashem",
+        "url": "https://www.yadvashem.org/visiting.html",
+        "checkedOn": "2026-10-28",
+        "reason": "HTTP 403 Forbidden on automated fetch"
+      },
+      {
+        "name": "Jerusalem Biblical Zoo",
+        "url": "https://www.jerusalemzoo.org/",
+        "checkedOn": "2026-10-28",
+        "reason": "HTTP 403 Forbidden on automated fetch"
+      },
+      {
+        "name": "Ramparts Walk / Jerusalem Walls National Park",
+        "url": "https://www.parks.org.il/en/reserve-park/jerusalem-walls-national-park/",
+        "checkedOn": "2026-10-28",
+        "reason": "HTTP 403 Forbidden on Israel Nature and Parks Authority page"
+      },
+      {
+        "name": "Knesset",
+        "url": "https://www.knesset.gov.il/visit/eng/",
+        "checkedOn": "2026-10-28",
+        "reason": "site returned \"The site is temporarily inaccessible from your location\""
+      },
+      {
+        "name": "City of David",
+        "url": "https://www.cityofdavid.org.il/en",
+        "checkedOn": "2026-10-28",
+        "reason": "pages read gave ticket prices but no address or opening hours"
+      },
+      {
+        "name": "Mamilla Hotel (Rooftop, Mirror Bar)",
+        "url": "https://www.mamillahotel.com/eat-drink/",
+        "checkedOn": "2026-10-28",
+        "reason": "no street address published (only \"along Mamilla Avenue\"); no venue hours"
+      },
+      {
+        "name": "American Colony Hotel",
+        "url": "https://www.americancolony.com/restaurants-bar",
+        "checkedOn": "2026-10-28",
+        "reason": "pages read contained no address, venue names or hours"
+      },
+      {
+        "name": "The First Station",
+        "url": "https://www.firststation.co.il/en/contact/",
+        "checkedOn": "2026-10-28",
+        "reason": "no street address published on pages read"
+      },
+      {
+        "name": "Hamesila (First Station)",
+        "url": "https://www.firststation.co.il/en/restaurants-shops/hamesila/",
+        "checkedOn": "2026-10-28",
+        "reason": "no street address; published hours garbled (\"Sunday to Thursday 00:00-10:00\")"
+      },
+      {
+        "name": "Vaniglia (First Station)",
+        "url": "https://www.firststation.co.il/en/restaurants-shops/vaniglia/",
+        "checkedOn": "2026-10-28",
+        "reason": "no street address published"
+      },
+      {
+        "name": "Hansen House",
+        "url": "https://www.hansen.co.il/en/",
+        "checkedOn": "2026-10-28",
+        "reason": "official site: \"Hansen House is temporarily closed due to the construction work for the Jerusalem Design Week\" with no reopening date"
+      },
+      {
+        "name": "Ein Yael",
+        "url": "https://www.einyael.co.il/",
+        "checkedOn": "2026-10-28",
+        "reason": "official site: \"המקום סגור עקב המצב הביטחוני\" (closed due to the security situation), no end date; no street address"
+      },
+      {
+        "name": "Garden Tomb",
+        "url": "https://www.gardentomb.org/",
+        "checkedOn": "2026-10-28",
+        "reason": "homepage gave location only (\"just outside the Damascus Gate\") and no hours or current notice; visit pages 404"
+      },
+      {
+        "name": "Tmol Shilshom",
+        "url": "https://www.tmol-shilshom.co.il/",
+        "checkedOn": "2026-10-28",
+        "reason": "no address or hours on page; only menu PDF from 2022"
+      },
+      {
+        "name": "Gatsby",
+        "url": "https://www.gatsby.co.il/",
+        "checkedOn": "2026-10-28",
+        "reason": "official domain redirects to an unrelated site (avatar808mx.com); not followed"
+      },
+      {
+        "name": "Herzl Museum",
+        "url": "https://www.herzl.org.il/",
+        "checkedOn": "2026-10-28",
+        "reason": "herzl.org shows unrelated gambling content; herzl.org.il gives only \"Herzl Boulevard\", no hours or current content"
+      },
+      {
+        "name": "Mahane Yehuda Market",
+        "url": "https://www.machne.co.il/",
+        "checkedOn": "2026-10-28",
+        "reason": "machne.co.il is run by a private tour company (Yalla Basta), not the market operator; no address or hours"
+      },
+      {
+        "name": "Marzipan Bakery",
+        "url": "https://www.marzipan.co.il/",
+        "checkedOn": "2026-10-28",
+        "reason": "certificate hostname mismatch; not bypassed"
+      },
+      {
+        "name": "Lehamim Bakery",
+        "url": "https://www.lehamim.co.il/",
+        "checkedOn": "2026-10-28",
+        "reason": "HTTP 403 Forbidden"
+      },
+      {
+        "name": "Roladin",
+        "url": "https://www.roladin.co.il/",
+        "checkedOn": "2026-10-28",
+        "reason": "HTTP 403 Forbidden"
+      },
+      {
+        "name": "Teller Bakery",
+        "url": "https://www.tellerbakery.co.il/",
+        "checkedOn": "2026-10-28",
+        "reason": "tellerbakery.co.il shows placeholder phone numbers (02-000-0000) and an address that could not be established as the operator's; not treated as official"
+      },
+      {
+        "name": "Cafe Kadosh",
+        "url": "https://www.cafekadosh.co.il/",
+        "checkedOn": "2026-10-28",
+        "reason": "domain not found (DNS)"
+      },
+      {
+        "name": "Jewish Quarter sites (Hurva Synagogue, Wohl Museum)",
+        "url": "https://www.rova-yehudi.org.il/en/",
+        "checkedOn": "2026-10-28",
+        "reason": "DNS failure on rova-yehudi.org.il"
+      },
+      {
+        "name": "Davidson Center / Jerusalem Archaeological Park",
+        "url": "https://www.archpark.org.il/",
+        "checkedOn": "2026-10-28",
+        "reason": "domain not found (DNS)"
+      },
+      {
+        "name": "Museum for Islamic Art",
+        "url": "https://www.islamicart.co.il/",
+        "checkedOn": "2026-10-28",
+        "reason": "hours published but no address on page; contact page 404"
+      },
+      {
+        "name": "Mishkenot Sha'ananim",
+        "url": "https://www.mishkenot.org.il/en/",
+        "checkedOn": "2026-10-28",
+        "reason": "no street address; latest dated events from 2023"
+      },
+      {
+        "name": "Anna Italian Cafe",
+        "url": "https://www.annarest.co.il/",
+        "checkedOn": "2026-10-28",
+        "reason": "no address or hours on page"
+      },
+      {
+        "name": "Jerusalem International YMCA",
+        "url": "https://www.ymca.org.il/",
+        "checkedOn": "2026-10-28",
+        "reason": "address published but no tower hours or current content (© 2023)"
+      },
+      {
+        "name": "Jerusalem Theatre (Talbiyeh Patisserie)",
+        "url": "https://www.jerusalem-theatre.co.il/",
+        "checkedOn": "2026-10-28",
+        "reason": "no street address on page; contact page 404; magazine PDF unreadable"
+      },
+      {
+        "name": "Lehem Erez",
+        "url": "https://www.lehemerez.co.il/branches",
+        "checkedOn": "2026-10-28",
+        "reason": "branch page lists no Jerusalem branch"
+      },
+      {
+        "name": "Cafe Landwer",
+        "url": "https://www.landwercafe.co.il/",
+        "checkedOn": "2026-10-28",
+        "reason": "homepage lists no Jerusalem city branch address"
+      },
+      {
+        "name": "Benedict",
+        "url": "https://www.benedict.co.il/",
+        "checkedOn": "2026-10-28",
+        "reason": "HTTP 429 Too Many Requests"
+      },
+      {
+        "name": "Israel Aquarium",
+        "url": "https://www.israel-aquarium.org.il/en/",
+        "checkedOn": "2026-10-28",
+        "reason": "HTTP 404"
+      },
+      {
+        "name": "Church of the Holy Sepulchre",
+        "url": "https://www.custodia.org/en/sanctuaries/holy-sepulchre",
+        "checkedOn": "2026-10-28",
+        "reason": "Custody of the Holy Land page returned 404"
+      },
+      {
+        "name": "Waldorf Astoria Jerusalem",
+        "url": "https://www.waldorfastoria.com/jerusalem",
+        "checkedOn": "2026-10-28",
+        "reason": "redirects to a generic Hilton brand page; not followed"
+      },
+      {
+        "name": "Ammunition Hill",
+        "url": "https://www.ammunitionhill.co.il/",
+        "checkedOn": "2026-10-28",
+        "reason": "domain not found (DNS)"
+      },
+      {
+        "name": "Gazelle Valley Park",
+        "url": "https://www.emekhatzvaim.org.il/",
+        "checkedOn": "2026-10-28",
+        "reason": "domain not found (DNS); municipal site returned 403"
+      },
+      {
+        "name": "Jerusalem Bird Observatory",
+        "url": "https://www.jerusalembirds.org.il/",
+        "checkedOn": "2026-10-28",
+        "reason": "domain not found (DNS)"
+      }
+    ],
+    "placeSources": {
+      "Western Wall": {
+        "url": "https://thekotel.org/en/directions/",
+        "sourceType": "official operator (Western Wall Heritage Foundation)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Directions page: \"The Western Wall Prayer Plaza is open all day, every day of the year, 24/7.\" Homepage carries 2026 items (\"Sukkot 2026 – Birkat Kohanim\", \"Selichot 2026\") and says the Plaza and Tunnels \"remain open and are operating as usual.\" Tunnels page (https://english.thekotel.org/attractions/the-great-stone-route/): \"This tour must be reserved in advance\"; \"Touring the site is possible only when accompanied by a certified guide.\""
+      },
+      "Bible Lands Museum": {
+        "url": "https://www.blmj.org/en/visit",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Visit page publishes current hours, NIS ticket prices and online ticketing; full-price ticket includes \"Free return visit within a month\"; cancellations refunded up to 48 hours before by email or phone. Homepage lists current exhibitions including \"As Humankind\" (The Jerusalem Biennale)."
+      },
+      "Jerusalem Botanical Gardens": {
+        "url": "https://www.botanic.co.il/before-you-arrive/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Homepage lists 2026 courses and the \"Winter Dreams\" light exhibition, 17/11/26 – 31/1/27, starting \"at 17:00\". Visitor page publishes ticket prices and rules: only guide or service dogs; bicycles and scooters not allowed."
+      },
+      "Machneyuda": {
+        "url": "https://en.machneyuda.co.il/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Publishes hours and live \"Book a table\" links via Ontopo; states \"No email orders accepted no mail reservation\"."
+      },
+      "Jerusalem Cinematheque": {
+        "url": "https://www.jer-cin.org.il/en",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Screening schedule for 28 October 2026 onward (e.g. \"Faust\" with live music, Thursday 29 October) and a site notice dated 20 October 2026 about sidewalk works on Hebron Road."
+      },
+      "The Eucalyptus": {
+        "url": "https://www.the-eucalyptus.com/contact/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Contact page publishes current hours and \"Reservation required\"; homepage links a menu and a booking page."
+      },
+      "Hasadna": {
+        "url": "https://www.sdnrest.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Publishes weekly hours and a live \"Book a table\" link to Ontopo."
+      },
+      "Notre Dame Center Rooftop Restaurant": {
+        "url": "https://www.notredamecenter.org/rooftop-restaurant/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Center homepage carries 2026 posts (June 2026) and an offer dated 14.10.26–29.12.26; restaurant page: \"Reservations recommended\", \"fine wines from our cellar\"; not kosher."
+      },
+      "Notre Dame Center Bistro": {
+        "url": "https://www.notredamecenter.org/bistro/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "\"Open daily from 12:00 PM to 9:00 PM\"; bar offers \"a wide selection of cocktails, wines, and spirits\"; online booking link; kitchen not kosher. Center site has 2026-dated posts."
+      },
+      "Museum of Tolerance Jerusalem": {
+        "url": "https://www.motj.org.il/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Lists closure dates \"Friday, November 13\", \"Thursday, November 19\", \"Sunday, November 22\" and events on 12, 15 and 19 November 2026; news items dated October 2026."
+      },
+      "Menachem Begin Heritage Center": {
+        "url": "https://www.begincenter.org.il/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Event listings dated 28.10.2026, 01.11.2026, 08.11.2026, 15.11.2026 and 17.11.2026; online museum-visit booking link."
+      },
+      "Talbiye": {
+        "url": "https://www.talbiye.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Publishes hours and a reservation link to Ontopo; \"הזמנות במייל לא יתקבלו\" (email reservations not accepted)."
+      },
+      "Basilica of the Agony (Gethsemane)": {
+        "url": "https://www.custodia.org/en/sanctuaries/gethsemane",
+        "sourceType": "official operator (Custody of the Holy Land)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Sanctuary page publishes seasonal hours and says \"The Holy Places at Gethsemane are open to everyone\"; asks visitors to show respect and keep silence. No 2026-dated content (© 2024 footer)."
+      },
+      "Café Hillel (Yafo 36)": {
+        "url": "https://www.cafehillel.co.il/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Branch hours notice on official site; no 2026-dated content."
+      },
+      "Austrian Hospice Café Triest": {
+        "url": "https://www.austrianhospice.com/en/experience-jerusalem/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "\"Open daily from 10 in the morning\"; \"The kitchen ... is open until 9 pm, the coffee-shop closes at 10 pm.\" Roof terrace: \"daily from 10 a.m. til 10 p.m.\", \"Price per person: 5 NIS (Free entry for in-house-guests)\". No 2026-dated content."
+      },
+      "Bloomfield Science Museum": {
+        "url": "https://www.mada.org.il/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Homepage has a 2026 events section and online ticketing (mada.smarticket.co.il); notice that the museum elevator is out of service for upgrade works; train carriage exhibit \"open by appointment only\"."
+      },
+      "Museum on the Seam": {
+        "url": "https://www.mots.org.il/visit",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Homepage lists two current exhibitions dated 2026; visit page lists ticket prices (adult 35 NIS) and says last entry is 45 minutes before closing."
+      },
+      "Dormition Abbey": {
+        "url": "https://www.dormitio.net/oeffnungszeiten",
+        "sourceType": "operator's own site (Benedictine Abbey)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Opening-hours page for church, cafeteria and shop; footer \"© 2025-2026\"; notes holiday exceptions are posted under Aktuelles."
+      },
+      "Caffit (German Colony)": {
+        "url": "https://caffit.co.il/%d7%a1%d7%a0%d7%99%d7%a4%d7%99%d7%9d/%d7%9e%d7%95%d7%a9%d7%91%d7%94-%d7%92%d7%a8%d7%9e%d7%a0%d7%99%d7%aa/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Branch page publishes hours and a main menu file dated October 2025; kosher (Jerusalem Rabbinate); flagship opened 1987."
+      },
+      "Caffit (Botanical Garden)": {
+        "url": "https://caffit.co.il/%d7%a1%d7%a0%d7%99%d7%a4%d7%99%d7%9d/%d7%92%d7%9f-%d7%91%d7%95%d7%98%d7%a0%d7%99/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Branch page publishes hours and a main menu file dated 26 October 2025; breakfast images on page."
+      },
+      "Friends of Zion Museum": {
+        "url": "https://fozmuseum.com/contact-us/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Publishes tour hours and an online reservation page; \"The tour is available in 16 languages.\""
+      },
+      "Neeman Bakery (Jewish Quarter)": {
+        "url": "https://neeman.co.il/%d7%97%d7%a4%d7%a9%d7%95-%d7%90%d7%95%d7%aa%d7%a0%d7%95/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Branch locator lists the branch; homepage news item dated 25/08/2026 says the Rosh Hashanah honey cake collection is already in branches."
+      },
+      "Neeman Bakery (Davidka Square)": {
+        "url": "https://neeman.co.il/%d7%97%d7%a4%d7%a9%d7%95-%d7%90%d7%95%d7%aa%d7%a0%d7%95/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Branch locator lists \"כיכר הדוידקא – ירושלים\"; homepage news item dated 25/08/2026."
+      },
+      "King David Hotel": {
+        "url": "https://www.danhotels.com/JerusalemHotels/KingDavidJerusalemHotel/",
+        "sourceType": "operator's own site (Dan Hotels)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Hotel page has a live booking link and lists Solima Restaurant & Terrace, The Grill Room and the Oriental Bar; no dining hours or 2026 content."
+      },
+      "Hebrew Music Museum": {
+        "url": "https://www.hebrewmusicmuseum.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Publishes hours and ticket booking: \"Please reserve places in advance.\" Guided and independent tours offered. Footer © 2025."
+      }
+    }
+  },
   "Jaipur, India": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-28",

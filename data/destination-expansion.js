@@ -7749,4 +7749,216 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 22 distinct recommendations in this guide were checked against their operators' own websites on October 28, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Jerusalem, Israel: source review of 2026-10-28 (docs/content-research/jerusalem-2026-10-28.md).
+  {
+    const cityKey = "Jerusalem, Israel";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Western Wall","Dormition Abbey","Basilica of the Agony (Gethsemane)","Bible Lands Museum"],
+      bestFirstTimers: ["Western Wall","Bible Lands Museum","Austrian Hospice Café Triest","Machneyuda"],
+      bestRestaurants: ["Machneyuda","The Eucalyptus","Hasadna","Notre Dame Center Rooftop Restaurant"],
+      bestBudget: ["Western Wall","Austrian Hospice Café Triest","Neeman Bakery (Jewish Quarter)","Jerusalem Botanical Gardens"],
+      bestLuxury: ["King David Hotel","Notre Dame Center Rooftop Restaurant","The Eucalyptus","Machneyuda"],
+      bestCouples: ["Notre Dame Center Rooftop Restaurant","Jerusalem Botanical Gardens","Talbiye","Jerusalem Cinematheque"],
+      bestKids: ["Bloomfield Science Museum","Jerusalem Botanical Gardens","Friends of Zion Museum","Hebrew Music Museum"],
+      bestSolo: ["Jerusalem Cinematheque","Museum of Tolerance Jerusalem","Café Hillel (Yafo 36)","Museum on the Seam"],
+      bestUnique: ["Hebrew Music Museum","Western Wall","Menachem Begin Heritage Center","Jerusalem Cinematheque"],
+      bestBreakfast: ["Caffit (German Colony)","Café Hillel (Yafo 36)","Caffit (Botanical Garden)"],
+      bestLunch: ["Notre Dame Center Bistro","Machneyuda","Dormition Abbey","Talbiye"],
+      bestDinner: ["The Eucalyptus","Machneyuda","Hasadna","Notre Dame Center Rooftop Restaurant"],
+      bestCocktails: ["Notre Dame Center Bistro","Notre Dame Center Rooftop Restaurant"],
+      bestBakeries: ["Neeman Bakery (Jewish Quarter)","Neeman Bakery (Davidka Square)"],
+      bestCoffee: ["Austrian Hospice Café Triest","Café Hillel (Yafo 36)","Caffit (German Colony)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Western Wall": "Western Wall Prayer Plaza Old City Jerusalem",
+      "Dormition Abbey": "Dormition Abbey Mount Zion Jerusalem",
+      "Basilica of the Agony (Gethsemane)": "Basilica of the Agony Gethsemane Mount of Olives Jerusalem",
+      "Bible Lands Museum": "Bible Lands Museum 21 Shmuel Stefan Wise Street Jerusalem",
+      "Austrian Hospice Café Triest": "Austrian Hospice 37 Via Dolorosa Jerusalem",
+      "Machneyuda": "Machneyuda 10 Beit Ya'akov Street Jerusalem",
+      "The Eucalyptus": "The Eucalyptus Felt Alley Hativat Yerushalayim 14 Jerusalem",
+      "Hasadna": "Hasadna 28 Derech Hebron Jerusalem",
+      "Notre Dame Center Rooftop Restaurant": "Notre Dame Center Rooftop Restaurant 3 HaTsanhanim Street Jerusalem",
+      "Neeman Bakery (Jewish Quarter)": "Neeman Bakery 128 HaYehudim Street Jerusalem",
+      "Jerusalem Botanical Gardens": "Jerusalem Botanical Gardens 1 Yehuda Burla Street Jerusalem",
+      "King David Hotel": "King David Hotel 23 King David Street Jerusalem",
+      "Talbiye": "Talbiye 5 Chopin Street Jerusalem",
+      "Jerusalem Cinematheque": "Jerusalem Cinematheque 11 Hebron Road Jerusalem",
+      "Bloomfield Science Museum": "Bloomfield Science Museum 3 Museum Boulevard Jerusalem",
+      "Friends of Zion Museum": "Friends of Zion Museum 20 Yosef Rivlin Street Jerusalem",
+      "Hebrew Music Museum": "Hebrew Music Museum 10 Yoel Moshe Salomon Street Jerusalem",
+      "Museum of Tolerance Jerusalem": "Museum of Tolerance Jerusalem 32 Hillel Street Jerusalem",
+      "Café Hillel (Yafo 36)": "Cafe Hillel 36 Jaffa Street Jerusalem",
+      "Museum on the Seam": "Museum on the Seam 4 Heil HaHandasa Street Jerusalem",
+      "Menachem Begin Heritage Center": "Menachem Begin Heritage Center 6 S.A. Nakhon Street Jerusalem",
+      "Caffit (German Colony)": "Caffit 36 Emek Refaim Street Jerusalem",
+      "Caffit (Botanical Garden)": "Caffit 3 Mendel Yisrael Kaplan Street Jerusalem",
+      "Notre Dame Center Bistro": "Notre Dame Center Bistro 3 HaTsanhanim Street Jerusalem",
+      "Neeman Bakery (Davidka Square)": "Neeman Bakery 72 Jaffa Street Jerusalem"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Jerusalem" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Holy sites, museums and gardens, with breakfast cafés, a bakery, dinners and a cocktail bistro checked against their own websites.";
+    cityGuide.highlights = ["Western Wall","Bible Lands Museum","Dormition Abbey","Basilica of the Agony (Gethsemane)"];
+    cityGuide.tip = "Saturday is the main museum closing day: the Bible Lands Museum, Museum of Tolerance Jerusalem and Menachem Begin Heritage Center are closed on Saturday, and the Friends of Zion Museum is closed on Sunday as well.";
+    data.destinationFacts[cityKey] = "Saturday is the main museum closing day: the Bible Lands Museum, Museum of Tolerance Jerusalem and Menachem Begin Heritage Center are closed on Saturday, and the Friends of Zion Museum is closed on Sunday as well.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Holy sites, museums and gardens, with breakfast cafés, a bakery, dinners and a cocktail bistro checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Saturday, plus Sunday at Friends of Zion",
+        "copy": "The Bible Lands Museum, Museum of Tolerance Jerusalem and Menachem Begin Heritage Center are closed on Saturday, and the Friends of Zion Museum is closed on Sundays, Saturdays and holidays. The Eucalyptus is closed on Friday and Saturday."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Reserve the Western Wall Tunnels",
+        "copy": "The Western Wall Heritage Foundation says the Tunnels tour must be reserved in advance and can only be toured with a certified guide. The Bible Lands Museum refunds cancellations made up to 48 hours before your visit, and the Hebrew Music Museum asks you to reserve places in advance."
+      },
+      {
+        "label": "Table reservations",
+        "value": "Book online, not by email",
+        "copy": "Machneyuda and Talbiye take bookings through their online links and do not accept email reservations. The Eucalyptus says reservation is required, and the Notre Dame Center Rooftop Restaurant recommends reserving."
+      },
+      {
+        "label": "Rules",
+        "value": "Bikes, dogs, kosher and fees",
+        "copy": "The Jerusalem Botanical Gardens does not admit bicycles or scooters and allows only guide or service dogs. The Notre Dame Center's Rooftop Restaurant and Bistro are not kosher, and the Austrian Hospice roof terrace charges 5 NIS per person, free for in-house guests."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Reserve the Western Wall Tunnels and your dinner tables ahead, and plan museum days around Saturday closures.",
+      intro: [
+        "Start at the Western Wall, where the Western Wall Heritage Foundation says the Prayer Plaza is open all day, every day of the year. The Western Wall Tunnels work differently: the foundation says the tour must be reserved in advance and can only be toured with a certified guide, with entry Sunday to Thursday from 09:00 to 22:00 and on Friday from 09:00 to 13:00. Across the Kidron Valley, the Basilica of the Agony at the foot of the Mount of Olives opens 8:00 to 17:00 from October to March, and the Custody of the Holy Land asks visitors to show respect and keep silence.",
+        "Plan museum days around Saturday closures. The Bible Lands Museum on Shmuel Stefan Wise Street opens at 10:00 Sunday to Friday, stays open until 21:00 on Wednesday, closes at 14:00 on Friday and is closed on Saturday; a full-price ticket includes a free return visit within a month. The Museum of Tolerance Jerusalem on Hillel Street is also closed on Saturday and lists extra closures on 13, 19 and 22 November 2026. The Friends of Zion Museum runs tours Monday to Friday and is closed on Sundays, Saturdays and holidays.",
+        "With children, the Jerusalem Botanical Gardens on Yehuda Burla Street publishes separate summer and winter hours, is closed on Yom Kippur and does not admit bicycles or scooters; its Winter Dreams light exhibition runs from 17 November 2026 to 31 January 2027, starting at 17:00. The Bloomfield Science Museum sells tickets online, and the Hebrew Music Museum in Nahalat Shiv'a asks you to reserve places in advance. On Mount Zion, the Dormition Abbey church opens from 09:00 Monday to Saturday and from 11:30 on Sunday, and its cafeteria is closed on Sundays.",
+        "For food, Machneyuda on Beit Ya'akov Street opens 12:30 to 24:00, takes bookings online and does not accept email reservations. The Eucalyptus serves dinner Sunday to Thursday, is closed on Friday and Saturday and says reservation is required. The Notre Dame Center's Rooftop Restaurant opens Tuesday to Saturday evenings and recommends reserving, while its Bistro serves cocktails daily from 12:00 to 21:00. For mornings, Caffit on Emek Refaim opens at 07:30 Sunday to Wednesday, and Café Triest at the Austrian Hospice on the Via Dolorosa opens daily from 10:00."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair the Western Wall Prayer Plaza, open around the clock, with a pre-booked Western Wall Tunnels tour and the Bible Lands Museum, which is closed on Saturday."
+        ],
+        [
+          "A slower morning",
+          "Have breakfast at Caffit on Emek Refaim, which opens at 07:30 Sunday to Wednesday, then walk the Jerusalem Botanical Gardens, which open at 9:00."
+        ],
+        [
+          "Before booking",
+          "Remember the Saturday closures at the Bible Lands Museum, Museum of Tolerance Jerusalem and Menachem Begin Heritage Center, the Sunday closure at the Friends of Zion Museum, and that The Eucalyptus requires a reservation and is closed on Friday and Saturday."
+        ]
+      ],
+      trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 28, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
+  // Hoi An, Vietnam: source review of 2026-10-28 (docs/content-research/hoi-an-2026-10-28.md).
+  {
+    const cityKey = "Hoi An, Vietnam";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Japanese Covered Bridge (Chùa Cầu)","Museum of Trade Ceramics","Thanh Ha Pottery Village","Hoi An Memories Land"],
+      bestFirstTimers: ["Japanese Covered Bridge (Chùa Cầu)","Hoi An Museum of History and Culture","Reaching Out Teahouse","Little Faifo"],
+      bestRestaurants: ["Little Faifo","Secret Garden","Mango Rooms","The Temple Restaurant & Lounge"],
+      bestBudget: ["Reaching Out Teahouse","Hoi An Roastery (135 Tran Phu)","Tra Que Vegetable Village"],
+      bestLuxury: ["The Temple Restaurant & Lounge","L'Annam Restaurant","Infinity Bar","Faifo Bar"],
+      bestCouples: ["Secret Garden","Faifo Bar","Mango Rooms","Hoi An Memories Land"],
+      bestKids: ["VinWonders Nam Hoi An","Hoi An Memories Land","Tra Que Vegetable Village","Reaching Out Teahouse"],
+      bestSolo: ["Reaching Out Teahouse","Museum of Folk Culture","Hoi An Roastery (84 Tran Cao Van)","Reaching Out Arts & Crafts"],
+      bestUnique: ["Thanh Ha Pottery Village","Red Bean Hoi An Restaurant","Reaching Out Arts & Crafts","Sa Huynh Culture Museum"],
+      bestBreakfast: ["La Siesta Coffee","L'Annam Restaurant","The Temple Restaurant & Lounge","Hoi An Roastery (135 Tran Phu)"],
+      bestLunch: ["Mango Mango","Mai Fish","Little Faifo","Secret Garden"],
+      bestDinner: ["Red Bean Hoi An Restaurant","Little Faifo","Mango Rooms","L'Annam Restaurant"],
+      bestCocktails: ["The Temple Restaurant & Lounge","Faifo Bar","Elephant Bar","Infinity Bar"],
+      bestBakeries: ["Hoi An Roastery (135 Tran Phu)","L'Annam Restaurant"],
+      bestCoffee: ["Hoi An Roastery (135 Tran Phu)","Hoi An Roastery (84 Tran Cao Van)","Reaching Out Teahouse","La Siesta Coffee"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Japanese Covered Bridge (Chùa Cầu)": "Chua Cau Japanese Covered Bridge Tran Phu Nguyen Thi Minh Khai Hoi An",
+      "Museum of Trade Ceramics": "Museum of Trade Ceramics 80 Tran Phu Hoi An",
+      "Thanh Ha Pottery Village": "Thanh Ha Pottery Village Nam Dieu Hoi An",
+      "Hoi An Memories Land": "Hoi An Memories Land 88 Tran Quang Khai Hoi An",
+      "Hoi An Museum of History and Culture": "Hoi An Museum of History and Culture 10B Tran Hung Dao Hoi An",
+      "Reaching Out Teahouse": "Reaching Out Teahouse 131 Tran Phu Hoi An",
+      "Little Faifo": "Little Faifo 66 Nguyen Thai Hoc Hoi An",
+      "Secret Garden": "Secret Garden 132/2 Tran Phu Hoi An",
+      "Mango Rooms": "Mango Rooms 37 Phan Boi Chau Hoi An",
+      "The Temple Restaurant & Lounge": "The Temple Restaurant & Lounge 132 Hung Vuong Hoi An",
+      "Hoi An Roastery (135 Tran Phu)": "Hoi An Roastery 135 Tran Phu Hoi An",
+      "Tra Que Vegetable Village": "Tra Que Vegetable Village Cam Ha Hoi An",
+      "L'Annam Restaurant": "L'Annam Restaurant Victoria Hoi An Au Co Cua Dai Hoi An",
+      "Infinity Bar": "Infinity Bar La Siesta 132 Hung Vuong Hoi An",
+      "Faifo Bar": "Faifo Bar Victoria Hoi An Au Co Cua Dai Hoi An",
+      "VinWonders Nam Hoi An": "VinWonders Nam Hoi An Vo Chi Cong Thang Binh",
+      "Museum of Folk Culture": "Museum of Folk Culture 33 Nguyen Thai Hoc Hoi An",
+      "Hoi An Roastery (84 Tran Cao Van)": "Hoi An Roastery 84 Tran Cao Van Hoi An",
+      "Reaching Out Arts & Crafts": "Reaching Out Arts & Crafts 131 Tran Phu Hoi An",
+      "Red Bean Hoi An Restaurant": "Red Bean Hoi An Restaurant 132 Hung Vuong Hoi An",
+      "Sa Huynh Culture Museum": "Sa Huynh Culture Museum 149 Tran Phu Hoi An",
+      "La Siesta Coffee": "La Siesta Coffee 132 Hung Vuong Hoi An",
+      "Mango Mango": "Mango Mango 45 Nguyen Phuc Chu Hoi An",
+      "Mai Fish": "Mai Fish 45 Nguyen Thi Minh Khai Hoi An",
+      "Elephant Bar": "Elephant Bar Victoria Hoi An Au Co Cua Dai Hoi An"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Hoi An" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Heritage museums, the Japanese Covered Bridge and craft villages, with breakfast cafés, dinners and resort bars checked against their own websites or Hoi An's heritage conservation centre.";
+    cityGuide.highlights = ["Japanese Covered Bridge (Chùa Cầu)","Museum of Trade Ceramics","Sa Huynh Culture Museum","Thanh Ha Pottery Village"];
+    cityGuide.tip = "The heritage centre's older museum pages list one closing day a month for each public museum (the 10th at Sa Huynh, the 15th at Trade Ceramics, the 20th at Folk Culture and the 25th at History and Culture), so confirm the current schedule before planning a museum morning.";
+    data.destinationFacts[cityKey] = "The heritage centre's older museum pages list one closing day a month for each public museum (the 10th at Sa Huynh, the 15th at Trade Ceramics, the 20th at Folk Culture and the 25th at History and Culture), so confirm the current schedule before planning a museum morning.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Heritage museums, the Japanese Covered Bridge and craft villages, with breakfast cafés, dinners and resort bars checked against their own websites or Hoi An's heritage conservation centre.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Monthly museum closures",
+        "copy": "The heritage centre's older museum pages list a monthly closing day for each museum: the 10th at Sa Huynh Culture Museum, the 15th at the Museum of Trade Ceramics, the 20th at the Museum of Folk Culture and the 25th at the Hoi An Museum of History and Culture. Confirm these with the centre before you go."
+      },
+      {
+        "label": "Tickets",
+        "value": "Heritage ticket required",
+        "copy": "The Museum of Trade Ceramics and Sa Huynh Culture Museum list a visit ticket among their rules, and the heritage centre asks you to buy a ticket for Tra Que Vegetable Village and Thanh Ha Pottery Village. Prices are not published on these pages."
+      },
+      {
+        "label": "Booking",
+        "value": "Online forms and set times",
+        "copy": "Little Faifo, Secret Garden and The Temple Restaurant & Lounge take table bookings through their own sites. Red Bean Hoi An's cooking classes take 2 to 10 guests, and its street-food buffet runs on Tuesdays only, 18:00 to 21:00."
+      },
+      {
+        "label": "Rules",
+        "value": "Height-based tickets, rain-proof show",
+        "copy": "VinWonders Nam Hoi An prices adults from 140 cm in height, with child categories below that. Hoi An Memories Land says its show goes ahead in the rain and hands out free raincoats."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Confirm museum closing days with the heritage centre before you plan, and book dinners at Little Faifo or The Temple ahead through their own forms.",
+      intro: [
+        "Hoi An's public museums are run by the Hội An World Cultural Heritage Conservation Center, whose office shares 10B Tran Hung Dao with the Hoi An Museum of History and Culture. On Tran Phu, the Museum of Trade Ceramics at No. 80 and the Sa Huynh Culture Museum at No. 149 both say you need a visit ticket. The centre's older museum pages give hours of 7:00 to 21:00 and one closing day a month for each museum, the 10th at Sa Huynh, the 15th at Trade Ceramics, the 20th at Folk Culture and the 25th at History and Culture, so check the current schedule with the centre. The Japanese Covered Bridge stands where Nguyen Thi Minh Khai meets Tran Phu.",
+        "Beyond the old streets, the centre asks you to buy a visit ticket for Tra Que Vegetable Village, about 2.5 km north of the Ancient Town, and Thanh Ha Pottery Village in the Nam Dieu area. Red Bean Hoi An Restaurant runs a 09:00 to 14:00 cooking class that visits Tra Que and a local market for VND 785,000 per person; shorter market classes cost VND 625,000, for 2 to 10 guests. Hoi An Memories Land at 88 Tran Quang Khai says its show goes ahead in the rain, with free raincoats. VinWonders Nam Hoi An in Thang Binh opens 9:00 to 18:00 on weekdays, 19:00 at weekends.",
+        "For a slower morning, Reaching Out Teahouse at 131 Tran Phu opens from 8:00 to 20:00 daily and describes a space that invites quiet contemplation; its Vietnamese tea tasting set costs 155,000 VND. Hoi An Roastery's main branch at 135 Tran Phu opens 07:00 to 21:00 daily and lists a homemade buttery croissant, and a third branch sits at 84 Tran Cao Van in Cam Pho. At La Siesta Hoi An Resort, 132 Hung Vuong, La Siesta Coffee serves from 06:30. For lunch, Mango Mango at 45 Nguyen Phuc Chu and Mai Fish at 45 Nguyen Thi Minh Khai both open daily from 8:00.",
+        "Little Faifo at 66 Nguyen Thai Hoc serves from 11:00 to 22:00, with last orders at 21:30, and you can book a table online. Secret Garden, at the end of the alley beside 132 Tran Phu, opens from 8:00 to 23:00 and has its own reservation form. On Tuesdays, Red Bean Hoi An holds a street-food buffet from 18:00 to 21:00 at VND 450,000 with live traditional music. The Temple Restaurant & Lounge keeps its bar open from 11:00 to midnight. By Cua Dai Beach, Victoria Hoi An's L'Annam Restaurant and sea-view Faifo Bar open from 06:00 to 22:00."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Start at the Japanese Covered Bridge, then walk to the Museum of Trade Ceramics at 80 Tran Phu, after checking its current hours with the heritage centre."
+        ],
+        [
+          "A slower morning",
+          "Take tea at Reaching Out Teahouse from 8:00 or coffee at Hoi An Roastery on Tran Phu from 07:00, then browse Reaching Out Arts & Crafts next door."
+        ],
+        [
+          "Before booking",
+          "Confirm the museums' monthly closing days with the heritage centre, and note that Red Bean's street-food buffet runs on Tuesdays only."
+        ]
+      ],
+      trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 28, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();
