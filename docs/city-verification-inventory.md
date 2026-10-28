@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 62.
-- Classifier-passed (published, not fully documented in that format): 130.
+- Source-verified (complete dated evidence format): 63.
+- Classifier-passed (published, not fully documented in that format): 129.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -446,7 +446,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Stellenbosch, South Africa | stellenbosch | held-back | not-reviewed | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Stockholm, Sweden | stockholm | held-back | not-reviewed | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Stone Forest, China | stone-forest | held-back | not-reviewed | 0 | 3 | 15 | 3 | has 3 named places across 3 categories; needs at least 5 named places across 3 categories |
-| Strasbourg, France | strasbourg | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Strasbourg, France | strasbourg | source-verified | source-checked | 28 | 43 | 15 | 15 | None |
 | Stuttgart, Germany | stuttgart | held-back | not-reviewed | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Surabaya, Indonesia | surabaya | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Surfers Paradise, Australia | surfers-paradise | classifier-passed | not-reviewed | 0 | 6 | 15 | 4 | None |

@@ -6356,4 +6356,113 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 27 distinct recommendations in this guide were checked against their operators' own websites on October 27, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Strasbourg, France: source review of 2026-10-27 (docs/content-research/strasbourg-2026-10-27.md).
+  {
+    const cityKey = "Strasbourg, France";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Strasbourg Cathedral","Musée de l'Œuvre Notre-Dame","Barrage Vauban","Batorama"],
+      bestFirstTimers: ["Strasbourg Cathedral","Strasbourg Cathedral Platform","Batorama","Musée Historique"],
+      bestRestaurants: ["Au Crocodile","Le Buerehiesel","Maison Kammerzell","Chez Yvonne"],
+      bestBudget: ["Aubette 1928","Barrage Vauban","Parc de l'Orangerie","Marché Broglie"],
+      bestLuxury: ["Au Crocodile","Le Buerehiesel","Bar de la Cour du Corbeau"],
+      bestCouples: ["Strasbourg Cathedral Platform","Batorama","Bar de la Cour du Corbeau","Au Fond du Jardin"],
+      bestKids: ["Le Vaisseau","Parc de l'Orangerie","Musée Zoologique","Planétarium du Jardin des Sciences"],
+      bestSolo: ["MAMCS (Musée d'Art moderne et contemporain)","Musée Tomi Ungerer","Musée des Beaux-Arts","Cafés Henri (Strasbourg Centre)"],
+      bestUnique: ["Parlamentarium Simone Veil","Aubette 1928","Musée Archéologique","Strasbourg Christmas Market (Christkindelsmärik, Place Broglie)"],
+      bestBreakfast: ["Thierry Mulhaupt (Rue du Vieux Marché aux Poissons)","Cafés Henri (Strasbourg Centre)","Marché Broglie"],
+      bestLunch: ["Maison Kammerzell","Au Crocodile","Le Buerehiesel","Chez Yvonne"],
+      bestDinner: ["Au Crocodile","Le Buerehiesel","Maison Kammerzell","Chez Yvonne"],
+      bestCocktails: ["Bar de la Cour du Corbeau","Archipel Bar (AC Hotel Strasbourg)"],
+      bestBakeries: ["Thierry Mulhaupt (Rue du Vieux Marché aux Poissons)","Thierry Mulhaupt (Temple Neuf)","Au Fond du Jardin"],
+      bestCoffee: ["Cafés Henri (Strasbourg Centre)","Au Fond du Jardin"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Strasbourg Cathedral": "Cathédrale Notre-Dame Place du Château Strasbourg",
+      "Musée de l'Œuvre Notre-Dame": "Musée de l'Œuvre Notre-Dame 3 place du Château Strasbourg",
+      "Barrage Vauban": "Barrage Vauban Place du Quartier Blanc rue Sainte-Marguerite Strasbourg",
+      "Batorama": "Batorama embarcadère Cathédrale Palais Rohan Strasbourg",
+      "Strasbourg Cathedral Platform": "Plateforme Cathédrale Notre-Dame Place du Château Strasbourg",
+      "Musée Historique": "Musée Historique 2 rue du Vieux-Marché-aux-Poissons Strasbourg",
+      "Au Crocodile": "Au Crocodile 10 rue de l'Outre Strasbourg",
+      "Le Buerehiesel": "Le Buerehiesel 4 parc de l'Orangerie Strasbourg",
+      "Maison Kammerzell": "Maison Kammerzell 16 Place de la Cathédrale Strasbourg",
+      "Chez Yvonne": "Chez Yvonne 10 Rue du Sanglier Strasbourg",
+      "Aubette 1928": "Aubette 1928 31 place Kléber Strasbourg",
+      "Parc de l'Orangerie": "Parc de l'Orangerie Avenue de l'Europe Strasbourg",
+      "Marché Broglie": "Marché Broglie Place Broglie Strasbourg",
+      "Bar de la Cour du Corbeau": "Cour du Corbeau 6-8 rue des Couples Strasbourg",
+      "Au Fond du Jardin": "Au Fond du Jardin 6 Rue de la Râpe Strasbourg",
+      "Le Vaisseau": "Le Vaisseau 1bis rue Philippe Dollinger Strasbourg",
+      "Musée Zoologique": "Musée Zoologique 29 boulevard de la Victoire Strasbourg",
+      "Planétarium du Jardin des Sciences": "Planétarium Jardin des Sciences 27 boulevard de la Victoire Strasbourg",
+      "MAMCS (Musée d'Art moderne et contemporain)": "MAMCS 1 place Hans-Jean-Arp Strasbourg",
+      "Musée Tomi Ungerer": "Musée Tomi Ungerer 2 avenue de la Marseillaise Strasbourg",
+      "Musée des Beaux-Arts": "Musée des Beaux-Arts Palais Rohan 2 place du Château Strasbourg",
+      "Cafés Henri (Strasbourg Centre)": "Cafés Henri 31 rue des Hallebardes Strasbourg",
+      "Parlamentarium Simone Veil": "Parlamentarium Simone Veil 1 Allée du Printemps Strasbourg",
+      "Musée Archéologique": "Musée Archéologique Palais Rohan 2 place du Château Strasbourg",
+      "Strasbourg Christmas Market (Christkindelsmärik, Place Broglie)": "Christkindelsmärik Place Broglie Strasbourg",
+      "Thierry Mulhaupt (Rue du Vieux Marché aux Poissons)": "Thierry Mulhaupt 18 rue du Vieux Marché aux Poissons Strasbourg",
+      "Archipel Bar (AC Hotel Strasbourg)": "AC Hotel Strasbourg 4-6 Boulevard de Dresde Strasbourg",
+      "Thierry Mulhaupt (Temple Neuf)": "Thierry Mulhaupt 5 rue du Temple Neuf Strasbourg"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Strasbourg" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "The cathedral, city museums, canal cruises and parks, with Alsatian restaurants, pâtisseries, a coffee bar and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Strasbourg Cathedral","Musée de l'Œuvre Notre-Dame","Barrage Vauban","Parlamentarium Simone Veil"];
+    cityGuide.tip = "Most city museums close on Mondays, but the three in the Palais Rohan (Beaux-Arts, Archéologique, Arts décoratifs) close on Tuesdays instead, so plan museum days around both.";
+    data.destinationFacts[cityKey] = "Most city museums close on Mondays, but the three in the Palais Rohan (Beaux-Arts, Archéologique, Arts décoratifs) close on Tuesdays instead, so plan museum days around both.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "The cathedral, city museums, canal cruises and parks, with Alsatian restaurants, pâtisseries, a coffee bar and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mon or Tue",
+        "copy": "Musée de l'Œuvre Notre-Dame, MAMCS, Tomi Ungerer, Historique and Zoologique close on Mondays; Beaux-Arts, Archéologique and Arts décoratifs close on Tuesdays. Aubette 1928 opens only Wednesday to Saturday, 14:00-18:00."
+      },
+      {
+        "label": "Same-day tickets",
+        "value": "Clock show",
+        "copy": "Astronomical clock tickets at Strasbourg Cathedral are sold only on the day (adults €4), with the Apostles parade at 12:30; there is no show on Sundays and feast days or during the Christmas market."
+      },
+      {
+        "label": "Book ahead",
+        "value": "Tables and tea",
+        "copy": "Au Fond du Jardin's tea room works 'Sur réservation' in two afternoon services, Wednesday to Sunday. Au Crocodile takes online bookings, and its 'Instant Déjeuner' (€72) runs only on Thursday and Friday lunch."
+      },
+      {
+        "label": "Rules",
+        "value": "ID and bags",
+        "copy": "The Parlamentarium Simone Veil requires a physical ID card or passport, runs airport-style security and bans large luggage; under-14s must be with an adult. Strasbourg Cathedral checks bags at the South portal."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Start at the cathedral before noon, then pick museums by closing day, since Monday and Tuesday closures split the city's collections.",
+      intro: [
+        "Strasbourg Cathedral is free to enter with no reservation; you go in through the South portal on the place du Château side, where bags are checked. It opens Monday to Saturday 8:30-11:15 and 12:45-17:45, and Sunday afternoons. The astronomical clock show needs a same-day ticket (adults €4): doors open at 11:30 and the Apostles parade at 12:30, but not on Sundays, feast days or during the Christmas market. The platform climb starts from the same square and, from October to March, runs 10:00-13:00 and 13:30-18:00, with last ascent at 17:15.",
+        "Across the square, the Musée de l'Œuvre Notre-Dame marks 800 years of the foundation that built the cathedral, with an exhibition running until 17 January 2027. The Palais Rohan holds the Beaux-Arts and Archéologique museums, both closed on Tuesdays; the Arts décoratifs is open only in its service areas, at €5, until 19 November 2026. At MAMCS, 'L'état sauvage' runs to 3 January 2027, while the Musée Tomi Ungerer shows Anna Sommer until 17 January 2027. The Musée Alsacien is closed for works until a planned 2028 reopening. Aubette 1928 on place Kléber is free, Wednesday to Saturday afternoons.",
+        "For an Alsatian meal by the cathedral, Maison Kammerzell at 16 Place de la Cathédrale has published its Christmas Eve, Christmas lunch and New Year's Eve 2026 menus. Au Crocodile, a Michelin-starred table founded in 1840 on rue de l'Outre, serves lunch Thursday to Saturday and dinner Tuesday to Saturday. Le Buerehiesel, in the Parc de l'Orangerie, opens Tuesday lunch to Saturday dinner and closes from 30 December 2026 to 13 January 2027. For something sweet, Thierry Mulhaupt opens from 8:30 on Saturdays on rue du Vieux Marché aux Poissons, and Cafés Henri on rue des Hallebardes runs a coffee bar Monday to Saturday.",
+        "Beyond the Grande Île, the Barrage Vauban terrace looks back over the old town; from November to February it opens 8:30-16:00. Batorama cruises leave from the Cathédrale or Quai au Sable pontoons, and the operator asks you to check yours carefully while pontoon works continue. At the Parlamentarium Simone Veil, bring a passport or ID card, and note it closes on Sundays. The Parc de l'Orangerie has a zoo, play areas and boating. The city's Christmas market runs 27 November to 24 December 2026, with the Christkindelsmärik on Place Broglie, and for a late drink the Archipel Bar serves until 01:00."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "See Strasbourg Cathedral and its 12:30 clock show, then cross to the Musée de l'Œuvre Notre-Dame's 800-year exhibition, open until 17 January 2027."
+        ],
+        [
+          "A slower morning",
+          "Pick up pastries at Thierry Mulhaupt or coffee at Cafés Henri, then walk out to the Barrage Vauban terrace before an afternoon at MAMCS."
+        ],
+        [
+          "Before booking",
+          "Check museum closing days (Monday for most, Tuesday in the Palais Rohan), reserve Au Fond du Jardin's tea room, and bring physical ID for the Parlamentarium."
+        ]
+      ],
+      trust: "All 28 distinct recommendations in this guide were checked against their operators' own websites on October 27, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

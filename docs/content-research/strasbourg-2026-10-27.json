@@ -1,0 +1,931 @@
+{
+  "city": "Strasbourg, France",
+  "checkedOn": "2026-10-27",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Strasbourg Cathedral",
+      "kind": "landmark",
+      "url": "https://www.cathedrale-strasbourg.fr/horaires_acces",
+      "sourceType": "operator's own site (Cathédrale Notre-Dame de Strasbourg / presbytère)",
+      "address": "Secretariat: '1 rue de Rohan, 67000 Strasbourg'; visitor entrance through the South portal, place du Château side",
+      "operatingEvidence": "Visiting hours page states access is free with no reservation and 'bag checks are mandatory'; the homepage lists weekday Masses on 28-30 October 2026. Astronomical clock page: tickets on the day only (adults €4), Apostles parade at 12:30, no show on Sundays/feast days or during the Christmas market.",
+      "hours": "Mon-Sat 8:30-11:15 and 12:45-17:45; Sundays and public holidays 14:00-17:15; during the Christmas market Mon-Sat 8:30-17:45 continuously",
+      "confidence": "high"
+    },
+    {
+      "name": "Strasbourg Cathedral Platform",
+      "kind": "scenic",
+      "url": "https://www.cathedrale-strasbourg.fr/ascension-cathedrale",
+      "sourceType": "operator's own site (Presbytère Cathédrale Notre-Dame Strasbourg)",
+      "address": "Access 'from the Place du Château, on the right side of the Cathedral'",
+      "operatingEvidence": "Ascent page publishes current seasonal hours with last ascent times; prices not shown on the page read.",
+      "hours": "1 Oct-31 Mar 10:00-13:00 and 13:30-18:00 (last ascent 17:15); 1 Apr-30 Sep 9:30-13:00 and 13:30-20:00 (last ascent 19:15)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Musée de l'Œuvre Notre-Dame",
+      "kind": "museum",
+      "url": "https://www.musees.strasbourg.eu/web/musees/musee-de-l-oeuvre-notre-dame",
+      "sourceType": "official public operator (Musées de la Ville de Strasbourg)",
+      "address": "3 place du Château, Strasbourg",
+      "operatingEvidence": "Current exhibition 'Bâtir · Préserver · Transmettre: Les 800 ans de la Fondation de l'Œuvre Notre-Dame', 18 October 2026 to 17 January 2027.",
+      "hours": "Closed Monday; Tue-Fri 10:00-13:00 and 14:00-18:00; Sat-Sun 10:00-18:00",
+      "confidence": "high"
+    },
+    {
+      "name": "MAMCS (Musée d'Art moderne et contemporain)",
+      "kind": "museum",
+      "url": "https://www.musees.strasbourg.eu/web/musees/musee-d-art-moderne-et-contemporain",
+      "sourceType": "official public operator (Musées de la Ville de Strasbourg)",
+      "address": "1 place Hans-Jean-Arp, Strasbourg",
+      "operatingEvidence": "Exhibition 'L'état sauvage. L'animal dans les collections du MAMCS et du Musée Zoologique', 25 October 2026 to 3 January 2027; admission €9 full, €5 reduced.",
+      "hours": "Closed Monday; weekdays 10:00-13:00 and 14:00-18:00; weekends 10:00-18:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Musée Tomi Ungerer",
+      "kind": "museum",
+      "url": "https://www.musees.strasbourg.eu/web/musees/musee-tomi-ungerer",
+      "sourceType": "official public operator (Musées de la Ville de Strasbourg)",
+      "address": "2 avenue de la Marseillaise, Strasbourg",
+      "operatingEvidence": "Exhibition 'A tire-d'aile. Anna Sommer en dialogue avec les collections', 11 October 2026 to 17 January 2027; admission €9 full, €5 reduced.",
+      "hours": "Closed Monday; weekdays 10:00-13:00 and 14:00-18:00; weekends 10:00-18:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Musée des Beaux-Arts",
+      "kind": "museum",
+      "url": "https://www.musees.strasbourg.eu/web/musees/musee-des-beaux-arts",
+      "sourceType": "official public operator (Musées de la Ville de Strasbourg)",
+      "address": "2 place du Château, Strasbourg (first floor of the Palais Rohan)",
+      "operatingEvidence": "Programme of dated focus visits from 29 October 2026 into January 2027; the upper galleries 'seront fermées tout au long de l'année' since 1 April 2025.",
+      "hours": "Closed Tuesday; Mon and Wed-Fri 10:00-13:00 and 14:00-18:00; weekends 10:00-18:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Musée Archéologique",
+      "kind": "museum",
+      "url": "https://www.musees.strasbourg.eu/web/musees/musee-archeologique",
+      "sourceType": "official public operator (Musées de la Ville de Strasbourg)",
+      "address": "2 place du Château, Strasbourg (Palais Rohan)",
+      "operatingEvidence": "Visit 'Découvrir le Musée Archéologique' scheduled 6 September to 13 December 2026, with further dated visits in January 2027.",
+      "hours": "Closed Tuesday; weekdays 10:00-13:00 and 14:00-18:00; weekends 10:00-18:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Musée des Arts décoratifs",
+      "kind": "museum",
+      "url": "https://www.strasbourg.eu/lieu/-/entity/id/685950/musee-des-arts-decoratifs",
+      "sourceType": "official public operator (Ville et Eurométropole de Strasbourg; notice also on musees.strasbourg.eu)",
+      "address": "2 place du Château, 67000 Strasbourg (Palais Rohan)",
+      "operatingEvidence": "Museums homepage: from 21/09/26 to 19/11/26 only the service areas are open (silverware, clocks, faience, mezzanine) at a reduced 5 € rate; the city page lists 2026-27 holiday hours.",
+      "hours": "Closed Tuesday; Mon and Wed-Fri 10:00-13:00 and 14:00-18:00; Sat-Sun 10:00-18:00; last ticket 17:30",
+      "confidence": "medium"
+    },
+    {
+      "name": "Musée Historique",
+      "kind": "museum",
+      "url": "https://www.musees.strasbourg.eu/web/musees/musee-historique",
+      "sourceType": "official public operator (Musées de la Ville de Strasbourg)",
+      "address": "2 rue du Vieux-Marché-aux-Poissons, Strasbourg",
+      "operatingEvidence": "Visit 'Strasbourg disparue' scheduled 31 October to 19 December 2026, plus December 2026 visits and workshops.",
+      "hours": "Closed Monday; Tue-Fri 10:00-13:00 and 14:00-18:00; weekends 10:00-18:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Musée Zoologique",
+      "kind": "museum",
+      "url": "https://www.musees.strasbourg.eu/web/musees/musee-zoologique",
+      "sourceType": "official public operator (Musées de la Ville de Strasbourg)",
+      "address": "29 boulevard de la Victoire, Strasbourg",
+      "operatingEvidence": "Current exhibition 'Biodivercité. Les animaux de la ville' (no end date shown) and a guided visit on 15 November 2026; it co-hosts 'L'état sauvage' with MAMCS.",
+      "hours": "Closed Monday; weekdays 10:00-13:00 and 14:00-18:00; weekends 10:00-18:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Aubette 1928",
+      "kind": "museum",
+      "url": "https://www.musees.strasbourg.eu/web/musees/aubette-1928",
+      "sourceType": "official public operator (Musées de la Ville de Strasbourg)",
+      "address": "31 place Kléber, Strasbourg",
+      "operatingEvidence": "Free admission; dated programme includes a lecture on 12 November and a concert on 14 November 2026.",
+      "hours": "Wed-Sat 14:00-18:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Parlamentarium Simone Veil",
+      "kind": "museum",
+      "url": "https://visiting.europarl.europa.eu/en/visitor-offer/strasbourg/parlamentarium-simone-veil",
+      "sourceType": "official public operator (European Parliament)",
+      "address": "Louise Weiss building, 1 Allée du Printemps, F-67070 Strasbourg cedex",
+      "operatingEvidence": "Page lists 2026 closure dates (e.g. 2 Nov, and 24 Dec 2026 to 3 Jan 2027) and plenary-week hours; valid physical ID required, airport-style security, no large luggage, under-14s with an adult.",
+      "hours": "Outside plenary sessions Mon-Fri 09:00-18:00, Sat 09:30-12:00 and 13:00-18:00, last entrance 17:00; reduced hours in plenary weeks; closed Sundays and public holidays",
+      "confidence": "high"
+    },
+    {
+      "name": "Strasbourg Christmas Market (Christkindelsmärik, Place Broglie)",
+      "kind": "market",
+      "url": "https://noel.strasbourg.eu/",
+      "sourceType": "official public operator (Ville et Eurométropole de Strasbourg)",
+      "address": "Chrìstkìndelsmärik: Place Broglie; other sites include Places de la Cathédrale et du Château, Place Kléber, Places Benjamin Zix et Saint Thomas",
+      "operatingEvidence": "The city site states the 2026 market runs from 27 November to 24 December 2026.",
+      "hours": "not published on the page read",
+      "confidence": "high"
+    },
+    {
+      "name": "Marché Broglie",
+      "kind": "market",
+      "url": "https://www.strasbourg.eu/lieu/-/entity/id/10650076",
+      "sourceType": "official public operator (Ville et Eurométropole de Strasbourg)",
+      "address": "Place Broglie, 67000 Strasbourg",
+      "operatingEvidence": "Upcoming market days listed for Wednesday 28 and Friday 30 October 2026, with 2026 exceptional closures (1 and 11 November, 25-26 December).",
+      "hours": "Wednesdays and Fridays 07:00-13:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Parc de l'Orangerie",
+      "kind": "park",
+      "url": "https://www.strasbourg.eu/lieu/-/entity/sig/2305_ENV_372/parc-de-l-orangerie",
+      "sourceType": "official public operator (Ville et Eurométropole de Strasbourg)",
+      "address": "Avenue de l'Europe, 67000 Strasbourg",
+      "operatingEvidence": "City page lists a zoo, play areas, small-car rides, boating on the lake and the Micado animal-behaviour house, and an animation programme for January-August 2026.",
+      "hours": "not published on the page read",
+      "confidence": "medium"
+    },
+    {
+      "name": "Barrage Vauban",
+      "kind": "scenic",
+      "url": "https://www.strasbourg.eu/lieu/-/entity/sig/956_CUL_107/grande-ecluse-de-fortification-barrage-vauban",
+      "sourceType": "official public operator (Ville et Eurométropole de Strasbourg)",
+      "address": "Place du Quartier Blanc, rue Sainte-Marguerite, 67000 Strasbourg",
+      "operatingEvidence": "City page lists terrace hours 8:00-19:00 for 28-31 October 2026 and the seasonal timetable for the panoramic terrace.",
+      "hours": "Terrace: Sep-Oct 8:00-19:00; Nov-Feb 8:30-16:00; Mar-Apr 8:00-19:00; May-Aug 7:15-21:00. Lower public passage 6:00-21:00 daily",
+      "confidence": "high"
+    },
+    {
+      "name": "Batorama",
+      "kind": "scenic",
+      "url": "https://www.batorama.com/",
+      "sourceType": "operator's own site",
+      "address": "Boarding at 'pontoon D of the Cathédrale landing stage' or 'pontoons 1 and 2 of the Quai au Sable landing stage', about 100 m apart",
+      "operatingEvidence": "News dated 14/10/2026 announces two new cruises, 'Les Croisières de l'art'; online ticketing; a pontoon-works notice asks you to check your boarding pontoon. The red circuit was shown as unavailable.",
+      "hours": "not published (departures load dynamically); circuits 45 min to 1h10",
+      "confidence": "medium"
+    },
+    {
+      "name": "Le Vaisseau",
+      "kind": "museum",
+      "url": "https://www.levaisseau.com/",
+      "sourceType": "operator's own site (Collectivité européenne d'Alsace); address from the city's page https://www.strasbourg.eu/lieu/-/entity/id/685894/le-vaisseau",
+      "address": "1bis rue Philippe Dollinger, 67000 Strasbourg (city page)",
+      "operatingEvidence": "Temporary exhibition 'LUNE' 'À partir du 3 octobre 2026'; open 'toute l'année' with online ticketing. City agenda lists 'Petit théâtre des sciences' 17/10/2026-20/12/2026.",
+      "hours": "not published on the pages read",
+      "confidence": "medium"
+    },
+    {
+      "name": "Planétarium du Jardin des Sciences",
+      "kind": "museum",
+      "url": "https://jardin-sciences.unistra.fr/",
+      "sourceType": "official public operator (Université de Strasbourg, Jardin des sciences)",
+      "address": "27 boulevard de la Victoire, Strasbourg",
+      "operatingEvidence": "'Architectures célestes' sessions on Friday 6 November 2026 at 18:30, 19:45 and 21:00; online ticketing.",
+      "hours": "not published on the page read",
+      "confidence": "medium"
+    },
+    {
+      "name": "Maison Kammerzell",
+      "kind": "meal",
+      "url": "https://www.maison-kammerzell.com/",
+      "sourceType": "operator's own site",
+      "address": "16 Place de la Cathédrale, 67000 Strasbourg",
+      "operatingEvidence": "Holiday menus published for Christmas Eve dinner (24 December 2026), Christmas lunch (25 December 2026) and New Year's Eve (31 December 2026); online table booking.",
+      "hours": "not published on the page read",
+      "confidence": "high"
+    },
+    {
+      "name": "Au Crocodile",
+      "kind": "meal",
+      "url": "https://www.au-crocodile.com/",
+      "sourceType": "operator's own site",
+      "address": "10-12 rue de l'Outre, 67000 Strasbourg",
+      "operatingEvidence": "Michelin-starred, founded 1840; online booking with immediate confirmation; new 'L'Instant Déjeuner' Thursday and Friday lunch at €72 (excluding the Christmas market and holidays). No explicit 2026 date in page text.",
+      "hours": "Lunch Thursday to Saturday; dinner Tuesday to Saturday",
+      "confidence": "medium"
+    },
+    {
+      "name": "Le Buerehiesel",
+      "kind": "meal",
+      "url": "https://www.buerehiesel.fr/",
+      "sourceType": "operator's own site",
+      "address": "4, parc de l'Orangerie, 67000 Strasbourg",
+      "operatingEvidence": "Business menu dated 27-28 October 2026 at €55; exceptional Sunday openings 13, 20 and 27 December 2026; annual closure 30 December 2026 to 13 January 2027.",
+      "hours": "Tuesday lunch to Saturday dinner; lunch 12:00-13:30, dinner 19:30-21:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Chez Yvonne",
+      "kind": "meal",
+      "url": "https://www.restaurant-chez-yvonne.net/",
+      "sourceType": "operator's own site",
+      "address": "10 Rue du Sanglier, 67000 Strasbourg",
+      "operatingEvidence": "Online table booking plus Christmas Eve and New Year's Eve dinner menus with reservations (year not stated).",
+      "hours": "not published on the page read",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bar de la Cour du Corbeau",
+      "kind": "bar",
+      "url": "https://mgallery.accor.com/en/hotels/7575/B001.bar.html",
+      "sourceType": "operator's own site (Cour du Corbeau Hotel Strasbourg, MGallery / Accor)",
+      "address": "6-8 rue des Couples, 67000 Strasbourg",
+      "operatingEvidence": "Bar page publishes current weekly hours and describes 'imaginative cocktails' with local flavours and cheese and charcuterie boards; no 2026-dated item.",
+      "hours": "Mon-Thu and Sun 14:00-23:30; Fri-Sat 14:00-00:00; summer terrace only",
+      "confidence": "medium"
+    },
+    {
+      "name": "Archipel Bar (AC Hotel Strasbourg)",
+      "kind": "bar",
+      "url": "https://www.marriott.com/en-us/hotels/sxbar-ac-hotel-strasbourg/dining",
+      "sourceType": "operator's own site (AC Hotel Strasbourg / Marriott)",
+      "address": "4-6 Boulevard de Dresde, Strasbourg, 67000",
+      "operatingEvidence": "Dining page lists the bar 'Everyday, 5:00 PM to 1:00 AM' and a rooftop terrace 'during the summer season (weather permitting)'.",
+      "hours": "Daily 17:00-01:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Thierry Mulhaupt (Rue du Vieux Marché aux Poissons)",
+      "kind": "bakery",
+      "url": "https://www.mulhaupt.fr/patisseries-mulhaupt/patisserie-mulhaupt-rdvm-strasbourg",
+      "sourceType": "operator's own site",
+      "address": "18 rue du Vieux Marché aux Poissons, 67000 Strasbourg",
+      "operatingEvidence": "Shop page notice: 'nos boutiques seront fermées le dimanche 4 octobre 2026'; homepage shows a new autumn-winter menu and an atelier open day on 15 November 2026.",
+      "hours": "Tue-Thu 10:00-13:00 and 14:00-18:00; Fri 9:30-13:00 and 14:00-18:00; Sat 8:30-18:00; Sun 8:30-12:00; closed Monday and public holidays",
+      "confidence": "high"
+    },
+    {
+      "name": "Thierry Mulhaupt (Temple Neuf)",
+      "kind": "bakery",
+      "url": "https://www.mulhaupt.fr/patisseries-mulhaupt/temple-neuf-strasbourg",
+      "sourceType": "operator's own site",
+      "address": "5 rue du Temple Neuf, 67000 Strasbourg",
+      "operatingEvidence": "Shop page publishes current hours and links a 'Croqueurs de Chocolat 2026' award item; the brand's 4 October 2026 closure notice covers 'nos boutiques'.",
+      "hours": "Tue-Thu 10:00-12:30 and 13:30-18:00; Fri 09:00-12:30 and 13:30-18:00; Sat 09:00-18:00; closed Sunday, Monday and public holidays",
+      "confidence": "high"
+    },
+    {
+      "name": "Au Fond du Jardin",
+      "kind": "cafe",
+      "url": "https://www.aufonddujardin.fr/",
+      "sourceType": "operator's own site",
+      "address": "6 Rue de la Râpe, 67000 Strasbourg",
+      "operatingEvidence": "Tea room 'Sur réservation' via online booking; 'Calendrier de l'Avent 2026' on pre-order at €52.",
+      "hours": "Tea room Wed-Sun, two services (from 14:00/16:00 and 16:30-18:30); shop Wed-Sun 10:00-13:00 and 14:00-18:30",
+      "confidence": "high"
+    },
+    {
+      "name": "Cafés Henri (Strasbourg Centre)",
+      "kind": "cafe",
+      "url": "https://www.cafeshenri.fr/content/40-strasbourg-centre",
+      "sourceType": "operator's own site",
+      "address": "31 rue des Hallebardes, 67000 Strasbourg",
+      "operatingEvidence": "Branch page describes a coffee bar with barista tastings of 'pures origines', a terrace and a current coffee of the month ('Mexique Extra Prime'); no 2026-dated notice.",
+      "hours": "Monday to Saturday 9:30-19:00",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Musée Alsacien",
+      "reason": "Official site says closed for works, reopening planned for 2028",
+      "url": "https://www.musees.strasbourg.eu/"
+    },
+    {
+      "name": "Maison des Tanneurs",
+      "reason": "Fetch failed with TLS error (TLSV1_ALERT_UNRECOGNIZED_NAME); not bypassed, not evidence of closure",
+      "url": "https://www.maison-des-tanneurs.com/"
+    },
+    {
+      "name": "Brasserie Les Haras",
+      "reason": "Certificate error ('unable to verify the first certificate'); not bypassed",
+      "url": "https://www.les-haras.fr/"
+    },
+    {
+      "name": "Pâtisserie Christian",
+      "reason": "Official site returned only a page title, no readable address or hours",
+      "url": "https://www.christian.fr/"
+    },
+    {
+      "name": "Maison Naegel",
+      "reason": "Official site returned HTTP 406; not bypassed",
+      "url": "https://www.maison-naegel.com/"
+    },
+    {
+      "name": "Hôtel Régent Petite France (restaurant and bar)",
+      "reason": "Official page read gives no bar/restaurant name, hours or current operating evidence",
+      "url": "https://www.regent-petite-france.com/"
+    },
+    {
+      "name": "Omnino",
+      "reason": "Official homepage gives only a company postal address, no café address or current content",
+      "url": "https://www.omnino.fr/"
+    },
+    {
+      "name": "Café Bretelles",
+      "reason": "No official website found (guessed domains do not resolve; only social media and review listings)",
+      "url": ""
+    },
+    {
+      "name": "Mokxa",
+      "reason": "No official website found; mokxa.com belongs to an unrelated company",
+      "url": ""
+    },
+    {
+      "name": "Coffee Stub",
+      "reason": "No official website found; only directory and review listings",
+      "url": ""
+    },
+    {
+      "name": "L'Alchimiste",
+      "reason": "No official website found (domain does not resolve)",
+      "url": ""
+    },
+    {
+      "name": "Les Aviateurs",
+      "reason": "No official website found; only directory listings",
+      "url": ""
+    },
+    {
+      "name": "Code Bar",
+      "reason": "No official website found; only directory listings",
+      "url": ""
+    },
+    {
+      "name": "The Drunky Stork Social Club",
+      "reason": "No official website found; only directory listings",
+      "url": ""
+    },
+    {
+      "name": "Au Pont Corbeau",
+      "reason": "No official website found; only guide listings",
+      "url": ""
+    },
+    {
+      "name": "Winstub Le Clou",
+      "reason": "No official website found; only guide listings",
+      "url": ""
+    },
+    {
+      "name": "La Petite France",
+      "reason": "historic district, not a single operated place; covered via Batorama, Barrage Vauban and Cour du Corbeau nearby",
+      "url": ""
+    },
+    {
+      "name": "European Quarter",
+      "reason": "district, not a single operated place; covered via Parlamentarium Simone Veil and Parc de l'Orangerie",
+      "url": ""
+    },
+    {
+      "name": "Canal boat ride",
+      "reason": "generic, not a place; replaced by Batorama",
+      "url": ""
+    },
+    {
+      "name": "Christmas market season",
+      "reason": "generic, not a place; replaced by Strasbourg Christmas Market (Christkindelsmärik, Place Broglie)",
+      "url": ""
+    },
+    {
+      "name": "A day through Alsace villages",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "an Alsatian lunch",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Strasbourg market or cafe",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local dinner in Grande Ile",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Petite France",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Krutenau",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Grande Ile",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Grande Ile walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Petite France",
+      "reason": "generic, not a place; replaced by Barrage Vauban",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Krutenau",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Krutenau",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for La Petite France",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Grande Ile",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Canal boat ride",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Petite France",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Strasbourg Cathedral",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Grande Ile evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Petite France",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Krutenau",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Grande Ile",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly La Petite France",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Petite France",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Krutenau",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Grande Ile",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to La Petite France",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Grande Ile cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Christmas market season",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Krutenau",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Krutenau",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Grande Ile",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Grande Ile",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Petite France bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before La Petite France",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Krutenau",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Grande Ile",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Strasbourg Cathedral",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Krutenau",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Grande Ile",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Petite France",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Krutenau",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Grande Ile",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Grande Ile",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Petite France",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near European Quarter",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Grande Ile",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Petite France morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before La Petite France",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Krutenau",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Grande Ile",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Petite France",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Krutenau",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Strasbourg Cathedral",
+        "Musée de l'Œuvre Notre-Dame",
+        "Barrage Vauban",
+        "Batorama"
+      ],
+      "bestFirstTimers": [
+        "Strasbourg Cathedral",
+        "Strasbourg Cathedral Platform",
+        "Batorama",
+        "Musée Historique"
+      ],
+      "bestRestaurants": [
+        "Au Crocodile",
+        "Le Buerehiesel",
+        "Maison Kammerzell",
+        "Chez Yvonne"
+      ],
+      "bestBudget": [
+        "Aubette 1928",
+        "Barrage Vauban",
+        "Parc de l'Orangerie",
+        "Marché Broglie"
+      ],
+      "bestLuxury": [
+        "Au Crocodile",
+        "Le Buerehiesel",
+        "Bar de la Cour du Corbeau"
+      ],
+      "bestCouples": [
+        "Strasbourg Cathedral Platform",
+        "Batorama",
+        "Bar de la Cour du Corbeau",
+        "Au Fond du Jardin"
+      ],
+      "bestKids": [
+        "Le Vaisseau",
+        "Parc de l'Orangerie",
+        "Musée Zoologique",
+        "Planétarium du Jardin des Sciences"
+      ],
+      "bestSolo": [
+        "MAMCS (Musée d'Art moderne et contemporain)",
+        "Musée Tomi Ungerer",
+        "Musée des Beaux-Arts",
+        "Cafés Henri (Strasbourg Centre)"
+      ],
+      "bestUnique": [
+        "Parlamentarium Simone Veil",
+        "Aubette 1928",
+        "Musée Archéologique",
+        "Strasbourg Christmas Market (Christkindelsmärik, Place Broglie)"
+      ],
+      "bestBreakfast": [
+        "Thierry Mulhaupt (Rue du Vieux Marché aux Poissons)",
+        "Cafés Henri (Strasbourg Centre)",
+        "Marché Broglie"
+      ],
+      "bestLunch": [
+        "Maison Kammerzell",
+        "Au Crocodile",
+        "Le Buerehiesel",
+        "Chez Yvonne"
+      ],
+      "bestDinner": [
+        "Au Crocodile",
+        "Le Buerehiesel",
+        "Maison Kammerzell",
+        "Chez Yvonne"
+      ],
+      "bestCocktails": [
+        "Bar de la Cour du Corbeau",
+        "Archipel Bar (AC Hotel Strasbourg)"
+      ],
+      "bestBakeries": [
+        "Thierry Mulhaupt (Rue du Vieux Marché aux Poissons)",
+        "Thierry Mulhaupt (Temple Neuf)",
+        "Au Fond du Jardin"
+      ],
+      "bestCoffee": [
+        "Cafés Henri (Strasbourg Centre)",
+        "Au Fond du Jardin"
+      ]
+    },
+    "queries": {
+      "Strasbourg Cathedral": "Cathédrale Notre-Dame Place du Château Strasbourg",
+      "Strasbourg Cathedral Platform": "Plateforme Cathédrale Notre-Dame Place du Château Strasbourg",
+      "Musée de l'Œuvre Notre-Dame": "Musée de l'Œuvre Notre-Dame 3 place du Château Strasbourg",
+      "MAMCS (Musée d'Art moderne et contemporain)": "MAMCS 1 place Hans-Jean-Arp Strasbourg",
+      "Musée Tomi Ungerer": "Musée Tomi Ungerer 2 avenue de la Marseillaise Strasbourg",
+      "Musée des Beaux-Arts": "Musée des Beaux-Arts Palais Rohan 2 place du Château Strasbourg",
+      "Musée Archéologique": "Musée Archéologique Palais Rohan 2 place du Château Strasbourg",
+      "Musée des Arts décoratifs": "Musée des Arts décoratifs Palais Rohan 2 place du Château Strasbourg",
+      "Musée Historique": "Musée Historique 2 rue du Vieux-Marché-aux-Poissons Strasbourg",
+      "Musée Zoologique": "Musée Zoologique 29 boulevard de la Victoire Strasbourg",
+      "Aubette 1928": "Aubette 1928 31 place Kléber Strasbourg",
+      "Parlamentarium Simone Veil": "Parlamentarium Simone Veil 1 Allée du Printemps Strasbourg",
+      "Strasbourg Christmas Market (Christkindelsmärik, Place Broglie)": "Christkindelsmärik Place Broglie Strasbourg",
+      "Marché Broglie": "Marché Broglie Place Broglie Strasbourg",
+      "Parc de l'Orangerie": "Parc de l'Orangerie Avenue de l'Europe Strasbourg",
+      "Barrage Vauban": "Barrage Vauban Place du Quartier Blanc rue Sainte-Marguerite Strasbourg",
+      "Batorama": "Batorama embarcadère Cathédrale Palais Rohan Strasbourg",
+      "Le Vaisseau": "Le Vaisseau 1bis rue Philippe Dollinger Strasbourg",
+      "Planétarium du Jardin des Sciences": "Planétarium Jardin des Sciences 27 boulevard de la Victoire Strasbourg",
+      "Maison Kammerzell": "Maison Kammerzell 16 Place de la Cathédrale Strasbourg",
+      "Au Crocodile": "Au Crocodile 10 rue de l'Outre Strasbourg",
+      "Le Buerehiesel": "Le Buerehiesel 4 parc de l'Orangerie Strasbourg",
+      "Chez Yvonne": "Chez Yvonne 10 Rue du Sanglier Strasbourg",
+      "Bar de la Cour du Corbeau": "Cour du Corbeau 6-8 rue des Couples Strasbourg",
+      "Archipel Bar (AC Hotel Strasbourg)": "AC Hotel Strasbourg 4-6 Boulevard de Dresde Strasbourg",
+      "Thierry Mulhaupt (Rue du Vieux Marché aux Poissons)": "Thierry Mulhaupt 18 rue du Vieux Marché aux Poissons Strasbourg",
+      "Thierry Mulhaupt (Temple Neuf)": "Thierry Mulhaupt 5 rue du Temple Neuf Strasbourg",
+      "Au Fond du Jardin": "Au Fond du Jardin 6 Rue de la Râpe Strasbourg",
+      "Cafés Henri (Strasbourg Centre)": "Cafés Henri 31 rue des Hallebardes Strasbourg"
+    },
+    "summary": "The cathedral, city museums, canal cruises and parks, with Alsatian restaurants, pâtisseries, a coffee bar and cocktail bars checked against their own websites.",
+    "highlights": [
+      "Strasbourg Cathedral",
+      "Musée de l'Œuvre Notre-Dame",
+      "Barrage Vauban",
+      "Parlamentarium Simone Veil"
+    ],
+    "tip": "Most city museums close on Mondays, but the three in the Palais Rohan (Beaux-Arts, Archéologique, Arts décoratifs) close on Tuesdays instead, so plan museum days around both.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mon or Tue",
+        "copy": "Musée de l'Œuvre Notre-Dame, MAMCS, Tomi Ungerer, Historique and Zoologique close on Mondays; Beaux-Arts, Archéologique and Arts décoratifs close on Tuesdays. Aubette 1928 opens only Wednesday to Saturday, 14:00-18:00."
+      },
+      {
+        "label": "Same-day tickets",
+        "value": "Clock show",
+        "copy": "Astronomical clock tickets at Strasbourg Cathedral are sold only on the day (adults €4), with the Apostles parade at 12:30; there is no show on Sundays and feast days or during the Christmas market."
+      },
+      {
+        "label": "Book ahead",
+        "value": "Tables and tea",
+        "copy": "Au Fond du Jardin's tea room works 'Sur réservation' in two afternoon services, Wednesday to Sunday. Au Crocodile takes online bookings, and its 'Instant Déjeuner' (€72) runs only on Thursday and Friday lunch."
+      },
+      {
+        "label": "Rules",
+        "value": "ID and bags",
+        "copy": "The Parlamentarium Simone Veil requires a physical ID card or passport, runs airport-style security and bans large luggage; under-14s must be with an adult. Strasbourg Cathedral checks bags at the South portal."
+      }
+    ],
+    "dek": "Start at the cathedral before noon, then pick museums by closing day, since Monday and Tuesday closures split the city's collections.",
+    "intro": [
+      "Strasbourg Cathedral is free to enter with no reservation; you go in through the South portal on the place du Château side, where bags are checked. It opens Monday to Saturday 8:30-11:15 and 12:45-17:45, and Sunday afternoons. The astronomical clock show needs a same-day ticket (adults €4): doors open at 11:30 and the Apostles parade at 12:30, but not on Sundays, feast days or during the Christmas market. The platform climb starts from the same square and, from October to March, runs 10:00-13:00 and 13:30-18:00, with last ascent at 17:15.",
+      "Across the square, the Musée de l'Œuvre Notre-Dame marks 800 years of the foundation that built the cathedral, with an exhibition running until 17 January 2027. The Palais Rohan holds the Beaux-Arts and Archéologique museums, both closed on Tuesdays; the Arts décoratifs is open only in its service areas, at €5, until 19 November 2026. At MAMCS, 'L'état sauvage' runs to 3 January 2027, while the Musée Tomi Ungerer shows Anna Sommer until 17 January 2027. The Musée Alsacien is closed for works until a planned 2028 reopening. Aubette 1928 on place Kléber is free, Wednesday to Saturday afternoons.",
+      "For an Alsatian meal by the cathedral, Maison Kammerzell at 16 Place de la Cathédrale has published its Christmas Eve, Christmas lunch and New Year's Eve 2026 menus. Au Crocodile, a Michelin-starred table founded in 1840 on rue de l'Outre, serves lunch Thursday to Saturday and dinner Tuesday to Saturday. Le Buerehiesel, in the Parc de l'Orangerie, opens Tuesday lunch to Saturday dinner and closes from 30 December 2026 to 13 January 2027. For something sweet, Thierry Mulhaupt opens from 8:30 on Saturdays on rue du Vieux Marché aux Poissons, and Cafés Henri on rue des Hallebardes runs a coffee bar Monday to Saturday.",
+      "Beyond the Grande Île, the Barrage Vauban terrace looks back over the old town; from November to February it opens 8:30-16:00. Batorama cruises leave from the Cathédrale or Quai au Sable pontoons, and the operator asks you to check yours carefully while pontoon works continue. At the Parlamentarium Simone Veil, bring a passport or ID card, and note it closes on Sundays. The Parc de l'Orangerie has a zoo, play areas and boating. The city's Christmas market runs 27 November to 24 December 2026, with the Christkindelsmärik on Place Broglie, and for a late drink the Archipel Bar serves until 01:00."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "See Strasbourg Cathedral and its 12:30 clock show, then cross to the Musée de l'Œuvre Notre-Dame's 800-year exhibition, open until 17 January 2027."
+      ],
+      [
+        "A slower morning",
+        "Pick up pastries at Thierry Mulhaupt or coffee at Cafés Henri, then walk out to the Barrage Vauban terrace before an afternoon at MAMCS."
+      ],
+      [
+        "Before booking",
+        "Check museum closing days (Monday for most, Tuesday in the Palais Rohan), reserve Au Fond du Jardin's tea room, and bring physical ID for the Parlamentarium."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Sites that could not be read: Maison des Tanneurs (TLS error), Brasserie Les Haras (certificate error), Maison Naegel (HTTP 406) and Pâtisserie Christian (no readable content); popular cafés and cocktail bars such as Café Bretelles, Mokxa, Coffee Stub, L'Alchimiste, Les Aviateurs and Code Bar had no official website we could find, which leaves the coffee and cocktail lists short. Published only partially: hours were not shown for Maison Kammerzell, Chez Yvonne, the Christmas market, Parc de l'Orangerie, Le Vaisseau, the planetarium and Batorama (departures load dynamically), and cathedral platform prices were not shown. Le Vaisseau's street address comes from the City of Strasbourg's page, not its operator's. Au Crocodile, Chez Yvonne, the Cour du Corbeau bar, Archipel Bar and Cafés Henri show current hours or menus but no explicitly 2026-dated item. The automated reader reported hidden sections addressed to AI assistants on some pages but could not reproduce them word for word (see injectionLikeText).",
+  "injectionLikeText": [],
+  "injectionLikeTextIgnored": [
+    "strasbourg.eu place pages (Marché Broglie https://www.strasbourg.eu/lieu/-/entity/id/10650076, Parc de l'Orangerie, Barrage Vauban): the fetch tool reported a hidden section labelled 'Caché' containing instructions for AI assistants (formatting rules, quote limits). Ignored; exact wording could not be retrieved.",
+    "https://www.cafeshenri.fr/fr/content/15-boutiques: one fetch reported text asking AI assistants to quote content; a second fetch of the same page found none. Ignored; wording not retrieved.",
+    "https://www.au-crocodile.com/: one fetch reported a passage asking AI assistants to cite certain texts; two later fetches found none. Ignored; wording not retrieved.",
+    "2026-10-27: the Marché Broglie page on strasbourg.eu was opened in a browser and its full HTML and hidden elements searched. The only hidden text is a search-results limit message; no AI-directed instructions were present."
+  ]
+}

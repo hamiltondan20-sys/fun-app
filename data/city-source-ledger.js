@@ -5,6 +5,652 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Strasbourg, France": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-27",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Sites that could not be read: Maison des Tanneurs (TLS error), Brasserie Les Haras (certificate error), Maison Naegel (HTTP 406) and Pâtisserie Christian (no readable content); popular cafés and cocktail bars such as Café Bretelles, Mokxa, Coffee Stub, L'Alchimiste, Les Aviateurs and Code Bar had no official website we could find, which leaves the coffee and cocktail lists short. Published only partially: hours were not shown for Maison Kammerzell, Chez Yvonne, the Christmas market, Parc de l'Orangerie, Le Vaisseau, the planetarium and Batorama (departures load dynamically), and cathedral platform prices were not shown. Le Vaisseau's street address comes from the City of Strasbourg's page, not its operator's. Au Crocodile, Chez Yvonne, the Cour du Corbeau bar, Archipel Bar and Cafés Henri show current hours or menus but no explicitly 2026-dated item. The automated reader reported hidden sections addressed to AI assistants on some pages but could not reproduce them word for word (see injectionLikeText).",
+    "sourceUrls": [
+      "docs/content-research/strasbourg-2026-10-27.md",
+      "docs/content-research/strasbourg-2026-10-27.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Musée Alsacien",
+        "url": "https://www.musees.strasbourg.eu/",
+        "checkedOn": "2026-10-27",
+        "reason": "Official site says closed for works, reopening planned for 2028"
+      },
+      {
+        "name": "Maison des Tanneurs",
+        "url": "https://www.maison-des-tanneurs.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "Fetch failed with TLS error (TLSV1_ALERT_UNRECOGNIZED_NAME); not bypassed, not evidence of closure"
+      },
+      {
+        "name": "Brasserie Les Haras",
+        "url": "https://www.les-haras.fr/",
+        "checkedOn": "2026-10-27",
+        "reason": "Certificate error ('unable to verify the first certificate'); not bypassed"
+      },
+      {
+        "name": "Pâtisserie Christian",
+        "url": "https://www.christian.fr/",
+        "checkedOn": "2026-10-27",
+        "reason": "Official site returned only a page title, no readable address or hours"
+      },
+      {
+        "name": "Maison Naegel",
+        "url": "https://www.maison-naegel.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "Official site returned HTTP 406; not bypassed"
+      },
+      {
+        "name": "Hôtel Régent Petite France (restaurant and bar)",
+        "url": "https://www.regent-petite-france.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "Official page read gives no bar/restaurant name, hours or current operating evidence"
+      },
+      {
+        "name": "Omnino",
+        "url": "https://www.omnino.fr/",
+        "checkedOn": "2026-10-27",
+        "reason": "Official homepage gives only a company postal address, no café address or current content"
+      },
+      {
+        "name": "Café Bretelles",
+        "checkedOn": "2026-10-27",
+        "reason": "No official website found (guessed domains do not resolve; only social media and review listings)"
+      },
+      {
+        "name": "Mokxa",
+        "checkedOn": "2026-10-27",
+        "reason": "No official website found; mokxa.com belongs to an unrelated company"
+      },
+      {
+        "name": "Coffee Stub",
+        "checkedOn": "2026-10-27",
+        "reason": "No official website found; only directory and review listings"
+      },
+      {
+        "name": "L'Alchimiste",
+        "checkedOn": "2026-10-27",
+        "reason": "No official website found (domain does not resolve)"
+      },
+      {
+        "name": "Les Aviateurs",
+        "checkedOn": "2026-10-27",
+        "reason": "No official website found; only directory listings"
+      },
+      {
+        "name": "Code Bar",
+        "checkedOn": "2026-10-27",
+        "reason": "No official website found; only directory listings"
+      },
+      {
+        "name": "The Drunky Stork Social Club",
+        "checkedOn": "2026-10-27",
+        "reason": "No official website found; only directory listings"
+      },
+      {
+        "name": "Au Pont Corbeau",
+        "checkedOn": "2026-10-27",
+        "reason": "No official website found; only guide listings"
+      },
+      {
+        "name": "Winstub Le Clou",
+        "checkedOn": "2026-10-27",
+        "reason": "No official website found; only guide listings"
+      },
+      {
+        "name": "La Petite France",
+        "checkedOn": "2026-10-27",
+        "reason": "historic district, not a single operated place; covered via Batorama, Barrage Vauban and Cour du Corbeau nearby"
+      },
+      {
+        "name": "European Quarter",
+        "checkedOn": "2026-10-27",
+        "reason": "district, not a single operated place; covered via Parlamentarium Simone Veil and Parc de l'Orangerie"
+      },
+      {
+        "name": "Canal boat ride",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place; replaced by Batorama"
+      },
+      {
+        "name": "Christmas market season",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place; replaced by Strasbourg Christmas Market (Christkindelsmärik, Place Broglie)"
+      },
+      {
+        "name": "A day through Alsace villages",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "an Alsatian lunch",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Strasbourg market or cafe",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local dinner in Grande Ile",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Petite France",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Krutenau",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Grande Ile",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Grande Ile walk",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Petite France",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place; replaced by Barrage Vauban"
+      },
+      {
+        "name": "Market meal around Krutenau",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Krutenau",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for La Petite France",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Grande Ile",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Canal boat ride",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Petite France",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Strasbourg Cathedral",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Grande Ile evening",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Petite France",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Krutenau",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Grande Ile",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly La Petite France",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Petite France",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Krutenau",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Grande Ile",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to La Petite France",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Grande Ile cafe or market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Christmas market season",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Krutenau",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Krutenau",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Grande Ile",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Grande Ile",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Petite France bakery or market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before La Petite France",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Krutenau",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Grande Ile",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Strasbourg Cathedral",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Krutenau",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Grande Ile",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Petite France",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Krutenau",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Grande Ile",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Grande Ile",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Petite France",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near European Quarter",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Grande Ile",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Petite France morning market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before La Petite France",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Krutenau",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Grande Ile",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Petite France",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Krutenau",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Strasbourg Cathedral": {
+        "url": "https://www.cathedrale-strasbourg.fr/horaires_acces",
+        "sourceType": "operator's own site (Cathédrale Notre-Dame de Strasbourg / presbytère)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Visiting hours page states access is free with no reservation and 'bag checks are mandatory'; the homepage lists weekday Masses on 28-30 October 2026. Astronomical clock page: tickets on the day only (adults €4), Apostles parade at 12:30, no show on Sundays/feast days or during the Christmas market."
+      },
+      "Strasbourg Cathedral Platform": {
+        "url": "https://www.cathedrale-strasbourg.fr/ascension-cathedrale",
+        "sourceType": "operator's own site (Presbytère Cathédrale Notre-Dame Strasbourg)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Ascent page publishes current seasonal hours with last ascent times; prices not shown on the page read."
+      },
+      "Musée de l'Œuvre Notre-Dame": {
+        "url": "https://www.musees.strasbourg.eu/web/musees/musee-de-l-oeuvre-notre-dame",
+        "sourceType": "official public operator (Musées de la Ville de Strasbourg)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Current exhibition 'Bâtir · Préserver · Transmettre: Les 800 ans de la Fondation de l'Œuvre Notre-Dame', 18 October 2026 to 17 January 2027."
+      },
+      "MAMCS (Musée d'Art moderne et contemporain)": {
+        "url": "https://www.musees.strasbourg.eu/web/musees/musee-d-art-moderne-et-contemporain",
+        "sourceType": "official public operator (Musées de la Ville de Strasbourg)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Exhibition 'L'état sauvage. L'animal dans les collections du MAMCS et du Musée Zoologique', 25 October 2026 to 3 January 2027; admission €9 full, €5 reduced."
+      },
+      "Musée Tomi Ungerer": {
+        "url": "https://www.musees.strasbourg.eu/web/musees/musee-tomi-ungerer",
+        "sourceType": "official public operator (Musées de la Ville de Strasbourg)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Exhibition 'A tire-d'aile. Anna Sommer en dialogue avec les collections', 11 October 2026 to 17 January 2027; admission €9 full, €5 reduced."
+      },
+      "Musée des Beaux-Arts": {
+        "url": "https://www.musees.strasbourg.eu/web/musees/musee-des-beaux-arts",
+        "sourceType": "official public operator (Musées de la Ville de Strasbourg)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Programme of dated focus visits from 29 October 2026 into January 2027; the upper galleries 'seront fermées tout au long de l'année' since 1 April 2025."
+      },
+      "Musée Archéologique": {
+        "url": "https://www.musees.strasbourg.eu/web/musees/musee-archeologique",
+        "sourceType": "official public operator (Musées de la Ville de Strasbourg)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Visit 'Découvrir le Musée Archéologique' scheduled 6 September to 13 December 2026, with further dated visits in January 2027."
+      },
+      "Musée Historique": {
+        "url": "https://www.musees.strasbourg.eu/web/musees/musee-historique",
+        "sourceType": "official public operator (Musées de la Ville de Strasbourg)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Visit 'Strasbourg disparue' scheduled 31 October to 19 December 2026, plus December 2026 visits and workshops."
+      },
+      "Musée Zoologique": {
+        "url": "https://www.musees.strasbourg.eu/web/musees/musee-zoologique",
+        "sourceType": "official public operator (Musées de la Ville de Strasbourg)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Current exhibition 'Biodivercité. Les animaux de la ville' (no end date shown) and a guided visit on 15 November 2026; it co-hosts 'L'état sauvage' with MAMCS."
+      },
+      "Aubette 1928": {
+        "url": "https://www.musees.strasbourg.eu/web/musees/aubette-1928",
+        "sourceType": "official public operator (Musées de la Ville de Strasbourg)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Free admission; dated programme includes a lecture on 12 November and a concert on 14 November 2026."
+      },
+      "Parlamentarium Simone Veil": {
+        "url": "https://visiting.europarl.europa.eu/en/visitor-offer/strasbourg/parlamentarium-simone-veil",
+        "sourceType": "official public operator (European Parliament)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Page lists 2026 closure dates (e.g. 2 Nov, and 24 Dec 2026 to 3 Jan 2027) and plenary-week hours; valid physical ID required, airport-style security, no large luggage, under-14s with an adult."
+      },
+      "Strasbourg Christmas Market (Christkindelsmärik, Place Broglie)": {
+        "url": "https://noel.strasbourg.eu/",
+        "sourceType": "official public operator (Ville et Eurométropole de Strasbourg)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "The city site states the 2026 market runs from 27 November to 24 December 2026."
+      },
+      "Marché Broglie": {
+        "url": "https://www.strasbourg.eu/lieu/-/entity/id/10650076",
+        "sourceType": "official public operator (Ville et Eurométropole de Strasbourg)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Upcoming market days listed for Wednesday 28 and Friday 30 October 2026, with 2026 exceptional closures (1 and 11 November, 25-26 December)."
+      },
+      "Parc de l'Orangerie": {
+        "url": "https://www.strasbourg.eu/lieu/-/entity/sig/2305_ENV_372/parc-de-l-orangerie",
+        "sourceType": "official public operator (Ville et Eurométropole de Strasbourg)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "City page lists a zoo, play areas, small-car rides, boating on the lake and the Micado animal-behaviour house, and an animation programme for January-August 2026."
+      },
+      "Barrage Vauban": {
+        "url": "https://www.strasbourg.eu/lieu/-/entity/sig/956_CUL_107/grande-ecluse-de-fortification-barrage-vauban",
+        "sourceType": "official public operator (Ville et Eurométropole de Strasbourg)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "City page lists terrace hours 8:00-19:00 for 28-31 October 2026 and the seasonal timetable for the panoramic terrace."
+      },
+      "Batorama": {
+        "url": "https://www.batorama.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "News dated 14/10/2026 announces two new cruises, 'Les Croisières de l'art'; online ticketing; a pontoon-works notice asks you to check your boarding pontoon. The red circuit was shown as unavailable."
+      },
+      "Le Vaisseau": {
+        "url": "https://www.levaisseau.com/",
+        "sourceType": "operator's own site (Collectivité européenne d'Alsace); address from the city's page https://www.strasbourg.eu/lieu/-/entity/id/685894/le-vaisseau",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Temporary exhibition 'LUNE' 'À partir du 3 octobre 2026'; open 'toute l'année' with online ticketing. City agenda lists 'Petit théâtre des sciences' 17/10/2026-20/12/2026."
+      },
+      "Planétarium du Jardin des Sciences": {
+        "url": "https://jardin-sciences.unistra.fr/",
+        "sourceType": "official public operator (Université de Strasbourg, Jardin des sciences)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "'Architectures célestes' sessions on Friday 6 November 2026 at 18:30, 19:45 and 21:00; online ticketing."
+      },
+      "Maison Kammerzell": {
+        "url": "https://www.maison-kammerzell.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Holiday menus published for Christmas Eve dinner (24 December 2026), Christmas lunch (25 December 2026) and New Year's Eve (31 December 2026); online table booking."
+      },
+      "Au Crocodile": {
+        "url": "https://www.au-crocodile.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Michelin-starred, founded 1840; online booking with immediate confirmation; new 'L'Instant Déjeuner' Thursday and Friday lunch at €72 (excluding the Christmas market and holidays). No explicit 2026 date in page text."
+      },
+      "Le Buerehiesel": {
+        "url": "https://www.buerehiesel.fr/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Business menu dated 27-28 October 2026 at €55; exceptional Sunday openings 13, 20 and 27 December 2026; annual closure 30 December 2026 to 13 January 2027."
+      },
+      "Chez Yvonne": {
+        "url": "https://www.restaurant-chez-yvonne.net/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Online table booking plus Christmas Eve and New Year's Eve dinner menus with reservations (year not stated)."
+      },
+      "Bar de la Cour du Corbeau": {
+        "url": "https://mgallery.accor.com/en/hotels/7575/B001.bar.html",
+        "sourceType": "operator's own site (Cour du Corbeau Hotel Strasbourg, MGallery / Accor)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Bar page publishes current weekly hours and describes 'imaginative cocktails' with local flavours and cheese and charcuterie boards; no 2026-dated item."
+      },
+      "Archipel Bar (AC Hotel Strasbourg)": {
+        "url": "https://www.marriott.com/en-us/hotels/sxbar-ac-hotel-strasbourg/dining",
+        "sourceType": "operator's own site (AC Hotel Strasbourg / Marriott)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Dining page lists the bar 'Everyday, 5:00 PM to 1:00 AM' and a rooftop terrace 'during the summer season (weather permitting)'."
+      },
+      "Thierry Mulhaupt (Rue du Vieux Marché aux Poissons)": {
+        "url": "https://www.mulhaupt.fr/patisseries-mulhaupt/patisserie-mulhaupt-rdvm-strasbourg",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Shop page notice: 'nos boutiques seront fermées le dimanche 4 octobre 2026'; homepage shows a new autumn-winter menu and an atelier open day on 15 November 2026."
+      },
+      "Thierry Mulhaupt (Temple Neuf)": {
+        "url": "https://www.mulhaupt.fr/patisseries-mulhaupt/temple-neuf-strasbourg",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Shop page publishes current hours and links a 'Croqueurs de Chocolat 2026' award item; the brand's 4 October 2026 closure notice covers 'nos boutiques'."
+      },
+      "Au Fond du Jardin": {
+        "url": "https://www.aufonddujardin.fr/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Tea room 'Sur réservation' via online booking; 'Calendrier de l'Avent 2026' on pre-order at €52."
+      },
+      "Cafés Henri (Strasbourg Centre)": {
+        "url": "https://www.cafeshenri.fr/content/40-strasbourg-centre",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Branch page describes a coffee bar with barista tastings of 'pures origines', a terrace and a current coffee of the month ('Mexique Extra Prime'); no 2026-dated notice."
+      }
+    }
+  },
   "Bordeaux, France": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-27",
