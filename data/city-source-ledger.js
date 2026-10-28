@@ -5,6 +5,727 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Bologna, Italy": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-27",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several sites could not be read: MAMbo and Aroma (certificate errors), Museo Ducati and MAST (HTTP 403), the Museo Civico Archeologico (security check), and the Pinacoteca Nazionale (DNS failure and connection refused). The Two Towers' booking domain redirects to the tourism board, so it was not used. Hours were not published or not readable for Paolo Atti & Figli, Forno Brisa (Via Galliera), Salumeria Simoni, Ristorante I Portici and Café Marinetti, and only the day's hours were shown for the Archiginnasio and Salaborsa. Several restaurants (Tamburini, Osteria dell'Orsa, Diana, Al Pappagallo, Pasticceria Impero) publish hours but no dated 2026 content, so they are rated medium confidence.",
+    "sourceUrls": [
+      "docs/content-research/bologna-2026-10-27.md",
+      "docs/content-research/bologna-2026-10-27.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Piazza Maggiore",
+        "checkedOn": "2026-10-27",
+        "reason": "public square with no operator website to check; covered via Basilica di San Petronio and Biblioteca Salaborsa"
+      },
+      {
+        "name": "Two Towers",
+        "url": "https://www.duetorribologna.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "duetorribologna.com redirects (301) to the tourism board bolognawelcome.com, which is not an allowed source; no operator page read"
+      },
+      {
+        "name": "Quadrilatero market",
+        "checkedOn": "2026-10-27",
+        "reason": "a district of shops, not a single operator; individual shops (Tamburini, Paolo Atti, Salumeria Simoni) checked separately"
+      },
+      {
+        "name": "Portico walk to San Luca",
+        "checkedOn": "2026-10-27",
+        "reason": "public portico with no operator page; the sanctuary at the end is confirmed separately"
+      },
+      {
+        "name": "MAMbo",
+        "url": "https://www.mambo-bologna.org/",
+        "checkedOn": "2026-10-27",
+        "reason": "certificate error (certificate has expired); not bypassed"
+      },
+      {
+        "name": "Pinacoteca Nazionale di Bologna",
+        "url": "https://pinacotecabologna.cultura.gov.it/",
+        "checkedOn": "2026-10-27",
+        "reason": "fetch failed: DNS not found at pinacotecabologna.beniculturali.it and connection refused at pinacotecabologna.cultura.gov.it"
+      },
+      {
+        "name": "Museo Civico Archeologico",
+        "url": "https://www.museibologna.it/archeologico/",
+        "checkedOn": "2026-10-27",
+        "reason": "page returned only a security verification ('Verifica di Sicurezza'); not bypassed"
+      },
+      {
+        "name": "Palazzo Pepoli - Museo della Storia di Bologna",
+        "url": "https://www.genusbononiae.it/palazzi/palazzo-pepoli/",
+        "checkedOn": "2026-10-27",
+        "reason": "operator page returned 404; no address or hours read"
+      },
+      {
+        "name": "Torre Prendiparte",
+        "url": "https://www.prendiparte.it/",
+        "checkedOn": "2026-10-27",
+        "reason": "site is for overnight stays; no visiting hours and no 2026 content (latest items 2025)"
+      },
+      {
+        "name": "Museo Ducati",
+        "url": "https://www.ducati.com/it/it/museo-ducati",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 403 Forbidden; not bypassed"
+      },
+      {
+        "name": "MAST",
+        "url": "https://www.mast.org/",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 403 Forbidden; not bypassed"
+      },
+      {
+        "name": "Grand Tour Italia (former FICO)",
+        "url": "https://www.grandtouritalia.it/",
+        "checkedOn": "2026-10-27",
+        "reason": "homepage gave address and a live 'Oggi chiuso' status but no weekly hours and no dated 2026 content"
+      },
+      {
+        "name": "Trattoria Anna Maria",
+        "url": "https://www.trattoriannamaria.it/",
+        "checkedOn": "2026-10-27",
+        "reason": "fetch failed: DNS not found"
+      },
+      {
+        "name": "Caffè Terzi",
+        "url": "https://www.caffeterzibologna.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "caffeterzi.it belongs to a business in San Pietro in Casale; caffeterzibologna.com redirects to a domain-for-sale page; no official page found"
+      },
+      {
+        "name": "Pasticceria Gamberini",
+        "url": "https://www.gamberini.eu/",
+        "checkedOn": "2026-10-27",
+        "reason": "gamberini.eu is a domain auction page; pasticceriagamberini.it DNS not found; no official page read"
+      },
+      {
+        "name": "Camera a Sud",
+        "url": "https://www.cameraasud.net/",
+        "checkedOn": "2026-10-27",
+        "reason": "domain redirects to an unrelated site (goodvibes.cloud)"
+      },
+      {
+        "name": "Nu Lounge Bar",
+        "url": "https://www.nuloungebar.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "site shows only 'Soon'; no address, hours or operating evidence"
+      },
+      {
+        "name": "Ranzani 13",
+        "url": "https://www.ranzani13.it/",
+        "checkedOn": "2026-10-27",
+        "reason": "site returned nothing readable"
+      },
+      {
+        "name": "Mercato di Mezzo",
+        "url": "https://www.eataly.net/it_it/negozi/bologna-mercato-di-mezzo",
+        "checkedOn": "2026-10-27",
+        "reason": "branch URL redirects to the generic Eataly homepage; no branch page read"
+      },
+      {
+        "name": "Caffè Zanarini",
+        "url": "https://www.caffezanarini.it/",
+        "checkedOn": "2026-10-27",
+        "reason": "caffezanarini.it connection refused; zanarini.com belongs to a company in San Giovanni in Persiceto"
+      },
+      {
+        "name": "Aroma",
+        "url": "https://www.aromacafe.it/",
+        "checkedOn": "2026-10-27",
+        "reason": "certificate error (unable to get local issuer certificate); not bypassed"
+      },
+      {
+        "name": "Cremeria Funivia",
+        "url": "https://www.cremeriafunivia.it/",
+        "checkedOn": "2026-10-27",
+        "reason": "fetch failed: DNS not found"
+      },
+      {
+        "name": "Cremeria Cavour",
+        "url": "https://www.cremeriacavour.it/",
+        "checkedOn": "2026-10-27",
+        "reason": "address only; no hours and no 2026 content (copyright 2022)"
+      },
+      {
+        "name": "La Sorbetteria (Via Castiglione)",
+        "url": "https://www.lasorbetteria.it/",
+        "checkedOn": "2026-10-27",
+        "reason": "only summer hours published and no dated 2026 content; current hours unclear"
+      },
+      {
+        "name": "Enoteca Italiana",
+        "url": "https://www.enotecaitaliana.it/",
+        "checkedOn": "2026-10-27",
+        "reason": "address only (Via Marsala 2/B); no hours and no dated 2026 text"
+      },
+      {
+        "name": "Le Stanze",
+        "url": "https://www.lestanzecafe.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "site shows generic blog posts with no address or hours"
+      },
+      {
+        "name": "Le Serre dei Giardini Margherita",
+        "url": "https://www.kilowatt.bo.it/",
+        "checkedOn": "2026-10-27",
+        "reason": "operator site (Kilowatt) gives no address, bar hours or 2026 content"
+      },
+      {
+        "name": "Pasticceria Regina di Quadri",
+        "url": "https://www.reginadiquadri.it/",
+        "checkedOn": "2026-10-27",
+        "reason": "fetch failed: DNS not found"
+      },
+      {
+        "name": "Donkey",
+        "url": "https://www.donkeyspeakeasy.it/",
+        "checkedOn": "2026-10-27",
+        "reason": "no official website found (donkeyspeakeasy.it DNS not found); only listings and social media"
+      },
+      {
+        "name": "Moonbow",
+        "url": "https://www.moonbowbar.it/",
+        "checkedOn": "2026-10-27",
+        "reason": "no official website found (moonbowbar.it DNS not found)"
+      },
+      {
+        "name": "Velluto",
+        "url": "https://www.velluto.bo.it/",
+        "checkedOn": "2026-10-27",
+        "reason": "no official website found (velluto.bo.it DNS not found)"
+      },
+      {
+        "name": "A pasta-making class",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Evening in Santo Stefano",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "fresh pasta and a market meal",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Bologna market or cafe",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local dinner in Centro Storico",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Quadrilatero",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Santo Stefano",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Centro Storico",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Centro Storico walk",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Quadrilatero",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Santo Stefano",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Santo Stefano",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Piazza Maggiore",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Centro Storico",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Portico walk to San Luca",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Quadrilatero",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Two Towers",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Centro Storico evening",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Quadrilatero",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Santo Stefano",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Centro Storico",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Piazza Maggiore",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Quadrilatero",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Santo Stefano",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Centro Storico",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Piazza Maggiore",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Centro Storico cafe or market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided A pasta-making class",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Santo Stefano",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Santo Stefano",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Centro Storico",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Centro Storico",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Quadrilatero bakery or market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Piazza Maggiore",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Santo Stefano",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Centro Storico",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Two Towers",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Santo Stefano",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Centro Storico",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Quadrilatero",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Santo Stefano",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Centro Storico",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Centro Storico",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Quadrilatero",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Quadrilatero market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Centro Storico",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Quadrilatero morning market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Piazza Maggiore",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Santo Stefano",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Centro Storico",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Quadrilatero",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Santo Stefano",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Basilica di San Petronio": {
+        "url": "https://www.basilicadisanpetronio.org/info-e-orari/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Info page lists daily hours, ticket prices for the Chapel of the Magi route and visitor rules; homepage lists 'Memorare '26' meditations on 8 and 9 November. The panoramic terrace is 'chiusa definitivamente'."
+      },
+      "Basilica di Santo Stefano": {
+        "url": "https://www.santostefanobologna.it/orari/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Hours page states 'Orari aggiornati al 02 agosto 2026'; homepage lists '10 PAROLE 2026-27'. Tourist visits are 'sospese' on Mondays."
+      },
+      "Biblioteca dell'Archiginnasio": {
+        "url": "https://www.archiginnasio.it/",
+        "sourceType": "official public operator (Comune di Bologna library)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Homepage lists events on 28 and 29 October 2026 and 2026-27 school programmes. It notes 'La Sala Consultazione della Biblioteca è temporaneamente chiusa.'"
+      },
+      "Biblioteca Salaborsa": {
+        "url": "https://www.bibliotecasalaborsa.it/",
+        "sourceType": "official public operator (Comune di Bologna library)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Lists 2026-27 programmes, e.g. 'Le voci dei libri' from 8 Sep 2026 to 30 Jun 2027, and 'Pittori di Cinema 2026' to 19 December 2026. Marked 'Adatta a bambini', with a separate children's site."
+      },
+      "Mercato delle Erbe": {
+        "url": "https://www.mercatodelleerbe.eu/",
+        "sourceType": "operator's own site (Consorzio del Mercato delle Erbe)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Publishes shop and restaurant hours; footer '© Copyright, 2026 | CONSORZIO DEL MERCATO DELLE ERBE DI BOLOGNA'."
+      },
+      "Santuario della Madonna di San Luca": {
+        "url": "https://www.santuariodisanluca.it/orari/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Hours page publishes daily church and forecourt hours and Mass times; footer 'Copyright 2018 – 2026'. The climb to the icon is closed Monday-Friday 12:30-14:30."
+      },
+      "Palazzo Fava": {
+        "url": "https://www.genusbononiae.it/palazzi/palazzo-fava/",
+        "sourceType": "operator's own site (Genus Bononiae)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Genus Bononiae lists 'Magnus. Eroi e no' at Palazzo Fava 'dal 7 novembre 2026 al 10 gennaio 2027', with family workshops on 14 and 28 November and 19 December 2026."
+      },
+      "Museo di Palazzo Poggi": {
+        "url": "https://sma.unibo.it/it/il-sistema-museale/museo-di-palazzo-poggi",
+        "sourceType": "official public operator (Università di Bologna, Sistema Museale di Ateneo)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Lists the exhibition 'Utagawa Kuniyoshi (1798-1861)' from 24/10/2026 to 20/06/2027 and family guided tours through 31/12/2026."
+      },
+      "Museo della Specola": {
+        "url": "https://sma.unibo.it/it/il-sistema-museale/museo-della-specola",
+        "sourceType": "official public operator (Università di Bologna, Sistema Museale di Ateneo)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Lists guided visits from 01/10/2026 to 31/12/2026 and a lecture on 05/11/2026. Entry on the hour, maximum 15 visitors, booking 'fortemente consigliata'; terrace closed in rain or snow."
+      },
+      "Orto Botanico": {
+        "url": "https://sma.unibo.it/it/il-sistema-museale/orto-botanico-ed-erbario",
+        "sourceType": "official public operator (Università di Bologna, Sistema Museale di Ateneo)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Notice dated 25/05/2026 says part of the garden is affected by renovation works; family visits listed to 31/12/2026. Entry is free."
+      },
+      "Galleria Modernissimo": {
+        "url": "https://cinetecadibologna.it/programmazione/mostra/viva-varda-il-cinema-e-donna/",
+        "sourceType": "operator's own site (Fondazione Cineteca di Bologna)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Exhibition 'VIVA VARDA! Il cinema è donna' runs 5 March 2026 to 10 January 2027."
+      },
+      "Teatro Comunale di Bologna": {
+        "url": "https://www.tcbo.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Season listings include Samson et Dalila at Teatro Manzoni on 13 and 15 November and Il Re Leone Live in Concert at EuropAuditorium in December. Performances are held elsewhere 'durante il restauro della sede originale in Piazza Verdi'."
+      },
+      "Tamburini (Via Caprarie)": {
+        "url": "https://www.tamburini.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Publishes current shop and wine bar-restaurant hours with lunch and dinner menus linked; no dated 2026 text found."
+      },
+      "Osteria dell'Orsa": {
+        "url": "https://www.osteriadellorsa.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Publishes hours and policy: 'we do not accept reservations'; pasta offer 'varies daily'. No dated 2026 text found."
+      },
+      "Paolo Atti & Figli (Via Caprarie)": {
+        "url": "https://www.paoloatti.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Posts dated 7 January 2026 (shipments resumed) and 15 September 2026 (refrigerated delivery). Second shop at Via Drapperie 6."
+      },
+      "Trattoria Da Cesari": {
+        "url": "https://www.da-cesari.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Page carries 2026 closure notices and '© 2026'; current menu with tagliatelle alla Bolognese and tortellini in brodo. Bookings by phone."
+      },
+      "Ristorante Diana": {
+        "url": "https://www.ristorantediana.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Publishes hours, closing days and booking by phone 051 231302; highlights tortellini in brodo and boiled and roast meat carts. No dated 2026 text found."
+      },
+      "Ristorante Al Pappagallo": {
+        "url": "https://www.alpappagallo.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Publishes hours, Tuesday closure, menus in Italian and English and a table-booking link. No dated 2026 text found."
+      },
+      "Osteria del Sole": {
+        "url": "https://www.osteriadelsole.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Footer '©2026 Osteria del Sole'; publishes hours. You may bring your own food; it serves 'solo vino e birra'. News items date from 2020-21."
+      },
+      "Forno Brisa (Via Galliera)": {
+        "url": "https://www.fornobrisa.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Site lists seven current bakeries including Galliera, with site files dated 2026; brunch at the Stadio branch 'tutti i sabati e le domeniche dalle 10.30 alle 14.30'."
+      },
+      "Sfoglia Rina (Via Castiglione)": {
+        "url": "https://www.sfogliarina.it/contatti/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Contact page publishes shop and restaurant hours and states the restaurants take no reservations; footer 'Sfoglia Rina S.r.l. © 2026'."
+      },
+      "Salumeria Simoni (Via Drapperie)": {
+        "url": "https://www.salumeriasimoni.it/punti-vendita/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Shop list names Salumeria Simoni, BOTTEGA Simoni (Via Pescherie Vecchie 7/c) and laboratorio Simoni (Via Pescherie Vecchie 3/b); homepage carries a 2026 holiday order-processing notice for online orders."
+      },
+      "Cantina Bentivoglio": {
+        "url": "https://www.cantinabentivoglio.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Links an October 2026 menu, an October 2026 events calendar and a June 2026 wine list; online table booking."
+      },
+      "Bottega Portici (Piazza di Porta Ravegnana)": {
+        "url": "https://www.bottegaportici.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Allergen list dated October 2026 linked; publishes daily hours and kids' party slots 15:30-18:00."
+      },
+      "Pasticceria Impero (Via Caprarie)": {
+        "url": "https://www.pasticceriaimpero.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Publishes current hours for both branches (also Via Indipendenza 39/A). No dated 2026 text found."
+      },
+      "Ristorante I Portici": {
+        "url": "https://www.iporticihotel.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Site states '1 stella nella guida MICHELIN Italia 2026' and links online table booking; footer 'Copyright © 2026 Gruppo I Portici'. Address from the site's 'Dove siamo' page."
+      },
+      "Café Marinetti (Grand Hotel Majestic già Baglioni)": {
+        "url": "https://grandhotelmajestic.duetorrihotels.com/it/hotel-5-stelle-lusso-bologna-italia/aperitivo-al-cafe-marinetti",
+        "sourceType": "operator's own site (Duetorrihotels)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Aperitif offer with signature cocktail 'from €18.00 per person', booking by email required; group site carries a news item dated 21-09-2026 on a 2026 MICHELIN Key."
+      }
+    }
+  },
   "Cairo, Egypt": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-27",

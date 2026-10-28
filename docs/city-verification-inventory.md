@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 57.
-- Classifier-passed (published, not fully documented in that format): 135.
+- Source-verified (complete dated evidence format): 58.
+- Classifier-passed (published, not fully documented in that format): 134.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -87,7 +87,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Bodrum, Turkey | bodrum | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Bogota, Colombia | bogota | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Bohol, Philippines | bohol | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Bologna, Italy | bologna | classifier-passed | not-reviewed | 0 | 10 | 15 | 4 | None |
+| Bologna, Italy | bologna | source-verified | source-checked | 27 | 44 | 15 | 15 | None |
 | Bonneville Salt Flats, United States | bonneville-salt-flats | classifier-passed | not-reviewed | 0 | 5 | 15 | 3 | None |
 | Boracay, Philippines | boracay | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Bordeaux, France | bordeaux | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |

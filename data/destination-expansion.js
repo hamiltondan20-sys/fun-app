@@ -5822,4 +5822,112 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 21 distinct recommendations in this guide were checked against their operators' own websites on October 27, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Bologna, Italy: source review of 2026-10-27 (docs/content-research/bologna-2026-10-27.md).
+  {
+    const cityKey = "Bologna, Italy";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Basilica di San Petronio","Biblioteca dell'Archiginnasio","Basilica di Santo Stefano","Santuario della Madonna di San Luca"],
+      bestFirstTimers: ["Basilica di San Petronio","Mercato delle Erbe","Museo della Specola","Biblioteca dell'Archiginnasio"],
+      bestRestaurants: ["Trattoria Da Cesari","Ristorante Diana","Ristorante Al Pappagallo","Osteria dell'Orsa"],
+      bestBudget: ["Osteria del Sole","Orto Botanico","Biblioteca Salaborsa","Sfoglia Rina (Via Castiglione)"],
+      bestLuxury: ["Ristorante I Portici","Café Marinetti (Grand Hotel Majestic già Baglioni)","Teatro Comunale di Bologna","Ristorante Diana"],
+      bestCouples: ["Santuario della Madonna di San Luca","Cantina Bentivoglio","Café Marinetti (Grand Hotel Majestic già Baglioni)","Museo della Specola"],
+      bestKids: ["Biblioteca Salaborsa","Palazzo Fava","Museo di Palazzo Poggi","Bottega Portici (Piazza di Porta Ravegnana)"],
+      bestSolo: ["Galleria Modernissimo","Museo di Palazzo Poggi","Osteria del Sole","Mercato delle Erbe"],
+      bestUnique: ["Museo della Specola","Osteria del Sole","Galleria Modernissimo","Biblioteca dell'Archiginnasio"],
+      bestBreakfast: ["Pasticceria Impero (Via Caprarie)","Bottega Portici (Piazza di Porta Ravegnana)","Forno Brisa (Via Galliera)"],
+      bestLunch: ["Sfoglia Rina (Via Castiglione)","Tamburini (Via Caprarie)","Salumeria Simoni (Via Drapperie)","Mercato delle Erbe"],
+      bestDinner: ["Trattoria Da Cesari","Ristorante Al Pappagallo","Ristorante I Portici","Cantina Bentivoglio"],
+      bestCocktails: ["Café Marinetti (Grand Hotel Majestic già Baglioni)","Cantina Bentivoglio","Osteria del Sole"],
+      bestBakeries: ["Paolo Atti & Figli (Via Caprarie)","Forno Brisa (Via Galliera)","Pasticceria Impero (Via Caprarie)"],
+      bestCoffee: ["Pasticceria Impero (Via Caprarie)","Bottega Portici (Piazza di Porta Ravegnana)","Forno Brisa (Via Galliera)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Basilica di San Petronio": "Basilica di San Petronio Piazza Maggiore Bologna",
+      "Biblioteca dell'Archiginnasio": "Biblioteca dell'Archiginnasio Piazza Luigi Galvani 1 Bologna",
+      "Basilica di Santo Stefano": "Basilica di Santo Stefano Via Santo Stefano 24 Bologna",
+      "Santuario della Madonna di San Luca": "Santuario della Madonna di San Luca Via di San Luca 36 Bologna",
+      "Mercato delle Erbe": "Mercato delle Erbe Via Ugo Bassi 23 Bologna",
+      "Museo della Specola": "Museo della Specola Via Zamboni 33 Bologna",
+      "Trattoria Da Cesari": "Trattoria Da Cesari Via de' Carbonesi 8 Bologna",
+      "Ristorante Diana": "Ristorante Diana Via Volturno 5 Bologna",
+      "Ristorante Al Pappagallo": "Ristorante Al Pappagallo Piazza della Mercanzia 3 Bologna",
+      "Osteria dell'Orsa": "Osteria dell'Orsa Via Mentana 1 Bologna",
+      "Osteria del Sole": "Osteria del Sole Vicolo dei Ranocchi 1/D Bologna",
+      "Orto Botanico": "Orto Botanico Via Irnerio 42 Bologna",
+      "Biblioteca Salaborsa": "Biblioteca Salaborsa Piazza del Nettuno 3 Bologna",
+      "Sfoglia Rina (Via Castiglione)": "Sfoglia Rina Via Castiglione 5/B Bologna",
+      "Ristorante I Portici": "Ristorante I Portici Via dell'Indipendenza 69 Bologna",
+      "Café Marinetti (Grand Hotel Majestic già Baglioni)": "Grand Hotel Majestic già Baglioni Via dell'Indipendenza 8 Bologna",
+      "Teatro Comunale di Bologna": "Teatro Comunale di Bologna Largo Respighi 1 Bologna",
+      "Cantina Bentivoglio": "Cantina Bentivoglio Via Mascarella 4/b Bologna",
+      "Palazzo Fava": "Palazzo Fava Via Manzoni 2 Bologna",
+      "Museo di Palazzo Poggi": "Museo di Palazzo Poggi Via Zamboni 33 Bologna",
+      "Bottega Portici (Piazza di Porta Ravegnana)": "Bottega Portici Piazza di Porta Ravegnana 2 Bologna",
+      "Galleria Modernissimo": "Galleria Modernissimo Piazza Re Enzo Bologna",
+      "Pasticceria Impero (Via Caprarie)": "Pasticceria Impero Via Caprarie 4/2 Bologna",
+      "Forno Brisa (Via Galliera)": "Forno Brisa Via Galliera 34d Bologna",
+      "Tamburini (Via Caprarie)": "Tamburini Via Caprarie 1 Bologna",
+      "Salumeria Simoni (Via Drapperie)": "Salumeria Simoni Via Drapperie 5/2a Bologna",
+      "Paolo Atti & Figli (Via Caprarie)": "Paolo Atti & Figli Via Caprarie 7 Bologna"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Bologna" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Churches, university museums, libraries and markets in central Bologna, with pasta lunches, trattoria dinners, bakeries and bars checked against their own websites.";
+    cityGuide.highlights = ["Basilica di San Petronio","Biblioteca dell'Archiginnasio","Basilica di Santo Stefano","Museo della Specola"];
+    cityGuide.tip = "Plan museum days around closures: Palazzo Fava and the university museums on Via Zamboni close on Mondays, and Galleria Modernissimo closes on Tuesdays.";
+    data.destinationFacts[cityKey] = "Plan museum days around closures: Palazzo Fava and the university museums on Via Zamboni close on Mondays, and Galleria Modernissimo closes on Tuesdays.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Churches, university museums, libraries and markets in central Bologna, with pasta lunches, trattoria dinners, bakeries and bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays and Tuesdays",
+        "copy": "Palazzo Fava, Museo di Palazzo Poggi, Museo della Specola and the Orto Botanico close on Mondays (non-holiday Mondays for the university sites), and Santo Stefano suspends tourist visits on Mondays. Galleria Modernissimo is closed on Tuesdays and Ristorante Al Pappagallo closes on Tuesdays."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book the Specola",
+        "copy": "Museo della Specola admits up to 15 visitors at the start of each hour and strongly recommends booking. Trattoria Da Cesari takes bookings by phone, and Café Marinetti's aperitif must be booked by email."
+      },
+      {
+        "label": "Walk-ins",
+        "value": "No reservations",
+        "copy": "Osteria dell'Orsa does not accept reservations, and Sfoglia Rina's restaurant on Via Castiglione takes no bookings either. At Osteria del Sole you can bring your own food, and it serves only wine and beer."
+      },
+      {
+        "label": "Rules",
+        "value": "Cover up, no luggage",
+        "copy": "Basilica di San Petronio requires shoulders and knees covered, asks you to remove hats, and does not allow suitcases or luggage. Its panoramic terrace is permanently closed."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Base yourself between Piazza Maggiore and Via Zamboni, and check each sight's closing day before you plan museums and dinners.",
+      intro: [
+        "You can see much of central Bologna on foot from Piazza Maggiore. The Basilica di San Petronio opens daily from 10:00 to 18:00, and its museum is free, while the Chapel of the Magi route costs €5. Dress rules apply: cover your shoulders and knees, and leave suitcases behind. The basilica's panoramic terrace is permanently closed. A short walk away, the Biblioteca dell'Archiginnasio on Piazza Luigi Galvani runs talks and book presentations, though its reading room is temporarily closed.",
+        "For views and science, head to Via Zamboni 33. The Museo della Specola lets in up to 15 visitors at the start of each hour, and the terrace stays shut in rain or snow, so book ahead. In the same building, the Museo di Palazzo Poggi shows 'Utagawa Kuniyoshi (1798-1861)' until 20 June 2027. Both close on non-holiday Mondays. The nearby Orto Botanico on Via Irnerio is free, opens 9:00 to 15:00 in winter, and has some areas closed by renovation works.",
+        "Exhibitions run well into winter. At Palazzo Fava on Via Manzoni, 'Magnus. Eroi e no' runs from 7 November 2026 to 10 January 2027, with family workshops on Saturdays. Galleria Modernissimo, beneath Piazza Re Enzo, shows 'VIVA VARDA! Il cinema è donna' until 10 January 2027 and closes on Tuesdays. The Basilica di Santo Stefano opens for tourist visits from Tuesday to Sunday. Above the city, the Santuario della Madonna di San Luca opens daily from 7:00 to 18:00.",
+        "For food, Trattoria Da Cesari on Via de' Carbonesi serves tagliatelle alla Bolognese and tortellini in brodo and closes on Sundays. Ristorante Diana on Via Volturno closes on Sunday evenings and Mondays. Osteria dell'Orsa and Sfoglia Rina take no reservations, so plan on walking in. For bread and pastries, try Paolo Atti & Figli on Via Caprarie, then have an evening glass at Osteria del Sole, where you can bring your own food."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Start at the Basilica di San Petronio, walk to the Archiginnasio, and finish with tortellini at Trattoria Da Cesari."
+        ],
+        [
+          "A slower morning",
+          "Have breakfast at Pasticceria Impero on Via Caprarie, then visit the free Orto Botanico from Tuesday to Sunday."
+        ],
+        [
+          "Before booking",
+          "Book the Museo della Specola and phone Da Cesari ahead, but expect to walk in at Osteria dell'Orsa and Sfoglia Rina."
+        ]
+      ],
+      trust: "All 27 distinct recommendations in this guide were checked against their operators' own websites on October 27, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();
