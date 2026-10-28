@@ -8286,4 +8286,111 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 29 distinct recommendations in this guide were checked against their operators' own websites on October 28, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Hiroshima, Japan: source review of 2026-10-28 (docs/content-research/hiroshima-2026-10-28.md).
+  {
+    const cityKey = "Hiroshima, Japan";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Peace Memorial Park","Hiroshima Peace Memorial Museum","Itsukushima Shrine","Hiroshima Castle (Ninomaru)"],
+      bestFirstTimers: ["Peace Memorial Park","Hiroshima Peace Memorial Museum","Itsukushima Shrine","Miyajima Ropeway"],
+      bestRestaurants: ["Mitchan Sohonten (Hatchobori)","Anagomeshi Ueno (Miyajimaguchi)","Chinese Restaurant Li Fang (Grand Prince Hotel Hiroshima)","Chinese Cuisine Taoli (ANA Crowne Plaza Hiroshima)"],
+      bestBudget: ["Peace Memorial Park","Hiroshima Castle (Ninomaru)","5-Days Children's Culture & Science Museum","Hiroshima Peace Memorial Museum"],
+      bestLuxury: ["Sky Lounge Top of Hiroshima (Grand Prince Hotel Hiroshima)","Chinese Restaurant Li Fang (Grand Prince Hotel Hiroshima)","Chinese Cuisine Taoli (ANA Crowne Plaza Hiroshima)","Main Bar Mayflower (Hotel Granvia Hiroshima)"],
+      bestCouples: ["Shukkeien","Orizuru Tower","Itsukushima Shrine","Main Bar Mayflower (Hotel Granvia Hiroshima)"],
+      bestKids: ["Miyajima Public Aquarium","5-Days Children's Culture & Science Museum","Miyajima Ropeway","Orizuru Tower"],
+      bestSolo: ["Hiroshima National Peace Memorial Hall for the Atomic Bomb Victims","Hiroshima Museum of Art","Hiroshima Prefectural Art Museum","Obscura Coffee Roasters (Hondori)"],
+      bestUnique: ["Daisho-in","Orizuru Tower","Hiroshima National Peace Memorial Hall for the Atomic Bomb Victims","Yamadaya (Miyajima main store)"],
+      bestBreakfast: ["Hiroshima Andersen (Hondori)","All-Day Dining Fruitier (ANA Crowne Plaza Hiroshima)","Sky Lounge Top of Hiroshima (Grand Prince Hotel Hiroshima)","Obscura Coffee Roasters (Hondori)"],
+      bestLunch: ["Mitchan Sohonten (Hatchobori)","Anagomeshi Ueno (Miyajimaguchi)","Hiroshima Andersen (Hondori)","Café Jardin (Hiroshima Museum of Art)"],
+      bestDinner: ["Mitchan Sohonten (Hatchobori)","Chinese Restaurant Li Fang (Grand Prince Hotel Hiroshima)","Chinese Cuisine Taoli (ANA Crowne Plaza Hiroshima)","Hiroshima Andersen (Hondori)"],
+      bestCocktails: ["Main Bar Mayflower (Hotel Granvia Hiroshima)","The Lounge (ANA Crowne Plaza Hiroshima)","Sky Lounge Top of Hiroshima (Grand Prince Hotel Hiroshima)"],
+      bestBakeries: ["Hiroshima Andersen (Hondori)","Yamadaya (Miyajima main store)"],
+      bestCoffee: ["Obscura Coffee Roasters (Hondori)","Obscura Coffee Roasters (Park)","Café Jardin (Hiroshima Museum of Art)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Peace Memorial Park": "Peace Memorial Park Nakajima-cho Naka-ku Hiroshima",
+      "Hiroshima Peace Memorial Museum": "Hiroshima Peace Memorial Museum 1-2 Nakajima-cho Naka-ku Hiroshima",
+      "Itsukushima Shrine": "Itsukushima Shrine 1-1 Miyajima-cho Hatsukaichi",
+      "Hiroshima Castle (Ninomaru)": "Hiroshima Castle 21-1 Motomachi Naka-ku Hiroshima",
+      "Miyajima Ropeway": "Miyajima Ropeway Momijidani Park Miyajima-cho Hatsukaichi",
+      "Mitchan Sohonten (Hatchobori)": "Mitchan Sohonten Hatchobori 6-7 Hatchobori Naka-ku Hiroshima",
+      "Anagomeshi Ueno (Miyajimaguchi)": "Anagomeshi Ueno 1-5-11 Miyajimaguchi Hatsukaichi",
+      "Chinese Restaurant Li Fang (Grand Prince Hotel Hiroshima)": "Li Fang Grand Prince Hotel Hiroshima 23-1 Motoujina-machi Minami-ku Hiroshima",
+      "Chinese Cuisine Taoli (ANA Crowne Plaza Hiroshima)": "Taoli ANA Crowne Plaza Hiroshima 7-20 Naka-machi Naka-ku Hiroshima",
+      "5-Days Children's Culture & Science Museum": "5-Days Children's Culture & Science Museum 5-83 Motomachi Naka-ku Hiroshima",
+      "Sky Lounge Top of Hiroshima (Grand Prince Hotel Hiroshima)": "Grand Prince Hotel Hiroshima 23-1 Motoujina-machi Minami-ku Hiroshima",
+      "Main Bar Mayflower (Hotel Granvia Hiroshima)": "Hotel Granvia Hiroshima 1-5 Matsubara-cho Minami-ku Hiroshima",
+      "Shukkeien": "Shukkeien 2-11 Kaminobori-cho Naka-ku Hiroshima",
+      "Orizuru Tower": "Orizuru Tower 1-2-1 Otemachi Naka-ku Hiroshima",
+      "Miyajima Public Aquarium": "Miyajima Public Aquarium 10-3 Miyajima-cho Hatsukaichi",
+      "Hiroshima National Peace Memorial Hall for the Atomic Bomb Victims": "Hiroshima National Peace Memorial Hall 1-6 Nakajima-cho Naka-ku Hiroshima",
+      "Hiroshima Museum of Art": "Hiroshima Museum of Art 3-2 Motomachi Naka-ku Hiroshima",
+      "Hiroshima Prefectural Art Museum": "Hiroshima Prefectural Art Museum 2-22 Kaminobori-cho Naka-ku Hiroshima",
+      "Obscura Coffee Roasters (Hondori)": "Obscura Coffee Roasters 3-1 Hondori Naka-ku Hiroshima",
+      "Daisho-in": "Daisho-in 210 Miyajima-cho Hatsukaichi",
+      "Yamadaya (Miyajima main store)": "Yamadaya 835-1 Miyajima-cho Hatsukaichi",
+      "Hiroshima Andersen (Hondori)": "Hiroshima Andersen 7-1 Hondori Naka-ku Hiroshima",
+      "All-Day Dining Fruitier (ANA Crowne Plaza Hiroshima)": "Fruitier ANA Crowne Plaza Hiroshima 7-20 Naka-machi Naka-ku Hiroshima",
+      "Café Jardin (Hiroshima Museum of Art)": "Cafe Jardin Hiroshima Museum of Art 3-2 Motomachi Naka-ku Hiroshima",
+      "The Lounge (ANA Crowne Plaza Hiroshima)": "ANA Crowne Plaza Hiroshima 7-20 Naka-machi Naka-ku Hiroshima",
+      "Obscura Coffee Roasters (Park)": "Obscura Coffee Roasters 15-1 Motomachi Naka-ku Hiroshima"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Hiroshima" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Peace memorials, museums, gardens and Miyajima's shrine and ropeway, with okonomiyaki, bakeries, coffee and hotel bars checked against their own websites.";
+    cityGuide.highlights = ["Peace Memorial Park","Hiroshima Peace Memorial Museum","Itsukushima Shrine","Hiroshima Castle (Ninomaru)"];
+    cityGuide.tip = "Reserve online if you want an early-morning or evening slot at the Hiroshima Peace Memorial Museum, which closes December 30–31, and remember the Hiroshima Prefectural Art Museum closes on Mondays and Main Bar Mayflower on Sundays.";
+    data.destinationFacts[cityKey] = "Reserve online if you want an early-morning or evening slot at the Hiroshima Peace Memorial Museum, which closes December 30–31, and remember the Hiroshima Prefectural Art Museum closes on Mondays and Main Bar Mayflower on Sundays.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Peace memorials, museums, gardens and Miyajima's shrine and ropeway, with okonomiyaki, bakeries, coffee and hotel bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays, Sundays, year-end",
+        "copy": "The Hiroshima Prefectural Art Museum closes on Mondays, Main Bar Mayflower on Sundays, and the Hiroshima Peace Memorial Museum on December 30–31. The Miyajima Public Aquarium closes from December 1, 2026 to March 31, 2027."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Reserve early and late slots",
+        "copy": "Early-morning and evening entry to the Hiroshima Peace Memorial Museum requires an online reservation, and adult tickets cost ¥200. Miyajima Ropeway requires a reservation on the dates it lists, including every November weekend through November 29."
+      },
+      {
+        "label": "Walk-ins and queues",
+        "value": "Expect to wait",
+        "copy": "Anagomeshi Ueno takes no reservations for its first-floor restaurant, and reserved bento customers queue in the same line. The Peace Memorial Museum warns you may wait even with a web ticket."
+      },
+      {
+        "label": "Rules",
+        "value": "Shoes, flames, fences",
+        "copy": "Itsukushima Shrine warns that high heels may get stuck between its corridor floorboards, so wear comfortable shoes. Peace Memorial Park bans barbecues, fireworks and other open flames, and the area inside the A-Bomb Dome fence is closed."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Give Peace Memorial Park and its museum a full morning, book any early or late museum slot online, and save a separate day for Miyajima.",
+      intro: [
+        "Start at Peace Memorial Park, which the city lists at Nakajima-cho 1 and Otemachi 1-10. The area inside the A-Bomb Dome fence is closed, so you view the dome from outside, and barbecues, fireworks and other open flames are banned. The Hiroshima Peace Memorial Museum opens at 7:30 am and closes at 7:00 pm from March through July and September through November, and at 6:00 pm from December through February. Early-morning and evening entry slots need an online reservation, adult admission is ¥200, and the museum closes December 30–31. Its New Arrivals Exhibit runs until February 23, 2027.",
+        "Hiroshima Castle's main keep closed in March 2026 because of concrete deterioration and ageing equipment, though you can still view it from outside, and the reconstructed Ninomaru buildings are free to enter. From October through March they open 9:00 am to 4:30 pm. Nearby, the Hiroshima Prefectural Art Museum shows its Kumi Sugai exhibition until December 6, 2026, stays open until 7:00 pm on Fridays until March 31, 2027, and closes on Mondays (it opens on holiday Mondays during special exhibitions). The Hiroshima Museum of Art runs Artists at the Café, from the Impressionists to Picasso, until January 11, 2027.",
+        "On Miyajima, Itsukushima Shrine charges adults ¥300, and its admission page warns that high heels can catch in the gaps between corridor floorboards. Miyajima Ropeway ran upward cars from 9:00 am to 4:00 pm on the day checked, and you must reserve a ride on the dates it lists, which include every November weekend through November 29. Daisho-in temple's gate is open 8:00 am to 5:00 pm. If you are travelling with children, the Miyajima Public Aquarium closes from December 1, 2026 to March 31, 2027. Yamadaya's main store on the island sells momiji manju daily from 9:00 am to 6:00 pm.",
+        "For okonomiyaki, Mitchan Sohonten's Hatchobori main store serves lunch and dinner, with last orders 30 minutes before closing; its store page lists no regular closing day, but it posted a notice about a change of closing days on October 28, 2026, so check before you go. Hiroshima Andersen on Hondori opens its Bakery Market at 10:00 am, and its restaurant opens at 7:30 am on weekends and holidays, with dinner served as a buffet. Anagomeshi Ueno at Miyajimaguchi takes no reservations for its first-floor restaurant. For a nightcap, Main Bar Mayflower at Hotel Granvia Hiroshima opens 5:00 pm to 11:00 pm and closes on Sundays."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair Peace Memorial Park with the Hiroshima Peace Memorial Museum, reserving online for an early-morning or evening slot, and note the museum closes December 30–31."
+        ],
+        [
+          "A slower morning",
+          "Hiroshima Andersen's restaurant opens at 7:30 am on weekends and holidays, and Obscura Coffee Roasters on Hondori lists 9:00 am to 7:00 pm on its shop page."
+        ],
+        [
+          "Before booking",
+          "Check closing days: the Hiroshima Prefectural Art Museum closes on Mondays, Main Bar Mayflower on Sundays, and the Miyajima Public Aquarium from December 1, 2026 to March 31, 2027."
+        ]
+      ],
+      trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on October 28, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

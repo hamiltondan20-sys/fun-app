@@ -5,6 +5,650 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Hiroshima, Japan": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-28",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Some places were published only partially: Orizuru Tower's hours appear only as an image; Peace Memorial Park, Café Jardin, Sky Lounge Top of Hiroshima, The Lounge, Taoli and Fruitier publish no readable hours; the Peace Memorial Hall shows only the day's hours; Mitchan Sohonten's October 28, 2026 closing-day change notice could not be read. Itsukushima Shrine (footer © 2015), Anagomeshi Ueno (footer © 2015) and Obscura Coffee Roasters show hours on undated pages with no 2026 content, so treat those hours as published, not verified current. Hiroshima Castle's main keep closed in March 2026, and the Hiroshima Museum of Art plans a renovation closure from August 1, 2027. Sites that could not be read: Okonomimura and Hiroshima Botanical Garden (connection refused), Fujiiya (HTTP 403), Iwaso and Otafuku Wood Egg (404), Hiroshima Carp (title only), and several assumed domains that did not resolve (Nagata-ya, Kakiya, Sheraton Grand Hiroshima, Hilton Hiroshima, Miyajima Brewery, Hiroshima City Transportation Museum). The Hiroshima City Museum of Contemporary Art and Mazda Museum were left out because no address and hours, or no street address, were readable.",
+    "sourceUrls": [
+      "docs/content-research/hiroshima-2026-10-28.md",
+      "docs/content-research/hiroshima-2026-10-28.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Miyajima",
+        "checkedOn": "2026-10-28",
+        "reason": "an island, not a single operated place; covered through Itsukushima Shrine, Miyajima Ropeway, Daisho-in, Miyajima Public Aquarium and Yamadaya"
+      },
+      {
+        "name": "Momijido (Miyajima main store)",
+        "url": "https://www.momijido.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "address and hours published, but no 2026-dated content; newest news item is dated 2023.2.14"
+      },
+      {
+        "name": "Hiroshima Okonomimura",
+        "url": "https://www.okonomimura.jp/",
+        "checkedOn": "2026-10-28",
+        "reason": "fetch failed (connection refused)"
+      },
+      {
+        "name": "Okonomiyaki Nagata-ya",
+        "url": "https://www.okonomiyaki-nagataya.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "assumed official domain did not resolve; no official site found"
+      },
+      {
+        "name": "Kakiya (Miyajima oyster restaurant)",
+        "url": "https://www.miyajima-kakiya.jp/",
+        "checkedOn": "2026-10-28",
+        "reason": "assumed official domain did not resolve; no official site found"
+      },
+      {
+        "name": "Hiroshima City Museum of Contemporary Art",
+        "url": "https://www.hiroshima-moca.jp/en/",
+        "checkedOn": "2026-10-28",
+        "reason": "current exhibitions shown, but address and opening hours not readable on pages fetched"
+      },
+      {
+        "name": "Mazda Museum",
+        "url": "https://www.mazda.com/ja/experience/museum/access/",
+        "checkedOn": "2026-10-28",
+        "reason": "current notices and full-reservation rule read, but no street address on pages fetched (only a meeting point in the head-office lobby)"
+      },
+      {
+        "name": "RIHGA Royal Hotel Hiroshima (Bar COLUMBA, Sky Dining RIHGA Top)",
+        "url": "https://www.rihga.co.jp/hiroshima/",
+        "checkedOn": "2026-10-28",
+        "reason": "no current dated content; newest notices on pages read date from 2022; hours not published"
+      },
+      {
+        "name": "Sheraton Grand Hiroshima Hotel",
+        "url": "https://www.sheratongrandhiroshima.jp/",
+        "checkedOn": "2026-10-28",
+        "reason": "assumed official domain did not resolve; no official page found"
+      },
+      {
+        "name": "Hilton Hiroshima",
+        "url": "https://www.hiroshima-hilton.jp/",
+        "checkedOn": "2026-10-28",
+        "reason": "assumed official domain did not resolve; no official page found"
+      },
+      {
+        "name": "Fujiiya (Miyajima main store)",
+        "url": "https://www.fujiiya.co.jp/",
+        "checkedOn": "2026-10-28",
+        "reason": "site returned HTTP 403 Forbidden"
+      },
+      {
+        "name": "Hiroshima Botanical Garden",
+        "url": "https://www.hiroshima-bot.jp/",
+        "checkedOn": "2026-10-28",
+        "reason": "fetch failed (connection refused)"
+      },
+      {
+        "name": "Hiroshima City Transportation Museum",
+        "url": "https://www.hiroshima-kotsu.or.jp/",
+        "checkedOn": "2026-10-28",
+        "reason": "assumed official domain did not resolve"
+      },
+      {
+        "name": "Iwaso (Miyajima)",
+        "url": "https://www.iwaso.com/en/",
+        "checkedOn": "2026-10-28",
+        "reason": "page returned HTTP 404"
+      },
+      {
+        "name": "Miyajima Brewery",
+        "url": "https://www.miyajimabrewery.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "assumed official domain did not resolve; no official site found"
+      },
+      {
+        "name": "Hiroshima Toyo Carp / MAZDA Zoom-Zoom Stadium",
+        "url": "https://www.carp.co.jp/",
+        "checkedOn": "2026-10-28",
+        "reason": "official page returned only a title; no address or schedule readable"
+      },
+      {
+        "name": "Nishikido",
+        "url": "https://www.nishikido.co.jp/",
+        "checkedOn": "2026-10-28",
+        "reason": "domain tried belongs to an unrelated Ishikawa company; no official Miyajima page found"
+      },
+      {
+        "name": "Otafuku Wood Egg Okonomiyaki Museum",
+        "url": "https://www.otafuku.co.jp/woodegg/",
+        "checkedOn": "2026-10-28",
+        "reason": "page returned HTTP 404"
+      },
+      {
+        "name": "Miyajima at a quieter hour",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Peace Museum reflection time",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local baseball evening",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Hiroshima-style okonomiyaki",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Oyster lunch",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A small Hondori izakaya",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Hondori",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Miyajima",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Peace Park",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Peace Park walk",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Hondori",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Miyajima",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Miyajima",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Peace Memorial Park",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Peace Park",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Miyajima at a quieter hour",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Hondori",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Miyajima",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Peace Park evening",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Hondori",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Miyajima",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Peace Park",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Peace Memorial Park",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Hondori",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Miyajima",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Peace Park",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Peace Memorial Park",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Peace Park cafe or market",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Peace Museum reflection time",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Miyajima",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Miyajima",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Peace Park",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Peace Park",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Hondori bakery or market",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Peace Memorial Park",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Miyajima",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Peace Park",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Miyajima",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Miyajima",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Peace Park",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Hondori",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Miyajima",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Peace Park",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Peace Park",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Hondori",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Hiroshima Castle",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Peace Park",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Hondori morning market",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Peace Memorial Park",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Miyajima",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Peace Park",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Hondori",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Miyajima",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Hiroshima Peace Memorial Museum": {
+        "url": "https://hpmmuseum.jp/?lang=eng",
+        "sourceType": "official public museum site (City of Hiroshima museum)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Current exhibition \"New Arrivals Exhibit ―Items donated in FY 2024―\" runs October 1, 2026 to February 23, 2027; news item dated October 23, 2026. Early-morning and evening slots: \"ONLINE RESERVATION IS REQUIRED\"."
+      },
+      "Peace Memorial Park": {
+        "url": "https://www.city.hiroshima.lg.jp/site/hiroshima-park/7480.html",
+        "sourceType": "official public operator (City of Hiroshima)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "City page last updated September 4, 2026 (更新日 2026年9月4日) with current usage rules: no barbecues, fireworks or other open flames; the area inside the A-Bomb Dome fence is closed to entry."
+      },
+      "Hiroshima Castle (Ninomaru)": {
+        "url": "https://hiroshimacastle.jp/",
+        "sourceType": "operator's own site (Hiroshima Castle)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Notices dated 2026.10.28, 2026.10.08 and 2026.10.01. The main keep \"2026年3月に閉城しました\" (closed March 2026) over concrete deterioration; exterior viewing allowed, and Ninomaru reconstructed buildings, museum shop and Sannomaru area remain open."
+      },
+      "Itsukushima Shrine": {
+        "url": "https://www.itsukushimajinja.jp/en/admission.html",
+        "sourceType": "operator's own site (Itsukushima Shrine)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Admission page publishes visiting hours and fees (adult ¥300; combined with Treasure Hall ¥500) and warns \"High heels may get stuck in the spaces.\" No 2026-dated content found; footer reads \"Copyright © 2015\"."
+      },
+      "Miyajima Ropeway": {
+        "url": "https://miyajima-ropeway.info/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Daily status \"Normal service\"; reservations required on listed dates including November 1, 7, 8, 14, 15, 21, 22, 23, 28 and 29. May suspend service for \"high winds, thunder, power outage\"."
+      },
+      "Orizuru Tower": {
+        "url": "https://www.orizurutower.jp/en/access/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Notices dated 2026: \"Notice of opening hours for November 1st, 2026 ～ November 30th, 2026\" and event \"ROOF TOP CAFE & BAR 2026\" (April 20 to December 30, 2026). On-site \"(Akushu) Café\" and shop."
+      },
+      "Shukkeien": {
+        "url": "https://shukkeien.jp/",
+        "sourceType": "operator's own site (Shukkeien garden)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Kawaraban newsletter for September–October 2026 posted 2026.09.02; Light Garden event dated August 2026."
+      },
+      "Hiroshima Museum of Art": {
+        "url": "https://www.hiroshima-museum.jp/en/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Current exhibition \"Artists at the Café -From the Impressionists, Van Gogh and Toulouse-Lautrec to Picasso\" until January 11, 2027; notice dated October 3, 2026. Renovation closure planned August 1, 2027 to November 2, 2028."
+      },
+      "Café Jardin (Hiroshima Museum of Art)": {
+        "url": "https://www.hiroshima-museum.jp/en/",
+        "sourceType": "operator's own site (Hiroshima Museum of Art)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Museum notice dated October 3, 2026: Café Jardin raised its menu prices because of rising costs."
+      },
+      "Hiroshima Prefectural Art Museum": {
+        "url": "https://www.hpam.jp/museum/",
+        "sourceType": "official public operator (Hiroshima Prefecture museum)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Special exhibition \"没後30年 菅井汲\" (Kumi Sugai) 2026.10.2–2026.12.6; collection exhibition 2026.10.17–2027.1.17."
+      },
+      "Daisho-in": {
+        "url": "https://daisho-in.com/",
+        "sourceType": "operator's own site (Daisho-in temple)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Notices dated 2026.10.07 and 2026.10.01 (\"三鬼大権現御開帳\"); May 2026 notices on the Reikado hall fire and rebuilding."
+      },
+      "Miyajima Public Aquarium": {
+        "url": "https://www.miyajima-aqua.jp/guide/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Notices dated October 2026, including a 15th-anniversary exhibition October 10 to November 30, 2026. \"宮島水族館は令和8年12月1日～令和9年3月31日の期間、休館します\" (closed December 1, 2026 to March 31, 2027)."
+      },
+      "Hiroshima National Peace Memorial Hall for the Atomic Bomb Victims": {
+        "url": "https://www.hiro-tsuitokinenkan.go.jp/en/",
+        "sourceType": "official public operator (national memorial hall)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Notice posted 2026/07/02 on A-bomb Memoirs Reading, August 5 & 6, 2026; page shows \"Today's Opening Hours\"."
+      },
+      "5-Days Children's Culture & Science Museum": {
+        "url": "https://www.city.hiroshima.lg.jp/soshiki/46/11502.html",
+        "sourceType": "official public operator (City of Hiroshima)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "City page updated October 1, 2026; free entry, planetarium charged (adults ¥510). Closes for renovation from April 1, 2027 until reopening in fiscal 2029."
+      },
+      "Mitchan Sohonten (Hatchobori)": {
+        "url": "https://www.okonomi.co.jp/shop/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Founded 1950; notices dated 2026.10.05 (store hours) and 2026.10.28 \"定休日の変更に関しまして\" (closing-day change; body not readable)."
+      },
+      "Anagomeshi Ueno (Miyajimaguchi)": {
+        "url": "https://www.anagomeshi.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Published hours, booking and queue policy, and a price revision effective \"10/1～\" (year not stated); footer © 2015. First-floor restaurant takes no reservations; bento reservations queue in the same line."
+      },
+      "Hiroshima Andersen (Hondori)": {
+        "url": "https://www.andersen.co.jp/hiroshima/access/",
+        "sourceType": "operator's own site (Andersen Group)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "News dated 2026.10.23 (osechi pre-orders) and 2026.10.12 (Andersen Kitchen buffet for November and December); bakery and 2F restaurant."
+      },
+      "Yamadaya (Miyajima main store)": {
+        "url": "https://momiji-yamadaya.co.jp/tenpo/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Momiji manju maker; home page news dated March 26, 2026; store page lists the main store (宮島本店やまだ屋RAKU) as open year-round."
+      },
+      "Obscura Coffee Roasters (Hondori)": {
+        "url": "https://obscura-coffee.com/shop/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Shop page lists the Hondori branch as café, bean sales and goods with published hours; no 2026-dated notice found."
+      },
+      "Obscura Coffee Roasters (Park)": {
+        "url": "https://obscura-coffee.com/shop/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Shop page lists the Park branch as roasting, café and bean sales with published hours; no 2026-dated notice found."
+      },
+      "Sky Lounge Top of Hiroshima (Grand Prince Hotel Hiroshima)": {
+        "url": "https://www.princehotels.co.jp/hiroshima/restaurant/",
+        "sourceType": "operator's own site (Prince Hotels)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Listed as café/lounge/bar on the hotel's top floor (\"ホテル最上階\"), breakfast from ¥3,500, dinner from ¥7,000; hotel notices dated 2026/03/27, 2026/08/14 and 2026/09/18. Restaurants warn dinner may be unavailable without a reservation."
+      },
+      "Chinese Restaurant Li Fang (Grand Prince Hotel Hiroshima)": {
+        "url": "https://www.princehotels.co.jp/hiroshima/restaurant/",
+        "sourceType": "operator's own site (Prince Hotels)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Weekday special dinner plan runs 2026年4月8日～12月25日, \"5：30P.M.～9：30P.M.（L.O.9：00P.M.）\", \"※月・火曜日定休\"."
+      },
+      "Main Bar Mayflower (Hotel Granvia Hiroshima)": {
+        "url": "https://jrwest-hotels.jp/granvia-hiroshima/restaurant/mayflower/",
+        "sourceType": "operator's own site (JR West Hotels)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Seasonal martini promotion dated September 1 to October 31, 2026; drink menu from November 1. Hotel notices dated October 2026."
+      },
+      "The Lounge (ANA Crowne Plaza Hiroshima)": {
+        "url": "https://www.anacrowneplaza-hiroshima.jp/restaurants/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Listed as the hotel's lounge bar on 1F; hotel home page carries offers dated October 2026."
+      },
+      "Chinese Cuisine Taoli (ANA Crowne Plaza Hiroshima)": {
+        "url": "https://www.anacrowneplaza-hiroshima.jp/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Shanghai crab course at Taoli offered October 21 to November 30, 2026."
+      },
+      "All-Day Dining Fruitier (ANA Crowne Plaza Hiroshima)": {
+        "url": "https://www.anacrowneplaza-hiroshima.jp/restaurants/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "\"朝食からディナーまでご利用いただけるカジュアルダイニング\"; German autumn buffet October 2026 and weekend chocolate sweets buffet October 3 to November 29, 2026."
+      }
+    }
+  },
   "Sapporo, Japan": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-28",

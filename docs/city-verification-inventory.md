@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 80.
-- Classifier-passed (published, not fully documented in that format): 112.
+- Source-verified (complete dated evidence format): 81.
+- Classifier-passed (published, not fully documented in that format): 111.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -218,7 +218,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Hawaii, United States | hawaii | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
 | Heidelberg, Germany | heidelberg | held-back | not-reviewed | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Helsinki, Finland | helsinki | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Hiroshima, Japan | hiroshima | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Hiroshima, Japan | hiroshima | source-verified | source-checked | 26 | 34 | 15 | 13 | None |
 | Ho Chi Minh City, Vietnam | ho-chi-minh-city | held-back | not-reviewed | 0 | 3 | 15 | 3 | has 3 named places across 3 categories; needs at least 5 named places across 3 categories |
 | Hobart, Australia | hobart | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Hoi An, Vietnam | hoi-an | source-verified | source-checked | 25 | 50 | 15 | 15 | None |
