@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 71.
-- Classifier-passed (published, not fully documented in that format): 121.
+- Source-verified (complete dated evidence format): 72.
+- Classifier-passed (published, not fully documented in that format): 120.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -441,7 +441,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Sitges, Spain | sitges | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Solovetsky Islands, Russia | solovetsky-islands | held-back | not-reviewed | 0 | 3 | 15 | 3 | has 3 named places across 3 categories; needs at least 5 named places across 3 categories |
 | Sorrento, Italy | sorrento | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Split, Croatia | split | classifier-passed | not-reviewed | 0 | 5 | 15 | 3 | None |
+| Split, Croatia | split | source-verified | source-checked | 23 | 40 | 15 | 14 | None |
 | Stavanger, Norway | stavanger | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Stellenbosch, South Africa | stellenbosch | held-back | not-reviewed | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Stockholm, Sweden | stockholm | held-back | not-reviewed | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |

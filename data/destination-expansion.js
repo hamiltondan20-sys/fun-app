@@ -7332,4 +7332,108 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on October 27, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Split, Croatia: source review of 2026-10-27 (docs/content-research/split-2026-10-27.md).
+  {
+    const cityKey = "Split, Croatia";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Diocletian's Palace Cellars","Split City Museum","Meštrović Gallery","Croatian Maritime Museum"],
+      bestFirstTimers: ["Diocletian's Palace Cellars","Old City Hall (Stara gradska vijećnica)","Archaeological Museum in Split","Fig Split"],
+      bestRestaurants: ["Kadena","ZOI","Zrno Soli","Konoba Varoš"],
+      bestBudget: ["Old City Hall (Stara gradska vijećnica)","Marjan Forest Park","Salona (Tusculum)","Pandora GreenBox"],
+      bestLuxury: ["ZOI","Kadena","Hotel Vestibul Palace (Restaurant Magnus)","Hotel Park Split (Bar 1921)"],
+      bestCouples: ["Meštrović Crikvine – Kaštilac","ZOI","Zrno Soli","Hotel Park Split (Bar 1921)"],
+      bestKids: ["Croatian Maritime Museum","Marjan Forest Park","Archaeological Museum in Split","Oš kolač"],
+      bestSolo: ["Gallery of Fine Arts Split","Ethnographic Museum Split","North Wall Walk (Split City Museum)","Fig Split"],
+      bestUnique: ["North Wall Walk (Split City Museum)","Salona (Tusculum)","Galerija Emanuel Vidović","Meštrović Crikvine – Kaštilac"],
+      bestBreakfast: ["Fig Split","Pandora GreenBox","Brasserie on 7"],
+      bestLunch: ["Fig Split","Konoba Varoš","Pandora GreenBox","Brasserie on 7"],
+      bestDinner: ["ZOI","Kadena","Konoba Varoš","Zrno Soli"],
+      bestCocktails: ["Hotel Park Split (Bar 1921)","Zrno Soli"],
+      bestBakeries: ["Oš kolač"],
+      bestCoffee: ["Oš kolač","Brasserie on 7","Fig Split"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Diocletian's Palace Cellars": "Diocletian's Palace Cellars Obala Hrvatskog narodnog preporoda 1 Split",
+      "Split City Museum": "Split City Museum Papalićeva 1 Split",
+      "Meštrović Gallery": "Galerija Meštrović Šetalište Ivana Meštrovića 46 Split",
+      "Croatian Maritime Museum": "Hrvatski pomorski muzej Glagoljaša 18 Split",
+      "Old City Hall (Stara gradska vijećnica)": "Stara gradska vijećnica Narodni trg Split",
+      "Archaeological Museum in Split": "Arheološki muzej Zrinsko-Frankopanska 25 Split",
+      "Fig Split": "Fig Dioklecijanova 1 Split",
+      "Kadena": "Restoran Kadena Ivana pl. Zajca 4 Split",
+      "ZOI": "ZOI Obala Hrvatskog narodnog preporoda 23 Split",
+      "Zrno Soli": "Zrno Soli Uvala baluni 8 Split",
+      "Konoba Varoš": "Konoba Varoš Ban Mladenova 9 Split",
+      "Marjan Forest Park": "Park šuma Marjan Cattanijin put 2 Split",
+      "Salona (Tusculum)": "Tusculum Salona Don Frane Bulića 91 Solin",
+      "Pandora GreenBox": "Pandora GreenBox Obrov 4 Split",
+      "Hotel Vestibul Palace (Restaurant Magnus)": "Hotel Vestibul Palace Iza Vestibula 4 Split",
+      "Hotel Park Split (Bar 1921)": "Hotel Park Hatzeov perivoj 3 Split",
+      "Meštrović Crikvine – Kaštilac": "Meštrovićeve Crikvine Kaštilac Šetalište Ivana Meštrovića 39 Split",
+      "Oš kolač": "Oš kolač Ćiril-Metodova 4 Split",
+      "Gallery of Fine Arts Split": "Galerija umjetnina Ulica kralja Tomislava 15 Split",
+      "Ethnographic Museum Split": "Etnografski muzej Iza Vestibula 4 Split",
+      "North Wall Walk (Split City Museum)": "Galerija Emanuel Vidović Poljana kraljice Jelene 1 Split",
+      "Galerija Emanuel Vidović": "Galerija Emanuel Vidović Poljana kraljice Jelene 1 Split",
+      "Brasserie on 7": "Brasserie on 7 Obala Hrvatskog narodnog preporoda 7 Split"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Split" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Diocletian's Palace cellars, Split City Museum sites, Meštrović galleries and the Gripe maritime museum, with breakfasts, konoba dinners and bars checked against their own websites.";
+    cityGuide.highlights = ["Diocletian's Palace Cellars","Split City Museum","Meštrović Gallery","Croatian Maritime Museum"];
+    cityGuide.tip = "Most Split museums close on Mondays, but the Diocletian's Palace Cellars (8:30–20:00) and the Croatian Maritime Museum open every day, apart from listed holidays.";
+    data.destinationFacts[cityKey] = "Most Split museums close on Mondays, but the Diocletian's Palace Cellars (8:30–20:00) and the Croatian Maritime Museum open every day, apart from listed holidays.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Diocletian's Palace cellars, Split City Museum sites, Meštrović galleries and the Gripe maritime museum, with breakfasts, konoba dinners and bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays",
+        "copy": "Split City Museum, Galerija Emanuel Vidović, the Old City Hall, Meštrović Gallery and the Gallery of Fine Arts close on Mondays and public holidays. The Archaeological Museum in Split closes on Sundays and holidays instead."
+      },
+      {
+        "label": "Tickets",
+        "value": "€6–€10",
+        "copy": "The Diocletian's Palace Cellars and Split City Museum each cost €10 and the North Wall Walk €6. The Archaeological Museum in Split charges €8, or €10 for a combined ticket with Salona that is valid for 7 days."
+      },
+      {
+        "label": "Book ahead",
+        "value": "Dinner and peka",
+        "copy": "ZOI serves dinner only and asks you to book through its widget and arrive 10 minutes early. At Konoba Varoš, peka dishes must be ordered three hours in advance."
+      },
+      {
+        "label": "Last entry",
+        "value": "30 minutes",
+        "copy": "At every Split City Museum site, last entry is 30 minutes before closing. Meštrović Gallery also stops admitting visitors half an hour before it closes at 18:00."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Plan your palace sightseeing for Tuesday to Sunday, keep Mondays for the Diocletian's Palace Cellars and the Croatian Maritime Museum, and book dinner tables ahead.",
+      intro: [
+        "The Split City Museum runs several sites in and around Diocletian's Palace. The Diocletian's Palace Cellars, listed at Obala Hrvatskog narodnog preporoda 1, open every day from 8:30 to 20:00, close only on 5 April, and cost €10. The main museum at Papalićeva 1 opens Tuesday to Sunday from 9:00 to 20:00. Galerija Emanuel Vidović, beside the Silver Gate, and the Old City Hall on Narodni trg open from 10:00 to 20:00 on the same days. At the Old City Hall you can see the free exhibition \"Umjetnost starih majstora\" until 21 February 2027.",
+        "For antiquity, the Archaeological Museum in Split at Zrinsko-Frankopanska 25 opens Monday to Friday, 9:00–14:00 and 15:00–20:00, from October to May, and Saturdays until 14:00. Its €10 combined ticket also covers the Salona site at Tusculum in Solin and is valid for seven days. Salona opens daily from 9:00 to 18:00 in winter. On the Marjan side of town, Meštrović Gallery at Šetalište Ivana Meštrovića 46 opens Tuesday to Sunday from 8:00 to 18:00. The Split City Museum lists its \"Radoslav Duhović – Povratak Meštroviću\" exhibition there until 28 February 2027.",
+        "The Croatian Maritime Museum is housed in the Gripe Fortress at Glagoljaša 18. In 2026 it opens Monday to Friday from 9:00 to 19:00 and at weekends until 17:00, but it closes on 1 and 18 November and on 25 and 26 December. The Gallery of Fine Arts at Ulica kralja Tomislava 15 shows Zrinka Buljević's photographs from 29 October to 29 November 2026. The Ethnographic Museum at Iza Vestibula 4 runs \"Historija zaborava\" until 15 December 2026. Marjan Forest Park is managed by a public institution that runs a visitor centre.",
+        "For food, Fig Split at Dioklecijanova 1 serves breakfast until 12:00, then lunch and dinner. Konoba Varoš at Ban Mladenova 9 opens daily from 9:00 to midnight, and its peka dishes need ordering three hours ahead. ZOI, above the Riva near the cellars' South Gate entrance, serves dinner only with seasonal seatings. Kadena takes online bookings and shows a Michelin Guide Croatia 2018–2026 banner. Zrno Soli at ACI Marina stays open until 01:00 on Fridays and Saturdays. For something sweet, Oš kolač at Ćiril-Metodova 4 opens Tuesday to Saturday from 10:00 to 18:00."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Start with the Diocletian's Palace Cellars, open daily 8:30–20:00, then walk up to the Split City Museum at Papalićeva 1."
+        ],
+        [
+          "A slower morning",
+          "Have breakfast at Fig Split, served until 12:00, before the Gallery of Fine Arts opens at 10:00 from Tuesday to Sunday."
+        ],
+        [
+          "Before booking",
+          "Book ZOI through its online widget for dinner, and order peka at Konoba Varoš three hours ahead."
+        ]
+      ],
+      trust: "All 23 distinct recommendations in this guide were checked against their operators' own websites on October 27, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

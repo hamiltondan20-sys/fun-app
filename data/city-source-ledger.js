@@ -5,6 +5,691 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Split, Croatia": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-27",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Only 23 places could be confirmed, below the 25–35 target, because many Split venues publish only on social media or third-party listings, and several official sites could not be read: Bokeria and D16 Coffee (HTTP 522), Konoba Matejuška (certificate error), the Croatian National Theatre (connection refused), Le Méridien Grand Hotel Lav (HTTP 403), Hotel Atrium (connection refused), and the Cornaro Hotel and Hotel Peristil (title only). No official cathedral site was found. Hours are not published for the North Wall Walk, Ethnographic Museum, Marjan Forest Park, Kadena, Brasserie on 7, Pandora GreenBox, Hotel Park Split and Hotel Vestibul Palace. Konoba Varoš, Brasserie on 7 and Oš kolač show no dated 2026 content, and Marjan Forest Park is confirmed only through its operator's office address. The bakery and cocktail lists are thin: they rely on a pastry shop and on a hotel bar and a late-opening restaurant.",
+    "sourceUrls": [
+      "docs/content-research/split-2026-10-27.md",
+      "docs/content-research/split-2026-10-27.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Diocletian's Palace",
+        "checkedOn": "2026-10-27",
+        "reason": "No single official operator page for the palace as a whole; covered through confirmed Split City Museum units (Diocletian's Palace Cellars, Old City Hall, Galerija Emanuel Vidović, North Wall Walk)."
+      },
+      {
+        "name": "Riva waterfront",
+        "checkedOn": "2026-10-27",
+        "reason": "Public promenade with no operator page found; used only as location context in confirmed addresses."
+      },
+      {
+        "name": "Marjan Hill",
+        "url": "https://www.marjan-parksuma.hr",
+        "checkedOn": "2026-10-27",
+        "reason": "Replaced by the confirmed operator-run entry Marjan Forest Park."
+      },
+      {
+        "name": "Hvar or Brac ferry day (Jadrolinija)",
+        "url": "https://www.jadrolinija.hr",
+        "checkedOn": "2026-10-27",
+        "reason": "Operator site has 2026 notices (e.g. 23.10.2026 timetable change for line 635 Split – Stari Grad) but publishes no Split terminal address; also not a single place."
+      },
+      {
+        "name": "Split City Museum (mgst.net)",
+        "url": "https://www.mgst.net",
+        "checkedOn": "2026-10-27",
+        "reason": "Old domain now shows third-party travel articles, not the museum; official site is mgs.hr (used)."
+      },
+      {
+        "name": "Museum of Croatian Archaeological Monuments",
+        "url": "https://www.mhas-split.hr",
+        "checkedOn": "2026-10-27",
+        "reason": "Official site says closed since 12 November 2024 for energy renovation works; reopening to be announced."
+      },
+      {
+        "name": "Cathedral of St Domnius",
+        "url": "https://www.katedralasplit.hr",
+        "checkedOn": "2026-10-27",
+        "reason": "No official site found; katedralasplit.hr did not resolve (DNS ENOTFOUND). Only third-party listings available."
+      },
+      {
+        "name": "Croatian National Theatre Split",
+        "url": "https://hnk-split.hr",
+        "checkedOn": "2026-10-27",
+        "reason": "Fetch failed: connection refused (ECONNREFUSED) on hnk-split.hr."
+      },
+      {
+        "name": "Bokeria",
+        "url": "https://www.bokeria.hr",
+        "checkedOn": "2026-10-27",
+        "reason": "Fetch failed repeatedly: HTTP 522."
+      },
+      {
+        "name": "D16 Coffee",
+        "url": "https://www.d16coffee.com",
+        "checkedOn": "2026-10-27",
+        "reason": "Fetch failed repeatedly: HTTP 522."
+      },
+      {
+        "name": "Konoba Matejuška",
+        "url": "https://www.konobamatejuska.hr",
+        "checkedOn": "2026-10-27",
+        "reason": "Fetch failed: HTTP 526 (certificate error)."
+      },
+      {
+        "name": "Le Méridien Grand Hotel Lav",
+        "url": "https://www.marriott.com/en-us/hotels/splmd-le-meridien-grand-hotel-lav-split/overview/",
+        "checkedOn": "2026-10-27",
+        "reason": "Fetch failed: HTTP 403 / 404 on marriott.com."
+      },
+      {
+        "name": "Hotel Atrium",
+        "url": "https://www.hotel-atrium.hr",
+        "checkedOn": "2026-10-27",
+        "reason": "Fetch failed: connection refused."
+      },
+      {
+        "name": "Dvor",
+        "url": "https://www.dvor-restaurant.com",
+        "checkedOn": "2026-10-27",
+        "reason": "Official site reachable (2026 menu PDF path) but publishes no address or hours; contact page 404."
+      },
+      {
+        "name": "Zinfandel Food & Wine Bar",
+        "url": "https://www.zinfandel.hr",
+        "checkedOn": "2026-10-27",
+        "reason": "Official site shows only an email contact; no address, hours or booking."
+      },
+      {
+        "name": "Uje Oil Bar",
+        "url": "https://www.uje.hr",
+        "checkedOn": "2026-10-27",
+        "reason": "Official site lists only the company address (Kneza Višeslava 5) and no venue address or hours; venue page 404."
+      },
+      {
+        "name": "Bobis (Split shops)",
+        "url": "https://www.bobis.hr/lokacije/",
+        "checkedOn": "2026-10-27",
+        "reason": "Official site lists only headquarters in Solin; locations page did not render shop addresses (also HTTP 429 once); newest dated content 2025."
+      },
+      {
+        "name": "Mlinar (Split shops)",
+        "url": "https://mlinar.hr/hr/prodajna-mjesta",
+        "checkedOn": "2026-10-27",
+        "reason": "Official store locator did not render any Split addresses."
+      },
+      {
+        "name": "Cornaro Hotel rooftop bar",
+        "url": "https://www.cornarohotel.com/en/",
+        "checkedOn": "2026-10-27",
+        "reason": "Official site returned only a page title, nothing readable."
+      },
+      {
+        "name": "Hotel Peristil",
+        "url": "https://www.hotelperistil.com",
+        "checkedOn": "2026-10-27",
+        "reason": "Official site returned only a page title, nothing readable."
+      },
+      {
+        "name": "Pimpinella",
+        "url": "https://www.pimpinella.hr",
+        "checkedOn": "2026-10-27",
+        "reason": "Site lists hours (09-24) but no address; appears to be a catering page with © 2012 footer."
+      },
+      {
+        "name": "Froggyland",
+        "url": "https://www.froggyland.net",
+        "checkedOn": "2026-10-27",
+        "reason": "Address shown (Ul. kralja Tomislava 5) but no hours, tickets or current content (© 2022), and the page carries unrelated gambling ads; not treated as reliable."
+      },
+      {
+        "name": "Klis Fortress",
+        "url": "https://www.tvrdavaklis.com",
+        "checkedOn": "2026-10-27",
+        "reason": "Site has 2026 posts (Museum Night, Night of Fortresses) but no address, hours or prices; also outside Split."
+      },
+      {
+        "name": "Hotel Marmont",
+        "url": "https://www.marmonthotel.com",
+        "checkedOn": "2026-10-27",
+        "reason": "Domain redirects to an unrelated triathlon site."
+      },
+      {
+        "name": "Golly & Bossy",
+        "url": "https://www.gollybossy.com",
+        "checkedOn": "2026-10-27",
+        "reason": "Domain is a for-sale placeholder."
+      },
+      {
+        "name": "Hotel Ambasador",
+        "url": "https://www.ambasadorhotel.com",
+        "checkedOn": "2026-10-27",
+        "reason": "ambasadorhotel.com is a hotel in Niš, Serbia, not Split."
+      },
+      {
+        "name": "Hotel Luxe Split",
+        "url": "https://www.hotelluxesplit.com",
+        "checkedOn": "2026-10-27",
+        "reason": "Address shown (Ul. kralja Zvonimira 6) but bars and restaurant have no hours and no current dated content; not needed."
+      },
+      {
+        "name": "Judita Palace",
+        "url": "https://www.juditapalace.com",
+        "checkedOn": "2026-10-27",
+        "reason": "Hotel only; no restaurant or bar listed."
+      },
+      {
+        "name": "Kruščić, Luka Ice Cream & Cakes, Konoba Fetivi, Marvlvs Library Jazz Bar, Stow Coffee Roasters, Kava2, Sanctuary Bar, Academia Ghetto Club",
+        "checkedOn": "2026-10-27",
+        "reason": "No official website found (only social media or third-party listings); not usable as evidence."
+      },
+      {
+        "name": "Palace evening",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Marjan swim walk",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Marjan swim walk",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "a Dalmatian konoba dinner",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Split market or cafe",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local dinner in Old Town",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Bacvice",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Varos",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Old Town",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Old Town walk",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Bacvice",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Varos",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Varos",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Diocletian's Palace",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Old Town",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Palace evening",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Bacvice",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Riva waterfront",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Old Town evening",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Bacvice",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Varos",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Old Town",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Diocletian's Palace",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Bacvice",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Varos",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Old Town",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Diocletian's Palace",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Old Town cafe or market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Varos",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Varos",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Old Town",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Old Town",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Bacvice bakery or market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Diocletian's Palace",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Varos",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Old Town",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Riva waterfront",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Varos",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Old Town",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Bacvice",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Varos",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Old Town",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Old Town",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Bacvice",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Marjan Hill",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Old Town",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Bacvice morning market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Diocletian's Palace",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Varos",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Old Town",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Bacvice",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Varos",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Diocletian's Palace Cellars": {
+        "url": "https://mgs.hr/hr/posjetite-nas/muzejske-lokacije/podrumi-dioklecijanove-palace/",
+        "sourceType": "official public operator (Muzej grada Splita / Split City Museum)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Listed as a current Split City Museum unit with published daily hours and a price list (\"ulaznica 10,00 EUR\"); the museum's site carries October 2026 news and exhibitions."
+      },
+      "Split City Museum": {
+        "url": "https://mgs.hr/",
+        "sourceType": "operator's own site (Muzej grada Splita)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "News dated 16 Oct 2026 and 9 Oct 2026; on 23 Sep 2026 the museum \"marked one year since its new permanent display opened\". Adult ticket 10,00 EUR, family 18,00 EUR."
+      },
+      "Old City Hall (Stara gradska vijećnica)": {
+        "url": "https://mgs.hr/hr/posjetite-nas/muzejske-lokacije/stara-gradska-vijecnica/",
+        "sourceType": "official public operator (Muzej grada Splita / Split City Museum)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Current exhibition \"Umjetnost starih majstora\" (old masters from the Museum of Arts and Crafts collections), 8 October 2026 to 21 February 2027, free entry."
+      },
+      "Galerija Emanuel Vidović": {
+        "url": "https://mgs.hr/hr/posjetite-nas/muzejske-lokacije/galerija-vidovic/",
+        "sourceType": "official public operator (Muzej grada Splita / Split City Museum)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Current exhibition \"Povijest kravate: od hrvatskih korijena do talijanske izvrsnosti\", 8 October to 8 November 2026, free entry. Described as a \"Klasicistička kuća kraj Srebrnih vrata\". Ticket 8,00 EUR."
+      },
+      "North Wall Walk (Split City Museum)": {
+        "url": "https://mgs.hr/cjenici-i-radno-vrijeme/",
+        "sourceType": "official public operator (Muzej grada Splita / Split City Museum)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Listed on the current price list as \"Ophod nad sjever. zidom\", ticket 6,00 EUR (reduced 4,00, family 10,00); the museum's site says visitors check in at the Galerija Emanuel Vidović reception."
+      },
+      "Archaeological Museum in Split": {
+        "url": "https://www.armus.hr/muzej/posjet/",
+        "sourceType": "operator's own site (Arheološki muzej u Splitu)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Ticket prices \"apply from 7 January 2026\" (adult 8 EUR; 7-day combined ticket with Salona 10 EUR; children's workshops 4 EUR); news dated 19 and 21 October 2026."
+      },
+      "Salona (Tusculum)": {
+        "url": "https://www.armus.hr/muzej/posjet/",
+        "sourceType": "official public operator (Arheološki muzej u Splitu)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Published seasonal hours and 2026 price list covering the Salona collection and site; combined Split museum + Salona adult ticket 10 EUR, valid 7 days."
+      },
+      "Meštrović Gallery": {
+        "url": "https://www.mestrovic.hr",
+        "sourceType": "operator's own site (Muzeji Ivana Meštrovića)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Online ticket shop (\"Kupi ulaznice\") and current programme; the Split City Museum's site lists \"Radoslav Duhović – Povratak Meštroviću\" at Galerija Meštrović from 15 Oct 2026 to 28 Feb 2027."
+      },
+      "Meštrović Crikvine – Kaštilac": {
+        "url": "https://www.mestrovic.hr",
+        "sourceType": "operator's own site (Muzeji Ivana Meštrovića)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Published opening hours and a ticket link; hosts the exhibition \"Tajni život skulpture\" (year not stated on the page)."
+      },
+      "Gallery of Fine Arts Split": {
+        "url": "https://www.galum.hr",
+        "sourceType": "operator's own site (Galerija umjetnina Split)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "\"Zrinka Buljević: Fotografske usputnice\" runs 29.10.2026 to 29.11.2026; \"Jurica Kezić: Tlo slike\" 17.9.2026 to 8.11.2026; Ignasi Aballí installation listed to 31.12.2030."
+      },
+      "Croatian Maritime Museum": {
+        "url": "https://www.hpms.hr",
+        "sourceType": "operator's own site (Hrvatski pomorski muzej Split)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Publishes \"RADNO VRIJEME ZA POSJETITELJE u 2026. godini\" for 1 January to 31 December; news items dated 28 April 2026."
+      },
+      "Ethnographic Museum Split": {
+        "url": "https://www.etnografski-muzej-split.hr/kontakt/",
+        "sourceType": "operator's own site (Etnografski muzej Split)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Exhibition \"Historija zaborava: Prve žene hrvatskih muzeja – Zagreb, Osijek i Split\" runs 16.10.2026 to 15.12.2026 (homepage)."
+      },
+      "Marjan Forest Park": {
+        "url": "https://www.marjan-parksuma.hr",
+        "sourceType": "official public operator (Javna ustanova za upravljanje park šumom Marjan)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Managed by a public institution with a visitor centre and rules of conduct; its visitmarjan.com events calendar shows October 2026 (\"Nema događaja\"). No closure notice."
+      },
+      "ZOI": {
+        "url": "https://www.zoi.hr/contact",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Live booking widget (Zenchef); \"All experiences are served at dinner; menus and prices are updated seasonally\"; asks guests to \"arrive 10 minutes before your reservation time\"."
+      },
+      "Kadena": {
+        "url": "https://www.restorankadena.com",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Online booking link (book.seatlio.com) and a \"Michelin Guide Croatia 2018 – 2026\" banner."
+      },
+      "Fig Split": {
+        "url": "https://www.figrestaurants.com/split",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Current menu with prices marked 10.09.2026; breakfast dishes such as French Toast (13.50 €) and Granola Bowl (11.50 €)."
+      },
+      "Konoba Varoš": {
+        "url": "https://www.konobavaros.com",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Reservations page and phone booking; peka specialties \"zahtijevaju naručivanje tri sata unaprijed\". No dated 2026 content (footer © 2014)."
+      },
+      "Brasserie on 7": {
+        "url": "https://www.brasserieon7.com",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Active \"BOOK A TABLE\" reservation system and brunch offer; no dated 2026 content (footer © 2024)."
+      },
+      "Zrno Soli": {
+        "url": "https://www.zrnosoli.hr",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Reservation page and online booking link; published weekly hours; © 2026 footer (latest news posts April 2025)."
+      },
+      "Pandora GreenBox": {
+        "url": "https://www.pandoragreenbox.com",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Plant-based menu with Brunch, Main courses and Desserts sections and an online reservations link; footer \"©Pandora GreenBox 2026\"."
+      },
+      "Oš kolač": {
+        "url": "https://www.oskolac.hr",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Pastry shop (\"Naša slastičarnica\") with a published \"Radno vrijeme\" section and a Wolt ordering link; no dated 2026 content (footer @2024)."
+      },
+      "Hotel Park Split (Bar 1921)": {
+        "url": "https://www.hotelparksplit.com/gastro",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Gourmet page lists \"Restaurant 1921\", \"Bar 1921\", \"Terasa\" and \"Stakleni vrt\"; the hotel says it has been a byword for gastronomy \"od osnutka 1921. godine\"; © 2026 footer."
+      },
+      "Hotel Vestibul Palace (Restaurant Magnus)": {
+        "url": "https://www.vestibulpalace.com",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Names Restaurant Magnus as the hotel's restaurant; shows a \"World Travel Awards – Croatia's Leading Boutique Hotel 2026\" badge and © 2026 footer."
+      }
+    }
+  },
   "York, United Kingdom": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-27",
