@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 59.
-- Classifier-passed (published, not fully documented in that format): 133.
+- Source-verified (complete dated evidence format): 61.
+- Classifier-passed (published, not fully documented in that format): 131.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -300,7 +300,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Manila, Philippines | manila | classifier-passed | not-reviewed | 0 | 5 | 15 | 3 | None |
 | Marrakech, Morocco | marrakech | source-verified | source-checked | 27 | 38 | 15 | 14 | None |
 | Marrakesh, Morocco | marrakesh | held-back | not-reviewed | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
-| Marseille, France | marseille | classifier-passed | not-reviewed | 0 | 10 | 15 | 4 | None |
+| Marseille, France | marseille | source-verified | source-checked | 24 | 47 | 15 | 15 | None |
 | Maui, United States | maui | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Medellin, Colombia | medellin | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Medora, United States | medora | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
@@ -341,7 +341,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | New Zealand, New Zealand | new-zealand | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
 | Nha Trang, Vietnam | nha-trang | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Niagara Falls, Canada | niagara-falls | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
-| Nice, France | nice | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Nice, France | nice | source-verified | source-checked | 26 | 43 | 15 | 15 | None |
 | Nikko, Japan | nikko | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Noosa, Australia | noosa | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Normandy, France | normandy | held-back | not-reviewed | 0 | 4 | 15 | 2 | has 4 named places across 2 categories; needs at least 5 named places across 3 categories |

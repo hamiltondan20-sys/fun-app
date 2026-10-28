@@ -6036,4 +6036,216 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 27, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Nice, France: source review of 2026-10-27 (docs/content-research/nice-2026-10-27.md).
+  {
+    const cityKey = "Nice, France";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Musée Matisse","Musée national Marc Chagall","Parc de la Colline du Château","Cathédrale Saint-Nicolas"],
+      bestFirstTimers: ["Parc de la Colline du Château","Musée Matisse","Palais Lascaris","Promenade du Paillon"],
+      bestRestaurants: ["Jan","Café de Turin","La Rossettisserie","Chez Pipo"],
+      bestBudget: ["Chez Pipo","Palais Lascaris","Musée d'Archéologie de Nice-Cimiez","Jardin du Monastère de Cimiez"],
+      bestLuxury: ["Jan","Villa Ephrussi de Rothschild","Le Patio (Hôtel La Pérouse)","Opéra de Nice"],
+      bestCouples: ["Villa Ephrussi de Rothschild","Opéra de Nice","Jan","Jardin du Monastère de Cimiez"],
+      bestKids: ["Parc Phoenix","Muséum d'Histoire naturelle de Nice","Promenade du Paillon","Confiserie Florian (Vieux Nice)"],
+      bestSolo: ["Musée de la Photographie Charles Nègre","Musée des Beaux-Arts Jules Chéret","Musée Masséna","Parc de la Colline du Château"],
+      bestUnique: ["Cathédrale Saint-Nicolas","Musée International d'Art Naïf Anatole Jakovsky","Confiserie Florian (Vieux Nice)","Musée d'Archéologie de Nice-Cimiez"],
+      bestBreakfast: ["L'Horloge (Hôtel Aston La Scala)"],
+      bestLunch: ["Chez Pipo","Café de Turin","La Rossettisserie","Villa Ephrussi de Rothschild"],
+      bestDinner: ["Jan","La Rossettisserie","Café de Turin","L'Horloge (Hôtel Aston La Scala)"],
+      bestCocktails: ["L'Aston Club (Hôtel Aston La Scala)","Les Folies d'Edmonde","Le Patio (Hôtel La Pérouse)"],
+      bestBakeries: ["Maison Auer","Confiserie Florian (Vieux Nice)"],
+      bestCoffee: ["L'Horloge (Hôtel Aston La Scala)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Musée Matisse": "Musée Matisse 164 avenue des Arènes de Cimiez Nice",
+      "Musée national Marc Chagall": "Musée national Marc Chagall Avenue du Docteur Ménard Nice",
+      "Parc de la Colline du Château": "Parc de la Colline du Château Montée Monfort Nice",
+      "Cathédrale Saint-Nicolas": "Cathédrale Saint-Nicolas Avenue Nicolas II Nice",
+      "Palais Lascaris": "Palais Lascaris 15 rue Droite Nice",
+      "Promenade du Paillon": "Promenade du Paillon avenue Félix Faure Nice",
+      "Jan": "Jan 12 Rue Lascaris Nice",
+      "Café de Turin": "Café de Turin 5 place Garibaldi Nice",
+      "La Rossettisserie": "La Rossettisserie 8 Rue Mascoïnat Nice",
+      "Chez Pipo": "Chez Pipo 13 rue Bavastro Nice",
+      "Musée d'Archéologie de Nice-Cimiez": "Musée d'Archéologie 160 avenue des Arènes de Cimiez Nice",
+      "Jardin du Monastère de Cimiez": "Jardin du Monastère de Cimiez 1 avenue Bellanda Nice",
+      "Villa Ephrussi de Rothschild": "Villa Ephrussi de Rothschild 1 Avenue Ephrussi de Rothschild Saint-Jean-Cap-Ferrat",
+      "Le Patio (Hôtel La Pérouse)": "Hôtel La Pérouse 11 Quai Rauba Capeu Nice",
+      "Opéra de Nice": "Opéra de Nice 4-6 rue Saint François de Paule Nice",
+      "Parc Phoenix": "Parc Phoenix 405 promenade des Anglais Nice",
+      "Muséum d'Histoire naturelle de Nice": "Muséum d'Histoire naturelle 60 bis boulevard Risso Nice",
+      "Confiserie Florian (Vieux Nice)": "Confiserie Florian 14 Quai Papacino Nice",
+      "Musée de la Photographie Charles Nègre": "Musée de la Photographie Charles Nègre 1 place Pierre Gautier Nice",
+      "Musée des Beaux-Arts Jules Chéret": "Musée des Beaux-Arts Jules Chéret 33 avenue des Baumettes Nice",
+      "Musée Masséna": "Musée Masséna 65 rue de France Nice",
+      "Musée International d'Art Naïf Anatole Jakovsky": "Musée International d'Art Naïf 23 avenue de Fabron Nice",
+      "L'Horloge (Hôtel Aston La Scala)": "Hôtel Aston La Scala 12 avenue Félix Faure Nice",
+      "L'Aston Club (Hôtel Aston La Scala)": "Hôtel Aston La Scala 12 avenue Félix Faure Nice",
+      "Les Folies d'Edmonde": "Les Folies d'Edmonde 16 rue Benoît Bunico Nice",
+      "Maison Auer": "Maison Auer 7 Rue Saint-François de Paule Nice"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Nice" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "City museums, parks, the Russian cathedral and the opera, with socca, dinner tables, hotel bars and confectioners checked against their own websites.";
+    cityGuide.highlights = ["Musée Matisse","Musée national Marc Chagall","Parc de la Colline du Château","Cathédrale Saint-Nicolas"];
+    cityGuide.tip = "Plan museum days around closures: the Matisse, Chagall, Masséna, Lascaris and Archaeology museums close on Tuesdays, while the Beaux-Arts, Photography and Natural History museums close on Mondays.";
+    data.destinationFacts[cityKey] = "Plan museum days around closures: the Matisse, Chagall, Masséna, Lascaris and Archaeology museums close on Tuesdays, while the Beaux-Arts, Photography and Natural History museums close on Mondays.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "City museums, parks, the Russian cathedral and the opera, with socca, dinner tables, hotel bars and confectioners checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Tuesday or Monday",
+        "copy": "Musée Matisse, Musée national Marc Chagall, Musée Masséna and Palais Lascaris are closed on Tuesdays. Musée des Beaux-Arts Jules Chéret, the Photography museum and the Muséum d'Histoire naturelle close on Mondays instead."
+      },
+      {
+        "label": "Tickets",
+        "value": "City pass 15 €",
+        "copy": "The city's Pass 10 Musées costs 15 € for four days, with single entry at 10 € for Matisse, Masséna and Beaux-Arts and 5 € for Lascaris. Entry to the Musée national Marc Chagall is free for everyone on the first Sunday of the month."
+      },
+      {
+        "label": "Walk-in or book",
+        "value": "Varies by table",
+        "copy": "Chez Pipo serves without reservation, Wednesday to Sunday. Jan takes bookings only through its website, requires a deposit and asks you to confirm 48 hours ahead."
+      },
+      {
+        "label": "Rules",
+        "value": "Dress and timing",
+        "copy": "Jan's dress code is \"Chic / Elegant\" and dogs are not allowed. Cathédrale Saint-Nicolas is closed to tourists on Sundays from 9:00 to 12:00."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Group the Cimiez museums on one morning, avoid Tuesdays for most museums, and book Jan well ahead.",
+      intro: [
+        "Nice's city-run museums publish their hours and current exhibitions on nice.fr, so you can plan around them. Up in Cimiez, the Musée Matisse at 164 avenue des Arènes de Cimiez opens \"Henri Matisse – Alex Katz\" on 28 October 2026, running to 18 January 2027. The Archaeology museum next door hosts \"Mémoires des ruines\" by Anne et Patrick Poirier, a MAMAC exhibition with free entry, from 7 November 2026 to 5 September 2027. Both are closed on Tuesdays, and from 1 November they close at 17:00.",
+        "Down the hill, the Musée national Marc Chagall on avenue du Docteur Ménard is also closed on Tuesdays. From 1 November 2026 it opens 10:00 to 17:00 with a break from 13:00 to 14:30, though the garden and bookshop stay open during the pause. In the old town, Palais Lascaris on rue Droite has \"Merveilles et curiosités du Palais Lascaris\" until 11 January 2027. The Photography museum on place Pierre Gautier shows Sabine Weiss until 31 January 2027, and Musée Masséna's \"Nice, ma ville, mes jardins\" runs until 28 February 2027.",
+        "For open air, the Parc de la Colline du Château on Montée Monfort opens daily from 08:30, closing at 18:00 from 1 November. The Promenade du Paillon opens 07:00 to 21:00 in winter, and the Jardin du Monastère de Cimiez keeps the same 08:30 start as the castle hill. Parc Phoenix, on the Promenade des Anglais, opens daily and stops ticket sales an hour before closing. The Cathédrale Saint-Nicolas welcomes visitors daily but is closed to tourists on Sunday mornings until noon.",
+        "For food, Chez Pipo on rue Bavastro serves without reservation from Wednesday to Sunday, while Jan on rue Lascaris seats one dinner service five nights a week, with booking and a deposit required. Café de Turin on place Garibaldi serves every day from noon. Hôtel Aston La Scala's L'Horloge serves breakfast from 7:30, and its Aston Club bar opens year-round from 17:00. Les Folies d'Edmonde pours cocktails nightly from 18:00. At the Opéra de Nice, \"La Veuve joyeuse\" plays 11–13 November."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair the Parc de la Colline du Château with Palais Lascaris and the Photography museum in the old town, avoiding Tuesday for Lascaris."
+        ],
+        [
+          "A slower morning",
+          "Take breakfast at L'Horloge from 7:30, then head up to Cimiez for the Musée Matisse and the Jardin du Monastère."
+        ],
+        [
+          "Before booking",
+          "Jan needs an online booking with a deposit and confirmation 48 hours ahead, while Chez Pipo takes no reservations."
+        ]
+      ],
+      trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on October 27, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
+  // Marseille, France: source review of 2026-10-27 (docs/content-research/marseille-2026-10-27.md).
+  {
+    const cityKey = "Marseille, France";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Mucem","Château d'If","Cosquer Méditerranée","Centre de la Vieille Charité"],
+      bestFirstTimers: ["Mucem","Château d'If","Centre de la Vieille Charité","Le Miramar"],
+      bestRestaurants: ["Chez Fonfon","Le Miramar","Sépia","Les Grandes Tables"],
+      bestBudget: ["Le Café du Fort (Mucem)","Les Grandes Tables","Frac Sud","Torréfaction Noailles (Canebière)"],
+      bestLuxury: ["Le Petit Nice Passedat","AM par Alexandre Mazzia","Dantès Skylounge (Sofitel Marseille Vieux-Port)","Capian (InterContinental Marseille Hôtel-Dieu)"],
+      bestCouples: ["Chez Fonfon","Le Petit Nice Passedat","Dantès Skylounge (Sofitel Marseille Vieux-Port)","Château d'If"],
+      bestKids: ["Muséum d'histoire naturelle de Marseille","Cosquer Méditerranée","Château d'If","Mama Shelter Marseille"],
+      bestSolo: ["Musée Cantini","mac (Musée d'art contemporain)","La Friche la Belle de Mai","Frac Sud"],
+      bestUnique: ["La Friche la Belle de Mai","Cosquer Méditerranée","Château Borély","Le Four des Navettes"],
+      bestBreakfast: ["Mama Shelter Marseille","Le Café du Fort (Mucem)"],
+      bestLunch: ["Les Grandes Tables","Sépia","Le Miramar","Chez Fonfon"],
+      bestDinner: ["Le Miramar","Chez Fonfon","AM par Alexandre Mazzia","Le Petit Nice Passedat"],
+      bestCocktails: ["Capian (InterContinental Marseille Hôtel-Dieu)","Dantès Skylounge (Sofitel Marseille Vieux-Port)","Julis"],
+      bestBakeries: ["Le Four des Navettes","La Pâtisserie des Marseillais"],
+      bestCoffee: ["Torréfaction Noailles (Canebière)","Le Café du Fort (Mucem)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Mucem": "Mucem Fort Saint-Jean Vieux-Port Marseille",
+      "Château d'If": "Château d'If Île d'If Marseille",
+      "Cosquer Méditerranée": "Cosquer Méditerranée Esplanade du J4 Marseille",
+      "Centre de la Vieille Charité": "Centre de la Vieille Charité 2 rue de la Charité Marseille",
+      "Le Miramar": "Le Miramar 12 quai du Port Marseille",
+      "Chez Fonfon": "Chez Fonfon 140 rue du Vallon des Auffes Marseille",
+      "Sépia": "Sépia 2 rue Vauvenargues Marseille",
+      "Les Grandes Tables": "Les Grandes Tables 41 rue Jobin Marseille",
+      "Le Café du Fort (Mucem)": "Le Café du Fort Fort Saint-Jean Mucem Marseille",
+      "Frac Sud": "Frac Sud 20 boulevard de Dunkerque Marseille",
+      "Torréfaction Noailles (Canebière)": "Torréfaction Noailles 56 La Canebière Marseille",
+      "Le Petit Nice Passedat": "Le Petit Nice Passedat Anse de Maldormé Corniche Kennedy Marseille",
+      "AM par Alexandre Mazzia": "AM par Alexandre Mazzia 9 rue François Rocca Marseille",
+      "Dantès Skylounge (Sofitel Marseille Vieux-Port)": "Sofitel Marseille Vieux-Port 36 boulevard Charles Livon Marseille",
+      "Capian (InterContinental Marseille Hôtel-Dieu)": "InterContinental Marseille Hôtel-Dieu 1 Place Daviel Marseille",
+      "Muséum d'histoire naturelle de Marseille": "Muséum d'histoire naturelle Palais Longchamp Boulevard Philippon Marseille",
+      "Mama Shelter Marseille": "Mama Shelter 64 rue de la Loubière Marseille",
+      "Musée Cantini": "Musée Cantini 19 rue Grignan Marseille",
+      "mac (Musée d'art contemporain)": "Musée d'art contemporain 69 avenue de Haïfa Marseille",
+      "La Friche la Belle de Mai": "La Friche la Belle de Mai 41 rue Jobin Marseille",
+      "Château Borély": "Château Borély 132 avenue Clot Bey Marseille",
+      "Le Four des Navettes": "Le Four des Navettes 136 rue Sainte Marseille",
+      "Julis": "Julis 2 rue Vauvenargues Marseille",
+      "La Pâtisserie des Marseillais": "La Pâtisserie des Marseillais 28 Grand Rue Marseille"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Marseille" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Harbour museums, island fortress, city museums and bouillabaisse tables, with breakfast, bakeries, coffee and hotel bars checked against their own websites.";
+    cityGuide.highlights = ["Mucem","Château d'If","Cosquer Méditerranée","Centre de la Vieille Charité"];
+    cityGuide.tip = "Plan around closing days: the Mucem closes on Tuesdays, the city museums open Tuesday to Sunday only, and from 28 September to 31 March the Château d'If closes on Mondays and does not open in bad weather.";
+    data.destinationFacts[cityKey] = "Plan around closing days: the Mucem closes on Tuesdays, the city museums open Tuesday to Sunday only, and from 28 September to 31 March the Château d'If closes on Mondays and does not open in bad weather.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Harbour museums, island fortress, city museums and bouillabaisse tables, with breakfast, bakeries, coffee and hotel bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mon / Tue",
+        "copy": "The Mucem and its Café du Fort close on Tuesdays, while the Vieille Charité, Musée Cantini, mac and other city museums open Tuesday to Sunday. In winter the Château d'If also closes on Mondays."
+      },
+      {
+        "label": "Tickets",
+        "value": "One Mucem ticket",
+        "copy": "A same-day Mucem ticket, 11 euros full rate, covers every exhibition in J4 and Fort Saint-Jean, and the outdoor areas are free. Château d'If entry is 7 euros, with the boat crossing sold separately."
+      },
+      {
+        "label": "Booking",
+        "value": "Book ahead",
+        "copy": "Le Miramar, Chez Fonfon, Sépia and AM par Alexandre Mazzia all take bookings through their own sites, and AM serves only Wednesday to Saturday. At Cosquer Méditerranée the last visit slot is an hour and a half before closing."
+      },
+      {
+        "label": "Rules",
+        "value": "Ages and weather",
+        "copy": "Children under 3 cannot take the cave tour at Cosquer Méditerranée, though the auditorium and gallery are open to them. The Château d'If does not open in bad weather."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Put the Mucem and the Château d'If on separate days, and check closing days before you book a table.",
+      intro: [
+        "Marseille's harbour front is anchored by the Mucem, which you visit across two sites, the J4 building and Fort Saint-Jean. Both open 10:00 to 19:00 in May, June, September and October, 10:00 to 20:00 in July and August and 10:00 to 18:00 from November to April, and both close on Tuesdays. One same-day ticket, 11 euros at full rate, covers every exhibition, while the outdoor areas are free. A new exhibition, The Taste of images, opens on 28 October 2026. Next door on the J4 Esplanade, Cosquer Méditerranée opens every day, with its last visit slot an hour and a half before closing.",
+        "The city museums open Tuesday to Sunday, 9:00 to 18:00. At the Centre de la Vieille Charité in Le Panier, Adrien Vescovi's Dormir comme le soleil runs until 10 January 2027, and Louisa Babari's Voix Publiques is spread across the Vieille Charité, the mac and the Musée Cantini until 3 January 2027. In the Palais Longchamp, the Muséum d'histoire naturelle shows Dinosaures de Provence until 20 June 2027 and pauses from 12:30 to 13:30, while the Musée des Beaux-Arts fills the opposite wing. The Musée d'Histoire de Marseille is closed until further notice.",
+        "For the water, boats to the Château d'If leave from the Vieux-Port at the lower end of the Canebière. Entry is 7 euros, and the crossing is paid separately. From 28 September to 31 March the château opens 10:00 to 17:15 and closes on Mondays, and it does not open in bad weather. Inland, La Friche la Belle de Mai at 41 rue Jobin hosts the Biennale des Imaginaires Numériques until 13 December 2026, and its restaurant, Les Grandes Tables, serves lunch Monday to Saturday. Frac Sud on boulevard de Dunkerque opens Wednesday to Sunday afternoons.",
+        "For bouillabaisse, Le Miramar on the quai du Port serves Tuesday to Sunday, and Chez Fonfon in the Vallon des Auffes opens every day and says its fish are caught daily by its own pointus. AM par Alexandre Mazzia serves Wednesday to Saturday only. For mornings, Mama Shelter on rue de la Loubière serves breakfast daily from 7:00 to 11:00 and a Sunday brunch from 11:30 to 15:30. La Pâtisserie des Marseillais on Grand Rue closes on Mondays, and Le Four des Navettes on rue Sainte sells its navettes as a Marseille tradition dating from 1781."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Start with the Mucem and Fort Saint-Jean on any day but Tuesday, then take a boat from the Vieux-Port to the Château d'If."
+        ],
+        [
+          "A slower morning",
+          "Have breakfast at Mama Shelter, served daily from 7:00 to 11:00, then pick up navettes at Le Four des Navettes on rue Sainte."
+        ],
+        [
+          "Before booking",
+          "Check closing days: AM par Alexandre Mazzia serves Wednesday to Saturday, Sépia is closed at weekends and Le Miramar serves Tuesday to Sunday."
+        ]
+      ],
+      trust: "All 24 distinct recommendations in this guide were checked against their operators' own websites on October 27, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

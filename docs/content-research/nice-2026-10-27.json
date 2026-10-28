@@ -1,0 +1,560 @@
+{
+  "city": "Nice, France",
+  "checkedOn": "2026-10-27",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Musée Matisse",
+      "kind": "museum",
+      "url": "https://www.nice.fr/lieux/musee-matisse/",
+      "sourceType": "official public operator (Ville de Nice)",
+      "address": "164 avenue des Arènes de Cimiez, 06000 Nice",
+      "operatingEvidence": "Museum homepage says \"Le musée est ouvert\"; the city page lists the exhibition \"Henri Matisse – Alex Katz\" from 28 October 2026 to 18 January 2027.",
+      "hours": "1 April–31 October: Mon and Wed–Sun 10:00–18:00; 1 November–31 March: Mon and Wed–Sun 10:00–17:00; closed Tuesdays, 1 Jan, Easter Sunday, 1 May, 25 Dec; ticket office closes 30 min before closing",
+      "confidence": "high"
+    },
+    {
+      "name": "Musée national Marc Chagall",
+      "kind": "museum",
+      "url": "https://musees-nationaux-alpesmaritimes.fr/chagall/informations-pratiques",
+      "sourceType": "official public operator (Musées nationaux du XXe siècle des Alpes-Maritimes)",
+      "address": "Avenue du Docteur Ménard, 06000 Nice",
+      "operatingEvidence": "Practical page gives hours for \"1er novembre 2026 au 30 avril 2027\"; homepage lists \"Chagall Couture. Un hommage à l'artiste\" and a midday closure \"jusqu'au 30 avril 2027\".",
+      "hours": "From 1 November 2026 to 30 April 2027: 10:00–17:00, closed 13:00–14:30; closed Tuesdays, 1 Jan, 1 May, 25 Dec; 24 and 31 Dec close at 16:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Musée Masséna",
+      "kind": "museum",
+      "url": "https://www.nice.fr/lieux/musee-massena/",
+      "sourceType": "official public operator (Ville de Nice)",
+      "address": "65 rue de France, 06000 Nice",
+      "operatingEvidence": "Current exhibition \"Nice, ma ville, mes jardins\" runs to 28 February 2027.",
+      "hours": "2 May–31 October: Mon and Wed–Sun 10:00–18:00; 1 November–30 April: Mon and Wed–Sun 11:00–18:00; closed Tuesdays",
+      "confidence": "high"
+    },
+    {
+      "name": "Musée des Beaux-Arts Jules Chéret",
+      "kind": "museum",
+      "url": "https://www.nice.fr/lieux/musee-des-beaux-arts/",
+      "sourceType": "official public operator (Ville de Nice)",
+      "address": "33 avenue des Baumettes, 06000 Nice",
+      "operatingEvidence": "Exhibition \"De la scène à la toile. Artistes et mondaines de la Belle Époque\" runs to 9 May 2027; guided tours listed on 31 October, 7 and 14 November 2026.",
+      "hours": "2 May–31 October: Tue–Sun 10:00–18:00; 1 November–30 April: Tue–Sun 11:00–18:00; closed Mondays, 1 Jan, Easter Sunday, 1 May, 25 Dec",
+      "confidence": "high"
+    },
+    {
+      "name": "Palais Lascaris",
+      "kind": "museum",
+      "url": "https://www.nice.fr/lieux/palais-lascaris/",
+      "sourceType": "official public operator (Ville de Nice)",
+      "address": "15 rue Droite, 06300 Nice",
+      "operatingEvidence": "Exhibitions \"Merveilles et curiosités du Palais Lascaris\" (to 11 January 2027) and \"Coun. Libera l'Art au Palais Lascaris\" (to 18 January 2027).",
+      "hours": "Mon and Wed–Sun 10:00–18:00; closed Tuesdays, 1 Jan, Easter Sunday, 1 May, 25 Dec",
+      "confidence": "high"
+    },
+    {
+      "name": "Musée d'Archéologie de Nice-Cimiez",
+      "kind": "museum",
+      "url": "https://www.nice.fr/lieux/musee-darcheologie-de-nice-cimiez/",
+      "sourceType": "official public operator (Ville de Nice)",
+      "address": "160 avenue des Arènes de Cimiez, 06000 Nice",
+      "operatingEvidence": "Lists \"Mémoires des ruines\", a MAMAC exhibition by Anne et Patrick Poirier, from 7 November 2026 to 5 September 2027 (free entry).",
+      "hours": "2 May–31 October: 10:00–18:00; 1 November–30 April: 10:00–17:00; closed Tuesdays",
+      "confidence": "high"
+    },
+    {
+      "name": "Musée de la Photographie Charles Nègre",
+      "kind": "museum",
+      "url": "https://www.nice.fr/lieux/musee-de-la-photographie-charles-negre/",
+      "sourceType": "official public operator (Ville de Nice)",
+      "address": "1 place Pierre Gautier, 06300 Nice",
+      "operatingEvidence": "Exhibition Sabine Weiss, \"Une vie de photographe\", 16 October 2026 to 31 January 2027.",
+      "hours": "Tue–Sun 10:00–18:00 (gallery closed 12:30–13:30); closed Mondays, 25 Dec, 1 Jan, Easter Sunday, 1 May",
+      "confidence": "high"
+    },
+    {
+      "name": "Musée International d'Art Naïf Anatole Jakovsky",
+      "kind": "museum",
+      "url": "https://www.nice.fr/lieux/musee-international-dart-naif-anatole-jakovsky/",
+      "sourceType": "official public operator (Ville de Nice)",
+      "address": "23 avenue de Fabron, 06200 Nice",
+      "operatingEvidence": "Agenda lists a children's \"Visite contée sur le thème des fleurs\" on 28 October 2026; hours and prices published.",
+      "hours": "Mon and Wed–Sun 10:00–12:30 and 13:30–18:00; closed Tuesdays, 1 Jan, Easter Sunday, 1 May, 25 Dec",
+      "confidence": "medium"
+    },
+    {
+      "name": "Muséum d'Histoire naturelle de Nice",
+      "kind": "museum",
+      "url": "https://www.nice.fr/lieux/museum-dhistoire-naturelle/",
+      "sourceType": "official public operator (Ville de Nice)",
+      "address": "60 bis boulevard Risso, 06300 Nice",
+      "operatingEvidence": "Hours published for 15 October to 31 December; prices listed (single entry 5 €).",
+      "hours": "15 October–31 December: Tue–Sun 10:00–18:00; closed Mondays, 1 Jan, Easter Sunday, 1 May, 25 Dec",
+      "confidence": "medium"
+    },
+    {
+      "name": "Parc de la Colline du Château",
+      "kind": "park",
+      "url": "https://www.nice.fr/lieux/parc-de-la-colline-du-chateau/",
+      "sourceType": "official public operator (Ville de Nice)",
+      "address": "Montée Monfort, 06300 Nice",
+      "operatingEvidence": "City page publishes seasonal daily hours with no closure notice.",
+      "hours": "1 April–31 October: daily 08:30–20:00; 1 November–31 March: daily 08:30–18:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Promenade du Paillon",
+      "kind": "park",
+      "url": "https://www.nice.fr/lieux/promenade-du-paillon/",
+      "sourceType": "official public operator (Ville de Nice)",
+      "address": "avenue Félix Faure, 06000 Nice",
+      "operatingEvidence": "City page publishes seasonal daily hours; no works or closure notice shown.",
+      "hours": "1 October–31 March: daily 07:00–21:00; 1 April–30 September: daily 07:00–23:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Jardin du Monastère de Cimiez",
+      "kind": "park",
+      "url": "https://www.nice.fr/lieux/jardin-du-monastere-de-cimiez/",
+      "sourceType": "official public operator (Ville de Nice)",
+      "address": "1 avenue Bellanda, 06100 Nice",
+      "operatingEvidence": "City page publishes seasonal daily hours; no closure notice.",
+      "hours": "1 April–31 October: daily 08:30–20:00; 1 November–31 March: daily 08:30–18:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Parc Phoenix",
+      "kind": "park",
+      "url": "https://www.nice.fr/lieux/parc-phoenix/",
+      "sourceType": "official public operator (Ville de Nice)",
+      "address": "405 promenade des Anglais, 06200 Nice",
+      "operatingEvidence": "Events listed: Festival Explorimages on 7–8 November 2026 and a minerals and fossils fair on 21–22 November 2026.",
+      "hours": "1 October–31 March: daily 09:30–18:00; 1 April–30 September: daily 09:30–19:30; ticket office closes 1 hour before the park",
+      "confidence": "high"
+    },
+    {
+      "name": "Cathédrale Saint-Nicolas",
+      "kind": "landmark",
+      "url": "https://www.sobor.fr/index.php?content=visitors&lang=fr",
+      "sourceType": "operator's own site (parish of the cathedral)",
+      "address": "Avenue Nicolas II, 06000 Nice (contacts page)",
+      "operatingEvidence": "Visitor hours dated from October 2026; news dated 11 October 2026 on the homepage. Closed to tourists \"tous les dimanches de 9 à 12h\".",
+      "hours": "Mon–Fri 10:00–13:30 and 14:00–17:30; Sat 10:00–18:00; Sun 9:00–18:00 (closed to tourists Sundays 9:00–12:00)",
+      "confidence": "high"
+    },
+    {
+      "name": "Villa Ephrussi de Rothschild",
+      "kind": "landmark",
+      "url": "https://www.villa-ephrussi.com/",
+      "sourceType": "operator's own site",
+      "address": "1 Av. Ephrussi de Rothschild, 06230 Saint-Jean-Cap-Ferrat",
+      "operatingEvidence": "\"Ouverture tous les jours de 10h à 18h\"; online ticketing and a 2026-27 \"Les Jeudis de la Villa\" programme page.",
+      "hours": "Villa and gardens daily 10:00–18:00; restaurant 11:00–17:30",
+      "confidence": "medium"
+    },
+    {
+      "name": "Opéra de Nice",
+      "kind": "landmark",
+      "url": "https://www.opera-nice.org/",
+      "sourceType": "operator's own site",
+      "address": "4-6 rue Saint François de Paule, 06364 Nice CEDEX 4",
+      "operatingEvidence": "Season listings include \"La Veuve joyeuse\" on 11–13 November 2026 and the ballet \"La Belle au bois dormant\" from 16 to 31 December 2026.",
+      "hours": "Box office Tue–Sat 10:00–17:00 and one hour before performances; closed Mondays",
+      "confidence": "high"
+    },
+    {
+      "name": "Chez Pipo",
+      "kind": "meal",
+      "url": "https://www.chezpipo.fr/",
+      "sourceType": "operator's own site",
+      "address": "13 rue Bavastro, 06300 Nice",
+      "operatingEvidence": "Homepage welcomes guests \"sans réservation du Mercredi au Dimanche\"; group booking page linked.",
+      "hours": "Wed–Sun 11:30–14:30 and 17:30–22:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Jan",
+      "kind": "meal",
+      "url": "https://www.janonline.com/restaurant-jan/",
+      "sourceType": "operator's own site",
+      "address": "12 Rue Lascaris, Nice",
+      "operatingEvidence": "Online reservations open; \"open five days a week for dinner with one seating per service\"; page cites a 2026 award.",
+      "hours": "Dinner five days a week (days and times not published)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Café de Turin",
+      "kind": "meal",
+      "url": "https://www.cafedeturin.fr/",
+      "sourceType": "operator's own site",
+      "address": "5 place Garibaldi, Nice",
+      "operatingEvidence": "Homepage states \"7j/7\" with takeaway 9:00–22:00 and non-stop dining from 12:00.",
+      "hours": "Daily; takeaway 9:00–22:00; restaurant 12:00–22:00 non-stop",
+      "confidence": "medium"
+    },
+    {
+      "name": "La Rossettisserie",
+      "kind": "meal",
+      "url": "https://www.larossettisserie.com/fr/reservation.html",
+      "sourceType": "operator's own site",
+      "address": "8 Rue Mascoïnat, 06300 Nice",
+      "operatingEvidence": "Online booking form and \"Réservation : 04 93 76 18 80\"; footer \"© 2012 - 2026\"; menu of roast meats published.",
+      "hours": "Winter (until 31 May): lunch and dinner daily except Sunday; summer: evenings daily",
+      "confidence": "medium"
+    },
+    {
+      "name": "Le Patio (Hôtel La Pérouse)",
+      "kind": "meal",
+      "url": "https://www.hotel-la-perouse.com/",
+      "sourceType": "operator's own site",
+      "address": "11 Quai Rauba Capeu, 06300 Nice",
+      "operatingEvidence": "Le Patio listed as \"Restaurant · Bar · Terrasse\"; site shows \"© 2026\" and a \"Gault & Millau 2026\" badge.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "L'Horloge (Hôtel Aston La Scala)",
+      "kind": "meal",
+      "url": "https://www.hotel-aston.com/restaurant-bar",
+      "sourceType": "operator's own site",
+      "address": "12 avenue Félix Faure, 06000 Nice",
+      "operatingEvidence": "\"Open daily, from 7:30 AM to 10:00 PM\" with breakfast, lunch, afternoon tea and dinner services; site footer \"© 2026\".",
+      "hours": "Daily: breakfast 7:30–11:30, lunch 12:00–14:30, afternoon tea 15:00–18:00, dinner 19:00–22:00",
+      "confidence": "high"
+    },
+    {
+      "name": "L'Aston Club (Hôtel Aston La Scala)",
+      "kind": "bar",
+      "url": "https://www.hotel-aston.com/restaurant-bar",
+      "sourceType": "operator's own site",
+      "address": "12 avenue Félix Faure, 06000 Nice",
+      "operatingEvidence": "\"Open all year round from 5:00 PM to Midnight\"; the rooftop Moon Bar terrace is open June to September only.",
+      "hours": "Daily 17:00–00:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Les Folies d'Edmonde",
+      "kind": "bar",
+      "url": "https://www.lesfoliesdedmonde.com/",
+      "sourceType": "operator's own site",
+      "address": "16 rue Benoît Bunico, 06300 Nice",
+      "operatingEvidence": "\"Tous les jours : 18h00 - 00h30\"; booking and an events programme that \"changes every two weeks\" (blind tests, karaoke, drag shows).",
+      "hours": "Daily 18:00–00:30",
+      "confidence": "medium"
+    },
+    {
+      "name": "Maison Auer",
+      "kind": "bakery",
+      "url": "https://www.maison-auer.com/pages/notre-adresse",
+      "sourceType": "operator's own site",
+      "address": "7 Rue Saint-François de Paule, Nice, 06300",
+      "operatingEvidence": "Address page publishes current weekly hours for the historic shop.",
+      "hours": "Mon–Sat 9:00–19:00; Sun 10:00–18:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Confiserie Florian (Vieux Nice)",
+      "kind": "bakery",
+      "url": "https://www.confiserieflorian.com/nos-boutiques",
+      "sourceType": "operator's own site",
+      "address": "14, Quai Papacino, 06300 Nice",
+      "operatingEvidence": "Shop page publishes hours and offers tastings and visits of the workshop; parking at the port refunded with any purchase.",
+      "hours": "Mon–Sat 9:00–13:00 and 14:00–18:30; Sundays and holidays 10:00–13:00 and 14:00–18:00",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Promenade des Anglais",
+      "reason": "public street with no operator page read; not checked",
+      "url": ""
+    },
+    {
+      "name": "Old Nice",
+      "reason": "district, not a specific place",
+      "url": ""
+    },
+    {
+      "name": "Castle Hill",
+      "reason": "duplicate; confirmed as Parc de la Colline du Château",
+      "url": "https://www.nice.fr/lieux/parc-de-la-colline-du-chateau/"
+    },
+    {
+      "name": "Villefranche-sur-Mer by train",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Cours Saleya market",
+      "reason": "no official city page found (nice.fr slugs tried returned 404); only tourism-board listings, which are excluded",
+      "url": "https://www.nice.fr/lieux/cours-saleya/"
+    },
+    {
+      "name": "Generic entries (e.g. \"A morning market walk\", \"A seafood table near the port\", \"A small bistro in Old Nice\", \"Sunset drinks near Old Nice\", \"Local bakery near Old Nice\", \"Coffee near Old Nice\" and all other descriptive list items)",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "MAMAC",
+      "reason": "official site says \"Le MAMAC a fermé ses portes le 7 janvier 2024\" for renovation; no reopening date",
+      "url": "https://www.mamac-nice.org/"
+    },
+    {
+      "name": "La Merenda",
+      "reason": "fetch failed: SSL handshake failure",
+      "url": "https://www.lamerenda.net/"
+    },
+    {
+      "name": "Hôtel Negresco (Le Chantecler, La Rotonde)",
+      "reason": "fetch failed: HTTP 429 Too Many Requests on repeated attempts",
+      "url": "https://www.lenegresco.com/"
+    },
+    {
+      "name": "Fenocchio",
+      "reason": "addresses published (2 place Rossetti; 6 rue de la Poissonnerie) but no hours or current operating evidence beyond a copyright line",
+      "url": "https://www.fenocchio.fr/boutiques/"
+    },
+    {
+      "name": "Pâtisseries LAC",
+      "reason": "boutique addresses and hours not published on pages read",
+      "url": "https://www.patisseries-lac.com/"
+    },
+    {
+      "name": "Flaveur",
+      "reason": "fetch failed: SSL wrong version number",
+      "url": "https://www.restaurant-flaveur.com/"
+    },
+    {
+      "name": "Le Plongeoir",
+      "reason": "address published but no opening hours; bar Le Vivier \"actuellement fermé pour la saison\" until May 2027; reservation page returned 404",
+      "url": "https://www.leplongeoir.com/"
+    },
+    {
+      "name": "Les Distilleries Idéales",
+      "reason": "domain redirects to an unrelated site (lesvinsnaturels.org)",
+      "url": "https://www.lesdistilleriesideales.fr/"
+    },
+    {
+      "name": "La Petite Maison",
+      "reason": "domain checked is an unrelated lifestyle blog, not the restaurant's site",
+      "url": "https://www.lapetitemaison-nice.com/"
+    },
+    {
+      "name": "Le Safari",
+      "reason": "fetch failed: domain not found",
+      "url": "https://www.restaurantlesafari.fr/"
+    },
+    {
+      "name": "Oliviera",
+      "reason": "fetch failed: certificate mismatch on www; bare domain returned empty page",
+      "url": "https://oliviera.com/"
+    },
+    {
+      "name": "Cafés Indien",
+      "reason": "addresses published (35 rue Pairolière) but no hours or current operating evidence",
+      "url": "https://www.cafes-indien.com/"
+    },
+    {
+      "name": "Nicolas Alziari",
+      "reason": "no shop hours or 2026 content; only a contact address",
+      "url": "https://www.nicolas-alziari.com/"
+    },
+    {
+      "name": "Le 3e Bar (Hyatt Regency Nice Palais de la Méditerranée)",
+      "reason": "fetch failed: HTTP 403 Forbidden",
+      "url": "https://www.hyatt.com/en-US/hotel/france/hyatt-regency-nice-palais-de-la-mediterranee/ncehr/dining"
+    },
+    {
+      "name": "Radisson Blu Hotel Nice Pool Bar & Lounge",
+      "reason": "fetch failed: HTTP 403 Forbidden",
+      "url": "https://www.radissonhotels.com/en-us/hotels/radisson-blu-nice/dining/pool-bar-lounge"
+    },
+    {
+      "name": "Hôtel Beau Rivage",
+      "reason": "fetch failed: connection refused",
+      "url": "https://www.nicebeaurivage.com/"
+    },
+    {
+      "name": "Old Sport Club",
+      "reason": "fetch failed: domain not found",
+      "url": "https://www.oldsportclub.com/"
+    },
+    {
+      "name": "Café du Cycliste (Nice store)",
+      "reason": "Nice store page could not be read: HTTP 429 Too Many Requests",
+      "url": "https://www.cafeducycliste.com/pages/nice-store"
+    },
+    {
+      "name": "Brume Coffee, Lou Pilha Leva",
+      "reason": "no official website found; only directories and guides",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Musée Matisse",
+        "Musée national Marc Chagall",
+        "Parc de la Colline du Château",
+        "Cathédrale Saint-Nicolas"
+      ],
+      "bestFirstTimers": [
+        "Parc de la Colline du Château",
+        "Musée Matisse",
+        "Palais Lascaris",
+        "Promenade du Paillon"
+      ],
+      "bestRestaurants": [
+        "Jan",
+        "Café de Turin",
+        "La Rossettisserie",
+        "Chez Pipo"
+      ],
+      "bestBudget": [
+        "Chez Pipo",
+        "Palais Lascaris",
+        "Musée d'Archéologie de Nice-Cimiez",
+        "Jardin du Monastère de Cimiez"
+      ],
+      "bestLuxury": [
+        "Jan",
+        "Villa Ephrussi de Rothschild",
+        "Le Patio (Hôtel La Pérouse)",
+        "Opéra de Nice"
+      ],
+      "bestCouples": [
+        "Villa Ephrussi de Rothschild",
+        "Opéra de Nice",
+        "Jan",
+        "Jardin du Monastère de Cimiez"
+      ],
+      "bestKids": [
+        "Parc Phoenix",
+        "Muséum d'Histoire naturelle de Nice",
+        "Promenade du Paillon",
+        "Confiserie Florian (Vieux Nice)"
+      ],
+      "bestSolo": [
+        "Musée de la Photographie Charles Nègre",
+        "Musée des Beaux-Arts Jules Chéret",
+        "Musée Masséna",
+        "Parc de la Colline du Château"
+      ],
+      "bestUnique": [
+        "Cathédrale Saint-Nicolas",
+        "Musée International d'Art Naïf Anatole Jakovsky",
+        "Confiserie Florian (Vieux Nice)",
+        "Musée d'Archéologie de Nice-Cimiez"
+      ],
+      "bestBreakfast": [
+        "L'Horloge (Hôtel Aston La Scala)"
+      ],
+      "bestLunch": [
+        "Chez Pipo",
+        "Café de Turin",
+        "La Rossettisserie",
+        "Villa Ephrussi de Rothschild"
+      ],
+      "bestDinner": [
+        "Jan",
+        "La Rossettisserie",
+        "Café de Turin",
+        "L'Horloge (Hôtel Aston La Scala)"
+      ],
+      "bestCocktails": [
+        "L'Aston Club (Hôtel Aston La Scala)",
+        "Les Folies d'Edmonde",
+        "Le Patio (Hôtel La Pérouse)"
+      ],
+      "bestBakeries": [
+        "Maison Auer",
+        "Confiserie Florian (Vieux Nice)"
+      ],
+      "bestCoffee": [
+        "L'Horloge (Hôtel Aston La Scala)"
+      ]
+    },
+    "queries": {
+      "Musée Matisse": "Musée Matisse 164 avenue des Arènes de Cimiez Nice",
+      "Musée national Marc Chagall": "Musée national Marc Chagall Avenue du Docteur Ménard Nice",
+      "Musée Masséna": "Musée Masséna 65 rue de France Nice",
+      "Musée des Beaux-Arts Jules Chéret": "Musée des Beaux-Arts Jules Chéret 33 avenue des Baumettes Nice",
+      "Palais Lascaris": "Palais Lascaris 15 rue Droite Nice",
+      "Musée d'Archéologie de Nice-Cimiez": "Musée d'Archéologie 160 avenue des Arènes de Cimiez Nice",
+      "Musée de la Photographie Charles Nègre": "Musée de la Photographie Charles Nègre 1 place Pierre Gautier Nice",
+      "Musée International d'Art Naïf Anatole Jakovsky": "Musée International d'Art Naïf 23 avenue de Fabron Nice",
+      "Muséum d'Histoire naturelle de Nice": "Muséum d'Histoire naturelle 60 bis boulevard Risso Nice",
+      "Parc de la Colline du Château": "Parc de la Colline du Château Montée Monfort Nice",
+      "Promenade du Paillon": "Promenade du Paillon avenue Félix Faure Nice",
+      "Jardin du Monastère de Cimiez": "Jardin du Monastère de Cimiez 1 avenue Bellanda Nice",
+      "Parc Phoenix": "Parc Phoenix 405 promenade des Anglais Nice",
+      "Cathédrale Saint-Nicolas": "Cathédrale Saint-Nicolas Avenue Nicolas II Nice",
+      "Villa Ephrussi de Rothschild": "Villa Ephrussi de Rothschild 1 Avenue Ephrussi de Rothschild Saint-Jean-Cap-Ferrat",
+      "Opéra de Nice": "Opéra de Nice 4-6 rue Saint François de Paule Nice",
+      "Chez Pipo": "Chez Pipo 13 rue Bavastro Nice",
+      "Jan": "Jan 12 Rue Lascaris Nice",
+      "Café de Turin": "Café de Turin 5 place Garibaldi Nice",
+      "La Rossettisserie": "La Rossettisserie 8 Rue Mascoïnat Nice",
+      "Le Patio (Hôtel La Pérouse)": "Hôtel La Pérouse 11 Quai Rauba Capeu Nice",
+      "L'Horloge (Hôtel Aston La Scala)": "Hôtel Aston La Scala 12 avenue Félix Faure Nice",
+      "L'Aston Club (Hôtel Aston La Scala)": "Hôtel Aston La Scala 12 avenue Félix Faure Nice",
+      "Les Folies d'Edmonde": "Les Folies d'Edmonde 16 rue Benoît Bunico Nice",
+      "Maison Auer": "Maison Auer 7 Rue Saint-François de Paule Nice",
+      "Confiserie Florian (Vieux Nice)": "Confiserie Florian 14 Quai Papacino Nice"
+    },
+    "summary": "City museums, parks, the Russian cathedral and the opera, with socca, dinner tables, hotel bars and confectioners checked against their own websites.",
+    "highlights": [
+      "Musée Matisse",
+      "Musée national Marc Chagall",
+      "Parc de la Colline du Château",
+      "Cathédrale Saint-Nicolas"
+    ],
+    "tip": "Plan museum days around closures: the Matisse, Chagall, Masséna, Lascaris and Archaeology museums close on Tuesdays, while the Beaux-Arts, Photography and Natural History museums close on Mondays.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Tuesday or Monday",
+        "copy": "Musée Matisse, Musée national Marc Chagall, Musée Masséna and Palais Lascaris are closed on Tuesdays. Musée des Beaux-Arts Jules Chéret, the Photography museum and the Muséum d'Histoire naturelle close on Mondays instead."
+      },
+      {
+        "label": "Tickets",
+        "value": "City pass 15 €",
+        "copy": "The city's Pass 10 Musées costs 15 € for four days, with single entry at 10 € for Matisse, Masséna and Beaux-Arts and 5 € for Lascaris. Entry to the Musée national Marc Chagall is free for everyone on the first Sunday of the month."
+      },
+      {
+        "label": "Walk-in or book",
+        "value": "Varies by table",
+        "copy": "Chez Pipo serves without reservation, Wednesday to Sunday. Jan takes bookings only through its website, requires a deposit and asks you to confirm 48 hours ahead."
+      },
+      {
+        "label": "Rules",
+        "value": "Dress and timing",
+        "copy": "Jan's dress code is \"Chic / Elegant\" and dogs are not allowed. Cathédrale Saint-Nicolas is closed to tourists on Sundays from 9:00 to 12:00."
+      }
+    ],
+    "dek": "Group the Cimiez museums on one morning, avoid Tuesdays for most museums, and book Jan well ahead.",
+    "intro": [
+      "Nice's city-run museums publish their hours and current exhibitions on nice.fr, so you can plan around them. Up in Cimiez, the Musée Matisse at 164 avenue des Arènes de Cimiez opens \"Henri Matisse – Alex Katz\" on 28 October 2026, running to 18 January 2027. The Archaeology museum next door hosts \"Mémoires des ruines\" by Anne et Patrick Poirier, a MAMAC exhibition with free entry, from 7 November 2026 to 5 September 2027. Both are closed on Tuesdays, and from 1 November they close at 17:00.",
+      "Down the hill, the Musée national Marc Chagall on avenue du Docteur Ménard is also closed on Tuesdays. From 1 November 2026 it opens 10:00 to 17:00 with a break from 13:00 to 14:30, though the garden and bookshop stay open during the pause. In the old town, Palais Lascaris on rue Droite has \"Merveilles et curiosités du Palais Lascaris\" until 11 January 2027. The Photography museum on place Pierre Gautier shows Sabine Weiss until 31 January 2027, and Musée Masséna's \"Nice, ma ville, mes jardins\" runs until 28 February 2027.",
+      "For open air, the Parc de la Colline du Château on Montée Monfort opens daily from 08:30, closing at 18:00 from 1 November. The Promenade du Paillon opens 07:00 to 21:00 in winter, and the Jardin du Monastère de Cimiez keeps the same 08:30 start as the castle hill. Parc Phoenix, on the Promenade des Anglais, opens daily and stops ticket sales an hour before closing. The Cathédrale Saint-Nicolas welcomes visitors daily but is closed to tourists on Sunday mornings until noon.",
+      "For food, Chez Pipo on rue Bavastro serves without reservation from Wednesday to Sunday, while Jan on rue Lascaris seats one dinner service five nights a week, with booking and a deposit required. Café de Turin on place Garibaldi serves every day from noon. Hôtel Aston La Scala's L'Horloge serves breakfast from 7:30, and its Aston Club bar opens year-round from 17:00. Les Folies d'Edmonde pours cocktails nightly from 18:00. At the Opéra de Nice, \"La Veuve joyeuse\" plays 11–13 November."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair the Parc de la Colline du Château with Palais Lascaris and the Photography museum in the old town, avoiding Tuesday for Lascaris."
+      ],
+      [
+        "A slower morning",
+        "Take breakfast at L'Horloge from 7:30, then head up to Cimiez for the Musée Matisse and the Jardin du Monastère."
+      ],
+      [
+        "Before booking",
+        "Jan needs an online booking with a deposit and confirmation 48 hours ahead, while Chez Pipo takes no reservations."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several sites could not be read: the Hôtel Negresco and Café du Cycliste returned HTTP 429, the Hyatt and Radisson pages returned 403, La Merenda and Flaveur had SSL errors, and Le Safari, Old Sport Club and Hôtel Beau Rivage did not connect. Some confirmed places publish only partial details: Jan gives no exact days or times, Le Patio at Hôtel La Pérouse publishes no hours, and Chez Pipo's footer and map link give different postcodes (06300 and 06000). The Cours Saleya market has no city page that could be found, and MAMAC remains closed for renovation. The guide has no dedicated specialty coffee shop or bread bakery, because none could be confirmed on an official site.",
+  "injectionLikeText": []
+}

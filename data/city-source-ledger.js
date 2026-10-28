@@ -5,6 +5,977 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Marseille, France": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-27",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several sites could not be read: the Calanques National Park site (DNS failure), Notre-Dame de la Garde (the .fr domain now shows unrelated casino content and the .com refused the connection), L'Épuisette, Les Halles de la Major (expired certificate), La Caravelle (503), Les Bords de Mer, Abbaye Saint-Victor (403), Deep Coffee Roasters (429) and Carry Nation (error page); the domains listed for Risette and Café Coogee no longer belong to the cafés. Le Petit Nice, the Capian bar and the Dantès Skylounge publish no hours, Le Four des Navettes publishes no hours, and Sépia, Julis, AM par Alexandre Mazzia and Le Four des Navettes show no dated 2026 content beyond live booking or shop pages. The Mucem pages read give entrance locations but no street number. Cosquer Méditerranée labels its published hours as 2024. Torréfaction Noailles' Canebière page does not say whether coffee is served on site. Notices that end within two weeks, such as the city museums' 1 November closure, Frac Sud's strike-weekend closure and Mama Shelter's Halloween events, were left out of the guide copy. No official page was found for a food market, so markets are not covered.",
+    "sourceUrls": [
+      "docs/content-research/marseille-2026-10-27.md",
+      "docs/content-research/marseille-2026-10-27.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Vieux-Port",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place (harbour area with no single operator page)"
+      },
+      {
+        "name": "Le Panier",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place (neighbourhood)"
+      },
+      {
+        "name": "Calanques National Park",
+        "url": "https://www.calanques-parc-national.fr/",
+        "checkedOn": "2026-10-27",
+        "reason": "Official site could not be read: DNS lookup failed (ENOTFOUND) for www.calanques-parc-national.fr and calanques-parc-national.fr"
+      },
+      {
+        "name": "Notre-Dame de la Garde",
+        "url": "https://www.notredamedelagarde.fr/",
+        "checkedOn": "2026-10-27",
+        "reason": "notredamedelagarde.fr now shows unrelated online-casino content (not an official page); notredamedelagarde.com refused the connection (ECONNREFUSED)"
+      },
+      {
+        "name": "Musée d'Histoire de Marseille",
+        "url": "https://musees.marseille.fr/visite",
+        "checkedOn": "2026-10-27",
+        "reason": "Closed with no reopening date: \"Fermeture exceptionnelle du Musée d'Histoire de Marseille jusqu'à nouvel ordre\""
+      },
+      {
+        "name": "Chez Michel",
+        "url": "https://www.restaurant-michel-13.fr/",
+        "checkedOn": "2026-10-27",
+        "reason": "Address and hours published, but no current operating evidence (only date on page is \"@2019\")"
+      },
+      {
+        "name": "L'Épuisette",
+        "url": "https://www.l-epuisette.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "Fetch failed: connection reset, then connection refused"
+      },
+      {
+        "name": "Les Halles de la Major",
+        "url": "https://www.leshallesdelamajor.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "Certificate error: \"certificate has expired\""
+      },
+      {
+        "name": "La Caravelle",
+        "url": "https://www.lacaravelle-marseille.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "Fetch failed: HTTP 503 twice"
+      },
+      {
+        "name": "Les Bords de Mer",
+        "url": "https://www.lesbordsdemer.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "Fetch failed: socket closed (three attempts)"
+      },
+      {
+        "name": "Abbaye Saint-Victor",
+        "url": "https://www.saintvictor.net/",
+        "checkedOn": "2026-10-27",
+        "reason": "Site refused automated reading: HTTP 403"
+      },
+      {
+        "name": "Cathédrale La Major",
+        "url": "https://www.cathedrale-marseille.fr/",
+        "checkedOn": "2026-10-27",
+        "reason": "Fetch failed: DNS lookup failed for guessed official domain"
+      },
+      {
+        "name": "Deep Coffee Roasters",
+        "url": "https://www.deep.coffee/",
+        "checkedOn": "2026-10-27",
+        "reason": "Fetch failed: HTTP 429 Too Many Requests on every attempt"
+      },
+      {
+        "name": "Risette",
+        "url": "https://www.risette.fr/",
+        "checkedOn": "2026-10-27",
+        "reason": "Domain shows a domain-for-sale page, not the café"
+      },
+      {
+        "name": "Café Coogee",
+        "url": "https://www.cafecoogee.fr/",
+        "checkedOn": "2026-10-27",
+        "reason": "Domain listed for the café shows unrelated spam content, not an official page"
+      },
+      {
+        "name": "Carry Nation",
+        "url": "https://www.carrynation.fr/",
+        "checkedOn": "2026-10-27",
+        "reason": "Site returned only an error message (\"An error has occurred - please try again later\")"
+      },
+      {
+        "name": "Café La Fiancée",
+        "url": "https://www.cafelafiancee.fr/",
+        "checkedOn": "2026-10-27",
+        "reason": "Fetch failed: DNS lookup failed for guessed official domain"
+      },
+      {
+        "name": "Le Rhul",
+        "url": "https://www.lerhul.fr/",
+        "checkedOn": "2026-10-27",
+        "reason": "Fetch failed: DNS lookup failed for guessed official domain"
+      },
+      {
+        "name": "Unité d'habitation (Cité Radieuse)",
+        "url": "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-unite-dhabitation-marseille-france-1945-1952/",
+        "checkedOn": "2026-10-27",
+        "reason": "Fondation Le Corbusier page gives no street address, visiting hours or 2026 content"
+      },
+      {
+        "name": "Musée Regards de Provence",
+        "url": "https://www.museeregardsdeprovence.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "Homepage read gives no address or hours; exhibition dates shown without a year"
+      },
+      {
+        "name": "Parc Borély",
+        "url": "https://www.marseille.fr/environnement/parcs-et-jardins/parc-borely",
+        "checkedOn": "2026-10-27",
+        "reason": "City page returned no readable content"
+      },
+      {
+        "name": "Marché des Capucins (Noailles)",
+        "checkedOn": "2026-10-27",
+        "reason": "No official operator page found; only tourism and listings sites"
+      },
+      {
+        "name": "Corniche Kennedy walk",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Boat into the Calanques",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Boat into the Calanques",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset at Vallon des Auffes",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Bouillabaisse by the harbor",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood seafood table",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Le Panier",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Endoume",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Vieux-Port",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Vieux-Port walk",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Le Panier",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Endoume",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Endoume",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Vieux-Port",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Vieux-Port",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Corniche Kennedy walk",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Le Panier",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Le Panier",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Vieux-Port evening",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Le Panier",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Endoume",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Vieux-Port",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Vieux-Port",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Le Panier",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Endoume",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Vieux-Port",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Vieux-Port",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Vieux-Port cafe or market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Endoume",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Endoume",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Vieux-Port",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Vieux-Port",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Le Panier bakery or market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Vieux-Port",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Endoume",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Vieux-Port",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Le Panier",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Endoume",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Vieux-Port",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Le Panier",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Endoume",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Vieux-Port",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Vieux-Port",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Le Panier",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Calanques National Park",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Vieux-Port",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Le Panier morning market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Vieux-Port",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Endoume",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Vieux-Port",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Le Panier",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Endoume",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Mucem": {
+        "url": "https://www.mucem.org/infos-pratiques/",
+        "sourceType": "operator's own site (Mucem, national museum)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Homepage features \"The Taste of images\" \"from Wednesday, October 28, 2026\"; \"© Mucem 2026\". One same-day ticket covers J4 and Fort Saint-Jean exhibitions: \"Full rate — 11 €\", outdoor areas free."
+      },
+      "Le Café du Fort (Mucem)": {
+        "url": "https://www.mucem.org/en/mucem-can-be-visited-on-three-unique-sites/fort-saint-jean/",
+        "sourceType": "operator's own site (Mucem)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Mucem's Fort Saint-Jean page lists Le café du Fort as a current service, \"open daily except Tuesdays, 10:00–18:00\"."
+      },
+      "Cosquer Méditerranée": {
+        "url": "https://www.grotte-cosquer.com/en/practical-information/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Homepage shows a student offer \"Du 14 septembre au 14 octobre 2026\" and \"© 2026 - Grotte Cosquer\"; online ticket office live. Children under 3 cannot take the cave tour."
+      },
+      "Château d'If": {
+        "url": "https://www.chateau-if.fr/en/visit/practical-information",
+        "sourceType": "official public operator (Centre des monuments nationaux)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Current timetable for \"september 28 to March 31\" and live ticket booking via tickets.monuments-nationaux.fr; \"Price : 7€\". \"in case of bad weather, the Château d'If is not open.\""
+      },
+      "Centre de la Vieille Charité": {
+        "url": "https://musees.marseille.fr/visite",
+        "sourceType": "official public operator (Ville de Marseille museums)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Current exhibitions \"Dormir comme le soleil - Adrien Vescovi\" (16 May 2026–10 January 2027) and \"Voix Publiques - Louisa Babari\" (19 September 2026–3 January 2027)."
+      },
+      "Muséum d'histoire naturelle de Marseille": {
+        "url": "https://musees.marseille.fr/visite",
+        "sourceType": "official public operator (Ville de Marseille museums)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Exhibition \"Dinosaures de Provence\" runs 10 October 2026–20 June 2027; hours notice \"À compter du mercredi 23 septembre\"."
+      },
+      "Château Borély": {
+        "url": "https://musees.marseille.fr/visite",
+        "sourceType": "official public operator (Ville de Marseille museums)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Listed with current hours on the city museums' 2026 visit page (Musée des Arts décoratifs, de la Faïence et de la Mode)."
+      },
+      "Musée Cantini": {
+        "url": "https://musees.marseille.fr/visite",
+        "sourceType": "official public operator (Ville de Marseille museums)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "New collection route \"Par une langue échappée\" (8 May 2026–25 April 2027) and part of \"Voix Publiques\" (to 3 January 2027)."
+      },
+      "mac (Musée d'art contemporain)": {
+        "url": "https://musees.marseille.fr/visite",
+        "sourceType": "official public operator (Ville de Marseille museums)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Hosts part of \"Voix Publiques - Louisa Babari\", 19 September 2026–3 January 2027."
+      },
+      "Frac Sud": {
+        "url": "https://www.fracsud.org/",
+        "sourceType": "operator's own site (regional contemporary art fund)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Current exhibitions \"L'Écologie des relations - La Forêt amante de la mer\" and \"Angela Detanico et Rafael Lain Champ étoilé\"; next show announced for 30 January 2027."
+      },
+      "La Friche la Belle de Mai": {
+        "url": "https://www.lafriche.org/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Biennale des Imaginaires Numériques exhibitions \"Du 24 oct. au 13 déc. 2026\"; \"Ce que nous voyons nous regarde\" \"Du 25 oct. au 17 janv. 2027\"."
+      },
+      "Les Grandes Tables": {
+        "url": "https://www.lesgrandestables.com/la-friche/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Publishes winter service hours and \"© 2026 - Les Grandes Tables\"; La Friche lists its \"Ce soir je mange avec…\" dinner on 28 October 2026 as \"Complet\"."
+      },
+      "Le Miramar": {
+        "url": "https://www.lemiramar.fr/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Serves \"La Vraie Bouillabaisse\"; online table booking and \"Tel : 04 91 91 10 40\"; page updated 2026-02-17."
+      },
+      "Chez Fonfon": {
+        "url": "https://www.chez-fonfon.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Online booking (\"Réservez une table dès maintenant\"); bouillabaisse fish \"pêchés quotidiennement par nos pointus\"; footer \"Alphonse & Jean - 2026\"."
+      },
+      "Le Petit Nice Passedat": {
+        "url": "https://www.passedat.fr/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Live table and room booking (\"Book a table in one of our two restaurants\", +33 (0)4 91 592 592); \"© 2026 Gérald Passedat\"; Michelin Clef 2026 logo."
+      },
+      "AM par Alexandre Mazzia": {
+        "url": "https://www.alexandre-mazzia.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Publishes service days and a live \"réserver\" booking widget; latest date on page \"© Copyright AM 2025\"."
+      },
+      "Sépia": {
+        "url": "https://www.restaurant-sepia.fr/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Live Zenchef booking button and published service days; no dated 2026 content seen."
+      },
+      "Julis": {
+        "url": "https://www.restaurant-sepia.fr/",
+        "sourceType": "operator's own site (shared with Sépia)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Listed alongside Sépia with its own booking button and evening hours; no dated 2026 content seen."
+      },
+      "Mama Shelter Marseille": {
+        "url": "https://mamashelter.com/marseille/",
+        "sourceType": "operator's own site (hotel group)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Event listings dated 28, 30 and 31 October 2026; Sunday brunch \"42€ per adult and 21€ for child (-12 years old)\"."
+      },
+      "Capian (InterContinental Marseille Hôtel-Dieu)": {
+        "url": "https://marseille.intercontinental.com/",
+        "sourceType": "operator's own site (hotel)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Capian bar with a \"vaste terrasse avec vue sur Notre-Dame-de-la-Garde\"; 2026 event listing and \"© 2026, InterContinental Hotels & Resorts\"."
+      },
+      "Dantès Skylounge (Sofitel Marseille Vieux-Port)": {
+        "url": "https://sofitel.accor.com/fr/hotels/0542.html",
+        "sourceType": "operator's own site (hotel group)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "\"Le bar Le Dantès Skylounge et ses 150m² de terrasse balayent Marseille du Mucem à la bonne mère\"; live room and dining booking; no dated 2026 content seen."
+      },
+      "La Pâtisserie des Marseillais": {
+        "url": "https://www.lapatisseriedesmarseillais.fr/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Current priced range (e.g. \"Coffret de 8 macarons : 16 €\") and a Christmas 2026 bûches link; orders collected \"dès 9h00\"."
+      },
+      "Le Four des Navettes": {
+        "url": "https://www.fourdesnavettes.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Online shop with current prices (\"Sachet de 12 navettes\" 13,50 €); \"Tradition marseillaise depuis 1781\". No dated 2026 content seen."
+      },
+      "Torréfaction Noailles (Canebière)": {
+        "url": "https://www.noailles.com/fr/content/14-boutique-canebiere-",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Coffee roaster's shop; homepage news posts \"Publié : 17/03/2026\" and \"©2026 Noailles\". Page does not say whether coffee is served on site."
+      }
+    }
+  },
+  "Nice, France": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-27",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several sites could not be read: the Hôtel Negresco and Café du Cycliste returned HTTP 429, the Hyatt and Radisson pages returned 403, La Merenda and Flaveur had SSL errors, and Le Safari, Old Sport Club and Hôtel Beau Rivage did not connect. Some confirmed places publish only partial details: Jan gives no exact days or times, Le Patio at Hôtel La Pérouse publishes no hours, and Chez Pipo's footer and map link give different postcodes (06300 and 06000). The Cours Saleya market has no city page that could be found, and MAMAC remains closed for renovation. The guide has no dedicated specialty coffee shop or bread bakery, because none could be confirmed on an official site.",
+    "sourceUrls": [
+      "docs/content-research/nice-2026-10-27.md",
+      "docs/content-research/nice-2026-10-27.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Promenade des Anglais",
+        "checkedOn": "2026-10-27",
+        "reason": "public street with no operator page read; not checked"
+      },
+      {
+        "name": "Old Nice",
+        "checkedOn": "2026-10-27",
+        "reason": "district, not a specific place"
+      },
+      {
+        "name": "Castle Hill",
+        "url": "https://www.nice.fr/lieux/parc-de-la-colline-du-chateau/",
+        "checkedOn": "2026-10-27",
+        "reason": "duplicate; confirmed as Parc de la Colline du Château"
+      },
+      {
+        "name": "Villefranche-sur-Mer by train",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Cours Saleya market",
+        "url": "https://www.nice.fr/lieux/cours-saleya/",
+        "checkedOn": "2026-10-27",
+        "reason": "no official city page found (nice.fr slugs tried returned 404); only tourism-board listings, which are excluded"
+      },
+      {
+        "name": "Generic entries (e.g. \"A morning market walk\", \"A seafood table near the port\", \"A small bistro in Old Nice\", \"Sunset drinks near Old Nice\", \"Local bakery near Old Nice\", \"Coffee near Old Nice\" and all other descriptive list items)",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "MAMAC",
+        "url": "https://www.mamac-nice.org/",
+        "checkedOn": "2026-10-27",
+        "reason": "official site says \"Le MAMAC a fermé ses portes le 7 janvier 2024\" for renovation; no reopening date"
+      },
+      {
+        "name": "La Merenda",
+        "url": "https://www.lamerenda.net/",
+        "checkedOn": "2026-10-27",
+        "reason": "fetch failed: SSL handshake failure"
+      },
+      {
+        "name": "Hôtel Negresco (Le Chantecler, La Rotonde)",
+        "url": "https://www.lenegresco.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "fetch failed: HTTP 429 Too Many Requests on repeated attempts"
+      },
+      {
+        "name": "Fenocchio",
+        "url": "https://www.fenocchio.fr/boutiques/",
+        "checkedOn": "2026-10-27",
+        "reason": "addresses published (2 place Rossetti; 6 rue de la Poissonnerie) but no hours or current operating evidence beyond a copyright line"
+      },
+      {
+        "name": "Pâtisseries LAC",
+        "url": "https://www.patisseries-lac.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "boutique addresses and hours not published on pages read"
+      },
+      {
+        "name": "Flaveur",
+        "url": "https://www.restaurant-flaveur.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "fetch failed: SSL wrong version number"
+      },
+      {
+        "name": "Le Plongeoir",
+        "url": "https://www.leplongeoir.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "address published but no opening hours; bar Le Vivier \"actuellement fermé pour la saison\" until May 2027; reservation page returned 404"
+      },
+      {
+        "name": "Les Distilleries Idéales",
+        "url": "https://www.lesdistilleriesideales.fr/",
+        "checkedOn": "2026-10-27",
+        "reason": "domain redirects to an unrelated site (lesvinsnaturels.org)"
+      },
+      {
+        "name": "La Petite Maison",
+        "url": "https://www.lapetitemaison-nice.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "domain checked is an unrelated lifestyle blog, not the restaurant's site"
+      },
+      {
+        "name": "Le Safari",
+        "url": "https://www.restaurantlesafari.fr/",
+        "checkedOn": "2026-10-27",
+        "reason": "fetch failed: domain not found"
+      },
+      {
+        "name": "Oliviera",
+        "url": "https://oliviera.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "fetch failed: certificate mismatch on www; bare domain returned empty page"
+      },
+      {
+        "name": "Cafés Indien",
+        "url": "https://www.cafes-indien.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "addresses published (35 rue Pairolière) but no hours or current operating evidence"
+      },
+      {
+        "name": "Nicolas Alziari",
+        "url": "https://www.nicolas-alziari.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "no shop hours or 2026 content; only a contact address"
+      },
+      {
+        "name": "Le 3e Bar (Hyatt Regency Nice Palais de la Méditerranée)",
+        "url": "https://www.hyatt.com/en-US/hotel/france/hyatt-regency-nice-palais-de-la-mediterranee/ncehr/dining",
+        "checkedOn": "2026-10-27",
+        "reason": "fetch failed: HTTP 403 Forbidden"
+      },
+      {
+        "name": "Radisson Blu Hotel Nice Pool Bar & Lounge",
+        "url": "https://www.radissonhotels.com/en-us/hotels/radisson-blu-nice/dining/pool-bar-lounge",
+        "checkedOn": "2026-10-27",
+        "reason": "fetch failed: HTTP 403 Forbidden"
+      },
+      {
+        "name": "Hôtel Beau Rivage",
+        "url": "https://www.nicebeaurivage.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "fetch failed: connection refused"
+      },
+      {
+        "name": "Old Sport Club",
+        "url": "https://www.oldsportclub.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "fetch failed: domain not found"
+      },
+      {
+        "name": "Café du Cycliste (Nice store)",
+        "url": "https://www.cafeducycliste.com/pages/nice-store",
+        "checkedOn": "2026-10-27",
+        "reason": "Nice store page could not be read: HTTP 429 Too Many Requests"
+      },
+      {
+        "name": "Brume Coffee, Lou Pilha Leva",
+        "checkedOn": "2026-10-27",
+        "reason": "no official website found; only directories and guides"
+      }
+    ],
+    "placeSources": {
+      "Musée Matisse": {
+        "url": "https://www.nice.fr/lieux/musee-matisse/",
+        "sourceType": "official public operator (Ville de Nice)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Museum homepage says \"Le musée est ouvert\"; the city page lists the exhibition \"Henri Matisse – Alex Katz\" from 28 October 2026 to 18 January 2027."
+      },
+      "Musée national Marc Chagall": {
+        "url": "https://musees-nationaux-alpesmaritimes.fr/chagall/informations-pratiques",
+        "sourceType": "official public operator (Musées nationaux du XXe siècle des Alpes-Maritimes)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Practical page gives hours for \"1er novembre 2026 au 30 avril 2027\"; homepage lists \"Chagall Couture. Un hommage à l'artiste\" and a midday closure \"jusqu'au 30 avril 2027\"."
+      },
+      "Musée Masséna": {
+        "url": "https://www.nice.fr/lieux/musee-massena/",
+        "sourceType": "official public operator (Ville de Nice)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Current exhibition \"Nice, ma ville, mes jardins\" runs to 28 February 2027."
+      },
+      "Musée des Beaux-Arts Jules Chéret": {
+        "url": "https://www.nice.fr/lieux/musee-des-beaux-arts/",
+        "sourceType": "official public operator (Ville de Nice)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Exhibition \"De la scène à la toile. Artistes et mondaines de la Belle Époque\" runs to 9 May 2027; guided tours listed on 31 October, 7 and 14 November 2026."
+      },
+      "Palais Lascaris": {
+        "url": "https://www.nice.fr/lieux/palais-lascaris/",
+        "sourceType": "official public operator (Ville de Nice)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Exhibitions \"Merveilles et curiosités du Palais Lascaris\" (to 11 January 2027) and \"Coun. Libera l'Art au Palais Lascaris\" (to 18 January 2027)."
+      },
+      "Musée d'Archéologie de Nice-Cimiez": {
+        "url": "https://www.nice.fr/lieux/musee-darcheologie-de-nice-cimiez/",
+        "sourceType": "official public operator (Ville de Nice)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Lists \"Mémoires des ruines\", a MAMAC exhibition by Anne et Patrick Poirier, from 7 November 2026 to 5 September 2027 (free entry)."
+      },
+      "Musée de la Photographie Charles Nègre": {
+        "url": "https://www.nice.fr/lieux/musee-de-la-photographie-charles-negre/",
+        "sourceType": "official public operator (Ville de Nice)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Exhibition Sabine Weiss, \"Une vie de photographe\", 16 October 2026 to 31 January 2027."
+      },
+      "Musée International d'Art Naïf Anatole Jakovsky": {
+        "url": "https://www.nice.fr/lieux/musee-international-dart-naif-anatole-jakovsky/",
+        "sourceType": "official public operator (Ville de Nice)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Agenda lists a children's \"Visite contée sur le thème des fleurs\" on 28 October 2026; hours and prices published."
+      },
+      "Muséum d'Histoire naturelle de Nice": {
+        "url": "https://www.nice.fr/lieux/museum-dhistoire-naturelle/",
+        "sourceType": "official public operator (Ville de Nice)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Hours published for 15 October to 31 December; prices listed (single entry 5 €)."
+      },
+      "Parc de la Colline du Château": {
+        "url": "https://www.nice.fr/lieux/parc-de-la-colline-du-chateau/",
+        "sourceType": "official public operator (Ville de Nice)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "City page publishes seasonal daily hours with no closure notice."
+      },
+      "Promenade du Paillon": {
+        "url": "https://www.nice.fr/lieux/promenade-du-paillon/",
+        "sourceType": "official public operator (Ville de Nice)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "City page publishes seasonal daily hours; no works or closure notice shown."
+      },
+      "Jardin du Monastère de Cimiez": {
+        "url": "https://www.nice.fr/lieux/jardin-du-monastere-de-cimiez/",
+        "sourceType": "official public operator (Ville de Nice)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "City page publishes seasonal daily hours; no closure notice."
+      },
+      "Parc Phoenix": {
+        "url": "https://www.nice.fr/lieux/parc-phoenix/",
+        "sourceType": "official public operator (Ville de Nice)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Events listed: Festival Explorimages on 7–8 November 2026 and a minerals and fossils fair on 21–22 November 2026."
+      },
+      "Cathédrale Saint-Nicolas": {
+        "url": "https://www.sobor.fr/index.php?content=visitors&lang=fr",
+        "sourceType": "operator's own site (parish of the cathedral)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Visitor hours dated from October 2026; news dated 11 October 2026 on the homepage. Closed to tourists \"tous les dimanches de 9 à 12h\"."
+      },
+      "Villa Ephrussi de Rothschild": {
+        "url": "https://www.villa-ephrussi.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "\"Ouverture tous les jours de 10h à 18h\"; online ticketing and a 2026-27 \"Les Jeudis de la Villa\" programme page."
+      },
+      "Opéra de Nice": {
+        "url": "https://www.opera-nice.org/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Season listings include \"La Veuve joyeuse\" on 11–13 November 2026 and the ballet \"La Belle au bois dormant\" from 16 to 31 December 2026."
+      },
+      "Chez Pipo": {
+        "url": "https://www.chezpipo.fr/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Homepage welcomes guests \"sans réservation du Mercredi au Dimanche\"; group booking page linked."
+      },
+      "Jan": {
+        "url": "https://www.janonline.com/restaurant-jan/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Online reservations open; \"open five days a week for dinner with one seating per service\"; page cites a 2026 award."
+      },
+      "Café de Turin": {
+        "url": "https://www.cafedeturin.fr/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Homepage states \"7j/7\" with takeaway 9:00–22:00 and non-stop dining from 12:00."
+      },
+      "La Rossettisserie": {
+        "url": "https://www.larossettisserie.com/fr/reservation.html",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Online booking form and \"Réservation : 04 93 76 18 80\"; footer \"© 2012 - 2026\"; menu of roast meats published."
+      },
+      "Le Patio (Hôtel La Pérouse)": {
+        "url": "https://www.hotel-la-perouse.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Le Patio listed as \"Restaurant · Bar · Terrasse\"; site shows \"© 2026\" and a \"Gault & Millau 2026\" badge."
+      },
+      "L'Horloge (Hôtel Aston La Scala)": {
+        "url": "https://www.hotel-aston.com/restaurant-bar",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "\"Open daily, from 7:30 AM to 10:00 PM\" with breakfast, lunch, afternoon tea and dinner services; site footer \"© 2026\"."
+      },
+      "L'Aston Club (Hôtel Aston La Scala)": {
+        "url": "https://www.hotel-aston.com/restaurant-bar",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "\"Open all year round from 5:00 PM to Midnight\"; the rooftop Moon Bar terrace is open June to September only."
+      },
+      "Les Folies d'Edmonde": {
+        "url": "https://www.lesfoliesdedmonde.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "\"Tous les jours : 18h00 - 00h30\"; booking and an events programme that \"changes every two weeks\" (blind tests, karaoke, drag shows)."
+      },
+      "Maison Auer": {
+        "url": "https://www.maison-auer.com/pages/notre-adresse",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Address page publishes current weekly hours for the historic shop."
+      },
+      "Confiserie Florian (Vieux Nice)": {
+        "url": "https://www.confiserieflorian.com/nos-boutiques",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Shop page publishes hours and offers tastings and visits of the workshop; parking at the port refunded with any purchase."
+      }
+    }
+  },
   "Verona, Italy": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-27",

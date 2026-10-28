@@ -1,0 +1,905 @@
+{
+  "city": "Marseille, France",
+  "checkedOn": "2026-10-27",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Mucem",
+      "kind": "museum",
+      "url": "https://www.mucem.org/infos-pratiques/",
+      "sourceType": "operator's own site (Mucem, national museum)",
+      "address": "Fort Saint-Jean entrances: \"la cour de la Commande (entrée Vieux-Port)\" and \"la place d'Armes (entrée côté Panier)\"; J4 building on the harbour front (no street number published on pages read)",
+      "operatingEvidence": "Homepage features \"The Taste of images\" \"from Wednesday, October 28, 2026\"; \"© Mucem 2026\". One same-day ticket covers J4 and Fort Saint-Jean exhibitions: \"Full rate — 11 €\", outdoor areas free.",
+      "hours": "J4 and Fort Saint-Jean \"10h—19h\" (May, June, Sept, Oct), 10h–20h July–August, 10h–18h November–April; closed Tuesdays, 1 May and 25 December; ticket office closes 45 minutes before closing",
+      "confidence": "medium"
+    },
+    {
+      "name": "Le Café du Fort (Mucem)",
+      "kind": "cafe",
+      "url": "https://www.mucem.org/en/mucem-can-be-visited-on-three-unique-sites/fort-saint-jean/",
+      "sourceType": "operator's own site (Mucem)",
+      "address": "Inside Fort Saint-Jean, Mucem (entrances cour de la Commande, Vieux-Port side, and Passerelle Saint-Laurent, Panier side)",
+      "operatingEvidence": "Mucem's Fort Saint-Jean page lists Le café du Fort as a current service, \"open daily except Tuesdays, 10:00–18:00\".",
+      "hours": "Daily except Tuesdays, 10:00–18:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Cosquer Méditerranée",
+      "kind": "museum",
+      "url": "https://www.grotte-cosquer.com/en/practical-information/",
+      "sourceType": "operator's own site",
+      "address": "\"The J4 Esplanade 13002 Marseille\"",
+      "operatingEvidence": "Homepage shows a student offer \"Du 14 septembre au 14 octobre 2026\" and \"© 2026 - Grotte Cosquer\"; online ticket office live. Children under 3 cannot take the cave tour.",
+      "hours": "\"Monday to Friday an school holidays : 9:30 A.M.-6 P.M.\"; weekends and public holidays 9:30–19:30; July–August 9:00–20:30; \"open every day\"; last slot 1.5 hours before closing (page labels these 2024 hours)",
+      "confidence": "high"
+    },
+    {
+      "name": "Château d'If",
+      "kind": "landmark",
+      "url": "https://www.chateau-if.fr/en/visit/practical-information",
+      "sourceType": "official public operator (Centre des monuments nationaux)",
+      "address": "\"île d'If 13007 Marseille\"; boats board at \"the Vieux Port (lower Cannebière)\"",
+      "operatingEvidence": "Current timetable for \"september 28 to March 31\" and live ticket booking via tickets.monuments-nationaux.fr; \"Price : 7€\". \"in case of bad weather, the Château d'If is not open.\"",
+      "hours": "1 April–27 September 10:00–18:00; 28 September–31 March 10:00–17:15, \"Closed on Mondays\"; closed 1 January, 1 May, 25 December",
+      "confidence": "high"
+    },
+    {
+      "name": "Centre de la Vieille Charité",
+      "kind": "museum",
+      "url": "https://musees.marseille.fr/visite",
+      "sourceType": "official public operator (Ville de Marseille museums)",
+      "address": "\"2, rue de la Charité 13002 Marseille\"",
+      "operatingEvidence": "Current exhibitions \"Dormir comme le soleil - Adrien Vescovi\" (16 May 2026–10 January 2027) and \"Voix Publiques - Louisa Babari\" (19 September 2026–3 January 2027).",
+      "hours": "\"Du mardi au dimanche de 9h à 18h\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Musée des Beaux-Arts (Palais Longchamp)",
+      "kind": "museum",
+      "url": "https://musees.marseille.fr/visite",
+      "sourceType": "official public operator (Ville de Marseille museums)",
+      "address": "\"Musée des Beaux-Arts Palais Longchamp Aile gauche 13004 Marseille\"",
+      "operatingEvidence": "Listed with current hours on the city museums' 2026 visit page, alongside a dated holiday notice for Sunday 1 November.",
+      "hours": "\"Du mardi au dimanche de 9h à 18h\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Muséum d'histoire naturelle de Marseille",
+      "kind": "museum",
+      "url": "https://musees.marseille.fr/visite",
+      "sourceType": "official public operator (Ville de Marseille museums)",
+      "address": "\"Palais Longchamp (Aile droite) Boulevard Philippon 13004 Marseille\"",
+      "operatingEvidence": "Exhibition \"Dinosaures de Provence\" runs 10 October 2026–20 June 2027; hours notice \"À compter du mercredi 23 septembre\".",
+      "hours": "\"du mardi au dimanche de 9h à 12h30 et de 13h30 à 18h\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Château Borély",
+      "kind": "museum",
+      "url": "https://musees.marseille.fr/visite",
+      "sourceType": "official public operator (Ville de Marseille museums)",
+      "address": "\"132, avenue Clot Bey 13008 Marseille\"",
+      "operatingEvidence": "Listed with current hours on the city museums' 2026 visit page (Musée des Arts décoratifs, de la Faïence et de la Mode).",
+      "hours": "\"Du mardi au dimanche de 9h à 18h\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Musée Cantini",
+      "kind": "museum",
+      "url": "https://musees.marseille.fr/visite",
+      "sourceType": "official public operator (Ville de Marseille museums)",
+      "address": "\"19, rue Grignan 13006 Marseille\"",
+      "operatingEvidence": "New collection route \"Par une langue échappée\" (8 May 2026–25 April 2027) and part of \"Voix Publiques\" (to 3 January 2027).",
+      "hours": "\"Du mardi au dimanche de 9h à 18h\"",
+      "confidence": "high"
+    },
+    {
+      "name": "mac (Musée d'art contemporain)",
+      "kind": "museum",
+      "url": "https://musees.marseille.fr/visite",
+      "sourceType": "official public operator (Ville de Marseille museums)",
+      "address": "\"69, avenue de Haïfa 13008 Marseille\"",
+      "operatingEvidence": "Hosts part of \"Voix Publiques - Louisa Babari\", 19 September 2026–3 January 2027.",
+      "hours": "\"Du mardi au dimanche de 9h à 18h\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Frac Sud",
+      "kind": "museum",
+      "url": "https://www.fracsud.org/",
+      "sourceType": "operator's own site (regional contemporary art fund)",
+      "address": "\"20 boulevard de Dunkerque, 13002 Marseille\"",
+      "operatingEvidence": "Current exhibitions \"L'Écologie des relations - La Forêt amante de la mer\" and \"Angela Detanico et Rafael Lain Champ étoilé\"; next show announced for 30 January 2027.",
+      "hours": "\"Du mercredi au samedi de 12h à 18h · Le dimanche de 14h à 18h\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "La Friche la Belle de Mai",
+      "kind": "landmark",
+      "url": "https://www.lafriche.org/",
+      "sourceType": "operator's own site",
+      "address": "Entrée Jobin \"41 rue Jobin\" and Entrée Simon \"12 rue François Simon\", 13003 Marseille",
+      "operatingEvidence": "Biennale des Imaginaires Numériques exhibitions \"Du 24 oct. au 13 déc. 2026\"; \"Ce que nous voyons nous regarde\" \"Du 25 oct. au 17 janv. 2027\".",
+      "hours": "Reception Monday 11:00–18:00, Tuesday–Saturday 11:00–19:00, Sunday 13:00–19:00; exhibitions \"de 14h à 19h\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Les Grandes Tables",
+      "kind": "meal",
+      "url": "https://www.lesgrandestables.com/la-friche/",
+      "sourceType": "operator's own site",
+      "address": "\"41, Rue Jobin – 13003 Marseille\" (La Friche la Belle de Mai)",
+      "operatingEvidence": "Publishes winter service hours and \"© 2026 - Les Grandes Tables\"; La Friche lists its \"Ce soir je mange avec…\" dinner on 28 October 2026 as \"Complet\".",
+      "hours": "Winter lunch Monday–Saturday 12:00–14:30; summer lunch 12:00–15:00 and dinner 19:00–22:30, Monday–Saturday",
+      "confidence": "high"
+    },
+    {
+      "name": "Le Miramar",
+      "kind": "meal",
+      "url": "https://www.lemiramar.fr/",
+      "sourceType": "operator's own site",
+      "address": "\"12, quai du Port\" \"13002 MARSEILLE\"",
+      "operatingEvidence": "Serves \"La Vraie Bouillabaisse\"; online table booking and \"Tel : 04 91 91 10 40\"; page updated 2026-02-17.",
+      "hours": "\"DU MARDI AU DIMANCHE\" 12:00–14:30 and 19:00–22:30",
+      "confidence": "medium"
+    },
+    {
+      "name": "Chez Fonfon",
+      "kind": "meal",
+      "url": "https://www.chez-fonfon.com/",
+      "sourceType": "operator's own site",
+      "address": "\"140 Rue du Vallon des Auffes\" 13007 Marseille",
+      "operatingEvidence": "Online booking (\"Réservez une table dès maintenant\"); bouillabaisse fish \"pêchés quotidiennement par nos pointus\"; footer \"Alphonse & Jean - 2026\".",
+      "hours": "\"Tous les jours\" 12:00–14:00, 19:00–22:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Le Petit Nice Passedat",
+      "kind": "meal",
+      "url": "https://www.passedat.fr/",
+      "sourceType": "operator's own site",
+      "address": "\"Anse de Maldormé / Corniche JF Kennedy\" \"13007 Marseille\"",
+      "operatingEvidence": "Live table and room booking (\"Book a table in one of our two restaurants\", +33 (0)4 91 592 592); \"© 2026 Gérald Passedat\"; Michelin Clef 2026 logo.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "AM par Alexandre Mazzia",
+      "kind": "meal",
+      "url": "https://www.alexandre-mazzia.com/",
+      "sourceType": "operator's own site",
+      "address": "\"9 Rue François Rocca, 13008 Marseille\"",
+      "operatingEvidence": "Publishes service days and a live \"réserver\" booking widget; latest date on page \"© Copyright AM 2025\".",
+      "hours": "\"Du Mercredi au Samedi\", services 12:00–13:00 and 20:00–21:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Sépia",
+      "kind": "meal",
+      "url": "https://www.restaurant-sepia.fr/",
+      "sourceType": "operator's own site",
+      "address": "\"2 rue Vauvenargues, 13007 Marseille\"",
+      "operatingEvidence": "Live Zenchef booking button and published service days; no dated 2026 content seen.",
+      "hours": "\"Lun - Ven : midi & soir\"; \"Sam - Dim : Fermé\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Julis",
+      "kind": "bar",
+      "url": "https://www.restaurant-sepia.fr/",
+      "sourceType": "operator's own site (shared with Sépia)",
+      "address": "\"2 rue Vauvenargues, 13007 Marseille\"",
+      "operatingEvidence": "Listed alongside Sépia with its own booking button and evening hours; no dated 2026 content seen.",
+      "hours": "\"Mer - Sam : 18h-1h\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mama Shelter Marseille",
+      "kind": "meal",
+      "url": "https://mamashelter.com/marseille/",
+      "sourceType": "operator's own site (hotel group)",
+      "address": "\"64 rue de la Loubière, 13006 Marseille\"",
+      "operatingEvidence": "Event listings dated 28, 30 and 31 October 2026; Sunday brunch \"42€ per adult and 21€ for child (-12 years old)\".",
+      "hours": "Breakfast \"everyday from 7am to 11am\"; lunch Monday–Saturday 12:00–14:30; dinner daily 19:00–23:00; Sunday brunch 11:30–15:30",
+      "confidence": "high"
+    },
+    {
+      "name": "Capian (InterContinental Marseille Hôtel-Dieu)",
+      "kind": "bar",
+      "url": "https://marseille.intercontinental.com/",
+      "sourceType": "operator's own site (hotel)",
+      "address": "\"1 Place Daviel, 13002 Marseille, France\"",
+      "operatingEvidence": "Capian bar with a \"vaste terrasse avec vue sur Notre-Dame-de-la-Garde\"; 2026 event listing and \"© 2026, InterContinental Hotels & Resorts\".",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Dantès Skylounge (Sofitel Marseille Vieux-Port)",
+      "kind": "bar",
+      "url": "https://sofitel.accor.com/fr/hotels/0542.html",
+      "sourceType": "operator's own site (hotel group)",
+      "address": "\"36 boulevard Charles Livon, 13007, MARSEILLE, France\"",
+      "operatingEvidence": "\"Le bar Le Dantès Skylounge et ses 150m² de terrasse balayent Marseille du Mucem à la bonne mère\"; live room and dining booking; no dated 2026 content seen.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "La Pâtisserie des Marseillais",
+      "kind": "bakery",
+      "url": "https://www.lapatisseriedesmarseillais.fr/",
+      "sourceType": "operator's own site",
+      "address": "\"28 Grand Rue, 13002 Marseille\"",
+      "operatingEvidence": "Current priced range (e.g. \"Coffret de 8 macarons : 16 €\") and a Christmas 2026 bûches link; orders collected \"dès 9h00\".",
+      "hours": "\"Fermé le lundi\"; \"du mardi au samedi : 10h - 19h\"; \"le dimanche : 10h - 13h\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Le Four des Navettes",
+      "kind": "bakery",
+      "url": "https://www.fourdesnavettes.com/",
+      "sourceType": "operator's own site",
+      "address": "\"136, rue Sainte (Saint-Victor)\" \"13007 Marseille\"",
+      "operatingEvidence": "Online shop with current prices (\"Sachet de 12 navettes\" 13,50 €); \"Tradition marseillaise depuis 1781\". No dated 2026 content seen.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Torréfaction Noailles (Canebière)",
+      "kind": "cafe",
+      "url": "https://www.noailles.com/fr/content/14-boutique-canebiere-",
+      "sourceType": "operator's own site",
+      "address": "\"56 La Canebière\" \"13001 Marseille\"",
+      "operatingEvidence": "Coffee roaster's shop; homepage news posts \"Publié : 17/03/2026\" and \"©2026 Noailles\". Page does not say whether coffee is served on site.",
+      "hours": "\"du lundi au samedi : de 7h à 19h30\"; \"dimanche : de 10h à 19h\"",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Vieux-Port",
+      "reason": "generic, not a place (harbour area with no single operator page)",
+      "url": ""
+    },
+    {
+      "name": "Le Panier",
+      "reason": "generic, not a place (neighbourhood)",
+      "url": ""
+    },
+    {
+      "name": "Calanques National Park",
+      "reason": "Official site could not be read: DNS lookup failed (ENOTFOUND) for www.calanques-parc-national.fr and calanques-parc-national.fr",
+      "url": "https://www.calanques-parc-national.fr/"
+    },
+    {
+      "name": "Notre-Dame de la Garde",
+      "reason": "notredamedelagarde.fr now shows unrelated online-casino content (not an official page); notredamedelagarde.com refused the connection (ECONNREFUSED)",
+      "url": "https://www.notredamedelagarde.fr/"
+    },
+    {
+      "name": "Musée d'Histoire de Marseille",
+      "reason": "Closed with no reopening date: \"Fermeture exceptionnelle du Musée d'Histoire de Marseille jusqu'à nouvel ordre\"",
+      "url": "https://musees.marseille.fr/visite"
+    },
+    {
+      "name": "Chez Michel",
+      "reason": "Address and hours published, but no current operating evidence (only date on page is \"@2019\")",
+      "url": "https://www.restaurant-michel-13.fr/"
+    },
+    {
+      "name": "L'Épuisette",
+      "reason": "Fetch failed: connection reset, then connection refused",
+      "url": "https://www.l-epuisette.com/"
+    },
+    {
+      "name": "Les Halles de la Major",
+      "reason": "Certificate error: \"certificate has expired\"",
+      "url": "https://www.leshallesdelamajor.com/"
+    },
+    {
+      "name": "La Caravelle",
+      "reason": "Fetch failed: HTTP 503 twice",
+      "url": "https://www.lacaravelle-marseille.com/"
+    },
+    {
+      "name": "Les Bords de Mer",
+      "reason": "Fetch failed: socket closed (three attempts)",
+      "url": "https://www.lesbordsdemer.com/"
+    },
+    {
+      "name": "Abbaye Saint-Victor",
+      "reason": "Site refused automated reading: HTTP 403",
+      "url": "https://www.saintvictor.net/"
+    },
+    {
+      "name": "Cathédrale La Major",
+      "reason": "Fetch failed: DNS lookup failed for guessed official domain",
+      "url": "https://www.cathedrale-marseille.fr/"
+    },
+    {
+      "name": "Deep Coffee Roasters",
+      "reason": "Fetch failed: HTTP 429 Too Many Requests on every attempt",
+      "url": "https://www.deep.coffee/"
+    },
+    {
+      "name": "Risette",
+      "reason": "Domain shows a domain-for-sale page, not the café",
+      "url": "https://www.risette.fr/"
+    },
+    {
+      "name": "Café Coogee",
+      "reason": "Domain listed for the café shows unrelated spam content, not an official page",
+      "url": "https://www.cafecoogee.fr/"
+    },
+    {
+      "name": "Carry Nation",
+      "reason": "Site returned only an error message (\"An error has occurred - please try again later\")",
+      "url": "https://www.carrynation.fr/"
+    },
+    {
+      "name": "Café La Fiancée",
+      "reason": "Fetch failed: DNS lookup failed for guessed official domain",
+      "url": "https://www.cafelafiancee.fr/"
+    },
+    {
+      "name": "Le Rhul",
+      "reason": "Fetch failed: DNS lookup failed for guessed official domain",
+      "url": "https://www.lerhul.fr/"
+    },
+    {
+      "name": "Unité d'habitation (Cité Radieuse)",
+      "reason": "Fondation Le Corbusier page gives no street address, visiting hours or 2026 content",
+      "url": "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-unite-dhabitation-marseille-france-1945-1952/"
+    },
+    {
+      "name": "Musée Regards de Provence",
+      "reason": "Homepage read gives no address or hours; exhibition dates shown without a year",
+      "url": "https://www.museeregardsdeprovence.com/"
+    },
+    {
+      "name": "Parc Borély",
+      "reason": "City page returned no readable content",
+      "url": "https://www.marseille.fr/environnement/parcs-et-jardins/parc-borely"
+    },
+    {
+      "name": "Marché des Capucins (Noailles)",
+      "reason": "No official operator page found; only tourism and listings sites",
+      "url": ""
+    },
+    {
+      "name": "Corniche Kennedy walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Boat into the Calanques",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Boat into the Calanques",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset at Vallon des Auffes",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Bouillabaisse by the harbor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood seafood table",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Le Panier",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Endoume",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Vieux-Port",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Vieux-Port walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Le Panier",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Endoume",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Endoume",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Vieux-Port",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Vieux-Port",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Corniche Kennedy walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Le Panier",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Le Panier",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Vieux-Port evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Le Panier",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Endoume",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Vieux-Port",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Vieux-Port",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Le Panier",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Endoume",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Vieux-Port",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Vieux-Port",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Vieux-Port cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Endoume",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Endoume",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Vieux-Port",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Vieux-Port",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Le Panier bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Vieux-Port",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Endoume",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Vieux-Port",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Le Panier",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Endoume",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Vieux-Port",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Le Panier",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Endoume",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Vieux-Port",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Vieux-Port",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Le Panier",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Calanques National Park",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Vieux-Port",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Le Panier morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Vieux-Port",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Endoume",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Vieux-Port",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Le Panier",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Endoume",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Mucem",
+        "Château d'If",
+        "Cosquer Méditerranée",
+        "Centre de la Vieille Charité"
+      ],
+      "bestFirstTimers": [
+        "Mucem",
+        "Château d'If",
+        "Centre de la Vieille Charité",
+        "Le Miramar"
+      ],
+      "bestRestaurants": [
+        "Chez Fonfon",
+        "Le Miramar",
+        "Sépia",
+        "Les Grandes Tables"
+      ],
+      "bestBudget": [
+        "Le Café du Fort (Mucem)",
+        "Les Grandes Tables",
+        "Frac Sud",
+        "Torréfaction Noailles (Canebière)"
+      ],
+      "bestLuxury": [
+        "Le Petit Nice Passedat",
+        "AM par Alexandre Mazzia",
+        "Dantès Skylounge (Sofitel Marseille Vieux-Port)",
+        "Capian (InterContinental Marseille Hôtel-Dieu)"
+      ],
+      "bestCouples": [
+        "Chez Fonfon",
+        "Le Petit Nice Passedat",
+        "Dantès Skylounge (Sofitel Marseille Vieux-Port)",
+        "Château d'If"
+      ],
+      "bestKids": [
+        "Muséum d'histoire naturelle de Marseille",
+        "Cosquer Méditerranée",
+        "Château d'If",
+        "Mama Shelter Marseille"
+      ],
+      "bestSolo": [
+        "Musée Cantini",
+        "mac (Musée d'art contemporain)",
+        "La Friche la Belle de Mai",
+        "Frac Sud"
+      ],
+      "bestUnique": [
+        "La Friche la Belle de Mai",
+        "Cosquer Méditerranée",
+        "Château Borély",
+        "Le Four des Navettes"
+      ],
+      "bestBreakfast": [
+        "Mama Shelter Marseille",
+        "Le Café du Fort (Mucem)"
+      ],
+      "bestLunch": [
+        "Les Grandes Tables",
+        "Sépia",
+        "Le Miramar",
+        "Chez Fonfon"
+      ],
+      "bestDinner": [
+        "Le Miramar",
+        "Chez Fonfon",
+        "AM par Alexandre Mazzia",
+        "Le Petit Nice Passedat"
+      ],
+      "bestCocktails": [
+        "Capian (InterContinental Marseille Hôtel-Dieu)",
+        "Dantès Skylounge (Sofitel Marseille Vieux-Port)",
+        "Julis"
+      ],
+      "bestBakeries": [
+        "Le Four des Navettes",
+        "La Pâtisserie des Marseillais"
+      ],
+      "bestCoffee": [
+        "Torréfaction Noailles (Canebière)",
+        "Le Café du Fort (Mucem)"
+      ]
+    },
+    "queries": {
+      "Mucem": "Mucem Fort Saint-Jean Vieux-Port Marseille",
+      "Le Café du Fort (Mucem)": "Le Café du Fort Fort Saint-Jean Mucem Marseille",
+      "Cosquer Méditerranée": "Cosquer Méditerranée Esplanade du J4 Marseille",
+      "Château d'If": "Château d'If Île d'If Marseille",
+      "Centre de la Vieille Charité": "Centre de la Vieille Charité 2 rue de la Charité Marseille",
+      "Musée des Beaux-Arts (Palais Longchamp)": "Musée des Beaux-Arts Palais Longchamp Marseille",
+      "Muséum d'histoire naturelle de Marseille": "Muséum d'histoire naturelle Palais Longchamp Boulevard Philippon Marseille",
+      "Château Borély": "Château Borély 132 avenue Clot Bey Marseille",
+      "Musée Cantini": "Musée Cantini 19 rue Grignan Marseille",
+      "mac (Musée d'art contemporain)": "Musée d'art contemporain 69 avenue de Haïfa Marseille",
+      "Frac Sud": "Frac Sud 20 boulevard de Dunkerque Marseille",
+      "La Friche la Belle de Mai": "La Friche la Belle de Mai 41 rue Jobin Marseille",
+      "Les Grandes Tables": "Les Grandes Tables 41 rue Jobin Marseille",
+      "Le Miramar": "Le Miramar 12 quai du Port Marseille",
+      "Chez Fonfon": "Chez Fonfon 140 rue du Vallon des Auffes Marseille",
+      "Le Petit Nice Passedat": "Le Petit Nice Passedat Anse de Maldormé Corniche Kennedy Marseille",
+      "AM par Alexandre Mazzia": "AM par Alexandre Mazzia 9 rue François Rocca Marseille",
+      "Sépia": "Sépia 2 rue Vauvenargues Marseille",
+      "Julis": "Julis 2 rue Vauvenargues Marseille",
+      "Mama Shelter Marseille": "Mama Shelter 64 rue de la Loubière Marseille",
+      "Capian (InterContinental Marseille Hôtel-Dieu)": "InterContinental Marseille Hôtel-Dieu 1 Place Daviel Marseille",
+      "Dantès Skylounge (Sofitel Marseille Vieux-Port)": "Sofitel Marseille Vieux-Port 36 boulevard Charles Livon Marseille",
+      "La Pâtisserie des Marseillais": "La Pâtisserie des Marseillais 28 Grand Rue Marseille",
+      "Le Four des Navettes": "Le Four des Navettes 136 rue Sainte Marseille",
+      "Torréfaction Noailles (Canebière)": "Torréfaction Noailles 56 La Canebière Marseille"
+    },
+    "summary": "Harbour museums, island fortress, city museums and bouillabaisse tables, with breakfast, bakeries, coffee and hotel bars checked against their own websites.",
+    "highlights": [
+      "Mucem",
+      "Château d'If",
+      "Cosquer Méditerranée",
+      "Centre de la Vieille Charité"
+    ],
+    "tip": "Plan around closing days: the Mucem closes on Tuesdays, the city museums open Tuesday to Sunday only, and from 28 September to 31 March the Château d'If closes on Mondays and does not open in bad weather.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mon / Tue",
+        "copy": "The Mucem and its Café du Fort close on Tuesdays, while the Vieille Charité, Musée Cantini, mac and other city museums open Tuesday to Sunday. In winter the Château d'If also closes on Mondays."
+      },
+      {
+        "label": "Tickets",
+        "value": "One Mucem ticket",
+        "copy": "A same-day Mucem ticket, 11 euros full rate, covers every exhibition in J4 and Fort Saint-Jean, and the outdoor areas are free. Château d'If entry is 7 euros, with the boat crossing sold separately."
+      },
+      {
+        "label": "Booking",
+        "value": "Book ahead",
+        "copy": "Le Miramar, Chez Fonfon, Sépia and AM par Alexandre Mazzia all take bookings through their own sites, and AM serves only Wednesday to Saturday. At Cosquer Méditerranée the last visit slot is an hour and a half before closing."
+      },
+      {
+        "label": "Rules",
+        "value": "Ages and weather",
+        "copy": "Children under 3 cannot take the cave tour at Cosquer Méditerranée, though the auditorium and gallery are open to them. The Château d'If does not open in bad weather."
+      }
+    ],
+    "dek": "Put the Mucem and the Château d'If on separate days, and check closing days before you book a table.",
+    "intro": [
+      "Marseille's harbour front is anchored by the Mucem, which you visit across two sites, the J4 building and Fort Saint-Jean. Both open 10:00 to 19:00 in May, June, September and October, 10:00 to 20:00 in July and August and 10:00 to 18:00 from November to April, and both close on Tuesdays. One same-day ticket, 11 euros at full rate, covers every exhibition, while the outdoor areas are free. A new exhibition, The Taste of images, opens on 28 October 2026. Next door on the J4 Esplanade, Cosquer Méditerranée opens every day, with its last visit slot an hour and a half before closing.",
+      "The city museums open Tuesday to Sunday, 9:00 to 18:00. At the Centre de la Vieille Charité in Le Panier, Adrien Vescovi's Dormir comme le soleil runs until 10 January 2027, and Louisa Babari's Voix Publiques is spread across the Vieille Charité, the mac and the Musée Cantini until 3 January 2027. In the Palais Longchamp, the Muséum d'histoire naturelle shows Dinosaures de Provence until 20 June 2027 and pauses from 12:30 to 13:30, while the Musée des Beaux-Arts fills the opposite wing. The Musée d'Histoire de Marseille is closed until further notice.",
+      "For the water, boats to the Château d'If leave from the Vieux-Port at the lower end of the Canebière. Entry is 7 euros, and the crossing is paid separately. From 28 September to 31 March the château opens 10:00 to 17:15 and closes on Mondays, and it does not open in bad weather. Inland, La Friche la Belle de Mai at 41 rue Jobin hosts the Biennale des Imaginaires Numériques until 13 December 2026, and its restaurant, Les Grandes Tables, serves lunch Monday to Saturday. Frac Sud on boulevard de Dunkerque opens Wednesday to Sunday afternoons.",
+      "For bouillabaisse, Le Miramar on the quai du Port serves Tuesday to Sunday, and Chez Fonfon in the Vallon des Auffes opens every day and says its fish are caught daily by its own pointus. AM par Alexandre Mazzia serves Wednesday to Saturday only. For mornings, Mama Shelter on rue de la Loubière serves breakfast daily from 7:00 to 11:00 and a Sunday brunch from 11:30 to 15:30. La Pâtisserie des Marseillais on Grand Rue closes on Mondays, and Le Four des Navettes on rue Sainte sells its navettes as a Marseille tradition dating from 1781."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Start with the Mucem and Fort Saint-Jean on any day but Tuesday, then take a boat from the Vieux-Port to the Château d'If."
+      ],
+      [
+        "A slower morning",
+        "Have breakfast at Mama Shelter, served daily from 7:00 to 11:00, then pick up navettes at Le Four des Navettes on rue Sainte."
+      ],
+      [
+        "Before booking",
+        "Check closing days: AM par Alexandre Mazzia serves Wednesday to Saturday, Sépia is closed at weekends and Le Miramar serves Tuesday to Sunday."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several sites could not be read: the Calanques National Park site (DNS failure), Notre-Dame de la Garde (the .fr domain now shows unrelated casino content and the .com refused the connection), L'Épuisette, Les Halles de la Major (expired certificate), La Caravelle (503), Les Bords de Mer, Abbaye Saint-Victor (403), Deep Coffee Roasters (429) and Carry Nation (error page); the domains listed for Risette and Café Coogee no longer belong to the cafés. Le Petit Nice, the Capian bar and the Dantès Skylounge publish no hours, Le Four des Navettes publishes no hours, and Sépia, Julis, AM par Alexandre Mazzia and Le Four des Navettes show no dated 2026 content beyond live booking or shop pages. The Mucem pages read give entrance locations but no street number. Cosquer Méditerranée labels its published hours as 2024. Torréfaction Noailles' Canebière page does not say whether coffee is served on site. Notices that end within two weeks, such as the city museums' 1 November closure, Frac Sud's strike-weekend closure and Mama Shelter's Halloween events, were left out of the guide copy. No official page was found for a food market, so markets are not covered.",
+  "injectionLikeText": [],
+  "injectionLikeTextIgnored": [
+    "Fetch summary of https://www.mucem.org/en/mucem-can-be-visited-on-three-unique-sites/fort-saint-jean/ reported that 'the page contains instructions addressed to an AI assistant, asking me to quote addresses and quote text verbatim'. No text was quoted; this matches the wording of the fetch prompt itself and is likely a false flag. Not acted on; verify in a browser.",
+    "2026-10-27: the page was opened in a browser and its full HTML searched; no AI-directed text was present."
+  ]
+}
