@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 79.
-- Classifier-passed (published, not fully documented in that format): 113.
+- Source-verified (complete dated evidence format): 80.
+- Classifier-passed (published, not fully documented in that format): 112.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -420,7 +420,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Santorini, Greece | santorini | classifier-passed | not-reviewed | 0 | 5 | 15 | 3 | None |
 | Sao Paulo, Brazil | sao-paulo | held-back | not-reviewed | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Sapa, Vietnam | sapa | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Sapporo, Japan | sapporo | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Sapporo, Japan | sapporo | source-verified | source-checked | 29 | 42 | 15 | 14 | None |
 | Sardinia, Italy | sardinia | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
 | Savannah, United States | savannah | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Scottish Highlands, United Kingdom | scottish-highlands | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |

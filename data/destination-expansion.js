@@ -8176,4 +8176,114 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 28 distinct recommendations in this guide were checked against their operators' own websites on October 28, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Sapporo, Japan: source review of 2026-10-28 (docs/content-research/sapporo-2026-10-28.md).
+  {
+    const cityKey = "Sapporo, Japan";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Odori Park","Mt. Moiwa Ropeway","Sapporo Clock Tower","Sapporo Beer Museum"],
+      bestFirstTimers: ["Odori Park","Sapporo Clock Tower","Former Hokkaido Government Office (Akarenga)","Nijo Market"],
+      bestRestaurants: ["Sapporo Beer Garden","Soup Curry GARAKU (main store)","Ebisoba Ichigen Sohonten","Mikuni Sapporo"],
+      bestBudget: ["Odori Park","Moerenuma Park","Ganso Sapporo Ramen Yokocho","Donguri (Odori)"],
+      bestLuxury: ["Mikuni Sapporo","SKY J (JR Tower Hotel Nikko Sapporo)","Old Saloon 1934 (Sapporo Grand Hotel)"],
+      bestCouples: ["Mt. Moiwa Ropeway","SKY J (JR Tower Hotel Nikko Sapporo)","Old Saloon 1934 (Sapporo Grand Hotel)","Moerenuma Park"],
+      bestKids: ["Sapporo Maruyama Zoo","Shiroi Koibito Park","Moerenuma Park","Historical Village of Hokkaido"],
+      bestSolo: ["Hokkaido Museum of Modern Art","Sapporo Art Park","Hokkaido University Botanic Garden","MORIHICO. (Maruyama)"],
+      bestUnique: ["Historical Village of Hokkaido","Hokkaido Museum","Sapporo Art Park","Sapporo Snow Festival (Odori Site)"],
+      bestBreakfast: ["Northern Terrace Diner (Sapporo Grand Hotel)","Sapporo Jogai Market","Nijo Market"],
+      bestLunch: ["Ganso Sapporo Ramen Yokocho","Soup Curry GARAKU (main store)","Ebisoba Ichigen Sohonten","Rokkatei Sapporo Honten"],
+      bestDinner: ["Sapporo Beer Garden","Mikuni Sapporo","Ebisoba Ichigen Sohonten","Soup Curry GARAKU (main store)"],
+      bestCocktails: ["SKY J (JR Tower Hotel Nikko Sapporo)","Old Saloon 1934 (Sapporo Grand Hotel)"],
+      bestBakeries: ["The Bakery & Pastry (Sapporo Grand Hotel)","Donguri (Odori)","Rokkatei Sapporo Honten"],
+      bestCoffee: ["MORIHICO. (Maruyama)","Miyakoshiya Coffee Honten (Maruyama)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Odori Park": "Odori Park Odori Nishi 7-chome Sapporo",
+      "Mt. Moiwa Ropeway": "Mt. Moiwa Ropeway Fushimi 5-chome Sapporo",
+      "Sapporo Clock Tower": "Sapporo Clock Tower Kita 1-jo Nishi 2-chome Sapporo",
+      "Sapporo Beer Museum": "Sapporo Beer Museum Kita 7-jo Higashi 9-chome Sapporo",
+      "Former Hokkaido Government Office (Akarenga)": "Former Hokkaido Government Office Akarenga Kita 3-jo Nishi 6-chome Sapporo",
+      "Nijo Market": "Nijo Market Minami 3-jo Higashi 1-chome Sapporo",
+      "Sapporo Beer Garden": "Sapporo Beer Garden Kita 7-jo Higashi 9-chome Sapporo",
+      "Soup Curry GARAKU (main store)": "Soup Curry GARAKU Minami 3-jo Higashi 2-chome Sapporo",
+      "Ebisoba Ichigen Sohonten": "Ebisoba Ichigen Sohonten Minami 7-jo Nishi 9-chome Sapporo",
+      "Mikuni Sapporo": "Mikuni Sapporo Stellar Place Kita 5-jo Nishi 2-chome Sapporo",
+      "Moerenuma Park": "Moerenuma Park Moerenuma-koen 1-1 Higashi-ku Sapporo",
+      "Ganso Sapporo Ramen Yokocho": "Ganso Sapporo Ramen Yokocho Minami 5-jo Nishi 3-chome Sapporo",
+      "Donguri (Odori)": "Donguri Odori Le Trois Odori Nishi 1-chome Sapporo",
+      "SKY J (JR Tower Hotel Nikko Sapporo)": "SKY J JR Tower Hotel Nikko Sapporo Kita 5-jo Nishi 2-chome Sapporo",
+      "Old Saloon 1934 (Sapporo Grand Hotel)": "Old Saloon 1934 Sapporo Grand Hotel Kita 1-jo Nishi 4-chome Sapporo",
+      "Sapporo Maruyama Zoo": "Sapporo Maruyama Zoo Miyagaoka 3-1 Sapporo",
+      "Shiroi Koibito Park": "Shiroi Koibito Park Miyanosawa 2-2-11-36 Sapporo",
+      "Historical Village of Hokkaido": "Historical Village of Hokkaido Atsubetsu-cho Konopporo 50-1 Sapporo",
+      "Hokkaido Museum of Modern Art": "Hokkaido Museum of Modern Art Kita 1-jo Nishi 17-chome Sapporo",
+      "Sapporo Art Park": "Sapporo Art Park Geijutsu-no-mori 2-chome Sapporo",
+      "Hokkaido University Botanic Garden": "Hokkaido University Botanic Garden Kita 3-jo Nishi 8-chome Sapporo",
+      "MORIHICO. (Maruyama)": "MORIHICO. Minami 2-jo Nishi 26-chome Sapporo",
+      "Hokkaido Museum": "Hokkaido Museum Atsubetsu-cho Konopporo 53-2 Sapporo",
+      "Sapporo Snow Festival (Odori Site)": "Sapporo Snow Festival Odori Site Odori Park Sapporo",
+      "Northern Terrace Diner (Sapporo Grand Hotel)": "Northern Terrace Diner Sapporo Grand Hotel Kita 1-jo Nishi 4-chome Sapporo",
+      "Sapporo Jogai Market": "Sapporo Jogai Market Kita 11-jo Nishi 21-chome Sapporo",
+      "Rokkatei Sapporo Honten": "Rokkatei Sapporo Honten Kita 4-jo Nishi 6-chome Sapporo",
+      "The Bakery & Pastry (Sapporo Grand Hotel)": "The Bakery & Pastry Sapporo Grand Hotel Kita 1-jo Nishi 4-chome Sapporo",
+      "Miyakoshiya Coffee Honten (Maruyama)": "Miyakoshiya Coffee Honten Minami 2-jo Nishi 28-chome Sapporo"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Sapporo" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Odori Park, a ropeway viewpoint, museums and markets, with ramen, soup curry, breakfast, bakery, coffee and cocktail stops checked against their own websites.";
+    cityGuide.highlights = ["Odori Park","Mt. Moiwa Ropeway","Sapporo Clock Tower","Hokkaido Museum"];
+    cityGuide.tip = "Save Mondays for Odori Park, the Sapporo Clock Tower and the Former Hokkaido Government Office (Akarenga), because the Hokkaido Museum, the Hokkaido Museum of Modern Art and the Hokkaido University Botanic Garden close on Mondays, as does Sapporo Art Park from November 4 to April 28.";
+    data.destinationFacts[cityKey] = "Save Mondays for Odori Park, the Sapporo Clock Tower and the Former Hokkaido Government Office (Akarenga), because the Hokkaido Museum, the Hokkaido Museum of Modern Art and the Hokkaido University Botanic Garden close on Mondays, as does Sapporo Art Park from November 4 to April 28.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Odori Park, a ropeway viewpoint, museums and markets, with ramen, soup curry, breakfast, bakery, coffee and cocktail stops checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays at museums",
+        "copy": "The Hokkaido Museum, the Hokkaido Museum of Modern Art and the Hokkaido University Botanic Garden close on Mondays, as does Sapporo Art Park from November 4 to April 28; when Monday is a public holiday, each moves the closure to a later day. Sapporo Maruyama Zoo instead closes on the second and fourth Wednesdays, and from November 9 to 13, 2026."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book tours and fine dining",
+        "copy": "Sapporo Beer Museum runs two paid guided tours sold through its own ticket link, and Shiroi Koibito Park lets you book paid areas and experiences in advance, with last paid-area admission at 16:30. Mikuni Sapporo takes bookings by phone or TableCheck and requires reservations for its Noël dinner on December 24 and 25."
+      },
+      {
+        "label": "Walk-in policies",
+        "value": "No bookings at MORIHICO.",
+        "copy": "MORIHICO. in Maruyama does not accept reservations and serves 9:00 to 19:00, last order 18:30. Northern Terrace Diner at Sapporo Grand Hotel serves breakfast from 6:30 to 10:00 and is open to non-guests."
+      },
+      {
+        "label": "Rules",
+        "value": "Ages and cover charges",
+        "copy": "SKY J at JR Tower Hotel Nikko Sapporo does not admit under-20s during bar time from 20:30 and adds an 800 yen cover charge per person from 17:30. Mikuni Sapporo accepts children at dinner only from age 3, and Rokkatei Sapporo Honten does not allow takeout of its Marusei Ice Sand."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Pair one indoor museum with one open-air sight each day, and check Monday closures before you set out.",
+      intro: [
+        "Odori Park is the easiest way to get your bearings in Sapporo: it runs about 1.5 km from West 1 to West 12 chome through the centre. The Sapporo Clock Tower stands nearby at Kita 1-jo Nishi 2-chome, open 8:45 to 17:10 with last entry at 17:00, and closed only from January 1 to 3; adult entry is 350 yen. The Former Hokkaido Government Office (Akarenga) opens 8:45 to 21:00. In winter, Odori Park becomes a site of the Sapporo Snow Festival, which runs from February 4 to February 11, 2027.",
+        "For a view over the city, the Mt. Moiwa Ropeway posts each day's last ascent and night-view time on its own site, so check it on the morning you plan to go; it has also announced a closure for its 2027 maintenance inspection without giving dates on its front page. On the east side, the Sapporo Beer Museum reopened after renovation on July 1, 2026 and sells two paid guided tours, with paid tastings in its first-floor Tasting Hall. Sapporo Beer Garden, at Kita 7-jo Higashi 9-chome, serves from 11:30 to 21:00, though its Poplar-kan hall is closed for interior renovation until around mid-January 2027.",
+        "Museums suit a grey day, but plan around Mondays, when the Hokkaido Museum, the Hokkaido Museum of Modern Art and the Hokkaido University Botanic Garden close. The Hokkaido Museum shows an exhibition on bones from October 10 to December 13, 2026, free with separate admission needed for the permanent galleries. The Hokkaido Museum of Modern Art runs My Ways of Making until December 20, 2026, and Sapporo Art Park shows Five Great Ukiyo-e Masters until January 11, 2027; the park is open daily until November 3, then closes on Mondays from November 4. The Historical Village of Hokkaido charges 1,000 yen for general admission.",
+        "Food is a large part of any visit. Sapporo Jogai Market lists hours of 6:00 to 15:00, and Ganso Sapporo Ramen Yokocho at Minami 5-jo Nishi 3-chome marks its 75th anniversary in 2026 with 17 shops listed. Soup Curry GARAKU and Ebisoba Ichigen Sohonten are both in the centre. For a slower morning, MORIHICO. in Maruyama opens at 9:00 with no regular closing day. In the evening, Mikuni Sapporo on the 9th floor of Sapporo Stellar Place closes on Tuesdays, and SKY J on the 35th floor of JR Tower Hotel Nikko Sapporo becomes a bar from 20:30."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Start with Odori Park and the Sapporo Clock Tower, open 8:45 to 17:10, then ride the Mt. Moiwa Ropeway after checking that day's last ascent time on its site."
+        ],
+        [
+          "A slower morning",
+          "Take breakfast at Northern Terrace Diner in Sapporo Grand Hotel from 6:30, open to non-guests, then head to MORIHICO. in Maruyama, which opens at 9:00 and does not take reservations."
+        ],
+        [
+          "Before booking",
+          "Check Monday closures at the Hokkaido Museum, the Hokkaido Museum of Modern Art and the Hokkaido University Botanic Garden, plus Sapporo Art Park from November 4 to April 28, and book Mikuni Sapporo ahead, remembering it closes on Tuesdays."
+        ]
+      ],
+      trust: "All 29 distinct recommendations in this guide were checked against their operators' own websites on October 28, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

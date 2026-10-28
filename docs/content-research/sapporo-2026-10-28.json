@@ -1,0 +1,885 @@
+{
+  "city": "Sapporo, Japan",
+  "checkedOn": "2026-10-28",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Odori Park",
+      "kind": "park",
+      "url": "https://odori-park.jp/",
+      "sourceType": "official park site (designated manager for the City of Sapporo)",
+      "address": "\"大通西1丁目から大通西12丁目\" (about 1.5 km); management office at \"大通西7丁目\"",
+      "operatingEvidence": "News dated 2026-10-28 and 2026-10-26 on rose-garden winter covering and flower-bed volunteer work; tulip bulbs planted 2026-10-22. Fountain operation for 2026 ended \"令和8年10月20日\".",
+      "hours": "not published",
+      "confidence": "high"
+    },
+    {
+      "name": "Sapporo Beer Museum",
+      "kind": "museum",
+      "url": "https://www.sapporobeer.jp/brewery/s_museum/",
+      "sourceType": "operator's own site (Sapporo Breweries)",
+      "address": "\"〒065-8633 北海道札幌市東区北7条東9丁目1-1\"",
+      "operatingEvidence": "Notice dated 2026-01-27: \"7月1日、サッポロビール博物館はバリューアップオープンします！\"; notice dated 2026-10-28 for a tour event on November 26. Two paid guided tours, tickets via the site's ticket link; paid tastings in the first-floor Tasting Hall.",
+      "hours": "not published on the page read (guide page returned 404)",
+      "confidence": "high"
+    },
+    {
+      "name": "Mt. Moiwa Ropeway",
+      "kind": "scenic",
+      "url": "https://mt-moiwa.jp/",
+      "sourceType": "operator's own site (Sapporo Mt. Moiwa Ropeway)",
+      "address": "\"064-0942 北海道札幌市中央区伏見5丁目3番7号\" (mountain-base office)",
+      "operatingEvidence": "Daily schedule shown with last ascent and night-view time; notices dated 2026-10-21 (final operation of the scenic road this year) and 2026-10-03 (\"令和９年次整備点検による休業のお知らせ\", 2027 maintenance closure, dates not shown). Summit facilities include \"ザ ジュエルズ\".",
+      "hours": "Daily schedule published per date; the date shown read \"10:30 - 21:30\" (last ascent)",
+      "confidence": "high"
+    },
+    {
+      "name": "Sapporo Clock Tower",
+      "kind": "landmark",
+      "url": "https://sapporoshi-tokeidai.jp/",
+      "sourceType": "official site (City of Sapporo facility)",
+      "address": "\"札幌市中央区北1条西2丁目\"",
+      "operatingEvidence": "Notice dated 2026-10-27 on clock-winding demonstrations; 2026-10-16 notice of a history talk on November 14 and \"2026年10月16日で創建148年\".",
+      "hours": "\"8時45分〜17時10分\" (\"入館は17時まで\"); closed \"年始 （1月1日〜1月3日）\"; adult \"350円\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Former Hokkaido Government Office (Akarenga)",
+      "kind": "landmark",
+      "url": "https://www.akarenga-h.jp/access/",
+      "sourceType": "official site (Hokkaido Prefecture facility)",
+      "address": "\"北海道札幌市中央区北3条西6丁目１番地\"",
+      "operatingEvidence": "Site news dated 2026-09-03 and 2026-07-27 on manga and anime workshops held at the building; menu links to a renewal-opening page.",
+      "hours": "8:45 to 21:00, last entry 20:30; closed December 29 to January 3 plus one equipment inspection day a year; paid entry",
+      "confidence": "high"
+    },
+    {
+      "name": "Hokkaido Museum",
+      "kind": "museum",
+      "url": "https://www.hm.pref.hokkaido.lg.jp/",
+      "sourceType": "official public operator (Hokkaido Prefecture)",
+      "address": "\"北海道札幌市厚別区厚別町小野幌53-2\" (〒004-0006)",
+      "operatingEvidence": "Current exhibition \"大解剖！あなたの知らない骨の世界\", October 10 to December 13, 2026 (free; general admission needed for permanent galleries); Jomon World Heritage display to November 29, 2026.",
+      "hours": "May to September 9:30 to 17:00; October to April 9:30 to 16:30; last entry 30 minutes before closing; closed Mondays (next weekday if a holiday) and \"年末年始（12月29日〜1月3日）\"; adult 800 yen",
+      "confidence": "high"
+    },
+    {
+      "name": "Historical Village of Hokkaido",
+      "kind": "museum",
+      "url": "https://www.kaitaku.or.jp/",
+      "sourceType": "operator's own site (Hokkaido Kaitaku Kinenkan foundation)",
+      "address": "\"〒004-0006　札幌市厚別区厚別町小野幌50-1\"",
+      "operatingEvidence": "Notices dated 26.10.13 (Culture Day architecture event) and 26.10.02 (repairs to exhibition buildings).",
+      "hours": "May to September \"9：00〜17：00（入場16：30まで） 無休\"; October to April \"9：00〜16：30（入場16：00まで）\", \"休館日 月曜日（祝日・振替休日の場合は、翌日）\"; closed December 29 to January 3; general 1,000 yen",
+      "confidence": "high"
+    },
+    {
+      "name": "Sapporo Art Park",
+      "kind": "museum",
+      "url": "https://www.artpark.or.jp/",
+      "sourceType": "official site (Sapporo city cultural foundation)",
+      "address": "\"〒005-0864 札幌市南区芸術の森2丁目75番地\"",
+      "operatingEvidence": "Art museum exhibition \"Five Great Ukiyo-e Masters\", October 10, 2026 to January 11, 2027; craft exhibition 2026 scheduled November 21 to December 6.",
+      "hours": "\"9:45～17:00\" (to 17:30 in June to August); \"4月29日～11月3日は無休、11月4日～4月28日は月曜日\" closed (next weekday if a holiday); closed December 29 to January 3",
+      "confidence": "high"
+    },
+    {
+      "name": "Hokkaido Museum of Modern Art",
+      "kind": "museum",
+      "url": "https://artmuseum.pref.hokkaido.lg.jp/knb",
+      "sourceType": "official public operator (Hokkaido Prefecture)",
+      "address": "\"札幌市中央区北1条西17丁目\" (060-0001)",
+      "operatingEvidence": "Exhibition \"わたしのつくりかた\" My Ways of Making, 2026.09.12 to 2026.12.20; calendar shows open on 2026/10/29.",
+      "hours": "9:30 to 17:00 (admission until 16:30); closed Mondays (Tuesday if Monday is a holiday), December 29 to January 3 and exhibition-change periods",
+      "confidence": "high"
+    },
+    {
+      "name": "Hokkaido University Botanic Garden",
+      "kind": "park",
+      "url": "https://www.hokudai.ac.jp/fsc/bg/",
+      "sourceType": "official public operator (Hokkaido University)",
+      "address": "\"〒060-0003 北海道札幌市中央区北3条西8丁目\"",
+      "operatingEvidence": "Site publishes a 2026 opening calendar; notes the glass greenhouse is closed for an undetermined period due to aging while the warm hall's rest area stays available.",
+      "hours": "9:00 to 16:00 (entry until 15:30); closed Mondays (next day if a holiday); season dates in an unreadable calendar image; high school and older 420 yen",
+      "confidence": "medium"
+    },
+    {
+      "name": "Sapporo Maruyama Zoo",
+      "kind": "park",
+      "url": "https://www.city.sapporo.jp/zoo/info/kaienzikan-kyuenbi/20210311.html",
+      "sourceType": "official public operator (City of Sapporo)",
+      "address": "\"〒064-0959 札幌市中央区宮ケ丘3番地1\"",
+      "operatingEvidence": "Zoo homepage carries 2026 animal news (October 7); closure calendar lists November 9 to 13 and November 25, 2026.",
+      "hours": "March 1 to October 31 9:30 to 16:30 (last entry 16:00); November 1 to end of February 9:30 to 16:00 (last entry 15:30); closed 2nd and 4th Wednesdays (1st and 4th in August), Monday to Friday of the week with the 2nd Wednesday in April and November, December 29 to 31; adult 800 yen",
+      "confidence": "high"
+    },
+    {
+      "name": "Moerenuma Park",
+      "kind": "park",
+      "url": "https://moerenumapark.jp/",
+      "sourceType": "official park site (City of Sapporo park)",
+      "address": "\"札幌市東区モエレ沼公園1-1\"",
+      "operatingEvidence": "News dated 2026.10.28 (free bus on November 14) and 2026.10.25 (winter operating period from November 4).",
+      "hours": "Park 7:00 to 22:00 daily (east gate entry until 21:00); Glass Pyramid 9:00 to 18:00, closed first Monday of each month",
+      "confidence": "high"
+    },
+    {
+      "name": "Shiroi Koibito Park",
+      "kind": "landmark",
+      "url": "https://www.shiroikoibitopark.jp/park-guide/access.html",
+      "sourceType": "operator's own site (Ishiya)",
+      "address": "\"〒063-0052　北海道札幌市⻄区宮の沢2-2-11-36\"",
+      "operatingEvidence": "News dated 2026.09.06 (2026 illumination-period hours) and 2026.08.25 (group experience bookings suspended during the Snow Festival period); paid areas and experiences bookable online.",
+      "hours": "\"10:00 - 18:00\" (paid area last admission 16:30)",
+      "confidence": "high"
+    },
+    {
+      "name": "Nijo Market",
+      "kind": "market",
+      "url": "https://www.nijomarket.com/",
+      "sourceType": "operator's own site (market cooperative)",
+      "address": "\"札幌市中央区南3条東1丁目4 アルファ創生川公園405\" (cooperative address as published)",
+      "operatingEvidence": "News dated 2026.4.22 on the 10th Tanuki Nijo Sake Festival; warning about phone scams impersonating the cooperative.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Sapporo Jogai Market",
+      "kind": "market",
+      "url": "https://www.jyogaishijyo.com/?page_id=16",
+      "sourceType": "operator's own site (market merchants' cooperative)",
+      "address": "\"〒060-0011 札幌市中央区北11条西21丁目1番7号214\" (cooperative office address as published)",
+      "operatingEvidence": "News dated 2026-07-01 and 2026-04-30 on live music stages at the market.",
+      "hours": "\"6:00～15:00\" (banner); closing days not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Sapporo Beer Garden",
+      "kind": "meal",
+      "url": "https://www.sapporo-bier-garten.jp/",
+      "sourceType": "operator's own site",
+      "address": "〒065-0007, Sapporo-shi Higashi-ku, Kita 7-jo Higashi 9-chome 2-10",
+      "operatingEvidence": "Poplar-kan closed from October 25, 2026 to around mid-January 2027 for interior renovation; Heritage Fest night session November 3, 2026.",
+      "hours": "11:30–21:00 (last order 20:40); closed December 31",
+      "confidence": "high"
+    },
+    {
+      "name": "Ebisoba Ichigen Sohonten",
+      "kind": "meal",
+      "url": "https://www.ebisoba.com/",
+      "sourceType": "operator's own site",
+      "address": "\"北海道札幌市中央区南七条西9-1024-10\"",
+      "operatingEvidence": "News dated 2026-10-14 and 2026-10-02 (chain events); main shop listed with phone 011-513-0098.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Soup Curry GARAKU (main store)",
+      "kind": "meal",
+      "url": "https://s-garaku.com/",
+      "sourceType": "operator's own site",
+      "address": "\"札幌市中央区南３条東２丁目６-１ プレサント南３東２ B1F\"",
+      "operatingEvidence": "Store list news dated June 29, 2026; recruitment for current shifts.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Ganso Sapporo Ramen Yokocho",
+      "kind": "meal",
+      "url": "https://www.ganso-yokocho.com/",
+      "sourceType": "operator's own site",
+      "address": "\"札幌市中央区南5条西3丁目8 N・グランデビル1階\"",
+      "operatingEvidence": "2026.03.26 post: \"今年、元祖さっぽろラーメン横丁は75周年を迎えます。\"; 17 shops listed.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mikuni Sapporo",
+      "kind": "meal",
+      "url": "https://www.jrhotels.co.jp/tower/restaurant/mikuni/",
+      "sourceType": "operator's own site (JR Tower Hotel Nikko Sapporo)",
+      "address": "Sapporo Stellar Place 9F; hotel \"北海道札幌市中央区北5条西2丁目5番地\"",
+      "operatingEvidence": "Mikuni Fair on November 16 and Noël dinner on December 24 and 25, 2026 by reservation; closure calendar notice dated October 16, 2026.",
+      "hours": "Lunch 11:30 to 15:00 (last entry 13:30); dinner 17:30 to 21:30 (last entry 19:00); closed Tuesdays and irregular days",
+      "confidence": "high"
+    },
+    {
+      "name": "SKY J (JR Tower Hotel Nikko Sapporo)",
+      "kind": "bar",
+      "url": "https://www.jrhotels.co.jp/tower/restaurant/skyj/",
+      "sourceType": "operator's own site (JR Tower Hotel Nikko Sapporo)",
+      "address": "\"35階レストラン＆バー「SKY J」\", hotel at \"北海道札幌市中央区北5条西2丁目5番地\"",
+      "operatingEvidence": "Festive Moments buffet \"2026年11月1日（日）～1月7日（木）\"; seasonal pear cocktails.",
+      "hours": "Bar time 20:30–22:30 (last order 22:00); open daily except private events; no bar time on December 24 and 25",
+      "confidence": "high"
+    },
+    {
+      "name": "Old Saloon 1934 (Sapporo Grand Hotel)",
+      "kind": "bar",
+      "url": "https://www.grand1934.com/restaurant/",
+      "sourceType": "operator's own site (Sapporo Grand Hotel)",
+      "address": "\"北海道札幌市中央区北1条西4丁目\"",
+      "operatingEvidence": "Hotel notices dated 2026-10-22 and 2026-10-15; lounge-bar listed with current hours and 84 seats.",
+      "hours": "17:00 to 23:00 (last order)",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Bakery & Pastry (Sapporo Grand Hotel)",
+      "kind": "bakery",
+      "url": "https://www.grand1934.com/restaurant/",
+      "sourceType": "operator's own site (Sapporo Grand Hotel)",
+      "address": "\"北海道札幌市中央区北1条西4丁目\"",
+      "operatingEvidence": "Listed among current hotel outlets alongside hotel notices dated 2026-10-22.",
+      "hours": "8:30 to 20:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Northern Terrace Diner (Sapporo Grand Hotel)",
+      "kind": "meal",
+      "url": "https://www.grand1934.com/accommodation/breakfast/",
+      "sourceType": "operator's own site (Sapporo Grand Hotel)",
+      "address": "East Building 1F, hotel at \"北海道札幌市中央区北1条西4丁目\"",
+      "operatingEvidence": "Breakfast page: daily 6:30–10:00, adults ¥4,000; \"ご宿泊以外のお客様もご利用いただけます。\" Hotel notices dated 2026-10-22.",
+      "hours": "Breakfast 6:30–10:00 daily; restaurant 6:30 to 20:30 (last order)",
+      "confidence": "high"
+    },
+    {
+      "name": "MORIHICO. (Maruyama)",
+      "kind": "cafe",
+      "url": "https://www.morihico.com/shop/morihico/",
+      "sourceType": "operator's own site",
+      "address": "Chuo Ward, Sapporo, 064-0802 (South 2 West 26-chome, 2-18)",
+      "operatingEvidence": "Company news dated October 26 and October 15, 2026 (Christmas 2026 campaign, seasonal \"Opera 2026\" coffee); shop page states reservations are not accepted.",
+      "hours": "\"9:00-19:00 (L.O. 18:30)\"; no regular closing day; \"年末年始休あり\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Miyakoshiya Coffee Honten (Maruyama)",
+      "kind": "cafe",
+      "url": "https://www.miyakoshiya-coffee.co.jp/shopinfo/honten",
+      "sourceType": "operator's own site",
+      "address": "\"札幌市中央区南2条西28丁目1\"",
+      "operatingEvidence": "Company news dated 2026-10-01 (October recommended bean) and 2026-09-01 (Odori shop hours change).",
+      "hours": "\"10:00 〜 21:00\"; closing days not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Rokkatei Sapporo Honten",
+      "kind": "bakery",
+      "url": "https://www.rokkatei.co.jp/facilities/札幌本店-9/",
+      "sourceType": "operator's own site",
+      "address": "\"北海道札幌市中央区北4条西6丁目3-3\"",
+      "operatingEvidence": "Company topics dated October 25 and October 1, 2026; shop page lists current store and café hours.",
+      "hours": "Store \"10：00～17：30\"; café \"10：30～16：30（LO16：00）\", \"喫茶室は毎週水曜定休\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Donguri (Odori)",
+      "kind": "bakery",
+      "url": "https://www.donguri-bake.co.jp/shop-list",
+      "sourceType": "operator's own site",
+      "address": "\"〒060-0042 札幌市中央区大通西1丁目13 ル・トロワ1F\"",
+      "operatingEvidence": "Company news dated July 4, 2026 and April 15, 2026; Odori branch listed in the current shop list.",
+      "hours": "10:00〜21:00 (may vary with Le Trois hours); closed on Le Trois closing days",
+      "confidence": "medium"
+    },
+    {
+      "name": "Sapporo Snow Festival (Odori Site)",
+      "kind": "landmark",
+      "url": "https://www.snowfes.com/",
+      "sourceType": "official organiser's site (Sapporo Snow Festival executive committee)",
+      "address": "Odori Site: \"大通公園\"",
+      "operatingEvidence": "2027 festival dates February 4 to February 11, 2027; volunteer recruitment for 2027 posted October 23, 2026.",
+      "hours": "not published",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Hokkaido Shrine",
+      "reason": "fetch failed: certificate has expired",
+      "url": "https://www.hokkaidojingu.or.jp/"
+    },
+    {
+      "name": "Sapporo TV Tower",
+      "reason": "address not readable on official site (access page empty, English access page socket hang up); hours and 2026 events were shown",
+      "url": "https://www.tv-tower.co.jp/"
+    },
+    {
+      "name": "Ramen Sumire (Sapporo)",
+      "reason": "fetch failed: certificate hostname mismatch",
+      "url": "https://www.sumireya.com/"
+    },
+    {
+      "name": "Kinotoya",
+      "reason": "fetch failed: HTTP 403 Forbidden",
+      "url": "https://company.kinotoya.com/"
+    },
+    {
+      "name": "Okurayama Ski Jump Stadium",
+      "reason": "fetch failed: HTTP 503 Service Unavailable",
+      "url": "https://okurayama-jump.jp/"
+    },
+    {
+      "name": "JR Tower Observatory T38",
+      "reason": "fetch failed: HTTP 503 Service Unavailable",
+      "url": "https://www.jr-tower.com/t38"
+    },
+    {
+      "name": "Bar Yamazaki",
+      "reason": "official site shows address and hours but no 2026 or other current operating evidence (latest dates 2016-2018)",
+      "url": "https://bar-yamazaki.com/"
+    },
+    {
+      "name": "Kitakaro Sapporo Honkan",
+      "reason": "branch address not found; shop pages returned 404",
+      "url": "https://www.kitakaro.com/"
+    },
+    {
+      "name": "Main Bar Crossvault (Keio Plaza Hotel Sapporo)",
+      "reason": "bar hours not published; restaurant page returned 404",
+      "url": "https://www.keioplaza-sapporo.co.jp/"
+    },
+    {
+      "name": "Sapporo Park Hotel",
+      "reason": "fetch failed: DNS lookup failed (ENOTFOUND)",
+      "url": "https://www.sapporo-parkhotel.com/"
+    },
+    {
+      "name": "Mount Moiwa / Mount Moiwa night view",
+      "reason": "merged into the confirmed entry Mt. Moiwa Ropeway",
+      "url": "https://mt-moiwa.jp/"
+    },
+    {
+      "name": "Family-friendly Odori Park",
+      "reason": "duplicate of confirmed Odori Park",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Odori Park",
+      "reason": "duplicate of confirmed Odori Park",
+      "url": ""
+    },
+    {
+      "name": "Otaru day trip",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Otaru day trip",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Seasonal festival",
+      "reason": "generic, not a place (replaced by Sapporo Snow Festival (Odori Site))",
+      "url": ""
+    },
+    {
+      "name": "miso ramen and seafood",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sapporo market or cafe",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local dinner in Odori",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Susukino",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Maruyama",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Odori",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Odori walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Susukino",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Maruyama",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Maruyama",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Odori Park",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Odori",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Mount Moiwa night view",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Susukino",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Sapporo Beer Museum",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Odori evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Susukino",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Maruyama",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Odori",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Susukino",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Maruyama",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Odori",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Odori cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Maruyama",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Maruyama",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Odori",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Odori",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Susukino bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Odori Park",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Maruyama",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Odori",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Sapporo Beer Museum",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Maruyama",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Odori",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Susukino",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Maruyama",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Odori",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Odori",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Susukino",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Mount Moiwa",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Odori",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Susukino morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Odori Park",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Maruyama",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Odori",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Susukino",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Maruyama",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Odori Park",
+        "Mt. Moiwa Ropeway",
+        "Sapporo Clock Tower",
+        "Sapporo Beer Museum"
+      ],
+      "bestFirstTimers": [
+        "Odori Park",
+        "Sapporo Clock Tower",
+        "Former Hokkaido Government Office (Akarenga)",
+        "Nijo Market"
+      ],
+      "bestRestaurants": [
+        "Sapporo Beer Garden",
+        "Soup Curry GARAKU (main store)",
+        "Ebisoba Ichigen Sohonten",
+        "Mikuni Sapporo"
+      ],
+      "bestBudget": [
+        "Odori Park",
+        "Moerenuma Park",
+        "Ganso Sapporo Ramen Yokocho",
+        "Donguri (Odori)"
+      ],
+      "bestLuxury": [
+        "Mikuni Sapporo",
+        "SKY J (JR Tower Hotel Nikko Sapporo)",
+        "Old Saloon 1934 (Sapporo Grand Hotel)"
+      ],
+      "bestCouples": [
+        "Mt. Moiwa Ropeway",
+        "SKY J (JR Tower Hotel Nikko Sapporo)",
+        "Old Saloon 1934 (Sapporo Grand Hotel)",
+        "Moerenuma Park"
+      ],
+      "bestKids": [
+        "Sapporo Maruyama Zoo",
+        "Shiroi Koibito Park",
+        "Moerenuma Park",
+        "Historical Village of Hokkaido"
+      ],
+      "bestSolo": [
+        "Hokkaido Museum of Modern Art",
+        "Sapporo Art Park",
+        "Hokkaido University Botanic Garden",
+        "MORIHICO. (Maruyama)"
+      ],
+      "bestUnique": [
+        "Historical Village of Hokkaido",
+        "Hokkaido Museum",
+        "Sapporo Art Park",
+        "Sapporo Snow Festival (Odori Site)"
+      ],
+      "bestBreakfast": [
+        "Northern Terrace Diner (Sapporo Grand Hotel)",
+        "Sapporo Jogai Market",
+        "Nijo Market"
+      ],
+      "bestLunch": [
+        "Ganso Sapporo Ramen Yokocho",
+        "Soup Curry GARAKU (main store)",
+        "Ebisoba Ichigen Sohonten",
+        "Rokkatei Sapporo Honten"
+      ],
+      "bestDinner": [
+        "Sapporo Beer Garden",
+        "Mikuni Sapporo",
+        "Ebisoba Ichigen Sohonten",
+        "Soup Curry GARAKU (main store)"
+      ],
+      "bestCocktails": [
+        "SKY J (JR Tower Hotel Nikko Sapporo)",
+        "Old Saloon 1934 (Sapporo Grand Hotel)"
+      ],
+      "bestBakeries": [
+        "The Bakery & Pastry (Sapporo Grand Hotel)",
+        "Donguri (Odori)",
+        "Rokkatei Sapporo Honten"
+      ],
+      "bestCoffee": [
+        "MORIHICO. (Maruyama)",
+        "Miyakoshiya Coffee Honten (Maruyama)"
+      ]
+    },
+    "queries": {
+      "Odori Park": "Odori Park Odori Nishi 7-chome Sapporo",
+      "Sapporo Beer Museum": "Sapporo Beer Museum Kita 7-jo Higashi 9-chome Sapporo",
+      "Mt. Moiwa Ropeway": "Mt. Moiwa Ropeway Fushimi 5-chome Sapporo",
+      "Sapporo Clock Tower": "Sapporo Clock Tower Kita 1-jo Nishi 2-chome Sapporo",
+      "Former Hokkaido Government Office (Akarenga)": "Former Hokkaido Government Office Akarenga Kita 3-jo Nishi 6-chome Sapporo",
+      "Hokkaido Museum": "Hokkaido Museum Atsubetsu-cho Konopporo 53-2 Sapporo",
+      "Historical Village of Hokkaido": "Historical Village of Hokkaido Atsubetsu-cho Konopporo 50-1 Sapporo",
+      "Sapporo Art Park": "Sapporo Art Park Geijutsu-no-mori 2-chome Sapporo",
+      "Hokkaido Museum of Modern Art": "Hokkaido Museum of Modern Art Kita 1-jo Nishi 17-chome Sapporo",
+      "Hokkaido University Botanic Garden": "Hokkaido University Botanic Garden Kita 3-jo Nishi 8-chome Sapporo",
+      "Sapporo Maruyama Zoo": "Sapporo Maruyama Zoo Miyagaoka 3-1 Sapporo",
+      "Moerenuma Park": "Moerenuma Park Moerenuma-koen 1-1 Higashi-ku Sapporo",
+      "Shiroi Koibito Park": "Shiroi Koibito Park Miyanosawa 2-2-11-36 Sapporo",
+      "Nijo Market": "Nijo Market Minami 3-jo Higashi 1-chome Sapporo",
+      "Sapporo Jogai Market": "Sapporo Jogai Market Kita 11-jo Nishi 21-chome Sapporo",
+      "Sapporo Beer Garden": "Sapporo Beer Garden Kita 7-jo Higashi 9-chome Sapporo",
+      "Ebisoba Ichigen Sohonten": "Ebisoba Ichigen Sohonten Minami 7-jo Nishi 9-chome Sapporo",
+      "Soup Curry GARAKU (main store)": "Soup Curry GARAKU Minami 3-jo Higashi 2-chome Sapporo",
+      "Ganso Sapporo Ramen Yokocho": "Ganso Sapporo Ramen Yokocho Minami 5-jo Nishi 3-chome Sapporo",
+      "Mikuni Sapporo": "Mikuni Sapporo Stellar Place Kita 5-jo Nishi 2-chome Sapporo",
+      "SKY J (JR Tower Hotel Nikko Sapporo)": "SKY J JR Tower Hotel Nikko Sapporo Kita 5-jo Nishi 2-chome Sapporo",
+      "Old Saloon 1934 (Sapporo Grand Hotel)": "Old Saloon 1934 Sapporo Grand Hotel Kita 1-jo Nishi 4-chome Sapporo",
+      "The Bakery & Pastry (Sapporo Grand Hotel)": "The Bakery & Pastry Sapporo Grand Hotel Kita 1-jo Nishi 4-chome Sapporo",
+      "Northern Terrace Diner (Sapporo Grand Hotel)": "Northern Terrace Diner Sapporo Grand Hotel Kita 1-jo Nishi 4-chome Sapporo",
+      "MORIHICO. (Maruyama)": "MORIHICO. Minami 2-jo Nishi 26-chome Sapporo",
+      "Miyakoshiya Coffee Honten (Maruyama)": "Miyakoshiya Coffee Honten Minami 2-jo Nishi 28-chome Sapporo",
+      "Rokkatei Sapporo Honten": "Rokkatei Sapporo Honten Kita 4-jo Nishi 6-chome Sapporo",
+      "Donguri (Odori)": "Donguri Odori Le Trois Odori Nishi 1-chome Sapporo",
+      "Sapporo Snow Festival (Odori Site)": "Sapporo Snow Festival Odori Site Odori Park Sapporo"
+    },
+    "summary": "Odori Park, a ropeway viewpoint, museums and markets, with ramen, soup curry, breakfast, bakery, coffee and cocktail stops checked against their own websites.",
+    "highlights": [
+      "Odori Park",
+      "Mt. Moiwa Ropeway",
+      "Sapporo Clock Tower",
+      "Hokkaido Museum"
+    ],
+    "tip": "Save Mondays for Odori Park, the Sapporo Clock Tower and the Former Hokkaido Government Office (Akarenga), because the Hokkaido Museum, the Hokkaido Museum of Modern Art and the Hokkaido University Botanic Garden close on Mondays, as does Sapporo Art Park from November 4 to April 28.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mondays at museums",
+        "copy": "The Hokkaido Museum, the Hokkaido Museum of Modern Art and the Hokkaido University Botanic Garden close on Mondays, as does Sapporo Art Park from November 4 to April 28; when Monday is a public holiday, each moves the closure to a later day. Sapporo Maruyama Zoo instead closes on the second and fourth Wednesdays, and from November 9 to 13, 2026."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book tours and fine dining",
+        "copy": "Sapporo Beer Museum runs two paid guided tours sold through its own ticket link, and Shiroi Koibito Park lets you book paid areas and experiences in advance, with last paid-area admission at 16:30. Mikuni Sapporo takes bookings by phone or TableCheck and requires reservations for its Noël dinner on December 24 and 25."
+      },
+      {
+        "label": "Walk-in policies",
+        "value": "No bookings at MORIHICO.",
+        "copy": "MORIHICO. in Maruyama does not accept reservations and serves 9:00 to 19:00, last order 18:30. Northern Terrace Diner at Sapporo Grand Hotel serves breakfast from 6:30 to 10:00 and is open to non-guests."
+      },
+      {
+        "label": "Rules",
+        "value": "Ages and cover charges",
+        "copy": "SKY J at JR Tower Hotel Nikko Sapporo does not admit under-20s during bar time from 20:30 and adds an 800 yen cover charge per person from 17:30. Mikuni Sapporo accepts children at dinner only from age 3, and Rokkatei Sapporo Honten does not allow takeout of its Marusei Ice Sand."
+      }
+    ],
+    "dek": "Pair one indoor museum with one open-air sight each day, and check Monday closures before you set out.",
+    "intro": [
+      "Odori Park is the easiest way to get your bearings in Sapporo: it runs about 1.5 km from West 1 to West 12 chome through the centre. The Sapporo Clock Tower stands nearby at Kita 1-jo Nishi 2-chome, open 8:45 to 17:10 with last entry at 17:00, and closed only from January 1 to 3; adult entry is 350 yen. The Former Hokkaido Government Office (Akarenga) opens 8:45 to 21:00. In winter, Odori Park becomes a site of the Sapporo Snow Festival, which runs from February 4 to February 11, 2027.",
+      "For a view over the city, the Mt. Moiwa Ropeway posts each day's last ascent and night-view time on its own site, so check it on the morning you plan to go; it has also announced a closure for its 2027 maintenance inspection without giving dates on its front page. On the east side, the Sapporo Beer Museum reopened after renovation on July 1, 2026 and sells two paid guided tours, with paid tastings in its first-floor Tasting Hall. Sapporo Beer Garden, at Kita 7-jo Higashi 9-chome, serves from 11:30 to 21:00, though its Poplar-kan hall is closed for interior renovation until around mid-January 2027.",
+      "Museums suit a grey day, but plan around Mondays, when the Hokkaido Museum, the Hokkaido Museum of Modern Art and the Hokkaido University Botanic Garden close. The Hokkaido Museum shows an exhibition on bones from October 10 to December 13, 2026, free with separate admission needed for the permanent galleries. The Hokkaido Museum of Modern Art runs My Ways of Making until December 20, 2026, and Sapporo Art Park shows Five Great Ukiyo-e Masters until January 11, 2027; the park is open daily until November 3, then closes on Mondays from November 4. The Historical Village of Hokkaido charges 1,000 yen for general admission.",
+      "Food is a large part of any visit. Sapporo Jogai Market lists hours of 6:00 to 15:00, and Ganso Sapporo Ramen Yokocho at Minami 5-jo Nishi 3-chome marks its 75th anniversary in 2026 with 17 shops listed. Soup Curry GARAKU and Ebisoba Ichigen Sohonten are both in the centre. For a slower morning, MORIHICO. in Maruyama opens at 9:00 with no regular closing day. In the evening, Mikuni Sapporo on the 9th floor of Sapporo Stellar Place closes on Tuesdays, and SKY J on the 35th floor of JR Tower Hotel Nikko Sapporo becomes a bar from 20:30."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Start with Odori Park and the Sapporo Clock Tower, open 8:45 to 17:10, then ride the Mt. Moiwa Ropeway after checking that day's last ascent time on its site."
+      ],
+      [
+        "A slower morning",
+        "Take breakfast at Northern Terrace Diner in Sapporo Grand Hotel from 6:30, open to non-guests, then head to MORIHICO. in Maruyama, which opens at 9:00 and does not take reservations."
+      ],
+      [
+        "Before booking",
+        "Check Monday closures at the Hokkaido Museum, the Hokkaido Museum of Modern Art and the Hokkaido University Botanic Garden, plus Sapporo Art Park from November 4 to April 28, and book Mikuni Sapporo ahead, remembering it closes on Tuesdays."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several official sites could not be read: Hokkaido Shrine (expired certificate), Ramen Sumire (certificate mismatch), Kinotoya (403), Okurayama Ski Jump Stadium and JR Tower Observatory T38 (503), and Sapporo Park Hotel (DNS failure); Sapporo TV Tower's address could not be read. Opening hours were not published on the pages read for Odori Park, Sapporo Beer Museum, Nijo Market, Ebisoba Ichigen Sohonten, Soup Curry GARAKU and Ganso Sapporo Ramen Yokocho, and closing days were not shown for Sapporo Jogai Market or Miyakoshiya Coffee Honten. Nijo Market and Sapporo Jogai Market addresses are the cooperatives' published addresses. The Hokkaido University Botanic Garden season dates sit in a calendar image that could not be read, and Mikuni Sapporo's specific closure dates beyond Tuesdays were not readable.",
+  "injectionLikeText": []
+}
