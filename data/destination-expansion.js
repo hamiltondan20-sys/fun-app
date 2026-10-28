@@ -5720,4 +5720,106 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Cairo, Egypt: source review of 2026-10-27 (docs/content-research/cairo-2026-10-27.md).
+  {
+    const cityKey = "Cairo, Egypt";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Pyramids of Giza","National Museum of Egyptian Civilization","Saqqara","Al-Moez Street"],
+      bestFirstTimers: ["Pyramids of Giza","National Museum of Egyptian Civilization","Al-Moez Street","139 Pavilion (Marriott Mena House)"],
+      bestRestaurants: ["Khufu's","Osmanly (Kempinski Nile Hotel)","La Zisa (St. Regis Cairo)","139 Pavilion (Marriott Mena House)"],
+      bestBudget: ["Al-Moez Street","National Museum of Egyptian Civilization","Garden Promenade Cafe (Cairo Marriott)","The Bakery (Cairo Marriott)"],
+      bestLuxury: ["J&G Steakhouse Cairo (St. Regis Cairo)","The St. Regis Bar & The Water Garden","Khufu's","Alfredo (Marriott Mena House)"],
+      bestCouples: ["The Rooftop (Kempinski Nile Hotel)","Alfredo (Marriott Mena House)","The St. Regis Bar & The Water Garden","Al-Moez Street"],
+      bestKids: ["Pyramids of Giza","National Museum of Egyptian Civilization","Sirocco (St. Regis Cairo)","Chocolate Lounge (Kempinski Nile Hotel)"],
+      bestSolo: ["Saqqara","Al-Moez Street","The Jazz Bar (Kempinski Nile Hotel)","Garden Promenade Cafe (Cairo Marriott)"],
+      bestUnique: ["Saqqara","Khufu's","National Museum of Egyptian Civilization","139 Pavilion (Marriott Mena House)"],
+      bestBreakfast: ["139 Pavilion (Marriott Mena House)","Omar Khayyam Restaurant (Cairo Marriott)","Khufu's","Garden Promenade Cafe (Cairo Marriott)"],
+      bestLunch: ["Khufu's","Saraya Gallery (Cairo Marriott)","Sirocco (St. Regis Cairo)","Osmanly (Kempinski Nile Hotel)"],
+      bestDinner: ["Osmanly (Kempinski Nile Hotel)","J&G Steakhouse Cairo (St. Regis Cairo)","La Zisa (St. Regis Cairo)","Alfredo (Marriott Mena House)"],
+      bestCocktails: ["The Rooftop (Kempinski Nile Hotel)","The St. Regis Bar & The Water Garden","Harry's Pub (Cairo Marriott)","The Jazz Bar (Kempinski Nile Hotel)"],
+      bestBakeries: ["The Bakery (Cairo Marriott)","La Patisserie (JW Marriott Hotel Cairo)","Chocolate Lounge (Kempinski Nile Hotel)"],
+      bestCoffee: ["Garden Promenade Cafe (Cairo Marriott)","The Jazz Bar (Kempinski Nile Hotel)","Chocolate Lounge (Kempinski Nile Hotel)","La Patisserie (JW Marriott Hotel Cairo)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Pyramids of Giza": "Pyramids of Giza Giza Plateau Giza",
+      "National Museum of Egyptian Civilization": "National Museum of Egyptian Civilization Al-Fustat Road Ain El-Sira Cairo",
+      "Saqqara": "Saqqara Necropolis Giza",
+      "Al-Moez Street": "Al-Moez Street Islamic Cairo Cairo",
+      "139 Pavilion (Marriott Mena House)": "139 Pavilion Marriott Mena House 6 Pyramids Road Giza",
+      "Khufu's": "Khufu's restaurant Giza Pyramids Giza",
+      "Osmanly (Kempinski Nile Hotel)": "Osmanly Kempinski Nile Hotel Garden City Cairo",
+      "La Zisa (St. Regis Cairo)": "La Zisa St. Regis 1189 Nile Corniche Cairo",
+      "Garden Promenade Cafe (Cairo Marriott)": "Garden Promenade Cafe Cairo Marriott 16 Saray El Gezira Street Zamalek Cairo",
+      "The Bakery (Cairo Marriott)": "The Bakery Cairo Marriott 16 Saray El Gezira Street Zamalek Cairo",
+      "J&G Steakhouse Cairo (St. Regis Cairo)": "J&G Steakhouse St. Regis 1189 Nile Corniche Cairo",
+      "The St. Regis Bar & The Water Garden": "St. Regis Bar 1189 Nile Corniche Cairo",
+      "Alfredo (Marriott Mena House)": "Alfredo Marriott Mena House 6 Pyramids Road Giza",
+      "The Rooftop (Kempinski Nile Hotel)": "The Rooftop Kempinski Nile Hotel Garden City Cairo",
+      "Sirocco (St. Regis Cairo)": "Sirocco St. Regis 1189 Nile Corniche Cairo",
+      "Chocolate Lounge (Kempinski Nile Hotel)": "Chocolate Lounge Kempinski Nile Hotel Garden City Cairo",
+      "The Jazz Bar (Kempinski Nile Hotel)": "The Jazz Bar Kempinski Nile Hotel Garden City Cairo",
+      "Omar Khayyam Restaurant (Cairo Marriott)": "Omar Khayyam Restaurant Cairo Marriott 16 Saray El Gezira Street Zamalek Cairo",
+      "Saraya Gallery (Cairo Marriott)": "Saraya Gallery Cairo Marriott 16 Saray El Gezira Street Zamalek Cairo",
+      "Harry's Pub (Cairo Marriott)": "Harry's Pub Cairo Marriott 16 Saray El Gezira Street Zamalek Cairo",
+      "La Patisserie (JW Marriott Hotel Cairo)": "La Patisserie JW Marriott Ring Road Mirage City New Cairo"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Cairo" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "The Pyramids of Giza, Saqqara, Al-Moez Street and the National Museum of Egyptian Civilization, with hotel restaurants, cafés, bakeries and bars checked against their own websites.";
+    cityGuide.highlights = ["Pyramids of Giza","National Museum of Egyptian Civilization","Saqqara","Al-Moez Street"];
+    cityGuide.tip = "The ministry asks you to arrive at least an hour before closing, and last entry at the Pyramids of Giza and Saqqara is 4:00 pm, so start at the Pyramids when they open at 7:00 am.";
+    data.destinationFacts[cityKey] = "The ministry asks you to arrive at least an hour before closing, and last entry at the Pyramids of Giza and Saqqara is 4:00 pm, so start at the Pyramids when they open at 7:00 am.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "The Pyramids of Giza, Saqqara, Al-Moez Street and the National Museum of Egyptian Civilization, with hotel restaurants, cafés, bakeries and bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Open daily",
+        "copy": "The ministry portal lists the Pyramids of Giza and Saqqara as open on all days, with shorter Ramadan hours. The National Museum of Egyptian Civilization opens Saturday to Thursday from 9:00 am to 5:00 pm and adds a Friday evening session from 6:00 pm to 9:00 pm."
+      },
+      {
+        "label": "Tickets",
+        "value": "Book on egymonuments.com",
+        "copy": "The Pyramids of Giza, Saqqara and Al-Moez Street sell dated tickets through the ministry portal, where the Pyramids list EGP 700 for foreign adults. The National Museum of Egyptian Civilization sells its last daytime ticket at 4:00 pm."
+      },
+      {
+        "label": "Walk-ins",
+        "value": "Book dinner ahead",
+        "copy": "Kempinski Nile Hotel says walk-ins are welcome subject to seating, but advance booking is recommended for dinner at venues such as Osmanly. Khufu's takes reservations separately for breakfast and lunch and for dinner."
+      },
+      {
+        "label": "Rules",
+        "value": "Arrive early, dress smart",
+        "copy": "At the Pyramids of Giza and Saqqara the ministry asks you to arrive at least an hour before closing. The Rooftop, The Jazz Bar and Osmanly at the Kempinski Nile Hotel list a smart casual dress code."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Do the Pyramids of Giza at opening, keep a Friday evening for the National Museum of Egyptian Civilization, and eat in Zamalek, Garden City or on the Corniche.",
+      intro: [
+        "The Ministry of Tourism and Antiquities runs Cairo's ancient sites, and its ticket portal lists the Pyramids of Giza as open every day from 7:00 am, with last entry at 4:00 pm and adult tickets for foreign visitors at EGP 700. The ministry asks you to arrive at least an hour before a site closes, so an early start pays off. Saqqara follows a similar pattern, opening daily at 8:00 am with last entry at 4:00 pm, and both sites have shorter hours during Ramadan.",
+        "In the city, the National Museum of Egyptian Civilization on Al-Fustat Road, home to the Royal Mummies Gallery, opens Saturday to Thursday from 9:00 am to 5:00 pm, with its last ticket sold at 4:00 pm. On Fridays it adds an evening session from 6:00 pm to 9:00 pm, a useful slot if your days are full. Al-Moez Street, the ticketed historic street in Islamic Cairo, opens daily from 9:00 am with last entry at 4:00 pm.",
+        "Near the pyramids, 139 Pavilion at Marriott Mena House, 6 Pyramids Road, is open 24 hours, serving buffet breakfast, lunch and dinner with live music, and hosts a Saturday brunch from 1:00 to 4:00 pm. Alfredo, the hotel's Italian restaurant, opens daily from 4:00 pm to 11:00 pm. Khufu's sits inside the archaeological grounds, reached through the visitor entrance, and takes reservations for breakfast and lunch and for dinner.",
+        "In Zamalek, the Cairo Marriott at 16 Saray El Gezira Street lists the Garden Promenade Cafe from 6:00 am to 2:00 am, The Bakery around the clock and Harry's Pub from 6:00 pm to 1:00 am. At the Kempinski Nile Hotel in Garden City, The Rooftop serves from 9:00 am to 2:00 am and Osmanly from 1:00 pm to midnight, both with a smart casual dress code. On the Corniche, the St. Regis lists J&G Steakhouse from 4:30 pm to midnight."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Start at the Pyramids of Giza when they open at 7:00 am, then lunch at 139 Pavilion at Marriott Mena House, which is open 24 hours."
+        ],
+        [
+          "A slower morning",
+          "Have breakfast at the Garden Promenade Cafe in Zamalek, open from 6:00 am, before an unhurried visit to the National Museum of Egyptian Civilization."
+        ],
+        [
+          "Before booking",
+          "Book the Pyramids of Giza and Saqqara on the ministry's egymonuments.com portal, and reserve dinner ahead at Kempinski Nile Hotel venues such as Osmanly."
+        ]
+      ],
+      trust: "All 21 distinct recommendations in this guide were checked against their operators' own websites on October 27, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

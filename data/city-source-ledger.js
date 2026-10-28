@@ -5,6 +5,685 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Cairo, Egypt": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-27",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Only 21 places met the address rule, below the 25-35 target. Ten major sights, including the Grand Egyptian Museum, the Egyptian Museum, the Citadel and the Cairo Opera House, were left out because their official pages publish no address or location, not because of any closure. The Pyramids of Giza, Saqqara and Al-Moez Street are confirmed by site name only, the ministry's seasonal date ranges appear only in images, Kempinski Nile Hotel pages give only \"Garden City Cairo\", and Khufu's publishes no opening hours. Several candidates could not be read: gem.eg, egyptianmuseumcairo.eg, Four Seasons, Diwan and Espresso Lab returned 403; Al-Azhar Park and Felfela had SSL errors; Abou El Sid, Cairo Jazz Club and Cairo Tower returned no readable content; the Nile Ritz-Carlton returned 404 and Marriott pages were then rate-limited.",
+    "sourceUrls": [
+      "docs/content-research/cairo-2026-10-27.md",
+      "docs/content-research/cairo-2026-10-27.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Grand Egyptian Museum",
+        "url": "https://tickets.gem.eg/",
+        "checkedOn": "2026-10-27",
+        "reason": "official page publishes no address or location (tickets.gem.eg lists hours and booking only; gem.eg returned 403)"
+      },
+      {
+        "name": "Egyptian Museum",
+        "url": "https://www.egymonuments.com/details/EgyptianMuseum",
+        "checkedOn": "2026-10-27",
+        "reason": "official page publishes no address or location (ministry pages give only \"Cairo\"; egyptianmuseumcairo.eg returned 403)"
+      },
+      {
+        "name": "Coptic Museum",
+        "url": "https://www.egymonuments.com/details/CopticMuseum",
+        "checkedOn": "2026-10-27",
+        "reason": "official page publishes no address or location (egymonuments.gov.eg museum page returned 404)"
+      },
+      {
+        "name": "Salah Eldin Citadel",
+        "url": "https://www.egymonuments.com/details/SalahEldinCitadel",
+        "checkedOn": "2026-10-27",
+        "reason": "official page publishes no address or location"
+      },
+      {
+        "name": "Museum of Islamic Art",
+        "url": "https://egymonuments.gov.eg/en/museums/museum-of-islamic-art",
+        "checkedOn": "2026-10-27",
+        "reason": "official page publishes no address or location (egymonuments.gov.eg page also gives only \"Cairo\", adjacent to the National Library)"
+      },
+      {
+        "name": "Gayer-Anderson Museum",
+        "url": "https://www.egymonuments.com/details/GayerAndersonMuseum",
+        "checkedOn": "2026-10-27",
+        "reason": "official page publishes no address or location"
+      },
+      {
+        "name": "Mosque-Madrassa of Sultan Hassan",
+        "url": "https://www.egymonuments.com/details/Mosque-MadrassaSultanHassan",
+        "checkedOn": "2026-10-27",
+        "reason": "official page publishes no address or location"
+      },
+      {
+        "name": "Baron Empain Palace",
+        "url": "https://www.egymonuments.com/details/BaronEmpainPalace",
+        "checkedOn": "2026-10-27",
+        "reason": "official page publishes no address or location"
+      },
+      {
+        "name": "Prince Mohamed Ali Palace",
+        "url": "https://www.egymonuments.com/details/PrinceMohamedAliPalace",
+        "checkedOn": "2026-10-27",
+        "reason": "official page publishes no address or location"
+      },
+      {
+        "name": "Cairo Opera House",
+        "url": "https://www.cairoopera.org/",
+        "checkedOn": "2026-10-27",
+        "reason": "official page publishes no address or location (contact page returned 404)"
+      },
+      {
+        "name": "Khan el-Khalili",
+        "checkedOn": "2026-10-27",
+        "reason": "Public bazaar with no operator website to check; no official source for address or operating evidence."
+      },
+      {
+        "name": "Al-Azhar Park",
+        "url": "https://www.azharpark.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "SSL error (WRONG_VERSION_NUMBER) on https and http; not readable. Not evidence of closure."
+      },
+      {
+        "name": "Cairo Tower",
+        "url": "https://www.cairotower.net/",
+        "checkedOn": "2026-10-27",
+        "reason": "cairotower.net returned only a tracking pixel; no readable official content."
+      },
+      {
+        "name": "Abou El Sid",
+        "url": "https://www.abouelsid.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "Homepage returned only the name; no address, hours or menu readable."
+      },
+      {
+        "name": "Zooba",
+        "url": "https://www.zoobaeats.com/find-us",
+        "checkedOn": "2026-10-27",
+        "reason": "Official site lists delivery apps only; no Cairo branch address or hours published on pages read."
+      },
+      {
+        "name": "Cairo Jazz Club",
+        "url": "https://www.cairojazzclub.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "Homepage returned only the title; no address, hours or events readable."
+      },
+      {
+        "name": "Felfela",
+        "url": "https://www.felfelaegypt.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "SSL error (WRONG_VERSION_NUMBER); not readable."
+      },
+      {
+        "name": "Diwan Bookstore (Zamalek)",
+        "url": "https://www.diwanegypt.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 403 on automated fetch."
+      },
+      {
+        "name": "Koshary Abou Tarek",
+        "url": "https://www.aboutarek.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "aboutarek.com redirects (301) to an unrelated domain; no official site found."
+      },
+      {
+        "name": "Le Pacha 1901",
+        "url": "https://www.lepacha.com/reservation",
+        "checkedOn": "2026-10-27",
+        "reason": "No street address on pages read and no current-dated content (\"Copyright ©2023\"); hotline 19982 only."
+      },
+      {
+        "name": "Four Seasons Hotel Cairo at Nile Plaza (dining)",
+        "url": "https://www.fourseasons.com/caironp/dining/",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 403 on automated fetch."
+      },
+      {
+        "name": "Four Seasons Hotel Cairo at The First Residence (dining)",
+        "url": "https://www.fourseasons.com/cairofs/dining/",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 403 on automated fetch."
+      },
+      {
+        "name": "Fairmont Nile City (L'Uliveto, Gingko, Bab El Nil)",
+        "url": "https://www.fairmont.com/nile-city-cairo/dining/",
+        "checkedOn": "2026-10-27",
+        "reason": "No street address (only \"Located along Corniche El Nil\") and no hours for most outlets; Saigon \"temporarily closed for a redesign\". A first read reported AI-addressed text that a second read did not reproduce."
+      },
+      {
+        "name": "Torii Japanese Restaurant (Cairo Marriott)",
+        "url": "https://www.marriott.com/en-us/hotels/caieg-cairo-marriott-hotel-and-omar-khayyam-casino/dining/",
+        "checkedOn": "2026-10-27",
+        "reason": "Official page says \"Torii is closed.\""
+      },
+      {
+        "name": "The Nile Ritz-Carlton, Cairo (dining)",
+        "url": "https://www.ritzcarlton.com/en/hotels/caizr-the-nile-ritz-carlton-cairo/dining/",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 404 on the URLs tried, then rate-limited (Retry-After 28800)."
+      },
+      {
+        "name": "Sofitel Cairo Nile El Gezirah",
+        "url": "https://all.accor.com/hotel/5293/index.en.shtml",
+        "checkedOn": "2026-10-27",
+        "reason": "Official Accor page not found (404); search returned only booking aggregators."
+      },
+      {
+        "name": "Steigenberger Hotel El Tahrir",
+        "url": "https://www.steigenberger.com/en/hotels/all-hotels/egypt/cairo/steigenberger-hotel-el-tahrir",
+        "checkedOn": "2026-10-27",
+        "reason": "Hotel URL redirects to a generic loyalty-programme page; no hotel content readable."
+      },
+      {
+        "name": "Naguib Mahfouz Cafe",
+        "checkedOn": "2026-10-27",
+        "reason": "No official operator page found; only third-party listings."
+      },
+      {
+        "name": "The Espresso Lab",
+        "url": "https://theespressolab.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 403 on automated fetch."
+      },
+      {
+        "name": "Pyramids at opening",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coptic Cairo walk",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset felucca ride",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Koshary lunch",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Nile dinner",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A Zamalek cafe",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Zamalek",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Giza",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Downtown",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Downtown walk",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Zamalek",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Giza",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Giza",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Pyramids of Giza",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Downtown",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Pyramids at opening",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Zamalek",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Egyptian Museum",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Downtown evening",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Zamalek",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Giza",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Downtown",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Pyramids of Giza",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Zamalek",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Giza",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Downtown",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Pyramids of Giza",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Downtown cafe or market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Coptic Cairo walk",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Giza",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Giza",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Downtown",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Downtown",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Zamalek bakery or market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Pyramids of Giza",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Giza",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Downtown",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Egyptian Museum",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Giza",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Downtown",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Zamalek",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Giza",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Downtown",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Downtown",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Zamalek",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Khan el-Khalili",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Downtown",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Zamalek morning market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Pyramids of Giza",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Giza",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Downtown",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Zamalek",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Giza",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Pyramids of Giza": {
+        "url": "https://www.egymonuments.com/details/Pyramids",
+        "sourceType": "official public operator (Ministry of Tourism and Antiquities ticket portal)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Live ticketing with a \"Book Now\" button; prices listed (other nationalities \"adult 700\", student 350 EGP). Advises you to \"arrive at least one hour prior to the site's closing time.\""
+      },
+      "National Museum of Egyptian Civilization": {
+        "url": "https://www.nmec.gov.eg/",
+        "sourceType": "operator's own site (official public museum)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Tickets sold online via egymonuments.com/nmec; Royal Mummies Gallery listed; \"Last ticket sold at 04:00 pm\". Footer \"© 2026 NMEC\"."
+      },
+      "Al-Moez Street": {
+        "url": "https://www.egymonuments.com/details/Elmoezstreet",
+        "sourceType": "official public operator (Ministry of Tourism and Antiquities)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Live ticketing with \"Book Now\"; other nationality adult EGP 220, student 110."
+      },
+      "Saqqara": {
+        "url": "https://www.egymonuments.com/details/SaqqaraMonuments",
+        "sourceType": "official public operator (Ministry of Tourism and Antiquities)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Live ticketing; other nationality adult EGP 600, student 300; asks you to \"arrive at least one hour prior to the site closing time.\""
+      },
+      "139 Pavilion (Marriott Mena House)": {
+        "url": "https://www.marriott.com/en-us/hotels/caimn-marriott-mena-house-cairo/dining/",
+        "sourceType": "operator's own site (Marriott International)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Listed as open with buffet breakfast, à la carte lunch and dinner with live music; \"Saturday Brunch by the Pyramids\" every Saturday 1-4 PM. Footer \"© 1996 – 2026\"."
+      },
+      "Alfredo (Marriott Mena House)": {
+        "url": "https://www.marriott.com/en-us/hotels/caimn-marriott-mena-house-cairo/dining/",
+        "sourceType": "operator's own site (Marriott International)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Listed on the hotel's current dining page as \"Alfredo Italian Restaurant\" with daily hours."
+      },
+      "Khufu's": {
+        "url": "https://www.khufus.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Online reservations for \"Breakfast & Lunch\" and \"Dinner - Bistro\"; \"Reserve Your Table\". Footer \"© 2026 KHUFU'S\"."
+      },
+      "The Rooftop (Kempinski Nile Hotel)": {
+        "url": "https://www.kempinski.com/en/nile-hotel/restaurants-bars/the-rooftop",
+        "sourceType": "operator's own site (Kempinski Hotels)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Bookable via \"BOOK NOW\"; dress code \"Smart casual\". Footer \"© 2026 Kempinski Hotels\"."
+      },
+      "The Jazz Bar (Kempinski Nile Hotel)": {
+        "url": "https://www.kempinski.com/en/nile-hotel/restaurants-bars/the-jazz-bar",
+        "sourceType": "operator's own site (Kempinski Hotels)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Bookable; \"Jazz Morning Lounge: Daily | 8:00 am – 5:00 pm\"; dress code \"Smart casual\"."
+      },
+      "Osmanly (Kempinski Nile Hotel)": {
+        "url": "https://www.kempinski.com/en/nile-hotel/restaurants-bars/osmanly-restaurant",
+        "sourceType": "operator's own site (Kempinski Hotels)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "\"RESERVE A TABLE\" online booking; Turkish cuisine; private dining available; dress code \"Smart casual\"."
+      },
+      "Chocolate Lounge (Kempinski Nile Hotel)": {
+        "url": "https://www.kempinski.com/en/nile-hotel/restaurants-bars/chocolate-lounge",
+        "sourceType": "operator's own site (Kempinski Hotels)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Light bites, bookable via \"BOOK NOW\"; dress code \"Smart casual\"."
+      },
+      "La Zisa (St. Regis Cairo)": {
+        "url": "https://www.marriott.com/en-us/hotels/caixr-the-st-regis-cairo/dining/",
+        "sourceType": "operator's own site (Marriott International)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Italian restaurant on the hotel's current dining page with daily service periods; adjacent Il Café Bar \"open 24 hours\"."
+      },
+      "J&G Steakhouse Cairo (St. Regis Cairo)": {
+        "url": "https://www.marriott.com/en-us/hotels/caixr-the-st-regis-cairo/dining/",
+        "sourceType": "operator's own site (Marriott International)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "American steakhouse listed with daily evening hours on the current dining page."
+      },
+      "Sirocco (St. Regis Cairo)": {
+        "url": "https://www.marriott.com/en-us/hotels/caixr-the-st-regis-cairo/dining/",
+        "sourceType": "operator's own site (Marriott International)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Poolside Mediterranean restaurant listed with daily hours."
+      },
+      "The St. Regis Bar & The Water Garden": {
+        "url": "https://www.marriott.com/en-us/hotels/caixr-the-st-regis-cairo/dining/",
+        "sourceType": "operator's own site (Marriott International)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Bar listed with daily hours on the hotel's current dining page."
+      },
+      "Garden Promenade Cafe (Cairo Marriott)": {
+        "url": "https://www.marriott.com/en-us/hotels/caieg-cairo-marriott-hotel-and-omar-khayyam-casino/dining/",
+        "sourceType": "operator's own site (Marriott International)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Listed with daily hours on the current dining page (which also flags closures, e.g. \"Torii is closed\")."
+      },
+      "The Bakery (Cairo Marriott)": {
+        "url": "https://www.marriott.com/en-us/hotels/caieg-cairo-marriott-hotel-and-omar-khayyam-casino/dining/",
+        "sourceType": "operator's own site (Marriott International)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Listed on the current dining page as open around the clock."
+      },
+      "Omar Khayyam Restaurant (Cairo Marriott)": {
+        "url": "https://www.marriott.com/en-us/hotels/caieg-cairo-marriott-hotel-and-omar-khayyam-casino/dining/",
+        "sourceType": "operator's own site (Marriott International)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Breakfast hours listed on the current dining page."
+      },
+      "Saraya Gallery (Cairo Marriott)": {
+        "url": "https://www.marriott.com/en-us/hotels/caieg-cairo-marriott-hotel-and-omar-khayyam-casino/dining/",
+        "sourceType": "operator's own site (Marriott International)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Listed with daily hours on the current dining page."
+      },
+      "Harry's Pub (Cairo Marriott)": {
+        "url": "https://www.marriott.com/en-us/hotels/caieg-cairo-marriott-hotel-and-omar-khayyam-casino/dining/",
+        "sourceType": "operator's own site (Marriott International)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Listed with daily evening hours on the current dining page."
+      },
+      "La Patisserie (JW Marriott Hotel Cairo)": {
+        "url": "https://www.marriott.com/en-us/hotels/caijw-jw-marriott-hotel-cairo/dining/",
+        "sourceType": "operator's own site (Marriott International)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Coffee house listed with daily hours; the same page cites 2026 Tripadvisor Travelers' Choice awards for sister outlets, showing it is current."
+      }
+    }
+  },
   "Lyon, France": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-25",

@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 56.
-- Classifier-passed (published, not fully documented in that format): 136.
+- Source-verified (complete dated evidence format): 57.
+- Classifier-passed (published, not fully documented in that format): 135.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -106,7 +106,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Busan, South Korea | busan | classifier-passed | not-reviewed | 0 | 11 | 15 | 5 | None |
 | Byron Bay, Australia | byron-bay | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Cairns, Australia | cairns | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
-| Cairo, Egypt | cairo | classifier-passed | not-reviewed | 0 | 7 | 15 | 5 | None |
+| Cairo, Egypt | cairo | source-verified | source-checked | 21 | 45 | 15 | 15 | None |
 | Calgary, Canada | calgary | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Cali, Colombia | cali | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Cambridge, United Kingdom | cambridge | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
