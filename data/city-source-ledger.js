@@ -5,6 +5,622 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Nara, Japan": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-28",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability, and temples and shrines note that hours can change for ceremonies. Kofuku-ji and Horyu-ji (certificate errors), the Nara National Museum (HTTP 403), the Nara Prefectural Museum of Art (expired certificate), Kamameshi Shizuka (DNS failure) and the Irie Taikichi photography museum (no readable content) could not be read, so they are left out; a failed fetch is not evidence of closure. Hours were not published on the pages read for Toshodai-ji, Gango-ji, Nara Hotel Mikasa and Nara Hotel The Bar, and closing days were not stated for Rokumei Coffee's Nara shop or the Kasuga Taisha Treasure Hall. JW Marriott Hotel Nara hours come from an undated dining page, and individual venue pages had been removed. Isuien Garden's guide page has no dated notices. The Nara Deer Preservation Foundation's site lists two unrelated blog entries about link building, which may indicate spam on that site. Shin-Yakushiji, Naramachi Koshi-no-ie and several food shops published addresses but no 2026 content.",
+    "sourceUrls": [
+      "docs/content-research/nara-2026-10-28.md",
+      "docs/content-research/nara-2026-10-28.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Kofuku-ji",
+        "url": "https://www.kohfukuji.com/english/",
+        "checkedOn": "2026-10-28",
+        "reason": "fetch failed: certificate error (unable to verify the first certificate)"
+      },
+      {
+        "name": "Nara National Museum",
+        "url": "https://www.narahaku.go.jp/english/",
+        "checkedOn": "2026-10-28",
+        "reason": "fetch refused: HTTP 403 Forbidden on English and Japanese sites"
+      },
+      {
+        "name": "Horyu-ji",
+        "url": "https://www.horyuji.or.jp/",
+        "checkedOn": "2026-10-28",
+        "reason": "fetch failed: certificate error (unable to verify the first certificate)"
+      },
+      {
+        "name": "Nara Prefectural Museum of Art",
+        "url": "https://www.pref.nara.jp/n044/11842.htm",
+        "checkedOn": "2026-10-28",
+        "reason": "fetch failed: certificate has expired"
+      },
+      {
+        "name": "Irie Taikichi Memorial Museum of Photography",
+        "url": "https://naracmp.jp/",
+        "checkedOn": "2026-10-28",
+        "reason": "official page returned only a title; address, hours and exhibitions not readable"
+      },
+      {
+        "name": "Shin-Yakushiji",
+        "url": "https://www.shinyakushiji.or.jp/",
+        "checkedOn": "2026-10-28",
+        "reason": "address published but news items undated; latest closure notice refers to Monday 10 March (2025), no 2026 operating evidence"
+      },
+      {
+        "name": "Naramachi Koshi-no-ie",
+        "url": "https://www.city.nara.lg.jp/site/shisetsu/6242.html",
+        "checkedOn": "2026-10-28",
+        "reason": "city page last updated 1 March 2025; no 2026 operating evidence"
+      },
+      {
+        "name": "Yoshikien Garden",
+        "url": "https://www.pref.nara.lg.jp/site/park/2583.html",
+        "checkedOn": "2026-10-28",
+        "reason": "prefectural page (updated 2026-02-27) gives no hours; only address shown belongs to the Neiraku Museum"
+      },
+      {
+        "name": "Wakakusayama",
+        "url": "https://www.pref.nara.lg.jp/site/park/2585.html",
+        "checkedOn": "2026-10-28",
+        "reason": "prefectural page gives season and fees but no exact address, only gate directions and the park office address"
+      },
+      {
+        "name": "Kasuga Ninaijaya",
+        "url": "https://kasugataisha.or.jp/?p=5389",
+        "checkedOn": "2026-10-28",
+        "reason": "official page gives hours but no exact address, only 'about a 5-minute walk' from a bus stop"
+      },
+      {
+        "name": "Nakatanidou",
+        "url": "https://www.nakatanidou.jp/",
+        "checkedOn": "2026-10-28",
+        "reason": "address published but latest notices dated 2024; no 2026 operating evidence"
+      },
+      {
+        "name": "Chateau d'Or (Honten)",
+        "url": "https://www.chateau-dor-nara.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "address and hours published but latest posts dated 2022; no 2026 operating evidence"
+      },
+      {
+        "name": "and Bakery",
+        "url": "https://and-bakery.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "address and hours published but no dated content; no 2026 operating evidence"
+      },
+      {
+        "name": "Nakagawa Masashichi Shoten (Nara main store)",
+        "url": "https://www.nakagawa-masashichi.jp/staffblog/store/s165002/",
+        "checkedOn": "2026-10-28",
+        "reason": "address and hours published but store news empty; no 2026 operating evidence"
+      },
+      {
+        "name": "Kamameshi Shizuka",
+        "url": "https://www.kamameshi-shizuka.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "fetch failed: DNS lookup failed (ENOTFOUND)"
+      },
+      {
+        "name": "Sarutahiko Coffee (Nara Shikasarukitsune Building)",
+        "checkedOn": "2026-10-28",
+        "reason": "no official store page found; only third-party listings"
+      },
+      {
+        "name": "Todai-ji",
+        "checkedOn": "2026-10-28",
+        "reason": "input duplicate entries ('Family-friendly Todai-ji', 'Early visit to Todai-ji', 'Private guide for Todai-ji') are generic; the place itself is confirmed"
+      },
+      {
+        "name": "Early temple walk",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Naramachi craft shops",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Kasugayama forest path",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place (no operator page found)"
+      },
+      {
+        "name": "a simple Japanese set lunch",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Nara market or cafe",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local dinner in Nara Park",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Naramachi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Mount Kasuga",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Nara Park",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Nara Park walk",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Naramachi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Mount Kasuga",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Mount Kasuga",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Nara Park",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Early temple walk",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Naramachi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Nara Park",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Nara Park evening",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Naramachi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Mount Kasuga",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Nara Park",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Naramachi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Mount Kasuga",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Nara Park",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Nara Park cafe or market",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Naramachi craft shops",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Mount Kasuga",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Mount Kasuga",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Nara Park",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Nara Park",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Naramachi bakery or market",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Todai-ji",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Mount Kasuga",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Nara Park",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Nara Park",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Mount Kasuga",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Nara Park",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Naramachi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Mount Kasuga",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Nara Park",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Nara Park",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Naramachi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Kasuga Taisha",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Nara Park",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Naramachi morning market",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Todai-ji",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Mount Kasuga",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Nara Park",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Naramachi",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Mount Kasuga",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Todai-ji": {
+        "url": "https://www.todaiji.or.jp/en/?p=8117",
+        "sourceType": "operator's own site (Todai-ji)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "English news list carries a notice dated 27 October 2026; the Opening Hours / Admission Fees page lists current hours and an adult fee of \"¥800\"."
+      },
+      "Todai-ji Museum": {
+        "url": "https://www.todaiji.or.jp/en/?p=8117",
+        "sourceType": "operator's own site (Todai-ji)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Listed on Todai-ji's current hours and fees page, with adult admission \"¥800\"; temple site has October 2026 notices."
+      },
+      "Kasuga Taisha": {
+        "url": "https://www.kasugataisha.or.jp/",
+        "sourceType": "operator's own site (Kasuga Taisha)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Notices dated 令和8年 (2026), most recently 27 October 2026; basic-information page lists special inner-sanctuary worship \"9：00～16：00\" at \"700円\"."
+      },
+      "Kasuga Taisha Treasure Hall": {
+        "url": "https://www.kasugataisha.or.jp/about/basic/",
+        "sourceType": "operator's own site (Kasuga Taisha)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Shrine's basic-information page lists the 国宝殿 with hours; e-tickets are sold via a link on the English page; Yakushi-ji's 20 September 2026 notice concerns displaying its treasures at the Treasure Hall."
+      },
+      "Kasuga Taisha Manyo Botanical Garden": {
+        "url": "https://www.kasugataisha.or.jp/about/basic/",
+        "sourceType": "operator's own site (Kasuga Taisha)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Shrine posted \"萬葉植物園 開花情報（令和8年10月19日現在）\" on 19 October 2026."
+      },
+      "Nara Park": {
+        "url": "https://www.pref.nara.lg.jp/site/park/index.html",
+        "sourceType": "official public operator (Nara Prefecture, Nara Park Office)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Park site carries a notice dated \"2026年10月16日\"; deer guidance page updated \"2026年2月27日\" says feeding is prohibited \"（鹿せんべいは例外です）\"."
+      },
+      "Rokuen (Nara Deer Preservation Foundation)": {
+        "url": "https://naradeer.com/event/rokuen.html",
+        "sourceType": "operator's own site (Nara Deer Preservation Foundation)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Foundation homepage lists notices dated through 16 October 2026; Rokuen page says entry is \"無料\" with a suggested \"100円\" contribution and \"通常、ご予約は必要ありません。\""
+      },
+      "Isuien Garden": {
+        "url": "https://isuien.or.jp/access",
+        "sourceType": "operator's own site (Isuien / Neiraku Museum)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Current guide page lists fees (general ¥1,200, including the Neiraku Museum) and maintenance periods; Nara Prefecture's park page listing the garden was updated \"2026年2月27日\"."
+      },
+      "Heijo Palace Site": {
+        "url": "https://www.heijo-park.jp/information/facility/",
+        "sourceType": "official public operator (Heijo Palace Site Historical Park)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Homepage notices dated 27 October 2026 and an events list running through December 2026."
+      },
+      "Yakushi-ji": {
+        "url": "https://yakushiji.or.jp/forvisitors.html",
+        "sourceType": "operator's own site (Yakushi-ji)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Homepage notices dated 2026, including \"令和8年 薬師寺 秋の特別公開について\" (10 September 2026) and a 22 October 2026 concert notice."
+      },
+      "Toshodai-ji": {
+        "url": "https://toshodaiji.jp/",
+        "sourceType": "operator's own site (Toshodai-ji)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Notice dated 2026.10.12 on \"釈迦念仏会の法要と礼堂内陣の特別拝観のご案内\"."
+      },
+      "Gango-ji": {
+        "url": "https://gangoji-tera.or.jp/",
+        "sourceType": "operator's own site (Gango-ji)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "News list includes \"令和８年秋季特別展\" (2026.09.09) and \"秋夜の奈良旅2026のご案内\" (2026.10.13)."
+      },
+      "Akordu": {
+        "url": "https://www.akordu.com/access",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Homepage news dated 11 August 2026 (collaboration dinner) and 7 July 2026; online booking via TableCheck."
+      },
+      "Nara Hotel Mikasa": {
+        "url": "https://jrwest-hotels.jp/narahotel/restaurant/",
+        "sourceType": "operator's own site (Nara Hotel, JR West Hotels)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Hotel site notices dated through 27 October 2026; Mikasa listed for breakfast, lunch and dinner with TableCheck booking and reservations line \"9:00～17:00\"."
+      },
+      "Nara Hotel The Bar": {
+        "url": "https://jrwest-hotels.jp/narahotel/restaurant/",
+        "sourceType": "operator's own site (Nara Hotel, JR West Hotels)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "\"バー「ザ・バー」\" listed on the current hotel site, which has notices dated October 2026."
+      },
+      "Harushika Brewery Shop": {
+        "url": "https://www.harushika.com/visit-brewery/",
+        "sourceType": "operator's own site (Harushika / Imanishi Seibei Shoten)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Homepage news dated 2026.10.28 (US sake competition award) and 2026.10.23; tasting \"お一人様７００円（税込）で５種類\"."
+      },
+      "Izasa Chaya (Todaiji Monzen Yumekaze Hiroba)": {
+        "url": "https://www.izasa.co.jp/shop/todaiji-new/",
+        "sourceType": "operator's own site (Izasa Nakatani Honpo)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Company homepage notices dated through 19 October 2026; branch page lists 2F restaurant hours and kakinoha sushi on sale at the 1F shop."
+      },
+      "Hiraso (Nara shop)": {
+        "url": "https://www.hiraso.jp/shop/",
+        "sourceType": "operator's own site (Hiraso)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Homepage notices dated 6 and 11 October 2026; shop page lists eat-in hours for the main building and annex."
+      },
+      "Shika no Fune Kamado": {
+        "url": "https://www.kuruminoki.co.jp/shikanofune/kamado/",
+        "sourceType": "operator's own site (Kuruminoki Ltd.)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Holiday notices dated 2026/10/01 and 2026/10/25; lunch sets at ¥2,200, reservations not accepted."
+      },
+      "Shika no Fune Saezuri": {
+        "url": "https://www.kuruminoki.co.jp/shikanofune/saezuri/",
+        "sourceType": "operator's own site (Kuruminoki Ltd.)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Dated 2026 notices including takeout (2026/08/01) and a breakfast event announcement (2026/10/05)."
+      },
+      "Rokumei Coffee (Nara shop)": {
+        "url": "https://rokumei.coffee/f/shop-nara",
+        "sourceType": "operator's own site (Rokumei Coffee)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Company news dated 2026 (e.g. 2026/7/29, 2026/6/26); shop page lists drip coffee at ¥580 and takeaway croissants."
+      },
+      "Rokumei Bakes": {
+        "url": "https://rokumei.coffee/f/shop-rokumeibakes",
+        "sourceType": "operator's own site (Rokumei Coffee)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Shop page lists a ¥350 croissant and a weekday deli brunch plate (¥1,500); company news dated 2026."
+      },
+      "Flying Stag (JW Marriott Hotel Nara)": {
+        "url": "https://www.marriott.com/en-us/hotels/osajw-jw-marriott-hotel-nara/dining/",
+        "sourceType": "operator's own site (Marriott)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Hotel dining page lists the lounge bar with TableCheck booking; page is undated (footer © 2026)."
+      },
+      "Silk Road Dining (JW Marriott Hotel Nara)": {
+        "url": "https://www.marriott.com/en-us/hotels/osajw-jw-marriott-hotel-nara/dining/",
+        "sourceType": "operator's own site (Marriott)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Hotel dining page lists the all-day restaurant with TableCheck booking; page is undated (footer © 2026)."
+      },
+      "Azekura (JW Marriott Hotel Nara)": {
+        "url": "https://www.marriott.com/en-us/hotels/osajw-jw-marriott-hotel-nara/dining/",
+        "sourceType": "operator's own site (Marriott)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Hotel dining page lists teppanyaki, sushi and kaiseki with \"Reservations required for Sushi and Teppanyaki\"; page is undated (footer © 2026)."
+      }
+    }
+  },
   "Fukuoka, Japan": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-28",

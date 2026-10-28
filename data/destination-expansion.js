@@ -8501,4 +8501,110 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 27 distinct recommendations in this guide were checked against their operators' own websites on October 28, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Nara, Japan: source review of 2026-10-28 (docs/content-research/nara-2026-10-28.md).
+  {
+    const cityKey = "Nara, Japan";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Todai-ji","Kasuga Taisha","Yakushi-ji","Heijo Palace Site"],
+      bestFirstTimers: ["Todai-ji","Kasuga Taisha","Nara Park","Isuien Garden"],
+      bestRestaurants: ["Akordu","Hiraso (Nara shop)","Izasa Chaya (Todaiji Monzen Yumekaze Hiroba)","Azekura (JW Marriott Hotel Nara)"],
+      bestBudget: ["Nara Park","Rokuen (Nara Deer Preservation Foundation)","Heijo Palace Site","Shika no Fune Kamado"],
+      bestLuxury: ["Akordu","Nara Hotel Mikasa","Azekura (JW Marriott Hotel Nara)","Nara Hotel The Bar"],
+      bestCouples: ["Isuien Garden","Kasuga Taisha Manyo Botanical Garden","Nara Hotel The Bar","Akordu"],
+      bestKids: ["Rokuen (Nara Deer Preservation Foundation)","Nara Park","Todai-ji","Heijo Palace Site"],
+      bestSolo: ["Gango-ji","Toshodai-ji","Todai-ji Museum","Shika no Fune Saezuri"],
+      bestUnique: ["Harushika Brewery Shop","Gango-ji","Rokuen (Nara Deer Preservation Foundation)","Kasuga Taisha Treasure Hall"],
+      bestBreakfast: ["Silk Road Dining (JW Marriott Hotel Nara)","Nara Hotel Mikasa","Rokumei Bakes","Rokumei Coffee (Nara shop)"],
+      bestLunch: ["Shika no Fune Kamado","Izasa Chaya (Todaiji Monzen Yumekaze Hiroba)","Hiraso (Nara shop)","Akordu"],
+      bestDinner: ["Akordu","Azekura (JW Marriott Hotel Nara)","Hiraso (Nara shop)","Silk Road Dining (JW Marriott Hotel Nara)"],
+      bestCocktails: ["Flying Stag (JW Marriott Hotel Nara)","Nara Hotel The Bar","Harushika Brewery Shop"],
+      bestBakeries: ["Rokumei Bakes","Rokumei Coffee (Nara shop)"],
+      bestCoffee: ["Rokumei Coffee (Nara shop)","Rokumei Bakes","Shika no Fune Saezuri","Flying Stag (JW Marriott Hotel Nara)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Todai-ji": "Todai-ji 406-1 Zoshicho Nara",
+      "Kasuga Taisha": "Kasuga Taisha 160 Kasuganocho Nara",
+      "Yakushi-ji": "Yakushi-ji 457 Nishinokyocho Nara",
+      "Heijo Palace Site": "Heijo Palace Site 3-5-1 Nijooji-minami Nara",
+      "Nara Park": "Nara Park Noboriojicho Nara",
+      "Isuien Garden": "Isuien Garden 74 Suimoncho Nara",
+      "Akordu": "Akordu 70-1-3-1 Suimoncho Nara",
+      "Hiraso (Nara shop)": "Hiraso 30-1 Imamikadocho Nara",
+      "Izasa Chaya (Todaiji Monzen Yumekaze Hiroba)": "Izasa Chaya Yumekaze Hiroba 16 Kasuganocho Nara",
+      "Azekura (JW Marriott Hotel Nara)": "Azekura JW Marriott Hotel Nara 1-1-1 Sanjooji Nara",
+      "Rokuen (Nara Deer Preservation Foundation)": "Rokuen Nara Deer Preservation Foundation 160-1 Kasuganocho Nara",
+      "Shika no Fune Kamado": "Shika no Fune Kamado 11 Inouecho Nara",
+      "Nara Hotel Mikasa": "Nara Hotel Mikasa 1096 Takabatakecho Nara",
+      "Nara Hotel The Bar": "Nara Hotel The Bar 1096 Takabatakecho Nara",
+      "Kasuga Taisha Manyo Botanical Garden": "Kasuga Taisha Manyo Botanical Garden 160 Kasuganocho Nara",
+      "Gango-ji": "Gango-ji 11 Chuincho Nara",
+      "Toshodai-ji": "Toshodai-ji 13-46 Gojocho Nara",
+      "Todai-ji Museum": "Todai-ji Museum Zoshicho Nara",
+      "Shika no Fune Saezuri": "Shika no Fune Saezuri 11 Inouecho Nara",
+      "Harushika Brewery Shop": "Harushika 24-1 Fukuchiincho Nara",
+      "Kasuga Taisha Treasure Hall": "Kasuga Taisha Treasure Hall 160 Kasuganocho Nara",
+      "Silk Road Dining (JW Marriott Hotel Nara)": "Silk Road Dining JW Marriott Hotel Nara 1-1-1 Sanjooji Nara",
+      "Rokumei Bakes": "Rokumei Bakes 4-1-20 Sanjooji Nara",
+      "Rokumei Coffee (Nara shop)": "Rokumei Coffee 31 Nishimikadocho Nara",
+      "Flying Stag (JW Marriott Hotel Nara)": "Flying Stag JW Marriott Hotel Nara 1-1-1 Sanjooji Nara"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Nara" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Temples, shrine gardens, the deer park and the Heijo Palace Site, with breakfast spots, lunches, dinners, bars and a bakery checked against their own websites.";
+    cityGuide.highlights = ["Todai-ji","Kasuga Taisha","Isuien Garden","Yakushi-ji"];
+    cityGuide.tip = "Plan around fixed closures: Isuien Garden and the Harushika Brewery Shop close on Tuesdays, Shika no Fune Kamado and Rokumei Bakes on Wednesdays, and Akordu and Hiraso's Nara shop on Mondays.";
+    data.destinationFacts[cityKey] = "Plan around fixed closures: Isuien Garden and the Harushika Brewery Shop close on Tuesdays, Shika no Fune Kamado and Rokumei Bakes on Wednesdays, and Akordu and Hiraso's Nara shop on Mondays.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Temples, shrine gardens, the deer park and the Heijo Palace Site, with breakfast spots, lunches, dinners, bars and a bakery checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mon, Tue, Wed",
+        "copy": "Isuien Garden and the Harushika Brewery Shop close on Tuesdays, Shika no Fune Kamado and Rokumei Bakes on Wednesdays, and Akordu and Hiraso's Nara shop on Mondays. Shika no Fune Saezuri closes on both Tuesdays and Wednesdays."
+      },
+      {
+        "label": "Tickets",
+        "value": "¥800 per Todai-ji hall",
+        "copy": "Todai-ji charges adults ¥800 each for the Great Buddha Hall, Hokke-dō, Kaidan-dō and the Todai-ji Museum. Isuien Garden's ¥1,200 general ticket includes the Neiraku Museum, and Yakushi-ji charges adults ¥1,000."
+      },
+      {
+        "label": "Walk-in",
+        "value": "No bookings at some spots",
+        "copy": "Shika no Fune Kamado takes no reservations and stops serving lunch when the rice runs out, around 15:00, and the Nara Hotel tea lounge does not accept bookings. Rokuen normally needs no reservation, while Azekura requires one for sushi and teppanyaki."
+      },
+      {
+        "label": "Rules",
+        "value": "Senbei only for deer",
+        "copy": "Nara Prefecture prohibits feeding the deer anything except shika senbei, and Nara Park has no bins, so carry your rubbish out. Deer can butt, bite or kick, so keep children close."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Start at Todai-ji and Kasuga Taisha early, then check each restaurant's closing day before you build the afternoon around it.",
+      intro: [
+        "Nara's headline sights cluster around Nara Park. At Todai-ji, the Great Buddha Hall opens 7:30–17:30 from April to October and 8:00–17:00 from November to March, while Hokke-dō and the Senju-dō at the Kaidan-in keep 8:30–16:00. Adults pay ¥800 each for the halls and the Todai-ji Museum. Kasuga Taisha's gates open 6:30–17:30, and special worship at the main sanctuary runs 9:00–16:00 for ¥700. The shrine's Manyo Botanical Garden opens 9:00–16:30; it closes on Tuesdays from June to March and opens daily in April and May.",
+        "The deer are wild, and the prefecture's rules are clear: feeding them is prohibited except for shika senbei, the park has no bins, and deer can butt, bite or kick, especially mothers in spring and males in autumn. The Nara Deer Preservation Foundation opens its Rokuen enclosure 10:00–16:00 with free entry, a suggested ¥100 contribution and normally no booking. For a quieter hour, Isuien Garden opens 9:30–16:30, closes on Tuesdays, and its ¥1,200 general ticket includes the Neiraku Museum.",
+        "West of the centre, Yakushi-ji welcomes you 9:00–17:00, with tickets sold until 16:30 and adult entry at ¥1,000. At the Heijo Palace Site, the Heijo-kyu Izanai-kan visitor hall opens 9:00–17:00 and closes on the second Monday of February, April, July and November, while Suzakumon gate opens 9:00–16:30 and closes on Mondays. Toshodai-ji and Gango-ji have both posted autumn 2026 notices on their own sites, so check those pages for special viewings before you go.",
+        "For food, Shika no Fune Kamado in Naramachi serves ¥2,200 lunch sets from 11:00 until the rice runs out, around 15:00, takes no reservations and closes on Wednesdays. Rokumei Coffee's Nara shop opens 8:00–18:00, and Rokumei Bakes sells ¥350 croissants from 8:00 but closes on Wednesdays. Akordu serves lunch and dinner, takes bookings through TableCheck and closes on Mondays. Harushika's brewery shop pours five sakes for ¥700 until 16:30 last order and closes on Tuesdays."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Start at Todai-ji, whose Great Buddha Hall opens at 7:30 from April to October and 8:00 from November to March, then walk on to Kasuga Taisha, open 6:30–17:30."
+        ],
+        [
+          "A slower morning",
+          "Have a croissant at Rokumei Bakes from 8:00 on any day but Wednesday, then visit Isuien Garden from 9:30 on any day but Tuesday."
+        ],
+        [
+          "Before booking",
+          "Akordu takes reservations through TableCheck and closes on Mondays, as does Hiraso's Nara shop, while Shika no Fune Kamado takes no reservations at all."
+        ]
+      ],
+      trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 28, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

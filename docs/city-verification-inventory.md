@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 82.
-- Classifier-passed (published, not fully documented in that format): 110.
+- Source-verified (complete dated evidence format): 83.
+- Classifier-passed (published, not fully documented in that format): 109.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -331,7 +331,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Nantes, France | nantes | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Napa Valley, United States | napa-valley | held-back | ready-for-content-draft | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Naples, Italy | naples | source-verified | source-checked | 25 | 40 | 15 | 15 | None |
-| Nara, Japan | nara | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Nara, Japan | nara | source-verified | source-checked | 25 | 41 | 15 | 15 | None |
 | Nashville, United States | nashville | held-back | ready-for-content-draft | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Naxos, Greece | naxos | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Nazare, Portugal | nazare | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |

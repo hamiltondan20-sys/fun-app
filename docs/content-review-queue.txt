@@ -1,0 +1,53 @@
+# City guides waiting for a source review, in priority order (docs/content-review-brief.md).
+# scripts/make-review-inputs.mjs --next=N takes the first N not yet in data/city-source-ledger.js.
+# Regions and single landmarks (Alaska, Grand Canyon, Taj Mahal...) need a different brief and are not listed.
+Nara, Japan
+Lima, Peru
+Santiago, Chile
+Cartagena, Colombia
+Oaxaca, Mexico
+Honolulu, United States
+Cancun, Mexico
+Phuket, Thailand
+Lucerne, Switzerland
+Valparaiso, Chile
+Thessaloniki, Greece
+Coimbra, Portugal
+Funchal, Portugal
+Abu Dhabi, United Arab Emirates
+Amman, Jordan
+Fes, Morocco
+Chengdu, China
+Hangzhou, China
+Xi'an, China
+Da Nang, Vietnam
+Manila, Philippines
+Queenstown, New Zealand
+Nairobi, Kenya
+Johannesburg, South Africa
+Udaipur, India
+Agra, India
+Luxor, Egypt
+Aswan, Egypt
+Casablanca, Morocco
+Chefchaouen, Morocco
+Hue, Vietnam
+Jakarta, Indonesia
+Yogyakarta, Indonesia
+Ubud, Indonesia
+Krabi, Thailand
+Ayutthaya, Thailand
+Gyeongju, South Korea
+Jeju, South Korea
+Cairns, Australia
+Rotorua, New Zealand
+Mombasa, Kenya
+Samarkand, Uzbekistan
+Isfahan, Iran
+Saint Petersburg, Russia
+Moscow, Russia
+Reykjavik, Iceland
+Killarney, Ireland
+Palermo, Italy
+Sharm El Sheikh, Egypt
+Orlando, United States
