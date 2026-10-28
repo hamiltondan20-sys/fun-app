@@ -5,6 +5,656 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Fukuoka, Japan": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-28",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability, and Japanese-language pages were read through automated extraction. Several sites could not be read: REC COFFEE branch pages returned HTTP 429, Grand Hyatt Fukuoka returned 403, Trandor had a certificate error, and Hakata Hanamidori, DACOMECCA and Ishimura Manseido did not resolve; IPPUDO, ShinShin and Nokonoshima Island Park returned nothing readable. The Kyushu National Museum was dropped only because no page read showed its street address, and Kushida Shrine because no official site was found. Hours were not published on the pages read for Ohori Park, Fukuoka Castle Ruins, Uminonakamichi Seaside Park and Yanagibashi Rengo Market (whose only dated item is from January 2026), and Marine World's closing days were not readable; the site also flags a temporary suspension of its dolphin and sea lion shows. manucoffee and Hakata Machiya Folk Museum hours come from undated shop-list and access pages, and Hotel Okura's Pastry Boutique page gives two different closing times (20:00 and 18:00).",
+    "sourceUrls": [
+      "docs/content-research/fukuoka-2026-10-28.md",
+      "docs/content-research/fukuoka-2026-10-28.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Kyushu National Museum",
+        "url": "https://www.kyuhaku.jp/",
+        "checkedOn": "2026-10-28",
+        "reason": "Current 2026 exhibitions read, but no official page read showed the museum's street address (access pages returned 404)."
+      },
+      {
+        "name": "Ichiran (Sohonten, Nakasu)",
+        "url": "https://ichiran.com/shop/kyushu/sohonten/",
+        "checkedOn": "2026-10-28",
+        "reason": "Address and 24-hour listing read, but no dated 2026 content or current notice on the official pages."
+      },
+      {
+        "name": "REC COFFEE",
+        "url": "https://rec-coffee.com/shop/",
+        "checkedOn": "2026-10-28",
+        "reason": "2026 news read, but branch pages returned HTTP 429 (rate-limited); no address readable."
+      },
+      {
+        "name": "Kushida Shrine",
+        "url": "https://www.kushidajinja.or.jp/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official shrine website not found; guessed domains did not resolve. Not used from third-party sources."
+      },
+      {
+        "name": "IPPUDO (Daimyo Honten)",
+        "url": "https://www.ippudo.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site returned only a page title; no store details readable."
+      },
+      {
+        "name": "Hakata ShinShin (Tenjin Honten)",
+        "url": "https://shin-shin.jp/",
+        "checkedOn": "2026-10-28",
+        "reason": "Fetch of presumed official site failed with no output."
+      },
+      {
+        "name": "Hakata Hanamidori",
+        "url": "https://www.hakata-hanamidori.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Domain did not resolve (DNS failure)."
+      },
+      {
+        "name": "The Ritz-Carlton, Fukuoka (Bay / Lobby Lounge)",
+        "url": "https://www.ritzcarlton.com/en/hotels/fukrz-the-ritz-carlton-fukuoka/dining/",
+        "checkedOn": "2026-10-28",
+        "reason": "Dining page read but contains no 2026-dated content; bar page returned 404."
+      },
+      {
+        "name": "Grand Hyatt Fukuoka",
+        "url": "https://www.hyatt.com/grand-hyatt/ja-JP/fukgh-grand-hyatt-fukuoka/dining",
+        "checkedOn": "2026-10-28",
+        "reason": "HTTP 403 (refuses automated reading)."
+      },
+      {
+        "name": "pain stock (Hakozaki)",
+        "url": "https://painstock.theshop.jp/about",
+        "checkedOn": "2026-10-28",
+        "reason": "Official shop site gives the address but no hours and no 2026-dated content."
+      },
+      {
+        "name": "DACOMECCA",
+        "url": "https://www.dacomecca.jp/",
+        "checkedOn": "2026-10-28",
+        "reason": "Domain did not resolve; no other official site found."
+      },
+      {
+        "name": "Meigetsudo (Hakata Torimon)",
+        "url": "https://www.meigetsudo.co.jp/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site shows company address only, no shop address or 2026-dated content."
+      },
+      {
+        "name": "Ishimura Manseido",
+        "url": "https://www.ishimuramanseido.co.jp/",
+        "checkedOn": "2026-10-28",
+        "reason": "Domain did not resolve (DNS failure)."
+      },
+      {
+        "name": "Trandor (JR Kyushu bakery)",
+        "url": "https://www.trandor.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Certificate error; not bypassed."
+      },
+      {
+        "name": "Nokonoshima Island Park",
+        "url": "https://nokonoshima.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site returned only a page title; nothing readable."
+      },
+      {
+        "name": "Fukuoka Anpanman Children's Museum",
+        "url": "https://www.anpanman-museum.net/fukuoka/",
+        "checkedOn": "2026-10-28",
+        "reason": "Guessed official URL returned 404; not confirmed."
+      },
+      {
+        "name": "Shin-Miura (mizutaki), Motsunabe Yamanaka, Ganso Nagahamaya, Amam Dacotan",
+        "checkedOn": "2026-10-28",
+        "reason": "No official website found by search; only review sites and media, which cannot be used."
+      },
+      {
+        "name": "Fuk Coffee",
+        "url": "https://fukcoffee.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Domain redirects to a domain-sale page; no official site."
+      },
+      {
+        "name": "Ohori Park morning",
+        "checkedOn": "2026-10-28",
+        "reason": "Variant of Ohori Park; covered by the confirmed entry."
+      },
+      {
+        "name": "Dazaifu half-day",
+        "checkedOn": "2026-10-28",
+        "reason": "Variant of Dazaifu Tenmangu; covered by the confirmed entry."
+      },
+      {
+        "name": "Nakasu evening stalls",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place (no single yatai named)"
+      },
+      {
+        "name": "Hakata ramen and yatai food stalls",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Fukuoka market or cafe",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local dinner in Hakata",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Tenjin",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Nakasu",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Hakata",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Hakata walk",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Tenjin",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Nakasu",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Nakasu",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Canal City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Hakata",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Ohori Park morning",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Tenjin",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Ohori Park",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Hakata evening",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Tenjin",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Nakasu",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Hakata",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Canal City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place (Canal City Hakata confirmed separately)"
+      },
+      {
+        "name": "Easy outing around Tenjin",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Nakasu",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Hakata",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Canal City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place (Canal City Hakata confirmed separately)"
+      },
+      {
+        "name": "Hakata cafe or market",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Dazaifu half-day",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Nakasu",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Nakasu",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Hakata",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Hakata",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Tenjin bakery or market",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Canal City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Nakasu",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Hakata",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Ohori Park",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Nakasu",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Hakata",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Tenjin",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Nakasu",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Hakata",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Hakata",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Tenjin",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Dazaifu Tenmangu",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Hakata",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Tenjin morning market",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Canal City",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Nakasu",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Hakata",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Tenjin",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Nakasu",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Canal City Hakata": {
+        "url": "https://canalcity.co.jp/access/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Homepage lists dated events such as the Muji Week \"10/23(金)〜11/3(火)\" and theatre performances \"10.27 (火)～12.31\" in 2026; fountain show listed \"2026.3.1(日) ～\"."
+      },
+      "Dazaifu Tenmangu": {
+        "url": "https://www.dazaifutenmangu.or.jp/",
+        "sourceType": "operator's own site (the shrine)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Notices include the 2026 exam-success prayer festival period \"10月1日（木）～31日（土）\" and \"令和8年5月17日以降のご祈願について\"; \"現在、臨時参拝時間のご案内はございません。\""
+      },
+      "Ohori Park": {
+        "url": "https://www.ohorikouen.jp/",
+        "sourceType": "official park management site (大濠・西公園管理事務所)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "News dated 2026-10-26 on the \"「大濠公園クリーンアップ隊」11月度清掃ボランティア活動\" and 2026-10-03 tulip-volunteer call."
+      },
+      "Fukuoka Art Museum": {
+        "url": "https://www.fukuoka-art-museum.jp/exhibition/",
+        "sourceType": "official public operator (Fukuoka City museum)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Current exhibitions include \"カルン・タカール・コレクション インド更紗　世界をめぐる物語\" 2026/10/17 – 2026/12/20 and \"生誕150年　詩と絵の旅人―吉田博\" 2026/09/01 – 2026/12/20."
+      },
+      "Fukuoka Asian Art Museum": {
+        "url": "https://faam.city.fukuoka.lg.jp/",
+        "sourceType": "official public operator (Fukuoka City)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Current exhibition \"アジア美術の歩き方　南アジア特別編　対立の先へ―光の水脈をめぐる旅\", \"2026年9月19日 (土） 〜 2027年1月11日 (月）\"."
+      },
+      "Fukuoka City Museum": {
+        "url": "https://museum.city.fukuoka.jp/",
+        "sourceType": "official public operator (Fukuoka City)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Special exhibition \"特別展 1999展 - 存在しないあの日の記憶 –\" runs \"2026年10月10日（土）～2027年1月11日（月・祝)\"; \"黒田家の名宝4\" to 2027年4月25日."
+      },
+      "Fukuoka Tower": {
+        "url": "https://www.fukuokatower.co.jp/charge/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "News dated 2026.10.19 (\"2026年10月,11月の駐車場特別日\") and a cross-discount campaign with Fukuoka City Museum \"2026年10月10日(土) 〜 1月11日(月)\"."
+      },
+      "Hakata Machiya Folk Museum": {
+        "url": "https://hakatamachiya.com/access/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "News dated 2026-10-23 and 2026-10-22, including the \"あかり絵の世界展\" and a shamisen event on November 1."
+      },
+      "Yanagibashi Rengo Market": {
+        "url": "https://yanagibashi-rengo.net/",
+        "sourceType": "operator's own site (market cooperative)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Only one dated item: 2026.01.27 \"今年もぜんざい祭りを開催いたします\"."
+      },
+      "Fukuoka Castle Ruins": {
+        "url": "https://fukuokajyo.com/",
+        "sourceType": "official public operator (Fukuoka City)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "October 2026 items: special public viewing of historic buildings (28 October 2026) and the \"ひかりの鴻臚館まつり\" (16 October 2026)."
+      },
+      "Fukuoka City Zoo and Botanical Garden": {
+        "url": "https://zoo.city.fukuoka.lg.jp/general/",
+        "sourceType": "official public operator (Fukuoka City)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "News dated 2026年10月21日 \"コツメカワウソが来園しました\" and 2026年10月26日 volunteer call."
+      },
+      "Fukuoka City Science Museum": {
+        "url": "https://www.fukuokacity-kagakukan.jp/use/",
+        "sourceType": "official public operator (Fukuoka City)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "2026.10.08 notice \"11月3日(火・祝)は開館日、11月4日(水)は休館日です\"; upcoming 特別展「可愛いだけじゃない！？ピングー展」 11/21–2027/1/11."
+      },
+      "Marine World Uminonakamichi": {
+        "url": "https://marine-world.jp/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "News dated 2026.10.23, 2026.10.18 and 2026.10.17; site flags \"イルカアシカショー一時休止について\"."
+      },
+      "Uminonakamichi Seaside Park": {
+        "url": "https://uminaka-park.jp/",
+        "sourceType": "official national park site (国営公園, MLIT-linked)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Oct 1, 2026 notice on parking for the うみなかはなまつり; Oct 9, 2026 notice of disc golf restrictions to November 15, 2026."
+      },
+      "manucoffee (Daimyo)": {
+        "url": "https://manucoffee.com/shoplist/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Homepage lists dated events such as \"OLMAN TUESDAY\" 2026/10/20 and \"Space Manu GO, 2026.10\" schedule."
+      },
+      "manucoffee (Haruyoshi)": {
+        "url": "https://manucoffee.com/shoplist/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Listed on the current shop list; homepage carries 2026-dated events (\"OLMAN TUESDAY\" 2026/10/20)."
+      },
+      "manucoffee roasters KUJIRA": {
+        "url": "https://manucoffee.com/shoplist/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Listed on the current shop list; homepage carries 2026-dated events."
+      },
+      "Camellia (Hotel Okura Fukuoka)": {
+        "url": "https://www.fuk.hotelokura.co.jp/restaurant/camellia/",
+        "sourceType": "operator's own site (hotel)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Lists November 2026 European-themed lunch buffet (11/1 to 11/30) and Christmas dinner buffet 12/23 to 26; news dated 2026.09.03."
+      },
+      "Lounge & Bar Hakatagawa (Hotel Okura Fukuoka)": {
+        "url": "https://www.fuk.hotelokura.co.jp/restaurant/hakatagawa/",
+        "sourceType": "operator's own site (hotel)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Current 2026 page on the hotel site, which posted 2026.09.14 news of an adult Halloween menu at three restaurants; restaurant list describes hand-drip coffee by day and drinks in the evening."
+      },
+      "Pastry Boutique (Hotel Okura Fukuoka)": {
+        "url": "https://www.fuk.hotelokura.co.jp/restaurant/pastryboutique/",
+        "sourceType": "operator's own site (hotel)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Seasonal items dated 2026: brown stew pie Nov 1 to Nov 30, 2026; apple kugelhopf Nov 1 to Dec 13, 2026; bread such as baguette 350 yen and kouign-amann 320 yen."
+      },
+      "Yamazato (Hotel Okura Fukuoka)": {
+        "url": "https://www.fuk.hotelokura.co.jp/restaurant/yamazato/",
+        "sourceType": "operator's own site (hotel)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Seasonal kaiseki menus and plans for 2026, including a 七五三 plan 10/1〜11/30 and osechi orders taken 2026年9/1〜11/30."
+      },
+      "Le Champ d'Or (Hotel Okura Fukuoka)": {
+        "url": "https://www.fuk.hotelokura.co.jp/restaurant/lechampdor/",
+        "sourceType": "operator's own site (hotel)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Lists 2026 Christmas Dinner 12/24-12/27 at 30,000 yen and the Autumn Harvest Fair; \"完全予約制\"."
+      },
+      "Yakan Hiko main bar (Hotel Nikko Fukuoka)": {
+        "url": "https://www.hotelnikko-fukuoka.com/restaurant/voldenuit/",
+        "sourceType": "operator's own site (hotel)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Page splits booking lookups at \"2026/3/23\"; hotel homepage carries 2026-dated restaurant news (e.g. 2026.09.21 Christmas cakes)."
+      },
+      "Serena (Hotel Nikko Fukuoka)": {
+        "url": "https://www.hotelnikko-fukuoka.com/restaurant/serena/",
+        "sourceType": "operator's own site (hotel)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Hotel news dated 2026.08.30 announces Serena's \"ハロウィーンデザートランチブッフェ\"; booking system change dated 2026/3/23."
+      },
+      "Benkei (Hotel Nikko Fukuoka)": {
+        "url": "https://www.hotelnikko-fukuoka.com/restaurant/benkei/",
+        "sourceType": "operator's own site (hotel)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Limited-time autumn takeout \"秋美ちらし寿司二段弁当\" (\"1個 3,000円～\"); booking system change dated 2026/3/23."
+      },
+      "Ganso Motsunabe Rakutenchi (Tenjin Honten)": {
+        "url": "https://rakutenti.com/shop/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Homepage news dated 2026-09-19 (motsunabe chanpon passing 100,000 servings) and 2026-08-31 (collaboration announcement)."
+      },
+      "Ganso Motsunabe Rakutenchi (Sohonten)": {
+        "url": "https://rakutenti.com/shop/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Listed on the shop page; homepage carries 2026-dated news (2026-09-19)."
+      }
+    }
+  },
   "Hiroshima, Japan": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-28",

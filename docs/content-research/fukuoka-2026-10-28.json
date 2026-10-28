@@ -1,0 +1,904 @@
+{
+  "city": "Fukuoka, Japan",
+  "checkedOn": "2026-10-28",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Canal City Hakata",
+      "kind": "landmark",
+      "url": "https://canalcity.co.jp/access/",
+      "sourceType": "operator's own site",
+      "address": "〒812-0018　福岡県福岡市博多区住吉1丁目2",
+      "operatingEvidence": "Homepage lists dated events such as the Muji Week \"10/23(金)〜11/3(火)\" and theatre performances \"10.27 (火)～12.31\" in 2026; fountain show listed \"2026.3.1(日) ～\".",
+      "hours": "Service page: shops \"10:00～21:00\", restaurants \"11:00～23:00\", \"年中無休\" (some shops differ)",
+      "confidence": "high"
+    },
+    {
+      "name": "Dazaifu Tenmangu",
+      "kind": "landmark",
+      "url": "https://www.dazaifutenmangu.or.jp/",
+      "sourceType": "operator's own site (the shrine)",
+      "address": "818-0195 福岡県太宰府市宰府4丁目7-1 (access page)",
+      "operatingEvidence": "Notices include the 2026 exam-success prayer festival period \"10月1日（木）～31日（土）\" and \"令和8年5月17日以降のご祈願について\"; \"現在、臨時参拝時間のご案内はございません。\"",
+      "hours": "Gates open 6:00 from the spring equinox and 6:30 from the autumn equinox; close 19:00 (April-May, September-November), 19:30 (June-August), 18:30 (December-March)",
+      "confidence": "high"
+    },
+    {
+      "name": "Ohori Park",
+      "kind": "park",
+      "url": "https://www.ohorikouen.jp/",
+      "sourceType": "official park management site (大濠・西公園管理事務所)",
+      "address": "大濠・西公園管理事務所, 〒810-0051 福岡市中央区大濠公園1番2号",
+      "operatingEvidence": "News dated 2026-10-26 on the \"「大濠公園クリーンアップ隊」11月度清掃ボランティア活動\" and 2026-10-03 tulip-volunteer call.",
+      "hours": "not published",
+      "confidence": "high"
+    },
+    {
+      "name": "Fukuoka Art Museum",
+      "kind": "museum",
+      "url": "https://www.fukuoka-art-museum.jp/exhibition/",
+      "sourceType": "official public operator (Fukuoka City museum)",
+      "address": "〒810-0051 福岡市中央区大濠公園1-6",
+      "operatingEvidence": "Current exhibitions include \"カルン・タカール・コレクション インド更紗　世界をめぐる物語\" 2026/10/17 – 2026/12/20 and \"生誕150年　詩と絵の旅人―吉田博\" 2026/09/01 – 2026/12/20.",
+      "hours": "\"午前9時30分～午後5時30分\" (entry until 30 minutes before closing); closed \"月曜日／12月28日～1月4日\" (next weekday if Monday is a holiday)",
+      "confidence": "high"
+    },
+    {
+      "name": "Fukuoka Asian Art Museum",
+      "kind": "museum",
+      "url": "https://faam.city.fukuoka.lg.jp/",
+      "sourceType": "official public operator (Fukuoka City)",
+      "address": "福岡市博多区下川端町3-1 リバレインセンタービル7・8階",
+      "operatingEvidence": "Current exhibition \"アジア美術の歩き方　南アジア特別編　対立の先へ―光の水脈をめぐる旅\", \"2026年9月19日 (土） 〜 2027年1月11日 (月）\".",
+      "hours": "Gallery 9:30-18:00, museum 9:30-19:30; both until 20:00 on Fridays and Saturdays; closed Wednesdays (next weekday if a holiday) and December 26 to January 1",
+      "confidence": "high"
+    },
+    {
+      "name": "Fukuoka City Museum",
+      "kind": "museum",
+      "url": "https://museum.city.fukuoka.jp/",
+      "sourceType": "official public operator (Fukuoka City)",
+      "address": "〒814-0001 福岡市早良区百道浜3丁目1-1",
+      "operatingEvidence": "Special exhibition \"特別展 1999展 - 存在しないあの日の記憶 –\" runs \"2026年10月10日（土）～2027年1月11日（月・祝)\"; \"黒田家の名宝4\" to 2027年4月25日.",
+      "hours": "\"9時30分〜17時30分\", last admission 17:00; closed Mondays (next weekday if a holiday) and \"12月28日（月）～1月4日（月）\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Fukuoka Tower",
+      "kind": "scenic",
+      "url": "https://www.fukuokatower.co.jp/charge/",
+      "sourceType": "operator's own site",
+      "address": "所在地: \"〒814-0001　福岡市早良区百道浜2丁目3番26号\" (operator's company page, https://www.fukuokatower.co.jp/company/)",
+      "operatingEvidence": "News dated 2026.10.19 (\"2026年10月,11月の駐車場特別日\") and a cross-discount campaign with Fukuoka City Museum \"2026年10月10日(土) 〜 1月11日(月)\".",
+      "hours": "\"9:30～22:00（最終入館 21:30）\", last entry may be earlier when crowded; listed closing days June 28 and 29, 2027",
+      "confidence": "high"
+    },
+    {
+      "name": "Hakata Machiya Folk Museum",
+      "kind": "museum",
+      "url": "https://hakatamachiya.com/access/",
+      "sourceType": "operator's own site",
+      "address": "〒812-0039 福岡県福岡市博多区冷泉町6-10",
+      "operatingEvidence": "News dated 2026-10-23 and 2026-10-22, including the \"あかり絵の世界展\" and a shamisen event on November 1.",
+      "hours": "\"午前10時～午後6時（入館は午後5時30分まで）\"; closed \"第4月曜日（祝休日の時は翌平日）\" (access page, undated)",
+      "confidence": "high"
+    },
+    {
+      "name": "Yanagibashi Rengo Market",
+      "kind": "market",
+      "url": "https://yanagibashi-rengo.net/",
+      "sourceType": "operator's own site (market cooperative)",
+      "address": "〒810-0003 福岡市中央区春吉1丁目6番1号",
+      "operatingEvidence": "Only one dated item: 2026.01.27 \"今年もぜんざい祭りを開催いたします\".",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Fukuoka Castle Ruins",
+      "kind": "landmark",
+      "url": "https://fukuokajyo.com/",
+      "sourceType": "official public operator (Fukuoka City)",
+      "address": "\"〒810-0043 福岡県福岡市中央区城内\"",
+      "operatingEvidence": "October 2026 items: special public viewing of historic buildings (28 October 2026) and the \"ひかりの鴻臚館まつり\" (16 October 2026).",
+      "hours": "not published; admission \"無料（イベント期間中はこの限りではありません）\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Fukuoka City Zoo and Botanical Garden",
+      "kind": "park",
+      "url": "https://zoo.city.fukuoka.lg.jp/general/",
+      "sourceType": "official public operator (Fukuoka City)",
+      "address": "〒810-0037 福岡市中央区南公園1番1号",
+      "operatingEvidence": "News dated 2026年10月21日 \"コツメカワウソが来園しました\" and 2026年10月26日 volunteer call.",
+      "hours": "\"9時00分～17時00分（入園は16時30分まで）\"; closed Mondays (next day if a holiday) and 12月29日～1月1日; adults 600 yen, junior high and under free",
+      "confidence": "high"
+    },
+    {
+      "name": "Fukuoka City Science Museum",
+      "kind": "museum",
+      "url": "https://www.fukuokacity-kagakukan.jp/use/",
+      "sourceType": "official public operator (Fukuoka City)",
+      "address": "〒810-0044 福岡市中央区六本松4-2-1",
+      "operatingEvidence": "2026.10.08 notice \"11月3日(火・祝)は開館日、11月4日(水)は休館日です\"; upcoming 特別展「可愛いだけじゃない！？ピングー展」 11/21–2027/1/11.",
+      "hours": "\"9:30～21:30\" (varies by area); closed Tuesdays (next weekday if a holiday) and December 28 to January 1; exhibition hall and planetarium adults 510 yen each",
+      "confidence": "high"
+    },
+    {
+      "name": "Marine World Uminonakamichi",
+      "kind": "museum",
+      "url": "https://marine-world.jp/",
+      "sourceType": "operator's own site",
+      "address": "〒811-0321福岡市東区大字西戸崎18-28",
+      "operatingEvidence": "News dated 2026.10.23, 2026.10.18 and 2026.10.17; site flags \"イルカアシカショー一時休止について\".",
+      "hours": "Today's hours \"9:30-17:30 (入館は16:30まで)\"; closing days not readable",
+      "confidence": "high"
+    },
+    {
+      "name": "Uminonakamichi Seaside Park",
+      "kind": "park",
+      "url": "https://uminaka-park.jp/",
+      "sourceType": "official national park site (国営公園, MLIT-linked)",
+      "address": "〒811-0321 福岡市東区大字西戸崎18-25",
+      "operatingEvidence": "Oct 1, 2026 notice on parking for the うみなかはなまつり; Oct 9, 2026 notice of disc golf restrictions to November 15, 2026.",
+      "hours": "not published on the page read",
+      "confidence": "high"
+    },
+    {
+      "name": "manucoffee (Daimyo)",
+      "kind": "cafe",
+      "url": "https://manucoffee.com/shoplist/",
+      "sourceType": "operator's own site",
+      "address": "〒810-0041 福岡市中央区大名1-1-3 石井ビル1F",
+      "operatingEvidence": "Homepage lists dated events such as \"OLMAN TUESDAY\" 2026/10/20 and \"Space Manu GO, 2026.10\" schedule.",
+      "hours": "\"OPEN9:00-24:00（定休なし）\" (undated shop list page)",
+      "confidence": "high"
+    },
+    {
+      "name": "manucoffee (Haruyoshi)",
+      "kind": "cafe",
+      "url": "https://manucoffee.com/shoplist/",
+      "sourceType": "operator's own site",
+      "address": "〒810-0004 福岡市中央区渡辺通3-11-2 ボーダータワー1F",
+      "operatingEvidence": "Listed on the current shop list; homepage carries 2026-dated events (\"OLMAN TUESDAY\" 2026/10/20).",
+      "hours": "\"OPEN9:00-24:00（定休なし）\" (undated shop list page)",
+      "confidence": "medium"
+    },
+    {
+      "name": "manucoffee roasters KUJIRA",
+      "kind": "cafe",
+      "url": "https://manucoffee.com/shoplist/",
+      "sourceType": "operator's own site",
+      "address": "〒810-0012 福岡市中央区白金1-18-28",
+      "operatingEvidence": "Listed on the current shop list; homepage carries 2026-dated events.",
+      "hours": "\"OPEN9:00-19:00（定休なし）\" (undated shop list page)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Camellia (Hotel Okura Fukuoka)",
+      "kind": "meal",
+      "url": "https://www.fuk.hotelokura.co.jp/restaurant/camellia/",
+      "sourceType": "operator's own site (hotel)",
+      "address": "Hotel Okura Fukuoka 1F, 3-2 Shimokawabatacho, Hakata-ku, Fukuoka (Hakata Riverain)",
+      "operatingEvidence": "Lists November 2026 European-themed lunch buffet (11/1 to 11/30) and Christmas dinner buffet 12/23 to 26; news dated 2026.09.03.",
+      "hours": "Breakfast \"6:30〜10:00\"; lunch buffet 11:30-14:00; dinner 17:00-20:30 Saturdays and holidays; \"定休日：なし\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Lounge & Bar Hakatagawa (Hotel Okura Fukuoka)",
+      "kind": "bar",
+      "url": "https://www.fuk.hotelokura.co.jp/restaurant/hakatagawa/",
+      "sourceType": "operator's own site (hotel)",
+      "address": "\"ホテルオークラ福岡1F\", 3-2 Shimokawabatacho, Hakata-ku, Fukuoka",
+      "operatingEvidence": "Current 2026 page on the hotel site, which posted 2026.09.14 news of an adult Halloween menu at three restaurants; restaurant list describes hand-drip coffee by day and drinks in the evening.",
+      "hours": "Weekdays 14:00-23:00; weekends and holidays 12:00-23:00; last order 30 minutes before closing; \"定休日：なし\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Pastry Boutique (Hotel Okura Fukuoka)",
+      "kind": "bakery",
+      "url": "https://www.fuk.hotelokura.co.jp/restaurant/pastryboutique/",
+      "sourceType": "operator's own site (hotel)",
+      "address": "Hotel Okura Fukuoka 1F, 3-2 Shimokawabatacho, Hakata-ku, Fukuoka",
+      "operatingEvidence": "Seasonal items dated 2026: brown stew pie Nov 1 to Nov 30, 2026; apple kugelhopf Nov 1 to Dec 13, 2026; bread such as baguette 350 yen and kouign-amann 320 yen.",
+      "hours": "10:00～20:00 (phone section says 10:00～18:00; page inconsistent); \"定休日：なし\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Yamazato (Hotel Okura Fukuoka)",
+      "kind": "meal",
+      "url": "https://www.fuk.hotelokura.co.jp/restaurant/yamazato/",
+      "sourceType": "operator's own site (hotel)",
+      "address": "\"ホテルオークラ福岡2F\", 3-2 Shimokawabatacho, Hakata-ku, Fukuoka",
+      "operatingEvidence": "Seasonal kaiseki menus and plans for 2026, including a 七五三 plan 10/1〜11/30 and osechi orders taken 2026年9/1〜11/30.",
+      "hours": "Weekdays 11:30-14:30, 17:30-21:00; weekends and holidays 11:30-14:30, 17:00-21:00; closed \"火･水曜日（祝日の場合は営業）\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Le Champ d'Or (Hotel Okura Fukuoka)",
+      "kind": "meal",
+      "url": "https://www.fuk.hotelokura.co.jp/restaurant/lechampdor/",
+      "sourceType": "operator's own site (hotel)",
+      "address": "\"ホテルオークラ福岡B1F\", 3-2 Shimokawabatacho, Hakata-ku, Fukuoka",
+      "operatingEvidence": "Lists 2026 Christmas Dinner 12/24-12/27 at 30,000 yen and the Autumn Harvest Fair; \"完全予約制\".",
+      "hours": "Friday 17:30-21:00; Saturday, Sunday and holidays 11:30-14:30, 17:00-21:00; closed Monday-Thursday except holidays",
+      "confidence": "high"
+    },
+    {
+      "name": "Yakan Hiko main bar (Hotel Nikko Fukuoka)",
+      "kind": "bar",
+      "url": "https://www.hotelnikko-fukuoka.com/restaurant/voldenuit/",
+      "sourceType": "operator's own site (hotel)",
+      "address": "Hotel Nikko Fukuoka 1F, \"〒812-0011 福岡市博多区博多駅前2丁目18番25号\"",
+      "operatingEvidence": "Page splits booking lookups at \"2026/3/23\"; hotel homepage carries 2026-dated restaurant news (e.g. 2026.09.21 Christmas cakes).",
+      "hours": "Mon-Sat 18:00-23:00 (LO 22:30); Sundays and holidays 18:00-22:00 (LO 21:30); piano Mon-Sat with a 1,360 yen cover during performances",
+      "confidence": "medium"
+    },
+    {
+      "name": "Serena (Hotel Nikko Fukuoka)",
+      "kind": "meal",
+      "url": "https://www.hotelnikko-fukuoka.com/restaurant/serena/",
+      "sourceType": "operator's own site (hotel)",
+      "address": "Hotel Nikko Fukuoka 2F, 〒812-0011 福岡市博多区博多駅前2丁目18番25号",
+      "operatingEvidence": "Hotel news dated 2026.08.30 announces Serena's \"ハロウィーンデザートランチブッフェ\"; booking system change dated 2026/3/23.",
+      "hours": "Breakfast 6:30-10:30; lunch 11:30-15:00; dinner 17:00-21:30 Fridays, Saturdays, Sundays and holidays only (\"平日月曜日～木曜日のディナーは休業\")",
+      "confidence": "high"
+    },
+    {
+      "name": "Benkei (Hotel Nikko Fukuoka)",
+      "kind": "meal",
+      "url": "https://www.hotelnikko-fukuoka.com/restaurant/benkei/",
+      "sourceType": "operator's own site (hotel)",
+      "address": "Hotel Nikko Fukuoka 2F, 〒812-0011 福岡市博多区博多駅前2丁目18番25号",
+      "operatingEvidence": "Limited-time autumn takeout \"秋美ちらし寿司二段弁当\" (\"1個 3,000円～\"); booking system change dated 2026/3/23.",
+      "hours": "Breakfast \"7：00-10：00（土日祝：7：00-9：30）\"; lunch 11:30-15:00; dinner 17:00-21:30; closing days not stated",
+      "confidence": "medium"
+    },
+    {
+      "name": "Ganso Motsunabe Rakutenchi (Tenjin Honten)",
+      "kind": "meal",
+      "url": "https://rakutenti.com/shop/",
+      "sourceType": "operator's own site",
+      "address": "\"福岡県福岡市中央区天神１丁目１−１アクロス福岡 地下2階\"",
+      "operatingEvidence": "Homepage news dated 2026-09-19 (motsunabe chanpon passing 100,000 servings) and 2026-08-31 (collaboration announcement).",
+      "hours": "11:00-22:00 (LO 21:30); closed on the facility's closing days",
+      "confidence": "high"
+    },
+    {
+      "name": "Ganso Motsunabe Rakutenchi (Sohonten)",
+      "kind": "meal",
+      "url": "https://rakutenti.com/shop/",
+      "sourceType": "operator's own site",
+      "address": "\"福岡県福岡市中央区今泉1-19-18　楽天地ビル2F\"",
+      "operatingEvidence": "Listed on the shop page; homepage carries 2026-dated news (2026-09-19).",
+      "hours": "17:00-24:00; open year-round, no regular closing day",
+      "confidence": "high"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Kyushu National Museum",
+      "reason": "Current 2026 exhibitions read, but no official page read showed the museum's street address (access pages returned 404).",
+      "url": "https://www.kyuhaku.jp/"
+    },
+    {
+      "name": "Ichiran (Sohonten, Nakasu)",
+      "reason": "Address and 24-hour listing read, but no dated 2026 content or current notice on the official pages.",
+      "url": "https://ichiran.com/shop/kyushu/sohonten/"
+    },
+    {
+      "name": "REC COFFEE",
+      "reason": "2026 news read, but branch pages returned HTTP 429 (rate-limited); no address readable.",
+      "url": "https://rec-coffee.com/shop/"
+    },
+    {
+      "name": "Kushida Shrine",
+      "reason": "Official shrine website not found; guessed domains did not resolve. Not used from third-party sources.",
+      "url": "https://www.kushidajinja.or.jp/"
+    },
+    {
+      "name": "IPPUDO (Daimyo Honten)",
+      "reason": "Official site returned only a page title; no store details readable.",
+      "url": "https://www.ippudo.com/"
+    },
+    {
+      "name": "Hakata ShinShin (Tenjin Honten)",
+      "reason": "Fetch of presumed official site failed with no output.",
+      "url": "https://shin-shin.jp/"
+    },
+    {
+      "name": "Hakata Hanamidori",
+      "reason": "Domain did not resolve (DNS failure).",
+      "url": "https://www.hakata-hanamidori.com/"
+    },
+    {
+      "name": "The Ritz-Carlton, Fukuoka (Bay / Lobby Lounge)",
+      "reason": "Dining page read but contains no 2026-dated content; bar page returned 404.",
+      "url": "https://www.ritzcarlton.com/en/hotels/fukrz-the-ritz-carlton-fukuoka/dining/"
+    },
+    {
+      "name": "Grand Hyatt Fukuoka",
+      "reason": "HTTP 403 (refuses automated reading).",
+      "url": "https://www.hyatt.com/grand-hyatt/ja-JP/fukgh-grand-hyatt-fukuoka/dining"
+    },
+    {
+      "name": "pain stock (Hakozaki)",
+      "reason": "Official shop site gives the address but no hours and no 2026-dated content.",
+      "url": "https://painstock.theshop.jp/about"
+    },
+    {
+      "name": "DACOMECCA",
+      "reason": "Domain did not resolve; no other official site found.",
+      "url": "https://www.dacomecca.jp/"
+    },
+    {
+      "name": "Meigetsudo (Hakata Torimon)",
+      "reason": "Official site shows company address only, no shop address or 2026-dated content.",
+      "url": "https://www.meigetsudo.co.jp/"
+    },
+    {
+      "name": "Ishimura Manseido",
+      "reason": "Domain did not resolve (DNS failure).",
+      "url": "https://www.ishimuramanseido.co.jp/"
+    },
+    {
+      "name": "Trandor (JR Kyushu bakery)",
+      "reason": "Certificate error; not bypassed.",
+      "url": "https://www.trandor.com/"
+    },
+    {
+      "name": "Nokonoshima Island Park",
+      "reason": "Official site returned only a page title; nothing readable.",
+      "url": "https://nokonoshima.com/"
+    },
+    {
+      "name": "Fukuoka Anpanman Children's Museum",
+      "reason": "Guessed official URL returned 404; not confirmed.",
+      "url": "https://www.anpanman-museum.net/fukuoka/"
+    },
+    {
+      "name": "Shin-Miura (mizutaki), Motsunabe Yamanaka, Ganso Nagahamaya, Amam Dacotan",
+      "reason": "No official website found by search; only review sites and media, which cannot be used.",
+      "url": ""
+    },
+    {
+      "name": "Fuk Coffee",
+      "reason": "Domain redirects to a domain-sale page; no official site.",
+      "url": "https://fukcoffee.com/"
+    },
+    {
+      "name": "Ohori Park morning",
+      "reason": "Variant of Ohori Park; covered by the confirmed entry.",
+      "url": ""
+    },
+    {
+      "name": "Dazaifu half-day",
+      "reason": "Variant of Dazaifu Tenmangu; covered by the confirmed entry.",
+      "url": ""
+    },
+    {
+      "name": "Nakasu evening stalls",
+      "reason": "generic, not a place (no single yatai named)",
+      "url": ""
+    },
+    {
+      "name": "Hakata ramen and yatai food stalls",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Fukuoka market or cafe",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local dinner in Hakata",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Tenjin",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Nakasu",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Hakata",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Hakata walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Tenjin",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Nakasu",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Nakasu",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Canal City",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Hakata",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Ohori Park morning",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Tenjin",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Ohori Park",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Hakata evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Tenjin",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Nakasu",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Hakata",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Canal City",
+      "reason": "generic, not a place (Canal City Hakata confirmed separately)",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Tenjin",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Nakasu",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Hakata",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Canal City",
+      "reason": "generic, not a place (Canal City Hakata confirmed separately)",
+      "url": ""
+    },
+    {
+      "name": "Hakata cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Dazaifu half-day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Nakasu",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Nakasu",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Hakata",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Hakata",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Tenjin bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Canal City",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Nakasu",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Hakata",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Ohori Park",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Nakasu",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Hakata",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Tenjin",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Nakasu",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Hakata",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Hakata",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Tenjin",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Dazaifu Tenmangu",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Hakata",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Tenjin morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Canal City",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Nakasu",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Hakata",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Tenjin",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Nakasu",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Dazaifu Tenmangu",
+        "Fukuoka Castle Ruins",
+        "Fukuoka Tower",
+        "Canal City Hakata"
+      ],
+      "bestFirstTimers": [
+        "Ohori Park",
+        "Fukuoka Art Museum",
+        "Dazaifu Tenmangu",
+        "Hakata Machiya Folk Museum"
+      ],
+      "bestRestaurants": [
+        "Ganso Motsunabe Rakutenchi (Tenjin Honten)",
+        "Yamazato (Hotel Okura Fukuoka)",
+        "Le Champ d'Or (Hotel Okura Fukuoka)",
+        "Benkei (Hotel Nikko Fukuoka)"
+      ],
+      "bestBudget": [
+        "Ohori Park",
+        "Fukuoka Castle Ruins",
+        "Hakata Machiya Folk Museum",
+        "Yanagibashi Rengo Market"
+      ],
+      "bestLuxury": [
+        "Le Champ d'Or (Hotel Okura Fukuoka)",
+        "Yamazato (Hotel Okura Fukuoka)",
+        "Yakan Hiko main bar (Hotel Nikko Fukuoka)"
+      ],
+      "bestCouples": [
+        "Fukuoka Tower",
+        "Ohori Park",
+        "Yakan Hiko main bar (Hotel Nikko Fukuoka)",
+        "Le Champ d'Or (Hotel Okura Fukuoka)"
+      ],
+      "bestKids": [
+        "Fukuoka City Zoo and Botanical Garden",
+        "Fukuoka City Science Museum",
+        "Marine World Uminonakamichi",
+        "Uminonakamichi Seaside Park"
+      ],
+      "bestSolo": [
+        "Fukuoka Asian Art Museum",
+        "Fukuoka City Museum",
+        "manucoffee (Daimyo)",
+        "Yanagibashi Rengo Market"
+      ],
+      "bestUnique": [
+        "Hakata Machiya Folk Museum",
+        "Yanagibashi Rengo Market",
+        "Fukuoka Asian Art Museum",
+        "Fukuoka Castle Ruins"
+      ],
+      "bestBreakfast": [
+        "Camellia (Hotel Okura Fukuoka)",
+        "Serena (Hotel Nikko Fukuoka)",
+        "Benkei (Hotel Nikko Fukuoka)",
+        "manucoffee roasters KUJIRA"
+      ],
+      "bestLunch": [
+        "Ganso Motsunabe Rakutenchi (Tenjin Honten)",
+        "Yamazato (Hotel Okura Fukuoka)",
+        "Camellia (Hotel Okura Fukuoka)",
+        "Benkei (Hotel Nikko Fukuoka)"
+      ],
+      "bestDinner": [
+        "Ganso Motsunabe Rakutenchi (Sohonten)",
+        "Le Champ d'Or (Hotel Okura Fukuoka)",
+        "Yamazato (Hotel Okura Fukuoka)",
+        "Serena (Hotel Nikko Fukuoka)"
+      ],
+      "bestCocktails": [
+        "Yakan Hiko main bar (Hotel Nikko Fukuoka)",
+        "Lounge & Bar Hakatagawa (Hotel Okura Fukuoka)"
+      ],
+      "bestBakeries": [
+        "Pastry Boutique (Hotel Okura Fukuoka)"
+      ],
+      "bestCoffee": [
+        "manucoffee (Daimyo)",
+        "manucoffee (Haruyoshi)",
+        "manucoffee roasters KUJIRA",
+        "Lounge & Bar Hakatagawa (Hotel Okura Fukuoka)"
+      ]
+    },
+    "queries": {
+      "Canal City Hakata": "Canal City Hakata 1-2 Sumiyoshi Hakata-ku Fukuoka",
+      "Dazaifu Tenmangu": "Dazaifu Tenmangu 4-7-1 Saifu Dazaifu Fukuoka",
+      "Ohori Park": "Ohori Park 1-2 Ohorikoen Chuo-ku Fukuoka",
+      "Fukuoka Art Museum": "Fukuoka Art Museum 1-6 Ohorikoen Chuo-ku Fukuoka",
+      "Fukuoka Asian Art Museum": "Fukuoka Asian Art Museum Riverain Center Building 3-1 Shimokawabatamachi Hakata-ku Fukuoka",
+      "Fukuoka City Museum": "Fukuoka City Museum 3-1-1 Momochihama Sawara-ku Fukuoka",
+      "Fukuoka Tower": "Fukuoka Tower 2-3-26 Momochihama Sawara-ku Fukuoka",
+      "Hakata Machiya Folk Museum": "Hakata Machiya Folk Museum 6-10 Reisenmachi Hakata-ku Fukuoka",
+      "Yanagibashi Rengo Market": "Yanagibashi Rengo Market 1-6-1 Haruyoshi Chuo-ku Fukuoka",
+      "Fukuoka Castle Ruins": "Fukuoka Castle Ruins Jonai Chuo-ku Fukuoka",
+      "Fukuoka City Zoo and Botanical Garden": "Fukuoka City Zoo and Botanical Garden 1-1 Minamikoen Chuo-ku Fukuoka",
+      "Fukuoka City Science Museum": "Fukuoka City Science Museum 4-2-1 Ropponmatsu Chuo-ku Fukuoka",
+      "Marine World Uminonakamichi": "Marine World Uminonakamichi 18-28 Saitozaki Higashi-ku Fukuoka",
+      "Uminonakamichi Seaside Park": "Uminonakamichi Seaside Park 18-25 Saitozaki Higashi-ku Fukuoka",
+      "manucoffee (Daimyo)": "manucoffee Daimyo 1-1-3 Daimyo Chuo-ku Fukuoka",
+      "manucoffee (Haruyoshi)": "manucoffee Haruyoshi Border Tower 3-11-2 Watanabedori Chuo-ku Fukuoka",
+      "manucoffee roasters KUJIRA": "manucoffee roasters KUJIRA 1-18-28 Shirogane Chuo-ku Fukuoka",
+      "Camellia (Hotel Okura Fukuoka)": "Camellia Hotel Okura Fukuoka 3-2 Shimokawabatamachi Hakata-ku Fukuoka",
+      "Lounge & Bar Hakatagawa (Hotel Okura Fukuoka)": "Lounge & Bar Hakatagawa Hotel Okura Fukuoka 3-2 Shimokawabatamachi Hakata-ku Fukuoka",
+      "Pastry Boutique (Hotel Okura Fukuoka)": "Pastry Boutique Hotel Okura Fukuoka 3-2 Shimokawabatamachi Hakata-ku Fukuoka",
+      "Yamazato (Hotel Okura Fukuoka)": "Yamazato Hotel Okura Fukuoka 3-2 Shimokawabatamachi Hakata-ku Fukuoka",
+      "Le Champ d'Or (Hotel Okura Fukuoka)": "Le Champ d'Or Hotel Okura Fukuoka 3-2 Shimokawabatamachi Hakata-ku Fukuoka",
+      "Yakan Hiko main bar (Hotel Nikko Fukuoka)": "Yakan Hiko Hotel Nikko Fukuoka 2-18-25 Hakataekimae Hakata-ku Fukuoka",
+      "Serena (Hotel Nikko Fukuoka)": "Serena Hotel Nikko Fukuoka 2-18-25 Hakataekimae Hakata-ku Fukuoka",
+      "Benkei (Hotel Nikko Fukuoka)": "Benkei Hotel Nikko Fukuoka 2-18-25 Hakataekimae Hakata-ku Fukuoka",
+      "Ganso Motsunabe Rakutenchi (Tenjin Honten)": "Ganso Motsunabe Rakutenchi Tenjin Honten ACROS Fukuoka 1-1-1 Tenjin Chuo-ku Fukuoka",
+      "Ganso Motsunabe Rakutenchi (Sohonten)": "Ganso Motsunabe Rakutenchi Sohonten 1-19-18 Imaizumi Chuo-ku Fukuoka"
+    },
+    "summary": "Shrines, castle ruins, art museums and family outings, with breakfast rooms, motsunabe dinners, hotel bars, a bakery and coffee shops checked against their own websites.",
+    "highlights": [
+      "Dazaifu Tenmangu",
+      "Ohori Park",
+      "Fukuoka Art Museum",
+      "Fukuoka Asian Art Museum"
+    ],
+    "tip": "Plan museum days around staggered closures: the Fukuoka Art Museum, Fukuoka City Museum and the zoo close on Mondays, the Science Museum on Tuesdays and the Asian Art Museum on Wednesdays, each moving to the next weekday when that day is a public holiday.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mon, Tue or Wed by venue",
+        "copy": "The Fukuoka Art Museum, Fukuoka City Museum and Fukuoka City Zoo close on Mondays, the Fukuoka City Science Museum on Tuesdays and the Fukuoka Asian Art Museum on Wednesdays, each moving to the next weekday after a public holiday. The Hakata Machiya Folk Museum closes on the fourth Monday of the month."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Reserve the hotel dining rooms",
+        "copy": "Le Champ d'Or at Hotel Okura Fukuoka is reservation-only and opens Friday dinners plus weekend and holiday lunches and dinners, while Yamazato closes on Tuesdays and Wednesdays unless they are holidays; both take bookings via TableCheck or the reservations desk on 092-262-1176 (10:00-18:00). Fukuoka Tower's observation deck costs 1,000 yen for adults."
+      },
+      {
+        "label": "Walk-in and timing",
+        "value": "Late entry can close early",
+        "copy": "Fukuoka Tower opens 9:30 to 22:00 with last entry at 21:30, which it says may come earlier when crowded. Canal City Hakata states it is open all year, with shops from 10:00 to 21:00 and restaurants from 11:00 to 23:00."
+      },
+      {
+        "label": "Rules",
+        "value": "Bags, cameras and dress",
+        "copy": "Fukuoka Tower does not store luggage, offers coin lockers on 1F and asks you not to bring food or drink onto the observation deck. The Fukuoka Art Museum bans video, flash, tripods and selfie sticks, and Le Champ d'Or refuses entry in shorts or sandals."
+      }
+    ],
+    "dek": "Split your days by district and by closing day, keeping Dazaifu for a morning and Momochihama's museum and tower for an afternoon into evening.",
+    "intro": [
+      "Fukuoka's public museums stagger their closing days, so a little planning goes a long way. The Fukuoka Art Museum, inside Ohori Park, opens from 9:30 to 17:30 and closes on Mondays. Its Indian chintz exhibition from the Karun Thakar Collection runs from 17 October to 20 December 2026, alongside a 150th-anniversary show on the printmaker Yoshida Hiroshi until the same date. The Fukuoka Asian Art Museum occupies the seventh and eighth floors of the Riverain Center Building, closes on Wednesdays and stays open until 20:00 on Fridays and Saturdays.",
+      "The Asian Art Museum's South Asia special edition runs until 11 January 2027. Out in Momochihama, the Fukuoka City Museum closes on Mondays and shows its special exhibition 1999 until 11 January 2027. Fukuoka Tower, also on a Momochihama address, opens from 9:30 to 22:00 with last entry at 21:30, which it warns may come earlier when crowded. An adult ticket for the observation deck is 1,000 yen, coin lockers are on 1F, and you are asked not to bring food or drink up to the deck.",
+      "For a slower start, Dazaifu Tenmangu opens its gates at 6:30 from the autumn equinox and closes them at 19:00 from September to November and at 18:30 from December to March. Back in Hakata, the Hakata Machiya Folk Museum opens from 10:00 to 18:00, closes on the fourth Monday of the month, and charges 200 yen, with elementary and junior high pupils free. The Fukuoka Castle Ruins in Jonai are free to enter except during events, and families can add the Fukuoka City Zoo and Botanical Garden, open 9:00 to 17:00 except Mondays.",
+      "At Hotel Okura Fukuoka, Camellia serves breakfast from 6:30 to 10:00 with no regular closing day, and the Pastry Boutique on 1F sells baguettes and kouign-amann daily. Yamazato closes on Tuesdays and Wednesdays unless they are holidays, and Le Champ d'Or is reservation-only and turns away shorts and sandals. For motsunabe, Ganso Motsunabe Rakutenchi's Sohonten in Imaizumi opens from 17:00 to midnight all year. Hotel Nikko Fukuoka's main bar, Yakan Hiko, has piano sets Monday to Saturday, with a 1,360 yen cover charge during performances."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair Ohori Park with the Fukuoka Art Museum inside it, remembering the museum closes on Mondays."
+      ],
+      [
+        "A slower morning",
+        "Take breakfast at Camellia in Hotel Okura Fukuoka from 6:30, then walk to the Fukuoka Asian Art Museum, which shares its Shimokawabatamachi address and closes on Wednesdays."
+      ],
+      [
+        "Before booking",
+        "Le Champ d'Or takes reservations only and opens Friday dinners plus weekend and holiday meals, while Yamazato closes on Tuesdays and Wednesdays unless they are holidays."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability, and Japanese-language pages were read through automated extraction. Several sites could not be read: REC COFFEE branch pages returned HTTP 429, Grand Hyatt Fukuoka returned 403, Trandor had a certificate error, and Hakata Hanamidori, DACOMECCA and Ishimura Manseido did not resolve; IPPUDO, ShinShin and Nokonoshima Island Park returned nothing readable. The Kyushu National Museum was dropped only because no page read showed its street address, and Kushida Shrine because no official site was found. Hours were not published on the pages read for Ohori Park, Fukuoka Castle Ruins, Uminonakamichi Seaside Park and Yanagibashi Rengo Market (whose only dated item is from January 2026), and Marine World's closing days were not readable; the site also flags a temporary suspension of its dolphin and sea lion shows. manucoffee and Hakata Machiya Folk Museum hours come from undated shop-list and access pages, and Hotel Okura's Pastry Boutique page gives two different closing times (20:00 and 18:00).",
+  "injectionLikeText": []
+}

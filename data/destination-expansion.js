@@ -8393,4 +8393,112 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on October 28, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Fukuoka, Japan: source review of 2026-10-28 (docs/content-research/fukuoka-2026-10-28.md).
+  {
+    const cityKey = "Fukuoka, Japan";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Dazaifu Tenmangu","Fukuoka Castle Ruins","Fukuoka Tower","Canal City Hakata"],
+      bestFirstTimers: ["Ohori Park","Fukuoka Art Museum","Dazaifu Tenmangu","Hakata Machiya Folk Museum"],
+      bestRestaurants: ["Ganso Motsunabe Rakutenchi (Tenjin Honten)","Yamazato (Hotel Okura Fukuoka)","Le Champ d'Or (Hotel Okura Fukuoka)","Benkei (Hotel Nikko Fukuoka)"],
+      bestBudget: ["Ohori Park","Fukuoka Castle Ruins","Hakata Machiya Folk Museum","Yanagibashi Rengo Market"],
+      bestLuxury: ["Le Champ d'Or (Hotel Okura Fukuoka)","Yamazato (Hotel Okura Fukuoka)","Yakan Hiko main bar (Hotel Nikko Fukuoka)"],
+      bestCouples: ["Fukuoka Tower","Ohori Park","Yakan Hiko main bar (Hotel Nikko Fukuoka)","Le Champ d'Or (Hotel Okura Fukuoka)"],
+      bestKids: ["Fukuoka City Zoo and Botanical Garden","Fukuoka City Science Museum","Marine World Uminonakamichi","Uminonakamichi Seaside Park"],
+      bestSolo: ["Fukuoka Asian Art Museum","Fukuoka City Museum","manucoffee (Daimyo)","Yanagibashi Rengo Market"],
+      bestUnique: ["Hakata Machiya Folk Museum","Yanagibashi Rengo Market","Fukuoka Asian Art Museum","Fukuoka Castle Ruins"],
+      bestBreakfast: ["Camellia (Hotel Okura Fukuoka)","Serena (Hotel Nikko Fukuoka)","Benkei (Hotel Nikko Fukuoka)","manucoffee roasters KUJIRA"],
+      bestLunch: ["Ganso Motsunabe Rakutenchi (Tenjin Honten)","Yamazato (Hotel Okura Fukuoka)","Camellia (Hotel Okura Fukuoka)","Benkei (Hotel Nikko Fukuoka)"],
+      bestDinner: ["Ganso Motsunabe Rakutenchi (Sohonten)","Le Champ d'Or (Hotel Okura Fukuoka)","Yamazato (Hotel Okura Fukuoka)","Serena (Hotel Nikko Fukuoka)"],
+      bestCocktails: ["Yakan Hiko main bar (Hotel Nikko Fukuoka)","Lounge & Bar Hakatagawa (Hotel Okura Fukuoka)"],
+      bestBakeries: ["Pastry Boutique (Hotel Okura Fukuoka)"],
+      bestCoffee: ["manucoffee (Daimyo)","manucoffee (Haruyoshi)","manucoffee roasters KUJIRA","Lounge & Bar Hakatagawa (Hotel Okura Fukuoka)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Dazaifu Tenmangu": "Dazaifu Tenmangu 4-7-1 Saifu Dazaifu Fukuoka",
+      "Fukuoka Castle Ruins": "Fukuoka Castle Ruins Jonai Chuo-ku Fukuoka",
+      "Fukuoka Tower": "Fukuoka Tower 2-3-26 Momochihama Sawara-ku Fukuoka",
+      "Canal City Hakata": "Canal City Hakata 1-2 Sumiyoshi Hakata-ku Fukuoka",
+      "Ohori Park": "Ohori Park 1-2 Ohorikoen Chuo-ku Fukuoka",
+      "Fukuoka Art Museum": "Fukuoka Art Museum 1-6 Ohorikoen Chuo-ku Fukuoka",
+      "Hakata Machiya Folk Museum": "Hakata Machiya Folk Museum 6-10 Reisenmachi Hakata-ku Fukuoka",
+      "Ganso Motsunabe Rakutenchi (Tenjin Honten)": "Ganso Motsunabe Rakutenchi Tenjin Honten ACROS Fukuoka 1-1-1 Tenjin Chuo-ku Fukuoka",
+      "Yamazato (Hotel Okura Fukuoka)": "Yamazato Hotel Okura Fukuoka 3-2 Shimokawabatamachi Hakata-ku Fukuoka",
+      "Le Champ d'Or (Hotel Okura Fukuoka)": "Le Champ d'Or Hotel Okura Fukuoka 3-2 Shimokawabatamachi Hakata-ku Fukuoka",
+      "Benkei (Hotel Nikko Fukuoka)": "Benkei Hotel Nikko Fukuoka 2-18-25 Hakataekimae Hakata-ku Fukuoka",
+      "Yanagibashi Rengo Market": "Yanagibashi Rengo Market 1-6-1 Haruyoshi Chuo-ku Fukuoka",
+      "Yakan Hiko main bar (Hotel Nikko Fukuoka)": "Yakan Hiko Hotel Nikko Fukuoka 2-18-25 Hakataekimae Hakata-ku Fukuoka",
+      "Fukuoka City Zoo and Botanical Garden": "Fukuoka City Zoo and Botanical Garden 1-1 Minamikoen Chuo-ku Fukuoka",
+      "Fukuoka City Science Museum": "Fukuoka City Science Museum 4-2-1 Ropponmatsu Chuo-ku Fukuoka",
+      "Marine World Uminonakamichi": "Marine World Uminonakamichi 18-28 Saitozaki Higashi-ku Fukuoka",
+      "Uminonakamichi Seaside Park": "Uminonakamichi Seaside Park 18-25 Saitozaki Higashi-ku Fukuoka",
+      "Fukuoka Asian Art Museum": "Fukuoka Asian Art Museum Riverain Center Building 3-1 Shimokawabatamachi Hakata-ku Fukuoka",
+      "Fukuoka City Museum": "Fukuoka City Museum 3-1-1 Momochihama Sawara-ku Fukuoka",
+      "manucoffee (Daimyo)": "manucoffee Daimyo 1-1-3 Daimyo Chuo-ku Fukuoka",
+      "Camellia (Hotel Okura Fukuoka)": "Camellia Hotel Okura Fukuoka 3-2 Shimokawabatamachi Hakata-ku Fukuoka",
+      "Serena (Hotel Nikko Fukuoka)": "Serena Hotel Nikko Fukuoka 2-18-25 Hakataekimae Hakata-ku Fukuoka",
+      "manucoffee roasters KUJIRA": "manucoffee roasters KUJIRA 1-18-28 Shirogane Chuo-ku Fukuoka",
+      "Ganso Motsunabe Rakutenchi (Sohonten)": "Ganso Motsunabe Rakutenchi Sohonten 1-19-18 Imaizumi Chuo-ku Fukuoka",
+      "Lounge & Bar Hakatagawa (Hotel Okura Fukuoka)": "Lounge & Bar Hakatagawa Hotel Okura Fukuoka 3-2 Shimokawabatamachi Hakata-ku Fukuoka",
+      "Pastry Boutique (Hotel Okura Fukuoka)": "Pastry Boutique Hotel Okura Fukuoka 3-2 Shimokawabatamachi Hakata-ku Fukuoka",
+      "manucoffee (Haruyoshi)": "manucoffee Haruyoshi Border Tower 3-11-2 Watanabedori Chuo-ku Fukuoka"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Fukuoka" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Shrines, castle ruins, art museums and family outings, with breakfast rooms, motsunabe dinners, hotel bars, a bakery and coffee shops checked against their own websites.";
+    cityGuide.highlights = ["Dazaifu Tenmangu","Ohori Park","Fukuoka Art Museum","Fukuoka Asian Art Museum"];
+    cityGuide.tip = "Plan museum days around staggered closures: the Fukuoka Art Museum, Fukuoka City Museum and the zoo close on Mondays, the Science Museum on Tuesdays and the Asian Art Museum on Wednesdays, each moving to the next weekday when that day is a public holiday.";
+    data.destinationFacts[cityKey] = "Plan museum days around staggered closures: the Fukuoka Art Museum, Fukuoka City Museum and the zoo close on Mondays, the Science Museum on Tuesdays and the Asian Art Museum on Wednesdays, each moving to the next weekday when that day is a public holiday.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Shrines, castle ruins, art museums and family outings, with breakfast rooms, motsunabe dinners, hotel bars, a bakery and coffee shops checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mon, Tue or Wed by venue",
+        "copy": "The Fukuoka Art Museum, Fukuoka City Museum and Fukuoka City Zoo close on Mondays, the Fukuoka City Science Museum on Tuesdays and the Fukuoka Asian Art Museum on Wednesdays, each moving to the next weekday after a public holiday. The Hakata Machiya Folk Museum closes on the fourth Monday of the month."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Reserve the hotel dining rooms",
+        "copy": "Le Champ d'Or at Hotel Okura Fukuoka is reservation-only and opens Friday dinners plus weekend and holiday lunches and dinners, while Yamazato closes on Tuesdays and Wednesdays unless they are holidays; both take bookings via TableCheck or the reservations desk on 092-262-1176 (10:00-18:00). Fukuoka Tower's observation deck costs 1,000 yen for adults."
+      },
+      {
+        "label": "Walk-in and timing",
+        "value": "Late entry can close early",
+        "copy": "Fukuoka Tower opens 9:30 to 22:00 with last entry at 21:30, which it says may come earlier when crowded. Canal City Hakata states it is open all year, with shops from 10:00 to 21:00 and restaurants from 11:00 to 23:00."
+      },
+      {
+        "label": "Rules",
+        "value": "Bags, cameras and dress",
+        "copy": "Fukuoka Tower does not store luggage, offers coin lockers on 1F and asks you not to bring food or drink onto the observation deck. The Fukuoka Art Museum bans video, flash, tripods and selfie sticks, and Le Champ d'Or refuses entry in shorts or sandals."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Split your days by district and by closing day, keeping Dazaifu for a morning and Momochihama's museum and tower for an afternoon into evening.",
+      intro: [
+        "Fukuoka's public museums stagger their closing days, so a little planning goes a long way. The Fukuoka Art Museum, inside Ohori Park, opens from 9:30 to 17:30 and closes on Mondays. Its Indian chintz exhibition from the Karun Thakar Collection runs from 17 October to 20 December 2026, alongside a 150th-anniversary show on the printmaker Yoshida Hiroshi until the same date. The Fukuoka Asian Art Museum occupies the seventh and eighth floors of the Riverain Center Building, closes on Wednesdays and stays open until 20:00 on Fridays and Saturdays.",
+        "The Asian Art Museum's South Asia special edition runs until 11 January 2027. Out in Momochihama, the Fukuoka City Museum closes on Mondays and shows its special exhibition 1999 until 11 January 2027. Fukuoka Tower, also on a Momochihama address, opens from 9:30 to 22:00 with last entry at 21:30, which it warns may come earlier when crowded. An adult ticket for the observation deck is 1,000 yen, coin lockers are on 1F, and you are asked not to bring food or drink up to the deck.",
+        "For a slower start, Dazaifu Tenmangu opens its gates at 6:30 from the autumn equinox and closes them at 19:00 from September to November and at 18:30 from December to March. Back in Hakata, the Hakata Machiya Folk Museum opens from 10:00 to 18:00, closes on the fourth Monday of the month, and charges 200 yen, with elementary and junior high pupils free. The Fukuoka Castle Ruins in Jonai are free to enter except during events, and families can add the Fukuoka City Zoo and Botanical Garden, open 9:00 to 17:00 except Mondays.",
+        "At Hotel Okura Fukuoka, Camellia serves breakfast from 6:30 to 10:00 with no regular closing day, and the Pastry Boutique on 1F sells baguettes and kouign-amann daily. Yamazato closes on Tuesdays and Wednesdays unless they are holidays, and Le Champ d'Or is reservation-only and turns away shorts and sandals. For motsunabe, Ganso Motsunabe Rakutenchi's Sohonten in Imaizumi opens from 17:00 to midnight all year. Hotel Nikko Fukuoka's main bar, Yakan Hiko, has piano sets Monday to Saturday, with a 1,360 yen cover charge during performances."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair Ohori Park with the Fukuoka Art Museum inside it, remembering the museum closes on Mondays."
+        ],
+        [
+          "A slower morning",
+          "Take breakfast at Camellia in Hotel Okura Fukuoka from 6:30, then walk to the Fukuoka Asian Art Museum, which shares its Shimokawabatamachi address and closes on Wednesdays."
+        ],
+        [
+          "Before booking",
+          "Le Champ d'Or takes reservations only and opens Friday dinners plus weekend and holiday meals, while Yamazato closes on Tuesdays and Wednesdays unless they are holidays."
+        ]
+      ],
+      trust: "All 27 distinct recommendations in this guide were checked against their operators' own websites on October 28, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();
