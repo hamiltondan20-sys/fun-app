@@ -5,6 +5,705 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Oxford, United Kingdom": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-27",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several official sites could not be read and those places were left out: the Covered Market and Turf Tavern (certificate errors), Blackwell's, Graduate Oxford, The Alchemist, Kazbar and The Old Bookbinders (403), Jericho Coffee Traders (429), Gee's and the Old Parsonage (connection errors), Turl Street Kitchen, Society Café, The Bear Inn and The Store Hotel (domains did not resolve), and Freud (no readable content). Opening hours were not published on the pages read for Christ Church, the Botanic Garden, Cherwell Boathouse, The Missing Bean and Pierre Victoire, and Malmaison's bar hours were not shown. Raoul's, Oli's Thai and Pierre Victoire showed no dated 2026 content, and Arbequina's Cowley Road hours were inconsistent on its own page.",
+    "sourceUrls": [
+      "docs/content-research/oxford-2026-10-27.md",
+      "docs/content-research/oxford-2026-10-27.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Radcliffe Camera",
+        "url": "https://visit.bodleian.ox.ac.uk/tours",
+        "checkedOn": "2026-10-27",
+        "reason": "Official Bodleian pages give no address for the building; entry only on a booked Bodleian tour, covered under Bodleian Library"
+      },
+      {
+        "name": "Punting on the Cherwell",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place (covered by Magdalen Bridge Boathouse and Cherwell Boathouse)"
+      },
+      {
+        "name": "Christ Church Picture Gallery",
+        "url": "https://www.chch.ox.ac.uk/visit/picture-gallery",
+        "checkedOn": "2026-10-27",
+        "reason": "Official page: \"closed for a period of refurbishment\" with no reopening date"
+      },
+      {
+        "name": "Covered Market",
+        "url": "https://www.oxford-coveredmarket.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "Certificate error on www.oxford-coveredmarket.co.uk (hostname not in certificate); not bypassed"
+      },
+      {
+        "name": "Turl Street Kitchen",
+        "url": "https://www.turlstreetkitchen.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "Fetch failed: domain did not resolve (ENOTFOUND); not evidence of closure"
+      },
+      {
+        "name": "Gee's",
+        "url": "https://www.gees-restaurant.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "Fetch failed: TLS internal error; not evidence of closure"
+      },
+      {
+        "name": "Old Parsonage Hotel",
+        "url": "https://www.oldparsonage-hotel.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "Fetch failed: connection reset, then connection refused; not evidence of closure"
+      },
+      {
+        "name": "Jericho Coffee Traders",
+        "url": "https://www.jerichocoffeetraders.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 429 Too Many Requests on repeated attempts; not evidence of closure"
+      },
+      {
+        "name": "Blackwell's (Broad Street)",
+        "url": "https://blackwells.co.uk/bookshop/shops/oxford",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 403 Forbidden"
+      },
+      {
+        "name": "Graduate Oxford (The Randolph)",
+        "url": "https://www.hilton.com/en/hotels/tupgogu-graduate-oxford/",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 403 Forbidden on operator page"
+      },
+      {
+        "name": "The Alchemist (Oxford)",
+        "url": "https://www.thealchemistbars.com/venue/oxford/",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 403 Forbidden"
+      },
+      {
+        "name": "Kazbar",
+        "url": "https://www.kazbar.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 403 Forbidden"
+      },
+      {
+        "name": "The Old Bookbinders",
+        "url": "https://www.oldbookbinders.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 403 Forbidden"
+      },
+      {
+        "name": "Turf Tavern",
+        "url": "https://www.turftavern-oxford.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "Certificate error (hostname mismatch); not bypassed"
+      },
+      {
+        "name": "The Bear Inn",
+        "url": "https://www.thebearoxford.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "Fetch failed: domain did not resolve (ENOTFOUND); official URL unverified"
+      },
+      {
+        "name": "The Varsity Club",
+        "url": "https://www.varsityclub.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "Domain shows a registrar parking page; no official content readable"
+      },
+      {
+        "name": "Society Café",
+        "url": "https://www.societycafe.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "Fetch failed: domain did not resolve (ENOTFOUND)"
+      },
+      {
+        "name": "Freud",
+        "url": "https://www.freud.eu/oxford",
+        "checkedOn": "2026-10-27",
+        "reason": "Page returned no readable content"
+      },
+      {
+        "name": "Colombia Coffee",
+        "url": "https://www.colombiacoffee.co.uk/",
+        "checkedOn": "2026-10-27",
+        "reason": "Domain redirects to a domain-for-sale page; no official content"
+      },
+      {
+        "name": "The Store Hotel rooftop",
+        "url": "https://www.thestorehotels.com/oxford/",
+        "checkedOn": "2026-10-27",
+        "reason": "Fetch failed: domain did not resolve (ENOTFOUND)"
+      },
+      {
+        "name": "GAIL's (Oxford)",
+        "url": "https://gail.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "No Oxford branch page found on official site (locations URL 404)"
+      },
+      {
+        "name": "New College",
+        "url": "https://www.new.ox.ac.uk/visiting-new-college",
+        "checkedOn": "2026-10-27",
+        "reason": "Visiting page returned HTTP 404; not checked further"
+      },
+      {
+        "name": "University Church tower",
+        "url": "https://www.universitychurch.ox.ac.uk/tower-visit",
+        "checkedOn": "2026-10-27",
+        "reason": "Tower visit page returned HTTP 404; church itself confirmed"
+      },
+      {
+        "name": "College chapel visit",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Bookshop afternoon",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "a pub lunch",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Oxford market or cafe",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local dinner in City Centre",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Jericho",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Christ Church Meadow",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in City Centre",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost City Centre walk",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Jericho",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Christ Church Meadow",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Christ Church Meadow",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Bodleian Library",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in City Centre",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Punting on the Cherwell",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Jericho",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Radcliffe Camera",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "City Centre evening",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Jericho",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Christ Church Meadow",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through City Centre",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Bodleian Library",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Jericho",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Christ Church Meadow",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near City Centre",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Bodleian Library",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "City Centre cafe or market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided College chapel visit",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Christ Church Meadow",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Christ Church Meadow",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond City Centre",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near City Centre",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Jericho bakery or market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Bodleian Library",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Christ Church Meadow",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near City Centre",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Radcliffe Camera",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Christ Church Meadow",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in City Centre",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Jericho",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Christ Church Meadow",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near City Centre",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near City Centre",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Jericho",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Christ Church",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near City Centre",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Jericho morning market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Bodleian Library",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Christ Church Meadow",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near City Centre",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Jericho",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Christ Church Meadow",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Bodleian Library": {
+        "url": "https://visit.bodleian.ox.ac.uk/plan-your-visit",
+        "sourceType": "official public operator (Bodleian Libraries, University of Oxford)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Current exhibition Wonder of Birds runs \"Until 3 January 2027\"; tours bookable from £12.50 (30-minute guided tour). Entry to the Old Library or Radcliffe Camera requires a tour: \"you will need to book onto a Bodleian tour.\""
+      },
+      "Christ Church": {
+        "url": "https://www.chch.ox.ac.uk/visit/tickets-and-information",
+        "sourceType": "operator's own site (Christ Church, University of Oxford)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Multimedia and guided tour tickets \"are released each Friday\"; page lists \"Known closures for 2026\". Guided tours need children aged 11+, and the FAQ notes \"Guiding is suspended on site\"."
+      },
+      "Ashmolean Museum": {
+        "url": "https://www.ashmolean.org/plan-your-visit",
+        "sourceType": "official public operator (University of Oxford museum)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Ticketed exhibition Aphrodite: The Making of a Goddess, 8 Oct 2026 - 11 Apr 2027; free display Sisters, Brothers, Others open until 7 Mar 2027. Entry free; booking \"strongly recommended\" for Aphrodite."
+      },
+      "Pitt Rivers Museum": {
+        "url": "https://www.prm.ox.ac.uk/visit",
+        "sourceType": "official public operator (University of Oxford museum)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Lists dated closures including \"Monday 1 February 2027: closed for an internal event\". \"Entry is free.\""
+      },
+      "Museum of Natural History": {
+        "url": "https://oumnh.ox.ac.uk/visit-us",
+        "sourceType": "official public operator (University of Oxford museum)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Main exhibition '34: The critical raw materials shaping our future, 17 June 2026 to 13 April 2027 (homepage). Entry \"free and not ticketed\"; no cloakroom."
+      },
+      "History of Science Museum": {
+        "url": "https://www.hsm.ox.ac.uk/plan-your-visit",
+        "sourceType": "official public operator (University of Oxford museum)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Current displays include Lyra's Worlds and Making Waves; general admission free, no booking needed. Notice that the basement lift is out of order."
+      },
+      "Oxford Botanic Garden": {
+        "url": "https://www.obga.ox.ac.uk/faqs",
+        "sourceType": "official public operator (University of Oxford)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Ticket guidance current: pre-booking not mandatory, tickets sold at the door, booking recommended at busy periods; \"Dogs are not permitted\" except assistance dogs."
+      },
+      "Magdalen College": {
+        "url": "https://www.magd.ox.ac.uk/visiting-magdalen/",
+        "sourceType": "operator's own site (Magdalen College)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Dated notices for 2026 closures and \"New Year's Day (1 January 2027): open 10am to 3.30pm\". Adults £10, card payment only, tickets online or on the day."
+      },
+      "Sheldonian Theatre": {
+        "url": "https://www.sheldonian.ox.ac.uk/opening-hours",
+        "sourceType": "official public operator (University of Oxford)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Hours notice: \"usually open to the public Monday - Sunday 10:00 - 16:30\"; \"30 minute Sheldonian Guided Tours take place at 11:15 & 14:30\". Closures happen for ceremonies and events."
+      },
+      "University Church of St Mary the Virgin": {
+        "url": "https://www.universitychurch.ox.ac.uk/",
+        "sourceType": "operator's own site (University Church)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Published opening hours notice; tower visit section linked but its page could not be read."
+      },
+      "Magdalen Bridge Boathouse": {
+        "url": "https://www.oxfordpunting.co.uk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Current prices: punts for up to 5 \"cost £35 per hour\"; chauffeured punt £50 per 30 mins. \"There is no need to book a boat in advance on a Monday to Friday.\" Footer © 2026."
+      },
+      "Oxford Castle & Prison": {
+        "url": "https://www.oxfordcastleandprison.co.uk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Ghost Fest 2026 \"23-31 October\"; Spectre Ghost Tour \"Every Friday, from 18:30\" through 31 December 2026; online booking with 10% off guided tours."
+      },
+      "The Grand Café": {
+        "url": "https://www.thegrandcafe.co.uk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Hours published; \"we are unable to reserve tables\"; serves \"lunch, cream teas and high teas\". Footer \"2016-2026\"."
+      },
+      "The Vaults & Garden": {
+        "url": "https://www.thevaultsandgarden.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Breakfast (Full English), changing lunch specials and cream tea with scones; dated event Sat 26 Sep 2026 closing dinner. A site post says \"Now open daily from 8 AM\"."
+      },
+      "Cherwell Boathouse": {
+        "url": "https://www.cherwellboathouse.co.uk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Tables bookable via OpenTable; \"Christmas party bookings are open\"; punting \"7 days a week\". Footer \"Copyright © 2026\"."
+      },
+      "Quod": {
+        "url": "https://www.quod.co.uk/book-a-table/",
+        "sourceType": "operator's own site (Quod / Old Bank Hotel)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Online booking; Old Bank Hotel advertises \"BOOK YOUR 2026 CHRISTMAS STAY\" including breakfast and Christmas lunch at Quod, whose bar is described as \"show-stopping onyx bar\"."
+      },
+      "Branca": {
+        "url": "https://www.branca.co.uk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Christmas Party Menu \"25 Nov - 24 Dec 2026\"; nominated in the Oxford Food Awards 2026; online table booking."
+      },
+      "Brasserie Blanc (Walton Street)": {
+        "url": "https://www.brasserieblanc.com/restaurants/oxford",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Christmas party menu with \"Book by 31st October\" offer and festive opening times; regular Moules Mondays and Wednesday steak night."
+      },
+      "Arbequina (Covered Market)": {
+        "url": "https://www.arbequina.co.uk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Current dated hours notice for the Covered Market site and booking link for both sites. Cowley Road hours are inconsistent on the page."
+      },
+      "Oli's Thai": {
+        "url": "https://www.olisthai.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Booking open: \"all bookings are made through the website\"; does not admit children under 12. Only dated item is \"Copyright © 2025\"."
+      },
+      "Pierre Victoire": {
+        "url": "https://www.pierrevictoire.co.uk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Online reservations and two- and three-course Prix Fixe menus; phone bookings \"12-5pm\". Footer \"© Pierre Victoire 2025\"."
+      },
+      "The Ivy Oxford Brasserie": {
+        "url": "https://ivycollection.com//restaurants-near-me/the-ivy-south-east/the-ivy-oxford-brasserie/",
+        "sourceType": "operator's own site (The Ivy Collection)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "OpenTable booking; Halloween breakfast banquet 31 October and 1 November; footer © 2026."
+      },
+      "Malmaison Oxford": {
+        "url": "https://www.malmaison.com/locations/oxford/chez-mal-brasserie-bar/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Notice: from 22 September 2026 until about May 2027 \"the bar and brasserie will only be accessible via stairs\" during lift refurbishment; Happy Hour Monday to Thursday."
+      },
+      "Raoul's": {
+        "url": "https://www.raoulsbar.com/bookings",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Bookings page invites you to book a space or visit in person; cocktail classes offered. No dated 2026 content."
+      },
+      "The Missing Bean (Turl Street)": {
+        "url": "https://www.themissingbean.co.uk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Turl St listed among current cafés; footer \"© 2026, Missing Bean\" and 2026 award finalist badge."
+      },
+      "Ben's Cookies (Covered Market)": {
+        "url": "https://www.benscookies.com/stores/oxford-covered-market/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Store page lists current weekly and bank holiday hours; first shop opened here in 1984 and \"is still going strong today\"."
+      },
+      "Nash's Bakery (Blackbird Leys Road)": {
+        "url": "https://www.nashsbakery.co.uk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Hours in site header; footer \"© 2026. All Rights Reserved. Nask Bakeries Ltd.\" Outside the centre."
+      },
+      "Mowgli (Westgate)": {
+        "url": "https://www.mowglistreetfood.com/restaurants/oxford/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Online booking plus walk-ins; Christmas notices (closed Christmas Day, Boxing Day and New Year's Day); events brochure \"Oct-26\"."
+      },
+      "The Perch": {
+        "url": "https://www.the-perch.co.uk/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Game Night Friday 6 November with a 2026 game menu; Christmas Party Menu 2026; card payments only."
+      },
+      "The Head of the River": {
+        "url": "https://www.headoftheriveroxford.co.uk/",
+        "sourceType": "operator's own site (Fuller's)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Table and room booking live; brunch \"everyday from 10am\"; footer \"© Fuller Smith & Turner 2026\"."
+      },
+      "The King's Arms": {
+        "url": "https://www.kingsarmsoxford.co.uk/",
+        "sourceType": "operator's own site (Young's)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "\"Book Now\" table booking; Christmas menus start 17 November (no year stated); breakfast Monday to Saturday 9am-12pm."
+      }
+    }
+  },
   "Bath, United Kingdom": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-27",

@@ -1,0 +1,976 @@
+{
+  "city": "Oxford, United Kingdom",
+  "checkedOn": "2026-10-27",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Bodleian Library",
+      "kind": "landmark",
+      "url": "https://visit.bodleian.ox.ac.uk/plan-your-visit",
+      "sourceType": "official public operator (Bodleian Libraries, University of Oxford)",
+      "address": "Weston Library: Broad Street, OX1 3BG; tour ticket holders enter the Old Library \"via the Great Gate on Catte Street\"",
+      "operatingEvidence": "Current exhibition Wonder of Birds runs \"Until 3 January 2027\"; tours bookable from £12.50 (30-minute guided tour). Entry to the Old Library or Radcliffe Camera requires a tour: \"you will need to book onto a Bodleian tour.\"",
+      "hours": "Monday to Friday 9:00-17:00; Saturday and Sunday 10:00-17:00 (exhibition galleries the same)",
+      "confidence": "high"
+    },
+    {
+      "name": "Christ Church",
+      "kind": "landmark",
+      "url": "https://www.chch.ox.ac.uk/visit/tickets-and-information",
+      "sourceType": "operator's own site (Christ Church, University of Oxford)",
+      "address": "Christ Church, St Aldate's, Oxford, OX1 1DP, United Kingdom",
+      "operatingEvidence": "Multimedia and guided tour tickets \"are released each Friday\"; page lists \"Known closures for 2026\". Guided tours need children aged 11+, and the FAQ notes \"Guiding is suspended on site\".",
+      "hours": "not published on the pages read",
+      "confidence": "high"
+    },
+    {
+      "name": "Ashmolean Museum",
+      "kind": "museum",
+      "url": "https://www.ashmolean.org/plan-your-visit",
+      "sourceType": "official public operator (University of Oxford museum)",
+      "address": "Beaumont Street, Oxford OX1 2PH",
+      "operatingEvidence": "Ticketed exhibition Aphrodite: The Making of a Goddess, 8 Oct 2026 - 11 Apr 2027; free display Sisters, Brothers, Others open until 7 Mar 2027. Entry free; booking \"strongly recommended\" for Aphrodite.",
+      "hours": "Open daily 10am-5pm, last entry 4.45pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Pitt Rivers Museum",
+      "kind": "museum",
+      "url": "https://www.prm.ox.ac.uk/visit",
+      "sourceType": "official public operator (University of Oxford museum)",
+      "address": "South Parks Rd, Oxford, OX1 3PP; visitor entry through the Museum of Natural History on Parks Road, OX1 3PW",
+      "operatingEvidence": "Lists dated closures including \"Monday 1 February 2027: closed for an internal event\". \"Entry is free.\"",
+      "hours": "Mondays 12.00-17.00 (Bank Holiday and half-term Mondays 10.00-17.00); Tuesday to Sunday 10.00-17.00",
+      "confidence": "high"
+    },
+    {
+      "name": "Museum of Natural History",
+      "kind": "museum",
+      "url": "https://oumnh.ox.ac.uk/visit-us",
+      "sourceType": "official public operator (University of Oxford museum)",
+      "address": "Museum of Natural History, University of Oxford, Parks Rd, Oxford OX1 3PW",
+      "operatingEvidence": "Main exhibition '34: The critical raw materials shaping our future, 17 June 2026 to 13 April 2027 (homepage). Entry \"free and not ticketed\"; no cloakroom.",
+      "hours": "Monday to Sunday 10:00-17:00, last admission 16:45; closed 24, 25 and 26 December",
+      "confidence": "high"
+    },
+    {
+      "name": "History of Science Museum",
+      "kind": "museum",
+      "url": "https://www.hsm.ox.ac.uk/plan-your-visit",
+      "sourceType": "official public operator (University of Oxford museum)",
+      "address": "History of Science Museum, Broad Street, Oxford, OX1 3AZ",
+      "operatingEvidence": "Current displays include Lyra's Worlds and Making Waves; general admission free, no booking needed. Notice that the basement lift is out of order.",
+      "hours": "\"Tuesday-Sunday, 10-5pm. Last admission: 4.50pm\"; closed Mondays",
+      "confidence": "medium"
+    },
+    {
+      "name": "Oxford Botanic Garden",
+      "kind": "park",
+      "url": "https://www.obga.ox.ac.uk/faqs",
+      "sourceType": "official public operator (University of Oxford)",
+      "address": "Rose Lane, Oxford, OX1 4AZ",
+      "operatingEvidence": "Ticket guidance current: pre-booking not mandatory, tickets sold at the door, booking recommended at busy periods; \"Dogs are not permitted\" except assistance dogs.",
+      "hours": "not published on the pages read",
+      "confidence": "medium"
+    },
+    {
+      "name": "Magdalen College",
+      "kind": "landmark",
+      "url": "https://www.magd.ox.ac.uk/visiting-magdalen/",
+      "sourceType": "operator's own site (Magdalen College)",
+      "address": "Oxford, OX1 4AU, United Kingdom",
+      "operatingEvidence": "Dated notices for 2026 closures and \"New Year's Day (1 January 2027): open 10am to 3.30pm\". Adults £10, card payment only, tickets online or on the day.",
+      "hours": "Daily from early January to 21 December, 10am until dusk or 5pm, whichever is earlier (6.30pm July to September); closed 22-31 December",
+      "confidence": "high"
+    },
+    {
+      "name": "Sheldonian Theatre",
+      "kind": "landmark",
+      "url": "https://www.sheldonian.ox.ac.uk/opening-hours",
+      "sourceType": "official public operator (University of Oxford)",
+      "address": "Sheldonian Theatre, Broad Street, Oxford, OX1 3AZ",
+      "operatingEvidence": "Hours notice: \"usually open to the public Monday - Sunday 10:00 - 16:30\"; \"30 minute Sheldonian Guided Tours take place at 11:15 & 14:30\". Closures happen for ceremonies and events.",
+      "hours": "October: Monday to Sunday 10:00-16:30 (usually)",
+      "confidence": "medium"
+    },
+    {
+      "name": "University Church of St Mary the Virgin",
+      "kind": "landmark",
+      "url": "https://www.universitychurch.ox.ac.uk/",
+      "sourceType": "operator's own site (University Church)",
+      "address": "The High Street, Oxford, OX1 4BJ",
+      "operatingEvidence": "Published opening hours notice; tower visit section linked but its page could not be read.",
+      "hours": "Monday - Friday 9.30am - 5.00pm; Sunday 12noon - 5.00pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Magdalen Bridge Boathouse",
+      "kind": "scenic",
+      "url": "https://www.oxfordpunting.co.uk/",
+      "sourceType": "operator's own site",
+      "address": "Magdalen Bridge, Oxford, Oxfordshire OX1 4AU, \"Situated underneath Magdalen College Tower\"",
+      "operatingEvidence": "Current prices: punts for up to 5 \"cost £35 per hour\"; chauffeured punt £50 per 30 mins. \"There is no need to book a boat in advance on a Monday to Friday.\" Footer © 2026.",
+      "hours": "7 days a week from 1 February (weather permitting) to 30 November, 9:30am to 9:00pm or one hour before sunset",
+      "confidence": "high"
+    },
+    {
+      "name": "Oxford Castle & Prison",
+      "kind": "landmark",
+      "url": "https://www.oxfordcastleandprison.co.uk/",
+      "sourceType": "operator's own site",
+      "address": "Oxford Castle, OX1 1AY",
+      "operatingEvidence": "Ghost Fest 2026 \"23-31 October\"; Spectre Ghost Tour \"Every Friday, from 18:30\" through 31 December 2026; online booking with 10% off guided tours.",
+      "hours": "Today and tomorrow 10am - 5:30pm (full calendar linked)",
+      "confidence": "high"
+    },
+    {
+      "name": "The Grand Café",
+      "kind": "cafe",
+      "url": "https://www.thegrandcafe.co.uk/",
+      "sourceType": "operator's own site",
+      "address": "The Grand Café, 84 The High Street OXFORD, OX1 4BG",
+      "operatingEvidence": "Hours published; \"we are unable to reserve tables\"; serves \"lunch, cream teas and high teas\". Footer \"2016-2026\".",
+      "hours": "Monday - Thursday 9:00am - 6:30pm; Friday to Sunday 9:00am - 7:00pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Vaults & Garden",
+      "kind": "cafe",
+      "url": "https://www.thevaultsandgarden.com/",
+      "sourceType": "operator's own site",
+      "address": "2 King Edward St, Oxford OX1 4HS (site notes it moved from Radcliffe Square)",
+      "operatingEvidence": "Breakfast (Full English), changing lunch specials and cream tea with scones; dated event Sat 26 Sep 2026 closing dinner. A site post says \"Now open daily from 8 AM\".",
+      "hours": "Mon-Fri 8:30am-5pm; Sat 8am-5:30pm; Sun 8am-5pm (later post: \"Now open daily from 8 AM\")",
+      "confidence": "medium"
+    },
+    {
+      "name": "Cherwell Boathouse",
+      "kind": "meal",
+      "url": "https://www.cherwellboathouse.co.uk/",
+      "sourceType": "operator's own site",
+      "address": "50 Bardwell Road, Oxford, England OX2 6ST",
+      "operatingEvidence": "Tables bookable via OpenTable; \"Christmas party bookings are open\"; punting \"7 days a week\". Footer \"Copyright © 2026\".",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Quod",
+      "kind": "meal",
+      "url": "https://www.quod.co.uk/book-a-table/",
+      "sourceType": "operator's own site (Quod / Old Bank Hotel)",
+      "address": "Old Bank Hotel, 92-94 High St, Oxford OX1 4BJ (oldbankhotel.co.uk/location)",
+      "operatingEvidence": "Online booking; Old Bank Hotel advertises \"BOOK YOUR 2026 CHRISTMAS STAY\" including breakfast and Christmas lunch at Quod, whose bar is described as \"show-stopping onyx bar\".",
+      "hours": "Breakfast 7-11am; Set Lunch 12-6pm (Monday to Friday); All Day Menu 11:30am-11pm; Afternoon Tea 3-5:30pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Branca",
+      "kind": "meal",
+      "url": "https://www.branca.co.uk/",
+      "sourceType": "operator's own site",
+      "address": "Restaurant & Bar: 110-111 Walton Street, Oxford OX2 6AJ; Deli & Cafe: 109 Walton Street, Oxford OX2 6AJ",
+      "operatingEvidence": "Christmas Party Menu \"25 Nov - 24 Dec 2026\"; nominated in the Oxford Food Awards 2026; online table booking.",
+      "hours": "Deli & Cafe \"8am - 8pm Daily\"; restaurant last bookings Wed-Fri 5pm-9pm, Sat 12pm-9pm, Sun 12pm-8pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Brasserie Blanc (Walton Street)",
+      "kind": "meal",
+      "url": "https://www.brasserieblanc.com/restaurants/oxford",
+      "sourceType": "operator's own site",
+      "address": "71-72 Walton Street, Oxford, OX2 6AG",
+      "operatingEvidence": "Christmas party menu with \"Book by 31st October\" offer and festive opening times; regular Moules Mondays and Wednesday steak night.",
+      "hours": "Mon-Fri 12pm-11pm; Sat-Sun 10am-11pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Arbequina (Covered Market)",
+      "kind": "meal",
+      "url": "https://www.arbequina.co.uk/",
+      "sourceType": "operator's own site",
+      "address": "11-15 The Market, Oxford, OX1 3DU (second site: 72-74 Cowley Road, Oxford OX4 1JB)",
+      "operatingEvidence": "Current dated hours notice for the Covered Market site and booking link for both sites. Cowley Road hours are inconsistent on the page.",
+      "hours": "Covered Market: Sunday-Wednesday closed; Thursday 12-4pm; Friday & Saturday 12-6pm (as listed for October 2026)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Oli's Thai",
+      "kind": "meal",
+      "url": "https://www.olisthai.com/",
+      "sourceType": "operator's own site",
+      "address": "38 Magdalen Rd, Oxford, England, OX4 1RB",
+      "operatingEvidence": "Booking open: \"all bookings are made through the website\"; does not admit children under 12. Only dated item is \"Copyright © 2025\".",
+      "hours": "Tuesday 5:00-9:00pm; Wednesday and Friday 12:00-3:00pm and 5:00-9:00pm; Monday, Thursday, Saturday and Sunday closed",
+      "confidence": "medium"
+    },
+    {
+      "name": "Pierre Victoire",
+      "kind": "meal",
+      "url": "https://www.pierrevictoire.co.uk/",
+      "sourceType": "operator's own site",
+      "address": "9 Little Clarendon Street, Oxford OX1 2HP",
+      "operatingEvidence": "Online reservations and two- and three-course Prix Fixe menus; phone bookings \"12-5pm\". Footer \"© Pierre Victoire 2025\".",
+      "hours": "not published (separate hours page unreadable)",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Ivy Oxford Brasserie",
+      "kind": "meal",
+      "url": "https://ivycollection.com//restaurants-near-me/the-ivy-south-east/the-ivy-oxford-brasserie/",
+      "sourceType": "operator's own site (The Ivy Collection)",
+      "address": "120-121 High Street, Oxford, OX1 4DF",
+      "operatingEvidence": "OpenTable booking; Halloween breakfast banquet 31 October and 1 November; footer © 2026.",
+      "hours": "Monday to Thursday 08:30-23:30; Friday and Saturday 08:30-00:00; Sunday 08:30-23:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Malmaison Oxford",
+      "kind": "bar",
+      "url": "https://www.malmaison.com/locations/oxford/chez-mal-brasserie-bar/",
+      "sourceType": "operator's own site",
+      "address": "Oxford Castle, 3 New Rd, Oxford OX1 1AY",
+      "operatingEvidence": "Notice: from 22 September 2026 until about May 2027 \"the bar and brasserie will only be accessible via stairs\" during lift refurbishment; Happy Hour Monday to Thursday.",
+      "hours": "Breakfast Mon-Fri 7am-10am, Sat and Sun 8am-11am; bar hours not published",
+      "confidence": "high"
+    },
+    {
+      "name": "Raoul's",
+      "kind": "bar",
+      "url": "https://www.raoulsbar.com/bookings",
+      "sourceType": "operator's own site",
+      "address": "32 Walton Street, Jericho, Oxford, OX2 6AA",
+      "operatingEvidence": "Bookings page invites you to book a space or visit in person; cocktail classes offered. No dated 2026 content.",
+      "hours": "Tuesday to Thursday 6pm-1am; Friday and Saturday 5pm-2am",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Missing Bean (Turl Street)",
+      "kind": "cafe",
+      "url": "https://www.themissingbean.co.uk/",
+      "sourceType": "operator's own site",
+      "address": "14 Turl Street",
+      "operatingEvidence": "Turl St listed among current cafés; footer \"© 2026, Missing Bean\" and 2026 award finalist badge.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Ben's Cookies (Covered Market)",
+      "kind": "bakery",
+      "url": "https://www.benscookies.com/stores/oxford-covered-market/",
+      "sourceType": "operator's own site",
+      "address": "108 - 109 Covered Market, Oxford, OX1 3DZ",
+      "operatingEvidence": "Store page lists current weekly and bank holiday hours; first shop opened here in 1984 and \"is still going strong today\".",
+      "hours": "Mon-Wed 09:15-17:30; Thu-Fri 09:15-18:00; Sat 09:15-19:00; Sun and Bank Holidays 11:00-17:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Nash's Bakery (Blackbird Leys Road)",
+      "kind": "bakery",
+      "url": "https://www.nashsbakery.co.uk/",
+      "sourceType": "operator's own site",
+      "address": "108 Blackbird Leys Road, Oxford, OX4 6HS",
+      "operatingEvidence": "Hours in site header; footer \"© 2026. All Rights Reserved. Nask Bakeries Ltd.\" Outside the centre.",
+      "hours": "Mon - Sat 8:00 - 17:00 (general header hours)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mowgli (Westgate)",
+      "kind": "meal",
+      "url": "https://www.mowglistreetfood.com/restaurants/oxford/",
+      "sourceType": "operator's own site",
+      "address": "Mowgli Street Food Oxford, 309 The Westgate, Queen Street, Oxford, OX1 1PG",
+      "operatingEvidence": "Online booking plus walk-ins; Christmas notices (closed Christmas Day, Boxing Day and New Year's Day); events brochure \"Oct-26\".",
+      "hours": "Mon-Thu 12pm-10pm; Fri & Sat 12pm-10:30pm; Sun 12pm-9:30pm",
+      "confidence": "high"
+    },
+    {
+      "name": "The Perch",
+      "kind": "meal",
+      "url": "https://www.the-perch.co.uk/",
+      "sourceType": "operator's own site",
+      "address": "The Perch Inn, Binsey, Oxford, OX2 0NG",
+      "operatingEvidence": "Game Night Friday 6 November with a 2026 game menu; Christmas Party Menu 2026; card payments only.",
+      "hours": "Pub Monday to Sunday 11am-10pm; kitchen 12noon-9pm",
+      "confidence": "high"
+    },
+    {
+      "name": "The Head of the River",
+      "kind": "meal",
+      "url": "https://www.headoftheriveroxford.co.uk/",
+      "sourceType": "operator's own site (Fuller's)",
+      "address": "Folly Bridge, St. Aldates, Oxford, OX1 4LB",
+      "operatingEvidence": "Table and room booking live; brunch \"everyday from 10am\"; footer \"© Fuller Smith & Turner 2026\".",
+      "hours": "Mon-Fri 07:00-23:00 (food 07:00-21:00); Sat 08:00-23:00 (food 08:00-21:00); Sun 08:00-22:00 (food 08:00-20:00)",
+      "confidence": "medium"
+    },
+    {
+      "name": "The King's Arms",
+      "kind": "meal",
+      "url": "https://www.kingsarmsoxford.co.uk/",
+      "sourceType": "operator's own site (Young's)",
+      "address": "40 Holywell St, Oxford, OX1 3SP",
+      "operatingEvidence": "\"Book Now\" table booking; Christmas menus start 17 November (no year stated); breakfast Monday to Saturday 9am-12pm.",
+      "hours": "Monday to Saturday 9:00-00:00; Sunday 11:00-00:00",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Radcliffe Camera",
+      "reason": "Official Bodleian pages give no address for the building; entry only on a booked Bodleian tour, covered under Bodleian Library",
+      "url": "https://visit.bodleian.ox.ac.uk/tours"
+    },
+    {
+      "name": "Punting on the Cherwell",
+      "reason": "generic, not a place (covered by Magdalen Bridge Boathouse and Cherwell Boathouse)",
+      "url": ""
+    },
+    {
+      "name": "Christ Church Picture Gallery",
+      "reason": "Official page: \"closed for a period of refurbishment\" with no reopening date",
+      "url": "https://www.chch.ox.ac.uk/visit/picture-gallery"
+    },
+    {
+      "name": "Covered Market",
+      "reason": "Certificate error on www.oxford-coveredmarket.co.uk (hostname not in certificate); not bypassed",
+      "url": "https://www.oxford-coveredmarket.co.uk/"
+    },
+    {
+      "name": "Turl Street Kitchen",
+      "reason": "Fetch failed: domain did not resolve (ENOTFOUND); not evidence of closure",
+      "url": "https://www.turlstreetkitchen.co.uk/"
+    },
+    {
+      "name": "Gee's",
+      "reason": "Fetch failed: TLS internal error; not evidence of closure",
+      "url": "https://www.gees-restaurant.co.uk/"
+    },
+    {
+      "name": "Old Parsonage Hotel",
+      "reason": "Fetch failed: connection reset, then connection refused; not evidence of closure",
+      "url": "https://www.oldparsonage-hotel.co.uk/"
+    },
+    {
+      "name": "Jericho Coffee Traders",
+      "reason": "HTTP 429 Too Many Requests on repeated attempts; not evidence of closure",
+      "url": "https://www.jerichocoffeetraders.com/"
+    },
+    {
+      "name": "Blackwell's (Broad Street)",
+      "reason": "HTTP 403 Forbidden",
+      "url": "https://blackwells.co.uk/bookshop/shops/oxford"
+    },
+    {
+      "name": "Graduate Oxford (The Randolph)",
+      "reason": "HTTP 403 Forbidden on operator page",
+      "url": "https://www.hilton.com/en/hotels/tupgogu-graduate-oxford/"
+    },
+    {
+      "name": "The Alchemist (Oxford)",
+      "reason": "HTTP 403 Forbidden",
+      "url": "https://www.thealchemistbars.com/venue/oxford/"
+    },
+    {
+      "name": "Kazbar",
+      "reason": "HTTP 403 Forbidden",
+      "url": "https://www.kazbar.co.uk/"
+    },
+    {
+      "name": "The Old Bookbinders",
+      "reason": "HTTP 403 Forbidden",
+      "url": "https://www.oldbookbinders.co.uk/"
+    },
+    {
+      "name": "Turf Tavern",
+      "reason": "Certificate error (hostname mismatch); not bypassed",
+      "url": "https://www.turftavern-oxford.co.uk/"
+    },
+    {
+      "name": "The Bear Inn",
+      "reason": "Fetch failed: domain did not resolve (ENOTFOUND); official URL unverified",
+      "url": "https://www.thebearoxford.co.uk/"
+    },
+    {
+      "name": "The Varsity Club",
+      "reason": "Domain shows a registrar parking page; no official content readable",
+      "url": "https://www.varsityclub.co.uk/"
+    },
+    {
+      "name": "Society Café",
+      "reason": "Fetch failed: domain did not resolve (ENOTFOUND)",
+      "url": "https://www.societycafe.co.uk/"
+    },
+    {
+      "name": "Freud",
+      "reason": "Page returned no readable content",
+      "url": "https://www.freud.eu/oxford"
+    },
+    {
+      "name": "Colombia Coffee",
+      "reason": "Domain redirects to a domain-for-sale page; no official content",
+      "url": "https://www.colombiacoffee.co.uk/"
+    },
+    {
+      "name": "The Store Hotel rooftop",
+      "reason": "Fetch failed: domain did not resolve (ENOTFOUND)",
+      "url": "https://www.thestorehotels.com/oxford/"
+    },
+    {
+      "name": "GAIL's (Oxford)",
+      "reason": "No Oxford branch page found on official site (locations URL 404)",
+      "url": "https://gail.com/"
+    },
+    {
+      "name": "New College",
+      "reason": "Visiting page returned HTTP 404; not checked further",
+      "url": "https://www.new.ox.ac.uk/visiting-new-college"
+    },
+    {
+      "name": "University Church tower",
+      "reason": "Tower visit page returned HTTP 404; church itself confirmed",
+      "url": "https://www.universitychurch.ox.ac.uk/tower-visit"
+    },
+    {
+      "name": "College chapel visit",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Bookshop afternoon",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "a pub lunch",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Oxford market or cafe",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local dinner in City Centre",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Jericho",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Christ Church Meadow",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in City Centre",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost City Centre walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Jericho",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Christ Church Meadow",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Christ Church Meadow",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Bodleian Library",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in City Centre",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Punting on the Cherwell",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Jericho",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Radcliffe Camera",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "City Centre evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Jericho",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Christ Church Meadow",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through City Centre",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Bodleian Library",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Jericho",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Christ Church Meadow",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near City Centre",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Bodleian Library",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "City Centre cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided College chapel visit",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Christ Church Meadow",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Christ Church Meadow",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond City Centre",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near City Centre",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Jericho bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Bodleian Library",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Christ Church Meadow",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near City Centre",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Radcliffe Camera",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Christ Church Meadow",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in City Centre",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Jericho",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Christ Church Meadow",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near City Centre",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near City Centre",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Jericho",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Christ Church",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near City Centre",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Jericho morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Bodleian Library",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Christ Church Meadow",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near City Centre",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Jericho",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Christ Church Meadow",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Bodleian Library",
+        "Christ Church",
+        "Ashmolean Museum",
+        "Magdalen College"
+      ],
+      "bestFirstTimers": [
+        "Bodleian Library",
+        "Christ Church",
+        "Sheldonian Theatre",
+        "Magdalen Bridge Boathouse"
+      ],
+      "bestRestaurants": [
+        "Quod",
+        "Brasserie Blanc (Walton Street)",
+        "Branca",
+        "Cherwell Boathouse"
+      ],
+      "bestBudget": [
+        "Museum of Natural History",
+        "Pitt Rivers Museum",
+        "History of Science Museum",
+        "Ashmolean Museum"
+      ],
+      "bestLuxury": [
+        "Quod",
+        "The Ivy Oxford Brasserie",
+        "Cherwell Boathouse",
+        "Malmaison Oxford"
+      ],
+      "bestCouples": [
+        "Magdalen Bridge Boathouse",
+        "Cherwell Boathouse",
+        "The Perch",
+        "Oxford Botanic Garden"
+      ],
+      "bestKids": [
+        "Museum of Natural History",
+        "Pitt Rivers Museum",
+        "Oxford Castle & Prison",
+        "Oxford Botanic Garden"
+      ],
+      "bestSolo": [
+        "History of Science Museum",
+        "University Church of St Mary the Virgin",
+        "The Missing Bean (Turl Street)",
+        "Sheldonian Theatre"
+      ],
+      "bestUnique": [
+        "Pitt Rivers Museum",
+        "Oxford Castle & Prison",
+        "Malmaison Oxford",
+        "Magdalen Bridge Boathouse"
+      ],
+      "bestBreakfast": [
+        "Quod",
+        "The Vaults & Garden",
+        "The Head of the River",
+        "The King's Arms"
+      ],
+      "bestLunch": [
+        "The Grand Café",
+        "Arbequina (Covered Market)",
+        "Mowgli (Westgate)",
+        "The Perch"
+      ],
+      "bestDinner": [
+        "Brasserie Blanc (Walton Street)",
+        "Oli's Thai",
+        "Pierre Victoire",
+        "Branca"
+      ],
+      "bestCocktails": [
+        "Raoul's",
+        "Quod",
+        "Malmaison Oxford"
+      ],
+      "bestBakeries": [
+        "Ben's Cookies (Covered Market)",
+        "Nash's Bakery (Blackbird Leys Road)",
+        "Branca"
+      ],
+      "bestCoffee": [
+        "The Missing Bean (Turl Street)",
+        "The Grand Café",
+        "The Vaults & Garden"
+      ]
+    },
+    "queries": {
+      "Bodleian Library": "Bodleian Library Weston Library Broad Street Oxford",
+      "Christ Church": "Christ Church St Aldate's Oxford",
+      "Ashmolean Museum": "Ashmolean Museum Beaumont Street Oxford",
+      "Pitt Rivers Museum": "Pitt Rivers Museum South Parks Road Oxford",
+      "Museum of Natural History": "Oxford University Museum of Natural History Parks Road Oxford",
+      "History of Science Museum": "History of Science Museum Broad Street Oxford",
+      "Oxford Botanic Garden": "Oxford Botanic Garden Rose Lane Oxford",
+      "Magdalen College": "Magdalen College High Street Oxford",
+      "Sheldonian Theatre": "Sheldonian Theatre Broad Street Oxford",
+      "University Church of St Mary the Virgin": "University Church of St Mary the Virgin High Street Oxford",
+      "Magdalen Bridge Boathouse": "Magdalen Bridge Boathouse Magdalen Bridge Oxford",
+      "Oxford Castle & Prison": "Oxford Castle & Prison New Road Oxford",
+      "The Grand Café": "The Grand Café 84 High Street Oxford",
+      "The Vaults & Garden": "The Vaults & Garden 2 King Edward Street Oxford",
+      "Cherwell Boathouse": "Cherwell Boathouse 50 Bardwell Road Oxford",
+      "Quod": "Quod Old Bank Hotel 92-94 High Street Oxford",
+      "Branca": "Branca 110-111 Walton Street Oxford",
+      "Brasserie Blanc (Walton Street)": "Brasserie Blanc 71-72 Walton Street Oxford",
+      "Arbequina (Covered Market)": "Arbequina 11-15 The Market Covered Market Oxford",
+      "Oli's Thai": "Oli's Thai 38 Magdalen Road Oxford",
+      "Pierre Victoire": "Pierre Victoire 9 Little Clarendon Street Oxford",
+      "The Ivy Oxford Brasserie": "The Ivy Oxford Brasserie 120-121 High Street Oxford",
+      "Malmaison Oxford": "Malmaison 3 New Road Oxford",
+      "Raoul's": "Raoul's 32 Walton Street Oxford",
+      "The Missing Bean (Turl Street)": "The Missing Bean 14 Turl Street Oxford",
+      "Ben's Cookies (Covered Market)": "Ben's Cookies 108-109 Covered Market Oxford",
+      "Nash's Bakery (Blackbird Leys Road)": "Nash's Bakery 108 Blackbird Leys Road Oxford",
+      "Mowgli (Westgate)": "Mowgli Street Food 309 The Westgate Queen Street Oxford",
+      "The Perch": "The Perch Binsey Oxford",
+      "The Head of the River": "The Head of the River Folly Bridge St Aldates Oxford",
+      "The King's Arms": "The King's Arms 40 Holywell Street Oxford"
+    },
+    "summary": "University museums, libraries, colleges and the river, with breakfast spots, pubs, dinners, bakeries and late bars checked against their own websites.",
+    "highlights": [
+      "Bodleian Library",
+      "Christ Church",
+      "Ashmolean Museum",
+      "Museum of Natural History"
+    ],
+    "tip": "The History of Science Museum is closed on Mondays and the Pitt Rivers Museum opens only at 12.00 on most Mondays, so plan museum time for another day if you can.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mondays and late December",
+        "copy": "The History of Science Museum is closed on Mondays, and the Museum of Natural History closes on 24, 25 and 26 December. Magdalen College is closed to visitors from 22 to 31 December."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book tours ahead",
+        "copy": "Christ Church releases its tour tickets each Friday, and the Bodleian's Old Library and Radcliffe Camera can be seen only on a booked tour. The Ashmolean strongly recommends booking for Aphrodite: The Making of a Goddess."
+      },
+      {
+        "label": "Walk-ins",
+        "value": "Some places don't reserve",
+        "copy": "The Grand Café does not reserve tables, and Magdalen Bridge Boathouse says there is no need to book a punt Monday to Friday. Oli's Thai takes bookings only through its website."
+      },
+      {
+        "label": "Rules",
+        "value": "Bags, ages and payment",
+        "copy": "Christ Church refuses bags larger than 40cm x 30cm x 20cm and has no left luggage, and the Museum of Natural History has no cloakroom. Oli's Thai doesn't admit children under 12, and The Perch takes cards only."
+      }
+    ],
+    "dek": "Book Christ Church and any Bodleian tour first, then fill the gaps with Oxford's free museums and a punt from Magdalen Bridge.",
+    "intro": [
+      "Oxford's university museums make an easy first day, and several are free. The Ashmolean on Beaumont Street opens daily from 10am to 5pm with free general entry, and its ticketed exhibition Aphrodite: The Making of a Goddess runs from 8 October 2026 to 11 April 2027; the museum strongly recommends booking for it. On Parks Road, the Museum of Natural History is free and open daily from 10:00 to 17:00, with its exhibition '34: The critical raw materials shaping our future on until 13 April 2027. You reach the Pitt Rivers Museum through it.",
+      "For the libraries, you can walk into the Weston Library on Broad Street without a ticket, but the Old Library and the Radcliffe Camera are open to you only on a booked Bodleian tour, with 30-minute guided tours from £12.50. Wonder of Birds is on show until 3 January 2027. Christ Church on St Aldate's releases tour tickets each Friday, turns away bags larger than 40cm x 30cm x 20cm and has no left luggage; its Picture Gallery is closed for refurbishment. Magdalen College charges adults £10 and takes card payments only.",
+      "On the river, Magdalen Bridge Boathouse hires self-drive punts for up to five people at £35 an hour and is open daily from 1 February (weather permitting) to 30 November; you don't need to book Monday to Friday. The Oxford Botanic Garden on Rose Lane sells tickets at the door but recommends booking at busy times, and admits only assistance dogs. A short way out, the Cherwell Boathouse on Bardwell Road and The Perch at Binsey both take table bookings, and The Perch accepts cards only, not cash.",
+      "For food, The Grand Café on the High Street doesn't reserve tables and opens at 9am every day. Quod at the Old Bank Hotel serves breakfast from 7am, and The King's Arms on Holywell Street serves breakfast Monday to Saturday. In Jericho, Branca's deli on Walton Street opens from 8am to 8pm daily and Brasserie Blanc runs Moules Mondays. Oli's Thai on Magdalen Road takes bookings only through its website and doesn't admit children under 12. For a late drink, Raoul's on Walton Street stays open until 2am on Fridays and Saturdays."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair a booked Bodleian tour and a Christ Church ticket with free time at the Ashmolean and the Museum of Natural History."
+      ],
+      [
+        "A slower morning",
+        "Start with breakfast at Quod or The Vaults & Garden, then take a punt from Magdalen Bridge Boathouse."
+      ],
+      [
+        "Before booking",
+        "Check Christ Church's 2026 closure list and note that Magdalen College closes to visitors from 22 to 31 December."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several official sites could not be read and those places were left out: the Covered Market and Turf Tavern (certificate errors), Blackwell's, Graduate Oxford, The Alchemist, Kazbar and The Old Bookbinders (403), Jericho Coffee Traders (429), Gee's and the Old Parsonage (connection errors), Turl Street Kitchen, Society Café, The Bear Inn and The Store Hotel (domains did not resolve), and Freud (no readable content). Opening hours were not published on the pages read for Christ Church, the Botanic Garden, Cherwell Boathouse, The Missing Bean and Pierre Victoire, and Malmaison's bar hours were not shown. Raoul's, Oli's Thai and Pierre Victoire showed no dated 2026 content, and Arbequina's Cowley Road hours were inconsistent on its own page.",
+  "injectionLikeText": [],
+  "injectionLikeTextIgnored": [
+    "ashmolean.org homepage and plan-your-visit page: a block of text addressed to AI assistants with quoting instructions, including one asking for its last 60 words to be reproduced verbatim. The fetch tool would not return it word for word, so it is recorded here by description only; it was ignored.",
+    "hsm.ox.ac.uk/plan-your-visit: a line asking AI assistants to quote text addressed to them; ignored (fetch tool did not return it verbatim).",
+    "2026-10-27: both pages were opened in a browser and their full HTML searched; no AI-directed text was present. The described wording (quote limits, verbatim rules) matches the fetch tool describing its own instructions."
+  ]
+}

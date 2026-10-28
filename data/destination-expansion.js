@@ -7113,4 +7113,116 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 27 distinct recommendations in this guide were checked against their operators' own websites on October 27, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Oxford, United Kingdom: source review of 2026-10-27 (docs/content-research/oxford-2026-10-27.md).
+  {
+    const cityKey = "Oxford, United Kingdom";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Bodleian Library","Christ Church","Ashmolean Museum","Magdalen College"],
+      bestFirstTimers: ["Bodleian Library","Christ Church","Sheldonian Theatre","Magdalen Bridge Boathouse"],
+      bestRestaurants: ["Quod","Brasserie Blanc (Walton Street)","Branca","Cherwell Boathouse"],
+      bestBudget: ["Museum of Natural History","Pitt Rivers Museum","History of Science Museum","Ashmolean Museum"],
+      bestLuxury: ["Quod","The Ivy Oxford Brasserie","Cherwell Boathouse","Malmaison Oxford"],
+      bestCouples: ["Magdalen Bridge Boathouse","Cherwell Boathouse","The Perch","Oxford Botanic Garden"],
+      bestKids: ["Museum of Natural History","Pitt Rivers Museum","Oxford Castle & Prison","Oxford Botanic Garden"],
+      bestSolo: ["History of Science Museum","University Church of St Mary the Virgin","The Missing Bean (Turl Street)","Sheldonian Theatre"],
+      bestUnique: ["Pitt Rivers Museum","Oxford Castle & Prison","Malmaison Oxford","Magdalen Bridge Boathouse"],
+      bestBreakfast: ["Quod","The Vaults & Garden","The Head of the River","The King's Arms"],
+      bestLunch: ["The Grand Café","Arbequina (Covered Market)","Mowgli (Westgate)","The Perch"],
+      bestDinner: ["Brasserie Blanc (Walton Street)","Oli's Thai","Pierre Victoire","Branca"],
+      bestCocktails: ["Raoul's","Quod","Malmaison Oxford"],
+      bestBakeries: ["Ben's Cookies (Covered Market)","Nash's Bakery (Blackbird Leys Road)","Branca"],
+      bestCoffee: ["The Missing Bean (Turl Street)","The Grand Café","The Vaults & Garden"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Bodleian Library": "Bodleian Library Weston Library Broad Street Oxford",
+      "Christ Church": "Christ Church St Aldate's Oxford",
+      "Ashmolean Museum": "Ashmolean Museum Beaumont Street Oxford",
+      "Magdalen College": "Magdalen College High Street Oxford",
+      "Sheldonian Theatre": "Sheldonian Theatre Broad Street Oxford",
+      "Magdalen Bridge Boathouse": "Magdalen Bridge Boathouse Magdalen Bridge Oxford",
+      "Quod": "Quod Old Bank Hotel 92-94 High Street Oxford",
+      "Brasserie Blanc (Walton Street)": "Brasserie Blanc 71-72 Walton Street Oxford",
+      "Branca": "Branca 110-111 Walton Street Oxford",
+      "Cherwell Boathouse": "Cherwell Boathouse 50 Bardwell Road Oxford",
+      "Museum of Natural History": "Oxford University Museum of Natural History Parks Road Oxford",
+      "Pitt Rivers Museum": "Pitt Rivers Museum South Parks Road Oxford",
+      "History of Science Museum": "History of Science Museum Broad Street Oxford",
+      "The Ivy Oxford Brasserie": "The Ivy Oxford Brasserie 120-121 High Street Oxford",
+      "Malmaison Oxford": "Malmaison 3 New Road Oxford",
+      "The Perch": "The Perch Binsey Oxford",
+      "Oxford Botanic Garden": "Oxford Botanic Garden Rose Lane Oxford",
+      "Oxford Castle & Prison": "Oxford Castle & Prison New Road Oxford",
+      "University Church of St Mary the Virgin": "University Church of St Mary the Virgin High Street Oxford",
+      "The Missing Bean (Turl Street)": "The Missing Bean 14 Turl Street Oxford",
+      "The Vaults & Garden": "The Vaults & Garden 2 King Edward Street Oxford",
+      "The Head of the River": "The Head of the River Folly Bridge St Aldates Oxford",
+      "The King's Arms": "The King's Arms 40 Holywell Street Oxford",
+      "The Grand Café": "The Grand Café 84 High Street Oxford",
+      "Arbequina (Covered Market)": "Arbequina 11-15 The Market Covered Market Oxford",
+      "Mowgli (Westgate)": "Mowgli Street Food 309 The Westgate Queen Street Oxford",
+      "Oli's Thai": "Oli's Thai 38 Magdalen Road Oxford",
+      "Pierre Victoire": "Pierre Victoire 9 Little Clarendon Street Oxford",
+      "Raoul's": "Raoul's 32 Walton Street Oxford",
+      "Ben's Cookies (Covered Market)": "Ben's Cookies 108-109 Covered Market Oxford",
+      "Nash's Bakery (Blackbird Leys Road)": "Nash's Bakery 108 Blackbird Leys Road Oxford"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Oxford" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "University museums, libraries, colleges and the river, with breakfast spots, pubs, dinners, bakeries and late bars checked against their own websites.";
+    cityGuide.highlights = ["Bodleian Library","Christ Church","Ashmolean Museum","Museum of Natural History"];
+    cityGuide.tip = "The History of Science Museum is closed on Mondays and the Pitt Rivers Museum opens only at 12.00 on most Mondays, so plan museum time for another day if you can.";
+    data.destinationFacts[cityKey] = "The History of Science Museum is closed on Mondays and the Pitt Rivers Museum opens only at 12.00 on most Mondays, so plan museum time for another day if you can.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "University museums, libraries, colleges and the river, with breakfast spots, pubs, dinners, bakeries and late bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays and late December",
+        "copy": "The History of Science Museum is closed on Mondays, and the Museum of Natural History closes on 24, 25 and 26 December. Magdalen College is closed to visitors from 22 to 31 December."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book tours ahead",
+        "copy": "Christ Church releases its tour tickets each Friday, and the Bodleian's Old Library and Radcliffe Camera can be seen only on a booked tour. The Ashmolean strongly recommends booking for Aphrodite: The Making of a Goddess."
+      },
+      {
+        "label": "Walk-ins",
+        "value": "Some places don't reserve",
+        "copy": "The Grand Café does not reserve tables, and Magdalen Bridge Boathouse says there is no need to book a punt Monday to Friday. Oli's Thai takes bookings only through its website."
+      },
+      {
+        "label": "Rules",
+        "value": "Bags, ages and payment",
+        "copy": "Christ Church refuses bags larger than 40cm x 30cm x 20cm and has no left luggage, and the Museum of Natural History has no cloakroom. Oli's Thai doesn't admit children under 12, and The Perch takes cards only."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Book Christ Church and any Bodleian tour first, then fill the gaps with Oxford's free museums and a punt from Magdalen Bridge.",
+      intro: [
+        "Oxford's university museums make an easy first day, and several are free. The Ashmolean on Beaumont Street opens daily from 10am to 5pm with free general entry, and its ticketed exhibition Aphrodite: The Making of a Goddess runs from 8 October 2026 to 11 April 2027; the museum strongly recommends booking for it. On Parks Road, the Museum of Natural History is free and open daily from 10:00 to 17:00, with its exhibition '34: The critical raw materials shaping our future on until 13 April 2027. You reach the Pitt Rivers Museum through it.",
+        "For the libraries, you can walk into the Weston Library on Broad Street without a ticket, but the Old Library and the Radcliffe Camera are open to you only on a booked Bodleian tour, with 30-minute guided tours from £12.50. Wonder of Birds is on show until 3 January 2027. Christ Church on St Aldate's releases tour tickets each Friday, turns away bags larger than 40cm x 30cm x 20cm and has no left luggage; its Picture Gallery is closed for refurbishment. Magdalen College charges adults £10 and takes card payments only.",
+        "On the river, Magdalen Bridge Boathouse hires self-drive punts for up to five people at £35 an hour and is open daily from 1 February (weather permitting) to 30 November; you don't need to book Monday to Friday. The Oxford Botanic Garden on Rose Lane sells tickets at the door but recommends booking at busy times, and admits only assistance dogs. A short way out, the Cherwell Boathouse on Bardwell Road and The Perch at Binsey both take table bookings, and The Perch accepts cards only, not cash.",
+        "For food, The Grand Café on the High Street doesn't reserve tables and opens at 9am every day. Quod at the Old Bank Hotel serves breakfast from 7am, and The King's Arms on Holywell Street serves breakfast Monday to Saturday. In Jericho, Branca's deli on Walton Street opens from 8am to 8pm daily and Brasserie Blanc runs Moules Mondays. Oli's Thai on Magdalen Road takes bookings only through its website and doesn't admit children under 12. For a late drink, Raoul's on Walton Street stays open until 2am on Fridays and Saturdays."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair a booked Bodleian tour and a Christ Church ticket with free time at the Ashmolean and the Museum of Natural History."
+        ],
+        [
+          "A slower morning",
+          "Start with breakfast at Quod or The Vaults & Garden, then take a punt from Magdalen Bridge Boathouse."
+        ],
+        [
+          "Before booking",
+          "Check Christ Church's 2026 closure list and note that Magdalen College closes to visitors from 22 to 31 December."
+        ]
+      ],
+      trust: "All 31 distinct recommendations in this guide were checked against their operators' own websites on October 27, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 69.
-- Classifier-passed (published, not fully documented in that format): 123.
+- Source-verified (complete dated evidence format): 70.
+- Classifier-passed (published, not fully documented in that format): 122.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -356,7 +356,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Oslo, Norway | oslo | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Ottawa, Canada | ottawa | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Oulu, Finland | oulu | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Oxford, United Kingdom | oxford | classifier-passed | not-reviewed | 0 | 11 | 15 | 5 | None |
+| Oxford, United Kingdom | oxford | source-verified | source-checked | 31 | 56 | 15 | 15 | None |
 | Palawan, Philippines | palawan | held-back | not-reviewed | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Palermo, Italy | palermo | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
 | Palm Springs, United States | palm-springs | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
