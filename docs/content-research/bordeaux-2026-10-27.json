@@ -1,0 +1,600 @@
+{
+  "city": "Bordeaux, France",
+  "checkedOn": "2026-10-27",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Musée d'Aquitaine",
+      "kind": "museum",
+      "url": "https://www.bordeaux.fr/le-musee-daquitaine",
+      "sourceType": "official public operator (Ville de Bordeaux)",
+      "address": "20 cours Pasteur - 33300 Bordeaux",
+      "operatingEvidence": "City page carries an article dated 6 May 2026: \"L'exposition 'Le Monde d'après' accompagne la réouverture du Musée d'Aquitaine\".",
+      "hours": "Tuesday to Sunday 11:00-18:00; Monday \"Fermé\"; \"Fermé les jours fériés\", \"Ouvert le 14 juillet et le 15 août\"",
+      "confidence": "high"
+    },
+    {
+      "name": "CAPC musée d'art contemporain",
+      "kind": "museum",
+      "url": "https://www.capc-bordeaux.fr/",
+      "sourceType": "operator's own site",
+      "address": "7, rue Ferrère, Bordeaux",
+      "operatingEvidence": "Current exhibitions include Alexandra Bircken, SomaSemaSoma \"Jusqu'au 03.01.27\" and Pollen \"Jusqu'au 02.01.28\"; \"Quoi qu'il en soit\" runs \"12.11.26 - 10.01.27\".",
+      "hours": "\"11h-18h du mardi au dimanche\"; \"Fermé les jours fériés\"",
+      "confidence": "high"
+    },
+    {
+      "name": "MusBA - Musée des Beaux-Arts de Bordeaux",
+      "kind": "museum",
+      "url": "https://www.musba-bordeaux.fr/fr/infos-pratiques",
+      "sourceType": "operator's own site (Ville de Bordeaux museum)",
+      "address": "20, Cours d'Albret, Bordeaux (Galerie: Place du Colonel Raynal, Bordeaux)",
+      "operatingEvidence": "Homepage lists \"Jean Dupas & Co. Le grand Art déco\" (26 June-29 November 2026) and \"Passions Collections\" \"jusqu'au 4 janvier 2027\"; practical page notes prices \"susceptibles d'évoluer à partir de novembre 2026\".",
+      "hours": "\"Ouvert de 11h à 18h, sauf les mardis et certains jours fériés (ouvert le 14 juillet et le 15 août)\"",
+      "confidence": "high"
+    },
+    {
+      "name": "MADD - Musée des Arts décoratifs et du Design",
+      "kind": "museum",
+      "url": "https://www.madd-bordeaux.fr/explorer/expositions",
+      "sourceType": "operator's own site",
+      "address": "39 rue Bouffard 33000 Bordeaux",
+      "operatingEvidence": "Exhibitions listed \"En cours\": \"Céramiques, corps sensibles\" 22.04.2026 → 04.01.2028 and \"Morceaux choisis\" 17.09.2026 → 15.02.2027; \"We will survive\" from 10.12.2026.",
+      "hours": "not published on pages read",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bassins des Lumières",
+      "kind": "museum",
+      "url": "https://www.bassins-lumieres.com/fr/horaires",
+      "sourceType": "operator's own site (Culturespaces)",
+      "address": "Impasse Brown de Colstoun, 33300 Bordeaux",
+      "operatingEvidence": "Hours table covers \"26 octobre 2026 au 1 novembre 2026\" with Planète Préhistorique : Dinosaures; Matisse also listed as current.",
+      "hours": "Week of 26 Oct-1 Nov 2026: Dinosaures 10:00-19:00, Saturday to 20:00; later weeks show some days 10:00-18:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Musée Mer Marine",
+      "kind": "museum",
+      "url": "https://www.mmmbordeaux.com/",
+      "sourceType": "operator's own site",
+      "address": "89 rue des Étrangers · Bassins à flot",
+      "operatingEvidence": "Exhibition \"Bleu Sauvage\" by A-MO, \"11 septembre 2026 — 3 janvier 2027\"; events dated through December.",
+      "hours": "\"13h–18h en semaine\", \"10h30–18h le week-end\", school holidays 10:30-19:00; \"Fermé le lundi\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Cap Sciences",
+      "kind": "museum",
+      "url": "https://www.cap-sciences.net/",
+      "sourceType": "operator's own site",
+      "address": "Hangar 20, Quai de Bacalan, 33300 Bordeaux",
+      "operatingEvidence": "Homepage shows \"Ouvert aujourd'hui de 11h à 19h\" and current exhibitions such as \"Crotte ! Que fait le microbiote ?\" and \"Anatomik Park\" (no dates); footer \"Copyright © 2026\".",
+      "hours": "\"Ouvert aujourd'hui de 11h à 19h\" (weekly hours not published on page read)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Frac Nouvelle-Aquitaine MÉCA",
+      "kind": "museum",
+      "url": "https://fracnouvelleaquitaine-meca.fr/preparer-votre-visite/acces-horaires-tarifs/",
+      "sourceType": "operator's own site",
+      "address": "5, Parvis Corto Maltese, 33 000 Bordeaux",
+      "operatingEvidence": "Homepage lists GORU GORU by Seulgi Lee, 9 October 2026 to 25 April 2027, and family visits on 28-31 October.",
+      "hours": "\"du mercredi au dimanche de 13h à 18h\"; \"Dernière entrée à 17h30\"; \"Fermé les jours fériés\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Muséum de Bordeaux - sciences et nature",
+      "kind": "museum",
+      "url": "https://www.museum-bordeaux.fr/",
+      "sourceType": "operator's own site (Ville de Bordeaux museum)",
+      "address": "5 place Bardineau, 33000 Bordeaux",
+      "operatingEvidence": "Homepage features the current \"Félins\" exhibition and October school-holiday activities (no dates shown).",
+      "hours": "10:30-17:30; \"Fermé lundi et jours fériés\" (open 14 July and 15 August)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Grand-Théâtre (Opéra National de Bordeaux)",
+      "kind": "landmark",
+      "url": "https://www.opera-bordeaux.com/en/node/62311",
+      "sourceType": "operator's own site (Opéra National de Bordeaux)",
+      "address": "\"Place de la Comédie - BP 90095\", \"33025 BORDEAUX CEDEX\" (from https://www.opera-bordeaux.com/le-grand-theatre-vous-accueille-tout-lete-32792)",
+      "operatingEvidence": "Visits page lists themed visits, e.g. behind-the-scenes visit Saturday 7 November and storytelling visit Saturday 28 November; homepage lists Carmen at the Grand-Théâtre on 9, 11 and 13 November.",
+      "hours": "not published for the current season (visit times listed per tour)",
+      "confidence": "high"
+    },
+    {
+      "name": "Miroir d'eau",
+      "kind": "landmark",
+      "url": "https://www.bordeaux.fr/agenda/visite-guidee-explorez-les-dessous-du-miroir-deau",
+      "sourceType": "official public operator (Ville de Bordeaux)",
+      "address": "\"Miroir d'Eau, 33000 Bordeaux\"",
+      "operatingEvidence": "City agenda lists a technical guided tour \"Du Vendredi 12 juin 2026 au Vendredi 30 octobre 2026\", Fridays 14h and 15h, \"Tarif : 10 €\".",
+      "hours": "not published (only tour times)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Jardin Public",
+      "kind": "park",
+      "url": "https://www.bordeaux.fr/parc-jardin/jardin-public",
+      "sourceType": "official public operator (Ville de Bordeaux)",
+      "address": "Cours de Verdun - 33300 Bordeaux",
+      "operatingEvidence": "City page publishes current seasonal opening hours and the \"Va, Petit Mousse\" boat service at 3.50 euros; no closure notice.",
+      "hours": "1-31 October 7:00-19:00; 1 November-14 February 7:00-18:00; 1 June-31 August 7:00-21:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Jardin botanique de la Bastide",
+      "kind": "park",
+      "url": "https://www.bordeaux.fr/parc-jardin/jardin-botanique-de-bordeaux",
+      "sourceType": "official public operator (Ville de Bordeaux)",
+      "address": "Esplanade Linné - 33100 Bordeaux",
+      "operatingEvidence": "City page publishes current seasonal garden hours and greenhouse hours; no closure notice.",
+      "hours": "Gardens 8h-19h in October, 8h-18h from 1 November; greenhouses, exhibition rooms and shop Tuesday to Sunday 11h-18h, closed Mondays and public holidays (except 14 July and 15 August)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Marché des Capucins",
+      "kind": "market",
+      "url": "https://www.marchedescapucins.com/",
+      "sourceType": "operator's own site",
+      "address": "Place des Capucins, 33000 Bordeaux",
+      "operatingEvidence": "Site publishes current weekly hours; footer \"© 2026 Marché des Capucins\".",
+      "hours": "\"Mar. – sam. : 6h – 13h30\"; \"Dim. : 6h – 13h\"; \"Lun. : fermé\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Le Chapon Fin",
+      "kind": "meal",
+      "url": "https://www.chapon-fin.com/",
+      "sourceType": "operator's own site",
+      "address": "5 RUE MONTESQUIEU 33000 BORDEAUX",
+      "operatingEvidence": "Online booking (\"cliquez directement sur le bouton Réserver\") and current menus listed (Menu du Marché, Menu Toulouse-Lautrec); footer \"© 2026 Le Chapon Fin\".",
+      "hours": "Tuesday to Saturday, lunch 12:00-13:15, dinner 19:30-21:15; closed Sunday and Monday",
+      "confidence": "high"
+    },
+    {
+      "name": "La Tupina",
+      "kind": "meal",
+      "url": "https://www.latupina.com/",
+      "sourceType": "operator's own site",
+      "address": "\"6 Rue Prte de la Monnaie, 33800 Bordeaux\" (sic)",
+      "operatingEvidence": "Site publishes weekly hours and a live reservation button via La Fourchette; no 2026-dated content (footer © 2023).",
+      "hours": "\"Mardi au dimanche: 12h-14h et 19h-22h\"; \"Lundi soir: 19h-22h\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Le Pressoir d'Argent Gordon Ramsay",
+      "kind": "meal",
+      "url": "https://bordeaux.intercontinental.com/",
+      "sourceType": "operator's own site (InterContinental Bordeaux - Le Grand Hotel)",
+      "address": "2 Place de la Comédie, 33000 Bordeaux",
+      "operatingEvidence": "\"Réserver votre table\" booking link; announcement \"Notre restaurant gastronomique deux étoiles rejoint Les Grandes Tables du Monde\"; footer ©2026.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "L'Entrecôte (Bordeaux)",
+      "kind": "meal",
+      "url": "https://www.entrecote.fr/",
+      "sourceType": "operator's own site",
+      "address": "4 Cours du 30 Juillet, 33000 Bordeaux",
+      "operatingEvidence": "Site publishes service hours and the policy \"Nous ne prenons pas de réservation\"; no 2026-dated content.",
+      "hours": "Lunch 12:00-14:00, dinner 19:00-22:15; closed 24-25 and 31 December and 1 January",
+      "confidence": "medium"
+    },
+    {
+      "name": "Brasserie Bordelaise",
+      "kind": "meal",
+      "url": "https://www.brasserie-bordelaise.fr/",
+      "sourceType": "operator's own site",
+      "address": "50 rue Saint-Rémi 33000 Bordeaux",
+      "operatingEvidence": "Current menu \"2026_09_CARTE BB_FR.pdf\" and wine list dated 2026_10_23; \"Repas de groupe et privatisations de salles sur demande\".",
+      "hours": "\"Ouvert tous les jours en service continu de midi à minuit\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Mama Shelter Bordeaux",
+      "kind": "meal",
+      "url": "https://mamashelter.com/bordeaux/",
+      "sourceType": "operator's own site",
+      "address": "19 rue Poquelin Molière, 33000 Bordeaux",
+      "operatingEvidence": "Events dated 28-31/10/2026 (DJ sets, Mama Comedy Club); weekly menu \"From Monday 26th october\".",
+      "hours": "Restaurant lunch 12:00-15:00, dinner 19:00-23:00 (to 00:00 Thu-Sat); breakfast daily 7:00-11:00; rooftop snacks \"from 3:30 to 11PM\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Bar à Vin (Maison du Vin de Bordeaux)",
+      "kind": "bar",
+      "url": "https://www.bordeaux.com/fr/nos-bonnes-adresses/bar-a-vin-bordeaux/",
+      "sourceType": "official site of the Bordeaux wine council (CIVB), whose Maison du Vin houses the bar",
+      "address": "\"3, cours du XXX juillet\" 33000 Bordeaux",
+      "operatingEvidence": "Page publishes regular hours and a current wine list (\"Carte du moment\", uploaded 2026/03).",
+      "hours": "\"Ouvert du lundi au samedi de 11h30 à 22h (sauf jours fériés)\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Symbiose",
+      "kind": "bar",
+      "url": "https://www.symbiose-bordeaux.com/",
+      "sourceType": "operator's own site",
+      "address": "4 Quai des Chartrons, 33000 Bordeaux",
+      "operatingEvidence": "Cocktail bar hours published \"Du mardi au samedi – 18h à 01h30\" with a reservation-request form; footer \"© 2026 Symbiose\". The page also says the restaurant/tasting menu resumption is \"Reprise indéterminée\".",
+      "hours": "Cocktail bar Tuesday to Saturday 18:00-01:30",
+      "confidence": "medium"
+    },
+    {
+      "name": "Le Rooftop (InterContinental Bordeaux)",
+      "kind": "bar",
+      "url": "https://bordeaux.intercontinental.com/le-rooftop/",
+      "sourceType": "operator's own site (InterContinental Bordeaux - Le Grand Hotel)",
+      "address": "2 Place de la Comédie, 33000 Bordeaux (hotel address)",
+      "operatingEvidence": "Page announces the winter rooftop \"dès le 31 octobre\" and states \"Nous ne prenons pas de réservation\"; footer ©2026.",
+      "hours": "not published (seasonal timeline only)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Baillardran (Bar à Canelés, rue Sainte-Catherine)",
+      "kind": "bakery",
+      "url": "https://www.baillardran.com/fr/les-points-de-vente",
+      "sourceType": "operator's own site",
+      "address": "76, rue Sainte-Catherine, 33000 BORDEAUX",
+      "operatingEvidence": "Points-of-sale page lists this branch among 14 Bordeaux shops with current hours; no 2026-dated content.",
+      "hours": "\"Tous les jours 9H00-20H00\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "La Toque Cuivrée (Sainte-Catherine)",
+      "kind": "bakery",
+      "url": "https://la-toque-cuivree.fr/boutique/bordeaux-sainte-catherine/",
+      "sourceType": "operator's own site",
+      "address": "5 rue Sainte Catherine 33000 Bordeaux",
+      "operatingEvidence": "Branch page publishes current daily hours; no 2026-dated content.",
+      "hours": "\"Lundi au dimanche : 8h - 20h\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "La Pelle Café",
+      "kind": "cafe",
+      "url": "https://lapellecafe.com/",
+      "sourceType": "operator's own site",
+      "address": "29 Rue Notre Dame, 33000 Bordeaux",
+      "operatingEvidence": "Site publishes weekly opening hours; no 2026-dated content.",
+      "hours": "Monday and Tuesday closed; Wednesday-Friday 9:00-19:00; Saturday-Sunday 10:00-19:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Sauvages Café",
+      "kind": "cafe",
+      "url": "https://www.sauvagescafe.fr/",
+      "sourceType": "operator's own site",
+      "address": "7 Rue des Frères Bonie, 33000 Bordeaux",
+      "operatingEvidence": "Seasonal brunch menu labelled 2026 (\"Carte ETE 2026\", link to \"carte-hiver-2026\") and a notice \"Ouvert exceptionnellement\" on 1 November; footer \"© Sauvages Café 2026\".",
+      "hours": "Mon-Tue 10:00-14:00; Wed-Thu closed; Fri 10:00-14:00; Sat 10:00-15:00; Sun 09:00-15:00",
+      "confidence": "high"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Cité du Vin",
+      "reason": "Fetch failed with a certificate error (\"unable to verify the first certificate\"); not bypassed. Not evidence of closure.",
+      "url": "https://www.laciteduvin.com/en/plan-your-visit/opening-hours"
+    },
+    {
+      "name": "Tour Pey-Berland",
+      "reason": "Official page says the tower is \"fermée jusqu'à nouvel ordre\" after lightning damage.",
+      "url": "https://www.pey-berland.fr/"
+    },
+    {
+      "name": "Cathédrale Saint-André",
+      "reason": "Official site gives address (Place Pey Berland) but hours page returned 404 and no current operating evidence (only 2025 Jubilee items).",
+      "url": "https://www.cathedrale-bordeaux.fr/"
+    },
+    {
+      "name": "Garopapilles",
+      "reason": "Official site is a farewell notice; new owners \"rouvriront dans quelques semaines\", no date.",
+      "url": "https://www.garopapilles.com/"
+    },
+    {
+      "name": "Le Gabriel",
+      "reason": "Fetch failed (connection refused on port 443).",
+      "url": "https://www.bordeauxgabriel.fr/"
+    },
+    {
+      "name": "Darwin Ecosystème",
+      "reason": "HTTPS URL redirects to plain http; no https official page available to cite.",
+      "url": "https://www.darwin.camp/"
+    },
+    {
+      "name": "Black List Café",
+      "reason": "No official website found (social media only); DNS failure for blacklistcafe.fr.",
+      "url": "https://www.blacklistcafe.fr/"
+    },
+    {
+      "name": "L'Alchimiste",
+      "reason": "Guessed official domain did not resolve; no official page read.",
+      "url": "https://www.lalchimiste-cafes.com/"
+    },
+    {
+      "name": "Au Pétrin Moissagais",
+      "reason": "No official website found; only directories and blogs.",
+      "url": ""
+    },
+    {
+      "name": "Dune Blanche (Chez Pascal)",
+      "reason": "Official site shows only \"Lancement imminent\"; no address or hours.",
+      "url": "https://www.dunesblanches.com/"
+    },
+    {
+      "name": "Halles de Bacalan (Biltoki)",
+      "reason": "Official page returned 404; no official page found.",
+      "url": "https://www.biltoki.com/halles-de-bacalan"
+    },
+    {
+      "name": "Le Bordeaux (InterContinental brasserie)",
+      "reason": "Named on hotel site but no hours, booking or dated content specific to it.",
+      "url": "https://bordeaux.intercontinental.com/"
+    },
+    {
+      "name": "Place de la Bourse",
+      "reason": "Public square with no operator page read; Miroir d'eau used instead.",
+      "url": ""
+    },
+    {
+      "name": "Saint-Emilion",
+      "reason": "Town outside Bordeaux, not a single operated place; only tourism-board sources.",
+      "url": ""
+    },
+    {
+      "name": "Saint-Emilion day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Saint-Emilion day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Garonne river walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Chartrons design shops",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Cite du Vin",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Golden Triangle evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Golden Triangle walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Chartrons",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Saint-Michel",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Place de la Bourse",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Place de la Bourse",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Place de la Bourse",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Golden Triangle cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Cite du Vin",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe, bakery, market, lunch, dinner, cocktail and coffee entries (e.g. \"a market lunch and local wine\", \"Bordeaux market or cafe\", \"A local dinner in Golden Triangle\", \"Chartrons bakery or market\", \"Local bakery near Golden Triangle\", \"Coffee near Golden Triangle\", \"A rooftop or waterfront evening\")",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Remaining \"A ...\" itinerary entries in bestBudget, bestLuxury, bestCouples, bestKids, bestSolo and bestUnique (e.g. \"A private transfer between highlights\", \"A treat everyone can agree on\")",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Musée d'Aquitaine",
+        "Grand-Théâtre (Opéra National de Bordeaux)",
+        "Bassins des Lumières",
+        "CAPC musée d'art contemporain"
+      ],
+      "bestFirstTimers": [
+        "Musée d'Aquitaine",
+        "Grand-Théâtre (Opéra National de Bordeaux)",
+        "Miroir d'eau",
+        "Marché des Capucins"
+      ],
+      "bestRestaurants": [
+        "Le Chapon Fin",
+        "La Tupina",
+        "Brasserie Bordelaise",
+        "L'Entrecôte (Bordeaux)"
+      ],
+      "bestBudget": [
+        "Jardin Public",
+        "Frac Nouvelle-Aquitaine MÉCA",
+        "Marché des Capucins",
+        "Jardin botanique de la Bastide"
+      ],
+      "bestLuxury": [
+        "Le Pressoir d'Argent Gordon Ramsay",
+        "Le Chapon Fin",
+        "Le Rooftop (InterContinental Bordeaux)"
+      ],
+      "bestCouples": [
+        "Le Rooftop (InterContinental Bordeaux)",
+        "Symbiose",
+        "Jardin Public",
+        "Bar à Vin (Maison du Vin de Bordeaux)"
+      ],
+      "bestKids": [
+        "Cap Sciences",
+        "Muséum de Bordeaux - sciences et nature",
+        "Bassins des Lumières",
+        "Jardin Public"
+      ],
+      "bestSolo": [
+        "CAPC musée d'art contemporain",
+        "MusBA - Musée des Beaux-Arts de Bordeaux",
+        "MADD - Musée des Arts décoratifs et du Design",
+        "La Pelle Café"
+      ],
+      "bestUnique": [
+        "Bassins des Lumières",
+        "Musée Mer Marine",
+        "Frac Nouvelle-Aquitaine MÉCA",
+        "Miroir d'eau"
+      ],
+      "bestBreakfast": [
+        "Marché des Capucins",
+        "Mama Shelter Bordeaux",
+        "Sauvages Café",
+        "La Toque Cuivrée (Sainte-Catherine)"
+      ],
+      "bestLunch": [
+        "La Tupina",
+        "Brasserie Bordelaise",
+        "L'Entrecôte (Bordeaux)",
+        "Marché des Capucins"
+      ],
+      "bestDinner": [
+        "Le Chapon Fin",
+        "La Tupina",
+        "Le Pressoir d'Argent Gordon Ramsay",
+        "Mama Shelter Bordeaux"
+      ],
+      "bestCocktails": [
+        "Symbiose",
+        "Le Rooftop (InterContinental Bordeaux)",
+        "Mama Shelter Bordeaux",
+        "Bar à Vin (Maison du Vin de Bordeaux)"
+      ],
+      "bestBakeries": [
+        "Baillardran (Bar à Canelés, rue Sainte-Catherine)",
+        "La Toque Cuivrée (Sainte-Catherine)"
+      ],
+      "bestCoffee": [
+        "La Pelle Café",
+        "Sauvages Café"
+      ]
+    },
+    "queries": {
+      "Musée d'Aquitaine": "Musée d'Aquitaine 20 cours Pasteur Bordeaux",
+      "CAPC musée d'art contemporain": "CAPC musée d'art contemporain 7 rue Ferrère Bordeaux",
+      "MusBA - Musée des Beaux-Arts de Bordeaux": "Musée des Beaux-Arts 20 cours d'Albret Bordeaux",
+      "MADD - Musée des Arts décoratifs et du Design": "MADD 39 rue Bouffard Bordeaux",
+      "Bassins des Lumières": "Bassins des Lumières Impasse Brown de Colstoun Bordeaux",
+      "Musée Mer Marine": "Musée Mer Marine 89 rue des Étrangers Bordeaux",
+      "Cap Sciences": "Cap Sciences Hangar 20 Quai de Bacalan Bordeaux",
+      "Frac Nouvelle-Aquitaine MÉCA": "Frac Nouvelle-Aquitaine MÉCA 5 Parvis Corto Maltese Bordeaux",
+      "Muséum de Bordeaux - sciences et nature": "Muséum de Bordeaux 5 place Bardineau Bordeaux",
+      "Grand-Théâtre (Opéra National de Bordeaux)": "Grand-Théâtre Place de la Comédie Bordeaux",
+      "Miroir d'eau": "Miroir d'eau Place de la Bourse Bordeaux",
+      "Jardin Public": "Jardin Public Cours de Verdun Bordeaux",
+      "Jardin botanique de la Bastide": "Jardin botanique Esplanade Linné Bordeaux",
+      "Marché des Capucins": "Marché des Capucins Place des Capucins Bordeaux",
+      "Le Chapon Fin": "Le Chapon Fin 5 rue Montesquieu Bordeaux",
+      "La Tupina": "La Tupina 6 rue Porte de la Monnaie Bordeaux",
+      "Le Pressoir d'Argent Gordon Ramsay": "Le Pressoir d'Argent 2 Place de la Comédie Bordeaux",
+      "L'Entrecôte (Bordeaux)": "L'Entrecôte 4 Cours du 30 Juillet Bordeaux",
+      "Brasserie Bordelaise": "Brasserie Bordelaise 50 rue Saint-Rémi Bordeaux",
+      "Mama Shelter Bordeaux": "Mama Shelter 19 rue Poquelin Molière Bordeaux",
+      "Bar à Vin (Maison du Vin de Bordeaux)": "Bar à Vin 3 cours du XXX Juillet Bordeaux",
+      "Symbiose": "Symbiose 4 Quai des Chartrons Bordeaux",
+      "Le Rooftop (InterContinental Bordeaux)": "InterContinental Le Rooftop 2 Place de la Comédie Bordeaux",
+      "Baillardran (Bar à Canelés, rue Sainte-Catherine)": "Baillardran 76 rue Sainte-Catherine Bordeaux",
+      "La Toque Cuivrée (Sainte-Catherine)": "La Toque Cuivrée 5 rue Sainte-Catherine Bordeaux",
+      "La Pelle Café": "La Pelle Café 29 rue Notre-Dame Bordeaux",
+      "Sauvages Café": "Sauvages Café 7 rue des Frères Bonie Bordeaux"
+    },
+    "summary": "Museums, riverside sights, gardens and a morning market, with canelé shops, coffee, dinners and cocktail bars checked against their own websites.",
+    "highlights": [
+      "Musée d'Aquitaine",
+      "CAPC musée d'art contemporain",
+      "Bassins des Lumières",
+      "Grand-Théâtre (Opéra National de Bordeaux)"
+    ],
+    "tip": "Museum closing days differ: the MusBA closes on Tuesdays, while the Musée d'Aquitaine, Musée Mer Marine and Muséum close on Mondays, so put the MusBA on a Monday and the others later in the week.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Monday vs Tuesday",
+        "copy": "The Musée d'Aquitaine, Musée Mer Marine, Muséum and Marché des Capucins are closed on Mondays. The MusBA closes on Tuesdays, and the Frac MÉCA opens Wednesday to Sunday only."
+      },
+      {
+        "label": "Tickets",
+        "value": "Buy on site at MusBA",
+        "copy": "MusBA tickets can't be bought online; you buy them at the museum or Galerie reception. The MusBA and CAPC are free on the first Sunday of the month except in July and August, and the Frac MÉCA asks a free contribution from 2 euros."
+      },
+      {
+        "label": "Walk-ins",
+        "value": "No bookings at some",
+        "copy": "L'Entrecôte on cours du 30 Juillet and the InterContinental's Le Rooftop both say they take no reservations. At Symbiose an online booking is only a request, confirmed if tables are free."
+      },
+      {
+        "label": "Ages and families",
+        "value": "Plan by age",
+        "copy": "Mama Shelter says breakfast bookings are mandatory and children under 4 eat free. Grand-Théâtre themed visits are set by age, from 6 months for baby visits to 7 and up for behind-the-scenes tours."
+      }
+    ],
+    "dek": "Check each museum's closing day first, then build your meals around the restaurants' fixed service times.",
+    "intro": [
+      "Bordeaux's museums keep different closing days, so plan around them before anything else. The Musée d'Aquitaine at 20 cours Pasteur opens Tuesday to Sunday, 11:00 to 18:00, and the city announced its reopening this year alongside the exhibition \"Le Monde d'après\". The CAPC at 7 rue Ferrère keeps the same Tuesday-to-Sunday pattern and shows Alexandra Bircken's SomaSemaSoma until 3 January 2027. The MusBA on cours d'Albret closes on Tuesdays instead. Its \"Jean Dupas & Co. Le grand Art déco\" runs to 29 November 2026, and you buy tickets at reception, not online.",
+      "North along the river, the Bassins à flot area groups several indoor sights. Bassins des Lumières, on impasse Brown de Colstoun, is showing Planète Préhistorique : Dinosaures, and if you hold a City Pass Bordeaux you can enter without booking ahead. The Musée Mer Marine at 89 rue des Étrangers closes on Mondays and has A-MO's \"Bleu Sauvage\" until 3 January 2027. Cap Sciences, in Hangar 20 on quai de Bacalan, has hands-on exhibitions such as Anatomik Park. Across town, the Frac MÉCA shows Seulgi Lee's GORU GORU until 25 April 2027, Wednesday to Sunday afternoons.",
+      "For meals, service times matter more than you might expect. L'Entrecôte at 4 cours du 30 Juillet takes no reservations, while Le Chapon Fin at 5 rue Montesquieu serves Tuesday to Saturday only. La Tupina, near the Porte de la Monnaie, opens for lunch and dinner Tuesday to Sunday and for dinner only on Monday. Brasserie Bordelaise on rue Saint-Rémi serves continuously from noon to midnight every day. For an evening at a restaurant its hotel describes as two-star, Le Pressoir d'Argent Gordon Ramsay at the InterContinental on place de la Comédie takes bookings online.",
+      "Mornings and evenings fit around fixed hours too. The Marché des Capucins opens from 6:00 Tuesday to Sunday. La Toque Cuivrée on rue Sainte-Catherine opens daily from 8:00, and Baillardran's Bar à Canelés at 76 rue Sainte-Catherine from 9:00. La Pelle Café on rue Notre-Dame is closed Monday and Tuesday, and Sauvages Café near Pey-Berland closes Wednesday and Thursday. In the evening, Symbiose on quai des Chartrons runs its cocktail bar Tuesday to Saturday from 18:00, and the Bar à Vin on cours du XXX Juillet pours until 22:00, Monday to Saturday."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Start at the Musée d'Aquitaine (Tuesday to Sunday, 11:00 to 18:00), then see the Grand-Théâtre on place de la Comédie."
+      ],
+      [
+        "A slower morning",
+        "Begin at the Marché des Capucins, which opens at 6:00 Tuesday to Sunday, then have coffee at La Pelle Café from Wednesday to Sunday."
+      ],
+      [
+        "Before booking",
+        "Book Le Chapon Fin or Le Pressoir d'Argent online, but go straight to L'Entrecôte and Le Rooftop, which take no reservations."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The Cité du Vin site failed with a certificate error and Le Gabriel refused the connection, so neither was checked; the Tour Pey-Berland is closed until further notice per its own site. Weekly hours were not published on the pages read for the MADD, Cap Sciences (today's hours only), Le Pressoir d'Argent, Le Rooftop and the Grand-Théâtre, whose address came from an older page on its own site. La Tupina, L'Entrecôte, La Pelle Café, Baillardran and La Toque Cuivrée showed current hours but no 2026-dated content. Symbiose's restaurant service is marked \"Reprise indéterminée\"; only its cocktail bar is listed.",
+  "injectionLikeText": []
+}

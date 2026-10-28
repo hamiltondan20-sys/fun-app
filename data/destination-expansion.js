@@ -6248,4 +6248,112 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 24 distinct recommendations in this guide were checked against their operators' own websites on October 27, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Bordeaux, France: source review of 2026-10-27 (docs/content-research/bordeaux-2026-10-27.md).
+  {
+    const cityKey = "Bordeaux, France";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Musée d'Aquitaine","Grand-Théâtre (Opéra National de Bordeaux)","Bassins des Lumières","CAPC musée d'art contemporain"],
+      bestFirstTimers: ["Musée d'Aquitaine","Grand-Théâtre (Opéra National de Bordeaux)","Miroir d'eau","Marché des Capucins"],
+      bestRestaurants: ["Le Chapon Fin","La Tupina","Brasserie Bordelaise","L'Entrecôte (Bordeaux)"],
+      bestBudget: ["Jardin Public","Frac Nouvelle-Aquitaine MÉCA","Marché des Capucins","Jardin botanique de la Bastide"],
+      bestLuxury: ["Le Pressoir d'Argent Gordon Ramsay","Le Chapon Fin","Le Rooftop (InterContinental Bordeaux)"],
+      bestCouples: ["Le Rooftop (InterContinental Bordeaux)","Symbiose","Jardin Public","Bar à Vin (Maison du Vin de Bordeaux)"],
+      bestKids: ["Cap Sciences","Muséum de Bordeaux - sciences et nature","Bassins des Lumières","Jardin Public"],
+      bestSolo: ["CAPC musée d'art contemporain","MusBA - Musée des Beaux-Arts de Bordeaux","MADD - Musée des Arts décoratifs et du Design","La Pelle Café"],
+      bestUnique: ["Bassins des Lumières","Musée Mer Marine","Frac Nouvelle-Aquitaine MÉCA","Miroir d'eau"],
+      bestBreakfast: ["Marché des Capucins","Mama Shelter Bordeaux","Sauvages Café","La Toque Cuivrée (Sainte-Catherine)"],
+      bestLunch: ["La Tupina","Brasserie Bordelaise","L'Entrecôte (Bordeaux)","Marché des Capucins"],
+      bestDinner: ["Le Chapon Fin","La Tupina","Le Pressoir d'Argent Gordon Ramsay","Mama Shelter Bordeaux"],
+      bestCocktails: ["Symbiose","Le Rooftop (InterContinental Bordeaux)","Mama Shelter Bordeaux","Bar à Vin (Maison du Vin de Bordeaux)"],
+      bestBakeries: ["Baillardran (Bar à Canelés, rue Sainte-Catherine)","La Toque Cuivrée (Sainte-Catherine)"],
+      bestCoffee: ["La Pelle Café","Sauvages Café"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Musée d'Aquitaine": "Musée d'Aquitaine 20 cours Pasteur Bordeaux",
+      "Grand-Théâtre (Opéra National de Bordeaux)": "Grand-Théâtre Place de la Comédie Bordeaux",
+      "Bassins des Lumières": "Bassins des Lumières Impasse Brown de Colstoun Bordeaux",
+      "CAPC musée d'art contemporain": "CAPC musée d'art contemporain 7 rue Ferrère Bordeaux",
+      "Miroir d'eau": "Miroir d'eau Place de la Bourse Bordeaux",
+      "Marché des Capucins": "Marché des Capucins Place des Capucins Bordeaux",
+      "Le Chapon Fin": "Le Chapon Fin 5 rue Montesquieu Bordeaux",
+      "La Tupina": "La Tupina 6 rue Porte de la Monnaie Bordeaux",
+      "Brasserie Bordelaise": "Brasserie Bordelaise 50 rue Saint-Rémi Bordeaux",
+      "L'Entrecôte (Bordeaux)": "L'Entrecôte 4 Cours du 30 Juillet Bordeaux",
+      "Jardin Public": "Jardin Public Cours de Verdun Bordeaux",
+      "Frac Nouvelle-Aquitaine MÉCA": "Frac Nouvelle-Aquitaine MÉCA 5 Parvis Corto Maltese Bordeaux",
+      "Jardin botanique de la Bastide": "Jardin botanique Esplanade Linné Bordeaux",
+      "Le Pressoir d'Argent Gordon Ramsay": "Le Pressoir d'Argent 2 Place de la Comédie Bordeaux",
+      "Le Rooftop (InterContinental Bordeaux)": "InterContinental Le Rooftop 2 Place de la Comédie Bordeaux",
+      "Symbiose": "Symbiose 4 Quai des Chartrons Bordeaux",
+      "Bar à Vin (Maison du Vin de Bordeaux)": "Bar à Vin 3 cours du XXX Juillet Bordeaux",
+      "Cap Sciences": "Cap Sciences Hangar 20 Quai de Bacalan Bordeaux",
+      "Muséum de Bordeaux - sciences et nature": "Muséum de Bordeaux 5 place Bardineau Bordeaux",
+      "MusBA - Musée des Beaux-Arts de Bordeaux": "Musée des Beaux-Arts 20 cours d'Albret Bordeaux",
+      "MADD - Musée des Arts décoratifs et du Design": "MADD 39 rue Bouffard Bordeaux",
+      "La Pelle Café": "La Pelle Café 29 rue Notre-Dame Bordeaux",
+      "Musée Mer Marine": "Musée Mer Marine 89 rue des Étrangers Bordeaux",
+      "Mama Shelter Bordeaux": "Mama Shelter 19 rue Poquelin Molière Bordeaux",
+      "Sauvages Café": "Sauvages Café 7 rue des Frères Bonie Bordeaux",
+      "La Toque Cuivrée (Sainte-Catherine)": "La Toque Cuivrée 5 rue Sainte-Catherine Bordeaux",
+      "Baillardran (Bar à Canelés, rue Sainte-Catherine)": "Baillardran 76 rue Sainte-Catherine Bordeaux"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Bordeaux" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Museums, riverside sights, gardens and a morning market, with canelé shops, coffee, dinners and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Musée d'Aquitaine","CAPC musée d'art contemporain","Bassins des Lumières","Grand-Théâtre (Opéra National de Bordeaux)"];
+    cityGuide.tip = "Museum closing days differ: the MusBA closes on Tuesdays, while the Musée d'Aquitaine, Musée Mer Marine and Muséum close on Mondays, so put the MusBA on a Monday and the others later in the week.";
+    data.destinationFacts[cityKey] = "Museum closing days differ: the MusBA closes on Tuesdays, while the Musée d'Aquitaine, Musée Mer Marine and Muséum close on Mondays, so put the MusBA on a Monday and the others later in the week.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Museums, riverside sights, gardens and a morning market, with canelé shops, coffee, dinners and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Monday vs Tuesday",
+        "copy": "The Musée d'Aquitaine, Musée Mer Marine, Muséum and Marché des Capucins are closed on Mondays. The MusBA closes on Tuesdays, and the Frac MÉCA opens Wednesday to Sunday only."
+      },
+      {
+        "label": "Tickets",
+        "value": "Buy on site at MusBA",
+        "copy": "MusBA tickets can't be bought online; you buy them at the museum or Galerie reception. The MusBA and CAPC are free on the first Sunday of the month except in July and August, and the Frac MÉCA asks a free contribution from 2 euros."
+      },
+      {
+        "label": "Walk-ins",
+        "value": "No bookings at some",
+        "copy": "L'Entrecôte on cours du 30 Juillet and the InterContinental's Le Rooftop both say they take no reservations. At Symbiose an online booking is only a request, confirmed if tables are free."
+      },
+      {
+        "label": "Ages and families",
+        "value": "Plan by age",
+        "copy": "Mama Shelter says breakfast bookings are mandatory and children under 4 eat free. Grand-Théâtre themed visits are set by age, from 6 months for baby visits to 7 and up for behind-the-scenes tours."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Check each museum's closing day first, then build your meals around the restaurants' fixed service times.",
+      intro: [
+        "Bordeaux's museums keep different closing days, so plan around them before anything else. The Musée d'Aquitaine at 20 cours Pasteur opens Tuesday to Sunday, 11:00 to 18:00, and the city announced its reopening this year alongside the exhibition \"Le Monde d'après\". The CAPC at 7 rue Ferrère keeps the same Tuesday-to-Sunday pattern and shows Alexandra Bircken's SomaSemaSoma until 3 January 2027. The MusBA on cours d'Albret closes on Tuesdays instead. Its \"Jean Dupas & Co. Le grand Art déco\" runs to 29 November 2026, and you buy tickets at reception, not online.",
+        "North along the river, the Bassins à flot area groups several indoor sights. Bassins des Lumières, on impasse Brown de Colstoun, is showing Planète Préhistorique : Dinosaures, and if you hold a City Pass Bordeaux you can enter without booking ahead. The Musée Mer Marine at 89 rue des Étrangers closes on Mondays and has A-MO's \"Bleu Sauvage\" until 3 January 2027. Cap Sciences, in Hangar 20 on quai de Bacalan, has hands-on exhibitions such as Anatomik Park. Across town, the Frac MÉCA shows Seulgi Lee's GORU GORU until 25 April 2027, Wednesday to Sunday afternoons.",
+        "For meals, service times matter more than you might expect. L'Entrecôte at 4 cours du 30 Juillet takes no reservations, while Le Chapon Fin at 5 rue Montesquieu serves Tuesday to Saturday only. La Tupina, near the Porte de la Monnaie, opens for lunch and dinner Tuesday to Sunday and for dinner only on Monday. Brasserie Bordelaise on rue Saint-Rémi serves continuously from noon to midnight every day. For an evening at a restaurant its hotel describes as two-star, Le Pressoir d'Argent Gordon Ramsay at the InterContinental on place de la Comédie takes bookings online.",
+        "Mornings and evenings fit around fixed hours too. The Marché des Capucins opens from 6:00 Tuesday to Sunday. La Toque Cuivrée on rue Sainte-Catherine opens daily from 8:00, and Baillardran's Bar à Canelés at 76 rue Sainte-Catherine from 9:00. La Pelle Café on rue Notre-Dame is closed Monday and Tuesday, and Sauvages Café near Pey-Berland closes Wednesday and Thursday. In the evening, Symbiose on quai des Chartrons runs its cocktail bar Tuesday to Saturday from 18:00, and the Bar à Vin on cours du XXX Juillet pours until 22:00, Monday to Saturday."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Start at the Musée d'Aquitaine (Tuesday to Sunday, 11:00 to 18:00), then see the Grand-Théâtre on place de la Comédie."
+        ],
+        [
+          "A slower morning",
+          "Begin at the Marché des Capucins, which opens at 6:00 Tuesday to Sunday, then have coffee at La Pelle Café from Wednesday to Sunday."
+        ],
+        [
+          "Before booking",
+          "Book Le Chapon Fin or Le Pressoir d'Argent online, but go straight to L'Entrecôte and Le Rooftop, which take no reservations."
+        ]
+      ],
+      trust: "All 27 distinct recommendations in this guide were checked against their operators' own websites on October 27, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

@@ -5,6 +5,345 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Bordeaux, France": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-27",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The Cité du Vin site failed with a certificate error and Le Gabriel refused the connection, so neither was checked; the Tour Pey-Berland is closed until further notice per its own site. Weekly hours were not published on the pages read for the MADD, Cap Sciences (today's hours only), Le Pressoir d'Argent, Le Rooftop and the Grand-Théâtre, whose address came from an older page on its own site. La Tupina, L'Entrecôte, La Pelle Café, Baillardran and La Toque Cuivrée showed current hours but no 2026-dated content. Symbiose's restaurant service is marked \"Reprise indéterminée\"; only its cocktail bar is listed.",
+    "sourceUrls": [
+      "docs/content-research/bordeaux-2026-10-27.md",
+      "docs/content-research/bordeaux-2026-10-27.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Cité du Vin",
+        "url": "https://www.laciteduvin.com/en/plan-your-visit/opening-hours",
+        "checkedOn": "2026-10-27",
+        "reason": "Fetch failed with a certificate error (\"unable to verify the first certificate\"); not bypassed. Not evidence of closure."
+      },
+      {
+        "name": "Tour Pey-Berland",
+        "url": "https://www.pey-berland.fr/",
+        "checkedOn": "2026-10-27",
+        "reason": "Official page says the tower is \"fermée jusqu'à nouvel ordre\" after lightning damage."
+      },
+      {
+        "name": "Cathédrale Saint-André",
+        "url": "https://www.cathedrale-bordeaux.fr/",
+        "checkedOn": "2026-10-27",
+        "reason": "Official site gives address (Place Pey Berland) but hours page returned 404 and no current operating evidence (only 2025 Jubilee items)."
+      },
+      {
+        "name": "Garopapilles",
+        "url": "https://www.garopapilles.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "Official site is a farewell notice; new owners \"rouvriront dans quelques semaines\", no date."
+      },
+      {
+        "name": "Le Gabriel",
+        "url": "https://www.bordeauxgabriel.fr/",
+        "checkedOn": "2026-10-27",
+        "reason": "Fetch failed (connection refused on port 443)."
+      },
+      {
+        "name": "Darwin Ecosystème",
+        "url": "https://www.darwin.camp/",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTPS URL redirects to plain http; no https official page available to cite."
+      },
+      {
+        "name": "Black List Café",
+        "url": "https://www.blacklistcafe.fr/",
+        "checkedOn": "2026-10-27",
+        "reason": "No official website found (social media only); DNS failure for blacklistcafe.fr."
+      },
+      {
+        "name": "L'Alchimiste",
+        "url": "https://www.lalchimiste-cafes.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "Guessed official domain did not resolve; no official page read."
+      },
+      {
+        "name": "Au Pétrin Moissagais",
+        "checkedOn": "2026-10-27",
+        "reason": "No official website found; only directories and blogs."
+      },
+      {
+        "name": "Dune Blanche (Chez Pascal)",
+        "url": "https://www.dunesblanches.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "Official site shows only \"Lancement imminent\"; no address or hours."
+      },
+      {
+        "name": "Halles de Bacalan (Biltoki)",
+        "url": "https://www.biltoki.com/halles-de-bacalan",
+        "checkedOn": "2026-10-27",
+        "reason": "Official page returned 404; no official page found."
+      },
+      {
+        "name": "Le Bordeaux (InterContinental brasserie)",
+        "url": "https://bordeaux.intercontinental.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "Named on hotel site but no hours, booking or dated content specific to it."
+      },
+      {
+        "name": "Place de la Bourse",
+        "checkedOn": "2026-10-27",
+        "reason": "Public square with no operator page read; Miroir d'eau used instead."
+      },
+      {
+        "name": "Saint-Emilion",
+        "checkedOn": "2026-10-27",
+        "reason": "Town outside Bordeaux, not a single operated place; only tourism-board sources."
+      },
+      {
+        "name": "Saint-Emilion day",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Saint-Emilion day",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Garonne river walk",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Chartrons design shops",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Cite du Vin",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Golden Triangle evening",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Golden Triangle walk",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Chartrons",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Saint-Michel",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Place de la Bourse",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Place de la Bourse",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Place de la Bourse",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Golden Triangle cafe or market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Cite du Vin",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe, bakery, market, lunch, dinner, cocktail and coffee entries (e.g. \"a market lunch and local wine\", \"Bordeaux market or cafe\", \"A local dinner in Golden Triangle\", \"Chartrons bakery or market\", \"Local bakery near Golden Triangle\", \"Coffee near Golden Triangle\", \"A rooftop or waterfront evening\")",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Remaining \"A ...\" itinerary entries in bestBudget, bestLuxury, bestCouples, bestKids, bestSolo and bestUnique (e.g. \"A private transfer between highlights\", \"A treat everyone can agree on\")",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Musée d'Aquitaine": {
+        "url": "https://www.bordeaux.fr/le-musee-daquitaine",
+        "sourceType": "official public operator (Ville de Bordeaux)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "City page carries an article dated 6 May 2026: \"L'exposition 'Le Monde d'après' accompagne la réouverture du Musée d'Aquitaine\"."
+      },
+      "CAPC musée d'art contemporain": {
+        "url": "https://www.capc-bordeaux.fr/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Current exhibitions include Alexandra Bircken, SomaSemaSoma \"Jusqu'au 03.01.27\" and Pollen \"Jusqu'au 02.01.28\"; \"Quoi qu'il en soit\" runs \"12.11.26 - 10.01.27\"."
+      },
+      "MusBA - Musée des Beaux-Arts de Bordeaux": {
+        "url": "https://www.musba-bordeaux.fr/fr/infos-pratiques",
+        "sourceType": "operator's own site (Ville de Bordeaux museum)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Homepage lists \"Jean Dupas & Co. Le grand Art déco\" (26 June-29 November 2026) and \"Passions Collections\" \"jusqu'au 4 janvier 2027\"; practical page notes prices \"susceptibles d'évoluer à partir de novembre 2026\"."
+      },
+      "MADD - Musée des Arts décoratifs et du Design": {
+        "url": "https://www.madd-bordeaux.fr/explorer/expositions",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Exhibitions listed \"En cours\": \"Céramiques, corps sensibles\" 22.04.2026 → 04.01.2028 and \"Morceaux choisis\" 17.09.2026 → 15.02.2027; \"We will survive\" from 10.12.2026."
+      },
+      "Bassins des Lumières": {
+        "url": "https://www.bassins-lumieres.com/fr/horaires",
+        "sourceType": "operator's own site (Culturespaces)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Hours table covers \"26 octobre 2026 au 1 novembre 2026\" with Planète Préhistorique : Dinosaures; Matisse also listed as current."
+      },
+      "Musée Mer Marine": {
+        "url": "https://www.mmmbordeaux.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Exhibition \"Bleu Sauvage\" by A-MO, \"11 septembre 2026 — 3 janvier 2027\"; events dated through December."
+      },
+      "Cap Sciences": {
+        "url": "https://www.cap-sciences.net/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Homepage shows \"Ouvert aujourd'hui de 11h à 19h\" and current exhibitions such as \"Crotte ! Que fait le microbiote ?\" and \"Anatomik Park\" (no dates); footer \"Copyright © 2026\"."
+      },
+      "Frac Nouvelle-Aquitaine MÉCA": {
+        "url": "https://fracnouvelleaquitaine-meca.fr/preparer-votre-visite/acces-horaires-tarifs/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Homepage lists GORU GORU by Seulgi Lee, 9 October 2026 to 25 April 2027, and family visits on 28-31 October."
+      },
+      "Muséum de Bordeaux - sciences et nature": {
+        "url": "https://www.museum-bordeaux.fr/",
+        "sourceType": "operator's own site (Ville de Bordeaux museum)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Homepage features the current \"Félins\" exhibition and October school-holiday activities (no dates shown)."
+      },
+      "Grand-Théâtre (Opéra National de Bordeaux)": {
+        "url": "https://www.opera-bordeaux.com/en/node/62311",
+        "sourceType": "operator's own site (Opéra National de Bordeaux)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Visits page lists themed visits, e.g. behind-the-scenes visit Saturday 7 November and storytelling visit Saturday 28 November; homepage lists Carmen at the Grand-Théâtre on 9, 11 and 13 November."
+      },
+      "Miroir d'eau": {
+        "url": "https://www.bordeaux.fr/agenda/visite-guidee-explorez-les-dessous-du-miroir-deau",
+        "sourceType": "official public operator (Ville de Bordeaux)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "City agenda lists a technical guided tour \"Du Vendredi 12 juin 2026 au Vendredi 30 octobre 2026\", Fridays 14h and 15h, \"Tarif : 10 €\"."
+      },
+      "Jardin Public": {
+        "url": "https://www.bordeaux.fr/parc-jardin/jardin-public",
+        "sourceType": "official public operator (Ville de Bordeaux)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "City page publishes current seasonal opening hours and the \"Va, Petit Mousse\" boat service at 3.50 euros; no closure notice."
+      },
+      "Jardin botanique de la Bastide": {
+        "url": "https://www.bordeaux.fr/parc-jardin/jardin-botanique-de-bordeaux",
+        "sourceType": "official public operator (Ville de Bordeaux)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "City page publishes current seasonal garden hours and greenhouse hours; no closure notice."
+      },
+      "Marché des Capucins": {
+        "url": "https://www.marchedescapucins.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Site publishes current weekly hours; footer \"© 2026 Marché des Capucins\"."
+      },
+      "Le Chapon Fin": {
+        "url": "https://www.chapon-fin.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Online booking (\"cliquez directement sur le bouton Réserver\") and current menus listed (Menu du Marché, Menu Toulouse-Lautrec); footer \"© 2026 Le Chapon Fin\"."
+      },
+      "La Tupina": {
+        "url": "https://www.latupina.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Site publishes weekly hours and a live reservation button via La Fourchette; no 2026-dated content (footer © 2023)."
+      },
+      "Le Pressoir d'Argent Gordon Ramsay": {
+        "url": "https://bordeaux.intercontinental.com/",
+        "sourceType": "operator's own site (InterContinental Bordeaux - Le Grand Hotel)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "\"Réserver votre table\" booking link; announcement \"Notre restaurant gastronomique deux étoiles rejoint Les Grandes Tables du Monde\"; footer ©2026."
+      },
+      "L'Entrecôte (Bordeaux)": {
+        "url": "https://www.entrecote.fr/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Site publishes service hours and the policy \"Nous ne prenons pas de réservation\"; no 2026-dated content."
+      },
+      "Brasserie Bordelaise": {
+        "url": "https://www.brasserie-bordelaise.fr/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Current menu \"2026_09_CARTE BB_FR.pdf\" and wine list dated 2026_10_23; \"Repas de groupe et privatisations de salles sur demande\"."
+      },
+      "Mama Shelter Bordeaux": {
+        "url": "https://mamashelter.com/bordeaux/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Events dated 28-31/10/2026 (DJ sets, Mama Comedy Club); weekly menu \"From Monday 26th october\"."
+      },
+      "Bar à Vin (Maison du Vin de Bordeaux)": {
+        "url": "https://www.bordeaux.com/fr/nos-bonnes-adresses/bar-a-vin-bordeaux/",
+        "sourceType": "official site of the Bordeaux wine council (CIVB), whose Maison du Vin houses the bar",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Page publishes regular hours and a current wine list (\"Carte du moment\", uploaded 2026/03)."
+      },
+      "Symbiose": {
+        "url": "https://www.symbiose-bordeaux.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Cocktail bar hours published \"Du mardi au samedi – 18h à 01h30\" with a reservation-request form; footer \"© 2026 Symbiose\". The page also says the restaurant/tasting menu resumption is \"Reprise indéterminée\"."
+      },
+      "Le Rooftop (InterContinental Bordeaux)": {
+        "url": "https://bordeaux.intercontinental.com/le-rooftop/",
+        "sourceType": "operator's own site (InterContinental Bordeaux - Le Grand Hotel)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Page announces the winter rooftop \"dès le 31 octobre\" and states \"Nous ne prenons pas de réservation\"; footer ©2026."
+      },
+      "Baillardran (Bar à Canelés, rue Sainte-Catherine)": {
+        "url": "https://www.baillardran.com/fr/les-points-de-vente",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Points-of-sale page lists this branch among 14 Bordeaux shops with current hours; no 2026-dated content."
+      },
+      "La Toque Cuivrée (Sainte-Catherine)": {
+        "url": "https://la-toque-cuivree.fr/boutique/bordeaux-sainte-catherine/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Branch page publishes current daily hours; no 2026-dated content."
+      },
+      "La Pelle Café": {
+        "url": "https://lapellecafe.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Site publishes weekly opening hours; no 2026-dated content."
+      },
+      "Sauvages Café": {
+        "url": "https://www.sauvagescafe.fr/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Seasonal brunch menu labelled 2026 (\"Carte ETE 2026\", link to \"carte-hiver-2026\") and a notice \"Ouvert exceptionnellement\" on 1 November; footer \"© Sauvages Café 2026\"."
+      }
+    }
+  },
   "Marseille, France": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-27",
