@@ -5930,4 +5930,110 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 27 distinct recommendations in this guide were checked against their operators' own websites on October 27, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Verona, Italy: source review of 2026-10-27 (docs/content-research/verona-2026-10-27.md).
+  {
+    const cityKey = "Verona, Italy";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Arena di Verona","Torre dei Lamberti","Basilica di San Zeno","Giardino Giusti"],
+      bestFirstTimers: ["Arena di Verona","Complesso della Cattedrale (Duomo)","Basilica di Santa Anastasia","Palazzo Maffei Casa Museo"],
+      bestRestaurants: ["Antica Bottega del Vino","Trattoria I Masenini","Il Desco","Trattoria Al Pompiere"],
+      bestBudget: ["Trattoria Al Bersagliere","Funicolare di Castel San Pietro","Chiesa di San Fermo","De Rossi (Corso Porta Borsari)"],
+      bestLuxury: ["Casa Perbellini","Il Desco","Antica Bottega del Vino"],
+      bestCouples: ["Terrazza Bar al Ponte","Giardino Giusti","Funicolare di Castel San Pietro","Romeo Cocktail Bar"],
+      bestKids: ["Giardino Giusti","Funicolare di Castel San Pietro","Torre dei Lamberti","Museo Miniscalchi-Erizzo"],
+      bestSolo: ["Museo Miniscalchi-Erizzo","Palazzo Maffei Casa Museo","Caffè Coloniale","Signorvino (Corso Porta Nuova)"],
+      bestUnique: ["Museo Miniscalchi-Erizzo","Funicolare di Castel San Pietro","Torre dei Lamberti","Pescheria I Masenini"],
+      bestBreakfast: ["Caffè Coloniale","De Rossi (Corso Porta Borsari)","Flego (Corso Porta Borsari)"],
+      bestLunch: ["Ristorante Maffei","Trattoria Al Bersagliere","Trattoria I Masenini","Locanda 4 Cuochi"],
+      bestDinner: ["Pescheria I Masenini","Locanda 4 Cuochi","Trattoria Al Pompiere","Ristorante Maffei"],
+      bestCocktails: ["Romeo Cocktail Bar","Terrazza Bar al Ponte","Signorvino (Corso Porta Nuova)"],
+      bestBakeries: ["Flego (Corso Porta Borsari)","De Rossi (Corso Porta Borsari)"],
+      bestCoffee: ["Caffè Coloniale","Romeo Cocktail Bar"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Arena di Verona": "Arena di Verona Piazza Bra Verona",
+      "Torre dei Lamberti": "Torre dei Lamberti Via della Costa 2 Verona",
+      "Basilica di San Zeno": "Basilica di San Zeno Piazza San Zeno Verona",
+      "Giardino Giusti": "Giardino Giusti Via Giardino Giusti 2 Verona",
+      "Complesso della Cattedrale (Duomo)": "Duomo di Verona Piazza Duomo Verona",
+      "Basilica di Santa Anastasia": "Basilica di Santa Anastasia Piazza Santa Anastasia Verona",
+      "Palazzo Maffei Casa Museo": "Palazzo Maffei Piazza Erbe 38 Verona",
+      "Antica Bottega del Vino": "Antica Bottega del Vino Vicolo Scudo di Francia 3 Verona",
+      "Trattoria I Masenini": "Trattoria I Masenini Via Roma 34 Verona",
+      "Il Desco": "Il Desco Via Dietro San Sebastiano 5 Verona",
+      "Trattoria Al Pompiere": "Trattoria Al Pompiere Vicolo Regina d'Ungheria 5 Verona",
+      "Trattoria Al Bersagliere": "Trattoria Al Bersagliere Via Dietro Pallone 1 Verona",
+      "Funicolare di Castel San Pietro": "Funicolare Castel San Pietro Via Fontanelle Santo Stefano 6 Verona",
+      "Chiesa di San Fermo": "Chiesa di San Fermo Stradone San Fermo Verona",
+      "De Rossi (Corso Porta Borsari)": "Pasticceria De Rossi Corso Porta Borsari 3 Verona",
+      "Casa Perbellini": "Casa Perbellini Vicolo Corticella San Marco 3 Verona",
+      "Terrazza Bar al Ponte": "Terrazza Bar al Ponte Via Ponte Pietra 26 Verona",
+      "Romeo Cocktail Bar": "Romeo Cocktail Bar Via San Marco in Foro 1b Verona",
+      "Museo Miniscalchi-Erizzo": "Museo Miniscalchi-Erizzo Via San Mammaso 2a Verona",
+      "Caffè Coloniale": "Caffe Coloniale Piazza Viviani 14C Verona",
+      "Signorvino (Corso Porta Nuova)": "Signorvino Corso Porta Nuova 2a Verona",
+      "Pescheria I Masenini": "Pescheria I Masenini Piazzetta Pescheria 9 Verona",
+      "Flego (Corso Porta Borsari)": "Pasticceria Flego Corso Porta Borsari 9 Verona",
+      "Ristorante Maffei": "Ristorante Maffei Piazza Erbe 38 Verona",
+      "Locanda 4 Cuochi": "Locanda 4 Cuochi Via Alberto Mario 12 Verona"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Verona" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Roman and medieval landmarks, churches, house museums, a garden and a funicular, with breakfast cafés, bakeries, trattorias, dinners and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Arena di Verona","Basilica di San Zeno","Torre dei Lamberti","Giardino Giusti"];
+    cityGuide.tip = "Palazzo Maffei Casa Museo closes on Tuesdays and the Museo Miniscalchi-Erizzo opens only Friday to Monday, so save midweek for the churches, which open daily.";
+    data.destinationFacts[cityKey] = "Palazzo Maffei Casa Museo closes on Tuesdays and the Museo Miniscalchi-Erizzo opens only Friday to Monday, so save midweek for the churches, which open daily.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Roman and medieval landmarks, churches, house museums, a garden and a funicular, with breakfast cafés, bakeries, trattorias, dinners and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Tuesdays, and Sun-Mon for dining",
+        "copy": "Palazzo Maffei Casa Museo closes on Tuesdays and the Museo Miniscalchi-Erizzo closes Tuesday to Thursday. Il Desco and Casa Perbellini close on Sundays and Mondays, and Pescheria I Masenini closes Sunday evening and all day Monday."
+      },
+      {
+        "label": "Tickets",
+        "value": "€8 four-church route",
+        "copy": "The Fondazione Chiese Vive four-church route covers San Zeno, the Duomo, Santa Anastasia and San Fermo for €8 and stays valid for 90 days; a single church costs €4. Palazzo Maffei sells tickets online and at its box office."
+      },
+      {
+        "label": "Booking",
+        "value": "Book trattorias ahead",
+        "copy": "Trattoria Al Pompiere confirms email bookings made at least 24 hours ahead and takes shorter-notice bookings by phone only. Ristorante Maffei says booking is always recommended but not required, and the churches need no reservation."
+      },
+      {
+        "label": "Rules",
+        "value": "Arena: 17-litre bag limit",
+        "copy": "At the Arena di Verona, bags over 17 litres, glass and outside food are not allowed, and smart casual dress is requested. Children under 14 must be with an adult, and children under 4 may sit only in the Family sector."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Plan museum days around Tuesday closures and book Verona's trattorias a day ahead, especially early in the week.",
+      intro: [
+        "Verona's headline sights are easy to plan once you know their weekly rhythms. The Arena di Verona stands on Piazza Bra, and Fondazione Arena di Verona has already published its next Opera Festival, running from 11 June to 11 September 2027. Its spectator rules ask you to arrive at least an hour before curtain, leave bags over 17 litres behind and wear smart casual dress. Close by, Torre dei Lamberti on Via della Costa opens every day except 25 December, and you can climb its 289 steps or take the glass lift.",
+        "Four historic churches run by Fondazione Chiese Vive share one ticketing system: the Basilica di San Zeno, the Complesso della Cattedrale (Duomo), the Basilica di Santa Anastasia and the Chiesa di San Fermo. From 1 November 2026 to 28 February 2027 they open on weekdays from 10:00 to 17:00, and Sunday visits start at 13:00 or 13:30. A single church costs €4, while the four-church route costs €8 and stays valid for 90 days. You don't need to book, but note that San Fermo has steep steps and no wheelchair access.",
+        "For smaller collections, Palazzo Maffei Casa Museo on Piazza Erbe opens daily from 10:00 to 18:00 except Tuesdays, with guided tours on Saturdays and Sundays at 10:30, 11:30 and 15:30. The Museo Miniscalchi-Erizzo on Via San Mammaso opens only Friday to Monday, charges €8 and lets children up to 11 in free. Giardino Giusti is open all year except 25 December, from 10:00 to 18:00 in winter, and the funicular on Via Fontanelle Santo Stefano climbs toward Castel San Pietro every day from 10:00, closing at 17:00 in winter.",
+        "Many restaurants close early in the week, so check before you plan dinner. Il Desco on Via Dietro San Sebastiano closes on Sundays and Mondays, Casa Perbellini also closes Saturday evenings, and Trattoria Al Bersagliere lists hours only from Tuesday to Saturday. Trattoria Al Pompiere takes email bookings at least 24 hours ahead and phone bookings for anything sooner. Ristorante Maffei on Piazza Erbe serves from 12:00 to 22:30 daily. For drinks, Romeo Cocktail Bar's cocktail bar opens at 19:00, and Terrazza Bar al Ponte by Ponte Pietra stays open from 09:00 to 02:00."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "See the Arena di Verona on Piazza Bra, climb Torre dei Lamberti, then use the €8 four-church route for San Zeno, the Duomo, Santa Anastasia and San Fermo."
+        ],
+        [
+          "A slower morning",
+          "Start with a savory breakfast at Caffè Coloniale, then walk Giardino Giusti, open all year except 25 December."
+        ],
+        [
+          "Before booking",
+          "Check closing days, since Il Desco and Casa Perbellini close on Sundays and Mondays and Trattoria Al Pompiere wants email bookings at least 24 hours ahead."
+        ]
+      ],
+      trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 27, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

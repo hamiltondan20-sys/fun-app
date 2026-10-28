@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 58.
-- Classifier-passed (published, not fully documented in that format): 134.
+- Source-verified (complete dated evidence format): 59.
+- Classifier-passed (published, not fully documented in that format): 133.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -485,7 +485,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Vancouver, Canada | vancouver | source-verified | source-checked | 26 | 57 | 15 | 15 | None |
 | Varadero, Cuba | varadero | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Venice, Italy | venice | source-verified | source-checked | 24 | 42 | 14 | 14 | None |
-| Verona, Italy | verona | classifier-passed | not-reviewed | 0 | 13 | 15 | 6 | None |
+| Verona, Italy | verona | source-verified | source-checked | 25 | 48 | 15 | 15 | None |
 | Versailles, France | versailles | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Victoria, Canada | victoria | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Victoria Falls, Zimbabwe | victoria-falls | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |

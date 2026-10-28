@@ -1,0 +1,906 @@
+{
+  "city": "Verona, Italy",
+  "checkedOn": "2026-10-27",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Arena di Verona",
+      "kind": "landmark",
+      "url": "https://www.arena.it/arena-opera-festival/preparati-allopera/dove-siamo/",
+      "sourceType": "official operator (Fondazione Arena di Verona)",
+      "address": "Piazza Bra, 37121 Verona",
+      "operatingEvidence": "Fondazione Arena publishes the next Opera Festival, 11 June to 11 September 2027, with box offices at \"Via Dietro Anfiteatro 6/b\" and \"Via Roma 1\"; the spectator rules include a rule applying \"from the 2026 Festival\" on children under 4.",
+      "hours": "Box office Via Dietro Anfiteatro 6/b, outside the Festival: Mon-Fri 10:30-16:00, Sat 9:15-12:45 (the 'Come acquistare' page gives 10:00-16:30 and 9:30-12:30). Via Roma 1, winter (1 Oct-31 May): Tue, Thu, Sat 10:00-18:00; Wed, Fri 13:00-20:00; Sun 12:00-15:30; closed Mon.",
+      "confidence": "high"
+    },
+    {
+      "name": "Torre dei Lamberti",
+      "kind": "landmark",
+      "url": "https://www.torredeilamberti.it/",
+      "sourceType": "official site of the municipal operator (AGEC, Comune di Verona company)",
+      "address": "Via della Costa, 2, 37121 Verona VR",
+      "operatingEvidence": "The site says the tower is \"visitabile tutti i giorni dell'anno (escluso 25 dicembre)\", with 289 steps or a glass lift and a ticket office at Palazzo della Ragione; its events calendar covers October 2026.",
+      "hours": "not published (open every day except 25 December)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Basilica di San Zeno",
+      "kind": "landmark",
+      "url": "https://www.chieseverona.it/it/info-visita",
+      "sourceType": "official public operator (Fondazione Chiese Vive, Diocese of Verona churches)",
+      "address": "Piazza San Zeno, Verona",
+      "operatingEvidence": "Dated 2026-27 visiting hours are published; \"Non è necessaria la prenotazione per le visite.\" Tickets are sold at the church entrance.",
+      "hours": "1 Nov 2026-28 Feb 2027: Mon-Fri 10:00-17:00; Sat and eves of holidays 9:30-17:30; Sun and holidays 13:00-17:30",
+      "confidence": "high"
+    },
+    {
+      "name": "Complesso della Cattedrale (Duomo)",
+      "kind": "landmark",
+      "url": "https://www.chieseverona.it/it/info-visita",
+      "sourceType": "official public operator (Fondazione Chiese Vive, Diocese of Verona churches)",
+      "address": "Corte S. Elena, Piazza Duomo 35, 37121 Verona",
+      "operatingEvidence": "Dated 2026-27 visiting hours are published; wheelchair access possible; no booking needed. The address quoted is the Fondazione's office within the cathedral complex.",
+      "hours": "1 Nov 2026-28 Feb 2027: Mon-Fri 10:00-17:00; Sat and eves of holidays 10:00-15:30; Sun and religious holidays 13:30-17:30",
+      "confidence": "medium"
+    },
+    {
+      "name": "Basilica di Santa Anastasia",
+      "kind": "landmark",
+      "url": "https://www.chieseverona.it/it/le-chiese/la-basilica-di-santa-anastasia",
+      "sourceType": "official public operator (Fondazione Chiese Vive, Diocese of Verona churches)",
+      "address": "Piazza Santa Anastasia, Verona",
+      "operatingEvidence": "The page lists hours for 1 November 2026 to 28 February 2027; no reservation needed and the wheelchair entrance is accessible.",
+      "hours": "1 Nov 2026-28 Feb 2027: Mon-Fri 10:00-17:00; Sat and eves of holidays 9:30-18:00; Sun and holidays 13:00-17:30",
+      "confidence": "high"
+    },
+    {
+      "name": "Chiesa di San Fermo",
+      "kind": "landmark",
+      "url": "https://www.chieseverona.it/it/le-chiese/la-chiesa-di-san-fermo",
+      "sourceType": "official public operator (Fondazione Chiese Vive, Diocese of Verona churches)",
+      "address": "Stradone San Fermo, Verona (37121)",
+      "operatingEvidence": "Dated 2026-27 hours on the visiting-info page; it notes \"l'accesso con carrozzina non è possibile per la presenza di scale ripide.\"",
+      "hours": "1 Nov 2026-28 Feb 2027: Mon-Fri 10:00-17:00; Sat and eves of holidays 10:00-17:30; Sun and holidays 13:00-17:30",
+      "confidence": "high"
+    },
+    {
+      "name": "Palazzo Maffei Casa Museo",
+      "kind": "museum",
+      "url": "https://www.palazzomaffeiverona.com/",
+      "sourceType": "operator's own site",
+      "address": "Piazza Erbe 38-38A, Verona",
+      "operatingEvidence": "Online ticketing and fixed guided tours every Saturday and Sunday at 10:30, 11:30 and 15:30 in Italian and English; special openings on 1 November and 8 December (year not stated).",
+      "hours": "\"Aperto tutti i giorni dalle 10.00 alle 18.00 (ultimo ingresso ore 17.10), chiuso martedì.\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Museo Miniscalchi-Erizzo",
+      "kind": "museum",
+      "url": "https://www.museominiscalchi.it/",
+      "sourceType": "operator's own site",
+      "address": "Via San Mammaso 2/a, 37121 Verona",
+      "operatingEvidence": "The site carries 2026-dated opening notices and current ticket prices (\"Intero: 8 €\"); children up to 11 enter free.",
+      "hours": "Fri, Sat, Sun, Mon 10:00-13:00 and 14:00-18:00, last entry 45 minutes before closing; closed Tue, Wed, Thu, 1 January and 25 December",
+      "confidence": "high"
+    },
+    {
+      "name": "Giardino Giusti",
+      "kind": "park",
+      "url": "https://www.giardinogiusti.com/",
+      "sourceType": "operator's own site",
+      "address": "Via Giardino Giusti, 2, Verona (VR)",
+      "operatingEvidence": "Current hours notice: \"Aperto tutto l'anno - chiuso solo il 25 dicembre\"; the site links ticketing and online registration. No 2026-dated content seen.",
+      "hours": "Winter 10:00-18:00; summer 9:00-19:00 (season dates not stated); closed 25 December",
+      "confidence": "medium"
+    },
+    {
+      "name": "Funicolare di Castel San Pietro",
+      "kind": "scenic",
+      "url": "https://www.funicolarediverona.it/",
+      "sourceType": "official site of the municipal operator (AGEC, Comune di Verona company)",
+      "address": "Via Fontanelle Santo Stefano 6, 37129 Verona",
+      "operatingEvidence": "Published daily operating hours and a ticket-office section; fares not shown and the footer reads \"© Copyright 2022\".",
+      "hours": "Mon-Sun: summer 10:00-21:00; winter 10:00-17:00 (season dates not stated)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Antica Bottega del Vino",
+      "kind": "meal",
+      "url": "https://www.bottegavini.it/",
+      "sourceType": "operator's own site",
+      "address": "Vicolo Scudo di Francia, 3 - 37121 Verona VR",
+      "operatingEvidence": "Live \"Prenota un tavolo\" booking link and a \"@COPYRIGHT 2026\" footer.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Casa Perbellini",
+      "kind": "meal",
+      "url": "https://www.casaperbellini.com/",
+      "sourceType": "operator's own site",
+      "address": "Vicolo Corticella San Marco 3, 37121 Verona",
+      "operatingEvidence": "Online booking, a 2026 Michelin logo and a Dom Pérignon white-truffle event on 24 November; Chef's Table guests all start at the same time.",
+      "hours": "Tasting menus: lunch Tue-Sat 12:30-14:00, dinner Tue-Fri 19:30-21:00; Chef's Table lunch Tue-Sat 12:45, dinner Tue-Fri 19:45; closed Sun, Mon and Sat evening",
+      "confidence": "high"
+    },
+    {
+      "name": "Trattoria Al Pompiere",
+      "kind": "meal",
+      "url": "https://www.alpompiere.com/",
+      "sourceType": "operator's own site",
+      "address": "Vicolo Regina D'Ungheria, 5, 37121 Verona VR, Italy",
+      "operatingEvidence": "Booking by email or phone up to 24 hours ahead, phone only at shorter notice; \"© 2026 Trattoria Al Pompiere Srl.\"",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Locanda 4 Cuochi",
+      "kind": "meal",
+      "url": "https://www.locanda4cuochi.it/",
+      "sourceType": "operator's own site",
+      "address": "via Alberto Mario 12, 37121 Verona",
+      "operatingEvidence": "Live online reservation link (\"prenota\"); the only closure notice is an old February holiday closure with no year.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Ristorante Maffei",
+      "kind": "meal",
+      "url": "https://ristorantemaffei.it/",
+      "sourceType": "operator's own site",
+      "address": "Piazza Erbe, 38, 37121 Verona (VR), Italy",
+      "operatingEvidence": "Booking form and phone; \"La prenotazione è sempre consigliata ma non obbligatoria.\" No 2026-dated content seen.",
+      "hours": "Kitchen open every day 12:00-22:30",
+      "confidence": "medium"
+    },
+    {
+      "name": "Il Desco",
+      "kind": "meal",
+      "url": "https://www.ristoranteildesco.it/",
+      "sourceType": "operator's own site",
+      "address": "Via Dietro San Sebastiano, 5/7, 37121 Verona",
+      "operatingEvidence": "Online booking page and published service hours, including earlier dinners on Arena opera nights; copyright line is a placeholder, so no dated content.",
+      "hours": "Lunch 12:30-13:45; dinner 19:30-21:45; closed Sundays and Mondays",
+      "confidence": "medium"
+    },
+    {
+      "name": "Trattoria I Masenini",
+      "kind": "meal",
+      "url": "https://www.trattoriaimasenini.it/",
+      "sourceType": "operator's own site",
+      "address": "Via Roma, 34, 37121 Verona, Italy",
+      "operatingEvidence": "Links a June 2026 à la carte menu and online booking.",
+      "hours": "Lunch 12:30-14:00; dinner 19:30-22:00; closed \"Lunedì a pranzo e Domenica tutto il giorno\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Pescheria I Masenini",
+      "kind": "meal",
+      "url": "https://pescheriaimasenini.it/",
+      "sourceType": "operator's own site",
+      "address": "Piazzetta Pescheria, 9, 37121 Verona",
+      "operatingEvidence": "Online \"Prenota un tavolo\" booking and a published fish menu; pets not allowed.",
+      "hours": "Lunch 12:40-14:00; dinner 19:40-22:00; \"Chiuso domenica sera e lunedì tutto il giorno\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Trattoria Al Bersagliere",
+      "kind": "meal",
+      "url": "https://www.trattoriaalbersagliere.it/",
+      "sourceType": "operator's own site",
+      "address": "Via Dietro Pallone, 1, 37121 Verona (VR)",
+      "operatingEvidence": "Published weekly hours and contacts; newest item is a 2025 Michelin Bib Gourmand badge (no 2026 content).",
+      "hours": "Tue-Sat: open 9:30-15:00 and 19:15-22:00; restaurant service 12:00-13:45 and 19:15-21:45 (no hours listed Sun-Mon)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Romeo Cocktail Bar",
+      "kind": "bar",
+      "url": "https://www.romeococktailbar.it/",
+      "sourceType": "operator's own site",
+      "address": "Via San Marco in Foro 1b, 37121 Verona (VR)",
+      "operatingEvidence": "Online booking (\"Prenota\") and published hours for café bistrot, cocktail bar and restaurant; no dated content.",
+      "hours": "Cocktail bar Sun-Thu 19:00-02:00, Fri-Sat 19:00-02:30; Café Bistrot Sun-Thu 11:00-00:00, Fri-Sat 11:00-02:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Terrazza Bar al Ponte",
+      "kind": "bar",
+      "url": "https://www.terrazzabaralponte.eu/",
+      "sourceType": "operator's own site",
+      "address": "Via Ponte Pietra, 26, 37121 Verona",
+      "operatingEvidence": "Current hours notice: \"Open every day from 09.00 to 02.00.\" No dated content.",
+      "hours": "Every day 09:00-02:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Signorvino (Corso Porta Nuova)",
+      "kind": "bar",
+      "url": "https://www.signorvino.com/it/negozi/veneto/verona/",
+      "sourceType": "operator's own site (chain store locator)",
+      "address": "Corso Porta Nuova 2/a, 37122 Verona",
+      "operatingEvidence": "The store locator lists this branch with weekly hours; the site runs October 2026 promotions.",
+      "hours": "Mon-Sat 09:00-23:59; Sun 10:00-23:59",
+      "confidence": "medium"
+    },
+    {
+      "name": "Flego (Corso Porta Borsari)",
+      "kind": "bakery",
+      "url": "https://www.pasticceriaflego.net/",
+      "sourceType": "operator's own site",
+      "address": "Corso Porta Borsari, 9, 37121 Verona",
+      "operatingEvidence": "\"© 2026 Eredi Flego SAS\" footer and a current Christmas order notice (delivery guaranteed for orders by 14 December).",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "De Rossi (Corso Porta Borsari)",
+      "kind": "bakery",
+      "url": "https://www.derossi.it/",
+      "sourceType": "operator's own site",
+      "address": "Corso Porta Borsari, 3",
+      "operatingEvidence": "Published weekly hours per shop; no dated content.",
+      "hours": "Closed Mon; Tue-Sat 8:00-20:00; Sun 9:00-19:30",
+      "confidence": "medium"
+    },
+    {
+      "name": "Caffè Coloniale",
+      "kind": "cafe",
+      "url": "https://www.caffecoloniale.it/",
+      "sourceType": "operator's own site",
+      "address": "Piazza F. Viviani 14C, 37121 Verona",
+      "operatingEvidence": "Published weekly hours and savory breakfasts (\"colazioni salate\"); no dated content.",
+      "hours": "Mon and Thu 7:30-21:00; Fri 7:30-24:00; Sat 8:00-24:00; Sun 8:30-21:00; Tue-Wed not listed",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Opera at the Arena",
+      "reason": "Covered by the confirmed Arena di Verona entry; the next Opera Festival is published for 2027, with none in the rest of 2026.",
+      "url": "https://www.arena.it/arena-opera-festival/"
+    },
+    {
+      "name": "Piazza delle Erbe",
+      "reason": "Public square; the Comune page gives no operator, market days or opening details to confirm.",
+      "url": "https://www.comune.verona.it/Vivere-il-comune/Luoghi/Piazza-delle-Erbe"
+    },
+    {
+      "name": "Castel San Pietro",
+      "reason": "No official operator page found confirming the castle is open; the hill is reached via the confirmed Funicolare di Castel San Pietro.",
+      "url": ""
+    },
+    {
+      "name": "Museo di Castelvecchio",
+      "reason": "Official civic-museum site refused connection (ECONNREFUSED) at museicivici.comune.verona.it; museiverona.com shows 'Sito non operativo'. Not evidence of closure.",
+      "url": "https://museicivici.comune.verona.it/"
+    },
+    {
+      "name": "Casa di Giulietta",
+      "reason": "Comune page gives the address (Via Cappello 23) but refers hours and tickets to the civic-museum site, which refused connection (ECONNREFUSED).",
+      "url": "https://www.comune.verona.it/Vivere-il-comune/Luoghi/Casa-di-Giulietta"
+    },
+    {
+      "name": "Teatro Romano e Museo Archeologico",
+      "reason": "Official civic-museum site refused connection (ECONNREFUSED). Not evidence of closure.",
+      "url": "https://museicivici.comune.verona.it/"
+    },
+    {
+      "name": "Teatro Filarmonico",
+      "reason": "Fondazione Arena pages read list performances and box offices but give no street address for the theatre.",
+      "url": "https://www.arena.it/teatro-filarmonico-verona/"
+    },
+    {
+      "name": "Rivamancina",
+      "reason": "Certificate error (hostname not in certificate); not bypassed.",
+      "url": "https://www.rivamancina.it/"
+    },
+    {
+      "name": "Trattoria Tre Marchetti",
+      "reason": "HTTP 403 Forbidden.",
+      "url": "https://www.tremarchetti.it/"
+    },
+    {
+      "name": "Garage Coffee Bros",
+      "reason": "HTTP 429 Too Many Requests; café address not confirmed.",
+      "url": "https://www.garagecoffeebros.com/"
+    },
+    {
+      "name": "Gli Ormesini",
+      "reason": "HTTP 429 Too Many Requests.",
+      "url": "https://www.gliormesini.com/"
+    },
+    {
+      "name": "Caffè Filippini",
+      "reason": "Home page shows no address or hours; contact pages returned 404.",
+      "url": "https://www.caffefilippini.it/"
+    },
+    {
+      "name": "Caffè Dante",
+      "reason": "Page gives no address, so the Verona branch could not be confirmed.",
+      "url": "https://www.caffedante.it/"
+    },
+    {
+      "name": "Osteria del Bugiardo",
+      "reason": "Home page shows no address or hours; contact page 404.",
+      "url": "https://www.osteriadelbugiardo.it/"
+    },
+    {
+      "name": "Osteria Sottoriva",
+      "reason": "Address shown but no hours, booking or current content (footer 2025).",
+      "url": "https://www.osteriasottoriva.it/"
+    },
+    {
+      "name": "Pasticceria Gloria",
+      "reason": "Address shown but no hours or current operating evidence.",
+      "url": "https://www.gloriapasticceria.com/"
+    },
+    {
+      "name": "Hotel Gabbia d'Oro",
+      "reason": "Address shown but no dated or current operating details for its bar or breakfast.",
+      "url": "https://www.hotelgabbiadoro.it/"
+    },
+    {
+      "name": "Due Torri Hotel",
+      "reason": "Group site shows 2026 content but no Verona hotel address.",
+      "url": "https://www.duetorrihotels.com/"
+    },
+    {
+      "name": "Ristorante 12 Apostoli",
+      "reason": "Domain redirects to an unrelated site; not followed.",
+      "url": "https://www.12apostoli.com/"
+    },
+    {
+      "name": "Pasticceria Perbellini",
+      "reason": "Shops listed are in Bovolone and Isola Rizza, outside Verona city.",
+      "url": "https://www.perbellini.com/"
+    },
+    {
+      "name": "Museo Nicolis",
+      "reason": "In Villafranca di Verona, outside the city.",
+      "url": "https://www.museonicolis.com/"
+    },
+    {
+      "name": "Children's Museum Verona",
+      "reason": "Domain not found (DNS failure).",
+      "url": "https://www.childrensmuseumverona.it/"
+    },
+    {
+      "name": "Pizzeria Du de Cope",
+      "reason": "Domain not found (DNS failure).",
+      "url": "https://www.dudecope.it/"
+    },
+    {
+      "name": "Eataly Verona",
+      "reason": "Branch URL redirects to the national home page; Verona branch not confirmed.",
+      "url": "https://www.eataly.net/it_it/negozi/verona"
+    },
+    {
+      "name": "Sunset from Castel San Pietro",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Lake Garda day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "a Veneto dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Verona market or cafe",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local dinner in Centro Storico",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near San Zeno",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Veronetta",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Centro Storico",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Centro Storico walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near San Zeno",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Veronetta",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Veronetta",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Arena di Verona",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Centro Storico",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Sunset from Castel San Pietro",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in San Zeno",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Piazza delle Erbe",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Centro Storico evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in San Zeno",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Veronetta",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Centro Storico",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Arena di Verona",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around San Zeno",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Veronetta",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Centro Storico",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Arena di Verona",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Centro Storico cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Opera at the Arena",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Veronetta",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Veronetta",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Centro Storico",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Centro Storico",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "San Zeno bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Arena di Verona",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Veronetta",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Centro Storico",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Piazza delle Erbe",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Veronetta",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Centro Storico",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in San Zeno",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Veronetta",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Centro Storico",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Centro Storico",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around San Zeno",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Castel San Pietro",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Centro Storico",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "San Zeno morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Arena di Verona",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Veronetta",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Centro Storico",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in San Zeno",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Veronetta",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Arena di Verona",
+        "Torre dei Lamberti",
+        "Basilica di San Zeno",
+        "Giardino Giusti"
+      ],
+      "bestFirstTimers": [
+        "Arena di Verona",
+        "Complesso della Cattedrale (Duomo)",
+        "Basilica di Santa Anastasia",
+        "Palazzo Maffei Casa Museo"
+      ],
+      "bestRestaurants": [
+        "Antica Bottega del Vino",
+        "Trattoria I Masenini",
+        "Il Desco",
+        "Trattoria Al Pompiere"
+      ],
+      "bestBudget": [
+        "Trattoria Al Bersagliere",
+        "Funicolare di Castel San Pietro",
+        "Chiesa di San Fermo",
+        "De Rossi (Corso Porta Borsari)"
+      ],
+      "bestLuxury": [
+        "Casa Perbellini",
+        "Il Desco",
+        "Antica Bottega del Vino"
+      ],
+      "bestCouples": [
+        "Terrazza Bar al Ponte",
+        "Giardino Giusti",
+        "Funicolare di Castel San Pietro",
+        "Romeo Cocktail Bar"
+      ],
+      "bestKids": [
+        "Giardino Giusti",
+        "Funicolare di Castel San Pietro",
+        "Torre dei Lamberti",
+        "Museo Miniscalchi-Erizzo"
+      ],
+      "bestSolo": [
+        "Museo Miniscalchi-Erizzo",
+        "Palazzo Maffei Casa Museo",
+        "Caffè Coloniale",
+        "Signorvino (Corso Porta Nuova)"
+      ],
+      "bestUnique": [
+        "Museo Miniscalchi-Erizzo",
+        "Funicolare di Castel San Pietro",
+        "Torre dei Lamberti",
+        "Pescheria I Masenini"
+      ],
+      "bestBreakfast": [
+        "Caffè Coloniale",
+        "De Rossi (Corso Porta Borsari)",
+        "Flego (Corso Porta Borsari)"
+      ],
+      "bestLunch": [
+        "Ristorante Maffei",
+        "Trattoria Al Bersagliere",
+        "Trattoria I Masenini",
+        "Locanda 4 Cuochi"
+      ],
+      "bestDinner": [
+        "Pescheria I Masenini",
+        "Locanda 4 Cuochi",
+        "Trattoria Al Pompiere",
+        "Ristorante Maffei"
+      ],
+      "bestCocktails": [
+        "Romeo Cocktail Bar",
+        "Terrazza Bar al Ponte",
+        "Signorvino (Corso Porta Nuova)"
+      ],
+      "bestBakeries": [
+        "Flego (Corso Porta Borsari)",
+        "De Rossi (Corso Porta Borsari)"
+      ],
+      "bestCoffee": [
+        "Caffè Coloniale",
+        "Romeo Cocktail Bar"
+      ]
+    },
+    "queries": {
+      "Arena di Verona": "Arena di Verona Piazza Bra Verona",
+      "Torre dei Lamberti": "Torre dei Lamberti Via della Costa 2 Verona",
+      "Basilica di San Zeno": "Basilica di San Zeno Piazza San Zeno Verona",
+      "Complesso della Cattedrale (Duomo)": "Duomo di Verona Piazza Duomo Verona",
+      "Basilica di Santa Anastasia": "Basilica di Santa Anastasia Piazza Santa Anastasia Verona",
+      "Chiesa di San Fermo": "Chiesa di San Fermo Stradone San Fermo Verona",
+      "Palazzo Maffei Casa Museo": "Palazzo Maffei Piazza Erbe 38 Verona",
+      "Museo Miniscalchi-Erizzo": "Museo Miniscalchi-Erizzo Via San Mammaso 2a Verona",
+      "Giardino Giusti": "Giardino Giusti Via Giardino Giusti 2 Verona",
+      "Funicolare di Castel San Pietro": "Funicolare Castel San Pietro Via Fontanelle Santo Stefano 6 Verona",
+      "Antica Bottega del Vino": "Antica Bottega del Vino Vicolo Scudo di Francia 3 Verona",
+      "Casa Perbellini": "Casa Perbellini Vicolo Corticella San Marco 3 Verona",
+      "Trattoria Al Pompiere": "Trattoria Al Pompiere Vicolo Regina d'Ungheria 5 Verona",
+      "Locanda 4 Cuochi": "Locanda 4 Cuochi Via Alberto Mario 12 Verona",
+      "Ristorante Maffei": "Ristorante Maffei Piazza Erbe 38 Verona",
+      "Il Desco": "Il Desco Via Dietro San Sebastiano 5 Verona",
+      "Trattoria I Masenini": "Trattoria I Masenini Via Roma 34 Verona",
+      "Pescheria I Masenini": "Pescheria I Masenini Piazzetta Pescheria 9 Verona",
+      "Trattoria Al Bersagliere": "Trattoria Al Bersagliere Via Dietro Pallone 1 Verona",
+      "Romeo Cocktail Bar": "Romeo Cocktail Bar Via San Marco in Foro 1b Verona",
+      "Terrazza Bar al Ponte": "Terrazza Bar al Ponte Via Ponte Pietra 26 Verona",
+      "Signorvino (Corso Porta Nuova)": "Signorvino Corso Porta Nuova 2a Verona",
+      "Flego (Corso Porta Borsari)": "Pasticceria Flego Corso Porta Borsari 9 Verona",
+      "De Rossi (Corso Porta Borsari)": "Pasticceria De Rossi Corso Porta Borsari 3 Verona",
+      "Caffè Coloniale": "Caffe Coloniale Piazza Viviani 14C Verona"
+    },
+    "summary": "Roman and medieval landmarks, churches, house museums, a garden and a funicular, with breakfast cafés, bakeries, trattorias, dinners and cocktail bars checked against their own websites.",
+    "highlights": [
+      "Arena di Verona",
+      "Basilica di San Zeno",
+      "Torre dei Lamberti",
+      "Giardino Giusti"
+    ],
+    "tip": "Palazzo Maffei Casa Museo closes on Tuesdays and the Museo Miniscalchi-Erizzo opens only Friday to Monday, so save midweek for the churches, which open daily.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Tuesdays, and Sun-Mon for dining",
+        "copy": "Palazzo Maffei Casa Museo closes on Tuesdays and the Museo Miniscalchi-Erizzo closes Tuesday to Thursday. Il Desco and Casa Perbellini close on Sundays and Mondays, and Pescheria I Masenini closes Sunday evening and all day Monday."
+      },
+      {
+        "label": "Tickets",
+        "value": "€8 four-church route",
+        "copy": "The Fondazione Chiese Vive four-church route covers San Zeno, the Duomo, Santa Anastasia and San Fermo for €8 and stays valid for 90 days; a single church costs €4. Palazzo Maffei sells tickets online and at its box office."
+      },
+      {
+        "label": "Booking",
+        "value": "Book trattorias ahead",
+        "copy": "Trattoria Al Pompiere confirms email bookings made at least 24 hours ahead and takes shorter-notice bookings by phone only. Ristorante Maffei says booking is always recommended but not required, and the churches need no reservation."
+      },
+      {
+        "label": "Rules",
+        "value": "Arena: 17-litre bag limit",
+        "copy": "At the Arena di Verona, bags over 17 litres, glass and outside food are not allowed, and smart casual dress is requested. Children under 14 must be with an adult, and children under 4 may sit only in the Family sector."
+      }
+    ],
+    "dek": "Plan museum days around Tuesday closures and book Verona's trattorias a day ahead, especially early in the week.",
+    "intro": [
+      "Verona's headline sights are easy to plan once you know their weekly rhythms. The Arena di Verona stands on Piazza Bra, and Fondazione Arena di Verona has already published its next Opera Festival, running from 11 June to 11 September 2027. Its spectator rules ask you to arrive at least an hour before curtain, leave bags over 17 litres behind and wear smart casual dress. Close by, Torre dei Lamberti on Via della Costa opens every day except 25 December, and you can climb its 289 steps or take the glass lift.",
+      "Four historic churches run by Fondazione Chiese Vive share one ticketing system: the Basilica di San Zeno, the Complesso della Cattedrale (Duomo), the Basilica di Santa Anastasia and the Chiesa di San Fermo. From 1 November 2026 to 28 February 2027 they open on weekdays from 10:00 to 17:00, and Sunday visits start at 13:00 or 13:30. A single church costs €4, while the four-church route costs €8 and stays valid for 90 days. You don't need to book, but note that San Fermo has steep steps and no wheelchair access.",
+      "For smaller collections, Palazzo Maffei Casa Museo on Piazza Erbe opens daily from 10:00 to 18:00 except Tuesdays, with guided tours on Saturdays and Sundays at 10:30, 11:30 and 15:30. The Museo Miniscalchi-Erizzo on Via San Mammaso opens only Friday to Monday, charges €8 and lets children up to 11 in free. Giardino Giusti is open all year except 25 December, from 10:00 to 18:00 in winter, and the funicular on Via Fontanelle Santo Stefano climbs toward Castel San Pietro every day from 10:00, closing at 17:00 in winter.",
+      "Many restaurants close early in the week, so check before you plan dinner. Il Desco on Via Dietro San Sebastiano closes on Sundays and Mondays, Casa Perbellini also closes Saturday evenings, and Trattoria Al Bersagliere lists hours only from Tuesday to Saturday. Trattoria Al Pompiere takes email bookings at least 24 hours ahead and phone bookings for anything sooner. Ristorante Maffei on Piazza Erbe serves from 12:00 to 22:30 daily. For drinks, Romeo Cocktail Bar's cocktail bar opens at 19:00, and Terrazza Bar al Ponte by Ponte Pietra stays open from 09:00 to 02:00."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "See the Arena di Verona on Piazza Bra, climb Torre dei Lamberti, then use the €8 four-church route for San Zeno, the Duomo, Santa Anastasia and San Fermo."
+      ],
+      [
+        "A slower morning",
+        "Start with a savory breakfast at Caffè Coloniale, then walk Giardino Giusti, open all year except 25 December."
+      ],
+      [
+        "Before booking",
+        "Check closing days, since Il Desco and Casa Perbellini close on Sundays and Mondays and Trattoria Al Pompiere wants email bookings at least 24 hours ahead."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The civic-museum site (museicivici.comune.verona.it) refused connection, so Castelvecchio, Casa di Giulietta and the Teatro Romano could not be checked; Rivamancina had a certificate error, Trattoria Tre Marchetti returned 403, and Garage Coffee Bros and Gli Ormesini returned 429. Hours were not published on the pages read for Torre dei Lamberti, Antica Bottega del Vino, Trattoria Al Pompiere, Locanda 4 Cuochi and Flego; several places (Giardino Giusti, Romeo Cocktail Bar, Terrazza Bar al Ponte, Caffè Coloniale, De Rossi) show hours without a date, and the funicular and Giardino Giusti do not give season change dates. The Arena box-office hours differ slightly between two Fondazione Arena pages.",
+  "injectionLikeText": []
+}

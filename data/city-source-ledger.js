@@ -5,6 +5,675 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Verona, Italy": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-27",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The civic-museum site (museicivici.comune.verona.it) refused connection, so Castelvecchio, Casa di Giulietta and the Teatro Romano could not be checked; Rivamancina had a certificate error, Trattoria Tre Marchetti returned 403, and Garage Coffee Bros and Gli Ormesini returned 429. Hours were not published on the pages read for Torre dei Lamberti, Antica Bottega del Vino, Trattoria Al Pompiere, Locanda 4 Cuochi and Flego; several places (Giardino Giusti, Romeo Cocktail Bar, Terrazza Bar al Ponte, Caffè Coloniale, De Rossi) show hours without a date, and the funicular and Giardino Giusti do not give season change dates. The Arena box-office hours differ slightly between two Fondazione Arena pages.",
+    "sourceUrls": [
+      "docs/content-research/verona-2026-10-27.md",
+      "docs/content-research/verona-2026-10-27.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Opera at the Arena",
+        "url": "https://www.arena.it/arena-opera-festival/",
+        "checkedOn": "2026-10-27",
+        "reason": "Covered by the confirmed Arena di Verona entry; the next Opera Festival is published for 2027, with none in the rest of 2026."
+      },
+      {
+        "name": "Piazza delle Erbe",
+        "url": "https://www.comune.verona.it/Vivere-il-comune/Luoghi/Piazza-delle-Erbe",
+        "checkedOn": "2026-10-27",
+        "reason": "Public square; the Comune page gives no operator, market days or opening details to confirm."
+      },
+      {
+        "name": "Castel San Pietro",
+        "checkedOn": "2026-10-27",
+        "reason": "No official operator page found confirming the castle is open; the hill is reached via the confirmed Funicolare di Castel San Pietro."
+      },
+      {
+        "name": "Museo di Castelvecchio",
+        "url": "https://museicivici.comune.verona.it/",
+        "checkedOn": "2026-10-27",
+        "reason": "Official civic-museum site refused connection (ECONNREFUSED) at museicivici.comune.verona.it; museiverona.com shows 'Sito non operativo'. Not evidence of closure."
+      },
+      {
+        "name": "Casa di Giulietta",
+        "url": "https://www.comune.verona.it/Vivere-il-comune/Luoghi/Casa-di-Giulietta",
+        "checkedOn": "2026-10-27",
+        "reason": "Comune page gives the address (Via Cappello 23) but refers hours and tickets to the civic-museum site, which refused connection (ECONNREFUSED)."
+      },
+      {
+        "name": "Teatro Romano e Museo Archeologico",
+        "url": "https://museicivici.comune.verona.it/",
+        "checkedOn": "2026-10-27",
+        "reason": "Official civic-museum site refused connection (ECONNREFUSED). Not evidence of closure."
+      },
+      {
+        "name": "Teatro Filarmonico",
+        "url": "https://www.arena.it/teatro-filarmonico-verona/",
+        "checkedOn": "2026-10-27",
+        "reason": "Fondazione Arena pages read list performances and box offices but give no street address for the theatre."
+      },
+      {
+        "name": "Rivamancina",
+        "url": "https://www.rivamancina.it/",
+        "checkedOn": "2026-10-27",
+        "reason": "Certificate error (hostname not in certificate); not bypassed."
+      },
+      {
+        "name": "Trattoria Tre Marchetti",
+        "url": "https://www.tremarchetti.it/",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 403 Forbidden."
+      },
+      {
+        "name": "Garage Coffee Bros",
+        "url": "https://www.garagecoffeebros.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 429 Too Many Requests; café address not confirmed."
+      },
+      {
+        "name": "Gli Ormesini",
+        "url": "https://www.gliormesini.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 429 Too Many Requests."
+      },
+      {
+        "name": "Caffè Filippini",
+        "url": "https://www.caffefilippini.it/",
+        "checkedOn": "2026-10-27",
+        "reason": "Home page shows no address or hours; contact pages returned 404."
+      },
+      {
+        "name": "Caffè Dante",
+        "url": "https://www.caffedante.it/",
+        "checkedOn": "2026-10-27",
+        "reason": "Page gives no address, so the Verona branch could not be confirmed."
+      },
+      {
+        "name": "Osteria del Bugiardo",
+        "url": "https://www.osteriadelbugiardo.it/",
+        "checkedOn": "2026-10-27",
+        "reason": "Home page shows no address or hours; contact page 404."
+      },
+      {
+        "name": "Osteria Sottoriva",
+        "url": "https://www.osteriasottoriva.it/",
+        "checkedOn": "2026-10-27",
+        "reason": "Address shown but no hours, booking or current content (footer 2025)."
+      },
+      {
+        "name": "Pasticceria Gloria",
+        "url": "https://www.gloriapasticceria.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "Address shown but no hours or current operating evidence."
+      },
+      {
+        "name": "Hotel Gabbia d'Oro",
+        "url": "https://www.hotelgabbiadoro.it/",
+        "checkedOn": "2026-10-27",
+        "reason": "Address shown but no dated or current operating details for its bar or breakfast."
+      },
+      {
+        "name": "Due Torri Hotel",
+        "url": "https://www.duetorrihotels.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "Group site shows 2026 content but no Verona hotel address."
+      },
+      {
+        "name": "Ristorante 12 Apostoli",
+        "url": "https://www.12apostoli.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "Domain redirects to an unrelated site; not followed."
+      },
+      {
+        "name": "Pasticceria Perbellini",
+        "url": "https://www.perbellini.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "Shops listed are in Bovolone and Isola Rizza, outside Verona city."
+      },
+      {
+        "name": "Museo Nicolis",
+        "url": "https://www.museonicolis.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "In Villafranca di Verona, outside the city."
+      },
+      {
+        "name": "Children's Museum Verona",
+        "url": "https://www.childrensmuseumverona.it/",
+        "checkedOn": "2026-10-27",
+        "reason": "Domain not found (DNS failure)."
+      },
+      {
+        "name": "Pizzeria Du de Cope",
+        "url": "https://www.dudecope.it/",
+        "checkedOn": "2026-10-27",
+        "reason": "Domain not found (DNS failure)."
+      },
+      {
+        "name": "Eataly Verona",
+        "url": "https://www.eataly.net/it_it/negozi/verona",
+        "checkedOn": "2026-10-27",
+        "reason": "Branch URL redirects to the national home page; Verona branch not confirmed."
+      },
+      {
+        "name": "Sunset from Castel San Pietro",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Lake Garda day",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "a Veneto dinner",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Verona market or cafe",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local dinner in Centro Storico",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near San Zeno",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Veronetta",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Centro Storico",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Centro Storico walk",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near San Zeno",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Veronetta",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Veronetta",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Arena di Verona",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Centro Storico",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Sunset from Castel San Pietro",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in San Zeno",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Piazza delle Erbe",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Centro Storico evening",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in San Zeno",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Veronetta",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Centro Storico",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Arena di Verona",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around San Zeno",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Veronetta",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Centro Storico",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Arena di Verona",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Centro Storico cafe or market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Opera at the Arena",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Veronetta",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Veronetta",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Centro Storico",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Centro Storico",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "San Zeno bakery or market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Arena di Verona",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Veronetta",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Centro Storico",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Piazza delle Erbe",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Veronetta",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Centro Storico",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in San Zeno",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Veronetta",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Centro Storico",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Centro Storico",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around San Zeno",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Castel San Pietro",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Centro Storico",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "San Zeno morning market",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Arena di Verona",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Veronetta",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Centro Storico",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in San Zeno",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Veronetta",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Arena di Verona": {
+        "url": "https://www.arena.it/arena-opera-festival/preparati-allopera/dove-siamo/",
+        "sourceType": "official operator (Fondazione Arena di Verona)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Fondazione Arena publishes the next Opera Festival, 11 June to 11 September 2027, with box offices at \"Via Dietro Anfiteatro 6/b\" and \"Via Roma 1\"; the spectator rules include a rule applying \"from the 2026 Festival\" on children under 4."
+      },
+      "Torre dei Lamberti": {
+        "url": "https://www.torredeilamberti.it/",
+        "sourceType": "official site of the municipal operator (AGEC, Comune di Verona company)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "The site says the tower is \"visitabile tutti i giorni dell'anno (escluso 25 dicembre)\", with 289 steps or a glass lift and a ticket office at Palazzo della Ragione; its events calendar covers October 2026."
+      },
+      "Basilica di San Zeno": {
+        "url": "https://www.chieseverona.it/it/info-visita",
+        "sourceType": "official public operator (Fondazione Chiese Vive, Diocese of Verona churches)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Dated 2026-27 visiting hours are published; \"Non è necessaria la prenotazione per le visite.\" Tickets are sold at the church entrance."
+      },
+      "Complesso della Cattedrale (Duomo)": {
+        "url": "https://www.chieseverona.it/it/info-visita",
+        "sourceType": "official public operator (Fondazione Chiese Vive, Diocese of Verona churches)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Dated 2026-27 visiting hours are published; wheelchair access possible; no booking needed. The address quoted is the Fondazione's office within the cathedral complex."
+      },
+      "Basilica di Santa Anastasia": {
+        "url": "https://www.chieseverona.it/it/le-chiese/la-basilica-di-santa-anastasia",
+        "sourceType": "official public operator (Fondazione Chiese Vive, Diocese of Verona churches)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "The page lists hours for 1 November 2026 to 28 February 2027; no reservation needed and the wheelchair entrance is accessible."
+      },
+      "Chiesa di San Fermo": {
+        "url": "https://www.chieseverona.it/it/le-chiese/la-chiesa-di-san-fermo",
+        "sourceType": "official public operator (Fondazione Chiese Vive, Diocese of Verona churches)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Dated 2026-27 hours on the visiting-info page; it notes \"l'accesso con carrozzina non è possibile per la presenza di scale ripide.\""
+      },
+      "Palazzo Maffei Casa Museo": {
+        "url": "https://www.palazzomaffeiverona.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Online ticketing and fixed guided tours every Saturday and Sunday at 10:30, 11:30 and 15:30 in Italian and English; special openings on 1 November and 8 December (year not stated)."
+      },
+      "Museo Miniscalchi-Erizzo": {
+        "url": "https://www.museominiscalchi.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "The site carries 2026-dated opening notices and current ticket prices (\"Intero: 8 €\"); children up to 11 enter free."
+      },
+      "Giardino Giusti": {
+        "url": "https://www.giardinogiusti.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Current hours notice: \"Aperto tutto l'anno - chiuso solo il 25 dicembre\"; the site links ticketing and online registration. No 2026-dated content seen."
+      },
+      "Funicolare di Castel San Pietro": {
+        "url": "https://www.funicolarediverona.it/",
+        "sourceType": "official site of the municipal operator (AGEC, Comune di Verona company)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Published daily operating hours and a ticket-office section; fares not shown and the footer reads \"© Copyright 2022\"."
+      },
+      "Antica Bottega del Vino": {
+        "url": "https://www.bottegavini.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Live \"Prenota un tavolo\" booking link and a \"@COPYRIGHT 2026\" footer."
+      },
+      "Casa Perbellini": {
+        "url": "https://www.casaperbellini.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Online booking, a 2026 Michelin logo and a Dom Pérignon white-truffle event on 24 November; Chef's Table guests all start at the same time."
+      },
+      "Trattoria Al Pompiere": {
+        "url": "https://www.alpompiere.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Booking by email or phone up to 24 hours ahead, phone only at shorter notice; \"© 2026 Trattoria Al Pompiere Srl.\""
+      },
+      "Locanda 4 Cuochi": {
+        "url": "https://www.locanda4cuochi.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Live online reservation link (\"prenota\"); the only closure notice is an old February holiday closure with no year."
+      },
+      "Ristorante Maffei": {
+        "url": "https://ristorantemaffei.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Booking form and phone; \"La prenotazione è sempre consigliata ma non obbligatoria.\" No 2026-dated content seen."
+      },
+      "Il Desco": {
+        "url": "https://www.ristoranteildesco.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Online booking page and published service hours, including earlier dinners on Arena opera nights; copyright line is a placeholder, so no dated content."
+      },
+      "Trattoria I Masenini": {
+        "url": "https://www.trattoriaimasenini.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Links a June 2026 à la carte menu and online booking."
+      },
+      "Pescheria I Masenini": {
+        "url": "https://pescheriaimasenini.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Online \"Prenota un tavolo\" booking and a published fish menu; pets not allowed."
+      },
+      "Trattoria Al Bersagliere": {
+        "url": "https://www.trattoriaalbersagliere.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Published weekly hours and contacts; newest item is a 2025 Michelin Bib Gourmand badge (no 2026 content)."
+      },
+      "Romeo Cocktail Bar": {
+        "url": "https://www.romeococktailbar.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Online booking (\"Prenota\") and published hours for café bistrot, cocktail bar and restaurant; no dated content."
+      },
+      "Terrazza Bar al Ponte": {
+        "url": "https://www.terrazzabaralponte.eu/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Current hours notice: \"Open every day from 09.00 to 02.00.\" No dated content."
+      },
+      "Signorvino (Corso Porta Nuova)": {
+        "url": "https://www.signorvino.com/it/negozi/veneto/verona/",
+        "sourceType": "operator's own site (chain store locator)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "The store locator lists this branch with weekly hours; the site runs October 2026 promotions."
+      },
+      "Flego (Corso Porta Borsari)": {
+        "url": "https://www.pasticceriaflego.net/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "\"© 2026 Eredi Flego SAS\" footer and a current Christmas order notice (delivery guaranteed for orders by 14 December)."
+      },
+      "De Rossi (Corso Porta Borsari)": {
+        "url": "https://www.derossi.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Published weekly hours per shop; no dated content."
+      },
+      "Caffè Coloniale": {
+        "url": "https://www.caffecoloniale.it/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Published weekly hours and savory breakfasts (\"colazioni salate\"); no dated content."
+      }
+    }
+  },
   "Bologna, Italy": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-27",
