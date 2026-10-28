@@ -5,6 +5,383 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Santiago, Chile": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-28",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several official sites could not be read: Parque Metropolitano (Cerro San Cristóbal) refused connections, Mercado Central, La Vega Central, Viña Santa Rita, Mestizo, Mulato and others failed DNS lookup, Tren al Sur had a certificate error, MAC returned 403 and Cousiño Macul returned 429; these are not evidence of closure. Museo Histórico Nacional's own site says it is temporarily closed for expansion. Published information was partial for some places: Museo Chileno de Arte Precolombino's general weekly hours were on a tab not readable, Bocanáriz and Terraza Magnolia publish no hours, Emporio La Rosa (Merced) lists no Saturday hours, and La Chascona's page gives a March to December schedule without listing ticket prices. Several restaurant and café entries (Liguria, Galindo, Ambrosía Bistro, Castaño, Tavelli, Fuente Mardoqueo) rest on live booking links, published hours or a 2026 copyright footer rather than dated announcements.",
+    "sourceUrls": [
+      "docs/content-research/santiago-2026-10-28.md",
+      "docs/content-research/santiago-2026-10-28.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Cerro San Cristobal (Parque Metropolitano)",
+        "url": "https://www.parquemet.cl",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site parquemet.cl refused the connection (ECONNREFUSED) on three attempts; not evidence of closure"
+      },
+      {
+        "name": "Central Market (Mercado Central)",
+        "url": "https://www.mercadocentral.cl",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site mercadocentral.cl did not resolve (DNS failure); not evidence of closure"
+      },
+      {
+        "name": "Lastarria",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place (neighbourhood)"
+      },
+      {
+        "name": "Museo Histórico Nacional",
+        "url": "https://www.mhn.gob.cl",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site says the museum is temporarily closed for expansion and restoration (\"Museo cerrado temporalmente\"), no reopening date"
+      },
+      {
+        "name": "Museo de la Memoria y los Derechos Humanos",
+        "url": "https://mmdh.cl/",
+        "checkedOn": "2026-10-28",
+        "reason": "Address, hours and exhibition dates not present in readable page content (several pages 404 or empty lists)"
+      },
+      {
+        "name": "Peumayén",
+        "url": "https://www.peumayenchile.cl",
+        "checkedOn": "2026-10-28",
+        "reason": "peumayen.cl is an unrelated winery; peumayenchile.cl returned no readable content"
+      },
+      {
+        "name": "Chipe Libre",
+        "url": "https://www.chipelibre.cl",
+        "checkedOn": "2026-10-28",
+        "reason": "Site is a frameset titled as a newspaper with no readable content"
+      },
+      {
+        "name": "Siete Negronis",
+        "url": "https://www.sietenegronis.cl",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site gives no street address (only \"Terrazas San Cristóbal\")"
+      },
+      {
+        "name": "Hotel Cumbres Lastarria",
+        "url": "https://www.hotelescumbres.com/",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site gives no address or bar details"
+      },
+      {
+        "name": "The Singular Santiago (Rooftop Bar)",
+        "url": "https://www.thesingular.com/santiago",
+        "checkedOn": "2026-10-28",
+        "reason": "Official page gives no address or bar hours; another URL 404"
+      },
+      {
+        "name": "Fuente Alemana",
+        "url": "https://www.fuentealemana.cl",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site returned no readable content"
+      },
+      {
+        "name": "La Piojera",
+        "url": "https://www.lapiojera.cl",
+        "checkedOn": "2026-10-28",
+        "reason": "Official site returned no readable content"
+      },
+      {
+        "name": "Castillo Forestal",
+        "url": "https://www.castilloforestal.cl",
+        "checkedOn": "2026-10-28",
+        "reason": "Site showed only a 'Loading...' page with no readable content"
+      },
+      {
+        "name": "Tren al Sur",
+        "url": "https://www.trenalsur.cl",
+        "checkedOn": "2026-10-28",
+        "reason": "Certificate error (self-signed certificate in chain); not bypassed"
+      },
+      {
+        "name": "Museo de Arte Contemporáneo (MAC)",
+        "url": "https://www.mac.uchile.cl",
+        "checkedOn": "2026-10-28",
+        "reason": "HTTP 403 Forbidden"
+      },
+      {
+        "name": "Museo de Artes Visuales (MAVI)",
+        "url": "https://www.mavi.cl",
+        "checkedOn": "2026-10-28",
+        "reason": "Connection refused"
+      },
+      {
+        "name": "Viña Cousiño Macul",
+        "url": "https://www.cousinomacul.com",
+        "checkedOn": "2026-10-28",
+        "reason": "HTTP 429 Too Many Requests"
+      },
+      {
+        "name": "Viña Santa Rita",
+        "url": "https://www.santaritawines.com",
+        "checkedOn": "2026-10-28",
+        "reason": "DNS failure"
+      },
+      {
+        "name": "La Vega Central",
+        "url": "https://www.lavegacentral.cl",
+        "checkedOn": "2026-10-28",
+        "reason": "DNS failure"
+      },
+      {
+        "name": "Zoológico Nacional",
+        "url": "https://www.zoologico.cl",
+        "checkedOn": "2026-10-28",
+        "reason": "DNS failure at guessed domain; official Parquemet site unreachable"
+      },
+      {
+        "name": "Cerro Santa Lucía",
+        "url": "https://www.cerrosantalucia.cl",
+        "checkedOn": "2026-10-28",
+        "reason": "DNS failure at guessed domain; no official page read"
+      },
+      {
+        "name": "Mestizo",
+        "url": "https://www.mestizo.cl",
+        "checkedOn": "2026-10-28",
+        "reason": "DNS failure"
+      },
+      {
+        "name": "Mulato",
+        "url": "https://www.mulato.cl",
+        "checkedOn": "2026-10-28",
+        "reason": "DNS failure"
+      },
+      {
+        "name": "Café Mosqueto",
+        "url": "https://www.mosqueto.cl",
+        "checkedOn": "2026-10-28",
+        "reason": "DNS failure"
+      },
+      {
+        "name": "Bar The Clinic",
+        "url": "https://www.barthclinic.cl",
+        "checkedOn": "2026-10-28",
+        "reason": "DNS failure"
+      },
+      {
+        "name": "Le Pain Quotidien (Santiago)",
+        "url": "https://www.lepainquotidien.cl",
+        "checkedOn": "2026-10-28",
+        "reason": "Chilean domain redirects to the global site; no Santiago branch address read"
+      },
+      {
+        "name": "Colmado",
+        "url": "https://www.colmado.cl",
+        "checkedOn": "2026-10-28",
+        "reason": "HTTP 404"
+      },
+      {
+        "name": "Hilltop sunset",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Maipo Valley day",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Neighborhood gallery walk",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Seafood market lunch",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Chilean wine dinner",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A Lastarria cafe",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Bellavista",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Providencia",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Lastarria",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Remaining bestBudget, bestLuxury, bestCouples, bestKids, bestSolo, bestUnique, bestBreakfast, bestLunch, bestDinner, bestCocktails, bestBakeries and bestCoffee entries (e.g. \"Free or low-cost Lastarria walk\", \"Private guide for Cerro San Cristobal\", \"Sunset drinks near Lastarria\", \"Local bakery near Lastarria\", \"Coffee near Lastarria\")",
+        "checkedOn": "2026-10-28",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Museo Nacional de Bellas Artes": {
+        "url": "https://www.mnba.gob.cl",
+        "sourceType": "official public operator (Servicio Nacional del Patrimonio Cultural)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Current exhibitions listed with dates, including \"Enrique Ramírez. Te creo paisaje\" (8 October 2026 to 28 February 2027) and \"Roberto Matta. Abrir la mirada\" (to 31 July 2027). Entry: \"La entrada es gratuita para todo público.\""
+      },
+      "Museo Chileno de Arte Precolombino": {
+        "url": "https://museo.precolombino.cl/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Lists \"Trienal Art Cut 26\" (1 September to 22 November 2026, 10 to 18 h) and \"Observaciones Americanas. Alberto Cruz visita el Museo\" (24 September to 22 November 2026). The visit page says that on Mondays \"el museo se encuentra cerrado\"; tickets at the box office or online."
+      },
+      "La Chascona": {
+        "url": "https://fundacionneruda.org/museos-casa-museo-la-chascona/",
+        "sourceType": "operator's own site (Fundación Pablo Neruda)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Notice dated 16/10/2026: \"Todas las Casas Museo abiertas en horario de 10:00 a 18:00 horas.\" An October 2026 banner advertised special-price entry on Tuesdays."
+      },
+      "Centro Cultural La Moneda": {
+        "url": "https://www.cclm.cl",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Exhibitions listed: \"CASA COMÚN: 100 años de parques nacionales\" (20 August to 6 December 2026) and \"La ronda del Sol y la Luna\" (11 June 2026 to May 2027, \"Entrada liberada\")."
+      },
+      "Sky Costanera": {
+        "url": "https://www.skycostanera.cl",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Ticket sales live with current prices: adults $25.000 daytime, $30.000 for sunset entry 18:00-20:00. FAQ: each ticket \"is valid only for the date and time purchased\"; no age limit; liquids, gels and aerosols banned."
+      },
+      "Museo Nacional de Historia Natural": {
+        "url": "https://www.mnhn.gob.cl",
+        "sourceType": "official public operator (Servicio Nacional del Patrimonio Cultural)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Exhibitions listed with dates, including \"Vertebrados: anatomía, evolución, extinción\" (to 31 December 2026) and \"Mariposas y Polillas, Colores en Movimiento\" (to 3 January 2027). Free entry since 2015."
+      },
+      "Museo Interactivo Mirador": {
+        "url": "https://www.mim.cl",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "2026 activity calendar, including \"Semana de las Ciencias Tenebrosas\" (27 October) and Halloween discounts on 31 October; online box office at portal.mim.cl."
+      },
+      "Boragó": {
+        "url": "https://www.borago.cl/reservas",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Live booking page: \"Menú Endémica\" at $199.000 per person; a credit card number is required to reserve; tables held 30 minutes; no children's chairs or kids' menu."
+      },
+      "Liguria (Lastarria)": {
+        "url": "https://www.liguria.cl",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Per-branch online booking (\"Haz tu reserva aquí\") and published branch hours; footer \"@ Copyright 2026\"."
+      },
+      "Castaño (Alameda)": {
+        "url": "https://www.castano.cl/locales",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Branch list with current hours; home page promotes \"TEMPORADA PAN DE PASCUA 2026\"."
+      },
+      "Bocanáriz": {
+        "url": "https://bocanariz.cl/index.php/restaurante/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Describes itself as \"Restaurante & Wine bar y tienda de vinos\" with live \"RESERVAR\" buttons and an online wine shop."
+      },
+      "Concha y Toro Centro del Vino (Pirque)": {
+        "url": "https://enoturismo.conchaytoro.com/es/preguntas-frecuentes/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Bookable tours with current prices (Visita Guiada Premium $50.000, 120 min) and a \"South America's Leading Tourism Winery 2026\" award shown. FAQ: \"los menores de 18 años no pueden entrar a la sala de cata\"; bookings non-refundable, date changes free with 24 hours' notice."
+      },
+      "GAM": {
+        "url": "https://www.gam.cl/es/experiencia/horarios/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Hours page lists each space and carries a current notice that BiblioGAM is \"CERRADA este 27 y 28 de Octubre\"."
+      },
+      "Café Público (GAM)": {
+        "url": "https://www.gam.cl/es/experiencia/horarios/",
+        "sourceType": "operator's own site (GAM)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Listed with its own hours on GAM's current hours page."
+      },
+      "Bar El Bajo (GAM)": {
+        "url": "https://www.gam.cl/es/experiencia/horarios/",
+        "sourceType": "operator's own site (GAM)",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Listed with its own hours on GAM's current hours page."
+      },
+      "Café Altura (Manuel Montt)": {
+        "url": "https://www.cafealtura.cl",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Branch list with hours and an online shop selling 2026 coffees (\"Guatemala San Gerardo 2026\", \"Blend de la Casa 2026\")."
+      },
+      "Museo Violeta Parra": {
+        "url": "https://www.museovioletaparra.cl",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "News dated 20 October 2026 on the exhibition \"Ruta Nativa, las huellas que dejamos\"; agenda with Día de los muertos activities on 28 and 30 October 2026."
+      },
+      "Teatro Municipal de Santiago": {
+        "url": "https://www.municipal.cl",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Season listings including \"Elektra\" (17 to 29 November), \"Ballet familiar: Clarita y su amigo Cascanueces\" (12 to 19 December) and \"Cascanueces\" (15 to 30 December); notes that Daniil Trifonov's 24 October recital was postponed."
+      },
+      "Galindo": {
+        "url": "https://www.galindo.cl",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Menus uploaded January 2026 and footer \"© 2026 Todos los derechos reservados\"; current weekly hours published."
+      },
+      "Ambrosía Bistro": {
+        "url": "https://www.ambrosia.cl",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Live \"RESERVAR MESA\" booking link (ambrosia.meitre.com) with published service times."
+      },
+      "Terraza Magnolia (Hotel Magnolia)": {
+        "url": "https://www.hotelmagnolia.cl",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Seventh-floor rooftop bar with author cocktails and views of Cerro Santa Lucía; site shows \"MICHELIN Guide 2026 · Una Llave\"."
+      },
+      "DeMo (Hotel Magnolia)": {
+        "url": "https://www.hotelmagnolia.cl/demo",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Bookings \"Bajo agenda previa\" via demomagnoliarestaurant.mesa247.cl; nine- or five-course tasting menus with pairings."
+      },
+      "Emporio La Rosa (Merced)": {
+        "url": "https://www.emporiolarosa.cl/donde-estamos/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Site blog has 2026 posts, including Día del Helado 2026 (April) and a September 2026 post on Chilean dishes."
+      },
+      "Tavelli (Drugstore)": {
+        "url": "https://www.tavelli.cl/local",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Branch list with current hours; cake and kuchen menu online."
+      },
+      "Fuente Mardoqueo (Libertad)": {
+        "url": "https://www.fuentemardoqueo.cl",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-28",
+        "operatingEvidence": "Five branches listed with hours, delivery links and group bookings; footer \"Copyright 2026\"."
+      }
+    }
+  },
   "Lima, Peru": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-28",

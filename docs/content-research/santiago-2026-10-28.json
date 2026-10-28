@@ -1,0 +1,615 @@
+{
+  "city": "Santiago, Chile",
+  "checkedOn": "2026-10-28",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Museo Nacional de Bellas Artes",
+      "kind": "museum",
+      "url": "https://www.mnba.gob.cl",
+      "sourceType": "official public operator (Servicio Nacional del Patrimonio Cultural)",
+      "address": "José Miguel de la Barra 650, Santiago",
+      "operatingEvidence": "Current exhibitions listed with dates, including \"Enrique Ramírez. Te creo paisaje\" (8 October 2026 to 28 February 2027) and \"Roberto Matta. Abrir la mirada\" (to 31 July 2027). Entry: \"La entrada es gratuita para todo público.\"",
+      "hours": "Tuesday to Sunday 10:00-18:30, last entry 18:20; closed 1 January, 3 April, 1 May, 18-19 September, 25 December",
+      "confidence": "high"
+    },
+    {
+      "name": "Museo Chileno de Arte Precolombino",
+      "kind": "museum",
+      "url": "https://museo.precolombino.cl/",
+      "sourceType": "operator's own site",
+      "address": "Bandera 361, Santiago (corner of Bandera and Compañía, one block from the Plaza de Armas)",
+      "operatingEvidence": "Lists \"Trienal Art Cut 26\" (1 September to 22 November 2026, 10 to 18 h) and \"Observaciones Americanas. Alberto Cruz visita el Museo\" (24 September to 22 November 2026). The visit page says that on Mondays \"el museo se encuentra cerrado\"; tickets at the box office or online.",
+      "hours": "General weekly hours not readable (shown on a separate 'Horario' tab); closed Mondays; exhibitions listed 10-18 h. Free the first Sunday of each month for Chilean nationals and residents. Foreigners $8.000.",
+      "confidence": "high"
+    },
+    {
+      "name": "La Chascona",
+      "kind": "museum",
+      "url": "https://fundacionneruda.org/museos-casa-museo-la-chascona/",
+      "sourceType": "operator's own site (Fundación Pablo Neruda)",
+      "address": "Fernando Márquez de la Plata 0192, Providencia, Santiago de Chile",
+      "operatingEvidence": "Notice dated 16/10/2026: \"Todas las Casas Museo abiertas en horario de 10:00 a 18:00 horas.\" An October 2026 banner advertised special-price entry on Tuesdays.",
+      "hours": "House museums, March to December: \"Martes a domingo de 10:00 a 18:00 horas\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Centro Cultural La Moneda",
+      "kind": "museum",
+      "url": "https://www.cclm.cl",
+      "sourceType": "operator's own site",
+      "address": "Plaza de la Ciudadanía 26, Santiago (Metro La Moneda)",
+      "operatingEvidence": "Exhibitions listed: \"CASA COMÚN: 100 años de parques nacionales\" (20 August to 6 December 2026) and \"La ronda del Sol y la Luna\" (11 June 2026 to May 2027, \"Entrada liberada\").",
+      "hours": "Exhibitions Tuesday to Sunday 10:15-18:45; shops and restaurants Monday to Sunday 10:00-19:00; closed 1 January, 1 May, 18-19 September, 25 December",
+      "confidence": "high"
+    },
+    {
+      "name": "Sky Costanera",
+      "kind": "scenic",
+      "url": "https://www.skycostanera.cl",
+      "sourceType": "operator's own site",
+      "address": "Av. Andrés Bello 2425, Providencia (ticket entry on Nivel PB of Costanera Center)",
+      "operatingEvidence": "Ticket sales live with current prices: adults $25.000 daytime, $30.000 for sunset entry 18:00-20:00. FAQ: each ticket \"is valid only for the date and time purchased\"; no age limit; liquids, gels and aerosols banned.",
+      "hours": "Monday to Sunday 10:00-22:00; last ascent 21:00; holiday hours may vary",
+      "confidence": "medium"
+    },
+    {
+      "name": "Museo Nacional de Historia Natural",
+      "kind": "museum",
+      "url": "https://www.mnhn.gob.cl",
+      "sourceType": "official public operator (Servicio Nacional del Patrimonio Cultural)",
+      "address": "Interior Parque Quinta Normal, Santiago",
+      "operatingEvidence": "Exhibitions listed with dates, including \"Vertebrados: anatomía, evolución, extinción\" (to 31 December 2026) and \"Mariposas y Polillas, Colores en Movimiento\" (to 3 January 2027). Free entry since 2015.",
+      "hours": "Tuesday to Saturday 10:00-17:30; Sundays and holidays 11:00-17:30; closed Mondays and 1 January, 1 May, 18-19 September, 25 December",
+      "confidence": "high"
+    },
+    {
+      "name": "Museo Interactivo Mirador",
+      "kind": "museum",
+      "url": "https://www.mim.cl",
+      "sourceType": "operator's own site",
+      "address": "Avenida Punta Arenas 6711, La Granja, Santiago",
+      "operatingEvidence": "2026 activity calendar, including \"Semana de las Ciencias Tenebrosas\" (27 October) and Halloween discounts on 31 October; online box office at portal.mim.cl.",
+      "hours": "Monday closed; Tuesday 9:30-13:30; Wednesday to Friday 9:30-17:30; Saturday and Sunday 10:00-18:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Boragó",
+      "kind": "meal",
+      "url": "https://www.borago.cl/reservas",
+      "sourceType": "operator's own site",
+      "address": "Av. San José María Escrivá de Balaguer 5970, Vitacura (from https://www.borago.cl/como-llegar)",
+      "operatingEvidence": "Live booking page: \"Menú Endémica\" at $199.000 per person; a credit card number is required to reserve; tables held 30 minutes; no children's chairs or kids' menu.",
+      "hours": "\"Horario de apertura de Martes a Sábado, a partir de las 17:15.\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Liguria (Lastarria)",
+      "kind": "meal",
+      "url": "https://www.liguria.cl",
+      "sourceType": "operator's own site",
+      "address": "Merced 298, Santiago",
+      "operatingEvidence": "Per-branch online booking (\"Haz tu reserva aquí\") and published branch hours; footer \"@ Copyright 2026\".",
+      "hours": "Monday to Saturday 12:00-00:30; Sunday closed",
+      "confidence": "medium"
+    },
+    {
+      "name": "Castaño (Alameda)",
+      "kind": "bakery",
+      "url": "https://www.castano.cl/locales",
+      "sourceType": "operator's own site",
+      "address": "Avenida Alameda Libertador Bernardo O'Higgins 1449, Santiago",
+      "operatingEvidence": "Branch list with current hours; home page promotes \"TEMPORADA PAN DE PASCUA 2026\".",
+      "hours": "Monday to Friday 08:00-20:00; Saturday 09:00-14:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bocanáriz",
+      "kind": "bar",
+      "url": "https://bocanariz.cl/index.php/restaurante/",
+      "sourceType": "operator's own site",
+      "address": "José Victorino Lastarria 276, Santiago",
+      "operatingEvidence": "Describes itself as \"Restaurante & Wine bar y tienda de vinos\" with live \"RESERVAR\" buttons and an online wine shop.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Concha y Toro Centro del Vino (Pirque)",
+      "kind": "landmark",
+      "url": "https://enoturismo.conchaytoro.com/es/preguntas-frecuentes/",
+      "sourceType": "operator's own site",
+      "address": "Av. Virginia Subercaseaux 210, Pirque, Región Metropolitana",
+      "operatingEvidence": "Bookable tours with current prices (Visita Guiada Premium $50.000, 120 min) and a \"South America's Leading Tourism Winery 2026\" award shown. FAQ: \"los menores de 18 años no pueden entrar a la sala de cata\"; bookings non-refundable, date changes free with 24 hours' notice.",
+      "hours": "Centro del Vino opens at 8:30 and normally operates most holidays; Bodega 1883 restaurant Tuesday to Saturday 9:00-23:30, Monday and Sunday 9:00-18:00",
+      "confidence": "high"
+    },
+    {
+      "name": "GAM",
+      "kind": "landmark",
+      "url": "https://www.gam.cl/es/experiencia/horarios/",
+      "sourceType": "operator's own site",
+      "address": "Av. Libertador Bernardo O'Higgins 227, Santiago (from https://www.gam.cl)",
+      "operatingEvidence": "Hours page lists each space and carries a current notice that BiblioGAM is \"CERRADA este 27 y 28 de Octubre\".",
+      "hours": "Plazas daily 9:00-21:00; Buildings A and B daily 9:00-22:00; Sala de Artes Visuales closed Mondays; box office Monday to Wednesday 10:00-19:00, Thursday to Friday 10:00-20:00, Saturday to Sunday 11:00-20:00 (closed 14:00-15:00)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Café Público (GAM)",
+      "kind": "cafe",
+      "url": "https://www.gam.cl/es/experiencia/horarios/",
+      "sourceType": "operator's own site (GAM)",
+      "address": "Av. Libertador Bernardo O'Higgins 227, Santiago (inside GAM)",
+      "operatingEvidence": "Listed with its own hours on GAM's current hours page.",
+      "hours": "Monday to Saturday 9:00-20:00; Sunday 11:00-18:00; holidays from 10:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bar El Bajo (GAM)",
+      "kind": "bar",
+      "url": "https://www.gam.cl/es/experiencia/horarios/",
+      "sourceType": "operator's own site (GAM)",
+      "address": "Av. Libertador Bernardo O'Higgins 227, Santiago (inside GAM)",
+      "operatingEvidence": "Listed with its own hours on GAM's current hours page.",
+      "hours": "Monday to Saturday 13:00-02:00; Sunday 13:00-00:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Café Altura (Manuel Montt)",
+      "kind": "cafe",
+      "url": "https://www.cafealtura.cl",
+      "sourceType": "operator's own site",
+      "address": "Manuel Montt 053, Providencia",
+      "operatingEvidence": "Branch list with hours and an online shop selling 2026 coffees (\"Guatemala San Gerardo 2026\", \"Blend de la Casa 2026\").",
+      "hours": "\"Lunes a viernes de 8:00 a 21:00 hrs.\"; Saturday and Sunday 10:00-20:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Museo Violeta Parra",
+      "kind": "museum",
+      "url": "https://www.museovioletaparra.cl",
+      "sourceType": "operator's own site",
+      "address": "Vicuña Mackenna #37, Santiago",
+      "operatingEvidence": "News dated 20 October 2026 on the exhibition \"Ruta Nativa, las huellas que dejamos\"; agenda with Día de los muertos activities on 28 and 30 October 2026.",
+      "hours": "\"Abierto de martes a sábado, entre 10:00 y 17:30 h.\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Teatro Municipal de Santiago",
+      "kind": "landmark",
+      "url": "https://www.municipal.cl",
+      "sourceType": "operator's own site",
+      "address": "Agustinas 794, Santiago",
+      "operatingEvidence": "Season listings including \"Elektra\" (17 to 29 November), \"Ballet familiar: Clarita y su amigo Cascanueces\" (12 to 19 December) and \"Cascanueces\" (15 to 30 December); notes that Daniil Trifonov's 24 October recital was postponed.",
+      "hours": "Agustinas box office Monday to Thursday 10:00-18:00, Friday 10:00-17:00; weekends only on performance days, from 90 minutes before",
+      "confidence": "high"
+    },
+    {
+      "name": "Galindo",
+      "kind": "meal",
+      "url": "https://www.galindo.cl",
+      "sourceType": "operator's own site",
+      "address": "Dardignac 098, Santiago",
+      "operatingEvidence": "Menus uploaded January 2026 and footer \"© 2026 Todos los derechos reservados\"; current weekly hours published.",
+      "hours": "Monday closed; Tuesday to Thursday 12:00-23:00; Friday and Saturday 12:00-00:00; Sunday and holidays 12:00-22:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Ambrosía Bistro",
+      "kind": "meal",
+      "url": "https://www.ambrosia.cl",
+      "sourceType": "operator's own site",
+      "address": "Pamplona 78, Vitacura, Santiago",
+      "operatingEvidence": "Live \"RESERVAR MESA\" booking link (ambrosia.meitre.com) with published service times.",
+      "hours": "Lunch every day 13:00-15:30; dinner Monday to Saturday 18:30-22:30",
+      "confidence": "medium"
+    },
+    {
+      "name": "Terraza Magnolia (Hotel Magnolia)",
+      "kind": "bar",
+      "url": "https://www.hotelmagnolia.cl",
+      "sourceType": "operator's own site",
+      "address": "Huérfanos 539, Santiago Centro",
+      "operatingEvidence": "Seventh-floor rooftop bar with author cocktails and views of Cerro Santa Lucía; site shows \"MICHELIN Guide 2026 · Una Llave\".",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "DeMo (Hotel Magnolia)",
+      "kind": "meal",
+      "url": "https://www.hotelmagnolia.cl/demo",
+      "sourceType": "operator's own site",
+      "address": "Huérfanos 539, Santiago Centro (Hotel Magnolia, from https://www.hotelmagnolia.cl)",
+      "operatingEvidence": "Bookings \"Bajo agenda previa\" via demomagnoliarestaurant.mesa247.cl; nine- or five-course tasting menus with pairings.",
+      "hours": "Tuesday to Saturday, seatings at \"19:00 · 20:00 · 21:00\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Emporio La Rosa (Merced)",
+      "kind": "bakery",
+      "url": "https://www.emporiolarosa.cl/donde-estamos/",
+      "sourceType": "operator's own site",
+      "address": "Merced 291, Santiago",
+      "operatingEvidence": "Site blog has 2026 posts, including Día del Helado 2026 (April) and a September 2026 post on Chilean dishes.",
+      "hours": "Monday to Friday, Sundays and holidays 09:30-20:30 (Saturday not stated)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Tavelli (Drugstore)",
+      "kind": "cafe",
+      "url": "https://www.tavelli.cl/local",
+      "sourceType": "operator's own site",
+      "address": "Andrés de Fuenzalida 36, Providencia",
+      "operatingEvidence": "Branch list with current hours; cake and kuchen menu online.",
+      "hours": "Monday to Saturday 9:00-20:30; Sunday 10:00-18:45",
+      "confidence": "medium"
+    },
+    {
+      "name": "Fuente Mardoqueo (Libertad)",
+      "kind": "meal",
+      "url": "https://www.fuentemardoqueo.cl",
+      "sourceType": "operator's own site",
+      "address": "Libertad 551, Santiago Centro",
+      "operatingEvidence": "Five branches listed with hours, delivery links and group bookings; footer \"Copyright 2026\".",
+      "hours": "\"Lunes a domingo · 12:00 a 23:00 hrs\"",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Cerro San Cristobal (Parque Metropolitano)",
+      "reason": "Official site parquemet.cl refused the connection (ECONNREFUSED) on three attempts; not evidence of closure",
+      "url": "https://www.parquemet.cl"
+    },
+    {
+      "name": "Central Market (Mercado Central)",
+      "reason": "Official site mercadocentral.cl did not resolve (DNS failure); not evidence of closure",
+      "url": "https://www.mercadocentral.cl"
+    },
+    {
+      "name": "Lastarria",
+      "reason": "generic, not a place (neighbourhood)",
+      "url": ""
+    },
+    {
+      "name": "Museo Histórico Nacional",
+      "reason": "Official site says the museum is temporarily closed for expansion and restoration (\"Museo cerrado temporalmente\"), no reopening date",
+      "url": "https://www.mhn.gob.cl"
+    },
+    {
+      "name": "Museo de la Memoria y los Derechos Humanos",
+      "reason": "Address, hours and exhibition dates not present in readable page content (several pages 404 or empty lists)",
+      "url": "https://mmdh.cl/"
+    },
+    {
+      "name": "Peumayén",
+      "reason": "peumayen.cl is an unrelated winery; peumayenchile.cl returned no readable content",
+      "url": "https://www.peumayenchile.cl"
+    },
+    {
+      "name": "Chipe Libre",
+      "reason": "Site is a frameset titled as a newspaper with no readable content",
+      "url": "https://www.chipelibre.cl"
+    },
+    {
+      "name": "Siete Negronis",
+      "reason": "Official site gives no street address (only \"Terrazas San Cristóbal\")",
+      "url": "https://www.sietenegronis.cl"
+    },
+    {
+      "name": "Hotel Cumbres Lastarria",
+      "reason": "Official site gives no address or bar details",
+      "url": "https://www.hotelescumbres.com/"
+    },
+    {
+      "name": "The Singular Santiago (Rooftop Bar)",
+      "reason": "Official page gives no address or bar hours; another URL 404",
+      "url": "https://www.thesingular.com/santiago"
+    },
+    {
+      "name": "Fuente Alemana",
+      "reason": "Official site returned no readable content",
+      "url": "https://www.fuentealemana.cl"
+    },
+    {
+      "name": "La Piojera",
+      "reason": "Official site returned no readable content",
+      "url": "https://www.lapiojera.cl"
+    },
+    {
+      "name": "Castillo Forestal",
+      "reason": "Site showed only a 'Loading...' page with no readable content",
+      "url": "https://www.castilloforestal.cl"
+    },
+    {
+      "name": "Tren al Sur",
+      "reason": "Certificate error (self-signed certificate in chain); not bypassed",
+      "url": "https://www.trenalsur.cl"
+    },
+    {
+      "name": "Museo de Arte Contemporáneo (MAC)",
+      "reason": "HTTP 403 Forbidden",
+      "url": "https://www.mac.uchile.cl"
+    },
+    {
+      "name": "Museo de Artes Visuales (MAVI)",
+      "reason": "Connection refused",
+      "url": "https://www.mavi.cl"
+    },
+    {
+      "name": "Viña Cousiño Macul",
+      "reason": "HTTP 429 Too Many Requests",
+      "url": "https://www.cousinomacul.com"
+    },
+    {
+      "name": "Viña Santa Rita",
+      "reason": "DNS failure",
+      "url": "https://www.santaritawines.com"
+    },
+    {
+      "name": "La Vega Central",
+      "reason": "DNS failure",
+      "url": "https://www.lavegacentral.cl"
+    },
+    {
+      "name": "Zoológico Nacional",
+      "reason": "DNS failure at guessed domain; official Parquemet site unreachable",
+      "url": "https://www.zoologico.cl"
+    },
+    {
+      "name": "Cerro Santa Lucía",
+      "reason": "DNS failure at guessed domain; no official page read",
+      "url": "https://www.cerrosantalucia.cl"
+    },
+    {
+      "name": "Mestizo",
+      "reason": "DNS failure",
+      "url": "https://www.mestizo.cl"
+    },
+    {
+      "name": "Mulato",
+      "reason": "DNS failure",
+      "url": "https://www.mulato.cl"
+    },
+    {
+      "name": "Café Mosqueto",
+      "reason": "DNS failure",
+      "url": "https://www.mosqueto.cl"
+    },
+    {
+      "name": "Bar The Clinic",
+      "reason": "DNS failure",
+      "url": "https://www.barthclinic.cl"
+    },
+    {
+      "name": "Le Pain Quotidien (Santiago)",
+      "reason": "Chilean domain redirects to the global site; no Santiago branch address read",
+      "url": "https://www.lepainquotidien.cl"
+    },
+    {
+      "name": "Colmado",
+      "reason": "HTTP 404",
+      "url": "https://www.colmado.cl"
+    },
+    {
+      "name": "Hilltop sunset",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Maipo Valley day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Neighborhood gallery walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Seafood market lunch",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Chilean wine dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A Lastarria cafe",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Bellavista",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Providencia",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Lastarria",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Remaining bestBudget, bestLuxury, bestCouples, bestKids, bestSolo, bestUnique, bestBreakfast, bestLunch, bestDinner, bestCocktails, bestBakeries and bestCoffee entries (e.g. \"Free or low-cost Lastarria walk\", \"Private guide for Cerro San Cristobal\", \"Sunset drinks near Lastarria\", \"Local bakery near Lastarria\", \"Coffee near Lastarria\")",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Museo Nacional de Bellas Artes",
+        "Museo Chileno de Arte Precolombino",
+        "La Chascona",
+        "Sky Costanera"
+      ],
+      "bestFirstTimers": [
+        "Centro Cultural La Moneda",
+        "Museo Chileno de Arte Precolombino",
+        "Sky Costanera",
+        "Museo Nacional de Bellas Artes"
+      ],
+      "bestRestaurants": [
+        "Boragó",
+        "Galindo",
+        "Liguria (Lastarria)",
+        "Ambrosía Bistro"
+      ],
+      "bestBudget": [
+        "Museo Nacional de Historia Natural",
+        "Museo Nacional de Bellas Artes",
+        "Fuente Mardoqueo (Libertad)",
+        "GAM"
+      ],
+      "bestLuxury": [
+        "Boragó",
+        "DeMo (Hotel Magnolia)",
+        "Concha y Toro Centro del Vino (Pirque)"
+      ],
+      "bestCouples": [
+        "Terraza Magnolia (Hotel Magnolia)",
+        "Sky Costanera",
+        "Bocanáriz",
+        "La Chascona"
+      ],
+      "bestKids": [
+        "Museo Interactivo Mirador",
+        "Museo Nacional de Historia Natural",
+        "Emporio La Rosa (Merced)",
+        "Teatro Municipal de Santiago"
+      ],
+      "bestSolo": [
+        "GAM",
+        "Museo Violeta Parra",
+        "Café Altura (Manuel Montt)",
+        "Museo Chileno de Arte Precolombino"
+      ],
+      "bestUnique": [
+        "Concha y Toro Centro del Vino (Pirque)",
+        "La Chascona",
+        "Museo Violeta Parra",
+        "Teatro Municipal de Santiago"
+      ],
+      "bestBreakfast": [
+        "Café Público (GAM)",
+        "Castaño (Alameda)",
+        "Tavelli (Drugstore)",
+        "Café Altura (Manuel Montt)"
+      ],
+      "bestLunch": [
+        "Fuente Mardoqueo (Libertad)",
+        "Ambrosía Bistro",
+        "Liguria (Lastarria)",
+        "Galindo"
+      ],
+      "bestDinner": [
+        "Boragó",
+        "DeMo (Hotel Magnolia)",
+        "Galindo",
+        "Bocanáriz"
+      ],
+      "bestCocktails": [
+        "Terraza Magnolia (Hotel Magnolia)",
+        "Bar El Bajo (GAM)",
+        "Liguria (Lastarria)",
+        "Bocanáriz"
+      ],
+      "bestBakeries": [
+        "Castaño (Alameda)",
+        "Tavelli (Drugstore)",
+        "Emporio La Rosa (Merced)"
+      ],
+      "bestCoffee": [
+        "Café Altura (Manuel Montt)",
+        "Café Público (GAM)",
+        "Tavelli (Drugstore)"
+      ]
+    },
+    "queries": {
+      "Museo Nacional de Bellas Artes": "Museo Nacional de Bellas Artes José Miguel de la Barra 650 Santiago Chile",
+      "Museo Chileno de Arte Precolombino": "Museo Chileno de Arte Precolombino Bandera 361 Santiago Chile",
+      "La Chascona": "La Chascona Fernando Márquez de la Plata 0192 Providencia Santiago Chile",
+      "Centro Cultural La Moneda": "Centro Cultural La Moneda Plaza de la Ciudadanía 26 Santiago Chile",
+      "Sky Costanera": "Sky Costanera Av. Andrés Bello 2425 Providencia Santiago Chile",
+      "Museo Nacional de Historia Natural": "Museo Nacional de Historia Natural Parque Quinta Normal Santiago Chile",
+      "Museo Interactivo Mirador": "Museo Interactivo Mirador Avenida Punta Arenas 6711 La Granja Santiago Chile",
+      "Boragó": "Boragó Av. San José María Escrivá de Balaguer 5970 Vitacura Santiago Chile",
+      "Liguria (Lastarria)": "Liguria Merced 298 Santiago Chile",
+      "Castaño (Alameda)": "Castaño Alameda Libertador Bernardo O'Higgins 1449 Santiago Chile",
+      "Bocanáriz": "Bocanáriz José Victorino Lastarria 276 Santiago Chile",
+      "Concha y Toro Centro del Vino (Pirque)": "Concha y Toro Av. Virginia Subercaseaux 210 Pirque Chile",
+      "GAM": "GAM Av. Libertador Bernardo O'Higgins 227 Santiago Chile",
+      "Café Público (GAM)": "Café Público GAM Av. Libertador Bernardo O'Higgins 227 Santiago Chile",
+      "Bar El Bajo (GAM)": "Bar El Bajo GAM Av. Libertador Bernardo O'Higgins 227 Santiago Chile",
+      "Café Altura (Manuel Montt)": "Café Altura Manuel Montt 053 Providencia Santiago Chile",
+      "Museo Violeta Parra": "Museo Violeta Parra Vicuña Mackenna 37 Santiago Chile",
+      "Teatro Municipal de Santiago": "Teatro Municipal de Santiago Agustinas 794 Santiago Chile",
+      "Galindo": "Galindo Dardignac 098 Santiago Chile",
+      "Ambrosía Bistro": "Ambrosía Bistro Pamplona 78 Vitacura Santiago Chile",
+      "Terraza Magnolia (Hotel Magnolia)": "Hotel Magnolia Huérfanos 539 Santiago Chile",
+      "DeMo (Hotel Magnolia)": "DeMo Hotel Magnolia Huérfanos 539 Santiago Chile",
+      "Emporio La Rosa (Merced)": "Emporio La Rosa Merced 291 Santiago Chile",
+      "Tavelli (Drugstore)": "Tavelli Andrés de Fuenzalida 36 Providencia Santiago Chile",
+      "Fuente Mardoqueo (Libertad)": "Fuente Mardoqueo Libertad 551 Santiago Chile"
+    },
+    "summary": "Museums, a cultural centre, a city viewpoint, a Maipo winery and Santiago restaurants, cafés, bakeries and bars, each checked against its own website.",
+    "highlights": [
+      "Museo Nacional de Bellas Artes",
+      "Museo Chileno de Arte Precolombino",
+      "La Chascona",
+      "Sky Costanera"
+    ],
+    "tip": "Museo Nacional de Bellas Artes, Museo Nacional de Historia Natural, Museo Chileno de Arte Precolombino and Museo Interactivo Mirador are all closed on Mondays, so keep Monday for Sky Costanera, which opens daily from 10:00 to 22:00.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mondays",
+        "copy": "Museo Nacional de Bellas Artes, Museo Nacional de Historia Natural, Museo Chileno de Arte Precolombino and Museo Interactivo Mirador are closed on Mondays. Galindo is also closed on Mondays, and Liguria's Lastarria branch is closed on Sundays."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Timed and non-refundable",
+        "copy": "Sky Costanera tickets are valid only for the date and time bought, with sunset entry from 18:00 to 20:00 costing more. Concha y Toro tour bookings are non-refundable, though date changes are free with 24 hours' notice."
+      },
+      {
+        "label": "Restaurant bookings",
+        "value": "Card to reserve",
+        "copy": "Boragó asks for a credit card number to book, holds tables for 30 minutes and may charge for no-shows. DeMo at Hotel Magnolia takes guests by prior booking only, with seatings at 19:00, 20:00 and 21:00, Tuesday to Saturday."
+      },
+      {
+        "label": "Age and item rules",
+        "value": "Check before you go",
+        "copy": "At Concha y Toro, under-18s can join the tour but cannot enter the tasting room. Boragó has no children's chairs or kids' menu, and Sky Costanera bans liquids, gels and aerosols."
+      }
+    ],
+    "dek": "Plan museum days from Tuesday to Sunday, and book Boragó, DeMo, Sky Costanera and any Concha y Toro tour ahead.",
+    "intro": [
+      "Start in the centre, where several of the city's museums sit within walking distance. Museo Nacional de Bellas Artes, on José Miguel de la Barra, is free for everyone and opens Tuesday to Sunday from 10:00 to 18:30. Its current shows include \"Enrique Ramírez. Te creo paisaje\", running to 28 February 2027, and \"Roberto Matta. Abrir la mirada\", which continues to 31 July 2027. A short walk away on Bandera, Museo Chileno de Arte Precolombino is closed on Mondays and is free on the first Sunday of each month for Chilean nationals and residents.",
+      "Centro Cultural La Moneda, under the Plaza de la Ciudadanía, opens its exhibitions Tuesday to Sunday from 10:15 to 18:45. \"CASA COMÚN: 100 años de parques nacionales\" runs to 6 December 2026, and the free \"La ronda del Sol y la Luna\" continues to May 2027. Across the river in Providencia, Neruda's house La Chascona follows the Fundación Pablo Neruda's March to December schedule of Tuesday to Sunday, 10:00 to 18:00. For a view, Sky Costanera opens daily from 10:00 to 22:00, and tickets are valid only for the slot you buy.",
+      "With children, Museo Nacional de Historia Natural in Parque Quinta Normal is free and closed on Mondays. \"Mariposas y Polillas, Colores en Movimiento\" runs there to 3 January 2027. Museo Interactivo Mirador in La Granja is also closed on Mondays and opens only until 13:30 on Tuesdays. At Teatro Municipal on Agustinas, the season lists \"Elektra\" from 17 to 29 November and the family ballet \"Clarita y su amigo Cascanueces\" from 12 to 19 December. For a day out of town, Concha y Toro's Centro del Vino in Pirque sells timed tours online.",
+      "For food, Boragó in Vitacura opens Tuesday to Saturday from 17:15 and needs a credit card to book. DeMo at Hotel Magnolia serves tasting menus by booking only, and the hotel's seventh-floor Terraza Magnolia looks onto Cerro Santa Lucía. In Lastarria, Bocanáriz is a wine bar and shop, and Liguria on Merced opens Monday to Saturday. For a cheaper lunch, try Fuente Mardoqueo on Libertad, open daily from 12:00 to 23:00. In the morning, Café Altura on Manuel Montt opens at 8:00 on weekdays, and Castaño on the Alameda opens at 08:00 on weekdays."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair Museo Nacional de Bellas Artes and Museo Chileno de Arte Precolombino on any day from Tuesday to Sunday, then book a Sky Costanera slot for the view."
+      ],
+      [
+        "A slower morning",
+        "Start with coffee at Café Altura on Manuel Montt from 8:00 on weekdays, then walk to La Chascona, open Tuesday to Sunday from 10:00."
+      ],
+      [
+        "Before booking",
+        "Boragó needs a credit card to reserve, Concha y Toro tours are non-refundable, and the main museums here are closed on Mondays."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several official sites could not be read: Parque Metropolitano (Cerro San Cristóbal) refused connections, Mercado Central, La Vega Central, Viña Santa Rita, Mestizo, Mulato and others failed DNS lookup, Tren al Sur had a certificate error, MAC returned 403 and Cousiño Macul returned 429; these are not evidence of closure. Museo Histórico Nacional's own site says it is temporarily closed for expansion. Published information was partial for some places: Museo Chileno de Arte Precolombino's general weekly hours were on a tab not readable, Bocanáriz and Terraza Magnolia publish no hours, Emporio La Rosa (Merced) lists no Saturday hours, and La Chascona's page gives a March to December schedule without listing ticket prices. Several restaurant and café entries (Liguria, Galindo, Ambrosía Bistro, Castaño, Tavelli, Fuente Mardoqueo) rest on live booking links, published hours or a 2026 copyright footer rather than dated announcements.",
+  "injectionLikeText": []
+}

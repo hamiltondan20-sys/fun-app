@@ -8713,4 +8713,110 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 28, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Santiago, Chile: source review of 2026-10-28 (docs/content-research/santiago-2026-10-28.md).
+  {
+    const cityKey = "Santiago, Chile";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Museo Nacional de Bellas Artes","Museo Chileno de Arte Precolombino","La Chascona","Sky Costanera"],
+      bestFirstTimers: ["Centro Cultural La Moneda","Museo Chileno de Arte Precolombino","Sky Costanera","Museo Nacional de Bellas Artes"],
+      bestRestaurants: ["Boragó","Galindo","Liguria (Lastarria)","Ambrosía Bistro"],
+      bestBudget: ["Museo Nacional de Historia Natural","Museo Nacional de Bellas Artes","Fuente Mardoqueo (Libertad)","GAM"],
+      bestLuxury: ["Boragó","DeMo (Hotel Magnolia)","Concha y Toro Centro del Vino (Pirque)"],
+      bestCouples: ["Terraza Magnolia (Hotel Magnolia)","Sky Costanera","Bocanáriz","La Chascona"],
+      bestKids: ["Museo Interactivo Mirador","Museo Nacional de Historia Natural","Emporio La Rosa (Merced)","Teatro Municipal de Santiago"],
+      bestSolo: ["GAM","Museo Violeta Parra","Café Altura (Manuel Montt)","Museo Chileno de Arte Precolombino"],
+      bestUnique: ["Concha y Toro Centro del Vino (Pirque)","La Chascona","Museo Violeta Parra","Teatro Municipal de Santiago"],
+      bestBreakfast: ["Café Público (GAM)","Castaño (Alameda)","Tavelli (Drugstore)","Café Altura (Manuel Montt)"],
+      bestLunch: ["Fuente Mardoqueo (Libertad)","Ambrosía Bistro","Liguria (Lastarria)","Galindo"],
+      bestDinner: ["Boragó","DeMo (Hotel Magnolia)","Galindo","Bocanáriz"],
+      bestCocktails: ["Terraza Magnolia (Hotel Magnolia)","Bar El Bajo (GAM)","Liguria (Lastarria)","Bocanáriz"],
+      bestBakeries: ["Castaño (Alameda)","Tavelli (Drugstore)","Emporio La Rosa (Merced)"],
+      bestCoffee: ["Café Altura (Manuel Montt)","Café Público (GAM)","Tavelli (Drugstore)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Museo Nacional de Bellas Artes": "Museo Nacional de Bellas Artes José Miguel de la Barra 650 Santiago Chile",
+      "Museo Chileno de Arte Precolombino": "Museo Chileno de Arte Precolombino Bandera 361 Santiago Chile",
+      "La Chascona": "La Chascona Fernando Márquez de la Plata 0192 Providencia Santiago Chile",
+      "Sky Costanera": "Sky Costanera Av. Andrés Bello 2425 Providencia Santiago Chile",
+      "Centro Cultural La Moneda": "Centro Cultural La Moneda Plaza de la Ciudadanía 26 Santiago Chile",
+      "Boragó": "Boragó Av. San José María Escrivá de Balaguer 5970 Vitacura Santiago Chile",
+      "Galindo": "Galindo Dardignac 098 Santiago Chile",
+      "Liguria (Lastarria)": "Liguria Merced 298 Santiago Chile",
+      "Ambrosía Bistro": "Ambrosía Bistro Pamplona 78 Vitacura Santiago Chile",
+      "Museo Nacional de Historia Natural": "Museo Nacional de Historia Natural Parque Quinta Normal Santiago Chile",
+      "Fuente Mardoqueo (Libertad)": "Fuente Mardoqueo Libertad 551 Santiago Chile",
+      "GAM": "GAM Av. Libertador Bernardo O'Higgins 227 Santiago Chile",
+      "DeMo (Hotel Magnolia)": "DeMo Hotel Magnolia Huérfanos 539 Santiago Chile",
+      "Concha y Toro Centro del Vino (Pirque)": "Concha y Toro Av. Virginia Subercaseaux 210 Pirque Chile",
+      "Terraza Magnolia (Hotel Magnolia)": "Hotel Magnolia Huérfanos 539 Santiago Chile",
+      "Bocanáriz": "Bocanáriz José Victorino Lastarria 276 Santiago Chile",
+      "Museo Interactivo Mirador": "Museo Interactivo Mirador Avenida Punta Arenas 6711 La Granja Santiago Chile",
+      "Emporio La Rosa (Merced)": "Emporio La Rosa Merced 291 Santiago Chile",
+      "Teatro Municipal de Santiago": "Teatro Municipal de Santiago Agustinas 794 Santiago Chile",
+      "Museo Violeta Parra": "Museo Violeta Parra Vicuña Mackenna 37 Santiago Chile",
+      "Café Altura (Manuel Montt)": "Café Altura Manuel Montt 053 Providencia Santiago Chile",
+      "Café Público (GAM)": "Café Público GAM Av. Libertador Bernardo O'Higgins 227 Santiago Chile",
+      "Castaño (Alameda)": "Castaño Alameda Libertador Bernardo O'Higgins 1449 Santiago Chile",
+      "Tavelli (Drugstore)": "Tavelli Andrés de Fuenzalida 36 Providencia Santiago Chile",
+      "Bar El Bajo (GAM)": "Bar El Bajo GAM Av. Libertador Bernardo O'Higgins 227 Santiago Chile"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Santiago" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Museums, a cultural centre, a city viewpoint, a Maipo winery and Santiago restaurants, cafés, bakeries and bars, each checked against its own website.";
+    cityGuide.highlights = ["Museo Nacional de Bellas Artes","Museo Chileno de Arte Precolombino","La Chascona","Sky Costanera"];
+    cityGuide.tip = "Museo Nacional de Bellas Artes, Museo Nacional de Historia Natural, Museo Chileno de Arte Precolombino and Museo Interactivo Mirador are all closed on Mondays, so keep Monday for Sky Costanera, which opens daily from 10:00 to 22:00.";
+    data.destinationFacts[cityKey] = "Museo Nacional de Bellas Artes, Museo Nacional de Historia Natural, Museo Chileno de Arte Precolombino and Museo Interactivo Mirador are all closed on Mondays, so keep Monday for Sky Costanera, which opens daily from 10:00 to 22:00.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Museums, a cultural centre, a city viewpoint, a Maipo winery and Santiago restaurants, cafés, bakeries and bars, each checked against its own website.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays",
+        "copy": "Museo Nacional de Bellas Artes, Museo Nacional de Historia Natural, Museo Chileno de Arte Precolombino and Museo Interactivo Mirador are closed on Mondays. Galindo is also closed on Mondays, and Liguria's Lastarria branch is closed on Sundays."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Timed and non-refundable",
+        "copy": "Sky Costanera tickets are valid only for the date and time bought, with sunset entry from 18:00 to 20:00 costing more. Concha y Toro tour bookings are non-refundable, though date changes are free with 24 hours' notice."
+      },
+      {
+        "label": "Restaurant bookings",
+        "value": "Card to reserve",
+        "copy": "Boragó asks for a credit card number to book, holds tables for 30 minutes and may charge for no-shows. DeMo at Hotel Magnolia takes guests by prior booking only, with seatings at 19:00, 20:00 and 21:00, Tuesday to Saturday."
+      },
+      {
+        "label": "Age and item rules",
+        "value": "Check before you go",
+        "copy": "At Concha y Toro, under-18s can join the tour but cannot enter the tasting room. Boragó has no children's chairs or kids' menu, and Sky Costanera bans liquids, gels and aerosols."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Plan museum days from Tuesday to Sunday, and book Boragó, DeMo, Sky Costanera and any Concha y Toro tour ahead.",
+      intro: [
+        "Start in the centre, where several of the city's museums sit within walking distance. Museo Nacional de Bellas Artes, on José Miguel de la Barra, is free for everyone and opens Tuesday to Sunday from 10:00 to 18:30. Its current shows include \"Enrique Ramírez. Te creo paisaje\", running to 28 February 2027, and \"Roberto Matta. Abrir la mirada\", which continues to 31 July 2027. A short walk away on Bandera, Museo Chileno de Arte Precolombino is closed on Mondays and is free on the first Sunday of each month for Chilean nationals and residents.",
+        "Centro Cultural La Moneda, under the Plaza de la Ciudadanía, opens its exhibitions Tuesday to Sunday from 10:15 to 18:45. \"CASA COMÚN: 100 años de parques nacionales\" runs to 6 December 2026, and the free \"La ronda del Sol y la Luna\" continues to May 2027. Across the river in Providencia, Neruda's house La Chascona follows the Fundación Pablo Neruda's March to December schedule of Tuesday to Sunday, 10:00 to 18:00. For a view, Sky Costanera opens daily from 10:00 to 22:00, and tickets are valid only for the slot you buy.",
+        "With children, Museo Nacional de Historia Natural in Parque Quinta Normal is free and closed on Mondays. \"Mariposas y Polillas, Colores en Movimiento\" runs there to 3 January 2027. Museo Interactivo Mirador in La Granja is also closed on Mondays and opens only until 13:30 on Tuesdays. At Teatro Municipal on Agustinas, the season lists \"Elektra\" from 17 to 29 November and the family ballet \"Clarita y su amigo Cascanueces\" from 12 to 19 December. For a day out of town, Concha y Toro's Centro del Vino in Pirque sells timed tours online.",
+        "For food, Boragó in Vitacura opens Tuesday to Saturday from 17:15 and needs a credit card to book. DeMo at Hotel Magnolia serves tasting menus by booking only, and the hotel's seventh-floor Terraza Magnolia looks onto Cerro Santa Lucía. In Lastarria, Bocanáriz is a wine bar and shop, and Liguria on Merced opens Monday to Saturday. For a cheaper lunch, try Fuente Mardoqueo on Libertad, open daily from 12:00 to 23:00. In the morning, Café Altura on Manuel Montt opens at 8:00 on weekdays, and Castaño on the Alameda opens at 08:00 on weekdays."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair Museo Nacional de Bellas Artes and Museo Chileno de Arte Precolombino on any day from Tuesday to Sunday, then book a Sky Costanera slot for the view."
+        ],
+        [
+          "A slower morning",
+          "Start with coffee at Café Altura on Manuel Montt from 8:00 on weekdays, then walk to La Chascona, open Tuesday to Sunday from 10:00."
+        ],
+        [
+          "Before booking",
+          "Boragó needs a credit card to reserve, Concha y Toro tours are non-refundable, and the main museums here are closed on Mondays."
+        ]
+      ],
+      trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on October 28, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();
