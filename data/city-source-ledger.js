@@ -5,6 +5,357 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Galway, Ireland": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-10-27",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several well-known Galway venues could not be read: The King's Head, Coffeewerk + Press, Sheridans Cheesemongers, McCambridge's, Rúibín, Monroe's, The Dough Bros and Hazel Mountain Chocolate returned rate-limit errors; Griffin's Bakery, Dela, Tartare and the Town Hall Theatre refused automated reading; The Crane Bar, Cupán Tae and Geometry Coffee failed on certificate errors; none of these failures is evidence of closure. Public areas such as the Latin Quarter and Salthill Promenade have no operator page and were not checked. Hours were not published for the Hall of the Red Earl, Sophie's at The Dean, Quincentennial Park and the University of Galway, Corrib Princess sailing times were not on its home page, Galway Cathedral's hours are described as approximate, and Gourmet Tart Co.'s Abbeygate Street Sunday hours appear to contain a typo. Galway City Council posted storm reopening notices on 25 and 27 October 2026 without naming the locations, so check outdoor sites on the day. Several confirmations (Ard Bia, Corrib Princess, Tigh Neachtain, O'Connor's Bar, Cava Bodega) rest on published hours or booking tools rather than dated 2026 content.",
+    "sourceUrls": [
+      "docs/content-research/galway-2026-10-27.md",
+      "docs/content-research/galway-2026-10-27.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Latin Quarter",
+        "checkedOn": "2026-10-27",
+        "reason": "district with no operator website; not checkable under the official-source rule"
+      },
+      {
+        "name": "Salthill Promenade",
+        "checkedOn": "2026-10-27",
+        "reason": "public promenade with no operator page found; not checkable under the official-source rule"
+      },
+      {
+        "name": "Claddagh",
+        "checkedOn": "2026-10-27",
+        "reason": "neighbourhood with no operator website; covered instead by South Park Playground (Claddagh) and the museum's Claddagh exhibition"
+      },
+      {
+        "name": "Cliffs of Moher route",
+        "url": "https://www.cliffsofmoher.ie/",
+        "checkedOn": "2026-10-27",
+        "reason": "official site (cliffsofmoher.ie) shows hours (\"Open Daily, 8am – 7pm\") but publishes no exact address, only \"Liscannor, Ireland\"; also a day trip outside Galway"
+      },
+      {
+        "name": "Trad music night",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Salthill sunset",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Remaining input entries (e.g. \"a seafood dinner\", \"Galway market or cafe\", \"A cafe near Salthill\", \"Private guide for Latin Quarter\" and all other descriptive phrases)",
+        "checkedOn": "2026-10-27",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "McDonagh's",
+        "url": "https://www.mcdonaghs.net/",
+        "checkedOn": "2026-10-27",
+        "reason": "official site appears unmaintained (latest content February 2017, footer \"@2017\"); no current operating evidence"
+      },
+      {
+        "name": "The Crane Bar",
+        "url": "https://www.thecranebar.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "fetch failed: self-signed certificate error; not bypassed"
+      },
+      {
+        "name": "The King's Head",
+        "url": "https://www.thekingshead.ie/",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 429 Too Many Requests on repeated attempts"
+      },
+      {
+        "name": "Coffeewerk + Press",
+        "url": "https://www.coffeewerkandpress.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 429 Too Many Requests on repeated attempts"
+      },
+      {
+        "name": "Sheridans Cheesemongers (Galway)",
+        "url": "https://www.sheridanscheesemongers.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 429 Too Many Requests on repeated attempts"
+      },
+      {
+        "name": "McCambridge's",
+        "url": "https://www.mccambridges.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 429 Too Many Requests on repeated attempts"
+      },
+      {
+        "name": "Rúibín",
+        "url": "https://www.ruibin.ie/",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 429 Too Many Requests on repeated attempts"
+      },
+      {
+        "name": "Monroe's Tavern",
+        "url": "https://www.monroes.ie/",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 429 Too Many Requests"
+      },
+      {
+        "name": "The Dough Bros",
+        "url": "https://www.thedoughbros.ie/",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 429 Too Many Requests"
+      },
+      {
+        "name": "Hazel Mountain Chocolate",
+        "url": "https://www.hazelmountainchocolate.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 429 Too Many Requests"
+      },
+      {
+        "name": "Griffin's Bakery",
+        "url": "https://www.griffinsbakery.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 403 Forbidden"
+      },
+      {
+        "name": "Dela",
+        "url": "https://www.dela.ie/",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 403 Forbidden"
+      },
+      {
+        "name": "Town Hall Theatre",
+        "url": "https://www.tht.ie/",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 403 Forbidden"
+      },
+      {
+        "name": "Tartare",
+        "url": "https://www.tartaregalway.ie/",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 403 Forbidden"
+      },
+      {
+        "name": "Hyde Bar",
+        "url": "https://www.hydebargalway.ie/",
+        "checkedOn": "2026-10-27",
+        "reason": "HTTP 503 Service Unavailable"
+      },
+      {
+        "name": "Cupán Tae",
+        "url": "https://www.cupantae.eu/",
+        "checkedOn": "2026-10-27",
+        "reason": "fetch failed: SSL handshake failure; not bypassed"
+      },
+      {
+        "name": "Plámás (Geometry Coffee)",
+        "url": "https://geometrycoffee.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "fetch failed: SSL error (unrecognized name); not bypassed"
+      },
+      {
+        "name": "Galway Bay Hotel",
+        "url": "https://www.galwaybayhotel.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "fetch failed: connection refused"
+      },
+      {
+        "name": "Galway Market",
+        "url": "https://www.galwaymarket.ie/",
+        "checkedOn": "2026-10-27",
+        "reason": "fetch failed: DNS lookup error; no official page read"
+      },
+      {
+        "name": "Kai",
+        "url": "https://www.kaicaferestaurant.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "official URL tried returned HTTP 404; no current page found (not evidence of closure)"
+      },
+      {
+        "name": "Oscar's Seafood Bistro",
+        "url": "https://www.oscarsbistro.ie/",
+        "checkedOn": "2026-10-27",
+        "reason": "domain now hosts unrelated bingo content; no official page found (not evidence of closure)"
+      },
+      {
+        "name": "Hotel Meyrick",
+        "url": "https://www.hotelmeyrick.ie/",
+        "checkedOn": "2026-10-27",
+        "reason": "domain now hosts unrelated casino content; no official page found"
+      },
+      {
+        "name": "Loam",
+        "url": "https://www.loamgalway.com/",
+        "checkedOn": "2026-10-27",
+        "reason": "domain redirects to an unrelated German car dealer; no official page found"
+      },
+      {
+        "name": "Merlin Woods",
+        "url": "https://www.galwaycity.ie/services/leisure-and-recreation/leisure-and-recreation-services/merlin-woods-restoration",
+        "checkedOn": "2026-10-27",
+        "reason": "council page publishes no exact address and says main footpaths are closed from September to mid-December 2026 for restoration works"
+      },
+      {
+        "name": "Druid Theatre",
+        "url": "https://www.druid.ie/",
+        "checkedOn": "2026-10-27",
+        "reason": "only listed 2026 production is in Toronto (November 2026); no current Galway performance and no full venue address"
+      },
+      {
+        "name": "The House Hotel",
+        "url": "https://www.thehousehotel.ie/",
+        "checkedOn": "2026-10-27",
+        "reason": "café bar not named and no hours published; no clear current food or drink evidence"
+      },
+      {
+        "name": "The g Hotel / The Quays / Hooked / Sonny Molloy's / The Front Door / Taaffes / Biteclub",
+        "checkedOn": "2026-10-27",
+        "reason": "guessed official domains did not resolve (DNS not found); no official page read"
+      }
+    ],
+    "placeSources": {
+      "Galway City Museum": {
+        "url": "https://www.galwaycitymuseum.ie/",
+        "sourceType": "operator's own site (municipal museum)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Easter hours notice: \"Galway City Museum will open Sundays, 12pm – 5pm commencing Easter Sunday 5 April 2026.\" Lists current exhibitions including \"The Claddagh, A Triumph of Unconscious Beauty\" and \"Revolution in Galway, 1913 - 1923\"; \"Admission is FREE\", \"No booking required\"."
+      },
+      "St Nicholas' Collegiate Church": {
+        "url": "https://www.stnicholas.ie/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Visitor hours published with \"Last entry 30 mins before closing\"; visitor comments dated \"June 2026\" and \"October 2026\"; footer \"© Copyright 2026\"."
+      },
+      "Galway Cathedral": {
+        "url": "https://www.galwaycathedral.ie/visitors",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Visitor page gives current visiting guidance: \"The Cathedral is usually open from 08:00 until 20:00\"; asks that visitors \"do not enter during the celebration of Mass\"; suggests a €3 donation. No 2026-dated notice seen."
+      },
+      "Hall of the Red Earl": {
+        "url": "https://www.galwaycivictrust.ie/",
+        "sourceType": "operator's own site (Galway Civic Trust)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Lá na Cruite (Harp Day) held at the Hall on \"Saturday 17 October 2026\"; \"Free Tours Weekly!\", \"All Tours start from Hall of the Red Earl\"; Churches of Galway tour \"every Thursday at 12.00 PM\". A one-day closure on 14 October 2026 has passed."
+      },
+      "Galway Atlantaquaria": {
+        "url": "https://www.nationalaquarium.ie/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "News posts dated October 20, 2026 (\"Celebrating Water from Molecule to Ocean for Science Week\") and October 13, 2026; online ticket sales via \"BUY TICKETS\"."
+      },
+      "Corrib Princess": {
+        "url": "https://www.corribprincess.ie/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "\"We are open, 6 days a week closed on Mondays\"; live online booking, \"Availability for booking online opens 1 month in advance\". No 2026-dated content seen."
+      },
+      "University of Galway": {
+        "url": "https://www.universityofgalway.ie/visitors/",
+        "sourceType": "official public operator (University of Galway)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Visitors page says visitors have \"public and free access\" to campus museums, galleries and exhibition spaces; current 2026 items such as \"Autism Friendly HEI Candidate 2026-2027\"."
+      },
+      "Leisureland": {
+        "url": "https://www.leisureland.ie/",
+        "sourceType": "operator's own site (Galway City Council branding)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "\"Open daily\"; dated session notice \"There is no public session on Sunday 25th October 2026\" (single session only, not a closure)."
+      },
+      "Millennium Children's Park Playground": {
+        "url": "https://www.galwaycity.ie/services/leisure-and-recreation/public-playgrounds",
+        "sourceType": "official public operator (Galway City Council)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Listed on the council's current public playgrounds page with hours and age range (1–12 yrs); no closure noted."
+      },
+      "Kennedy Park Playground": {
+        "url": "https://www.galwaycity.ie/services/leisure-and-recreation/public-playgrounds",
+        "sourceType": "official public operator (Galway City Council)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Listed on the council's current public playgrounds page, ages 1–12 yrs; no closure noted."
+      },
+      "Quincentennial Park": {
+        "url": "https://www.galwaycity.ie/news/2026/galway-city-council-opens-an-gairdin-siorghra-the-garden-of-eternal-love-at",
+        "sourceType": "official public operator (Galway City Council)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Council notice dated \"22 September 2026\" on opening An Gairdín Síorghrá, a memorial garden at the park."
+      },
+      "Aniar": {
+        "url": "https://www.aniarrestaurant.ie/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Live reservation section (\"Please call us on 091 535 947 to check for availability\"); \"Our tasting menu is an immersive dining experience of Irish food through the ages\"."
+      },
+      "Cava Bodega": {
+        "url": "https://www.cavarestaurant.ie/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Reservation widget and \"Please call us on 091 539884 to check for availability\"; \"The tapas menu showcases over 70 regional Spanish Tapas\"."
+      },
+      "Brasserie on the Corner": {
+        "url": "https://www.brasseriegalway.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Current menus dated 2026 (\"BOTC-A-LA-CARTE-MENU-JUNE-2026\", \"BOTC-PRE-THEATRE-MENU-FEBRUARY-2026\"); \"Serving lunch, early bird and our popular À la carte menu\"; online reservations."
+      },
+      "Ard Bia at Nimmos": {
+        "url": "https://www.ardbia.com/visit",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Visit page publishes current service times for breakfast, lunch, dinner and weekend brunch. No 2026-dated content seen."
+      },
+      "Sophie's at The Dean": {
+        "url": "https://thedeanhotels.com/galway",
+        "sourceType": "operator's own site (The Dean Galway)",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Hotel page describes Sophie's serving \"breakfast, lunch, and dinner\" with \"panoramic views\"; articles dated May 3, 2026 and Jan 12, 2026; \"© The Dean 2026\"."
+      },
+      "The Hardiman": {
+        "url": "https://www.thehardiman.ie/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "\"Galway's Festival Calendar 2026\" and a 2026 Christmas price list; The Oyster Room \"served for dinner 5–9pm, Monday to Saturday\"; Oyster Bar serves \"cocktails\"; Afternoon Tea in The Parlour Lounge."
+      },
+      "The Dáil Bar": {
+        "url": "https://www.thedailbar.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Page timestamp 2026-10-09; live music \"every night from 9:30 PM\"; bar food daily from 12 pm, \"No reservation needed\"; upstairs Liquor Lounge named \"COCKTAIL BAR OF THE YEAR 2025\"."
+      },
+      "Tigh Neachtain": {
+        "url": "https://www.tighneachtain.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Current hours and lunch service: \"We serve a lunch menu and light bites, with all food locally sourced\". No 2026-dated content seen."
+      },
+      "O'Connor's Bar (Salthill)": {
+        "url": "https://www.oconnorsbar.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Weekly music schedule: \"Mon- Traditional Irish Music @8.30pm ~ 10.30pm\" through \"Fri - Traditional Irish Music ~ @7.30pm\", live music Saturday and Sunday. No 2026-dated content seen."
+      },
+      "Urban Grind": {
+        "url": "https://www.urbangrind.ie/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Brunch served seven days until 3pm; sells specialty coffee beans from guest roasters; \"UG+Spring+2026\" image on the current site."
+      },
+      "Gourmet Tart Co. (Lower Abbeygate Street)": {
+        "url": "https://www.gourmettartco.com/locations/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Family-run bakery selling \"fresh bakes, cakes, and savoury meals\"; footer \"© Gourmet Tart Co | Galway 2026\"; Christmas 2026 hamper pre-orders."
+      },
+      "Gourmet Tart Co. (Salthill)": {
+        "url": "https://www.gourmettartco.com/locations/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-10-27",
+        "operatingEvidence": "Branch listed with current hours; footer \"© Gourmet Tart Co | Galway 2026\"; Christmas 2026 hamper pre-orders."
+      }
+    }
+  },
   "Split, Croatia": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-27",

@@ -1,0 +1,601 @@
+{
+  "city": "Galway, Ireland",
+  "checkedOn": "2026-10-27",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Galway City Museum",
+      "kind": "museum",
+      "url": "https://www.galwaycitymuseum.ie/",
+      "sourceType": "operator's own site (municipal museum)",
+      "address": "Spanish Parade, Galway, H91 CX5P",
+      "operatingEvidence": "Easter hours notice: \"Galway City Museum will open Sundays, 12pm – 5pm commencing Easter Sunday 5 April 2026.\" Lists current exhibitions including \"The Claddagh, A Triumph of Unconscious Beauty\" and \"Revolution in Galway, 1913 - 1923\"; \"Admission is FREE\", \"No booking required\".",
+      "hours": "\"Tuesday to Saturday, 10am – 5pm\"; \"Sundays (Easter to mid-Sept), 12pm - 5pm\"; \"Galleries close at 4:45pm\"; \"Closed Christmas Day, St Stephen's Day, St Patrick's Day & Good Friday\"",
+      "confidence": "high"
+    },
+    {
+      "name": "St Nicholas' Collegiate Church",
+      "kind": "landmark",
+      "url": "https://www.stnicholas.ie/",
+      "sourceType": "operator's own site",
+      "address": "St. Nicholas Collegiate Church, Lombard St, Galway, H91 PY20",
+      "operatingEvidence": "Visitor hours published with \"Last entry 30 mins before closing\"; visitor comments dated \"June 2026\" and \"October 2026\"; footer \"© Copyright 2026\".",
+      "hours": "\"Mon, Tues, Thurs, Fri, Sat 10 am – 5.30 pm\"; \"Weds 11am-5:30pm\"; \"Sun 1pm-5.30pm\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Galway Cathedral",
+      "kind": "landmark",
+      "url": "https://www.galwaycathedral.ie/visitors",
+      "sourceType": "operator's own site",
+      "address": "Galway Cathedral, Galway H91 A780, Ireland",
+      "operatingEvidence": "Visitor page gives current visiting guidance: \"The Cathedral is usually open from 08:00 until 20:00\"; asks that visitors \"do not enter during the celebration of Mass\"; suggests a €3 donation. No 2026-dated notice seen.",
+      "hours": "\"usually open from 08:00 until 20:00 - these times are approximate\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Hall of the Red Earl",
+      "kind": "landmark",
+      "url": "https://www.galwaycivictrust.ie/",
+      "sourceType": "operator's own site (Galway Civic Trust)",
+      "address": "Hall of the Red Earl Custom House, Druid Lane Galway, Ireland H91 XV2C",
+      "operatingEvidence": "Lá na Cruite (Harp Day) held at the Hall on \"Saturday 17 October 2026\"; \"Free Tours Weekly!\", \"All Tours start from Hall of the Red Earl\"; Churches of Galway tour \"every Thursday at 12.00 PM\". A one-day closure on 14 October 2026 has passed.",
+      "hours": "not published (only office phone hours shown)",
+      "confidence": "high"
+    },
+    {
+      "name": "Galway Atlantaquaria",
+      "kind": "museum",
+      "url": "https://www.nationalaquarium.ie/",
+      "sourceType": "operator's own site",
+      "address": "Seapoint Promenade, Galway, H91 T2FD, Ireland",
+      "operatingEvidence": "News posts dated October 20, 2026 (\"Celebrating Water from Molecule to Ocean for Science Week\") and October 13, 2026; online ticket sales via \"BUY TICKETS\".",
+      "hours": "\"Mon – FRI 10am-5pm\"; \"Sat – Sun 10am-6pm\"; \"Last admission 1 Hour before closing every day.\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Corrib Princess",
+      "kind": "scenic",
+      "url": "https://www.corribprincess.ie/",
+      "sourceType": "operator's own site",
+      "address": "Waterside, Woodquay, Galway (\"Our Departure Point Address\")",
+      "operatingEvidence": "\"We are open, 6 days a week closed on Mondays\"; live online booking, \"Availability for booking online opens 1 month in advance\". No 2026-dated content seen.",
+      "hours": "sailing times not published on the home page; \"closed on Mondays\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "University of Galway",
+      "kind": "landmark",
+      "url": "https://www.universityofgalway.ie/visitors/",
+      "sourceType": "official public operator (University of Galway)",
+      "address": "University of Galway, University Road, Galway, Ireland H91 TK33",
+      "operatingEvidence": "Visitors page says visitors have \"public and free access\" to campus museums, galleries and exhibition spaces; current 2026 items such as \"Autism Friendly HEI Candidate 2026-2027\".",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Leisureland",
+      "kind": "park",
+      "url": "https://www.leisureland.ie/",
+      "sourceType": "operator's own site (Galway City Council branding)",
+      "address": "Leisureland, Salthill, Galway, Ireland",
+      "operatingEvidence": "\"Open daily\"; dated session notice \"There is no public session on Sunday 25th October 2026\" (single session only, not a closure).",
+      "hours": "\"Open daily\"; pool public times not published on the home page",
+      "confidence": "medium"
+    },
+    {
+      "name": "Millennium Children's Park Playground",
+      "kind": "park",
+      "url": "https://www.galwaycity.ie/services/leisure-and-recreation/public-playgrounds",
+      "sourceType": "official public operator (Galway City Council)",
+      "address": "University Road, Galway",
+      "operatingEvidence": "Listed on the council's current public playgrounds page with hours and age range (1–12 yrs); no closure noted.",
+      "hours": "7:00am to 7:00pm daily",
+      "confidence": "medium"
+    },
+    {
+      "name": "Kennedy Park Playground",
+      "kind": "park",
+      "url": "https://www.galwaycity.ie/services/leisure-and-recreation/public-playgrounds",
+      "sourceType": "official public operator (Galway City Council)",
+      "address": "Kennedy Park, Eyre Square, Galway",
+      "operatingEvidence": "Listed on the council's current public playgrounds page, ages 1–12 yrs; no closure noted.",
+      "hours": "No restricted hours",
+      "confidence": "medium"
+    },
+    {
+      "name": "South Park Playground",
+      "kind": "park",
+      "url": "https://www.galwaycity.ie/services/leisure-and-recreation/public-playgrounds",
+      "sourceType": "official public operator (Galway City Council)",
+      "address": "Claddagh, Galway",
+      "operatingEvidence": "Listed on the council's current public playgrounds page, ages 1–12 yrs; no closure noted.",
+      "hours": "No restricted hours",
+      "confidence": "medium"
+    },
+    {
+      "name": "Claude Toft Park Playground",
+      "kind": "park",
+      "url": "https://www.galwaycity.ie/services/leisure-and-recreation/public-playgrounds",
+      "sourceType": "official public operator (Galway City Council)",
+      "address": "Quincentennial Drive, Salthill, Galway",
+      "operatingEvidence": "Listed on the council's current public playgrounds page, ages 1–12 yrs; no closure noted.",
+      "hours": "No restricted hours",
+      "confidence": "medium"
+    },
+    {
+      "name": "Quincentennial Park",
+      "kind": "park",
+      "url": "https://www.galwaycity.ie/news/2026/galway-city-council-opens-an-gairdin-siorghra-the-garden-of-eternal-love-at",
+      "sourceType": "official public operator (Galway City Council)",
+      "address": "Quincentennial Park, Salthill",
+      "operatingEvidence": "Council notice dated \"22 September 2026\" on opening An Gairdín Síorghrá, a memorial garden at the park.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Aniar",
+      "kind": "meal",
+      "url": "https://www.aniarrestaurant.ie/",
+      "sourceType": "operator's own site",
+      "address": "53 Lower Dominick Street, Galway, H91 V4DP, Ireland",
+      "operatingEvidence": "Live reservation section (\"Please call us on 091 535 947 to check for availability\"); \"Our tasting menu is an immersive dining experience of Irish food through the ages\".",
+      "hours": "\"Tues – Thurs: 17:00‑21.00\"; \"Fri & Sat: 16:30‑21.00\"; \"Sun & Mon: Closed\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Cava Bodega",
+      "kind": "meal",
+      "url": "https://www.cavarestaurant.ie/",
+      "sourceType": "operator's own site",
+      "address": "Unit 1 Middle Street Mews, Middle Street, Galway H91 AF89, Ireland",
+      "operatingEvidence": "Reservation widget and \"Please call us on 091 539884 to check for availability\"; \"The tapas menu showcases over 70 regional Spanish Tapas\".",
+      "hours": "\"Mon–Thurs: 5 pm to Close\"; \"Fri: 4 pm to Close\"; \"Sat: 3 pm to Close\"; \"Sun: 3 pm to Close\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Brasserie on the Corner",
+      "kind": "meal",
+      "url": "https://www.brasseriegalway.com/",
+      "sourceType": "operator's own site",
+      "address": "Eglinton Street, Galway, Ireland, H91 VY1F",
+      "operatingEvidence": "Current menus dated 2026 (\"BOTC-A-LA-CARTE-MENU-JUNE-2026\", \"BOTC-PRE-THEATRE-MENU-FEBRUARY-2026\"); \"Serving lunch, early bird and our popular À la carte menu\"; online reservations.",
+      "hours": "\"Open daily from 10am with last orders at 9.30pm\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Ard Bia at Nimmos",
+      "kind": "meal",
+      "url": "https://www.ardbia.com/visit",
+      "sourceType": "operator's own site",
+      "address": "Ard Bia at Nimmos, Spanish Arch, Long Walk, Galway, H91 E9XA",
+      "operatingEvidence": "Visit page publishes current service times for breakfast, lunch, dinner and weekend brunch. No 2026-dated content seen.",
+      "hours": "Breakfast \"Monday–Friday 10–12\"; Lunch \"Monday–Friday 12–3\"; Dinner \"Tuesday–Sunday 6–9\"; Weekend brunch \"Saturday–Sunday 10–3\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Sophie's at The Dean",
+      "kind": "meal",
+      "url": "https://thedeanhotels.com/galway",
+      "sourceType": "operator's own site (The Dean Galway)",
+      "address": "80 Prospect Hill, Galway, H91 T9C4",
+      "operatingEvidence": "Hotel page describes Sophie's serving \"breakfast, lunch, and dinner\" with \"panoramic views\"; articles dated May 3, 2026 and Jan 12, 2026; \"© The Dean 2026\".",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Hardiman",
+      "kind": "bar",
+      "url": "https://www.thehardiman.ie/",
+      "sourceType": "operator's own site",
+      "address": "The Hardiman, Eyre Square, Galway, H91 NFD2, Ireland",
+      "operatingEvidence": "\"Galway's Festival Calendar 2026\" and a 2026 Christmas price list; The Oyster Room \"served for dinner 5–9pm, Monday to Saturday\"; Oyster Bar serves \"cocktails\"; Afternoon Tea in The Parlour Lounge.",
+      "hours": "Oyster Room dinner \"5–9pm, Monday to Saturday\"; Oyster Bar \"Open daily from 7.30am\"; MacNeill's Pub \"open seven days from noon\"",
+      "confidence": "high"
+    },
+    {
+      "name": "The Dáil Bar",
+      "kind": "bar",
+      "url": "https://www.thedailbar.com/",
+      "sourceType": "operator's own site",
+      "address": "42-44 Middle Street, Galway (\"at the corner of Cross Street and Middle Street\")",
+      "operatingEvidence": "Page timestamp 2026-10-09; live music \"every night from 9:30 PM\"; bar food daily from 12 pm, \"No reservation needed\"; upstairs Liquor Lounge named \"COCKTAIL BAR OF THE YEAR 2025\".",
+      "hours": "not published (\"LATE BAR\" seven nights; food from 12pm)",
+      "confidence": "high"
+    },
+    {
+      "name": "Tigh Neachtain",
+      "kind": "bar",
+      "url": "https://www.tighneachtain.com/",
+      "sourceType": "operator's own site",
+      "address": "17 Cross Street, Galway, Ireland",
+      "operatingEvidence": "Current hours and lunch service: \"We serve a lunch menu and light bites, with all food locally sourced\". No 2026-dated content seen.",
+      "hours": "\"Monday - Saturday\" 11am - 12am; \"Sunday\" 12pm-12am (a second list shows Fri–Sat to 1am, Sunday from 12:30pm); lunch 12pm - 4pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "O'Connor's Bar (Salthill)",
+      "kind": "bar",
+      "url": "https://www.oconnorsbar.com/",
+      "sourceType": "operator's own site",
+      "address": "O'Connors Bar, Salthill, Galway, Ireland. H91 W4C6",
+      "operatingEvidence": "Weekly music schedule: \"Mon- Traditional Irish Music @8.30pm ~ 10.30pm\" through \"Fri - Traditional Irish Music ~ @7.30pm\", live music Saturday and Sunday. No 2026-dated content seen.",
+      "hours": "\"We Open @ 7.30pm\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Urban Grind",
+      "kind": "cafe",
+      "url": "https://www.urbangrind.ie/",
+      "sourceType": "operator's own site",
+      "address": "8, William St West, Galway, H91 YA6X, Ireland",
+      "operatingEvidence": "Brunch served seven days until 3pm; sells specialty coffee beans from guest roasters; \"UG+Spring+2026\" image on the current site.",
+      "hours": "\"MONDAY-FRIDAY: 8-4\"; \"SATURDAY-SUNDAY: 9-4\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Gourmet Tart Co. (Lower Abbeygate Street)",
+      "kind": "bakery",
+      "url": "https://www.gourmettartco.com/locations/",
+      "sourceType": "operator's own site",
+      "address": "7 Lower Abbeygate Street, Galway City",
+      "operatingEvidence": "Family-run bakery selling \"fresh bakes, cakes, and savoury meals\"; footer \"© Gourmet Tart Co | Galway 2026\"; Christmas 2026 hamper pre-orders.",
+      "hours": "Monday to Saturday 7:00am to 7:00pm; Sunday listed as \"12.00 am – 5.00 pm\" (likely a typo)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Gourmet Tart Co. (Salthill)",
+      "kind": "bakery",
+      "url": "https://www.gourmettartco.com/locations/",
+      "sourceType": "operator's own site",
+      "address": "Jameson Court (opposite Salthill Church), Salthill Upper, Galway",
+      "operatingEvidence": "Branch listed with current hours; footer \"© Gourmet Tart Co | Galway 2026\"; Christmas 2026 hamper pre-orders.",
+      "hours": "Every day 7:00am to 7:00pm",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Latin Quarter",
+      "reason": "district with no operator website; not checkable under the official-source rule",
+      "url": ""
+    },
+    {
+      "name": "Salthill Promenade",
+      "reason": "public promenade with no operator page found; not checkable under the official-source rule",
+      "url": ""
+    },
+    {
+      "name": "Claddagh",
+      "reason": "neighbourhood with no operator website; covered instead by South Park Playground (Claddagh) and the museum's Claddagh exhibition",
+      "url": ""
+    },
+    {
+      "name": "Cliffs of Moher route",
+      "reason": "official site (cliffsofmoher.ie) shows hours (\"Open Daily, 8am – 7pm\") but publishes no exact address, only \"Liscannor, Ireland\"; also a day trip outside Galway",
+      "url": "https://www.cliffsofmoher.ie/"
+    },
+    {
+      "name": "Trad music night",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Salthill sunset",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Remaining input entries (e.g. \"a seafood dinner\", \"Galway market or cafe\", \"A cafe near Salthill\", \"Private guide for Latin Quarter\" and all other descriptive phrases)",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "McDonagh's",
+      "reason": "official site appears unmaintained (latest content February 2017, footer \"@2017\"); no current operating evidence",
+      "url": "https://www.mcdonaghs.net/"
+    },
+    {
+      "name": "The Crane Bar",
+      "reason": "fetch failed: self-signed certificate error; not bypassed",
+      "url": "https://www.thecranebar.com/"
+    },
+    {
+      "name": "The King's Head",
+      "reason": "HTTP 429 Too Many Requests on repeated attempts",
+      "url": "https://www.thekingshead.ie/"
+    },
+    {
+      "name": "Coffeewerk + Press",
+      "reason": "HTTP 429 Too Many Requests on repeated attempts",
+      "url": "https://www.coffeewerkandpress.com/"
+    },
+    {
+      "name": "Sheridans Cheesemongers (Galway)",
+      "reason": "HTTP 429 Too Many Requests on repeated attempts",
+      "url": "https://www.sheridanscheesemongers.com/"
+    },
+    {
+      "name": "McCambridge's",
+      "reason": "HTTP 429 Too Many Requests on repeated attempts",
+      "url": "https://www.mccambridges.com/"
+    },
+    {
+      "name": "Rúibín",
+      "reason": "HTTP 429 Too Many Requests on repeated attempts",
+      "url": "https://www.ruibin.ie/"
+    },
+    {
+      "name": "Monroe's Tavern",
+      "reason": "HTTP 429 Too Many Requests",
+      "url": "https://www.monroes.ie/"
+    },
+    {
+      "name": "The Dough Bros",
+      "reason": "HTTP 429 Too Many Requests",
+      "url": "https://www.thedoughbros.ie/"
+    },
+    {
+      "name": "Hazel Mountain Chocolate",
+      "reason": "HTTP 429 Too Many Requests",
+      "url": "https://www.hazelmountainchocolate.com/"
+    },
+    {
+      "name": "Griffin's Bakery",
+      "reason": "HTTP 403 Forbidden",
+      "url": "https://www.griffinsbakery.com/"
+    },
+    {
+      "name": "Dela",
+      "reason": "HTTP 403 Forbidden",
+      "url": "https://www.dela.ie/"
+    },
+    {
+      "name": "Town Hall Theatre",
+      "reason": "HTTP 403 Forbidden",
+      "url": "https://www.tht.ie/"
+    },
+    {
+      "name": "Tartare",
+      "reason": "HTTP 403 Forbidden",
+      "url": "https://www.tartaregalway.ie/"
+    },
+    {
+      "name": "Hyde Bar",
+      "reason": "HTTP 503 Service Unavailable",
+      "url": "https://www.hydebargalway.ie/"
+    },
+    {
+      "name": "Cupán Tae",
+      "reason": "fetch failed: SSL handshake failure; not bypassed",
+      "url": "https://www.cupantae.eu/"
+    },
+    {
+      "name": "Plámás (Geometry Coffee)",
+      "reason": "fetch failed: SSL error (unrecognized name); not bypassed",
+      "url": "https://geometrycoffee.com/"
+    },
+    {
+      "name": "Galway Bay Hotel",
+      "reason": "fetch failed: connection refused",
+      "url": "https://www.galwaybayhotel.com/"
+    },
+    {
+      "name": "Galway Market",
+      "reason": "fetch failed: DNS lookup error; no official page read",
+      "url": "https://www.galwaymarket.ie/"
+    },
+    {
+      "name": "Kai",
+      "reason": "official URL tried returned HTTP 404; no current page found (not evidence of closure)",
+      "url": "https://www.kaicaferestaurant.com/"
+    },
+    {
+      "name": "Oscar's Seafood Bistro",
+      "reason": "domain now hosts unrelated bingo content; no official page found (not evidence of closure)",
+      "url": "https://www.oscarsbistro.ie/"
+    },
+    {
+      "name": "Hotel Meyrick",
+      "reason": "domain now hosts unrelated casino content; no official page found",
+      "url": "https://www.hotelmeyrick.ie/"
+    },
+    {
+      "name": "Loam",
+      "reason": "domain redirects to an unrelated German car dealer; no official page found",
+      "url": "https://www.loamgalway.com/"
+    },
+    {
+      "name": "Merlin Woods",
+      "reason": "council page publishes no exact address and says main footpaths are closed from September to mid-December 2026 for restoration works",
+      "url": "https://www.galwaycity.ie/services/leisure-and-recreation/leisure-and-recreation-services/merlin-woods-restoration"
+    },
+    {
+      "name": "Druid Theatre",
+      "reason": "only listed 2026 production is in Toronto (November 2026); no current Galway performance and no full venue address",
+      "url": "https://www.druid.ie/"
+    },
+    {
+      "name": "The House Hotel",
+      "reason": "café bar not named and no hours published; no clear current food or drink evidence",
+      "url": "https://www.thehousehotel.ie/"
+    },
+    {
+      "name": "The g Hotel / The Quays / Hooked / Sonny Molloy's / The Front Door / Taaffes / Biteclub",
+      "reason": "guessed official domains did not resolve (DNS not found); no official page read",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Galway City Museum",
+        "St Nicholas' Collegiate Church",
+        "Galway Cathedral",
+        "Hall of the Red Earl"
+      ],
+      "bestFirstTimers": [
+        "Galway City Museum",
+        "St Nicholas' Collegiate Church",
+        "Corrib Princess",
+        "The Dáil Bar"
+      ],
+      "bestRestaurants": [
+        "Aniar",
+        "Ard Bia at Nimmos",
+        "Brasserie on the Corner",
+        "Cava Bodega"
+      ],
+      "bestBudget": [
+        "Galway City Museum",
+        "Hall of the Red Earl",
+        "University of Galway",
+        "Gourmet Tart Co. (Lower Abbeygate Street)"
+      ],
+      "bestLuxury": [
+        "Aniar",
+        "The Hardiman",
+        "Sophie's at The Dean"
+      ],
+      "bestCouples": [
+        "Corrib Princess",
+        "Cava Bodega",
+        "Ard Bia at Nimmos",
+        "Sophie's at The Dean"
+      ],
+      "bestKids": [
+        "Galway Atlantaquaria",
+        "Leisureland",
+        "Millennium Children's Park Playground",
+        "Kennedy Park Playground"
+      ],
+      "bestSolo": [
+        "Galway City Museum",
+        "Urban Grind",
+        "Tigh Neachtain",
+        "University of Galway"
+      ],
+      "bestUnique": [
+        "Hall of the Red Earl",
+        "Corrib Princess",
+        "O'Connor's Bar (Salthill)",
+        "Quincentennial Park"
+      ],
+      "bestBreakfast": [
+        "Urban Grind",
+        "Ard Bia at Nimmos",
+        "Gourmet Tart Co. (Salthill)",
+        "The Hardiman"
+      ],
+      "bestLunch": [
+        "Brasserie on the Corner",
+        "Tigh Neachtain",
+        "The Dáil Bar",
+        "Ard Bia at Nimmos"
+      ],
+      "bestDinner": [
+        "Aniar",
+        "Cava Bodega",
+        "Brasserie on the Corner",
+        "The Hardiman"
+      ],
+      "bestCocktails": [
+        "The Dáil Bar",
+        "The Hardiman",
+        "Brasserie on the Corner"
+      ],
+      "bestBakeries": [
+        "Gourmet Tart Co. (Lower Abbeygate Street)",
+        "Gourmet Tart Co. (Salthill)"
+      ],
+      "bestCoffee": [
+        "Urban Grind",
+        "The Hardiman",
+        "Gourmet Tart Co. (Lower Abbeygate Street)"
+      ]
+    },
+    "queries": {
+      "Galway City Museum": "Galway City Museum Spanish Parade Galway",
+      "St Nicholas' Collegiate Church": "St Nicholas' Collegiate Church Lombard Street Galway",
+      "Galway Cathedral": "Galway Cathedral H91 A780 Galway",
+      "Hall of the Red Earl": "Hall of the Red Earl Druid Lane Galway",
+      "Galway Atlantaquaria": "Galway Atlantaquaria Seapoint Promenade Salthill Galway",
+      "Corrib Princess": "Corrib Princess Waterside Woodquay Galway",
+      "University of Galway": "University of Galway University Road Galway",
+      "Leisureland": "Leisureland Salthill Galway",
+      "Millennium Children's Park Playground": "Millennium Children's Park Playground University Road Galway",
+      "Kennedy Park Playground": "Kennedy Park Playground Eyre Square Galway",
+      "South Park Playground": "South Park Playground Claddagh Galway",
+      "Claude Toft Park Playground": "Claude Toft Park Playground Quincentennial Drive Salthill Galway",
+      "Quincentennial Park": "Quincentennial Park Salthill Galway",
+      "Aniar": "Aniar 53 Lower Dominick Street Galway",
+      "Cava Bodega": "Cava Bodega Middle Street Mews Galway",
+      "Brasserie on the Corner": "Brasserie on the Corner Eglinton Street Galway",
+      "Ard Bia at Nimmos": "Ard Bia at Nimmos Spanish Arch Long Walk Galway",
+      "Sophie's at The Dean": "The Dean 80 Prospect Hill Galway",
+      "The Hardiman": "The Hardiman Eyre Square Galway",
+      "The Dáil Bar": "The Dáil Bar 42-44 Middle Street Galway",
+      "Tigh Neachtain": "Tigh Neachtain 17 Cross Street Galway",
+      "O'Connor's Bar (Salthill)": "O'Connor's Bar Salthill Galway",
+      "Urban Grind": "Urban Grind 8 William Street West Galway",
+      "Gourmet Tart Co. (Lower Abbeygate Street)": "Gourmet Tart Co 7 Lower Abbeygate Street Galway",
+      "Gourmet Tart Co. (Salthill)": "Gourmet Tart Co Jameson Court Salthill Upper Galway"
+    },
+    "summary": "Museums, churches, a river cruise and family stops in Galway, with breakfast cafés, bakeries, dinners and music bars checked against their own websites.",
+    "highlights": [
+      "Galway City Museum",
+      "St Nicholas' Collegiate Church",
+      "Galway Cathedral",
+      "Hall of the Red Earl"
+    ],
+    "tip": "Galway City Museum is closed on Mondays and the Corrib Princess does not sail on Mondays, so save Monday for St Nicholas' Collegiate Church, Galway Cathedral and the Atlantaquaria, which all publish Monday opening.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mondays matter",
+        "copy": "Galway City Museum opens Tuesday to Saturday, and the Corrib Princess is closed on Mondays. Aniar is closed on Sunday and Monday, and Ard Bia at Nimmos serves dinner Tuesday to Sunday."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Free entry, timed cruises",
+        "copy": "Galway City Museum is free with no booking required, and the Galway Civic Trust's free weekly tours from the Hall of the Red Earl recommend booking. Corrib Princess online booking opens one month in advance."
+      },
+      {
+        "label": "Walk-ins",
+        "value": "Call ahead for tables",
+        "copy": "The Dáil Bar serves bar food from 12pm with no reservation needed. Aniar and Cava Bodega ask you to phone to check availability."
+      },
+      {
+        "label": "Visitor rules",
+        "value": "Mass and last entry",
+        "copy": "Galway Cathedral asks visitors not to enter during Mass unless taking part and suggests a €3 donation. St Nicholas' Collegiate Church has last entry 30 minutes before closing, and the Atlantaquaria's last admission is one hour before closing."
+      }
+    ],
+    "dek": "Anchor your days on the free museum and medieval church in the old centre, then book dinner around Monday and Sunday closures.",
+    "intro": [
+      "Galway's old centre is compact, and several of its main sights cost nothing to enter. Galway City Museum on Spanish Parade charges no admission and needs no booking; it opens Tuesday to Saturday from 10am to 5pm, adds Sunday afternoons from Easter to mid-September, and its galleries close at 4:45pm. Current displays include The Claddagh, A Triumph of Unconscious Beauty and Revolution in Galway, 1913 - 1923. A short walk away on Lombard Street, St Nicholas' Collegiate Church opens every day, from 11am on Wednesdays and 1pm on Sundays, with last entry 30 minutes before closing.",
+      "For a guided start, the Galway Civic Trust runs free weekly tours from the Hall of the Red Earl on Druid Lane; booking is not required but is recommended, and its Churches of Galway tour runs every Thursday at 12pm. Galway Cathedral is usually open from 8am to 8pm, asks you not to enter during Mass unless you are taking part, and suggests a €3 donation. On the river, the Corrib Princess leaves from Waterside, Woodquay, for 90-minute guided trips; it does not sail on Mondays, and online booking opens one month in advance.",
+      "Plan dinners around closing days. Aniar on Lower Dominick Street serves a tasting menu from Tuesday to Saturday and is closed on Sunday and Monday, while Ard Bia at Nimmos beside the Spanish Arch serves dinner Tuesday to Sunday and weekend brunch from 10am to 3pm. Brasserie on the Corner on Eglinton Street opens daily from 10am with last orders at 9.30pm, and Cava Bodega on Middle Street, with more than 70 Spanish tapas, asks you to phone to check availability. For breakfast, Urban Grind on William Street West serves brunch seven days a week until 3pm.",
+      "Evenings bring live music. The Dáil Bar on Middle Street has music every night from 9:30pm and serves bar food from 12pm with no reservation needed, and O'Connor's Bar in Salthill lists traditional Irish music Monday to Friday. Tigh Neachtain on Cross Street serves lunch from 12pm to 4pm. With children, Galway Atlantaquaria on Seapoint Promenade opens daily, with last admission an hour before closing, and the council's Millennium Children's Park Playground on University Road is open from 7am to 7pm daily for ages 1 to 12."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair the free Galway City Museum on Spanish Parade with St Nicholas' Collegiate Church on Lombard Street, then take a Corrib Princess trip from Woodquay on any day except Monday."
+      ],
+      [
+        "A slower morning",
+        "Start with brunch at Urban Grind on William Street West or a pastry at Gourmet Tart Co. on Lower Abbeygate Street, which opens at 7am Monday to Saturday."
+      ],
+      [
+        "Before booking",
+        "Aniar is closed on Sunday and Monday and takes bookings by phone, and Corrib Princess online booking opens only one month ahead."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several well-known Galway venues could not be read: The King's Head, Coffeewerk + Press, Sheridans Cheesemongers, McCambridge's, Rúibín, Monroe's, The Dough Bros and Hazel Mountain Chocolate returned rate-limit errors; Griffin's Bakery, Dela, Tartare and the Town Hall Theatre refused automated reading; The Crane Bar, Cupán Tae and Geometry Coffee failed on certificate errors; none of these failures is evidence of closure. Public areas such as the Latin Quarter and Salthill Promenade have no operator page and were not checked. Hours were not published for the Hall of the Red Earl, Sophie's at The Dean, Quincentennial Park and the University of Galway, Corrib Princess sailing times were not on its home page, Galway Cathedral's hours are described as approximate, and Gourmet Tart Co.'s Abbeygate Street Sunday hours appear to contain a typo. Galway City Council posted storm reopening notices on 25 and 27 October 2026 without naming the locations, so check outdoor sites on the day. Several confirmations (Ard Bia, Corrib Princess, Tigh Neachtain, O'Connor's Bar, Cava Bodega) rest on published hours or booking tools rather than dated 2026 content.",
+  "injectionLikeText": [],
+  "injectionLikeTextIgnored": [
+    "Galway Atlantaquaria (nationalaquarium.ie): \"The Aquarium is not responsible for information from 3rd Party Websites or AI generated responses.\" (a disclaimer that mentions AI; not an instruction, ignored)"
+  ]
+}

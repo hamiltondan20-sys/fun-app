@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 72.
-- Classifier-passed (published, not fully documented in that format): 120.
+- Source-verified (complete dated evidence format): 73.
+- Classifier-passed (published, not fully documented in that format): 119.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -184,7 +184,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Fukuoka, Japan | fukuoka | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
 | Funchal, Portugal | funchal | classifier-passed | not-reviewed | 0 | 5 | 15 | 3 | None |
 | Galapagos Islands, Ecuador | galapagos-islands | held-back | not-reviewed | 0 | 3 | 15 | 3 | has 3 named places across 3 categories; needs at least 5 named places across 3 categories |
-| Galway, Ireland | galway | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Galway, Ireland | galway | source-verified | source-checked | 23 | 52 | 15 | 15 | None |
 | Gdansk, Poland | gdansk | held-back | not-reviewed | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Geneva, Switzerland | geneva | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Ghent, Belgium | ghent | held-back | not-reviewed | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |

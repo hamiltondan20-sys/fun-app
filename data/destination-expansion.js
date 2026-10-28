@@ -7436,4 +7436,108 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 23 distinct recommendations in this guide were checked against their operators' own websites on October 27, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Galway, Ireland: source review of 2026-10-27 (docs/content-research/galway-2026-10-27.md).
+  {
+    const cityKey = "Galway, Ireland";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Galway City Museum","St Nicholas' Collegiate Church","Galway Cathedral","Hall of the Red Earl"],
+      bestFirstTimers: ["Galway City Museum","St Nicholas' Collegiate Church","Corrib Princess","The Dáil Bar"],
+      bestRestaurants: ["Aniar","Ard Bia at Nimmos","Brasserie on the Corner","Cava Bodega"],
+      bestBudget: ["Galway City Museum","Hall of the Red Earl","University of Galway","Gourmet Tart Co. (Lower Abbeygate Street)"],
+      bestLuxury: ["Aniar","The Hardiman","Sophie's at The Dean"],
+      bestCouples: ["Corrib Princess","Cava Bodega","Ard Bia at Nimmos","Sophie's at The Dean"],
+      bestKids: ["Galway Atlantaquaria","Leisureland","Millennium Children's Park Playground","Kennedy Park Playground"],
+      bestSolo: ["Galway City Museum","Urban Grind","Tigh Neachtain","University of Galway"],
+      bestUnique: ["Hall of the Red Earl","Corrib Princess","O'Connor's Bar (Salthill)","Quincentennial Park"],
+      bestBreakfast: ["Urban Grind","Ard Bia at Nimmos","Gourmet Tart Co. (Salthill)","The Hardiman"],
+      bestLunch: ["Brasserie on the Corner","Tigh Neachtain","The Dáil Bar","Ard Bia at Nimmos"],
+      bestDinner: ["Aniar","Cava Bodega","Brasserie on the Corner","The Hardiman"],
+      bestCocktails: ["The Dáil Bar","The Hardiman","Brasserie on the Corner"],
+      bestBakeries: ["Gourmet Tart Co. (Lower Abbeygate Street)","Gourmet Tart Co. (Salthill)"],
+      bestCoffee: ["Urban Grind","The Hardiman","Gourmet Tart Co. (Lower Abbeygate Street)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Galway City Museum": "Galway City Museum Spanish Parade Galway",
+      "St Nicholas' Collegiate Church": "St Nicholas' Collegiate Church Lombard Street Galway",
+      "Galway Cathedral": "Galway Cathedral H91 A780 Galway",
+      "Hall of the Red Earl": "Hall of the Red Earl Druid Lane Galway",
+      "Corrib Princess": "Corrib Princess Waterside Woodquay Galway",
+      "The Dáil Bar": "The Dáil Bar 42-44 Middle Street Galway",
+      "Aniar": "Aniar 53 Lower Dominick Street Galway",
+      "Ard Bia at Nimmos": "Ard Bia at Nimmos Spanish Arch Long Walk Galway",
+      "Brasserie on the Corner": "Brasserie on the Corner Eglinton Street Galway",
+      "Cava Bodega": "Cava Bodega Middle Street Mews Galway",
+      "University of Galway": "University of Galway University Road Galway",
+      "Gourmet Tart Co. (Lower Abbeygate Street)": "Gourmet Tart Co 7 Lower Abbeygate Street Galway",
+      "The Hardiman": "The Hardiman Eyre Square Galway",
+      "Sophie's at The Dean": "The Dean 80 Prospect Hill Galway",
+      "Galway Atlantaquaria": "Galway Atlantaquaria Seapoint Promenade Salthill Galway",
+      "Leisureland": "Leisureland Salthill Galway",
+      "Millennium Children's Park Playground": "Millennium Children's Park Playground University Road Galway",
+      "Kennedy Park Playground": "Kennedy Park Playground Eyre Square Galway",
+      "Urban Grind": "Urban Grind 8 William Street West Galway",
+      "Tigh Neachtain": "Tigh Neachtain 17 Cross Street Galway",
+      "O'Connor's Bar (Salthill)": "O'Connor's Bar Salthill Galway",
+      "Quincentennial Park": "Quincentennial Park Salthill Galway",
+      "Gourmet Tart Co. (Salthill)": "Gourmet Tart Co Jameson Court Salthill Upper Galway"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Galway" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Museums, churches, a river cruise and family stops in Galway, with breakfast cafés, bakeries, dinners and music bars checked against their own websites.";
+    cityGuide.highlights = ["Galway City Museum","St Nicholas' Collegiate Church","Galway Cathedral","Hall of the Red Earl"];
+    cityGuide.tip = "Galway City Museum is closed on Mondays and the Corrib Princess does not sail on Mondays, so save Monday for St Nicholas' Collegiate Church, Galway Cathedral and the Atlantaquaria, which all publish Monday opening.";
+    data.destinationFacts[cityKey] = "Galway City Museum is closed on Mondays and the Corrib Princess does not sail on Mondays, so save Monday for St Nicholas' Collegiate Church, Galway Cathedral and the Atlantaquaria, which all publish Monday opening.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Museums, churches, a river cruise and family stops in Galway, with breakfast cafés, bakeries, dinners and music bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays matter",
+        "copy": "Galway City Museum opens Tuesday to Saturday, and the Corrib Princess is closed on Mondays. Aniar is closed on Sunday and Monday, and Ard Bia at Nimmos serves dinner Tuesday to Sunday."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Free entry, timed cruises",
+        "copy": "Galway City Museum is free with no booking required, and the Galway Civic Trust's free weekly tours from the Hall of the Red Earl recommend booking. Corrib Princess online booking opens one month in advance."
+      },
+      {
+        "label": "Walk-ins",
+        "value": "Call ahead for tables",
+        "copy": "The Dáil Bar serves bar food from 12pm with no reservation needed. Aniar and Cava Bodega ask you to phone to check availability."
+      },
+      {
+        "label": "Visitor rules",
+        "value": "Mass and last entry",
+        "copy": "Galway Cathedral asks visitors not to enter during Mass unless taking part and suggests a €3 donation. St Nicholas' Collegiate Church has last entry 30 minutes before closing, and the Atlantaquaria's last admission is one hour before closing."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Anchor your days on the free museum and medieval church in the old centre, then book dinner around Monday and Sunday closures.",
+      intro: [
+        "Galway's old centre is compact, and several of its main sights cost nothing to enter. Galway City Museum on Spanish Parade charges no admission and needs no booking; it opens Tuesday to Saturday from 10am to 5pm, adds Sunday afternoons from Easter to mid-September, and its galleries close at 4:45pm. Current displays include The Claddagh, A Triumph of Unconscious Beauty and Revolution in Galway, 1913 - 1923. A short walk away on Lombard Street, St Nicholas' Collegiate Church opens every day, from 11am on Wednesdays and 1pm on Sundays, with last entry 30 minutes before closing.",
+        "For a guided start, the Galway Civic Trust runs free weekly tours from the Hall of the Red Earl on Druid Lane; booking is not required but is recommended, and its Churches of Galway tour runs every Thursday at 12pm. Galway Cathedral is usually open from 8am to 8pm, asks you not to enter during Mass unless you are taking part, and suggests a €3 donation. On the river, the Corrib Princess leaves from Waterside, Woodquay, for 90-minute guided trips; it does not sail on Mondays, and online booking opens one month in advance.",
+        "Plan dinners around closing days. Aniar on Lower Dominick Street serves a tasting menu from Tuesday to Saturday and is closed on Sunday and Monday, while Ard Bia at Nimmos beside the Spanish Arch serves dinner Tuesday to Sunday and weekend brunch from 10am to 3pm. Brasserie on the Corner on Eglinton Street opens daily from 10am with last orders at 9.30pm, and Cava Bodega on Middle Street, with more than 70 Spanish tapas, asks you to phone to check availability. For breakfast, Urban Grind on William Street West serves brunch seven days a week until 3pm.",
+        "Evenings bring live music. The Dáil Bar on Middle Street has music every night from 9:30pm and serves bar food from 12pm with no reservation needed, and O'Connor's Bar in Salthill lists traditional Irish music Monday to Friday. Tigh Neachtain on Cross Street serves lunch from 12pm to 4pm. With children, Galway Atlantaquaria on Seapoint Promenade opens daily, with last admission an hour before closing, and the council's Millennium Children's Park Playground on University Road is open from 7am to 7pm daily for ages 1 to 12."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair the free Galway City Museum on Spanish Parade with St Nicholas' Collegiate Church on Lombard Street, then take a Corrib Princess trip from Woodquay on any day except Monday."
+        ],
+        [
+          "A slower morning",
+          "Start with brunch at Urban Grind on William Street West or a pastry at Gourmet Tart Co. on Lower Abbeygate Street, which opens at 7am Monday to Saturday."
+        ],
+        [
+          "Before booking",
+          "Aniar is closed on Sunday and Monday and takes bookings by phone, and Corrib Princess online booking opens only one month ahead."
+        ]
+      ],
+      trust: "All 23 distinct recommendations in this guide were checked against their operators' own websites on October 27, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();
