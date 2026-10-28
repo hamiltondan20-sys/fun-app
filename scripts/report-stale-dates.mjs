@@ -28,7 +28,8 @@ function dateOf(day, monthName, year) {
   // this year and let dates far in the past roll forward.
   let resolved = Number(year) || today.getUTCFullYear();
   let date = new Date(Date.UTC(resolved, index, Number(day)));
-  if (!year && date < new Date(today.getTime() - 180 * 86400000)) date = new Date(Date.UTC(resolved + 1, index, Number(day)));
+  // A yearless date well in the past is next year's: "October 15 to May 15" ends next May.
+  if (!year && date < new Date(today.getTime() - 60 * 86400000)) date = new Date(Date.UTC(resolved + 1, index, Number(day)));
   return date;
 }
 
@@ -43,9 +44,13 @@ lines.forEach((line, index) => {
   if (!city || /^\s*\/\//.test(line) || /^\s*trust:/.test(line)) return;
   for (const sentence of line.split(/(?<=[.!?])\s+|",\s*"/)) {
     // A sentence counts by its latest date, so "from 20 September to 31 January" is current until 31 January.
-    const dates = patterns.flatMap((pattern) => [...sentence.matchAll(pattern)].map((match) => (pattern === patterns[0]
-      ? dateOf(match[2] || match[1], match[3], match[4])
-      : dateOf(match[3] || match[2], match[1], match[4]))));
+    // A lone start date ("from 18 October", "opened on 22 October") describes a change that is still in force.
+    const ongoing = /\b(from|since|opened(?: on)?|reopened(?: on)?|have been|has been|were read on|was read on)\s*$/i;
+    const dates = patterns.flatMap((pattern) => [...sentence.matchAll(pattern)]
+      .filter((match) => !ongoing.test(sentence.slice(0, match.index)) || /\b(to|until|till|through)\b/i.test(sentence.slice(match.index)))
+      .map((match) => (pattern === patterns[0]
+        ? dateOf(match[2] || match[1], match[3], match[4])
+        : dateOf(match[3] || match[2], match[1], match[4]))));
     if (!dates.length) continue;
     const latest = new Date(Math.max(...dates));
     // "since" dates describe something already in place.
