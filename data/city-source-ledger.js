@@ -5,6 +5,753 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Phuket, Thailand": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-11-01",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and show details do not guarantee availability. Hours for Raya, Graph Phuket and Crème Café come from undated pages, and no hours were published for Andamanda Phuket, Laguna Park, Mom Tri's Kitchen, Ta Khai, Talung Thai, Reflections Rooftop Bar or the Kata Rocks venues. Siam Niramit's schedule labels were partly unclear in the fetched text, so only the Tuesday closure and 80-minute show length are used. Several sites could not be read: Phuket FantaSea (403), Café del Mar Phuket (522), Aquaria Phuket (certificate error), Carnival Magic and Bartels (no readable content), The Boathouse and Blue Tree Phuket (connection failures), plus several domains that no longer resolve. Big Buddha, Campus Coffee Roasters and One Chun publish only on social media, the Phuket Elephant Sanctuary gives no exact address, and no independent bakery with a readable official site was found, so the bakery list relies on KR Hangout's pastries. A first read of flyinghanuman.com reported text addressed to an AI, but a second read found none, so it is not listed as injection-like text.",
+    "sourceUrls": [
+      "docs/content-research/phuket-2026-11-01.md",
+      "docs/content-research/phuket-2026-11-01.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Old Phuket Town",
+        "checkedOn": "2026-11-01",
+        "reason": "district rather than a single operated place; no operator website to check"
+      },
+      {
+        "name": "Kata Beach",
+        "checkedOn": "2026-11-01",
+        "reason": "public beach with no operator website to check"
+      },
+      {
+        "name": "Phi Phi Islands (Hat Noppharat Thara–Mu Ko Phi Phi National Park)",
+        "url": "https://portal.dnp.go.th/Content/nationalpark?contentId=35169",
+        "checkedOn": "2026-11-01",
+        "reason": "official DNP page gives only the park office address in Krabi and no current dated content or visitor hours; not confirmed as a Phuket listing"
+      },
+      {
+        "name": "Phuket FantaSea",
+        "url": "https://www.phuket-fantasea.com/en/",
+        "checkedOn": "2026-11-01",
+        "reason": "homepage returned only a title; /en/ page returned HTTP 403 Forbidden"
+      },
+      {
+        "name": "Carnival Magic",
+        "url": "https://www.carnivalmagic.fun/",
+        "checkedOn": "2026-11-01",
+        "reason": "page returned only a title, no readable content"
+      },
+      {
+        "name": "Café del Mar Phuket",
+        "url": "https://www.cafedelmarphuket.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "HTTP 522 on two attempts"
+      },
+      {
+        "name": "Big Buddha Phuket",
+        "url": "https://www.mingmongkolphuket.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "official domain redirects to a Facebook page (social media not accepted as evidence)"
+      },
+      {
+        "name": "Aquaria Phuket",
+        "url": "https://www.aquariaphuket.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "TLS/certificate error (TLSV1_ALERT_INTERNAL_ERROR)"
+      },
+      {
+        "name": "Phuket Trickeye Museum",
+        "url": "https://www.phukettrickeyemuseum.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "redirects to phuket3dmuseum.com, which does not resolve"
+      },
+      {
+        "name": "The Boathouse (Kata)",
+        "url": "https://www.boathousephuket.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "connection refused on two attempts"
+      },
+      {
+        "name": "Tu Kab Khao",
+        "url": "https://www.tukabkhao.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "domain is a parked page (no restaurant content)"
+      },
+      {
+        "name": "Phuket Thaihua Museum",
+        "url": "https://www.thaihuamuseum.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "thaihuamuseum.com carries unrelated gambling content; no official site found"
+      },
+      {
+        "name": "Phuket Elephant Sanctuary",
+        "url": "https://www.phuketelephantsanctuary.org/faq",
+        "checkedOn": "2026-11-01",
+        "reason": "official site gives no exact address (only 'Paklok, northeast Phuket' and a map link)"
+      },
+      {
+        "name": "Baba Nest (Sri Panwa)",
+        "url": "https://www.sripanwa.com/baba-nest",
+        "checkedOn": "2026-11-01",
+        "reason": "homepage gives no street address and no 2026 content; Baba Nest page returned no readable content"
+      },
+      {
+        "name": "Roy'd",
+        "url": "https://www.roydphuket.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "domain does not resolve (DNS failure)"
+      },
+      {
+        "name": "Bampot",
+        "url": "https://www.bampot.co/",
+        "checkedOn": "2026-11-01",
+        "reason": "domain does not resolve (DNS failure)"
+      },
+      {
+        "name": "Black Ginger",
+        "url": "https://www.blackgingerphuket.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "domain does not resolve (DNS failure)"
+      },
+      {
+        "name": "Tunk-ka Cafe (Khao Rang)",
+        "url": "https://www.tunkkacafe.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "domain does not resolve (DNS failure)"
+      },
+      {
+        "name": "Hanuman World",
+        "url": "https://www.hanumanworld.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "domain redirects to a domain-sale page"
+      },
+      {
+        "name": "Phuket Simon Cabaret",
+        "url": "https://www.phuket-simoncabaret.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "domain redirects to an unrelated vape retailer; no official site found"
+      },
+      {
+        "name": "Phuket Aquarium",
+        "url": "https://www.phuketaquarium.org/",
+        "checkedOn": "2026-11-01",
+        "reason": "phuketaquarium.org does not resolve; no other official page found"
+      },
+      {
+        "name": "Phuket Botanic Garden",
+        "url": "https://www.phuketbotanicgarden.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "page returned no readable content"
+      },
+      {
+        "name": "Gibbon Rehabilitation Project",
+        "url": "https://www.gibbonproject.org/",
+        "checkedOn": "2026-11-01",
+        "reason": "no address or visiting hours on page; latest date © 2020"
+      },
+      {
+        "name": "Soi Dog Foundation visitor tours",
+        "url": "https://www.soidog.org/visit-us",
+        "checkedOn": "2026-11-01",
+        "reason": "visit page returned HTTP 404"
+      },
+      {
+        "name": "Bartels (Phuket)",
+        "url": "https://www.bartelsinternational.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "page returned only a title, no readable branch details"
+      },
+      {
+        "name": "Blue Tree Phuket",
+        "url": "https://bluetreephuket.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "connection closed on two attempts"
+      },
+      {
+        "name": "Porto de Phuket",
+        "url": "https://www.portodephuket.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "homepage gives no address or hours; contact page HTTP 404"
+      },
+      {
+        "name": "Jungceylon (Banzaan Fresh Market)",
+        "url": "https://www.jungceylon.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "homepage gives no street address and no Banzaan details; contact page HTTP 404"
+      },
+      {
+        "name": "Katathani Phuket Beach Resort",
+        "url": "https://www.katathani.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "homepage gives no street address and no outlet hours"
+      },
+      {
+        "name": "Keemala",
+        "url": "https://www.keemala.com/restaurants",
+        "checkedOn": "2026-11-01",
+        "reason": "homepage names no individual restaurants; restaurants page HTTP 404"
+      },
+      {
+        "name": "Thalang National Museum",
+        "url": "https://www.finearts.go.th/thalangmuseum",
+        "checkedOn": "2026-11-01",
+        "reason": "Fine Arts Department page returned HTTP 404; no other official page found"
+      },
+      {
+        "name": "Phuket Seashell Museum",
+        "url": "https://www.phuketseashell.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "domain does not resolve (DNS failure)"
+      },
+      {
+        "name": "Mom Tri's (momtriphuket.com)",
+        "url": "https://www.momtriphuket.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "old domain now redirects to a domain-sale page; restaurant confirmed instead via villaroyalephuket.com"
+      },
+      {
+        "name": "Campus Coffee Roasters",
+        "checkedOn": "2026-11-01",
+        "reason": "no official website found (social media only)"
+      },
+      {
+        "name": "One Chun",
+        "checkedOn": "2026-11-01",
+        "reason": "no official website found (social media only)"
+      },
+      {
+        "name": "Kopitiam by Wilai",
+        "checkedOn": "2026-11-01",
+        "reason": "no official website found"
+      },
+      {
+        "name": "Siam Bakery",
+        "checkedOn": "2026-11-01",
+        "reason": "no official website found"
+      },
+      {
+        "name": "Old Town food walk",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Quiet beach morning",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset viewpoint above the coast",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Southern Thai dinner",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Old Town market meal",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A beachside seafood table",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Kata",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Kamala",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Old Town",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Old Town walk",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Kata",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Kamala",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Kamala",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Old Phuket Town",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Old Town",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Old Town food walk",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Kata",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Kata Beach",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Old Town evening",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Kata",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Kamala",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Old Town",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Old Phuket Town",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Kata",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Kamala",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Old Town",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Old Phuket Town",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Old Town cafe or market",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Quiet beach morning",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Kamala",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Kamala",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Old Town",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Old Town",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Kata bakery or market",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Old Phuket Town",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Kamala",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Old Town",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Kata Beach",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Kamala",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Old Town",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Kata",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Kamala",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Old Town",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Old Town",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Kata",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Phi Phi Islands",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Old Town",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Kata morning market",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Old Phuket Town",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Kamala",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Old Town",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Kata",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Kamala",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Siam Niramit Phuket": {
+        "url": "https://www.siamniramitphuket.com/experience/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Schedule page states \"We open every day except Tuesdays\" and lists show-only and show-and-buffet tickets (Silver from ฿1,800 adult); footer \"© 2026 SIAM NIRAMIT Phuket\" and a halal certificate dated \"2026-2027\"."
+      },
+      "John Gray's Sea Canoe": {
+        "url": "https://www.johngray-seacanoe.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Lists current tours including Hong by Starlight with \"Daily Departure\"; site articles dated 3 August 2026 and 23 June 2026."
+      },
+      "Flying Hanuman": {
+        "url": "https://www.flyinghanuman.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Nine bookable packages from a 30-minute canopy walk at ฿1,500; footer \"© 2026 SKY TREK ADVENTURES Co., Ltd. (Flying Hanuman)\"."
+      },
+      "Chalong Bay Rum Distillery": {
+        "url": "https://www.chalongbayrum.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Bookable distillery visits and cocktail workshops \"with pior [prior] booking\"; footer \"2012-2026 All rights reserved\"."
+      },
+      "Blue Elephant Phuket": {
+        "url": "https://www.blueelephant.com/phuket/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "\"Book a table\" link and Phuket cooking school section; footer \"© 2026 Blue Elephant\"."
+      },
+      "Raya": {
+        "url": "https://www.rayarestaurant.net/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Publishes hours, reservation phone/email and a linked QR menu; notes same-day bookings by phone or walk-in only. No 2026-dated text on the page."
+      },
+      "Cafe Delight": {
+        "url": "https://cafedelightphuket.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Breakfast menu (avocado toast, breakfast tacos, V60 coffee); footer \"Copyright © 2026 Cafe Delight Phuket Old Town Restaurant\"."
+      },
+      "Graph Phuket": {
+        "url": "https://www.graphcoffeeco.com/graph-phuket",
+        "sourceType": "operator's own site (Graph Coffee Co.)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Listed as a current Graph location with published hours; no 2026-dated text on the page."
+      },
+      "Crème Café (Rawai)": {
+        "url": "https://www.cremecafephuket.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Menu of \"All day freshly made breakfast & brunch\", sourdough and croissant sandwiches and Chiang Rai-grown Thai coffee; no 2026-dated text."
+      },
+      "KR Hangout": {
+        "url": "https://www.katarocks.com/dining/kr-hangout/",
+        "sourceType": "operator's own site (Kata Rocks)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Café and deli with specialty coffee, signature pastries and bagels; links a \"Hangout Menu Sep 2026\" PDF; footer 2026."
+      },
+      "Kata Rocks Lounge and Bar": {
+        "url": "https://www.katarocks.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Lounge and Bar listed (\"Enjoy cocktails by Phuket's top sunset bar\"); 2026 events listed through 31 Dec 2026 and \"Copyright © 2026\"."
+      },
+      "The Kata Rocks Clubhouse": {
+        "url": "https://www.katarocks.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Restaurant listed to \"dine by our iconic infinity pool\"; dated 2026 events including a 12th Anniversary Pool Brunch on 28 Nov 2026."
+      },
+      "Catch Beach Club": {
+        "url": "https://www.catchbeachclub.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "SevenRooms booking links, detailed service times and a \"FESTIVE SEASON 26/27\" page."
+      },
+      "Reflections Rooftop Bar (The Nai Harn)": {
+        "url": "https://www.thenaiharn.com/",
+        "sourceType": "operator's own site (The Nai Harn hotel)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Reflections Rooftop Bar listed among current outlets; 2026 awards and \"© 2026 The Nai Harn\"."
+      },
+      "Suay (Cherngtalay)": {
+        "url": "https://www.suayrestaurant.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "TableCheck reservation link; \"Live band every Monday & Thursday\"; Michelin plaques \"2025 and 2026\"; footer © 2026."
+      },
+      "PRU": {
+        "url": "https://www.prurestaurant.com/",
+        "sourceType": "operator's own site (Trisara)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Reservation link; \"PRU offers a set tasting experience with limited seating\" and \"does not offer à la carte dining\"; \"Farm Festival 2026\" link and footer 2023-2026."
+      },
+      "Ta Khai (Rosewood Phuket)": {
+        "url": "https://www.rosewoodhotels.com/en/phuket/dining",
+        "sourceType": "operator's own site (Rosewood Hotel Group)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Southern Thai and seafood restaurant listed on the current dining page with a reservations contact; \"ROSEWOOD HOTEL GROUP © 2026\"."
+      },
+      "Baan Rim Pa": {
+        "url": "https://www.baanrimpa.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Notice: \"operating hours will change to 1:00 P.M. - 11:00 P.M. starting on 1st November 2026\"; Book Now link."
+      },
+      "Kan Eang Restaurant": {
+        "url": "https://www.kaneang.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Book a Table links and reservations email; footer \"© 2026 Kan Eang Restaurant\"."
+      },
+      "Mom Tri's Kitchen": {
+        "url": "https://www.villaroyalephuket.com/",
+        "sourceType": "operator's own site (Mom Tri's Villa Royale)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Restaurant listed on the hotel site; factsheet dated September 2026, booking links for December 2026 and \"© 2026 Mom Tri's Villa Royale\"."
+      },
+      "Talung Thai Restaurant (Paresa)": {
+        "url": "https://www.paresaresorts.com/",
+        "sourceType": "operator's own site (Paresa Resorts)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Signature restaurant with sunset views listed as recommended by the Michelin Guide; booking widget and footer \"2026 Paresa Resorts Phuket\"."
+      },
+      "Splash Jungle Water Park": {
+        "url": "https://www.splashjungle.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "\"OPEN DAILY (Until further notice)\"; day pass priced adult THB 1,850 (12 yrs up), child THB 950 (5-11); footer \"© 2019-2026\"."
+      },
+      "Andamanda Phuket": {
+        "url": "https://www.andamandaphuket.com/contact-us",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Homepage (https://www.andamandaphuket.com/) lists a 180-Day Super Save Pass with \"Promotion Period: Now - 31 Dec 2026\"."
+      },
+      "Laguna Park": {
+        "url": "https://www.lagunaphuket.com/experience/laguna-park/",
+        "sourceType": "operator's own site (Laguna Phuket)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Wooden playground \"for ages 3-12\", visitor farm and lake trail; listed among current attractions on the Laguna Phuket homepage alongside posts dated September 2026."
+      },
+      "Lifestyle Weekend Night Market (Laguna Phuket)": {
+        "url": "https://www.lagunaphuket.com/experience/lifestyle-weekend-night-market/",
+        "sourceType": "operator's own site (Laguna Phuket)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Runs \"Every Saturday and Sunday\" \"From 5pm onwards\" with handcrafted goods and street snacks; listed on the Laguna Phuket homepage with 2026 posts."
+      }
+    }
+  },
   "Cancun, Mexico": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-11-01",

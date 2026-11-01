@@ -9322,4 +9322,110 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on November 1, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Phuket, Thailand: source review of 2026-11-01 (docs/content-research/phuket-2026-11-01.md).
+  {
+    const cityKey = "Phuket, Thailand";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Siam Niramit Phuket","John Gray's Sea Canoe","Flying Hanuman","Chalong Bay Rum Distillery"],
+      bestFirstTimers: ["Siam Niramit Phuket","Blue Elephant Phuket","Raya","John Gray's Sea Canoe"],
+      bestRestaurants: ["Raya","Blue Elephant Phuket","Suay (Cherngtalay)","PRU"],
+      bestBudget: ["Lifestyle Weekend Night Market (Laguna Phuket)","Laguna Park","Graph Phuket","Cafe Delight"],
+      bestLuxury: ["PRU","Ta Khai (Rosewood Phuket)","Kata Rocks Lounge and Bar","Talung Thai Restaurant (Paresa)"],
+      bestCouples: ["The Kata Rocks Clubhouse","Reflections Rooftop Bar (The Nai Harn)","Talung Thai Restaurant (Paresa)","Kan Eang Restaurant"],
+      bestKids: ["Splash Jungle Water Park","Andamanda Phuket","Laguna Park","Flying Hanuman"],
+      bestSolo: ["Graph Phuket","Chalong Bay Rum Distillery","Cafe Delight","Lifestyle Weekend Night Market (Laguna Phuket)"],
+      bestUnique: ["John Gray's Sea Canoe","Chalong Bay Rum Distillery","Siam Niramit Phuket","Flying Hanuman"],
+      bestBreakfast: ["Cafe Delight","Crème Café (Rawai)","KR Hangout","Catch Beach Club"],
+      bestLunch: ["Raya","Blue Elephant Phuket","Kan Eang Restaurant","Baan Rim Pa"],
+      bestDinner: ["Suay (Cherngtalay)","Kan Eang Restaurant","Baan Rim Pa","Mom Tri's Kitchen"],
+      bestCocktails: ["Kata Rocks Lounge and Bar","Reflections Rooftop Bar (The Nai Harn)","Catch Beach Club","Chalong Bay Rum Distillery"],
+      bestBakeries: [],
+      bestCoffee: ["Graph Phuket","Crème Café (Rawai)","KR Hangout","Cafe Delight"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Siam Niramit Phuket": "Siam Niramit Phuket 55/81 Moo 5 Chalermprakiat Road Rassada Phuket",
+      "John Gray's Sea Canoe": "John Gray's Sea Canoe 80/25 Moo 6 Ao Por Pa Klok Thalang Phuket",
+      "Flying Hanuman": "Flying Hanuman 89/16 Moo 6 Soi Namtok Kathu Phuket",
+      "Chalong Bay Rum Distillery": "Chalong Bay Rum Distillery 14/2 Moo 2 Soi Palai 2 Chalong Phuket",
+      "Blue Elephant Phuket": "Blue Elephant Phuket 96 Krabi Road Talat Nuea Phuket",
+      "Raya": "Raya Restaurant 48/1 Dibuk Road Talad Yai Phuket",
+      "Suay (Cherngtalay)": "Suay Restaurant 177/99 Moo 6 Si Sunthon Thalang Phuket",
+      "PRU": "PRU Trisara 60/1 Moo 6 Srisoonthorn Road Cherngtalay Phuket",
+      "Lifestyle Weekend Night Market (Laguna Phuket)": "Lifestyle Weekend Night Market Laguna Grove 390/1 Moo 1 Srisoonthorn Road Cherngtalay Phuket",
+      "Laguna Park": "Laguna Park 390/1 Moo 1 Srisoonthorn Road Cherngtalay Phuket",
+      "Graph Phuket": "Graph Phuket 121 Phang Nga Road Talat Yai Phuket",
+      "Cafe Delight": "Cafe Delight 27 Ratsada Road Phuket Old Town Phuket",
+      "Ta Khai (Rosewood Phuket)": "Ta Khai Rosewood Phuket 88/28 Muen-Ngern Road Patong Phuket",
+      "Kata Rocks Lounge and Bar": "Kata Rocks 186/22 Kok Tanode Road Kata Phuket",
+      "Talung Thai Restaurant (Paresa)": "Paresa Resort 49 Moo 6 Layi-Nakalay Road Kamala Phuket",
+      "The Kata Rocks Clubhouse": "Kata Rocks Clubhouse 186/22 Kok Tanode Road Kata Phuket",
+      "Reflections Rooftop Bar (The Nai Harn)": "The Nai Harn 23/3 Moo 1 Vises Road Rawai Phuket",
+      "Kan Eang Restaurant": "Kan Eang Restaurant 44/1 Moo 5 Viset Road Rawai Phuket",
+      "Splash Jungle Water Park": "Splash Jungle Water Park 65/47 Moo 4 Mai Khao Thalang Phuket",
+      "Andamanda Phuket": "Andamanda Phuket 333/3 Moo 1 Kathu Phuket",
+      "Crème Café (Rawai)": "Creme Cafe 35/32 Moo 1 Rawai Phuket",
+      "KR Hangout": "KR Hangout 186/22 Kok Tanode Road Kata Phuket",
+      "Catch Beach Club": "Catch Beach Club 202/88 Choeng Thale Bang Tao Beach Phuket",
+      "Baan Rim Pa": "Baan Rim Pa 249/4 Prabaramee Road Patong Phuket",
+      "Mom Tri's Kitchen": "Mom Tri's Kitchen 12 Kata Noi Road Kata Noi Phuket"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Phuket" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Shows, kayaking and zipline outings, water parks and a weekend market, with Old Town cafés, southern Thai dinners and sunset bars checked against their own websites.";
+    cityGuide.highlights = ["Siam Niramit Phuket","John Gray's Sea Canoe","Blue Elephant Phuket","Splash Jungle Water Park"];
+    cityGuide.tip = "Siam Niramit Phuket is closed on Tuesdays, and Chalong Bay Rum's distillery visits and cocktail workshops need prior booking.";
+    data.destinationFacts[cityKey] = "Siam Niramit Phuket is closed on Tuesdays, and Chalong Bay Rum's distillery visits and cocktail workshops need prior booking.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Shows, kayaking and zipline outings, water parks and a weekend market, with Old Town cafés, southern Thai dinners and sunset bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Siam Niramit shuts Tuesdays",
+        "copy": "Siam Niramit Phuket opens every day except Tuesdays. Blue Elephant Phuket, Cafe Delight, Kan Eang Restaurant and Splash Jungle Water Park all list daily opening."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book tours and tastings",
+        "copy": "Chalong Bay Rum's distillery visits (1pm, 3pm or 5pm) and cocktail workshops run daily with prior booking. PRU serves only a set tasting menu with limited seating and no à la carte."
+      },
+      {
+        "label": "Walk-ins and last entry",
+        "value": "Same-day at Raya by phone",
+        "copy": "Raya's site says same-day tables are by phone or walk-in only. Flying Hanuman's last admission is at 4pm, an hour before it closes."
+      },
+      {
+        "label": "Age rules",
+        "value": "Check child ticket ages",
+        "copy": "Splash Jungle Water Park's adult ticket covers ages 12 and up and its child ticket ages 5 to 11. Laguna Park's wooden playground is for ages 3 to 12."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Plan Siam Niramit Phuket for any night but Tuesday, and book distillery visits and tasting menus before you arrive.",
+      intro: [
+        "Phuket Town is where you go for southern Thai cooking in old shophouse streets. The website of Raya, at 48/1 Dibuk Road, lists opening from 10am to 10pm daily with last orders at 9.30pm, names crab meat curry with rice noodles among its signature dishes, and takes same-day tables by phone or walk-in only. Blue Elephant Phuket on Krabi Road is open from 9am to 10.30pm every day and runs a cooking school. For an easier start, Cafe Delight on Ratsada Road opens from 8am to 6pm daily, and Graph Phuket's own page lists 8.30am to 5.30pm on Phang Nga Road.",
+        "Out of town, John Gray's Sea Canoe runs Phang Nga Bay kayaking trips, including a daily Hong by Starlight departure, from its office at Ao Por in Thalang. Flying Hanuman's zipline course in Kathu is open from 8am to 5pm daily, with last admission at 4pm, and its packages start with a 30-minute canopy walk. In the evening, Siam Niramit Phuket on Chalermprakiat Road stages an 80-minute show and opens every day except Tuesdays, with tickets sold as show only or with a buffet dinner. Chalong Bay Rum's distillery visits and cocktail workshops run daily but need prior booking.",
+        "With children, Splash Jungle Water Park at Mai Khao says it is open daily from 10am to 6.30pm until further notice; its adult ticket covers ages 12 and up and its child ticket ages 5 to 11. Andamanda Phuket in Kathu is a second water park, though its site does not publish opening hours. At Laguna Phuket in Cherngtalay, Laguna Park has a visitor farm, a lake trail and a wooden playground for ages 3 to 12, and the Lifestyle Weekend Night Market runs every Saturday and Sunday from 5pm with handcrafted goods and street snacks.",
+        "For dinner, Suay in Cherngtalay opens daily from 4pm to 11pm, with a live band every Monday and Thursday. PRU at Trisara serves only a set tasting menu with limited seating, listing dinner from Tuesday to Saturday and lunch on Friday and Saturday. Baan Rim Pa in Patong now opens from 1pm to 11pm, a change its site dates from 1 November 2026, and Kan Eang Restaurant in Rawai opens every day from 10am to 11pm. For drinks, Catch Beach Club on Bang Tao Beach is open daily from 7.30am to midnight, and Kata Rocks promotes its Lounge and Bar for sunset cocktails."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Have lunch at Blue Elephant Phuket on Krabi Road, then see Siam Niramit Phuket's evening show on any day except Tuesday."
+        ],
+        [
+          "A slower morning",
+          "Cafe Delight on Ratsada Road opens at 8am daily, and KR Hangout near Kata Beach opens at 7am with coffee, pastries and bagels."
+        ],
+        [
+          "Before booking",
+          "Reserve Chalong Bay Rum's distillery visit or cocktail workshop in advance, and note that PRU lists dinner from Tuesday to Saturday only."
+        ]
+      ],
+      trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on November 1, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();
