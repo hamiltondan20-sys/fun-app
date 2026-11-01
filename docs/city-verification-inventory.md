@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 86.
-- Classifier-passed (published, not fully documented in that format): 106.
+- Source-verified (complete dated evidence format): 87.
+- Classifier-passed (published, not fully documented in that format): 105.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -163,7 +163,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Djenne and Timbuktu, Mali | djenne | held-back | not-reviewed | 0 | 3 | 15 | 3 | has 3 named places across 3 categories; needs at least 5 named places across 3 categories |
 | Doha, Qatar | doha | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Dresden, Germany | dresden | held-back | not-reviewed | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
-| Dubai, United Arab Emirates | dubai | source-verified | source-checked | 17 | 39 | 14 | 14 | None |
+| Dubai, United Arab Emirates | dubai | source-verified | source-checked | 18 | 42 | 14 | 14 | None |
 | Dublin, Ireland | dublin | source-verified | source-checked | 22 | 39 | 15 | 15 | None |
 | Dubrovnik, Croatia | dubrovnik | held-back | not-reviewed | 0 | 4 | 15 | 2 | has 4 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Durban, South Africa | durban | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
@@ -224,7 +224,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Hoi An, Vietnam | hoi-an | source-verified | source-checked | 25 | 50 | 15 | 15 | None |
 | Hondarribia, Spain | hondarribia | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Hong Kong, China | hong-kong | source-verified | source-checked | 8 | 15 | 14 | 13 | None |
-| Honolulu, United States | honolulu | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Honolulu, United States | honolulu | source-verified | source-checked | 29 | 47 | 15 | 15 | None |
 | Hua Hin, Thailand | hua-hin | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Huanglong, China | huanglong | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Hue, Vietnam | hue | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
@@ -281,7 +281,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Liverpool, United Kingdom | liverpool | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Lombok, Indonesia | lombok | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
 | London, United Kingdom | london | source-verified | source-checked | 30 | 43 | 15 | 15 | None |
-| Los Angeles, United States | los-angeles | source-verified | source-checked | 25 | 53 | 15 | 15 | None |
+| Los Angeles, United States | los-angeles | source-verified | source-checked | 26 | 57 | 15 | 15 | None |
 | Los Cabos, Mexico | los-cabos | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Lucerne, Switzerland | lucerne | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
 | Luxor, Egypt | luxor | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
@@ -309,7 +309,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Merida, Mexico | merida | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Mexico City, Mexico | mexico-city | source-verified | source-checked | 26 | 49 | 15 | 15 | None |
 | Miami, United States | miami | source-verified | source-checked | 29 | 52 | 15 | 15 | None |
-| Milan, Italy | milan | source-verified | source-checked | 27 | 59 | 15 | 15 | None |
+| Milan, Italy | milan | source-verified | source-checked | 28 | 62 | 15 | 15 | None |
 | Milford Sound, New Zealand | milford-sound | held-back | not-reviewed | 0 | 4 | 15 | 4 | has 4 named places across 4 categories; needs at least 5 named places across 3 categories |
 | Milos, Greece | milos | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Mombasa, Kenya | mombasa | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
@@ -466,7 +466,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Tofino, Canada | tofino | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Tokyo, Japan | tokyo | source-verified | source-checked | 21 | 42 | 14 | 14 | None |
 | Toledo, Spain | toledo | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Toronto, Canada | toronto | source-verified | source-checked | 25 | 50 | 15 | 15 | None |
+| Toronto, Canada | toronto | source-verified | source-checked | 26 | 53 | 15 | 15 | None |
 | Toulouse, France | toulouse | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Tromso, Norway | tromso | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Trujillo, Peru | trujillo | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |

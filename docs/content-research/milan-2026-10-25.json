@@ -984,5 +984,30 @@
   "injectionLikeText": [],
   "injectionLikeTextIgnored": [
     "ambrosiana.it footer: \"AI Training Prohibited\" (a copyright notice forbidding use of site content to train generative AI; not an instruction acted on) (A copyright notice prohibiting AI training, not an instruction to an assistant.)"
+  ],
+  "additions": [
+    {
+      "checkedOn": "2026-11-01",
+      "method": "The Castello's site refused automated reading (HTTP 403) during the review. It was then read on the City of Milan's Castello Sforzesco pages in a browser; no review sites, maps or blogs were used.",
+      "places": [
+        {
+          "name": "Castello Sforzesco",
+          "url": "https://www.milanocastello.it/it/home",
+          "sourceType": "official public operator (Comune di Milano)",
+          "address": "Piazza Castello, 20121 Milano",
+          "operatingEvidence": "The home page gives \"Orari: Martedì - domenica dalle 10:00 alle 17:30 / Lunedì chiuso\" and lists autumn 2026 events, including \"Pausa Pranzo in Museo 2026 ed. autunno\" (7 October to 31 December 2026). The footer reads \"Copyright 2026 Comune di Milano\".",
+          "hours": "Tuesday-Sunday 10:00-17:30; closed Monday",
+          "query": "Castello Sforzesco Piazza Castello Milano",
+          "categories": [
+            "bestAttractions",
+            "bestFirstTimers",
+            "bestKids"
+          ],
+          "replacesExcluded": [
+            "Castello Sforzesco"
+          ]
+        }
+      ]
+    }
   ]
 }

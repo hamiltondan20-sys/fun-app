@@ -626,5 +626,30 @@
   "injectionLikeTextIgnored": [
     "Dubai Frame plan-your-visit page (https://www.dubaiframe.ae/en/plan-your-visit): the first automated read reported text on the page 'addressed to an AI, asking for specific quoting behavior'; the exact wording was not returned, and a second read found none. It was ignored.",
     "2026-10-25: the page was re-read in a browser and its full HTML searched; no AI-directed text was present."
+  ],
+  "additions": [
+    {
+      "checkedOn": "2026-11-01",
+      "method": "The Burj Khalifa's site refused automated reading (HTTP 403) during the review. It was then read on its own contact and observation-deck pages and its official ticket site in a browser; no review sites, maps or blogs were used.",
+      "places": [
+        {
+          "name": "Burj Khalifa (At the Top)",
+          "url": "https://www.burjkhalifa.ae/experiences/observation-decks/",
+          "sourceType": "operator's own site (Burj Khalifa)",
+          "address": "1 Mohammed Bin Rashid Boulevard, Downtown Dubai",
+          "operatingEvidence": "The observation-deck page describes the At the Top decks, including Level 148, and the official ticket site ticket.atthetop.ae sells tickets online (\"Book Tickets\"). The contact page gives the address as 1 Mohammed Bin Rashid Boulevard, Downtown Dubai.",
+          "hours": "not published on the pages read",
+          "query": "Burj Khalifa At the Top 1 Mohammed Bin Rashid Boulevard Downtown Dubai",
+          "categories": [
+            "bestAttractions",
+            "bestFirstTimers",
+            "bestCouples"
+          ],
+          "replacesExcluded": [
+            "Burj Khalifa (At the Top)"
+          ]
+        }
+      ]
+    }
   ]
 }

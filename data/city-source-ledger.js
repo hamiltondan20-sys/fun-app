@@ -5,6 +5,596 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Honolulu, United States": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-11-01",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Pearl Harbor National Memorial's hours come from an NPS page last updated October 9, 2025, and several places (Leonard's Bakery, Liliha Bakery, Duke's Waikiki, Helena's Hawaiian Food, KCC Farmers' Market, Battleship Missouri Memorial, Island Vintage Coffee) show 2026 only as a footer or asset date, so their hours are as listed rather than confirmed current. Side Street Inn, Koko Head Cafe, Morning Glass Coffee, Bar Leather Apron, ʻIolani Palace and Waikīkī Aquarium publish no 2026-dated content. Liliha Bakery's page gives two conflicting sets of hours, Rainbow Drive-In publishes no regular hours, ʻIolani Palace gives no tour times, and the Waikīkī Aquarium is open during renovations. Hanauma Bay (no official address page found), Foster Botanical Garden (official page 404) and Ted's Bakery (SSL error) could not be confirmed; Kona Coffee Purveyors and Eggs 'n Things lacked hours or an address. State parks posted hurricane-recovery notices on 10/29/26 for other parks; check Diamond Head before you go.",
+    "sourceUrls": [
+      "docs/content-research/honolulu-2026-11-01.md",
+      "docs/content-research/honolulu-2026-11-01.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Waikiki Beach",
+        "checkedOn": "2026-11-01",
+        "reason": "Public beach with no single operator page; no official address page read, so not confirmable under the evidence rules."
+      },
+      {
+        "name": "Hanauma Bay Nature Preserve",
+        "url": "https://www.honolulu.gov/dpr/dpr-news/sewer-system-improvements-to-begin-at-hanauma-bay-nature-ppreserve/",
+        "checkedOn": "2026-11-01",
+        "reason": "City news pages (July 2, 2026) confirm it is closed Mondays and Tuesdays, but no official page read gives an address or exact location; https://www.honolulu.gov/parks/hanauma-bay/ returned 404 and parks.honolulu.gov did not resolve."
+      },
+      {
+        "name": "Foster Botanical Garden",
+        "url": "https://www.honolulu.gov/parks/hbg/foster-botanical-garden/",
+        "checkedOn": "2026-11-01",
+        "reason": "Official City page could not be found (HTTP 404); no official address or hours read."
+      },
+      {
+        "name": "Ted's Bakery",
+        "url": "https://www.tedsbakery.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "Fetch failed with an SSL handshake error; not bypassed. Not evidence of closure."
+      },
+      {
+        "name": "Eggs 'n Things (Waikiki Beach Eggspress)",
+        "url": "https://www.eggsnthings.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "Home page names the branch but gives no address or hours; latest dated content March 2024."
+      },
+      {
+        "name": "Kona Coffee Purveyors",
+        "url": "https://www.konacoffeepurveyors.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "Address shown (2330 Kalakaua Ave #160) but no hours or operating notice beyond a footer copyright; first two fetches returned HTTP 429."
+      },
+      {
+        "name": "Diamond Head morning",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "North Shore day",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Kaimuki food crawl",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Poke lunch",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Plate lunch",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A Waikiki sunset dinner",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Kaimuki",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Ala Moana",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Waikiki",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Waikiki walk",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Kaimuki",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Ala Moana",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Ala Moana",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Waikiki Beach",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Waikiki",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Diamond Head morning",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Kaimuki",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Diamond Head",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Waikiki evening",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Kaimuki",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Ala Moana",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Waikiki",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Waikiki Beach",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Kaimuki",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Ala Moana",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Waikiki",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Waikiki Beach",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Waikiki cafe or market",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided North Shore day",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Ala Moana",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Ala Moana",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Waikiki",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Waikiki",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Kaimuki bakery or market",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Waikiki Beach",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Ala Moana",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Waikiki",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Diamond Head",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Ala Moana",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Waikiki",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Kaimuki",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Ala Moana",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Waikiki",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Waikiki",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Kaimuki",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Pearl Harbor",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Waikiki",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Kaimuki morning market",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Waikiki Beach",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Ala Moana",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Waikiki",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Kaimuki",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Ala Moana",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Pearl Harbor National Memorial": {
+        "url": "https://www.nps.gov/valr/index.htm",
+        "sourceType": "official public operator (National Park Service)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "NPS home page \"Last updated: July 30, 2026\"; \"Program reservations are recommended\" via recreation.gov. Hours page (https://www.nps.gov/valr/planyourvisit/hours.htm, last updated October 9, 2025) asks you to \"arrive on-site one hour before your scheduled program time\"."
+      },
+      "Diamond Head State Monument": {
+        "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/diamond-head-state-monument/",
+        "sourceType": "official public operator (Hawaiʻi DLNR Division of State Parks)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Park page carries state parks notices dated 8/27/26 and 10/29/26; entry and parking reservations are required for non-residents. Reservation FAQ (https://gostateparks.hawaii.gov/diamondhead/faq): fees \"must be purchased before arrival\", last reservation 4:00 pm."
+      },
+      "ʻIolani Palace": {
+        "url": "https://www.iolanipalace.org/visit/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "\"Various tours are currently offered Tuesday through Saturday.\" \"RESERVATIONS HIGHLY RECOMMENDED. Walk-ins are based on availability.\" No dated 2026 notice on the page."
+      },
+      "Bishop Museum": {
+        "url": "https://www.bishopmuseum.org/visit/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Lists a concert on \"Friday, November 13, 2026\" with registration, and \"Experience Ea Mai ʻEiwa: Patterns of Practice\" as \"Now Open!\" (no end date)."
+      },
+      "Honolulu Museum of Art": {
+        "url": "https://honolulumuseum.org/visit/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Visit page with ticket booking, admission prices (adults $25, \"Children 18 and under: Free\") and a visitor brochure file dated 07132026."
+      },
+      "Shangri La tours from Honolulu Museum of Art": {
+        "url": "https://honolulumuseum.org/shangri-la/",
+        "sourceType": "official partner operator (Honolulu Museum of Art)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Reservations required; \"Shangri La releases tickets monthly on the first Thursday of each month at 10am HST.\" Page says it looked forward to welcoming visitors back in October after a September closure."
+      },
+      "Honolulu Zoo": {
+        "url": "https://www.honoluluzoo.org/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Home page lists current events (\"Octo-bear-fest: BOOS & BREWS\", \"Zoofari Gala\") and a ticket purchase link; footer \"© 2026\"."
+      },
+      "Waikīkī Aquarium": {
+        "url": "https://www.waikikiaquarium.org/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "\"The Waikīkī Aquarium is open while undergoing vital renovations\"; tickets sold at the front desk on arrival; no dated 2026 text."
+      },
+      "Battleship Missouri Memorial": {
+        "url": "https://ussmissouri.org/contact-us",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Visit page (https://ussmissouri.org/visit): \"General Admission tickets are available daily\", sold at the Pearl Harbor Visitor Center with a complimentary shuttle; footer \"©2026\"."
+      },
+      "Lyon Arboretum": {
+        "url": "https://www.manoa.hawaii.edu/lyon/",
+        "sourceType": "official public operator (University of Hawaiʻi at Mānoa)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "\"Last Updated 10/28/26\"; posts on the \"2026 Fall Plant and Craft Sale\" (September 17, 2026) and Fall Nature Camp. \"No reservations are required at this time.\" Admission free, $10 suggested donation."
+      },
+      "KCC Farmers' Market": {
+        "url": "https://hfbf.org/markets/kcc/",
+        "sourceType": "official operator (Hawaiʻi Farm Bureau)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Market page lists the weekly schedule and parking (Lots C and E); footer \"Hawaiʻi Farm Bureau ©2026\"."
+      },
+      "Leonard's Bakery": {
+        "url": "https://www.leonardshawaii.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Home page publishes daily hours; footer \"© 2026 LEONARD'S BAKERY LTD.\""
+      },
+      "Liliha Bakery (Kuakini Street)": {
+        "url": "https://www.lilihabakery.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Lists six current branches, with Waikiki Beach Walk marked \"NOW OPEN!\"; footer \"© 2026 Liliha Bakery\"."
+      },
+      "Rainbow Drive-In (Kapahulu)": {
+        "url": "https://rainbowdrivein.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Notice dated 8/16/26 about an early close that day; \"voted @staradvertiser 2026 Hawaiʻi's Best Diner, Drive-In & Dive!\"; 65th anniversary event; happy hour \"Monday-Thursday from 3-5 PM\"."
+      },
+      "Helena's Hawaiian Food": {
+        "url": "https://www.helenashawaiianfood.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Publishes current opening days and holiday closure notices (years not stated); footer \"© 2026 All Rights Reserved\"."
+      },
+      "Highway Inn (Kakaʻako)": {
+        "url": "https://www.myhighwayinn.com/location-kakaako/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Home page promotes pau hana specials (graphic dated May 2026), \"weekdays, 3pm - 6pm\", and Thursday live music in Kakaʻako."
+      },
+      "Nico's Pier 38": {
+        "url": "https://www.nicospier38.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Music schedule dated November 1–3, 2026; restaurant and fish market hours published."
+      },
+      "Side Street Inn (Hopaka Street)": {
+        "url": "https://www.sidestreetinn.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Lists current branches with hours and a reservations link; no 2026-dated content (copyright 2025)."
+      },
+      "Duke's Waikiki": {
+        "url": "https://www.dukeswaikiki.com/reservations-directions/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Online and phone reservations; Dining Room \"(Reservations recommended)\"; footer \"© Copyright T S Restaurants 2026\"."
+      },
+      "Koko Head Cafe": {
+        "url": "https://www.kokoheadcafe.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Publishes brunch and dinner hours and an OpenTable link (\"Make Dinner Reservations Here!!\"); latest dated content is from 2025."
+      },
+      "Mud Hen Water": {
+        "url": "https://www.mudhenwater.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Event dated 10/29/26 (wine pairing dinner, sold out); 2026 menus; reservations link."
+      },
+      "House Without a Key (Halekulani)": {
+        "url": "https://www.halekulani.com/dining/house-without-a-key/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Current hours (\"subject to change\"), OpenTable dinner reservations, \"Hawaii Food & Wine Festival 2026\" listing, \"©2026 Halekulani\"."
+      },
+      "La Mer (Halekulani)": {
+        "url": "https://www.halekulani.com/dining/la-mer/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Cites its 2026 AAA Five Diamond and 2026 Forbes Travel Guide 5 Star awards; reservations taken with a credit card."
+      },
+      "Lewers Lounge (Halekulani)": {
+        "url": "https://www.halekulani.com/dining/lewers-lounge/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Current hours, nightly light jazz schedule and dress code published; footer \"©2026 Halekulani\"."
+      },
+      "Mai Tai Bar (The Royal Hawaiian)": {
+        "url": "https://www.royal-hawaiian.com/dining-overview/mai-tai-bar/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Hotel site has news dated 10.06.2026 and 08.04.2026; bar page lists \"daily live music from 6 – 10 PM\"."
+      },
+      "Bar Leather Apron": {
+        "url": "https://barleatherapron.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Takes reservation requests up to one month ahead (\"Reservations highly recommended, walk-ins welcomed based on availability\"); no 2026-dated content (footer ©2016)."
+      },
+      "Honolulu Coffee (Moana Surfrider)": {
+        "url": "https://www.honolulucoffee.com/pages/locations",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Links a \"new-2026-makahiki-seasonal-menu\" and shows a \"2026 Best of Honolulu\" badge; footer \"© 2026, Honolulu Coffee\"."
+      },
+      "Island Vintage Coffee (Royal Hawaiian Center)": {
+        "url": "https://www.islandvintagecoffee.com/pages/locations",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Locations page publishes current daily and kitchen hours; 2026 logo asset only."
+      },
+      "Morning Glass Coffee": {
+        "url": "https://www.morningglasscoffee.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Home page publishes current opening and kitchen hours; no 2026-dated content."
+      }
+    }
+  },
   "Cartagena, Colombia": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-10-28",
@@ -19812,7 +20402,7 @@ window.HB_DATA.citySourceLedger = {
     "status": "source-checked",
     "reviewScope": "cityGuideDetailData",
     "verificationMethod": "official-web-review",
-    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several major sites could not be read by automated fetch (HTTP 403 for Castello Sforzesco, Museo del Novecento, Fondazione Prada, Palazzo Reale, Triennale, GAM and the City of Milan's Parco Sempione page; certificate or TLS errors for Bar Basso, Pizzeria Spontini, Princi and Cova; repeated HTTP 429 for Pasticceria Cucchi, Iginio Massari and Cafezal; timeout for Pasticceria Marchesi), so they are left out rather than judged closed. The Duomo's ticket site sits behind a queue system that was not bypassed, so cathedral and terrace opening hours and dress rules were not confirmed; the main site's weekday hours may refer to the office. Weekly hours were not published on the pages read for Pinacoteca Ambrosiana, Villa Necchi Campiglio, Museo Diocesano, MUBA, Peck and Langosteria (Via Savona), and Museo Poldi Pezzoli showed only today's hours. Camparino, Dry Milano, Moebius, Luini, Antica Trattoria della Pesa, Masuelli and Biffi showed current hours or booking but no 2026-dated content. Two fetch summaries (museoscienza.org and trattoriamilanese.it) reported text addressed to an AI that could not be quoted and appeared to echo the review prompt; neither place is used.",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several major sites could not be read by automated fetch (HTTP 403 for Castello Sforzesco, Museo del Novecento, Fondazione Prada, Palazzo Reale, Triennale, GAM and the City of Milan's Parco Sempione page; certificate or TLS errors for Bar Basso, Pizzeria Spontini, Princi and Cova; repeated HTTP 429 for Pasticceria Cucchi, Iginio Massari and Cafezal; timeout for Pasticceria Marchesi), so they are left out rather than judged closed. The Duomo's ticket site sits behind a queue system that was not bypassed, so cathedral and terrace opening hours and dress rules were not confirmed; the main site's weekday hours may refer to the office. Weekly hours were not published on the pages read for Pinacoteca Ambrosiana, Villa Necchi Campiglio, Museo Diocesano, MUBA, Peck and Langosteria (Via Savona), and Museo Poldi Pezzoli showed only today's hours. Camparino, Dry Milano, Moebius, Luini, Antica Trattoria della Pesa, Masuelli and Biffi showed current hours or booking but no 2026-dated content. Two fetch summaries (museoscienza.org and trattoriamilanese.it) reported text addressed to an AI that could not be quoted and appeared to echo the review prompt; neither place is used. Castello Sforzesco was read on 2026-11-01 in a browser, from the City of Milan's own pages, and added.",
     "sourceUrls": [
       "docs/content-research/milan-2026-10-25.md",
       "docs/content-research/milan-2026-10-25.json"
@@ -20189,12 +20779,6 @@ window.HB_DATA.citySourceLedger = {
         "reason": "generic, not a place"
       },
       {
-        "name": "Castello Sforzesco",
-        "url": "https://www.milanocastello.it/en",
-        "checkedOn": "2026-10-25",
-        "reason": "official site returned HTTP 403 Forbidden; not bypassed"
-      },
-      {
         "name": "Museo del Novecento",
         "url": "https://www.museodelnovecento.org/en/",
         "checkedOn": "2026-10-25",
@@ -20382,6 +20966,12 @@ window.HB_DATA.citySourceLedger = {
       }
     ],
     "placeSources": {
+      "Castello Sforzesco": {
+        "url": "https://www.milanocastello.it/it/home",
+        "sourceType": "official public operator (Comune di Milano)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "The home page gives \"Orari: Martedì - domenica dalle 10:00 alle 17:30 / Lunedì chiuso\" and lists autumn 2026 events, including \"Pausa Pranzo in Museo 2026 ed. autunno\" (7 October to 31 December 2026). The footer reads \"Copyright 2026 Comune di Milano\"."
+      },
       "Duomo di Milano": {
         "url": "https://www.duomomilano.it/en/",
         "sourceType": "official operator (Veneranda Fabbrica del Duomo di Milano)",
@@ -28319,7 +28909,7 @@ window.HB_DATA.citySourceLedger = {
     "status": "source-checked",
     "reviewScope": "cityGuideDetailData",
     "verificationMethod": "official-web-review",
-    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several sites could not be read: the Art Gallery of Ontario (HTTP 403), Pilot Coffee and Balzac's (HTTP 429), Mildred's Temple Kitchen (connection refused), Sisters & Co., Roselle, Bar Pompette and Bakerbots (domain not found), Nord Lyon (SSL error), and Mother (no readable content). These failures are not evidence of closure. The Hockey Hall of Fame and Toronto Botanical Garden were left out because no street address loaded, and Toronto Island was left out because the City pages read gave no terminal address. Some confirmed places are only partly published: the CN Tower's weekly hours and the opening hours for Steam Whistle Brewing, Harbord Bakery and High Park were not shown, Ripley's showed only the current day's hours, Alo's closing time is not given, and several restaurants, bars and cafés have no 2026-dated content beyond a footer or published hours (medium confidence).",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several sites could not be read: the Art Gallery of Ontario (HTTP 403), Pilot Coffee and Balzac's (HTTP 429), Mildred's Temple Kitchen (connection refused), Sisters & Co., Roselle, Bar Pompette and Bakerbots (domain not found), Nord Lyon (SSL error), and Mother (no readable content). These failures are not evidence of closure. The Hockey Hall of Fame and Toronto Botanical Garden were left out because no street address loaded, and Toronto Island was left out because the City pages read gave no terminal address. Some confirmed places are only partly published: the CN Tower's weekly hours and the opening hours for Steam Whistle Brewing, Harbord Bakery and High Park were not shown, Ripley's showed only the current day's hours, Alo's closing time is not given, and several restaurants, bars and cafés have no 2026-dated content beyond a footer or published hours (medium confidence). The Art Gallery of Ontario was read on 2026-11-01 in a browser, from its own page, and added.",
     "sourceUrls": [
       "docs/content-research/toronto-2026-10-25.md",
       "docs/content-research/toronto-2026-10-25.json"
@@ -28422,12 +29012,6 @@ window.HB_DATA.citySourceLedger = {
         "reason": "generic, not a place (St. Lawrence Market confirmed separately)"
       },
       {
-        "name": "Art Gallery of Ontario (from 'AGO or ROM visit')",
-        "url": "https://ago.ca/",
-        "checkedOn": "2026-10-25",
-        "reason": "site refused automated reading (HTTP 403); not evidence of closure"
-      },
-      {
         "name": "Mildred's Temple Kitchen",
         "url": "https://www.templekitchen.com/",
         "checkedOn": "2026-10-25",
@@ -28525,6 +29109,12 @@ window.HB_DATA.citySourceLedger = {
       }
     ],
     "placeSources": {
+      "Art Gallery of Ontario": {
+        "url": "https://ago.ca/visit/hours-location-admission",
+        "sourceType": "operator's own site (gallery)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "The hours page publishes weekly hours (closed Monday, open to 9:00 PM on Wednesday and Friday), free admission on the first Wednesday night of each month from 6pm to 9pm with online booking, and free annual passes for Ontarians under 25. The footer reads \"©2026 Art Gallery of Ontario\"."
+      },
       "CN Tower": {
         "url": "https://www.cntower.ca/contact-us",
         "sourceType": "operator's own site",
@@ -30634,7 +31224,7 @@ window.HB_DATA.citySourceLedger = {
     "status": "source-checked",
     "reviewScope": "cityGuideDetailData",
     "verificationMethod": "official-web-review",
-    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The Getty Center, California Science Center, Sqirl, Joan's on Third, Intelligentsia Silver Lake, The Huntington, Petersen Automotive Museum, Go Get Em Tiger, Hauser & Wirth and several others could not be read (403, 429 rate limits, certificate errors, 404s or empty pages) and are left out; a fetch failure is not evidence of closure. The Museum at La Brea Tar Pits reports it is temporarily closed for construction. Hours were not published or readable for the Hollywood Bowl, Santa Monica Pier, The Last Bookstore, Employees Only LA and The Roger Room (hours shown only as an image). Courage Bagels shows conflicting hours (Thursday-Monday versus a 'weekends only' banner). Several confirmed sites (Bestia, Bavel, Gjelina, Musso & Frank Grill, Santa Monica Pier, Employees Only LA, The Roger Room, Thunderbolt) carry no dated 2026 content and rest on live booking links and posted hours. The Santa Monica Pier address is the Pier Corporation's office on the pier.",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The Getty Center, California Science Center, Sqirl, Joan's on Third, Intelligentsia Silver Lake, The Huntington, Petersen Automotive Museum, Go Get Em Tiger, Hauser & Wirth and several others could not be read (403, 429 rate limits, certificate errors, 404s or empty pages) and are left out; a fetch failure is not evidence of closure. The Museum at La Brea Tar Pits reports it is temporarily closed for construction. Hours were not published or readable for the Hollywood Bowl, Santa Monica Pier, The Last Bookstore, Employees Only LA and The Roger Room (hours shown only as an image). Courage Bagels shows conflicting hours (Thursday-Monday versus a 'weekends only' banner). Several confirmed sites (Bestia, Bavel, Gjelina, Musso & Frank Grill, Santa Monica Pier, Employees Only LA, The Roger Room, Thunderbolt) carry no dated 2026 content and rest on live booking links and posted hours. The Santa Monica Pier address is the Pier Corporation's office on the pier. The Getty Center was read on 2026-11-01 in a browser, from its own visit page, and added.",
     "sourceUrls": [
       "docs/content-research/los-angeles-2026-10-25.md",
       "docs/content-research/los-angeles-2026-10-25.json"
@@ -30644,12 +31234,6 @@ window.HB_DATA.citySourceLedger = {
         "name": "Santa Monica",
         "checkedOn": "2026-10-25",
         "reason": "generic, not a place (a city); Santa Monica Pier confirmed instead"
-      },
-      {
-        "name": "The Getty Center",
-        "url": "https://www.getty.edu/visit/center/",
-        "checkedOn": "2026-10-25",
-        "reason": "official page returned no readable content (title only, 68 characters) on two URLs"
       },
       {
         "name": "California Science Center",
@@ -30876,6 +31460,12 @@ window.HB_DATA.citySourceLedger = {
       }
     ],
     "placeSources": {
+      "The Getty Center": {
+        "url": "https://www.getty.edu/visit/center/",
+        "sourceType": "operator's own site (J. Paul Getty Trust)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "The visit page says \"Admission is free, and requires a timed-entry reservation\", publishes weekly hours, and lists the exhibition Instante/revelación: Moments in Mexican Photography from September 1, 2026 to January 3, 2027."
+      },
       "Griffith Observatory": {
         "url": "https://griffithobservatory.lacity.gov/",
         "sourceType": "official public operator (City of Los Angeles)",
@@ -33736,18 +34326,12 @@ window.HB_DATA.citySourceLedger = {
     "status": "source-checked",
     "reviewScope": "cityGuideDetailData",
     "verificationMethod": "official-web-review",
-    "limitations": "This is a website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several major sites could not be read automatically and were left out rather than bypassed: Burj Khalifa, At.mosphere, The Espresso Lab, Dubai Aquarium, Dubai Opera, SALT and Sky Views returned HTTP 403; the Dubai Culture museum sites (Etihad Museum, Al Shindagha) and Bageri Form and Arabian Tea House returned certificate or SSL errors; Atlantis Aquaventure timed out; Nightjar Coffee and Mirzam were rate-limited; Coca-Cola Arena sent a queue page. Museum of the Future says it is temporarily closed with no reopening date. Global Village, LEGOLAND Dubai, Souk Al Seef and The Dubai Mall published hours or seasons but no street address on the pages read. Some confirmed places are published only partly: Orfali Bros gives dinner days without times, Comptoir 102 shows no 2026-dated content, Jameel Arts Centre's hours conflict with its Tuesday closure, CÉ LA VI and Al Fanar give location descriptions rather than street addresses, and Alserkal Avenue lists entrances rather than a single address. No bakery could be confirmed, so the bakeries list is empty, and only one coffee roaster was confirmed. The total of 17 confirmed places is below the 25-35 target.",
+    "limitations": "This is a website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several major sites could not be read automatically and were left out rather than bypassed: Burj Khalifa, At.mosphere, The Espresso Lab, Dubai Aquarium, Dubai Opera, SALT and Sky Views returned HTTP 403; the Dubai Culture museum sites (Etihad Museum, Al Shindagha) and Bageri Form and Arabian Tea House returned certificate or SSL errors; Atlantis Aquaventure timed out; Nightjar Coffee and Mirzam were rate-limited; Coca-Cola Arena sent a queue page. Museum of the Future says it is temporarily closed with no reopening date. Global Village, LEGOLAND Dubai, Souk Al Seef and The Dubai Mall published hours or seasons but no street address on the pages read. Some confirmed places are published only partly: Orfali Bros gives dinner days without times, Comptoir 102 shows no 2026-dated content, Jameel Arts Centre's hours conflict with its Tuesday closure, CÉ LA VI and Al Fanar give location descriptions rather than street addresses, and Alserkal Avenue lists entrances rather than a single address. No bakery could be confirmed, so the bakeries list is empty, and only one coffee roaster was confirmed. The total of 17 confirmed places is below the 25-35 target. The Burj Khalifa's At the Top decks were read on 2026-11-01 in a browser, from the operator's own pages, and added; opening hours were not published on the pages read.",
     "sourceUrls": [
       "docs/content-research/dubai-2026-10-25.md",
       "docs/content-research/dubai-2026-10-25.json"
     ],
     "excludedCandidates": [
-      {
-        "name": "Burj Khalifa (At the Top)",
-        "url": "https://www.burjkhalifa.ae/en/",
-        "checkedOn": "2026-10-25",
-        "reason": "Official site returned HTTP 403 to automated reading; not bypassed"
-      },
       {
         "name": "Museum of the Future",
         "url": "https://museumofthefuture.ae/en",
@@ -34074,6 +34658,12 @@ window.HB_DATA.citySourceLedger = {
       }
     ],
     "placeSources": {
+      "Burj Khalifa (At the Top)": {
+        "url": "https://www.burjkhalifa.ae/experiences/observation-decks/",
+        "sourceType": "operator's own site (Burj Khalifa)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "The observation-deck page describes the At the Top decks, including Level 148, and the official ticket site ticket.atthetop.ae sells tickets online (\"Book Tickets\"). The contact page gives the address as 1 Mohammed Bin Rashid Boulevard, Downtown Dubai."
+      },
       "Dubai Frame": {
         "url": "https://www.dubaiframe.ae/en/plan-your-visit",
         "sourceType": "official public operator (Dubai Municipality)",

@@ -602,5 +602,30 @@
     ]
   },
   "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several sites could not be read: the Art Gallery of Ontario (HTTP 403), Pilot Coffee and Balzac's (HTTP 429), Mildred's Temple Kitchen (connection refused), Sisters & Co., Roselle, Bar Pompette and Bakerbots (domain not found), Nord Lyon (SSL error), and Mother (no readable content). These failures are not evidence of closure. The Hockey Hall of Fame and Toronto Botanical Garden were left out because no street address loaded, and Toronto Island was left out because the City pages read gave no terminal address. Some confirmed places are only partly published: the CN Tower's weekly hours and the opening hours for Steam Whistle Brewing, Harbord Bakery and High Park were not shown, Ripley's showed only the current day's hours, Alo's closing time is not given, and several restaurants, bars and cafés have no 2026-dated content beyond a footer or published hours (medium confidence).",
-  "injectionLikeText": []
+  "injectionLikeText": [],
+  "additions": [
+    {
+      "checkedOn": "2026-11-01",
+      "method": "The AGO's site refused automated reading (HTTP 403) during the review. It was then read on the gallery's own hours, location and admission page in a browser; no review sites, maps or blogs were used.",
+      "places": [
+        {
+          "name": "Art Gallery of Ontario",
+          "url": "https://ago.ca/visit/hours-location-admission",
+          "sourceType": "operator's own site (gallery)",
+          "address": "317 Dundas Street West, Toronto, Ontario",
+          "operatingEvidence": "The hours page publishes weekly hours (closed Monday, open to 9:00 PM on Wednesday and Friday), free admission on the first Wednesday night of each month from 6pm to 9pm with online booking, and free annual passes for Ontarians under 25. The footer reads \"©2026 Art Gallery of Ontario\".",
+          "hours": "Tue and Thu 10:30 AM-5:00 PM; Wed and Fri 10:30 AM-9:00 PM; Sat-Sun 10:30 AM-5:30 PM; closed Monday",
+          "query": "Art Gallery of Ontario 317 Dundas Street West Toronto",
+          "categories": [
+            "bestAttractions",
+            "bestFirstTimers",
+            "bestSolo"
+          ],
+          "replacesExcluded": [
+            "Art Gallery of Ontario (from 'AGO or ROM visit')"
+          ]
+        }
+      ]
+    }
+  ]
 }

@@ -8920,4 +8920,194 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 20 distinct recommendations in this guide were checked against their operators' own websites on October 28, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Los Angeles, United States: places added 2026-11-01 after the source review (docs/content-research/los-angeles-2026-10-25.md).
+  {
+    const cityKey = "Los Angeles, United States";
+    const detail = data.cityGuideDetailData[cityKey];
+    const additions = {"The Getty Center":["bestAttractions","bestFirstTimers","bestCouples","bestBudget"]};
+    for (const [name, categories] of Object.entries(additions)) {
+      for (const category of categories) {
+        const list = [name, ...(detail[category] || []).filter((item) => item !== name)];
+        // Trim to 5 from the end, but never drop a place that appears in no other list.
+        for (let index = list.length - 1; list.length > 5 && index > 0; index -= 1) {
+          if (Object.entries(detail).some(([other, items]) => other !== category && items.includes(list[index]))) list.splice(index, 1);
+        }
+        detail[category] = list;
+      }
+    }
+    Object.assign(data.cityPlaceQueries[cityKey], {"The Getty Center":"The Getty Center 1200 Getty Center Drive Los Angeles"});
+    const editorial = data.cityEditorialPageData[cityKey];
+    const count = new Set(Object.values(detail).flat()).size;
+    if (editorial?.trust) editorial.trust = editorial.trust.replace(/^All \d+ distinct recommendations/, `All ${count} distinct recommendations`);
+  }
+  // Toronto, Canada: places added 2026-11-01 after the source review (docs/content-research/toronto-2026-10-25.md).
+  {
+    const cityKey = "Toronto, Canada";
+    const detail = data.cityGuideDetailData[cityKey];
+    const additions = {"Art Gallery of Ontario":["bestAttractions","bestFirstTimers","bestSolo"]};
+    for (const [name, categories] of Object.entries(additions)) {
+      for (const category of categories) {
+        const list = [name, ...(detail[category] || []).filter((item) => item !== name)];
+        // Trim to 5 from the end, but never drop a place that appears in no other list.
+        for (let index = list.length - 1; list.length > 5 && index > 0; index -= 1) {
+          if (Object.entries(detail).some(([other, items]) => other !== category && items.includes(list[index]))) list.splice(index, 1);
+        }
+        detail[category] = list;
+      }
+    }
+    Object.assign(data.cityPlaceQueries[cityKey], {"Art Gallery of Ontario":"Art Gallery of Ontario 317 Dundas Street West Toronto"});
+    const editorial = data.cityEditorialPageData[cityKey];
+    const count = new Set(Object.values(detail).flat()).size;
+    if (editorial?.trust) editorial.trust = editorial.trust.replace(/^All \d+ distinct recommendations/, `All ${count} distinct recommendations`);
+  }
+  // Dubai, United Arab Emirates: places added 2026-11-01 after the source review (docs/content-research/dubai-2026-10-25.md).
+  {
+    const cityKey = "Dubai, United Arab Emirates";
+    const detail = data.cityGuideDetailData[cityKey];
+    const additions = {"Burj Khalifa (At the Top)":["bestAttractions","bestFirstTimers","bestCouples"]};
+    for (const [name, categories] of Object.entries(additions)) {
+      for (const category of categories) {
+        const list = [name, ...(detail[category] || []).filter((item) => item !== name)];
+        // Trim to 5 from the end, but never drop a place that appears in no other list.
+        for (let index = list.length - 1; list.length > 5 && index > 0; index -= 1) {
+          if (Object.entries(detail).some(([other, items]) => other !== category && items.includes(list[index]))) list.splice(index, 1);
+        }
+        detail[category] = list;
+      }
+    }
+    Object.assign(data.cityPlaceQueries[cityKey], {"Burj Khalifa (At the Top)":"Burj Khalifa At the Top 1 Mohammed Bin Rashid Boulevard Downtown Dubai"});
+    const editorial = data.cityEditorialPageData[cityKey];
+    const count = new Set(Object.values(detail).flat()).size;
+    if (editorial?.trust) editorial.trust = editorial.trust.replace(/^All \d+ distinct recommendations/, `All ${count} distinct recommendations`);
+  }
+  // Milan, Italy: places added 2026-11-01 after the source review (docs/content-research/milan-2026-10-25.md).
+  {
+    const cityKey = "Milan, Italy";
+    const detail = data.cityGuideDetailData[cityKey];
+    const additions = {"Castello Sforzesco":["bestAttractions","bestFirstTimers","bestKids"]};
+    for (const [name, categories] of Object.entries(additions)) {
+      for (const category of categories) {
+        const list = [name, ...(detail[category] || []).filter((item) => item !== name)];
+        // Trim to 5 from the end, but never drop a place that appears in no other list.
+        for (let index = list.length - 1; list.length > 5 && index > 0; index -= 1) {
+          if (Object.entries(detail).some(([other, items]) => other !== category && items.includes(list[index]))) list.splice(index, 1);
+        }
+        detail[category] = list;
+      }
+    }
+    Object.assign(data.cityPlaceQueries[cityKey], {"Castello Sforzesco":"Castello Sforzesco Piazza Castello Milano"});
+    const editorial = data.cityEditorialPageData[cityKey];
+    const count = new Set(Object.values(detail).flat()).size;
+    if (editorial?.trust) editorial.trust = editorial.trust.replace(/^All \d+ distinct recommendations/, `All ${count} distinct recommendations`);
+  }
+  // Honolulu, United States: source review of 2026-11-01 (docs/content-research/honolulu-2026-11-01.md).
+  {
+    const cityKey = "Honolulu, United States";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Pearl Harbor National Memorial","Diamond Head State Monument","ʻIolani Palace","Bishop Museum"],
+      bestFirstTimers: ["Pearl Harbor National Memorial","Diamond Head State Monument","Battleship Missouri Memorial","Duke's Waikiki"],
+      bestRestaurants: ["Nico's Pier 38","Helena's Hawaiian Food","Mud Hen Water","Highway Inn (Kakaʻako)"],
+      bestBudget: ["KCC Farmers' Market","Rainbow Drive-In (Kapahulu)","Leonard's Bakery","Lyon Arboretum"],
+      bestLuxury: ["La Mer (Halekulani)","Lewers Lounge (Halekulani)","House Without a Key (Halekulani)","Shangri La tours from Honolulu Museum of Art"],
+      bestCouples: ["House Without a Key (Halekulani)","Mai Tai Bar (The Royal Hawaiian)","La Mer (Halekulani)","Lyon Arboretum"],
+      bestKids: ["Honolulu Zoo","Waikīkī Aquarium","Bishop Museum","Leonard's Bakery"],
+      bestSolo: ["Honolulu Museum of Art","Lyon Arboretum","Morning Glass Coffee","Bar Leather Apron"],
+      bestUnique: ["Shangri La tours from Honolulu Museum of Art","ʻIolani Palace","Lyon Arboretum","Bar Leather Apron"],
+      bestBreakfast: ["Koko Head Cafe","Liliha Bakery (Kuakini Street)","House Without a Key (Halekulani)","Morning Glass Coffee"],
+      bestLunch: ["Rainbow Drive-In (Kapahulu)","Highway Inn (Kakaʻako)","Helena's Hawaiian Food","Nico's Pier 38"],
+      bestDinner: ["Mud Hen Water","Side Street Inn (Hopaka Street)","Duke's Waikiki","La Mer (Halekulani)"],
+      bestCocktails: ["Mai Tai Bar (The Royal Hawaiian)","Lewers Lounge (Halekulani)","Bar Leather Apron","House Without a Key (Halekulani)"],
+      bestBakeries: ["Leonard's Bakery","Liliha Bakery (Kuakini Street)"],
+      bestCoffee: ["Honolulu Coffee (Moana Surfrider)","Island Vintage Coffee (Royal Hawaiian Center)","Morning Glass Coffee"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Pearl Harbor National Memorial": "Pearl Harbor National Memorial 1 Arizona Memorial Place Honolulu",
+      "Diamond Head State Monument": "Diamond Head State Monument Diamond Head Road Honolulu",
+      "ʻIolani Palace": "ʻIolani Palace 364 South King Street Honolulu",
+      "Bishop Museum": "Bishop Museum 1525 Bernice Street Honolulu",
+      "Battleship Missouri Memorial": "Battleship Missouri Memorial 63 Cowpens Street Honolulu",
+      "Duke's Waikiki": "Duke's Waikiki 2335 Kalakaua Avenue Honolulu",
+      "Nico's Pier 38": "Nico's Pier 38 1129 North Nimitz Highway Honolulu",
+      "Helena's Hawaiian Food": "Helena's Hawaiian Food 1240 North School Street Honolulu",
+      "Mud Hen Water": "Mud Hen Water 3452 Waialae Avenue Honolulu",
+      "Highway Inn (Kakaʻako)": "Highway Inn 680 Ala Moana Boulevard Honolulu",
+      "KCC Farmers' Market": "KCC Farmers Market 4303 Diamond Head Road Honolulu",
+      "Rainbow Drive-In (Kapahulu)": "Rainbow Drive-In 3308 Kanaina Avenue Honolulu",
+      "Leonard's Bakery": "Leonard's Bakery 933 Kapahulu Avenue Honolulu",
+      "Lyon Arboretum": "Lyon Arboretum 3860 Manoa Road Honolulu",
+      "La Mer (Halekulani)": "La Mer Halekulani 2199 Kalia Road Honolulu",
+      "Lewers Lounge (Halekulani)": "Lewers Lounge Halekulani 2199 Kalia Road Honolulu",
+      "House Without a Key (Halekulani)": "House Without a Key Halekulani 2199 Kalia Road Honolulu",
+      "Shangri La tours from Honolulu Museum of Art": "Honolulu Museum of Art 900 South Beretania Street Honolulu",
+      "Mai Tai Bar (The Royal Hawaiian)": "Mai Tai Bar Royal Hawaiian 2259 Kalakaua Avenue Honolulu",
+      "Honolulu Zoo": "Honolulu Zoo 151 Kapahulu Avenue Honolulu",
+      "Waikīkī Aquarium": "Waikiki Aquarium 2777 Kalakaua Avenue Honolulu",
+      "Honolulu Museum of Art": "Honolulu Museum of Art 900 South Beretania Street Honolulu",
+      "Morning Glass Coffee": "Morning Glass Coffee 2955 East Manoa Road Honolulu",
+      "Bar Leather Apron": "Bar Leather Apron 745 Fort Street Mall Honolulu",
+      "Koko Head Cafe": "Koko Head Cafe 1120 12th Avenue Honolulu",
+      "Liliha Bakery (Kuakini Street)": "Liliha Bakery 515 North Kuakini Street Honolulu",
+      "Side Street Inn (Hopaka Street)": "Side Street Inn 1225 Hopaka Street Honolulu",
+      "Honolulu Coffee (Moana Surfrider)": "Honolulu Coffee Moana Surfrider 2365 Kalakaua Avenue Honolulu",
+      "Island Vintage Coffee (Royal Hawaiian Center)": "Island Vintage Coffee 2301 Kalakaua Avenue Honolulu"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Honolulu" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Pearl Harbor, Diamond Head, ʻIolani Palace and the city's museums, with plate-lunch counters, bakeries, coffee bars and Waikīkī cocktail spots checked against their own websites.";
+    cityGuide.highlights = ["Pearl Harbor National Memorial","Diamond Head State Monument","ʻIolani Palace","Bishop Museum"];
+    cityGuide.tip = "Keep Mondays for Pearl Harbor or Bishop Museum, because the Honolulu Museum of Art closes on Mondays and Tuesdays and ʻIolani Palace lists tours Tuesday through Saturday only.";
+    data.destinationFacts[cityKey] = "Keep Mondays for Pearl Harbor or Bishop Museum, because the Honolulu Museum of Art closes on Mondays and Tuesdays and ʻIolani Palace lists tours Tuesday through Saturday only.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Pearl Harbor, Diamond Head, ʻIolani Palace and the city's museums, with plate-lunch counters, bakeries, coffee bars and Waikīkī cocktail spots checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays are thin",
+        "copy": "The Honolulu Museum of Art closes on Mondays and Tuesdays, and ʻIolani Palace lists tours Tuesday through Saturday only. Lyon Arboretum opens Monday through Friday, 9 am to 3 pm, and closes on weekends and State and Federal holidays."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Reserve the big two",
+        "copy": "Diamond Head State Monument requires non-residents to buy entry and parking reservations before arrival, with last entry at 4:30 pm. Pearl Harbor National Memorial recommends program reservations on recreation.gov and asks you to arrive an hour before your program time."
+      },
+      {
+        "label": "Walk-ins",
+        "value": "Sunset is first come",
+        "copy": "House Without a Key at Halekulani does not take reservations for its sunset cocktails and hula show. Bar Leather Apron recommends reservations and seats walk-ins based on availability."
+      },
+      {
+        "label": "Rules",
+        "value": "Bags, dress and age",
+        "copy": "Backpacks, purses and large bags are not allowed on the Battleship Missouri shuttle or ship, and ʻIolani Palace bars beachwear and large bags. Lewers Lounge admits only guests 21 and older and has a dress code that rules out flip-flops and swimwear."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Book Pearl Harbor and Diamond Head ahead, keep museum days away from Monday, and leave sunset for Waikīkī's hotel bars.",
+      intro: [
+        "Start with the reservations. Pearl Harbor National Memorial recommends booking USS Arizona programs on recreation.gov, and its hours page, last updated in October 2025, lists opening from 7 am to 5 pm daily and asks you to arrive an hour before your program. The Battleship Missouri Memorial on Ford Island lists daily opening from 8 am to 4 pm, but backpacks, purses and large bags are not allowed on its shuttle or the ship. At Diamond Head State Monument, non-residents must reserve entry and parking; the state lists 6 am to 6 pm daily, with last entry at 4:30 pm.",
+        "Downtown, ʻIolani Palace lists tours Tuesday through Saturday and highly recommends reservations, with walk-ins based on availability. You need a shirt and footwear, beachwear is not allowed, and large bags and backpacks stay outside. Bishop Museum opens daily from 9 am to 5 pm and lists Experience Ea Mai ʻEiwa: Patterns of Practice as now open. The Honolulu Museum of Art closes on Mondays and Tuesdays, stays open until 9 pm on Fridays and admits children 18 and under free. Its Shangri La tours include a round-trip shuttle, and tickets are released monthly on the first Thursday at 10am HST.",
+        "For local food, Nico's Pier 38 on North Nimitz Highway pairs a restaurant with a fish market, and Highway Inn in Kakaʻako runs pau hana specials on weekdays from 3 to 6 pm. Helena's Hawaiian Food lists Tuesday to Friday hours only, so plan around them. In Kapahulu, Leonard's Bakery lists daily hours from 5:30 am to 7 pm, and Rainbow Drive-In runs a Monday-to-Thursday happy hour from 3 to 5 pm. In Kaimukī, Mud Hen Water closes on Mondays and serves weekend brunch, while Koko Head Cafe serves brunch daily and dinner Friday through Monday.",
+        "Evenings lean on Waikīkī's hotels. At Halekulani, House Without a Key does not take reservations for sunset cocktails and its hula show, with Hawaiian music from 5:30 to 8:30 pm. La Mer opens Tuesday to Saturday, needs a credit card for every reservation and asks for elegant evening attire. Lewers Lounge admits only guests 21 and older and has light jazz nightly. At The Royal Hawaiian, the Mai Tai Bar has daily live music from 6 to 10 pm, and downtown, Bar Leather Apron opens Wednesday through Saturday and recommends booking ahead."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Reserve Pearl Harbor programs and Diamond Head entry ahead, then save ʻIolani Palace for a Tuesday-to-Saturday day, since it lists tours on those days only."
+        ],
+        [
+          "A slower morning",
+          "Lyon Arboretum in Mānoa opens Monday through Friday from 9 am to 3 pm with free admission and no reservations, and Morning Glass Coffee is also in Mānoa on East Manoa Road."
+        ],
+        [
+          "Before booking",
+          "La Mer requires a credit card for every reservation and charges $125 per absent guest for cancellations within 72 hours, while Shangri La tickets are released monthly on the first Thursday at 10am HST."
+        ]
+      ],
+      trust: "All 29 distinct recommendations in this guide were checked against their operators' own websites on November 1, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

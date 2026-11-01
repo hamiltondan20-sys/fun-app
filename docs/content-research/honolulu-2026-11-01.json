@@ -1,0 +1,874 @@
+{
+  "city": "Honolulu, United States",
+  "checkedOn": "2026-11-01",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Pearl Harbor National Memorial",
+      "kind": "landmark",
+      "url": "https://www.nps.gov/valr/index.htm",
+      "sourceType": "official public operator (National Park Service)",
+      "address": "1 Arizona Memorial Place, Honolulu, HI 96818",
+      "operatingEvidence": "NPS home page \"Last updated: July 30, 2026\"; \"Program reservations are recommended\" via recreation.gov. Hours page (https://www.nps.gov/valr/planyourvisit/hours.htm, last updated October 9, 2025) asks you to \"arrive on-site one hour before your scheduled program time\".",
+      "hours": "From the hours page last updated October 9, 2025: \"open seven days a week from 7 am to 5 pm\"; closed \"Thanksgiving Day, December 25, and January 1\". Last timed USS Arizona program \"is at 3:30 pm\".",
+      "confidence": "high"
+    },
+    {
+      "name": "Diamond Head State Monument",
+      "kind": "scenic",
+      "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/diamond-head-state-monument/",
+      "sourceType": "official public operator (Hawaiʻi DLNR Division of State Parks)",
+      "address": "\"The entrance is off Diamond Head Road between Makapu'u Avenue and 18th Avenue, Honolulu.\" (https://dlnr.hawaii.gov/dsp/hiking/oahu/diamond-head-summit-trail/)",
+      "operatingEvidence": "Park page carries state parks notices dated 8/27/26 and 10/29/26; entry and parking reservations are required for non-residents. Reservation FAQ (https://gostateparks.hawaii.gov/diamondhead/faq): fees \"must be purchased before arrival\", last reservation 4:00 pm.",
+      "hours": "\"6:00 am to 6:00 pm Daily – Last entry at 4:30pm for the 4:00pm reservation.\" \"Closed Christmas and New Years.\"",
+      "confidence": "high"
+    },
+    {
+      "name": "ʻIolani Palace",
+      "kind": "landmark",
+      "url": "https://www.iolanipalace.org/visit/",
+      "sourceType": "operator's own site",
+      "address": "364 South King Street, Honolulu, HI 96813 (corner of King St. and Richards St.)",
+      "operatingEvidence": "\"Various tours are currently offered Tuesday through Saturday.\" \"RESERVATIONS HIGHLY RECOMMENDED. Walk-ins are based on availability.\" No dated 2026 notice on the page.",
+      "hours": "Tours Tuesday through Saturday (times not listed); Ticket Office Tuesday–Saturday 8:30 a.m.–4:00 p.m.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bishop Museum",
+      "kind": "museum",
+      "url": "https://www.bishopmuseum.org/visit/",
+      "sourceType": "operator's own site",
+      "address": "\"1525 BERNICE STREET · HONOLULU, HAWAI‘I 96817\"",
+      "operatingEvidence": "Lists a concert on \"Friday, November 13, 2026\" with registration, and \"Experience Ea Mai ʻEiwa: Patterns of Practice\" as \"Now Open!\" (no end date).",
+      "hours": "\"OPEN DAILY 9AM - 5PM\"; \"Closed Thanksgiving, Christmas Eve, Christmas Day, and New Years.\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Honolulu Museum of Art",
+      "kind": "museum",
+      "url": "https://honolulumuseum.org/visit/",
+      "sourceType": "operator's own site",
+      "address": "900 South Beretania Street, Honolulu, Hawai‘i 96814",
+      "operatingEvidence": "Visit page with ticket booking, admission prices (adults $25, \"Children 18 and under: Free\") and a visitor brochure file dated 07132026.",
+      "hours": "Wednesday, Thursday, Saturday, Sunday 10am–6pm; Friday 10am–9pm; \"Monday and Tuesday: Closed\".",
+      "confidence": "medium"
+    },
+    {
+      "name": "Shangri La tours from Honolulu Museum of Art",
+      "kind": "museum",
+      "url": "https://honolulumuseum.org/shangri-la/",
+      "sourceType": "official partner operator (Honolulu Museum of Art)",
+      "address": "Tours depart from HoMA, 900 South Beretania Street, Honolulu, with round-trip shuttle included.",
+      "operatingEvidence": "Reservations required; \"Shangri La releases tickets monthly on the first Thursday of each month at 10am HST.\" Page says it looked forward to welcoming visitors back in October after a September closure.",
+      "hours": "Tours Thursdays and Fridays at 9am, 11am, 1pm and 3pm (HoMA listing).",
+      "confidence": "medium"
+    },
+    {
+      "name": "Honolulu Zoo",
+      "kind": "park",
+      "url": "https://www.honoluluzoo.org/",
+      "sourceType": "operator's own site",
+      "address": "151 Kapahulu Avenue, Honolulu, Hawaii 96815",
+      "operatingEvidence": "Home page lists current events (\"Octo-bear-fest: BOOS & BREWS\", \"Zoofari Gala\") and a ticket purchase link; footer \"© 2026\".",
+      "hours": "\"Open Daily 10:00 AM - 4:00 PM\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Waikīkī Aquarium",
+      "kind": "museum",
+      "url": "https://www.waikikiaquarium.org/",
+      "sourceType": "operator's own site",
+      "address": "\"2777 Kalakaua Avenue Honolulu, HI 96815\"",
+      "operatingEvidence": "\"The Waikīkī Aquarium is open while undergoing vital renovations\"; tickets sold at the front desk on arrival; no dated 2026 text.",
+      "hours": "\"9:00 a.m. - 4:30 p.m. daily\"; \"Facility closes at 5:00 p.m.\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Battleship Missouri Memorial",
+      "kind": "museum",
+      "url": "https://ussmissouri.org/contact-us",
+      "sourceType": "operator's own site",
+      "address": "\"Battleship Missouri Memorial, Historic Ford Island, Pearl Harbor, 63 Cowpens St., Honolulu, HI 96818\"",
+      "operatingEvidence": "Visit page (https://ussmissouri.org/visit): \"General Admission tickets are available daily\", sold at the Pearl Harbor Visitor Center with a complimentary shuttle; footer \"©2026\".",
+      "hours": "\"Open daily - 8:00am - 4:00pm\"; closed Thanksgiving Day, Christmas Day and New Year's Day.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Lyon Arboretum",
+      "kind": "park",
+      "url": "https://www.manoa.hawaii.edu/lyon/",
+      "sourceType": "official public operator (University of Hawaiʻi at Mānoa)",
+      "address": "\"3860 Mānoa Rd Honolulu, HI 96822\"",
+      "operatingEvidence": "\"Last Updated 10/28/26\"; posts on the \"2026 Fall Plant and Craft Sale\" (September 17, 2026) and Fall Nature Camp. \"No reservations are required at this time.\" Admission free, $10 suggested donation.",
+      "hours": "\"open to the public Monday through Friday from 9 am to 3 pm\"; closed weekends and State and Federal holidays; warns of \"last-minute closures due to construction\".",
+      "confidence": "high"
+    },
+    {
+      "name": "KCC Farmers' Market",
+      "kind": "market",
+      "url": "https://hfbf.org/markets/kcc/",
+      "sourceType": "official operator (Hawaiʻi Farm Bureau)",
+      "address": "\"4303 Diamond Head Rd, Honolulu, HI 96816\", Kapiolani Community College Parking Lot B",
+      "operatingEvidence": "Market page lists the weekly schedule and parking (Lots C and E); footer \"Hawaiʻi Farm Bureau ©2026\".",
+      "hours": "\"Saturdays | 7:30 – 11:00 am\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Leonard's Bakery",
+      "kind": "bakery",
+      "url": "https://www.leonardshawaii.com/",
+      "sourceType": "operator's own site",
+      "address": "\"933 KAPAHULU AVE\", Honolulu",
+      "operatingEvidence": "Home page publishes daily hours; footer \"© 2026 LEONARD'S BAKERY LTD.\"",
+      "hours": "\"DAILY: 5:30AM-7PM\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Liliha Bakery (Kuakini Street)",
+      "kind": "bakery",
+      "url": "https://www.lilihabakery.com/",
+      "sourceType": "operator's own site",
+      "address": "515 N. Kuakini St., Honolulu, HI 96817",
+      "operatingEvidence": "Lists six current branches, with Waikiki Beach Walk marked \"NOW OPEN!\"; footer \"© 2026 Liliha Bakery\".",
+      "hours": "Conflicting on the page: 6 am–10 pm daily in one listing, 6 am–4 pm (coffee shop until 3 pm) in another.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Rainbow Drive-In (Kapahulu)",
+      "kind": "meal",
+      "url": "https://rainbowdrivein.com/",
+      "sourceType": "operator's own site",
+      "address": "3308 Kanaina Ave., Honolulu, HI 96815",
+      "operatingEvidence": "Notice dated 8/16/26 about an early close that day; \"voted @staradvertiser 2026 Hawaiʻi's Best Diner, Drive-In & Dive!\"; 65th anniversary event; happy hour \"Monday-Thursday from 3-5 PM\".",
+      "hours": "not published",
+      "confidence": "high"
+    },
+    {
+      "name": "Helena's Hawaiian Food",
+      "kind": "meal",
+      "url": "https://www.helenashawaiianfood.com/",
+      "sourceType": "operator's own site",
+      "address": "\"1240 N. School St.\", Honolulu",
+      "operatingEvidence": "Publishes current opening days and holiday closure notices (years not stated); footer \"© 2026 All Rights Reserved\".",
+      "hours": "\"TUES-FRI: 10AM-7:30PM\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Highway Inn (Kakaʻako)",
+      "kind": "meal",
+      "url": "https://www.myhighwayinn.com/location-kakaako/",
+      "sourceType": "operator's own site",
+      "address": "\"680 Ala Moana Boulevard #105 Honolulu, HI 96813\"",
+      "operatingEvidence": "Home page promotes pau hana specials (graphic dated May 2026), \"weekdays, 3pm - 6pm\", and Thursday live music in Kakaʻako.",
+      "hours": "\"Mon–Thurs: 9:30 am – 8:00 pm\"; Fri and Sat 9:30 am – 8:30 pm; \"Sun: 9:30 am – 3:00 pm\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Nico's Pier 38",
+      "kind": "meal",
+      "url": "https://www.nicospier38.com/",
+      "sourceType": "operator's own site",
+      "address": "\"1129 North Nimitz Highway, Honolulu, HI 96817\"",
+      "operatingEvidence": "Music schedule dated November 1–3, 2026; restaurant and fish market hours published.",
+      "hours": "Monday–Saturday 6:30 AM–9:00 PM; Sunday 10:00 AM–9:00 PM (breakfast Mon–Sat 6:30–10:00 AM).",
+      "confidence": "high"
+    },
+    {
+      "name": "Side Street Inn (Hopaka Street)",
+      "kind": "meal",
+      "url": "https://www.sidestreetinn.com/",
+      "sourceType": "operator's own site",
+      "address": "1225 Hopaka St, Honolulu, HI 96814",
+      "operatingEvidence": "Lists current branches with hours and a reservations link; no 2026-dated content (copyright 2025).",
+      "hours": "Tue–Fri 4–8 PM; Sat & Sun 12–8 PM; closed Mondays.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Duke's Waikiki",
+      "kind": "meal",
+      "url": "https://www.dukeswaikiki.com/reservations-directions/",
+      "sourceType": "operator's own site",
+      "address": "\"2335 Kalakaua Ave, Suite 116 Honolulu, HI 96815\", at the Outrigger Waikiki Beach Resort",
+      "operatingEvidence": "Online and phone reservations; Dining Room \"(Reservations recommended)\"; footer \"© Copyright T S Restaurants 2026\".",
+      "hours": "Daily \"7:00am – 12:00am\" for breakfast, lunch and dinner.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Koko Head Cafe",
+      "kind": "meal",
+      "url": "https://www.kokoheadcafe.com/",
+      "sourceType": "operator's own site",
+      "address": "1120 12th Ave, Honolulu, HI 96816",
+      "operatingEvidence": "Publishes brunch and dinner hours and an OpenTable link (\"Make Dinner Reservations Here!!\"); latest dated content is from 2025.",
+      "hours": "Brunch Mon–Fri 8am–1pm, Sat–Sun 8am–2pm; dinner Friday–Monday 5pm–9pm.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mud Hen Water",
+      "kind": "meal",
+      "url": "https://www.mudhenwater.com/",
+      "sourceType": "operator's own site",
+      "address": "\"3452 Waialae Avenue, Honolulu, HI 96816\"",
+      "operatingEvidence": "Event dated 10/29/26 (wine pairing dinner, sold out); 2026 menus; reservations link.",
+      "hours": "Dinner Tue–Thu and Sun 5–9 pm, Fri–Sat 5–9:30 pm; brunch Sat–Sun 9:30 am–2 pm; \"Mondays : Closed\".",
+      "confidence": "high"
+    },
+    {
+      "name": "House Without a Key (Halekulani)",
+      "kind": "meal",
+      "url": "https://www.halekulani.com/dining/house-without-a-key/",
+      "sourceType": "operator's own site",
+      "address": "Halekulani, \"2199 Kalia Road Honolulu HI 96815\"",
+      "operatingEvidence": "Current hours (\"subject to change\"), OpenTable dinner reservations, \"Hawaii Food & Wine Festival 2026\" listing, \"©2026 Halekulani\".",
+      "hours": "Breakfast daily 7:00–10:30am; lunch 11:30am–4:00pm; dinner and sunset cocktails nightly 5:00–9:30pm; Hawaiian music 5:30–8:30pm, hula 6:30–8:30pm.",
+      "confidence": "high"
+    },
+    {
+      "name": "La Mer (Halekulani)",
+      "kind": "meal",
+      "url": "https://www.halekulani.com/dining/la-mer/",
+      "sourceType": "operator's own site",
+      "address": "Halekulani, 2199 Kalia Road, Honolulu HI 96815",
+      "operatingEvidence": "Cites its 2026 AAA Five Diamond and 2026 Forbes Travel Guide 5 Star awards; reservations taken with a credit card.",
+      "hours": "\"Tuesday to Saturday\", \"5:30pm – 8:30pm\".",
+      "confidence": "high"
+    },
+    {
+      "name": "Lewers Lounge (Halekulani)",
+      "kind": "bar",
+      "url": "https://www.halekulani.com/dining/lewers-lounge/",
+      "sourceType": "operator's own site",
+      "address": "Halekulani, 2199 Kalia Road, Honolulu HI 96815",
+      "operatingEvidence": "Current hours, nightly light jazz schedule and dress code published; footer \"©2026 Halekulani\".",
+      "hours": "Nightly from 7:00pm; closes 12:00am Sun–Mon, 12:30am Tue–Thu, 1:00am Fri–Sat.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mai Tai Bar (The Royal Hawaiian)",
+      "kind": "bar",
+      "url": "https://www.royal-hawaiian.com/dining-overview/mai-tai-bar/",
+      "sourceType": "operator's own site",
+      "address": "The Royal Hawaiian, 2259 Kalakaua Avenue, Honolulu, Hawaii 96815",
+      "operatingEvidence": "Hotel site has news dated 10.06.2026 and 08.04.2026; bar page lists \"daily live music from 6 – 10 PM\".",
+      "hours": "Cocktails 10:30 AM–11:00 PM (last call 10:45 PM); lunch and dinner 11:00 AM–10:00 PM.",
+      "confidence": "high"
+    },
+    {
+      "name": "Bar Leather Apron",
+      "kind": "bar",
+      "url": "https://barleatherapron.com/",
+      "sourceType": "operator's own site",
+      "address": "\"745 Fort Street Mall Suite #127, Honolulu, HI 96813\"",
+      "operatingEvidence": "Takes reservation requests up to one month ahead (\"Reservations highly recommended, walk-ins welcomed based on availability\"); no 2026-dated content (footer ©2016).",
+      "hours": "\"Wednesday through Saturday from 5:00pm till midnight.\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Honolulu Coffee (Moana Surfrider)",
+      "kind": "cafe",
+      "url": "https://www.honolulucoffee.com/pages/locations",
+      "sourceType": "operator's own site",
+      "address": "2365 Kalakaua Ave., Honolulu, HI 96815",
+      "operatingEvidence": "Links a \"new-2026-makahiki-seasonal-menu\" and shows a \"2026 Best of Honolulu\" badge; footer \"© 2026, Honolulu Coffee\".",
+      "hours": "Mon–Sun 5:30am–8:00pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Island Vintage Coffee (Royal Hawaiian Center)",
+      "kind": "cafe",
+      "url": "https://www.islandvintagecoffee.com/pages/locations",
+      "sourceType": "operator's own site",
+      "address": "2301 Kalakaua Avenue #C215, Honolulu",
+      "operatingEvidence": "Locations page publishes current daily and kitchen hours; 2026 logo asset only.",
+      "hours": "\"Daily 5AM - 10PM\"; kitchen 5AM–9:30PM",
+      "confidence": "medium"
+    },
+    {
+      "name": "Morning Glass Coffee",
+      "kind": "cafe",
+      "url": "https://www.morningglasscoffee.com/",
+      "sourceType": "operator's own site",
+      "address": "\"2955 East Manoa Road, Honolulu, HI 96822\"",
+      "operatingEvidence": "Home page publishes current opening and kitchen hours; no 2026-dated content.",
+      "hours": "\"Tuesday–Friday 7am–2pm\"; \"Saturday–Sunday 8am–2pm\"; Monday not listed.",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Waikiki Beach",
+      "reason": "Public beach with no single operator page; no official address page read, so not confirmable under the evidence rules.",
+      "url": ""
+    },
+    {
+      "name": "Hanauma Bay Nature Preserve",
+      "reason": "City news pages (July 2, 2026) confirm it is closed Mondays and Tuesdays, but no official page read gives an address or exact location; https://www.honolulu.gov/parks/hanauma-bay/ returned 404 and parks.honolulu.gov did not resolve.",
+      "url": "https://www.honolulu.gov/dpr/dpr-news/sewer-system-improvements-to-begin-at-hanauma-bay-nature-ppreserve/"
+    },
+    {
+      "name": "Foster Botanical Garden",
+      "reason": "Official City page could not be found (HTTP 404); no official address or hours read.",
+      "url": "https://www.honolulu.gov/parks/hbg/foster-botanical-garden/"
+    },
+    {
+      "name": "Ted's Bakery",
+      "reason": "Fetch failed with an SSL handshake error; not bypassed. Not evidence of closure.",
+      "url": "https://www.tedsbakery.com/"
+    },
+    {
+      "name": "Eggs 'n Things (Waikiki Beach Eggspress)",
+      "reason": "Home page names the branch but gives no address or hours; latest dated content March 2024.",
+      "url": "https://www.eggsnthings.com/"
+    },
+    {
+      "name": "Kona Coffee Purveyors",
+      "reason": "Address shown (2330 Kalakaua Ave #160) but no hours or operating notice beyond a footer copyright; first two fetches returned HTTP 429.",
+      "url": "https://www.konacoffeepurveyors.com/"
+    },
+    {
+      "name": "Diamond Head morning",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "North Shore day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Kaimuki food crawl",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Poke lunch",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Plate lunch",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A Waikiki sunset dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Kaimuki",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Ala Moana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Waikiki",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Waikiki walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Kaimuki",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Ala Moana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Ala Moana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Waikiki Beach",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Waikiki",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Diamond Head morning",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Kaimuki",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Diamond Head",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Waikiki evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Kaimuki",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Ala Moana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Waikiki",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Waikiki Beach",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Kaimuki",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Ala Moana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Waikiki",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Waikiki Beach",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Waikiki cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided North Shore day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Ala Moana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Ala Moana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Waikiki",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Waikiki",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Kaimuki bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Waikiki Beach",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Ala Moana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Waikiki",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Diamond Head",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Ala Moana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Waikiki",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Kaimuki",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Ala Moana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Waikiki",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Waikiki",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Kaimuki",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Pearl Harbor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Waikiki",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Kaimuki morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Waikiki Beach",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Ala Moana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Waikiki",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Kaimuki",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Ala Moana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Pearl Harbor National Memorial",
+        "Diamond Head State Monument",
+        "ʻIolani Palace",
+        "Bishop Museum"
+      ],
+      "bestFirstTimers": [
+        "Pearl Harbor National Memorial",
+        "Diamond Head State Monument",
+        "Battleship Missouri Memorial",
+        "Duke's Waikiki"
+      ],
+      "bestRestaurants": [
+        "Nico's Pier 38",
+        "Helena's Hawaiian Food",
+        "Mud Hen Water",
+        "Highway Inn (Kakaʻako)"
+      ],
+      "bestBudget": [
+        "KCC Farmers' Market",
+        "Rainbow Drive-In (Kapahulu)",
+        "Leonard's Bakery",
+        "Lyon Arboretum"
+      ],
+      "bestLuxury": [
+        "La Mer (Halekulani)",
+        "Lewers Lounge (Halekulani)",
+        "House Without a Key (Halekulani)",
+        "Shangri La tours from Honolulu Museum of Art"
+      ],
+      "bestCouples": [
+        "House Without a Key (Halekulani)",
+        "Mai Tai Bar (The Royal Hawaiian)",
+        "La Mer (Halekulani)",
+        "Lyon Arboretum"
+      ],
+      "bestKids": [
+        "Honolulu Zoo",
+        "Waikīkī Aquarium",
+        "Bishop Museum",
+        "Leonard's Bakery"
+      ],
+      "bestSolo": [
+        "Honolulu Museum of Art",
+        "Lyon Arboretum",
+        "Morning Glass Coffee",
+        "Bar Leather Apron"
+      ],
+      "bestUnique": [
+        "Shangri La tours from Honolulu Museum of Art",
+        "ʻIolani Palace",
+        "Lyon Arboretum",
+        "Bar Leather Apron"
+      ],
+      "bestBreakfast": [
+        "Koko Head Cafe",
+        "Liliha Bakery (Kuakini Street)",
+        "House Without a Key (Halekulani)",
+        "Morning Glass Coffee"
+      ],
+      "bestLunch": [
+        "Rainbow Drive-In (Kapahulu)",
+        "Highway Inn (Kakaʻako)",
+        "Helena's Hawaiian Food",
+        "Nico's Pier 38"
+      ],
+      "bestDinner": [
+        "Mud Hen Water",
+        "Side Street Inn (Hopaka Street)",
+        "Duke's Waikiki",
+        "La Mer (Halekulani)"
+      ],
+      "bestCocktails": [
+        "Mai Tai Bar (The Royal Hawaiian)",
+        "Lewers Lounge (Halekulani)",
+        "Bar Leather Apron",
+        "House Without a Key (Halekulani)"
+      ],
+      "bestBakeries": [
+        "Leonard's Bakery",
+        "Liliha Bakery (Kuakini Street)"
+      ],
+      "bestCoffee": [
+        "Honolulu Coffee (Moana Surfrider)",
+        "Island Vintage Coffee (Royal Hawaiian Center)",
+        "Morning Glass Coffee"
+      ]
+    },
+    "queries": {
+      "Pearl Harbor National Memorial": "Pearl Harbor National Memorial 1 Arizona Memorial Place Honolulu",
+      "Diamond Head State Monument": "Diamond Head State Monument Diamond Head Road Honolulu",
+      "ʻIolani Palace": "ʻIolani Palace 364 South King Street Honolulu",
+      "Bishop Museum": "Bishop Museum 1525 Bernice Street Honolulu",
+      "Honolulu Museum of Art": "Honolulu Museum of Art 900 South Beretania Street Honolulu",
+      "Shangri La tours from Honolulu Museum of Art": "Honolulu Museum of Art 900 South Beretania Street Honolulu",
+      "Honolulu Zoo": "Honolulu Zoo 151 Kapahulu Avenue Honolulu",
+      "Waikīkī Aquarium": "Waikiki Aquarium 2777 Kalakaua Avenue Honolulu",
+      "Battleship Missouri Memorial": "Battleship Missouri Memorial 63 Cowpens Street Honolulu",
+      "Lyon Arboretum": "Lyon Arboretum 3860 Manoa Road Honolulu",
+      "KCC Farmers' Market": "KCC Farmers Market 4303 Diamond Head Road Honolulu",
+      "Leonard's Bakery": "Leonard's Bakery 933 Kapahulu Avenue Honolulu",
+      "Liliha Bakery (Kuakini Street)": "Liliha Bakery 515 North Kuakini Street Honolulu",
+      "Rainbow Drive-In (Kapahulu)": "Rainbow Drive-In 3308 Kanaina Avenue Honolulu",
+      "Helena's Hawaiian Food": "Helena's Hawaiian Food 1240 North School Street Honolulu",
+      "Highway Inn (Kakaʻako)": "Highway Inn 680 Ala Moana Boulevard Honolulu",
+      "Nico's Pier 38": "Nico's Pier 38 1129 North Nimitz Highway Honolulu",
+      "Side Street Inn (Hopaka Street)": "Side Street Inn 1225 Hopaka Street Honolulu",
+      "Duke's Waikiki": "Duke's Waikiki 2335 Kalakaua Avenue Honolulu",
+      "Koko Head Cafe": "Koko Head Cafe 1120 12th Avenue Honolulu",
+      "Mud Hen Water": "Mud Hen Water 3452 Waialae Avenue Honolulu",
+      "House Without a Key (Halekulani)": "House Without a Key Halekulani 2199 Kalia Road Honolulu",
+      "La Mer (Halekulani)": "La Mer Halekulani 2199 Kalia Road Honolulu",
+      "Lewers Lounge (Halekulani)": "Lewers Lounge Halekulani 2199 Kalia Road Honolulu",
+      "Mai Tai Bar (The Royal Hawaiian)": "Mai Tai Bar Royal Hawaiian 2259 Kalakaua Avenue Honolulu",
+      "Bar Leather Apron": "Bar Leather Apron 745 Fort Street Mall Honolulu",
+      "Honolulu Coffee (Moana Surfrider)": "Honolulu Coffee Moana Surfrider 2365 Kalakaua Avenue Honolulu",
+      "Island Vintage Coffee (Royal Hawaiian Center)": "Island Vintage Coffee 2301 Kalakaua Avenue Honolulu",
+      "Morning Glass Coffee": "Morning Glass Coffee 2955 East Manoa Road Honolulu"
+    },
+    "summary": "Pearl Harbor, Diamond Head, ʻIolani Palace and the city's museums, with plate-lunch counters, bakeries, coffee bars and Waikīkī cocktail spots checked against their own websites.",
+    "highlights": [
+      "Pearl Harbor National Memorial",
+      "Diamond Head State Monument",
+      "ʻIolani Palace",
+      "Bishop Museum"
+    ],
+    "tip": "Keep Mondays for Pearl Harbor or Bishop Museum, because the Honolulu Museum of Art closes on Mondays and Tuesdays and ʻIolani Palace lists tours Tuesday through Saturday only.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mondays are thin",
+        "copy": "The Honolulu Museum of Art closes on Mondays and Tuesdays, and ʻIolani Palace lists tours Tuesday through Saturday only. Lyon Arboretum opens Monday through Friday, 9 am to 3 pm, and closes on weekends and State and Federal holidays."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Reserve the big two",
+        "copy": "Diamond Head State Monument requires non-residents to buy entry and parking reservations before arrival, with last entry at 4:30 pm. Pearl Harbor National Memorial recommends program reservations on recreation.gov and asks you to arrive an hour before your program time."
+      },
+      {
+        "label": "Walk-ins",
+        "value": "Sunset is first come",
+        "copy": "House Without a Key at Halekulani does not take reservations for its sunset cocktails and hula show. Bar Leather Apron recommends reservations and seats walk-ins based on availability."
+      },
+      {
+        "label": "Rules",
+        "value": "Bags, dress and age",
+        "copy": "Backpacks, purses and large bags are not allowed on the Battleship Missouri shuttle or ship, and ʻIolani Palace bars beachwear and large bags. Lewers Lounge admits only guests 21 and older and has a dress code that rules out flip-flops and swimwear."
+      }
+    ],
+    "dek": "Book Pearl Harbor and Diamond Head ahead, keep museum days away from Monday, and leave sunset for Waikīkī's hotel bars.",
+    "intro": [
+      "Start with the reservations. Pearl Harbor National Memorial recommends booking USS Arizona programs on recreation.gov, and its hours page, last updated in October 2025, lists opening from 7 am to 5 pm daily and asks you to arrive an hour before your program. The Battleship Missouri Memorial on Ford Island lists daily opening from 8 am to 4 pm, but backpacks, purses and large bags are not allowed on its shuttle or the ship. At Diamond Head State Monument, non-residents must reserve entry and parking; the state lists 6 am to 6 pm daily, with last entry at 4:30 pm.",
+      "Downtown, ʻIolani Palace lists tours Tuesday through Saturday and highly recommends reservations, with walk-ins based on availability. You need a shirt and footwear, beachwear is not allowed, and large bags and backpacks stay outside. Bishop Museum opens daily from 9 am to 5 pm and lists Experience Ea Mai ʻEiwa: Patterns of Practice as now open. The Honolulu Museum of Art closes on Mondays and Tuesdays, stays open until 9 pm on Fridays and admits children 18 and under free. Its Shangri La tours include a round-trip shuttle, and tickets are released monthly on the first Thursday at 10am HST.",
+      "For local food, Nico's Pier 38 on North Nimitz Highway pairs a restaurant with a fish market, and Highway Inn in Kakaʻako runs pau hana specials on weekdays from 3 to 6 pm. Helena's Hawaiian Food lists Tuesday to Friday hours only, so plan around them. In Kapahulu, Leonard's Bakery lists daily hours from 5:30 am to 7 pm, and Rainbow Drive-In runs a Monday-to-Thursday happy hour from 3 to 5 pm. In Kaimukī, Mud Hen Water closes on Mondays and serves weekend brunch, while Koko Head Cafe serves brunch daily and dinner Friday through Monday.",
+      "Evenings lean on Waikīkī's hotels. At Halekulani, House Without a Key does not take reservations for sunset cocktails and its hula show, with Hawaiian music from 5:30 to 8:30 pm. La Mer opens Tuesday to Saturday, needs a credit card for every reservation and asks for elegant evening attire. Lewers Lounge admits only guests 21 and older and has light jazz nightly. At The Royal Hawaiian, the Mai Tai Bar has daily live music from 6 to 10 pm, and downtown, Bar Leather Apron opens Wednesday through Saturday and recommends booking ahead."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Reserve Pearl Harbor programs and Diamond Head entry ahead, then save ʻIolani Palace for a Tuesday-to-Saturday day, since it lists tours on those days only."
+      ],
+      [
+        "A slower morning",
+        "Lyon Arboretum in Mānoa opens Monday through Friday from 9 am to 3 pm with free admission and no reservations, and Morning Glass Coffee is also in Mānoa on East Manoa Road."
+      ],
+      [
+        "Before booking",
+        "La Mer requires a credit card for every reservation and charges $125 per absent guest for cancellations within 72 hours, while Shangri La tickets are released monthly on the first Thursday at 10am HST."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Pearl Harbor National Memorial's hours come from an NPS page last updated October 9, 2025, and several places (Leonard's Bakery, Liliha Bakery, Duke's Waikiki, Helena's Hawaiian Food, KCC Farmers' Market, Battleship Missouri Memorial, Island Vintage Coffee) show 2026 only as a footer or asset date, so their hours are as listed rather than confirmed current. Side Street Inn, Koko Head Cafe, Morning Glass Coffee, Bar Leather Apron, ʻIolani Palace and Waikīkī Aquarium publish no 2026-dated content. Liliha Bakery's page gives two conflicting sets of hours, Rainbow Drive-In publishes no regular hours, ʻIolani Palace gives no tour times, and the Waikīkī Aquarium is open during renovations. Hanauma Bay (no official address page found), Foster Botanical Garden (official page 404) and Ted's Bakery (SSL error) could not be confirmed; Kona Coffee Purveyors and Eggs 'n Things lacked hours or an address. State parks posted hurricane-recovery notices on 10/29/26 for other parks; check Diamond Head before you go.",
+  "injectionLikeText": [],
+  "injectionLikeTextIgnored": [
+    "https://ussmissouri.org/contact-us: the first WebFetch summary claimed the page 'includes text telling an AI to quote the street address...' (an echo of the review prompt). A second, neutral read reported no such text. Treated as a false flag; not browser-verified.",
+    "https://honolulumuseum.org/visit/: the first WebFetch summary mentioned 'some embedded instructions' it disregarded; a second read asking specifically found 'no embedded instructions or text addressed to an AI'. Treated as a false flag; not browser-verified.",
+    "2026-11-01: both pages were opened in a browser and their full HTML searched. Honolulu Museum of Art has no AI-directed text; the USS Missouri page only carries CSS for an accessibility widget (aioa-ai-assistant), with no instructions."
+  ]
+}

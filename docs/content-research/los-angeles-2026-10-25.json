@@ -635,5 +635,31 @@
     ]
   },
   "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The Getty Center, California Science Center, Sqirl, Joan's on Third, Intelligentsia Silver Lake, The Huntington, Petersen Automotive Museum, Go Get Em Tiger, Hauser & Wirth and several others could not be read (403, 429 rate limits, certificate errors, 404s or empty pages) and are left out; a fetch failure is not evidence of closure. The Museum at La Brea Tar Pits reports it is temporarily closed for construction. Hours were not published or readable for the Hollywood Bowl, Santa Monica Pier, The Last Bookstore, Employees Only LA and The Roger Room (hours shown only as an image). Courage Bagels shows conflicting hours (Thursday-Monday versus a 'weekends only' banner). Several confirmed sites (Bestia, Bavel, Gjelina, Musso & Frank Grill, Santa Monica Pier, Employees Only LA, The Roger Room, Thunderbolt) carry no dated 2026 content and rest on live booking links and posted hours. The Santa Monica Pier address is the Pier Corporation's office on the pier.",
-  "injectionLikeText": []
+  "injectionLikeText": [],
+  "additions": [
+    {
+      "checkedOn": "2026-11-01",
+      "method": "The Getty's site returned no readable text to automated reading during the review. It was then read on the Getty's own visit page in a browser; no review sites, maps or blogs were used.",
+      "places": [
+        {
+          "name": "The Getty Center",
+          "url": "https://www.getty.edu/visit/center/",
+          "sourceType": "operator's own site (J. Paul Getty Trust)",
+          "address": "1200 Getty Center Drive, Los Angeles, CA 90049",
+          "operatingEvidence": "The visit page says \"Admission is free, and requires a timed-entry reservation\", publishes weekly hours, and lists the exhibition Instante/revelación: Moments in Mexican Photography from September 1, 2026 to January 3, 2027.",
+          "hours": "Tuesday-Friday and Sunday 10am-6:30pm; Saturday 10am-9pm; closed Monday",
+          "query": "The Getty Center 1200 Getty Center Drive Los Angeles",
+          "categories": [
+            "bestAttractions",
+            "bestFirstTimers",
+            "bestCouples",
+            "bestBudget"
+          ],
+          "replacesExcluded": [
+            "The Getty Center"
+          ]
+        }
+      ]
+    }
+  ]
 }
