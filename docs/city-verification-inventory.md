@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 88.
-- Classifier-passed (published, not fully documented in that format): 104.
+- Source-verified (complete dated evidence format): 89.
+- Classifier-passed (published, not fully documented in that format): 103.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -111,7 +111,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Cali, Colombia | cali | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Cambridge, United Kingdom | cambridge | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Canberra, Australia | canberra | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Cancun, Mexico | cancun | classifier-passed | not-reviewed | 0 | 18 | 15 | 7 | None |
+| Cancun, Mexico | cancun | source-verified | source-checked | 25 | 53 | 15 | 15 | None |
 | Cannes, France | cannes | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Cape Town, South Africa | cape-town | source-verified | source-checked | 27 | 54 | 15 | 15 | None |
 | Cappadocia, Turkey | cappadocia | held-back | not-reviewed | 0 | 3 | 15 | 3 | has 3 named places across 3 categories; needs at least 5 named places across 3 categories |

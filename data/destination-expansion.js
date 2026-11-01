@@ -9216,4 +9216,110 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on November 1, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Cancun, Mexico: source review of 2026-11-01 (docs/content-research/cancun-2026-11-01.md).
+  {
+    const cityKey = "Cancun, Mexico";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Museo Maya de Cancún","Zona Arqueológica El Rey","Zona Arqueológica El Meco","Garrafón Reef Natural Park"],
+      bestFirstTimers: ["Museo Maya de Cancún","Zona Arqueológica El Rey","Puerto Madero Cancún","Coco Bongo Cancún"],
+      bestRestaurants: ["Puerto Madero Cancún","Ilios Cancún","Fred's House","La Habichuela"],
+      bestBudget: ["Zona Arqueológica El Meco","Zona Arqueológica El Rey","Ah Cacao (Huayacán)","Café Antoinette (Xpuhil)"],
+      bestLuxury: ["NIZUC Spa by ESPA","Fantino","Bar A-Kan (NIZUC)","KAYANTÁ Spa"],
+      bestCouples: ["Casitas On The Beach","D-Lounge","Ilios Cancún","Xoximilco Cancún"],
+      bestKids: ["Museo Maya de Cancún","Garrafón Reef Natural Park","Zona Arqueológica El Rey"],
+      bestSolo: ["Zona Arqueológica El Meco","Museo Maya de Cancún","Café Antoinette (Xpuhil)"],
+      bestUnique: ["Xoximilco Cancún","Coco Bongo Cancún","Zona Arqueológica El Meco"],
+      bestBreakfast: ["El Café Mexicano","Café de la Playa (NIZUC)","Café Antoinette (Xpuhil)","Café Antoinette (Puerto Cancún)"],
+      bestLunch: ["The Caribe Bar & Grill","El Café Mexicano","Fred's House","La Habichuela"],
+      bestDinner: ["Lorenzillo's Cancún","Harry's Cancún","Puerto Madero Cancún","Casitas On The Beach"],
+      bestCocktails: ["D-Lounge","Bar A-Kan (NIZUC)","Señor Frog's Cancún","Coco Bongo Cancún"],
+      bestBakeries: ["Café Antoinette (Xpuhil)","Café Antoinette (Puerto Cancún)"],
+      bestCoffee: ["Ah Cacao (Huayacán)","Café Antoinette (Xpuhil)","El Café Mexicano"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Museo Maya de Cancún": "Museo Maya de Cancún Boulevard Kukulcán Km 16 Cancún",
+      "Zona Arqueológica El Rey": "Zona Arqueológica El Rey Boulevard Kukulcán Km 18 Cancún",
+      "Zona Arqueológica El Meco": "Zona Arqueológica El Meco Carretera Puerto Juárez Punta Sam Km 2.7 Cancún",
+      "Garrafón Reef Natural Park": "Garrafón Reef Natural Park Carretera Garrafón Km 6 Isla Mujeres",
+      "Puerto Madero Cancún": "Puerto Madero Blvd. Kukulcán Km 14.1 Cancún",
+      "Coco Bongo Cancún": "Coco Bongo Blvd. Kukulcán Km 9.5 Plaza Forum By The Sea Cancún",
+      "Ilios Cancún": "Ilios Blvd. Kukulcán Km 13.5 Cancún",
+      "Fred's House": "Fred's House Blvd. Kukulcán Km 14.5 Cancún",
+      "La Habichuela": "La Habichuela Calle Margaritas 25 Cancún",
+      "Ah Cacao (Huayacán)": "Ah Cacao Soriana Híper Avenida Huayacán Cancún",
+      "Café Antoinette (Xpuhil)": "Café Antoinette Calle Xpuhil esquina Av. Nichupté Cancún",
+      "NIZUC Spa by ESPA": "NIZUC Spa Blvd Kukulcán Km 21.26 Punta Nizuc Cancún",
+      "Fantino": "Fantino Kempinski Hotel Cancún Retorno del Rey 36 Cancún",
+      "Bar A-Kan (NIZUC)": "Bar A-Kan NIZUC Blvd Kukulcán Km 21.26 Cancún",
+      "KAYANTÁ Spa": "KAYANTÁ Spa Kempinski Hotel Cancún Retorno del Rey 36 Cancún",
+      "Casitas On The Beach": "Casitas Kempinski Hotel Cancún Retorno del Rey 36 Cancún",
+      "D-Lounge": "D-Lounge Kempinski Hotel Cancún Retorno del Rey 36 Cancún",
+      "Xoximilco Cancún": "Xoximilco Carretera Federal Cancún-Puerto Morelos Km 307",
+      "El Café Mexicano": "El Café Mexicano Kempinski Hotel Cancún Retorno del Rey 36 Cancún",
+      "Café de la Playa (NIZUC)": "Café de la Playa NIZUC Blvd Kukulcán Km 21.26 Cancún",
+      "Café Antoinette (Puerto Cancún)": "Café Antoinette Puerto Cancún Blvd. Kukulcán Cancún",
+      "The Caribe Bar & Grill": "The Caribe Bar & Grill Kempinski Hotel Cancún Retorno del Rey 36 Cancún",
+      "Lorenzillo's Cancún": "Lorenzillo's Blvd. Kukulcán Km 10.5 Cancún",
+      "Harry's Cancún": "Harry's Blvd. Kukulcán Km 14.2 Cancún",
+      "Señor Frog's Cancún": "Señor Frog's Blvd. Kukulcán Km 9.5 Punta Cancún Cancún"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Cancun" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Maya museums and archaeological sites, Hotel Zone dinners, beach-hotel breakfasts and sunset bars, and an Isla Mujeres reef park, checked against their own websites.";
+    cityGuide.highlights = ["Museo Maya de Cancún","Zona Arqueológica El Rey","Zona Arqueológica El Meco","Garrafón Reef Natural Park"];
+    cityGuide.tip = "Plan Museo Maya de Cancún for Tuesday to Sunday, since it is closed on Mondays, while Zona Arqueológica El Rey opens every day from 8:00 to 17:00.";
+    data.destinationFacts[cityKey] = "Plan Museo Maya de Cancún for Tuesday to Sunday, since it is closed on Mondays, while Zona Arqueológica El Rey opens every day from 8:00 to 17:00.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Maya museums and archaeological sites, Hotel Zone dinners, beach-hotel breakfasts and sunset bars, and an Isla Mujeres reef park, checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays",
+        "copy": "Museo Maya de Cancún opens Tuesday to Sunday and is closed on Mondays, and Xoximilco Cancún runs Tuesday to Saturday only. Zona Arqueológica El Rey and El Meco open every day."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book ahead",
+        "copy": "Your Museo Maya de Cancún ticket ($210 MXN for foreign visitors) also covers the San Miguelito archaeological zone. Puerto Madero Cancún takes reservations online, and Xoximilco gives online discounts when you book at least 7 days ahead."
+      },
+      {
+        "label": "Last entry",
+        "value": "Arrive early",
+        "copy": "Museo Maya de Cancún stops gallery entry at 17:00 and San Miguelito entry at 16:30. NIZUC Spa by ESPA asks you to arrive up to 90 minutes before a treatment and charges 100% for cancellations within 24 hours."
+      },
+      {
+        "label": "Age and dress rules",
+        "value": "Check before you go",
+        "copy": "Coco Bongo Cancún admits only over-18s with valid official ID and asks for smart casual dress. Xoximilco's minimum age is 5, NIZUC Spa treatments are for over-16s, and Fantino's dress code is smart casual."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Put the Maya sites on a weekday morning other than Monday, then book a Hotel Zone dinner ahead.",
+      intro: [
+        "This Cancún guide pairs Maya history with Hotel Zone dining, and every place in it was checked on its own website or on the public body that runs it. Museo Maya de Cancún, run by INAH at Km 16 of Boulevard Kukulcán, opens Tuesday to Sunday from 9:00 to 18:00, with last entry to the galleries at 17:00 and to the San Miguelito archaeological zone at 16:30. One ticket covers both: INAH lists $210 MXN for foreign visitors, with free entry if you are over 60 or under 13.",
+        "Two more INAH sites round out the history. Zona Arqueológica El Rey, at Km 18 of Boulevard Kukulcán, opens every day from 8:00 to 17:00, with general admission listed at $145 pesos. North of the city, El Meco sits at Km 2.7 of the road from Puerto Juárez to Punta Sam and opens daily from 08:00 to 16:30, with free entry on Sundays. For a day on Isla Mujeres, Garrafón Reef Natural Park's website lists Tuesday to Sunday opening, with boats from Playa Langosta in Cancún included in its packages.",
+        "Dinner in the Hotel Zone mostly faces the lagoon or the sea. Puerto Madero at Km 14.1 opens Monday to Sunday from 13:00 to 01:00 and asks you to book online. Fred's House at Km 14.5 opens daily from noon to midnight, and Ilios at Km 13.5 lists a 5:00 pm opening on its website. Downtown, La Habichuela on Calle Margaritas says it is open 365 days a year. At Kempinski Hotel Cancún, Casitas On The Beach serves dinner daily from 19:00, and the D-Lounge bar opens at 17:00 for sunset cocktails.",
+        "Evenings and mornings have their own rules. Coco Bongo at Km 9.5 admits only over-18s with valid official ID and asks for smart casual dress. Xoximilco, on the Cancún–Puerto Morelos highway, runs Tuesday to Saturday with check-in from 7:00 p.m. and a minimum age of 5. For a slower start, El Café Mexicano at the Kempinski serves breakfast every day from 7:00, and Café Antoinette's website lists 7am opening at its Xpuhil and Puerto Cancún branches. NIZUC Spa by ESPA opens daily from 9:00am to 9:00pm, with treatments for over-16s."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Start at Museo Maya de Cancún, open Tuesday to Sunday, where one ticket also covers the San Miguelito ruins, then add Zona Arqueológica El Rey, which opens every day."
+        ],
+        [
+          "A slower morning",
+          "Have breakfast at El Café Mexicano in Kempinski Hotel Cancún from 7:00, or at Café Antoinette on Calle Xpuhil, whose website lists a 7am opening."
+        ],
+        [
+          "Before booking",
+          "Remember that Museo Maya de Cancún is closed on Mondays, Xoximilco runs Tuesday to Saturday, and Coco Bongo admits only over-18s with official ID."
+        ]
+      ],
+      trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on November 1, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

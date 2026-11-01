@@ -5,6 +5,442 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Cancun, Mexico": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-11-01",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several sites carry no 2026-dated content, so their hours are attributed to the website rather than stated as current: Lorenzillo's, La Habichuela, Ilios, Harry's, Garrafón, Señor Frog's (2023 group menu) and Café Antoinette (undated pages). Harry's lists hours that appear to be an error, and Fantino, KAYANTÁ Spa, Café de la Playa and Bar A-Kan publish no regular hours; NIZUC does not say whether non-guests can book its restaurants. RosaNegra's page could not be read, Ultramar's ferry sites refused or reset the connection, Xailing returned 403, and the Bisquets Obregón branch list did not load; none of these failures is evidence of closure. Ventura Park says it is closed indefinitely and The Club Grill is paused. Most named cafés, bakeries and taquerías in the original list had no official website.",
+    "sourceUrls": [
+      "docs/content-research/cancun-2026-11-01.md",
+      "docs/content-research/cancun-2026-11-01.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Hotel Zone beaches",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Isla Mujeres day access",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Lagoon side views",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public beach time",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Downtown tacos",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Simple ferry-style day outing",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private catamaran day",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "High-end resort spa",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Chef-driven beachfront dinner",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset catamaran",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Beach club day",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Lagoon dinner",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Interactive aquarium",
+        "url": "https://www.interactiveaquarium.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "generic as written; the Interactive Aquarium Cancún domain (interactiveaquarium.com) is a domain-for-sale page and no official operator site was found"
+      },
+      {
+        "name": "Gentle beach day",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly resort pool time",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Beach morning",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Downtown food stop",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Isla Mujeres easy day trip",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Hotel Zone beach day",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "One island outing",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Resort and dinner balance",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Cenote stop",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Lagoon side sunset",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Quiet beach section away from the main stretch",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Rooftop at the Hotel Zone",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Nomads terrace bars",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a specific named venue"
+      },
+      {
+        "name": "Beach club cocktail hour",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "RosaNegra",
+        "url": "https://rosanegra.com.mx/en/cancun",
+        "checkedOn": "2026-11-01",
+        "reason": "official Cancún page returned only its title; address, hours and booking text not readable by automated fetch"
+      },
+      {
+        "name": "Cafe Nader",
+        "checkedOn": "2026-11-01",
+        "reason": "no official website found; only third-party listings"
+      },
+      {
+        "name": "Rooster Cancun",
+        "url": "https://www.roostermexico.mx/",
+        "checkedOn": "2026-11-01",
+        "reason": "official site has no branch address or hours (links to a third-party listing); no 2026 content"
+      },
+      {
+        "name": "Brew Morning",
+        "checkedOn": "2026-11-01",
+        "reason": "no official website identified"
+      },
+      {
+        "name": "El Fish Fritanga",
+        "checkedOn": "2026-11-01",
+        "reason": "no official website identified"
+      },
+      {
+        "name": "Mar-Bella",
+        "checkedOn": "2026-11-01",
+        "reason": "no official website found; only third-party listings"
+      },
+      {
+        "name": "Los de Pescado",
+        "checkedOn": "2026-11-01",
+        "reason": "no official website found; branch addresses conflict across third-party listings"
+      },
+      {
+        "name": "Panya Bakery",
+        "checkedOn": "2026-11-01",
+        "reason": "no Cancún business or official website found"
+      },
+      {
+        "name": "Pan y Mermelada",
+        "checkedOn": "2026-11-01",
+        "reason": "no Cancún business or official website found"
+      },
+      {
+        "name": "La Pasteleteria",
+        "checkedOn": "2026-11-01",
+        "reason": "no official website found"
+      },
+      {
+        "name": "Bendito Cafe",
+        "checkedOn": "2026-11-01",
+        "reason": "no official website identified"
+      },
+      {
+        "name": "Aroma Cafe",
+        "checkedOn": "2026-11-01",
+        "reason": "no official website identified"
+      },
+      {
+        "name": "Ultramar ferry (Cancún-Isla Mujeres)",
+        "url": "https://www.granpuerto.com.mx/",
+        "checkedOn": "2026-11-01",
+        "reason": "fetch failed: granpuerto.com.mx refused the connection and ultramarferry.com reset the connection; not evidence of closure"
+      },
+      {
+        "name": "MUSA (Museo Subacuático de Arte)",
+        "url": "https://musamexico.org/",
+        "checkedOn": "2026-11-01",
+        "reason": "official site lists tours and prices but no address or exact departure location"
+      },
+      {
+        "name": "Ventura Park",
+        "url": "https://www.venturapark.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "official site says 'Venturapark permanecerá cerrado por tiempo indefinido'"
+      },
+      {
+        "name": "The Club Grill & Jazz Supper Club",
+        "url": "https://www.kempinski.com/en/hotel-cancun/restaurants-bars/the-club-grill-jazz-supper-club",
+        "checkedOn": "2026-11-01",
+        "reason": "official page says 'currently taking a temporary pause in service' with no reopening date"
+      },
+      {
+        "name": "Xavage",
+        "url": "https://www.xavage.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "official domain redirects to the Xplor admission page; no Xavage page to confirm"
+      },
+      {
+        "name": "Porfirio's Cancún",
+        "url": "https://www.porfirios.com.mx/locaciones/restaurante-mexicano-en-cancun/",
+        "checkedOn": "2026-11-01",
+        "reason": "official branch page gives only 'frente a la Laguna Nichupté', no exact address"
+      },
+      {
+        "name": "Cenotes Zapote",
+        "url": "https://www.cenoteszapote.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "official site redirects to non-https URL; not read"
+      },
+      {
+        "name": "La Destilería",
+        "url": "https://www.ladestileria.com.mx/",
+        "checkedOn": "2026-11-01",
+        "reason": "ladestileria.com.mx is a taco delivery site with no Cancún address; official source for the Hotel Zone restaurant not found"
+      },
+      {
+        "name": "Bisquets Obregón (Cancún)",
+        "url": "https://www.bisquetsobregon.com/sucursales",
+        "checkedOn": "2026-11-01",
+        "reason": "branch locator showed only 'Cargando...'; no Cancún address readable"
+      },
+      {
+        "name": "Dolphin Discovery Isla Mujeres",
+        "url": "https://www.dolphindiscovery.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "official homepage gives no address for the Isla Mujeres habitat; branch page returned 404"
+      },
+      {
+        "name": "Grand Fiesta Americana Coral Beach (Le Basilic)",
+        "url": "https://www.coralbeachcancunhotel.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "listed hotel domain redirects to a third-party site; no official page read"
+      },
+      {
+        "name": "Xcaret Xailing",
+        "url": "https://www.xailing.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "fetch refused (HTTP 403); not bypassed"
+      }
+    ],
+    "placeSources": {
+      "Museo Maya de Cancún": {
+        "url": "https://www.inah.gob.mx/museos/museo-maya-de-cancun",
+        "sourceType": "official public operator (INAH)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "INAH museum page last updated 2 January 2026 with current admission: $210 MXN for foreign visitors, $105 MXN for Mexican nationals, and admission includes the San Miguelito Archaeological Zone. Free for visitors over 60 and under 13; Sundays free for Mexican citizens and residents."
+      },
+      "Zona Arqueológica El Rey": {
+        "url": "https://www.inah.gob.mx/zonas/zona-arqueologica-el-rey",
+        "sourceType": "official public operator (INAH)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "INAH page 'Última actualización: 07 Enero 2026', no closure notice; general admission '$145.00 pesos', '$80.00 pesos' for Mexican nationals and residents."
+      },
+      "Zona Arqueológica El Meco": {
+        "url": "https://www.inah.gob.mx/zonas/zona-arqueologica-el-meco",
+        "sourceType": "official public operator (INAH)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "INAH page last updated 07 January 2026, no closure notice; admission $145.00 pesos general, $80.00 for nationals and residents; 'Domingos entrada libre'."
+      },
+      "Garrafón Reef Natural Park": {
+        "url": "https://www.garrafon.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Live booking site with packages 'Royal Garrafon' from $64.35 USD and round-trip boat from Playa Langosta in Cancún included; free rescheduling up to 24 hours ahead. No dated 2026 text."
+      },
+      "Xoximilco Cancún": {
+        "url": "https://www.xoxicancun.com/",
+        "sourceType": "operator's own site (Grupo Xcaret)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Booking site with 2026 promotions ('Singles Day 2026'); trajinera boat ride with live mariachi, tasting dinner and open bar; online discounts for booking 7+ days ahead."
+      },
+      "Coco Bongo Cancún": {
+        "url": "https://www.cocobongo.com/cancun",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Ticket date selector running from 31 October to 13 November and 2027 New Year's Eve events; footer '© 2026 Coco Bongo Entertainment'. Homepage rules: 'Solo mayores de 18 años, con identificación oficial vigente'; 'Código de vestimenta casual elegante'."
+      },
+      "Puerto Madero Cancún": {
+        "url": "https://www.puertomaderorestaurantes.com/cancun",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Branch page with online booking: 'Reserva en línea, sin llamadas'; footer '© Copyright Puerto Madero 2026'. Advises 'Confirma horarios especiales por temporada al reservar'."
+      },
+      "Ilios Cancún": {
+        "url": "https://www.iliosrestaurante.com.mx/cancun",
+        "sourceType": "operator's own site (Grupo Anderson's)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Branch page with 'BOOK NOW' reservations and phone booking; site carries a 2026 Diner's Choice badge and a March 2026 press item. Footer reads '© 2025'."
+      },
+      "Fred's House": {
+        "url": "https://grupoandersons.com/en/freds-house-seafood-y-rawbar/",
+        "sourceType": "official operator (Grupo Anderson's)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Operator page with online reservations and 2026 press items (e.g. Milenio, 27 May 2026); footer '© 2026 Grupo Anderson's'."
+      },
+      "Lorenzillo's Cancún": {
+        "url": "https://www.lorenzillos.com.mx/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Live table-booking form ('Buscar Mesa') and phone reservations 'de lunes a domingo'. No 2026 text; footer © 2024."
+      },
+      "La Habichuela": {
+        "url": "https://www.lahabichuela.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Reservation page link ('Quiero Hacer una Reservación') and phone bookings. Latest dated content is 2021-2022."
+      },
+      "Harry's Cancún": {
+        "url": "https://www.harrys.com.mx/restaurante-cancun/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Branch page with 'RESERVAR' booking popup; site carries a 2026 Diner's Choice badge. Footer 'HARRY'S ® 2025'."
+      },
+      "Señor Frog's Cancún": {
+        "url": "https://grupos.grupoandersons.com/en/srfrogs-cancun",
+        "sourceType": "official operator (Grupo Anderson's)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Operator's group-booking page for 10+ guests with menu options and open bar; group menu PDF labelled 2023."
+      },
+      "El Café Mexicano": {
+        "url": "https://kempinski.com/en/hotel-cancun/restaurants-bars/el-cafe-mexicano",
+        "sourceType": "operator's own site (Kempinski Hotel Cancún)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Current restaurant page (© 2026 Kempinski Hotels) serving 'locally-inspired regional cuisine for breakfast and lunch every day'; dress code 'Casual'."
+      },
+      "D-Lounge": {
+        "url": "https://www.kempinski.com/en/hotel-cancun/restaurants-bars/d-lounge",
+        "sourceType": "operator's own site (Kempinski Hotel Cancún)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Current venue page (© 2026) describing 'artisanal cocktails and mocktails as you watch the sunset'; dress code casual."
+      },
+      "Casitas On The Beach": {
+        "url": "https://www.kempinski.com/en/hotel-cancun/restaurants-bars/casitas",
+        "sourceType": "operator's own site (Kempinski Hotel Cancún)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Current page (© 2026) with OpenTable 'RESERVE A TABLE' booking; 'Beachside restaurant on the shore of the Caribbean'; dress code casual."
+      },
+      "The Caribe Bar & Grill": {
+        "url": "https://www.kempinski.com/en/hotel-cancun/restaurants-bars/the-caribe-bar-grill",
+        "sourceType": "operator's own site (Kempinski Hotel Cancún)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Current page (© 2026): 'A laid-back al fresco seafront restaurant' serving snacks and grill dishes all day; dress code casual."
+      },
+      "Fantino": {
+        "url": "https://www.kempinski.com/en/hotel-cancun/restaurants-bars/fantino",
+        "sourceType": "operator's own site (Kempinski Hotel Cancún)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "OpenTable booking and WhatsApp reservations; 'A Mediterranean fine dining restaurant, acclaimed with the prestigious AAA 5-Diamond award'; dress code Smart Casual. Page notes a short closure 'from October 26 to November 2' (year not stated)."
+      },
+      "KAYANTÁ Spa": {
+        "url": "https://www.kempinski.com/en/hotel-cancun/spa",
+        "sourceType": "operator's own site (Kempinski Hotel Cancún)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Current spa page (© 2026) with 'Book Now' link; treatments 'feature indigenous ingredients'."
+      },
+      "NIZUC Spa by ESPA": {
+        "url": "https://www.nizuc.com/spa",
+        "sourceType": "operator's own site (NIZUC Resort & Spa)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Spa menu and price list PDFs dated 2026; appointments by request; '100% fee' for treatments not cancelled 24 hours ahead; arrive up to 90 minutes early."
+      },
+      "Café de la Playa (NIZUC)": {
+        "url": "https://www.nizuc.com/cuisine",
+        "sourceType": "operator's own site (NIZUC Resort & Spa)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Listed on the resort's current cuisine page (2026 Michelin Key and Forbes Five-Star references) as 'À la carte breakfast with global flavors'. Non-guest access not stated."
+      },
+      "Bar A-Kan (NIZUC)": {
+        "url": "https://www.nizuc.com/cuisine",
+        "sourceType": "operator's own site (NIZUC Resort & Spa)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Listed on the current cuisine page as an 'Oceanfront bar known for its views and cocktails'. Non-guest access not stated."
+      },
+      "Café Antoinette (Xpuhil)": {
+        "url": "https://cafe-antoinette.com/location/index.html",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Branch list and product menu (French bread, croissants, breakfast combos, hot drinks) on the café's site; pages are undated, images from 2015."
+      },
+      "Café Antoinette (Puerto Cancún)": {
+        "url": "https://cafe-antoinette.com/location/index.html",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Listed as 'Sucursal Puerto Cancun' with the same bakery and breakfast menu; site undated."
+      },
+      "Ah Cacao (Huayacán)": {
+        "url": "https://ahcacao.com/en/stores",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Current store locator (Copyright © 2005-2026 Ah Cacao Real Chocolate) lists this as its one Cancún store."
+      }
+    }
+  },
   "Lucerne, Switzerland": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-11-01",

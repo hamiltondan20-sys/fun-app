@@ -1,0 +1,682 @@
+{
+  "city": "Cancun, Mexico",
+  "checkedOn": "2026-11-01",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Museo Maya de Cancún",
+      "kind": "museum",
+      "url": "https://www.inah.gob.mx/museos/museo-maya-de-cancun",
+      "sourceType": "official public operator (INAH)",
+      "address": "Km 16 del boulevard Kukulcán, Zona Hotelera, Cancún",
+      "operatingEvidence": "INAH museum page last updated 2 January 2026 with current admission: $210 MXN for foreign visitors, $105 MXN for Mexican nationals, and admission includes the San Miguelito Archaeological Zone. Free for visitors over 60 and under 13; Sundays free for Mexican citizens and residents.",
+      "hours": "Tuesday to Sunday 9:00-18:00; last entry to galleries 17:00, to San Miguelito 16:30 (closed Mondays)",
+      "confidence": "high"
+    },
+    {
+      "name": "Zona Arqueológica El Rey",
+      "kind": "landmark",
+      "url": "https://www.inah.gob.mx/zonas/zona-arqueologica-el-rey",
+      "sourceType": "official public operator (INAH)",
+      "address": "kilómetro 18 del Bulevar Kukulcán, Zona Hotelera, Cancún",
+      "operatingEvidence": "INAH page 'Última actualización: 07 Enero 2026', no closure notice; general admission '$145.00 pesos', '$80.00 pesos' for Mexican nationals and residents.",
+      "hours": "lunes a domingo de 8:00 a 17:00 hrs.",
+      "confidence": "high"
+    },
+    {
+      "name": "Zona Arqueológica El Meco",
+      "kind": "landmark",
+      "url": "https://www.inah.gob.mx/zonas/zona-arqueologica-el-meco",
+      "sourceType": "official public operator (INAH)",
+      "address": "kilómetro 2.7 de la carretera que comunica Puerto Juárez con Punta Sam",
+      "operatingEvidence": "INAH page last updated 07 January 2026, no closure notice; admission $145.00 pesos general, $80.00 for nationals and residents; 'Domingos entrada libre'.",
+      "hours": "Monday to Sunday 08:00-16:30",
+      "confidence": "high"
+    },
+    {
+      "name": "Garrafón Reef Natural Park",
+      "kind": "park",
+      "url": "https://www.garrafon.com/",
+      "sourceType": "operator's own site",
+      "address": "Carretera Garrafón Lote 9 Km 6, Supermanzana 9, 77400 Isla Mujeres",
+      "operatingEvidence": "Live booking site with packages 'Royal Garrafon' from $64.35 USD and round-trip boat from Playa Langosta in Cancún included; free rescheduling up to 24 hours ahead. No dated 2026 text.",
+      "hours": "Tuesday to Sunday, 10:00 am to 5:00 pm (as listed on the undated website)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Xoximilco Cancún",
+      "kind": "scenic",
+      "url": "https://www.xoxicancun.com/",
+      "sourceType": "operator's own site (Grupo Xcaret)",
+      "address": "Cancun-Puerto Morelos Federal Highway, Km. 307, Puerto Morelos, Quintana Roo, C.P. 77580",
+      "operatingEvidence": "Booking site with 2026 promotions ('Singles Day 2026'); trajinera boat ride with live mariachi, tasting dinner and open bar; online discounts for booking 7+ days ahead.",
+      "hours": "Tuesday to Saturday; check-in from 7:00 p.m., experience ends 11:00 p.m.",
+      "confidence": "high"
+    },
+    {
+      "name": "Coco Bongo Cancún",
+      "kind": "bar",
+      "url": "https://www.cocobongo.com/cancun",
+      "sourceType": "operator's own site",
+      "address": "Blvd. Kukulcan Km 9.5 #30, Plaza Forum By The Sea, Zona Hotelera; 77500 Cancún, Quintana Roo",
+      "operatingEvidence": "Ticket date selector running from 31 October to 13 November and 2027 New Year's Eve events; footer '© 2026 Coco Bongo Entertainment'. Homepage rules: 'Solo mayores de 18 años, con identificación oficial vigente'; 'Código de vestimenta casual elegante'.",
+      "hours": "not published (show runs about three hours)",
+      "confidence": "high"
+    },
+    {
+      "name": "Puerto Madero Cancún",
+      "kind": "meal",
+      "url": "https://www.puertomaderorestaurantes.com/cancun",
+      "sourceType": "operator's own site",
+      "address": "Blvd. Kukulcán Km. 14.1, Zona Hotelera, 77500 Cancún, Quintana Roo",
+      "operatingEvidence": "Branch page with online booking: 'Reserva en línea, sin llamadas'; footer '© Copyright Puerto Madero 2026'. Advises 'Confirma horarios especiales por temporada al reservar'.",
+      "hours": "Abrimos de lunes a domingo de 13:00 a 01:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Ilios Cancún",
+      "kind": "meal",
+      "url": "https://www.iliosrestaurante.com.mx/cancun",
+      "sourceType": "operator's own site (Grupo Anderson's)",
+      "address": "Blvd. Kukulcán Km 13.5, Zona Hotelera, 77500, Cancún, Quintana Roo",
+      "operatingEvidence": "Branch page with 'BOOK NOW' reservations and phone booking; site carries a 2026 Diner's Choice badge and a March 2026 press item. Footer reads '© 2025'.",
+      "hours": "Open from 5:00 pm to 2:00 am (as listed on the website)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Fred's House",
+      "kind": "meal",
+      "url": "https://grupoandersons.com/en/freds-house-seafood-y-rawbar/",
+      "sourceType": "official operator (Grupo Anderson's)",
+      "address": "Blvd. Kukulcán Km 14.5, Zona Hotelera, Cancún, México",
+      "operatingEvidence": "Operator page with online reservations and 2026 press items (e.g. Milenio, 27 May 2026); footer '© 2026 Grupo Anderson's'.",
+      "hours": "Monday to Sunday 12:00 PM to 12:00 AM",
+      "confidence": "high"
+    },
+    {
+      "name": "Lorenzillo's Cancún",
+      "kind": "meal",
+      "url": "https://www.lorenzillos.com.mx/",
+      "sourceType": "operator's own site",
+      "address": "Blvd. Kukulcán Km. 10,5 Cancún, Zona Hotelera, 77500 Quintana Roo",
+      "operatingEvidence": "Live table-booking form ('Buscar Mesa') and phone reservations 'de lunes a domingo'. No 2026 text; footer © 2024.",
+      "hours": "Cancún Q.R. 1:00pm a 11:00pm (as listed on the website)",
+      "confidence": "medium"
+    },
+    {
+      "name": "La Habichuela",
+      "kind": "meal",
+      "url": "https://www.lahabichuela.com/",
+      "sourceType": "operator's own site",
+      "address": "Calle Margaritas #25, Downtown, Cancún, Quintana Roo",
+      "operatingEvidence": "Reservation page link ('Quiero Hacer una Reservación') and phone bookings. Latest dated content is 2021-2022.",
+      "hours": "'Siempre abierto de 12:30 a 23:00 los 365 días del año' (Spanish text; English footer says noon to midnight)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Harry's Cancún",
+      "kind": "meal",
+      "url": "https://www.harrys.com.mx/restaurante-cancun/",
+      "sourceType": "operator's own site",
+      "address": "Blvd. Kukulcán Km. 14.2, No.1, Zona Hotelera, Cancún, Q. Roo, C.P. 77500",
+      "operatingEvidence": "Branch page with 'RESERVAR' booking popup; site carries a 2026 Diner's Choice badge. Footer 'HARRY'S ® 2025'.",
+      "hours": "not reliably published (page shows 'Horarios: 1:00 am – 1:00 pm', apparently an error)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Señor Frog's Cancún",
+      "kind": "bar",
+      "url": "https://grupos.grupoandersons.com/en/srfrogs-cancun",
+      "sourceType": "official operator (Grupo Anderson's)",
+      "address": "Blvd. Kukulcán km. 9.5, Punta Cancún, Hotel Zone, Cancún",
+      "operatingEvidence": "Operator's group-booking page for 10+ guests with menu options and open bar; group menu PDF labelled 2023.",
+      "hours": "Monday to Sunday, 11:00 am to 2:00 am (as listed on the group page)",
+      "confidence": "medium"
+    },
+    {
+      "name": "El Café Mexicano",
+      "kind": "meal",
+      "url": "https://kempinski.com/en/hotel-cancun/restaurants-bars/el-cafe-mexicano",
+      "sourceType": "operator's own site (Kempinski Hotel Cancún)",
+      "address": "Kempinski Hotel Cancún, Retorno del Rey #36, 77500 Cancún (from https://www.kempinski.com/en/hotel-cancun/overview/hotel-information/location)",
+      "operatingEvidence": "Current restaurant page (© 2026 Kempinski Hotels) serving 'locally-inspired regional cuisine for breakfast and lunch every day'; dress code 'Casual'.",
+      "hours": "Breakfast Mon-Sat 7:00-11:30, Sun 7:00-13:00; Sunday brunch 10:00-13:00; lunch daily 11:30-17:00",
+      "confidence": "high"
+    },
+    {
+      "name": "D-Lounge",
+      "kind": "bar",
+      "url": "https://www.kempinski.com/en/hotel-cancun/restaurants-bars/d-lounge",
+      "sourceType": "operator's own site (Kempinski Hotel Cancún)",
+      "address": "Kempinski Hotel Cancún, Retorno del Rey #36, 77500 Cancún",
+      "operatingEvidence": "Current venue page (© 2026) describing 'artisanal cocktails and mocktails as you watch the sunset'; dress code casual.",
+      "hours": "Bar Monday to Sunday 17:00-23:00; dinner 18:00-23:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Casitas On The Beach",
+      "kind": "meal",
+      "url": "https://www.kempinski.com/en/hotel-cancun/restaurants-bars/casitas",
+      "sourceType": "operator's own site (Kempinski Hotel Cancún)",
+      "address": "Kempinski Hotel Cancún, Retorno del Rey #36, 77500 Cancún",
+      "operatingEvidence": "Current page (© 2026) with OpenTable 'RESERVE A TABLE' booking; 'Beachside restaurant on the shore of the Caribbean'; dress code casual.",
+      "hours": "Mon - Sun 19:00 - 23:00",
+      "confidence": "high"
+    },
+    {
+      "name": "The Caribe Bar & Grill",
+      "kind": "meal",
+      "url": "https://www.kempinski.com/en/hotel-cancun/restaurants-bars/the-caribe-bar-grill",
+      "sourceType": "operator's own site (Kempinski Hotel Cancún)",
+      "address": "Kempinski Hotel Cancún, Retorno del Rey #36, 77500 Cancún",
+      "operatingEvidence": "Current page (© 2026): 'A laid-back al fresco seafront restaurant' serving snacks and grill dishes all day; dress code casual.",
+      "hours": "Restaurant daily 11:00-18:00; bar daily 09:00-18:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Fantino",
+      "kind": "meal",
+      "url": "https://www.kempinski.com/en/hotel-cancun/restaurants-bars/fantino",
+      "sourceType": "operator's own site (Kempinski Hotel Cancún)",
+      "address": "Kempinski Hotel Cancún, Retorno del Rey #36, 77500 Cancún",
+      "operatingEvidence": "OpenTable booking and WhatsApp reservations; 'A Mediterranean fine dining restaurant, acclaimed with the prestigious AAA 5-Diamond award'; dress code Smart Casual. Page notes a short closure 'from October 26 to November 2' (year not stated).",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "KAYANTÁ Spa",
+      "kind": "landmark",
+      "url": "https://www.kempinski.com/en/hotel-cancun/spa",
+      "sourceType": "operator's own site (Kempinski Hotel Cancún)",
+      "address": "Kempinski Hotel Cancún, Retorno del Rey #36, 77500 Cancún",
+      "operatingEvidence": "Current spa page (© 2026) with 'Book Now' link; treatments 'feature indigenous ingredients'.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "NIZUC Spa by ESPA",
+      "kind": "landmark",
+      "url": "https://www.nizuc.com/spa",
+      "sourceType": "operator's own site (NIZUC Resort & Spa)",
+      "address": "Blvd Kukulcan Mz 59 Lote 1-03 Km 21.26, Punta NIZUC 77500 Cancún, QROO (from https://www.nizuc.com/contact)",
+      "operatingEvidence": "Spa menu and price list PDFs dated 2026; appointments by request; '100% fee' for treatments not cancelled 24 hours ahead; arrive up to 90 minutes early.",
+      "hours": "Spa 9:00am to 9:00pm daily",
+      "confidence": "high"
+    },
+    {
+      "name": "Café de la Playa (NIZUC)",
+      "kind": "meal",
+      "url": "https://www.nizuc.com/cuisine",
+      "sourceType": "operator's own site (NIZUC Resort & Spa)",
+      "address": "Blvd Kukulcan Mz 59 Lote 1-03 Km 21.26, Punta NIZUC 77500 Cancún, QROO",
+      "operatingEvidence": "Listed on the resort's current cuisine page (2026 Michelin Key and Forbes Five-Star references) as 'À la carte breakfast with global flavors'. Non-guest access not stated.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bar A-Kan (NIZUC)",
+      "kind": "bar",
+      "url": "https://www.nizuc.com/cuisine",
+      "sourceType": "operator's own site (NIZUC Resort & Spa)",
+      "address": "Blvd Kukulcan Mz 59 Lote 1-03 Km 21.26, Punta NIZUC 77500 Cancún, QROO",
+      "operatingEvidence": "Listed on the current cuisine page as an 'Oceanfront bar known for its views and cocktails'. Non-guest access not stated.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Café Antoinette (Xpuhil)",
+      "kind": "bakery",
+      "url": "https://cafe-antoinette.com/location/index.html",
+      "sourceType": "operator's own site",
+      "address": "Calle Xpuhil, esquina con Av. Nichupte, 77500 Cancún, Q.R.",
+      "operatingEvidence": "Branch list and product menu (French bread, croissants, breakfast combos, hot drinks) on the café's site; pages are undated, images from 2015.",
+      "hours": "Lunes a domingo de 7am a 11pm (as listed on the undated website)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Café Antoinette (Puerto Cancún)",
+      "kind": "bakery",
+      "url": "https://cafe-antoinette.com/location/index.html",
+      "sourceType": "operator's own site",
+      "address": "Blvd. Kukulcan, Puerto Juarez, Zona Hotelera, 77500 Cancún, Q.R.",
+      "operatingEvidence": "Listed as 'Sucursal Puerto Cancun' with the same bakery and breakfast menu; site undated.",
+      "hours": "Lunes a domingo de 7am a 11pm (as listed on the undated website)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Ah Cacao (Huayacán)",
+      "kind": "cafe",
+      "url": "https://ahcacao.com/en/stores",
+      "sourceType": "operator's own site",
+      "address": "Avenida Huayacán (Soriana Híper), Cancún",
+      "operatingEvidence": "Current store locator (Copyright © 2005-2026 Ah Cacao Real Chocolate) lists this as its one Cancún store.",
+      "hours": "7:30 AM - 10:30 PM",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Hotel Zone beaches",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Isla Mujeres day access",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Lagoon side views",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public beach time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Downtown tacos",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Simple ferry-style day outing",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private catamaran day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "High-end resort spa",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Chef-driven beachfront dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset catamaran",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Beach club day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Lagoon dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Interactive aquarium",
+      "reason": "generic as written; the Interactive Aquarium Cancún domain (interactiveaquarium.com) is a domain-for-sale page and no official operator site was found",
+      "url": "https://www.interactiveaquarium.com/"
+    },
+    {
+      "name": "Gentle beach day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly resort pool time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Beach morning",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Downtown food stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Isla Mujeres easy day trip",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Hotel Zone beach day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "One island outing",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Resort and dinner balance",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Cenote stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Lagoon side sunset",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Quiet beach section away from the main stretch",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Rooftop at the Hotel Zone",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Nomads terrace bars",
+      "reason": "generic, not a specific named venue",
+      "url": ""
+    },
+    {
+      "name": "Beach club cocktail hour",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "RosaNegra",
+      "reason": "official Cancún page returned only its title; address, hours and booking text not readable by automated fetch",
+      "url": "https://rosanegra.com.mx/en/cancun"
+    },
+    {
+      "name": "Cafe Nader",
+      "reason": "no official website found; only third-party listings",
+      "url": ""
+    },
+    {
+      "name": "Rooster Cancun",
+      "reason": "official site has no branch address or hours (links to a third-party listing); no 2026 content",
+      "url": "https://www.roostermexico.mx/"
+    },
+    {
+      "name": "Brew Morning",
+      "reason": "no official website identified",
+      "url": ""
+    },
+    {
+      "name": "El Fish Fritanga",
+      "reason": "no official website identified",
+      "url": ""
+    },
+    {
+      "name": "Mar-Bella",
+      "reason": "no official website found; only third-party listings",
+      "url": ""
+    },
+    {
+      "name": "Los de Pescado",
+      "reason": "no official website found; branch addresses conflict across third-party listings",
+      "url": ""
+    },
+    {
+      "name": "Panya Bakery",
+      "reason": "no Cancún business or official website found",
+      "url": ""
+    },
+    {
+      "name": "Pan y Mermelada",
+      "reason": "no Cancún business or official website found",
+      "url": ""
+    },
+    {
+      "name": "La Pasteleteria",
+      "reason": "no official website found",
+      "url": ""
+    },
+    {
+      "name": "Bendito Cafe",
+      "reason": "no official website identified",
+      "url": ""
+    },
+    {
+      "name": "Aroma Cafe",
+      "reason": "no official website identified",
+      "url": ""
+    },
+    {
+      "name": "Ultramar ferry (Cancún-Isla Mujeres)",
+      "reason": "fetch failed: granpuerto.com.mx refused the connection and ultramarferry.com reset the connection; not evidence of closure",
+      "url": "https://www.granpuerto.com.mx/"
+    },
+    {
+      "name": "MUSA (Museo Subacuático de Arte)",
+      "reason": "official site lists tours and prices but no address or exact departure location",
+      "url": "https://musamexico.org/"
+    },
+    {
+      "name": "Ventura Park",
+      "reason": "official site says 'Venturapark permanecerá cerrado por tiempo indefinido'",
+      "url": "https://www.venturapark.com/"
+    },
+    {
+      "name": "The Club Grill & Jazz Supper Club",
+      "reason": "official page says 'currently taking a temporary pause in service' with no reopening date",
+      "url": "https://www.kempinski.com/en/hotel-cancun/restaurants-bars/the-club-grill-jazz-supper-club"
+    },
+    {
+      "name": "Xavage",
+      "reason": "official domain redirects to the Xplor admission page; no Xavage page to confirm",
+      "url": "https://www.xavage.com/"
+    },
+    {
+      "name": "Porfirio's Cancún",
+      "reason": "official branch page gives only 'frente a la Laguna Nichupté', no exact address",
+      "url": "https://www.porfirios.com.mx/locaciones/restaurante-mexicano-en-cancun/"
+    },
+    {
+      "name": "Cenotes Zapote",
+      "reason": "official site redirects to non-https URL; not read",
+      "url": "https://www.cenoteszapote.com/"
+    },
+    {
+      "name": "La Destilería",
+      "reason": "ladestileria.com.mx is a taco delivery site with no Cancún address; official source for the Hotel Zone restaurant not found",
+      "url": "https://www.ladestileria.com.mx/"
+    },
+    {
+      "name": "Bisquets Obregón (Cancún)",
+      "reason": "branch locator showed only 'Cargando...'; no Cancún address readable",
+      "url": "https://www.bisquetsobregon.com/sucursales"
+    },
+    {
+      "name": "Dolphin Discovery Isla Mujeres",
+      "reason": "official homepage gives no address for the Isla Mujeres habitat; branch page returned 404",
+      "url": "https://www.dolphindiscovery.com/"
+    },
+    {
+      "name": "Grand Fiesta Americana Coral Beach (Le Basilic)",
+      "reason": "listed hotel domain redirects to a third-party site; no official page read",
+      "url": "https://www.coralbeachcancunhotel.com/"
+    },
+    {
+      "name": "Xcaret Xailing",
+      "reason": "fetch refused (HTTP 403); not bypassed",
+      "url": "https://www.xailing.com/"
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Museo Maya de Cancún",
+        "Zona Arqueológica El Rey",
+        "Zona Arqueológica El Meco",
+        "Garrafón Reef Natural Park"
+      ],
+      "bestFirstTimers": [
+        "Museo Maya de Cancún",
+        "Zona Arqueológica El Rey",
+        "Puerto Madero Cancún",
+        "Coco Bongo Cancún"
+      ],
+      "bestRestaurants": [
+        "Puerto Madero Cancún",
+        "Ilios Cancún",
+        "Fred's House",
+        "La Habichuela"
+      ],
+      "bestBudget": [
+        "Zona Arqueológica El Meco",
+        "Zona Arqueológica El Rey",
+        "Ah Cacao (Huayacán)",
+        "Café Antoinette (Xpuhil)"
+      ],
+      "bestLuxury": [
+        "NIZUC Spa by ESPA",
+        "Fantino",
+        "Bar A-Kan (NIZUC)",
+        "KAYANTÁ Spa"
+      ],
+      "bestCouples": [
+        "Casitas On The Beach",
+        "D-Lounge",
+        "Ilios Cancún",
+        "Xoximilco Cancún"
+      ],
+      "bestKids": [
+        "Museo Maya de Cancún",
+        "Garrafón Reef Natural Park",
+        "Zona Arqueológica El Rey"
+      ],
+      "bestSolo": [
+        "Zona Arqueológica El Meco",
+        "Museo Maya de Cancún",
+        "Café Antoinette (Xpuhil)"
+      ],
+      "bestUnique": [
+        "Xoximilco Cancún",
+        "Coco Bongo Cancún",
+        "Zona Arqueológica El Meco"
+      ],
+      "bestBreakfast": [
+        "El Café Mexicano",
+        "Café de la Playa (NIZUC)",
+        "Café Antoinette (Xpuhil)",
+        "Café Antoinette (Puerto Cancún)"
+      ],
+      "bestLunch": [
+        "The Caribe Bar & Grill",
+        "El Café Mexicano",
+        "Fred's House",
+        "La Habichuela"
+      ],
+      "bestDinner": [
+        "Lorenzillo's Cancún",
+        "Harry's Cancún",
+        "Puerto Madero Cancún",
+        "Casitas On The Beach"
+      ],
+      "bestCocktails": [
+        "D-Lounge",
+        "Bar A-Kan (NIZUC)",
+        "Señor Frog's Cancún",
+        "Coco Bongo Cancún"
+      ],
+      "bestBakeries": [
+        "Café Antoinette (Xpuhil)",
+        "Café Antoinette (Puerto Cancún)"
+      ],
+      "bestCoffee": [
+        "Ah Cacao (Huayacán)",
+        "Café Antoinette (Xpuhil)",
+        "El Café Mexicano"
+      ]
+    },
+    "queries": {
+      "Museo Maya de Cancún": "Museo Maya de Cancún Boulevard Kukulcán Km 16 Cancún",
+      "Zona Arqueológica El Rey": "Zona Arqueológica El Rey Boulevard Kukulcán Km 18 Cancún",
+      "Zona Arqueológica El Meco": "Zona Arqueológica El Meco Carretera Puerto Juárez Punta Sam Km 2.7 Cancún",
+      "Garrafón Reef Natural Park": "Garrafón Reef Natural Park Carretera Garrafón Km 6 Isla Mujeres",
+      "Xoximilco Cancún": "Xoximilco Carretera Federal Cancún-Puerto Morelos Km 307",
+      "Coco Bongo Cancún": "Coco Bongo Blvd. Kukulcán Km 9.5 Plaza Forum By The Sea Cancún",
+      "Puerto Madero Cancún": "Puerto Madero Blvd. Kukulcán Km 14.1 Cancún",
+      "Ilios Cancún": "Ilios Blvd. Kukulcán Km 13.5 Cancún",
+      "Fred's House": "Fred's House Blvd. Kukulcán Km 14.5 Cancún",
+      "Lorenzillo's Cancún": "Lorenzillo's Blvd. Kukulcán Km 10.5 Cancún",
+      "La Habichuela": "La Habichuela Calle Margaritas 25 Cancún",
+      "Harry's Cancún": "Harry's Blvd. Kukulcán Km 14.2 Cancún",
+      "Señor Frog's Cancún": "Señor Frog's Blvd. Kukulcán Km 9.5 Punta Cancún Cancún",
+      "El Café Mexicano": "El Café Mexicano Kempinski Hotel Cancún Retorno del Rey 36 Cancún",
+      "D-Lounge": "D-Lounge Kempinski Hotel Cancún Retorno del Rey 36 Cancún",
+      "Casitas On The Beach": "Casitas Kempinski Hotel Cancún Retorno del Rey 36 Cancún",
+      "The Caribe Bar & Grill": "The Caribe Bar & Grill Kempinski Hotel Cancún Retorno del Rey 36 Cancún",
+      "Fantino": "Fantino Kempinski Hotel Cancún Retorno del Rey 36 Cancún",
+      "KAYANTÁ Spa": "KAYANTÁ Spa Kempinski Hotel Cancún Retorno del Rey 36 Cancún",
+      "NIZUC Spa by ESPA": "NIZUC Spa Blvd Kukulcán Km 21.26 Punta Nizuc Cancún",
+      "Café de la Playa (NIZUC)": "Café de la Playa NIZUC Blvd Kukulcán Km 21.26 Cancún",
+      "Bar A-Kan (NIZUC)": "Bar A-Kan NIZUC Blvd Kukulcán Km 21.26 Cancún",
+      "Café Antoinette (Xpuhil)": "Café Antoinette Calle Xpuhil esquina Av. Nichupté Cancún",
+      "Café Antoinette (Puerto Cancún)": "Café Antoinette Puerto Cancún Blvd. Kukulcán Cancún",
+      "Ah Cacao (Huayacán)": "Ah Cacao Soriana Híper Avenida Huayacán Cancún"
+    },
+    "summary": "Maya museums and archaeological sites, Hotel Zone dinners, beach-hotel breakfasts and sunset bars, and an Isla Mujeres reef park, checked against their own websites.",
+    "highlights": [
+      "Museo Maya de Cancún",
+      "Zona Arqueológica El Rey",
+      "Zona Arqueológica El Meco",
+      "Garrafón Reef Natural Park"
+    ],
+    "tip": "Plan Museo Maya de Cancún for Tuesday to Sunday, since it is closed on Mondays, while Zona Arqueológica El Rey opens every day from 8:00 to 17:00.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mondays",
+        "copy": "Museo Maya de Cancún opens Tuesday to Sunday and is closed on Mondays, and Xoximilco Cancún runs Tuesday to Saturday only. Zona Arqueológica El Rey and El Meco open every day."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book ahead",
+        "copy": "Your Museo Maya de Cancún ticket ($210 MXN for foreign visitors) also covers the San Miguelito archaeological zone. Puerto Madero Cancún takes reservations online, and Xoximilco gives online discounts when you book at least 7 days ahead."
+      },
+      {
+        "label": "Last entry",
+        "value": "Arrive early",
+        "copy": "Museo Maya de Cancún stops gallery entry at 17:00 and San Miguelito entry at 16:30. NIZUC Spa by ESPA asks you to arrive up to 90 minutes before a treatment and charges 100% for cancellations within 24 hours."
+      },
+      {
+        "label": "Age and dress rules",
+        "value": "Check before you go",
+        "copy": "Coco Bongo Cancún admits only over-18s with valid official ID and asks for smart casual dress. Xoximilco's minimum age is 5, NIZUC Spa treatments are for over-16s, and Fantino's dress code is smart casual."
+      }
+    ],
+    "dek": "Put the Maya sites on a weekday morning other than Monday, then book a Hotel Zone dinner ahead.",
+    "intro": [
+      "This Cancún guide pairs Maya history with Hotel Zone dining, and every place in it was checked on its own website or on the public body that runs it. Museo Maya de Cancún, run by INAH at Km 16 of Boulevard Kukulcán, opens Tuesday to Sunday from 9:00 to 18:00, with last entry to the galleries at 17:00 and to the San Miguelito archaeological zone at 16:30. One ticket covers both: INAH lists $210 MXN for foreign visitors, with free entry if you are over 60 or under 13.",
+      "Two more INAH sites round out the history. Zona Arqueológica El Rey, at Km 18 of Boulevard Kukulcán, opens every day from 8:00 to 17:00, with general admission listed at $145 pesos. North of the city, El Meco sits at Km 2.7 of the road from Puerto Juárez to Punta Sam and opens daily from 08:00 to 16:30, with free entry on Sundays. For a day on Isla Mujeres, Garrafón Reef Natural Park's website lists Tuesday to Sunday opening, with boats from Playa Langosta in Cancún included in its packages.",
+      "Dinner in the Hotel Zone mostly faces the lagoon or the sea. Puerto Madero at Km 14.1 opens Monday to Sunday from 13:00 to 01:00 and asks you to book online. Fred's House at Km 14.5 opens daily from noon to midnight, and Ilios at Km 13.5 lists a 5:00 pm opening on its website. Downtown, La Habichuela on Calle Margaritas says it is open 365 days a year. At Kempinski Hotel Cancún, Casitas On The Beach serves dinner daily from 19:00, and the D-Lounge bar opens at 17:00 for sunset cocktails.",
+      "Evenings and mornings have their own rules. Coco Bongo at Km 9.5 admits only over-18s with valid official ID and asks for smart casual dress. Xoximilco, on the Cancún–Puerto Morelos highway, runs Tuesday to Saturday with check-in from 7:00 p.m. and a minimum age of 5. For a slower start, El Café Mexicano at the Kempinski serves breakfast every day from 7:00, and Café Antoinette's website lists 7am opening at its Xpuhil and Puerto Cancún branches. NIZUC Spa by ESPA opens daily from 9:00am to 9:00pm, with treatments for over-16s."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Start at Museo Maya de Cancún, open Tuesday to Sunday, where one ticket also covers the San Miguelito ruins, then add Zona Arqueológica El Rey, which opens every day."
+      ],
+      [
+        "A slower morning",
+        "Have breakfast at El Café Mexicano in Kempinski Hotel Cancún from 7:00, or at Café Antoinette on Calle Xpuhil, whose website lists a 7am opening."
+      ],
+      [
+        "Before booking",
+        "Remember that Museo Maya de Cancún is closed on Mondays, Xoximilco runs Tuesday to Saturday, and Coco Bongo admits only over-18s with official ID."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several sites carry no 2026-dated content, so their hours are attributed to the website rather than stated as current: Lorenzillo's, La Habichuela, Ilios, Harry's, Garrafón, Señor Frog's (2023 group menu) and Café Antoinette (undated pages). Harry's lists hours that appear to be an error, and Fantino, KAYANTÁ Spa, Café de la Playa and Bar A-Kan publish no regular hours; NIZUC does not say whether non-guests can book its restaurants. RosaNegra's page could not be read, Ultramar's ferry sites refused or reset the connection, Xailing returned 403, and the Bisquets Obregón branch list did not load; none of these failures is evidence of closure. Ventura Park says it is closed indefinitely and The Club Grill is paused. Most named cafés, bakeries and taquerías in the original list had no official website.",
+  "injectionLikeText": []
+}
