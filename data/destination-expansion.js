@@ -9428,4 +9428,110 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on November 1, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Oaxaca, Mexico: source review of 2026-11-01 (docs/content-research/oaxaca-2026-11-01.md).
+  {
+    const cityKey = "Oaxaca, Mexico";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Museo de las Culturas de Oaxaca (Santo Domingo)","Museo de Sitio de Monte Albán","Museo Textil de Oaxaca","Mitla Archaeological Zone"],
+      bestFirstTimers: ["Museo de las Culturas de Oaxaca (Santo Domingo)","Museo de Sitio de Monte Albán","Museo Textil de Oaxaca","Casa Oaxaca El Restaurante"],
+      bestRestaurants: ["Casa Oaxaca El Restaurante","Origen","Pitiona","Zandunga"],
+      bestBudget: ["Atzompa Archaeological Zone","Biblioteca Andrés Henestrosa","Centro Cultural San Pablo","Chocolate Mayordomo (Mina 219)"],
+      bestLuxury: ["Quinta Real Oaxaca","Casa Oaxaca El Restaurante","Origen","Campante Bar (Hotel Azul)"],
+      bestCouples: ["Quinta Real Oaxaca","Campante Bar (Hotel Azul)","Selva","Pitiona"],
+      bestKids: ["Museo Infantil de Oaxaca (MIO)","BS Biblioteca Infantil de Oaxaca","Jacobo y María Ángeles (San Martín Tilcajete)","Museo de Filatelia de Oaxaca (MUFI)"],
+      bestSolo: ["Biblioteca Andrés Henestrosa","Museo Textil de Oaxaca","Centro Cultural San Pablo","Pabilo Café (Hotel Azul)"],
+      bestUnique: ["Jacobo y María Ángeles (San Martín Tilcajete)","Museo de Filatelia de Oaxaca (MUFI)","Yagul Archaeological Zone","Zaachila Archaeological Zone"],
+      bestBreakfast: ["Cocina Azul (Hotel Azul)","Zandunga","Terraza Centro (City Centro by Marriott Oaxaca)","Chocolate Mayordomo (Mina 219)"],
+      bestLunch: ["Zandunga","Casa Oaxaca El Restaurante","Origen","Cocina Azul (Hotel Azul)"],
+      bestDinner: ["Casa Oaxaca El Restaurante","Pitiona","Origen","El Asador Vasco (Centro)"],
+      bestCocktails: ["Selva","Campante Bar (Hotel Azul)","Terraza Centro (City Centro by Marriott Oaxaca)"],
+      bestBakeries: [],
+      bestCoffee: ["Pabilo Café (Hotel Azul)","Chocolate Mayordomo (Mina 219)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Museo de las Culturas de Oaxaca (Santo Domingo)": "Museo de las Culturas de Oaxaca Macedonio Alcalá Oaxaca",
+      "Museo de Sitio de Monte Albán": "Museo de Sitio de Monte Albán Carretera Ignacio Bernal Santa Cruz Xoxocotlán Oaxaca",
+      "Museo Textil de Oaxaca": "Museo Textil de Oaxaca Hidalgo 917 Oaxaca de Juárez",
+      "Mitla Archaeological Zone": "Zona Arqueológica de Mitla Camino Nacional San Pablo Villa de Mitla Oaxaca",
+      "Casa Oaxaca El Restaurante": "Casa Oaxaca El Restaurante Constitución 104-A Oaxaca de Juárez",
+      "Origen": "Origen Av. Juárez 308 Oaxaca de Juárez",
+      "Pitiona": "Pitiona Allende 114 Oaxaca de Juárez",
+      "Zandunga": "Zandunga Manuel García Vigil 512-E Oaxaca de Juárez",
+      "Atzompa Archaeological Zone": "Zona Arqueológica de Atzompa Independencia Santa María Atzompa Oaxaca",
+      "Biblioteca Andrés Henestrosa": "Biblioteca Andrés Henestrosa Porfirio Díaz 115 Oaxaca de Juárez",
+      "Centro Cultural San Pablo": "Centro Cultural San Pablo Hidalgo 907 Oaxaca de Juárez",
+      "Chocolate Mayordomo (Mina 219)": "Chocolate Mayordomo Francisco Javier Mina 219 Oaxaca de Juárez",
+      "Quinta Real Oaxaca": "Quinta Real Oaxaca 5 de Mayo 300 Oaxaca de Juárez",
+      "Campante Bar (Hotel Azul)": "Campante Bar Hotel Azul Mariano Abasolo 313 Oaxaca de Juárez",
+      "Selva": "Selva Macedonio Alcalá 403 Oaxaca de Juárez",
+      "Museo Infantil de Oaxaca (MIO)": "Museo Infantil de Oaxaca Calzada Madero 511 Oaxaca de Juárez",
+      "BS Biblioteca Infantil de Oaxaca": "BS Biblioteca Infantil de Oaxaca José López Alavés 1342 Xochimilco Oaxaca",
+      "Jacobo y María Ángeles (San Martín Tilcajete)": "Jacobo y María Ángeles Calle Libres 5 San Martín Tilcajete Oaxaca",
+      "Museo de Filatelia de Oaxaca (MUFI)": "Museo de Filatelia de Oaxaca Constitución 201 Oaxaca de Juárez",
+      "Pabilo Café (Hotel Azul)": "Pabilo Café Hotel Azul Mariano Abasolo 313 Oaxaca de Juárez",
+      "Yagul Archaeological Zone": "Zona Arqueológica de Yagul Camino a Yagul Tlacolula de Matamoros Oaxaca",
+      "Zaachila Archaeological Zone": "Zona Arqueológica de Zaachila Alarii Villa de Zaachila Oaxaca",
+      "Cocina Azul (Hotel Azul)": "Cocina Azul Hotel Azul Mariano Abasolo 313 Oaxaca de Juárez",
+      "Terraza Centro (City Centro by Marriott Oaxaca)": "City Centro by Marriott Oaxaca Aldama 410 Jalatlaco Oaxaca",
+      "El Asador Vasco (Centro)": "El Asador Vasco Portal de Flores 10-A Zócalo Oaxaca de Juárez"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Oaxaca" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Santo Domingo's museum, Zapotec archaeological sites, textile and craft workshops, with breakfasts, dinners, cafés and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Museo de las Culturas de Oaxaca (Santo Domingo)","Museo de Sitio de Monte Albán","Museo Textil de Oaxaca","Mitla Archaeological Zone"];
+    cityGuide.tip = "INAH lists the Museo de las Culturas de Oaxaca as open Tuesday to Saturday only and Zaachila as open Thursday to Sunday only, so save a Monday for Monte Albán's site museum, Mitla, Yagul or Atzompa, which list daily hours.";
+    data.destinationFacts[cityKey] = "INAH lists the Museo de las Culturas de Oaxaca as open Tuesday to Saturday only and Zaachila as open Thursday to Sunday only, so save a Monday for Monte Albán's site museum, Mitla, Yagul or Atzompa, which list daily hours.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Santo Domingo's museum, Zapotec archaeological sites, textile and craft workshops, with breakfasts, dinners, cafés and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Check INAH days",
+        "copy": "INAH lists the Museo de las Culturas de Oaxaca as open Tuesday to Saturday, 10:00 to 16:00, and Zaachila as open Thursday to Sunday, 10:00 to 16:00. Monte Albán's site museum, Mitla, Yagul and Atzompa list daily hours."
+      },
+      {
+        "label": "Tickets",
+        "value": "$210 MXN foreign visitors",
+        "copy": "INAH lists $210 MXN for foreign visitors at the Museo de las Culturas de Oaxaca, Mitla, Yagul and Monte Albán's site museum, whose entry is included in the archaeological zone ticket. Atzompa is free, and Zaachila lists $145 MXN for foreign visitors."
+      },
+      {
+        "label": "Booking",
+        "value": "OpenTable and WhatsApp",
+        "copy": "Casa Oaxaca El Restaurante and Origen take reservations through OpenTable, while Selva asks groups of six or more to arrange ahead by WhatsApp. INAH recommends booking a Monte Albán guided tour two days in advance."
+      },
+      {
+        "label": "Site rules",
+        "value": "No food, pets or smoking",
+        "copy": "INAH's pages for Mitla, Yagul, Atzompa and the Museo de las Culturas de Oaxaca bar smoking, food and pets, and the museum also bans flash. Professional cameras carry an extra fee at the Museo de las Culturas and Monte Albán's site museum."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Plan museum and ruin days around INAH's listed opening days, then book Centro dinners ahead.",
+      intro: [
+        "Start in Centro, where the Museo de las Culturas de Oaxaca fills the former Convent of Santo Domingo de Guzmán on Macedonio Alcalá. INAH's page lists it as open Tuesday to Saturday, 10:00 to 16:00, with foreign visitors paying $210 MXN, and you can't bring food, pets or a flash. On Hidalgo, the Museo Textil de Oaxaca lists current exhibitions including 'Ladbeej – El textil teñido con cochinilla', plus textile workshops through November 2026, among them an autumn dyeing workshop from 24 to 26 November. On the same street, the Centro Cultural San Pablo occupies what its operator calls Oaxaca's first Dominican convent.",
+        "Monte Albán's site museum, on the Ignacio Bernal road above the city, lists daily hours of 08:00 to 16:30 with last entry at 16:00, and its admission is included in the archaeological zone ticket; INAH recommends booking a guided tour two days ahead. East along Highway 190, Mitla lists 08:00 to 17:00 daily with last access at 16:30, and Yagul lists 08:00 to 17:00 with last entry at 16:00. Atzompa is free and lists daily hours of 08:00 to 16:00, while Zaachila opens Thursday to Sunday only, 10:00 to 16:00. Mitla, Yagul and Atzompa bar smoking, food and pets.",
+        "For meals, Zandunga on García Vigil publishes daily hours, serving breakfast from 9 AM to 12 PM and lunch and dinner from 12 PM to 11 PM. Casa Oaxaca El Restaurante on Constitución opens at 13:00, closing at 23:00 Monday to Saturday and 21:00 on Sunday, and takes bookings through OpenTable, as does Origen on Avenida Juárez. Pitiona on Allende handles reservations by email and WhatsApp. In Jalatlaco, Terraza Centro at City Centro by Marriott serves from 7:00 to 22:00 daily, and in Centro, Cocina Azul at Hotel Azul opens 7:30 to 22:30 with a Sunday buffet breakfast.",
+        "For drinks, Campante Bar sits on Hotel Azul's terrace and opens Monday to Saturday 15:00 to 23:00 and Sunday 11:00 to 20:00, and Pabilo Café in the same hotel serves coffee, Oaxacan chocolate and house-baked bread. Selva on Macedonio Alcalá seats you at shared, lounge-style tables and asks groups of six or more to arrange ahead by WhatsApp. With children, the Museo Infantil de Oaxaca occupies the restored former railway station on Calzada Madero, and the BS children's library in Xochimilco is free for children and teenagers. For a craft-village day, the Jacobo y María Ángeles workshop in San Martín Tilcajete says it opens 365 days a year."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair the Museo de las Culturas de Oaxaca in the former Santo Domingo convent, open Tuesday to Saturday per INAH, with Monte Albán's site museum, which lists daily hours."
+        ],
+        [
+          "A slower morning",
+          "Start with breakfast at Cocina Azul or Zandunga, then browse the exhibitions at the Museo Textil de Oaxaca on Hidalgo."
+        ],
+        [
+          "Before booking",
+          "Reserve Casa Oaxaca El Restaurante or Origen through OpenTable, and remember that Zaachila opens Thursday to Sunday only."
+        ]
+      ],
+      trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on November 1, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

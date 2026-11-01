@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 90.
-- Classifier-passed (published, not fully documented in that format): 102.
+- Source-verified (complete dated evidence format): 91.
+- Classifier-passed (published, not fully documented in that format): 101.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -347,7 +347,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Normandy, France | normandy | held-back | not-reviewed | 0 | 4 | 15 | 2 | has 4 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Norwegian Fjords, Norway | norwegian-fjords | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
 | Nuremberg, Germany | nuremberg | held-back | not-reviewed | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
-| Oaxaca, Mexico | oaxaca | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Oaxaca, Mexico | oaxaca | source-verified | source-checked | 25 | 40 | 14 | 14 | None |
 | Oaxaca City, Mexico | oaxaca-city | held-back | not-reviewed | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Okinawa, Japan | okinawa | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Oklahoma City, United States | oklahoma-city | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |

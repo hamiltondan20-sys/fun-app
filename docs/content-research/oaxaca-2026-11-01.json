@@ -1,0 +1,975 @@
+{
+  "city": "Oaxaca, Mexico",
+  "checkedOn": "2026-11-01",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Museo de las Culturas de Oaxaca (Santo Domingo)",
+      "kind": "museum",
+      "url": "https://lugares.inah.gob.mx/en/node/4252",
+      "sourceType": "official public operator (INAH, Instituto Nacional de Antropología e Historia)",
+      "address": "Former Convent of Santo Domingo de Guzmán, Macedonio Alcalá s/n, Centro Histórico, 68000 Oaxaca",
+      "operatingEvidence": "INAH's museum page publishes opening hours, fees ('$210.00 Visitantes extranjeros') and visitor rules ('No flash', 'Pets not allowed', no food, no smoking), with guided tours, cloakroom and shop listed as services.",
+      "hours": "'Tuesday to Saturday from 10:00 to 16:00 h' (INAH page, undated)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Museo de Sitio de Monte Albán",
+      "kind": "museum",
+      "url": "https://lugares.inah.gob.mx/en/node/4308",
+      "sourceType": "official public operator (INAH)",
+      "address": "Ignacio Bernal Road, Col. Centro, C.P. 68000, Santa Cruz Xoxocotlán, Oaxaca",
+      "operatingEvidence": "INAH page lists daily hours, fees ($105 MXN Mexican visitors, $210 MXN foreign visitors), says admission is included in the archaeological zone ticket, and recommends booking a guided tour two days in advance. No closure notice on the page.",
+      "hours": "Every day 08:00 to 16:30, last entry 16:00 (INAH page, undated)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mitla Archaeological Zone",
+      "kind": "landmark",
+      "url": "https://lugares.inah.gob.mx/en/node/4350",
+      "sourceType": "official public operator (INAH)",
+      "address": "Camino Nacional s/n, C.P. 70430, San Pablo Villa de Mitla, Oaxaca",
+      "operatingEvidence": "INAH page publishes hours and fees ('$210.00' foreign visitors) and rules: no smoking, no entry with food, no pets.",
+      "hours": "'Monday to Sunday from 08:00 to 17:00 h - Last access 16:30 h' (INAH page, undated)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Yagul Archaeological Zone",
+      "kind": "landmark",
+      "url": "https://lugares.inah.gob.mx/en/node/5849",
+      "sourceType": "official public operator (INAH)",
+      "address": "Road to Yagul Archaeological Zone Km 1 + 430, Tlacolula de Matamoros, Oaxaca (about 1.2 km after Tlacolula on Highway 190)",
+      "operatingEvidence": "INAH page publishes daily hours, fees ($105 Mexican / $210 foreign visitors) and rules (no smoking, no food, no pets).",
+      "hours": "'Monday to Sunday from 08:00 to 17:00 h', last entry 16:00 (INAH page, undated)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Zaachila Archaeological Zone",
+      "kind": "landmark",
+      "url": "https://lugares.inah.gob.mx/en/node/4368",
+      "sourceType": "official public operator (INAH)",
+      "address": "Alarii Street s/n, Villa de Zaachila, Oaxaca, C.P. 71310",
+      "operatingEvidence": "INAH page publishes hours and fees ($80 national, $145 foreign visitors), with access 15 km from Oaxaca on Carretera Federal 131.",
+      "hours": "'Thursday to Sunday from 10:00 to 16:00 h' (INAH page, undated)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Atzompa Archaeological Zone",
+      "kind": "landmark",
+      "url": "https://lugares.inah.gob.mx/en/node/5429",
+      "sourceType": "official public operator (INAH)",
+      "address": "Independencia (Road to the Atzompa Archaeological Zone), Santa María Atzompa, Oaxaca",
+      "operatingEvidence": "INAH page publishes daily hours, states entry is free, and lists rules (no smoking, no food, no pets).",
+      "hours": "Every day 08:00 to 16:00, last entry 15:00 (INAH page, undated)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Museo Textil de Oaxaca",
+      "kind": "museum",
+      "url": "https://www.museotextildeoaxaca.org/",
+      "sourceType": "operator's own site (Fundación Alfredo Harp Helú Oaxaca)",
+      "address": "Hidalgo 917 Centro Histórico – Oaxaca de Juárez, Oax. – C.P. 68000",
+      "operatingEvidence": "Current exhibitions listed, including 'Ladbeej - El textil teñido con cochinilla' and 'po´t - historia, creatividad, resistencia'; the calendar lists November 2026 workshops such as 'Animalitos en puntos | Taller de bordado' (17–20 November) and 'Las reservas del otoño | Taller de teñido' (24–26 November).",
+      "hours": "not published",
+      "confidence": "high"
+    },
+    {
+      "name": "Centro Cultural San Pablo",
+      "kind": "landmark",
+      "url": "https://fahho.mx/filiales-fahho/centro-cultural-san-pablo/",
+      "sourceType": "operator's own site (Fundación Alfredo Harp Helú Oaxaca)",
+      "address": "Hidalgo 907 e Independencia 904, Centro, Oaxaca, C.P. 68000",
+      "operatingEvidence": "Operator page describes the centre, which 'abrió sus puertas el 26 de noviembre de 2011 en lo que fue el primer convento dominico en Oaxaca', and publishes service hours. Page also carries a stray 'página no existe' line and a 2022 footer.",
+      "hours": "'atención de lunes a sábado de 10 a 20 h, domingo de 10 a 18 h' (FAHHO page, footer © 2022)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Museo de Filatelia de Oaxaca (MUFI)",
+      "kind": "museum",
+      "url": "https://www.mufi.org.mx/",
+      "sourceType": "operator's own site",
+      "address": "Calle de la Constitución #201, Centro Histórico, Oaxaca de Juárez, C.P. 68000 (the FAHHO page gives 'Reforma 504, Centro')",
+      "operatingEvidence": "Museum site shows 'Abierto ⋅ Horario de cierre: 20:00' and lists permanent and temporary exhibition sections; FAHHO's page lists collections including 'Beisbol, Ferrocarriles, ... Buzones'.",
+      "hours": "Own site: closing time 20:00 only; FAHHO page (footer © 2022): 'lunes a sábado de 10 a 20 h, domingo de 10 a 18 h'",
+      "confidence": "medium"
+    },
+    {
+      "name": "Museo Infantil de Oaxaca (MIO)",
+      "kind": "museum",
+      "url": "https://fahho.mx/filiales-fahho/museo-infantil-de-oaxaca/",
+      "sourceType": "operator's own site (Fundación Alfredo Harp Helú Oaxaca)",
+      "address": "Calzada Madero 511, Barrio Ex Marquesado, Oaxaca, C.P. 68034",
+      "operatingEvidence": "Operator page describes the children's museum in the restored former Oaxaca railway station and publishes service hours.",
+      "hours": "'atención de lunes a domingo de 10 a 19 h' (FAHHO page, footer © 2022)",
+      "confidence": "medium"
+    },
+    {
+      "name": "BS Biblioteca Infantil de Oaxaca",
+      "kind": "landmark",
+      "url": "https://fahho.mx/filiales-fahho/bs-biblioteca-infantil-de-oaxaca-biblioteca-jorge-luis-borges/",
+      "sourceType": "operator's own site (Fundación Alfredo Harp Helú Oaxaca)",
+      "address": "José López Alavés 1342, Xochimilco, Oaxaca, C.P. 68040",
+      "operatingEvidence": "Operator page publishes service hours and says its spaces, collections and services are free for children and adolescents.",
+      "hours": "'atención de lunes a sábado de 9 a 19 h, domingo de 9 a 18 h' (FAHHO page, footer © 2022)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Biblioteca Andrés Henestrosa",
+      "kind": "landmark",
+      "url": "https://fahho.mx/filiales-fahho/biblioteca-andres-henestrosa/",
+      "sourceType": "operator's own site (Fundación Alfredo Harp Helú Oaxaca)",
+      "address": "Porfirio Díaz 115, Centro, Oaxaca, C.P. 68000",
+      "operatingEvidence": "Operator page publishes hours and says services are offered 'de manera gratuita y sin distinción de ninguna especie'.",
+      "hours": "'atención de lunes a sábado de 9 a 20 h, domingo de 9 a 19 h' (FAHHO page, footer © 2022)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Jacobo y María Ángeles (San Martín Tilcajete)",
+      "kind": "landmark",
+      "url": "https://www.jacoboymariaangeles.com/",
+      "sourceType": "operator's own site",
+      "address": "Calle Libres #5, 71506, San Martin Tilcajete, Oax.",
+      "operatingEvidence": "Workshop site publishes daily hours, says 'Abrimos los 365 días del año', and links guided visits ('Visita Guiada'), workshops and an agenda; newest dated items are from 2025.",
+      "hours": "'Lunes - Domingo, 9:00 am - 6:00 pm' (own site; latest dated content 2025)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Casa Oaxaca El Restaurante",
+      "kind": "meal",
+      "url": "https://www.casaoaxacaelrestaurante.com/",
+      "sourceType": "operator's own site",
+      "address": "Constitución 104-A Centro, Oaxaca, México, C.P. 68000",
+      "operatingEvidence": "Site publishes weekly hours and a 'RESERVA AQUÍ' button to OpenTable; page assets include a 2026 Michelin Guide logo file.",
+      "hours": "'Lunes a sábado 13:00 – 23:00 hrs', 'Domingo 13:00 – 21:00 hrs'",
+      "confidence": "high"
+    },
+    {
+      "name": "Origen",
+      "kind": "meal",
+      "url": "https://origenoaxaca.com/Ubicacion",
+      "sourceType": "operator's own site",
+      "address": "Av. Juárez 308 Centro, Oaxaca, Oaxaca, C.P. 68000",
+      "operatingEvidence": "Site states 'Reservaciones a través de OpenTable', lists reservaciones@origenoaxaca.com, and publishes weekly hours; menu sections include Restaurante and Mesa del Chef.",
+      "hours": "'Lunes a sábado 13:00 a 23:00hrs', 'Domingo 13:30 a 22:00hrs' (own site, undated)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Pitiona",
+      "kind": "meal",
+      "url": "https://www.pitiona.com/",
+      "sourceType": "operator's own site",
+      "address": "Allende 114 Col. Centro, Oaxaca de Juárez, C.P. 68000",
+      "operatingEvidence": "Site lists reservations by email (contacto@pitiona.com) and WhatsApp, a 'Reserva Ahora' link and weekly hours.",
+      "hours": "Spanish section: 'Lunes – Sábado: 13:00 – 22:00 hrs.', 'Domingo: 13:00 – 21:30 hrs.' (English section gives 13:00–23:00 Monday to Saturday; own site, undated)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Zandunga",
+      "kind": "meal",
+      "url": "https://zandungasabor.com/",
+      "sourceType": "operator's own site",
+      "address": "C. de Manuel García Vigil 512-E, Ruta Independencia, Centro, 68000 Oaxaca de Juárez, Oax.",
+      "operatingEvidence": "Site lists a reservations line ('Reservas: 951 286 0866') and daily hours, and carries blog posts dated '1 agosto, 2026'.",
+      "hours": "Daily: 'Desayunos: 9 AM – 12 PM', 'Comidas y Cenas: 12 PM – 11 PM'",
+      "confidence": "high"
+    },
+    {
+      "name": "El Asador Vasco (Centro)",
+      "kind": "meal",
+      "url": "https://www.asadorvasco.com/",
+      "sourceType": "operator's own site",
+      "address": "Portal de Flores 10-A en el Zócalo de la ciudad, Oaxaca",
+      "operatingEvidence": "Site lists reservation channels for the Centro branch (WhatsApp 951 226 13 86, reservaciones@asadorvasco.com); footer copyright 2025.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Chocolate Mayordomo (Mina 219)",
+      "kind": "cafe",
+      "url": "https://www.chocolatemayordomo.com.mx/sucursales/",
+      "sourceType": "operator's own site",
+      "address": "La Chocolatería Mina, Francisco Javier Mina #219, Col. Centro, Oaxaca",
+      "operatingEvidence": "Branches page lists this and about 19 other Oaxaca-area branches with hours; page footer is '©2021', so the listing may be dated.",
+      "hours": "'Lunes a Domingo de 7am a 8pm' (branches page, footer © 2021)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Quinta Real Oaxaca",
+      "kind": "landmark",
+      "url": "https://www.grupocaminoreal.com/quinta-real-oaxaca",
+      "sourceType": "operator's own site (Grupo Camino Real)",
+      "address": "Calle 5 de Mayo No. 300, Centro, 68000, Oaxaca de Juárez, México",
+      "operatingEvidence": "Hotel page with live booking engine names its venues: El Refectorio restaurant, Las Bugambilias ('Brinda con un buen mezcal') and Las Novicias ('una velada romántica', live music). Guest reviews dated 2025.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Terraza Centro (City Centro by Marriott Oaxaca)",
+      "kind": "meal",
+      "url": "https://www.marriott.com/en-us/hotels/oaxco-city-centro-oaxaca/dining/",
+      "sourceType": "operator's own site (Marriott)",
+      "address": "Aldama No. 410, Barrio de Jalatlaco, Oaxaca, Oaxaca, Mexico, 68080",
+      "operatingEvidence": "Dining page lists Terraza Centro with Oaxacan dishes and 'seasonal mezcalini and handcrafted cocktails', plus a buffet breakfast and Lobby/Pool Bar with hours; footer '© 1996 – 2026'.",
+      "hours": "Terraza Centro daily 7:00 AM–10:00 PM; buffet breakfast Monday–Friday 7:00–11:00 AM, weekends 8:00 AM–1:00 PM; Lobby and Pool Bar daily 12:00–10:00 PM",
+      "confidence": "high"
+    },
+    {
+      "name": "Campante Bar (Hotel Azul)",
+      "kind": "bar",
+      "url": "https://www.hotelazuloaxaca.com/nuestros-espacios",
+      "sourceType": "operator's own site (Hotel Azul Oaxaca)",
+      "address": "Calle de Mariano Abasolo 313, Ruta Independencia, Centro, Oaxaca de Juárez, Oaxaca, C.P. 68000",
+      "operatingEvidence": "'Campante Bar se encuentra en la terraza del Hotel Azul Oaxaca'; focuses on Mexican and Oaxacan spirits, artisanal cocktails and tastings. Page published 'Oct 26, 2026'.",
+      "hours": "Monday to Saturday 15:00–23:00; Sunday 11:00–20:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Pabilo Café (Hotel Azul)",
+      "kind": "cafe",
+      "url": "https://www.hotelazuloaxaca.com/nuestros-espacios",
+      "sourceType": "operator's own site (Hotel Azul Oaxaca)",
+      "address": "Calle de Mariano Abasolo 313, Ruta Independencia, Centro, Oaxaca de Juárez, Oaxaca, C.P. 68000",
+      "operatingEvidence": "Hotel's spaces page (published 'Oct 26, 2026') describes coffee drinks, Oaxacan chocolate, sandwiches, house-baked bread and mezcal cocktails: 'El objetivo principal de Pabilo Café es satisfacer todos los gustos'.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Cocina Azul (Hotel Azul)",
+      "kind": "meal",
+      "url": "https://www.hotelazuloaxaca.com/nuestros-espacios",
+      "sourceType": "operator's own site (Hotel Azul Oaxaca)",
+      "address": "Calle de Mariano Abasolo 313, Ruta Independencia, Centro, Oaxaca de Juárez, Oaxaca, C.P. 68000",
+      "operatingEvidence": "Spaces page (published 'Oct 26, 2026') describes traditional Oaxacan cooking with a focus on breakfast and 'un delicioso mole amarillo con hongos de la sierra'.",
+      "hours": "Daily 7:30–22:30; Sunday buffet breakfast 8:00–12:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Selva",
+      "kind": "bar",
+      "url": "https://www.selvaoaxaca.com/",
+      "sourceType": "operator's own site",
+      "address": "C. Macedonio Alcalá #403-int. 6, Ruta Independencia, Centro, 68000 Oaxaca de Juárez",
+      "operatingEvidence": "Cocktail bar site takes arrangements for 'For 6+ people and special requests' by WhatsApp and notes shared, lounge-style seating; latest dated credit is 2024.",
+      "hours": "not published",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Santo Domingo (church)",
+      "reason": "No operator page for the church itself was read; the former convent is covered as Museo de las Culturas de Oaxaca (Santo Domingo).",
+      "url": ""
+    },
+    {
+      "name": "Benito Juarez Market",
+      "reason": "No official municipal or operator page found; only tourism and third-party listings.",
+      "url": ""
+    },
+    {
+      "name": "Monte Albán Archaeological Zone (zone page)",
+      "reason": "INAH zone URL returned 404; Monte Albán is covered via the INAH Site Museum page, whose admission is included in the zone ticket.",
+      "url": "https://www.inah.gob.mx/zonas/zona-arqueologica-de-monte-alban"
+    },
+    {
+      "name": "Criollo",
+      "reason": "Official site shows address (Calzada Madero 129) but no hours, menu, booking or 2026 operating evidence.",
+      "url": "https://www.criollo.mx/"
+    },
+    {
+      "name": "Levadura de Olla",
+      "reason": "Domain is a Namecheap parking page.",
+      "url": "https://www.levaduradeolla.com/"
+    },
+    {
+      "name": "Los Danzantes Oaxaca",
+      "reason": "Official Oaxaca site shows only a title and image; no address, hours or booking.",
+      "url": "https://losdanzantesoaxaca.com.mx"
+    },
+    {
+      "name": "Mezcal Los Danzantes (distillery visits)",
+      "reason": "Page gives an Oaxaca city address for appointments but does not say it is the distillery; footer © 2020.",
+      "url": "https://www.mezcallosdanzantes.com"
+    },
+    {
+      "name": "Mezcaloteca",
+      "reason": "HTTP 429 Too Many Requests on three attempts.",
+      "url": "https://www.mezcaloteca.com/"
+    },
+    {
+      "name": "Café Brújula",
+      "reason": "HTTP 429 Too Many Requests on five attempts.",
+      "url": "https://www.cafebrujula.com/"
+    },
+    {
+      "name": "In Situ Mezcalería",
+      "reason": "Certificate has expired; not bypassed.",
+      "url": "https://www.insitumezcaleria.com/"
+    },
+    {
+      "name": "El Destilado",
+      "reason": "HTTP 403 Forbidden.",
+      "url": "https://www.eldestilado.com/"
+    },
+    {
+      "name": "Sabina Sabe",
+      "reason": "TLS error (TLSV1_ALERT_INTERNAL_ERROR) on two attempts.",
+      "url": "https://www.sabinasabe.com/"
+    },
+    {
+      "name": "Expendio Tradición",
+      "reason": "Fetch failed twice ('Socket is closed').",
+      "url": "https://www.expendiotradicion.com/"
+    },
+    {
+      "name": "Mezcal Real Minero",
+      "reason": "HTTP 429 Too Many Requests.",
+      "url": "https://www.realminero.com.mx/"
+    },
+    {
+      "name": "Rey Campero",
+      "reason": "HTTP 522 server error.",
+      "url": "https://www.reycampero.com/"
+    },
+    {
+      "name": "Cafebre",
+      "reason": "HTTP 403 Forbidden.",
+      "url": "https://www.cafebre.com/"
+    },
+    {
+      "name": "Boulenc",
+      "reason": "No readable official site: boulenc.com.mx DNS failure, boulenc.mx 404, boulenc.com SSL error.",
+      "url": "https://boulenc.mx/"
+    },
+    {
+      "name": "Pan:AM",
+      "reason": "No official site found; guessed domain fetch failed.",
+      "url": "https://www.panam.mx/"
+    },
+    {
+      "name": "Pan con Madre",
+      "reason": "Official site shows only title and navigation; no address or hours.",
+      "url": "https://www.panconmadre.mx/"
+    },
+    {
+      "name": "Café Nuevo Mundo",
+      "reason": "Site lists M. Bravo 206 and Manuel Doblado 721 but no hours, menu or dated content beyond a © 2026 footer; locations page 404.",
+      "url": "https://www.cafenuevomundo.com/"
+    },
+    {
+      "name": "Jardín Etnobotánico de Oaxaca",
+      "reason": "Official site publishes no visiting hours or tickets; 2025 decrees refer tour matters to OCCE Oaxaca. No current visiting evidence.",
+      "url": "https://www.jardinoaxaca.mx/recorridos"
+    },
+    {
+      "name": "Restaurante Catedral",
+      "reason": "Official page shows only a name and image; no address or hours.",
+      "url": "https://www.restaurantecatedral.com.mx/"
+    },
+    {
+      "name": "La Olla",
+      "reason": "Domain redirects to an unrelated demo site.",
+      "url": "https://www.laolla.com.mx/"
+    },
+    {
+      "name": "Las Quince Letras",
+      "reason": "Domain redirects to a GoDaddy for-sale page; no other official site found.",
+      "url": "https://www.lasquinceletras.com/"
+    },
+    {
+      "name": "Itanoní",
+      "reason": "Official domain shows no content.",
+      "url": "https://www.itanoni.com/"
+    },
+    {
+      "name": "La Biznaga",
+      "reason": "Official domain shows no content.",
+      "url": "https://www.labiznaga.com.mx/"
+    },
+    {
+      "name": "Tierra del Sol",
+      "reason": "No official website found; only guide and booking listings.",
+      "url": ""
+    },
+    {
+      "name": "Hotel Los Amantes (terrace)",
+      "reason": "Official site gives no street address; terrace breakfast is 'exclusively for our guests'.",
+      "url": "https://www.hotellosamantes.com/"
+    },
+    {
+      "name": "Casa Silencio",
+      "reason": "Mezcal tour pages give times and prices but no address; contact page 404.",
+      "url": "https://www.casasilencio.com/mezcal-book"
+    },
+    {
+      "name": "Majagua Hotel Boutique / Endémico",
+      "reason": "Hotel page names Endémico Restaurante but gives no hours or current operating evidence; endemico.mx DNS failure.",
+      "url": "https://www.majaguahotel.com/"
+    },
+    {
+      "name": "Hotel Victoria Oaxaca",
+      "reason": "No address or restaurant details on the official page.",
+      "url": "https://www.hotelvictoriaoax.com.mx/"
+    },
+    {
+      "name": "Casa Oaxaca Hotel",
+      "reason": "Official page returned only a title.",
+      "url": "https://www.casaoaxaca.com.mx/"
+    },
+    {
+      "name": "Museo de Arte Prehispánico Rufino Tamayo",
+      "reason": "No official site found (museotamayo.org is the Mexico City museum).",
+      "url": ""
+    },
+    {
+      "name": "Museo de Arte Contemporáneo de Oaxaca (MACCO)",
+      "reason": "No official page found; state culture site (oaxaca.gob.mx/seculta) returned HTTP 500.",
+      "url": "https://www.oaxaca.gob.mx/seculta/"
+    },
+    {
+      "name": "Teatro Macedonio Alcalá",
+      "reason": "No official page found; state site returned HTTP 500.",
+      "url": "https://www.oaxaca.gob.mx/"
+    },
+    {
+      "name": "Dainzú Archaeological Zone",
+      "reason": "INAH page returned 404.",
+      "url": "https://lugares.inah.gob.mx/en/zonas-arqueologicas/zonas/1760-dainzú.html"
+    },
+    {
+      "name": "Lambityeco Archaeological Zone",
+      "reason": "INAH page returned 404.",
+      "url": "https://lugares.inah.gob.mx/en/zonas-arqueologicas/1763-lambityeco.html"
+    },
+    {
+      "name": "Market breakfast",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Mezcal valley outing",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Craft village day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "a mole or tlayuda meal",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Oaxaca market or cafe",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local dinner in Centro",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Jalatlaco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Xochimilco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Centro",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Centro walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Jalatlaco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Xochimilco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Xochimilco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Santo Domingo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Centro",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Market breakfast",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Jalatlaco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Benito Juarez Market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Centro evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Jalatlaco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Xochimilco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Centro",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Santo Domingo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Jalatlaco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Xochimilco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Centro",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Santo Domingo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Centro cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Mezcal valley outing",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Xochimilco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Xochimilco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Centro",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Centro",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Jalatlaco bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Santo Domingo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Xochimilco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Centro",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Benito Juarez Market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Xochimilco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Centro",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Jalatlaco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Xochimilco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Centro",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Centro",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Jalatlaco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Monte Alban",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Centro",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Jalatlaco morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Santo Domingo",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Xochimilco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Centro",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Jalatlaco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Xochimilco",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Museo de las Culturas de Oaxaca (Santo Domingo)",
+        "Museo de Sitio de Monte Albán",
+        "Museo Textil de Oaxaca",
+        "Mitla Archaeological Zone"
+      ],
+      "bestFirstTimers": [
+        "Museo de las Culturas de Oaxaca (Santo Domingo)",
+        "Museo de Sitio de Monte Albán",
+        "Museo Textil de Oaxaca",
+        "Casa Oaxaca El Restaurante"
+      ],
+      "bestRestaurants": [
+        "Casa Oaxaca El Restaurante",
+        "Origen",
+        "Pitiona",
+        "Zandunga"
+      ],
+      "bestBudget": [
+        "Atzompa Archaeological Zone",
+        "Biblioteca Andrés Henestrosa",
+        "Centro Cultural San Pablo",
+        "Chocolate Mayordomo (Mina 219)"
+      ],
+      "bestLuxury": [
+        "Quinta Real Oaxaca",
+        "Casa Oaxaca El Restaurante",
+        "Origen",
+        "Campante Bar (Hotel Azul)"
+      ],
+      "bestCouples": [
+        "Quinta Real Oaxaca",
+        "Campante Bar (Hotel Azul)",
+        "Selva",
+        "Pitiona"
+      ],
+      "bestKids": [
+        "Museo Infantil de Oaxaca (MIO)",
+        "BS Biblioteca Infantil de Oaxaca",
+        "Jacobo y María Ángeles (San Martín Tilcajete)",
+        "Museo de Filatelia de Oaxaca (MUFI)"
+      ],
+      "bestSolo": [
+        "Biblioteca Andrés Henestrosa",
+        "Museo Textil de Oaxaca",
+        "Centro Cultural San Pablo",
+        "Pabilo Café (Hotel Azul)"
+      ],
+      "bestUnique": [
+        "Jacobo y María Ángeles (San Martín Tilcajete)",
+        "Museo de Filatelia de Oaxaca (MUFI)",
+        "Yagul Archaeological Zone",
+        "Zaachila Archaeological Zone"
+      ],
+      "bestBreakfast": [
+        "Cocina Azul (Hotel Azul)",
+        "Zandunga",
+        "Terraza Centro (City Centro by Marriott Oaxaca)",
+        "Chocolate Mayordomo (Mina 219)"
+      ],
+      "bestLunch": [
+        "Zandunga",
+        "Casa Oaxaca El Restaurante",
+        "Origen",
+        "Cocina Azul (Hotel Azul)"
+      ],
+      "bestDinner": [
+        "Casa Oaxaca El Restaurante",
+        "Pitiona",
+        "Origen",
+        "El Asador Vasco (Centro)"
+      ],
+      "bestCocktails": [
+        "Selva",
+        "Campante Bar (Hotel Azul)",
+        "Terraza Centro (City Centro by Marriott Oaxaca)"
+      ],
+      "bestBakeries": [],
+      "bestCoffee": [
+        "Pabilo Café (Hotel Azul)",
+        "Chocolate Mayordomo (Mina 219)"
+      ]
+    },
+    "queries": {
+      "Museo de las Culturas de Oaxaca (Santo Domingo)": "Museo de las Culturas de Oaxaca Macedonio Alcalá Oaxaca",
+      "Museo de Sitio de Monte Albán": "Museo de Sitio de Monte Albán Carretera Ignacio Bernal Santa Cruz Xoxocotlán Oaxaca",
+      "Mitla Archaeological Zone": "Zona Arqueológica de Mitla Camino Nacional San Pablo Villa de Mitla Oaxaca",
+      "Yagul Archaeological Zone": "Zona Arqueológica de Yagul Camino a Yagul Tlacolula de Matamoros Oaxaca",
+      "Zaachila Archaeological Zone": "Zona Arqueológica de Zaachila Alarii Villa de Zaachila Oaxaca",
+      "Atzompa Archaeological Zone": "Zona Arqueológica de Atzompa Independencia Santa María Atzompa Oaxaca",
+      "Museo Textil de Oaxaca": "Museo Textil de Oaxaca Hidalgo 917 Oaxaca de Juárez",
+      "Centro Cultural San Pablo": "Centro Cultural San Pablo Hidalgo 907 Oaxaca de Juárez",
+      "Museo de Filatelia de Oaxaca (MUFI)": "Museo de Filatelia de Oaxaca Constitución 201 Oaxaca de Juárez",
+      "Museo Infantil de Oaxaca (MIO)": "Museo Infantil de Oaxaca Calzada Madero 511 Oaxaca de Juárez",
+      "BS Biblioteca Infantil de Oaxaca": "BS Biblioteca Infantil de Oaxaca José López Alavés 1342 Xochimilco Oaxaca",
+      "Biblioteca Andrés Henestrosa": "Biblioteca Andrés Henestrosa Porfirio Díaz 115 Oaxaca de Juárez",
+      "Jacobo y María Ángeles (San Martín Tilcajete)": "Jacobo y María Ángeles Calle Libres 5 San Martín Tilcajete Oaxaca",
+      "Casa Oaxaca El Restaurante": "Casa Oaxaca El Restaurante Constitución 104-A Oaxaca de Juárez",
+      "Origen": "Origen Av. Juárez 308 Oaxaca de Juárez",
+      "Pitiona": "Pitiona Allende 114 Oaxaca de Juárez",
+      "Zandunga": "Zandunga Manuel García Vigil 512-E Oaxaca de Juárez",
+      "El Asador Vasco (Centro)": "El Asador Vasco Portal de Flores 10-A Zócalo Oaxaca de Juárez",
+      "Chocolate Mayordomo (Mina 219)": "Chocolate Mayordomo Francisco Javier Mina 219 Oaxaca de Juárez",
+      "Quinta Real Oaxaca": "Quinta Real Oaxaca 5 de Mayo 300 Oaxaca de Juárez",
+      "Terraza Centro (City Centro by Marriott Oaxaca)": "City Centro by Marriott Oaxaca Aldama 410 Jalatlaco Oaxaca",
+      "Campante Bar (Hotel Azul)": "Campante Bar Hotel Azul Mariano Abasolo 313 Oaxaca de Juárez",
+      "Pabilo Café (Hotel Azul)": "Pabilo Café Hotel Azul Mariano Abasolo 313 Oaxaca de Juárez",
+      "Cocina Azul (Hotel Azul)": "Cocina Azul Hotel Azul Mariano Abasolo 313 Oaxaca de Juárez",
+      "Selva": "Selva Macedonio Alcalá 403 Oaxaca de Juárez"
+    },
+    "summary": "Santo Domingo's museum, Zapotec archaeological sites, textile and craft workshops, with breakfasts, dinners, cafés and cocktail bars checked against their own websites.",
+    "highlights": [
+      "Museo de las Culturas de Oaxaca (Santo Domingo)",
+      "Museo de Sitio de Monte Albán",
+      "Museo Textil de Oaxaca",
+      "Mitla Archaeological Zone"
+    ],
+    "tip": "INAH lists the Museo de las Culturas de Oaxaca as open Tuesday to Saturday only and Zaachila as open Thursday to Sunday only, so save a Monday for Monte Albán's site museum, Mitla, Yagul or Atzompa, which list daily hours.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Check INAH days",
+        "copy": "INAH lists the Museo de las Culturas de Oaxaca as open Tuesday to Saturday, 10:00 to 16:00, and Zaachila as open Thursday to Sunday, 10:00 to 16:00. Monte Albán's site museum, Mitla, Yagul and Atzompa list daily hours."
+      },
+      {
+        "label": "Tickets",
+        "value": "$210 MXN foreign visitors",
+        "copy": "INAH lists $210 MXN for foreign visitors at the Museo de las Culturas de Oaxaca, Mitla, Yagul and Monte Albán's site museum, whose entry is included in the archaeological zone ticket. Atzompa is free, and Zaachila lists $145 MXN for foreign visitors."
+      },
+      {
+        "label": "Booking",
+        "value": "OpenTable and WhatsApp",
+        "copy": "Casa Oaxaca El Restaurante and Origen take reservations through OpenTable, while Selva asks groups of six or more to arrange ahead by WhatsApp. INAH recommends booking a Monte Albán guided tour two days in advance."
+      },
+      {
+        "label": "Site rules",
+        "value": "No food, pets or smoking",
+        "copy": "INAH's pages for Mitla, Yagul, Atzompa and the Museo de las Culturas de Oaxaca bar smoking, food and pets, and the museum also bans flash. Professional cameras carry an extra fee at the Museo de las Culturas and Monte Albán's site museum."
+      }
+    ],
+    "dek": "Plan museum and ruin days around INAH's listed opening days, then book Centro dinners ahead.",
+    "intro": [
+      "Start in Centro, where the Museo de las Culturas de Oaxaca fills the former Convent of Santo Domingo de Guzmán on Macedonio Alcalá. INAH's page lists it as open Tuesday to Saturday, 10:00 to 16:00, with foreign visitors paying $210 MXN, and you can't bring food, pets or a flash. On Hidalgo, the Museo Textil de Oaxaca lists current exhibitions including 'Ladbeej – El textil teñido con cochinilla', plus textile workshops through November 2026, among them an autumn dyeing workshop from 24 to 26 November. On the same street, the Centro Cultural San Pablo occupies what its operator calls Oaxaca's first Dominican convent.",
+      "Monte Albán's site museum, on the Ignacio Bernal road above the city, lists daily hours of 08:00 to 16:30 with last entry at 16:00, and its admission is included in the archaeological zone ticket; INAH recommends booking a guided tour two days ahead. East along Highway 190, Mitla lists 08:00 to 17:00 daily with last access at 16:30, and Yagul lists 08:00 to 17:00 with last entry at 16:00. Atzompa is free and lists daily hours of 08:00 to 16:00, while Zaachila opens Thursday to Sunday only, 10:00 to 16:00. Mitla, Yagul and Atzompa bar smoking, food and pets.",
+      "For meals, Zandunga on García Vigil publishes daily hours, serving breakfast from 9 AM to 12 PM and lunch and dinner from 12 PM to 11 PM. Casa Oaxaca El Restaurante on Constitución opens at 13:00, closing at 23:00 Monday to Saturday and 21:00 on Sunday, and takes bookings through OpenTable, as does Origen on Avenida Juárez. Pitiona on Allende handles reservations by email and WhatsApp. In Jalatlaco, Terraza Centro at City Centro by Marriott serves from 7:00 to 22:00 daily, and in Centro, Cocina Azul at Hotel Azul opens 7:30 to 22:30 with a Sunday buffet breakfast.",
+      "For drinks, Campante Bar sits on Hotel Azul's terrace and opens Monday to Saturday 15:00 to 23:00 and Sunday 11:00 to 20:00, and Pabilo Café in the same hotel serves coffee, Oaxacan chocolate and house-baked bread. Selva on Macedonio Alcalá seats you at shared, lounge-style tables and asks groups of six or more to arrange ahead by WhatsApp. With children, the Museo Infantil de Oaxaca occupies the restored former railway station on Calzada Madero, and the BS children's library in Xochimilco is free for children and teenagers. For a craft-village day, the Jacobo y María Ángeles workshop in San Martín Tilcajete says it opens 365 days a year."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair the Museo de las Culturas de Oaxaca in the former Santo Domingo convent, open Tuesday to Saturday per INAH, with Monte Albán's site museum, which lists daily hours."
+      ],
+      [
+        "A slower morning",
+        "Start with breakfast at Cocina Azul or Zandunga, then browse the exhibitions at the Museo Textil de Oaxaca on Hidalgo."
+      ],
+      [
+        "Before booking",
+        "Reserve Casa Oaxaca El Restaurante or Origen through OpenTable, and remember that Zaachila opens Thursday to Sunday only."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several hours come from pages that are undated (INAH Lugares pages, Origen, Pitiona) or carry older footers (Fundación Alfredo Harp Helú venue pages © 2022, Chocolate Mayordomo © 2021, Jacobo y María Ángeles with 2025 items), so treat them as published rather than current. INAH's Museo de las Culturas page lists Tuesday to Saturday hours yet also mentions free Sunday entry for Mexican citizens. Pitiona's Spanish and English hours differ for Saturday, and MUFI's own site gives Constitución 201 while its operator lists Reforma 504. Hours were not published for the Museo Textil de Oaxaca, El Asador Vasco, Quinta Real Oaxaca's venues, Pabilo Café or Selva. The Monte Albán zone page returned 404, so Monte Albán rests on the INAH site museum page. Sites that could not be read: Mezcaloteca, Café Brújula and Mezcal Real Minero (HTTP 429), El Destilado and Cafebre (403), In Situ Mezcalería (expired certificate), Sabina Sabe (TLS error), Expendio Tradición (connection closed), Rey Campero (522), Boulenc and Pan:AM (no working site), and the Oaxaca state culture site (500). Bakery coverage is thin: only Pabilo Café, which mentions house-baked bread, was confirmed.",
+  "injectionLikeText": []
+}

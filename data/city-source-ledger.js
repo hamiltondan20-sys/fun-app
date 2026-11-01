@@ -5,6 +5,755 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Oaxaca, Mexico": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-11-01",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several hours come from pages that are undated (INAH Lugares pages, Origen, Pitiona) or carry older footers (Fundación Alfredo Harp Helú venue pages © 2022, Chocolate Mayordomo © 2021, Jacobo y María Ángeles with 2025 items), so treat them as published rather than current. INAH's Museo de las Culturas page lists Tuesday to Saturday hours yet also mentions free Sunday entry for Mexican citizens. Pitiona's Spanish and English hours differ for Saturday, and MUFI's own site gives Constitución 201 while its operator lists Reforma 504. Hours were not published for the Museo Textil de Oaxaca, El Asador Vasco, Quinta Real Oaxaca's venues, Pabilo Café or Selva. The Monte Albán zone page returned 404, so Monte Albán rests on the INAH site museum page. Sites that could not be read: Mezcaloteca, Café Brújula and Mezcal Real Minero (HTTP 429), El Destilado and Cafebre (403), In Situ Mezcalería (expired certificate), Sabina Sabe (TLS error), Expendio Tradición (connection closed), Rey Campero (522), Boulenc and Pan:AM (no working site), and the Oaxaca state culture site (500). Bakery coverage is thin: only Pabilo Café, which mentions house-baked bread, was confirmed.",
+    "sourceUrls": [
+      "docs/content-research/oaxaca-2026-11-01.md",
+      "docs/content-research/oaxaca-2026-11-01.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Santo Domingo (church)",
+        "checkedOn": "2026-11-01",
+        "reason": "No operator page for the church itself was read; the former convent is covered as Museo de las Culturas de Oaxaca (Santo Domingo)."
+      },
+      {
+        "name": "Benito Juarez Market",
+        "checkedOn": "2026-11-01",
+        "reason": "No official municipal or operator page found; only tourism and third-party listings."
+      },
+      {
+        "name": "Monte Albán Archaeological Zone (zone page)",
+        "url": "https://www.inah.gob.mx/zonas/zona-arqueologica-de-monte-alban",
+        "checkedOn": "2026-11-01",
+        "reason": "INAH zone URL returned 404; Monte Albán is covered via the INAH Site Museum page, whose admission is included in the zone ticket."
+      },
+      {
+        "name": "Criollo",
+        "url": "https://www.criollo.mx/",
+        "checkedOn": "2026-11-01",
+        "reason": "Official site shows address (Calzada Madero 129) but no hours, menu, booking or 2026 operating evidence."
+      },
+      {
+        "name": "Levadura de Olla",
+        "url": "https://www.levaduradeolla.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "Domain is a Namecheap parking page."
+      },
+      {
+        "name": "Los Danzantes Oaxaca",
+        "url": "https://losdanzantesoaxaca.com.mx",
+        "checkedOn": "2026-11-01",
+        "reason": "Official Oaxaca site shows only a title and image; no address, hours or booking."
+      },
+      {
+        "name": "Mezcal Los Danzantes (distillery visits)",
+        "url": "https://www.mezcallosdanzantes.com",
+        "checkedOn": "2026-11-01",
+        "reason": "Page gives an Oaxaca city address for appointments but does not say it is the distillery; footer © 2020."
+      },
+      {
+        "name": "Mezcaloteca",
+        "url": "https://www.mezcaloteca.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "HTTP 429 Too Many Requests on three attempts."
+      },
+      {
+        "name": "Café Brújula",
+        "url": "https://www.cafebrujula.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "HTTP 429 Too Many Requests on five attempts."
+      },
+      {
+        "name": "In Situ Mezcalería",
+        "url": "https://www.insitumezcaleria.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "Certificate has expired; not bypassed."
+      },
+      {
+        "name": "El Destilado",
+        "url": "https://www.eldestilado.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "HTTP 403 Forbidden."
+      },
+      {
+        "name": "Sabina Sabe",
+        "url": "https://www.sabinasabe.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "TLS error (TLSV1_ALERT_INTERNAL_ERROR) on two attempts."
+      },
+      {
+        "name": "Expendio Tradición",
+        "url": "https://www.expendiotradicion.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "Fetch failed twice ('Socket is closed')."
+      },
+      {
+        "name": "Mezcal Real Minero",
+        "url": "https://www.realminero.com.mx/",
+        "checkedOn": "2026-11-01",
+        "reason": "HTTP 429 Too Many Requests."
+      },
+      {
+        "name": "Rey Campero",
+        "url": "https://www.reycampero.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "HTTP 522 server error."
+      },
+      {
+        "name": "Cafebre",
+        "url": "https://www.cafebre.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "HTTP 403 Forbidden."
+      },
+      {
+        "name": "Boulenc",
+        "url": "https://boulenc.mx/",
+        "checkedOn": "2026-11-01",
+        "reason": "No readable official site: boulenc.com.mx DNS failure, boulenc.mx 404, boulenc.com SSL error."
+      },
+      {
+        "name": "Pan:AM",
+        "url": "https://www.panam.mx/",
+        "checkedOn": "2026-11-01",
+        "reason": "No official site found; guessed domain fetch failed."
+      },
+      {
+        "name": "Pan con Madre",
+        "url": "https://www.panconmadre.mx/",
+        "checkedOn": "2026-11-01",
+        "reason": "Official site shows only title and navigation; no address or hours."
+      },
+      {
+        "name": "Café Nuevo Mundo",
+        "url": "https://www.cafenuevomundo.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "Site lists M. Bravo 206 and Manuel Doblado 721 but no hours, menu or dated content beyond a © 2026 footer; locations page 404."
+      },
+      {
+        "name": "Jardín Etnobotánico de Oaxaca",
+        "url": "https://www.jardinoaxaca.mx/recorridos",
+        "checkedOn": "2026-11-01",
+        "reason": "Official site publishes no visiting hours or tickets; 2025 decrees refer tour matters to OCCE Oaxaca. No current visiting evidence."
+      },
+      {
+        "name": "Restaurante Catedral",
+        "url": "https://www.restaurantecatedral.com.mx/",
+        "checkedOn": "2026-11-01",
+        "reason": "Official page shows only a name and image; no address or hours."
+      },
+      {
+        "name": "La Olla",
+        "url": "https://www.laolla.com.mx/",
+        "checkedOn": "2026-11-01",
+        "reason": "Domain redirects to an unrelated demo site."
+      },
+      {
+        "name": "Las Quince Letras",
+        "url": "https://www.lasquinceletras.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "Domain redirects to a GoDaddy for-sale page; no other official site found."
+      },
+      {
+        "name": "Itanoní",
+        "url": "https://www.itanoni.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "Official domain shows no content."
+      },
+      {
+        "name": "La Biznaga",
+        "url": "https://www.labiznaga.com.mx/",
+        "checkedOn": "2026-11-01",
+        "reason": "Official domain shows no content."
+      },
+      {
+        "name": "Tierra del Sol",
+        "checkedOn": "2026-11-01",
+        "reason": "No official website found; only guide and booking listings."
+      },
+      {
+        "name": "Hotel Los Amantes (terrace)",
+        "url": "https://www.hotellosamantes.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "Official site gives no street address; terrace breakfast is 'exclusively for our guests'."
+      },
+      {
+        "name": "Casa Silencio",
+        "url": "https://www.casasilencio.com/mezcal-book",
+        "checkedOn": "2026-11-01",
+        "reason": "Mezcal tour pages give times and prices but no address; contact page 404."
+      },
+      {
+        "name": "Majagua Hotel Boutique / Endémico",
+        "url": "https://www.majaguahotel.com/",
+        "checkedOn": "2026-11-01",
+        "reason": "Hotel page names Endémico Restaurante but gives no hours or current operating evidence; endemico.mx DNS failure."
+      },
+      {
+        "name": "Hotel Victoria Oaxaca",
+        "url": "https://www.hotelvictoriaoax.com.mx/",
+        "checkedOn": "2026-11-01",
+        "reason": "No address or restaurant details on the official page."
+      },
+      {
+        "name": "Casa Oaxaca Hotel",
+        "url": "https://www.casaoaxaca.com.mx/",
+        "checkedOn": "2026-11-01",
+        "reason": "Official page returned only a title."
+      },
+      {
+        "name": "Museo de Arte Prehispánico Rufino Tamayo",
+        "checkedOn": "2026-11-01",
+        "reason": "No official site found (museotamayo.org is the Mexico City museum)."
+      },
+      {
+        "name": "Museo de Arte Contemporáneo de Oaxaca (MACCO)",
+        "url": "https://www.oaxaca.gob.mx/seculta/",
+        "checkedOn": "2026-11-01",
+        "reason": "No official page found; state culture site (oaxaca.gob.mx/seculta) returned HTTP 500."
+      },
+      {
+        "name": "Teatro Macedonio Alcalá",
+        "url": "https://www.oaxaca.gob.mx/",
+        "checkedOn": "2026-11-01",
+        "reason": "No official page found; state site returned HTTP 500."
+      },
+      {
+        "name": "Dainzú Archaeological Zone",
+        "url": "https://lugares.inah.gob.mx/en/zonas-arqueologicas/zonas/1760-dainzú.html",
+        "checkedOn": "2026-11-01",
+        "reason": "INAH page returned 404."
+      },
+      {
+        "name": "Lambityeco Archaeological Zone",
+        "url": "https://lugares.inah.gob.mx/en/zonas-arqueologicas/1763-lambityeco.html",
+        "checkedOn": "2026-11-01",
+        "reason": "INAH page returned 404."
+      },
+      {
+        "name": "Market breakfast",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Mezcal valley outing",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Craft village day",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "a mole or tlayuda meal",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Oaxaca market or cafe",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local dinner in Centro",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Jalatlaco",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Xochimilco",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Centro",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Centro walk",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Jalatlaco",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Xochimilco",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Xochimilco",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Santo Domingo",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Centro",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Market breakfast",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Jalatlaco",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Benito Juarez Market",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Centro evening",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Jalatlaco",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Xochimilco",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Centro",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Santo Domingo",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Jalatlaco",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Xochimilco",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Centro",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Santo Domingo",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Centro cafe or market",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Mezcal valley outing",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Xochimilco",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Xochimilco",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Centro",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Centro",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Jalatlaco bakery or market",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Santo Domingo",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Xochimilco",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Centro",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Benito Juarez Market",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Xochimilco",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Centro",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Jalatlaco",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Xochimilco",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Centro",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Centro",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Jalatlaco",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Monte Alban",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Centro",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Jalatlaco morning market",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Santo Domingo",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Xochimilco",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Centro",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Jalatlaco",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Xochimilco",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-11-01",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Museo de las Culturas de Oaxaca (Santo Domingo)": {
+        "url": "https://lugares.inah.gob.mx/en/node/4252",
+        "sourceType": "official public operator (INAH, Instituto Nacional de Antropología e Historia)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "INAH's museum page publishes opening hours, fees ('$210.00 Visitantes extranjeros') and visitor rules ('No flash', 'Pets not allowed', no food, no smoking), with guided tours, cloakroom and shop listed as services."
+      },
+      "Museo de Sitio de Monte Albán": {
+        "url": "https://lugares.inah.gob.mx/en/node/4308",
+        "sourceType": "official public operator (INAH)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "INAH page lists daily hours, fees ($105 MXN Mexican visitors, $210 MXN foreign visitors), says admission is included in the archaeological zone ticket, and recommends booking a guided tour two days in advance. No closure notice on the page."
+      },
+      "Mitla Archaeological Zone": {
+        "url": "https://lugares.inah.gob.mx/en/node/4350",
+        "sourceType": "official public operator (INAH)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "INAH page publishes hours and fees ('$210.00' foreign visitors) and rules: no smoking, no entry with food, no pets."
+      },
+      "Yagul Archaeological Zone": {
+        "url": "https://lugares.inah.gob.mx/en/node/5849",
+        "sourceType": "official public operator (INAH)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "INAH page publishes daily hours, fees ($105 Mexican / $210 foreign visitors) and rules (no smoking, no food, no pets)."
+      },
+      "Zaachila Archaeological Zone": {
+        "url": "https://lugares.inah.gob.mx/en/node/4368",
+        "sourceType": "official public operator (INAH)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "INAH page publishes hours and fees ($80 national, $145 foreign visitors), with access 15 km from Oaxaca on Carretera Federal 131."
+      },
+      "Atzompa Archaeological Zone": {
+        "url": "https://lugares.inah.gob.mx/en/node/5429",
+        "sourceType": "official public operator (INAH)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "INAH page publishes daily hours, states entry is free, and lists rules (no smoking, no food, no pets)."
+      },
+      "Museo Textil de Oaxaca": {
+        "url": "https://www.museotextildeoaxaca.org/",
+        "sourceType": "operator's own site (Fundación Alfredo Harp Helú Oaxaca)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Current exhibitions listed, including 'Ladbeej - El textil teñido con cochinilla' and 'po´t - historia, creatividad, resistencia'; the calendar lists November 2026 workshops such as 'Animalitos en puntos | Taller de bordado' (17–20 November) and 'Las reservas del otoño | Taller de teñido' (24–26 November)."
+      },
+      "Centro Cultural San Pablo": {
+        "url": "https://fahho.mx/filiales-fahho/centro-cultural-san-pablo/",
+        "sourceType": "operator's own site (Fundación Alfredo Harp Helú Oaxaca)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Operator page describes the centre, which 'abrió sus puertas el 26 de noviembre de 2011 en lo que fue el primer convento dominico en Oaxaca', and publishes service hours. Page also carries a stray 'página no existe' line and a 2022 footer."
+      },
+      "Museo de Filatelia de Oaxaca (MUFI)": {
+        "url": "https://www.mufi.org.mx/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Museum site shows 'Abierto ⋅ Horario de cierre: 20:00' and lists permanent and temporary exhibition sections; FAHHO's page lists collections including 'Beisbol, Ferrocarriles, ... Buzones'."
+      },
+      "Museo Infantil de Oaxaca (MIO)": {
+        "url": "https://fahho.mx/filiales-fahho/museo-infantil-de-oaxaca/",
+        "sourceType": "operator's own site (Fundación Alfredo Harp Helú Oaxaca)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Operator page describes the children's museum in the restored former Oaxaca railway station and publishes service hours."
+      },
+      "BS Biblioteca Infantil de Oaxaca": {
+        "url": "https://fahho.mx/filiales-fahho/bs-biblioteca-infantil-de-oaxaca-biblioteca-jorge-luis-borges/",
+        "sourceType": "operator's own site (Fundación Alfredo Harp Helú Oaxaca)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Operator page publishes service hours and says its spaces, collections and services are free for children and adolescents."
+      },
+      "Biblioteca Andrés Henestrosa": {
+        "url": "https://fahho.mx/filiales-fahho/biblioteca-andres-henestrosa/",
+        "sourceType": "operator's own site (Fundación Alfredo Harp Helú Oaxaca)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Operator page publishes hours and says services are offered 'de manera gratuita y sin distinción de ninguna especie'."
+      },
+      "Jacobo y María Ángeles (San Martín Tilcajete)": {
+        "url": "https://www.jacoboymariaangeles.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Workshop site publishes daily hours, says 'Abrimos los 365 días del año', and links guided visits ('Visita Guiada'), workshops and an agenda; newest dated items are from 2025."
+      },
+      "Casa Oaxaca El Restaurante": {
+        "url": "https://www.casaoaxacaelrestaurante.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Site publishes weekly hours and a 'RESERVA AQUÍ' button to OpenTable; page assets include a 2026 Michelin Guide logo file."
+      },
+      "Origen": {
+        "url": "https://origenoaxaca.com/Ubicacion",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Site states 'Reservaciones a través de OpenTable', lists reservaciones@origenoaxaca.com, and publishes weekly hours; menu sections include Restaurante and Mesa del Chef."
+      },
+      "Pitiona": {
+        "url": "https://www.pitiona.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Site lists reservations by email (contacto@pitiona.com) and WhatsApp, a 'Reserva Ahora' link and weekly hours."
+      },
+      "Zandunga": {
+        "url": "https://zandungasabor.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Site lists a reservations line ('Reservas: 951 286 0866') and daily hours, and carries blog posts dated '1 agosto, 2026'."
+      },
+      "El Asador Vasco (Centro)": {
+        "url": "https://www.asadorvasco.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Site lists reservation channels for the Centro branch (WhatsApp 951 226 13 86, reservaciones@asadorvasco.com); footer copyright 2025."
+      },
+      "Chocolate Mayordomo (Mina 219)": {
+        "url": "https://www.chocolatemayordomo.com.mx/sucursales/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Branches page lists this and about 19 other Oaxaca-area branches with hours; page footer is '©2021', so the listing may be dated."
+      },
+      "Quinta Real Oaxaca": {
+        "url": "https://www.grupocaminoreal.com/quinta-real-oaxaca",
+        "sourceType": "operator's own site (Grupo Camino Real)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Hotel page with live booking engine names its venues: El Refectorio restaurant, Las Bugambilias ('Brinda con un buen mezcal') and Las Novicias ('una velada romántica', live music). Guest reviews dated 2025."
+      },
+      "Terraza Centro (City Centro by Marriott Oaxaca)": {
+        "url": "https://www.marriott.com/en-us/hotels/oaxco-city-centro-oaxaca/dining/",
+        "sourceType": "operator's own site (Marriott)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Dining page lists Terraza Centro with Oaxacan dishes and 'seasonal mezcalini and handcrafted cocktails', plus a buffet breakfast and Lobby/Pool Bar with hours; footer '© 1996 – 2026'."
+      },
+      "Campante Bar (Hotel Azul)": {
+        "url": "https://www.hotelazuloaxaca.com/nuestros-espacios",
+        "sourceType": "operator's own site (Hotel Azul Oaxaca)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "'Campante Bar se encuentra en la terraza del Hotel Azul Oaxaca'; focuses on Mexican and Oaxacan spirits, artisanal cocktails and tastings. Page published 'Oct 26, 2026'."
+      },
+      "Pabilo Café (Hotel Azul)": {
+        "url": "https://www.hotelazuloaxaca.com/nuestros-espacios",
+        "sourceType": "operator's own site (Hotel Azul Oaxaca)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Hotel's spaces page (published 'Oct 26, 2026') describes coffee drinks, Oaxacan chocolate, sandwiches, house-baked bread and mezcal cocktails: 'El objetivo principal de Pabilo Café es satisfacer todos los gustos'."
+      },
+      "Cocina Azul (Hotel Azul)": {
+        "url": "https://www.hotelazuloaxaca.com/nuestros-espacios",
+        "sourceType": "operator's own site (Hotel Azul Oaxaca)",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Spaces page (published 'Oct 26, 2026') describes traditional Oaxacan cooking with a focus on breakfast and 'un delicioso mole amarillo con hongos de la sierra'."
+      },
+      "Selva": {
+        "url": "https://www.selvaoaxaca.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-01",
+        "operatingEvidence": "Cocktail bar site takes arrangements for 'For 6+ people and special requests' by WhatsApp and notes shared, lounge-style seating; latest dated credit is 2024."
+      }
+    }
+  },
   "Phuket, Thailand": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-11-01",
