@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 87.
-- Classifier-passed (published, not fully documented in that format): 105.
+- Source-verified (complete dated evidence format): 88.
+- Classifier-passed (published, not fully documented in that format): 104.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -283,7 +283,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | London, United Kingdom | london | source-verified | source-checked | 30 | 43 | 15 | 15 | None |
 | Los Angeles, United States | los-angeles | source-verified | source-checked | 26 | 57 | 15 | 15 | None |
 | Los Cabos, Mexico | los-cabos | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Lucerne, Switzerland | lucerne | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Lucerne, Switzerland | lucerne | source-verified | source-checked | 25 | 54 | 15 | 15 | None |
 | Luxor, Egypt | luxor | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
 | Lyon, France | lyon | source-verified | source-checked | 25 | 47 | 15 | 15 | None |
 | Maasai Mara, Kenya | maasai-mara | held-back | not-reviewed | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |

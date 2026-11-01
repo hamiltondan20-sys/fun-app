@@ -1,0 +1,886 @@
+{
+  "city": "Lucerne, Switzerland",
+  "checkedOn": "2026-11-01",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Pilatus (Pilatus-Bahnen)",
+      "kind": "scenic",
+      "url": "https://www.pilatus.ch/en/",
+      "sourceType": "operator's own site (Pilatus-Bahnen AG)",
+      "address": "\"Pilatus-Bahnen AG Schlossweg 1 6010 Kriens/Lucerne\" (imprint, https://www.pilatus.ch/en/imprint)",
+      "operatingEvidence": "Notice: gondolas and cable car closed for maintenance 19 Oct – 27 Nov 2026; \"Access only possible by cogwheel railway from Alpnachstad.\" Events listed for 4 and 7 Nov 2026; cogwheel railway seats can be reserved with the ticket.",
+      "hours": "not published (customer service Mon–Fri 08:00–17:30; Sat, Sun and public holidays 08:00–16:00)",
+      "confidence": "high"
+    },
+    {
+      "name": "Rigi (Rigi Bahnen)",
+      "kind": "scenic",
+      "url": "https://www.rigi.ch/en/inform/operating-informations",
+      "sourceType": "operator's own site (RIGI BAHNEN AG)",
+      "address": "\"RIGI BAHNEN AG: Bahnhofstrasse 7, 6354 Vitznau\" (imprint, https://www.rigi.ch/en/imprint)",
+      "operatingEvidence": "Operating-information page lists November 2026 maintenance: cable car Weggis – Rigi Kaltbad 16–27 Nov 2026 \"not in operation on weekdays, in operation at weekends (Sat/Sun)\"; Mineralbad Rigi closed 23–27 Nov 2026.",
+      "hours": "not published on pages read (timetable linked separately)",
+      "confidence": "high"
+    },
+    {
+      "name": "Lake Lucerne boats (SGV)",
+      "kind": "scenic",
+      "url": "https://www.lakelucerne.ch/en/information/timetable/",
+      "sourceType": "operator's own site (Lake Lucerne Navigation Company SGV AG)",
+      "address": "\"Lake Lucerne Navigation Company (SGV) AG, Werftestrasse 5, CH-6002 Lucerne\"; \"Departures to Weggis, Vitznau (Rigi), Brunnen, Flüelen = Pier 1\", Alpnachstad (Pilatus) = Pier 2",
+      "operatingEvidence": "\"Winter timetable | 19.10. to 16.04.2027\"; \"Overview of timetables 2026\". Tickets sold on all boats and at Lucerne and Weggis stations; seat reservations only for the onboard restaurant.",
+      "hours": "timetable-based; winter timetable 19 October 2026 – 16 April 2027",
+      "confidence": "high"
+    },
+    {
+      "name": "Swiss Museum of Transport",
+      "kind": "museum",
+      "url": "https://www.verkehrshaus.ch/en/your-visit/plan-a-visit/opening-times",
+      "sourceType": "operator's own site (Verkehrshaus der Schweiz)",
+      "address": "\"Haldenstrasse 44 CH – 6006 Luzern\"",
+      "operatingEvidence": "\"What's on Today\" dated 01.11.2026 lists the Swiss Chocolate Adventure ride 11:00–16:20; opening-times page headed \"Open 365 days a year\" with \"Winter time (25.10.2026 - 27.03.2027)\" (banner gives 28.03.2027).",
+      "hours": "Winter: Museum 10:00–17:00; Swiss Chocolate Adventure 11:00–16:20; Cafébar and Brasserie 09:00–17:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Hans Erni Museum",
+      "kind": "museum",
+      "url": "https://www.verkehrshaus.ch/en/your-visit/museum/hans-erni-museum",
+      "sourceType": "operator's own site (Verkehrshaus der Schweiz)",
+      "address": "\"Haldenstrasse 44 CH – 6006 Luzern\" (Verkehrshaus site)",
+      "operatingEvidence": "Listed on the 2026/27 winter opening-times page at 11:00–17:00; admission \"can be purchased separately and costs CHF 18 for adults and CHF 14 for students/trainees (under 25)\".",
+      "hours": "Winter 11:00–17:00 (winter time 25.10.2026 – 27.03.2027)",
+      "confidence": "high"
+    },
+    {
+      "name": "Glacier Garden Lucerne",
+      "kind": "museum",
+      "url": "https://www.gletschergarten.ch/en/",
+      "sourceType": "operator's own site",
+      "address": "\"Denkmalstrasse 4, CH - 6006 Lucerne\"",
+      "operatingEvidence": "Special exhibition \"Starting September 23, 2026, at the Sandstone Pavilion\"; GG By Night 4–7 Nov 2026; lecture 16 Nov 2026. Tickets \"Valid for 1 year from date of purchase\".",
+      "hours": "\"Open daily Apr-Oct: 10am-6pm Nov-March: 10 a.m.-5 p.m.\" (header banner conflicts: \"March - November ... daily 10 am - 5 pm\")",
+      "confidence": "high"
+    },
+    {
+      "name": "Kunstmuseum Luzern",
+      "kind": "museum",
+      "url": "https://www.kunstmuseumluzern.ch/en/visit/information/",
+      "sourceType": "operator's own site",
+      "address": "\"Kunstmuseum Luzern, Europaplatz 1, 6002 Luzern\"",
+      "operatingEvidence": "Exhibition Dominik Zietlow, \"Nur die Berge begegnen sich nie\", 24.10.2026 – 31.01.2027; 2026 public-holiday list. Free on the first Sunday of every month; adults CHF 15; under 16 free.",
+      "hours": "Monday closed; Tuesday–Sunday 11 am – 6 pm; Wednesday 11 am – 7 pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Sammlung Rosengart",
+      "kind": "museum",
+      "url": "https://www.rosengart.ch/en/contact",
+      "sourceType": "operator's own site (Stiftung Rosengart)",
+      "address": "\"Stiftung Rosengart, Pilatusstrasse 10, CH-6003 Luzern\"",
+      "operatingEvidence": "Dated hours for 2026/27 and English public tour on 29.11.2026 (\"CHF 8 plus admission\"). Closed 25 December 2026 and Mondays 1 January – 22 March 2027.",
+      "hours": "1 November – 31 December 2026 \"daily from 11 am to 5 pm (including public holidays)\"; 1 January – 25 March 2027 Tuesday–Sunday 12 noon – 5 pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Richard Wagner Museum",
+      "kind": "museum",
+      "url": "https://www.richard-wagner-museum.ch/en/visit/information/",
+      "sourceType": "operator's own site",
+      "address": "\"Richard-Wagner-Weg 27 CH-6005 Lucerne\"",
+      "operatingEvidence": "Special exhibition \"Wagner Taboo? Jewish Perspectives\" 01.04.–30.11.2026; \"The museum season runs from April 1 to November 30.\"",
+      "hours": "Tuesday–Sunday 11:00–17:00 during the season (1 April – 30 November)",
+      "confidence": "high"
+    },
+    {
+      "name": "Bourbaki Panorama",
+      "kind": "museum",
+      "url": "https://www.bourbakipanorama.ch/en/",
+      "sourceType": "operator's own site",
+      "address": "\"Löwenplatz 11\", CH–6004 Luzern",
+      "operatingEvidence": "Holiday hours published for 24 Dec 2026 – 2 Jan 2027, including \"Friday, 25 December 2026: closed\"; \"Intergenerational ticket from CHF 26\".",
+      "hours": "\"April to October daily 10 am to 6 pm\"; \"November to March daily 10 am to 5 pm\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Museum Luzern",
+      "kind": "museum",
+      "url": "https://museumluzern.ch/",
+      "sourceType": "operator's own site (merged Natur-Museum/Historisches Museum; naturmuseum.ch redirects here)",
+      "address": "\"Kasernenplatz 6 | 6003 Luzern\"",
+      "operatingEvidence": "\"Unsichtbar? Tiere im Verborgenen\" 12 June 2026 – 21 February 2027; \"Sichtbar! Tiere aus dem Kunstdepot\" at Haus Pfistergasse 24 until 21 February 2027; new exhibition from 6 November 2026.",
+      "hours": "\"Dienstag – Sonntag\" 10–17 Uhr; \"Montag geschlossen\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Lucerne Weekly Market (Rathausquai)",
+      "kind": "market",
+      "url": "https://www.stadtluzern.ch/dienstleistungeninformation/9815",
+      "sourceType": "official public operator (Stadt Luzern, Dienstabteilung Stadtraum und Veranstaltungen)",
+      "address": "\"Rathausquai – Unter der Egg – Jesuitenplatz\"",
+      "operatingEvidence": "City page with 2026 information (left-bank market now only at Jesuitenplatz) and listed exceptions, e.g. relocated market on 8 December.",
+      "hours": "\"In der Regel jeden Dienstag und Samstag von 7 bis 12 Uhr\"; fish market Unter der Egg usually Fridays 8–12",
+      "confidence": "high"
+    },
+    {
+      "name": "Old Swiss House",
+      "kind": "meal",
+      "url": "https://www.oldswisshouse.ch/en/",
+      "sourceType": "operator's own site",
+      "address": "\"Löwenplatz 4, CH-6004 Luzern\"",
+      "operatingEvidence": "Page timestamp 2026-09-07; online and phone reservations \"during our opening hours\"; says it is \"open for Christmas and New Year's Eve\".",
+      "hours": "Tuesday–Saturday 11:30–14:30 and 18:00–23:30; Sunday and Monday closed",
+      "confidence": "medium"
+    },
+    {
+      "name": "Wirtshaus Galliker",
+      "kind": "meal",
+      "url": "https://www.wirtshaus-galliker.ch/",
+      "sourceType": "operator's own site",
+      "address": "\"Wirtshaus Galliker, Schützenstrasse 1, 6003 Luzern\"",
+      "operatingEvidence": "Current site (\"Copyright © 2026\") with hours and weekly specials; \"Reservieren wird dringend empfohlen\".",
+      "hours": "Tuesday–Saturday 11:15–14:30 and 18:00–00:30; closed Mondays and Sundays",
+      "confidence": "medium"
+    },
+    {
+      "name": "Rathaus Brauerei",
+      "kind": "meal",
+      "url": "https://rathausbrauerei.ch/de/adresse/",
+      "sourceType": "operator's own site",
+      "address": "\"Restaurant Rathaus Brauerei, Gambrinus Gastronomie AG, Unter der Egg 2, CH-6004 Luzern\"",
+      "operatingEvidence": "Weekly lunch menu dated 2–6 November 2026 (https://rathausbrauerei.ch/de/wochenmenu/); menu CHF 25, Tagesteller CHF 23. Terrace first come, first served.",
+      "hours": "November to March: Mon, Wed–Fri 10:00–24:00; Tue and Sat 08:00–24:00; Sun and holidays 10:00–23:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Mill'Feuille",
+      "kind": "cafe",
+      "url": "https://www.millfeuille.ch/",
+      "sourceType": "operator's own site",
+      "address": "\"Mühlenplatz 6, 6004 Luzern\"",
+      "operatingEvidence": "Online table reservation; groups over nine by email (\"mehr als 9 Personen ... per E-Mail\"). No dated 2026 item seen.",
+      "hours": "\"Montag - Samstag ab 7:30 bis spät\"; \"Sonn- & Feiertage ab 9:00 Uhr bis spät\"; kitchen Mon–Sat 8:00–21:00, Sun 9:00–21:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Restaurant Balances (Hotel des Balances)",
+      "kind": "meal",
+      "url": "https://www.balances.ch/restaurants-bar/restaurant",
+      "sourceType": "operator's own site (Hotel des Balances)",
+      "address": "\"Hotel des Balances | Weinmarkt | CH-6004 Luzern\"",
+      "operatingEvidence": "Lunch recommendation dated 26.10.26; autumn 2026 menus; breakfast buffet daily 7–11 (CHF 45 for external guests).",
+      "hours": "\"täglich von 07.00 bis 00.30 Uhr\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Bar & Lounge (Hotel des Balances)",
+      "kind": "bar",
+      "url": "https://www.balances.ch/restaurants-bar/bar-lounge",
+      "sourceType": "operator's own site (Hotel des Balances)",
+      "address": "\"Hotel des Balances | Weinmarkt | CH-6004 Luzern\"",
+      "operatingEvidence": "Bar page with current hours, open \"nicht nur für unsere Hotelgäste\"; hotel homepage notes 2026 award \"Best Customer Experience 2026\".",
+      "hours": "\"täglich von 07.00 bis 00.30\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Restaurant Lumières (Château Gütsch)",
+      "kind": "meal",
+      "url": "https://www.chateau-guetsch.ch/restaurant-lumieres/",
+      "sourceType": "operator's own site (Château Gütsch)",
+      "address": "\"Kanonenstrasse, 6003 Lucerne\"",
+      "operatingEvidence": "\"Ab 02. November/26 bis 23. März/27 bleibt das Restaurant am Montag und Dienstag geschlossen\"; weekend lunch PDF for 31 Oct – 1 Nov 2026; Winter 2026 evening menu. Groups of 7+ by phone or email.",
+      "hours": "Breakfast daily 07.00–10.30; lunch (Wednesday–Sunday) 12.00–14.00; dinner (Wednesday–Sunday) 18.00–22.00",
+      "confidence": "high"
+    },
+    {
+      "name": "American Bar (Château Gütsch)",
+      "kind": "bar",
+      "url": "https://www.chateau-guetsch.ch/american-bar/",
+      "sourceType": "operator's own site (Château Gütsch)",
+      "address": "\"Kanonenstrasse, 6003 Lucerne\" (Château Gütsch)",
+      "operatingEvidence": "Hours labelled \"Aktuell\"; bar menu \"Barkarte-Sommer-2026\"; Château Noël in the courtyard 19 November – 20 December 2026 (hotel homepage).",
+      "hours": "Monday–Friday from 14:00; Saturday and Sunday from 12:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Louis Bar (Hotel Montana)",
+      "kind": "bar",
+      "url": "https://www.hotel-montana.ch/en/louis-bar",
+      "sourceType": "operator's own site (Art Deco Hotel Montana)",
+      "address": "\"Adligenswilerstrasse 22, CH - 6002 Luzern\"",
+      "operatingEvidence": "Bar menu file \"Barkarte-louis-bar-DE-Juli-2026.pdf\"; live jazz and funk & soul Tuesday–Saturday, jam session Thursdays; dress code \"smart casual\".",
+      "hours": "Sunday–Thursday 17:00 – 00:30; Friday and Saturday until 02:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Schweizerhof Bar",
+      "kind": "bar",
+      "url": "https://www.schweizerhof-luzern.ch/en/restaurants-bar/schweizerhof-bar",
+      "sourceType": "operator's own site (Hotel Schweizerhof Luzern)",
+      "address": "\"Schweizerhofquai - CH-6002 Lucerne\"",
+      "operatingEvidence": "Bar menu file \"Barkarte-ab-08.10.2026.pdf\"; \"daily piano performances\".",
+      "hours": "\"Daily from 09.00 am until 12.00 am\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Café Tacuba (Neustadt)",
+      "kind": "cafe",
+      "url": "https://www.cafetacuba.ch/",
+      "sourceType": "operator's own site",
+      "address": "\"Café Tacuba Neustadt: Hirschmattstrasse 36, 6003 Luzern\"",
+      "operatingEvidence": "Site lists current branch hours for three Lucerne locations; no dated 2026 item seen.",
+      "hours": "Mon–Fri 07:30–18:00; Sat/Sun 09:00–17:00 (as listed on the site, undated)",
+      "confidence": "medium"
+    },
+    {
+      "name": "HEINI (Falkenplatz)",
+      "kind": "bakery",
+      "url": "https://www.heini.ch/ueber-heini/standorte/heini-falkenplatz-luzern/",
+      "sourceType": "operator's own site (HEINI Conditorei AG)",
+      "address": "\"Hertensteinstrasse 66, 6004 Luzern\"",
+      "operatingEvidence": "Weekly menu \"ab 02.11.26\", \"Speisekarte 2026 Falkenplatz\", weekend brunch specials 2026; \"Frühstück servieren wir (ohne Reservation) jeden Tag bis Ladenschluss.\"",
+      "hours": "not published on the branch page (\"Allgemeine Öffnungszeiten 2026\" PDF not read)",
+      "confidence": "high"
+    },
+    {
+      "name": "Confiserie Bachmann (Schwanenplatz)",
+      "kind": "bakery",
+      "url": "https://www.confiserie.ch/de/schwanenplatz",
+      "sourceType": "operator's own site (Confiseur Bachmann AG)",
+      "address": "\"Confiseur Bachmann AG, Schwanenplatz 7, 6002 Luzern\"",
+      "operatingEvidence": "Holiday notices \"Fr 25.12.2026 geschlossen\", \"Sa 26.12.2026 9.30 - 18.00\"; café area (\"Cafeteria/Restaurant\").",
+      "hours": "Mon–Wed 7:00–19:00; Thu 7:00–21:00; Fri 7:00–19:00; Sat 7:00–18:00; Sun 9:30–18:00",
+      "confidence": "high"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Chapel Bridge",
+      "reason": "No operator page with an address and current information found; only historical City of Lucerne documents (reports and press releases).",
+      "url": "https://www.stadtluzern.ch/_doc/2230619"
+    },
+    {
+      "name": "Lion Monument",
+      "reason": "No current official page found; City of Lucerne search results were old press releases and PDFs (2014–2021). The Glacier Garden page does not mention it.",
+      "url": "https://www.stadtluzern.ch/_doc/3179902"
+    },
+    {
+      "name": "Lake Lucerne",
+      "reason": "A lake, not a single operated place; covered through Lake Lucerne boats (SGV).",
+      "url": "https://www.lakelucerne.ch/en/"
+    },
+    {
+      "name": "Mount Pilatus or Rigi",
+      "reason": "Combined entry; checked separately as Pilatus (Pilatus-Bahnen) and Rigi (Rigi Bahnen).",
+      "url": ""
+    },
+    {
+      "name": "Restaurant Pfistern",
+      "reason": "Official site says it is closed for renovation: \"bis zur Wiedereröffnung im Frühling 2027 geschlossen\".",
+      "url": "https://www.restaurant-pfistern.ch/"
+    },
+    {
+      "name": "KKL Luzern",
+      "reason": "Fetch refused repeatedly with HTTP 429 Too Many Requests; not bypassed.",
+      "url": "https://www.kkl-luzern.ch/en/"
+    },
+    {
+      "name": "Max Chocolatier",
+      "reason": "Homepage gives no Lucerne street address or hours; store/contact pages returned HTTP 429 Too Many Requests.",
+      "url": "https://www.maxchocolatier.com/"
+    },
+    {
+      "name": "Titlis",
+      "reason": "Fetch refused with HTTP 429 Too Many Requests; not bypassed.",
+      "url": "https://www.titlis.ch/en"
+    },
+    {
+      "name": "Historisches Museum Luzern",
+      "reason": "SSL handshake failure on the old site (no readable content); the collections now appear under Museum Luzern, which is confirmed separately.",
+      "url": "https://www.historischesmuseum.lu.ch/"
+    },
+    {
+      "name": "Museggmauer (Musegg Wall)",
+      "reason": "No street address published; the only seasonal notice is an outdated winter closure (2 November 2024 – 31 March 2025), so current access is unclear.",
+      "url": "https://www.museggmauer.ch/"
+    },
+    {
+      "name": "Hofkirche St. Leodegar",
+      "reason": "The parish page gives only the parish office address and office hours, with no church address or visiting hours.",
+      "url": "https://www.kathluzern.ch/meine-kirche/pfarreien-standorte/st-leodegar-im-hof"
+    },
+    {
+      "name": "Jesuitenkirche Luzern",
+      "reason": "Only a postal address (Bahnhofstrasse 11a) and secretariat hours; no visiting hours or dated 2026 content found.",
+      "url": "https://www.jesuitenkirche-luzern.ch/kontakt-lage"
+    },
+    {
+      "name": "Stanserhorn",
+      "reason": "Confirmed operating, but the site says 22 November 2026 is \"the last operating day of this year's Stanserhorn season\"; left out because it closes for the winter in three weeks.",
+      "url": "https://www.stanserhorn.ch/en/"
+    },
+    {
+      "name": "Sonnenbergbahn",
+      "reason": "Only \"Waldheimstrasse, 6010 Kriens\" and \"Betrieb nach Fahrplan\"; no dated or current operating evidence.",
+      "url": "https://www.sonnenbergbahn.ch/"
+    },
+    {
+      "name": "Seebad Luzern",
+      "reason": "Page returned no readable content beyond its title.",
+      "url": "https://www.seebadluzern.ch/"
+    },
+    {
+      "name": "HEINI (Löwenplatz)",
+      "reason": "Conflicting addresses on the branch page (Zürichstrasse 12 vs Löwenplatz 9); HEINI (Falkenplatz) used instead.",
+      "url": "https://www.heini.ch/ueber-heini/standorte/heini-loewenplatz-luzern/"
+    },
+    {
+      "name": "Brasserie VICO (Hotel Schweizerhof)",
+      "reason": "Restaurant page URL tried returned HTTP 404; the homepage gives no hours.",
+      "url": "https://www.schweizerhof-luzern.ch/en/restaurants-bar/brasserie-vico"
+    },
+    {
+      "name": "Scala Restaurant (Hotel Montana)",
+      "reason": "Restaurant page URL tried returned HTTP 404; the homepage gives no hours.",
+      "url": "https://www.hotel-montana.ch/en/scala-restaurant"
+    },
+    {
+      "name": "SiP Café",
+      "reason": "Official domain tried (sipcafe.ch) did not resolve (DNS not found); no other official page identified.",
+      "url": "https://www.sipcafe.ch/"
+    },
+    {
+      "name": "Lake boat connection",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Old-town evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "a lakeside Swiss meal",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Lucerne market or cafe",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local dinner in Old Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Lakefront",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Weggis",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Old Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Old Town walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Lakefront",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Weggis",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Weggis",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Chapel Bridge",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Old Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Lake boat connection",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Lakefront",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Lake Lucerne",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Old Town evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Lakefront",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Weggis",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Old Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Chapel Bridge",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Lakefront",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Weggis",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Old Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Chapel Bridge",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Old Town cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Mount Pilatus or Rigi",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Weggis",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Weggis",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Old Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Old Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Lakefront bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Chapel Bridge",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Weggis",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Old Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Lake Lucerne",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Weggis",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Old Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Lakefront",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Weggis",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Old Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Old Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Lakefront",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Mount Pilatus",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Old Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Lakefront morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Chapel Bridge",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Weggis",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Old Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Lakefront",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Weggis",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Pilatus (Pilatus-Bahnen)",
+        "Rigi (Rigi Bahnen)",
+        "Lake Lucerne boats (SGV)",
+        "Glacier Garden Lucerne"
+      ],
+      "bestFirstTimers": [
+        "Swiss Museum of Transport",
+        "Lake Lucerne boats (SGV)",
+        "Bourbaki Panorama",
+        "Kunstmuseum Luzern"
+      ],
+      "bestRestaurants": [
+        "Wirtshaus Galliker",
+        "Old Swiss House",
+        "Restaurant Balances (Hotel des Balances)",
+        "Rathaus Brauerei"
+      ],
+      "bestBudget": [
+        "Lucerne Weekly Market (Rathausquai)",
+        "Rathaus Brauerei",
+        "Museum Luzern",
+        "Kunstmuseum Luzern"
+      ],
+      "bestLuxury": [
+        "Restaurant Lumières (Château Gütsch)",
+        "Schweizerhof Bar",
+        "Louis Bar (Hotel Montana)",
+        "Restaurant Balances (Hotel des Balances)"
+      ],
+      "bestCouples": [
+        "American Bar (Château Gütsch)",
+        "Louis Bar (Hotel Montana)",
+        "Restaurant Lumières (Château Gütsch)",
+        "Lake Lucerne boats (SGV)"
+      ],
+      "bestKids": [
+        "Swiss Museum of Transport",
+        "Glacier Garden Lucerne",
+        "Museum Luzern",
+        "Pilatus (Pilatus-Bahnen)"
+      ],
+      "bestSolo": [
+        "Sammlung Rosengart",
+        "Kunstmuseum Luzern",
+        "Richard Wagner Museum",
+        "Café Tacuba (Neustadt)"
+      ],
+      "bestUnique": [
+        "Bourbaki Panorama",
+        "Hans Erni Museum",
+        "Richard Wagner Museum",
+        "Glacier Garden Lucerne"
+      ],
+      "bestBreakfast": [
+        "HEINI (Falkenplatz)",
+        "Mill'Feuille",
+        "Restaurant Balances (Hotel des Balances)",
+        "Restaurant Lumières (Château Gütsch)"
+      ],
+      "bestLunch": [
+        "Rathaus Brauerei",
+        "Wirtshaus Galliker",
+        "Old Swiss House",
+        "Restaurant Lumières (Château Gütsch)"
+      ],
+      "bestDinner": [
+        "Wirtshaus Galliker",
+        "Old Swiss House",
+        "Restaurant Balances (Hotel des Balances)",
+        "Restaurant Lumières (Château Gütsch)"
+      ],
+      "bestCocktails": [
+        "Louis Bar (Hotel Montana)",
+        "Schweizerhof Bar",
+        "American Bar (Château Gütsch)",
+        "Bar & Lounge (Hotel des Balances)"
+      ],
+      "bestBakeries": [
+        "Confiserie Bachmann (Schwanenplatz)",
+        "HEINI (Falkenplatz)"
+      ],
+      "bestCoffee": [
+        "Café Tacuba (Neustadt)",
+        "Mill'Feuille",
+        "Confiserie Bachmann (Schwanenplatz)",
+        "HEINI (Falkenplatz)"
+      ]
+    },
+    "queries": {
+      "Pilatus (Pilatus-Bahnen)": "Pilatus-Bahnen Schlossweg 1 Kriens",
+      "Rigi (Rigi Bahnen)": "Rigi Bahnen Bahnhofstrasse 7 Vitznau",
+      "Lake Lucerne boats (SGV)": "SGV Schifffahrtsgesellschaft Werftestrasse 5 Lucerne",
+      "Swiss Museum of Transport": "Verkehrshaus der Schweiz Haldenstrasse 44 Lucerne",
+      "Hans Erni Museum": "Hans Erni Museum Haldenstrasse 44 Lucerne",
+      "Glacier Garden Lucerne": "Gletschergarten Denkmalstrasse 4 Lucerne",
+      "Kunstmuseum Luzern": "Kunstmuseum Luzern Europaplatz 1 Lucerne",
+      "Sammlung Rosengart": "Sammlung Rosengart Pilatusstrasse 10 Lucerne",
+      "Richard Wagner Museum": "Richard Wagner Museum Richard-Wagner-Weg 27 Lucerne",
+      "Bourbaki Panorama": "Bourbaki Panorama Löwenplatz 11 Lucerne",
+      "Museum Luzern": "Museum Luzern Kasernenplatz 6 Lucerne",
+      "Lucerne Weekly Market (Rathausquai)": "Wochenmarkt Rathausquai Lucerne",
+      "Old Swiss House": "Old Swiss House Löwenplatz 4 Lucerne",
+      "Wirtshaus Galliker": "Wirtshaus Galliker Schützenstrasse 1 Lucerne",
+      "Rathaus Brauerei": "Rathaus Brauerei Unter der Egg 2 Lucerne",
+      "Mill'Feuille": "Mill'Feuille Mühlenplatz 6 Lucerne",
+      "Restaurant Balances (Hotel des Balances)": "Hotel des Balances Weinmarkt Lucerne",
+      "Bar & Lounge (Hotel des Balances)": "Hotel des Balances Bar Weinmarkt Lucerne",
+      "Restaurant Lumières (Château Gütsch)": "Château Gütsch Restaurant Lumières Kanonenstrasse Lucerne",
+      "American Bar (Château Gütsch)": "Château Gütsch American Bar Kanonenstrasse Lucerne",
+      "Louis Bar (Hotel Montana)": "Louis Bar Hotel Montana Adligenswilerstrasse 22 Lucerne",
+      "Schweizerhof Bar": "Hotel Schweizerhof Bar Schweizerhofquai Lucerne",
+      "Café Tacuba (Neustadt)": "Café Tacuba Hirschmattstrasse 36 Lucerne",
+      "HEINI (Falkenplatz)": "HEINI Falkenplatz Hertensteinstrasse 66 Lucerne",
+      "Confiserie Bachmann (Schwanenplatz)": "Confiserie Bachmann Schwanenplatz 7 Lucerne"
+    },
+    "summary": "Mountain railways, lake boats, museums and the weekly market, with breakfast cafés, dinners, cocktail bars and bakeries checked against their own websites.",
+    "highlights": [
+      "Pilatus (Pilatus-Bahnen)",
+      "Rigi (Rigi Bahnen)",
+      "Lake Lucerne boats (SGV)",
+      "Swiss Museum of Transport"
+    ],
+    "tip": "Kunstmuseum Luzern and Museum Luzern are closed on Mondays, so plan Monday around the Swiss Museum of Transport, which says it is open 365 days a year.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mondays",
+        "copy": "Kunstmuseum Luzern and Museum Luzern are closed on Mondays, and the websites of Wirtshaus Galliker and the Old Swiss House list them as closed on Sundays and Mondays. Restaurant Lumières at Château Gütsch is closed on Mondays and Tuesdays from 2 November 2026 to 23 March 2027."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Reserve ahead",
+        "copy": "Pilatus lets you reserve a cogwheel railway seat with your train ticket, and Wirtshaus Galliker says reservations are strongly recommended. The Hans Erni Museum charges a separate CHF 18 adult admission, and Glacier Garden tickets are valid for one year from purchase."
+      },
+      {
+        "label": "Walk-in and queues",
+        "value": "No boat seat booking",
+        "copy": "SGV lake boats take no seat reservations except for the onboard restaurant, and tickets are sold on board and at the Lucerne and Weggis stations. HEINI (Falkenplatz) serves breakfast without reservation every day until closing, and the Rathaus Brauerei terrace is first come, first served."
+      },
+      {
+        "label": "Rules",
+        "value": "Dress and age",
+        "copy": "The Louis Bar at Hotel Montana asks for smart casual dress and says coach pants and holey pants are not welcome. Kunstmuseum Luzern is free for children and young people up to 16, and free for everyone on the first Sunday of each month."
+      }
+    ],
+    "dek": "Check each mountain railway's maintenance notices and each museum's closing day before you fix your Lucerne itinerary.",
+    "intro": [
+      "Lucerne's lake and mountains are run by operators that publish their own schedules, so check them before you set out. SGV lake boats run on a winter timetable from 19 October 2026 to 16 April 2027, with departures to Weggis, Vitznau and Brunnen from Pier 1 and to Alpnachstad, for Pilatus, from Pier 2. On Pilatus, the gondolas and cable car are closed for maintenance from 19 October to 27 November 2026, so you can reach the summit only by cogwheel railway from Alpnachstad. Rigi Bahnen says the Weggis to Rigi Kaltbad cable car does not run on weekdays from 16 to 27 November 2026.",
+      "In town, the Swiss Museum of Transport on Haldenstrasse says it is open 365 days a year, with winter museum hours of 10:00 to 17:00 from 25 October 2026. The Hans Erni Museum on the same site needs its own ticket, CHF 18 for adults. Kunstmuseum Luzern at Europaplatz 1 is closed on Mondays and stays open until 7 pm on Wednesdays; Dominik Zietlow's exhibition runs from 24 October 2026 to 31 January 2027. Museum Luzern on Kasernenplatz, also closed on Mondays, shows \"Unsichtbar? Tiere im Verborgenen\" until 21 February 2027.",
+      "Near Löwenplatz, the Glacier Garden at Denkmalstrasse 4 opened a special exhibition in its Sandstone Pavilion on 23 September 2026, and its tickets stay valid for a year from purchase. Bourbaki Panorama at Löwenplatz 11 is closed on 25 December 2026. Sammlung Rosengart, three minutes' walk from the station, opens daily from 11 am to 5 pm from 1 November to 31 December 2026, then closes on Mondays from 1 January to 22 March 2027. The Richard Wagner Museum's season runs from 1 April to 30 November, Tuesday to Sunday.",
+      "For meals, the websites of Wirtshaus Galliker on Schützenstrasse and the Old Swiss House at Löwenplatz 4 list both as closed on Sundays and Mondays, and Galliker says reservations are strongly recommended. Restaurant Lumières at Château Gütsch closes on Mondays and Tuesdays from 2 November 2026 to 23 March 2027. Rathaus Brauerei on Unter der Egg takes phone bookings for up to four people, but its terrace is first come, first served. The Louis Bar at Hotel Montana has live music Tuesday to Saturday and asks for smart casual dress. The city's weekly market runs on Tuesday and Saturday mornings."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Start at the Swiss Museum of Transport or the Glacier Garden, then take an SGV boat from Pier 1 towards Weggis and Vitznau for the Rigi."
+      ],
+      [
+        "A slower morning",
+        "Have breakfast at HEINI (Falkenplatz), which serves it without reservation, or browse the city's weekly market on Rathausquai on a Tuesday or Saturday morning."
+      ],
+      [
+        "Before booking",
+        "Avoid Mondays for Kunstmuseum Luzern and Museum Luzern, and Sundays and Mondays for Wirtshaus Galliker and the Old Swiss House."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. KKL Luzern, Titlis and Max Chocolatier's store pages refused automated reading (HTTP 429), the old Historisches Museum site failed with an SSL error, and Seebad Luzern returned no readable content, so none of them are included. Chapel Bridge and the Lion Monument are left out because no current official page with an address was found. Some places are only partly published: Pilatus and Rigi gave no daily operating hours on the pages read, HEINI (Falkenplatz) hours are in a PDF that was not read, and the hours for Café Tacuba, Mill'Feuille, Old Swiss House and Wirtshaus Galliker appear on pages with no 2026 date. The Glacier Garden and Swiss Museum of Transport pages contain conflicting seasonal hours or end dates. Château Gütsch and Hotel des Balances give a street name but no house number, and the Schweizerhof Bar gives only \"Schweizerhofquai\".",
+  "injectionLikeText": []
+}

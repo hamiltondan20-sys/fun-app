@@ -9110,4 +9110,110 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 29 distinct recommendations in this guide were checked against their operators' own websites on November 1, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Lucerne, Switzerland: source review of 2026-11-01 (docs/content-research/lucerne-2026-11-01.md).
+  {
+    const cityKey = "Lucerne, Switzerland";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Pilatus (Pilatus-Bahnen)","Rigi (Rigi Bahnen)","Lake Lucerne boats (SGV)","Glacier Garden Lucerne"],
+      bestFirstTimers: ["Swiss Museum of Transport","Lake Lucerne boats (SGV)","Bourbaki Panorama","Kunstmuseum Luzern"],
+      bestRestaurants: ["Wirtshaus Galliker","Old Swiss House","Restaurant Balances (Hotel des Balances)","Rathaus Brauerei"],
+      bestBudget: ["Lucerne Weekly Market (Rathausquai)","Rathaus Brauerei","Museum Luzern","Kunstmuseum Luzern"],
+      bestLuxury: ["Restaurant Lumières (Château Gütsch)","Schweizerhof Bar","Louis Bar (Hotel Montana)","Restaurant Balances (Hotel des Balances)"],
+      bestCouples: ["American Bar (Château Gütsch)","Louis Bar (Hotel Montana)","Restaurant Lumières (Château Gütsch)","Lake Lucerne boats (SGV)"],
+      bestKids: ["Swiss Museum of Transport","Glacier Garden Lucerne","Museum Luzern","Pilatus (Pilatus-Bahnen)"],
+      bestSolo: ["Sammlung Rosengart","Kunstmuseum Luzern","Richard Wagner Museum","Café Tacuba (Neustadt)"],
+      bestUnique: ["Bourbaki Panorama","Hans Erni Museum","Richard Wagner Museum","Glacier Garden Lucerne"],
+      bestBreakfast: ["HEINI (Falkenplatz)","Mill'Feuille","Restaurant Balances (Hotel des Balances)","Restaurant Lumières (Château Gütsch)"],
+      bestLunch: ["Rathaus Brauerei","Wirtshaus Galliker","Old Swiss House","Restaurant Lumières (Château Gütsch)"],
+      bestDinner: ["Wirtshaus Galliker","Old Swiss House","Restaurant Balances (Hotel des Balances)","Restaurant Lumières (Château Gütsch)"],
+      bestCocktails: ["Louis Bar (Hotel Montana)","Schweizerhof Bar","American Bar (Château Gütsch)","Bar & Lounge (Hotel des Balances)"],
+      bestBakeries: ["Confiserie Bachmann (Schwanenplatz)","HEINI (Falkenplatz)"],
+      bestCoffee: ["Café Tacuba (Neustadt)","Mill'Feuille","Confiserie Bachmann (Schwanenplatz)","HEINI (Falkenplatz)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Pilatus (Pilatus-Bahnen)": "Pilatus-Bahnen Schlossweg 1 Kriens",
+      "Rigi (Rigi Bahnen)": "Rigi Bahnen Bahnhofstrasse 7 Vitznau",
+      "Lake Lucerne boats (SGV)": "SGV Schifffahrtsgesellschaft Werftestrasse 5 Lucerne",
+      "Glacier Garden Lucerne": "Gletschergarten Denkmalstrasse 4 Lucerne",
+      "Swiss Museum of Transport": "Verkehrshaus der Schweiz Haldenstrasse 44 Lucerne",
+      "Bourbaki Panorama": "Bourbaki Panorama Löwenplatz 11 Lucerne",
+      "Kunstmuseum Luzern": "Kunstmuseum Luzern Europaplatz 1 Lucerne",
+      "Wirtshaus Galliker": "Wirtshaus Galliker Schützenstrasse 1 Lucerne",
+      "Old Swiss House": "Old Swiss House Löwenplatz 4 Lucerne",
+      "Restaurant Balances (Hotel des Balances)": "Hotel des Balances Weinmarkt Lucerne",
+      "Rathaus Brauerei": "Rathaus Brauerei Unter der Egg 2 Lucerne",
+      "Lucerne Weekly Market (Rathausquai)": "Wochenmarkt Rathausquai Lucerne",
+      "Museum Luzern": "Museum Luzern Kasernenplatz 6 Lucerne",
+      "Restaurant Lumières (Château Gütsch)": "Château Gütsch Restaurant Lumières Kanonenstrasse Lucerne",
+      "Schweizerhof Bar": "Hotel Schweizerhof Bar Schweizerhofquai Lucerne",
+      "Louis Bar (Hotel Montana)": "Louis Bar Hotel Montana Adligenswilerstrasse 22 Lucerne",
+      "American Bar (Château Gütsch)": "Château Gütsch American Bar Kanonenstrasse Lucerne",
+      "Sammlung Rosengart": "Sammlung Rosengart Pilatusstrasse 10 Lucerne",
+      "Richard Wagner Museum": "Richard Wagner Museum Richard-Wagner-Weg 27 Lucerne",
+      "Café Tacuba (Neustadt)": "Café Tacuba Hirschmattstrasse 36 Lucerne",
+      "Hans Erni Museum": "Hans Erni Museum Haldenstrasse 44 Lucerne",
+      "HEINI (Falkenplatz)": "HEINI Falkenplatz Hertensteinstrasse 66 Lucerne",
+      "Mill'Feuille": "Mill'Feuille Mühlenplatz 6 Lucerne",
+      "Bar & Lounge (Hotel des Balances)": "Hotel des Balances Bar Weinmarkt Lucerne",
+      "Confiserie Bachmann (Schwanenplatz)": "Confiserie Bachmann Schwanenplatz 7 Lucerne"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Lucerne" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Mountain railways, lake boats, museums and the weekly market, with breakfast cafés, dinners, cocktail bars and bakeries checked against their own websites.";
+    cityGuide.highlights = ["Pilatus (Pilatus-Bahnen)","Rigi (Rigi Bahnen)","Lake Lucerne boats (SGV)","Swiss Museum of Transport"];
+    cityGuide.tip = "Kunstmuseum Luzern and Museum Luzern are closed on Mondays, so plan Monday around the Swiss Museum of Transport, which says it is open 365 days a year.";
+    data.destinationFacts[cityKey] = "Kunstmuseum Luzern and Museum Luzern are closed on Mondays, so plan Monday around the Swiss Museum of Transport, which says it is open 365 days a year.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Mountain railways, lake boats, museums and the weekly market, with breakfast cafés, dinners, cocktail bars and bakeries checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays",
+        "copy": "Kunstmuseum Luzern and Museum Luzern are closed on Mondays, and the websites of Wirtshaus Galliker and the Old Swiss House list them as closed on Sundays and Mondays. Restaurant Lumières at Château Gütsch is closed on Mondays and Tuesdays from 2 November 2026 to 23 March 2027."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Reserve ahead",
+        "copy": "Pilatus lets you reserve a cogwheel railway seat with your train ticket, and Wirtshaus Galliker says reservations are strongly recommended. The Hans Erni Museum charges a separate CHF 18 adult admission, and Glacier Garden tickets are valid for one year from purchase."
+      },
+      {
+        "label": "Walk-in and queues",
+        "value": "No boat seat booking",
+        "copy": "SGV lake boats take no seat reservations except for the onboard restaurant, and tickets are sold on board and at the Lucerne and Weggis stations. HEINI (Falkenplatz) serves breakfast without reservation every day until closing, and the Rathaus Brauerei terrace is first come, first served."
+      },
+      {
+        "label": "Rules",
+        "value": "Dress and age",
+        "copy": "The Louis Bar at Hotel Montana asks for smart casual dress and says coach pants and holey pants are not welcome. Kunstmuseum Luzern is free for children and young people up to 16, and free for everyone on the first Sunday of each month."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Check each mountain railway's maintenance notices and each museum's closing day before you fix your Lucerne itinerary.",
+      intro: [
+        "Lucerne's lake and mountains are run by operators that publish their own schedules, so check them before you set out. SGV lake boats run on a winter timetable from 19 October 2026 to 16 April 2027, with departures to Weggis, Vitznau and Brunnen from Pier 1 and to Alpnachstad, for Pilatus, from Pier 2. On Pilatus, the gondolas and cable car are closed for maintenance from 19 October to 27 November 2026, so you can reach the summit only by cogwheel railway from Alpnachstad. Rigi Bahnen says the Weggis to Rigi Kaltbad cable car does not run on weekdays from 16 to 27 November 2026.",
+        "In town, the Swiss Museum of Transport on Haldenstrasse says it is open 365 days a year, with winter museum hours of 10:00 to 17:00 from 25 October 2026. The Hans Erni Museum on the same site needs its own ticket, CHF 18 for adults. Kunstmuseum Luzern at Europaplatz 1 is closed on Mondays and stays open until 7 pm on Wednesdays; Dominik Zietlow's exhibition runs from 24 October 2026 to 31 January 2027. Museum Luzern on Kasernenplatz, also closed on Mondays, shows \"Unsichtbar? Tiere im Verborgenen\" until 21 February 2027.",
+        "Near Löwenplatz, the Glacier Garden at Denkmalstrasse 4 opened a special exhibition in its Sandstone Pavilion on 23 September 2026, and its tickets stay valid for a year from purchase. Bourbaki Panorama at Löwenplatz 11 is closed on 25 December 2026. Sammlung Rosengart, three minutes' walk from the station, opens daily from 11 am to 5 pm from 1 November to 31 December 2026, then closes on Mondays from 1 January to 22 March 2027. The Richard Wagner Museum's season runs from 1 April to 30 November, Tuesday to Sunday.",
+        "For meals, the websites of Wirtshaus Galliker on Schützenstrasse and the Old Swiss House at Löwenplatz 4 list both as closed on Sundays and Mondays, and Galliker says reservations are strongly recommended. Restaurant Lumières at Château Gütsch closes on Mondays and Tuesdays from 2 November 2026 to 23 March 2027. Rathaus Brauerei on Unter der Egg takes phone bookings for up to four people, but its terrace is first come, first served. The Louis Bar at Hotel Montana has live music Tuesday to Saturday and asks for smart casual dress. The city's weekly market runs on Tuesday and Saturday mornings."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Start at the Swiss Museum of Transport or the Glacier Garden, then take an SGV boat from Pier 1 towards Weggis and Vitznau for the Rigi."
+        ],
+        [
+          "A slower morning",
+          "Have breakfast at HEINI (Falkenplatz), which serves it without reservation, or browse the city's weekly market on Rathausquai on a Tuesday or Saturday morning."
+        ],
+        [
+          "Before booking",
+          "Avoid Mondays for Kunstmuseum Luzern and Museum Luzern, and Sundays and Mondays for Wirtshaus Galliker and the Old Swiss House."
+        ]
+      ],
+      trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on November 1, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();
