@@ -9640,4 +9640,110 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on November 5, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Thessaloniki, Greece: source review of 2026-11-05 (docs/content-research/thessaloniki-2026-11-05.md).
+  {
+    const cityKey = "Thessaloniki, Greece";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["White Tower","Rotunda","Heptapyrgion","Archaeological Museum of Thessaloniki"],
+      bestFirstTimers: ["White Tower","Archaeological Museum of Thessaloniki","Museum of Byzantine Culture","Agora Modiano"],
+      bestRestaurants: ["Clochard","Orizontes Roof Garden (Electra Palace)","Ergon Agora Thessaloniki","COOKOO Restaurant (Mediterranean Palace)"],
+      bestBudget: ["Coffee Island (Mitropoleos 14)","Rotunda","Hamza Bey Mosque (Alcazar)","MOMus Experimental Center for the Arts"],
+      bestLuxury: ["Orizontes Roof Garden (Electra Palace)","Clochard","Fellows Bar (Mediterranean Palace)","Thessaloniki Concert Hall"],
+      bestCouples: ["Orizontes Roof Garden (Electra Palace)","Thessaloniki Concert Hall","Clochard","MOMus Thessaloniki Museum of Photography"],
+      bestKids: ["NOESIS Science Center","White Tower","Museum of the Macedonian Struggle","Terkenlis (Tsimiski 30)"],
+      bestSolo: ["MOMus Museum of Modern Art","Teloglion Foundation of Art","Museum of Byzantine Culture","Mikel Coffee (One Salonica)"],
+      bestUnique: ["Heptapyrgion","Hamza Bey Mosque (Alcazar)","MOMus Museum of Contemporary Art","Teloglion Foundation of Art"],
+      bestBreakfast: ["Ergon Agora Thessaloniki","COOKOO Restaurant (Mediterranean Palace)","Terkenlis (Tsimiski 30)","Coffee Island (Mitropoleos 14)"],
+      bestLunch: ["Ergon Agora Thessaloniki","Clochard","Balboa (Pavlou Mela)","COOKOO Restaurant (Mediterranean Palace)"],
+      bestDinner: ["Clochard","Orizontes Roof Garden (Electra Palace)","Balboa (Pavlou Mela)","COOKOO Restaurant (Mediterranean Palace)"],
+      bestCocktails: ["Fellows Bar (Mediterranean Palace)","Orizontes Roof Garden (Electra Palace)","Clochard"],
+      bestBakeries: ["Terkenlis (Tsimiski 30)","Tzeneral (Pavlou Mela 44)","Agora Modiano"],
+      bestCoffee: ["Coffee Island (Mitropoleos 14)","Mikel Coffee (One Salonica)","Fellows Bar (Mediterranean Palace)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "White Tower": "White Tower Nikis Avenue Thessaloniki",
+      "Rotunda": "Rotunda 5 Agiou Georgiou Square Thessaloniki",
+      "Heptapyrgion": "Heptapyrgion 40 Eptapyrgiou Street Thessaloniki",
+      "Archaeological Museum of Thessaloniki": "Archaeological Museum of Thessaloniki 6 Manoli Andronikou Street Thessaloniki",
+      "Museum of Byzantine Culture": "Museum of Byzantine Culture 2 Stratou Avenue Thessaloniki",
+      "Agora Modiano": "Agora Modiano 24 Ermou and 33 Vasileos Irakleiou Thessaloniki",
+      "Clochard": "Clochard 11 Mitropoleos Thessaloniki",
+      "Orizontes Roof Garden (Electra Palace)": "Orizontes Roof Garden Electra Palace 9 Aristotelous Square Thessaloniki",
+      "Ergon Agora Thessaloniki": "Ergon Agora 42 Pavlou Mela Thessaloniki",
+      "COOKOO Restaurant (Mediterranean Palace)": "COOKOO Restaurant Mediterranean Palace 3 Salaminos Thessaloniki",
+      "Coffee Island (Mitropoleos 14)": "Coffee Island 14 Mitropoleos Thessaloniki",
+      "Hamza Bey Mosque (Alcazar)": "Hamza Bey Mosque Alcazar 49 Egnatia Avenue Thessaloniki",
+      "MOMus Experimental Center for the Arts": "MOMus Experimental Center for the Arts Warehouse B1 Pier A Port Thessaloniki",
+      "Fellows Bar (Mediterranean Palace)": "Fellows Bar Mediterranean Palace 3 Salaminos Thessaloniki",
+      "Thessaloniki Concert Hall": "Thessaloniki Concert Hall 25is Martiou and Paralia Thessaloniki",
+      "MOMus Thessaloniki Museum of Photography": "MOMus Thessaloniki Museum of Photography Warehouse A Pier A Port Thessaloniki",
+      "NOESIS Science Center": "NOESIS Science Center 6th km Thessaloniki-Thermi Thessaloniki",
+      "Museum of the Macedonian Struggle": "Museum of the Macedonian Struggle 23 Proxenou Koromila Thessaloniki",
+      "Terkenlis (Tsimiski 30)": "Terkenlis 30 Tsimiski Thessaloniki",
+      "MOMus Museum of Modern Art": "MOMus Museum of Modern Art 21 Kolokotroni Street Stavroupoli Thessaloniki",
+      "Teloglion Foundation of Art": "Teloglion Foundation of Art 159A Agiou Dimitriou Thessaloniki",
+      "Mikel Coffee (One Salonica)": "Mikel Coffee 10 Kotta Roulia Thessaloniki",
+      "MOMus Museum of Contemporary Art": "MOMus Museum of Contemporary Art 154 Egnatia Avenue Thessaloniki",
+      "Balboa (Pavlou Mela)": "Balboa 44 Pavlou Mela Thessaloniki",
+      "Tzeneral (Pavlou Mela 44)": "Tzeneral 44 Pavlou Mela Thessaloniki"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Thessaloniki" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Roman, Byzantine and Ottoman monuments, state and MOMus museums and the reopened central market, with brunch, dinner, cocktail, bakery and coffee stops checked against their own websites.";
+    cityGuide.highlights = ["White Tower","Rotunda","Archaeological Museum of Thessaloniki","Museum of Byzantine Culture"];
+    cityGuide.tip = "Plan around split closing days: the MOMus museums (except the Experimental Center for the Arts) and NOESIS close on Mondays, the Archaeological Museum of Thessaloniki, the Rotunda and the Heptapyrgion close on Tuesdays, and the White Tower opens daily.";
+    data.destinationFacts[cityKey] = "Plan around split closing days: the MOMus museums (except the Experimental Center for the Arts) and NOESIS close on Mondays, the Archaeological Museum of Thessaloniki, the Rotunda and the Heptapyrgion close on Tuesdays, and the White Tower opens daily.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Roman, Byzantine and Ottoman monuments, state and MOMus museums and the reopened central market, with brunch, dinner, cocktail, bakery and coffee stops checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Monday or Tuesday",
+        "copy": "The MOMus museums (except the Experimental Center for the Arts) and NOESIS close on Mondays, while the Archaeological Museum of Thessaloniki, the Rotunda and the Heptapyrgion close on Tuesdays. The White Tower opens daily, and the Museum of Byzantine Culture opens daily through November, then closes on Tuesdays from 1 December."
+      },
+      {
+        "label": "Free Sundays",
+        "value": "1st and 3rd Sunday",
+        "copy": "Hellenic Heritage lists free admission at the Archaeological Museum of Thessaloniki, the Rotunda and the Heptapyrgion on the first and third Sunday of each month from November 1 to March 31. Otherwise full tickets are €10 at each of them and €8 at the White Tower."
+      },
+      {
+        "label": "White Tower entry",
+        "value": "70 people at once",
+        "copy": "The White Tower admits up to 70 visitors at a time and has no toilets, refreshments, cloakroom or luggage storage, so travel light. Last admission is 20 minutes before closing."
+      },
+      {
+        "label": "Booking",
+        "value": "Reserve dinner",
+        "copy": "Clochard takes table reservations by phone, email or online, and Orizontes Roof Garden books its 19:00–23:00 dinner service online or on +30 2310 294 036."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Check each sight's closing day before you plan, because Thessaloniki's museums split between Monday and Tuesday closures.",
+      intro: [
+        "Thessaloniki's headline monuments are listed by the Ministry of Culture's Hellenic Heritage platform, and their pages give you clear winter schedules. The White Tower opens daily from 08:30 to 15:30 between November 1 and March 31, with last admission 20 minutes before closing and no more than 70 visitors inside at once. The Rotunda and the Heptapyrgion keep the same winter hours but close on Tuesdays, as does the Archaeological Museum of Thessaloniki, which lists 09:00 to 17:00. All three offer free admission on the first and third Sunday of each month from November 1 to March 31.",
+        "The Museum of Byzantine Culture opens daily through November and closes on Tuesdays from 1 December. Its photography exhibition 'Olympos. Earth, People, Light', with pictures by Satsi from post-war Pieria, runs until 27 January 2027, and a show on the ancient architecture of Huizhou opens on 14 November 2026 and runs to 14 February 2027. The Archaeological Museum lists a temporary exhibition from 18 November 2026 to 31 May 2027. At the Teloglion Foundation of Art, 'Metzikof. A world of wonders' runs until 31 January 2027, and the Museum of the Macedonian Struggle marks Messolonghi 1826–2026 until the same date.",
+        "The MOMus museums close on Mondays and stay open until 20:00 on Thursdays at the Museum of Modern Art, the Museum of Contemporary Art and the Thessaloniki Museum of Photography. At the Museum of Modern Art, 'Behind the Doors. Costakis meets Rubinstein' runs until 10 January 2027 beside the permanent Costakis Collection. The Museum of Contemporary Art shows 'K.BHTA. Only the coastline remains' until 31 January 2027, and the Hamza Bey Mosque (Alcazar) on Egnatia shows Pete Marifoglou's photographs of the city in 1960–1980 until 31 March 2027. A myMOMus Card covers one visit to each venue within six months.",
+        "For food, Ergon Agora Thessaloniki on Pavlou Mela serves brunch from 09:00 to 14:00 and stays open until 01:00 every day, and Ergon's pastry shop Tzeneral nearby lists 08:00 to 00:00. Clochard on Mitropoleos opens 13:00 to 00:00, Monday to Sunday, and takes reservations by phone, email or online. Orizontes, on the top floor of Electra Palace on Aristotelous Square, serves dinner from 19:00 to 23:00 and says it has been included in the MICHELIN Guide. Agora Modiano, the historic central market at Ermou and Vasileos Irakleiou, has 32 independent stalls, according to its operator Ergon."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair the White Tower, which opens daily, with the Archaeological Museum of Thessaloniki, which closes on Tuesdays."
+        ],
+        [
+          "A slower morning",
+          "Ergon Agora Thessaloniki serves brunch from 09:00 to 14:00, and Terkenlis on Tsimiski lists 07:00 to 00:00 every day."
+        ],
+        [
+          "Before booking",
+          "Clochard takes reservations by phone, email or online, and Orizontes Roof Garden books its 19:00–23:00 dinner service online or by phone."
+        ]
+      ],
+      trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on November 5, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

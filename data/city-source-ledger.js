@@ -5,6 +5,697 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Thessaloniki, Greece": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-11-05",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several official sites could not be read: modiano.gr, zythos.gr and tsarouhas.gr returned certificate errors; ouzoumelathron.gr, kitchenbar.gr and mourga.gr did not resolve; charoupi.gr, pemf.gr and daiosluxuryliving.gr failed DNS lookups; valenio.gr refused the connection; odysseus.culture.gr refused the connection; makedoniapalace.com redirects to plain http. Published only partially: Thessaloniki Concert Hall and Teloglion box-office or opening hours were not readable; the Museum of the Macedonian Struggle showed only a same-day closing banner; Agora Modiano and Fellows Bar publish no hours; the Rotunda and Heptapyrgion evidence is the current Hellenic Heritage listing with no dated 2026 notice; Coffee Island, Mikel Coffee, Terkenlis, Tzeneral and Balboa are confirmed from current store lists or hours rather than dated news, and Balboa's street number differs between 42 and 44 Pavlou Mela on the same page. The Museum of Byzantine Culture's own visit page lists Tuesday closure for the whole winter, while its homepage says it is open daily through November; the guide follows the homepage. The Jewish Museum of Thessaloniki was left out for lack of dated current content.",
+    "sourceUrls": [
+      "docs/content-research/thessaloniki-2026-11-05.md",
+      "docs/content-research/thessaloniki-2026-11-05.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Waterfront promenade",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Ano Poli",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place (neighbourhood)"
+      },
+      {
+        "name": "Waterfront sunset",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Ano Poli view",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "a long mezze dinner",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Thessaloniki market or cafe",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local dinner in Ladadika",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Ano Poli",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Aristotelous Square",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Ladadika",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Ladadika walk",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Ano Poli",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Aristotelous Square",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Aristotelous Square",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Waterfront promenade",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Ladadika",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Waterfront sunset",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Ano Poli",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near White Tower",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place (White Tower itself confirmed separately)"
+      },
+      {
+        "name": "Ladadika evening",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Ano Poli",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Aristotelous Square",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Ladadika",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Waterfront promenade",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Ano Poli",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Aristotelous Square",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Ladadika",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Waterfront promenade",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Ladadika cafe or market",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Ano Poli view",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Aristotelous Square",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Aristotelous Square",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Ladadika",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Ladadika",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Ano Poli bakery or market",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Waterfront promenade",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Aristotelous Square",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Ladadika",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near White Tower",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Aristotelous Square",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Ladadika",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Ano Poli",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Aristotelous Square",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Ladadika",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Ladadika",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Ano Poli",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Ano Poli",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Ladadika",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Ano Poli morning market",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Waterfront promenade",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Aristotelous Square",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Ladadika",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Ano Poli",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Aristotelous Square",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Jewish Museum of Thessaloniki",
+        "url": "https://www.jmth.gr/",
+        "checkedOn": "2026-11-05",
+        "reason": "Address (Αγίου Μηνά 11) and hours published, but no dated 2026 content in visible page text (2026 appears only in a URL slug); postcode inconsistent"
+      },
+      {
+        "name": "Modiano market (modiano.gr)",
+        "url": "https://www.modiano.gr/",
+        "checkedOn": "2026-11-05",
+        "reason": "Certificate error on modiano.gr (host not in certificate); market confirmed instead via agoramodiano.com as Agora Modiano"
+      },
+      {
+        "name": "Ouzou Melathron",
+        "url": "https://www.ouzoumelathron.gr/",
+        "checkedOn": "2026-11-05",
+        "reason": "Official domain did not resolve (ENOTFOUND)"
+      },
+      {
+        "name": "Zythos",
+        "url": "https://www.zythos.gr/",
+        "checkedOn": "2026-11-05",
+        "reason": "Certificate error (unable to verify the first certificate)"
+      },
+      {
+        "name": "Tsarouhas",
+        "url": "https://www.tsarouhas.gr/",
+        "checkedOn": "2026-11-05",
+        "reason": "Certificate error (host not in certificate)"
+      },
+      {
+        "name": "Estrella",
+        "url": "https://estrella.gr/",
+        "checkedOn": "2026-11-05",
+        "reason": "Homepage readable but no address, hours or dated content; www host has certificate error"
+      },
+      {
+        "name": "Hatzis (Mitropoleos 24)",
+        "url": "https://www.chatzis.gr/",
+        "checkedOn": "2026-11-05",
+        "reason": "Address published but no hours and no current content (footer \"copyright 2013\")"
+      },
+      {
+        "name": "Trigona Elenidis",
+        "url": "https://www.elenidis.gr/",
+        "checkedOn": "2026-11-05",
+        "reason": "Site returned only a page title; no address or hours readable"
+      },
+      {
+        "name": "Bougatsa Bantis",
+        "checkedOn": "2026-11-05",
+        "reason": "No official website found; only review sites and guides"
+      },
+      {
+        "name": "Kitchen Bar",
+        "url": "https://www.kitchenbar.gr/",
+        "checkedOn": "2026-11-05",
+        "reason": "No official website found (kitchenbar.gr does not resolve)"
+      },
+      {
+        "name": "Mourga",
+        "url": "https://www.mourga.gr/",
+        "checkedOn": "2026-11-05",
+        "reason": "Official domain guess did not resolve; no official site found"
+      },
+      {
+        "name": "Charoupi",
+        "url": "https://www.charoupi.gr/",
+        "checkedOn": "2026-11-05",
+        "reason": "Fetch failed (DNS EAI_AGAIN)"
+      },
+      {
+        "name": "Paparouna",
+        "url": "https://www.paparouna.com/",
+        "checkedOn": "2026-11-05",
+        "reason": "Domain shows \"This domain may be for sale\""
+      },
+      {
+        "name": "Agioli",
+        "url": "https://www.agioli.gr/",
+        "checkedOn": "2026-11-05",
+        "reason": "Domain shows \"This domain may be for sale\""
+      },
+      {
+        "name": "The Met Hotel (Sky Bar)",
+        "url": "https://www.themethotel.gr/",
+        "checkedOn": "2026-11-05",
+        "reason": "Address published but no bar hours and no 2026 content"
+      },
+      {
+        "name": "Makedonia Palace",
+        "url": "https://www.makedoniapalace.com/",
+        "checkedOn": "2026-11-05",
+        "reason": "https URL redirects to an http-only site; not used (https required)"
+      },
+      {
+        "name": "Thessaloniki Cinema Museum",
+        "url": "https://www.filmfestival.gr/en/news/27214-suspension-of-operation-of-the-thessaloniki-cinema-museum",
+        "checkedOn": "2026-11-05",
+        "reason": "Suspension-of-operation notice exists on filmfestival.gr but its text could not be read (URL returned the festival homepage); status unclear"
+      },
+      {
+        "name": "Water Supply Museum (EYATH)",
+        "url": "https://eyath.gr/eyath-water-museum/?lang=en",
+        "checkedOn": "2026-11-05",
+        "reason": "Address and \"10 a.m. to 2 p.m.\" published but no opening days and no dated 2026 content"
+      },
+      {
+        "name": "72H Artisanal Bakery (Thessaloniki)",
+        "url": "https://www.ergonfoods.com/72h-artisanal-bakery",
+        "checkedOn": "2026-11-05",
+        "reason": "Two conflicting Thessaloniki addresses on the same page and no 2026 content"
+      },
+      {
+        "name": "Greek Breakfast (Mediterranean Palace)",
+        "url": "https://www.mediterranean-palace.gr/%CE%B3%CE%B1%CF%83%CF%84%CF%81%CE%BF%CE%BD%CE%BF%CE%BC%CE%AF%CE%B1/greek-breakfast",
+        "checkedOn": "2026-11-05",
+        "reason": "No hours, venue or public-access details published"
+      },
+      {
+        "name": "Everest (Thessaloniki branches)",
+        "url": "https://www.everest.gr/stores/",
+        "checkedOn": "2026-11-05",
+        "reason": "Store list not readable; no branch address or hours"
+      },
+      {
+        "name": "Valenio",
+        "url": "https://www.valenio.gr/",
+        "checkedOn": "2026-11-05",
+        "reason": "Connection refused"
+      },
+      {
+        "name": "Daios Luxury Living",
+        "url": "https://www.daiosluxuryliving.gr/",
+        "checkedOn": "2026-11-05",
+        "reason": "Fetch failed (DNS EAI_AGAIN)"
+      },
+      {
+        "name": "Folklife and Ethnological Museum of Macedonia-Thrace",
+        "url": "https://www.pemf.gr/",
+        "checkedOn": "2026-11-05",
+        "reason": "Fetch failed (DNS EAI_AGAIN)"
+      },
+      {
+        "name": "Serraikon",
+        "url": "https://www.serraikon.com/",
+        "checkedOn": "2026-11-05",
+        "reason": "Site returned only a title; no Thessaloniki address or hours readable"
+      },
+      {
+        "name": "Hellenic Heritage pages for Ancient Agora and Galerius Palace",
+        "url": "https://odysseus.culture.gr/h/2/eh251.jsp?obj_id=1009",
+        "checkedOn": "2026-11-05",
+        "reason": "Guessed official URLs returned 404; odysseus.culture.gr refused connection"
+      }
+    ],
+    "placeSources": {
+      "Archaeological Museum of Thessaloniki": {
+        "url": "https://www.amth.gr/en",
+        "sourceType": "official public operator (Ministry of Culture museum); hours and free days also on https://www.hh.gr/en/destinations/archaeological-museum-thessaloniki/ (Hellenic Heritage, Ministry of Culture / ODAP)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "Lists 2026 programme including temporary exhibition 'ΒΛΕΠΟΝΤΑΣ ΤΟ ΑΝΕΙΔΩΤΟ' (18 Nov 2026 to 31 May 2027) and November 2026 events; news dated 05 Nov 2026."
+      },
+      "Museum of Byzantine Culture": {
+        "url": "https://www.mbp.gr/en",
+        "sourceType": "official public operator (Ministry of Culture museum)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "Exhibition 'Olympos. Earth, People, Light. Photographs by Satsi from Post-War Pieria' runs 22.10.2026-27.01.2027; Huizhou architecture exhibition opens 14.11.2026, to 14.02.2027."
+      },
+      "White Tower": {
+        "url": "https://www.hh.gr/en/destinations/white-tower-thessaloniki/",
+        "sourceType": "official public operator (Hellenic Heritage, Ministry of Culture / ODAP); managed by Museum of Byzantine Culture (mbp.gr, lpth.gr)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "Online ticketing on Hellenic Heritage; mbp.gr news dated 08.08.2026 'Extension of the White Tower's opening hours until 21:00' and current notice \"November: Open daily, 8:30-15:30\". lpth.gr: capacity capped at 70 visitors; no toilets, refreshments, cloakroom or luggage storage."
+      },
+      "Rotunda": {
+        "url": "https://www.hh.gr/en/destinations/rotunda-thessaloniki/",
+        "sourceType": "official public operator (Hellenic Heritage, Ministry of Culture / ODAP; Ephorate of Antiquities of the City of Thessaloniki)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "Current Hellenic Heritage listing with online tickets, seasonal schedule and free-admission days; footer \"© 2026 Hellenic Heritage\"."
+      },
+      "Heptapyrgion": {
+        "url": "https://www.hh.gr/en/destinations/heptapyrgion-and-trigonion-tower/",
+        "sourceType": "official public operator (Hellenic Heritage, Ministry of Culture / ODAP)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "Current Hellenic Heritage listing with tickets and seasonal schedule; footer \"© 2026 Hellenic Heritage\". Trigonion Tower open Fridays by appointment only in winter."
+      },
+      "MOMus Museum of Modern Art": {
+        "url": "https://www.momus.gr/en/museum/museum-modern-art",
+        "sourceType": "official public operator (MOMus, Metropolitan Organisation of Museums of Visual Arts of Thessaloniki)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "momus.gr lists 'Behind the Doors. Costakis meets Rubinstein' (June 20, 2026 - January 10, 2027) and the permanent 'The Costakis Collection. Avant-Gardists'."
+      },
+      "MOMus Museum of Contemporary Art": {
+        "url": "https://www.momus.gr/en/museum/museum-contemporary-art",
+        "sourceType": "official public operator (MOMus)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "momus.gr lists 'K.BHTA. Only the coastline remains' (October 1, 2026 - January 31, 2027)."
+      },
+      "MOMus Thessaloniki Museum of Photography": {
+        "url": "https://www.momus.gr/en/museum/thessaloniki-museum-photography",
+        "sourceType": "official public operator (MOMus)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "momus.gr lists 'László Moholy-Nagy. Light Play' (June 13, 2026 - November 15, 2026)."
+      },
+      "MOMus Experimental Center for the Arts": {
+        "url": "https://www.momus.gr/en/museum/experimental-center-arts",
+        "sourceType": "official public operator (MOMus)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "momus.gr lists 'WELCOME TO THE DESERT III. OLIVER LAXE' (November 6, 2026 - November 15, 2026)."
+      },
+      "Hamza Bey Mosque (Alcazar)": {
+        "url": "https://www.momus.gr/en/museum/hamza-bey-mosque-alcazar",
+        "sourceType": "official public operator (MOMus)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "momus.gr lists 'Thessaloniki: The Footprint of Transition (1960-1980). Through the photographs of Pete Marifoglou' (October 11, 2026 - March 31, 2027)."
+      },
+      "NOESIS Science Center": {
+        "url": "https://www.noesis.edu.gr/en/schedule-screenings-tours-and-ticket-prices/",
+        "sourceType": "operator's own site (NOESIS Thessaloniki Science Center and Technology Museum)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "News dated October 8, 2026: 'Superhuman Body 3D – NEW at the giant screen of NOESIS' Cosmotheater'; October 7, 2026: 'Planetarium resumes operation'; programme and prices PDF from October 13, 2026."
+      },
+      "Thessaloniki Concert Hall": {
+        "url": "https://www.tch.gr/default.aspx?lang=el-GR&page=76",
+        "sourceType": "operator's own site (Megaro Mousikis Thessalonikis)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "tch.gr programme lists November-December 2026 events, e.g. 'NADINE SIERRA' (22 Nov) and 'MOMIX: ALICE' (16 Dec); some events marked cancelled."
+      },
+      "Teloglion Foundation of Art": {
+        "url": "https://teloglion.gr/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "Exhibitions '«Μετζικώφ. Ένας κόσμος θαυμάτων»' (7 October 2026 - 31 January 2027) and 'Απο-τύπωμα τέχνης: Η καλλιτεχνική τυπογραφία' (27 October 2026 - 28 February 2027). General admission 5 €."
+      },
+      "Museum of the Macedonian Struggle": {
+        "url": "https://www.imma.edu.gr/",
+        "sourceType": "operator's own site (IMMA foundation)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "Exhibition 'Μεσολόγγι 1826-2026 Έξοδος: Πορεία προς την Ελευθερία' (30 October 2026 - 31 January 2027); comic workshops October-November 2026."
+      },
+      "Agora Modiano": {
+        "url": "https://agoramodiano.com/home",
+        "sourceType": "operator's own site (Ergon; also https://www.ergonfoods.com/)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "agoramodiano.com: \"Τον Σεπτέμβριο του 2026 η Κεντρική Αγορά Θεσσαλονίκης ανοίγει ξανά\" with 32 shops (greengrocer, bakery, cookhouses, coffee roaster, bar etc.); ergonfoods.com: \"Today, 32 independent stalls bring the market back to life.\""
+      },
+      "Clochard": {
+        "url": "https://www.clochard.gr/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "Links 2026 food, dessert, wine and bar menus (ClochardMenu2026.pdf etc.); reservations by phone 2310 239805, reservations@clochard.gr or online."
+      },
+      "Orizontes Roof Garden (Electra Palace)": {
+        "url": "https://orizontesrestaurant.com/",
+        "sourceType": "operator's own site (Electra Palace Thessaloniki; hotel address on https://www.electrahotels.gr/hotels/electra-palace-thessaloniki/contact/)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "2026 menus, wine and bar lists; \"Orizontes Restaurant has been included in The MICHELIN Guide\"; online booking via i-host and +30 2310 294 036."
+      },
+      "COOKOO Restaurant (Mediterranean Palace)": {
+        "url": "https://www.mediterranean-palace.gr/%CE%B3%CE%B1%CF%83%CF%84%CF%81%CE%BF%CE%BD%CE%BF%CE%BC%CE%AF%CE%B1/cookoo-restaurant",
+        "sourceType": "operator's own site (Mediterranean Palace hotel)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "All-day café-bar-restaurant with menu and wine list PDFs; hotel homepage carries 2026 items (Green Key renewed \"για το έτος 2026\", Easter 2026)."
+      },
+      "Fellows Bar (Mediterranean Palace)": {
+        "url": "https://www.mediterranean-palace.gr/%CE%B3%CE%B1%CF%83%CF%84%CF%81%CE%BF%CE%BD%CE%BF%CE%BC%CE%AF%CE%B1/fellows-bar",
+        "sourceType": "operator's own site (Mediterranean Palace hotel)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "\"COCKTAILS & MORE\" with coffee, light meals and drinks; catalogue PDF linked; hotel homepage carries 2026 news."
+      },
+      "Coffee Island (Mitropoleos 14)": {
+        "url": "https://wcn.coffeeisland.gr/en/stores/index/25-thessaloniki",
+        "sourceType": "operator's own site (chain store locator)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "Current store locator lists the branch with takeaway and delivery hours; footer \"COFFEE ISLAND © 2026\"."
+      },
+      "Mikel Coffee (One Salonica)": {
+        "url": "https://www.mikelcoffee.com/istoria/katastimata/",
+        "sourceType": "operator's own site (chain store list)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "Store list gives branch hours; homepage news dated 05.11.26 ('Mikel Cups Club') and 22.09.26."
+      },
+      "Terkenlis (Tsimiski 30)": {
+        "url": "https://terkenlis.gr/%ce%ba%ce%b1%cf%84%ce%b1%cf%83%cf%84%ce%ae%ce%bc%ce%b1%cf%84%ce%b1/",
+        "sourceType": "operator's own site (chain store list)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "Store page lists this branch's daily hours; footer \"© 2026 TERKENLIS\"."
+      },
+      "Tzeneral (Pavlou Mela 44)": {
+        "url": "https://www.ergonfoods.com/tzeneral-zaxaroplasteio",
+        "sourceType": "operator's own site (Ergon)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "Ergon page presents \"The new pastry shop at the heart of Thessaloniki\" with published hours and phone +30 231 601 4499; no dated 2026 text."
+      },
+      "Ergon Agora Thessaloniki": {
+        "url": "https://www.ergonfoods.com/ergon-agora",
+        "sourceType": "operator's own site (Ergon)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "Food concept store and restaurant with lunch and brunch menu PDFs dated May 2026 (by filename); \"Visit Ergon to enjoy a hearty brunch, light lunch or a relaxing dinner.\""
+      },
+      "Balboa (Pavlou Mela)": {
+        "url": "https://www.ergonfoods.com/balboa-food",
+        "sourceType": "operator's own site (Ergon)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "Ergon lists the Thessaloniki Ergon Agora location with daily hours; no dated 2026 text, street number differs between sections."
+      }
+    }
+  },
   "Valparaiso, Chile": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-11-05",

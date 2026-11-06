@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 92.
-- Classifier-passed (published, not fully documented in that format): 100.
+- Source-verified (complete dated evidence format): 93.
+- Classifier-passed (published, not fully documented in that format): 99.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -462,7 +462,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Teotihuacan, Mexico | teotihuacan | classifier-passed | not-reviewed | 0 | 8 | 15 | 4 | None |
 | Terracotta Army, China | terracotta-army | held-back | not-reviewed | 0 | 3 | 15 | 3 | has 3 named places across 3 categories; needs at least 5 named places across 3 categories |
 | The Hague, Netherlands | the-hague | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Thessaloniki, Greece | thessaloniki | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Thessaloniki, Greece | thessaloniki | source-verified | source-checked | 25 | 49 | 15 | 15 | None |
 | Tofino, Canada | tofino | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Tokyo, Japan | tokyo | source-verified | source-checked | 21 | 42 | 14 | 14 | None |
 | Toledo, Spain | toledo | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |

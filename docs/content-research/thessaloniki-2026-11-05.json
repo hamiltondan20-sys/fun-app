@@ -1,0 +1,930 @@
+{
+  "city": "Thessaloniki, Greece",
+  "checkedOn": "2026-11-05",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Archaeological Museum of Thessaloniki",
+      "kind": "museum",
+      "url": "https://www.amth.gr/en",
+      "sourceType": "official public operator (Ministry of Culture museum); hours and free days also on https://www.hh.gr/en/destinations/archaeological-museum-thessaloniki/ (Hellenic Heritage, Ministry of Culture / ODAP)",
+      "address": "6 Manoli Andronikou Street, 540 13 Thessaloniki",
+      "operatingEvidence": "Lists 2026 programme including temporary exhibition 'ΒΛΕΠΟΝΤΑΣ ΤΟ ΑΝΕΙΔΩΤΟ' (18 Nov 2026 to 31 May 2027) and November 2026 events; news dated 05 Nov 2026.",
+      "hours": "\"Every day 9:00-17:00\", closed on Tuesdays; closed 25-26 Dec, 1 Jan, 25 Mar, 1 May, Easter Sunday. Hellenic Heritage: free on first and third Sunday of each month from November 1 to March 31. Tickets €10 / €5.",
+      "confidence": "high"
+    },
+    {
+      "name": "Museum of Byzantine Culture",
+      "kind": "museum",
+      "url": "https://www.mbp.gr/en",
+      "sourceType": "official public operator (Ministry of Culture museum)",
+      "address": "Stratou Avenue 2 54640 Thessaloniki",
+      "operatingEvidence": "Exhibition 'Olympos. Earth, People, Light. Photographs by Satsi from Post-War Pieria' runs 22.10.2026-27.01.2027; Huizhou architecture exhibition opens 14.11.2026, to 14.02.2027.",
+      "hours": "\"November: Open daily, 08:30-15:30\"; from 1 December Wednesday to Monday 08:30-15:30, \"Closed every Tuesday.\" Tickets €10 / €5 (https://www.mbp.gr/en/visit).",
+      "confidence": "high"
+    },
+    {
+      "name": "White Tower",
+      "kind": "landmark",
+      "url": "https://www.hh.gr/en/destinations/white-tower-thessaloniki/",
+      "sourceType": "official public operator (Hellenic Heritage, Ministry of Culture / ODAP); managed by Museum of Byzantine Culture (mbp.gr, lpth.gr)",
+      "address": "Nikis Ave, 54013, Thessaloniki",
+      "operatingEvidence": "Online ticketing on Hellenic Heritage; mbp.gr news dated 08.08.2026 'Extension of the White Tower's opening hours until 21:00' and current notice \"November: Open daily, 8:30-15:30\". lpth.gr: capacity capped at 70 visitors; no toilets, refreshments, cloakroom or luggage storage.",
+      "hours": "Winter hours, November 1-March 31: daily 08:30-15:30; \"Last admission: 20 minutes before closing time\"; closed 1 Jan, 25 Mar, 1 May, Easter Sunday, 25-26 Dec. Tickets €8 / €4.",
+      "confidence": "high"
+    },
+    {
+      "name": "Rotunda",
+      "kind": "landmark",
+      "url": "https://www.hh.gr/en/destinations/rotunda-thessaloniki/",
+      "sourceType": "official public operator (Hellenic Heritage, Ministry of Culture / ODAP; Ephorate of Antiquities of the City of Thessaloniki)",
+      "address": "5 Agiou Georgiou Square, 54635, Thessaloniki",
+      "operatingEvidence": "Current Hellenic Heritage listing with online tickets, seasonal schedule and free-admission days; footer \"© 2026 Hellenic Heritage\".",
+      "hours": "Winter, November 1-March 31: 08:30-15:30, closed Tuesday; last admission 20 minutes before closing. Free on first and third Sunday of each month from November 1 to March 31. Tickets €10 / €5.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Heptapyrgion",
+      "kind": "landmark",
+      "url": "https://www.hh.gr/en/destinations/heptapyrgion-and-trigonion-tower/",
+      "sourceType": "official public operator (Hellenic Heritage, Ministry of Culture / ODAP)",
+      "address": "40 Eptapyrgiou St, 54634, Thessaloniki",
+      "operatingEvidence": "Current Hellenic Heritage listing with tickets and seasonal schedule; footer \"© 2026 Hellenic Heritage\". Trigonion Tower open Fridays by appointment only in winter.",
+      "hours": "Winter, November 1-March 31: 08:30-15:30, Tuesday closed; last admission 20 minutes before closing. Free on first and third Sunday of each month from November 1 to March 31. Tickets €10 / €5.",
+      "confidence": "medium"
+    },
+    {
+      "name": "MOMus Museum of Modern Art",
+      "kind": "museum",
+      "url": "https://www.momus.gr/en/museum/museum-modern-art",
+      "sourceType": "official public operator (MOMus, Metropolitan Organisation of Museums of Visual Arts of Thessaloniki)",
+      "address": "21 Kolokotroni Str., Moni Lazariston 56430, Stavroupoli",
+      "operatingEvidence": "momus.gr lists 'Behind the Doors. Costakis meets Rubinstein' (June 20, 2026 - January 10, 2027) and the permanent 'The Costakis Collection. Avant-Gardists'.",
+      "hours": "Monday closed; Tue, Wed, Fri-Sun 10:00-18:00; Thursday 12:00-20:00; closed public holidays; last admission 30 minutes before closing. General ticket 8.00.",
+      "confidence": "high"
+    },
+    {
+      "name": "MOMus Museum of Contemporary Art",
+      "kind": "museum",
+      "url": "https://www.momus.gr/en/museum/museum-contemporary-art",
+      "sourceType": "official public operator (MOMus)",
+      "address": "154 Egnatia Av (TIF-Helexpo premises) 54630, Thessaloniki",
+      "operatingEvidence": "momus.gr lists 'K.BHTA. Only the coastline remains' (October 1, 2026 - January 31, 2027).",
+      "hours": "Monday closed; Tue, Wed, Fri-Sun 10:00-18:00; Thursday 12:00-20:00; closed public holidays. General ticket 8.00.",
+      "confidence": "high"
+    },
+    {
+      "name": "MOMus Thessaloniki Museum of Photography",
+      "kind": "museum",
+      "url": "https://www.momus.gr/en/museum/thessaloniki-museum-photography",
+      "sourceType": "official public operator (MOMus)",
+      "address": "Warehouse A, Pier A,Thessaloniki port area, P.O. Box 12025 54625, Thessaloniki",
+      "operatingEvidence": "momus.gr lists 'László Moholy-Nagy. Light Play' (June 13, 2026 - November 15, 2026).",
+      "hours": "Monday closed; Tue-Wed and Fri-Sun 10:00-18:00; Thursday 12:00-20:00; \"*Public holidays: CLOSED\"; last admission 30 minutes before closing. General ticket 6.00.",
+      "confidence": "high"
+    },
+    {
+      "name": "MOMus Experimental Center for the Arts",
+      "kind": "museum",
+      "url": "https://www.momus.gr/en/museum/experimental-center-arts",
+      "sourceType": "official public operator (MOMus)",
+      "address": "Warehouse B1, Pier A Thessaloniki port area P.O.Box 10759 54624, Thessaloniki",
+      "operatingEvidence": "momus.gr lists 'WELCOME TO THE DESERT III. OLIVER LAXE' (November 6, 2026 - November 15, 2026).",
+      "hours": "Daily 10:00-22:00 (MOMus visit page). General ticket 5.00.",
+      "confidence": "high"
+    },
+    {
+      "name": "Hamza Bey Mosque (Alcazar)",
+      "kind": "museum",
+      "url": "https://www.momus.gr/en/museum/hamza-bey-mosque-alcazar",
+      "sourceType": "official public operator (MOMus)",
+      "address": "49, Egnatia Av, 54631, Thessaloniki",
+      "operatingEvidence": "momus.gr lists 'Thessaloniki: The Footprint of Transition (1960-1980). Through the photographs of Pete Marifoglou' (October 11, 2026 - March 31, 2027).",
+      "hours": "Monday closed; Tuesday to Sunday 10:00-18:00. General ticket 5.00.",
+      "confidence": "high"
+    },
+    {
+      "name": "NOESIS Science Center",
+      "kind": "museum",
+      "url": "https://www.noesis.edu.gr/en/schedule-screenings-tours-and-ticket-prices/",
+      "sourceType": "operator's own site (NOESIS Thessaloniki Science Center and Technology Museum)",
+      "address": "6th km Thessaloniki-Thermi, PC 57001",
+      "operatingEvidence": "News dated October 8, 2026: 'Superhuman Body 3D – NEW at the giant screen of NOESIS' Cosmotheater'; October 7, 2026: 'Planetarium resumes operation'; programme and prices PDF from October 13, 2026.",
+      "hours": "\"NOESIS is closed on Mondays.\" Weekends \"Saturday and Sunday, 11.00 – 19.00\"; Tuesday-Friday schedule depends on school bookings. Daily tickets valid only on weekends and holidays (€15 / €10; family from €30).",
+      "confidence": "high"
+    },
+    {
+      "name": "Thessaloniki Concert Hall",
+      "kind": "landmark",
+      "url": "https://www.tch.gr/default.aspx?lang=el-GR&page=76",
+      "sourceType": "operator's own site (Megaro Mousikis Thessalonikis)",
+      "address": "25ης Μαρτίου και Παραλία",
+      "operatingEvidence": "tch.gr programme lists November-December 2026 events, e.g. 'NADINE SIERRA' (22 Nov) and 'MOMIX: ALICE' (16 Dec); some events marked cancelled.",
+      "hours": "not published (box office hours not readable)",
+      "confidence": "high"
+    },
+    {
+      "name": "Teloglion Foundation of Art",
+      "kind": "museum",
+      "url": "https://teloglion.gr/",
+      "sourceType": "operator's own site",
+      "address": "Αγίου Δημητρίου 159Α, 546 36 Θεσσαλονίκη",
+      "operatingEvidence": "Exhibitions '«Μετζικώφ. Ένας κόσμος θαυμάτων»' (7 October 2026 - 31 January 2027) and 'Απο-τύπωμα τέχνης: Η καλλιτεχνική τυπογραφία' (27 October 2026 - 28 February 2027). General admission 5 €.",
+      "hours": "not published (hours block empty)",
+      "confidence": "high"
+    },
+    {
+      "name": "Museum of the Macedonian Struggle",
+      "kind": "museum",
+      "url": "https://www.imma.edu.gr/",
+      "sourceType": "operator's own site (IMMA foundation)",
+      "address": "Προξένου Κορομηλά 23, Θεσσαλονίκη",
+      "operatingEvidence": "Exhibition 'Μεσολόγγι 1826-2026 Έξοδος: Πορεία προς την Ελευθερία' (30 October 2026 - 31 January 2027); comic workshops October-November 2026.",
+      "hours": "not published as a weekly schedule (banner only: \"Ανοιχτό έως τις 14:00\"; visit-info page failed to load)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Agora Modiano",
+      "kind": "market",
+      "url": "https://agoramodiano.com/home",
+      "sourceType": "operator's own site (Ergon; also https://www.ergonfoods.com/)",
+      "address": "Ερμού 24 και Βασιλέως Ηρακλείου 33, 546 24, Θεσσαλονίκη",
+      "operatingEvidence": "agoramodiano.com: \"Τον Σεπτέμβριο του 2026 η Κεντρική Αγορά Θεσσαλονίκης ανοίγει ξανά\" with 32 shops (greengrocer, bakery, cookhouses, coffee roaster, bar etc.); ergonfoods.com: \"Today, 32 independent stalls bring the market back to life.\"",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Clochard",
+      "kind": "meal",
+      "url": "https://www.clochard.gr/",
+      "sourceType": "operator's own site",
+      "address": "Μητροπόλεως 11, 54624 Θεσσαλονίκη",
+      "operatingEvidence": "Links 2026 food, dessert, wine and bar menus (ClochardMenu2026.pdf etc.); reservations by phone 2310 239805, reservations@clochard.gr or online.",
+      "hours": "\"Δευτέρα - Κυριακή 13:00 - 00:00\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Orizontes Roof Garden (Electra Palace)",
+      "kind": "meal",
+      "url": "https://orizontesrestaurant.com/",
+      "sourceType": "operator's own site (Electra Palace Thessaloniki; hotel address on https://www.electrahotels.gr/hotels/electra-palace-thessaloniki/contact/)",
+      "address": "Aristotelous Sq 9, Thessaloniki (top floor of Electra Palace; hotel: \"9 Aristotelous Square, 54624 Thessaloniki, Greece\")",
+      "operatingEvidence": "2026 menus, wine and bar lists; \"Orizontes Restaurant has been included in The MICHELIN Guide\"; online booking via i-host and +30 2310 294 036.",
+      "hours": "\"Dinner: 19.00 - 23.00\"",
+      "confidence": "high"
+    },
+    {
+      "name": "COOKOO Restaurant (Mediterranean Palace)",
+      "kind": "meal",
+      "url": "https://www.mediterranean-palace.gr/%CE%B3%CE%B1%CF%83%CF%84%CF%81%CE%BF%CE%BD%CE%BF%CE%BC%CE%AF%CE%B1/cookoo-restaurant",
+      "sourceType": "operator's own site (Mediterranean Palace hotel)",
+      "address": "Σαλαμίνος 3 & Καρατάσου, Θεσσαλονίκη, Ελλάδα, 54626",
+      "operatingEvidence": "All-day café-bar-restaurant with menu and wine list PDFs; hotel homepage carries 2026 items (Green Key renewed \"για το έτος 2026\", Easter 2026).",
+      "hours": "\"Ώρες λειτουργίας : 07:00 – 00:30\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Fellows Bar (Mediterranean Palace)",
+      "kind": "bar",
+      "url": "https://www.mediterranean-palace.gr/%CE%B3%CE%B1%CF%83%CF%84%CF%81%CE%BF%CE%BD%CE%BF%CE%BC%CE%AF%CE%B1/fellows-bar",
+      "sourceType": "operator's own site (Mediterranean Palace hotel)",
+      "address": "Σαλαμίνος 3 & Καρατάσου, Θεσσαλονίκη",
+      "operatingEvidence": "\"COCKTAILS & MORE\" with coffee, light meals and drinks; catalogue PDF linked; hotel homepage carries 2026 news.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Coffee Island (Mitropoleos 14)",
+      "kind": "cafe",
+      "url": "https://wcn.coffeeisland.gr/en/stores/index/25-thessaloniki",
+      "sourceType": "operator's own site (chain store locator)",
+      "address": "Mitropoleos 14, 54624",
+      "operatingEvidence": "Current store locator lists the branch with takeaway and delivery hours; footer \"COFFEE ISLAND © 2026\".",
+      "hours": "Takeaway 06:00 - 23:00; delivery 08:00 - 18:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mikel Coffee (One Salonica)",
+      "kind": "cafe",
+      "url": "https://www.mikelcoffee.com/istoria/katastimata/",
+      "sourceType": "operator's own site (chain store list)",
+      "address": "Κώττα Ρούλια 10, Θεσσαλονίκη 546 27",
+      "operatingEvidence": "Store list gives branch hours; homepage news dated 05.11.26 ('Mikel Cups Club') and 22.09.26.",
+      "hours": "\"Δευτέρα-Κυριακή: 06:00-21:00\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Terkenlis (Tsimiski 30)",
+      "kind": "bakery",
+      "url": "https://terkenlis.gr/%ce%ba%ce%b1%cf%84%ce%b1%cf%83%cf%84%ce%ae%ce%bc%ce%b1%cf%84%ce%b1/",
+      "sourceType": "operator's own site (chain store list)",
+      "address": "Τσιμισκή 30 & Αριστοτέλους 4, 546 36",
+      "operatingEvidence": "Store page lists this branch's daily hours; footer \"© 2026 TERKENLIS\".",
+      "hours": "07:00-00:00 every day",
+      "confidence": "medium"
+    },
+    {
+      "name": "Tzeneral (Pavlou Mela 44)",
+      "kind": "bakery",
+      "url": "https://www.ergonfoods.com/tzeneral-zaxaroplasteio",
+      "sourceType": "operator's own site (Ergon)",
+      "address": "44 Pavlou Mela, Thessaloniki 546 22, Greece",
+      "operatingEvidence": "Ergon page presents \"The new pastry shop at the heart of Thessaloniki\" with published hours and phone +30 231 601 4499; no dated 2026 text.",
+      "hours": "\"08:00 – 00:00\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Ergon Agora Thessaloniki",
+      "kind": "meal",
+      "url": "https://www.ergonfoods.com/ergon-agora",
+      "sourceType": "operator's own site (Ergon)",
+      "address": "42 Pavlou Mela Str.Thessaloniki, Greece 54622",
+      "operatingEvidence": "Food concept store and restaurant with lunch and brunch menu PDFs dated May 2026 (by filename); \"Visit Ergon to enjoy a hearty brunch, light lunch or a relaxing dinner.\"",
+      "hours": "\"Every day 09:00 – 01:00\"; kitchen 09:00-00:00; brunch 09:00-14:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Balboa (Pavlou Mela)",
+      "kind": "meal",
+      "url": "https://www.ergonfoods.com/balboa-food",
+      "sourceType": "operator's own site (Ergon)",
+      "address": "44 Pavlou Mela, Thessaloniki 546 22 Greece (address section also says \"42 Ergon Agora, Pavlou Mela\")",
+      "operatingEvidence": "Ergon lists the Thessaloniki Ergon Agora location with daily hours; no dated 2026 text, street number differs between sections.",
+      "hours": "\"Every day 13:00 - 00:00\"",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Waterfront promenade",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Ano Poli",
+      "reason": "generic, not a place (neighbourhood)",
+      "url": ""
+    },
+    {
+      "name": "Waterfront sunset",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Ano Poli view",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "a long mezze dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Thessaloniki market or cafe",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local dinner in Ladadika",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Ano Poli",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Aristotelous Square",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Ladadika",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Ladadika walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Ano Poli",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Aristotelous Square",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Aristotelous Square",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Waterfront promenade",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Ladadika",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Waterfront sunset",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Ano Poli",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near White Tower",
+      "reason": "generic, not a place (White Tower itself confirmed separately)",
+      "url": ""
+    },
+    {
+      "name": "Ladadika evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Ano Poli",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Aristotelous Square",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Ladadika",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Waterfront promenade",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Ano Poli",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Aristotelous Square",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Ladadika",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Waterfront promenade",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Ladadika cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Ano Poli view",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Aristotelous Square",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Aristotelous Square",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Ladadika",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Ladadika",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Ano Poli bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Waterfront promenade",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Aristotelous Square",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Ladadika",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near White Tower",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Aristotelous Square",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Ladadika",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Ano Poli",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Aristotelous Square",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Ladadika",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Ladadika",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Ano Poli",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Ano Poli",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Ladadika",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Ano Poli morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Waterfront promenade",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Aristotelous Square",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Ladadika",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Ano Poli",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Aristotelous Square",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Jewish Museum of Thessaloniki",
+      "reason": "Address (Αγίου Μηνά 11) and hours published, but no dated 2026 content in visible page text (2026 appears only in a URL slug); postcode inconsistent",
+      "url": "https://www.jmth.gr/"
+    },
+    {
+      "name": "Modiano market (modiano.gr)",
+      "reason": "Certificate error on modiano.gr (host not in certificate); market confirmed instead via agoramodiano.com as Agora Modiano",
+      "url": "https://www.modiano.gr/"
+    },
+    {
+      "name": "Ouzou Melathron",
+      "reason": "Official domain did not resolve (ENOTFOUND)",
+      "url": "https://www.ouzoumelathron.gr/"
+    },
+    {
+      "name": "Zythos",
+      "reason": "Certificate error (unable to verify the first certificate)",
+      "url": "https://www.zythos.gr/"
+    },
+    {
+      "name": "Tsarouhas",
+      "reason": "Certificate error (host not in certificate)",
+      "url": "https://www.tsarouhas.gr/"
+    },
+    {
+      "name": "Estrella",
+      "reason": "Homepage readable but no address, hours or dated content; www host has certificate error",
+      "url": "https://estrella.gr/"
+    },
+    {
+      "name": "Hatzis (Mitropoleos 24)",
+      "reason": "Address published but no hours and no current content (footer \"copyright 2013\")",
+      "url": "https://www.chatzis.gr/"
+    },
+    {
+      "name": "Trigona Elenidis",
+      "reason": "Site returned only a page title; no address or hours readable",
+      "url": "https://www.elenidis.gr/"
+    },
+    {
+      "name": "Bougatsa Bantis",
+      "reason": "No official website found; only review sites and guides",
+      "url": ""
+    },
+    {
+      "name": "Kitchen Bar",
+      "reason": "No official website found (kitchenbar.gr does not resolve)",
+      "url": "https://www.kitchenbar.gr/"
+    },
+    {
+      "name": "Mourga",
+      "reason": "Official domain guess did not resolve; no official site found",
+      "url": "https://www.mourga.gr/"
+    },
+    {
+      "name": "Charoupi",
+      "reason": "Fetch failed (DNS EAI_AGAIN)",
+      "url": "https://www.charoupi.gr/"
+    },
+    {
+      "name": "Paparouna",
+      "reason": "Domain shows \"This domain may be for sale\"",
+      "url": "https://www.paparouna.com/"
+    },
+    {
+      "name": "Agioli",
+      "reason": "Domain shows \"This domain may be for sale\"",
+      "url": "https://www.agioli.gr/"
+    },
+    {
+      "name": "The Met Hotel (Sky Bar)",
+      "reason": "Address published but no bar hours and no 2026 content",
+      "url": "https://www.themethotel.gr/"
+    },
+    {
+      "name": "Makedonia Palace",
+      "reason": "https URL redirects to an http-only site; not used (https required)",
+      "url": "https://www.makedoniapalace.com/"
+    },
+    {
+      "name": "Thessaloniki Cinema Museum",
+      "reason": "Suspension-of-operation notice exists on filmfestival.gr but its text could not be read (URL returned the festival homepage); status unclear",
+      "url": "https://www.filmfestival.gr/en/news/27214-suspension-of-operation-of-the-thessaloniki-cinema-museum"
+    },
+    {
+      "name": "Water Supply Museum (EYATH)",
+      "reason": "Address and \"10 a.m. to 2 p.m.\" published but no opening days and no dated 2026 content",
+      "url": "https://eyath.gr/eyath-water-museum/?lang=en"
+    },
+    {
+      "name": "72H Artisanal Bakery (Thessaloniki)",
+      "reason": "Two conflicting Thessaloniki addresses on the same page and no 2026 content",
+      "url": "https://www.ergonfoods.com/72h-artisanal-bakery"
+    },
+    {
+      "name": "Greek Breakfast (Mediterranean Palace)",
+      "reason": "No hours, venue or public-access details published",
+      "url": "https://www.mediterranean-palace.gr/%CE%B3%CE%B1%CF%83%CF%84%CF%81%CE%BF%CE%BD%CE%BF%CE%BC%CE%AF%CE%B1/greek-breakfast"
+    },
+    {
+      "name": "Everest (Thessaloniki branches)",
+      "reason": "Store list not readable; no branch address or hours",
+      "url": "https://www.everest.gr/stores/"
+    },
+    {
+      "name": "Valenio",
+      "reason": "Connection refused",
+      "url": "https://www.valenio.gr/"
+    },
+    {
+      "name": "Daios Luxury Living",
+      "reason": "Fetch failed (DNS EAI_AGAIN)",
+      "url": "https://www.daiosluxuryliving.gr/"
+    },
+    {
+      "name": "Folklife and Ethnological Museum of Macedonia-Thrace",
+      "reason": "Fetch failed (DNS EAI_AGAIN)",
+      "url": "https://www.pemf.gr/"
+    },
+    {
+      "name": "Serraikon",
+      "reason": "Site returned only a title; no Thessaloniki address or hours readable",
+      "url": "https://www.serraikon.com/"
+    },
+    {
+      "name": "Hellenic Heritage pages for Ancient Agora and Galerius Palace",
+      "reason": "Guessed official URLs returned 404; odysseus.culture.gr refused connection",
+      "url": "https://odysseus.culture.gr/h/2/eh251.jsp?obj_id=1009"
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "White Tower",
+        "Rotunda",
+        "Heptapyrgion",
+        "Archaeological Museum of Thessaloniki"
+      ],
+      "bestFirstTimers": [
+        "White Tower",
+        "Archaeological Museum of Thessaloniki",
+        "Museum of Byzantine Culture",
+        "Agora Modiano"
+      ],
+      "bestRestaurants": [
+        "Clochard",
+        "Orizontes Roof Garden (Electra Palace)",
+        "Ergon Agora Thessaloniki",
+        "COOKOO Restaurant (Mediterranean Palace)"
+      ],
+      "bestBudget": [
+        "Coffee Island (Mitropoleos 14)",
+        "Rotunda",
+        "Hamza Bey Mosque (Alcazar)",
+        "MOMus Experimental Center for the Arts"
+      ],
+      "bestLuxury": [
+        "Orizontes Roof Garden (Electra Palace)",
+        "Clochard",
+        "Fellows Bar (Mediterranean Palace)",
+        "Thessaloniki Concert Hall"
+      ],
+      "bestCouples": [
+        "Orizontes Roof Garden (Electra Palace)",
+        "Thessaloniki Concert Hall",
+        "Clochard",
+        "MOMus Thessaloniki Museum of Photography"
+      ],
+      "bestKids": [
+        "NOESIS Science Center",
+        "White Tower",
+        "Museum of the Macedonian Struggle",
+        "Terkenlis (Tsimiski 30)"
+      ],
+      "bestSolo": [
+        "MOMus Museum of Modern Art",
+        "Teloglion Foundation of Art",
+        "Museum of Byzantine Culture",
+        "Mikel Coffee (One Salonica)"
+      ],
+      "bestUnique": [
+        "Heptapyrgion",
+        "Hamza Bey Mosque (Alcazar)",
+        "MOMus Museum of Contemporary Art",
+        "Teloglion Foundation of Art"
+      ],
+      "bestBreakfast": [
+        "Ergon Agora Thessaloniki",
+        "COOKOO Restaurant (Mediterranean Palace)",
+        "Terkenlis (Tsimiski 30)",
+        "Coffee Island (Mitropoleos 14)"
+      ],
+      "bestLunch": [
+        "Ergon Agora Thessaloniki",
+        "Clochard",
+        "Balboa (Pavlou Mela)",
+        "COOKOO Restaurant (Mediterranean Palace)"
+      ],
+      "bestDinner": [
+        "Clochard",
+        "Orizontes Roof Garden (Electra Palace)",
+        "Balboa (Pavlou Mela)",
+        "COOKOO Restaurant (Mediterranean Palace)"
+      ],
+      "bestCocktails": [
+        "Fellows Bar (Mediterranean Palace)",
+        "Orizontes Roof Garden (Electra Palace)",
+        "Clochard"
+      ],
+      "bestBakeries": [
+        "Terkenlis (Tsimiski 30)",
+        "Tzeneral (Pavlou Mela 44)",
+        "Agora Modiano"
+      ],
+      "bestCoffee": [
+        "Coffee Island (Mitropoleos 14)",
+        "Mikel Coffee (One Salonica)",
+        "Fellows Bar (Mediterranean Palace)"
+      ]
+    },
+    "queries": {
+      "Archaeological Museum of Thessaloniki": "Archaeological Museum of Thessaloniki 6 Manoli Andronikou Street Thessaloniki",
+      "Museum of Byzantine Culture": "Museum of Byzantine Culture 2 Stratou Avenue Thessaloniki",
+      "White Tower": "White Tower Nikis Avenue Thessaloniki",
+      "Rotunda": "Rotunda 5 Agiou Georgiou Square Thessaloniki",
+      "Heptapyrgion": "Heptapyrgion 40 Eptapyrgiou Street Thessaloniki",
+      "MOMus Museum of Modern Art": "MOMus Museum of Modern Art 21 Kolokotroni Street Stavroupoli Thessaloniki",
+      "MOMus Museum of Contemporary Art": "MOMus Museum of Contemporary Art 154 Egnatia Avenue Thessaloniki",
+      "MOMus Thessaloniki Museum of Photography": "MOMus Thessaloniki Museum of Photography Warehouse A Pier A Port Thessaloniki",
+      "MOMus Experimental Center for the Arts": "MOMus Experimental Center for the Arts Warehouse B1 Pier A Port Thessaloniki",
+      "Hamza Bey Mosque (Alcazar)": "Hamza Bey Mosque Alcazar 49 Egnatia Avenue Thessaloniki",
+      "NOESIS Science Center": "NOESIS Science Center 6th km Thessaloniki-Thermi Thessaloniki",
+      "Thessaloniki Concert Hall": "Thessaloniki Concert Hall 25is Martiou and Paralia Thessaloniki",
+      "Teloglion Foundation of Art": "Teloglion Foundation of Art 159A Agiou Dimitriou Thessaloniki",
+      "Museum of the Macedonian Struggle": "Museum of the Macedonian Struggle 23 Proxenou Koromila Thessaloniki",
+      "Agora Modiano": "Agora Modiano 24 Ermou and 33 Vasileos Irakleiou Thessaloniki",
+      "Clochard": "Clochard 11 Mitropoleos Thessaloniki",
+      "Orizontes Roof Garden (Electra Palace)": "Orizontes Roof Garden Electra Palace 9 Aristotelous Square Thessaloniki",
+      "COOKOO Restaurant (Mediterranean Palace)": "COOKOO Restaurant Mediterranean Palace 3 Salaminos Thessaloniki",
+      "Fellows Bar (Mediterranean Palace)": "Fellows Bar Mediterranean Palace 3 Salaminos Thessaloniki",
+      "Coffee Island (Mitropoleos 14)": "Coffee Island 14 Mitropoleos Thessaloniki",
+      "Mikel Coffee (One Salonica)": "Mikel Coffee 10 Kotta Roulia Thessaloniki",
+      "Terkenlis (Tsimiski 30)": "Terkenlis 30 Tsimiski Thessaloniki",
+      "Tzeneral (Pavlou Mela 44)": "Tzeneral 44 Pavlou Mela Thessaloniki",
+      "Ergon Agora Thessaloniki": "Ergon Agora 42 Pavlou Mela Thessaloniki",
+      "Balboa (Pavlou Mela)": "Balboa 44 Pavlou Mela Thessaloniki"
+    },
+    "summary": "Roman, Byzantine and Ottoman monuments, state and MOMus museums and the reopened central market, with brunch, dinner, cocktail, bakery and coffee stops checked against their own websites.",
+    "highlights": [
+      "White Tower",
+      "Rotunda",
+      "Archaeological Museum of Thessaloniki",
+      "Museum of Byzantine Culture"
+    ],
+    "tip": "Plan around split closing days: the MOMus museums (except the Experimental Center for the Arts) and NOESIS close on Mondays, the Archaeological Museum of Thessaloniki, the Rotunda and the Heptapyrgion close on Tuesdays, and the White Tower opens daily.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Monday or Tuesday",
+        "copy": "The MOMus museums (except the Experimental Center for the Arts) and NOESIS close on Mondays, while the Archaeological Museum of Thessaloniki, the Rotunda and the Heptapyrgion close on Tuesdays. The White Tower opens daily, and the Museum of Byzantine Culture opens daily through November, then closes on Tuesdays from 1 December."
+      },
+      {
+        "label": "Free Sundays",
+        "value": "1st and 3rd Sunday",
+        "copy": "Hellenic Heritage lists free admission at the Archaeological Museum of Thessaloniki, the Rotunda and the Heptapyrgion on the first and third Sunday of each month from November 1 to March 31. Otherwise full tickets are €10 at each of them and €8 at the White Tower."
+      },
+      {
+        "label": "White Tower entry",
+        "value": "70 people at once",
+        "copy": "The White Tower admits up to 70 visitors at a time and has no toilets, refreshments, cloakroom or luggage storage, so travel light. Last admission is 20 minutes before closing."
+      },
+      {
+        "label": "Booking",
+        "value": "Reserve dinner",
+        "copy": "Clochard takes table reservations by phone, email or online, and Orizontes Roof Garden books its 19:00–23:00 dinner service online or on +30 2310 294 036."
+      }
+    ],
+    "dek": "Check each sight's closing day before you plan, because Thessaloniki's museums split between Monday and Tuesday closures.",
+    "intro": [
+      "Thessaloniki's headline monuments are listed by the Ministry of Culture's Hellenic Heritage platform, and their pages give you clear winter schedules. The White Tower opens daily from 08:30 to 15:30 between November 1 and March 31, with last admission 20 minutes before closing and no more than 70 visitors inside at once. The Rotunda and the Heptapyrgion keep the same winter hours but close on Tuesdays, as does the Archaeological Museum of Thessaloniki, which lists 09:00 to 17:00. All three offer free admission on the first and third Sunday of each month from November 1 to March 31.",
+      "The Museum of Byzantine Culture opens daily through November and closes on Tuesdays from 1 December. Its photography exhibition 'Olympos. Earth, People, Light', with pictures by Satsi from post-war Pieria, runs until 27 January 2027, and a show on the ancient architecture of Huizhou opens on 14 November 2026 and runs to 14 February 2027. The Archaeological Museum lists a temporary exhibition from 18 November 2026 to 31 May 2027. At the Teloglion Foundation of Art, 'Metzikof. A world of wonders' runs until 31 January 2027, and the Museum of the Macedonian Struggle marks Messolonghi 1826–2026 until the same date.",
+      "The MOMus museums close on Mondays and stay open until 20:00 on Thursdays at the Museum of Modern Art, the Museum of Contemporary Art and the Thessaloniki Museum of Photography. At the Museum of Modern Art, 'Behind the Doors. Costakis meets Rubinstein' runs until 10 January 2027 beside the permanent Costakis Collection. The Museum of Contemporary Art shows 'K.BHTA. Only the coastline remains' until 31 January 2027, and the Hamza Bey Mosque (Alcazar) on Egnatia shows Pete Marifoglou's photographs of the city in 1960–1980 until 31 March 2027. A myMOMus Card covers one visit to each venue within six months.",
+      "For food, Ergon Agora Thessaloniki on Pavlou Mela serves brunch from 09:00 to 14:00 and stays open until 01:00 every day, and Ergon's pastry shop Tzeneral nearby lists 08:00 to 00:00. Clochard on Mitropoleos opens 13:00 to 00:00, Monday to Sunday, and takes reservations by phone, email or online. Orizontes, on the top floor of Electra Palace on Aristotelous Square, serves dinner from 19:00 to 23:00 and says it has been included in the MICHELIN Guide. Agora Modiano, the historic central market at Ermou and Vasileos Irakleiou, has 32 independent stalls, according to its operator Ergon."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair the White Tower, which opens daily, with the Archaeological Museum of Thessaloniki, which closes on Tuesdays."
+      ],
+      [
+        "A slower morning",
+        "Ergon Agora Thessaloniki serves brunch from 09:00 to 14:00, and Terkenlis on Tsimiski lists 07:00 to 00:00 every day."
+      ],
+      [
+        "Before booking",
+        "Clochard takes reservations by phone, email or online, and Orizontes Roof Garden books its 19:00–23:00 dinner service online or by phone."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several official sites could not be read: modiano.gr, zythos.gr and tsarouhas.gr returned certificate errors; ouzoumelathron.gr, kitchenbar.gr and mourga.gr did not resolve; charoupi.gr, pemf.gr and daiosluxuryliving.gr failed DNS lookups; valenio.gr refused the connection; odysseus.culture.gr refused the connection; makedoniapalace.com redirects to plain http. Published only partially: Thessaloniki Concert Hall and Teloglion box-office or opening hours were not readable; the Museum of the Macedonian Struggle showed only a same-day closing banner; Agora Modiano and Fellows Bar publish no hours; the Rotunda and Heptapyrgion evidence is the current Hellenic Heritage listing with no dated 2026 notice; Coffee Island, Mikel Coffee, Terkenlis, Tzeneral and Balboa are confirmed from current store lists or hours rather than dated news, and Balboa's street number differs between 42 and 44 Pavlou Mela on the same page. The Museum of Byzantine Culture's own visit page lists Tuesday closure for the whole winter, while its homepage says it is open daily through November; the guide follows the homepage. The Jewish Museum of Thessaloniki was left out for lack of dated current content.",
+  "injectionLikeText": []
+}
