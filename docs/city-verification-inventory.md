@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 91.
-- Classifier-passed (published, not fully documented in that format): 101.
+- Source-verified (complete dated evidence format): 92.
+- Classifier-passed (published, not fully documented in that format): 100.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -481,7 +481,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Ushuaia, Argentina | ushuaia | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Utrecht, Netherlands | utrecht | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Valencia, Spain | valencia | held-back | not-reviewed | 0 | 6 | 15 | 2 | has 6 named places across 2 categories; needs at least 5 named places across 3 categories |
-| Valparaiso, Chile | valparaiso | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Valparaiso, Chile | valparaiso | source-verified | source-checked | 25 | 47 | 15 | 15 | None |
 | Vancouver, Canada | vancouver | source-verified | source-checked | 26 | 57 | 15 | 15 | None |
 | Varadero, Cuba | varadero | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Venice, Italy | venice | source-verified | source-checked | 24 | 42 | 14 | 14 | None |

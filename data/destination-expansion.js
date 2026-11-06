@@ -9534,4 +9534,110 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on November 1, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Valparaiso, Chile: source review of 2026-11-05 (docs/content-research/valparaiso-2026-11-05.md).
+  {
+    const cityKey = "Valparaiso, Chile";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["La Sebastiana","Museo de Bellas Artes Palacio Baburizza","Museo Marítimo Nacional","Parque Cultural de Valparaíso"],
+      bestFirstTimers: ["La Sebastiana","Museo de Bellas Artes Palacio Baburizza","Museo del Inmigrante (Destino Valparaíso)","Restaurant La Concepción"],
+      bestRestaurants: ["Casalegre","MarAlegre (Casa Higueras)","Restaurant La Concepción","Portofino"],
+      bestBudget: ["Museo de Historia Natural de Valparaíso","Biblioteca Santiago Severín","Galería Municipal de Arte","Panadería Doña Javiera (Cerro Los Placeres)"],
+      bestLuxury: ["MarAlegre (Casa Higueras)","Portofino","Fauna Hotel Restaurant","Casalegre"],
+      bestCouples: ["Casalegre","MarAlegre (Casa Higueras)","La Sebastiana","Hotel Brighton"],
+      bestKids: ["Museo de Historia Natural de Valparaíso","Museo Marítimo Nacional","Moritz Eis (Destino Valparaíso)","Parque Cultural de Valparaíso"],
+      bestSolo: ["Biblioteca Santiago Severín","Galería Municipal de Arte","TallerCafé (Yungay)","Museo de Bellas Artes Palacio Baburizza"],
+      bestUnique: ["Museo del Inmigrante (Destino Valparaíso)","Tres Peces","Teatro Municipal de Valparaíso","Parque Cultural de Valparaíso"],
+      bestBreakfast: ["María María (Destino Valparaíso)","MarAlegre (Casa Higueras)","Panadería Doña Javiera (Cerro Los Placeres)"],
+      bestLunch: ["Restaurante Caleta Portales","Tres Peces","Da Mafalda (Destino Valparaíso)","Restaurant La Concepción"],
+      bestDinner: ["Casalegre","Fauna Hotel Restaurant","Portofino","Da Mafalda (Destino Valparaíso)"],
+      bestCocktails: ["Casalegre","Hotel Brighton","Jardín Cervecero (Destino Valparaíso)"],
+      bestBakeries: ["Stefani (Destino Valparaíso)","Panadería Doña Javiera (Cerro Los Placeres)","Pastelería Di Familia (Playa Ancha)"],
+      bestCoffee: ["TallerCafé (Yungay)","María María (Destino Valparaíso)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "La Sebastiana": "La Sebastiana Ricardo de Ferrari 692 Valparaiso",
+      "Museo de Bellas Artes Palacio Baburizza": "Museo de Bellas Artes Palacio Baburizza Paseo Yugoslavo 176 Valparaiso",
+      "Museo Marítimo Nacional": "Museo Maritimo Nacional Paseo 21 de Mayo 45 Valparaiso",
+      "Parque Cultural de Valparaíso": "Parque Cultural de Valparaiso Cumming 580 Valparaiso",
+      "Museo del Inmigrante (Destino Valparaíso)": "Museo del Inmigrante Destino Valparaiso Concepcion 499 Valparaiso",
+      "Restaurant La Concepción": "Restaurant La Concepcion Papudo 541 Valparaiso",
+      "Casalegre": "Casalegre Paseo Dimalow 249 Valparaiso",
+      "MarAlegre (Casa Higueras)": "MarAlegre Casa Higueras Higuera 133 Valparaiso",
+      "Portofino": "Portofino Bellamar 301 Valparaiso",
+      "Museo de Historia Natural de Valparaíso": "Museo de Historia Natural de Valparaiso Condell 1546 Valparaiso",
+      "Biblioteca Santiago Severín": "Biblioteca Santiago Severin Plaza Simon Bolivar 1653 Valparaiso",
+      "Galería Municipal de Arte": "Galeria Municipal de Arte Condell 1550 Valparaiso",
+      "Panadería Doña Javiera (Cerro Los Placeres)": "Panaderia Dona Javiera Javiera Carrera 801 Valparaiso",
+      "Fauna Hotel Restaurant": "Fauna Hotel Pasaje Dimalow 166 Valparaiso",
+      "Hotel Brighton": "Hotel Brighton Paseo Atkinson 151 Valparaiso",
+      "Moritz Eis (Destino Valparaíso)": "Moritz Eis Destino Valparaiso Concepcion 499 Valparaiso",
+      "TallerCafé (Yungay)": "TallerCafe Yungay 2554 Valparaiso",
+      "Tres Peces": "Tres Peces Concepcion 261 Valparaiso",
+      "Teatro Municipal de Valparaíso": "Teatro Municipal de Valparaiso Uruguay 410 Valparaiso",
+      "María María (Destino Valparaíso)": "Maria Maria Destino Valparaiso Concepcion 499 Valparaiso",
+      "Restaurante Caleta Portales": "Restaurante Caleta Portales Avenida Espana Valparaiso",
+      "Da Mafalda (Destino Valparaíso)": "Da Mafalda Destino Valparaiso Concepcion 499 Valparaiso",
+      "Jardín Cervecero (Destino Valparaíso)": "Jardin Cervecero Destino Valparaiso Concepcion 499 Valparaiso",
+      "Stefani (Destino Valparaíso)": "Stefani Destino Valparaiso Concepcion 499 Valparaiso",
+      "Pastelería Di Familia (Playa Ancha)": "Pasteleria Di Familia Avenida Playa Ancha 177 Valparaiso"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Valparaiso" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Neruda's house, art, natural-history and maritime museums, a former-prison cultural park and an immigrant museum, with breakfast cafés, seafood lunches, dinners, bars and bakeries checked against their own websites.";
+    cityGuide.highlights = ["La Sebastiana","Museo de Bellas Artes Palacio Baburizza","Museo Marítimo Nacional","Museo del Inmigrante (Destino Valparaíso)"];
+    cityGuide.tip = "Plan museum days with care: La Sebastiana, the Palacio Baburizza and the Parque Cultural open Tuesday to Sunday, the Museo de Historia Natural is closed on Sundays and Mondays, and the Museo Marítimo Nacional lists daily hours.";
+    data.destinationFacts[cityKey] = "Plan museum days with care: La Sebastiana, the Palacio Baburizza and the Parque Cultural open Tuesday to Sunday, the Museo de Historia Natural is closed on Sundays and Mondays, and the Museo Marítimo Nacional lists daily hours.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Neruda's house, art, natural-history and maritime museums, a former-prison cultural park and an immigrant museum, with breakfast cafés, seafood lunches, dinners, bars and bakeries checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays at most museums",
+        "copy": "La Sebastiana, the Palacio Baburizza and the Parque Cultural open Tuesday to Sunday, while the Museo de Historia Natural is closed on Sundays, Mondays and holidays. The Museo Marítimo Nacional lists daily hours of 10:00 to 18:00, closing only on 1 January, 1 May and 25 December."
+      },
+      {
+        "label": "Tickets",
+        "value": "Free to $18.000",
+        "copy": "The Museo de Historia Natural is free for everyone, and the Palacio Baburizza charges foreign visitors $6.000 with under-12s free. La Sebastiana's 2026 general ticket is $11.000, and the Museo del Inmigrante sells foreign-visitor tickets at $18.000 online, with children under 6 free alongside an adult."
+      },
+      {
+        "label": "Walk-in or book",
+        "value": "Varies by venue",
+        "copy": "La Sebastiana takes no reservations and admits visitors in order of arrival. Casalegre books tables by WhatsApp with day, time and party size, and Restaurante Caleta Portales takes reservations only by phone or WhatsApp."
+      },
+      {
+        "label": "Rules",
+        "value": "Pets, cards, last entry",
+        "copy": "Pets are not permitted at La Sebastiana, and the Museo Marítimo Nacional admits visitors until 30 minutes before closing. MarAlegre's booking page asks for a credit card, charges UF 0.5 per person for cancellations inside 24 hours and holds tables for 30 minutes."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Put the museums between Tuesday and Saturday, and book hill-top dinners in Cerro Alegre and Cerro Concepción ahead.",
+      intro: [
+        "Start with La Sebastiana, Pablo Neruda's house at Ricardo de Ferrari 692 on Cerro Bellavista. The Fundación Neruda's notice of 2 November 2026 gives Tuesday-to-Sunday opening from 10:00 to 18:00. Entry is walk-in only, in order of arrival, with a 2026 general ticket of $11.000 and audio guides in six languages. Down on Cerro Alegre, the Palacio Baburizza at Paseo Yugoslavo 176 opens Tuesday to Sunday, 10:00 to 18:00. Until 27 December 2026 it shows prize-winning works from the XIII Bienal Internacional de Artes de Valparaíso.",
+        "The Museo de Historia Natural at Condell 1546 is free for everyone. It opens Tuesday to Friday from 10:00 to 18:00 and Saturday from 11:00 to 16:00, and closes on Sundays, Mondays and holidays. 'Sinapsis', a photographic look at early Chilean neurosurgery, runs from 5 November to 24 December 2026. On Cerro Artillería, the Museo Marítimo Nacional lists daily hours from 10:00 to 18:00 and a 2026 foreign-visitor rate of $4.000. The Parque Cultural, in the former prison at Cumming 580, opens its gates Tuesday to Sunday from 10:00 to 20:00.",
+        "On Cerro Concepción, Destino Valparaíso at Concepción 499 houses the Museo del Inmigrante, with tickets sold online at $12.000 general, $18.000 for foreign visitors and free entry for children under 6 with an adult. The same complex lists María María for all-day breakfast and fresh bread, Stefani for Romanian family pastries, and Moritz Eis gelato, open Tuesday to Sunday from 10:00 to 19:00. Da Mafalda serves Sardinian pasta and takes reservations by WhatsApp. The Jardín Cervecero advertises Friday and Saturday garden nights at 21:00.",
+        "For dinner, Casalegre at Paseo Dimalow 249 pairs seafood plates with Negronis from $5.900 and takes bookings by WhatsApp. MarAlegre at Casa Higueras, Higuera 133, serves a buffet breakfast and à la carte lunch and dinner, and asks for a credit card to hold a table. Restaurant La Concepción at Papudo 541 lists a Monday closure on its website. For seafood by the water, Restaurante Caleta Portales sits a few steps from Estación Portales. Panadería Doña Javiera on Cerro Los Placeres bakes pan batido in a wood-fired oven."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair La Sebastiana and the Palacio Baburizza, both open Tuesday to Sunday, with the Museo Marítimo Nacional, which lists daily hours."
+        ],
+        [
+          "A slower morning",
+          "Have an all-day breakfast at María María in Destino Valparaíso, then visit the free Museo de Historia Natural, which is closed on Sundays and Mondays."
+        ],
+        [
+          "Before booking",
+          "La Sebastiana takes no reservations, Casalegre books by WhatsApp, and MarAlegre asks for a credit card to hold a table."
+        ]
+      ],
+      trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on November 5, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

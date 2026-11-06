@@ -5,6 +5,720 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Valparaiso, Chile": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-11-05",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several restaurant sites carry no 2026 date (Restaurant La Concepción is undated, Portofino's footer reads 2025, Tres Peces' 2024, MarAlegre's latest content is 2025, TallerCafé is undated), so their hours are attributed to those pages rather than stated as current. Hours were not published for Teatro Municipal, Biblioteca Santiago Severín, the Museo del Inmigrante, MarAlegre, Hotel Brighton, María María, Stefani and the Jardín Cervecero. The Destino Valparaíso tenants are confirmed through the complex's own site, not individual websites. Café Turri (connection reset), MUGO (certificate error), the Congreso Nacional (403 on camara.cl and senado.cl) and several restaurant domains that did not resolve could not be read; these failures are not evidence of closure. No official operator page with current funicular (ascensor) hours or fares was found.",
+    "sourceUrls": [
+      "docs/content-research/valparaiso-2026-11-05.md",
+      "docs/content-research/valparaiso-2026-11-05.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Cerro Alegre",
+        "checkedOn": "2026-11-05",
+        "reason": "neighbourhood, not a single place with an operator website"
+      },
+      {
+        "name": "Ascensores",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place; no official operator page with current funicular hours or fares found"
+      },
+      {
+        "name": "Café Turri",
+        "url": "https://www.turri.cl/",
+        "checkedOn": "2026-11-05",
+        "reason": "official site turri.cl failed to load (connection reset); not evidence of closure"
+      },
+      {
+        "name": "Gran Hotel Gervasoni restaurant",
+        "url": "https://www.hotelgervasoni.com/",
+        "checkedOn": "2026-11-05",
+        "reason": "site says restaurant is in restructuring: \"Actualmente estamos en restructuración soló habilitado para eventos\""
+      },
+      {
+        "name": "Museo Universitario del Grabado (MUGO)",
+        "url": "https://www.mugo.cl/",
+        "checkedOn": "2026-11-05",
+        "reason": "certificate error (self-signed certificate in chain); not bypassed"
+      },
+      {
+        "name": "Congreso Nacional (guided visits)",
+        "url": "https://www.camara.cl/",
+        "checkedOn": "2026-11-05",
+        "reason": "camara.cl and senado.cl returned 403 Forbidden"
+      },
+      {
+        "name": "Mercado El Cardonal",
+        "checkedOn": "2026-11-05",
+        "reason": "no official operator page found"
+      },
+      {
+        "name": "Museo Mirador Lukas",
+        "url": "https://www.lukas.cl/",
+        "checkedOn": "2026-11-05",
+        "reason": "lukas.cl is an unrelated casino page; no official museum page found"
+      },
+      {
+        "name": "Museo del Mar Lord Cochrane",
+        "url": "https://www.subdere.gov.cl/node/84198",
+        "checkedOn": "2026-11-05",
+        "reason": "no official museum page found; the Subdere page (24 October 2025) covers only restoration of the Lord Cochrane monument"
+      },
+      {
+        "name": "Café Vinilo",
+        "url": "https://www.cafevinilo.cl/",
+        "checkedOn": "2026-11-05",
+        "reason": "site shows \"Sitio en Mantencion\" only"
+      },
+      {
+        "name": "Café del Poeta",
+        "url": "https://www.cafedelpoeta.cl/",
+        "checkedOn": "2026-11-05",
+        "reason": "site redirects to an http-only address; no https page available"
+      },
+      {
+        "name": "Emporio La Rosa",
+        "url": "https://www.emporiolarosa.cl/donde-estamos/",
+        "checkedOn": "2026-11-05",
+        "reason": "branch list shows no branch in Valparaíso commune (nearest in Viña del Mar)"
+      },
+      {
+        "name": "Atelier del Puerto",
+        "url": "https://atelierdelpuerto.com/",
+        "checkedOn": "2026-11-05",
+        "reason": "no 2026 content (© 2025), contradictory opening hours and placeholder prices"
+      },
+      {
+        "name": "Panadería Independencia",
+        "url": "https://www.panaderiaindependenciavalparaiso.com/",
+        "checkedOn": "2026-11-05",
+        "reason": "official site returned 404"
+      },
+      {
+        "name": "Pasta e Vino",
+        "url": "https://www.pastaevinoristorante.cl/",
+        "checkedOn": "2026-11-05",
+        "reason": "site returned nothing readable"
+      },
+      {
+        "name": "Allegretto",
+        "url": "https://www.allegretto.cl/",
+        "checkedOn": "2026-11-05",
+        "reason": "site returned nothing readable"
+      },
+      {
+        "name": "Kapura",
+        "url": "https://elkapura.cl/",
+        "checkedOn": "2026-11-05",
+        "reason": "site returned HTTP 500"
+      },
+      {
+        "name": "Café Zeit",
+        "url": "https://cafezeit.cl/",
+        "checkedOn": "2026-11-05",
+        "reason": "domain did not resolve"
+      },
+      {
+        "name": "WIP Coffee",
+        "url": "https://www.wipcoffee.cl/",
+        "checkedOn": "2026-11-05",
+        "reason": "domain did not resolve"
+      },
+      {
+        "name": "Le Filou de Montpellier",
+        "url": "https://www.lefiloudemontpellier.cl/",
+        "checkedOn": "2026-11-05",
+        "reason": "domain did not resolve"
+      },
+      {
+        "name": "Restaurante Espíritu Santo",
+        "url": "https://www.restaurantespiritusanto.cl/",
+        "checkedOn": "2026-11-05",
+        "reason": "domain did not resolve"
+      },
+      {
+        "name": "Bar La Playa",
+        "url": "https://www.barlaplaya.cl/",
+        "checkedOn": "2026-11-05",
+        "reason": "domain did not resolve"
+      },
+      {
+        "name": "Hotel Ultramar",
+        "url": "https://www.hotelultramar.cl/",
+        "checkedOn": "2026-11-05",
+        "reason": "domain did not resolve"
+      },
+      {
+        "name": "Casa Cervecera Altamira",
+        "url": "https://www.cerveceraaltamira.cl/",
+        "checkedOn": "2026-11-05",
+        "reason": "SSL error (wrong version number); not bypassed"
+      },
+      {
+        "name": "Bar Cinzano",
+        "url": "https://www.barcinzano.cl/",
+        "checkedOn": "2026-11-05",
+        "reason": "barcinzano.cl redirects to the Cinzano drinks brand; no bar page found"
+      },
+      {
+        "name": "Restaurante Bote Salvavidas",
+        "url": "https://www.botesalvavidas.cl/",
+        "checkedOn": "2026-11-05",
+        "reason": "page read belongs to the volunteer lifeboat corps (Muelle Prat S/N); no restaurant hours, menu or booking published"
+      },
+      {
+        "name": "WineBox Valparaíso",
+        "url": "https://www.wineboxvalparaiso.com/",
+        "checkedOn": "2026-11-05",
+        "reason": "no address, hours or current content on site (© 2025)"
+      },
+      {
+        "name": "BO Hotel terrace",
+        "url": "https://www.bohotel.cl/",
+        "checkedOn": "2026-11-05",
+        "reason": "hotel page shows breakfast for the hotel only; no public bar or restaurant hours"
+      },
+      {
+        "name": "Hotel Palacio Astoreca",
+        "url": "https://www.hotelpalacioastoreca.com/en/",
+        "checkedOn": "2026-11-05",
+        "reason": "hotel; no restaurant or bar details and no 2026 content"
+      },
+      {
+        "name": "Casa Galos",
+        "url": "https://www.casagalos.cl/",
+        "checkedOn": "2026-11-05",
+        "reason": "hotel only; no public café or restaurant"
+      },
+      {
+        "name": "Hotel Boutique 17",
+        "url": "https://www.hotel17.cl/",
+        "checkedOn": "2026-11-05",
+        "reason": "hotel homepage gave no restaurant hours or address details"
+      },
+      {
+        "name": "Street-art walk",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Historic funicular ride",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Pacific sunset",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "a coastal seafood lunch",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Valparaiso market or cafe",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local dinner in Cerro Alegre",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Cerro Concepcion",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Playa Ancha",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Cerro Alegre",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Cerro Alegre walk",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Cerro Concepcion",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Playa Ancha",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Playa Ancha",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Cerro Alegre",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Cerro Alegre",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Street-art walk",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Cerro Concepcion",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Ascensores",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Cerro Alegre evening",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Cerro Concepcion",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Playa Ancha",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Cerro Alegre",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Cerro Alegre",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Cerro Concepcion",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Playa Ancha",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Cerro Alegre",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Cerro Alegre",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Cerro Alegre cafe or market",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Historic funicular ride",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Playa Ancha",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Playa Ancha",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Cerro Alegre",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Cerro Alegre",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Cerro Concepcion bakery or market",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Cerro Alegre",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Playa Ancha",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Cerro Alegre",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Ascensores",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Playa Ancha",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Cerro Alegre",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Cerro Concepcion",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Playa Ancha",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Cerro Alegre",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Cerro Alegre",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Cerro Concepcion",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near La Sebastiana",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Cerro Alegre",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Cerro Concepcion morning market",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Cerro Alegre",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Playa Ancha",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Cerro Alegre",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Cerro Concepcion",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Playa Ancha",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-11-05",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "La Sebastiana": {
+        "url": "https://fundacionneruda.org/informaciones/",
+        "sourceType": "operator's own site (Fundación Pablo Neruda)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "Header notice dated 02/11/2026: \"Todas las Casas Museo abiertas de martes a domingo en horario de 10:00 a 18:00 horas\"; 2026 ticket prices published; \"Ingreso sin reserva, por orden de llegada.\" Audio guides in six languages; pets not permitted."
+      },
+      "Museo de Bellas Artes Palacio Baburizza": {
+        "url": "https://www.museobaburizza.cl/",
+        "sourceType": "official public operator (Municipalidad de Valparaíso museum)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "XIII Bienal Internacional de Artes de Valparaíso exhibition runs 21 October to 27 December 2026; news items dated 29–30 October 2026."
+      },
+      "Museo de Historia Natural de Valparaíso": {
+        "url": "https://www.mhnv.gob.cl/",
+        "sourceType": "official public operator (Servicio Nacional del Patrimonio Cultural)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "\"La entrada es gratuita para todo público.\" Exhibition 'Sinapsis' runs 5 November to 24 December 2026; 'Cráneos, esenciales para la vida' runs through 31 December 2026."
+      },
+      "Museo Marítimo Nacional": {
+        "url": "https://museomaritimo.cl/horarios/",
+        "sourceType": "operator's own site (Armada de Chile museum)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "\"TARIFAS - 2026\" published: foreign visitors $4.000, national adults $2.800; a 'Noche de museos' post dated October 2026."
+      },
+      "Parque Cultural de Valparaíso": {
+        "url": "https://parquecultural.cl/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "Current programme with October–November 2026 exhibitions and festival; news dated October 2026."
+      },
+      "Teatro Municipal de Valparaíso": {
+        "url": "https://valpocultura.cl/espacios-culturales/",
+        "sourceType": "official public operator (Municipalidad de Valparaíso, Valpocultura)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "Municipal agenda lists free 'Cine Ojo de Pescado' at the Teatro Municipal on 4 November 2026."
+      },
+      "Biblioteca Santiago Severín": {
+        "url": "https://www.bibliotecaseverin.gob.cl/",
+        "sourceType": "official public operator (Sistema Nacional de Bibliotecas Públicas)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "November 2026 programme published 28/10/2026 (workshops, poetry, reading); guided visits listed as a service."
+      },
+      "Galería Municipal de Arte": {
+        "url": "https://valpocultura.cl/espacios-culturales/",
+        "sourceType": "official public operator (Municipalidad de Valparaíso, Valpocultura)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "Listed with opening hours among municipal cultural spaces on the current Valpocultura site (which carries 2026 news); no dated exhibition found."
+      },
+      "Museo del Inmigrante (Destino Valparaíso)": {
+        "url": "https://www.destinovalpo.cl/",
+        "sourceType": "operator's own site (Destino Valparaíso)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "Ticket page (entradas.destinovalpo.cl) sells museum entries for 6, 7 and 10 November 2026: general $12.000, foreigners $18.000, children to 12 $6.000; \"Niños menores de 6 años entran gratis acompañados de un adulto.\""
+      },
+      "María María (Destino Valparaíso)": {
+        "url": "https://www.destinovalpo.cl/gastronomia",
+        "sourceType": "venue operator's site (Destino Valparaíso complex)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "Listed on the complex's current gastronomy page: café with artisanal pastries, fresh bread and breakfast served all day."
+      },
+      "Da Mafalda (Destino Valparaíso)": {
+        "url": "https://www.destinovalpo.cl/gastronomia",
+        "sourceType": "venue operator's site (Destino Valparaíso complex)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "Italian restaurant focused on Sardinian cuisine with fresh pasta; reservations via WhatsApp."
+      },
+      "Stefani (Destino Valparaíso)": {
+        "url": "https://www.destinovalpo.cl/gastronomia",
+        "sourceType": "venue operator's site (Destino Valparaíso complex)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "Listed on the complex's current gastronomy page as a family pastry shop keeping Romanian recipes."
+      },
+      "Moritz Eis (Destino Valparaíso)": {
+        "url": "https://www.destinovalpo.cl/gastronomia",
+        "sourceType": "venue operator's site (Destino Valparaíso complex)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "Artisanal gelato and sorbet, \"100% natural\"; hours notice on the current gastronomy page."
+      },
+      "Jardín Cervecero (Destino Valparaíso)": {
+        "url": "https://www.destinovalpo.cl/",
+        "sourceType": "venue operator's site (Destino Valparaíso complex)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "Craft-beer bar and restaurant with outdoor terrace; homepage advertises 'Noches de Jardín' on Fridays and Saturdays at 21:00."
+      },
+      "Casalegre": {
+        "url": "https://casalegre.cl/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "Current menu with prices (Negronis from $5.900, Pulpo Grillado $19.500), dishes marked \"Nuevo\", footer \"© 2026\"; reservations by WhatsApp giving day, time and party size."
+      },
+      "MarAlegre (Casa Higueras)": {
+        "url": "https://maralegre.cl/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "Booking page: \"Desayunos buffet, almuerzos y cenas a la carta\"; reservations require a credit card, 24-hour cancellation or UF 0.5 per person, tables held 30 minutes. Latest dated content is from 2025."
+      },
+      "Fauna Hotel Restaurant": {
+        "url": "https://faunahotel.com/valparaiso/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "Restaurant hours and reservation line (+56 32 2121408) published; menu PDF stored under a 2026 path."
+      },
+      "Restaurant La Concepción": {
+        "url": "https://www.restaurantlaconcepcion.cl/",
+        "sourceType": "operator's own site (plus its digital menu at laconcepcion.buenacarta.com)",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "Website lists weekly hours and \"LUNES CERRADO\"; its digital menu shows live availability flags (\"Agotado\", \"No disponible en este momento\"). No dated content."
+      },
+      "Restaurante Caleta Portales": {
+        "url": "https://www.restaurantecaletaportales.cl/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "Footer \"© 2026\"; seasonal 'Fin de Año Frente al Mar' table booking; reservations only by phone or WhatsApp."
+      },
+      "Portofino": {
+        "url": "https://www.portofino.cl/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "\"Excelencia & estilo desde 1998\"; table booking button and WhatsApp reservations; footer © 2025."
+      },
+      "Tres Peces": {
+        "url": "https://www.trespeces.cl/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "Responsible-fishing seafood business working with 40 fishing organisations; restaurant opened 2018; contact by WhatsApp. Footer dated 2024."
+      },
+      "TallerCafé (Yungay)": {
+        "url": "https://taller.cafe/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "Live online shop for beans, teas and barista courses; branch hours published; \"Prefiera el pago con tarjeta.\" No dated content."
+      },
+      "Panadería Doña Javiera (Cerro Los Placeres)": {
+        "url": "https://www.panaderiadonajaviera.cl/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "Footer: \"Sitio en marco proyecto Sercotec Datactil - Digitalización - 2026\"; wood-fired pan batido, empanadas and pastries; delivery over $10.000."
+      },
+      "Pastelería Di Familia (Playa Ancha)": {
+        "url": "https://difamilia.com/pasteleria",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "Current cake catalogue with prices (Selva Negra $19.800); footer \"© 2026 Pastelería Di Familia\"."
+      },
+      "Hotel Brighton": {
+        "url": "https://www.brighton.cl/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-05",
+        "operatingEvidence": "Describes itself as \"un Hotel – Restaurante-Pub al más puro estilo victoriano\"; live booking calendar running to November 2027. No dated content."
+      }
+    }
+  },
   "Oaxaca, Mexico": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-11-01",

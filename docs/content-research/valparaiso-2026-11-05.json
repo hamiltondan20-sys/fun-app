@@ -1,0 +1,952 @@
+{
+  "city": "Valparaiso, Chile",
+  "checkedOn": "2026-11-05",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "La Sebastiana",
+      "kind": "museum",
+      "url": "https://fundacionneruda.org/informaciones/",
+      "sourceType": "operator's own site (Fundación Pablo Neruda)",
+      "address": "Ricardo de Ferrari 692, Cerro Bellavista – Valparaíso",
+      "operatingEvidence": "Header notice dated 02/11/2026: \"Todas las Casas Museo abiertas de martes a domingo en horario de 10:00 a 18:00 horas\"; 2026 ticket prices published; \"Ingreso sin reserva, por orden de llegada.\" Audio guides in six languages; pets not permitted.",
+      "hours": "Tuesday to Sunday 10:00–18:00 (2 November 2026 notice); January and February until 19:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Museo de Bellas Artes Palacio Baburizza",
+      "kind": "museum",
+      "url": "https://www.museobaburizza.cl/",
+      "sourceType": "official public operator (Municipalidad de Valparaíso museum)",
+      "address": "Paseo Yugoslavo 176, Valparaíso (Cerro Alegre)",
+      "operatingEvidence": "XIII Bienal Internacional de Artes de Valparaíso exhibition runs 21 October to 27 December 2026; news items dated 29–30 October 2026.",
+      "hours": "Martes a domingo, \"10:00 a 18:00 hrs.\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Museo de Historia Natural de Valparaíso",
+      "kind": "museum",
+      "url": "https://www.mhnv.gob.cl/",
+      "sourceType": "official public operator (Servicio Nacional del Patrimonio Cultural)",
+      "address": "Condell 1546, Valparaíso",
+      "operatingEvidence": "\"La entrada es gratuita para todo público.\" Exhibition 'Sinapsis' runs 5 November to 24 December 2026; 'Cráneos, esenciales para la vida' runs through 31 December 2026.",
+      "hours": "Tuesday–Friday 10:00–18:00, Saturday 11:00–16:00; closed Sundays, Mondays and holidays",
+      "confidence": "high"
+    },
+    {
+      "name": "Museo Marítimo Nacional",
+      "kind": "museum",
+      "url": "https://museomaritimo.cl/horarios/",
+      "sourceType": "operator's own site (Armada de Chile museum)",
+      "address": "Veintiuno de Mayo #45, Cerro Artillería, Valparaíso.",
+      "operatingEvidence": "\"TARIFAS - 2026\" published: foreign visitors $4.000, national adults $2.800; a 'Noche de museos' post dated October 2026.",
+      "hours": "\"Lunes a Domingo 10:00 a 18:00* hrs.\" last entry 30 minutes before closing; closed 1 January, 1 May, 25 December",
+      "confidence": "high"
+    },
+    {
+      "name": "Parque Cultural de Valparaíso",
+      "kind": "park",
+      "url": "https://parquecultural.cl/",
+      "sourceType": "operator's own site",
+      "address": "Calle Cumming 580, C° Cárcel, Valparaíso",
+      "operatingEvidence": "Current programme with October–November 2026 exhibitions and festival; news dated October 2026.",
+      "hours": "\"Las puertas del parque están abiertas de martes a domingo de 10:00 a 20:00 hrs.\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Teatro Municipal de Valparaíso",
+      "kind": "landmark",
+      "url": "https://valpocultura.cl/espacios-culturales/",
+      "sourceType": "official public operator (Municipalidad de Valparaíso, Valpocultura)",
+      "address": "Uruguay 410, Valparaíso",
+      "operatingEvidence": "Municipal agenda lists free 'Cine Ojo de Pescado' at the Teatro Municipal on 4 November 2026.",
+      "hours": "not published",
+      "confidence": "high"
+    },
+    {
+      "name": "Biblioteca Santiago Severín",
+      "kind": "landmark",
+      "url": "https://www.bibliotecaseverin.gob.cl/",
+      "sourceType": "official public operator (Sistema Nacional de Bibliotecas Públicas)",
+      "address": "Plaza Simón Bolívar 1653, Valparaíso, Chile",
+      "operatingEvidence": "November 2026 programme published 28/10/2026 (workshops, poetry, reading); guided visits listed as a service.",
+      "hours": "not published",
+      "confidence": "high"
+    },
+    {
+      "name": "Galería Municipal de Arte",
+      "kind": "museum",
+      "url": "https://valpocultura.cl/espacios-culturales/",
+      "sourceType": "official public operator (Municipalidad de Valparaíso, Valpocultura)",
+      "address": "Condell 1550",
+      "operatingEvidence": "Listed with opening hours among municipal cultural spaces on the current Valpocultura site (which carries 2026 news); no dated exhibition found.",
+      "hours": "\"LUN - VIE 10:00 a 18:00 hrs. SÁB 12:00 a 18:00 hrs.\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Museo del Inmigrante (Destino Valparaíso)",
+      "kind": "museum",
+      "url": "https://www.destinovalpo.cl/",
+      "sourceType": "operator's own site (Destino Valparaíso)",
+      "address": "Concepción Nº499, Cerro Concepción, Valparaíso, Chile",
+      "operatingEvidence": "Ticket page (entradas.destinovalpo.cl) sells museum entries for 6, 7 and 10 November 2026: general $12.000, foreigners $18.000, children to 12 $6.000; \"Niños menores de 6 años entran gratis acompañados de un adulto.\"",
+      "hours": "not published (ticket calendar shows Sunday 8 November as \"Cerrado\")",
+      "confidence": "high"
+    },
+    {
+      "name": "María María (Destino Valparaíso)",
+      "kind": "cafe",
+      "url": "https://www.destinovalpo.cl/gastronomia",
+      "sourceType": "venue operator's site (Destino Valparaíso complex)",
+      "address": "Concepción Nº499, Cerro Concepción, Valparaíso, Chile (Destino Valparaíso)",
+      "operatingEvidence": "Listed on the complex's current gastronomy page: café with artisanal pastries, fresh bread and breakfast served all day.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Da Mafalda (Destino Valparaíso)",
+      "kind": "meal",
+      "url": "https://www.destinovalpo.cl/gastronomia",
+      "sourceType": "venue operator's site (Destino Valparaíso complex)",
+      "address": "Concepción Nº499, Cerro Concepción, Valparaíso, Chile (Destino Valparaíso)",
+      "operatingEvidence": "Italian restaurant focused on Sardinian cuisine with fresh pasta; reservations via WhatsApp.",
+      "hours": "Tuesday to Sunday 11:00–19:00; Friday and Saturday 11:00–22:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Stefani (Destino Valparaíso)",
+      "kind": "bakery",
+      "url": "https://www.destinovalpo.cl/gastronomia",
+      "sourceType": "venue operator's site (Destino Valparaíso complex)",
+      "address": "Concepción Nº499, Cerro Concepción, Valparaíso, Chile (Destino Valparaíso)",
+      "operatingEvidence": "Listed on the complex's current gastronomy page as a family pastry shop keeping Romanian recipes.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Moritz Eis (Destino Valparaíso)",
+      "kind": "cafe",
+      "url": "https://www.destinovalpo.cl/gastronomia",
+      "sourceType": "venue operator's site (Destino Valparaíso complex)",
+      "address": "Concepción Nº499, Cerro Concepción, Valparaíso, Chile (Destino Valparaíso)",
+      "operatingEvidence": "Artisanal gelato and sorbet, \"100% natural\"; hours notice on the current gastronomy page.",
+      "hours": "\"Abierto de martes a domingo de 10:00 a 19:00 hrs.\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Jardín Cervecero (Destino Valparaíso)",
+      "kind": "bar",
+      "url": "https://www.destinovalpo.cl/",
+      "sourceType": "venue operator's site (Destino Valparaíso complex)",
+      "address": "Concepción Nº499, Cerro Concepción, Valparaíso, Chile (Destino Valparaíso)",
+      "operatingEvidence": "Craft-beer bar and restaurant with outdoor terrace; homepage advertises 'Noches de Jardín' on Fridays and Saturdays at 21:00.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Casalegre",
+      "kind": "bar",
+      "url": "https://casalegre.cl/",
+      "sourceType": "operator's own site",
+      "address": "Paseo Dimalow 249, Cerro Alegre, Valparaíso",
+      "operatingEvidence": "Current menu with prices (Negronis from $5.900, Pulpo Grillado $19.500), dishes marked \"Nuevo\", footer \"© 2026\"; reservations by WhatsApp giving day, time and party size.",
+      "hours": "Tuesday–Thursday and Sunday 12:30–23:30; Friday and Saturday 12:30–00:30 (to be confirmed with the venue, per the site)",
+      "confidence": "high"
+    },
+    {
+      "name": "MarAlegre (Casa Higueras)",
+      "kind": "meal",
+      "url": "https://maralegre.cl/",
+      "sourceType": "operator's own site",
+      "address": "Calle Higuera 133, Cerro Alegre, Valparaíso",
+      "operatingEvidence": "Booking page: \"Desayunos buffet, almuerzos y cenas a la carta\"; reservations require a credit card, 24-hour cancellation or UF 0.5 per person, tables held 30 minutes. Latest dated content is from 2025.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Fauna Hotel Restaurant",
+      "kind": "meal",
+      "url": "https://faunahotel.com/valparaiso/",
+      "sourceType": "operator's own site",
+      "address": "Pasaje Dimalow 166, Cerro Alegre, Valparaíso, Chile",
+      "operatingEvidence": "Restaurant hours and reservation line (+56 32 2121408) published; menu PDF stored under a 2026 path.",
+      "hours": "\"Lun / Dom 12.30 a 22.00 hrs.\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Restaurant La Concepción",
+      "kind": "meal",
+      "url": "https://www.restaurantlaconcepcion.cl/",
+      "sourceType": "operator's own site (plus its digital menu at laconcepcion.buenacarta.com)",
+      "address": "Papudo 541 Cerro Concepción Valparaíso",
+      "operatingEvidence": "Website lists weekly hours and \"LUNES CERRADO\"; its digital menu shows live availability flags (\"Agotado\", \"No disponible en este momento\"). No dated content.",
+      "hours": "Tuesday–Thursday 12:30–21:00, Friday–Saturday 12:30–21:30, Sunday 12:30–20:00; closed Mondays (undated website)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Restaurante Caleta Portales",
+      "kind": "meal",
+      "url": "https://www.restaurantecaletaportales.cl/",
+      "sourceType": "operator's own site",
+      "address": "Caleta Portales, Av. España, Valparaíso, Chile (\"A pasos de la Estación Portales\")",
+      "operatingEvidence": "Footer \"© 2026\"; seasonal 'Fin de Año Frente al Mar' table booking; reservations only by phone or WhatsApp.",
+      "hours": "Monday–Friday kitchen 12:00–17:30, closes 18:00; Saturday–Sunday kitchen 12:00–18:00, closes 19:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Portofino",
+      "kind": "meal",
+      "url": "https://www.portofino.cl/",
+      "sourceType": "operator's own site",
+      "address": "Bellamar 301, Valparaíso",
+      "operatingEvidence": "\"Excelencia & estilo desde 1998\"; table booking button and WhatsApp reservations; footer © 2025.",
+      "hours": "Monday–Wednesday 13:00–22:00, Thursday–Saturday 13:00–23:00, Sunday 13:00–16:00 (site footer dated 2025)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Tres Peces",
+      "kind": "meal",
+      "url": "https://www.trespeces.cl/",
+      "sourceType": "operator's own site",
+      "address": "Concepción 261, Valparaíso",
+      "operatingEvidence": "Responsible-fishing seafood business working with 40 fishing organisations; restaurant opened 2018; contact by WhatsApp. Footer dated 2024.",
+      "hours": "Wednesday to Sunday 12:30–16:00 (site footer dated 2024)",
+      "confidence": "medium"
+    },
+    {
+      "name": "TallerCafé (Yungay)",
+      "kind": "cafe",
+      "url": "https://taller.cafe/",
+      "sourceType": "operator's own site",
+      "address": "Yungay 2554, Valparaíso",
+      "operatingEvidence": "Live online shop for beans, teas and barista courses; branch hours published; \"Prefiera el pago con tarjeta.\" No dated content.",
+      "hours": "Mon–Fri 08:00–19:00 (door closes 18:00); Sat 09:00–16:00 and Sun 11:00–16:00 (door closes 15:30) (undated site)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Panadería Doña Javiera (Cerro Los Placeres)",
+      "kind": "bakery",
+      "url": "https://www.panaderiadonajaviera.cl/",
+      "sourceType": "operator's own site",
+      "address": "Javiera Carrera 801, Cerro Los Placeres, Valparaíso (esquina Blanca)",
+      "operatingEvidence": "Footer: \"Sitio en marco proyecto Sercotec Datactil - Digitalización - 2026\"; wood-fired pan batido, empanadas and pastries; delivery over $10.000.",
+      "hours": "Mon–Fri 8:00–14:00 and 14:30–21:00; Sat, Sun and holidays 8:00–14:00 and 15:00–21:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Pastelería Di Familia (Playa Ancha)",
+      "kind": "bakery",
+      "url": "https://difamilia.com/pasteleria",
+      "sourceType": "operator's own site",
+      "address": "Av. Playa Ancha 177, Valparaíso",
+      "operatingEvidence": "Current cake catalogue with prices (Selva Negra $19.800); footer \"© 2026 Pastelería Di Familia\".",
+      "hours": "\"Lunes a viernes de 9:00 a 20:30\"; \"Sábado y domingo de 10:00 a 20:30\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Hotel Brighton",
+      "kind": "bar",
+      "url": "https://www.brighton.cl/",
+      "sourceType": "operator's own site",
+      "address": "Paseo Atkinson 151-153 – Valparaíso – Chile",
+      "operatingEvidence": "Describes itself as \"un Hotel – Restaurante-Pub al más puro estilo victoriano\"; live booking calendar running to November 2027. No dated content.",
+      "hours": "not published",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Cerro Alegre",
+      "reason": "neighbourhood, not a single place with an operator website",
+      "url": ""
+    },
+    {
+      "name": "Ascensores",
+      "reason": "generic, not a place; no official operator page with current funicular hours or fares found",
+      "url": ""
+    },
+    {
+      "name": "Café Turri",
+      "reason": "official site turri.cl failed to load (connection reset); not evidence of closure",
+      "url": "https://www.turri.cl/"
+    },
+    {
+      "name": "Gran Hotel Gervasoni restaurant",
+      "reason": "site says restaurant is in restructuring: \"Actualmente estamos en restructuración soló habilitado para eventos\"",
+      "url": "https://www.hotelgervasoni.com/"
+    },
+    {
+      "name": "Museo Universitario del Grabado (MUGO)",
+      "reason": "certificate error (self-signed certificate in chain); not bypassed",
+      "url": "https://www.mugo.cl/"
+    },
+    {
+      "name": "Congreso Nacional (guided visits)",
+      "reason": "camara.cl and senado.cl returned 403 Forbidden",
+      "url": "https://www.camara.cl/"
+    },
+    {
+      "name": "Mercado El Cardonal",
+      "reason": "no official operator page found",
+      "url": ""
+    },
+    {
+      "name": "Museo Mirador Lukas",
+      "reason": "lukas.cl is an unrelated casino page; no official museum page found",
+      "url": "https://www.lukas.cl/"
+    },
+    {
+      "name": "Museo del Mar Lord Cochrane",
+      "reason": "no official museum page found; the Subdere page (24 October 2025) covers only restoration of the Lord Cochrane monument",
+      "url": "https://www.subdere.gov.cl/node/84198"
+    },
+    {
+      "name": "Café Vinilo",
+      "reason": "site shows \"Sitio en Mantencion\" only",
+      "url": "https://www.cafevinilo.cl/"
+    },
+    {
+      "name": "Café del Poeta",
+      "reason": "site redirects to an http-only address; no https page available",
+      "url": "https://www.cafedelpoeta.cl/"
+    },
+    {
+      "name": "Emporio La Rosa",
+      "reason": "branch list shows no branch in Valparaíso commune (nearest in Viña del Mar)",
+      "url": "https://www.emporiolarosa.cl/donde-estamos/"
+    },
+    {
+      "name": "Atelier del Puerto",
+      "reason": "no 2026 content (© 2025), contradictory opening hours and placeholder prices",
+      "url": "https://atelierdelpuerto.com/"
+    },
+    {
+      "name": "Panadería Independencia",
+      "reason": "official site returned 404",
+      "url": "https://www.panaderiaindependenciavalparaiso.com/"
+    },
+    {
+      "name": "Pasta e Vino",
+      "reason": "site returned nothing readable",
+      "url": "https://www.pastaevinoristorante.cl/"
+    },
+    {
+      "name": "Allegretto",
+      "reason": "site returned nothing readable",
+      "url": "https://www.allegretto.cl/"
+    },
+    {
+      "name": "Kapura",
+      "reason": "site returned HTTP 500",
+      "url": "https://elkapura.cl/"
+    },
+    {
+      "name": "Café Zeit",
+      "reason": "domain did not resolve",
+      "url": "https://cafezeit.cl/"
+    },
+    {
+      "name": "WIP Coffee",
+      "reason": "domain did not resolve",
+      "url": "https://www.wipcoffee.cl/"
+    },
+    {
+      "name": "Le Filou de Montpellier",
+      "reason": "domain did not resolve",
+      "url": "https://www.lefiloudemontpellier.cl/"
+    },
+    {
+      "name": "Restaurante Espíritu Santo",
+      "reason": "domain did not resolve",
+      "url": "https://www.restaurantespiritusanto.cl/"
+    },
+    {
+      "name": "Bar La Playa",
+      "reason": "domain did not resolve",
+      "url": "https://www.barlaplaya.cl/"
+    },
+    {
+      "name": "Hotel Ultramar",
+      "reason": "domain did not resolve",
+      "url": "https://www.hotelultramar.cl/"
+    },
+    {
+      "name": "Casa Cervecera Altamira",
+      "reason": "SSL error (wrong version number); not bypassed",
+      "url": "https://www.cerveceraaltamira.cl/"
+    },
+    {
+      "name": "Bar Cinzano",
+      "reason": "barcinzano.cl redirects to the Cinzano drinks brand; no bar page found",
+      "url": "https://www.barcinzano.cl/"
+    },
+    {
+      "name": "Restaurante Bote Salvavidas",
+      "reason": "page read belongs to the volunteer lifeboat corps (Muelle Prat S/N); no restaurant hours, menu or booking published",
+      "url": "https://www.botesalvavidas.cl/"
+    },
+    {
+      "name": "WineBox Valparaíso",
+      "reason": "no address, hours or current content on site (© 2025)",
+      "url": "https://www.wineboxvalparaiso.com/"
+    },
+    {
+      "name": "BO Hotel terrace",
+      "reason": "hotel page shows breakfast for the hotel only; no public bar or restaurant hours",
+      "url": "https://www.bohotel.cl/"
+    },
+    {
+      "name": "Hotel Palacio Astoreca",
+      "reason": "hotel; no restaurant or bar details and no 2026 content",
+      "url": "https://www.hotelpalacioastoreca.com/en/"
+    },
+    {
+      "name": "Casa Galos",
+      "reason": "hotel only; no public café or restaurant",
+      "url": "https://www.casagalos.cl/"
+    },
+    {
+      "name": "Hotel Boutique 17",
+      "reason": "hotel homepage gave no restaurant hours or address details",
+      "url": "https://www.hotel17.cl/"
+    },
+    {
+      "name": "Street-art walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Historic funicular ride",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Pacific sunset",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "a coastal seafood lunch",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Valparaiso market or cafe",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local dinner in Cerro Alegre",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Cerro Concepcion",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Playa Ancha",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Cerro Alegre",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Cerro Alegre walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Cerro Concepcion",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Playa Ancha",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Playa Ancha",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Cerro Alegre",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Cerro Alegre",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Street-art walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Cerro Concepcion",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Ascensores",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Cerro Alegre evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Cerro Concepcion",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Playa Ancha",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Cerro Alegre",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Cerro Alegre",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Cerro Concepcion",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Playa Ancha",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Cerro Alegre",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Cerro Alegre",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Cerro Alegre cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Historic funicular ride",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Playa Ancha",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Playa Ancha",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Cerro Alegre",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Cerro Alegre",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Cerro Concepcion bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Cerro Alegre",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Playa Ancha",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Cerro Alegre",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Ascensores",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Playa Ancha",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Cerro Alegre",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Cerro Concepcion",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Playa Ancha",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Cerro Alegre",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Cerro Alegre",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Cerro Concepcion",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near La Sebastiana",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Cerro Alegre",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Cerro Concepcion morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Cerro Alegre",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Playa Ancha",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Cerro Alegre",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Cerro Concepcion",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Playa Ancha",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "La Sebastiana",
+        "Museo de Bellas Artes Palacio Baburizza",
+        "Museo Marítimo Nacional",
+        "Parque Cultural de Valparaíso"
+      ],
+      "bestFirstTimers": [
+        "La Sebastiana",
+        "Museo de Bellas Artes Palacio Baburizza",
+        "Museo del Inmigrante (Destino Valparaíso)",
+        "Restaurant La Concepción"
+      ],
+      "bestRestaurants": [
+        "Casalegre",
+        "MarAlegre (Casa Higueras)",
+        "Restaurant La Concepción",
+        "Portofino"
+      ],
+      "bestBudget": [
+        "Museo de Historia Natural de Valparaíso",
+        "Biblioteca Santiago Severín",
+        "Galería Municipal de Arte",
+        "Panadería Doña Javiera (Cerro Los Placeres)"
+      ],
+      "bestLuxury": [
+        "MarAlegre (Casa Higueras)",
+        "Portofino",
+        "Fauna Hotel Restaurant",
+        "Casalegre"
+      ],
+      "bestCouples": [
+        "Casalegre",
+        "MarAlegre (Casa Higueras)",
+        "La Sebastiana",
+        "Hotel Brighton"
+      ],
+      "bestKids": [
+        "Museo de Historia Natural de Valparaíso",
+        "Museo Marítimo Nacional",
+        "Moritz Eis (Destino Valparaíso)",
+        "Parque Cultural de Valparaíso"
+      ],
+      "bestSolo": [
+        "Biblioteca Santiago Severín",
+        "Galería Municipal de Arte",
+        "TallerCafé (Yungay)",
+        "Museo de Bellas Artes Palacio Baburizza"
+      ],
+      "bestUnique": [
+        "Museo del Inmigrante (Destino Valparaíso)",
+        "Tres Peces",
+        "Teatro Municipal de Valparaíso",
+        "Parque Cultural de Valparaíso"
+      ],
+      "bestBreakfast": [
+        "María María (Destino Valparaíso)",
+        "MarAlegre (Casa Higueras)",
+        "Panadería Doña Javiera (Cerro Los Placeres)"
+      ],
+      "bestLunch": [
+        "Restaurante Caleta Portales",
+        "Tres Peces",
+        "Da Mafalda (Destino Valparaíso)",
+        "Restaurant La Concepción"
+      ],
+      "bestDinner": [
+        "Casalegre",
+        "Fauna Hotel Restaurant",
+        "Portofino",
+        "Da Mafalda (Destino Valparaíso)"
+      ],
+      "bestCocktails": [
+        "Casalegre",
+        "Hotel Brighton",
+        "Jardín Cervecero (Destino Valparaíso)"
+      ],
+      "bestBakeries": [
+        "Stefani (Destino Valparaíso)",
+        "Panadería Doña Javiera (Cerro Los Placeres)",
+        "Pastelería Di Familia (Playa Ancha)"
+      ],
+      "bestCoffee": [
+        "TallerCafé (Yungay)",
+        "María María (Destino Valparaíso)"
+      ]
+    },
+    "queries": {
+      "La Sebastiana": "La Sebastiana Ricardo de Ferrari 692 Valparaiso",
+      "Museo de Bellas Artes Palacio Baburizza": "Museo de Bellas Artes Palacio Baburizza Paseo Yugoslavo 176 Valparaiso",
+      "Museo de Historia Natural de Valparaíso": "Museo de Historia Natural de Valparaiso Condell 1546 Valparaiso",
+      "Museo Marítimo Nacional": "Museo Maritimo Nacional Paseo 21 de Mayo 45 Valparaiso",
+      "Parque Cultural de Valparaíso": "Parque Cultural de Valparaiso Cumming 580 Valparaiso",
+      "Teatro Municipal de Valparaíso": "Teatro Municipal de Valparaiso Uruguay 410 Valparaiso",
+      "Biblioteca Santiago Severín": "Biblioteca Santiago Severin Plaza Simon Bolivar 1653 Valparaiso",
+      "Galería Municipal de Arte": "Galeria Municipal de Arte Condell 1550 Valparaiso",
+      "Museo del Inmigrante (Destino Valparaíso)": "Museo del Inmigrante Destino Valparaiso Concepcion 499 Valparaiso",
+      "María María (Destino Valparaíso)": "Maria Maria Destino Valparaiso Concepcion 499 Valparaiso",
+      "Da Mafalda (Destino Valparaíso)": "Da Mafalda Destino Valparaiso Concepcion 499 Valparaiso",
+      "Stefani (Destino Valparaíso)": "Stefani Destino Valparaiso Concepcion 499 Valparaiso",
+      "Moritz Eis (Destino Valparaíso)": "Moritz Eis Destino Valparaiso Concepcion 499 Valparaiso",
+      "Jardín Cervecero (Destino Valparaíso)": "Jardin Cervecero Destino Valparaiso Concepcion 499 Valparaiso",
+      "Casalegre": "Casalegre Paseo Dimalow 249 Valparaiso",
+      "MarAlegre (Casa Higueras)": "MarAlegre Casa Higueras Higuera 133 Valparaiso",
+      "Fauna Hotel Restaurant": "Fauna Hotel Pasaje Dimalow 166 Valparaiso",
+      "Restaurant La Concepción": "Restaurant La Concepcion Papudo 541 Valparaiso",
+      "Restaurante Caleta Portales": "Restaurante Caleta Portales Avenida Espana Valparaiso",
+      "Portofino": "Portofino Bellamar 301 Valparaiso",
+      "Tres Peces": "Tres Peces Concepcion 261 Valparaiso",
+      "TallerCafé (Yungay)": "TallerCafe Yungay 2554 Valparaiso",
+      "Panadería Doña Javiera (Cerro Los Placeres)": "Panaderia Dona Javiera Javiera Carrera 801 Valparaiso",
+      "Pastelería Di Familia (Playa Ancha)": "Pasteleria Di Familia Avenida Playa Ancha 177 Valparaiso",
+      "Hotel Brighton": "Hotel Brighton Paseo Atkinson 151 Valparaiso"
+    },
+    "summary": "Neruda's house, art, natural-history and maritime museums, a former-prison cultural park and an immigrant museum, with breakfast cafés, seafood lunches, dinners, bars and bakeries checked against their own websites.",
+    "highlights": [
+      "La Sebastiana",
+      "Museo de Bellas Artes Palacio Baburizza",
+      "Museo Marítimo Nacional",
+      "Museo del Inmigrante (Destino Valparaíso)"
+    ],
+    "tip": "Plan museum days with care: La Sebastiana, the Palacio Baburizza and the Parque Cultural open Tuesday to Sunday, the Museo de Historia Natural is closed on Sundays and Mondays, and the Museo Marítimo Nacional lists daily hours.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mondays at most museums",
+        "copy": "La Sebastiana, the Palacio Baburizza and the Parque Cultural open Tuesday to Sunday, while the Museo de Historia Natural is closed on Sundays, Mondays and holidays. The Museo Marítimo Nacional lists daily hours of 10:00 to 18:00, closing only on 1 January, 1 May and 25 December."
+      },
+      {
+        "label": "Tickets",
+        "value": "Free to $18.000",
+        "copy": "The Museo de Historia Natural is free for everyone, and the Palacio Baburizza charges foreign visitors $6.000 with under-12s free. La Sebastiana's 2026 general ticket is $11.000, and the Museo del Inmigrante sells foreign-visitor tickets at $18.000 online, with children under 6 free alongside an adult."
+      },
+      {
+        "label": "Walk-in or book",
+        "value": "Varies by venue",
+        "copy": "La Sebastiana takes no reservations and admits visitors in order of arrival. Casalegre books tables by WhatsApp with day, time and party size, and Restaurante Caleta Portales takes reservations only by phone or WhatsApp."
+      },
+      {
+        "label": "Rules",
+        "value": "Pets, cards, last entry",
+        "copy": "Pets are not permitted at La Sebastiana, and the Museo Marítimo Nacional admits visitors until 30 minutes before closing. MarAlegre's booking page asks for a credit card, charges UF 0.5 per person for cancellations inside 24 hours and holds tables for 30 minutes."
+      }
+    ],
+    "dek": "Put the museums between Tuesday and Saturday, and book hill-top dinners in Cerro Alegre and Cerro Concepción ahead.",
+    "intro": [
+      "Start with La Sebastiana, Pablo Neruda's house at Ricardo de Ferrari 692 on Cerro Bellavista. The Fundación Neruda's notice of 2 November 2026 gives Tuesday-to-Sunday opening from 10:00 to 18:00. Entry is walk-in only, in order of arrival, with a 2026 general ticket of $11.000 and audio guides in six languages. Down on Cerro Alegre, the Palacio Baburizza at Paseo Yugoslavo 176 opens Tuesday to Sunday, 10:00 to 18:00. Until 27 December 2026 it shows prize-winning works from the XIII Bienal Internacional de Artes de Valparaíso.",
+      "The Museo de Historia Natural at Condell 1546 is free for everyone. It opens Tuesday to Friday from 10:00 to 18:00 and Saturday from 11:00 to 16:00, and closes on Sundays, Mondays and holidays. 'Sinapsis', a photographic look at early Chilean neurosurgery, runs from 5 November to 24 December 2026. On Cerro Artillería, the Museo Marítimo Nacional lists daily hours from 10:00 to 18:00 and a 2026 foreign-visitor rate of $4.000. The Parque Cultural, in the former prison at Cumming 580, opens its gates Tuesday to Sunday from 10:00 to 20:00.",
+      "On Cerro Concepción, Destino Valparaíso at Concepción 499 houses the Museo del Inmigrante, with tickets sold online at $12.000 general, $18.000 for foreign visitors and free entry for children under 6 with an adult. The same complex lists María María for all-day breakfast and fresh bread, Stefani for Romanian family pastries, and Moritz Eis gelato, open Tuesday to Sunday from 10:00 to 19:00. Da Mafalda serves Sardinian pasta and takes reservations by WhatsApp. The Jardín Cervecero advertises Friday and Saturday garden nights at 21:00.",
+      "For dinner, Casalegre at Paseo Dimalow 249 pairs seafood plates with Negronis from $5.900 and takes bookings by WhatsApp. MarAlegre at Casa Higueras, Higuera 133, serves a buffet breakfast and à la carte lunch and dinner, and asks for a credit card to hold a table. Restaurant La Concepción at Papudo 541 lists a Monday closure on its website. For seafood by the water, Restaurante Caleta Portales sits a few steps from Estación Portales. Panadería Doña Javiera on Cerro Los Placeres bakes pan batido in a wood-fired oven."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair La Sebastiana and the Palacio Baburizza, both open Tuesday to Sunday, with the Museo Marítimo Nacional, which lists daily hours."
+      ],
+      [
+        "A slower morning",
+        "Have an all-day breakfast at María María in Destino Valparaíso, then visit the free Museo de Historia Natural, which is closed on Sundays and Mondays."
+      ],
+      [
+        "Before booking",
+        "La Sebastiana takes no reservations, Casalegre books by WhatsApp, and MarAlegre asks for a credit card to hold a table."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several restaurant sites carry no 2026 date (Restaurant La Concepción is undated, Portofino's footer reads 2025, Tres Peces' 2024, MarAlegre's latest content is 2025, TallerCafé is undated), so their hours are attributed to those pages rather than stated as current. Hours were not published for Teatro Municipal, Biblioteca Santiago Severín, the Museo del Inmigrante, MarAlegre, Hotel Brighton, María María, Stefani and the Jardín Cervecero. The Destino Valparaíso tenants are confirmed through the complex's own site, not individual websites. Café Turri (connection reset), MUGO (certificate error), the Congreso Nacional (403 on camara.cl and senado.cl) and several restaurant domains that did not resolve could not be read; these failures are not evidence of closure. No official operator page with current funicular (ascensor) hours or fares was found.",
+  "injectionLikeText": [],
+  "injectionLikeTextIgnored": [
+    "2026-11-05: laconcepcion.buenacarta.com opened in the in-app browser; full HTML (326 KB) has no AI or assistant text, so it is a fetch-tool artefact.",
+    "2026-11-05: hotel17.cl is not used in the guide (not confirmed), so its flag is ignored."
+  ]
+}
