@@ -1,0 +1,950 @@
+{
+  "city": "Coimbra, Portugal",
+  "checkedOn": "2026-11-05",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "University of Coimbra (Palace of Schools)",
+      "kind": "landmark",
+      "url": "https://visit.uc.pt/en/info",
+      "sourceType": "official public operator (University of Coimbra tourism, visit.uc.pt)",
+      "address": "Information / Ticket Office: \"Rua Larga\", Coimbra; GPS \"40.207938, -8.424189\"",
+      "operatingEvidence": "Current hours page lists 2026 closures (\"Closed: december 24th and 25th 2026\", \"december 31st 2026 and january 1st 2027\"); programme list shows tickets \"valid 01.01.2026 to 31.12.2027\", including a €25 guided tour of the Palace of Schools.",
+      "hours": "Royal Palace: \"Everyday: 9:00 AM - 1:00 PM | 2:00 PM - 5:00 PM\"; ticket kiosk \"Everyday: 9:00 AM - 5:00 PM\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Joanina Library",
+      "kind": "landmark",
+      "url": "https://visit.uc.pt/en/info",
+      "sourceType": "official public operator (University of Coimbra tourism, visit.uc.pt)",
+      "address": "Within the Palace of Schools; tickets at the Information / Ticket Office, \"Rua Larga\", Coimbra",
+      "operatingEvidence": "Timed entry: Joanina visit \"has a specific date and time scheduled at the moment of ticket purchase\"; Joanina Library + University + Science Museum programme €16.50, valid 01.01.2026 to 31.12.2027 (https://visit.uc.pt/en/program-list).",
+      "hours": "\"Everyday: 9:00 AM - 13:00 PM | 2:00 PM - 5:00 PM\"; last entrances \"12.40 PM | 4.40 PM\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Saint Michael's Chapel (University of Coimbra)",
+      "kind": "landmark",
+      "url": "https://visit.uc.pt/en/info",
+      "sourceType": "official public operator (University of Coimbra tourism, visit.uc.pt)",
+      "address": "Within the Palace of Schools; tickets at the Information / Ticket Office, \"Rua Larga\", Coimbra",
+      "operatingEvidence": "Current hours page with 2026 closure dates; chapel included in the 2026-2027 Joanina Library + University + Science Museum programme.",
+      "hours": "\"Everyday: 9:00 AM - 1:00 PM | 2:00 PM - 5:00 PM\"; last admissions \"12.50 PM | 4.50 PM\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Botanical Garden of the University of Coimbra",
+      "kind": "park",
+      "url": "https://visit.uc.pt/en/space-list/jardim_botanico",
+      "sourceType": "official public operator (University of Coimbra tourism, visit.uc.pt)",
+      "address": "\"Side entrance of the Botanical Garden (next to the Garden Arches)\"; \"terraces ranging from University Uptown to the Mondego River\"",
+      "operatingEvidence": "Guided tour €10, \"valid from 01.01.2026 to 31.12.2027\"; hours page states \"Visits to the Botanical Garden will proceed irrespective of the weather conditions.\"",
+      "hours": "\"Summer Schedule - 9:00 AM to 8:00 PM | april 1st to september 30th\"; \"Winter Schedule - 9:00 AM to 5:30 PM | october 1st to march 31st\" (https://visit.uc.pt/en/info)",
+      "confidence": "medium"
+    },
+    {
+      "name": "UC Exploratório",
+      "kind": "museum",
+      "url": "https://www.exploratorio.pt/agenda",
+      "sourceType": "operator's own site (UC Exploratório, Centro Ciência Viva da Universidade de Coimbra)",
+      "address": "\"Rotunda das Lages Parque Verde do Mondego 3040 - 255 COIMBRA\" (https://www.exploratorio.pt/)",
+      "operatingEvidence": "Agenda shows November 2026 activities, e.g. \"Mercadinhos da Margem Esquerda\" on 8 November and the exhibition \"Sob mares frágeis\"; University sells a Science Museum + UC Exploratório ticket valid 2026-2027.",
+      "hours": "Agenda: Tuesday to Sunday \"10h00-13h00 | 14h00-18h00\", closed Mondays; closed \"1 de janeiro e 24, 25 e 31 de dezembro\" (ticket page, footer dated 2023)",
+      "confidence": "high"
+    },
+    {
+      "name": "Portugal dos Pequenitos",
+      "kind": "park",
+      "url": "https://www.portugaldospequenitos.pt/",
+      "sourceType": "operator's own site (Fundação Bissaya Barreto)",
+      "address": "\"Rossio de Santa Clara 3040-256 COIMBRA\"",
+      "operatingEvidence": "Online ticket office linked from the site; the operating foundation's news (https://www.fbb.pt/) dated 19 May 2026 announced the \"Artes no Parque\" festival at the park from 30 May to 10 June.",
+      "hours": "Undated hours page: 10:00-17:00 from 1 January to end of February and 16 October to 31 December; \"das 10:00 às 19:00\" from 1 March to 15 October; closed 25 December; last entry 30 minutes before closing",
+      "confidence": "high"
+    },
+    {
+      "name": "Casa-Museu Bissaya Barreto",
+      "kind": "museum",
+      "url": "https://casamuseu.fbb.pt/",
+      "sourceType": "operator's own site (Fundação Bissaya Barreto)",
+      "address": "\"Rua da Infantaria 23 (aos Arcos do Jardim, defronte ao Jardim Botânico), 3000-219 Coimbra\"",
+      "operatingEvidence": "Exhibition \"Natura Naturata\" by Marcelo Moscheta opened 31.10.2026; lunchtime guided visit listed for 30.10.2026; concert listed for 07.11.2026.",
+      "hours": "not published on the page read",
+      "confidence": "high"
+    },
+    {
+      "name": "Casa das Artes Bissaya Barreto",
+      "kind": "museum",
+      "url": "https://casadasartes.fbb.pt/",
+      "sourceType": "operator's own site (Fundação Bissaya Barreto)",
+      "address": "\"Rua Castro Matoso, 17, 3000-104 Coimbra\"",
+      "operatingEvidence": "Exhibition \"Pêndulo\" by Ana Frois opened 31 October 2026 at 15:00; previous show \"Cura de Sol\" ran until 17 October 2026 (https://www.fbb.pt/).",
+      "hours": "not published for the current exhibition; the previous exhibition was listed \"de terça a sábado, das 15h00 às 19h00\" (fbb.pt)",
+      "confidence": "high"
+    },
+    {
+      "name": "Monastery of Santa Clara-a-Nova (Igreja da Rainha Santa Isabel)",
+      "kind": "landmark",
+      "url": "https://www.rainhasantaisabel.org/contactos",
+      "sourceType": "operator's own site (Confraria da Rainha Santa Isabel)",
+      "address": "\"Igreja da Rainha Santa Isabel, Alto de Stª Clara s/nº, P-3040-270 Coimbra\"",
+      "operatingEvidence": "Site lists 2026 events: masses on 27 and 29 October 2026 and a concert on 29 October; a call for new members posted 8 September 2026 (https://www.rainhasantaisabel.org/).",
+      "hours": "Office hours only: \"Segunda a Sábado: 08h30 às 19h\", Sunday 08h30 to 18h; no separate visiting hours for church, cloister or tomb",
+      "confidence": "high"
+    },
+    {
+      "name": "Teatro Académico de Gil Vicente (TAGV)",
+      "kind": "landmark",
+      "url": "https://www.tagv.pt/",
+      "sourceType": "operator's own site (University of Coimbra theatre)",
+      "address": "\"Praça da República 3000-343 Coimbra\"",
+      "operatingEvidence": "Programme lists \"Coimbra Em Blues: Guadalupe Plata + Ruby Ann\" on Friday 6 November 2026; tickets at tagv.bol.pt and by phone.",
+      "hours": "not published (box office hours not shown)",
+      "confidence": "high"
+    },
+    {
+      "name": "Arquivo Histórico Municipal de Coimbra (Casa Municipal da Cultura)",
+      "kind": "museum",
+      "url": "https://www.coimbra.pt/2026/11/exposicao-percorre-a-evolucao-do-poder-municipal-em-coimbra-desde-a-idade-media/",
+      "sourceType": "official public operator (Câmara Municipal de Coimbra)",
+      "address": "\"Arquivo Histórico Municipal de Coimbra, Casa Municipal da Cultura, Rua Pedro Monteiro\", Coimbra",
+      "operatingEvidence": "Article dated 4 November 2026: exhibition \"Da Vereação à Presidência\" opens 10 November 2026 and runs until December 2027; free admission.",
+      "hours": "Monday to Friday, 10:00-13:00 and 14:00-18:00 (exhibition hours)",
+      "confidence": "high"
+    },
+    {
+      "name": "Parque Verde do Mondego",
+      "kind": "park",
+      "url": "https://www.coimbra.pt/2026/04/camara-conclui-recuperacao-do-urso-do-parque-verde/",
+      "sourceType": "official public operator (Câmara Municipal de Coimbra)",
+      "address": "Park's bear sculpture \"instalado na margem direita do rio Mondego\"; UC Exploratório address \"Rotunda das Lages Parque Verde do Mondego\"",
+      "operatingEvidence": "Council article dated 2 April 2026 on restoring the park's bear sculpture; council article dated 27 September 2026 reports the \"Jogos Sem Fronteiras\" event held in the park.",
+      "hours": "not published (public park)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Quinta das Lágrimas Gardens",
+      "kind": "park",
+      "url": "https://www.quintadaslagrimas.pt/en/services/gardens/1077/",
+      "sourceType": "operator's own site (Hotel Quinta das Lágrimas)",
+      "address": "\"Rua António Augusto Gonçalves, Coimbra, 3041-901\"",
+      "operatingEvidence": "Hotel advertises a \"Christmas Experience 2026\" and \"New Year's Eve Experience 2027\" set amid \"centuries-old gardens\"; gardens page describes \"a world class collection of gardens\".",
+      "hours": "not published; enquiries by phone or reservas@quintadaslagrimas.pt",
+      "confidence": "medium"
+    },
+    {
+      "name": "Café Santa Cruz",
+      "kind": "cafe",
+      "url": "https://www.cafesantacruz.com/",
+      "sourceType": "operator's own site",
+      "address": "\"Praça 8 de Maio, 3000-300 Coimbra\"",
+      "operatingEvidence": "Site lists daily fado sessions (\"Horários: 18h e 22h\", \"Dias: todos os dias\", \"Entrada livre\") and its exclusive Crúzio sweet; latest dated item is the May 2023 centenary.",
+      "hours": "Café hours not published; fado at 18:00 and 22:00 daily, \"aos Domingos não há a sessão das 22h00\" (page with no item newer than 2023)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Café TAGV",
+      "kind": "cafe",
+      "url": "https://www.tagv.pt/",
+      "sourceType": "operator's own site (TAGV)",
+      "address": "At the TAGV, \"Praça da República 3000-343 Coimbra\"",
+      "operatingEvidence": "Listed on the TAGV site with its own phone line (239 052 563) alongside the theatre's November 2026 programme.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Passaporte Coimbra",
+      "kind": "bar",
+      "url": "https://www.passaporte.pt/visitar",
+      "sourceType": "operator's own site",
+      "address": "\"R. da Couraça Estrela 13 3000-433 Coimbra\"",
+      "operatingEvidence": "Site footer \"© 2026 Passaporte Coimbra\"; online \"Reservar\" button, reservas@passaporte.pt and phone bookings; \"Apenas permitida a entrada a maiores de 12 anos\".",
+      "hours": "\"Abertos todos os dias\": restaurant 19h-23h, cocktail bar 17h-02h",
+      "confidence": "high"
+    },
+    {
+      "name": "Arcadas (Quinta das Lágrimas)",
+      "kind": "meal",
+      "url": "https://www.quintadaslagrimas.pt/en/restaurants/restaurante-arcadas/1070/",
+      "sourceType": "operator's own site (Hotel Quinta das Lágrimas)",
+      "address": "\"Rua António Augusto Gonçalves, Coimbra, 3041-901\"",
+      "operatingEvidence": "Table booking via LaFourchette and CoverManager links; linked menu file dated \"jun26\"; describes itself as one of the 500 best restaurants in the world for \"Le Liste\".",
+      "hours": "not published",
+      "confidence": "high"
+    },
+    {
+      "name": "Pedro e Inês (Quinta das Lágrimas)",
+      "kind": "meal",
+      "url": "https://www.quintadaslagrimas.pt/en/restaurants/restaurante-pedro-ines/1071/",
+      "sourceType": "operator's own site (Hotel Quinta das Lágrimas)",
+      "address": "\"Rua António Augusto Gonçalves, Coimbra, 3041-901\"",
+      "operatingEvidence": "\"only open for breakfast and lunch\", with CoverManager table booking; the hotel's current offers include \"Brunch at the Palace\" every Saturday and Sunday, 12:00-15:00, adults €27 (https://www.quintadaslagrimas.pt/en/special-offers/brunch-at-the-palace/1551/).",
+      "hours": "Breakfast and lunch only; times not published",
+      "confidence": "high"
+    },
+    {
+      "name": "Arcadas Gastrobar (Quinta das Lágrimas)",
+      "kind": "bar",
+      "url": "https://www.quintadaslagrimas.pt/en/restaurants/arcadas-gastrobar/1078/",
+      "sourceType": "operator's own site (Hotel Quinta das Lágrimas)",
+      "address": "\"Rua António Augusto Gonçalves, Coimbra, 3041-901\"",
+      "operatingEvidence": "Listed among the hotel's current restaurants (\"To snack\"), set in the hotel bar with \"good wines selected by our team\"; hotel advertises 2026 Christmas offers.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Versátil (Vila Galé Coimbra)",
+      "kind": "meal",
+      "url": "https://www.vilagale.com/pt/hoteis/coimbra/vila-gale-coimbra",
+      "sourceType": "operator's own site (Vila Galé)",
+      "address": "\"Rua Abel Dias Urbano, 20\" \"3000-001 Coimbra\"",
+      "operatingEvidence": "Hotel page (footer © 2026) lists the main restaurant's service times.",
+      "hours": "\"Pequeno-almoço: 07:00 - 10:30\"; \"Almoço: 12:30 - 14:30\"; \"Jantar: 19:30 - 22:00\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Inevitável (Vila Galé Coimbra)",
+      "kind": "meal",
+      "url": "https://www.vilagale.com/pt/hoteis/coimbra/vila-gale-coimbra",
+      "sourceType": "operator's own site (Vila Galé)",
+      "address": "\"Rua Abel Dias Urbano, 20\" \"3000-001 Coimbra\"",
+      "operatingEvidence": "Hotel page (footer © 2026) lists \"Restaurante 'Inevitável - Hamburgueres'\" with service times.",
+      "hours": "\"Almoço: 12:30 - 14:30\"; \"Jantar: 19:30 - 23:00\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bar Fidelio (Vila Galé Coimbra)",
+      "kind": "bar",
+      "url": "https://www.vilagale.com/pt/hoteis/coimbra/vila-gale-coimbra",
+      "sourceType": "operator's own site (Vila Galé)",
+      "address": "\"Rua Abel Dias Urbano, 20\" \"3000-001 Coimbra\"",
+      "operatingEvidence": "Hotel page (footer © 2026): \"Bar 'Fidelio'\" \"está aberto das 10h00 às 00h00.\"",
+      "hours": "10h00-00h00",
+      "confidence": "medium"
+    },
+    {
+      "name": "A Tasca das Tias Camellas (Sapientia Boutique Hotel)",
+      "kind": "meal",
+      "url": "https://www.sapientiahotel.com/a-tasca-das-tias-camellas",
+      "sourceType": "operator's own site (Sapientia Boutique Hotel)",
+      "address": "\"Rua José Falcão Nº4 3000-062, Coimbra\" (https://www.sapientiahotel.com/)",
+      "operatingEvidence": "\"Reservar mesa\" table booking via CoverManager; breakfast \"confecionado a partir dos melhores produtos da Região\". Page carries no current date.",
+      "hours": "\"Almoço: 12h00 às 15h00 | Jantar: 18h30 às 22h30\" (undated page)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Rooftop Bar (Hotel Oslo Coimbra)",
+      "kind": "bar",
+      "url": "https://www.hoteloslo-coimbra.pt/en/services/",
+      "sourceType": "operator's own site (Hotel Oslo)",
+      "address": "\"Av. Fernão de Magalhães, 25\", \"3000-175 Coimbra, Portugal\"",
+      "operatingEvidence": "\"Roof-top Bar\" listed among hotel services as a place for a snack, dinner or nightcap; hotel blog has posts dated 2 November 2026.",
+      "hours": "not published",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Fado ao Centro",
+      "reason": "Official site says it is under maintenance; address shown (\"Rua do Quebra Costas nº 7\") but no show times or current operating evidence.",
+      "url": "https://www.fadoaocentro.com/"
+    },
+    {
+      "name": "À Capella",
+      "reason": "Fetch failed (connection reset) on three attempts; not evidence of closure.",
+      "url": "https://acapella.com.pt/"
+    },
+    {
+      "name": "Museu Nacional de Machado de Castro",
+      "reason": "Official site fetch failed repeatedly (socket closed); not evidence of closure.",
+      "url": "https://www.museumachadocastro.gov.pt/"
+    },
+    {
+      "name": "Monastery of Santa Clara-a-Velha",
+      "reason": "Operator site (culturacentro.gov.pt) failed DNS lookup on repeated attempts; not evidence of closure.",
+      "url": "https://culturacentro.gov.pt/mosteiro-santa-clara-a-velha-en/"
+    },
+    {
+      "name": "Conímbriga Monographic Museum",
+      "reason": "Official site refused the connection; not evidence of closure.",
+      "url": "https://www.conimbriga.gov.pt/"
+    },
+    {
+      "name": "Loggia (Machado de Castro Museum)",
+      "reason": "Own site states \"Encerrado temporariamente\" with no reopening date.",
+      "url": "https://www.loggia.pt/"
+    },
+    {
+      "name": "Convento São Francisco",
+      "reason": "Own site returned 403; council pages (coimbra.pt) confirm a November 2026 programme but give no address for the venue.",
+      "url": "https://www.coimbraconvento.pt/"
+    },
+    {
+      "name": "Mercado Municipal D. Pedro V",
+      "reason": "Council page dated 2 November 2026 lists a November anniversary programme, but no official page read gives the market's address (only \"Localizado no centro da cidade\"); market's own marketplace site returned 403.",
+      "url": "https://www.coimbra.pt/2026/11/coimbra-assinala-159-anos-do-mercado-municipal-d-pedro-v-com-programacao-especial-em-novembro/"
+    },
+    {
+      "name": "Torre de Almedina (Museu Municipal)",
+      "reason": "Council page confirms an exhibition until 22 May 2027 but gives no address or exact location; cm-coimbra.pt returned 403.",
+      "url": "https://www.coimbra.pt/2026/07/exposicao-viajar-e-escrever-coimbra-nos-seculos-xvi-a-xix-inaugura-na-torre-de-almedina-na-proxima-semana/"
+    },
+    {
+      "name": "Edifício Chiado (Museu Municipal)",
+      "reason": "Council pages confirm November 2026 activities but give no address.",
+      "url": "https://www.coimbra.pt/2026/10/museu-municipal-propoe-oficinas-visitas-tematicas-e-novas-formas-de-descobrir-coimbra-em-novembro/"
+    },
+    {
+      "name": "Casa-Museu Miguel Torga",
+      "reason": "Council pages confirm a 2026 exhibition and November events but give no address.",
+      "url": "https://www.coimbra.pt/2026/06/casa-museu-miguel-torga-inaugura-exposicao-dedicada-a-obra-portugal/"
+    },
+    {
+      "name": "Science Museum of the University of Coimbra (Chemistry Laboratory)",
+      "reason": "University tourism pages give hours and 2026 tickets but no address or location beyond a tour meeting point; uc.pt/museudaciencia returned 403.",
+      "url": "https://visit.uc.pt/en/space-list/museu_ciencia-LC"
+    },
+    {
+      "name": "Casa das Caldeiras (Song of Coimbra show)",
+      "reason": "University page describes the show but publishes no address, schedule or dates.",
+      "url": "https://visit.uc.pt/en/space-list/casa_caldeiras"
+    },
+    {
+      "name": "Sé Velha de Coimbra",
+      "reason": "Parish site gives the address (\"Largo da Sé Velha - 3000-383 Coimbra\") but no visiting hours and no content newer than 2016, so no current operating evidence.",
+      "url": "https://www.sevelha-coimbra.org/"
+    },
+    {
+      "name": "Penedo da Saudade",
+      "reason": "Newest council item found is from September 2025; no current-year content or address.",
+      "url": "https://www.coimbra.pt/2025/09/jazz-ao-luar-regressa-ao-penedo-da-saudade-nas-noites-de-setembro/"
+    },
+    {
+      "name": "O Basófias (Mondego boat trip)",
+      "reason": "Operator site redirected to basofias.com, which returned HTTP 500.",
+      "url": "https://www.basofias.com/"
+    },
+    {
+      "name": "Dux Taberna Urbana",
+      "reason": "Probable official site returned a certificate error; not bypassed.",
+      "url": "https://www.duxrestaurante.com/"
+    },
+    {
+      "name": "Pregos & Co",
+      "reason": "Operator group site (bellaciao.pt) returned 403.",
+      "url": "https://bellaciao.pt/restaurante/pregos-co/"
+    },
+    {
+      "name": "Fangas Maior",
+      "reason": "Operator group site (bellaciao.pt) returned 403.",
+      "url": "https://bellaciao.pt/restaurante/fangas-maior/"
+    },
+    {
+      "name": "NH Coimbra Dona Inês (A Garça)",
+      "reason": "Official hotel restaurant page returned 403.",
+      "url": "https://www.nh-hotels.com/en/hotel/nh-coimbra-dona-ines/restaurants"
+    },
+    {
+      "name": "Tosta Rica",
+      "reason": "Official site failed (DNS error on tostarica.pt, SSL error on tosta-rica.com).",
+      "url": "https://www.tosta-rica.com/"
+    },
+    {
+      "name": "Hotel Astória (L'Amphitryon, Bar 21)",
+      "reason": "Official hotel page gives the address but no restaurant or bar details or current operating evidence for them.",
+      "url": "https://www.almeidahotels.pt/en/hotel-astoria-in-coimbra/"
+    },
+    {
+      "name": "Hotel D. Luís restaurant",
+      "reason": "Official site names no restaurant, hours or current content.",
+      "url": "https://www.hoteldluis.pt/"
+    },
+    {
+      "name": "A Padaria Portuguesa",
+      "reason": "Official store list shows no Coimbra branch.",
+      "url": "https://apadariaportuguesa.pt/lojas/"
+    },
+    {
+      "name": "Cafés FEB boutique",
+      "reason": "Official site lists no Coimbra shop address or hours.",
+      "url": "https://www.cafesfeb.com/"
+    },
+    {
+      "name": "Solar do Bacalhau",
+      "reason": "No official website found; only guide and social-media listings, which are not accepted as evidence.",
+      "url": ""
+    },
+    {
+      "name": "Zé Manel dos Ossos",
+      "reason": "No official website found; only third-party listings.",
+      "url": ""
+    },
+    {
+      "name": "Tapas nas Costas",
+      "reason": "No official website found; only a Facebook page and third-party listings.",
+      "url": ""
+    },
+    {
+      "name": "Pastelaria Briosa",
+      "reason": "No official website found; only third-party listings.",
+      "url": ""
+    },
+    {
+      "name": "NAU Coffee",
+      "reason": "No official website found; only Instagram and third-party listings.",
+      "url": ""
+    },
+    {
+      "name": "SAFRA_",
+      "reason": "No official website found; only guide listings.",
+      "url": ""
+    },
+    {
+      "name": "MA Restaurante",
+      "reason": "No official website found; only Instagram and guide listings.",
+      "url": ""
+    },
+    {
+      "name": "Terraço da Alta",
+      "reason": "No official website found; only third-party listings.",
+      "url": ""
+    },
+    {
+      "name": "Fado de Coimbra",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Mondego river walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Convent visit",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "a traditional Portuguese lunch",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coimbra market or cafe",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local dinner in University Hill",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Baixa",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Santa Clara",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in University Hill",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost University Hill walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Baixa",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Santa Clara",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Santa Clara",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for University of Coimbra",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in University Hill",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Fado de Coimbra",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Baixa",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Joanina Library",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "University Hill evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Baixa",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Santa Clara",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through University Hill",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly University of Coimbra",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Baixa",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Santa Clara",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near University Hill",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to University of Coimbra",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "University Hill cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Mondego river walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Santa Clara",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Santa Clara",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond University Hill",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near University Hill",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Baixa bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before University of Coimbra",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Santa Clara",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near University Hill",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Joanina Library",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Santa Clara",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in University Hill",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Baixa",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Santa Clara",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near University Hill",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near University Hill",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Baixa",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Monastery of Santa Clara-a-Nova",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near University Hill",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Baixa morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before University of Coimbra",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Santa Clara",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near University Hill",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Baixa",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Santa Clara",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Joanina Library",
+        "University of Coimbra (Palace of Schools)",
+        "Monastery of Santa Clara-a-Nova (Igreja da Rainha Santa Isabel)",
+        "Botanical Garden of the University of Coimbra"
+      ],
+      "bestFirstTimers": [
+        "University of Coimbra (Palace of Schools)",
+        "Joanina Library",
+        "Saint Michael's Chapel (University of Coimbra)",
+        "Portugal dos Pequenitos"
+      ],
+      "bestRestaurants": [
+        "Arcadas (Quinta das Lágrimas)",
+        "Passaporte Coimbra",
+        "A Tasca das Tias Camellas (Sapientia Boutique Hotel)",
+        "Pedro e Inês (Quinta das Lágrimas)"
+      ],
+      "bestBudget": [
+        "Parque Verde do Mondego",
+        "Arquivo Histórico Municipal de Coimbra (Casa Municipal da Cultura)",
+        "Café Santa Cruz",
+        "Inevitável (Vila Galé Coimbra)"
+      ],
+      "bestLuxury": [
+        "Arcadas (Quinta das Lágrimas)",
+        "Quinta das Lágrimas Gardens",
+        "Pedro e Inês (Quinta das Lágrimas)",
+        "Arcadas Gastrobar (Quinta das Lágrimas)"
+      ],
+      "bestCouples": [
+        "Passaporte Coimbra",
+        "Quinta das Lágrimas Gardens",
+        "Arcadas (Quinta das Lágrimas)",
+        "Rooftop Bar (Hotel Oslo Coimbra)"
+      ],
+      "bestKids": [
+        "Portugal dos Pequenitos",
+        "UC Exploratório",
+        "Parque Verde do Mondego",
+        "Botanical Garden of the University of Coimbra"
+      ],
+      "bestSolo": [
+        "Casa-Museu Bissaya Barreto",
+        "Casa das Artes Bissaya Barreto",
+        "Arquivo Histórico Municipal de Coimbra (Casa Municipal da Cultura)",
+        "Teatro Académico de Gil Vicente (TAGV)"
+      ],
+      "bestUnique": [
+        "Café Santa Cruz",
+        "Casa-Museu Bissaya Barreto",
+        "Monastery of Santa Clara-a-Nova (Igreja da Rainha Santa Isabel)",
+        "Teatro Académico de Gil Vicente (TAGV)"
+      ],
+      "bestBreakfast": [
+        "Versátil (Vila Galé Coimbra)",
+        "Pedro e Inês (Quinta das Lágrimas)",
+        "Café Santa Cruz"
+      ],
+      "bestLunch": [
+        "Pedro e Inês (Quinta das Lágrimas)",
+        "A Tasca das Tias Camellas (Sapientia Boutique Hotel)",
+        "Inevitável (Vila Galé Coimbra)",
+        "Versátil (Vila Galé Coimbra)"
+      ],
+      "bestDinner": [
+        "Arcadas (Quinta das Lágrimas)",
+        "Passaporte Coimbra",
+        "A Tasca das Tias Camellas (Sapientia Boutique Hotel)",
+        "Inevitável (Vila Galé Coimbra)"
+      ],
+      "bestCocktails": [
+        "Passaporte Coimbra",
+        "Rooftop Bar (Hotel Oslo Coimbra)",
+        "Bar Fidelio (Vila Galé Coimbra)",
+        "Arcadas Gastrobar (Quinta das Lágrimas)"
+      ],
+      "bestBakeries": [
+        "Café Santa Cruz"
+      ],
+      "bestCoffee": [
+        "Café Santa Cruz",
+        "Café TAGV",
+        "Bar Fidelio (Vila Galé Coimbra)"
+      ]
+    },
+    "queries": {
+      "University of Coimbra (Palace of Schools)": "Paço das Escolas Rua Larga Coimbra",
+      "Joanina Library": "Biblioteca Joanina Rua Larga Coimbra",
+      "Saint Michael's Chapel (University of Coimbra)": "Capela de São Miguel Paço das Escolas Rua Larga Coimbra",
+      "Botanical Garden of the University of Coimbra": "Jardim Botânico da Universidade de Coimbra Arcos do Jardim Coimbra",
+      "UC Exploratório": "UC Exploratório Rotunda das Lages Parque Verde do Mondego Coimbra",
+      "Portugal dos Pequenitos": "Portugal dos Pequenitos Rossio de Santa Clara Coimbra",
+      "Casa-Museu Bissaya Barreto": "Casa-Museu Bissaya Barreto Rua da Infantaria 23 Coimbra",
+      "Casa das Artes Bissaya Barreto": "Casa das Artes Bissaya Barreto Rua Castro Matoso 17 Coimbra",
+      "Monastery of Santa Clara-a-Nova (Igreja da Rainha Santa Isabel)": "Igreja da Rainha Santa Isabel Alto de Santa Clara Coimbra",
+      "Teatro Académico de Gil Vicente (TAGV)": "Teatro Académico de Gil Vicente Praça da República Coimbra",
+      "Arquivo Histórico Municipal de Coimbra (Casa Municipal da Cultura)": "Casa Municipal da Cultura Rua Pedro Monteiro Coimbra",
+      "Parque Verde do Mondego": "Parque Verde do Mondego Rotunda das Lages Coimbra",
+      "Quinta das Lágrimas Gardens": "Quinta das Lágrimas Rua António Augusto Gonçalves Coimbra",
+      "Café Santa Cruz": "Café Santa Cruz Praça 8 de Maio Coimbra",
+      "Café TAGV": "Café TAGV Praça da República Coimbra",
+      "Passaporte Coimbra": "Passaporte Coimbra Rua da Couraça da Estrela 13 Coimbra",
+      "Arcadas (Quinta das Lágrimas)": "Arcadas Quinta das Lágrimas Rua António Augusto Gonçalves Coimbra",
+      "Pedro e Inês (Quinta das Lágrimas)": "Pedro e Inês Quinta das Lágrimas Rua António Augusto Gonçalves Coimbra",
+      "Arcadas Gastrobar (Quinta das Lágrimas)": "Arcadas Gastrobar Quinta das Lágrimas Rua António Augusto Gonçalves Coimbra",
+      "Versátil (Vila Galé Coimbra)": "Vila Galé Coimbra Rua Abel Dias Urbano 20 Coimbra",
+      "Inevitável (Vila Galé Coimbra)": "Inevitável Vila Galé Coimbra Rua Abel Dias Urbano 20 Coimbra",
+      "Bar Fidelio (Vila Galé Coimbra)": "Bar Fidelio Vila Galé Coimbra Rua Abel Dias Urbano 20 Coimbra",
+      "A Tasca das Tias Camellas (Sapientia Boutique Hotel)": "Sapientia Boutique Hotel Rua José Falcão 4 Coimbra",
+      "Rooftop Bar (Hotel Oslo Coimbra)": "Hotel Oslo Avenida Fernão de Magalhães 25 Coimbra"
+    },
+    "summary": "University monuments, museums, gardens and family sights, with hotel restaurants, cafés and bars checked against their own websites or the public bodies that run them.",
+    "highlights": [
+      "Joanina Library",
+      "University of Coimbra (Palace of Schools)",
+      "Monastery of Santa Clara-a-Nova (Igreja da Rainha Santa Isabel)",
+      "Portugal dos Pequenitos"
+    ],
+    "tip": "Buy your Joanina Library ticket ahead, because it fixes a date and entry time at purchase, and note that the University monuments close on 24, 25 and 31 December 2026 and 1 January 2027, while UC Exploratório closes on Mondays.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mondays and late December",
+        "copy": "The University of Coimbra monuments open every day but close on 24, 25 and 31 December 2026 and 1 January 2027, and UC Exploratório's agenda marks Mondays as closed. Portugal dos Pequenitos lists 25 December as its closing day."
+      },
+      {
+        "label": "Timed tickets",
+        "value": "Joanina Library",
+        "copy": "A Joanina Library ticket carries a date and time chosen at purchase, while other non-guided University tickets stay valid for two days. The Joanina Library + University + Science Museum programme costs €16.50 for adults, and no refunds are accepted."
+      },
+      {
+        "label": "Booking",
+        "value": "Passaporte, Arcadas, weekend brunch",
+        "copy": "Passaporte Coimbra takes restaurant reservations online, by phone or by email, and Arcadas at Quinta das Lágrimas books through LaFourchette or CoverManager. Quinta das Lágrimas serves Brunch at the Palace every Saturday and Sunday from 12:00 to 15:00, bookable by phone or email."
+      },
+      {
+        "label": "House rules",
+        "value": "Photos and age limits",
+        "copy": "Photography and filming are prohibited on the Joanina Library's Noble Floor, and flash is banned inside all University visiting spaces. Passaporte Coimbra admits only guests aged 12 and over."
+      }
+    ],
+    "dek": "Book your Joanina Library slot first, then build the rest of the day around it and the University's 17:00 closing.",
+    "intro": [
+      "Start on the hill at the University of Coimbra, where the ticket office sits on Rua Larga. The Joanina Library, the Royal Palace and Saint Michael's Chapel open every day from 9:00 to 13:00 and 14:00 to 17:00, and a Joanina ticket carries a fixed date and time chosen when you buy it. The Joanina Library + University + Science Museum programme costs €16.50 for adults and is listed as valid until 31 December 2027. Photography and filming are prohibited on the Joanina's Noble Floor, flash is banned in all visiting spaces, and the University closes on 24, 25 and 31 December 2026 and 1 January 2027.",
+      "Below the Palace of Schools, the Botanical Garden of the University of Coimbra keeps winter hours of 9:00 to 17:30 from 1 October to 31 March, and visits go ahead whatever the weather. Facing the garden on Rua da Infantaria, the Casa-Museu Bissaya Barreto opened Marcelo Moscheta's exhibition \"Natura Naturata\" on 31 October 2026, and the Casa das Artes Bissaya Barreto on Rua Castro Matoso opened Ana Frois's \"Pêndulo\" the same afternoon. From 10 November 2026 until December 2027, the Arquivo Histórico Municipal at the Casa Municipal da Cultura shows a free exhibition on Coimbra's municipal government, Monday to Friday.",
+      "Across the Mondego in Santa Clara, Portugal dos Pequenitos sells tickets online and lists 25 December as its closing day, with last entry 30 minutes before closing. UC Exploratório, the University's science centre in the Parque Verde do Mondego, gives hours of 10:00 to 13:00 and 14:00 to 18:00 from Tuesday to Sunday on its agenda and marks Mondays as closed. Higher up stands the Monastery of Santa Clara-a-Nova, home to the Igreja da Rainha Santa Isabel.",
+      "For evenings, Passaporte Coimbra on Rua da Couraça da Estrela opens every day, with the restaurant serving from 19:00 to 23:00 and the cocktail bar running from 17:00 to 02:00; entry is for ages 12 and up. At Quinta das Lágrimas, you can book Arcadas online, while Pedro e Inês opens only for breakfast and lunch and the hotel serves Brunch at the Palace on Saturdays and Sundays from 12:00 to 15:00, at €27 for adults. In the Baixa, Café Santa Cruz's own site lists free fado sessions at 18:00 and 22:00, with no 22:00 session on Sundays, though its newest dated item is from 2023."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Start at the University of Coimbra with a timed Joanina Library ticket, then walk down through the Botanical Garden."
+      ],
+      [
+        "A slower morning",
+        "Take breakfast at Versátil in the Vila Galé Coimbra from 07:00 to 10:30, or book the weekend Brunch at the Palace at Quinta das Lágrimas."
+      ],
+      [
+        "Before booking",
+        "The University monuments close on 24, 25 and 31 December 2026 and 1 January 2027, and UC Exploratório closes on Mondays."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several official sites could not be read: Museu Nacional de Machado de Castro (connection closed), Santa Clara-a-Velha (culturacentro.gov.pt DNS failure), Conímbriga (connection refused), À Capella (connection reset), Convento São Francisco, cm-coimbra.pt, uc.pt/jardimbotanico, uc.pt/museudaciencia, NH Hotels and bellaciao.pt (403), Dux (certificate error) and Basófias (server error); these are not evidence of closure. Mercado Municipal D. Pedro V, Torre de Almedina, Edifício Chiado and Casa-Museu Miguel Torga have current council news but no published address. Many well-known Baixa restaurants, pastry shops and cafés (Solar do Bacalhau, Zé Manel dos Ossos, Pastelaria Briosa, NAU Coffee) have no official website, so no bakery other than Café Santa Cruz could be confirmed. Hours are partial: no times are published for the Casa-Museu, Arcadas, Pedro e Inês, the Hotel Oslo rooftop bar, TAGV's box office or the Quinta das Lágrimas gardens. Portugal dos Pequenitos' hours page is undated, Café Santa Cruz's and UC Exploratório's ticket pages date from 2023, and A Tasca das Tias Camellas' page carries no current date. The University's tourism page describes UC Exploratório as open daily, while UC Exploratório's own agenda lists it as closed on Mondays; this guide follows the venue's own agenda.",
+  "injectionLikeText": [],
+  "injectionLikeTextIgnored": [
+    "2026-11-05: the flagged coimbra.pt Museu Municipal news page (museu-municipal-propoe-oficinas...) is not a source for any confirmed place in the guide, and a second fetch did not reproduce the text, so the flag is ignored."
+  ]
+}

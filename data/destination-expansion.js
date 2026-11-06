@@ -9746,4 +9746,109 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on November 5, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Coimbra, Portugal: source review of 2026-11-05 (docs/content-research/coimbra-2026-11-05.md).
+  {
+    const cityKey = "Coimbra, Portugal";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Joanina Library","University of Coimbra (Palace of Schools)","Monastery of Santa Clara-a-Nova (Igreja da Rainha Santa Isabel)","Botanical Garden of the University of Coimbra"],
+      bestFirstTimers: ["University of Coimbra (Palace of Schools)","Joanina Library","Saint Michael's Chapel (University of Coimbra)","Portugal dos Pequenitos"],
+      bestRestaurants: ["Arcadas (Quinta das Lágrimas)","Passaporte Coimbra","A Tasca das Tias Camellas (Sapientia Boutique Hotel)","Pedro e Inês (Quinta das Lágrimas)"],
+      bestBudget: ["Parque Verde do Mondego","Arquivo Histórico Municipal de Coimbra (Casa Municipal da Cultura)","Café Santa Cruz","Inevitável (Vila Galé Coimbra)"],
+      bestLuxury: ["Arcadas (Quinta das Lágrimas)","Quinta das Lágrimas Gardens","Pedro e Inês (Quinta das Lágrimas)","Arcadas Gastrobar (Quinta das Lágrimas)"],
+      bestCouples: ["Passaporte Coimbra","Quinta das Lágrimas Gardens","Arcadas (Quinta das Lágrimas)","Rooftop Bar (Hotel Oslo Coimbra)"],
+      bestKids: ["Portugal dos Pequenitos","UC Exploratório","Parque Verde do Mondego","Botanical Garden of the University of Coimbra"],
+      bestSolo: ["Casa-Museu Bissaya Barreto","Casa das Artes Bissaya Barreto","Arquivo Histórico Municipal de Coimbra (Casa Municipal da Cultura)","Teatro Académico de Gil Vicente (TAGV)"],
+      bestUnique: ["Café Santa Cruz","Casa-Museu Bissaya Barreto","Monastery of Santa Clara-a-Nova (Igreja da Rainha Santa Isabel)","Teatro Académico de Gil Vicente (TAGV)"],
+      bestBreakfast: ["Versátil (Vila Galé Coimbra)","Pedro e Inês (Quinta das Lágrimas)","Café Santa Cruz"],
+      bestLunch: ["Pedro e Inês (Quinta das Lágrimas)","A Tasca das Tias Camellas (Sapientia Boutique Hotel)","Inevitável (Vila Galé Coimbra)","Versátil (Vila Galé Coimbra)"],
+      bestDinner: ["Arcadas (Quinta das Lágrimas)","Passaporte Coimbra","A Tasca das Tias Camellas (Sapientia Boutique Hotel)","Inevitável (Vila Galé Coimbra)"],
+      bestCocktails: ["Passaporte Coimbra","Rooftop Bar (Hotel Oslo Coimbra)","Bar Fidelio (Vila Galé Coimbra)","Arcadas Gastrobar (Quinta das Lágrimas)"],
+      bestBakeries: ["Café Santa Cruz"],
+      bestCoffee: ["Café Santa Cruz","Café TAGV","Bar Fidelio (Vila Galé Coimbra)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Joanina Library": "Biblioteca Joanina Rua Larga Coimbra",
+      "University of Coimbra (Palace of Schools)": "Paço das Escolas Rua Larga Coimbra",
+      "Monastery of Santa Clara-a-Nova (Igreja da Rainha Santa Isabel)": "Igreja da Rainha Santa Isabel Alto de Santa Clara Coimbra",
+      "Botanical Garden of the University of Coimbra": "Jardim Botânico da Universidade de Coimbra Arcos do Jardim Coimbra",
+      "Saint Michael's Chapel (University of Coimbra)": "Capela de São Miguel Paço das Escolas Rua Larga Coimbra",
+      "Portugal dos Pequenitos": "Portugal dos Pequenitos Rossio de Santa Clara Coimbra",
+      "Arcadas (Quinta das Lágrimas)": "Arcadas Quinta das Lágrimas Rua António Augusto Gonçalves Coimbra",
+      "Passaporte Coimbra": "Passaporte Coimbra Rua da Couraça da Estrela 13 Coimbra",
+      "A Tasca das Tias Camellas (Sapientia Boutique Hotel)": "Sapientia Boutique Hotel Rua José Falcão 4 Coimbra",
+      "Pedro e Inês (Quinta das Lágrimas)": "Pedro e Inês Quinta das Lágrimas Rua António Augusto Gonçalves Coimbra",
+      "Parque Verde do Mondego": "Parque Verde do Mondego Rotunda das Lages Coimbra",
+      "Arquivo Histórico Municipal de Coimbra (Casa Municipal da Cultura)": "Casa Municipal da Cultura Rua Pedro Monteiro Coimbra",
+      "Café Santa Cruz": "Café Santa Cruz Praça 8 de Maio Coimbra",
+      "Inevitável (Vila Galé Coimbra)": "Inevitável Vila Galé Coimbra Rua Abel Dias Urbano 20 Coimbra",
+      "Quinta das Lágrimas Gardens": "Quinta das Lágrimas Rua António Augusto Gonçalves Coimbra",
+      "Arcadas Gastrobar (Quinta das Lágrimas)": "Arcadas Gastrobar Quinta das Lágrimas Rua António Augusto Gonçalves Coimbra",
+      "Rooftop Bar (Hotel Oslo Coimbra)": "Hotel Oslo Avenida Fernão de Magalhães 25 Coimbra",
+      "UC Exploratório": "UC Exploratório Rotunda das Lages Parque Verde do Mondego Coimbra",
+      "Casa-Museu Bissaya Barreto": "Casa-Museu Bissaya Barreto Rua da Infantaria 23 Coimbra",
+      "Casa das Artes Bissaya Barreto": "Casa das Artes Bissaya Barreto Rua Castro Matoso 17 Coimbra",
+      "Teatro Académico de Gil Vicente (TAGV)": "Teatro Académico de Gil Vicente Praça da República Coimbra",
+      "Versátil (Vila Galé Coimbra)": "Vila Galé Coimbra Rua Abel Dias Urbano 20 Coimbra",
+      "Bar Fidelio (Vila Galé Coimbra)": "Bar Fidelio Vila Galé Coimbra Rua Abel Dias Urbano 20 Coimbra",
+      "Café TAGV": "Café TAGV Praça da República Coimbra"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Coimbra" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "University monuments, museums, gardens and family sights, with hotel restaurants, cafés and bars checked against their own websites or the public bodies that run them.";
+    cityGuide.highlights = ["Joanina Library","University of Coimbra (Palace of Schools)","Monastery of Santa Clara-a-Nova (Igreja da Rainha Santa Isabel)","Portugal dos Pequenitos"];
+    cityGuide.tip = "Buy your Joanina Library ticket ahead, because it fixes a date and entry time at purchase, and note that the University monuments close on 24, 25 and 31 December 2026 and 1 January 2027, while UC Exploratório closes on Mondays.";
+    data.destinationFacts[cityKey] = "Buy your Joanina Library ticket ahead, because it fixes a date and entry time at purchase, and note that the University monuments close on 24, 25 and 31 December 2026 and 1 January 2027, while UC Exploratório closes on Mondays.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "University monuments, museums, gardens and family sights, with hotel restaurants, cafés and bars checked against their own websites or the public bodies that run them.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays and late December",
+        "copy": "The University of Coimbra monuments open every day but close on 24, 25 and 31 December 2026 and 1 January 2027, and UC Exploratório's agenda marks Mondays as closed. Portugal dos Pequenitos lists 25 December as its closing day."
+      },
+      {
+        "label": "Timed tickets",
+        "value": "Joanina Library",
+        "copy": "A Joanina Library ticket carries a date and time chosen at purchase, while other non-guided University tickets stay valid for two days. The Joanina Library + University + Science Museum programme costs €16.50 for adults, and no refunds are accepted."
+      },
+      {
+        "label": "Booking",
+        "value": "Passaporte, Arcadas, weekend brunch",
+        "copy": "Passaporte Coimbra takes restaurant reservations online, by phone or by email, and Arcadas at Quinta das Lágrimas books through LaFourchette or CoverManager. Quinta das Lágrimas serves Brunch at the Palace every Saturday and Sunday from 12:00 to 15:00, bookable by phone or email."
+      },
+      {
+        "label": "House rules",
+        "value": "Photos and age limits",
+        "copy": "Photography and filming are prohibited on the Joanina Library's Noble Floor, and flash is banned inside all University visiting spaces. Passaporte Coimbra admits only guests aged 12 and over."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Book your Joanina Library slot first, then build the rest of the day around it and the University's 17:00 closing.",
+      intro: [
+        "Start on the hill at the University of Coimbra, where the ticket office sits on Rua Larga. The Joanina Library, the Royal Palace and Saint Michael's Chapel open every day from 9:00 to 13:00 and 14:00 to 17:00, and a Joanina ticket carries a fixed date and time chosen when you buy it. The Joanina Library + University + Science Museum programme costs €16.50 for adults and is listed as valid until 31 December 2027. Photography and filming are prohibited on the Joanina's Noble Floor, flash is banned in all visiting spaces, and the University closes on 24, 25 and 31 December 2026 and 1 January 2027.",
+        "Below the Palace of Schools, the Botanical Garden of the University of Coimbra keeps winter hours of 9:00 to 17:30 from 1 October to 31 March, and visits go ahead whatever the weather. Facing the garden on Rua da Infantaria, the Casa-Museu Bissaya Barreto opened Marcelo Moscheta's exhibition \"Natura Naturata\" on 31 October 2026, and the Casa das Artes Bissaya Barreto on Rua Castro Matoso opened Ana Frois's \"Pêndulo\" the same afternoon. From 10 November 2026 until December 2027, the Arquivo Histórico Municipal at the Casa Municipal da Cultura shows a free exhibition on Coimbra's municipal government, Monday to Friday.",
+        "Across the Mondego in Santa Clara, Portugal dos Pequenitos sells tickets online and lists 25 December as its closing day, with last entry 30 minutes before closing. UC Exploratório, the University's science centre in the Parque Verde do Mondego, gives hours of 10:00 to 13:00 and 14:00 to 18:00 from Tuesday to Sunday on its agenda and marks Mondays as closed. Higher up stands the Monastery of Santa Clara-a-Nova, home to the Igreja da Rainha Santa Isabel.",
+        "For evenings, Passaporte Coimbra on Rua da Couraça da Estrela opens every day, with the restaurant serving from 19:00 to 23:00 and the cocktail bar running from 17:00 to 02:00; entry is for ages 12 and up. At Quinta das Lágrimas, you can book Arcadas online, while Pedro e Inês opens only for breakfast and lunch and the hotel serves Brunch at the Palace on Saturdays and Sundays from 12:00 to 15:00, at €27 for adults. In the Baixa, Café Santa Cruz's own site lists free fado sessions at 18:00 and 22:00, with no 22:00 session on Sundays, though its newest dated item is from 2023."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Start at the University of Coimbra with a timed Joanina Library ticket, then walk down through the Botanical Garden."
+        ],
+        [
+          "A slower morning",
+          "Take breakfast at Versátil in the Vila Galé Coimbra from 07:00 to 10:30, or book the weekend Brunch at the Palace at Quinta das Lágrimas."
+        ],
+        [
+          "Before booking",
+          "The University monuments close on 24, 25 and 31 December 2026 and 1 January 2027, and UC Exploratório closes on Mondays."
+        ]
+      ],
+      trust: "All 24 distinct recommendations in this guide were checked against their operators' own websites on November 5, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();
