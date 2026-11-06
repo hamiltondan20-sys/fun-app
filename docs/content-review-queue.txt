@@ -51,3 +51,65 @@ Killarney, Ireland
 Palermo, Italy
 Sharm El Sheikh, Egypt
 Orlando, United States
+# Added 2026-11-05: remaining published city guides, then major cities held back for thin content
+# (a source review is what lets those publish).
+Lhasa, China
+Santorini, Greece
+Mykonos, Greece
+Surfers Paradise, Australia
+Chicago, United States
+Washington, D.C., United States
+San Diego, United States
+Seattle, United States
+New Orleans, United States
+Philadelphia, United States
+Nashville, United States
+Stockholm, Sweden
+Oslo, Norway
+Helsinki, Finland
+Brussels, Belgium
+Bruges, Belgium
+Valencia, Spain
+Warsaw, Poland
+Dubrovnik, Croatia
+Salzburg, Austria
+Geneva, Switzerland
+Chiang Mai, Thailand
+Ho Chi Minh City, Vietnam
+Doha, Qatar
+Muscat, Oman
+Tel Aviv, Israel
+Havana, Cuba
+Bogota, Colombia
+Medellin, Colombia
+Quebec City, Canada
+Ottawa, Canada
+Wellington, New Zealand
+Perth, Australia
+Brisbane, Australia
+Kobe, Japan
+Kanazawa, Japan
+Yokohama, Japan
+Macau, China
+Gdansk, Poland
+Dresden, Germany
+Frankfurt, Germany
+Rotterdam, Netherlands
+Antwerp, Belgium
+Ghent, Belgium
+San Sebastian, Spain
+Toledo, Spain
+Cordoba, Spain
+Sintra, Portugal
+Bergen, Norway
+Belfast, United Kingdom
+Cambridge, United Kingdom
+Glasgow, United Kingdom
+Manchester, United Kingdom
+Cork, Ireland
+Zagreb, Croatia
+Turin, Italy
+Sorrento, Italy
+Merida, Mexico
+San Miguel de Allende, Mexico
+Arequipa, Peru
