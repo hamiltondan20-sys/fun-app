@@ -5,6 +5,745 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Da Nang, Vietnam": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-11-17",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several sites could not be read: Highlands Coffee, Starbucks, Hyatt and Hilton returned 403; Pizza 4P's had a certificate error; Bread of Life, Nén Danang and Naman Retreat did not resolve; Tous les Jours and Hải Sản Bé Mặn refused connections; the KATINAT store list did not load. Some confirmed places are published only partially: Marble Mountains, the InterContinental restaurants and bar, Olivia's Prime, Novotel and TIA give no opening hours; Da Nang Cathedral is confirmed only through the diocese site at the same address, without Mass times; Ba Hưng Bakery states one set of hours for all branches; the Pullman Infinity Bar's general hours were cut off; Furama's booking hours come from a restaurants page dated 30 May 2025; and Reaching Out's hours come from a location page that also carries an older Tết notice. Hội An places are now within Da Nang city, as the operators' own addresses show. Several fetch summaries reported AI-directed text that matched this review's own request wording, so it was treated as a tool artefact rather than page content.",
+    "sourceUrls": [
+      "docs/content-research/da-nang-2026-11-17.md",
+      "docs/content-research/da-nang-2026-11-17.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Mi Quang lunch",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Fresh seafood dinner",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A riverside coffee stop",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Han River",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Son Tra",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in My Khe",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost My Khe walk",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Han River",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Son Tra",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Son Tra",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for My Khe Beach",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in My Khe",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Son Tra peninsula drive",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Han River",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Marble Mountains",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "My Khe evening",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Han River",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Son Tra",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through My Khe",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly My Khe Beach",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Han River",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Son Tra",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near My Khe",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to My Khe Beach",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "My Khe cafe or market",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Marble Mountains early",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Son Tra",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Son Tra",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond My Khe",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near My Khe",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Han River bakery or market",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before My Khe Beach",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Son Tra",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near My Khe",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Marble Mountains",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Son Tra",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in My Khe",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Han River",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Son Tra",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near My Khe",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near My Khe",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Han River",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Hoi An day trip",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near My Khe",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Han River morning market",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before My Khe Beach",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Son Tra",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near My Khe",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Han River",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Son Tra",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "My Khe Beach",
+        "checkedOn": "2026-11-17",
+        "reason": "public beach; no operator or public-body page with address and current notices was read"
+      },
+      {
+        "name": "Son Tra peninsula drive",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place (a route, no operator)"
+      },
+      {
+        "name": "Hoi An day trip",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Lantern-lit Hoi An evening",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Marble Mountains early",
+        "checkedOn": "2026-11-17",
+        "reason": "duplicate of Marble Mountains (confirmed separately)"
+      },
+      {
+        "name": "Hoi An Ancient Town",
+        "url": "https://hoianworldheritage.org.vn/",
+        "checkedOn": "2026-11-17",
+        "reason": "heritage centre site (dated 2026 news) publishes no ticket, hours or visitor address for the old town; its contact page redirects to http"
+      },
+      {
+        "name": "chammuseum.danang.vn",
+        "url": "https://chammuseum.danang.vn/",
+        "checkedOn": "2026-11-17",
+        "reason": "domain now shows an unrelated travel company, not the museum; museum confirmed via chammuseum.vn instead"
+      },
+      {
+        "name": "Waterfront Da Nang",
+        "url": "https://waterfrontdanang.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "street address cut off on page and no 2026 content (footer © 2014-2018); page lists Tuesday–Sunday hours"
+      },
+      {
+        "name": "Pizza 4P's (Da Nang)",
+        "url": "https://www.pizza4ps.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "certificate error (hostname does not match certificate); not bypassed"
+      },
+      {
+        "name": "Bread of Life",
+        "url": "https://www.breadoflifedanang.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "site did not resolve (DNS failure)"
+      },
+      {
+        "name": "Nén Danang",
+        "url": "https://nenrestaurant.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "site did not resolve (DNS failure)"
+      },
+      {
+        "name": "Cộng Cà Phê (Da Nang)",
+        "url": "https://congcaphe.com/stores",
+        "checkedOn": "2026-11-17",
+        "reason": "stores page names four Da Nang stores but gives no addresses or hours"
+      },
+      {
+        "name": "KATINAT (Da Nang)",
+        "url": "https://katinat.vn/cua-hang-2/",
+        "checkedOn": "2026-11-17",
+        "reason": "store locator did not load (\"Đang tải...\"); no Da Nang address readable"
+      },
+      {
+        "name": "Highlands Coffee (Da Nang)",
+        "url": "https://www.highlandscoffee.com.vn/",
+        "checkedOn": "2026-11-17",
+        "reason": "403 Forbidden"
+      },
+      {
+        "name": "Starbucks (Da Nang)",
+        "url": "https://www.starbucks.vn/",
+        "checkedOn": "2026-11-17",
+        "reason": "403 Forbidden"
+      },
+      {
+        "name": "Hyatt Regency Danang Resort and Spa",
+        "url": "https://www.hyatt.com/hyatt-regency/en-US/danrd-hyatt-regency-danang-resort-and-spa",
+        "checkedOn": "2026-11-17",
+        "reason": "403 Forbidden"
+      },
+      {
+        "name": "Hilton Da Nang",
+        "url": "https://www.hilton.com/en/hotels/dadhihi-hilton-da-nang/",
+        "checkedOn": "2026-11-17",
+        "reason": "403 Forbidden"
+      },
+      {
+        "name": "ABC Bakery (Da Nang)",
+        "url": "https://abcbakery.co/",
+        "checkedOn": "2026-11-17",
+        "reason": "no Da Nang store address or 2026 content on site"
+      },
+      {
+        "name": "BonPas Bakery & Cafe",
+        "url": "https://bonpasbakery.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "2026 posts present but only the registered office address is published; no store address or hours"
+      },
+      {
+        "name": "Le Bordeaux Bakery",
+        "url": "https://lebordeauxbakery.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "no store address and no 2026 content (© 2024)"
+      },
+      {
+        "name": "The Local Beans",
+        "url": "https://www.thelocalbeans.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "Da Nang addresses listed but no hours or current/2026 operating evidence"
+      },
+      {
+        "name": "Phúc Long (Da Nang)",
+        "url": "https://phuclong.com.vn/",
+        "checkedOn": "2026-11-17",
+        "reason": "page returned only a title, nothing readable"
+      },
+      {
+        "name": "Trung Nguyên Legend Café (Da Nang)",
+        "url": "https://trungnguyenlegend.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "no Da Nang store listed"
+      },
+      {
+        "name": "Tous les Jours (Da Nang)",
+        "url": "https://www.touslesjours.com.vn/",
+        "checkedOn": "2026-11-17",
+        "reason": "connection refused"
+      },
+      {
+        "name": "Mikazuki Water Park 365",
+        "url": "https://mikazukiwaterpark.com/vi",
+        "checkedOn": "2026-11-17",
+        "reason": "no hours, rules or 2026 content readable; only company address; ticket site redirects to http"
+      },
+      {
+        "name": "Sun World Da Nang Downtown (Asia Park)",
+        "url": "https://asiapark.sunworld.vn/",
+        "checkedOn": "2026-11-17",
+        "reason": "asiapark.sunworld.vn redirects to a page returning 404"
+      },
+      {
+        "name": "À La Carte Danang Beach (rooftop bar)",
+        "url": "https://www.alacartedanangbeach.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "page dominated by unrelated casino spam; no address, venue or hours readable"
+      },
+      {
+        "name": "Hải Sản Bé Mặn",
+        "url": "https://haisanbeman.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "connection refused"
+      },
+      {
+        "name": "Naman Retreat",
+        "url": "https://www.namanretreat.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "site did not resolve (DNS failure)"
+      },
+      {
+        "name": "Premier Village Danang Resort",
+        "url": "https://www.premier-village-danang.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "410 Gone"
+      },
+      {
+        "name": "Fusion Resort & Villas Da Nang",
+        "url": "https://fusionresorts.com/home/",
+        "checkedOn": "2026-11-17",
+        "reason": "group site gives no Da Nang address and no dated 2026 text; contains unrelated gambling ads"
+      },
+      {
+        "name": "VinWonders Nam Hội An",
+        "url": "https://vinwonders.com/vi/vinwonders-nam-hoi-an/",
+        "checkedOn": "2026-11-17",
+        "reason": "2026 offers and hours published but no street address for the park"
+      },
+      {
+        "name": "Morning Glory (Hội An)",
+        "url": "https://beta.tastevietnam.asia/",
+        "checkedOn": "2026-11-17",
+        "reason": "group page gives one group address and no per-venue address or hours"
+      },
+      {
+        "name": "Reaching Out Teahouse",
+        "url": "https://reachingoutvietnam.com/teahouse-location/",
+        "checkedOn": "2026-11-17",
+        "reason": "teahouse location page returned 404"
+      },
+      {
+        "name": "Han Market",
+        "checkedOn": "2026-11-17",
+        "reason": "no official market-board website found"
+      },
+      {
+        "name": "Linh Ung Pagoda (Son Tra)",
+        "checkedOn": "2026-11-17",
+        "reason": "no official website found"
+      },
+      {
+        "name": "Mì Quảng Bà Mua",
+        "checkedOn": "2026-11-17",
+        "reason": "no official website found (listings and Facebook only)"
+      },
+      {
+        "name": "Bếp Cuốn",
+        "checkedOn": "2026-11-17",
+        "reason": "no official website found (Facebook only)"
+      },
+      {
+        "name": "Brilliant Top Bar",
+        "checkedOn": "2026-11-17",
+        "reason": "no official website found"
+      },
+      {
+        "name": "Danang Souvenirs & Cafe",
+        "checkedOn": "2026-11-17",
+        "reason": "no official website found"
+      }
+    ],
+    "placeSources": {
+      "Museum of Cham Sculpture": {
+        "url": "https://chammuseum.vn/",
+        "sourceType": "official public operator (museum site with danang.gov.vn contact addresses)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Dated 2026 news, including the opening of the themed exhibition \"Dấu ấn văn hóa Chăm ở Lâm Đồng\" (posted 30/07/2026) and an event held in the museum hall on 19/10/2026. Admission listed as \"60.000 đồng/người/lượt\"."
+      },
+      "Da Nang Museum (31 Trần Phú)": {
+        "url": "https://baotangdanang.vn/",
+        "sourceType": "official public operator (Bảo tàng Đà Nẵng)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "News dated October 2026, including coverage of the 150th anniversary of Huỳnh Thúc Kháng's birth (article dated 15/10/2026); a ticket price schedule in force since 03/7/2025."
+      },
+      "Da Nang Fine Arts Museum": {
+        "url": "https://baotangdanang.vn/",
+        "sourceType": "official public operator (Bảo tàng Đà Nẵng)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Listed with daily hours on the museum authority's current site, which posted the women artists' exhibition \"Duyên sắc ba miền\" on 26/10/2026 (venue not named)."
+      },
+      "Da Nang Museum (Branch 2, 281 Phan Bội Châu)": {
+        "url": "https://baotangdanang.vn/",
+        "sourceType": "official public operator (Bảo tàng Đà Nẵng)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Article dated 28/10/2026 on a botanical exhibition and seminar at Branch 2, opened on the morning of 06/10/2026 with the Vietnam National Museum of Nature."
+      },
+      "Ba Na Hills": {
+        "url": "https://sunworld.vn/vi/banahills",
+        "sourceType": "operator's own site (Sun World)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "News dated 02/11–17/11/2026, including the \"Dream Town\" Christmas village; ticket booking via booking.sunworld.vn; hotline \"1800 1000 hoặc 0905 766 777\". Page warns hours \"có thể thay đổi\"."
+      },
+      "Marble Mountains (Ngũ Hành Sơn)": {
+        "url": "https://nguhanhson.org/",
+        "sourceType": "official public operator (Ngu Hanh Son Relic and Landscape Management Board)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "2026 news including the Vu Lan festival opening (21/08/2026) and a notice dated 03/11/2026 about changing the centralised ticket-sales point."
+      },
+      "Da Nang Cathedral": {
+        "url": "https://giaophandanang.org/",
+        "sourceType": "official operator (Diocese of Da Nang)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Diocesan news dated November 2026, including the All Saints Mass at the cathedral (2 Nov 2026)."
+      },
+      "Madame Lân": {
+        "url": "https://madamelan.vn/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Online table booking (/dat-cho, parties of 1 to 99); states \"Michelin Selected trong 3 năm liên tiếp 2024 - 2026\"."
+      },
+      "Sky36": {
+        "url": "https://sky36.vn/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Blog posts dated February–July 2026; table booking via hotline +84 901 151 536, Zalo or the \"ĐẶT BÀN NGAY\" button."
+      },
+      "La Maison 1888": {
+        "url": "https://danang.intercontinental.com/",
+        "sourceType": "operator's own site (InterContinental Danang Sun Peninsula Resort)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Described as \"Our signature One Michelin Star dining experience\" with a MICHELIN Guide 2026 emblem; bookable through the resort's dining enquiry form (+84 236 393 8888)."
+      },
+      "Citron": {
+        "url": "https://danang.intercontinental.com/",
+        "sourceType": "operator's own site (InterContinental Danang Sun Peninsula Resort)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Listed in the current dining enquiry form; serves regional Vietnamese dishes from the north, centre and south. Site promotes \"Festive 2026\"."
+      },
+      "The Long Bar": {
+        "url": "https://danang.intercontinental.com/",
+        "sourceType": "operator's own site (InterContinental Danang Sun Peninsula Resort)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "\"50 meters of fun! Cocktails, wine and light bites\"; bookable in the current dining enquiry form."
+      },
+      "Furama Resort Danang": {
+        "url": "https://www.furamavietnam.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Packages valid \"From now until 31/12/2026\" and Festive Season 2026 pages. Eight restaurants and bars listed, including Cafe Indochine and Hai Van Lounge."
+      },
+      "Novotel Danang Premier Han River": {
+        "url": "https://www.novotel-danang-premier.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "\"Festive Season 2026\" offers incl. Christmas Eve buffet from VND 1,480,000; breakfast buffet \"VND 470,000 net / guest\", children 6–12 \"235,000 net / child\". Venues: The Square, GourmetBar, The Balcony."
+      },
+      "Olivia's Prime Steakhouse (Indochina Mall)": {
+        "url": "https://www.oliviasprime.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "\"Selected by the MICHELIN Guide 2024 • 2025 • 2026\"; reservation link and phone +84 908 163 352."
+      },
+      "Ba Hưng Bakery (16 Phan Đăng Lưu)": {
+        "url": "https://bahungbakery.com.vn/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current article \"Bảng Giá Bánh Trung Đà Nẵng 2026 - Ba Hưng Bakery\" (2026 mooncake price list)."
+      },
+      "TIA Wellness Resort": {
+        "url": "https://tiawellnessresort.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Autumn offer bookable direct for stays \"until 22 December 2026\"; Wellness Inclusive includes \"two wellness treatments per night (a total of 80 minutes per person)\"."
+      },
+      "XLIII Coffee Đà Nẵng (Ngô Thì Sĩ)": {
+        "url": "https://43factory.coffee/dia-diem/",
+        "sourceType": "operator's own site (43 Factory)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current locations page with hours; shop sells 2026-harvest lots (e.g. \"santa-lucia-casona-gesha-2026\")."
+      },
+      "XLIII Coffee Hội An (Lý Thường Kiệt)": {
+        "url": "https://43factory.coffee/dia-diem/",
+        "sourceType": "operator's own site (43 Factory)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Listed on the current locations page using post-2025 ward names, with hours; shop sells 2026-harvest lots."
+      },
+      "Restaurant Epice (Pullman Danang Beach Resort)": {
+        "url": "https://www.pullman-danang.com/restaurants-bars/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Christmas Eve Buffet on Thursday, 24 December 2026, 5:30–9:30 PM at Epice; Hot Stone Seafood live cooking; Vietnamese cooking class Monday to Friday."
+      },
+      "Infinity Bar (Pullman Danang Beach Resort)": {
+        "url": "https://www.pullman-danang.com/restaurants-bars/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Lobby lounge with current offers: Pullman Afternoon Tea 1:00–5:00 PM and a Vietnamese coffee-making class 10:00 AM–5:00 PM."
+      },
+      "Azure Beach Lounge (Pullman Danang Beach Resort)": {
+        "url": "https://www.pullman-danang.com/restaurants-bars/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Resort beach club with current Seaside Grill Escape and Sea Fire Salt offers, plus private BBQ with a private chef."
+      },
+      "Hoi An Roastery 1 (135 Trần Phú)": {
+        "url": "https://hoianroastery.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Main branch listed with daily hours and phone on the current site (\"© 2026 Hoi An Roastery\")."
+      },
+      "Reaching Out Arts & Crafts (131 Trần Phú, Hội An)": {
+        "url": "https://reachingoutvietnam.com/location/",
+        "sourceType": "operator's own site (Reaching Out Vietnam)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Craft shop whose \"disabled artisans take pride in their work\"; site footer \"© 2026 Reaching Out Vietnam\". The location page also carries an older Tết notice, so its date is uncertain."
+      }
+    }
+  },
   "Manila, Philippines": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-11-17",

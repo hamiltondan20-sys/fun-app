@@ -10717,4 +10717,109 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 27 distinct recommendations in this guide were checked against their operators' own websites on November 17, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Da Nang, Vietnam: source review of 2026-11-17 (docs/content-research/da-nang-2026-11-17.md).
+  {
+    const cityKey = "Da Nang, Vietnam";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Marble Mountains (Ngũ Hành Sơn)","Ba Na Hills","Museum of Cham Sculpture","Da Nang Cathedral"],
+      bestFirstTimers: ["Museum of Cham Sculpture","Marble Mountains (Ngũ Hành Sơn)","Ba Na Hills","Da Nang Museum (31 Trần Phú)"],
+      bestRestaurants: ["Madame Lân","La Maison 1888","Olivia's Prime Steakhouse (Indochina Mall)","Citron"],
+      bestBudget: ["Museum of Cham Sculpture","Da Nang Museum (31 Trần Phú)","Ba Hưng Bakery (16 Phan Đăng Lưu)","Da Nang Cathedral"],
+      bestLuxury: ["La Maison 1888","TIA Wellness Resort","Furama Resort Danang","Sky36"],
+      bestCouples: ["Sky36","Infinity Bar (Pullman Danang Beach Resort)","Azure Beach Lounge (Pullman Danang Beach Resort)","TIA Wellness Resort"],
+      bestKids: ["Ba Na Hills","Novotel Danang Premier Han River","Da Nang Museum (Branch 2, 281 Phan Bội Châu)"],
+      bestSolo: ["Da Nang Fine Arts Museum","XLIII Coffee Đà Nẵng (Ngô Thì Sĩ)","Reaching Out Arts & Crafts (131 Trần Phú, Hội An)","Hoi An Roastery 1 (135 Trần Phú)"],
+      bestUnique: ["Reaching Out Arts & Crafts (131 Trần Phú, Hội An)","Marble Mountains (Ngũ Hành Sơn)","Da Nang Museum (Branch 2, 281 Phan Bội Châu)","Da Nang Fine Arts Museum"],
+      bestBreakfast: ["Madame Lân","Novotel Danang Premier Han River","XLIII Coffee Đà Nẵng (Ngô Thì Sĩ)"],
+      bestLunch: ["Madame Lân","Restaurant Epice (Pullman Danang Beach Resort)","Citron","Azure Beach Lounge (Pullman Danang Beach Resort)"],
+      bestDinner: ["La Maison 1888","Olivia's Prime Steakhouse (Indochina Mall)","Restaurant Epice (Pullman Danang Beach Resort)","Madame Lân"],
+      bestCocktails: ["Sky36","The Long Bar","Infinity Bar (Pullman Danang Beach Resort)"],
+      bestBakeries: ["Ba Hưng Bakery (16 Phan Đăng Lưu)"],
+      bestCoffee: ["XLIII Coffee Đà Nẵng (Ngô Thì Sĩ)","XLIII Coffee Hội An (Lý Thường Kiệt)","Hoi An Roastery 1 (135 Trần Phú)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Marble Mountains (Ngũ Hành Sơn)": "Marble Mountains 81 Huyền Trân Công Chúa Da Nang",
+      "Ba Na Hills": "Ba Na Hills Bà Nà Da Nang",
+      "Museum of Cham Sculpture": "Museum of Cham Sculpture 02 2 Tháng 9 Da Nang",
+      "Da Nang Cathedral": "Da Nang Cathedral 156 Trần Phú Da Nang",
+      "Da Nang Museum (31 Trần Phú)": "Da Nang Museum 31 Trần Phú Da Nang",
+      "Madame Lân": "Madame Lân 4 Bạch Đằng Da Nang",
+      "La Maison 1888": "La Maison 1888 InterContinental Danang Sun Peninsula Resort Son Tra Da Nang",
+      "Olivia's Prime Steakhouse (Indochina Mall)": "Olivia's Prime Steakhouse 74 Bạch Đằng Da Nang",
+      "Citron": "Citron InterContinental Danang Sun Peninsula Resort Son Tra Da Nang",
+      "Ba Hưng Bakery (16 Phan Đăng Lưu)": "Ba Hưng Bakery 16 Phan Đăng Lưu Da Nang",
+      "TIA Wellness Resort": "TIA Wellness Resort 109 Võ Nguyên Giáp Da Nang",
+      "Furama Resort Danang": "Furama Resort Danang 103 Võ Nguyên Giáp Da Nang",
+      "Sky36": "Sky36 36 Bạch Đằng Da Nang",
+      "Infinity Bar (Pullman Danang Beach Resort)": "Infinity Bar Pullman 101 Võ Nguyên Giáp Da Nang",
+      "Azure Beach Lounge (Pullman Danang Beach Resort)": "Azure Beach Lounge Pullman 101 Võ Nguyên Giáp Da Nang",
+      "Novotel Danang Premier Han River": "Novotel Danang Premier Han River 36 Bạch Đằng Da Nang",
+      "Da Nang Museum (Branch 2, 281 Phan Bội Châu)": "Bảo tàng Đà Nẵng 281 Phan Bội Châu Da Nang",
+      "Da Nang Fine Arts Museum": "Da Nang Fine Arts Museum 78 Lê Duẩn Da Nang",
+      "XLIII Coffee Đà Nẵng (Ngô Thì Sĩ)": "XLIII Coffee 422 Ngô Thì Sĩ Da Nang",
+      "Reaching Out Arts & Crafts (131 Trần Phú, Hội An)": "Reaching Out Arts & Crafts 131 Trần Phú Hội An Da Nang",
+      "Hoi An Roastery 1 (135 Trần Phú)": "Hoi An Roastery 135 Trần Phú Hội An Da Nang",
+      "Restaurant Epice (Pullman Danang Beach Resort)": "Restaurant Epice Pullman 101 Võ Nguyên Giáp Da Nang",
+      "The Long Bar": "The Long Bar InterContinental Danang Sun Peninsula Resort Son Tra Da Nang",
+      "XLIII Coffee Hội An (Lý Thường Kiệt)": "XLIII Coffee 326 Lý Thường Kiệt Hội An Da Nang"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Da Nang" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Marble Mountains, Ba Na Hills and the city's museums, with breakfast spots, Michelin-listed dinners, rooftop and resort bars, a bakery and specialty coffee checked against their own websites.";
+    cityGuide.highlights = ["Marble Mountains (Ngũ Hành Sơn)","Ba Na Hills","Museum of Cham Sculpture","Da Nang Cathedral"];
+    cityGuide.tip = "None of the confirmed venues publishes a weekly closing day, and the Museum of Cham Sculpture and Da Nang Museum both list daily hours, but check where Marble Mountains tickets are sold, because its board posted a notice on 3 November 2026 about moving its central ticket point.";
+    data.destinationFacts[cityKey] = "None of the confirmed venues publishes a weekly closing day, and the Museum of Cham Sculpture and Da Nang Museum both list daily hours, but check where Marble Mountains tickets are sold, because its board posted a notice on 3 November 2026 about moving its central ticket point.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Marble Mountains, Ba Na Hills and the city's museums, with breakfast spots, Michelin-listed dinners, rooftop and resort bars, a bakery and specialty coffee checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "No weekly closing day published",
+        "copy": "The Museum of Cham Sculpture opens 07:00–17:00 daily and the Da Nang Museum and Fine Arts Museum 08:00–17:00 daily. Madame Lân serves 6:30–21:30 Monday to Sunday and Sky36 opens 18:00–02:00 every day."
+      },
+      {
+        "label": "Tickets",
+        "value": "Pay or book ahead",
+        "copy": "The Museum of Cham Sculpture charges 60,000 VND per person per visit. Ba Na Hills sells tickets through booking.sunworld.vn and says its 08:00–22:00 hours may change."
+      },
+      {
+        "label": "Booking",
+        "value": "Reserve the big dinners",
+        "copy": "Madame Lân, Olivia's Prime Steakhouse and Sky36 all take reservations online or by phone. La Maison 1888, Citron and The Long Bar are booked through the InterContinental's dining enquiry form."
+      },
+      {
+        "label": "Children",
+        "value": "Child pricing at hotels",
+        "copy": "The Novotel Danang Premier Han River lists its breakfast buffet at VND 470,000 per guest and VND 235,000 for children aged 6–12. The InterContinental says kids under 6 eat free from the Kids' Menu."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Plan museums and Marble Mountains for daytime and book Da Nang's Michelin-listed dinners and rooftop tables ahead.",
+      intro: [
+        "Start with the city's museums, which all publish daily hours. The Museum of Cham Sculpture on 2 Tháng 9 Street opens 07:00–17:00 every day and charges 60,000 VND per visit; in July 2026 it announced the opening of a themed exhibition on Cham cultural traces in Lâm Đồng. The Da Nang Museum at 31 Trần Phú and the Fine Arts Museum at 78 Lê Duẩn both open 08:00–17:00 daily, while Branch 2 on Phan Bội Châu, which opened a botanical exhibition on 6 October 2026, closes for a midday break.",
+        "For the big sights, Marble Mountains is run by its own management board at 81 Huyền Trân Công Chúa, which posted a notice on 3 November 2026 about changing its central ticket-sales point, so you should confirm where to buy before you climb. Ba Na Hills lists hours of 08:00–22:00, warns that they may change, and sells tickets through Sun World's booking site. In town, Da Nang Cathedral sits at 156 Trần Phú, the same address as the diocese, which held its All Saints Mass there on 2 November 2026.",
+        "Several of the confirmed dining rooms sit on Bạch Đằng. Madame Lân at No. 4 serves from 6:30 to 21:30 every day and says it has been Michelin Selected from 2024 to 2026, so it works for breakfast as well as lunch. Olivia's Prime Steakhouse in Indochina Mall is also listed in the MICHELIN Guide for 2026. On the Son Tra Peninsula, La Maison 1888 at the InterContinental holds one Michelin star, and Citron serves dishes from Vietnam's north, centre and south; both are booked through the resort's enquiry form.",
+        "For drinks, Sky36 occupies floors 35 to 37 of the Novotel tower on Bạch Đằng and opens 18:00–02:00 every day, with DJs from 21:00. The Pullman's Infinity Bar serves afternoon tea from 13:00 to 17:00, and Restaurant Epice hosts a Christmas Eve buffet on 24 December 2026. For coffee, XLIII Coffee on Ngô Thì Sĩ opens 6:30–22:30, and if you visit nearby Hội An, XLIII has a branch there and Hoi An Roastery's main café at 135 Trần Phú opens 7:00–21:00 daily."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair the Museum of Cham Sculpture, open 07:00–17:00 daily, with Marble Mountains, and check the board's current ticket point first."
+        ],
+        [
+          "A slower morning",
+          "Start with breakfast at Madame Lân from 6:30 or coffee at XLIII Coffee on Ngô Thì Sĩ from 6:30, then walk to the Da Nang Museum, open 08:00–17:00 daily."
+        ],
+        [
+          "Before booking",
+          "Reserve Madame Lân, Sky36 or Olivia's Prime by phone or online, and use the InterContinental's enquiry form for La Maison 1888, since none of these publishes a weekly closing day."
+        ]
+      ],
+      trust: "All 24 distinct recommendations in this guide were checked against their operators' own websites on November 17, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();
