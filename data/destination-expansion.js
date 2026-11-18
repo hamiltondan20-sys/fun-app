@@ -10169,4 +10169,110 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 27 distinct recommendations in this guide were checked against their operators' own websites on November 17, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Funchal, Portugal: source review of 2026-11-17 (docs/content-research/funchal-2026-11-17.md).
+  {
+    const cityKey = "Funchal, Portugal";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Monte Palace Madeira","Madeira Cable Car","Mercado dos Lavradores","Museu Quinta das Cruzes"],
+      bestFirstTimers: ["Madeira Cable Car","Monte Palace Madeira","Carreiros do Monte","Mercado dos Lavradores"],
+      bestRestaurants: ["Desarma","Kampo","Akua","Armazém do Sal"],
+      bestBudget: ["Mercado dos Lavradores","Museu Quinta das Cruzes","Museu de História Natural do Funchal","Fábrica Santo António"],
+      bestLuxury: ["Desarma","Reid's Palace Afternoon Tea","Galáxia Skybar","Galáxia (Savoy Palace)"],
+      bestCouples: ["Galáxia Skybar","1891 Bar","Desarma","Teleférico do Jardim Botânico"],
+      bestKids: ["Carreiros do Monte","Museu de História Natural do Funchal","Teleférico do Jardim Botânico","Monte Palace Madeira"],
+      bestSolo: ["Museu Quinta das Cruzes","Blandy's Wine Lodge","Mercado dos Lavradores","Teatro Municipal Baltazar Dias"],
+      bestUnique: ["Carreiros do Monte","Blandy's Wine Lodge","Teatro Municipal Baltazar Dias","Jardim Botânico da Madeira"],
+      bestBreakfast: ["Avista","Rose Garden","Mercado dos Lavradores","The Ritz Madeira"],
+      bestLunch: ["Avista","Armazém do Sal","The Ritz Madeira"],
+      bestDinner: ["Desarma","Kampo","Akua","Avista Ásia"],
+      bestCocktails: ["Galáxia Skybar","1891 Bar","Cliff Bar","Savoy Palace Lobby Lounge & Bar"],
+      bestBakeries: ["Fábrica Santo António"],
+      bestCoffee: ["The Ritz Madeira","Reid's Palace Afternoon Tea","Savoy Palace Lobby Lounge & Bar"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Monte Palace Madeira": "Monte Palace Madeira Caminho das Babosas 4-A Funchal",
+      "Madeira Cable Car": "Madeira Cable Car Rua Dom Carlos I Funchal",
+      "Mercado dos Lavradores": "Mercado dos Lavradores Rua Brigadeiro Oudinout Funchal",
+      "Museu Quinta das Cruzes": "Museu Quinta das Cruzes Calçada do Pico 1 Funchal",
+      "Carreiros do Monte": "Carreiros do Monte Caminho do Monte 151 Funchal",
+      "Desarma": "Desarma The Views Baía Rua das Maravilhas 74 Funchal",
+      "Kampo": "Kampo Rua da Alfândega 74 Funchal",
+      "Akua": "Akua Rua dos Murças 6 Funchal",
+      "Armazém do Sal": "Armazém do Sal Rua da Alfândega 135 Funchal",
+      "Museu de História Natural do Funchal": "Museu de História Natural do Funchal Rua da Mouraria 31 Funchal",
+      "Fábrica Santo António": "Fábrica Santo António Travessa do Forno 27 Funchal",
+      "Reid's Palace Afternoon Tea": "Reid's Palace Estrada Monumental 139 Funchal",
+      "Galáxia Skybar": "Galáxia Skybar Savoy Palace Avenida do Infante 25 Funchal",
+      "Galáxia (Savoy Palace)": "Galáxia Savoy Palace Avenida do Infante 25 Funchal",
+      "1891 Bar": "1891 Bar Reid's Palace Estrada Monumental 139 Funchal",
+      "Teleférico do Jardim Botânico": "Teleférico do Jardim Botânico Caminho das Voltas 15 Funchal",
+      "Blandy's Wine Lodge": "Blandy's Wine Lodge Avenida Arriaga 28 Funchal",
+      "Teatro Municipal Baltazar Dias": "Teatro Municipal Baltazar Dias Avenida Arriaga Funchal",
+      "Jardim Botânico da Madeira": "Jardim Botânico da Madeira Rua Alferes Veiga Pestana 15 Funchal",
+      "Avista": "Avista Les Suites at The Cliff Bay Estrada Monumental 145 Funchal",
+      "Rose Garden": "Rose Garden The Cliff Bay Estrada Monumental 145 Funchal",
+      "The Ritz Madeira": "The Ritz Madeira Avenida Arriaga 33 Funchal",
+      "Avista Ásia": "Avista Ásia Les Suites at The Cliff Bay Estrada Monumental 145 Funchal",
+      "Cliff Bar": "Cliff Bar The Cliff Bay Estrada Monumental 145 Funchal",
+      "Savoy Palace Lobby Lounge & Bar": "Savoy Palace Lobby Lounge Avenida do Infante 25 Funchal"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Funchal" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Gardens, cable cars, museums and the farmers' market, with breakfast spots, dinners and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Monte Palace Madeira","Madeira Cable Car","Mercado dos Lavradores","Museu Quinta das Cruzes"];
+    cityGuide.tip = "Museu Quinta das Cruzes and Museu de História Natural do Funchal close on Sundays and Mondays and Mercado dos Lavradores closes on Sundays, so save a Sunday or Monday for the Madeira Cable Car and Monte Palace Madeira, which open daily except 25 December; note that Carreiros do Monte runs Monday to Saturday only.";
+    data.destinationFacts[cityKey] = "Museu Quinta das Cruzes and Museu de História Natural do Funchal close on Sundays and Mondays and Mercado dos Lavradores closes on Sundays, so save a Sunday or Monday for the Madeira Cable Car and Monte Palace Madeira, which open daily except 25 December; note that Carreiros do Monte runs Monday to Saturday only.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Gardens, cable cars, museums and the farmers' market, with breakfast spots, dinners and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Sundays and Mondays",
+        "copy": "Museu Quinta das Cruzes and Museu de História Natural do Funchal close on Sundays and Mondays, and Mercado dos Lavradores closes on Sundays and public holidays. Carreiros do Monte runs Monday to Saturday, while the Madeira Cable Car and Monte Palace Madeira open daily except 25 December."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book ahead online",
+        "copy": "Teleférico do Jardim Botânico gives 10% off tickets booked online, and its tickets stay valid for 12 months. Blandy's Wine Lodge recommends booking tours in advance, with free cancellation up to 24 hours before."
+      },
+      {
+        "label": "Walk-in policies",
+        "value": "No bookings at some",
+        "copy": "Carreiros do Monte takes no online reservations and sells tickets on site for the same day only. Galáxia Skybar needs no reservation but has a €15 minimum spend per person for non-guests."
+      },
+      {
+        "label": "Dress codes",
+        "value": "Smart casual and up",
+        "copy": "Galáxia Skybar asks for smart elegant dress and does not allow sportswear, flip-flops or beach sandals. The 1891 Bar at Reid's Palace is smart casual, and Rose Garden at The Cliff Bay bars shorts, swimwear and flip-flops."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Put Monte and its cable cars on a Sunday or Monday, when the museums are closed, and book tours and dinners ahead.",
+      intro: [
+        "Two cable cars link central Funchal with the hillside. The Madeira Cable Car runs from Rua Dom Carlos I up to Largo das Babosas in Monte, 8h45 to 17h45 every day except 25 December, at 22€ return; children up to 6 ride free. At the top, Monte Palace Madeira opens its garden daily except 25 December, from 09:00 to 18:00 between October and March and until 19:00 between April and September, with the museum open 09:00 to 17:30. Adult entry is €18, children up to 14 go free with an adult, and the palace building itself is not open to visitors.",
+        "From Monte you can ride downhill in a wicker sledge with Carreiros do Monte, who run Monday to Saturday from 09:00 to 18:00. They take no online bookings, sell tickets on site for the same day only, and charge 30 EUR for one person. Alternatively, the Teleférico do Jardim Botânico links Monte with the Jardim Botânico da Madeira, running 9:00 to 17:00 every day except 25 December. An adult round trip that includes garden entry costs €24, and booking online saves 10%.",
+        "Back in the centre, Mercado dos Lavradores opens Monday to Friday 07h00 to 19h00 and Saturday 07h00 to 14h00, and closes on Sundays and public holidays. Museu Quinta das Cruzes opens Tuesday to Saturday with a break from 12:30 to 13:30, closes on Sundays, Mondays and holidays, and charges adults €10; families get in free on the first Saturday of each month, and its gardens are free. Museu de História Natural do Funchal opens Tuesday to Saturday, 10:00 to 18:00. At Blandy's Wine Lodge on Avenida Arriaga, tours run daily and booking ahead is recommended.",
+        "For dinner, Desarma, on the rooftop of Hotel The Views Baía, lists a Michelin star for 2026 and seats guests Tuesday to Saturday between 19:00 and 21:00. Kampo on Rua da Alfândega and Akua on Rua dos Murças take reservations through their own websites. For a drink, Galáxia Skybar at Savoy Palace needs no reservation but has a €15 minimum spend for non-guests and is reserved for hotel guests on Mondays. At the Teatro Municipal Baltazar Dias, the Orquestra Clássica da Madeira plays its New Year concert on 1 January 2027."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Ride the Madeira Cable Car up to Monte Palace Madeira, both open daily except 25 December, then come back down with Carreiros do Monte on any day from Monday to Saturday."
+        ],
+        [
+          "A slower morning",
+          "Browse Mercado dos Lavradores from 07h00 on a weekday or Saturday, then pick up broas at Fábrica Santo António, open from 9h Monday to Saturday."
+        ],
+        [
+          "Before booking",
+          "Museu Quinta das Cruzes and Museu de História Natural do Funchal close on Sundays and Mondays, and Desarma serves dinner Tuesday to Saturday only."
+        ]
+      ],
+      trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on November 17, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

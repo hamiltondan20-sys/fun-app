@@ -5,6 +5,688 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Funchal, Portugal": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-11-17",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several official sites could not be read: Museu CR7 (domain did not resolve), Museu de Arte Sacra do Funchal (HTTP 522), Pereira d'Oliveira (connection reset), and regional culture pages for Universo de Memórias, Casa-Museu Frederico de Freitas and Quinta Magnólia (HTTP 404). Some confirmed places are published only partially: Kampo, Akua and Armazém do Sal publish no opening hours; Blandy's Wine Lodge's tour pages give tour times but not general opening hours; the Jardim Botânico da Madeira page lists weekday hours without saying whether they cover the garden or the office; The Ritz Madeira gives no exact daily times; Teatro Municipal Baltazar Dias gives no box-office hours. Il Gallo d'Oro is listed by its operator as temporarily closed for renovations, and Museu Quinta das Cruzes has announced planned building works without stating any closure.",
+    "sourceUrls": [
+      "docs/content-research/funchal-2026-11-17.md",
+      "docs/content-research/funchal-2026-11-17.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Il Gallo d'Oro",
+        "url": "https://cliffbay.portobay.com/en/restaurants/",
+        "checkedOn": "2026-11-17",
+        "reason": "Official PortoBay restaurants page says \"The restaurant is temporarily closed for renovations\", with no reopening date."
+      },
+      {
+        "name": "Museu CR7",
+        "url": "https://www.museucr7.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "Fetch failed: official domain www.museucr7.com did not resolve (DNS error). Not evidence of closure."
+      },
+      {
+        "name": "Museu de Arte Sacra do Funchal",
+        "url": "https://www.museuartesacrafunchal.org/",
+        "checkedOn": "2026-11-17",
+        "reason": "Fetch failed twice: HTTP 522 from official site. Not evidence of closure."
+      },
+      {
+        "name": "Madeira Story Centre",
+        "url": "https://www.madeirastorycentre.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "Official home page shows address only; no hours, prices or current content (footer \"Copyright © 2016\"), so current operation not evidenced. storycentre.com returned nothing readable."
+      },
+      {
+        "name": "Sé do Funchal",
+        "url": "https://catedraldofunchal.com/info",
+        "checkedOn": "2026-11-17",
+        "reason": "Official cathedral site publishes hours and mass times but no street address."
+      },
+      {
+        "name": "William (Reid's Palace)",
+        "url": "https://www.belmond.com/en/hotels/europe/portugal/reids-palace-madeira/restaurants-and-bars/modal/william",
+        "checkedOn": "2026-11-17",
+        "reason": "Venue page returned HTTP 404; hotel dining page names it but gives no hours or booking details."
+      },
+      {
+        "name": "Brisa do Mar (Reid's Palace)",
+        "url": "https://www.belmond.com/en/hotels/europe/portugal/reids-palace-madeira/restaurants-and-bars/modal/brisa-do-mar",
+        "checkedOn": "2026-11-17",
+        "reason": "Official page publishes service only \"Friday to Tuesday from April to June\" and \"Every day from July to September\"; no schedule for the current month."
+      },
+      {
+        "name": "Horta (Hotel Vila Porto Mare)",
+        "url": "https://cliffbay.portobay.com/en/restaurants/",
+        "checkedOn": "2026-11-17",
+        "reason": "Official PortoBay page lists hours but no address for the hotel or restaurant."
+      },
+      {
+        "name": "Loja do Chá",
+        "url": "https://www.lojadocha.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "No official site found; candidate domain lojadocha.com did not resolve."
+      },
+      {
+        "name": "Vila do Peixe",
+        "url": "https://www.viladopeixe.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "Domain viladopeixe.com now shows unrelated Polish-language restaurant-magazine content, not the restaurant."
+      },
+      {
+        "name": "Restaurante do Forte",
+        "url": "https://www.restaurantedoforte.pt/",
+        "checkedOn": "2026-11-17",
+        "reason": "Candidate official domain did not resolve; no other official page found."
+      },
+      {
+        "name": "Museu A Cidade do Açúcar",
+        "url": "https://www.facebook.com/MuseuCidadedoAcucar/",
+        "checkedOn": "2026-11-17",
+        "reason": "Municipal site links only to a Facebook page; social media not accepted as evidence."
+      },
+      {
+        "name": "Universo de Memórias João Carlos Abreu",
+        "url": "https://cultura.madeira.gov.pt/en/jo%C3%A3o-carlos-abreu-memories",
+        "checkedOn": "2026-11-17",
+        "reason": "Official regional culture page returned HTTP 404."
+      },
+      {
+        "name": "Casa-Museu Frederico de Freitas",
+        "url": "https://cultura.madeira.gov.pt/en/house-museum-frederico-de-freitas",
+        "checkedOn": "2026-11-17",
+        "reason": "Official regional culture page returned HTTP 404."
+      },
+      {
+        "name": "Quinta Magnólia",
+        "url": "https://cultura.madeira.gov.pt/en/quinta-magnolia-cultural-centre",
+        "checkedOn": "2026-11-17",
+        "reason": "Official regional culture page returned HTTP 404."
+      },
+      {
+        "name": "Instituto do Vinho, do Bordado e do Artesanato da Madeira (IVBAM)",
+        "url": "https://ivbam.madeira.gov.pt/",
+        "checkedOn": "2026-11-17",
+        "reason": "Official home page gives no visitor address, hours or current visitor information."
+      },
+      {
+        "name": "Pereira d'Oliveira",
+        "url": "https://www.doliveiras.pt/",
+        "checkedOn": "2026-11-17",
+        "reason": "Fetch failed: connection reset by official site. Not evidence of closure."
+      },
+      {
+        "name": "Parque Ecológico do Funchal",
+        "url": "https://www.funchal.pt/visitar/parque-ecologico-do-funchal/",
+        "checkedOn": "2026-11-17",
+        "reason": "Municipal page gives no street address or opening hours for the park."
+      },
+      {
+        "name": "Grão de Farinha",
+        "url": "https://www.graodefarinha.pt/",
+        "checkedOn": "2026-11-17",
+        "reason": "Candidate official domain graodefarinha.pt did not resolve; no other official page found."
+      },
+      {
+        "name": "Golden Gate Grand Café",
+        "checkedOn": "2026-11-17",
+        "reason": "No official website could be identified; only tourism and review listings found."
+      },
+      {
+        "name": "Gavião Novo",
+        "checkedOn": "2026-11-17",
+        "reason": "No official website could be identified; only booking and review listings found."
+      },
+      {
+        "name": "Padaria Pastelaria Mariazinha",
+        "checkedOn": "2026-11-17",
+        "reason": "No official website could be identified; only tourism and directory listings found."
+      },
+      {
+        "name": "Penha d'Águia",
+        "checkedOn": "2026-11-17",
+        "reason": "No official website could be identified; only tourism, directory and delivery listings found."
+      },
+      {
+        "name": "Funchal Old Town",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place (district with no single operator)"
+      },
+      {
+        "name": "Pico do Arieiro",
+        "checkedOn": "2026-11-17",
+        "reason": "Public mountain viewpoint with no operator page checked; not verified."
+      },
+      {
+        "name": "Levada walk",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Cable car to Monte",
+        "url": "https://www.madeiracablecar.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "Not used under this name; confirmed as \"Madeira Cable Car\"."
+      },
+      {
+        "name": "Monte Palace",
+        "url": "https://www.montepalacemadeira.com/pt/visita",
+        "checkedOn": "2026-11-17",
+        "reason": "Not used under this name; confirmed as \"Monte Palace Madeira\"."
+      },
+      {
+        "name": "Sunset at a coastal viewpoint",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "a seafood dinner",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Funchal market or cafe",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local dinner in Old Town",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Lido",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Monte",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Old Town",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Old Town walk",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Lido",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Monte",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Monte",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Funchal Old Town",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Old Town",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Levada walk",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Lido",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Monte Palace",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Old Town evening",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Lido",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Monte",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Old Town",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Funchal Old Town",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Lido",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Monte",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Old Town",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Funchal Old Town",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Old Town cafe or market",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Cable car to Monte",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Monte",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Monte",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Old Town",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Old Town",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Lido bakery or market",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Funchal Old Town",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Monte",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Old Town",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Monte Palace",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Monte",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Old Town",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Lido",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Monte",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Old Town",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Old Town",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Lido",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Pico do Arieiro",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Old Town",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Lido morning market",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Funchal Old Town",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Monte",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Old Town",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Lido",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Monte",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Monte Palace Madeira": {
+        "url": "https://www.montepalacemadeira.com/pt/visita",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Visit page publishes current hours and prices (adults €18; children up to 14 free with an adult). Home page carries a 2026 notice: \"O teleférico do Funchal estará encerrado para manutenção de 20 a 24 de julho de 2026\". Palace interior is stated as not open to visitors."
+      },
+      "Madeira Cable Car": {
+        "url": "https://www.madeiracablecar.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current home page publishes fares (\"Ida e Volta\" 22€, \"1 Sentido\" 16€; ages 0-6 free, 7-14 -50%) and daily hours. No 2026-dated text seen on the page itself."
+      },
+      "Teleférico do Jardim Botânico": {
+        "url": "https://www.telefericojardimbotanico.com/en/prices.html",
+        "sourceType": "operator's own site (MTA - Transportes Alternativos da Madeira)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Trips & Prices page lists current fares (cable car round trip adults €16; cable car + Botanical Garden round trip adults €24), online booking with 10% discount and ticket validity of 12 months."
+      },
+      "Jardim Botânico da Madeira": {
+        "url": "https://ifcn.madeira.gov.pt/en/contactos/jardim-botanico.html",
+        "sourceType": "official public operator (IFCN, Instituto das Florestas e Conservação da Natureza, Região Autónoma da Madeira)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "IFCN site carries current 2026 material (\"Programa 2026/2027\" environmental education, \"Campanha de Natal 2026\"). Garden visiting hours and fees not readable separately from office hours."
+      },
+      "Carreiros do Monte": {
+        "url": "https://www.carreirosdomonte.com/v3/en/prices.php",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current prices page: 1 person 30,00 EUR, 2 persons 40,00 EUR, 3 persons 60,00 EUR; \"We do not accept online reservations or bookings\"; tickets on site, same day only. Lists closures on August 14 and 15, December 25, January 1, Good Friday and Easter Sunday."
+      },
+      "Mercado dos Lavradores": {
+        "url": "https://mercados.funchal.pt/",
+        "sourceType": "official public operator (Câmara Municipal do Funchal, Mercados Municipais)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Post dated 1 November 2026, \"Feiras Temáticas Novembro 2026\", lists themed fairs at the market on 5, 12, 19 and 26 November; Winter Market 2026 held 19-24 October 2026."
+      },
+      "Museu de História Natural do Funchal": {
+        "url": "https://mmf.funchal.pt/",
+        "sourceType": "official public operator (Câmara Municipal do Funchal)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current municipal museum site publishes hours and permanent galleries (Laurissilva, Tubarões e Raias, etc.); temporary exhibition \"Missão: Restaurar o Oceano\" opened 7 June 2025 with no end date. Latest news items are from December 2025."
+      },
+      "Museu Quinta das Cruzes": {
+        "url": "https://mqc.madeira.gov.pt/informacoes/",
+        "sourceType": "official public operator (Direção Regional da Cultura, Região Autónoma da Madeira)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "News dated 27/05/2026 (digital exhibition for the museum's 73rd anniversary) and 07/04/2026 (planned €1.056m EU-co-funded building works on roofs, waterproofing, lighting and ventilation; no closure announced). Adults €10, youth/seniors €5, family €18; free family entry on the first Saturday of each month."
+      },
+      "Teatro Municipal Baltazar Dias": {
+        "url": "https://teatrobaltazardias.funchal.pt/",
+        "sourceType": "official public operator (Câmara Municipal do Funchal)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Programme lists shows through January 2027, including \"Concerto Ano Novo 2027\" (Orquestra Clássica da Madeira, 1 Jan 2027, 17h00 and 20h00, 35€) and \"Mãos Minhas\" (8 and 9 Jan 2027, 11€, in Portuguese Sign Language with \"Legendagem em todas as sessões\"). Tickets via Ticketline and the theatre box office."
+      },
+      "Blandy's Wine Lodge": {
+        "url": "https://blandyswinelodge.com/en/tours/",
+        "sourceType": "operator's own site (Madeira Wine Company)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Tours page offers bookable tours \"from Monday to Sunday\": Premium Tour 23.00€ (45 min), Lodge Tour 17.00€ (30 min, English, Mon-Fri 12:30), Vintage Premium Tour 59.00€; children under 6 free, 6-17 8.40€; \"We highly recommend booking in advance\"; free cancellation up to 24 hours before. Home page shows Blandy's Wine Festival 2026 programme images."
+      },
+      "Fábrica Santo António": {
+        "url": "https://fabricastoantonio.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current site lists shop hours and product ranges (Broas Tradicionais, Biscoitos Finos, Bolo de Mel de Cana, Rebuçados Artesanais); footer \"Copyright © Fábrica Santo António 2026\"; online shop \"Brevemente\"."
+      },
+      "The Ritz Madeira": {
+        "url": "https://www.theritzmadeira.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Site says it serves guests \"all day, Monday to Sunday, all year round\" and that afternoon tea can be booked \"any day of the week between 13:30 and 16:30\"; footer \"© Ritz Madeira 2026\"."
+      },
+      "Reid's Palace Afternoon Tea": {
+        "url": "https://www.belmond.com/en/hotels/europe/portugal/reids-palace-madeira/restaurants-and-bars/modal/tea-library",
+        "sourceType": "operator's own site (Belmond)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current venue page: Tea Library \"Open daily, 10am-6pm\"; \"the Tea Terrace is reserved for our Afternoon Tea Experience, from 2pm till 6pm\"; menus linked online. Dining page describes \"delicate treats, a curated selection of teas, and a glass of champagne\"."
+      },
+      "1891 Bar": {
+        "url": "https://www.belmond.com/en/hotels/europe/portugal/reids-palace-madeira/restaurants-and-bars/modal/1891-bar",
+        "sourceType": "operator's own site (Belmond)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current venue page lists daily hours and dress code \"Smart casual\"; dining page calls it \"Perfect for a spontaneous nightcap after dinner\"."
+      },
+      "Galáxia Skybar": {
+        "url": "https://savoysignature.com/savoypalacehotel/en/bars/galaxia-skybar",
+        "sourceType": "operator's own site (Savoy Signature)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current page: \"No reservation is required to visit the Skybar\"; €15 per person minimum spend for non-guests; dress code \"Smart Elegant\", \"Sportswear, flip-flops, and beach sandals are not allowed\"; live jazz Tuesday 20:30-22:30, DJ sets Wednesday-Sunday."
+      },
+      "Galáxia (Savoy Palace)": {
+        "url": "https://savoysignature.com/savoypalacehotel/en/restaurants/galaxia-skyfood",
+        "sourceType": "operator's own site (Savoy Signature)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current page references a new 2026 menu; booking in advance recommended; cancellations under 24 hours or no-shows incur a €50 per person fee; dress code \"Smart Elegant\"."
+      },
+      "Savoy Palace Lobby Lounge & Bar": {
+        "url": "https://savoysignature.com/savoypalacehotel/en/bars/lobby-lounge-and-bar",
+        "sourceType": "operator's own site (Savoy Signature)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current page: snack menu through the day, classic cocktails at Happy Hour, afternoon tea 15:00-18:00, live music 18:00-20:00 daily; \"Last food order at 22:30\"."
+      },
+      "Avista": {
+        "url": "https://cliffbay.portobay.com/en/restaurants/",
+        "sourceType": "operator's own site (PortoBay, Les Suites at The Cliff Bay)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current restaurants page lists service times for breakfast, lunch, afternoon tea and dinner with a \"Reserve a table\" button; footer \"© 2026 PortoBay\"."
+      },
+      "Avista Ásia": {
+        "url": "https://cliffbay.portobay.com/en/restaurants/",
+        "sourceType": "operator's own site (PortoBay, Les Suites at The Cliff Bay)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current restaurants page lists à la carte and drinks service times with a \"Book a table\" button."
+      },
+      "Rose Garden": {
+        "url": "https://cliffbay.portobay.com/en/restaurants/",
+        "sourceType": "operator's own site (PortoBay, The Cliff Bay)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current restaurants page lists breakfast and dinner times; shorts, swimwear and flip-flops not allowed, dinner smart casual; advance booking required for the Chef's Suggestion menu."
+      },
+      "Cliff Bar": {
+        "url": "https://cliffbay.portobay.com/en/restaurants/",
+        "sourceType": "operator's own site (PortoBay, The Cliff Bay)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current restaurants page lists daily hours, snacks 13:00-21:00, happy hour 17:00-18:00 and live music."
+      },
+      "Desarma": {
+        "url": "https://www.desarma.pt/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Site shows \"2024 & 2025 & 2026 Estrela Michelin\" and links to a reservations page."
+      },
+      "Kampo": {
+        "url": "https://www.kampo.pt/reservas",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Restaurant's own reservations page (\"RESERVAS\") carries a 2026-05-21 publication timestamp; links to sister restaurants Akua, Theo's and Yuki."
+      },
+      "Akua": {
+        "url": "https://akuafunchal.pt/reservas",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Restaurant's own reservations page carries a 2026-05-21 publication timestamp."
+      },
+      "Armazém do Sal": {
+        "url": "https://www.armazemdosal.com/menu-a-la-carte",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current à la carte menu \"Disponível ao almoço e jantar\" (dishes such as \"Robalo\", \"Bacalhau a Baixa Temperatura\", \"Jarrete de Borrego\"); online table reservation form. No 2026-dated text."
+      }
+    }
+  },
   "Amman, Jordan": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-11-17",
