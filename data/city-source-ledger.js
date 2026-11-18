@@ -5,6 +5,673 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Queenstown, New Zealand": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-11-17",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Skyline Queenstown and Coronet Peak returned 403 errors, the QLDC site (Queenstown Gardens) showed a bot check, Rātā and Madam Woo had certificate errors, The Boatshed returned 401, Bardeaux refused the connection, and Remarkables Market, Arrowtown Bakery, Ivy & Lola's, Wolf and Odyssey did not resolve; none of these failures is evidence of closure. Hours were not published on the pages read for Little Blackwood, Blue Kanu, Sherwood, the TSS Earnslaw and Walter Peak. Hours for Yonder and The Winery come from undated pages, and the Cookie Bar page is copyright-dated 2025. Bespoke Kitchen and the Kawarau Bungy Centre show conflicting hours on their own pages. Kiwi Park and the Kawarau Bungy Centre do not give exact dates for their summer and winter hours beyond what is quoted.",
+    "sourceUrls": [
+      "docs/content-research/queenstown-2026-11-17.md",
+      "docs/content-research/queenstown-2026-11-17.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Skyline Queenstown",
+        "url": "https://www.skyline.co.nz/en/queenstown/",
+        "checkedOn": "2026-11-17",
+        "reason": "Official site returned HTTP 403 Forbidden to automated fetch; not bypassed. Not evidence of closure."
+      },
+      {
+        "name": "Coronet Peak",
+        "url": "https://www.coronetpeak.co.nz/",
+        "checkedOn": "2026-11-17",
+        "reason": "Official site returned HTTP 403 Forbidden; not bypassed."
+      },
+      {
+        "name": "Queenstown Gardens",
+        "url": "https://www.qldc.govt.nz/",
+        "checkedOn": "2026-11-17",
+        "reason": "QLDC site redirected to a Radware bot check (validate.perfdrive.com); not bypassed."
+      },
+      {
+        "name": "Rātā",
+        "url": "https://www.rata.co.nz/",
+        "checkedOn": "2026-11-17",
+        "reason": "Certificate error (hostname not in certificate) on www.rata.co.nz; ratadining.co.nz returned 404."
+      },
+      {
+        "name": "Madam Woo",
+        "url": "https://www.madamwoo.co.nz/",
+        "checkedOn": "2026-11-17",
+        "reason": "Certificate error (\"unable to verify the first certificate\")."
+      },
+      {
+        "name": "The Boatshed (Frankton)",
+        "url": "https://www.boatshedqueenstown.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "Site returned HTTP 401 Unauthorized."
+      },
+      {
+        "name": "Bardeaux",
+        "url": "https://www.bardeaux.co.nz/",
+        "checkedOn": "2026-11-17",
+        "reason": "Connection refused."
+      },
+      {
+        "name": "Remarkables Market",
+        "url": "https://remarkablesmarket.co.nz/",
+        "checkedOn": "2026-11-17",
+        "reason": "DNS lookup failed (EAI_AGAIN) on two attempts."
+      },
+      {
+        "name": "Arrowtown Bakery",
+        "url": "https://www.arrowtownbakery.co.nz/",
+        "checkedOn": "2026-11-17",
+        "reason": "DNS lookup failed (ENOTFOUND) for the guessed official domain."
+      },
+      {
+        "name": "Ivy & Lola's",
+        "url": "https://www.ivyandlolas.co.nz/",
+        "checkedOn": "2026-11-17",
+        "reason": "DNS lookup failed (ENOTFOUND) for the guessed official domain."
+      },
+      {
+        "name": "Wolf",
+        "url": "https://www.wolfqueenstown.co.nz/",
+        "checkedOn": "2026-11-17",
+        "reason": "DNS lookup failed (ENOTFOUND) for the guessed official domain."
+      },
+      {
+        "name": "Odyssey Sensory Maze",
+        "url": "https://www.odysseyqueenstown.co.nz/",
+        "checkedOn": "2026-11-17",
+        "reason": "DNS lookup failed (ENOTFOUND) for the guessed official domain."
+      },
+      {
+        "name": "Amisfield",
+        "url": "https://www.amisfield.co.nz/",
+        "checkedOn": "2026-11-17",
+        "reason": "Homepage gives no address or hours; contact and restaurant pages returned 404."
+      },
+      {
+        "name": "Gibbston Valley Winery",
+        "url": "https://www.gibbstonvalley.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "Homepage returned no readable content beyond the title."
+      },
+      {
+        "name": "Chard Farm",
+        "url": "https://www.chardfarm.co.nz/",
+        "checkedOn": "2026-11-17",
+        "reason": "Address published (205 Chard Road, Gibbston) but no hours or dated/current content found."
+      },
+      {
+        "name": "Botswana Butchery",
+        "url": "https://botswanabutchery.nz/menus",
+        "checkedOn": "2026-11-17",
+        "reason": "Address published (17 Marine Parade) but no hours or current content; menus page says \"Online bookings are temporarily unavailable\" and its menu link is titled 2016."
+      },
+      {
+        "name": "Atlas Beer Cafe",
+        "url": "https://www.atlasbeercafe.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "No street number and no current evidence: footer \"© 2023\", menu image references Jan 2023."
+      },
+      {
+        "name": "Joe's Garage",
+        "url": "https://www.joes.co.nz/",
+        "checkedOn": "2026-11-17",
+        "reason": "Official location list shows no Queenstown, Frankton or Arrowtown branch."
+      },
+      {
+        "name": "Vudu Cafe",
+        "url": "https://www.vudu.co.nz/",
+        "checkedOn": "2026-11-17",
+        "reason": "vudu.co.nz redirects to Bespoke Kitchen's site, which does not mention a Vudu address; status unclear."
+      },
+      {
+        "name": "Provisions of Arrowtown",
+        "url": "https://www.provisions.co.nz/",
+        "checkedOn": "2026-11-17",
+        "reason": "Site gives no Arrowtown address or hours; shows a notice: \"We are currently undergoing a manufacturing restructure\"."
+      },
+      {
+        "name": "Lake Wakatipu",
+        "checkedOn": "2026-11-17",
+        "reason": "Natural feature with no operator page; covered via the TSS Earnslaw."
+      },
+      {
+        "name": "Milford Sound",
+        "checkedOn": "2026-11-17",
+        "reason": "Natural feature; covered via the RealNZ Milford Sound Signature Cruise."
+      },
+      {
+        "name": "Lakefront sunrise",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Arrowtown half-day",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Scenic flight or fjord day",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Lakeside dinner",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Arrowtown lunch",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local winery meal",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Frankton",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Arrowtown",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Queenstown Bay",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Queenstown Bay walk",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Frankton",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Arrowtown",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Arrowtown",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Lake Wakatipu",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Queenstown Bay",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Lakefront sunrise",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Frankton",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Skyline Queenstown",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Queenstown Bay evening",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Frankton",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Arrowtown",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Queenstown Bay",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Lake Wakatipu",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Frankton",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Arrowtown",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Queenstown Bay",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Lake Wakatipu",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Queenstown Bay cafe or market",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Arrowtown half-day",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Arrowtown",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Arrowtown",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Queenstown Bay",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Queenstown Bay",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Frankton bakery or market",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Lake Wakatipu",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Arrowtown",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Queenstown Bay",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Skyline Queenstown",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Arrowtown",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Queenstown Bay",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Frankton",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Arrowtown",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Queenstown Bay",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Queenstown Bay",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Frankton",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Milford Sound",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Queenstown Bay",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Frankton morning market",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Lake Wakatipu",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Arrowtown",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Queenstown Bay",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Frankton",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Arrowtown",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "TSS Earnslaw": {
+        "url": "https://www.realnz.com/en/experiences/day-cruises/tss-earnslaw-lake-cruises/",
+        "sourceType": "operator's own site (RealNZ)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Live FareHarbor booking, prices \"from NZD $129\"; cruises \"run regularly throughout the day\"; 2026 maintenance notice (May 18 to June 26, 2026, now past). Booking \"not supported when in private browsing or incognito mode\"."
+      },
+      "Walter Peak Gourmet BBQ": {
+        "url": "https://www.realnz.com/en/experiences/tss-earnslaw-walter-peak-experiences/walter-peak-gourmet-bbq-dining/",
+        "sourceType": "operator's own site (RealNZ)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Bookable product: \"Return cruise across scenic Lake Whakatipu\", buffet \"at the Homestead Restaurant\" and \"farm dog show\"; duration \"3 hours 30 mins - 4 hours\". Page still carries a stale 2025 maintenance notice; footer \"© RealNZ 2026\"."
+      },
+      "RealNZ Milford Sound Signature Cruise": {
+        "url": "https://www.realnz.com/en/experiences/day-cruises/milford-sound-signature-cruise/",
+        "sourceType": "operator's own site (RealNZ)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "\"Daily cruise departures: 10.30am, 1pm, 3.25pm\"; reviews dated January 2026; reschedules or refunds \"with up to 24 hours notice\"."
+      },
+      "Kiwi Park": {
+        "url": "https://kiwibird.co.nz/contact/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "News posts dated \"October 22, 2026\" and \"September 17, 2026\"; daily Kiwi Encounters and Conservation Show times; online booking."
+      },
+      "Lakes District Museum": {
+        "url": "https://www.lakesdistrictmuseum.nz/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Gallery programme lists \"The Language of Colour\" 22 Oct 2026 – 6 Dec 2026 and the Kate Bray Exhibition 17 Dec 2026 – 14 Feb 2027; admission \"Adults: $14\", under 5 free."
+      },
+      "Arrowtown Chinese Settlement": {
+        "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/otago/places/arrowtown-area/things-to-do/arrowtown-chinese-settlement/",
+        "sourceType": "official public operator (Department of Conservation)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current DOC visitor page with no alerts; \"The main walk (old dray track)... is suitable for wheelchairs and buggies\", side tracks are not."
+      },
+      "Fergburger": {
+        "url": "https://www.fergburger.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current menus and hours notice; \"© 2026 FERG & CO\"; online ordering link."
+      },
+      "Fergbaker": {
+        "url": "https://www.fergburger.com/",
+        "sourceType": "operator's own site (Ferg & Co)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Menu and hours on the Ferg & Co site, \"© 2026 FERG & CO\"."
+      },
+      "Mrs Ferg (Beach Street)": {
+        "url": "https://www.fergburger.com/",
+        "sourceType": "operator's own site (Ferg & Co)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Gelato menu and hours on the Ferg & Co site, \"© 2026 FERG & CO\". (The Shotover Street branch address is inconsistent on the page, 40 vs 20, so only Beach Street is used.)"
+      },
+      "Onsen Hot Pools": {
+        "url": "https://www.onsen.co.nz/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "\"We have currently released availability up until 30th April 2027\"; live booking; reviews dated September and October 2026."
+      },
+      "Shotover Jet": {
+        "url": "https://www.shotoverjet.com/",
+        "sourceType": "operator's own site (Ngāi Tahu Tourism)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Daily banner \"We are OPEN!\" with \"Minimum height to travel today is 1.0m\" (dated Wednesday 18 November); \"© Ngāi Tahu Tourism 2026\"."
+      },
+      "Kawarau Bridge Bungy": {
+        "url": "https://www.bungy.co.nz/queenstown/kawarau-bungy-centre/",
+        "sourceType": "operator's own site (AJ Hackett Bungy)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Bookable at \"$320\" via the operator's booking system; \"open daily, including public holidays (closed on Christmas Day)\"; \"The minimum age is 10 years old.\""
+      },
+      "Ziptrek Ecotours": {
+        "url": "https://www.ziptrek.co.nz/contact-us",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Offer \"Available Thursday 12th November - Sunday 22nd November 2026\"; \"Our current office hours are: 8:30 AM - 7 PM\"; Moa and Kea tours minimum age 6."
+      },
+      "Bespoke Kitchen": {
+        "url": "https://www.bespokekitchen.nz/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current menu with prices (e.g. \"korean buttermilk chicken burger 31.0\") and a \"2026-Winter-Bespoke-Menu-July\" file."
+      },
+      "Patagonia Chocolates (Rees Street)": {
+        "url": "https://www.patagoniachocolates.co.nz/pages/queenstown",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Store page with hours; site mentions the \"2026 NZ Ice Cream & Gelato Sustainabilty Champion Trophy\"."
+      },
+      "Patagonia Chocolates (Arrowtown)": {
+        "url": "https://www.patagoniachocolates.co.nz/pages/arrowtown",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Store page with hours, \"Open on Christmas Day and Boxing Day\", \"© 2026 Patagonia Chocolates\"."
+      },
+      "Little Blackwood": {
+        "url": "https://www.littleblackwood.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "\"VOTED BEST BAR IN NEW ZEALAND\", Hospitality NZ Excellence Awards 2026; menus and event enquiries."
+      },
+      "Blue Kanu": {
+        "url": "https://www.bluekanu.co.nz/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Online reservations, \"View Our NYE Menu\" (New Year's Eve 2026 booking), drinks menus dated \"SEPT_2026\"."
+      },
+      "Eichardt's Bar": {
+        "url": "https://www.eichardts.com/eichardts-bar",
+        "sourceType": "operator's own site (Eichardt's Private Hotel)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "\"We do not take reservations but encourage walk-ins throughout the day\"; hotel \"Awarded One MICHELIN Key in 2025 and 2026\"."
+      },
+      "The Grille by Eichardt's": {
+        "url": "https://www.eichardts.com/the-grille",
+        "sourceType": "operator's own site (Eichardt's Private Hotel)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Reservation link; \"Open daily from 11am\"; \"© 2026\"."
+      },
+      "Sherwood": {
+        "url": "https://www.sherwoodqueenstown.nz/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Event calendar with dates such as \"Nov 26 – Nov 26, 2026\" and \"Dec 13 – Dec 13, 2026\"; \"MICHELIN Guide 2026\"; flatbread and beer \"Available daily, 2–5pm\"."
+      },
+      "Cookie Time Cookie Bar (Queenstown)": {
+        "url": "https://cookiebar.co.nz/queenstown/",
+        "sourceType": "operator's own site (Cookie Time)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Branch page with hours notice; Cookie Time homepage cites a 2026 Most Trusted Brand award. Branch page footer reads \"© 2025\"."
+      },
+      "Smiths Craft Beer House": {
+        "url": "https://www.smithscraftbeer.co.nz/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Hours notice; \"Copyright © 2026 Smiths Craft Beer house\"."
+      },
+      "Yonder": {
+        "url": "https://www.yonderqt.co.nz/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Hours notice on its site (no dated content seen)."
+      },
+      "Kinross": {
+        "url": "https://www.kinross.nz/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Event \"Saturday 28th November 2026\" (new vintages celebration); \"Open 7 days a week (except Christmas Day)\"."
+      },
+      "The Winery (Queenstown)": {
+        "url": "https://www.thewinery.co.nz/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Hours and holiday-closure notice (no dated content seen): \"closed on Christmas Day, Anzac Day until 12pm, Easter Friday and Easter Sunday\"."
+      }
+    }
+  },
   "Abu Dhabi, United Arab Emirates": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-11-17",

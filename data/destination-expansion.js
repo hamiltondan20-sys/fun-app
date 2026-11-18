@@ -10383,4 +10383,111 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 27 distinct recommendations in this guide were checked against their operators' own websites on November 17, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Queenstown, New Zealand: source review of 2026-11-17 (docs/content-research/queenstown-2026-11-17.md).
+  {
+    const cityKey = "Queenstown, New Zealand";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["TSS Earnslaw","Kiwi Park","Lakes District Museum","Shotover Jet"],
+      bestFirstTimers: ["TSS Earnslaw","Kiwi Park","Fergburger","RealNZ Milford Sound Signature Cruise"],
+      bestRestaurants: ["The Grille by Eichardt's","Blue Kanu","Sherwood","Kinross"],
+      bestBudget: ["Arrowtown Chinese Settlement","Lakes District Museum","Fergburger","Cookie Time Cookie Bar (Queenstown)"],
+      bestLuxury: ["The Grille by Eichardt's","Onsen Hot Pools","Walter Peak Gourmet BBQ","RealNZ Milford Sound Signature Cruise"],
+      bestCouples: ["Onsen Hot Pools","Little Blackwood","Blue Kanu","Kinross"],
+      bestKids: ["Kiwi Park","Ziptrek Ecotours","Mrs Ferg (Beach Street)","Cookie Time Cookie Bar (Queenstown)"],
+      bestSolo: ["Lakes District Museum","Arrowtown Chinese Settlement","Smiths Craft Beer House","Bespoke Kitchen"],
+      bestUnique: ["Kawarau Bridge Bungy","Shotover Jet","Ziptrek Ecotours","Walter Peak Gourmet BBQ"],
+      bestBreakfast: ["Bespoke Kitchen","Fergbaker","Yonder"],
+      bestLunch: ["Fergburger","Kinross","Bespoke Kitchen","The Grille by Eichardt's"],
+      bestDinner: ["Blue Kanu","Sherwood","The Grille by Eichardt's","Walter Peak Gourmet BBQ"],
+      bestCocktails: ["Little Blackwood","Eichardt's Bar","Yonder","The Winery (Queenstown)"],
+      bestBakeries: ["Fergbaker","Cookie Time Cookie Bar (Queenstown)","Mrs Ferg (Beach Street)","Patagonia Chocolates (Rees Street)"],
+      bestCoffee: ["Bespoke Kitchen","Yonder","Patagonia Chocolates (Arrowtown)","Fergbaker"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "TSS Earnslaw": "TSS Earnslaw Steamer Wharf 88 Beach Street Queenstown",
+      "Kiwi Park": "Kiwi Park 51 Brecon Street Queenstown",
+      "Lakes District Museum": "Lakes District Museum 49 Buckingham Street Arrowtown",
+      "Shotover Jet": "Shotover Jet 3 Arthurs Point Road Arthurs Point Queenstown",
+      "Fergburger": "Fergburger 42 Shotover Street Queenstown",
+      "RealNZ Milford Sound Signature Cruise": "RealNZ Milford Sound Visitor Terminal Milford Sound",
+      "The Grille by Eichardt's": "The Grille by Eichardt's 2 Marine Parade Queenstown",
+      "Blue Kanu": "Blue Kanu 16 Church Street Queenstown",
+      "Sherwood": "Sherwood 554 Frankton Road Queenstown",
+      "Kinross": "Kinross 2300 Gibbston Highway Queenstown",
+      "Arrowtown Chinese Settlement": "Arrowtown Chinese Settlement Buckingham Street Arrowtown",
+      "Cookie Time Cookie Bar (Queenstown)": "Cookie Time Cookie Bar 18 Camp Street Queenstown",
+      "Onsen Hot Pools": "Onsen Hot Pools 160 Arthurs Point Road Arthurs Point Queenstown",
+      "Walter Peak Gourmet BBQ": "RealNZ Visitor Centre Steamer Wharf 88 Beach Street Queenstown",
+      "Little Blackwood": "Little Blackwood Steamer Wharf Queenstown",
+      "Ziptrek Ecotours": "Ziptrek Ecotours 45 Camp Street Queenstown",
+      "Mrs Ferg (Beach Street)": "Mrs Ferg 69 Beach Street Queenstown",
+      "Smiths Craft Beer House": "Smiths Craft Beer House 53 Shotover Street Queenstown",
+      "Bespoke Kitchen": "Bespoke Kitchen 9 Isle Street Queenstown",
+      "Kawarau Bridge Bungy": "Kawarau Bungy Centre State Highway 6 Gibbston Valley Queenstown",
+      "Fergbaker": "Fergbaker 40 Shotover Street Queenstown",
+      "Yonder": "Yonder 14 Church Street Queenstown",
+      "Eichardt's Bar": "Eichardt's Bar 2 Marine Parade Queenstown",
+      "The Winery (Queenstown)": "The Winery 29 Ballarat Street Queenstown",
+      "Patagonia Chocolates (Rees Street)": "Patagonia Chocolates 2 Rees Street Queenstown",
+      "Patagonia Chocolates (Arrowtown)": "Patagonia Chocolates 31 Ramshaw Lane Arrowtown"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Queenstown" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Lake cruises, Arrowtown history, adventure operators, cafés, dinners and bars around Queenstown, checked against their own websites.";
+    cityGuide.highlights = ["TSS Earnslaw","Kiwi Park","Lakes District Museum","Shotover Jet"];
+    cityGuide.tip = "Kiwi Park, the Lakes District Museum, the Kawarau Bungy Centre and Kinross all close on Christmas Day, while Patagonia Chocolates in Arrowtown says it stays open on Christmas Day and Boxing Day.";
+    data.destinationFacts[cityKey] = "Kiwi Park, the Lakes District Museum, the Kawarau Bungy Centre and Kinross all close on Christmas Day, while Patagonia Chocolates in Arrowtown says it stays open on Christmas Day and Boxing Day.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Lake cruises, Arrowtown history, adventure operators, cafés, dinners and bars around Queenstown, checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Christmas Day",
+        "copy": "Kiwi Park, the Lakes District Museum, the Kawarau Bungy Centre and Kinross close on Christmas Day. The Winery on Ballarat Street also lists Christmas Day, Easter Friday, Easter Sunday and Anzac Day until 12pm as closures."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book ahead",
+        "copy": "RealNZ advises booking the TSS Earnslaw in advance because availability is limited, and its booking process does not work in private or incognito browsing. Onsen Hot Pools has released availability up to 30 April 2027."
+      },
+      {
+        "label": "Walk-ins",
+        "value": "No reservations at Eichardt's Bar",
+        "copy": "Eichardt's Bar at 2 Marine Parade does not take reservations and encourages walk-ins between 11am and 10pm. Fergburger on Shotover Street lists daily hours from 7am to 2.30am."
+      },
+      {
+        "label": "Age and height rules",
+        "value": "Check minimums",
+        "copy": "The minimum age for AJ Hackett's Kawarau Bridge Bungy is 10, and Ziptrek's Moa and Kea tours are for ages 6 and up. Shotover Jet's daily banner showed a 1.0m minimum height when checked."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Pair a lake cruise or jetboat ride with a half day in Arrowtown, and book cruises and hot pools ahead.",
+      intro: [
+        "Queenstown's lakefront makes an easy base. From Steamer Wharf at 88 Beach Street, RealNZ runs the TSS Earnslaw across Lake Whakatipu; its page says cruises run regularly throughout the day and advises you to book ahead because availability is limited. The same wharf is the departure point for the Walter Peak Gourmet BBQ, a three and a half to four hour outing with a buffet at the Homestead Restaurant and a farm dog show. Up the hill at 51 Brecon Street, Kiwi Park opens every day with seasonal hours, 9:30am to 6:30pm in summer and 9:30am to 5pm in winter, and closes on Christmas Day.",
+        "Arrowtown is worth a half day. The Lakes District Museum at 49 Buckingham Street opens every day from 9am to 5pm and closes on Christmas Day; adult entry is $14 and children under five go free. Its gallery lists an exhibition by Kate Bray from 17 December 2026 to 14 February 2027. At the top end of Buckingham Street, near Bush Creek, the Department of Conservation's Arrowtown Chinese Settlement has a main walk along an old dray track that suits wheelchairs and buggies, though the side tracks do not. Patagonia Chocolates on Ramshaw Lane lists 9am to 6pm daily.",
+        "For adrenaline, Shotover Jet leaves from its beach at 3 Arthurs Point Road, and its daily banner showed a 1.0m minimum height when checked. AJ Hackett's Kawarau Bungy Centre on State Highway 6 in Gibbston sets a minimum bungy age of 10 and says it is open daily except Christmas Day. Ziptrek Ecotours books from 45 Camp Street, and its Moa and Kea tours are for ages 6 and up. Further along Arthurs Point Road, Onsen Hot Pools lists 9am to 11pm and has released bookings up to 30 April 2027, so you can plan well ahead.",
+        "Food and drink cluster around the bay. Fergburger at 42 Shotover Street lists 7am to 2.30am every day, with Fergbaker next door at number 40 opening from 6am. Bespoke Kitchen on Isle Street serves from 7:30am. Eichardt's Bar at 2 Marine Parade takes no reservations and welcomes walk-ins from 11am to 10pm, and Eichardt's, which holds a MICHELIN Key for 2025 and 2026, opens The Grille daily from 11am. Little Blackwood on Steamer Wharf won Best Bar at the 2026 Hospitality New Zealand Awards. Out in Gibbston, Kinross runs its cellar door from 10am to 5pm."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Start at Steamer Wharf for the TSS Earnslaw, then walk up Brecon Street to Kiwi Park, which opens daily except Christmas Day."
+        ],
+        [
+          "A slower morning",
+          "Have breakfast at Bespoke Kitchen on Isle Street from 7:30am, then head to Arrowtown, where the Lakes District Museum opens at 9am every day except Christmas Day."
+        ],
+        [
+          "Before booking",
+          "Book the TSS Earnslaw ahead on RealNZ's site, and check minimum ages: 10 for the Kawarau bungy and 6 for Ziptrek's Moa and Kea tours."
+        ]
+      ],
+      trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on November 17, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

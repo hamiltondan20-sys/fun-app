@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 99.
-- Classifier-passed (published, not fully documented in that format): 93.
+- Source-verified (complete dated evidence format): 100.
+- Classifier-passed (published, not fully documented in that format): 92.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -390,7 +390,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Puglia, Italy | puglia | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Puno, Peru | puno | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Quebec City, Canada | quebec-city | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Queenstown, New Zealand | queenstown | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Queenstown, New Zealand | queenstown | source-verified | source-checked | 26 | 54 | 15 | 15 | None |
 | Rabat, Morocco | rabat | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Raja Ampat, Indonesia | raja-ampat | held-back | not-reviewed | 0 | 4 | 15 | 4 | has 4 named places across 4 categories; needs at least 5 named places across 3 categories |
 | Recife, Brazil | recife | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
