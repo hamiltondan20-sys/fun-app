@@ -1,0 +1,863 @@
+{
+  "city": "Fes, Morocco",
+  "checkedOn": "2026-11-17",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Musée Al Batha des Arts de l'Islam",
+      "kind": "museum",
+      "url": "https://fnm.ma/museums/44",
+      "sourceType": "official public operator (Fondation Nationale des Musées)",
+      "address": "5, Place Batha Oued Fejjaline, Fès",
+      "operatingEvidence": "FNM museum page with current ticket prices (“Moroccans 30 DH, foreigners 60 DH, children 15 DH”) and hours notice; says the palace reopened as a museum in February 2025 after restoration begun in 2019. FNM home page says tickets are sold online.",
+      "hours": "“Ouvert du lundi au dimanche, de 10h à 18h. Fermé le mardi.” (page wording is internally inconsistent; Tuesday closure stated)",
+      "confidence": "high"
+    },
+    {
+      "name": "Institut français de Fès",
+      "kind": "museum",
+      "url": "https://if-maroc.org/fes/evenements/",
+      "sourceType": "official public operator (Institut français du Maroc)",
+      "address": "“Avenue Abou Obeida Ibn Al Jarrah Fès” (https://if-maroc.org/fes/contact-acces/)",
+      "operatingEvidence": "Current agenda lists the exhibition “Il était une fois un souk : Traversée intemporelle”, 18 October to 4 December 2026, plus events on 5 and 11 December 2026.",
+      "hours": "“Toute la semaine” 8h30–12h15 / 14h30–18h30 (contact page)",
+      "confidence": "high"
+    },
+    {
+      "name": "Café Clock (Fez)",
+      "kind": "cafe",
+      "url": "https://www.cafeclock.com/contact-us",
+      "sourceType": "operator's own site",
+      "address": "“7 Derb El Magana, Talaa Kbira”, Fez",
+      "operatingEvidence": "Contact page publishes daily hours; cooking-class page takes online bookings (group class 600 dh, “50% deposit… non-refundable”); Fez gallery page describes “a stunning rooftop terrace with panoramic medina views across to Mount Zalagh”. No dated 2026 content.",
+      "hours": "“9am -11pm daily”",
+      "confidence": "medium"
+    },
+    {
+      "name": "Fez Cooking School (Palais Amani)",
+      "kind": "meal",
+      "url": "https://www.fezcookingschool.com/",
+      "sourceType": "operator's own site",
+      "address": "“12 Derb El Miter, Fes 30000, Morocco”",
+      "operatingEvidence": "Site carries 2026 content on the “L'Olive au Cœur” festival in Fez (12–22 November 2026); Palais Amani's gastronomy page offers “a hands-on cooking workshop at Fez Cooking School at Palais Amani”.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Eden (Palais Amani)",
+      "kind": "meal",
+      "url": "https://www.palaisamani.com/en/gastronomy/",
+      "sourceType": "operator's own site",
+      "address": "“12 Derb El Miter, Oued Zhoune, 30000 Fès” (palaisamani.com home page)",
+      "operatingEvidence": "Page dated 2026-04-08 publishes daily service hours for residents and non-residents and says “Reservations are highly recommended!”; wine-tasting dinner 250€ per person, minimum 2 people.",
+      "hours": "Daily: “Breakfast: 7am to 10:30am”; “Lunch: 12pm to 3pm”; “Dinner: 7:30pm to 10:30pm”",
+      "confidence": "high"
+    },
+    {
+      "name": "Bar (Palais Amani)",
+      "kind": "bar",
+      "url": "https://www.palaisamani.com/en/gastronomy/",
+      "sourceType": "operator's own site",
+      "address": "“12 Derb El Miter, Oued Zhoune, 30000 Fès”",
+      "operatingEvidence": "Gastronomy page (2026-04-08) describes “A living room with fully licenced bar and fireplace”.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Dar Roumana",
+      "kind": "meal",
+      "url": "https://www.darroumana.com/restaurant",
+      "sourceType": "operator's own site",
+      "address": "“30 Derb el Amer, Zkak Roumane, Fes Medina” (darroumana.com home page)",
+      "operatingEvidence": "Restaurant page publishes hours, a “Book a Table” link and current prices: 3 courses 440 dhs, 2 courses 330 dhs, excluding 10% tax; porter from the nearest medina gate on request. No dated 2026 content.",
+      "hours": "Every day from 7pm, last orders 9:30pm; breakfast 8am–10am",
+      "confidence": "medium"
+    },
+    {
+      "name": "Gayza Restaurant (Riad Fès)",
+      "kind": "meal",
+      "url": "https://riadfes.com/restaurant.html",
+      "sourceType": "operator's own site",
+      "address": "“5 Derb Ben Slimane Zerbtana, 30 100, Fès” (riadfes.com home page)",
+      "operatingEvidence": "Restaurant page with table booking by phone and online, lunch and dinner menus (PDF filenames indicate winter 2026–2027 dinner menu); home page runs a 2026 offer from 30 November to 19 December 2026.",
+      "hours": "Lunch daily 12:15–13:45; dinner every day 19:15–22:45",
+      "confidence": "high"
+    },
+    {
+      "name": "The Rooftop (Riad Fès)",
+      "kind": "bar",
+      "url": "https://www.riadfes.com/",
+      "sourceType": "operator's own site",
+      "address": "“5 Derb Ben Slimane Zerbtana, 30 100, Fès”",
+      "operatingEvidence": "Home page with 2026 offer describes “one of the most beautiful views of Fez, its medina and the surrounding mountains”; restaurant page says “Elegant attire is required in the restaurant, bar, and on the Rooftop.”",
+      "hours": "not published",
+      "confidence": "high"
+    },
+    {
+      "name": "L'Amandier (Palais Faraj)",
+      "kind": "meal",
+      "url": "https://www.palaisfaraj.com/",
+      "sourceType": "operator's own site",
+      "address": "“BAB ZIAT, Medina, 30000, Fes, Maroc”",
+      "operatingEvidence": "Home page labels “Restaurant L'Amandier - New Menus 2026” and “Michelin Guide Hotel Selection 2026”; restaurant “offers refined Moroccan and Mediterranean flavors with breathtaking views of the Medina.”",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Golden Bar (Palais Faraj)",
+      "kind": "bar",
+      "url": "https://www.palaisfaraj.com/",
+      "sourceType": "operator's own site",
+      "address": "“BAB ZIAT, Medina, 30000, Fes, Maroc”",
+      "operatingEvidence": "Listed among Palais Faraj's current venues on a page with 2026 content; “exceptional moments with views of the Medina”.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Amaraz Restaurant (Hotel Sahrai)",
+      "kind": "meal",
+      "url": "https://www.hotelsahrai.com/",
+      "sourceType": "operator's own site",
+      "address": "“Bab Lghoul, Dhar El Mehraz, 30 000 Fez, Morocco”",
+      "operatingEvidence": "Home page promotes “Gourmet Moroccan Cuisine at Amaraz Restaurant” alongside a stay offer for 26 November to 19 December 2026.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Restaurant La Maison Bleue",
+      "kind": "meal",
+      "url": "https://www.maisonbleuefes.com/restaurants-bars-lounges/",
+      "sourceType": "operator's own site",
+      "address": "“2 Place de L'Istiqlal, Batha”",
+      "operatingEvidence": "Restaurants page offers “a choice of two à la carte menus comprising traditional Moroccan cuisine”, a menu link and a “Make a Reservation” form. Only 2026 reference is the copyright line.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Karawan Restaurant (Karawan Riad)",
+      "kind": "meal",
+      "url": "https://www.karawanriad.com/",
+      "sourceType": "operator's own site",
+      "address": "“21 Derb Ourbia, Makhfia, Fez Medina, 30000 FEZ” (“next to El Amal Cinema towards R'cif”)",
+      "operatingEvidence": "Home page shows “1 MICHELIN Key 2026” and describes a “bistronomic cuisine menu for both lunch and dinner”.",
+      "hours": "not published (restaurant page returned 404)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Fez Café (Jardin des Biehn)",
+      "kind": "meal",
+      "url": "https://www.jardindesbiehn.com/",
+      "sourceType": "operator's own site",
+      "address": "“13, Akbat Sbaa, Douh 30110, Fès Médina”",
+      "operatingEvidence": "Home page with 2026 content (an exhibition by Catherine Biehn from 19 September 2026) describes Fez Café's Saturday evening “Repas-concert” of Arabo-Andalusian music and a restaurant reservation link.",
+      "hours": "not readable (restaurant page returned 404)",
+      "confidence": "medium"
+    },
+    {
+      "name": "La Dolce Vita (Barceló Fès Medina)",
+      "kind": "meal",
+      "url": "https://www.barcelo.com/en-gb/barcelo-fes-medina/cuisine/",
+      "sourceType": "operator's own site (Barceló Hotel Group)",
+      "address": "“53 Av Hassan II, 30000, Fes” (hotel page)",
+      "operatingEvidence": "Cuisine page: “Booking required”, online booking form; Italian cuisine by chef Niki Pavanelli, “awarded a Michelin star in 2025”. Hotel page carries 2026 offers.",
+      "hours": "Monday to Saturday 13:00–23:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Le Bistrot (Barceló Fès Medina)",
+      "kind": "meal",
+      "url": "https://www.barcelo.com/en-gb/barcelo-fes-medina/cuisine/",
+      "sourceType": "operator's own site (Barceló Hotel Group)",
+      "address": "“53 Av Hassan II, 30000, Fes”",
+      "operatingEvidence": "Cuisine page lists a breakfast buffet and Moroccan and international dishes with current service times.",
+      "hours": "Breakfast Mon–Fri 07:00–10:30, Sat–Sun 07:00–11:00; lunch 12:00–15:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Cocoa Café (Barceló Fès Medina)",
+      "kind": "cafe",
+      "url": "https://www.barcelo.com/en-gb/barcelo-fes-medina/cuisine/",
+      "sourceType": "operator's own site (Barceló Hotel Group)",
+      "address": "“53 Av Hassan II, 30000, Fes”",
+      "operatingEvidence": "Cuisine page: café inspired by Parisian cafés, with a terrace, serving coffee, snacks and cocktails.",
+      "hours": "11:00–19:00",
+      "confidence": "high"
+    },
+    {
+      "name": "B-Lounge (Barceló Fès Medina)",
+      "kind": "bar",
+      "url": "https://www.barcelo.com/en-gb/barcelo-fes-medina/cuisine/",
+      "sourceType": "operator's own site (Barceló Hotel Group)",
+      "address": "“53 Av Hassan II, 30000, Fes”",
+      "operatingEvidence": "Cuisine page: bar with live music in the evening.",
+      "hours": "Daily 11:00–24:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Jnan L'Fassi (Fes Marriott Hotel Jnan Palace)",
+      "kind": "meal",
+      "url": "https://www.marriott.com/en-us/hotels/fezmc-fes-marriott-hotel-jnan-palace/dining/",
+      "sourceType": "operator's own site (Marriott International)",
+      "address": "“8 Avenue Ahmed Chaouki, Fes, Morocco, 30000”",
+      "operatingEvidence": "Dining page lists Moroccan food with live music Monday to Saturday, current hours and a current renovation notice for another outlet.",
+      "hours": "Mon–Sat 7:00 PM–12:00 AM; closed Sunday",
+      "confidence": "high"
+    },
+    {
+      "name": "Marriott Café (Fes Marriott Hotel Jnan Palace)",
+      "kind": "meal",
+      "url": "https://www.marriott.com/en-us/hotels/fezmc-fes-marriott-hotel-jnan-palace/dining/",
+      "sourceType": "operator's own site (Marriott International)",
+      "address": "“8 Avenue Ahmed Chaouki, Fes, Morocco, 30000”",
+      "operatingEvidence": "Dining page: buffet breakfast with live cooking; “Dress Code: Casual”.",
+      "hours": "Mon–Fri 6:30 AM–10:30 AM; Sat–Sun 6:30 AM–11:00 AM",
+      "confidence": "high"
+    },
+    {
+      "name": "Croon Lounge (Fes Marriott Hotel Jnan Palace)",
+      "kind": "bar",
+      "url": "https://www.marriott.com/en-us/hotels/fezmc-fes-marriott-hotel-jnan-palace/dining/",
+      "sourceType": "operator's own site (Marriott International)",
+      "address": "“8 Avenue Ahmed Chaouki, Fes, Morocco, 30000”",
+      "operatingEvidence": "Dining page: cocktails and small plates in a lively lounge.",
+      "hours": "Everyday 7:00 PM–2:00 AM",
+      "confidence": "high"
+    },
+    {
+      "name": "EME Lounge (Fes Marriott Hotel Jnan Palace)",
+      "kind": "bar",
+      "url": "https://www.marriott.com/en-us/hotels/fezmc-fes-marriott-hotel-jnan-palace/dining/",
+      "sourceType": "operator's own site (Marriott International)",
+      "address": "“8 Avenue Ahmed Chaouki, Fes, Morocco, 30000”",
+      "operatingEvidence": "Dining page: whiskies and premium cigars; “Dress Code: Smart Casual”.",
+      "hours": "Everyday 3:00 PM–2:00 AM",
+      "confidence": "high"
+    },
+    {
+      "name": "Bouquet Garni (Fes Marriott Hotel Jnan Palace)",
+      "kind": "meal",
+      "url": "https://www.marriott.com/en-us/hotels/fezmc-fes-marriott-hotel-jnan-palace/dining/",
+      "sourceType": "operator's own site (Marriott International)",
+      "address": "“8 Avenue Ahmed Chaouki, Fes, Morocco, 30000”",
+      "operatingEvidence": "Dining page: refined French cooking, with current hours.",
+      "hours": "Everyday 12:00 PM–1:00 AM",
+      "confidence": "high"
+    },
+    {
+      "name": "Pachamama (Fes Marriott Hotel Jnan Palace)",
+      "kind": "meal",
+      "url": "https://www.marriott.com/en-us/hotels/fezmc-fes-marriott-hotel-jnan-palace/dining/",
+      "sourceType": "operator's own site (Marriott International)",
+      "address": "“8 Avenue Ahmed Chaouki, Fes, Morocco, 30000”",
+      "operatingEvidence": "Dining page: Spanish, Mediterranean-inspired flavours with live entertainment.",
+      "hours": "Everyday 12:00 PM–12:00 AM",
+      "confidence": "high"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Fes el Bali",
+      "reason": "district, not a single operated place; no official operator page",
+      "url": ""
+    },
+    {
+      "name": "Al Quaraouiyine area",
+      "reason": "area, not a specific place; no official visitor page with address and hours found",
+      "url": ""
+    },
+    {
+      "name": "Bou Inania Madrasa",
+      "reason": "no official operator or ministry page found; only travel guides and aggregators publish hours",
+      "url": ""
+    },
+    {
+      "name": "Tannery viewpoint",
+      "reason": "generic, not a place (no named operator)",
+      "url": ""
+    },
+    {
+      "name": "The Ruined Garden",
+      "reason": "ruinedgarden.com now shows unrelated gambling content, no restaurant details; not confirmable",
+      "url": "https://www.ruinedgarden.com/"
+    },
+    {
+      "name": "Nur",
+      "reason": "nur.ma redirects (301) to a betting site; no official restaurant page",
+      "url": "https://www.nur.ma/"
+    },
+    {
+      "name": "Musée Nejjarine des Arts et Métiers du Bois",
+      "reason": "official site failed with certificate error (“unable to verify the first certificate”); not bypassed",
+      "url": "https://www.nejjarine.co.ma/"
+    },
+    {
+      "name": "Musée de la Culture Juive Marocaine",
+      "reason": "FNM page gives only “Mellah de Fès”, no exact address, and prices “Tarifs à venir”",
+      "url": "https://fnm.ma/museums/56"
+    },
+    {
+      "name": "Jnan Sbil Garden",
+      "reason": "Fondation Mohammed VI page gives no street address or hours; its 2026 PDF exceeded fetch size; the foundation rehabilitated rather than runs the garden",
+      "url": "https://fm6e.org/en/programme/jnane-sbil/"
+    },
+    {
+      "name": "Borj Nord arms museum",
+      "reason": "no official operator page found",
+      "url": ""
+    },
+    {
+      "name": "Sofitel Fès Palais Jamaï",
+      "reason": "no official hotel page found on Accor/Sofitel sites",
+      "url": ""
+    },
+    {
+      "name": "PAUL (Fès)",
+      "reason": "no official page with a Fès branch address found",
+      "url": ""
+    },
+    {
+      "name": "Les Mérinides",
+      "reason": "hotel page names no restaurant or bar and shows no current operating evidence beyond copyright; latest review 2025",
+      "url": "https://www.lesmerinides.com/"
+    },
+    {
+      "name": "Hotel Sahrai rooftop bar",
+      "reason": "mentioned but unnamed, no hours",
+      "url": "https://www.hotelsahrai.com/"
+    },
+    {
+      "name": "The Blue Lounge (La Maison Bleue)",
+      "reason": "page does not say which of the two properties it is in",
+      "url": "https://www.maisonbleuefes.com/restaurants-bars-lounges/"
+    },
+    {
+      "name": "Café Clock Baking & Patisserie Class",
+      "reason": "class page does not name the city where it is held",
+      "url": "https://www.cafeclock.com/bread-patisserie-class"
+    },
+    {
+      "name": "Craft workshop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Madrasa and medina walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "a traditional medina dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Fes market or cafe",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local dinner in Fes el Bali",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Ville Nouvelle",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Mellah",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Fes el Bali",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Fes el Bali walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Ville Nouvelle",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Mellah",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Mellah",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Fes el Bali",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Fes el Bali",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Tannery viewpoint",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Ville Nouvelle",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Al Quaraouiyine area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Fes el Bali evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Ville Nouvelle",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Mellah",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Fes el Bali",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Fes el Bali",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Ville Nouvelle",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Mellah",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Fes el Bali",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Fes el Bali",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Fes el Bali cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Craft workshop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Mellah",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Mellah",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Fes el Bali",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Fes el Bali",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Ville Nouvelle bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Fes el Bali",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Mellah",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Fes el Bali",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Al Quaraouiyine area",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Mellah",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Fes el Bali",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Ville Nouvelle",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Mellah",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Fes el Bali",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Fes el Bali",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Ville Nouvelle",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Bou Inania Madrasa",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Fes el Bali",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Ville Nouvelle morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Fes el Bali",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Mellah",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Fes el Bali",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Ville Nouvelle",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Mellah",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Musée Al Batha des Arts de l'Islam",
+        "Institut français de Fès",
+        "The Rooftop (Riad Fès)",
+        "Café Clock (Fez)"
+      ],
+      "bestFirstTimers": [
+        "Musée Al Batha des Arts de l'Islam",
+        "Café Clock (Fez)",
+        "Fez Cooking School (Palais Amani)",
+        "The Rooftop (Riad Fès)"
+      ],
+      "bestRestaurants": [
+        "Gayza Restaurant (Riad Fès)",
+        "Dar Roumana",
+        "Karawan Restaurant (Karawan Riad)",
+        "Eden (Palais Amani)"
+      ],
+      "bestBudget": [
+        "Musée Al Batha des Arts de l'Islam",
+        "Institut français de Fès",
+        "Café Clock (Fez)"
+      ],
+      "bestLuxury": [
+        "Gayza Restaurant (Riad Fès)",
+        "L'Amandier (Palais Faraj)",
+        "Amaraz Restaurant (Hotel Sahrai)",
+        "La Dolce Vita (Barceló Fès Medina)"
+      ],
+      "bestCouples": [
+        "The Rooftop (Riad Fès)",
+        "Fez Café (Jardin des Biehn)",
+        "Dar Roumana",
+        "L'Amandier (Palais Faraj)"
+      ],
+      "bestKids": [
+        "Musée Al Batha des Arts de l'Islam",
+        "Café Clock (Fez)"
+      ],
+      "bestSolo": [
+        "Café Clock (Fez)",
+        "Institut français de Fès",
+        "Musée Al Batha des Arts de l'Islam",
+        "Cocoa Café (Barceló Fès Medina)"
+      ],
+      "bestUnique": [
+        "Fez Cooking School (Palais Amani)",
+        "Café Clock (Fez)",
+        "Fez Café (Jardin des Biehn)",
+        "EME Lounge (Fes Marriott Hotel Jnan Palace)"
+      ],
+      "bestBreakfast": [
+        "Eden (Palais Amani)",
+        "Le Bistrot (Barceló Fès Medina)",
+        "Marriott Café (Fes Marriott Hotel Jnan Palace)",
+        "Café Clock (Fez)"
+      ],
+      "bestLunch": [
+        "Gayza Restaurant (Riad Fès)",
+        "Eden (Palais Amani)",
+        "Le Bistrot (Barceló Fès Medina)",
+        "Karawan Restaurant (Karawan Riad)"
+      ],
+      "bestDinner": [
+        "Dar Roumana",
+        "Jnan L'Fassi (Fes Marriott Hotel Jnan Palace)",
+        "Restaurant La Maison Bleue",
+        "Bouquet Garni (Fes Marriott Hotel Jnan Palace)"
+      ],
+      "bestCocktails": [
+        "The Rooftop (Riad Fès)",
+        "Croon Lounge (Fes Marriott Hotel Jnan Palace)",
+        "B-Lounge (Barceló Fès Medina)",
+        "The Golden Bar (Palais Faraj)"
+      ],
+      "bestBakeries": [],
+      "bestCoffee": [
+        "Café Clock (Fez)",
+        "Cocoa Café (Barceló Fès Medina)"
+      ]
+    },
+    "queries": {
+      "Musée Al Batha des Arts de l'Islam": "Musée Al Batha 5 Place Batha Oued Fejjaline Fes",
+      "Institut français de Fès": "Institut français de Fès Avenue Abou Obeida Ibn Al Jarrah Fes",
+      "Café Clock (Fez)": "Cafe Clock 7 Derb El Magana Talaa Kbira Fes",
+      "Fez Cooking School (Palais Amani)": "Fez Cooking School Palais Amani 12 Derb El Miter Fes",
+      "Eden (Palais Amani)": "Palais Amani 12 Derb El Miter Oued Zhoune Fes",
+      "Bar (Palais Amani)": "Palais Amani 12 Derb El Miter Oued Zhoune Fes",
+      "Dar Roumana": "Dar Roumana 30 Derb el Amer Zkak Roumane Fes",
+      "Gayza Restaurant (Riad Fès)": "Riad Fes 5 Derb Ben Slimane Zerbtana Fes",
+      "The Rooftop (Riad Fès)": "Riad Fes 5 Derb Ben Slimane Zerbtana Fes",
+      "L'Amandier (Palais Faraj)": "Palais Faraj Bab Ziat Fes",
+      "The Golden Bar (Palais Faraj)": "Palais Faraj Bab Ziat Fes",
+      "Amaraz Restaurant (Hotel Sahrai)": "Hotel Sahrai Bab Lghoul Dhar El Mehraz Fes",
+      "Restaurant La Maison Bleue": "La Maison Bleue 2 Place de l'Istiqlal Batha Fes",
+      "Karawan Restaurant (Karawan Riad)": "Karawan Riad 21 Derb Ourbia Makhfia Fes",
+      "Fez Café (Jardin des Biehn)": "Fez Cafe Jardin des Biehn 13 Akbat Sbaa Douh Fes",
+      "La Dolce Vita (Barceló Fès Medina)": "Barcelo Fes Medina 53 Avenue Hassan II Fes",
+      "Le Bistrot (Barceló Fès Medina)": "Barcelo Fes Medina 53 Avenue Hassan II Fes",
+      "Cocoa Café (Barceló Fès Medina)": "Barcelo Fes Medina 53 Avenue Hassan II Fes",
+      "B-Lounge (Barceló Fès Medina)": "Barcelo Fes Medina 53 Avenue Hassan II Fes",
+      "Jnan L'Fassi (Fes Marriott Hotel Jnan Palace)": "Fes Marriott Hotel Jnan Palace 8 Avenue Ahmed Chaouki Fes",
+      "Marriott Café (Fes Marriott Hotel Jnan Palace)": "Fes Marriott Hotel Jnan Palace 8 Avenue Ahmed Chaouki Fes",
+      "Croon Lounge (Fes Marriott Hotel Jnan Palace)": "Fes Marriott Hotel Jnan Palace 8 Avenue Ahmed Chaouki Fes",
+      "EME Lounge (Fes Marriott Hotel Jnan Palace)": "Fes Marriott Hotel Jnan Palace 8 Avenue Ahmed Chaouki Fes",
+      "Bouquet Garni (Fes Marriott Hotel Jnan Palace)": "Fes Marriott Hotel Jnan Palace 8 Avenue Ahmed Chaouki Fes",
+      "Pachamama (Fes Marriott Hotel Jnan Palace)": "Fes Marriott Hotel Jnan Palace 8 Avenue Ahmed Chaouki Fes"
+    },
+    "summary": "A restored palace museum, a cultural institute, cooking schools, medina riad restaurants and Ville Nouvelle hotel bars, each checked against its own website.",
+    "highlights": [
+      "Musée Al Batha des Arts de l'Islam",
+      "Café Clock (Fez)",
+      "Institut français de Fès",
+      "The Rooftop (Riad Fès)"
+    ],
+    "tip": "Musée Al Batha des Arts de l'Islam is closed on Tuesdays and Jnan L'Fassi at the Marriott is closed on Sundays, while Café Clock lists 9am to 11pm daily.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Tuesdays and Sundays",
+        "copy": "Musée Al Batha des Arts de l'Islam is closed on Tuesdays, and Jnan L'Fassi at the Fes Marriott Hotel Jnan Palace is closed on Sundays. Café Clock lists 9am to 11pm daily, and Eden at Palais Amani serves every day."
+      },
+      {
+        "label": "Tickets",
+        "value": "60 DH at Al Batha",
+        "copy": "Musée Al Batha charges foreign visitors 60 DH, Moroccans 30 DH and children 15 DH, and the Fondation Nationale des Musées sells tickets online. A group cooking class at Café Clock costs 600 dh per person."
+      },
+      {
+        "label": "Booking",
+        "value": "Reserve dinners",
+        "copy": "La Dolce Vita at the Barceló says booking is required, Eden at Palais Amani says reservations are highly recommended, and Dar Roumana suggests booking ahead or at least at breakfast. Café Clock takes a non-refundable 50% deposit for cooking classes."
+      },
+      {
+        "label": "Dress code",
+        "value": "Elegant at Riad Fès",
+        "copy": "Riad Fès requires elegant attire in Gayza, the bar and on the Rooftop, with no flip-flops, football jerseys or large bags, and no shorts after 7pm except for children under 12. EME Lounge at the Marriott asks for smart casual."
+      }
+    ],
+    "dek": "Book medina dinners ahead, and keep your Musée Al Batha visit off Tuesdays.",
+    "intro": [
+      "Start with the Musée Al Batha des Arts de l'Islam at 5 Place Batha. The Fondation Nationale des Musées says the palace reopened as a museum in February 2025 after restoration work that began in 2019. Its page lists 10:00 to 18:00 and says the museum is closed on Tuesdays. Tickets cost 60 DH for foreign visitors, 30 DH for Moroccans and 15 DH for children. For something current, the Institut français de Fès on Avenue Abou Obeida Ibn Al Jarrah shows the exhibition “Il était une fois un souk : Traversée intemporelle” from 18 October to 4 December 2026.",
+      "In the medina, Café Clock occupies a 250-year-old converted townhouse at 7 Derb El Magana, off Talaa Kbira, and its contact page lists 9am to 11pm daily. Its rooftop terrace looks across the medina to Mount Zalagh. You can book its traditional cooking class online: arrival is at 10:00, a market visit comes first, and the group price is 600 dh per person with a non-refundable 50% deposit. Fez Cooking School runs hands-on workshops at Palais Amani, 12 Derb El Miter, where Eden serves breakfast, lunch and dinner every day.",
+      "For a medina dinner, Gayza at Riad Fès serves lunch from 12:15 to 13:45 and dinner from 19:15 to 22:45 every day. Elegant attire is required there, in the bar and on the Rooftop, which looks over the medina to the mountains. Dar Roumana, at 30 Derb el Amer, opens from 7pm with last orders at 9:30pm, and three courses cost 440 dhs before 10% tax. If you are staying elsewhere, mention it when booking and a porter can meet you at the nearest medina gate.",
+      "In the Ville Nouvelle, the Barceló Fès Medina at 53 Avenue Hassan II runs La Dolce Vita, an Italian restaurant by chef Niki Pavanelli, open Monday to Saturday from 13:00 to 23:00, and booking is required. Its Cocoa Café serves coffee and snacks from 11:00 to 19:00. At the Fes Marriott Hotel Jnan Palace, 8 Avenue Ahmed Chaouki, Jnan L'Fassi pairs Moroccan food with live music from Monday to Saturday and is closed on Sundays. Croon Lounge serves cocktails and tapas from 7pm to 2am."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair the Musée Al Batha des Arts de l'Islam, closed on Tuesdays, with lunch or a cooking class at Café Clock on Derb El Magana."
+      ],
+      [
+        "A slower morning",
+        "Eden at Palais Amani serves breakfast from 7am to 10:30am every day, and Café Clock opens at 9am."
+      ],
+      [
+        "Before booking",
+        "La Dolce Vita requires a reservation, Jnan L'Fassi is closed on Sundays and the Musée Al Batha is closed on Tuesdays."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The Musée Al Batha page says both “Ouvert du lundi au dimanche” and “Fermé le mardi”; the guide follows the Tuesday closure. Opening hours were not published for L'Amandier, The Golden Bar, Amaraz, Restaurant La Maison Bleue, The Rooftop, the Palais Amani bar or Fez Cooking School, and Fez Café's and Karawan's restaurant pages returned 404, so their hours were not read. Café Clock and Dar Roumana showed no dated 2026 content, only current hours, prices and booking. The Musée Nejjarine site failed with a certificate error, a Riad Fès sub-page returned 403, and the Jnan Sbil PDF was too large to read. Bou Inania Madrasa, Al Quaraouiyine, the tanneries and Borj Nord had no official operator page with an address and hours, so they are left out. The Ruined Garden's and Nur's domains no longer show their restaurants. No bakery with an official page and Fès address was found, so the bakeries list is empty.",
+  "injectionLikeText": []
+}

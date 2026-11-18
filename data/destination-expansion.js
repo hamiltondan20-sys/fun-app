@@ -9851,4 +9851,108 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 24 distinct recommendations in this guide were checked against their operators' own websites on November 5, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Fes, Morocco: source review of 2026-11-17 (docs/content-research/fes-2026-11-17.md).
+  {
+    const cityKey = "Fes, Morocco";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Musée Al Batha des Arts de l'Islam","Institut français de Fès","The Rooftop (Riad Fès)","Café Clock (Fez)"],
+      bestFirstTimers: ["Musée Al Batha des Arts de l'Islam","Café Clock (Fez)","Fez Cooking School (Palais Amani)","The Rooftop (Riad Fès)"],
+      bestRestaurants: ["Gayza Restaurant (Riad Fès)","Dar Roumana","Karawan Restaurant (Karawan Riad)","Eden (Palais Amani)"],
+      bestBudget: ["Musée Al Batha des Arts de l'Islam","Institut français de Fès","Café Clock (Fez)"],
+      bestLuxury: ["Gayza Restaurant (Riad Fès)","L'Amandier (Palais Faraj)","Amaraz Restaurant (Hotel Sahrai)","La Dolce Vita (Barceló Fès Medina)"],
+      bestCouples: ["The Rooftop (Riad Fès)","Fez Café (Jardin des Biehn)","Dar Roumana","L'Amandier (Palais Faraj)"],
+      bestKids: ["Musée Al Batha des Arts de l'Islam","Café Clock (Fez)"],
+      bestSolo: ["Café Clock (Fez)","Institut français de Fès","Musée Al Batha des Arts de l'Islam","Cocoa Café (Barceló Fès Medina)"],
+      bestUnique: ["Fez Cooking School (Palais Amani)","Café Clock (Fez)","Fez Café (Jardin des Biehn)","EME Lounge (Fes Marriott Hotel Jnan Palace)"],
+      bestBreakfast: ["Eden (Palais Amani)","Le Bistrot (Barceló Fès Medina)","Marriott Café (Fes Marriott Hotel Jnan Palace)","Café Clock (Fez)"],
+      bestLunch: ["Gayza Restaurant (Riad Fès)","Eden (Palais Amani)","Le Bistrot (Barceló Fès Medina)","Karawan Restaurant (Karawan Riad)"],
+      bestDinner: ["Dar Roumana","Jnan L'Fassi (Fes Marriott Hotel Jnan Palace)","Restaurant La Maison Bleue","Bouquet Garni (Fes Marriott Hotel Jnan Palace)"],
+      bestCocktails: ["The Rooftop (Riad Fès)","Croon Lounge (Fes Marriott Hotel Jnan Palace)","B-Lounge (Barceló Fès Medina)","The Golden Bar (Palais Faraj)"],
+      bestBakeries: [],
+      bestCoffee: ["Café Clock (Fez)","Cocoa Café (Barceló Fès Medina)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Musée Al Batha des Arts de l'Islam": "Musée Al Batha 5 Place Batha Oued Fejjaline Fes",
+      "Institut français de Fès": "Institut français de Fès Avenue Abou Obeida Ibn Al Jarrah Fes",
+      "The Rooftop (Riad Fès)": "Riad Fes 5 Derb Ben Slimane Zerbtana Fes",
+      "Café Clock (Fez)": "Cafe Clock 7 Derb El Magana Talaa Kbira Fes",
+      "Fez Cooking School (Palais Amani)": "Fez Cooking School Palais Amani 12 Derb El Miter Fes",
+      "Gayza Restaurant (Riad Fès)": "Riad Fes 5 Derb Ben Slimane Zerbtana Fes",
+      "Dar Roumana": "Dar Roumana 30 Derb el Amer Zkak Roumane Fes",
+      "Karawan Restaurant (Karawan Riad)": "Karawan Riad 21 Derb Ourbia Makhfia Fes",
+      "Eden (Palais Amani)": "Palais Amani 12 Derb El Miter Oued Zhoune Fes",
+      "L'Amandier (Palais Faraj)": "Palais Faraj Bab Ziat Fes",
+      "Amaraz Restaurant (Hotel Sahrai)": "Hotel Sahrai Bab Lghoul Dhar El Mehraz Fes",
+      "La Dolce Vita (Barceló Fès Medina)": "Barcelo Fes Medina 53 Avenue Hassan II Fes",
+      "Fez Café (Jardin des Biehn)": "Fez Cafe Jardin des Biehn 13 Akbat Sbaa Douh Fes",
+      "Cocoa Café (Barceló Fès Medina)": "Barcelo Fes Medina 53 Avenue Hassan II Fes",
+      "EME Lounge (Fes Marriott Hotel Jnan Palace)": "Fes Marriott Hotel Jnan Palace 8 Avenue Ahmed Chaouki Fes",
+      "Le Bistrot (Barceló Fès Medina)": "Barcelo Fes Medina 53 Avenue Hassan II Fes",
+      "Marriott Café (Fes Marriott Hotel Jnan Palace)": "Fes Marriott Hotel Jnan Palace 8 Avenue Ahmed Chaouki Fes",
+      "Jnan L'Fassi (Fes Marriott Hotel Jnan Palace)": "Fes Marriott Hotel Jnan Palace 8 Avenue Ahmed Chaouki Fes",
+      "Restaurant La Maison Bleue": "La Maison Bleue 2 Place de l'Istiqlal Batha Fes",
+      "Bouquet Garni (Fes Marriott Hotel Jnan Palace)": "Fes Marriott Hotel Jnan Palace 8 Avenue Ahmed Chaouki Fes",
+      "Croon Lounge (Fes Marriott Hotel Jnan Palace)": "Fes Marriott Hotel Jnan Palace 8 Avenue Ahmed Chaouki Fes",
+      "B-Lounge (Barceló Fès Medina)": "Barcelo Fes Medina 53 Avenue Hassan II Fes",
+      "The Golden Bar (Palais Faraj)": "Palais Faraj Bab Ziat Fes"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Fes" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "A restored palace museum, a cultural institute, cooking schools, medina riad restaurants and Ville Nouvelle hotel bars, each checked against its own website.";
+    cityGuide.highlights = ["Musée Al Batha des Arts de l'Islam","Café Clock (Fez)","Institut français de Fès","The Rooftop (Riad Fès)"];
+    cityGuide.tip = "Musée Al Batha des Arts de l'Islam is closed on Tuesdays and Jnan L'Fassi at the Marriott is closed on Sundays, while Café Clock lists 9am to 11pm daily.";
+    data.destinationFacts[cityKey] = "Musée Al Batha des Arts de l'Islam is closed on Tuesdays and Jnan L'Fassi at the Marriott is closed on Sundays, while Café Clock lists 9am to 11pm daily.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "A restored palace museum, a cultural institute, cooking schools, medina riad restaurants and Ville Nouvelle hotel bars, each checked against its own website.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Tuesdays and Sundays",
+        "copy": "Musée Al Batha des Arts de l'Islam is closed on Tuesdays, and Jnan L'Fassi at the Fes Marriott Hotel Jnan Palace is closed on Sundays. Café Clock lists 9am to 11pm daily, and Eden at Palais Amani serves every day."
+      },
+      {
+        "label": "Tickets",
+        "value": "60 DH at Al Batha",
+        "copy": "Musée Al Batha charges foreign visitors 60 DH, Moroccans 30 DH and children 15 DH, and the Fondation Nationale des Musées sells tickets online. A group cooking class at Café Clock costs 600 dh per person."
+      },
+      {
+        "label": "Booking",
+        "value": "Reserve dinners",
+        "copy": "La Dolce Vita at the Barceló says booking is required, Eden at Palais Amani says reservations are highly recommended, and Dar Roumana suggests booking ahead or at least at breakfast. Café Clock takes a non-refundable 50% deposit for cooking classes."
+      },
+      {
+        "label": "Dress code",
+        "value": "Elegant at Riad Fès",
+        "copy": "Riad Fès requires elegant attire in Gayza, the bar and on the Rooftop, with no flip-flops, football jerseys or large bags, and no shorts after 7pm except for children under 12. EME Lounge at the Marriott asks for smart casual."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Book medina dinners ahead, and keep your Musée Al Batha visit off Tuesdays.",
+      intro: [
+        "Start with the Musée Al Batha des Arts de l'Islam at 5 Place Batha. The Fondation Nationale des Musées says the palace reopened as a museum in February 2025 after restoration work that began in 2019. Its page lists 10:00 to 18:00 and says the museum is closed on Tuesdays. Tickets cost 60 DH for foreign visitors, 30 DH for Moroccans and 15 DH for children. For something current, the Institut français de Fès on Avenue Abou Obeida Ibn Al Jarrah shows the exhibition “Il était une fois un souk : Traversée intemporelle” from 18 October to 4 December 2026.",
+        "In the medina, Café Clock occupies a 250-year-old converted townhouse at 7 Derb El Magana, off Talaa Kbira, and its contact page lists 9am to 11pm daily. Its rooftop terrace looks across the medina to Mount Zalagh. You can book its traditional cooking class online: arrival is at 10:00, a market visit comes first, and the group price is 600 dh per person with a non-refundable 50% deposit. Fez Cooking School runs hands-on workshops at Palais Amani, 12 Derb El Miter, where Eden serves breakfast, lunch and dinner every day.",
+        "For a medina dinner, Gayza at Riad Fès serves lunch from 12:15 to 13:45 and dinner from 19:15 to 22:45 every day. Elegant attire is required there, in the bar and on the Rooftop, which looks over the medina to the mountains. Dar Roumana, at 30 Derb el Amer, opens from 7pm with last orders at 9:30pm, and three courses cost 440 dhs before 10% tax. If you are staying elsewhere, mention it when booking and a porter can meet you at the nearest medina gate.",
+        "In the Ville Nouvelle, the Barceló Fès Medina at 53 Avenue Hassan II runs La Dolce Vita, an Italian restaurant by chef Niki Pavanelli, open Monday to Saturday from 13:00 to 23:00, and booking is required. Its Cocoa Café serves coffee and snacks from 11:00 to 19:00. At the Fes Marriott Hotel Jnan Palace, 8 Avenue Ahmed Chaouki, Jnan L'Fassi pairs Moroccan food with live music from Monday to Saturday and is closed on Sundays. Croon Lounge serves cocktails and tapas from 7pm to 2am."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair the Musée Al Batha des Arts de l'Islam, closed on Tuesdays, with lunch or a cooking class at Café Clock on Derb El Magana."
+        ],
+        [
+          "A slower morning",
+          "Eden at Palais Amani serves breakfast from 7am to 10:30am every day, and Café Clock opens at 9am."
+        ],
+        [
+          "Before booking",
+          "La Dolce Vita requires a reservation, Jnan L'Fassi is closed on Sundays and the Musée Al Batha is closed on Tuesdays."
+        ]
+      ],
+      trust: "All 23 distinct recommendations in this guide were checked against their operators' own websites on November 17, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

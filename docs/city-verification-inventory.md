@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 94.
-- Classifier-passed (published, not fully documented in that format): 98.
+- Source-verified (complete dated evidence format): 95.
+- Classifier-passed (published, not fully documented in that format): 97.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -176,7 +176,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Essaouira, Morocco | essaouira | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Evora, Portugal | evora | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Faro, Portugal | faro | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Fes, Morocco | fes | classifier-passed | not-reviewed | 0 | 5 | 15 | 3 | None |
+| Fes, Morocco | fes | source-verified | source-checked | 23 | 37 | 14 | 14 | None |
 | Florence, Italy | florence | source-verified | source-checked | 27 | 52 | 15 | 15 | None |
 | Florianopolis, Brazil | florianopolis | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Fortaleza, Brazil | fortaleza | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
