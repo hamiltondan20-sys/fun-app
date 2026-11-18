@@ -1,0 +1,997 @@
+{
+  "city": "Manila, Philippines",
+  "checkedOn": "2026-11-17",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Fort Santiago",
+      "kind": "landmark",
+      "url": "https://intramuros.gov.ph/?p=6158",
+      "sourceType": "official public operator (Intramuros Administration)",
+      "address": "\"Sta. Clara St.\", Intramuros, Manila",
+      "operatingEvidence": "Listed among Intramuros Administration managed sites with tickets \"Regular PHP 75.00\". The Administration's homepage carries a current events calendar, including Intramuros events on 21 and 22 November.",
+      "hours": "From the hours page marked \"Updated: 20 September 2023\": Mon–Fri \"8 AM – 10 PM\" (last entry 8 PM); Sat–Sun \"6 AM – 10 PM\" (last entry 8:30 PM); open every day. Not confirmed on a 2026-dated page.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Casa Manila Museum",
+      "kind": "museum",
+      "url": "https://intramuros.gov.ph/?p=6158",
+      "sourceType": "official public operator (Intramuros Administration)",
+      "address": "\"Real St. cor. Gen. Luna St.\", Intramuros, Manila",
+      "operatingEvidence": "Listed as an Intramuros Administration managed site with admission \"₱75 regular, ₱50 discounted\"; the Administration's homepage shows a current events calendar.",
+      "hours": "From the hours page marked \"Updated: 20 September 2023\": \"Closed Mondays\"; Tue–Sun \"9 AM – 6 PM\" (last entry given as 4 PM on one version and 5 PM on another). Not confirmed on a 2026-dated page.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Baluarte de San Diego",
+      "kind": "landmark",
+      "url": "https://intramuros.gov.ph/?p=6158",
+      "sourceType": "official public operator (Intramuros Administration)",
+      "address": "\"Sta. Lucia St. cor. Muralla St\", Intramuros, Manila",
+      "operatingEvidence": "Listed as an Intramuros Administration managed site, admission \"₱75 regular, ₱50 discounted\"; the Administration's homepage shows a current events calendar.",
+      "hours": "From the hours page marked \"Updated: 20 September 2023\": daily \"8 AM – 5 PM\" (last entry 4 PM).",
+      "confidence": "medium"
+    },
+    {
+      "name": "Museo de Intramuros",
+      "kind": "museum",
+      "url": "https://intramuros.gov.ph/?p=6158",
+      "sourceType": "official public operator (Intramuros Administration)",
+      "address": "\"Real St. cor. Anda St.\", Intramuros, Manila",
+      "operatingEvidence": "Listed as an Intramuros Administration managed site, \"₱150 regular, ₱120 discounted\" (paid access shared with Centro de Turismo Intramuros); the Administration's homepage shows a current events calendar.",
+      "hours": "From the hours page marked \"Updated: 20 September 2023\": \"Closed Mondays\"; Tue–Sun \"9 AM – 6 PM\" (last entry 4:30 PM).",
+      "confidence": "medium"
+    },
+    {
+      "name": "National Museum of Fine Arts",
+      "kind": "museum",
+      "url": "https://www.nationalmuseum.gov.ph/category/news-and-events/",
+      "sourceType": "official public operator (National Museum of the Philippines)",
+      "address": "\"P. Burgos Drive, Rizal Park, Manila\"",
+      "operatingEvidence": "31 October 2026 post: \"The National Museum of Fine Arts is open daily, from 9:00 AM to 6:00 PM. Admission is FREE.\" The 26 August 2026 post says \"Sansó: Pusong Pilipino – A Juvenal Sansó Retrospective\" (Gallery XV, 3/F) runs until 28 February 2027.",
+      "hours": "\"open daily, from 9:00 AM to 6:00 PM\" (31 October 2026 post)",
+      "confidence": "high"
+    },
+    {
+      "name": "National Museum of Natural History",
+      "kind": "museum",
+      "url": "https://www.nationalmuseum.gov.ph/our-museums/national-museum-of-natural-history/",
+      "sourceType": "official public operator (National Museum of the Philippines)",
+      "address": "\"P. Burgos Drive, Rizal Park, Manila\"",
+      "operatingEvidence": "Museum page describes 12 permanent galleries. The museum's 28 May 2026 post says \"The National Museum of the Philippines is open from Mondays to Sundays, from 9 AM to 6 PM. Admission is FREE.\" Booking site: \"Walk-in visitors are welcome.\"",
+      "hours": "\"Mondays to Sundays, from 9 AM to 6 PM\" (NMP post, 28 May 2026; general to the NMP, not stated on this museum's own page)",
+      "confidence": "medium"
+    },
+    {
+      "name": "National Museum of Anthropology",
+      "kind": "museum",
+      "url": "https://www.nationalmuseum.gov.ph/our-museums/national-museum-of-anthropology/",
+      "sourceType": "official public operator (National Museum of the Philippines)",
+      "address": "\"P. Burgos Drive, Rizal Park, Manila\"",
+      "operatingEvidence": "Museum page features exhibits GAMABA, HIBLA, BANGSAMORO, LUMAD and PALAYOK (no dates). NMP post of 28 May 2026: open \"Mondays to Sundays, from 9 AM to 6 PM. Admission is FREE.\"",
+      "hours": "\"Mondays to Sundays, from 9 AM to 6 PM\" (NMP post, 28 May 2026; general to the NMP)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Rizal Park",
+      "kind": "park",
+      "url": "https://npdc.gov.ph/",
+      "sourceType": "official public operator (National Parks Development Committee)",
+      "address": "Rizal Park Luneta, P. Burgos Street, Manila (NPDC office: \"The Old Planetarium, Rizal Park, Luneta, P. Burgos Street, Manila 1000\")",
+      "operatingEvidence": "NPDC \"develop[s], preserve[s], and manage[s] Rizal and Paco Parks\"; visitor count for Rizal Park Luneta \"Updated as of November 12, 2026\"; 18 March 2026 post on a visit to the Rizal Monument.",
+      "hours": "not published",
+      "confidence": "high"
+    },
+    {
+      "name": "Manila Ocean Park",
+      "kind": "scenic",
+      "url": "https://www.manilaoceanpark.com/",
+      "sourceType": "operator's own site",
+      "address": "\"Manila Ocean Park Luneta Manila Philippines 1000\"",
+      "operatingEvidence": "News dated 09/21/2026 on joining the 41st International Coastal Cleanup Day on 19 September 2026; \"Book your tickets now!\"",
+      "hours": "\"Weekdays: Monday - Friday: 10AM-6PM\"; \"Weekends & Public Holidays: 9AM-6PM\"",
+      "confidence": "high"
+    },
+    {
+      "name": "The Mind Museum",
+      "kind": "museum",
+      "url": "https://www.themindmuseum.org/plan-your-visit",
+      "sourceType": "operator's own site",
+      "address": "\"JY Campos Park, 3rd Avenue, Bonifacio Global City, Taguig City, 1634\"",
+      "operatingEvidence": "Current ticketing: 3-hour slots (9 AM, 12 PM, 3 PM), \"Limited slots only\"; adult PHP 625, all-day pass PHP 750; online \"BUY TICKETS\".",
+      "hours": "\"OPEN Tuesdays to Sundays from 9:00 a.m. to 6:00 p.m.\"; \"CLOSED on Mondays\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Metropolitan Museum of Manila",
+      "kind": "museum",
+      "url": "https://www.metmuseum.ph/",
+      "sourceType": "operator's own site",
+      "address": "\"MK Tan Centre\", \"30th Street, Bonifacio Global City\", Taguig",
+      "operatingEvidence": "Current exhibitions \"Miniaturismo to Modernism: Philippine Art from the 19th Century to the Sixties\" and \"Alfonso Ossorio: In My End Is My Beginning\", both \"08 NOVEMBER 2026 TO 30 MAY 2027\"; \"BOOK YOUR VISIT\".",
+      "hours": "Tuesday to Friday 11 AM–6 PM; Saturday and Sunday 10 AM–6 PM; \"Closed on Mondays and other special notices.\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Ayala Museum",
+      "kind": "museum",
+      "url": "https://ayalamuseum.org/exhibitions",
+      "sourceType": "operator's own site",
+      "address": "\"Makati Avenue corner, De La Rosa Street, Greenbelt Park, Makati City 1224\"",
+      "operatingEvidence": "Onsite exhibitions \"Turning Tides: Maritime Encounters and Exchanges of Power\" (16 Jul 2026 – 14 Feb 2027) and \"Reuniting the Surigao Treasure\" (17 May 2024 – 30 May 2027).",
+      "hours": "not readable (visit and holiday-schedule pages returned no hours)",
+      "confidence": "high"
+    },
+    {
+      "name": "Ayala Triangle Gardens",
+      "kind": "park",
+      "url": "https://www.ayalatriangle.com/GARDENS",
+      "sourceType": "operator's own site",
+      "address": "\"Situated right smack in the middle of along Paseo de Roxas, Makati Avenue and Ayala Avenue that forms a triangle\" (ayalatriangle.com), Makati",
+      "operatingEvidence": "Published operating hours and park rules (leashed pets, minors supervised, no alcohol or glass); restaurant directory; footer copyright 2026.",
+      "hours": "\"6:00 A.M. – 10:00 P.M.\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Champagne Room (The Manila Hotel)",
+      "kind": "meal",
+      "url": "https://www.manila-hotel.com.ph/dining/champa",
+      "sourceType": "operator's own site",
+      "address": "The Manila Hotel, \"One Rizal Park, Ermita, Manila, 0913 Metro Manila\"",
+      "operatingEvidence": "November 2026 Degustation and Business Lunch menus; group promo \"valid until November 30, 2026\"; reservations by phone.",
+      "hours": "Lunch Mon–Sat 11:30 AM–2:30 PM; dinner Mon–Sat 6:30 PM–10:30 PM; closed Sundays. Dress code \"Semi-formal\".",
+      "confidence": "high"
+    },
+    {
+      "name": "Café Ilang-Ilang (The Manila Hotel)",
+      "kind": "meal",
+      "url": "https://www.manila-hotel.com.ph/dining/cafe-ilang-ilang/",
+      "sourceType": "operator's own site",
+      "address": "The Manila Hotel, \"One Rizal Park, Ermita, Manila\"",
+      "operatingEvidence": "Buffet rates published (breakfast ₱1,950 adult) and 2026 promotion blackout dates listed.",
+      "hours": "Daily breakfast 6:00 AM–10:00 AM; lunch 11:30 AM–2:30 PM; dinner 6:00 PM–9:30 PM",
+      "confidence": "high"
+    },
+    {
+      "name": "Lobby Lounge (The Manila Hotel)",
+      "kind": "bar",
+      "url": "https://www.manila-hotel.com.ph/dining/lobby-lounge/",
+      "sourceType": "operator's own site",
+      "address": "The Manila Hotel, \"One Rizal Park, Ermita, Manila\"",
+      "operatingEvidence": "Happy Hour promotion \"May 15 to December 29, 2026\" covering cocktails; afternoon tea at Php2,588 nett per set.",
+      "hours": "\"MONDAY TO SUNDAY 7:00AM TO 12:00MN (Last call at at 11:30PM)\"; afternoon tea daily 11:00 AM–6:00 PM; dress code Smart Casual",
+      "confidence": "high"
+    },
+    {
+      "name": "Delicatessen (The Manila Hotel)",
+      "kind": "bakery",
+      "url": "https://www.manila-hotel.com.ph/dining/delicatessen/",
+      "sourceType": "operator's own site",
+      "address": "The Manila Hotel, \"One Rizal Park, Ermita, Manila\"",
+      "operatingEvidence": "Hours notice and current offer: from 7 PM, selected breads and pastries 50% off; sells freshly baked Danish, breads, cakes and pastries.",
+      "hours": "Daily 7:00 AM–9:00 PM",
+      "confidence": "medium"
+    },
+    {
+      "name": "Writers Bar (Raffles Makati)",
+      "kind": "bar",
+      "url": "https://www.raffles.com/makati/dining/writers-bar/",
+      "sourceType": "operator's own site",
+      "address": "\"1st Floor Lobby, Raffles Makati\", \"1 Raffles Drive, Makati Avenue, 1224 Makati, Philippines\"",
+      "operatingEvidence": "Hours notice and booking: \"Kindly be aware that advance reservations are required.\" Reservations by phone, email or RESERVE link.",
+      "hours": "Afternoon tea daily 2.00pm–5.30pm (last call 5.00pm); dinner daily 6.00pm–11.00pm (last call 10.45pm)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Long Bar (Raffles Makati)",
+      "kind": "bar",
+      "url": "https://www.raffles.com/makati/dining/long-bar/",
+      "sourceType": "operator's own site",
+      "address": "\"1st Floor Lobby, Raffles Makati, 1 Raffles Drive, Makati Avenue, 1224 Makati, Philippines\"",
+      "operatingEvidence": "Hours notice with weekly live entertainment 8pm–11pm weeknights, 8pm–12am Friday and Saturday; reservations by email or phone.",
+      "hours": "Sunday–Thursday 5:00pm–12:00am; Friday–Saturday 5:00pm–1:00am",
+      "confidence": "medium"
+    },
+    {
+      "name": "Café Macaron (Fairmont Makati)",
+      "kind": "bakery",
+      "url": "https://www.raffles.com/makati/dining/cafe-macaron/",
+      "sourceType": "operator's own site",
+      "address": "\"1st Floor Lobby, Fairmont Makati, 1 Raffles Drive, Makati Avenue, 1224 Makati, Philippines\"",
+      "operatingEvidence": "Hours notice; sells \"homemade cakes, handcrafted pastries\" and macarons in flavours such as ube and pandan, dine-in or takeaway.",
+      "hours": "Daily 6:00am–10:00pm (last call 9:45pm)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Toyo Eatery",
+      "kind": "meal",
+      "url": "https://www.toyoeatery.com/",
+      "sourceType": "operator's own site",
+      "address": "\"The Alley at Karrivin, Karrivin Plaza, Chino Roces Ext., Makati, Philippines\"",
+      "operatingEvidence": "Hours notice and a reservations link (TableCheck) plus reservations email; no 2026-dated content on the page.",
+      "hours": "\"Tuesday-Saturday, 6PM-11PM\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Gallery by Chele",
+      "kind": "meal",
+      "url": "https://www.gallerybychele.com/reservations",
+      "sourceType": "operator's own site",
+      "address": "\"5F Clipp Center, 11th Ave corner 39th St, Bonifacio Global City, Taguig, Metro Manila\"",
+      "operatingEvidence": "Reservations page with booking email and phone; menus linked. No dated content or hours on the pages read.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Run Rabbit Run",
+      "kind": "bar",
+      "url": "https://runrabbit.run/",
+      "sourceType": "operator's own site",
+      "address": "\"Ground Floor, Six Axis Building, 4347 B. Valdez Street, Poblacion, Makati, Metro Manila, Philippines\"",
+      "operatingEvidence": "Hours notice and \"BOOK YOUR SEATS\" booking button; no 2026-dated content.",
+      "hours": "Monday–Thursday 6PM–1AM; Friday–Saturday 6PM–3AM",
+      "confidence": "medium"
+    },
+    {
+      "name": "Eng Bee Tin (Ongpin)",
+      "kind": "bakery",
+      "url": "https://www.engbeetin.com/",
+      "sourceType": "operator's own site",
+      "address": "\"628 Ongpin Street Binondo, Manila, Philippines 1006\"",
+      "operatingEvidence": "Flagship store listed with hours; most recent dated posts are from October 2025 and the footer reads \"Copyright 2022\", so no 2026 content.",
+      "hours": "\"Mondays to Sundays\" \"6:00 AM – 10:00 PM\" (page last dated October 2025)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Commune (Poblacion)",
+      "kind": "cafe",
+      "url": "https://www.commune.ph/",
+      "sourceType": "operator's own site",
+      "address": "\"36 Polaris corner Durban Streets, Poblacion, Makati City, Metro Manila, PH\"",
+      "operatingEvidence": "Homepage heading \"Coffee University November 2026 Update\"; \"Copyright © 2026 Commune Café, Bar & Roastery\".",
+      "hours": "\"Mon - Thurs & Sun, 8am - 12pm\" (closing time as printed; may mean midnight); \"Fri & Sat, 8am - 1am\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Yardstick Coffee (Legazpi Village)",
+      "kind": "cafe",
+      "url": "https://www.yardstickcoffee.com/pages/locations",
+      "sourceType": "operator's own site",
+      "address": "\"Universal LMS Building, 106 Esteban Street, Makati, Metro Manila\"",
+      "operatingEvidence": "Locations page lists current hours and online pick-up times (9am–4pm daily); online store active.",
+      "hours": "7am–8pm daily",
+      "confidence": "medium"
+    },
+    {
+      "name": "Max's Restaurant (Malate)",
+      "kind": "meal",
+      "url": "https://www.maxschicken.com/store-locator/",
+      "sourceType": "operator's own site",
+      "address": "\"998 Roxas Boulevard\", Malate, Manila",
+      "operatingEvidence": "Store locator lists the branch with hours; homepage carries 2026 news (Sesame Street party package) and \"Copyright 2026 Max's Group Inc.\"",
+      "hours": "Listed as \"7:00 AM to 7:00 AM\" (appears to mean round the clock; not stated)",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Intramuros",
+      "reason": "walled district, not a single venue; covered by confirmed Intramuros Administration sites (Fort Santiago, Casa Manila Museum, Baluarte de San Diego, Museo de Intramuros)",
+      "url": "https://intramuros.gov.ph/"
+    },
+    {
+      "name": "National Museum",
+      "reason": "umbrella name; confirmed as three separate buildings (Fine Arts, Natural History, Anthropology)",
+      "url": "https://www.nationalmuseum.gov.ph/"
+    },
+    {
+      "name": "San Agustin Church and Museum",
+      "reason": "official site sanagustinchurch.org failed with an SSL error; only the Intramuros Administration (not the operator) lists its hours",
+      "url": "https://www.sanagustinchurch.org/"
+    },
+    {
+      "name": "Manila Cathedral",
+      "reason": "official site shows no address and no content newer than 2021",
+      "url": "https://www.manilacathedral.com.ph/"
+    },
+    {
+      "name": "The Peninsula Manila",
+      "reason": "HTTP 403 on automated fetch",
+      "url": "https://www.peninsula.com/en/manila/5-star-luxury-hotel-makati"
+    },
+    {
+      "name": "Okada Manila",
+      "reason": "HTTP 403 on automated fetch",
+      "url": "https://www.okadamanila.com/"
+    },
+    {
+      "name": "Shangri-La The Fort, Manila",
+      "reason": "HTTP 403 on automated fetch",
+      "url": "https://www.shangri-la.com/manila/shangrilathefort/"
+    },
+    {
+      "name": "Wildflour Cafe + Bakery (Salcedo Village)",
+      "reason": "HTTP 403 on branch pages; homepage returned no readable content",
+      "url": "https://wildflour.com.ph/wildflour/"
+    },
+    {
+      "name": "The Curator",
+      "reason": "certificate error (unable to get local issuer certificate)",
+      "url": "https://www.thecurator.com.ph/"
+    },
+    {
+      "name": "Cultural Center of the Philippines",
+      "reason": "certificate error (unable to verify the first certificate)",
+      "url": "https://www.culturalcenter.gov.ph/"
+    },
+    {
+      "name": "Pancake House",
+      "reason": "certificate error (unable to verify the first certificate)",
+      "url": "https://www.pancakehouse.com.ph/"
+    },
+    {
+      "name": "Goldilocks",
+      "reason": "certificate error (hostname does not match certificate)",
+      "url": "https://www.goldilocks.com.ph/"
+    },
+    {
+      "name": "Polland Hopia",
+      "reason": "certificate error (unable to get local issuer certificate)",
+      "url": "https://www.polland.com.ph/"
+    },
+    {
+      "name": "Toby's Estate (Philippines)",
+      "reason": "connection refused",
+      "url": "https://www.tobysestate.com.ph/"
+    },
+    {
+      "name": "Kamuning Bakery",
+      "reason": "HTTP 521 from the official site",
+      "url": "https://kamuningbakery.com/"
+    },
+    {
+      "name": "Barbara's Heritage Restaurant",
+      "reason": "official domain did not resolve",
+      "url": "https://www.barbarasheritage.com/"
+    },
+    {
+      "name": "Panaderia Toyo",
+      "reason": "official domain did not resolve; not mentioned on toyoeatery.com",
+      "url": "https://www.panaderiatoyo.com/"
+    },
+    {
+      "name": "Museo Pambata",
+      "reason": "domain is a for-sale parking page; no museum information",
+      "url": "https://www.museopambata.org/"
+    },
+    {
+      "name": "Aristocrat Restaurant",
+      "reason": "official domain redirects to a parking page",
+      "url": "https://www.aristocrat.com.ph/"
+    },
+    {
+      "name": "Ilustrado Restaurant",
+      "reason": "official domain returned no readable content",
+      "url": "https://www.ilustradorestaurant.com.ph/"
+    },
+    {
+      "name": "Quiapo Church",
+      "reason": "official site returned no readable content",
+      "url": "https://www.quiapochurch.com/"
+    },
+    {
+      "name": "Red Ribbon",
+      "reason": "official site returned no readable content",
+      "url": "https://www.redribbon.ph/"
+    },
+    {
+      "name": "Manam Comfort Filipino",
+      "reason": "official brand pages list no branch addresses or hours",
+      "url": "https://momentgroup.ph/brands/show/manam"
+    },
+    {
+      "name": "Café Mary Grace",
+      "reason": "official homepage lists no branch addresses; store-locator URL returned 404",
+      "url": "https://www.marygracecafe.com/"
+    },
+    {
+      "name": "Sentro 1771 (Greenbelt 5)",
+      "reason": "address published but no hours and no current menu or dated content (latest menu file May 2025)",
+      "url": "https://www.sentro1771.com/"
+    },
+    {
+      "name": "Hapag",
+      "reason": "hapag.ph is an unrelated furniture retailer; restaurant's official site not found",
+      "url": "https://www.hapag.ph/"
+    },
+    {
+      "name": "Common Man Coffee Roasters (Manila)",
+      "reason": "official site lists Singapore and Malaysia cafés only",
+      "url": "https://www.commonmancoffeeroasters.com/"
+    },
+    {
+      "name": "Pan de Manila",
+      "reason": "official branches page says only \"Coming Soon\"",
+      "url": "https://www.pandemanila.com.ph/branches"
+    },
+    {
+      "name": "Bo's Coffee",
+      "reason": "official homepage lists no store addresses",
+      "url": "https://www.boscoffee.com/"
+    },
+    {
+      "name": "Destileria Limtuaco",
+      "reason": "official site shows only an age gate; no museum details readable",
+      "url": "https://www.limtuaco.com/"
+    },
+    {
+      "name": "Sky Deck View Bar (The Bayleaf Intramuros)",
+      "reason": "hotel site has address but no bar information; latest content 2024",
+      "url": "https://www.thebayleaf.com.ph/"
+    },
+    {
+      "name": "Mistral Rooftop Bar (Raffles Makati)",
+      "reason": "page returned 404",
+      "url": "https://www.raffles.com/makati/dining/mistral-rooftop-bar/"
+    },
+    {
+      "name": "SM Mall of Asia",
+      "reason": "official mall page returned 404",
+      "url": "https://www.smsupermalls.com/mall/sm-mall-of-asia"
+    },
+    {
+      "name": "Salcedo Saturday Market",
+      "reason": "no official operator website found; only press and listings",
+      "url": ""
+    },
+    {
+      "name": "Binondo Church (Minor Basilica of San Lorenzo Ruiz)",
+      "reason": "no official parish website found or readable; only directories",
+      "url": ""
+    },
+    {
+      "name": "Makati food scene",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Intramuros walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market food tour",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Makati evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "a Filipino tasting meal",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Manila market or cafe",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local dinner in Intramuros",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Makati",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in BGC",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Intramuros",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Intramuros walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Makati",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around BGC",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through BGC",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Intramuros",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Intramuros",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Intramuros walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Makati",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near National Museum",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Intramuros evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Makati",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near BGC",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Intramuros",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Intramuros",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Makati",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near BGC",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Intramuros",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Intramuros",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Intramuros cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Market food tour",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in BGC",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of BGC",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Intramuros",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Intramuros",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Makati bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Intramuros",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through BGC",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Intramuros",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near National Museum",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around BGC",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Intramuros",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Makati",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in BGC",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Intramuros",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Intramuros",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Makati",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Makati food scene",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Intramuros",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Makati morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Intramuros",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near BGC",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Intramuros",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Makati",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near BGC",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Fort Santiago",
+        "National Museum of Fine Arts",
+        "Rizal Park",
+        "Metropolitan Museum of Manila"
+      ],
+      "bestFirstTimers": [
+        "Fort Santiago",
+        "National Museum of Fine Arts",
+        "Casa Manila Museum",
+        "Max's Restaurant (Malate)"
+      ],
+      "bestRestaurants": [
+        "Toyo Eatery",
+        "Gallery by Chele",
+        "Champagne Room (The Manila Hotel)",
+        "Max's Restaurant (Malate)"
+      ],
+      "bestBudget": [
+        "National Museum of Natural History",
+        "Rizal Park",
+        "Ayala Triangle Gardens",
+        "Baluarte de San Diego"
+      ],
+      "bestLuxury": [
+        "Champagne Room (The Manila Hotel)",
+        "Writers Bar (Raffles Makati)",
+        "Lobby Lounge (The Manila Hotel)",
+        "Gallery by Chele"
+      ],
+      "bestCouples": [
+        "Baluarte de San Diego",
+        "Writers Bar (Raffles Makati)",
+        "Lobby Lounge (The Manila Hotel)",
+        "Toyo Eatery"
+      ],
+      "bestKids": [
+        "The Mind Museum",
+        "Manila Ocean Park",
+        "National Museum of Natural History",
+        "Rizal Park"
+      ],
+      "bestSolo": [
+        "Ayala Museum",
+        "Museo de Intramuros",
+        "Metropolitan Museum of Manila",
+        "Commune (Poblacion)"
+      ],
+      "bestUnique": [
+        "National Museum of Anthropology",
+        "Casa Manila Museum",
+        "Eng Bee Tin (Ongpin)",
+        "Run Rabbit Run"
+      ],
+      "bestBreakfast": [
+        "Café Ilang-Ilang (The Manila Hotel)",
+        "Café Macaron (Fairmont Makati)",
+        "Commune (Poblacion)",
+        "Yardstick Coffee (Legazpi Village)"
+      ],
+      "bestLunch": [
+        "Max's Restaurant (Malate)",
+        "Champagne Room (The Manila Hotel)",
+        "Café Ilang-Ilang (The Manila Hotel)"
+      ],
+      "bestDinner": [
+        "Toyo Eatery",
+        "Gallery by Chele",
+        "Champagne Room (The Manila Hotel)",
+        "Café Ilang-Ilang (The Manila Hotel)"
+      ],
+      "bestCocktails": [
+        "Long Bar (Raffles Makati)",
+        "Writers Bar (Raffles Makati)",
+        "Run Rabbit Run",
+        "Lobby Lounge (The Manila Hotel)"
+      ],
+      "bestBakeries": [
+        "Eng Bee Tin (Ongpin)",
+        "Delicatessen (The Manila Hotel)",
+        "Café Macaron (Fairmont Makati)"
+      ],
+      "bestCoffee": [
+        "Yardstick Coffee (Legazpi Village)",
+        "Commune (Poblacion)",
+        "Café Macaron (Fairmont Makati)"
+      ]
+    },
+    "queries": {
+      "Fort Santiago": "Fort Santiago Sta. Clara Street Intramuros Manila",
+      "Casa Manila Museum": "Casa Manila Museum Real Street Gen. Luna Street Intramuros Manila",
+      "Baluarte de San Diego": "Baluarte de San Diego Sta. Lucia Street Muralla Street Intramuros Manila",
+      "Museo de Intramuros": "Museo de Intramuros Real Street Anda Street Intramuros Manila",
+      "National Museum of Fine Arts": "National Museum of Fine Arts P. Burgos Drive Rizal Park Manila",
+      "National Museum of Natural History": "National Museum of Natural History P. Burgos Drive Rizal Park Manila",
+      "National Museum of Anthropology": "National Museum of Anthropology P. Burgos Drive Rizal Park Manila",
+      "Rizal Park": "Rizal Park P. Burgos Street Luneta Manila",
+      "Manila Ocean Park": "Manila Ocean Park Luneta Manila",
+      "The Mind Museum": "The Mind Museum JY Campos Park 3rd Avenue Bonifacio Global City Taguig",
+      "Metropolitan Museum of Manila": "Metropolitan Museum of Manila MK Tan Centre 30th Street Bonifacio Global City Taguig",
+      "Ayala Museum": "Ayala Museum Makati Avenue De La Rosa Street Greenbelt Park Makati",
+      "Ayala Triangle Gardens": "Ayala Triangle Gardens Paseo de Roxas Ayala Avenue Makati",
+      "Champagne Room (The Manila Hotel)": "Champagne Room The Manila Hotel One Rizal Park Ermita Manila",
+      "Café Ilang-Ilang (The Manila Hotel)": "Cafe Ilang-Ilang The Manila Hotel One Rizal Park Ermita Manila",
+      "Lobby Lounge (The Manila Hotel)": "Lobby Lounge The Manila Hotel One Rizal Park Ermita Manila",
+      "Delicatessen (The Manila Hotel)": "Delicatessen The Manila Hotel One Rizal Park Ermita Manila",
+      "Writers Bar (Raffles Makati)": "Writers Bar Raffles Makati 1 Raffles Drive Makati Avenue Makati",
+      "Long Bar (Raffles Makati)": "Long Bar Raffles Makati 1 Raffles Drive Makati Avenue Makati",
+      "Café Macaron (Fairmont Makati)": "Cafe Macaron Fairmont Makati 1 Raffles Drive Makati Avenue Makati",
+      "Toyo Eatery": "Toyo Eatery Karrivin Plaza Chino Roces Extension Makati",
+      "Gallery by Chele": "Gallery by Chele Clipp Center 11th Avenue 39th Street Bonifacio Global City Taguig",
+      "Run Rabbit Run": "Run Rabbit Run 4347 B. Valdez Street Poblacion Makati",
+      "Eng Bee Tin (Ongpin)": "Eng Bee Tin 628 Ongpin Street Binondo Manila",
+      "Commune (Poblacion)": "Commune 36 Polaris Street Durban Street Poblacion Makati",
+      "Yardstick Coffee (Legazpi Village)": "Yardstick Coffee 106 Esteban Street Legazpi Village Makati",
+      "Max's Restaurant (Malate)": "Max's Restaurant 998 Roxas Boulevard Malate Manila"
+    },
+    "summary": "Rizal Park's national museums, Intramuros fort sites and Makati and BGC galleries, with breakfast spots, bakeries, coffee, dinners and hotel bars checked against their own websites.",
+    "highlights": [
+      "Fort Santiago",
+      "National Museum of Fine Arts",
+      "Metropolitan Museum of Manila",
+      "Ayala Museum"
+    ],
+    "tip": "The Mind Museum and the Metropolitan Museum of Manila are closed on Mondays, but the National Museum says its Manila buildings open Monday to Sunday, 9 AM to 6 PM, with free admission.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mondays and Sundays",
+        "copy": "The Mind Museum and the Metropolitan Museum of Manila are closed on Mondays, while the National Museum says its Manila buildings open Monday to Sunday. The Champagne Room at The Manila Hotel is closed on Sundays, and Toyo Eatery serves Tuesday to Saturday only."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Timed slots and free entry",
+        "copy": "The Mind Museum sells three-hour slots starting at 9 AM, 12 PM and 3 PM (PHP 625 for adults) or an all-day pass at PHP 750. National Museum admission is free, and groups of 20 or more must book at least three working days ahead."
+      },
+      {
+        "label": "Walk-ins and reservations",
+        "value": "Book Writers Bar ahead",
+        "copy": "Writers Bar at Raffles Makati says advance reservations are required for its afternoon tea and evening service. The National Museum says walk-in visitors are welcome and keeps Sundays, Mondays and holidays for walk-ins only."
+      },
+      {
+        "label": "Rules",
+        "value": "Bags and dress codes",
+        "copy": "The Mind Museum has no bag storage, asks you to leave big bags in your vehicle and bans eating and drinking inside. The Champagne Room sets a semi-formal dress code, and the Lobby Lounge at The Manila Hotel a smart casual one."
+      }
+    ],
+    "dek": "Use a Monday for the free National Museum buildings in Rizal Park, since The Mind Museum and the Metropolitan Museum of Manila close that day, and reserve Writers Bar before you go.",
+    "intro": [
+      "Start at the National Museum complex in Rizal Park, where the National Museum of Fine Arts, the National Museum of Anthropology and the National Museum of Natural History share P. Burgos Drive. The museum's own notices say its Manila buildings are open Monday to Sunday from 9 AM to 6 PM, and admission is free. Walk-ins are welcome, while groups of 20 or more must book at least three working days ahead. At the Fine Arts building, \"Sansó: Pusong Pilipino\", a Juvenal Sansó retrospective in Gallery XV, runs until 28 February 2027.",
+      "A short ride north, Intramuros is managed by the Intramuros Administration. Its hours page, marked as updated on 20 September 2023, lists Fort Santiago on Sta. Clara Street as open every day with adult tickets at PHP 75, and Baluarte de San Diego daily from 8 AM to 5 PM. The same page lists Casa Manila Museum and Museo de Intramuros from Tuesday to Sunday, 9 AM to 6 PM, closed on Mondays. Because those times come from an older page, check them with the Administration before you plan around them.",
+      "In Makati, the Ayala Museum at Greenbelt Park is showing \"Turning Tides: Maritime Encounters and Exchanges of Power\" from 16 July 2026 to 14 February 2027, alongside \"Reuniting the Surigao Treasure\", which runs to 30 May 2027. In Bonifacio Global City, the Metropolitan Museum of Manila opened \"Miniaturismo to Modernism\" and an Alfonso Ossorio show on 8 November 2026; both run to 30 May 2027, and the museum is closed on Mondays. Nearby, The Mind Museum sells three-hour time slots, has no bag storage and is also closed on Mondays.",
+      "For meals, Toyo Eatery in Makati serves dinner from Tuesday to Saturday, 6 PM to 11 PM, and takes bookings through its own reservations link. At The Manila Hotel, the Champagne Room has a semi-formal dress code and is closed on Sundays, while Café Ilang-Ilang serves a breakfast buffet from 6 AM to 10 AM. At Raffles Makati, Writers Bar serves afternoon tea daily from 2 PM and says advance reservations are required, and Long Bar stays open until 1 AM on Fridays and Saturdays."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair the free National Museum buildings on P. Burgos Drive, which open Monday to Sunday, with Fort Santiago in Intramuros."
+      ],
+      [
+        "A slower morning",
+        "Start with coffee at Yardstick Coffee on Esteban Street, which lists 7 AM opening daily, then walk to the Ayala Museum at Greenbelt Park."
+      ],
+      [
+        "Before booking",
+        "Plan The Mind Museum and the Metropolitan Museum of Manila for Tuesday to Sunday, since both close on Mondays, and reserve Writers Bar ahead, as it requires."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Intramuros site hours (Fort Santiago, Casa Manila Museum, Baluarte de San Diego, Museo de Intramuros) come from an Intramuros Administration page marked as updated in September 2023, and Eng Bee Tin's hours come from a page with nothing newer than October 2025. Hours were not readable for the Ayala Museum, Rizal Park or Gallery by Chele, and Toyo Eatery, Run Rabbit Run, Gallery by Chele and the Raffles Makati outlets showed no 2026-dated content. National Museum hours for Natural History and Anthropology come from museum-wide notices. Sites that could not be read automatically (403, certificate or connection errors) include The Peninsula Manila, Okada Manila, Shangri-La The Fort, Wildflour, The Curator, the Cultural Center of the Philippines, San Agustin Church, Pancake House, Goldilocks, Polland, Toby's Estate and Kamuning Bakery.",
+  "injectionLikeText": []
+}

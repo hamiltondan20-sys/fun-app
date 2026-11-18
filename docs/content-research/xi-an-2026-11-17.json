@@ -1,0 +1,834 @@
+{
+  "city": "Xi'an, China",
+  "checkedOn": "2026-11-17",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Shaanxi History Museum",
+      "kind": "museum",
+      "url": "https://www.sxhm.com/guide.html",
+      "sourceType": "operator's own site (Shaanxi History Museum)",
+      "address": "陕西省西安市雁塔区小寨东路91号 (91 Xiaozhai East Road, Yanta District)",
+      "operatingEvidence": "Announcement dated 2026-11-09: \"2026年11月15日至2027年3月14日，我馆将实行冬季开放时间\"; booking opens 5 days ahead at 17:00; news items dated November 2026.",
+      "hours": "\"当前开放时间：9:00-17:30(16:30停止检票)\"; \"每周一闭馆\" except national statutory holidays (winter hours 15 November 2026 to 14 March 2027).",
+      "confidence": "high"
+    },
+    {
+      "name": "Shaanxi History Museum Qin-Han Branch",
+      "kind": "museum",
+      "url": "https://www.sxhm.com/guide.html",
+      "sourceType": "operator's own site (Shaanxi History Museum)",
+      "address": "西咸新区秦汉新城兰池三路东段 (east section of Lanchi 3rd Road, Qinhan New City, Xixian New Area)",
+      "operatingEvidence": "Current guide page lists hours and booking; a 2026-09-11 announcement concerns maintenance services for the Qin-Han branch.",
+      "hours": "09:00-17:30, last entry 16:30; \"每周二闭馆\" (closed Tuesdays) except national statutory holidays.",
+      "confidence": "high"
+    },
+    {
+      "name": "Xi'an Beilin Museum",
+      "kind": "museum",
+      "url": "https://beilin-museum.com/index.php?m=home&c=Lists&a=index&tid=68",
+      "sourceType": "operator's own site (Xi'an Beilin Museum)",
+      "address": "\"西安碑林博物馆（三学街15号）\" (15 Sanxuejie); north gate \"东木头市44号\"",
+      "operatingEvidence": "Home page news runs through mid-November 2026; on 2026-05-18 the new building's permanent display was named among the national top ten museum exhibitions. Real-name online booking is live.",
+      "hours": "Visitor guide: \"每日9:00-18:30，17:00停止售检票\" and \"周一至周日均正常开放\"; a home-page notice gives 9:00-18:00 with ticket checks stopping at 17:00.",
+      "confidence": "high"
+    },
+    {
+      "name": "Xi'an Banpo Museum",
+      "kind": "museum",
+      "url": "https://www.banpomuseum.com.cn/index.php?m=content&c=index&a=lists&catid=8&kid=28",
+      "sourceType": "operator's own site (Xi'an Banpo Museum)",
+      "address": "\"西安市东郊半坡路155号\" (155 Banpo Road)",
+      "operatingEvidence": "Notices dated 2026-09-21 (extended National Day holiday opening) and 2026-10-30 (lecture news); a temporary closure from 4 January to 1 February 2026 has ended.",
+      "hours": "Undated hours page: \"旺季：（3月1日-11月30日）8:00----17:30 （17:00 停止入馆）\"; \"淡季：（12月1日-次年2月底）8:00----17:00 （16:30 停止入馆）\". No closing day stated.",
+      "confidence": "high"
+    },
+    {
+      "name": "Huaqing Palace",
+      "kind": "landmark",
+      "url": "https://www.hqc.cn/Play/",
+      "sourceType": "operator's own site (Huaqing Palace, Shaanxi Tourism Group)",
+      "address": "\"陕西省西安市临潼区华清路3号\" (3 Huaqing Road, Lintong District)",
+      "operatingEvidence": "Site has an online booking section and official ticket channels; newest dated item is a 2026-04-07 report from the palace's show company. Most visitor pages are undated.",
+      "hours": "Undated page: \"夏季参观时间为早7：30至18：00\"; \"冬季参观时间为早7：30至17：30\".",
+      "confidence": "medium"
+    },
+    {
+      "name": "Azur (Sofitel Xi'an on Renmin Square)",
+      "kind": "meal",
+      "url": "https://sofitel.accor.com/en/hotels/5949/breakfast.html",
+      "sourceType": "operator's own site (Accor / Sofitel)",
+      "address": "\"319 Dong Xin Street, Shaanxi, 710004, Xi'an, China\"",
+      "operatingEvidence": "Hotel is bookable on Accor's site, which shows guest reviews dated 2026; Azur is described as \"An all- day restaurant serving the best of Mediterranean and European cuisine\".",
+      "hours": "Breakfast Monday to Friday 6:00-10:00, Saturday and Sunday 6:00-10:30; other hours not published.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Le Chinois (Sofitel Xi'an on Renmin Square)",
+      "kind": "meal",
+      "url": "https://sofitel.accor.com/en/hotels/5949/R004.restaurant.html",
+      "sourceType": "operator's own site (Accor / Sofitel)",
+      "address": "\"319 Dong Xin Street, Shaanxi, 710004, Xi'an, China\"",
+      "operatingEvidence": "Shaanxi and contemporary Cantonese cuisine; reservations by phone +86 29 87928888 or email; hotel bookable with 2026 guest reviews.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bar Bambu (Sofitel Xi'an on Renmin Square)",
+      "kind": "bar",
+      "url": "https://sofitel.accor.com/en/hotels/5949/B001.bar.html",
+      "sourceType": "operator's own site (Accor / Sofitel)",
+      "address": "\"319 Dong Xin Street, Shaanxi, 710004, Xi'an, China\"",
+      "operatingEvidence": "Lobby bar offering \"fresh coffee, specialty teas plus refreshing cocktails\" and snacks with live entertainment; hotel bookable with 2026 guest reviews.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Food Exchange (Novotel Xi'an The Bell Tower)",
+      "kind": "meal",
+      "url": "https://all.accor.com/hotel/B6K7/index.en.shtml",
+      "sourceType": "operator's own site (Accor / Novotel)",
+      "address": "\"No 16 Anban Street, Xincheng District, 710004 Xi'an, China\"",
+      "operatingEvidence": "Hotel bookable on Accor's site; restaurant \"blends Eastern and Western cuisine\"; breakfast RMB 98 per person over 12, free for children 12 and under (max 2 per room).",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Hua Yue Xuan (Novotel Xi'an Xinxing)",
+      "kind": "meal",
+      "url": "https://all.accor.com/hotel/C2I8/index.en.shtml",
+      "sourceType": "operator's own site (Accor / Novotel)",
+      "address": "\"9 Huzhu Road, 710000 Xi'an, China\" (4th floor)",
+      "operatingEvidence": "Hotel bookable on Accor's site; Chinese restaurant serving Huaiyang, Cantonese and Shaanxi cuisine with 13 private dining rooms.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Xinyi Lobby Bar (Novotel Xi'an Xinxing)",
+      "kind": "cafe",
+      "url": "https://all.accor.com/hotel/C2I8/index.en.shtml",
+      "sourceType": "operator's own site (Accor / Novotel)",
+      "address": "\"9 Huzhu Road, 710000 Xi'an, China\" (1st floor)",
+      "operatingEvidence": "Hotel bookable on Accor's site; lobby bar offering coffee, tea and desserts with reading areas.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Champs Elysees Restaurant (Mercure Xi'an Qujiang)",
+      "kind": "meal",
+      "url": "https://all.accor.com/hotel/B493/index.en.shtml",
+      "sourceType": "operator's own site (Accor / Mercure)",
+      "address": "\"No 3001 Northeast Corner, Yanxiang Road And South Third, Ring Road Qujiang New District\", Xi'an (level 1)",
+      "operatingEvidence": "Hotel bookable on Accor's site; restaurant serves a customised breakfast buffet.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Leon Bar (Mercure Xi'an Qujiang)",
+      "kind": "bar",
+      "url": "https://all.accor.com/hotel/B493/index.en.shtml",
+      "sourceType": "operator's own site (Accor / Mercure)",
+      "address": "\"No 3001 Northeast Corner, Yanxiang Road And South Third, Ring Road Qujiang New District\", Xi'an (level 1)",
+      "operatingEvidence": "Hotel bookable on Accor's site; lobby bar offering wine, coffee and snacks.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Xian Kitchen (The Ritz-Carlton, Xi'an)",
+      "kind": "meal",
+      "url": "https://www.ritzcarlton.com/en/hotels/china/xian/dining",
+      "sourceType": "operator's own site (The Ritz-Carlton / Marriott)",
+      "address": "\"No 50 Keji 2nd Road, Xi'an, Shaanxi, China, 710075\"",
+      "operatingEvidence": "Dining page lists hours, phone +86 29 8881 8188 and a live \"Book a Table\" link; \"A modern approach to all-day dining\".",
+      "hours": "\"Everyday, 6:30 AM-9:30 PM\" (undated dining page); dress code \"No Bathing Suits\".",
+      "confidence": "medium"
+    },
+    {
+      "name": "Jing Xuan (The Ritz-Carlton, Xi'an)",
+      "kind": "meal",
+      "url": "https://www.ritzcarlton.com/en/hotels/china/xian/dining/jing-xuan",
+      "sourceType": "operator's own site (The Ritz-Carlton / Marriott)",
+      "address": "\"No 50 Keji 2nd Road, Xi'an, Shaanxi, China, 710075\"",
+      "operatingEvidence": "Cantonese-influenced fine dining with eight private rooms; \"Book a Table\" link and phone +86 29 88818288.",
+      "hours": "Daily 11:30 AM-2:30 PM and 5:30 PM-10:00 PM (undated dining page).",
+      "confidence": "medium"
+    },
+    {
+      "name": "Tasuro (The Ritz-Carlton, Xi'an)",
+      "kind": "meal",
+      "url": "https://www.ritzcarlton.com/en/hotels/china/xian/dining",
+      "sourceType": "operator's own site (The Ritz-Carlton / Marriott)",
+      "address": "\"No 50 Keji 2nd Road, Xi'an, Shaanxi, China, 710075\"",
+      "operatingEvidence": "Teppanyaki with six live-action stations; reservations by phone +86 29 88818588.",
+      "hours": "Daily 5:30 PM-10:00 PM (undated dining page).",
+      "confidence": "medium"
+    },
+    {
+      "name": "Flair (The Ritz-Carlton, Xi'an)",
+      "kind": "bar",
+      "url": "https://www.ritzcarlton.com/en/hotels/china/xian/dining/flair",
+      "sourceType": "operator's own site (The Ritz-Carlton / Marriott)",
+      "address": "\"No 50 Keji 2nd Road, Xi'an, Shaanxi, China, 710075\"",
+      "operatingEvidence": "Rooftop bar: \"A private elevator ride is all that stands between you and the 180-degree city view at Flair\"; signature cocktails, sushi counter; phone +86 29 88818988.",
+      "hours": "Mon-Thu and Sun 6:00 PM-1:00 AM; Fri-Sat 6:00 PM-2:00 AM (undated dining page); \"No Bathing Suits\".",
+      "confidence": "medium"
+    },
+    {
+      "name": "Lobby Lounge (The Ritz-Carlton, Xi'an)",
+      "kind": "cafe",
+      "url": "https://www.ritzcarlton.com/en/hotels/china/xian/dining/jing-xuan",
+      "sourceType": "operator's own site (The Ritz-Carlton / Marriott)",
+      "address": "\"No 50 Keji 2nd Road, Xi'an, Shaanxi, China, 710075\"",
+      "operatingEvidence": "Coffee house serving signature Afternoon Tea, gourmet pastries and cakes; \"Book a Table\" link and phone +86 29 86466232.",
+      "hours": "Daily 10:00 AM-10:00 PM (undated dining page).",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Terracotta Warriors (Emperor Qinshihuang's Mausoleum Site Museum)",
+      "reason": "Official site https://www.bmy.com.cn/ failed with no output; https://bmy.com.cn/ redirects to an http-only page, so no https evidence could be read.",
+      "url": "https://bmy.com.cn/"
+    },
+    {
+      "name": "City Wall",
+      "reason": "Official site returned an SSL error (WRONG_VERSION_NUMBER); not bypassed.",
+      "url": "https://www.xacitywall.com/"
+    },
+    {
+      "name": "City Wall bike ride",
+      "reason": "Activity run on the City Wall, whose official site returned an SSL error; not bypassed.",
+      "url": "https://www.xacitywall.com/"
+    },
+    {
+      "name": "Small Wild Goose Pagoda (Xi'an Museum)",
+      "reason": "Official Xi'an Museum site rendered no readable address, hours or notices (content loads by script).",
+      "url": "https://www.xabwy.com/index.html"
+    },
+    {
+      "name": "Muslim Quarter",
+      "reason": "A neighbourhood with no single operator or official page.",
+      "url": ""
+    },
+    {
+      "name": "Bell Tower (Xi'an Bell and Drum Tower Museum)",
+      "reason": "Domain tried failed DNS lookup (EAI_AGAIN); no other official site found.",
+      "url": "https://www.xazgl.com/"
+    },
+    {
+      "name": "Hanyangling Museum",
+      "reason": "Official site returned a TLS error; not bypassed.",
+      "url": "https://www.hylae.com/"
+    },
+    {
+      "name": "Daming Palace National Heritage Park",
+      "reason": "Official domain dmgpark.com failed DNS lookup (ENOTFOUND).",
+      "url": "https://www.dmgpark.com/"
+    },
+    {
+      "name": "Tang Paradise (Datang Furong Garden)",
+      "reason": "Official site read, but no 2026 content or current hours notice found (footer 2010-2025, news page empty).",
+      "url": "https://www.tangparadise.cn/"
+    },
+    {
+      "name": "Qujiang Pool Heritage Park",
+      "reason": "Official site read, newest item dated 2023; no current operating evidence.",
+      "url": "https://xaqujiangchi.qjtourism.com/"
+    },
+    {
+      "name": "Qujiang Ocean Polar Park",
+      "reason": "Official site read, no 2026 content or hours.",
+      "url": "https://oceanpark.qjtourism.com/"
+    },
+    {
+      "name": "Tang West Market Museum",
+      "reason": "Official site fetch failed (ECONNRESET).",
+      "url": "https://www.dtxsmuseum.com/"
+    },
+    {
+      "name": "Shaanxi Archaeological Museum",
+      "reason": "No official site found; guessed academy domain failed DNS lookup.",
+      "url": "https://www.sxkgy.cn/"
+    },
+    {
+      "name": "Club Millésime (Sofitel Xi'an on Renmin Square)",
+      "reason": "Page gives no hours or access rules; appears to be a hotel club floor.",
+      "url": "https://sofitel.accor.com/en/hotels/5949/R005.restaurant.html"
+    },
+    {
+      "name": "Shangri-La Xi'an dining",
+      "reason": "HTTP 403.",
+      "url": "https://www.shangri-la.com/xian/shangrila/dining/"
+    },
+    {
+      "name": "Grand Hyatt Xi'an dining",
+      "reason": "HTTP 403.",
+      "url": "https://www.hyatt.com/grand-hyatt/en-US/xiygh-grand-hyatt-xian/dining"
+    },
+    {
+      "name": "The Westin Xi'an (Mix Bar)",
+      "reason": "HTTP 403.",
+      "url": "https://www.marriott.com/en-us/hotels/xiywi-the-westin-xian/overview/"
+    },
+    {
+      "name": "Hotel Indigo Xi'an",
+      "reason": "HTTP 403.",
+      "url": "https://www.ihg.com/hotelindigo/hotels/us/en/xian/xiyss/hoteldetail"
+    },
+    {
+      "name": "Hilton Xi'an dining",
+      "reason": "HTTP 403.",
+      "url": "https://www.hilton.com/en/hotels/xiyhihi-hilton-xian/dining/"
+    },
+    {
+      "name": "% Arabica Xi'an G Park",
+      "reason": "HTTP 418 (refuses automated reading).",
+      "url": "https://arabica.com/en/?p=21237"
+    },
+    {
+      "name": "% Arabica Xi'an MixC",
+      "reason": "HTTP 418 (refuses automated reading).",
+      "url": "https://arabica.com/location/arabica-xian-mixc/"
+    },
+    {
+      "name": "Novotel Xi'an Daming Palace restaurant and bar",
+      "reason": "Venues unnamed on the official page (\"Western Restaurant\", \"Bar\"); not specific enough.",
+      "url": "https://all.accor.com/hotel/C3D1/index.en.shtml"
+    },
+    {
+      "name": "Night market food walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Night market food walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "biangbiang noodles and dumplings",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Xi'an market or cafe",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local dinner in Bell Tower",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Muslim Quarter",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in South Gate",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Bell Tower",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Bell Tower walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Muslim Quarter",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around South Gate",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through South Gate",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Terracotta Warriors",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Bell Tower",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around City Wall bike ride",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Muslim Quarter",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near City Wall",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Bell Tower evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Muslim Quarter",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near South Gate",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Bell Tower",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Terracotta Warriors",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Muslim Quarter",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near South Gate",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Bell Tower",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Terracotta Warriors",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Bell Tower cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in South Gate",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of South Gate",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Bell Tower",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Bell Tower",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Muslim Quarter bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Terracotta Warriors",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through South Gate",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Bell Tower",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near City Wall",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around South Gate",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Bell Tower",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Muslim Quarter",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in South Gate",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Bell Tower",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Bell Tower",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Muslim Quarter",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Muslim Quarter",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Bell Tower",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Muslim Quarter morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Terracotta Warriors",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near South Gate",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Bell Tower",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Muslim Quarter",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near South Gate",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Shaanxi History Museum",
+        "Xi'an Beilin Museum",
+        "Huaqing Palace",
+        "Xi'an Banpo Museum"
+      ],
+      "bestFirstTimers": [
+        "Shaanxi History Museum",
+        "Xi'an Beilin Museum",
+        "Huaqing Palace"
+      ],
+      "bestRestaurants": [
+        "Jing Xuan (The Ritz-Carlton, Xi'an)",
+        "Le Chinois (Sofitel Xi'an on Renmin Square)",
+        "Hua Yue Xuan (Novotel Xi'an Xinxing)",
+        "Tasuro (The Ritz-Carlton, Xi'an)"
+      ],
+      "bestBudget": [
+        "Shaanxi History Museum",
+        "Shaanxi History Museum Qin-Han Branch",
+        "Xi'an Beilin Museum",
+        "Xi'an Banpo Museum"
+      ],
+      "bestLuxury": [
+        "Flair (The Ritz-Carlton, Xi'an)",
+        "Jing Xuan (The Ritz-Carlton, Xi'an)",
+        "Tasuro (The Ritz-Carlton, Xi'an)",
+        "Le Chinois (Sofitel Xi'an on Renmin Square)"
+      ],
+      "bestCouples": [
+        "Flair (The Ritz-Carlton, Xi'an)",
+        "Tasuro (The Ritz-Carlton, Xi'an)",
+        "Bar Bambu (Sofitel Xi'an on Renmin Square)",
+        "Huaqing Palace"
+      ],
+      "bestKids": [
+        "Xi'an Banpo Museum",
+        "Shaanxi History Museum"
+      ],
+      "bestSolo": [
+        "Xi'an Beilin Museum",
+        "Shaanxi History Museum Qin-Han Branch",
+        "Lobby Lounge (The Ritz-Carlton, Xi'an)"
+      ],
+      "bestUnique": [
+        "Xi'an Banpo Museum",
+        "Shaanxi History Museum Qin-Han Branch",
+        "Huaqing Palace"
+      ],
+      "bestBreakfast": [
+        "Azur (Sofitel Xi'an on Renmin Square)",
+        "Xian Kitchen (The Ritz-Carlton, Xi'an)",
+        "Champs Elysees Restaurant (Mercure Xi'an Qujiang)",
+        "Food Exchange (Novotel Xi'an The Bell Tower)"
+      ],
+      "bestLunch": [
+        "Jing Xuan (The Ritz-Carlton, Xi'an)",
+        "Xian Kitchen (The Ritz-Carlton, Xi'an)",
+        "Food Exchange (Novotel Xi'an The Bell Tower)",
+        "Azur (Sofitel Xi'an on Renmin Square)"
+      ],
+      "bestDinner": [
+        "Le Chinois (Sofitel Xi'an on Renmin Square)",
+        "Tasuro (The Ritz-Carlton, Xi'an)",
+        "Jing Xuan (The Ritz-Carlton, Xi'an)",
+        "Hua Yue Xuan (Novotel Xi'an Xinxing)"
+      ],
+      "bestCocktails": [
+        "Flair (The Ritz-Carlton, Xi'an)",
+        "Bar Bambu (Sofitel Xi'an on Renmin Square)",
+        "Leon Bar (Mercure Xi'an Qujiang)"
+      ],
+      "bestBakeries": [],
+      "bestCoffee": [
+        "Lobby Lounge (The Ritz-Carlton, Xi'an)",
+        "Bar Bambu (Sofitel Xi'an on Renmin Square)",
+        "Xinyi Lobby Bar (Novotel Xi'an Xinxing)",
+        "Leon Bar (Mercure Xi'an Qujiang)"
+      ]
+    },
+    "queries": {
+      "Shaanxi History Museum": "Shaanxi History Museum 91 Xiaozhai East Road Xi'an",
+      "Shaanxi History Museum Qin-Han Branch": "Shaanxi History Museum Qin-Han Branch Lanchi 3rd Road Qinhan New City Xi'an",
+      "Xi'an Beilin Museum": "Xi'an Beilin Museum 15 Sanxuejie Xi'an",
+      "Xi'an Banpo Museum": "Xi'an Banpo Museum 155 Banpo Road Xi'an",
+      "Huaqing Palace": "Huaqing Palace 3 Huaqing Road Lintong Xi'an",
+      "Azur (Sofitel Xi'an on Renmin Square)": "Sofitel Xi'an on Renmin Square 319 Dongxin Street Xi'an",
+      "Le Chinois (Sofitel Xi'an on Renmin Square)": "Le Chinois Sofitel 319 Dongxin Street Xi'an",
+      "Bar Bambu (Sofitel Xi'an on Renmin Square)": "Bar Bambu Sofitel 319 Dongxin Street Xi'an",
+      "Food Exchange (Novotel Xi'an The Bell Tower)": "Novotel Xi'an The Bell Tower 16 Anban Street Xi'an",
+      "Hua Yue Xuan (Novotel Xi'an Xinxing)": "Novotel Xi'an Xinxing 9 Huzhu Road Xi'an",
+      "Xinyi Lobby Bar (Novotel Xi'an Xinxing)": "Novotel Xi'an Xinxing 9 Huzhu Road Xi'an",
+      "Champs Elysees Restaurant (Mercure Xi'an Qujiang)": "Mercure Xi'an Qujiang Yanxiang Road Xi'an",
+      "Leon Bar (Mercure Xi'an Qujiang)": "Mercure Xi'an Qujiang Yanxiang Road Xi'an",
+      "Xian Kitchen (The Ritz-Carlton, Xi'an)": "The Ritz-Carlton Xi'an 50 Keji 2nd Road Xi'an",
+      "Jing Xuan (The Ritz-Carlton, Xi'an)": "Jing Xuan Ritz-Carlton 50 Keji 2nd Road Xi'an",
+      "Tasuro (The Ritz-Carlton, Xi'an)": "Tasuro Ritz-Carlton 50 Keji 2nd Road Xi'an",
+      "Flair (The Ritz-Carlton, Xi'an)": "Flair Ritz-Carlton 50 Keji 2nd Road Xi'an",
+      "Lobby Lounge (The Ritz-Carlton, Xi'an)": "The Ritz-Carlton Xi'an Lobby Lounge 50 Keji 2nd Road Xi'an"
+    },
+    "summary": "Museums, a Tang palace site, and hotel restaurants, bars and lounges in Xi'an, checked against their own websites.",
+    "highlights": [
+      "Shaanxi History Museum",
+      "Xi'an Beilin Museum",
+      "Xi'an Banpo Museum",
+      "Huaqing Palace"
+    ],
+    "tip": "Book Shaanxi History Museum tickets with your ID when the five-day window opens at 17:00, and plan around its Monday closure (Tuesday at the Qin-Han Branch), while the Xi'an Beilin Museum's visitor guide says it opens every day.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mondays and Tuesdays",
+        "copy": "The Shaanxi History Museum closes on Mondays and its Qin-Han Branch on Tuesdays, except on national statutory holidays. The Xi'an Beilin Museum's visitor guide says it opens every day of the week."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Real-name, in advance",
+        "copy": "Shaanxi History Museum admission is free but needs a real-name booking through its WeChat account, opening five days ahead at 17:00; a missed booking blocks new bookings for 180 days. The Xi'an Beilin Museum also takes real-name bookings up to five days ahead and stops selling once the day's quota is reached."
+      },
+      {
+        "label": "Walk-in rules",
+        "value": "Seniors and small children",
+        "copy": "At the Shaanxi History Museum, visitors aged 65 and over can enter by scanning their ID card without booking. Children aged 6 and under, or 1.4 m and under, need no booking and enter with a booked adult, up to two per adult."
+      },
+      {
+        "label": "Rules",
+        "value": "Flash, tripods, dress",
+        "copy": "The Xi'an Beilin Museum bans flash photography and lists tripods among prohibited items. The Ritz-Carlton, Xi'an lists a no-bathing-suits dress code at Xian Kitchen and Flair."
+      }
+    ],
+    "dek": "Book museum slots ahead with your ID, and plan your museum days around the Monday and Tuesday closures.",
+    "intro": [
+      "Start with the Shaanxi History Museum on Xiaozhai East Road. Admission is free, but you still need a real-name ticket booked through its WeChat account. Booking opens five days ahead at 17:00, and a missed booking counts as a no-show that blocks new bookings for 180 days. Its winter hours, 9:00 to 17:30 with last entry at 16:30, run from 15 November 2026 to 14 March 2027, and the main museum closes on Mondays except on national statutory holidays. The Qin-Han Branch in Xixian New Area keeps 9:00 to 17:30 but closes on Tuesdays instead.",
+      "The Xi'an Beilin Museum at 15 Sanxuejie displays inscribed stone steles in its Forest of Steles galleries alongside a Stone Sculpture Hall, and its new building's permanent display was named among the national top ten museum exhibitions in May 2026. Its visitor guide says it opens every day of the week, with ticket sales and entry stopping at 17:00. You book with real-name ID up to five days ahead through its WeChat account, Alipay mini program or website, and sales stop once the day's quota is reached. Flash photography is not allowed, and tripods are on its prohibited-items list.",
+      "For prehistory, the Xi'an Banpo Museum at 155 Banpo Road shows prehistoric pottery and tools, with a pottery-making exhibition and a Prehistoric Workshop activity for children that you book by phone. Its hours page gives an 8:00 opening all year. East of the city in Lintong, Huaqing Palace at 3 Huaqing Road lists visiting hours from 7:30 on an undated page and sells tickets through its official WeChat account, mini program and online stores. Its evening show, The Song of Everlasting Sorrow, books up to ten days ahead through the same official channels.",
+      "For meals, hotel restaurants publish the clearest details. The Ritz-Carlton, Xi'an on Keji 2nd Road lists Xian Kitchen daily from 6:30 to 21:30, Cantonese-influenced Jing Xuan for lunch and dinner, teppanyaki at Tasuro from 17:30, and Flair, a rooftop bar reached by private elevator, open until 1:00, or 2:00 on Fridays and Saturdays. Its Lobby Lounge serves Afternoon Tea, pastries and cakes. At Sofitel Xi'an on Renmin Square, Azur serves breakfast from 6:00, Le Chinois cooks Shaanxi and Cantonese dishes, and Bar Bambu pours coffee and cocktails in the lobby."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair the Shaanxi History Museum, closed on Mondays, with the Xi'an Beilin Museum, which its visitor guide says opens every day."
+      ],
+      [
+        "A slower morning",
+        "Take breakfast at Azur in Sofitel Xi'an on Renmin Square from 6:00, then reach the Xi'an Beilin Museum well before ticket sales stop at 17:00."
+      ],
+      [
+        "Before booking",
+        "Have your passport or ID ready, since the Shaanxi History Museum and the Xi'an Beilin Museum both need real-name bookings, and remember the Shaanxi History Museum closes on Mondays and its Qin-Han Branch on Tuesdays."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several major sights could not be read by automated fetch and are left out: the Terracotta Warriors museum site (failed fetch and an http-only redirect), the City Wall (SSL error), Hanyangling Museum (TLS error), Daming Palace and the Bell and Drum Tower (DNS failures), the Tang West Market Museum (connection reset) and the Xi'an Museum at the Small Wild Goose Pagoda (no readable content); Shangri-La, Grand Hyatt, Westin, Hotel Indigo and Hilton pages returned 403 and % Arabica returned 418. Hours for the Xi'an Banpo Museum, Huaqing Palace and the Ritz-Carlton venues come from undated pages; the Accor hotel venues other than Azur's breakfast publish no hours, and their operating evidence is live hotel booking rather than dated notices. The Xi'an Beilin Museum's pages disagree on closing time (18:00 vs 18:30) and on ticket price, so neither price is stated. Xi'an's independent restaurants, cafés and bakeries rarely publish official websites, so dining, coffee and bakery picks are hotel venues; the bakery list uses lounges that serve pastries, cakes or desserts rather than true bakeries.",
+  "injectionLikeText": [],
+  "additions": [
+    {
+      "checkedOn": "2026-11-17",
+      "method": "The museum's site failed to load for automated reading during the review. It was then read on the museum's own home page in a browser; no review sites, maps or blogs were used.",
+      "places": [
+        {
+          "name": "Terracotta Warriors (Emperor Qinshihuang's Mausoleum Site Museum)",
+          "url": "https://www.bmy.com.cn/index.html",
+          "sourceType": "operator's own site (state museum)",
+          "address": "Qinling North Road, Lintong District, Xi'an (陕西省西安市临潼区秦陵北路)",
+          "operatingEvidence": "The home page publishes seasonal hours and says the museum runs real-name booking for all visitors, including foreign visitors, through its official website and WeChat account. News items are dated 13 November 2026. The site comprises the Terracotta Warriors museum and the Lishan Garden archaeological park, each taking about 1.5 hours.",
+          "hours": "16 March-15 November: entry 08:30-17:00, closes 18:30; 16 November-15 March: entry 08:30-16:30, closes 18:00",
+          "query": "Emperor Qinshihuang's Mausoleum Site Museum Terracotta Warriors Lintong Xi'an",
+          "categories": [
+            "bestAttractions",
+            "bestFirstTimers",
+            "bestKids",
+            "bestUnique"
+          ],
+          "replacesExcluded": []
+        }
+      ]
+    }
+  ]
+}

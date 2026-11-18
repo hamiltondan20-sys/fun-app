@@ -5,6 +5,1378 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Manila, Philippines": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-11-17",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Intramuros site hours (Fort Santiago, Casa Manila Museum, Baluarte de San Diego, Museo de Intramuros) come from an Intramuros Administration page marked as updated in September 2023, and Eng Bee Tin's hours come from a page with nothing newer than October 2025. Hours were not readable for the Ayala Museum, Rizal Park or Gallery by Chele, and Toyo Eatery, Run Rabbit Run, Gallery by Chele and the Raffles Makati outlets showed no 2026-dated content. National Museum hours for Natural History and Anthropology come from museum-wide notices. Sites that could not be read automatically (403, certificate or connection errors) include The Peninsula Manila, Okada Manila, Shangri-La The Fort, Wildflour, The Curator, the Cultural Center of the Philippines, San Agustin Church, Pancake House, Goldilocks, Polland, Toby's Estate and Kamuning Bakery.",
+    "sourceUrls": [
+      "docs/content-research/manila-2026-11-17.md",
+      "docs/content-research/manila-2026-11-17.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Intramuros",
+        "url": "https://intramuros.gov.ph/",
+        "checkedOn": "2026-11-17",
+        "reason": "walled district, not a single venue; covered by confirmed Intramuros Administration sites (Fort Santiago, Casa Manila Museum, Baluarte de San Diego, Museo de Intramuros)"
+      },
+      {
+        "name": "National Museum",
+        "url": "https://www.nationalmuseum.gov.ph/",
+        "checkedOn": "2026-11-17",
+        "reason": "umbrella name; confirmed as three separate buildings (Fine Arts, Natural History, Anthropology)"
+      },
+      {
+        "name": "San Agustin Church and Museum",
+        "url": "https://www.sanagustinchurch.org/",
+        "checkedOn": "2026-11-17",
+        "reason": "official site sanagustinchurch.org failed with an SSL error; only the Intramuros Administration (not the operator) lists its hours"
+      },
+      {
+        "name": "Manila Cathedral",
+        "url": "https://www.manilacathedral.com.ph/",
+        "checkedOn": "2026-11-17",
+        "reason": "official site shows no address and no content newer than 2021"
+      },
+      {
+        "name": "The Peninsula Manila",
+        "url": "https://www.peninsula.com/en/manila/5-star-luxury-hotel-makati",
+        "checkedOn": "2026-11-17",
+        "reason": "HTTP 403 on automated fetch"
+      },
+      {
+        "name": "Okada Manila",
+        "url": "https://www.okadamanila.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "HTTP 403 on automated fetch"
+      },
+      {
+        "name": "Shangri-La The Fort, Manila",
+        "url": "https://www.shangri-la.com/manila/shangrilathefort/",
+        "checkedOn": "2026-11-17",
+        "reason": "HTTP 403 on automated fetch"
+      },
+      {
+        "name": "Wildflour Cafe + Bakery (Salcedo Village)",
+        "url": "https://wildflour.com.ph/wildflour/",
+        "checkedOn": "2026-11-17",
+        "reason": "HTTP 403 on branch pages; homepage returned no readable content"
+      },
+      {
+        "name": "The Curator",
+        "url": "https://www.thecurator.com.ph/",
+        "checkedOn": "2026-11-17",
+        "reason": "certificate error (unable to get local issuer certificate)"
+      },
+      {
+        "name": "Cultural Center of the Philippines",
+        "url": "https://www.culturalcenter.gov.ph/",
+        "checkedOn": "2026-11-17",
+        "reason": "certificate error (unable to verify the first certificate)"
+      },
+      {
+        "name": "Pancake House",
+        "url": "https://www.pancakehouse.com.ph/",
+        "checkedOn": "2026-11-17",
+        "reason": "certificate error (unable to verify the first certificate)"
+      },
+      {
+        "name": "Goldilocks",
+        "url": "https://www.goldilocks.com.ph/",
+        "checkedOn": "2026-11-17",
+        "reason": "certificate error (hostname does not match certificate)"
+      },
+      {
+        "name": "Polland Hopia",
+        "url": "https://www.polland.com.ph/",
+        "checkedOn": "2026-11-17",
+        "reason": "certificate error (unable to get local issuer certificate)"
+      },
+      {
+        "name": "Toby's Estate (Philippines)",
+        "url": "https://www.tobysestate.com.ph/",
+        "checkedOn": "2026-11-17",
+        "reason": "connection refused"
+      },
+      {
+        "name": "Kamuning Bakery",
+        "url": "https://kamuningbakery.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "HTTP 521 from the official site"
+      },
+      {
+        "name": "Barbara's Heritage Restaurant",
+        "url": "https://www.barbarasheritage.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "official domain did not resolve"
+      },
+      {
+        "name": "Panaderia Toyo",
+        "url": "https://www.panaderiatoyo.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "official domain did not resolve; not mentioned on toyoeatery.com"
+      },
+      {
+        "name": "Museo Pambata",
+        "url": "https://www.museopambata.org/",
+        "checkedOn": "2026-11-17",
+        "reason": "domain is a for-sale parking page; no museum information"
+      },
+      {
+        "name": "Aristocrat Restaurant",
+        "url": "https://www.aristocrat.com.ph/",
+        "checkedOn": "2026-11-17",
+        "reason": "official domain redirects to a parking page"
+      },
+      {
+        "name": "Ilustrado Restaurant",
+        "url": "https://www.ilustradorestaurant.com.ph/",
+        "checkedOn": "2026-11-17",
+        "reason": "official domain returned no readable content"
+      },
+      {
+        "name": "Quiapo Church",
+        "url": "https://www.quiapochurch.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "official site returned no readable content"
+      },
+      {
+        "name": "Red Ribbon",
+        "url": "https://www.redribbon.ph/",
+        "checkedOn": "2026-11-17",
+        "reason": "official site returned no readable content"
+      },
+      {
+        "name": "Manam Comfort Filipino",
+        "url": "https://momentgroup.ph/brands/show/manam",
+        "checkedOn": "2026-11-17",
+        "reason": "official brand pages list no branch addresses or hours"
+      },
+      {
+        "name": "Café Mary Grace",
+        "url": "https://www.marygracecafe.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "official homepage lists no branch addresses; store-locator URL returned 404"
+      },
+      {
+        "name": "Sentro 1771 (Greenbelt 5)",
+        "url": "https://www.sentro1771.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "address published but no hours and no current menu or dated content (latest menu file May 2025)"
+      },
+      {
+        "name": "Hapag",
+        "url": "https://www.hapag.ph/",
+        "checkedOn": "2026-11-17",
+        "reason": "hapag.ph is an unrelated furniture retailer; restaurant's official site not found"
+      },
+      {
+        "name": "Common Man Coffee Roasters (Manila)",
+        "url": "https://www.commonmancoffeeroasters.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "official site lists Singapore and Malaysia cafés only"
+      },
+      {
+        "name": "Pan de Manila",
+        "url": "https://www.pandemanila.com.ph/branches",
+        "checkedOn": "2026-11-17",
+        "reason": "official branches page says only \"Coming Soon\""
+      },
+      {
+        "name": "Bo's Coffee",
+        "url": "https://www.boscoffee.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "official homepage lists no store addresses"
+      },
+      {
+        "name": "Destileria Limtuaco",
+        "url": "https://www.limtuaco.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "official site shows only an age gate; no museum details readable"
+      },
+      {
+        "name": "Sky Deck View Bar (The Bayleaf Intramuros)",
+        "url": "https://www.thebayleaf.com.ph/",
+        "checkedOn": "2026-11-17",
+        "reason": "hotel site has address but no bar information; latest content 2024"
+      },
+      {
+        "name": "Mistral Rooftop Bar (Raffles Makati)",
+        "url": "https://www.raffles.com/makati/dining/mistral-rooftop-bar/",
+        "checkedOn": "2026-11-17",
+        "reason": "page returned 404"
+      },
+      {
+        "name": "SM Mall of Asia",
+        "url": "https://www.smsupermalls.com/mall/sm-mall-of-asia",
+        "checkedOn": "2026-11-17",
+        "reason": "official mall page returned 404"
+      },
+      {
+        "name": "Salcedo Saturday Market",
+        "checkedOn": "2026-11-17",
+        "reason": "no official operator website found; only press and listings"
+      },
+      {
+        "name": "Binondo Church (Minor Basilica of San Lorenzo Ruiz)",
+        "checkedOn": "2026-11-17",
+        "reason": "no official parish website found or readable; only directories"
+      },
+      {
+        "name": "Makati food scene",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Intramuros walk",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market food tour",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Makati evening",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "a Filipino tasting meal",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Manila market or cafe",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local dinner in Intramuros",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Makati",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in BGC",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Intramuros",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Intramuros walk",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Makati",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around BGC",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through BGC",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Intramuros",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Intramuros",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Intramuros walk",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Makati",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near National Museum",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Intramuros evening",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Makati",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near BGC",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Intramuros",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Intramuros",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Makati",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near BGC",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Intramuros",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Intramuros",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Intramuros cafe or market",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Market food tour",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in BGC",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of BGC",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Intramuros",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Intramuros",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Makati bakery or market",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Intramuros",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through BGC",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Intramuros",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near National Museum",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around BGC",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Intramuros",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Makati",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in BGC",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Intramuros",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Intramuros",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Makati",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Makati food scene",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Intramuros",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Makati morning market",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Intramuros",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near BGC",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Intramuros",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Makati",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near BGC",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Fort Santiago": {
+        "url": "https://intramuros.gov.ph/?p=6158",
+        "sourceType": "official public operator (Intramuros Administration)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Listed among Intramuros Administration managed sites with tickets \"Regular PHP 75.00\". The Administration's homepage carries a current events calendar, including Intramuros events on 21 and 22 November."
+      },
+      "Casa Manila Museum": {
+        "url": "https://intramuros.gov.ph/?p=6158",
+        "sourceType": "official public operator (Intramuros Administration)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Listed as an Intramuros Administration managed site with admission \"₱75 regular, ₱50 discounted\"; the Administration's homepage shows a current events calendar."
+      },
+      "Baluarte de San Diego": {
+        "url": "https://intramuros.gov.ph/?p=6158",
+        "sourceType": "official public operator (Intramuros Administration)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Listed as an Intramuros Administration managed site, admission \"₱75 regular, ₱50 discounted\"; the Administration's homepage shows a current events calendar."
+      },
+      "Museo de Intramuros": {
+        "url": "https://intramuros.gov.ph/?p=6158",
+        "sourceType": "official public operator (Intramuros Administration)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Listed as an Intramuros Administration managed site, \"₱150 regular, ₱120 discounted\" (paid access shared with Centro de Turismo Intramuros); the Administration's homepage shows a current events calendar."
+      },
+      "National Museum of Fine Arts": {
+        "url": "https://www.nationalmuseum.gov.ph/category/news-and-events/",
+        "sourceType": "official public operator (National Museum of the Philippines)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "31 October 2026 post: \"The National Museum of Fine Arts is open daily, from 9:00 AM to 6:00 PM. Admission is FREE.\" The 26 August 2026 post says \"Sansó: Pusong Pilipino – A Juvenal Sansó Retrospective\" (Gallery XV, 3/F) runs until 28 February 2027."
+      },
+      "National Museum of Natural History": {
+        "url": "https://www.nationalmuseum.gov.ph/our-museums/national-museum-of-natural-history/",
+        "sourceType": "official public operator (National Museum of the Philippines)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Museum page describes 12 permanent galleries. The museum's 28 May 2026 post says \"The National Museum of the Philippines is open from Mondays to Sundays, from 9 AM to 6 PM. Admission is FREE.\" Booking site: \"Walk-in visitors are welcome.\""
+      },
+      "National Museum of Anthropology": {
+        "url": "https://www.nationalmuseum.gov.ph/our-museums/national-museum-of-anthropology/",
+        "sourceType": "official public operator (National Museum of the Philippines)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Museum page features exhibits GAMABA, HIBLA, BANGSAMORO, LUMAD and PALAYOK (no dates). NMP post of 28 May 2026: open \"Mondays to Sundays, from 9 AM to 6 PM. Admission is FREE.\""
+      },
+      "Rizal Park": {
+        "url": "https://npdc.gov.ph/",
+        "sourceType": "official public operator (National Parks Development Committee)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "NPDC \"develop[s], preserve[s], and manage[s] Rizal and Paco Parks\"; visitor count for Rizal Park Luneta \"Updated as of November 12, 2026\"; 18 March 2026 post on a visit to the Rizal Monument."
+      },
+      "Manila Ocean Park": {
+        "url": "https://www.manilaoceanpark.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "News dated 09/21/2026 on joining the 41st International Coastal Cleanup Day on 19 September 2026; \"Book your tickets now!\""
+      },
+      "The Mind Museum": {
+        "url": "https://www.themindmuseum.org/plan-your-visit",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current ticketing: 3-hour slots (9 AM, 12 PM, 3 PM), \"Limited slots only\"; adult PHP 625, all-day pass PHP 750; online \"BUY TICKETS\"."
+      },
+      "Metropolitan Museum of Manila": {
+        "url": "https://www.metmuseum.ph/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current exhibitions \"Miniaturismo to Modernism: Philippine Art from the 19th Century to the Sixties\" and \"Alfonso Ossorio: In My End Is My Beginning\", both \"08 NOVEMBER 2026 TO 30 MAY 2027\"; \"BOOK YOUR VISIT\"."
+      },
+      "Ayala Museum": {
+        "url": "https://ayalamuseum.org/exhibitions",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Onsite exhibitions \"Turning Tides: Maritime Encounters and Exchanges of Power\" (16 Jul 2026 – 14 Feb 2027) and \"Reuniting the Surigao Treasure\" (17 May 2024 – 30 May 2027)."
+      },
+      "Ayala Triangle Gardens": {
+        "url": "https://www.ayalatriangle.com/GARDENS",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Published operating hours and park rules (leashed pets, minors supervised, no alcohol or glass); restaurant directory; footer copyright 2026."
+      },
+      "Champagne Room (The Manila Hotel)": {
+        "url": "https://www.manila-hotel.com.ph/dining/champa",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "November 2026 Degustation and Business Lunch menus; group promo \"valid until November 30, 2026\"; reservations by phone."
+      },
+      "Café Ilang-Ilang (The Manila Hotel)": {
+        "url": "https://www.manila-hotel.com.ph/dining/cafe-ilang-ilang/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Buffet rates published (breakfast ₱1,950 adult) and 2026 promotion blackout dates listed."
+      },
+      "Lobby Lounge (The Manila Hotel)": {
+        "url": "https://www.manila-hotel.com.ph/dining/lobby-lounge/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Happy Hour promotion \"May 15 to December 29, 2026\" covering cocktails; afternoon tea at Php2,588 nett per set."
+      },
+      "Delicatessen (The Manila Hotel)": {
+        "url": "https://www.manila-hotel.com.ph/dining/delicatessen/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Hours notice and current offer: from 7 PM, selected breads and pastries 50% off; sells freshly baked Danish, breads, cakes and pastries."
+      },
+      "Writers Bar (Raffles Makati)": {
+        "url": "https://www.raffles.com/makati/dining/writers-bar/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Hours notice and booking: \"Kindly be aware that advance reservations are required.\" Reservations by phone, email or RESERVE link."
+      },
+      "Long Bar (Raffles Makati)": {
+        "url": "https://www.raffles.com/makati/dining/long-bar/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Hours notice with weekly live entertainment 8pm–11pm weeknights, 8pm–12am Friday and Saturday; reservations by email or phone."
+      },
+      "Café Macaron (Fairmont Makati)": {
+        "url": "https://www.raffles.com/makati/dining/cafe-macaron/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Hours notice; sells \"homemade cakes, handcrafted pastries\" and macarons in flavours such as ube and pandan, dine-in or takeaway."
+      },
+      "Toyo Eatery": {
+        "url": "https://www.toyoeatery.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Hours notice and a reservations link (TableCheck) plus reservations email; no 2026-dated content on the page."
+      },
+      "Gallery by Chele": {
+        "url": "https://www.gallerybychele.com/reservations",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Reservations page with booking email and phone; menus linked. No dated content or hours on the pages read."
+      },
+      "Run Rabbit Run": {
+        "url": "https://runrabbit.run/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Hours notice and \"BOOK YOUR SEATS\" booking button; no 2026-dated content."
+      },
+      "Eng Bee Tin (Ongpin)": {
+        "url": "https://www.engbeetin.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Flagship store listed with hours; most recent dated posts are from October 2025 and the footer reads \"Copyright 2022\", so no 2026 content."
+      },
+      "Commune (Poblacion)": {
+        "url": "https://www.commune.ph/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Homepage heading \"Coffee University November 2026 Update\"; \"Copyright © 2026 Commune Café, Bar & Roastery\"."
+      },
+      "Yardstick Coffee (Legazpi Village)": {
+        "url": "https://www.yardstickcoffee.com/pages/locations",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Locations page lists current hours and online pick-up times (9am–4pm daily); online store active."
+      },
+      "Max's Restaurant (Malate)": {
+        "url": "https://www.maxschicken.com/store-locator/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Store locator lists the branch with hours; homepage carries 2026 news (Sesame Street party package) and \"Copyright 2026 Max's Group Inc.\""
+      }
+    }
+  },
+  "Xi'an, China": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-11-17",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several major sights could not be read by automated fetch and are left out: the Terracotta Warriors museum site (failed fetch and an http-only redirect), the City Wall (SSL error), Hanyangling Museum (TLS error), Daming Palace and the Bell and Drum Tower (DNS failures), the Tang West Market Museum (connection reset) and the Xi'an Museum at the Small Wild Goose Pagoda (no readable content); Shangri-La, Grand Hyatt, Westin, Hotel Indigo and Hilton pages returned 403 and % Arabica returned 418. Hours for the Xi'an Banpo Museum, Huaqing Palace and the Ritz-Carlton venues come from undated pages; the Accor hotel venues other than Azur's breakfast publish no hours, and their operating evidence is live hotel booking rather than dated notices. The Xi'an Beilin Museum's pages disagree on closing time (18:00 vs 18:30) and on ticket price, so neither price is stated. Xi'an's independent restaurants, cafés and bakeries rarely publish official websites, so dining, coffee and bakery picks are hotel venues; the bakery list uses lounges that serve pastries, cakes or desserts rather than true bakeries. The Terracotta Warriors (Emperor Qinshihuang's Mausoleum Site Museum) were read on 2026-11-17 in a browser, from the museum's own site, and added.",
+    "sourceUrls": [
+      "docs/content-research/xi-an-2026-11-17.md",
+      "docs/content-research/xi-an-2026-11-17.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Terracotta Warriors (Emperor Qinshihuang's Mausoleum Site Museum)",
+        "url": "https://bmy.com.cn/",
+        "checkedOn": "2026-11-17",
+        "reason": "Official site https://www.bmy.com.cn/ failed with no output; https://bmy.com.cn/ redirects to an http-only page, so no https evidence could be read."
+      },
+      {
+        "name": "City Wall",
+        "url": "https://www.xacitywall.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "Official site returned an SSL error (WRONG_VERSION_NUMBER); not bypassed."
+      },
+      {
+        "name": "City Wall bike ride",
+        "url": "https://www.xacitywall.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "Activity run on the City Wall, whose official site returned an SSL error; not bypassed."
+      },
+      {
+        "name": "Small Wild Goose Pagoda (Xi'an Museum)",
+        "url": "https://www.xabwy.com/index.html",
+        "checkedOn": "2026-11-17",
+        "reason": "Official Xi'an Museum site rendered no readable address, hours or notices (content loads by script)."
+      },
+      {
+        "name": "Muslim Quarter",
+        "checkedOn": "2026-11-17",
+        "reason": "A neighbourhood with no single operator or official page."
+      },
+      {
+        "name": "Bell Tower (Xi'an Bell and Drum Tower Museum)",
+        "url": "https://www.xazgl.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "Domain tried failed DNS lookup (EAI_AGAIN); no other official site found."
+      },
+      {
+        "name": "Hanyangling Museum",
+        "url": "https://www.hylae.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "Official site returned a TLS error; not bypassed."
+      },
+      {
+        "name": "Daming Palace National Heritage Park",
+        "url": "https://www.dmgpark.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "Official domain dmgpark.com failed DNS lookup (ENOTFOUND)."
+      },
+      {
+        "name": "Tang Paradise (Datang Furong Garden)",
+        "url": "https://www.tangparadise.cn/",
+        "checkedOn": "2026-11-17",
+        "reason": "Official site read, but no 2026 content or current hours notice found (footer 2010-2025, news page empty)."
+      },
+      {
+        "name": "Qujiang Pool Heritage Park",
+        "url": "https://xaqujiangchi.qjtourism.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "Official site read, newest item dated 2023; no current operating evidence."
+      },
+      {
+        "name": "Qujiang Ocean Polar Park",
+        "url": "https://oceanpark.qjtourism.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "Official site read, no 2026 content or hours."
+      },
+      {
+        "name": "Tang West Market Museum",
+        "url": "https://www.dtxsmuseum.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "Official site fetch failed (ECONNRESET)."
+      },
+      {
+        "name": "Shaanxi Archaeological Museum",
+        "url": "https://www.sxkgy.cn/",
+        "checkedOn": "2026-11-17",
+        "reason": "No official site found; guessed academy domain failed DNS lookup."
+      },
+      {
+        "name": "Club Millésime (Sofitel Xi'an on Renmin Square)",
+        "url": "https://sofitel.accor.com/en/hotels/5949/R005.restaurant.html",
+        "checkedOn": "2026-11-17",
+        "reason": "Page gives no hours or access rules; appears to be a hotel club floor."
+      },
+      {
+        "name": "Shangri-La Xi'an dining",
+        "url": "https://www.shangri-la.com/xian/shangrila/dining/",
+        "checkedOn": "2026-11-17",
+        "reason": "HTTP 403."
+      },
+      {
+        "name": "Grand Hyatt Xi'an dining",
+        "url": "https://www.hyatt.com/grand-hyatt/en-US/xiygh-grand-hyatt-xian/dining",
+        "checkedOn": "2026-11-17",
+        "reason": "HTTP 403."
+      },
+      {
+        "name": "The Westin Xi'an (Mix Bar)",
+        "url": "https://www.marriott.com/en-us/hotels/xiywi-the-westin-xian/overview/",
+        "checkedOn": "2026-11-17",
+        "reason": "HTTP 403."
+      },
+      {
+        "name": "Hotel Indigo Xi'an",
+        "url": "https://www.ihg.com/hotelindigo/hotels/us/en/xian/xiyss/hoteldetail",
+        "checkedOn": "2026-11-17",
+        "reason": "HTTP 403."
+      },
+      {
+        "name": "Hilton Xi'an dining",
+        "url": "https://www.hilton.com/en/hotels/xiyhihi-hilton-xian/dining/",
+        "checkedOn": "2026-11-17",
+        "reason": "HTTP 403."
+      },
+      {
+        "name": "% Arabica Xi'an G Park",
+        "url": "https://arabica.com/en/?p=21237",
+        "checkedOn": "2026-11-17",
+        "reason": "HTTP 418 (refuses automated reading)."
+      },
+      {
+        "name": "% Arabica Xi'an MixC",
+        "url": "https://arabica.com/location/arabica-xian-mixc/",
+        "checkedOn": "2026-11-17",
+        "reason": "HTTP 418 (refuses automated reading)."
+      },
+      {
+        "name": "Novotel Xi'an Daming Palace restaurant and bar",
+        "url": "https://all.accor.com/hotel/C3D1/index.en.shtml",
+        "checkedOn": "2026-11-17",
+        "reason": "Venues unnamed on the official page (\"Western Restaurant\", \"Bar\"); not specific enough."
+      },
+      {
+        "name": "Night market food walk",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Night market food walk",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "biangbiang noodles and dumplings",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Xi'an market or cafe",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local dinner in Bell Tower",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Muslim Quarter",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in South Gate",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Bell Tower",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Bell Tower walk",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Muslim Quarter",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around South Gate",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through South Gate",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Terracotta Warriors",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Bell Tower",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around City Wall bike ride",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Muslim Quarter",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near City Wall",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Bell Tower evening",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Muslim Quarter",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near South Gate",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Bell Tower",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Terracotta Warriors",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Muslim Quarter",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near South Gate",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Bell Tower",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Terracotta Warriors",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Bell Tower cafe or market",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in South Gate",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of South Gate",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Bell Tower",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Bell Tower",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Muslim Quarter bakery or market",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Terracotta Warriors",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through South Gate",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Bell Tower",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near City Wall",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around South Gate",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Bell Tower",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Muslim Quarter",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in South Gate",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Bell Tower",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Bell Tower",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Muslim Quarter",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Muslim Quarter",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Bell Tower",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Muslim Quarter morning market",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Terracotta Warriors",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near South Gate",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Bell Tower",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Muslim Quarter",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near South Gate",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Terracotta Warriors (Emperor Qinshihuang's Mausoleum Site Museum)": {
+        "url": "https://www.bmy.com.cn/index.html",
+        "sourceType": "operator's own site (state museum)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "The home page publishes seasonal hours and says the museum runs real-name booking for all visitors, including foreign visitors, through its official website and WeChat account. News items are dated 13 November 2026. The site comprises the Terracotta Warriors museum and the Lishan Garden archaeological park, each taking about 1.5 hours."
+      },
+      "Shaanxi History Museum": {
+        "url": "https://www.sxhm.com/guide.html",
+        "sourceType": "operator's own site (Shaanxi History Museum)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Announcement dated 2026-11-09: \"2026年11月15日至2027年3月14日，我馆将实行冬季开放时间\"; booking opens 5 days ahead at 17:00; news items dated November 2026."
+      },
+      "Shaanxi History Museum Qin-Han Branch": {
+        "url": "https://www.sxhm.com/guide.html",
+        "sourceType": "operator's own site (Shaanxi History Museum)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current guide page lists hours and booking; a 2026-09-11 announcement concerns maintenance services for the Qin-Han branch."
+      },
+      "Xi'an Beilin Museum": {
+        "url": "https://beilin-museum.com/index.php?m=home&c=Lists&a=index&tid=68",
+        "sourceType": "operator's own site (Xi'an Beilin Museum)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Home page news runs through mid-November 2026; on 2026-05-18 the new building's permanent display was named among the national top ten museum exhibitions. Real-name online booking is live."
+      },
+      "Xi'an Banpo Museum": {
+        "url": "https://www.banpomuseum.com.cn/index.php?m=content&c=index&a=lists&catid=8&kid=28",
+        "sourceType": "operator's own site (Xi'an Banpo Museum)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Notices dated 2026-09-21 (extended National Day holiday opening) and 2026-10-30 (lecture news); a temporary closure from 4 January to 1 February 2026 has ended."
+      },
+      "Huaqing Palace": {
+        "url": "https://www.hqc.cn/Play/",
+        "sourceType": "operator's own site (Huaqing Palace, Shaanxi Tourism Group)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Site has an online booking section and official ticket channels; newest dated item is a 2026-04-07 report from the palace's show company. Most visitor pages are undated."
+      },
+      "Azur (Sofitel Xi'an on Renmin Square)": {
+        "url": "https://sofitel.accor.com/en/hotels/5949/breakfast.html",
+        "sourceType": "operator's own site (Accor / Sofitel)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Hotel is bookable on Accor's site, which shows guest reviews dated 2026; Azur is described as \"An all- day restaurant serving the best of Mediterranean and European cuisine\"."
+      },
+      "Le Chinois (Sofitel Xi'an on Renmin Square)": {
+        "url": "https://sofitel.accor.com/en/hotels/5949/R004.restaurant.html",
+        "sourceType": "operator's own site (Accor / Sofitel)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Shaanxi and contemporary Cantonese cuisine; reservations by phone +86 29 87928888 or email; hotel bookable with 2026 guest reviews."
+      },
+      "Bar Bambu (Sofitel Xi'an on Renmin Square)": {
+        "url": "https://sofitel.accor.com/en/hotels/5949/B001.bar.html",
+        "sourceType": "operator's own site (Accor / Sofitel)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Lobby bar offering \"fresh coffee, specialty teas plus refreshing cocktails\" and snacks with live entertainment; hotel bookable with 2026 guest reviews."
+      },
+      "Food Exchange (Novotel Xi'an The Bell Tower)": {
+        "url": "https://all.accor.com/hotel/B6K7/index.en.shtml",
+        "sourceType": "operator's own site (Accor / Novotel)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Hotel bookable on Accor's site; restaurant \"blends Eastern and Western cuisine\"; breakfast RMB 98 per person over 12, free for children 12 and under (max 2 per room)."
+      },
+      "Hua Yue Xuan (Novotel Xi'an Xinxing)": {
+        "url": "https://all.accor.com/hotel/C2I8/index.en.shtml",
+        "sourceType": "operator's own site (Accor / Novotel)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Hotel bookable on Accor's site; Chinese restaurant serving Huaiyang, Cantonese and Shaanxi cuisine with 13 private dining rooms."
+      },
+      "Xinyi Lobby Bar (Novotel Xi'an Xinxing)": {
+        "url": "https://all.accor.com/hotel/C2I8/index.en.shtml",
+        "sourceType": "operator's own site (Accor / Novotel)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Hotel bookable on Accor's site; lobby bar offering coffee, tea and desserts with reading areas."
+      },
+      "Champs Elysees Restaurant (Mercure Xi'an Qujiang)": {
+        "url": "https://all.accor.com/hotel/B493/index.en.shtml",
+        "sourceType": "operator's own site (Accor / Mercure)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Hotel bookable on Accor's site; restaurant serves a customised breakfast buffet."
+      },
+      "Leon Bar (Mercure Xi'an Qujiang)": {
+        "url": "https://all.accor.com/hotel/B493/index.en.shtml",
+        "sourceType": "operator's own site (Accor / Mercure)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Hotel bookable on Accor's site; lobby bar offering wine, coffee and snacks."
+      },
+      "Xian Kitchen (The Ritz-Carlton, Xi'an)": {
+        "url": "https://www.ritzcarlton.com/en/hotels/china/xian/dining",
+        "sourceType": "operator's own site (The Ritz-Carlton / Marriott)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Dining page lists hours, phone +86 29 8881 8188 and a live \"Book a Table\" link; \"A modern approach to all-day dining\"."
+      },
+      "Jing Xuan (The Ritz-Carlton, Xi'an)": {
+        "url": "https://www.ritzcarlton.com/en/hotels/china/xian/dining/jing-xuan",
+        "sourceType": "operator's own site (The Ritz-Carlton / Marriott)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Cantonese-influenced fine dining with eight private rooms; \"Book a Table\" link and phone +86 29 88818288."
+      },
+      "Tasuro (The Ritz-Carlton, Xi'an)": {
+        "url": "https://www.ritzcarlton.com/en/hotels/china/xian/dining",
+        "sourceType": "operator's own site (The Ritz-Carlton / Marriott)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Teppanyaki with six live-action stations; reservations by phone +86 29 88818588."
+      },
+      "Flair (The Ritz-Carlton, Xi'an)": {
+        "url": "https://www.ritzcarlton.com/en/hotels/china/xian/dining/flair",
+        "sourceType": "operator's own site (The Ritz-Carlton / Marriott)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Rooftop bar: \"A private elevator ride is all that stands between you and the 180-degree city view at Flair\"; signature cocktails, sushi counter; phone +86 29 88818988."
+      },
+      "Lobby Lounge (The Ritz-Carlton, Xi'an)": {
+        "url": "https://www.ritzcarlton.com/en/hotels/china/xian/dining/jing-xuan",
+        "sourceType": "operator's own site (The Ritz-Carlton / Marriott)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Coffee house serving signature Afternoon Tea, gourmet pastries and cakes; \"Book a Table\" link and phone +86 29 86466232."
+      }
+    }
+  },
   "Queenstown, New Zealand": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-11-17",

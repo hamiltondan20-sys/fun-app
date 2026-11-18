@@ -10490,4 +10490,231 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on November 17, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Xi'an, China: source review of 2026-11-17 (docs/content-research/xi-an-2026-11-17.md).
+  {
+    const cityKey = "Xi'an, China";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Shaanxi History Museum","Xi'an Beilin Museum","Huaqing Palace","Xi'an Banpo Museum"],
+      bestFirstTimers: ["Shaanxi History Museum","Xi'an Beilin Museum","Huaqing Palace"],
+      bestRestaurants: ["Jing Xuan (The Ritz-Carlton, Xi'an)","Le Chinois (Sofitel Xi'an on Renmin Square)","Hua Yue Xuan (Novotel Xi'an Xinxing)","Tasuro (The Ritz-Carlton, Xi'an)"],
+      bestBudget: ["Shaanxi History Museum","Shaanxi History Museum Qin-Han Branch","Xi'an Beilin Museum","Xi'an Banpo Museum"],
+      bestLuxury: ["Flair (The Ritz-Carlton, Xi'an)","Jing Xuan (The Ritz-Carlton, Xi'an)","Tasuro (The Ritz-Carlton, Xi'an)","Le Chinois (Sofitel Xi'an on Renmin Square)"],
+      bestCouples: ["Flair (The Ritz-Carlton, Xi'an)","Tasuro (The Ritz-Carlton, Xi'an)","Bar Bambu (Sofitel Xi'an on Renmin Square)","Huaqing Palace"],
+      bestKids: ["Xi'an Banpo Museum","Shaanxi History Museum"],
+      bestSolo: ["Xi'an Beilin Museum","Shaanxi History Museum Qin-Han Branch","Lobby Lounge (The Ritz-Carlton, Xi'an)"],
+      bestUnique: ["Xi'an Banpo Museum","Shaanxi History Museum Qin-Han Branch","Huaqing Palace"],
+      bestBreakfast: ["Azur (Sofitel Xi'an on Renmin Square)","Xian Kitchen (The Ritz-Carlton, Xi'an)","Champs Elysees Restaurant (Mercure Xi'an Qujiang)","Food Exchange (Novotel Xi'an The Bell Tower)"],
+      bestLunch: ["Jing Xuan (The Ritz-Carlton, Xi'an)","Xian Kitchen (The Ritz-Carlton, Xi'an)","Food Exchange (Novotel Xi'an The Bell Tower)","Azur (Sofitel Xi'an on Renmin Square)"],
+      bestDinner: ["Le Chinois (Sofitel Xi'an on Renmin Square)","Tasuro (The Ritz-Carlton, Xi'an)","Jing Xuan (The Ritz-Carlton, Xi'an)","Hua Yue Xuan (Novotel Xi'an Xinxing)"],
+      bestCocktails: ["Flair (The Ritz-Carlton, Xi'an)","Bar Bambu (Sofitel Xi'an on Renmin Square)","Leon Bar (Mercure Xi'an Qujiang)"],
+      bestBakeries: [],
+      bestCoffee: ["Lobby Lounge (The Ritz-Carlton, Xi'an)","Bar Bambu (Sofitel Xi'an on Renmin Square)","Xinyi Lobby Bar (Novotel Xi'an Xinxing)","Leon Bar (Mercure Xi'an Qujiang)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Shaanxi History Museum": "Shaanxi History Museum 91 Xiaozhai East Road Xi'an",
+      "Xi'an Beilin Museum": "Xi'an Beilin Museum 15 Sanxuejie Xi'an",
+      "Huaqing Palace": "Huaqing Palace 3 Huaqing Road Lintong Xi'an",
+      "Xi'an Banpo Museum": "Xi'an Banpo Museum 155 Banpo Road Xi'an",
+      "Jing Xuan (The Ritz-Carlton, Xi'an)": "Jing Xuan Ritz-Carlton 50 Keji 2nd Road Xi'an",
+      "Le Chinois (Sofitel Xi'an on Renmin Square)": "Le Chinois Sofitel 319 Dongxin Street Xi'an",
+      "Hua Yue Xuan (Novotel Xi'an Xinxing)": "Novotel Xi'an Xinxing 9 Huzhu Road Xi'an",
+      "Tasuro (The Ritz-Carlton, Xi'an)": "Tasuro Ritz-Carlton 50 Keji 2nd Road Xi'an",
+      "Shaanxi History Museum Qin-Han Branch": "Shaanxi History Museum Qin-Han Branch Lanchi 3rd Road Qinhan New City Xi'an",
+      "Flair (The Ritz-Carlton, Xi'an)": "Flair Ritz-Carlton 50 Keji 2nd Road Xi'an",
+      "Bar Bambu (Sofitel Xi'an on Renmin Square)": "Bar Bambu Sofitel 319 Dongxin Street Xi'an",
+      "Lobby Lounge (The Ritz-Carlton, Xi'an)": "The Ritz-Carlton Xi'an Lobby Lounge 50 Keji 2nd Road Xi'an",
+      "Azur (Sofitel Xi'an on Renmin Square)": "Sofitel Xi'an on Renmin Square 319 Dongxin Street Xi'an",
+      "Xian Kitchen (The Ritz-Carlton, Xi'an)": "The Ritz-Carlton Xi'an 50 Keji 2nd Road Xi'an",
+      "Champs Elysees Restaurant (Mercure Xi'an Qujiang)": "Mercure Xi'an Qujiang Yanxiang Road Xi'an",
+      "Food Exchange (Novotel Xi'an The Bell Tower)": "Novotel Xi'an The Bell Tower 16 Anban Street Xi'an",
+      "Leon Bar (Mercure Xi'an Qujiang)": "Mercure Xi'an Qujiang Yanxiang Road Xi'an",
+      "Xinyi Lobby Bar (Novotel Xi'an Xinxing)": "Novotel Xi'an Xinxing 9 Huzhu Road Xi'an"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Xi'an" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Museums, a Tang palace site, and hotel restaurants, bars and lounges in Xi'an, checked against their own websites.";
+    cityGuide.highlights = ["Shaanxi History Museum","Xi'an Beilin Museum","Xi'an Banpo Museum","Huaqing Palace"];
+    cityGuide.tip = "Book Shaanxi History Museum tickets with your ID when the five-day window opens at 17:00, and plan around its Monday closure (Tuesday at the Qin-Han Branch), while the Xi'an Beilin Museum's visitor guide says it opens every day.";
+    data.destinationFacts[cityKey] = "Book Shaanxi History Museum tickets with your ID when the five-day window opens at 17:00, and plan around its Monday closure (Tuesday at the Qin-Han Branch), while the Xi'an Beilin Museum's visitor guide says it opens every day.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Museums, a Tang palace site, and hotel restaurants, bars and lounges in Xi'an, checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays and Tuesdays",
+        "copy": "The Shaanxi History Museum closes on Mondays and its Qin-Han Branch on Tuesdays, except on national statutory holidays. The Xi'an Beilin Museum's visitor guide says it opens every day of the week."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Real-name, in advance",
+        "copy": "Shaanxi History Museum admission is free but needs a real-name booking through its WeChat account, opening five days ahead at 17:00; a missed booking blocks new bookings for 180 days. The Xi'an Beilin Museum also takes real-name bookings up to five days ahead and stops selling once the day's quota is reached."
+      },
+      {
+        "label": "Walk-in rules",
+        "value": "Seniors and small children",
+        "copy": "At the Shaanxi History Museum, visitors aged 65 and over can enter by scanning their ID card without booking. Children aged 6 and under, or 1.4 m and under, need no booking and enter with a booked adult, up to two per adult."
+      },
+      {
+        "label": "Rules",
+        "value": "Flash, tripods, dress",
+        "copy": "The Xi'an Beilin Museum bans flash photography and lists tripods among prohibited items. The Ritz-Carlton, Xi'an lists a no-bathing-suits dress code at Xian Kitchen and Flair."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Book museum slots ahead with your ID, and plan your museum days around the Monday and Tuesday closures.",
+      intro: [
+        "Start with the Shaanxi History Museum on Xiaozhai East Road. Admission is free, but you still need a real-name ticket booked through its WeChat account. Booking opens five days ahead at 17:00, and a missed booking counts as a no-show that blocks new bookings for 180 days. Its winter hours, 9:00 to 17:30 with last entry at 16:30, run from 15 November 2026 to 14 March 2027, and the main museum closes on Mondays except on national statutory holidays. The Qin-Han Branch in Xixian New Area keeps 9:00 to 17:30 but closes on Tuesdays instead.",
+        "The Xi'an Beilin Museum at 15 Sanxuejie displays inscribed stone steles in its Forest of Steles galleries alongside a Stone Sculpture Hall, and its new building's permanent display was named among the national top ten museum exhibitions in May 2026. Its visitor guide says it opens every day of the week, with ticket sales and entry stopping at 17:00. You book with real-name ID up to five days ahead through its WeChat account, Alipay mini program or website, and sales stop once the day's quota is reached. Flash photography is not allowed, and tripods are on its prohibited-items list.",
+        "For prehistory, the Xi'an Banpo Museum at 155 Banpo Road shows prehistoric pottery and tools, with a pottery-making exhibition and a Prehistoric Workshop activity for children that you book by phone. Its hours page gives an 8:00 opening all year. East of the city in Lintong, Huaqing Palace at 3 Huaqing Road lists visiting hours from 7:30 on an undated page and sells tickets through its official WeChat account, mini program and online stores. Its evening show, The Song of Everlasting Sorrow, books up to ten days ahead through the same official channels.",
+        "For meals, hotel restaurants publish the clearest details. The Ritz-Carlton, Xi'an on Keji 2nd Road lists Xian Kitchen daily from 6:30 to 21:30, Cantonese-influenced Jing Xuan for lunch and dinner, teppanyaki at Tasuro from 17:30, and Flair, a rooftop bar reached by private elevator, open until 1:00, or 2:00 on Fridays and Saturdays. Its Lobby Lounge serves Afternoon Tea, pastries and cakes. At Sofitel Xi'an on Renmin Square, Azur serves breakfast from 6:00, Le Chinois cooks Shaanxi and Cantonese dishes, and Bar Bambu pours coffee and cocktails in the lobby."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair the Shaanxi History Museum, closed on Mondays, with the Xi'an Beilin Museum, which its visitor guide says opens every day."
+        ],
+        [
+          "A slower morning",
+          "Take breakfast at Azur in Sofitel Xi'an on Renmin Square from 6:00, then reach the Xi'an Beilin Museum well before ticket sales stop at 17:00."
+        ],
+        [
+          "Before booking",
+          "Have your passport or ID ready, since the Shaanxi History Museum and the Xi'an Beilin Museum both need real-name bookings, and remember the Shaanxi History Museum closes on Mondays and its Qin-Han Branch on Tuesdays."
+        ]
+      ],
+      trust: "All 18 distinct recommendations in this guide were checked against their operators' own websites on November 17, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
+  // Xi'an, China: places added 2026-11-17 after the source review (docs/content-research/xi-an-2026-11-17.md).
+  {
+    const cityKey = "Xi'an, China";
+    const detail = data.cityGuideDetailData[cityKey];
+    const additions = {"Terracotta Warriors (Emperor Qinshihuang's Mausoleum Site Museum)":["bestAttractions","bestFirstTimers","bestKids","bestUnique"]};
+    for (const [name, categories] of Object.entries(additions)) {
+      for (const category of categories) {
+        const list = [name, ...(detail[category] || []).filter((item) => item !== name)];
+        // Trim to 5 from the end, but never drop a place that appears in no other list.
+        for (let index = list.length - 1; list.length > 5 && index > 0; index -= 1) {
+          if (Object.entries(detail).some(([other, items]) => other !== category && items.includes(list[index]))) list.splice(index, 1);
+        }
+        detail[category] = list;
+      }
+    }
+    Object.assign(data.cityPlaceQueries[cityKey], {"Terracotta Warriors (Emperor Qinshihuang's Mausoleum Site Museum)":"Emperor Qinshihuang's Mausoleum Site Museum Terracotta Warriors Lintong Xi'an"});
+    const editorial = data.cityEditorialPageData[cityKey];
+    const count = new Set(Object.values(detail).flat()).size;
+    if (editorial?.trust) editorial.trust = editorial.trust.replace(/^All \d+ distinct recommendations/, `All ${count} distinct recommendations`);
+  }
+  // Manila, Philippines: source review of 2026-11-17 (docs/content-research/manila-2026-11-17.md).
+  {
+    const cityKey = "Manila, Philippines";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Fort Santiago","National Museum of Fine Arts","Rizal Park","Metropolitan Museum of Manila"],
+      bestFirstTimers: ["Fort Santiago","National Museum of Fine Arts","Casa Manila Museum","Max's Restaurant (Malate)"],
+      bestRestaurants: ["Toyo Eatery","Gallery by Chele","Champagne Room (The Manila Hotel)","Max's Restaurant (Malate)"],
+      bestBudget: ["National Museum of Natural History","Rizal Park","Ayala Triangle Gardens","Baluarte de San Diego"],
+      bestLuxury: ["Champagne Room (The Manila Hotel)","Writers Bar (Raffles Makati)","Lobby Lounge (The Manila Hotel)","Gallery by Chele"],
+      bestCouples: ["Baluarte de San Diego","Writers Bar (Raffles Makati)","Lobby Lounge (The Manila Hotel)","Toyo Eatery"],
+      bestKids: ["The Mind Museum","Manila Ocean Park","National Museum of Natural History","Rizal Park"],
+      bestSolo: ["Ayala Museum","Museo de Intramuros","Metropolitan Museum of Manila","Commune (Poblacion)"],
+      bestUnique: ["National Museum of Anthropology","Casa Manila Museum","Eng Bee Tin (Ongpin)","Run Rabbit Run"],
+      bestBreakfast: ["Café Ilang-Ilang (The Manila Hotel)","Café Macaron (Fairmont Makati)","Commune (Poblacion)","Yardstick Coffee (Legazpi Village)"],
+      bestLunch: ["Max's Restaurant (Malate)","Champagne Room (The Manila Hotel)","Café Ilang-Ilang (The Manila Hotel)"],
+      bestDinner: ["Toyo Eatery","Gallery by Chele","Champagne Room (The Manila Hotel)","Café Ilang-Ilang (The Manila Hotel)"],
+      bestCocktails: ["Long Bar (Raffles Makati)","Writers Bar (Raffles Makati)","Run Rabbit Run","Lobby Lounge (The Manila Hotel)"],
+      bestBakeries: ["Eng Bee Tin (Ongpin)","Delicatessen (The Manila Hotel)","Café Macaron (Fairmont Makati)"],
+      bestCoffee: ["Yardstick Coffee (Legazpi Village)","Commune (Poblacion)","Café Macaron (Fairmont Makati)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Fort Santiago": "Fort Santiago Sta. Clara Street Intramuros Manila",
+      "National Museum of Fine Arts": "National Museum of Fine Arts P. Burgos Drive Rizal Park Manila",
+      "Rizal Park": "Rizal Park P. Burgos Street Luneta Manila",
+      "Metropolitan Museum of Manila": "Metropolitan Museum of Manila MK Tan Centre 30th Street Bonifacio Global City Taguig",
+      "Casa Manila Museum": "Casa Manila Museum Real Street Gen. Luna Street Intramuros Manila",
+      "Max's Restaurant (Malate)": "Max's Restaurant 998 Roxas Boulevard Malate Manila",
+      "Toyo Eatery": "Toyo Eatery Karrivin Plaza Chino Roces Extension Makati",
+      "Gallery by Chele": "Gallery by Chele Clipp Center 11th Avenue 39th Street Bonifacio Global City Taguig",
+      "Champagne Room (The Manila Hotel)": "Champagne Room The Manila Hotel One Rizal Park Ermita Manila",
+      "National Museum of Natural History": "National Museum of Natural History P. Burgos Drive Rizal Park Manila",
+      "Ayala Triangle Gardens": "Ayala Triangle Gardens Paseo de Roxas Ayala Avenue Makati",
+      "Baluarte de San Diego": "Baluarte de San Diego Sta. Lucia Street Muralla Street Intramuros Manila",
+      "Writers Bar (Raffles Makati)": "Writers Bar Raffles Makati 1 Raffles Drive Makati Avenue Makati",
+      "Lobby Lounge (The Manila Hotel)": "Lobby Lounge The Manila Hotel One Rizal Park Ermita Manila",
+      "The Mind Museum": "The Mind Museum JY Campos Park 3rd Avenue Bonifacio Global City Taguig",
+      "Manila Ocean Park": "Manila Ocean Park Luneta Manila",
+      "Ayala Museum": "Ayala Museum Makati Avenue De La Rosa Street Greenbelt Park Makati",
+      "Museo de Intramuros": "Museo de Intramuros Real Street Anda Street Intramuros Manila",
+      "Commune (Poblacion)": "Commune 36 Polaris Street Durban Street Poblacion Makati",
+      "National Museum of Anthropology": "National Museum of Anthropology P. Burgos Drive Rizal Park Manila",
+      "Eng Bee Tin (Ongpin)": "Eng Bee Tin 628 Ongpin Street Binondo Manila",
+      "Run Rabbit Run": "Run Rabbit Run 4347 B. Valdez Street Poblacion Makati",
+      "Café Ilang-Ilang (The Manila Hotel)": "Cafe Ilang-Ilang The Manila Hotel One Rizal Park Ermita Manila",
+      "Café Macaron (Fairmont Makati)": "Cafe Macaron Fairmont Makati 1 Raffles Drive Makati Avenue Makati",
+      "Yardstick Coffee (Legazpi Village)": "Yardstick Coffee 106 Esteban Street Legazpi Village Makati",
+      "Long Bar (Raffles Makati)": "Long Bar Raffles Makati 1 Raffles Drive Makati Avenue Makati",
+      "Delicatessen (The Manila Hotel)": "Delicatessen The Manila Hotel One Rizal Park Ermita Manila"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Manila" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Rizal Park's national museums, Intramuros fort sites and Makati and BGC galleries, with breakfast spots, bakeries, coffee, dinners and hotel bars checked against their own websites.";
+    cityGuide.highlights = ["Fort Santiago","National Museum of Fine Arts","Metropolitan Museum of Manila","Ayala Museum"];
+    cityGuide.tip = "The Mind Museum and the Metropolitan Museum of Manila are closed on Mondays, but the National Museum says its Manila buildings open Monday to Sunday, 9 AM to 6 PM, with free admission.";
+    data.destinationFacts[cityKey] = "The Mind Museum and the Metropolitan Museum of Manila are closed on Mondays, but the National Museum says its Manila buildings open Monday to Sunday, 9 AM to 6 PM, with free admission.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Rizal Park's national museums, Intramuros fort sites and Makati and BGC galleries, with breakfast spots, bakeries, coffee, dinners and hotel bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays and Sundays",
+        "copy": "The Mind Museum and the Metropolitan Museum of Manila are closed on Mondays, while the National Museum says its Manila buildings open Monday to Sunday. The Champagne Room at The Manila Hotel is closed on Sundays, and Toyo Eatery serves Tuesday to Saturday only."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Timed slots and free entry",
+        "copy": "The Mind Museum sells three-hour slots starting at 9 AM, 12 PM and 3 PM (PHP 625 for adults) or an all-day pass at PHP 750. National Museum admission is free, and groups of 20 or more must book at least three working days ahead."
+      },
+      {
+        "label": "Walk-ins and reservations",
+        "value": "Book Writers Bar ahead",
+        "copy": "Writers Bar at Raffles Makati says advance reservations are required for its afternoon tea and evening service. The National Museum says walk-in visitors are welcome and keeps Sundays, Mondays and holidays for walk-ins only."
+      },
+      {
+        "label": "Rules",
+        "value": "Bags and dress codes",
+        "copy": "The Mind Museum has no bag storage, asks you to leave big bags in your vehicle and bans eating and drinking inside. The Champagne Room sets a semi-formal dress code, and the Lobby Lounge at The Manila Hotel a smart casual one."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Use a Monday for the free National Museum buildings in Rizal Park, since The Mind Museum and the Metropolitan Museum of Manila close that day, and reserve Writers Bar before you go.",
+      intro: [
+        "Start at the National Museum complex in Rizal Park, where the National Museum of Fine Arts, the National Museum of Anthropology and the National Museum of Natural History share P. Burgos Drive. The museum's own notices say its Manila buildings are open Monday to Sunday from 9 AM to 6 PM, and admission is free. Walk-ins are welcome, while groups of 20 or more must book at least three working days ahead. At the Fine Arts building, \"Sansó: Pusong Pilipino\", a Juvenal Sansó retrospective in Gallery XV, runs until 28 February 2027.",
+        "A short ride north, Intramuros is managed by the Intramuros Administration. Its hours page, marked as updated on 20 September 2023, lists Fort Santiago on Sta. Clara Street as open every day with adult tickets at PHP 75, and Baluarte de San Diego daily from 8 AM to 5 PM. The same page lists Casa Manila Museum and Museo de Intramuros from Tuesday to Sunday, 9 AM to 6 PM, closed on Mondays. Because those times come from an older page, check them with the Administration before you plan around them.",
+        "In Makati, the Ayala Museum at Greenbelt Park is showing \"Turning Tides: Maritime Encounters and Exchanges of Power\" from 16 July 2026 to 14 February 2027, alongside \"Reuniting the Surigao Treasure\", which runs to 30 May 2027. In Bonifacio Global City, the Metropolitan Museum of Manila opened \"Miniaturismo to Modernism\" and an Alfonso Ossorio show on 8 November 2026; both run to 30 May 2027, and the museum is closed on Mondays. Nearby, The Mind Museum sells three-hour time slots, has no bag storage and is also closed on Mondays.",
+        "For meals, Toyo Eatery in Makati serves dinner from Tuesday to Saturday, 6 PM to 11 PM, and takes bookings through its own reservations link. At The Manila Hotel, the Champagne Room has a semi-formal dress code and is closed on Sundays, while Café Ilang-Ilang serves a breakfast buffet from 6 AM to 10 AM. At Raffles Makati, Writers Bar serves afternoon tea daily from 2 PM and says advance reservations are required, and Long Bar stays open until 1 AM on Fridays and Saturdays."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair the free National Museum buildings on P. Burgos Drive, which open Monday to Sunday, with Fort Santiago in Intramuros."
+        ],
+        [
+          "A slower morning",
+          "Start with coffee at Yardstick Coffee on Esteban Street, which lists 7 AM opening daily, then walk to the Ayala Museum at Greenbelt Park."
+        ],
+        [
+          "Before booking",
+          "Plan The Mind Museum and the Metropolitan Museum of Manila for Tuesday to Sunday, since both close on Mondays, and reserve Writers Bar ahead, as it requires."
+        ]
+      ],
+      trust: "All 27 distinct recommendations in this guide were checked against their operators' own websites on November 17, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

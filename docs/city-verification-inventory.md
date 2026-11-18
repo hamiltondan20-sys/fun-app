@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 100.
-- Classifier-passed (published, not fully documented in that format): 92.
+- Source-verified (complete dated evidence format): 102.
+- Classifier-passed (published, not fully documented in that format): 90.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -297,7 +297,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Male, Maldives | male | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Malmo, Sweden | malmo | held-back | not-reviewed | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Manchester, United Kingdom | manchester | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Manila, Philippines | manila | classifier-passed | not-reviewed | 0 | 5 | 15 | 3 | None |
+| Manila, Philippines | manila | source-verified | source-checked | 27 | 55 | 15 | 15 | None |
 | Marrakech, Morocco | marrakech | source-verified | source-checked | 27 | 38 | 15 | 14 | None |
 | Marrakesh, Morocco | marrakesh | held-back | not-reviewed | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Marseille, France | marseille | source-verified | source-checked | 24 | 47 | 15 | 15 | None |
@@ -500,7 +500,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Whistler, Canada | whistler | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Wroclaw, Poland | wroclaw | held-back | not-reviewed | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Wulingyuan, China | wulingyuan | classifier-passed | not-reviewed | 0 | 5 | 15 | 3 | None |
-| Xi'an, China | xian | classifier-passed | not-reviewed | 0 | 10 | 15 | 4 | None |
+| Xi'an, China | xian | source-verified | source-checked | 19 | 36 | 14 | 14 | None |
 | Yellowstone National Park, United States | yellowstone | classifier-passed | not-reviewed | 0 | 8 | 15 | 4 | None |
 | Yogyakarta, Indonesia | yogyakarta | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
 | Yokohama, Japan | yokohama | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
