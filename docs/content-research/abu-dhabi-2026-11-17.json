@@ -1,0 +1,1005 @@
+{
+  "city": "Abu Dhabi, United Arab Emirates",
+  "checkedOn": "2026-11-17",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Sheikh Zayed Grand Mosque",
+      "kind": "landmark",
+      "url": "https://www.szgmc.gov.ae/en/worshippers/en-to-visiting-hours",
+      "sourceType": "official public operator (Sheikh Zayed Grand Mosque Centre)",
+      "address": "\"Abu Dhabi, United Arab Emirates\"; coordinates \"Latitude 24º24'35.35\\\", Longitude 54º28'36.53\\\"\" (https://www.szgmc.gov.ae/en/contact-us)",
+      "operatingEvidence": "Live visiting-hours and booking page: visitors should \"Pre-book the visit and obtain an online access pass\"; \"Worshippers may enter directly without the need for an entry ticket.\"",
+      "hours": "Undated page: \"Monday to Sunday (except Friday) 9:00 AM to 9:00 PM\" (last entry 8:30 PM); Friday 9:00 AM to 12:00 PM and 2:30 PM to 9:00 PM. A second official page (https://www.szgmc.gov.ae/en/mosque-opening-hours) lists 9:00 AM to 8:30 PM and a Friday morning slot ending 11:30 AM; both resume Friday visits at 2:30 PM.",
+      "confidence": "high"
+    },
+    {
+      "name": "Qasr Al Watan",
+      "kind": "landmark",
+      "url": "https://www.qasralwatan.ae/en/plan-your-visit/opening-hours",
+      "sourceType": "operator's own site",
+      "address": "\"Qasr Al Watan is in Al Ras Al Akhdar, near the Abu Dhabi Corniche\" (getting-here section)",
+      "operatingEvidence": "Ticket booking live (General Admission, Palace In Motion, Tours); FAQ: \"Tickets are dated and can only be used on the date printed on the ticket.\"",
+      "hours": "not published (page says \"Last entry to the Presidential Palace is at closing time\")",
+      "confidence": "medium"
+    },
+    {
+      "name": "Qasr Al Hosn",
+      "kind": "museum",
+      "url": "https://www.qasralhosn.ae/en/plan-your-visit",
+      "sourceType": "operator's own site",
+      "address": "\"Qasr Al Hosn, Sheikh Rashid Bin Saeed Al Maktoum Street\", Al Hosn, Abu Dhabi",
+      "operatingEvidence": "Current site (\"© Copyright 2026\") with online ticketing and the Al Ayyala performance and \"Sadu 101\" workshops at the House of Artisans.",
+      "hours": "\"Saturday to Thursday: 9:00 AM to 8:00 PM\"; \"Friday: 2:00 PM to 8:00 PM\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Cultural Foundation",
+      "kind": "museum",
+      "url": "https://culturalfoundation.ae/en/plan-your-visit",
+      "sourceType": "operator's own site",
+      "address": "\"Cultural Foundation, Sheikh Rashid Bin Saeed Al Maktoum Street. Al Hosn – Abu Dhabi\"",
+      "operatingEvidence": "Event page lists Thikra by Akram Khan Company, \"Friday 20 – Saturday 21 November 2026\" in the Auditorium (https://culturalfoundation.ae/en/event/thikra-night-of-remembering).",
+      "hours": "Undated plan-your-visit page (footer 2019): \"Saturday - Thursday: 9 am to 8 pm\"; \"Friday: 2 pm to 8 pm\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Jubail Mangrove Park",
+      "kind": "park",
+      "url": "https://jubailisland.ae/jubail-mangrove-park/",
+      "sourceType": "operator's own site (Jubail Island)",
+      "address": "\"Jubail Mangrove Park, Jubail Island, Abu Dhabi\"; directions link to 24.5451825, 54.4854061 (https://jubailisland.ae/terms-conditions/)",
+      "operatingEvidence": "\"Now Open\" banner; bookable kayak tours, e.g. \"A 1.5-hour guided tour… single or double sit-on-top kayaks\" (Sunrise); news dated 02/10/2026.",
+      "hours": "Conflicting: terms page \"First entry: 7:00 am\", \"Last entry: 8:00 pm\", \"Park closes: 9:00 pm\"; lifestyle page \"Opening Hours: 7 Am- 10 Pm, Daily\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Abu Dhabi Falcon Hospital",
+      "kind": "landmark",
+      "url": "https://www.falconhospital.com/services/adfh-tourism/abu-dhabi-falcon-hospital-tour",
+      "sourceType": "operator's own site",
+      "address": "\"Al Sha-i' street 1 ,SH 34 , Al Shamkha ,Abu Dhabi\"",
+      "operatingEvidence": "Tour page with \"© 2026\" footer and testimonials dated November 2025; \"All tours have to be booked in advance\".",
+      "hours": "Tour page \"Last Updated on 01 October 2018\": tours \"daily (except Saturday and public holidays)\"; Mon–Thu \"10.00 AM and 2.00 PM\", Fri & Sun \"10.00 AM\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Galleria Al Maryah Island",
+      "kind": "market",
+      "url": "https://www.thegalleria.ae/en/visitors-information",
+      "sourceType": "operator's own site",
+      "address": "\"107 Hamouda Bin Ali Al Dhaheri Street, Al Maryah Island, Abu Dhabi\"",
+      "operatingEvidence": "Current visitor-information page (\"© Copyright 2026\") with events listed under Inspiration.",
+      "hours": "\"Sunday to Thursday: 10:00 AM – 10:00 PM\"; \"Friday and Saturday: 10:00 AM – 12:00 AM\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Al Fanar (Yas Mall)",
+      "kind": "meal",
+      "url": "https://www.alfanarrestaurant.com/",
+      "sourceType": "operator's own site",
+      "address": "\"Yas Mall\", \"Yas Island, Abu Dhabi, near Ferrari World\"",
+      "operatingEvidence": "Branch listed as \"Favourite Emirati Restaurant 2026\" (FACT Dining Awards Abu Dhabi 2026); \"© 2026\" footer; reservation links.",
+      "hours": "9:00 AM – 10:00 PM daily",
+      "confidence": "high"
+    },
+    {
+      "name": "Erth",
+      "kind": "meal",
+      "url": "https://erthrestaurant.ae/",
+      "sourceType": "operator's own site",
+      "address": "\"North Parking, Al Hosn, Abu Dhabi, United Arab Emirates\"",
+      "operatingEvidence": "\"One MICHELIN Star Retained – MICHELIN Guide Abu Dhabi, 2026\"; Book a Table form live.",
+      "hours": "Conflicting on the same page: footer \"Monday to Friday, 12:00pm - 11:00pm\", \"Saturday and Sunday, 08:00am - 11:00pm\"; contact section \"Daily: 12:00pm - 11:00pm\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Hakkasan Abu Dhabi",
+      "kind": "meal",
+      "url": "https://hakkasangroup.com/venues/hakkasan-abu-dhabi/",
+      "sourceType": "operator's own site (Hakkasan Group)",
+      "address": "\"Emirates Palace Mandarin Oriental, Corniche Road, Abu Dhabi\"",
+      "operatingEvidence": "2026 MICHELIN Star listed in accolades; \"Copyright © 2026 Hakkasan Group\"; reservations open for dinner and Saturday lunch.",
+      "hours": "Sun–Fri 6pm–12:30am; Sat 12pm–3:30pm and 6pm–12:30am",
+      "confidence": "high"
+    },
+    {
+      "name": "Zuma Abu Dhabi",
+      "kind": "meal",
+      "url": "https://www.zumarestaurant.com/en/abu-dhabi",
+      "sourceType": "operator's own site",
+      "address": "\"Abu Dhabi Global Market, Al Maryah island, PO box 131281, Abu Dhabi – UAE\"",
+      "operatingEvidence": "\"© Zuma 2026\"; bar menu \"now served from 12pm onwards\"; online booking; \"reservations are not necessary for the counters\".",
+      "hours": "Lunch Mon–Fri 12:00–15:30, Sat–Sun 12:00–16:00; dinner Sun–Thu 18:30–00:00, Fri–Sat 18:30–01:00; bar Sun–Thu 12:00–01:00, Fri–Sat 12:00–02:30",
+      "confidence": "high"
+    },
+    {
+      "name": "99 Sushi Bar Abu Dhabi",
+      "kind": "meal",
+      "url": "https://www.99sushibar.com/en/99-sushi-bar-abu-dhabi/",
+      "sourceType": "operator's own site",
+      "address": "\"The Galleria\", \"Four Seasons – Al Maryah Island\", \"Abu Dhabi\"",
+      "operatingEvidence": "Live online booking and an omakase business lunch offered weekdays 12:00–2:15pm; no 2026-dated text.",
+      "hours": "Undated page: \"MONDAY TO SUNDAY 12:00 PM – 3:30 PM / 7:00 PM – 00:00 AM\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Coya Abu Dhabi",
+      "kind": "meal",
+      "url": "https://www.coyarestaurant.com/restaurants/abu-dhabi/",
+      "sourceType": "operator's own site",
+      "address": "\"Four Seasons Hotel, The Galleria - Abu Dhabi - United Arab Emirates\"",
+      "operatingEvidence": "\"Coya © 2026\"; \"Book A Table\" link and Pisco Bar listed.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Trader Vic's (Beach Rotana)",
+      "kind": "bar",
+      "url": "https://tradervicsabudhabi.com/",
+      "sourceType": "operator's own branch site (linked from tradervics.com)",
+      "address": "\"10th Street, Al Zahiyah Area, P.O. Box 45200, Abu Dhabi, U.A.E.\"",
+      "operatingEvidence": "Happy hour \"Daily, 5pm – 6pm … 30% OFF selected drinks\" (image uploaded 2026/11); booking link.",
+      "hours": "Daily 5pm–3am; \"Dress Code: Smart Casual\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Buddha-Bar Beach (St. Regis Saadiyat Island)",
+      "kind": "bar",
+      "url": "https://www.marriott.com/en-us/hotels/auhxr-the-st-regis-saadiyat-island-resort-abu-dhabi/dining/",
+      "sourceType": "hotel's own site (Marriott)",
+      "address": "\"Saadiyat Island, P.O. Box 54345, Abu Dhabi, UAE\" (The St. Regis Saadiyat Island Resort)",
+      "operatingEvidence": "Hotel dining page with \"Find a Table\" booking; \"© 1996 – 2026 Marriott\"; no dated venue content.",
+      "hours": "Undated page: \"Everyday, 1:00 PM to 1:00 AM\"; dress code \"Smart Casual\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Shake Shack (Yas Mall)",
+      "kind": "meal",
+      "url": "https://locations.alshaya.com/shake-shack/ae/abu-dhabi/yas-mall",
+      "sourceType": "franchise operator's own store locator (M.H. Alshaya)",
+      "address": "\"Yas Mall, Abu Dhabi, United Arab Emirates\"",
+      "operatingEvidence": "Live store page with weekly hours and phone 02 492 6658 (footer ©2025).",
+      "hours": "Mon–Thu & Sun 10:00–00:00; Fri–Sat 10:00–01:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Pickl (Mamsha Soul Beach)",
+      "kind": "meal",
+      "url": "https://www.eatpickl.com/locations",
+      "sourceType": "operator's own site",
+      "address": "\"Mamsha, Soul Beach - Abu Dhabi\" (branch, no street number)",
+      "operatingEvidence": "Locations page with branch phone +971 2 886 7844 and \"© Pickl 2019-2026\".",
+      "hours": "11:00am–12:00am all week",
+      "confidence": "medium"
+    },
+    {
+      "name": "Jones the Grocer (Al Raha)",
+      "kind": "meal",
+      "url": "https://www.jonesthegrocer.com/al-raha-abu-dhabi-i89",
+      "sourceType": "operator's own site",
+      "address": "\"Garden Plaza, Al Raha\" / \"Khalifa City\"",
+      "operatingEvidence": "\"© 2026 Jones the Grocer\" with a current festive feast \"from just AED 649\".",
+      "hours": "\"Daily 8:00am - 11:00pm\"; \"Breakfast served until 12 pm on weekdays & 4 pm on weekends\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Jones the Grocer (Al Mamoura)",
+      "kind": "meal",
+      "url": "https://www.jonesthegrocer.com/al-mamoura-abu-dhabi-i85",
+      "sourceType": "operator's own site",
+      "address": "\"Ground Floor 06/07 Corner 4th Muroor & 15th Street\"",
+      "operatingEvidence": "\"© 2026\" footer, festive campaign and weekly Sunday roast \"Sundays, 12pm onwards\".",
+      "hours": "\"Daily 8:00am - 10pm\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Jones the Grocer (Khalidiya)",
+      "kind": "meal",
+      "url": "https://www.jonesthegrocer.com/khalidiya-abu-dhabi-i83",
+      "sourceType": "operator's own site",
+      "address": "\"Pearl Plaza Tower\" / \"Next to Oyrx Hotel\"",
+      "operatingEvidence": "\"© 2026\" footer and current festive feast offer.",
+      "hours": "\"Daily 8am - 11pm\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Tashas (Al Bateen)",
+      "kind": "cafe",
+      "url": "https://tashascafe.com/locations/abu-dhabi/al-bateen/",
+      "sourceType": "operator's own site",
+      "address": "\"unit b02 cafe, marsa, al bateen, abu dhabi\"",
+      "operatingEvidence": "Branch page with current menu including breakfast; no 2026-dated text.",
+      "hours": "Undated page: \"monday – saturday: 9.00am – 1.00am\"; \"sunday: 8.00am – 12.00am\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Ladurée (Abu Dhabi Mall)",
+      "kind": "bakery",
+      "url": "https://laduree.ae/locations/laduree-abu-dhabi-mall-restaurant/",
+      "sourceType": "operator's own site (Ladurée UAE; also laduree.com store page)",
+      "address": "\"Abu Dhabi Mall, Level 1\" (page also says \"Located on the ground floor and facing the main podium entrance\")",
+      "operatingEvidence": "2026 Christmas collection banner and \"© Copyright Ladurée Paris 2026\"; weekday business lunch \"12 PM until 4 PM\".",
+      "hours": "\"Sunday–Thursday: 9:00 AM – 11:00 PM\"; \"Friday–Saturday: 9:00 AM – 12:00 AM\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Ladurée (Al Bateen)",
+      "kind": "bakery",
+      "url": "https://laduree.com/en/pages/store/laduree-al-bateen",
+      "sourceType": "operator's own site",
+      "address": "\"F82P+VFM - Al Bateen\" (plus code)",
+      "operatingEvidence": "Store page with 2026 Christmas banner and \"© 2026\" footer.",
+      "hours": "\"Monday – Sunday: 09:00 – 02:00\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Ladurée (Yas Mall)",
+      "kind": "bakery",
+      "url": "https://laduree.ae/locations/laduree-yas-mall-restaurant/",
+      "sourceType": "operator's own site (Ladurée UAE)",
+      "address": "\"Yas Mall, Ground Level, Luxury Court\"",
+      "operatingEvidence": "Branch page on a site carrying current seasonal content; page itself undated.",
+      "hours": "Undated page: \"Sunday – Thursday: 9:00 AM – 11:00 PM\"; \"Friday – Saturday: 9:00 AM – 12:00 AM\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Cartel Coffee Roasters (Al Bateen)",
+      "kind": "cafe",
+      "url": "https://cartel.coffee/pages/contact",
+      "sourceType": "operator's own site",
+      "address": "\"469 Arabian Gulf St — Al Khalidiyah, Abu Dhabi\"",
+      "operatingEvidence": "\"©2026 Cartel Coffee Roasters\" and a \"Latino Blend 2026 Relaunch\" product.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Cartel Coffee Roasters (Al Qana)",
+      "kind": "cafe",
+      "url": "https://cartel.coffee/pages/contact",
+      "sourceType": "operator's own site",
+      "address": "\"Rabdan Area — Al Maqta', Abu Dhabi\"",
+      "operatingEvidence": "Listed branch on the current (\"©2026\") site with phone (+971) 50 300 9955.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Cartel Coffee Roasters (Khalifa City)",
+      "kind": "cafe",
+      "url": "https://cartel.coffee/pages/contact",
+      "sourceType": "operator's own site",
+      "address": "\"5 Al Jinan St — Al Raha Gardens, Abu Dhabi\"",
+      "operatingEvidence": "Listed branch on the current (\"©2026\") site with phone (+971) 50 880 2828.",
+      "hours": "not published",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Louvre Abu Dhabi",
+      "reason": "Official site returned HTTP 403 on every page tried; not bypassed",
+      "url": "https://www.louvreabudhabi.ae/en/visit/opening-hours"
+    },
+    {
+      "name": "Saadiyat Beach",
+      "reason": "Public beach; no operator page read in this review",
+      "url": ""
+    },
+    {
+      "name": "Zayed National Museum",
+      "reason": "Official site returned HTTP 403",
+      "url": "https://zayednationalmuseum.ae/en/plan-your-visit"
+    },
+    {
+      "name": "Natural History Museum Abu Dhabi",
+      "reason": "Official site returned HTTP 403",
+      "url": "https://www.nhmad.ae/en"
+    },
+    {
+      "name": "teamLab Phenomena Abu Dhabi",
+      "reason": "teamlab.art page returned title only / HTTP 404; teamlababudhabi.com plan-your-visit gave no hours or address and no operator line",
+      "url": "https://www.teamlab.art/e/phenomena/"
+    },
+    {
+      "name": "Manarat Al Saadiyat",
+      "reason": "Certificate error (unable to verify the first certificate); not bypassed",
+      "url": "https://manaratalsaadiyat.ae/en/about/how.to.get.to.us.aspx"
+    },
+    {
+      "name": "Wahat Al Karama",
+      "reason": "Connection refused (ECONNREFUSED)",
+      "url": "https://www.wahatalkarama.ae/en/index.aspx"
+    },
+    {
+      "name": "Abrahamic Family House",
+      "reason": "Pages returned empty content (script-rendered)",
+      "url": "https://www.abrahamicfamilyhouse.ae/"
+    },
+    {
+      "name": "Emirates Park Zoo",
+      "reason": "Official site returned empty content",
+      "url": "https://www.emiratesparkzoo.com/"
+    },
+    {
+      "name": "Umm Al Emarat Park",
+      "reason": "Address and hours on an undated FAQ; newest dated content is a 2023 notice, so no current-operating evidence",
+      "url": "https://www.ummalemaratpark.ae/en/FAQ"
+    },
+    {
+      "name": "Ferrari World Abu Dhabi",
+      "reason": "Operating, but official pages give only \"located on Yas Island\" (no exact address) and no hours",
+      "url": "https://www.ferrariworldabudhabi.com/en/park-overview/opening-hours"
+    },
+    {
+      "name": "Warner Bros. World Abu Dhabi",
+      "reason": "Operating, but official pages give only \"located on Yas Island\" (no exact address) and no hours",
+      "url": "https://www.wbworldabudhabi.com/en/park-overview/opening-hours"
+    },
+    {
+      "name": "SeaWorld Yas Island, Abu Dhabi",
+      "reason": "No address or hours published on official pages read",
+      "url": "https://www.seaworldabudhabi.com/en/park-overview/opening-hours"
+    },
+    {
+      "name": "Yas Waterworld",
+      "reason": "No address or hours published on official pages read",
+      "url": "https://www.yaswaterworld.com/en/park-overview/opening-hours"
+    },
+    {
+      "name": "Noukhada Adventure Company",
+      "reason": "Site shows only blog posts; no meeting point, schedule or booking page",
+      "url": "https://noukhada.ae/"
+    },
+    {
+      "name": "Observation Deck at 300",
+      "reason": "Conrad Abu Dhabi Etihad Towers dining pages returned HTTP 403; old Jumeirah pages 404",
+      "url": "https://www.hilton.com/en/hotels/auhetci-conrad-abu-dhabi-etihad-towers/dining/"
+    },
+    {
+      "name": "Li Beirut",
+      "reason": "Conrad Abu Dhabi Etihad Towers page returned HTTP 403",
+      "url": "https://www.hilton.com/en/hotels/auhetci-conrad-abu-dhabi-etihad-towers/dining/li-beirut"
+    },
+    {
+      "name": "Ray's Bar",
+      "reason": "Conrad Abu Dhabi Etihad Towers page returned HTTP 403",
+      "url": "https://www.hilton.com/en/hotels/auhetci-conrad-abu-dhabi-etihad-towers/dining/rays-bar/"
+    },
+    {
+      "name": "Butcher & Still",
+      "reason": "Four Seasons site returned HTTP 403",
+      "url": "https://www.fourseasons.com/abudhabi/dining/restaurants/butcher_and_still/"
+    },
+    {
+      "name": "Café Milano Abu Dhabi",
+      "reason": "Four Seasons site returned HTTP 403",
+      "url": "https://www.fourseasons.com/abudhabi/dining/restaurants/cafe_milano/"
+    },
+    {
+      "name": "Hoi An (Shangri-La Qaryat Al Beri)",
+      "reason": "Shangri-La site returned HTTP 403",
+      "url": "https://www.shangri-la.com/abudhabi/qaryatalberi/dining/restaurants/hoi-an/"
+    },
+    {
+      "name": "Talea by Antonio Guida",
+      "reason": "Mandarin Oriental page returned navigation only, no address or hours",
+      "url": "https://www.mandarinoriental.com/en/abu-dhabi/emirates-palace/dine/talea-by-antonio-guida"
+    },
+    {
+      "name": "Mezlai",
+      "reason": "Mandarin Oriental page returned navigation only, no address or hours",
+      "url": "https://www.mandarinoriental.com/en/abu-dhabi/emirates-palace/dine/mezlai"
+    },
+    {
+      "name": "Le Café (Emirates Palace Mandarin Oriental)",
+      "reason": "Pages returned navigation only or HTTP 404",
+      "url": "https://www.mandarinoriental.com/en/abu-dhabi/emirates-palace/dine/le-cafe"
+    },
+    {
+      "name": "Fouquet's Abu Dhabi",
+      "reason": "Louvre Abu Dhabi site returned HTTP 403",
+      "url": "https://www.louvreabudhabi.ae/en/visit/fouquets-abu-dhabi"
+    },
+    {
+      "name": "Meylas",
+      "reason": "Official site returned empty page",
+      "url": "https://www.meylas.com/"
+    },
+    {
+      "name": "Sajway",
+      "reason": "Official site returned title only",
+      "url": "https://www.sajway.com/"
+    },
+    {
+      "name": "Otoro (Al Qana)",
+      "reason": "No address or hours published; footer 2025",
+      "url": "https://www.otoroabudhabi.com/"
+    },
+    {
+      "name": "Café Bateel",
+      "reason": "Official site returned HTTP 403",
+      "url": "https://bateel.com/pages/cafe-bateel"
+    },
+    {
+      "name": "Brioche Dorée (Yas)",
+      "reason": "Certificate error (self signed certificate); not bypassed",
+      "url": "https://emea.briochedoree.com/store-finder/4458003"
+    },
+    {
+      "name": "% Arabica",
+      "reason": "Official site returned HTTP 418",
+      "url": "https://arabica.com/en/location/"
+    },
+    {
+      "name": "PAUL",
+      "reason": "Official site lists no identifiable Abu Dhabi branch address",
+      "url": "https://paularabia.com/english/paul-locations"
+    },
+    {
+      "name": "Blacksmith Coffee",
+      "reason": "Branches named only (NYUAD, Souq Al Mina) with no address or hours; blacksmithcoffee.ae refused connection",
+      "url": "https://www.blacksmith.ae/"
+    },
+    {
+      "name": "World Trade Center Souk",
+      "reason": "Official site returned HTTP 403",
+      "url": "https://www.wtcad.ae/en/thesouk"
+    },
+    {
+      "name": "Souq Al Mina",
+      "reason": "Aldar page returned HTTP 403",
+      "url": "https://www.aldar.com/portfolio/retail/communities/souq-al-mina"
+    },
+    {
+      "name": "Mina Zayed fish market",
+      "reason": "Only a 2022 Modon release with no hours; no current-operating evidence",
+      "url": "https://www.modon.com/asset-investment-management"
+    },
+    {
+      "name": "Wake n' Bake / Tawa Bakery / bkry / ANKO / Knead / Beirut Sur Mer",
+      "reason": "No official operator site found (DNS not found or social media / destination sites only)",
+      "url": ""
+    },
+    {
+      "name": "Mosque at blue hour",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Mangrove kayaking",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Louvre architecture hour",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Emirati-inspired dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Corniche cafe lunch",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A Saadiyat beach meal",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Yas Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Saadiyat Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Saadiyat Island walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Yas Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Yas Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Sheikh Zayed Grand Mosque",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Saadiyat Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Mosque at blue hour",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Louvre Abu Dhabi",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Saadiyat Island evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Yas Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Saadiyat Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Sheikh Zayed Grand Mosque",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Yas Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Saadiyat Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Sheikh Zayed Grand Mosque",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Saadiyat Island cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Mangrove kayaking",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Yas Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Yas Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Saadiyat Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Saadiyat Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Corniche bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Sheikh Zayed Grand Mosque",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Yas Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Saadiyat Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Louvre Abu Dhabi",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Yas Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Saadiyat Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Yas Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Saadiyat Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Saadiyat Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Saadiyat Beach",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Saadiyat Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Corniche morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Sheikh Zayed Grand Mosque",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Yas Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Saadiyat Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Yas Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Sheikh Zayed Grand Mosque",
+        "Qasr Al Watan",
+        "Qasr Al Hosn",
+        "Jubail Mangrove Park"
+      ],
+      "bestFirstTimers": [
+        "Sheikh Zayed Grand Mosque",
+        "Qasr Al Watan",
+        "Qasr Al Hosn",
+        "Erth"
+      ],
+      "bestRestaurants": [
+        "Erth",
+        "Hakkasan Abu Dhabi",
+        "Zuma Abu Dhabi",
+        "Al Fanar (Yas Mall)"
+      ],
+      "bestBudget": [
+        "Shake Shack (Yas Mall)",
+        "Pickl (Mamsha Soul Beach)",
+        "Cartel Coffee Roasters (Al Bateen)",
+        "Cultural Foundation"
+      ],
+      "bestLuxury": [
+        "Hakkasan Abu Dhabi",
+        "Zuma Abu Dhabi",
+        "99 Sushi Bar Abu Dhabi",
+        "Coya Abu Dhabi"
+      ],
+      "bestCouples": [
+        "Buddha-Bar Beach (St. Regis Saadiyat Island)",
+        "Hakkasan Abu Dhabi",
+        "Jubail Mangrove Park",
+        "Trader Vic's (Beach Rotana)"
+      ],
+      "bestKids": [
+        "Abu Dhabi Falcon Hospital",
+        "Jubail Mangrove Park",
+        "Al Fanar (Yas Mall)",
+        "Shake Shack (Yas Mall)"
+      ],
+      "bestSolo": [
+        "Cultural Foundation",
+        "Qasr Al Hosn",
+        "Cartel Coffee Roasters (Al Bateen)",
+        "The Galleria Al Maryah Island"
+      ],
+      "bestUnique": [
+        "Abu Dhabi Falcon Hospital",
+        "Jubail Mangrove Park",
+        "Qasr Al Watan",
+        "Trader Vic's (Beach Rotana)"
+      ],
+      "bestBreakfast": [
+        "Jones the Grocer (Al Raha)",
+        "Jones the Grocer (Khalidiya)",
+        "Tashas (Al Bateen)",
+        "Ladurée (Abu Dhabi Mall)"
+      ],
+      "bestLunch": [
+        "Zuma Abu Dhabi",
+        "99 Sushi Bar Abu Dhabi",
+        "Al Fanar (Yas Mall)",
+        "Jones the Grocer (Al Mamoura)"
+      ],
+      "bestDinner": [
+        "Erth",
+        "Hakkasan Abu Dhabi",
+        "Coya Abu Dhabi",
+        "Al Fanar (Yas Mall)"
+      ],
+      "bestCocktails": [
+        "Trader Vic's (Beach Rotana)",
+        "Zuma Abu Dhabi",
+        "Buddha-Bar Beach (St. Regis Saadiyat Island)",
+        "Coya Abu Dhabi"
+      ],
+      "bestBakeries": [
+        "Ladurée (Abu Dhabi Mall)",
+        "Ladurée (Al Bateen)",
+        "Ladurée (Yas Mall)",
+        "Tashas (Al Bateen)"
+      ],
+      "bestCoffee": [
+        "Cartel Coffee Roasters (Al Bateen)",
+        "Cartel Coffee Roasters (Al Qana)",
+        "Cartel Coffee Roasters (Khalifa City)",
+        "Tashas (Al Bateen)"
+      ]
+    },
+    "queries": {
+      "Sheikh Zayed Grand Mosque": "Sheikh Zayed Grand Mosque Abu Dhabi",
+      "Qasr Al Watan": "Qasr Al Watan Al Ras Al Akhdar Abu Dhabi",
+      "Qasr Al Hosn": "Qasr Al Hosn Sheikh Rashid Bin Saeed Al Maktoum Street Abu Dhabi",
+      "Cultural Foundation": "Cultural Foundation Sheikh Rashid Bin Saeed Al Maktoum Street Abu Dhabi",
+      "Jubail Mangrove Park": "Jubail Mangrove Park Jubail Island Abu Dhabi",
+      "Abu Dhabi Falcon Hospital": "Abu Dhabi Falcon Hospital Al Sha-i Street Al Shamkha Abu Dhabi",
+      "The Galleria Al Maryah Island": "The Galleria 107 Hamouda Bin Ali Al Dhaheri Street Al Maryah Island Abu Dhabi",
+      "Al Fanar (Yas Mall)": "Al Fanar Restaurant Yas Mall Yas Island Abu Dhabi",
+      "Erth": "Erth Restaurant North Parking Al Hosn Abu Dhabi",
+      "Hakkasan Abu Dhabi": "Hakkasan Emirates Palace Mandarin Oriental Corniche Road Abu Dhabi",
+      "Zuma Abu Dhabi": "Zuma Abu Dhabi Global Market Al Maryah Island Abu Dhabi",
+      "99 Sushi Bar Abu Dhabi": "99 Sushi Bar Four Seasons The Galleria Al Maryah Island Abu Dhabi",
+      "Coya Abu Dhabi": "Coya Four Seasons Hotel The Galleria Al Maryah Island Abu Dhabi",
+      "Trader Vic's (Beach Rotana)": "Trader Vic's Beach Rotana 10th Street Al Zahiyah Abu Dhabi",
+      "Buddha-Bar Beach (St. Regis Saadiyat Island)": "Buddha-Bar Beach St. Regis Saadiyat Island Resort Saadiyat Island Abu Dhabi",
+      "Shake Shack (Yas Mall)": "Shake Shack Yas Mall Yas Island Abu Dhabi",
+      "Pickl (Mamsha Soul Beach)": "Pickl Soul Beach Mamsha Al Saadiyat Abu Dhabi",
+      "Jones the Grocer (Al Raha)": "Jones the Grocer Garden Plaza Al Raha Khalifa City Abu Dhabi",
+      "Jones the Grocer (Al Mamoura)": "Jones the Grocer 4th Muroor and 15th Street Al Mamoura Abu Dhabi",
+      "Jones the Grocer (Khalidiya)": "Jones the Grocer Pearl Plaza Tower Khalidiya Abu Dhabi",
+      "Tashas (Al Bateen)": "Tashas Marsa Al Bateen Abu Dhabi",
+      "Ladurée (Abu Dhabi Mall)": "Ladurée Abu Dhabi Mall Tourist Club Area Abu Dhabi",
+      "Ladurée (Al Bateen)": "Ladurée F82P+VFM Al Bateen Abu Dhabi",
+      "Ladurée (Yas Mall)": "Ladurée Yas Mall Luxury Court Yas Island Abu Dhabi",
+      "Cartel Coffee Roasters (Al Bateen)": "Cartel Coffee Roasters 469 Arabian Gulf Street Al Khalidiyah Abu Dhabi",
+      "Cartel Coffee Roasters (Al Qana)": "Cartel Coffee Roasters Al Qana Rabdan Al Maqta Abu Dhabi",
+      "Cartel Coffee Roasters (Khalifa City)": "Cartel Coffee Roasters 5 Al Jinan Street Al Raha Gardens Abu Dhabi"
+    },
+    "summary": "Mosques, palaces, mangroves and a falcon hospital, with breakfast cafés, Emirati and MICHELIN-starred dinners and cocktail bars checked against their own websites.",
+    "highlights": [
+      "Sheikh Zayed Grand Mosque",
+      "Qasr Al Watan",
+      "Qasr Al Hosn",
+      "Jubail Mangrove Park"
+    ],
+    "tip": "Pre-book your Sheikh Zayed Grand Mosque access pass and plan around Fridays, when the mosque pauses visits at midday and Qasr Al Hosn and the Cultural Foundation open only from 2:00 PM; Falcon Hospital tours don't run on Saturdays or public holidays.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Saturday tours off; Friday mornings limited",
+        "copy": "Abu Dhabi Falcon Hospital tours run daily except Saturday and public holidays, according to its tour page (last updated 2018). On Fridays, Qasr Al Hosn and the Cultural Foundation open 2:00 PM to 8:00 PM, and the Sheikh Zayed Grand Mosque breaks at midday and resumes visits at 2:30 PM."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Pre-book the mosque and falcon tours",
+        "copy": "The Sheikh Zayed Grand Mosque asks visitors to pre-book an online access pass, and Abu Dhabi Falcon Hospital says all tours have to be booked in advance. Qasr Al Watan tickets are dated and valid only on the date printed."
+      },
+      {
+        "label": "Walk-ins",
+        "value": "Counter seats at Zuma",
+        "copy": "Zuma Abu Dhabi says reservations are not necessary for its counters. Hakkasan Abu Dhabi, Erth and Coya Abu Dhabi take bookings through their own sites or phone lines."
+      },
+      {
+        "label": "Rules",
+        "value": "Cover up; bags checked",
+        "copy": "Qasr Al Watan asks you to cover knees and shoulders and bars shorts, sleeveless tops and see-through garments; Trader Vic's and Buddha-Bar Beach list a smart-casual dress code. At Jubail Mangrove Park bags are security-checked and under-18s must be with an adult."
+      }
+    ],
+    "dek": "Plan your sightseeing around Friday hours, pre-book the mosque and the falcon hospital, and save evenings for Al Maryah Island, Saadiyat and the Corniche.",
+    "intro": [
+      "Start with the Sheikh Zayed Grand Mosque, where the Centre's site asks you to pre-book and obtain an online access pass; worshippers may enter directly without a ticket. Its visiting-hours pages show a Friday midday break, with visits resuming at 2:30 PM. Qasr Al Watan, in Al Ras Al Akhdar near the Corniche, sells dated tickets valid only on the printed date and asks you to cover knees and shoulders. Downtown, Qasr Al Hosn's current site lists Saturday to Thursday 9:00 AM to 8:00 PM and Friday 2:00 PM to 8:00 PM, and the Cultural Foundation opposite publishes the same pattern.",
+      "For a change of pace, Jubail Mangrove Park on Jubail Island runs guided kayak tours: a 1.5-hour sunrise tour in single or double sit-on-top kayaks and a one-hour single-kayak tour, booked through the park's activities shop. Bags are subject to security checks and under-18s must be accompanied by an adult. Abu Dhabi Falcon Hospital in Al Shamkha offers tours that must be booked in advance; its tour page, last updated in 2018, says they run daily except Saturday and public holidays. On Al Maryah Island, The Galleria opens 10:00 AM to 10:00 PM Sunday to Thursday and until midnight on Friday and Saturday.",
+      "Erth in Al Hosn says it retained one MICHELIN star in the 2026 Abu Dhabi guide, and Hakkasan at Emirates Palace Mandarin Oriental lists a 2026 MICHELIN star, with dinner from 6pm every night and lunch on Saturdays. Zuma on Al Maryah Island notes that reservations are not necessary for its counters. Al Fanar at Yas Mall, near Ferrari World, serves Emirati food from 9:00 AM to 10:00 PM daily. For cheaper meals, Shake Shack at Yas Mall and Pickl at Mamsha Soul Beach both list late closing times on their store pages.",
+      "Mornings are easy: Jones the Grocer at Garden Plaza, Al Raha opens daily at 8:00am and serves breakfast until 12 pm on weekdays and 4 pm on weekends. Ladurée at Abu Dhabi Mall opens at 9:00 AM, and Cartel Coffee Roasters has branches on Arabian Gulf Street in Al Khalidiyah, at Al Qana and in Khalifa City, though it doesn't publish hours. In the evening, Trader Vic's at Beach Rotana lists a smart-casual dress code and a daily 5pm to 6pm happy hour, and Buddha-Bar Beach at The St. Regis Saadiyat Island Resort asks for smart casual too."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair a pre-booked Sheikh Zayed Grand Mosque visit with Qasr Al Watan, and avoid Friday mornings at the mosque, Qasr Al Hosn and the Cultural Foundation."
+      ],
+      [
+        "A slower morning",
+        "Take breakfast at Jones the Grocer in Al Raha, served until 12 pm on weekdays, then join a guided kayak tour at Jubail Mangrove Park."
+      ],
+      [
+        "Before booking",
+        "Book Abu Dhabi Falcon Hospital tours ahead for any day except Saturday or a public holiday, and dress for Qasr Al Watan with knees and shoulders covered."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Louvre Abu Dhabi, Zayed National Museum, Natural History Museum Abu Dhabi, Four Seasons, Conrad Etihad Towers, Shangri-La, Café Bateel and the World Trade Center Souk returned HTTP 403; Manarat Al Saadiyat and Brioche Dorée had certificate errors; % Arabica returned 418; teamLab Phenomena, Abrahamic Family House, Meylas and Emirates Park Zoo returned empty pages; Wahat Al Karama refused the connection. No market or food hall could be confirmed. Ferrari World, Warner Bros. World, SeaWorld and Yas Waterworld appear to be operating but publish no exact address or hours, so they were left out. The Sheikh Zayed Grand Mosque's two official hours pages disagree on closing times; Erth and Jubail Mangrove Park show conflicting hours on their own pages; Ladurée (Abu Dhabi Mall) gives both Level 1 and ground floor. Hours for Cartel Coffee Roasters, Coya Abu Dhabi and Qasr Al Watan are not published, and hours for Tashas, 99 Sushi Bar, Buddha-Bar Beach, Ladurée (Yas Mall), the Cultural Foundation and the Falcon Hospital (page last updated 2018) come from undated or older pages. The bakery picks are patisserie-cafés; no bakery-only operator site could be read.",
+  "injectionLikeText": []
+}

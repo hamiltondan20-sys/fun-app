@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 98.
-- Classifier-passed (published, not fully documented in that format): 94.
+- Source-verified (complete dated evidence format): 99.
+- Classifier-passed (published, not fully documented in that format): 93.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -27,7 +27,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Destination | Slug | Status | Review | Evidence | Named entries | Populated categories | Named categories | Hold reason |
 | --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- |
 | Aarhus, Denmark | aarhus | held-back | not-reviewed | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
-| Abu Dhabi, United Arab Emirates | abu-dhabi | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Abu Dhabi, United Arab Emirates | abu-dhabi | source-verified | source-checked | 27 | 56 | 15 | 15 | None |
 | Adelaide, Australia | adelaide | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Agadir, Morocco | agadir | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Agra, India | agra | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |

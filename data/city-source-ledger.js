@@ -5,6 +5,769 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Abu Dhabi, United Arab Emirates": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-11-17",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Louvre Abu Dhabi, Zayed National Museum, Natural History Museum Abu Dhabi, Four Seasons, Conrad Etihad Towers, Shangri-La, Café Bateel and the World Trade Center Souk returned HTTP 403; Manarat Al Saadiyat and Brioche Dorée had certificate errors; % Arabica returned 418; teamLab Phenomena, Abrahamic Family House, Meylas and Emirates Park Zoo returned empty pages; Wahat Al Karama refused the connection. No market or food hall could be confirmed. Ferrari World, Warner Bros. World, SeaWorld and Yas Waterworld appear to be operating but publish no exact address or hours, so they were left out. The Sheikh Zayed Grand Mosque's two official hours pages disagree on closing times; Erth and Jubail Mangrove Park show conflicting hours on their own pages; Ladurée (Abu Dhabi Mall) gives both Level 1 and ground floor. Hours for Cartel Coffee Roasters, Coya Abu Dhabi and Qasr Al Watan are not published, and hours for Tashas, 99 Sushi Bar, Buddha-Bar Beach, Ladurée (Yas Mall), the Cultural Foundation and the Falcon Hospital (page last updated 2018) come from undated or older pages. The bakery picks are patisserie-cafés; no bakery-only operator site could be read.",
+    "sourceUrls": [
+      "docs/content-research/abu-dhabi-2026-11-17.md",
+      "docs/content-research/abu-dhabi-2026-11-17.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Louvre Abu Dhabi",
+        "url": "https://www.louvreabudhabi.ae/en/visit/opening-hours",
+        "checkedOn": "2026-11-17",
+        "reason": "Official site returned HTTP 403 on every page tried; not bypassed"
+      },
+      {
+        "name": "Saadiyat Beach",
+        "checkedOn": "2026-11-17",
+        "reason": "Public beach; no operator page read in this review"
+      },
+      {
+        "name": "Zayed National Museum",
+        "url": "https://zayednationalmuseum.ae/en/plan-your-visit",
+        "checkedOn": "2026-11-17",
+        "reason": "Official site returned HTTP 403"
+      },
+      {
+        "name": "Natural History Museum Abu Dhabi",
+        "url": "https://www.nhmad.ae/en",
+        "checkedOn": "2026-11-17",
+        "reason": "Official site returned HTTP 403"
+      },
+      {
+        "name": "teamLab Phenomena Abu Dhabi",
+        "url": "https://www.teamlab.art/e/phenomena/",
+        "checkedOn": "2026-11-17",
+        "reason": "teamlab.art page returned title only / HTTP 404; teamlababudhabi.com plan-your-visit gave no hours or address and no operator line"
+      },
+      {
+        "name": "Manarat Al Saadiyat",
+        "url": "https://manaratalsaadiyat.ae/en/about/how.to.get.to.us.aspx",
+        "checkedOn": "2026-11-17",
+        "reason": "Certificate error (unable to verify the first certificate); not bypassed"
+      },
+      {
+        "name": "Wahat Al Karama",
+        "url": "https://www.wahatalkarama.ae/en/index.aspx",
+        "checkedOn": "2026-11-17",
+        "reason": "Connection refused (ECONNREFUSED)"
+      },
+      {
+        "name": "Abrahamic Family House",
+        "url": "https://www.abrahamicfamilyhouse.ae/",
+        "checkedOn": "2026-11-17",
+        "reason": "Pages returned empty content (script-rendered)"
+      },
+      {
+        "name": "Emirates Park Zoo",
+        "url": "https://www.emiratesparkzoo.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "Official site returned empty content"
+      },
+      {
+        "name": "Umm Al Emarat Park",
+        "url": "https://www.ummalemaratpark.ae/en/FAQ",
+        "checkedOn": "2026-11-17",
+        "reason": "Address and hours on an undated FAQ; newest dated content is a 2023 notice, so no current-operating evidence"
+      },
+      {
+        "name": "Ferrari World Abu Dhabi",
+        "url": "https://www.ferrariworldabudhabi.com/en/park-overview/opening-hours",
+        "checkedOn": "2026-11-17",
+        "reason": "Operating, but official pages give only \"located on Yas Island\" (no exact address) and no hours"
+      },
+      {
+        "name": "Warner Bros. World Abu Dhabi",
+        "url": "https://www.wbworldabudhabi.com/en/park-overview/opening-hours",
+        "checkedOn": "2026-11-17",
+        "reason": "Operating, but official pages give only \"located on Yas Island\" (no exact address) and no hours"
+      },
+      {
+        "name": "SeaWorld Yas Island, Abu Dhabi",
+        "url": "https://www.seaworldabudhabi.com/en/park-overview/opening-hours",
+        "checkedOn": "2026-11-17",
+        "reason": "No address or hours published on official pages read"
+      },
+      {
+        "name": "Yas Waterworld",
+        "url": "https://www.yaswaterworld.com/en/park-overview/opening-hours",
+        "checkedOn": "2026-11-17",
+        "reason": "No address or hours published on official pages read"
+      },
+      {
+        "name": "Noukhada Adventure Company",
+        "url": "https://noukhada.ae/",
+        "checkedOn": "2026-11-17",
+        "reason": "Site shows only blog posts; no meeting point, schedule or booking page"
+      },
+      {
+        "name": "Observation Deck at 300",
+        "url": "https://www.hilton.com/en/hotels/auhetci-conrad-abu-dhabi-etihad-towers/dining/",
+        "checkedOn": "2026-11-17",
+        "reason": "Conrad Abu Dhabi Etihad Towers dining pages returned HTTP 403; old Jumeirah pages 404"
+      },
+      {
+        "name": "Li Beirut",
+        "url": "https://www.hilton.com/en/hotels/auhetci-conrad-abu-dhabi-etihad-towers/dining/li-beirut",
+        "checkedOn": "2026-11-17",
+        "reason": "Conrad Abu Dhabi Etihad Towers page returned HTTP 403"
+      },
+      {
+        "name": "Ray's Bar",
+        "url": "https://www.hilton.com/en/hotels/auhetci-conrad-abu-dhabi-etihad-towers/dining/rays-bar/",
+        "checkedOn": "2026-11-17",
+        "reason": "Conrad Abu Dhabi Etihad Towers page returned HTTP 403"
+      },
+      {
+        "name": "Butcher & Still",
+        "url": "https://www.fourseasons.com/abudhabi/dining/restaurants/butcher_and_still/",
+        "checkedOn": "2026-11-17",
+        "reason": "Four Seasons site returned HTTP 403"
+      },
+      {
+        "name": "Café Milano Abu Dhabi",
+        "url": "https://www.fourseasons.com/abudhabi/dining/restaurants/cafe_milano/",
+        "checkedOn": "2026-11-17",
+        "reason": "Four Seasons site returned HTTP 403"
+      },
+      {
+        "name": "Hoi An (Shangri-La Qaryat Al Beri)",
+        "url": "https://www.shangri-la.com/abudhabi/qaryatalberi/dining/restaurants/hoi-an/",
+        "checkedOn": "2026-11-17",
+        "reason": "Shangri-La site returned HTTP 403"
+      },
+      {
+        "name": "Talea by Antonio Guida",
+        "url": "https://www.mandarinoriental.com/en/abu-dhabi/emirates-palace/dine/talea-by-antonio-guida",
+        "checkedOn": "2026-11-17",
+        "reason": "Mandarin Oriental page returned navigation only, no address or hours"
+      },
+      {
+        "name": "Mezlai",
+        "url": "https://www.mandarinoriental.com/en/abu-dhabi/emirates-palace/dine/mezlai",
+        "checkedOn": "2026-11-17",
+        "reason": "Mandarin Oriental page returned navigation only, no address or hours"
+      },
+      {
+        "name": "Le Café (Emirates Palace Mandarin Oriental)",
+        "url": "https://www.mandarinoriental.com/en/abu-dhabi/emirates-palace/dine/le-cafe",
+        "checkedOn": "2026-11-17",
+        "reason": "Pages returned navigation only or HTTP 404"
+      },
+      {
+        "name": "Fouquet's Abu Dhabi",
+        "url": "https://www.louvreabudhabi.ae/en/visit/fouquets-abu-dhabi",
+        "checkedOn": "2026-11-17",
+        "reason": "Louvre Abu Dhabi site returned HTTP 403"
+      },
+      {
+        "name": "Meylas",
+        "url": "https://www.meylas.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "Official site returned empty page"
+      },
+      {
+        "name": "Sajway",
+        "url": "https://www.sajway.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "Official site returned title only"
+      },
+      {
+        "name": "Otoro (Al Qana)",
+        "url": "https://www.otoroabudhabi.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "No address or hours published; footer 2025"
+      },
+      {
+        "name": "Café Bateel",
+        "url": "https://bateel.com/pages/cafe-bateel",
+        "checkedOn": "2026-11-17",
+        "reason": "Official site returned HTTP 403"
+      },
+      {
+        "name": "Brioche Dorée (Yas)",
+        "url": "https://emea.briochedoree.com/store-finder/4458003",
+        "checkedOn": "2026-11-17",
+        "reason": "Certificate error (self signed certificate); not bypassed"
+      },
+      {
+        "name": "% Arabica",
+        "url": "https://arabica.com/en/location/",
+        "checkedOn": "2026-11-17",
+        "reason": "Official site returned HTTP 418"
+      },
+      {
+        "name": "PAUL",
+        "url": "https://paularabia.com/english/paul-locations",
+        "checkedOn": "2026-11-17",
+        "reason": "Official site lists no identifiable Abu Dhabi branch address"
+      },
+      {
+        "name": "Blacksmith Coffee",
+        "url": "https://www.blacksmith.ae/",
+        "checkedOn": "2026-11-17",
+        "reason": "Branches named only (NYUAD, Souq Al Mina) with no address or hours; blacksmithcoffee.ae refused connection"
+      },
+      {
+        "name": "World Trade Center Souk",
+        "url": "https://www.wtcad.ae/en/thesouk",
+        "checkedOn": "2026-11-17",
+        "reason": "Official site returned HTTP 403"
+      },
+      {
+        "name": "Souq Al Mina",
+        "url": "https://www.aldar.com/portfolio/retail/communities/souq-al-mina",
+        "checkedOn": "2026-11-17",
+        "reason": "Aldar page returned HTTP 403"
+      },
+      {
+        "name": "Mina Zayed fish market",
+        "url": "https://www.modon.com/asset-investment-management",
+        "checkedOn": "2026-11-17",
+        "reason": "Only a 2022 Modon release with no hours; no current-operating evidence"
+      },
+      {
+        "name": "Wake n' Bake / Tawa Bakery / bkry / ANKO / Knead / Beirut Sur Mer",
+        "checkedOn": "2026-11-17",
+        "reason": "No official operator site found (DNS not found or social media / destination sites only)"
+      },
+      {
+        "name": "Mosque at blue hour",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Mangrove kayaking",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Louvre architecture hour",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Emirati-inspired dinner",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Corniche cafe lunch",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A Saadiyat beach meal",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Corniche",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Yas Island",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Saadiyat Island",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Saadiyat Island walk",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Corniche",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Yas Island",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Yas Island",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Sheikh Zayed Grand Mosque",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Saadiyat Island",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Mosque at blue hour",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Corniche",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Louvre Abu Dhabi",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Saadiyat Island evening",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Corniche",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Yas Island",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Saadiyat Island",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Sheikh Zayed Grand Mosque",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Corniche",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Yas Island",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Saadiyat Island",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Sheikh Zayed Grand Mosque",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Saadiyat Island cafe or market",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Mangrove kayaking",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Yas Island",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Yas Island",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Saadiyat Island",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Saadiyat Island",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Corniche bakery or market",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Sheikh Zayed Grand Mosque",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Yas Island",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Saadiyat Island",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Louvre Abu Dhabi",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Yas Island",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Saadiyat Island",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Corniche",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Yas Island",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Saadiyat Island",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Saadiyat Island",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Corniche",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Saadiyat Beach",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Saadiyat Island",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Corniche morning market",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Sheikh Zayed Grand Mosque",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Yas Island",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Saadiyat Island",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Corniche",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Yas Island",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Sheikh Zayed Grand Mosque": {
+        "url": "https://www.szgmc.gov.ae/en/worshippers/en-to-visiting-hours",
+        "sourceType": "official public operator (Sheikh Zayed Grand Mosque Centre)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Live visiting-hours and booking page: visitors should \"Pre-book the visit and obtain an online access pass\"; \"Worshippers may enter directly without the need for an entry ticket.\""
+      },
+      "Qasr Al Watan": {
+        "url": "https://www.qasralwatan.ae/en/plan-your-visit/opening-hours",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Ticket booking live (General Admission, Palace In Motion, Tours); FAQ: \"Tickets are dated and can only be used on the date printed on the ticket.\""
+      },
+      "Qasr Al Hosn": {
+        "url": "https://www.qasralhosn.ae/en/plan-your-visit",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current site (\"© Copyright 2026\") with online ticketing and the Al Ayyala performance and \"Sadu 101\" workshops at the House of Artisans."
+      },
+      "Cultural Foundation": {
+        "url": "https://culturalfoundation.ae/en/plan-your-visit",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Event page lists Thikra by Akram Khan Company, \"Friday 20 – Saturday 21 November 2026\" in the Auditorium (https://culturalfoundation.ae/en/event/thikra-night-of-remembering)."
+      },
+      "Jubail Mangrove Park": {
+        "url": "https://jubailisland.ae/jubail-mangrove-park/",
+        "sourceType": "operator's own site (Jubail Island)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "\"Now Open\" banner; bookable kayak tours, e.g. \"A 1.5-hour guided tour… single or double sit-on-top kayaks\" (Sunrise); news dated 02/10/2026."
+      },
+      "Abu Dhabi Falcon Hospital": {
+        "url": "https://www.falconhospital.com/services/adfh-tourism/abu-dhabi-falcon-hospital-tour",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Tour page with \"© 2026\" footer and testimonials dated November 2025; \"All tours have to be booked in advance\"."
+      },
+      "The Galleria Al Maryah Island": {
+        "url": "https://www.thegalleria.ae/en/visitors-information",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current visitor-information page (\"© Copyright 2026\") with events listed under Inspiration."
+      },
+      "Al Fanar (Yas Mall)": {
+        "url": "https://www.alfanarrestaurant.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Branch listed as \"Favourite Emirati Restaurant 2026\" (FACT Dining Awards Abu Dhabi 2026); \"© 2026\" footer; reservation links."
+      },
+      "Erth": {
+        "url": "https://erthrestaurant.ae/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "\"One MICHELIN Star Retained – MICHELIN Guide Abu Dhabi, 2026\"; Book a Table form live."
+      },
+      "Hakkasan Abu Dhabi": {
+        "url": "https://hakkasangroup.com/venues/hakkasan-abu-dhabi/",
+        "sourceType": "operator's own site (Hakkasan Group)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "2026 MICHELIN Star listed in accolades; \"Copyright © 2026 Hakkasan Group\"; reservations open for dinner and Saturday lunch."
+      },
+      "Zuma Abu Dhabi": {
+        "url": "https://www.zumarestaurant.com/en/abu-dhabi",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "\"© Zuma 2026\"; bar menu \"now served from 12pm onwards\"; online booking; \"reservations are not necessary for the counters\"."
+      },
+      "99 Sushi Bar Abu Dhabi": {
+        "url": "https://www.99sushibar.com/en/99-sushi-bar-abu-dhabi/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Live online booking and an omakase business lunch offered weekdays 12:00–2:15pm; no 2026-dated text."
+      },
+      "Coya Abu Dhabi": {
+        "url": "https://www.coyarestaurant.com/restaurants/abu-dhabi/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "\"Coya © 2026\"; \"Book A Table\" link and Pisco Bar listed."
+      },
+      "Trader Vic's (Beach Rotana)": {
+        "url": "https://tradervicsabudhabi.com/",
+        "sourceType": "operator's own branch site (linked from tradervics.com)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Happy hour \"Daily, 5pm – 6pm … 30% OFF selected drinks\" (image uploaded 2026/11); booking link."
+      },
+      "Buddha-Bar Beach (St. Regis Saadiyat Island)": {
+        "url": "https://www.marriott.com/en-us/hotels/auhxr-the-st-regis-saadiyat-island-resort-abu-dhabi/dining/",
+        "sourceType": "hotel's own site (Marriott)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Hotel dining page with \"Find a Table\" booking; \"© 1996 – 2026 Marriott\"; no dated venue content."
+      },
+      "Shake Shack (Yas Mall)": {
+        "url": "https://locations.alshaya.com/shake-shack/ae/abu-dhabi/yas-mall",
+        "sourceType": "franchise operator's own store locator (M.H. Alshaya)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Live store page with weekly hours and phone 02 492 6658 (footer ©2025)."
+      },
+      "Pickl (Mamsha Soul Beach)": {
+        "url": "https://www.eatpickl.com/locations",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Locations page with branch phone +971 2 886 7844 and \"© Pickl 2019-2026\"."
+      },
+      "Jones the Grocer (Al Raha)": {
+        "url": "https://www.jonesthegrocer.com/al-raha-abu-dhabi-i89",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "\"© 2026 Jones the Grocer\" with a current festive feast \"from just AED 649\"."
+      },
+      "Jones the Grocer (Al Mamoura)": {
+        "url": "https://www.jonesthegrocer.com/al-mamoura-abu-dhabi-i85",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "\"© 2026\" footer, festive campaign and weekly Sunday roast \"Sundays, 12pm onwards\"."
+      },
+      "Jones the Grocer (Khalidiya)": {
+        "url": "https://www.jonesthegrocer.com/khalidiya-abu-dhabi-i83",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "\"© 2026\" footer and current festive feast offer."
+      },
+      "Tashas (Al Bateen)": {
+        "url": "https://tashascafe.com/locations/abu-dhabi/al-bateen/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Branch page with current menu including breakfast; no 2026-dated text."
+      },
+      "Ladurée (Abu Dhabi Mall)": {
+        "url": "https://laduree.ae/locations/laduree-abu-dhabi-mall-restaurant/",
+        "sourceType": "operator's own site (Ladurée UAE; also laduree.com store page)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "2026 Christmas collection banner and \"© Copyright Ladurée Paris 2026\"; weekday business lunch \"12 PM until 4 PM\"."
+      },
+      "Ladurée (Al Bateen)": {
+        "url": "https://laduree.com/en/pages/store/laduree-al-bateen",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Store page with 2026 Christmas banner and \"© 2026\" footer."
+      },
+      "Ladurée (Yas Mall)": {
+        "url": "https://laduree.ae/locations/laduree-yas-mall-restaurant/",
+        "sourceType": "operator's own site (Ladurée UAE)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Branch page on a site carrying current seasonal content; page itself undated."
+      },
+      "Cartel Coffee Roasters (Al Bateen)": {
+        "url": "https://cartel.coffee/pages/contact",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "\"©2026 Cartel Coffee Roasters\" and a \"Latino Blend 2026 Relaunch\" product."
+      },
+      "Cartel Coffee Roasters (Al Qana)": {
+        "url": "https://cartel.coffee/pages/contact",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Listed branch on the current (\"©2026\") site with phone (+971) 50 300 9955."
+      },
+      "Cartel Coffee Roasters (Khalifa City)": {
+        "url": "https://cartel.coffee/pages/contact",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Listed branch on the current (\"©2026\") site with phone (+971) 50 880 2828."
+      }
+    }
+  },
   "Funchal, Portugal": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-11-17",

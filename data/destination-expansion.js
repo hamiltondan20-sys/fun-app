@@ -10275,4 +10275,112 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on November 17, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Abu Dhabi, United Arab Emirates: source review of 2026-11-17 (docs/content-research/abu-dhabi-2026-11-17.md).
+  {
+    const cityKey = "Abu Dhabi, United Arab Emirates";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Sheikh Zayed Grand Mosque","Qasr Al Watan","Qasr Al Hosn","Jubail Mangrove Park"],
+      bestFirstTimers: ["Sheikh Zayed Grand Mosque","Qasr Al Watan","Qasr Al Hosn","Erth"],
+      bestRestaurants: ["Erth","Hakkasan Abu Dhabi","Zuma Abu Dhabi","Al Fanar (Yas Mall)"],
+      bestBudget: ["Shake Shack (Yas Mall)","Pickl (Mamsha Soul Beach)","Cartel Coffee Roasters (Al Bateen)","Cultural Foundation"],
+      bestLuxury: ["Hakkasan Abu Dhabi","Zuma Abu Dhabi","99 Sushi Bar Abu Dhabi","Coya Abu Dhabi"],
+      bestCouples: ["Buddha-Bar Beach (St. Regis Saadiyat Island)","Hakkasan Abu Dhabi","Jubail Mangrove Park","Trader Vic's (Beach Rotana)"],
+      bestKids: ["Abu Dhabi Falcon Hospital","Jubail Mangrove Park","Al Fanar (Yas Mall)","Shake Shack (Yas Mall)"],
+      bestSolo: ["Cultural Foundation","Qasr Al Hosn","Cartel Coffee Roasters (Al Bateen)","The Galleria Al Maryah Island"],
+      bestUnique: ["Abu Dhabi Falcon Hospital","Jubail Mangrove Park","Qasr Al Watan","Trader Vic's (Beach Rotana)"],
+      bestBreakfast: ["Jones the Grocer (Al Raha)","Jones the Grocer (Khalidiya)","Tashas (Al Bateen)","Ladurée (Abu Dhabi Mall)"],
+      bestLunch: ["Zuma Abu Dhabi","99 Sushi Bar Abu Dhabi","Al Fanar (Yas Mall)","Jones the Grocer (Al Mamoura)"],
+      bestDinner: ["Erth","Hakkasan Abu Dhabi","Coya Abu Dhabi","Al Fanar (Yas Mall)"],
+      bestCocktails: ["Trader Vic's (Beach Rotana)","Zuma Abu Dhabi","Buddha-Bar Beach (St. Regis Saadiyat Island)","Coya Abu Dhabi"],
+      bestBakeries: ["Ladurée (Abu Dhabi Mall)","Ladurée (Al Bateen)","Ladurée (Yas Mall)","Tashas (Al Bateen)"],
+      bestCoffee: ["Cartel Coffee Roasters (Al Bateen)","Cartel Coffee Roasters (Al Qana)","Cartel Coffee Roasters (Khalifa City)","Tashas (Al Bateen)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Sheikh Zayed Grand Mosque": "Sheikh Zayed Grand Mosque Abu Dhabi",
+      "Qasr Al Watan": "Qasr Al Watan Al Ras Al Akhdar Abu Dhabi",
+      "Qasr Al Hosn": "Qasr Al Hosn Sheikh Rashid Bin Saeed Al Maktoum Street Abu Dhabi",
+      "Jubail Mangrove Park": "Jubail Mangrove Park Jubail Island Abu Dhabi",
+      "Erth": "Erth Restaurant North Parking Al Hosn Abu Dhabi",
+      "Hakkasan Abu Dhabi": "Hakkasan Emirates Palace Mandarin Oriental Corniche Road Abu Dhabi",
+      "Zuma Abu Dhabi": "Zuma Abu Dhabi Global Market Al Maryah Island Abu Dhabi",
+      "Al Fanar (Yas Mall)": "Al Fanar Restaurant Yas Mall Yas Island Abu Dhabi",
+      "Shake Shack (Yas Mall)": "Shake Shack Yas Mall Yas Island Abu Dhabi",
+      "Pickl (Mamsha Soul Beach)": "Pickl Soul Beach Mamsha Al Saadiyat Abu Dhabi",
+      "Cartel Coffee Roasters (Al Bateen)": "Cartel Coffee Roasters 469 Arabian Gulf Street Al Khalidiyah Abu Dhabi",
+      "Cultural Foundation": "Cultural Foundation Sheikh Rashid Bin Saeed Al Maktoum Street Abu Dhabi",
+      "99 Sushi Bar Abu Dhabi": "99 Sushi Bar Four Seasons The Galleria Al Maryah Island Abu Dhabi",
+      "Coya Abu Dhabi": "Coya Four Seasons Hotel The Galleria Al Maryah Island Abu Dhabi",
+      "Buddha-Bar Beach (St. Regis Saadiyat Island)": "Buddha-Bar Beach St. Regis Saadiyat Island Resort Saadiyat Island Abu Dhabi",
+      "Trader Vic's (Beach Rotana)": "Trader Vic's Beach Rotana 10th Street Al Zahiyah Abu Dhabi",
+      "Abu Dhabi Falcon Hospital": "Abu Dhabi Falcon Hospital Al Sha-i Street Al Shamkha Abu Dhabi",
+      "The Galleria Al Maryah Island": "The Galleria 107 Hamouda Bin Ali Al Dhaheri Street Al Maryah Island Abu Dhabi",
+      "Jones the Grocer (Al Raha)": "Jones the Grocer Garden Plaza Al Raha Khalifa City Abu Dhabi",
+      "Jones the Grocer (Khalidiya)": "Jones the Grocer Pearl Plaza Tower Khalidiya Abu Dhabi",
+      "Tashas (Al Bateen)": "Tashas Marsa Al Bateen Abu Dhabi",
+      "Ladurée (Abu Dhabi Mall)": "Ladurée Abu Dhabi Mall Tourist Club Area Abu Dhabi",
+      "Jones the Grocer (Al Mamoura)": "Jones the Grocer 4th Muroor and 15th Street Al Mamoura Abu Dhabi",
+      "Ladurée (Al Bateen)": "Ladurée F82P+VFM Al Bateen Abu Dhabi",
+      "Ladurée (Yas Mall)": "Ladurée Yas Mall Luxury Court Yas Island Abu Dhabi",
+      "Cartel Coffee Roasters (Al Qana)": "Cartel Coffee Roasters Al Qana Rabdan Al Maqta Abu Dhabi",
+      "Cartel Coffee Roasters (Khalifa City)": "Cartel Coffee Roasters 5 Al Jinan Street Al Raha Gardens Abu Dhabi"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Abu Dhabi" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Mosques, palaces, mangroves and a falcon hospital, with breakfast cafés, Emirati and MICHELIN-starred dinners and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Sheikh Zayed Grand Mosque","Qasr Al Watan","Qasr Al Hosn","Jubail Mangrove Park"];
+    cityGuide.tip = "Pre-book your Sheikh Zayed Grand Mosque access pass and plan around Fridays, when the mosque pauses visits at midday and Qasr Al Hosn and the Cultural Foundation open only from 2:00 PM; Falcon Hospital tours don't run on Saturdays or public holidays.";
+    data.destinationFacts[cityKey] = "Pre-book your Sheikh Zayed Grand Mosque access pass and plan around Fridays, when the mosque pauses visits at midday and Qasr Al Hosn and the Cultural Foundation open only from 2:00 PM; Falcon Hospital tours don't run on Saturdays or public holidays.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Mosques, palaces, mangroves and a falcon hospital, with breakfast cafés, Emirati and MICHELIN-starred dinners and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Saturday tours off; Friday mornings limited",
+        "copy": "Abu Dhabi Falcon Hospital tours run daily except Saturday and public holidays, according to its tour page (last updated 2018). On Fridays, Qasr Al Hosn and the Cultural Foundation open 2:00 PM to 8:00 PM, and the Sheikh Zayed Grand Mosque breaks at midday and resumes visits at 2:30 PM."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Pre-book the mosque and falcon tours",
+        "copy": "The Sheikh Zayed Grand Mosque asks visitors to pre-book an online access pass, and Abu Dhabi Falcon Hospital says all tours have to be booked in advance. Qasr Al Watan tickets are dated and valid only on the date printed."
+      },
+      {
+        "label": "Walk-ins",
+        "value": "Counter seats at Zuma",
+        "copy": "Zuma Abu Dhabi says reservations are not necessary for its counters. Hakkasan Abu Dhabi, Erth and Coya Abu Dhabi take bookings through their own sites or phone lines."
+      },
+      {
+        "label": "Rules",
+        "value": "Cover up; bags checked",
+        "copy": "Qasr Al Watan asks you to cover knees and shoulders and bars shorts, sleeveless tops and see-through garments; Trader Vic's and Buddha-Bar Beach list a smart-casual dress code. At Jubail Mangrove Park bags are security-checked and under-18s must be with an adult."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Plan your sightseeing around Friday hours, pre-book the mosque and the falcon hospital, and save evenings for Al Maryah Island, Saadiyat and the Corniche.",
+      intro: [
+        "Start with the Sheikh Zayed Grand Mosque, where the Centre's site asks you to pre-book and obtain an online access pass; worshippers may enter directly without a ticket. Its visiting-hours pages show a Friday midday break, with visits resuming at 2:30 PM. Qasr Al Watan, in Al Ras Al Akhdar near the Corniche, sells dated tickets valid only on the printed date and asks you to cover knees and shoulders. Downtown, Qasr Al Hosn's current site lists Saturday to Thursday 9:00 AM to 8:00 PM and Friday 2:00 PM to 8:00 PM, and the Cultural Foundation opposite publishes the same pattern.",
+        "For a change of pace, Jubail Mangrove Park on Jubail Island runs guided kayak tours: a 1.5-hour sunrise tour in single or double sit-on-top kayaks and a one-hour single-kayak tour, booked through the park's activities shop. Bags are subject to security checks and under-18s must be accompanied by an adult. Abu Dhabi Falcon Hospital in Al Shamkha offers tours that must be booked in advance; its tour page, last updated in 2018, says they run daily except Saturday and public holidays. On Al Maryah Island, The Galleria opens 10:00 AM to 10:00 PM Sunday to Thursday and until midnight on Friday and Saturday.",
+        "Erth in Al Hosn says it retained one MICHELIN star in the 2026 Abu Dhabi guide, and Hakkasan at Emirates Palace Mandarin Oriental lists a 2026 MICHELIN star, with dinner from 6pm every night and lunch on Saturdays. Zuma on Al Maryah Island notes that reservations are not necessary for its counters. Al Fanar at Yas Mall, near Ferrari World, serves Emirati food from 9:00 AM to 10:00 PM daily. For cheaper meals, Shake Shack at Yas Mall and Pickl at Mamsha Soul Beach both list late closing times on their store pages.",
+        "Mornings are easy: Jones the Grocer at Garden Plaza, Al Raha opens daily at 8:00am and serves breakfast until 12 pm on weekdays and 4 pm on weekends. Ladurée at Abu Dhabi Mall opens at 9:00 AM, and Cartel Coffee Roasters has branches on Arabian Gulf Street in Al Khalidiyah, at Al Qana and in Khalifa City, though it doesn't publish hours. In the evening, Trader Vic's at Beach Rotana lists a smart-casual dress code and a daily 5pm to 6pm happy hour, and Buddha-Bar Beach at The St. Regis Saadiyat Island Resort asks for smart casual too."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair a pre-booked Sheikh Zayed Grand Mosque visit with Qasr Al Watan, and avoid Friday mornings at the mosque, Qasr Al Hosn and the Cultural Foundation."
+        ],
+        [
+          "A slower morning",
+          "Take breakfast at Jones the Grocer in Al Raha, served until 12 pm on weekdays, then join a guided kayak tour at Jubail Mangrove Park."
+        ],
+        [
+          "Before booking",
+          "Book Abu Dhabi Falcon Hospital tours ahead for any day except Saturday or a public holiday, and dress for Qasr Al Watan with knees and shoulders covered."
+        ]
+      ],
+      trust: "All 27 distinct recommendations in this guide were checked against their operators' own websites on November 17, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();
