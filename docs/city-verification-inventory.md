@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 103.
-- Classifier-passed (published, not fully documented in that format): 89.
+- Source-verified (complete dated evidence format): 104.
+- Classifier-passed (published, not fully documented in that format): 88.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -211,7 +211,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Halifax, Canada | halifax | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Hamburg, Germany | hamburg | source-verified | source-checked | 31 | 49 | 15 | 15 | None |
 | Hamilton, Bermuda | hamilton | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Hangzhou, China | hangzhou | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Hangzhou, China | hangzhou | source-verified | source-checked | 17 | 25 | 14 | 13 | None |
 | Hanoi, Vietnam | hanoi | source-verified | source-checked | 8 | 18 | 13 | 12 | None |
 | Harare, Zimbabwe | harare | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Havana, Cuba | havana | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |

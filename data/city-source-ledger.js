@@ -5,6 +5,646 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Hangzhou, China": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-11-17",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Only 17 places could be confirmed, below the 25–35 target: most Hangzhou restaurants, cafés and bakeries publish only through apps or WeChat, and many official sites failed automated reading (403 or 418 responses at several hotel groups and % Arabica, expired or invalid certificates at the Zhejiang Provincial Museum, Hangzhou Grand Theatre, Songcheng, Zhiweiguan and Fuchun Resort, refused connections at Lou Wai Lou, Waipojia, the West Lake State Guest House and Xiling Seal Art Society, and unreadable or garbled pages at the Zhejiang Art Museum, China Academy of Art Museum, Zhejiang Museum of Natural History and Xixi Wetland). The China National Silk Museum was readable but published no street address. Four Seasons venues were checked on the operator's press site because its main site returned 403. Weekly hours were not published for Lingyin Temple, the Tea Museum, Liangzhu Museum or any restaurant; Amanfayun's dining page gives service periods only and no dated 2026 item; the Rooftop Stars Bar hours come from an undated press story and the hotel's fact sheet calls the rooftop bar Stellaris. West Lake's location is given through the committee's address and descriptions rather than a single street address.",
+    "sourceUrls": [
+      "docs/content-research/hangzhou-2026-11-17.md",
+      "docs/content-research/hangzhou-2026-11-17.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Longjing Tea Village",
+        "url": "https://www.teamuseum.cn/basicInfo/basicIntroduction.htm",
+        "checkedOn": "2026-11-17",
+        "reason": "a village, not a single operated place; no operator page found. The China National Tea Museum's Longjing site (翁家山268号) is listed but no current evidence for that site was found."
+      },
+      {
+        "name": "West Lake boat ride",
+        "url": "https://westlake.hangzhou.gov.cn/",
+        "checkedOn": "2026-11-17",
+        "reason": "activity; the operator (西湖游船有限公司) is only named on the committee's site, with no schedule, fares or pier address found"
+      },
+      {
+        "name": "Tea plantation walk",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Lingyin Temple morning",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place (Lingyin Temple confirmed separately)"
+      },
+      {
+        "name": "China National Silk Museum",
+        "url": "https://www.chinasilkmuseum.com/cgjyy/info_6.aspx?itemid=31249",
+        "checkedOn": "2026-11-17",
+        "reason": "official site reachable but no street address on any page read (hours from a 2023 page: Tuesday–Sunday 9:00–17:00, Mondays closed); missing requirement (a)"
+      },
+      {
+        "name": "Zhejiang Provincial Museum",
+        "url": "https://www.zhejiangmuseum.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "certificate has expired; not bypassed"
+      },
+      {
+        "name": "Hangzhou Museum",
+        "url": "https://www.hzmuseum.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "DNS lookup failed (ENOTFOUND) for hzmuseum.com"
+      },
+      {
+        "name": "Zhejiang Art Museum",
+        "url": "https://www.zjam.org.cn/",
+        "checkedOn": "2026-11-17",
+        "reason": "page text garbled by character encoding; address, hours and exhibition titles not reliably readable"
+      },
+      {
+        "name": "China Academy of Art Museum",
+        "url": "https://www.caamuseum.org/",
+        "checkedOn": "2026-11-17",
+        "reason": "page returned no readable content (title only)"
+      },
+      {
+        "name": "Zhejiang Museum of Natural History",
+        "url": "https://www.zmnh.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "page returned unfilled template placeholders; no address, hours or exhibitions readable"
+      },
+      {
+        "name": "Xixi National Wetland Park",
+        "url": "https://www.xixiwetland.com.cn/",
+        "checkedOn": "2026-11-17",
+        "reason": "page returned no readable content"
+      },
+      {
+        "name": "Song Dynasty Town (Songcheng)",
+        "url": "https://www.songcheng.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "TLS error (unrecognized name); not bypassed"
+      },
+      {
+        "name": "Huanglong Cave",
+        "url": "https://westlake.hangzhou.gov.cn/col/col1639433/art/2026/art_c6e301a3281b47acb1c37d11db96ee9d.html",
+        "checkedOn": "2026-11-17",
+        "reason": "2026 committee article read, but no address or exact location published"
+      },
+      {
+        "name": "Lou Wai Lou (Gushan Road)",
+        "url": "https://www.louwailou.com.cn/",
+        "checkedOn": "2026-11-17",
+        "reason": "official site refused connection (ECONNREFUSED)"
+      },
+      {
+        "name": "Zhiweiguan",
+        "url": "https://www.zhiweiguan.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "TLS error (unrecognized name); not bypassed"
+      },
+      {
+        "name": "Grandma's Home (Waipojia)",
+        "url": "https://www.waipojia.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "official site refused connection (ECONNREFUSED)"
+      },
+      {
+        "name": "West Lake State Guest House",
+        "url": "https://www.xihusgh.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "official site refused connection (ECONNREFUSED)"
+      },
+      {
+        "name": "Four Seasons Hotel Hangzhou at West Lake (main site)",
+        "url": "https://www.fourseasons.com/hangzhou/",
+        "checkedOn": "2026-11-17",
+        "reason": "HTTP 403 on fourseasons.com; hotel venues checked on the operator's press site instead"
+      },
+      {
+        "name": "Shangri-La Hotel Hangzhou",
+        "url": "https://www.shangri-la.com/hangzhou/shangrila/dining/",
+        "checkedOn": "2026-11-17",
+        "reason": "HTTP 403"
+      },
+      {
+        "name": "Park Hyatt Hangzhou",
+        "url": "https://www.hyatt.com/park-hyatt/en-US/hgzph-park-hyatt-hangzhou/dining",
+        "checkedOn": "2026-11-17",
+        "reason": "HTTP 403"
+      },
+      {
+        "name": "Banyan Tree Hangzhou",
+        "url": "https://www.banyantree.com/china/hangzhou",
+        "checkedOn": "2026-11-17",
+        "reason": "HTTP 403"
+      },
+      {
+        "name": "Conrad Hangzhou",
+        "url": "https://www.hilton.com/en/hotels/hgzcici-conrad-hangzhou/dining/",
+        "checkedOn": "2026-11-17",
+        "reason": "HTTP 403"
+      },
+      {
+        "name": "InterContinental Hangzhou",
+        "url": "https://www.ihg.com/intercontinental/hotels/us/en/hangzhou/hgzha/hoteldetail/dining",
+        "checkedOn": "2026-11-17",
+        "reason": "HTTP 403"
+      },
+      {
+        "name": "Fuchun Resort",
+        "url": "https://www.fuchunresort.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "self-signed certificate; not bypassed"
+      },
+      {
+        "name": "% Arabica (Hangzhou branches)",
+        "url": "https://arabica.com/en/location/",
+        "checkedOn": "2026-11-17",
+        "reason": "HTTP 418 (automated reading refused)"
+      },
+      {
+        "name": "Blue Bottle Coffee (Hangzhou)",
+        "url": "https://www.bluebottlecoffee.cn/",
+        "checkedOn": "2026-11-17",
+        "reason": "DNS lookup failed (ENOTFOUND)"
+      },
+      {
+        "name": "Wagas / Baker & Spice (Hangzhou)",
+        "url": "https://www.wagas.com.cn/",
+        "checkedOn": "2026-11-17",
+        "reason": "official site lists no Hangzhou store"
+      },
+      {
+        "name": "Hangzhou Grand Theatre",
+        "url": "https://www.hzdjy.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "certificate has expired; not bypassed"
+      },
+      {
+        "name": "Xiling Seal Art Society",
+        "url": "https://www.xlys1904.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "official site refused connection (ECONNREFUSED)"
+      },
+      {
+        "name": "a tea-region lunch",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Hangzhou market or cafe",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local dinner in West Lake",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Hefang Street",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Longjing",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in West Lake",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost West Lake walk",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Hefang Street",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Longjing",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Longjing",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for West Lake",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in West Lake",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around West Lake boat ride",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Hefang Street",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Longjing Tea Village",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "West Lake evening",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Hefang Street",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Longjing",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through West Lake",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly West Lake",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Hefang Street",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Longjing",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near West Lake",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to West Lake",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "West Lake cafe or market",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Tea plantation walk",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Longjing",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Longjing",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond West Lake",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near West Lake",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Hefang Street bakery or market",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before West Lake",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Longjing",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near West Lake",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Longjing Tea Village",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Longjing",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in West Lake",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Hefang Street",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Longjing",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near West Lake",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near West Lake",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Hefang Street",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Lingyin Temple",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near West Lake",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Hefang Street morning market",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before West Lake",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Longjing",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near West Lake",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Hefang Street",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Longjing",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "West Lake": {
+        "url": "https://westlake.hangzhou.gov.cn/col/col1598539/art/2026/art_d6ca5d4cb33c470b8132a9bec0908119.html",
+        "sourceType": "official public operator (Hangzhou West Lake Scenic Area Administrative Committee)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Overview page published \"2026-06-24 17:11\"; the committee's home page carries November 2026 news, e.g. a shared-storage service launched 11 November 2026."
+      },
+      "Broken Bridge (Duanqiao)": {
+        "url": "https://westlake.hangzhou.gov.cn/col/col1643935/art/2026/art_7556b4fce8f141e49f739c5fd2a3409f.html",
+        "sourceType": "official public operator (Hangzhou West Lake Scenic Area Administrative Committee)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Page published \"2026- 01- 12 15: 05\"; an 11 November 2026 committee article describes an event opening at Broken Bridge and Huanglong Cave."
+      },
+      "Huagang Guanyu (Viewing Fish at Flower Harbour)": {
+        "url": "https://westlake.hangzhou.gov.cn/col/col1643935/art/2026/art_dffdbc70626c442583a10acc2fe06507.html",
+        "sourceType": "official public operator (Hangzhou West Lake Scenic Area Administrative Committee)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Scenic-spot page published 2026-06-25 10:50 by the committee that runs the West Lake parks."
+      },
+      "Lingyin Temple": {
+        "url": "https://www.lingyinsi.com/list_57.html",
+        "sourceType": "operator's own site (Lingyin Temple)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Temple announcements: closed from 9 August 2026 for Typhoon Bai Haitun and reopened from 11 August (\"自8月11日（周二）起…恢复正常开放\"); news dated 2026-10-29 on the Water-Land assembly concluding."
+      },
+      "China National Tea Museum (Shuangfeng site)": {
+        "url": "https://westlake.hangzhou.gov.cn/col/col1639433/art/2026/art_55e89d38962445ff9a0fdcf10676b460.html",
+        "sourceType": "museum notice on the official public operator's site (Hangzhou West Lake Scenic Area Administrative Committee); address also on https://www.teamuseum.cn/basicInfo/basicIntroduction.htm",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Notice published 2026-11-13: exhibition \"2026.7.17-2026.11.30（除法定节假日，每周二闭馆）\". A second 2026-11-13 notice says the Tea Learning Center runs two free public tea courses each week, booked on 0571-87964232 on weekdays 9:00–11:30 and 14:00–17:00."
+      },
+      "Hangzhou Zoo": {
+        "url": "https://www.hzzoo.com/",
+        "sourceType": "operator's own site (Hangzhou Zoo)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "News dated 2026-09-22 (pre-holiday safety inspections) and 30 October; page publishes seasonal opening hours."
+      },
+      "Liangzhu Museum": {
+        "url": "https://www.lzmuseum.cn/LiangBoXinWen/2026945292944.html",
+        "sourceType": "operator's own site (Liangzhu Museum)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Notice dated 2026-11-09: from 12 November 2026 \"团队参访需提前通过“良渚古城”微信公众号或小程序填报信息进行预约\"; home page news dated 11-16 and 11-12."
+      },
+      "Yuan (Amanfayun)": {
+        "url": "https://www.aman.com/resorts/amanfayun/dining",
+        "sourceType": "operator's own site (Aman)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Dining page describes Yuan serving \"breakfast and lunch through to afternoon tea, dinner and evening drinks\"; restaurants open to non-residents \"subject to availability\"; reservations via contact page or +86 571 8732 9999. Only 2026 marker is the page copyright."
+      },
+      "Steam House (Amanfayun)": {
+        "url": "https://www.aman.com/resorts/amanfayun/dining",
+        "sourceType": "operator's own site (Aman)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Dining page: \"serving dumplings and other village-style steamed fare for lunch and dinner\", courtyard seating; open to non-residents subject to availability."
+      },
+      "Café (Amanfayun)": {
+        "url": "https://www.aman.com/resorts/amanfayun/dining",
+        "sourceType": "operator's own site (Aman)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Dining page: light dishes, freshly baked bread, cakes and coffee for dine-in or takeaway, \"Open from morning until dusk.\""
+      },
+      "Jin Sha (Four Seasons Hotel Hangzhou at West Lake)": {
+        "url": "https://press.fourseasons.com/hangzhou/hotel-news/2026/michelin-starred-jin-sha-restaurant",
+        "sourceType": "operator's own press site (Four Seasons)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "April 2026 release: Jin Sha kept its \"one Michelin star\" in the 2026 guide, its fourth consecutive year; 12 November 2026 release celebrates new 2026 distinctions."
+      },
+      "West Lake Bistro (Four Seasons Hotel Hangzhou at West Lake)": {
+        "url": "https://press.fourseasons.com/hangzhou/hotel-news/2026/autumn-programming",
+        "sourceType": "operator's own press site (Four Seasons)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Release dated 13 October 2026 names West Lake Bistro serving Italian cuisine with seasonal influences; hotel fact sheet lists WLB as \"All-day Italian style\" with indoor and outdoor seating."
+      },
+      "Lobby Lounge (Four Seasons Hotel Hangzhou at West Lake)": {
+        "url": "https://press.fourseasons.com/hangzhou/hotel-facts/",
+        "sourceType": "operator's own press site (Four Seasons)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Hotel fact sheet: \"Asian-inspired Cuisine, Afternoon Tea and Signature Cocktails\", indoor and outdoor seating. Fact sheet undated; hotel's 2026 releases show it operating."
+      },
+      "Song (Four Seasons Hotel Hangzhou at Hangzhou Centre)": {
+        "url": "https://press.fourseasons.com/hangzhoucentre/hotel-news/2026/michelin-starred-song-restaurant",
+        "sourceType": "operator's own press site (Four Seasons)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "9 April 2026 release: kept one Michelin star; \"Rooted in Ningbo flavours\". 28 September 2026 release: Autumn Sea Feast menu 21 September to 14 December 2026. Reservations \"+86 (571) 8681 8888\" or email."
+      },
+      "Charm (Four Seasons Hotel Hangzhou at Hangzhou Centre)": {
+        "url": "https://press.fourseasons.com/hangzhoucentre/hotel-news/2026/canalcations",
+        "sourceType": "operator's own press site (Four Seasons)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "8 June 2026 release: \"a Western set menu designed for families\" at Charm. Fact sheet: all-day dining, 10th floor, \"From breakfast to ultimate hotpot dining\"."
+      },
+      "The Lounge (Four Seasons Hotel Hangzhou at Hangzhou Centre)": {
+        "url": "https://press.fourseasons.com/hangzhoucentre/hotel-news/2026/early-autumn-experiences",
+        "sourceType": "operator's own press site (Four Seasons)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "31 August 2026 release: seasonal autumn afternoon tea by Executive Pastry Chef Marc Pu and barista Kiki Hong. Fact sheet: \"afternoon tea, Western bites, and specialty drinks\"."
+      },
+      "Rooftop Stars Bar (Four Seasons Hotel Hangzhou at Hangzhou Centre)": {
+        "url": "https://press.fourseasons.com/hangzhoucentre/trending-now/stars-bar",
+        "sourceType": "operator's own press site (Four Seasons)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Undated press story; bar debuted 13 June 2025. The hotel fact sheet names the 30th-floor rooftop bar \"Stellaris\" (cocktails, whiskey, wine), so the name differs between pages. No 2026-dated item seen."
+      }
+    }
+  },
   "Da Nang, Vietnam": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-11-17",

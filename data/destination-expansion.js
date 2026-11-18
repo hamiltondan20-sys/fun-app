@@ -10822,4 +10822,102 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 24 distinct recommendations in this guide were checked against their operators' own websites on November 17, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Hangzhou, China: source review of 2026-11-17 (docs/content-research/hangzhou-2026-11-17.md).
+  {
+    const cityKey = "Hangzhou, China";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["West Lake","Lingyin Temple","Broken Bridge (Duanqiao)","China National Tea Museum (Shuangfeng site)"],
+      bestFirstTimers: ["West Lake","Broken Bridge (Duanqiao)","Lingyin Temple","Huagang Guanyu (Viewing Fish at Flower Harbour)"],
+      bestRestaurants: ["Jin Sha (Four Seasons Hotel Hangzhou at West Lake)","Song (Four Seasons Hotel Hangzhou at Hangzhou Centre)","Yuan (Amanfayun)","Steam House (Amanfayun)"],
+      bestBudget: ["Broken Bridge (Duanqiao)","China National Tea Museum (Shuangfeng site)","Hangzhou Zoo"],
+      bestLuxury: ["Jin Sha (Four Seasons Hotel Hangzhou at West Lake)","Song (Four Seasons Hotel Hangzhou at Hangzhou Centre)","Yuan (Amanfayun)","Rooftop Stars Bar (Four Seasons Hotel Hangzhou at Hangzhou Centre)"],
+      bestCouples: ["Broken Bridge (Duanqiao)","Rooftop Stars Bar (Four Seasons Hotel Hangzhou at Hangzhou Centre)","Jin Sha (Four Seasons Hotel Hangzhou at West Lake)","Lobby Lounge (Four Seasons Hotel Hangzhou at West Lake)"],
+      bestKids: ["Hangzhou Zoo","Charm (Four Seasons Hotel Hangzhou at Hangzhou Centre)","Huagang Guanyu (Viewing Fish at Flower Harbour)","China National Tea Museum (Shuangfeng site)"],
+      bestSolo: ["China National Tea Museum (Shuangfeng site)","Liangzhu Museum","Lingyin Temple","Café (Amanfayun)"],
+      bestUnique: ["Lingyin Temple","Liangzhu Museum","Steam House (Amanfayun)","China National Tea Museum (Shuangfeng site)"],
+      bestBreakfast: ["Charm (Four Seasons Hotel Hangzhou at Hangzhou Centre)","Yuan (Amanfayun)","Café (Amanfayun)"],
+      bestLunch: ["Steam House (Amanfayun)","West Lake Bistro (Four Seasons Hotel Hangzhou at West Lake)","Yuan (Amanfayun)"],
+      bestDinner: ["Jin Sha (Four Seasons Hotel Hangzhou at West Lake)","Song (Four Seasons Hotel Hangzhou at Hangzhou Centre)","Steam House (Amanfayun)","West Lake Bistro (Four Seasons Hotel Hangzhou at West Lake)"],
+      bestCocktails: ["Rooftop Stars Bar (Four Seasons Hotel Hangzhou at Hangzhou Centre)","Lobby Lounge (Four Seasons Hotel Hangzhou at West Lake)"],
+      bestBakeries: [],
+      bestCoffee: ["Café (Amanfayun)","The Lounge (Four Seasons Hotel Hangzhou at Hangzhou Centre)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "West Lake": "West Lake Longjing Road Hangzhou",
+      "Lingyin Temple": "Lingyin Temple 1 Fayun Lane Lingyin Road Hangzhou",
+      "Broken Bridge (Duanqiao)": "Broken Bridge Bai Causeway Hangzhou",
+      "China National Tea Museum (Shuangfeng site)": "China National Tea Museum 88 Longjing Road Hangzhou",
+      "Huagang Guanyu (Viewing Fish at Flower Harbour)": "Huagang Guanyu Park Su Causeway Hangzhou",
+      "Jin Sha (Four Seasons Hotel Hangzhou at West Lake)": "Jin Sha Four Seasons 5 Lingyin Road Hangzhou",
+      "Song (Four Seasons Hotel Hangzhou at Hangzhou Centre)": "Four Seasons Hotel Hangzhou at Hangzhou Centre 493 Zhongshan North Road Hangzhou",
+      "Yuan (Amanfayun)": "Amanfayun 22 Fayun Lane Hangzhou",
+      "Steam House (Amanfayun)": "Amanfayun 22 Fayun Lane Hangzhou",
+      "Hangzhou Zoo": "Hangzhou Zoo 40 Hupao Road Hangzhou",
+      "Rooftop Stars Bar (Four Seasons Hotel Hangzhou at Hangzhou Centre)": "Four Seasons Hotel Hangzhou at Hangzhou Centre 493 Zhongshan North Road Hangzhou",
+      "Lobby Lounge (Four Seasons Hotel Hangzhou at West Lake)": "Four Seasons Hotel Hangzhou at West Lake 5 Lingyin Road Hangzhou",
+      "Charm (Four Seasons Hotel Hangzhou at Hangzhou Centre)": "Four Seasons Hotel Hangzhou at Hangzhou Centre 493 Zhongshan North Road Hangzhou",
+      "Liangzhu Museum": "Liangzhu Museum 1 Meilizhou Road Yuhang Hangzhou",
+      "Café (Amanfayun)": "Amanfayun 22 Fayun Lane Hangzhou",
+      "West Lake Bistro (Four Seasons Hotel Hangzhou at West Lake)": "Four Seasons Hotel Hangzhou at West Lake 5 Lingyin Road Hangzhou",
+      "The Lounge (Four Seasons Hotel Hangzhou at Hangzhou Centre)": "Four Seasons Hotel Hangzhou at Hangzhou Centre 493 Zhongshan North Road Hangzhou"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Hangzhou" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "West Lake sights, Lingyin Temple, the tea and Liangzhu museums and the zoo, with breakfast spots, dinners, cafés and cocktail bars checked against their operators' own websites.";
+    cityGuide.highlights = ["West Lake","Lingyin Temple","China National Tea Museum (Shuangfeng site)","Liangzhu Museum"];
+    cityGuide.tip = "The China National Tea Museum's Shuangfeng site closes on Tuesdays except public holidays, so plan your tea day for another day of the week.";
+    data.destinationFacts[cityKey] = "The China National Tea Museum's Shuangfeng site closes on Tuesdays except public holidays, so plan your tea day for another day of the week.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "West Lake sights, Lingyin Temple, the tea and Liangzhu museums and the zoo, with breakfast spots, dinners, cafés and cocktail bars checked against their operators' own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Tea Museum: Tuesdays",
+        "copy": "The China National Tea Museum's Shuangfeng site at 88 Longjing Road lists a Tuesday closure, except on public holidays. None of the other places checked here published a weekly closing day."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book Song and Liangzhu groups ahead",
+        "copy": "Song takes reservations on +86 (571) 8681 8888 or by email. From 12 November 2026, group visits to the Liangzhu Museum must be booked through the “良渚古城” WeChat account or mini program."
+      },
+      {
+        "label": "Walk-ins",
+        "value": "Amanfayun open to non-residents",
+        "copy": "Yuan, Steam House and the café at Amanfayun are open to non-residents, subject to availability. The Tea Museum's free tea courses are booked by phone on 0571-87964232 on weekdays."
+      },
+      {
+        "label": "Weather rules",
+        "value": "Typhoon closures",
+        "copy": "Lingyin Temple and six other West Lake temples closed temporarily for typhoons in July and August 2026 and reopened by notice. Check the temple's announcements page before you go in stormy weather."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Pair West Lake with Lingyin Temple on one day, keep any day but Tuesday for the tea museum, and book the Michelin-starred dinners ahead.",
+      intro: [
+        "West Lake is the anchor of this guide. The West Lake Scenic Area Administrative Committee describes a protected area of about 60 square kilometres, and its own pages place Broken Bridge at the eastern end of Bai Causeway and Huagang Guanyu in the lake's southwest corner, east of Su Causeway. You can link the two along the shore and then head west to Lingyin Temple at 1 Fayun Lane, off Lingyin Road. The temple's announcements show it closed temporarily for typhoons in July and August 2026, so check them in stormy weather.",
+        "For tea, the China National Tea Museum's Shuangfeng site is at 88 Longjing Road, and its November 2026 notice lists a Tuesday closure, except on public holidays. The museum's Tea Learning Center runs two free public tea courses each week, booked by phone on weekdays from 9:00 to 11:30 and from 14:00 to 17:00. Further out, the Liangzhu Museum is at 1 Meilizhou Road in Yuhang District. From 12 November 2026, groups must book through the “良渚古城” WeChat account or mini program before visiting.",
+        "Two Four Seasons hotels anchor the dinners. Jin Sha, at the West Lake hotel on 5 Lingyin Road, kept its one Michelin star in the 2026 guide and builds its Jiangsu-Zhejiang menu around the seasons. The same hotel runs West Lake Bistro for Italian food and a Lobby Lounge with afternoon tea and signature cocktails. Song, on the eighth floor of Four Seasons Hotel Hangzhou at Hangzhou Centre, also holds one star for Ningbo-rooted Zhejiang cooking, and its Autumn Sea Feast menu runs until 14 December 2026. You can reserve on +86 (571) 8681 8888.",
+        "For a slower day, Amanfayun sits at 22 Fayun Lane, the same lane as Lingyin Temple, and its venues are open to non-residents subject to availability. Yuan serves from breakfast through to evening drinks, Steam House offers dumplings and village-style steamed dishes at lunch and dinner, and the café sells freshly baked bread, cakes and coffee from morning until dusk. With children, Hangzhou Zoo at 40 Hupao Road opens from 7:00 to 17:00 between October and March, and its ticket window closes at 16:30."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Start at Broken Bridge on Bai Causeway, follow the shore to Huagang Guanyu, and finish at Lingyin Temple on Fayun Lane."
+        ],
+        [
+          "A slower morning",
+          "Have breakfast at Yuan or the café at Amanfayun, then visit the China National Tea Museum on any day except Tuesday."
+        ],
+        [
+          "Before booking",
+          "Reserve Jin Sha or Song ahead, and book Liangzhu Museum group visits through the “良渚古城” WeChat account."
+        ]
+      ],
+      trust: "All 17 distinct recommendations in this guide were checked against their operators' own websites on November 17, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();
