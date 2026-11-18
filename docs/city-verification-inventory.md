@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 95.
-- Classifier-passed (published, not fully documented in that format): 97.
+- Source-verified (complete dated evidence format): 97.
+- Classifier-passed (published, not fully documented in that format): 95.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -43,7 +43,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | AlUla, Saudi Arabia | alula | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Amalfi, Italy | amalfi | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Amasra, Turkey | amasra | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Amman, Jordan | amman | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Amman, Jordan | amman | source-verified | source-checked | 27 | 43 | 15 | 15 | None |
 | Amsterdam, Netherlands | amsterdam | source-verified | source-checked | 23 | 50 | 15 | 15 | None |
 | Anchorage, United States | anchorage | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Angel Falls, Venezuela | angel-falls | classifier-passed | not-reviewed | 0 | 5 | 15 | 3 | None |
@@ -125,7 +125,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Chamonix, France | chamonix | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Charleston, United States | charleston | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Chefchaouen, Morocco | chefchaouen | classifier-passed | not-reviewed | 0 | 5 | 15 | 3 | None |
-| Chengdu, China | chengdu | classifier-passed | not-reviewed | 0 | 5 | 15 | 3 | None |
+| Chengdu, China | chengdu | source-verified | source-checked | 25 | 33 | 15 | 14 | None |
 | Chennai, India | chennai | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Chiang Mai, Thailand | chiang-mai | held-back | not-reviewed | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Chiang Rai, Thailand | chiang-rai | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |

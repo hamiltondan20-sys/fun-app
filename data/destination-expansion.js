@@ -9955,4 +9955,218 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 23 distinct recommendations in this guide were checked against their operators' own websites on November 17, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Chengdu, China: source review of 2026-11-17 (docs/content-research/chengdu-2026-11-17.md).
+  {
+    const cityKey = "Chengdu, China";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Chengdu Research Base of Giant Panda Breeding","Chengdu Museum","Wuhou Shrine Museum","Taikoo Li Chengdu"],
+      bestFirstTimers: ["Chengdu Research Base of Giant Panda Breeding","Wuhou Shrine Museum","Chengdu Museum","Mi Xun Teahouse (Upper House Chengdu)"],
+      bestRestaurants: ["Mi Xun Teahouse (Upper House Chengdu)","Yue Hin (Niccolo Chengdu)","Jade Garden (Taikoo Li Chengdu)","Tivano (Upper House Chengdu)"],
+      bestBudget: ["Tasty Congee & Noodle Wantun Shop (Taikoo Li Chengdu)","Café & Meal MUJI (Taikoo Li Chengdu)","Momicafe (Taikoo Li Chengdu)"],
+      bestLuxury: ["Mi Xun Teahouse (Upper House Chengdu)","Tivano (Upper House Chengdu)","Yue Hin (Niccolo Chengdu)","The Tea Lounge (Niccolo Chengdu)"],
+      bestCouples: ["Jing (Upper House Chengdu)","Tivano (Upper House Chengdu)","The Bar (Niccolo Chengdu)","Mi Xun Teahouse (Upper House Chengdu)"],
+      bestKids: ["Chengdu Research Base of Giant Panda Breeding","Chengdu Museum","blue frog (Taikoo Li Chengdu)"],
+      bestSolo: ["Chengdu Museum","CreaTea (Taikoo Li Chengdu)","Momicafe (Taikoo Li Chengdu)","Wang De Chuan Tea Company (Taikoo Li Chengdu)"],
+      bestUnique: ["Mi Xun Teahouse (Upper House Chengdu)","CreaTea (Taikoo Li Chengdu)","Wang De Chuan Tea Company (Taikoo Li Chengdu)","Momicafe (Taikoo Li Chengdu)"],
+      bestBreakfast: ["The Temple Café (Upper House Chengdu)","Niccolo Kitchen (Niccolo Chengdu)","The Tea Lounge (Niccolo Chengdu)"],
+      bestLunch: ["Tasty Congee & Noodle Wantun Shop (Taikoo Li Chengdu)","Shi Heng Fan Dian (Taikoo Li Chengdu)","SONG (Taikoo Li Chengdu)","Yue Hin (Niccolo Chengdu)"],
+      bestDinner: ["Yue Hin (Niccolo Chengdu)","Tivano (Upper House Chengdu)","Jade Garden (Taikoo Li Chengdu)","Niccolo Kitchen (Niccolo Chengdu)"],
+      bestCocktails: ["Jing (Upper House Chengdu)","The Bar (Niccolo Chengdu)"],
+      bestBakeries: ["OURBakery (Taikoo Li Chengdu)","The Temple Café (Upper House Chengdu)","Blondel (Taikoo Li Chengdu)"],
+      bestCoffee: ["%Arabica (Taikoo Li Chengdu)","Starbucks Reserve Bar Mixato (Taikoo Li Chengdu)","Café & Meal MUJI (Taikoo Li Chengdu)","The Temple Café (Upper House Chengdu)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Chengdu Research Base of Giant Panda Breeding": "Chengdu Research Base of Giant Panda Breeding 1375 Panda Avenue Chenghua District Chengdu",
+      "Chengdu Museum": "Chengdu Museum 1 Xiaohe Street Qingyang District Chengdu",
+      "Wuhou Shrine Museum": "Wuhou Shrine Museum 231 Wuhouci Street Chengdu",
+      "Taikoo Li Chengdu": "Taikoo Li Chengdu Dacisi Road Jinjiang District Chengdu",
+      "Mi Xun Teahouse (Upper House Chengdu)": "Mi Xun Teahouse Upper House 81 Bitieshi Street Chengdu",
+      "Yue Hin (Niccolo Chengdu)": "Yue Hin Niccolo Chengdu IFS Tower 3 Hongxing Road Chengdu",
+      "Jade Garden (Taikoo Li Chengdu)": "Jade Garden Taikoo Li Dacisi Road Chengdu",
+      "Tivano (Upper House Chengdu)": "Tivano Upper House 81 Bitieshi Street Chengdu",
+      "Tasty Congee & Noodle Wantun Shop (Taikoo Li Chengdu)": "Tasty Congee & Noodle Wantun Shop Taikoo Li Dacisi Road Chengdu",
+      "Café & Meal MUJI (Taikoo Li Chengdu)": "Cafe & Meal MUJI Taikoo Li Dacisi Road Chengdu",
+      "Momicafe (Taikoo Li Chengdu)": "Momicafe Taikoo Li Dacisi Road Chengdu",
+      "The Tea Lounge (Niccolo Chengdu)": "The Tea Lounge Niccolo Chengdu IFS Tower 3 Hongxing Road Chengdu",
+      "Jing (Upper House Chengdu)": "Jing Upper House 81 Bitieshi Street Chengdu",
+      "The Bar (Niccolo Chengdu)": "The Bar Niccolo Chengdu IFS Tower 3 Hongxing Road Chengdu",
+      "blue frog (Taikoo Li Chengdu)": "blue frog Taikoo Li Dacisi Road Chengdu",
+      "CreaTea (Taikoo Li Chengdu)": "CreaTea Taikoo Li Dacisi Road Chengdu",
+      "Wang De Chuan Tea Company (Taikoo Li Chengdu)": "Wang De Chuan Tea Company Taikoo Li Dacisi Road Chengdu",
+      "The Temple Café (Upper House Chengdu)": "The Temple Cafe Upper House 81 Bitieshi Street Chengdu",
+      "Niccolo Kitchen (Niccolo Chengdu)": "Niccolo Kitchen Niccolo Chengdu IFS Tower 3 Hongxing Road Chengdu",
+      "Shi Heng Fan Dian (Taikoo Li Chengdu)": "Shi Heng Fan Dian Taikoo Li Dacisi Road Chengdu",
+      "SONG (Taikoo Li Chengdu)": "SONG Taikoo Li Dacisi Road Chengdu",
+      "OURBakery (Taikoo Li Chengdu)": "OURBakery Taikoo Li Dacisi Road Chengdu",
+      "Blondel (Taikoo Li Chengdu)": "Blondel Taikoo Li Dacisi Road Chengdu",
+      "%Arabica (Taikoo Li Chengdu)": "%Arabica Taikoo Li Dacisi Road Chengdu",
+      "Starbucks Reserve Bar Mixato (Taikoo Li Chengdu)": "Starbucks Reserve Bar Mixato Taikoo Li Dacisi Road Chengdu"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Chengdu" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Pandas, city museums and the Wuhou Shrine, with Taikoo Li cafés and tea houses, hotel restaurants and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Chengdu Research Base of Giant Panda Breeding","Chengdu Museum","Wuhou Shrine Museum","Taikoo Li Chengdu"];
+    cityGuide.tip = "Reserve the Panda Base online with real-name ID up to 14 days ahead, and plan around Mondays: the Chengdu Museum, plus Giant Panda Villa No. 6 and the Panda Art Museum at the Panda Base, close on Mondays except public holidays.";
+    data.destinationFacts[cityKey] = "Reserve the Panda Base online with real-name ID up to 14 days ahead, and plan around Mondays: the Chengdu Museum, plus Giant Panda Villa No. 6 and the Panda Art Museum at the Panda Base, close on Mondays except public holidays.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Pandas, city museums and the Wuhou Shrine, with Taikoo Li cafés and tea houses, hotel restaurants and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays",
+        "copy": "The Chengdu Museum, plus Giant Panda Villa No. 6 and the Panda Art Museum at the Panda Base, close on Mondays except public holidays. Wuhou Shrine Museum's homepage gives no weekly closing day."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Real-name, up to 14 days ahead",
+        "copy": "Panda Base tickets are reserved online, valid only on the chosen date, and checked against the original ID you booked with; an adult ticket is CNY 55. Wuhou Shrine Museum charges ¥50 and says it has never authorised anyone to sell its tickets online."
+      },
+      {
+        "label": "Queues and timing",
+        "value": "Avoid the peaks",
+        "copy": "The Chengdu Museum limits visitors to 20,000 a day and asks you to avoid 10:00–12:00 and 14:00–16:00. At the Panda Base, afternoon ticket holders are asked not to arrive early."
+      },
+      {
+        "label": "Rules",
+        "value": "No drones or pets",
+        "copy": "The Panda Base bans drones, pets, scooters, bicycles and camera flashes. The Chengdu Museum bars pets, smelly or sticky food and coloured liquids."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Book the Panda Base before anything else, keep museums off your Monday plans, and anchor meals around Taikoo Li and Niccolo Chengdu at IFS.",
+      intro: [
+        "Start at the Chengdu Research Base of Giant Panda Breeding, at 1375 Panda Avenue in Chenghua District. Entry needs a real-name online reservation, made up to 14 days ahead, and you must show the original ID you booked with; an adult ticket is CNY 55, while visitors aged 60 and over and children aged 6 and under (or under 1.3 m) are exempt from reservation. From November to February, morning entry runs 8:00 to 12:00 and afternoon entry 12:00 to 16:30, with clearance from 17:30; from March to October entry opens at 7:30. Drones, pets and camera flashes are not allowed.",
+        "In the centre, the Chengdu Museum stands at No. 1 Xiaohe Street on the west side of Tianfu Square. It is closed on Mondays except public holidays, opens 9:00 to 17:00 from Tuesday to Thursday and on Sunday, and stays open until 20:30 on Friday and Saturday for its Weekend Children's Museum. The museum limits visits to 20,000 people a day and asks you to avoid the 10:00–12:00 and 14:00–16:00 peaks. Its permanent galleries include Chinese shadow puppetry and puppet exhibitions on the fifth floor.",
+        "Wuhou Shrine Museum, at 231 Wuhouci Street, lists hours of 09:00 to 18:00 with ticket sales ending at 17:00, and notes that summer extended hours and free cultural events can change them. A full ticket is ¥50 and a half-price ticket ¥25. The museum states that it has never authorised any organisation or individual to sell its tickets or guided-tour tickets online, so book through its own channels. Its 2026 bulletins cover Mid-Autumn and National Day themed events, and its current notices concern upkeep in the Jinli cultural street it manages.",
+        "For eating and drinking, Taikoo Li Chengdu, beside the ancient Daci Temple and the Chunxi Road shopping area, lists cafés, tea houses and restaurants in its directory, from %Arabica and Starbucks Reserve Bar Mixato to Jade Garden and Tasty Congee & Noodle Wantun Shop. Upper House Chengdu, at No. 81 Bitieshi Street, runs the Michelin-starred vegetarian Mi Xun Teahouse, The Temple Café with breakfast from 7am, Tivano, and the speakeasy Jing, open daily 5pm to 1am. At Niccolo Chengdu in Chengdu IFS Tower 3, The Bar on the 3rd floor has a live band from Tuesday to Sunday."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Reserve the Panda Base with real-name ID and pair it with the Chengdu Museum on Tianfu Square, remembering that the museum, plus Giant Panda Villa No. 6 and the Panda Art Museum at the Panda Base, close on Mondays except public holidays."
+        ],
+        [
+          "A slower morning",
+          "Start with breakfast at The Temple Café from 7am or Niccolo Kitchen from 6:30am, then take tea at CreaTea or coffee at %Arabica in Taikoo Li."
+        ],
+        [
+          "Before booking",
+          "Reserve the Panda Base up to 14 days ahead with the ID you will carry, request Mi Xun Teahouse, Tivano and Jing tables through Upper House Chengdu's booking emails, and buy Wuhou Shrine tickets only through the museum's own channels."
+        ]
+      ],
+      trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on November 17, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
+  // Amman, Jordan: source review of 2026-11-17 (docs/content-research/amman-2026-11-17.md).
+  {
+    const cityKey = "Amman, Jordan";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Darat al Funun","Jordan National Gallery of Fine Arts","Children's Museum Jordan","Royal Film Commission (Jabal Amman)"],
+      bestFirstTimers: ["Darat al Funun","Jordan National Gallery of Fine Arts","Habibah Sweets (Downtown, King Hussein St.)","Fakhreldin Restaurant (Jabal Amman)"],
+      bestRestaurants: ["Shams El Balad","Fakhreldin Restaurant (Jabal Amman)","Tamara (The St. Regis Amman)","Kenz Lebanese Café (The Ritz-Carlton, Amman)"],
+      bestBudget: ["Habibah Sweets (Downtown, King Hussein St.)","Dimitri's Coffee (Lweibdeh)","Abdali Mall","Royal Film Commission (Jabal Amman)"],
+      bestLuxury: ["Zenith (The St. Regis Amman)","St. Regis Bar (The St. Regis Amman)","Roberto's (The Ritz-Carlton, Amman)","Crystal Lounge (Fairmont Amman)"],
+      bestCouples: ["Nasim Rooftop Lounge (Fairmont Amman)","Zenith (The St. Regis Amman)","Fakhreldin Restaurant (Jabal Amman)","Shams El Balad"],
+      bestKids: ["Children's Museum Jordan","Abdali Mall","Habibah Sweets (Abdoun Village)","Crystal Lounge (Fairmont Amman)"],
+      bestSolo: ["Darat al Funun","Dimitri's Coffee (Lweibdeh)","Royal Film Commission (Jabal Amman)","Jordan National Gallery of Fine Arts"],
+      bestUnique: ["Royal Film Commission (Jabal Amman)","Darat al Funun","Habibah Sweets (Downtown, King Hussein St.)","Nasim Rooftop Lounge (Fairmont Amman)"],
+      bestBreakfast: ["The Spice Garden (Sheraton Amman Al Nabil)","Threesixty (Amman Rotana)","Tea Lounge (The St. Regis Amman)","Iris Tea Lounge (The Ritz-Carlton, Amman)"],
+      bestLunch: ["Nur (Fairmont Amman)","Kenz Lebanese Café (The Ritz-Carlton, Amman)","Tamara (The St. Regis Amman)","Fakhreldin Restaurant (Jabal Amman)"],
+      bestDinner: ["Shams El Balad","Fakhreldin Restaurant (Jabal Amman)","Toscana (Sheraton Amman Al Nabil)","Zenith (The St. Regis Amman)"],
+      bestCocktails: ["Nasim Rooftop Lounge (Fairmont Amman)","Caprice Groovy Room (Fairmont Amman)","St. Regis Bar (The St. Regis Amman)","Bar on Four (Amman Rotana)"],
+      bestBakeries: ["Habibah Sweets (Downtown, King Hussein St.)","Habibah Sweets (Abdoun Village)"],
+      bestCoffee: ["Dimitri's Coffee (Lweibdeh)","Dimitri's Coffee (Sweifieh)","Dimitri's Coffee (Abdali Boulevard)","Iris Tea Lounge (The Ritz-Carlton, Amman)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Darat al Funun": "Darat al Funun 13 Nadeem al Mallah Street Jabal al Weibdeh Amman",
+      "Jordan National Gallery of Fine Arts": "Jordan National Gallery of Fine Arts Husi Fareez Street Al-Luwaibdeh Amman",
+      "Children's Museum Jordan": "Children's Museum Jordan King Abdullah II Street Amman",
+      "Royal Film Commission (Jabal Amman)": "Royal Film Commission 7 Omar Bin Al Khattab Street Jabal Amman Amman",
+      "Habibah Sweets (Downtown, King Hussein St.)": "Habibah Sweets King Hussein Street Downtown Amman",
+      "Fakhreldin Restaurant (Jabal Amman)": "Fakhreldin Restaurant Taha Hussein Street Jabal Amman Amman",
+      "Shams El Balad": "Shams El Balad 69 Mu'ath Bin Jabal Street Amman",
+      "Tamara (The St. Regis Amman)": "The St. Regis Amman Shafiq Al Hayek Street 5th Circle Amman",
+      "Kenz Lebanese Café (The Ritz-Carlton, Amman)": "The Ritz-Carlton Amman Al Kindi Street 5th Circle Amman",
+      "Dimitri's Coffee (Lweibdeh)": "Dimitri's Coffee Al-Baouneyah Street Lweibdeh Amman",
+      "Abdali Mall": "Abdali Mall Al Istithmar Street Amman",
+      "Zenith (The St. Regis Amman)": "The St. Regis Amman Shafiq Al Hayek Street 5th Circle Amman",
+      "St. Regis Bar (The St. Regis Amman)": "The St. Regis Amman Shafiq Al Hayek Street 5th Circle Amman",
+      "Roberto's (The Ritz-Carlton, Amman)": "The Ritz-Carlton Amman Al Kindi Street 5th Circle Amman",
+      "Crystal Lounge (Fairmont Amman)": "Fairmont Amman 6 Beirut Street 5th Circle Amman",
+      "Nasim Rooftop Lounge (Fairmont Amman)": "Fairmont Amman 6 Beirut Street 5th Circle Amman",
+      "Habibah Sweets (Abdoun Village)": "Habibah Sweets Abdoun Corridor Abdoun Village Amman",
+      "The Spice Garden (Sheraton Amman Al Nabil)": "Sheraton Amman Al Nabil Hotel 5th Circle Amman",
+      "Threesixty (Amman Rotana)": "Amman Rotana Al Sawosana Al Sawoda Street Abdali Amman",
+      "Tea Lounge (The St. Regis Amman)": "The St. Regis Amman Shafiq Al Hayek Street 5th Circle Amman",
+      "Iris Tea Lounge (The Ritz-Carlton, Amman)": "The Ritz-Carlton Amman Al Kindi Street 5th Circle Amman",
+      "Nur (Fairmont Amman)": "Fairmont Amman 6 Beirut Street 5th Circle Amman",
+      "Toscana (Sheraton Amman Al Nabil)": "Sheraton Amman Al Nabil Hotel 5th Circle Amman",
+      "Caprice Groovy Room (Fairmont Amman)": "Fairmont Amman 6 Beirut Street 5th Circle Amman",
+      "Bar on Four (Amman Rotana)": "Amman Rotana Al Sawosana Al Sawoda Street Abdali Amman",
+      "Dimitri's Coffee (Sweifieh)": "Dimitri's Coffee Saleh Ali Zaki Street Sweifieh Village Amman",
+      "Dimitri's Coffee (Abdali Boulevard)": "Dimitri's Coffee Abdali Boulevard Entrance 6 Amman"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Amman" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Art spaces, a children's museum, a film venue, sweets, coffee and hotel dining in Amman, checked against their own websites.";
+    cityGuide.highlights = ["Darat al Funun","Jordan National Gallery of Fine Arts","Children's Museum Jordan","Royal Film Commission (Jabal Amman)"];
+    cityGuide.tip = "Plan around closing days: the Children's Museum Jordan is closed on Tuesdays, the Jordan National Gallery of Fine Arts on Fridays and official holidays, Darat al Funun opens Saturday to Thursday and closes in August and on public holidays, and Toscana at the Sheraton Amman Al Nabil is closed on Mondays.";
+    data.destinationFacts[cityKey] = "Plan around closing days: the Children's Museum Jordan is closed on Tuesdays, the Jordan National Gallery of Fine Arts on Fridays and official holidays, Darat al Funun opens Saturday to Thursday and closes in August and on public holidays, and Toscana at the Sheraton Amman Al Nabil is closed on Mondays.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Art spaces, a children's museum, a film venue, sweets, coffee and hotel dining in Amman, checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Tuesday, Friday, Monday",
+        "copy": "The Children's Museum Jordan is closed on Tuesdays, the Jordan National Gallery of Fine Arts on Fridays and official holidays, and Darat al Funun opens Saturday to Thursday and closes in August and on public holidays. Toscana at the Sheraton Amman Al Nabil is closed on Mondays."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book online",
+        "copy": "Children's Museum Jordan tickets are sold through its online portal, at JD 5 per non-resident family member, with children under one free. Zenith at The St. Regis Amman takes reservations online or on +962 6-4000500, and Shams El Balad and Fakhreldin Restaurant take bookings through their websites."
+      },
+      {
+        "label": "Breakfast access",
+        "value": "Guests only at Mercado",
+        "copy": "The Mercado breakfast buffet at The St. Regis Amman is for in-house guests only, while the hotel's Tea Lounge opens daily from 8:00 AM. The Spice Garden at the Sheraton Amman Al Nabil lists breakfast from 6:30 AM every day."
+      },
+      {
+        "label": "Dress and age rules",
+        "value": "Smart casual; children accompanied",
+        "copy": "The St. Regis Bar, Zenith and Tamara at The St. Regis Amman list a smart casual dress code, as do Roberto's and Kenz at The Ritz-Carlton, Amman. At the Children's Museum Jordan, children must be accompanied by a parent or an authorised adult at all times."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Check each venue's closing day before you set out, because Amman's museums and galleries close on different days of the week.",
+      intro: [
+        "You can build a day in Amman around Jabal al Weibdeh's art spaces. Darat al Funun, at 13 Nadeem al Mallah Street, opens Saturday to Thursday from 10am to 7pm and closes in August and on public holidays; its exhibition A Geography For Return opened on Tuesday 17 November 2026. The Jordan National Gallery of Fine Arts in Al-Luwaibdeh opens from 9:00 AM to 5:00 PM every day except Fridays and is closed on official holidays. Its park is open from 8:00 AM to 9:00 PM and its café and restaurant from 9:00 AM to 11:00 PM.",
+        "With children, the Children's Museum Jordan on King Abdullah II Street is closed on Tuesdays. From 1 September to 31 May it opens Sunday to Wednesday from 9:00 a.m. to 5:00 p.m. and Thursday to Saturday from 10:00 a.m. to 6:00 p.m.; from 1 June to 31 August it opens daily from 10:00 a.m. to 7:00 p.m. Tickets are sold online, non-resident family members pay JD 5 each, children under one enter free, and children must stay with a parent or authorised adult. Abdali Mall on Al Istithmar Street opens 10:00 AM to 10:00 PM, and 12:00 PM to 11:30 PM on Fridays.",
+        "For food, Shams El Balad at 69 Mu'ath Bin Jabal Street takes reservations through its website. Fakhreldin Restaurant on Taha Hussein Street in Jabal Amman also takes online bookings, and its website (dated 2025) lists daily hours of 1 pm to 12 am. Habibah Sweets has a Downtown branch on King Hussein Street and opened a branch at Abdoun Village in 2026. Dimitri's Coffee lists branches in Lweibdeh on Al-Baouneyah Street, in Sweifieh Village and at Abdali Boulevard, but does not publish branch opening hours. The Royal Film Commission, off Rainbow Street, runs a programme of film days and screenings.",
+        "Hotel venues publish clearer hours. At The St. Regis Amman, the St. Regis Bar opens daily from 12:00 PM to 1:30 AM and the rooftop Zenith from 6:00 PM to 11:00 PM, both with a smart casual dress code, and you can reserve Zenith online or by phone. The Fairmont Amman lists daily happy hours at Caprice Groovy Room from 5:00 PM to 8:00 PM and at Nasim Rooftop Lounge from 6:00 PM to 8:00 PM, plus afternoon tea at Crystal Lounge from 4:00 PM to 7:00 PM. At the Sheraton Amman Al Nabil, Toscana is closed on Mondays."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Start in Jabal al Weibdeh at Darat al Funun, open Saturday to Thursday from 10am to 7pm, and the Jordan National Gallery of Fine Arts, which is closed on Fridays and official holidays, then book dinner at Fakhreldin Restaurant or Shams El Balad."
+        ],
+        [
+          "A slower morning",
+          "Have breakfast at The Spice Garden in the Sheraton Amman Al Nabil, which opens at 6:30 AM, or coffee at Dimitri's Coffee in Lweibdeh, then pick up sweets at Habibah Sweets on King Hussein Street."
+        ],
+        [
+          "Before booking",
+          "Check closing days: the Children's Museum Jordan is closed on Tuesdays, the Jordan National Gallery of Fine Arts on Fridays and official holidays, Darat al Funun on Fridays, in August and on public holidays, and Toscana on Mondays."
+        ]
+      ],
+      trust: "All 27 distinct recommendations in this guide were checked against their operators' own websites on November 17, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

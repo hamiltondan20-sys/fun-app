@@ -1,0 +1,877 @@
+{
+  "city": "Chengdu, China",
+  "checkedOn": "2026-11-17",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Chengdu Research Base of Giant Panda Breeding",
+      "kind": "park",
+      "url": "https://www.panda.org.cn/en/service/ticket/",
+      "sourceType": "operator's own site",
+      "address": "\"1375 Panda Avenue, Chenghua District, Chengdu City, Sichuan Province, China\" (panda.org.cn/en/)",
+      "operatingEvidence": "Current ticket page requires real-name online reservation up to 14 days ahead (\"The maximum daily visitor capacity is 85,000\"); English homepage carries \"The 2026 Autumn Recruitment of Science Popularization Volunteers ... Is Now Open!\".",
+      "hours": "November to February: morning entry 8:00-12:00, afternoon entry 12:00-16:30, \"Park clearance begins at 17:30\"; March to October: entry 7:30-12:00 and 12:00-17:00, clearance from 18:00. No.6 Giant Panda Villa and Panda Art Museum closed Mondays except national statutory holidays.",
+      "confidence": "high"
+    },
+    {
+      "name": "Chengdu Museum",
+      "kind": "museum",
+      "url": "https://cdmuseum.com/en/zhinan/",
+      "sourceType": "operator's own site",
+      "address": "\"No. 1 Xiaohe Street, Qingyang District (west side of Tianfu Square, Chengdu)\"",
+      "operatingEvidence": "Homepage news dated November 2026 (e.g. 13 Nov \"博博会，成博来啦！\"; 17 Nov procurement notice); online \"立即预约\" reservation link.",
+      "hours": "Tue-Thu and Sun 9:00-17:00 (last entry 16:30); Fri-Sat (Weekend Children's Museum) 9:00-20:30 (last entry 20:00); \"Closed on Mondays (except on public holidays)\".",
+      "confidence": "high"
+    },
+    {
+      "name": "Wuhou Shrine Museum",
+      "kind": "museum",
+      "url": "https://www.wuhouci.net.cn/",
+      "sourceType": "operator's own site",
+      "address": "\"中国.成都市武侯祠大街231号\" (231 Wuhouci Street)",
+      "operatingEvidence": "Announcements dated 2026-11-12 to 2026-11-17 (e.g. Jinli street maintenance tenders); bulletin 2026.42 on the \"2026成都武侯祠国庆主题活动\"; online booking section.",
+      "hours": "09:00-18:00, ticket sales stop 17:00; page notes summer extended hours and free-event hours may change. No weekly closing day stated.",
+      "confidence": "high"
+    },
+    {
+      "name": "Taikoo Li Chengdu",
+      "kind": "landmark",
+      "url": "https://www.taikooli-chengdu.com/en/AboutUs/ProjectSummary",
+      "sourceType": "operator's own site (Swire Properties)",
+      "address": "\"Adjacent to the ancient Daci Temple and Chunxi Road commercial area\"; parking entrance \"Dacisi Road, East Kangshi Street\"; metro \"Chunxing Road Metro Station line 2 and 3\" (Getting Here page)",
+      "operatingEvidence": "Homepage lists the \"2026 Autumn Campaign 「Becoming The River」\" (2026.09) and the 11th Anniversary Campaign (2026.04).",
+      "hours": "not published as a single mall-wide time; individual store pages list their own hours",
+      "confidence": "high"
+    },
+    {
+      "name": "Jing (Upper House Chengdu)",
+      "kind": "bar",
+      "url": "https://www.upperhouse.com/chengdu/restaurants-and-bars/jing",
+      "sourceType": "operator's own site (Upper House Chengdu, formerly The Temple House)",
+      "address": "\"No. 81 Bitieshi Street, Jinjiang District, Chengdu, China 610021\"",
+      "operatingEvidence": "Current venue page: \"Retro-glam cocktail hideaway\" with a \"Book A Table\" link (jing_cd@upperhouse.com) and terrace overlooking Taikoo Li.",
+      "hours": "Daily 5pm-1am",
+      "confidence": "high"
+    },
+    {
+      "name": "Mi Xun Teahouse (Upper House Chengdu)",
+      "kind": "meal",
+      "url": "https://www.upperhouse.com/chengdu/restaurants-and-bars/mi-xun-teahouse",
+      "sourceType": "operator's own site",
+      "address": "\"No. 81 Bitieshi Street, Jinjiang District, Chengdu, China 610021\"; also unit TTH02, L1 East in the Taikoo Li Chengdu directory",
+      "operatingEvidence": "Current page: \"Mi Xun Teahouse is the MICHELIN-starred restaurant inside Upper House Chengdu\", with daily service times and a \"Book A Table\" email link.",
+      "hours": "Daily lunch 12:00-14:00; afternoon tea 14:00-17:30; dinner 17:30-22:00",
+      "confidence": "high"
+    },
+    {
+      "name": "The Temple Café (Upper House Chengdu)",
+      "kind": "cafe",
+      "url": "https://www.upperhouse.com/chengdu/restaurants-and-bars/the-temple-cafe",
+      "sourceType": "operator's own site",
+      "address": "\"No. 81 Bitieshi Street, Jinjiang District, Chengdu, China 610021\"",
+      "operatingEvidence": "Current page: \"All-day bistro serving international breakfast, lunch, afternoon tea and dinner items\", with house-made pastries and coffee at a grab-and-go counter.",
+      "hours": "Breakfast daily 7:00-11:00; lunch daily 12:00-14:30; afternoon tea 14:30-17:30 (dinner hours not listed)",
+      "confidence": "high"
+    },
+    {
+      "name": "Tivano (Upper House Chengdu)",
+      "kind": "meal",
+      "url": "https://www.upperhouse.com/chengdu/restaurants-and-bars/tivano",
+      "sourceType": "operator's own site",
+      "address": "\"B1F, No. 81 Bitieshi Street, Jinjiang District, Chengdu, China 610021\"",
+      "operatingEvidence": "Current page: \"Tivano is the Italian restaurant at Upper House Chengdu\", with garden terrace seating and a \"Book A Table\" email link.",
+      "hours": "Lunch daily 11:30-14:30; dinner daily 17:30-22:00",
+      "confidence": "high"
+    },
+    {
+      "name": "The Bar (Niccolo Chengdu)",
+      "kind": "bar",
+      "url": "https://niccolohotels.com/en/niccolo-chengdu/dining/the-bar",
+      "sourceType": "operator's own site",
+      "address": "\"Tower 3, Chengdu IFS, No.1 Section 3, Hongxing Road, Jinjiang District, Chengdu, Sichuan 610021, China\"; 3rd floor",
+      "operatingEvidence": "Current page describes \"Timeless cocktails\" on the 3rd floor with posted daily hours and a resident live band schedule.",
+      "hours": "Daily 5pm-1am; live band Tuesday-Sunday 8pm-12am",
+      "confidence": "medium"
+    },
+    {
+      "name": "Yue Hin (Niccolo Chengdu)",
+      "kind": "meal",
+      "url": "https://niccolohotels.com/en/niccolo-chengdu/dining/yue-hin",
+      "sourceType": "operator's own site",
+      "address": "\"Tower 3, Chengdu IFS, No.1 Section 3, Hongxing Road, Jinjiang District, Chengdu, Sichuan 610021, China\"",
+      "operatingEvidence": "Current page: \"Yue Hin specialises in traditional Cantonese and classic Sichuan cuisines\", with posted lunch and dinner hours and private rooms on Level 2.",
+      "hours": "Lunch 11:30-14:30; dinner 17:30-21:30",
+      "confidence": "medium"
+    },
+    {
+      "name": "Niccolo Kitchen (Niccolo Chengdu)",
+      "kind": "meal",
+      "url": "https://niccolohotels.com/en/niccolo-chengdu/dining/niccolo-kitchen",
+      "sourceType": "operator's own site",
+      "address": "\"Tower 3, Chengdu IFS, No.1 Section 3, Hongxing Road, Jinjiang District, Chengdu, Sichuan 610021, China\"",
+      "operatingEvidence": "Current page: Tuscan-inspired menu \"Available daily for lunch and dinner\", with breakfast, lunch and dinner hours posted.",
+      "hours": "Breakfast 6:30-10:30; lunch 11:30-14:30; dinner 17:30-22:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Tea Lounge (Niccolo Chengdu)",
+      "kind": "cafe",
+      "url": "https://niccolohotels.com/en/niccolo-chengdu/dining/the-tea-lounge",
+      "sourceType": "operator's own site",
+      "address": "\"Tower 3, Chengdu IFS, No.1 Section 3, Hongxing Road, Jinjiang District, Chengdu, Sichuan 610021, China\"; \"an elegant glass structure at the hotel's main entrance\"",
+      "operatingEvidence": "Current page links a menu file named \"The_Tea_Lounge_Menu_2026.pdf\" and lists a resident tea sommelier.",
+      "hours": "Breakfast 6:30-10:30; lunch 11:30-14:30; afternoon tea 13:00-18:00; dinner 18:00-23:00",
+      "confidence": "high"
+    },
+    {
+      "name": "%Arabica (Taikoo Li Chengdu)",
+      "kind": "cafe",
+      "url": "https://www.taikooli-chengdu.com/en/cdtkl/dining/arabica/",
+      "sourceType": "Taikoo Li Chengdu operator's directory (Swire Properties)",
+      "address": "\"1115\", L1 West, Taikoo Li Chengdu",
+      "operatingEvidence": "Listed in the current Taikoo Li dining directory (site carries 2026 campaigns) with phone and business hours; %Arabica also named on the Taikoo Li homepage.",
+      "hours": "10:00-22:00 (per Taikoo Li directory)",
+      "confidence": "medium"
+    },
+    {
+      "name": "OURBakery (Taikoo Li Chengdu)",
+      "kind": "bakery",
+      "url": "https://www.taikooli-chengdu.com/en/cdtkl/dining/our-bakery/",
+      "sourceType": "Taikoo Li Chengdu operator's directory (Swire Properties)",
+      "address": "\"Location: 1345\", L1 East, Taikoo Li Chengdu",
+      "operatingEvidence": "Listed under Coffee/Tea/Bakery in the current Taikoo Li dining directory with \"Business hours: 10:00-22:00\".",
+      "hours": "10:00-22:00 (per Taikoo Li directory)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Starbucks Reserve Bar Mixato (Taikoo Li Chengdu)",
+      "kind": "cafe",
+      "url": "https://www.taikooli-chengdu.com/en/cdtkl/dining/star-bucks1/",
+      "sourceType": "Taikoo Li Chengdu operator's directory (Swire Properties)",
+      "address": "Units 1215/2234, L1 and L2 Central, Taikoo Li Chengdu",
+      "operatingEvidence": "Directory page describes \"the first flagship store set up in Southwest and Central China by Starbucks\", a three-storey building, with phone 028 86006781.",
+      "hours": "10:00-22:00 (per Taikoo Li directory)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Shi Heng Fan Dian (Taikoo Li Chengdu)",
+      "kind": "meal",
+      "url": "https://www.taikooli-chengdu.com/en/cdtkl/dining/shiheng/",
+      "sourceType": "Taikoo Li Chengdu operator's directory (Swire Properties)",
+      "address": "\"Location: M052c+M052d\", Level M, Taikoo Li Chengdu",
+      "operatingEvidence": "Listed under Chinese Cuisine in the current Taikoo Li dining directory with \"Business hours: 11:30-22:00\".",
+      "hours": "11:30-22:00 (per Taikoo Li directory)",
+      "confidence": "medium"
+    },
+    {
+      "name": "blue frog (Taikoo Li Chengdu)",
+      "kind": "meal",
+      "url": "https://www.taikooli-chengdu.com/en/cdtkl/dining/blue-frog/",
+      "sourceType": "Taikoo Li Chengdu operator's directory (Swire Properties)",
+      "address": "Units \"1307/2308\", L1 and L2 East, Taikoo Li Chengdu",
+      "operatingEvidence": "Directory page: Western classics \"from brunch through dinner\", phone 028-81473258, with late business hours.",
+      "hours": "Sunday-Thursday 10:00-01:00; Friday-Saturday 10:00-02:00 (per Taikoo Li directory)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Jade Garden (Taikoo Li Chengdu)",
+      "kind": "meal",
+      "url": "https://www.taikooli-chengdu.com/en/cdtkl/dining/jade-garden/",
+      "sourceType": "Taikoo Li Chengdu operator's directory (Swire Properties)",
+      "address": "Units \"2338/1344\", L1 and L2 East, Taikoo Li Chengdu",
+      "operatingEvidence": "Directory page: Hong Kong Mei-Xin's \"Chinese cuisines, western service\" concept, with business hours listed.",
+      "hours": "10:00-22:00 (per Taikoo Li directory)",
+      "confidence": "medium"
+    },
+    {
+      "name": "CreaTea (Taikoo Li Chengdu)",
+      "kind": "cafe",
+      "url": "https://www.taikooli-chengdu.com/en/cdtkl/dining/shouyi/",
+      "sourceType": "Taikoo Li Chengdu operator's directory (Swire Properties)",
+      "address": "Unit \"2107\", L2 West, Taikoo Li Chengdu",
+      "operatingEvidence": "Directory page: \"CreaTea 'Craftsmanship' helps create the new oriental tea house\", with handmade tea sets and business hours.",
+      "hours": "10:00-22:00 (per Taikoo Li directory)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Café & Meal MUJI (Taikoo Li Chengdu)",
+      "kind": "cafe",
+      "url": "https://www.taikooli-chengdu.com/en/cdtkl/dining/cafe--meal-muji/",
+      "sourceType": "Taikoo Li Chengdu operator's directory (Swire Properties)",
+      "address": "Unit \"1308\", L1 East, Taikoo Li Chengdu",
+      "operatingEvidence": "Listed under Coffee/Tea/Bakery in the current directory with phone 028-86765437 and business hours.",
+      "hours": "10:00-21:30 (per Taikoo Li directory)",
+      "confidence": "medium"
+    },
+    {
+      "name": "SONG (Taikoo Li Chengdu)",
+      "kind": "meal",
+      "url": "https://www.taikooli-chengdu.com/en/cdtkl/dining/song/",
+      "sourceType": "Taikoo Li Chengdu operator's directory (Swire Properties)",
+      "address": "Units \"1301+2332\", Taikoo Li Chengdu",
+      "operatingEvidence": "Listed under Chinese Cuisine in the current directory with business hours 11:00-22:00; no description published.",
+      "hours": "11:00-22:00 (per Taikoo Li directory)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Tasty Congee & Noodle Wantun Shop (Taikoo Li Chengdu)",
+      "kind": "meal",
+      "url": "https://www.taikooli-chengdu.com/en/cdtkl/dining/tasty/",
+      "sourceType": "Taikoo Li Chengdu operator's directory (Swire Properties)",
+      "address": "Unit \"2249\", L2 Central, Taikoo Li Chengdu",
+      "operatingEvidence": "Listed under Chinese Cuisine in the current directory with phone 028-62507209 and weekday/weekend hours.",
+      "hours": "Monday-Thursday 12:00-22:00; Friday-Sunday 11:00-22:00 (per Taikoo Li directory)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Wang De Chuan Tea Company (Taikoo Li Chengdu)",
+      "kind": "cafe",
+      "url": "https://www.taikooli-chengdu.com/en/cdtkl/dining/wang-de-chuan-tea-company/",
+      "sourceType": "Taikoo Li Chengdu operator's directory (Swire Properties)",
+      "address": "Unit \"1245c\", L1 Central, Taikoo Li Chengdu",
+      "operatingEvidence": "Directory page: the Chengdu store \"not only sells tea, but also shares tea culture\"; also named on the Taikoo Li homepage.",
+      "hours": "10:00-22:00 (per Taikoo Li directory)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Blondel (Taikoo Li Chengdu)",
+      "kind": "bakery",
+      "url": "https://www.taikooli-chengdu.com/en/cdtkl/dining/blondel/",
+      "sourceType": "Taikoo Li Chengdu operator's directory (Swire Properties)",
+      "address": "Unit \"1317\", L1 East, Taikoo Li Chengdu",
+      "operatingEvidence": "Listed under Desserts/Beverages/Deli in the current directory with phone 028-86586596 and business hours; no description published.",
+      "hours": "10:00-22:00 (per Taikoo Li directory)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Momicafe (Taikoo Li Chengdu)",
+      "kind": "cafe",
+      "url": "https://www.taikooli-chengdu.com/en/cdtkl/dining/momicafe/",
+      "sourceType": "Taikoo Li Chengdu operator's directory (Swire Properties)",
+      "address": "\"M020\", Level M, Taikoo Li Chengdu",
+      "operatingEvidence": "Directory page: \"We are not only a bookstore, but also a postcard theme shop\", listed under Coffee/Tea/Bakery with business hours.",
+      "hours": "10:00-22:00 (per Taikoo Li directory)",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Jinsha Site Museum",
+      "reason": "Official site states the museum is closed: \"2025年12月5日至2027年4月30日期间闭馆\".",
+      "url": "https://www.jinshasitemuseum.com/"
+    },
+    {
+      "name": "Sichuan Museum",
+      "reason": "Official site (Chinese and /en/) returned only the page title \"四川博物院\"; no address, hours or notices readable.",
+      "url": "https://www.scmuseum.cn/"
+    },
+    {
+      "name": "Du Fu Thatched Cottage Museum",
+      "reason": "Fetch failed: connection refused (ECONNREFUSED) on the official site.",
+      "url": "https://www.cddfct.com/"
+    },
+    {
+      "name": "People's Park tea houses (Heming Teahouse)",
+      "reason": "No official site for the park or teahouse found; only news and third-party pages.",
+      "url": ""
+    },
+    {
+      "name": "Kuanzhai Alley",
+      "reason": "No official website found; only news and third-party pages.",
+      "url": ""
+    },
+    {
+      "name": "Wenshu Monastery",
+      "reason": "No official website found; only third-party listings with conflicting addresses and hours.",
+      "url": ""
+    },
+    {
+      "name": "Daci Temple",
+      "reason": "Only an http address suggested by a third-party guide; no https official page found to read.",
+      "url": ""
+    },
+    {
+      "name": "Chengdu IFS",
+      "reason": "Official site fetch failed (socket hang up); chengduifs.com does not resolve.",
+      "url": "https://www.cdifs.cn/en/front-page"
+    },
+    {
+      "name": "Sichuan Science and Technology Museum",
+      "reason": "No official website found; only third-party listings.",
+      "url": ""
+    },
+    {
+      "name": "Chengdu Natural History Museum",
+      "reason": "No official website found; only news and third-party listings.",
+      "url": ""
+    },
+    {
+      "name": "Chengdu Zoo",
+      "reason": "No official website found; only third-party listings.",
+      "url": ""
+    },
+    {
+      "name": "Chengdu Art Museum (Tianfu Art Park)",
+      "reason": "No official website found; only news and third-party listings.",
+      "url": ""
+    },
+    {
+      "name": "Shufeng Yayun Sichuan Opera (Culture Park)",
+      "reason": "No official website found; only travel-agency pages.",
+      "url": ""
+    },
+    {
+      "name": "%Arabica brand locations page",
+      "reason": "Brand site refused automated reading (HTTP 418); the Taikoo Li branch was confirmed via the mall directory instead.",
+      "url": "https://arabica.com/en/locations/"
+    },
+    {
+      "name": "Shangri-La Chengdu restaurants",
+      "reason": "Official site refused automated reading (HTTP 403).",
+      "url": "https://www.shangri-la.com/chengdu/shangrila/dining/"
+    },
+    {
+      "name": "The Ritz-Carlton Chengdu restaurants",
+      "reason": "Official dining URL returned HTTP 404.",
+      "url": "https://www.ritzcarlton.com/en/hotels/ctuxr-the-ritz-carlton-chengdu/dining/"
+    },
+    {
+      "name": "LIQUID GOLD (Taikoo Li Chengdu)",
+      "reason": "Directory listing has no description and a malformed hours line (\"10:0-22:00\"); not needed to fill a category.",
+      "url": "https://www.taikooli-chengdu.com/en/cdtkl/dining/liquid-gold/"
+    },
+    {
+      "name": "Panda morning",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Tea-house afternoon",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local food crawl",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sichuan hot pot",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Dan dan noodles",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Tea-house snacks",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near People's Park",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Kuanzhai Alley",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Chunxi Road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Chunxi Road walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near People's Park",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Kuanzhai Alley",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Kuanzhai Alley",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Chengdu Research Base",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Chunxi Road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Panda morning",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in People's Park",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near People's Park tea houses",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Chunxi Road evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in People's Park",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Kuanzhai Alley",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Chunxi Road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Chengdu Research Base",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around People's Park",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Kuanzhai Alley",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Chunxi Road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Chengdu Research Base",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Chunxi Road cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Tea-house afternoon",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Kuanzhai Alley",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Kuanzhai Alley",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Chunxi Road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Chunxi Road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "People's Park bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Chengdu Research Base",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Kuanzhai Alley",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Chunxi Road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near People's Park tea houses",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Kuanzhai Alley",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Chunxi Road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in People's Park",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Kuanzhai Alley",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Chunxi Road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Chunxi Road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around People's Park",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Kuanzhai Alley",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Chunxi Road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "People's Park morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Chengdu Research Base",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Kuanzhai Alley",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Chunxi Road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in People's Park",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Kuanzhai Alley",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Chengdu Research Base of Giant Panda Breeding",
+        "Chengdu Museum",
+        "Wuhou Shrine Museum",
+        "Taikoo Li Chengdu"
+      ],
+      "bestFirstTimers": [
+        "Chengdu Research Base of Giant Panda Breeding",
+        "Wuhou Shrine Museum",
+        "Chengdu Museum",
+        "Mi Xun Teahouse (Upper House Chengdu)"
+      ],
+      "bestRestaurants": [
+        "Mi Xun Teahouse (Upper House Chengdu)",
+        "Yue Hin (Niccolo Chengdu)",
+        "Jade Garden (Taikoo Li Chengdu)",
+        "Tivano (Upper House Chengdu)"
+      ],
+      "bestBudget": [
+        "Tasty Congee & Noodle Wantun Shop (Taikoo Li Chengdu)",
+        "Café & Meal MUJI (Taikoo Li Chengdu)",
+        "Momicafe (Taikoo Li Chengdu)"
+      ],
+      "bestLuxury": [
+        "Mi Xun Teahouse (Upper House Chengdu)",
+        "Tivano (Upper House Chengdu)",
+        "Yue Hin (Niccolo Chengdu)",
+        "The Tea Lounge (Niccolo Chengdu)"
+      ],
+      "bestCouples": [
+        "Jing (Upper House Chengdu)",
+        "Tivano (Upper House Chengdu)",
+        "The Bar (Niccolo Chengdu)",
+        "Mi Xun Teahouse (Upper House Chengdu)"
+      ],
+      "bestKids": [
+        "Chengdu Research Base of Giant Panda Breeding",
+        "Chengdu Museum",
+        "blue frog (Taikoo Li Chengdu)"
+      ],
+      "bestSolo": [
+        "Chengdu Museum",
+        "CreaTea (Taikoo Li Chengdu)",
+        "Momicafe (Taikoo Li Chengdu)",
+        "Wang De Chuan Tea Company (Taikoo Li Chengdu)"
+      ],
+      "bestUnique": [
+        "Mi Xun Teahouse (Upper House Chengdu)",
+        "CreaTea (Taikoo Li Chengdu)",
+        "Wang De Chuan Tea Company (Taikoo Li Chengdu)",
+        "Momicafe (Taikoo Li Chengdu)"
+      ],
+      "bestBreakfast": [
+        "The Temple Café (Upper House Chengdu)",
+        "Niccolo Kitchen (Niccolo Chengdu)",
+        "The Tea Lounge (Niccolo Chengdu)"
+      ],
+      "bestLunch": [
+        "Tasty Congee & Noodle Wantun Shop (Taikoo Li Chengdu)",
+        "Shi Heng Fan Dian (Taikoo Li Chengdu)",
+        "SONG (Taikoo Li Chengdu)",
+        "Yue Hin (Niccolo Chengdu)"
+      ],
+      "bestDinner": [
+        "Yue Hin (Niccolo Chengdu)",
+        "Tivano (Upper House Chengdu)",
+        "Jade Garden (Taikoo Li Chengdu)",
+        "Niccolo Kitchen (Niccolo Chengdu)"
+      ],
+      "bestCocktails": [
+        "Jing (Upper House Chengdu)",
+        "The Bar (Niccolo Chengdu)"
+      ],
+      "bestBakeries": [
+        "OURBakery (Taikoo Li Chengdu)",
+        "The Temple Café (Upper House Chengdu)",
+        "Blondel (Taikoo Li Chengdu)"
+      ],
+      "bestCoffee": [
+        "%Arabica (Taikoo Li Chengdu)",
+        "Starbucks Reserve Bar Mixato (Taikoo Li Chengdu)",
+        "Café & Meal MUJI (Taikoo Li Chengdu)",
+        "The Temple Café (Upper House Chengdu)"
+      ]
+    },
+    "queries": {
+      "Chengdu Research Base of Giant Panda Breeding": "Chengdu Research Base of Giant Panda Breeding 1375 Panda Avenue Chenghua District Chengdu",
+      "Chengdu Museum": "Chengdu Museum 1 Xiaohe Street Qingyang District Chengdu",
+      "Wuhou Shrine Museum": "Wuhou Shrine Museum 231 Wuhouci Street Chengdu",
+      "Taikoo Li Chengdu": "Taikoo Li Chengdu Dacisi Road Jinjiang District Chengdu",
+      "Jing (Upper House Chengdu)": "Jing Upper House 81 Bitieshi Street Chengdu",
+      "Mi Xun Teahouse (Upper House Chengdu)": "Mi Xun Teahouse Upper House 81 Bitieshi Street Chengdu",
+      "The Temple Café (Upper House Chengdu)": "The Temple Cafe Upper House 81 Bitieshi Street Chengdu",
+      "Tivano (Upper House Chengdu)": "Tivano Upper House 81 Bitieshi Street Chengdu",
+      "The Bar (Niccolo Chengdu)": "The Bar Niccolo Chengdu IFS Tower 3 Hongxing Road Chengdu",
+      "Yue Hin (Niccolo Chengdu)": "Yue Hin Niccolo Chengdu IFS Tower 3 Hongxing Road Chengdu",
+      "Niccolo Kitchen (Niccolo Chengdu)": "Niccolo Kitchen Niccolo Chengdu IFS Tower 3 Hongxing Road Chengdu",
+      "The Tea Lounge (Niccolo Chengdu)": "The Tea Lounge Niccolo Chengdu IFS Tower 3 Hongxing Road Chengdu",
+      "%Arabica (Taikoo Li Chengdu)": "%Arabica Taikoo Li Dacisi Road Chengdu",
+      "OURBakery (Taikoo Li Chengdu)": "OURBakery Taikoo Li Dacisi Road Chengdu",
+      "Starbucks Reserve Bar Mixato (Taikoo Li Chengdu)": "Starbucks Reserve Bar Mixato Taikoo Li Dacisi Road Chengdu",
+      "Shi Heng Fan Dian (Taikoo Li Chengdu)": "Shi Heng Fan Dian Taikoo Li Dacisi Road Chengdu",
+      "blue frog (Taikoo Li Chengdu)": "blue frog Taikoo Li Dacisi Road Chengdu",
+      "Jade Garden (Taikoo Li Chengdu)": "Jade Garden Taikoo Li Dacisi Road Chengdu",
+      "CreaTea (Taikoo Li Chengdu)": "CreaTea Taikoo Li Dacisi Road Chengdu",
+      "Café & Meal MUJI (Taikoo Li Chengdu)": "Cafe & Meal MUJI Taikoo Li Dacisi Road Chengdu",
+      "SONG (Taikoo Li Chengdu)": "SONG Taikoo Li Dacisi Road Chengdu",
+      "Tasty Congee & Noodle Wantun Shop (Taikoo Li Chengdu)": "Tasty Congee & Noodle Wantun Shop Taikoo Li Dacisi Road Chengdu",
+      "Wang De Chuan Tea Company (Taikoo Li Chengdu)": "Wang De Chuan Tea Company Taikoo Li Dacisi Road Chengdu",
+      "Blondel (Taikoo Li Chengdu)": "Blondel Taikoo Li Dacisi Road Chengdu",
+      "Momicafe (Taikoo Li Chengdu)": "Momicafe Taikoo Li Dacisi Road Chengdu"
+    },
+    "summary": "Pandas, city museums and the Wuhou Shrine, with Taikoo Li cafés and tea houses, hotel restaurants and cocktail bars checked against their own websites.",
+    "highlights": [
+      "Chengdu Research Base of Giant Panda Breeding",
+      "Chengdu Museum",
+      "Wuhou Shrine Museum",
+      "Taikoo Li Chengdu"
+    ],
+    "tip": "Reserve the Panda Base online with real-name ID up to 14 days ahead, and plan around Mondays: the Chengdu Museum, plus Giant Panda Villa No. 6 and the Panda Art Museum at the Panda Base, close on Mondays except public holidays.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mondays",
+        "copy": "The Chengdu Museum, plus Giant Panda Villa No. 6 and the Panda Art Museum at the Panda Base, close on Mondays except public holidays. Wuhou Shrine Museum's homepage gives no weekly closing day."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Real-name, up to 14 days ahead",
+        "copy": "Panda Base tickets are reserved online, valid only on the chosen date, and checked against the original ID you booked with; an adult ticket is CNY 55. Wuhou Shrine Museum charges ¥50 and says it has never authorised anyone to sell its tickets online."
+      },
+      {
+        "label": "Queues and timing",
+        "value": "Avoid the peaks",
+        "copy": "The Chengdu Museum limits visitors to 20,000 a day and asks you to avoid 10:00–12:00 and 14:00–16:00. At the Panda Base, afternoon ticket holders are asked not to arrive early."
+      },
+      {
+        "label": "Rules",
+        "value": "No drones or pets",
+        "copy": "The Panda Base bans drones, pets, scooters, bicycles and camera flashes. The Chengdu Museum bars pets, smelly or sticky food and coloured liquids."
+      }
+    ],
+    "dek": "Book the Panda Base before anything else, keep museums off your Monday plans, and anchor meals around Taikoo Li and Niccolo Chengdu at IFS.",
+    "intro": [
+      "Start at the Chengdu Research Base of Giant Panda Breeding, at 1375 Panda Avenue in Chenghua District. Entry needs a real-name online reservation, made up to 14 days ahead, and you must show the original ID you booked with; an adult ticket is CNY 55, while visitors aged 60 and over and children aged 6 and under (or under 1.3 m) are exempt from reservation. From November to February, morning entry runs 8:00 to 12:00 and afternoon entry 12:00 to 16:30, with clearance from 17:30; from March to October entry opens at 7:30. Drones, pets and camera flashes are not allowed.",
+      "In the centre, the Chengdu Museum stands at No. 1 Xiaohe Street on the west side of Tianfu Square. It is closed on Mondays except public holidays, opens 9:00 to 17:00 from Tuesday to Thursday and on Sunday, and stays open until 20:30 on Friday and Saturday for its Weekend Children's Museum. The museum limits visits to 20,000 people a day and asks you to avoid the 10:00–12:00 and 14:00–16:00 peaks. Its permanent galleries include Chinese shadow puppetry and puppet exhibitions on the fifth floor.",
+      "Wuhou Shrine Museum, at 231 Wuhouci Street, lists hours of 09:00 to 18:00 with ticket sales ending at 17:00, and notes that summer extended hours and free cultural events can change them. A full ticket is ¥50 and a half-price ticket ¥25. The museum states that it has never authorised any organisation or individual to sell its tickets or guided-tour tickets online, so book through its own channels. Its 2026 bulletins cover Mid-Autumn and National Day themed events, and its current notices concern upkeep in the Jinli cultural street it manages.",
+      "For eating and drinking, Taikoo Li Chengdu, beside the ancient Daci Temple and the Chunxi Road shopping area, lists cafés, tea houses and restaurants in its directory, from %Arabica and Starbucks Reserve Bar Mixato to Jade Garden and Tasty Congee & Noodle Wantun Shop. Upper House Chengdu, at No. 81 Bitieshi Street, runs the Michelin-starred vegetarian Mi Xun Teahouse, The Temple Café with breakfast from 7am, Tivano, and the speakeasy Jing, open daily 5pm to 1am. At Niccolo Chengdu in Chengdu IFS Tower 3, The Bar on the 3rd floor has a live band from Tuesday to Sunday."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Reserve the Panda Base with real-name ID and pair it with the Chengdu Museum on Tianfu Square, remembering that the museum, plus Giant Panda Villa No. 6 and the Panda Art Museum at the Panda Base, close on Mondays except public holidays."
+      ],
+      [
+        "A slower morning",
+        "Start with breakfast at The Temple Café from 7am or Niccolo Kitchen from 6:30am, then take tea at CreaTea or coffee at %Arabica in Taikoo Li."
+      ],
+      [
+        "Before booking",
+        "Reserve the Panda Base up to 14 days ahead with the ID you will carry, request Mi Xun Teahouse, Tivano and Jing tables through Upper House Chengdu's booking emails, and buy Wuhou Shrine tickets only through the museum's own channels."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Taikoo Li shops and restaurants were confirmed only through the mall operator's online directory, whose store pages give unit numbers and hours but little or no description and carry no dates of their own, so their hours are attributed to that directory; Niccolo Chengdu's dining pages show posted hours but no dated 2026 content except The Tea Lounge's 2026 menu. Upper House Chengdu (formerly The Temple House) books its restaurants by email. Wuhou Shrine Museum publishes no weekly closing day. The Sichuan Museum site returned only its title, the Du Fu Thatched Cottage site refused connection, the Chengdu IFS site timed out, and Shangri-La Chengdu blocked automated reading (HTTP 403). People's Park, Kuanzhai Alley, Wenshu Monastery and several other sights have no official website we could find. The Jinsha Site Museum is closed until 30 April 2027 according to its own site.",
+  "injectionLikeText": []
+}

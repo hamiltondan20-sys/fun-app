@@ -1,0 +1,683 @@
+{
+  "city": "Amman, Jordan",
+  "checkedOn": "2026-11-17",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Darat al Funun",
+      "kind": "museum",
+      "url": "https://daratalfunun.org/?page_id=39",
+      "sourceType": "operator's own site (Darat al Funun - The Khalid Shoman Foundation)",
+      "address": "Main entrance: 13 Nadeem al Mallah St., Jabal al Weibdeh, Amman; Upper entrance: 9 Moh'd Ali al Saadi St. (https://daratalfunun.org/?page_id=11)",
+      "operatingEvidence": "Current Program page lists \"A Geography For Return\" (Exhibition) \"Opening: Tuesday 17 November 2026\" and \"Works from The Khalid Shoman Collection\" \"30 June - 30 November 2026\".",
+      "hours": "\"Saturday-Thursday 10 am- 7 pm\"; closed in August and on public holidays; closes at 3pm during Ramadan (visit page)",
+      "confidence": "high"
+    },
+    {
+      "name": "Jordan National Gallery of Fine Arts",
+      "kind": "museum",
+      "url": "https://nationalgallery.org/",
+      "sourceType": "operator's own site (Royal Society of Fine Arts)",
+      "address": "\"Husi Fareez Street, Al-Luwaibdeh, Amman 11191, Jordan\"",
+      "operatingEvidence": "\"Happening Now\" lists \"ABSENTED\" 11 Nov 2026 to 25 Nov 2026 and \"Antarctica: Continent of Peace\" 2 Nov 2026 to 23 Nov 2026.",
+      "hours": "9:00 AM to 5:00 PM all days except Fridays; \"Closed on Official Holidays\"; Ramadan 9:00 AM to 2:00 PM; park 8:00 AM to 9:00 PM; café and restaurant 9:00 AM to 11:00 PM",
+      "confidence": "high"
+    },
+    {
+      "name": "Children's Museum Jordan",
+      "kind": "museum",
+      "url": "https://www.cmj.jo/visit/",
+      "sourceType": "operator's own site",
+      "address": "\"King Abdullah II St C208, Amman, Jordan\" (https://www.cmj.jo/)",
+      "operatingEvidence": "Homepage \"© 2026 CMJ\" with current highlights (\"World Children Month\", \"New Outdoor Play Area\"); online ticket sales via \"Buy Tickets\" (cmjportal.com).",
+      "hours": "1 September to 31 May: Sunday-Wednesday 9:00 a.m.-5:00 p.m., Thursday-Saturday 10:00 a.m.-6:00 p.m.; 1 June to 31 August: daily 10:00 a.m.-7:00 p.m.; Ramadan daily 9:30 a.m.-3:30 p.m.; \"The Museum is closed on Tuesdays.\" Hours \"subject to change without prior notice\".",
+      "confidence": "high"
+    },
+    {
+      "name": "Royal Film Commission (Jabal Amman)",
+      "kind": "landmark",
+      "url": "https://www.film.jo/",
+      "sourceType": "official public body (Royal Film Commission - Jordan)",
+      "address": "\"1st Circle, Jabal Amman, 7 Omar Bin Al Khattab Street (off Rainbow Street)\"",
+      "operatingEvidence": "2026 screening programme including \"Korean Film Days (20th Edition)\" 10-11 Nov and \"Hungarian Film Days\" 22-23 Nov; screenings listed at Rainbow Cinema and Taj Cinema.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Abdali Mall",
+      "kind": "market",
+      "url": "https://www.abdalimall.com/",
+      "sourceType": "operator's own site",
+      "address": "\"Abdali Mall, Fourth Floor Al Istithmar Street Amman, Jordan\" (https://www.abdalimall.com/contact-us)",
+      "operatingEvidence": "Events list includes \"Shop & Win 2026\" (Mar 15 - Jun 01, 2026) and \"Les Createurs Libanais Exhibition\" (Jun 15 - Jun 18, 2026); dining directory lists cafés and dessert outlets.",
+      "hours": "\"SUNDAY - SATURDAY 10:00 AM - 10:00 PM\"; \"FRIDAY 12:00PM - 11:30PM\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Habibah Sweets (Downtown, King Hussein St.)",
+      "kind": "bakery",
+      "url": "https://www.habibahsweets.com/",
+      "sourceType": "operator's own site",
+      "address": "Branch listed as \"Downtown - King Hussein St.\"",
+      "operatingEvidence": "Branch list current; site states that in 2026 Habibah opened its Abdoun branch, \"Corridor Abdoun – Abdoun Village\".",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Habibah Sweets (Abdoun Village)",
+      "kind": "bakery",
+      "url": "https://www.habibahsweets.com/",
+      "sourceType": "operator's own site",
+      "address": "Branch listed as \"Abdoun Corridor - Abdoun Village\"",
+      "operatingEvidence": "Site says the branch \"Corridor Abdoun – Abdoun Village\" opened in 2026.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Shams El Balad",
+      "kind": "meal",
+      "url": "https://shamselbalad.com/",
+      "sourceType": "operator's own site",
+      "address": "\"69 Mu'ath Bin Jabal Street, Amman, Jordan 11181\"",
+      "operatingEvidence": "\"Book Now\"/\"Reserve\" links to a live booking widget; footer \"Copyright © 2026 Shams El Balad\".",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Fakhreldin Restaurant (Jabal Amman)",
+      "kind": "meal",
+      "url": "https://www.fakhreldin.com/",
+      "sourceType": "operator's own site (ATICO Fakhreldin Group)",
+      "address": "Taha Hussein St., \"Amman – Jabal Amman – 1st Circle\"",
+      "operatingEvidence": "\"Reserve Now\" booking widget and reservation phone numbers; also listed on operator group page https://atico-jo.com/fakhreldin-restaurant/. Site footer is \"Copyright © 2025\".",
+      "hours": "\"Daily: 1 pm. – 12 am.\" (site footer © 2025)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Dimitri's Coffee (Lweibdeh)",
+      "kind": "cafe",
+      "url": "https://www.dimitriscoffee.com/",
+      "sourceType": "operator's own site",
+      "address": "\"Lweibdeh: Al-Baouneyah St. 17-15\"",
+      "operatingEvidence": "Current branch list; \"© 2026 DIMITRI'S COFFEE\" and 2026 coffee lots on sale.",
+      "hours": "branch hours not published (roasting facility only: \"SAT – THU from 8 AM – 4 PM\")",
+      "confidence": "medium"
+    },
+    {
+      "name": "Dimitri's Coffee (Sweifieh)",
+      "kind": "cafe",
+      "url": "https://www.dimitriscoffee.com/",
+      "sourceType": "operator's own site",
+      "address": "\"Sweifieh Village, Saleh Ali Zaki St. 55\"",
+      "operatingEvidence": "Current branch list; \"© 2026 DIMITRI'S COFFEE\" and 2026 coffee lots on sale.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Dimitri's Coffee (Abdali Boulevard)",
+      "kind": "cafe",
+      "url": "https://www.dimitriscoffee.com/",
+      "sourceType": "operator's own site",
+      "address": "\"Abdali Boulevard, Entrance 6\"",
+      "operatingEvidence": "Current branch list; \"© 2026 DIMITRI'S COFFEE\".",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Nasim Rooftop Lounge (Fairmont Amman)",
+      "kind": "bar",
+      "url": "https://www.fairmont.com/amman/",
+      "sourceType": "operator's own site (Fairmont)",
+      "address": "\"6 Beirut Street 5th Circle, Abdoun, PO Box 831370 11183 Amman Jordan\"",
+      "operatingEvidence": "Hotel page lists Nasim Happy Hour daily and a \"Festive Escape\" offer bookable \"November 15th, 2026 - January 4th, 2027\".",
+      "hours": "Happy Hour daily 6:00 PM to 8:00 PM; full hours not published",
+      "confidence": "high"
+    },
+    {
+      "name": "Caprice Groovy Room (Fairmont Amman)",
+      "kind": "bar",
+      "url": "https://www.fairmont.com/amman/",
+      "sourceType": "operator's own site (Fairmont)",
+      "address": "\"6 Beirut Street 5th Circle, Abdoun, PO Box 831370 11183 Amman Jordan\"",
+      "operatingEvidence": "Current hotel page lists a daily buy-one-get-one-free Happy Hour; 2026-27 hotel offers on the same page.",
+      "hours": "Happy Hour daily 5:00 PM to 8:00 PM; full hours not published",
+      "confidence": "high"
+    },
+    {
+      "name": "Crystal Lounge (Fairmont Amman)",
+      "kind": "cafe",
+      "url": "https://www.fairmont.com/amman/",
+      "sourceType": "operator's own site (Fairmont)",
+      "address": "\"6 Beirut Street 5th Circle, Abdoun, PO Box 831370 11183 Amman Jordan\"",
+      "operatingEvidence": "Current hotel page lists Afternoon Tea daily and a dessert display offer.",
+      "hours": "Afternoon Tea daily 4:00 PM to 7:00 PM; dessert display daily 8:00 PM to midnight",
+      "confidence": "high"
+    },
+    {
+      "name": "Nur (Fairmont Amman)",
+      "kind": "meal",
+      "url": "https://www.fairmont.com/amman/",
+      "sourceType": "operator's own site (Fairmont)",
+      "address": "\"6 Beirut Street 5th Circle, Abdoun, PO Box 831370 11183 Amman Jordan\"",
+      "operatingEvidence": "Current hotel page lists Nur (Lebanese) Business Lunch set menus.",
+      "hours": "Business Lunch Sunday to Thursday 1:00 PM to 4:00 PM; full hours not published",
+      "confidence": "high"
+    },
+    {
+      "name": "Bar on Four (Amman Rotana)",
+      "kind": "bar",
+      "url": "https://www.rotana.com/rotanahotelandresorts/jordan/amman/ammanrotana",
+      "sourceType": "operator's own site (Rotana)",
+      "address": "\"Al Sawosana Al Sawoda Street - Abdali, P.O. Box 926111, Amman 11190, Jordan\"",
+      "operatingEvidence": "Hotel page describes \"daily live DJ performances\"; page cites JOSPEX 2026 medals and \"© Copyright 2026\".",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Threesixty (Amman Rotana)",
+      "kind": "meal",
+      "url": "https://www.rotana.com/rotanahotelandresorts/jordan/amman/ammanrotana",
+      "sourceType": "operator's own site (Rotana)",
+      "address": "\"Al Sawosana Al Sawoda Street - Abdali, P.O. Box 926111, Amman 11190, Jordan\"",
+      "operatingEvidence": "All-day dining venue serving a buffet-style breakfast, listed on the current 2026 hotel page.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "St. Regis Bar (The St. Regis Amman)",
+      "kind": "bar",
+      "url": "https://www.marriott.com/en-us/hotels/ammxr-the-st-regis-amman/dining/",
+      "sourceType": "operator's own site (Marriott International)",
+      "address": "\"5th Circle, Shafiq Al Hayek Street, Amman, Jordan, 11185\"",
+      "operatingEvidence": "Dining page lists daily hours and dress code; page \"© 1996 – 2026 Marriott International\".",
+      "hours": "12:00 PM-1:30 AM daily; smart casual",
+      "confidence": "high"
+    },
+    {
+      "name": "Zenith (The St. Regis Amman)",
+      "kind": "meal",
+      "url": "https://www.marriott.com/en-us/hotels/ammxr-the-st-regis-amman/dining/",
+      "sourceType": "operator's own site (Marriott International)",
+      "address": "\"5th Circle, Shafiq Al Hayek Street, Amman, Jordan, 11185\"",
+      "operatingEvidence": "Rooftop grill; \"Reservations for Zenith can be made online or by calling +962 6-4000500\".",
+      "hours": "6:00 PM-11:00 PM daily; smart casual",
+      "confidence": "high"
+    },
+    {
+      "name": "Tamara (The St. Regis Amman)",
+      "kind": "meal",
+      "url": "https://www.marriott.com/en-us/hotels/ammxr-the-st-regis-amman/dining/",
+      "sourceType": "operator's own site (Marriott International)",
+      "address": "\"5th Circle, Shafiq Al Hayek Street, Amman, Jordan, 11185\"",
+      "operatingEvidence": "Middle Eastern restaurant listed with daily hours on the current dining page.",
+      "hours": "12:30 PM-11:00 PM daily; smart casual",
+      "confidence": "high"
+    },
+    {
+      "name": "Tea Lounge (The St. Regis Amman)",
+      "kind": "cafe",
+      "url": "https://www.marriott.com/en-us/hotels/ammxr-the-st-regis-amman/dining/",
+      "sourceType": "operator's own site (Marriott International)",
+      "address": "\"5th Circle, Shafiq Al Hayek Street, Amman, Jordan, 11185\"",
+      "operatingEvidence": "Listed with daily hours on the current dining page; the hotel's Mercado breakfast buffet is \"in-house guests only\".",
+      "hours": "8:00 AM-10:00 PM daily; smart casual",
+      "confidence": "high"
+    },
+    {
+      "name": "Iris Tea Lounge (The Ritz-Carlton, Amman)",
+      "kind": "cafe",
+      "url": "https://www.ritzcarlton.com/en/hotels/ammrz-the-ritz-carlton-amman/dining/",
+      "sourceType": "operator's own site (Marriott International / The Ritz-Carlton)",
+      "address": "\"5th Circle, Al Kindi Street, Amman, Jordan, 11185\"",
+      "operatingEvidence": "Listed with daily hours and dress code on the hotel's dining page; the page carries no date.",
+      "hours": "8:00 AM-11:00 PM daily (undated dining page); smart casual",
+      "confidence": "medium"
+    },
+    {
+      "name": "Kenz Lebanese Café (The Ritz-Carlton, Amman)",
+      "kind": "meal",
+      "url": "https://www.ritzcarlton.com/en/hotels/ammrz-the-ritz-carlton-amman/dining/",
+      "sourceType": "operator's own site (Marriott International / The Ritz-Carlton)",
+      "address": "\"5th Circle, Al Kindi Street, Amman, Jordan, 11185\"",
+      "operatingEvidence": "Middle Eastern venue listed with daily hours on the hotel's dining page; the page carries no date.",
+      "hours": "12:30 PM-12:00 AM daily (undated dining page); smart casual",
+      "confidence": "medium"
+    },
+    {
+      "name": "Roberto's (The Ritz-Carlton, Amman)",
+      "kind": "meal",
+      "url": "https://www.ritzcarlton.com/en/hotels/ammrz-the-ritz-carlton-amman/dining/",
+      "sourceType": "operator's own site (Marriott International / The Ritz-Carlton)",
+      "address": "\"5th Circle, Al Kindi Street, Amman, Jordan, 11185\"",
+      "operatingEvidence": "Italian restaurant listed with daily hours on the hotel's dining page; the page carries no date.",
+      "hours": "1:00 PM-2:00 AM daily (undated dining page); smart casual",
+      "confidence": "medium"
+    },
+    {
+      "name": "Toscana (Sheraton Amman Al Nabil)",
+      "kind": "meal",
+      "url": "https://www.marriott.com/en-us/hotels/ammsi-sheraton-amman-al-nabil-hotel/dining/",
+      "sourceType": "operator's own site (Marriott International)",
+      "address": "\"5th Circle, P.O. Box 840064, Amman, Jordan, 11184\"",
+      "operatingEvidence": "Italian restaurant listed with weekly hours on the current dining page (\"© 1996 – 2026 Marriott International\").",
+      "hours": "Closed Mondays; Tuesday-Thursday and Sunday 5:00 PM-11:00 PM; Friday-Saturday 1:00 PM-11:00 PM; smart casual",
+      "confidence": "high"
+    },
+    {
+      "name": "The Spice Garden (Sheraton Amman Al Nabil)",
+      "kind": "meal",
+      "url": "https://www.marriott.com/en-us/hotels/ammsi-sheraton-amman-al-nabil-hotel/dining/",
+      "sourceType": "operator's own site (Marriott International)",
+      "address": "\"5th Circle, P.O. Box 840064, Amman, Jordan, 11184\"",
+      "operatingEvidence": "Breakfast venue listed with weekly hours on the current dining page.",
+      "hours": "Monday-Thursday and Sunday 6:30 AM-10:30 AM; Friday-Saturday 6:30 AM-11:00 AM; casual",
+      "confidence": "high"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Citadel",
+      "reason": "Official operator site (Department of Antiquities, doa.gov.jo) refused connection; Ministry site mota.gov.jo refused connection. Jordan Pass (Ministry of Tourism) hours page is dated © 2022 and gives no address or 2026 operating evidence.",
+      "url": "https://www.jordanpass.jo/contents/Opening_Hours.aspx"
+    },
+    {
+      "name": "Roman Theater",
+      "reason": "Same as Citadel: doa.gov.jo and mota.gov.jo refused connection; Jordan Pass hours page (© 2022) has no address or 2026 evidence.",
+      "url": "https://www.jordanpass.jo/contents/Opening_Hours.aspx"
+    },
+    {
+      "name": "Jerash day",
+      "reason": "Generic day trip; Jerash site itself not confirmable (doa.gov.jo refused connection; Jordan Pass hours page © 2022, no address or 2026 evidence).",
+      "url": "https://www.jordanpass.jo/contents/Opening_Hours.aspx"
+    },
+    {
+      "name": "Rainbow Street",
+      "reason": "A street, not a single operated place; no operator page to check.",
+      "url": ""
+    },
+    {
+      "name": "Citadel sunset",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local sweets stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "a mezze dinner / Amman market or cafe / A local dinner in Downtown / A cafe near Jabal Amman / A market breakfast in Sweifieh / A dessert stop in Downtown",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Downtown walk / Public viewpoint near Jabal Amman / Market meal around Sweifieh / A self-guided walk through Sweifieh / Free museum or public garden time / A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Citadel / A signature meal in Downtown / A tailored day around Citadel sunset / A private transfer between highlights / A special evening in Jabal Amman / A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Roman Theater / Downtown evening / A long dinner in Jabal Amman / A scenic morning near Sweifieh / A photo-friendly walk through Downtown",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Citadel / Easy outing around Jabal Amman / A relaxed meal near Sweifieh / A hands-on stop near Downtown / A short scenic outing with room to move / A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Citadel / Downtown cafe or market / Self-guided Jerash day / A museum or gallery at your own pace / A people-watching break in Sweifieh / A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Sweifieh / A local recommendation beyond the headline sights / A short detour beyond Downtown",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Downtown / Jabal Amman bakery or market / Slow breakfast before Citadel / A local pastry to take on the road / Coffee and a walk through Sweifieh / A relaxed brunch near Downtown",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Roman Theater / Local stop around Sweifieh / A market lunch in Downtown / A quick meal between sights / A long midday table in Jabal Amman",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Sweifieh / A local specialty near Downtown / A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Downtown / A local bar around Jabal Amman / A view-led evening near Rainbow Street / A relaxed night close to the stay / A late drink after dinner / A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Downtown / Jabal Amman morning market / Coffee and pastry before Citadel / A regional sweet to take on the road / A fresh bake near Sweifieh / A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Downtown / A slow cafe in Jabal Amman / A final cup near Sweifieh / A coffee stop before the first sight / A neighborhood cafe break / A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "The Jordan Museum",
+      "reason": "Official site says it is \"going through re-development\"; no address, hours or current programme published.",
+      "url": "https://jordanmuseum.jo/en"
+    },
+    {
+      "name": "Royal Automobile Museum",
+      "reason": "Fetch failed: connection refused (ECONNREFUSED).",
+      "url": "https://www.royalautomuseum.jo/"
+    },
+    {
+      "name": "Royal Tank Museum",
+      "reason": "Fetch failed: domain did not resolve (ENOTFOUND).",
+      "url": "https://www.royaltankmuseum.jo/"
+    },
+    {
+      "name": "Four Seasons Hotel Amman (dining)",
+      "reason": "Fetch refused: HTTP 403.",
+      "url": "https://www.fourseasons.com/amman/dining/"
+    },
+    {
+      "name": "W Amman (bars)",
+      "reason": "Fetch refused: HTTP 403 (dining URL also 404).",
+      "url": "https://www.marriott.com/en-us/hotels/ammwh-w-amman/overview/"
+    },
+    {
+      "name": "Grand Hyatt Amman",
+      "reason": "Fetch refused: HTTP 403.",
+      "url": "https://www.hyatt.com/en-US/hotel/jordan/grand-hyatt-amman/ammgh"
+    },
+    {
+      "name": "Kempinski Hotel Amman",
+      "reason": "Pages read gave no Amman address or venues.",
+      "url": "https://www.kempinski.com/en/kempinski-hotel-amman"
+    },
+    {
+      "name": "Landmark Amman (bars and restaurants)",
+      "reason": "No venue hours; no current content (footer © 2022, promotions dated 2021).",
+      "url": "https://www.landmarkamman.com/"
+    },
+    {
+      "name": "Le Royal Amman",
+      "reason": "Fetch failed: SSL error.",
+      "url": "https://www.leroyalhotels.com/le-royal-amman"
+    },
+    {
+      "name": "Books@Cafe",
+      "reason": "Fetch refused: HTTP 423 Locked.",
+      "url": "https://www.booksatcafe.com/"
+    },
+    {
+      "name": "Sufra",
+      "reason": "Former domain redirects to an unrelated site; no official page found.",
+      "url": "https://www.sufrarestaurant.com/"
+    },
+    {
+      "name": "Wild Jordan Center",
+      "reason": "wildjordan.com redirects to an unrelated site; RSCN homepage mentions a reopening in Jabal Amman but gives no address or hours.",
+      "url": "https://www.rscn.org.jo/"
+    },
+    {
+      "name": "Zalatimo Sweets",
+      "reason": "Official site is online shop only; no Amman shop address.",
+      "url": "https://www.zalatimosweets.com/"
+    },
+    {
+      "name": "Nafeeseh Sweets",
+      "reason": "Official site gives no branch addresses or 2026 content.",
+      "url": "https://nafeeseh-info.odoo.com/"
+    },
+    {
+      "name": "Paul Patisserie (Abdali Mall)",
+      "reason": "Only listed in the mall's directory; no Paul operator page found.",
+      "url": "https://www.abdalimall.com/"
+    },
+    {
+      "name": "Ren Chai",
+      "reason": "Operator page gives only \"Jabal Amman – 3rd Circle\", no exact address; no dated content.",
+      "url": "https://atico-jo.com/ren-chai-2-2/"
+    },
+    {
+      "name": "Kebab Express",
+      "reason": "Operator page says Sweifieh only, no street address; no dated content.",
+      "url": "https://atico-jo.com/kebab-express-2-2/"
+    },
+    {
+      "name": "Mijana",
+      "reason": "Fetch failed: SSL error.",
+      "url": "https://mijana.shop/"
+    },
+    {
+      "name": "Al Balad Theater",
+      "reason": "Fetch failed: certificate expired.",
+      "url": "https://al-balad.org/"
+    },
+    {
+      "name": "Nabad Gallery",
+      "reason": "Fetch failed: domain did not resolve (ENOTFOUND).",
+      "url": "https://www.nabadgallery.com/"
+    },
+    {
+      "name": "Jacaranda Images",
+      "reason": "Domain redirects to an unrelated site.",
+      "url": "https://www.jacarandaimages.com/"
+    },
+    {
+      "name": "Amman Waves",
+      "reason": "Domain shows \"This domain may be for sale\".",
+      "url": "https://www.ammanwaves.com/"
+    },
+    {
+      "name": "Souk Jara",
+      "reason": "Domain redirects to a parked for-sale page.",
+      "url": "https://www.soukjara.com/"
+    },
+    {
+      "name": "Royal Botanic Garden",
+      "reason": "No opening hours or 2026 content; garden is at Tell ar-Rumman outside Amman.",
+      "url": "https://www.royalbotanicgarden.org/"
+    },
+    {
+      "name": "Hashem Restaurant",
+      "reason": "No official website found.",
+      "url": ""
+    },
+    {
+      "name": "Jafra",
+      "reason": "No official website found.",
+      "url": ""
+    },
+    {
+      "name": "Haya Cultural Center",
+      "reason": "No official website found.",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Darat al Funun",
+        "Jordan National Gallery of Fine Arts",
+        "Children's Museum Jordan",
+        "Royal Film Commission (Jabal Amman)"
+      ],
+      "bestFirstTimers": [
+        "Darat al Funun",
+        "Jordan National Gallery of Fine Arts",
+        "Habibah Sweets (Downtown, King Hussein St.)",
+        "Fakhreldin Restaurant (Jabal Amman)"
+      ],
+      "bestRestaurants": [
+        "Shams El Balad",
+        "Fakhreldin Restaurant (Jabal Amman)",
+        "Tamara (The St. Regis Amman)",
+        "Kenz Lebanese Café (The Ritz-Carlton, Amman)"
+      ],
+      "bestBudget": [
+        "Habibah Sweets (Downtown, King Hussein St.)",
+        "Dimitri's Coffee (Lweibdeh)",
+        "Abdali Mall",
+        "Royal Film Commission (Jabal Amman)"
+      ],
+      "bestLuxury": [
+        "Zenith (The St. Regis Amman)",
+        "St. Regis Bar (The St. Regis Amman)",
+        "Roberto's (The Ritz-Carlton, Amman)",
+        "Crystal Lounge (Fairmont Amman)"
+      ],
+      "bestCouples": [
+        "Nasim Rooftop Lounge (Fairmont Amman)",
+        "Zenith (The St. Regis Amman)",
+        "Fakhreldin Restaurant (Jabal Amman)",
+        "Shams El Balad"
+      ],
+      "bestKids": [
+        "Children's Museum Jordan",
+        "Abdali Mall",
+        "Habibah Sweets (Abdoun Village)",
+        "Crystal Lounge (Fairmont Amman)"
+      ],
+      "bestSolo": [
+        "Darat al Funun",
+        "Dimitri's Coffee (Lweibdeh)",
+        "Royal Film Commission (Jabal Amman)",
+        "Jordan National Gallery of Fine Arts"
+      ],
+      "bestUnique": [
+        "Royal Film Commission (Jabal Amman)",
+        "Darat al Funun",
+        "Habibah Sweets (Downtown, King Hussein St.)",
+        "Nasim Rooftop Lounge (Fairmont Amman)"
+      ],
+      "bestBreakfast": [
+        "The Spice Garden (Sheraton Amman Al Nabil)",
+        "Threesixty (Amman Rotana)",
+        "Tea Lounge (The St. Regis Amman)",
+        "Iris Tea Lounge (The Ritz-Carlton, Amman)"
+      ],
+      "bestLunch": [
+        "Nur (Fairmont Amman)",
+        "Kenz Lebanese Café (The Ritz-Carlton, Amman)",
+        "Tamara (The St. Regis Amman)",
+        "Fakhreldin Restaurant (Jabal Amman)"
+      ],
+      "bestDinner": [
+        "Shams El Balad",
+        "Fakhreldin Restaurant (Jabal Amman)",
+        "Toscana (Sheraton Amman Al Nabil)",
+        "Zenith (The St. Regis Amman)"
+      ],
+      "bestCocktails": [
+        "Nasim Rooftop Lounge (Fairmont Amman)",
+        "Caprice Groovy Room (Fairmont Amman)",
+        "St. Regis Bar (The St. Regis Amman)",
+        "Bar on Four (Amman Rotana)"
+      ],
+      "bestBakeries": [
+        "Habibah Sweets (Downtown, King Hussein St.)",
+        "Habibah Sweets (Abdoun Village)"
+      ],
+      "bestCoffee": [
+        "Dimitri's Coffee (Lweibdeh)",
+        "Dimitri's Coffee (Sweifieh)",
+        "Dimitri's Coffee (Abdali Boulevard)",
+        "Iris Tea Lounge (The Ritz-Carlton, Amman)"
+      ]
+    },
+    "queries": {
+      "Darat al Funun": "Darat al Funun 13 Nadeem al Mallah Street Jabal al Weibdeh Amman",
+      "Jordan National Gallery of Fine Arts": "Jordan National Gallery of Fine Arts Husi Fareez Street Al-Luwaibdeh Amman",
+      "Children's Museum Jordan": "Children's Museum Jordan King Abdullah II Street Amman",
+      "Royal Film Commission (Jabal Amman)": "Royal Film Commission 7 Omar Bin Al Khattab Street Jabal Amman Amman",
+      "Abdali Mall": "Abdali Mall Al Istithmar Street Amman",
+      "Habibah Sweets (Downtown, King Hussein St.)": "Habibah Sweets King Hussein Street Downtown Amman",
+      "Habibah Sweets (Abdoun Village)": "Habibah Sweets Abdoun Corridor Abdoun Village Amman",
+      "Shams El Balad": "Shams El Balad 69 Mu'ath Bin Jabal Street Amman",
+      "Fakhreldin Restaurant (Jabal Amman)": "Fakhreldin Restaurant Taha Hussein Street Jabal Amman Amman",
+      "Dimitri's Coffee (Lweibdeh)": "Dimitri's Coffee Al-Baouneyah Street Lweibdeh Amman",
+      "Dimitri's Coffee (Sweifieh)": "Dimitri's Coffee Saleh Ali Zaki Street Sweifieh Village Amman",
+      "Dimitri's Coffee (Abdali Boulevard)": "Dimitri's Coffee Abdali Boulevard Entrance 6 Amman",
+      "Nasim Rooftop Lounge (Fairmont Amman)": "Fairmont Amman 6 Beirut Street 5th Circle Amman",
+      "Caprice Groovy Room (Fairmont Amman)": "Fairmont Amman 6 Beirut Street 5th Circle Amman",
+      "Crystal Lounge (Fairmont Amman)": "Fairmont Amman 6 Beirut Street 5th Circle Amman",
+      "Nur (Fairmont Amman)": "Fairmont Amman 6 Beirut Street 5th Circle Amman",
+      "Bar on Four (Amman Rotana)": "Amman Rotana Al Sawosana Al Sawoda Street Abdali Amman",
+      "Threesixty (Amman Rotana)": "Amman Rotana Al Sawosana Al Sawoda Street Abdali Amman",
+      "St. Regis Bar (The St. Regis Amman)": "The St. Regis Amman Shafiq Al Hayek Street 5th Circle Amman",
+      "Zenith (The St. Regis Amman)": "The St. Regis Amman Shafiq Al Hayek Street 5th Circle Amman",
+      "Tamara (The St. Regis Amman)": "The St. Regis Amman Shafiq Al Hayek Street 5th Circle Amman",
+      "Tea Lounge (The St. Regis Amman)": "The St. Regis Amman Shafiq Al Hayek Street 5th Circle Amman",
+      "Iris Tea Lounge (The Ritz-Carlton, Amman)": "The Ritz-Carlton Amman Al Kindi Street 5th Circle Amman",
+      "Kenz Lebanese Café (The Ritz-Carlton, Amman)": "The Ritz-Carlton Amman Al Kindi Street 5th Circle Amman",
+      "Roberto's (The Ritz-Carlton, Amman)": "The Ritz-Carlton Amman Al Kindi Street 5th Circle Amman",
+      "Toscana (Sheraton Amman Al Nabil)": "Sheraton Amman Al Nabil Hotel 5th Circle Amman",
+      "The Spice Garden (Sheraton Amman Al Nabil)": "Sheraton Amman Al Nabil Hotel 5th Circle Amman"
+    },
+    "summary": "Art spaces, a children's museum, a film venue, sweets, coffee and hotel dining in Amman, checked against their own websites.",
+    "highlights": [
+      "Darat al Funun",
+      "Jordan National Gallery of Fine Arts",
+      "Children's Museum Jordan",
+      "Royal Film Commission (Jabal Amman)"
+    ],
+    "tip": "Plan around closing days: the Children's Museum Jordan is closed on Tuesdays, the Jordan National Gallery of Fine Arts on Fridays and official holidays, Darat al Funun opens Saturday to Thursday and closes in August and on public holidays, and Toscana at the Sheraton Amman Al Nabil is closed on Mondays.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Tuesday, Friday, Monday",
+        "copy": "The Children's Museum Jordan is closed on Tuesdays, the Jordan National Gallery of Fine Arts on Fridays and official holidays, and Darat al Funun opens Saturday to Thursday and closes in August and on public holidays. Toscana at the Sheraton Amman Al Nabil is closed on Mondays."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book online",
+        "copy": "Children's Museum Jordan tickets are sold through its online portal, at JD 5 per non-resident family member, with children under one free. Zenith at The St. Regis Amman takes reservations online or on +962 6-4000500, and Shams El Balad and Fakhreldin Restaurant take bookings through their websites."
+      },
+      {
+        "label": "Breakfast access",
+        "value": "Guests only at Mercado",
+        "copy": "The Mercado breakfast buffet at The St. Regis Amman is for in-house guests only, while the hotel's Tea Lounge opens daily from 8:00 AM. The Spice Garden at the Sheraton Amman Al Nabil lists breakfast from 6:30 AM every day."
+      },
+      {
+        "label": "Dress and age rules",
+        "value": "Smart casual; children accompanied",
+        "copy": "The St. Regis Bar, Zenith and Tamara at The St. Regis Amman list a smart casual dress code, as do Roberto's and Kenz at The Ritz-Carlton, Amman. At the Children's Museum Jordan, children must be accompanied by a parent or an authorised adult at all times."
+      }
+    ],
+    "dek": "Check each venue's closing day before you set out, because Amman's museums and galleries close on different days of the week.",
+    "intro": [
+      "You can build a day in Amman around Jabal al Weibdeh's art spaces. Darat al Funun, at 13 Nadeem al Mallah Street, opens Saturday to Thursday from 10am to 7pm and closes in August and on public holidays; its exhibition A Geography For Return opened on Tuesday 17 November 2026. The Jordan National Gallery of Fine Arts in Al-Luwaibdeh opens from 9:00 AM to 5:00 PM every day except Fridays and is closed on official holidays. Its park is open from 8:00 AM to 9:00 PM and its café and restaurant from 9:00 AM to 11:00 PM.",
+      "With children, the Children's Museum Jordan on King Abdullah II Street is closed on Tuesdays. From 1 September to 31 May it opens Sunday to Wednesday from 9:00 a.m. to 5:00 p.m. and Thursday to Saturday from 10:00 a.m. to 6:00 p.m.; from 1 June to 31 August it opens daily from 10:00 a.m. to 7:00 p.m. Tickets are sold online, non-resident family members pay JD 5 each, children under one enter free, and children must stay with a parent or authorised adult. Abdali Mall on Al Istithmar Street opens 10:00 AM to 10:00 PM, and 12:00 PM to 11:30 PM on Fridays.",
+      "For food, Shams El Balad at 69 Mu'ath Bin Jabal Street takes reservations through its website. Fakhreldin Restaurant on Taha Hussein Street in Jabal Amman also takes online bookings, and its website (dated 2025) lists daily hours of 1 pm to 12 am. Habibah Sweets has a Downtown branch on King Hussein Street and opened a branch at Abdoun Village in 2026. Dimitri's Coffee lists branches in Lweibdeh on Al-Baouneyah Street, in Sweifieh Village and at Abdali Boulevard, but does not publish branch opening hours. The Royal Film Commission, off Rainbow Street, runs a programme of film days and screenings.",
+      "Hotel venues publish clearer hours. At The St. Regis Amman, the St. Regis Bar opens daily from 12:00 PM to 1:30 AM and the rooftop Zenith from 6:00 PM to 11:00 PM, both with a smart casual dress code, and you can reserve Zenith online or by phone. The Fairmont Amman lists daily happy hours at Caprice Groovy Room from 5:00 PM to 8:00 PM and at Nasim Rooftop Lounge from 6:00 PM to 8:00 PM, plus afternoon tea at Crystal Lounge from 4:00 PM to 7:00 PM. At the Sheraton Amman Al Nabil, Toscana is closed on Mondays."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Start in Jabal al Weibdeh at Darat al Funun, open Saturday to Thursday from 10am to 7pm, and the Jordan National Gallery of Fine Arts, which is closed on Fridays and official holidays, then book dinner at Fakhreldin Restaurant or Shams El Balad."
+      ],
+      [
+        "A slower morning",
+        "Have breakfast at The Spice Garden in the Sheraton Amman Al Nabil, which opens at 6:30 AM, or coffee at Dimitri's Coffee in Lweibdeh, then pick up sweets at Habibah Sweets on King Hussein Street."
+      ],
+      [
+        "Before booking",
+        "Check closing days: the Children's Museum Jordan is closed on Tuesdays, the Jordan National Gallery of Fine Arts on Fridays and official holidays, Darat al Funun on Fridays, in August and on public holidays, and Toscana on Mondays."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The Citadel, Roman Theater and Jerash could not be confirmed: the Department of Antiquities and Ministry of Tourism sites refused connection, and the Jordan Pass hours page is dated 2022 with no address. The Jordan Museum's site is being redeveloped. The Royal Automobile Museum, Royal Tank Museum, Four Seasons, W Amman, Grand Hyatt, Le Royal, Books@Cafe, Mijana, Al Balad Theater and Nabad Gallery could not be read (connection, DNS, SSL or 403/423 errors). Opening hours are not published for Habibah Sweets, Shams El Balad, Dimitri's Coffee branches, Bar on Four, Threesixty or the Royal Film Commission; Fairmont venues show only promotion times. Fakhreldin's hours come from a page dated 2025, and The Ritz-Carlton, Amman dining page carries no date. Habibah Sweets branches are named by street only, without building numbers.",
+  "injectionLikeText": []
+}

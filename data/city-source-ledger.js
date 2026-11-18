@@ -5,6 +5,1065 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Amman, Jordan": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-11-17",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The Citadel, Roman Theater and Jerash could not be confirmed: the Department of Antiquities and Ministry of Tourism sites refused connection, and the Jordan Pass hours page is dated 2022 with no address. The Jordan Museum's site is being redeveloped. The Royal Automobile Museum, Royal Tank Museum, Four Seasons, W Amman, Grand Hyatt, Le Royal, Books@Cafe, Mijana, Al Balad Theater and Nabad Gallery could not be read (connection, DNS, SSL or 403/423 errors). Opening hours are not published for Habibah Sweets, Shams El Balad, Dimitri's Coffee branches, Bar on Four, Threesixty or the Royal Film Commission; Fairmont venues show only promotion times. Fakhreldin's hours come from a page dated 2025, and The Ritz-Carlton, Amman dining page carries no date. Habibah Sweets branches are named by street only, without building numbers.",
+    "sourceUrls": [
+      "docs/content-research/amman-2026-11-17.md",
+      "docs/content-research/amman-2026-11-17.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Citadel",
+        "url": "https://www.jordanpass.jo/contents/Opening_Hours.aspx",
+        "checkedOn": "2026-11-17",
+        "reason": "Official operator site (Department of Antiquities, doa.gov.jo) refused connection; Ministry site mota.gov.jo refused connection. Jordan Pass (Ministry of Tourism) hours page is dated © 2022 and gives no address or 2026 operating evidence."
+      },
+      {
+        "name": "Roman Theater",
+        "url": "https://www.jordanpass.jo/contents/Opening_Hours.aspx",
+        "checkedOn": "2026-11-17",
+        "reason": "Same as Citadel: doa.gov.jo and mota.gov.jo refused connection; Jordan Pass hours page (© 2022) has no address or 2026 evidence."
+      },
+      {
+        "name": "Jerash day",
+        "url": "https://www.jordanpass.jo/contents/Opening_Hours.aspx",
+        "checkedOn": "2026-11-17",
+        "reason": "Generic day trip; Jerash site itself not confirmable (doa.gov.jo refused connection; Jordan Pass hours page © 2022, no address or 2026 evidence)."
+      },
+      {
+        "name": "Rainbow Street",
+        "checkedOn": "2026-11-17",
+        "reason": "A street, not a single operated place; no operator page to check."
+      },
+      {
+        "name": "Citadel sunset",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local sweets stop",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "a mezze dinner / Amman market or cafe / A local dinner in Downtown / A cafe near Jabal Amman / A market breakfast in Sweifieh / A dessert stop in Downtown",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Downtown walk / Public viewpoint near Jabal Amman / Market meal around Sweifieh / A self-guided walk through Sweifieh / Free museum or public garden time / A neighborhood market stop",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Citadel / A signature meal in Downtown / A tailored day around Citadel sunset / A private transfer between highlights / A special evening in Jabal Amman / A slower day with a local guide",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Roman Theater / Downtown evening / A long dinner in Jabal Amman / A scenic morning near Sweifieh / A photo-friendly walk through Downtown",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Citadel / Easy outing around Jabal Amman / A relaxed meal near Sweifieh / A hands-on stop near Downtown / A short scenic outing with room to move / A treat everyone can agree on",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Citadel / Downtown cafe or market / Self-guided Jerash day / A museum or gallery at your own pace / A people-watching break in Sweifieh / A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Sweifieh / A local recommendation beyond the headline sights / A short detour beyond Downtown",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Downtown / Jabal Amman bakery or market / Slow breakfast before Citadel / A local pastry to take on the road / Coffee and a walk through Sweifieh / A relaxed brunch near Downtown",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Roman Theater / Local stop around Sweifieh / A market lunch in Downtown / A quick meal between sights / A long midday table in Jabal Amman",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Sweifieh / A local specialty near Downtown / A final-night meal away from the busiest sights",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Downtown / A local bar around Jabal Amman / A view-led evening near Rainbow Street / A relaxed night close to the stay / A late drink after dinner / A rooftop or waterfront evening",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Downtown / Jabal Amman morning market / Coffee and pastry before Citadel / A regional sweet to take on the road / A fresh bake near Sweifieh / A pastry stop between neighborhoods",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Downtown / A slow cafe in Jabal Amman / A final cup near Sweifieh / A coffee stop before the first sight / A neighborhood cafe break / A view with your morning coffee",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "The Jordan Museum",
+        "url": "https://jordanmuseum.jo/en",
+        "checkedOn": "2026-11-17",
+        "reason": "Official site says it is \"going through re-development\"; no address, hours or current programme published."
+      },
+      {
+        "name": "Royal Automobile Museum",
+        "url": "https://www.royalautomuseum.jo/",
+        "checkedOn": "2026-11-17",
+        "reason": "Fetch failed: connection refused (ECONNREFUSED)."
+      },
+      {
+        "name": "Royal Tank Museum",
+        "url": "https://www.royaltankmuseum.jo/",
+        "checkedOn": "2026-11-17",
+        "reason": "Fetch failed: domain did not resolve (ENOTFOUND)."
+      },
+      {
+        "name": "Four Seasons Hotel Amman (dining)",
+        "url": "https://www.fourseasons.com/amman/dining/",
+        "checkedOn": "2026-11-17",
+        "reason": "Fetch refused: HTTP 403."
+      },
+      {
+        "name": "W Amman (bars)",
+        "url": "https://www.marriott.com/en-us/hotels/ammwh-w-amman/overview/",
+        "checkedOn": "2026-11-17",
+        "reason": "Fetch refused: HTTP 403 (dining URL also 404)."
+      },
+      {
+        "name": "Grand Hyatt Amman",
+        "url": "https://www.hyatt.com/en-US/hotel/jordan/grand-hyatt-amman/ammgh",
+        "checkedOn": "2026-11-17",
+        "reason": "Fetch refused: HTTP 403."
+      },
+      {
+        "name": "Kempinski Hotel Amman",
+        "url": "https://www.kempinski.com/en/kempinski-hotel-amman",
+        "checkedOn": "2026-11-17",
+        "reason": "Pages read gave no Amman address or venues."
+      },
+      {
+        "name": "Landmark Amman (bars and restaurants)",
+        "url": "https://www.landmarkamman.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "No venue hours; no current content (footer © 2022, promotions dated 2021)."
+      },
+      {
+        "name": "Le Royal Amman",
+        "url": "https://www.leroyalhotels.com/le-royal-amman",
+        "checkedOn": "2026-11-17",
+        "reason": "Fetch failed: SSL error."
+      },
+      {
+        "name": "Books@Cafe",
+        "url": "https://www.booksatcafe.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "Fetch refused: HTTP 423 Locked."
+      },
+      {
+        "name": "Sufra",
+        "url": "https://www.sufrarestaurant.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "Former domain redirects to an unrelated site; no official page found."
+      },
+      {
+        "name": "Wild Jordan Center",
+        "url": "https://www.rscn.org.jo/",
+        "checkedOn": "2026-11-17",
+        "reason": "wildjordan.com redirects to an unrelated site; RSCN homepage mentions a reopening in Jabal Amman but gives no address or hours."
+      },
+      {
+        "name": "Zalatimo Sweets",
+        "url": "https://www.zalatimosweets.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "Official site is online shop only; no Amman shop address."
+      },
+      {
+        "name": "Nafeeseh Sweets",
+        "url": "https://nafeeseh-info.odoo.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "Official site gives no branch addresses or 2026 content."
+      },
+      {
+        "name": "Paul Patisserie (Abdali Mall)",
+        "url": "https://www.abdalimall.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "Only listed in the mall's directory; no Paul operator page found."
+      },
+      {
+        "name": "Ren Chai",
+        "url": "https://atico-jo.com/ren-chai-2-2/",
+        "checkedOn": "2026-11-17",
+        "reason": "Operator page gives only \"Jabal Amman – 3rd Circle\", no exact address; no dated content."
+      },
+      {
+        "name": "Kebab Express",
+        "url": "https://atico-jo.com/kebab-express-2-2/",
+        "checkedOn": "2026-11-17",
+        "reason": "Operator page says Sweifieh only, no street address; no dated content."
+      },
+      {
+        "name": "Mijana",
+        "url": "https://mijana.shop/",
+        "checkedOn": "2026-11-17",
+        "reason": "Fetch failed: SSL error."
+      },
+      {
+        "name": "Al Balad Theater",
+        "url": "https://al-balad.org/",
+        "checkedOn": "2026-11-17",
+        "reason": "Fetch failed: certificate expired."
+      },
+      {
+        "name": "Nabad Gallery",
+        "url": "https://www.nabadgallery.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "Fetch failed: domain did not resolve (ENOTFOUND)."
+      },
+      {
+        "name": "Jacaranda Images",
+        "url": "https://www.jacarandaimages.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "Domain redirects to an unrelated site."
+      },
+      {
+        "name": "Amman Waves",
+        "url": "https://www.ammanwaves.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "Domain shows \"This domain may be for sale\"."
+      },
+      {
+        "name": "Souk Jara",
+        "url": "https://www.soukjara.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "Domain redirects to a parked for-sale page."
+      },
+      {
+        "name": "Royal Botanic Garden",
+        "url": "https://www.royalbotanicgarden.org/",
+        "checkedOn": "2026-11-17",
+        "reason": "No opening hours or 2026 content; garden is at Tell ar-Rumman outside Amman."
+      },
+      {
+        "name": "Hashem Restaurant",
+        "checkedOn": "2026-11-17",
+        "reason": "No official website found."
+      },
+      {
+        "name": "Jafra",
+        "checkedOn": "2026-11-17",
+        "reason": "No official website found."
+      },
+      {
+        "name": "Haya Cultural Center",
+        "checkedOn": "2026-11-17",
+        "reason": "No official website found."
+      }
+    ],
+    "placeSources": {
+      "Darat al Funun": {
+        "url": "https://daratalfunun.org/?page_id=39",
+        "sourceType": "operator's own site (Darat al Funun - The Khalid Shoman Foundation)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current Program page lists \"A Geography For Return\" (Exhibition) \"Opening: Tuesday 17 November 2026\" and \"Works from The Khalid Shoman Collection\" \"30 June - 30 November 2026\"."
+      },
+      "Jordan National Gallery of Fine Arts": {
+        "url": "https://nationalgallery.org/",
+        "sourceType": "operator's own site (Royal Society of Fine Arts)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "\"Happening Now\" lists \"ABSENTED\" 11 Nov 2026 to 25 Nov 2026 and \"Antarctica: Continent of Peace\" 2 Nov 2026 to 23 Nov 2026."
+      },
+      "Children's Museum Jordan": {
+        "url": "https://www.cmj.jo/visit/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Homepage \"© 2026 CMJ\" with current highlights (\"World Children Month\", \"New Outdoor Play Area\"); online ticket sales via \"Buy Tickets\" (cmjportal.com)."
+      },
+      "Royal Film Commission (Jabal Amman)": {
+        "url": "https://www.film.jo/",
+        "sourceType": "official public body (Royal Film Commission - Jordan)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "2026 screening programme including \"Korean Film Days (20th Edition)\" 10-11 Nov and \"Hungarian Film Days\" 22-23 Nov; screenings listed at Rainbow Cinema and Taj Cinema."
+      },
+      "Abdali Mall": {
+        "url": "https://www.abdalimall.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Events list includes \"Shop & Win 2026\" (Mar 15 - Jun 01, 2026) and \"Les Createurs Libanais Exhibition\" (Jun 15 - Jun 18, 2026); dining directory lists cafés and dessert outlets."
+      },
+      "Habibah Sweets (Downtown, King Hussein St.)": {
+        "url": "https://www.habibahsweets.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Branch list current; site states that in 2026 Habibah opened its Abdoun branch, \"Corridor Abdoun – Abdoun Village\"."
+      },
+      "Habibah Sweets (Abdoun Village)": {
+        "url": "https://www.habibahsweets.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Site says the branch \"Corridor Abdoun – Abdoun Village\" opened in 2026."
+      },
+      "Shams El Balad": {
+        "url": "https://shamselbalad.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "\"Book Now\"/\"Reserve\" links to a live booking widget; footer \"Copyright © 2026 Shams El Balad\"."
+      },
+      "Fakhreldin Restaurant (Jabal Amman)": {
+        "url": "https://www.fakhreldin.com/",
+        "sourceType": "operator's own site (ATICO Fakhreldin Group)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "\"Reserve Now\" booking widget and reservation phone numbers; also listed on operator group page https://atico-jo.com/fakhreldin-restaurant/. Site footer is \"Copyright © 2025\"."
+      },
+      "Dimitri's Coffee (Lweibdeh)": {
+        "url": "https://www.dimitriscoffee.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current branch list; \"© 2026 DIMITRI'S COFFEE\" and 2026 coffee lots on sale."
+      },
+      "Dimitri's Coffee (Sweifieh)": {
+        "url": "https://www.dimitriscoffee.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current branch list; \"© 2026 DIMITRI'S COFFEE\" and 2026 coffee lots on sale."
+      },
+      "Dimitri's Coffee (Abdali Boulevard)": {
+        "url": "https://www.dimitriscoffee.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current branch list; \"© 2026 DIMITRI'S COFFEE\"."
+      },
+      "Nasim Rooftop Lounge (Fairmont Amman)": {
+        "url": "https://www.fairmont.com/amman/",
+        "sourceType": "operator's own site (Fairmont)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Hotel page lists Nasim Happy Hour daily and a \"Festive Escape\" offer bookable \"November 15th, 2026 - January 4th, 2027\"."
+      },
+      "Caprice Groovy Room (Fairmont Amman)": {
+        "url": "https://www.fairmont.com/amman/",
+        "sourceType": "operator's own site (Fairmont)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current hotel page lists a daily buy-one-get-one-free Happy Hour; 2026-27 hotel offers on the same page."
+      },
+      "Crystal Lounge (Fairmont Amman)": {
+        "url": "https://www.fairmont.com/amman/",
+        "sourceType": "operator's own site (Fairmont)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current hotel page lists Afternoon Tea daily and a dessert display offer."
+      },
+      "Nur (Fairmont Amman)": {
+        "url": "https://www.fairmont.com/amman/",
+        "sourceType": "operator's own site (Fairmont)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current hotel page lists Nur (Lebanese) Business Lunch set menus."
+      },
+      "Bar on Four (Amman Rotana)": {
+        "url": "https://www.rotana.com/rotanahotelandresorts/jordan/amman/ammanrotana",
+        "sourceType": "operator's own site (Rotana)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Hotel page describes \"daily live DJ performances\"; page cites JOSPEX 2026 medals and \"© Copyright 2026\"."
+      },
+      "Threesixty (Amman Rotana)": {
+        "url": "https://www.rotana.com/rotanahotelandresorts/jordan/amman/ammanrotana",
+        "sourceType": "operator's own site (Rotana)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "All-day dining venue serving a buffet-style breakfast, listed on the current 2026 hotel page."
+      },
+      "St. Regis Bar (The St. Regis Amman)": {
+        "url": "https://www.marriott.com/en-us/hotels/ammxr-the-st-regis-amman/dining/",
+        "sourceType": "operator's own site (Marriott International)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Dining page lists daily hours and dress code; page \"© 1996 – 2026 Marriott International\"."
+      },
+      "Zenith (The St. Regis Amman)": {
+        "url": "https://www.marriott.com/en-us/hotels/ammxr-the-st-regis-amman/dining/",
+        "sourceType": "operator's own site (Marriott International)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Rooftop grill; \"Reservations for Zenith can be made online or by calling +962 6-4000500\"."
+      },
+      "Tamara (The St. Regis Amman)": {
+        "url": "https://www.marriott.com/en-us/hotels/ammxr-the-st-regis-amman/dining/",
+        "sourceType": "operator's own site (Marriott International)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Middle Eastern restaurant listed with daily hours on the current dining page."
+      },
+      "Tea Lounge (The St. Regis Amman)": {
+        "url": "https://www.marriott.com/en-us/hotels/ammxr-the-st-regis-amman/dining/",
+        "sourceType": "operator's own site (Marriott International)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Listed with daily hours on the current dining page; the hotel's Mercado breakfast buffet is \"in-house guests only\"."
+      },
+      "Iris Tea Lounge (The Ritz-Carlton, Amman)": {
+        "url": "https://www.ritzcarlton.com/en/hotels/ammrz-the-ritz-carlton-amman/dining/",
+        "sourceType": "operator's own site (Marriott International / The Ritz-Carlton)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Listed with daily hours and dress code on the hotel's dining page; the page carries no date."
+      },
+      "Kenz Lebanese Café (The Ritz-Carlton, Amman)": {
+        "url": "https://www.ritzcarlton.com/en/hotels/ammrz-the-ritz-carlton-amman/dining/",
+        "sourceType": "operator's own site (Marriott International / The Ritz-Carlton)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Middle Eastern venue listed with daily hours on the hotel's dining page; the page carries no date."
+      },
+      "Roberto's (The Ritz-Carlton, Amman)": {
+        "url": "https://www.ritzcarlton.com/en/hotels/ammrz-the-ritz-carlton-amman/dining/",
+        "sourceType": "operator's own site (Marriott International / The Ritz-Carlton)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Italian restaurant listed with daily hours on the hotel's dining page; the page carries no date."
+      },
+      "Toscana (Sheraton Amman Al Nabil)": {
+        "url": "https://www.marriott.com/en-us/hotels/ammsi-sheraton-amman-al-nabil-hotel/dining/",
+        "sourceType": "operator's own site (Marriott International)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Italian restaurant listed with weekly hours on the current dining page (\"© 1996 – 2026 Marriott International\")."
+      },
+      "The Spice Garden (Sheraton Amman Al Nabil)": {
+        "url": "https://www.marriott.com/en-us/hotels/ammsi-sheraton-amman-al-nabil-hotel/dining/",
+        "sourceType": "operator's own site (Marriott International)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Breakfast venue listed with weekly hours on the current dining page."
+      }
+    }
+  },
+  "Chengdu, China": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-11-17",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Taikoo Li shops and restaurants were confirmed only through the mall operator's online directory, whose store pages give unit numbers and hours but little or no description and carry no dates of their own, so their hours are attributed to that directory; Niccolo Chengdu's dining pages show posted hours but no dated 2026 content except The Tea Lounge's 2026 menu. Upper House Chengdu (formerly The Temple House) books its restaurants by email. Wuhou Shrine Museum publishes no weekly closing day. The Sichuan Museum site returned only its title, the Du Fu Thatched Cottage site refused connection, the Chengdu IFS site timed out, and Shangri-La Chengdu blocked automated reading (HTTP 403). People's Park, Kuanzhai Alley, Wenshu Monastery and several other sights have no official website we could find. The Jinsha Site Museum is closed until 30 April 2027 according to its own site.",
+    "sourceUrls": [
+      "docs/content-research/chengdu-2026-11-17.md",
+      "docs/content-research/chengdu-2026-11-17.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Jinsha Site Museum",
+        "url": "https://www.jinshasitemuseum.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "Official site states the museum is closed: \"2025年12月5日至2027年4月30日期间闭馆\"."
+      },
+      {
+        "name": "Sichuan Museum",
+        "url": "https://www.scmuseum.cn/",
+        "checkedOn": "2026-11-17",
+        "reason": "Official site (Chinese and /en/) returned only the page title \"四川博物院\"; no address, hours or notices readable."
+      },
+      {
+        "name": "Du Fu Thatched Cottage Museum",
+        "url": "https://www.cddfct.com/",
+        "checkedOn": "2026-11-17",
+        "reason": "Fetch failed: connection refused (ECONNREFUSED) on the official site."
+      },
+      {
+        "name": "People's Park tea houses (Heming Teahouse)",
+        "checkedOn": "2026-11-17",
+        "reason": "No official site for the park or teahouse found; only news and third-party pages."
+      },
+      {
+        "name": "Kuanzhai Alley",
+        "checkedOn": "2026-11-17",
+        "reason": "No official website found; only news and third-party pages."
+      },
+      {
+        "name": "Wenshu Monastery",
+        "checkedOn": "2026-11-17",
+        "reason": "No official website found; only third-party listings with conflicting addresses and hours."
+      },
+      {
+        "name": "Daci Temple",
+        "checkedOn": "2026-11-17",
+        "reason": "Only an http address suggested by a third-party guide; no https official page found to read."
+      },
+      {
+        "name": "Chengdu IFS",
+        "url": "https://www.cdifs.cn/en/front-page",
+        "checkedOn": "2026-11-17",
+        "reason": "Official site fetch failed (socket hang up); chengduifs.com does not resolve."
+      },
+      {
+        "name": "Sichuan Science and Technology Museum",
+        "checkedOn": "2026-11-17",
+        "reason": "No official website found; only third-party listings."
+      },
+      {
+        "name": "Chengdu Natural History Museum",
+        "checkedOn": "2026-11-17",
+        "reason": "No official website found; only news and third-party listings."
+      },
+      {
+        "name": "Chengdu Zoo",
+        "checkedOn": "2026-11-17",
+        "reason": "No official website found; only third-party listings."
+      },
+      {
+        "name": "Chengdu Art Museum (Tianfu Art Park)",
+        "checkedOn": "2026-11-17",
+        "reason": "No official website found; only news and third-party listings."
+      },
+      {
+        "name": "Shufeng Yayun Sichuan Opera (Culture Park)",
+        "checkedOn": "2026-11-17",
+        "reason": "No official website found; only travel-agency pages."
+      },
+      {
+        "name": "%Arabica brand locations page",
+        "url": "https://arabica.com/en/locations/",
+        "checkedOn": "2026-11-17",
+        "reason": "Brand site refused automated reading (HTTP 418); the Taikoo Li branch was confirmed via the mall directory instead."
+      },
+      {
+        "name": "Shangri-La Chengdu restaurants",
+        "url": "https://www.shangri-la.com/chengdu/shangrila/dining/",
+        "checkedOn": "2026-11-17",
+        "reason": "Official site refused automated reading (HTTP 403)."
+      },
+      {
+        "name": "The Ritz-Carlton Chengdu restaurants",
+        "url": "https://www.ritzcarlton.com/en/hotels/ctuxr-the-ritz-carlton-chengdu/dining/",
+        "checkedOn": "2026-11-17",
+        "reason": "Official dining URL returned HTTP 404."
+      },
+      {
+        "name": "LIQUID GOLD (Taikoo Li Chengdu)",
+        "url": "https://www.taikooli-chengdu.com/en/cdtkl/dining/liquid-gold/",
+        "checkedOn": "2026-11-17",
+        "reason": "Directory listing has no description and a malformed hours line (\"10:0-22:00\"); not needed to fill a category."
+      },
+      {
+        "name": "Panda morning",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Tea-house afternoon",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local food crawl",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sichuan hot pot",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Dan dan noodles",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Tea-house snacks",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near People's Park",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Kuanzhai Alley",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Chunxi Road",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Chunxi Road walk",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near People's Park",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Kuanzhai Alley",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Kuanzhai Alley",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Chengdu Research Base",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Chunxi Road",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Panda morning",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in People's Park",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near People's Park tea houses",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Chunxi Road evening",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in People's Park",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Kuanzhai Alley",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Chunxi Road",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Chengdu Research Base",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around People's Park",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Kuanzhai Alley",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Chunxi Road",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Chengdu Research Base",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Chunxi Road cafe or market",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Tea-house afternoon",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Kuanzhai Alley",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Kuanzhai Alley",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Chunxi Road",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Chunxi Road",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "People's Park bakery or market",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Chengdu Research Base",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Kuanzhai Alley",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Chunxi Road",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near People's Park tea houses",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Kuanzhai Alley",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Chunxi Road",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in People's Park",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Kuanzhai Alley",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Chunxi Road",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Chunxi Road",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around People's Park",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Kuanzhai Alley",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Chunxi Road",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "People's Park morning market",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Chengdu Research Base",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Kuanzhai Alley",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Chunxi Road",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in People's Park",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Kuanzhai Alley",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-11-17",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Chengdu Research Base of Giant Panda Breeding": {
+        "url": "https://www.panda.org.cn/en/service/ticket/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current ticket page requires real-name online reservation up to 14 days ahead (\"The maximum daily visitor capacity is 85,000\"); English homepage carries \"The 2026 Autumn Recruitment of Science Popularization Volunteers ... Is Now Open!\"."
+      },
+      "Chengdu Museum": {
+        "url": "https://cdmuseum.com/en/zhinan/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Homepage news dated November 2026 (e.g. 13 Nov \"博博会，成博来啦！\"; 17 Nov procurement notice); online \"立即预约\" reservation link."
+      },
+      "Wuhou Shrine Museum": {
+        "url": "https://www.wuhouci.net.cn/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Announcements dated 2026-11-12 to 2026-11-17 (e.g. Jinli street maintenance tenders); bulletin 2026.42 on the \"2026成都武侯祠国庆主题活动\"; online booking section."
+      },
+      "Taikoo Li Chengdu": {
+        "url": "https://www.taikooli-chengdu.com/en/AboutUs/ProjectSummary",
+        "sourceType": "operator's own site (Swire Properties)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Homepage lists the \"2026 Autumn Campaign 「Becoming The River」\" (2026.09) and the 11th Anniversary Campaign (2026.04)."
+      },
+      "Jing (Upper House Chengdu)": {
+        "url": "https://www.upperhouse.com/chengdu/restaurants-and-bars/jing",
+        "sourceType": "operator's own site (Upper House Chengdu, formerly The Temple House)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current venue page: \"Retro-glam cocktail hideaway\" with a \"Book A Table\" link (jing_cd@upperhouse.com) and terrace overlooking Taikoo Li."
+      },
+      "Mi Xun Teahouse (Upper House Chengdu)": {
+        "url": "https://www.upperhouse.com/chengdu/restaurants-and-bars/mi-xun-teahouse",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current page: \"Mi Xun Teahouse is the MICHELIN-starred restaurant inside Upper House Chengdu\", with daily service times and a \"Book A Table\" email link."
+      },
+      "The Temple Café (Upper House Chengdu)": {
+        "url": "https://www.upperhouse.com/chengdu/restaurants-and-bars/the-temple-cafe",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current page: \"All-day bistro serving international breakfast, lunch, afternoon tea and dinner items\", with house-made pastries and coffee at a grab-and-go counter."
+      },
+      "Tivano (Upper House Chengdu)": {
+        "url": "https://www.upperhouse.com/chengdu/restaurants-and-bars/tivano",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current page: \"Tivano is the Italian restaurant at Upper House Chengdu\", with garden terrace seating and a \"Book A Table\" email link."
+      },
+      "The Bar (Niccolo Chengdu)": {
+        "url": "https://niccolohotels.com/en/niccolo-chengdu/dining/the-bar",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current page describes \"Timeless cocktails\" on the 3rd floor with posted daily hours and a resident live band schedule."
+      },
+      "Yue Hin (Niccolo Chengdu)": {
+        "url": "https://niccolohotels.com/en/niccolo-chengdu/dining/yue-hin",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current page: \"Yue Hin specialises in traditional Cantonese and classic Sichuan cuisines\", with posted lunch and dinner hours and private rooms on Level 2."
+      },
+      "Niccolo Kitchen (Niccolo Chengdu)": {
+        "url": "https://niccolohotels.com/en/niccolo-chengdu/dining/niccolo-kitchen",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current page: Tuscan-inspired menu \"Available daily for lunch and dinner\", with breakfast, lunch and dinner hours posted."
+      },
+      "The Tea Lounge (Niccolo Chengdu)": {
+        "url": "https://niccolohotels.com/en/niccolo-chengdu/dining/the-tea-lounge",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Current page links a menu file named \"The_Tea_Lounge_Menu_2026.pdf\" and lists a resident tea sommelier."
+      },
+      "%Arabica (Taikoo Li Chengdu)": {
+        "url": "https://www.taikooli-chengdu.com/en/cdtkl/dining/arabica/",
+        "sourceType": "Taikoo Li Chengdu operator's directory (Swire Properties)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Listed in the current Taikoo Li dining directory (site carries 2026 campaigns) with phone and business hours; %Arabica also named on the Taikoo Li homepage."
+      },
+      "OURBakery (Taikoo Li Chengdu)": {
+        "url": "https://www.taikooli-chengdu.com/en/cdtkl/dining/our-bakery/",
+        "sourceType": "Taikoo Li Chengdu operator's directory (Swire Properties)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Listed under Coffee/Tea/Bakery in the current Taikoo Li dining directory with \"Business hours: 10:00-22:00\"."
+      },
+      "Starbucks Reserve Bar Mixato (Taikoo Li Chengdu)": {
+        "url": "https://www.taikooli-chengdu.com/en/cdtkl/dining/star-bucks1/",
+        "sourceType": "Taikoo Li Chengdu operator's directory (Swire Properties)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Directory page describes \"the first flagship store set up in Southwest and Central China by Starbucks\", a three-storey building, with phone 028 86006781."
+      },
+      "Shi Heng Fan Dian (Taikoo Li Chengdu)": {
+        "url": "https://www.taikooli-chengdu.com/en/cdtkl/dining/shiheng/",
+        "sourceType": "Taikoo Li Chengdu operator's directory (Swire Properties)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Listed under Chinese Cuisine in the current Taikoo Li dining directory with \"Business hours: 11:30-22:00\"."
+      },
+      "blue frog (Taikoo Li Chengdu)": {
+        "url": "https://www.taikooli-chengdu.com/en/cdtkl/dining/blue-frog/",
+        "sourceType": "Taikoo Li Chengdu operator's directory (Swire Properties)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Directory page: Western classics \"from brunch through dinner\", phone 028-81473258, with late business hours."
+      },
+      "Jade Garden (Taikoo Li Chengdu)": {
+        "url": "https://www.taikooli-chengdu.com/en/cdtkl/dining/jade-garden/",
+        "sourceType": "Taikoo Li Chengdu operator's directory (Swire Properties)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Directory page: Hong Kong Mei-Xin's \"Chinese cuisines, western service\" concept, with business hours listed."
+      },
+      "CreaTea (Taikoo Li Chengdu)": {
+        "url": "https://www.taikooli-chengdu.com/en/cdtkl/dining/shouyi/",
+        "sourceType": "Taikoo Li Chengdu operator's directory (Swire Properties)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Directory page: \"CreaTea 'Craftsmanship' helps create the new oriental tea house\", with handmade tea sets and business hours."
+      },
+      "Café & Meal MUJI (Taikoo Li Chengdu)": {
+        "url": "https://www.taikooli-chengdu.com/en/cdtkl/dining/cafe--meal-muji/",
+        "sourceType": "Taikoo Li Chengdu operator's directory (Swire Properties)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Listed under Coffee/Tea/Bakery in the current directory with phone 028-86765437 and business hours."
+      },
+      "SONG (Taikoo Li Chengdu)": {
+        "url": "https://www.taikooli-chengdu.com/en/cdtkl/dining/song/",
+        "sourceType": "Taikoo Li Chengdu operator's directory (Swire Properties)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Listed under Chinese Cuisine in the current directory with business hours 11:00-22:00; no description published."
+      },
+      "Tasty Congee & Noodle Wantun Shop (Taikoo Li Chengdu)": {
+        "url": "https://www.taikooli-chengdu.com/en/cdtkl/dining/tasty/",
+        "sourceType": "Taikoo Li Chengdu operator's directory (Swire Properties)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Listed under Chinese Cuisine in the current directory with phone 028-62507209 and weekday/weekend hours."
+      },
+      "Wang De Chuan Tea Company (Taikoo Li Chengdu)": {
+        "url": "https://www.taikooli-chengdu.com/en/cdtkl/dining/wang-de-chuan-tea-company/",
+        "sourceType": "Taikoo Li Chengdu operator's directory (Swire Properties)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Directory page: the Chengdu store \"not only sells tea, but also shares tea culture\"; also named on the Taikoo Li homepage."
+      },
+      "Blondel (Taikoo Li Chengdu)": {
+        "url": "https://www.taikooli-chengdu.com/en/cdtkl/dining/blondel/",
+        "sourceType": "Taikoo Li Chengdu operator's directory (Swire Properties)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Listed under Desserts/Beverages/Deli in the current directory with phone 028-86586596 and business hours; no description published."
+      },
+      "Momicafe (Taikoo Li Chengdu)": {
+        "url": "https://www.taikooli-chengdu.com/en/cdtkl/dining/momicafe/",
+        "sourceType": "Taikoo Li Chengdu operator's directory (Swire Properties)",
+        "checkedOn": "2026-11-17",
+        "operatingEvidence": "Directory page: \"We are not only a bookstore, but also a postcard theme shop\", listed under Coffee/Tea/Bakery with business hours."
+      }
+    }
+  },
   "Fes, Morocco": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-11-17",
