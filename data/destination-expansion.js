@@ -11026,4 +11026,111 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on November 20, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Nairobi, Kenya: source review of 2026-11-20 (docs/content-research/nairobi-2026-11-20.md).
+  {
+    const cityKey = "Nairobi, Kenya";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Nairobi National Museum","Sheldrick Wildlife Trust Nairobi Nursery","Karura Forest","Nairobi Gallery"],
+      bestFirstTimers: ["Nairobi National Museum","Sheldrick Wildlife Trust Nairobi Nursery","Nairobi Snake Park","Karura Forest"],
+      bestRestaurants: ["The Talisman","Graze (Sankara Nairobi)","Zen Garden"],
+      bestBudget: ["Nairobi Arboretum","Karura Forest","Nairobi Gallery","Pallet Café"],
+      bestLuxury: ["Graze (Sankara Nairobi)","LUCCA (Villa Rosa Kempinski)","Cafe Villa Rosa (Villa Rosa Kempinski)","Sarabi Rooftop (Sankara Nairobi)"],
+      bestCouples: ["Sarabi Rooftop (Sankara Nairobi)","The Talisman","Balcony Bar (Villa Rosa Kempinski)"],
+      bestKids: ["Sheldrick Wildlife Trust Nairobi Nursery","Nairobi Snake Park","Karura Forest","Nairobi National Museum"],
+      bestSolo: ["Circle Art Gallery","Nairobi Gallery","Kenya Cultural Centre","Spring Valley Coffee (Spring Valley Shopping Centre)"],
+      bestUnique: ["Pallet Café","Kenya Cultural Centre","Circle Art Gallery","Nairobi Arboretum"],
+      bestBreakfast: ["Cafe Villa Rosa (Villa Rosa Kempinski)","Osteria Romana (Sankara Nairobi)","Le Grenier à Pain (Riverside)"],
+      bestLunch: ["Zen Garden","Jiko (Tribe Hotel)","Pallet Café"],
+      bestDinner: ["The Talisman","Mandhari (Nairobi Serena Hotel)","Jiko (Tribe Hotel)","LUCCA (Villa Rosa Kempinski)"],
+      bestCocktails: ["Sarabi Rooftop (Sankara Nairobi)","Balcony Bar (Villa Rosa Kempinski)","Nairobi Street Kitchen","Kengele's Lavington Green"],
+      bestBakeries: ["Le Grenier à Pain (Riverside)","Le Grenier à Pain (Yaya Centre)","K Lounge (Villa Rosa Kempinski)"],
+      bestCoffee: ["Spring Valley Coffee (Spring Valley Shopping Centre)","Spring Valley Coffee (Karen)","Osteria Romana (Sankara Nairobi)","K Lounge (Villa Rosa Kempinski)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Nairobi National Museum": "Nairobi National Museum Museum Hill Nairobi",
+      "Sheldrick Wildlife Trust Nairobi Nursery": "Sheldrick Wildlife Trust Nursery Mbagathi Gate Magadi Road Nairobi",
+      "Karura Forest": "Karura Forest Gate A Limuru Road Nairobi",
+      "Nairobi Gallery": "Nairobi Gallery Kenyatta Avenue Uhuru Highway Nairobi",
+      "Nairobi Snake Park": "Nairobi Snake Park Museum Hill Nairobi",
+      "The Talisman": "The Talisman Ngong Road Karen Nairobi",
+      "Graze (Sankara Nairobi)": "Graze Steakhouse Sankara 5 Woodvale Grove Westlands Nairobi",
+      "Zen Garden": "Zen Garden Lower Kabete Road Nairobi",
+      "Nairobi Arboretum": "Nairobi Arboretum Arboretum Drive State House Road Nairobi",
+      "Pallet Café": "Pallet Cafe James Gichuru Road Lavington Nairobi",
+      "LUCCA (Villa Rosa Kempinski)": "LUCCA Villa Rosa Kempinski Chiromo Road Nairobi",
+      "Cafe Villa Rosa (Villa Rosa Kempinski)": "Cafe Villa Rosa Villa Rosa Kempinski Chiromo Road Nairobi",
+      "Sarabi Rooftop (Sankara Nairobi)": "Sarabi Rooftop Sankara 5 Woodvale Grove Westlands Nairobi",
+      "Balcony Bar (Villa Rosa Kempinski)": "Balcony Bar Villa Rosa Kempinski Chiromo Road Nairobi",
+      "Circle Art Gallery": "Circle Art Gallery Victoria Square Riara Road Nairobi",
+      "Kenya Cultural Centre": "Kenya Cultural Centre Harry Thuku Road Nairobi",
+      "Spring Valley Coffee (Spring Valley Shopping Centre)": "Spring Valley Coffee Spring Valley Shopping Centre Lower Kabete Road Nairobi",
+      "Osteria Romana (Sankara Nairobi)": "Osteria Romana Sankara 5 Woodvale Grove Westlands Nairobi",
+      "Le Grenier à Pain (Riverside)": "Le Grenier a Pain 9 Riverside Drive Nairobi",
+      "Jiko (Tribe Hotel)": "Jiko Tribe Hotel Village Market Gigiri Nairobi",
+      "Mandhari (Nairobi Serena Hotel)": "Mandhari Nairobi Serena Hotel Kenyatta Avenue Nairobi",
+      "Nairobi Street Kitchen": "Nairobi Street Kitchen Mpaka Road Westlands Nairobi",
+      "Kengele's Lavington Green": "Kengele's Lavington Green James Gichuru Road Nairobi",
+      "Le Grenier à Pain (Yaya Centre)": "Le Grenier a Pain Yaya Centre Argwings Kodhek Road Nairobi",
+      "K Lounge (Villa Rosa Kempinski)": "K Lounge Villa Rosa Kempinski Chiromo Road Nairobi",
+      "Spring Valley Coffee (Karen)": "Spring Valley Coffee Opportunity Factory Mbagathi Ridge Karen Nairobi"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Nairobi" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Museums, galleries, forests and a wildlife nursery, with breakfast spots, coffee, bakeries, dinners and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Nairobi National Museum","Sheldrick Wildlife Trust Nairobi Nursery","Karura Forest","Nairobi Gallery"];
+    cityGuide.tip = "The Talisman is closed on Mondays, while the Sheldrick nursery visit runs every day except 25 December and must be booked in advance.";
+    data.destinationFacts[cityKey] = "The Talisman is closed on Mondays, while the Sheldrick nursery visit runs every day except 25 December and must be booked in advance.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Museums, galleries, forests and a wildlife nursery, with breakfast spots, coffee, bakeries, dinners and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays at The Talisman",
+        "copy": "The Talisman is closed on Mondays. Circle Art Gallery closes on public holidays, and the Sheldrick nursery visit runs every day except 25 December."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book Sheldrick ahead",
+        "copy": "The Sheldrick Wildlife Trust nursery visit is by advance booking only through its Nairobi office, up to three months ahead, with no same-day or third-party bookings. KWS park entry fees are separate and paid online via eCitizen."
+      },
+      {
+        "label": "Payment",
+        "value": "Cashless entry",
+        "copy": "National Museums of Kenya sites take cashless payment via eCitizen, Karura Forest takes M-Pesa via eCitizen only, and the Nairobi Arboretum does not accept cash."
+      },
+      {
+        "label": "Rules",
+        "value": "Fixed times, smart casual",
+        "copy": "The Sheldrick nursery visit runs strictly from 11am to 12 noon and late arrivals do not extend it. At Villa Rosa Kempinski, Cafe Villa Rosa and the Balcony Bar are smart casual, and LUCCA is casual at lunch and smart casual at dinner."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Book the Sheldrick nursery visit well ahead, set up eCitizen for cashless museum and park payments, and plan dinner at The Talisman for Tuesday to Sunday.",
+      intro: [
+        "National Museums of Kenya lists its museum hours as Monday to Sunday, 8:30 a.m. to 5:30 p.m., all year including public holidays, with cashless payment through eCitizen. That covers Nairobi National Museum on Museum Hill, whose permanent galleries include the Cradle of Human Kind and the Story of Mammals, the Nairobi Snake Park at the same site, and Nairobi Gallery at the Kenyatta Avenue and Uhuru Highway roundabout, home to the Murumbi African Heritage Collections. In Lavington, Circle Art Gallery shows Sandra Wauye and Dickens Otieno from 18 November 2026 to 4 January 2027.",
+        "For wildlife, the Sheldrick Wildlife Trust's Nairobi Nursery sits inside Nairobi National Park, reached through the KWS Mbagathi Gate on Magadi Road. Its public visit runs strictly from 11am to 12 noon every day except 25 December, by advance booking only with the Trust's Nairobi office; same-day and third-party bookings are not accepted, and KWS park fees are paid separately online. For a greener walk, Karura Forest's main Gate A is off Limuru Road, with last entry at 17:30 and payment by M-Pesa via eCitizen, and the Nairobi Arboretum off State House Road admits you from 6:00am to 6:15pm and takes no cash.",
+        "Eating out splits between hotel restaurants and independent places. In Karen, The Talisman on Ngong Road is closed on Mondays and recommends booking ahead. In Westlands, Sankara Nairobi on Woodvale Grove houses Graze steakhouse, Osteria Romana and the Sarabi Rooftop, which the hotel says has live bands every weekend. Villa Rosa Kempinski on Chiromo Road serves Cafe Villa Rosa's breakfast buffet, open to the public at $30 per person, alongside LUCCA and the Balcony Bar.",
+        "For coffee, Spring Valley Coffee lists eight Nairobi cafés, including its Spring Valley Shopping Centre site on Lower Kabete Road and a Karen café at the Opportunity Factory on Mbagathi Ridge. Le Grenier à Pain bakes at 9 Riverside and Yaya Centre, and Pallet Café on James Gichuru Road works to train and employ disabled people and invites you to learn a few hand signs. Evenings can start at Nairobi Street Kitchen on Mpaka Road, which hosts Social Sundays from 3pm, or at Kengele's Lavington Green, which lists daily hours from 8am until late."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Start at Nairobi National Museum, open Monday to Sunday from 8:30 a.m. to 5:30 p.m., and add the Sheldrick nursery's 11am to 12 noon visit on any day except 25 December if you have booked ahead."
+        ],
+        [
+          "A slower morning",
+          "Walk Karura Forest from Gate A off Limuru Road, then have breakfast at Cafe Villa Rosa or coffee at Spring Valley Coffee on Lower Kabete Road."
+        ],
+        [
+          "Before booking",
+          "The Talisman in Karen is closed on Mondays, so plan dinner there for Tuesday to Sunday and reserve ahead."
+        ]
+      ],
+      trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on November 20, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

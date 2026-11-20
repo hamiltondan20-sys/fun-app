@@ -5,6 +5,807 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Nairobi, Kenya": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-11-20",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The Kenya Wildlife Service site (Nairobi National Park) failed with a certificate error, and Artcaffe, Connect Coffee, Ankole, Lord Erroll and the Kenya National Archives also failed on certificate or SSL errors; Kazuri Beads reset the connection, the Park Inn Attic rooftop page returned 403, and several restaurant domains did not resolve or were parked. Karen Blixen Museum, Giraffe Centre, Carnivore, Fairmont The Norfolk and several malls publish no exact street address, so they were left out. Hours are not published for Graze, LUCCA, the Balcony Bar, K Lounge, Spring Valley Coffee, Pallet Café, Nairobi Street Kitchen or the Kenya Cultural Centre; NMK hours come from its general rates page rather than each site's own page; Mandhari's hours come from a Serena page with a 2022 footer and Le Grenier à Pain's from an undated branch list. The Talisman, Le Grenier à Pain and Mandhari pages show no dated 2026 content. Cultiva's reservations page contained unrelated slot-game text, suggesting the site may be compromised. Two WebFetch summaries (Sankara homepage, Fairmont page) reported text addressed to an AI, but a second read of Sankara found none and neither report could be quoted, so both are treated as false flags.",
+    "sourceUrls": [
+      "docs/content-research/nairobi-2026-11-20.md",
+      "docs/content-research/nairobi-2026-11-20.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Nairobi National Park",
+        "url": "https://www.kws.go.ke/nairobi-national-park",
+        "checkedOn": "2026-11-20",
+        "reason": "Official KWS site failed with certificate error (\"unable to verify the first certificate\"); not bypassed"
+      },
+      {
+        "name": "Karen Blixen Museum",
+        "url": "https://museums.or.ke/karen-blixen/",
+        "checkedOn": "2026-11-20",
+        "reason": "Official NMK page gives no exact address, only \"Located 10km from the city centre\""
+      },
+      {
+        "name": "Giraffe Centre",
+        "url": "https://www.giraffecentre.org/about-us/",
+        "checkedOn": "2026-11-20",
+        "reason": "Official site gives only a P.O. Box and \"the Lang'ata suburb\"; no exact address. Site notes a closure on 28 March 2026 (since reopened per notice)"
+      },
+      {
+        "name": "Carnivore",
+        "url": "https://www.tamarind.co.ke/locations/carnivore",
+        "checkedOn": "2026-11-20",
+        "reason": "Official page gives no street address, only a map link"
+      },
+      {
+        "name": "Tamarind Brasserie (Tamambo, Karen)",
+        "url": "https://tamarind.co.ke/brasserie",
+        "checkedOn": "2026-11-20",
+        "reason": "Official page gives no street address, only a map link"
+      },
+      {
+        "name": "Roast The Hub",
+        "url": "https://tamarind.co.ke/locations/roast-the-hub",
+        "checkedOn": "2026-11-20",
+        "reason": "Location given only as the Hub Karen food court; Hub Karen site gives no street address"
+      },
+      {
+        "name": "The Hub Karen",
+        "url": "https://www.thehubkaren.com/contact-us/",
+        "checkedOn": "2026-11-20",
+        "reason": "Official site gives only a postal address and conflicting hours"
+      },
+      {
+        "name": "Village Market",
+        "url": "https://www.villagemarket-kenya.com/",
+        "checkedOn": "2026-11-20",
+        "reason": "Official site gives only a postal address"
+      },
+      {
+        "name": "Two Rivers Mall",
+        "url": "https://www.tworivers.co.ke/",
+        "checkedOn": "2026-11-20",
+        "reason": "Official homepage gives no address; footer contains unrelated spam links"
+      },
+      {
+        "name": "Java House",
+        "url": "https://javahouseafrica.com/contact-us/",
+        "checkedOn": "2026-11-20",
+        "reason": "Official site lists branch names only, no branch addresses or hours"
+      },
+      {
+        "name": "CJ's",
+        "url": "https://www.cjs.co.ke/",
+        "checkedOn": "2026-11-20",
+        "reason": "Official site lists branch names only, no addresses; no 2026 content"
+      },
+      {
+        "name": "Artcaffe",
+        "url": "https://www.artcaffe.co.ke/",
+        "checkedOn": "2026-11-20",
+        "reason": "Fetch failed with SSL error; not bypassed"
+      },
+      {
+        "name": "Bomas of Kenya",
+        "url": "https://bomasofkenya.go.ke/",
+        "checkedOn": "2026-11-20",
+        "reason": "Address given (Forest Edge Road, Langata) but no current operating evidence; latest dates are 2024"
+      },
+      {
+        "name": "GoDown Arts Centre",
+        "url": "https://www.thegodownartscentre.com/",
+        "checkedOn": "2026-11-20",
+        "reason": "Official domain redirects to an unrelated essay-writing site"
+      },
+      {
+        "name": "Fairmont The Norfolk",
+        "url": "https://www.fairmont.com/en/hotels/nairobi/fairmont-the-norfolk/dining.html",
+        "checkedOn": "2026-11-20",
+        "reason": "Official pages read give only a postal address (P.O. Box 58581); no street address found"
+      },
+      {
+        "name": "Hemingways Nairobi",
+        "url": "https://www.hemingways-collection.com/hemingways-nairobi",
+        "checkedOn": "2026-11-20",
+        "reason": "Nairobi hotel page returned 404; collection page gives only \"the leafy suburb of Karen\""
+      },
+      {
+        "name": "Kazuri Beads",
+        "url": "https://www.kazuri.com/",
+        "checkedOn": "2026-11-20",
+        "reason": "Fetch failed (connection reset); not bypassed"
+      },
+      {
+        "name": "Connect Coffee",
+        "url": "https://www.connectcoffee.co.ke/",
+        "checkedOn": "2026-11-20",
+        "reason": "Fetch failed: certificate has expired; not bypassed"
+      },
+      {
+        "name": "Ankole Grill",
+        "url": "https://ankole.co.ke/",
+        "checkedOn": "2026-11-20",
+        "reason": "Fetch failed with SSL error after redirect to ankole.co.ke"
+      },
+      {
+        "name": "Lord Erroll",
+        "url": "https://www.lorderroll.com/",
+        "checkedOn": "2026-11-20",
+        "reason": "Fetch failed with certificate error"
+      },
+      {
+        "name": "Kenya National Archives",
+        "url": "https://www.archives.go.ke/",
+        "checkedOn": "2026-11-20",
+        "reason": "Fetch failed: certificate rejected"
+      },
+      {
+        "name": "The Attic Rooftop (Park Inn by Radisson Westlands)",
+        "url": "https://www.radissonhotels.com/en-us/hotels/park-inn-nairobi-westlands/dining/the-attic-rooftop",
+        "checkedOn": "2026-11-20",
+        "reason": "Official page returned HTTP 403"
+      },
+      {
+        "name": "Fogo Gaucho",
+        "url": "https://www.fogogaucho.co.ke/",
+        "checkedOn": "2026-11-20",
+        "reason": "Official site returned HTTP 508"
+      },
+      {
+        "name": "Wasp & Sprout",
+        "url": "https://www.waspandsprout.com/",
+        "checkedOn": "2026-11-20",
+        "reason": "Location only in page title; no hours or current operating evidence"
+      },
+      {
+        "name": "One Off Contemporary Art Gallery",
+        "url": "https://www.oneoffcontemporaryart.com/",
+        "checkedOn": "2026-11-20",
+        "reason": "Open by appointment only; no dated exhibitions; closure notice without a year"
+      },
+      {
+        "name": "Paradise Lost",
+        "url": "https://www.paradiselost.co.ke/",
+        "checkedOn": "2026-11-20",
+        "reason": "Official homepage gives no address or hours"
+      },
+      {
+        "name": "Mercado",
+        "url": "https://www.mercado.co.ke/",
+        "checkedOn": "2026-11-20",
+        "reason": "Official page has no readable content"
+      },
+      {
+        "name": "Ole Sereni",
+        "url": "https://www.olesereni.com/",
+        "checkedOn": "2026-11-20",
+        "reason": "Domain redirects to a domain-for-sale page"
+      },
+      {
+        "name": "Seven Seafood",
+        "url": "https://www.sevenseafood.com/",
+        "checkedOn": "2026-11-20",
+        "reason": "Domain redirects to a domain-for-sale page"
+      },
+      {
+        "name": "Mawimbi",
+        "url": "https://www.mawimbi.co.ke/",
+        "checkedOn": "2026-11-20",
+        "reason": "Domain belongs to an unrelated Mombasa residence"
+      },
+      {
+        "name": "Uhuru Gardens Memorial Park",
+        "url": "https://museums.or.ke/uhuru-gardens-memorial-park/",
+        "checkedOn": "2026-11-20",
+        "reason": "Guessed NMK page returned 404; no official page found"
+      },
+      {
+        "name": "Nairobi Railway Museum",
+        "url": "https://krc.co.ke/",
+        "checkedOn": "2026-11-20",
+        "reason": "No official page found; Kenya Railways site fetch failed"
+      },
+      {
+        "name": "Nyama Mama",
+        "url": "https://www.nyamamama.com/",
+        "checkedOn": "2026-11-20",
+        "reason": "Official domain did not resolve (DNS)"
+      },
+      {
+        "name": "About Thyme",
+        "url": "https://www.aboutthyme.co.ke/",
+        "checkedOn": "2026-11-20",
+        "reason": "Official domain did not resolve (DNS)"
+      },
+      {
+        "name": "INTI Nikkei",
+        "url": "https://www.inti.co.ke/",
+        "checkedOn": "2026-11-20",
+        "reason": "Guessed official domain did not resolve"
+      },
+      {
+        "name": "Haandi",
+        "url": "https://www.haandi-restaurants.com/",
+        "checkedOn": "2026-11-20",
+        "reason": "Official domain did not resolve"
+      },
+      {
+        "name": "Dormans Coffee",
+        "url": "https://www.dormans-coffee.com/",
+        "checkedOn": "2026-11-20",
+        "reason": "Guessed official domain did not resolve"
+      },
+      {
+        "name": "Brew Bistro",
+        "url": "https://www.brewbistro.co.ke/",
+        "checkedOn": "2026-11-20",
+        "reason": "Guessed official domain did not resolve"
+      },
+      {
+        "name": "The Social House",
+        "url": "https://www.thesocialhouse.co.ke/",
+        "checkedOn": "2026-11-20",
+        "reason": "Official domain did not resolve (DNS)"
+      },
+      {
+        "name": "Mama Rocks",
+        "url": "https://www.mamarocks.co.ke/",
+        "checkedOn": "2026-11-20",
+        "reason": "Guessed official domain did not resolve"
+      },
+      {
+        "name": "Ngong Road Forest Sanctuary",
+        "url": "https://www.ngongforest.org/",
+        "checkedOn": "2026-11-20",
+        "reason": "Official domain did not resolve"
+      },
+      {
+        "name": "KICC",
+        "url": "https://www.kicc.co.ke/",
+        "checkedOn": "2026-11-20",
+        "reason": "Official domain did not resolve"
+      },
+      {
+        "name": "Trademark Hotel (Hero Bar)",
+        "url": "https://www.trademarkhotel.com/",
+        "checkedOn": "2026-11-20",
+        "reason": "Connection refused"
+      },
+      {
+        "name": "Early park drive",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Craft market visit",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A city garden or gallery afternoon",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Kenyan tasting menu",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Nairobi coffee stop",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Dinner in Karen",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Westlands",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in City Centre",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Karen",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Karen walk",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Westlands",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around City Centre",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through City Centre",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Nairobi National Park",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Karen",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Early park drive",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Westlands",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Karen Blixen Museum",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Karen evening",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Westlands",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near City Centre",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Karen",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Nairobi National Park",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Westlands",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near City Centre",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Karen",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Nairobi National Park",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Karen cafe or market",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Craft market visit",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in City Centre",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of City Centre",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Karen",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Karen",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Westlands bakery or market",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Nairobi National Park",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through City Centre",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Karen",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Karen Blixen Museum",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around City Centre",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Karen",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Westlands",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in City Centre",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Karen",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Karen",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Westlands",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Giraffe Centre",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Karen",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Westlands morning market",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Nairobi National Park",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near City Centre",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Karen",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Westlands",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near City Centre",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Cultiva",
+        "url": "https://www.cultivakenya.com/",
+        "checkedOn": "2026-11-20",
+        "reason": "Dropped at apply time: the reviewer found unrelated slot-game text on its booking page, so the site may be compromised; not linked from the guide."
+      }
+    ],
+    "placeSources": {
+      "Nairobi National Museum": {
+        "url": "https://museums.or.ke/nairobi-national-museum/",
+        "sourceType": "official public operator (National Museums of Kenya)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "NMK site links \"Our New Rates 2026\" and lists 2026 events; the museum page describes permanent galleries including \"the Cradle of Human Kind\" and \"the Story of Mammals\"."
+      },
+      "Nairobi Gallery": {
+        "url": "https://museums.or.ke/nairobi-gallery/",
+        "sourceType": "official public operator (National Museums of Kenya)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Displays the \"Murumbi African Heritage Collections\"; Pioneer Art Gallery hosts temporary exhibitions; NMK lists 2026 rates."
+      },
+      "Nairobi Snake Park": {
+        "url": "https://museums.or.ke/nairobi-snake-park/",
+        "sourceType": "official public operator (National Museums of Kenya)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Listed among NMK's Nairobi sites on the current rates page, which links \"Our New Rates 2026\"."
+      },
+      "Sheldrick Wildlife Trust Nairobi Nursery": {
+        "url": "https://www.sheldrickwildlifetrust.org/nursery-visit",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Current booking rules: \"by advance booking only\", no same-day bookings, bookings up to three months ahead; refers to KWS fees raised \"from 1 October 2025\"."
+      },
+      "Karura Forest": {
+        "url": "https://www.friendsofkarura.org/essential-information",
+        "sourceType": "operator's own site (Friends of Karura Forest, co-manager)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Homepage news dated 14 March, 25 March and 29 May 2026; annual passes and dog licences on sale online."
+      },
+      "Nairobi Arboretum": {
+        "url": "https://nairobiarboretum.org/visitor-information/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Current visitor information with payment rules (\"Cash payments are not accepted\"); footer © 2026."
+      },
+      "Circle Art Gallery": {
+        "url": "https://www.circleartagency.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Current exhibitions: Sandra Wauye, \"A Chestnut Tree in the Courtyard\", and Dickens Otieno, \"Dry Spell\", both 18 November 2026 to 4 January 2027."
+      },
+      "Kenya Cultural Centre": {
+        "url": "https://www.kenyaculturalcentre.go.ke/",
+        "sourceType": "official public operator (Kenya Cultural Centre)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Links November 2026 newsletters, including a weekly edition for 16th to 22nd November; bookings via kenyaculturalcentre.ecitizen.go.ke."
+      },
+      "Sarabi Rooftop (Sankara Nairobi)": {
+        "url": "https://www.sankara.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Homepage lists current happenings including \"Sarabi Sessions\" rooftop music and an Italian gastronomy week (2026 page slug); dining page mentions \"live bands every weekend\"."
+      },
+      "Graze (Sankara Nairobi)": {
+        "url": "https://www.sankara.com/dining",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Dining page describes the steakhouse with \"a Josper fire grill, live kitchen\", terrace and chef's table; page carries 2026 image uploads."
+      },
+      "Osteria Romana (Sankara Nairobi)": {
+        "url": "https://www.sankara.com/dining",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "All-day Italian caffè with pastries, buffet breakfast, lunch and dinner on the terrace; \"The caffé transitions into the bar from 6pm.\""
+      },
+      "The Talisman": {
+        "url": "https://www.thetalismanrestaurant.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Weekly hours and booking notice: \"The Talisman highly recommends that our diners reserve a table in advance.\" No dated 2026 content seen."
+      },
+      "Zen Garden": {
+        "url": "https://www.zengarden.co.ke/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "\"New Menu\" links \"Zen-Garden-Full-Menu-2026.pdf\"; table booking link."
+      },
+      "Mandhari (Nairobi Serena Hotel)": {
+        "url": "https://www.serenahotels.com/nairobi",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Hotel page lists the fine dining restaurant with lunch and dinner hours; no 2026 date on the page (footer © 2022)."
+      },
+      "Jiko (Tribe Hotel)": {
+        "url": "https://www.tribe-hotel.com/jiko/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Page last modified 31 March 2026; seasonal menu \"a tribute to local farmers\"; enquiries by email."
+      },
+      "LUCCA (Villa Rosa Kempinski)": {
+        "url": "https://www.kempinski.com/en/nairobi/hotel-villa-rosa/dining/restaurants/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Listed as traditional Italian à la carte, open to non-hotel guests; casual at lunch, smart casual at dinner; footer © 2026."
+      },
+      "Cafe Villa Rosa (Villa Rosa Kempinski)": {
+        "url": "https://www.kempinski.com/en/nairobi/hotel-villa-rosa/dining/restaurants/cafe-villa-rosa/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Buffet of \"over 100 items\" at $30 per person, open to the public; Sunday Brunch dated 01 November 2026."
+      },
+      "Balcony Bar (Villa Rosa Kempinski)": {
+        "url": "https://www.kempinski.com/en/nairobi/hotel-villa-rosa/dining/bars/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Current dining listing: light bites, drinks and cocktails, open to non-hotel guests, smart casual; footer © 2026."
+      },
+      "K Lounge (Villa Rosa Kempinski)": {
+        "url": "https://www.kempinski.com/en/nairobi/hotel-villa-rosa/dining/bars/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Lobby lounge with Kenyan teas, coffees, pastries and \"a daily afternoon tea\"; footer © 2026."
+      },
+      "Nairobi Street Kitchen": {
+        "url": "https://www.nairobistreetkitchen.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Recurring events: Social Sundays \"Every Sunday from 3pm\", Street Thursdaze and Latino Night on Thursdays; footer © 2026."
+      },
+      "Kengele's Lavington Green": {
+        "url": "https://tamarind.co.ke/locations/kengeles",
+        "sourceType": "operator's own site (Tamarind Group)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Dated events on 22 and 26 November 2026; footer © 2026 Tamarind Group."
+      },
+      "Spring Valley Coffee (Spring Valley Shopping Centre)": {
+        "url": "https://www.springvalleycoffee.com/pages/cafes",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Current café list of eight Nairobi sites; homepage cites Global Coffee Awards 2026 and London Coffee Festival Awards 2026."
+      },
+      "Spring Valley Coffee (Karen)": {
+        "url": "https://www.springvalleycoffee.com/pages/cafes",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Listed on the current café page; homepage carries 2026 awards."
+      },
+      "Le Grenier à Pain (Riverside)": {
+        "url": "https://www.legrenierapain.co.ke/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Branch list with hours and online ordering hours; no dated 2026 content seen."
+      },
+      "Le Grenier à Pain (Yaya Centre)": {
+        "url": "https://www.legrenierapain.co.ke/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Branch list with hours; no dated 2026 content seen."
+      },
+      "Pallet Café": {
+        "url": "https://www.palletcafe.co.ke/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Menu PDF linked from December 2025; mission of \"promoting the training and employment of the disabled in the food service community\"."
+      }
+    }
+  },
   "Udaipur, India": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-11-20",
