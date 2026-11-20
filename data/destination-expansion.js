@@ -10919,4 +10919,111 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 17 distinct recommendations in this guide were checked against their operators' own websites on November 17, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Udaipur, India: source review of 2026-11-20 (docs/content-research/udaipur-2026-11-20.md).
+  {
+    const cityKey = "Udaipur, India";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["City Palace Museum","Crystal Gallery (Fateh Prakash Palace)","Jagmandir Island Palace Excursion","Bagore Ki Haveli Museum"],
+      bestFirstTimers: ["City Palace Museum","Jagmandir Island Palace Excursion","Bagore Ki Haveli Museum","Jharokha (Jagat Niwas Palace)"],
+      bestRestaurants: ["Sheesh Mahal (The Leela Palace Udaipur)","Mewar by Vineet (The Oberoi Udaivilas)","Ambrai","Sawai Kitchen (Raffles Udaipur)"],
+      bestBudget: ["Bagore Ki Haveli Museum","Garden Restaurant (Garden Hotel)","Vintage & Classic Car Collection","Garden Kebabs (Garden Hotel)"],
+      bestLuxury: ["Suryamahal and Chandni (The Oberoi Udaivilas)","Sheesh Mahal (The Leela Palace Udaipur)","Sawai Kitchen (Raffles Udaipur)","The Darikhana (Jagmandir Island Palace)"],
+      bestCouples: ["Jagmandir Island Palace Excursion","Chandani (Jagat Niwas Palace)","Ambrai","The Library Bar (The Leela Palace Udaipur)"],
+      bestKids: ["Vintage & Classic Car Collection","Jagmandir Island Palace Excursion","Bagore Ki Haveli Museum","Garden Kebabs (Garden Hotel)"],
+      bestSolo: ["City Palace Museum","Crystal Gallery (Fateh Prakash Palace)","Palki Khana (Shiv Niwas Palace)","The Writers Bar (Raffles Udaipur)"],
+      bestUnique: ["Crystal Gallery (Fateh Prakash Palace)","Jagmandir Island Palace Excursion","Vintage & Classic Car Collection","Picholi Bar (Jagmandir Island Palace)"],
+      bestBreakfast: ["Jharokha (Jagat Niwas Palace)","The Dining Room (The Leela Palace Udaipur)","Paantya (Shiv Niwas Palace)","Aravalli (Trident Udaipur)"],
+      bestLunch: ["Garden Restaurant (Garden Hotel)","Mewar by Vineet (The Oberoi Udaivilas)","The Darikhana (Jagmandir Island Palace)","Suryamahal and Chandni (The Oberoi Udaivilas)"],
+      bestDinner: ["Sheesh Mahal (The Leela Palace Udaipur)","Ambrai","Chandani (Jagat Niwas Palace)","Sawai Kitchen (Raffles Udaipur)"],
+      bestCocktails: ["The Library Bar (The Leela Palace Udaipur)","Global Bar (Jagat Niwas Palace)","The Writers Bar (Raffles Udaipur)","The Bar (The Oberoi Udaivilas)"],
+      bestBakeries: ["Raffles Patisserie (Raffles Udaipur)","The Tea Room (Raffles Udaipur)"],
+      bestCoffee: ["Palki Khana (Shiv Niwas Palace)","Raffles Patisserie (Raffles Udaipur)","The Tea Room (Raffles Udaipur)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "City Palace Museum": "City Palace Museum City Palace Road Udaipur",
+      "Crystal Gallery (Fateh Prakash Palace)": "Crystal Gallery Fateh Prakash Palace City Palace Udaipur",
+      "Jagmandir Island Palace Excursion": "Rameshwar Ghat Jetty City Palace Udaipur",
+      "Bagore Ki Haveli Museum": "Bagore Ki Haveli Gangaur Ghat Udaipur",
+      "Jharokha (Jagat Niwas Palace)": "Jharokha Jagat Niwas Palace 23-25 Lalghat Udaipur",
+      "Sheesh Mahal (The Leela Palace Udaipur)": "Sheesh Mahal The Leela Palace Lake Pichola Udaipur",
+      "Mewar by Vineet (The Oberoi Udaivilas)": "Mewar by Vineet The Oberoi Udaivilas Lake Pichola Udaipur",
+      "Ambrai": "Ambrai Hanuman Ghat Road Chandpole Udaipur",
+      "Sawai Kitchen (Raffles Udaipur)": "Sawai Kitchen Raffles Udaipur Lakeshore Arrival Udaipur",
+      "Garden Restaurant (Garden Hotel)": "Garden Restaurant Garden Hotel Udaipur",
+      "Vintage & Classic Car Collection": "Vintage and Classic Car Collection Garden Hotel Udaipur",
+      "Garden Kebabs (Garden Hotel)": "Garden Kebabs Garden Hotel Udaipur",
+      "Suryamahal and Chandni (The Oberoi Udaivilas)": "Suryamahal The Oberoi Udaivilas Lake Pichola Udaipur",
+      "The Darikhana (Jagmandir Island Palace)": "Darikhana Jagmandir Island Palace Lake Pichola Udaipur",
+      "Chandani (Jagat Niwas Palace)": "Chandani Jagat Niwas Palace 23-25 Lalghat Udaipur",
+      "The Library Bar (The Leela Palace Udaipur)": "The Library Bar The Leela Palace Lake Pichola Udaipur",
+      "Palki Khana (Shiv Niwas Palace)": "Palki Khana Shiv Niwas Palace City Palace Udaipur",
+      "The Writers Bar (Raffles Udaipur)": "The Writers Bar Raffles Udaipur Lakeshore Arrival Udaipur",
+      "Picholi Bar (Jagmandir Island Palace)": "Picholi Bar Jagmandir Island Palace Lake Pichola Udaipur",
+      "The Dining Room (The Leela Palace Udaipur)": "The Dining Room The Leela Palace Lake Pichola Udaipur",
+      "Paantya (Shiv Niwas Palace)": "Paantya Shiv Niwas Palace City Palace Udaipur",
+      "Aravalli (Trident Udaipur)": "Aravalli Trident Malla Talai Chowk Trident Road Udaipur",
+      "Global Bar (Jagat Niwas Palace)": "Global Bar Jagat Niwas Palace 23-25 Lalghat Udaipur",
+      "The Bar (The Oberoi Udaivilas)": "The Bar The Oberoi Udaivilas Lake Pichola Udaipur",
+      "Raffles Patisserie (Raffles Udaipur)": "Raffles Patisserie Raffles Udaipur Lakeshore Arrival Udaipur",
+      "The Tea Room (Raffles Udaipur)": "The Tea Room Raffles Udaipur Lakeshore Arrival Udaipur"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Udaipur" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Palace museums, a Lake Pichola island excursion and a cultural-centre haveli, with lakeside breakfasts, Rajasthani dinners, a patisserie and bars checked against their own websites.";
+    cityGuide.highlights = ["City Palace Museum","Crystal Gallery (Fateh Prakash Palace)","Jagmandir Island Palace Excursion","Bagore Ki Haveli Museum"];
+    cityGuide.tip = "None of the official sites checked names a weekly closing day, so plan around stated hours instead: the Crystal Gallery closes at 6.30 pm, while HRH's 2026 site lists the City Palace Museum until 9.00 pm.";
+    data.destinationFacts[cityKey] = "None of the official sites checked names a weekly closing day, so plan around stated hours instead: the Crystal Gallery closes at 6.30 pm, while HRH's 2026 site lists the City Palace Museum until 9.00 pm.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Palace museums, a Lake Pichola island excursion and a cultural-centre haveli, with lakeside breakfasts, Rajasthani dinners, a patisserie and bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "None published",
+        "copy": "None of the sites checked names a weekly closing day. The Leela and Raffles list their restaurants as open daily, and The Oberoi Udaivilas says The Bar opens seven days a week."
+      },
+      {
+        "label": "Tickets",
+        "value": "Pay per sight",
+        "copy": "HRH lists City Palace Museum adult entry at Rs.400 including camera, and the Crystal Gallery at Rs.500 for adults. Bagore Ki Haveli lists Indian adults at Rs.60 and foreigners at Rs.150."
+      },
+      {
+        "label": "Booking",
+        "value": "Reserve ahead",
+        "copy": "Jagat Niwas Palace needs Rajasthani thali orders 24 hours ahead and releases tables after 15 minutes. The Leela recommends booking Sheesh Mahal in advance for outdoor seating, and Ambrai asks you to reserve a table."
+      },
+      {
+        "label": "Rules",
+        "value": "Cameras and access",
+        "copy": "Photography is strictly prohibited in the Crystal Gallery, and Jagat Niwas Palace does not allow outside food or drink."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Pair the City Palace sights with a boat to Jagmandir Island Palace, and book lakeside dinners and thalis at least a day ahead.",
+      intro: [
+        "Udaipur's City Palace complex holds several separately ticketed sights. HRH Hotels' 2026 site lists the City Palace Museum from 9.00 am to 9.00 pm, with adult entry at Rs.400 including camera, and audio guides in English, German, French and Spanish for Rs.200. Inside Fateh Prakash Palace, the Crystal Gallery shows the Osler crystal Maharana Sajjan Singh ordered in 1877; it opens 9.00 am to 6.30 pm, and photography is strictly prohibited. Outside the palace, the Vintage & Classic Car Collection fills the former Mewar State Motor Garage at the Garden Hotel.",
+        "On Lake Pichola, HRH runs excursions from Rameshwar Ghat to Jagmandir Island Palace, passing the City Palace facade, Bagore ki Haveli and Gangaur Ghat. The fare includes the Jagriti heritage exhibition on the island, and you can stay on for a meal at The Darikhana or a drink at the Picholi Bar, both listed from 10:00 am to 10:30 pm. Back on shore at Gangaur Ghat, Bagore Ki Haveli is run by the West Zone Cultural Centre, which lists Indian adult tickets at Rs.60 and foreigner tickets at Rs.150.",
+        "Lakeside hotels carry much of the dining. At The Leela Palace Udaipur, Sheesh Mahal serves Rajasthani and North-West Frontier dinners from 7:00 pm, and the hotel recommends booking ahead for outdoor seating; The Dining Room starts breakfast at 7:00 am. The Oberoi Udaivilas lists Suryamahal and Chandni from 7:00 am to 10:30 pm, with Chandni open only from October to March. In the old city, Jagat Niwas Palace asks for Rajasthani thali orders 24 hours ahead and holds tables for 15 minutes, while Ambrai, serving since 1998, asks you to reserve in advance.",
+        "For an evening drink, The Library Bar at The Leela opens from 3:00 pm to 11:00 pm, the Global Bar at Jagat Niwas Palace from 11:00, and The Bar at The Oberoi Udaivilas from noon until midnight seven days a week. Raffles Udaipur's undated dining pages list its Patisserie and Tea Room daily from 7.00 am to 11.00 pm, with viennoiserie and cakes baked daily, and The Writers Bar pairs classic cocktails with afternoon tea. None of the sites checked names a weekly closing day."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Start at the City Palace Museum, then take HRH's boat from Rameshwar Ghat to Jagmandir Island Palace, where the fare includes the Jagriti exhibition."
+        ],
+        [
+          "A slower morning",
+          "Have breakfast at Jharokha in Jagat Niwas Palace from 07:30 or at The Dining Room at The Leela from 7:00 am, then walk to Bagore Ki Haveli on Gangaur Ghat."
+        ],
+        [
+          "Before booking",
+          "No checked site names a weekly closing day, but reserve Sheesh Mahal, Ambrai and Jagat Niwas thalis ahead, and remember photography is banned in the Crystal Gallery."
+        ]
+      ],
+      trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on November 20, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

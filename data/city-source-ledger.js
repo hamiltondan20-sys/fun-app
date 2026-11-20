@@ -5,6 +5,616 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Udaipur, India": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-11-20",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and ticket details do not guarantee availability. HRH Hotels' pages (City Palace Museum, Crystal Gallery, car collection, Shiv Niwas, Garden Hotel and Jagmandir venues) give no street addresses, only named palace buildings, and list no closing days; HRH's published boat fares were valid only to 31 March 2026, so current fares were not confirmed, and boat hours are given only for undefined summer and winter seasons. The City Palace Museum's own site carries a 2025 footer and its e-ticket site failed with a certificate error. Raffles Udaipur's dining pages are undated; Ambrai's site is dated 2025 and publishes no hours; Palki Khana, the car collection and Bagore Ki Haveli publish no hours. The Leela's bar and Dining Room menus are labelled 2023. Sites that could not be read: Taj Lake Palace (HTTP 403), Hotel Lake Pichola/Upre (connection reset), Rajasthan museums department (DNS failure). Jagdish Temple, Sajjangarh/Monsoon Palace, Jheel's, Millets of Mewar and Bharatiya Lok Kala Mandal had no official site found. The Mewar Sound and Light Show is suspended till further notice. Two WebFetch reports of AI-addressed text (Leela home page, Garden Hotel contact page) only echoed the review prompt and were not reproduced on re-read, so they are not listed.",
+    "sourceUrls": [
+      "docs/content-research/udaipur-2026-11-20.md",
+      "docs/content-research/udaipur-2026-11-20.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Lake Pichola",
+        "checkedOn": "2026-11-20",
+        "reason": "A lake, not an operated place; covered through Jagmandir Island Palace Excursion and lakeside venues."
+      },
+      {
+        "name": "Jagdish Temple",
+        "checkedOn": "2026-11-20",
+        "reason": "No official operator website found; general listings only."
+      },
+      {
+        "name": "Monsoon Palace view (Sajjangarh)",
+        "checkedOn": "2026-11-20",
+        "reason": "No official Forest Department page found; only news, blogs and tourism listings with conflicting hours."
+      },
+      {
+        "name": "Mewar Sound and Light Show (Manek Chowk)",
+        "url": "https://www.hrhhotels.com/mewar-sound-and-light-show.php",
+        "checkedOn": "2026-11-20",
+        "reason": "Operator page says it \"is currently not showing at the Manek Chowk, City Palace, till further notice.\""
+      },
+      {
+        "name": "The Promenade (The Oberoi Udaivilas)",
+        "url": "https://www.oberoihotels.com/hotels-in-udaipur-udaivilas-resort/dining/the-promenade",
+        "checkedOn": "2026-11-20",
+        "reason": "Open to residents only: \"for the exclusive use of our resident guests only.\""
+      },
+      {
+        "name": "Shilpgram",
+        "url": "https://wzccindia.com/shilpgram-the-rural-arts-and-crafts-complex/",
+        "checkedOn": "2026-11-20",
+        "reason": "Operator (WZCC) gives only \"located at 3 km in West of Udaipur\"; no exact address published."
+      },
+      {
+        "name": "Dharohar Folk Dance Show (Bagore Ki Haveli)",
+        "url": "https://wzccindia.com/dharohar-folk-dance-show/",
+        "checkedOn": "2026-11-20",
+        "reason": "Operator page has only a title and a 2023 post; no schedule or current evidence."
+      },
+      {
+        "name": "Taj Lake Palace restaurants",
+        "url": "https://www.tajhotels.com/en-in/hotels/taj-lake-palace-udaipur",
+        "checkedOn": "2026-11-20",
+        "reason": "Official site returned HTTP 403 Forbidden."
+      },
+      {
+        "name": "Upre by 1559 AD (Hotel Lake Pichola)",
+        "url": "https://www.lakepicholahotel.com/",
+        "checkedOn": "2026-11-20",
+        "reason": "Official site fetch failed (connection reset)."
+      },
+      {
+        "name": "City Palace Museum e-ticketing",
+        "url": "https://eticket.citypalacemuseum.org/counter/733995013915",
+        "checkedOn": "2026-11-20",
+        "reason": "Ticket site failed with certificate error (\"unable to verify the first certificate\"); museum confirmed from other official pages."
+      },
+      {
+        "name": "Government Museum (Karan Vilas, City Palace)",
+        "url": "https://museumsrajasthan.gov.in/",
+        "checkedOn": "2026-11-20",
+        "reason": "Rajasthan museums department site did not resolve (DNS failure); no other official page."
+      },
+      {
+        "name": "Millets of Mewar",
+        "checkedOn": "2026-11-20",
+        "reason": "Official website not found (tried domain did not resolve)."
+      },
+      {
+        "name": "Jheel's Ginger Coffee Bar & Bakery",
+        "checkedOn": "2026-11-20",
+        "reason": "No official website found; review sites and blogs only."
+      },
+      {
+        "name": "Bharatiya Lok Kala Mandal",
+        "checkedOn": "2026-11-20",
+        "reason": "No official website found; third-party listings only."
+      },
+      {
+        "name": "Lake boat ride",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Craft market walk",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "a rooftop Rajasthani dinner",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Udaipur market or cafe",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local dinner in Old City",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Lake Pichola",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Rani Road",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Old City",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Old City walk",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Lake Pichola",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Rani Road",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Rani Road",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for City Palace",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Old City",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Lake boat ride",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Lake Pichola",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Lake Pichola",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Old City evening",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Lake Pichola",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Rani Road",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Old City",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly City Palace",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Lake Pichola",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Rani Road",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Old City",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to City Palace",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Old City cafe or market",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Monsoon Palace view",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Rani Road",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Rani Road",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Old City",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Old City",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Lake Pichola bakery or market",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before City Palace",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Rani Road",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Old City",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Lake Pichola",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Rani Road",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Old City",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Lake Pichola",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Rani Road",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Old City",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Old City",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Lake Pichola",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Jagdish Temple",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Old City",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Lake Pichola morning market",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before City Palace",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Rani Road",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Old City",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Lake Pichola",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Rani Road",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "City Palace Museum": {
+        "url": "https://www.hrhhotels.com/city-palace-museum.php",
+        "sourceType": "operator group's own site (HRH Hotels / Eternal Mewar); cross-checked at https://www.citypalacemuseum.org/planyourvisit",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "HRH page (footer \"(c) Copyright 2026\") lists current tariffs: \"Rs.400 per Adult (age of 18 upto 60 years) {Inclusive of Camera}\", audio guide \"Rs.200\". Museum site (footer (c) 2025) has a live \"Book Tickets\" link; the e-ticket site failed with a certificate error."
+      },
+      "Crystal Gallery (Fateh Prakash Palace)": {
+        "url": "https://www.hrhhotels.com/crystal-gallery.php",
+        "sourceType": "operator's own site (HRH Hotels)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Page (footer \"(c) Copyright 2026\") lists tickets \"500/-\" adult and \"300/-\" child, and states \"Photography is strictly prohibited in Crystal Gallery\"."
+      },
+      "Vintage & Classic Car Collection": {
+        "url": "https://www.hrhhotels.com/vintage-classic-car-collection.php",
+        "sourceType": "operator's own site (HRH Hotels)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Page (footer \"(c) Copyright 2026\") lists tickets Adult 330, Child 200; opened to the public \"15th February 2000\"."
+      },
+      "Jagmandir Island Palace Excursion": {
+        "url": "https://www.hrhhotels.com/boat-charters.php",
+        "sourceType": "operator's own site (HRH Hotels)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Boat page lists regular and sunset excursions and charters; published fares are marked \"with effect from 01-04-2025 to 31-03-2026\" (expired). Jagriti page (2026 footer): \"Visit to Jagriti is included in the fee for the Boat Ride / Boat Charter.\""
+      },
+      "Bagore Ki Haveli Museum": {
+        "url": "https://wzccindia.com/bagore-ki-haveli-museum-a-historical-place/",
+        "sourceType": "official public operator (West Zone Cultural Centre, Ministry of Culture)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Operator site carries notices dated November 2026 (e.g. 16 November 2026) and lists tickets \"Indian Adult: 60/-\", \"Foreigner: 150/-\", \"Camera/Video: 60/-\"."
+      },
+      "The Darikhana (Jagmandir Island Palace)": {
+        "url": "https://hrhhotels.com/hotels/jagmandir_island_palace/drink-dine.php",
+        "sourceType": "operator's own site (HRH Hotels)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Page (footer \"All rights reserved 2026\") describes international cuisine, an evening a la carte menu and \"a four-course dinner\"."
+      },
+      "Picholi Bar (Jagmandir Island Palace)": {
+        "url": "https://hrhhotels.com/hotels/jagmandir_island_palace/drink-dine.php",
+        "sourceType": "operator's own site (HRH Hotels)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Page (2026 footer) lists wine and beer service in \"the Palace of Twelve Stones\"."
+      },
+      "Paantya (Shiv Niwas Palace)": {
+        "url": "https://www.hrhhotels.com/hotels/shiv_niwas_palace/drink-dine.php",
+        "sourceType": "operator's own site (HRH Hotels)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Page (\"All rights reserved 2026\") lists Continental, Mughlai and Rajasthani food for breakfast, lunch and dinner."
+      },
+      "Palki Khana (Shiv Niwas Palace)": {
+        "url": "https://www.hrhhotels.com/hotels/shiv_niwas_palace/drink-dine.php",
+        "sourceType": "operator's own site (HRH Hotels)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Page (2026 footer) describes a European-style cafe with a coffee bar, light snacks, lunch and dinner."
+      },
+      "Garden Restaurant (Garden Hotel)": {
+        "url": "https://www.hrhhotels.com/hotels/garden_hotel/drink-dine.php",
+        "sourceType": "operator's own site (HRH Hotels)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Page (\"All rights reserved 2026\") describes an \"Authentic Vegetarian Thali Restaurant\"."
+      },
+      "Garden Kebabs (Garden Hotel)": {
+        "url": "https://www.hrhhotels.com/hotels/garden_hotel/drink-dine.php",
+        "sourceType": "operator's own site (HRH Hotels)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Page (2026 footer) lists an open-air barbecue and multi-cuisine venue for lunch, between-meals and dinner."
+      },
+      "Suryamahal and Chandni (The Oberoi Udaivilas)": {
+        "url": "https://www.oberoihotels.com/hotels-in-udaipur-udaivilas-resort/dining/suryamahal-and-chandni",
+        "sourceType": "operator's own site (Oberoi Hotels & Resorts)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Page (\"(c) 2026 Oberoi Hotels & Resorts\") says both are \"open for breakfast, lunch and dinner\" and takes reservation requests; dining index says Chandni operates only October to March."
+      },
+      "Mewar by Vineet (The Oberoi Udaivilas)": {
+        "url": "https://www.oberoihotels.com/hotels-in-udaipur-udaivilas-resort/dining/mewar-by-vineet",
+        "sourceType": "operator's own site (Oberoi Hotels & Resorts)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Page (2026 footer) describes cooking \"Inspired by the culinary heritage of the Mewar kingdom\" with an online reservation form; resort page cites 2026 awards."
+      },
+      "The Bar (The Oberoi Udaivilas)": {
+        "url": "https://www.oberoihotels.com/hotels-in-udaipur-udaivilas-resort/dining/the-bar",
+        "sourceType": "operator's own site (Oberoi Hotels & Resorts)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Page (2026 site) says \"Open from noon until midnight seven days a week\"."
+      },
+      "Sheesh Mahal (The Leela Palace Udaipur)": {
+        "url": "https://www.theleela.com/the-leela-palace-udaipur/restaurants/sheesh-mahal",
+        "sourceType": "operator's own site (The Leela Palaces, Hotels and Resorts)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Food menu link labelled \"sheesh-mahal-menu-aug-2026\"; FAQ says it operates daily and recommends booking in advance for outdoor seating."
+      },
+      "The Dining Room (The Leela Palace Udaipur)": {
+        "url": "https://www.theleela.com/the-leela-palace-udaipur/restaurants/the-dining-room",
+        "sourceType": "operator's own site (The Leela Palaces, Hotels and Resorts)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Page (\"(c)2026\") lists daily breakfast, lunch and dinner; \"Advance table reservations are recommended\" for lake-view tables. Menu PDFs labelled 2023-10."
+      },
+      "The Library Bar (The Leela Palace Udaipur)": {
+        "url": "https://www.theleela.com/the-leela-palace-udaipur/restaurants/the-library-bar",
+        "sourceType": "operator's own site (The Leela Palaces, Hotels and Resorts)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Page (\"(c)2026\") lists single malts, cognacs, wines and \"artisanal cocktails\", with table reservations by phone. Menu PDFs labelled 2023-10."
+      },
+      "Ambrai": {
+        "url": "https://www.amethaveliudaipur.com/dining",
+        "sourceType": "operator's own site (Amet Haveli / Ambrai Hospitality LLP)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Dining page invites bookings: \"do ensure you reserve a table in advance\"; restaurant \"since 1998\". Site footer is \"(c) Copyright 2025\"; no 2026 content."
+      },
+      "Jharokha (Jagat Niwas Palace)": {
+        "url": "https://www.jagatcollection.com/dining",
+        "sourceType": "operator's own site (Jagat Collection)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Page (\"(c) 2026\", 2026 media) lists reservation slots, Rajasthani thalis (\"24 hours in advance\") and Sunset High Tea; tables held \"for 15 minutes\"."
+      },
+      "Chandani (Jagat Niwas Palace)": {
+        "url": "https://www.jagatcollection.com/dining",
+        "sourceType": "operator's own site (Jagat Collection)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Page (2026) lists a rooftop al-fresco space with lake views serving Rajasthani thalis and Sunset High Tea, with dinner reservation slots."
+      },
+      "Global Bar (Jagat Niwas Palace)": {
+        "url": "https://www.jagatcollection.com/dining",
+        "sourceType": "operator's own site (Jagat Collection)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Page (2026) lists \"premium spirits, signature cocktails, fine wines, and local liqueurs\"."
+      },
+      "Raffles Patisserie (Raffles Udaipur)": {
+        "url": "https://www.raffles.com/udaipur/dining/raffles-patisserie/",
+        "sourceType": "operator's own site (Raffles Hotels & Resorts)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Page offers reservations by email/phone; viennoiserie and home-made cake \"freshly baked daily\" with \"artisanal coffee\". Page is undated."
+      },
+      "The Tea Room (Raffles Udaipur)": {
+        "url": "https://www.raffles.com/udaipur/dining/The-Tea-Room/",
+        "sourceType": "operator's own site (Raffles Hotels & Resorts)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Page lists \"artisanal teas, delicate pastries and light savouries\" with a reservation contact. Page is undated."
+      },
+      "The Writers Bar (Raffles Udaipur)": {
+        "url": "https://www.raffles.com/udaipur/dining/the-writers-bar/",
+        "sourceType": "operator's own site (Raffles Hotels & Resorts)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Page invites you to \"Linger over a good book and a classic cocktail\" and offers an afternoon Hi-Tea; reservations by phone or email. Page is undated."
+      },
+      "Sawai Kitchen (Raffles Udaipur)": {
+        "url": "https://www.raffles.com/udaipur/dining/sawai-kitchen-indian-speciality-restaurant/",
+        "sourceType": "operator's own site (Raffles Hotels & Resorts)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Page describes \"heirloom recipes from the Rajputana royal households\" with a reservation link. Page is undated."
+      },
+      "Aravalli (Trident Udaipur)": {
+        "url": "https://www.tridenthotels.com/hotels-in-udaipur/restaurant-in-udaipur/aravalli/",
+        "sourceType": "operator's own site (Trident Hotels)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Page (\"2026 Trident Hotels\" footer) serves breakfast, lunch and dinner and takes online reservation requests for up to 8 guests."
+      }
+    }
+  },
   "Hangzhou, China": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-11-17",

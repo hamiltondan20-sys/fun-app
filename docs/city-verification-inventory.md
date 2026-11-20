@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 104.
-- Classifier-passed (published, not fully documented in that format): 88.
+- Source-verified (complete dated evidence format): 105.
+- Classifier-passed (published, not fully documented in that format): 87.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -475,7 +475,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Turin, Italy | turin | held-back | ready-for-content-draft | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Turku, Finland | turku | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Ubud, Indonesia | ubud | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
-| Udaipur, India | udaipur | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Udaipur, India | udaipur | source-verified | source-checked | 26 | 47 | 15 | 15 | None |
 | Uljin, South Korea | uljin | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Uluru, Australia | uluru | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
 | Ushuaia, Argentina | ushuaia | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
