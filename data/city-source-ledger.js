@@ -47444,12 +47444,6 @@ window.HB_DATA.citySourceLedger = {
         "checkedOn": "2026-10-25",
         "operatingEvidence": "Season calendar: 'Fedora' opens the opera season at La Fenice 13-22 November 2026; opening concerts 28-29 November 2026."
       },
-      "Biennale Arte 2026 (Giardini and Arsenale)": {
-        "url": "https://www.labiennale.org/en/art/2026/information",
-        "sourceType": "operator's own site (La Biennale di Venezia)",
-        "checkedOn": "2026-10-25",
-        "operatingEvidence": "61st International Art Exhibition 'In Minor Keys', 9 May-22 November 2026; tickets sold online with reservation."
-      },
       "Caffè Florian": {
         "url": "https://www.caffeflorian.com/",
         "sourceType": "operator's own site",

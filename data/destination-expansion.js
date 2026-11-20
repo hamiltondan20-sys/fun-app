@@ -1853,7 +1853,7 @@ window.HB_DATA = window.HB_DATA || {};
       intro: [
         "On the historic peninsula, start with Topkapı Palace Museum in Sultanahmet. Its ticket office runs from 09:00 to 17:00, it is closed on Tuesdays, and a combined ticket for the palace, Aya İrini and the Harem is valid for one day. Istanbul Archaeological Museums in Gülhane opens every day from 09:00 to 18:30. The Hagia Sophia History and Experience Museum opens daily from 09:00 to 20:00. Nearby, Kurukahveci Mehmet Efendi runs its head shop on Tahmis Sokağı in Eminönü, and Pandeli sits inside the Spice Bazaar.",
         "In Beyoğlu, Galata Tower Museum opens every day from 08:30 to 18:30, with a night session until 22:00, and you must bring a parent if you are under 18. The Galata Mevlevi Lodge Museum on Galip Dede Caddesi is closed on Mondays. Pera Museum stays open until 22:00 on Fridays. At the Pera Palace Hotel, afternoon tea with live piano is served in the Kubbeli Saloon from 15:00 to 18:00, and Patisserie de Pera opens daily from 10:00 to 18:00. The Museum of Innocence in Çukurcuma charges 750 TL.",
-        "Along the water, Istanbul Modern is showing Semiha Berksoy: Aria of All Colors until 22 November 2026. Sakıp Sabancı Museum in Emirgan has Yoko Ono: İçses ve İçyapı until 27 December 2026 and is free on Tuesdays. Dolmabahçe Palace and Beylerbeyi Palace on the Asian shore both sell tickets from 09:00 to 17:00 and close on Mondays. If you are travelling with children, try the Rahmi M. Koç Museum in Hasköy, open from 09:30 on Tuesday to Sunday, or Miniaturk in Sütlüce, which is closed on Mondays.",
+        "Sakıp Sabancı Museum in Emirgan has Yoko Ono: İçses ve İçyapı until 27 December 2026 and is free on Tuesdays. Dolmabahçe Palace and Beylerbeyi Palace on the Asian shore both sell tickets from 09:00 to 17:00 and close on Mondays. If you are travelling with children, try the Rahmi M. Koç Museum in Hasköy, open from 09:30 on Tuesday to Sunday, or Miniaturk in Sütlüce, which is closed on Mondays.",
         "For dinner, Mikla at The Marmara Pera serves Monday to Saturday with last orders at 21:30, asks for a Smart Chic dress code, and has a roof terrace bar open until 02:00. Karaköy Lokantası on Kemankeş Caddesi serves lunch Monday to Saturday and dinner nightly, and Neolokal is at SALT Galata. In Etiler, Arkestra takes online reservations, and its upstairs Listening Room serves craft cocktails to restaurant guests. Beyti in Florya opens from 11:30 to 23:00 and is closed on Mondays. For an early coffee, Petra Roasting Co.'s Şişhane café opens at 8:00 on weekdays."
       ],
       summaryCards: [
@@ -2196,13 +2196,13 @@ window.HB_DATA = window.HB_DATA || {};
   {
     const cityKey = "Venice, Italy";
     data.cityGuideDetailData[cityKey] = {
-      bestAttractions: ["Basilica di San Marco","Palazzo Ducale","Gallerie dell'Accademia","Biennale Arte 2026 (Giardini and Arsenale)"],
+      bestAttractions: ["Basilica di San Marco","Palazzo Ducale","Gallerie dell'Accademia","Museo Correr"],
       bestFirstTimers: ["Basilica di San Marco","Palazzo Ducale","Museo Correr","Peggy Guggenheim Collection"],
       bestRestaurants: ["Trattoria Antiche Carampane","Ristorante Al Covo","Venissa (Mazzorbo)","Cantina Do Spade"],
       bestBudget: ["Cantina Do Spade","Scuola Grande di San Rocco","Trattoria alla Madonna"],
       bestLuxury: ["Venissa (Mazzorbo)","Gran Caffè Quadri","Teatro La Fenice","Caffè Florian"],
       bestCouples: ["Teatro La Fenice","Caffè Florian","Venissa (Mazzorbo)","Experimental Cocktail Club Venice (Il Palazzo Experimental)"],
-      bestKids: ["Museo di Storia Naturale","Torre dell'Orologio","Biennale Arte 2026 (Giardini and Arsenale)"],
+      bestKids: ["Museo di Storia Naturale","Torre dell'Orologio"],
       bestSolo: ["Fondazione Querini Stampalia","Museo Fortuny","Ca' Pesaro","Cafè Mariona (Querini Stampalia)"],
       bestUnique: ["Torre dell'Orologio","Scuola Grande di San Rocco","Palazzo Mocenigo","Trattoria Da Romano (Burano)"],
       bestBreakfast: ["Caffè Florian","Gran Caffè Quadri"],
@@ -2216,7 +2216,6 @@ window.HB_DATA = window.HB_DATA || {};
       "Basilica di San Marco": "Basilica di San Marco Piazza San Marco 328 Venice",
       "Palazzo Ducale": "Palazzo Ducale Piazzetta San Marco 1 Venice",
       "Gallerie dell'Accademia": "Gallerie dell'Accademia Campo della Carità Dorsoduro 1050 Venice",
-      "Biennale Arte 2026 (Giardini and Arsenale)": "Biennale Giardini Viale Trento 1260 Venice",
       "Museo Correr": "Museo Correr Piazza San Marco 52 Venice",
       "Peggy Guggenheim Collection": "Peggy Guggenheim Collection Dorsoduro 701 Venice",
       "Trattoria Antiche Carampane": "Trattoria Antiche Carampane San Polo 1911 Venice",
@@ -2243,40 +2242,40 @@ window.HB_DATA = window.HB_DATA || {};
       cityGuide = { city: cityKey, title: cityKey.split(",")[0].trim() };
       data.cityGuideData.push(cityGuide);
     }
-    cityGuide.summary = "Basilica, palaces, civic museums, the 2026 Art Biennale and island trattorias, with cafés, dinners and a cocktail bar checked against their own websites.";
+    cityGuide.summary = "Basilica, palaces, civic museums and island trattorias, with cafés, dinners and a cocktail bar checked against their own websites.";
     cityGuide.highlights = ["Basilica di San Marco","Palazzo Ducale","Gallerie dell'Accademia","Peggy Guggenheim Collection"];
-    cityGuide.tip = "Check closing days before you plan the day: the Peggy Guggenheim Collection is closed on Tuesdays, and the Biennale Arte is closed on Mondays until it ends on 22 November.";
-    data.destinationFacts[cityKey] = "Check closing days before you plan the day: the Peggy Guggenheim Collection is closed on Tuesdays, and the Biennale Arte is closed on Mondays until it ends on 22 November.";
-    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Basilica, palaces, civic museums, the 2026 Art Biennale and island trattorias, with cafés, dinners and a cocktail bar checked against their own websites.";
+    cityGuide.tip = "Check closing days before you plan the day: the Peggy Guggenheim Collection is closed on Tuesdays, and Fondazione Querini Stampalia on Mondays.";
+    data.destinationFacts[cityKey] = "Check closing days before you plan the day: the Peggy Guggenheim Collection is closed on Tuesdays, and Fondazione Querini Stampalia on Mondays.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Basilica, palaces, civic museums and island trattorias, with cafés, dinners and a cocktail bar checked against their own websites.";
     data.cityPlanningToolkitData[cityKey] = [
       {
         "label": "Closing days",
         "value": "Tuesdays, Mondays, midweek",
-        "copy": "The Peggy Guggenheim Collection closes on Tuesdays, Fondazione Querini Stampalia and the Biennale Arte on Mondays (the Biennale Arte runs to 22 November). Antiche Carampane closes Sundays and Mondays, Al Covo Tuesdays and Wednesdays, and Da Romano on Burano on Tuesdays."
+        "copy": "The Peggy Guggenheim Collection closes on Tuesdays and Fondazione Querini Stampalia on Mondays. Antiche Carampane closes Sundays and Mondays, Al Covo Tuesdays and Wednesdays, and Da Romano on Burano on Tuesdays."
       },
       {
         "label": "Tickets and booking",
-        "value": "Book ahead for tours and the Biennale",
-        "copy": "Torre dell'Orologio is visited only on booked guided tours that meet at the Museo Correr ticket office, and late arrivals of over 15 minutes are excluded. Biennale tickets are sold online and need a reservation."
+        "value": "Book the clock-tower tour ahead",
+        "copy": "Torre dell'Orologio is visited only on booked guided tours that meet at the Museo Correr ticket office, and late arrivals of over 15 minutes are excluded."
       },
       {
         "label": "Timing and late openings",
         "value": "Winter hours from 1 November",
-        "copy": "Palazzo Ducale has been open 09:00-18:00 since 1 November, with last entry an hour before closing. Ca' Pesaro and Museo Fortuny stay open until 20:00 from 20 to 22 November 2026."
+        "copy": "Palazzo Ducale has been open 09:00-18:00 since 1 November, with last entry an hour before closing. Gran Caffè Quadri on the Piazza opens daily from 9:30 to midnight."
       },
       {
         "label": "Bags and age rules",
         "value": "No bulky luggage; under-6 limits",
-        "copy": "Palazzo Ducale bars suitcases and trolleys, and large bags, backpacks and umbrellas go in its free storage. Children under 6 are not allowed on Torre dell'Orologio tours but enter the Biennale free."
+        "copy": "Palazzo Ducale bars suitcases and trolleys, and large bags, backpacks and umbrellas go in its free storage. Children under 6 are not allowed on Torre dell'Orologio tours."
       }
     ];
     data.cityEditorialPageData[cityKey] = {
       ...data.cityEditorialPageData[cityKey],
-      dek: "Book the Torre dell'Orologio tour and Biennale entry ahead, and plan restaurant dinners around their midweek closing days.",
+      dek: "Book the Torre dell'Orologio tour ahead, and plan restaurant dinners around their midweek closing days.",
       intro: [
-        "Your Venice visit can start in Piazza San Marco, where the Basilica di San Marco sells online tickets for the Basilica, the Pala d'Oro, the Museo and Loggia dei Cavalli, the Campanile and evening visits. Next door, Palazzo Ducale has been open 09:00-18:00 since 1 November, with last entry an hour before closing. Its 'Ospiti a Palazzo' display runs to 23 March 2027. The Museo Correr shows Bizhan Bassiri and 'Spiral Economy. Charrière and Canova' until 22 November 2026.",
-        "Across the Grand Canal in Dorsoduro, the Gallerie dell'Accademia has Leiko Ikemura's 'TransLucent' until 22 November. Its 2026 news also reports that the Miracoli della Vera Croce are back on view. The Peggy Guggenheim Collection is open daily 10 am-6 pm except Tuesdays, and 'Fucina degli Angeli', on twentieth-century artistic glass, opened on 14 November 2026. Ca' Rezzonico shows 'Nel segno di Venezia' until 11 January 2027. The Biennale Arte 2026, 'In Minor Keys', closes on 22 November and is open 10 am-6 pm in its final weeks.",
-        "In Santa Croce, Ca' Pesaro shows Jenny Saville until 22 November 2026, and Palazzo Mocenigo has 'Un merletto per Venezia 2026' until 6 January 2027. The Museo di Storia Naturale is an easy family stop. In San Marco, Museo Fortuny shows Erwin Wurm's 'Dreamers', and both Fortuny and Ca' Pesaro open until 20:00 from 20 to 22 November. Scuola Grande di San Rocco is open daily 9:30-17:30, and at La Fenice the opera season opened with 'Fedora' on 13 November.",
+        "Your Venice visit can start in Piazza San Marco, where the Basilica di San Marco sells online tickets for the Basilica, the Pala d'Oro, the Museo and Loggia dei Cavalli, the Campanile and evening visits. Next door, Palazzo Ducale has been open 09:00-18:00 since 1 November, with last entry an hour before closing. Its 'Ospiti a Palazzo' display runs to 23 March 2027. Torre dell'Orologio tours meet at the Museo Correr ticket office on the same square.",
+        "Across the Grand Canal in Dorsoduro, the Gallerie dell'Accademia's 2026 news reports that the Miracoli della Vera Croce are back on view. The Peggy Guggenheim Collection is open daily 10 am-6 pm except Tuesdays, and 'Fucina degli Angeli', on twentieth-century artistic glass, opened on 14 November 2026. Ca' Rezzonico shows 'Nel segno di Venezia' until 11 January 2027.",
+        "In Santa Croce, Palazzo Mocenigo has 'Un merletto per Venezia 2026' until 6 January 2027. The Museo di Storia Naturale is an easy family stop. In San Marco, Museo Fortuny shows Erwin Wurm's 'Dreamers'. Scuola Grande di San Rocco is open daily 9:30-17:30, and at La Fenice the opera season opened with 'Fedora' on 13 November.",
         "For coffee, Gran Caffè Quadri on the Piazza opens daily from 9:30 to midnight, and Caffè Florian's menu covers breakfast and afternoon tea. Book dinner ahead. Antiche Carampane charges €35 per cover for late cancellations and closes Sundays and Mondays, and Al Covo serves dinner 19:30-22:00 from Thursday to Monday. On the islands, Venissa on Mazzorbo takes online bookings, and Da Romano on Burano serves lunch every day except Tuesday."
       ],
       summaryCards: [
@@ -2290,7 +2289,7 @@ window.HB_DATA = window.HB_DATA || {};
         ],
         [
           "Before booking",
-          "Biennale tickets need an online reservation, and Antiche Carampane charges €35 per cover for cancellations after noon on the day."
+          "Book the Torre dell'Orologio tour ahead, and note that Antiche Carampane charges €35 per cover for cancellations after noon on the day."
         ]
       ],
       trust: "All 24 distinct recommendations in this guide were checked against their operators' own websites on October 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
@@ -6665,7 +6664,7 @@ window.HB_DATA = window.HB_DATA || {};
       intro: [
         "Start at the Elbphilharmonie Plaza, the public viewing level on the 8th floor, open daily from 10:00 to 24:00 with last admission at 23:30. Capacity is controlled with Plaza tickets, and if you pre-book online or on site you pay a €5 booking fee per ticket, which guarantees entry at your chosen time. A concert ticket also gets you onto the Plaza from two hours before the performance. From there it is a short walk into the Speicherstadt, where the Speicherstadtmuseum on Am Sandtorkai has extended its exhibition on the pre-war warehouse district until 10 January 2027.",
         "Miniatur Wunderland, at Kehrwieder 2 in the Speicherstadt, opens every day, always at least from 09:30 to 18:00, and often later at weekends, on Tuesdays and in school holidays. Its own admission page advises buying tickets online in advance to avoid long waits; adults pay 22.00 € and children under 1 m go free. Nearby, the Internationales Maritimes Museum in Kaispeicher B opens daily from 10:00 to 18:00, with \"Heroes of the Sea\" running until 31 December 2026 and a cheaper Störtebeker Ticket from 16:30.",
-        "For art, the Bucerius Kunst Forum on Alter Wall opens daily from 11:00 to 19:00 and until 21:00 on Thursdays, and its exhibition \"Von Monet bis Picasso\" runs until 29 March 2027. The Museum für Kunst und Gewerbe on Steintorplatz shows \"Hella Jongerius: Whispering Things\" until 13 June 2027. The Hamburger Kunsthalle offers free entry from 6 to 9 pm on the first Thursday of the month. At Hauptkirche St. Michaelis the tower is open from 09:00 to 19:00, and the church hosts its Bach-Wochen until 22 November.",
+        "For art, the Bucerius Kunst Forum on Alter Wall opens daily from 11:00 to 19:00 and until 21:00 on Thursdays, and its exhibition \"Von Monet bis Picasso\" runs until 29 March 2027. The Museum für Kunst und Gewerbe on Steintorplatz shows \"Hella Jongerius: Whispering Things\" until 13 June 2027. The Hamburger Kunsthalle offers free entry from 6 to 9 pm on the first Thursday of the month. At Hauptkirche St. Michaelis the tower is open from 09:00 to 19:00,.",
         "Plan meals around the clock. Café Paris on Rathausstraße serves breakfast from 9.00 (9.30 on Sundays), and Café Condi at Hotel Vier Jahreszeiten runs its breakfast buffet until 11:00 on weekdays. At the Bullerei near Sternschanze the Deli takes no reservations, while restaurant tables open for booking 60 days ahead. Restaurant Haerlin opens Tuesday to Saturday with a smart casual dress code. For a drink with a harbour view, the Tower Bar at Hotel Hafen Hamburg opens from 18:00."
       ],
       summaryCards: [
@@ -7834,7 +7833,7 @@ window.HB_DATA = window.HB_DATA || {};
       dek: "Reserve the Western Wall Tunnels and your dinner tables ahead, and plan museum days around Saturday closures.",
       intro: [
         "Start at the Western Wall, where the Western Wall Heritage Foundation says the Prayer Plaza is open all day, every day of the year. The Western Wall Tunnels work differently: the foundation says the tour must be reserved in advance and can only be toured with a certified guide, with entry Sunday to Thursday from 09:00 to 22:00 and on Friday from 09:00 to 13:00. Across the Kidron Valley, the Basilica of the Agony at the foot of the Mount of Olives opens 8:00 to 17:00 from October to March, and the Custody of the Holy Land asks visitors to show respect and keep silence.",
-        "Plan museum days around Saturday closures. The Bible Lands Museum on Shmuel Stefan Wise Street opens at 10:00 Sunday to Friday, stays open until 21:00 on Wednesday, closes at 14:00 on Friday and is closed on Saturday; a full-price ticket includes a free return visit within a month. The Museum of Tolerance Jerusalem on Hillel Street is also closed on Saturday and lists extra closures on 13, 19 and 22 November 2026. The Friends of Zion Museum runs tours Monday to Friday and is closed on Sundays, Saturdays and holidays.",
+        "Plan museum days around Saturday closures. The Bible Lands Museum on Shmuel Stefan Wise Street opens at 10:00 Sunday to Friday, stays open until 21:00 on Wednesday, closes at 14:00 on Friday and is closed on Saturday; a full-price ticket includes a free return visit within a month. The Museum of Tolerance Jerusalem on Hillel Street is also closed on Saturday and lists extra closure dates on its website. The Friends of Zion Museum runs tours Monday to Friday and is closed on Sundays, Saturdays and holidays.",
         "With children, the Jerusalem Botanical Gardens on Yehuda Burla Street publishes separate summer and winter hours, is closed on Yom Kippur and does not admit bicycles or scooters; its Winter Dreams light exhibition runs from 17 November 2026 to 31 January 2027, starting at 17:00. The Bloomfield Science Museum sells tickets online, and the Hebrew Music Museum in Nahalat Shiv'a asks you to reserve places in advance. On Mount Zion, the Dormition Abbey church opens from 09:00 Monday to Saturday and from 11:30 on Sunday, and its cafeteria is closed on Sundays.",
         "For food, Machneyuda on Beit Ya'akov Street opens 12:30 to 24:00, takes bookings online and does not accept email reservations. The Eucalyptus serves dinner Sunday to Thursday, is closed on Friday and Saturday and says reservation is required. The Notre Dame Center's Rooftop Restaurant opens Tuesday to Saturday evenings and recommends reserving, while its Bistro serves cocktails daily from 12:00 to 21:00. For mornings, Caffit on Emek Refaim opens at 07:30 Sunday to Wednesday, and Café Triest at the Austrian Hospice on the Via Dolorosa opens daily from 10:00."
       ],
@@ -10801,7 +10800,7 @@ window.HB_DATA = window.HB_DATA || {};
       dek: "Plan museums and Marble Mountains for daytime and book Da Nang's Michelin-listed dinners and rooftop tables ahead.",
       intro: [
         "Start with the city's museums, which all publish daily hours. The Museum of Cham Sculpture on 2 Tháng 9 Street opens 07:00–17:00 every day and charges 60,000 VND per visit; in July 2026 it announced the opening of a themed exhibition on Cham cultural traces in Lâm Đồng. The Da Nang Museum at 31 Trần Phú and the Fine Arts Museum at 78 Lê Duẩn both open 08:00–17:00 daily, while Branch 2 on Phan Bội Châu, which opened a botanical exhibition on 6 October 2026, closes for a midday break.",
-        "For the big sights, Marble Mountains is run by its own management board at 81 Huyền Trân Công Chúa, which posted a notice on 3 November 2026 about changing its central ticket-sales point, so you should confirm where to buy before you climb. Ba Na Hills lists hours of 08:00–22:00, warns that they may change, and sells tickets through Sun World's booking site. In town, Da Nang Cathedral sits at 156 Trần Phú, the same address as the diocese, which held its All Saints Mass there on 2 November 2026.",
+        "For the big sights, Marble Mountains is run by its own management board at 81 Huyền Trân Công Chúa, which posted a notice on 3 November 2026 about changing its central ticket-sales point, so you should confirm where to buy before you climb. Ba Na Hills lists hours of 08:00–22:00, warns that they may change, and sells tickets through Sun World's booking site. In town, Da Nang Cathedral sits at 156 Trần Phú, the same address as the diocese.",
         "Several of the confirmed dining rooms sit on Bạch Đằng. Madame Lân at No. 4 serves from 6:30 to 21:30 every day and says it has been Michelin Selected from 2024 to 2026, so it works for breakfast as well as lunch. Olivia's Prime Steakhouse in Indochina Mall is also listed in the MICHELIN Guide for 2026. On the Son Tra Peninsula, La Maison 1888 at the InterContinental holds one Michelin star, and Citron serves dishes from Vietnam's north, centre and south; both are booked through the resort's enquiry form.",
         "For drinks, Sky36 occupies floors 35 to 37 of the Novotel tower on Bạch Đằng and opens 18:00–02:00 every day, with DJs from 21:00. The Pullman's Infinity Bar serves afternoon tea from 13:00 to 17:00, and Restaurant Epice hosts a Christmas Eve buffet on 24 December 2026. For coffee, XLIII Coffee on Ngô Thì Sĩ opens 6:30–22:30, and if you visit nearby Hội An, XLIII has a branch there and Hoi An Roastery's main café at 135 Trần Phú opens 7:00–21:00 daily."
       ],

@@ -484,7 +484,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Valparaiso, Chile | valparaiso | source-verified | source-checked | 25 | 47 | 15 | 15 | None |
 | Vancouver, Canada | vancouver | source-verified | source-checked | 26 | 57 | 15 | 15 | None |
 | Varadero, Cuba | varadero | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Venice, Italy | venice | source-verified | source-checked | 24 | 42 | 14 | 14 | None |
+| Venice, Italy | venice | source-verified | source-checked | 23 | 43 | 14 | 14 | None |
 | Verona, Italy | verona | source-verified | source-checked | 25 | 48 | 15 | 15 | None |
 | Versailles, France | versailles | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Victoria, Canada | victoria | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
