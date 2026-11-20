@@ -11133,4 +11133,110 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on November 20, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Johannesburg, South Africa: source review of 2026-11-20 (docs/content-research/johannesburg-2026-11-20.md).
+  {
+    const cityKey = "Johannesburg, South Africa";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Apartheid Museum","Constitution Hill","Mandela House","Origins Centre"],
+      bestFirstTimers: ["Apartheid Museum","Constitution Hill","Mandela House","Sakhumzi (Vilakazi Street)"],
+      bestRestaurants: ["Marble","Saint","Proud Mary","Sakhumzi (Vilakazi Street)"],
+      bestBudget: ["Johannesburg Holocaust & Genocide Centre","Johannesburg Botanical Garden","Walter Sisulu National Botanical Garden","Origins Centre"],
+      bestLuxury: ["Marble","Saint","Obscura","Everard Read (Johannesburg)"],
+      bestCouples: ["Walter Sisulu National Botanical Garden","Marble","Mix Cocktail Bar","Johannesburg Botanical Garden"],
+      bestKids: ["Johannesburg Zoo","Montecasino Bird Gardens","Gold Reef City Theme Park","Ditsong National Museum of Military History"],
+      bestSolo: ["Wits Art Museum","Goodman Gallery (Johannesburg)","Liliesleaf","Bean There Coffee Company (44 Stanley)"],
+      bestUnique: ["Liliesleaf","Origins Centre","Johannesburg Holocaust & Genocide Centre","Everard Read (Johannesburg)"],
+      bestBreakfast: ["Proud Mary","Doppio Zero (Rosebank)","Fournos (Rosebank)","Vovo Telo (Sandton)"],
+      bestLunch: ["Sakhumzi (Vilakazi Street)","Marble","Saint","Doppio Zero (Rosebank)"],
+      bestDinner: ["Marble","Saint","Proud Mary","Obscura"],
+      bestCocktails: ["Mix Cocktail Bar","Obscura"],
+      bestBakeries: ["Fournos (Rosebank)","Vovo Telo (Sandton)"],
+      bestCoffee: ["Bean There Coffee Company (44 Stanley)","Vovo Telo (Sandton)","Fournos (Rosebank)","Proud Mary"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Apartheid Museum": "Apartheid Museum Northern Parkway and Gold Reef Road Ormonde Johannesburg",
+      "Constitution Hill": "Constitution Hill 11 Kotze Street Johannesburg",
+      "Mandela House": "Mandela House 8115 Vilakazi Street Orlando West Soweto Johannesburg",
+      "Origins Centre": "Origins Centre 1 Jan Smuts Avenue Braamfontein Johannesburg",
+      "Sakhumzi (Vilakazi Street)": "Sakhumzi 6980 Vilakazi Street Orlando West Soweto Johannesburg",
+      "Marble": "Marble Trumpet on Keyes Keyes Avenue Rosebank Johannesburg",
+      "Saint": "Saint The Marc Rivonia Road Maude Street Sandton Johannesburg",
+      "Proud Mary": "Proud Mary 26 Cradock Avenue Rosebank Johannesburg",
+      "Johannesburg Holocaust & Genocide Centre": "Johannesburg Holocaust & Genocide Centre 1 Duncombe Road Forest Town Johannesburg",
+      "Johannesburg Botanical Garden": "Johannesburg Botanical Garden Olifants Road Emmarentia Johannesburg",
+      "Walter Sisulu National Botanical Garden": "Walter Sisulu National Botanical Garden Malcolm Road Poortview Roodepoort",
+      "Obscura": "Obscura 199 Oxford Road Rosebank Johannesburg",
+      "Everard Read (Johannesburg)": "Everard Read 6 Jellicoe Avenue Rosebank Johannesburg",
+      "Mix Cocktail Bar": "Mix Cocktail Bar 21 Keyes Avenue Rosebank Johannesburg",
+      "Johannesburg Zoo": "Johannesburg Zoo Jan Smuts Avenue Upper Park Drive Parkview Johannesburg",
+      "Montecasino Bird Gardens": "Montecasino Bird Gardens Montecasino Boulevard Fourways Johannesburg",
+      "Gold Reef City Theme Park": "Gold Reef City Theme Park Northern Parkway Ormonde Johannesburg",
+      "Ditsong National Museum of Military History": "Ditsong National Museum of Military History 22 Erlswold Way Saxonwold Johannesburg",
+      "Wits Art Museum": "Wits Art Museum Jan Smuts Avenue Braamfontein Johannesburg",
+      "Goodman Gallery (Johannesburg)": "Goodman Gallery 163 Jan Smuts Avenue Parkwood Johannesburg",
+      "Liliesleaf": "Liliesleaf 7 George Avenue Rivonia Johannesburg",
+      "Bean There Coffee Company (44 Stanley)": "Bean There Coffee 44 Stanley Avenue Milpark Johannesburg",
+      "Doppio Zero (Rosebank)": "Doppio Zero The Firs Cradock Avenue Rosebank Johannesburg",
+      "Fournos (Rosebank)": "Fournos Baker Square 28 Baker Street Rosebank Johannesburg",
+      "Vovo Telo (Sandton)": "Vovo Telo 1 Fredman Drive Sandton Johannesburg"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Johannesburg" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "History museums, galleries, gardens and family outings, with breakfast spots, bakeries, dinners and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Apartheid Museum","Constitution Hill","Mandela House","Origins Centre"];
+    cityGuide.tip = "Watch the early-week schedules: the Apartheid Museum opens Tuesday to Sunday, Montecasino Bird Gardens opens Wednesday to Sunday, and Gold Reef City Theme Park is closed on Mondays and Tuesdays except during school or public holidays.";
+    data.destinationFacts[cityKey] = "Watch the early-week schedules: the Apartheid Museum opens Tuesday to Sunday, Montecasino Bird Gardens opens Wednesday to Sunday, and Gold Reef City Theme Park is closed on Mondays and Tuesdays except during school or public holidays.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "History museums, galleries, gardens and family outings, with breakfast spots, bakeries, dinners and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Plan around Monday and Tuesday",
+        "copy": "The Apartheid Museum opens Tuesday to Sunday, Montecasino Bird Gardens opens Wednesday to Sunday, and Gold Reef City Theme Park is closed on Mondays and Tuesdays except during school or public holidays. Origins Centre is closed on Sundays, and Wits Art Museum opens Tuesday to Saturday and closes on public holidays."
+      },
+      {
+        "label": "Tickets",
+        "value": "Arrive before 16h00 and carry a card",
+        "copy": "Constitution Hill sells no tickets after 16h00 and runs a cashless ticket desk, and Johannesburg Zoo has last entry at 4:00 pm and takes card only at the gate from 1 December 2026. Walter Sisulu National Botanical Garden no longer accepts cash."
+      },
+      {
+        "label": "Booking",
+        "value": "Reserve Rosebank tables ahead",
+        "copy": "Marble says a reservation is essential, and Obscura asks for a R200 per head deposit for tables of six or more. Doppio Zero (Rosebank) takes Dineplan bookings at least 24 hours ahead and holds a table for 30 minutes."
+      },
+      {
+        "label": "Rules",
+        "value": "Age guidance, ID and park rules",
+        "copy": "The Apartheid Museum says it is not suitable for children under 11, and Constitution Hill requires under-12s to be with an adult. The Johannesburg Holocaust & Genocide Centre requires ID for entry, and the Johannesburg Botanical Garden bans alcohol and braais."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Plan sights around early-week closures and book Rosebank dinner tables before you go.",
+      intro: [
+        "Johannesburg's recent history is told most directly in its museums. The Apartheid Museum in Ormonde opens Tuesday to Sunday, 09:00 to 17:00, and on most public holidays; it suggests about two hours for a visit and says it is not suitable for children under 11. Constitution Hill at 11 Kotze Street is open 9am to 5pm daily, with a one-hour highlights tour every hour until 16h00 and two-hour full site tours at 10h00 and 13h00. In Soweto, Mandela House at 8115 Vilakazi Street publishes separate local and international ticket prices.",
+        "For deeper history and art, the Origins Centre at Wits in Braamfontein opens Monday to Friday from 09H00 to 17H00 and Saturdays and public holidays from 09H00 to 16H00, and is closed on Sundays; adult entry is R95. Wits Art Museum opens Tuesday to Saturday, 10:00 to 16:00, and lists Nature's Elements among its current shows. Liliesleaf in Rivonia opens Monday to Friday, 09h00 to 16h00, with weekend and holiday visits by prior booking. The Johannesburg Holocaust & Genocide Centre in Forest Town is free but asks you to bring ID.",
+        "With children, Johannesburg Zoo in Parkview is open every day with last entry at 4:00 pm, and takes card only at the gate from 1 December 2026. Montecasino Bird Gardens in Fourways opens Wednesday to Sunday, 09h00 to 17h00, with bird demonstrations at 11:00 and 15:00, weather permitting. Gold Reef City Theme Park is closed on Mondays and Tuesdays except during school or public holidays, and admits no one after 16h00. For open space, the Johannesburg Botanical Garden is open from sunrise to sunset, and Walter Sisulu National Botanical Garden opens daily from 08h00 to 17h00.",
+        "Rosebank anchors the eating and drinking. Proud Mary at 26 Cradock Avenue is open daily from 06h30 to 24h00 for breakfast, lunch and dinner, and Fournos on Baker Street opens at 06h00 on weekdays. Marble, on Keyes Avenue, serves lunch from 12pm to 4pm and dinner from 5pm to 10pm, and says a reservation is essential. For cocktails, Mix Cocktail Bar on Keyes Avenue opens Tuesday to Friday from 4pm and Saturday from 11am, while Obscura on Oxford Road opens Tuesday to Sunday from 12pm to 12am."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair the Apartheid Museum, open Tuesday to Sunday, with Constitution Hill, which runs hourly highlights tours until 16h00."
+        ],
+        [
+          "A slower morning",
+          "Start with breakfast at Proud Mary, open daily from 06h30, then walk the Johannesburg Botanical Garden, open from sunrise to sunset."
+        ],
+        [
+          "Before booking",
+          "Reserve Marble ahead, and remember Montecasino Bird Gardens opens Wednesday to Sunday while Gold Reef City Theme Park is closed on Mondays and Tuesdays outside school and public holidays."
+        ]
+      ],
+      trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on November 20, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

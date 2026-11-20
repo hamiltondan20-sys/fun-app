@@ -5,6 +5,763 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Johannesburg, South Africa": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-11-20",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several confirmed places show only a 2026 copyright footer, menu file or booking policy as evidence of operation (Marble, Saint, Mix Cocktail Bar, Obscura, Bean There, Sakhumzi, Liliesleaf, Ditsong Military History, Everard Read), so they are rated medium. Hours were not published on the pages read for Mandela House, Everard Read, Bean There and Sakhumzi (buffet times only), and Gold Reef City Theme Park gives no daily hours; its address is taken from Tsogo Sun's Gold Reef City complex page. Johannesburg Zoo's visit page gives an 8:30 am opening while its fee page gives 8:00 am. Sites that could not be read: Four Seasons The Westcliff and Nelson Mandela Square (403), Victoria Yards events (403), Father Coffee and DW Eleven-13 (404), The Marabi Club (500), Kitchener's and Orlando Towers (connection refused), Sin + Tax, Doubleshot and Home of the Bean (DNS failure), Les Créatifs (SSL error). No food market could be confirmed. A first automated read of the Apartheid Museum visitor-information page reported text addressed to an AI, but a second read found none and no wording could be quoted, so nothing is listed under injectionLikeText.",
+    "sourceUrls": [
+      "docs/content-research/johannesburg-2026-11-20.md",
+      "docs/content-research/johannesburg-2026-11-20.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Johannesburg Art Gallery",
+        "url": "https://joburg.org.za/play_/JoburgHighlights/Pages/jag.aspx",
+        "checkedOn": "2026-11-20",
+        "reason": "No current official page found; City of Johannesburg page read is dated 2006 with a 2018 footer. Third-party coverage reports refurbishment; not verified on an official page."
+      },
+      {
+        "name": "Standard Bank Gallery",
+        "url": "https://sponsorships.standardbank.com/sbgs/sponsorship/arts-and-culture/gallery",
+        "checkedOn": "2026-11-20",
+        "reason": "Only exhibition listed (HOMECOMING) ended 31 October 2026; nothing current or upcoming shown."
+      },
+      {
+        "name": "Sci-Bono Discovery Centre",
+        "url": "https://www.sci-bono.co.za/",
+        "checkedOn": "2026-11-20",
+        "reason": "Address and hours published but no 2026 or current content (footer 2023); hours-and-rates page returned 404."
+      },
+      {
+        "name": "Maropeng (Cradle of Humankind)",
+        "url": "https://www.maropeng.co.za/",
+        "checkedOn": "2026-11-20",
+        "reason": "Pages read show only hotel booking and address; no visitor-centre hours, tour times or current notice."
+      },
+      {
+        "name": "Father Coffee",
+        "url": "https://www.fathercoffee.co.za/",
+        "checkedOn": "2026-11-20",
+        "reason": "Official site returned HTTP 404."
+      },
+      {
+        "name": "Neighbourgoods Market (Braamfontein)",
+        "url": "https://www.neighbourgoodsmarket.co.za/",
+        "checkedOn": "2026-11-20",
+        "reason": "Official site lists only a Cape Town address; no Johannesburg market shown."
+      },
+      {
+        "name": "The Marabi Club",
+        "url": "https://www.themarabiclub.com/",
+        "checkedOn": "2026-11-20",
+        "reason": "Official site returned HTTP 500."
+      },
+      {
+        "name": "Moemas",
+        "url": "https://www.moemas.co.za/",
+        "checkedOn": "2026-11-20",
+        "reason": "Site is catering-focused and states \"Our retail shop is closed.\""
+      },
+      {
+        "name": "The Grillhouse (Rosebank)",
+        "url": "https://www.thegrillhouse.co.za/",
+        "checkedOn": "2026-11-20",
+        "reason": "No current content; footer copyright 2024."
+      },
+      {
+        "name": "Chaf Pozi",
+        "url": "https://www.chafpozi.co.za/",
+        "checkedOn": "2026-11-20",
+        "reason": "Only dated notices are from 2016-2017; no current content."
+      },
+      {
+        "name": "Salvation Café (44 Stanley)",
+        "url": "https://www.salvationcafe.co.za/",
+        "checkedOn": "2026-11-20",
+        "reason": "Address and hours shown but menus dated 2024 and 2025; no 2026 content."
+      },
+      {
+        "name": "Tashas (Rosebank)",
+        "url": "https://www.tashascafe.com/rosebank",
+        "checkedOn": "2026-11-20",
+        "reason": "Branch page returned 404; home page lists branch names only, no address."
+      },
+      {
+        "name": "Victoria Yards",
+        "url": "https://www.victoriayards.co.za/",
+        "checkedOn": "2026-11-20",
+        "reason": "Home page footer 2025, no 2026 content; events page returned HTTP 403."
+      },
+      {
+        "name": "Arts on Main",
+        "url": "https://www.artsonmain.co.za/",
+        "checkedOn": "2026-11-20",
+        "reason": "Address shown but no hours or 2026 content."
+      },
+      {
+        "name": "Rosebank Sunday Market",
+        "url": "https://www.rosebanksundaymarket.co.za/",
+        "checkedOn": "2026-11-20",
+        "reason": "No trading hours and footer ends 2024; no current content."
+      },
+      {
+        "name": "Pata Pata",
+        "url": "https://www.patapata.co.za/",
+        "checkedOn": "2026-11-20",
+        "reason": "Address shown but no hours or dated content; page header conflicts with address."
+      },
+      {
+        "name": "Hallmark House",
+        "url": "https://www.hallmarkhouse.co.za/",
+        "checkedOn": "2026-11-20",
+        "reason": "No address or bar hours published on the page read."
+      },
+      {
+        "name": "The Saxon (Qunu, Olive Bar)",
+        "url": "https://www.saxon.co.za/dining/",
+        "checkedOn": "2026-11-20",
+        "reason": "Address shown but no venue hours or dated content on pages read."
+      },
+      {
+        "name": "Four Seasons Hotel The Westcliff",
+        "url": "https://www.fourseasons.com/johannesburg/dining/",
+        "checkedOn": "2026-11-20",
+        "reason": "Fetch refused: HTTP 403."
+      },
+      {
+        "name": "Nelson Mandela Square",
+        "url": "https://www.nelsonmandelasquare.co.za/",
+        "checkedOn": "2026-11-20",
+        "reason": "Fetch refused: HTTP 403."
+      },
+      {
+        "name": "Kitchener's Carvery Bar",
+        "url": "https://www.kitcheners.co.za/",
+        "checkedOn": "2026-11-20",
+        "reason": "Connection refused."
+      },
+      {
+        "name": "Orlando Towers",
+        "url": "https://www.orlandotowers.co.za/",
+        "checkedOn": "2026-11-20",
+        "reason": "Connection refused."
+      },
+      {
+        "name": "Sin + Tax",
+        "url": "https://www.sinandtax.co.za/",
+        "checkedOn": "2026-11-20",
+        "reason": "Domain did not resolve (DNS failure)."
+      },
+      {
+        "name": "Doubleshot Coffee & Tea",
+        "url": "https://www.doubleshot.co.za/",
+        "checkedOn": "2026-11-20",
+        "reason": "Domain did not resolve (DNS failure)."
+      },
+      {
+        "name": "Home of the Bean",
+        "url": "https://www.homeofthebean.co.za/",
+        "checkedOn": "2026-11-20",
+        "reason": "Domain did not resolve (DNS failure)."
+      },
+      {
+        "name": "Les Créatifs",
+        "url": "https://www.lescreatifs.co.za/",
+        "checkedOn": "2026-11-20",
+        "reason": "SSL error (wrong version number)."
+      },
+      {
+        "name": "DW Eleven-13",
+        "url": "https://www.dw11-13.co.za/",
+        "checkedOn": "2026-11-20",
+        "reason": "Guessed official URL returned HTTP 404; no official site found."
+      },
+      {
+        "name": "Embarc",
+        "url": "https://www.embarc.co.za/",
+        "checkedOn": "2026-11-20",
+        "reason": "Site is a \"Launching Soon\" placeholder."
+      },
+      {
+        "name": "Satyagraha House",
+        "url": "https://www.satyagrahahouse.com/",
+        "checkedOn": "2026-11-20",
+        "reason": "No street address or museum hours on the page read."
+      },
+      {
+        "name": "Lion & Safari Park",
+        "url": "https://www.lionandsafaripark.com/",
+        "checkedOn": "2026-11-20",
+        "reason": "No street address published on the page read."
+      },
+      {
+        "name": "The Whippet",
+        "url": "https://www.thewhippet.co.za/",
+        "checkedOn": "2026-11-20",
+        "reason": "No street address or hours on the page read."
+      },
+      {
+        "name": "Motherland Coffee Company",
+        "url": "https://www.motherlandcoffee.com/",
+        "checkedOn": "2026-11-20",
+        "reason": "Home page lists no store addresses or hours."
+      },
+      {
+        "name": "Bootlegger Coffee Company",
+        "url": "https://ourcafes.bootlegger.coffee/",
+        "checkedOn": "2026-11-20",
+        "reason": "Store locator did not load readable content; no branch address read."
+      },
+      {
+        "name": "Nelson Mandela Foundation",
+        "url": "https://www.nelsonmandela.org/",
+        "checkedOn": "2026-11-20",
+        "reason": "No visitor hours or visiting arrangements published on the page read."
+      },
+      {
+        "name": "Keyes Art Mile",
+        "url": "https://www.keyesartmile.co.za/",
+        "checkedOn": "2026-11-20",
+        "reason": "No address or tenant details on the page read."
+      },
+      {
+        "name": "Vovo Telo (Parkhurst)",
+        "url": "https://vovotelo.co.za/find-us/",
+        "checkedOn": "2026-11-20",
+        "reason": "Branch not listed on official find-us page; Sandton branch used instead."
+      },
+      {
+        "name": "Maboneng",
+        "checkedOn": "2026-11-20",
+        "reason": "neighbourhood, not a single operated place"
+      },
+      {
+        "name": "Soweto",
+        "checkedOn": "2026-11-20",
+        "reason": "township/area, not a single operated place"
+      },
+      {
+        "name": "Soweto with a local guide",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Maboneng art walk",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A city viewpoint or market",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Braai dinner",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market lunch",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A contemporary South African table",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Maboneng",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Soweto",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Rosebank",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Rosebank walk",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Maboneng",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Soweto",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Soweto",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Apartheid Museum",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place (Apartheid Museum itself is confirmed)"
+      },
+      {
+        "name": "A signature meal in Rosebank",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Soweto with a local guide",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Maboneng",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Maboneng",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Rosebank evening",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Maboneng",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Soweto",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Rosebank",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Apartheid Museum",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place (Apartheid Museum itself is confirmed)"
+      },
+      {
+        "name": "Easy outing around Maboneng",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Soweto",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Rosebank",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Apartheid Museum",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place (Apartheid Museum itself is confirmed)"
+      },
+      {
+        "name": "Rosebank cafe or market",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Maboneng art walk",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Soweto",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Soweto",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Rosebank",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Rosebank",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Maboneng bakery or market",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Apartheid Museum",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Soweto",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Rosebank",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Maboneng",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Soweto",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Rosebank",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Maboneng",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Soweto",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Rosebank",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Rosebank",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Maboneng",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Soweto",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Rosebank",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Maboneng morning market",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Apartheid Museum",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Soweto",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Rosebank",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Maboneng",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Soweto",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-11-20",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Apartheid Museum": {
+        "url": "https://www.apartheidmuseum.org/about-the-museum/visitor-information",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Visitor page lists admission prices \"from 1 May 2026\" (international adult R240, South African adult R170, audio tour included); contact page notes it will \"close at 12:00 on 16 December\". Age advisory: \"not deemed suitable for children under the age of 11\"."
+      },
+      "Constitution Hill": {
+        "url": "https://www.constitutionhill.org.za/pages/opening-hours-and-admission",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Home page news dated \"12 November 2026\"; hours page lists \"25th and 26th December 2026 – Closed\" and \"01 January 2027 – Closed\". Highlights tour \"every hour on the hour, with the last tour departing at 16h00\"; full site tours \"at 10h00 and 13h00 daily\"; tickets cashless, none sold after 16h00."
+      },
+      "Origins Centre": {
+        "url": "https://www.wits.ac.za/origins/hours-and-admission/",
+        "sourceType": "official public operator (University of the Witwatersrand)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Main page carried a notice that it \"will be closed for a private event on 14 to 18 November 2026\" (now past); current price list, adults R95, temporary exhibition \"free with a main museum ticket\"."
+      },
+      "Wits Art Museum": {
+        "url": "https://www.wits.ac.za/wam/",
+        "sourceType": "official public operator (University of the Witwatersrand)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Exhibitions page lists current shows including \"Nature's Elements\" and Véronique Hoog's portraits, whose online version is \"available from 16 September 2026\". No run dates given for the physical shows."
+      },
+      "Mandela House": {
+        "url": "https://www.mandelahouse.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Home page carries a notice about a briefing on 30 November 2026 and a current ticket table (local adult R105, international adult R185, under 7 free for locals). Lists public-holiday closures: Good Friday, Family Day, Christmas Day, Day of Goodwill and New Year's Day."
+      },
+      "Liliesleaf": {
+        "url": "https://liliesleaf.co.za/contact-us/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Home page headline \"LILIESLEAF FARM OPERATIONAL SINCE 2022 (Important Notice)\" links to a notice PDF uploaded June 2026; footer \"© 2026 Liliesleaf\". Weekends and holidays \"Subject to prior booking\"."
+      },
+      "Johannesburg Holocaust & Genocide Centre": {
+        "url": "https://www.jhbholocaust.co.za/visit-us/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Visit page states \"Admission to the JHGC is free of charge\" and that \"a form of identification such as an ID or Driver's Licence is required for entrance\"; links a youth reading list uploaded in 2026. Closed \"Good Friday, 25-27 December and 1 January\"."
+      },
+      "Ditsong National Museum of Military History": {
+        "url": "https://ditsong.org.za/en/our-museums/ditsong-national-museum-of-military-history/",
+        "sourceType": "official public operator (DITSONG: Museums of South Africa)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Museum page lists daily admission hours and a downloadable price list; footer \"DMSA © 2026\". No dated notices."
+      },
+      "Goodman Gallery (Johannesburg)": {
+        "url": "https://www.goodman-gallery.com/contact",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Home page programme lists a performance on \"19 Nov 2026 at the Goodman Gallery Johannesburg Cafe\" and exhibitions running into 2027 at other venues."
+      },
+      "Everard Read (Johannesburg)": {
+        "url": "https://www.everard-read.co.za/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Programme lists 2026 projects including \"FNB Art Joburg 2026\" and \"Everard Read at RMB Latitudes 2026\"; no dated Johannesburg exhibition shown."
+      },
+      "Johannesburg Zoo": {
+        "url": "https://www.jhbcityparksandzoo.com/services-facilities/zoo/plan-your-visit",
+        "sourceType": "official public operator (Johannesburg City Parks and Zoo)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "\"the zoo will be cashless from December 1, 2026\"; Zoo Trot dates listed through 13 December 2026; fee page covers 1 July 2026 to 30 June 2027 (adult R135). Tickets \"available at Webtickets\"."
+      },
+      "Johannesburg Botanical Garden": {
+        "url": "https://www.jhbcityparksandzoo.com/services-facilities/botanical-gardens/plan-your-visit",
+        "sourceType": "official public operator (Johannesburg City Parks and Zoo)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "City of Johannesburg newsroom article dated \"26/10/2026\" features Emmarentia Dam and the Johannesburg Botanical Gardens; JCPZ page sets current rules: \"No alcohol is allowed in any of our facilities\", no braais or open fires, dogs on leash in designated areas."
+      },
+      "Walter Sisulu National Botanical Garden": {
+        "url": "https://www.sanbi.org/gardens/walter-sisulu/visitor-information/information/",
+        "sourceType": "official public operator (South African National Biodiversity Institute)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Information page: tickets online or by card at the gate, \"we no longer accept cash payments\"; fee image and trail map hosted under 2026 upload paths; also named in the City of Johannesburg's 26/10/2026 parks article."
+      },
+      "Montecasino Bird Gardens": {
+        "url": "https://www.tsogosun.com/entertainment/bird-gardens/",
+        "sourceType": "operator's own site (Tsogo Sun)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Page links a \"Flamingo-Cafe-Menu-2026-Combined\" menu and a November 2026 What's On; bird demonstrations at 11:00 and 15:00, weather permitting; adults R140, pensioners and children R95."
+      },
+      "Gold Reef City Theme Park": {
+        "url": "https://www.tsogosun.com/gold-reef-city-theme-park/",
+        "sourceType": "operator's own site (Tsogo Sun)",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Theme park page links a November 2026 What's On; states \"the Theme Park is closed on Mondays and Tuesdays except during school holidays or public holidays\", gates close 16h00, children 12 and under must be supervised, some rides restricted by height and age."
+      },
+      "Proud Mary": {
+        "url": "https://www.proudmary.co.za/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Breakfast, lunch, main, drinks and dessert menus labelled October 2026; describes itself as \"all-day eatery and wine bar\" open \"seven days a week\"; reservations by phone, WhatsApp or email."
+      },
+      "Fournos (Rosebank)": {
+        "url": "https://www.fournos.co.za/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Full menu file \"Fournos-Menu-June-2026\"; footer © 2026; notes kitchens close 30 minutes before closing and public holiday hours may differ."
+      },
+      "Doppio Zero (Rosebank)": {
+        "url": "https://doppio.co.za/restaurant/rosebank/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Summer 26 Gauteng menus; home page competition \"runs from 1 November 2026 to 31 January 2027\". Bookings via Dineplan at least 24 hours ahead, with a \"30 min grace period\"."
+      },
+      "Vovo Telo (Sandton)": {
+        "url": "https://vovotelo.co.za/find-us/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Home page Classic menu file dated October 2026 (\"Vovo-telo-Classic_Oct26\"); describes \"daily fresh breads\", sourdough and croissants."
+      },
+      "Sakhumzi (Vilakazi Street)": {
+        "url": "https://www.sakhumzi.co.za/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Buffet bookings listed per branch (Vilakazi: dine@sakhumzi.co.za, 011 536 1379); footer \"© 2026 Sakhumzi Restaurant\"."
+      },
+      "Bean There Coffee Company (44 Stanley)": {
+        "url": "https://beanthere.co.za/pages/visit-us",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Visit page lists the Johannesburg cafe and the roastery at 111 Smit Street, Braamfontein; home page shows 2026 stock notices and footer © 2026."
+      },
+      "Marble": {
+        "url": "https://www.marble.restaurant/contact",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Contact page: \"it is essential to make a reservation via telephone, WhatsApp or DinePlan\"; closed 4–5pm between services; footer © 2026."
+      },
+      "Saint": {
+        "url": "https://saint.restaurant/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Booking buttons and service times published; footer \"© 2026 Saint Restaurant\"."
+      },
+      "Mix Cocktail Bar": {
+        "url": "https://www.mixbar.co.za/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Menu PDF uploaded January 2026; mentions \"monthly events\"; footer \"© 2026 By Mix Cocktail Bar\"."
+      },
+      "Obscura": {
+        "url": "https://www.obscurabar.co.za/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-20",
+        "operatingEvidence": "Takes reservations online, by email or phone; \"tables of 6 or more people require a R200 deposit per head to secure your booking\". No dated content."
+      }
+    }
+  },
   "Nairobi, Kenya": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-11-20",

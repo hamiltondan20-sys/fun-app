@@ -1,0 +1,990 @@
+{
+  "city": "Johannesburg, South Africa",
+  "checkedOn": "2026-11-20",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Apartheid Museum",
+      "kind": "museum",
+      "url": "https://www.apartheidmuseum.org/about-the-museum/visitor-information",
+      "sourceType": "operator's own site",
+      "address": "Cnr Northern Parkway & Gold Reef Roads, Ormonde, Johannesburg, South Africa",
+      "operatingEvidence": "Visitor page lists admission prices \"from 1 May 2026\" (international adult R240, South African adult R170, audio tour included); contact page notes it will \"close at 12:00 on 16 December\". Age advisory: \"not deemed suitable for children under the age of 11\".",
+      "hours": "Tuesday to Sunday, 09:00 to 17:00, and most public holidays",
+      "confidence": "high"
+    },
+    {
+      "name": "Constitution Hill",
+      "kind": "landmark",
+      "url": "https://www.constitutionhill.org.za/pages/opening-hours-and-admission",
+      "sourceType": "operator's own site",
+      "address": "11 Kotze Street, Johannesburg (from https://www.constitutionhill.org.za/pages/getting-here)",
+      "operatingEvidence": "Home page news dated \"12 November 2026\"; hours page lists \"25th and 26th December 2026 – Closed\" and \"01 January 2027 – Closed\". Highlights tour \"every hour on the hour, with the last tour departing at 16h00\"; full site tours \"at 10h00 and 13h00 daily\"; tickets cashless, none sold after 16h00.",
+      "hours": "Open 9am to 5pm daily; Visitor Centre opens 08h45, no tickets sold after 16h00; closes 13h00 on 24 and 31 December 2026",
+      "confidence": "high"
+    },
+    {
+      "name": "Origins Centre",
+      "kind": "museum",
+      "url": "https://www.wits.ac.za/origins/hours-and-admission/",
+      "sourceType": "official public operator (University of the Witwatersrand)",
+      "address": "1 Jan Smuts Avenue, Braamfontein 2000, Johannesburg, South Africa (from https://www.wits.ac.za/origins/)",
+      "operatingEvidence": "Main page carried a notice that it \"will be closed for a private event on 14 to 18 November 2026\" (now past); current price list, adults R95, temporary exhibition \"free with a main museum ticket\".",
+      "hours": "Monday to Friday 09H00 to 17H00; Saturday and Public Holiday 09H00 to 16H00; Sundays: Closed",
+      "confidence": "high"
+    },
+    {
+      "name": "Wits Art Museum",
+      "kind": "museum",
+      "url": "https://www.wits.ac.za/wam/",
+      "sourceType": "official public operator (University of the Witwatersrand)",
+      "address": "1 Jan Smuts Avenue, Braamfontein 2000, Johannesburg, South Africa",
+      "operatingEvidence": "Exhibitions page lists current shows including \"Nature's Elements\" and Véronique Hoog's portraits, whose online version is \"available from 16 September 2026\". No run dates given for the physical shows.",
+      "hours": "Tuesday to Saturday, 10:00 - 16:00 and closed on public holidays",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mandela House",
+      "kind": "museum",
+      "url": "https://www.mandelahouse.com/",
+      "sourceType": "operator's own site",
+      "address": "8115 Vilakazi Street / Orlando West / 1804 / Johannesburg / South Africa",
+      "operatingEvidence": "Home page carries a notice about a briefing on 30 November 2026 and a current ticket table (local adult R105, international adult R185, under 7 free for locals). Lists public-holiday closures: Good Friday, Family Day, Christmas Day, Day of Goodwill and New Year's Day.",
+      "hours": "not published on the page read; closed Good Friday, Family Day, Christmas Day, Day of Goodwill and New Year's Day",
+      "confidence": "medium"
+    },
+    {
+      "name": "Liliesleaf",
+      "kind": "museum",
+      "url": "https://liliesleaf.co.za/contact-us/",
+      "sourceType": "operator's own site",
+      "address": "7 George Avenue Rivonia Sandton 2128",
+      "operatingEvidence": "Home page headline \"LILIESLEAF FARM OPERATIONAL SINCE 2022 (Important Notice)\" links to a notice PDF uploaded June 2026; footer \"© 2026 Liliesleaf\". Weekends and holidays \"Subject to prior booking\".",
+      "hours": "Monday – Friday 09h00-16h00; weekends and holidays subject to prior booking",
+      "confidence": "medium"
+    },
+    {
+      "name": "Johannesburg Holocaust & Genocide Centre",
+      "kind": "museum",
+      "url": "https://www.jhbholocaust.co.za/visit-us/",
+      "sourceType": "operator's own site",
+      "address": "1 Duncombe Road, Forest Town Johannesburg, 2193, South Africa",
+      "operatingEvidence": "Visit page states \"Admission to the JHGC is free of charge\" and that \"a form of identification such as an ID or Driver's Licence is required for entrance\"; links a youth reading list uploaded in 2026. Closed \"Good Friday, 25-27 December and 1 January\".",
+      "hours": "Monday-Friday 09:00-16:00; Saturday, Sunday and Public Holidays 09:00-15:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Ditsong National Museum of Military History",
+      "kind": "museum",
+      "url": "https://ditsong.org.za/en/our-museums/ditsong-national-museum-of-military-history/",
+      "sourceType": "official public operator (DITSONG: Museums of South Africa)",
+      "address": "22 Erlswold Way, Johannesburg, 2132",
+      "operatingEvidence": "Museum page lists daily admission hours and a downloadable price list; footer \"DMSA © 2026\". No dated notices.",
+      "hours": "Admission daily: 07:30 – 16:00 (Except Christmas Day & Good Friday)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Goodman Gallery (Johannesburg)",
+      "kind": "museum",
+      "url": "https://www.goodman-gallery.com/contact",
+      "sourceType": "operator's own site",
+      "address": "163 Jan Smuts Ave Parkwood, Johannesburg South Africa",
+      "operatingEvidence": "Home page programme lists a performance on \"19 Nov 2026 at the Goodman Gallery Johannesburg Cafe\" and exhibitions running into 2027 at other venues.",
+      "hours": "Tuesday to Friday 9am - 5pm; Saturday 9am - 2pm",
+      "confidence": "high"
+    },
+    {
+      "name": "Everard Read (Johannesburg)",
+      "kind": "museum",
+      "url": "https://www.everard-read.co.za/",
+      "sourceType": "operator's own site",
+      "address": "2 & 6 Jellicoe Avenue, Johannesburg, 2196",
+      "operatingEvidence": "Programme lists 2026 projects including \"FNB Art Joburg 2026\" and \"Everard Read at RMB Latitudes 2026\"; no dated Johannesburg exhibition shown.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Johannesburg Zoo",
+      "kind": "park",
+      "url": "https://www.jhbcityparksandzoo.com/services-facilities/zoo/plan-your-visit",
+      "sourceType": "official public operator (Johannesburg City Parks and Zoo)",
+      "address": "corner of Jan Smuts Avenue and Upper Park Drive in Parkview, Johannesburg; main public entrance on Upper Park Drive",
+      "operatingEvidence": "\"the zoo will be cashless from December 1, 2026\"; Zoo Trot dates listed through 13 December 2026; fee page covers 1 July 2026 to 30 June 2027 (adult R135). Tickets \"available at Webtickets\".",
+      "hours": "8:30 am to 5:30 pm, last entry 4:00 pm, open every day including public holidays (the fee page gives an 8:00 am opening)",
+      "confidence": "high"
+    },
+    {
+      "name": "Johannesburg Botanical Garden",
+      "kind": "park",
+      "url": "https://www.jhbcityparksandzoo.com/services-facilities/botanical-gardens/plan-your-visit",
+      "sourceType": "official public operator (Johannesburg City Parks and Zoo)",
+      "address": "\"The main entrance is in Olifants Road\"; parking access from Thomas Bowler, Orange and The Braids roads",
+      "operatingEvidence": "City of Johannesburg newsroom article dated \"26/10/2026\" features Emmarentia Dam and the Johannesburg Botanical Gardens; JCPZ page sets current rules: \"No alcohol is allowed in any of our facilities\", no braais or open fires, dogs on leash in designated areas.",
+      "hours": "open from sunrise to sunset",
+      "confidence": "medium"
+    },
+    {
+      "name": "Walter Sisulu National Botanical Garden",
+      "kind": "park",
+      "url": "https://www.sanbi.org/gardens/walter-sisulu/visitor-information/information/",
+      "sourceType": "official public operator (South African National Biodiversity Institute)",
+      "address": "End of Malcolm Rd, Poortview, Roodepoort, Gauteng, South Africa",
+      "operatingEvidence": "Information page: tickets online or by card at the gate, \"we no longer accept cash payments\"; fee image and trail map hosted under 2026 upload paths; also named in the City of Johannesburg's 26/10/2026 parks article.",
+      "hours": "The garden is open every day from 08h00 to 17h00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Montecasino Bird Gardens",
+      "kind": "park",
+      "url": "https://www.tsogosun.com/entertainment/bird-gardens/",
+      "sourceType": "operator's own site (Tsogo Sun)",
+      "address": "Montecasino Boulevard, Fourways, 2055, South Africa",
+      "operatingEvidence": "Page links a \"Flamingo-Cafe-Menu-2026-Combined\" menu and a November 2026 What's On; bird demonstrations at 11:00 and 15:00, weather permitting; adults R140, pensioners and children R95.",
+      "hours": "Wednesday - Sunday 09h00 – 17h00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Gold Reef City Theme Park",
+      "kind": "landmark",
+      "url": "https://www.tsogosun.com/gold-reef-city-theme-park/",
+      "sourceType": "operator's own site (Tsogo Sun)",
+      "address": "Corner of Northern Parkway & Data Crescent, Ormonde, Johannesburg (Gold Reef City complex address from https://www.tsogosun.com/casino/gold-reef-city/)",
+      "operatingEvidence": "Theme park page links a November 2026 What's On; states \"the Theme Park is closed on Mondays and Tuesdays except during school holidays or public holidays\", gates close 16h00, children 12 and under must be supervised, some rides restricted by height and age.",
+      "hours": "daily hours not published; no entry after 16h00; closed Mondays and Tuesdays except school or public holidays",
+      "confidence": "medium"
+    },
+    {
+      "name": "Proud Mary",
+      "kind": "meal",
+      "url": "https://www.proudmary.co.za/",
+      "sourceType": "operator's own site",
+      "address": "The Bank, 26 Cradock Ave, Rosebank, Johannesburg, 2196",
+      "operatingEvidence": "Breakfast, lunch, main, drinks and dessert menus labelled October 2026; describes itself as \"all-day eatery and wine bar\" open \"seven days a week\"; reservations by phone, WhatsApp or email.",
+      "hours": "Open daily 06h30-24h00",
+      "confidence": "high"
+    },
+    {
+      "name": "Fournos (Rosebank)",
+      "kind": "bakery",
+      "url": "https://www.fournos.co.za/",
+      "sourceType": "operator's own site",
+      "address": "Shop 11 & 12, Baker Square, 28 Baker St, Rosebank, Johannesburg",
+      "operatingEvidence": "Full menu file \"Fournos-Menu-June-2026\"; footer © 2026; notes kitchens close 30 minutes before closing and public holiday hours may differ.",
+      "hours": "Monday to Friday 06h00 to 17h00; Saturday 07h00 to 16h00; Sunday 07h00 to 14h00",
+      "confidence": "high"
+    },
+    {
+      "name": "Doppio Zero (Rosebank)",
+      "kind": "meal",
+      "url": "https://doppio.co.za/restaurant/rosebank/",
+      "sourceType": "operator's own site",
+      "address": "Shop 18, The Firs, Cradock Avenue, Rosebank, Johannesburg, Gauteng, 2196, South Africa",
+      "operatingEvidence": "Summer 26 Gauteng menus; home page competition \"runs from 1 November 2026 to 31 January 2027\". Bookings via Dineplan at least 24 hours ahead, with a \"30 min grace period\".",
+      "hours": "Sunday and Monday 07:00 to 20:30; Tuesday to Saturday 07:00 to 21:00 (the chain directory shows 07:00 - 22:00)",
+      "confidence": "high"
+    },
+    {
+      "name": "Vovo Telo (Sandton)",
+      "kind": "bakery",
+      "url": "https://vovotelo.co.za/find-us/",
+      "sourceType": "operator's own site",
+      "address": "First Rand Building, 8 Merchant Place, Shop 1 1 Fredman Drive, Sandton, 2196",
+      "operatingEvidence": "Home page Classic menu file dated October 2026 (\"Vovo-telo-Classic_Oct26\"); describes \"daily fresh breads\", sourdough and croissants.",
+      "hours": "Mon–Fri 07:00–17:00; Sat–Sun closed",
+      "confidence": "high"
+    },
+    {
+      "name": "Sakhumzi (Vilakazi Street)",
+      "kind": "meal",
+      "url": "https://www.sakhumzi.co.za/",
+      "sourceType": "operator's own site",
+      "address": "6980 Vilakazi Street. Orlando West, Soweto, 1804",
+      "operatingEvidence": "Buffet bookings listed per branch (Vilakazi: dine@sakhumzi.co.za, 011 536 1379); footer \"© 2026 Sakhumzi Restaurant\".",
+      "hours": "general hours not published; Vilakazi buffet \"starting from 11:00- 21:00\", for 2 hours",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bean There Coffee Company (44 Stanley)",
+      "kind": "cafe",
+      "url": "https://beanthere.co.za/pages/visit-us",
+      "sourceType": "operator's own site",
+      "address": "44 Stanley Ave, Milpark, 2092",
+      "operatingEvidence": "Visit page lists the Johannesburg cafe and the roastery at 111 Smit Street, Braamfontein; home page shows 2026 stock notices and footer © 2026.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Marble",
+      "kind": "meal",
+      "url": "https://www.marble.restaurant/contact",
+      "sourceType": "operator's own site",
+      "address": "Trumpet on Keyes, Corner Keyes & Jellicoe Avenue, Rosebank, Johannesburg, South Africa",
+      "operatingEvidence": "Contact page: \"it is essential to make a reservation via telephone, WhatsApp or DinePlan\"; closed 4–5pm between services; footer © 2026.",
+      "hours": "Monday to Sunday; lunch 12pm to 4pm, dinner 5pm to 10pm; lunch tables returned by 4:30pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Saint",
+      "kind": "meal",
+      "url": "https://saint.restaurant/",
+      "sourceType": "operator's own site",
+      "address": "Upper Retail Shop, The Marc, Cnr Rivonia & Maude Str, Sandton",
+      "operatingEvidence": "Booking buttons and service times published; footer \"© 2026 Saint Restaurant\".",
+      "hours": "Monday to Sunday; lunch 12pm to 4pm, dinner 5pm to 10pm; closed 4 to 5pm",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mix Cocktail Bar",
+      "kind": "bar",
+      "url": "https://www.mixbar.co.za/",
+      "sourceType": "operator's own site",
+      "address": "2nd Floor, 21 Keyes Avenue, Rosebank",
+      "operatingEvidence": "Menu PDF uploaded January 2026; mentions \"monthly events\"; footer \"© 2026 By Mix Cocktail Bar\".",
+      "hours": "Tuesday to Friday: 4pm to late; Saturday: 11am to late (Sunday and Monday not listed)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Obscura",
+      "kind": "bar",
+      "url": "https://www.obscurabar.co.za/",
+      "sourceType": "operator's own site",
+      "address": "199 Oxford Rd, Rosebank, Johanesburg",
+      "operatingEvidence": "Takes reservations online, by email or phone; \"tables of 6 or more people require a R200 deposit per head to secure your booking\". No dated content.",
+      "hours": "Tuesday to Sunday: 12pm to 12am",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Johannesburg Art Gallery",
+      "reason": "No current official page found; City of Johannesburg page read is dated 2006 with a 2018 footer. Third-party coverage reports refurbishment; not verified on an official page.",
+      "url": "https://joburg.org.za/play_/JoburgHighlights/Pages/jag.aspx"
+    },
+    {
+      "name": "Standard Bank Gallery",
+      "reason": "Only exhibition listed (HOMECOMING) ended 31 October 2026; nothing current or upcoming shown.",
+      "url": "https://sponsorships.standardbank.com/sbgs/sponsorship/arts-and-culture/gallery"
+    },
+    {
+      "name": "Sci-Bono Discovery Centre",
+      "reason": "Address and hours published but no 2026 or current content (footer 2023); hours-and-rates page returned 404.",
+      "url": "https://www.sci-bono.co.za/"
+    },
+    {
+      "name": "Maropeng (Cradle of Humankind)",
+      "reason": "Pages read show only hotel booking and address; no visitor-centre hours, tour times or current notice.",
+      "url": "https://www.maropeng.co.za/"
+    },
+    {
+      "name": "Father Coffee",
+      "reason": "Official site returned HTTP 404.",
+      "url": "https://www.fathercoffee.co.za/"
+    },
+    {
+      "name": "Neighbourgoods Market (Braamfontein)",
+      "reason": "Official site lists only a Cape Town address; no Johannesburg market shown.",
+      "url": "https://www.neighbourgoodsmarket.co.za/"
+    },
+    {
+      "name": "The Marabi Club",
+      "reason": "Official site returned HTTP 500.",
+      "url": "https://www.themarabiclub.com/"
+    },
+    {
+      "name": "Moemas",
+      "reason": "Site is catering-focused and states \"Our retail shop is closed.\"",
+      "url": "https://www.moemas.co.za/"
+    },
+    {
+      "name": "The Grillhouse (Rosebank)",
+      "reason": "No current content; footer copyright 2024.",
+      "url": "https://www.thegrillhouse.co.za/"
+    },
+    {
+      "name": "Chaf Pozi",
+      "reason": "Only dated notices are from 2016-2017; no current content.",
+      "url": "https://www.chafpozi.co.za/"
+    },
+    {
+      "name": "Salvation Café (44 Stanley)",
+      "reason": "Address and hours shown but menus dated 2024 and 2025; no 2026 content.",
+      "url": "https://www.salvationcafe.co.za/"
+    },
+    {
+      "name": "Tashas (Rosebank)",
+      "reason": "Branch page returned 404; home page lists branch names only, no address.",
+      "url": "https://www.tashascafe.com/rosebank"
+    },
+    {
+      "name": "Victoria Yards",
+      "reason": "Home page footer 2025, no 2026 content; events page returned HTTP 403.",
+      "url": "https://www.victoriayards.co.za/"
+    },
+    {
+      "name": "Arts on Main",
+      "reason": "Address shown but no hours or 2026 content.",
+      "url": "https://www.artsonmain.co.za/"
+    },
+    {
+      "name": "Rosebank Sunday Market",
+      "reason": "No trading hours and footer ends 2024; no current content.",
+      "url": "https://www.rosebanksundaymarket.co.za/"
+    },
+    {
+      "name": "Pata Pata",
+      "reason": "Address shown but no hours or dated content; page header conflicts with address.",
+      "url": "https://www.patapata.co.za/"
+    },
+    {
+      "name": "Hallmark House",
+      "reason": "No address or bar hours published on the page read.",
+      "url": "https://www.hallmarkhouse.co.za/"
+    },
+    {
+      "name": "The Saxon (Qunu, Olive Bar)",
+      "reason": "Address shown but no venue hours or dated content on pages read.",
+      "url": "https://www.saxon.co.za/dining/"
+    },
+    {
+      "name": "Four Seasons Hotel The Westcliff",
+      "reason": "Fetch refused: HTTP 403.",
+      "url": "https://www.fourseasons.com/johannesburg/dining/"
+    },
+    {
+      "name": "Nelson Mandela Square",
+      "reason": "Fetch refused: HTTP 403.",
+      "url": "https://www.nelsonmandelasquare.co.za/"
+    },
+    {
+      "name": "Kitchener's Carvery Bar",
+      "reason": "Connection refused.",
+      "url": "https://www.kitcheners.co.za/"
+    },
+    {
+      "name": "Orlando Towers",
+      "reason": "Connection refused.",
+      "url": "https://www.orlandotowers.co.za/"
+    },
+    {
+      "name": "Sin + Tax",
+      "reason": "Domain did not resolve (DNS failure).",
+      "url": "https://www.sinandtax.co.za/"
+    },
+    {
+      "name": "Doubleshot Coffee & Tea",
+      "reason": "Domain did not resolve (DNS failure).",
+      "url": "https://www.doubleshot.co.za/"
+    },
+    {
+      "name": "Home of the Bean",
+      "reason": "Domain did not resolve (DNS failure).",
+      "url": "https://www.homeofthebean.co.za/"
+    },
+    {
+      "name": "Les Créatifs",
+      "reason": "SSL error (wrong version number).",
+      "url": "https://www.lescreatifs.co.za/"
+    },
+    {
+      "name": "DW Eleven-13",
+      "reason": "Guessed official URL returned HTTP 404; no official site found.",
+      "url": "https://www.dw11-13.co.za/"
+    },
+    {
+      "name": "Embarc",
+      "reason": "Site is a \"Launching Soon\" placeholder.",
+      "url": "https://www.embarc.co.za/"
+    },
+    {
+      "name": "Satyagraha House",
+      "reason": "No street address or museum hours on the page read.",
+      "url": "https://www.satyagrahahouse.com/"
+    },
+    {
+      "name": "Lion & Safari Park",
+      "reason": "No street address published on the page read.",
+      "url": "https://www.lionandsafaripark.com/"
+    },
+    {
+      "name": "The Whippet",
+      "reason": "No street address or hours on the page read.",
+      "url": "https://www.thewhippet.co.za/"
+    },
+    {
+      "name": "Motherland Coffee Company",
+      "reason": "Home page lists no store addresses or hours.",
+      "url": "https://www.motherlandcoffee.com/"
+    },
+    {
+      "name": "Bootlegger Coffee Company",
+      "reason": "Store locator did not load readable content; no branch address read.",
+      "url": "https://ourcafes.bootlegger.coffee/"
+    },
+    {
+      "name": "Nelson Mandela Foundation",
+      "reason": "No visitor hours or visiting arrangements published on the page read.",
+      "url": "https://www.nelsonmandela.org/"
+    },
+    {
+      "name": "Keyes Art Mile",
+      "reason": "No address or tenant details on the page read.",
+      "url": "https://www.keyesartmile.co.za/"
+    },
+    {
+      "name": "Vovo Telo (Parkhurst)",
+      "reason": "Branch not listed on official find-us page; Sandton branch used instead.",
+      "url": "https://vovotelo.co.za/find-us/"
+    },
+    {
+      "name": "Maboneng",
+      "reason": "neighbourhood, not a single operated place",
+      "url": ""
+    },
+    {
+      "name": "Soweto",
+      "reason": "township/area, not a single operated place",
+      "url": ""
+    },
+    {
+      "name": "Soweto with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Maboneng art walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A city viewpoint or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Braai dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market lunch",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A contemporary South African table",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Maboneng",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Soweto",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Rosebank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Rosebank walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Maboneng",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Soweto",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Soweto",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Apartheid Museum",
+      "reason": "generic, not a place (Apartheid Museum itself is confirmed)",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Rosebank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Soweto with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Maboneng",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Maboneng",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Rosebank evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Maboneng",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Soweto",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Rosebank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Apartheid Museum",
+      "reason": "generic, not a place (Apartheid Museum itself is confirmed)",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Maboneng",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Soweto",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Rosebank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Apartheid Museum",
+      "reason": "generic, not a place (Apartheid Museum itself is confirmed)",
+      "url": ""
+    },
+    {
+      "name": "Rosebank cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Maboneng art walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Soweto",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Soweto",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Rosebank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Rosebank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Maboneng bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Apartheid Museum",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Soweto",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Rosebank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Maboneng",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Soweto",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Rosebank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Maboneng",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Soweto",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Rosebank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Rosebank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Maboneng",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Soweto",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Rosebank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Maboneng morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Apartheid Museum",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Soweto",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Rosebank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Maboneng",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Soweto",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Apartheid Museum",
+        "Constitution Hill",
+        "Mandela House",
+        "Origins Centre"
+      ],
+      "bestFirstTimers": [
+        "Apartheid Museum",
+        "Constitution Hill",
+        "Mandela House",
+        "Sakhumzi (Vilakazi Street)"
+      ],
+      "bestRestaurants": [
+        "Marble",
+        "Saint",
+        "Proud Mary",
+        "Sakhumzi (Vilakazi Street)"
+      ],
+      "bestBudget": [
+        "Johannesburg Holocaust & Genocide Centre",
+        "Johannesburg Botanical Garden",
+        "Walter Sisulu National Botanical Garden",
+        "Origins Centre"
+      ],
+      "bestLuxury": [
+        "Marble",
+        "Saint",
+        "Obscura",
+        "Everard Read (Johannesburg)"
+      ],
+      "bestCouples": [
+        "Walter Sisulu National Botanical Garden",
+        "Marble",
+        "Mix Cocktail Bar",
+        "Johannesburg Botanical Garden"
+      ],
+      "bestKids": [
+        "Johannesburg Zoo",
+        "Montecasino Bird Gardens",
+        "Gold Reef City Theme Park",
+        "Ditsong National Museum of Military History"
+      ],
+      "bestSolo": [
+        "Wits Art Museum",
+        "Goodman Gallery (Johannesburg)",
+        "Liliesleaf",
+        "Bean There Coffee Company (44 Stanley)"
+      ],
+      "bestUnique": [
+        "Liliesleaf",
+        "Origins Centre",
+        "Johannesburg Holocaust & Genocide Centre",
+        "Everard Read (Johannesburg)"
+      ],
+      "bestBreakfast": [
+        "Proud Mary",
+        "Doppio Zero (Rosebank)",
+        "Fournos (Rosebank)",
+        "Vovo Telo (Sandton)"
+      ],
+      "bestLunch": [
+        "Sakhumzi (Vilakazi Street)",
+        "Marble",
+        "Saint",
+        "Doppio Zero (Rosebank)"
+      ],
+      "bestDinner": [
+        "Marble",
+        "Saint",
+        "Proud Mary",
+        "Obscura"
+      ],
+      "bestCocktails": [
+        "Mix Cocktail Bar",
+        "Obscura"
+      ],
+      "bestBakeries": [
+        "Fournos (Rosebank)",
+        "Vovo Telo (Sandton)"
+      ],
+      "bestCoffee": [
+        "Bean There Coffee Company (44 Stanley)",
+        "Vovo Telo (Sandton)",
+        "Fournos (Rosebank)",
+        "Proud Mary"
+      ]
+    },
+    "queries": {
+      "Apartheid Museum": "Apartheid Museum Northern Parkway and Gold Reef Road Ormonde Johannesburg",
+      "Constitution Hill": "Constitution Hill 11 Kotze Street Johannesburg",
+      "Origins Centre": "Origins Centre 1 Jan Smuts Avenue Braamfontein Johannesburg",
+      "Wits Art Museum": "Wits Art Museum Jan Smuts Avenue Braamfontein Johannesburg",
+      "Mandela House": "Mandela House 8115 Vilakazi Street Orlando West Soweto Johannesburg",
+      "Liliesleaf": "Liliesleaf 7 George Avenue Rivonia Johannesburg",
+      "Johannesburg Holocaust & Genocide Centre": "Johannesburg Holocaust & Genocide Centre 1 Duncombe Road Forest Town Johannesburg",
+      "Ditsong National Museum of Military History": "Ditsong National Museum of Military History 22 Erlswold Way Saxonwold Johannesburg",
+      "Goodman Gallery (Johannesburg)": "Goodman Gallery 163 Jan Smuts Avenue Parkwood Johannesburg",
+      "Everard Read (Johannesburg)": "Everard Read 6 Jellicoe Avenue Rosebank Johannesburg",
+      "Johannesburg Zoo": "Johannesburg Zoo Jan Smuts Avenue Upper Park Drive Parkview Johannesburg",
+      "Johannesburg Botanical Garden": "Johannesburg Botanical Garden Olifants Road Emmarentia Johannesburg",
+      "Walter Sisulu National Botanical Garden": "Walter Sisulu National Botanical Garden Malcolm Road Poortview Roodepoort",
+      "Montecasino Bird Gardens": "Montecasino Bird Gardens Montecasino Boulevard Fourways Johannesburg",
+      "Gold Reef City Theme Park": "Gold Reef City Theme Park Northern Parkway Ormonde Johannesburg",
+      "Proud Mary": "Proud Mary 26 Cradock Avenue Rosebank Johannesburg",
+      "Fournos (Rosebank)": "Fournos Baker Square 28 Baker Street Rosebank Johannesburg",
+      "Doppio Zero (Rosebank)": "Doppio Zero The Firs Cradock Avenue Rosebank Johannesburg",
+      "Vovo Telo (Sandton)": "Vovo Telo 1 Fredman Drive Sandton Johannesburg",
+      "Sakhumzi (Vilakazi Street)": "Sakhumzi 6980 Vilakazi Street Orlando West Soweto Johannesburg",
+      "Bean There Coffee Company (44 Stanley)": "Bean There Coffee 44 Stanley Avenue Milpark Johannesburg",
+      "Marble": "Marble Trumpet on Keyes Keyes Avenue Rosebank Johannesburg",
+      "Saint": "Saint The Marc Rivonia Road Maude Street Sandton Johannesburg",
+      "Mix Cocktail Bar": "Mix Cocktail Bar 21 Keyes Avenue Rosebank Johannesburg",
+      "Obscura": "Obscura 199 Oxford Road Rosebank Johannesburg"
+    },
+    "summary": "History museums, galleries, gardens and family outings, with breakfast spots, bakeries, dinners and cocktail bars checked against their own websites.",
+    "highlights": [
+      "Apartheid Museum",
+      "Constitution Hill",
+      "Mandela House",
+      "Origins Centre"
+    ],
+    "tip": "Watch the early-week schedules: the Apartheid Museum opens Tuesday to Sunday, Montecasino Bird Gardens opens Wednesday to Sunday, and Gold Reef City Theme Park is closed on Mondays and Tuesdays except during school or public holidays.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Plan around Monday and Tuesday",
+        "copy": "The Apartheid Museum opens Tuesday to Sunday, Montecasino Bird Gardens opens Wednesday to Sunday, and Gold Reef City Theme Park is closed on Mondays and Tuesdays except during school or public holidays. Origins Centre is closed on Sundays, and Wits Art Museum opens Tuesday to Saturday and closes on public holidays."
+      },
+      {
+        "label": "Tickets",
+        "value": "Arrive before 16h00 and carry a card",
+        "copy": "Constitution Hill sells no tickets after 16h00 and runs a cashless ticket desk, and Johannesburg Zoo has last entry at 4:00 pm and takes card only at the gate from 1 December 2026. Walter Sisulu National Botanical Garden no longer accepts cash."
+      },
+      {
+        "label": "Booking",
+        "value": "Reserve Rosebank tables ahead",
+        "copy": "Marble says a reservation is essential, and Obscura asks for a R200 per head deposit for tables of six or more. Doppio Zero (Rosebank) takes Dineplan bookings at least 24 hours ahead and holds a table for 30 minutes."
+      },
+      {
+        "label": "Rules",
+        "value": "Age guidance, ID and park rules",
+        "copy": "The Apartheid Museum says it is not suitable for children under 11, and Constitution Hill requires under-12s to be with an adult. The Johannesburg Holocaust & Genocide Centre requires ID for entry, and the Johannesburg Botanical Garden bans alcohol and braais."
+      }
+    ],
+    "dek": "Plan sights around early-week closures and book Rosebank dinner tables before you go.",
+    "intro": [
+      "Johannesburg's recent history is told most directly in its museums. The Apartheid Museum in Ormonde opens Tuesday to Sunday, 09:00 to 17:00, and on most public holidays; it suggests about two hours for a visit and says it is not suitable for children under 11. Constitution Hill at 11 Kotze Street is open 9am to 5pm daily, with a one-hour highlights tour every hour until 16h00 and two-hour full site tours at 10h00 and 13h00. In Soweto, Mandela House at 8115 Vilakazi Street publishes separate local and international ticket prices.",
+      "For deeper history and art, the Origins Centre at Wits in Braamfontein opens Monday to Friday from 09H00 to 17H00 and Saturdays and public holidays from 09H00 to 16H00, and is closed on Sundays; adult entry is R95. Wits Art Museum opens Tuesday to Saturday, 10:00 to 16:00, and lists Nature's Elements among its current shows. Liliesleaf in Rivonia opens Monday to Friday, 09h00 to 16h00, with weekend and holiday visits by prior booking. The Johannesburg Holocaust & Genocide Centre in Forest Town is free but asks you to bring ID.",
+      "With children, Johannesburg Zoo in Parkview is open every day with last entry at 4:00 pm, and takes card only at the gate from 1 December 2026. Montecasino Bird Gardens in Fourways opens Wednesday to Sunday, 09h00 to 17h00, with bird demonstrations at 11:00 and 15:00, weather permitting. Gold Reef City Theme Park is closed on Mondays and Tuesdays except during school or public holidays, and admits no one after 16h00. For open space, the Johannesburg Botanical Garden is open from sunrise to sunset, and Walter Sisulu National Botanical Garden opens daily from 08h00 to 17h00.",
+      "Rosebank anchors the eating and drinking. Proud Mary at 26 Cradock Avenue is open daily from 06h30 to 24h00 for breakfast, lunch and dinner, and Fournos on Baker Street opens at 06h00 on weekdays. Marble, on Keyes Avenue, serves lunch from 12pm to 4pm and dinner from 5pm to 10pm, and says a reservation is essential. For cocktails, Mix Cocktail Bar on Keyes Avenue opens Tuesday to Friday from 4pm and Saturday from 11am, while Obscura on Oxford Road opens Tuesday to Sunday from 12pm to 12am."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair the Apartheid Museum, open Tuesday to Sunday, with Constitution Hill, which runs hourly highlights tours until 16h00."
+      ],
+      [
+        "A slower morning",
+        "Start with breakfast at Proud Mary, open daily from 06h30, then walk the Johannesburg Botanical Garden, open from sunrise to sunset."
+      ],
+      [
+        "Before booking",
+        "Reserve Marble ahead, and remember Montecasino Bird Gardens opens Wednesday to Sunday while Gold Reef City Theme Park is closed on Mondays and Tuesdays outside school and public holidays."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several confirmed places show only a 2026 copyright footer, menu file or booking policy as evidence of operation (Marble, Saint, Mix Cocktail Bar, Obscura, Bean There, Sakhumzi, Liliesleaf, Ditsong Military History, Everard Read), so they are rated medium. Hours were not published on the pages read for Mandela House, Everard Read, Bean There and Sakhumzi (buffet times only), and Gold Reef City Theme Park gives no daily hours; its address is taken from Tsogo Sun's Gold Reef City complex page. Johannesburg Zoo's visit page gives an 8:30 am opening while its fee page gives 8:00 am. Sites that could not be read: Four Seasons The Westcliff and Nelson Mandela Square (403), Victoria Yards events (403), Father Coffee and DW Eleven-13 (404), The Marabi Club (500), Kitchener's and Orlando Towers (connection refused), Sin + Tax, Doubleshot and Home of the Bean (DNS failure), Les Créatifs (SSL error). No food market could be confirmed. A first automated read of the Apartheid Museum visitor-information page reported text addressed to an AI, but a second read found none and no wording could be quoted, so nothing is listed under injectionLikeText.",
+  "injectionLikeText": [],
+  "injectionLikeTextIgnored": [
+    {
+      "url": "https://www.apartheidmuseum.org/about-the-museum/visitor-information",
+      "note": "2026-11-20: the reviewer's first WebFetch read reported text addressed to an AI, which a second read did not reproduce. Loaded the page in the in-app browser and searched the full HTML (69,708 characters) for AI, assistant, LLM, model names and \"ignore instructions\" phrases. The only matches were inside the Facebook pixel script, so the flag was false."
+    }
+  ]
+}

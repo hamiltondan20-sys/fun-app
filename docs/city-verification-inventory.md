@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 106.
-- Classifier-passed (published, not fully documented in that format): 86.
+- Source-verified (complete dated evidence format): 107.
+- Classifier-passed (published, not fully documented in that format): 85.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -248,7 +248,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Jeddah, Saudi Arabia | jeddah | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Jeju, South Korea | jeju | classifier-passed | not-reviewed | 0 | 5 | 15 | 3 | None |
 | Jerusalem, Israel | jerusalem | source-verified | source-checked | 25 | 51 | 15 | 15 | None |
-| Johannesburg, South Africa | johannesburg | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Johannesburg, South Africa | johannesburg | source-verified | source-checked | 25 | 53 | 15 | 15 | None |
 | Kamchatka, Russia | kamchatka | classifier-passed | not-reviewed | 0 | 5 | 15 | 3 | None |
 | Kanazawa, Japan | kanazawa | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Kelowna, Canada | kelowna | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
