@@ -11350,4 +11350,103 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 30 distinct recommendations in this guide were checked against their operators' own websites on November 22, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Luxor, Egypt: source review of 2026-11-22 (docs/content-research/luxor-2026-11-22.md).
+  {
+    const cityKey = "Luxor, Egypt";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Karnak Temple","Luxor Temple","Valley of the Kings","Temple of Hatshepsut"],
+      bestFirstTimers: ["Karnak Temple","Valley of the Kings","Luxor Temple","Karnak Sound and Light Show"],
+      bestRestaurants: ["Al-Sahaby Lane Restaurant","The Ottoman Hall (Al Moudira)","Khan Al Moudira","Nile Valley Hotel & Restaurant"],
+      bestBudget: ["Luxor Temple","Al-Sahaby Lane Restaurant","Nile Valley Hotel & Restaurant"],
+      bestLuxury: ["The Ottoman Hall (Al Moudira)","The Eastern Bar (Al Moudira)","Sindbad Balloons"],
+      bestCouples: ["Sindbad Balloons","Sukkareya Lobby Bar & Terrace (Steigenberger Resort Achti)","The Eastern Bar (Al Moudira)","Karnak Sound and Light Show"],
+      bestKids: ["Karnak Sound and Light Show","Luxor Temple","Nino's Restaurant (Steigenberger Resort Achti)","Nile Side Pools Bar & Grill (Steigenberger Resort Achti)"],
+      bestSolo: ["Luxor Temple","Al-Sahaby Lane Restaurant","The Courtyard (Al Moudira)"],
+      bestUnique: ["Sindbad Balloons","Karnak Sound and Light Show","The Moudira Farm Kitchen"],
+      bestBreakfast: ["Al-Sahaby Lane Restaurant","Karnak Restaurant (Steigenberger Resort Achti)","The Courtyard (Al Moudira)","Nile Valley Hotel & Restaurant"],
+      bestLunch: ["The Moudira Farm Kitchen","The Courtyard (Al Moudira)","Karnak Restaurant (Steigenberger Resort Achti)","Nile Side Pools Bar & Grill (Steigenberger Resort Achti)"],
+      bestDinner: ["The Ottoman Hall (Al Moudira)","Sofra Restaurant (Steigenberger Resort Achti)","Nino's Restaurant (Steigenberger Resort Achti)","Khan Al Moudira"],
+      bestCocktails: ["Sukkareya Lobby Bar & Terrace (Steigenberger Resort Achti)","The Eastern Bar (Al Moudira)"],
+      bestBakeries: ["Al-Sahaby Lane Restaurant"],
+      bestCoffee: ["Al-Sahaby Lane Restaurant","The Courtyard (Al Moudira)","Khan Al Moudira"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Karnak Temple": "Karnak Temple East Bank Luxor",
+      "Luxor Temple": "Luxor Temple East Bank Luxor",
+      "Valley of the Kings": "Valley of the Kings West Bank Luxor",
+      "Temple of Hatshepsut": "Temple of Hatshepsut Deir al-Bahari West Bank Luxor",
+      "Karnak Sound and Light Show": "Karnak Sound and Light Show Karnak Temple Luxor",
+      "Al-Sahaby Lane Restaurant": "Al-Sahaby Lane Restaurant Nefertiti Hotel El Sahabi Street Luxor",
+      "The Ottoman Hall (Al Moudira)": "Al Moudira Hotel Hager El Dabayah West Bank Luxor",
+      "Khan Al Moudira": "Khan Al Moudira Al Moudira Hotel Hager El Dabayah West Bank Luxor",
+      "Nile Valley Hotel & Restaurant": "Nile Valley Hotel Al Bairat West Bank Luxor",
+      "The Eastern Bar (Al Moudira)": "Al Moudira Hotel Hager El Dabayah West Bank Luxor",
+      "Sindbad Balloons": "Sindbad Balloons 37 Abdel Hamid Omda St Luxor",
+      "Sukkareya Lobby Bar & Terrace (Steigenberger Resort Achti)": "Steigenberger Resort Achti Khaled Ibn El Waleed Luxor",
+      "Nino's Restaurant (Steigenberger Resort Achti)": "Steigenberger Resort Achti Khaled Ibn El Waleed Luxor",
+      "Nile Side Pools Bar & Grill (Steigenberger Resort Achti)": "Steigenberger Resort Achti Khaled Ibn El Waleed Luxor",
+      "The Courtyard (Al Moudira)": "Al Moudira Hotel Hager El Dabayah West Bank Luxor",
+      "The Moudira Farm Kitchen": "Al Moudira Hotel Hager El Dabayah West Bank Luxor",
+      "Karnak Restaurant (Steigenberger Resort Achti)": "Steigenberger Resort Achti Khaled Ibn El Waleed Luxor",
+      "Sofra Restaurant (Steigenberger Resort Achti)": "Steigenberger Resort Achti Khaled Ibn El Waleed Luxor"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Luxor" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Temples, tombs, a sound-and-light show and a balloon operator on both banks of Luxor, with breakfast spots, dinners and bars checked against their own websites.";
+    cityGuide.highlights = ["Karnak Temple","Luxor Temple","Valley of the Kings","Temple of Hatshepsut"];
+    cityGuide.tip = "The ministry's ticket site lists Karnak Temple, Luxor Temple, the Valley of the Kings and the Temple of Hatshepsut as open all days, but Karnak's last entry is 04:00 pm in every season, so visit it before Luxor Temple, where last entry is 07:00 pm.";
+    data.destinationFacts[cityKey] = "The ministry's ticket site lists Karnak Temple, Luxor Temple, the Valley of the Kings and the Temple of Hatshepsut as open all days, but Karnak's last entry is 04:00 pm in every season, so visit it before Luxor Temple, where last entry is 07:00 pm.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Temples, tombs, a sound-and-light show and a balloon operator on both banks of Luxor, with breakfast spots, dinners and bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Open all days",
+        "copy": "The ministry's ticket site, egymonuments.com, lists Karnak Temple, Luxor Temple, the Valley of the Kings and the Temple of Hatshepsut as open all days. None of the places in this guide publishes a weekly closing day."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book temples online",
+        "copy": "Karnak Temple, Luxor Temple and the Temple of Hatshepsut can be booked on egymonuments.com, which lists adult tickets for foreign visitors at EGP 600, EGP 500 and EGP 440; the Valley of the Kings is listed at EGP 750. The Karnak Sound and Light Show sells tickets online at $20, and its page warns that dates are subject to change."
+      },
+      {
+        "label": "Last entry and tables",
+        "value": "Arrive an hour early",
+        "copy": "The ticket site asks you to arrive at least one hour before a site's closing time; Karnak's last entry is 04:00 pm, while the Valley of the Kings and the Temple of Hatshepsut take last entry at 05:00 pm in summer and 04:00 pm in winter. Al-Sahaby Lane Restaurant takes table requests online and confirms a table only after its team contacts you."
+      },
+      {
+        "label": "Rules",
+        "value": "Student ID, phone photos",
+        "copy": "At the ministry sites, students must show a valid ID and be 24 or under, children below 6 enter free, and photography with a mobile phone is free of charge. The Karnak Sound and Light Show charges $11 for children aged 6 to 12, and its second evening show runs only with at least five foreign visitors."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Do Karnak first, since its last entry is 04:00 pm, and save Luxor Temple and the sound-and-light show for the evening.",
+      intro: [
+        "Luxor's headline sights are run by Egypt's Ministry of Tourism and Antiquities, and its online ticket site, egymonuments.com, lists Karnak Temple, Luxor Temple, the Valley of the Kings and the Temple of Hatshepsut as open all days. None of the places checked here publishes a weekly closing day. The same site asks you to arrive at least one hour before a site's closing time, to keep your ticket with you, and notes that photography with a mobile phone is free of charge.",
+        "On the east bank, the ticket site lists Karnak Temple from 06:00 with last entry at 04:00 pm in every season, and its EGP 600 adult ticket for foreign visitors also covers the Open Museum at Karnak. Luxor Temple, about three kilometres south of Karnak according to the ministry, has the latest last entry of the four, 07:00 pm. In the evening, Misr Company for Sound, Light and Tourism Development lists a 19:00 English show at Karnak, with a second show at 20:00 that needs at least five foreign visitors.",
+        "Across the river, the ministry places the Valley of the Kings on the west side of the Nile and the Temple of Hatshepsut at Deir al-Bahari, directly across from Karnak. The ticket site gives both a 06:00 opening, with last entry at 05:00 pm in summer and 04:00 pm in winter and Ramadan; adult tickets for foreign visitors are EGP 750 and EGP 440. If you want to see the west bank from above first, Sindbad Balloons lists daily, year-round flights with sunrise and morning departures, and offers hotel pickup in Luxor when you book.",
+        "For meals, Al-Sahaby Lane Restaurant at the Nefertiti Hotel serves an open buffet breakfast daily from 7:00 to 10:00 on its rooftop and takes table requests through an online form. On the west bank, Al Moudira's Ottoman Hall serves a fusion dinner menu, The Courtyard covers breakfast and coffee, and The Eastern Bar handles aperitivo. Back on the east bank, the Steigenberger Resort Achti lists Sukkareya Lobby Bar & Terrace from 09:00 to 01:00 and Nino's Restaurant for Italian dinners from 18:00 to 22:00."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Start at Karnak Temple, where the ministry's ticket site sets last entry at 04:00 pm every day, and leave Luxor Temple for later, as it admits visitors until 07:00 pm."
+        ],
+        [
+          "A slower morning",
+          "Take the 7:00 to 10:00 buffet breakfast on the rooftop at Al-Sahaby Lane Restaurant, then cross to the Temple of Hatshepsut, which opens at 06:00."
+        ],
+        [
+          "Before booking",
+          "None of these places publishes a weekly closing day, but the ministry asks you to arrive at least one hour before closing, and students need a valid ID showing they are 24 or under."
+        ]
+      ],
+      trust: "All 18 distinct recommendations in this guide were checked against their operators' own websites on November 22, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

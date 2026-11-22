@@ -1,0 +1,786 @@
+{
+  "city": "Luxor, Egypt",
+  "checkedOn": "2026-11-22",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Karnak Temple",
+      "kind": "landmark",
+      "url": "https://egymonuments.gov.eg/archaeological-sites/karnak/",
+      "sourceType": "official public operator (Ministry of Tourism and Antiquities: egymonuments.gov.eg; ticketing on https://egymonuments.com/details/KarnakTemple)",
+      "address": "\"Located on the east bank of Thebes (modern Luxor), Upper Egypt.\"",
+      "operatingEvidence": "The ministry's ticket site (copyright Ministry of Tourism & Antiquities) offers online booking with a \"Book Now\" date picker and lists \"Other nationality: Adult 600, Student 300\" EGP; the ministry page says the ticket is \"Inclusive ... Karnak Temple and Open Museum in Karnak\".",
+      "hours": "Ticket site (current booking page): \"All Days\"; Summer, Winter and Ramadan \"from 06:00 am Last Entry 04:00 pm\". The older ministry page (footer \"Copyrights Ministry of Antiquities - Egypt 2019\") lists \"From 06:00 AM To 05:00 PM\" daily.",
+      "confidence": "high"
+    },
+    {
+      "name": "Luxor Temple",
+      "kind": "landmark",
+      "url": "https://egymonuments.gov.eg/monuments/luxor-temple/",
+      "sourceType": "official public operator (Ministry of Tourism and Antiquities: egymonuments.gov.eg; ticketing on https://egymonuments.com/details/LuxorTemple)",
+      "address": "\"located around three kilometers to the south of Karnak Temple\" (Luxor, east bank)",
+      "operatingEvidence": "Bookable on the ministry ticket site, which lists Adult \"EGP 500\" / Student \"EGP 250\" for other nationalities and notes \"Photography with mobile phone is free of charge.\"",
+      "hours": "Ticket site: \"All Days\"; Summer, Winter and Ramadan \"from 06:00 am Last Entry 07:00 pm\". Older ministry page (2019 footer): \"From 06:00 AM To 08:00 PM\" daily.",
+      "confidence": "high"
+    },
+    {
+      "name": "Valley of the Kings",
+      "kind": "landmark",
+      "url": "https://egymonuments.gov.eg/archaeological-sites/valley-of-the-kings/",
+      "sourceType": "official public operator (Ministry of Tourism and Antiquities: egymonuments.gov.eg; ticket listing on https://egymonuments.com/details/ValleyOfKings)",
+      "address": "\"a desolate dry river valley across the river from the ancient city of Thebes (modern Luxor)\"; \"Its location on specifically the west side of the Nile\"",
+      "operatingEvidence": "Listed on the ministry ticket site with Adult \"EGP 750\" / Student \"EGP 375\" for other nationalities and current visit regulations.",
+      "hours": "Ticket site: \"All Days\"; Summer \"from 06:00 am Last Entry 05:00 pm\"; Winter and Ramadan \"from 06:00 am Last Entry 04:00 pm\". Older ministry page (2019 footer): 06:00 AM to 05:00 PM daily.",
+      "confidence": "high"
+    },
+    {
+      "name": "Temple of Hatshepsut",
+      "kind": "landmark",
+      "url": "https://egymonuments.gov.eg/monuments/hatshepsut-temple/",
+      "sourceType": "official public operator (Ministry of Tourism and Antiquities: egymonuments.gov.eg; ticketing on https://egymonuments.com/details/HatshepsutTemple)",
+      "address": "\"at Deir al-Bahari, on the west back [sic] of Luxor\"; \"It lies directly across the Nile from Karnak Temple\"",
+      "operatingEvidence": "Bookable on the ministry ticket site, which lists Adult \"EGP 440\" / Student \"EGP 220\" for other nationalities.",
+      "hours": "Ticket site: \"All Days\"; Summer \"from 06:00 am Last Entry 05:00 pm\"; Winter and Ramadan \"from 06:00 am Last Entry 04:00 pm\". Older ministry page: 06:00 AM to 05:00 PM daily.",
+      "confidence": "high"
+    },
+    {
+      "name": "Karnak Sound and Light Show",
+      "kind": "landmark",
+      "url": "https://www.soundandlight.show/en/show/karnak-show",
+      "sourceType": "official public operator (Misr Company for Sound, Light and Tourism Development)",
+      "address": "\"Karnak Temple, Luxor, Egypt\"",
+      "operatingEvidence": "Online booking: \"Choose your date and number of guests at checkout\"; Regular $20, \"Child (6 to 12 years)\" $11; \"The Second show is held with a minimum 5 Foreigner individuals\"; \"DATES ARE SUBJECT TO CHANGE\".",
+      "hours": "Daily schedule shown: 19:00 English show; 20:00 \"All languages, Arabic\".",
+      "confidence": "high"
+    },
+    {
+      "name": "Sindbad Balloons",
+      "kind": "scenic",
+      "url": "https://www.sindbadballoons.com/",
+      "sourceType": "operator's own site",
+      "address": "\"37 Abdel Hamid Omda St, off T.V. St, Luxor, Egypt\" (office; launch site not stated)",
+      "operatingEvidence": "\"© 2026 Sindbad Balloons\" and \"Tripadvisor Travellers' Choice 2026\" badge; booking page offers Standard, Deluxe, Comfort and Private flights with \"Morning\" and \"Sunrise\" departures and \"Hotel in Luxor (for pickup)\".",
+      "hours": "\"Daily, year-round\"; standard flight \"45–60 min aloft, ~3–4 hrs total\".",
+      "confidence": "high"
+    },
+    {
+      "name": "Al-Sahaby Lane Restaurant",
+      "kind": "meal",
+      "url": "https://www.nefertitihotel.com/al-sahaby-lane-restaurant",
+      "sourceType": "operator's own site (Nefertiti Hotel)",
+      "address": "\"Al-Sahaby Lane Restaurant, Nefertiti Hotel, Al-Sahaby Street, Luxor's East Bank\"; hotel: \"El Sahabi Street, via Karnak Temple Street, Luxor, Egypt\"",
+      "operatingEvidence": "Hotel journal post \"A Rooftop Pause at Al-Sahaby Lane Restaurant\" dated 20 Oct 2026; online table requests: \"A table is confirmed only after our team contacts you.\" Menu lists coffee (Espresso EGP 50), feteera and desserts such as Oum Ali.",
+      "hours": "Menu: \"Open buffet Breakfast ... Available daily from 7:00 to 10:00. - EGP 400.00\"; other opening times not published (\"Contact the hotel for current menus, opening times\").",
+      "confidence": "high"
+    },
+    {
+      "name": "Nile Valley Hotel & Restaurant",
+      "kind": "meal",
+      "url": "https://nilevalleyhotel.com/restaurant/",
+      "sourceType": "operator's own site",
+      "address": "\"Conveniently located on the West Bank of the Nile, close to the public ferry\"; \"clearly visible from the West Bank ferry landing\"; map links place it in \"Al Bairat, Al Qarna\" (https://nilevalleyhotel.com/hotel/)",
+      "operatingEvidence": "Live \"Book now\" booking page and \"© Copyright 2026\"; restaurant serves \"international and Egyptian dishes\" and \"local beers and wines\".",
+      "hours": "Breakfast \"between 7.00 and 10.00 hrs\"; restaurant \"between 11.00 and 23.00 hrs\".",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Ottoman Hall (Al Moudira)",
+      "kind": "meal",
+      "url": "https://www.moudira.com/restaurants",
+      "sourceType": "operator's own site (Al Moudira Hotel)",
+      "address": "\"Al Moudira Hotel, Luxor West Bank, Hager El Dabayah 85836, Egypt\"",
+      "operatingEvidence": "Restaurants page describes a dinner venue with a fusion menu; hotel site shows \"Two MICHELIN Keys 2025\" and live BOOKINGS page (reservations@moudira.com).",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Courtyard (Al Moudira)",
+      "kind": "cafe",
+      "url": "https://www.moudira.com/restaurants",
+      "sourceType": "operator's own site (Al Moudira Hotel)",
+      "address": "\"Al Moudira Hotel, Luxor West Bank, Hager El Dabayah 85836, Egypt\"",
+      "operatingEvidence": "Described as a shaded outdoor space for breakfast, coffee, lunch, aperitifs or casual dinner; hotel booking page live.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Khan Al Moudira",
+      "kind": "meal",
+      "url": "https://www.moudira.com/restaurants",
+      "sourceType": "operator's own site (Al Moudira Hotel)",
+      "address": "\"Al Moudira Hotel, Luxor West Bank, Hager El Dabayah 85836, Egypt\"",
+      "operatingEvidence": "Traditional Egyptian restaurant and café described as \"recently opened\"; hotel booking page live.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Moudira Farm Kitchen",
+      "kind": "meal",
+      "url": "https://www.moudira.com/restaurants",
+      "sourceType": "operator's own site (Al Moudira Hotel)",
+      "address": "\"Al Moudira Hotel, Luxor West Bank, Hager El Dabayah 85836, Egypt\"",
+      "operatingEvidence": "Lunch or dinner built on seasonal farm produce, served indoors or under a tent; hotel booking page live.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Eastern Bar (Al Moudira)",
+      "kind": "bar",
+      "url": "https://www.moudira.com/restaurants",
+      "sourceType": "operator's own site (Al Moudira Hotel)",
+      "address": "\"Al Moudira Hotel, Luxor West Bank, Hager El Dabayah 85836, Egypt\"",
+      "operatingEvidence": "Aperitivo bar with a jazz and blues mood listed on the current restaurants page; hotel booking page live.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Karnak Restaurant (Steigenberger Resort Achti)",
+      "kind": "meal",
+      "url": "https://hrewards.com/en/steigenberger-resort-achti-luxor/restaurant-bar",
+      "sourceType": "operator's own site (H World International / hrewards, Steigenberger brand)",
+      "address": "\"Khaled Ibn El Waleed Awameya 83951 Luxor\" (https://hrewards.com/en/steigenberger-resort-achti-luxor)",
+      "operatingEvidence": "All-day dining with breakfast and dinner buffets and a Nile-view terrace; hours published on the operator's restaurant page, hotel bookable.",
+      "hours": "\"Breakfast: 06:00 - 10:00\" / \"Lunch: 12:00 - 15:00\" / \"Dinner: 19:00 - 22:30\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Sukkareya Lobby Bar & Terrace (Steigenberger Resort Achti)",
+      "kind": "bar",
+      "url": "https://hrewards.com/en/steigenberger-resort-achti-luxor/restaurant-bar",
+      "sourceType": "operator's own site (H World International / hrewards, Steigenberger brand)",
+      "address": "\"Khaled Ibn El Waleed Awameya 83951 Luxor\"",
+      "operatingEvidence": "Cocktails, mocktails and snacks overlooking the Nile; hours and entertainment times published.",
+      "hours": "\"Bar: 09:00 - 01:00\" / \"Entertainment: 20:00 - 22:00\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Nino's Restaurant (Steigenberger Resort Achti)",
+      "kind": "meal",
+      "url": "https://hrewards.com/en/steigenberger-resort-achti-luxor/restaurant-bar",
+      "sourceType": "operator's own site (H World International / hrewards, Steigenberger brand)",
+      "address": "\"Khaled Ibn El Waleed Awameya 83951 Luxor\"",
+      "operatingEvidence": "Italian menu including pasta, risotto and Neapolitan-style pizza; hours published.",
+      "hours": "\"Daily: 18:00 - 22:00\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Sofra Restaurant (Steigenberger Resort Achti)",
+      "kind": "meal",
+      "url": "https://hrewards.com/en/steigenberger-resort-achti-luxor/restaurant-bar",
+      "sourceType": "operator's own site (H World International / hrewards, Steigenberger brand)",
+      "address": "\"Khaled Ibn El Waleed Awameya 83951 Luxor\"",
+      "operatingEvidence": "\"Sofra Restaurant – Middle Eastern Cuisine\" with table service; hours published. Not the downtown Sofra Restaurant & Café.",
+      "hours": "\"Dinner: 18:00 - 22:00\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Nile Side Pools Bar & Grill (Steigenberger Resort Achti)",
+      "kind": "meal",
+      "url": "https://hrewards.com/en/steigenberger-resort-achti-luxor/restaurant-bar",
+      "sourceType": "operator's own site (H World International / hrewards, Steigenberger brand)",
+      "address": "\"Khaled Ibn El Waleed Awameya 83951 Luxor\"",
+      "operatingEvidence": "\"Bungalow and Nile Side Pools Bar & Grill\": poolside bars, live grill, sandwiches and snacks; hours published.",
+      "hours": "\"Bar: 09:00 - Sunset\" / \"Food: 12:00-Sunset\"",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Sofitel Winter Palace Luxor (1886, La Corniche and bars)",
+      "reason": "Official Accor pages return HTTP 410 Gone (all.accor.com/hotel/1661) or redirect to a Sofitel Africa listing that no longer includes the hotel; no current official page read. Not evidence of closure.",
+      "url": "https://sofitel.accor.com/en/hotels/1661.html"
+    },
+    {
+      "name": "Hilton Luxor Resort & Spa",
+      "reason": "Official site refused automated reading (HTTP 403).",
+      "url": "https://www.hilton.com/en/hotels/luxhitw-hilton-luxor-resort-and-spa/dining/"
+    },
+    {
+      "name": "Luxor Museum",
+      "reason": "Ticket site lists hours and prices, but no official page read gives an address or location (ministry museum page URLs 404; ministry news item has no location).",
+      "url": "https://egymonuments.com/details/LuxorMuseum"
+    },
+    {
+      "name": "Mummification Museum",
+      "reason": "Official ministry page gives location only as \"Luxor\"; no exact location published.",
+      "url": "https://egymonuments.gov.eg/museums/mummification-museum/"
+    },
+    {
+      "name": "Ramesseum",
+      "reason": "Official ministry page gives location only as \"Luxor\"; no exact location published.",
+      "url": "https://egymonuments.gov.eg/monuments/the-ramesseum-the-temple-of-ramses-ii/"
+    },
+    {
+      "name": "Medinet Habu",
+      "reason": "Ticket site lists hours but no location; ministry monument page not found (HTTP 404).",
+      "url": "https://egymonuments.com/details/MedinetHabu"
+    },
+    {
+      "name": "Sofra Restaurant & Café (Mohamed Farid Street)",
+      "reason": "sofra.com.eg does not resolve (DNS failure) and no other official site found.",
+      "url": "https://sofra.com.eg/"
+    },
+    {
+      "name": "Hotel Sheherazade",
+      "reason": "Address published but no current operating evidence (footer \"© 2024\"); restaurants page 404.",
+      "url": "https://www.hotelsheherazade.com/"
+    },
+    {
+      "name": "Sonesta St. George Hotel Luxor",
+      "reason": "Address and 2026 content published, but no restaurant or bar named on the page; dining page 404.",
+      "url": "https://www.sonesta.com/sonesta-hotels-resorts/egypt/luxor/sonesta-st-george-hotel-luxor"
+    },
+    {
+      "name": "Steigenberger Nile Palace Luxor",
+      "reason": "Official URL redirects to a brand page that lists no Luxor hotel.",
+      "url": "https://www.steigenberger.com/en/hotels/all-hotels/egypt/luxor/steigenberger-nile-palace"
+    },
+    {
+      "name": "Jolie Ville Kings Island Luxor",
+      "reason": "jolieville-hotels.com is a \"Launching Soon\" placeholder; Maritim page returned 404.",
+      "url": "https://www.jolieville-hotels.com/"
+    },
+    {
+      "name": "Hod Hod Soliman balloons",
+      "reason": "hodhodsoliman.com does not resolve (DNS failure); no other official site found.",
+      "url": "https://www.hodhodsoliman.com/"
+    },
+    {
+      "name": "Al Sahabi Lane Hotel",
+      "reason": "alsahabilane.com does not resolve (DNS failure); restaurant confirmed instead via nefertitihotel.com.",
+      "url": "https://www.alsahabilane.com/"
+    },
+    {
+      "name": "Marsam Hotel / Restaurant",
+      "reason": "No official website found.",
+      "url": ""
+    },
+    {
+      "name": "Wenkie's German Ice Cream & Iced Coffee Parlour",
+      "reason": "No official website found.",
+      "url": ""
+    },
+    {
+      "name": "West Bank sunrise",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Felucca at dusk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A smaller tomb with a guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Nile-side dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local Egyptian lunch",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hotel terrace meal",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near West Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Nile Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in East Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost East Bank walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near West Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Nile Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Nile Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Karnak Temple",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in East Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around West Bank sunrise",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in West Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Valley of the Kings",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "East Bank evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in West Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Nile Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through East Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Karnak Temple",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around West Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Nile Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near East Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Karnak Temple",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "East Bank cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Felucca at dusk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Nile Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Nile Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond East Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near East Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "West Bank bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Karnak Temple",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Nile Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near East Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Valley of the Kings",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Nile Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in East Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in West Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Nile Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near East Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near East Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around West Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Luxor Temple",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near East Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "West Bank morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Karnak Temple",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Nile Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near East Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in West Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Nile Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Karnak Temple",
+        "Luxor Temple",
+        "Valley of the Kings",
+        "Temple of Hatshepsut"
+      ],
+      "bestFirstTimers": [
+        "Karnak Temple",
+        "Valley of the Kings",
+        "Luxor Temple",
+        "Karnak Sound and Light Show"
+      ],
+      "bestRestaurants": [
+        "Al-Sahaby Lane Restaurant",
+        "The Ottoman Hall (Al Moudira)",
+        "Khan Al Moudira",
+        "Nile Valley Hotel & Restaurant"
+      ],
+      "bestBudget": [
+        "Luxor Temple",
+        "Al-Sahaby Lane Restaurant",
+        "Nile Valley Hotel & Restaurant"
+      ],
+      "bestLuxury": [
+        "The Ottoman Hall (Al Moudira)",
+        "The Eastern Bar (Al Moudira)",
+        "Sindbad Balloons"
+      ],
+      "bestCouples": [
+        "Sindbad Balloons",
+        "Sukkareya Lobby Bar & Terrace (Steigenberger Resort Achti)",
+        "The Eastern Bar (Al Moudira)",
+        "Karnak Sound and Light Show"
+      ],
+      "bestKids": [
+        "Karnak Sound and Light Show",
+        "Luxor Temple",
+        "Nino's Restaurant (Steigenberger Resort Achti)",
+        "Nile Side Pools Bar & Grill (Steigenberger Resort Achti)"
+      ],
+      "bestSolo": [
+        "Luxor Temple",
+        "Al-Sahaby Lane Restaurant",
+        "The Courtyard (Al Moudira)"
+      ],
+      "bestUnique": [
+        "Sindbad Balloons",
+        "Karnak Sound and Light Show",
+        "The Moudira Farm Kitchen"
+      ],
+      "bestBreakfast": [
+        "Al-Sahaby Lane Restaurant",
+        "Karnak Restaurant (Steigenberger Resort Achti)",
+        "The Courtyard (Al Moudira)",
+        "Nile Valley Hotel & Restaurant"
+      ],
+      "bestLunch": [
+        "The Moudira Farm Kitchen",
+        "The Courtyard (Al Moudira)",
+        "Karnak Restaurant (Steigenberger Resort Achti)",
+        "Nile Side Pools Bar & Grill (Steigenberger Resort Achti)"
+      ],
+      "bestDinner": [
+        "The Ottoman Hall (Al Moudira)",
+        "Sofra Restaurant (Steigenberger Resort Achti)",
+        "Nino's Restaurant (Steigenberger Resort Achti)",
+        "Khan Al Moudira"
+      ],
+      "bestCocktails": [
+        "Sukkareya Lobby Bar & Terrace (Steigenberger Resort Achti)",
+        "The Eastern Bar (Al Moudira)"
+      ],
+      "bestBakeries": [
+        "Al-Sahaby Lane Restaurant"
+      ],
+      "bestCoffee": [
+        "Al-Sahaby Lane Restaurant",
+        "The Courtyard (Al Moudira)",
+        "Khan Al Moudira"
+      ]
+    },
+    "queries": {
+      "Karnak Temple": "Karnak Temple East Bank Luxor",
+      "Luxor Temple": "Luxor Temple East Bank Luxor",
+      "Valley of the Kings": "Valley of the Kings West Bank Luxor",
+      "Temple of Hatshepsut": "Temple of Hatshepsut Deir al-Bahari West Bank Luxor",
+      "Karnak Sound and Light Show": "Karnak Sound and Light Show Karnak Temple Luxor",
+      "Sindbad Balloons": "Sindbad Balloons 37 Abdel Hamid Omda St Luxor",
+      "Al-Sahaby Lane Restaurant": "Al-Sahaby Lane Restaurant Nefertiti Hotel El Sahabi Street Luxor",
+      "Nile Valley Hotel & Restaurant": "Nile Valley Hotel Al Bairat West Bank Luxor",
+      "The Ottoman Hall (Al Moudira)": "Al Moudira Hotel Hager El Dabayah West Bank Luxor",
+      "The Courtyard (Al Moudira)": "Al Moudira Hotel Hager El Dabayah West Bank Luxor",
+      "Khan Al Moudira": "Khan Al Moudira Al Moudira Hotel Hager El Dabayah West Bank Luxor",
+      "The Moudira Farm Kitchen": "Al Moudira Hotel Hager El Dabayah West Bank Luxor",
+      "The Eastern Bar (Al Moudira)": "Al Moudira Hotel Hager El Dabayah West Bank Luxor",
+      "Karnak Restaurant (Steigenberger Resort Achti)": "Steigenberger Resort Achti Khaled Ibn El Waleed Luxor",
+      "Sukkareya Lobby Bar & Terrace (Steigenberger Resort Achti)": "Steigenberger Resort Achti Khaled Ibn El Waleed Luxor",
+      "Nino's Restaurant (Steigenberger Resort Achti)": "Steigenberger Resort Achti Khaled Ibn El Waleed Luxor",
+      "Sofra Restaurant (Steigenberger Resort Achti)": "Steigenberger Resort Achti Khaled Ibn El Waleed Luxor",
+      "Nile Side Pools Bar & Grill (Steigenberger Resort Achti)": "Steigenberger Resort Achti Khaled Ibn El Waleed Luxor"
+    },
+    "summary": "Temples, tombs, a sound-and-light show and a balloon operator on both banks of Luxor, with breakfast spots, dinners and bars checked against their own websites.",
+    "highlights": [
+      "Karnak Temple",
+      "Luxor Temple",
+      "Valley of the Kings",
+      "Temple of Hatshepsut"
+    ],
+    "tip": "The ministry's ticket site lists Karnak Temple, Luxor Temple, the Valley of the Kings and the Temple of Hatshepsut as open all days, but Karnak's last entry is 04:00 pm in every season, so visit it before Luxor Temple, where last entry is 07:00 pm.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Open all days",
+        "copy": "The ministry's ticket site, egymonuments.com, lists Karnak Temple, Luxor Temple, the Valley of the Kings and the Temple of Hatshepsut as open all days. None of the places in this guide publishes a weekly closing day."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Book temples online",
+        "copy": "Karnak Temple, Luxor Temple and the Temple of Hatshepsut can be booked on egymonuments.com, which lists adult tickets for foreign visitors at EGP 600, EGP 500 and EGP 440; the Valley of the Kings is listed at EGP 750. The Karnak Sound and Light Show sells tickets online at $20, and its page warns that dates are subject to change."
+      },
+      {
+        "label": "Last entry and tables",
+        "value": "Arrive an hour early",
+        "copy": "The ticket site asks you to arrive at least one hour before a site's closing time; Karnak's last entry is 04:00 pm, while the Valley of the Kings and the Temple of Hatshepsut take last entry at 05:00 pm in summer and 04:00 pm in winter. Al-Sahaby Lane Restaurant takes table requests online and confirms a table only after its team contacts you."
+      },
+      {
+        "label": "Rules",
+        "value": "Student ID, phone photos",
+        "copy": "At the ministry sites, students must show a valid ID and be 24 or under, children below 6 enter free, and photography with a mobile phone is free of charge. The Karnak Sound and Light Show charges $11 for children aged 6 to 12, and its second evening show runs only with at least five foreign visitors."
+      }
+    ],
+    "dek": "Do Karnak first, since its last entry is 04:00 pm, and save Luxor Temple and the sound-and-light show for the evening.",
+    "intro": [
+      "Luxor's headline sights are run by Egypt's Ministry of Tourism and Antiquities, and its online ticket site, egymonuments.com, lists Karnak Temple, Luxor Temple, the Valley of the Kings and the Temple of Hatshepsut as open all days. None of the places checked here publishes a weekly closing day. The same site asks you to arrive at least one hour before a site's closing time, to keep your ticket with you, and notes that photography with a mobile phone is free of charge.",
+      "On the east bank, the ticket site lists Karnak Temple from 06:00 with last entry at 04:00 pm in every season, and its EGP 600 adult ticket for foreign visitors also covers the Open Museum at Karnak. Luxor Temple, about three kilometres south of Karnak according to the ministry, has the latest last entry of the four, 07:00 pm. In the evening, Misr Company for Sound, Light and Tourism Development lists a 19:00 English show at Karnak, with a second show at 20:00 that needs at least five foreign visitors.",
+      "Across the river, the ministry places the Valley of the Kings on the west side of the Nile and the Temple of Hatshepsut at Deir al-Bahari, directly across from Karnak. The ticket site gives both a 06:00 opening, with last entry at 05:00 pm in summer and 04:00 pm in winter and Ramadan; adult tickets for foreign visitors are EGP 750 and EGP 440. If you want to see the west bank from above first, Sindbad Balloons lists daily, year-round flights with sunrise and morning departures, and offers hotel pickup in Luxor when you book.",
+      "For meals, Al-Sahaby Lane Restaurant at the Nefertiti Hotel serves an open buffet breakfast daily from 7:00 to 10:00 on its rooftop and takes table requests through an online form. On the west bank, Al Moudira's Ottoman Hall serves a fusion dinner menu, The Courtyard covers breakfast and coffee, and The Eastern Bar handles aperitivo. Back on the east bank, the Steigenberger Resort Achti lists Sukkareya Lobby Bar & Terrace from 09:00 to 01:00 and Nino's Restaurant for Italian dinners from 18:00 to 22:00."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Start at Karnak Temple, where the ministry's ticket site sets last entry at 04:00 pm every day, and leave Luxor Temple for later, as it admits visitors until 07:00 pm."
+      ],
+      [
+        "A slower morning",
+        "Take the 7:00 to 10:00 buffet breakfast on the rooftop at Al-Sahaby Lane Restaurant, then cross to the Temple of Hatshepsut, which opens at 06:00."
+      ],
+      [
+        "Before booking",
+        "None of these places publishes a weekly closing day, but the ministry asks you to arrive at least one hour before closing, and students need a valid ID showing they are 24 or under."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and show details do not guarantee availability. Monument hours are taken from the ministry's ticket site (egymonuments.com), which carries no date; the ministry's information pages on egymonuments.gov.eg (footer dated 2019) list different closing times, for example Karnak to 05:00 PM and Luxor Temple to 08:00 PM, so check at the ticket office. Monument locations are published only as descriptions (east or west bank, distance from Karnak), not street addresses. The Al Moudira venues publish no hours, Al-Sahaby Lane publishes only breakfast hours, Sindbad Balloons does not name its launch site, and the Nile Valley Hotel gives a location rather than a street address. Sofitel Winter Palace (Accor pages gone or redirected), Hilton Luxor (403), Sofra Restaurant & Café and Hod Hod Soliman (domains did not resolve) could not be read; the Luxor Museum, Mummification Museum, Ramesseum and Medinet Habu were left out because no official page read gives their exact location. No dedicated bakery or coffee shop with an official website was found; those lists rely on hotel restaurant menus.",
+  "injectionLikeText": []
+}

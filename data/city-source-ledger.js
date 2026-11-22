@@ -5,6 +5,583 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Luxor, Egypt": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-11-22",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and show details do not guarantee availability. Monument hours are taken from the ministry's ticket site (egymonuments.com), which carries no date; the ministry's information pages on egymonuments.gov.eg (footer dated 2019) list different closing times, for example Karnak to 05:00 PM and Luxor Temple to 08:00 PM, so check at the ticket office. Monument locations are published only as descriptions (east or west bank, distance from Karnak), not street addresses. The Al Moudira venues publish no hours, Al-Sahaby Lane publishes only breakfast hours, Sindbad Balloons does not name its launch site, and the Nile Valley Hotel gives a location rather than a street address. Sofitel Winter Palace (Accor pages gone or redirected), Hilton Luxor (403), Sofra Restaurant & Café and Hod Hod Soliman (domains did not resolve) could not be read; the Luxor Museum, Mummification Museum, Ramesseum and Medinet Habu were left out because no official page read gives their exact location. No dedicated bakery or coffee shop with an official website was found; those lists rely on hotel restaurant menus.",
+    "sourceUrls": [
+      "docs/content-research/luxor-2026-11-22.md",
+      "docs/content-research/luxor-2026-11-22.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Sofitel Winter Palace Luxor (1886, La Corniche and bars)",
+        "url": "https://sofitel.accor.com/en/hotels/1661.html",
+        "checkedOn": "2026-11-22",
+        "reason": "Official Accor pages return HTTP 410 Gone (all.accor.com/hotel/1661) or redirect to a Sofitel Africa listing that no longer includes the hotel; no current official page read. Not evidence of closure."
+      },
+      {
+        "name": "Hilton Luxor Resort & Spa",
+        "url": "https://www.hilton.com/en/hotels/luxhitw-hilton-luxor-resort-and-spa/dining/",
+        "checkedOn": "2026-11-22",
+        "reason": "Official site refused automated reading (HTTP 403)."
+      },
+      {
+        "name": "Luxor Museum",
+        "url": "https://egymonuments.com/details/LuxorMuseum",
+        "checkedOn": "2026-11-22",
+        "reason": "Ticket site lists hours and prices, but no official page read gives an address or location (ministry museum page URLs 404; ministry news item has no location)."
+      },
+      {
+        "name": "Mummification Museum",
+        "url": "https://egymonuments.gov.eg/museums/mummification-museum/",
+        "checkedOn": "2026-11-22",
+        "reason": "Official ministry page gives location only as \"Luxor\"; no exact location published."
+      },
+      {
+        "name": "Ramesseum",
+        "url": "https://egymonuments.gov.eg/monuments/the-ramesseum-the-temple-of-ramses-ii/",
+        "checkedOn": "2026-11-22",
+        "reason": "Official ministry page gives location only as \"Luxor\"; no exact location published."
+      },
+      {
+        "name": "Medinet Habu",
+        "url": "https://egymonuments.com/details/MedinetHabu",
+        "checkedOn": "2026-11-22",
+        "reason": "Ticket site lists hours but no location; ministry monument page not found (HTTP 404)."
+      },
+      {
+        "name": "Sofra Restaurant & Café (Mohamed Farid Street)",
+        "url": "https://sofra.com.eg/",
+        "checkedOn": "2026-11-22",
+        "reason": "sofra.com.eg does not resolve (DNS failure) and no other official site found."
+      },
+      {
+        "name": "Hotel Sheherazade",
+        "url": "https://www.hotelsheherazade.com/",
+        "checkedOn": "2026-11-22",
+        "reason": "Address published but no current operating evidence (footer \"© 2024\"); restaurants page 404."
+      },
+      {
+        "name": "Sonesta St. George Hotel Luxor",
+        "url": "https://www.sonesta.com/sonesta-hotels-resorts/egypt/luxor/sonesta-st-george-hotel-luxor",
+        "checkedOn": "2026-11-22",
+        "reason": "Address and 2026 content published, but no restaurant or bar named on the page; dining page 404."
+      },
+      {
+        "name": "Steigenberger Nile Palace Luxor",
+        "url": "https://www.steigenberger.com/en/hotels/all-hotels/egypt/luxor/steigenberger-nile-palace",
+        "checkedOn": "2026-11-22",
+        "reason": "Official URL redirects to a brand page that lists no Luxor hotel."
+      },
+      {
+        "name": "Jolie Ville Kings Island Luxor",
+        "url": "https://www.jolieville-hotels.com/",
+        "checkedOn": "2026-11-22",
+        "reason": "jolieville-hotels.com is a \"Launching Soon\" placeholder; Maritim page returned 404."
+      },
+      {
+        "name": "Hod Hod Soliman balloons",
+        "url": "https://www.hodhodsoliman.com/",
+        "checkedOn": "2026-11-22",
+        "reason": "hodhodsoliman.com does not resolve (DNS failure); no other official site found."
+      },
+      {
+        "name": "Al Sahabi Lane Hotel",
+        "url": "https://www.alsahabilane.com/",
+        "checkedOn": "2026-11-22",
+        "reason": "alsahabilane.com does not resolve (DNS failure); restaurant confirmed instead via nefertitihotel.com."
+      },
+      {
+        "name": "Marsam Hotel / Restaurant",
+        "checkedOn": "2026-11-22",
+        "reason": "No official website found."
+      },
+      {
+        "name": "Wenkie's German Ice Cream & Iced Coffee Parlour",
+        "checkedOn": "2026-11-22",
+        "reason": "No official website found."
+      },
+      {
+        "name": "West Bank sunrise",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Felucca at dusk",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A smaller tomb with a guide",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Nile-side dinner",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local Egyptian lunch",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hotel terrace meal",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near West Bank",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Nile Corniche",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in East Bank",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost East Bank walk",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near West Bank",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Nile Corniche",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Nile Corniche",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Karnak Temple",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in East Bank",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around West Bank sunrise",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in West Bank",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Valley of the Kings",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "East Bank evening",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in West Bank",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Nile Corniche",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through East Bank",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Karnak Temple",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around West Bank",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Nile Corniche",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near East Bank",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Karnak Temple",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "East Bank cafe or market",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Felucca at dusk",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Nile Corniche",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Nile Corniche",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond East Bank",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near East Bank",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "West Bank bakery or market",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Karnak Temple",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Nile Corniche",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near East Bank",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Valley of the Kings",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Nile Corniche",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in East Bank",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in West Bank",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Nile Corniche",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near East Bank",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near East Bank",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around West Bank",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Luxor Temple",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near East Bank",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "West Bank morning market",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Karnak Temple",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Nile Corniche",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near East Bank",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in West Bank",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Nile Corniche",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Karnak Temple": {
+        "url": "https://egymonuments.gov.eg/archaeological-sites/karnak/",
+        "sourceType": "official public operator (Ministry of Tourism and Antiquities: egymonuments.gov.eg; ticketing on https://egymonuments.com/details/KarnakTemple)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "The ministry's ticket site (copyright Ministry of Tourism & Antiquities) offers online booking with a \"Book Now\" date picker and lists \"Other nationality: Adult 600, Student 300\" EGP; the ministry page says the ticket is \"Inclusive ... Karnak Temple and Open Museum in Karnak\"."
+      },
+      "Luxor Temple": {
+        "url": "https://egymonuments.gov.eg/monuments/luxor-temple/",
+        "sourceType": "official public operator (Ministry of Tourism and Antiquities: egymonuments.gov.eg; ticketing on https://egymonuments.com/details/LuxorTemple)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Bookable on the ministry ticket site, which lists Adult \"EGP 500\" / Student \"EGP 250\" for other nationalities and notes \"Photography with mobile phone is free of charge.\""
+      },
+      "Valley of the Kings": {
+        "url": "https://egymonuments.gov.eg/archaeological-sites/valley-of-the-kings/",
+        "sourceType": "official public operator (Ministry of Tourism and Antiquities: egymonuments.gov.eg; ticket listing on https://egymonuments.com/details/ValleyOfKings)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Listed on the ministry ticket site with Adult \"EGP 750\" / Student \"EGP 375\" for other nationalities and current visit regulations."
+      },
+      "Temple of Hatshepsut": {
+        "url": "https://egymonuments.gov.eg/monuments/hatshepsut-temple/",
+        "sourceType": "official public operator (Ministry of Tourism and Antiquities: egymonuments.gov.eg; ticketing on https://egymonuments.com/details/HatshepsutTemple)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Bookable on the ministry ticket site, which lists Adult \"EGP 440\" / Student \"EGP 220\" for other nationalities."
+      },
+      "Karnak Sound and Light Show": {
+        "url": "https://www.soundandlight.show/en/show/karnak-show",
+        "sourceType": "official public operator (Misr Company for Sound, Light and Tourism Development)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Online booking: \"Choose your date and number of guests at checkout\"; Regular $20, \"Child (6 to 12 years)\" $11; \"The Second show is held with a minimum 5 Foreigner individuals\"; \"DATES ARE SUBJECT TO CHANGE\"."
+      },
+      "Sindbad Balloons": {
+        "url": "https://www.sindbadballoons.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "\"© 2026 Sindbad Balloons\" and \"Tripadvisor Travellers' Choice 2026\" badge; booking page offers Standard, Deluxe, Comfort and Private flights with \"Morning\" and \"Sunrise\" departures and \"Hotel in Luxor (for pickup)\"."
+      },
+      "Al-Sahaby Lane Restaurant": {
+        "url": "https://www.nefertitihotel.com/al-sahaby-lane-restaurant",
+        "sourceType": "operator's own site (Nefertiti Hotel)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Hotel journal post \"A Rooftop Pause at Al-Sahaby Lane Restaurant\" dated 20 Oct 2026; online table requests: \"A table is confirmed only after our team contacts you.\" Menu lists coffee (Espresso EGP 50), feteera and desserts such as Oum Ali."
+      },
+      "Nile Valley Hotel & Restaurant": {
+        "url": "https://nilevalleyhotel.com/restaurant/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Live \"Book now\" booking page and \"© Copyright 2026\"; restaurant serves \"international and Egyptian dishes\" and \"local beers and wines\"."
+      },
+      "The Ottoman Hall (Al Moudira)": {
+        "url": "https://www.moudira.com/restaurants",
+        "sourceType": "operator's own site (Al Moudira Hotel)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Restaurants page describes a dinner venue with a fusion menu; hotel site shows \"Two MICHELIN Keys 2025\" and live BOOKINGS page (reservations@moudira.com)."
+      },
+      "The Courtyard (Al Moudira)": {
+        "url": "https://www.moudira.com/restaurants",
+        "sourceType": "operator's own site (Al Moudira Hotel)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Described as a shaded outdoor space for breakfast, coffee, lunch, aperitifs or casual dinner; hotel booking page live."
+      },
+      "Khan Al Moudira": {
+        "url": "https://www.moudira.com/restaurants",
+        "sourceType": "operator's own site (Al Moudira Hotel)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Traditional Egyptian restaurant and café described as \"recently opened\"; hotel booking page live."
+      },
+      "The Moudira Farm Kitchen": {
+        "url": "https://www.moudira.com/restaurants",
+        "sourceType": "operator's own site (Al Moudira Hotel)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Lunch or dinner built on seasonal farm produce, served indoors or under a tent; hotel booking page live."
+      },
+      "The Eastern Bar (Al Moudira)": {
+        "url": "https://www.moudira.com/restaurants",
+        "sourceType": "operator's own site (Al Moudira Hotel)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Aperitivo bar with a jazz and blues mood listed on the current restaurants page; hotel booking page live."
+      },
+      "Karnak Restaurant (Steigenberger Resort Achti)": {
+        "url": "https://hrewards.com/en/steigenberger-resort-achti-luxor/restaurant-bar",
+        "sourceType": "operator's own site (H World International / hrewards, Steigenberger brand)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "All-day dining with breakfast and dinner buffets and a Nile-view terrace; hours published on the operator's restaurant page, hotel bookable."
+      },
+      "Sukkareya Lobby Bar & Terrace (Steigenberger Resort Achti)": {
+        "url": "https://hrewards.com/en/steigenberger-resort-achti-luxor/restaurant-bar",
+        "sourceType": "operator's own site (H World International / hrewards, Steigenberger brand)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Cocktails, mocktails and snacks overlooking the Nile; hours and entertainment times published."
+      },
+      "Nino's Restaurant (Steigenberger Resort Achti)": {
+        "url": "https://hrewards.com/en/steigenberger-resort-achti-luxor/restaurant-bar",
+        "sourceType": "operator's own site (H World International / hrewards, Steigenberger brand)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Italian menu including pasta, risotto and Neapolitan-style pizza; hours published."
+      },
+      "Sofra Restaurant (Steigenberger Resort Achti)": {
+        "url": "https://hrewards.com/en/steigenberger-resort-achti-luxor/restaurant-bar",
+        "sourceType": "operator's own site (H World International / hrewards, Steigenberger brand)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "\"Sofra Restaurant – Middle Eastern Cuisine\" with table service; hours published. Not the downtown Sofra Restaurant & Café."
+      },
+      "Nile Side Pools Bar & Grill (Steigenberger Resort Achti)": {
+        "url": "https://hrewards.com/en/steigenberger-resort-achti-luxor/restaurant-bar",
+        "sourceType": "operator's own site (H World International / hrewards, Steigenberger brand)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "\"Bungalow and Nile Side Pools Bar & Grill\": poolside bars, live grill, sandwiches and snacks; hours published."
+      }
+    }
+  },
   "Agra, India": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-11-22",
