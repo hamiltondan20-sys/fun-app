@@ -1,0 +1,585 @@
+{
+  "city": "Agra, India",
+  "checkedOn": "2026-11-22",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Taj Mahal",
+      "kind": "landmark",
+      "url": "https://www.tajmahal.gov.in/",
+      "sourceType": "official site of the monument, with ASI Agra Circle pages (official public operator, Archaeological Survey of India) at https://asiagracircle.in/tajmahal.html and https://asiagracircle.in/visitor-information.html",
+      "address": "\"located on the right bank of the river Yamuna\" in Agra (ASI Agra Circle); ASI says \"The entry is allowed from the Eastern Gate of the Taj Mahal only after security check\"",
+      "operatingEvidence": "Ticketing is live: tickets sold through the ASI online portals and at the window, with \"₹5 off per Indian ticket and ₹50 off per foreign ticket\" online. ASI Agra Circle lists a 2026 tender for \"Provision of shoe covers at the Main Mausoleum, Taj Mahal\".",
+      "hours": "\"30 minutes before sunrise to 30 minutes before sunset\"; \"closed only on Fridays\" (tajmahal.gov.in, undated page). ASI Agra Circle (copyright 2013 pages) lists \"Sunrise to Sunset\" and Friday closure, with the mosque open for prayer 12 noon to 2 pm on Fridays.",
+      "confidence": "high"
+    },
+    {
+      "name": "Taj Museum",
+      "kind": "museum",
+      "url": "https://asiagracircle.in/museum.html",
+      "sourceType": "official public operator (Archaeological Survey of India, Agra Circle)",
+      "address": "\"housed in the Western Jal Mahal\" inside the Taj Mahal complex",
+      "operatingEvidence": "ASI calls it the only functional museum of the Agra Circle, with \"Free entry\"; the Fatehpur Sikri museum is \"under organization\".",
+      "hours": "\"9 AM to 5 PM\", closed Friday (ASI page, copyright 2013)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Agra Fort",
+      "kind": "landmark",
+      "url": "https://asiagracircle.in/agra-fort.html",
+      "sourceType": "official public operator (Archaeological Survey of India, Agra Circle)",
+      "address": "\"on the right bank of the river Yamuna\", coordinates 27°10'47\"N, 78°1'22\"E",
+      "operatingEvidence": "ASI fee notice lists Agra Fort rates (Indian ₹50, foreign ₹650, lower Friday rates); ASI Agra Circle lists a 2026 tender for \"Upgradation of public amenities at Agra Fort\".",
+      "hours": "\"Open from: sunrise to sunset\" (ASI page, copyright 2013); no closing day stated",
+      "confidence": "medium"
+    },
+    {
+      "name": "Fatehpur Sikri",
+      "kind": "landmark",
+      "url": "https://asiagracircle.in/fateh-pur.html",
+      "sourceType": "official public operator (Archaeological Survey of India, Agra Circle)",
+      "address": "\"situated on an extension of the upper Vindhyan ranges\" at Fatehpur Sikri, Agra district",
+      "operatingEvidence": "ASI fee notice lists Fatehpur Sikri rates with Friday rates; 2026 ASI tenders cover repairs to the Jami Masjid in the Dargah Complex and the Mint area.",
+      "hours": "\"Sunrise to Sunset\" (ASI page, copyright 2013); no closing day stated",
+      "confidence": "medium"
+    },
+    {
+      "name": "Akbar's Tomb, Sikandara",
+      "kind": "landmark",
+      "url": "https://asiagracircle.in/other-tick.html",
+      "sourceType": "official public operator (Archaeological Survey of India, Agra Circle)",
+      "address": "\"Sikandara, Uttar Pradesh\" on the outskirts of Agra",
+      "operatingEvidence": "Listed among ASI ticketed monuments with fees; 2026 ASI tender for \"Repairs to the central tank at Akbar's Tomb, Sikandara\".",
+      "hours": "\"Sunrise to Sunset\" (ASI page, copyright 2013)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mariam's Tomb, Sikandara",
+      "kind": "landmark",
+      "url": "https://asiagracircle.in/marium-tomb-sikandra.html",
+      "sourceType": "official public operator (Archaeological Survey of India, Agra Circle)",
+      "address": "\"located on the left side of Agra-Mathura road, to the west of Akbar's tomb, Sikandara\"",
+      "operatingEvidence": "Listed among ASI ticketed monuments with a published fee notice (\"Rs. 15 per head\" for Indian and SAARC/BIMSTEC visitors).",
+      "hours": "\"Sunrise to sunset\" (ASI page, copyright 2013)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Itimad-ud-Daulah's Tomb",
+      "kind": "landmark",
+      "url": "https://asiagracircle.in/itmad-ud-daula-tomb.html",
+      "sourceType": "official public operator (Archaeological Survey of India, Agra Circle)",
+      "address": "\"situated on the left bank of river Jamuna\", next to Chini-ka-Rauza, Agra",
+      "operatingEvidence": "Listed among ASI ticketed monuments with a published fee notice and covered by the ₹500 ADA combined ticket.",
+      "hours": "\"Sunrise to sunset\" (ASI page, copyright 2013)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mehtab Bagh",
+      "kind": "park",
+      "url": "https://asiagracircle.in/mehtab-bagh-otther.html",
+      "sourceType": "official public operator (Archaeological Survey of India, Agra Circle)",
+      "address": "\"situated on the opposite bank of the Taj Mahal\", Agra",
+      "operatingEvidence": "Listed among ASI ticketed monuments with a published fee notice (Indian ₹25, foreign ₹300 on the visitor-information page).",
+      "hours": "\"sunrise to sunset\" (ASI page, copyright 2013)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Ram Bagh",
+      "kind": "park",
+      "url": "https://asiagracircle.in/ram-bagh-other.html",
+      "sourceType": "official public operator (Archaeological Survey of India, Agra Circle)",
+      "address": "\"Ram Bagh, Agra, Uttar Pradesh\"",
+      "operatingEvidence": "Listed among ASI ticketed monuments; 2026 ASI tenders for \"Upgradation of tourist amenities and CCTV installation at Ram Bagh\" and repairs to the Sarai cells and gateways.",
+      "hours": "\"Sunrise to Sunset\" (ASI page, copyright 2013)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Esphahan (The Oberoi Amarvilas)",
+      "kind": "meal",
+      "url": "https://www.oberoihotels.com/hotels-in-agra-amarvilas-resort/restaurants/esphahan/",
+      "sourceType": "operator's own site",
+      "address": "\"Taj East Gate Road, Agra - 282001, India\"",
+      "operatingEvidence": "Reservation form live (\"replies within 12 hours\"); dress code \"Smart casual\"; \"Children above eight are welcome\"; hotel FAQ says it is open for dinner.",
+      "hours": "page lists \"7:00 am to 10:30 pm\" plus \"Weekends 12:30 pm to 3:30 pm\"; hotel FAQ says dinner",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bellevue (The Oberoi Amarvilas)",
+      "kind": "meal",
+      "url": "https://www.oberoihotels.com/hotels-in-agra-amarvilas-resort/restaurants/bellevue/",
+      "sourceType": "operator's own site",
+      "address": "\"Taj East Gate Road, Agra - 282001, India\"",
+      "operatingEvidence": "\"Our all-day dining restaurant has a chic ambience and an Italian soul\"; reservation form live; hotel page lists it as current all-day dining.",
+      "hours": "\"7:00 am - 10:30 pm\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Lounge (The Oberoi Amarvilas)",
+      "kind": "cafe",
+      "url": "https://www.oberoihotels.com/hotels-in-agra-amarvilas-resort/",
+      "sourceType": "operator's own site",
+      "address": "\"Taj East Gate Road, Agra - 282001, India\"",
+      "operatingEvidence": "Hotel page describes it as open \"from sunrise until nightfall\" with terrace and indoor seating and Taj Mahal views.",
+      "hours": "\"5:15 am - 12:00 am\" on the dining listing; \"from sunrise until nightfall\" on the hotel page",
+      "confidence": "medium"
+    },
+    {
+      "name": "Peshawri (ITC Mughal)",
+      "kind": "meal",
+      "url": "https://www.itchotels.com/in/en/itchotels/hotels/itcmughal-agra/fine-dine/peshawri.html",
+      "sourceType": "operator's own site",
+      "address": "\"Tajganj, Agra, Uttar Pradesh, India, 282001\" (ITC Mughal hotel page)",
+      "operatingEvidence": "Table reservation request form live; listed on the ITC Mughal hotel page as Northwest Frontier fine dining; footer \"Copyright © ITC Hotels Limited 2026\".",
+      "hours": "not published (\"All outlets may not be operational across all time slots\")",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mughal Pavilion (ITC Mughal)",
+      "kind": "meal",
+      "url": "https://www.itchotels.com/in/en/itchotels/hotels/itcmughal-agra/fine-dine/mughal-pavilion.html",
+      "sourceType": "operator's own site",
+      "address": "\"Tajganj, Agra, Uttar Pradesh, India, 282001\" (ITC Mughal hotel page)",
+      "operatingEvidence": "Reservation form with \"Select Meal Period\"; listed as Indian and international à la carte on the hotel page.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Taj Bano (ITC Mughal)",
+      "kind": "meal",
+      "url": "https://www.itchotels.com/in/en/itchotels/hotels/itcmughal-agra/fine-dine/taj-bano.html",
+      "sourceType": "operator's own site",
+      "address": "\"Tajganj, Agra, Uttar Pradesh, India, 282001\" (ITC Mughal hotel page)",
+      "operatingEvidence": "Page titled \"The Three Meal Buffet Restaurant at ITC Mughal Agra\" with a reservation form.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Maikhana (ITC Mughal)",
+      "kind": "bar",
+      "url": "https://www.itchotels.com/in/en/itchotels/hotels/itcmughal-agra/fine-dine/maikhana.html",
+      "sourceType": "operator's own site",
+      "address": "\"Tajganj, Agra, Uttar Pradesh, India, 282001\" (ITC Mughal hotel page)",
+      "operatingEvidence": "Page \"Creative Cocktails Maikhana Restaurant at ITC Mughal Agra\", heading \"Maikhana - The Lobby Bar\"; listed as the lounge bar on the hotel page.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "MoMo Café (Courtyard by Marriott Agra)",
+      "kind": "meal",
+      "url": "https://www.marriott.com/en-us/hotels/agrcy-courtyard-agra/dining/",
+      "sourceType": "operator's own site",
+      "address": "\"Taj Nagri, Phase II, Fatehabad Road\", Agra, Uttar Pradesh, India, 282001",
+      "operatingEvidence": "Dining page lists international buffet and à la carte, daily, with a restaurant phone line.",
+      "hours": "\"6:30 AM–11:00 PM\" daily",
+      "confidence": "medium"
+    },
+    {
+      "name": "Anise (Courtyard by Marriott Agra)",
+      "kind": "meal",
+      "url": "https://www.marriott.com/en-us/hotels/agrcy-courtyard-agra/dining/",
+      "sourceType": "operator's own site",
+      "address": "\"Taj Nagri, Phase II, Fatehabad Road\", Agra, Uttar Pradesh, India, 282001",
+      "operatingEvidence": "Dining page lists Indian cuisine, open October through March, with a restaurant phone line.",
+      "hours": "\"7:00 PM–10:30 PM\", open October through March",
+      "confidence": "medium"
+    },
+    {
+      "name": "Grills by the Pool (Courtyard by Marriott Agra)",
+      "kind": "meal",
+      "url": "https://www.marriott.com/en-us/hotels/agrcy-courtyard-agra/dining/",
+      "sourceType": "operator's own site",
+      "address": "\"Taj Nagri, Phase II, Fatehabad Road\", Agra, Uttar Pradesh, India, 282001",
+      "operatingEvidence": "Dining page lists a poolside grill, daily.",
+      "hours": "\"7:00 PM–11:00 PM\" daily",
+      "confidence": "medium"
+    },
+    {
+      "name": "MoMo 2 Go (Courtyard by Marriott Agra)",
+      "kind": "cafe",
+      "url": "https://www.marriott.com/en-us/hotels/agrcy-courtyard-agra/dining/",
+      "sourceType": "operator's own site",
+      "address": "\"Taj Nagri, Phase II, Fatehabad Road\", Agra, Uttar Pradesh, India, 282001",
+      "operatingEvidence": "Dining page lists a coffee house, daily.",
+      "hours": "\"10:00 AM–10:00 PM\" daily",
+      "confidence": "medium"
+    },
+    {
+      "name": "Onyx Bar (Courtyard by Marriott Agra)",
+      "kind": "bar",
+      "url": "https://www.marriott.com/en-us/hotels/agrcy-courtyard-agra/dining/",
+      "sourceType": "operator's own site",
+      "address": "\"Taj Nagri, Phase II, Fatehabad Road\", Agra, Uttar Pradesh, India, 282001",
+      "operatingEvidence": "Dining page lists a cocktail lounge, daily.",
+      "hours": "\"1:00 PM–11:30 PM\" daily",
+      "confidence": "medium"
+    },
+    {
+      "name": "Cosmos Cafe & Bar (Fairfield by Marriott Agra)",
+      "kind": "cafe",
+      "url": "https://www.marriott.com/en-us/hotels/agrfi-fairfield-agra/dining/",
+      "sourceType": "operator's own site",
+      "address": "\"119/8 & 120/8, Ashok Cosmos Mall, Wazirpura Road, Civil Lines, Sanjay Place, Agra, Uttar Pradesh, India, 282002\"",
+      "operatingEvidence": "Dining page lists the coffee house and bar \"Everyday\", casual dress, with a breakfast buffet.",
+      "hours": "\"Everyday, 6:30 AM–10:00 PM\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bakehouse Fairfield (Fairfield by Marriott Agra)",
+      "kind": "bakery",
+      "url": "https://www.marriott.com/en-us/hotels/agrfi-fairfield-agra/dining/",
+      "sourceType": "operator's own site",
+      "address": "\"119/8 & 120/8, Ashok Cosmos Mall, Wazirpura Road, Civil Lines, Sanjay Place, Agra, Uttar Pradesh, India, 282002\"",
+      "operatingEvidence": "Dining page lists pastries, breads, desserts and coffee \"Everyday\".",
+      "hours": "\"Everyday, 11:30 AM–8:00 PM\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Restaurant (Trident Agra)",
+      "kind": "meal",
+      "url": "https://www.tridenthotels.com/hotels-in-agra/",
+      "sourceType": "operator's own site",
+      "address": "\"Fatehabad Road, Agra 282 001, India\"",
+      "operatingEvidence": "Hotel page publishes rack rates for \"1 January to 31 December 2026\"; The Restaurant serves Indian, Continental, Asian and Italian, and breakfast is served daily.",
+      "hours": "not published (breakfast \"daily\")",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Bar (Trident Agra)",
+      "kind": "bar",
+      "url": "https://www.tridenthotels.com/hotels-in-agra/",
+      "sourceType": "operator's own site",
+      "address": "\"Fatehabad Road, Agra 282 001, India\"",
+      "operatingEvidence": "Listed on the hotel page with 2026 rack rates, serving \"premium wines, spirits, and cocktails\".",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "SkyGrill (Grand Mercure Agra)",
+      "kind": "meal",
+      "url": "https://all.accor.com/hotel/C0W7/index.en.shtml",
+      "sourceType": "operator's own site (Accor)",
+      "address": "\"Fatehabad Road, 282001 AGRA, India\"",
+      "operatingEvidence": "Rooftop open-air restaurant \"with live music and views of the Taj Mahal\"; hotel page carries guest reviews dated November 2026 answered by the General Manager.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Lattice (Grand Mercure Agra)",
+      "kind": "meal",
+      "url": "https://all.accor.com/hotel/C0W7/index.en.shtml",
+      "sourceType": "operator's own site (Accor)",
+      "address": "\"Fatehabad Road, 282001 AGRA, India\"",
+      "operatingEvidence": "All-day dining with buffet and à la carte; November 2026 guest reviews mention Lattice.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Brew Café (Grand Mercure Agra)",
+      "kind": "cafe",
+      "url": "https://all.accor.com/hotel/C0W7/index.en.shtml",
+      "sourceType": "operator's own site (Accor)",
+      "address": "\"Fatehabad Road, 282001 AGRA, India\"",
+      "operatingEvidence": "Listed as a café in the hotel; page carries guest reviews dated November 2026.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Panchhi Petha (Atam Market, Sadar Bazaar)",
+      "kind": "bakery",
+      "url": "https://www.panchhipetha.com/pages/our-stores",
+      "sourceType": "operator's own site",
+      "address": "\"Atam Market, Naulakha Crossing, Sadar Bazaar, Agra\"",
+      "operatingEvidence": "Online shop live with customer reviews dated 16–22 November 2026; store list publishes Agra branches.",
+      "hours": "not published (customer support \"10am - 5pm\")",
+      "confidence": "medium"
+    },
+    {
+      "name": "Panchhi Petha (Taj East Gate)",
+      "kind": "bakery",
+      "url": "https://www.panchhipetha.com/pages/our-stores",
+      "sourceType": "operator's own site",
+      "address": "\"Next to Pathak Press, Near East gate of Taj Mahal, Agra\"",
+      "operatingEvidence": "Online shop live with customer reviews dated 16–22 November 2026; branch listed on the store page.",
+      "hours": "not published",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Taj Mahal sunrise",
+      "reason": "generic, not a place (timing of a visit to the Taj Mahal, which is confirmed)",
+      "url": ""
+    },
+    {
+      "name": "Mehtab Bagh sunset",
+      "reason": "generic, not a place (timing of a visit to Mehtab Bagh, which is confirmed)",
+      "url": ""
+    },
+    {
+      "name": "a North Indian thali",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Agra market or cafe; A local dinner in Taj East Gate; A cafe near Agra Fort; A market breakfast in Fatehabad Road; A dessert stop in Taj East Gate",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Remaining bestBudget, bestLuxury, bestCouples, bestKids, bestSolo, bestUnique, bestBreakfast, bestLunch, bestDinner, bestCocktails, bestBakeries and bestCoffee entries (e.g. \"Private guide for Taj Mahal\", \"Sunset drinks near Taj East Gate\", \"Local bakery near Taj East Gate\")",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "The Bar (The Oberoi Amarvilas)",
+      "reason": "Hotel page says The Bar is being reimagined and is closed for now, no reopening date",
+      "url": "https://www.oberoihotels.com/hotels-in-agra-amarvilas-resort/"
+    },
+    {
+      "name": "Sheroes Hangout",
+      "reason": "Domain no longer belongs to the cafe (page shows unrelated online casino content); no official page readable",
+      "url": "https://www.sheroeshangout.com/"
+    },
+    {
+      "name": "Kalakriti Cultural & Convention Centre (Mohabbat the Taj)",
+      "reason": "Listed domain redirects to a domain-sale page; no official page readable",
+      "url": "https://www.kalakritionline.com/"
+    },
+    {
+      "name": "Bhagat Halwai",
+      "reason": "Listed domain redirects to an unrelated site; no official page found",
+      "url": "https://www.bhagathalwai.co.in/"
+    },
+    {
+      "name": "Agra Bear Rescue Facility (Wildlife SOS)",
+      "reason": "Official pages give phone numbers but no address or visit details; visitor FAQ page returned 404; booking site returned 404",
+      "url": "https://wildlifesos.org/get-involved/"
+    },
+    {
+      "name": "Pinch of Spice",
+      "reason": "Official site fetch failed with no output",
+      "url": "https://www.pinchofspice.in/"
+    },
+    {
+      "name": "Dasaprakash Agra",
+      "reason": "Domain does not resolve (ENOTFOUND)",
+      "url": "https://www.dasaprakashagra.com/"
+    },
+    {
+      "name": "Taj Hotel & Convention Centre Agra",
+      "reason": "Official site returned 403 Forbidden",
+      "url": "https://www.tajhotels.com/en-in/hotels/taj-agra"
+    },
+    {
+      "name": "Radisson Hotel Agra",
+      "reason": "Official site returned 403 Forbidden",
+      "url": "https://www.radissonhotels.com/en-us/hotels/radisson-agra"
+    },
+    {
+      "name": "DoubleTree by Hilton Agra",
+      "reason": "Official site returned 403 Forbidden",
+      "url": "https://www.hilton.com/en/hotels/agrdidi-doubletree-agra/dining/"
+    },
+    {
+      "name": "Crystal Sarovar Premiere Agra",
+      "reason": "Official site returned 429 Too Many Requests",
+      "url": "https://www.sarovarhotels.com/crystal-sarovar-premiere-agra/"
+    },
+    {
+      "name": "Garden View Lounge (Hotel Clarks Shiraz)",
+      "reason": "Official site names it (coffee and pastries) but shows no hours, booking or 2026 content as operating evidence",
+      "url": "https://www.hotelclarksshiraz.com/"
+    },
+    {
+      "name": "Jaypee Palace Hotel Agra restaurants",
+      "reason": "Official dining page gives no Agra address and no Agra outlet hours",
+      "url": "https://www.jaypeehotels.com/hotels/jaypee-palace-hotel-agra/dining"
+    },
+    {
+      "name": "Soor Sarovar Bird Sanctuary",
+      "reason": "No operator page found; only district and eco-tourism board listings, which are not accepted as evidence",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Taj Mahal",
+        "Agra Fort",
+        "Fatehpur Sikri",
+        "Itimad-ud-Daulah's Tomb"
+      ],
+      "bestFirstTimers": [
+        "Taj Mahal",
+        "Agra Fort",
+        "Taj Museum",
+        "Mehtab Bagh"
+      ],
+      "bestRestaurants": [
+        "Esphahan (The Oberoi Amarvilas)",
+        "Peshawri (ITC Mughal)",
+        "SkyGrill (Grand Mercure Agra)",
+        "Anise (Courtyard by Marriott Agra)"
+      ],
+      "bestBudget": [
+        "Taj Museum",
+        "Mehtab Bagh",
+        "Ram Bagh",
+        "Panchhi Petha (Atam Market, Sadar Bazaar)"
+      ],
+      "bestLuxury": [
+        "Esphahan (The Oberoi Amarvilas)",
+        "Bellevue (The Oberoi Amarvilas)",
+        "The Lounge (The Oberoi Amarvilas)",
+        "Peshawri (ITC Mughal)"
+      ],
+      "bestCouples": [
+        "Mehtab Bagh",
+        "SkyGrill (Grand Mercure Agra)",
+        "The Lounge (The Oberoi Amarvilas)",
+        "Esphahan (The Oberoi Amarvilas)"
+      ],
+      "bestKids": [
+        "Taj Museum",
+        "Akbar's Tomb, Sikandara",
+        "Fatehpur Sikri",
+        "Panchhi Petha (Taj East Gate)"
+      ],
+      "bestSolo": [
+        "Taj Museum",
+        "Mariam's Tomb, Sikandara",
+        "Akbar's Tomb, Sikandara",
+        "Brew Café (Grand Mercure Agra)"
+      ],
+      "bestUnique": [
+        "Mariam's Tomb, Sikandara",
+        "Ram Bagh",
+        "Mehtab Bagh",
+        "Fatehpur Sikri"
+      ],
+      "bestBreakfast": [
+        "Taj Bano (ITC Mughal)",
+        "MoMo Café (Courtyard by Marriott Agra)",
+        "Bellevue (The Oberoi Amarvilas)",
+        "The Restaurant (Trident Agra)"
+      ],
+      "bestLunch": [
+        "Mughal Pavilion (ITC Mughal)",
+        "Lattice (Grand Mercure Agra)",
+        "Cosmos Cafe & Bar (Fairfield by Marriott Agra)",
+        "Bellevue (The Oberoi Amarvilas)"
+      ],
+      "bestDinner": [
+        "Esphahan (The Oberoi Amarvilas)",
+        "Peshawri (ITC Mughal)",
+        "Anise (Courtyard by Marriott Agra)",
+        "Grills by the Pool (Courtyard by Marriott Agra)"
+      ],
+      "bestCocktails": [
+        "Onyx Bar (Courtyard by Marriott Agra)",
+        "Maikhana (ITC Mughal)",
+        "The Bar (Trident Agra)",
+        "Cosmos Cafe & Bar (Fairfield by Marriott Agra)"
+      ],
+      "bestBakeries": [
+        "Bakehouse Fairfield (Fairfield by Marriott Agra)",
+        "Panchhi Petha (Atam Market, Sadar Bazaar)",
+        "Panchhi Petha (Taj East Gate)"
+      ],
+      "bestCoffee": [
+        "MoMo 2 Go (Courtyard by Marriott Agra)",
+        "Brew Café (Grand Mercure Agra)",
+        "Bakehouse Fairfield (Fairfield by Marriott Agra)",
+        "The Lounge (The Oberoi Amarvilas)"
+      ]
+    },
+    "queries": {
+      "Taj Mahal": "Taj Mahal East Gate Tajganj Agra",
+      "Taj Museum": "Taj Museum Taj Mahal complex Tajganj Agra",
+      "Agra Fort": "Agra Fort Rakabganj Agra",
+      "Fatehpur Sikri": "Fatehpur Sikri Agra",
+      "Akbar's Tomb, Sikandara": "Akbar's Tomb Agra-Mathura Road Sikandara Agra",
+      "Mariam's Tomb, Sikandara": "Mariam's Tomb Agra-Mathura Road Sikandara Agra",
+      "Itimad-ud-Daulah's Tomb": "Itimad-ud-Daulah's Tomb Moti Bagh Agra",
+      "Mehtab Bagh": "Mehtab Bagh Nagla Devjit Agra",
+      "Ram Bagh": "Ram Bagh Agra",
+      "Esphahan (The Oberoi Amarvilas)": "The Oberoi Amarvilas Taj East Gate Road Agra",
+      "Bellevue (The Oberoi Amarvilas)": "The Oberoi Amarvilas Taj East Gate Road Agra",
+      "The Lounge (The Oberoi Amarvilas)": "The Oberoi Amarvilas Taj East Gate Road Agra",
+      "Peshawri (ITC Mughal)": "ITC Mughal Tajganj Agra",
+      "Mughal Pavilion (ITC Mughal)": "ITC Mughal Tajganj Agra",
+      "Taj Bano (ITC Mughal)": "ITC Mughal Tajganj Agra",
+      "Maikhana (ITC Mughal)": "ITC Mughal Tajganj Agra",
+      "MoMo Café (Courtyard by Marriott Agra)": "Courtyard by Marriott Taj Nagri Phase II Fatehabad Road Agra",
+      "Anise (Courtyard by Marriott Agra)": "Courtyard by Marriott Taj Nagri Phase II Fatehabad Road Agra",
+      "Grills by the Pool (Courtyard by Marriott Agra)": "Courtyard by Marriott Taj Nagri Phase II Fatehabad Road Agra",
+      "MoMo 2 Go (Courtyard by Marriott Agra)": "Courtyard by Marriott Taj Nagri Phase II Fatehabad Road Agra",
+      "Onyx Bar (Courtyard by Marriott Agra)": "Courtyard by Marriott Taj Nagri Phase II Fatehabad Road Agra",
+      "Cosmos Cafe & Bar (Fairfield by Marriott Agra)": "Fairfield by Marriott Ashok Cosmos Mall Wazirpura Road Agra",
+      "Bakehouse Fairfield (Fairfield by Marriott Agra)": "Fairfield by Marriott Ashok Cosmos Mall Wazirpura Road Agra",
+      "The Restaurant (Trident Agra)": "Trident Fatehabad Road Agra",
+      "The Bar (Trident Agra)": "Trident Fatehabad Road Agra",
+      "SkyGrill (Grand Mercure Agra)": "Grand Mercure Fatehabad Road Agra",
+      "Lattice (Grand Mercure Agra)": "Grand Mercure Fatehabad Road Agra",
+      "Brew Café (Grand Mercure Agra)": "Grand Mercure Fatehabad Road Agra",
+      "Panchhi Petha (Atam Market, Sadar Bazaar)": "Panchhi Petha Atam Market Naulakha Crossing Sadar Bazaar Agra",
+      "Panchhi Petha (Taj East Gate)": "Panchhi Petha near Pathak Press Taj East Gate Agra"
+    },
+    "summary": "Mughal tombs, forts and riverside gardens, with hotel restaurants, bars, cafés and petha shops checked against their own websites.",
+    "highlights": [
+      "Taj Mahal",
+      "Agra Fort",
+      "Fatehpur Sikri",
+      "Itimad-ud-Daulah's Tomb"
+    ],
+    "tip": "The Taj Mahal and the Taj Museum inside its complex are closed on Fridays, so plan Agra Fort, Fatehpur Sikri or the Sikandara tombs for that day; the ASI lists Friday ticket rates for those.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Taj Mahal and Taj Museum: Fridays",
+        "copy": "The Taj Mahal and the Taj Museum in its Western Jal Mahal are closed on Fridays, when the Taj mosque opens only for prayer. The ASI lists Friday ticket rates for Agra Fort and Fatehpur Sikri."
+      },
+      {
+        "label": "Tickets",
+        "value": "Book online through ASI",
+        "copy": "The Taj Mahal's official site lists ₹1,100 for foreign visitors and ₹50 for Indian visitors, plus an optional ₹200 for the main mausoleum, with children under 15 free. Online tickets cost ₹50 less for foreign visitors and ₹5 less for Indian visitors."
+      },
+      {
+        "label": "Bag rules",
+        "value": "Travel light at the Taj",
+        "copy": "The ASI prohibits food, big bags and briefcases, drones, tripods without prior ASI permission, torches and helmets at the Taj Mahal. Entry is from the Eastern Gate after a security check."
+      },
+      {
+        "label": "Dining rules",
+        "value": "Smart casual, over-eights",
+        "copy": "Esphahan at The Oberoi Amarvilas asks for smart casual dress and welcomes children above eight; its reservation form promises a reply within 12 hours. Anise at Courtyard by Marriott Agra opens only October through March."
+      }
+    ],
+    "dek": "Put the Taj Mahal on any day but Friday, book its tickets online, and keep Friday for Agra Fort, Fatehpur Sikri or Sikandara.",
+    "intro": [
+      "The Taj Mahal sits on the right bank of the Yamuna, and the ASI says you enter from the Eastern Gate after a security check. It is closed on Fridays. The monument's official site lists ₹1,100 for foreign visitors and ₹50 for Indian visitors, with an optional ₹200 to enter the main mausoleum and free entry for children under 15. Booking online through the ASI portals saves ₹50 per foreign ticket. Inside the complex, the Taj Museum in the Western Jal Mahal is free, though it shares the Friday closure.",
+      "Agra Fort stands on the same bank of the river, and the ASI lists Friday ticket rates for it and for Fatehpur Sikri, which makes them a good Friday plan. The older ASI Agra Circle pages give sunrise to sunset as opening hours for these monuments, so check before an early start. A ₹500 Agra Development Authority ticket for foreign visitors covers Agra Fort, Itimad-ud-Daulah's Tomb, Akbar's Tomb at Sikandara and Fatehpur Sikri on the same day. Across the river, Mehtab Bagh faces the Taj from the opposite bank.",
+      "For a quieter half-day, head out along the Agra-Mathura road to Akbar's Tomb and Mariam's Tomb, which stands to its west, or to Itimad-ud-Daulah's Tomb beside Chini-ka-Rauza on the left bank. Ram Bagh is getting new visitor amenities, according to a 2026 ASI tender. Pack light for the Taj: the ASI bans food, big bags, drones and tripods without permission. Panchhi Petha has branches near the Taj East Gate and at Atam Market in Sadar Bazaar, and Bakehouse Fairfield sells pastries and coffee daily from 11:30 am.",
+      "Most of Agra's sit-down dining is in hotels near the Taj. At The Oberoi Amarvilas, Esphahan serves Mughal recipes and tandoor breads; it asks for smart casual dress and welcomes children above eight. Bellevue there is the all-day restaurant, and The Lounge looks toward the Taj Mahal. ITC Mughal runs Peshawri and the Maikhana lobby bar, Grand Mercure Agra has the rooftop SkyGrill with Taj views, and Courtyard by Marriott Agra's Onyx Bar opens daily from 1 pm. The Oberoi's own bar is closed while it is reimagined."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Book the Taj Mahal online for any day except Friday, then add Agra Fort on the same Yamuna bank."
+      ],
+      [
+        "A slower morning",
+        "Start with breakfast at MoMo Café from 6:30 am, then walk the Taj Museum, which is free and closed on Fridays."
+      ],
+      [
+        "Before booking",
+        "Keep Friday for Agra Fort, Fatehpur Sikri or Sikandara, since the Taj Mahal and Taj Museum close that day, and reserve Esphahan ahead in smart casual dress."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and ticket details do not guarantee availability. The ASI Agra Circle monument pages carry a 2013 copyright and some outdated notices, so their sunrise-to-sunset hours and fees are attributed rather than treated as current; tajmahal.gov.in is undated, and its night-viewing hours (8:00 pm to 11:59 pm) conflict with ASI's (8:30 pm to 12:30 am), so night viewing is not detailed in the copy. Opening hours were not published for the ITC Mughal outlets, Trident Agra, Grand Mercure Agra outlets or Panchhi Petha stores. Esphahan's page lists both 7 am to 10:30 pm and a weekend lunch slot while the hotel FAQ says dinner. Sites that couldn't be read: tajhotels.com, radissonhotels.com and hilton.com (403), sarovarhotels.com (429), pinchofspice.in (failed fetch), dasaprakashagra.com (does not resolve), and Wildlife SOS visit pages (404). Sheroes Hangout, Kalakriti and Bhagat Halwai domains now point elsewhere. Marriott pages began returning 403 late in the review after the Courtyard and Fairfield dining pages had been read.",
+  "injectionLikeText": [],
+  "injectionLikeTextIgnored": [
+    "asiagracircle.in (agra-fort.html, museum.html, tajmahal.html and other monument pages): hidden off-screen div (style \"position: absolute; top: 0; left: -9999px\") containing \"Le lapin blanc needs to be follow! Did you know this?\". Confirmed in the raw HTML; ignored. | 2026-11-22: opened asiagracircle.in/tajmahal.html in the in-app browser and searched the full HTML for AI/assistant/LLM/instruction text; the only hit is this hidden off-screen easter-egg line, which gives no instructions and is not addressed to an AI."
+  ]
+}

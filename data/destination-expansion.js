@@ -11239,4 +11239,115 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 25 distinct recommendations in this guide were checked against their operators' own websites on November 20, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Agra, India: source review of 2026-11-22 (docs/content-research/agra-2026-11-22.md).
+  {
+    const cityKey = "Agra, India";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Taj Mahal","Agra Fort","Fatehpur Sikri","Itimad-ud-Daulah's Tomb"],
+      bestFirstTimers: ["Taj Mahal","Agra Fort","Taj Museum","Mehtab Bagh"],
+      bestRestaurants: ["Esphahan (The Oberoi Amarvilas)","Peshawri (ITC Mughal)","SkyGrill (Grand Mercure Agra)","Anise (Courtyard by Marriott Agra)"],
+      bestBudget: ["Taj Museum","Mehtab Bagh","Ram Bagh","Panchhi Petha (Atam Market, Sadar Bazaar)"],
+      bestLuxury: ["Esphahan (The Oberoi Amarvilas)","Bellevue (The Oberoi Amarvilas)","The Lounge (The Oberoi Amarvilas)","Peshawri (ITC Mughal)"],
+      bestCouples: ["Mehtab Bagh","SkyGrill (Grand Mercure Agra)","The Lounge (The Oberoi Amarvilas)","Esphahan (The Oberoi Amarvilas)"],
+      bestKids: ["Taj Museum","Akbar's Tomb, Sikandara","Fatehpur Sikri","Panchhi Petha (Taj East Gate)"],
+      bestSolo: ["Taj Museum","Mariam's Tomb, Sikandara","Akbar's Tomb, Sikandara","Brew Café (Grand Mercure Agra)"],
+      bestUnique: ["Mariam's Tomb, Sikandara","Ram Bagh","Mehtab Bagh","Fatehpur Sikri"],
+      bestBreakfast: ["Taj Bano (ITC Mughal)","MoMo Café (Courtyard by Marriott Agra)","Bellevue (The Oberoi Amarvilas)","The Restaurant (Trident Agra)"],
+      bestLunch: ["Mughal Pavilion (ITC Mughal)","Lattice (Grand Mercure Agra)","Cosmos Cafe & Bar (Fairfield by Marriott Agra)","Bellevue (The Oberoi Amarvilas)"],
+      bestDinner: ["Esphahan (The Oberoi Amarvilas)","Peshawri (ITC Mughal)","Anise (Courtyard by Marriott Agra)","Grills by the Pool (Courtyard by Marriott Agra)"],
+      bestCocktails: ["Onyx Bar (Courtyard by Marriott Agra)","Maikhana (ITC Mughal)","The Bar (Trident Agra)","Cosmos Cafe & Bar (Fairfield by Marriott Agra)"],
+      bestBakeries: ["Bakehouse Fairfield (Fairfield by Marriott Agra)","Panchhi Petha (Atam Market, Sadar Bazaar)","Panchhi Petha (Taj East Gate)"],
+      bestCoffee: ["MoMo 2 Go (Courtyard by Marriott Agra)","Brew Café (Grand Mercure Agra)","Bakehouse Fairfield (Fairfield by Marriott Agra)","The Lounge (The Oberoi Amarvilas)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Taj Mahal": "Taj Mahal East Gate Tajganj Agra",
+      "Agra Fort": "Agra Fort Rakabganj Agra",
+      "Fatehpur Sikri": "Fatehpur Sikri Agra",
+      "Itimad-ud-Daulah's Tomb": "Itimad-ud-Daulah's Tomb Moti Bagh Agra",
+      "Taj Museum": "Taj Museum Taj Mahal complex Tajganj Agra",
+      "Mehtab Bagh": "Mehtab Bagh Nagla Devjit Agra",
+      "Esphahan (The Oberoi Amarvilas)": "The Oberoi Amarvilas Taj East Gate Road Agra",
+      "Peshawri (ITC Mughal)": "ITC Mughal Tajganj Agra",
+      "SkyGrill (Grand Mercure Agra)": "Grand Mercure Fatehabad Road Agra",
+      "Anise (Courtyard by Marriott Agra)": "Courtyard by Marriott Taj Nagri Phase II Fatehabad Road Agra",
+      "Ram Bagh": "Ram Bagh Agra",
+      "Panchhi Petha (Atam Market, Sadar Bazaar)": "Panchhi Petha Atam Market Naulakha Crossing Sadar Bazaar Agra",
+      "Bellevue (The Oberoi Amarvilas)": "The Oberoi Amarvilas Taj East Gate Road Agra",
+      "The Lounge (The Oberoi Amarvilas)": "The Oberoi Amarvilas Taj East Gate Road Agra",
+      "Akbar's Tomb, Sikandara": "Akbar's Tomb Agra-Mathura Road Sikandara Agra",
+      "Panchhi Petha (Taj East Gate)": "Panchhi Petha near Pathak Press Taj East Gate Agra",
+      "Mariam's Tomb, Sikandara": "Mariam's Tomb Agra-Mathura Road Sikandara Agra",
+      "Brew Café (Grand Mercure Agra)": "Grand Mercure Fatehabad Road Agra",
+      "Taj Bano (ITC Mughal)": "ITC Mughal Tajganj Agra",
+      "MoMo Café (Courtyard by Marriott Agra)": "Courtyard by Marriott Taj Nagri Phase II Fatehabad Road Agra",
+      "The Restaurant (Trident Agra)": "Trident Fatehabad Road Agra",
+      "Mughal Pavilion (ITC Mughal)": "ITC Mughal Tajganj Agra",
+      "Lattice (Grand Mercure Agra)": "Grand Mercure Fatehabad Road Agra",
+      "Cosmos Cafe & Bar (Fairfield by Marriott Agra)": "Fairfield by Marriott Ashok Cosmos Mall Wazirpura Road Agra",
+      "Grills by the Pool (Courtyard by Marriott Agra)": "Courtyard by Marriott Taj Nagri Phase II Fatehabad Road Agra",
+      "Onyx Bar (Courtyard by Marriott Agra)": "Courtyard by Marriott Taj Nagri Phase II Fatehabad Road Agra",
+      "Maikhana (ITC Mughal)": "ITC Mughal Tajganj Agra",
+      "The Bar (Trident Agra)": "Trident Fatehabad Road Agra",
+      "Bakehouse Fairfield (Fairfield by Marriott Agra)": "Fairfield by Marriott Ashok Cosmos Mall Wazirpura Road Agra",
+      "MoMo 2 Go (Courtyard by Marriott Agra)": "Courtyard by Marriott Taj Nagri Phase II Fatehabad Road Agra"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Agra" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Mughal tombs, forts and riverside gardens, with hotel restaurants, bars, cafés and petha shops checked against their own websites.";
+    cityGuide.highlights = ["Taj Mahal","Agra Fort","Fatehpur Sikri","Itimad-ud-Daulah's Tomb"];
+    cityGuide.tip = "The Taj Mahal and the Taj Museum inside its complex are closed on Fridays, so plan Agra Fort, Fatehpur Sikri or the Sikandara tombs for that day; the ASI lists Friday ticket rates for those.";
+    data.destinationFacts[cityKey] = "The Taj Mahal and the Taj Museum inside its complex are closed on Fridays, so plan Agra Fort, Fatehpur Sikri or the Sikandara tombs for that day; the ASI lists Friday ticket rates for those.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Mughal tombs, forts and riverside gardens, with hotel restaurants, bars, cafés and petha shops checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Taj Mahal and Taj Museum: Fridays",
+        "copy": "The Taj Mahal and the Taj Museum in its Western Jal Mahal are closed on Fridays, when the Taj mosque opens only for prayer. The ASI lists Friday ticket rates for Agra Fort and Fatehpur Sikri."
+      },
+      {
+        "label": "Tickets",
+        "value": "Book online through ASI",
+        "copy": "The Taj Mahal's official site lists ₹1,100 for foreign visitors and ₹50 for Indian visitors, plus an optional ₹200 for the main mausoleum, with children under 15 free. Online tickets cost ₹50 less for foreign visitors and ₹5 less for Indian visitors."
+      },
+      {
+        "label": "Bag rules",
+        "value": "Travel light at the Taj",
+        "copy": "The ASI prohibits food, big bags and briefcases, drones, tripods without prior ASI permission, torches and helmets at the Taj Mahal. Entry is from the Eastern Gate after a security check."
+      },
+      {
+        "label": "Dining rules",
+        "value": "Smart casual, over-eights",
+        "copy": "Esphahan at The Oberoi Amarvilas asks for smart casual dress and welcomes children above eight; its reservation form promises a reply within 12 hours. Anise at Courtyard by Marriott Agra opens only October through March."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Put the Taj Mahal on any day but Friday, book its tickets online, and keep Friday for Agra Fort, Fatehpur Sikri or Sikandara.",
+      intro: [
+        "The Taj Mahal sits on the right bank of the Yamuna, and the ASI says you enter from the Eastern Gate after a security check. It is closed on Fridays. The monument's official site lists ₹1,100 for foreign visitors and ₹50 for Indian visitors, with an optional ₹200 to enter the main mausoleum and free entry for children under 15. Booking online through the ASI portals saves ₹50 per foreign ticket. Inside the complex, the Taj Museum in the Western Jal Mahal is free, though it shares the Friday closure.",
+        "Agra Fort stands on the same bank of the river, and the ASI lists Friday ticket rates for it and for Fatehpur Sikri, which makes them a good Friday plan. The older ASI Agra Circle pages give sunrise to sunset as opening hours for these monuments, so check before an early start. A ₹500 Agra Development Authority ticket for foreign visitors covers Agra Fort, Itimad-ud-Daulah's Tomb, Akbar's Tomb at Sikandara and Fatehpur Sikri on the same day. Across the river, Mehtab Bagh faces the Taj from the opposite bank.",
+        "For a quieter half-day, head out along the Agra-Mathura road to Akbar's Tomb and Mariam's Tomb, which stands to its west, or to Itimad-ud-Daulah's Tomb beside Chini-ka-Rauza on the left bank. Ram Bagh is getting new visitor amenities, according to a 2026 ASI tender. Pack light for the Taj: the ASI bans food, big bags, drones and tripods without permission. Panchhi Petha has branches near the Taj East Gate and at Atam Market in Sadar Bazaar, and Bakehouse Fairfield sells pastries and coffee daily from 11:30 am.",
+        "Most of Agra's sit-down dining is in hotels near the Taj. At The Oberoi Amarvilas, Esphahan serves Mughal recipes and tandoor breads; it asks for smart casual dress and welcomes children above eight. Bellevue there is the all-day restaurant, and The Lounge looks toward the Taj Mahal. ITC Mughal runs Peshawri and the Maikhana lobby bar, Grand Mercure Agra has the rooftop SkyGrill with Taj views, and Courtyard by Marriott Agra's Onyx Bar opens daily from 1 pm. The Oberoi's own bar is closed while it is reimagined."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Book the Taj Mahal online for any day except Friday, then add Agra Fort on the same Yamuna bank."
+        ],
+        [
+          "A slower morning",
+          "Start with breakfast at MoMo Café from 6:30 am, then walk the Taj Museum, which is free and closed on Fridays."
+        ],
+        [
+          "Before booking",
+          "Keep Friday for Agra Fort, Fatehpur Sikri or Sikandara, since the Taj Mahal and Taj Museum close that day, and reserve Esphahan ahead in smart casual dress."
+        ]
+      ],
+      trust: "All 30 distinct recommendations in this guide were checked against their operators' own websites on November 22, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

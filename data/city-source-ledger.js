@@ -5,6 +5,310 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Agra, India": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-11-22",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and ticket details do not guarantee availability. The ASI Agra Circle monument pages carry a 2013 copyright and some outdated notices, so their sunrise-to-sunset hours and fees are attributed rather than treated as current; tajmahal.gov.in is undated, and its night-viewing hours (8:00 pm to 11:59 pm) conflict with ASI's (8:30 pm to 12:30 am), so night viewing is not detailed in the copy. Opening hours were not published for the ITC Mughal outlets, Trident Agra, Grand Mercure Agra outlets or Panchhi Petha stores. Esphahan's page lists both 7 am to 10:30 pm and a weekend lunch slot while the hotel FAQ says dinner. Sites that couldn't be read: tajhotels.com, radissonhotels.com and hilton.com (403), sarovarhotels.com (429), pinchofspice.in (failed fetch), dasaprakashagra.com (does not resolve), and Wildlife SOS visit pages (404). Sheroes Hangout, Kalakriti and Bhagat Halwai domains now point elsewhere. Marriott pages began returning 403 late in the review after the Courtyard and Fairfield dining pages had been read.",
+    "sourceUrls": [
+      "docs/content-research/agra-2026-11-22.md",
+      "docs/content-research/agra-2026-11-22.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Taj Mahal sunrise",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place (timing of a visit to the Taj Mahal, which is confirmed)"
+      },
+      {
+        "name": "Mehtab Bagh sunset",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place (timing of a visit to Mehtab Bagh, which is confirmed)"
+      },
+      {
+        "name": "a North Indian thali",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Agra market or cafe; A local dinner in Taj East Gate; A cafe near Agra Fort; A market breakfast in Fatehabad Road; A dessert stop in Taj East Gate",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Remaining bestBudget, bestLuxury, bestCouples, bestKids, bestSolo, bestUnique, bestBreakfast, bestLunch, bestDinner, bestCocktails, bestBakeries and bestCoffee entries (e.g. \"Private guide for Taj Mahal\", \"Sunset drinks near Taj East Gate\", \"Local bakery near Taj East Gate\")",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "The Bar (The Oberoi Amarvilas)",
+        "url": "https://www.oberoihotels.com/hotels-in-agra-amarvilas-resort/",
+        "checkedOn": "2026-11-22",
+        "reason": "Hotel page says The Bar is being reimagined and is closed for now, no reopening date"
+      },
+      {
+        "name": "Sheroes Hangout",
+        "url": "https://www.sheroeshangout.com/",
+        "checkedOn": "2026-11-22",
+        "reason": "Domain no longer belongs to the cafe (page shows unrelated online casino content); no official page readable"
+      },
+      {
+        "name": "Kalakriti Cultural & Convention Centre (Mohabbat the Taj)",
+        "url": "https://www.kalakritionline.com/",
+        "checkedOn": "2026-11-22",
+        "reason": "Listed domain redirects to a domain-sale page; no official page readable"
+      },
+      {
+        "name": "Bhagat Halwai",
+        "url": "https://www.bhagathalwai.co.in/",
+        "checkedOn": "2026-11-22",
+        "reason": "Listed domain redirects to an unrelated site; no official page found"
+      },
+      {
+        "name": "Agra Bear Rescue Facility (Wildlife SOS)",
+        "url": "https://wildlifesos.org/get-involved/",
+        "checkedOn": "2026-11-22",
+        "reason": "Official pages give phone numbers but no address or visit details; visitor FAQ page returned 404; booking site returned 404"
+      },
+      {
+        "name": "Pinch of Spice",
+        "url": "https://www.pinchofspice.in/",
+        "checkedOn": "2026-11-22",
+        "reason": "Official site fetch failed with no output"
+      },
+      {
+        "name": "Dasaprakash Agra",
+        "url": "https://www.dasaprakashagra.com/",
+        "checkedOn": "2026-11-22",
+        "reason": "Domain does not resolve (ENOTFOUND)"
+      },
+      {
+        "name": "Taj Hotel & Convention Centre Agra",
+        "url": "https://www.tajhotels.com/en-in/hotels/taj-agra",
+        "checkedOn": "2026-11-22",
+        "reason": "Official site returned 403 Forbidden"
+      },
+      {
+        "name": "Radisson Hotel Agra",
+        "url": "https://www.radissonhotels.com/en-us/hotels/radisson-agra",
+        "checkedOn": "2026-11-22",
+        "reason": "Official site returned 403 Forbidden"
+      },
+      {
+        "name": "DoubleTree by Hilton Agra",
+        "url": "https://www.hilton.com/en/hotels/agrdidi-doubletree-agra/dining/",
+        "checkedOn": "2026-11-22",
+        "reason": "Official site returned 403 Forbidden"
+      },
+      {
+        "name": "Crystal Sarovar Premiere Agra",
+        "url": "https://www.sarovarhotels.com/crystal-sarovar-premiere-agra/",
+        "checkedOn": "2026-11-22",
+        "reason": "Official site returned 429 Too Many Requests"
+      },
+      {
+        "name": "Garden View Lounge (Hotel Clarks Shiraz)",
+        "url": "https://www.hotelclarksshiraz.com/",
+        "checkedOn": "2026-11-22",
+        "reason": "Official site names it (coffee and pastries) but shows no hours, booking or 2026 content as operating evidence"
+      },
+      {
+        "name": "Jaypee Palace Hotel Agra restaurants",
+        "url": "https://www.jaypeehotels.com/hotels/jaypee-palace-hotel-agra/dining",
+        "checkedOn": "2026-11-22",
+        "reason": "Official dining page gives no Agra address and no Agra outlet hours"
+      },
+      {
+        "name": "Soor Sarovar Bird Sanctuary",
+        "checkedOn": "2026-11-22",
+        "reason": "No operator page found; only district and eco-tourism board listings, which are not accepted as evidence"
+      }
+    ],
+    "placeSources": {
+      "Taj Mahal": {
+        "url": "https://www.tajmahal.gov.in/",
+        "sourceType": "official site of the monument, with ASI Agra Circle pages (official public operator, Archaeological Survey of India) at https://asiagracircle.in/tajmahal.html and https://asiagracircle.in/visitor-information.html",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Ticketing is live: tickets sold through the ASI online portals and at the window, with \"₹5 off per Indian ticket and ₹50 off per foreign ticket\" online. ASI Agra Circle lists a 2026 tender for \"Provision of shoe covers at the Main Mausoleum, Taj Mahal\"."
+      },
+      "Taj Museum": {
+        "url": "https://asiagracircle.in/museum.html",
+        "sourceType": "official public operator (Archaeological Survey of India, Agra Circle)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "ASI calls it the only functional museum of the Agra Circle, with \"Free entry\"; the Fatehpur Sikri museum is \"under organization\"."
+      },
+      "Agra Fort": {
+        "url": "https://asiagracircle.in/agra-fort.html",
+        "sourceType": "official public operator (Archaeological Survey of India, Agra Circle)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "ASI fee notice lists Agra Fort rates (Indian ₹50, foreign ₹650, lower Friday rates); ASI Agra Circle lists a 2026 tender for \"Upgradation of public amenities at Agra Fort\"."
+      },
+      "Fatehpur Sikri": {
+        "url": "https://asiagracircle.in/fateh-pur.html",
+        "sourceType": "official public operator (Archaeological Survey of India, Agra Circle)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "ASI fee notice lists Fatehpur Sikri rates with Friday rates; 2026 ASI tenders cover repairs to the Jami Masjid in the Dargah Complex and the Mint area."
+      },
+      "Akbar's Tomb, Sikandara": {
+        "url": "https://asiagracircle.in/other-tick.html",
+        "sourceType": "official public operator (Archaeological Survey of India, Agra Circle)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Listed among ASI ticketed monuments with fees; 2026 ASI tender for \"Repairs to the central tank at Akbar's Tomb, Sikandara\"."
+      },
+      "Mariam's Tomb, Sikandara": {
+        "url": "https://asiagracircle.in/marium-tomb-sikandra.html",
+        "sourceType": "official public operator (Archaeological Survey of India, Agra Circle)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Listed among ASI ticketed monuments with a published fee notice (\"Rs. 15 per head\" for Indian and SAARC/BIMSTEC visitors)."
+      },
+      "Itimad-ud-Daulah's Tomb": {
+        "url": "https://asiagracircle.in/itmad-ud-daula-tomb.html",
+        "sourceType": "official public operator (Archaeological Survey of India, Agra Circle)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Listed among ASI ticketed monuments with a published fee notice and covered by the ₹500 ADA combined ticket."
+      },
+      "Mehtab Bagh": {
+        "url": "https://asiagracircle.in/mehtab-bagh-otther.html",
+        "sourceType": "official public operator (Archaeological Survey of India, Agra Circle)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Listed among ASI ticketed monuments with a published fee notice (Indian ₹25, foreign ₹300 on the visitor-information page)."
+      },
+      "Ram Bagh": {
+        "url": "https://asiagracircle.in/ram-bagh-other.html",
+        "sourceType": "official public operator (Archaeological Survey of India, Agra Circle)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Listed among ASI ticketed monuments; 2026 ASI tenders for \"Upgradation of tourist amenities and CCTV installation at Ram Bagh\" and repairs to the Sarai cells and gateways."
+      },
+      "Esphahan (The Oberoi Amarvilas)": {
+        "url": "https://www.oberoihotels.com/hotels-in-agra-amarvilas-resort/restaurants/esphahan/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Reservation form live (\"replies within 12 hours\"); dress code \"Smart casual\"; \"Children above eight are welcome\"; hotel FAQ says it is open for dinner."
+      },
+      "Bellevue (The Oberoi Amarvilas)": {
+        "url": "https://www.oberoihotels.com/hotels-in-agra-amarvilas-resort/restaurants/bellevue/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "\"Our all-day dining restaurant has a chic ambience and an Italian soul\"; reservation form live; hotel page lists it as current all-day dining."
+      },
+      "The Lounge (The Oberoi Amarvilas)": {
+        "url": "https://www.oberoihotels.com/hotels-in-agra-amarvilas-resort/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Hotel page describes it as open \"from sunrise until nightfall\" with terrace and indoor seating and Taj Mahal views."
+      },
+      "Peshawri (ITC Mughal)": {
+        "url": "https://www.itchotels.com/in/en/itchotels/hotels/itcmughal-agra/fine-dine/peshawri.html",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Table reservation request form live; listed on the ITC Mughal hotel page as Northwest Frontier fine dining; footer \"Copyright © ITC Hotels Limited 2026\"."
+      },
+      "Mughal Pavilion (ITC Mughal)": {
+        "url": "https://www.itchotels.com/in/en/itchotels/hotels/itcmughal-agra/fine-dine/mughal-pavilion.html",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Reservation form with \"Select Meal Period\"; listed as Indian and international à la carte on the hotel page."
+      },
+      "Taj Bano (ITC Mughal)": {
+        "url": "https://www.itchotels.com/in/en/itchotels/hotels/itcmughal-agra/fine-dine/taj-bano.html",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Page titled \"The Three Meal Buffet Restaurant at ITC Mughal Agra\" with a reservation form."
+      },
+      "Maikhana (ITC Mughal)": {
+        "url": "https://www.itchotels.com/in/en/itchotels/hotels/itcmughal-agra/fine-dine/maikhana.html",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Page \"Creative Cocktails Maikhana Restaurant at ITC Mughal Agra\", heading \"Maikhana - The Lobby Bar\"; listed as the lounge bar on the hotel page."
+      },
+      "MoMo Café (Courtyard by Marriott Agra)": {
+        "url": "https://www.marriott.com/en-us/hotels/agrcy-courtyard-agra/dining/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Dining page lists international buffet and à la carte, daily, with a restaurant phone line."
+      },
+      "Anise (Courtyard by Marriott Agra)": {
+        "url": "https://www.marriott.com/en-us/hotels/agrcy-courtyard-agra/dining/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Dining page lists Indian cuisine, open October through March, with a restaurant phone line."
+      },
+      "Grills by the Pool (Courtyard by Marriott Agra)": {
+        "url": "https://www.marriott.com/en-us/hotels/agrcy-courtyard-agra/dining/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Dining page lists a poolside grill, daily."
+      },
+      "MoMo 2 Go (Courtyard by Marriott Agra)": {
+        "url": "https://www.marriott.com/en-us/hotels/agrcy-courtyard-agra/dining/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Dining page lists a coffee house, daily."
+      },
+      "Onyx Bar (Courtyard by Marriott Agra)": {
+        "url": "https://www.marriott.com/en-us/hotels/agrcy-courtyard-agra/dining/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Dining page lists a cocktail lounge, daily."
+      },
+      "Cosmos Cafe & Bar (Fairfield by Marriott Agra)": {
+        "url": "https://www.marriott.com/en-us/hotels/agrfi-fairfield-agra/dining/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Dining page lists the coffee house and bar \"Everyday\", casual dress, with a breakfast buffet."
+      },
+      "Bakehouse Fairfield (Fairfield by Marriott Agra)": {
+        "url": "https://www.marriott.com/en-us/hotels/agrfi-fairfield-agra/dining/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Dining page lists pastries, breads, desserts and coffee \"Everyday\"."
+      },
+      "The Restaurant (Trident Agra)": {
+        "url": "https://www.tridenthotels.com/hotels-in-agra/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Hotel page publishes rack rates for \"1 January to 31 December 2026\"; The Restaurant serves Indian, Continental, Asian and Italian, and breakfast is served daily."
+      },
+      "The Bar (Trident Agra)": {
+        "url": "https://www.tridenthotels.com/hotels-in-agra/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Listed on the hotel page with 2026 rack rates, serving \"premium wines, spirits, and cocktails\"."
+      },
+      "SkyGrill (Grand Mercure Agra)": {
+        "url": "https://all.accor.com/hotel/C0W7/index.en.shtml",
+        "sourceType": "operator's own site (Accor)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Rooftop open-air restaurant \"with live music and views of the Taj Mahal\"; hotel page carries guest reviews dated November 2026 answered by the General Manager."
+      },
+      "Lattice (Grand Mercure Agra)": {
+        "url": "https://all.accor.com/hotel/C0W7/index.en.shtml",
+        "sourceType": "operator's own site (Accor)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "All-day dining with buffet and à la carte; November 2026 guest reviews mention Lattice."
+      },
+      "Brew Café (Grand Mercure Agra)": {
+        "url": "https://all.accor.com/hotel/C0W7/index.en.shtml",
+        "sourceType": "operator's own site (Accor)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Listed as a café in the hotel; page carries guest reviews dated November 2026."
+      },
+      "Panchhi Petha (Atam Market, Sadar Bazaar)": {
+        "url": "https://www.panchhipetha.com/pages/our-stores",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Online shop live with customer reviews dated 16–22 November 2026; store list publishes Agra branches."
+      },
+      "Panchhi Petha (Taj East Gate)": {
+        "url": "https://www.panchhipetha.com/pages/our-stores",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Online shop live with customer reviews dated 16–22 November 2026; branch listed on the store page."
+      }
+    }
+  },
   "Johannesburg, South Africa": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-11-20",

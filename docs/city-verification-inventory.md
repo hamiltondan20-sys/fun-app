@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 107.
-- Classifier-passed (published, not fully documented in that format): 85.
+- Source-verified (complete dated evidence format): 108.
+- Classifier-passed (published, not fully documented in that format): 84.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -30,7 +30,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Abu Dhabi, United Arab Emirates | abu-dhabi | source-verified | source-checked | 27 | 56 | 15 | 15 | None |
 | Adelaide, Australia | adelaide | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Agadir, Morocco | agadir | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Agra, India | agra | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Agra, India | agra | source-verified | source-checked | 30 | 49 | 15 | 15 | None |
 | Ahmedabad, India | ahmedabad | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Aix-en-Provence, France | aix-en-provence | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Ajman, United Arab Emirates | ajman | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
