@@ -1,0 +1,665 @@
+{
+  "city": "Aswan, Egypt",
+  "checkedOn": "2026-11-22",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Philae Temple",
+      "kind": "landmark",
+      "url": "https://egymonuments.com/details/PhilaeTemple",
+      "sourceType": "official public operator (Ministry of Tourism and Antiquities ticketing site; location from egymonuments.gov.eg/en/archaeological-sites/aswan)",
+      "address": "\"Temples of Philae on the island of Agilkia\" (Ministry Aswan page), Aswan",
+      "operatingEvidence": "Online booking open on the Ministry's ticketing site (\"Book Now\", book-date/18), adult foreigner EGP 550 / student EGP 275. The page asks visitors to \"arrive at least one hour prior to the site closing time.\"",
+      "hours": "All days: \"from 07:00 am Last Entry 03:00 pm\" (ticketing site, same for summer, winter and Ramadan)",
+      "confidence": "high"
+    },
+    {
+      "name": "Abu Simbel Temples",
+      "kind": "landmark",
+      "url": "https://egymonuments.com/details/AbuSimbelTemple",
+      "sourceType": "official public operator (Ministry of Tourism and Antiquities ticketing site; description from egymonuments.gov.eg/archaeological-sites/abu-simbel/)",
+      "address": "\"in Nubia near Egypt's southern border\" (Ministry page); \"Abu Simbel is located 280 KM from Aswan on the west bank of the Nile\" (official sound-and-light operator page, soundandlight.show)",
+      "operatingEvidence": "Online booking open (\"Book Now\", book-date/9); standard adult EGP 822, with higher \"Sun Alignment (February 22 & October 22)\" prices. Ministry page: on \"the 22nd of February and 22nd of October, the sun's rays enter the temple\".",
+      "hours": "All days: \"from 06:00 am Last Entry 04:00 pm\" (ticketing site)",
+      "confidence": "high"
+    },
+    {
+      "name": "Elephantine Island",
+      "kind": "landmark",
+      "url": "https://egymonuments.com/details/ElephantineIsland",
+      "sourceType": "official public operator (Ministry of Tourism and Antiquities ticketing site; location from egymonuments.gov.eg/archaeological-sites/elephantine-1/)",
+      "address": "Elephantine Island, Aswan: \"Island of Elephantine\"; Ministry page places it \"on the Nile Riverbank\" at Aswan",
+      "operatingEvidence": "Online booking open (\"Book Now\", book-date/117); adult foreigner EGP 200 / student EGP 100; \"Please adhere to opening and closing hours for every site.\"",
+      "hours": "All days: \"from 08:00 am Last Entry 04:00 pm\" (ticketing site)",
+      "confidence": "high"
+    },
+    {
+      "name": "Kalabsha Temple",
+      "kind": "landmark",
+      "url": "https://egymonuments.com/details/TempleofKalabsha",
+      "sourceType": "official public operator (Ministry of Tourism and Antiquities ticketing site; location from egymonuments.gov.eg/monuments/kalabsha-temple/)",
+      "address": "New Kalabsha Island, Aswan: moved \"from its original site on Kalabsha Island to New Kalabsha Island\" (Ministry page)",
+      "operatingEvidence": "Online booking open (\"Book Now\", book-date/63); adult foreigner EGP 200 / student EGP 100.",
+      "hours": "All days: \"from 07:00 am Last Entry 03:00 pm\" (ticketing site)",
+      "confidence": "high"
+    },
+    {
+      "name": "Qubbat Al-Hawa Cemetery",
+      "kind": "landmark",
+      "url": "https://egymonuments.gov.eg/archaeological-sites/qubbat-al-hawa-cemetery-1/",
+      "sourceType": "official public operator (Ministry of Tourism and Antiquities)",
+      "address": "\"on the west bank of the Nile across the river from the northern tip of Elephantine Island\", Aswan",
+      "operatingEvidence": "Ministry page publishes daily hours and tickets (foreigner adult \"EGP 200\", student \"EGP 100\"); no closure notice. Page footer reads \"Copyrights Ministry of Antiquities - Egypt 2019\", and the site is not on the online ticketing list, so hours are attributed to that page.",
+      "hours": "Sunday to Saturday \"07:00 AM\" to \"04:00 PM\" (Ministry page with 2019 footer)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Kato Dool Restaurant",
+      "kind": "meal",
+      "url": "https://www.katodool.com/katodool-restaurant/",
+      "sourceType": "operator's own site (Kato Dool Wellness Resort)",
+      "address": "\"Gharb siheil, Aswan Governorate, Egypt\"; resort \"on the hillside of the Nubian Village in Aswan\"",
+      "operatingEvidence": "Live booking engine on the site (Book Now links with November 2026 dates); restaurant page invites you to reserve by phone and says ingredients come \"from our organic farm to your table\".",
+      "hours": "\"Breakfast: 7 AM to 11 AM - Lunch: 2 PM to 11 PM\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Lotus Restaurant (Basma Hotel)",
+      "kind": "meal",
+      "url": "https://basmahotel.com/restaurant/",
+      "sourceType": "operator's own site (Basma Hotel Aswan)",
+      "address": "Basma Hotel, \"Corniche El Nile St, Aswan\"",
+      "operatingEvidence": "Hotel packages page carries 2026 offers (\"available till 20th of December 2026\"); restaurant page describes Lotus as \"our all day dining restaurant offering an international eclectic buffet.\"",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Sky Light Restaurant (Basma Hotel)",
+      "kind": "meal",
+      "url": "https://basmahotel.com/restaurant/",
+      "sourceType": "operator's own site (Basma Hotel Aswan)",
+      "address": "Basma Hotel, \"Corniche El Nile St, Aswan\"",
+      "operatingEvidence": "Hotel site carries 2026 packages; Sky Light is described as \"an elegant candlelit atmosphere\" with fresh pastas.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Vienna Bar (Basma Hotel)",
+      "kind": "bar",
+      "url": "https://basmahotel.com/restaurant/",
+      "sourceType": "operator's own site (Basma Hotel Aswan)",
+      "address": "Basma Hotel, \"Corniche El Nile St, Aswan\"",
+      "operatingEvidence": "Hotel site carries 2026 packages; Vienna Bar is where \"casual elegance meets a vibrant atmosphere\", serving spirits, beers and signature cocktails.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Whisper Bar (Basma Hotel)",
+      "kind": "bar",
+      "url": "https://basmahotel.com/restaurant/",
+      "sourceType": "operator's own site (Basma Hotel Aswan)",
+      "address": "Basma Hotel, \"Corniche El Nile St, Aswan\"",
+      "operatingEvidence": "Hotel site carries 2026 packages; \"Relax and unwind at Whisper Bar\", with spirits, beers and signature cocktails.",
+      "hours": "not published",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Nubia Museum",
+      "reason": "Ministry pages publish hours and online booking but give only \"Aswan\" as location; no address or exact location published.",
+      "url": "https://egymonuments.com/details/NubiaMuseum"
+    },
+    {
+      "name": "Unfinished Obelisk",
+      "reason": "Booking page open, but the only location given is \"one of the Aswan quarries\"; no exact location published.",
+      "url": "https://egymonuments.gov.eg/monuments/the-unfinished-obelisk/"
+    },
+    {
+      "name": "Monastery of St Simeon (Samaan Monastery)",
+      "reason": "Ticketing and Ministry pages give no location beyond \"Aswan\" (Location section empty).",
+      "url": "https://egymonuments.gov.eg/en/monuments/monastery-of-st-simeon"
+    },
+    {
+      "name": "Sehel Island",
+      "reason": "Ticketing page has no location or description beyond the title.",
+      "url": "https://egymonuments.com/details/SehelIsland"
+    },
+    {
+      "name": "Kom Ombo Temple",
+      "reason": "Ministry and ticketing pages give no location (Location section empty); also about an hour outside Aswan city.",
+      "url": "https://egymonuments.com/details/KomOmboTemple"
+    },
+    {
+      "name": "Philae Sound and Light Show",
+      "reason": "Operator page publishes a weekly schedule but no venue location or meeting point (\"How to reach\" section empty); copyright 2024.",
+      "url": "https://www.soundandlight.show/en/show/philae-show"
+    },
+    {
+      "name": "Old Cataract, Aswan (incl. 1902, Oriental Kebabgy, Terrace, Saraya)",
+      "reason": "Now operated by Mandarin Oriental; official pages render only navigation text (no address, venues or notices readable). Former Sofitel URLs return 410 or redirect to a brand directory. Not evidence of closure.",
+      "url": "https://www.mandarinoriental.com/en/aswan/old-cataract/dine"
+    },
+    {
+      "name": "Mövenpick Resort Aswan (Elephantine Restaurant, Lobby Bar)",
+      "reason": "Official Accor/Mövenpick URLs redirect to a brand directory that does not list Aswan; movenpick.com page 404. Could not confirm; not evidence of closure.",
+      "url": "https://movenpick.accor.com/en/africa/egypt/aswan/resort-aswan.html"
+    },
+    {
+      "name": "Pyramisa Isis Island Aswan (Jade, Mandulis Bar, Sunset Terrace, Lobby Lounge)",
+      "reason": "Restaurants page lists venues and daily hours, but no address or exact location is published (only \"an island in the middle of the Nile positioned near the center of Aswan\"); contact page has no postal address.",
+      "url": "https://pyramisahotels.com/isis-island-aswan-restaurants-bars"
+    },
+    {
+      "name": "Anakato Nubian Resort",
+      "reason": "Official site gives a Kiki Island, Gharb Soheil address but no restaurant details, and its pages carry unrelated injected casino/betting spam; not used as evidence.",
+      "url": "https://www.anakato.com/"
+    },
+    {
+      "name": "Cilantro (Aswan)",
+      "reason": "Official domain did not resolve (DNS failure).",
+      "url": "https://www.cilantro.com.eg/"
+    },
+    {
+      "name": "Tolip Aswan Hotel",
+      "reason": "Official site refused the connection (ECONNREFUSED).",
+      "url": "https://www.tolip.com/"
+    },
+    {
+      "name": "Helnan Aswan",
+      "reason": "Official page returned 404.",
+      "url": "https://www.helnan.com/hotel/helnan-aswan"
+    },
+    {
+      "name": "Sonesta Nouba Hotel Aswan",
+      "reason": "Official page returned 404; no other official page found.",
+      "url": "https://www.sonesta.com/sonesta-hotels-resorts/egypt/aswan/sonesta-nouba-hotel-aswan"
+    },
+    {
+      "name": "Marhaba Palace Hotel",
+      "reason": "Guessed official URL returned 404; no official page found.",
+      "url": "https://www.marhaba-aswan.com/"
+    },
+    {
+      "name": "Nile Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Nubian villages",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Nubian village visit",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Felucca at sunset",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Philae by boat",
+      "reason": "generic, not a place (Philae Temple checked separately)",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Philae Temple / Early visit to Philae Temple / Private guide for Philae Temple / Self-guided Philae by boat / Slow breakfast before Philae Temple / Coffee and pastry before Philae Temple",
+      "reason": "generic, not a place (Philae Temple checked separately)",
+      "url": ""
+    },
+    {
+      "name": "a Nubian dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Aswan market or cafe",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local dinner in Nile Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Elephantine Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in West Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Nile Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Nile Corniche walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Elephantine Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around West Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through West Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Nile Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Felucca at sunset",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Elephantine Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Nubian villages",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Nile Corniche evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Elephantine Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near West Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Nile Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Elephantine Island",
+      "reason": "generic, not a place (Elephantine Island checked separately)",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near West Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Nile Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Nile Corniche cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in West Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of West Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Nile Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Nile Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Elephantine Island bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through West Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Nile Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Nubian villages",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around West Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Nile Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Elephantine Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in West Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Nile Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Nile Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Elephantine Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Nile Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Nile Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Elephantine Island morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near West Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Nile Corniche",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Elephantine Island",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near West Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Philae Temple",
+        "Abu Simbel Temples",
+        "Elephantine Island",
+        "Qubbat Al-Hawa Cemetery"
+      ],
+      "bestFirstTimers": [
+        "Philae Temple",
+        "Abu Simbel Temples",
+        "Elephantine Island"
+      ],
+      "bestRestaurants": [
+        "Kato Dool Restaurant",
+        "Sky Light Restaurant (Basma Hotel)",
+        "Lotus Restaurant (Basma Hotel)"
+      ],
+      "bestBudget": [
+        "Elephantine Island",
+        "Kalabsha Temple",
+        "Qubbat Al-Hawa Cemetery"
+      ],
+      "bestLuxury": [
+        "Abu Simbel Temples",
+        "Sky Light Restaurant (Basma Hotel)"
+      ],
+      "bestCouples": [
+        "Philae Temple",
+        "Sky Light Restaurant (Basma Hotel)",
+        "Vienna Bar (Basma Hotel)"
+      ],
+      "bestKids": [
+        "Elephantine Island",
+        "Philae Temple"
+      ],
+      "bestSolo": [
+        "Kalabsha Temple",
+        "Qubbat Al-Hawa Cemetery",
+        "Elephantine Island"
+      ],
+      "bestUnique": [
+        "Kalabsha Temple",
+        "Abu Simbel Temples",
+        "Kato Dool Restaurant"
+      ],
+      "bestBreakfast": [
+        "Kato Dool Restaurant",
+        "Lotus Restaurant (Basma Hotel)"
+      ],
+      "bestLunch": [
+        "Kato Dool Restaurant",
+        "Lotus Restaurant (Basma Hotel)"
+      ],
+      "bestDinner": [
+        "Sky Light Restaurant (Basma Hotel)",
+        "Lotus Restaurant (Basma Hotel)"
+      ],
+      "bestCocktails": [
+        "Vienna Bar (Basma Hotel)",
+        "Whisper Bar (Basma Hotel)"
+      ],
+      "bestBakeries": [],
+      "bestCoffee": []
+    },
+    "queries": {
+      "Philae Temple": "Philae Temple Agilkia Island Aswan",
+      "Abu Simbel Temples": "Abu Simbel Temples Abu Simbel Aswan",
+      "Elephantine Island": "Elephantine Island Aswan",
+      "Kalabsha Temple": "Kalabsha Temple New Kalabsha Island Aswan",
+      "Qubbat Al-Hawa Cemetery": "Qubbat Al-Hawa West Bank Aswan",
+      "Kato Dool Restaurant": "Kato Dool Wellness Resort Gharb Soheil Aswan",
+      "Lotus Restaurant (Basma Hotel)": "Basma Hotel Corniche El Nile Street Aswan",
+      "Sky Light Restaurant (Basma Hotel)": "Basma Hotel Corniche El Nile Street Aswan",
+      "Vienna Bar (Basma Hotel)": "Basma Hotel Corniche El Nile Street Aswan",
+      "Whisper Bar (Basma Hotel)": "Basma Hotel Corniche El Nile Street Aswan"
+    },
+    "summary": "Island temples, Abu Simbel and the west-bank tombs, with a Nubian-village restaurant and a Corniche hotel's restaurants and bars, checked against official ministry and operator websites.",
+    "highlights": [
+      "Philae Temple",
+      "Abu Simbel Temples",
+      "Elephantine Island",
+      "Qubbat Al-Hawa Cemetery"
+    ],
+    "tip": "None of the sites checked lists a weekly closing day, so plan around last entry instead: Philae Temple and Kalabsha Temple stop admitting at 3pm, and the Ministry asks you to arrive at least an hour before closing.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "No weekly closing day listed",
+        "copy": "The Ministry's ticketing site lists Philae Temple, Elephantine Island, Kalabsha Temple and Abu Simbel Temples on \"All Days\", and its page for Qubbat Al-Hawa Cemetery lists Sunday to Saturday. None of them names a weekly closing day."
+      },
+      {
+        "label": "Tickets",
+        "value": "Book online with the Ministry",
+        "copy": "Philae Temple, Elephantine Island, Kalabsha Temple and Abu Simbel Temples all have a \"Book Now\" option on the Ministry's ticketing site. Abu Simbel charges more on its sun-alignment days, 22 February and 22 October."
+      },
+      {
+        "label": "Arrival",
+        "value": "Last entry, not closing time",
+        "copy": "The ticketing pages ask you to arrive at least an hour before closing and to keep hold of your ticket. Last entry is 3pm at Philae Temple and Kalabsha Temple and 4pm at Elephantine Island and Abu Simbel Temples."
+      },
+      {
+        "label": "Rules",
+        "value": "Students, children, phones",
+        "copy": "At the Ministry sites, students must show a valid ID and be no older than 24, and children under 6 enter free. Photography with a mobile phone is free of charge."
+      }
+    ],
+    "dek": "Plan your Aswan days around last-entry times rather than closing days: Philae and Kalabsha stop admitting at 3pm, and the Ministry asks you to arrive an hour before closing.",
+    "intro": [
+      "Aswan's ancient sites are run by Egypt's Ministry of Tourism and Antiquities, and you can book most of them on its online ticketing site. Philae Temple stands on the island of Agilkia. The ticketing page lists it every day from 7am, with last entry at 3pm, at EGP 550 for a foreign adult and EGP 275 for a student. Elephantine Island, which the Ministry places on the Nile at Aswan, opens from 8am with last entry at 4pm, and a foreign adult ticket costs EGP 200. None of the sites in this guide lists a weekly closing day.",
+      "Across the river, the Ministry places Qubbat Al-Hawa Cemetery \"on the west bank of the Nile across the river from the northern tip of Elephantine Island\", with tombs cut into the cliffs. Its page, which carries a 2019 copyright footer, lists the site from 7am to 4pm daily, with a foreign adult ticket at EGP 200. Kalabsha Temple was moved from its original island to New Kalabsha Island in 1962–63. The ticketing site lists it daily from 7am, with last entry at 3pm, and a foreign adult ticket costs EGP 200.",
+      "Abu Simbel is a long day trip. The Ministry describes the Great Temple, cut into the rock for Ramesses II around 1264 BC, alongside a smaller temple to Hathor. On 22 February and 22 October each year, sunlight reaches the innermost statues, and the ticketing site charges more on those two days. On other days it lists the site from 6am, with last entry at 4pm. At every Ministry site, the pages ask you to arrive an hour before closing. Mobile phone photography is free, and children under 6 enter free.",
+      "For meals, Basma Hotel on Corniche El Nile Street lists Lotus, an all-day international buffet, and Sky Light, a candlelit room serving fresh pastas. For cocktails it has Vienna Bar and Whisper Bar, but the hotel doesn't publish their hours. The restaurant at Kato Dool in Gharb Soheil sits on the hillside of a Nubian village. It lists breakfast from 7am to 11am and lunch from 2pm to 11pm, says its produce comes from its organic farm, and takes reservations by phone."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Start with Philae Temple on Agilkia Island, where the Ministry's ticketing site lists last entry at 3pm every day, then cross to Elephantine Island, which admits visitors until 4pm."
+      ],
+      [
+        "A slower morning",
+        "Have breakfast at Kato Dool's restaurant in Gharb Soheil, served from 7am to 11am, before an afternoon at Qubbat Al-Hawa Cemetery, open until 4pm."
+      ],
+      [
+        "Before booking",
+        "No weekly closing day is listed at the sites checked, so plan around last entry, and expect higher Abu Simbel prices on 22 February and 22 October."
+      ]
+    ]
+  },
+  "limitations": "This is a website review, not a visit or a telephone check, and advertised opening hours, tickets and menus don't guarantee availability. Only 10 places could be confirmed, below the 25–35 target, and no bakery or coffee place could be confirmed, so those lists are empty. Hours and prices for the antiquities come from the Ministry's online ticketing site, egymonuments.com, which carries no dates. Qubbat Al-Hawa Cemetery's hours come from a Ministry page with a 2019 copyright footer. Basma Hotel publishes no hours for its restaurants and bars. The Old Cataract (now run by Mandarin Oriental) and Mövenpick Resort Aswan couldn't be read on their official sites. Pyramisa Isis Island publishes its restaurants and hours but no exact location. The Nubia Museum, the Unfinished Obelisk, St Simeon's Monastery, Sehel Island and Kom Ombo have Ministry pages but no published location beyond \"Aswan\". Tolip, Helnan, Sonesta, Marhaba Palace and Cilantro sites failed to load or returned 404. Anakato's site carries injected spam and wasn't used.",
+  "injectionLikeText": []
+}

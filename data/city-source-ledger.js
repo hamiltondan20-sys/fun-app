@@ -5,6 +5,522 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Aswan, Egypt": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-11-22",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "This is a website review, not a visit or a telephone check, and advertised opening hours, tickets and menus don't guarantee availability. Only 10 places could be confirmed, below the 25–35 target, and no bakery or coffee place could be confirmed, so those lists are empty. Hours and prices for the antiquities come from the Ministry's online ticketing site, egymonuments.com, which carries no dates. Qubbat Al-Hawa Cemetery's hours come from a Ministry page with a 2019 copyright footer. Basma Hotel publishes no hours for its restaurants and bars. The Old Cataract (now run by Mandarin Oriental) and Mövenpick Resort Aswan couldn't be read on their official sites. Pyramisa Isis Island publishes its restaurants and hours but no exact location. The Nubia Museum, the Unfinished Obelisk, St Simeon's Monastery, Sehel Island and Kom Ombo have Ministry pages but no published location beyond \"Aswan\". Tolip, Helnan, Sonesta, Marhaba Palace and Cilantro sites failed to load or returned 404. Anakato's site carries injected spam and wasn't used.",
+    "sourceUrls": [
+      "docs/content-research/aswan-2026-11-22.md",
+      "docs/content-research/aswan-2026-11-22.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Nubia Museum",
+        "url": "https://egymonuments.com/details/NubiaMuseum",
+        "checkedOn": "2026-11-22",
+        "reason": "Ministry pages publish hours and online booking but give only \"Aswan\" as location; no address or exact location published."
+      },
+      {
+        "name": "Unfinished Obelisk",
+        "url": "https://egymonuments.gov.eg/monuments/the-unfinished-obelisk/",
+        "checkedOn": "2026-11-22",
+        "reason": "Booking page open, but the only location given is \"one of the Aswan quarries\"; no exact location published."
+      },
+      {
+        "name": "Monastery of St Simeon (Samaan Monastery)",
+        "url": "https://egymonuments.gov.eg/en/monuments/monastery-of-st-simeon",
+        "checkedOn": "2026-11-22",
+        "reason": "Ticketing and Ministry pages give no location beyond \"Aswan\" (Location section empty)."
+      },
+      {
+        "name": "Sehel Island",
+        "url": "https://egymonuments.com/details/SehelIsland",
+        "checkedOn": "2026-11-22",
+        "reason": "Ticketing page has no location or description beyond the title."
+      },
+      {
+        "name": "Kom Ombo Temple",
+        "url": "https://egymonuments.com/details/KomOmboTemple",
+        "checkedOn": "2026-11-22",
+        "reason": "Ministry and ticketing pages give no location (Location section empty); also about an hour outside Aswan city."
+      },
+      {
+        "name": "Philae Sound and Light Show",
+        "url": "https://www.soundandlight.show/en/show/philae-show",
+        "checkedOn": "2026-11-22",
+        "reason": "Operator page publishes a weekly schedule but no venue location or meeting point (\"How to reach\" section empty); copyright 2024."
+      },
+      {
+        "name": "Old Cataract, Aswan (incl. 1902, Oriental Kebabgy, Terrace, Saraya)",
+        "url": "https://www.mandarinoriental.com/en/aswan/old-cataract/dine",
+        "checkedOn": "2026-11-22",
+        "reason": "Now operated by Mandarin Oriental; official pages render only navigation text (no address, venues or notices readable). Former Sofitel URLs return 410 or redirect to a brand directory. Not evidence of closure."
+      },
+      {
+        "name": "Mövenpick Resort Aswan (Elephantine Restaurant, Lobby Bar)",
+        "url": "https://movenpick.accor.com/en/africa/egypt/aswan/resort-aswan.html",
+        "checkedOn": "2026-11-22",
+        "reason": "Official Accor/Mövenpick URLs redirect to a brand directory that does not list Aswan; movenpick.com page 404. Could not confirm; not evidence of closure."
+      },
+      {
+        "name": "Pyramisa Isis Island Aswan (Jade, Mandulis Bar, Sunset Terrace, Lobby Lounge)",
+        "url": "https://pyramisahotels.com/isis-island-aswan-restaurants-bars",
+        "checkedOn": "2026-11-22",
+        "reason": "Restaurants page lists venues and daily hours, but no address or exact location is published (only \"an island in the middle of the Nile positioned near the center of Aswan\"); contact page has no postal address."
+      },
+      {
+        "name": "Anakato Nubian Resort",
+        "url": "https://www.anakato.com/",
+        "checkedOn": "2026-11-22",
+        "reason": "Official site gives a Kiki Island, Gharb Soheil address but no restaurant details, and its pages carry unrelated injected casino/betting spam; not used as evidence."
+      },
+      {
+        "name": "Cilantro (Aswan)",
+        "url": "https://www.cilantro.com.eg/",
+        "checkedOn": "2026-11-22",
+        "reason": "Official domain did not resolve (DNS failure)."
+      },
+      {
+        "name": "Tolip Aswan Hotel",
+        "url": "https://www.tolip.com/",
+        "checkedOn": "2026-11-22",
+        "reason": "Official site refused the connection (ECONNREFUSED)."
+      },
+      {
+        "name": "Helnan Aswan",
+        "url": "https://www.helnan.com/hotel/helnan-aswan",
+        "checkedOn": "2026-11-22",
+        "reason": "Official page returned 404."
+      },
+      {
+        "name": "Sonesta Nouba Hotel Aswan",
+        "url": "https://www.sonesta.com/sonesta-hotels-resorts/egypt/aswan/sonesta-nouba-hotel-aswan",
+        "checkedOn": "2026-11-22",
+        "reason": "Official page returned 404; no other official page found."
+      },
+      {
+        "name": "Marhaba Palace Hotel",
+        "url": "https://www.marhaba-aswan.com/",
+        "checkedOn": "2026-11-22",
+        "reason": "Guessed official URL returned 404; no official page found."
+      },
+      {
+        "name": "Nile Corniche",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Nubian villages",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Nubian village visit",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Felucca at sunset",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Philae by boat",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place (Philae Temple checked separately)"
+      },
+      {
+        "name": "Family-friendly Philae Temple / Early visit to Philae Temple / Private guide for Philae Temple / Self-guided Philae by boat / Slow breakfast before Philae Temple / Coffee and pastry before Philae Temple",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place (Philae Temple checked separately)"
+      },
+      {
+        "name": "a Nubian dinner",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Aswan market or cafe",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local dinner in Nile Corniche",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Elephantine Island",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in West Bank",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Nile Corniche",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Nile Corniche walk",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Elephantine Island",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around West Bank",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through West Bank",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Nile Corniche",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Felucca at sunset",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Elephantine Island",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Nubian villages",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Nile Corniche evening",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Elephantine Island",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near West Bank",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Nile Corniche",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Elephantine Island",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place (Elephantine Island checked separately)"
+      },
+      {
+        "name": "A relaxed meal near West Bank",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Nile Corniche",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Nile Corniche cafe or market",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in West Bank",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of West Bank",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Nile Corniche",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Nile Corniche",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Elephantine Island bakery or market",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through West Bank",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Nile Corniche",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Nubian villages",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around West Bank",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Nile Corniche",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Elephantine Island",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in West Bank",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Nile Corniche",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Nile Corniche",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Elephantine Island",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Nile Corniche",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Nile Corniche",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Elephantine Island morning market",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near West Bank",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Nile Corniche",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Elephantine Island",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near West Bank",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-11-22",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Philae Temple": {
+        "url": "https://egymonuments.com/details/PhilaeTemple",
+        "sourceType": "official public operator (Ministry of Tourism and Antiquities ticketing site; location from egymonuments.gov.eg/en/archaeological-sites/aswan)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Online booking open on the Ministry's ticketing site (\"Book Now\", book-date/18), adult foreigner EGP 550 / student EGP 275. The page asks visitors to \"arrive at least one hour prior to the site closing time.\""
+      },
+      "Abu Simbel Temples": {
+        "url": "https://egymonuments.com/details/AbuSimbelTemple",
+        "sourceType": "official public operator (Ministry of Tourism and Antiquities ticketing site; description from egymonuments.gov.eg/archaeological-sites/abu-simbel/)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Online booking open (\"Book Now\", book-date/9); standard adult EGP 822, with higher \"Sun Alignment (February 22 & October 22)\" prices. Ministry page: on \"the 22nd of February and 22nd of October, the sun's rays enter the temple\"."
+      },
+      "Elephantine Island": {
+        "url": "https://egymonuments.com/details/ElephantineIsland",
+        "sourceType": "official public operator (Ministry of Tourism and Antiquities ticketing site; location from egymonuments.gov.eg/archaeological-sites/elephantine-1/)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Online booking open (\"Book Now\", book-date/117); adult foreigner EGP 200 / student EGP 100; \"Please adhere to opening and closing hours for every site.\""
+      },
+      "Kalabsha Temple": {
+        "url": "https://egymonuments.com/details/TempleofKalabsha",
+        "sourceType": "official public operator (Ministry of Tourism and Antiquities ticketing site; location from egymonuments.gov.eg/monuments/kalabsha-temple/)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Online booking open (\"Book Now\", book-date/63); adult foreigner EGP 200 / student EGP 100."
+      },
+      "Qubbat Al-Hawa Cemetery": {
+        "url": "https://egymonuments.gov.eg/archaeological-sites/qubbat-al-hawa-cemetery-1/",
+        "sourceType": "official public operator (Ministry of Tourism and Antiquities)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Ministry page publishes daily hours and tickets (foreigner adult \"EGP 200\", student \"EGP 100\"); no closure notice. Page footer reads \"Copyrights Ministry of Antiquities - Egypt 2019\", and the site is not on the online ticketing list, so hours are attributed to that page."
+      },
+      "Kato Dool Restaurant": {
+        "url": "https://www.katodool.com/katodool-restaurant/",
+        "sourceType": "operator's own site (Kato Dool Wellness Resort)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Live booking engine on the site (Book Now links with November 2026 dates); restaurant page invites you to reserve by phone and says ingredients come \"from our organic farm to your table\"."
+      },
+      "Lotus Restaurant (Basma Hotel)": {
+        "url": "https://basmahotel.com/restaurant/",
+        "sourceType": "operator's own site (Basma Hotel Aswan)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Hotel packages page carries 2026 offers (\"available till 20th of December 2026\"); restaurant page describes Lotus as \"our all day dining restaurant offering an international eclectic buffet.\""
+      },
+      "Sky Light Restaurant (Basma Hotel)": {
+        "url": "https://basmahotel.com/restaurant/",
+        "sourceType": "operator's own site (Basma Hotel Aswan)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Hotel site carries 2026 packages; Sky Light is described as \"an elegant candlelit atmosphere\" with fresh pastas."
+      },
+      "Vienna Bar (Basma Hotel)": {
+        "url": "https://basmahotel.com/restaurant/",
+        "sourceType": "operator's own site (Basma Hotel Aswan)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Hotel site carries 2026 packages; Vienna Bar is where \"casual elegance meets a vibrant atmosphere\", serving spirits, beers and signature cocktails."
+      },
+      "Whisper Bar (Basma Hotel)": {
+        "url": "https://basmahotel.com/restaurant/",
+        "sourceType": "operator's own site (Basma Hotel Aswan)",
+        "checkedOn": "2026-11-22",
+        "operatingEvidence": "Hotel site carries 2026 packages; \"Relax and unwind at Whisper Bar\", with spirits, beers and signature cocktails."
+      }
+    }
+  },
   "Luxor, Egypt": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-11-22",

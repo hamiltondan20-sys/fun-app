@@ -11449,4 +11449,95 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 18 distinct recommendations in this guide were checked against their operators' own websites on November 22, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Aswan, Egypt: source review of 2026-11-22 (docs/content-research/aswan-2026-11-22.md).
+  {
+    const cityKey = "Aswan, Egypt";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Philae Temple","Abu Simbel Temples","Elephantine Island","Qubbat Al-Hawa Cemetery"],
+      bestFirstTimers: ["Philae Temple","Abu Simbel Temples","Elephantine Island"],
+      bestRestaurants: ["Kato Dool Restaurant","Sky Light Restaurant (Basma Hotel)","Lotus Restaurant (Basma Hotel)"],
+      bestBudget: ["Elephantine Island","Kalabsha Temple","Qubbat Al-Hawa Cemetery"],
+      bestLuxury: ["Abu Simbel Temples","Sky Light Restaurant (Basma Hotel)"],
+      bestCouples: ["Philae Temple","Sky Light Restaurant (Basma Hotel)","Vienna Bar (Basma Hotel)"],
+      bestKids: ["Elephantine Island","Philae Temple"],
+      bestSolo: ["Kalabsha Temple","Qubbat Al-Hawa Cemetery","Elephantine Island"],
+      bestUnique: ["Kalabsha Temple","Abu Simbel Temples","Kato Dool Restaurant"],
+      bestBreakfast: ["Kato Dool Restaurant","Lotus Restaurant (Basma Hotel)"],
+      bestLunch: ["Kato Dool Restaurant","Lotus Restaurant (Basma Hotel)"],
+      bestDinner: ["Sky Light Restaurant (Basma Hotel)","Lotus Restaurant (Basma Hotel)"],
+      bestCocktails: ["Vienna Bar (Basma Hotel)","Whisper Bar (Basma Hotel)"],
+      bestBakeries: [],
+      bestCoffee: []
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Philae Temple": "Philae Temple Agilkia Island Aswan",
+      "Abu Simbel Temples": "Abu Simbel Temples Abu Simbel Aswan",
+      "Elephantine Island": "Elephantine Island Aswan",
+      "Qubbat Al-Hawa Cemetery": "Qubbat Al-Hawa West Bank Aswan",
+      "Kato Dool Restaurant": "Kato Dool Wellness Resort Gharb Soheil Aswan",
+      "Sky Light Restaurant (Basma Hotel)": "Basma Hotel Corniche El Nile Street Aswan",
+      "Lotus Restaurant (Basma Hotel)": "Basma Hotel Corniche El Nile Street Aswan",
+      "Kalabsha Temple": "Kalabsha Temple New Kalabsha Island Aswan",
+      "Vienna Bar (Basma Hotel)": "Basma Hotel Corniche El Nile Street Aswan",
+      "Whisper Bar (Basma Hotel)": "Basma Hotel Corniche El Nile Street Aswan"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Aswan" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Island temples, Abu Simbel and the west-bank tombs, with a Nubian-village restaurant and a Corniche hotel's restaurants and bars, checked against official ministry and operator websites.";
+    cityGuide.highlights = ["Philae Temple","Abu Simbel Temples","Elephantine Island","Qubbat Al-Hawa Cemetery"];
+    cityGuide.tip = "None of the sites checked lists a weekly closing day, so plan around last entry instead: Philae Temple and Kalabsha Temple stop admitting at 3pm, and the Ministry asks you to arrive at least an hour before closing.";
+    data.destinationFacts[cityKey] = "None of the sites checked lists a weekly closing day, so plan around last entry instead: Philae Temple and Kalabsha Temple stop admitting at 3pm, and the Ministry asks you to arrive at least an hour before closing.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Island temples, Abu Simbel and the west-bank tombs, with a Nubian-village restaurant and a Corniche hotel's restaurants and bars, checked against official ministry and operator websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "No weekly closing day listed",
+        "copy": "The Ministry's ticketing site lists Philae Temple, Elephantine Island, Kalabsha Temple and Abu Simbel Temples on \"All Days\", and its page for Qubbat Al-Hawa Cemetery lists Sunday to Saturday. None of them names a weekly closing day."
+      },
+      {
+        "label": "Tickets",
+        "value": "Book online with the Ministry",
+        "copy": "Philae Temple, Elephantine Island, Kalabsha Temple and Abu Simbel Temples all have a \"Book Now\" option on the Ministry's ticketing site. Abu Simbel charges more on its sun-alignment days, 22 February and 22 October."
+      },
+      {
+        "label": "Arrival",
+        "value": "Last entry, not closing time",
+        "copy": "The ticketing pages ask you to arrive at least an hour before closing and to keep hold of your ticket. Last entry is 3pm at Philae Temple and Kalabsha Temple and 4pm at Elephantine Island and Abu Simbel Temples."
+      },
+      {
+        "label": "Rules",
+        "value": "Students, children, phones",
+        "copy": "At the Ministry sites, students must show a valid ID and be no older than 24, and children under 6 enter free. Photography with a mobile phone is free of charge."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Plan your Aswan days around last-entry times rather than closing days: Philae and Kalabsha stop admitting at 3pm, and the Ministry asks you to arrive an hour before closing.",
+      intro: [
+        "Aswan's ancient sites are run by Egypt's Ministry of Tourism and Antiquities, and you can book most of them on its online ticketing site. Philae Temple stands on the island of Agilkia. The ticketing page lists it every day from 7am, with last entry at 3pm, at EGP 550 for a foreign adult and EGP 275 for a student. Elephantine Island, which the Ministry places on the Nile at Aswan, opens from 8am with last entry at 4pm, and a foreign adult ticket costs EGP 200. None of the sites in this guide lists a weekly closing day.",
+        "Across the river, the Ministry places Qubbat Al-Hawa Cemetery \"on the west bank of the Nile across the river from the northern tip of Elephantine Island\", with tombs cut into the cliffs. Its page, which carries a 2019 copyright footer, lists the site from 7am to 4pm daily, with a foreign adult ticket at EGP 200. Kalabsha Temple was moved from its original island to New Kalabsha Island in 1962–63. The ticketing site lists it daily from 7am, with last entry at 3pm, and a foreign adult ticket costs EGP 200.",
+        "Abu Simbel is a long day trip. The Ministry describes the Great Temple, cut into the rock for Ramesses II around 1264 BC, alongside a smaller temple to Hathor. On 22 February and 22 October each year, sunlight reaches the innermost statues, and the ticketing site charges more on those two days. On other days it lists the site from 6am, with last entry at 4pm. At every Ministry site, the pages ask you to arrive an hour before closing. Mobile phone photography is free, and children under 6 enter free.",
+        "For meals, Basma Hotel on Corniche El Nile Street lists Lotus, an all-day international buffet, and Sky Light, a candlelit room serving fresh pastas. For cocktails it has Vienna Bar and Whisper Bar, but the hotel doesn't publish their hours. The restaurant at Kato Dool in Gharb Soheil sits on the hillside of a Nubian village. It lists breakfast from 7am to 11am and lunch from 2pm to 11pm, says its produce comes from its organic farm, and takes reservations by phone."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Start with Philae Temple on Agilkia Island, where the Ministry's ticketing site lists last entry at 3pm every day, then cross to Elephantine Island, which admits visitors until 4pm."
+        ],
+        [
+          "A slower morning",
+          "Have breakfast at Kato Dool's restaurant in Gharb Soheil, served from 7am to 11am, before an afternoon at Qubbat Al-Hawa Cemetery, open until 4pm."
+        ],
+        [
+          "Before booking",
+          "No weekly closing day is listed at the sites checked, so plan around last entry, and expect higher Abu Simbel prices on 22 February and 22 October."
+        ]
+      ],
+      trust: "All 10 distinct recommendations in this guide were checked against their operators' own websites on November 22, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();
