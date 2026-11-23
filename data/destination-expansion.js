@@ -11644,4 +11644,103 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 23 distinct recommendations in this guide were checked against their operators' own websites on November 23, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Hue, Vietnam: source review of 2026-11-23 (docs/content-research/hue-2026-11-23.md).
+  {
+    const cityKey = "Hue, Vietnam";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["An Hien Garden House","Phu Cam Cathedral"],
+      bestFirstTimers: ["An Hien Garden House","Madam Thu (45 Vo Thi Sau)","Le Parfum (Azerai La Residence)","Le Panorama Bar (Hotel Saigon Morin)"],
+      bestRestaurants: ["Kim Long Fine Dining (Ancient Hue)","Madam Thu (45 Vo Thi Sau)","Le Parfum (Azerai La Residence)","Nam Phuong (Silk Path Grand Hue)"],
+      bestBudget: ["An Hien Garden House"],
+      bestLuxury: ["Phú Mộng Private & Royal Dining (Ancient Hue)","Le Soleil de Huế (Ancient Hue)","Le Royal Restaurant (Hotel Saigon Morin)","Le Parfum (Azerai La Residence)"],
+      bestCouples: ["La Lune de Huế (Ancient Hue)","Le Soleil de Huế (Ancient Hue)","Le Gouverneur Bar (Azerai La Residence)","Le Panorama Bar (Hotel Saigon Morin)"],
+      bestKids: ["An Hien Garden House","Kim Long Fine Dining (Ancient Hue)"],
+      bestSolo: ["An Hien Garden House","Phu Cam Cathedral","The Courtyard (Silk Path Grand Hue)","Lobby Lounge (Silk Path Grand Hue)"],
+      bestUnique: ["Phú Mộng Private & Royal Dining (Ancient Hue)","Kim Long Fine Dining (Ancient Hue)","La Lune de Huế (Ancient Hue)","An Hien Garden House"],
+      bestBreakfast: ["Nam Phuong (Silk Path Grand Hue)","Le Parfum (Azerai La Residence)","Jules Ferry Restaurant (Hotel Saigon Morin)"],
+      bestLunch: ["Olivio (Silk Path Grand Hue)","Madam Thu (45 Vo Thi Sau)","Le Parfum (Azerai La Residence)","Kim Long Fine Dining (Ancient Hue)"],
+      bestDinner: ["Le Soleil de Huế (Ancient Hue)","Kim Long Fine Dining (Ancient Hue)","Olivio (Silk Path Grand Hue)","Madam Thu (45 Vo Thi Sau)"],
+      bestCocktails: ["Le Gouverneur Bar (Azerai La Residence)","Vạn Xuân Bar (Ancient Hue)","Le Panorama Bar (Hotel Saigon Morin)","Lobby Bar (Hotel Saigon Morin)"],
+      bestBakeries: ["Lobby Bar (Hotel Saigon Morin)"],
+      bestCoffee: ["The Courtyard (Silk Path Grand Hue)","Lobby Lounge (Silk Path Grand Hue)","Lobby Bar (Hotel Saigon Morin)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "An Hien Garden House": "An Hien Garden House 58 Nguyen Phuc Nguyen Hue",
+      "Phu Cam Cathedral": "Phu Cam Cathedral 1 Doan Huu Trung Hue",
+      "Madam Thu (45 Vo Thi Sau)": "Madam Thu 45 Vo Thi Sau Hue",
+      "Le Parfum (Azerai La Residence)": "Le Parfum Azerai La Residence 5 Le Loi Hue",
+      "Le Panorama Bar (Hotel Saigon Morin)": "Le Panorama Bar Hotel Saigon Morin 30 Le Loi Hue",
+      "Kim Long Fine Dining (Ancient Hue)": "Kim Long Fine Dining Ancient Hue 104/47 Kim Long Hue",
+      "Nam Phuong (Silk Path Grand Hue)": "Nam Phuong Restaurant Silk Path Grand Hue 2 Le Loi Hue",
+      "Phú Mộng Private & Royal Dining (Ancient Hue)": "Phu Mong Royal Dining Ancient Hue 104/47 Kim Long Hue",
+      "Le Soleil de Huế (Ancient Hue)": "Le Soleil de Hue Ancient Hue 104/47 Kim Long Hue",
+      "Le Royal Restaurant (Hotel Saigon Morin)": "Le Royal Restaurant Hotel Saigon Morin 30 Le Loi Hue",
+      "La Lune de Huế (Ancient Hue)": "La Lune de Hue Ancient Hue 104/47 Kim Long Hue",
+      "Le Gouverneur Bar (Azerai La Residence)": "Le Gouverneur Bar Azerai La Residence 5 Le Loi Hue",
+      "The Courtyard (Silk Path Grand Hue)": "The Courtyard Silk Path Grand Hue 2 Le Loi Hue",
+      "Lobby Lounge (Silk Path Grand Hue)": "Lobby Lounge Silk Path Grand Hue 2 Le Loi Hue",
+      "Jules Ferry Restaurant (Hotel Saigon Morin)": "Jules Ferry Restaurant Hotel Saigon Morin 30 Le Loi Hue",
+      "Olivio (Silk Path Grand Hue)": "Olivio Restaurant Silk Path Grand Hue 2 Le Loi Hue",
+      "Vạn Xuân Bar (Ancient Hue)": "Van Xuan Bar Ancient Hue 104/47 Kim Long Hue",
+      "Lobby Bar (Hotel Saigon Morin)": "Lobby Bar Hotel Saigon Morin 30 Le Loi Hue"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Hue" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Garden houses, a cathedral, royal-style dinners, riverside hotel bars and breakfast rooms in Hue, each checked against its operator's own website.";
+    cityGuide.highlights = ["An Hien Garden House","Phu Cam Cathedral","Kim Long Fine Dining (Ancient Hue)","Le Panorama Bar (Hotel Saigon Morin)"];
+    cityGuide.tip = "None of the places checked lists a weekly closing day, but Phú Mộng takes a 50% deposit when you book and Hotel Saigon Morin's Royal Dinner needs at least 12 hours' notice, so arrange those ahead.";
+    data.destinationFacts[cityKey] = "None of the places checked lists a weekly closing day, but Phú Mộng takes a 50% deposit when you book and Hotel Saigon Morin's Royal Dinner needs at least 12 hours' notice, so arrange those ahead.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Garden houses, a cathedral, royal-style dinners, riverside hotel bars and breakfast rooms in Hue, each checked against its operator's own website.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "None listed",
+        "copy": "None of the places checked lists a weekly closing day: Madam Thu says it is open daily from 09:00 AM to 10:30 PM, and Vạn Xuân Bar at Ancient Hue opens daily from 5:00 PM."
+      },
+      {
+        "label": "Tickets",
+        "value": "50,000 VND",
+        "copy": "An Hien Garden House listed a 50,000 VND entrance ticket and 8:00am–5:00pm opening on its owner Silk Path's page, last updated in January 2024."
+      },
+      {
+        "label": "Booking",
+        "value": "Deposit or notice",
+        "copy": "Phú Mộng at Ancient Hue requires a 50% deposit on booking for its Royal Package. Le Royal Restaurant at Hotel Saigon Morin is by advance reservation only, and the hotel's Royal Dinner needs at least 12 hours' notice."
+      },
+      {
+        "label": "Walk-ins and diets",
+        "value": "Ask ahead",
+        "copy": "Vạn Xuân Bar welcomes guests who are not staying at Ancient Hue and takes last orders at 9:30 PM. Ancient Hue's restaurants adjust dishes for allergies or no pork if you tell them in advance."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Book Hue's royal-style dinners ahead, and fit An Hien Garden House into its listed 8:00am–5:00pm opening.",
+      intro: [
+        "This Hue guide is built from places whose own websites could be read, which means garden-house restaurants, riverside hotel dining rooms and one restored garden house. You can visit An Hien Garden House at 58 Nguyen Phuc Nguyen Street in Huong Long ward; its owner, Silk Path, listed opening from 8:00am to 5:00pm and a 50,000 VND ticket on a page last updated in January 2024. The Imperial City and royal tombs are not covered, because the conservation centre's website could not be read, so check their hours and prices with the site before you go.",
+        "In Kim Long, Ancient Hue gathers several dining rooms in one garden complex at 104/47 Kim Long. Kim Long Fine Dining has served guests since 2005 and offers an optional Royal Costume Dining Experience, while Phú Mộng stages a royal-style dinner that needs a 50% deposit when you book. For two, La Lune de Huế is a private glass-domed room, and Le Soleil de Huế serves French cooking with a Vietnamese touch. Vạn Xuân Bar opens daily from 5:00 PM, takes last orders at 9:30 PM and welcomes guests who are not staying.",
+        "Le Loi Street holds three hotels that make an easy evening circuit. At Azerai La Residence (5 Le Loi), Le Parfum serves Vietnamese and Western dishes for breakfast, lunch and dinner, and Le Gouverneur Bar is open from 8 a.m. to midnight. Silk Path Grand Hue (2 Le Loi) lists Nam Phuong for Hue cooking, with breakfast from 6:00 AM, and Olivio for European dishes at lunch and dinner. Hotel Saigon Morin (30 Le Loi) listed Le Panorama Bar, which overlooks the river and Truong Tien Bridge, as open 18:00–23:00 on a page dated 2020.",
+        "For a simpler meal, Madam Thu has two branches on Vo Thi Sau Street, at numbers 45 and 04, and says it is open daily from 09:00 AM to 10:30 PM. If you want Hue royal dishes in a hotel setting, Le Royal Restaurant at Hotel Saigon Morin takes guests by advance reservation only, and the hotel's Royal Dinner needs at least 12 hours' notice. Phu Cam Cathedral stands at 1 Doan Huu Trung Street, according to the Archdiocese of Hue's parish history."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Start at An Hien Garden House, listed at 8:00am–5:00pm with a 50,000 VND ticket on a January 2024 page, then eat at Madam Thu on Vo Thi Sau Street, which says it is open daily."
+        ],
+        [
+          "A slower morning",
+          "Silk Path Grand Hue's dining page lists breakfast at Nam Phuong from 6:00 to 10:00 AM, and the hotel's garden-facing Courtyard serves traditional Vietnamese coffee."
+        ],
+        [
+          "Before booking",
+          "None of the places checked lists a weekly closing day, but Phú Mộng takes a 50% deposit and Hotel Saigon Morin's Royal Dinner needs at least 12 hours' notice."
+        ]
+      ],
+      trust: "All 18 distinct recommendations in this guide were checked against their operators' own websites on November 23, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

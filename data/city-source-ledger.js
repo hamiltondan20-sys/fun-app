@@ -5,6 +5,652 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Hue, Vietnam": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-11-23",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and ticket details do not guarantee availability. The Hue Monuments Conservation Centre site (Imperial City, royal tombs, Royal Antiquities Museum) refused connection and its e-ticket portal showed no readable content, so the city's main heritage sights are absent; the Ho Chi Minh Museum site returned nothing readable, Bach Ma National Park had a certificate error, and Meliá Vinpearl Hue, Huong Giang Hotel, Highlands Coffee and Starbucks returned 403. Many Hue cafés and bakeries publish only on social media, which this review does not accept, so coffee and bakery coverage is limited to hotel lounges. Hotel Saigon Morin's hours come from listings dated September 2020, An Hien Garden House's hours and ticket price from a page updated January 2024, and Silk Path's dining hours from an undated page; Madam Thu, Phú Mộng, Le Soleil and Vạn Xuân show only a 2026 copyright as current evidence. Ancient Hue's restaurants and Phu Cam Cathedral publish no opening hours. The confirmed total (18) is below the 25–35 target because few Hue venues have readable official websites.",
+    "sourceUrls": [
+      "docs/content-research/hue-2026-11-23.md",
+      "docs/content-research/hue-2026-11-23.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Royal tomb route",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Perfume River sunset",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Garden house visit",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "a Hue-style tasting lunch",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Hue market or cafe",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local dinner in Citadel",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Perfume River",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in South Bank",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Citadel",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Citadel walk",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Perfume River",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around South Bank",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through South Bank",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Imperial City",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Citadel",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Royal tomb route",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Perfume River",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Thien Mu Pagoda",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Citadel evening",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Perfume River",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near South Bank",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Citadel",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Imperial City",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Perfume River",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near South Bank",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Citadel",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Imperial City",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Citadel cafe or market",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Perfume River sunset",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in South Bank",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of South Bank",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Citadel",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Citadel",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Perfume River bakery or market",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Imperial City",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through South Bank",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Citadel",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Thien Mu Pagoda",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around South Bank",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Citadel",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Perfume River",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in South Bank",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Citadel",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Citadel",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Perfume River",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Royal Tombs",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Citadel",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Perfume River morning market",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Imperial City",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near South Bank",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Citadel",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Perfume River",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near South Bank",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-11-23",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Imperial City",
+        "url": "https://hueworldheritage.org.vn/",
+        "checkedOn": "2026-11-23",
+        "reason": "Official Hue Monuments Conservation Centre site refused connection (ECONNREFUSED); its e-ticket portal returned only a page title, nothing readable"
+      },
+      {
+        "name": "Royal Tombs",
+        "url": "https://eticket.hueworldheritage.org.vn/",
+        "checkedOn": "2026-11-23",
+        "reason": "Same operator site refused connection (ECONNREFUSED); e-ticket portal returned only a page title"
+      },
+      {
+        "name": "Thien Mu Pagoda",
+        "checkedOn": "2026-11-23",
+        "reason": "No official operator website found"
+      },
+      {
+        "name": "Hue Museum of Royal Antiquities",
+        "url": "https://www.baotangcungdinh.vn/",
+        "checkedOn": "2026-11-23",
+        "reason": "Official domain did not resolve (DNS EAI_AGAIN); operator site hueworldheritage.org.vn refused connection"
+      },
+      {
+        "name": "Ho Chi Minh Museum (Hue)",
+        "url": "https://bthcm.hue.gov.vn/",
+        "checkedOn": "2026-11-23",
+        "reason": "Official public site returned nothing readable on three attempts (fetch failed with no output)"
+      },
+      {
+        "name": "Hue Museum of Fine Arts",
+        "checkedOn": "2026-11-23",
+        "reason": "No official website found; guessed public subdomain did not resolve"
+      },
+      {
+        "name": "Dong Ba Market",
+        "url": "https://chodongba.com.vn/",
+        "checkedOn": "2026-11-23",
+        "reason": "Site named as official by a guide reset the connection (ECONNRESET); no other official page found"
+      },
+      {
+        "name": "Bach Ma National Park",
+        "url": "https://www.bachmapark.com.vn/",
+        "checkedOn": "2026-11-23",
+        "reason": "Certificate error (hostname does not match certificate); not bypassed"
+      },
+      {
+        "name": "Zenith Sky Bar (Melia Vinpearl Hue)",
+        "url": "https://melia.com/en/hotels/vietnam/hue-city/melia-vinpearl-hue/restaurants",
+        "checkedOn": "2026-11-23",
+        "reason": "Official page returned 403 Forbidden"
+      },
+      {
+        "name": "Huong Giang Hotel Resort & Spa",
+        "url": "https://huonggianghotel.com.vn/",
+        "checkedOn": "2026-11-23",
+        "reason": "Official site returned 403 Forbidden"
+      },
+      {
+        "name": "Highlands Coffee (38 Le Loi)",
+        "url": "https://www.highlandscoffee.com.vn/vn/he-thong-cua-hang.html",
+        "checkedOn": "2026-11-23",
+        "reason": "Official store list returned 403 Forbidden"
+      },
+      {
+        "name": "Starbucks (Hue)",
+        "url": "https://www.starbucks.vn/store-locator",
+        "checkedOn": "2026-11-23",
+        "reason": "Official store locator returned 403 Forbidden"
+      },
+      {
+        "name": "Phuc Long (Hue)",
+        "url": "https://phuclong.com.vn/",
+        "checkedOn": "2026-11-23",
+        "reason": "Official site returned only a page title; no store list readable"
+      },
+      {
+        "name": "Cộng Cà Phê (Bến Nghé, Hue)",
+        "url": "https://congcaphe.com/stores",
+        "checkedOn": "2026-11-23",
+        "reason": "Official store list names a Hue store but publishes no address or hours"
+      },
+      {
+        "name": "Trung Nguyên Legend Café (Hue)",
+        "url": "https://trungnguyenlegend.com/khong-gian-trung-nguyen-legend-cafe/",
+        "checkedOn": "2026-11-23",
+        "reason": "Official pages list no Hue location or address"
+      },
+      {
+        "name": "Les Jardins de la Carambole",
+        "url": "https://www.lesjardinsdelacarambole.com/",
+        "checkedOn": "2026-11-23",
+        "reason": "Official domain is a parked page (\"This domain may be for sale\")"
+      },
+      {
+        "name": "Pilgrimage Village (Junrei restaurant)",
+        "url": "https://www.pilgrimagevillage.com/dining",
+        "checkedOn": "2026-11-23",
+        "reason": "Official pages publish no street address; no 2026 content (homepage also carried unrelated casino promotion text)"
+      },
+      {
+        "name": "La Brasserie (Indochine Palace)",
+        "url": "https://www.indochinepalace.com/",
+        "checkedOn": "2026-11-23",
+        "reason": "Address published (105A Hung Vuong) but no hours and no 2026 or other current operating notice found"
+      },
+      {
+        "name": "DMZ Bar",
+        "url": "https://dmzhotel.com.vn/",
+        "checkedOn": "2026-11-23",
+        "reason": "Official site shows only a bar inside DMZ Hostel (01 Pham Ngu Lao) with no name, hours or current notice"
+      },
+      {
+        "name": "La Boulangerie Française (Hue)",
+        "url": "https://www.iecd.org/en/projets/french-bread-pastry-making-schools-vietnam/",
+        "checkedOn": "2026-11-23",
+        "reason": "Operator's NGO page (IECD) mentions a tearoom in central Hue but gives no name or address; other candidate domain did not resolve"
+      },
+      {
+        "name": "Bảo Thạnh bakery",
+        "checkedOn": "2026-11-23",
+        "reason": "No official website found (social media only, not accepted)"
+      },
+      {
+        "name": "Nook Cafe & Bar",
+        "checkedOn": "2026-11-23",
+        "reason": "No official website found"
+      },
+      {
+        "name": "Cà Phê Muối (salt coffee, Hue)",
+        "checkedOn": "2026-11-23",
+        "reason": "No official website found"
+      },
+      {
+        "name": "Y Thao Garden",
+        "url": "https://ythaogarden.com/",
+        "checkedOn": "2026-11-23",
+        "reason": "Domain did not resolve (ENOTFOUND)"
+      },
+      {
+        "name": "Sirius rooftop (Moonlight Hotel Hue)",
+        "url": "https://www.moonlighthotelhue.com/",
+        "checkedOn": "2026-11-23",
+        "reason": "Domain did not resolve (ENOTFOUND)"
+      },
+      {
+        "name": "Mường Thanh Holiday Huế",
+        "url": "https://www.muongthanh.com/",
+        "checkedOn": "2026-11-23",
+        "reason": "Official site names the hotel but gives no address or outlet details"
+      },
+      {
+        "name": "Vincom Plaza Hue",
+        "url": "https://vincom.com.vn/",
+        "checkedOn": "2026-11-23",
+        "reason": "Official site's page did not list a Hue centre"
+      }
+    ],
+    "placeSources": {
+      "Le Parfum (Azerai La Residence)": {
+        "url": "https://azerai.com/azerai-la-residence-hue/dining/",
+        "sourceType": "operator's own site (Azerai)",
+        "checkedOn": "2026-11-23",
+        "operatingEvidence": "Dining page last modified 26 October 2026 (structured data): \"The resort's brasserie serves Vietnamese and Western dishes for breakfast, lunch and dinner\", with al fresco dining on the terrace; resort page lists current festive and 2027 Tet packages."
+      },
+      "Le Gouverneur Bar (Azerai La Residence)": {
+        "url": "https://azerai.com/azerai-la-residence-hue/dining/",
+        "sourceType": "operator's own site (Azerai)",
+        "checkedOn": "2026-11-23",
+        "operatingEvidence": "Same dining page (last modified 26 October 2026): bar \"just off the lobby lounge in the mansion\" serving cocktails, wines, liqueurs and beer including local brews."
+      },
+      "Madam Thu (45 Vo Thi Sau)": {
+        "url": "https://madamthu.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-23",
+        "operatingEvidence": "Site says it has been \"welcoming visitors to Hue since 2017\" and states \"Open Daily: 09:00 AM – 10:30 PM\"; footer \"Copyright © MADAM THU RESTAURANT 2026\". Only 2026 date is the footer, so medium."
+      },
+      "Kim Long Fine Dining (Ancient Hue)": {
+        "url": "https://www.ancienthue.com.vn/facilities/kim-long-fine-dining",
+        "sourceType": "operator's own site (Ancient Hue Garden Houses)",
+        "checkedOn": "2026-11-23",
+        "operatingEvidence": "Restaurant page says it has served guests since 2005, offers a Royal Costume Dining Experience and online reservations; downloadable menu file dated 2-3-2026."
+      },
+      "Phú Mộng Private & Royal Dining (Ancient Hue)": {
+        "url": "https://www.ancienthue.com.vn/facilities/phu-mong-private-and-royal-dining",
+        "sourceType": "operator's own site (Ancient Hue Garden Houses)",
+        "checkedOn": "2026-11-23",
+        "operatingEvidence": "Live reservation page for the Royal Package; \"a 50% deposit is required upon booking\", exclusive use at extra fee; site copyright 2023–2026."
+      },
+      "La Lune de Huế (Ancient Hue)": {
+        "url": "https://www.ancienthue.com.vn/facilities/la-lune",
+        "sourceType": "operator's own site (Ancient Hue Garden Houses)",
+        "checkedOn": "2026-11-23",
+        "operatingEvidence": "Private glass-domed dining room for two, bookable by email or reservation link; menu PDF filename dated 26-10-2026."
+      },
+      "Le Soleil de Huế (Ancient Hue)": {
+        "url": "https://www.ancienthue.com.vn/facilities/le-soleil-de-hue",
+        "sourceType": "operator's own site (Ancient Hue Garden Houses)",
+        "checkedOn": "2026-11-23",
+        "operatingEvidence": "Glasshouse restaurant serving \"French culinary art with a bit touch of Vietnamese\", with reservation link and downloadable menu; site copyright 2023–2026."
+      },
+      "Vạn Xuân Bar (Ancient Hue)": {
+        "url": "https://www.ancienthue.com.vn/facilities/van-xuan-evening-bar",
+        "sourceType": "operator's own site (Ancient Hue Garden Houses)",
+        "checkedOn": "2026-11-23",
+        "operatingEvidence": "Bar page with reservation link and menu PDF; signature cocktails using Hue flavours; hotel and outside guests welcome; site copyright 2023–2026."
+      },
+      "Le Panorama Bar (Hotel Saigon Morin)": {
+        "url": "https://www.morinhotel.com.vn/dining",
+        "sourceType": "operator's own site (Hotel Saigon Morin)",
+        "checkedOn": "2026-11-23",
+        "operatingEvidence": "Dining page lists the 3rd-floor bar overlooking the Huong River and Truong Tien Bridge; listing dated 9 September 2020, no 2026 content found, so medium."
+      },
+      "Lobby Bar (Hotel Saigon Morin)": {
+        "url": "https://www.morinhotel.com.vn/dining",
+        "sourceType": "operator's own site (Hotel Saigon Morin)",
+        "checkedOn": "2026-11-23",
+        "operatingEvidence": "Ground-floor bar \"known for afternoon tea with homemade cakes\" plus drinks and snacks; listing dated 9 September 2020."
+      },
+      "Le Royal Restaurant (Hotel Saigon Morin)": {
+        "url": "https://www.morinhotel.com.vn/dining",
+        "sourceType": "operator's own site (Hotel Saigon Morin)",
+        "checkedOn": "2026-11-23",
+        "operatingEvidence": "Hue royal specialties with royal rites and music, \"for advanced reservation only\"; Royal Dinner menu PDF dated March 2024 requires at least 12 hours' notice."
+      },
+      "Jules Ferry Restaurant (Hotel Saigon Morin)": {
+        "url": "https://www.morinhotel.com.vn/dining",
+        "sourceType": "operator's own site (Hotel Saigon Morin)",
+        "checkedOn": "2026-11-23",
+        "operatingEvidence": "Listed as \"Banquet & Jules Ferry Restaurant\" serving European, Asian and Vietnamese/Hue dishes; listing dated 9 September 2020."
+      },
+      "Nam Phuong (Silk Path Grand Hue)": {
+        "url": "https://www.silkpathhotel.com/dininghue/",
+        "sourceType": "operator's own site (Silk Path Hotels & Resorts)",
+        "checkedOn": "2026-11-23",
+        "operatingEvidence": "Dining page lists the restaurant (Hue cuisine, buffet breakfast); the hotel's Hue journal carries 2026 posts, latest 01/10/2026."
+      },
+      "Olivio (Silk Path Grand Hue)": {
+        "url": "https://www.silkpathhotel.com/dininghue/",
+        "sourceType": "operator's own site (Silk Path Hotels & Resorts)",
+        "checkedOn": "2026-11-23",
+        "operatingEvidence": "\"Olivio serves up authentic European cuisine with a heavy Mediterranean slant\"; hotel journal has 2026 posts (latest 01/10/2026)."
+      },
+      "Lobby Lounge (Silk Path Grand Hue)": {
+        "url": "https://www.silkpathhotel.com/dininghue/",
+        "sourceType": "operator's own site (Silk Path Hotels & Resorts)",
+        "checkedOn": "2026-11-23",
+        "operatingEvidence": "Café and bar in the lobby listed on the dining page; hotel journal has 2026 posts (latest 01/10/2026)."
+      },
+      "The Courtyard (Silk Path Grand Hue)": {
+        "url": "https://www.silkpathhotel.com/dininghue/",
+        "sourceType": "operator's own site (Silk Path Hotels & Resorts)",
+        "checkedOn": "2026-11-23",
+        "operatingEvidence": "Garden-facing venue offering local snacks and traditional Vietnamese coffee; hotel journal has 2026 posts (latest 01/10/2026)."
+      },
+      "An Hien Garden House": {
+        "url": "https://www.silkpathhotel.com/an-hien-garden-house/",
+        "sourceType": "operator's own site (owner Silk Path Hotels & Resorts)",
+        "checkedOn": "2026-11-23",
+        "operatingEvidence": "Page says the house is \"owned by Silk Path Hotels & Resorts\" and restored, with visitor hours and an entrance ticket; page updated 19/01/2024, and a 28/05/2025 journal post covers it; the owner's site has 2026 posts."
+      },
+      "Phu Cam Cathedral": {
+        "url": "https://tonggiaophanhue.org/tgp-hue/hat-thanh-pho-hue/luoc-su-giao-xu-chinh-toa-phu-cam/",
+        "sourceType": "official site of the operator (Archdiocese of Hue)",
+        "checkedOn": "2026-11-23",
+        "operatingEvidence": "Parish history dated 06/01/2020; the archdiocese site is current (posts dated 18.11.2026 and a 16–19/11/2026 conference) and runs a Sunday Mass-times finder, but no Phu Cam-specific 2026 notice or Mass times were readable."
+      }
+    }
+  },
   "Casablanca, Morocco": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-11-23",

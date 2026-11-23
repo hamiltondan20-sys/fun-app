@@ -1,0 +1,844 @@
+{
+  "city": "Hue, Vietnam",
+  "checkedOn": "2026-11-23",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Le Parfum (Azerai La Residence)",
+      "kind": "meal",
+      "url": "https://azerai.com/azerai-la-residence-hue/dining/",
+      "sourceType": "operator's own site (Azerai)",
+      "address": "05 Le Loi Street, Hue City, Vietnam",
+      "operatingEvidence": "Dining page last modified 26 October 2026 (structured data): \"The resort's brasserie serves Vietnamese and Western dishes for breakfast, lunch and dinner\", with al fresco dining on the terrace; resort page lists current festive and 2027 Tet packages.",
+      "hours": "Breakfast, lunch and dinner; no clock times published",
+      "confidence": "high"
+    },
+    {
+      "name": "Le Gouverneur Bar (Azerai La Residence)",
+      "kind": "bar",
+      "url": "https://azerai.com/azerai-la-residence-hue/dining/",
+      "sourceType": "operator's own site (Azerai)",
+      "address": "05 Le Loi Street, Hue City, Vietnam",
+      "operatingEvidence": "Same dining page (last modified 26 October 2026): bar \"just off the lobby lounge in the mansion\" serving cocktails, wines, liqueurs and beer including local brews.",
+      "hours": "8 a.m. to midnight",
+      "confidence": "high"
+    },
+    {
+      "name": "Madam Thu (45 Vo Thi Sau)",
+      "kind": "meal",
+      "url": "https://madamthu.com/",
+      "sourceType": "operator's own site",
+      "address": "Madam Thu 1: 45 Vo Thi Sau St, Phu Hoi Ward, Hue City (second branch, Madam Thu 2: 04 Vo Thi Sau St)",
+      "operatingEvidence": "Site says it has been \"welcoming visitors to Hue since 2017\" and states \"Open Daily: 09:00 AM – 10:30 PM\"; footer \"Copyright © MADAM THU RESTAURANT 2026\". Only 2026 date is the footer, so medium.",
+      "hours": "Open Daily: 09:00 AM – 10:30 PM",
+      "confidence": "medium"
+    },
+    {
+      "name": "Kim Long Fine Dining (Ancient Hue)",
+      "kind": "meal",
+      "url": "https://www.ancienthue.com.vn/facilities/kim-long-fine-dining",
+      "sourceType": "operator's own site (Ancient Hue Garden Houses)",
+      "address": "Ancient Hue Garden Houses, 104/47 Kim Long, Thành phố Huế (from https://ancienthue.com.vn/contact)",
+      "operatingEvidence": "Restaurant page says it has served guests since 2005, offers a Royal Costume Dining Experience and online reservations; downloadable menu file dated 2-3-2026.",
+      "hours": "not published",
+      "confidence": "high"
+    },
+    {
+      "name": "Phú Mộng Private & Royal Dining (Ancient Hue)",
+      "kind": "meal",
+      "url": "https://www.ancienthue.com.vn/facilities/phu-mong-private-and-royal-dining",
+      "sourceType": "operator's own site (Ancient Hue Garden Houses)",
+      "address": "Ancient Hue Garden Houses, 104/47 Kim Long, Thành phố Huế (from https://ancienthue.com.vn/contact)",
+      "operatingEvidence": "Live reservation page for the Royal Package; \"a 50% deposit is required upon booking\", exclusive use at extra fee; site copyright 2023–2026.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "La Lune de Huế (Ancient Hue)",
+      "kind": "meal",
+      "url": "https://www.ancienthue.com.vn/facilities/la-lune",
+      "sourceType": "operator's own site (Ancient Hue Garden Houses)",
+      "address": "Ancient Hue Garden Houses, 104/47 Kim Long, Thành phố Huế (from https://ancienthue.com.vn/contact)",
+      "operatingEvidence": "Private glass-domed dining room for two, bookable by email or reservation link; menu PDF filename dated 26-10-2026.",
+      "hours": "not published",
+      "confidence": "high"
+    },
+    {
+      "name": "Le Soleil de Huế (Ancient Hue)",
+      "kind": "meal",
+      "url": "https://www.ancienthue.com.vn/facilities/le-soleil-de-hue",
+      "sourceType": "operator's own site (Ancient Hue Garden Houses)",
+      "address": "Ancient Hue Garden Houses, 104/47 Kim Long, Thành phố Huế (from https://ancienthue.com.vn/contact)",
+      "operatingEvidence": "Glasshouse restaurant serving \"French culinary art with a bit touch of Vietnamese\", with reservation link and downloadable menu; site copyright 2023–2026.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Vạn Xuân Bar (Ancient Hue)",
+      "kind": "bar",
+      "url": "https://www.ancienthue.com.vn/facilities/van-xuan-evening-bar",
+      "sourceType": "operator's own site (Ancient Hue Garden Houses)",
+      "address": "Ancient Hue Garden Houses, 104/47 Kim Long, Thành phố Huế (from https://ancienthue.com.vn/contact)",
+      "operatingEvidence": "Bar page with reservation link and menu PDF; signature cocktails using Hue flavours; hotel and outside guests welcome; site copyright 2023–2026.",
+      "hours": "Daily from 5:00 PM, last orders 9:30 PM",
+      "confidence": "medium"
+    },
+    {
+      "name": "Le Panorama Bar (Hotel Saigon Morin)",
+      "kind": "bar",
+      "url": "https://www.morinhotel.com.vn/dining",
+      "sourceType": "operator's own site (Hotel Saigon Morin)",
+      "address": "30 Le Loi St., Hue City, Viet Nam (from https://www.morinhotel.com.vn/)",
+      "operatingEvidence": "Dining page lists the 3rd-floor bar overlooking the Huong River and Truong Tien Bridge; listing dated 9 September 2020, no 2026 content found, so medium.",
+      "hours": "18:00–23:00 (page dated 9 September 2020)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Lobby Bar (Hotel Saigon Morin)",
+      "kind": "cafe",
+      "url": "https://www.morinhotel.com.vn/dining",
+      "sourceType": "operator's own site (Hotel Saigon Morin)",
+      "address": "30 Le Loi St., Hue City, Viet Nam (from https://www.morinhotel.com.vn/)",
+      "operatingEvidence": "Ground-floor bar \"known for afternoon tea with homemade cakes\" plus drinks and snacks; listing dated 9 September 2020.",
+      "hours": "10:00–23:00 (page dated 9 September 2020)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Le Royal Restaurant (Hotel Saigon Morin)",
+      "kind": "meal",
+      "url": "https://www.morinhotel.com.vn/dining",
+      "sourceType": "operator's own site (Hotel Saigon Morin)",
+      "address": "30 Le Loi St., Hue City, Viet Nam (from https://www.morinhotel.com.vn/)",
+      "operatingEvidence": "Hue royal specialties with royal rites and music, \"for advanced reservation only\"; Royal Dinner menu PDF dated March 2024 requires at least 12 hours' notice.",
+      "hours": "not published (reservation only)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Jules Ferry Restaurant (Hotel Saigon Morin)",
+      "kind": "meal",
+      "url": "https://www.morinhotel.com.vn/dining",
+      "sourceType": "operator's own site (Hotel Saigon Morin)",
+      "address": "30 Le Loi St., Hue City, Viet Nam (from https://www.morinhotel.com.vn/)",
+      "operatingEvidence": "Listed as \"Banquet & Jules Ferry Restaurant\" serving European, Asian and Vietnamese/Hue dishes; listing dated 9 September 2020.",
+      "hours": "06:00–23:00 (page dated 9 September 2020)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Nam Phuong (Silk Path Grand Hue)",
+      "kind": "meal",
+      "url": "https://www.silkpathhotel.com/dininghue/",
+      "sourceType": "operator's own site (Silk Path Hotels & Resorts)",
+      "address": "02 Le Loi Street, Hue, Vietnam (from https://www.silkpathhotel.com/en/hue)",
+      "operatingEvidence": "Dining page lists the restaurant (Hue cuisine, buffet breakfast); the hotel's Hue journal carries 2026 posts, latest 01/10/2026.",
+      "hours": "06:00–22:00; breakfast 06:00–10:00 (undated dining page)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Olivio (Silk Path Grand Hue)",
+      "kind": "meal",
+      "url": "https://www.silkpathhotel.com/dininghue/",
+      "sourceType": "operator's own site (Silk Path Hotels & Resorts)",
+      "address": "02 Le Loi Street, Hue, Vietnam (from https://www.silkpathhotel.com/en/hue)",
+      "operatingEvidence": "\"Olivio serves up authentic European cuisine with a heavy Mediterranean slant\"; hotel journal has 2026 posts (latest 01/10/2026).",
+      "hours": "Lunch 11:00 AM–6:00 PM; dinner 6:00–10:00 PM (undated dining page)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Lobby Lounge (Silk Path Grand Hue)",
+      "kind": "cafe",
+      "url": "https://www.silkpathhotel.com/dininghue/",
+      "sourceType": "operator's own site (Silk Path Hotels & Resorts)",
+      "address": "02 Le Loi Street, Hue, Vietnam (from https://www.silkpathhotel.com/en/hue)",
+      "operatingEvidence": "Café and bar in the lobby listed on the dining page; hotel journal has 2026 posts (latest 01/10/2026).",
+      "hours": "7:00 AM–11:00 PM (undated dining page)",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Courtyard (Silk Path Grand Hue)",
+      "kind": "cafe",
+      "url": "https://www.silkpathhotel.com/dininghue/",
+      "sourceType": "operator's own site (Silk Path Hotels & Resorts)",
+      "address": "02 Le Loi Street, Hue, Vietnam (from https://www.silkpathhotel.com/en/hue)",
+      "operatingEvidence": "Garden-facing venue offering local snacks and traditional Vietnamese coffee; hotel journal has 2026 posts (latest 01/10/2026).",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "An Hien Garden House",
+      "kind": "landmark",
+      "url": "https://www.silkpathhotel.com/an-hien-garden-house/",
+      "sourceType": "operator's own site (owner Silk Path Hotels & Resorts)",
+      "address": "58 Nguyen Phuc Nguyen street, Huong Long ward, Hue city",
+      "operatingEvidence": "Page says the house is \"owned by Silk Path Hotels & Resorts\" and restored, with visitor hours and an entrance ticket; page updated 19/01/2024, and a 28/05/2025 journal post covers it; the owner's site has 2026 posts.",
+      "hours": "8:00am – 5:00pm; ticket 50,000 VND/person (page updated 19 January 2024)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Phu Cam Cathedral",
+      "kind": "landmark",
+      "url": "https://tonggiaophanhue.org/tgp-hue/hat-thanh-pho-hue/luoc-su-giao-xu-chinh-toa-phu-cam/",
+      "sourceType": "official site of the operator (Archdiocese of Hue)",
+      "address": "\"Nhà thờ chính tòa Phủ Cam tọa lạc ở số 1 đường Đoàn Hữu Trưng\" (1 Doan Huu Trung Street), Phuoc Vinh ward",
+      "operatingEvidence": "Parish history dated 06/01/2020; the archdiocese site is current (posts dated 18.11.2026 and a 16–19/11/2026 conference) and runs a Sunday Mass-times finder, but no Phu Cam-specific 2026 notice or Mass times were readable.",
+      "hours": "not published",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Royal tomb route",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Perfume River sunset",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Garden house visit",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "a Hue-style tasting lunch",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Hue market or cafe",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local dinner in Citadel",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Perfume River",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in South Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Citadel",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Citadel walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Perfume River",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around South Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through South Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Imperial City",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Citadel",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Royal tomb route",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Perfume River",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Thien Mu Pagoda",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Citadel evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Perfume River",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near South Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Citadel",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Imperial City",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Perfume River",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near South Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Citadel",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Imperial City",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Citadel cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Perfume River sunset",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in South Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of South Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Citadel",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Citadel",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Perfume River bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Imperial City",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through South Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Citadel",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Thien Mu Pagoda",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around South Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Citadel",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Perfume River",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in South Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Citadel",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Citadel",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Perfume River",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Royal Tombs",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Citadel",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Perfume River morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Imperial City",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near South Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Citadel",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Perfume River",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near South Bank",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Imperial City",
+      "reason": "Official Hue Monuments Conservation Centre site refused connection (ECONNREFUSED); its e-ticket portal returned only a page title, nothing readable",
+      "url": "https://hueworldheritage.org.vn/"
+    },
+    {
+      "name": "Royal Tombs",
+      "reason": "Same operator site refused connection (ECONNREFUSED); e-ticket portal returned only a page title",
+      "url": "https://eticket.hueworldheritage.org.vn/"
+    },
+    {
+      "name": "Thien Mu Pagoda",
+      "reason": "No official operator website found",
+      "url": ""
+    },
+    {
+      "name": "Hue Museum of Royal Antiquities",
+      "reason": "Official domain did not resolve (DNS EAI_AGAIN); operator site hueworldheritage.org.vn refused connection",
+      "url": "https://www.baotangcungdinh.vn/"
+    },
+    {
+      "name": "Ho Chi Minh Museum (Hue)",
+      "reason": "Official public site returned nothing readable on three attempts (fetch failed with no output)",
+      "url": "https://bthcm.hue.gov.vn/"
+    },
+    {
+      "name": "Hue Museum of Fine Arts",
+      "reason": "No official website found; guessed public subdomain did not resolve",
+      "url": ""
+    },
+    {
+      "name": "Dong Ba Market",
+      "reason": "Site named as official by a guide reset the connection (ECONNRESET); no other official page found",
+      "url": "https://chodongba.com.vn/"
+    },
+    {
+      "name": "Bach Ma National Park",
+      "reason": "Certificate error (hostname does not match certificate); not bypassed",
+      "url": "https://www.bachmapark.com.vn/"
+    },
+    {
+      "name": "Zenith Sky Bar (Melia Vinpearl Hue)",
+      "reason": "Official page returned 403 Forbidden",
+      "url": "https://melia.com/en/hotels/vietnam/hue-city/melia-vinpearl-hue/restaurants"
+    },
+    {
+      "name": "Huong Giang Hotel Resort & Spa",
+      "reason": "Official site returned 403 Forbidden",
+      "url": "https://huonggianghotel.com.vn/"
+    },
+    {
+      "name": "Highlands Coffee (38 Le Loi)",
+      "reason": "Official store list returned 403 Forbidden",
+      "url": "https://www.highlandscoffee.com.vn/vn/he-thong-cua-hang.html"
+    },
+    {
+      "name": "Starbucks (Hue)",
+      "reason": "Official store locator returned 403 Forbidden",
+      "url": "https://www.starbucks.vn/store-locator"
+    },
+    {
+      "name": "Phuc Long (Hue)",
+      "reason": "Official site returned only a page title; no store list readable",
+      "url": "https://phuclong.com.vn/"
+    },
+    {
+      "name": "Cộng Cà Phê (Bến Nghé, Hue)",
+      "reason": "Official store list names a Hue store but publishes no address or hours",
+      "url": "https://congcaphe.com/stores"
+    },
+    {
+      "name": "Trung Nguyên Legend Café (Hue)",
+      "reason": "Official pages list no Hue location or address",
+      "url": "https://trungnguyenlegend.com/khong-gian-trung-nguyen-legend-cafe/"
+    },
+    {
+      "name": "Les Jardins de la Carambole",
+      "reason": "Official domain is a parked page (\"This domain may be for sale\")",
+      "url": "https://www.lesjardinsdelacarambole.com/"
+    },
+    {
+      "name": "Pilgrimage Village (Junrei restaurant)",
+      "reason": "Official pages publish no street address; no 2026 content (homepage also carried unrelated casino promotion text)",
+      "url": "https://www.pilgrimagevillage.com/dining"
+    },
+    {
+      "name": "La Brasserie (Indochine Palace)",
+      "reason": "Address published (105A Hung Vuong) but no hours and no 2026 or other current operating notice found",
+      "url": "https://www.indochinepalace.com/"
+    },
+    {
+      "name": "DMZ Bar",
+      "reason": "Official site shows only a bar inside DMZ Hostel (01 Pham Ngu Lao) with no name, hours or current notice",
+      "url": "https://dmzhotel.com.vn/"
+    },
+    {
+      "name": "La Boulangerie Française (Hue)",
+      "reason": "Operator's NGO page (IECD) mentions a tearoom in central Hue but gives no name or address; other candidate domain did not resolve",
+      "url": "https://www.iecd.org/en/projets/french-bread-pastry-making-schools-vietnam/"
+    },
+    {
+      "name": "Bảo Thạnh bakery",
+      "reason": "No official website found (social media only, not accepted)",
+      "url": ""
+    },
+    {
+      "name": "Nook Cafe & Bar",
+      "reason": "No official website found",
+      "url": ""
+    },
+    {
+      "name": "Cà Phê Muối (salt coffee, Hue)",
+      "reason": "No official website found",
+      "url": ""
+    },
+    {
+      "name": "Y Thao Garden",
+      "reason": "Domain did not resolve (ENOTFOUND)",
+      "url": "https://ythaogarden.com/"
+    },
+    {
+      "name": "Sirius rooftop (Moonlight Hotel Hue)",
+      "reason": "Domain did not resolve (ENOTFOUND)",
+      "url": "https://www.moonlighthotelhue.com/"
+    },
+    {
+      "name": "Mường Thanh Holiday Huế",
+      "reason": "Official site names the hotel but gives no address or outlet details",
+      "url": "https://www.muongthanh.com/"
+    },
+    {
+      "name": "Vincom Plaza Hue",
+      "reason": "Official site's page did not list a Hue centre",
+      "url": "https://vincom.com.vn/"
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "An Hien Garden House",
+        "Phu Cam Cathedral"
+      ],
+      "bestFirstTimers": [
+        "An Hien Garden House",
+        "Madam Thu (45 Vo Thi Sau)",
+        "Le Parfum (Azerai La Residence)",
+        "Le Panorama Bar (Hotel Saigon Morin)"
+      ],
+      "bestRestaurants": [
+        "Kim Long Fine Dining (Ancient Hue)",
+        "Madam Thu (45 Vo Thi Sau)",
+        "Le Parfum (Azerai La Residence)",
+        "Nam Phuong (Silk Path Grand Hue)"
+      ],
+      "bestBudget": [
+        "An Hien Garden House"
+      ],
+      "bestLuxury": [
+        "Phú Mộng Private & Royal Dining (Ancient Hue)",
+        "Le Soleil de Huế (Ancient Hue)",
+        "Le Royal Restaurant (Hotel Saigon Morin)",
+        "Le Parfum (Azerai La Residence)"
+      ],
+      "bestCouples": [
+        "La Lune de Huế (Ancient Hue)",
+        "Le Soleil de Huế (Ancient Hue)",
+        "Le Gouverneur Bar (Azerai La Residence)",
+        "Le Panorama Bar (Hotel Saigon Morin)"
+      ],
+      "bestKids": [
+        "An Hien Garden House",
+        "Kim Long Fine Dining (Ancient Hue)"
+      ],
+      "bestSolo": [
+        "An Hien Garden House",
+        "Phu Cam Cathedral",
+        "The Courtyard (Silk Path Grand Hue)",
+        "Lobby Lounge (Silk Path Grand Hue)"
+      ],
+      "bestUnique": [
+        "Phú Mộng Private & Royal Dining (Ancient Hue)",
+        "Kim Long Fine Dining (Ancient Hue)",
+        "La Lune de Huế (Ancient Hue)",
+        "An Hien Garden House"
+      ],
+      "bestBreakfast": [
+        "Nam Phuong (Silk Path Grand Hue)",
+        "Le Parfum (Azerai La Residence)",
+        "Jules Ferry Restaurant (Hotel Saigon Morin)"
+      ],
+      "bestLunch": [
+        "Olivio (Silk Path Grand Hue)",
+        "Madam Thu (45 Vo Thi Sau)",
+        "Le Parfum (Azerai La Residence)",
+        "Kim Long Fine Dining (Ancient Hue)"
+      ],
+      "bestDinner": [
+        "Le Soleil de Huế (Ancient Hue)",
+        "Kim Long Fine Dining (Ancient Hue)",
+        "Olivio (Silk Path Grand Hue)",
+        "Madam Thu (45 Vo Thi Sau)"
+      ],
+      "bestCocktails": [
+        "Le Gouverneur Bar (Azerai La Residence)",
+        "Vạn Xuân Bar (Ancient Hue)",
+        "Le Panorama Bar (Hotel Saigon Morin)",
+        "Lobby Bar (Hotel Saigon Morin)"
+      ],
+      "bestBakeries": [
+        "Lobby Bar (Hotel Saigon Morin)"
+      ],
+      "bestCoffee": [
+        "The Courtyard (Silk Path Grand Hue)",
+        "Lobby Lounge (Silk Path Grand Hue)",
+        "Lobby Bar (Hotel Saigon Morin)"
+      ]
+    },
+    "queries": {
+      "Le Parfum (Azerai La Residence)": "Le Parfum Azerai La Residence 5 Le Loi Hue",
+      "Le Gouverneur Bar (Azerai La Residence)": "Le Gouverneur Bar Azerai La Residence 5 Le Loi Hue",
+      "Madam Thu (45 Vo Thi Sau)": "Madam Thu 45 Vo Thi Sau Hue",
+      "Kim Long Fine Dining (Ancient Hue)": "Kim Long Fine Dining Ancient Hue 104/47 Kim Long Hue",
+      "Phú Mộng Private & Royal Dining (Ancient Hue)": "Phu Mong Royal Dining Ancient Hue 104/47 Kim Long Hue",
+      "La Lune de Huế (Ancient Hue)": "La Lune de Hue Ancient Hue 104/47 Kim Long Hue",
+      "Le Soleil de Huế (Ancient Hue)": "Le Soleil de Hue Ancient Hue 104/47 Kim Long Hue",
+      "Vạn Xuân Bar (Ancient Hue)": "Van Xuan Bar Ancient Hue 104/47 Kim Long Hue",
+      "Le Panorama Bar (Hotel Saigon Morin)": "Le Panorama Bar Hotel Saigon Morin 30 Le Loi Hue",
+      "Lobby Bar (Hotel Saigon Morin)": "Lobby Bar Hotel Saigon Morin 30 Le Loi Hue",
+      "Le Royal Restaurant (Hotel Saigon Morin)": "Le Royal Restaurant Hotel Saigon Morin 30 Le Loi Hue",
+      "Jules Ferry Restaurant (Hotel Saigon Morin)": "Jules Ferry Restaurant Hotel Saigon Morin 30 Le Loi Hue",
+      "Nam Phuong (Silk Path Grand Hue)": "Nam Phuong Restaurant Silk Path Grand Hue 2 Le Loi Hue",
+      "Olivio (Silk Path Grand Hue)": "Olivio Restaurant Silk Path Grand Hue 2 Le Loi Hue",
+      "Lobby Lounge (Silk Path Grand Hue)": "Lobby Lounge Silk Path Grand Hue 2 Le Loi Hue",
+      "The Courtyard (Silk Path Grand Hue)": "The Courtyard Silk Path Grand Hue 2 Le Loi Hue",
+      "An Hien Garden House": "An Hien Garden House 58 Nguyen Phuc Nguyen Hue",
+      "Phu Cam Cathedral": "Phu Cam Cathedral 1 Doan Huu Trung Hue"
+    },
+    "summary": "Garden houses, a cathedral, royal-style dinners, riverside hotel bars and breakfast rooms in Hue, each checked against its operator's own website.",
+    "highlights": [
+      "An Hien Garden House",
+      "Phu Cam Cathedral",
+      "Kim Long Fine Dining (Ancient Hue)",
+      "Le Panorama Bar (Hotel Saigon Morin)"
+    ],
+    "tip": "None of the places checked lists a weekly closing day, but Phú Mộng takes a 50% deposit when you book and Hotel Saigon Morin's Royal Dinner needs at least 12 hours' notice, so arrange those ahead.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "None listed",
+        "copy": "None of the places checked lists a weekly closing day: Madam Thu says it is open daily from 09:00 AM to 10:30 PM, and Vạn Xuân Bar at Ancient Hue opens daily from 5:00 PM."
+      },
+      {
+        "label": "Tickets",
+        "value": "50,000 VND",
+        "copy": "An Hien Garden House listed a 50,000 VND entrance ticket and 8:00am–5:00pm opening on its owner Silk Path's page, last updated in January 2024."
+      },
+      {
+        "label": "Booking",
+        "value": "Deposit or notice",
+        "copy": "Phú Mộng at Ancient Hue requires a 50% deposit on booking for its Royal Package. Le Royal Restaurant at Hotel Saigon Morin is by advance reservation only, and the hotel's Royal Dinner needs at least 12 hours' notice."
+      },
+      {
+        "label": "Walk-ins and diets",
+        "value": "Ask ahead",
+        "copy": "Vạn Xuân Bar welcomes guests who are not staying at Ancient Hue and takes last orders at 9:30 PM. Ancient Hue's restaurants adjust dishes for allergies or no pork if you tell them in advance."
+      }
+    ],
+    "dek": "Book Hue's royal-style dinners ahead, and fit An Hien Garden House into its listed 8:00am–5:00pm opening.",
+    "intro": [
+      "This Hue guide is built from places whose own websites could be read, which means garden-house restaurants, riverside hotel dining rooms and one restored garden house. You can visit An Hien Garden House at 58 Nguyen Phuc Nguyen Street in Huong Long ward; its owner, Silk Path, listed opening from 8:00am to 5:00pm and a 50,000 VND ticket on a page last updated in January 2024. The Imperial City and royal tombs are not covered, because the conservation centre's website could not be read, so check their hours and prices with the site before you go.",
+      "In Kim Long, Ancient Hue gathers several dining rooms in one garden complex at 104/47 Kim Long. Kim Long Fine Dining has served guests since 2005 and offers an optional Royal Costume Dining Experience, while Phú Mộng stages a royal-style dinner that needs a 50% deposit when you book. For two, La Lune de Huế is a private glass-domed room, and Le Soleil de Huế serves French cooking with a Vietnamese touch. Vạn Xuân Bar opens daily from 5:00 PM, takes last orders at 9:30 PM and welcomes guests who are not staying.",
+      "Le Loi Street holds three hotels that make an easy evening circuit. At Azerai La Residence (5 Le Loi), Le Parfum serves Vietnamese and Western dishes for breakfast, lunch and dinner, and Le Gouverneur Bar is open from 8 a.m. to midnight. Silk Path Grand Hue (2 Le Loi) lists Nam Phuong for Hue cooking, with breakfast from 6:00 AM, and Olivio for European dishes at lunch and dinner. Hotel Saigon Morin (30 Le Loi) listed Le Panorama Bar, which overlooks the river and Truong Tien Bridge, as open 18:00–23:00 on a page dated 2020.",
+      "For a simpler meal, Madam Thu has two branches on Vo Thi Sau Street, at numbers 45 and 04, and says it is open daily from 09:00 AM to 10:30 PM. If you want Hue royal dishes in a hotel setting, Le Royal Restaurant at Hotel Saigon Morin takes guests by advance reservation only, and the hotel's Royal Dinner needs at least 12 hours' notice. Phu Cam Cathedral stands at 1 Doan Huu Trung Street, according to the Archdiocese of Hue's parish history."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Start at An Hien Garden House, listed at 8:00am–5:00pm with a 50,000 VND ticket on a January 2024 page, then eat at Madam Thu on Vo Thi Sau Street, which says it is open daily."
+      ],
+      [
+        "A slower morning",
+        "Silk Path Grand Hue's dining page lists breakfast at Nam Phuong from 6:00 to 10:00 AM, and the hotel's garden-facing Courtyard serves traditional Vietnamese coffee."
+      ],
+      [
+        "Before booking",
+        "None of the places checked lists a weekly closing day, but Phú Mộng takes a 50% deposit and Hotel Saigon Morin's Royal Dinner needs at least 12 hours' notice."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and ticket details do not guarantee availability. The Hue Monuments Conservation Centre site (Imperial City, royal tombs, Royal Antiquities Museum) refused connection and its e-ticket portal showed no readable content, so the city's main heritage sights are absent; the Ho Chi Minh Museum site returned nothing readable, Bach Ma National Park had a certificate error, and Meliá Vinpearl Hue, Huong Giang Hotel, Highlands Coffee and Starbucks returned 403. Many Hue cafés and bakeries publish only on social media, which this review does not accept, so coffee and bakery coverage is limited to hotel lounges. Hotel Saigon Morin's hours come from listings dated September 2020, An Hien Garden House's hours and ticket price from a page updated January 2024, and Silk Path's dining hours from an undated page; Madam Thu, Phú Mộng, Le Soleil and Vạn Xuân show only a 2026 copyright as current evidence. Ancient Hue's restaurants and Phu Cam Cathedral publish no opening hours. The confirmed total (18) is below the 25–35 target because few Hue venues have readable official websites.",
+  "injectionLikeText": []
+}
