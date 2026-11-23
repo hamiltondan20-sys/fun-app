@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 110.
-- Classifier-passed (published, not fully documented in that format): 82.
+- Source-verified (complete dated evidence format): 111.
+- Classifier-passed (published, not fully documented in that format): 81.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -118,7 +118,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Capri and Neapolitan Islands, Italy | capri | held-back | not-reviewed | 0 | 3 | 15 | 3 | has 3 named places across 3 categories; needs at least 5 named places across 3 categories |
 | Cardiff, United Kingdom | cardiff | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Cartagena, Colombia | cartagena | source-verified | source-checked | 20 | 36 | 14 | 13 | None |
-| Casablanca, Morocco | casablanca | classifier-passed | not-reviewed | 0 | 8 | 15 | 6 | None |
+| Casablanca, Morocco | casablanca | source-verified | source-checked | 23 | 41 | 15 | 15 | None |
 | Cascais, Portugal | cascais | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Cebu, Philippines | cebu | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Cesky Krumlov, Czechia | cesky-krumlov | held-back | ready-for-content-draft | 0 | 2 | 15 | 2 | has 2 named places across 2 categories; needs at least 5 named places across 3 categories |

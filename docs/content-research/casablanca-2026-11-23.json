@@ -1,0 +1,564 @@
+{
+  "city": "Casablanca, Morocco",
+  "checkedOn": "2026-11-23",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Hassan II Mosque",
+      "kind": "landmark",
+      "url": "https://fmh2.ma/en",
+      "sourceType": "official operator (Fondation de la Mosquée Hassan II)",
+      "address": "Boulevard Moulay Youssef, Casablanca 20000, Maroc",
+      "operatingEvidence": "News item dated 19.02.2026: 'Hassan II Mosque- Hours of visits during the Holy Month of Ramadan 2026'. Visit timetable and ticket prices published (foreign adults 140 dhs, Moroccans/residents/foreign students 70 dhs, children over 6 and Moroccan students 30 dhs, under 6 free). Dress code: 'Wear clothes that cover your shoulders, chest and that are as long enough to cover until your knees'; 'Shorts and short shirts are forbidden'; shoes removed, bags can be left at the entrance.",
+      "hours": "Visit times: Saturday to Thursday 08h00, 09h00, 10h00, 11h00 and 14h00; Friday 08h00, 09h00, 10h00 and 14h00. (The separate paid-visits page, headed with a seasonal timetable, could not be read: redirect loop.)",
+      "confidence": "high"
+    },
+    {
+      "name": "Hassan II Mosque Museum",
+      "kind": "museum",
+      "url": "https://fmh2.ma/en",
+      "sourceType": "official operator (Fondation de la Mosquée Hassan II)",
+      "address": "Boulevard Moulay Youssef, Casablanca 20000, Maroc (mosque site)",
+      "operatingEvidence": "Museum visit hours and prices published on the foundation's current site (with 2026 news): foreign adults 30 Dhs, Moroccans and other residents 15 Dhs, children and students 5 Dhs.",
+      "hours": "Morning '9h00 to 12h00', afternoon '12h00 to 16h00'",
+      "confidence": "medium"
+    },
+    {
+      "name": "Villa Carl Ficke – Musée de la mémoire de Casablanca",
+      "kind": "museum",
+      "url": "https://fnm.ma/museums/46",
+      "sourceType": "official public operator (Fondation nationale des musées)",
+      "address": "119, Boulevard de la Résistance — Casablanca",
+      "operatingEvidence": "FNM exhibitions page lists 'Mustapha Boujemaoui : la poétique des formes' (10/06/2026 to 30/11/2026) as 'En cours'; museum page gives prices (Moroccan adults 25 DH, foreigners 50 DH) and notes sculptures by Ikram Kabbaj outside.",
+      "hours": "'Ouvert du lundi au dimanche, de 10h à 18h.' 'Fermé le mardi.'",
+      "confidence": "high"
+    },
+    {
+      "name": "Musée de la Photographie et des Arts Visuels de Casablanca",
+      "kind": "museum",
+      "url": "https://fnm.ma/museums/54",
+      "sourceType": "official public operator (Fondation nationale des musées)",
+      "address": "Rue Larache, Ancienne médina, Casablanca",
+      "operatingEvidence": "FNM exhibitions page lists the museum's inauguration on 23/06/2026; museum page lists the inaugural exhibition 'CASA' (no dates) and prices (Moroccan adults 25 DH, foreigners 50 DH). FNM home page describes the building as designed by Tadao Ando.",
+      "hours": "'Ouvert du lundi au dimanche, de 10h à 18h. Fermé le mardi.'",
+      "confidence": "high"
+    },
+    {
+      "name": "Morocco Mall",
+      "kind": "market",
+      "url": "https://www.moroccomall.ma/",
+      "sourceType": "operator's own site",
+      "address": "Angle Boulevard de la Corniche Boulevard de L'Océan Ain Diab, Casablanca, Maroc",
+      "operatingEvidence": "Current hours published; footer 'Copyright © 2026 Morocco Mall'. Lists leisure attractions 'Fontaine musicale, Aquadream, Adventureland, Patinoire, Univers 6D' (no prices or hours for these).",
+      "hours": "'Du dimanche au jeudi : 10h00 - 21h00' (22h00 for restaurants); 'Du vendredi et Samedi. : 10h00 - 22h00' (23h00 for restaurants)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Rick's Café",
+      "kind": "meal",
+      "url": "https://www.rickscafe.ma/",
+      "sourceType": "operator's own site",
+      "address": "248, Boulevard Sour Jdid, Casablanca 20110, Morocco",
+      "operatingEvidence": "New Year's Eve page: '31 December 2026 (Welcoming 2027)', 'From 8:00 PM', '1,500 MAD per person'; tickets 'final, non-cancellable and non-refundable'. Reservation page: 'Reserved tables are held for 15 minutes past the scheduled arrival time'; 24 hours' notice to cancel; parties of 6+ may need a card deposit; 'Smart Casual attire is required.'",
+      "hours": "'Lunch Service: 12:00 PM – 3:00 PM'; 'Dinner Service: 6:30 PM – 12:30 AM'; reservation page says open seven days a week",
+      "confidence": "high"
+    },
+    {
+      "name": "Le Cabestan",
+      "kind": "meal",
+      "url": "https://www.le-cabestan.com/",
+      "sourceType": "operator's own site",
+      "address": "90, Boulevard de la Corniche, Phare El Hank, Casablanca – Maroc",
+      "operatingEvidence": "Site links a current menu file 'Menu-Cabestan-2026-pdf.pdf'; footer '©CABESTAN OCEAN VIEW 2026'; WhatsApp booking button.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bondi Coffee Kitchen",
+      "kind": "cafe",
+      "url": "https://bondicoffeekitchen.com/",
+      "sourceType": "operator's own site",
+      "address": "31 Rue Sebou / Gauthier 20600 Casablanca / Morocco",
+      "operatingEvidence": "Published hours and 'Today - Breakfast! All Day. Every Day.'; 'Ramadan hours may differ check our Instagram.' Embedded post about a 27-29 May break and reopening 'Saturday 30th' (no year stated; footer © 2025).",
+      "hours": "'7 days: 9am - 9pm'",
+      "confidence": "medium"
+    },
+    {
+      "name": "Le Pain Quotidien (Yasmine Plaza)",
+      "kind": "bakery",
+      "url": "https://www.lepainquotidien.com/ma/en/stores",
+      "sourceType": "operator's own site (Le Pain Quotidien Morocco)",
+      "address": "Anfa Clubs, Tours végétales, Tour Jasmin - 1, 20000 Casablanca",
+      "operatingEvidence": "Store page lists daily hours, 'Outdoor Seating', 'Kids Menu', 'freshly baked sourdough bread', and calls it 'the first one ever in Morocco'; footer '©2026 Le Pain Quotidien'.",
+      "hours": "Monday to Sunday '07:30 AM until 09:00 PM'",
+      "confidence": "medium"
+    },
+    {
+      "name": "Acajou (Barceló Anfa Casablanca)",
+      "kind": "meal",
+      "url": "https://www.barcelo.com/en-gb/barcelo-hotels/hotels/morocco/casablanca/barcelo-anfa-casablanca/",
+      "sourceType": "operator's own site (Barceló Hotel Group)",
+      "address": "44 Blvd d Anfa 20000 Casablanca Morocco",
+      "operatingEvidence": "Hotel page with live booking, a Black Friday offer with booking deadline 29-11-2026 and guest reviews dated August 2026; ACAJOU 'offers both buffet and à la carte dining' with 'Art Deco décor'.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "La Brasserie (Royal Mansour Casablanca)",
+      "kind": "meal",
+      "url": "https://www.royalmansour.com/en/casablanca/dining/la-brasserie/",
+      "sourceType": "operator's own site",
+      "address": "27 Avenue des Forces Armées Royales, 20 250, Casablanca, Morocco",
+      "operatingEvidence": "'Book a table' booking; current menus incl. breakfast, lunch menu and daily Goûter 3 PM to 6 PM; site carries a post dated 'December 5, 2026' for the hotel's Moroccan restaurant.",
+      "hours": "Breakfast Mon–Sun 07.00 to 10.30 AM (header says 8am); main menu Mon–Sun 12.00 PM to 11.00 PM; header also lists 'FRI & sat 12pm to 5am'",
+      "confidence": "high"
+    },
+    {
+      "name": "La Grande Table Marocaine (Royal Mansour Casablanca)",
+      "kind": "meal",
+      "url": "https://www.royalmansour.com/en/casablanca/dining/la-grande-table-marocaine/",
+      "sourceType": "operator's own site",
+      "address": "27 Avenue des Forces Armées Royales, 20 250, Casablanca, Morocco",
+      "operatingEvidence": "Booking form; 'On December 5, 2026, Chef Karim Ben Baba presents an exclusive dinner at La Grande Table Marocaine' (MAD 1900 per person); weekly lunch menu Mon–Thu.",
+      "hours": "'MON TO SUN 12pm to 2.30pm & 7pm to 11pm'",
+      "confidence": "high"
+    },
+    {
+      "name": "Le Rooftop (Royal Mansour Casablanca)",
+      "kind": "meal",
+      "url": "https://www.royalmansour.com/en/casablanca/dining/le-rooftop/",
+      "sourceType": "operator's own site",
+      "address": "27 Avenue des Forces Armées Royales, 20 250, Casablanca, Morocco",
+      "operatingEvidence": "23rd-floor Mediterranean restaurant with views of the Hassan II Mosque; booking popup; Sunday brunch 'SUN. 01.00PM TO 4.00PM' at MAD 900, 'MAD 450 for children under 12'.",
+      "hours": "'MON to sun 7.00am to 11.00am & 12.30pm to 01.00am'",
+      "confidence": "high"
+    },
+    {
+      "name": "The Bar (Royal Mansour Casablanca)",
+      "kind": "bar",
+      "url": "https://www.royalmansour.com/en/casablanca/dining/the-bar/",
+      "sourceType": "operator's own site",
+      "address": "27 Avenue des Forces Armées Royales, 20 250, Casablanca, Morocco",
+      "operatingEvidence": "'A discreet door on Avenue des Forces Armées Royales conceals a bar'; 'Book now' button; snacking and evening menus with hours.",
+      "hours": "'MOn TO SUN 9AM TO 1AM'",
+      "confidence": "high"
+    },
+    {
+      "name": "Le Sushi Bar (Royal Mansour Casablanca)",
+      "kind": "meal",
+      "url": "https://www.royalmansour.com/en/casablanca/dining/le-sushi-bar/",
+      "sourceType": "operator's own site",
+      "address": "27 Avenue des Forces Armées Royales, 20 250, Casablanca, Morocco",
+      "operatingEvidence": "Japanese restaurant with 'Book a table' form and current Omakase and Bento menus.",
+      "hours": "'MON TO SUN 12PM TO 11PM'",
+      "confidence": "high"
+    },
+    {
+      "name": "Royal Mansour Gourmet Boutique",
+      "kind": "bakery",
+      "url": "https://www.royalmansour.com/en/casablanca/gourmet-boutique/",
+      "sourceType": "operator's own site",
+      "address": "27 Avenue des Forces Armées Royales, 20 250, Casablanca, Morocco (collection at La Brasserie)",
+      "operatingEvidence": "Autumn pastry edition with prices (e.g. roasted vanilla and pear charlotte MAD 680; chocolate sablés box MAD 250). 'Orders 24h in advance, to be collected from La Brasserie, daily from 11am to 12pm and from 4pm to 6pm.'",
+      "hours": "Collection daily 11am–12pm and 4pm–6pm; orders 24h in advance",
+      "confidence": "high"
+    },
+    {
+      "name": "Amorino (Casablanca Maarif)",
+      "kind": "cafe",
+      "url": "https://www.amorino.com/en/stores/casablanca-maarif",
+      "sourceType": "operator's own site (Amorino store locator)",
+      "address": "56, rue Quadi Iyas, 20330, Casablanca",
+      "operatingEvidence": "Store page with daily hours and visitor reviews dated '11/14/2026' and '7/21/2026'.",
+      "hours": "Monday to Sunday '10:00 AM – 11:00 PM'",
+      "confidence": "medium"
+    },
+    {
+      "name": "Le CasArt (Sofitel Casablanca Tour Blanche)",
+      "kind": "bar",
+      "url": "https://sofitel.accor.com/en/hotels/6811/B001.bar.html",
+      "sourceType": "operator's own site (Accor/Sofitel)",
+      "address": "Rue Sidi Belyout, 20000, CASABLANCA, Morocco",
+      "operatingEvidence": "Hotel's current bar page: 'Cocktails and tapas await you at Le CasArt bar'; terrace and indoor bar; hotel booking live. No 2026 date on the page.",
+      "hours": "not published (hotel page says the bar is 'Open day and night')",
+      "confidence": "medium"
+    },
+    {
+      "name": "L'Atelier Oriental (Sofitel Casablanca Tour Blanche)",
+      "kind": "meal",
+      "url": "https://sofitel.accor.com/en/hotels/6811.html",
+      "sourceType": "operator's own site (Accor/Sofitel)",
+      "address": "Rue Sidi Belyout, 20000, CASABLANCA, Morocco",
+      "operatingEvidence": "Listed among the hotel's current restaurants, serving Moroccan and Lebanese recipes; hotel booking live. No 2026 date on the page.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "MIN KOY (Sofitel Casablanca Tour Blanche)",
+      "kind": "meal",
+      "url": "https://sofitel.accor.com/en/hotels/6811/R001.restaurant.html",
+      "sourceType": "operator's own site (Accor/Sofitel)",
+      "address": "Rue Sidi Belyout, 20000, CASABLANCA, Morocco",
+      "operatingEvidence": "Restaurant page: 'MIN KOY restaurant, in the heart of Casablanca, fuses Moroccan hospitality and Japanese elegance.' No 2026 date on the page.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Brasserie La Tour (Sofitel Casablanca Tour Blanche)",
+      "kind": "meal",
+      "url": "https://sofitel.accor.com/en/hotels/6811.html",
+      "sourceType": "operator's own site (Accor/Sofitel)",
+      "address": "Rue Sidi Belyout, 20000, CASABLANCA, Morocco",
+      "operatingEvidence": "Listed among the hotel's current restaurants (French cuisine); hotel booking live. No 2026 date on the page.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Le Jasmine (Le Doge)",
+      "kind": "meal",
+      "url": "https://www.hotelledoge.com/",
+      "sourceType": "operator's own site",
+      "address": "9, rue du Docteur Veyre 20070 Casablanca — Maroc",
+      "operatingEvidence": "Hotel site presents Le Jasmine as 'notre restaurant gastronomique marocain', on the first floor under a stained-glass ceiling. No 2026 date or hours on the page.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Le Doge Café (Le Doge)",
+      "kind": "bar",
+      "url": "https://www.hotelledoge.com/",
+      "sourceType": "operator's own site",
+      "address": "9, rue du Docteur Veyre 20070 Casablanca — Maroc",
+      "operatingEvidence": "Hotel site presents Le Doge Café as a rooftop space with a relaxed atmosphere and Mediterranean cooking. No 2026 date or hours on the page.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "16ème Floor (Mövenpick Hotel Casablanca)",
+      "kind": "meal",
+      "url": "https://movenpick.accor.com/en/africa/morocco/casablanca/hotel-casablanca/restaurants.html",
+      "sourceType": "operator's own site (Accor/Mövenpick)",
+      "address": "Rond Point Hassan II, 20070 Casablanca, Morocco",
+      "operatingEvidence": "Hotel's restaurants page: 16th-floor restaurant blending Moroccan and Mediterranean cooking 'with a view where the city meets the ocean'; reservations by phone/email. No 2026 date on the page.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Le Casablanca Café (Mövenpick Hotel Casablanca)",
+      "kind": "meal",
+      "url": "https://movenpick.accor.com/en/africa/morocco/casablanca/hotel-casablanca/restaurants/le-casablanca-cafe.html",
+      "sourceType": "operator's own site (Accor/Mövenpick)",
+      "address": "Rond Point Hassan II Casablanca, 20070, CASABLANCA, Morocco",
+      "operatingEvidence": "Restaurant page: 'gastronomic French cuisine and international fusion in a welcoming modern brasserie'; booking via '+212 522/488000' and hotel reservation email. No 2026 date on the page.",
+      "hours": "not published",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Art Deco center",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Corniche",
+      "reason": "generic, not a place (public seafront with no operator page found; Casa Aménagement pages are project descriptions only)",
+      "url": ""
+    },
+    {
+      "name": "Art Deco architecture walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Hassan II at golden hour",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Habous market morning",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "All other input entries (e.g. 'Seafood on the Corniche', 'Habous pastry stop', 'A traditional Moroccan dinner', 'Morning cafe near City Center', 'Sunset drinks near City Center', 'Local bakery near City Center', 'Coffee near City Center' and the rest of the 90 list items)",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Villa des Arts de Casablanca",
+      "reason": "official site returned HTTP 403 (refuses automated reading); Fondation Al Mada site only links to it",
+      "url": "https://www.villadesarts.ma/"
+    },
+    {
+      "name": "Musée Abderrahman Slaoui",
+      "reason": "official domain did not resolve (DNS failure, ENOTFOUND)",
+      "url": "https://www.musee-as.ma/"
+    },
+    {
+      "name": "Four Seasons Hotel Casablanca (Mint, Bleu)",
+      "reason": "official site returned HTTP 403",
+      "url": "https://www.fourseasons.com/casablanca/dining/restaurants/mint/"
+    },
+    {
+      "name": "Hyatt Regency Casablanca",
+      "reason": "official site returned HTTP 403",
+      "url": "https://www.hyatt.com/en-US/hotel/morocco/hyatt-regency-casablanca/casab/dining"
+    },
+    {
+      "name": "Radisson Hotel Casablanca Gauthier La Citadelle (Bliss rooftop)",
+      "reason": "official site returned HTTP 403",
+      "url": "https://www.radissonhotels.com/en-us/hotels/radisson-gauthierlacitadelle-casablanca/restaurants-and-bars/bliss-rooftop"
+    },
+    {
+      "name": "Sky 28 (Kenzi Tower Hotel)",
+      "reason": "official site failed with a TLS/SSL error (WRONG_VERSION_NUMBER)",
+      "url": "https://kenzi-hotels.com/en/kenzi-tower/facilities"
+    },
+    {
+      "name": "% Arabica Casablanca",
+      "reason": "official site returned HTTP 418 (refuses automated reading)",
+      "url": "https://arabica.com/location/arabica-casablanca/"
+    },
+    {
+      "name": "PAUL (Casablanca)",
+      "reason": "official Moroccan site refused connection (ECONNREFUSED)",
+      "url": "https://www.paul.ma/"
+    },
+    {
+      "name": "Iloli",
+      "reason": "official site has a 2026 menu file and footer but publishes no address; contact page 404",
+      "url": "https://www.iloli-restaurant.com/"
+    },
+    {
+      "name": "Pâtisserie Amoud",
+      "reason": "official site is a holding page with no shop addresses or hours",
+      "url": "https://www.amoud.ma/"
+    },
+    {
+      "name": "Starbucks (Jamaldine Villa)",
+      "reason": "operator locator gives only 'Jamaldine Villa, Casablanca' with no exact street address",
+      "url": "https://locations.alshaya.com/starbucks/ma/casablanca/jamaldine-villa"
+    },
+    {
+      "name": "Royal Hideaway Casablanca (Ciao B-Heaven, Cocoa Café)",
+      "reason": "operator's cuisine page publishes no address or hours; Azurita listed as 'temporarily closed'",
+      "url": "https://www.barcelo.com/en-cn/royal-hideaway-casablanca/cuisine"
+    },
+    {
+      "name": "Institut français de Casablanca",
+      "reason": "official page read gives no address, opening hours or dated programme beyond headlines",
+      "url": "https://if-maroc.org/casablanca/"
+    },
+    {
+      "name": "Casamémoire (Art Deco guided visits)",
+      "reason": "official site gives only the association's office address; no tour days, meeting point or booking details",
+      "url": "https://www.casamemoire.org/"
+    },
+    {
+      "name": "La Sqala",
+      "reason": "no official website found (guessed domain lasqala.com did not resolve)",
+      "url": ""
+    },
+    {
+      "name": "Musée du Judaïsme Marocain",
+      "reason": "no official website found",
+      "url": ""
+    },
+    {
+      "name": "Parc de la Ligue Arabe",
+      "reason": "no operator or city page found with address or hours",
+      "url": ""
+    },
+    {
+      "name": "Parc zoologique d'Aïn Sebaâ",
+      "reason": "no official operator website found",
+      "url": ""
+    },
+    {
+      "name": "Parc Sindibad",
+      "reason": "no official operator website found",
+      "url": ""
+    },
+    {
+      "name": "Bacha Coffee (Casablanca)",
+      "reason": "official locations page lists no Casablanca location",
+      "url": "https://bachacoffee.com/locations"
+    },
+    {
+      "name": "Le Petit Rocher, La Bodega, Brasserie La Bavaroise, NKOA, Casa José, Ostrea, Maison Alexis, Pâtisserie Bennis Habous",
+      "reason": "no official website found (only directories, maps or social media)",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Hassan II Mosque",
+        "Villa Carl Ficke – Musée de la mémoire de Casablanca",
+        "Musée de la Photographie et des Arts Visuels de Casablanca",
+        "Hassan II Mosque Museum"
+      ],
+      "bestFirstTimers": [
+        "Hassan II Mosque",
+        "Villa Carl Ficke – Musée de la mémoire de Casablanca",
+        "Rick's Café",
+        "Le Cabestan"
+      ],
+      "bestRestaurants": [
+        "La Grande Table Marocaine (Royal Mansour Casablanca)",
+        "Rick's Café",
+        "Le Cabestan",
+        "Acajou (Barceló Anfa Casablanca)"
+      ],
+      "bestBudget": [
+        "Hassan II Mosque Museum",
+        "Bondi Coffee Kitchen",
+        "Amorino (Casablanca Maarif)",
+        "Villa Carl Ficke – Musée de la mémoire de Casablanca"
+      ],
+      "bestLuxury": [
+        "La Grande Table Marocaine (Royal Mansour Casablanca)",
+        "Le Rooftop (Royal Mansour Casablanca)",
+        "Royal Mansour Gourmet Boutique",
+        "Le Jasmine (Le Doge)"
+      ],
+      "bestCouples": [
+        "Le Rooftop (Royal Mansour Casablanca)",
+        "Rick's Café",
+        "Le Doge Café (Le Doge)",
+        "Le Cabestan"
+      ],
+      "bestKids": [
+        "Morocco Mall",
+        "Amorino (Casablanca Maarif)",
+        "Le Pain Quotidien (Yasmine Plaza)"
+      ],
+      "bestSolo": [
+        "Musée de la Photographie et des Arts Visuels de Casablanca",
+        "Bondi Coffee Kitchen",
+        "Villa Carl Ficke – Musée de la mémoire de Casablanca",
+        "The Bar (Royal Mansour Casablanca)"
+      ],
+      "bestUnique": [
+        "Hassan II Mosque Museum",
+        "Musée de la Photographie et des Arts Visuels de Casablanca",
+        "Rick's Café",
+        "16ème Floor (Mövenpick Hotel Casablanca)"
+      ],
+      "bestBreakfast": [
+        "Le Pain Quotidien (Yasmine Plaza)",
+        "Bondi Coffee Kitchen",
+        "La Brasserie (Royal Mansour Casablanca)",
+        "Le Rooftop (Royal Mansour Casablanca)"
+      ],
+      "bestLunch": [
+        "La Brasserie (Royal Mansour Casablanca)",
+        "Le Sushi Bar (Royal Mansour Casablanca)",
+        "Acajou (Barceló Anfa Casablanca)",
+        "L'Atelier Oriental (Sofitel Casablanca Tour Blanche)"
+      ],
+      "bestDinner": [
+        "La Grande Table Marocaine (Royal Mansour Casablanca)",
+        "Rick's Café",
+        "Le Cabestan",
+        "MIN KOY (Sofitel Casablanca Tour Blanche)"
+      ],
+      "bestCocktails": [
+        "The Bar (Royal Mansour Casablanca)",
+        "Le CasArt (Sofitel Casablanca Tour Blanche)",
+        "Le Doge Café (Le Doge)",
+        "Rick's Café"
+      ],
+      "bestBakeries": [
+        "Royal Mansour Gourmet Boutique",
+        "Le Pain Quotidien (Yasmine Plaza)"
+      ],
+      "bestCoffee": [
+        "Bondi Coffee Kitchen",
+        "Le Pain Quotidien (Yasmine Plaza)",
+        "La Brasserie (Royal Mansour Casablanca)"
+      ]
+    },
+    "queries": {
+      "Hassan II Mosque": "Hassan II Mosque Boulevard Moulay Youssef Casablanca",
+      "Hassan II Mosque Museum": "Hassan II Mosque Museum Boulevard Moulay Youssef Casablanca",
+      "Villa Carl Ficke – Musée de la mémoire de Casablanca": "Villa Carl Ficke 119 Boulevard de la Résistance Casablanca",
+      "Musée de la Photographie et des Arts Visuels de Casablanca": "Musée de la Photographie et des Arts Visuels Rue Larache Casablanca",
+      "Morocco Mall": "Morocco Mall Boulevard de la Corniche Ain Diab Casablanca",
+      "Rick's Café": "Rick's Café 248 Boulevard Sour Jdid Casablanca",
+      "Le Cabestan": "Le Cabestan 90 Boulevard de la Corniche Casablanca",
+      "Bondi Coffee Kitchen": "Bondi Coffee Kitchen 31 Rue Sebou Casablanca",
+      "Le Pain Quotidien (Yasmine Plaza)": "Le Pain Quotidien Tour Jasmin Anfa Clubs Casablanca",
+      "Acajou (Barceló Anfa Casablanca)": "Barceló Anfa Casablanca 44 Boulevard d'Anfa Casablanca",
+      "La Brasserie (Royal Mansour Casablanca)": "Royal Mansour 27 Avenue des Forces Armées Royales Casablanca",
+      "La Grande Table Marocaine (Royal Mansour Casablanca)": "Royal Mansour 27 Avenue des Forces Armées Royales Casablanca",
+      "Le Rooftop (Royal Mansour Casablanca)": "Royal Mansour 27 Avenue des Forces Armées Royales Casablanca",
+      "The Bar (Royal Mansour Casablanca)": "Royal Mansour 27 Avenue des Forces Armées Royales Casablanca",
+      "Le Sushi Bar (Royal Mansour Casablanca)": "Royal Mansour 27 Avenue des Forces Armées Royales Casablanca",
+      "Royal Mansour Gourmet Boutique": "Royal Mansour 27 Avenue des Forces Armées Royales Casablanca",
+      "Amorino (Casablanca Maarif)": "Amorino 56 rue Quadi Iyas Casablanca",
+      "Le CasArt (Sofitel Casablanca Tour Blanche)": "Sofitel Casablanca Tour Blanche Rue Sidi Belyout Casablanca",
+      "L'Atelier Oriental (Sofitel Casablanca Tour Blanche)": "Sofitel Casablanca Tour Blanche Rue Sidi Belyout Casablanca",
+      "MIN KOY (Sofitel Casablanca Tour Blanche)": "Sofitel Casablanca Tour Blanche Rue Sidi Belyout Casablanca",
+      "Brasserie La Tour (Sofitel Casablanca Tour Blanche)": "Sofitel Casablanca Tour Blanche Rue Sidi Belyout Casablanca",
+      "Le Jasmine (Le Doge)": "Le Doge 9 rue du Docteur Veyre Casablanca",
+      "Le Doge Café (Le Doge)": "Le Doge 9 rue du Docteur Veyre Casablanca",
+      "16ème Floor (Mövenpick Hotel Casablanca)": "Mövenpick Hotel Casablanca Rond Point Hassan II Casablanca",
+      "Le Casablanca Café (Mövenpick Hotel Casablanca)": "Mövenpick Hotel Casablanca Rond Point Hassan II Casablanca"
+    },
+    "summary": "The Hassan II Mosque, the city's two national museums, hotel dining rooms and Corniche tables, with breakfast cafés, bakeries and cocktail bars checked against their own websites.",
+    "highlights": [
+      "Hassan II Mosque",
+      "Villa Carl Ficke – Musée de la mémoire de Casablanca",
+      "Musée de la Photographie et des Arts Visuels de Casablanca",
+      "Rick's Café"
+    ],
+    "tip": "Plan around Tuesdays: Villa Carl Ficke and the Musée de la Photographie et des Arts Visuels both close that day, while Hassan II Mosque tours run every day, with no 11h tour on Friday.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Tuesday for the city museums",
+        "copy": "Villa Carl Ficke and the Musée de la Photographie et des Arts Visuels both close on Tuesdays and otherwise open 10h to 18h. Hassan II Mosque tours run every day, with no 11h tour on Friday."
+      },
+      {
+        "label": "Tickets",
+        "value": "Mosque 140 dhs for foreign adults",
+        "copy": "The Hassan II Mosque charges foreign adults 140 dhs, residents 70 dhs and under-6s nothing, and its museum charges foreign adults 30 Dhs. Both national museums charge foreign visitors 50 DH and Moroccan adults 25 DH."
+      },
+      {
+        "label": "Booking",
+        "value": "Tables held 15 minutes",
+        "copy": "Rick's Café holds reserved tables for 15 minutes past your booking time and asks for 24 hours' notice to cancel. Royal Mansour Gourmet Boutique pastries must be ordered 24 hours ahead and collected at La Brasserie."
+      },
+      {
+        "label": "Dress and rules",
+        "value": "Cover shoulders and knees",
+        "copy": "At the Hassan II Mosque, cover your shoulders, chest and knees; shorts are forbidden, shoes come off and bags can be left at the entrance. Rick's Café requires smart casual dress."
+      }
+    ],
+    "dek": "Book the first mosque tour of the day, keep Tuesday free of the two national museums, and reserve evening tables ahead.",
+    "intro": [
+      "The Hassan II Mosque is seen on guided tours at fixed times. From Saturday to Thursday they start at 8h, 9h, 10h, 11h and 14h; on Friday there is no 11h tour. Foreign adults pay 140 dhs, residents and foreign students 70 dhs, and children under 6 go free. Cover your shoulders, chest and knees, since shorts are forbidden; you take your shoes off and can leave bags at the entrance. The mosque's museum, ticketed separately at 30 Dhs for foreign adults, opens from 9h to 16h.",
+      "Two museums run by the Fondation nationale des musées tell the city's own story. Villa Carl Ficke, the Musée de la mémoire de Casablanca at 119 Boulevard de la Résistance, holds temporary exhibitions and shows sculptures by Ikram Kabbaj outside. The Musée de la Photographie et des Arts Visuels on Rue Larache, in the old medina, opened on 23 June 2026 in a building designed by Tadao Ando, with an inaugural exhibition titled CASA. Both open from 10h to 18h and close on Tuesdays. Foreign visitors pay 50 DH and Moroccan adults 25 DH.",
+      "The Royal Mansour on Avenue des Forces Armées Royales gathers several tables under one roof. Le Rooftop, on the 23rd floor with views of the Hassan II Mosque, serves breakfast from 7am to 11am and a Sunday brunch from 1pm to 4pm at MAD 900, or MAD 450 for children under 12. La Grande Table Marocaine serves lunch and dinner daily, and La Brasserie serves an afternoon goûter from 3pm to 6pm. The hotel's Gourmet Boutique takes pastry orders 24 hours ahead for collection at La Brasserie.",
+      "Rick's Café at 248 Boulevard Sour Jdid serves lunch from 12:00 to 15:00 and dinner from 18:30 to 00:30, asks for smart casual dress and holds tables for 15 minutes. Its New Year's Eve evening on 31 December 2026 starts at 8pm and costs 1,500 MAD, with non-refundable tickets. On the Corniche, Le Cabestan by the El Hank lighthouse publishes a 2026 menu, and Morocco Mall in Ain Diab opens from 10h to 21h Sunday to Thursday and until 22h on Friday and Saturday. For a slower start, Bondi Coffee Kitchen in Gauthier serves breakfast all day, every day, from 9am."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Take a morning guided tour of the Hassan II Mosque, then see Villa Carl Ficke for the city's history on any day except Tuesday."
+      ],
+      [
+        "A slower morning",
+        "Start with breakfast at Bondi Coffee Kitchen in Gauthier from 9am, or at Le Pain Quotidien in Anfa from 07:30."
+      ],
+      [
+        "Before booking",
+        "Villa Carl Ficke and the Musée de la Photographie close on Tuesdays, and Rick's Café holds reserved tables for only 15 minutes."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The Hassan II Mosque's paid-visits page, which carries a seasonal timetable, could not be read (redirect loop), so tour times come from the foundation's home page and may change with the season. The national museums' pages say both 'lundi au dimanche' and 'Fermé le mardi'; this guide follows the Tuesday closure. Hotel venues at the Sofitel Casablanca Tour Blanche, Le Doge and the Mövenpick, and Le Cabestan, Acajou and Le Jasmine, publish no opening hours; the Sofitel, Le Doge and Mövenpick venue pages carry no 2026 date. Bondi Coffee Kitchen's site shows no explicit 2026 date. Morocco Mall lists Aquadream and other attractions without hours or prices. Sites that could not be read: Villa des Arts (403), Four Seasons, Hyatt Regency and Radisson (403), Kenzi Tower (TLS error), % Arabica (418), PAUL Maroc (connection refused) and Musée Abderrahman Slaoui (domain did not resolve). Iloli publishes no address. No official sites were found for La Sqala, the Musée du Judaïsme Marocain, the Aïn Sebaâ zoo, Parc de la Ligue Arabe or several Corniche and city-centre restaurants, so the guide has no public park.",
+  "injectionLikeText": []
+}

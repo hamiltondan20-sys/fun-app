@@ -11540,4 +11540,108 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 10 distinct recommendations in this guide were checked against their operators' own websites on November 22, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Casablanca, Morocco: source review of 2026-11-23 (docs/content-research/casablanca-2026-11-23.md).
+  {
+    const cityKey = "Casablanca, Morocco";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Hassan II Mosque","Villa Carl Ficke – Musée de la mémoire de Casablanca","Musée de la Photographie et des Arts Visuels de Casablanca","Hassan II Mosque Museum"],
+      bestFirstTimers: ["Hassan II Mosque","Villa Carl Ficke – Musée de la mémoire de Casablanca","Rick's Café","Le Cabestan"],
+      bestRestaurants: ["La Grande Table Marocaine (Royal Mansour Casablanca)","Rick's Café","Le Cabestan","Acajou (Barceló Anfa Casablanca)"],
+      bestBudget: ["Hassan II Mosque Museum","Bondi Coffee Kitchen","Amorino (Casablanca Maarif)","Villa Carl Ficke – Musée de la mémoire de Casablanca"],
+      bestLuxury: ["La Grande Table Marocaine (Royal Mansour Casablanca)","Le Rooftop (Royal Mansour Casablanca)","Royal Mansour Gourmet Boutique","Le Jasmine (Le Doge)"],
+      bestCouples: ["Le Rooftop (Royal Mansour Casablanca)","Rick's Café","Le Doge Café (Le Doge)","Le Cabestan"],
+      bestKids: ["Morocco Mall","Amorino (Casablanca Maarif)","Le Pain Quotidien (Yasmine Plaza)"],
+      bestSolo: ["Musée de la Photographie et des Arts Visuels de Casablanca","Bondi Coffee Kitchen","Villa Carl Ficke – Musée de la mémoire de Casablanca","The Bar (Royal Mansour Casablanca)"],
+      bestUnique: ["Hassan II Mosque Museum","Musée de la Photographie et des Arts Visuels de Casablanca","Rick's Café","16ème Floor (Mövenpick Hotel Casablanca)"],
+      bestBreakfast: ["Le Pain Quotidien (Yasmine Plaza)","Bondi Coffee Kitchen","La Brasserie (Royal Mansour Casablanca)","Le Rooftop (Royal Mansour Casablanca)"],
+      bestLunch: ["La Brasserie (Royal Mansour Casablanca)","Le Sushi Bar (Royal Mansour Casablanca)","Acajou (Barceló Anfa Casablanca)","L'Atelier Oriental (Sofitel Casablanca Tour Blanche)"],
+      bestDinner: ["La Grande Table Marocaine (Royal Mansour Casablanca)","Rick's Café","Le Cabestan","MIN KOY (Sofitel Casablanca Tour Blanche)"],
+      bestCocktails: ["The Bar (Royal Mansour Casablanca)","Le CasArt (Sofitel Casablanca Tour Blanche)","Le Doge Café (Le Doge)","Rick's Café"],
+      bestBakeries: ["Royal Mansour Gourmet Boutique","Le Pain Quotidien (Yasmine Plaza)"],
+      bestCoffee: ["Bondi Coffee Kitchen","Le Pain Quotidien (Yasmine Plaza)","La Brasserie (Royal Mansour Casablanca)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Hassan II Mosque": "Hassan II Mosque Boulevard Moulay Youssef Casablanca",
+      "Villa Carl Ficke – Musée de la mémoire de Casablanca": "Villa Carl Ficke 119 Boulevard de la Résistance Casablanca",
+      "Musée de la Photographie et des Arts Visuels de Casablanca": "Musée de la Photographie et des Arts Visuels Rue Larache Casablanca",
+      "Hassan II Mosque Museum": "Hassan II Mosque Museum Boulevard Moulay Youssef Casablanca",
+      "Rick's Café": "Rick's Café 248 Boulevard Sour Jdid Casablanca",
+      "Le Cabestan": "Le Cabestan 90 Boulevard de la Corniche Casablanca",
+      "La Grande Table Marocaine (Royal Mansour Casablanca)": "Royal Mansour 27 Avenue des Forces Armées Royales Casablanca",
+      "Acajou (Barceló Anfa Casablanca)": "Barceló Anfa Casablanca 44 Boulevard d'Anfa Casablanca",
+      "Bondi Coffee Kitchen": "Bondi Coffee Kitchen 31 Rue Sebou Casablanca",
+      "Amorino (Casablanca Maarif)": "Amorino 56 rue Quadi Iyas Casablanca",
+      "Le Rooftop (Royal Mansour Casablanca)": "Royal Mansour 27 Avenue des Forces Armées Royales Casablanca",
+      "Royal Mansour Gourmet Boutique": "Royal Mansour 27 Avenue des Forces Armées Royales Casablanca",
+      "Le Jasmine (Le Doge)": "Le Doge 9 rue du Docteur Veyre Casablanca",
+      "Le Doge Café (Le Doge)": "Le Doge 9 rue du Docteur Veyre Casablanca",
+      "Morocco Mall": "Morocco Mall Boulevard de la Corniche Ain Diab Casablanca",
+      "Le Pain Quotidien (Yasmine Plaza)": "Le Pain Quotidien Tour Jasmin Anfa Clubs Casablanca",
+      "The Bar (Royal Mansour Casablanca)": "Royal Mansour 27 Avenue des Forces Armées Royales Casablanca",
+      "16ème Floor (Mövenpick Hotel Casablanca)": "Mövenpick Hotel Casablanca Rond Point Hassan II Casablanca",
+      "La Brasserie (Royal Mansour Casablanca)": "Royal Mansour 27 Avenue des Forces Armées Royales Casablanca",
+      "Le Sushi Bar (Royal Mansour Casablanca)": "Royal Mansour 27 Avenue des Forces Armées Royales Casablanca",
+      "L'Atelier Oriental (Sofitel Casablanca Tour Blanche)": "Sofitel Casablanca Tour Blanche Rue Sidi Belyout Casablanca",
+      "MIN KOY (Sofitel Casablanca Tour Blanche)": "Sofitel Casablanca Tour Blanche Rue Sidi Belyout Casablanca",
+      "Le CasArt (Sofitel Casablanca Tour Blanche)": "Sofitel Casablanca Tour Blanche Rue Sidi Belyout Casablanca"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Casablanca" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "The Hassan II Mosque, the city's two national museums, hotel dining rooms and Corniche tables, with breakfast cafés, bakeries and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Hassan II Mosque","Villa Carl Ficke – Musée de la mémoire de Casablanca","Musée de la Photographie et des Arts Visuels de Casablanca","Rick's Café"];
+    cityGuide.tip = "Plan around Tuesdays: Villa Carl Ficke and the Musée de la Photographie et des Arts Visuels both close that day, while Hassan II Mosque tours run every day, with no 11h tour on Friday.";
+    data.destinationFacts[cityKey] = "Plan around Tuesdays: Villa Carl Ficke and the Musée de la Photographie et des Arts Visuels both close that day, while Hassan II Mosque tours run every day, with no 11h tour on Friday.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "The Hassan II Mosque, the city's two national museums, hotel dining rooms and Corniche tables, with breakfast cafés, bakeries and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Tuesday for the city museums",
+        "copy": "Villa Carl Ficke and the Musée de la Photographie et des Arts Visuels both close on Tuesdays and otherwise open 10h to 18h. Hassan II Mosque tours run every day, with no 11h tour on Friday."
+      },
+      {
+        "label": "Tickets",
+        "value": "Mosque 140 dhs for foreign adults",
+        "copy": "The Hassan II Mosque charges foreign adults 140 dhs, residents 70 dhs and under-6s nothing, and its museum charges foreign adults 30 Dhs. Both national museums charge foreign visitors 50 DH and Moroccan adults 25 DH."
+      },
+      {
+        "label": "Booking",
+        "value": "Tables held 15 minutes",
+        "copy": "Rick's Café holds reserved tables for 15 minutes past your booking time and asks for 24 hours' notice to cancel. Royal Mansour Gourmet Boutique pastries must be ordered 24 hours ahead and collected at La Brasserie."
+      },
+      {
+        "label": "Dress and rules",
+        "value": "Cover shoulders and knees",
+        "copy": "At the Hassan II Mosque, cover your shoulders, chest and knees; shorts are forbidden, shoes come off and bags can be left at the entrance. Rick's Café requires smart casual dress."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Book the first mosque tour of the day, keep Tuesday free of the two national museums, and reserve evening tables ahead.",
+      intro: [
+        "The Hassan II Mosque is seen on guided tours at fixed times. From Saturday to Thursday they start at 8h, 9h, 10h, 11h and 14h; on Friday there is no 11h tour. Foreign adults pay 140 dhs, residents and foreign students 70 dhs, and children under 6 go free. Cover your shoulders, chest and knees, since shorts are forbidden; you take your shoes off and can leave bags at the entrance. The mosque's museum, ticketed separately at 30 Dhs for foreign adults, opens from 9h to 16h.",
+        "Two museums run by the Fondation nationale des musées tell the city's own story. Villa Carl Ficke, the Musée de la mémoire de Casablanca at 119 Boulevard de la Résistance, holds temporary exhibitions and shows sculptures by Ikram Kabbaj outside. The Musée de la Photographie et des Arts Visuels on Rue Larache, in the old medina, opened on 23 June 2026 in a building designed by Tadao Ando, with an inaugural exhibition titled CASA. Both open from 10h to 18h and close on Tuesdays. Foreign visitors pay 50 DH and Moroccan adults 25 DH.",
+        "The Royal Mansour on Avenue des Forces Armées Royales gathers several tables under one roof. Le Rooftop, on the 23rd floor with views of the Hassan II Mosque, serves breakfast from 7am to 11am and a Sunday brunch from 1pm to 4pm at MAD 900, or MAD 450 for children under 12. La Grande Table Marocaine serves lunch and dinner daily, and La Brasserie serves an afternoon goûter from 3pm to 6pm. The hotel's Gourmet Boutique takes pastry orders 24 hours ahead for collection at La Brasserie.",
+        "Rick's Café at 248 Boulevard Sour Jdid serves lunch from 12:00 to 15:00 and dinner from 18:30 to 00:30, asks for smart casual dress and holds tables for 15 minutes. Its New Year's Eve evening on 31 December 2026 starts at 8pm and costs 1,500 MAD, with non-refundable tickets. On the Corniche, Le Cabestan by the El Hank lighthouse publishes a 2026 menu, and Morocco Mall in Ain Diab opens from 10h to 21h Sunday to Thursday and until 22h on Friday and Saturday. For a slower start, Bondi Coffee Kitchen in Gauthier serves breakfast all day, every day, from 9am."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Take a morning guided tour of the Hassan II Mosque, then see Villa Carl Ficke for the city's history on any day except Tuesday."
+        ],
+        [
+          "A slower morning",
+          "Start with breakfast at Bondi Coffee Kitchen in Gauthier from 9am, or at Le Pain Quotidien in Anfa from 07:30."
+        ],
+        [
+          "Before booking",
+          "Villa Carl Ficke and the Musée de la Photographie close on Tuesdays, and Rick's Café holds reserved tables for only 15 minutes."
+        ]
+      ],
+      trust: "All 23 distinct recommendations in this guide were checked against their operators' own websites on November 23, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();
