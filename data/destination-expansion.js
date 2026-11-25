@@ -11743,4 +11743,111 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 18 distinct recommendations in this guide were checked against their operators' own websites on November 23, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Yogyakarta, Indonesia: source review of 2026-11-24 (docs/content-research/yogyakarta-2026-11-24.md).
+  {
+    const cityKey = "Yogyakarta, Indonesia";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Borobudur Temple","Prambanan Temple","Kraton Yogyakarta (Kagungan Dalem Kedhaton)","Taman Sari (Kagungan Dalem Tamansari)"],
+      bestFirstTimers: ["Borobudur Temple","Prambanan Temple","Kraton Yogyakarta (Kagungan Dalem Kedhaton)","Museum Benteng Vredeburg"],
+      bestRestaurants: ["ViaVia Jogja","SamaZana Restaurant (Royal Ambarrukmo)","Summer Palace (Hotel Tentrem Yogyakarta)","Gudeg Yu Djum Pusat (Karangasem)"],
+      bestBudget: ["Museum Sonobudoyo","Museum Benteng Vredeburg","Gudeg Yu Djum Pusat (Karangasem)","Bakpia Pathok 25 (Pabrik Jaya)"],
+      bestLuxury: ["Amanjiwo","Plataran Borobudur","SamaZana Restaurant (Royal Ambarrukmo)","Lobby Lounge & Bar (Royal Ambarrukmo)"],
+      bestCouples: ["Ratu Boko Palace","Prambanan Temple","Plataran Borobudur","Lobby Lounge & Bar (Royal Ambarrukmo)"],
+      bestKids: ["Taman Pintar","Gembira Loka Zoo","Kagungan Dalem Wahanarata","Tentrem Cake Shop (Hotel Tentrem Yogyakarta)"],
+      bestSolo: ["Museum Ullen Sentalu","Museum Sonobudoyo","Hamzah Batik (Malioboro)","Eboni Bar & Lounge (Hotel Tentrem Yogyakarta)"],
+      bestUnique: ["Museum Ullen Sentalu","Kagungan Dalem Wahanarata","Ratu Boko Palace","Hamzah Batik (Malioboro)"],
+      bestBreakfast: ["Kayumanis Coffee Shop (Hotel Tentrem Yogyakarta)","SamaZana Restaurant (Royal Ambarrukmo)","ViaVia Jogja","ViaVia Artisan Bakery"],
+      bestLunch: ["Gudeg Yu Djum Pusat (Karangasem)","Summer Palace (Hotel Tentrem Yogyakarta)","ViaVia Jogja","Punika Deli (Royal Ambarrukmo)"],
+      bestDinner: ["SamaZana Restaurant (Royal Ambarrukmo)","Summer Palace (Hotel Tentrem Yogyakarta)","Plataran Borobudur","ViaVia Jogja"],
+      bestCocktails: ["Lobby Lounge & Bar (Royal Ambarrukmo)","Amanjiwo","The Phoenix Hotel Yogyakarta (Vino Bar)"],
+      bestBakeries: ["ViaVia Artisan Bakery","Bakpia Pathok 25 (Pabrik Jaya)","Tentrem Cake Shop (Hotel Tentrem Yogyakarta)","Punika Deli (Royal Ambarrukmo)"],
+      bestCoffee: ["Punika Deli (Royal Ambarrukmo)","Eboni Bar & Lounge (Hotel Tentrem Yogyakarta)","ViaVia Jogja","Kayumanis Coffee Shop (Hotel Tentrem Yogyakarta)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Borobudur Temple": "Borobudur Temple Borobudur Magelang Central Java",
+      "Prambanan Temple": "Prambanan Temple Jl. Raya Yogya-Solo KM 16 Prambanan Sleman",
+      "Kraton Yogyakarta (Kagungan Dalem Kedhaton)": "Kraton Yogyakarta Jl. Rotowijayan Blok No. 1 Panembahan Yogyakarta",
+      "Taman Sari (Kagungan Dalem Tamansari)": "Taman Sari Patehan Kraton Yogyakarta",
+      "Museum Benteng Vredeburg": "Museum Benteng Vredeburg Jalan Margo Mulyo No. 6 Yogyakarta",
+      "ViaVia Jogja": "ViaVia Jogja Jl. Prawirotaman No. 30 Yogyakarta",
+      "SamaZana Restaurant (Royal Ambarrukmo)": "SamaZana Royal Ambarrukmo Jl. Laksda Adisutjipto No. 81 Yogyakarta",
+      "Summer Palace (Hotel Tentrem Yogyakarta)": "Summer Palace Hotel Tentrem Jl. P. Mangkubumi 72A Yogyakarta",
+      "Gudeg Yu Djum Pusat (Karangasem)": "Gudeg Yu Djum Pusat Jl. Kaliurang Km 4.5 Karangasem Caturtunggal Yogyakarta",
+      "Museum Sonobudoyo": "Museum Sonobudoyo Jl. Pangurakan No. 6 Yogyakarta",
+      "Bakpia Pathok 25 (Pabrik Jaya)": "Bakpia Pathok 25 Sanggrahan Pathuk NG I/504 Ngampilan Yogyakarta",
+      "Amanjiwo": "Amanjiwo Majaksingi Borobudur Magelang",
+      "Plataran Borobudur": "Plataran Borobudur Dusun Tanjungan Borobudur Magelang",
+      "Lobby Lounge & Bar (Royal Ambarrukmo)": "Lobby Lounge Bar Royal Ambarrukmo Jl. Laksda Adisutjipto No. 81 Yogyakarta",
+      "Ratu Boko Palace": "Ratu Boko Palace Prambanan Sleman Yogyakarta",
+      "Taman Pintar": "Taman Pintar Jalan Panembahan Senopati 1-3 Yogyakarta",
+      "Gembira Loka Zoo": "Gembira Loka Zoo Jl. Kebun Raya No. 2 Kotagede Yogyakarta",
+      "Kagungan Dalem Wahanarata": "Kagungan Dalem Wahanarata Jl. Rotowijayan Kadipaten Yogyakarta",
+      "Tentrem Cake Shop (Hotel Tentrem Yogyakarta)": "Tentrem Cake Shop Jl. P. Mangkubumi 72A Yogyakarta",
+      "Museum Ullen Sentalu": "Museum Ullen Sentalu Jl. Boyong Kaliurang Sleman Yogyakarta",
+      "Hamzah Batik (Malioboro)": "Hamzah Batik Jl. Margo Mulyo No. 9 Yogyakarta",
+      "Eboni Bar & Lounge (Hotel Tentrem Yogyakarta)": "Eboni Bar & Lounge Hotel Tentrem Jl. P. Mangkubumi 72A Yogyakarta",
+      "Kayumanis Coffee Shop (Hotel Tentrem Yogyakarta)": "Kayumanis Hotel Tentrem Jl. P. Mangkubumi 72A Yogyakarta",
+      "ViaVia Artisan Bakery": "ViaVia Artisan Bakery Jl. Prawirotaman No. 32 Yogyakarta",
+      "Punika Deli (Royal Ambarrukmo)": "Punika Deli Royal Ambarrukmo Jl. Laksda Adisutjipto No. 81 Yogyakarta",
+      "The Phoenix Hotel Yogyakarta (Vino Bar)": "The Phoenix Hotel Jl. Jenderal Sudirman 9 Yogyakarta"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Yogyakarta" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Temples, Kraton museums and performances, with breakfast spots, bakeries, dinners and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Borobudur Temple","Prambanan Temple","Kraton Yogyakarta (Kagungan Dalem Kedhaton)","Taman Sari (Kagungan Dalem Tamansari)"];
+    cityGuide.tip = "Save Monday for Borobudur, Prambanan or Taman Sari, because the Kraton's Kedhaton and Wahanarata, Museum Ullen Sentalu, Museum Sonobudoyo and Museum Benteng Vredeburg all list Monday as closed.";
+    data.destinationFacts[cityKey] = "Save Monday for Borobudur, Prambanan or Taman Sari, because the Kraton's Kedhaton and Wahanarata, Museum Ullen Sentalu, Museum Sonobudoyo and Museum Benteng Vredeburg all list Monday as closed.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Temples, Kraton museums and performances, with breakfast spots, bakeries, dinners and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays",
+        "copy": "The Kraton's Kedhaton and Wahanarata, Museum Ullen Sentalu, Museum Sonobudoyo and Museum Benteng Vredeburg all list Monday as closed. Taman Sari's page lists 09:00 to 15:00 every day, and InJourney's ticket page lists Borobudur as open every day."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Capped temple sessions",
+        "copy": "InJourney's ticket site limits Borobudur's Sunrise and Sunset sessions to 100 people per day each, and its upper-area ticket includes upanat temple sandals and a tour guide. Gembira Loka Zoo's online tickets are booked for a set date and cannot be refunded or rescheduled."
+      },
+      {
+        "label": "Walk-in and queues",
+        "value": "Arrive early",
+        "copy": "InJourney's Borobudur page advises arriving 30 to 45 minutes early and warns that late arrivals may get limited access depending on crowds. The Kraton's Kedhaton and Taman Sari pages ask you to arrive about an hour early."
+      },
+      {
+        "label": "Rules",
+        "value": "Sleeves, no shorts",
+        "copy": "The Kedhaton, Taman Sari and Wahanarata ask for modest clothes with sleeves and do not allow skirts or shorts. At Pentas Srimanganti, eating, drinking, smoking and flash photography are not allowed."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Book the temples online, keep Mondays for the sites that stay open, and pack sleeves and long trousers for the Kraton.",
+      intro: [
+        "Yogyakarta's big temple sites sit outside the city, and their tickets are sold on InJourney Destination Management's own site. Its Borobudur page lists the temple structure every day from 08.30 to 17.00 WIB, says the upper-area ticket includes a wristband, upanat temple sandals and a tour guide, and advises you to arrive 30 to 45 minutes early. Sunrise and Sunset sessions are each limited to 100 people per day. The Prambanan ticket covers Prambanan, Lumbung, Bubrah and Sewu temples and the Prambanan Museum, while Ratu Boko Palace, on a hilltop just south of Prambanan, starts entry at 07.00 WIB.",
+        "In November and December 2026, InJourney lists the Ramayana Ballet at Prambanan's Open Air Theater on Tuesday, Thursday and Saturday from 7:30pm to 9:00pm, with Roro Jonggrang on Fridays, and no VIP tickets for those two months. If rain falls after the Anoman Obong scene, the show counts as complete and is not refunded. For a slower base near Borobudur, Amanjiwo offers a Sunrise Meditation at Borobudur experience alongside The Restaurant & Bar, and Plataran Borobudur's Patio Colonial Hall offers colonial-style dining with views of Borobudur.",
+        "In the city, the Kraton's Kagungan Dalem Kedhaton opens Tuesday to Sunday from 08:30 to 14:30 and closes on Mondays; you will need clothes with sleeves, and skirts and shorts are not allowed. The Kraton's Smarabawana exhibition, open since 7 March 2026, is set to run until January 2027. Taman Sari's page lists 09:00 to 15:00 every day, and Pentas Srimanganti performances run from 09:00 to 11:00 every day except Monday, from wayang kulit on Thursdays to Gladhen Beksan on Sundays. Museum Benteng Vredeburg stays open until 20.00 Tuesday to Thursday and 21.00 Friday to Sunday.",
+        "North of the city, Museum Ullen Sentalu runs 45-minute guided tours Tuesday to Sunday, with the last tour at 15.15, and groups reserve by phone. Museum Sonobudoyo, also closed on Mondays, charges foreign visitors Rp 20.000. For food, ViaVia Jogja on Jalan Prawirotaman opens daily at 8 am, and ViaVia Artisan Bakery at No. 32 opens at 7 am. Bakpia Pathok 25's Pabrik Jaya shop lists 06.00 to 23.30 every day. Royal Ambarrukmo's Lobby Lounge & Bar serves signature cocktails from 3 pm to 11 pm, with live piano Monday to Saturday."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Book Borobudur and Prambanan on InJourney's ticket site, then spend a Tuesday-to-Sunday morning at the Kraton's Kedhaton, which opens at 08:30."
+        ],
+        [
+          "A slower morning",
+          "Have breakfast at Kayumanis Coffee Shop, served from 6:00 to 10:00 am, or at ViaVia Artisan Bakery from 7 am, then visit Taman Sari, open 09:00 to 15:00 every day."
+        ],
+        [
+          "Before booking",
+          "The Kraton's Kedhaton and Wahanarata, Museum Ullen Sentalu, Museum Sonobudoyo and Museum Benteng Vredeburg all list Monday as closed, and Borobudur's Sunrise and Sunset sessions are capped at 100 people per day."
+        ]
+      ],
+      trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on November 24, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

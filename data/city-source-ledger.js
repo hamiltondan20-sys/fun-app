@@ -5,6 +5,666 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Yogyakarta, Indonesia": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-11-24",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. InJourney's Borobudur, Prambanan and Ratu Boko ticket pages carry a 2025 footer and give start times but not closing times for Prambanan and Ratu Boko; their locations come from the operator's own map pins rather than street addresses. Museum Sonobudoyo's hours are labelled January 2026 and read 'Tuesday & Sunday', so check the full weekly schedule. ViaVia Jogja's page gives two different sets of hours. Hours were not published for Taman Pintar (shown only as an image), Gudeg Yu Djum Pusat, Eboni Bar & Lounge, Amanjiwo, Plataran Borobudur or The Phoenix Hotel's Vino Bar. Gembira Loka Zoo's latest dated news is from November 2025. Museum Affandi was left out because its October 2026 revitalisation notice could not be read. Sites that could not be read: borobudurpark.com, Museum Gunungapi Merapi, Melia Purosani and Hyatt Regency (HTTP 403), HeHa Sky View (suspended), Sumberwatu (no readable content). Many well-known warungs and cafés, including Kopi Klotok, Bale Raos and Mediterranea, have no official website and were not used.",
+    "sourceUrls": [
+      "docs/content-research/yogyakarta-2026-11-24.md",
+      "docs/content-research/yogyakarta-2026-11-24.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Museum Affandi",
+        "url": "https://www.affandi.org/",
+        "checkedOn": "2026-11-24",
+        "reason": "Address and daily hours published, but the home page carries 'Pengumuman revitalisasi resmi' (official revitalisation announcement) images uploaded October 2026 whose text could not be read; operating status unclear, so not used."
+      },
+      {
+        "name": "Malioboro Street",
+        "checkedOn": "2026-11-24",
+        "reason": "public street, no operator website to check"
+      },
+      {
+        "name": "Mediterranea Restaurant by Kamil",
+        "checkedOn": "2026-11-24",
+        "reason": "no official website found (guessed domain did not resolve); only aggregator listings"
+      },
+      {
+        "name": "House of Raminten",
+        "url": "https://www.houseoframinten.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "official domain did not resolve (DNS failure); operator Hamzah site does not describe the restaurant"
+      },
+      {
+        "name": "Bale Raos",
+        "checkedOn": "2026-11-24",
+        "reason": "no official website found"
+      },
+      {
+        "name": "Kopi Klotok",
+        "checkedOn": "2026-11-24",
+        "reason": "no official website found (social media only)"
+      },
+      {
+        "name": "Klinik Kopi",
+        "checkedOn": "2026-11-24",
+        "reason": "no official website found (social media only)"
+      },
+      {
+        "name": "Tempo Gelato",
+        "checkedOn": "2026-11-24",
+        "reason": "no verified official website found"
+      },
+      {
+        "name": "Sate Ratu",
+        "checkedOn": "2026-11-24",
+        "reason": "no official website found"
+      },
+      {
+        "name": "Pasar Beringharjo",
+        "checkedOn": "2026-11-24",
+        "reason": "no readable official city page with current details found"
+      },
+      {
+        "name": "Jogja National Museum",
+        "checkedOn": "2026-11-24",
+        "reason": "official site not located or read; not checked"
+      },
+      {
+        "name": "Museum Gunungapi Merapi",
+        "url": "https://mgm.slemankab.go.id/",
+        "checkedOn": "2026-11-24",
+        "reason": "official site returned HTTP 403"
+      },
+      {
+        "name": "Melia Purosani Yogyakarta",
+        "url": "https://www.melia.com/en/hotels/indonesia/yogyakarta/melia-purosani-yogyakarta",
+        "checkedOn": "2026-11-24",
+        "reason": "official site returned HTTP 403"
+      },
+      {
+        "name": "Hyatt Regency Yogyakarta",
+        "url": "https://www.hyatt.com/hyatt-regency/en-US/jogrj-hyatt-regency-yogyakarta",
+        "checkedOn": "2026-11-24",
+        "reason": "official site returned HTTP 403"
+      },
+      {
+        "name": "Borobudur official park site (borobudurpark.com)",
+        "url": "https://borobudurpark.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "returned HTTP 403; Borobudur confirmed via InJourney ticket site instead"
+      },
+      {
+        "name": "HeHa Sky View",
+        "url": "https://hehaskyview.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "official domain shows a hosting 'suspended' frame; nothing readable"
+      },
+      {
+        "name": "Obelix Hills",
+        "url": "https://obelixhills.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "address published but no hours and no current or dated content (\"News not available\")"
+      },
+      {
+        "name": "Stupa Restaurant (Plataran)",
+        "url": "https://plataran.com/property/stupa-restaurant/",
+        "checkedOn": "2026-11-24",
+        "reason": "address published but no hours or 2026-dated content on its page"
+      },
+      {
+        "name": "Abhayagiri (Sumberwatu Heritage Resort)",
+        "url": "https://sumberwatu.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "official site returned no readable content"
+      },
+      {
+        "name": "Filosofi Kopi",
+        "url": "https://filosofikopi.id/",
+        "checkedOn": "2026-11-24",
+        "reason": "official site lists no Yogyakarta outlet"
+      },
+      {
+        "name": "Greenhost Boutique Hotel (Art Kitchen)",
+        "url": "https://www.greenhosthotel.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "no hours and no 2026-dated content (footer © 2025)"
+      },
+      {
+        "name": "Bakpia Kukus Tugu Jogja",
+        "url": "https://bakpiakukus.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "guessed official domain did not resolve"
+      },
+      {
+        "name": "Sunrise at Borobudur",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Batik workshop",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Prambanan at sunset",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "a gudeg meal",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Yogyakarta market or cafe",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local dinner in Central Yogyakarta",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Prawirotaman",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Kotagede",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Central Yogyakarta",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Central Yogyakarta walk",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Prawirotaman",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Kotagede",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Kotagede",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Borobudur",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Central Yogyakarta",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Sunrise at Borobudur",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Prawirotaman",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Prambanan",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Central Yogyakarta evening",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Prawirotaman",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Kotagede",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Central Yogyakarta",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Borobudur",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Prawirotaman",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Kotagede",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Central Yogyakarta",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Borobudur",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Central Yogyakarta cafe or market",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Batik workshop",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Kotagede",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Kotagede",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Central Yogyakarta",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Central Yogyakarta",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Prawirotaman bakery or market",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Borobudur",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Kotagede",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Central Yogyakarta",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Prambanan",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Kotagede",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Central Yogyakarta",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Prawirotaman",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Kotagede",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Central Yogyakarta",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Central Yogyakarta",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Prawirotaman",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Malioboro Street",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Central Yogyakarta",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Prawirotaman morning market",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Borobudur",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Kotagede",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Central Yogyakarta",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Prawirotaman",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Kotagede",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Borobudur Temple": {
+        "url": "https://ticket.injourneydestination.id/en/borobudur-temple",
+        "sourceType": "official public operator (InJourney Destination Management)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Upper-area tickets on sale, including \"upanat (special temple sandals)\" and a tour guide; Sunrise and Sunset sessions each \"Limited to 100 people per day.\" Operator news on Borobudur dated 23 November 2026."
+      },
+      "Prambanan Temple": {
+        "url": "https://ticket.injourneydestination.id/en/prambanan-temple",
+        "sourceType": "official public operator (InJourney Destination Management)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Entrance ticket on sale covering \"Prambanan Temple, Lumbung Temple, Bubrah Temple, Sewu Temple, and Prambanan Museum\". Ramayana Ballet page publishes a 2026 schedule; operator news dated 23 November 2026."
+      },
+      "Ratu Boko Palace": {
+        "url": "https://ticket.injourneydestination.id/en/ratu-boko-palace",
+        "sourceType": "official public operator (InJourney Destination Management)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "\"Keraton Ratu Boko Entrance Ticket\" on sale; guide services \"available and can be booked and purchased directly on-site.\" Operator's Ratu Boko page lists sunset viewing and Andrawina Restaurant."
+      },
+      "Kraton Yogyakarta (Kagungan Dalem Kedhaton)": {
+        "url": "https://tourism.kratonjogja.id/id-ID/destination/3-kagungan-dalem-kedhaton",
+        "sourceType": "official operator (Keraton Yogyakarta)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Online ticket booking linked; kratonjogja.id article dated 23 November 2026 says the Smarabawana exhibition, \"resmi dibuka pada 7 Maret 2026\", is \"masih terus digelar hingga Januari 2027\". Pentas Srimanganti performances 09:00–11:00 daily except Monday."
+      },
+      "Taman Sari (Kagungan Dalem Tamansari)": {
+        "url": "https://tourism.kratonjogja.id/id-ID/destination/5-kagungan-dalem-tamansari",
+        "sourceType": "official operator (Keraton Yogyakarta)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Online ticket booking linked from the Keraton's 2026 tourism site (footer \"© 2026 Keraton Yogyakarta\"); visitor rules include no skirts or shorts and nothing thrown into the pools."
+      },
+      "Kagungan Dalem Wahanarata": {
+        "url": "https://tourism.kratonjogja.id/id-ID/destination/4-kagungan-dalem-wahanarata",
+        "sourceType": "official operator (Keraton Yogyakarta)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Royal carriage museum with online booking; page describes an AR photobooth, a 180-degree immersive room and a children's AR drawing activity."
+      },
+      "Museum Ullen Sentalu": {
+        "url": "https://ullensentalu.com/berkunjung.html",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Event page for \"World Dance Day 2026 - R.M. Jodjana\" on 29 April 2026; tours priced from Rp 50.000 (Tur Adiluhung Mataram) to Rp 100.000 (English Guided Tour); \"tur berdurasi 45 menit\"; group visits reserved by phone."
+      },
+      "Museum Sonobudoyo": {
+        "url": "https://sonobudoyo.jogjaprov.go.id/en/information",
+        "sourceType": "official public operator (Special Region of Yogyakarta government)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "News posts dated 19 November 2026; information page lists 2026 evening performances (e.g. Wayang Orang, 31 October). Tickets: adults Rp 10.000, children Rp 5.000, foreign tourists Rp 20.000."
+      },
+      "Museum Benteng Vredeburg": {
+        "url": "https://vredeburg.id/",
+        "sourceType": "official public operator (Ministry of Culture, Kemenbud)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "News item \"VREDEBURG COMMUNITY FEST 2026\"; footer © 2026."
+      },
+      "Taman Pintar": {
+        "url": "https://tamanpintar.co.id/",
+        "sourceType": "official operator (initiated by Pemerintah Kota Yogyakarta)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "News dated 12 October 2026 (\"JOGJA EDUCULTURE JOURNEY : LARAS TRILOKA\") and other 2026 events; online ticket button."
+      },
+      "Gembira Loka Zoo": {
+        "url": "https://gembiralokazoo.com/ticket",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Online date-based ticket booking; terms: \"Tiket yang sudah dibeli tidak bisa uangkan kembali\"; children under 90 cm free. Latest dated news is November 2025; footer © 2026."
+      },
+      "Hamzah Batik (Malioboro)": {
+        "url": "https://www.hamzahbatik.co.id/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Articles dated 9–23 November 2026; sells batik tulis, batik cap and batik clothing; links to Javanese cultural performances at the store. No batik workshop mentioned."
+      },
+      "ViaVia Jogja": {
+        "url": "https://www.viaviajogja.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Posts dated 1 September, 5 October and 22 October 2026 (exhibition, Festisale tours, Ketoprak Tobong). Breakfast with locally brewed coffee; takeaway via GrabFood, GoFood and ShopeeFood."
+      },
+      "ViaVia Artisan Bakery": {
+        "url": "https://www.viaviajogja.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Listed on the 2026-dated ViaVia site with handmade pastries, artisan breads, sourdough and pain au chocolat."
+      },
+      "Gudeg Yu Djum Pusat (Karangasem)": {
+        "url": "https://gudegyudjumpusat.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Current product listings (Gudeg Kendil, Gudeg Besek, Gudeg Kaleng) and a YIA airport branch notice; footer \"Copyright © 2026 - Gudeg Yu Djum Pusat\"."
+      },
+      "Kayumanis Coffee Shop (Hotel Tentrem Yogyakarta)": {
+        "url": "https://www.hoteltentrem.com/yogyakarta/dining/kayumanis-coffee-shop/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "À la carte and buffet dining with published service times; footer \"© 2026 - PT Hotel Candi Baru - Hotel Tentrem Yogyakarta\"."
+      },
+      "Summer Palace (Hotel Tentrem Yogyakarta)": {
+        "url": "https://www.hoteltentrem.com/yogyakarta/dining/summer-palace-chinese-restaurant/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Chinese restaurant with published lunch and dinner times on the hotel's 2026-dated site."
+      },
+      "Eboni Bar & Lounge (Hotel Tentrem Yogyakarta)": {
+        "url": "https://www.hoteltentrem.com/yogyakarta/dining/eboni-bar-lounge/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "\"offers snacks, and a large selection of specialty coffees and teas\"; footer © 2026."
+      },
+      "Tentrem Cake Shop (Hotel Tentrem Yogyakarta)": {
+        "url": "https://www.hoteltentrem.com/yogyakarta/dining/tentrem-cake-shop/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "\"pastries, cookies, cakes, chocolates, and pralines\" with published hours; footer © 2026."
+      },
+      "SamaZana Restaurant (Royal Ambarrukmo)": {
+        "url": "https://www.royalambarrukmo.com/a-royal-culinary-experience-awaits/samazana-restaurant/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Christmas dinner bookings for 24 and 25 December 2026, IDR 408,000 net per person; all-day dining overlooking the pool and Royal Garden."
+      },
+      "Punika Deli (Royal Ambarrukmo)": {
+        "url": "https://www.royalambarrukmo.com/a-royal-culinary-experience-awaits/punika-deli/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Coffee from Java and Sumatra, French pastries and artisan breads made daily; site carries December 2026 dining offers."
+      },
+      "Lobby Lounge & Bar (Royal Ambarrukmo)": {
+        "url": "https://www.royalambarrukmo.com/a-royal-culinary-experience-awaits/lobby-lounge-bar/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "\"freshly brewed coffee, elegant afternoon teas, signature cocktails, and a curated selection of wines\"; live piano Monday–Saturday 8–11 PM; site carries December 2026 offers."
+      },
+      "Amanjiwo": {
+        "url": "https://www.aman.com/resorts/amanjiwo",
+        "sourceType": "operator's own site (Aman)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Bookable resort listing \"The Restaurant & Bar\", \"The Pool Terrace\" and \"Joglo Sawah\", plus a \"Sunrise Meditation at Borobudur\" experience; footer \"Copyright 2026, Aman Group S.a.r.l.\""
+      },
+      "Plataran Borobudur": {
+        "url": "https://plataran.com/property/plataran-borobudur/",
+        "sourceType": "operator's own site (Plataran)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Plataran press release dated 12 November 2026 on a wellness programme at Plataran Borobudur. Dining includes Patio Colonial Hall, \"colonial-style dining with views of Borobudur\", and Enam Langit."
+      },
+      "Bakpia Pathok 25 (Pabrik Jaya)": {
+        "url": "https://bakpia25.com/toko-resmi/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Official outlet list of eight shops; charcoal-oven bakpia \"sejak 1981\"; best-seller boxes from Rp36.000; footer \"© 2026 Bakpia Pathok 25\"."
+      },
+      "The Phoenix Hotel Yogyakarta (Vino Bar)": {
+        "url": "https://all.accor.com/gb/hotel-5451-the-phoenix-hotel-yogyakarta-mgallery-collection/index.shtml",
+        "sourceType": "operator's own site (Accor)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Live Accor booking page for the hotel (now \"Handwritten Collection\") listing Paprika, 1918's Terrace Lounge and Vino Bar."
+      }
+    }
+  },
   "Hue, Vietnam": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-11-23",

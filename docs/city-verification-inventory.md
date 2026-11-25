@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 112.
-- Classifier-passed (published, not fully documented in that format): 80.
+- Source-verified (complete dated evidence format): 113.
+- Classifier-passed (published, not fully documented in that format): 79.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -502,7 +502,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Wulingyuan, China | wulingyuan | classifier-passed | not-reviewed | 0 | 5 | 15 | 3 | None |
 | Xi'an, China | xian | source-verified | source-checked | 19 | 36 | 14 | 14 | None |
 | Yellowstone National Park, United States | yellowstone | classifier-passed | not-reviewed | 0 | 8 | 15 | 4 | None |
-| Yogyakarta, Indonesia | yogyakarta | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Yogyakarta, Indonesia | yogyakarta | source-verified | source-checked | 26 | 47 | 15 | 15 | None |
 | Yokohama, Japan | yokohama | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | York, United Kingdom | york | source-verified | source-checked | 26 | 54 | 15 | 15 | None |
 | Zagreb, Croatia | zagreb | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
