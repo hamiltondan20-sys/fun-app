@@ -12270,4 +12270,106 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 24 distinct recommendations in this guide were checked against their operators' own websites on November 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Ayutthaya, Thailand: source review of 2026-11-25 (docs/content-research/ayutthaya-2026-11-25.md).
+  {
+    const cityKey = "Ayutthaya, Thailand";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Wat Mahathat","Wat Chaiwatthanaram","Ayutthaya Historical Park","Wat Phra Si Sanphet"],
+      bestFirstTimers: ["Ayutthaya Historical Park","Wat Mahathat","Wat Ratchaburana","Chao Sam Phraya National Museum"],
+      bestRestaurants: ["Baan Pomphet","House of Kin (Centara Ayutthaya)","Sala Ayutthaya Eatery and Bar","Suan Rim Nam Restaurant (Krungsri River Hotel)"],
+      bestBudget: ["Wat Kudi Dao","Wat Maheyong","Wat Phra Ram","Chantharakasem National Museum"],
+      bestLuxury: ["Sala Ayutthaya Eatery and Bar","Sala Ayutthaya Rooftop Lounge & Bar","Elephantstay (Royal Elephant Kraal & Village)"],
+      bestCouples: ["Sala Ayutthaya Rooftop Lounge & Bar","Wat Chaiwatthanaram","Suan Rim Nam Restaurant (Krungsri River Hotel)","1350 Rooftop Bar (Centara Ayutthaya)"],
+      bestKids: ["Japanese Village","Elephantstay (Royal Elephant Kraal & Village)","Chao Sam Phraya National Museum"],
+      bestSolo: ["Chantharakasem National Museum","Arts of the Kingdom Museum","The Summer Coffee (Centara Ayutthaya)"],
+      bestUnique: ["Elephantstay (Royal Elephant Kraal & Village)","Arts of the Kingdom Museum","Japanese Village","Wat Maheyong"],
+      bestBreakfast: ["House of Kin (Centara Ayutthaya)","Sala Ayutthaya Eatery and Bar","Pa Sak Coffee Shop (Krungsri River Hotel)"],
+      bestLunch: ["Baan Pomphet","Sala Ayutthaya Eatery and Bar","House of Kin (Centara Ayutthaya)"],
+      bestDinner: ["Baan Pomphet","House of Kin (Centara Ayutthaya)","Suan Rim Nam Restaurant (Krungsri River Hotel)"],
+      bestCocktails: ["Sala Ayutthaya Rooftop Lounge & Bar","1350 Rooftop Bar (Centara Ayutthaya)"],
+      bestBakeries: ["The Summer Coffee (Centara Ayutthaya)"],
+      bestCoffee: ["The Summer Coffee (Centara Ayutthaya)","Sala Ayutthaya Rooftop Lounge & Bar","Pa Sak Coffee Shop (Krungsri River Hotel)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Wat Mahathat": "Wat Mahathat Pratu Chai Ayutthaya",
+      "Wat Chaiwatthanaram": "Wat Chaiwatthanaram Chao Phraya River west bank Ayutthaya",
+      "Ayutthaya Historical Park": "Ayutthaya Historical Park 196 Khlong Tho Road Pratu Chai Ayutthaya",
+      "Wat Phra Si Sanphet": "Wat Phra Si Sanphet Pratu Chai Ayutthaya",
+      "Wat Ratchaburana": "Wat Ratchaburana Pratu Chai Ayutthaya",
+      "Chao Sam Phraya National Museum": "Chao Sam Phraya National Museum 108 Pridi Banomyong Road Ayutthaya",
+      "Baan Pomphet": "Baan Pomphet Naresuan Road Tha Wasukri Ayutthaya",
+      "House of Kin (Centara Ayutthaya)": "Centara Ayutthaya 129/4 Moo 3 Khlong Suan Phlu Ayutthaya",
+      "Sala Ayutthaya Eatery and Bar": "Sala Ayutthaya 9/2 U-Thong Road Ayutthaya",
+      "Suan Rim Nam Restaurant (Krungsri River Hotel)": "Krungsri River Hotel 27/2 Rojana Road Kamang Ayutthaya",
+      "Wat Kudi Dao": "Wat Kudi Dao Phai Ling Ayutthaya",
+      "Wat Maheyong": "Wat Maheyong Han Tra Ayutthaya",
+      "Wat Phra Ram": "Wat Phra Ram Bueng Phra Ram Ayutthaya",
+      "Chantharakasem National Museum": "Chantharakasem National Museum U Thong Road Hua Ro Ayutthaya",
+      "Sala Ayutthaya Rooftop Lounge & Bar": "Sala Ayutthaya 9/2 U-Thong Road Ayutthaya",
+      "Elephantstay (Royal Elephant Kraal & Village)": "Elephantstay Royal Elephant Kraal 74/1 Moo 3 Suan Phrik Ayutthaya",
+      "1350 Rooftop Bar (Centara Ayutthaya)": "Centara Ayutthaya 129/4 Moo 3 Khlong Suan Phlu Ayutthaya",
+      "Japanese Village": "Japanese Village Koh Rian Ayutthaya",
+      "Arts of the Kingdom Museum": "Arts of the Kingdom Museum Koh Kerd Bang Pa-in Ayutthaya",
+      "The Summer Coffee (Centara Ayutthaya)": "Centara Ayutthaya 129/4 Moo 3 Khlong Suan Phlu Ayutthaya",
+      "Pa Sak Coffee Shop (Krungsri River Hotel)": "Krungsri River Hotel 27/2 Rojana Road Kamang Ayutthaya"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Ayutthaya" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Temple ruins, national museums and riverside hotel dining in Ayutthaya, with breakfast rooms, rooftop bars and a café-bakery checked against their own websites.";
+    cityGuide.highlights = ["Wat Mahathat","Wat Chaiwatthanaram","Wat Phra Si Sanphet","Chao Sam Phraya National Museum"];
+    cityGuide.tip = "Plan museums around their closing days: the Chao Sam Phraya Gold building's 2022 notice says it is closed on Mondays, and the Arts of the Kingdom Museum is closed on Mondays and Tuesdays.";
+    data.destinationFacts[cityKey] = "Plan museums around their closing days: the Chao Sam Phraya Gold building's 2022 notice says it is closed on Mondays, and the Arts of the Kingdom Museum is closed on Mondays and Tuesdays.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Temple ruins, national museums and riverside hotel dining in Ayutthaya, with breakfast rooms, rooftop bars and a café-bakery checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays and Tuesdays",
+        "copy": "The Chao Sam Phraya National Museum's Gold building is closed on Mondays (2022 notice). The Arts of the Kingdom Museum is closed on Mondays, Tuesdays, the New Year holidays and Songkran."
+      },
+      {
+        "label": "Temple tickets",
+        "value": "80 baht single, 300 baht combined",
+        "copy": "The Fine Arts Department's 2026 notice gives foreign visitors 80 baht for one site or 300 baht for a combined ticket. It covers Wat Mahathat, Wat Ratchaburana, Wat Phra Ram, Wat Phra Si Sanphet, Wat Chaiwatthanaram, Wat Maheyong and Wat Kudi Dao."
+      },
+      {
+        "label": "Booking",
+        "value": "Reserve shuttle and elephant days",
+        "copy": "The free Arts of the Kingdom Museum shuttle from Bangkok runs Wednesday to Sunday until 26 December 2026 and needs advance reservation. Elephantstay takes bookings by email, or by phone with less than 24 hours' notice."
+      },
+      {
+        "label": "Arrival rules",
+        "value": "9:30am, cash only",
+        "copy": "Elephantstay asks you to arrive at 9:30am with no exceptions and to pay in Thai baht cash on arrival. Its family package needs at least one child aged 12 or under."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Start at the island temples early, then plan museum visits around their Monday and Tuesday closures.",
+      intro: [
+        "Ayutthaya Historical Park is run by the Fine Arts Department, and its 2026 notice prices one site at 80 baht for foreign visitors. A 300-baht combined ticket covers seven sites. On the island, Wat Mahathat stands beside Wat Ratchaburana, and the department's site page notes the eight-sided tiered chedi and the Buddha head held in tree roots. Wat Phra Si Sanphet occupies the former royal palace grounds in Pratu Chai, with three large bell-shaped chedis. Wat Phra Ram faces its old reservoir, now Bueng Phra Ram public park.",
+        "Across the Chao Phraya on the west bank, Wat Chaiwatthanaram hosts the park's larger events. Off the island, the combined ticket also covers Wat Maheyong in Han Tra, where about 80 stucco elephants ring the chedi. The ticket also covers Wat Kudi Dao in Phai Ling, whose east side faces the Wat Maheyong entrance. Neither site page publishes opening hours, so you should arrive in daylight and confirm times locally.",
+        "For context, the Chao Sam Phraya National Museum on Pridi Banomyong Road displays 2,244 objects in its Ayutthaya Gold building. Many came from the Wat Ratchaburana crypt, and its 2022 notice gives Tuesday to Sunday, 09.00–16.00. Chantharakasem National Museum sits on U Thong Road in Hua Ro. Further south, the Arts of the Kingdom Museum in Koh Kerd opens Wednesday to Sunday, 10:00 AM to 3:30 PM. Its free shuttle from Bangkok runs until 26 December 2026 and needs advance reservation. The Japanese Village lists daily hours of 9.30 a.m. to 17.00.",
+        "For food, Centara Ayutthaya's House of Kin serves breakfast from 06:30, and its 1350 Rooftop Bar opens 17:00–24:00. The hotel's Summer Coffee café and bakery is open 07:00–21:00. On U-Thong Road, Sala Ayutthaya's Eatery and Bar lists daily hours of 7:00 am to 10:00 pm, and its Rooftop Lounge & Bar serves cocktails until 10:00 pm. Both sets of Sala hours come from a page last marked 2024. Baan Pomphet opens for lunch and dinner and takes reservations by phone or email."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Buy the combined Fine Arts Department ticket and start at Wat Mahathat and Wat Ratchaburana, then cross to Wat Chaiwatthanaram."
+        ],
+        [
+          "A slower morning",
+          "Have breakfast at House of Kin from 06:30, then visit the Chao Sam Phraya National Museum, which its 2022 notice says is closed on Mondays."
+        ],
+        [
+          "Before booking",
+          "Avoid Mondays and Tuesdays for the Arts of the Kingdom Museum, and reserve its free Bangkok shuttle in advance."
+        ]
+      ],
+      trust: "All 21 distinct recommendations in this guide were checked against their operators' own websites on November 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 117.
-- Classifier-passed (published, not fully documented in that format): 75.
+- Source-verified (complete dated evidence format): 118.
+- Classifier-passed (published, not fully documented in that format): 74.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -66,7 +66,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Aveiro, Portugal | aveiro | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Avignon, France | avignon | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Ayder, Turkey | ayder | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Ayutthaya, Thailand | ayutthaya | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Ayutthaya, Thailand | ayutthaya | source-verified | source-checked | 21 | 38 | 15 | 15 | None |
 | Baa Atoll, Maldives | baa-atoll | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Baalbek and Byblos, Lebanon | baalbek | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Bagan and Mandalay, Myanmar | bagan | classifier-passed | not-reviewed | 0 | 5 | 15 | 3 | None |

@@ -5,6 +5,458 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Ayutthaya, Thailand": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-11-25",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. The Fine Arts Department's site pages for individual temples publish no opening hours. The department's older service page gives foreign fees of 50 baht single and 220 baht combined, which differ from the 2026 notice used here (80 and 300 baht). Chao Sam Phraya museum hours and its Monday closure come from a December 2022 notice and were not restated on a 2026 page. Chantharakasem museum hours were not published on the pages read. Sala Ayutthaya hours come from pages marked 2024. Baan Pomphet, Elephantstay and both Krungsri River Hotel outlets had no dated 2026 text, and the Krungsri River outlets publish no hours. The Japanese Village's new admission fees are only in an image. Baan Hollanda returned nothing readable, Kantary's hotel site returned 403, Classic Kameo's domain did not resolve, Baan Thai House had a certificate error, and the Starbucks Thailand store locator returned 403. No official sites were found for Bang Pa-In Palace, Wat Phanan Choeng, Wat Yai Chai Mongkhon or several well-known local restaurants, so they are omitted. Only 21 places could be confirmed, below the 25 to 35 target.",
+    "sourceUrls": [
+      "docs/content-research/ayutthaya-2026-11-25.md",
+      "docs/content-research/ayutthaya-2026-11-25.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "boat noodles or riverside Thai dinner",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Old city island local table",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Ayutthaya signature dinner",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Old city island walk",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Riverside temples public viewpoint",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market or picnic near Ayutthaya market",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Wat Mahathat",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "a sunset temple view",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Destination dinner near Ayutthaya market",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset around Wat Chaiwatthanaram",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Old city island dinner",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Wat Mahathat",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Riverside temples",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Ayutthaya market",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Wat Mahathat",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Old city island cafe or market",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Riverside temples route",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Riverside temples at a quieter hour",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Ayutthaya market local rhythm",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Old city island",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Riverside temples bakery or market",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Wat Mahathat",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "boat noodles or riverside Thai lunch",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Wat Chaiwatthanaram",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Ayutthaya market",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Evening table in Old city island",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Old city island",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Riverside temples",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Ayutthaya Historical Park",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Old city island",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Riverside temples morning market",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Wat Mahathat",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Old city island",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Riverside temples",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Ayutthaya market",
+        "checkedOn": "2026-11-25",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Baan Hollanda",
+        "url": "https://baanhollanda.org/",
+        "checkedOn": "2026-11-25",
+        "reason": "Official site returned no readable content (home page and posts empty to automated fetch)"
+      },
+      {
+        "name": "Kantary Hotel Ayutthaya (California Steak, Café Kantary)",
+        "url": "https://www.kantarycollection.com/offers/ayu/specialoffer_contents.php",
+        "checkedOn": "2026-11-25",
+        "reason": "Hotel domain returned HTTP 403. The group offers page has a Christmas 2026 buffet but no address or venue names"
+      },
+      {
+        "name": "Classic Kameo Hotel Ayutthaya",
+        "url": "https://www.classickameo.com/",
+        "checkedOn": "2026-11-25",
+        "reason": "Official domain did not resolve (DNS failure)"
+      },
+      {
+        "name": "Baan Thai House",
+        "url": "https://www.baanthaihouse.com/",
+        "checkedOn": "2026-11-25",
+        "reason": "Certificate error (certificate belongs to another domain); not bypassed"
+      },
+      {
+        "name": "iuDia on the River",
+        "url": "https://www.iudia.com/",
+        "checkedOn": "2026-11-25",
+        "reason": "Official site shows no current content (footer \"Copyright © 2017\") and no street address"
+      },
+      {
+        "name": "Ayothaya Floating Market",
+        "url": "https://ayothayafloatingmarket.in.th/en/ayothaya-floating-market.php",
+        "checkedOn": "2026-11-25",
+        "reason": "Official page lists address and hours but has no current evidence (\"©2017\"); house number differs between Thai and English text"
+      },
+      {
+        "name": "Ancient Royal Palace (Wang Luang)",
+        "url": "https://qrcode.finearts.go.th/index.php/th/historicalpark/phranakhonsriayutthaya/ayutthaya-02/ayutthaya-02-002/item/320-ayutthaya02-042",
+        "checkedOn": "2026-11-25",
+        "reason": "Fine Arts page gives history but no usable exact location; covered under Wat Phra Si Sanphet"
+      },
+      {
+        "name": "Wat Lokayasutharam",
+        "url": "https://www.finearts.go.th/ayutthayahistoricalpark",
+        "checkedOn": "2026-11-25",
+        "reason": "Latest official item is a 2024 restoration procurement notice; no 2026 operating evidence"
+      },
+      {
+        "name": "Bang Pa-In Palace",
+        "url": "https://www.royalgrandpalace.th/en/attraction",
+        "checkedOn": "2026-11-25",
+        "reason": "No official operator page found; the Bureau of the Royal Household site does not list it"
+      },
+      {
+        "name": "Wat Phanan Choeng",
+        "checkedOn": "2026-11-25",
+        "reason": "No official site found (only provincial tourism listing, which is excluded)"
+      },
+      {
+        "name": "Wat Yai Chai Mongkhon",
+        "checkedOn": "2026-11-25",
+        "reason": "No official site found (only provincial tourism listing, which is excluded)"
+      },
+      {
+        "name": "Ayutthaya Historical Study Centre",
+        "checkedOn": "2026-11-25",
+        "reason": "No official site found"
+      },
+      {
+        "name": "Bang Sai Royal Folk Arts and Crafts Centre",
+        "checkedOn": "2026-11-25",
+        "reason": "No official site found"
+      },
+      {
+        "name": "Starbucks (Central Ayutthaya / Ayutthaya City Park)",
+        "url": "https://www.starbucks.co.th/en/find-a-store/",
+        "checkedOn": "2026-11-25",
+        "reason": "Starbucks Thailand store locator returned HTTP 403"
+      },
+      {
+        "name": "S&P Restaurant & Bakery (Ayutthaya branches)",
+        "url": "https://www.snpfood.com/en/intro-page",
+        "checkedOn": "2026-11-25",
+        "reason": "Official site redirects to a non-https intro page with no branch locator"
+      },
+      {
+        "name": "After You (Central Ayutthaya)",
+        "url": "https://www.afteryoudessertcafe.com/",
+        "checkedOn": "2026-11-25",
+        "reason": "Official site returned no readable branch content"
+      },
+      {
+        "name": "Black Canyon Coffee (Ayutthaya)",
+        "url": "https://www.blackcanyoncoffee.com/",
+        "checkedOn": "2026-11-25",
+        "reason": "Official site has no readable branch locator"
+      },
+      {
+        "name": "Central Ayutthaya",
+        "url": "https://www.centralpattana.co.th/en/our-business/shopping-center/530/central-ayutthaya",
+        "checkedOn": "2026-11-25",
+        "reason": "Operator page has opening date (30 November 2021) and location but no current content; branch directory host did not resolve"
+      },
+      {
+        "name": "Woraburi Ayutthaya",
+        "url": "https://www.woraburi.com/",
+        "checkedOn": "2026-11-25",
+        "reason": "Domain now serves an unrelated gambling page; no hotel content"
+      },
+      {
+        "name": "The Summer Coffee Company (Old Town)",
+        "checkedOn": "2026-11-25",
+        "reason": "No official website found (social media only)"
+      },
+      {
+        "name": "Saithong River Restaurant",
+        "checkedOn": "2026-11-25",
+        "reason": "No official website found"
+      },
+      {
+        "name": "Ruan Thai Kung Pao",
+        "checkedOn": "2026-11-25",
+        "reason": "No official website found"
+      },
+      {
+        "name": "Roti Sai Mai Abeedeen",
+        "checkedOn": "2026-11-25",
+        "reason": "No official website found"
+      },
+      {
+        "name": "Phae Krung Kao",
+        "checkedOn": "2026-11-25",
+        "reason": "No official website found"
+      }
+    ],
+    "placeSources": {
+      "Ayutthaya Historical Park": {
+        "url": "https://www.finearts.go.th/ayutthayahistoricalpark",
+        "sourceType": "official public operator (Fine Arts Department, Ministry of Culture)",
+        "checkedOn": "2026-11-25",
+        "operatingEvidence": "Fine Arts Department notices for 2569 (2026): Songkran at Wat Chaiwatthanaram on 9–13 April 2569, organised by the park, with a single ticket at 10 baht for Thai and 80 baht for foreign visitors and a combined ticket at 40/300 baht covering seven sites (https://www.finearts.go.th/promotion/view/63042). January 2569 night visits are listed at https://www.finearts.go.th/promotion/view/61910."
+      },
+      "Wat Mahathat": {
+        "url": "https://qrcode.finearts.go.th/index.php/th/historicalpark/phranakhonsriayutthaya/ayutthaya-02/ayutthaya-02-002/item/330-ayutthaya02-052",
+        "sourceType": "official public operator (Fine Arts Department)",
+        "checkedOn": "2026-11-25",
+        "operatingEvidence": "Named among the seven sites on the combined ticket in the park's 2569 (2026) Songkran notice (https://www.finearts.go.th/promotion/view/63042). The site page describes the eight-sided tiered chedi and the Buddha head held in tree roots."
+      },
+      "Wat Ratchaburana": {
+        "url": "https://qrcode.finearts.go.th/index.php/th/historicalpark/phranakhonsriayutthaya/ayutthaya-02/ayutthaya-02-002/item/334-ayutthaya02-056",
+        "sourceType": "official public operator (Fine Arts Department)",
+        "checkedOn": "2026-11-25",
+        "operatingEvidence": "Named on the combined ticket in the park's 2569 (2026) Songkran notice (https://www.finearts.go.th/promotion/view/63042). The site page notes its crypt treasures are displayed at the Chao Sam Phraya National Museum."
+      },
+      "Wat Phra Si Sanphet": {
+        "url": "https://qrcode.finearts.go.th/index.php/th/historicalpark/phranakhonsriayutthaya/ayutthaya-02/ayutthaya-02-002/item/321-ayutthaya02-043",
+        "sourceType": "official public operator (Fine Arts Department)",
+        "checkedOn": "2026-11-25",
+        "operatingEvidence": "\"Wat Phra Si Sanphet and the Royal Palace\" are named on the combined ticket in the park's 2569 (2026) Songkran notice (https://www.finearts.go.th/promotion/view/63042)."
+      },
+      "Wat Phra Ram": {
+        "url": "https://qrcode.finearts.go.th/index.php/th/historicalpark/phranakhonsriayutthaya/ayutthaya-02/ayutthaya-02-002/item/322-ayutthaya02-044",
+        "sourceType": "official public operator (Fine Arts Department)",
+        "checkedOn": "2026-11-25",
+        "operatingEvidence": "Night visits on Friday to Sunday at Wat Chaiwatthanaram and Wat Phra Ram are listed for 16–18 January 2569 (2026) (https://www.finearts.go.th/promotion/view/61910). The temple is also on the 2026 combined ticket."
+      },
+      "Wat Chaiwatthanaram": {
+        "url": "https://qrcode.finearts.go.th/index.php/th/historicalpark/phranakhonsriayutthaya/ayutthaya-02/ayutthaya02-004/item/301-ayutthaya02-023",
+        "sourceType": "official public operator (Fine Arts Department)",
+        "checkedOn": "2026-11-25",
+        "operatingEvidence": "Venue of the park's Songkran event on 9–13 April 2569 (2026), 09.00–21.00 (https://www.finearts.go.th/promotion/view/63042), and the main stage for the 2569 Ayutthaya Nawa night programme (https://www.finearts.go.th/promotion/view/61910)."
+      },
+      "Wat Maheyong": {
+        "url": "https://qrcode.finearts.go.th/index.php/th/historicalpark/phranakhonsriayutthaya/ayutthaya-02/ayutthaya02-003/item/332-ayutthaya02-054",
+        "sourceType": "official public operator (Fine Arts Department)",
+        "checkedOn": "2026-11-25",
+        "operatingEvidence": "Named on the combined ticket in the park's 2569 (2026) Songkran notice (https://www.finearts.go.th/promotion/view/63042). The site page describes the chedi ringed by about 80 stucco elephants."
+      },
+      "Wat Kudi Dao": {
+        "url": "https://qrcode.finearts.go.th/index.php/th/historicalpark/phranakhonsriayutthaya/ayutthaya-02/ayutthaya02-003/item/270-ayutthaya02-001",
+        "sourceType": "official public operator (Fine Arts Department)",
+        "checkedOn": "2026-11-25",
+        "operatingEvidence": "Named on the combined ticket in the park's 2569 (2026) Songkran notice (https://www.finearts.go.th/promotion/view/63042). The site page says its east side faces the entrance to Wat Maheyong."
+      },
+      "Chao Sam Phraya National Museum": {
+        "url": "https://www.finearts.go.th/chawsampraya",
+        "sourceType": "official public operator (Fine Arts Department)",
+        "checkedOn": "2026-11-25",
+        "operatingEvidence": "The ministry's night-museum programme for fiscal 2569 lists weekend talks here and a Thai-cat contest on 11 January 2569 (2026) (https://www.finearts.go.th/promotion/view/61396-). The Ayutthaya Gold building shows 2,244 objects (https://www.finearts.go.th/promotion/view/37900-)."
+      },
+      "Chantharakasem National Museum": {
+        "url": "https://www.finearts.go.th/chantarakasemmuseum/contact",
+        "sourceType": "official public operator (Fine Arts Department)",
+        "checkedOn": "2026-11-25",
+        "operatingEvidence": "The ministry's fiscal 2569 programme lists \"Night at the Palace\" here, November 2568 – February 2569 (to February 2026), 17.00–21.00 (https://www.finearts.go.th/promotion/view/61396-)."
+      },
+      "Arts of the Kingdom Museum": {
+        "url": "https://www.royalgrandpalace.th/en/attraction/arts-of-kingdom",
+        "sourceType": "official public operator (Bureau of the Royal Household, royalgrandpalace.th)",
+        "checkedOn": "2026-11-25",
+        "operatingEvidence": "Free shuttle bus from Bangkok \"DURING AUGUST 12 – DECEMBER 26, 2026\", Wednesday to Sunday, \"ADVANCE RESERVATION REQUIRED\". Shows masterpieces from the Queen Sirikit Institute."
+      },
+      "Japanese Village": {
+        "url": "https://www.japanesevillage.org/contact/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-25",
+        "operatingEvidence": "Dated posts on https://www.japanesevillage.org/: \"Announcement: New Admission Fees\" (29 October 2026) and \"LOY KRATHONG NIGHT 2026 AT JAPANESE VILLAGE, AYUTTHAYA\" (11 November 2026)."
+      },
+      "Elephantstay (Royal Elephant Kraal & Village)": {
+        "url": "https://www.elephantstay.com/bookings/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-25",
+        "operatingEvidence": "Bookings page takes reservations by email for 1-day to 14-day stays (1 day from 5,000 baht for one person). Arrival is at 9:30am, with no exceptions, and payment is in cash, Thai baht, on arrival. No dated 2026 text."
+      },
+      "Sala Ayutthaya Eatery and Bar": {
+        "url": "https://www.salahospitality.com/ayutthaya/eat-drink/ayutthaya-eatery-bar/",
+        "sourceType": "operator's own site (SALA Hospitality)",
+        "checkedOn": "2026-11-25",
+        "operatingEvidence": "Hotel home page carries an offer \"Now available until 25th November 2026\". The eatery page links breakfast (October 2025) and all-day menus (December 2025) and takes reservations online."
+      },
+      "Sala Ayutthaya Rooftop Lounge & Bar": {
+        "url": "https://www.salahospitality.com/ayutthaya/eat-drink/rooftop-lounge-and-bar/",
+        "sourceType": "operator's own site (SALA Hospitality)",
+        "checkedOn": "2026-11-25",
+        "operatingEvidence": "The page links a 2026 dessert menu and takes reservations online. It serves coffee and sweets by day and cocktails, craft beer and wine in the evening."
+      },
+      "Baan Pomphet": {
+        "url": "https://baanpomphet.com/dine/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-25",
+        "operatingEvidence": "\"Open for Lunch and Dinner.\" Links a 2025 menu. Reservations by phone (+66 35 242242) or email."
+      },
+      "House of Kin (Centara Ayutthaya)": {
+        "url": "https://www.centarahotelsresorts.com/centara/cay/restaurants-and-bars",
+        "sourceType": "operator's own site (Centara Hotels & Resorts)",
+        "checkedOn": "2026-11-25",
+        "operatingEvidence": "Page dated \"Copyright 2026\" with an online restaurant booking form. All-day Thai and international dining overlooking a lotus pond."
+      },
+      "1350 Rooftop Bar (Centara Ayutthaya)": {
+        "url": "https://www.centarahotelsresorts.com/centara/cay/restaurants-and-bars",
+        "sourceType": "operator's own site (Centara Hotels & Resorts)",
+        "checkedOn": "2026-11-25",
+        "operatingEvidence": "Listed on the \"Copyright 2026\" dining page, which has a booking form. A rooftop bar with wood-fired pizzas and charcoal-grilled dishes."
+      },
+      "The Summer Coffee (Centara Ayutthaya)": {
+        "url": "https://www.centarahotelsresorts.com/centara/cay/restaurants-and-bars",
+        "sourceType": "operator's own site (Centara Hotels & Resorts)",
+        "checkedOn": "2026-11-25",
+        "operatingEvidence": "Listed on the \"Copyright 2026\" dining page as a café and bakery with freshly brewed coffee, baked goods and a tree-filled garden."
+      },
+      "Suan Rim Nam Restaurant (Krungsri River Hotel)": {
+        "url": "https://krungsririver.com/?page_id=168",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-25",
+        "operatingEvidence": "Dining page lists traditional Thai cuisine on a riverside terrace. The hotel's online booking engine is live, but no dated 2026 dining text was found."
+      },
+      "Pa Sak Coffee Shop (Krungsri River Hotel)": {
+        "url": "https://krungsririver.com/?page_id=168",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-25",
+        "operatingEvidence": "Dining page lists Thai and continental menus for all three meals. The hotel's online booking engine is live, but no dated 2026 dining text was found."
+      }
+    }
+  },
   "Krabi, Thailand": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-11-25",
