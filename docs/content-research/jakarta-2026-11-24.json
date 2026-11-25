@@ -1,0 +1,1022 @@
+{
+  "city": "Jakarta, Indonesia",
+  "checkedOn": "2026-11-24",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Museum Nasional Indonesia",
+      "kind": "museum",
+      "url": "https://www.museumnasional.or.id/layanan-blu",
+      "sourceType": "operator's own site (Museum Nasional Indonesia)",
+      "address": "Jl. Medan Merdeka Barat No.12, Kota Jakarta Pusat, Daerah Khusus Jakarta, Indonesia",
+      "operatingEvidence": "Ticket and hours page gives hours in effect from 1 April 2026; ARAMSA article dated 4 February 2026 describes free admission 'Rabu pada minggu kedua setiap bulan' 16.00-20.00. Article dated 19 December 2025 says the permanent 'Sejarah Awal' exhibition with the Homo erectus (Java Man) fossil opened to the public on 18 December 2025 with no extra ticket.",
+      "hours": "Tuesday-Thursday 08.00-18.00 WIB; Friday-Sunday 08.00-20.00 WIB; 'Tutup setiap Senin dan Hari Libur Nasional'. ARAMSA: second Wednesday of each month 16.00-20.00 WIB. Foreign visitors Rp150.000; imersifA Rp35.000 and requires a museum ticket.",
+      "confidence": "high"
+    },
+    {
+      "name": "Museum MACAN",
+      "kind": "museum",
+      "url": "https://www.museummacan.org/exhibition/Ketok-Magic",
+      "sourceType": "operator's own site",
+      "address": "AKR Tower Level M, Jalan Panjang No. 5 Kebon Jeruk, Jakarta Barat 11530, Indonesia",
+      "operatingEvidence": "Current exhibition 'Tromarama: Ketok Magic' runs 14 November 2026 to 4 April 2027, with Eko Nugroho, Iwan Effendi, Libby Heaney and Mira Rizki presentations on the same dates. Online ticketing: 'Tiket dapat dibeli secara online hingga tengah malam sebelum waktu kunjungan Anda.'",
+      "hours": "'Selasa-Minggu: 10.00-18.00 WIB'; 'Senin Museum tutup'; 'Akses terakhir 17.30 WIB'",
+      "confidence": "high"
+    },
+    {
+      "name": "Masjid Istiqlal",
+      "kind": "landmark",
+      "url": "https://www.istiqlal.or.id/",
+      "sourceType": "operator's own site (Badan Pengelola Masjid Istiqlal)",
+      "address": "Jalan Taman Wijaya Kusuma, Ps. Baru, Kecamatan Sawah Besar, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10710",
+      "operatingEvidence": "Friday sermon card shows 'Release: 20 Nov 2026'; daily schedule labelled November 2026. 'Reservasi Kunjungan' offers official registration for domestic and foreign group visits via the BPMI Humas & Protokol team.",
+      "hours": "Visitor hours not published (office hours only: Monday-Friday 08.00-16.00 WIB)",
+      "confidence": "high"
+    },
+    {
+      "name": "Jakarta Cathedral",
+      "kind": "landmark",
+      "url": "https://www.katedraljakarta.or.id/",
+      "sourceType": "operator's own site (Paroki Katedral Jakarta)",
+      "address": "Jl. Katedral No. 7B, Pasar Baru, Jakarta Pusat 10710",
+      "operatingEvidence": "Parish news dated 2026, including the installation of the 2026-2029 parish council on 17 January 2026 and a May 2026 devotion. Mass schedule published with the rule 'Berpakaian rapi dan sopan.'",
+      "hours": "Mass Monday-Friday 06:00 and 18:00; Saturday 06:00, 16:00, 18:00; Sunday 06:00, 08:30, 11:00, 16:30, 19:00. Parish secretariat Monday-Saturday 08:00-20:00, Sunday 08:00-15:00, closed Wednesdays and national holidays.",
+      "confidence": "high"
+    },
+    {
+      "name": "Ragunan Zoo",
+      "kind": "park",
+      "url": "https://ragunanzoo.jakarta.go.id/",
+      "sourceType": "official public operator (Jakarta provincial government, Taman Margasatwa Ragunan)",
+      "address": "Jl. Harsono RM. No. 1, Ragunan, Pasar Minggu, Jakarta Selatan 12550 Indonesia",
+      "operatingEvidence": "News items dated 10 November 2026 and 17 October 2026. Ticket page: 'Pembayaran Tiket Masuk menggunakan Kartu Jakcard Bank DKI'; adult entry Rp 4,000, child Rp 3,000.",
+      "hours": "Tuesday-Sunday 07.00-16.00 WIB; closed Mondays ('Senin adalah hari libur satwa di Taman Margasatwa Ragunan')",
+      "confidence": "high"
+    },
+    {
+      "name": "Taman Mini Indonesia Indah",
+      "kind": "park",
+      "url": "https://www.tamanmini.com/",
+      "sourceType": "operator's own site",
+      "address": "Jl Raya Taman Mini, Jakarta Timur. DKI Jakarta, Indonesia.",
+      "operatingEvidence": "Footer 'Copyright TMII 2026'; tickets sold online at tiket.tamanmini.com with group pricing for more than 10 tickets. Dated events shown are from 2024-early 2025 only.",
+      "hours": "not published (home page refers to the ticket page, which did not load readable content)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Galeri Indonesia Kaya",
+      "kind": "museum",
+      "url": "https://indonesiakaya.com/kunjungi-kami/galeri-indonesia-kaya/",
+      "sourceType": "operator's own site (Indonesia Kaya)",
+      "address": "Grand Indonesia-West Mall Lantai 8, Jl. M.H. Thamrin No.1, Jakarta Pusat 10230",
+      "operatingEvidence": "Event page lists 'Dialog Dari Dalam Rumah' on '28 November 2026', admission 'Gratis', with reservation links per session. Venue page describes its programmes as free ('secara gratis').",
+      "hours": "'Jam Operasional 10.00 - 21.30 WIB'; closing days not stated",
+      "confidence": "high"
+    },
+    {
+      "name": "Café Batavia",
+      "kind": "meal",
+      "url": "https://www.cafebatavia.com/",
+      "sourceType": "operator's own site",
+      "address": "Jl. Pintu Besar Utara no. 14, Kota Tua, Jakarta Barat, Jakarta 11230",
+      "operatingEvidence": "Current menu (Rujak Kepiting, Nasi Goreng Roa, Putri Mandi) and cocktails (Senja Kota, Historia, The Ronde); table reservations by phone, email or WhatsApp. No dated 2026 content.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Tugu Kunstkring Paleis",
+      "kind": "meal",
+      "url": "https://tuguhotels.com/restaurants/jakarta/kunstkring",
+      "sourceType": "operator's own site (Tugu Hotels & Restaurants)",
+      "address": "Jl. Teuku Umar No. 1, RT.1 / RW.1, Gondangdia, Menteng, DKI Jakarta",
+      "operatingEvidence": "Event 'Sweet Wonderland' listed for 28-29 November 2026 at the restaurant; 'BOOK A TABLE' link and reservations via +62 21 390 0899 or kunstkring@tuguhotels.com. Includes Suzie Wong Lounge.",
+      "hours": "Page shows '11.00 AM - 12:00 PM' (closing time ambiguous, likely a typo)",
+      "confidence": "high"
+    },
+    {
+      "name": "Lara Djonggrang",
+      "kind": "meal",
+      "url": "https://tuguhotels.com/restaurants/jakarta/laradjonggrang",
+      "sourceType": "operator's own site (Tugu Hotels & Restaurants)",
+      "address": "Jl. Teuku Cik Ditiro No.4, RT.3/RW.2, Gondangdia, Menteng, DKI Jakarta",
+      "operatingEvidence": "'BOOK A TABLE' link and reservations 'T: +62 21 315 3252', laradjonggrang@tuguhotels.com; includes La Bihzad Bar. Only 2026 item is the footer copyright.",
+      "hours": "Page shows '11.00 AM - 01:00 PM' (closing time ambiguous)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Plataran Menteng",
+      "kind": "meal",
+      "url": "https://plataran.com/property/plataran-menteng/",
+      "sourceType": "operator's own site (Plataran)",
+      "address": "Jl. H.O.S. Cokroaminoto No. 42, Menteng Jakarta Pusat 10350",
+      "operatingEvidence": "Reservations by reservation.menteng@plataran.com, WhatsApp +62 811 1971 2645 and online booking link; published daily hours. No dated 2026 content on the page.",
+      "hours": "Daily 11 AM-10 PM",
+      "confidence": "medium"
+    },
+    {
+      "name": "Plataran Dharmawangsa",
+      "kind": "meal",
+      "url": "https://plataran.com/property/plataran-dharmawangsa/",
+      "sourceType": "operator's own site (Plataran)",
+      "address": "Jl. Dharmawangsa Raya No. 6, Kebayoran Baru Jakarta Selatan 12160",
+      "operatingEvidence": "Online booking via Chope link, reservation.dharmawangsa@plataran.com and WhatsApp; published hours. No dated 2026 content on the page.",
+      "hours": "'Monday - Sunday, 11 AM - 10 PM'",
+      "confidence": "medium"
+    },
+    {
+      "name": "Hutan Kota by Plataran",
+      "kind": "meal",
+      "url": "https://plataran.com/property/hutan-kota-by-plataran/",
+      "sourceType": "operator's own site (Plataran)",
+      "address": "Jl. Jenderal Sudirman No.54-55, RT.1/RW.3, Gelora, Kecamatan Tanah Abang, Kota Jakarta Pusat 10270",
+      "operatingEvidence": "Online booking links and reservation.hutankota@plataran.com; venues Tiga Dari, Pidari Lounge and Langit Senayan listed with hours. No dated 2026 content.",
+      "hours": "Tiga Dari 11 a.m.-10 p.m. Monday-Sunday; Pidari Lounge and Langit Senayan hours inconsistent on the page (Langit Senayan also 'Open by Reservation Only')",
+      "confidence": "medium"
+    },
+    {
+      "name": "Teras by Plataran (Plaza Indonesia)",
+      "kind": "meal",
+      "url": "https://plataran.com/property/teras-plataran-plaza-indonesia/",
+      "sourceType": "operator's own site (Plataran)",
+      "address": "Plaza Indonesia L5 # E001E, Jl. M.H. Thamrin No.28-30, Gondangdia, Kec. Menteng, Kota Jakarta Pusat 10350",
+      "operatingEvidence": "Published hours and online reservation link plus WhatsApp; images uploaded January 2026.",
+      "hours": "'Opening Hours: 10 AM - 10 PM'",
+      "confidence": "medium"
+    },
+    {
+      "name": "Patio Bakery (Kebayoran Baru)",
+      "kind": "bakery",
+      "url": "https://plataran.com/property/patio-bakery/",
+      "sourceType": "operator's own site (Plataran)",
+      "address": "Jl. Wijaya XIII No 45, Kebayoran Baru, Jakarta Selatan, DKI Jakarta 12160",
+      "operatingEvidence": "Describes 'freshly baked breads, pastries, specialty cakes' baked daily; orders via patio.bakery@plataran.com, phone and WhatsApp. No dated 2026 content.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Tanamera Coffee (Plaza Indonesia)",
+      "kind": "cafe",
+      "url": "https://tanameracoffee.co.id/",
+      "sourceType": "operator's own site",
+      "address": "Lobby The Plaza Office Tower, Jl. M.H. Thamrin Kav, 28 -30, Daerah Khusus Ibukota Jakarta 10350",
+      "operatingEvidence": "Branch listed on the store directory; company news dated 19 November 2026 (Jakarta roasting showcase) and 19 October 2026 (coffee partner for a Jakarta concert).",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bakoel Koffie (Cikini)",
+      "kind": "cafe",
+      "url": "https://www.bakoelkoffie.com/",
+      "sourceType": "operator's own site",
+      "address": "Jl. Cikini Raya No.25, RT.16/RW.1, Cikini, Kec. Menteng, Kota Jakarta Pusat, DKI Jakarta 10330, Indonesia",
+      "operatingEvidence": "Outlet listed with phone +622131936608; current menu page (Tubruk, Kopi Kampong, Soto Betawi, Rawon) with prices in IDR. Site describes the Cikini café in an old colonial shophouse. No dated 2026 content.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Bakmi GM (K-Mall Kemayoran)",
+      "kind": "meal",
+      "url": "https://www.bakmigm.com/stores",
+      "sourceType": "operator's own site",
+      "address": "K-Mall, Foodcourt Lantai 2, unit FC-16, Jl. Kota Baru Bandar Kemayoran No.C8, Kemayoran, Jakarta Pusat 10610",
+      "operatingEvidence": "Home page promotion 'Tiny Tummies' runs '23 Juli 2026 - 31 Desember 2026'; new menu items tagged '#New'.",
+      "hours": "10:00 - 21:30",
+      "confidence": "high"
+    },
+    {
+      "name": "Alice by Tom Aikens",
+      "kind": "meal",
+      "url": "https://www.langhamhotels.com/en/the-langham/jakarta/dining/",
+      "sourceType": "operator's own site (The Langham, Jakarta)",
+      "address": "The Langham, Jakarta, District 8, SCBD, Lot 28, Jakarta 12190, Indonesia",
+      "operatingEvidence": "Modern French bistro and patisserie with published meal times and SevenRooms booking. Hotel page cites 'Two MICHELIN Keys 2025 & 2026'.",
+      "hours": "Breakfast 8:00-11:00 Mon-Fri, 7:30-11:00 Sat-Sun; lunch 11:00-14:00; afternoon tea 14:00-18:00; dinner 18:00-22:00 daily",
+      "confidence": "medium"
+    },
+    {
+      "name": "Tom's by Tom Aikens",
+      "kind": "meal",
+      "url": "https://www.langhamhotels.com/en/the-langham/jakarta/dining/",
+      "sourceType": "operator's own site (The Langham, Jakarta)",
+      "address": "The Langham, Jakarta, District 8, SCBD, Lot 28, Jakarta 12190, Indonesia",
+      "operatingEvidence": "British-European restaurant with published service times and SevenRooms booking.",
+      "hours": "Breakfast 6:30-10:30; lunch 12:00-15:00; Sunday brunch 12:00-15:00; dinner 18:00-22:00; bar until midnight",
+      "confidence": "medium"
+    },
+    {
+      "name": "T'ang Court",
+      "kind": "meal",
+      "url": "https://www.langhamhotels.com/en/the-langham/jakarta/dining/",
+      "sourceType": "operator's own site (The Langham, Jakarta)",
+      "address": "The Langham, Jakarta (61st floor), District 8, SCBD, Lot 28, Jakarta 12190, Indonesia",
+      "operatingEvidence": "Cantonese restaurant 'Located on the 61st floor' with six private dining rooms, published hours and SevenRooms booking.",
+      "hours": "Lunch 11:30-15:00; dinner 17:30-22:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Morimoto Jakarta",
+      "kind": "meal",
+      "url": "https://www.langhamhotels.com/en/the-langham/jakarta/dining/",
+      "sourceType": "operator's own site (The Langham, Jakarta)",
+      "address": "The Langham, Jakarta (63rd floor), District 8, SCBD, Lot 28, Jakarta 12190, Indonesia",
+      "operatingEvidence": "'Situated on the 63rd floor of The Langham, Jakarta'; published dinner hours and SevenRooms booking.",
+      "hours": "'DINNER: 06.00 p.m. - 12.00 a.m.'; 'LAST ORDER: 11.30 p.m.'",
+      "confidence": "medium"
+    },
+    {
+      "name": "Artesian Bar Jakarta",
+      "kind": "bar",
+      "url": "https://www.langhamhotels.com/en/the-langham/jakarta/dining/",
+      "sourceType": "operator's own site (The Langham, Jakarta)",
+      "address": "The Langham, Jakarta (65th floor), District 8, SCBD, Lot 28, Jakarta 12190, Indonesia",
+      "operatingEvidence": "Rooftop bar on the 65th floor with published weekly hours and SevenRooms booking.",
+      "hours": "Sunday closed; Monday-Thursday 17:00-24:00; Friday-Saturday 17:00-01:00",
+      "confidence": "medium"
+    },
+    {
+      "name": "Arts Cafe by Raffles",
+      "kind": "meal",
+      "url": "https://www.raffles.com/jakarta/dining/arts-cafe/",
+      "sourceType": "operator's own site (Raffles Jakarta)",
+      "address": "Raffles Jakarta, Ciputra World 1, Jl. Prof. Dr. Satrio Kav. 3-5, 12940 Jakarta, Indonesia",
+      "operatingEvidence": "SevenRooms reservations; Festive 2026 page: 'This December, the spirit of festive season unfolds at Arts Cafe by Raffles through our Festive Sunday Brunch' and a New Year's Eve dinner for 'the last evening of 2026'.",
+      "hours": "Breakfast daily 6:30-10:00; all-day dining noon-22:00; Butcher's Table Fridays 18:00-22:00; Fine Brunch Sundays noon-15:00",
+      "confidence": "high"
+    },
+    {
+      "name": "The Writers Bar",
+      "kind": "bar",
+      "url": "https://www.raffles.com/jakarta/dining/writers-bar/",
+      "sourceType": "operator's own site (Raffles Jakarta)",
+      "address": "Raffles Jakarta, Ciputra World 1, Jl. Prof. Dr. Satrio Kav. 3-5, 12940 Jakarta, Indonesia",
+      "operatingEvidence": "Festive 2026 page lists a Festive Afternoon Tea and a New Year's Eve countdown at The Writers Bar; reservations by phone, email or online link.",
+      "hours": "Sunday-Thursday 8:00-23:00; Friday-Saturday 8:00-24:00; afternoon tea daily 14:00-17:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Raffles Patisserie",
+      "kind": "bakery",
+      "url": "https://www.raffles.com/jakarta/dining/raffles-patisserie/",
+      "sourceType": "operator's own site (Raffles Jakarta)",
+      "address": "Raffles Jakarta, Ciputra World 1, Jl. Prof. Dr. Satrio Kav. 3-5, 12940 Jakarta, Indonesia",
+      "operatingEvidence": "Published daily hours, 'No reservations are needed'; celebration cakes need three days' notice. Festive 2026 page lists festive whole cakes, stollen and panettone by Executive Pastry Chef Anom.",
+      "hours": "Daily '10.00am - 10.00pm'",
+      "confidence": "high"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Kota Tua",
+      "reason": "Area, not a single operated site; the area manager's site (kotatua.jakarta.go.id) did not resolve (DNS failure), so no official page was read",
+      "url": "https://kotatua.jakarta.go.id/"
+    },
+    {
+      "name": "National Monument (Monas)",
+      "reason": "No readable official operator page: monas.jakarta.go.id did not resolve (DNS failure); no other UPK Monas page found. Not evidence of closure.",
+      "url": "https://monas.jakarta.go.id/"
+    },
+    {
+      "name": "Museum Sejarah Jakarta (Fatahillah)",
+      "reason": "Official site did not resolve (DNS failure)",
+      "url": "https://museumsejarahjakarta.jakarta.go.id/"
+    },
+    {
+      "name": "Galeri Nasional Indonesia",
+      "reason": "Official site did not resolve (DNS failure); status could only be found in news, which is not accepted evidence",
+      "url": "https://www.galnas-indonesia.com/"
+    },
+    {
+      "name": "Museum Bank Indonesia",
+      "reason": "Official Bank Indonesia museum page gives no museum address or hours; only the head-office footer address",
+      "url": "https://www.bi.go.id/id/layanan/museum-bi/default.aspx"
+    },
+    {
+      "name": "Ancol Taman Impian (Dufan, Sea World)",
+      "reason": "Official home, ticket, contact and help pages publish hours and prices but no street address",
+      "url": "https://www.ancol.com/"
+    },
+    {
+      "name": "KidZania Jakarta",
+      "reason": "Fetch failed twice (connection reset)",
+      "url": "https://www.kidzania.co.id/"
+    },
+    {
+      "name": "Jakarta Aquarium & Safari",
+      "reason": "Official site returned HTTP 500 twice",
+      "url": "https://jakartaaquariumsafari.com/"
+    },
+    {
+      "name": "Planetarium Jakarta",
+      "reason": "Official site refused connection (ECONNREFUSED)",
+      "url": "https://planetarium.jakarta.go.id/"
+    },
+    {
+      "name": "Taman Ismail Marzuki",
+      "reason": "No official website found; operator information only on social media",
+      "url": ""
+    },
+    {
+      "name": "Perpustakaan Nasional (National Library)",
+      "reason": "Official site returned HTTP 403",
+      "url": "https://www.perpusnas.go.id/"
+    },
+    {
+      "name": "Gedung Arsip Nasional",
+      "reason": "Official ANRI site returned HTTP 403",
+      "url": "https://www.anri.go.id/"
+    },
+    {
+      "name": "Museum Bank Mandiri",
+      "reason": "Official URL tried served an unrelated app page; no museum information read",
+      "url": "https://www.bankmandiri.co.id/museum-mandiri"
+    },
+    {
+      "name": "Gelora Bung Karno (GBK)",
+      "reason": "Official site did not resolve (DNS failure)",
+      "url": "https://www.gbk.id/"
+    },
+    {
+      "name": "M Bloc Space",
+      "reason": "Official site returned HTTP 403",
+      "url": "https://www.mbloc.space/"
+    },
+    {
+      "name": "Pasar Jaya markets",
+      "reason": "Official site returned only a title, no readable content",
+      "url": "https://www.pasarjaya.co.id/"
+    },
+    {
+      "name": "Hotel Indonesia Kempinski (Signatures Restaurant)",
+      "reason": "Official pages give dress codes but no street address",
+      "url": "https://www.kempinski.com/en/hotel-indonesia/restaurants-bars"
+    },
+    {
+      "name": "Four Seasons Hotel Jakarta dining",
+      "reason": "Official site returned HTTP 403",
+      "url": "https://www.fourseasons.com/jakarta/dining/"
+    },
+    {
+      "name": "Mandarin Oriental Jakarta dining",
+      "reason": "Official URLs tried returned HTTP 404",
+      "url": "https://www.mandarinoriental.com/en/jakarta/grand-indonesia"
+    },
+    {
+      "name": "Grand Hyatt Jakarta dining",
+      "reason": "Official site returned HTTP 403",
+      "url": "https://www.hyatt.com/grand-hyatt/en-US/jakgh-grand-hyatt-jakarta/dining"
+    },
+    {
+      "name": "Hermitage Jakarta",
+      "reason": "Official site returned HTTP 503 twice",
+      "url": "https://www.hermitagejakarta.com/"
+    },
+    {
+      "name": "The Dharmawangsa Jakarta",
+      "reason": "Official site did not resolve (DNS failure)",
+      "url": "https://www.thedharmawangsa.com/"
+    },
+    {
+      "name": "SKYE",
+      "reason": "Official site did not resolve (DNS failure)",
+      "url": "https://www.skye.co.id/"
+    },
+    {
+      "name": "Modernhaus",
+      "reason": "Official site did not resolve (DNS failure)",
+      "url": "https://www.modernhaus.id/"
+    },
+    {
+      "name": "The Cocktail Club",
+      "reason": "Official site did not resolve (DNS failure)",
+      "url": "https://www.thecocktailclub.id/"
+    },
+    {
+      "name": "Kaum Jakarta",
+      "reason": "Official site did not resolve (DNS failure)",
+      "url": "https://www.kaumrestaurant.com/jakarta"
+    },
+    {
+      "name": "Bunga Rampai",
+      "reason": "No official website found; only booking aggregators",
+      "url": ""
+    },
+    {
+      "name": "Sate Khas Senayan",
+      "reason": "Official site refused connection (ECONNREFUSED)",
+      "url": "https://www.satekhassenayan.com/"
+    },
+    {
+      "name": "Seribu Rasa (Agus Salim)",
+      "reason": "Operator page gives address and phone only; no hours, menu or dated content (latest item August 2025)",
+      "url": "https://arenagourmet.com/restaurant/seribu-rasa.html"
+    },
+    {
+      "name": "Sari Ratu",
+      "reason": "Official site lists no outlets or addresses; copyright 2024",
+      "url": "https://www.sariratu.com/"
+    },
+    {
+      "name": "Common Grounds (Menteng)",
+      "reason": "Official store list gives café names but no addresses or hours",
+      "url": "https://www.commongrounds.co.id/content/6-stores"
+    },
+    {
+      "name": "Toko Kopi Tuku",
+      "reason": "Official site did not resolve (DNS failure)",
+      "url": "https://www.tokokopituku.com/"
+    },
+    {
+      "name": "Anomali Coffee",
+      "reason": "Official site returned no readable content",
+      "url": "https://anomalicoffee.com/"
+    },
+    {
+      "name": "Kopi Kenangan",
+      "reason": "Official outlet directory did not show central Jakarta addresses",
+      "url": "https://kenanganglobal.com/id/outlets"
+    },
+    {
+      "name": "Fore Coffee",
+      "reason": "Official store list rendered as an empty template; no store addresses",
+      "url": "https://fore.coffee/store/"
+    },
+    {
+      "name": "Starbucks Indonesia",
+      "reason": "Official site returned HTTP 403",
+      "url": "https://www.starbucks.co.id/"
+    },
+    {
+      "name": "% Arabica Jakarta",
+      "reason": "Official site returned HTTP 418 (refuses automated reading)",
+      "url": "https://arabica.com/en/location/"
+    },
+    {
+      "name": "Holland Bakery (Kemang)",
+      "reason": "Store list gives address and phone only; no hours, menu or dated content",
+      "url": "https://www.hollandbakery.co.id/store"
+    },
+    {
+      "name": "Paris Baguette Jakarta",
+      "reason": "Official location page lists mall names but no street addresses",
+      "url": "https://www.parisbaguette.co.id/location/"
+    },
+    {
+      "name": "Tiong Bahru Bakery",
+      "reason": "Official locations page lists Singapore outlets only",
+      "url": "https://tiongbahrubakery.com/pages/locations"
+    },
+    {
+      "name": "Tous Les Jours Indonesia",
+      "reason": "Official site did not resolve (DNS failure)",
+      "url": "https://www.touslesjours.co.id/"
+    },
+    {
+      "name": "Lenôtre Jakarta",
+      "reason": "Official site did not resolve (DNS failure)",
+      "url": "https://www.lenotre.co.id/"
+    },
+    {
+      "name": "Menteng food scene",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Kota Tua at opening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and galleries in South Jakarta",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local market morning",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Nasi padang table",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Modern Indonesian dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Street food market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Kota Tua",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in South Jakarta",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Menteng",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Menteng walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Kota Tua",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around South Jakarta",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through South Jakarta",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Kota Tua",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Menteng",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Kota Tua at opening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Kota Tua",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near National Monument",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Menteng evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Kota Tua",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near South Jakarta",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Menteng",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Kota Tua",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Kota Tua",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near South Jakarta",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Menteng",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Kota Tua",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Menteng cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Coffee and galleries in South Jakarta",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in South Jakarta",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of South Jakarta",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Menteng",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Menteng",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Kota Tua bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Kota Tua",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through South Jakarta",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Menteng",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near National Monument",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around South Jakarta",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Menteng",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Kota Tua",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in South Jakarta",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Menteng",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Menteng",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Kota Tua",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Menteng food scene",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Menteng",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Kota Tua morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Kota Tua",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near South Jakarta",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Menteng",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Kota Tua",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near South Jakarta",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Museum Nasional Indonesia",
+        "Masjid Istiqlal",
+        "Jakarta Cathedral",
+        "Museum MACAN"
+      ],
+      "bestFirstTimers": [
+        "Museum Nasional Indonesia",
+        "Masjid Istiqlal",
+        "Café Batavia",
+        "Tugu Kunstkring Paleis"
+      ],
+      "bestRestaurants": [
+        "Tugu Kunstkring Paleis",
+        "Plataran Menteng",
+        "T'ang Court",
+        "Café Batavia"
+      ],
+      "bestBudget": [
+        "Galeri Indonesia Kaya",
+        "Ragunan Zoo",
+        "Bakmi GM (K-Mall Kemayoran)",
+        "Museum Nasional Indonesia"
+      ],
+      "bestLuxury": [
+        "Morimoto Jakarta",
+        "T'ang Court",
+        "The Writers Bar",
+        "Plataran Dharmawangsa"
+      ],
+      "bestCouples": [
+        "Artesian Bar Jakarta",
+        "Lara Djonggrang",
+        "Hutan Kota by Plataran",
+        "Café Batavia"
+      ],
+      "bestKids": [
+        "Ragunan Zoo",
+        "Taman Mini Indonesia Indah",
+        "Museum MACAN",
+        "Museum Nasional Indonesia"
+      ],
+      "bestSolo": [
+        "Museum MACAN",
+        "Galeri Indonesia Kaya",
+        "Bakoel Koffie (Cikini)",
+        "The Writers Bar"
+      ],
+      "bestUnique": [
+        "Galeri Indonesia Kaya",
+        "Tugu Kunstkring Paleis",
+        "Hutan Kota by Plataran",
+        "Museum MACAN"
+      ],
+      "bestBreakfast": [
+        "Arts Cafe by Raffles",
+        "Alice by Tom Aikens",
+        "Tom's by Tom Aikens"
+      ],
+      "bestLunch": [
+        "Bakmi GM (K-Mall Kemayoran)",
+        "Teras by Plataran (Plaza Indonesia)",
+        "Plataran Menteng",
+        "Café Batavia"
+      ],
+      "bestDinner": [
+        "Plataran Menteng",
+        "Lara Djonggrang",
+        "Morimoto Jakarta",
+        "Tom's by Tom Aikens"
+      ],
+      "bestCocktails": [
+        "Artesian Bar Jakarta",
+        "The Writers Bar",
+        "Café Batavia"
+      ],
+      "bestBakeries": [
+        "Raffles Patisserie",
+        "Patio Bakery (Kebayoran Baru)",
+        "Alice by Tom Aikens"
+      ],
+      "bestCoffee": [
+        "Tanamera Coffee (Plaza Indonesia)",
+        "Bakoel Koffie (Cikini)"
+      ]
+    },
+    "queries": {
+      "Museum Nasional Indonesia": "Museum Nasional Indonesia Jl. Medan Merdeka Barat 12 Jakarta",
+      "Museum MACAN": "Museum MACAN AKR Tower Jalan Panjang 5 Kebon Jeruk Jakarta",
+      "Masjid Istiqlal": "Masjid Istiqlal Jalan Taman Wijaya Kusuma Pasar Baru Jakarta",
+      "Jakarta Cathedral": "Gereja Katedral Jakarta Jl. Katedral 7B Pasar Baru Jakarta",
+      "Ragunan Zoo": "Taman Margasatwa Ragunan Jl. Harsono RM 1 Ragunan Jakarta",
+      "Taman Mini Indonesia Indah": "Taman Mini Indonesia Indah Jl. Raya Taman Mini Jakarta Timur Jakarta",
+      "Galeri Indonesia Kaya": "Galeri Indonesia Kaya Grand Indonesia West Mall Jl. M.H. Thamrin 1 Jakarta",
+      "Café Batavia": "Café Batavia Jl. Pintu Besar Utara 14 Kota Tua Jakarta",
+      "Tugu Kunstkring Paleis": "Tugu Kunstkring Paleis Jl. Teuku Umar 1 Menteng Jakarta",
+      "Lara Djonggrang": "Lara Djonggrang Jl. Teuku Cik Ditiro 4 Menteng Jakarta",
+      "Plataran Menteng": "Plataran Menteng Jl. H.O.S. Cokroaminoto 42 Menteng Jakarta",
+      "Plataran Dharmawangsa": "Plataran Dharmawangsa Jl. Dharmawangsa Raya 6 Kebayoran Baru Jakarta",
+      "Hutan Kota by Plataran": "Hutan Kota by Plataran Jl. Jenderal Sudirman 54-55 Gelora Jakarta",
+      "Teras by Plataran (Plaza Indonesia)": "Teras by Plataran Plaza Indonesia Jl. M.H. Thamrin 28-30 Jakarta",
+      "Patio Bakery (Kebayoran Baru)": "Patio Bakery Jl. Wijaya XIII 45 Kebayoran Baru Jakarta",
+      "Tanamera Coffee (Plaza Indonesia)": "Tanamera Coffee The Plaza Office Tower Jl. M.H. Thamrin 28-30 Jakarta",
+      "Bakoel Koffie (Cikini)": "Bakoel Koffie Jl. Cikini Raya 25 Cikini Jakarta",
+      "Bakmi GM (K-Mall Kemayoran)": "Bakmi GM K-Mall Jl. Kota Baru Bandar Kemayoran C8 Jakarta",
+      "Alice by Tom Aikens": "Alice by Tom Aikens The Langham District 8 SCBD Lot 28 Jakarta",
+      "Tom's by Tom Aikens": "Tom's by Tom Aikens The Langham District 8 SCBD Lot 28 Jakarta",
+      "T'ang Court": "T'ang Court The Langham District 8 SCBD Lot 28 Jakarta",
+      "Morimoto Jakarta": "Morimoto The Langham District 8 SCBD Lot 28 Jakarta",
+      "Artesian Bar Jakarta": "Artesian Bar The Langham District 8 SCBD Lot 28 Jakarta",
+      "Arts Cafe by Raffles": "Arts Cafe by Raffles Ciputra World 1 Jl. Prof. Dr. Satrio Kav. 3-5 Jakarta",
+      "The Writers Bar": "The Writers Bar Raffles Ciputra World 1 Jl. Prof. Dr. Satrio Kav. 3-5 Jakarta",
+      "Raffles Patisserie": "Raffles Patisserie Ciputra World 1 Jl. Prof. Dr. Satrio Kav. 3-5 Jakarta"
+    },
+    "summary": "National and contemporary art museums, a mosque, a cathedral and a zoo, with breakfast spots, Menteng dinners, a patisserie, coffee and cocktail bars checked against their own websites.",
+    "highlights": [
+      "Museum Nasional Indonesia",
+      "Museum MACAN",
+      "Masjid Istiqlal",
+      "Jakarta Cathedral"
+    ],
+    "tip": "Museum Nasional Indonesia, Museum MACAN and Ragunan Zoo are all closed on Mondays, and Museum Nasional Indonesia also closes on national holidays, so save Monday for restaurants and cafés.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mondays for the big sights",
+        "copy": "Museum Nasional Indonesia (also closed on national holidays), Museum MACAN and Ragunan Zoo are all closed on Mondays. Artesian Bar Jakarta at The Langham is closed on Sundays."
+      },
+      {
+        "label": "Tickets",
+        "value": "Book Museum MACAN online",
+        "copy": "Museum MACAN sells tickets online until midnight before your visit, and they can't be exchanged, rescheduled or refunded. At Museum Nasional Indonesia, foreign visitors pay Rp150.000, and the imersifA room needs a museum ticket first."
+      },
+      {
+        "label": "Walk-in and payment",
+        "value": "JakCard at the zoo",
+        "copy": "Ragunan Zoo takes entry by Bank DKI JakCard, sold at its ticket counters, with adult entry at Rp 4,000. Raffles Patisserie needs no reservation, while Arts Cafe by Raffles and The Writers Bar take bookings by phone or online."
+      },
+      {
+        "label": "Rules",
+        "value": "Bags and dress",
+        "copy": "Museum MACAN bars wheeled bags, food and drink, DSLR cameras and tripods from its galleries. Jakarta Cathedral asks Mass-goers to dress neatly and modestly."
+      }
+    ],
+    "dek": "Avoid Mondays for the major museums and the zoo, and book Museum MACAN online by the night before.",
+    "intro": [
+      "Start at Museum Nasional Indonesia on Jl. Medan Merdeka Barat. Since 1 April 2026 its posted hours are 08.00 to 18.00 from Tuesday to Thursday and 08.00 to 20.00 from Friday to Sunday, and it is closed every Monday and on national holidays. The permanent Sejarah Awal gallery, open since 18 December 2025, centres on the Homo erectus (Java Man) fossil returned from the Netherlands, at no extra charge. On the second Wednesday of each month, the ARAMSA programme gives you free regular admission from 16.00 to 20.00; register by QR code at the ticket counter rather than online.",
+      "In West Jakarta, Museum MACAN in AKR Tower opens Tuesday to Sunday from 10.00 to 18.00, with last entry at 17.30, and is closed on Mondays. Tromarama: Ketok Magic, the collective's first solo museum exhibition in Indonesia, runs from 14 November 2026 to 4 April 2027, alongside presentations by Eko Nugroho and Iwan Effendi. Buy tickets online by midnight before your visit; they can't be rescheduled or refunded, and wheeled bags aren't allowed in the galleries. For a free cultural stop, Galeri Indonesia Kaya, on the eighth floor of Grand Indonesia's West Mall, opens from 10.00 to 21.30 and lists its programmes as free.",
+      "Masjid Istiqlal and Jakarta Cathedral both give Pasar Baru addresses in Central Jakarta. Istiqlal registers official domestic and foreign group visits through its public relations team, but its site doesn't publish general visitor hours. The cathedral lists weekday Mass at 06.00 and 18.00 and asks you to dress neatly and modestly. For families, Ragunan Zoo in South Jakarta opens Tuesday to Sunday from 07.00 to 16.00 and is closed on Mondays, which it calls the animals' day off. Entry is paid with a Bank DKI JakCard sold at the zoo's counters, and adult tickets cost Rp 4,000.",
+      "For dinner in Menteng, Tugu Kunstkring Paleis on Jl. Teuku Umar and Lara Djonggrang on Jl. Teuku Cik Ditiro both take table bookings, and Plataran Menteng on Jl. H.O.S. Cokroaminoto lists daily hours of 11.00 to 22.00. Café Batavia, on Jl. Pintu Besar Utara in Kota Tua, takes reservations by phone, email or WhatsApp. The Langham, Jakarta lists Morimoto Jakarta on its 63rd floor for dinner and Artesian Bar on the 65th, closed on Sundays. At Raffles Jakarta, Arts Cafe serves breakfast daily from 06.30 to 10.00, and Raffles Patisserie needs no reservation."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair Museum Nasional Indonesia with Masjid Istiqlal and Jakarta Cathedral in Central Jakarta on any day except Monday, when the museum is closed."
+      ],
+      [
+        "A slower morning",
+        "Take breakfast at Arts Cafe by Raffles, served daily from 06.30 to 10.00, then walk in for pastries at Raffles Patisserie when it opens at 10.00."
+      ],
+      [
+        "Before booking",
+        "Museum Nasional Indonesia, Museum MACAN and Ragunan Zoo are all closed on Mondays, and Artesian Bar Jakarta is closed on Sundays."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several Jakarta operators could not be read: the Kota Tua, Monas, Museum Sejarah Jakarta, Galeri Nasional, GBK, SKYE, Modernhaus, The Cocktail Club, Kaum and Tuku sites did not resolve; the National Library, ANRI, Four Seasons, Grand Hyatt, Starbucks and M Bloc sites returned 403; % Arabica returned 418; KidZania reset the connection; Jakarta Aquarium & Safari and the Hermitage returned server errors; and the Planetarium and Sate Khas Senayan refused connections. Ancol and Kempinski publish no street address. Hours are not published for Masjid Istiqlal (visitors), Taman Mini Indonesia Indah, Café Batavia, Patio Bakery, Tanamera Coffee or Bakoel Koffie, and the Tugu Kunstkring Paleis and Lara Djonggrang pages show ambiguous closing times. The Langham, Plataran, Café Batavia, Bakoel Koffie and Patio Bakery pages carry no dated 2026 content, so their hours and booking details are as published on undated live pages.",
+  "injectionLikeText": [],
+  "injectionLikeTextIgnored": [
+    "https://www.langhamhotels.com/en/the-langham/jakarta/ — WebFetch twice reported text addressed to an AI (once describing 'quote-length limits and formatting rules', once 'a line addressed to an AI, asking me to quote such sentences verbatim'), but a direct verbatim re-read returned NONE; the wording matches the fetch tool's own instructions, so treated as a false flag. Verify in the browser. 2026-11-24: full HTML of the Langham Jakarta home and dining pages checked in the in-app browser; the only AI matches are the \"Connect AI\" and \"Canary AI\" chat-widget script tags and comments, with no text addressed to an AI."
+  ]
+}

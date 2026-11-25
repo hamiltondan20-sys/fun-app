@@ -5,6 +5,798 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Jakarta, Indonesia": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-11-24",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several Jakarta operators could not be read: the Kota Tua, Monas, Museum Sejarah Jakarta, Galeri Nasional, GBK, SKYE, Modernhaus, The Cocktail Club, Kaum and Tuku sites did not resolve; the National Library, ANRI, Four Seasons, Grand Hyatt, Starbucks and M Bloc sites returned 403; % Arabica returned 418; KidZania reset the connection; Jakarta Aquarium & Safari and the Hermitage returned server errors; and the Planetarium and Sate Khas Senayan refused connections. Ancol and Kempinski publish no street address. Hours are not published for Masjid Istiqlal (visitors), Taman Mini Indonesia Indah, Café Batavia, Patio Bakery, Tanamera Coffee or Bakoel Koffie, and the Tugu Kunstkring Paleis and Lara Djonggrang pages show ambiguous closing times. The Langham, Plataran, Café Batavia, Bakoel Koffie and Patio Bakery pages carry no dated 2026 content, so their hours and booking details are as published on undated live pages.",
+    "sourceUrls": [
+      "docs/content-research/jakarta-2026-11-24.md",
+      "docs/content-research/jakarta-2026-11-24.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Kota Tua",
+        "url": "https://kotatua.jakarta.go.id/",
+        "checkedOn": "2026-11-24",
+        "reason": "Area, not a single operated site; the area manager's site (kotatua.jakarta.go.id) did not resolve (DNS failure), so no official page was read"
+      },
+      {
+        "name": "National Monument (Monas)",
+        "url": "https://monas.jakarta.go.id/",
+        "checkedOn": "2026-11-24",
+        "reason": "No readable official operator page: monas.jakarta.go.id did not resolve (DNS failure); no other UPK Monas page found. Not evidence of closure."
+      },
+      {
+        "name": "Museum Sejarah Jakarta (Fatahillah)",
+        "url": "https://museumsejarahjakarta.jakarta.go.id/",
+        "checkedOn": "2026-11-24",
+        "reason": "Official site did not resolve (DNS failure)"
+      },
+      {
+        "name": "Galeri Nasional Indonesia",
+        "url": "https://www.galnas-indonesia.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "Official site did not resolve (DNS failure); status could only be found in news, which is not accepted evidence"
+      },
+      {
+        "name": "Museum Bank Indonesia",
+        "url": "https://www.bi.go.id/id/layanan/museum-bi/default.aspx",
+        "checkedOn": "2026-11-24",
+        "reason": "Official Bank Indonesia museum page gives no museum address or hours; only the head-office footer address"
+      },
+      {
+        "name": "Ancol Taman Impian (Dufan, Sea World)",
+        "url": "https://www.ancol.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "Official home, ticket, contact and help pages publish hours and prices but no street address"
+      },
+      {
+        "name": "KidZania Jakarta",
+        "url": "https://www.kidzania.co.id/",
+        "checkedOn": "2026-11-24",
+        "reason": "Fetch failed twice (connection reset)"
+      },
+      {
+        "name": "Jakarta Aquarium & Safari",
+        "url": "https://jakartaaquariumsafari.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "Official site returned HTTP 500 twice"
+      },
+      {
+        "name": "Planetarium Jakarta",
+        "url": "https://planetarium.jakarta.go.id/",
+        "checkedOn": "2026-11-24",
+        "reason": "Official site refused connection (ECONNREFUSED)"
+      },
+      {
+        "name": "Taman Ismail Marzuki",
+        "checkedOn": "2026-11-24",
+        "reason": "No official website found; operator information only on social media"
+      },
+      {
+        "name": "Perpustakaan Nasional (National Library)",
+        "url": "https://www.perpusnas.go.id/",
+        "checkedOn": "2026-11-24",
+        "reason": "Official site returned HTTP 403"
+      },
+      {
+        "name": "Gedung Arsip Nasional",
+        "url": "https://www.anri.go.id/",
+        "checkedOn": "2026-11-24",
+        "reason": "Official ANRI site returned HTTP 403"
+      },
+      {
+        "name": "Museum Bank Mandiri",
+        "url": "https://www.bankmandiri.co.id/museum-mandiri",
+        "checkedOn": "2026-11-24",
+        "reason": "Official URL tried served an unrelated app page; no museum information read"
+      },
+      {
+        "name": "Gelora Bung Karno (GBK)",
+        "url": "https://www.gbk.id/",
+        "checkedOn": "2026-11-24",
+        "reason": "Official site did not resolve (DNS failure)"
+      },
+      {
+        "name": "M Bloc Space",
+        "url": "https://www.mbloc.space/",
+        "checkedOn": "2026-11-24",
+        "reason": "Official site returned HTTP 403"
+      },
+      {
+        "name": "Pasar Jaya markets",
+        "url": "https://www.pasarjaya.co.id/",
+        "checkedOn": "2026-11-24",
+        "reason": "Official site returned only a title, no readable content"
+      },
+      {
+        "name": "Hotel Indonesia Kempinski (Signatures Restaurant)",
+        "url": "https://www.kempinski.com/en/hotel-indonesia/restaurants-bars",
+        "checkedOn": "2026-11-24",
+        "reason": "Official pages give dress codes but no street address"
+      },
+      {
+        "name": "Four Seasons Hotel Jakarta dining",
+        "url": "https://www.fourseasons.com/jakarta/dining/",
+        "checkedOn": "2026-11-24",
+        "reason": "Official site returned HTTP 403"
+      },
+      {
+        "name": "Mandarin Oriental Jakarta dining",
+        "url": "https://www.mandarinoriental.com/en/jakarta/grand-indonesia",
+        "checkedOn": "2026-11-24",
+        "reason": "Official URLs tried returned HTTP 404"
+      },
+      {
+        "name": "Grand Hyatt Jakarta dining",
+        "url": "https://www.hyatt.com/grand-hyatt/en-US/jakgh-grand-hyatt-jakarta/dining",
+        "checkedOn": "2026-11-24",
+        "reason": "Official site returned HTTP 403"
+      },
+      {
+        "name": "Hermitage Jakarta",
+        "url": "https://www.hermitagejakarta.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "Official site returned HTTP 503 twice"
+      },
+      {
+        "name": "The Dharmawangsa Jakarta",
+        "url": "https://www.thedharmawangsa.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "Official site did not resolve (DNS failure)"
+      },
+      {
+        "name": "SKYE",
+        "url": "https://www.skye.co.id/",
+        "checkedOn": "2026-11-24",
+        "reason": "Official site did not resolve (DNS failure)"
+      },
+      {
+        "name": "Modernhaus",
+        "url": "https://www.modernhaus.id/",
+        "checkedOn": "2026-11-24",
+        "reason": "Official site did not resolve (DNS failure)"
+      },
+      {
+        "name": "The Cocktail Club",
+        "url": "https://www.thecocktailclub.id/",
+        "checkedOn": "2026-11-24",
+        "reason": "Official site did not resolve (DNS failure)"
+      },
+      {
+        "name": "Kaum Jakarta",
+        "url": "https://www.kaumrestaurant.com/jakarta",
+        "checkedOn": "2026-11-24",
+        "reason": "Official site did not resolve (DNS failure)"
+      },
+      {
+        "name": "Bunga Rampai",
+        "checkedOn": "2026-11-24",
+        "reason": "No official website found; only booking aggregators"
+      },
+      {
+        "name": "Sate Khas Senayan",
+        "url": "https://www.satekhassenayan.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "Official site refused connection (ECONNREFUSED)"
+      },
+      {
+        "name": "Seribu Rasa (Agus Salim)",
+        "url": "https://arenagourmet.com/restaurant/seribu-rasa.html",
+        "checkedOn": "2026-11-24",
+        "reason": "Operator page gives address and phone only; no hours, menu or dated content (latest item August 2025)"
+      },
+      {
+        "name": "Sari Ratu",
+        "url": "https://www.sariratu.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "Official site lists no outlets or addresses; copyright 2024"
+      },
+      {
+        "name": "Common Grounds (Menteng)",
+        "url": "https://www.commongrounds.co.id/content/6-stores",
+        "checkedOn": "2026-11-24",
+        "reason": "Official store list gives café names but no addresses or hours"
+      },
+      {
+        "name": "Toko Kopi Tuku",
+        "url": "https://www.tokokopituku.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "Official site did not resolve (DNS failure)"
+      },
+      {
+        "name": "Anomali Coffee",
+        "url": "https://anomalicoffee.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "Official site returned no readable content"
+      },
+      {
+        "name": "Kopi Kenangan",
+        "url": "https://kenanganglobal.com/id/outlets",
+        "checkedOn": "2026-11-24",
+        "reason": "Official outlet directory did not show central Jakarta addresses"
+      },
+      {
+        "name": "Fore Coffee",
+        "url": "https://fore.coffee/store/",
+        "checkedOn": "2026-11-24",
+        "reason": "Official store list rendered as an empty template; no store addresses"
+      },
+      {
+        "name": "Starbucks Indonesia",
+        "url": "https://www.starbucks.co.id/",
+        "checkedOn": "2026-11-24",
+        "reason": "Official site returned HTTP 403"
+      },
+      {
+        "name": "% Arabica Jakarta",
+        "url": "https://arabica.com/en/location/",
+        "checkedOn": "2026-11-24",
+        "reason": "Official site returned HTTP 418 (refuses automated reading)"
+      },
+      {
+        "name": "Holland Bakery (Kemang)",
+        "url": "https://www.hollandbakery.co.id/store",
+        "checkedOn": "2026-11-24",
+        "reason": "Store list gives address and phone only; no hours, menu or dated content"
+      },
+      {
+        "name": "Paris Baguette Jakarta",
+        "url": "https://www.parisbaguette.co.id/location/",
+        "checkedOn": "2026-11-24",
+        "reason": "Official location page lists mall names but no street addresses"
+      },
+      {
+        "name": "Tiong Bahru Bakery",
+        "url": "https://tiongbahrubakery.com/pages/locations",
+        "checkedOn": "2026-11-24",
+        "reason": "Official locations page lists Singapore outlets only"
+      },
+      {
+        "name": "Tous Les Jours Indonesia",
+        "url": "https://www.touslesjours.co.id/",
+        "checkedOn": "2026-11-24",
+        "reason": "Official site did not resolve (DNS failure)"
+      },
+      {
+        "name": "Lenôtre Jakarta",
+        "url": "https://www.lenotre.co.id/",
+        "checkedOn": "2026-11-24",
+        "reason": "Official site did not resolve (DNS failure)"
+      },
+      {
+        "name": "Menteng food scene",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Kota Tua at opening",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and galleries in South Jakarta",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local market morning",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Nasi padang table",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Modern Indonesian dinner",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Street food market stop",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Kota Tua",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in South Jakarta",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Menteng",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Menteng walk",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Kota Tua",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around South Jakarta",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through South Jakarta",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Kota Tua",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Menteng",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Kota Tua at opening",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Kota Tua",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near National Monument",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Menteng evening",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Kota Tua",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near South Jakarta",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Menteng",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Kota Tua",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Kota Tua",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near South Jakarta",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Menteng",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Kota Tua",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Menteng cafe or market",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Coffee and galleries in South Jakarta",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in South Jakarta",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of South Jakarta",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Menteng",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Menteng",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Kota Tua bakery or market",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Kota Tua",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through South Jakarta",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Menteng",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near National Monument",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around South Jakarta",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Menteng",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Kota Tua",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in South Jakarta",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Menteng",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Menteng",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Kota Tua",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Menteng food scene",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Menteng",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Kota Tua morning market",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Kota Tua",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near South Jakarta",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Menteng",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Kota Tua",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near South Jakarta",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      }
+    ],
+    "placeSources": {
+      "Museum Nasional Indonesia": {
+        "url": "https://www.museumnasional.or.id/layanan-blu",
+        "sourceType": "operator's own site (Museum Nasional Indonesia)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Ticket and hours page gives hours in effect from 1 April 2026; ARAMSA article dated 4 February 2026 describes free admission 'Rabu pada minggu kedua setiap bulan' 16.00-20.00. Article dated 19 December 2025 says the permanent 'Sejarah Awal' exhibition with the Homo erectus (Java Man) fossil opened to the public on 18 December 2025 with no extra ticket."
+      },
+      "Museum MACAN": {
+        "url": "https://www.museummacan.org/exhibition/Ketok-Magic",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Current exhibition 'Tromarama: Ketok Magic' runs 14 November 2026 to 4 April 2027, with Eko Nugroho, Iwan Effendi, Libby Heaney and Mira Rizki presentations on the same dates. Online ticketing: 'Tiket dapat dibeli secara online hingga tengah malam sebelum waktu kunjungan Anda.'"
+      },
+      "Masjid Istiqlal": {
+        "url": "https://www.istiqlal.or.id/",
+        "sourceType": "operator's own site (Badan Pengelola Masjid Istiqlal)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Friday sermon card shows 'Release: 20 Nov 2026'; daily schedule labelled November 2026. 'Reservasi Kunjungan' offers official registration for domestic and foreign group visits via the BPMI Humas & Protokol team."
+      },
+      "Jakarta Cathedral": {
+        "url": "https://www.katedraljakarta.or.id/",
+        "sourceType": "operator's own site (Paroki Katedral Jakarta)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Parish news dated 2026, including the installation of the 2026-2029 parish council on 17 January 2026 and a May 2026 devotion. Mass schedule published with the rule 'Berpakaian rapi dan sopan.'"
+      },
+      "Ragunan Zoo": {
+        "url": "https://ragunanzoo.jakarta.go.id/",
+        "sourceType": "official public operator (Jakarta provincial government, Taman Margasatwa Ragunan)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "News items dated 10 November 2026 and 17 October 2026. Ticket page: 'Pembayaran Tiket Masuk menggunakan Kartu Jakcard Bank DKI'; adult entry Rp 4,000, child Rp 3,000."
+      },
+      "Taman Mini Indonesia Indah": {
+        "url": "https://www.tamanmini.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Footer 'Copyright TMII 2026'; tickets sold online at tiket.tamanmini.com with group pricing for more than 10 tickets. Dated events shown are from 2024-early 2025 only."
+      },
+      "Galeri Indonesia Kaya": {
+        "url": "https://indonesiakaya.com/kunjungi-kami/galeri-indonesia-kaya/",
+        "sourceType": "operator's own site (Indonesia Kaya)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Event page lists 'Dialog Dari Dalam Rumah' on '28 November 2026', admission 'Gratis', with reservation links per session. Venue page describes its programmes as free ('secara gratis')."
+      },
+      "Café Batavia": {
+        "url": "https://www.cafebatavia.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Current menu (Rujak Kepiting, Nasi Goreng Roa, Putri Mandi) and cocktails (Senja Kota, Historia, The Ronde); table reservations by phone, email or WhatsApp. No dated 2026 content."
+      },
+      "Tugu Kunstkring Paleis": {
+        "url": "https://tuguhotels.com/restaurants/jakarta/kunstkring",
+        "sourceType": "operator's own site (Tugu Hotels & Restaurants)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Event 'Sweet Wonderland' listed for 28-29 November 2026 at the restaurant; 'BOOK A TABLE' link and reservations via +62 21 390 0899 or kunstkring@tuguhotels.com. Includes Suzie Wong Lounge."
+      },
+      "Lara Djonggrang": {
+        "url": "https://tuguhotels.com/restaurants/jakarta/laradjonggrang",
+        "sourceType": "operator's own site (Tugu Hotels & Restaurants)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "'BOOK A TABLE' link and reservations 'T: +62 21 315 3252', laradjonggrang@tuguhotels.com; includes La Bihzad Bar. Only 2026 item is the footer copyright."
+      },
+      "Plataran Menteng": {
+        "url": "https://plataran.com/property/plataran-menteng/",
+        "sourceType": "operator's own site (Plataran)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Reservations by reservation.menteng@plataran.com, WhatsApp +62 811 1971 2645 and online booking link; published daily hours. No dated 2026 content on the page."
+      },
+      "Plataran Dharmawangsa": {
+        "url": "https://plataran.com/property/plataran-dharmawangsa/",
+        "sourceType": "operator's own site (Plataran)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Online booking via Chope link, reservation.dharmawangsa@plataran.com and WhatsApp; published hours. No dated 2026 content on the page."
+      },
+      "Hutan Kota by Plataran": {
+        "url": "https://plataran.com/property/hutan-kota-by-plataran/",
+        "sourceType": "operator's own site (Plataran)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Online booking links and reservation.hutankota@plataran.com; venues Tiga Dari, Pidari Lounge and Langit Senayan listed with hours. No dated 2026 content."
+      },
+      "Teras by Plataran (Plaza Indonesia)": {
+        "url": "https://plataran.com/property/teras-plataran-plaza-indonesia/",
+        "sourceType": "operator's own site (Plataran)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Published hours and online reservation link plus WhatsApp; images uploaded January 2026."
+      },
+      "Patio Bakery (Kebayoran Baru)": {
+        "url": "https://plataran.com/property/patio-bakery/",
+        "sourceType": "operator's own site (Plataran)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Describes 'freshly baked breads, pastries, specialty cakes' baked daily; orders via patio.bakery@plataran.com, phone and WhatsApp. No dated 2026 content."
+      },
+      "Tanamera Coffee (Plaza Indonesia)": {
+        "url": "https://tanameracoffee.co.id/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Branch listed on the store directory; company news dated 19 November 2026 (Jakarta roasting showcase) and 19 October 2026 (coffee partner for a Jakarta concert)."
+      },
+      "Bakoel Koffie (Cikini)": {
+        "url": "https://www.bakoelkoffie.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Outlet listed with phone +622131936608; current menu page (Tubruk, Kopi Kampong, Soto Betawi, Rawon) with prices in IDR. Site describes the Cikini café in an old colonial shophouse. No dated 2026 content."
+      },
+      "Bakmi GM (K-Mall Kemayoran)": {
+        "url": "https://www.bakmigm.com/stores",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Home page promotion 'Tiny Tummies' runs '23 Juli 2026 - 31 Desember 2026'; new menu items tagged '#New'."
+      },
+      "Alice by Tom Aikens": {
+        "url": "https://www.langhamhotels.com/en/the-langham/jakarta/dining/",
+        "sourceType": "operator's own site (The Langham, Jakarta)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Modern French bistro and patisserie with published meal times and SevenRooms booking. Hotel page cites 'Two MICHELIN Keys 2025 & 2026'."
+      },
+      "Tom's by Tom Aikens": {
+        "url": "https://www.langhamhotels.com/en/the-langham/jakarta/dining/",
+        "sourceType": "operator's own site (The Langham, Jakarta)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "British-European restaurant with published service times and SevenRooms booking."
+      },
+      "T'ang Court": {
+        "url": "https://www.langhamhotels.com/en/the-langham/jakarta/dining/",
+        "sourceType": "operator's own site (The Langham, Jakarta)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Cantonese restaurant 'Located on the 61st floor' with six private dining rooms, published hours and SevenRooms booking."
+      },
+      "Morimoto Jakarta": {
+        "url": "https://www.langhamhotels.com/en/the-langham/jakarta/dining/",
+        "sourceType": "operator's own site (The Langham, Jakarta)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "'Situated on the 63rd floor of The Langham, Jakarta'; published dinner hours and SevenRooms booking."
+      },
+      "Artesian Bar Jakarta": {
+        "url": "https://www.langhamhotels.com/en/the-langham/jakarta/dining/",
+        "sourceType": "operator's own site (The Langham, Jakarta)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Rooftop bar on the 65th floor with published weekly hours and SevenRooms booking."
+      },
+      "Arts Cafe by Raffles": {
+        "url": "https://www.raffles.com/jakarta/dining/arts-cafe/",
+        "sourceType": "operator's own site (Raffles Jakarta)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "SevenRooms reservations; Festive 2026 page: 'This December, the spirit of festive season unfolds at Arts Cafe by Raffles through our Festive Sunday Brunch' and a New Year's Eve dinner for 'the last evening of 2026'."
+      },
+      "The Writers Bar": {
+        "url": "https://www.raffles.com/jakarta/dining/writers-bar/",
+        "sourceType": "operator's own site (Raffles Jakarta)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Festive 2026 page lists a Festive Afternoon Tea and a New Year's Eve countdown at The Writers Bar; reservations by phone, email or online link."
+      },
+      "Raffles Patisserie": {
+        "url": "https://www.raffles.com/jakarta/dining/raffles-patisserie/",
+        "sourceType": "operator's own site (Raffles Jakarta)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Published daily hours, 'No reservations are needed'; celebration cakes need three days' notice. Festive 2026 page lists festive whole cakes, stollen and panettone by Executive Pastry Chef Anom."
+      }
+    }
+  },
   "Ubud, Indonesia": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-11-24",

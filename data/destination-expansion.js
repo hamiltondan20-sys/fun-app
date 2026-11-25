@@ -11955,4 +11955,111 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 24 distinct recommendations in this guide were checked against their operators' own websites on November 24, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Jakarta, Indonesia: source review of 2026-11-24 (docs/content-research/jakarta-2026-11-24.md).
+  {
+    const cityKey = "Jakarta, Indonesia";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Museum Nasional Indonesia","Masjid Istiqlal","Jakarta Cathedral","Museum MACAN"],
+      bestFirstTimers: ["Museum Nasional Indonesia","Masjid Istiqlal","Café Batavia","Tugu Kunstkring Paleis"],
+      bestRestaurants: ["Tugu Kunstkring Paleis","Plataran Menteng","T'ang Court","Café Batavia"],
+      bestBudget: ["Galeri Indonesia Kaya","Ragunan Zoo","Bakmi GM (K-Mall Kemayoran)","Museum Nasional Indonesia"],
+      bestLuxury: ["Morimoto Jakarta","T'ang Court","The Writers Bar","Plataran Dharmawangsa"],
+      bestCouples: ["Artesian Bar Jakarta","Lara Djonggrang","Hutan Kota by Plataran","Café Batavia"],
+      bestKids: ["Ragunan Zoo","Taman Mini Indonesia Indah","Museum MACAN","Museum Nasional Indonesia"],
+      bestSolo: ["Museum MACAN","Galeri Indonesia Kaya","Bakoel Koffie (Cikini)","The Writers Bar"],
+      bestUnique: ["Galeri Indonesia Kaya","Tugu Kunstkring Paleis","Hutan Kota by Plataran","Museum MACAN"],
+      bestBreakfast: ["Arts Cafe by Raffles","Alice by Tom Aikens","Tom's by Tom Aikens"],
+      bestLunch: ["Bakmi GM (K-Mall Kemayoran)","Teras by Plataran (Plaza Indonesia)","Plataran Menteng","Café Batavia"],
+      bestDinner: ["Plataran Menteng","Lara Djonggrang","Morimoto Jakarta","Tom's by Tom Aikens"],
+      bestCocktails: ["Artesian Bar Jakarta","The Writers Bar","Café Batavia"],
+      bestBakeries: ["Raffles Patisserie","Patio Bakery (Kebayoran Baru)","Alice by Tom Aikens"],
+      bestCoffee: ["Tanamera Coffee (Plaza Indonesia)","Bakoel Koffie (Cikini)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Museum Nasional Indonesia": "Museum Nasional Indonesia Jl. Medan Merdeka Barat 12 Jakarta",
+      "Masjid Istiqlal": "Masjid Istiqlal Jalan Taman Wijaya Kusuma Pasar Baru Jakarta",
+      "Jakarta Cathedral": "Gereja Katedral Jakarta Jl. Katedral 7B Pasar Baru Jakarta",
+      "Museum MACAN": "Museum MACAN AKR Tower Jalan Panjang 5 Kebon Jeruk Jakarta",
+      "Café Batavia": "Café Batavia Jl. Pintu Besar Utara 14 Kota Tua Jakarta",
+      "Tugu Kunstkring Paleis": "Tugu Kunstkring Paleis Jl. Teuku Umar 1 Menteng Jakarta",
+      "Plataran Menteng": "Plataran Menteng Jl. H.O.S. Cokroaminoto 42 Menteng Jakarta",
+      "T'ang Court": "T'ang Court The Langham District 8 SCBD Lot 28 Jakarta",
+      "Galeri Indonesia Kaya": "Galeri Indonesia Kaya Grand Indonesia West Mall Jl. M.H. Thamrin 1 Jakarta",
+      "Ragunan Zoo": "Taman Margasatwa Ragunan Jl. Harsono RM 1 Ragunan Jakarta",
+      "Bakmi GM (K-Mall Kemayoran)": "Bakmi GM K-Mall Jl. Kota Baru Bandar Kemayoran C8 Jakarta",
+      "Morimoto Jakarta": "Morimoto The Langham District 8 SCBD Lot 28 Jakarta",
+      "The Writers Bar": "The Writers Bar Raffles Ciputra World 1 Jl. Prof. Dr. Satrio Kav. 3-5 Jakarta",
+      "Plataran Dharmawangsa": "Plataran Dharmawangsa Jl. Dharmawangsa Raya 6 Kebayoran Baru Jakarta",
+      "Artesian Bar Jakarta": "Artesian Bar The Langham District 8 SCBD Lot 28 Jakarta",
+      "Lara Djonggrang": "Lara Djonggrang Jl. Teuku Cik Ditiro 4 Menteng Jakarta",
+      "Hutan Kota by Plataran": "Hutan Kota by Plataran Jl. Jenderal Sudirman 54-55 Gelora Jakarta",
+      "Taman Mini Indonesia Indah": "Taman Mini Indonesia Indah Jl. Raya Taman Mini Jakarta Timur Jakarta",
+      "Bakoel Koffie (Cikini)": "Bakoel Koffie Jl. Cikini Raya 25 Cikini Jakarta",
+      "Arts Cafe by Raffles": "Arts Cafe by Raffles Ciputra World 1 Jl. Prof. Dr. Satrio Kav. 3-5 Jakarta",
+      "Alice by Tom Aikens": "Alice by Tom Aikens The Langham District 8 SCBD Lot 28 Jakarta",
+      "Tom's by Tom Aikens": "Tom's by Tom Aikens The Langham District 8 SCBD Lot 28 Jakarta",
+      "Teras by Plataran (Plaza Indonesia)": "Teras by Plataran Plaza Indonesia Jl. M.H. Thamrin 28-30 Jakarta",
+      "Raffles Patisserie": "Raffles Patisserie Ciputra World 1 Jl. Prof. Dr. Satrio Kav. 3-5 Jakarta",
+      "Patio Bakery (Kebayoran Baru)": "Patio Bakery Jl. Wijaya XIII 45 Kebayoran Baru Jakarta",
+      "Tanamera Coffee (Plaza Indonesia)": "Tanamera Coffee The Plaza Office Tower Jl. M.H. Thamrin 28-30 Jakarta"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Jakarta" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "National and contemporary art museums, a mosque, a cathedral and a zoo, with breakfast spots, Menteng dinners, a patisserie, coffee and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Museum Nasional Indonesia","Museum MACAN","Masjid Istiqlal","Jakarta Cathedral"];
+    cityGuide.tip = "Museum Nasional Indonesia, Museum MACAN and Ragunan Zoo are all closed on Mondays, and Museum Nasional Indonesia also closes on national holidays, so save Monday for restaurants and cafés.";
+    data.destinationFacts[cityKey] = "Museum Nasional Indonesia, Museum MACAN and Ragunan Zoo are all closed on Mondays, and Museum Nasional Indonesia also closes on national holidays, so save Monday for restaurants and cafés.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "National and contemporary art museums, a mosque, a cathedral and a zoo, with breakfast spots, Menteng dinners, a patisserie, coffee and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays for the big sights",
+        "copy": "Museum Nasional Indonesia (also closed on national holidays), Museum MACAN and Ragunan Zoo are all closed on Mondays. Artesian Bar Jakarta at The Langham is closed on Sundays."
+      },
+      {
+        "label": "Tickets",
+        "value": "Book Museum MACAN online",
+        "copy": "Museum MACAN sells tickets online until midnight before your visit, and they can't be exchanged, rescheduled or refunded. At Museum Nasional Indonesia, foreign visitors pay Rp150.000, and the imersifA room needs a museum ticket first."
+      },
+      {
+        "label": "Walk-in and payment",
+        "value": "JakCard at the zoo",
+        "copy": "Ragunan Zoo takes entry by Bank DKI JakCard, sold at its ticket counters, with adult entry at Rp 4,000. Raffles Patisserie needs no reservation, while Arts Cafe by Raffles and The Writers Bar take bookings by phone or online."
+      },
+      {
+        "label": "Rules",
+        "value": "Bags and dress",
+        "copy": "Museum MACAN bars wheeled bags, food and drink, DSLR cameras and tripods from its galleries. Jakarta Cathedral asks Mass-goers to dress neatly and modestly."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Avoid Mondays for the major museums and the zoo, and book Museum MACAN online by the night before.",
+      intro: [
+        "Start at Museum Nasional Indonesia on Jl. Medan Merdeka Barat. Since 1 April 2026 its posted hours are 08.00 to 18.00 from Tuesday to Thursday and 08.00 to 20.00 from Friday to Sunday, and it is closed every Monday and on national holidays. The permanent Sejarah Awal gallery, open since 18 December 2025, centres on the Homo erectus (Java Man) fossil returned from the Netherlands, at no extra charge. On the second Wednesday of each month, the ARAMSA programme gives you free regular admission from 16.00 to 20.00; register by QR code at the ticket counter rather than online.",
+        "In West Jakarta, Museum MACAN in AKR Tower opens Tuesday to Sunday from 10.00 to 18.00, with last entry at 17.30, and is closed on Mondays. Tromarama: Ketok Magic, the collective's first solo museum exhibition in Indonesia, runs from 14 November 2026 to 4 April 2027, alongside presentations by Eko Nugroho and Iwan Effendi. Buy tickets online by midnight before your visit; they can't be rescheduled or refunded, and wheeled bags aren't allowed in the galleries. For a free cultural stop, Galeri Indonesia Kaya, on the eighth floor of Grand Indonesia's West Mall, opens from 10.00 to 21.30 and lists its programmes as free.",
+        "Masjid Istiqlal and Jakarta Cathedral both give Pasar Baru addresses in Central Jakarta. Istiqlal registers official domestic and foreign group visits through its public relations team, but its site doesn't publish general visitor hours. The cathedral lists weekday Mass at 06.00 and 18.00 and asks you to dress neatly and modestly. For families, Ragunan Zoo in South Jakarta opens Tuesday to Sunday from 07.00 to 16.00 and is closed on Mondays, which it calls the animals' day off. Entry is paid with a Bank DKI JakCard sold at the zoo's counters, and adult tickets cost Rp 4,000.",
+        "For dinner in Menteng, Tugu Kunstkring Paleis on Jl. Teuku Umar and Lara Djonggrang on Jl. Teuku Cik Ditiro both take table bookings, and Plataran Menteng on Jl. H.O.S. Cokroaminoto lists daily hours of 11.00 to 22.00. Café Batavia, on Jl. Pintu Besar Utara in Kota Tua, takes reservations by phone, email or WhatsApp. The Langham, Jakarta lists Morimoto Jakarta on its 63rd floor for dinner and Artesian Bar on the 65th, closed on Sundays. At Raffles Jakarta, Arts Cafe serves breakfast daily from 06.30 to 10.00, and Raffles Patisserie needs no reservation."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair Museum Nasional Indonesia with Masjid Istiqlal and Jakarta Cathedral in Central Jakarta on any day except Monday, when the museum is closed."
+        ],
+        [
+          "A slower morning",
+          "Take breakfast at Arts Cafe by Raffles, served daily from 06.30 to 10.00, then walk in for pastries at Raffles Patisserie when it opens at 10.00."
+        ],
+        [
+          "Before booking",
+          "Museum Nasional Indonesia, Museum MACAN and Ragunan Zoo are all closed on Mondays, and Artesian Bar Jakarta is closed on Sundays."
+        ]
+      ],
+      trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on November 24, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();
