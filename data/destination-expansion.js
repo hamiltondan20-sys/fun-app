@@ -12165,4 +12165,109 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 22 distinct recommendations in this guide were checked against their operators' own websites on November 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Krabi, Thailand: source review of 2026-11-25 (docs/content-research/krabi-2026-11-25.md).
+  {
+    const cityKey = "Krabi, Thailand";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Hat Noppharat Thara–Mu Ko Phi Phi National Park","Than Bok Khorani National Park","Khao Phanom Bencha National Park","Mu Ko Lanta National Park"],
+      bestFirstTimers: ["Hat Noppharat Thara–Mu Ko Phi Phi National Park","CRU Kitchen and Bar (Ao Nang)","Del & Dia Cafe (Ao Nang)","Than Bok Khorani National Park"],
+      bestRestaurants: ["CRU Kitchen and Bar (Ao Nang)","Lae Lay (Phulay Bay)","MIRA Restaurant (Pakasai Resort)","Sand Sea Restaurant (Sand Sea Resort, Railay)"],
+      bestBudget: ["Del & Dia Cafe (Ao Nang)","Krua Village Restaurant (Railay Village Resort)","Khao Phanom Bencha National Park","Than Bok Khorani National Park"],
+      bestLuxury: ["Lae Lay (Phulay Bay)","Sri Trang (Phulay Bay)","MIRA Restaurant (Pakasai Resort)","The Grotto (Rayavadee)"],
+      bestCouples: ["Chomtawan (Phulay Bay)","Sand Sea Restaurant (Sand Sea Resort, Railay)","Lae Lay (Phulay Bay)","Beach Bar (Aonang Villa Resort)"],
+      bestKids: ["Limoncello (Dusit Thani Krabi Beach Resort)","Del & Dia Cafe (Ao Nang)","Khao Phanom Bencha National Park"],
+      bestSolo: ["Del & Dia Cafe (Ao Nang)","GAIA Kitchen & Bar (Pakasai Resort)","CRU Kitchen and Bar (Ao Nang)","Hat Noppharat Thara–Mu Ko Phi Phi National Park"],
+      bestUnique: ["Mu Ko Lanta National Park","Sri Trang (Phulay Bay)","Krua Village Restaurant (Railay Village Resort)","Than Bok Khorani National Park"],
+      bestBreakfast: ["Del & Dia Cafe (Ao Nang)","Jampoon (Phulay Bay)","Sand Sea Restaurant (Sand Sea Resort, Railay)","The Naga Terrace (Nakamanda Resort)"],
+      bestLunch: ["GAIA Kitchen & Bar (Pakasai Resort)","CRU Kitchen and Bar (Ao Nang)","Plai Fah (Phulay Bay)","Lae Lay Grill (Ao Nang)"],
+      bestDinner: ["Lae Lay (Phulay Bay)","MIRA Restaurant (Pakasai Resort)","Sri Trang (Phulay Bay)","Mangosteens (Dusit Thani Krabi Beach Resort)"],
+      bestCocktails: ["Pirom Bar (Phulay Bay)","GAIA Kitchen & Bar (Pakasai Resort)","CocoVida Bar (Dusit Thani Krabi Beach Resort)","The Beach Bar (Nakamanda Resort)"],
+      bestBakeries: ["Del & Dia Cafe (Ao Nang)"],
+      bestCoffee: ["Del & Dia Cafe (Ao Nang)","GAIA Kitchen & Bar (Pakasai Resort)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Hat Noppharat Thara–Mu Ko Phi Phi National Park": "Hat Noppharat Thara Mu Ko Phi Phi National Park 79 Moo 5 Ao Nang Krabi",
+      "Than Bok Khorani National Park": "Than Bok Khorani National Park 2/2 Moo 2 Ao Luek Tai Krabi",
+      "Khao Phanom Bencha National Park": "Khao Phanom Bencha National Park 170 Moo 4 Thap Prik Krabi",
+      "Mu Ko Lanta National Park": "Mu Ko Lanta National Park 59 Moo 5 Ban Laem Tanote Ko Lanta Krabi",
+      "CRU Kitchen and Bar (Ao Nang)": "CRU Kitchen and Bar 328/3 Ao Nang Krabi",
+      "Del & Dia Cafe (Ao Nang)": "Del & Dia Cafe 290/25 Moo 2 Ao Nang Krabi",
+      "Lae Lay (Phulay Bay)": "Lae Lay Phulay Bay 111 Moo 3 Nong Thale Krabi",
+      "MIRA Restaurant (Pakasai Resort)": "MIRA Restaurant Pakasai Resort 88 Moo 3 Ao Nang Krabi",
+      "Sand Sea Restaurant (Sand Sea Resort, Railay)": "Sand Sea Resort 39 Moo 2 Railay Beach Ao Nang Krabi",
+      "Krua Village Restaurant (Railay Village Resort)": "Krua Village Railay Village Resort 544 Moo 2 Ao Nang Krabi",
+      "Sri Trang (Phulay Bay)": "Sri Trang Phulay Bay 111 Moo 3 Nong Thale Krabi",
+      "The Grotto (Rayavadee)": "The Grotto Rayavadee 214 Moo 2 Ao Nang Krabi",
+      "Chomtawan (Phulay Bay)": "Chomtawan Phulay Bay 111 Moo 3 Nong Thale Krabi",
+      "Beach Bar (Aonang Villa Resort)": "Beach Bar Aonang Villa Resort 113 Moo 2 Ao Nang Krabi",
+      "Limoncello (Dusit Thani Krabi Beach Resort)": "Limoncello Dusit Thani Krabi Beach Resort 155 Moo 2 Nong Thale Krabi",
+      "GAIA Kitchen & Bar (Pakasai Resort)": "GAIA Kitchen & Bar Pakasai Resort 88 Moo 3 Ao Nang Krabi",
+      "Jampoon (Phulay Bay)": "Jampoon Phulay Bay 111 Moo 3 Nong Thale Krabi",
+      "The Naga Terrace (Nakamanda Resort)": "The Naga Terrace Nakamanda Resort 126 Moo 3 Klong Muang Krabi",
+      "Plai Fah (Phulay Bay)": "Plai Fah Phulay Bay 111 Moo 3 Nong Thale Krabi",
+      "Lae Lay Grill (Ao Nang)": "Lae Lay Grill 89 Moo 3 Ao Nang Krabi",
+      "Mangosteens (Dusit Thani Krabi Beach Resort)": "Mangosteens Dusit Thani Krabi Beach Resort 155 Moo 2 Nong Thale Krabi",
+      "Pirom Bar (Phulay Bay)": "Pirom Bar Phulay Bay 111 Moo 3 Nong Thale Krabi",
+      "CocoVida Bar (Dusit Thani Krabi Beach Resort)": "CocoVida Bar Dusit Thani Krabi Beach Resort 155 Moo 2 Nong Thale Krabi",
+      "The Beach Bar (Nakamanda Resort)": "The Beach Bar Nakamanda Resort 126 Moo 3 Klong Muang Krabi"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Krabi" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Krabi's national parks plus Ao Nang, Railay and Klong Muang restaurants, cafés and resort bars, checked against their own websites or the national parks department.";
+    cityGuide.highlights = ["Hat Noppharat Thara–Mu Ko Phi Phi National Park","Than Bok Khorani National Park","Khao Phanom Bencha National Park","Mu Ko Lanta National Park"];
+    cityGuide.tip = "None of the restaurants checked lists a weekly closing day, but the parks department's Mu Ko Lanta page says Ko Rok, Kong Hin Daeng and Kong Hin Muang are closed to tourists from 16 May to 15 November every year.";
+    data.destinationFacts[cityKey] = "None of the restaurants checked lists a weekly closing day, but the parks department's Mu Ko Lanta page says Ko Rok, Kong Hin Daeng and Kong Hin Muang are closed to tourists from 16 May to 15 November every year.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Krabi's national parks plus Ao Nang, Railay and Klong Muang restaurants, cafés and resort bars, checked against their own websites or the national parks department.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "No weekly closures listed; Lanta islands seasonal",
+        "copy": "CRU Kitchen and Bar opens every day from 11:00 to 23:00 and Del & Dia Cafe daily from 7:00 AM to 9:00 PM, with no weekly closing day given. The parks department's Mu Ko Lanta page says Ko Rok, Kong Hin Daeng and Kong Hin Muang are closed to tourists from 16 May to 15 November every year."
+      },
+      {
+        "label": "Booking",
+        "value": "Reserve resort dinners ahead",
+        "copy": "Phulay Bay takes bookings for Lae Lay, Jampoon and Sri Trang through SevenRooms or on +66 75-628111. Dusit Thani Krabi Beach Resort takes reservations for Mangosteens and Limoncello on 075 628 000 or dtkr@dusit.com."
+      },
+      {
+        "label": "Seats and notice",
+        "value": "Small rooms, cake lead times",
+        "copy": "CRU Kitchen and Bar says it has only 68 seats and they fill up quickly. Del & Dia Cafe asks for at least 2–3 days' notice for custom cakes."
+      },
+      {
+        "label": "Rules",
+        "value": "Alcohol, dress and park receipts",
+        "copy": "Krua Village at Railay Village Resort sells no alcohol but lets you bring your own without corkage, and The Grotto at Rayavadee serves non-alcoholic all-day dining. Mangosteens and Limoncello ask for resort casual dress, and national park pages tell you to keep your entrance-fee receipt for inspection."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Book resort dinners ahead, keep your park receipt, and save the Lanta outer islands for mid-November to mid-May.",
+      intro: [
+        "This guide to Krabi is built from places whose own websites, or the national parks department, publish an address and current details. For the big landscapes, you can start with Hat Noppharat Thara–Mu Ko Phi Phi National Park, headquartered at 79 Moo 5 in Ao Nang, then head inland to Than Bok Khorani in Ao Luek or Khao Phanom Bencha in Thap Prik. The parks department's pages for all three tell you to carry your entrance-fee receipt for inspection and list park welfare shops open daily from 8.30 to 16.30, though those pages carry a 2015 footer.",
+        "For islands further south, the parks department's Mu Ko Lanta page, which also carries a 2015 footer, says Ko Rok, Kong Hin Daeng and Kong Hin Muang are closed to tourists from 16 May to 15 November every year, so plan those trips outside that window. Back on the mainland, Ao Nang has the most choice for eating. CRU Kitchen and Bar opens every day from 11:00 to 23:00 and warns that its 68 seats fill up quickly, while Del & Dia Cafe opens daily from 7:00 AM to 9:00 PM for lattes, croissants and breakfast.",
+        "For a slower evening, GAIA Kitchen & Bar at Pakasai Resort serves brunch, coffee and cocktails every day from 11:00 AM to 11:00 PM, with live music on Mondays, Wednesdays and Fridays, and MIRA Restaurant at the same resort offers a five-course tasting menu or à la carte. At Nong Thale, Phulay Bay, a Ritz-Carlton Reserve, lists Lae Lay and Sri Trang for dinner from 6:00 PM to 10:00 PM, Pirom Bar until 11:00 PM, and Jampoon from 6:30 AM, where breakfast is also available for a fee.",
+        "Railay works differently. At Railay Village Resort, Krua Village Restaurant serves Thai and Western food but does not sell alcohol, and the resort says you can bring your own without corkage fees. At Rayavadee, The Grotto is the only venue listed as open, serving breakfast, lunch and dinner without alcohol from 07:00 to 21:00, while Krua Phranang, The Raya Dining and Raitalay Terrace are listed as temporarily closed. Sand Sea Resort offers a private candlelit four-course beach dinner for two that you can book."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Start with Hat Noppharat Thara–Mu Ko Phi Phi National Park from Ao Nang, then book dinner at CRU Kitchen and Bar, which opens every day but has only 68 seats."
+        ],
+        [
+          "A slower morning",
+          "Del & Dia Cafe in Ao Nang opens daily at 7:00 AM for lattes and croissants, and Jampoon at Phulay Bay serves breakfast from 6:30 AM."
+        ],
+        [
+          "Before booking",
+          "None of the restaurants checked lists a weekly closing day, but Mu Ko Lanta National Park closes Ko Rok, Kong Hin Daeng and Kong Hin Muang to tourists from 16 May to 15 November every year."
+        ]
+      ],
+      trust: "All 24 distinct recommendations in this guide were checked against their operators' own websites on November 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

@@ -1,0 +1,961 @@
+{
+  "city": "Krabi, Thailand",
+  "checkedOn": "2026-11-25",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Hat Noppharat Thara–Mu Ko Phi Phi National Park",
+      "kind": "park",
+      "url": "https://portal.dnp.go.th/Content/nationalpark?contentId=35169",
+      "sourceType": "official public operator (Department of National Parks, Wildlife and Plant Conservation)",
+      "address": "No. 79 Moo 5, Ao Nang Sub-district, Mueang District, Krabi Province",
+      "operatingEvidence": "Live DNP park page with HQ phone and email; tells visitors to keep the receipt after paying the entrance fee for inspection. Ao Maya is described as \"closed for visitor activities\" (no date). Page footer reads \"2015 © All Rights Reserved\", so details may be old.",
+      "hours": "Park hours not published; welfare shop \"Open daily from 8.30 – 16.30 hrs.\" (page with 2015 footer)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Than Bok Khorani National Park",
+      "kind": "park",
+      "url": "https://portal.dnp.go.th/Content/nationalpark?contentId=35179",
+      "sourceType": "official public operator (Department of National Parks, Wildlife and Plant Conservation)",
+      "address": "2/2 Moo 2, Ao Luek Tai Sub-district, Ao Luek District, Krabi Province 81110",
+      "operatingEvidence": "Live DNP park page: \"After paying the entrance fee to the National Park, please carry the receipt for inspection.\" No closure notice; footer \"2015 ©\".",
+      "hours": "Park hours not published; welfare shop \"open daily from 8.30 – 16.30 hrs.\" (page with 2015 footer)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Khao Phanom Bencha National Park",
+      "kind": "park",
+      "url": "https://portal.dnp.go.th/Content/nationalpark?contentId=35183",
+      "sourceType": "official public operator (Department of National Parks, Wildlife and Plant Conservation)",
+      "address": "170 Moo 4, Thap Prik Sub-district, Mueang Krabi District, Krabi Province 81000",
+      "operatingEvidence": "Live DNP park page with entrance-fee receipt rule; no closure notice; footer \"2015 ©\".",
+      "hours": "Park hours not published; welfare shop restaurant \"Open daily from 8.30 – 16.30 hrs.\" (page with 2015 footer)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mu Ko Lanta National Park",
+      "kind": "park",
+      "url": "https://portal.dnp.go.th/Content/nationalpark?contentId=35170",
+      "sourceType": "official public operator (Department of National Parks, Wildlife and Plant Conservation)",
+      "address": "59 Moo 5, Ban Laem Tanote, Ko Lanta Yai Sub-distric, Ko Lanta District, Krabi Province 81150",
+      "operatingEvidence": "Live DNP park page; seasonal rule for Ko Rok, Kong Hin Daeng and Kong Hin Muang: \"Close tourist season from May 16 to November 15 every year.\" Footer \"2015 ©\".",
+      "hours": "Park hours not published; \"Laem Tanot is open daily from 8.30 – 16.30 hrs.\"; \"Ko Rok is available daily from 8.30 – 17.00 hrs.\" (welfare shops; page with 2015 footer)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Lae Lay (Phulay Bay)",
+      "kind": "meal",
+      "url": "https://www.ritzcarlton.com/en/hotels/kbvrz-phulay-bay-a-ritz-carlton-reserve/dining/",
+      "sourceType": "operator's own site (Phulay Bay, a Ritz-Carlton Reserve)",
+      "address": "111 Moo 3, Nongthalay, Muang, Krabi, Thailand, 81180",
+      "operatingEvidence": "Dining page lists hours and SevenRooms booking or +66 75-628111; hotel overview advertises festive programme \"19 December 2026 to 1 January 2027\".",
+      "hours": "6:00 PM-10:00 PM daily",
+      "confidence": "high"
+    },
+    {
+      "name": "Sri Trang (Phulay Bay)",
+      "kind": "meal",
+      "url": "https://www.ritzcarlton.com/en/hotels/kbvrz-phulay-bay-a-ritz-carlton-reserve/dining/",
+      "sourceType": "operator's own site (Phulay Bay, a Ritz-Carlton Reserve)",
+      "address": "111 Moo 3, Nongthalay, Muang, Krabi, Thailand, 81180",
+      "operatingEvidence": "Thai private fine dining; \"Dishes are served family-style, per the local tradition\"; bookable via SevenRooms. Hotel overview has 2026–27 festive dates.",
+      "hours": "6:00 PM-10:00 PM daily",
+      "confidence": "high"
+    },
+    {
+      "name": "Jampoon (Phulay Bay)",
+      "kind": "meal",
+      "url": "https://www.ritzcarlton.com/en/hotels/kbvrz-phulay-bay-a-ritz-carlton-reserve/dining/",
+      "sourceType": "operator's own site (Phulay Bay, a Ritz-Carlton Reserve)",
+      "address": "111 Moo 3, Nongthalay, Muang, Krabi, Thailand, 81180",
+      "operatingEvidence": "Beachfront restaurant with chef's table; FAQ: \"Breakfast is also available onsite at Jampoon for a fee.\" Bookable via SevenRooms.",
+      "hours": "6:30 AM-11:00 AM, 12:00 PM-5:00 PM, 6:00 PM-10:00 PM daily",
+      "confidence": "high"
+    },
+    {
+      "name": "Pirom Bar (Phulay Bay)",
+      "kind": "bar",
+      "url": "https://www.ritzcarlton.com/en/hotels/kbvrz-phulay-bay-a-ritz-carlton-reserve/dining/",
+      "sourceType": "operator's own site (Phulay Bay, a Ritz-Carlton Reserve)",
+      "address": "111 Moo 3, Nongthalay, Muang, Krabi, Thailand, 81180",
+      "operatingEvidence": "\"Pirom Bar serves a curated selection of premium drinks and cocktails\"; hours listed on current dining page.",
+      "hours": "6:00 PM-11:00 PM daily",
+      "confidence": "high"
+    },
+    {
+      "name": "Chomtawan (Phulay Bay)",
+      "kind": "bar",
+      "url": "https://www.ritzcarlton.com/en/hotels/kbvrz-phulay-bay-a-ritz-carlton-reserve/dining/",
+      "sourceType": "operator's own site (Phulay Bay, a Ritz-Carlton Reserve)",
+      "address": "111 Moo 3, Nongthalay, Muang, Krabi, Thailand, 81180",
+      "operatingEvidence": "Casual beachfront lounge \"with a light bite or tropical cocktail\"; \"lounge beds ... ideal for admiring the sunset.\"",
+      "hours": "11:00 AM-11:00 PM daily",
+      "confidence": "high"
+    },
+    {
+      "name": "Plai Fah (Phulay Bay)",
+      "kind": "meal",
+      "url": "https://www.ritzcarlton.com/en/hotels/kbvrz-phulay-bay-a-ritz-carlton-reserve/dining/",
+      "sourceType": "operator's own site (Phulay Bay, a Ritz-Carlton Reserve)",
+      "address": "111 Moo 3, Nongthalay, Muang, Krabi, Thailand, 81180",
+      "operatingEvidence": "Poolside restaurant serving \"international favorites from burgers to pizzas, alongside local dishes.\"",
+      "hours": "9:00 AM-6:00 PM daily",
+      "confidence": "high"
+    },
+    {
+      "name": "CRU Kitchen and Bar (Ao Nang)",
+      "kind": "meal",
+      "url": "https://www.crukrabi.com/",
+      "sourceType": "operator's own site",
+      "address": "328/3, Ao Nang, Mueang Krabi District, Krabi 81180",
+      "operatingEvidence": "Post dated 2026-01-19, footer \"© Copyright 2022 - 2026\", menus and reservations; \"only 68 seats in CRU Krabi and they fill up quickly.\"",
+      "hours": "Open Every day 11:00 – 23:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Del & Dia Cafe (Ao Nang)",
+      "kind": "cafe",
+      "url": "https://delanddia.com/en/cafe/",
+      "sourceType": "operator's own site",
+      "address": "290/25 Moo 2, Ao Nang, Krabi, Thailand",
+      "operatingEvidence": "\"celebrating five years of Del & Dia in 2026\"; menu with latte (฿89 hot) and croissants; custom halal cakes need \"at least 2–3 days in advance\".",
+      "hours": "Open Daily · 7:00 AM – 9:00 PM",
+      "confidence": "high"
+    },
+    {
+      "name": "GAIA Kitchen & Bar (Pakasai Resort)",
+      "kind": "cafe",
+      "url": "https://www.pakasai.com/gaia-cafe-krabi/",
+      "sourceType": "operator's own site (Pakasai Resort)",
+      "address": "88 Moo 3, T.Ao Nang, A.Muang, Krabi 81180 Thailand",
+      "operatingEvidence": "\"Start with a slow brunch and good coffee\"; \"Live Music - every Monday, Wednesday, and Friday\"; menu file labelled 2026-2027; resort ran \"Wellness Week 2026\" with discounts at GAIA and MIRA.",
+      "hours": "Everyday 11:00AM to 11:00PM",
+      "confidence": "high"
+    },
+    {
+      "name": "MIRA Restaurant (Pakasai Resort)",
+      "kind": "meal",
+      "url": "https://www.pakasai.com/mira-krabi/",
+      "sourceType": "operator's own site (Pakasai Resort)",
+      "address": "88 Moo 3, T.Ao Nang, A.Muang, Krabi 81180 Thailand",
+      "operatingEvidence": "\"a 5-course tasting menu or a la carte menu\"; Reserve Now link and mira@pakasai.com; included in resort's Wellness Week 2026 offer (stays 23–29 October 2026).",
+      "hours": "Conflicting on page: \"Everyday 6:00PM to 10:30PM\" and caption \"opens 6:00 PM to 11:00 PM\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Krua Village Restaurant (Railay Village Resort)",
+      "kind": "meal",
+      "url": "https://www.railayvillagekrabi.com/dining/",
+      "sourceType": "operator's own site (Railay Village Resort & Spa)",
+      "address": "544 Moo 2 Ao Nang , Muang , Krabi 81180 Thailand",
+      "operatingEvidence": "\"a variety of authentic Thai and Western Food\"; \"Alcoholic beverages are not available for purchase on-site restaurant\", guests may bring their own \"without corkage fees\". Homepage: villa \"Available for reservations from November 1, 2026.\"",
+      "hours": "not published",
+      "confidence": "high"
+    },
+    {
+      "name": "Sand Sea Restaurant (Sand Sea Resort, Railay)",
+      "kind": "meal",
+      "url": "https://www.krabisandsea.com/restaurant/",
+      "sourceType": "operator's own site (Sand Sea Resort)",
+      "address": "39 M.2 Railay Beach, Tumbon, Ao-Nang, Muang Distrist, Krabi 81000, Thailand",
+      "operatingEvidence": "Homepage offers with stay periods to 2027, including Romantic Beach Dinner: \"private candlelit beachfront dining with a four-course gourmet dinner for two\" (\"Now - 31 Oct 2027\").",
+      "hours": "Restaurant page (no dated text): Buffet Breakfast \"07.00 - 10.00 AM\", all day dining \"10.00 AM – 10.00 PM\", fresh seafood \"06.00 - 10.00 PM\"",
+      "confidence": "high"
+    },
+    {
+      "name": "The Grotto (Rayavadee)",
+      "kind": "meal",
+      "url": "https://www.rayavadee.com/en/facilities.php",
+      "sourceType": "operator's own site (Rayavadee)",
+      "address": "214 Moo 2, Tumbon Ao-Nang, Amphur Muang, Krabi 81000, Thailand",
+      "operatingEvidence": "Only venue listed as open: \"all day dining for breakfast, lunch and dinner with non-alcoholic during 07:00-21:00 hrs\"; homepage carries a 2026 notice (tennis court renovation 1 September – 31 October 2026). Address from contact page.",
+      "hours": "07:00-21:00",
+      "confidence": "high"
+    },
+    {
+      "name": "Lae Lay Grill (Ao Nang)",
+      "kind": "meal",
+      "url": "https://www.laelaygrill.com/",
+      "sourceType": "operator's own site",
+      "address": "89 Moo 3, Ao Nang, Muang, Krabi, 81000",
+      "operatingEvidence": "Booking and \"Reserve a table\" links live; no dated content (footer \"©Copyright 2016\").",
+      "hours": "\"11am - 10pm Daily\" (page also says \"Always Open\"; page undated)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mangosteens (Dusit Thani Krabi Beach Resort)",
+      "kind": "meal",
+      "url": "https://www.dusit.com/dusitthani-krabibeachresort/dining/mangosteens/",
+      "sourceType": "operator's own site (Dusit Thani Krabi Beach Resort)",
+      "address": "155 Moo 2, Nong Thale, Muang, Krabi 81180, Thailand",
+      "operatingEvidence": "\"Savour breakfast and dinner al fresco\"; Southern Thai, Thai and Indian; reservations 075 628 000 or dtkr@dusit.com; dress code \"Resort Casual\". Footer © 2025.",
+      "hours": "\"Seasonal\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "CocoVida Bar (Dusit Thani Krabi Beach Resort)",
+      "kind": "bar",
+      "url": "https://www.dusit.com/dusitthani-krabibeachresort/dining/cocovida-bar/",
+      "sourceType": "operator's own site (Dusit Thani Krabi Beach Resort)",
+      "address": "155 Moo 2, Nong Thale, Muang, Krabi 81180, Thailand",
+      "operatingEvidence": "Rum cocktails, mocktails and gins; \"vibrant nightly entertainment\"; evening menu linked; reservations by phone/email.",
+      "hours": "\"Seasonal\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Limoncello (Dusit Thani Krabi Beach Resort)",
+      "kind": "meal",
+      "url": "https://www.dusit.com/dusitthani-krabibeachresort/dining/limoncello/",
+      "sourceType": "operator's own site (Dusit Thani Krabi Beach Resort)",
+      "address": "155 Moo 2, Nong Thale, Muang, Krabi 81180, Thailand",
+      "operatingEvidence": "Beachfront Italian; Junior Chefs pizza class \"Rates from THB 900 net\"; reservations 075 628 000; \"Resort Casual\".",
+      "hours": "\"Seasonal\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "Breeze Beach Bar (Dusit Thani Krabi Beach Resort)",
+      "kind": "bar",
+      "url": "https://www.dusit.com/dusitthani-krabibeachresort/dining/breeze-sunset-bar/",
+      "sourceType": "operator's own site (Dusit Thani Krabi Beach Resort)",
+      "address": "155 moo 2, Nong Thale, Muang, Krabi 81180, Thailand",
+      "operatingEvidence": "Beachfront bar; inquiries 075 628 000; resort page: \"open as long as weather conditions permit.\"",
+      "hours": "\"Seasonal\"",
+      "confidence": "medium"
+    },
+    {
+      "name": "La Medusa Restaurant (Aonang Villa Resort)",
+      "kind": "meal",
+      "url": "https://www.aonangvilla.com/dining/la-medusa-restaurant/",
+      "sourceType": "operator's own site (Aonang Villa Resort)",
+      "address": "113 Moo 2, Aonang Beach, Amphur Muang, Krabi 81180 Thailand",
+      "operatingEvidence": "\"authentic mediterranean cuisine\" with seaview; Make A Reservation link; footer \"© 2026 Aonang Villa Resort\" only.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Beach Bar (Aonang Villa Resort)",
+      "kind": "bar",
+      "url": "https://www.aonangvilla.com/dining/beachbar/",
+      "sourceType": "operator's own site (Aonang Villa Resort)",
+      "address": "113 Moo 2, Aonang Beach, Amphur Muang, Krabi 81180 Thailand",
+      "operatingEvidence": "\"the perfect spot to while away the afternoon as the sun slowly sets over the Andaman Sea\"; footer \"© 2026\" only.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Naga Terrace (Nakamanda Resort)",
+      "kind": "meal",
+      "url": "https://nakamanda.com/?page_id=37",
+      "sourceType": "operator's own site (Nakamanda Resort & Spa)",
+      "address": "126 M.3 Klong Muang, Nongtalay, Krabi 81000, Thailand",
+      "operatingEvidence": "Dining page lists breakfast and all-day hours with last orders; no dated text (image uploads under /2026/11/).",
+      "hours": "\"Breakfast: 6:30 A.M. -10:30 A.M.\"; \"Lunch and Dinner: 11:00 A.M. – 11:00 P.M. ( Last order at 10:30 P.M.)\" (undated page)",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Beach Bar (Nakamanda Resort)",
+      "kind": "bar",
+      "url": "https://nakamanda.com/?page_id=1559",
+      "sourceType": "operator's own site (Nakamanda Resort & Spa)",
+      "address": "126 M.3 Klong Muang, Nongtalay, Krabi 81000, Thailand",
+      "operatingEvidence": "Cocktails Happy Hour \"Buy 1 Get 1 Free\", \"Time 05.30 PM – 06.30 PM\"; no dated text.",
+      "hours": "\"11.00 AM – 11.00 PM (Last order at 10:30 PM)\" (undated dining page)",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Krua Phranang (Rayavadee)",
+      "reason": "Official facilities page lists it as temporarily closed, no reopening date",
+      "url": "https://www.rayavadee.com/en/facilities.php"
+    },
+    {
+      "name": "The Raya Dining (Rayavadee)",
+      "reason": "Official facilities page lists it as temporarily closed, no reopening date",
+      "url": "https://www.rayavadee.com/en/facilities.php"
+    },
+    {
+      "name": "Raitalay Terrace (Rayavadee)",
+      "reason": "Official facilities page lists it as temporarily closed, no reopening date",
+      "url": "https://www.rayavadee.com/en/facilities.php"
+    },
+    {
+      "name": "Centara Grand Beach Resort & Villas Krabi",
+      "reason": "Official site presents the property as reimagined as Centara Reserve Krabi; opening offer is for stays from 1 March 2027 and no street address is published (\"Pai Plong Bay\" only)",
+      "url": "https://www.centarahotelsresorts.com/centarareserve/crk/crk-opening"
+    },
+    {
+      "name": "Banyan Tree Krabi",
+      "reason": "Fetch failed: HTTP 403 Forbidden",
+      "url": "https://www.banyantree.com/thailand/krabi"
+    },
+    {
+      "name": "Avani Ao Nang Cliff Krabi Resort",
+      "reason": "Fetch failed: HTTP 403 Forbidden",
+      "url": "https://www.avanihotels.com/en/ao-nang-krabi"
+    },
+    {
+      "name": "Holiday Inn Resort Krabi Ao Nang Beach",
+      "reason": "Fetch failed: HTTP 403 Forbidden",
+      "url": "https://www.ihg.com/holidayinnresorts/hotels/gb/en/krabi/kbvab/hoteldetail/dining"
+    },
+    {
+      "name": "Starbucks (Krabi branches)",
+      "reason": "Store locator fetch failed: HTTP 403 Forbidden",
+      "url": "https://www.starbucks.co.th/en/store-locator/"
+    },
+    {
+      "name": "Krabi Town Walking Street / Andaman Cultural Learning Center",
+      "reason": "Krabi Town Municipality site fetch failed: HTTP 403 Forbidden",
+      "url": "https://www.krabicity.go.th/"
+    },
+    {
+      "name": "King Climbers (Railay)",
+      "reason": "Fetch failed: certificate has expired",
+      "url": "https://www.railay.com/"
+    },
+    {
+      "name": "Sofitel Krabi Phokeethra",
+      "reason": "Fetch failed: domain not found (ENOTFOUND); Accor page returned 404",
+      "url": "https://www.sofitel-krabi-phokeethra.com/"
+    },
+    {
+      "name": "Railay Princess Resort",
+      "reason": "Fetch failed: domain not found (ENOTFOUND)",
+      "url": "https://www.railayprincess.com/"
+    },
+    {
+      "name": "Aonang Cliff Beach Resort",
+      "reason": "Fetch failed: DNS error (EAI_AGAIN)",
+      "url": "https://www.aonangcliffbeach.com/"
+    },
+    {
+      "name": "Maharat Bakery (Krabi Town)",
+      "reason": "Fetch failed: domain not found (ENOTFOUND)",
+      "url": "https://www.krabibakery.com/"
+    },
+    {
+      "name": "Beyond Resort Krabi bakery",
+      "reason": "Fetch failed: HTTP 522; group site now lists no Krabi property",
+      "url": "https://krabi.beyondresort.com/eat/bakery"
+    },
+    {
+      "name": "Kiang Le (Aonang Villa Resort)",
+      "reason": "Fetch failed: socket hang up",
+      "url": "https://www.aonangvilla.com/dining/kiangle/"
+    },
+    {
+      "name": "Centara Ao Nang Beach Resort & Spa Krabi",
+      "reason": "Fetch failed: HTTP 404 at guessed official URL",
+      "url": "https://www.centarahotelsresorts.com/centara/cab"
+    },
+    {
+      "name": "Railay Bay Resort & Spa",
+      "reason": "Domain shows a placeholder (\"This domain may be for sale\"); no official content",
+      "url": "https://www.railaybayresort.com/"
+    },
+    {
+      "name": "The Hilltop Ao Nang",
+      "reason": "No street address published (\"Located on the hillside above Ao Nang\"); menus dated 2025",
+      "url": "https://www.thehilltopaonang.com/contact/"
+    },
+    {
+      "name": "KoDam Kitchen (Ao Nang and Ao Nam Mao)",
+      "reason": "Only partial locations published (road/area names), no exact address",
+      "url": "https://www.kodamkitchen.com/"
+    },
+    {
+      "name": "Krabi Elephant Sanctuary",
+      "reason": "No address published; latest dated content 2018",
+      "url": "https://www.krabielephantsanctuary.com/"
+    },
+    {
+      "name": "Mountain View Restaurant & Pub",
+      "reason": "No address or hours published (\"5km from Ao Nang Beach\")",
+      "url": "https://mountainview.in.th/"
+    },
+    {
+      "name": "Delishop Krabi (Hotdog & Coldcat)",
+      "reason": "No exact address published (\"Our Main Place is in Ao Nang\"); site states closed Mondays",
+      "url": "https://www.delishopkrabi.com/"
+    },
+    {
+      "name": "Bhu Nga Thani Resort & Villas (restaurant)",
+      "reason": "No dining venue named and no dated operating content",
+      "url": "https://www.bhungathani.com/"
+    },
+    {
+      "name": "Di Mare (The Tubkaak Krabi Boutique Resort)",
+      "reason": "No hours, menu dates or other current operating evidence on page",
+      "url": "https://www.tubkaakresort.com/restaurant/dimare/"
+    },
+    {
+      "name": "Peace Laguna Resort & Spa (dining)",
+      "reason": "Dining venues not named; no dated content",
+      "url": "https://www.peacelagunaresort.com/"
+    },
+    {
+      "name": "Krabi Resort Ao Nang (dining)",
+      "reason": "No dining venues listed; latest content 2018/2024",
+      "url": "https://www.krabiresort.net/"
+    },
+    {
+      "name": "Thung Teao Forest Natural Park (Emerald Pool)",
+      "reason": "No official operator page found or read",
+      "url": ""
+    },
+    {
+      "name": "Railay Beach",
+      "reason": "Beach/area, not a single operated place; no operator website",
+      "url": ""
+    },
+    {
+      "name": "Ao Nang",
+      "reason": "Area, not a single operated place",
+      "url": ""
+    },
+    {
+      "name": "Four Islands",
+      "reason": "Tour route, not a single operated place; no official operator page read",
+      "url": ""
+    },
+    {
+      "name": "Emerald Pool outing",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Railay at low tide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Longtail boat day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "a southern Thai seafood meal",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Krabi market or cafe",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local dinner in Ao Nang",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Railay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Krabi Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Ao Nang",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Ao Nang walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Railay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Krabi Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Krabi Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Railay Beach",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Ao Nang",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Railay at low tide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Railay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Ao Nang",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Ao Nang evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Railay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Krabi Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Ao Nang",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Railay Beach",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Railay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Krabi Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Ao Nang",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Railay Beach",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Ao Nang cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Longtail boat day",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Krabi Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Krabi Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Ao Nang",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Ao Nang",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Railay bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Railay Beach",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Krabi Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Ao Nang",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Ao Nang",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Krabi Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Ao Nang",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Railay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Krabi Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Ao Nang",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Ao Nang",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Railay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Four Islands",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Ao Nang",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Railay morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Railay Beach",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Krabi Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Ao Nang",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Railay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Krabi Town",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Hat Noppharat Thara–Mu Ko Phi Phi National Park",
+        "Than Bok Khorani National Park",
+        "Khao Phanom Bencha National Park",
+        "Mu Ko Lanta National Park"
+      ],
+      "bestFirstTimers": [
+        "Hat Noppharat Thara–Mu Ko Phi Phi National Park",
+        "CRU Kitchen and Bar (Ao Nang)",
+        "Del & Dia Cafe (Ao Nang)",
+        "Than Bok Khorani National Park"
+      ],
+      "bestRestaurants": [
+        "CRU Kitchen and Bar (Ao Nang)",
+        "Lae Lay (Phulay Bay)",
+        "MIRA Restaurant (Pakasai Resort)",
+        "Sand Sea Restaurant (Sand Sea Resort, Railay)"
+      ],
+      "bestBudget": [
+        "Del & Dia Cafe (Ao Nang)",
+        "Krua Village Restaurant (Railay Village Resort)",
+        "Khao Phanom Bencha National Park",
+        "Than Bok Khorani National Park"
+      ],
+      "bestLuxury": [
+        "Lae Lay (Phulay Bay)",
+        "Sri Trang (Phulay Bay)",
+        "MIRA Restaurant (Pakasai Resort)",
+        "The Grotto (Rayavadee)"
+      ],
+      "bestCouples": [
+        "Chomtawan (Phulay Bay)",
+        "Sand Sea Restaurant (Sand Sea Resort, Railay)",
+        "Lae Lay (Phulay Bay)",
+        "Beach Bar (Aonang Villa Resort)"
+      ],
+      "bestKids": [
+        "Limoncello (Dusit Thani Krabi Beach Resort)",
+        "Del & Dia Cafe (Ao Nang)",
+        "Khao Phanom Bencha National Park"
+      ],
+      "bestSolo": [
+        "Del & Dia Cafe (Ao Nang)",
+        "GAIA Kitchen & Bar (Pakasai Resort)",
+        "CRU Kitchen and Bar (Ao Nang)",
+        "Hat Noppharat Thara–Mu Ko Phi Phi National Park"
+      ],
+      "bestUnique": [
+        "Mu Ko Lanta National Park",
+        "Sri Trang (Phulay Bay)",
+        "Krua Village Restaurant (Railay Village Resort)",
+        "Than Bok Khorani National Park"
+      ],
+      "bestBreakfast": [
+        "Del & Dia Cafe (Ao Nang)",
+        "Jampoon (Phulay Bay)",
+        "Sand Sea Restaurant (Sand Sea Resort, Railay)",
+        "The Naga Terrace (Nakamanda Resort)"
+      ],
+      "bestLunch": [
+        "GAIA Kitchen & Bar (Pakasai Resort)",
+        "CRU Kitchen and Bar (Ao Nang)",
+        "Plai Fah (Phulay Bay)",
+        "Lae Lay Grill (Ao Nang)"
+      ],
+      "bestDinner": [
+        "Lae Lay (Phulay Bay)",
+        "MIRA Restaurant (Pakasai Resort)",
+        "Sri Trang (Phulay Bay)",
+        "Mangosteens (Dusit Thani Krabi Beach Resort)"
+      ],
+      "bestCocktails": [
+        "Pirom Bar (Phulay Bay)",
+        "GAIA Kitchen & Bar (Pakasai Resort)",
+        "CocoVida Bar (Dusit Thani Krabi Beach Resort)",
+        "The Beach Bar (Nakamanda Resort)"
+      ],
+      "bestBakeries": [
+        "Del & Dia Cafe (Ao Nang)"
+      ],
+      "bestCoffee": [
+        "Del & Dia Cafe (Ao Nang)",
+        "GAIA Kitchen & Bar (Pakasai Resort)"
+      ]
+    },
+    "queries": {
+      "Hat Noppharat Thara–Mu Ko Phi Phi National Park": "Hat Noppharat Thara Mu Ko Phi Phi National Park 79 Moo 5 Ao Nang Krabi",
+      "Than Bok Khorani National Park": "Than Bok Khorani National Park 2/2 Moo 2 Ao Luek Tai Krabi",
+      "Khao Phanom Bencha National Park": "Khao Phanom Bencha National Park 170 Moo 4 Thap Prik Krabi",
+      "Mu Ko Lanta National Park": "Mu Ko Lanta National Park 59 Moo 5 Ban Laem Tanote Ko Lanta Krabi",
+      "Lae Lay (Phulay Bay)": "Lae Lay Phulay Bay 111 Moo 3 Nong Thale Krabi",
+      "Sri Trang (Phulay Bay)": "Sri Trang Phulay Bay 111 Moo 3 Nong Thale Krabi",
+      "Jampoon (Phulay Bay)": "Jampoon Phulay Bay 111 Moo 3 Nong Thale Krabi",
+      "Pirom Bar (Phulay Bay)": "Pirom Bar Phulay Bay 111 Moo 3 Nong Thale Krabi",
+      "Chomtawan (Phulay Bay)": "Chomtawan Phulay Bay 111 Moo 3 Nong Thale Krabi",
+      "Plai Fah (Phulay Bay)": "Plai Fah Phulay Bay 111 Moo 3 Nong Thale Krabi",
+      "CRU Kitchen and Bar (Ao Nang)": "CRU Kitchen and Bar 328/3 Ao Nang Krabi",
+      "Del & Dia Cafe (Ao Nang)": "Del & Dia Cafe 290/25 Moo 2 Ao Nang Krabi",
+      "GAIA Kitchen & Bar (Pakasai Resort)": "GAIA Kitchen & Bar Pakasai Resort 88 Moo 3 Ao Nang Krabi",
+      "MIRA Restaurant (Pakasai Resort)": "MIRA Restaurant Pakasai Resort 88 Moo 3 Ao Nang Krabi",
+      "Krua Village Restaurant (Railay Village Resort)": "Krua Village Railay Village Resort 544 Moo 2 Ao Nang Krabi",
+      "Sand Sea Restaurant (Sand Sea Resort, Railay)": "Sand Sea Resort 39 Moo 2 Railay Beach Ao Nang Krabi",
+      "The Grotto (Rayavadee)": "The Grotto Rayavadee 214 Moo 2 Ao Nang Krabi",
+      "Lae Lay Grill (Ao Nang)": "Lae Lay Grill 89 Moo 3 Ao Nang Krabi",
+      "Mangosteens (Dusit Thani Krabi Beach Resort)": "Mangosteens Dusit Thani Krabi Beach Resort 155 Moo 2 Nong Thale Krabi",
+      "CocoVida Bar (Dusit Thani Krabi Beach Resort)": "CocoVida Bar Dusit Thani Krabi Beach Resort 155 Moo 2 Nong Thale Krabi",
+      "Limoncello (Dusit Thani Krabi Beach Resort)": "Limoncello Dusit Thani Krabi Beach Resort 155 Moo 2 Nong Thale Krabi",
+      "Breeze Beach Bar (Dusit Thani Krabi Beach Resort)": "Breeze Beach Bar Dusit Thani Krabi Beach Resort 155 Moo 2 Nong Thale Krabi",
+      "La Medusa Restaurant (Aonang Villa Resort)": "La Medusa Aonang Villa Resort 113 Moo 2 Ao Nang Krabi",
+      "Beach Bar (Aonang Villa Resort)": "Beach Bar Aonang Villa Resort 113 Moo 2 Ao Nang Krabi",
+      "The Naga Terrace (Nakamanda Resort)": "The Naga Terrace Nakamanda Resort 126 Moo 3 Klong Muang Krabi",
+      "The Beach Bar (Nakamanda Resort)": "The Beach Bar Nakamanda Resort 126 Moo 3 Klong Muang Krabi"
+    },
+    "summary": "Krabi's national parks plus Ao Nang, Railay and Klong Muang restaurants, cafés and resort bars, checked against their own websites or the national parks department.",
+    "highlights": [
+      "Hat Noppharat Thara–Mu Ko Phi Phi National Park",
+      "Than Bok Khorani National Park",
+      "Khao Phanom Bencha National Park",
+      "Mu Ko Lanta National Park"
+    ],
+    "tip": "None of the restaurants checked lists a weekly closing day, but the parks department's Mu Ko Lanta page says Ko Rok, Kong Hin Daeng and Kong Hin Muang are closed to tourists from 16 May to 15 November every year.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "No weekly closures listed; Lanta islands seasonal",
+        "copy": "CRU Kitchen and Bar opens every day from 11:00 to 23:00 and Del & Dia Cafe daily from 7:00 AM to 9:00 PM, with no weekly closing day given. The parks department's Mu Ko Lanta page says Ko Rok, Kong Hin Daeng and Kong Hin Muang are closed to tourists from 16 May to 15 November every year."
+      },
+      {
+        "label": "Booking",
+        "value": "Reserve resort dinners ahead",
+        "copy": "Phulay Bay takes bookings for Lae Lay, Jampoon and Sri Trang through SevenRooms or on +66 75-628111. Dusit Thani Krabi Beach Resort takes reservations for Mangosteens and Limoncello on 075 628 000 or dtkr@dusit.com."
+      },
+      {
+        "label": "Seats and notice",
+        "value": "Small rooms, cake lead times",
+        "copy": "CRU Kitchen and Bar says it has only 68 seats and they fill up quickly. Del & Dia Cafe asks for at least 2–3 days' notice for custom cakes."
+      },
+      {
+        "label": "Rules",
+        "value": "Alcohol, dress and park receipts",
+        "copy": "Krua Village at Railay Village Resort sells no alcohol but lets you bring your own without corkage, and The Grotto at Rayavadee serves non-alcoholic all-day dining. Mangosteens and Limoncello ask for resort casual dress, and national park pages tell you to keep your entrance-fee receipt for inspection."
+      }
+    ],
+    "dek": "Book resort dinners ahead, keep your park receipt, and save the Lanta outer islands for mid-November to mid-May.",
+    "intro": [
+      "This guide to Krabi is built from places whose own websites, or the national parks department, publish an address and current details. For the big landscapes, you can start with Hat Noppharat Thara–Mu Ko Phi Phi National Park, headquartered at 79 Moo 5 in Ao Nang, then head inland to Than Bok Khorani in Ao Luek or Khao Phanom Bencha in Thap Prik. The parks department's pages for all three tell you to carry your entrance-fee receipt for inspection and list park welfare shops open daily from 8.30 to 16.30, though those pages carry a 2015 footer.",
+      "For islands further south, the parks department's Mu Ko Lanta page, which also carries a 2015 footer, says Ko Rok, Kong Hin Daeng and Kong Hin Muang are closed to tourists from 16 May to 15 November every year, so plan those trips outside that window. Back on the mainland, Ao Nang has the most choice for eating. CRU Kitchen and Bar opens every day from 11:00 to 23:00 and warns that its 68 seats fill up quickly, while Del & Dia Cafe opens daily from 7:00 AM to 9:00 PM for lattes, croissants and breakfast.",
+      "For a slower evening, GAIA Kitchen & Bar at Pakasai Resort serves brunch, coffee and cocktails every day from 11:00 AM to 11:00 PM, with live music on Mondays, Wednesdays and Fridays, and MIRA Restaurant at the same resort offers a five-course tasting menu or à la carte. At Nong Thale, Phulay Bay, a Ritz-Carlton Reserve, lists Lae Lay and Sri Trang for dinner from 6:00 PM to 10:00 PM, Pirom Bar until 11:00 PM, and Jampoon from 6:30 AM, where breakfast is also available for a fee.",
+      "Railay works differently. At Railay Village Resort, Krua Village Restaurant serves Thai and Western food but does not sell alcohol, and the resort says you can bring your own without corkage fees. At Rayavadee, The Grotto is the only venue listed as open, serving breakfast, lunch and dinner without alcohol from 07:00 to 21:00, while Krua Phranang, The Raya Dining and Raitalay Terrace are listed as temporarily closed. Sand Sea Resort offers a private candlelit four-course beach dinner for two that you can book."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Start with Hat Noppharat Thara–Mu Ko Phi Phi National Park from Ao Nang, then book dinner at CRU Kitchen and Bar, which opens every day but has only 68 seats."
+      ],
+      [
+        "A slower morning",
+        "Del & Dia Cafe in Ao Nang opens daily at 7:00 AM for lattes and croissants, and Jampoon at Phulay Bay serves breakfast from 6:30 AM."
+      ],
+      [
+        "Before booking",
+        "None of the restaurants checked lists a weekly closing day, but Mu Ko Lanta National Park closes Ko Rok, Kong Hin Daeng and Kong Hin Muang to tourists from 16 May to 15 November every year."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and menu details do not guarantee availability. The national parks department pages carry a 2015 footer, so their welfare-shop hours and the Mu Ko Lanta seasonal closure are taken from older pages and no fees are published. Several confirmed resort venues publish only partial details: Dusit Thani Krabi Beach Resort lists hours as \"Seasonal\", Aonang Villa Resort and Railay Village Resort publish no venue hours, MIRA's page gives conflicting closing times, Lae Lay Grill's page is undated and also says \"Always Open\", and Nakamanda and Sand Sea restaurant pages are undated. Sites that could not be read: Banyan Tree Krabi, Avani Ao Nang Cliff, Holiday Inn Resort Krabi Ao Nang Beach, Starbucks Thailand and Krabi Town Municipality (403), King Climbers (expired certificate), Sofitel Krabi Phokeethra, Railay Princess, Aonang Cliff Beach Resort and Maharat Bakery (domain errors), Beyond Resort's Krabi bakery (522) and Aonang Villa's Kiang Le page (connection dropped). Rayavadee's other restaurants are listed as temporarily closed, and Centara Grand Krabi appears to be relaunching as Centara Reserve Krabi with stays offered from 1 March 2027. Popular areas such as Railay Beach, Ao Nang beach and the Four Islands trip have no single operator website and are not covered as places.",
+  "injectionLikeText": [],
+  "injectionLikeTextIgnored": [
+    "centarahotelsresorts.com homepage (reached from /centaragrand/ckbr): the fetch tool reported a block of page text addressed to AI assistants, asking it to quote specific details/reproduce sentences in quotation marks and follow particular formatting rules. The tool declined to reproduce it verbatim, so the exact wording is not available. It was ignored. [2026-11-25: centarahotelsresorts.com is not used by any confirmed place or guide copy, so it was not browser-checked; the description matches the fetch tool echoing its own quoting rules.]"
+  ]
+}
