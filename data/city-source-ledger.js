@@ -5,6 +5,803 @@
 window.HB_DATA = window.HB_DATA || {};
 
 window.HB_DATA.citySourceLedger = {
+  "Ubud, Indonesia": {
+    "renderVerifiedOnly": true,
+    "checkedOn": "2026-11-24",
+    "status": "source-checked",
+    "reviewScope": "cityGuideDetailData",
+    "verificationMethod": "official-web-review",
+    "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Several confirmed places show only light current evidence, such as a 2026 copyright line, a dated menu file or a promotion image (Seniman Coffee, Monsieur Spoon, Milk & Madu, KAFE, Kebun Bistro, Alas Harum Bali, Apéritif, Pinstripe Bar, Hanging Gardens of Bali, Threads of Life, Sayuri Healing Food); they are marked medium confidence. Hours were not published for The Yoga Barn, Pinstripe Bar, Bebek Bengil, Murni's Warung, Hanging Gardens of Bali or Tanah Gajah's restaurant; Komaneka Fine Art Gallery publishes two conflicting sets of hours and no exhibition run dates; Murni's Warung gives a location description rather than a street address, and its Christmas booking page carries an older post date. Sites that could not be read include Museum Puri Lukisan and Room4Dessert (certificate errors), Locavore NXT (SSL failure), COMO Uma Ubud, Four Seasons Sayan, The Samaya, Capella Ubud, Cretya Ubud and Bali Buda (403), Ubud Traditional Spa (429) and Museum Rudana (connection reset). Tegallalang Rice Terraces and Saraswati Temple have no official operator page, and Bridges Bali states it is closed permanently.",
+    "sourceUrls": [
+      "docs/content-research/ubud-2026-11-24.md",
+      "docs/content-research/ubud-2026-11-24.json"
+    ],
+    "excludedCandidates": [
+      {
+        "name": "Tegallalang Rice Terraces",
+        "checkedOn": "2026-11-24",
+        "reason": "No official operator or public-body page found; only aggregators, tourism listings and blogs."
+      },
+      {
+        "name": "Saraswati Temple",
+        "checkedOn": "2026-11-24",
+        "reason": "No official operator or public-body page found."
+      },
+      {
+        "name": "Museum Puri Lukisan",
+        "url": "https://www.museumpurilukisan.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "Certificate error (cert issued for a different host); not bypassed."
+      },
+      {
+        "name": "Neka Art Museum",
+        "url": "https://www.museumneka.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "museumneka.com redirects to hotelubudbali.com; could not establish that page as the museum's official site."
+      },
+      {
+        "name": "Blanco Renaissance Museum",
+        "url": "https://blancomuseum.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "Domain redirects to an unrelated site (savethislife.com)."
+      },
+      {
+        "name": "ARMA Museum",
+        "url": "https://www.armabali.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "Official site gives address (Jalan Raya Pengosekan) but no museum hours, tickets or dated current museum content."
+      },
+      {
+        "name": "Locavore NXT",
+        "url": "https://www.locavorenxt.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "SSL handshake failure; not bypassed."
+      },
+      {
+        "name": "Room4Dessert",
+        "url": "https://www.room4dessert.asia/",
+        "checkedOn": "2026-11-24",
+        "reason": "Self-signed certificate error; not bypassed."
+      },
+      {
+        "name": "Night Rooster",
+        "checkedOn": "2026-11-24",
+        "reason": "No official website found."
+      },
+      {
+        "name": "Bridges Bali",
+        "url": "https://www.bridgesbali.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "Official site says \"CLOSED PERMANENTLY\"."
+      },
+      {
+        "name": "Watercress (Ubud)",
+        "url": "https://www.watercressbali.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "Official site gives hours and a September 2026 menu but no Ubud street address."
+      },
+      {
+        "name": "Zest Ubud",
+        "url": "https://www.zestubud.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "No address, hours or dated content readable on official site."
+      },
+      {
+        "name": "Alchemy (Penestanan)",
+        "url": "https://www.alchemybali.co/",
+        "checkedOn": "2026-11-24",
+        "reason": "No address or hours readable on official site."
+      },
+      {
+        "name": "Paon Bali Cooking Class",
+        "url": "https://www.paon-bali.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "No dated 2026 content; two conflicting addresses on the page."
+      },
+      {
+        "name": "Honeymoon Bakery",
+        "url": "https://honeymoonbakeryubud.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "Official site shows only a title; no address or hours."
+      },
+      {
+        "name": "Bali Bird Park",
+        "url": "https://www.balibirdpark.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "Address published but no hours, prices or dated 2026 content (footer 2024)."
+      },
+      {
+        "name": "Bali Zoo",
+        "url": "https://www.bali-zoo.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "Page returned no readable content."
+      },
+      {
+        "name": "Taman Safari Bali",
+        "url": "https://tamansafari.com/taman-safari-bali/",
+        "checkedOn": "2026-11-24",
+        "reason": "No address or hours readable on official page."
+      },
+      {
+        "name": "Taksu Spa",
+        "url": "https://www.taksuspa.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "Domain shows a hosting placeholder (\"Website coming soon!\")."
+      },
+      {
+        "name": "Karsa Spa",
+        "url": "https://www.karsaspa.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "No street address or hours on official site."
+      },
+      {
+        "name": "Ubud Traditional Spa",
+        "url": "https://www.ubudtraditionalspa.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "HTTP 429 Too Many Requests; not retried."
+      },
+      {
+        "name": "Ubud Coffee Roastery",
+        "url": "https://www.ubudcoffeeroastery.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "Website redirects to Instagram (social media not accepted)."
+      },
+      {
+        "name": "Whisper Cove",
+        "url": "https://www.whispercovebali.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "No dated operating evidence; conflicting hours on page."
+      },
+      {
+        "name": "Bebek Tepi Sawah",
+        "url": "https://www.bebektepisawah.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "No 2026 operating evidence (footer 2014-2025); page carries an unrelated gambling spam link."
+      },
+      {
+        "name": "Cafe Wayan",
+        "url": "https://www.cafewayan.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "No dated current content (footer 2021)."
+      },
+      {
+        "name": "Gelato Secrets",
+        "url": "https://www.gelatosecrets.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "No Ubud address; footer 2018."
+      },
+      {
+        "name": "Bali Pulina",
+        "url": "https://www.balipulina.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "No dated 2026 content (footer 2025)."
+      },
+      {
+        "name": "Titi Batu",
+        "url": "https://www.titibatu.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "No dated current content (footer 2018)."
+      },
+      {
+        "name": "Three Elements Restaurant",
+        "url": "https://www.threeelementsrestaurant.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "No dated current content."
+      },
+      {
+        "name": "Sari Organik",
+        "url": "https://www.sariorganik.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "No address or dated content on official page."
+      },
+      {
+        "name": "Uma Bar (COMO Uma Ubud)",
+        "url": "https://www.comohotels.com/bali/como-uma-ubud/dining/uma-bar",
+        "checkedOn": "2026-11-24",
+        "reason": "HTTP 403; not bypassed."
+      },
+      {
+        "name": "Four Seasons Resort Bali at Sayan",
+        "url": "https://www.fourseasons.com/sayan/",
+        "checkedOn": "2026-11-24",
+        "reason": "HTTP 403; not bypassed."
+      },
+      {
+        "name": "Swept Away (The Samaya Ubud)",
+        "url": "https://www.thesamayabali.com/ubud/",
+        "checkedOn": "2026-11-24",
+        "reason": "HTTP 403; not bypassed."
+      },
+      {
+        "name": "Capella Ubud",
+        "url": "https://capellahotels.com/en/capella-ubud",
+        "checkedOn": "2026-11-24",
+        "reason": "HTTP 403; not bypassed."
+      },
+      {
+        "name": "Cretya Ubud",
+        "url": "https://www.cretyaubud.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "HTTP 403 on its own domain; not bypassed."
+      },
+      {
+        "name": "Bali Buda",
+        "url": "https://www.balibuda.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "HTTP 403; not bypassed."
+      },
+      {
+        "name": "Museum Rudana",
+        "url": "https://www.museumrudana.org/",
+        "checkedOn": "2026-11-24",
+        "reason": "Connection reset; no content."
+      },
+      {
+        "name": "Nomad Ubud",
+        "url": "https://www.nomad-bali.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "Fetch failed (socket closed)."
+      },
+      {
+        "name": "Naughty Nuri's",
+        "url": "https://www.naughtynuris.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "Domain did not resolve."
+      },
+      {
+        "name": "Setia Darma House of Masks and Puppets",
+        "url": "https://www.setiadarmahouse.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "Domain did not resolve."
+      },
+      {
+        "name": "Pison",
+        "url": "https://www.pison.id/",
+        "checkedOn": "2026-11-24",
+        "reason": "Domain shows a default server page."
+      },
+      {
+        "name": "Ibu Rai",
+        "url": "https://www.iburai.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "Domain parked / for sale."
+      },
+      {
+        "name": "Indus Restaurant",
+        "url": "https://www.indusrestaurant.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "Domain redirects to a for-sale page."
+      },
+      {
+        "name": "Daily Baguette (Ubud)",
+        "url": "https://www.dailybaguette.com/",
+        "checkedOn": "2026-11-24",
+        "reason": "Domain is an unrelated placeholder blog; no official site found."
+      },
+      {
+        "name": "Braud / Rüsters Bakery",
+        "checkedOn": "2026-11-24",
+        "reason": "No official website found (domains did not resolve)."
+      },
+      {
+        "name": "Rice terrace sunrise",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Cooking class",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quiet spa afternoon",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "a Balinese lunch",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Ubud market or cafe",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local dinner in Central Ubud",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A cafe near Tegallalang",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market breakfast in Penestanan",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A dessert stop in Central Ubud",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free or low-cost Central Ubud walk",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Public viewpoint near Tegallalang",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Market meal around Penestanan",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A self-guided walk through Penestanan",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Free museum or public garden time",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood market stop",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Private guide for Tegallalang Rice Terraces",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A signature meal in Central Ubud",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A tailored day around Rice terrace sunrise",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A private transfer between highlights",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A special evening in Tegallalang",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower day with a local guide",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset near Ubud Monkey Forest",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Central Ubud evening",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long dinner in Tegallalang",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A scenic morning near Penestanan",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A photo-friendly walk through Central Ubud",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Family-friendly Tegallalang Rice Terraces",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Easy outing around Tegallalang",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed meal near Penestanan",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A hands-on stop near Central Ubud",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short scenic outing with room to move",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A treat everyone can agree on",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Early visit to Tegallalang Rice Terraces",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Central Ubud cafe or market",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Self-guided Cooking class",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A museum or gallery at your own pace",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A people-watching break in Penestanan",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A flexible afternoon with one clear anchor",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quieter side of Penestanan",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local recommendation beyond the headline sights",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A short detour beyond Central Ubud",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Morning cafe near Central Ubud",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Tegallalang bakery or market",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Slow breakfast before Tegallalang Rice Terraces",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local pastry to take on the road",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and a walk through Penestanan",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed brunch near Central Ubud",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Casual lunch near Ubud Monkey Forest",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local stop around Penestanan",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A market lunch in Central Ubud",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A quick meal between sights",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A long midday table in Tegallalang",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slower dinner in Penestanan",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local specialty near Central Ubud",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final-night meal away from the busiest sights",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Sunset drinks near Central Ubud",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A local bar around Tegallalang",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view-led evening near Saraswati Temple",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A relaxed night close to the stay",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A late drink after dinner",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A rooftop or waterfront evening",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Local bakery near Central Ubud",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Tegallalang morning market",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee and pastry before Tegallalang Rice Terraces",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A regional sweet to take on the road",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A fresh bake near Penestanan",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A pastry stop between neighborhoods",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Coffee near Central Ubud",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A slow cafe in Tegallalang",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A final cup near Penestanan",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A coffee stop before the first sight",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A neighborhood cafe break",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "A view with your morning coffee",
+        "checkedOn": "2026-11-24",
+        "reason": "generic, not a place"
+      },
+      {
+        "name": "Murni's Warung",
+        "url": "https://www.murnis.com/murnis-warung/transport-and-map-to-warung/",
+        "checkedOn": "2026-11-24",
+        "reason": "2026-11-24 check: official page gives only a walking description ('before the bridge'), no street address, named site or coordinates."
+      }
+    ],
+    "placeSources": {
+      "Sacred Monkey Forest Sanctuary": {
+        "url": "https://www.monkeyforestubud.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Homepage lists \"Monkey Forest Ubud Run 2026\" under Latest Updates; visit page (https://www.monkeyforestubud.com/visit/) lists entrance fees \"Adult: IDR 130.000\", \"Child: IDR 100.000\". Guidelines page (https://www.monkeyforestubud.com/guidelines-faq/): \"Bringing food or drinks into the forest is prohibited\"; no plastic bags; lockers in the lobby; \"Do not touch the monkeys\"; dress appropriately."
+      },
+      "Threads of Life (Jalan Kajeng)": {
+        "url": "https://threadsoflife.com/pages/contact",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Footer \"© 2026 Threads of Life\"; current navigation links to 2026 \"Mini Workshops\" and \"Feature Friday Talks\" programmes and natural dye classes."
+      },
+      "Komaneka Fine Art Gallery": {
+        "url": "https://gallery.komaneka.com/",
+        "sourceType": "operator's own site (Komaneka)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Current featured exhibition \"Nectar Waggle\" (image dated August 2026) and \"What Remains in Water\" (June 2026) listed; run dates not published."
+      },
+      "Alas Harum Bali": {
+        "url": "https://www.alasharum.com/",
+        "sourceType": "operator's own site (PT Alas Harum Mulia)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Footer \"Copyright © 2026 ... PT ALAS HARUM MULIA\"; lists current activities (swings, sky bikes, flying fox) with \"Book Now\" links."
+      },
+      "Pyramids of Chi": {
+        "url": "https://ubud.pyramidsofchi.com/contact/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Homepage calendar headed \"November 2026\" with sessions such as \"Nov 25, 2026\" Kundalini Meditation; Ancient Sound Healing listed \"Daily: 10:00am | 12:00pm | 2:00pm | 4:00pm | 6:00pm | 8:00pm\". Refund policy: event ticket cancellation \"must be made a full 48-hours prior\"."
+      },
+      "The Yoga Barn": {
+        "url": "https://www.theyogabarn.com/contact/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Homepage blog posts dated 19/06/2026, 24/02/2026 and 04/02/2026; class schedule and booking links. Downtown entrance: \"FOOT TRAFFIC ONLY, NO CARS, MOTORBIKES OR PARKING.\""
+      },
+      "Casa Luna Cooking School": {
+        "url": "https://casalunabali.com/casa-luna-cooking-school/",
+        "sourceType": "operator's own site (Casa Luna)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Footer \"© 2026 Casa Luna Bali\"; classes every day (Tuesday and Thursday with market visit, Sunday late afternoon); prices IDR 500,000–600,000; \"Full payment due at time of booking\"; \"Cancel 5 or more days before your class for a full refund.\""
+      },
+      "Casa Luna": {
+        "url": "https://www.casalunabali.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Homepage promotes \"Spice Island Tour with Janet DeNeefe\" dated \"31 October – 9 November 2026\"."
+      },
+      "Hujan Locale": {
+        "url": "https://www.hujanlocale.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "\"© 2026 Hujan Locale\"; guest reviews dated September and October 2026; \"Seating is limited, so book ahead.\" Groups over 10 go through Group Dining."
+      },
+      "Mozaic": {
+        "url": "https://www.mozaic-bali.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Homepage lists \"Lunch at Mozaic: Starting Thursday, 29 October 2026\" (\"Reservation Only\") and Christmas Dinner \"24 & 25 December 2026\". Reservations page: \"Children aged 6 years old and above are allowed.\""
+      },
+      "Apéritif": {
+        "url": "https://www.aperitif.com/",
+        "sourceType": "operator's own site (Viceroy Bali)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Footer \"© Apéritif Restaurant 2026\"; lunch \"24 hour advance booking required\"; dress code \"smart to formal\", no \"sports clothing or beachwear, including singlets and flip-flops\"."
+      },
+      "Pinstripe Bar (Viceroy Bali)": {
+        "url": "https://www.viceroybali.com/",
+        "sourceType": "operator's own site (Viceroy Bali)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Resort homepage describes Pinstripe Cocktail Bar as speakeasy-style with cocktails by Head Mixologist Panji; shows \"2026 Travelers' Choice Awards\" and \"Copyright 2026\"."
+      },
+      "Spice by Blake": {
+        "url": "https://www.spicebali.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Event \"Smoky Collab with Bola Bali\" on \"20 NOV 2026\"; festive dinner \"24 & 25 December 2026\"; \"we recommend booking ahead as seating is limited\"; cocktail bar \"highlights Indonesian herbs, spices, and tropical fruits\"."
+      },
+      "Copper Kitchen & Bar": {
+        "url": "https://www.copperubud.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Posts dated 25 September 2026, 17 February 2026 and 26 January 2026 (\"Classic Cocktails, Reimagined at Copper Kitchen, Bar & Rooftop\")."
+      },
+      "Tanah Gajah (The Tempayan)": {
+        "url": "https://www.tanahgajahubud.com/",
+        "sourceType": "operator's own site (Tanah Gajah, a Resort by Hadiprana)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Dip & Dine Day Pass dated \"23 December 2026\"; \"© 2026 Tanah Gajah\"; afternoon tea 4:00–6:00 pm and sunset cocktails 6:00–7:00 pm at the Tempayan; Balinese Crispy Duck Feast on Wednesdays and Saturdays."
+      },
+      "Hanging Gardens of Bali": {
+        "url": "https://www.hanginggardensofbali.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "\"Copyright © 2026 Hanging Gardens of Bali\"; guest reviews dated March–June 2026; Three Elements Restaurant and Bar & Lounge listed."
+      },
+      "Kebun Bistro": {
+        "url": "https://www.kebunbistro.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Promotion image \"Kebun-Promo-Feb2026\"; reservation and event booking links; brunch, cocktail and wine menus linked."
+      },
+      "Bebek Bengil (Ubud)": {
+        "url": "https://www.bebekbengil.co.id/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "News items dated \"Monday, September 14, 2026\" and \"Saturday, July 25, 2026\" describe group lunches at the restaurant."
+      },
+      "Sayuri Healing Food": {
+        "url": "https://www.sayurihealingfood.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Current hours notice \"OPEN DAILY\"; forward listing for a 2027 retreat. No other dated 2026 content."
+      },
+      "Clear Cafe": {
+        "url": "https://www.clearcafebali.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Downloadable menu \"Clear-Cafe-Menu_july-2026\"; \"© 2026 — Clear Cafe Ubud\"."
+      },
+      "Seniman Coffee (Ubud)": {
+        "url": "https://www.senimancoffee.com/seniman-ubud/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Branch page with current hours; footer \"© Seniman 2026\"."
+      },
+      "KAFE": {
+        "url": "https://www.kafe-bali.com/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Current pop-up image \"KAFE-BALI-Thanksgiving-Menus-Popup-2026\" (uploaded November 2026); delivery hours published."
+      },
+      "Milk & Madu (Ubud)": {
+        "url": "https://www.milkandmadu.com/locations/",
+        "sourceType": "operator's own site",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Homepage \"© 2026 Milk & Madu\" with Ubud live music schedule \"Saturday: 11AM – 2PM\", \"Sunday: 11AM – 2PM & 6PM – 9PM\"."
+      },
+      "Monsieur Spoon (Ubud)": {
+        "url": "https://www.champ-group.com/monsieur-spoon/",
+        "sourceType": "operator's own site (Champ Group, owner; monsieurspoon.com redirects here)",
+        "checkedOn": "2026-11-24",
+        "operatingEvidence": "Current outlet list with hours; footer \"©2026 PT CHAMP RESTO INDONESIA\"."
+      }
+    }
+  },
   "Yogyakarta, Indonesia": {
     "renderVerifiedOnly": true,
     "checkedOn": "2026-11-24",

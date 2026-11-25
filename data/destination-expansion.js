@@ -11850,4 +11850,109 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on November 24, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Ubud, Indonesia: source review of 2026-11-24 (docs/content-research/ubud-2026-11-24.md).
+  {
+    const cityKey = "Ubud, Indonesia";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Sacred Monkey Forest Sanctuary","Threads of Life (Jalan Kajeng)","Komaneka Fine Art Gallery","Alas Harum Bali"],
+      bestFirstTimers: ["Sacred Monkey Forest Sanctuary","Casa Luna Cooking School","Hujan Locale","Threads of Life (Jalan Kajeng)"],
+      bestRestaurants: ["Hujan Locale","Mozaic","Spice by Blake","Kebun Bistro"],
+      bestBudget: ["Seniman Coffee (Ubud)","Clear Cafe","Monsieur Spoon (Ubud)"],
+      bestLuxury: ["Mozaic","Apéritif","Hanging Gardens of Bali","Tanah Gajah (The Tempayan)"],
+      bestCouples: ["Mozaic","Apéritif","Copper Kitchen & Bar","Pinstripe Bar (Viceroy Bali)"],
+      bestKids: ["Sacred Monkey Forest Sanctuary","Alas Harum Bali","Casa Luna Cooking School","Milk & Madu (Ubud)"],
+      bestSolo: ["The Yoga Barn","Pyramids of Chi","Seniman Coffee (Ubud)","Komaneka Fine Art Gallery"],
+      bestUnique: ["Pyramids of Chi","Threads of Life (Jalan Kajeng)","Casa Luna Cooking School","Alas Harum Bali"],
+      bestBreakfast: ["Monsieur Spoon (Ubud)","Milk & Madu (Ubud)","KAFE","Clear Cafe"],
+      bestLunch: ["Hujan Locale","Bebek Bengil (Ubud)","Sayuri Healing Food","Casa Luna"],
+      bestDinner: ["Mozaic","Spice by Blake","Kebun Bistro"],
+      bestCocktails: ["Pinstripe Bar (Viceroy Bali)","Copper Kitchen & Bar","Spice by Blake","Mozaic"],
+      bestBakeries: ["Monsieur Spoon (Ubud)"],
+      bestCoffee: ["Seniman Coffee (Ubud)","KAFE","Clear Cafe","Milk & Madu (Ubud)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Sacred Monkey Forest Sanctuary": "Sacred Monkey Forest Sanctuary Jalan Monkey Forest Padangtegal Ubud",
+      "Threads of Life (Jalan Kajeng)": "Threads of Life Jalan Kajeng 24 Ubud",
+      "Komaneka Fine Art Gallery": "Komaneka Fine Art Gallery Jl. Monkey Forest Ubud",
+      "Alas Harum Bali": "Alas Harum Bali Jl. Raya Tegallalang Tegallalang",
+      "Casa Luna Cooking School": "Casa Luna Cooking School Honeymoon Guesthouse Jalan Bisma Ubud",
+      "Hujan Locale": "Hujan Locale Jl. Sri Wedari 5 Ubud",
+      "Mozaic": "Mozaic Jl Raya Sanggingan Ubud",
+      "Spice by Blake": "Spice by Blake Jl. Monkey Forest Ubud",
+      "Kebun Bistro": "Kebun Bistro 44 Jl. Hanoman Ubud",
+      "Seniman Coffee (Ubud)": "Seniman Coffee Jl. Sri Wedari 5 Ubud",
+      "Clear Cafe": "Clear Cafe Jl. Hanoman 8 Ubud",
+      "Monsieur Spoon (Ubud)": "Monsieur Spoon Jl. Hanoman 10 Ubud",
+      "Apéritif": "Apéritif Viceroy Bali Jl. Lanyahan Petulu Ubud",
+      "Hanging Gardens of Bali": "Hanging Gardens of Bali Desa Buahan Payangan",
+      "Tanah Gajah (The Tempayan)": "Tanah Gajah Jalan Goa Gajah Tengkulak Kaja Ubud",
+      "Copper Kitchen & Bar": "Copper Kitchen & Bar Jalan Bisma 68 Ubud",
+      "Pinstripe Bar (Viceroy Bali)": "Pinstripe Bar Viceroy Bali Jl. Lanyahan Petulu Ubud",
+      "Milk & Madu (Ubud)": "Milk & Madu Jalan Suweta 3 Ubud",
+      "The Yoga Barn": "The Yoga Barn Jl. Sukma Kesuma Peliatan Ubud",
+      "Pyramids of Chi": "Pyramids of Chi Jalan Kelebang Moding 22 Bentuyung Ubud",
+      "KAFE": "KAFE Jl. Hanoman 44B Ubud",
+      "Bebek Bengil (Ubud)": "Bebek Bengil Jalan Hanoman Padang Tegal Ubud",
+      "Sayuri Healing Food": "Sayuri Healing Food Jl. Sukma Kesuma 2 Ubud",
+      "Casa Luna": "Casa Luna Jl. Raya Ubud Ubud"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Ubud" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Ubud's monkey sanctuary, textile and art galleries and Tegallalang's swing park, with cooking classes, breakfast cafés, dinners and cocktail bars checked against their own websites.";
+    cityGuide.highlights = ["Sacred Monkey Forest Sanctuary","Threads of Life (Jalan Kajeng)","Komaneka Fine Art Gallery","Alas Harum Bali"];
+    cityGuide.tip = "Most places here publish daily opening with no weekly closing day, so plan around entry times and bookings instead: the Sacred Monkey Forest Sanctuary takes its last entrance at 5 PM, and Apéritif needs 24 hours' notice for lunch.";
+    data.destinationFacts[cityKey] = "Most places here publish daily opening with no weekly closing day, so plan around entry times and bookings instead: the Sacred Monkey Forest Sanctuary takes its last entrance at 5 PM, and Apéritif needs 24 hours' notice for lunch.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Ubud's monkey sanctuary, textile and art galleries and Tegallalang's swing park, with cooking classes, breakfast cafés, dinners and cocktail bars checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "No weekly closing day published",
+        "copy": "The Sacred Monkey Forest Sanctuary (9:00 AM–6:00 PM, last entrance 5 PM), Threads of Life (10 AM–6 PM) and Hujan Locale all list daily opening. Kebun Bistro says it opens seven days a week except for a few holidays."
+      },
+      {
+        "label": "Tickets and booking",
+        "value": "Pay or book ahead",
+        "copy": "Sacred Monkey Forest Sanctuary lists adult entry at IDR 130.000 and child entry at IDR 100.000. Casa Luna Cooking School takes full payment at booking and refunds only cancellations made 5 or more days ahead; Pyramids of Chi refunds event tickets cancelled a full 48 hours before."
+      },
+      {
+        "label": "Reservations",
+        "value": "Book the popular tables",
+        "copy": "Hujan Locale says seating is limited, so book ahead, and Spice by Blake recommends booking ahead for the same reason. Apéritif requires 24 hours' advance booking for lunch, and Mozaic's lunch, which began on 29 October 2026, is by reservation only."
+      },
+      {
+        "label": "Rules",
+        "value": "Bags, dress and age",
+        "copy": "The Sacred Monkey Forest Sanctuary prohibits food and drinks, asks you not to bring plastic, offers lockers in the lobby, and says not to touch or feed the monkeys. Apéritif's dress code is smart to formal with no singlets or flip-flops, and Mozaic admits children aged 6 and above."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Start early at the Sacred Monkey Forest Sanctuary, keep your afternoons for galleries or a cooking class, and book your dinner before you arrive.",
+      intro: [
+        "Ubud's anchor sight is the Sacred Monkey Forest Sanctuary on Jalan Monkey Forest, open from 9:00 AM to 6:00 PM with last entrance at 5 PM. Adult tickets are listed at IDR 130.000. Its guidelines prohibit bringing food or drinks into the forest and ask you not to bring plastic; lockers are available in the lobby. Do not touch the monkeys or try to feed them, and dress respectfully, because the sanctuary is a sacred area.",
+        "For Indonesian textiles, Threads of Life runs a store at Jalan Kajeng 24 and a gallery on Jalan Raya Lungsiakan, both open daily from 10 AM to 6 PM. Komaneka Fine Art Gallery on Jalan Monkey Forest features its current exhibition, Nectar Waggle, though its page lists two different daily hours, so check before you go. North in Tegallalang, Alas Harum Bali opens daily from 7 AM to 7 PM, with swings, sky bikes and a flying fox. Pyramids of Chi in Bentuyung runs sound healing sessions every day.",
+        "Book your main meals. Hujan Locale on Jalan Sri Wedari serves all day from 12:00 to 22:00 and says seating is limited. Mozaic on Jl Raya Sanggingan opens its dining room daily from 6:00 PM and its Tipple Room bar from 5:00 PM, and has served lunch by reservation since 29 October 2026; children aged 6 and above are allowed. At Viceroy Bali, Apéritif asks for smart to formal dress and 24 hours' notice for lunch. Casa Luna Cooking School holds a class every day, with market visits on Tuesday and Thursday.",
+        "Mornings start early on Jalan Hanoman: Monsieur Spoon and KAFE open at 7:00, Clear Cafe at 8:00, and Kebun Bistro serves brunch from Friday to Sunday, 9 AM to 3 PM. Milk & Madu on Jalan Suweta opens at 7am and Seniman Coffee on Jalan Sri Wedari at 7:30AM. In the evening, Copper Kitchen & Bar on Jalan Bisma has a rooftop and opens until 11 pm, Spice by Blake on Jalan Monkey Forest runs from 4PM to 12AM, and the Pinstripe Bar at Viceroy Bali serves speakeasy-style cocktails."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Reach the Sacred Monkey Forest Sanctuary before its 5 PM last entrance, then visit Threads of Life on Jalan Kajeng, open daily from 10 AM to 6 PM."
+        ],
+        [
+          "A slower morning",
+          "Start with a pastry at Monsieur Spoon on Jalan Hanoman from 7:00, then take a 3.5- or 4-hour morning class at Casa Luna Cooking School."
+        ],
+        [
+          "Before booking",
+          "Reserve Hujan Locale and Spice by Blake ahead, give Apéritif 24 hours' notice for lunch, and pay in full when you book Casa Luna Cooking School."
+        ]
+      ],
+      trust: "All 24 distinct recommendations in this guide were checked against their operators' own websites on November 24, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();
