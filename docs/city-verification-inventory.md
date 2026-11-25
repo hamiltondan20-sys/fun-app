@@ -6,8 +6,8 @@ This reports evidence already recorded by a person. It does not visit source URL
 Publication eligibility comes from the generator's read-only audit with its unchanged operating gates.
 
 - Canonical destination records: 484. Raw detail records: 485.
-- Source-verified (complete dated evidence format): 115.
-- Classifier-passed (published, not fully documented in that format): 77.
+- Source-verified (complete dated evidence format): 116.
+- Classifier-passed (published, not fully documented in that format): 76.
 - Held back: 292.
 - Published destinations: 192; country hubs: 20; sitemap URLs: 221.
 
@@ -204,7 +204,7 @@ Guilin and Li River, China is merged into Guilin, China by the existing generato
 | Guangzhou, China | guangzhou | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Guilin, China | guilin | held-back | not-reviewed | 0 | 4 | 15 | 2 | has 4 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Guimaraes, Portugal | guimaraes | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
-| Gyeongju, South Korea | gyeongju | classifier-passed | not-reviewed | 0 | 7 | 15 | 3 | None |
+| Gyeongju, South Korea | gyeongju | source-verified | source-checked | 22 | 36 | 15 | 14 | None |
 | Ha Long Bay, Vietnam | ha-long-bay | held-back | not-reviewed | 0 | 4 | 15 | 2 | has 4 named places across 2 categories; needs at least 5 named places across 3 categories |
 | Haiphong, Vietnam | haiphong | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |
 | Hakone, Japan | hakone | held-back | not-reviewed | 0 | 0 | 15 | 0 | has 0 named places across 0 categories; needs at least 5 named places across 3 categories |

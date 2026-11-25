@@ -12062,4 +12062,107 @@ window.HB_DATA = window.HB_DATA || {};
       trust: "All 26 distinct recommendations in this guide were checked against their operators' own websites on November 24, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
     };
   }
+  // Gyeongju, South Korea: source review of 2026-11-25 (docs/content-research/gyeongju-2026-11-25.md).
+  {
+    const cityKey = "Gyeongju, South Korea";
+    data.cityGuideDetailData[cityKey] = {
+      bestAttractions: ["Bulguksa Temple","Seokguram Grotto","Donggung Palace and Wolji Pond","Gyeongju National Museum"],
+      bestFirstTimers: ["Bulguksa Temple","Gyeongju National Museum","Daereungwon Tomb Complex (Cheonmachong)","Cheomseongdae Observatory"],
+      bestRestaurants: ["The Hangonggan (Kolon Hotel Gyeongju)","Kensington Garden BBQ (Kensington Resort Gyeongju)","Gyeongju Wood-Fired Pizza (Kolon Hotel Gyeongju)"],
+      bestBudget: ["Cheomseongdae Observatory","Bulguksa Temple","Gyeongju National Museum","Hwangnam-ppang (Main Store)"],
+      bestLuxury: ["The Hangonggan (Kolon Hotel Gyeongju)","The Chanran (Kolon Hotel Gyeongju)"],
+      bestCouples: ["Donggung Palace and Wolji Pond","Gyochon Hanok Village","Moonlight Pocha (Kolon Hotel Gyeongju)"],
+      bestKids: ["Gyeongju Donggungwon","Gyeongju Wood-Fired Pizza (Kolon Hotel Gyeongju)","Gyeongju APEC Memorial Park","Ashley Queens (Kensington Resort Gyeongju)"],
+      bestSolo: ["Gyeongju National Museum","Solgeo Art Museum","Wolseong Fortress Site","Gyeongju Tower"],
+      bestUnique: ["Seokguram Grotto","Wolseong Fortress Site","Solgeo Art Museum","Gyeongju Tower"],
+      bestBreakfast: ["The Chanran (Kolon Hotel Gyeongju)","Kensington Morning Buffet (Kensington Resort Gyeongju)"],
+      bestLunch: ["The Hangonggan (Kolon Hotel Gyeongju)","Gyeongju Wood-Fired Pizza (Kolon Hotel Gyeongju)","Ashley Queens (Kensington Resort Gyeongju)"],
+      bestDinner: ["The Hangonggan (Kolon Hotel Gyeongju)","Kensington Garden BBQ (Kensington Resort Gyeongju)","Ashley Queens (Kensington Resort Gyeongju)"],
+      bestCocktails: ["Moonlight Pocha (Kolon Hotel Gyeongju)"],
+      bestBakeries: ["Hwangnam-ppang (Main Store)","Olon Bakery Cafe (Kolon Hotel Gyeongju)","Ohas Bakery & Cafe (Kensington Resort Gyeongju)"],
+      bestCoffee: ["Ohas Bakery & Cafe (Kensington Resort Gyeongju)","Olon Bakery Cafe (Kolon Hotel Gyeongju)"]
+    };
+    data.cityPlaceQueries[cityKey] = {
+      "Bulguksa Temple": "Bulguksa Temple 385 Bulguk-ro Gyeongju",
+      "Seokguram Grotto": "Seokguram Grotto 238 Seokgul-ro Gyeongju",
+      "Donggung Palace and Wolji Pond": "Donggung Palace and Wolji Pond Inwang-dong 517 Gyeongju",
+      "Gyeongju National Museum": "Gyeongju National Museum 186 Iljeong-ro Gyeongju",
+      "Daereungwon Tomb Complex (Cheonmachong)": "Daereungwon Cheonmachong Nodong-dong 261 Gyeongju",
+      "Cheomseongdae Observatory": "Cheomseongdae Observatory Inwang-dong 839-1 Gyeongju",
+      "The Hangonggan (Kolon Hotel Gyeongju)": "Kolon Hotel The Hangonggan 289-17 Bulguk-ro Gyeongju",
+      "Kensington Garden BBQ (Kensington Resort Gyeongju)": "Kensington Garden BBQ 182-29 Bomun-ro Gyeongju",
+      "Gyeongju Wood-Fired Pizza (Kolon Hotel Gyeongju)": "Kolon Hotel Gyeongju Wood-Fired Pizza 289-17 Bulguk-ro Gyeongju",
+      "Hwangnam-ppang (Main Store)": "Hwangnam-ppang 783 Taejong-ro Gyeongju",
+      "The Chanran (Kolon Hotel Gyeongju)": "Kolon Hotel The Chanran 289-17 Bulguk-ro Gyeongju",
+      "Gyochon Hanok Village": "Gyochon Hanok Village 39-2 Gyochon-gil Gyeongju",
+      "Moonlight Pocha (Kolon Hotel Gyeongju)": "Kolon Hotel Moonlight Pocha 289-17 Bulguk-ro Gyeongju",
+      "Gyeongju Donggungwon": "Gyeongju Donggungwon 74-14 Bomun-ro Gyeongju",
+      "Gyeongju APEC Memorial Park": "Gyeongju APEC Memorial Park 614 Gyeonggam-ro Gyeongju",
+      "Ashley Queens (Kensington Resort Gyeongju)": "Ashley Queens Kensington Resort 182-29 Bomun-ro Gyeongju",
+      "Solgeo Art Museum": "Solgeo Art Museum 614 Gyeonggam-ro Gyeongju",
+      "Wolseong Fortress Site": "Gyeongju Wolseong Inwang-dong 387-1 Gyeongju",
+      "Gyeongju Tower": "Gyeongju Tower 614 Gyeonggam-ro Gyeongju",
+      "Kensington Morning Buffet (Kensington Resort Gyeongju)": "Kensington Resort Gyeongju 182-29 Bomun-ro Gyeongju",
+      "Olon Bakery Cafe (Kolon Hotel Gyeongju)": "Kolon Hotel Olon Bakery Cafe 289-17 Bulguk-ro Gyeongju",
+      "Ohas Bakery & Cafe (Kensington Resort Gyeongju)": "Ohas Bakery Cafe Kensington Resort 182-29 Bomun-ro Gyeongju"
+    };
+    // Cities that only had generated starter content have no guide record yet; create it so the page is built.
+    let cityGuide = data.cityGuideData.find((item) => item.city === cityKey);
+    if (!cityGuide) {
+      cityGuide = { city: cityKey, title: "Gyeongju" };
+      data.cityGuideData.push(cityGuide);
+    }
+    cityGuide.summary = "Silla temples, tombs, museums and parks, with hotel breakfasts, dinners, bakeries and a bar checked against their own websites.";
+    cityGuide.highlights = ["Bulguksa Temple","Seokguram Grotto","Gyeongju National Museum","Donggung Palace and Wolji Pond"];
+    cityGuide.tip = "Gyeongju Donggungwon closes on Mondays and Gyeongju National Museum closes on the second Monday of March, June, September and December, so a Monday suits Bulguksa Temple, which its own site says is open year-round.";
+    data.destinationFacts[cityKey] = "Gyeongju Donggungwon closes on Mondays and Gyeongju National Museum closes on the second Monday of March, June, September and December, so a Monday suits Bulguksa Temple, which its own site says is open year-round.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Silla temples, tombs, museums and parks, with hotel breakfasts, dinners, bakeries and a bar checked against their own websites.";
+    data.cityPlanningToolkitData[cityKey] = [
+      {
+        "label": "Closing days",
+        "value": "Mondays and some second Mondays",
+        "copy": "Gyeongju Donggungwon closes on Mondays (the next weekday when Monday is a public holiday), 1 January and the Seollal and Chuseok days. Gyeongju National Museum closes on 1 January, Seollal and Chuseok, and on the second Monday of March, June, September and December."
+      },
+      {
+        "label": "Tickets",
+        "value": "Free or low-cost",
+        "copy": "Bulguksa Temple's site says admission has been free since 4 May 2023. Gyeongju City's admission page lists Cheomseongdae as free and Donggung Palace and Wolji Pond and Cheonmachong at 3,000 won for adults."
+      },
+      {
+        "label": "Booking",
+        "value": "Reserve set meals ahead",
+        "copy": "Kolon Hotel Gyeongju says the Yeonhyangsang set at The Hangonggan and its Judabyeol Bangwa snack set must be booked in advance. Its Kids Chef Pizza Lab runs from 14:00 with online booking."
+      },
+      {
+        "label": "Rules",
+        "value": "No pets or drones",
+        "copy": "Bulguksa Temple's visiting page says pets may not enter. Gyeongju Donggungwon also bars pets, smoking and drones, and allows outside food only in designated outdoor areas."
+      }
+    ];
+    data.cityEditorialPageData[cityKey] = {
+      ...data.cityEditorialPageData[cityKey],
+      dek: "Pair Bulguksa Temple with Seokguram Grotto, keep Mondays away from Donggungwon, and check the museum's second-Monday closures before you fix dates.",
+      intro: [
+        "Bulguksa Temple, at 385 Bulguk-ro, anchors the eastern side of Gyeongju. Its own visiting page says admission has been free since 4 May 2023 under the revised heritage law, that pets may not enter, and that parking costs 2,000 won for a car. That page carries no update date; it lists last entry at 17:00 from November to January. A notice on the temple's board says repairs to the Daeungjeon main hall do not affect entry. Up the mountain, Seokguram Grotto at 238 Seokgul-ro posts 2026 prayer notices, but its hours page could not be read.",
+        "In the centre, Gyeongju National Museum at 186 Iljeong-ro lists hours of 10:00 to 18:00, with last entry 30 minutes before closing and Saturday evenings to 20:00 from March to October. It closes on 1 January, Seollal and Chuseok, and on the second Monday of March, June, September and December. A lobby display reuniting two stone-tablet fragments from Wolseong runs until 31 December 2026. The museum's Children's Museum has been closed since 1 July 2025 until further notice.",
+        "Gyeongju City's admission page lists Donggung Palace and Wolji Pond and the Cheonmachong tomb in Daereungwon at 3,000 won for adults, while Cheomseongdae is free and shares the Daereungwon car park. A city walking route following King Munmu begins at Donggung Palace and Wolji Pond and continues to the Wolseong fortress site. Gyochon Hanok Village sits at 39-2 Gyochon-gil. Out at Bomun, Gyeongju Donggungwon opens 09:30 to 19:00 with entry until 18:00, closes on Mondays, and does not allow pets or drones.",
+        "Gyeongju APEC Memorial Park, the renamed Expo park at 614 Gyeonggam-ro, lists park hours of 10:00 to 22:00 and exhibition halls to 18:00; its Solgeo Art Museum shows work by 권정순 from 3 October 2026 to 7 March 2027. For meals, Kolon Hotel Gyeongju lists The Chanran breakfast buffet at 07:00 to 10:00, Korean dishes at The Hangonggan, wood-fired pizza and the Moonlight Pocha chicken-and-beer bar. Kensington Resort Gyeongju lists a morning buffet, Ohas Bakery & Cafe, Ashley Queens and a garden barbecue, and Hwangnam-ppang's main store lists 08:00 to 22:00 daily."
+      ],
+      summaryCards: [
+        [
+          "First visit",
+          "Pair Bulguksa Temple and Seokguram Grotto in the east with Gyeongju National Museum, Donggung Palace and Wolji Pond and Cheomseongdae in the old centre."
+        ],
+        [
+          "A slower morning",
+          "Kolon Hotel Gyeongju lists The Chanran breakfast buffet at 07:00 to 10:00, and Hwangnam-ppang's main store lists 08:00 to 22:00 every day of the year."
+        ],
+        [
+          "Before booking",
+          "Gyeongju Donggungwon closes on Mondays, and Gyeongju National Museum closes on the second Monday of March, June, September and December as well as 1 January, Seollal and Chuseok."
+        ]
+      ],
+      trust: "All 22 distinct recommendations in this guide were checked against their operators' own websites on November 25, 2026. This was a website review, not a visit or telephone confirmation. Advertised opening and booking details do not guarantee availability; confirm before traveling."
+    };
+  }
 })();

@@ -1,0 +1,826 @@
+{
+  "city": "Gyeongju, South Korea",
+  "checkedOn": "2026-11-25",
+  "method": "Each place checked on its operator's own website (or the public body that runs it) by automated fetch; no review sites, maps or blogs.",
+  "confirmed": [
+    {
+      "name": "Bulguksa Temple",
+      "kind": "landmark",
+      "url": "https://www.bulguksa.or.kr/bbs/content.php?co_id=application",
+      "sourceType": "operator's own site (Bulguksa)",
+      "address": "경상북도 경주시 불국로 385 (진현동 15-1)",
+      "operatingEvidence": "Notice board carries \"2026년 성도절 기념대법회\" and a 산사야음 (temple food and performance) notice posted \"26-10-23\"; another notice says \"대웅전 보수와 입장은 무관합니다\" (Daeungjeon repairs do not affect entry). Visiting page: admission free \"2023년 5월 4일부터\"; \"반려동물 입장 불가\"; car parking 2,000 won.",
+      "hours": "Undated visiting page (footer COPYRIGHT 2018): last entry 09:00–17:00 November–January; 09:00–17:30 February and October; 09:00–18:00 March–September; open year-round.",
+      "confidence": "high"
+    },
+    {
+      "name": "Seokguram Grotto",
+      "kind": "landmark",
+      "url": "https://www.seokguram.org/bbs/board.php?bo_table=notice",
+      "sourceType": "operator's own site (Seokguram)",
+      "address": "경북 경주시 석굴로 238",
+      "operatingEvidence": "Notice board lists Buddhist-year 2570 (2026) notices such as \"불기 2570년 부처님 오신날 연등불사 안내문\" and \"2570년 백중 / 칠석 / 입시기도 안내문\".",
+      "hours": "not published (hours page returned an error page)",
+      "confidence": "medium"
+    },
+    {
+      "name": "Gyeongju National Museum",
+      "kind": "museum",
+      "url": "https://gyeongju.museum.go.kr/",
+      "sourceType": "official public operator (National Museum of Korea)",
+      "address": "(38171)경상북도 경주시 일정로 186 국립경주박물관",
+      "operatingEvidence": "Exhibition \"83년 만에 다시 만난 두 조각\" runs 13 April–31 December 2026; notice posted 10 November 2026 on changed docent tour times from 1 December 2026. Children's Museum temporarily closed from 1 July 2025 \"별도 공지 시까지\".",
+      "hours": "\"10:00~18:00\"; Saturdays to 20:00 from March to October; last entry 30 minutes before closing. Closed 1 January, Seollal, Chuseok and the second Monday of March, June, September and December.",
+      "confidence": "high"
+    },
+    {
+      "name": "Donggung Palace and Wolji Pond",
+      "kind": "landmark",
+      "url": "https://www.gyeongju.go.kr/tour/page.do?mnu_uid=4838&",
+      "sourceType": "official public operator (Gyeongju City)",
+      "address": "경북 경주시 인왕동 517 번지 일대",
+      "operatingEvidence": "City admission page lists adult fee 3,000 won (group 2,400), free parking, phone 054-750-8655; the city's November 2026 recommended route \"문무왕 발자취 따라가기\" starts at 동궁과 월지.",
+      "hours": "not published on the city pages read",
+      "confidence": "medium"
+    },
+    {
+      "name": "Daereungwon Tomb Complex (Cheonmachong)",
+      "kind": "landmark",
+      "url": "https://www.gyeongju.go.kr/tour/page.do?mnu_uid=4838&",
+      "sourceType": "official public operator (Gyeongju City)",
+      "address": "경북 경주시 노동동 261 등",
+      "operatingEvidence": "City admission page lists 천마총 at 3,000 won adult, 2,000 youth, 1,000 child, parking 2,000/4,000 won, phone 054-750-8652. Address from the city's 대릉원지구 listing (https://www.gyeongju.go.kr/tour/page.do?mnu_uid=4786&code_uid=1049).",
+      "hours": "not published on the city pages read",
+      "confidence": "medium"
+    },
+    {
+      "name": "Cheomseongdae Observatory",
+      "kind": "landmark",
+      "url": "https://www.gyeongju.go.kr/tour/page.do?mnu_uid=4785&code_uid=1048",
+      "sourceType": "official public operator (Gyeongju City)",
+      "address": "경북 경주시 인왕동 839-1번지",
+      "operatingEvidence": "City admission page (https://www.gyeongju.go.kr/tour/page.do?mnu_uid=4838&) lists 첨성대 as free, using the 대릉원 car park; listed in the city's 월성지구 sights.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Wolseong Fortress Site",
+      "kind": "landmark",
+      "url": "https://www.gyeongju.go.kr/tour/page.do?mnu_uid=4785&code_uid=1048",
+      "sourceType": "official public operator (Gyeongju City)",
+      "address": "경북 경주시 인왕동 387-1번지",
+      "operatingEvidence": "Listed among the city's 월성지구 sights and included in the city's November 2026 \"문무왕 발자취 따라가기\" route (동궁과 월지 → 경주 월성 → ...), https://www.gyeongju.go.kr/tour/page.do?mnu_uid=4930&.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Gyochon Hanok Village",
+      "kind": "landmark",
+      "url": "https://gyeongju.go.kr/gyochon/page.do?mnu_uid=2980",
+      "sourceType": "official public operator (Gyeongju City)",
+      "address": "경상북도 경주시 교촌길 39-2 (교동 88-5)",
+      "operatingEvidence": "The village's events page (https://www.gyeongju.go.kr/gyochon/page.do?mnu_uid=3040&) lists 2026 \"신라오기\" street shows on Saturdays in April and May at the Gyochon Hanok Village plaza. Notice board has no 2025–2026 notices.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Gyeongju Donggungwon",
+      "kind": "park",
+      "url": "https://www.gyeongju.go.kr/epg/portal/page.do?menuId=300",
+      "sourceType": "official public operator (Gyeongju City)",
+      "address": "경상북도 경주시 보문로 74-14 (from https://www.gyeongju.go.kr/epg/portal/page.do?menuId=520)",
+      "operatingEvidence": "Fees page announces partner-organisation group rates \"starting August 1, 2026\"; rules: no pets, no smoking, drones banned, outside food only in designated areas; free wheelchairs and strollers at the ticket booth. The Bird Park on site is run separately.",
+      "hours": "09:30–19:00, ticket sales and entry until 18:00; closed Mondays (next weekday if a holiday), 1 January, Seollal and Chuseok days and designated days.",
+      "confidence": "high"
+    },
+    {
+      "name": "Gyeongju APEC Memorial Park",
+      "kind": "park",
+      "url": "https://www.cultureexpo.or.kr/",
+      "sourceType": "official public operator (Gyeongsangbuk-do Culture & Tourism Corporation)",
+      "address": "38118 경상북도 경주시 경감로 614 (천군동 130)",
+      "operatingEvidence": "Blog post dated 2026.11.24 notes the rename from 경주엑스포대공원 to 경주APEC기념공원; exhibitions listed include the APEC 정상회의 기념관; a 2026.11.20 post covers exam-taker admission.",
+      "hours": "Park 10:00–22:00; exhibition halls 10:00–18:00 (closing days not stated).",
+      "confidence": "high"
+    },
+    {
+      "name": "Solgeo Art Museum",
+      "kind": "museum",
+      "url": "https://www.cultureexpo.or.kr/",
+      "sourceType": "official public operator (Gyeongsangbuk-do Culture & Tourism Corporation)",
+      "address": "38118 경상북도 경주시 경감로 614 (inside Gyeongju APEC Memorial Park)",
+      "operatingEvidence": "Exhibition \"권정순 작가 展\" runs 2026.10.03–2027.03.07.",
+      "hours": "Exhibition halls 10:00–18:00 per the park homepage.",
+      "confidence": "medium"
+    },
+    {
+      "name": "Gyeongju Tower",
+      "kind": "scenic",
+      "url": "https://www.cultureexpo.or.kr/",
+      "sourceType": "official public operator (Gyeongsangbuk-do Culture & Tourism Corporation)",
+      "address": "38118 경상북도 경주시 경감로 614 (inside Gyeongju APEC Memorial Park)",
+      "operatingEvidence": "Park homepage lists the \"경주타워 천년대계\" exhibition as currently running, alongside 2026-dated park posts.",
+      "hours": "Exhibition halls 10:00–18:00 per the park homepage.",
+      "confidence": "medium"
+    },
+    {
+      "name": "The Hangonggan (Kolon Hotel Gyeongju)",
+      "kind": "meal",
+      "url": "https://www.kolonhotel.co.kr/dining",
+      "sourceType": "operator's own site (Kolon Hotel Gyeongju)",
+      "address": "경상북도 경주시 불국로 289-17, lobby level (3F)",
+      "operatingEvidence": "Korean restaurant; \"연향상은 사전예약 필수입니다\"; hotel's special-offers page lists dining packages dated 1 February–31 December 2026.",
+      "hours": "\"일~목 : 11:00~21:00, 금~토 : 11:00~22:00 (라스트 오더 1시간 전)\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Moonlight Pocha (Kolon Hotel Gyeongju)",
+      "kind": "bar",
+      "url": "https://www.kolonhotel.co.kr/dining",
+      "sourceType": "operator's own site (Kolon Hotel Gyeongju)",
+      "address": "경상북도 경주시 불국로 289-17, lobby level (3F)",
+      "operatingEvidence": "달빛포차: pocha-style chicken with unlimited draft beer and views of Gyeongju; hotel offers dated to December 2026 on https://www.kolonhotel.co.kr/special-offers.",
+      "hours": "\"일~목 17:30 ~ 21:00, 금~토 17:30 ~ 22:00\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Gyeongju Wood-Fired Pizza (Kolon Hotel Gyeongju)",
+      "kind": "meal",
+      "url": "https://www.kolonhotel.co.kr/dining",
+      "sourceType": "operator's own site (Kolon Hotel Gyeongju)",
+      "address": "경상북도 경주시 불국로 289-17, lobby level (3F)",
+      "operatingEvidence": "Wood-fired pizza using \"경주 찰보리, 안강 토마토, 호텔에서 직접 키운 바질\"; Kids Chef Pizza Lab runs \"14:00부터 상시운영\" with booking; \"나만의 피자 만들기\" package runs 3 April–31 December 2026.",
+      "hours": "\"11:00 ~ 21:00\"",
+      "confidence": "high"
+    },
+    {
+      "name": "The Chanran (Kolon Hotel Gyeongju)",
+      "kind": "meal",
+      "url": "https://www.kolonhotel.co.kr/dining",
+      "sourceType": "operator's own site (Kolon Hotel Gyeongju)",
+      "address": "경상북도 경주시 불국로 289-17, 2nd floor",
+      "operatingEvidence": "Breakfast buffet \"한식과 양식의 조화를 이룬 조식 뷔페\"; adults 45,000 won, children 25,000 won; 2인 조식 뷔페 패키지 runs to 31 December 2026.",
+      "hours": "\"7:00 ~10:00\"",
+      "confidence": "high"
+    },
+    {
+      "name": "Olon Bakery Cafe (Kolon Hotel Gyeongju)",
+      "kind": "bakery",
+      "url": "https://www.kolonhotel.co.kr/dining",
+      "sourceType": "operator's own site (Kolon Hotel Gyeongju)",
+      "address": "경상북도 경주시 불국로 289-17, lobby level (3F)",
+      "operatingEvidence": "옳온 베이커리 카페: premium bakery built on \"30년간 노하우\" in fermentation, listed on the hotel's current dining page alongside 2026 offers.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Hwangnam-ppang (Main Store)",
+      "kind": "bakery",
+      "url": "https://www.hwangnam.co.kr/",
+      "sourceType": "operator's own site (주식회사 황남빵)",
+      "address": "경상북도 경주시 태종로 783(황오동)",
+      "operatingEvidence": "Footer lists mail-order registration \"제2026-경북경주-0508호\" and phone ordering; site shows a website-migration login notice.",
+      "hours": "\"mon-sun 08:00 - 22:00\", open year-round",
+      "confidence": "medium"
+    },
+    {
+      "name": "Kensington Morning Buffet (Kensington Resort Gyeongju)",
+      "kind": "meal",
+      "url": "https://kensington.co.kr/rgj",
+      "sourceType": "operator's own site (Kensington Hotels & Resorts)",
+      "address": "경상북도 경주시 보문로 182-29 (켄싱턴리조트 경주)",
+      "operatingEvidence": "Breakfast-buffet event and booking benefits listed for \"2026.11.01 ~ 2027.12.31\".",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Ohas Bakery & Cafe (Kensington Resort Gyeongju)",
+      "kind": "cafe",
+      "url": "https://kensington.co.kr/rgj",
+      "sourceType": "operator's own site (Kensington Hotels & Resorts)",
+      "address": "경상북도 경주시 보문로 182-29 (켄싱턴리조트 경주)",
+      "operatingEvidence": "Listed bakery and café; \"시그니처 첨성대 큐브라떼\" event runs 2026.11.01–2027.12.31.",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Ashley Queens (Kensington Resort Gyeongju)",
+      "kind": "meal",
+      "url": "https://kensington.co.kr/rgj",
+      "sourceType": "operator's own site (Kensington Hotels & Resorts)",
+      "address": "경상북도 경주시 보문로 182-29 (켄싱턴리조트 경주)",
+      "operatingEvidence": "Listed outlet, phone 054.777.1034; a package on the 2026 page mentions \"애슐리 퀸즈 무제한 생맥주\".",
+      "hours": "not published",
+      "confidence": "medium"
+    },
+    {
+      "name": "Kensington Garden BBQ (Kensington Resort Gyeongju)",
+      "kind": "meal",
+      "url": "https://kensington.co.kr/rgj",
+      "sourceType": "operator's own site (Kensington Hotels & Resorts)",
+      "address": "경상북도 경주시 보문로 182-29 (켄싱턴리조트 경주)",
+      "operatingEvidence": "Listed among the resort's current dining outlets on a page carrying offers dated 2026.11.01–2027.12.31.",
+      "hours": "not published",
+      "confidence": "medium"
+    }
+  ],
+  "notUsed": [
+    {
+      "name": "Wolji Pond after dark",
+      "reason": "generic, not a place (covered by Donggung Palace and Wolji Pond)",
+      "url": ""
+    },
+    {
+      "name": "Historic district bike ride",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Bulguksa morning",
+      "reason": "generic, not a place (covered by Bulguksa Temple)",
+      "url": ""
+    },
+    {
+      "name": "a Korean temple-area lunch",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Gyeongju market or cafe",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local dinner in Historic Center",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A cafe near Bulguksa",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market breakfast in Bomun Lake",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A dessert stop in Historic Center",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free or low-cost Historic Center walk",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Public viewpoint near Bulguksa",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Market meal around Bomun Lake",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A self-guided walk through Bomun Lake",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Free museum or public garden time",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood market stop",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Private guide for Bulguksa Temple",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A signature meal in Historic Center",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A tailored day around Wolji Pond after dark",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A private transfer between highlights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A special evening in Bulguksa",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower day with a local guide",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset near Daereungwon Tomb Park",
+      "reason": "generic, not a place (covered by Daereungwon Tomb Complex)",
+      "url": ""
+    },
+    {
+      "name": "Historic Center evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long dinner in Bulguksa",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A scenic morning near Bomun Lake",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A photo-friendly walk through Historic Center",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Family-friendly Bulguksa Temple",
+      "reason": "generic, not a place (covered by Bulguksa Temple)",
+      "url": ""
+    },
+    {
+      "name": "Easy outing around Bulguksa",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed meal near Bomun Lake",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A hands-on stop near Historic Center",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short scenic outing with room to move",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A treat everyone can agree on",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Early visit to Bulguksa Temple",
+      "reason": "generic, not a place (covered by Bulguksa Temple)",
+      "url": ""
+    },
+    {
+      "name": "Historic Center cafe or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Self-guided Historic district bike ride",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A museum or gallery at your own pace",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A people-watching break in Bomun Lake",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A flexible afternoon with one clear anchor",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quieter side of Bomun Lake",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local recommendation beyond the headline sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A short detour beyond Historic Center",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Morning cafe near Historic Center",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Bulguksa bakery or market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Slow breakfast before Bulguksa Temple",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local pastry to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and a walk through Bomun Lake",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed brunch near Historic Center",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Casual lunch near Daereungwon Tomb Park",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local stop around Bomun Lake",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A market lunch in Historic Center",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A quick meal between sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A long midday table in Bulguksa",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slower dinner in Bomun Lake",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local specialty near Historic Center",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final-night meal away from the busiest sights",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Sunset drinks near Historic Center",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A local bar around Bulguksa",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view-led evening near Donggung Palace and Wolji Pond",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A relaxed night close to the stay",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A late drink after dinner",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A rooftop or waterfront evening",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Local bakery near Historic Center",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Bulguksa morning market",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee and pastry before Bulguksa Temple",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A regional sweet to take on the road",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A fresh bake near Bomun Lake",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A pastry stop between neighborhoods",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Coffee near Historic Center",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A slow cafe in Bulguksa",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A final cup near Bomun Lake",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A coffee stop before the first sight",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A neighborhood cafe break",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "A view with your morning coffee",
+      "reason": "generic, not a place",
+      "url": ""
+    },
+    {
+      "name": "Hilton Gyeongju (restaurants and lounge)",
+      "reason": "official site refused automated reading (HTTP 403)",
+      "url": "https://www.hilton.com/en/hotels/kpohihi-hilton-gyeongju/dining/"
+    },
+    {
+      "name": "Gyeongju Bird Park",
+      "reason": "official site certificate error (self-signed certificate); not bypassed",
+      "url": "https://www.birdparks.co.kr/"
+    },
+    {
+      "name": "Lahan Select Gyeongju (The Plate, lobby lounge)",
+      "reason": "official pages returned HTTP 404 or no readable content",
+      "url": "https://www.lahanhotels.com/"
+    },
+    {
+      "name": "Gyeongju World",
+      "reason": "official site returned nothing readable",
+      "url": "https://www.gjw.co.kr/"
+    },
+    {
+      "name": "Silla Millennium Park",
+      "reason": "official domain did not resolve (DNS failure)",
+      "url": "https://www.sillapark.com/"
+    },
+    {
+      "name": "Yosokkoong",
+      "reason": "listed website did not resolve (DNS failure); otherwise only a social-media page",
+      "url": "https://www.yosokkoong.com/"
+    },
+    {
+      "name": "Hanwha Resort Gyeongju",
+      "reason": "official site refused connection",
+      "url": "https://www.hanwharesort.co.kr/"
+    },
+    {
+      "name": "Sono Calm Gyeongju",
+      "reason": "official property page showed no property address or dining outlets",
+      "url": "https://www.sonohotelsresorts.com/calm_gju"
+    },
+    {
+      "name": "Gyeongbuk Millennium Forest Garden",
+      "reason": "operator's provincial page gives hours and rules but no street address",
+      "url": "https://gb.go.kr/Main/finace/page.do?mnu_uid=16291"
+    },
+    {
+      "name": "Yangdong Village",
+      "reason": "city pages list individual houses and a fee but no village address or current notice",
+      "url": "https://www.gyeongju.go.kr/tour/page.do?mnu_uid=4782&code_uid=1045"
+    },
+    {
+      "name": "Gyeongju National Museum Children's Museum",
+      "reason": "temporarily closed from 1 July 2025 until further notice per the museum's own notice",
+      "url": "https://gyeongju.museum.go.kr/"
+    },
+    {
+      "name": "Starbucks (Gyeongju Daereungwon)",
+      "reason": "no readable official store page found",
+      "url": ""
+    },
+    {
+      "name": "Coffee Temple Gyeongju",
+      "reason": "no official website found",
+      "url": ""
+    },
+    {
+      "name": "The-K Hotel Gyeongju",
+      "reason": "official domain tried did not resolve; no other official site found",
+      "url": "https://www.thekhotel.co.kr/"
+    },
+    {
+      "name": "Gyeongju Arts Center",
+      "reason": "official domain tried did not resolve",
+      "url": "https://www.gjartcenter.kr/"
+    }
+  ],
+  "guide": {
+    "detail": {
+      "bestAttractions": [
+        "Bulguksa Temple",
+        "Seokguram Grotto",
+        "Donggung Palace and Wolji Pond",
+        "Gyeongju National Museum"
+      ],
+      "bestFirstTimers": [
+        "Bulguksa Temple",
+        "Gyeongju National Museum",
+        "Daereungwon Tomb Complex (Cheonmachong)",
+        "Cheomseongdae Observatory"
+      ],
+      "bestRestaurants": [
+        "The Hangonggan (Kolon Hotel Gyeongju)",
+        "Kensington Garden BBQ (Kensington Resort Gyeongju)",
+        "Gyeongju Wood-Fired Pizza (Kolon Hotel Gyeongju)"
+      ],
+      "bestBudget": [
+        "Cheomseongdae Observatory",
+        "Bulguksa Temple",
+        "Gyeongju National Museum",
+        "Hwangnam-ppang (Main Store)"
+      ],
+      "bestLuxury": [
+        "The Hangonggan (Kolon Hotel Gyeongju)",
+        "The Chanran (Kolon Hotel Gyeongju)"
+      ],
+      "bestCouples": [
+        "Donggung Palace and Wolji Pond",
+        "Gyochon Hanok Village",
+        "Moonlight Pocha (Kolon Hotel Gyeongju)"
+      ],
+      "bestKids": [
+        "Gyeongju Donggungwon",
+        "Gyeongju Wood-Fired Pizza (Kolon Hotel Gyeongju)",
+        "Gyeongju APEC Memorial Park",
+        "Ashley Queens (Kensington Resort Gyeongju)"
+      ],
+      "bestSolo": [
+        "Gyeongju National Museum",
+        "Solgeo Art Museum",
+        "Wolseong Fortress Site",
+        "Gyeongju Tower"
+      ],
+      "bestUnique": [
+        "Seokguram Grotto",
+        "Wolseong Fortress Site",
+        "Solgeo Art Museum",
+        "Gyeongju Tower"
+      ],
+      "bestBreakfast": [
+        "The Chanran (Kolon Hotel Gyeongju)",
+        "Kensington Morning Buffet (Kensington Resort Gyeongju)"
+      ],
+      "bestLunch": [
+        "The Hangonggan (Kolon Hotel Gyeongju)",
+        "Gyeongju Wood-Fired Pizza (Kolon Hotel Gyeongju)",
+        "Ashley Queens (Kensington Resort Gyeongju)"
+      ],
+      "bestDinner": [
+        "The Hangonggan (Kolon Hotel Gyeongju)",
+        "Kensington Garden BBQ (Kensington Resort Gyeongju)",
+        "Ashley Queens (Kensington Resort Gyeongju)"
+      ],
+      "bestCocktails": [
+        "Moonlight Pocha (Kolon Hotel Gyeongju)"
+      ],
+      "bestBakeries": [
+        "Hwangnam-ppang (Main Store)",
+        "Olon Bakery Cafe (Kolon Hotel Gyeongju)",
+        "Ohas Bakery & Cafe (Kensington Resort Gyeongju)"
+      ],
+      "bestCoffee": [
+        "Ohas Bakery & Cafe (Kensington Resort Gyeongju)",
+        "Olon Bakery Cafe (Kolon Hotel Gyeongju)"
+      ]
+    },
+    "queries": {
+      "Bulguksa Temple": "Bulguksa Temple 385 Bulguk-ro Gyeongju",
+      "Seokguram Grotto": "Seokguram Grotto 238 Seokgul-ro Gyeongju",
+      "Gyeongju National Museum": "Gyeongju National Museum 186 Iljeong-ro Gyeongju",
+      "Donggung Palace and Wolji Pond": "Donggung Palace and Wolji Pond Inwang-dong 517 Gyeongju",
+      "Daereungwon Tomb Complex (Cheonmachong)": "Daereungwon Cheonmachong Nodong-dong 261 Gyeongju",
+      "Cheomseongdae Observatory": "Cheomseongdae Observatory Inwang-dong 839-1 Gyeongju",
+      "Wolseong Fortress Site": "Gyeongju Wolseong Inwang-dong 387-1 Gyeongju",
+      "Gyochon Hanok Village": "Gyochon Hanok Village 39-2 Gyochon-gil Gyeongju",
+      "Gyeongju Donggungwon": "Gyeongju Donggungwon 74-14 Bomun-ro Gyeongju",
+      "Gyeongju APEC Memorial Park": "Gyeongju APEC Memorial Park 614 Gyeonggam-ro Gyeongju",
+      "Solgeo Art Museum": "Solgeo Art Museum 614 Gyeonggam-ro Gyeongju",
+      "Gyeongju Tower": "Gyeongju Tower 614 Gyeonggam-ro Gyeongju",
+      "The Hangonggan (Kolon Hotel Gyeongju)": "Kolon Hotel The Hangonggan 289-17 Bulguk-ro Gyeongju",
+      "Moonlight Pocha (Kolon Hotel Gyeongju)": "Kolon Hotel Moonlight Pocha 289-17 Bulguk-ro Gyeongju",
+      "Gyeongju Wood-Fired Pizza (Kolon Hotel Gyeongju)": "Kolon Hotel Gyeongju Wood-Fired Pizza 289-17 Bulguk-ro Gyeongju",
+      "The Chanran (Kolon Hotel Gyeongju)": "Kolon Hotel The Chanran 289-17 Bulguk-ro Gyeongju",
+      "Olon Bakery Cafe (Kolon Hotel Gyeongju)": "Kolon Hotel Olon Bakery Cafe 289-17 Bulguk-ro Gyeongju",
+      "Hwangnam-ppang (Main Store)": "Hwangnam-ppang 783 Taejong-ro Gyeongju",
+      "Kensington Morning Buffet (Kensington Resort Gyeongju)": "Kensington Resort Gyeongju 182-29 Bomun-ro Gyeongju",
+      "Ohas Bakery & Cafe (Kensington Resort Gyeongju)": "Ohas Bakery Cafe Kensington Resort 182-29 Bomun-ro Gyeongju",
+      "Ashley Queens (Kensington Resort Gyeongju)": "Ashley Queens Kensington Resort 182-29 Bomun-ro Gyeongju",
+      "Kensington Garden BBQ (Kensington Resort Gyeongju)": "Kensington Garden BBQ 182-29 Bomun-ro Gyeongju"
+    },
+    "summary": "Silla temples, tombs, museums and parks, with hotel breakfasts, dinners, bakeries and a bar checked against their own websites.",
+    "highlights": [
+      "Bulguksa Temple",
+      "Seokguram Grotto",
+      "Gyeongju National Museum",
+      "Donggung Palace and Wolji Pond"
+    ],
+    "tip": "Gyeongju Donggungwon closes on Mondays and Gyeongju National Museum closes on the second Monday of March, June, September and December, so a Monday suits Bulguksa Temple, which its own site says is open year-round.",
+    "toolkit": [
+      {
+        "label": "Closing days",
+        "value": "Mondays and some second Mondays",
+        "copy": "Gyeongju Donggungwon closes on Mondays (the next weekday when Monday is a public holiday), 1 January and the Seollal and Chuseok days. Gyeongju National Museum closes on 1 January, Seollal and Chuseok, and on the second Monday of March, June, September and December."
+      },
+      {
+        "label": "Tickets",
+        "value": "Free or low-cost",
+        "copy": "Bulguksa Temple's site says admission has been free since 4 May 2023. Gyeongju City's admission page lists Cheomseongdae as free and Donggung Palace and Wolji Pond and Cheonmachong at 3,000 won for adults."
+      },
+      {
+        "label": "Booking",
+        "value": "Reserve set meals ahead",
+        "copy": "Kolon Hotel Gyeongju says the Yeonhyangsang set at The Hangonggan and its Judabyeol Bangwa snack set must be booked in advance. Its Kids Chef Pizza Lab runs from 14:00 with online booking."
+      },
+      {
+        "label": "Rules",
+        "value": "No pets or drones",
+        "copy": "Bulguksa Temple's visiting page says pets may not enter. Gyeongju Donggungwon also bars pets, smoking and drones, and allows outside food only in designated outdoor areas."
+      }
+    ],
+    "dek": "Pair Bulguksa Temple with Seokguram Grotto, keep Mondays away from Donggungwon, and check the museum's second-Monday closures before you fix dates.",
+    "intro": [
+      "Bulguksa Temple, at 385 Bulguk-ro, anchors the eastern side of Gyeongju. Its own visiting page says admission has been free since 4 May 2023 under the revised heritage law, that pets may not enter, and that parking costs 2,000 won for a car. That page carries no update date; it lists last entry at 17:00 from November to January. A notice on the temple's board says repairs to the Daeungjeon main hall do not affect entry. Up the mountain, Seokguram Grotto at 238 Seokgul-ro posts 2026 prayer notices, but its hours page could not be read.",
+      "In the centre, Gyeongju National Museum at 186 Iljeong-ro lists hours of 10:00 to 18:00, with last entry 30 minutes before closing and Saturday evenings to 20:00 from March to October. It closes on 1 January, Seollal and Chuseok, and on the second Monday of March, June, September and December. A lobby display reuniting two stone-tablet fragments from Wolseong runs until 31 December 2026. The museum's Children's Museum has been closed since 1 July 2025 until further notice.",
+      "Gyeongju City's admission page lists Donggung Palace and Wolji Pond and the Cheonmachong tomb in Daereungwon at 3,000 won for adults, while Cheomseongdae is free and shares the Daereungwon car park. A city walking route following King Munmu begins at Donggung Palace and Wolji Pond and continues to the Wolseong fortress site. Gyochon Hanok Village sits at 39-2 Gyochon-gil. Out at Bomun, Gyeongju Donggungwon opens 09:30 to 19:00 with entry until 18:00, closes on Mondays, and does not allow pets or drones.",
+      "Gyeongju APEC Memorial Park, the renamed Expo park at 614 Gyeonggam-ro, lists park hours of 10:00 to 22:00 and exhibition halls to 18:00; its Solgeo Art Museum shows work by 권정순 from 3 October 2026 to 7 March 2027. For meals, Kolon Hotel Gyeongju lists The Chanran breakfast buffet at 07:00 to 10:00, Korean dishes at The Hangonggan, wood-fired pizza and the Moonlight Pocha chicken-and-beer bar. Kensington Resort Gyeongju lists a morning buffet, Ohas Bakery & Cafe, Ashley Queens and a garden barbecue, and Hwangnam-ppang's main store lists 08:00 to 22:00 daily."
+    ],
+    "summaryCards": [
+      [
+        "First visit",
+        "Pair Bulguksa Temple and Seokguram Grotto in the east with Gyeongju National Museum, Donggung Palace and Wolji Pond and Cheomseongdae in the old centre."
+      ],
+      [
+        "A slower morning",
+        "Kolon Hotel Gyeongju lists The Chanran breakfast buffet at 07:00 to 10:00, and Hwangnam-ppang's main store lists 08:00 to 22:00 every day of the year."
+      ],
+      [
+        "Before booking",
+        "Gyeongju Donggungwon closes on Mondays, and Gyeongju National Museum closes on the second Monday of March, June, September and December as well as 1 January, Seollal and Chuseok."
+      ]
+    ]
+  },
+  "limitations": "Website review, not a visit or telephone confirmation. Advertised opening, booking and exhibition details do not guarantee availability. Only 22 places could be confirmed: many Gyeongju restaurants and cafés publish only on maps or social media, so food listings lean on hotel outlets at Kolon Hotel Gyeongju and Kensington Resort Gyeongju, and no cocktail bar could be confirmed (Moonlight Pocha is a chicken and draft-beer bar). Bulguksa Temple's hours come from an undated page; Seokguram Grotto's hours page returned an error; Gyeongju City pages give no hours for Donggung Palace and Wolji Pond, Daereungwon, Cheomseongdae, Wolseong or Gyochon, and their operating evidence is limited to current admission and 2026 route or event pages. Hours were not published for Olon Bakery Cafe or the Kensington outlets. Hilton Gyeongju (HTTP 403), Gyeongju Bird Park (certificate error), Lahan Select Gyeongju, Gyeongju World, Silla Millennium Park, Hanwha Resort Gyeongju, Yosokkoong, The-K Hotel Gyeongju and Gyeongju Arts Center could not be read.",
+  "injectionLikeText": []
+}
