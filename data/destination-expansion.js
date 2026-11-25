@@ -11902,11 +11902,11 @@ window.HB_DATA = window.HB_DATA || {};
       cityGuide = { city: cityKey, title: "Ubud" };
       data.cityGuideData.push(cityGuide);
     }
-    cityGuide.summary = "Ubud's monkey sanctuary, textile and art galleries and Tegallalang's swing park, with cooking classes, breakfast cafés, dinners and cocktail bars checked against their own websites.";
+    cityGuide.summary = "Ubud's monkey forest, art and textile galleries, a swing park in Tegallalang, cooking classes, cafés, dinners and cocktail bars, each checked against its own website.";
     cityGuide.highlights = ["Sacred Monkey Forest Sanctuary","Threads of Life (Jalan Kajeng)","Komaneka Fine Art Gallery","Alas Harum Bali"];
     cityGuide.tip = "Most places here publish daily opening with no weekly closing day, so plan around entry times and bookings instead: the Sacred Monkey Forest Sanctuary takes its last entrance at 5 PM, and Apéritif needs 24 hours' notice for lunch.";
     data.destinationFacts[cityKey] = "Most places here publish daily opening with no weekly closing day, so plan around entry times and bookings instead: the Sacred Monkey Forest Sanctuary takes its last entrance at 5 PM, and Apéritif needs 24 hours' notice for lunch.";
-    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Ubud's monkey sanctuary, textile and art galleries and Tegallalang's swing park, with cooking classes, breakfast cafés, dinners and cocktail bars checked against their own websites.";
+    if (data.destinationHeroData[cityKey]) data.destinationHeroData[cityKey].copy = "Ubud's monkey forest, art and textile galleries, a swing park in Tegallalang, cooking classes, cafés, dinners and cocktail bars, each checked against its own website.";
     data.cityPlanningToolkitData[cityKey] = [
       {
         "label": "Closing days",
